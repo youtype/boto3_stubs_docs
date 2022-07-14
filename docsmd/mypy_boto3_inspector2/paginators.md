@@ -21,6 +21,23 @@ def get_list_account_permissions_paginator() -> ListAccountPermissionsPaginator:
     return Session().client("inspector2").get_paginator("list_account_permissions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListAccountPermissionsPaginator = client.get_paginator("list_account_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListAccountPermissionsPaginator](./paginators.md#listaccountpermissionspaginator)
+3. item: [:material-code-braces: ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_coverage_paginator() -> ListCoveragePaginator:
     return Session().client("inspector2").get_paginator("list_coverage")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListCoveragePaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListCoveragePaginator = client.get_paginator("list_coverage")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListCoveragePaginator](./paginators.md#listcoveragepaginator)
+3. item: [:material-code-braces: ListCoverageResponseTypeDef](./type_defs.md#listcoverageresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_inspector2.paginator import ListCoverageStatisticsPaginator
 def get_list_coverage_statistics_paginator() -> ListCoverageStatisticsPaginator:
     return Session().client("inspector2").get_paginator("list_coverage_statistics")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListCoverageStatisticsPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListCoverageStatisticsPaginator = client.get_paginator("list_coverage_statistics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListCoverageStatisticsPaginator](./paginators.md#listcoveragestatisticspaginator)
+3. item: [:material-code-braces: ListCoverageStatisticsResponseTypeDef](./type_defs.md#listcoveragestatisticsresponsetypedef) 
 
 
 ### paginate
@@ -152,6 +203,23 @@ def get_list_delegated_admin_accounts_paginator() -> ListDelegatedAdminAccountsP
     return Session().client("inspector2").get_paginator("list_delegated_admin_accounts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListDelegatedAdminAccountsPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListDelegatedAdminAccountsPaginator = client.get_paginator("list_delegated_admin_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListDelegatedAdminAccountsPaginator](./paginators.md#listdelegatedadminaccountspaginator)
+3. item: [:material-code-braces: ListDelegatedAdminAccountsResponseTypeDef](./type_defs.md#listdelegatedadminaccountsresponsetypedef) 
+
 
 ### paginate
 
@@ -192,6 +260,23 @@ from mypy_boto3_inspector2.paginator import ListFiltersPaginator
 def get_list_filters_paginator() -> ListFiltersPaginator:
     return Session().client("inspector2").get_paginator("list_filters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListFiltersPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListFiltersPaginator = client.get_paginator("list_filters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+3. item: [:material-code-braces: ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef) 
 
 
 ### paginate
@@ -236,6 +321,23 @@ from mypy_boto3_inspector2.paginator import ListFindingAggregationsPaginator
 def get_list_finding_aggregations_paginator() -> ListFindingAggregationsPaginator:
     return Session().client("inspector2").get_paginator("list_finding_aggregations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListFindingAggregationsPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListFindingAggregationsPaginator = client.get_paginator("list_finding_aggregations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListFindingAggregationsPaginator](./paginators.md#listfindingaggregationspaginator)
+3. item: [:material-code-braces: ListFindingAggregationsResponseTypeDef](./type_defs.md#listfindingaggregationsresponsetypedef) 
 
 
 ### paginate
@@ -284,6 +386,23 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("inspector2").get_paginator("list_findings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListFindingsPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListFindingsPaginator = client.get_paginator("list_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+3. item: [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
+
 
 ### paginate
 
@@ -329,6 +448,23 @@ def get_list_members_paginator() -> ListMembersPaginator:
     return Session().client("inspector2").get_paginator("list_members")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListMembersPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListMembersPaginator = client.get_paginator("list_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListMembersPaginator](./paginators.md#listmemberspaginator)
+3. item: [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
+
 
 ### paginate
 
@@ -370,6 +506,23 @@ from mypy_boto3_inspector2.paginator import ListUsageTotalsPaginator
 def get_list_usage_totals_paginator() -> ListUsageTotalsPaginator:
     return Session().client("inspector2").get_paginator("list_usage_totals")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_inspector2.paginator import ListUsageTotalsPaginator
+
+session = Session()
+
+client = Session().client("inspector2")  # (1)
+paginator: ListUsageTotalsPaginator = client.get_paginator("list_usage_totals")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Inspector2Client](./client.md)
+2. paginator: [ListUsageTotalsPaginator](./paginators.md#listusagetotalspaginator)
+3. item: [:material-code-braces: ListUsageTotalsResponseTypeDef](./type_defs.md#listusagetotalsresponsetypedef) 
 
 
 ### paginate

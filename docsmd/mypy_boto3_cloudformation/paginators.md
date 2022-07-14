@@ -21,6 +21,23 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return Session().client("cloudformation").get_paginator("describe_account_limits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import DescribeAccountLimitsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: DescribeAccountLimitsPaginator = client.get_paginator("describe_account_limits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
+3. item: [:material-code-braces: DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_cloudformation.paginator import DescribeChangeSetPaginator
 def get_describe_change_set_paginator() -> DescribeChangeSetPaginator:
     return Session().client("cloudformation").get_paginator("describe_change_set")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import DescribeChangeSetPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: DescribeChangeSetPaginator = client.get_paginator("describe_change_set")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [DescribeChangeSetPaginator](./paginators.md#describechangesetpaginator)
+3. item: [:material-code-braces: DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_describe_stack_events_paginator() -> DescribeStackEventsPaginator:
     return Session().client("cloudformation").get_paginator("describe_stack_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import DescribeStackEventsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: DescribeStackEventsPaginator = client.get_paginator("describe_stack_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [DescribeStackEventsPaginator](./paginators.md#describestackeventspaginator)
+3. item: [:material-code-braces: DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_cloudformation.paginator import DescribeStacksPaginator
 def get_describe_stacks_paginator() -> DescribeStacksPaginator:
     return Session().client("cloudformation").get_paginator("describe_stacks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import DescribeStacksPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: DescribeStacksPaginator = client.get_paginator("describe_stacks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [DescribeStacksPaginator](./paginators.md#describestackspaginator)
+3. item: [:material-code-braces: DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef) 
 
 
 ### paginate
@@ -189,6 +257,23 @@ def get_list_change_sets_paginator() -> ListChangeSetsPaginator:
     return Session().client("cloudformation").get_paginator("list_change_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListChangeSetsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListChangeSetsPaginator = client.get_paginator("list_change_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListChangeSetsPaginator](./paginators.md#listchangesetspaginator)
+3. item: [:material-code-braces: ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef) 
+
 
 ### paginate
 
@@ -231,6 +316,23 @@ def get_list_exports_paginator() -> ListExportsPaginator:
     return Session().client("cloudformation").get_paginator("list_exports")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListExportsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListExportsPaginator = client.get_paginator("list_exports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListExportsPaginator](./paginators.md#listexportspaginator)
+3. item: [:material-code-braces: ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef) 
+
 
 ### paginate
 
@@ -271,6 +373,23 @@ from mypy_boto3_cloudformation.paginator import ListImportsPaginator
 def get_list_imports_paginator() -> ListImportsPaginator:
     return Session().client("cloudformation").get_paginator("list_imports")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListImportsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListImportsPaginator = client.get_paginator("list_imports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListImportsPaginator](./paginators.md#listimportspaginator)
+3. item: [:material-code-braces: ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef) 
 
 
 ### paginate
@@ -313,6 +432,23 @@ from mypy_boto3_cloudformation.paginator import ListStackInstancesPaginator
 def get_list_stack_instances_paginator() -> ListStackInstancesPaginator:
     return Session().client("cloudformation").get_paginator("list_stack_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListStackInstancesPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListStackInstancesPaginator = client.get_paginator("list_stack_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListStackInstancesPaginator](./paginators.md#liststackinstancespaginator)
+3. item: [:material-code-braces: ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef) 
 
 
 ### paginate
@@ -362,6 +498,23 @@ def get_list_stack_resources_paginator() -> ListStackResourcesPaginator:
     return Session().client("cloudformation").get_paginator("list_stack_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListStackResourcesPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListStackResourcesPaginator = client.get_paginator("list_stack_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListStackResourcesPaginator](./paginators.md#liststackresourcespaginator)
+3. item: [:material-code-braces: ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef) 
+
 
 ### paginate
 
@@ -403,6 +556,23 @@ from mypy_boto3_cloudformation.paginator import ListStackSetOperationResultsPagi
 def get_list_stack_set_operation_results_paginator() -> ListStackSetOperationResultsPaginator:
     return Session().client("cloudformation").get_paginator("list_stack_set_operation_results")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListStackSetOperationResultsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListStackSetOperationResultsPaginator = client.get_paginator("list_stack_set_operation_results")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListStackSetOperationResultsPaginator](./paginators.md#liststacksetoperationresultspaginator)
+3. item: [:material-code-braces: ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef) 
 
 
 ### paginate
@@ -450,6 +620,23 @@ def get_list_stack_set_operations_paginator() -> ListStackSetOperationsPaginator
     return Session().client("cloudformation").get_paginator("list_stack_set_operations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListStackSetOperationsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListStackSetOperationsPaginator = client.get_paginator("list_stack_set_operations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListStackSetOperationsPaginator](./paginators.md#liststacksetoperationspaginator)
+3. item: [:material-code-braces: ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef) 
+
 
 ### paginate
 
@@ -493,6 +680,23 @@ from mypy_boto3_cloudformation.paginator import ListStackSetsPaginator
 def get_list_stack_sets_paginator() -> ListStackSetsPaginator:
     return Session().client("cloudformation").get_paginator("list_stack_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListStackSetsPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListStackSetsPaginator = client.get_paginator("list_stack_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
+3. item: [:material-code-braces: ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef) 
 
 
 ### paginate
@@ -539,6 +743,23 @@ def get_list_stacks_paginator() -> ListStacksPaginator:
     return Session().client("cloudformation").get_paginator("list_stacks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListStacksPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListStacksPaginator = client.get_paginator("list_stacks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListStacksPaginator](./paginators.md#liststackspaginator)
+3. item: [:material-code-braces: ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef) 
+
 
 ### paginate
 
@@ -581,6 +802,23 @@ from mypy_boto3_cloudformation.paginator import ListTypesPaginator
 def get_list_types_paginator() -> ListTypesPaginator:
     return Session().client("cloudformation").get_paginator("list_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.paginator import ListTypesPaginator
+
+session = Session()
+
+client = Session().client("cloudformation")  # (1)
+paginator: ListTypesPaginator = client.get_paginator("list_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFormationClient](./client.md)
+2. paginator: [ListTypesPaginator](./paginators.md#listtypespaginator)
+3. item: [:material-code-braces: ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef) 
 
 
 ### paginate

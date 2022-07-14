@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter
 
-def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
-    return Session().client("cloudfront").get_waiter("distribution_deployed")
+
+session = Session()
+
+client = session.client("cloudfront")  # (1)
+waiter: DistributionDeployedWaiter = client.get_waiter("distribution_deployed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFrontClient](./client.md)
+2. waiter: [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudfront.waiter import InvalidationCompletedWaiter
 
-def get_invalidation_completed_waiter() -> InvalidationCompletedWaiter:
-    return Session().client("cloudfront").get_waiter("invalidation_completed")
+
+session = Session()
+
+client = session.client("cloudfront")  # (1)
+waiter: InvalidationCompletedWaiter = client.get_waiter("invalidation_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFrontClient](./client.md)
+2. waiter: [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
 
 
 ### wait
@@ -101,9 +115,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudfront.waiter import StreamingDistributionDeployedWaiter
 
-def get_streaming_distribution_deployed_waiter() -> StreamingDistributionDeployedWaiter:
-    return Session().client("cloudfront").get_waiter("streaming_distribution_deployed")
+
+session = Session()
+
+client = session.client("cloudfront")  # (1)
+waiter: StreamingDistributionDeployedWaiter = client.get_waiter("streaming_distribution_deployed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFrontClient](./client.md)
+2. waiter: [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)
 
 
 ### wait

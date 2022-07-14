@@ -21,6 +21,23 @@ def get_list_agents_paginator() -> ListAgentsPaginator:
     return Session().client("datasync").get_paginator("list_agents")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datasync.paginator import ListAgentsPaginator
+
+session = Session()
+
+client = Session().client("datasync")  # (1)
+paginator: ListAgentsPaginator = client.get_paginator("list_agents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataSyncClient](./client.md)
+2. paginator: [ListAgentsPaginator](./paginators.md#listagentspaginator)
+3. item: [:material-code-braces: ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_datasync.paginator import ListLocationsPaginator
 def get_list_locations_paginator() -> ListLocationsPaginator:
     return Session().client("datasync").get_paginator("list_locations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datasync.paginator import ListLocationsPaginator
+
+session = Session()
+
+client = Session().client("datasync")  # (1)
+paginator: ListLocationsPaginator = client.get_paginator("list_locations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataSyncClient](./client.md)
+2. paginator: [ListLocationsPaginator](./paginators.md#listlocationspaginator)
+3. item: [:material-code-braces: ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("datasync").get_paginator("list_tags_for_resource")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datasync.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("datasync")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataSyncClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
 
 ### paginate
 
@@ -147,6 +198,23 @@ def get_list_task_executions_paginator() -> ListTaskExecutionsPaginator:
     return Session().client("datasync").get_paginator("list_task_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datasync.paginator import ListTaskExecutionsPaginator
+
+session = Session()
+
+client = Session().client("datasync")  # (1)
+paginator: ListTaskExecutionsPaginator = client.get_paginator("list_task_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataSyncClient](./client.md)
+2. paginator: [ListTaskExecutionsPaginator](./paginators.md#listtaskexecutionspaginator)
+3. item: [:material-code-braces: ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef) 
+
 
 ### paginate
 
@@ -188,6 +256,23 @@ from mypy_boto3_datasync.paginator import ListTasksPaginator
 def get_list_tasks_paginator() -> ListTasksPaginator:
     return Session().client("datasync").get_paginator("list_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datasync.paginator import ListTasksPaginator
+
+session = Session()
+
+client = Session().client("datasync")  # (1)
+paginator: ListTasksPaginator = client.get_paginator("list_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataSyncClient](./client.md)
+2. paginator: [ListTasksPaginator](./paginators.md#listtaskspaginator)
+3. item: [:material-code-braces: ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef) 
 
 
 ### paginate

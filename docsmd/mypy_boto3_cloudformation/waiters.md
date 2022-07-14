@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import ChangeSetCreateCompleteWaiter
 
-def get_change_set_create_complete_waiter() -> ChangeSetCreateCompleteWaiter:
-    return Session().client("cloudformation").get_waiter("change_set_create_complete")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: ChangeSetCreateCompleteWaiter = client.get_waiter("change_set_create_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [ChangeSetCreateCompleteWaiter](./waiters.md#changesetcreatecompletewaiter)
 
 
 ### wait
@@ -60,9 +67,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackCreateCompleteWaiter
 
-def get_stack_create_complete_waiter() -> StackCreateCompleteWaiter:
-    return Session().client("cloudformation").get_waiter("stack_create_complete")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: StackCreateCompleteWaiter = client.get_waiter("stack_create_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [StackCreateCompleteWaiter](./waiters.md#stackcreatecompletewaiter)
 
 
 ### wait
@@ -102,9 +116,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackDeleteCompleteWaiter
 
-def get_stack_delete_complete_waiter() -> StackDeleteCompleteWaiter:
-    return Session().client("cloudformation").get_waiter("stack_delete_complete")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: StackDeleteCompleteWaiter = client.get_waiter("stack_delete_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [StackDeleteCompleteWaiter](./waiters.md#stackdeletecompletewaiter)
 
 
 ### wait
@@ -144,9 +165,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackExistsWaiter
 
-def get_stack_exists_waiter() -> StackExistsWaiter:
-    return Session().client("cloudformation").get_waiter("stack_exists")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: StackExistsWaiter = client.get_waiter("stack_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [StackExistsWaiter](./waiters.md#stackexistswaiter)
 
 
 ### wait
@@ -186,9 +214,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackImportCompleteWaiter
 
-def get_stack_import_complete_waiter() -> StackImportCompleteWaiter:
-    return Session().client("cloudformation").get_waiter("stack_import_complete")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: StackImportCompleteWaiter = client.get_waiter("stack_import_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [StackImportCompleteWaiter](./waiters.md#stackimportcompletewaiter)
 
 
 ### wait
@@ -228,9 +263,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackRollbackCompleteWaiter
 
-def get_stack_rollback_complete_waiter() -> StackRollbackCompleteWaiter:
-    return Session().client("cloudformation").get_waiter("stack_rollback_complete")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: StackRollbackCompleteWaiter = client.get_waiter("stack_rollback_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [StackRollbackCompleteWaiter](./waiters.md#stackrollbackcompletewaiter)
 
 
 ### wait
@@ -270,9 +312,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import StackUpdateCompleteWaiter
 
-def get_stack_update_complete_waiter() -> StackUpdateCompleteWaiter:
-    return Session().client("cloudformation").get_waiter("stack_update_complete")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: StackUpdateCompleteWaiter = client.get_waiter("stack_update_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [StackUpdateCompleteWaiter](./waiters.md#stackupdatecompletewaiter)
 
 
 ### wait
@@ -312,9 +361,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudformation.waiter import TypeRegistrationCompleteWaiter
 
-def get_type_registration_complete_waiter() -> TypeRegistrationCompleteWaiter:
-    return Session().client("cloudformation").get_waiter("type_registration_complete")
+
+session = Session()
+
+client = session.client("cloudformation")  # (1)
+waiter: TypeRegistrationCompleteWaiter = client.get_waiter("type_registration_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudFormationClient](./client.md)
+2. waiter: [TypeRegistrationCompleteWaiter](./waiters.md#typeregistrationcompletewaiter)
 
 
 ### wait

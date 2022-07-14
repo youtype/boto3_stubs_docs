@@ -21,6 +21,23 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return Session().client("dax").get_paginator("describe_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dax.paginator import DescribeClustersPaginator
+
+session = Session()
+
+client = Session().client("dax")  # (1)
+paginator: DescribeClustersPaginator = client.get_paginator("describe_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DAXClient](./client.md)
+2. paginator: [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+3. item: [:material-code-braces: DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_describe_default_parameters_paginator() -> DescribeDefaultParametersPagi
     return Session().client("dax").get_paginator("describe_default_parameters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dax.paginator import DescribeDefaultParametersPaginator
+
+session = Session()
+
+client = Session().client("dax")  # (1)
+paginator: DescribeDefaultParametersPaginator = client.get_paginator("describe_default_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DAXClient](./client.md)
+2. paginator: [DescribeDefaultParametersPaginator](./paginators.md#describedefaultparameterspaginator)
+3. item: [:material-code-braces: DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_dax.paginator import DescribeEventsPaginator
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("dax").get_paginator("describe_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dax.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("dax")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DAXClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
 
 ### paginate
@@ -151,6 +202,23 @@ def get_describe_parameter_groups_paginator() -> DescribeParameterGroupsPaginato
     return Session().client("dax").get_paginator("describe_parameter_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dax.paginator import DescribeParameterGroupsPaginator
+
+session = Session()
+
+client = Session().client("dax")  # (1)
+paginator: DescribeParameterGroupsPaginator = client.get_paginator("describe_parameter_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DAXClient](./client.md)
+2. paginator: [DescribeParameterGroupsPaginator](./paginators.md#describeparametergroupspaginator)
+3. item: [:material-code-braces: DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -192,6 +260,23 @@ from mypy_boto3_dax.paginator import DescribeParametersPaginator
 def get_describe_parameters_paginator() -> DescribeParametersPaginator:
     return Session().client("dax").get_paginator("describe_parameters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dax.paginator import DescribeParametersPaginator
+
+session = Session()
+
+client = Session().client("dax")  # (1)
+paginator: DescribeParametersPaginator = client.get_paginator("describe_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DAXClient](./client.md)
+2. paginator: [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
+3. item: [:material-code-braces: DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef) 
 
 
 ### paginate
@@ -236,6 +321,23 @@ def get_describe_subnet_groups_paginator() -> DescribeSubnetGroupsPaginator:
     return Session().client("dax").get_paginator("describe_subnet_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dax.paginator import DescribeSubnetGroupsPaginator
+
+session = Session()
+
+client = Session().client("dax")  # (1)
+paginator: DescribeSubnetGroupsPaginator = client.get_paginator("describe_subnet_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DAXClient](./client.md)
+2. paginator: [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
+3. item: [:material-code-braces: DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -277,6 +379,23 @@ from mypy_boto3_dax.paginator import ListTagsPaginator
 def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("dax").get_paginator("list_tags")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dax.paginator import ListTagsPaginator
+
+session = Session()
+
+client = Session().client("dax")  # (1)
+paginator: ListTagsPaginator = client.get_paginator("list_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DAXClient](./client.md)
+2. paginator: [ListTagsPaginator](./paginators.md#listtagspaginator)
+3. item: [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("databrew").get_paginator("list_datasets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListDatasetsPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListDatasetsPaginator = client.get_paginator("list_datasets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_databrew.paginator import ListJobRunsPaginator
 def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return Session().client("databrew").get_paginator("list_job_runs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListJobRunsPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListJobRunsPaginator = client.get_paginator("list_job_runs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
+3. item: [:material-code-braces: ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ from mypy_boto3_databrew.paginator import ListJobsPaginator
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("databrew").get_paginator("list_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
 
 ### paginate
@@ -147,6 +198,23 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("databrew").get_paginator("list_projects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
+
 
 ### paginate
 
@@ -187,6 +255,23 @@ from mypy_boto3_databrew.paginator import ListRecipeVersionsPaginator
 def get_list_recipe_versions_paginator() -> ListRecipeVersionsPaginator:
     return Session().client("databrew").get_paginator("list_recipe_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListRecipeVersionsPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListRecipeVersionsPaginator = client.get_paginator("list_recipe_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListRecipeVersionsPaginator](./paginators.md#listrecipeversionspaginator)
+3. item: [:material-code-braces: ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef) 
 
 
 ### paginate
@@ -230,6 +315,23 @@ def get_list_recipes_paginator() -> ListRecipesPaginator:
     return Session().client("databrew").get_paginator("list_recipes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListRecipesPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListRecipesPaginator = client.get_paginator("list_recipes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+3. item: [:material-code-braces: ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef) 
+
 
 ### paginate
 
@@ -272,6 +374,23 @@ def get_list_rulesets_paginator() -> ListRulesetsPaginator:
     return Session().client("databrew").get_paginator("list_rulesets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListRulesetsPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListRulesetsPaginator = client.get_paginator("list_rulesets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListRulesetsPaginator](./paginators.md#listrulesetspaginator)
+3. item: [:material-code-braces: ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef) 
+
 
 ### paginate
 
@@ -313,6 +432,23 @@ from mypy_boto3_databrew.paginator import ListSchedulesPaginator
 def get_list_schedules_paginator() -> ListSchedulesPaginator:
     return Session().client("databrew").get_paginator("list_schedules")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_databrew.paginator import ListSchedulesPaginator
+
+session = Session()
+
+client = Session().client("databrew")  # (1)
+paginator: ListSchedulesPaginator = client.get_paginator("list_schedules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueDataBrewClient](./client.md)
+2. paginator: [ListSchedulesPaginator](./paginators.md#listschedulespaginator)
+3. item: [:material-code-braces: ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef) 
 
 
 ### paginate

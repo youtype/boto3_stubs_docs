@@ -21,6 +21,23 @@ def get_describe_organization_resource_collection_health_paginator() -> Describe
     return Session().client("devops-guru").get_paginator("describe_organization_resource_collection_health")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollectionHealthPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: DescribeOrganizationResourceCollectionHealthPaginator = client.get_paginator("describe_organization_resource_collection_health")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [DescribeOrganizationResourceCollectionHealthPaginator](./paginators.md#describeorganizationresourcecollectionhealthpaginator)
+3. item: [:material-code-braces: DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ def get_describe_resource_collection_health_paginator() -> DescribeResourceColle
     return Session().client("devops-guru").get_paginator("describe_resource_collection_health")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import DescribeResourceCollectionHealthPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: DescribeResourceCollectionHealthPaginator = client.get_paginator("describe_resource_collection_health")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [DescribeResourceCollectionHealthPaginator](./paginators.md#describeresourcecollectionhealthpaginator)
+3. item: [:material-code-braces: DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef) 
+
 
 ### paginate
 
@@ -110,6 +144,23 @@ def get_get_cost_estimation_paginator() -> GetCostEstimationPaginator:
     return Session().client("devops-guru").get_paginator("get_cost_estimation")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import GetCostEstimationPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: GetCostEstimationPaginator = client.get_paginator("get_cost_estimation")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [GetCostEstimationPaginator](./paginators.md#getcostestimationpaginator)
+3. item: [:material-code-braces: GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef) 
+
 
 ### paginate
 
@@ -150,6 +201,23 @@ from mypy_boto3_devops_guru.paginator import GetResourceCollectionPaginator
 def get_get_resource_collection_paginator() -> GetResourceCollectionPaginator:
     return Session().client("devops-guru").get_paginator("get_resource_collection")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import GetResourceCollectionPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: GetResourceCollectionPaginator = client.get_paginator("get_resource_collection")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [GetResourceCollectionPaginator](./paginators.md#getresourcecollectionpaginator)
+3. item: [:material-code-braces: GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ from mypy_boto3_devops_guru.paginator import ListAnomaliesForInsightPaginator
 def get_list_anomalies_for_insight_paginator() -> ListAnomaliesForInsightPaginator:
     return Session().client("devops-guru").get_paginator("list_anomalies_for_insight")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import ListAnomaliesForInsightPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: ListAnomaliesForInsightPaginator = client.get_paginator("list_anomalies_for_insight")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [ListAnomaliesForInsightPaginator](./paginators.md#listanomaliesforinsightpaginator)
+3. item: [:material-code-braces: ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef) 
 
 
 ### paginate
@@ -239,6 +324,23 @@ def get_list_events_paginator() -> ListEventsPaginator:
     return Session().client("devops-guru").get_paginator("list_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import ListEventsPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: ListEventsPaginator = client.get_paginator("list_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [ListEventsPaginator](./paginators.md#listeventspaginator)
+3. item: [:material-code-braces: ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef) 
+
 
 ### paginate
 
@@ -283,6 +385,23 @@ def get_list_insights_paginator() -> ListInsightsPaginator:
     return Session().client("devops-guru").get_paginator("list_insights")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import ListInsightsPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: ListInsightsPaginator = client.get_paginator("list_insights")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [ListInsightsPaginator](./paginators.md#listinsightspaginator)
+3. item: [:material-code-braces: ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef) 
+
 
 ### paginate
 
@@ -326,6 +445,23 @@ def get_list_notification_channels_paginator() -> ListNotificationChannelsPagina
     return Session().client("devops-guru").get_paginator("list_notification_channels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import ListNotificationChannelsPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: ListNotificationChannelsPaginator = client.get_paginator("list_notification_channels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [ListNotificationChannelsPaginator](./paginators.md#listnotificationchannelspaginator)
+3. item: [:material-code-braces: ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef) 
+
 
 ### paginate
 
@@ -366,6 +502,23 @@ from mypy_boto3_devops_guru.paginator import ListOrganizationInsightsPaginator
 def get_list_organization_insights_paginator() -> ListOrganizationInsightsPaginator:
     return Session().client("devops-guru").get_paginator("list_organization_insights")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import ListOrganizationInsightsPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: ListOrganizationInsightsPaginator = client.get_paginator("list_organization_insights")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [ListOrganizationInsightsPaginator](./paginators.md#listorganizationinsightspaginator)
+3. item: [:material-code-braces: ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef) 
 
 
 ### paginate
@@ -412,6 +565,23 @@ def get_list_recommendations_paginator() -> ListRecommendationsPaginator:
     return Session().client("devops-guru").get_paginator("list_recommendations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import ListRecommendationsPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: ListRecommendationsPaginator = client.get_paginator("list_recommendations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)
+3. item: [:material-code-braces: ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef) 
+
 
 ### paginate
 
@@ -456,6 +626,23 @@ from mypy_boto3_devops_guru.paginator import SearchInsightsPaginator
 def get_search_insights_paginator() -> SearchInsightsPaginator:
     return Session().client("devops-guru").get_paginator("search_insights")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import SearchInsightsPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: SearchInsightsPaginator = client.get_paginator("search_insights")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)
+3. item: [:material-code-braces: SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef) 
 
 
 ### paginate
@@ -504,6 +691,23 @@ from mypy_boto3_devops_guru.paginator import SearchOrganizationInsightsPaginator
 def get_search_organization_insights_paginator() -> SearchOrganizationInsightsPaginator:
     return Session().client("devops-guru").get_paginator("search_organization_insights")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_devops_guru.paginator import SearchOrganizationInsightsPaginator
+
+session = Session()
+
+client = Session().client("devops-guru")  # (1)
+paginator: SearchOrganizationInsightsPaginator = client.get_paginator("search_organization_insights")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DevOpsGuruClient](./client.md)
+2. paginator: [SearchOrganizationInsightsPaginator](./paginators.md#searchorganizationinsightspaginator)
+3. item: [:material-code-braces: SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef) 
 
 
 ### paginate

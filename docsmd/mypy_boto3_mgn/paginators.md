@@ -21,6 +21,23 @@ def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
     return Session().client("mgn").get_paginator("describe_job_log_items")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: DescribeJobLogItemsPaginator = client.get_paginator("describe_job_log_items")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
+3. item: [:material-code-braces: DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_mgn.paginator import DescribeJobsPaginator
 def get_describe_jobs_paginator() -> DescribeJobsPaginator:
     return Session().client("mgn").get_paginator("describe_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import DescribeJobsPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: DescribeJobsPaginator = client.get_paginator("describe_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [DescribeJobsPaginator](./paginators.md#describejobspaginator)
+3. item: [:material-code-braces: DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ def get_describe_launch_configuration_templates_paginator() -> DescribeLaunchCon
     return Session().client("mgn").get_paginator("describe_launch_configuration_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import DescribeLaunchConfigurationTemplatesPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: DescribeLaunchConfigurationTemplatesPaginator = client.get_paginator("describe_launch_configuration_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [DescribeLaunchConfigurationTemplatesPaginator](./paginators.md#describelaunchconfigurationtemplatespaginator)
+3. item: [:material-code-braces: DescribeLaunchConfigurationTemplatesResponseTypeDef](./type_defs.md#describelaunchconfigurationtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -147,6 +198,23 @@ from mypy_boto3_mgn.paginator import DescribeReplicationConfigurationTemplatesPa
 def get_describe_replication_configuration_templates_paginator() -> DescribeReplicationConfigurationTemplatesPaginator:
     return Session().client("mgn").get_paginator("describe_replication_configuration_templates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import DescribeReplicationConfigurationTemplatesPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: DescribeReplicationConfigurationTemplatesPaginator = client.get_paginator("describe_replication_configuration_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
+3. item: [:material-code-braces: DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef) 
 
 
 ### paginate
@@ -190,6 +258,23 @@ def get_describe_source_servers_paginator() -> DescribeSourceServersPaginator:
     return Session().client("mgn").get_paginator("describe_source_servers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import DescribeSourceServersPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: DescribeSourceServersPaginator = client.get_paginator("describe_source_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+3. item: [:material-code-braces: DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef) 
+
 
 ### paginate
 
@@ -232,6 +317,23 @@ from mypy_boto3_mgn.paginator import DescribeVcenterClientsPaginator
 def get_describe_vcenter_clients_paginator() -> DescribeVcenterClientsPaginator:
     return Session().client("mgn").get_paginator("describe_vcenter_clients")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import DescribeVcenterClientsPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: DescribeVcenterClientsPaginator = client.get_paginator("describe_vcenter_clients")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)
+3. item: [:material-code-braces: DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef) 
 
 
 ### paginate

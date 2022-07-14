@@ -21,6 +21,23 @@ def get_list_crls_paginator() -> ListCrlsPaginator:
     return Session().client("rolesanywhere").get_paginator("list_crls")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rolesanywhere.paginator import ListCrlsPaginator
+
+session = Session()
+
+client = Session().client("rolesanywhere")  # (1)
+paginator: ListCrlsPaginator = client.get_paginator("list_crls")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMRolesAnywhereClient](./client.md)
+2. paginator: [ListCrlsPaginator](./paginators.md#listcrlspaginator)
+3. item: [:material-code-braces: ListCrlsResponseTypeDef](./type_defs.md#listcrlsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_rolesanywhere.paginator import ListProfilesPaginator
 def get_list_profiles_paginator() -> ListProfilesPaginator:
     return Session().client("rolesanywhere").get_paginator("list_profiles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rolesanywhere.paginator import ListProfilesPaginator
+
+session = Session()
+
+client = Session().client("rolesanywhere")  # (1)
+paginator: ListProfilesPaginator = client.get_paginator("list_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMRolesAnywhereClient](./client.md)
+2. paginator: [ListProfilesPaginator](./paginators.md#listprofilespaginator)
+3. item: [:material-code-braces: ListProfilesResponseTypeDef](./type_defs.md#listprofilesresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_subjects_paginator() -> ListSubjectsPaginator:
     return Session().client("rolesanywhere").get_paginator("list_subjects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rolesanywhere.paginator import ListSubjectsPaginator
+
+session = Session()
+
+client = Session().client("rolesanywhere")  # (1)
+paginator: ListSubjectsPaginator = client.get_paginator("list_subjects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMRolesAnywhereClient](./client.md)
+2. paginator: [ListSubjectsPaginator](./paginators.md#listsubjectspaginator)
+3. item: [:material-code-braces: ListSubjectsResponseTypeDef](./type_defs.md#listsubjectsresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_rolesanywhere.paginator import ListTrustAnchorsPaginator
 def get_list_trust_anchors_paginator() -> ListTrustAnchorsPaginator:
     return Session().client("rolesanywhere").get_paginator("list_trust_anchors")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rolesanywhere.paginator import ListTrustAnchorsPaginator
+
+session = Session()
+
+client = Session().client("rolesanywhere")  # (1)
+paginator: ListTrustAnchorsPaginator = client.get_paginator("list_trust_anchors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMRolesAnywhereClient](./client.md)
+2. paginator: [ListTrustAnchorsPaginator](./paginators.md#listtrustanchorspaginator)
+3. item: [:material-code-braces: ListTrustAnchorsResponseTypeDef](./type_defs.md#listtrustanchorsresponsetypedef) 
 
 
 ### paginate

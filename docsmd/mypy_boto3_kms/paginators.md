@@ -21,6 +21,23 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return Session().client("kms").get_paginator("list_aliases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListAliasesPaginator
+
+session = Session()
+
+client = Session().client("kms")  # (1)
+paginator: ListAliasesPaginator = client.get_paginator("list_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KMSClient](./client.md)
+2. paginator: [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+3. item: [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_kms.paginator import ListGrantsPaginator
 def get_list_grants_paginator() -> ListGrantsPaginator:
     return Session().client("kms").get_paginator("list_grants")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListGrantsPaginator
+
+session = Session()
+
+client = Session().client("kms")  # (1)
+paginator: ListGrantsPaginator = client.get_paginator("list_grants")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KMSClient](./client.md)
+2. paginator: [ListGrantsPaginator](./paginators.md#listgrantspaginator)
+3. item: [:material-code-braces: ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_list_key_policies_paginator() -> ListKeyPoliciesPaginator:
     return Session().client("kms").get_paginator("list_key_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListKeyPoliciesPaginator
+
+session = Session()
+
+client = Session().client("kms")  # (1)
+paginator: ListKeyPoliciesPaginator = client.get_paginator("list_key_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KMSClient](./client.md)
+2. paginator: [ListKeyPoliciesPaginator](./paginators.md#listkeypoliciespaginator)
+3. item: [:material-code-braces: ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_kms.paginator import ListKeysPaginator
 def get_list_keys_paginator() -> ListKeysPaginator:
     return Session().client("kms").get_paginator("list_keys")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListKeysPaginator
+
+session = Session()
+
+client = Session().client("kms")  # (1)
+paginator: ListKeysPaginator = client.get_paginator("list_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KMSClient](./client.md)
+2. paginator: [ListKeysPaginator](./paginators.md#listkeyspaginator)
+3. item: [:material-code-braces: ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef) 
 
 
 ### paginate

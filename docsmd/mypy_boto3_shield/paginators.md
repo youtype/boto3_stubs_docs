@@ -21,6 +21,23 @@ def get_list_attacks_paginator() -> ListAttacksPaginator:
     return Session().client("shield").get_paginator("list_attacks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_shield.paginator import ListAttacksPaginator
+
+session = Session()
+
+client = Session().client("shield")  # (1)
+paginator: ListAttacksPaginator = client.get_paginator("list_attacks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ShieldClient](./client.md)
+2. paginator: [ListAttacksPaginator](./paginators.md#listattackspaginator)
+3. item: [:material-code-braces: ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ from mypy_boto3_shield.paginator import ListProtectionsPaginator
 def get_list_protections_paginator() -> ListProtectionsPaginator:
     return Session().client("shield").get_paginator("list_protections")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_shield.paginator import ListProtectionsPaginator
+
+session = Session()
+
+client = Session().client("shield")  # (1)
+paginator: ListProtectionsPaginator = client.get_paginator("list_protections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ShieldClient](./client.md)
+2. paginator: [ListProtectionsPaginator](./paginators.md#listprotectionspaginator)
+3. item: [:material-code-braces: ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef) 
 
 
 ### paginate

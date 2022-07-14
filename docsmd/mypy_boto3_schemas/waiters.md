@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter
 
-def get_code_binding_exists_waiter() -> CodeBindingExistsWaiter:
-    return Session().client("schemas").get_waiter("code_binding_exists")
+
+session = Session()
+
+client = session.client("schemas")  # (1)
+waiter: CodeBindingExistsWaiter = client.get_waiter("code_binding_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [SchemasClient](./client.md)
+2. waiter: [CodeBindingExistsWaiter](./waiters.md#codebindingexistswaiter)
 
 
 ### wait

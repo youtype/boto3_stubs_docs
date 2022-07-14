@@ -21,6 +21,23 @@ def get_get_connectors_paginator() -> GetConnectorsPaginator:
     return Session().client("sms").get_paginator("get_connectors")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sms.paginator import GetConnectorsPaginator
+
+session = Session()
+
+client = Session().client("sms")  # (1)
+paginator: GetConnectorsPaginator = client.get_paginator("get_connectors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SMSClient](./client.md)
+2. paginator: [GetConnectorsPaginator](./paginators.md#getconnectorspaginator)
+3. item: [:material-code-braces: GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_sms.paginator import GetReplicationJobsPaginator
 def get_get_replication_jobs_paginator() -> GetReplicationJobsPaginator:
     return Session().client("sms").get_paginator("get_replication_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sms.paginator import GetReplicationJobsPaginator
+
+session = Session()
+
+client = Session().client("sms")  # (1)
+paginator: GetReplicationJobsPaginator = client.get_paginator("get_replication_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SMSClient](./client.md)
+2. paginator: [GetReplicationJobsPaginator](./paginators.md#getreplicationjobspaginator)
+3. item: [:material-code-braces: GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef) 
 
 
 ### paginate
@@ -104,6 +138,23 @@ def get_get_replication_runs_paginator() -> GetReplicationRunsPaginator:
     return Session().client("sms").get_paginator("get_replication_runs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sms.paginator import GetReplicationRunsPaginator
+
+session = Session()
+
+client = Session().client("sms")  # (1)
+paginator: GetReplicationRunsPaginator = client.get_paginator("get_replication_runs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SMSClient](./client.md)
+2. paginator: [GetReplicationRunsPaginator](./paginators.md#getreplicationrunspaginator)
+3. item: [:material-code-braces: GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_sms.paginator import GetServersPaginator
 def get_get_servers_paginator() -> GetServersPaginator:
     return Session().client("sms").get_paginator("get_servers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sms.paginator import GetServersPaginator
+
+session = Session()
+
+client = Session().client("sms")  # (1)
+paginator: GetServersPaginator = client.get_paginator("get_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SMSClient](./client.md)
+2. paginator: [GetServersPaginator](./paginators.md#getserverspaginator)
+3. item: [:material-code-braces: GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef) 
 
 
 ### paginate
@@ -188,6 +256,23 @@ from mypy_boto3_sms.paginator import ListAppsPaginator
 def get_list_apps_paginator() -> ListAppsPaginator:
     return Session().client("sms").get_paginator("list_apps")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sms.paginator import ListAppsPaginator
+
+session = Session()
+
+client = Session().client("sms")  # (1)
+paginator: ListAppsPaginator = client.get_paginator("list_apps")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SMSClient](./client.md)
+2. paginator: [ListAppsPaginator](./paginators.md#listappspaginator)
+3. item: [:material-code-braces: ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef) 
 
 
 ### paginate

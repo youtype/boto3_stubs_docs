@@ -21,6 +21,23 @@ def get_list_associations_for_license_configuration_paginator() -> ListAssociati
     return Session().client("license-manager").get_paginator("list_associations_for_license_configuration")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_license_manager.paginator import ListAssociationsForLicenseConfigurationPaginator
+
+session = Session()
+
+client = Session().client("license-manager")  # (1)
+paginator: ListAssociationsForLicenseConfigurationPaginator = client.get_paginator("list_associations_for_license_configuration")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LicenseManagerClient](./client.md)
+2. paginator: [ListAssociationsForLicenseConfigurationPaginator](./paginators.md#listassociationsforlicenseconfigurationpaginator)
+3. item: [:material-code-braces: ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_license_manager.paginator import ListLicenseConfigurationsPagina
 def get_list_license_configurations_paginator() -> ListLicenseConfigurationsPaginator:
     return Session().client("license-manager").get_paginator("list_license_configurations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_license_manager.paginator import ListLicenseConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("license-manager")  # (1)
+paginator: ListLicenseConfigurationsPaginator = client.get_paginator("list_license_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LicenseManagerClient](./client.md)
+2. paginator: [ListLicenseConfigurationsPaginator](./paginators.md#listlicenseconfigurationspaginator)
+3. item: [:material-code-braces: ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_list_license_specifications_for_resource_paginator() -> ListLicenseSpeci
     return Session().client("license-manager").get_paginator("list_license_specifications_for_resource")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_license_manager.paginator import ListLicenseSpecificationsForResourcePaginator
+
+session = Session()
+
+client = Session().client("license-manager")  # (1)
+paginator: ListLicenseSpecificationsForResourcePaginator = client.get_paginator("list_license_specifications_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LicenseManagerClient](./client.md)
+2. paginator: [ListLicenseSpecificationsForResourcePaginator](./paginators.md#listlicensespecificationsforresourcepaginator)
+3. item: [:material-code-braces: ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_license_manager.paginator import ListResourceInventoryPaginator
 def get_list_resource_inventory_paginator() -> ListResourceInventoryPaginator:
     return Session().client("license-manager").get_paginator("list_resource_inventory")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_license_manager.paginator import ListResourceInventoryPaginator
+
+session = Session()
+
+client = Session().client("license-manager")  # (1)
+paginator: ListResourceInventoryPaginator = client.get_paginator("list_resource_inventory")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LicenseManagerClient](./client.md)
+2. paginator: [ListResourceInventoryPaginator](./paginators.md#listresourceinventorypaginator)
+3. item: [:material-code-braces: ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef) 
 
 
 ### paginate
@@ -191,6 +259,23 @@ from mypy_boto3_license_manager.paginator import ListUsageForLicenseConfiguratio
 def get_list_usage_for_license_configuration_paginator() -> ListUsageForLicenseConfigurationPaginator:
     return Session().client("license-manager").get_paginator("list_usage_for_license_configuration")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_license_manager.paginator import ListUsageForLicenseConfigurationPaginator
+
+session = Session()
+
+client = Session().client("license-manager")  # (1)
+paginator: ListUsageForLicenseConfigurationPaginator = client.get_paginator("list_usage_for_license_configuration")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LicenseManagerClient](./client.md)
+2. paginator: [ListUsageForLicenseConfigurationPaginator](./paginators.md#listusageforlicenseconfigurationpaginator)
+3. item: [:material-code-braces: ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef) 
 
 
 ### paginate

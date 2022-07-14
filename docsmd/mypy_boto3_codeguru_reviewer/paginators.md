@@ -21,6 +21,23 @@ def get_list_repository_associations_paginator() -> ListRepositoryAssociationsPa
     return Session().client("codeguru-reviewer").get_paginator("list_repository_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeguru_reviewer.paginator import ListRepositoryAssociationsPaginator
+
+session = Session()
+
+client = Session().client("codeguru-reviewer")  # (1)
+paginator: ListRepositoryAssociationsPaginator = client.get_paginator("list_repository_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeGuruReviewerClient](./client.md)
+2. paginator: [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
+3. item: [:material-code-braces: ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef) 
+
 
 ### paginate
 

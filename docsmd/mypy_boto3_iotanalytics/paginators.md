@@ -21,6 +21,23 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return Session().client("iotanalytics").get_paginator("list_channels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator
+
+session = Session()
+
+client = Session().client("iotanalytics")  # (1)
+paginator: ListChannelsPaginator = client.get_paginator("list_channels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTAnalyticsClient](./client.md)
+2. paginator: [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+3. item: [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_iotanalytics.paginator import ListDatasetContentsPaginator
 def get_list_dataset_contents_paginator() -> ListDatasetContentsPaginator:
     return Session().client("iotanalytics").get_paginator("list_dataset_contents")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotanalytics.paginator import ListDatasetContentsPaginator
+
+session = Session()
+
+client = Session().client("iotanalytics")  # (1)
+paginator: ListDatasetContentsPaginator = client.get_paginator("list_dataset_contents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTAnalyticsClient](./client.md)
+2. paginator: [ListDatasetContentsPaginator](./paginators.md#listdatasetcontentspaginator)
+3. item: [:material-code-braces: ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("iotanalytics").get_paginator("list_datasets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotanalytics.paginator import ListDatasetsPaginator
+
+session = Session()
+
+client = Session().client("iotanalytics")  # (1)
+paginator: ListDatasetsPaginator = client.get_paginator("list_datasets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTAnalyticsClient](./client.md)
+2. paginator: [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
+
 
 ### paginate
 
@@ -147,6 +198,23 @@ def get_list_datastores_paginator() -> ListDatastoresPaginator:
     return Session().client("iotanalytics").get_paginator("list_datastores")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotanalytics.paginator import ListDatastoresPaginator
+
+session = Session()
+
+client = Session().client("iotanalytics")  # (1)
+paginator: ListDatastoresPaginator = client.get_paginator("list_datastores")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTAnalyticsClient](./client.md)
+2. paginator: [ListDatastoresPaginator](./paginators.md#listdatastorespaginator)
+3. item: [:material-code-braces: ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef) 
+
 
 ### paginate
 
@@ -187,6 +255,23 @@ from mypy_boto3_iotanalytics.paginator import ListPipelinesPaginator
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("iotanalytics").get_paginator("list_pipelines")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotanalytics.paginator import ListPipelinesPaginator
+
+session = Session()
+
+client = Session().client("iotanalytics")  # (1)
+paginator: ListPipelinesPaginator = client.get_paginator("list_pipelines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTAnalyticsClient](./client.md)
+2. paginator: [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+3. item: [:material-code-braces: ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef) 
 
 
 ### paginate

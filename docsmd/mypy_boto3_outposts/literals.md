@@ -277,6 +277,23 @@ PowerPhaseType = Literal[
     "THREE_PHASE",
 ]
 ```
+## ShipmentCarrierType
+
+```python title="Usage Example"
+from mypy_boto3_outposts.literals import ShipmentCarrierType
+
+def get_value() -> ShipmentCarrierType:
+    return "DBS"
+```
+
+```python title="Definition"
+ShipmentCarrierType = Literal[
+    "DBS",
+    "DHL",
+    "FEDEX",
+    "UPS",
+]
+```
 ## SupportedHardwareTypeType
 
 ```python title="Usage Example"

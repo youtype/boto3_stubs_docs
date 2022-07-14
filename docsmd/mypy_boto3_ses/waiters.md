@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_ses.waiter import IdentityExistsWaiter
 
-def get_identity_exists_waiter() -> IdentityExistsWaiter:
-    return Session().client("ses").get_waiter("identity_exists")
+
+session = Session()
+
+client = session.client("ses")  # (1)
+waiter: IdentityExistsWaiter = client.get_waiter("identity_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [SESClient](./client.md)
+2. waiter: [IdentityExistsWaiter](./waiters.md#identityexistswaiter)
 
 
 ### wait

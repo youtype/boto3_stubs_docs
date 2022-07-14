@@ -21,6 +21,23 @@ def get_describe_activities_paginator() -> DescribeActivitiesPaginator:
     return Session().client("workdocs").get_paginator("describe_activities")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeActivitiesPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeActivitiesPaginator = client.get_paginator("describe_activities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeActivitiesPaginator](./paginators.md#describeactivitiespaginator)
+3. item: [:material-code-braces: DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef) 
+
 
 ### paginate
 
@@ -70,6 +87,23 @@ def get_describe_comments_paginator() -> DescribeCommentsPaginator:
     return Session().client("workdocs").get_paginator("describe_comments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeCommentsPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeCommentsPaginator = client.get_paginator("describe_comments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeCommentsPaginator](./paginators.md#describecommentspaginator)
+3. item: [:material-code-braces: DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef) 
+
 
 ### paginate
 
@@ -115,6 +149,23 @@ def get_describe_document_versions_paginator() -> DescribeDocumentVersionsPagina
     return Session().client("workdocs").get_paginator("describe_document_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeDocumentVersionsPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeDocumentVersionsPaginator = client.get_paginator("describe_document_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeDocumentVersionsPaginator](./paginators.md#describedocumentversionspaginator)
+3. item: [:material-code-braces: DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -159,6 +210,23 @@ from mypy_boto3_workdocs.paginator import DescribeFolderContentsPaginator
 def get_describe_folder_contents_paginator() -> DescribeFolderContentsPaginator:
     return Session().client("workdocs").get_paginator("describe_folder_contents")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeFolderContentsPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeFolderContentsPaginator = client.get_paginator("describe_folder_contents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeFolderContentsPaginator](./paginators.md#describefoldercontentspaginator)
+3. item: [:material-code-braces: DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef) 
 
 
 ### paginate
@@ -210,6 +278,23 @@ def get_describe_groups_paginator() -> DescribeGroupsPaginator:
     return Session().client("workdocs").get_paginator("describe_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeGroupsPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeGroupsPaginator = client.get_paginator("describe_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeGroupsPaginator](./paginators.md#describegroupspaginator)
+3. item: [:material-code-braces: DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -254,6 +339,23 @@ def get_describe_notification_subscriptions_paginator() -> DescribeNotificationS
     return Session().client("workdocs").get_paginator("describe_notification_subscriptions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeNotificationSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeNotificationSubscriptionsPaginator = client.get_paginator("describe_notification_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeNotificationSubscriptionsPaginator](./paginators.md#describenotificationsubscriptionspaginator)
+3. item: [:material-code-braces: DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef) 
+
 
 ### paginate
 
@@ -295,6 +397,23 @@ from mypy_boto3_workdocs.paginator import DescribeResourcePermissionsPaginator
 def get_describe_resource_permissions_paginator() -> DescribeResourcePermissionsPaginator:
     return Session().client("workdocs").get_paginator("describe_resource_permissions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeResourcePermissionsPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeResourcePermissionsPaginator = client.get_paginator("describe_resource_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeResourcePermissionsPaginator](./paginators.md#describeresourcepermissionspaginator)
+3. item: [:material-code-braces: DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef) 
 
 
 ### paginate
@@ -340,6 +459,23 @@ def get_describe_root_folders_paginator() -> DescribeRootFoldersPaginator:
     return Session().client("workdocs").get_paginator("describe_root_folders")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeRootFoldersPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeRootFoldersPaginator = client.get_paginator("describe_root_folders")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
+3. item: [:material-code-braces: DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef) 
+
 
 ### paginate
 
@@ -381,6 +517,23 @@ from mypy_boto3_workdocs.paginator import DescribeUsersPaginator
 def get_describe_users_paginator() -> DescribeUsersPaginator:
     return Session().client("workdocs").get_paginator("describe_users")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workdocs.paginator import DescribeUsersPaginator
+
+session = Session()
+
+client = Session().client("workdocs")  # (1)
+paginator: DescribeUsersPaginator = client.get_paginator("describe_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkDocsClient](./client.md)
+2. paginator: [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+3. item: [:material-code-braces: DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef) 
 
 
 ### paginate

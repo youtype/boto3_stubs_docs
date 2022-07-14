@@ -220,6 +220,7 @@ def create_filter(
     filterCriteria: FilterCriteriaTypeDef,  # (2)
     name: str,
     description: str = ...,
+    reason: str = ...,
     tags: Mapping[str, str] = ...,
 ) -> CreateFilterResponseTypeDef:  # (3)
     ...
@@ -494,6 +495,22 @@ def generate_presigned_url(
     ...
 ```
 
+
+### get\_configuration
+
+Retrieves setting configurations for Inspector scans.
+
+Type annotations and code completion for `#!python boto3.client("inspector2").get_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.get_configuration)
+
+```python title="Method definition"
+def get_configuration(
+    self,
+) -> GetConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetConfigurationResponseTypeDef](./type_defs.md#getconfigurationresponsetypedef) 
 
 ### get\_delegated\_admin\_account
 
@@ -953,6 +970,35 @@ parent.untag_resource(**kwargs)
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
+### update\_configuration
+
+Updates setting configurations for your Amazon Inspector account.
+
+Type annotations and code completion for `#!python boto3.client("inspector2").update_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.update_configuration)
+
+```python title="Method definition"
+def update_configuration(
+    self,
+    *,
+    ecrConfiguration: EcrConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: EcrConfigurationTypeDef](./type_defs.md#ecrconfigurationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateConfigurationRequestRequestTypeDef = {  # (1)
+    "ecrConfiguration": ...,
+}
+
+parent.update_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateConfigurationRequestRequestTypeDef](./type_defs.md#updateconfigurationrequestrequesttypedef) 
+
 ### update\_filter
 
 Specifies the action that is to be applied to the findings that match the
@@ -970,6 +1016,7 @@ def update_filter(
     description: str = ...,
     filterCriteria: FilterCriteriaTypeDef = ...,  # (2)
     name: str = ...,
+    reason: str = ...,
 ) -> UpdateFilterResponseTypeDef:  # (3)
     ...
 ```

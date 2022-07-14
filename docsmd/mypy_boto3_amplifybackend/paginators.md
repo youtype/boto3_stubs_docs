@@ -21,6 +21,23 @@ def get_list_backend_jobs_paginator() -> ListBackendJobsPaginator:
     return Session().client("amplifybackend").get_paginator("list_backend_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifybackend.paginator import ListBackendJobsPaginator
+
+session = Session()
+
+client = Session().client("amplifybackend")  # (1)
+paginator: ListBackendJobsPaginator = client.get_paginator("list_backend_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyBackendClient](./client.md)
+2. paginator: [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)
+3. item: [:material-code-braces: ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef) 
+
 
 ### paginate
 

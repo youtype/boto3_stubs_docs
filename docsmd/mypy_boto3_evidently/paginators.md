@@ -21,6 +21,23 @@ def get_list_experiments_paginator() -> ListExperimentsPaginator:
     return Session().client("evidently").get_paginator("list_experiments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListExperimentsPaginator
+
+session = Session()
+
+client = Session().client("evidently")  # (1)
+paginator: ListExperimentsPaginator = client.get_paginator("list_experiments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchEvidentlyClient](./client.md)
+2. paginator: [ListExperimentsPaginator](./paginators.md#listexperimentspaginator)
+3. item: [:material-code-braces: ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ def get_list_features_paginator() -> ListFeaturesPaginator:
     return Session().client("evidently").get_paginator("list_features")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListFeaturesPaginator
+
+session = Session()
+
+client = Session().client("evidently")  # (1)
+paginator: ListFeaturesPaginator = client.get_paginator("list_features")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchEvidentlyClient](./client.md)
+2. paginator: [ListFeaturesPaginator](./paginators.md#listfeaturespaginator)
+3. item: [:material-code-braces: ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_evidently.paginator import ListLaunchesPaginator
 def get_list_launches_paginator() -> ListLaunchesPaginator:
     return Session().client("evidently").get_paginator("list_launches")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListLaunchesPaginator
+
+session = Session()
+
+client = Session().client("evidently")  # (1)
+paginator: ListLaunchesPaginator = client.get_paginator("list_launches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchEvidentlyClient](./client.md)
+2. paginator: [ListLaunchesPaginator](./paginators.md#listlaunchespaginator)
+3. item: [:material-code-braces: ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef) 
 
 
 ### paginate
@@ -150,6 +201,23 @@ from mypy_boto3_evidently.paginator import ListProjectsPaginator
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("evidently").get_paginator("list_projects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("evidently")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchEvidentlyClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
 
 ### paginate

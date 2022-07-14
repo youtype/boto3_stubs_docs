@@ -21,6 +21,23 @@ def get_list_bundles_paginator() -> ListBundlesPaginator:
     return Session().client("mobile").get_paginator("list_bundles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mobile.paginator import ListBundlesPaginator
+
+session = Session()
+
+client = Session().client("mobile")  # (1)
+paginator: ListBundlesPaginator = client.get_paginator("list_bundles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MobileClient](./client.md)
+2. paginator: [ListBundlesPaginator](./paginators.md#listbundlespaginator)
+3. item: [:material-code-braces: ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_mobile.paginator import ListProjectsPaginator
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("mobile").get_paginator("list_projects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mobile.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("mobile")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MobileClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
 
 
 ### paginate

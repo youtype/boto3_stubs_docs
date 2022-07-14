@@ -21,6 +21,23 @@ def get_list_changesets_paginator() -> ListChangesetsPaginator:
     return Session().client("finspace-data").get_paginator("list_changesets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator
+
+session = Session()
+
+client = Session().client("finspace-data")  # (1)
+paginator: ListChangesetsPaginator = client.get_paginator("list_changesets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FinSpaceDataClient](./client.md)
+2. paginator: [ListChangesetsPaginator](./paginators.md#listchangesetspaginator)
+3. item: [:material-code-braces: ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_finspace_data.paginator import ListDataViewsPaginator
 def get_list_data_views_paginator() -> ListDataViewsPaginator:
     return Session().client("finspace-data").get_paginator("list_data_views")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_finspace_data.paginator import ListDataViewsPaginator
+
+session = Session()
+
+client = Session().client("finspace-data")  # (1)
+paginator: ListDataViewsPaginator = client.get_paginator("list_data_views")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FinSpaceDataClient](./client.md)
+2. paginator: [ListDataViewsPaginator](./paginators.md#listdataviewspaginator)
+3. item: [:material-code-braces: ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("finspace-data").get_paginator("list_datasets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_finspace_data.paginator import ListDatasetsPaginator
+
+session = Session()
+
+client = Session().client("finspace-data")  # (1)
+paginator: ListDatasetsPaginator = client.get_paginator("list_datasets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FinSpaceDataClient](./client.md)
+2. paginator: [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ def get_list_permission_groups_paginator() -> ListPermissionGroupsPaginator:
     return Session().client("finspace-data").get_paginator("list_permission_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_finspace_data.paginator import ListPermissionGroupsPaginator
+
+session = Session()
+
+client = Session().client("finspace-data")  # (1)
+paginator: ListPermissionGroupsPaginator = client.get_paginator("list_permission_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FinSpaceDataClient](./client.md)
+2. paginator: [ListPermissionGroupsPaginator](./paginators.md#listpermissiongroupspaginator)
+3. item: [:material-code-braces: ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_finspace_data.paginator import ListUsersPaginator
 def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("finspace-data").get_paginator("list_users")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_finspace_data.paginator import ListUsersPaginator
+
+session = Session()
+
+client = Session().client("finspace-data")  # (1)
+paginator: ListUsersPaginator = client.get_paginator("list_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FinSpaceDataClient](./client.md)
+2. paginator: [ListUsersPaginator](./paginators.md#listuserspaginator)
+3. item: [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
 
 ### paginate

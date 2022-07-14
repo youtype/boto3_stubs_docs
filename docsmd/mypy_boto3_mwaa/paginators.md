@@ -21,6 +21,23 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("mwaa").get_paginator("list_environments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mwaa.paginator import ListEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("mwaa")  # (1)
+paginator: ListEnvironmentsPaginator = client.get_paginator("list_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MWAAClient](./client.md)
+2. paginator: [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+3. item: [:material-code-braces: ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef) 
+
 
 ### paginate
 

@@ -21,6 +21,23 @@ def get_describe_voices_paginator() -> DescribeVoicesPaginator:
     return Session().client("polly").get_paginator("describe_voices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_polly.paginator import DescribeVoicesPaginator
+
+session = Session()
+
+client = Session().client("polly")  # (1)
+paginator: DescribeVoicesPaginator = client.get_paginator("describe_voices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PollyClient](./client.md)
+2. paginator: [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
+3. item: [:material-code-braces: DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ def get_list_lexicons_paginator() -> ListLexiconsPaginator:
     return Session().client("polly").get_paginator("list_lexicons")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_polly.paginator import ListLexiconsPaginator
+
+session = Session()
+
+client = Session().client("polly")  # (1)
+paginator: ListLexiconsPaginator = client.get_paginator("list_lexicons")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PollyClient](./client.md)
+2. paginator: [ListLexiconsPaginator](./paginators.md#listlexiconspaginator)
+3. item: [:material-code-braces: ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef) 
+
 
 ### paginate
 
@@ -107,6 +141,23 @@ from mypy_boto3_polly.paginator import ListSpeechSynthesisTasksPaginator
 def get_list_speech_synthesis_tasks_paginator() -> ListSpeechSynthesisTasksPaginator:
     return Session().client("polly").get_paginator("list_speech_synthesis_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_polly.paginator import ListSpeechSynthesisTasksPaginator
+
+session = Session()
+
+client = Session().client("polly")  # (1)
+paginator: ListSpeechSynthesisTasksPaginator = client.get_paginator("list_speech_synthesis_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PollyClient](./client.md)
+2. paginator: [ListSpeechSynthesisTasksPaginator](./paginators.md#listspeechsynthesistaskspaginator)
+3. item: [:material-code-braces: ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef) 
 
 
 ### paginate

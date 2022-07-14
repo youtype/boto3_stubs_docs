@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetActiveWaiter
 
-def get_asset_active_waiter() -> AssetActiveWaiter:
-    return Session().client("iotsitewise").get_waiter("asset_active")
+
+session = Session()
+
+client = session.client("iotsitewise")  # (1)
+waiter: AssetActiveWaiter = client.get_waiter("asset_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. waiter: [AssetActiveWaiter](./waiters.md#assetactivewaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetModelActiveWaiter
 
-def get_asset_model_active_waiter() -> AssetModelActiveWaiter:
-    return Session().client("iotsitewise").get_waiter("asset_model_active")
+
+session = Session()
+
+client = session.client("iotsitewise")  # (1)
+waiter: AssetModelActiveWaiter = client.get_waiter("asset_model_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. waiter: [AssetModelActiveWaiter](./waiters.md#assetmodelactivewaiter)
 
 
 ### wait
@@ -99,9 +113,16 @@ from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetModelNotExistsWaiter
 
-def get_asset_model_not_exists_waiter() -> AssetModelNotExistsWaiter:
-    return Session().client("iotsitewise").get_waiter("asset_model_not_exists")
+
+session = Session()
+
+client = session.client("iotsitewise")  # (1)
+waiter: AssetModelNotExistsWaiter = client.get_waiter("asset_model_not_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. waiter: [AssetModelNotExistsWaiter](./waiters.md#assetmodelnotexistswaiter)
 
 
 ### wait
@@ -140,9 +161,16 @@ from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetNotExistsWaiter
 
-def get_asset_not_exists_waiter() -> AssetNotExistsWaiter:
-    return Session().client("iotsitewise").get_waiter("asset_not_exists")
+
+session = Session()
+
+client = session.client("iotsitewise")  # (1)
+waiter: AssetNotExistsWaiter = client.get_waiter("asset_not_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. waiter: [AssetNotExistsWaiter](./waiters.md#assetnotexistswaiter)
 
 
 ### wait
@@ -181,9 +209,16 @@ from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import PortalActiveWaiter
 
-def get_portal_active_waiter() -> PortalActiveWaiter:
-    return Session().client("iotsitewise").get_waiter("portal_active")
+
+session = Session()
+
+client = session.client("iotsitewise")  # (1)
+waiter: PortalActiveWaiter = client.get_waiter("portal_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. waiter: [PortalActiveWaiter](./waiters.md#portalactivewaiter)
 
 
 ### wait
@@ -222,9 +257,16 @@ from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import PortalNotExistsWaiter
 
-def get_portal_not_exists_waiter() -> PortalNotExistsWaiter:
-    return Session().client("iotsitewise").get_waiter("portal_not_exists")
+
+session = Session()
+
+client = session.client("iotsitewise")  # (1)
+waiter: PortalNotExistsWaiter = client.get_waiter("portal_not_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. waiter: [PortalNotExistsWaiter](./waiters.md#portalnotexistswaiter)
 
 
 ### wait

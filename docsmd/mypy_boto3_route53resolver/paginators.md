@@ -21,6 +21,23 @@ def get_list_firewall_configs_paginator() -> ListFirewallConfigsPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListFirewallConfigsPaginator = client.get_paginator("list_firewall_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
+3. item: [:material-code-braces: ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_route53resolver.paginator import ListFirewallDomainListsPaginato
 def get_list_firewall_domain_lists_paginator() -> ListFirewallDomainListsPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_domain_lists")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListFirewallDomainListsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListFirewallDomainListsPaginator = client.get_paginator("list_firewall_domain_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListFirewallDomainListsPaginator](./paginators.md#listfirewalldomainlistspaginator)
+3. item: [:material-code-braces: ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ def get_list_firewall_domains_paginator() -> ListFirewallDomainsPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_domains")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListFirewallDomainsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListFirewallDomainsPaginator = client.get_paginator("list_firewall_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListFirewallDomainsPaginator](./paginators.md#listfirewalldomainspaginator)
+3. item: [:material-code-braces: ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef) 
+
 
 ### paginate
 
@@ -144,6 +195,23 @@ from mypy_boto3_route53resolver.paginator import ListFirewallRuleGroupAssociatio
 def get_list_firewall_rule_group_associations_paginator() -> ListFirewallRuleGroupAssociationsPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_rule_group_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListFirewallRuleGroupAssociationsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListFirewallRuleGroupAssociationsPaginator = client.get_paginator("list_firewall_rule_group_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListFirewallRuleGroupAssociationsPaginator](./paginators.md#listfirewallrulegroupassociationspaginator)
+3. item: [:material-code-braces: ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef) 
 
 
 ### paginate
@@ -191,6 +259,23 @@ def get_list_firewall_rule_groups_paginator() -> ListFirewallRuleGroupsPaginator
     return Session().client("route53resolver").get_paginator("list_firewall_rule_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListFirewallRuleGroupsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListFirewallRuleGroupsPaginator = client.get_paginator("list_firewall_rule_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListFirewallRuleGroupsPaginator](./paginators.md#listfirewallrulegroupspaginator)
+3. item: [:material-code-braces: ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -231,6 +316,23 @@ from mypy_boto3_route53resolver.paginator import ListFirewallRulesPaginator
 def get_list_firewall_rules_paginator() -> ListFirewallRulesPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_rules")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListFirewallRulesPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListFirewallRulesPaginator = client.get_paginator("list_firewall_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListFirewallRulesPaginator](./paginators.md#listfirewallrulespaginator)
+3. item: [:material-code-braces: ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef) 
 
 
 ### paginate
@@ -277,6 +379,23 @@ def get_list_resolver_configs_paginator() -> ListResolverConfigsPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverConfigsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverConfigsPaginator = client.get_paginator("list_resolver_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverConfigsPaginator](./paginators.md#listresolverconfigspaginator)
+3. item: [:material-code-braces: ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -317,6 +436,23 @@ from mypy_boto3_route53resolver.paginator import ListResolverDnssecConfigsPagina
 def get_list_resolver_dnssec_configs_paginator() -> ListResolverDnssecConfigsPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_dnssec_configs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverDnssecConfigsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverDnssecConfigsPaginator = client.get_paginator("list_resolver_dnssec_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverDnssecConfigsPaginator](./paginators.md#listresolverdnssecconfigspaginator)
+3. item: [:material-code-braces: ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef) 
 
 
 ### paginate
@@ -361,6 +497,23 @@ def get_list_resolver_endpoint_ip_addresses_paginator() -> ListResolverEndpointI
     return Session().client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverEndpointIpAddressesPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverEndpointIpAddressesPaginator = client.get_paginator("list_resolver_endpoint_ip_addresses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverEndpointIpAddressesPaginator](./paginators.md#listresolverendpointipaddressespaginator)
+3. item: [:material-code-braces: ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef) 
+
 
 ### paginate
 
@@ -402,6 +555,23 @@ from mypy_boto3_route53resolver.paginator import ListResolverEndpointsPaginator
 def get_list_resolver_endpoints_paginator() -> ListResolverEndpointsPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_endpoints")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverEndpointsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverEndpointsPaginator = client.get_paginator("list_resolver_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverEndpointsPaginator](./paginators.md#listresolverendpointspaginator)
+3. item: [:material-code-braces: ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef) 
 
 
 ### paginate
@@ -445,6 +615,23 @@ from mypy_boto3_route53resolver.paginator import ListResolverQueryLogConfigAssoc
 def get_list_resolver_query_log_config_associations_paginator() -> ListResolverQueryLogConfigAssociationsPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_query_log_config_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverQueryLogConfigAssociationsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverQueryLogConfigAssociationsPaginator = client.get_paginator("list_resolver_query_log_config_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverQueryLogConfigAssociationsPaginator](./paginators.md#listresolverquerylogconfigassociationspaginator)
+3. item: [:material-code-braces: ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef) 
 
 
 ### paginate
@@ -492,6 +679,23 @@ def get_list_resolver_query_log_configs_paginator() -> ListResolverQueryLogConfi
     return Session().client("route53resolver").get_paginator("list_resolver_query_log_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverQueryLogConfigsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverQueryLogConfigsPaginator = client.get_paginator("list_resolver_query_log_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverQueryLogConfigsPaginator](./paginators.md#listresolverquerylogconfigspaginator)
+3. item: [:material-code-braces: ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -538,6 +742,23 @@ def get_list_resolver_rule_associations_paginator() -> ListResolverRuleAssociati
     return Session().client("route53resolver").get_paginator("list_resolver_rule_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverRuleAssociationsPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverRuleAssociationsPaginator = client.get_paginator("list_resolver_rule_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverRuleAssociationsPaginator](./paginators.md#listresolverruleassociationspaginator)
+3. item: [:material-code-braces: ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef) 
+
 
 ### paginate
 
@@ -581,6 +802,23 @@ def get_list_resolver_rules_paginator() -> ListResolverRulesPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListResolverRulesPaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListResolverRulesPaginator = client.get_paginator("list_resolver_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
+3. item: [:material-code-braces: ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef) 
+
 
 ### paginate
 
@@ -623,6 +861,23 @@ from mypy_boto3_route53resolver.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("route53resolver").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53resolver.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("route53resolver")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53ResolverClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
 
 ### paginate

@@ -32045,7 +32045,6 @@ def get_value() -> CreateFlowLogsRequestRequestTypeDef:
     return {
         "ResourceIds": ...,
         "ResourceType": ...,
-        "TrafficType": ...,
     }
 ```
 
@@ -32053,11 +32052,11 @@ def get_value() -> CreateFlowLogsRequestRequestTypeDef:
 class CreateFlowLogsRequestRequestTypeDef(TypedDict):
     ResourceIds: Sequence[str],
     ResourceType: FlowLogsResourceTypeType,  # (1)
-    TrafficType: TrafficTypeType,  # (2)
     DryRun: NotRequired[bool],
     ClientToken: NotRequired[str],
     DeliverLogsPermissionArn: NotRequired[str],
     LogGroupName: NotRequired[str],
+    TrafficType: NotRequired[TrafficTypeType],  # (2)
     LogDestinationType: NotRequired[LogDestinationTypeType],  # (3)
     LogDestination: NotRequired[str],
     LogFormat: NotRequired[str],

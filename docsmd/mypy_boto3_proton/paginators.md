@@ -21,6 +21,23 @@ def get_list_component_outputs_paginator() -> ListComponentOutputsPaginator:
     return Session().client("proton").get_paginator("list_component_outputs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListComponentOutputsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListComponentOutputsPaginator = client.get_paginator("list_component_outputs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListComponentOutputsPaginator](./paginators.md#listcomponentoutputspaginator)
+3. item: [:material-code-braces: ListComponentOutputsOutputTypeDef](./type_defs.md#listcomponentoutputsoutputtypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_component_provisioned_resources_paginator() -> ListComponentProvisi
     return Session().client("proton").get_paginator("list_component_provisioned_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListComponentProvisionedResourcesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListComponentProvisionedResourcesPaginator = client.get_paginator("list_component_provisioned_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListComponentProvisionedResourcesPaginator](./paginators.md#listcomponentprovisionedresourcespaginator)
+3. item: [:material-code-braces: ListComponentProvisionedResourcesOutputTypeDef](./type_defs.md#listcomponentprovisionedresourcesoutputtypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_proton.paginator import ListComponentsPaginator
 def get_list_components_paginator() -> ListComponentsPaginator:
     return Session().client("proton").get_paginator("list_components")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListComponentsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListComponentsPaginator = client.get_paginator("list_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
+3. item: [:material-code-braces: ListComponentsOutputTypeDef](./type_defs.md#listcomponentsoutputtypedef) 
 
 
 ### paginate
@@ -148,6 +199,23 @@ from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginat
 def get_list_environment_account_connections_paginator() -> ListEnvironmentAccountConnectionsPaginator:
     return Session().client("proton").get_paginator("list_environment_account_connections")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListEnvironmentAccountConnectionsPaginator = client.get_paginator("list_environment_account_connections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
+3. item: [:material-code-braces: ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef) 
 
 
 ### paginate
@@ -195,6 +263,23 @@ def get_list_environment_outputs_paginator() -> ListEnvironmentOutputsPaginator:
     return Session().client("proton").get_paginator("list_environment_outputs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListEnvironmentOutputsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListEnvironmentOutputsPaginator = client.get_paginator("list_environment_outputs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListEnvironmentOutputsPaginator](./paginators.md#listenvironmentoutputspaginator)
+3. item: [:material-code-braces: ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef) 
+
 
 ### paginate
 
@@ -237,6 +322,23 @@ def get_list_environment_provisioned_resources_paginator() -> ListEnvironmentPro
     return Session().client("proton").get_paginator("list_environment_provisioned_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListEnvironmentProvisionedResourcesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListEnvironmentProvisionedResourcesPaginator = client.get_paginator("list_environment_provisioned_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListEnvironmentProvisionedResourcesPaginator](./paginators.md#listenvironmentprovisionedresourcespaginator)
+3. item: [:material-code-braces: ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef) 
+
 
 ### paginate
 
@@ -278,6 +380,23 @@ from mypy_boto3_proton.paginator import ListEnvironmentTemplateVersionsPaginator
 def get_list_environment_template_versions_paginator() -> ListEnvironmentTemplateVersionsPaginator:
     return Session().client("proton").get_paginator("list_environment_template_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListEnvironmentTemplateVersionsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListEnvironmentTemplateVersionsPaginator = client.get_paginator("list_environment_template_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListEnvironmentTemplateVersionsPaginator](./paginators.md#listenvironmenttemplateversionspaginator)
+3. item: [:material-code-braces: ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef) 
 
 
 ### paginate
@@ -322,6 +441,23 @@ def get_list_environment_templates_paginator() -> ListEnvironmentTemplatesPagina
     return Session().client("proton").get_paginator("list_environment_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListEnvironmentTemplatesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListEnvironmentTemplatesPaginator = client.get_paginator("list_environment_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListEnvironmentTemplatesPaginator](./paginators.md#listenvironmenttemplatespaginator)
+3. item: [:material-code-braces: ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef) 
+
 
 ### paginate
 
@@ -362,6 +498,23 @@ from mypy_boto3_proton.paginator import ListEnvironmentsPaginator
 def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("proton").get_paginator("list_environments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListEnvironmentsPaginator = client.get_paginator("list_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+3. item: [:material-code-braces: ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef) 
 
 
 ### paginate
@@ -406,6 +559,23 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return Session().client("proton").get_paginator("list_repositories")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListRepositoriesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListRepositoriesPaginator = client.get_paginator("list_repositories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+3. item: [:material-code-braces: ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef) 
+
 
 ### paginate
 
@@ -446,6 +616,23 @@ from mypy_boto3_proton.paginator import ListRepositorySyncDefinitionsPaginator
 def get_list_repository_sync_definitions_paginator() -> ListRepositorySyncDefinitionsPaginator:
     return Session().client("proton").get_paginator("list_repository_sync_definitions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListRepositorySyncDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListRepositorySyncDefinitionsPaginator = client.get_paginator("list_repository_sync_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListRepositorySyncDefinitionsPaginator](./paginators.md#listrepositorysyncdefinitionspaginator)
+3. item: [:material-code-braces: ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef) 
 
 
 ### paginate
@@ -495,6 +682,23 @@ def get_list_service_instance_outputs_paginator() -> ListServiceInstanceOutputsP
     return Session().client("proton").get_paginator("list_service_instance_outputs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServiceInstanceOutputsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServiceInstanceOutputsPaginator = client.get_paginator("list_service_instance_outputs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServiceInstanceOutputsPaginator](./paginators.md#listserviceinstanceoutputspaginator)
+3. item: [:material-code-braces: ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef) 
+
 
 ### paginate
 
@@ -538,6 +742,23 @@ from mypy_boto3_proton.paginator import ListServiceInstanceProvisionedResourcesP
 def get_list_service_instance_provisioned_resources_paginator() -> ListServiceInstanceProvisionedResourcesPaginator:
     return Session().client("proton").get_paginator("list_service_instance_provisioned_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServiceInstanceProvisionedResourcesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServiceInstanceProvisionedResourcesPaginator = client.get_paginator("list_service_instance_provisioned_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServiceInstanceProvisionedResourcesPaginator](./paginators.md#listserviceinstanceprovisionedresourcespaginator)
+3. item: [:material-code-braces: ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef) 
 
 
 ### paginate
@@ -583,6 +804,23 @@ def get_list_service_instances_paginator() -> ListServiceInstancesPaginator:
     return Session().client("proton").get_paginator("list_service_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServiceInstancesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServiceInstancesPaginator = client.get_paginator("list_service_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServiceInstancesPaginator](./paginators.md#listserviceinstancespaginator)
+3. item: [:material-code-braces: ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef) 
+
 
 ### paginate
 
@@ -624,6 +862,23 @@ from mypy_boto3_proton.paginator import ListServicePipelineOutputsPaginator
 def get_list_service_pipeline_outputs_paginator() -> ListServicePipelineOutputsPaginator:
     return Session().client("proton").get_paginator("list_service_pipeline_outputs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServicePipelineOutputsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServicePipelineOutputsPaginator = client.get_paginator("list_service_pipeline_outputs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServicePipelineOutputsPaginator](./paginators.md#listservicepipelineoutputspaginator)
+3. item: [:material-code-braces: ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef) 
 
 
 ### paginate
@@ -667,6 +922,23 @@ def get_list_service_pipeline_provisioned_resources_paginator() -> ListServicePi
     return Session().client("proton").get_paginator("list_service_pipeline_provisioned_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServicePipelineProvisionedResourcesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServicePipelineProvisionedResourcesPaginator = client.get_paginator("list_service_pipeline_provisioned_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServicePipelineProvisionedResourcesPaginator](./paginators.md#listservicepipelineprovisionedresourcespaginator)
+3. item: [:material-code-braces: ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef) 
+
 
 ### paginate
 
@@ -708,6 +980,23 @@ from mypy_boto3_proton.paginator import ListServiceTemplateVersionsPaginator
 def get_list_service_template_versions_paginator() -> ListServiceTemplateVersionsPaginator:
     return Session().client("proton").get_paginator("list_service_template_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServiceTemplateVersionsPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServiceTemplateVersionsPaginator = client.get_paginator("list_service_template_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServiceTemplateVersionsPaginator](./paginators.md#listservicetemplateversionspaginator)
+3. item: [:material-code-braces: ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef) 
 
 
 ### paginate
@@ -752,6 +1041,23 @@ def get_list_service_templates_paginator() -> ListServiceTemplatesPaginator:
     return Session().client("proton").get_paginator("list_service_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServiceTemplatesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServiceTemplatesPaginator = client.get_paginator("list_service_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServiceTemplatesPaginator](./paginators.md#listservicetemplatespaginator)
+3. item: [:material-code-braces: ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef) 
+
 
 ### paginate
 
@@ -793,6 +1099,23 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("proton").get_paginator("list_services")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListServicesPaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListServicesPaginator = client.get_paginator("list_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListServicesPaginator](./paginators.md#listservicespaginator)
+3. item: [:material-code-braces: ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef) 
+
 
 ### paginate
 
@@ -833,6 +1156,23 @@ from mypy_boto3_proton.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("proton").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_proton.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("proton")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ProtonClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
 
 ### paginate

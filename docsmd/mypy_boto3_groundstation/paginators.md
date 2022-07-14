@@ -21,6 +21,23 @@ def get_list_configs_paginator() -> ListConfigsPaginator:
     return Session().client("groundstation").get_paginator("list_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListConfigsPaginator
+
+session = Session()
+
+client = Session().client("groundstation")  # (1)
+paginator: ListConfigsPaginator = client.get_paginator("list_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GroundStationClient](./client.md)
+2. paginator: [ListConfigsPaginator](./paginators.md#listconfigspaginator)
+3. item: [:material-code-braces: ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_groundstation.paginator import ListContactsPaginator
 def get_list_contacts_paginator() -> ListContactsPaginator:
     return Session().client("groundstation").get_paginator("list_contacts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListContactsPaginator
+
+session = Session()
+
+client = Session().client("groundstation")  # (1)
+paginator: ListContactsPaginator = client.get_paginator("list_contacts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GroundStationClient](./client.md)
+2. paginator: [ListContactsPaginator](./paginators.md#listcontactspaginator)
+3. item: [:material-code-braces: ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef) 
 
 
 ### paginate
@@ -112,6 +146,23 @@ def get_list_dataflow_endpoint_groups_paginator() -> ListDataflowEndpointGroupsP
     return Session().client("groundstation").get_paginator("list_dataflow_endpoint_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListDataflowEndpointGroupsPaginator
+
+session = Session()
+
+client = Session().client("groundstation")  # (1)
+paginator: ListDataflowEndpointGroupsPaginator = client.get_paginator("list_dataflow_endpoint_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GroundStationClient](./client.md)
+2. paginator: [ListDataflowEndpointGroupsPaginator](./paginators.md#listdataflowendpointgroupspaginator)
+3. item: [:material-code-braces: ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -152,6 +203,23 @@ from mypy_boto3_groundstation.paginator import ListGroundStationsPaginator
 def get_list_ground_stations_paginator() -> ListGroundStationsPaginator:
     return Session().client("groundstation").get_paginator("list_ground_stations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListGroundStationsPaginator
+
+session = Session()
+
+client = Session().client("groundstation")  # (1)
+paginator: ListGroundStationsPaginator = client.get_paginator("list_ground_stations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GroundStationClient](./client.md)
+2. paginator: [ListGroundStationsPaginator](./paginators.md#listgroundstationspaginator)
+3. item: [:material-code-braces: ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef) 
 
 
 ### paginate
@@ -195,6 +263,23 @@ def get_list_mission_profiles_paginator() -> ListMissionProfilesPaginator:
     return Session().client("groundstation").get_paginator("list_mission_profiles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListMissionProfilesPaginator
+
+session = Session()
+
+client = Session().client("groundstation")  # (1)
+paginator: ListMissionProfilesPaginator = client.get_paginator("list_mission_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GroundStationClient](./client.md)
+2. paginator: [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
+3. item: [:material-code-braces: ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef) 
+
 
 ### paginate
 
@@ -235,6 +320,23 @@ from mypy_boto3_groundstation.paginator import ListSatellitesPaginator
 def get_list_satellites_paginator() -> ListSatellitesPaginator:
     return Session().client("groundstation").get_paginator("list_satellites")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListSatellitesPaginator
+
+session = Session()
+
+client = Session().client("groundstation")  # (1)
+paginator: ListSatellitesPaginator = client.get_paginator("list_satellites")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GroundStationClient](./client.md)
+2. paginator: [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)
+3. item: [:material-code-braces: ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef) 
 
 
 ### paginate

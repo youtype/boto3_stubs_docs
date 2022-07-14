@@ -21,6 +21,23 @@ def get_describe_report_definitions_paginator() -> DescribeReportDefinitionsPagi
     return Session().client("cur").get_paginator("describe_report_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cur.paginator import DescribeReportDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("cur")  # (1)
+paginator: DescribeReportDefinitionsPaginator = client.get_paginator("describe_report_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CostandUsageReportServiceClient](./client.md)
+2. paginator: [DescribeReportDefinitionsPaginator](./paginators.md#describereportdefinitionspaginator)
+3. item: [:material-code-braces: DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef) 
+
 
 ### paginate
 

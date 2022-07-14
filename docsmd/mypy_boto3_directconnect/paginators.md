@@ -21,6 +21,23 @@ def get_describe_direct_connect_gateway_associations_paginator() -> DescribeDire
     return Session().client("directconnect").get_paginator("describe_direct_connect_gateway_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAssociationsPaginator
+
+session = Session()
+
+client = Session().client("directconnect")  # (1)
+paginator: DescribeDirectConnectGatewayAssociationsPaginator = client.get_paginator("describe_direct_connect_gateway_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectConnectClient](./client.md)
+2. paginator: [DescribeDirectConnectGatewayAssociationsPaginator](./paginators.md#describedirectconnectgatewayassociationspaginator)
+3. item: [:material-code-braces: DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ def get_describe_direct_connect_gateway_attachments_paginator() -> DescribeDirec
     return Session().client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAttachmentsPaginator
+
+session = Session()
+
+client = Session().client("directconnect")  # (1)
+paginator: DescribeDirectConnectGatewayAttachmentsPaginator = client.get_paginator("describe_direct_connect_gateway_attachments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectConnectClient](./client.md)
+2. paginator: [DescribeDirectConnectGatewayAttachmentsPaginator](./paginators.md#describedirectconnectgatewayattachmentspaginator)
+3. item: [:material-code-braces: DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef) 
+
 
 ### paginate
 
@@ -108,6 +142,23 @@ from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewaysPagi
 def get_describe_direct_connect_gateways_paginator() -> DescribeDirectConnectGatewaysPaginator:
     return Session().client("directconnect").get_paginator("describe_direct_connect_gateways")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewaysPaginator
+
+session = Session()
+
+client = Session().client("directconnect")  # (1)
+paginator: DescribeDirectConnectGatewaysPaginator = client.get_paginator("describe_direct_connect_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectConnectClient](./client.md)
+2. paginator: [DescribeDirectConnectGatewaysPaginator](./paginators.md#describedirectconnectgatewayspaginator)
+3. item: [:material-code-braces: DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef) 
 
 
 ### paginate

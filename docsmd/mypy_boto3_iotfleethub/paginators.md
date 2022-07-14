@@ -21,6 +21,23 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("iotfleethub").get_paginator("list_applications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotfleethub.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("iotfleethub")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTFleetHubClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
 
 ### paginate
 

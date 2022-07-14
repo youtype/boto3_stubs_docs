@@ -21,6 +21,23 @@ def get_list_rule_groups_namespaces_paginator() -> ListRuleGroupsNamespacesPagin
     return Session().client("amp").get_paginator("list_rule_groups_namespaces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amp.paginator import ListRuleGroupsNamespacesPaginator
+
+session = Session()
+
+client = Session().client("amp")  # (1)
+paginator: ListRuleGroupsNamespacesPaginator = client.get_paginator("list_rule_groups_namespaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PrometheusServiceClient](./client.md)
+2. paginator: [ListRuleGroupsNamespacesPaginator](./paginators.md#listrulegroupsnamespacespaginator)
+3. item: [:material-code-braces: ListRuleGroupsNamespacesResponseTypeDef](./type_defs.md#listrulegroupsnamespacesresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_amp.paginator import ListWorkspacesPaginator
 def get_list_workspaces_paginator() -> ListWorkspacesPaginator:
     return Session().client("amp").get_paginator("list_workspaces")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amp.paginator import ListWorkspacesPaginator
+
+session = Session()
+
+client = Session().client("amp")  # (1)
+paginator: ListWorkspacesPaginator = client.get_paginator("list_workspaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PrometheusServiceClient](./client.md)
+2. paginator: [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+3. item: [:material-code-braces: ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef) 
 
 
 ### paginate

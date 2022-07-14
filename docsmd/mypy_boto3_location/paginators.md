@@ -21,6 +21,23 @@ def get_get_device_position_history_paginator() -> GetDevicePositionHistoryPagin
     return Session().client("location").get_paginator("get_device_position_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: GetDevicePositionHistoryPaginator = client.get_paginator("get_device_position_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [GetDevicePositionHistoryPaginator](./paginators.md#getdevicepositionhistorypaginator)
+3. item: [:material-code-braces: GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ def get_list_device_positions_paginator() -> ListDevicePositionsPaginator:
     return Session().client("location").get_paginator("list_device_positions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListDevicePositionsPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListDevicePositionsPaginator = client.get_paginator("list_device_positions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListDevicePositionsPaginator](./paginators.md#listdevicepositionspaginator)
+3. item: [:material-code-braces: ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef) 
+
 
 ### paginate
 
@@ -109,6 +143,23 @@ def get_list_geofence_collections_paginator() -> ListGeofenceCollectionsPaginato
     return Session().client("location").get_paginator("list_geofence_collections")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListGeofenceCollectionsPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListGeofenceCollectionsPaginator = client.get_paginator("list_geofence_collections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListGeofenceCollectionsPaginator](./paginators.md#listgeofencecollectionspaginator)
+3. item: [:material-code-braces: ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_location.paginator import ListGeofencesPaginator
 def get_list_geofences_paginator() -> ListGeofencesPaginator:
     return Session().client("location").get_paginator("list_geofences")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListGeofencesPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListGeofencesPaginator = client.get_paginator("list_geofences")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListGeofencesPaginator](./paginators.md#listgeofencespaginator)
+3. item: [:material-code-braces: ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef) 
 
 
 ### paginate
@@ -192,6 +260,23 @@ def get_list_maps_paginator() -> ListMapsPaginator:
     return Session().client("location").get_paginator("list_maps")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListMapsPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListMapsPaginator = client.get_paginator("list_maps")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListMapsPaginator](./paginators.md#listmapspaginator)
+3. item: [:material-code-braces: ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef) 
+
 
 ### paginate
 
@@ -232,6 +317,23 @@ from mypy_boto3_location.paginator import ListPlaceIndexesPaginator
 def get_list_place_indexes_paginator() -> ListPlaceIndexesPaginator:
     return Session().client("location").get_paginator("list_place_indexes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListPlaceIndexesPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListPlaceIndexesPaginator = client.get_paginator("list_place_indexes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListPlaceIndexesPaginator](./paginators.md#listplaceindexespaginator)
+3. item: [:material-code-braces: ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef) 
 
 
 ### paginate
@@ -274,6 +376,23 @@ def get_list_route_calculators_paginator() -> ListRouteCalculatorsPaginator:
     return Session().client("location").get_paginator("list_route_calculators")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListRouteCalculatorsPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListRouteCalculatorsPaginator = client.get_paginator("list_route_calculators")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListRouteCalculatorsPaginator](./paginators.md#listroutecalculatorspaginator)
+3. item: [:material-code-braces: ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef) 
+
 
 ### paginate
 
@@ -314,6 +433,23 @@ from mypy_boto3_location.paginator import ListTrackerConsumersPaginator
 def get_list_tracker_consumers_paginator() -> ListTrackerConsumersPaginator:
     return Session().client("location").get_paginator("list_tracker_consumers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListTrackerConsumersPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListTrackerConsumersPaginator = client.get_paginator("list_tracker_consumers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListTrackerConsumersPaginator](./paginators.md#listtrackerconsumerspaginator)
+3. item: [:material-code-braces: ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef) 
 
 
 ### paginate
@@ -356,6 +492,23 @@ from mypy_boto3_location.paginator import ListTrackersPaginator
 def get_list_trackers_paginator() -> ListTrackersPaginator:
     return Session().client("location").get_paginator("list_trackers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListTrackersPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListTrackersPaginator = client.get_paginator("list_trackers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListTrackersPaginator](./paginators.md#listtrackerspaginator)
+3. item: [:material-code-braces: ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef) 
 
 
 ### paginate

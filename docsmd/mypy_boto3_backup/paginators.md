@@ -21,6 +21,23 @@ def get_list_backup_jobs_paginator() -> ListBackupJobsPaginator:
     return Session().client("backup").get_paginator("list_backup_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListBackupJobsPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListBackupJobsPaginator = client.get_paginator("list_backup_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListBackupJobsPaginator](./paginators.md#listbackupjobspaginator)
+3. item: [:material-code-braces: ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef) 
+
 
 ### paginate
 
@@ -72,6 +89,23 @@ def get_list_backup_plan_templates_paginator() -> ListBackupPlanTemplatesPaginat
     return Session().client("backup").get_paginator("list_backup_plan_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListBackupPlanTemplatesPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListBackupPlanTemplatesPaginator = client.get_paginator("list_backup_plan_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListBackupPlanTemplatesPaginator](./paginators.md#listbackupplantemplatespaginator)
+3. item: [:material-code-braces: ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef) 
+
 
 ### paginate
 
@@ -112,6 +146,23 @@ from mypy_boto3_backup.paginator import ListBackupPlanVersionsPaginator
 def get_list_backup_plan_versions_paginator() -> ListBackupPlanVersionsPaginator:
     return Session().client("backup").get_paginator("list_backup_plan_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListBackupPlanVersionsPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListBackupPlanVersionsPaginator = client.get_paginator("list_backup_plan_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListBackupPlanVersionsPaginator](./paginators.md#listbackupplanversionspaginator)
+3. item: [:material-code-braces: ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef) 
 
 
 ### paginate
@@ -155,6 +206,23 @@ def get_list_backup_plans_paginator() -> ListBackupPlansPaginator:
     return Session().client("backup").get_paginator("list_backup_plans")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListBackupPlansPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListBackupPlansPaginator = client.get_paginator("list_backup_plans")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListBackupPlansPaginator](./paginators.md#listbackupplanspaginator)
+3. item: [:material-code-braces: ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef) 
+
 
 ### paginate
 
@@ -196,6 +264,23 @@ from mypy_boto3_backup.paginator import ListBackupSelectionsPaginator
 def get_list_backup_selections_paginator() -> ListBackupSelectionsPaginator:
     return Session().client("backup").get_paginator("list_backup_selections")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListBackupSelectionsPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListBackupSelectionsPaginator = client.get_paginator("list_backup_selections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListBackupSelectionsPaginator](./paginators.md#listbackupselectionspaginator)
+3. item: [:material-code-braces: ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef) 
 
 
 ### paginate
@@ -239,6 +324,23 @@ def get_list_backup_vaults_paginator() -> ListBackupVaultsPaginator:
     return Session().client("backup").get_paginator("list_backup_vaults")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListBackupVaultsPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListBackupVaultsPaginator = client.get_paginator("list_backup_vaults")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListBackupVaultsPaginator](./paginators.md#listbackupvaultspaginator)
+3. item: [:material-code-braces: ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef) 
+
 
 ### paginate
 
@@ -279,6 +381,23 @@ from mypy_boto3_backup.paginator import ListCopyJobsPaginator
 def get_list_copy_jobs_paginator() -> ListCopyJobsPaginator:
     return Session().client("backup").get_paginator("list_copy_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListCopyJobsPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListCopyJobsPaginator = client.get_paginator("list_copy_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListCopyJobsPaginator](./paginators.md#listcopyjobspaginator)
+3. item: [:material-code-braces: ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef) 
 
 
 ### paginate
@@ -331,6 +450,23 @@ def get_list_protected_resources_paginator() -> ListProtectedResourcesPaginator:
     return Session().client("backup").get_paginator("list_protected_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListProtectedResourcesPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListProtectedResourcesPaginator = client.get_paginator("list_protected_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListProtectedResourcesPaginator](./paginators.md#listprotectedresourcespaginator)
+3. item: [:material-code-braces: ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef) 
+
 
 ### paginate
 
@@ -371,6 +507,23 @@ from mypy_boto3_backup.paginator import ListRecoveryPointsByBackupVaultPaginator
 def get_list_recovery_points_by_backup_vault_paginator() -> ListRecoveryPointsByBackupVaultPaginator:
     return Session().client("backup").get_paginator("list_recovery_points_by_backup_vault")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListRecoveryPointsByBackupVaultPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListRecoveryPointsByBackupVaultPaginator = client.get_paginator("list_recovery_points_by_backup_vault")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListRecoveryPointsByBackupVaultPaginator](./paginators.md#listrecoverypointsbybackupvaultpaginator)
+3. item: [:material-code-braces: ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef) 
 
 
 ### paginate
@@ -419,6 +572,23 @@ def get_list_recovery_points_by_resource_paginator() -> ListRecoveryPointsByReso
     return Session().client("backup").get_paginator("list_recovery_points_by_resource")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListRecoveryPointsByResourcePaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListRecoveryPointsByResourcePaginator = client.get_paginator("list_recovery_points_by_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListRecoveryPointsByResourcePaginator](./paginators.md#listrecoverypointsbyresourcepaginator)
+3. item: [:material-code-braces: ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef) 
+
 
 ### paginate
 
@@ -460,6 +630,23 @@ from mypy_boto3_backup.paginator import ListRestoreJobsPaginator
 def get_list_restore_jobs_paginator() -> ListRestoreJobsPaginator:
     return Session().client("backup").get_paginator("list_restore_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListRestoreJobsPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListRestoreJobsPaginator = client.get_paginator("list_restore_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListRestoreJobsPaginator](./paginators.md#listrestorejobspaginator)
+3. item: [:material-code-braces: ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef) 
 
 
 ### paginate

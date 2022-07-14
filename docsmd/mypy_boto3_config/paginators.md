@@ -21,6 +21,23 @@ def get_describe_aggregate_compliance_by_config_rules_paginator() -> DescribeAgg
     return Session().client("config").get_paginator("describe_aggregate_compliance_by_config_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeAggregateComplianceByConfigRulesPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeAggregateComplianceByConfigRulesPaginator = client.get_paginator("describe_aggregate_compliance_by_config_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeAggregateComplianceByConfigRulesPaginator](./paginators.md#describeaggregatecompliancebyconfigrulespaginator)
+3. item: [:material-code-braces: DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_config.paginator import DescribeAggregateComplianceByConformance
 def get_describe_aggregate_compliance_by_conformance_packs_paginator() -> DescribeAggregateComplianceByConformancePacksPaginator:
     return Session().client("config").get_paginator("describe_aggregate_compliance_by_conformance_packs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeAggregateComplianceByConformancePacksPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeAggregateComplianceByConformancePacksPaginator = client.get_paginator("describe_aggregate_compliance_by_conformance_packs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeAggregateComplianceByConformancePacksPaginator](./paginators.md#describeaggregatecompliancebyconformancepackspaginator)
+3. item: [:material-code-braces: DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_describe_aggregation_authorizations_paginator() -> DescribeAggregationAu
     return Session().client("config").get_paginator("describe_aggregation_authorizations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeAggregationAuthorizationsPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeAggregationAuthorizationsPaginator = client.get_paginator("describe_aggregation_authorizations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeAggregationAuthorizationsPaginator](./paginators.md#describeaggregationauthorizationspaginator)
+3. item: [:material-code-braces: DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_config.paginator import DescribeComplianceByConfigRulePaginator
 def get_describe_compliance_by_config_rule_paginator() -> DescribeComplianceByConfigRulePaginator:
     return Session().client("config").get_paginator("describe_compliance_by_config_rule")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeComplianceByConfigRulePaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeComplianceByConfigRulePaginator = client.get_paginator("describe_compliance_by_config_rule")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeComplianceByConfigRulePaginator](./paginators.md#describecompliancebyconfigrulepaginator)
+3. item: [:material-code-braces: DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ from mypy_boto3_config.paginator import DescribeComplianceByResourcePaginator
 def get_describe_compliance_by_resource_paginator() -> DescribeComplianceByResourcePaginator:
     return Session().client("config").get_paginator("describe_compliance_by_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeComplianceByResourcePaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeComplianceByResourcePaginator = client.get_paginator("describe_compliance_by_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeComplianceByResourcePaginator](./paginators.md#describecompliancebyresourcepaginator)
+3. item: [:material-code-braces: DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef) 
 
 
 ### paginate
@@ -239,6 +324,23 @@ def get_describe_config_rule_evaluation_status_paginator() -> DescribeConfigRule
     return Session().client("config").get_paginator("describe_config_rule_evaluation_status")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeConfigRuleEvaluationStatusPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeConfigRuleEvaluationStatusPaginator = client.get_paginator("describe_config_rule_evaluation_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeConfigRuleEvaluationStatusPaginator](./paginators.md#describeconfigruleevaluationstatuspaginator)
+3. item: [:material-code-braces: DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef) 
+
 
 ### paginate
 
@@ -281,6 +383,23 @@ def get_describe_config_rules_paginator() -> DescribeConfigRulesPaginator:
     return Session().client("config").get_paginator("describe_config_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeConfigRulesPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeConfigRulesPaginator = client.get_paginator("describe_config_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeConfigRulesPaginator](./paginators.md#describeconfigrulespaginator)
+3. item: [:material-code-braces: DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef) 
+
 
 ### paginate
 
@@ -322,6 +441,23 @@ from mypy_boto3_config.paginator import DescribeConfigurationAggregatorSourcesSt
 def get_describe_configuration_aggregator_sources_status_paginator() -> DescribeConfigurationAggregatorSourcesStatusPaginator:
     return Session().client("config").get_paginator("describe_configuration_aggregator_sources_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeConfigurationAggregatorSourcesStatusPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeConfigurationAggregatorSourcesStatusPaginator = client.get_paginator("describe_configuration_aggregator_sources_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeConfigurationAggregatorSourcesStatusPaginator](./paginators.md#describeconfigurationaggregatorsourcesstatuspaginator)
+3. item: [:material-code-braces: DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef) 
 
 
 ### paginate
@@ -367,6 +503,23 @@ def get_describe_configuration_aggregators_paginator() -> DescribeConfigurationA
     return Session().client("config").get_paginator("describe_configuration_aggregators")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeConfigurationAggregatorsPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeConfigurationAggregatorsPaginator = client.get_paginator("describe_configuration_aggregators")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeConfigurationAggregatorsPaginator](./paginators.md#describeconfigurationaggregatorspaginator)
+3. item: [:material-code-braces: DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef) 
+
 
 ### paginate
 
@@ -408,6 +561,23 @@ from mypy_boto3_config.paginator import DescribeConformancePackStatusPaginator
 def get_describe_conformance_pack_status_paginator() -> DescribeConformancePackStatusPaginator:
     return Session().client("config").get_paginator("describe_conformance_pack_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeConformancePackStatusPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeConformancePackStatusPaginator = client.get_paginator("describe_conformance_pack_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeConformancePackStatusPaginator](./paginators.md#describeconformancepackstatuspaginator)
+3. item: [:material-code-braces: DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef) 
 
 
 ### paginate
@@ -451,6 +621,23 @@ def get_describe_conformance_packs_paginator() -> DescribeConformancePacksPagina
     return Session().client("config").get_paginator("describe_conformance_packs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeConformancePacksPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeConformancePacksPaginator = client.get_paginator("describe_conformance_packs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeConformancePacksPaginator](./paginators.md#describeconformancepackspaginator)
+3. item: [:material-code-braces: DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef) 
+
 
 ### paginate
 
@@ -492,6 +679,23 @@ from mypy_boto3_config.paginator import DescribeOrganizationConfigRuleStatusesPa
 def get_describe_organization_config_rule_statuses_paginator() -> DescribeOrganizationConfigRuleStatusesPaginator:
     return Session().client("config").get_paginator("describe_organization_config_rule_statuses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeOrganizationConfigRuleStatusesPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeOrganizationConfigRuleStatusesPaginator = client.get_paginator("describe_organization_config_rule_statuses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeOrganizationConfigRuleStatusesPaginator](./paginators.md#describeorganizationconfigrulestatusespaginator)
+3. item: [:material-code-braces: DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef) 
 
 
 ### paginate
@@ -535,6 +739,23 @@ def get_describe_organization_config_rules_paginator() -> DescribeOrganizationCo
     return Session().client("config").get_paginator("describe_organization_config_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeOrganizationConfigRulesPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeOrganizationConfigRulesPaginator = client.get_paginator("describe_organization_config_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeOrganizationConfigRulesPaginator](./paginators.md#describeorganizationconfigrulespaginator)
+3. item: [:material-code-braces: DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef) 
+
 
 ### paginate
 
@@ -576,6 +797,23 @@ from mypy_boto3_config.paginator import DescribeOrganizationConformancePackStatu
 def get_describe_organization_conformance_pack_statuses_paginator() -> DescribeOrganizationConformancePackStatusesPaginator:
     return Session().client("config").get_paginator("describe_organization_conformance_pack_statuses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeOrganizationConformancePackStatusesPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeOrganizationConformancePackStatusesPaginator = client.get_paginator("describe_organization_conformance_pack_statuses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeOrganizationConformancePackStatusesPaginator](./paginators.md#describeorganizationconformancepackstatusespaginator)
+3. item: [:material-code-braces: DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef) 
 
 
 ### paginate
@@ -619,6 +857,23 @@ def get_describe_organization_conformance_packs_paginator() -> DescribeOrganizat
     return Session().client("config").get_paginator("describe_organization_conformance_packs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeOrganizationConformancePacksPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeOrganizationConformancePacksPaginator = client.get_paginator("describe_organization_conformance_packs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeOrganizationConformancePacksPaginator](./paginators.md#describeorganizationconformancepackspaginator)
+3. item: [:material-code-braces: DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef) 
+
 
 ### paginate
 
@@ -661,6 +916,23 @@ def get_describe_pending_aggregation_requests_paginator() -> DescribePendingAggr
     return Session().client("config").get_paginator("describe_pending_aggregation_requests")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribePendingAggregationRequestsPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribePendingAggregationRequestsPaginator = client.get_paginator("describe_pending_aggregation_requests")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribePendingAggregationRequestsPaginator](./paginators.md#describependingaggregationrequestspaginator)
+3. item: [:material-code-braces: DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef) 
+
 
 ### paginate
 
@@ -701,6 +973,23 @@ from mypy_boto3_config.paginator import DescribeRemediationExecutionStatusPagina
 def get_describe_remediation_execution_status_paginator() -> DescribeRemediationExecutionStatusPaginator:
     return Session().client("config").get_paginator("describe_remediation_execution_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeRemediationExecutionStatusPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeRemediationExecutionStatusPaginator = client.get_paginator("describe_remediation_execution_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeRemediationExecutionStatusPaginator](./paginators.md#describeremediationexecutionstatuspaginator)
+3. item: [:material-code-braces: DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef) 
 
 
 ### paginate
@@ -746,6 +1035,23 @@ def get_describe_retention_configurations_paginator() -> DescribeRetentionConfig
     return Session().client("config").get_paginator("describe_retention_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import DescribeRetentionConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: DescribeRetentionConfigurationsPaginator = client.get_paginator("describe_retention_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [DescribeRetentionConfigurationsPaginator](./paginators.md#describeretentionconfigurationspaginator)
+3. item: [:material-code-braces: DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef) 
+
 
 ### paginate
 
@@ -787,6 +1093,23 @@ from mypy_boto3_config.paginator import GetAggregateComplianceDetailsByConfigRul
 def get_get_aggregate_compliance_details_by_config_rule_paginator() -> GetAggregateComplianceDetailsByConfigRulePaginator:
     return Session().client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import GetAggregateComplianceDetailsByConfigRulePaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: GetAggregateComplianceDetailsByConfigRulePaginator = client.get_paginator("get_aggregate_compliance_details_by_config_rule")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [GetAggregateComplianceDetailsByConfigRulePaginator](./paginators.md#getaggregatecompliancedetailsbyconfigrulepaginator)
+3. item: [:material-code-braces: GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef) 
 
 
 ### paginate
@@ -838,6 +1161,23 @@ def get_get_compliance_details_by_config_rule_paginator() -> GetComplianceDetail
     return Session().client("config").get_paginator("get_compliance_details_by_config_rule")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import GetComplianceDetailsByConfigRulePaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: GetComplianceDetailsByConfigRulePaginator = client.get_paginator("get_compliance_details_by_config_rule")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [GetComplianceDetailsByConfigRulePaginator](./paginators.md#getcompliancedetailsbyconfigrulepaginator)
+3. item: [:material-code-braces: GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef) 
+
 
 ### paginate
 
@@ -881,6 +1221,23 @@ from mypy_boto3_config.paginator import GetComplianceDetailsByResourcePaginator
 def get_get_compliance_details_by_resource_paginator() -> GetComplianceDetailsByResourcePaginator:
     return Session().client("config").get_paginator("get_compliance_details_by_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import GetComplianceDetailsByResourcePaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: GetComplianceDetailsByResourcePaginator = client.get_paginator("get_compliance_details_by_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [GetComplianceDetailsByResourcePaginator](./paginators.md#getcompliancedetailsbyresourcepaginator)
+3. item: [:material-code-braces: GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef) 
 
 
 ### paginate
@@ -928,6 +1285,23 @@ def get_get_conformance_pack_compliance_summary_paginator() -> GetConformancePac
     return Session().client("config").get_paginator("get_conformance_pack_compliance_summary")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import GetConformancePackComplianceSummaryPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: GetConformancePackComplianceSummaryPaginator = client.get_paginator("get_conformance_pack_compliance_summary")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [GetConformancePackComplianceSummaryPaginator](./paginators.md#getconformancepackcompliancesummarypaginator)
+3. item: [:material-code-braces: GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef) 
+
 
 ### paginate
 
@@ -969,6 +1343,23 @@ from mypy_boto3_config.paginator import GetOrganizationConfigRuleDetailedStatusP
 def get_get_organization_config_rule_detailed_status_paginator() -> GetOrganizationConfigRuleDetailedStatusPaginator:
     return Session().client("config").get_paginator("get_organization_config_rule_detailed_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import GetOrganizationConfigRuleDetailedStatusPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: GetOrganizationConfigRuleDetailedStatusPaginator = client.get_paginator("get_organization_config_rule_detailed_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [GetOrganizationConfigRuleDetailedStatusPaginator](./paginators.md#getorganizationconfigruledetailedstatuspaginator)
+3. item: [:material-code-braces: GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef) 
 
 
 ### paginate
@@ -1014,6 +1405,23 @@ def get_get_organization_conformance_pack_detailed_status_paginator() -> GetOrga
     return Session().client("config").get_paginator("get_organization_conformance_pack_detailed_status")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import GetOrganizationConformancePackDetailedStatusPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: GetOrganizationConformancePackDetailedStatusPaginator = client.get_paginator("get_organization_conformance_pack_detailed_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [GetOrganizationConformancePackDetailedStatusPaginator](./paginators.md#getorganizationconformancepackdetailedstatuspaginator)
+3. item: [:material-code-braces: GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef) 
+
 
 ### paginate
 
@@ -1057,6 +1465,23 @@ from mypy_boto3_config.paginator import GetResourceConfigHistoryPaginator
 def get_get_resource_config_history_paginator() -> GetResourceConfigHistoryPaginator:
     return Session().client("config").get_paginator("get_resource_config_history")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import GetResourceConfigHistoryPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: GetResourceConfigHistoryPaginator = client.get_paginator("get_resource_config_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [GetResourceConfigHistoryPaginator](./paginators.md#getresourceconfighistorypaginator)
+3. item: [:material-code-braces: GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef) 
 
 
 ### paginate
@@ -1107,6 +1532,23 @@ def get_list_aggregate_discovered_resources_paginator() -> ListAggregateDiscover
     return Session().client("config").get_paginator("list_aggregate_discovered_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import ListAggregateDiscoveredResourcesPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: ListAggregateDiscoveredResourcesPaginator = client.get_paginator("list_aggregate_discovered_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [ListAggregateDiscoveredResourcesPaginator](./paginators.md#listaggregatediscoveredresourcespaginator)
+3. item: [:material-code-braces: ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef) 
+
 
 ### paginate
 
@@ -1154,6 +1596,23 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return Session().client("config").get_paginator("list_discovered_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import ListDiscoveredResourcesPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: ListDiscoveredResourcesPaginator = client.get_paginator("list_discovered_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
+3. item: [:material-code-braces: ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef) 
+
 
 ### paginate
 
@@ -1200,6 +1659,23 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("config").get_paginator("list_tags_for_resource")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
 
 ### paginate
 
@@ -1241,6 +1717,23 @@ from mypy_boto3_config.paginator import SelectAggregateResourceConfigPaginator
 def get_select_aggregate_resource_config_paginator() -> SelectAggregateResourceConfigPaginator:
     return Session().client("config").get_paginator("select_aggregate_resource_config")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import SelectAggregateResourceConfigPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: SelectAggregateResourceConfigPaginator = client.get_paginator("select_aggregate_resource_config")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [SelectAggregateResourceConfigPaginator](./paginators.md#selectaggregateresourceconfigpaginator)
+3. item: [:material-code-braces: SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef) 
 
 
 ### paginate
@@ -1286,6 +1779,23 @@ from mypy_boto3_config.paginator import SelectResourceConfigPaginator
 def get_select_resource_config_paginator() -> SelectResourceConfigPaginator:
     return Session().client("config").get_paginator("select_resource_config")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import SelectResourceConfigPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: SelectResourceConfigPaginator = client.get_paginator("select_resource_config")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [SelectResourceConfigPaginator](./paginators.md#selectresourceconfigpaginator)
+3. item: [:material-code-braces: SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef) 
 
 
 ### paginate

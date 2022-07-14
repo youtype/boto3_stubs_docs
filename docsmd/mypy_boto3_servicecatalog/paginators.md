@@ -21,6 +21,23 @@ def get_list_accepted_portfolio_shares_paginator() -> ListAcceptedPortfolioShare
     return Session().client("servicecatalog").get_paginator("list_accepted_portfolio_shares")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListAcceptedPortfolioSharesPaginator = client.get_paginator("list_accepted_portfolio_shares")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
+3. item: [:material-code-braces: ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_servicecatalog.paginator import ListConstraintsForPortfolioPagin
 def get_list_constraints_for_portfolio_paginator() -> ListConstraintsForPortfolioPaginator:
     return Session().client("servicecatalog").get_paginator("list_constraints_for_portfolio")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListConstraintsForPortfolioPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListConstraintsForPortfolioPaginator = client.get_paginator("list_constraints_for_portfolio")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListConstraintsForPortfolioPaginator](./paginators.md#listconstraintsforportfoliopaginator)
+3. item: [:material-code-braces: ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_list_launch_paths_paginator() -> ListLaunchPathsPaginator:
     return Session().client("servicecatalog").get_paginator("list_launch_paths")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListLaunchPathsPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListLaunchPathsPaginator = client.get_paginator("list_launch_paths")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListLaunchPathsPaginator](./paginators.md#listlaunchpathspaginator)
+3. item: [:material-code-braces: ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef) 
+
 
 ### paginate
 
@@ -151,6 +202,23 @@ from mypy_boto3_servicecatalog.paginator import ListOrganizationPortfolioAccessP
 def get_list_organization_portfolio_access_paginator() -> ListOrganizationPortfolioAccessPaginator:
     return Session().client("servicecatalog").get_paginator("list_organization_portfolio_access")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListOrganizationPortfolioAccessPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListOrganizationPortfolioAccessPaginator = client.get_paginator("list_organization_portfolio_access")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListOrganizationPortfolioAccessPaginator](./paginators.md#listorganizationportfolioaccesspaginator)
+3. item: [:material-code-braces: ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef) 
 
 
 ### paginate
@@ -198,6 +266,23 @@ def get_list_portfolios_paginator() -> ListPortfoliosPaginator:
     return Session().client("servicecatalog").get_paginator("list_portfolios")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListPortfoliosPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListPortfoliosPaginator = client.get_paginator("list_portfolios")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListPortfoliosPaginator](./paginators.md#listportfoliospaginator)
+3. item: [:material-code-braces: ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef) 
+
 
 ### paginate
 
@@ -239,6 +324,23 @@ from mypy_boto3_servicecatalog.paginator import ListPortfoliosForProductPaginato
 def get_list_portfolios_for_product_paginator() -> ListPortfoliosForProductPaginator:
     return Session().client("servicecatalog").get_paginator("list_portfolios_for_product")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListPortfoliosForProductPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListPortfoliosForProductPaginator = client.get_paginator("list_portfolios_for_product")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListPortfoliosForProductPaginator](./paginators.md#listportfoliosforproductpaginator)
+3. item: [:material-code-braces: ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef) 
 
 
 ### paginate
@@ -283,6 +385,23 @@ def get_list_principals_for_portfolio_paginator() -> ListPrincipalsForPortfolioP
     return Session().client("servicecatalog").get_paginator("list_principals_for_portfolio")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListPrincipalsForPortfolioPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListPrincipalsForPortfolioPaginator = client.get_paginator("list_principals_for_portfolio")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListPrincipalsForPortfolioPaginator](./paginators.md#listprincipalsforportfoliopaginator)
+3. item: [:material-code-braces: ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef) 
+
 
 ### paginate
 
@@ -325,6 +444,23 @@ from mypy_boto3_servicecatalog.paginator import ListProvisionedProductPlansPagin
 def get_list_provisioned_product_plans_paginator() -> ListProvisionedProductPlansPaginator:
     return Session().client("servicecatalog").get_paginator("list_provisioned_product_plans")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListProvisionedProductPlansPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListProvisionedProductPlansPaginator = client.get_paginator("list_provisioned_product_plans")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListProvisionedProductPlansPaginator](./paginators.md#listprovisionedproductplanspaginator)
+3. item: [:material-code-braces: ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef) 
 
 
 ### paginate
@@ -371,6 +507,23 @@ def get_list_provisioning_artifacts_for_service_action_paginator() -> ListProvis
     return Session().client("servicecatalog").get_paginator("list_provisioning_artifacts_for_service_action")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListProvisioningArtifactsForServiceActionPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListProvisioningArtifactsForServiceActionPaginator = client.get_paginator("list_provisioning_artifacts_for_service_action")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListProvisioningArtifactsForServiceActionPaginator](./paginators.md#listprovisioningartifactsforserviceactionpaginator)
+3. item: [:material-code-braces: ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef) 
+
 
 ### paginate
 
@@ -413,6 +566,23 @@ from mypy_boto3_servicecatalog.paginator import ListRecordHistoryPaginator
 def get_list_record_history_paginator() -> ListRecordHistoryPaginator:
     return Session().client("servicecatalog").get_paginator("list_record_history")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListRecordHistoryPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListRecordHistoryPaginator = client.get_paginator("list_record_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListRecordHistoryPaginator](./paginators.md#listrecordhistorypaginator)
+3. item: [:material-code-braces: ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef) 
 
 
 ### paginate
@@ -460,6 +630,23 @@ def get_list_resources_for_tag_option_paginator() -> ListResourcesForTagOptionPa
     return Session().client("servicecatalog").get_paginator("list_resources_for_tag_option")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListResourcesForTagOptionPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListResourcesForTagOptionPaginator = client.get_paginator("list_resources_for_tag_option")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListResourcesForTagOptionPaginator](./paginators.md#listresourcesfortagoptionpaginator)
+3. item: [:material-code-braces: ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef) 
+
 
 ### paginate
 
@@ -503,6 +690,23 @@ def get_list_service_actions_paginator() -> ListServiceActionsPaginator:
     return Session().client("servicecatalog").get_paginator("list_service_actions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListServiceActionsPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListServiceActionsPaginator = client.get_paginator("list_service_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListServiceActionsPaginator](./paginators.md#listserviceactionspaginator)
+3. item: [:material-code-braces: ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef) 
+
 
 ### paginate
 
@@ -544,6 +748,23 @@ from mypy_boto3_servicecatalog.paginator import ListServiceActionsForProvisionin
 def get_list_service_actions_for_provisioning_artifact_paginator() -> ListServiceActionsForProvisioningArtifactPaginator:
     return Session().client("servicecatalog").get_paginator("list_service_actions_for_provisioning_artifact")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListServiceActionsForProvisioningArtifactPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListServiceActionsForProvisioningArtifactPaginator = client.get_paginator("list_service_actions_for_provisioning_artifact")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListServiceActionsForProvisioningArtifactPaginator](./paginators.md#listserviceactionsforprovisioningartifactpaginator)
+3. item: [:material-code-braces: ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef) 
 
 
 ### paginate
@@ -590,6 +811,23 @@ def get_list_tag_options_paginator() -> ListTagOptionsPaginator:
     return Session().client("servicecatalog").get_paginator("list_tag_options")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ListTagOptionsPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ListTagOptionsPaginator = client.get_paginator("list_tag_options")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ListTagOptionsPaginator](./paginators.md#listtagoptionspaginator)
+3. item: [:material-code-braces: ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef) 
+
 
 ### paginate
 
@@ -632,6 +870,23 @@ from mypy_boto3_servicecatalog.paginator import ScanProvisionedProductsPaginator
 def get_scan_provisioned_products_paginator() -> ScanProvisionedProductsPaginator:
     return Session().client("servicecatalog").get_paginator("scan_provisioned_products")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import ScanProvisionedProductsPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: ScanProvisionedProductsPaginator = client.get_paginator("scan_provisioned_products")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
+3. item: [:material-code-braces: ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef) 
 
 
 ### paginate
@@ -676,6 +931,23 @@ from mypy_boto3_servicecatalog.paginator import SearchProductsAsAdminPaginator
 def get_search_products_as_admin_paginator() -> SearchProductsAsAdminPaginator:
     return Session().client("servicecatalog").get_paginator("search_products_as_admin")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog.paginator import SearchProductsAsAdminPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog")  # (1)
+paginator: SearchProductsAsAdminPaginator = client.get_paginator("search_products_as_admin")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceCatalogClient](./client.md)
+2. paginator: [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)
+3. item: [:material-code-braces: SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef) 
 
 
 ### paginate

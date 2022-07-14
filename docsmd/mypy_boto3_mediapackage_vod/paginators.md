@@ -21,6 +21,23 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
     return Session().client("mediapackage-vod").get_paginator("list_assets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediapackage_vod.paginator import ListAssetsPaginator
+
+session = Session()
+
+client = Session().client("mediapackage-vod")  # (1)
+paginator: ListAssetsPaginator = client.get_paginator("list_assets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaPackageVodClient](./client.md)
+2. paginator: [ListAssetsPaginator](./paginators.md#listassetspaginator)
+3. item: [:material-code-braces: ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_packaging_configurations_paginator() -> ListPackagingConfigurations
     return Session().client("mediapackage-vod").get_paginator("list_packaging_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediapackage_vod.paginator import ListPackagingConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("mediapackage-vod")  # (1)
+paginator: ListPackagingConfigurationsPaginator = client.get_paginator("list_packaging_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaPackageVodClient](./client.md)
+2. paginator: [ListPackagingConfigurationsPaginator](./paginators.md#listpackagingconfigurationspaginator)
+3. item: [:material-code-braces: ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_mediapackage_vod.paginator import ListPackagingGroupsPaginator
 def get_list_packaging_groups_paginator() -> ListPackagingGroupsPaginator:
     return Session().client("mediapackage-vod").get_paginator("list_packaging_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediapackage_vod.paginator import ListPackagingGroupsPaginator
+
+session = Session()
+
+client = Session().client("mediapackage-vod")  # (1)
+paginator: ListPackagingGroupsPaginator = client.get_paginator("list_packaging_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaPackageVodClient](./client.md)
+2. paginator: [ListPackagingGroupsPaginator](./paginators.md#listpackaginggroupspaginator)
+3. item: [:material-code-braces: ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef) 
 
 
 ### paginate

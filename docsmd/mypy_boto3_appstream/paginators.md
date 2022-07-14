@@ -21,6 +21,23 @@ def get_describe_directory_configs_paginator() -> DescribeDirectoryConfigsPagina
     return Session().client("appstream").get_paginator("describe_directory_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeDirectoryConfigsPaginator = client.get_paginator("describe_directory_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeDirectoryConfigsPaginator](./paginators.md#describedirectoryconfigspaginator)
+3. item: [:material-code-braces: DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_appstream.paginator import DescribeFleetsPaginator
 def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
     return Session().client("appstream").get_paginator("describe_fleets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeFleetsPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeFleetsPaginator = client.get_paginator("describe_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeFleetsPaginator](./paginators.md#describefleetspaginator)
+3. item: [:material-code-braces: DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_describe_image_builders_paginator() -> DescribeImageBuildersPaginator:
     return Session().client("appstream").get_paginator("describe_image_builders")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeImageBuildersPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeImageBuildersPaginator = client.get_paginator("describe_image_builders")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeImageBuildersPaginator](./paginators.md#describeimagebuilderspaginator)
+3. item: [:material-code-braces: DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_appstream.paginator import DescribeImagesPaginator
 def get_describe_images_paginator() -> DescribeImagesPaginator:
     return Session().client("appstream").get_paginator("describe_images")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeImagesPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeImagesPaginator = client.get_paginator("describe_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+3. item: [:material-code-braces: DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef) 
 
 
 ### paginate
@@ -191,6 +259,23 @@ from mypy_boto3_appstream.paginator import DescribeSessionsPaginator
 def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
     return Session().client("appstream").get_paginator("describe_sessions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeSessionsPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeSessionsPaginator = client.get_paginator("describe_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeSessionsPaginator](./paginators.md#describesessionspaginator)
+3. item: [:material-code-braces: DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef) 
 
 
 ### paginate
@@ -239,6 +324,23 @@ def get_describe_stacks_paginator() -> DescribeStacksPaginator:
     return Session().client("appstream").get_paginator("describe_stacks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeStacksPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeStacksPaginator = client.get_paginator("describe_stacks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeStacksPaginator](./paginators.md#describestackspaginator)
+3. item: [:material-code-braces: DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef) 
+
 
 ### paginate
 
@@ -280,6 +382,23 @@ from mypy_boto3_appstream.paginator import DescribeUserStackAssociationsPaginato
 def get_describe_user_stack_associations_paginator() -> DescribeUserStackAssociationsPaginator:
     return Session().client("appstream").get_paginator("describe_user_stack_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeUserStackAssociationsPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeUserStackAssociationsPaginator = client.get_paginator("describe_user_stack_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeUserStackAssociationsPaginator](./paginators.md#describeuserstackassociationspaginator)
+3. item: [:material-code-braces: DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef) 
 
 
 ### paginate
@@ -326,6 +445,23 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
     return Session().client("appstream").get_paginator("describe_users")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import DescribeUsersPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: DescribeUsersPaginator = client.get_paginator("describe_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+3. item: [:material-code-braces: DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef) 
+
 
 ### paginate
 
@@ -369,6 +505,23 @@ def get_list_associated_fleets_paginator() -> ListAssociatedFleetsPaginator:
     return Session().client("appstream").get_paginator("list_associated_fleets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import ListAssociatedFleetsPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: ListAssociatedFleetsPaginator = client.get_paginator("list_associated_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [ListAssociatedFleetsPaginator](./paginators.md#listassociatedfleetspaginator)
+3. item: [:material-code-braces: ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef) 
+
 
 ### paginate
 
@@ -410,6 +563,23 @@ from mypy_boto3_appstream.paginator import ListAssociatedStacksPaginator
 def get_list_associated_stacks_paginator() -> ListAssociatedStacksPaginator:
     return Session().client("appstream").get_paginator("list_associated_stacks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appstream.paginator import ListAssociatedStacksPaginator
+
+session = Session()
+
+client = Session().client("appstream")  # (1)
+paginator: ListAssociatedStacksPaginator = client.get_paginator("list_associated_stacks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppStreamClient](./client.md)
+2. paginator: [ListAssociatedStacksPaginator](./paginators.md#listassociatedstackspaginator)
+3. item: [:material-code-braces: ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef) 
 
 
 ### paginate

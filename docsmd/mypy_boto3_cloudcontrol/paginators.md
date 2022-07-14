@@ -21,6 +21,23 @@ def get_list_resource_requests_paginator() -> ListResourceRequestsPaginator:
     return Session().client("cloudcontrol").get_paginator("list_resource_requests")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudcontrol.paginator import ListResourceRequestsPaginator
+
+session = Session()
+
+client = Session().client("cloudcontrol")  # (1)
+paginator: ListResourceRequestsPaginator = client.get_paginator("list_resource_requests")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudControlApiClient](./client.md)
+2. paginator: [ListResourceRequestsPaginator](./paginators.md#listresourcerequestspaginator)
+3. item: [:material-code-braces: ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_cloudcontrol.paginator import ListResourcesPaginator
 def get_list_resources_paginator() -> ListResourcesPaginator:
     return Session().client("cloudcontrol").get_paginator("list_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudcontrol.paginator import ListResourcesPaginator
+
+session = Session()
+
+client = Session().client("cloudcontrol")  # (1)
+paginator: ListResourcesPaginator = client.get_paginator("list_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudControlApiClient](./client.md)
+2. paginator: [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+3. item: [:material-code-braces: ListResourcesOutputTypeDef](./type_defs.md#listresourcesoutputtypedef) 
 
 
 ### paginate

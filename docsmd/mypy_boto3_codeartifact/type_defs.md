@@ -335,6 +335,31 @@ class DescribeDomainRequestRequestTypeDef(TypedDict):
     domainOwner: NotRequired[str],
 ```
 
+## DescribePackageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import DescribePackageRequestRequestTypeDef
+
+def get_value() -> DescribePackageRequestRequestTypeDef:
+    return {
+        "domain": ...,
+        "repository": ...,
+        "format": ...,
+        "package": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePackageRequestRequestTypeDef(TypedDict):
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    domainOwner: NotRequired[str],
+    namespace: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 ## DescribePackageVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -432,6 +457,23 @@ class DisposePackageVersionsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+## DomainEntryPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import DomainEntryPointTypeDef
+
+def get_value() -> DomainEntryPointTypeDef:
+    return {
+        "repositoryName": ...,
+    }
+```
+
+```python title="Definition"
+class DomainEntryPointTypeDef(TypedDict):
+    repositoryName: NotRequired[str],
+    externalConnectionName: NotRequired[str],
+```
+
 ## DomainSummaryTypeDef
 
 ```python title="Usage Example"
@@ -741,31 +783,13 @@ class ListPackageVersionsRequestRequestTypeDef(TypedDict):
     sortBy: NotRequired[PackageVersionSortTypeType],  # (3)
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    originType: NotRequired[PackageVersionOriginTypeType],  # (4)
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
 3. See [:material-code-brackets: PackageVersionSortTypeType](./literals.md#packageversionsorttypetype) 
-## PackageVersionSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeartifact.type_defs import PackageVersionSummaryTypeDef
-
-def get_value() -> PackageVersionSummaryTypeDef:
-    return {
-        "version": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class PackageVersionSummaryTypeDef(TypedDict):
-    version: str,
-    status: PackageVersionStatusType,  # (1)
-    revision: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+4. See [:material-code-brackets: PackageVersionOriginTypeType](./literals.md#packageversionorigintypetype) 
 ## ListPackagesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -788,28 +812,13 @@ class ListPackagesRequestRequestTypeDef(TypedDict):
     packagePrefix: NotRequired[str],
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    publish: NotRequired[AllowPublishType],  # (2)
+    upstream: NotRequired[AllowUpstreamType],  # (3)
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
-## PackageSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeartifact.type_defs import PackageSummaryTypeDef
-
-def get_value() -> PackageSummaryTypeDef:
-    return {
-        "format": ...,
-    }
-```
-
-```python title="Definition"
-class PackageSummaryTypeDef(TypedDict):
-    format: NotRequired[PackageFormatType],  # (1)
-    namespace: NotRequired[str],
-    package: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-brackets: AllowPublishType](./literals.md#allowpublishtype) 
+3. See [:material-code-brackets: AllowUpstreamType](./literals.md#allowupstreamtype) 
 ## ListRepositoriesInDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -886,6 +895,26 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
 ```
 
+## PackageOriginRestrictionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PackageOriginRestrictionsTypeDef
+
+def get_value() -> PackageOriginRestrictionsTypeDef:
+    return {
+        "publish": ...,
+        "upstream": ...,
+    }
+```
+
+```python title="Definition"
+class PackageOriginRestrictionsTypeDef(TypedDict):
+    publish: AllowPublishType,  # (1)
+    upstream: AllowUpstreamType,  # (2)
+```
+
+1. See [:material-code-brackets: AllowPublishType](./literals.md#allowpublishtype) 
+2. See [:material-code-brackets: AllowUpstreamType](./literals.md#allowupstreamtype) 
 ## PutDomainPermissionsPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1519,6 +1548,25 @@ class PutRepositoryPermissionsPolicyResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PackageVersionOriginTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PackageVersionOriginTypeDef
+
+def get_value() -> PackageVersionOriginTypeDef:
+    return {
+        "domainEntryPoint": ...,
+    }
+```
+
+```python title="Definition"
+class PackageVersionOriginTypeDef(TypedDict):
+    domainEntryPoint: NotRequired[DomainEntryPointTypeDef],  # (1)
+    originType: NotRequired[PackageVersionOriginTypeType],  # (2)
+```
+
+1. See [:material-code-braces: DomainEntryPointTypeDef](./type_defs.md#domainentrypointtypedef) 
+2. See [:material-code-brackets: PackageVersionOriginTypeType](./literals.md#packageversionorigintypetype) 
 ## ListDomainsResultTypeDef
 
 ```python title="Usage Example"
@@ -1541,36 +1589,6 @@ class ListDomainsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PackageVersionDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeartifact.type_defs import PackageVersionDescriptionTypeDef
-
-def get_value() -> PackageVersionDescriptionTypeDef:
-    return {
-        "format": ...,
-    }
-```
-
-```python title="Definition"
-class PackageVersionDescriptionTypeDef(TypedDict):
-    format: NotRequired[PackageFormatType],  # (1)
-    namespace: NotRequired[str],
-    packageName: NotRequired[str],
-    displayName: NotRequired[str],
-    version: NotRequired[str],
-    summary: NotRequired[str],
-    homePage: NotRequired[str],
-    sourceCodeRepository: NotRequired[str],
-    publishedTime: NotRequired[datetime],
-    licenses: NotRequired[List[LicenseInfoTypeDef]],  # (2)
-    revision: NotRequired[str],
-    status: NotRequired[PackageVersionStatusType],  # (3)
-```
-
-1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
-2. See [:material-code-braces: LicenseInfoTypeDef](./type_defs.md#licenseinfotypedef) 
-3. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
 ## ListDomainsRequestListDomainsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1641,13 +1659,15 @@ class ListPackageVersionsRequestListPackageVersionsPaginateTypeDef(TypedDict):
     namespace: NotRequired[str],
     status: NotRequired[PackageVersionStatusType],  # (2)
     sortBy: NotRequired[PackageVersionSortTypeType],  # (3)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+    originType: NotRequired[PackageVersionOriginTypeType],  # (4)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
 3. See [:material-code-brackets: PackageVersionSortTypeType](./literals.md#packageversionsorttypetype) 
-4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-brackets: PackageVersionOriginTypeType](./literals.md#packageversionorigintypetype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPackagesRequestListPackagesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1668,11 +1688,15 @@ class ListPackagesRequestListPackagesPaginateTypeDef(TypedDict):
     format: NotRequired[PackageFormatType],  # (1)
     namespace: NotRequired[str],
     packagePrefix: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+    publish: NotRequired[AllowPublishType],  # (2)
+    upstream: NotRequired[AllowUpstreamType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-brackets: AllowPublishType](./literals.md#allowpublishtype) 
+3. See [:material-code-brackets: AllowUpstreamType](./literals.md#allowupstreamtype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRepositoriesInDomainRequestListRepositoriesInDomainPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1745,59 +1769,6 @@ class ListPackageVersionDependenciesResultTypeDef(TypedDict):
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 2. See [:material-code-braces: PackageDependencyTypeDef](./type_defs.md#packagedependencytypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPackageVersionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeartifact.type_defs import ListPackageVersionsResultTypeDef
-
-def get_value() -> ListPackageVersionsResultTypeDef:
-    return {
-        "defaultDisplayVersion": ...,
-        "format": ...,
-        "namespace": ...,
-        "package": ...,
-        "versions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPackageVersionsResultTypeDef(TypedDict):
-    defaultDisplayVersion: str,
-    format: PackageFormatType,  # (1)
-    namespace: str,
-    package: str,
-    versions: List[PackageVersionSummaryTypeDef],  # (2)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
-2. See [:material-code-braces: PackageVersionSummaryTypeDef](./type_defs.md#packageversionsummarytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListPackagesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_codeartifact.type_defs import ListPackagesResultTypeDef
-
-def get_value() -> ListPackagesResultTypeDef:
-    return {
-        "packages": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPackagesResultTypeDef(TypedDict):
-    packages: List[PackageSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PackageSummaryTypeDef](./type_defs.md#packagesummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRepositoriesInDomainResultTypeDef
 
 ```python title="Usage Example"
@@ -1842,6 +1813,51 @@ class ListRepositoriesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: RepositorySummaryTypeDef](./type_defs.md#repositorysummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PackageOriginConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PackageOriginConfigurationTypeDef
+
+def get_value() -> PackageOriginConfigurationTypeDef:
+    return {
+        "restrictions": ...,
+    }
+```
+
+```python title="Definition"
+class PackageOriginConfigurationTypeDef(TypedDict):
+    restrictions: NotRequired[PackageOriginRestrictionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PackageOriginRestrictionsTypeDef](./type_defs.md#packageoriginrestrictionstypedef) 
+## PutPackageOriginConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PutPackageOriginConfigurationRequestRequestTypeDef
+
+def get_value() -> PutPackageOriginConfigurationRequestRequestTypeDef:
+    return {
+        "domain": ...,
+        "repository": ...,
+        "format": ...,
+        "package": ...,
+        "restrictions": ...,
+    }
+```
+
+```python title="Definition"
+class PutPackageOriginConfigurationRequestRequestTypeDef(TypedDict):
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    restrictions: PackageOriginRestrictionsTypeDef,  # (2)
+    domainOwner: NotRequired[str],
+    namespace: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PackageOriginRestrictionsTypeDef](./type_defs.md#packageoriginrestrictionstypedef) 
 ## RepositoryDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -1867,25 +1883,121 @@ class RepositoryDescriptionTypeDef(TypedDict):
 
 1. See [:material-code-braces: UpstreamRepositoryInfoTypeDef](./type_defs.md#upstreamrepositoryinfotypedef) 
 2. See [:material-code-braces: RepositoryExternalConnectionInfoTypeDef](./type_defs.md#repositoryexternalconnectioninfotypedef) 
-## DescribePackageVersionResultTypeDef
+## PackageVersionDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_codeartifact.type_defs import DescribePackageVersionResultTypeDef
+from mypy_boto3_codeartifact.type_defs import PackageVersionDescriptionTypeDef
 
-def get_value() -> DescribePackageVersionResultTypeDef:
+def get_value() -> PackageVersionDescriptionTypeDef:
     return {
-        "packageVersion": ...,
+        "format": ...,
+    }
+```
+
+```python title="Definition"
+class PackageVersionDescriptionTypeDef(TypedDict):
+    format: NotRequired[PackageFormatType],  # (1)
+    namespace: NotRequired[str],
+    packageName: NotRequired[str],
+    displayName: NotRequired[str],
+    version: NotRequired[str],
+    summary: NotRequired[str],
+    homePage: NotRequired[str],
+    sourceCodeRepository: NotRequired[str],
+    publishedTime: NotRequired[datetime],
+    licenses: NotRequired[List[LicenseInfoTypeDef]],  # (2)
+    revision: NotRequired[str],
+    status: NotRequired[PackageVersionStatusType],  # (3)
+    origin: NotRequired[PackageVersionOriginTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: LicenseInfoTypeDef](./type_defs.md#licenseinfotypedef) 
+3. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+4. See [:material-code-braces: PackageVersionOriginTypeDef](./type_defs.md#packageversionorigintypedef) 
+## PackageVersionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PackageVersionSummaryTypeDef
+
+def get_value() -> PackageVersionSummaryTypeDef:
+    return {
+        "version": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class PackageVersionSummaryTypeDef(TypedDict):
+    version: str,
+    status: PackageVersionStatusType,  # (1)
+    revision: NotRequired[str],
+    origin: NotRequired[PackageVersionOriginTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+2. See [:material-code-braces: PackageVersionOriginTypeDef](./type_defs.md#packageversionorigintypedef) 
+## PackageDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PackageDescriptionTypeDef
+
+def get_value() -> PackageDescriptionTypeDef:
+    return {
+        "format": ...,
+    }
+```
+
+```python title="Definition"
+class PackageDescriptionTypeDef(TypedDict):
+    format: NotRequired[PackageFormatType],  # (1)
+    namespace: NotRequired[str],
+    name: NotRequired[str],
+    originConfiguration: NotRequired[PackageOriginConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PackageOriginConfigurationTypeDef](./type_defs.md#packageoriginconfigurationtypedef) 
+## PackageSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PackageSummaryTypeDef
+
+def get_value() -> PackageSummaryTypeDef:
+    return {
+        "format": ...,
+    }
+```
+
+```python title="Definition"
+class PackageSummaryTypeDef(TypedDict):
+    format: NotRequired[PackageFormatType],  # (1)
+    namespace: NotRequired[str],
+    package: NotRequired[str],
+    originConfiguration: NotRequired[PackageOriginConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PackageOriginConfigurationTypeDef](./type_defs.md#packageoriginconfigurationtypedef) 
+## PutPackageOriginConfigurationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import PutPackageOriginConfigurationResultTypeDef
+
+def get_value() -> PutPackageOriginConfigurationResultTypeDef:
+    return {
+        "originConfiguration": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribePackageVersionResultTypeDef(TypedDict):
-    packageVersion: PackageVersionDescriptionTypeDef,  # (1)
+class PutPackageOriginConfigurationResultTypeDef(TypedDict):
+    originConfiguration: PackageOriginConfigurationTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: PackageVersionDescriptionTypeDef](./type_defs.md#packageversiondescriptiontypedef) 
+1. See [:material-code-braces: PackageOriginConfigurationTypeDef](./type_defs.md#packageoriginconfigurationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateExternalConnectionResultTypeDef
 
@@ -2006,4 +2118,97 @@ class UpdateRepositoryResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RepositoryDescriptionTypeDef](./type_defs.md#repositorydescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePackageVersionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import DescribePackageVersionResultTypeDef
+
+def get_value() -> DescribePackageVersionResultTypeDef:
+    return {
+        "packageVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePackageVersionResultTypeDef(TypedDict):
+    packageVersion: PackageVersionDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PackageVersionDescriptionTypeDef](./type_defs.md#packageversiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPackageVersionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import ListPackageVersionsResultTypeDef
+
+def get_value() -> ListPackageVersionsResultTypeDef:
+    return {
+        "defaultDisplayVersion": ...,
+        "format": ...,
+        "namespace": ...,
+        "package": ...,
+        "versions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPackageVersionsResultTypeDef(TypedDict):
+    defaultDisplayVersion: str,
+    format: PackageFormatType,  # (1)
+    namespace: str,
+    package: str,
+    versions: List[PackageVersionSummaryTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PackageVersionSummaryTypeDef](./type_defs.md#packageversionsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePackageResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import DescribePackageResultTypeDef
+
+def get_value() -> DescribePackageResultTypeDef:
+    return {
+        "package": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePackageResultTypeDef(TypedDict):
+    package: PackageDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PackageDescriptionTypeDef](./type_defs.md#packagedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPackagesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import ListPackagesResultTypeDef
+
+def get_value() -> ListPackagesResultTypeDef:
+    return {
+        "packages": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPackagesResultTypeDef(TypedDict):
+    packages: List[PackageSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PackageSummaryTypeDef](./type_defs.md#packagesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

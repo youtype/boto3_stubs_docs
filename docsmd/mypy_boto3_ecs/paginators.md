@@ -21,6 +21,23 @@ def get_list_account_settings_paginator() -> ListAccountSettingsPaginator:
     return Session().client("ecs").get_paginator("list_account_settings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListAccountSettingsPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListAccountSettingsPaginator = client.get_paginator("list_account_settings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListAccountSettingsPaginator](./paginators.md#listaccountsettingspaginator)
+3. item: [:material-code-braces: ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ from mypy_boto3_ecs.paginator import ListAttributesPaginator
 def get_list_attributes_paginator() -> ListAttributesPaginator:
     return Session().client("ecs").get_paginator("list_attributes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListAttributesPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListAttributesPaginator = client.get_paginator("list_attributes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListAttributesPaginator](./paginators.md#listattributespaginator)
+3. item: [:material-code-braces: ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef) 
 
 
 ### paginate
@@ -113,6 +147,23 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return Session().client("ecs").get_paginator("list_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListClustersPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListClustersPaginator = client.get_paginator("list_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListClustersPaginator](./paginators.md#listclusterspaginator)
+3. item: [:material-code-braces: ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef) 
+
 
 ### paginate
 
@@ -153,6 +204,23 @@ from mypy_boto3_ecs.paginator import ListContainerInstancesPaginator
 def get_list_container_instances_paginator() -> ListContainerInstancesPaginator:
     return Session().client("ecs").get_paginator("list_container_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListContainerInstancesPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListContainerInstancesPaginator = client.get_paginator("list_container_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListContainerInstancesPaginator](./paginators.md#listcontainerinstancespaginator)
+3. item: [:material-code-braces: ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef) 
 
 
 ### paginate
@@ -198,6 +266,23 @@ from mypy_boto3_ecs.paginator import ListServicesPaginator
 def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("ecs").get_paginator("list_services")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListServicesPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListServicesPaginator = client.get_paginator("list_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListServicesPaginator](./paginators.md#listservicespaginator)
+3. item: [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
 
 ### paginate
@@ -245,6 +330,23 @@ def get_list_task_definition_families_paginator() -> ListTaskDefinitionFamiliesP
     return Session().client("ecs").get_paginator("list_task_definition_families")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListTaskDefinitionFamiliesPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListTaskDefinitionFamiliesPaginator = client.get_paginator("list_task_definition_families")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListTaskDefinitionFamiliesPaginator](./paginators.md#listtaskdefinitionfamiliespaginator)
+3. item: [:material-code-braces: ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef) 
+
 
 ### paginate
 
@@ -288,6 +390,23 @@ from mypy_boto3_ecs.paginator import ListTaskDefinitionsPaginator
 def get_list_task_definitions_paginator() -> ListTaskDefinitionsPaginator:
     return Session().client("ecs").get_paginator("list_task_definitions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListTaskDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListTaskDefinitionsPaginator = client.get_paginator("list_task_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
+3. item: [:material-code-braces: ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef) 
 
 
 ### paginate
@@ -334,6 +453,23 @@ from mypy_boto3_ecs.paginator import ListTasksPaginator
 def get_list_tasks_paginator() -> ListTasksPaginator:
     return Session().client("ecs").get_paginator("list_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListTasksPaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListTasksPaginator = client.get_paginator("list_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListTasksPaginator](./paginators.md#listtaskspaginator)
+3. item: [:material-code-braces: ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef) 
 
 
 ### paginate

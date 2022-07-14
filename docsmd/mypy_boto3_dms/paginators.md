@@ -21,6 +21,23 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return Session().client("dms").get_paginator("describe_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeCertificatesPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeCertificatesPaginator = client.get_paginator("describe_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
+3. item: [:material-code-braces: DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_dms.paginator import DescribeConnectionsPaginator
 def get_describe_connections_paginator() -> DescribeConnectionsPaginator:
     return Session().client("dms").get_paginator("describe_connections")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeConnectionsPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeConnectionsPaginator = client.get_paginator("describe_connections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeConnectionsPaginator](./paginators.md#describeconnectionspaginator)
+3. item: [:material-code-braces: DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_describe_endpoint_types_paginator() -> DescribeEndpointTypesPaginator:
     return Session().client("dms").get_paginator("describe_endpoint_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeEndpointTypesPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeEndpointTypesPaginator = client.get_paginator("describe_endpoint_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeEndpointTypesPaginator](./paginators.md#describeendpointtypespaginator)
+3. item: [:material-code-braces: DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_dms.paginator import DescribeEndpointsPaginator
 def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return Session().client("dms").get_paginator("describe_endpoints")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeEndpointsPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeEndpointsPaginator = client.get_paginator("describe_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
+3. item: [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return Session().client("dms").get_paginator("describe_event_subscriptions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeEventSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeEventSubscriptionsPaginator = client.get_paginator("describe_event_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+3. item: [:material-code-braces: DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef) 
+
 
 ### paginate
 
@@ -236,6 +321,23 @@ from mypy_boto3_dms.paginator import DescribeEventsPaginator
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("dms").get_paginator("describe_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
 
 ### paginate
@@ -287,6 +389,23 @@ def get_describe_orderable_replication_instances_paginator() -> DescribeOrderabl
     return Session().client("dms").get_paginator("describe_orderable_replication_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeOrderableReplicationInstancesPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeOrderableReplicationInstancesPaginator = client.get_paginator("describe_orderable_replication_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeOrderableReplicationInstancesPaginator](./paginators.md#describeorderablereplicationinstancespaginator)
+3. item: [:material-code-braces: DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef) 
+
 
 ### paginate
 
@@ -327,6 +446,23 @@ from mypy_boto3_dms.paginator import DescribeReplicationInstancesPaginator
 def get_describe_replication_instances_paginator() -> DescribeReplicationInstancesPaginator:
     return Session().client("dms").get_paginator("describe_replication_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeReplicationInstancesPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeReplicationInstancesPaginator = client.get_paginator("describe_replication_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeReplicationInstancesPaginator](./paginators.md#describereplicationinstancespaginator)
+3. item: [:material-code-braces: DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef) 
 
 
 ### paginate
@@ -371,6 +507,23 @@ def get_describe_replication_subnet_groups_paginator() -> DescribeReplicationSub
     return Session().client("dms").get_paginator("describe_replication_subnet_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeReplicationSubnetGroupsPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeReplicationSubnetGroupsPaginator = client.get_paginator("describe_replication_subnet_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeReplicationSubnetGroupsPaginator](./paginators.md#describereplicationsubnetgroupspaginator)
+3. item: [:material-code-braces: DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -414,6 +567,23 @@ def get_describe_replication_task_assessment_results_paginator() -> DescribeRepl
     return Session().client("dms").get_paginator("describe_replication_task_assessment_results")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeReplicationTaskAssessmentResultsPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeReplicationTaskAssessmentResultsPaginator = client.get_paginator("describe_replication_task_assessment_results")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeReplicationTaskAssessmentResultsPaginator](./paginators.md#describereplicationtaskassessmentresultspaginator)
+3. item: [:material-code-braces: DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef) 
+
 
 ### paginate
 
@@ -455,6 +625,23 @@ from mypy_boto3_dms.paginator import DescribeReplicationTasksPaginator
 def get_describe_replication_tasks_paginator() -> DescribeReplicationTasksPaginator:
     return Session().client("dms").get_paginator("describe_replication_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeReplicationTasksPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeReplicationTasksPaginator = client.get_paginator("describe_replication_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeReplicationTasksPaginator](./paginators.md#describereplicationtaskspaginator)
+3. item: [:material-code-braces: DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef) 
 
 
 ### paginate
@@ -500,6 +687,23 @@ def get_describe_schemas_paginator() -> DescribeSchemasPaginator:
     return Session().client("dms").get_paginator("describe_schemas")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeSchemasPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeSchemasPaginator = client.get_paginator("describe_schemas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
+3. item: [:material-code-braces: DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef) 
+
 
 ### paginate
 
@@ -541,6 +745,23 @@ from mypy_boto3_dms.paginator import DescribeTableStatisticsPaginator
 def get_describe_table_statistics_paginator() -> DescribeTableStatisticsPaginator:
     return Session().client("dms").get_paginator("describe_table_statistics")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dms.paginator import DescribeTableStatisticsPaginator
+
+session = Session()
+
+client = Session().client("dms")  # (1)
+paginator: DescribeTableStatisticsPaginator = client.get_paginator("describe_table_statistics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. paginator: [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
+3. item: [:material-code-braces: DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef) 
 
 
 ### paginate

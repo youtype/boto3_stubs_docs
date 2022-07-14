@@ -21,6 +21,23 @@ def get_list_business_report_schedules_paginator() -> ListBusinessReportSchedule
     return Session().client("alexaforbusiness").get_paginator("list_business_report_schedules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListBusinessReportSchedulesPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListBusinessReportSchedulesPaginator = client.get_paginator("list_business_report_schedules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListBusinessReportSchedulesPaginator](./paginators.md#listbusinessreportschedulespaginator)
+3. item: [:material-code-braces: ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ def get_list_conference_providers_paginator() -> ListConferenceProvidersPaginato
     return Session().client("alexaforbusiness").get_paginator("list_conference_providers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListConferenceProvidersPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListConferenceProvidersPaginator = client.get_paginator("list_conference_providers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListConferenceProvidersPaginator](./paginators.md#listconferenceproviderspaginator)
+3. item: [:material-code-braces: ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef) 
+
 
 ### paginate
 
@@ -102,6 +136,23 @@ from mypy_boto3_alexaforbusiness.paginator import ListDeviceEventsPaginator
 def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
     return Session().client("alexaforbusiness").get_paginator("list_device_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListDeviceEventsPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListDeviceEventsPaginator = client.get_paginator("list_device_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
+3. item: [:material-code-braces: ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ from mypy_boto3_alexaforbusiness.paginator import ListSkillsPaginator
 def get_list_skills_paginator() -> ListSkillsPaginator:
     return Session().client("alexaforbusiness").get_paginator("list_skills")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListSkillsPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListSkillsPaginator = client.get_paginator("list_skills")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListSkillsPaginator](./paginators.md#listskillspaginator)
+3. item: [:material-code-braces: ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ def get_list_skills_store_categories_paginator() -> ListSkillsStoreCategoriesPag
     return Session().client("alexaforbusiness").get_paginator("list_skills_store_categories")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListSkillsStoreCategoriesPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListSkillsStoreCategoriesPaginator = client.get_paginator("list_skills_store_categories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListSkillsStoreCategoriesPaginator](./paginators.md#listskillsstorecategoriespaginator)
+3. item: [:material-code-braces: ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef) 
+
 
 ### paginate
 
@@ -233,6 +318,23 @@ from mypy_boto3_alexaforbusiness.paginator import ListSkillsStoreSkillsByCategor
 def get_list_skills_store_skills_by_category_paginator() -> ListSkillsStoreSkillsByCategoryPaginator:
     return Session().client("alexaforbusiness").get_paginator("list_skills_store_skills_by_category")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListSkillsStoreSkillsByCategoryPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListSkillsStoreSkillsByCategoryPaginator = client.get_paginator("list_skills_store_skills_by_category")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListSkillsStoreSkillsByCategoryPaginator](./paginators.md#listskillsstoreskillsbycategorypaginator)
+3. item: [:material-code-braces: ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef) 
 
 
 ### paginate
@@ -276,6 +378,23 @@ def get_list_smart_home_appliances_paginator() -> ListSmartHomeAppliancesPaginat
     return Session().client("alexaforbusiness").get_paginator("list_smart_home_appliances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListSmartHomeAppliancesPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListSmartHomeAppliancesPaginator = client.get_paginator("list_smart_home_appliances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListSmartHomeAppliancesPaginator](./paginators.md#listsmarthomeappliancespaginator)
+3. item: [:material-code-braces: ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef) 
+
 
 ### paginate
 
@@ -318,6 +437,23 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("alexaforbusiness").get_paginator("list_tags")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import ListTagsPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: ListTagsPaginator = client.get_paginator("list_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [ListTagsPaginator](./paginators.md#listtagspaginator)
+3. item: [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
+
 
 ### paginate
 
@@ -359,6 +495,23 @@ from mypy_boto3_alexaforbusiness.paginator import SearchDevicesPaginator
 def get_search_devices_paginator() -> SearchDevicesPaginator:
     return Session().client("alexaforbusiness").get_paginator("search_devices")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import SearchDevicesPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: SearchDevicesPaginator = client.get_paginator("search_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
+3. item: [:material-code-braces: SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef) 
 
 
 ### paginate
@@ -405,6 +558,23 @@ def get_search_profiles_paginator() -> SearchProfilesPaginator:
     return Session().client("alexaforbusiness").get_paginator("search_profiles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import SearchProfilesPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: SearchProfilesPaginator = client.get_paginator("search_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [SearchProfilesPaginator](./paginators.md#searchprofilespaginator)
+3. item: [:material-code-braces: SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef) 
+
 
 ### paginate
 
@@ -449,6 +619,23 @@ from mypy_boto3_alexaforbusiness.paginator import SearchRoomsPaginator
 def get_search_rooms_paginator() -> SearchRoomsPaginator:
     return Session().client("alexaforbusiness").get_paginator("search_rooms")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import SearchRoomsPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: SearchRoomsPaginator = client.get_paginator("search_rooms")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [SearchRoomsPaginator](./paginators.md#searchroomspaginator)
+3. item: [:material-code-braces: SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef) 
 
 
 ### paginate
@@ -495,6 +682,23 @@ def get_search_skill_groups_paginator() -> SearchSkillGroupsPaginator:
     return Session().client("alexaforbusiness").get_paginator("search_skill_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import SearchSkillGroupsPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: SearchSkillGroupsPaginator = client.get_paginator("search_skill_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [SearchSkillGroupsPaginator](./paginators.md#searchskillgroupspaginator)
+3. item: [:material-code-braces: SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -539,6 +743,23 @@ from mypy_boto3_alexaforbusiness.paginator import SearchUsersPaginator
 def get_search_users_paginator() -> SearchUsersPaginator:
     return Session().client("alexaforbusiness").get_paginator("search_users")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_alexaforbusiness.paginator import SearchUsersPaginator
+
+session = Session()
+
+client = Session().client("alexaforbusiness")  # (1)
+paginator: SearchUsersPaginator = client.get_paginator("search_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AlexaForBusinessClient](./client.md)
+2. paginator: [SearchUsersPaginator](./paginators.md#searchuserspaginator)
+3. item: [:material-code-braces: SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef) 
 
 
 ### paginate

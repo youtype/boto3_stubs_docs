@@ -21,6 +21,23 @@ def get_list_scheduled_queries_paginator() -> ListScheduledQueriesPaginator:
     return Session().client("timestream-query").get_paginator("list_scheduled_queries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_timestream_query.paginator import ListScheduledQueriesPaginator
+
+session = Session()
+
+client = Session().client("timestream-query")  # (1)
+paginator: ListScheduledQueriesPaginator = client.get_paginator("list_scheduled_queries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TimestreamQueryClient](./client.md)
+2. paginator: [ListScheduledQueriesPaginator](./paginators.md#listscheduledqueriespaginator)
+3. item: [:material-code-braces: ListScheduledQueriesResponseTypeDef](./type_defs.md#listscheduledqueriesresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_timestream_query.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("timestream-query").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_timestream_query.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("timestream-query")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TimestreamQueryClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ from mypy_boto3_timestream_query.paginator import QueryPaginator
 def get_query_paginator() -> QueryPaginator:
     return Session().client("timestream-query").get_paginator("query")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_timestream_query.paginator import QueryPaginator
+
+session = Session()
+
+client = Session().client("timestream-query")  # (1)
+paginator: QueryPaginator = client.get_paginator("query")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TimestreamQueryClient](./client.md)
+2. paginator: [QueryPaginator](./paginators.md#querypaginator)
+3. item: [:material-code-braces: QueryResponseTypeDef](./type_defs.md#queryresponsetypedef) 
 
 
 ### paginate

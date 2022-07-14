@@ -37847,9 +37847,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">BundleTaskCompleteWaiter</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">def</span> <span class="nf">get_bundle_task_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BundleTaskCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;bundle_task_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">BundleTaskCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;bundle_task_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#bundletaskcompletewaiter">BundleTaskCompleteWaiter</a></li>
+</ol>
 <h3 id="wait">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">BundleTaskCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -37882,9 +37890,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">ConversionTaskCancelledWaiter</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_conversion_task_cancelled_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ConversionTaskCancelledWaiter</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;conversion_task_cancelled&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ConversionTaskCancelledWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;conversion_task_cancelled&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#conversiontaskcancelledwaiter">ConversionTaskCancelledWaiter</a></li>
+</ol>
 <h3 id="wait_1">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ConversionTaskCancelledWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -37915,9 +37931,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">ConversionTaskCompletedWaiter</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">def</span> <span class="nf">get_conversion_task_completed_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ConversionTaskCompletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;conversion_task_completed&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ConversionTaskCompletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;conversion_task_completed&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#conversiontaskcompletedwaiter">ConversionTaskCompletedWaiter</a></li>
+</ol>
 <h3 id="wait_2">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ConversionTaskCompletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -37948,9 +37972,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">ConversionTaskDeletedWaiter</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">def</span> <span class="nf">get_conversion_task_deleted_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ConversionTaskDeletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;conversion_task_deleted&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ConversionTaskDeletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;conversion_task_deleted&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#conversiontaskdeletedwaiter">ConversionTaskDeletedWaiter</a></li>
+</ol>
 <h3 id="wait_3">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ConversionTaskDeletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -37981,9 +38013,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
 <a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">CustomerGatewayAvailableWaiter</span>
 <a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">def</span> <span class="nf">get_customer_gateway_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CustomerGatewayAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;customer_gateway_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">CustomerGatewayAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;customer_gateway_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#customergatewayavailablewaiter">CustomerGatewayAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_4">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">CustomerGatewayAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38016,9 +38056,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
 <a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">ExportTaskCancelledWaiter</span>
 <a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="k">def</span> <span class="nf">get_export_task_cancelled_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ExportTaskCancelledWaiter</span><span class="p">:</span>
-<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;export_task_cancelled&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ExportTaskCancelledWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;export_task_cancelled&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#exporttaskcancelledwaiter">ExportTaskCancelledWaiter</a></li>
+</ol>
 <h3 id="wait_5">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ExportTaskCancelledWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38050,9 +38098,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
 <a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">ExportTaskCompletedWaiter</span>
 <a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="k">def</span> <span class="nf">get_export_task_completed_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ExportTaskCompletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;export_task_completed&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ExportTaskCompletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;export_task_completed&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#exporttaskcompletedwaiter">ExportTaskCompletedWaiter</a></li>
+</ol>
 <h3 id="wait_6">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ExportTaskCompletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38084,9 +38140,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
 <a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">ImageAvailableWaiter</span>
 <a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">def</span> <span class="nf">get_image_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ImageAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;image_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ImageAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;image_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#imageavailablewaiter">ImageAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_7">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ImageAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38122,9 +38186,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
 <a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">ImageExistsWaiter</span>
 <a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
-<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="k">def</span> <span class="nf">get_image_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ImageExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;image_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ImageExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;image_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#imageexistswaiter">ImageExistsWaiter</a></li>
+</ol>
 <h3 id="wait_8">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ImageExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38160,9 +38232,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
 <a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">InstanceExistsWaiter</span>
 <a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>
-<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="k">def</span> <span class="nf">get_instance_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">InstanceExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">InstanceExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#instanceexistswaiter">InstanceExistsWaiter</a></li>
+</ol>
 <h3 id="wait_9">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">InstanceExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38197,9 +38277,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
 <a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">InstanceRunningWaiter</span>
 <a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>
-<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="k">def</span> <span class="nf">get_instance_running_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">InstanceRunningWaiter</span><span class="p">:</span>
-<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_running&quot;</span><span class="p">)</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">InstanceRunningWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_running&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#instancerunningwaiter">InstanceRunningWaiter</a></li>
+</ol>
 <h3 id="wait_10">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">InstanceRunningWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38234,9 +38322,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>
 <a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">InstanceStatusOkWaiter</span>
 <a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>
-<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="k">def</span> <span class="nf">get_instance_status_ok_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">InstanceStatusOkWaiter</span><span class="p">:</span>
-<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_status_ok&quot;</span><span class="p">)</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">InstanceStatusOkWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_status_ok&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#instancestatusokwaiter">InstanceStatusOkWaiter</a></li>
+</ol>
 <h3 id="wait_11">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">InstanceStatusOkWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38272,9 +38368,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
 <a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">InstanceStoppedWaiter</span>
 <a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>
-<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="k">def</span> <span class="nf">get_instance_stopped_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">InstanceStoppedWaiter</span><span class="p">:</span>
-<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_stopped&quot;</span><span class="p">)</span>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">InstanceStoppedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_stopped&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#instancestoppedwaiter">InstanceStoppedWaiter</a></li>
+</ol>
 <h3 id="wait_12">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">InstanceStoppedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38309,9 +38413,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>
 <a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">InstanceTerminatedWaiter</span>
 <a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>
-<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="k">def</span> <span class="nf">get_instance_terminated_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">InstanceTerminatedWaiter</span><span class="p">:</span>
-<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_terminated&quot;</span><span class="p">)</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a>
+<a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">InstanceTerminatedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;instance_terminated&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#instanceterminatedwaiter">InstanceTerminatedWaiter</a></li>
+</ol>
 <h3 id="wait_13">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">InstanceTerminatedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38346,9 +38458,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>
 <a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">InternetGatewayExistsWaiter</span>
 <a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>
-<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="k">def</span> <span class="nf">get_internet_gateway_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">InternetGatewayExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;internet_gateway_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>
+<a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">InternetGatewayExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;internet_gateway_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#internetgatewayexistswaiter">InternetGatewayExistsWaiter</a></li>
+</ol>
 <h3 id="wait_14">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">InternetGatewayExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38383,9 +38503,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>
 <a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">KeyPairExistsWaiter</span>
 <a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>
-<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a><span class="k">def</span> <span class="nf">get_key_pair_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">KeyPairExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;key_pair_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">KeyPairExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;key_pair_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#keypairexistswaiter">KeyPairExistsWaiter</a></li>
+</ol>
 <h3 id="wait_15">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">KeyPairExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38420,9 +38548,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>
 <a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">NatGatewayAvailableWaiter</span>
 <a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a>
-<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a><span class="k">def</span> <span class="nf">get_nat_gateway_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">NatGatewayAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;nat_gateway_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a>
+<a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-48-7" name="__codelineno-48-7" href="#__codelineno-48-7"></a>
+<a id="__codelineno-48-8" name="__codelineno-48-8" href="#__codelineno-48-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-48-9" name="__codelineno-48-9" href="#__codelineno-48-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">NatGatewayAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;nat_gateway_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-48-10" name="__codelineno-48-10" href="#__codelineno-48-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#natgatewayavailablewaiter">NatGatewayAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_16">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">NatGatewayAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38457,9 +38593,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>
 <a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">NatGatewayDeletedWaiter</span>
 <a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a>
-<a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a><span class="k">def</span> <span class="nf">get_nat_gateway_deleted_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">NatGatewayDeletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-51-6" name="__codelineno-51-6" href="#__codelineno-51-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;nat_gateway_deleted&quot;</span><span class="p">)</span>
+<a id="__codelineno-51-5" name="__codelineno-51-5" href="#__codelineno-51-5"></a>
+<a id="__codelineno-51-6" name="__codelineno-51-6" href="#__codelineno-51-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-51-7" name="__codelineno-51-7" href="#__codelineno-51-7"></a>
+<a id="__codelineno-51-8" name="__codelineno-51-8" href="#__codelineno-51-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-51-9" name="__codelineno-51-9" href="#__codelineno-51-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">NatGatewayDeletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;nat_gateway_deleted&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-51-10" name="__codelineno-51-10" href="#__codelineno-51-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#natgatewaydeletedwaiter">NatGatewayDeletedWaiter</a></li>
+</ol>
 <h3 id="wait_17">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">NatGatewayDeletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38494,9 +38638,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>
 <a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">NetworkInterfaceAvailableWaiter</span>
 <a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a>
-<a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a><span class="k">def</span> <span class="nf">get_network_interface_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">NetworkInterfaceAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;network_interface_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a>
+<a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-54-7" name="__codelineno-54-7" href="#__codelineno-54-7"></a>
+<a id="__codelineno-54-8" name="__codelineno-54-8" href="#__codelineno-54-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-54-9" name="__codelineno-54-9" href="#__codelineno-54-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">NetworkInterfaceAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;network_interface_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-54-10" name="__codelineno-54-10" href="#__codelineno-54-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#networkinterfaceavailablewaiter">NetworkInterfaceAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_18">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">NetworkInterfaceAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38531,9 +38683,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>
 <a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">PasswordDataAvailableWaiter</span>
 <a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a>
-<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a><span class="k">def</span> <span class="nf">get_password_data_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">PasswordDataAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;password_data_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a>
+<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-57-7" name="__codelineno-57-7" href="#__codelineno-57-7"></a>
+<a id="__codelineno-57-8" name="__codelineno-57-8" href="#__codelineno-57-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-57-9" name="__codelineno-57-9" href="#__codelineno-57-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">PasswordDataAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;password_data_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-57-10" name="__codelineno-57-10" href="#__codelineno-57-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#passworddataavailablewaiter">PasswordDataAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_19">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">PasswordDataAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38564,9 +38724,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>
 <a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">SecurityGroupExistsWaiter</span>
 <a id="__codelineno-60-4" name="__codelineno-60-4" href="#__codelineno-60-4"></a>
-<a id="__codelineno-60-5" name="__codelineno-60-5" href="#__codelineno-60-5"></a><span class="k">def</span> <span class="nf">get_security_group_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SecurityGroupExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-60-6" name="__codelineno-60-6" href="#__codelineno-60-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;security_group_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-60-5" name="__codelineno-60-5" href="#__codelineno-60-5"></a>
+<a id="__codelineno-60-6" name="__codelineno-60-6" href="#__codelineno-60-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-60-7" name="__codelineno-60-7" href="#__codelineno-60-7"></a>
+<a id="__codelineno-60-8" name="__codelineno-60-8" href="#__codelineno-60-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-60-9" name="__codelineno-60-9" href="#__codelineno-60-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">SecurityGroupExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;security_group_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-60-10" name="__codelineno-60-10" href="#__codelineno-60-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#securitygroupexistswaiter">SecurityGroupExistsWaiter</a></li>
+</ol>
 <h3 id="wait_20">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">SecurityGroupExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38602,9 +38770,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a>
 <a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">SnapshotCompletedWaiter</span>
 <a id="__codelineno-63-4" name="__codelineno-63-4" href="#__codelineno-63-4"></a>
-<a id="__codelineno-63-5" name="__codelineno-63-5" href="#__codelineno-63-5"></a><span class="k">def</span> <span class="nf">get_snapshot_completed_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SnapshotCompletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-63-6" name="__codelineno-63-6" href="#__codelineno-63-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;snapshot_completed&quot;</span><span class="p">)</span>
+<a id="__codelineno-63-5" name="__codelineno-63-5" href="#__codelineno-63-5"></a>
+<a id="__codelineno-63-6" name="__codelineno-63-6" href="#__codelineno-63-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-63-7" name="__codelineno-63-7" href="#__codelineno-63-7"></a>
+<a id="__codelineno-63-8" name="__codelineno-63-8" href="#__codelineno-63-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-63-9" name="__codelineno-63-9" href="#__codelineno-63-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">SnapshotCompletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;snapshot_completed&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-63-10" name="__codelineno-63-10" href="#__codelineno-63-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#snapshotcompletedwaiter">SnapshotCompletedWaiter</a></li>
+</ol>
 <h3 id="wait_21">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">SnapshotCompletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38641,9 +38817,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>
 <a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">SpotInstanceRequestFulfilledWaiter</span>
 <a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>
-<a id="__codelineno-66-5" name="__codelineno-66-5" href="#__codelineno-66-5"></a><span class="k">def</span> <span class="nf">get_spot_instance_request_fulfilled_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SpotInstanceRequestFulfilledWaiter</span><span class="p">:</span>
-<a id="__codelineno-66-6" name="__codelineno-66-6" href="#__codelineno-66-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;spot_instance_request_fulfilled&quot;</span><span class="p">)</span>
+<a id="__codelineno-66-5" name="__codelineno-66-5" href="#__codelineno-66-5"></a>
+<a id="__codelineno-66-6" name="__codelineno-66-6" href="#__codelineno-66-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-66-7" name="__codelineno-66-7" href="#__codelineno-66-7"></a>
+<a id="__codelineno-66-8" name="__codelineno-66-8" href="#__codelineno-66-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-66-9" name="__codelineno-66-9" href="#__codelineno-66-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">SpotInstanceRequestFulfilledWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;spot_instance_request_fulfilled&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-66-10" name="__codelineno-66-10" href="#__codelineno-66-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#spotinstancerequestfulfilledwaiter">SpotInstanceRequestFulfilledWaiter</a></li>
+</ol>
 <h3 id="wait_22">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">SpotInstanceRequestFulfilledWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38678,9 +38862,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a>
 <a id="__codelineno-69-3" name="__codelineno-69-3" href="#__codelineno-69-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">SubnetAvailableWaiter</span>
 <a id="__codelineno-69-4" name="__codelineno-69-4" href="#__codelineno-69-4"></a>
-<a id="__codelineno-69-5" name="__codelineno-69-5" href="#__codelineno-69-5"></a><span class="k">def</span> <span class="nf">get_subnet_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SubnetAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-69-6" name="__codelineno-69-6" href="#__codelineno-69-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;subnet_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-69-5" name="__codelineno-69-5" href="#__codelineno-69-5"></a>
+<a id="__codelineno-69-6" name="__codelineno-69-6" href="#__codelineno-69-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-69-7" name="__codelineno-69-7" href="#__codelineno-69-7"></a>
+<a id="__codelineno-69-8" name="__codelineno-69-8" href="#__codelineno-69-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-69-9" name="__codelineno-69-9" href="#__codelineno-69-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">SubnetAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;subnet_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-69-10" name="__codelineno-69-10" href="#__codelineno-69-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#subnetavailablewaiter">SubnetAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_23">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">SubnetAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38715,9 +38907,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-72-2" name="__codelineno-72-2" href="#__codelineno-72-2"></a>
 <a id="__codelineno-72-3" name="__codelineno-72-3" href="#__codelineno-72-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">SystemStatusOkWaiter</span>
 <a id="__codelineno-72-4" name="__codelineno-72-4" href="#__codelineno-72-4"></a>
-<a id="__codelineno-72-5" name="__codelineno-72-5" href="#__codelineno-72-5"></a><span class="k">def</span> <span class="nf">get_system_status_ok_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SystemStatusOkWaiter</span><span class="p">:</span>
-<a id="__codelineno-72-6" name="__codelineno-72-6" href="#__codelineno-72-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;system_status_ok&quot;</span><span class="p">)</span>
+<a id="__codelineno-72-5" name="__codelineno-72-5" href="#__codelineno-72-5"></a>
+<a id="__codelineno-72-6" name="__codelineno-72-6" href="#__codelineno-72-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-72-7" name="__codelineno-72-7" href="#__codelineno-72-7"></a>
+<a id="__codelineno-72-8" name="__codelineno-72-8" href="#__codelineno-72-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-72-9" name="__codelineno-72-9" href="#__codelineno-72-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">SystemStatusOkWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;system_status_ok&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-72-10" name="__codelineno-72-10" href="#__codelineno-72-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#systemstatusokwaiter">SystemStatusOkWaiter</a></li>
+</ol>
 <h3 id="wait_24">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">SystemStatusOkWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-73-1" name="__codelineno-73-1" href="#__codelineno-73-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38753,9 +38953,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-75-2" name="__codelineno-75-2" href="#__codelineno-75-2"></a>
 <a id="__codelineno-75-3" name="__codelineno-75-3" href="#__codelineno-75-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VolumeAvailableWaiter</span>
 <a id="__codelineno-75-4" name="__codelineno-75-4" href="#__codelineno-75-4"></a>
-<a id="__codelineno-75-5" name="__codelineno-75-5" href="#__codelineno-75-5"></a><span class="k">def</span> <span class="nf">get_volume_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VolumeAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-75-6" name="__codelineno-75-6" href="#__codelineno-75-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;volume_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-75-5" name="__codelineno-75-5" href="#__codelineno-75-5"></a>
+<a id="__codelineno-75-6" name="__codelineno-75-6" href="#__codelineno-75-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-75-7" name="__codelineno-75-7" href="#__codelineno-75-7"></a>
+<a id="__codelineno-75-8" name="__codelineno-75-8" href="#__codelineno-75-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-75-9" name="__codelineno-75-9" href="#__codelineno-75-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VolumeAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;volume_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-75-10" name="__codelineno-75-10" href="#__codelineno-75-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#volumeavailablewaiter">VolumeAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_25">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VolumeAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38790,9 +38998,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-78-2" name="__codelineno-78-2" href="#__codelineno-78-2"></a>
 <a id="__codelineno-78-3" name="__codelineno-78-3" href="#__codelineno-78-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VolumeDeletedWaiter</span>
 <a id="__codelineno-78-4" name="__codelineno-78-4" href="#__codelineno-78-4"></a>
-<a id="__codelineno-78-5" name="__codelineno-78-5" href="#__codelineno-78-5"></a><span class="k">def</span> <span class="nf">get_volume_deleted_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VolumeDeletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-78-6" name="__codelineno-78-6" href="#__codelineno-78-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;volume_deleted&quot;</span><span class="p">)</span>
+<a id="__codelineno-78-5" name="__codelineno-78-5" href="#__codelineno-78-5"></a>
+<a id="__codelineno-78-6" name="__codelineno-78-6" href="#__codelineno-78-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-78-7" name="__codelineno-78-7" href="#__codelineno-78-7"></a>
+<a id="__codelineno-78-8" name="__codelineno-78-8" href="#__codelineno-78-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-78-9" name="__codelineno-78-9" href="#__codelineno-78-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VolumeDeletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;volume_deleted&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-78-10" name="__codelineno-78-10" href="#__codelineno-78-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#volumedeletedwaiter">VolumeDeletedWaiter</a></li>
+</ol>
 <h3 id="wait_26">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VolumeDeletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38827,9 +39043,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-81-2" name="__codelineno-81-2" href="#__codelineno-81-2"></a>
 <a id="__codelineno-81-3" name="__codelineno-81-3" href="#__codelineno-81-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VolumeInUseWaiter</span>
 <a id="__codelineno-81-4" name="__codelineno-81-4" href="#__codelineno-81-4"></a>
-<a id="__codelineno-81-5" name="__codelineno-81-5" href="#__codelineno-81-5"></a><span class="k">def</span> <span class="nf">get_volume_in_use_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VolumeInUseWaiter</span><span class="p">:</span>
-<a id="__codelineno-81-6" name="__codelineno-81-6" href="#__codelineno-81-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;volume_in_use&quot;</span><span class="p">)</span>
+<a id="__codelineno-81-5" name="__codelineno-81-5" href="#__codelineno-81-5"></a>
+<a id="__codelineno-81-6" name="__codelineno-81-6" href="#__codelineno-81-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-81-7" name="__codelineno-81-7" href="#__codelineno-81-7"></a>
+<a id="__codelineno-81-8" name="__codelineno-81-8" href="#__codelineno-81-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-81-9" name="__codelineno-81-9" href="#__codelineno-81-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VolumeInUseWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;volume_in_use&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-81-10" name="__codelineno-81-10" href="#__codelineno-81-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#volumeinusewaiter">VolumeInUseWaiter</a></li>
+</ol>
 <h3 id="wait_27">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VolumeInUseWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38864,9 +39088,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-84-2" name="__codelineno-84-2" href="#__codelineno-84-2"></a>
 <a id="__codelineno-84-3" name="__codelineno-84-3" href="#__codelineno-84-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VpcAvailableWaiter</span>
 <a id="__codelineno-84-4" name="__codelineno-84-4" href="#__codelineno-84-4"></a>
-<a id="__codelineno-84-5" name="__codelineno-84-5" href="#__codelineno-84-5"></a><span class="k">def</span> <span class="nf">get_vpc_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VpcAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-84-6" name="__codelineno-84-6" href="#__codelineno-84-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-84-5" name="__codelineno-84-5" href="#__codelineno-84-5"></a>
+<a id="__codelineno-84-6" name="__codelineno-84-6" href="#__codelineno-84-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-84-7" name="__codelineno-84-7" href="#__codelineno-84-7"></a>
+<a id="__codelineno-84-8" name="__codelineno-84-8" href="#__codelineno-84-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-84-9" name="__codelineno-84-9" href="#__codelineno-84-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VpcAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-84-10" name="__codelineno-84-10" href="#__codelineno-84-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#vpcavailablewaiter">VpcAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_28">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VpcAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38901,9 +39133,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-87-2" name="__codelineno-87-2" href="#__codelineno-87-2"></a>
 <a id="__codelineno-87-3" name="__codelineno-87-3" href="#__codelineno-87-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VpcExistsWaiter</span>
 <a id="__codelineno-87-4" name="__codelineno-87-4" href="#__codelineno-87-4"></a>
-<a id="__codelineno-87-5" name="__codelineno-87-5" href="#__codelineno-87-5"></a><span class="k">def</span> <span class="nf">get_vpc_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VpcExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-87-6" name="__codelineno-87-6" href="#__codelineno-87-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-87-5" name="__codelineno-87-5" href="#__codelineno-87-5"></a>
+<a id="__codelineno-87-6" name="__codelineno-87-6" href="#__codelineno-87-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-87-7" name="__codelineno-87-7" href="#__codelineno-87-7"></a>
+<a id="__codelineno-87-8" name="__codelineno-87-8" href="#__codelineno-87-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-87-9" name="__codelineno-87-9" href="#__codelineno-87-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VpcExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-87-10" name="__codelineno-87-10" href="#__codelineno-87-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#vpcexistswaiter">VpcExistsWaiter</a></li>
+</ol>
 <h3 id="wait_29">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VpcExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38938,9 +39178,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-90-2" name="__codelineno-90-2" href="#__codelineno-90-2"></a>
 <a id="__codelineno-90-3" name="__codelineno-90-3" href="#__codelineno-90-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VpcPeeringConnectionDeletedWaiter</span>
 <a id="__codelineno-90-4" name="__codelineno-90-4" href="#__codelineno-90-4"></a>
-<a id="__codelineno-90-5" name="__codelineno-90-5" href="#__codelineno-90-5"></a><span class="k">def</span> <span class="nf">get_vpc_peering_connection_deleted_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VpcPeeringConnectionDeletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-90-6" name="__codelineno-90-6" href="#__codelineno-90-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_peering_connection_deleted&quot;</span><span class="p">)</span>
+<a id="__codelineno-90-5" name="__codelineno-90-5" href="#__codelineno-90-5"></a>
+<a id="__codelineno-90-6" name="__codelineno-90-6" href="#__codelineno-90-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-90-7" name="__codelineno-90-7" href="#__codelineno-90-7"></a>
+<a id="__codelineno-90-8" name="__codelineno-90-8" href="#__codelineno-90-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-90-9" name="__codelineno-90-9" href="#__codelineno-90-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VpcPeeringConnectionDeletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_peering_connection_deleted&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-90-10" name="__codelineno-90-10" href="#__codelineno-90-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#vpcpeeringconnectiondeletedwaiter">VpcPeeringConnectionDeletedWaiter</a></li>
+</ol>
 <h3 id="wait_30">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VpcPeeringConnectionDeletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -38975,9 +39223,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-93-2" name="__codelineno-93-2" href="#__codelineno-93-2"></a>
 <a id="__codelineno-93-3" name="__codelineno-93-3" href="#__codelineno-93-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VpcPeeringConnectionExistsWaiter</span>
 <a id="__codelineno-93-4" name="__codelineno-93-4" href="#__codelineno-93-4"></a>
-<a id="__codelineno-93-5" name="__codelineno-93-5" href="#__codelineno-93-5"></a><span class="k">def</span> <span class="nf">get_vpc_peering_connection_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VpcPeeringConnectionExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-93-6" name="__codelineno-93-6" href="#__codelineno-93-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_peering_connection_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-93-5" name="__codelineno-93-5" href="#__codelineno-93-5"></a>
+<a id="__codelineno-93-6" name="__codelineno-93-6" href="#__codelineno-93-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-93-7" name="__codelineno-93-7" href="#__codelineno-93-7"></a>
+<a id="__codelineno-93-8" name="__codelineno-93-8" href="#__codelineno-93-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-93-9" name="__codelineno-93-9" href="#__codelineno-93-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VpcPeeringConnectionExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpc_peering_connection_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-93-10" name="__codelineno-93-10" href="#__codelineno-93-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#vpcpeeringconnectionexistswaiter">VpcPeeringConnectionExistsWaiter</a></li>
+</ol>
 <h3 id="wait_31">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VpcPeeringConnectionExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-94-1" name="__codelineno-94-1" href="#__codelineno-94-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -39012,9 +39268,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-96-2" name="__codelineno-96-2" href="#__codelineno-96-2"></a>
 <a id="__codelineno-96-3" name="__codelineno-96-3" href="#__codelineno-96-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VpnConnectionAvailableWaiter</span>
 <a id="__codelineno-96-4" name="__codelineno-96-4" href="#__codelineno-96-4"></a>
-<a id="__codelineno-96-5" name="__codelineno-96-5" href="#__codelineno-96-5"></a><span class="k">def</span> <span class="nf">get_vpn_connection_available_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VpnConnectionAvailableWaiter</span><span class="p">:</span>
-<a id="__codelineno-96-6" name="__codelineno-96-6" href="#__codelineno-96-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpn_connection_available&quot;</span><span class="p">)</span>
+<a id="__codelineno-96-5" name="__codelineno-96-5" href="#__codelineno-96-5"></a>
+<a id="__codelineno-96-6" name="__codelineno-96-6" href="#__codelineno-96-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-96-7" name="__codelineno-96-7" href="#__codelineno-96-7"></a>
+<a id="__codelineno-96-8" name="__codelineno-96-8" href="#__codelineno-96-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-96-9" name="__codelineno-96-9" href="#__codelineno-96-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VpnConnectionAvailableWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpn_connection_available&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-96-10" name="__codelineno-96-10" href="#__codelineno-96-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#vpnconnectionavailablewaiter">VpnConnectionAvailableWaiter</a></li>
+</ol>
 <h3 id="wait_32">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VpnConnectionAvailableWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-97-1" name="__codelineno-97-1" href="#__codelineno-97-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -39047,9 +39311,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-99-2" name="__codelineno-99-2" href="#__codelineno-99-2"></a>
 <a id="__codelineno-99-3" name="__codelineno-99-3" href="#__codelineno-99-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.waiter</span> <span class="kn">import</span> <span class="n">VpnConnectionDeletedWaiter</span>
 <a id="__codelineno-99-4" name="__codelineno-99-4" href="#__codelineno-99-4"></a>
-<a id="__codelineno-99-5" name="__codelineno-99-5" href="#__codelineno-99-5"></a><span class="k">def</span> <span class="nf">get_vpn_connection_deleted_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">VpnConnectionDeletedWaiter</span><span class="p">:</span>
-<a id="__codelineno-99-6" name="__codelineno-99-6" href="#__codelineno-99-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpn_connection_deleted&quot;</span><span class="p">)</span>
+<a id="__codelineno-99-5" name="__codelineno-99-5" href="#__codelineno-99-5"></a>
+<a id="__codelineno-99-6" name="__codelineno-99-6" href="#__codelineno-99-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-99-7" name="__codelineno-99-7" href="#__codelineno-99-7"></a>
+<a id="__codelineno-99-8" name="__codelineno-99-8" href="#__codelineno-99-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-99-9" name="__codelineno-99-9" href="#__codelineno-99-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">VpnConnectionDeletedWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;vpn_connection_deleted&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-99-10" name="__codelineno-99-10" href="#__codelineno-99-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">EC2Client</a></li>
+<li>waiter: <a href="./#vpnconnectiondeletedwaiter">VpnConnectionDeletedWaiter</a></li>
+</ol>
 <h3 id="wait_33">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">VpnConnectionDeletedWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>

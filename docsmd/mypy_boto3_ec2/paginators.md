@@ -21,6 +21,23 @@ def get_describe_addresses_attribute_paginator() -> DescribeAddressesAttributePa
     return Session().client("ec2").get_paginator("describe_addresses_attribute")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeAddressesAttributePaginator = client.get_paginator("describe_addresses_attribute")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
+3. item: [:material-code-braces: DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ def get_describe_byoip_cidrs_paginator() -> DescribeByoipCidrsPaginator:
     return Session().client("ec2").get_paginator("describe_byoip_cidrs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeByoipCidrsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeByoipCidrsPaginator = client.get_paginator("describe_byoip_cidrs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeByoipCidrsPaginator](./paginators.md#describebyoipcidrspaginator)
+3. item: [:material-code-braces: DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef) 
+
 
 ### paginate
 
@@ -107,6 +141,23 @@ from mypy_boto3_ec2.paginator import DescribeCapacityReservationFleetsPaginator
 def get_describe_capacity_reservation_fleets_paginator() -> DescribeCapacityReservationFleetsPaginator:
     return Session().client("ec2").get_paginator("describe_capacity_reservation_fleets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeCapacityReservationFleetsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeCapacityReservationFleetsPaginator = client.get_paginator("describe_capacity_reservation_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeCapacityReservationFleetsPaginator](./paginators.md#describecapacityreservationfleetspaginator)
+3. item: [:material-code-braces: DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef) 
 
 
 ### paginate
@@ -153,6 +204,23 @@ def get_describe_capacity_reservations_paginator() -> DescribeCapacityReservatio
     return Session().client("ec2").get_paginator("describe_capacity_reservations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeCapacityReservationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeCapacityReservationsPaginator = client.get_paginator("describe_capacity_reservations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeCapacityReservationsPaginator](./paginators.md#describecapacityreservationspaginator)
+3. item: [:material-code-braces: DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef) 
+
 
 ### paginate
 
@@ -197,6 +265,23 @@ from mypy_boto3_ec2.paginator import DescribeCarrierGatewaysPaginator
 def get_describe_carrier_gateways_paginator() -> DescribeCarrierGatewaysPaginator:
     return Session().client("ec2").get_paginator("describe_carrier_gateways")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeCarrierGatewaysPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeCarrierGatewaysPaginator = client.get_paginator("describe_carrier_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeCarrierGatewaysPaginator](./paginators.md#describecarriergatewayspaginator)
+3. item: [:material-code-braces: DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef) 
 
 
 ### paginate
@@ -243,6 +328,23 @@ def get_describe_classic_link_instances_paginator() -> DescribeClassicLinkInstan
     return Session().client("ec2").get_paginator("describe_classic_link_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeClassicLinkInstancesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeClassicLinkInstancesPaginator = client.get_paginator("describe_classic_link_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeClassicLinkInstancesPaginator](./paginators.md#describeclassiclinkinstancespaginator)
+3. item: [:material-code-braces: DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef) 
+
 
 ### paginate
 
@@ -287,6 +389,23 @@ from mypy_boto3_ec2.paginator import DescribeClientVpnAuthorizationRulesPaginato
 def get_describe_client_vpn_authorization_rules_paginator() -> DescribeClientVpnAuthorizationRulesPaginator:
     return Session().client("ec2").get_paginator("describe_client_vpn_authorization_rules")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeClientVpnAuthorizationRulesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeClientVpnAuthorizationRulesPaginator = client.get_paginator("describe_client_vpn_authorization_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeClientVpnAuthorizationRulesPaginator](./paginators.md#describeclientvpnauthorizationrulespaginator)
+3. item: [:material-code-braces: DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef) 
 
 
 ### paginate
@@ -333,6 +452,23 @@ def get_describe_client_vpn_connections_paginator() -> DescribeClientVpnConnecti
     return Session().client("ec2").get_paginator("describe_client_vpn_connections")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeClientVpnConnectionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeClientVpnConnectionsPaginator = client.get_paginator("describe_client_vpn_connections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeClientVpnConnectionsPaginator](./paginators.md#describeclientvpnconnectionspaginator)
+3. item: [:material-code-braces: DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef) 
+
 
 ### paginate
 
@@ -377,6 +513,23 @@ from mypy_boto3_ec2.paginator import DescribeClientVpnEndpointsPaginator
 def get_describe_client_vpn_endpoints_paginator() -> DescribeClientVpnEndpointsPaginator:
     return Session().client("ec2").get_paginator("describe_client_vpn_endpoints")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeClientVpnEndpointsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeClientVpnEndpointsPaginator = client.get_paginator("describe_client_vpn_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeClientVpnEndpointsPaginator](./paginators.md#describeclientvpnendpointspaginator)
+3. item: [:material-code-braces: DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef) 
 
 
 ### paginate
@@ -423,6 +576,23 @@ def get_describe_client_vpn_routes_paginator() -> DescribeClientVpnRoutesPaginat
     return Session().client("ec2").get_paginator("describe_client_vpn_routes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeClientVpnRoutesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeClientVpnRoutesPaginator = client.get_paginator("describe_client_vpn_routes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeClientVpnRoutesPaginator](./paginators.md#describeclientvpnroutespaginator)
+3. item: [:material-code-braces: DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef) 
+
 
 ### paginate
 
@@ -467,6 +637,23 @@ from mypy_boto3_ec2.paginator import DescribeClientVpnTargetNetworksPaginator
 def get_describe_client_vpn_target_networks_paginator() -> DescribeClientVpnTargetNetworksPaginator:
     return Session().client("ec2").get_paginator("describe_client_vpn_target_networks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeClientVpnTargetNetworksPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeClientVpnTargetNetworksPaginator = client.get_paginator("describe_client_vpn_target_networks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeClientVpnTargetNetworksPaginator](./paginators.md#describeclientvpntargetnetworkspaginator)
+3. item: [:material-code-braces: DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef) 
 
 
 ### paginate
@@ -514,6 +701,23 @@ def get_describe_coip_pools_paginator() -> DescribeCoipPoolsPaginator:
     return Session().client("ec2").get_paginator("describe_coip_pools")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeCoipPoolsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeCoipPoolsPaginator = client.get_paginator("describe_coip_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeCoipPoolsPaginator](./paginators.md#describecoippoolspaginator)
+3. item: [:material-code-braces: DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef) 
+
 
 ### paginate
 
@@ -558,6 +762,23 @@ from mypy_boto3_ec2.paginator import DescribeDhcpOptionsPaginator
 def get_describe_dhcp_options_paginator() -> DescribeDhcpOptionsPaginator:
     return Session().client("ec2").get_paginator("describe_dhcp_options")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeDhcpOptionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeDhcpOptionsPaginator = client.get_paginator("describe_dhcp_options")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeDhcpOptionsPaginator](./paginators.md#describedhcpoptionspaginator)
+3. item: [:material-code-braces: DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef) 
 
 
 ### paginate
@@ -604,6 +825,23 @@ def get_describe_egress_only_internet_gateways_paginator() -> DescribeEgressOnly
     return Session().client("ec2").get_paginator("describe_egress_only_internet_gateways")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeEgressOnlyInternetGatewaysPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeEgressOnlyInternetGatewaysPaginator = client.get_paginator("describe_egress_only_internet_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeEgressOnlyInternetGatewaysPaginator](./paginators.md#describeegressonlyinternetgatewayspaginator)
+3. item: [:material-code-braces: DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef) 
+
 
 ### paginate
 
@@ -648,6 +886,23 @@ from mypy_boto3_ec2.paginator import DescribeExportImageTasksPaginator
 def get_describe_export_image_tasks_paginator() -> DescribeExportImageTasksPaginator:
     return Session().client("ec2").get_paginator("describe_export_image_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeExportImageTasksPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeExportImageTasksPaginator = client.get_paginator("describe_export_image_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeExportImageTasksPaginator](./paginators.md#describeexportimagetaskspaginator)
+3. item: [:material-code-braces: DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef) 
 
 
 ### paginate
@@ -694,6 +949,23 @@ def get_describe_fast_launch_images_paginator() -> DescribeFastLaunchImagesPagin
     return Session().client("ec2").get_paginator("describe_fast_launch_images")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeFastLaunchImagesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeFastLaunchImagesPaginator = client.get_paginator("describe_fast_launch_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeFastLaunchImagesPaginator](./paginators.md#describefastlaunchimagespaginator)
+3. item: [:material-code-braces: DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef) 
+
 
 ### paginate
 
@@ -739,6 +1011,23 @@ def get_describe_fast_snapshot_restores_paginator() -> DescribeFastSnapshotResto
     return Session().client("ec2").get_paginator("describe_fast_snapshot_restores")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeFastSnapshotRestoresPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeFastSnapshotRestoresPaginator = client.get_paginator("describe_fast_snapshot_restores")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeFastSnapshotRestoresPaginator](./paginators.md#describefastsnapshotrestorespaginator)
+3. item: [:material-code-braces: DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef) 
+
 
 ### paginate
 
@@ -782,6 +1071,23 @@ from mypy_boto3_ec2.paginator import DescribeFleetsPaginator
 def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
     return Session().client("ec2").get_paginator("describe_fleets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeFleetsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeFleetsPaginator = client.get_paginator("describe_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeFleetsPaginator](./paginators.md#describefleetspaginator)
+3. item: [:material-code-braces: DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef) 
 
 
 ### paginate
@@ -828,6 +1134,23 @@ def get_describe_flow_logs_paginator() -> DescribeFlowLogsPaginator:
     return Session().client("ec2").get_paginator("describe_flow_logs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeFlowLogsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeFlowLogsPaginator = client.get_paginator("describe_flow_logs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeFlowLogsPaginator](./paginators.md#describeflowlogspaginator)
+3. item: [:material-code-braces: DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef) 
+
 
 ### paginate
 
@@ -872,6 +1195,23 @@ from mypy_boto3_ec2.paginator import DescribeFpgaImagesPaginator
 def get_describe_fpga_images_paginator() -> DescribeFpgaImagesPaginator:
     return Session().client("ec2").get_paginator("describe_fpga_images")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeFpgaImagesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeFpgaImagesPaginator = client.get_paginator("describe_fpga_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeFpgaImagesPaginator](./paginators.md#describefpgaimagespaginator)
+3. item: [:material-code-braces: DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef) 
 
 
 ### paginate
@@ -919,6 +1259,23 @@ def get_describe_host_reservation_offerings_paginator() -> DescribeHostReservati
     return Session().client("ec2").get_paginator("describe_host_reservation_offerings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeHostReservationOfferingsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeHostReservationOfferingsPaginator = client.get_paginator("describe_host_reservation_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeHostReservationOfferingsPaginator](./paginators.md#describehostreservationofferingspaginator)
+3. item: [:material-code-braces: DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef) 
+
 
 ### paginate
 
@@ -965,6 +1322,23 @@ def get_describe_host_reservations_paginator() -> DescribeHostReservationsPagina
     return Session().client("ec2").get_paginator("describe_host_reservations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeHostReservationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeHostReservationsPaginator = client.get_paginator("describe_host_reservations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeHostReservationsPaginator](./paginators.md#describehostreservationspaginator)
+3. item: [:material-code-braces: DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef) 
+
 
 ### paginate
 
@@ -1008,6 +1382,23 @@ from mypy_boto3_ec2.paginator import DescribeHostsPaginator
 def get_describe_hosts_paginator() -> DescribeHostsPaginator:
     return Session().client("ec2").get_paginator("describe_hosts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeHostsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeHostsPaginator = client.get_paginator("describe_hosts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeHostsPaginator](./paginators.md#describehostspaginator)
+3. item: [:material-code-braces: DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef) 
 
 
 ### paginate
@@ -1053,6 +1444,23 @@ def get_describe_iam_instance_profile_associations_paginator() -> DescribeIamIns
     return Session().client("ec2").get_paginator("describe_iam_instance_profile_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIamInstanceProfileAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeIamInstanceProfileAssociationsPaginator = client.get_paginator("describe_iam_instance_profile_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeIamInstanceProfileAssociationsPaginator](./paginators.md#describeiaminstanceprofileassociationspaginator)
+3. item: [:material-code-braces: DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -1096,6 +1504,23 @@ from mypy_boto3_ec2.paginator import DescribeImportImageTasksPaginator
 def get_describe_import_image_tasks_paginator() -> DescribeImportImageTasksPaginator:
     return Session().client("ec2").get_paginator("describe_import_image_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeImportImageTasksPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeImportImageTasksPaginator = client.get_paginator("describe_import_image_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeImportImageTasksPaginator](./paginators.md#describeimportimagetaskspaginator)
+3. item: [:material-code-braces: DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef) 
 
 
 ### paginate
@@ -1142,6 +1567,23 @@ def get_describe_import_snapshot_tasks_paginator() -> DescribeImportSnapshotTask
     return Session().client("ec2").get_paginator("describe_import_snapshot_tasks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeImportSnapshotTasksPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeImportSnapshotTasksPaginator = client.get_paginator("describe_import_snapshot_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeImportSnapshotTasksPaginator](./paginators.md#describeimportsnapshottaskspaginator)
+3. item: [:material-code-braces: DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef) 
+
 
 ### paginate
 
@@ -1186,6 +1628,23 @@ from mypy_boto3_ec2.paginator import DescribeInstanceCreditSpecificationsPaginat
 def get_describe_instance_credit_specifications_paginator() -> DescribeInstanceCreditSpecificationsPaginator:
     return Session().client("ec2").get_paginator("describe_instance_credit_specifications")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeInstanceCreditSpecificationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeInstanceCreditSpecificationsPaginator = client.get_paginator("describe_instance_credit_specifications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeInstanceCreditSpecificationsPaginator](./paginators.md#describeinstancecreditspecificationspaginator)
+3. item: [:material-code-braces: DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef) 
 
 
 ### paginate
@@ -1232,6 +1691,23 @@ def get_describe_instance_event_windows_paginator() -> DescribeInstanceEventWind
     return Session().client("ec2").get_paginator("describe_instance_event_windows")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeInstanceEventWindowsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeInstanceEventWindowsPaginator = client.get_paginator("describe_instance_event_windows")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeInstanceEventWindowsPaginator](./paginators.md#describeinstanceeventwindowspaginator)
+3. item: [:material-code-braces: DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef) 
+
 
 ### paginate
 
@@ -1276,6 +1752,23 @@ from mypy_boto3_ec2.paginator import DescribeInstanceStatusPaginator
 def get_describe_instance_status_paginator() -> DescribeInstanceStatusPaginator:
     return Session().client("ec2").get_paginator("describe_instance_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeInstanceStatusPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeInstanceStatusPaginator = client.get_paginator("describe_instance_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeInstanceStatusPaginator](./paginators.md#describeinstancestatuspaginator)
+3. item: [:material-code-braces: DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef) 
 
 
 ### paginate
@@ -1323,6 +1816,23 @@ def get_describe_instance_type_offerings_paginator() -> DescribeInstanceTypeOffe
     return Session().client("ec2").get_paginator("describe_instance_type_offerings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeInstanceTypeOfferingsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeInstanceTypeOfferingsPaginator = client.get_paginator("describe_instance_type_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeInstanceTypeOfferingsPaginator](./paginators.md#describeinstancetypeofferingspaginator)
+3. item: [:material-code-braces: DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef) 
+
 
 ### paginate
 
@@ -1368,6 +1878,23 @@ from mypy_boto3_ec2.paginator import DescribeInstanceTypesPaginator
 def get_describe_instance_types_paginator() -> DescribeInstanceTypesPaginator:
     return Session().client("ec2").get_paginator("describe_instance_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeInstanceTypesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeInstanceTypesPaginator = client.get_paginator("describe_instance_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeInstanceTypesPaginator](./paginators.md#describeinstancetypespaginator)
+3. item: [:material-code-braces: DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef) 
 
 
 ### paginate
@@ -1415,6 +1942,23 @@ def get_describe_instances_paginator() -> DescribeInstancesPaginator:
     return Session().client("ec2").get_paginator("describe_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeInstancesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeInstancesPaginator = client.get_paginator("describe_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
+3. item: [:material-code-braces: DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef) 
+
 
 ### paginate
 
@@ -1459,6 +2003,23 @@ from mypy_boto3_ec2.paginator import DescribeInternetGatewaysPaginator
 def get_describe_internet_gateways_paginator() -> DescribeInternetGatewaysPaginator:
     return Session().client("ec2").get_paginator("describe_internet_gateways")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeInternetGatewaysPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeInternetGatewaysPaginator = client.get_paginator("describe_internet_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeInternetGatewaysPaginator](./paginators.md#describeinternetgatewayspaginator)
+3. item: [:material-code-braces: DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef) 
 
 
 ### paginate
@@ -1505,6 +2066,23 @@ def get_describe_ipam_pools_paginator() -> DescribeIpamPoolsPaginator:
     return Session().client("ec2").get_paginator("describe_ipam_pools")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpamPoolsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeIpamPoolsPaginator = client.get_paginator("describe_ipam_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeIpamPoolsPaginator](./paginators.md#describeipampoolspaginator)
+3. item: [:material-code-braces: DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef) 
+
 
 ### paginate
 
@@ -1549,6 +2127,23 @@ from mypy_boto3_ec2.paginator import DescribeIpamScopesPaginator
 def get_describe_ipam_scopes_paginator() -> DescribeIpamScopesPaginator:
     return Session().client("ec2").get_paginator("describe_ipam_scopes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpamScopesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeIpamScopesPaginator = client.get_paginator("describe_ipam_scopes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeIpamScopesPaginator](./paginators.md#describeipamscopespaginator)
+3. item: [:material-code-braces: DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef) 
 
 
 ### paginate
@@ -1595,6 +2190,23 @@ def get_describe_ipams_paginator() -> DescribeIpamsPaginator:
     return Session().client("ec2").get_paginator("describe_ipams")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpamsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeIpamsPaginator = client.get_paginator("describe_ipams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeIpamsPaginator](./paginators.md#describeipamspaginator)
+3. item: [:material-code-braces: DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef) 
+
 
 ### paginate
 
@@ -1640,6 +2252,23 @@ def get_describe_ipv6_pools_paginator() -> DescribeIpv6PoolsPaginator:
     return Session().client("ec2").get_paginator("describe_ipv6_pools")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpv6PoolsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeIpv6PoolsPaginator = client.get_paginator("describe_ipv6_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeIpv6PoolsPaginator](./paginators.md#describeipv6poolspaginator)
+3. item: [:material-code-braces: DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef) 
+
 
 ### paginate
 
@@ -1684,6 +2313,23 @@ from mypy_boto3_ec2.paginator import DescribeLaunchTemplateVersionsPaginator
 def get_describe_launch_template_versions_paginator() -> DescribeLaunchTemplateVersionsPaginator:
     return Session().client("ec2").get_paginator("describe_launch_template_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLaunchTemplateVersionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLaunchTemplateVersionsPaginator = client.get_paginator("describe_launch_template_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLaunchTemplateVersionsPaginator](./paginators.md#describelaunchtemplateversionspaginator)
+3. item: [:material-code-braces: DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef) 
 
 
 ### paginate
@@ -1734,6 +2380,23 @@ def get_describe_launch_templates_paginator() -> DescribeLaunchTemplatesPaginato
     return Session().client("ec2").get_paginator("describe_launch_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLaunchTemplatesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLaunchTemplatesPaginator = client.get_paginator("describe_launch_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLaunchTemplatesPaginator](./paginators.md#describelaunchtemplatespaginator)
+3. item: [:material-code-braces: DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef) 
+
 
 ### paginate
 
@@ -1780,6 +2443,23 @@ def get_describe_local_gateway_route_table_virtual_interface_group_associations_
     return Session().client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator = client.get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator](./paginators.md#describelocalgatewayroutetablevirtualinterfacegroupassociationspaginator)
+3. item: [:material-code-braces: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -1824,6 +2504,23 @@ from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVpcAssociatio
 def get_describe_local_gateway_route_table_vpc_associations_paginator() -> DescribeLocalGatewayRouteTableVpcAssociationsPaginator:
     return Session().client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVpcAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLocalGatewayRouteTableVpcAssociationsPaginator = client.get_paginator("describe_local_gateway_route_table_vpc_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLocalGatewayRouteTableVpcAssociationsPaginator](./paginators.md#describelocalgatewayroutetablevpcassociationspaginator)
+3. item: [:material-code-braces: DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef) 
 
 
 ### paginate
@@ -1870,6 +2567,23 @@ def get_describe_local_gateway_route_tables_paginator() -> DescribeLocalGatewayR
     return Session().client("ec2").get_paginator("describe_local_gateway_route_tables")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTablesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLocalGatewayRouteTablesPaginator = client.get_paginator("describe_local_gateway_route_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLocalGatewayRouteTablesPaginator](./paginators.md#describelocalgatewayroutetablespaginator)
+3. item: [:material-code-braces: DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef) 
+
 
 ### paginate
 
@@ -1914,6 +2628,23 @@ from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfaceGroupsP
 def get_describe_local_gateway_virtual_interface_groups_paginator() -> DescribeLocalGatewayVirtualInterfaceGroupsPaginator:
     return Session().client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfaceGroupsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLocalGatewayVirtualInterfaceGroupsPaginator = client.get_paginator("describe_local_gateway_virtual_interface_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLocalGatewayVirtualInterfaceGroupsPaginator](./paginators.md#describelocalgatewayvirtualinterfacegroupspaginator)
+3. item: [:material-code-braces: DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef) 
 
 
 ### paginate
@@ -1960,6 +2691,23 @@ def get_describe_local_gateway_virtual_interfaces_paginator() -> DescribeLocalGa
     return Session().client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfacesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLocalGatewayVirtualInterfacesPaginator = client.get_paginator("describe_local_gateway_virtual_interfaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLocalGatewayVirtualInterfacesPaginator](./paginators.md#describelocalgatewayvirtualinterfacespaginator)
+3. item: [:material-code-braces: DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef) 
+
 
 ### paginate
 
@@ -2004,6 +2752,23 @@ from mypy_boto3_ec2.paginator import DescribeLocalGatewaysPaginator
 def get_describe_local_gateways_paginator() -> DescribeLocalGatewaysPaginator:
     return Session().client("ec2").get_paginator("describe_local_gateways")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeLocalGatewaysPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeLocalGatewaysPaginator = client.get_paginator("describe_local_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeLocalGatewaysPaginator](./paginators.md#describelocalgatewayspaginator)
+3. item: [:material-code-braces: DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef) 
 
 
 ### paginate
@@ -2050,6 +2815,23 @@ def get_describe_managed_prefix_lists_paginator() -> DescribeManagedPrefixListsP
     return Session().client("ec2").get_paginator("describe_managed_prefix_lists")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeManagedPrefixListsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeManagedPrefixListsPaginator = client.get_paginator("describe_managed_prefix_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeManagedPrefixListsPaginator](./paginators.md#describemanagedprefixlistspaginator)
+3. item: [:material-code-braces: DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef) 
+
 
 ### paginate
 
@@ -2094,6 +2876,23 @@ from mypy_boto3_ec2.paginator import DescribeMovingAddressesPaginator
 def get_describe_moving_addresses_paginator() -> DescribeMovingAddressesPaginator:
     return Session().client("ec2").get_paginator("describe_moving_addresses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeMovingAddressesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeMovingAddressesPaginator = client.get_paginator("describe_moving_addresses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeMovingAddressesPaginator](./paginators.md#describemovingaddressespaginator)
+3. item: [:material-code-braces: DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef) 
 
 
 ### paginate
@@ -2140,6 +2939,23 @@ def get_describe_nat_gateways_paginator() -> DescribeNatGatewaysPaginator:
     return Session().client("ec2").get_paginator("describe_nat_gateways")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNatGatewaysPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNatGatewaysPaginator = client.get_paginator("describe_nat_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNatGatewaysPaginator](./paginators.md#describenatgatewayspaginator)
+3. item: [:material-code-braces: DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef) 
+
 
 ### paginate
 
@@ -2185,6 +3001,23 @@ def get_describe_network_acls_paginator() -> DescribeNetworkAclsPaginator:
     return Session().client("ec2").get_paginator("describe_network_acls")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNetworkAclsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNetworkAclsPaginator = client.get_paginator("describe_network_acls")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNetworkAclsPaginator](./paginators.md#describenetworkaclspaginator)
+3. item: [:material-code-braces: DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef) 
+
 
 ### paginate
 
@@ -2229,6 +3062,23 @@ from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopeAnalysesP
 def get_describe_network_insights_access_scope_analyses_paginator() -> DescribeNetworkInsightsAccessScopeAnalysesPaginator:
     return Session().client("ec2").get_paginator("describe_network_insights_access_scope_analyses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopeAnalysesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNetworkInsightsAccessScopeAnalysesPaginator = client.get_paginator("describe_network_insights_access_scope_analyses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNetworkInsightsAccessScopeAnalysesPaginator](./paginators.md#describenetworkinsightsaccessscopeanalysespaginator)
+3. item: [:material-code-braces: DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef) 
 
 
 ### paginate
@@ -2278,6 +3128,23 @@ def get_describe_network_insights_access_scopes_paginator() -> DescribeNetworkIn
     return Session().client("ec2").get_paginator("describe_network_insights_access_scopes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNetworkInsightsAccessScopesPaginator = client.get_paginator("describe_network_insights_access_scopes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNetworkInsightsAccessScopesPaginator](./paginators.md#describenetworkinsightsaccessscopespaginator)
+3. item: [:material-code-braces: DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef) 
+
 
 ### paginate
 
@@ -2322,6 +3189,23 @@ from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAnalysesPaginator
 def get_describe_network_insights_analyses_paginator() -> DescribeNetworkInsightsAnalysesPaginator:
     return Session().client("ec2").get_paginator("describe_network_insights_analyses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAnalysesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNetworkInsightsAnalysesPaginator = client.get_paginator("describe_network_insights_analyses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNetworkInsightsAnalysesPaginator](./paginators.md#describenetworkinsightsanalysespaginator)
+3. item: [:material-code-braces: DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef) 
 
 
 ### paginate
@@ -2371,6 +3255,23 @@ def get_describe_network_insights_paths_paginator() -> DescribeNetworkInsightsPa
     return Session().client("ec2").get_paginator("describe_network_insights_paths")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNetworkInsightsPathsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNetworkInsightsPathsPaginator = client.get_paginator("describe_network_insights_paths")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNetworkInsightsPathsPaginator](./paginators.md#describenetworkinsightspathspaginator)
+3. item: [:material-code-braces: DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef) 
+
 
 ### paginate
 
@@ -2416,6 +3317,23 @@ def get_describe_network_interface_permissions_paginator() -> DescribeNetworkInt
     return Session().client("ec2").get_paginator("describe_network_interface_permissions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNetworkInterfacePermissionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNetworkInterfacePermissionsPaginator = client.get_paginator("describe_network_interface_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNetworkInterfacePermissionsPaginator](./paginators.md#describenetworkinterfacepermissionspaginator)
+3. item: [:material-code-braces: DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef) 
+
 
 ### paginate
 
@@ -2459,6 +3377,23 @@ from mypy_boto3_ec2.paginator import DescribeNetworkInterfacesPaginator
 def get_describe_network_interfaces_paginator() -> DescribeNetworkInterfacesPaginator:
     return Session().client("ec2").get_paginator("describe_network_interfaces")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeNetworkInterfacesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeNetworkInterfacesPaginator = client.get_paginator("describe_network_interfaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeNetworkInterfacesPaginator](./paginators.md#describenetworkinterfacespaginator)
+3. item: [:material-code-braces: DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef) 
 
 
 ### paginate
@@ -2505,6 +3440,23 @@ def get_describe_prefix_lists_paginator() -> DescribePrefixListsPaginator:
     return Session().client("ec2").get_paginator("describe_prefix_lists")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribePrefixListsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribePrefixListsPaginator = client.get_paginator("describe_prefix_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribePrefixListsPaginator](./paginators.md#describeprefixlistspaginator)
+3. item: [:material-code-braces: DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef) 
+
 
 ### paginate
 
@@ -2550,6 +3502,23 @@ def get_describe_principal_id_format_paginator() -> DescribePrincipalIdFormatPag
     return Session().client("ec2").get_paginator("describe_principal_id_format")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribePrincipalIdFormatPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribePrincipalIdFormatPaginator = client.get_paginator("describe_principal_id_format")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribePrincipalIdFormatPaginator](./paginators.md#describeprincipalidformatpaginator)
+3. item: [:material-code-braces: DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef) 
+
 
 ### paginate
 
@@ -2592,6 +3561,23 @@ from mypy_boto3_ec2.paginator import DescribePublicIpv4PoolsPaginator
 def get_describe_public_ipv4_pools_paginator() -> DescribePublicIpv4PoolsPaginator:
     return Session().client("ec2").get_paginator("describe_public_ipv4_pools")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribePublicIpv4PoolsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribePublicIpv4PoolsPaginator = client.get_paginator("describe_public_ipv4_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribePublicIpv4PoolsPaginator](./paginators.md#describepublicipv4poolspaginator)
+3. item: [:material-code-braces: DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef) 
 
 
 ### paginate
@@ -2636,6 +3622,23 @@ from mypy_boto3_ec2.paginator import DescribeReplaceRootVolumeTasksPaginator
 def get_describe_replace_root_volume_tasks_paginator() -> DescribeReplaceRootVolumeTasksPaginator:
     return Session().client("ec2").get_paginator("describe_replace_root_volume_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeReplaceRootVolumeTasksPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeReplaceRootVolumeTasksPaginator = client.get_paginator("describe_replace_root_volume_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeReplaceRootVolumeTasksPaginator](./paginators.md#describereplacerootvolumetaskspaginator)
+3. item: [:material-code-braces: DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef) 
 
 
 ### paginate
@@ -2682,6 +3685,23 @@ def get_describe_reserved_instances_modifications_paginator() -> DescribeReserve
     return Session().client("ec2").get_paginator("describe_reserved_instances_modifications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeReservedInstancesModificationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeReservedInstancesModificationsPaginator = client.get_paginator("describe_reserved_instances_modifications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeReservedInstancesModificationsPaginator](./paginators.md#describereservedinstancesmodificationspaginator)
+3. item: [:material-code-braces: DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef) 
+
 
 ### paginate
 
@@ -2725,6 +3745,23 @@ from mypy_boto3_ec2.paginator import DescribeReservedInstancesOfferingsPaginator
 def get_describe_reserved_instances_offerings_paginator() -> DescribeReservedInstancesOfferingsPaginator:
     return Session().client("ec2").get_paginator("describe_reserved_instances_offerings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeReservedInstancesOfferingsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeReservedInstancesOfferingsPaginator = client.get_paginator("describe_reserved_instances_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeReservedInstancesOfferingsPaginator](./paginators.md#describereservedinstancesofferingspaginator)
+3. item: [:material-code-braces: DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef) 
 
 
 ### paginate
@@ -2786,6 +3823,23 @@ def get_describe_route_tables_paginator() -> DescribeRouteTablesPaginator:
     return Session().client("ec2").get_paginator("describe_route_tables")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeRouteTablesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeRouteTablesPaginator = client.get_paginator("describe_route_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeRouteTablesPaginator](./paginators.md#describeroutetablespaginator)
+3. item: [:material-code-braces: DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef) 
+
 
 ### paginate
 
@@ -2830,6 +3884,23 @@ from mypy_boto3_ec2.paginator import DescribeScheduledInstanceAvailabilityPagina
 def get_describe_scheduled_instance_availability_paginator() -> DescribeScheduledInstanceAvailabilityPaginator:
     return Session().client("ec2").get_paginator("describe_scheduled_instance_availability")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeScheduledInstanceAvailabilityPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeScheduledInstanceAvailabilityPaginator = client.get_paginator("describe_scheduled_instance_availability")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeScheduledInstanceAvailabilityPaginator](./paginators.md#describescheduledinstanceavailabilitypaginator)
+3. item: [:material-code-braces: DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef) 
 
 
 ### paginate
@@ -2882,6 +3953,23 @@ def get_describe_scheduled_instances_paginator() -> DescribeScheduledInstancesPa
     return Session().client("ec2").get_paginator("describe_scheduled_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeScheduledInstancesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeScheduledInstancesPaginator = client.get_paginator("describe_scheduled_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeScheduledInstancesPaginator](./paginators.md#describescheduledinstancespaginator)
+3. item: [:material-code-braces: DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef) 
+
 
 ### paginate
 
@@ -2929,6 +4017,23 @@ def get_describe_security_group_rules_paginator() -> DescribeSecurityGroupRulesP
     return Session().client("ec2").get_paginator("describe_security_group_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSecurityGroupRulesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSecurityGroupRulesPaginator = client.get_paginator("describe_security_group_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSecurityGroupRulesPaginator](./paginators.md#describesecuritygrouprulespaginator)
+3. item: [:material-code-braces: DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef) 
+
 
 ### paginate
 
@@ -2973,6 +4078,23 @@ from mypy_boto3_ec2.paginator import DescribeSecurityGroupsPaginator
 def get_describe_security_groups_paginator() -> DescribeSecurityGroupsPaginator:
     return Session().client("ec2").get_paginator("describe_security_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSecurityGroupsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSecurityGroupsPaginator = client.get_paginator("describe_security_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSecurityGroupsPaginator](./paginators.md#describesecuritygroupspaginator)
+3. item: [:material-code-braces: DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef) 
 
 
 ### paginate
@@ -3020,6 +4142,23 @@ def get_describe_snapshot_tier_status_paginator() -> DescribeSnapshotTierStatusP
     return Session().client("ec2").get_paginator("describe_snapshot_tier_status")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSnapshotTierStatusPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSnapshotTierStatusPaginator = client.get_paginator("describe_snapshot_tier_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSnapshotTierStatusPaginator](./paginators.md#describesnapshottierstatuspaginator)
+3. item: [:material-code-braces: DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef) 
+
 
 ### paginate
 
@@ -3063,6 +4202,23 @@ from mypy_boto3_ec2.paginator import DescribeSnapshotsPaginator
 def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return Session().client("ec2").get_paginator("describe_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSnapshotsPaginator = client.get_paginator("describe_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
+3. item: [:material-code-braces: DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef) 
 
 
 ### paginate
@@ -3111,6 +4267,23 @@ def get_describe_spot_fleet_instances_paginator() -> DescribeSpotFleetInstancesP
     return Session().client("ec2").get_paginator("describe_spot_fleet_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSpotFleetInstancesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSpotFleetInstancesPaginator = client.get_paginator("describe_spot_fleet_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSpotFleetInstancesPaginator](./paginators.md#describespotfleetinstancespaginator)
+3. item: [:material-code-braces: DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef) 
+
 
 ### paginate
 
@@ -3154,6 +4327,23 @@ def get_describe_spot_fleet_requests_paginator() -> DescribeSpotFleetRequestsPag
     return Session().client("ec2").get_paginator("describe_spot_fleet_requests")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSpotFleetRequestsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSpotFleetRequestsPaginator = client.get_paginator("describe_spot_fleet_requests")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSpotFleetRequestsPaginator](./paginators.md#describespotfleetrequestspaginator)
+3. item: [:material-code-braces: DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef) 
+
 
 ### paginate
 
@@ -3196,6 +4386,23 @@ from mypy_boto3_ec2.paginator import DescribeSpotInstanceRequestsPaginator
 def get_describe_spot_instance_requests_paginator() -> DescribeSpotInstanceRequestsPaginator:
     return Session().client("ec2").get_paginator("describe_spot_instance_requests")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSpotInstanceRequestsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSpotInstanceRequestsPaginator = client.get_paginator("describe_spot_instance_requests")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSpotInstanceRequestsPaginator](./paginators.md#describespotinstancerequestspaginator)
+3. item: [:material-code-braces: DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef) 
 
 
 ### paginate
@@ -3241,6 +4448,23 @@ from mypy_boto3_ec2.paginator import DescribeSpotPriceHistoryPaginator
 def get_describe_spot_price_history_paginator() -> DescribeSpotPriceHistoryPaginator:
     return Session().client("ec2").get_paginator("describe_spot_price_history")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSpotPriceHistoryPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSpotPriceHistoryPaginator = client.get_paginator("describe_spot_price_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSpotPriceHistoryPaginator](./paginators.md#describespotpricehistorypaginator)
+3. item: [:material-code-braces: DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef) 
 
 
 ### paginate
@@ -3292,6 +4516,23 @@ def get_describe_stale_security_groups_paginator() -> DescribeStaleSecurityGroup
     return Session().client("ec2").get_paginator("describe_stale_security_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeStaleSecurityGroupsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeStaleSecurityGroupsPaginator = client.get_paginator("describe_stale_security_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeStaleSecurityGroupsPaginator](./paginators.md#describestalesecuritygroupspaginator)
+3. item: [:material-code-braces: DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef) 
+
 
 ### paginate
 
@@ -3334,6 +4575,23 @@ from mypy_boto3_ec2.paginator import DescribeStoreImageTasksPaginator
 def get_describe_store_image_tasks_paginator() -> DescribeStoreImageTasksPaginator:
     return Session().client("ec2").get_paginator("describe_store_image_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeStoreImageTasksPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeStoreImageTasksPaginator = client.get_paginator("describe_store_image_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeStoreImageTasksPaginator](./paginators.md#describestoreimagetaskspaginator)
+3. item: [:material-code-braces: DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef) 
 
 
 ### paginate
@@ -3380,6 +4638,23 @@ def get_describe_subnets_paginator() -> DescribeSubnetsPaginator:
     return Session().client("ec2").get_paginator("describe_subnets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeSubnetsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeSubnetsPaginator = client.get_paginator("describe_subnets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeSubnetsPaginator](./paginators.md#describesubnetspaginator)
+3. item: [:material-code-braces: DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef) 
+
 
 ### paginate
 
@@ -3425,6 +4700,23 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return Session().client("ec2").get_paginator("describe_tags")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTagsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTagsPaginator = client.get_paginator("describe_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+3. item: [:material-code-braces: DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef) 
+
 
 ### paginate
 
@@ -3468,6 +4760,23 @@ from mypy_boto3_ec2.paginator import DescribeTrafficMirrorFiltersPaginator
 def get_describe_traffic_mirror_filters_paginator() -> DescribeTrafficMirrorFiltersPaginator:
     return Session().client("ec2").get_paginator("describe_traffic_mirror_filters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTrafficMirrorFiltersPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTrafficMirrorFiltersPaginator = client.get_paginator("describe_traffic_mirror_filters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTrafficMirrorFiltersPaginator](./paginators.md#describetrafficmirrorfilterspaginator)
+3. item: [:material-code-braces: DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef) 
 
 
 ### paginate
@@ -3514,6 +4823,23 @@ def get_describe_traffic_mirror_sessions_paginator() -> DescribeTrafficMirrorSes
     return Session().client("ec2").get_paginator("describe_traffic_mirror_sessions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTrafficMirrorSessionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTrafficMirrorSessionsPaginator = client.get_paginator("describe_traffic_mirror_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTrafficMirrorSessionsPaginator](./paginators.md#describetrafficmirrorsessionspaginator)
+3. item: [:material-code-braces: DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef) 
+
 
 ### paginate
 
@@ -3558,6 +4884,23 @@ from mypy_boto3_ec2.paginator import DescribeTrafficMirrorTargetsPaginator
 def get_describe_traffic_mirror_targets_paginator() -> DescribeTrafficMirrorTargetsPaginator:
     return Session().client("ec2").get_paginator("describe_traffic_mirror_targets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTrafficMirrorTargetsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTrafficMirrorTargetsPaginator = client.get_paginator("describe_traffic_mirror_targets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTrafficMirrorTargetsPaginator](./paginators.md#describetrafficmirrortargetspaginator)
+3. item: [:material-code-braces: DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef) 
 
 
 ### paginate
@@ -3604,6 +4947,23 @@ def get_describe_transit_gateway_attachments_paginator() -> DescribeTransitGatew
     return Session().client("ec2").get_paginator("describe_transit_gateway_attachments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayAttachmentsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayAttachmentsPaginator = client.get_paginator("describe_transit_gateway_attachments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayAttachmentsPaginator](./paginators.md#describetransitgatewayattachmentspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef) 
+
 
 ### paginate
 
@@ -3648,6 +5008,23 @@ from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectPeersPaginator
 def get_describe_transit_gateway_connect_peers_paginator() -> DescribeTransitGatewayConnectPeersPaginator:
     return Session().client("ec2").get_paginator("describe_transit_gateway_connect_peers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectPeersPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayConnectPeersPaginator = client.get_paginator("describe_transit_gateway_connect_peers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayConnectPeersPaginator](./paginators.md#describetransitgatewayconnectpeerspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef) 
 
 
 ### paginate
@@ -3694,6 +5071,23 @@ def get_describe_transit_gateway_connects_paginator() -> DescribeTransitGatewayC
     return Session().client("ec2").get_paginator("describe_transit_gateway_connects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayConnectsPaginator = client.get_paginator("describe_transit_gateway_connects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayConnectsPaginator](./paginators.md#describetransitgatewayconnectspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef) 
+
 
 ### paginate
 
@@ -3738,6 +5132,23 @@ from mypy_boto3_ec2.paginator import DescribeTransitGatewayMulticastDomainsPagin
 def get_describe_transit_gateway_multicast_domains_paginator() -> DescribeTransitGatewayMulticastDomainsPaginator:
     return Session().client("ec2").get_paginator("describe_transit_gateway_multicast_domains")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayMulticastDomainsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayMulticastDomainsPaginator = client.get_paginator("describe_transit_gateway_multicast_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayMulticastDomainsPaginator](./paginators.md#describetransitgatewaymulticastdomainspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef) 
 
 
 ### paginate
@@ -3784,6 +5195,23 @@ def get_describe_transit_gateway_peering_attachments_paginator() -> DescribeTran
     return Session().client("ec2").get_paginator("describe_transit_gateway_peering_attachments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayPeeringAttachmentsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayPeeringAttachmentsPaginator = client.get_paginator("describe_transit_gateway_peering_attachments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayPeeringAttachmentsPaginator](./paginators.md#describetransitgatewaypeeringattachmentspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef) 
+
 
 ### paginate
 
@@ -3828,6 +5256,23 @@ from mypy_boto3_ec2.paginator import DescribeTransitGatewayPolicyTablesPaginator
 def get_describe_transit_gateway_policy_tables_paginator() -> DescribeTransitGatewayPolicyTablesPaginator:
     return Session().client("ec2").get_paginator("describe_transit_gateway_policy_tables")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayPolicyTablesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayPolicyTablesPaginator = client.get_paginator("describe_transit_gateway_policy_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayPolicyTablesPaginator](./paginators.md#describetransitgatewaypolicytablespaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayPolicyTablesResultTypeDef](./type_defs.md#describetransitgatewaypolicytablesresulttypedef) 
 
 
 ### paginate
@@ -3874,6 +5319,23 @@ def get_describe_transit_gateway_route_table_announcements_paginator() -> Descri
     return Session().client("ec2").get_paginator("describe_transit_gateway_route_table_announcements")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayRouteTableAnnouncementsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayRouteTableAnnouncementsPaginator = client.get_paginator("describe_transit_gateway_route_table_announcements")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayRouteTableAnnouncementsPaginator](./paginators.md#describetransitgatewayroutetableannouncementspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayRouteTableAnnouncementsResultTypeDef](./type_defs.md#describetransitgatewayroutetableannouncementsresulttypedef) 
+
 
 ### paginate
 
@@ -3918,6 +5380,23 @@ from mypy_boto3_ec2.paginator import DescribeTransitGatewayRouteTablesPaginator
 def get_describe_transit_gateway_route_tables_paginator() -> DescribeTransitGatewayRouteTablesPaginator:
     return Session().client("ec2").get_paginator("describe_transit_gateway_route_tables")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayRouteTablesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayRouteTablesPaginator = client.get_paginator("describe_transit_gateway_route_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayRouteTablesPaginator](./paginators.md#describetransitgatewayroutetablespaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef) 
 
 
 ### paginate
@@ -3964,6 +5443,23 @@ def get_describe_transit_gateway_vpc_attachments_paginator() -> DescribeTransitG
     return Session().client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewayVpcAttachmentsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewayVpcAttachmentsPaginator = client.get_paginator("describe_transit_gateway_vpc_attachments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewayVpcAttachmentsPaginator](./paginators.md#describetransitgatewayvpcattachmentspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef) 
+
 
 ### paginate
 
@@ -4008,6 +5504,23 @@ from mypy_boto3_ec2.paginator import DescribeTransitGatewaysPaginator
 def get_describe_transit_gateways_paginator() -> DescribeTransitGatewaysPaginator:
     return Session().client("ec2").get_paginator("describe_transit_gateways")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTransitGatewaysPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTransitGatewaysPaginator = client.get_paginator("describe_transit_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTransitGatewaysPaginator](./paginators.md#describetransitgatewayspaginator)
+3. item: [:material-code-braces: DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef) 
 
 
 ### paginate
@@ -4054,6 +5567,23 @@ def get_describe_trunk_interface_associations_paginator() -> DescribeTrunkInterf
     return Session().client("ec2").get_paginator("describe_trunk_interface_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeTrunkInterfaceAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeTrunkInterfaceAssociationsPaginator = client.get_paginator("describe_trunk_interface_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeTrunkInterfaceAssociationsPaginator](./paginators.md#describetrunkinterfaceassociationspaginator)
+3. item: [:material-code-braces: DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -4098,6 +5628,23 @@ from mypy_boto3_ec2.paginator import DescribeVolumeStatusPaginator
 def get_describe_volume_status_paginator() -> DescribeVolumeStatusPaginator:
     return Session().client("ec2").get_paginator("describe_volume_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVolumeStatusPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVolumeStatusPaginator = client.get_paginator("describe_volume_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVolumeStatusPaginator](./paginators.md#describevolumestatuspaginator)
+3. item: [:material-code-braces: DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef) 
 
 
 ### paginate
@@ -4144,6 +5691,23 @@ def get_describe_volumes_paginator() -> DescribeVolumesPaginator:
     return Session().client("ec2").get_paginator("describe_volumes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVolumesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVolumesPaginator = client.get_paginator("describe_volumes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVolumesPaginator](./paginators.md#describevolumespaginator)
+3. item: [:material-code-braces: DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef) 
+
 
 ### paginate
 
@@ -4188,6 +5752,23 @@ from mypy_boto3_ec2.paginator import DescribeVolumesModificationsPaginator
 def get_describe_volumes_modifications_paginator() -> DescribeVolumesModificationsPaginator:
     return Session().client("ec2").get_paginator("describe_volumes_modifications")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVolumesModificationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVolumesModificationsPaginator = client.get_paginator("describe_volumes_modifications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVolumesModificationsPaginator](./paginators.md#describevolumesmodificationspaginator)
+3. item: [:material-code-braces: DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef) 
 
 
 ### paginate
@@ -4234,6 +5815,23 @@ def get_describe_vpc_classic_link_dns_support_paginator() -> DescribeVpcClassicL
     return Session().client("ec2").get_paginator("describe_vpc_classic_link_dns_support")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcClassicLinkDnsSupportPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcClassicLinkDnsSupportPaginator = client.get_paginator("describe_vpc_classic_link_dns_support")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcClassicLinkDnsSupportPaginator](./paginators.md#describevpcclassiclinkdnssupportpaginator)
+3. item: [:material-code-braces: DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef) 
+
 
 ### paginate
 
@@ -4275,6 +5873,23 @@ from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionNotificationsP
 def get_describe_vpc_endpoint_connection_notifications_paginator() -> DescribeVpcEndpointConnectionNotificationsPaginator:
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionNotificationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcEndpointConnectionNotificationsPaginator = client.get_paginator("describe_vpc_endpoint_connection_notifications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcEndpointConnectionNotificationsPaginator](./paginators.md#describevpcendpointconnectionnotificationspaginator)
+3. item: [:material-code-braces: DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef) 
 
 
 ### paginate
@@ -4321,6 +5936,23 @@ def get_describe_vpc_endpoint_connections_paginator() -> DescribeVpcEndpointConn
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_connections")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcEndpointConnectionsPaginator = client.get_paginator("describe_vpc_endpoint_connections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcEndpointConnectionsPaginator](./paginators.md#describevpcendpointconnectionspaginator)
+3. item: [:material-code-braces: DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef) 
+
 
 ### paginate
 
@@ -4364,6 +5996,23 @@ from mypy_boto3_ec2.paginator import DescribeVpcEndpointServiceConfigurationsPag
 def get_describe_vpc_endpoint_service_configurations_paginator() -> DescribeVpcEndpointServiceConfigurationsPaginator:
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointServiceConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcEndpointServiceConfigurationsPaginator = client.get_paginator("describe_vpc_endpoint_service_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcEndpointServiceConfigurationsPaginator](./paginators.md#describevpcendpointserviceconfigurationspaginator)
+3. item: [:material-code-braces: DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef) 
 
 
 ### paginate
@@ -4410,6 +6059,23 @@ def get_describe_vpc_endpoint_service_permissions_paginator() -> DescribeVpcEndp
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicePermissionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcEndpointServicePermissionsPaginator = client.get_paginator("describe_vpc_endpoint_service_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcEndpointServicePermissionsPaginator](./paginators.md#describevpcendpointservicepermissionspaginator)
+3. item: [:material-code-braces: DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef) 
+
 
 ### paginate
 
@@ -4454,6 +6120,23 @@ from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicesPaginator
 def get_describe_vpc_endpoint_services_paginator() -> DescribeVpcEndpointServicesPaginator:
     return Session().client("ec2").get_paginator("describe_vpc_endpoint_services")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcEndpointServicesPaginator = client.get_paginator("describe_vpc_endpoint_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcEndpointServicesPaginator](./paginators.md#describevpcendpointservicespaginator)
+3. item: [:material-code-braces: DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef) 
 
 
 ### paginate
@@ -4500,6 +6183,23 @@ def get_describe_vpc_endpoints_paginator() -> DescribeVpcEndpointsPaginator:
     return Session().client("ec2").get_paginator("describe_vpc_endpoints")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcEndpointsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcEndpointsPaginator = client.get_paginator("describe_vpc_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcEndpointsPaginator](./paginators.md#describevpcendpointspaginator)
+3. item: [:material-code-braces: DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef) 
+
 
 ### paginate
 
@@ -4544,6 +6244,23 @@ from mypy_boto3_ec2.paginator import DescribeVpcPeeringConnectionsPaginator
 def get_describe_vpc_peering_connections_paginator() -> DescribeVpcPeeringConnectionsPaginator:
     return Session().client("ec2").get_paginator("describe_vpc_peering_connections")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcPeeringConnectionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcPeeringConnectionsPaginator = client.get_paginator("describe_vpc_peering_connections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcPeeringConnectionsPaginator](./paginators.md#describevpcpeeringconnectionspaginator)
+3. item: [:material-code-braces: DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef) 
 
 
 ### paginate
@@ -4590,6 +6307,23 @@ def get_describe_vpcs_paginator() -> DescribeVpcsPaginator:
     return Session().client("ec2").get_paginator("describe_vpcs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVpcsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVpcsPaginator = client.get_paginator("describe_vpcs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVpcsPaginator](./paginators.md#describevpcspaginator)
+3. item: [:material-code-braces: DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef) 
+
 
 ### paginate
 
@@ -4635,6 +6369,23 @@ def get_get_associated_ipv6_pool_cidrs_paginator() -> GetAssociatedIpv6PoolCidrs
     return Session().client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetAssociatedIpv6PoolCidrsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetAssociatedIpv6PoolCidrsPaginator = client.get_paginator("get_associated_ipv6_pool_cidrs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetAssociatedIpv6PoolCidrsPaginator](./paginators.md#getassociatedipv6poolcidrspaginator)
+3. item: [:material-code-braces: GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef) 
+
 
 ### paginate
 
@@ -4678,6 +6429,23 @@ def get_get_groups_for_capacity_reservation_paginator() -> GetGroupsForCapacityR
     return Session().client("ec2").get_paginator("get_groups_for_capacity_reservation")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetGroupsForCapacityReservationPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetGroupsForCapacityReservationPaginator = client.get_paginator("get_groups_for_capacity_reservation")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetGroupsForCapacityReservationPaginator](./paginators.md#getgroupsforcapacityreservationpaginator)
+3. item: [:material-code-braces: GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef) 
+
 
 ### paginate
 
@@ -4720,6 +6488,23 @@ from mypy_boto3_ec2.paginator import GetInstanceTypesFromInstanceRequirementsPag
 def get_get_instance_types_from_instance_requirements_paginator() -> GetInstanceTypesFromInstanceRequirementsPaginator:
     return Session().client("ec2").get_paginator("get_instance_types_from_instance_requirements")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetInstanceTypesFromInstanceRequirementsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetInstanceTypesFromInstanceRequirementsPaginator = client.get_paginator("get_instance_types_from_instance_requirements")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetInstanceTypesFromInstanceRequirementsPaginator](./paginators.md#getinstancetypesfrominstancerequirementspaginator)
+3. item: [:material-code-braces: GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef) 
 
 
 ### paginate
@@ -4771,6 +6556,23 @@ def get_get_ipam_address_history_paginator() -> GetIpamAddressHistoryPaginator:
     return Session().client("ec2").get_paginator("get_ipam_address_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamAddressHistoryPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetIpamAddressHistoryPaginator = client.get_paginator("get_ipam_address_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetIpamAddressHistoryPaginator](./paginators.md#getipamaddresshistorypaginator)
+3. item: [:material-code-braces: GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef) 
+
 
 ### paginate
 
@@ -4819,6 +6621,23 @@ def get_get_ipam_pool_allocations_paginator() -> GetIpamPoolAllocationsPaginator
     return Session().client("ec2").get_paginator("get_ipam_pool_allocations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamPoolAllocationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetIpamPoolAllocationsPaginator = client.get_paginator("get_ipam_pool_allocations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetIpamPoolAllocationsPaginator](./paginators.md#getipampoolallocationspaginator)
+3. item: [:material-code-braces: GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef) 
+
 
 ### paginate
 
@@ -4865,6 +6684,23 @@ def get_get_ipam_pool_cidrs_paginator() -> GetIpamPoolCidrsPaginator:
     return Session().client("ec2").get_paginator("get_ipam_pool_cidrs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamPoolCidrsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetIpamPoolCidrsPaginator = client.get_paginator("get_ipam_pool_cidrs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetIpamPoolCidrsPaginator](./paginators.md#getipampoolcidrspaginator)
+3. item: [:material-code-braces: GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef) 
+
 
 ### paginate
 
@@ -4909,6 +6745,23 @@ from mypy_boto3_ec2.paginator import GetIpamResourceCidrsPaginator
 def get_get_ipam_resource_cidrs_paginator() -> GetIpamResourceCidrsPaginator:
     return Session().client("ec2").get_paginator("get_ipam_resource_cidrs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamResourceCidrsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetIpamResourceCidrsPaginator = client.get_paginator("get_ipam_resource_cidrs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetIpamResourceCidrsPaginator](./paginators.md#getipamresourcecidrspaginator)
+3. item: [:material-code-braces: GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef) 
 
 
 ### paginate
@@ -4962,6 +6815,23 @@ def get_get_managed_prefix_list_associations_paginator() -> GetManagedPrefixList
     return Session().client("ec2").get_paginator("get_managed_prefix_list_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetManagedPrefixListAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetManagedPrefixListAssociationsPaginator = client.get_paginator("get_managed_prefix_list_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetManagedPrefixListAssociationsPaginator](./paginators.md#getmanagedprefixlistassociationspaginator)
+3. item: [:material-code-braces: GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -5004,6 +6874,23 @@ from mypy_boto3_ec2.paginator import GetManagedPrefixListEntriesPaginator
 def get_get_managed_prefix_list_entries_paginator() -> GetManagedPrefixListEntriesPaginator:
     return Session().client("ec2").get_paginator("get_managed_prefix_list_entries")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetManagedPrefixListEntriesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetManagedPrefixListEntriesPaginator = client.get_paginator("get_managed_prefix_list_entries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetManagedPrefixListEntriesPaginator](./paginators.md#getmanagedprefixlistentriespaginator)
+3. item: [:material-code-braces: GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef) 
 
 
 ### paginate
@@ -5048,6 +6935,23 @@ from mypy_boto3_ec2.paginator import GetSpotPlacementScoresPaginator
 def get_get_spot_placement_scores_paginator() -> GetSpotPlacementScoresPaginator:
     return Session().client("ec2").get_paginator("get_spot_placement_scores")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetSpotPlacementScoresPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetSpotPlacementScoresPaginator = client.get_paginator("get_spot_placement_scores")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetSpotPlacementScoresPaginator](./paginators.md#getspotplacementscorespaginator)
+3. item: [:material-code-braces: GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef) 
 
 
 ### paginate
@@ -5099,6 +7003,23 @@ def get_get_transit_gateway_attachment_propagations_paginator() -> GetTransitGat
     return Session().client("ec2").get_paginator("get_transit_gateway_attachment_propagations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetTransitGatewayAttachmentPropagationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetTransitGatewayAttachmentPropagationsPaginator = client.get_paginator("get_transit_gateway_attachment_propagations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetTransitGatewayAttachmentPropagationsPaginator](./paginators.md#gettransitgatewayattachmentpropagationspaginator)
+3. item: [:material-code-braces: GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef) 
+
 
 ### paginate
 
@@ -5143,6 +7064,23 @@ from mypy_boto3_ec2.paginator import GetTransitGatewayMulticastDomainAssociation
 def get_get_transit_gateway_multicast_domain_associations_paginator() -> GetTransitGatewayMulticastDomainAssociationsPaginator:
     return Session().client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetTransitGatewayMulticastDomainAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetTransitGatewayMulticastDomainAssociationsPaginator = client.get_paginator("get_transit_gateway_multicast_domain_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetTransitGatewayMulticastDomainAssociationsPaginator](./paginators.md#gettransitgatewaymulticastdomainassociationspaginator)
+3. item: [:material-code-braces: GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef) 
 
 
 ### paginate
@@ -5189,6 +7127,23 @@ def get_get_transit_gateway_policy_table_associations_paginator() -> GetTransitG
     return Session().client("ec2").get_paginator("get_transit_gateway_policy_table_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetTransitGatewayPolicyTableAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetTransitGatewayPolicyTableAssociationsPaginator = client.get_paginator("get_transit_gateway_policy_table_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetTransitGatewayPolicyTableAssociationsPaginator](./paginators.md#gettransitgatewaypolicytableassociationspaginator)
+3. item: [:material-code-braces: GetTransitGatewayPolicyTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewaypolicytableassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -5233,6 +7188,23 @@ from mypy_boto3_ec2.paginator import GetTransitGatewayPrefixListReferencesPagina
 def get_get_transit_gateway_prefix_list_references_paginator() -> GetTransitGatewayPrefixListReferencesPaginator:
     return Session().client("ec2").get_paginator("get_transit_gateway_prefix_list_references")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetTransitGatewayPrefixListReferencesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetTransitGatewayPrefixListReferencesPaginator = client.get_paginator("get_transit_gateway_prefix_list_references")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetTransitGatewayPrefixListReferencesPaginator](./paginators.md#gettransitgatewayprefixlistreferencespaginator)
+3. item: [:material-code-braces: GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef) 
 
 
 ### paginate
@@ -5279,6 +7251,23 @@ def get_get_transit_gateway_route_table_associations_paginator() -> GetTransitGa
     return Session().client("ec2").get_paginator("get_transit_gateway_route_table_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTableAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetTransitGatewayRouteTableAssociationsPaginator = client.get_paginator("get_transit_gateway_route_table_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetTransitGatewayRouteTableAssociationsPaginator](./paginators.md#gettransitgatewayroutetableassociationspaginator)
+3. item: [:material-code-braces: GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -5323,6 +7312,23 @@ from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTablePropagationsPagi
 def get_get_transit_gateway_route_table_propagations_paginator() -> GetTransitGatewayRouteTablePropagationsPaginator:
     return Session().client("ec2").get_paginator("get_transit_gateway_route_table_propagations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTablePropagationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetTransitGatewayRouteTablePropagationsPaginator = client.get_paginator("get_transit_gateway_route_table_propagations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetTransitGatewayRouteTablePropagationsPaginator](./paginators.md#gettransitgatewayroutetablepropagationspaginator)
+3. item: [:material-code-braces: GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef) 
 
 
 ### paginate
@@ -5369,6 +7375,23 @@ def get_get_vpn_connection_device_types_paginator() -> GetVpnConnectionDeviceTyp
     return Session().client("ec2").get_paginator("get_vpn_connection_device_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetVpnConnectionDeviceTypesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetVpnConnectionDeviceTypesPaginator = client.get_paginator("get_vpn_connection_device_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetVpnConnectionDeviceTypesPaginator](./paginators.md#getvpnconnectiondevicetypespaginator)
+3. item: [:material-code-braces: GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef) 
+
 
 ### paginate
 
@@ -5410,6 +7433,23 @@ from mypy_boto3_ec2.paginator import ListImagesInRecycleBinPaginator
 def get_list_images_in_recycle_bin_paginator() -> ListImagesInRecycleBinPaginator:
     return Session().client("ec2").get_paginator("list_images_in_recycle_bin")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import ListImagesInRecycleBinPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: ListImagesInRecycleBinPaginator = client.get_paginator("list_images_in_recycle_bin")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [ListImagesInRecycleBinPaginator](./paginators.md#listimagesinrecyclebinpaginator)
+3. item: [:material-code-braces: ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef) 
 
 
 ### paginate
@@ -5454,6 +7494,23 @@ def get_list_snapshots_in_recycle_bin_paginator() -> ListSnapshotsInRecycleBinPa
     return Session().client("ec2").get_paginator("list_snapshots_in_recycle_bin")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import ListSnapshotsInRecycleBinPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: ListSnapshotsInRecycleBinPaginator = client.get_paginator("list_snapshots_in_recycle_bin")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [ListSnapshotsInRecycleBinPaginator](./paginators.md#listsnapshotsinrecyclebinpaginator)
+3. item: [:material-code-braces: ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef) 
+
 
 ### paginate
 
@@ -5496,6 +7553,23 @@ from mypy_boto3_ec2.paginator import SearchLocalGatewayRoutesPaginator
 def get_search_local_gateway_routes_paginator() -> SearchLocalGatewayRoutesPaginator:
     return Session().client("ec2").get_paginator("search_local_gateway_routes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import SearchLocalGatewayRoutesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: SearchLocalGatewayRoutesPaginator = client.get_paginator("search_local_gateway_routes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
+3. item: [:material-code-braces: SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef) 
 
 
 ### paginate
@@ -5541,6 +7615,23 @@ from mypy_boto3_ec2.paginator import SearchTransitGatewayMulticastGroupsPaginato
 def get_search_transit_gateway_multicast_groups_paginator() -> SearchTransitGatewayMulticastGroupsPaginator:
     return Session().client("ec2").get_paginator("search_transit_gateway_multicast_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import SearchTransitGatewayMulticastGroupsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: SearchTransitGatewayMulticastGroupsPaginator = client.get_paginator("search_transit_gateway_multicast_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [SearchTransitGatewayMulticastGroupsPaginator](./paginators.md#searchtransitgatewaymulticastgroupspaginator)
+3. item: [:material-code-braces: SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef) 
 
 
 ### paginate

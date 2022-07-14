@@ -21,6 +21,23 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return Session().client("backup-gateway").get_paginator("list_gateways")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup_gateway.paginator import ListGatewaysPaginator
+
+session = Session()
+
+client = Session().client("backup-gateway")  # (1)
+paginator: ListGatewaysPaginator = client.get_paginator("list_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupGatewayClient](./client.md)
+2. paginator: [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
+3. item: [:material-code-braces: ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ def get_list_hypervisors_paginator() -> ListHypervisorsPaginator:
     return Session().client("backup-gateway").get_paginator("list_hypervisors")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup_gateway.paginator import ListHypervisorsPaginator
+
+session = Session()
+
+client = Session().client("backup-gateway")  # (1)
+paginator: ListHypervisorsPaginator = client.get_paginator("list_hypervisors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupGatewayClient](./client.md)
+2. paginator: [ListHypervisorsPaginator](./paginators.md#listhypervisorspaginator)
+3. item: [:material-code-braces: ListHypervisorsOutputTypeDef](./type_defs.md#listhypervisorsoutputtypedef) 
+
 
 ### paginate
 
@@ -102,6 +136,23 @@ from mypy_boto3_backup_gateway.paginator import ListVirtualMachinesPaginator
 def get_list_virtual_machines_paginator() -> ListVirtualMachinesPaginator:
     return Session().client("backup-gateway").get_paginator("list_virtual_machines")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup_gateway.paginator import ListVirtualMachinesPaginator
+
+session = Session()
+
+client = Session().client("backup-gateway")  # (1)
+paginator: ListVirtualMachinesPaginator = client.get_paginator("list_virtual_machines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupGatewayClient](./client.md)
+2. paginator: [ListVirtualMachinesPaginator](./paginators.md#listvirtualmachinespaginator)
+3. item: [:material-code-braces: ListVirtualMachinesOutputTypeDef](./type_defs.md#listvirtualmachinesoutputtypedef) 
 
 
 ### paginate

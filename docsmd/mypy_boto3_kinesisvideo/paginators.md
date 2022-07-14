@@ -21,6 +21,23 @@ def get_list_signaling_channels_paginator() -> ListSignalingChannelsPaginator:
     return Session().client("kinesisvideo").get_paginator("list_signaling_channels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesisvideo.paginator import ListSignalingChannelsPaginator
+
+session = Session()
+
+client = Session().client("kinesisvideo")  # (1)
+paginator: ListSignalingChannelsPaginator = client.get_paginator("list_signaling_channels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisVideoClient](./client.md)
+2. paginator: [ListSignalingChannelsPaginator](./paginators.md#listsignalingchannelspaginator)
+3. item: [:material-code-braces: ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_kinesisvideo.paginator import ListStreamsPaginator
 def get_list_streams_paginator() -> ListStreamsPaginator:
     return Session().client("kinesisvideo").get_paginator("list_streams")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesisvideo.paginator import ListStreamsPaginator
+
+session = Session()
+
+client = Session().client("kinesisvideo")  # (1)
+paginator: ListStreamsPaginator = client.get_paginator("list_streams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisVideoClient](./client.md)
+2. paginator: [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+3. item: [:material-code-braces: ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef) 
 
 
 ### paginate

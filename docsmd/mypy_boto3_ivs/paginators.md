@@ -21,6 +21,23 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return Session().client("ivs").get_paginator("list_channels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ivs.paginator import ListChannelsPaginator
+
+session = Session()
+
+client = Session().client("ivs")  # (1)
+paginator: ListChannelsPaginator = client.get_paginator("list_channels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IVSClient](./client.md)
+2. paginator: [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+3. item: [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_playback_key_pairs_paginator() -> ListPlaybackKeyPairsPaginator:
     return Session().client("ivs").get_paginator("list_playback_key_pairs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ivs.paginator import ListPlaybackKeyPairsPaginator
+
+session = Session()
+
+client = Session().client("ivs")  # (1)
+paginator: ListPlaybackKeyPairsPaginator = client.get_paginator("list_playback_key_pairs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IVSClient](./client.md)
+2. paginator: [ListPlaybackKeyPairsPaginator](./paginators.md#listplaybackkeypairspaginator)
+3. item: [:material-code-braces: ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_ivs.paginator import ListRecordingConfigurationsPaginator
 def get_list_recording_configurations_paginator() -> ListRecordingConfigurationsPaginator:
     return Session().client("ivs").get_paginator("list_recording_configurations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ivs.paginator import ListRecordingConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("ivs")  # (1)
+paginator: ListRecordingConfigurationsPaginator = client.get_paginator("list_recording_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IVSClient](./client.md)
+2. paginator: [ListRecordingConfigurationsPaginator](./paginators.md#listrecordingconfigurationspaginator)
+3. item: [:material-code-braces: ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ def get_list_stream_keys_paginator() -> ListStreamKeysPaginator:
     return Session().client("ivs").get_paginator("list_stream_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ivs.paginator import ListStreamKeysPaginator
+
+session = Session()
+
+client = Session().client("ivs")  # (1)
+paginator: ListStreamKeysPaginator = client.get_paginator("list_stream_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IVSClient](./client.md)
+2. paginator: [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
+3. item: [:material-code-braces: ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef) 
+
 
 ### paginate
 
@@ -187,6 +255,23 @@ from mypy_boto3_ivs.paginator import ListStreamsPaginator
 def get_list_streams_paginator() -> ListStreamsPaginator:
     return Session().client("ivs").get_paginator("list_streams")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ivs.paginator import ListStreamsPaginator
+
+session = Session()
+
+client = Session().client("ivs")  # (1)
+paginator: ListStreamsPaginator = client.get_paginator("list_streams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IVSClient](./client.md)
+2. paginator: [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+3. item: [:material-code-braces: ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef) 
 
 
 ### paginate

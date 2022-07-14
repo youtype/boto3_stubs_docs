@@ -21,6 +21,23 @@ def get_list_backups_paginator() -> ListBackupsPaginator:
     return Session().client("dynamodb").get_paginator("list_backups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.paginator import ListBackupsPaginator
+
+session = Session()
+
+client = Session().client("dynamodb")  # (1)
+paginator: ListBackupsPaginator = client.get_paginator("list_backups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DynamoDBClient](./client.md)
+2. paginator: [ListBackupsPaginator](./paginators.md#listbackupspaginator)
+3. item: [:material-code-braces: ListBackupsOutputTableTypeDef](./type_defs.md#listbackupsoutputtabletypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return Session().client("dynamodb").get_paginator("list_tables")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.paginator import ListTablesPaginator
+
+session = Session()
+
+client = Session().client("dynamodb")  # (1)
+paginator: ListTablesPaginator = client.get_paginator("list_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DynamoDBClient](./client.md)
+2. paginator: [ListTablesPaginator](./paginators.md#listtablespaginator)
+3. item: [:material-code-braces: ListTablesOutputTableTypeDef](./type_defs.md#listtablesoutputtabletypedef) 
+
 
 ### paginate
 
@@ -107,6 +141,23 @@ from mypy_boto3_dynamodb.paginator import ListTagsOfResourcePaginator
 def get_list_tags_of_resource_paginator() -> ListTagsOfResourcePaginator:
     return Session().client("dynamodb").get_paginator("list_tags_of_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.paginator import ListTagsOfResourcePaginator
+
+session = Session()
+
+client = Session().client("dynamodb")  # (1)
+paginator: ListTagsOfResourcePaginator = client.get_paginator("list_tags_of_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DynamoDBClient](./client.md)
+2. paginator: [ListTagsOfResourcePaginator](./paginators.md#listtagsofresourcepaginator)
+3. item: [:material-code-braces: ListTagsOfResourceOutputTableTypeDef](./type_defs.md#listtagsofresourceoutputtabletypedef) 
 
 
 ### paginate
@@ -149,6 +200,23 @@ from mypy_boto3_dynamodb.paginator import QueryPaginator
 def get_query_paginator() -> QueryPaginator:
     return Session().client("dynamodb").get_paginator("query")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.paginator import QueryPaginator
+
+session = Session()
+
+client = Session().client("dynamodb")  # (1)
+paginator: QueryPaginator = client.get_paginator("query")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DynamoDBClient](./client.md)
+2. paginator: [QueryPaginator](./paginators.md#querypaginator)
+3. item: [:material-code-braces: QueryOutputTableTypeDef](./type_defs.md#queryoutputtabletypedef) 
 
 
 ### paginate
@@ -210,6 +278,23 @@ from mypy_boto3_dynamodb.paginator import ScanPaginator
 def get_scan_paginator() -> ScanPaginator:
     return Session().client("dynamodb").get_paginator("scan")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.paginator import ScanPaginator
+
+session = Session()
+
+client = Session().client("dynamodb")  # (1)
+paginator: ScanPaginator = client.get_paginator("scan")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DynamoDBClient](./client.md)
+2. paginator: [ScanPaginator](./paginators.md#scanpaginator)
+3. item: [:material-code-braces: ScanOutputTableTypeDef](./type_defs.md#scanoutputtabletypedef) 
 
 
 ### paginate

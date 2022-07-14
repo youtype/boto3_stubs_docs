@@ -21,6 +21,23 @@ def get_get_metric_data_paginator() -> GetMetricDataPaginator:
     return Session().client("connect").get_paginator("get_metric_data")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import GetMetricDataPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: GetMetricDataPaginator = client.get_paginator("get_metric_data")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
+3. item: [:material-code-braces: GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef) 
+
 
 ### paginate
 
@@ -75,6 +92,23 @@ def get_list_agent_statuses_paginator() -> ListAgentStatusesPaginator:
     return Session().client("connect").get_paginator("list_agent_statuses")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListAgentStatusesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListAgentStatusesPaginator = client.get_paginator("list_agent_statuses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListAgentStatusesPaginator](./paginators.md#listagentstatusespaginator)
+3. item: [:material-code-braces: ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef) 
+
 
 ### paginate
 
@@ -119,6 +153,23 @@ def get_list_approved_origins_paginator() -> ListApprovedOriginsPaginator:
     return Session().client("connect").get_paginator("list_approved_origins")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListApprovedOriginsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListApprovedOriginsPaginator = client.get_paginator("list_approved_origins")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
+3. item: [:material-code-braces: ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef) 
+
 
 ### paginate
 
@@ -160,6 +211,23 @@ from mypy_boto3_connect.paginator import ListBotsPaginator
 def get_list_bots_paginator() -> ListBotsPaginator:
     return Session().client("connect").get_paginator("list_bots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListBotsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListBotsPaginator = client.get_paginator("list_bots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListBotsPaginator](./paginators.md#listbotspaginator)
+3. item: [:material-code-braces: ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef) 
 
 
 ### paginate
@@ -206,6 +274,23 @@ def get_list_contact_flow_modules_paginator() -> ListContactFlowModulesPaginator
     return Session().client("connect").get_paginator("list_contact_flow_modules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListContactFlowModulesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListContactFlowModulesPaginator = client.get_paginator("list_contact_flow_modules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListContactFlowModulesPaginator](./paginators.md#listcontactflowmodulespaginator)
+3. item: [:material-code-braces: ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef) 
+
 
 ### paginate
 
@@ -250,6 +335,23 @@ def get_list_contact_flows_paginator() -> ListContactFlowsPaginator:
     return Session().client("connect").get_paginator("list_contact_flows")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListContactFlowsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListContactFlowsPaginator = client.get_paginator("list_contact_flows")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
+3. item: [:material-code-braces: ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef) 
+
 
 ### paginate
 
@@ -293,6 +395,23 @@ from mypy_boto3_connect.paginator import ListContactReferencesPaginator
 def get_list_contact_references_paginator() -> ListContactReferencesPaginator:
     return Session().client("connect").get_paginator("list_contact_references")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListContactReferencesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListContactReferencesPaginator = client.get_paginator("list_contact_references")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListContactReferencesPaginator](./paginators.md#listcontactreferencespaginator)
+3. item: [:material-code-braces: ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef) 
 
 
 ### paginate
@@ -341,6 +460,23 @@ def get_list_default_vocabularies_paginator() -> ListDefaultVocabulariesPaginato
     return Session().client("connect").get_paginator("list_default_vocabularies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListDefaultVocabulariesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListDefaultVocabulariesPaginator = client.get_paginator("list_default_vocabularies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListDefaultVocabulariesPaginator](./paginators.md#listdefaultvocabulariespaginator)
+3. item: [:material-code-braces: ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef) 
+
 
 ### paginate
 
@@ -385,6 +521,23 @@ def get_list_hours_of_operations_paginator() -> ListHoursOfOperationsPaginator:
     return Session().client("connect").get_paginator("list_hours_of_operations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListHoursOfOperationsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListHoursOfOperationsPaginator = client.get_paginator("list_hours_of_operations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListHoursOfOperationsPaginator](./paginators.md#listhoursofoperationspaginator)
+3. item: [:material-code-braces: ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef) 
+
 
 ### paginate
 
@@ -427,6 +580,23 @@ def get_list_instance_attributes_paginator() -> ListInstanceAttributesPaginator:
     return Session().client("connect").get_paginator("list_instance_attributes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListInstanceAttributesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListInstanceAttributesPaginator = client.get_paginator("list_instance_attributes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListInstanceAttributesPaginator](./paginators.md#listinstanceattributespaginator)
+3. item: [:material-code-braces: ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef) 
+
 
 ### paginate
 
@@ -468,6 +638,23 @@ from mypy_boto3_connect.paginator import ListInstanceStorageConfigsPaginator
 def get_list_instance_storage_configs_paginator() -> ListInstanceStorageConfigsPaginator:
     return Session().client("connect").get_paginator("list_instance_storage_configs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListInstanceStorageConfigsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListInstanceStorageConfigsPaginator = client.get_paginator("list_instance_storage_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListInstanceStorageConfigsPaginator](./paginators.md#listinstancestorageconfigspaginator)
+3. item: [:material-code-braces: ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef) 
 
 
 ### paginate
@@ -514,6 +701,23 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return Session().client("connect").get_paginator("list_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListInstancesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListInstancesPaginator = client.get_paginator("list_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+3. item: [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
+
 
 ### paginate
 
@@ -554,6 +758,23 @@ from mypy_boto3_connect.paginator import ListIntegrationAssociationsPaginator
 def get_list_integration_associations_paginator() -> ListIntegrationAssociationsPaginator:
     return Session().client("connect").get_paginator("list_integration_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListIntegrationAssociationsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListIntegrationAssociationsPaginator = client.get_paginator("list_integration_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListIntegrationAssociationsPaginator](./paginators.md#listintegrationassociationspaginator)
+3. item: [:material-code-braces: ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef) 
 
 
 ### paginate
@@ -599,6 +820,23 @@ def get_list_lambda_functions_paginator() -> ListLambdaFunctionsPaginator:
     return Session().client("connect").get_paginator("list_lambda_functions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListLambdaFunctionsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListLambdaFunctionsPaginator = client.get_paginator("list_lambda_functions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListLambdaFunctionsPaginator](./paginators.md#listlambdafunctionspaginator)
+3. item: [:material-code-braces: ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef) 
+
 
 ### paginate
 
@@ -641,6 +879,23 @@ def get_list_lex_bots_paginator() -> ListLexBotsPaginator:
     return Session().client("connect").get_paginator("list_lex_bots")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListLexBotsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListLexBotsPaginator = client.get_paginator("list_lex_bots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListLexBotsPaginator](./paginators.md#listlexbotspaginator)
+3. item: [:material-code-braces: ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef) 
+
 
 ### paginate
 
@@ -682,6 +937,23 @@ from mypy_boto3_connect.paginator import ListPhoneNumbersPaginator
 def get_list_phone_numbers_paginator() -> ListPhoneNumbersPaginator:
     return Session().client("connect").get_paginator("list_phone_numbers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListPhoneNumbersPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListPhoneNumbersPaginator = client.get_paginator("list_phone_numbers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListPhoneNumbersPaginator](./paginators.md#listphonenumberspaginator)
+3. item: [:material-code-braces: ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef) 
 
 
 ### paginate
@@ -728,6 +1000,23 @@ from mypy_boto3_connect.paginator import ListPhoneNumbersV2Paginator
 def get_list_phone_numbers_v2_paginator() -> ListPhoneNumbersV2Paginator:
     return Session().client("connect").get_paginator("list_phone_numbers_v2")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListPhoneNumbersV2Paginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListPhoneNumbersV2Paginator = client.get_paginator("list_phone_numbers_v2")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListPhoneNumbersV2Paginator](./paginators.md#listphonenumbersv2paginator)
+3. item: [:material-code-braces: ListPhoneNumbersV2ResponseTypeDef](./type_defs.md#listphonenumbersv2responsetypedef) 
 
 
 ### paginate
@@ -776,6 +1065,23 @@ def get_list_prompts_paginator() -> ListPromptsPaginator:
     return Session().client("connect").get_paginator("list_prompts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListPromptsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListPromptsPaginator = client.get_paginator("list_prompts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListPromptsPaginator](./paginators.md#listpromptspaginator)
+3. item: [:material-code-braces: ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef) 
+
 
 ### paginate
 
@@ -817,6 +1123,23 @@ from mypy_boto3_connect.paginator import ListQueueQuickConnectsPaginator
 def get_list_queue_quick_connects_paginator() -> ListQueueQuickConnectsPaginator:
     return Session().client("connect").get_paginator("list_queue_quick_connects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListQueueQuickConnectsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListQueueQuickConnectsPaginator = client.get_paginator("list_queue_quick_connects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListQueueQuickConnectsPaginator](./paginators.md#listqueuequickconnectspaginator)
+3. item: [:material-code-braces: ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef) 
 
 
 ### paginate
@@ -862,6 +1185,23 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
     return Session().client("connect").get_paginator("list_queues")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListQueuesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListQueuesPaginator = client.get_paginator("list_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListQueuesPaginator](./paginators.md#listqueuespaginator)
+3. item: [:material-code-braces: ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef) 
+
 
 ### paginate
 
@@ -905,6 +1245,23 @@ from mypy_boto3_connect.paginator import ListQuickConnectsPaginator
 def get_list_quick_connects_paginator() -> ListQuickConnectsPaginator:
     return Session().client("connect").get_paginator("list_quick_connects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListQuickConnectsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListQuickConnectsPaginator = client.get_paginator("list_quick_connects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListQuickConnectsPaginator](./paginators.md#listquickconnectspaginator)
+3. item: [:material-code-braces: ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef) 
 
 
 ### paginate
@@ -950,6 +1307,23 @@ def get_list_routing_profile_queues_paginator() -> ListRoutingProfileQueuesPagin
     return Session().client("connect").get_paginator("list_routing_profile_queues")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListRoutingProfileQueuesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListRoutingProfileQueuesPaginator = client.get_paginator("list_routing_profile_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListRoutingProfileQueuesPaginator](./paginators.md#listroutingprofilequeuespaginator)
+3. item: [:material-code-braces: ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef) 
+
 
 ### paginate
 
@@ -994,6 +1368,23 @@ def get_list_routing_profiles_paginator() -> ListRoutingProfilesPaginator:
     return Session().client("connect").get_paginator("list_routing_profiles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListRoutingProfilesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListRoutingProfilesPaginator = client.get_paginator("list_routing_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListRoutingProfilesPaginator](./paginators.md#listroutingprofilespaginator)
+3. item: [:material-code-braces: ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef) 
+
 
 ### paginate
 
@@ -1036,6 +1427,23 @@ def get_list_security_keys_paginator() -> ListSecurityKeysPaginator:
     return Session().client("connect").get_paginator("list_security_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListSecurityKeysPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListSecurityKeysPaginator = client.get_paginator("list_security_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListSecurityKeysPaginator](./paginators.md#listsecuritykeyspaginator)
+3. item: [:material-code-braces: ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef) 
+
 
 ### paginate
 
@@ -1077,6 +1485,23 @@ from mypy_boto3_connect.paginator import ListSecurityProfilePermissionsPaginator
 def get_list_security_profile_permissions_paginator() -> ListSecurityProfilePermissionsPaginator:
     return Session().client("connect").get_paginator("list_security_profile_permissions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListSecurityProfilePermissionsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListSecurityProfilePermissionsPaginator = client.get_paginator("list_security_profile_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
+3. item: [:material-code-braces: ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef) 
 
 
 ### paginate
@@ -1122,6 +1547,23 @@ def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
     return Session().client("connect").get_paginator("list_security_profiles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListSecurityProfilesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListSecurityProfilesPaginator = client.get_paginator("list_security_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
+3. item: [:material-code-braces: ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef) 
+
 
 ### paginate
 
@@ -1163,6 +1605,23 @@ from mypy_boto3_connect.paginator import ListTaskTemplatesPaginator
 def get_list_task_templates_paginator() -> ListTaskTemplatesPaginator:
     return Session().client("connect").get_paginator("list_task_templates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListTaskTemplatesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListTaskTemplatesPaginator = client.get_paginator("list_task_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListTaskTemplatesPaginator](./paginators.md#listtasktemplatespaginator)
+3. item: [:material-code-braces: ListTaskTemplatesResponseTypeDef](./type_defs.md#listtasktemplatesresponsetypedef) 
 
 
 ### paginate
@@ -1209,6 +1668,23 @@ def get_list_use_cases_paginator() -> ListUseCasesPaginator:
     return Session().client("connect").get_paginator("list_use_cases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListUseCasesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListUseCasesPaginator = client.get_paginator("list_use_cases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListUseCasesPaginator](./paginators.md#listusecasespaginator)
+3. item: [:material-code-braces: ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef) 
+
 
 ### paginate
 
@@ -1253,6 +1729,23 @@ def get_list_user_hierarchy_groups_paginator() -> ListUserHierarchyGroupsPaginat
     return Session().client("connect").get_paginator("list_user_hierarchy_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListUserHierarchyGroupsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListUserHierarchyGroupsPaginator = client.get_paginator("list_user_hierarchy_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
+3. item: [:material-code-braces: ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -1295,6 +1788,23 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("connect").get_paginator("list_users")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListUsersPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListUsersPaginator = client.get_paginator("list_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListUsersPaginator](./paginators.md#listuserspaginator)
+3. item: [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
+
 
 ### paginate
 
@@ -1336,6 +1846,23 @@ from mypy_boto3_connect.paginator import SearchAvailablePhoneNumbersPaginator
 def get_search_available_phone_numbers_paginator() -> SearchAvailablePhoneNumbersPaginator:
     return Session().client("connect").get_paginator("search_available_phone_numbers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchAvailablePhoneNumbersPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: SearchAvailablePhoneNumbersPaginator = client.get_paginator("search_available_phone_numbers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [SearchAvailablePhoneNumbersPaginator](./paginators.md#searchavailablephonenumberspaginator)
+3. item: [:material-code-braces: SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef) 
 
 
 ### paginate
@@ -1386,6 +1913,23 @@ def get_search_users_paginator() -> SearchUsersPaginator:
     return Session().client("connect").get_paginator("search_users")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchUsersPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: SearchUsersPaginator = client.get_paginator("search_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [SearchUsersPaginator](./paginators.md#searchuserspaginator)
+3. item: [:material-code-braces: SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef) 
+
 
 ### paginate
 
@@ -1431,6 +1975,23 @@ from mypy_boto3_connect.paginator import SearchVocabulariesPaginator
 def get_search_vocabularies_paginator() -> SearchVocabulariesPaginator:
     return Session().client("connect").get_paginator("search_vocabularies")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchVocabulariesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: SearchVocabulariesPaginator = client.get_paginator("search_vocabularies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
+3. item: [:material-code-braces: SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef) 
 
 
 ### paginate

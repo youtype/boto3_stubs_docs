@@ -21,6 +21,23 @@ def get_describe_image_scan_findings_paginator() -> DescribeImageScanFindingsPag
     return Session().client("ecr").get_paginator("describe_image_scan_findings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr.paginator import DescribeImageScanFindingsPaginator
+
+session = Session()
+
+client = Session().client("ecr")  # (1)
+paginator: DescribeImageScanFindingsPaginator = client.get_paginator("describe_image_scan_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRClient](./client.md)
+2. paginator: [DescribeImageScanFindingsPaginator](./paginators.md#describeimagescanfindingspaginator)
+3. item: [:material-code-braces: DescribeImageScanFindingsResponseTypeDef](./type_defs.md#describeimagescanfindingsresponsetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ from mypy_boto3_ecr.paginator import DescribeImagesPaginator
 def get_describe_images_paginator() -> DescribeImagesPaginator:
     return Session().client("ecr").get_paginator("describe_images")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr.paginator import DescribeImagesPaginator
+
+session = Session()
+
+client = Session().client("ecr")  # (1)
+paginator: DescribeImagesPaginator = client.get_paginator("describe_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRClient](./client.md)
+2. paginator: [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+3. item: [:material-code-braces: DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef) 
 
 
 ### paginate
@@ -114,6 +148,23 @@ def get_describe_pull_through_cache_rules_paginator() -> DescribePullThroughCach
     return Session().client("ecr").get_paginator("describe_pull_through_cache_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr.paginator import DescribePullThroughCacheRulesPaginator
+
+session = Session()
+
+client = Session().client("ecr")  # (1)
+paginator: DescribePullThroughCacheRulesPaginator = client.get_paginator("describe_pull_through_cache_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRClient](./client.md)
+2. paginator: [DescribePullThroughCacheRulesPaginator](./paginators.md#describepullthroughcacherulespaginator)
+3. item: [:material-code-braces: DescribePullThroughCacheRulesResponseTypeDef](./type_defs.md#describepullthroughcacherulesresponsetypedef) 
+
 
 ### paginate
 
@@ -157,6 +208,23 @@ def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
     return Session().client("ecr").get_paginator("describe_repositories")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr.paginator import DescribeRepositoriesPaginator
+
+session = Session()
+
+client = Session().client("ecr")  # (1)
+paginator: DescribeRepositoriesPaginator = client.get_paginator("describe_repositories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRClient](./client.md)
+2. paginator: [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
+3. item: [:material-code-braces: DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef) 
+
 
 ### paginate
 
@@ -199,6 +267,23 @@ from mypy_boto3_ecr.paginator import GetLifecyclePolicyPreviewPaginator
 def get_get_lifecycle_policy_preview_paginator() -> GetLifecyclePolicyPreviewPaginator:
     return Session().client("ecr").get_paginator("get_lifecycle_policy_preview")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr.paginator import GetLifecyclePolicyPreviewPaginator
+
+session = Session()
+
+client = Session().client("ecr")  # (1)
+paginator: GetLifecyclePolicyPreviewPaginator = client.get_paginator("get_lifecycle_policy_preview")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRClient](./client.md)
+2. paginator: [GetLifecyclePolicyPreviewPaginator](./paginators.md#getlifecyclepolicypreviewpaginator)
+3. item: [:material-code-braces: GetLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponsetypedef) 
 
 
 ### paginate
@@ -246,6 +331,23 @@ from mypy_boto3_ecr.paginator import ListImagesPaginator
 def get_list_images_paginator() -> ListImagesPaginator:
     return Session().client("ecr").get_paginator("list_images")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr.paginator import ListImagesPaginator
+
+session = Session()
+
+client = Session().client("ecr")  # (1)
+paginator: ListImagesPaginator = client.get_paginator("list_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRClient](./client.md)
+2. paginator: [ListImagesPaginator](./paginators.md#listimagespaginator)
+3. item: [:material-code-braces: ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef) 
 
 
 ### paginate

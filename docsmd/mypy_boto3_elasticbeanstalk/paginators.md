@@ -21,6 +21,23 @@ def get_describe_application_versions_paginator() -> DescribeApplicationVersions
     return Session().client("elasticbeanstalk").get_paginator("describe_application_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elasticbeanstalk.paginator import DescribeApplicationVersionsPaginator
+
+session = Session()
+
+client = Session().client("elasticbeanstalk")  # (1)
+paginator: DescribeApplicationVersionsPaginator = client.get_paginator("describe_application_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. paginator: [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
+3. item: [:material-code-braces: ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_describe_environment_managed_action_history_paginator() -> DescribeEnvir
     return Session().client("elasticbeanstalk").get_paginator("describe_environment_managed_action_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elasticbeanstalk.paginator import DescribeEnvironmentManagedActionHistoryPaginator
+
+session = Session()
+
+client = Session().client("elasticbeanstalk")  # (1)
+paginator: DescribeEnvironmentManagedActionHistoryPaginator = client.get_paginator("describe_environment_managed_action_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. paginator: [DescribeEnvironmentManagedActionHistoryPaginator](./paginators.md#describeenvironmentmanagedactionhistorypaginator)
+3. item: [:material-code-braces: DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_elasticbeanstalk.paginator import DescribeEnvironmentsPaginator
 def get_describe_environments_paginator() -> DescribeEnvironmentsPaginator:
     return Session().client("elasticbeanstalk").get_paginator("describe_environments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elasticbeanstalk.paginator import DescribeEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("elasticbeanstalk")  # (1)
+paginator: DescribeEnvironmentsPaginator = client.get_paginator("describe_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. paginator: [DescribeEnvironmentsPaginator](./paginators.md#describeenvironmentspaginator)
+3. item: [:material-code-braces: EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef) 
 
 
 ### paginate
@@ -153,6 +204,23 @@ from mypy_boto3_elasticbeanstalk.paginator import DescribeEventsPaginator
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("elasticbeanstalk").get_paginator("describe_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elasticbeanstalk.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("elasticbeanstalk")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef) 
 
 
 ### paginate
@@ -205,6 +273,23 @@ from mypy_boto3_elasticbeanstalk.paginator import ListPlatformVersionsPaginator
 def get_list_platform_versions_paginator() -> ListPlatformVersionsPaginator:
     return Session().client("elasticbeanstalk").get_paginator("list_platform_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elasticbeanstalk.paginator import ListPlatformVersionsPaginator
+
+session = Session()
+
+client = Session().client("elasticbeanstalk")  # (1)
+paginator: ListPlatformVersionsPaginator = client.get_paginator("list_platform_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. paginator: [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
+3. item: [:material-code-braces: ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef) 
 
 
 ### paginate

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_acm.waiter import CertificateValidatedWaiter
 
-def get_certificate_validated_waiter() -> CertificateValidatedWaiter:
-    return Session().client("acm").get_waiter("certificate_validated")
+
+session = Session()
+
+client = session.client("acm")  # (1)
+waiter: CertificateValidatedWaiter = client.get_waiter("certificate_validated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ACMClient](./client.md)
+2. waiter: [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
 
 
 ### wait

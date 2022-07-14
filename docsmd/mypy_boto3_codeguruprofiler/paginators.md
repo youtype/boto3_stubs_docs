@@ -21,6 +21,23 @@ def get_list_profile_times_paginator() -> ListProfileTimesPaginator:
     return Session().client("codeguruprofiler").get_paginator("list_profile_times")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeguruprofiler.paginator import ListProfileTimesPaginator
+
+session = Session()
+
+client = Session().client("codeguruprofiler")  # (1)
+paginator: ListProfileTimesPaginator = client.get_paginator("list_profile_times")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeGuruProfilerClient](./client.md)
+2. paginator: [ListProfileTimesPaginator](./paginators.md#listprofiletimespaginator)
+3. item: [:material-code-braces: ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef) 
+
 
 ### paginate
 

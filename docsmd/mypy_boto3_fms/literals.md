@@ -218,6 +218,21 @@ RemediationActionTypeType = Literal[
     "REMOVE",
 ]
 ```
+## RuleOrderType
+
+```python title="Usage Example"
+from mypy_boto3_fms.literals import RuleOrderType
+
+def get_value() -> RuleOrderType:
+    return "DEFAULT_ACTION_ORDER"
+```
+
+```python title="Definition"
+RuleOrderType = Literal[
+    "DEFAULT_ACTION_ORDER",
+    "STRICT_ORDER",
+]
+```
 ## SecurityServiceTypeType
 
 ```python title="Usage Example"

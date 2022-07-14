@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionActiveWaiter
 
-def get_function_active_waiter() -> FunctionActiveWaiter:
-    return Session().client("lambda").get_waiter("function_active")
+
+session = Session()
+
+client = session.client("lambda")  # (1)
+waiter: FunctionActiveWaiter = client.get_waiter("function_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LambdaClient](./client.md)
+2. waiter: [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
 
 
 ### wait
@@ -59,9 +66,16 @@ from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionActiveV2Waiter
 
-def get_function_active_v2_waiter() -> FunctionActiveV2Waiter:
-    return Session().client("lambda").get_waiter("function_active_v2")
+
+session = Session()
+
+client = session.client("lambda")  # (1)
+waiter: FunctionActiveV2Waiter = client.get_waiter("function_active_v2")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LambdaClient](./client.md)
+2. waiter: [FunctionActiveV2Waiter](./waiters.md#functionactivev2waiter)
 
 
 ### wait
@@ -101,9 +115,16 @@ from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionExistsWaiter
 
-def get_function_exists_waiter() -> FunctionExistsWaiter:
-    return Session().client("lambda").get_waiter("function_exists")
+
+session = Session()
+
+client = session.client("lambda")  # (1)
+waiter: FunctionExistsWaiter = client.get_waiter("function_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LambdaClient](./client.md)
+2. waiter: [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
 
 
 ### wait
@@ -143,9 +164,16 @@ from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionUpdatedWaiter
 
-def get_function_updated_waiter() -> FunctionUpdatedWaiter:
-    return Session().client("lambda").get_waiter("function_updated")
+
+session = Session()
+
+client = session.client("lambda")  # (1)
+waiter: FunctionUpdatedWaiter = client.get_waiter("function_updated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LambdaClient](./client.md)
+2. waiter: [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
 
 
 ### wait
@@ -185,9 +213,16 @@ from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionUpdatedV2Waiter
 
-def get_function_updated_v2_waiter() -> FunctionUpdatedV2Waiter:
-    return Session().client("lambda").get_waiter("function_updated_v2")
+
+session = Session()
+
+client = session.client("lambda")  # (1)
+waiter: FunctionUpdatedV2Waiter = client.get_waiter("function_updated_v2")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LambdaClient](./client.md)
+2. waiter: [FunctionUpdatedV2Waiter](./waiters.md#functionupdatedv2waiter)
 
 
 ### wait

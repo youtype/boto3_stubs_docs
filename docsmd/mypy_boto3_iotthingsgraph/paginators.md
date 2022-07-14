@@ -21,6 +21,23 @@ def get_get_flow_template_revisions_paginator() -> GetFlowTemplateRevisionsPagin
     return Session().client("iotthingsgraph").get_paginator("get_flow_template_revisions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: GetFlowTemplateRevisionsPaginator = client.get_paginator("get_flow_template_revisions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [GetFlowTemplateRevisionsPaginator](./paginators.md#getflowtemplaterevisionspaginator)
+3. item: [:material-code-braces: GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_iotthingsgraph.paginator import GetSystemTemplateRevisionsPagina
 def get_get_system_template_revisions_paginator() -> GetSystemTemplateRevisionsPaginator:
     return Session().client("iotthingsgraph").get_paginator("get_system_template_revisions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import GetSystemTemplateRevisionsPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: GetSystemTemplateRevisionsPaginator = client.get_paginator("get_system_template_revisions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [GetSystemTemplateRevisionsPaginator](./paginators.md#getsystemtemplaterevisionspaginator)
+3. item: [:material-code-braces: GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_flow_execution_messages_paginator() -> ListFlowExecutionMessagesPag
     return Session().client("iotthingsgraph").get_paginator("list_flow_execution_messages")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import ListFlowExecutionMessagesPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: ListFlowExecutionMessagesPaginator = client.get_paginator("list_flow_execution_messages")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [ListFlowExecutionMessagesPaginator](./paginators.md#listflowexecutionmessagespaginator)
+3. item: [:material-code-braces: ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef) 
+
 
 ### paginate
 
@@ -147,6 +198,23 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("iotthingsgraph").get_paginator("list_tags_for_resource")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
 
 ### paginate
 
@@ -188,6 +256,23 @@ from mypy_boto3_iotthingsgraph.paginator import SearchEntitiesPaginator
 def get_search_entities_paginator() -> SearchEntitiesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_entities")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import SearchEntitiesPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: SearchEntitiesPaginator = client.get_paginator("search_entities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [SearchEntitiesPaginator](./paginators.md#searchentitiespaginator)
+3. item: [:material-code-braces: SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef) 
 
 
 ### paginate
@@ -235,6 +320,23 @@ def get_search_flow_executions_paginator() -> SearchFlowExecutionsPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_flow_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import SearchFlowExecutionsPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: SearchFlowExecutionsPaginator = client.get_paginator("search_flow_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [SearchFlowExecutionsPaginator](./paginators.md#searchflowexecutionspaginator)
+3. item: [:material-code-braces: SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef) 
+
 
 ### paginate
 
@@ -280,6 +382,23 @@ def get_search_flow_templates_paginator() -> SearchFlowTemplatesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_flow_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import SearchFlowTemplatesPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: SearchFlowTemplatesPaginator = client.get_paginator("search_flow_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [SearchFlowTemplatesPaginator](./paginators.md#searchflowtemplatespaginator)
+3. item: [:material-code-braces: SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -322,6 +441,23 @@ from mypy_boto3_iotthingsgraph.paginator import SearchSystemInstancesPaginator
 def get_search_system_instances_paginator() -> SearchSystemInstancesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_system_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import SearchSystemInstancesPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: SearchSystemInstancesPaginator = client.get_paginator("search_system_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [SearchSystemInstancesPaginator](./paginators.md#searchsysteminstancespaginator)
+3. item: [:material-code-braces: SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef) 
 
 
 ### paginate
@@ -366,6 +502,23 @@ def get_search_system_templates_paginator() -> SearchSystemTemplatesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_system_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import SearchSystemTemplatesPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: SearchSystemTemplatesPaginator = client.get_paginator("search_system_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [SearchSystemTemplatesPaginator](./paginators.md#searchsystemtemplatespaginator)
+3. item: [:material-code-braces: SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -408,6 +561,23 @@ from mypy_boto3_iotthingsgraph.paginator import SearchThingsPaginator
 def get_search_things_paginator() -> SearchThingsPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_things")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotthingsgraph.paginator import SearchThingsPaginator
+
+session = Session()
+
+client = Session().client("iotthingsgraph")  # (1)
+paginator: SearchThingsPaginator = client.get_paginator("search_things")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTThingsGraphClient](./client.md)
+2. paginator: [SearchThingsPaginator](./paginators.md#searchthingspaginator)
+3. item: [:material-code-braces: SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef) 
 
 
 ### paginate

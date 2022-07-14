@@ -21,6 +21,23 @@ def get_list_jobs_by_pipeline_paginator() -> ListJobsByPipelinePaginator:
     return Session().client("elastictranscoder").get_paginator("list_jobs_by_pipeline")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator
+
+session = Session()
+
+client = Session().client("elastictranscoder")  # (1)
+paginator: ListJobsByPipelinePaginator = client.get_paginator("list_jobs_by_pipeline")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticTranscoderClient](./client.md)
+2. paginator: [ListJobsByPipelinePaginator](./paginators.md#listjobsbypipelinepaginator)
+3. item: [:material-code-braces: ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_elastictranscoder.paginator import ListJobsByStatusPaginator
 def get_list_jobs_by_status_paginator() -> ListJobsByStatusPaginator:
     return Session().client("elastictranscoder").get_paginator("list_jobs_by_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elastictranscoder.paginator import ListJobsByStatusPaginator
+
+session = Session()
+
+client = Session().client("elastictranscoder")  # (1)
+paginator: ListJobsByStatusPaginator = client.get_paginator("list_jobs_by_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticTranscoderClient](./client.md)
+2. paginator: [ListJobsByStatusPaginator](./paginators.md#listjobsbystatuspaginator)
+3. item: [:material-code-braces: ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("elastictranscoder").get_paginator("list_pipelines")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elastictranscoder.paginator import ListPipelinesPaginator
+
+session = Session()
+
+client = Session().client("elastictranscoder")  # (1)
+paginator: ListPipelinesPaginator = client.get_paginator("list_pipelines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticTranscoderClient](./client.md)
+2. paginator: [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+3. item: [:material-code-braces: ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_elastictranscoder.paginator import ListPresetsPaginator
 def get_list_presets_paginator() -> ListPresetsPaginator:
     return Session().client("elastictranscoder").get_paginator("list_presets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elastictranscoder.paginator import ListPresetsPaginator
+
+session = Session()
+
+client = Session().client("elastictranscoder")  # (1)
+paginator: ListPresetsPaginator = client.get_paginator("list_presets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticTranscoderClient](./client.md)
+2. paginator: [ListPresetsPaginator](./paginators.md#listpresetspaginator)
+3. item: [:material-code-braces: ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef) 
 
 
 ### paginate

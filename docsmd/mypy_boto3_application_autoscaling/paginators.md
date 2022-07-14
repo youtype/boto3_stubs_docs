@@ -21,6 +21,23 @@ def get_describe_scalable_targets_paginator() -> DescribeScalableTargetsPaginato
     return Session().client("application-autoscaling").get_paginator("describe_scalable_targets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_application_autoscaling.paginator import DescribeScalableTargetsPaginator
+
+session = Session()
+
+client = Session().client("application-autoscaling")  # (1)
+paginator: DescribeScalableTargetsPaginator = client.get_paginator("describe_scalable_targets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationAutoScalingClient](./client.md)
+2. paginator: [DescribeScalableTargetsPaginator](./paginators.md#describescalabletargetspaginator)
+3. item: [:material-code-braces: DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ from mypy_boto3_application_autoscaling.paginator import DescribeScalingActiviti
 def get_describe_scaling_activities_paginator() -> DescribeScalingActivitiesPaginator:
     return Session().client("application-autoscaling").get_paginator("describe_scaling_activities")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_application_autoscaling.paginator import DescribeScalingActivitiesPaginator
+
+session = Session()
+
+client = Session().client("application-autoscaling")  # (1)
+paginator: DescribeScalingActivitiesPaginator = client.get_paginator("describe_scaling_activities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationAutoScalingClient](./client.md)
+2. paginator: [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
+3. item: [:material-code-braces: DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef) 
 
 
 ### paginate
@@ -113,6 +147,23 @@ def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginato
     return Session().client("application-autoscaling").get_paginator("describe_scaling_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_application_autoscaling.paginator import DescribeScalingPoliciesPaginator
+
+session = Session()
+
+client = Session().client("application-autoscaling")  # (1)
+paginator: DescribeScalingPoliciesPaginator = client.get_paginator("describe_scaling_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationAutoScalingClient](./client.md)
+2. paginator: [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
+3. item: [:material-code-braces: DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -159,6 +210,23 @@ from mypy_boto3_application_autoscaling.paginator import DescribeScheduledAction
 def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPaginator:
     return Session().client("application-autoscaling").get_paginator("describe_scheduled_actions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_application_autoscaling.paginator import DescribeScheduledActionsPaginator
+
+session = Session()
+
+client = Session().client("application-autoscaling")  # (1)
+paginator: DescribeScheduledActionsPaginator = client.get_paginator("describe_scheduled_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationAutoScalingClient](./client.md)
+2. paginator: [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+3. item: [:material-code-braces: DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef) 
 
 
 ### paginate

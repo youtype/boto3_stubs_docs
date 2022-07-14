@@ -21,6 +21,23 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("importexport").get_paginator("list_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_importexport.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("importexport")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ImportExportClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef) 
+
 
 ### paginate
 

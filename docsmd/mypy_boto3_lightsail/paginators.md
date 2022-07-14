@@ -21,6 +21,23 @@ def get_get_active_names_paginator() -> GetActiveNamesPaginator:
     return Session().client("lightsail").get_paginator("get_active_names")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetActiveNamesPaginator = client.get_paginator("get_active_names")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetActiveNamesPaginator](./paginators.md#getactivenamespaginator)
+3. item: [:material-code-braces: GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_lightsail.paginator import GetBlueprintsPaginator
 def get_get_blueprints_paginator() -> GetBlueprintsPaginator:
     return Session().client("lightsail").get_paginator("get_blueprints")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetBlueprintsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetBlueprintsPaginator = client.get_paginator("get_blueprints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetBlueprintsPaginator](./paginators.md#getblueprintspaginator)
+3. item: [:material-code-braces: GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef) 
 
 
 ### paginate
@@ -104,6 +138,23 @@ def get_get_bundles_paginator() -> GetBundlesPaginator:
     return Session().client("lightsail").get_paginator("get_bundles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetBundlesPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetBundlesPaginator = client.get_paginator("get_bundles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetBundlesPaginator](./paginators.md#getbundlespaginator)
+3. item: [:material-code-braces: GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ def get_get_cloud_formation_stack_records_paginator() -> GetCloudFormationStackR
     return Session().client("lightsail").get_paginator("get_cloud_formation_stack_records")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetCloudFormationStackRecordsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetCloudFormationStackRecordsPaginator = client.get_paginator("get_cloud_formation_stack_records")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetCloudFormationStackRecordsPaginator](./paginators.md#getcloudformationstackrecordspaginator)
+3. item: [:material-code-braces: GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_lightsail.paginator import GetDiskSnapshotsPaginator
 def get_get_disk_snapshots_paginator() -> GetDiskSnapshotsPaginator:
     return Session().client("lightsail").get_paginator("get_disk_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetDiskSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetDiskSnapshotsPaginator = client.get_paginator("get_disk_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetDiskSnapshotsPaginator](./paginators.md#getdisksnapshotspaginator)
+3. item: [:material-code-braces: GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef) 
 
 
 ### paginate
@@ -228,6 +313,23 @@ def get_get_disks_paginator() -> GetDisksPaginator:
     return Session().client("lightsail").get_paginator("get_disks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetDisksPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetDisksPaginator = client.get_paginator("get_disks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetDisksPaginator](./paginators.md#getdiskspaginator)
+3. item: [:material-code-braces: GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef) 
+
 
 ### paginate
 
@@ -268,6 +370,23 @@ from mypy_boto3_lightsail.paginator import GetDomainsPaginator
 def get_get_domains_paginator() -> GetDomainsPaginator:
     return Session().client("lightsail").get_paginator("get_domains")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetDomainsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetDomainsPaginator = client.get_paginator("get_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetDomainsPaginator](./paginators.md#getdomainspaginator)
+3. item: [:material-code-braces: GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef) 
 
 
 ### paginate
@@ -310,6 +429,23 @@ def get_get_export_snapshot_records_paginator() -> GetExportSnapshotRecordsPagin
     return Session().client("lightsail").get_paginator("get_export_snapshot_records")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetExportSnapshotRecordsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetExportSnapshotRecordsPaginator = client.get_paginator("get_export_snapshot_records")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetExportSnapshotRecordsPaginator](./paginators.md#getexportsnapshotrecordspaginator)
+3. item: [:material-code-braces: GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef) 
+
 
 ### paginate
 
@@ -350,6 +486,23 @@ from mypy_boto3_lightsail.paginator import GetInstanceSnapshotsPaginator
 def get_get_instance_snapshots_paginator() -> GetInstanceSnapshotsPaginator:
     return Session().client("lightsail").get_paginator("get_instance_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetInstanceSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetInstanceSnapshotsPaginator = client.get_paginator("get_instance_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetInstanceSnapshotsPaginator](./paginators.md#getinstancesnapshotspaginator)
+3. item: [:material-code-braces: GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef) 
 
 
 ### paginate
@@ -392,6 +545,23 @@ def get_get_instances_paginator() -> GetInstancesPaginator:
     return Session().client("lightsail").get_paginator("get_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetInstancesPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetInstancesPaginator = client.get_paginator("get_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetInstancesPaginator](./paginators.md#getinstancespaginator)
+3. item: [:material-code-braces: GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef) 
+
 
 ### paginate
 
@@ -432,6 +602,23 @@ from mypy_boto3_lightsail.paginator import GetKeyPairsPaginator
 def get_get_key_pairs_paginator() -> GetKeyPairsPaginator:
     return Session().client("lightsail").get_paginator("get_key_pairs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetKeyPairsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetKeyPairsPaginator = client.get_paginator("get_key_pairs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetKeyPairsPaginator](./paginators.md#getkeypairspaginator)
+3. item: [:material-code-braces: GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef) 
 
 
 ### paginate
@@ -475,6 +662,23 @@ def get_get_load_balancers_paginator() -> GetLoadBalancersPaginator:
     return Session().client("lightsail").get_paginator("get_load_balancers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetLoadBalancersPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetLoadBalancersPaginator = client.get_paginator("get_load_balancers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetLoadBalancersPaginator](./paginators.md#getloadbalancerspaginator)
+3. item: [:material-code-braces: GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef) 
+
 
 ### paginate
 
@@ -515,6 +719,23 @@ from mypy_boto3_lightsail.paginator import GetOperationsPaginator
 def get_get_operations_paginator() -> GetOperationsPaginator:
     return Session().client("lightsail").get_paginator("get_operations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetOperationsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetOperationsPaginator = client.get_paginator("get_operations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetOperationsPaginator](./paginators.md#getoperationspaginator)
+3. item: [:material-code-braces: GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef) 
 
 
 ### paginate
@@ -557,6 +778,23 @@ def get_get_relational_database_blueprints_paginator() -> GetRelationalDatabaseB
     return Session().client("lightsail").get_paginator("get_relational_database_blueprints")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetRelationalDatabaseBlueprintsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetRelationalDatabaseBlueprintsPaginator = client.get_paginator("get_relational_database_blueprints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetRelationalDatabaseBlueprintsPaginator](./paginators.md#getrelationaldatabaseblueprintspaginator)
+3. item: [:material-code-braces: GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef) 
+
 
 ### paginate
 
@@ -597,6 +835,23 @@ from mypy_boto3_lightsail.paginator import GetRelationalDatabaseBundlesPaginator
 def get_get_relational_database_bundles_paginator() -> GetRelationalDatabaseBundlesPaginator:
     return Session().client("lightsail").get_paginator("get_relational_database_bundles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetRelationalDatabaseBundlesPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetRelationalDatabaseBundlesPaginator = client.get_paginator("get_relational_database_bundles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetRelationalDatabaseBundlesPaginator](./paginators.md#getrelationaldatabasebundlespaginator)
+3. item: [:material-code-braces: GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef) 
 
 
 ### paginate
@@ -639,6 +894,23 @@ from mypy_boto3_lightsail.paginator import GetRelationalDatabaseEventsPaginator
 def get_get_relational_database_events_paginator() -> GetRelationalDatabaseEventsPaginator:
     return Session().client("lightsail").get_paginator("get_relational_database_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetRelationalDatabaseEventsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetRelationalDatabaseEventsPaginator = client.get_paginator("get_relational_database_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetRelationalDatabaseEventsPaginator](./paginators.md#getrelationaldatabaseeventspaginator)
+3. item: [:material-code-braces: GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef) 
 
 
 ### paginate
@@ -683,6 +955,23 @@ def get_get_relational_database_parameters_paginator() -> GetRelationalDatabaseP
     return Session().client("lightsail").get_paginator("get_relational_database_parameters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetRelationalDatabaseParametersPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetRelationalDatabaseParametersPaginator = client.get_paginator("get_relational_database_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetRelationalDatabaseParametersPaginator](./paginators.md#getrelationaldatabaseparameterspaginator)
+3. item: [:material-code-braces: GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef) 
+
 
 ### paginate
 
@@ -725,6 +1014,23 @@ def get_get_relational_database_snapshots_paginator() -> GetRelationalDatabaseSn
     return Session().client("lightsail").get_paginator("get_relational_database_snapshots")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetRelationalDatabaseSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetRelationalDatabaseSnapshotsPaginator = client.get_paginator("get_relational_database_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetRelationalDatabaseSnapshotsPaginator](./paginators.md#getrelationaldatabasesnapshotspaginator)
+3. item: [:material-code-braces: GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef) 
+
 
 ### paginate
 
@@ -766,6 +1072,23 @@ def get_get_relational_databases_paginator() -> GetRelationalDatabasesPaginator:
     return Session().client("lightsail").get_paginator("get_relational_databases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetRelationalDatabasesPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetRelationalDatabasesPaginator = client.get_paginator("get_relational_databases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetRelationalDatabasesPaginator](./paginators.md#getrelationaldatabasespaginator)
+3. item: [:material-code-braces: GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef) 
+
 
 ### paginate
 
@@ -806,6 +1129,23 @@ from mypy_boto3_lightsail.paginator import GetStaticIpsPaginator
 def get_get_static_ips_paginator() -> GetStaticIpsPaginator:
     return Session().client("lightsail").get_paginator("get_static_ips")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lightsail.paginator import GetStaticIpsPaginator
+
+session = Session()
+
+client = Session().client("lightsail")  # (1)
+paginator: GetStaticIpsPaginator = client.get_paginator("get_static_ips")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LightsailClient](./client.md)
+2. paginator: [GetStaticIpsPaginator](./paginators.md#getstaticipspaginator)
+3. item: [:material-code-braces: GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef) 
 
 
 ### paginate

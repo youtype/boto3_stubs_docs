@@ -21,6 +21,23 @@ def get_list_apps_lists_paginator() -> ListAppsListsPaginator:
     return Session().client("fms").get_paginator("list_apps_lists")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_fms.paginator import ListAppsListsPaginator
+
+session = Session()
+
+client = Session().client("fms")  # (1)
+paginator: ListAppsListsPaginator = client.get_paginator("list_apps_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FMSClient](./client.md)
+2. paginator: [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
+3. item: [:material-code-braces: ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_fms.paginator import ListComplianceStatusPaginator
 def get_list_compliance_status_paginator() -> ListComplianceStatusPaginator:
     return Session().client("fms").get_paginator("list_compliance_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_fms.paginator import ListComplianceStatusPaginator
+
+session = Session()
+
+client = Session().client("fms")  # (1)
+paginator: ListComplianceStatusPaginator = client.get_paginator("list_compliance_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FMSClient](./client.md)
+2. paginator: [ListComplianceStatusPaginator](./paginators.md#listcompliancestatuspaginator)
+3. item: [:material-code-braces: ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
     return Session().client("fms").get_paginator("list_member_accounts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_fms.paginator import ListMemberAccountsPaginator
+
+session = Session()
+
+client = Session().client("fms")  # (1)
+paginator: ListMemberAccountsPaginator = client.get_paginator("list_member_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FMSClient](./client.md)
+2. paginator: [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
+3. item: [:material-code-braces: ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_fms.paginator import ListPoliciesPaginator
 def get_list_policies_paginator() -> ListPoliciesPaginator:
     return Session().client("fms").get_paginator("list_policies")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_fms.paginator import ListPoliciesPaginator
+
+session = Session()
+
+client = Session().client("fms")  # (1)
+paginator: ListPoliciesPaginator = client.get_paginator("list_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FMSClient](./client.md)
+2. paginator: [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+3. item: [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
 
 ### paginate
@@ -187,6 +255,23 @@ def get_list_protocols_lists_paginator() -> ListProtocolsListsPaginator:
     return Session().client("fms").get_paginator("list_protocols_lists")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_fms.paginator import ListProtocolsListsPaginator
+
+session = Session()
+
+client = Session().client("fms")  # (1)
+paginator: ListProtocolsListsPaginator = client.get_paginator("list_protocols_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FMSClient](./client.md)
+2. paginator: [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)
+3. item: [:material-code-braces: ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef) 
+
 
 ### paginate
 
@@ -228,6 +313,23 @@ from mypy_boto3_fms.paginator import ListThirdPartyFirewallFirewallPoliciesPagin
 def get_list_third_party_firewall_firewall_policies_paginator() -> ListThirdPartyFirewallFirewallPoliciesPaginator:
     return Session().client("fms").get_paginator("list_third_party_firewall_firewall_policies")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_fms.paginator import ListThirdPartyFirewallFirewallPoliciesPaginator
+
+session = Session()
+
+client = Session().client("fms")  # (1)
+paginator: ListThirdPartyFirewallFirewallPoliciesPaginator = client.get_paginator("list_third_party_firewall_firewall_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [FMSClient](./client.md)
+2. paginator: [ListThirdPartyFirewallFirewallPoliciesPaginator](./paginators.md#listthirdpartyfirewallfirewallpoliciespaginator)
+3. item: [:material-code-braces: ListThirdPartyFirewallFirewallPoliciesResponseTypeDef](./type_defs.md#listthirdpartyfirewallfirewallpoliciesresponsetypedef) 
 
 
 ### paginate

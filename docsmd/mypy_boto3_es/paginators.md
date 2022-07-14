@@ -21,6 +21,23 @@ def get_describe_reserved_elasticsearch_instance_offerings_paginator() -> Descri
     return Session().client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator
+
+session = Session()
+
+client = Session().client("es")  # (1)
+paginator: DescribeReservedElasticsearchInstanceOfferingsPaginator = client.get_paginator("describe_reserved_elasticsearch_instance_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticsearchServiceClient](./client.md)
+2. paginator: [DescribeReservedElasticsearchInstanceOfferingsPaginator](./paginators.md#describereservedelasticsearchinstanceofferingspaginator)
+3. item: [:material-code-braces: DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstancesPagina
 def get_describe_reserved_elasticsearch_instances_paginator() -> DescribeReservedElasticsearchInstancesPaginator:
     return Session().client("es").get_paginator("describe_reserved_elasticsearch_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstancesPaginator
+
+session = Session()
+
+client = Session().client("es")  # (1)
+paginator: DescribeReservedElasticsearchInstancesPaginator = client.get_paginator("describe_reserved_elasticsearch_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticsearchServiceClient](./client.md)
+2. paginator: [DescribeReservedElasticsearchInstancesPaginator](./paginators.md#describereservedelasticsearchinstancespaginator)
+3. item: [:material-code-braces: DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_get_upgrade_history_paginator() -> GetUpgradeHistoryPaginator:
     return Session().client("es").get_paginator("get_upgrade_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_es.paginator import GetUpgradeHistoryPaginator
+
+session = Session()
+
+client = Session().client("es")  # (1)
+paginator: GetUpgradeHistoryPaginator = client.get_paginator("get_upgrade_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticsearchServiceClient](./client.md)
+2. paginator: [GetUpgradeHistoryPaginator](./paginators.md#getupgradehistorypaginator)
+3. item: [:material-code-braces: GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_es.paginator import ListElasticsearchInstanceTypesPaginator
 def get_list_elasticsearch_instance_types_paginator() -> ListElasticsearchInstanceTypesPaginator:
     return Session().client("es").get_paginator("list_elasticsearch_instance_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_es.paginator import ListElasticsearchInstanceTypesPaginator
+
+session = Session()
+
+client = Session().client("es")  # (1)
+paginator: ListElasticsearchInstanceTypesPaginator = client.get_paginator("list_elasticsearch_instance_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticsearchServiceClient](./client.md)
+2. paginator: [ListElasticsearchInstanceTypesPaginator](./paginators.md#listelasticsearchinstancetypespaginator)
+3. item: [:material-code-braces: ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef) 
 
 
 ### paginate
@@ -189,6 +257,23 @@ from mypy_boto3_es.paginator import ListElasticsearchVersionsPaginator
 def get_list_elasticsearch_versions_paginator() -> ListElasticsearchVersionsPaginator:
     return Session().client("es").get_paginator("list_elasticsearch_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_es.paginator import ListElasticsearchVersionsPaginator
+
+session = Session()
+
+client = Session().client("es")  # (1)
+paginator: ListElasticsearchVersionsPaginator = client.get_paginator("list_elasticsearch_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticsearchServiceClient](./client.md)
+2. paginator: [ListElasticsearchVersionsPaginator](./paginators.md#listelasticsearchversionspaginator)
+3. item: [:material-code-braces: ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef) 
 
 
 ### paginate

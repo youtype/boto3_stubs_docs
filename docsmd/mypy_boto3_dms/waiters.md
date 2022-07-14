@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import EndpointDeletedWaiter
 
-def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
-    return Session().client("dms").get_waiter("endpoint_deleted")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: EndpointDeletedWaiter = client.get_waiter("endpoint_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
 
 
 ### wait
@@ -61,9 +68,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationInstanceAvailableWaiter
 
-def get_replication_instance_available_waiter() -> ReplicationInstanceAvailableWaiter:
-    return Session().client("dms").get_waiter("replication_instance_available")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: ReplicationInstanceAvailableWaiter = client.get_waiter("replication_instance_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [ReplicationInstanceAvailableWaiter](./waiters.md#replicationinstanceavailablewaiter)
 
 
 ### wait
@@ -105,9 +119,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationInstanceDeletedWaiter
 
-def get_replication_instance_deleted_waiter() -> ReplicationInstanceDeletedWaiter:
-    return Session().client("dms").get_waiter("replication_instance_deleted")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: ReplicationInstanceDeletedWaiter = client.get_waiter("replication_instance_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [ReplicationInstanceDeletedWaiter](./waiters.md#replicationinstancedeletedwaiter)
 
 
 ### wait
@@ -149,9 +170,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskDeletedWaiter
 
-def get_replication_task_deleted_waiter() -> ReplicationTaskDeletedWaiter:
-    return Session().client("dms").get_waiter("replication_task_deleted")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: ReplicationTaskDeletedWaiter = client.get_waiter("replication_task_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [ReplicationTaskDeletedWaiter](./waiters.md#replicationtaskdeletedwaiter)
 
 
 ### wait
@@ -194,9 +222,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskReadyWaiter
 
-def get_replication_task_ready_waiter() -> ReplicationTaskReadyWaiter:
-    return Session().client("dms").get_waiter("replication_task_ready")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: ReplicationTaskReadyWaiter = client.get_waiter("replication_task_ready")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [ReplicationTaskReadyWaiter](./waiters.md#replicationtaskreadywaiter)
 
 
 ### wait
@@ -239,9 +274,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskRunningWaiter
 
-def get_replication_task_running_waiter() -> ReplicationTaskRunningWaiter:
-    return Session().client("dms").get_waiter("replication_task_running")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: ReplicationTaskRunningWaiter = client.get_waiter("replication_task_running")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [ReplicationTaskRunningWaiter](./waiters.md#replicationtaskrunningwaiter)
 
 
 ### wait
@@ -284,9 +326,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskStoppedWaiter
 
-def get_replication_task_stopped_waiter() -> ReplicationTaskStoppedWaiter:
-    return Session().client("dms").get_waiter("replication_task_stopped")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: ReplicationTaskStoppedWaiter = client.get_waiter("replication_task_stopped")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
 
 
 ### wait
@@ -329,9 +378,16 @@ from boto3.session import Session
 
 from mypy_boto3_dms.waiter import TestConnectionSucceedsWaiter
 
-def get_test_connection_succeeds_waiter() -> TestConnectionSucceedsWaiter:
-    return Session().client("dms").get_waiter("test_connection_succeeds")
+
+session = Session()
+
+client = session.client("dms")  # (1)
+waiter: TestConnectionSucceedsWaiter = client.get_waiter("test_connection_succeeds")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DatabaseMigrationServiceClient](./client.md)
+2. waiter: [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)
 
 
 ### wait

@@ -21,6 +21,23 @@ def get_get_query_results_paginator() -> GetQueryResultsPaginator:
     return Session().client("athena").get_paginator("get_query_results")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_athena.paginator import GetQueryResultsPaginator
+
+session = Session()
+
+client = Session().client("athena")  # (1)
+paginator: GetQueryResultsPaginator = client.get_paginator("get_query_results")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AthenaClient](./client.md)
+2. paginator: [GetQueryResultsPaginator](./paginators.md#getqueryresultspaginator)
+3. item: [:material-code-braces: GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_data_catalogs_paginator() -> ListDataCatalogsPaginator:
     return Session().client("athena").get_paginator("list_data_catalogs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_athena.paginator import ListDataCatalogsPaginator
+
+session = Session()
+
+client = Session().client("athena")  # (1)
+paginator: ListDataCatalogsPaginator = client.get_paginator("list_data_catalogs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AthenaClient](./client.md)
+2. paginator: [ListDataCatalogsPaginator](./paginators.md#listdatacatalogspaginator)
+3. item: [:material-code-braces: ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_athena.paginator import ListDatabasesPaginator
 def get_list_databases_paginator() -> ListDatabasesPaginator:
     return Session().client("athena").get_paginator("list_databases")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_athena.paginator import ListDatabasesPaginator
+
+session = Session()
+
+client = Session().client("athena")  # (1)
+paginator: ListDatabasesPaginator = client.get_paginator("list_databases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AthenaClient](./client.md)
+2. paginator: [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+3. item: [:material-code-braces: ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ def get_list_named_queries_paginator() -> ListNamedQueriesPaginator:
     return Session().client("athena").get_paginator("list_named_queries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_athena.paginator import ListNamedQueriesPaginator
+
+session = Session()
+
+client = Session().client("athena")  # (1)
+paginator: ListNamedQueriesPaginator = client.get_paginator("list_named_queries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AthenaClient](./client.md)
+2. paginator: [ListNamedQueriesPaginator](./paginators.md#listnamedqueriespaginator)
+3. item: [:material-code-braces: ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef) 
+
 
 ### paginate
 
@@ -188,6 +256,23 @@ def get_list_query_executions_paginator() -> ListQueryExecutionsPaginator:
     return Session().client("athena").get_paginator("list_query_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_athena.paginator import ListQueryExecutionsPaginator
+
+session = Session()
+
+client = Session().client("athena")  # (1)
+paginator: ListQueryExecutionsPaginator = client.get_paginator("list_query_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AthenaClient](./client.md)
+2. paginator: [ListQueryExecutionsPaginator](./paginators.md#listqueryexecutionspaginator)
+3. item: [:material-code-braces: ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef) 
+
 
 ### paginate
 
@@ -229,6 +314,23 @@ from mypy_boto3_athena.paginator import ListTableMetadataPaginator
 def get_list_table_metadata_paginator() -> ListTableMetadataPaginator:
     return Session().client("athena").get_paginator("list_table_metadata")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_athena.paginator import ListTableMetadataPaginator
+
+session = Session()
+
+client = Session().client("athena")  # (1)
+paginator: ListTableMetadataPaginator = client.get_paginator("list_table_metadata")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AthenaClient](./client.md)
+2. paginator: [ListTableMetadataPaginator](./paginators.md#listtablemetadatapaginator)
+3. item: [:material-code-braces: ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef) 
 
 
 ### paginate
@@ -274,6 +376,23 @@ from mypy_boto3_athena.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("athena").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_athena.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("athena")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AthenaClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
 
 ### paginate

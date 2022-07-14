@@ -21,6 +21,23 @@ def get_list_certificates_paginator() -> ListCertificatesPaginator:
     return Session().client("acm").get_paginator("list_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_acm.paginator import ListCertificatesPaginator
+
+session = Session()
+
+client = Session().client("acm")  # (1)
+paginator: ListCertificatesPaginator = client.get_paginator("list_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ACMClient](./client.md)
+2. paginator: [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+3. item: [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
+
 
 ### paginate
 

@@ -21,6 +21,23 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return Session().client("chime").get_paginator("list_accounts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_chime.paginator import ListAccountsPaginator
+
+session = Session()
+
+client = Session().client("chime")  # (1)
+paginator: ListAccountsPaginator = client.get_paginator("list_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ChimeClient](./client.md)
+2. paginator: [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+3. item: [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_chime.paginator import ListUsersPaginator
 def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("chime").get_paginator("list_users")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_chime.paginator import ListUsersPaginator
+
+session = Session()
+
+client = Session().client("chime")  # (1)
+paginator: ListUsersPaginator = client.get_paginator("list_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ChimeClient](./client.md)
+2. paginator: [ListUsersPaginator](./paginators.md#listuserspaginator)
+3. item: [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
 
 ### paginate

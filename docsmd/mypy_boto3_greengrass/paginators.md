@@ -21,6 +21,23 @@ def get_list_bulk_deployment_detailed_reports_paginator() -> ListBulkDeploymentD
     return Session().client("greengrass").get_paginator("list_bulk_deployment_detailed_reports")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListBulkDeploymentDetailedReportsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListBulkDeploymentDetailedReportsPaginator = client.get_paginator("list_bulk_deployment_detailed_reports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListBulkDeploymentDetailedReportsPaginator](./paginators.md#listbulkdeploymentdetailedreportspaginator)
+3. item: [:material-code-braces: ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_bulk_deployments_paginator() -> ListBulkDeploymentsPaginator:
     return Session().client("greengrass").get_paginator("list_bulk_deployments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListBulkDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListBulkDeploymentsPaginator = client.get_paginator("list_bulk_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListBulkDeploymentsPaginator](./paginators.md#listbulkdeploymentspaginator)
+3. item: [:material-code-braces: ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_greengrass.paginator import ListConnectorDefinitionVersionsPagin
 def get_list_connector_definition_versions_paginator() -> ListConnectorDefinitionVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_connector_definition_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListConnectorDefinitionVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListConnectorDefinitionVersionsPaginator = client.get_paginator("list_connector_definition_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListConnectorDefinitionVersionsPaginator](./paginators.md#listconnectordefinitionversionspaginator)
+3. item: [:material-code-braces: ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ def get_list_connector_definitions_paginator() -> ListConnectorDefinitionsPagina
     return Session().client("greengrass").get_paginator("list_connector_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListConnectorDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListConnectorDefinitionsPaginator = client.get_paginator("list_connector_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListConnectorDefinitionsPaginator](./paginators.md#listconnectordefinitionspaginator)
+3. item: [:material-code-braces: ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_greengrass.paginator import ListCoreDefinitionVersionsPaginator
 def get_list_core_definition_versions_paginator() -> ListCoreDefinitionVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_core_definition_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListCoreDefinitionVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListCoreDefinitionVersionsPaginator = client.get_paginator("list_core_definition_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListCoreDefinitionVersionsPaginator](./paginators.md#listcoredefinitionversionspaginator)
+3. item: [:material-code-braces: ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef) 
 
 
 ### paginate
@@ -229,6 +314,23 @@ def get_list_core_definitions_paginator() -> ListCoreDefinitionsPaginator:
     return Session().client("greengrass").get_paginator("list_core_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListCoreDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListCoreDefinitionsPaginator = client.get_paginator("list_core_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListCoreDefinitionsPaginator](./paginators.md#listcoredefinitionspaginator)
+3. item: [:material-code-braces: ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -269,6 +371,23 @@ from mypy_boto3_greengrass.paginator import ListDeploymentsPaginator
 def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return Session().client("greengrass").get_paginator("list_deployments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListDeploymentsPaginator = client.get_paginator("list_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
+3. item: [:material-code-braces: ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef) 
 
 
 ### paginate
@@ -312,6 +431,23 @@ def get_list_device_definition_versions_paginator() -> ListDeviceDefinitionVersi
     return Session().client("greengrass").get_paginator("list_device_definition_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListDeviceDefinitionVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListDeviceDefinitionVersionsPaginator = client.get_paginator("list_device_definition_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListDeviceDefinitionVersionsPaginator](./paginators.md#listdevicedefinitionversionspaginator)
+3. item: [:material-code-braces: ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -354,6 +490,23 @@ def get_list_device_definitions_paginator() -> ListDeviceDefinitionsPaginator:
     return Session().client("greengrass").get_paginator("list_device_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListDeviceDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListDeviceDefinitionsPaginator = client.get_paginator("list_device_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListDeviceDefinitionsPaginator](./paginators.md#listdevicedefinitionspaginator)
+3. item: [:material-code-braces: ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -394,6 +547,23 @@ from mypy_boto3_greengrass.paginator import ListFunctionDefinitionVersionsPagina
 def get_list_function_definition_versions_paginator() -> ListFunctionDefinitionVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_function_definition_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListFunctionDefinitionVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListFunctionDefinitionVersionsPaginator = client.get_paginator("list_function_definition_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListFunctionDefinitionVersionsPaginator](./paginators.md#listfunctiondefinitionversionspaginator)
+3. item: [:material-code-braces: ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef) 
 
 
 ### paginate
@@ -437,6 +607,23 @@ def get_list_function_definitions_paginator() -> ListFunctionDefinitionsPaginato
     return Session().client("greengrass").get_paginator("list_function_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListFunctionDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListFunctionDefinitionsPaginator = client.get_paginator("list_function_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListFunctionDefinitionsPaginator](./paginators.md#listfunctiondefinitionspaginator)
+3. item: [:material-code-braces: ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -477,6 +664,23 @@ from mypy_boto3_greengrass.paginator import ListGroupVersionsPaginator
 def get_list_group_versions_paginator() -> ListGroupVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_group_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListGroupVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListGroupVersionsPaginator = client.get_paginator("list_group_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListGroupVersionsPaginator](./paginators.md#listgroupversionspaginator)
+3. item: [:material-code-braces: ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef) 
 
 
 ### paginate
@@ -520,6 +724,23 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("greengrass").get_paginator("list_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListGroupsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListGroupsPaginator = client.get_paginator("list_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+3. item: [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -560,6 +781,23 @@ from mypy_boto3_greengrass.paginator import ListLoggerDefinitionVersionsPaginato
 def get_list_logger_definition_versions_paginator() -> ListLoggerDefinitionVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_logger_definition_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListLoggerDefinitionVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListLoggerDefinitionVersionsPaginator = client.get_paginator("list_logger_definition_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListLoggerDefinitionVersionsPaginator](./paginators.md#listloggerdefinitionversionspaginator)
+3. item: [:material-code-braces: ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef) 
 
 
 ### paginate
@@ -603,6 +841,23 @@ def get_list_logger_definitions_paginator() -> ListLoggerDefinitionsPaginator:
     return Session().client("greengrass").get_paginator("list_logger_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListLoggerDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListLoggerDefinitionsPaginator = client.get_paginator("list_logger_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListLoggerDefinitionsPaginator](./paginators.md#listloggerdefinitionspaginator)
+3. item: [:material-code-braces: ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -643,6 +898,23 @@ from mypy_boto3_greengrass.paginator import ListResourceDefinitionVersionsPagina
 def get_list_resource_definition_versions_paginator() -> ListResourceDefinitionVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_resource_definition_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListResourceDefinitionVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListResourceDefinitionVersionsPaginator = client.get_paginator("list_resource_definition_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListResourceDefinitionVersionsPaginator](./paginators.md#listresourcedefinitionversionspaginator)
+3. item: [:material-code-braces: ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef) 
 
 
 ### paginate
@@ -686,6 +958,23 @@ def get_list_resource_definitions_paginator() -> ListResourceDefinitionsPaginato
     return Session().client("greengrass").get_paginator("list_resource_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListResourceDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListResourceDefinitionsPaginator = client.get_paginator("list_resource_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListResourceDefinitionsPaginator](./paginators.md#listresourcedefinitionspaginator)
+3. item: [:material-code-braces: ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -726,6 +1015,23 @@ from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionVersionsPa
 def get_list_subscription_definition_versions_paginator() -> ListSubscriptionDefinitionVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_subscription_definition_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListSubscriptionDefinitionVersionsPaginator = client.get_paginator("list_subscription_definition_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListSubscriptionDefinitionVersionsPaginator](./paginators.md#listsubscriptiondefinitionversionspaginator)
+3. item: [:material-code-braces: ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef) 
 
 
 ### paginate
@@ -768,6 +1074,23 @@ from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionsPaginator
 def get_list_subscription_definitions_paginator() -> ListSubscriptionDefinitionsPaginator:
     return Session().client("greengrass").get_paginator("list_subscription_definitions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("greengrass")  # (1)
+paginator: ListSubscriptionDefinitionsPaginator = client.get_paginator("list_subscription_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassClient](./client.md)
+2. paginator: [ListSubscriptionDefinitionsPaginator](./paginators.md#listsubscriptiondefinitionspaginator)
+3. item: [:material-code-braces: ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef) 
 
 
 ### paginate

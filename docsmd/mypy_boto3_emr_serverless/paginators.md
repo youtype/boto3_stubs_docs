@@ -21,6 +21,23 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("emr-serverless").get_paginator("list_applications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr_serverless.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("emr-serverless")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRServerlessClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_emr_serverless.paginator import ListJobRunsPaginator
 def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return Session().client("emr-serverless").get_paginator("list_job_runs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr_serverless.paginator import ListJobRunsPaginator
+
+session = Session()
+
+client = Session().client("emr-serverless")  # (1)
+paginator: ListJobRunsPaginator = client.get_paginator("list_job_runs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRServerlessClient](./client.md)
+2. paginator: [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
+3. item: [:material-code-braces: ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef) 
 
 
 ### paginate

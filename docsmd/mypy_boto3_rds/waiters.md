@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBClusterAvailableWaiter
 
-def get_db_cluster_available_waiter() -> DBClusterAvailableWaiter:
-    return Session().client("rds").get_waiter("db_cluster_available")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBClusterAvailableWaiter = client.get_waiter("db_cluster_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBClusterAvailableWaiter](./waiters.md#dbclusteravailablewaiter)
 
 
 ### wait
@@ -63,9 +70,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBClusterDeletedWaiter
 
-def get_db_cluster_deleted_waiter() -> DBClusterDeletedWaiter:
-    return Session().client("rds").get_waiter("db_cluster_deleted")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBClusterDeletedWaiter = client.get_waiter("db_cluster_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBClusterDeletedWaiter](./waiters.md#dbclusterdeletedwaiter)
 
 
 ### wait
@@ -109,9 +123,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter
 
-def get_db_cluster_snapshot_available_waiter() -> DBClusterSnapshotAvailableWaiter:
-    return Session().client("rds").get_waiter("db_cluster_snapshot_available")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBClusterSnapshotAvailableWaiter = client.get_waiter("db_cluster_snapshot_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
 
 
 ### wait
@@ -158,9 +179,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBClusterSnapshotDeletedWaiter
 
-def get_db_cluster_snapshot_deleted_waiter() -> DBClusterSnapshotDeletedWaiter:
-    return Session().client("rds").get_waiter("db_cluster_snapshot_deleted")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBClusterSnapshotDeletedWaiter = client.get_waiter("db_cluster_snapshot_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBClusterSnapshotDeletedWaiter](./waiters.md#dbclustersnapshotdeletedwaiter)
 
 
 ### wait
@@ -207,9 +235,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBInstanceAvailableWaiter
 
-def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
-    return Session().client("rds").get_waiter("db_instance_available")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBInstanceAvailableWaiter = client.get_waiter("db_instance_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
 
 
 ### wait
@@ -252,9 +287,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBInstanceDeletedWaiter
 
-def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
-    return Session().client("rds").get_waiter("db_instance_deleted")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBInstanceDeletedWaiter = client.get_waiter("db_instance_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
 
 
 ### wait
@@ -297,9 +339,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBSnapshotAvailableWaiter
 
-def get_db_snapshot_available_waiter() -> DBSnapshotAvailableWaiter:
-    return Session().client("rds").get_waiter("db_snapshot_available")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBSnapshotAvailableWaiter = client.get_waiter("db_snapshot_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBSnapshotAvailableWaiter](./waiters.md#dbsnapshotavailablewaiter)
 
 
 ### wait
@@ -347,9 +396,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBSnapshotCompletedWaiter
 
-def get_db_snapshot_completed_waiter() -> DBSnapshotCompletedWaiter:
-    return Session().client("rds").get_waiter("db_snapshot_completed")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBSnapshotCompletedWaiter = client.get_waiter("db_snapshot_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBSnapshotCompletedWaiter](./waiters.md#dbsnapshotcompletedwaiter)
 
 
 ### wait
@@ -397,9 +453,16 @@ from boto3.session import Session
 
 from mypy_boto3_rds.waiter import DBSnapshotDeletedWaiter
 
-def get_db_snapshot_deleted_waiter() -> DBSnapshotDeletedWaiter:
-    return Session().client("rds").get_waiter("db_snapshot_deleted")
+
+session = Session()
+
+client = session.client("rds")  # (1)
+waiter: DBSnapshotDeletedWaiter = client.get_waiter("db_snapshot_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RDSClient](./client.md)
+2. waiter: [DBSnapshotDeletedWaiter](./waiters.md#dbsnapshotdeletedwaiter)
 
 
 ### wait

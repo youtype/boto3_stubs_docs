@@ -21,6 +21,23 @@ def get_get_apis_paginator() -> GetApisPaginator:
     return Session().client("apigatewayv2").get_paginator("get_apis")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetApisPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetApisPaginator = client.get_paginator("get_apis")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetApisPaginator](./paginators.md#getapispaginator)
+3. item: [:material-code-braces: GetApisResponseTypeDef](./type_defs.md#getapisresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_apigatewayv2.paginator import GetAuthorizersPaginator
 def get_get_authorizers_paginator() -> GetAuthorizersPaginator:
     return Session().client("apigatewayv2").get_paginator("get_authorizers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetAuthorizersPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetAuthorizersPaginator = client.get_paginator("get_authorizers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetAuthorizersPaginator](./paginators.md#getauthorizerspaginator)
+3. item: [:material-code-braces: GetAuthorizersResponseTypeDef](./type_defs.md#getauthorizersresponsetypedef) 
 
 
 ### paginate
@@ -104,6 +138,23 @@ def get_get_deployments_paginator() -> GetDeploymentsPaginator:
     return Session().client("apigatewayv2").get_paginator("get_deployments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetDeploymentsPaginator = client.get_paginator("get_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetDeploymentsPaginator](./paginators.md#getdeploymentspaginator)
+3. item: [:material-code-braces: GetDeploymentsResponseTypeDef](./type_defs.md#getdeploymentsresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ def get_get_domain_names_paginator() -> GetDomainNamesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_domain_names")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetDomainNamesPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetDomainNamesPaginator = client.get_paginator("get_domain_names")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetDomainNamesPaginator](./paginators.md#getdomainnamespaginator)
+3. item: [:material-code-braces: GetDomainNamesResponseTypeDef](./type_defs.md#getdomainnamesresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_apigatewayv2.paginator import GetIntegrationResponsesPaginator
 def get_get_integration_responses_paginator() -> GetIntegrationResponsesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_integration_responses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetIntegrationResponsesPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetIntegrationResponsesPaginator = client.get_paginator("get_integration_responses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetIntegrationResponsesPaginator](./paginators.md#getintegrationresponsespaginator)
+3. item: [:material-code-braces: GetIntegrationResponsesResponseTypeDef](./type_defs.md#getintegrationresponsesresponsetypedef) 
 
 
 ### paginate
@@ -231,6 +316,23 @@ def get_get_integrations_paginator() -> GetIntegrationsPaginator:
     return Session().client("apigatewayv2").get_paginator("get_integrations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetIntegrationsPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetIntegrationsPaginator = client.get_paginator("get_integrations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetIntegrationsPaginator](./paginators.md#getintegrationspaginator)
+3. item: [:material-code-braces: GetIntegrationsResponseTypeDef](./type_defs.md#getintegrationsresponsetypedef) 
+
 
 ### paginate
 
@@ -273,6 +375,23 @@ def get_get_models_paginator() -> GetModelsPaginator:
     return Session().client("apigatewayv2").get_paginator("get_models")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetModelsPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetModelsPaginator = client.get_paginator("get_models")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetModelsPaginator](./paginators.md#getmodelspaginator)
+3. item: [:material-code-braces: GetModelsResponseTypeDef](./type_defs.md#getmodelsresponsetypedef) 
+
 
 ### paginate
 
@@ -314,6 +433,23 @@ from mypy_boto3_apigatewayv2.paginator import GetRouteResponsesPaginator
 def get_get_route_responses_paginator() -> GetRouteResponsesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_route_responses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetRouteResponsesPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetRouteResponsesPaginator = client.get_paginator("get_route_responses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetRouteResponsesPaginator](./paginators.md#getrouteresponsespaginator)
+3. item: [:material-code-braces: GetRouteResponsesResponseTypeDef](./type_defs.md#getrouteresponsesresponsetypedef) 
 
 
 ### paginate
@@ -359,6 +495,23 @@ def get_get_routes_paginator() -> GetRoutesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_routes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetRoutesPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetRoutesPaginator = client.get_paginator("get_routes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetRoutesPaginator](./paginators.md#getroutespaginator)
+3. item: [:material-code-braces: GetRoutesResponseTypeDef](./type_defs.md#getroutesresponsetypedef) 
+
 
 ### paginate
 
@@ -400,6 +553,23 @@ from mypy_boto3_apigatewayv2.paginator import GetStagesPaginator
 def get_get_stages_paginator() -> GetStagesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_stages")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigatewayv2.paginator import GetStagesPaginator
+
+session = Session()
+
+client = Session().client("apigatewayv2")  # (1)
+paginator: GetStagesPaginator = client.get_paginator("get_stages")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApiGatewayV2Client](./client.md)
+2. paginator: [GetStagesPaginator](./paginators.md#getstagespaginator)
+3. item: [:material-code-braces: GetStagesResponseTypeDef](./type_defs.md#getstagesresponsetypedef) 
 
 
 ### paginate

@@ -604,6 +604,43 @@ class Ec2MetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: Ec2PlatformType](./literals.md#ec2platformtype) 
+## EcrRescanDurationStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import EcrRescanDurationStateTypeDef
+
+def get_value() -> EcrRescanDurationStateTypeDef:
+    return {
+        "rescanDuration": ...,
+    }
+```
+
+```python title="Definition"
+class EcrRescanDurationStateTypeDef(TypedDict):
+    rescanDuration: NotRequired[EcrRescanDurationType],  # (1)
+    status: NotRequired[EcrRescanDurationStatusType],  # (2)
+    updatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: EcrRescanDurationType](./literals.md#ecrrescandurationtype) 
+2. See [:material-code-brackets: EcrRescanDurationStatusType](./literals.md#ecrrescandurationstatustype) 
+## EcrConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import EcrConfigurationTypeDef
+
+def get_value() -> EcrConfigurationTypeDef:
+    return {
+        "rescanDuration": ...,
+    }
+```
+
+```python title="Definition"
+class EcrConfigurationTypeDef(TypedDict):
+    rescanDuration: EcrRescanDurationType,  # (1)
+```
+
+1. See [:material-code-brackets: EcrRescanDurationType](./literals.md#ecrrescandurationtype) 
 ## EcrContainerImageMetadataTypeDef
 
 ```python title="Usage Example"
@@ -1899,6 +1936,40 @@ class Ec2InstanceAggregationTypeDef(TypedDict):
 4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 5. See [:material-code-brackets: Ec2InstanceSortByType](./literals.md#ec2instancesortbytype) 
 6. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## EcrConfigurationStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import EcrConfigurationStateTypeDef
+
+def get_value() -> EcrConfigurationStateTypeDef:
+    return {
+        "rescanDurationState": ...,
+    }
+```
+
+```python title="Definition"
+class EcrConfigurationStateTypeDef(TypedDict):
+    rescanDurationState: NotRequired[EcrRescanDurationStateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EcrRescanDurationStateTypeDef](./type_defs.md#ecrrescandurationstatetypedef) 
+## UpdateConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import UpdateConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateConfigurationRequestRequestTypeDef:
+    return {
+        "ecrConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConfigurationRequestRequestTypeDef(TypedDict):
+    ecrConfiguration: EcrConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: EcrConfigurationTypeDef](./type_defs.md#ecrconfigurationtypedef) 
 ## ResourceScanMetadataTypeDef
 
 ```python title="Usage Example"
@@ -2457,6 +2528,26 @@ class AggregationRequestTypeDef(TypedDict):
 7. See [:material-code-braces: PackageAggregationTypeDef](./type_defs.md#packageaggregationtypedef) 
 8. See [:material-code-braces: RepositoryAggregationTypeDef](./type_defs.md#repositoryaggregationtypedef) 
 9. See [:material-code-braces: TitleAggregationTypeDef](./type_defs.md#titleaggregationtypedef) 
+## GetConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import GetConfigurationResponseTypeDef
+
+def get_value() -> GetConfigurationResponseTypeDef:
+    return {
+        "ecrConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetConfigurationResponseTypeDef(TypedDict):
+    ecrConfiguration: EcrConfigurationStateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EcrConfigurationStateTypeDef](./type_defs.md#ecrconfigurationstatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CoveredResourceTypeDef
 
 ```python title="Usage Example"
@@ -2765,6 +2856,7 @@ class CreateFilterRequestRequestTypeDef(TypedDict):
     filterCriteria: FilterCriteriaTypeDef,  # (2)
     name: str,
     description: NotRequired[str],
+    reason: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
 ```
 
@@ -2918,6 +3010,7 @@ class UpdateFilterRequestRequestTypeDef(TypedDict):
     description: NotRequired[str],
     filterCriteria: NotRequired[FilterCriteriaTypeDef],  # (2)
     name: NotRequired[str],
+    reason: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 

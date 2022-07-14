@@ -21,6 +21,23 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return Session().client("opsworkscm").get_paginator("describe_backups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator
+
+session = Session()
+
+client = Session().client("opsworkscm")  # (1)
+paginator: DescribeBackupsPaginator = client.get_paginator("describe_backups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [OpsWorksCMClient](./client.md)
+2. paginator: [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
+3. item: [:material-code-braces: DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("opsworkscm").get_paginator("describe_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworkscm.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("opsworkscm")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [OpsWorksCMClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ def get_describe_servers_paginator() -> DescribeServersPaginator:
     return Session().client("opsworkscm").get_paginator("describe_servers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworkscm.paginator import DescribeServersPaginator
+
+session = Session()
+
+client = Session().client("opsworkscm")  # (1)
+paginator: DescribeServersPaginator = client.get_paginator("describe_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [OpsWorksCMClient](./client.md)
+2. paginator: [DescribeServersPaginator](./paginators.md#describeserverspaginator)
+3. item: [:material-code-braces: DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef) 
+
 
 ### paginate
 
@@ -147,6 +198,23 @@ from mypy_boto3_opsworkscm.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("opsworkscm").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworkscm.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("opsworkscm")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [OpsWorksCMClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
 
 ### paginate

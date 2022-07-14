@@ -21,6 +21,23 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
     return Session().client("macie").get_paginator("list_member_accounts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie.paginator import ListMemberAccountsPaginator
+
+session = Session()
+
+client = Session().client("macie")  # (1)
+paginator: ListMemberAccountsPaginator = client.get_paginator("list_member_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MacieClient](./client.md)
+2. paginator: [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
+3. item: [:material-code-braces: ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_macie.paginator import ListS3ResourcesPaginator
 def get_list_s3_resources_paginator() -> ListS3ResourcesPaginator:
     return Session().client("macie").get_paginator("list_s3_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie.paginator import ListS3ResourcesPaginator
+
+session = Session()
+
+client = Session().client("macie")  # (1)
+paginator: ListS3ResourcesPaginator = client.get_paginator("list_s3_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MacieClient](./client.md)
+2. paginator: [ListS3ResourcesPaginator](./paginators.md#lists3resourcespaginator)
+3. item: [:material-code-braces: ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_list_actions_paginator() -> ListActionsPaginator:
     return Session().client("sagemaker").get_paginator("list_actions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListActionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListActionsPaginator = client.get_paginator("list_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListActionsPaginator](./paginators.md#listactionspaginator)
+3. item: [:material-code-braces: ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef) 
+
 
 ### paginate
 
@@ -70,6 +87,23 @@ def get_list_algorithms_paginator() -> ListAlgorithmsPaginator:
     return Session().client("sagemaker").get_paginator("list_algorithms")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListAlgorithmsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListAlgorithmsPaginator = client.get_paginator("list_algorithms")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListAlgorithmsPaginator](./paginators.md#listalgorithmspaginator)
+3. item: [:material-code-braces: ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef) 
+
 
 ### paginate
 
@@ -117,6 +151,23 @@ from mypy_boto3_sagemaker.paginator import ListAppImageConfigsPaginator
 def get_list_app_image_configs_paginator() -> ListAppImageConfigsPaginator:
     return Session().client("sagemaker").get_paginator("list_app_image_configs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListAppImageConfigsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListAppImageConfigsPaginator = client.get_paginator("list_app_image_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListAppImageConfigsPaginator](./paginators.md#listappimageconfigspaginator)
+3. item: [:material-code-braces: ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef) 
 
 
 ### paginate
@@ -168,6 +219,23 @@ def get_list_apps_paginator() -> ListAppsPaginator:
     return Session().client("sagemaker").get_paginator("list_apps")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListAppsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListAppsPaginator = client.get_paginator("list_apps")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListAppsPaginator](./paginators.md#listappspaginator)
+3. item: [:material-code-braces: ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef) 
+
 
 ### paginate
 
@@ -214,6 +282,23 @@ from mypy_boto3_sagemaker.paginator import ListArtifactsPaginator
 def get_list_artifacts_paginator() -> ListArtifactsPaginator:
     return Session().client("sagemaker").get_paginator("list_artifacts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListArtifactsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListArtifactsPaginator = client.get_paginator("list_artifacts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListArtifactsPaginator](./paginators.md#listartifactspaginator)
+3. item: [:material-code-braces: ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef) 
 
 
 ### paginate
@@ -263,6 +348,23 @@ from mypy_boto3_sagemaker.paginator import ListAssociationsPaginator
 def get_list_associations_paginator() -> ListAssociationsPaginator:
     return Session().client("sagemaker").get_paginator("list_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListAssociationsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListAssociationsPaginator = client.get_paginator("list_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListAssociationsPaginator](./paginators.md#listassociationspaginator)
+3. item: [:material-code-braces: ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef) 
 
 
 ### paginate
@@ -317,6 +419,23 @@ def get_list_auto_ml_jobs_paginator() -> ListAutoMLJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_auto_ml_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListAutoMLJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListAutoMLJobsPaginator = client.get_paginator("list_auto_ml_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListAutoMLJobsPaginator](./paginators.md#listautomljobspaginator)
+3. item: [:material-code-braces: ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef) 
+
 
 ### paginate
 
@@ -369,6 +488,23 @@ def get_list_candidates_for_auto_ml_job_paginator() -> ListCandidatesForAutoMLJo
     return Session().client("sagemaker").get_paginator("list_candidates_for_auto_ml_job")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListCandidatesForAutoMLJobPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListCandidatesForAutoMLJobPaginator = client.get_paginator("list_candidates_for_auto_ml_job")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListCandidatesForAutoMLJobPaginator](./paginators.md#listcandidatesforautomljobpaginator)
+3. item: [:material-code-braces: ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef) 
+
 
 ### paginate
 
@@ -417,6 +553,23 @@ from mypy_boto3_sagemaker.paginator import ListCodeRepositoriesPaginator
 def get_list_code_repositories_paginator() -> ListCodeRepositoriesPaginator:
     return Session().client("sagemaker").get_paginator("list_code_repositories")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListCodeRepositoriesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListCodeRepositoriesPaginator = client.get_paginator("list_code_repositories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListCodeRepositoriesPaginator](./paginators.md#listcoderepositoriespaginator)
+3. item: [:material-code-braces: ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef) 
 
 
 ### paginate
@@ -467,6 +620,23 @@ from mypy_boto3_sagemaker.paginator import ListCompilationJobsPaginator
 def get_list_compilation_jobs_paginator() -> ListCompilationJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_compilation_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListCompilationJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListCompilationJobsPaginator = client.get_paginator("list_compilation_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListCompilationJobsPaginator](./paginators.md#listcompilationjobspaginator)
+3. item: [:material-code-braces: ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef) 
 
 
 ### paginate
@@ -520,6 +690,23 @@ def get_list_contexts_paginator() -> ListContextsPaginator:
     return Session().client("sagemaker").get_paginator("list_contexts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListContextsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListContextsPaginator = client.get_paginator("list_contexts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListContextsPaginator](./paginators.md#listcontextspaginator)
+3. item: [:material-code-braces: ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef) 
+
 
 ### paginate
 
@@ -569,6 +756,23 @@ def get_list_data_quality_job_definitions_paginator() -> ListDataQualityJobDefin
     return Session().client("sagemaker").get_paginator("list_data_quality_job_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListDataQualityJobDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListDataQualityJobDefinitionsPaginator = client.get_paginator("list_data_quality_job_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListDataQualityJobDefinitionsPaginator](./paginators.md#listdataqualityjobdefinitionspaginator)
+3. item: [:material-code-braces: ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -617,6 +821,23 @@ from mypy_boto3_sagemaker.paginator import ListDeviceFleetsPaginator
 def get_list_device_fleets_paginator() -> ListDeviceFleetsPaginator:
     return Session().client("sagemaker").get_paginator("list_device_fleets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListDeviceFleetsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListDeviceFleetsPaginator = client.get_paginator("list_device_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListDeviceFleetsPaginator](./paginators.md#listdevicefleetspaginator)
+3. item: [:material-code-braces: ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef) 
 
 
 ### paginate
@@ -668,6 +889,23 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
     return Session().client("sagemaker").get_paginator("list_devices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListDevicesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListDevicesPaginator = client.get_paginator("list_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+3. item: [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
+
 
 ### paginate
 
@@ -712,6 +950,23 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("sagemaker").get_paginator("list_domains")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListDomainsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListDomainsPaginator = client.get_paginator("list_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+3. item: [:material-code-braces: ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef) 
+
 
 ### paginate
 
@@ -752,6 +1007,23 @@ from mypy_boto3_sagemaker.paginator import ListEdgePackagingJobsPaginator
 def get_list_edge_packaging_jobs_paginator() -> ListEdgePackagingJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_edge_packaging_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListEdgePackagingJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListEdgePackagingJobsPaginator = client.get_paginator("list_edge_packaging_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListEdgePackagingJobsPaginator](./paginators.md#listedgepackagingjobspaginator)
+3. item: [:material-code-braces: ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef) 
 
 
 ### paginate
@@ -806,6 +1078,23 @@ def get_list_endpoint_configs_paginator() -> ListEndpointConfigsPaginator:
     return Session().client("sagemaker").get_paginator("list_endpoint_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListEndpointConfigsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListEndpointConfigsPaginator = client.get_paginator("list_endpoint_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListEndpointConfigsPaginator](./paginators.md#listendpointconfigspaginator)
+3. item: [:material-code-braces: ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef) 
+
 
 ### paginate
 
@@ -853,6 +1142,23 @@ from mypy_boto3_sagemaker.paginator import ListEndpointsPaginator
 def get_list_endpoints_paginator() -> ListEndpointsPaginator:
     return Session().client("sagemaker").get_paginator("list_endpoints")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListEndpointsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListEndpointsPaginator = client.get_paginator("list_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+3. item: [:material-code-braces: ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef) 
 
 
 ### paginate
@@ -906,6 +1212,23 @@ def get_list_experiments_paginator() -> ListExperimentsPaginator:
     return Session().client("sagemaker").get_paginator("list_experiments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListExperimentsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListExperimentsPaginator = client.get_paginator("list_experiments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListExperimentsPaginator](./paginators.md#listexperimentspaginator)
+3. item: [:material-code-braces: ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef) 
+
 
 ### paginate
 
@@ -952,6 +1275,23 @@ from mypy_boto3_sagemaker.paginator import ListFeatureGroupsPaginator
 def get_list_feature_groups_paginator() -> ListFeatureGroupsPaginator:
     return Session().client("sagemaker").get_paginator("list_feature_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListFeatureGroupsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListFeatureGroupsPaginator = client.get_paginator("list_feature_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListFeatureGroupsPaginator](./paginators.md#listfeaturegroupspaginator)
+3. item: [:material-code-braces: ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef) 
 
 
 ### paginate
@@ -1005,6 +1345,23 @@ def get_list_flow_definitions_paginator() -> ListFlowDefinitionsPaginator:
     return Session().client("sagemaker").get_paginator("list_flow_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListFlowDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListFlowDefinitionsPaginator = client.get_paginator("list_flow_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListFlowDefinitionsPaginator](./paginators.md#listflowdefinitionspaginator)
+3. item: [:material-code-braces: ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -1050,6 +1407,23 @@ def get_list_human_task_uis_paginator() -> ListHumanTaskUisPaginator:
     return Session().client("sagemaker").get_paginator("list_human_task_uis")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListHumanTaskUisPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListHumanTaskUisPaginator = client.get_paginator("list_human_task_uis")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListHumanTaskUisPaginator](./paginators.md#listhumantaskuispaginator)
+3. item: [:material-code-braces: ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef) 
+
 
 ### paginate
 
@@ -1094,6 +1468,23 @@ from mypy_boto3_sagemaker.paginator import ListHyperParameterTuningJobsPaginator
 def get_list_hyper_parameter_tuning_jobs_paginator() -> ListHyperParameterTuningJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_hyper_parameter_tuning_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListHyperParameterTuningJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListHyperParameterTuningJobsPaginator = client.get_paginator("list_hyper_parameter_tuning_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListHyperParameterTuningJobsPaginator](./paginators.md#listhyperparametertuningjobspaginator)
+3. item: [:material-code-braces: ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef) 
 
 
 ### paginate
@@ -1147,6 +1538,23 @@ def get_list_image_versions_paginator() -> ListImageVersionsPaginator:
     return Session().client("sagemaker").get_paginator("list_image_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListImageVersionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListImageVersionsPaginator = client.get_paginator("list_image_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListImageVersionsPaginator](./paginators.md#listimageversionspaginator)
+3. item: [:material-code-braces: ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -1197,6 +1605,23 @@ def get_list_images_paginator() -> ListImagesPaginator:
     return Session().client("sagemaker").get_paginator("list_images")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListImagesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListImagesPaginator = client.get_paginator("list_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListImagesPaginator](./paginators.md#listimagespaginator)
+3. item: [:material-code-braces: ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef) 
+
 
 ### paginate
 
@@ -1246,6 +1671,23 @@ from mypy_boto3_sagemaker.paginator import ListInferenceRecommendationsJobsPagin
 def get_list_inference_recommendations_jobs_paginator() -> ListInferenceRecommendationsJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_inference_recommendations_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListInferenceRecommendationsJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListInferenceRecommendationsJobsPaginator = client.get_paginator("list_inference_recommendations_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListInferenceRecommendationsJobsPaginator](./paginators.md#listinferencerecommendationsjobspaginator)
+3. item: [:material-code-braces: ListInferenceRecommendationsJobsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobsresponsetypedef) 
 
 
 ### paginate
@@ -1299,6 +1741,23 @@ def get_list_labeling_jobs_paginator() -> ListLabelingJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_labeling_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListLabelingJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListLabelingJobsPaginator = client.get_paginator("list_labeling_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListLabelingJobsPaginator](./paginators.md#listlabelingjobspaginator)
+3. item: [:material-code-braces: ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -1351,6 +1810,23 @@ def get_list_labeling_jobs_for_workteam_paginator() -> ListLabelingJobsForWorkte
     return Session().client("sagemaker").get_paginator("list_labeling_jobs_for_workteam")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListLabelingJobsForWorkteamPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListLabelingJobsForWorkteamPaginator = client.get_paginator("list_labeling_jobs_for_workteam")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListLabelingJobsForWorkteamPaginator](./paginators.md#listlabelingjobsforworkteampaginator)
+3. item: [:material-code-braces: ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef) 
+
 
 ### paginate
 
@@ -1400,6 +1876,23 @@ def get_list_lineage_groups_paginator() -> ListLineageGroupsPaginator:
     return Session().client("sagemaker").get_paginator("list_lineage_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListLineageGroupsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListLineageGroupsPaginator = client.get_paginator("list_lineage_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListLineageGroupsPaginator](./paginators.md#listlineagegroupspaginator)
+3. item: [:material-code-braces: ListLineageGroupsResponseTypeDef](./type_defs.md#listlineagegroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -1446,6 +1939,23 @@ from mypy_boto3_sagemaker.paginator import ListModelBiasJobDefinitionsPaginator
 def get_list_model_bias_job_definitions_paginator() -> ListModelBiasJobDefinitionsPaginator:
     return Session().client("sagemaker").get_paginator("list_model_bias_job_definitions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelBiasJobDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelBiasJobDefinitionsPaginator = client.get_paginator("list_model_bias_job_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelBiasJobDefinitionsPaginator](./paginators.md#listmodelbiasjobdefinitionspaginator)
+3. item: [:material-code-braces: ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef) 
 
 
 ### paginate
@@ -1496,6 +2006,23 @@ def get_list_model_explainability_job_definitions_paginator() -> ListModelExplai
     return Session().client("sagemaker").get_paginator("list_model_explainability_job_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelExplainabilityJobDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelExplainabilityJobDefinitionsPaginator = client.get_paginator("list_model_explainability_job_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelExplainabilityJobDefinitionsPaginator](./paginators.md#listmodelexplainabilityjobdefinitionspaginator)
+3. item: [:material-code-braces: ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -1545,6 +2072,23 @@ def get_list_model_metadata_paginator() -> ListModelMetadataPaginator:
     return Session().client("sagemaker").get_paginator("list_model_metadata")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelMetadataPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelMetadataPaginator = client.get_paginator("list_model_metadata")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelMetadataPaginator](./paginators.md#listmodelmetadatapaginator)
+3. item: [:material-code-braces: ListModelMetadataResponseTypeDef](./type_defs.md#listmodelmetadataresponsetypedef) 
+
 
 ### paginate
 
@@ -1587,6 +2131,23 @@ from mypy_boto3_sagemaker.paginator import ListModelPackageGroupsPaginator
 def get_list_model_package_groups_paginator() -> ListModelPackageGroupsPaginator:
     return Session().client("sagemaker").get_paginator("list_model_package_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelPackageGroupsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelPackageGroupsPaginator = client.get_paginator("list_model_package_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelPackageGroupsPaginator](./paginators.md#listmodelpackagegroupspaginator)
+3. item: [:material-code-braces: ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef) 
 
 
 ### paginate
@@ -1635,6 +2196,23 @@ from mypy_boto3_sagemaker.paginator import ListModelPackagesPaginator
 def get_list_model_packages_paginator() -> ListModelPackagesPaginator:
     return Session().client("sagemaker").get_paginator("list_model_packages")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelPackagesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelPackagesPaginator = client.get_paginator("list_model_packages")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelPackagesPaginator](./paginators.md#listmodelpackagespaginator)
+3. item: [:material-code-braces: ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef) 
 
 
 ### paginate
@@ -1689,6 +2267,23 @@ def get_list_model_quality_job_definitions_paginator() -> ListModelQualityJobDef
     return Session().client("sagemaker").get_paginator("list_model_quality_job_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelQualityJobDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelQualityJobDefinitionsPaginator = client.get_paginator("list_model_quality_job_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelQualityJobDefinitionsPaginator](./paginators.md#listmodelqualityjobdefinitionspaginator)
+3. item: [:material-code-braces: ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -1738,6 +2333,23 @@ def get_list_models_paginator() -> ListModelsPaginator:
     return Session().client("sagemaker").get_paginator("list_models")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelsPaginator = client.get_paginator("list_models")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelsPaginator](./paginators.md#listmodelspaginator)
+3. item: [:material-code-braces: ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef) 
+
 
 ### paginate
 
@@ -1785,6 +2397,23 @@ from mypy_boto3_sagemaker.paginator import ListMonitoringExecutionsPaginator
 def get_list_monitoring_executions_paginator() -> ListMonitoringExecutionsPaginator:
     return Session().client("sagemaker").get_paginator("list_monitoring_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListMonitoringExecutionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListMonitoringExecutionsPaginator = client.get_paginator("list_monitoring_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListMonitoringExecutionsPaginator](./paginators.md#listmonitoringexecutionspaginator)
+3. item: [:material-code-braces: ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef) 
 
 
 ### paginate
@@ -1844,6 +2473,23 @@ def get_list_monitoring_schedules_paginator() -> ListMonitoringSchedulesPaginato
     return Session().client("sagemaker").get_paginator("list_monitoring_schedules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListMonitoringSchedulesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListMonitoringSchedulesPaginator = client.get_paginator("list_monitoring_schedules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListMonitoringSchedulesPaginator](./paginators.md#listmonitoringschedulespaginator)
+3. item: [:material-code-braces: ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef) 
+
 
 ### paginate
 
@@ -1900,6 +2546,23 @@ def get_list_notebook_instance_lifecycle_configs_paginator() -> ListNotebookInst
     return Session().client("sagemaker").get_paginator("list_notebook_instance_lifecycle_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListNotebookInstanceLifecycleConfigsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListNotebookInstanceLifecycleConfigsPaginator = client.get_paginator("list_notebook_instance_lifecycle_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListNotebookInstanceLifecycleConfigsPaginator](./paginators.md#listnotebookinstancelifecycleconfigspaginator)
+3. item: [:material-code-braces: ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef) 
+
 
 ### paginate
 
@@ -1949,6 +2612,23 @@ from mypy_boto3_sagemaker.paginator import ListNotebookInstancesPaginator
 def get_list_notebook_instances_paginator() -> ListNotebookInstancesPaginator:
     return Session().client("sagemaker").get_paginator("list_notebook_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListNotebookInstancesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListNotebookInstancesPaginator = client.get_paginator("list_notebook_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListNotebookInstancesPaginator](./paginators.md#listnotebookinstancespaginator)
+3. item: [:material-code-braces: ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef) 
 
 
 ### paginate
@@ -2005,6 +2685,23 @@ def get_list_pipeline_execution_steps_paginator() -> ListPipelineExecutionStepsP
     return Session().client("sagemaker").get_paginator("list_pipeline_execution_steps")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListPipelineExecutionStepsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListPipelineExecutionStepsPaginator = client.get_paginator("list_pipeline_execution_steps")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListPipelineExecutionStepsPaginator](./paginators.md#listpipelineexecutionstepspaginator)
+3. item: [:material-code-braces: ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef) 
+
 
 ### paginate
 
@@ -2048,6 +2745,23 @@ from mypy_boto3_sagemaker.paginator import ListPipelineExecutionsPaginator
 def get_list_pipeline_executions_paginator() -> ListPipelineExecutionsPaginator:
     return Session().client("sagemaker").get_paginator("list_pipeline_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListPipelineExecutionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListPipelineExecutionsPaginator = client.get_paginator("list_pipeline_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
+3. item: [:material-code-braces: ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef) 
 
 
 ### paginate
@@ -2097,6 +2811,23 @@ def get_list_pipeline_parameters_for_execution_paginator() -> ListPipelineParame
     return Session().client("sagemaker").get_paginator("list_pipeline_parameters_for_execution")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListPipelineParametersForExecutionPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListPipelineParametersForExecutionPaginator = client.get_paginator("list_pipeline_parameters_for_execution")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListPipelineParametersForExecutionPaginator](./paginators.md#listpipelineparametersforexecutionpaginator)
+3. item: [:material-code-braces: ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef) 
+
 
 ### paginate
 
@@ -2138,6 +2869,23 @@ from mypy_boto3_sagemaker.paginator import ListPipelinesPaginator
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("sagemaker").get_paginator("list_pipelines")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListPipelinesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListPipelinesPaginator = client.get_paginator("list_pipelines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+3. item: [:material-code-braces: ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef) 
 
 
 ### paginate
@@ -2186,6 +2934,23 @@ from mypy_boto3_sagemaker.paginator import ListProcessingJobsPaginator
 def get_list_processing_jobs_paginator() -> ListProcessingJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_processing_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListProcessingJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListProcessingJobsPaginator = client.get_paginator("list_processing_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListProcessingJobsPaginator](./paginators.md#listprocessingjobspaginator)
+3. item: [:material-code-braces: ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef) 
 
 
 ### paginate
@@ -2239,6 +3004,23 @@ def get_list_studio_lifecycle_configs_paginator() -> ListStudioLifecycleConfigsP
     return Session().client("sagemaker").get_paginator("list_studio_lifecycle_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListStudioLifecycleConfigsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListStudioLifecycleConfigsPaginator = client.get_paginator("list_studio_lifecycle_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListStudioLifecycleConfigsPaginator](./paginators.md#liststudiolifecycleconfigspaginator)
+3. item: [:material-code-braces: ListStudioLifecycleConfigsResponseTypeDef](./type_defs.md#liststudiolifecycleconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -2291,6 +3073,23 @@ def get_list_subscribed_workteams_paginator() -> ListSubscribedWorkteamsPaginato
     return Session().client("sagemaker").get_paginator("list_subscribed_workteams")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListSubscribedWorkteamsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListSubscribedWorkteamsPaginator = client.get_paginator("list_subscribed_workteams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListSubscribedWorkteamsPaginator](./paginators.md#listsubscribedworkteamspaginator)
+3. item: [:material-code-braces: ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef) 
+
 
 ### paginate
 
@@ -2333,6 +3132,23 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("sagemaker").get_paginator("list_tags")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListTagsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListTagsPaginator = client.get_paginator("list_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListTagsPaginator](./paginators.md#listtagspaginator)
+3. item: [:material-code-braces: ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef) 
+
 
 ### paginate
 
@@ -2374,6 +3190,23 @@ from mypy_boto3_sagemaker.paginator import ListTrainingJobsPaginator
 def get_list_training_jobs_paginator() -> ListTrainingJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_training_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListTrainingJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListTrainingJobsPaginator = client.get_paginator("list_training_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListTrainingJobsPaginator](./paginators.md#listtrainingjobspaginator)
+3. item: [:material-code-braces: ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef) 
 
 
 ### paginate
@@ -2427,6 +3260,23 @@ def get_list_training_jobs_for_hyper_parameter_tuning_job_paginator() -> ListTra
     return Session().client("sagemaker").get_paginator("list_training_jobs_for_hyper_parameter_tuning_job")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListTrainingJobsForHyperParameterTuningJobPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListTrainingJobsForHyperParameterTuningJobPaginator = client.get_paginator("list_training_jobs_for_hyper_parameter_tuning_job")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListTrainingJobsForHyperParameterTuningJobPaginator](./paginators.md#listtrainingjobsforhyperparametertuningjobpaginator)
+3. item: [:material-code-braces: ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef) 
+
 
 ### paginate
 
@@ -2474,6 +3324,23 @@ from mypy_boto3_sagemaker.paginator import ListTransformJobsPaginator
 def get_list_transform_jobs_paginator() -> ListTransformJobsPaginator:
     return Session().client("sagemaker").get_paginator("list_transform_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListTransformJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListTransformJobsPaginator = client.get_paginator("list_transform_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListTransformJobsPaginator](./paginators.md#listtransformjobspaginator)
+3. item: [:material-code-braces: ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef) 
 
 
 ### paginate
@@ -2527,6 +3394,23 @@ def get_list_trial_components_paginator() -> ListTrialComponentsPaginator:
     return Session().client("sagemaker").get_paginator("list_trial_components")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListTrialComponentsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListTrialComponentsPaginator = client.get_paginator("list_trial_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListTrialComponentsPaginator](./paginators.md#listtrialcomponentspaginator)
+3. item: [:material-code-braces: ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef) 
+
 
 ### paginate
 
@@ -2577,6 +3461,23 @@ def get_list_trials_paginator() -> ListTrialsPaginator:
     return Session().client("sagemaker").get_paginator("list_trials")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListTrialsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListTrialsPaginator = client.get_paginator("list_trials")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListTrialsPaginator](./paginators.md#listtrialspaginator)
+3. item: [:material-code-braces: ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef) 
+
 
 ### paginate
 
@@ -2626,6 +3527,23 @@ def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
     return Session().client("sagemaker").get_paginator("list_user_profiles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListUserProfilesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListUserProfilesPaginator = client.get_paginator("list_user_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
+3. item: [:material-code-braces: ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef) 
+
 
 ### paginate
 
@@ -2673,6 +3591,23 @@ def get_list_workforces_paginator() -> ListWorkforcesPaginator:
     return Session().client("sagemaker").get_paginator("list_workforces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListWorkforcesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListWorkforcesPaginator = client.get_paginator("list_workforces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListWorkforcesPaginator](./paginators.md#listworkforcespaginator)
+3. item: [:material-code-braces: ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef) 
+
 
 ### paginate
 
@@ -2719,6 +3654,23 @@ def get_list_workteams_paginator() -> ListWorkteamsPaginator:
     return Session().client("sagemaker").get_paginator("list_workteams")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListWorkteamsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListWorkteamsPaginator = client.get_paginator("list_workteams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListWorkteamsPaginator](./paginators.md#listworkteamspaginator)
+3. item: [:material-code-braces: ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef) 
+
 
 ### paginate
 
@@ -2764,6 +3716,23 @@ from mypy_boto3_sagemaker.paginator import SearchPaginator
 def get_search_paginator() -> SearchPaginator:
     return Session().client("sagemaker").get_paginator("search")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import SearchPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: SearchPaginator = client.get_paginator("search")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [SearchPaginator](./paginators.md#searchpaginator)
+3. item: [:material-code-braces: SearchResponseTypeDef](./type_defs.md#searchresponsetypedef) 
 
 
 ### paginate

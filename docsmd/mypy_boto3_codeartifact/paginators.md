@@ -21,6 +21,23 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("codeartifact").get_paginator("list_domains")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeartifact.paginator import ListDomainsPaginator
+
+session = Session()
+
+client = Session().client("codeartifact")  # (1)
+paginator: ListDomainsPaginator = client.get_paginator("list_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeArtifactClient](./client.md)
+2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+3. item: [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_codeartifact.paginator import ListPackageVersionAssetsPaginator
 def get_list_package_version_assets_paginator() -> ListPackageVersionAssetsPaginator:
     return Session().client("codeartifact").get_paginator("list_package_version_assets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeartifact.paginator import ListPackageVersionAssetsPaginator
+
+session = Session()
+
+client = Session().client("codeartifact")  # (1)
+paginator: ListPackageVersionAssetsPaginator = client.get_paginator("list_package_version_assets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeArtifactClient](./client.md)
+2. paginator: [ListPackageVersionAssetsPaginator](./paginators.md#listpackageversionassetspaginator)
+3. item: [:material-code-braces: ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef) 
 
 
 ### paginate
@@ -115,6 +149,23 @@ def get_list_package_versions_paginator() -> ListPackageVersionsPaginator:
     return Session().client("codeartifact").get_paginator("list_package_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeartifact.paginator import ListPackageVersionsPaginator
+
+session = Session()
+
+client = Session().client("codeartifact")  # (1)
+paginator: ListPackageVersionsPaginator = client.get_paginator("list_package_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeArtifactClient](./client.md)
+2. paginator: [ListPackageVersionsPaginator](./paginators.md#listpackageversionspaginator)
+3. item: [:material-code-braces: ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef) 
+
 
 ### paginate
 
@@ -132,16 +183,18 @@ def paginate(
     namespace: str = ...,
     status: PackageVersionStatusType = ...,  # (2)
     sortBy: PackageVersionSortTypeType = ...,  # (3)
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
-) -> _PageIterator[ListPackageVersionsResultTypeDef]:  # (5)
+    originType: PackageVersionOriginTypeType = ...,  # (4)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (5)
+) -> _PageIterator[ListPackageVersionsResultTypeDef]:  # (6)
     ...
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
 3. See [:material-code-brackets: PackageVersionSortTypeType](./literals.md#packageversionsorttypetype) 
-4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-5. See [:material-code-braces: ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef) 
+4. See [:material-code-brackets: PackageVersionOriginTypeType](./literals.md#packageversionorigintypetype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+6. See [:material-code-braces: ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -170,6 +223,23 @@ def get_list_packages_paginator() -> ListPackagesPaginator:
     return Session().client("codeartifact").get_paginator("list_packages")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeartifact.paginator import ListPackagesPaginator
+
+session = Session()
+
+client = Session().client("codeartifact")  # (1)
+paginator: ListPackagesPaginator = client.get_paginator("list_packages")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeArtifactClient](./client.md)
+2. paginator: [ListPackagesPaginator](./paginators.md#listpackagespaginator)
+3. item: [:material-code-braces: ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef) 
+
 
 ### paginate
 
@@ -185,14 +255,18 @@ def paginate(
     format: PackageFormatType = ...,  # (1)
     namespace: str = ...,
     packagePrefix: str = ...,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
-) -> _PageIterator[ListPackagesResultTypeDef]:  # (3)
+    publish: AllowPublishType = ...,  # (2)
+    upstream: AllowUpstreamType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListPackagesResultTypeDef]:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-3. See [:material-code-braces: ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef) 
+2. See [:material-code-brackets: AllowPublishType](./literals.md#allowpublishtype) 
+3. See [:material-code-brackets: AllowUpstreamType](./literals.md#allowupstreamtype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -218,6 +292,23 @@ from mypy_boto3_codeartifact.paginator import ListRepositoriesPaginator
 def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return Session().client("codeartifact").get_paginator("list_repositories")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeartifact.paginator import ListRepositoriesPaginator
+
+session = Session()
+
+client = Session().client("codeartifact")  # (1)
+paginator: ListRepositoriesPaginator = client.get_paginator("list_repositories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeArtifactClient](./client.md)
+2. paginator: [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+3. item: [:material-code-braces: ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef) 
 
 
 ### paginate
@@ -260,6 +351,23 @@ from mypy_boto3_codeartifact.paginator import ListRepositoriesInDomainPaginator
 def get_list_repositories_in_domain_paginator() -> ListRepositoriesInDomainPaginator:
     return Session().client("codeartifact").get_paginator("list_repositories_in_domain")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codeartifact.paginator import ListRepositoriesInDomainPaginator
+
+session = Session()
+
+client = Session().client("codeartifact")  # (1)
+paginator: ListRepositoriesInDomainPaginator = client.get_paginator("list_repositories_in_domain")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeArtifactClient](./client.md)
+2. paginator: [ListRepositoriesInDomainPaginator](./paginators.md#listrepositoriesindomainpaginator)
+3. item: [:material-code-braces: ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef) 
 
 
 ### paginate

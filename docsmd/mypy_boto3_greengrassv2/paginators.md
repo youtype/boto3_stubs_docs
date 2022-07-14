@@ -21,6 +21,23 @@ def get_list_client_devices_associated_with_core_device_paginator() -> ListClien
     return Session().client("greengrassv2").get_paginator("list_client_devices_associated_with_core_device")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator
+
+session = Session()
+
+client = Session().client("greengrassv2")  # (1)
+paginator: ListClientDevicesAssociatedWithCoreDevicePaginator = client.get_paginator("list_client_devices_associated_with_core_device")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassV2Client](./client.md)
+2. paginator: [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
+3. item: [:material-code-braces: ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_greengrassv2.paginator import ListComponentVersionsPaginator
 def get_list_component_versions_paginator() -> ListComponentVersionsPaginator:
     return Session().client("greengrassv2").get_paginator("list_component_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrassv2.paginator import ListComponentVersionsPaginator
+
+session = Session()
+
+client = Session().client("greengrassv2")  # (1)
+paginator: ListComponentVersionsPaginator = client.get_paginator("list_component_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassV2Client](./client.md)
+2. paginator: [ListComponentVersionsPaginator](./paginators.md#listcomponentversionspaginator)
+3. item: [:material-code-braces: ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_components_paginator() -> ListComponentsPaginator:
     return Session().client("greengrassv2").get_paginator("list_components")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrassv2.paginator import ListComponentsPaginator
+
+session = Session()
+
+client = Session().client("greengrassv2")  # (1)
+paginator: ListComponentsPaginator = client.get_paginator("list_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassV2Client](./client.md)
+2. paginator: [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
+3. item: [:material-code-braces: ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef) 
+
 
 ### paginate
 
@@ -147,6 +198,23 @@ from mypy_boto3_greengrassv2.paginator import ListCoreDevicesPaginator
 def get_list_core_devices_paginator() -> ListCoreDevicesPaginator:
     return Session().client("greengrassv2").get_paginator("list_core_devices")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrassv2.paginator import ListCoreDevicesPaginator
+
+session = Session()
+
+client = Session().client("greengrassv2")  # (1)
+paginator: ListCoreDevicesPaginator = client.get_paginator("list_core_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassV2Client](./client.md)
+2. paginator: [ListCoreDevicesPaginator](./paginators.md#listcoredevicespaginator)
+3. item: [:material-code-braces: ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef) 
 
 
 ### paginate
@@ -192,6 +260,23 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return Session().client("greengrassv2").get_paginator("list_deployments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrassv2.paginator import ListDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("greengrassv2")  # (1)
+paginator: ListDeploymentsPaginator = client.get_paginator("list_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassV2Client](./client.md)
+2. paginator: [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
+3. item: [:material-code-braces: ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef) 
+
 
 ### paginate
 
@@ -236,6 +321,23 @@ def get_list_effective_deployments_paginator() -> ListEffectiveDeploymentsPagina
     return Session().client("greengrassv2").get_paginator("list_effective_deployments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrassv2.paginator import ListEffectiveDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("greengrassv2")  # (1)
+paginator: ListEffectiveDeploymentsPaginator = client.get_paginator("list_effective_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassV2Client](./client.md)
+2. paginator: [ListEffectiveDeploymentsPaginator](./paginators.md#listeffectivedeploymentspaginator)
+3. item: [:material-code-braces: ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef) 
+
 
 ### paginate
 
@@ -277,6 +379,23 @@ from mypy_boto3_greengrassv2.paginator import ListInstalledComponentsPaginator
 def get_list_installed_components_paginator() -> ListInstalledComponentsPaginator:
     return Session().client("greengrassv2").get_paginator("list_installed_components")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_greengrassv2.paginator import ListInstalledComponentsPaginator
+
+session = Session()
+
+client = Session().client("greengrassv2")  # (1)
+paginator: ListInstalledComponentsPaginator = client.get_paginator("list_installed_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GreengrassV2Client](./client.md)
+2. paginator: [ListInstalledComponentsPaginator](./paginators.md#listinstalledcomponentspaginator)
+3. item: [:material-code-braces: ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef) 
 
 
 ### paginate

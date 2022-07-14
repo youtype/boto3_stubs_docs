@@ -21,6 +21,23 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
     return Session().client("s3").get_paginator("list_multipart_uploads")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3.paginator import ListMultipartUploadsPaginator
+
+session = Session()
+
+client = Session().client("s3")  # (1)
+paginator: ListMultipartUploadsPaginator = client.get_paginator("list_multipart_uploads")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [S3Client](./client.md)
+2. paginator: [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
+3. item: [:material-code-braces: ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef) 
+
 
 ### paginate
 
@@ -68,6 +85,23 @@ def get_list_object_versions_paginator() -> ListObjectVersionsPaginator:
     return Session().client("s3").get_paginator("list_object_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3.paginator import ListObjectVersionsPaginator
+
+session = Session()
+
+client = Session().client("s3")  # (1)
+paginator: ListObjectVersionsPaginator = client.get_paginator("list_object_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [S3Client](./client.md)
+2. paginator: [ListObjectVersionsPaginator](./paginators.md#listobjectversionspaginator)
+3. item: [:material-code-braces: ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef) 
+
 
 ### paginate
 
@@ -114,6 +148,23 @@ from mypy_boto3_s3.paginator import ListObjectsPaginator
 def get_list_objects_paginator() -> ListObjectsPaginator:
     return Session().client("s3").get_paginator("list_objects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3.paginator import ListObjectsPaginator
+
+session = Session()
+
+client = Session().client("s3")  # (1)
+paginator: ListObjectsPaginator = client.get_paginator("list_objects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [S3Client](./client.md)
+2. paginator: [ListObjectsPaginator](./paginators.md#listobjectspaginator)
+3. item: [:material-code-braces: ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef) 
 
 
 ### paginate
@@ -163,6 +214,23 @@ from mypy_boto3_s3.paginator import ListObjectsV2Paginator
 def get_list_objects_v2_paginator() -> ListObjectsV2Paginator:
     return Session().client("s3").get_paginator("list_objects_v2")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3.paginator import ListObjectsV2Paginator
+
+session = Session()
+
+client = Session().client("s3")  # (1)
+paginator: ListObjectsV2Paginator = client.get_paginator("list_objects_v2")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [S3Client](./client.md)
+2. paginator: [ListObjectsV2Paginator](./paginators.md#listobjectsv2paginator)
+3. item: [:material-code-braces: ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef) 
 
 
 ### paginate
@@ -214,6 +282,23 @@ from mypy_boto3_s3.paginator import ListPartsPaginator
 def get_list_parts_paginator() -> ListPartsPaginator:
     return Session().client("s3").get_paginator("list_parts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3.paginator import ListPartsPaginator
+
+session = Session()
+
+client = Session().client("s3")  # (1)
+paginator: ListPartsPaginator = client.get_paginator("list_parts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [S3Client](./client.md)
+2. paginator: [ListPartsPaginator](./paginators.md#listpartspaginator)
+3. item: [:material-code-braces: ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef) 
 
 
 ### paginate

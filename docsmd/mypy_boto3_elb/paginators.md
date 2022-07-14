@@ -21,6 +21,23 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return Session().client("elb").get_paginator("describe_account_limits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elb.paginator import DescribeAccountLimitsPaginator
+
+session = Session()
+
+client = Session().client("elb")  # (1)
+paginator: DescribeAccountLimitsPaginator = client.get_paginator("describe_account_limits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticLoadBalancingClient](./client.md)
+2. paginator: [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
+3. item: [:material-code-braces: DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_elb.paginator import DescribeLoadBalancersPaginator
 def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return Session().client("elb").get_paginator("describe_load_balancers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elb.paginator import DescribeLoadBalancersPaginator
+
+session = Session()
+
+client = Session().client("elb")  # (1)
+paginator: DescribeLoadBalancersPaginator = client.get_paginator("describe_load_balancers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticLoadBalancingClient](./client.md)
+2. paginator: [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
+3. item: [:material-code-braces: DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef) 
 
 
 ### paginate

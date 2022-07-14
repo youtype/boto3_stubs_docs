@@ -21,6 +21,23 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return Session().client("cloudhsmv2").get_paginator("describe_backups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudhsmv2.paginator import DescribeBackupsPaginator
+
+session = Session()
+
+client = Session().client("cloudhsmv2")  # (1)
+paginator: DescribeBackupsPaginator = client.get_paginator("describe_backups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudHSMV2Client](./client.md)
+2. paginator: [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
+3. item: [:material-code-braces: DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return Session().client("cloudhsmv2").get_paginator("describe_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudhsmv2.paginator import DescribeClustersPaginator
+
+session = Session()
+
+client = Session().client("cloudhsmv2")  # (1)
+paginator: DescribeClustersPaginator = client.get_paginator("describe_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudHSMV2Client](./client.md)
+2. paginator: [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+3. item: [:material-code-braces: DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_cloudhsmv2.paginator import ListTagsPaginator
 def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("cloudhsmv2").get_paginator("list_tags")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudhsmv2.paginator import ListTagsPaginator
+
+session = Session()
+
+client = Session().client("cloudhsmv2")  # (1)
+paginator: ListTagsPaginator = client.get_paginator("list_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudHSMV2Client](./client.md)
+2. paginator: [ListTagsPaginator](./paginators.md#listtagspaginator)
+3. item: [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
 
 ### paginate

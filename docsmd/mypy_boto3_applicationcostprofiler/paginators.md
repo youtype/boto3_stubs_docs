@@ -21,6 +21,23 @@ def get_list_report_definitions_paginator() -> ListReportDefinitionsPaginator:
     return Session().client("applicationcostprofiler").get_paginator("list_report_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_applicationcostprofiler.paginator import ListReportDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("applicationcostprofiler")  # (1)
+paginator: ListReportDefinitionsPaginator = client.get_paginator("list_report_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationCostProfilerClient](./client.md)
+2. paginator: [ListReportDefinitionsPaginator](./paginators.md#listreportdefinitionspaginator)
+3. item: [:material-code-braces: ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef) 
+
 
 ### paginate
 

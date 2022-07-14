@@ -21,6 +21,23 @@ def get_list_cidr_blocks_paginator() -> ListCidrBlocksPaginator:
     return Session().client("route53").get_paginator("list_cidr_blocks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListCidrBlocksPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListCidrBlocksPaginator = client.get_paginator("list_cidr_blocks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListCidrBlocksPaginator](./paginators.md#listcidrblockspaginator)
+3. item: [:material-code-braces: ListCidrBlocksResponseTypeDef](./type_defs.md#listcidrblocksresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_cidr_collections_paginator() -> ListCidrCollectionsPaginator:
     return Session().client("route53").get_paginator("list_cidr_collections")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListCidrCollectionsPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListCidrCollectionsPaginator = client.get_paginator("list_cidr_collections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListCidrCollectionsPaginator](./paginators.md#listcidrcollectionspaginator)
+3. item: [:material-code-braces: ListCidrCollectionsResponseTypeDef](./type_defs.md#listcidrcollectionsresponsetypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_route53.paginator import ListCidrLocationsPaginator
 def get_list_cidr_locations_paginator() -> ListCidrLocationsPaginator:
     return Session().client("route53").get_paginator("list_cidr_locations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListCidrLocationsPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListCidrLocationsPaginator = client.get_paginator("list_cidr_locations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListCidrLocationsPaginator](./paginators.md#listcidrlocationspaginator)
+3. item: [:material-code-braces: ListCidrLocationsResponseTypeDef](./type_defs.md#listcidrlocationsresponsetypedef) 
 
 
 ### paginate
@@ -147,6 +198,23 @@ def get_list_health_checks_paginator() -> ListHealthChecksPaginator:
     return Session().client("route53").get_paginator("list_health_checks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListHealthChecksPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListHealthChecksPaginator = client.get_paginator("list_health_checks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
+3. item: [:material-code-braces: ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef) 
+
 
 ### paginate
 
@@ -187,6 +255,23 @@ from mypy_boto3_route53.paginator import ListHostedZonesPaginator
 def get_list_hosted_zones_paginator() -> ListHostedZonesPaginator:
     return Session().client("route53").get_paginator("list_hosted_zones")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListHostedZonesPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListHostedZonesPaginator = client.get_paginator("list_hosted_zones")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListHostedZonesPaginator](./paginators.md#listhostedzonespaginator)
+3. item: [:material-code-braces: ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef) 
 
 
 ### paginate
@@ -230,6 +315,23 @@ def get_list_query_logging_configs_paginator() -> ListQueryLoggingConfigsPaginat
     return Session().client("route53").get_paginator("list_query_logging_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListQueryLoggingConfigsPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListQueryLoggingConfigsPaginator = client.get_paginator("list_query_logging_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListQueryLoggingConfigsPaginator](./paginators.md#listqueryloggingconfigspaginator)
+3. item: [:material-code-braces: ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -272,6 +374,23 @@ def get_list_resource_record_sets_paginator() -> ListResourceRecordSetsPaginator
     return Session().client("route53").get_paginator("list_resource_record_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListResourceRecordSetsPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListResourceRecordSetsPaginator = client.get_paginator("list_resource_record_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
+3. item: [:material-code-braces: ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -313,6 +432,23 @@ from mypy_boto3_route53.paginator import ListVPCAssociationAuthorizationsPaginat
 def get_list_vpc_association_authorizations_paginator() -> ListVPCAssociationAuthorizationsPaginator:
     return Session().client("route53").get_paginator("list_vpc_association_authorizations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53.paginator import ListVPCAssociationAuthorizationsPaginator
+
+session = Session()
+
+client = Session().client("route53")  # (1)
+paginator: ListVPCAssociationAuthorizationsPaginator = client.get_paginator("list_vpc_association_authorizations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53Client](./client.md)
+2. paginator: [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
+3. item: [:material-code-braces: ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef) 
 
 
 ### paginate

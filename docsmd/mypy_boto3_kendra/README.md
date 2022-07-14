@@ -147,14 +147,15 @@ def get_value() -> AdditionalResultAttributeValueTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_kendra.type_defs import AccessControlListConfigurationTypeDef
+from mypy_boto3_kendra.type_defs import AccessControlConfigurationSummaryTypeDef
 
-def get_value() -> AccessControlListConfigurationTypeDef:
+def get_value() -> AccessControlConfigurationSummaryTypeDef:
     return {
-        "KeyPath": ...,
+        "Id": ...,
     }
 ```
 
+- [AccessControlConfigurationSummaryTypeDef](./type_defs.md#accesscontrolconfigurationsummarytypedef)
 - [AccessControlListConfigurationTypeDef](./type_defs.md#accesscontrollistconfigurationtypedef)
 - [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
 - [DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)
@@ -180,6 +181,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [ConnectionConfigurationTypeDef](./type_defs.md#connectionconfigurationtypedef)
 - [ContentSourceConfigurationTypeDef](./type_defs.md#contentsourceconfigurationtypedef)
 - [CorrectionTypeDef](./type_defs.md#correctiontypedef)
+- [PrincipalTypeDef](./type_defs.md#principaltypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
@@ -187,6 +189,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [DataSourceSummaryTypeDef](./type_defs.md#datasourcesummarytypedef)
 - [DataSourceSyncJobMetricsTypeDef](./type_defs.md#datasourcesyncjobmetricstypedef)
 - [SqlConfigurationTypeDef](./type_defs.md#sqlconfigurationtypedef)
+- [DeleteAccessControlConfigurationRequestRequestTypeDef](./type_defs.md#deleteaccesscontrolconfigurationrequestrequesttypedef)
 - [DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef)
 - [DeleteExperienceRequestRequestTypeDef](./type_defs.md#deleteexperiencerequestrequesttypedef)
 - [DeleteFaqRequestRequestTypeDef](./type_defs.md#deletefaqrequestrequesttypedef)
@@ -194,6 +197,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [DeletePrincipalMappingRequestRequestTypeDef](./type_defs.md#deleteprincipalmappingrequestrequesttypedef)
 - [DeleteQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#deletequerysuggestionsblocklistrequestrequesttypedef)
 - [DeleteThesaurusRequestRequestTypeDef](./type_defs.md#deletethesaurusrequestrequesttypedef)
+- [DescribeAccessControlConfigurationRequestRequestTypeDef](./type_defs.md#describeaccesscontrolconfigurationrequestrequesttypedef)
 - [DescribeDataSourceRequestRequestTypeDef](./type_defs.md#describedatasourcerequestrequesttypedef)
 - [DescribeExperienceRequestRequestTypeDef](./type_defs.md#describeexperiencerequestrequesttypedef)
 - [ExperienceEndpointTypeDef](./type_defs.md#experienceendpointtypedef)
@@ -208,7 +212,6 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
 - [RelevanceTypeDef](./type_defs.md#relevancetypedef)
 - [SearchTypeDef](./type_defs.md#searchtypedef)
-- [PrincipalTypeDef](./type_defs.md#principaltypedef)
 - [DocumentsMetadataConfigurationTypeDef](./type_defs.md#documentsmetadataconfigurationtypedef)
 - [EntityDisplayDataTypeDef](./type_defs.md#entitydisplaydatatypedef)
 - [UserIdentityConfigurationTypeDef](./type_defs.md#useridentityconfigurationtypedef)
@@ -229,6 +232,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [TextDocumentStatisticsTypeDef](./type_defs.md#textdocumentstatisticstypedef)
 - [JsonTokenTypeConfigurationTypeDef](./type_defs.md#jsontokentypeconfigurationtypedef)
 - [JwtTokenTypeConfigurationTypeDef](./type_defs.md#jwttokentypeconfigurationtypedef)
+- [ListAccessControlConfigurationsRequestRequestTypeDef](./type_defs.md#listaccesscontrolconfigurationsrequestrequesttypedef)
 - [ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef)
 - [ListEntityPersonasRequestRequestTypeDef](./type_defs.md#listentitypersonasrequestrequesttypedef)
 - [PersonasSummaryTypeDef](./type_defs.md#personassummarytypedef)
@@ -280,6 +284,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [DisassociateEntitiesFromExperienceRequestRequestTypeDef](./type_defs.md#disassociateentitiesfromexperiencerequestrequesttypedef)
 - [AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef)
 - [AssociatePersonasToEntitiesResponseTypeDef](./type_defs.md#associatepersonastoentitiesresponsetypedef)
+- [CreateAccessControlConfigurationResponseTypeDef](./type_defs.md#createaccesscontrolconfigurationresponsetypedef)
 - [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef)
 - [CreateExperienceResponseTypeDef](./type_defs.md#createexperienceresponsetypedef)
 - [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef)
@@ -293,6 +298,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [DisassociateEntitiesFromExperienceResponseTypeDef](./type_defs.md#disassociateentitiesfromexperienceresponsetypedef)
 - [DisassociatePersonasFromEntitiesResponseTypeDef](./type_defs.md#disassociatepersonasfromentitiesresponsetypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
+- [ListAccessControlConfigurationsResponseTypeDef](./type_defs.md#listaccesscontrolconfigurationsresponsetypedef)
 - [StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef)
 - [AssociatePersonasToEntitiesRequestRequestTypeDef](./type_defs.md#associatepersonastoentitiesrequestrequesttypedef)
 - [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
@@ -305,6 +311,7 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [ConfluencePageConfigurationTypeDef](./type_defs.md#confluencepageconfigurationtypedef)
 - [ConfluenceSpaceConfigurationTypeDef](./type_defs.md#confluencespaceconfigurationtypedef)
 - [SpellCorrectedQueryTypeDef](./type_defs.md#spellcorrectedquerytypedef)
+- [HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef)
 - [CreateFaqRequestRequestTypeDef](./type_defs.md#createfaqrequestrequesttypedef)
 - [CreateQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#createquerysuggestionsblocklistrequestrequesttypedef)
 - [CreateThesaurusRequestRequestTypeDef](./type_defs.md#createthesaurusrequestrequesttypedef)
@@ -321,7 +328,6 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [DocumentAttributeValueCountPairTypeDef](./type_defs.md#documentattributevaluecountpairtypedef)
 - [DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)
 - [DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)
-- [HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef)
 - [S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef)
 - [ExperienceEntitiesSummaryTypeDef](./type_defs.md#experienceentitiessummarytypedef)
 - [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
@@ -346,14 +352,17 @@ def get_value() -> AccessControlListConfigurationTypeDef:
 - [GitHubConfigurationTypeDef](./type_defs.md#githubconfigurationtypedef)
 - [OneDriveConfigurationTypeDef](./type_defs.md#onedriveconfigurationtypedef)
 - [ConfluenceConfigurationTypeDef](./type_defs.md#confluenceconfigurationtypedef)
+- [CreateAccessControlConfigurationRequestRequestTypeDef](./type_defs.md#createaccesscontrolconfigurationrequestrequesttypedef)
+- [DescribeAccessControlConfigurationResponseTypeDef](./type_defs.md#describeaccesscontrolconfigurationresponsetypedef)
+- [UpdateAccessControlConfigurationRequestRequestTypeDef](./type_defs.md#updateaccesscontrolconfigurationrequestrequesttypedef)
 - [ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef)
 - [ListExperiencesResponseTypeDef](./type_defs.md#listexperiencesresponsetypedef)
 - [HookConfigurationTypeDef](./type_defs.md#hookconfigurationtypedef)
 - [InlineCustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#inlinecustomdocumentenrichmentconfigurationtypedef)
 - [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
 - [DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)
-- [QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef)
 - [DocumentTypeDef](./type_defs.md#documenttypedef)
+- [QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef)
 - [ListExperienceEntitiesResponseTypeDef](./type_defs.md#listexperienceentitiesresponsetypedef)
 - [CreateExperienceRequestRequestTypeDef](./type_defs.md#createexperiencerequestrequesttypedef)
 - [DescribeExperienceResponseTypeDef](./type_defs.md#describeexperienceresponsetypedef)

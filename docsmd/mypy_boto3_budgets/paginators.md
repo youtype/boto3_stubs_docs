@@ -21,6 +21,23 @@ def get_describe_budget_action_histories_paginator() -> DescribeBudgetActionHist
     return Session().client("budgets").get_paginator("describe_budget_action_histories")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeBudgetActionHistoriesPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeBudgetActionHistoriesPaginator = client.get_paginator("describe_budget_action_histories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeBudgetActionHistoriesPaginator](./paginators.md#describebudgetactionhistoriespaginator)
+3. item: [:material-code-braces: DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef) 
+
 
 ### paginate
 
@@ -69,6 +86,23 @@ def get_describe_budget_actions_for_account_paginator() -> DescribeBudgetActions
     return Session().client("budgets").get_paginator("describe_budget_actions_for_account")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeBudgetActionsForAccountPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeBudgetActionsForAccountPaginator = client.get_paginator("describe_budget_actions_for_account")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeBudgetActionsForAccountPaginator](./paginators.md#describebudgetactionsforaccountpaginator)
+3. item: [:material-code-braces: DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef) 
+
 
 ### paginate
 
@@ -110,6 +144,23 @@ from mypy_boto3_budgets.paginator import DescribeBudgetActionsForBudgetPaginator
 def get_describe_budget_actions_for_budget_paginator() -> DescribeBudgetActionsForBudgetPaginator:
     return Session().client("budgets").get_paginator("describe_budget_actions_for_budget")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeBudgetActionsForBudgetPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeBudgetActionsForBudgetPaginator = client.get_paginator("describe_budget_actions_for_budget")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeBudgetActionsForBudgetPaginator](./paginators.md#describebudgetactionsforbudgetpaginator)
+3. item: [:material-code-braces: DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef) 
 
 
 ### paginate
@@ -155,6 +206,23 @@ def get_describe_budget_notifications_for_account_paginator() -> DescribeBudgetN
     return Session().client("budgets").get_paginator("describe_budget_notifications_for_account")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeBudgetNotificationsForAccountPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeBudgetNotificationsForAccountPaginator = client.get_paginator("describe_budget_notifications_for_account")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeBudgetNotificationsForAccountPaginator](./paginators.md#describebudgetnotificationsforaccountpaginator)
+3. item: [:material-code-braces: DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef) 
+
 
 ### paginate
 
@@ -196,6 +264,23 @@ from mypy_boto3_budgets.paginator import DescribeBudgetPerformanceHistoryPaginat
 def get_describe_budget_performance_history_paginator() -> DescribeBudgetPerformanceHistoryPaginator:
     return Session().client("budgets").get_paginator("describe_budget_performance_history")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeBudgetPerformanceHistoryPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeBudgetPerformanceHistoryPaginator = client.get_paginator("describe_budget_performance_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeBudgetPerformanceHistoryPaginator](./paginators.md#describebudgetperformancehistorypaginator)
+3. item: [:material-code-braces: DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef) 
 
 
 ### paginate
@@ -243,6 +328,23 @@ def get_describe_budgets_paginator() -> DescribeBudgetsPaginator:
     return Session().client("budgets").get_paginator("describe_budgets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeBudgetsPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeBudgetsPaginator = client.get_paginator("describe_budgets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeBudgetsPaginator](./paginators.md#describebudgetspaginator)
+3. item: [:material-code-braces: DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef) 
+
 
 ### paginate
 
@@ -284,6 +386,23 @@ from mypy_boto3_budgets.paginator import DescribeNotificationsForBudgetPaginator
 def get_describe_notifications_for_budget_paginator() -> DescribeNotificationsForBudgetPaginator:
     return Session().client("budgets").get_paginator("describe_notifications_for_budget")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeNotificationsForBudgetPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeNotificationsForBudgetPaginator = client.get_paginator("describe_notifications_for_budget")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
+3. item: [:material-code-braces: DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef) 
 
 
 ### paginate
@@ -328,6 +447,23 @@ from mypy_boto3_budgets.paginator import DescribeSubscribersForNotificationPagin
 def get_describe_subscribers_for_notification_paginator() -> DescribeSubscribersForNotificationPaginator:
     return Session().client("budgets").get_paginator("describe_subscribers_for_notification")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_budgets.paginator import DescribeSubscribersForNotificationPaginator
+
+session = Session()
+
+client = Session().client("budgets")  # (1)
+paginator: DescribeSubscribersForNotificationPaginator = client.get_paginator("describe_subscribers_for_notification")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BudgetsClient](./client.md)
+2. paginator: [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)
+3. item: [:material-code-braces: DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef) 
 
 
 ### paginate

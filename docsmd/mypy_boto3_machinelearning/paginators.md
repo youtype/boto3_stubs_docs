@@ -21,6 +21,23 @@ def get_describe_batch_predictions_paginator() -> DescribeBatchPredictionsPagina
     return Session().client("machinelearning").get_paginator("describe_batch_predictions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_machinelearning.paginator import DescribeBatchPredictionsPaginator
+
+session = Session()
+
+client = Session().client("machinelearning")  # (1)
+paginator: DescribeBatchPredictionsPaginator = client.get_paginator("describe_batch_predictions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MachineLearningClient](./client.md)
+2. paginator: [DescribeBatchPredictionsPaginator](./paginators.md#describebatchpredictionspaginator)
+3. item: [:material-code-braces: DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef) 
+
 
 ### paginate
 
@@ -72,6 +89,23 @@ from mypy_boto3_machinelearning.paginator import DescribeDataSourcesPaginator
 def get_describe_data_sources_paginator() -> DescribeDataSourcesPaginator:
     return Session().client("machinelearning").get_paginator("describe_data_sources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_machinelearning.paginator import DescribeDataSourcesPaginator
+
+session = Session()
+
+client = Session().client("machinelearning")  # (1)
+paginator: DescribeDataSourcesPaginator = client.get_paginator("describe_data_sources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MachineLearningClient](./client.md)
+2. paginator: [DescribeDataSourcesPaginator](./paginators.md#describedatasourcespaginator)
+3. item: [:material-code-braces: DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef) 
 
 
 ### paginate
@@ -125,6 +159,23 @@ def get_describe_evaluations_paginator() -> DescribeEvaluationsPaginator:
     return Session().client("machinelearning").get_paginator("describe_evaluations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_machinelearning.paginator import DescribeEvaluationsPaginator
+
+session = Session()
+
+client = Session().client("machinelearning")  # (1)
+paginator: DescribeEvaluationsPaginator = client.get_paginator("describe_evaluations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MachineLearningClient](./client.md)
+2. paginator: [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
+3. item: [:material-code-braces: DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef) 
+
 
 ### paginate
 
@@ -176,6 +227,23 @@ from mypy_boto3_machinelearning.paginator import DescribeMLModelsPaginator
 def get_describe_ml_models_paginator() -> DescribeMLModelsPaginator:
     return Session().client("machinelearning").get_paginator("describe_ml_models")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_machinelearning.paginator import DescribeMLModelsPaginator
+
+session = Session()
+
+client = Session().client("machinelearning")  # (1)
+paginator: DescribeMLModelsPaginator = client.get_paginator("describe_ml_models")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MachineLearningClient](./client.md)
+2. paginator: [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
+3. item: [:material-code-braces: DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef) 
 
 
 ### paginate

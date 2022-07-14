@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_signer.waiter import SuccessfulSigningJobWaiter
 
-def get_successful_signing_job_waiter() -> SuccessfulSigningJobWaiter:
-    return Session().client("signer").get_waiter("successful_signing_job")
+
+session = Session()
+
+client = session.client("signer")  # (1)
+waiter: SuccessfulSigningJobWaiter = client.get_waiter("successful_signing_job")  # (2)
+await waiter.wait()
 ```
+
+1. client: [signerClient](./client.md)
+2. waiter: [SuccessfulSigningJobWaiter](./waiters.md#successfulsigningjobwaiter)
 
 
 ### wait

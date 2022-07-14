@@ -21,6 +21,23 @@ def get_describe_destinations_paginator() -> DescribeDestinationsPaginator:
     return Session().client("logs").get_paginator("describe_destinations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeDestinationsPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeDestinationsPaginator = client.get_paginator("describe_destinations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
+3. item: [:material-code-braces: DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_logs.paginator import DescribeExportTasksPaginator
 def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
     return Session().client("logs").get_paginator("describe_export_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeExportTasksPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeExportTasksPaginator = client.get_paginator("describe_export_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
+3. item: [:material-code-braces: DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_describe_log_groups_paginator() -> DescribeLogGroupsPaginator:
     return Session().client("logs").get_paginator("describe_log_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeLogGroupsPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeLogGroupsPaginator = client.get_paginator("describe_log_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeLogGroupsPaginator](./paginators.md#describeloggroupspaginator)
+3. item: [:material-code-braces: DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_logs.paginator import DescribeLogStreamsPaginator
 def get_describe_log_streams_paginator() -> DescribeLogStreamsPaginator:
     return Session().client("logs").get_paginator("describe_log_streams")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeLogStreamsPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeLogStreamsPaginator = client.get_paginator("describe_log_streams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeLogStreamsPaginator](./paginators.md#describelogstreamspaginator)
+3. item: [:material-code-braces: DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef) 
 
 
 ### paginate
@@ -195,6 +263,23 @@ def get_describe_metric_filters_paginator() -> DescribeMetricFiltersPaginator:
     return Session().client("logs").get_paginator("describe_metric_filters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeMetricFiltersPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeMetricFiltersPaginator = client.get_paginator("describe_metric_filters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeMetricFiltersPaginator](./paginators.md#describemetricfilterspaginator)
+3. item: [:material-code-braces: DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef) 
+
 
 ### paginate
 
@@ -240,6 +325,23 @@ def get_describe_queries_paginator() -> DescribeQueriesPaginator:
     return Session().client("logs").get_paginator("describe_queries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeQueriesPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeQueriesPaginator = client.get_paginator("describe_queries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeQueriesPaginator](./paginators.md#describequeriespaginator)
+3. item: [:material-code-braces: DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef) 
+
 
 ### paginate
 
@@ -284,6 +386,23 @@ def get_describe_resource_policies_paginator() -> DescribeResourcePoliciesPagina
     return Session().client("logs").get_paginator("describe_resource_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeResourcePoliciesPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeResourcePoliciesPaginator = client.get_paginator("describe_resource_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeResourcePoliciesPaginator](./paginators.md#describeresourcepoliciespaginator)
+3. item: [:material-code-braces: DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -324,6 +443,23 @@ from mypy_boto3_logs.paginator import DescribeSubscriptionFiltersPaginator
 def get_describe_subscription_filters_paginator() -> DescribeSubscriptionFiltersPaginator:
     return Session().client("logs").get_paginator("describe_subscription_filters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import DescribeSubscriptionFiltersPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: DescribeSubscriptionFiltersPaginator = client.get_paginator("describe_subscription_filters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
+3. item: [:material-code-braces: DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef) 
 
 
 ### paginate
@@ -367,6 +503,23 @@ from mypy_boto3_logs.paginator import FilterLogEventsPaginator
 def get_filter_log_events_paginator() -> FilterLogEventsPaginator:
     return Session().client("logs").get_paginator("filter_log_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_logs.paginator import FilterLogEventsPaginator
+
+session = Session()
+
+client = Session().client("logs")  # (1)
+paginator: FilterLogEventsPaginator = client.get_paginator("filter_log_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchLogsClient](./client.md)
+2. paginator: [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)
+3. item: [:material-code-braces: FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef) 
 
 
 ### paginate

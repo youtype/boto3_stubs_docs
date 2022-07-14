@@ -21,6 +21,23 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return Session().client("mediaconvert").get_paginator("describe_endpoints")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator
+
+session = Session()
+
+client = Session().client("mediaconvert")  # (1)
+paginator: DescribeEndpointsPaginator = client.get_paginator("describe_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConvertClient](./client.md)
+2. paginator: [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
+3. item: [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_mediaconvert.paginator import ListJobTemplatesPaginator
 def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
     return Session().client("mediaconvert").get_paginator("list_job_templates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconvert.paginator import ListJobTemplatesPaginator
+
+session = Session()
+
+client = Session().client("mediaconvert")  # (1)
+paginator: ListJobTemplatesPaginator = client.get_paginator("list_job_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConvertClient](./client.md)
+2. paginator: [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
+3. item: [:material-code-braces: ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef) 
 
 
 ### paginate
@@ -110,6 +144,23 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("mediaconvert").get_paginator("list_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconvert.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("mediaconvert")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConvertClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -156,6 +207,23 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
     return Session().client("mediaconvert").get_paginator("list_presets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconvert.paginator import ListPresetsPaginator
+
+session = Session()
+
+client = Session().client("mediaconvert")  # (1)
+paginator: ListPresetsPaginator = client.get_paginator("list_presets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConvertClient](./client.md)
+2. paginator: [ListPresetsPaginator](./paginators.md#listpresetspaginator)
+3. item: [:material-code-braces: ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef) 
+
 
 ### paginate
 
@@ -201,6 +269,23 @@ from mypy_boto3_mediaconvert.paginator import ListQueuesPaginator
 def get_list_queues_paginator() -> ListQueuesPaginator:
     return Session().client("mediaconvert").get_paginator("list_queues")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconvert.paginator import ListQueuesPaginator
+
+session = Session()
+
+client = Session().client("mediaconvert")  # (1)
+paginator: ListQueuesPaginator = client.get_paginator("list_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConvertClient](./client.md)
+2. paginator: [ListQueuesPaginator](./paginators.md#listqueuespaginator)
+3. item: [:material-code-braces: ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef) 
 
 
 ### paginate

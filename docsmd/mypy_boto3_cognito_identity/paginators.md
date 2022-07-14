@@ -21,6 +21,23 @@ def get_list_identity_pools_paginator() -> ListIdentityPoolsPaginator:
     return Session().client("cognito-identity").get_paginator("list_identity_pools")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_identity.paginator import ListIdentityPoolsPaginator
+
+session = Session()
+
+client = Session().client("cognito-identity")  # (1)
+paginator: ListIdentityPoolsPaginator = client.get_paginator("list_identity_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityClient](./client.md)
+2. paginator: [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
+3. item: [:material-code-braces: ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef) 
+
 
 ### paginate
 

@@ -21,6 +21,23 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
     return Session().client("forecast").get_paginator("list_dataset_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListDatasetGroupsPaginator = client.get_paginator("list_dataset_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
+3. item: [:material-code-braces: ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_forecast.paginator import ListDatasetImportJobsPaginator
 def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
     return Session().client("forecast").get_paginator("list_dataset_import_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListDatasetImportJobsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListDatasetImportJobsPaginator = client.get_paginator("list_dataset_import_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
+3. item: [:material-code-braces: ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("forecast").get_paginator("list_datasets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListDatasetsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListDatasetsPaginator = client.get_paginator("list_datasets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_forecast.paginator import ListExplainabilitiesPaginator
 def get_list_explainabilities_paginator() -> ListExplainabilitiesPaginator:
     return Session().client("forecast").get_paginator("list_explainabilities")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListExplainabilitiesPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListExplainabilitiesPaginator = client.get_paginator("list_explainabilities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListExplainabilitiesPaginator](./paginators.md#listexplainabilitiespaginator)
+3. item: [:material-code-braces: ListExplainabilitiesResponseTypeDef](./type_defs.md#listexplainabilitiesresponsetypedef) 
 
 
 ### paginate
@@ -189,6 +257,23 @@ def get_list_explainability_exports_paginator() -> ListExplainabilityExportsPagi
     return Session().client("forecast").get_paginator("list_explainability_exports")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListExplainabilityExportsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListExplainabilityExportsPaginator = client.get_paginator("list_explainability_exports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListExplainabilityExportsPaginator](./paginators.md#listexplainabilityexportspaginator)
+3. item: [:material-code-braces: ListExplainabilityExportsResponseTypeDef](./type_defs.md#listexplainabilityexportsresponsetypedef) 
+
 
 ### paginate
 
@@ -231,6 +316,23 @@ from mypy_boto3_forecast.paginator import ListForecastExportJobsPaginator
 def get_list_forecast_export_jobs_paginator() -> ListForecastExportJobsPaginator:
     return Session().client("forecast").get_paginator("list_forecast_export_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListForecastExportJobsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListForecastExportJobsPaginator = client.get_paginator("list_forecast_export_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListForecastExportJobsPaginator](./paginators.md#listforecastexportjobspaginator)
+3. item: [:material-code-braces: ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef) 
 
 
 ### paginate
@@ -275,6 +377,23 @@ def get_list_forecasts_paginator() -> ListForecastsPaginator:
     return Session().client("forecast").get_paginator("list_forecasts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListForecastsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListForecastsPaginator = client.get_paginator("list_forecasts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListForecastsPaginator](./paginators.md#listforecastspaginator)
+3. item: [:material-code-braces: ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef) 
+
 
 ### paginate
 
@@ -317,6 +436,23 @@ from mypy_boto3_forecast.paginator import ListMonitorEvaluationsPaginator
 def get_list_monitor_evaluations_paginator() -> ListMonitorEvaluationsPaginator:
     return Session().client("forecast").get_paginator("list_monitor_evaluations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListMonitorEvaluationsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListMonitorEvaluationsPaginator = client.get_paginator("list_monitor_evaluations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListMonitorEvaluationsPaginator](./paginators.md#listmonitorevaluationspaginator)
+3. item: [:material-code-braces: ListMonitorEvaluationsResponseTypeDef](./type_defs.md#listmonitorevaluationsresponsetypedef) 
 
 
 ### paginate
@@ -362,6 +498,23 @@ def get_list_monitors_paginator() -> ListMonitorsPaginator:
     return Session().client("forecast").get_paginator("list_monitors")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListMonitorsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListMonitorsPaginator = client.get_paginator("list_monitors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListMonitorsPaginator](./paginators.md#listmonitorspaginator)
+3. item: [:material-code-braces: ListMonitorsResponseTypeDef](./type_defs.md#listmonitorsresponsetypedef) 
+
 
 ### paginate
 
@@ -405,6 +558,23 @@ def get_list_predictor_backtest_export_jobs_paginator() -> ListPredictorBacktest
     return Session().client("forecast").get_paginator("list_predictor_backtest_export_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListPredictorBacktestExportJobsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListPredictorBacktestExportJobsPaginator = client.get_paginator("list_predictor_backtest_export_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListPredictorBacktestExportJobsPaginator](./paginators.md#listpredictorbacktestexportjobspaginator)
+3. item: [:material-code-braces: ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -447,6 +617,23 @@ from mypy_boto3_forecast.paginator import ListPredictorsPaginator
 def get_list_predictors_paginator() -> ListPredictorsPaginator:
     return Session().client("forecast").get_paginator("list_predictors")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListPredictorsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListPredictorsPaginator = client.get_paginator("list_predictors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListPredictorsPaginator](./paginators.md#listpredictorspaginator)
+3. item: [:material-code-braces: ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_list_items_paginator() -> ListItemsPaginator:
     return Session().client("mediastore-data").get_paginator("list_items")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediastore_data.paginator import ListItemsPaginator
+
+session = Session()
+
+client = Session().client("mediastore-data")  # (1)
+paginator: ListItemsPaginator = client.get_paginator("list_items")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaStoreDataClient](./client.md)
+2. paginator: [ListItemsPaginator](./paginators.md#listitemspaginator)
+3. item: [:material-code-braces: ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef) 
+
 
 ### paginate
 

@@ -434,6 +434,46 @@ parent.describe_domain(**kwargs)
 
 1. See [:material-code-braces: DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef) 
 
+### describe\_package
+
+Returns a
+[PackageDescription](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageDescription.html)_
+object that contains information about the requested package.
+
+Type annotations and code completion for `#!python boto3.client("codeartifact").describe_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.describe_package)
+
+```python title="Method definition"
+def describe_package(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+) -> DescribePackageResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: DescribePackageResultTypeDef](./type_defs.md#describepackageresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribePackageRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+}
+
+parent.describe_package(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePackageRequestRequestTypeDef](./type_defs.md#describepackagerequestrequesttypedef) 
+
 ### describe\_package\_version
 
 Returns a
@@ -959,14 +999,16 @@ def list_package_versions(
     sortBy: PackageVersionSortTypeType = ...,  # (3)
     maxResults: int = ...,
     nextToken: str = ...,
-) -> ListPackageVersionsResultTypeDef:  # (4)
+    originType: PackageVersionOriginTypeType = ...,  # (4)
+) -> ListPackageVersionsResultTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
 3. See [:material-code-brackets: PackageVersionSortTypeType](./literals.md#packageversionsorttypetype) 
-4. See [:material-code-braces: ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef) 
+4. See [:material-code-brackets: PackageVersionOriginTypeType](./literals.md#packageversionorigintypetype) 
+5. See [:material-code-braces: ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1003,12 +1045,16 @@ def list_packages(
     packagePrefix: str = ...,
     maxResults: int = ...,
     nextToken: str = ...,
-) -> ListPackagesResultTypeDef:  # (2)
+    publish: AllowPublishType = ...,  # (2)
+    upstream: AllowUpstreamType = ...,  # (3)
+) -> ListPackagesResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
-2. See [:material-code-braces: ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef) 
+2. See [:material-code-brackets: AllowPublishType](./literals.md#allowpublishtype) 
+3. See [:material-code-brackets: AllowUpstreamType](./literals.md#allowupstreamtype) 
+4. See [:material-code-braces: ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1153,6 +1199,47 @@ parent.put_domain_permissions_policy(**kwargs)
 ```
 
 1. See [:material-code-braces: PutDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putdomainpermissionspolicyrequestrequesttypedef) 
+
+### put\_package\_origin\_configuration
+
+Sets the package origin configuration for a package.
+
+Type annotations and code completion for `#!python boto3.client("codeartifact").put_package_origin_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.put_package_origin_configuration)
+
+```python title="Method definition"
+def put_package_origin_configuration(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    restrictions: PackageOriginRestrictionsTypeDef,  # (2)
+    domainOwner: str = ...,
+    namespace: str = ...,
+) -> PutPackageOriginConfigurationResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PackageOriginRestrictionsTypeDef](./type_defs.md#packageoriginrestrictionstypedef) 
+3. See [:material-code-braces: PutPackageOriginConfigurationResultTypeDef](./type_defs.md#putpackageoriginconfigurationresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutPackageOriginConfigurationRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "restrictions": ...,
+}
+
+parent.put_package_origin_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: PutPackageOriginConfigurationRequestRequestTypeDef](./type_defs.md#putpackageoriginconfigurationrequestrequesttypedef) 
 
 ### put\_repository\_permissions\_policy
 

@@ -21,6 +21,23 @@ def get_list_batch_inference_jobs_paginator() -> ListBatchInferenceJobsPaginator
     return Session().client("personalize").get_paginator("list_batch_inference_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListBatchInferenceJobsPaginator = client.get_paginator("list_batch_inference_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
+3. item: [:material-code-braces: ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_personalize.paginator import ListBatchSegmentJobsPaginator
 def get_list_batch_segment_jobs_paginator() -> ListBatchSegmentJobsPaginator:
     return Session().client("personalize").get_paginator("list_batch_segment_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListBatchSegmentJobsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListBatchSegmentJobsPaginator = client.get_paginator("list_batch_segment_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListBatchSegmentJobsPaginator](./paginators.md#listbatchsegmentjobspaginator)
+3. item: [:material-code-braces: ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_campaigns_paginator() -> ListCampaignsPaginator:
     return Session().client("personalize").get_paginator("list_campaigns")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListCampaignsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListCampaignsPaginator = client.get_paginator("list_campaigns")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListCampaignsPaginator](./paginators.md#listcampaignspaginator)
+3. item: [:material-code-braces: ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_personalize.paginator import ListDatasetExportJobsPaginator
 def get_list_dataset_export_jobs_paginator() -> ListDatasetExportJobsPaginator:
     return Session().client("personalize").get_paginator("list_dataset_export_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListDatasetExportJobsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListDatasetExportJobsPaginator = client.get_paginator("list_dataset_export_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListDatasetExportJobsPaginator](./paginators.md#listdatasetexportjobspaginator)
+3. item: [:material-code-braces: ListDatasetExportJobsResponseTypeDef](./type_defs.md#listdatasetexportjobsresponsetypedef) 
 
 
 ### paginate
@@ -189,6 +257,23 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
     return Session().client("personalize").get_paginator("list_dataset_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListDatasetGroupsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListDatasetGroupsPaginator = client.get_paginator("list_dataset_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
+3. item: [:material-code-braces: ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -229,6 +314,23 @@ from mypy_boto3_personalize.paginator import ListDatasetImportJobsPaginator
 def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
     return Session().client("personalize").get_paginator("list_dataset_import_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListDatasetImportJobsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListDatasetImportJobsPaginator = client.get_paginator("list_dataset_import_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
+3. item: [:material-code-braces: ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef) 
 
 
 ### paginate
@@ -272,6 +374,23 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("personalize").get_paginator("list_datasets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListDatasetsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListDatasetsPaginator = client.get_paginator("list_datasets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
+
 
 ### paginate
 
@@ -313,6 +432,23 @@ from mypy_boto3_personalize.paginator import ListEventTrackersPaginator
 def get_list_event_trackers_paginator() -> ListEventTrackersPaginator:
     return Session().client("personalize").get_paginator("list_event_trackers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListEventTrackersPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListEventTrackersPaginator = client.get_paginator("list_event_trackers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListEventTrackersPaginator](./paginators.md#listeventtrackerspaginator)
+3. item: [:material-code-braces: ListEventTrackersResponseTypeDef](./type_defs.md#listeventtrackersresponsetypedef) 
 
 
 ### paginate
@@ -356,6 +492,23 @@ def get_list_filters_paginator() -> ListFiltersPaginator:
     return Session().client("personalize").get_paginator("list_filters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListFiltersPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListFiltersPaginator = client.get_paginator("list_filters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+3. item: [:material-code-braces: ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef) 
+
 
 ### paginate
 
@@ -397,6 +550,23 @@ from mypy_boto3_personalize.paginator import ListRecipesPaginator
 def get_list_recipes_paginator() -> ListRecipesPaginator:
     return Session().client("personalize").get_paginator("list_recipes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListRecipesPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListRecipesPaginator = client.get_paginator("list_recipes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+3. item: [:material-code-braces: ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef) 
 
 
 ### paginate
@@ -443,6 +613,23 @@ def get_list_recommenders_paginator() -> ListRecommendersPaginator:
     return Session().client("personalize").get_paginator("list_recommenders")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListRecommendersPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListRecommendersPaginator = client.get_paginator("list_recommenders")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListRecommendersPaginator](./paginators.md#listrecommenderspaginator)
+3. item: [:material-code-braces: ListRecommendersResponseTypeDef](./type_defs.md#listrecommendersresponsetypedef) 
+
 
 ### paginate
 
@@ -485,6 +672,23 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return Session().client("personalize").get_paginator("list_schemas")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListSchemasPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListSchemasPaginator = client.get_paginator("list_schemas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+3. item: [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
+
 
 ### paginate
 
@@ -525,6 +729,23 @@ from mypy_boto3_personalize.paginator import ListSolutionVersionsPaginator
 def get_list_solution_versions_paginator() -> ListSolutionVersionsPaginator:
     return Session().client("personalize").get_paginator("list_solution_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListSolutionVersionsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListSolutionVersionsPaginator = client.get_paginator("list_solution_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
+3. item: [:material-code-braces: ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef) 
 
 
 ### paginate
@@ -567,6 +788,23 @@ from mypy_boto3_personalize.paginator import ListSolutionsPaginator
 def get_list_solutions_paginator() -> ListSolutionsPaginator:
     return Session().client("personalize").get_paginator("list_solutions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListSolutionsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListSolutionsPaginator = client.get_paginator("list_solutions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)
+3. item: [:material-code-braces: ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef) 
 
 
 ### paginate

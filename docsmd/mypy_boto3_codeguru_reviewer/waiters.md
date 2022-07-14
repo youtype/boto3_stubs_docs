@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_codeguru_reviewer.waiter import CodeReviewCompletedWaiter
 
-def get_code_review_completed_waiter() -> CodeReviewCompletedWaiter:
-    return Session().client("codeguru-reviewer").get_waiter("code_review_completed")
+
+session = Session()
+
+client = session.client("codeguru-reviewer")  # (1)
+waiter: CodeReviewCompletedWaiter = client.get_waiter("code_review_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CodeGuruReviewerClient](./client.md)
+2. waiter: [CodeReviewCompletedWaiter](./waiters.md#codereviewcompletedwaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_codeguru_reviewer.waiter import RepositoryAssociationSucceededWaiter
 
-def get_repository_association_succeeded_waiter() -> RepositoryAssociationSucceededWaiter:
-    return Session().client("codeguru-reviewer").get_waiter("repository_association_succeeded")
+
+session = Session()
+
+client = session.client("codeguru-reviewer")  # (1)
+waiter: RepositoryAssociationSucceededWaiter = client.get_waiter("repository_association_succeeded")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CodeGuruReviewerClient](./client.md)
+2. waiter: [RepositoryAssociationSucceededWaiter](./waiters.md#repositoryassociationsucceededwaiter)
 
 
 ### wait

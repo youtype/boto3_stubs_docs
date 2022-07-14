@@ -21,6 +21,23 @@ def get_describe_image_tags_paginator() -> DescribeImageTagsPaginator:
     return Session().client("ecr-public").get_paginator("describe_image_tags")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr_public.paginator import DescribeImageTagsPaginator
+
+session = Session()
+
+client = Session().client("ecr-public")  # (1)
+paginator: DescribeImageTagsPaginator = client.get_paginator("describe_image_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRPublicClient](./client.md)
+2. paginator: [DescribeImageTagsPaginator](./paginators.md#describeimagetagspaginator)
+3. item: [:material-code-braces: DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_ecr_public.paginator import DescribeImagesPaginator
 def get_describe_images_paginator() -> DescribeImagesPaginator:
     return Session().client("ecr-public").get_paginator("describe_images")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr_public.paginator import DescribeImagesPaginator
+
+session = Session()
+
+client = Session().client("ecr-public")  # (1)
+paginator: DescribeImagesPaginator = client.get_paginator("describe_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRPublicClient](./client.md)
+2. paginator: [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+3. item: [:material-code-braces: DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_describe_registries_paginator() -> DescribeRegistriesPaginator:
     return Session().client("ecr-public").get_paginator("describe_registries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr_public.paginator import DescribeRegistriesPaginator
+
+session = Session()
+
+client = Session().client("ecr-public")  # (1)
+paginator: DescribeRegistriesPaginator = client.get_paginator("describe_registries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRPublicClient](./client.md)
+2. paginator: [DescribeRegistriesPaginator](./paginators.md#describeregistriespaginator)
+3. item: [:material-code-braces: DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_ecr_public.paginator import DescribeRepositoriesPaginator
 def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
     return Session().client("ecr-public").get_paginator("describe_repositories")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecr_public.paginator import DescribeRepositoriesPaginator
+
+session = Session()
+
+client = Session().client("ecr-public")  # (1)
+paginator: DescribeRepositoriesPaginator = client.get_paginator("describe_repositories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECRPublicClient](./client.md)
+2. paginator: [DescribeRepositoriesPaginator](./paginators.md#describerepositoriespaginator)
+3. item: [:material-code-braces: DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef) 
 
 
 ### paginate

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import AddonActiveWaiter
 
-def get_addon_active_waiter() -> AddonActiveWaiter:
-    return Session().client("eks").get_waiter("addon_active")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: AddonActiveWaiter = client.get_waiter("addon_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [AddonActiveWaiter](./waiters.md#addonactivewaiter)
 
 
 ### wait
@@ -60,9 +67,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import AddonDeletedWaiter
 
-def get_addon_deleted_waiter() -> AddonDeletedWaiter:
-    return Session().client("eks").get_waiter("addon_deleted")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: AddonDeletedWaiter = client.get_waiter("addon_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [AddonDeletedWaiter](./waiters.md#addondeletedwaiter)
 
 
 ### wait
@@ -103,9 +117,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import ClusterActiveWaiter
 
-def get_cluster_active_waiter() -> ClusterActiveWaiter:
-    return Session().client("eks").get_waiter("cluster_active")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: ClusterActiveWaiter = client.get_waiter("cluster_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [ClusterActiveWaiter](./waiters.md#clusteractivewaiter)
 
 
 ### wait
@@ -144,9 +165,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import ClusterDeletedWaiter
 
-def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
-    return Session().client("eks").get_waiter("cluster_deleted")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: ClusterDeletedWaiter = client.get_waiter("cluster_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
 
 
 ### wait
@@ -185,9 +213,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import FargateProfileActiveWaiter
 
-def get_fargate_profile_active_waiter() -> FargateProfileActiveWaiter:
-    return Session().client("eks").get_waiter("fargate_profile_active")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: FargateProfileActiveWaiter = client.get_waiter("fargate_profile_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [FargateProfileActiveWaiter](./waiters.md#fargateprofileactivewaiter)
 
 
 ### wait
@@ -228,9 +263,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import FargateProfileDeletedWaiter
 
-def get_fargate_profile_deleted_waiter() -> FargateProfileDeletedWaiter:
-    return Session().client("eks").get_waiter("fargate_profile_deleted")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: FargateProfileDeletedWaiter = client.get_waiter("fargate_profile_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [FargateProfileDeletedWaiter](./waiters.md#fargateprofiledeletedwaiter)
 
 
 ### wait
@@ -271,9 +313,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import NodegroupActiveWaiter
 
-def get_nodegroup_active_waiter() -> NodegroupActiveWaiter:
-    return Session().client("eks").get_waiter("nodegroup_active")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: NodegroupActiveWaiter = client.get_waiter("nodegroup_active")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [NodegroupActiveWaiter](./waiters.md#nodegroupactivewaiter)
 
 
 ### wait
@@ -314,9 +363,16 @@ from boto3.session import Session
 
 from mypy_boto3_eks.waiter import NodegroupDeletedWaiter
 
-def get_nodegroup_deleted_waiter() -> NodegroupDeletedWaiter:
-    return Session().client("eks").get_waiter("nodegroup_deleted")
+
+session = Session()
+
+client = session.client("eks")  # (1)
+waiter: NodegroupDeletedWaiter = client.get_waiter("nodegroup_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EKSClient](./client.md)
+2. waiter: [NodegroupDeletedWaiter](./waiters.md#nodegroupdeletedwaiter)
 
 
 ### wait

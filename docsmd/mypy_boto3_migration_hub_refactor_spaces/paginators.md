@@ -21,6 +21,23 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_applications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migration_hub_refactor_spaces.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("migration-hub-refactor-spaces")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubRefactorSpacesClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_migration_hub_refactor_spaces.paginator import ListEnvironmentVp
 def get_list_environment_vpcs_paginator() -> ListEnvironmentVpcsPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_environment_vpcs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migration_hub_refactor_spaces.paginator import ListEnvironmentVpcsPaginator
+
+session = Session()
+
+client = Session().client("migration-hub-refactor-spaces")  # (1)
+paginator: ListEnvironmentVpcsPaginator = client.get_paginator("list_environment_vpcs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubRefactorSpacesClient](./client.md)
+2. paginator: [ListEnvironmentVpcsPaginator](./paginators.md#listenvironmentvpcspaginator)
+3. item: [:material-code-braces: ListEnvironmentVpcsResponseTypeDef](./type_defs.md#listenvironmentvpcsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_environments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migration_hub_refactor_spaces.paginator import ListEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("migration-hub-refactor-spaces")  # (1)
+paginator: ListEnvironmentsPaginator = client.get_paginator("list_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubRefactorSpacesClient](./client.md)
+2. paginator: [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+3. item: [:material-code-braces: ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_migration_hub_refactor_spaces.paginator import ListRoutesPaginat
 def get_list_routes_paginator() -> ListRoutesPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_routes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migration_hub_refactor_spaces.paginator import ListRoutesPaginator
+
+session = Session()
+
+client = Session().client("migration-hub-refactor-spaces")  # (1)
+paginator: ListRoutesPaginator = client.get_paginator("list_routes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubRefactorSpacesClient](./client.md)
+2. paginator: [ListRoutesPaginator](./paginators.md#listroutespaginator)
+3. item: [:material-code-braces: ListRoutesResponseTypeDef](./type_defs.md#listroutesresponsetypedef) 
 
 
 ### paginate
@@ -189,6 +257,23 @@ from mypy_boto3_migration_hub_refactor_spaces.paginator import ListServicesPagin
 def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_services")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migration_hub_refactor_spaces.paginator import ListServicesPaginator
+
+session = Session()
+
+client = Session().client("migration-hub-refactor-spaces")  # (1)
+paginator: ListServicesPaginator = client.get_paginator("list_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubRefactorSpacesClient](./client.md)
+2. paginator: [ListServicesPaginator](./paginators.md#listservicespaginator)
+3. item: [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
 
 ### paginate

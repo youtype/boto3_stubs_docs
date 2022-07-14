@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_neptune.waiter import DBInstanceAvailableWaiter
 
-def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
-    return Session().client("neptune").get_waiter("db_instance_available")
+
+session = Session()
+
+client = session.client("neptune")  # (1)
+waiter: DBInstanceAvailableWaiter = client.get_waiter("db_instance_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NeptuneClient](./client.md)
+2. waiter: [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
 
 
 ### wait
@@ -62,9 +69,16 @@ from boto3.session import Session
 
 from mypy_boto3_neptune.waiter import DBInstanceDeletedWaiter
 
-def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
-    return Session().client("neptune").get_waiter("db_instance_deleted")
+
+session = Session()
+
+client = session.client("neptune")  # (1)
+waiter: DBInstanceDeletedWaiter = client.get_waiter("db_instance_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NeptuneClient](./client.md)
+2. waiter: [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
 
 
 ### wait

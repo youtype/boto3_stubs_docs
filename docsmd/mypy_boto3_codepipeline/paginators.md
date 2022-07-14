@@ -21,6 +21,23 @@ def get_list_action_executions_paginator() -> ListActionExecutionsPaginator:
     return Session().client("codepipeline").get_paginator("list_action_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codepipeline.paginator import ListActionExecutionsPaginator
+
+session = Session()
+
+client = Session().client("codepipeline")  # (1)
+paginator: ListActionExecutionsPaginator = client.get_paginator("list_action_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodePipelineClient](./client.md)
+2. paginator: [ListActionExecutionsPaginator](./paginators.md#listactionexecutionspaginator)
+3. item: [:material-code-braces: ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_codepipeline.paginator import ListActionTypesPaginator
 def get_list_action_types_paginator() -> ListActionTypesPaginator:
     return Session().client("codepipeline").get_paginator("list_action_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codepipeline.paginator import ListActionTypesPaginator
+
+session = Session()
+
+client = Session().client("codepipeline")  # (1)
+paginator: ListActionTypesPaginator = client.get_paginator("list_action_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodePipelineClient](./client.md)
+2. paginator: [ListActionTypesPaginator](./paginators.md#listactiontypespaginator)
+3. item: [:material-code-braces: ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_list_pipeline_executions_paginator() -> ListPipelineExecutionsPaginator:
     return Session().client("codepipeline").get_paginator("list_pipeline_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codepipeline.paginator import ListPipelineExecutionsPaginator
+
+session = Session()
+
+client = Session().client("codepipeline")  # (1)
+paginator: ListPipelineExecutionsPaginator = client.get_paginator("list_pipeline_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodePipelineClient](./client.md)
+2. paginator: [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
+3. item: [:material-code-braces: ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef) 
+
 
 ### paginate
 
@@ -151,6 +202,23 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("codepipeline").get_paginator("list_pipelines")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codepipeline.paginator import ListPipelinesPaginator
+
+session = Session()
+
+client = Session().client("codepipeline")  # (1)
+paginator: ListPipelinesPaginator = client.get_paginator("list_pipelines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodePipelineClient](./client.md)
+2. paginator: [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+3. item: [:material-code-braces: ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef) 
+
 
 ### paginate
 
@@ -191,6 +259,23 @@ from mypy_boto3_codepipeline.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("codepipeline").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codepipeline.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("codepipeline")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodePipelineClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
 
 ### paginate
@@ -233,6 +318,23 @@ from mypy_boto3_codepipeline.paginator import ListWebhooksPaginator
 def get_list_webhooks_paginator() -> ListWebhooksPaginator:
     return Session().client("codepipeline").get_paginator("list_webhooks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codepipeline.paginator import ListWebhooksPaginator
+
+session = Session()
+
+client = Session().client("codepipeline")  # (1)
+paginator: ListWebhooksPaginator = client.get_paginator("list_webhooks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodePipelineClient](./client.md)
+2. paginator: [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)
+3. item: [:material-code-braces: ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef) 
 
 
 ### paginate

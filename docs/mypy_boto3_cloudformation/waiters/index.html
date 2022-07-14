@@ -36807,9 +36807,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">ChangeSetCreateCompleteWaiter</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">def</span> <span class="nf">get_change_set_create_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ChangeSetCreateCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;change_set_create_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">ChangeSetCreateCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;change_set_create_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#changesetcreatecompletewaiter">ChangeSetCreateCompleteWaiter</a></li>
+</ol>
 <h3 id="wait">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">ChangeSetCreateCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -36841,9 +36849,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">StackCreateCompleteWaiter</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_stack_create_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StackCreateCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_create_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">StackCreateCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_create_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#stackcreatecompletewaiter">StackCreateCompleteWaiter</a></li>
+</ol>
 <h3 id="wait_1">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">StackCreateCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -36874,9 +36890,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">StackDeleteCompleteWaiter</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">def</span> <span class="nf">get_stack_delete_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StackDeleteCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_delete_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">StackDeleteCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_delete_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#stackdeletecompletewaiter">StackDeleteCompleteWaiter</a></li>
+</ol>
 <h3 id="wait_2">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">StackDeleteCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -36907,9 +36931,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">StackExistsWaiter</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">def</span> <span class="nf">get_stack_exists_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StackExistsWaiter</span><span class="p">:</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_exists&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">StackExistsWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_exists&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#stackexistswaiter">StackExistsWaiter</a></li>
+</ol>
 <h3 id="wait_3">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">StackExistsWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -36940,9 +36972,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
 <a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">StackImportCompleteWaiter</span>
 <a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">def</span> <span class="nf">get_stack_import_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StackImportCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_import_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">StackImportCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_import_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#stackimportcompletewaiter">StackImportCompleteWaiter</a></li>
+</ol>
 <h3 id="wait_4">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">StackImportCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -36973,9 +37013,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
 <a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">StackRollbackCompleteWaiter</span>
 <a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="k">def</span> <span class="nf">get_stack_rollback_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StackRollbackCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_rollback_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">StackRollbackCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_rollback_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#stackrollbackcompletewaiter">StackRollbackCompleteWaiter</a></li>
+</ol>
 <h3 id="wait_5">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">StackRollbackCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -37006,9 +37054,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
 <a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">StackUpdateCompleteWaiter</span>
 <a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="k">def</span> <span class="nf">get_stack_update_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StackUpdateCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_update_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">StackUpdateCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;stack_update_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#stackupdatecompletewaiter">StackUpdateCompleteWaiter</a></li>
+</ol>
 <h3 id="wait_6">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">StackUpdateCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>
@@ -37039,9 +37095,17 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
 <a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudformation.waiter</span> <span class="kn">import</span> <span class="n">TypeRegistrationCompleteWaiter</span>
 <a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">def</span> <span class="nf">get_type_registration_complete_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TypeRegistrationCompleteWaiter</span><span class="p">:</span>
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;type_registration_complete&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudformation&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="n">waiter</span><span class="p">:</span> <span class="n">TypeRegistrationCompleteWaiter</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;type_registration_complete&quot;</span><span class="p">)</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="k">await</span> <span class="n">waiter</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
 </code></pre></div>
+<ol>
+<li>client: <a href="../client/">CloudFormationClient</a></li>
+<li>waiter: <a href="./#typeregistrationcompletewaiter">TypeRegistrationCompleteWaiter</a></li>
+</ol>
 <h3 id="wait_7">wait</h3>
 <p>Type annotations and code completion for <code class="highlight"><span class="n">TypeRegistrationCompleteWaiter</span><span class="o">.</span><span class="n">wait</span></code> method.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">def</span> <span class="nf">wait</span><span class="p">(</span>

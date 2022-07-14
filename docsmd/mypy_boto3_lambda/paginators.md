@@ -21,6 +21,23 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return Session().client("lambda").get_paginator("list_aliases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListAliasesPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListAliasesPaginator = client.get_paginator("list_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+3. item: [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_code_signing_configs_paginator() -> ListCodeSigningConfigsPaginator
     return Session().client("lambda").get_paginator("list_code_signing_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListCodeSigningConfigsPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListCodeSigningConfigsPaginator = client.get_paginator("list_code_signing_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListCodeSigningConfigsPaginator](./paginators.md#listcodesigningconfigspaginator)
+3. item: [:material-code-braces: ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_lambda.paginator import ListEventSourceMappingsPaginator
 def get_list_event_source_mappings_paginator() -> ListEventSourceMappingsPaginator:
     return Session().client("lambda").get_paginator("list_event_source_mappings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListEventSourceMappingsPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListEventSourceMappingsPaginator = client.get_paginator("list_event_source_mappings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListEventSourceMappingsPaginator](./paginators.md#listeventsourcemappingspaginator)
+3. item: [:material-code-braces: ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef) 
 
 
 ### paginate
@@ -148,6 +199,23 @@ def get_list_function_event_invoke_configs_paginator() -> ListFunctionEventInvok
     return Session().client("lambda").get_paginator("list_function_event_invoke_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListFunctionEventInvokeConfigsPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListFunctionEventInvokeConfigsPaginator = client.get_paginator("list_function_event_invoke_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListFunctionEventInvokeConfigsPaginator](./paginators.md#listfunctioneventinvokeconfigspaginator)
+3. item: [:material-code-braces: ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -190,6 +258,23 @@ def get_list_function_url_configs_paginator() -> ListFunctionUrlConfigsPaginator
     return Session().client("lambda").get_paginator("list_function_url_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListFunctionUrlConfigsPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListFunctionUrlConfigsPaginator = client.get_paginator("list_function_url_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListFunctionUrlConfigsPaginator](./paginators.md#listfunctionurlconfigspaginator)
+3. item: [:material-code-braces: ListFunctionUrlConfigsResponseTypeDef](./type_defs.md#listfunctionurlconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -231,6 +316,23 @@ from mypy_boto3_lambda.paginator import ListFunctionsPaginator
 def get_list_functions_paginator() -> ListFunctionsPaginator:
     return Session().client("lambda").get_paginator("list_functions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListFunctionsPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListFunctionsPaginator = client.get_paginator("list_functions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
+3. item: [:material-code-braces: ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef) 
 
 
 ### paginate
@@ -276,6 +378,23 @@ def get_list_functions_by_code_signing_config_paginator() -> ListFunctionsByCode
     return Session().client("lambda").get_paginator("list_functions_by_code_signing_config")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListFunctionsByCodeSigningConfigPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListFunctionsByCodeSigningConfigPaginator = client.get_paginator("list_functions_by_code_signing_config")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListFunctionsByCodeSigningConfigPaginator](./paginators.md#listfunctionsbycodesigningconfigpaginator)
+3. item: [:material-code-braces: ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef) 
+
 
 ### paginate
 
@@ -317,6 +436,23 @@ from mypy_boto3_lambda.paginator import ListLayerVersionsPaginator
 def get_list_layer_versions_paginator() -> ListLayerVersionsPaginator:
     return Session().client("lambda").get_paginator("list_layer_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListLayerVersionsPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListLayerVersionsPaginator = client.get_paginator("list_layer_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListLayerVersionsPaginator](./paginators.md#listlayerversionspaginator)
+3. item: [:material-code-braces: ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef) 
 
 
 ### paginate
@@ -364,6 +500,23 @@ def get_list_layers_paginator() -> ListLayersPaginator:
     return Session().client("lambda").get_paginator("list_layers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListLayersPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListLayersPaginator = client.get_paginator("list_layers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListLayersPaginator](./paginators.md#listlayerspaginator)
+3. item: [:material-code-braces: ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef) 
+
 
 ### paginate
 
@@ -409,6 +562,23 @@ def get_list_provisioned_concurrency_configs_paginator() -> ListProvisionedConcu
     return Session().client("lambda").get_paginator("list_provisioned_concurrency_configs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListProvisionedConcurrencyConfigsPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListProvisionedConcurrencyConfigsPaginator = client.get_paginator("list_provisioned_concurrency_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListProvisionedConcurrencyConfigsPaginator](./paginators.md#listprovisionedconcurrencyconfigspaginator)
+3. item: [:material-code-braces: ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef) 
+
 
 ### paginate
 
@@ -450,6 +620,23 @@ from mypy_boto3_lambda.paginator import ListVersionsByFunctionPaginator
 def get_list_versions_by_function_paginator() -> ListVersionsByFunctionPaginator:
     return Session().client("lambda").get_paginator("list_versions_by_function")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.paginator import ListVersionsByFunctionPaginator
+
+session = Session()
+
+client = Session().client("lambda")  # (1)
+paginator: ListVersionsByFunctionPaginator = client.get_paginator("list_versions_by_function")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LambdaClient](./client.md)
+2. paginator: [ListVersionsByFunctionPaginator](./paginators.md#listversionsbyfunctionpaginator)
+3. item: [:material-code-braces: ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef) 
 
 
 ### paginate

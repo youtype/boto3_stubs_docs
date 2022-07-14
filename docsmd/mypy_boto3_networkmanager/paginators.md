@@ -21,6 +21,23 @@ def get_describe_global_networks_paginator() -> DescribeGlobalNetworksPaginator:
     return Session().client("networkmanager").get_paginator("describe_global_networks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: DescribeGlobalNetworksPaginator = client.get_paginator("describe_global_networks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
+3. item: [:material-code-braces: DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_networkmanager.paginator import GetConnectPeerAssociationsPagina
 def get_get_connect_peer_associations_paginator() -> GetConnectPeerAssociationsPaginator:
     return Session().client("networkmanager").get_paginator("get_connect_peer_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetConnectPeerAssociationsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetConnectPeerAssociationsPaginator = client.get_paginator("get_connect_peer_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetConnectPeerAssociationsPaginator](./paginators.md#getconnectpeerassociationspaginator)
+3. item: [:material-code-braces: GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ from mypy_boto3_networkmanager.paginator import GetConnectionsPaginator
 def get_get_connections_paginator() -> GetConnectionsPaginator:
     return Session().client("networkmanager").get_paginator("get_connections")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetConnectionsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetConnectionsPaginator = client.get_paginator("get_connections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+3. item: [:material-code-braces: GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef) 
 
 
 ### paginate
@@ -150,6 +201,23 @@ def get_get_core_network_change_events_paginator() -> GetCoreNetworkChangeEvents
     return Session().client("networkmanager").get_paginator("get_core_network_change_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetCoreNetworkChangeEventsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetCoreNetworkChangeEventsPaginator = client.get_paginator("get_core_network_change_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetCoreNetworkChangeEventsPaginator](./paginators.md#getcorenetworkchangeeventspaginator)
+3. item: [:material-code-braces: GetCoreNetworkChangeEventsResponseTypeDef](./type_defs.md#getcorenetworkchangeeventsresponsetypedef) 
+
 
 ### paginate
 
@@ -193,6 +261,23 @@ from mypy_boto3_networkmanager.paginator import GetCoreNetworkChangeSetPaginator
 def get_get_core_network_change_set_paginator() -> GetCoreNetworkChangeSetPaginator:
     return Session().client("networkmanager").get_paginator("get_core_network_change_set")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetCoreNetworkChangeSetPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetCoreNetworkChangeSetPaginator = client.get_paginator("get_core_network_change_set")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetCoreNetworkChangeSetPaginator](./paginators.md#getcorenetworkchangesetpaginator)
+3. item: [:material-code-braces: GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef) 
 
 
 ### paginate
@@ -238,6 +323,23 @@ def get_get_customer_gateway_associations_paginator() -> GetCustomerGatewayAssoc
     return Session().client("networkmanager").get_paginator("get_customer_gateway_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetCustomerGatewayAssociationsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetCustomerGatewayAssociationsPaginator = client.get_paginator("get_customer_gateway_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetCustomerGatewayAssociationsPaginator](./paginators.md#getcustomergatewayassociationspaginator)
+3. item: [:material-code-braces: GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef) 
+
 
 ### paginate
 
@@ -280,6 +382,23 @@ from mypy_boto3_networkmanager.paginator import GetDevicesPaginator
 def get_get_devices_paginator() -> GetDevicesPaginator:
     return Session().client("networkmanager").get_paginator("get_devices")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetDevicesPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetDevicesPaginator = client.get_paginator("get_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetDevicesPaginator](./paginators.md#getdevicespaginator)
+3. item: [:material-code-braces: GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef) 
 
 
 ### paginate
@@ -325,6 +444,23 @@ def get_get_link_associations_paginator() -> GetLinkAssociationsPaginator:
     return Session().client("networkmanager").get_paginator("get_link_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetLinkAssociationsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetLinkAssociationsPaginator = client.get_paginator("get_link_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetLinkAssociationsPaginator](./paginators.md#getlinkassociationspaginator)
+3. item: [:material-code-braces: GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef) 
+
 
 ### paginate
 
@@ -368,6 +504,23 @@ from mypy_boto3_networkmanager.paginator import GetLinksPaginator
 def get_get_links_paginator() -> GetLinksPaginator:
     return Session().client("networkmanager").get_paginator("get_links")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetLinksPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetLinksPaginator = client.get_paginator("get_links")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetLinksPaginator](./paginators.md#getlinkspaginator)
+3. item: [:material-code-braces: GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef) 
 
 
 ### paginate
@@ -415,6 +568,23 @@ def get_get_network_resource_counts_paginator() -> GetNetworkResourceCountsPagin
     return Session().client("networkmanager").get_paginator("get_network_resource_counts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetNetworkResourceCountsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetNetworkResourceCountsPaginator = client.get_paginator("get_network_resource_counts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetNetworkResourceCountsPaginator](./paginators.md#getnetworkresourcecountspaginator)
+3. item: [:material-code-braces: GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef) 
+
 
 ### paginate
 
@@ -457,6 +627,23 @@ from mypy_boto3_networkmanager.paginator import GetNetworkResourceRelationshipsP
 def get_get_network_resource_relationships_paginator() -> GetNetworkResourceRelationshipsPaginator:
     return Session().client("networkmanager").get_paginator("get_network_resource_relationships")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetNetworkResourceRelationshipsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetNetworkResourceRelationshipsPaginator = client.get_paginator("get_network_resource_relationships")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetNetworkResourceRelationshipsPaginator](./paginators.md#getnetworkresourcerelationshipspaginator)
+3. item: [:material-code-braces: GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef) 
 
 
 ### paginate
@@ -506,6 +693,23 @@ def get_get_network_resources_paginator() -> GetNetworkResourcesPaginator:
     return Session().client("networkmanager").get_paginator("get_network_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetNetworkResourcesPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetNetworkResourcesPaginator = client.get_paginator("get_network_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetNetworkResourcesPaginator](./paginators.md#getnetworkresourcespaginator)
+3. item: [:material-code-braces: GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef) 
+
 
 ### paginate
 
@@ -553,6 +757,23 @@ from mypy_boto3_networkmanager.paginator import GetNetworkTelemetryPaginator
 def get_get_network_telemetry_paginator() -> GetNetworkTelemetryPaginator:
     return Session().client("networkmanager").get_paginator("get_network_telemetry")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetNetworkTelemetryPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetNetworkTelemetryPaginator = client.get_paginator("get_network_telemetry")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetNetworkTelemetryPaginator](./paginators.md#getnetworktelemetrypaginator)
+3. item: [:material-code-braces: GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef) 
 
 
 ### paginate
@@ -602,6 +823,23 @@ def get_get_sites_paginator() -> GetSitesPaginator:
     return Session().client("networkmanager").get_paginator("get_sites")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetSitesPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetSitesPaginator = client.get_paginator("get_sites")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetSitesPaginator](./paginators.md#getsitespaginator)
+3. item: [:material-code-braces: GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef) 
+
 
 ### paginate
 
@@ -644,6 +882,23 @@ from mypy_boto3_networkmanager.paginator import GetTransitGatewayConnectPeerAsso
 def get_get_transit_gateway_connect_peer_associations_paginator() -> GetTransitGatewayConnectPeerAssociationsPaginator:
     return Session().client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetTransitGatewayConnectPeerAssociationsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetTransitGatewayConnectPeerAssociationsPaginator = client.get_paginator("get_transit_gateway_connect_peer_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetTransitGatewayConnectPeerAssociationsPaginator](./paginators.md#gettransitgatewayconnectpeerassociationspaginator)
+3. item: [:material-code-braces: GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef) 
 
 
 ### paginate
@@ -688,6 +943,23 @@ def get_get_transit_gateway_registrations_paginator() -> GetTransitGatewayRegist
     return Session().client("networkmanager").get_paginator("get_transit_gateway_registrations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import GetTransitGatewayRegistrationsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: GetTransitGatewayRegistrationsPaginator = client.get_paginator("get_transit_gateway_registrations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [GetTransitGatewayRegistrationsPaginator](./paginators.md#gettransitgatewayregistrationspaginator)
+3. item: [:material-code-braces: GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef) 
+
 
 ### paginate
 
@@ -730,6 +1002,23 @@ from mypy_boto3_networkmanager.paginator import ListAttachmentsPaginator
 def get_list_attachments_paginator() -> ListAttachmentsPaginator:
     return Session().client("networkmanager").get_paginator("list_attachments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import ListAttachmentsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: ListAttachmentsPaginator = client.get_paginator("list_attachments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [ListAttachmentsPaginator](./paginators.md#listattachmentspaginator)
+3. item: [:material-code-braces: ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef) 
 
 
 ### paginate
@@ -778,6 +1067,23 @@ def get_list_connect_peers_paginator() -> ListConnectPeersPaginator:
     return Session().client("networkmanager").get_paginator("list_connect_peers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import ListConnectPeersPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: ListConnectPeersPaginator = client.get_paginator("list_connect_peers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [ListConnectPeersPaginator](./paginators.md#listconnectpeerspaginator)
+3. item: [:material-code-braces: ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef) 
+
 
 ### paginate
 
@@ -821,6 +1127,23 @@ def get_list_core_network_policy_versions_paginator() -> ListCoreNetworkPolicyVe
     return Session().client("networkmanager").get_paginator("list_core_network_policy_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import ListCoreNetworkPolicyVersionsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: ListCoreNetworkPolicyVersionsPaginator = client.get_paginator("list_core_network_policy_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [ListCoreNetworkPolicyVersionsPaginator](./paginators.md#listcorenetworkpolicyversionspaginator)
+3. item: [:material-code-braces: ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -863,6 +1186,23 @@ def get_list_core_networks_paginator() -> ListCoreNetworksPaginator:
     return Session().client("networkmanager").get_paginator("list_core_networks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import ListCoreNetworksPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: ListCoreNetworksPaginator = client.get_paginator("list_core_networks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [ListCoreNetworksPaginator](./paginators.md#listcorenetworkspaginator)
+3. item: [:material-code-braces: ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef) 
+
 
 ### paginate
 
@@ -903,6 +1243,23 @@ from mypy_boto3_networkmanager.paginator import ListPeeringsPaginator
 def get_list_peerings_paginator() -> ListPeeringsPaginator:
     return Session().client("networkmanager").get_paginator("list_peerings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_networkmanager.paginator import ListPeeringsPaginator
+
+session = Session()
+
+client = Session().client("networkmanager")  # (1)
+paginator: ListPeeringsPaginator = client.get_paginator("list_peerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkManagerClient](./client.md)
+2. paginator: [ListPeeringsPaginator](./paginators.md#listpeeringspaginator)
+3. item: [:material-code-braces: ListPeeringsResponseTypeDef](./type_defs.md#listpeeringsresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_get_entitlements_paginator() -> GetEntitlementsPaginator:
     return Session().client("marketplace-entitlement").get_paginator("get_entitlements")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_marketplace_entitlement.paginator import GetEntitlementsPaginator
+
+session = Session()
+
+client = Session().client("marketplace-entitlement")  # (1)
+paginator: GetEntitlementsPaginator = client.get_paginator("get_entitlements")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MarketplaceEntitlementServiceClient](./client.md)
+2. paginator: [GetEntitlementsPaginator](./paginators.md#getentitlementspaginator)
+3. item: [:material-code-braces: GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef) 
+
 
 ### paginate
 

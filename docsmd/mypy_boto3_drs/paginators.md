@@ -21,6 +21,23 @@ def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
     return Session().client("drs").get_paginator("describe_job_log_items")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import DescribeJobLogItemsPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: DescribeJobLogItemsPaginator = client.get_paginator("describe_job_log_items")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
+3. item: [:material-code-braces: DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_drs.paginator import DescribeJobsPaginator
 def get_describe_jobs_paginator() -> DescribeJobsPaginator:
     return Session().client("drs").get_paginator("describe_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import DescribeJobsPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: DescribeJobsPaginator = client.get_paginator("describe_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [DescribeJobsPaginator](./paginators.md#describejobspaginator)
+3. item: [:material-code-braces: DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ def get_describe_recovery_instances_paginator() -> DescribeRecoveryInstancesPagi
     return Session().client("drs").get_paginator("describe_recovery_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import DescribeRecoveryInstancesPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: DescribeRecoveryInstancesPaginator = client.get_paginator("describe_recovery_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [DescribeRecoveryInstancesPaginator](./paginators.md#describerecoveryinstancespaginator)
+3. item: [:material-code-braces: DescribeRecoveryInstancesResponseTypeDef](./type_defs.md#describerecoveryinstancesresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_drs.paginator import DescribeRecoverySnapshotsPaginator
 def get_describe_recovery_snapshots_paginator() -> DescribeRecoverySnapshotsPaginator:
     return Session().client("drs").get_paginator("describe_recovery_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import DescribeRecoverySnapshotsPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: DescribeRecoverySnapshotsPaginator = client.get_paginator("describe_recovery_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [DescribeRecoverySnapshotsPaginator](./paginators.md#describerecoverysnapshotspaginator)
+3. item: [:material-code-braces: DescribeRecoverySnapshotsResponseTypeDef](./type_defs.md#describerecoverysnapshotsresponsetypedef) 
 
 
 ### paginate
@@ -195,6 +263,23 @@ def get_describe_replication_configuration_templates_paginator() -> DescribeRepl
     return Session().client("drs").get_paginator("describe_replication_configuration_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import DescribeReplicationConfigurationTemplatesPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: DescribeReplicationConfigurationTemplatesPaginator = client.get_paginator("describe_replication_configuration_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
+3. item: [:material-code-braces: DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -236,6 +321,23 @@ from mypy_boto3_drs.paginator import DescribeSourceServersPaginator
 def get_describe_source_servers_paginator() -> DescribeSourceServersPaginator:
     return Session().client("drs").get_paginator("describe_source_servers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import DescribeSourceServersPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: DescribeSourceServersPaginator = client.get_paginator("describe_source_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+3. item: [:material-code-braces: DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef) 
 
 
 ### paginate
@@ -280,6 +382,23 @@ def get_list_extensible_source_servers_paginator() -> ListExtensibleSourceServer
     return Session().client("drs").get_paginator("list_extensible_source_servers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import ListExtensibleSourceServersPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: ListExtensibleSourceServersPaginator = client.get_paginator("list_extensible_source_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [ListExtensibleSourceServersPaginator](./paginators.md#listextensiblesourceserverspaginator)
+3. item: [:material-code-braces: ListExtensibleSourceServersResponseTypeDef](./type_defs.md#listextensiblesourceserversresponsetypedef) 
+
 
 ### paginate
 
@@ -321,6 +440,23 @@ from mypy_boto3_drs.paginator import ListStagingAccountsPaginator
 def get_list_staging_accounts_paginator() -> ListStagingAccountsPaginator:
     return Session().client("drs").get_paginator("list_staging_accounts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_drs.paginator import ListStagingAccountsPaginator
+
+session = Session()
+
+client = Session().client("drs")  # (1)
+paginator: ListStagingAccountsPaginator = client.get_paginator("list_staging_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [drsClient](./client.md)
+2. paginator: [ListStagingAccountsPaginator](./paginators.md#liststagingaccountspaginator)
+3. item: [:material-code-braces: ListStagingAccountsResponseTypeDef](./type_defs.md#liststagingaccountsresponsetypedef) 
 
 
 ### paginate

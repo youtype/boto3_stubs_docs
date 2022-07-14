@@ -821,6 +821,23 @@ class NetworkFirewallMissingSubnetViolationTypeDef(TypedDict):
     TargetViolationReason: NotRequired[str],
 ```
 
+## StatefulEngineOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import StatefulEngineOptionsTypeDef
+
+def get_value() -> StatefulEngineOptionsTypeDef:
+    return {
+        "RuleOrder": ...,
+    }
+```
+
+```python title="Definition"
+class StatefulEngineOptionsTypeDef(TypedDict):
+    RuleOrder: NotRequired[RuleOrderType],  # (1)
+```
+
+1. See [:material-code-brackets: RuleOrderType](./literals.md#ruleordertype) 
 ## StatefulRuleGroupTypeDef
 
 ```python title="Usage Example"
@@ -836,6 +853,7 @@ def get_value() -> StatefulRuleGroupTypeDef:
 class StatefulRuleGroupTypeDef(TypedDict):
     RuleGroupName: NotRequired[str],
     ResourceId: NotRequired[str],
+    Priority: NotRequired[int],
 ```
 
 ## StatelessRuleGroupTypeDef
@@ -1928,10 +1946,13 @@ class NetworkFirewallPolicyDescriptionTypeDef(TypedDict):
     StatelessFragmentDefaultActions: NotRequired[List[str]],
     StatelessCustomActions: NotRequired[List[str]],
     StatefulRuleGroups: NotRequired[List[StatefulRuleGroupTypeDef]],  # (2)
+    StatefulDefaultActions: NotRequired[List[str]],
+    StatefulEngineOptions: NotRequired[StatefulEngineOptionsTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: StatelessRuleGroupTypeDef](./type_defs.md#statelessrulegrouptypedef) 
 2. See [:material-code-braces: StatefulRuleGroupTypeDef](./type_defs.md#statefulrulegrouptypedef) 
+3. See [:material-code-braces: StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef) 
 ## PolicyOptionTypeDef
 
 ```python title="Usage Example"

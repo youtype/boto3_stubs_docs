@@ -21,6 +21,23 @@ def get_describe_accelerators_paginator() -> DescribeAcceleratorsPaginator:
     return Session().client("elastic-inference").get_paginator("describe_accelerators")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_elastic_inference.paginator import DescribeAcceleratorsPaginator
+
+session = Session()
+
+client = Session().client("elastic-inference")  # (1)
+paginator: DescribeAcceleratorsPaginator = client.get_paginator("describe_accelerators")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ElasticInferenceClient](./client.md)
+2. paginator: [DescribeAcceleratorsPaginator](./paginators.md#describeacceleratorspaginator)
+3. item: [:material-code-braces: DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef) 
+
 
 ### paginate
 

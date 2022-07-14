@@ -21,6 +21,23 @@ def get_describe_objects_paginator() -> DescribeObjectsPaginator:
     return Session().client("datapipeline").get_paginator("describe_objects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datapipeline.paginator import DescribeObjectsPaginator
+
+session = Session()
+
+client = Session().client("datapipeline")  # (1)
+paginator: DescribeObjectsPaginator = client.get_paginator("describe_objects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataPipelineClient](./client.md)
+2. paginator: [DescribeObjectsPaginator](./paginators.md#describeobjectspaginator)
+3. item: [:material-code-braces: DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("datapipeline").get_paginator("list_pipelines")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datapipeline.paginator import ListPipelinesPaginator
+
+session = Session()
+
+client = Session().client("datapipeline")  # (1)
+paginator: ListPipelinesPaginator = client.get_paginator("list_pipelines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataPipelineClient](./client.md)
+2. paginator: [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+3. item: [:material-code-braces: ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_datapipeline.paginator import QueryObjectsPaginator
 def get_query_objects_paginator() -> QueryObjectsPaginator:
     return Session().client("datapipeline").get_paginator("query_objects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_datapipeline.paginator import QueryObjectsPaginator
+
+session = Session()
+
+client = Session().client("datapipeline")  # (1)
+paginator: QueryObjectsPaginator = client.get_paginator("query_objects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataPipelineClient](./client.md)
+2. paginator: [QueryObjectsPaginator](./paginators.md#queryobjectspaginator)
+3. item: [:material-code-braces: QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef) 
 
 
 ### paginate

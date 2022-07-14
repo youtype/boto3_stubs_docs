@@ -21,6 +21,23 @@ def get_list_dead_letter_source_queues_paginator() -> ListDeadLetterSourceQueues
     return Session().client("sqs").get_paginator("list_dead_letter_source_queues")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sqs.paginator import ListDeadLetterSourceQueuesPaginator
+
+session = Session()
+
+client = Session().client("sqs")  # (1)
+paginator: ListDeadLetterSourceQueuesPaginator = client.get_paginator("list_dead_letter_source_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SQSClient](./client.md)
+2. paginator: [ListDeadLetterSourceQueuesPaginator](./paginators.md#listdeadlettersourcequeuespaginator)
+3. item: [:material-code-braces: ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_sqs.paginator import ListQueuesPaginator
 def get_list_queues_paginator() -> ListQueuesPaginator:
     return Session().client("sqs").get_paginator("list_queues")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sqs.paginator import ListQueuesPaginator
+
+session = Session()
+
+client = Session().client("sqs")  # (1)
+paginator: ListQueuesPaginator = client.get_paginator("list_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SQSClient](./client.md)
+2. paginator: [ListQueuesPaginator](./paginators.md#listqueuespaginator)
+3. item: [:material-code-braces: ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef) 
 
 
 ### paginate

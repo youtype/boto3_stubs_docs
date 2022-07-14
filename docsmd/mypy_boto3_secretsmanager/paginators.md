@@ -21,6 +21,23 @@ def get_list_secrets_paginator() -> ListSecretsPaginator:
     return Session().client("secretsmanager").get_paginator("list_secrets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_secretsmanager.paginator import ListSecretsPaginator
+
+session = Session()
+
+client = Session().client("secretsmanager")  # (1)
+paginator: ListSecretsPaginator = client.get_paginator("list_secrets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecretsManagerClient](./client.md)
+2. paginator: [ListSecretsPaginator](./paginators.md#listsecretspaginator)
+3. item: [:material-code-braces: ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef) 
+
 
 ### paginate
 

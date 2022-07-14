@@ -21,6 +21,23 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("voice-id").get_paginator("list_domains")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_voice_id.paginator import ListDomainsPaginator
+
+session = Session()
+
+client = Session().client("voice-id")  # (1)
+paginator: ListDomainsPaginator = client.get_paginator("list_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [VoiceIDClient](./client.md)
+2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+3. item: [:material-code-braces: ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_voice_id.paginator import ListFraudsterRegistrationJobsPaginator
 def get_list_fraudster_registration_jobs_paginator() -> ListFraudsterRegistrationJobsPaginator:
     return Session().client("voice-id").get_paginator("list_fraudster_registration_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_voice_id.paginator import ListFraudsterRegistrationJobsPaginator
+
+session = Session()
+
+client = Session().client("voice-id")  # (1)
+paginator: ListFraudsterRegistrationJobsPaginator = client.get_paginator("list_fraudster_registration_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [VoiceIDClient](./client.md)
+2. paginator: [ListFraudsterRegistrationJobsPaginator](./paginators.md#listfraudsterregistrationjobspaginator)
+3. item: [:material-code-braces: ListFraudsterRegistrationJobsResponseTypeDef](./type_defs.md#listfraudsterregistrationjobsresponsetypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ def get_list_speaker_enrollment_jobs_paginator() -> ListSpeakerEnrollmentJobsPag
     return Session().client("voice-id").get_paginator("list_speaker_enrollment_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_voice_id.paginator import ListSpeakerEnrollmentJobsPaginator
+
+session = Session()
+
+client = Session().client("voice-id")  # (1)
+paginator: ListSpeakerEnrollmentJobsPaginator = client.get_paginator("list_speaker_enrollment_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [VoiceIDClient](./client.md)
+2. paginator: [ListSpeakerEnrollmentJobsPaginator](./paginators.md#listspeakerenrollmentjobspaginator)
+3. item: [:material-code-braces: ListSpeakerEnrollmentJobsResponseTypeDef](./type_defs.md#listspeakerenrollmentjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_voice_id.paginator import ListSpeakersPaginator
 def get_list_speakers_paginator() -> ListSpeakersPaginator:
     return Session().client("voice-id").get_paginator("list_speakers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_voice_id.paginator import ListSpeakersPaginator
+
+session = Session()
+
+client = Session().client("voice-id")  # (1)
+paginator: ListSpeakersPaginator = client.get_paginator("list_speakers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [VoiceIDClient](./client.md)
+2. paginator: [ListSpeakersPaginator](./paginators.md#listspeakerspaginator)
+3. item: [:material-code-braces: ListSpeakersResponseTypeDef](./type_defs.md#listspeakersresponsetypedef) 
 
 
 ### paginate

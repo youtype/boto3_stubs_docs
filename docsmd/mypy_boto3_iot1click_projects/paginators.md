@@ -21,6 +21,23 @@ def get_list_placements_paginator() -> ListPlacementsPaginator:
     return Session().client("iot1click-projects").get_paginator("list_placements")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot1click_projects.paginator import ListPlacementsPaginator
+
+session = Session()
+
+client = Session().client("iot1click-projects")  # (1)
+paginator: ListPlacementsPaginator = client.get_paginator("list_placements")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoT1ClickProjectsClient](./client.md)
+2. paginator: [ListPlacementsPaginator](./paginators.md#listplacementspaginator)
+3. item: [:material-code-braces: ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_iot1click_projects.paginator import ListProjectsPaginator
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("iot1click-projects").get_paginator("list_projects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot1click_projects.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("iot1click-projects")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoT1ClickProjectsClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
 
 ### paginate

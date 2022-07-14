@@ -21,6 +21,23 @@ def get_describe_alarm_history_paginator() -> DescribeAlarmHistoryPaginator:
     return Session().client("cloudwatch").get_paginator("describe_alarm_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator
+
+session = Session()
+
+client = Session().client("cloudwatch")  # (1)
+paginator: DescribeAlarmHistoryPaginator = client.get_paginator("describe_alarm_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchClient](./client.md)
+2. paginator: [DescribeAlarmHistoryPaginator](./paginators.md#describealarmhistorypaginator)
+3. item: [:material-code-braces: DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef) 
+
 
 ### paginate
 
@@ -71,6 +88,23 @@ def get_describe_alarms_paginator() -> DescribeAlarmsPaginator:
     return Session().client("cloudwatch").get_paginator("describe_alarms")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.paginator import DescribeAlarmsPaginator
+
+session = Session()
+
+client = Session().client("cloudwatch")  # (1)
+paginator: DescribeAlarmsPaginator = client.get_paginator("describe_alarms")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchClient](./client.md)
+2. paginator: [DescribeAlarmsPaginator](./paginators.md#describealarmspaginator)
+3. item: [:material-code-braces: DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef) 
+
 
 ### paginate
 
@@ -120,6 +154,23 @@ from mypy_boto3_cloudwatch.paginator import GetMetricDataPaginator
 def get_get_metric_data_paginator() -> GetMetricDataPaginator:
     return Session().client("cloudwatch").get_paginator("get_metric_data")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.paginator import GetMetricDataPaginator
+
+session = Session()
+
+client = Session().client("cloudwatch")  # (1)
+paginator: GetMetricDataPaginator = client.get_paginator("get_metric_data")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchClient](./client.md)
+2. paginator: [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
+3. item: [:material-code-braces: GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef) 
 
 
 ### paginate
@@ -172,6 +223,23 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return Session().client("cloudwatch").get_paginator("list_dashboards")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.paginator import ListDashboardsPaginator
+
+session = Session()
+
+client = Session().client("cloudwatch")  # (1)
+paginator: ListDashboardsPaginator = client.get_paginator("list_dashboards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchClient](./client.md)
+2. paginator: [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
+3. item: [:material-code-braces: ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef) 
+
 
 ### paginate
 
@@ -213,6 +281,23 @@ from mypy_boto3_cloudwatch.paginator import ListMetricsPaginator
 def get_list_metrics_paginator() -> ListMetricsPaginator:
     return Session().client("cloudwatch").get_paginator("list_metrics")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.paginator import ListMetricsPaginator
+
+session = Session()
+
+client = Session().client("cloudwatch")  # (1)
+paginator: ListMetricsPaginator = client.get_paginator("list_metrics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchClient](./client.md)
+2. paginator: [ListMetricsPaginator](./paginators.md#listmetricspaginator)
+3. item: [:material-code-braces: ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef) 
 
 
 ### paginate

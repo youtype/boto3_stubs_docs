@@ -21,6 +21,23 @@ def get_list_certificate_authorities_paginator() -> ListCertificateAuthoritiesPa
     return Session().client("acm-pca").get_paginator("list_certificate_authorities")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_acm_pca.paginator import ListCertificateAuthoritiesPaginator
+
+session = Session()
+
+client = Session().client("acm-pca")  # (1)
+paginator: ListCertificateAuthoritiesPaginator = client.get_paginator("list_certificate_authorities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ACMPCAClient](./client.md)
+2. paginator: [ListCertificateAuthoritiesPaginator](./paginators.md#listcertificateauthoritiespaginator)
+3. item: [:material-code-braces: ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_permissions_paginator() -> ListPermissionsPaginator:
     return Session().client("acm-pca").get_paginator("list_permissions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_acm_pca.paginator import ListPermissionsPaginator
+
+session = Session()
+
+client = Session().client("acm-pca")  # (1)
+paginator: ListPermissionsPaginator = client.get_paginator("list_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ACMPCAClient](./client.md)
+2. paginator: [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
+3. item: [:material-code-braces: ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_acm_pca.paginator import ListTagsPaginator
 def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("acm-pca").get_paginator("list_tags")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_acm_pca.paginator import ListTagsPaginator
+
+session = Session()
+
+client = Session().client("acm-pca")  # (1)
+paginator: ListTagsPaginator = client.get_paginator("list_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ACMPCAClient](./client.md)
+2. paginator: [ListTagsPaginator](./paginators.md#listtagspaginator)
+3. item: [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
 
 ### paginate

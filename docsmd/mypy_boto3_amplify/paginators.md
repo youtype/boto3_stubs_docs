@@ -21,6 +21,23 @@ def get_list_apps_paginator() -> ListAppsPaginator:
     return Session().client("amplify").get_paginator("list_apps")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplify.paginator import ListAppsPaginator
+
+session = Session()
+
+client = Session().client("amplify")  # (1)
+paginator: ListAppsPaginator = client.get_paginator("list_apps")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyClient](./client.md)
+2. paginator: [ListAppsPaginator](./paginators.md#listappspaginator)
+3. item: [:material-code-braces: ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_amplify.paginator import ListBranchesPaginator
 def get_list_branches_paginator() -> ListBranchesPaginator:
     return Session().client("amplify").get_paginator("list_branches")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplify.paginator import ListBranchesPaginator
+
+session = Session()
+
+client = Session().client("amplify")  # (1)
+paginator: ListBranchesPaginator = client.get_paginator("list_branches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyClient](./client.md)
+2. paginator: [ListBranchesPaginator](./paginators.md#listbranchespaginator)
+3. item: [:material-code-braces: ListBranchesResultTypeDef](./type_defs.md#listbranchesresulttypedef) 
 
 
 ### paginate
@@ -104,6 +138,23 @@ def get_list_domain_associations_paginator() -> ListDomainAssociationsPaginator:
     return Session().client("amplify").get_paginator("list_domain_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplify.paginator import ListDomainAssociationsPaginator
+
+session = Session()
+
+client = Session().client("amplify")  # (1)
+paginator: ListDomainAssociationsPaginator = client.get_paginator("list_domain_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyClient](./client.md)
+2. paginator: [ListDomainAssociationsPaginator](./paginators.md#listdomainassociationspaginator)
+3. item: [:material-code-braces: ListDomainAssociationsResultTypeDef](./type_defs.md#listdomainassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_amplify.paginator import ListJobsPaginator
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("amplify").get_paginator("list_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplify.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("amplify")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef) 
 
 
 ### paginate

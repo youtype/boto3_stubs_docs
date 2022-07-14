@@ -36672,12 +36672,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_codeartifact.literals</span> <span class="kn">import</span> <span class="n">DomainStatusType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_codeartifact.literals</span> <span class="kn">import</span> <span class="n">AllowPublishType</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DomainStatusType</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;Active&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AllowPublishType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;ALLOW&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#allowpublishtype">AllowPublishType</a></li>
+<li><a href="literals/#allowupstreamtype">AllowUpstreamType</a></li>
 <li><a href="literals/#domainstatustype">DomainStatusType</a></li>
 <li><a href="literals/#externalconnectionstatustype">ExternalConnectionStatusType</a></li>
 <li><a href="literals/#hashalgorithmtype">HashAlgorithmType</a></li>
@@ -36689,6 +36691,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listrepositoriespaginatorname">ListRepositoriesPaginatorName</a></li>
 <li><a href="literals/#packageformattype">PackageFormatType</a></li>
 <li><a href="literals/#packageversionerrorcodetype">PackageVersionErrorCodeType</a></li>
+<li><a href="literals/#packageversionorigintypetype">PackageVersionOriginTypeType</a></li>
 <li><a href="literals/#packageversionsorttypetype">PackageVersionSortTypeType</a></li>
 <li><a href="literals/#packageversionstatustype">PackageVersionStatusType</a></li>
 <li><a href="literals/#codeartifactservicename">CodeArtifactServiceName</a></li>
@@ -36723,10 +36726,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleterepositorypermissionspolicyrequestrequesttypedef">DeleteRepositoryPermissionsPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleterepositoryrequestrequesttypedef">DeleteRepositoryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedomainrequestrequesttypedef">DescribeDomainRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describepackagerequestrequesttypedef">DescribePackageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describepackageversionrequestrequesttypedef">DescribePackageVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describerepositoryrequestrequesttypedef">DescribeRepositoryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociateexternalconnectionrequestrequesttypedef">DisassociateExternalConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disposepackageversionsrequestrequesttypedef">DisposePackageVersionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#domainentrypointtypedef">DomainEntryPointTypeDef</a></li>
 <li><a href="type_defs/#domainsummarytypedef">DomainSummaryTypeDef</a></li>
 <li><a href="type_defs/#getauthorizationtokenrequestrequesttypedef">GetAuthorizationTokenRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdomainpermissionspolicyrequestrequesttypedef">GetDomainPermissionsPolicyRequestRequestTypeDef</a></li>
@@ -36741,13 +36746,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listpackageversiondependenciesrequestrequesttypedef">ListPackageVersionDependenciesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#packagedependencytypedef">PackageDependencyTypeDef</a></li>
 <li><a href="type_defs/#listpackageversionsrequestrequesttypedef">ListPackageVersionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#packageversionsummarytypedef">PackageVersionSummaryTypeDef</a></li>
 <li><a href="type_defs/#listpackagesrequestrequesttypedef">ListPackagesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#packagesummarytypedef">PackageSummaryTypeDef</a></li>
 <li><a href="type_defs/#listrepositoriesindomainrequestrequesttypedef">ListRepositoriesInDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#repositorysummarytypedef">RepositorySummaryTypeDef</a></li>
 <li><a href="type_defs/#listrepositoriesrequestrequesttypedef">ListRepositoriesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#packageoriginrestrictionstypedef">PackageOriginRestrictionsTypeDef</a></li>
 <li><a href="type_defs/#putdomainpermissionspolicyrequestrequesttypedef">PutDomainPermissionsPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putrepositorypermissionspolicyrequestrequesttypedef">PutRepositoryPermissionsPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#repositoryexternalconnectioninfotypedef">RepositoryExternalConnectionInfoTypeDef</a></li>
@@ -36777,8 +36781,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getrepositorypermissionspolicyresulttypedef">GetRepositoryPermissionsPolicyResultTypeDef</a></li>
 <li><a href="type_defs/#putdomainpermissionspolicyresulttypedef">PutDomainPermissionsPolicyResultTypeDef</a></li>
 <li><a href="type_defs/#putrepositorypermissionspolicyresulttypedef">PutRepositoryPermissionsPolicyResultTypeDef</a></li>
+<li><a href="type_defs/#packageversionorigintypedef">PackageVersionOriginTypeDef</a></li>
 <li><a href="type_defs/#listdomainsresulttypedef">ListDomainsResultTypeDef</a></li>
-<li><a href="type_defs/#packageversiondescriptiontypedef">PackageVersionDescriptionTypeDef</a></li>
 <li><a href="type_defs/#listdomainsrequestlistdomainspaginatetypedef">ListDomainsRequestListDomainsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpackageversionassetsrequestlistpackageversionassetspaginatetypedef">ListPackageVersionAssetsRequestListPackageVersionAssetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpackageversionsrequestlistpackageversionspaginatetypedef">ListPackageVersionsRequestListPackageVersionsPaginateTypeDef</a></li>
@@ -36786,18 +36790,26 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listrepositoriesindomainrequestlistrepositoriesindomainpaginatetypedef">ListRepositoriesInDomainRequestListRepositoriesInDomainPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrepositoriesrequestlistrepositoriespaginatetypedef">ListRepositoriesRequestListRepositoriesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpackageversiondependenciesresulttypedef">ListPackageVersionDependenciesResultTypeDef</a></li>
-<li><a href="type_defs/#listpackageversionsresulttypedef">ListPackageVersionsResultTypeDef</a></li>
-<li><a href="type_defs/#listpackagesresulttypedef">ListPackagesResultTypeDef</a></li>
 <li><a href="type_defs/#listrepositoriesindomainresulttypedef">ListRepositoriesInDomainResultTypeDef</a></li>
 <li><a href="type_defs/#listrepositoriesresulttypedef">ListRepositoriesResultTypeDef</a></li>
+<li><a href="type_defs/#packageoriginconfigurationtypedef">PackageOriginConfigurationTypeDef</a></li>
+<li><a href="type_defs/#putpackageoriginconfigurationrequestrequesttypedef">PutPackageOriginConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#repositorydescriptiontypedef">RepositoryDescriptionTypeDef</a></li>
-<li><a href="type_defs/#describepackageversionresulttypedef">DescribePackageVersionResultTypeDef</a></li>
+<li><a href="type_defs/#packageversiondescriptiontypedef">PackageVersionDescriptionTypeDef</a></li>
+<li><a href="type_defs/#packageversionsummarytypedef">PackageVersionSummaryTypeDef</a></li>
+<li><a href="type_defs/#packagedescriptiontypedef">PackageDescriptionTypeDef</a></li>
+<li><a href="type_defs/#packagesummarytypedef">PackageSummaryTypeDef</a></li>
+<li><a href="type_defs/#putpackageoriginconfigurationresulttypedef">PutPackageOriginConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#associateexternalconnectionresulttypedef">AssociateExternalConnectionResultTypeDef</a></li>
 <li><a href="type_defs/#createrepositoryresulttypedef">CreateRepositoryResultTypeDef</a></li>
 <li><a href="type_defs/#deleterepositoryresulttypedef">DeleteRepositoryResultTypeDef</a></li>
 <li><a href="type_defs/#describerepositoryresulttypedef">DescribeRepositoryResultTypeDef</a></li>
 <li><a href="type_defs/#disassociateexternalconnectionresulttypedef">DisassociateExternalConnectionResultTypeDef</a></li>
 <li><a href="type_defs/#updaterepositoryresulttypedef">UpdateRepositoryResultTypeDef</a></li>
+<li><a href="type_defs/#describepackageversionresulttypedef">DescribePackageVersionResultTypeDef</a></li>
+<li><a href="type_defs/#listpackageversionsresulttypedef">ListPackageVersionsResultTypeDef</a></li>
+<li><a href="type_defs/#describepackageresulttypedef">DescribePackageResultTypeDef</a></li>
+<li><a href="type_defs/#listpackagesresulttypedef">ListPackagesResultTypeDef</a></li>
 </ul>
 
               

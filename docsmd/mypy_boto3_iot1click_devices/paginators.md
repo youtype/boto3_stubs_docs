@@ -21,6 +21,23 @@ def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
     return Session().client("iot1click-devices").get_paginator("list_device_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator
+
+session = Session()
+
+client = Session().client("iot1click-devices")  # (1)
+paginator: ListDeviceEventsPaginator = client.get_paginator("list_device_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoT1ClickDevicesServiceClient](./client.md)
+2. paginator: [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
+3. item: [:material-code-braces: ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ from mypy_boto3_iot1click_devices.paginator import ListDevicesPaginator
 def get_list_devices_paginator() -> ListDevicesPaginator:
     return Session().client("iot1click-devices").get_paginator("list_devices")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot1click_devices.paginator import ListDevicesPaginator
+
+session = Session()
+
+client = Session().client("iot1click-devices")  # (1)
+paginator: ListDevicesPaginator = client.get_paginator("list_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoT1ClickDevicesServiceClient](./client.md)
+2. paginator: [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+3. item: [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
 
 
 ### paginate

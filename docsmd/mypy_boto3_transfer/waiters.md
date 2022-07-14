@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_transfer.waiter import ServerOfflineWaiter
 
-def get_server_offline_waiter() -> ServerOfflineWaiter:
-    return Session().client("transfer").get_waiter("server_offline")
+
+session = Session()
+
+client = session.client("transfer")  # (1)
+waiter: ServerOfflineWaiter = client.get_waiter("server_offline")  # (2)
+await waiter.wait()
 ```
+
+1. client: [TransferClient](./client.md)
+2. waiter: [ServerOfflineWaiter](./waiters.md#serverofflinewaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_transfer.waiter import ServerOnlineWaiter
 
-def get_server_online_waiter() -> ServerOnlineWaiter:
-    return Session().client("transfer").get_waiter("server_online")
+
+session = Session()
+
+client = session.client("transfer")  # (1)
+waiter: ServerOnlineWaiter = client.get_waiter("server_online")  # (2)
+await waiter.wait()
 ```
+
+1. client: [TransferClient](./client.md)
+2. waiter: [ServerOnlineWaiter](./waiters.md#serveronlinewaiter)
 
 
 ### wait

@@ -95,12 +95,14 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_codeartifact.literals import DomainStatusType
+from mypy_boto3_codeartifact.literals import AllowPublishType
 
-def get_value() -> DomainStatusType:
-    return "Active"
+def get_value() -> AllowPublishType:
+    return "ALLOW"
 ```
 
+- [AllowPublishType](./literals.md#allowpublishtype)
+- [AllowUpstreamType](./literals.md#allowupstreamtype)
 - [DomainStatusType](./literals.md#domainstatustype)
 - [ExternalConnectionStatusType](./literals.md#externalconnectionstatustype)
 - [HashAlgorithmType](./literals.md#hashalgorithmtype)
@@ -112,6 +114,7 @@ def get_value() -> DomainStatusType:
 - [ListRepositoriesPaginatorName](./literals.md#listrepositoriespaginatorname)
 - [PackageFormatType](./literals.md#packageformattype)
 - [PackageVersionErrorCodeType](./literals.md#packageversionerrorcodetype)
+- [PackageVersionOriginTypeType](./literals.md#packageversionorigintypetype)
 - [PackageVersionSortTypeType](./literals.md#packageversionsorttypetype)
 - [PackageVersionStatusType](./literals.md#packageversionstatustype)
 - [CodeArtifactServiceName](./literals.md#codeartifactservicename)
@@ -152,10 +155,12 @@ def get_value() -> AssetSummaryTypeDef:
 - [DeleteRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypermissionspolicyrequestrequesttypedef)
 - [DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef)
 - [DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef)
+- [DescribePackageRequestRequestTypeDef](./type_defs.md#describepackagerequestrequesttypedef)
 - [DescribePackageVersionRequestRequestTypeDef](./type_defs.md#describepackageversionrequestrequesttypedef)
 - [DescribeRepositoryRequestRequestTypeDef](./type_defs.md#describerepositoryrequestrequesttypedef)
 - [DisassociateExternalConnectionRequestRequestTypeDef](./type_defs.md#disassociateexternalconnectionrequestrequesttypedef)
 - [DisposePackageVersionsRequestRequestTypeDef](./type_defs.md#disposepackageversionsrequestrequesttypedef)
+- [DomainEntryPointTypeDef](./type_defs.md#domainentrypointtypedef)
 - [DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef)
 - [GetAuthorizationTokenRequestRequestTypeDef](./type_defs.md#getauthorizationtokenrequestrequesttypedef)
 - [GetDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#getdomainpermissionspolicyrequestrequesttypedef)
@@ -170,13 +175,12 @@ def get_value() -> AssetSummaryTypeDef:
 - [ListPackageVersionDependenciesRequestRequestTypeDef](./type_defs.md#listpackageversiondependenciesrequestrequesttypedef)
 - [PackageDependencyTypeDef](./type_defs.md#packagedependencytypedef)
 - [ListPackageVersionsRequestRequestTypeDef](./type_defs.md#listpackageversionsrequestrequesttypedef)
-- [PackageVersionSummaryTypeDef](./type_defs.md#packageversionsummarytypedef)
 - [ListPackagesRequestRequestTypeDef](./type_defs.md#listpackagesrequestrequesttypedef)
-- [PackageSummaryTypeDef](./type_defs.md#packagesummarytypedef)
 - [ListRepositoriesInDomainRequestRequestTypeDef](./type_defs.md#listrepositoriesindomainrequestrequesttypedef)
 - [RepositorySummaryTypeDef](./type_defs.md#repositorysummarytypedef)
 - [ListRepositoriesRequestRequestTypeDef](./type_defs.md#listrepositoriesrequestrequesttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [PackageOriginRestrictionsTypeDef](./type_defs.md#packageoriginrestrictionstypedef)
 - [PutDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putdomainpermissionspolicyrequestrequesttypedef)
 - [PutRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#putrepositorypermissionspolicyrequestrequesttypedef)
 - [RepositoryExternalConnectionInfoTypeDef](./type_defs.md#repositoryexternalconnectioninfotypedef)
@@ -206,8 +210,8 @@ def get_value() -> AssetSummaryTypeDef:
 - [GetRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#getrepositorypermissionspolicyresulttypedef)
 - [PutDomainPermissionsPolicyResultTypeDef](./type_defs.md#putdomainpermissionspolicyresulttypedef)
 - [PutRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#putrepositorypermissionspolicyresulttypedef)
+- [PackageVersionOriginTypeDef](./type_defs.md#packageversionorigintypedef)
 - [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)
-- [PackageVersionDescriptionTypeDef](./type_defs.md#packageversiondescriptiontypedef)
 - [ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef)
 - [ListPackageVersionAssetsRequestListPackageVersionAssetsPaginateTypeDef](./type_defs.md#listpackageversionassetsrequestlistpackageversionassetspaginatetypedef)
 - [ListPackageVersionsRequestListPackageVersionsPaginateTypeDef](./type_defs.md#listpackageversionsrequestlistpackageversionspaginatetypedef)
@@ -215,16 +219,24 @@ def get_value() -> AssetSummaryTypeDef:
 - [ListRepositoriesInDomainRequestListRepositoriesInDomainPaginateTypeDef](./type_defs.md#listrepositoriesindomainrequestlistrepositoriesindomainpaginatetypedef)
 - [ListRepositoriesRequestListRepositoriesPaginateTypeDef](./type_defs.md#listrepositoriesrequestlistrepositoriespaginatetypedef)
 - [ListPackageVersionDependenciesResultTypeDef](./type_defs.md#listpackageversiondependenciesresulttypedef)
-- [ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef)
-- [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef)
 - [ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef)
 - [ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef)
+- [PackageOriginConfigurationTypeDef](./type_defs.md#packageoriginconfigurationtypedef)
+- [PutPackageOriginConfigurationRequestRequestTypeDef](./type_defs.md#putpackageoriginconfigurationrequestrequesttypedef)
 - [RepositoryDescriptionTypeDef](./type_defs.md#repositorydescriptiontypedef)
-- [DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef)
+- [PackageVersionDescriptionTypeDef](./type_defs.md#packageversiondescriptiontypedef)
+- [PackageVersionSummaryTypeDef](./type_defs.md#packageversionsummarytypedef)
+- [PackageDescriptionTypeDef](./type_defs.md#packagedescriptiontypedef)
+- [PackageSummaryTypeDef](./type_defs.md#packagesummarytypedef)
+- [PutPackageOriginConfigurationResultTypeDef](./type_defs.md#putpackageoriginconfigurationresulttypedef)
 - [AssociateExternalConnectionResultTypeDef](./type_defs.md#associateexternalconnectionresulttypedef)
 - [CreateRepositoryResultTypeDef](./type_defs.md#createrepositoryresulttypedef)
 - [DeleteRepositoryResultTypeDef](./type_defs.md#deleterepositoryresulttypedef)
 - [DescribeRepositoryResultTypeDef](./type_defs.md#describerepositoryresulttypedef)
 - [DisassociateExternalConnectionResultTypeDef](./type_defs.md#disassociateexternalconnectionresulttypedef)
 - [UpdateRepositoryResultTypeDef](./type_defs.md#updaterepositoryresulttypedef)
+- [DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef)
+- [ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef)
+- [DescribePackageResultTypeDef](./type_defs.md#describepackageresulttypedef)
+- [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef)
 

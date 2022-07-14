@@ -734,13 +734,15 @@ from mypy_boto3_nimble.type_defs import LaunchProfileInitializationScriptTypeDef
 
 def get_value() -> LaunchProfileInitializationScriptTypeDef:
     return {
-        "script": ...,
+        "runtimeRoleArn": ...,
     }
 ```
 
 ```python title="Definition"
 class LaunchProfileInitializationScriptTypeDef(TypedDict):
+    runtimeRoleArn: NotRequired[str],
     script: NotRequired[str],
+    secureInitializationRoleArn: NotRequired[str],
     studioComponentId: NotRequired[str],
     studioComponentName: NotRequired[str],
 ```
@@ -2568,7 +2570,9 @@ class CreateStudioComponentRequestRequestTypeDef(TypedDict):
     description: NotRequired[str],
     ec2SecurityGroupIds: NotRequired[Sequence[str]],
     initializationScripts: NotRequired[Sequence[StudioComponentInitializationScriptTypeDef]],  # (3)
+    runtimeRoleArn: NotRequired[str],
     scriptParameters: NotRequired[Sequence[ScriptParameterKeyValueTypeDef]],  # (4)
+    secureInitializationRoleArn: NotRequired[str],
     subtype: NotRequired[StudioComponentSubtypeType],  # (5)
     tags: NotRequired[Mapping[str, str]],
 ```
@@ -2599,7 +2603,9 @@ class StudioComponentTypeDef(TypedDict):
     ec2SecurityGroupIds: NotRequired[List[str]],
     initializationScripts: NotRequired[List[StudioComponentInitializationScriptTypeDef]],  # (2)
     name: NotRequired[str],
+    runtimeRoleArn: NotRequired[str],
     scriptParameters: NotRequired[List[ScriptParameterKeyValueTypeDef]],  # (3)
+    secureInitializationRoleArn: NotRequired[str],
     state: NotRequired[StudioComponentStateType],  # (4)
     statusCode: NotRequired[StudioComponentStatusCodeType],  # (5)
     statusMessage: NotRequired[str],
@@ -2640,7 +2646,9 @@ class UpdateStudioComponentRequestRequestTypeDef(TypedDict):
     ec2SecurityGroupIds: NotRequired[Sequence[str]],
     initializationScripts: NotRequired[Sequence[StudioComponentInitializationScriptTypeDef]],  # (2)
     name: NotRequired[str],
+    runtimeRoleArn: NotRequired[str],
     scriptParameters: NotRequired[Sequence[ScriptParameterKeyValueTypeDef]],  # (3)
+    secureInitializationRoleArn: NotRequired[str],
     subtype: NotRequired[StudioComponentSubtypeType],  # (4)
     type: NotRequired[StudioComponentTypeType],  # (5)
 ```

@@ -21,6 +21,23 @@ def get_list_extension_versions_paginator() -> ListExtensionVersionsPaginator:
     return Session().client("gamesparks").get_paginator("list_extension_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamesparks.paginator import ListExtensionVersionsPaginator
+
+session = Session()
+
+client = Session().client("gamesparks")  # (1)
+paginator: ListExtensionVersionsPaginator = client.get_paginator("list_extension_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameSparksClient](./client.md)
+2. paginator: [ListExtensionVersionsPaginator](./paginators.md#listextensionversionspaginator)
+3. item: [:material-code-braces: ListExtensionVersionsResultTypeDef](./type_defs.md#listextensionversionsresulttypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ def get_list_extensions_paginator() -> ListExtensionsPaginator:
     return Session().client("gamesparks").get_paginator("list_extensions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamesparks.paginator import ListExtensionsPaginator
+
+session = Session()
+
+client = Session().client("gamesparks")  # (1)
+paginator: ListExtensionsPaginator = client.get_paginator("list_extensions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameSparksClient](./client.md)
+2. paginator: [ListExtensionsPaginator](./paginators.md#listextensionspaginator)
+3. item: [:material-code-braces: ListExtensionsResultTypeDef](./type_defs.md#listextensionsresulttypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ def get_list_games_paginator() -> ListGamesPaginator:
     return Session().client("gamesparks").get_paginator("list_games")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamesparks.paginator import ListGamesPaginator
+
+session = Session()
+
+client = Session().client("gamesparks")  # (1)
+paginator: ListGamesPaginator = client.get_paginator("list_games")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameSparksClient](./client.md)
+2. paginator: [ListGamesPaginator](./paginators.md#listgamespaginator)
+3. item: [:material-code-braces: ListGamesResultTypeDef](./type_defs.md#listgamesresulttypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_gamesparks.paginator import ListGeneratedCodeJobsPaginator
 def get_list_generated_code_jobs_paginator() -> ListGeneratedCodeJobsPaginator:
     return Session().client("gamesparks").get_paginator("list_generated_code_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamesparks.paginator import ListGeneratedCodeJobsPaginator
+
+session = Session()
+
+client = Session().client("gamesparks")  # (1)
+paginator: ListGeneratedCodeJobsPaginator = client.get_paginator("list_generated_code_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameSparksClient](./client.md)
+2. paginator: [ListGeneratedCodeJobsPaginator](./paginators.md#listgeneratedcodejobspaginator)
+3. item: [:material-code-braces: ListGeneratedCodeJobsResultTypeDef](./type_defs.md#listgeneratedcodejobsresulttypedef) 
 
 
 ### paginate
@@ -191,6 +259,23 @@ def get_list_snapshots_paginator() -> ListSnapshotsPaginator:
     return Session().client("gamesparks").get_paginator("list_snapshots")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamesparks.paginator import ListSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("gamesparks")  # (1)
+paginator: ListSnapshotsPaginator = client.get_paginator("list_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameSparksClient](./client.md)
+2. paginator: [ListSnapshotsPaginator](./paginators.md#listsnapshotspaginator)
+3. item: [:material-code-braces: ListSnapshotsResultTypeDef](./type_defs.md#listsnapshotsresulttypedef) 
+
 
 ### paginate
 
@@ -232,6 +317,23 @@ from mypy_boto3_gamesparks.paginator import ListStageDeploymentsPaginator
 def get_list_stage_deployments_paginator() -> ListStageDeploymentsPaginator:
     return Session().client("gamesparks").get_paginator("list_stage_deployments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamesparks.paginator import ListStageDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("gamesparks")  # (1)
+paginator: ListStageDeploymentsPaginator = client.get_paginator("list_stage_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameSparksClient](./client.md)
+2. paginator: [ListStageDeploymentsPaginator](./paginators.md#liststagedeploymentspaginator)
+3. item: [:material-code-braces: ListStageDeploymentsResultTypeDef](./type_defs.md#liststagedeploymentsresulttypedef) 
 
 
 ### paginate
@@ -276,6 +378,23 @@ from mypy_boto3_gamesparks.paginator import ListStagesPaginator
 def get_list_stages_paginator() -> ListStagesPaginator:
     return Session().client("gamesparks").get_paginator("list_stages")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamesparks.paginator import ListStagesPaginator
+
+session = Session()
+
+client = Session().client("gamesparks")  # (1)
+paginator: ListStagesPaginator = client.get_paginator("list_stages")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameSparksClient](./client.md)
+2. paginator: [ListStagesPaginator](./paginators.md#liststagespaginator)
+3. item: [:material-code-braces: ListStagesResultTypeDef](./type_defs.md#liststagesresulttypedef) 
 
 
 ### paginate

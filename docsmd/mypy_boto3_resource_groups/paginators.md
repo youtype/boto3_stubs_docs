@@ -21,6 +21,23 @@ def get_list_group_resources_paginator() -> ListGroupResourcesPaginator:
     return Session().client("resource-groups").get_paginator("list_group_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_resource_groups.paginator import ListGroupResourcesPaginator
+
+session = Session()
+
+client = Session().client("resource-groups")  # (1)
+paginator: ListGroupResourcesPaginator = client.get_paginator("list_group_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ResourceGroupsClient](./client.md)
+2. paginator: [ListGroupResourcesPaginator](./paginators.md#listgroupresourcespaginator)
+3. item: [:material-code-braces: ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("resource-groups").get_paginator("list_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_resource_groups.paginator import ListGroupsPaginator
+
+session = Session()
+
+client = Session().client("resource-groups")  # (1)
+paginator: ListGroupsPaginator = client.get_paginator("list_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ResourceGroupsClient](./client.md)
+2. paginator: [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+3. item: [:material-code-braces: ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef) 
+
 
 ### paginate
 
@@ -108,6 +142,23 @@ from mypy_boto3_resource_groups.paginator import SearchResourcesPaginator
 def get_search_resources_paginator() -> SearchResourcesPaginator:
     return Session().client("resource-groups").get_paginator("search_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_resource_groups.paginator import SearchResourcesPaginator
+
+session = Session()
+
+client = Session().client("resource-groups")  # (1)
+paginator: SearchResourcesPaginator = client.get_paginator("search_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ResourceGroupsClient](./client.md)
+2. paginator: [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
+3. item: [:material-code-braces: SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef) 
 
 
 ### paginate

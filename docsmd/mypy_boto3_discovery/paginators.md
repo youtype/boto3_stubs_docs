@@ -21,6 +21,23 @@ def get_describe_agents_paginator() -> DescribeAgentsPaginator:
     return Session().client("discovery").get_paginator("describe_agents")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_discovery.paginator import DescribeAgentsPaginator
+
+session = Session()
+
+client = Session().client("discovery")  # (1)
+paginator: DescribeAgentsPaginator = client.get_paginator("describe_agents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationDiscoveryServiceClient](./client.md)
+2. paginator: [DescribeAgentsPaginator](./paginators.md#describeagentspaginator)
+3. item: [:material-code-braces: DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ def get_describe_continuous_exports_paginator() -> DescribeContinuousExportsPagi
     return Session().client("discovery").get_paginator("describe_continuous_exports")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_discovery.paginator import DescribeContinuousExportsPaginator
+
+session = Session()
+
+client = Session().client("discovery")  # (1)
+paginator: DescribeContinuousExportsPaginator = client.get_paginator("describe_continuous_exports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationDiscoveryServiceClient](./client.md)
+2. paginator: [DescribeContinuousExportsPaginator](./paginators.md#describecontinuousexportspaginator)
+3. item: [:material-code-braces: DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef) 
+
 
 ### paginate
 
@@ -107,6 +141,23 @@ def get_describe_export_configurations_paginator() -> DescribeExportConfiguratio
     return Session().client("discovery").get_paginator("describe_export_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_discovery.paginator import DescribeExportConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("discovery")  # (1)
+paginator: DescribeExportConfigurationsPaginator = client.get_paginator("describe_export_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationDiscoveryServiceClient](./client.md)
+2. paginator: [DescribeExportConfigurationsPaginator](./paginators.md#describeexportconfigurationspaginator)
+3. item: [:material-code-braces: DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_discovery.paginator import DescribeExportTasksPaginator
 def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
     return Session().client("discovery").get_paginator("describe_export_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_discovery.paginator import DescribeExportTasksPaginator
+
+session = Session()
+
+client = Session().client("discovery")  # (1)
+paginator: DescribeExportTasksPaginator = client.get_paginator("describe_export_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationDiscoveryServiceClient](./client.md)
+2. paginator: [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
+3. item: [:material-code-braces: DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return Session().client("discovery").get_paginator("describe_tags")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_discovery.paginator import DescribeTagsPaginator
+
+session = Session()
+
+client = Session().client("discovery")  # (1)
+paginator: DescribeTagsPaginator = client.get_paginator("describe_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationDiscoveryServiceClient](./client.md)
+2. paginator: [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+3. item: [:material-code-braces: DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef) 
+
 
 ### paginate
 
@@ -235,6 +320,23 @@ from mypy_boto3_discovery.paginator import ListConfigurationsPaginator
 def get_list_configurations_paginator() -> ListConfigurationsPaginator:
     return Session().client("discovery").get_paginator("list_configurations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_discovery.paginator import ListConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("discovery")  # (1)
+paginator: ListConfigurationsPaginator = client.get_paginator("list_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ApplicationDiscoveryServiceClient](./client.md)
+2. paginator: [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
+3. item: [:material-code-braces: ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef) 
 
 
 ### paginate

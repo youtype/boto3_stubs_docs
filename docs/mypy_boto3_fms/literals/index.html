@@ -13828,6 +13828,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ruleordertype" class="md-nav__link">
+    RuleOrderType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#securityservicetypetype" class="md-nav__link">
     SecurityServiceTypeType
   </a>
@@ -36725,6 +36732,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ruleordertype" class="md-nav__link">
+    RuleOrderType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#securityservicetypetype" class="md-nav__link">
     SecurityServiceTypeType
   </a>
@@ -36971,496 +36985,507 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-fms/"
 <a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="s2">&quot;REMOVE&quot;</span><span class="p">,</span>
 <a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="p">]</span>
 </code></pre></div>
-<h2 id="securityservicetypetype">SecurityServiceTypeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">SecurityServiceTypeType</span>
+<h2 id="ruleordertype">RuleOrderType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">RuleOrderType</span>
 <a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
-<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SecurityServiceTypeType</span><span class="p">:</span>
-<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    <span class="k">return</span> <span class="s2">&quot;DNS_FIREWALL&quot;</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RuleOrderType</span><span class="p">:</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    <span class="k">return</span> <span class="s2">&quot;DEFAULT_ACTION_ORDER&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">SecurityServiceTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="s2">&quot;DNS_FIREWALL&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="s2">&quot;NETWORK_FIREWALL&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    <span class="s2">&quot;SECURITY_GROUPS_COMMON&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>    <span class="s2">&quot;SECURITY_GROUPS_CONTENT_AUDIT&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>    <span class="s2">&quot;SECURITY_GROUPS_USAGE_AUDIT&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>    <span class="s2">&quot;SHIELD_ADVANCED&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>    <span class="s2">&quot;THIRD_PARTY_FIREWALL&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>    <span class="s2">&quot;WAF&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>    <span class="s2">&quot;WAFV2&quot;</span><span class="p">,</span>
-<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">RuleOrderType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="s2">&quot;DEFAULT_ACTION_ORDER&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="s2">&quot;STRICT_ORDER&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="p">]</span>
+</code></pre></div>
+<h2 id="securityservicetypetype">SecurityServiceTypeType</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">SecurityServiceTypeType</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">SecurityServiceTypeType</span><span class="p">:</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>    <span class="k">return</span> <span class="s2">&quot;DNS_FIREWALL&quot;</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">SecurityServiceTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="s2">&quot;DNS_FIREWALL&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="s2">&quot;NETWORK_FIREWALL&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="s2">&quot;SECURITY_GROUPS_COMMON&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="s2">&quot;SECURITY_GROUPS_CONTENT_AUDIT&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>    <span class="s2">&quot;SECURITY_GROUPS_USAGE_AUDIT&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>    <span class="s2">&quot;SHIELD_ADVANCED&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>    <span class="s2">&quot;THIRD_PARTY_FIREWALL&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>    <span class="s2">&quot;WAF&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>    <span class="s2">&quot;WAFV2&quot;</span><span class="p">,</span>
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="targettypetype">TargetTypeType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">TargetTypeType</span>
-<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>
-<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TargetTypeType</span><span class="p">:</span>
-<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>    <span class="k">return</span> <span class="s2">&quot;CARRIER_GATEWAY&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">TargetTypeType</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TargetTypeType</span><span class="p">:</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    <span class="k">return</span> <span class="s2">&quot;CARRIER_GATEWAY&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">TargetTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="s2">&quot;CARRIER_GATEWAY&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="s2">&quot;EGRESS_ONLY_INTERNET_GATEWAY&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="s2">&quot;GATEWAY&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="s2">&quot;INSTANCE&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>    <span class="s2">&quot;LOCAL_GATEWAY&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>    <span class="s2">&quot;NAT_GATEWAY&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>    <span class="s2">&quot;NETWORK_INTERFACE&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>    <span class="s2">&quot;TRANSIT_GATEWAY&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>    <span class="s2">&quot;VPC_ENDPOINT&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>    <span class="s2">&quot;VPC_PEERING_CONNECTION&quot;</span><span class="p">,</span>
-<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">TargetTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>    <span class="s2">&quot;CARRIER_GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>    <span class="s2">&quot;EGRESS_ONLY_INTERNET_GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>    <span class="s2">&quot;GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>    <span class="s2">&quot;INSTANCE&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>    <span class="s2">&quot;LOCAL_GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>    <span class="s2">&quot;NAT_GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a>    <span class="s2">&quot;NETWORK_INTERFACE&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a>    <span class="s2">&quot;TRANSIT_GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>    <span class="s2">&quot;VPC_ENDPOINT&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a>    <span class="s2">&quot;VPC_PEERING_CONNECTION&quot;</span><span class="p">,</span>
+<a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="thirdpartyfirewallassociationstatustype">ThirdPartyFirewallAssociationStatusType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ThirdPartyFirewallAssociationStatusType</span>
-<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
-<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ThirdPartyFirewallAssociationStatusType</span><span class="p">:</span>
-<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    <span class="k">return</span> <span class="s2">&quot;NOT_EXIST&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ThirdPartyFirewallAssociationStatusType</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ThirdPartyFirewallAssociationStatusType</span><span class="p">:</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>    <span class="k">return</span> <span class="s2">&quot;NOT_EXIST&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">ThirdPartyFirewallAssociationStatusType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>    <span class="s2">&quot;NOT_EXIST&quot;</span><span class="p">,</span>
-<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>    <span class="s2">&quot;OFFBOARD_COMPLETE&quot;</span><span class="p">,</span>
-<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>    <span class="s2">&quot;OFFBOARDING&quot;</span><span class="p">,</span>
-<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>    <span class="s2">&quot;ONBOARD_COMPLETE&quot;</span><span class="p">,</span>
-<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>    <span class="s2">&quot;ONBOARDING&quot;</span><span class="p">,</span>
-<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">ThirdPartyFirewallAssociationStatusType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>    <span class="s2">&quot;NOT_EXIST&quot;</span><span class="p">,</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>    <span class="s2">&quot;OFFBOARD_COMPLETE&quot;</span><span class="p">,</span>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>    <span class="s2">&quot;OFFBOARDING&quot;</span><span class="p">,</span>
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>    <span class="s2">&quot;ONBOARD_COMPLETE&quot;</span><span class="p">,</span>
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>    <span class="s2">&quot;ONBOARDING&quot;</span><span class="p">,</span>
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="thirdpartyfirewalltype">ThirdPartyFirewallType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ThirdPartyFirewallType</span>
-<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
-<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ThirdPartyFirewallType</span><span class="p">:</span>
-<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>    <span class="k">return</span> <span class="s2">&quot;PALO_ALTO_NETWORKS_CLOUD_NGFW&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ThirdPartyFirewallType</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ThirdPartyFirewallType</span><span class="p">:</span>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>    <span class="k">return</span> <span class="s2">&quot;PALO_ALTO_NETWORKS_CLOUD_NGFW&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">ThirdPartyFirewallType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>    <span class="s2">&quot;PALO_ALTO_NETWORKS_CLOUD_NGFW&quot;</span><span class="p">,</span>
-<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="n">ThirdPartyFirewallType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>    <span class="s2">&quot;PALO_ALTO_NETWORKS_CLOUD_NGFW&quot;</span><span class="p">,</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="violationreasontype">ViolationReasonType</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ViolationReasonType</span>
-<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>
-<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ViolationReasonType</span><span class="p">:</span>
-<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>    <span class="k">return</span> <span class="s2">&quot;BLACK_HOLE_ROUTE_DETECTED&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ViolationReasonType</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ViolationReasonType</span><span class="p">:</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>    <span class="k">return</span> <span class="s2">&quot;BLACK_HOLE_ROUTE_DETECTED&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="n">ViolationReasonType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>    <span class="s2">&quot;BLACK_HOLE_ROUTE_DETECTED&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>    <span class="s2">&quot;BLACK_HOLE_ROUTE_DETECTED_IN_FIREWALL_SUBNET&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>    <span class="s2">&quot;FIREWALL_SUBNET_IS_OUT_OF_SCOPE&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>    <span class="s2">&quot;FIREWALL_SUBNET_MISSING_EXPECTED_ROUTE&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>    <span class="s2">&quot;FIREWALL_SUBNET_MISSING_VPCE_ENDPOINT&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>    <span class="s2">&quot;FMS_CREATED_SECURITY_GROUP_EDITED&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a>    <span class="s2">&quot;INTERNET_GATEWAY_MISSING_EXPECTED_ROUTE&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a>    <span class="s2">&quot;INTERNET_TRAFFIC_NOT_INSPECTED&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a>    <span class="s2">&quot;INVALID_ROUTE_CONFIGURATION&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>    <span class="s2">&quot;MISSING_EXPECTED_ROUTE_TABLE&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a>    <span class="s2">&quot;MISSING_FIREWALL&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a>    <span class="s2">&quot;MISSING_FIREWALL_SUBNET_IN_AZ&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a>    <span class="s2">&quot;MISSING_TARGET_GATEWAY&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a>    <span class="s2">&quot;NETWORK_FIREWALL_POLICY_MODIFIED&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a>    <span class="s2">&quot;RESOURCE_INCORRECT_WEB_ACL&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a>    <span class="s2">&quot;RESOURCE_MISSING_DNS_FIREWALL&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a>    <span class="s2">&quot;RESOURCE_MISSING_SECURITY_GROUP&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-19" name="__codelineno-37-19" href="#__codelineno-37-19"></a>    <span class="s2">&quot;RESOURCE_MISSING_SHIELD_PROTECTION&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-20" name="__codelineno-37-20" href="#__codelineno-37-20"></a>    <span class="s2">&quot;RESOURCE_MISSING_WEB_ACL&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-21" name="__codelineno-37-21" href="#__codelineno-37-21"></a>    <span class="s2">&quot;RESOURCE_MISSING_WEB_ACL_OR_SHIELD_PROTECTION&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-22" name="__codelineno-37-22" href="#__codelineno-37-22"></a>    <span class="s2">&quot;RESOURCE_VIOLATES_AUDIT_SECURITY_GROUP&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-23" name="__codelineno-37-23" href="#__codelineno-37-23"></a>    <span class="s2">&quot;ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-24" name="__codelineno-37-24" href="#__codelineno-37-24"></a>    <span class="s2">&quot;SECURITY_GROUP_REDUNDANT&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-25" name="__codelineno-37-25" href="#__codelineno-37-25"></a>    <span class="s2">&quot;SECURITY_GROUP_UNUSED&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-26" name="__codelineno-37-26" href="#__codelineno-37-26"></a>    <span class="s2">&quot;TRAFFIC_INSPECTION_CROSSES_AZ_BOUNDARY&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-27" name="__codelineno-37-27" href="#__codelineno-37-27"></a>    <span class="s2">&quot;UNEXPECTED_FIREWALL_ROUTES&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-28" name="__codelineno-37-28" href="#__codelineno-37-28"></a>    <span class="s2">&quot;UNEXPECTED_TARGET_GATEWAY_ROUTES&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-29" name="__codelineno-37-29" href="#__codelineno-37-29"></a>    <span class="s2">&quot;WEB_ACL_MISSING_RULE_GROUP&quot;</span><span class="p">,</span>
-<a id="__codelineno-37-30" name="__codelineno-37-30" href="#__codelineno-37-30"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">ViolationReasonType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>    <span class="s2">&quot;BLACK_HOLE_ROUTE_DETECTED&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>    <span class="s2">&quot;BLACK_HOLE_ROUTE_DETECTED_IN_FIREWALL_SUBNET&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>    <span class="s2">&quot;FIREWALL_SUBNET_IS_OUT_OF_SCOPE&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>    <span class="s2">&quot;FIREWALL_SUBNET_MISSING_EXPECTED_ROUTE&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>    <span class="s2">&quot;FIREWALL_SUBNET_MISSING_VPCE_ENDPOINT&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a>    <span class="s2">&quot;FMS_CREATED_SECURITY_GROUP_EDITED&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a>    <span class="s2">&quot;INTERNET_GATEWAY_MISSING_EXPECTED_ROUTE&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a>    <span class="s2">&quot;INTERNET_TRAFFIC_NOT_INSPECTED&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a>    <span class="s2">&quot;INVALID_ROUTE_CONFIGURATION&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-11" name="__codelineno-39-11" href="#__codelineno-39-11"></a>    <span class="s2">&quot;MISSING_EXPECTED_ROUTE_TABLE&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-12" name="__codelineno-39-12" href="#__codelineno-39-12"></a>    <span class="s2">&quot;MISSING_FIREWALL&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-13" name="__codelineno-39-13" href="#__codelineno-39-13"></a>    <span class="s2">&quot;MISSING_FIREWALL_SUBNET_IN_AZ&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-14" name="__codelineno-39-14" href="#__codelineno-39-14"></a>    <span class="s2">&quot;MISSING_TARGET_GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-15" name="__codelineno-39-15" href="#__codelineno-39-15"></a>    <span class="s2">&quot;NETWORK_FIREWALL_POLICY_MODIFIED&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-16" name="__codelineno-39-16" href="#__codelineno-39-16"></a>    <span class="s2">&quot;RESOURCE_INCORRECT_WEB_ACL&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-17" name="__codelineno-39-17" href="#__codelineno-39-17"></a>    <span class="s2">&quot;RESOURCE_MISSING_DNS_FIREWALL&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-18" name="__codelineno-39-18" href="#__codelineno-39-18"></a>    <span class="s2">&quot;RESOURCE_MISSING_SECURITY_GROUP&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-19" name="__codelineno-39-19" href="#__codelineno-39-19"></a>    <span class="s2">&quot;RESOURCE_MISSING_SHIELD_PROTECTION&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-20" name="__codelineno-39-20" href="#__codelineno-39-20"></a>    <span class="s2">&quot;RESOURCE_MISSING_WEB_ACL&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-21" name="__codelineno-39-21" href="#__codelineno-39-21"></a>    <span class="s2">&quot;RESOURCE_MISSING_WEB_ACL_OR_SHIELD_PROTECTION&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-22" name="__codelineno-39-22" href="#__codelineno-39-22"></a>    <span class="s2">&quot;RESOURCE_VIOLATES_AUDIT_SECURITY_GROUP&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-23" name="__codelineno-39-23" href="#__codelineno-39-23"></a>    <span class="s2">&quot;ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-24" name="__codelineno-39-24" href="#__codelineno-39-24"></a>    <span class="s2">&quot;SECURITY_GROUP_REDUNDANT&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-25" name="__codelineno-39-25" href="#__codelineno-39-25"></a>    <span class="s2">&quot;SECURITY_GROUP_UNUSED&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-26" name="__codelineno-39-26" href="#__codelineno-39-26"></a>    <span class="s2">&quot;TRAFFIC_INSPECTION_CROSSES_AZ_BOUNDARY&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-27" name="__codelineno-39-27" href="#__codelineno-39-27"></a>    <span class="s2">&quot;UNEXPECTED_FIREWALL_ROUTES&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-28" name="__codelineno-39-28" href="#__codelineno-39-28"></a>    <span class="s2">&quot;UNEXPECTED_TARGET_GATEWAY_ROUTES&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-29" name="__codelineno-39-29" href="#__codelineno-39-29"></a>    <span class="s2">&quot;WEB_ACL_MISSING_RULE_GROUP&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-30" name="__codelineno-39-30" href="#__codelineno-39-30"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="fmsservicename">FMSServiceName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">FMSServiceName</span>
-<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>
-<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">FMSServiceName</span><span class="p">:</span>
-<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>    <span class="k">return</span> <span class="s2">&quot;fms&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">FMSServiceName</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">FMSServiceName</span><span class="p">:</span>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>    <span class="k">return</span> <span class="s2">&quot;fms&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">FMSServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>    <span class="s2">&quot;fms&quot;</span><span class="p">,</span>
-<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="n">FMSServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>    <span class="s2">&quot;fms&quot;</span><span class="p">,</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="servicename">ServiceName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ServiceName</span>
-<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>
-<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ServiceName</span><span class="p">:</span>
-<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>    <span class="k">return</span> <span class="s2">&quot;accessanalyzer&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ServiceName</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ServiceName</span><span class="p">:</span>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>    <span class="k">return</span> <span class="s2">&quot;accessanalyzer&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="n">ServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>    <span class="s2">&quot;accessanalyzer&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>    <span class="s2">&quot;account&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>    <span class="s2">&quot;acm&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>    <span class="s2">&quot;acm-pca&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>    <span class="s2">&quot;alexaforbusiness&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>    <span class="s2">&quot;amp&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a>    <span class="s2">&quot;amplify&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a>    <span class="s2">&quot;amplifybackend&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a>    <span class="s2">&quot;amplifyuibuilder&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a>    <span class="s2">&quot;apigateway&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a>    <span class="s2">&quot;apigatewaymanagementapi&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a>    <span class="s2">&quot;apigatewayv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a>    <span class="s2">&quot;appconfig&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a>    <span class="s2">&quot;appconfigdata&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a>    <span class="s2">&quot;appflow&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a>    <span class="s2">&quot;appintegrations&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-18" name="__codelineno-41-18" href="#__codelineno-41-18"></a>    <span class="s2">&quot;application-autoscaling&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-19" name="__codelineno-41-19" href="#__codelineno-41-19"></a>    <span class="s2">&quot;application-insights&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-20" name="__codelineno-41-20" href="#__codelineno-41-20"></a>    <span class="s2">&quot;applicationcostprofiler&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-21" name="__codelineno-41-21" href="#__codelineno-41-21"></a>    <span class="s2">&quot;appmesh&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-22" name="__codelineno-41-22" href="#__codelineno-41-22"></a>    <span class="s2">&quot;apprunner&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-23" name="__codelineno-41-23" href="#__codelineno-41-23"></a>    <span class="s2">&quot;appstream&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-24" name="__codelineno-41-24" href="#__codelineno-41-24"></a>    <span class="s2">&quot;appsync&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-25" name="__codelineno-41-25" href="#__codelineno-41-25"></a>    <span class="s2">&quot;athena&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-26" name="__codelineno-41-26" href="#__codelineno-41-26"></a>    <span class="s2">&quot;auditmanager&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-27" name="__codelineno-41-27" href="#__codelineno-41-27"></a>    <span class="s2">&quot;autoscaling&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-28" name="__codelineno-41-28" href="#__codelineno-41-28"></a>    <span class="s2">&quot;autoscaling-plans&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-29" name="__codelineno-41-29" href="#__codelineno-41-29"></a>    <span class="s2">&quot;backup&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-30" name="__codelineno-41-30" href="#__codelineno-41-30"></a>    <span class="s2">&quot;backup-gateway&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-31" name="__codelineno-41-31" href="#__codelineno-41-31"></a>    <span class="s2">&quot;batch&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-32" name="__codelineno-41-32" href="#__codelineno-41-32"></a>    <span class="s2">&quot;billingconductor&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-33" name="__codelineno-41-33" href="#__codelineno-41-33"></a>    <span class="s2">&quot;braket&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-34" name="__codelineno-41-34" href="#__codelineno-41-34"></a>    <span class="s2">&quot;budgets&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-35" name="__codelineno-41-35" href="#__codelineno-41-35"></a>    <span class="s2">&quot;ce&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-36" name="__codelineno-41-36" href="#__codelineno-41-36"></a>    <span class="s2">&quot;chime&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-37" name="__codelineno-41-37" href="#__codelineno-41-37"></a>    <span class="s2">&quot;chime-sdk-identity&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-38" name="__codelineno-41-38" href="#__codelineno-41-38"></a>    <span class="s2">&quot;chime-sdk-media-pipelines&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-39" name="__codelineno-41-39" href="#__codelineno-41-39"></a>    <span class="s2">&quot;chime-sdk-meetings&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-40" name="__codelineno-41-40" href="#__codelineno-41-40"></a>    <span class="s2">&quot;chime-sdk-messaging&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-41" name="__codelineno-41-41" href="#__codelineno-41-41"></a>    <span class="s2">&quot;cloud9&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-42" name="__codelineno-41-42" href="#__codelineno-41-42"></a>    <span class="s2">&quot;cloudcontrol&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-43" name="__codelineno-41-43" href="#__codelineno-41-43"></a>    <span class="s2">&quot;clouddirectory&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-44" name="__codelineno-41-44" href="#__codelineno-41-44"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-45" name="__codelineno-41-45" href="#__codelineno-41-45"></a>    <span class="s2">&quot;cloudfront&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-46" name="__codelineno-41-46" href="#__codelineno-41-46"></a>    <span class="s2">&quot;cloudhsm&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-47" name="__codelineno-41-47" href="#__codelineno-41-47"></a>    <span class="s2">&quot;cloudhsmv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-48" name="__codelineno-41-48" href="#__codelineno-41-48"></a>    <span class="s2">&quot;cloudsearch&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-49" name="__codelineno-41-49" href="#__codelineno-41-49"></a>    <span class="s2">&quot;cloudsearchdomain&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-50" name="__codelineno-41-50" href="#__codelineno-41-50"></a>    <span class="s2">&quot;cloudtrail&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-51" name="__codelineno-41-51" href="#__codelineno-41-51"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-52" name="__codelineno-41-52" href="#__codelineno-41-52"></a>    <span class="s2">&quot;codeartifact&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-53" name="__codelineno-41-53" href="#__codelineno-41-53"></a>    <span class="s2">&quot;codebuild&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-54" name="__codelineno-41-54" href="#__codelineno-41-54"></a>    <span class="s2">&quot;codecommit&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-55" name="__codelineno-41-55" href="#__codelineno-41-55"></a>    <span class="s2">&quot;codedeploy&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-56" name="__codelineno-41-56" href="#__codelineno-41-56"></a>    <span class="s2">&quot;codeguru-reviewer&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-57" name="__codelineno-41-57" href="#__codelineno-41-57"></a>    <span class="s2">&quot;codeguruprofiler&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-58" name="__codelineno-41-58" href="#__codelineno-41-58"></a>    <span class="s2">&quot;codepipeline&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-59" name="__codelineno-41-59" href="#__codelineno-41-59"></a>    <span class="s2">&quot;codestar&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-60" name="__codelineno-41-60" href="#__codelineno-41-60"></a>    <span class="s2">&quot;codestar-connections&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-61" name="__codelineno-41-61" href="#__codelineno-41-61"></a>    <span class="s2">&quot;codestar-notifications&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-62" name="__codelineno-41-62" href="#__codelineno-41-62"></a>    <span class="s2">&quot;cognito-identity&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-63" name="__codelineno-41-63" href="#__codelineno-41-63"></a>    <span class="s2">&quot;cognito-idp&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-64" name="__codelineno-41-64" href="#__codelineno-41-64"></a>    <span class="s2">&quot;cognito-sync&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-65" name="__codelineno-41-65" href="#__codelineno-41-65"></a>    <span class="s2">&quot;comprehend&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-66" name="__codelineno-41-66" href="#__codelineno-41-66"></a>    <span class="s2">&quot;comprehendmedical&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-67" name="__codelineno-41-67" href="#__codelineno-41-67"></a>    <span class="s2">&quot;compute-optimizer&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-68" name="__codelineno-41-68" href="#__codelineno-41-68"></a>    <span class="s2">&quot;config&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-69" name="__codelineno-41-69" href="#__codelineno-41-69"></a>    <span class="s2">&quot;connect&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-70" name="__codelineno-41-70" href="#__codelineno-41-70"></a>    <span class="s2">&quot;connect-contact-lens&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-71" name="__codelineno-41-71" href="#__codelineno-41-71"></a>    <span class="s2">&quot;connectcampaigns&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-72" name="__codelineno-41-72" href="#__codelineno-41-72"></a>    <span class="s2">&quot;connectparticipant&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-73" name="__codelineno-41-73" href="#__codelineno-41-73"></a>    <span class="s2">&quot;cur&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-74" name="__codelineno-41-74" href="#__codelineno-41-74"></a>    <span class="s2">&quot;customer-profiles&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-75" name="__codelineno-41-75" href="#__codelineno-41-75"></a>    <span class="s2">&quot;databrew&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-76" name="__codelineno-41-76" href="#__codelineno-41-76"></a>    <span class="s2">&quot;dataexchange&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-77" name="__codelineno-41-77" href="#__codelineno-41-77"></a>    <span class="s2">&quot;datapipeline&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-78" name="__codelineno-41-78" href="#__codelineno-41-78"></a>    <span class="s2">&quot;datasync&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-79" name="__codelineno-41-79" href="#__codelineno-41-79"></a>    <span class="s2">&quot;dax&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-80" name="__codelineno-41-80" href="#__codelineno-41-80"></a>    <span class="s2">&quot;detective&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-81" name="__codelineno-41-81" href="#__codelineno-41-81"></a>    <span class="s2">&quot;devicefarm&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-82" name="__codelineno-41-82" href="#__codelineno-41-82"></a>    <span class="s2">&quot;devops-guru&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-83" name="__codelineno-41-83" href="#__codelineno-41-83"></a>    <span class="s2">&quot;directconnect&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-84" name="__codelineno-41-84" href="#__codelineno-41-84"></a>    <span class="s2">&quot;discovery&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-85" name="__codelineno-41-85" href="#__codelineno-41-85"></a>    <span class="s2">&quot;dlm&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-86" name="__codelineno-41-86" href="#__codelineno-41-86"></a>    <span class="s2">&quot;dms&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-87" name="__codelineno-41-87" href="#__codelineno-41-87"></a>    <span class="s2">&quot;docdb&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-88" name="__codelineno-41-88" href="#__codelineno-41-88"></a>    <span class="s2">&quot;drs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-89" name="__codelineno-41-89" href="#__codelineno-41-89"></a>    <span class="s2">&quot;ds&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-90" name="__codelineno-41-90" href="#__codelineno-41-90"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-91" name="__codelineno-41-91" href="#__codelineno-41-91"></a>    <span class="s2">&quot;dynamodbstreams&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-92" name="__codelineno-41-92" href="#__codelineno-41-92"></a>    <span class="s2">&quot;ebs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-93" name="__codelineno-41-93" href="#__codelineno-41-93"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-94" name="__codelineno-41-94" href="#__codelineno-41-94"></a>    <span class="s2">&quot;ec2-instance-connect&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-95" name="__codelineno-41-95" href="#__codelineno-41-95"></a>    <span class="s2">&quot;ecr&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-96" name="__codelineno-41-96" href="#__codelineno-41-96"></a>    <span class="s2">&quot;ecr-public&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-97" name="__codelineno-41-97" href="#__codelineno-41-97"></a>    <span class="s2">&quot;ecs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-98" name="__codelineno-41-98" href="#__codelineno-41-98"></a>    <span class="s2">&quot;efs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-99" name="__codelineno-41-99" href="#__codelineno-41-99"></a>    <span class="s2">&quot;eks&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-100" name="__codelineno-41-100" href="#__codelineno-41-100"></a>    <span class="s2">&quot;elastic-inference&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-101" name="__codelineno-41-101" href="#__codelineno-41-101"></a>    <span class="s2">&quot;elasticache&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-102" name="__codelineno-41-102" href="#__codelineno-41-102"></a>    <span class="s2">&quot;elasticbeanstalk&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-103" name="__codelineno-41-103" href="#__codelineno-41-103"></a>    <span class="s2">&quot;elastictranscoder&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-104" name="__codelineno-41-104" href="#__codelineno-41-104"></a>    <span class="s2">&quot;elb&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-105" name="__codelineno-41-105" href="#__codelineno-41-105"></a>    <span class="s2">&quot;elbv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-106" name="__codelineno-41-106" href="#__codelineno-41-106"></a>    <span class="s2">&quot;emr&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-107" name="__codelineno-41-107" href="#__codelineno-41-107"></a>    <span class="s2">&quot;emr-containers&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-108" name="__codelineno-41-108" href="#__codelineno-41-108"></a>    <span class="s2">&quot;emr-serverless&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-109" name="__codelineno-41-109" href="#__codelineno-41-109"></a>    <span class="s2">&quot;es&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-110" name="__codelineno-41-110" href="#__codelineno-41-110"></a>    <span class="s2">&quot;events&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-111" name="__codelineno-41-111" href="#__codelineno-41-111"></a>    <span class="s2">&quot;evidently&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-112" name="__codelineno-41-112" href="#__codelineno-41-112"></a>    <span class="s2">&quot;finspace&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-113" name="__codelineno-41-113" href="#__codelineno-41-113"></a>    <span class="s2">&quot;finspace-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-114" name="__codelineno-41-114" href="#__codelineno-41-114"></a>    <span class="s2">&quot;firehose&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-115" name="__codelineno-41-115" href="#__codelineno-41-115"></a>    <span class="s2">&quot;fis&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-116" name="__codelineno-41-116" href="#__codelineno-41-116"></a>    <span class="s2">&quot;fms&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-117" name="__codelineno-41-117" href="#__codelineno-41-117"></a>    <span class="s2">&quot;forecast&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-118" name="__codelineno-41-118" href="#__codelineno-41-118"></a>    <span class="s2">&quot;forecastquery&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-119" name="__codelineno-41-119" href="#__codelineno-41-119"></a>    <span class="s2">&quot;frauddetector&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-120" name="__codelineno-41-120" href="#__codelineno-41-120"></a>    <span class="s2">&quot;fsx&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-121" name="__codelineno-41-121" href="#__codelineno-41-121"></a>    <span class="s2">&quot;gamelift&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-122" name="__codelineno-41-122" href="#__codelineno-41-122"></a>    <span class="s2">&quot;gamesparks&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-123" name="__codelineno-41-123" href="#__codelineno-41-123"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-124" name="__codelineno-41-124" href="#__codelineno-41-124"></a>    <span class="s2">&quot;globalaccelerator&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-125" name="__codelineno-41-125" href="#__codelineno-41-125"></a>    <span class="s2">&quot;glue&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-126" name="__codelineno-41-126" href="#__codelineno-41-126"></a>    <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-127" name="__codelineno-41-127" href="#__codelineno-41-127"></a>    <span class="s2">&quot;greengrass&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-128" name="__codelineno-41-128" href="#__codelineno-41-128"></a>    <span class="s2">&quot;greengrassv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-129" name="__codelineno-41-129" href="#__codelineno-41-129"></a>    <span class="s2">&quot;groundstation&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-130" name="__codelineno-41-130" href="#__codelineno-41-130"></a>    <span class="s2">&quot;guardduty&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-131" name="__codelineno-41-131" href="#__codelineno-41-131"></a>    <span class="s2">&quot;health&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-132" name="__codelineno-41-132" href="#__codelineno-41-132"></a>    <span class="s2">&quot;healthlake&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-133" name="__codelineno-41-133" href="#__codelineno-41-133"></a>    <span class="s2">&quot;honeycode&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-134" name="__codelineno-41-134" href="#__codelineno-41-134"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-135" name="__codelineno-41-135" href="#__codelineno-41-135"></a>    <span class="s2">&quot;identitystore&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-136" name="__codelineno-41-136" href="#__codelineno-41-136"></a>    <span class="s2">&quot;imagebuilder&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-137" name="__codelineno-41-137" href="#__codelineno-41-137"></a>    <span class="s2">&quot;importexport&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-138" name="__codelineno-41-138" href="#__codelineno-41-138"></a>    <span class="s2">&quot;inspector&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-139" name="__codelineno-41-139" href="#__codelineno-41-139"></a>    <span class="s2">&quot;inspector2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-140" name="__codelineno-41-140" href="#__codelineno-41-140"></a>    <span class="s2">&quot;iot&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-141" name="__codelineno-41-141" href="#__codelineno-41-141"></a>    <span class="s2">&quot;iot-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-142" name="__codelineno-41-142" href="#__codelineno-41-142"></a>    <span class="s2">&quot;iot-jobs-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-143" name="__codelineno-41-143" href="#__codelineno-41-143"></a>    <span class="s2">&quot;iot1click-devices&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-144" name="__codelineno-41-144" href="#__codelineno-41-144"></a>    <span class="s2">&quot;iot1click-projects&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-145" name="__codelineno-41-145" href="#__codelineno-41-145"></a>    <span class="s2">&quot;iotanalytics&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-146" name="__codelineno-41-146" href="#__codelineno-41-146"></a>    <span class="s2">&quot;iotdeviceadvisor&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-147" name="__codelineno-41-147" href="#__codelineno-41-147"></a>    <span class="s2">&quot;iotevents&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-148" name="__codelineno-41-148" href="#__codelineno-41-148"></a>    <span class="s2">&quot;iotevents-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-149" name="__codelineno-41-149" href="#__codelineno-41-149"></a>    <span class="s2">&quot;iotfleethub&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-150" name="__codelineno-41-150" href="#__codelineno-41-150"></a>    <span class="s2">&quot;iotsecuretunneling&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-151" name="__codelineno-41-151" href="#__codelineno-41-151"></a>    <span class="s2">&quot;iotsitewise&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-152" name="__codelineno-41-152" href="#__codelineno-41-152"></a>    <span class="s2">&quot;iotthingsgraph&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-153" name="__codelineno-41-153" href="#__codelineno-41-153"></a>    <span class="s2">&quot;iottwinmaker&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-154" name="__codelineno-41-154" href="#__codelineno-41-154"></a>    <span class="s2">&quot;iotwireless&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-155" name="__codelineno-41-155" href="#__codelineno-41-155"></a>    <span class="s2">&quot;ivs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-156" name="__codelineno-41-156" href="#__codelineno-41-156"></a>    <span class="s2">&quot;ivschat&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-157" name="__codelineno-41-157" href="#__codelineno-41-157"></a>    <span class="s2">&quot;kafka&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-158" name="__codelineno-41-158" href="#__codelineno-41-158"></a>    <span class="s2">&quot;kafkaconnect&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-159" name="__codelineno-41-159" href="#__codelineno-41-159"></a>    <span class="s2">&quot;kendra&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-160" name="__codelineno-41-160" href="#__codelineno-41-160"></a>    <span class="s2">&quot;keyspaces&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-161" name="__codelineno-41-161" href="#__codelineno-41-161"></a>    <span class="s2">&quot;kinesis&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-162" name="__codelineno-41-162" href="#__codelineno-41-162"></a>    <span class="s2">&quot;kinesis-video-archived-media&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-163" name="__codelineno-41-163" href="#__codelineno-41-163"></a>    <span class="s2">&quot;kinesis-video-media&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-164" name="__codelineno-41-164" href="#__codelineno-41-164"></a>    <span class="s2">&quot;kinesis-video-signaling&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-165" name="__codelineno-41-165" href="#__codelineno-41-165"></a>    <span class="s2">&quot;kinesisanalytics&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-166" name="__codelineno-41-166" href="#__codelineno-41-166"></a>    <span class="s2">&quot;kinesisanalyticsv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-167" name="__codelineno-41-167" href="#__codelineno-41-167"></a>    <span class="s2">&quot;kinesisvideo&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-168" name="__codelineno-41-168" href="#__codelineno-41-168"></a>    <span class="s2">&quot;kms&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-169" name="__codelineno-41-169" href="#__codelineno-41-169"></a>    <span class="s2">&quot;lakeformation&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-170" name="__codelineno-41-170" href="#__codelineno-41-170"></a>    <span class="s2">&quot;lambda&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-171" name="__codelineno-41-171" href="#__codelineno-41-171"></a>    <span class="s2">&quot;lex-models&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-172" name="__codelineno-41-172" href="#__codelineno-41-172"></a>    <span class="s2">&quot;lex-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-173" name="__codelineno-41-173" href="#__codelineno-41-173"></a>    <span class="s2">&quot;lexv2-models&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-174" name="__codelineno-41-174" href="#__codelineno-41-174"></a>    <span class="s2">&quot;lexv2-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-175" name="__codelineno-41-175" href="#__codelineno-41-175"></a>    <span class="s2">&quot;license-manager&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-176" name="__codelineno-41-176" href="#__codelineno-41-176"></a>    <span class="s2">&quot;lightsail&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-177" name="__codelineno-41-177" href="#__codelineno-41-177"></a>    <span class="s2">&quot;location&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-178" name="__codelineno-41-178" href="#__codelineno-41-178"></a>    <span class="s2">&quot;logs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-179" name="__codelineno-41-179" href="#__codelineno-41-179"></a>    <span class="s2">&quot;lookoutequipment&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-180" name="__codelineno-41-180" href="#__codelineno-41-180"></a>    <span class="s2">&quot;lookoutmetrics&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-181" name="__codelineno-41-181" href="#__codelineno-41-181"></a>    <span class="s2">&quot;lookoutvision&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-182" name="__codelineno-41-182" href="#__codelineno-41-182"></a>    <span class="s2">&quot;m2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-183" name="__codelineno-41-183" href="#__codelineno-41-183"></a>    <span class="s2">&quot;machinelearning&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-184" name="__codelineno-41-184" href="#__codelineno-41-184"></a>    <span class="s2">&quot;macie&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-185" name="__codelineno-41-185" href="#__codelineno-41-185"></a>    <span class="s2">&quot;macie2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-186" name="__codelineno-41-186" href="#__codelineno-41-186"></a>    <span class="s2">&quot;managedblockchain&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-187" name="__codelineno-41-187" href="#__codelineno-41-187"></a>    <span class="s2">&quot;marketplace-catalog&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-188" name="__codelineno-41-188" href="#__codelineno-41-188"></a>    <span class="s2">&quot;marketplace-entitlement&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-189" name="__codelineno-41-189" href="#__codelineno-41-189"></a>    <span class="s2">&quot;marketplacecommerceanalytics&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-190" name="__codelineno-41-190" href="#__codelineno-41-190"></a>    <span class="s2">&quot;mediaconnect&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-191" name="__codelineno-41-191" href="#__codelineno-41-191"></a>    <span class="s2">&quot;mediaconvert&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-192" name="__codelineno-41-192" href="#__codelineno-41-192"></a>    <span class="s2">&quot;medialive&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-193" name="__codelineno-41-193" href="#__codelineno-41-193"></a>    <span class="s2">&quot;mediapackage&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-194" name="__codelineno-41-194" href="#__codelineno-41-194"></a>    <span class="s2">&quot;mediapackage-vod&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-195" name="__codelineno-41-195" href="#__codelineno-41-195"></a>    <span class="s2">&quot;mediastore&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-196" name="__codelineno-41-196" href="#__codelineno-41-196"></a>    <span class="s2">&quot;mediastore-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-197" name="__codelineno-41-197" href="#__codelineno-41-197"></a>    <span class="s2">&quot;mediatailor&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-198" name="__codelineno-41-198" href="#__codelineno-41-198"></a>    <span class="s2">&quot;memorydb&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-199" name="__codelineno-41-199" href="#__codelineno-41-199"></a>    <span class="s2">&quot;meteringmarketplace&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-200" name="__codelineno-41-200" href="#__codelineno-41-200"></a>    <span class="s2">&quot;mgh&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-201" name="__codelineno-41-201" href="#__codelineno-41-201"></a>    <span class="s2">&quot;mgn&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-202" name="__codelineno-41-202" href="#__codelineno-41-202"></a>    <span class="s2">&quot;migration-hub-refactor-spaces&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-203" name="__codelineno-41-203" href="#__codelineno-41-203"></a>    <span class="s2">&quot;migrationhub-config&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-204" name="__codelineno-41-204" href="#__codelineno-41-204"></a>    <span class="s2">&quot;migrationhubstrategy&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-205" name="__codelineno-41-205" href="#__codelineno-41-205"></a>    <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-206" name="__codelineno-41-206" href="#__codelineno-41-206"></a>    <span class="s2">&quot;mq&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-207" name="__codelineno-41-207" href="#__codelineno-41-207"></a>    <span class="s2">&quot;mturk&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-208" name="__codelineno-41-208" href="#__codelineno-41-208"></a>    <span class="s2">&quot;mwaa&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-209" name="__codelineno-41-209" href="#__codelineno-41-209"></a>    <span class="s2">&quot;neptune&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-210" name="__codelineno-41-210" href="#__codelineno-41-210"></a>    <span class="s2">&quot;network-firewall&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-211" name="__codelineno-41-211" href="#__codelineno-41-211"></a>    <span class="s2">&quot;networkmanager&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-212" name="__codelineno-41-212" href="#__codelineno-41-212"></a>    <span class="s2">&quot;nimble&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-213" name="__codelineno-41-213" href="#__codelineno-41-213"></a>    <span class="s2">&quot;opensearch&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-214" name="__codelineno-41-214" href="#__codelineno-41-214"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-215" name="__codelineno-41-215" href="#__codelineno-41-215"></a>    <span class="s2">&quot;opsworkscm&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-216" name="__codelineno-41-216" href="#__codelineno-41-216"></a>    <span class="s2">&quot;organizations&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-217" name="__codelineno-41-217" href="#__codelineno-41-217"></a>    <span class="s2">&quot;outposts&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-218" name="__codelineno-41-218" href="#__codelineno-41-218"></a>    <span class="s2">&quot;panorama&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-219" name="__codelineno-41-219" href="#__codelineno-41-219"></a>    <span class="s2">&quot;personalize&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-220" name="__codelineno-41-220" href="#__codelineno-41-220"></a>    <span class="s2">&quot;personalize-events&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-221" name="__codelineno-41-221" href="#__codelineno-41-221"></a>    <span class="s2">&quot;personalize-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-222" name="__codelineno-41-222" href="#__codelineno-41-222"></a>    <span class="s2">&quot;pi&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-223" name="__codelineno-41-223" href="#__codelineno-41-223"></a>    <span class="s2">&quot;pinpoint&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-224" name="__codelineno-41-224" href="#__codelineno-41-224"></a>    <span class="s2">&quot;pinpoint-email&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-225" name="__codelineno-41-225" href="#__codelineno-41-225"></a>    <span class="s2">&quot;pinpoint-sms-voice&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-226" name="__codelineno-41-226" href="#__codelineno-41-226"></a>    <span class="s2">&quot;pinpoint-sms-voice-v2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-227" name="__codelineno-41-227" href="#__codelineno-41-227"></a>    <span class="s2">&quot;polly&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-228" name="__codelineno-41-228" href="#__codelineno-41-228"></a>    <span class="s2">&quot;pricing&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-229" name="__codelineno-41-229" href="#__codelineno-41-229"></a>    <span class="s2">&quot;proton&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-230" name="__codelineno-41-230" href="#__codelineno-41-230"></a>    <span class="s2">&quot;qldb&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-231" name="__codelineno-41-231" href="#__codelineno-41-231"></a>    <span class="s2">&quot;qldb-session&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-232" name="__codelineno-41-232" href="#__codelineno-41-232"></a>    <span class="s2">&quot;quicksight&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-233" name="__codelineno-41-233" href="#__codelineno-41-233"></a>    <span class="s2">&quot;ram&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-234" name="__codelineno-41-234" href="#__codelineno-41-234"></a>    <span class="s2">&quot;rbin&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-235" name="__codelineno-41-235" href="#__codelineno-41-235"></a>    <span class="s2">&quot;rds&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-236" name="__codelineno-41-236" href="#__codelineno-41-236"></a>    <span class="s2">&quot;rds-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-237" name="__codelineno-41-237" href="#__codelineno-41-237"></a>    <span class="s2">&quot;redshift&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-238" name="__codelineno-41-238" href="#__codelineno-41-238"></a>    <span class="s2">&quot;redshift-data&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-239" name="__codelineno-41-239" href="#__codelineno-41-239"></a>    <span class="s2">&quot;redshift-serverless&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-240" name="__codelineno-41-240" href="#__codelineno-41-240"></a>    <span class="s2">&quot;rekognition&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-241" name="__codelineno-41-241" href="#__codelineno-41-241"></a>    <span class="s2">&quot;resiliencehub&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-242" name="__codelineno-41-242" href="#__codelineno-41-242"></a>    <span class="s2">&quot;resource-groups&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-243" name="__codelineno-41-243" href="#__codelineno-41-243"></a>    <span class="s2">&quot;resourcegroupstaggingapi&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-244" name="__codelineno-41-244" href="#__codelineno-41-244"></a>    <span class="s2">&quot;robomaker&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-245" name="__codelineno-41-245" href="#__codelineno-41-245"></a>    <span class="s2">&quot;rolesanywhere&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-246" name="__codelineno-41-246" href="#__codelineno-41-246"></a>    <span class="s2">&quot;route53&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-247" name="__codelineno-41-247" href="#__codelineno-41-247"></a>    <span class="s2">&quot;route53-recovery-cluster&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-248" name="__codelineno-41-248" href="#__codelineno-41-248"></a>    <span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-249" name="__codelineno-41-249" href="#__codelineno-41-249"></a>    <span class="s2">&quot;route53-recovery-readiness&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-250" name="__codelineno-41-250" href="#__codelineno-41-250"></a>    <span class="s2">&quot;route53domains&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-251" name="__codelineno-41-251" href="#__codelineno-41-251"></a>    <span class="s2">&quot;route53resolver&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-252" name="__codelineno-41-252" href="#__codelineno-41-252"></a>    <span class="s2">&quot;rum&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-253" name="__codelineno-41-253" href="#__codelineno-41-253"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-254" name="__codelineno-41-254" href="#__codelineno-41-254"></a>    <span class="s2">&quot;s3control&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-255" name="__codelineno-41-255" href="#__codelineno-41-255"></a>    <span class="s2">&quot;s3outposts&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-256" name="__codelineno-41-256" href="#__codelineno-41-256"></a>    <span class="s2">&quot;sagemaker&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-257" name="__codelineno-41-257" href="#__codelineno-41-257"></a>    <span class="s2">&quot;sagemaker-a2i-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-258" name="__codelineno-41-258" href="#__codelineno-41-258"></a>    <span class="s2">&quot;sagemaker-edge&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-259" name="__codelineno-41-259" href="#__codelineno-41-259"></a>    <span class="s2">&quot;sagemaker-featurestore-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-260" name="__codelineno-41-260" href="#__codelineno-41-260"></a>    <span class="s2">&quot;sagemaker-runtime&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-261" name="__codelineno-41-261" href="#__codelineno-41-261"></a>    <span class="s2">&quot;savingsplans&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-262" name="__codelineno-41-262" href="#__codelineno-41-262"></a>    <span class="s2">&quot;schemas&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-263" name="__codelineno-41-263" href="#__codelineno-41-263"></a>    <span class="s2">&quot;sdb&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-264" name="__codelineno-41-264" href="#__codelineno-41-264"></a>    <span class="s2">&quot;secretsmanager&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-265" name="__codelineno-41-265" href="#__codelineno-41-265"></a>    <span class="s2">&quot;securityhub&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-266" name="__codelineno-41-266" href="#__codelineno-41-266"></a>    <span class="s2">&quot;serverlessrepo&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-267" name="__codelineno-41-267" href="#__codelineno-41-267"></a>    <span class="s2">&quot;service-quotas&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-268" name="__codelineno-41-268" href="#__codelineno-41-268"></a>    <span class="s2">&quot;servicecatalog&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-269" name="__codelineno-41-269" href="#__codelineno-41-269"></a>    <span class="s2">&quot;servicecatalog-appregistry&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-270" name="__codelineno-41-270" href="#__codelineno-41-270"></a>    <span class="s2">&quot;servicediscovery&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-271" name="__codelineno-41-271" href="#__codelineno-41-271"></a>    <span class="s2">&quot;ses&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-272" name="__codelineno-41-272" href="#__codelineno-41-272"></a>    <span class="s2">&quot;sesv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-273" name="__codelineno-41-273" href="#__codelineno-41-273"></a>    <span class="s2">&quot;shield&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-274" name="__codelineno-41-274" href="#__codelineno-41-274"></a>    <span class="s2">&quot;signer&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-275" name="__codelineno-41-275" href="#__codelineno-41-275"></a>    <span class="s2">&quot;sms&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-276" name="__codelineno-41-276" href="#__codelineno-41-276"></a>    <span class="s2">&quot;sms-voice&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-277" name="__codelineno-41-277" href="#__codelineno-41-277"></a>    <span class="s2">&quot;snow-device-management&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-278" name="__codelineno-41-278" href="#__codelineno-41-278"></a>    <span class="s2">&quot;snowball&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-279" name="__codelineno-41-279" href="#__codelineno-41-279"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-280" name="__codelineno-41-280" href="#__codelineno-41-280"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-281" name="__codelineno-41-281" href="#__codelineno-41-281"></a>    <span class="s2">&quot;ssm&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-282" name="__codelineno-41-282" href="#__codelineno-41-282"></a>    <span class="s2">&quot;ssm-contacts&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-283" name="__codelineno-41-283" href="#__codelineno-41-283"></a>    <span class="s2">&quot;ssm-incidents&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-284" name="__codelineno-41-284" href="#__codelineno-41-284"></a>    <span class="s2">&quot;sso&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-285" name="__codelineno-41-285" href="#__codelineno-41-285"></a>    <span class="s2">&quot;sso-admin&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-286" name="__codelineno-41-286" href="#__codelineno-41-286"></a>    <span class="s2">&quot;sso-oidc&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-287" name="__codelineno-41-287" href="#__codelineno-41-287"></a>    <span class="s2">&quot;stepfunctions&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-288" name="__codelineno-41-288" href="#__codelineno-41-288"></a>    <span class="s2">&quot;storagegateway&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-289" name="__codelineno-41-289" href="#__codelineno-41-289"></a>    <span class="s2">&quot;sts&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-290" name="__codelineno-41-290" href="#__codelineno-41-290"></a>    <span class="s2">&quot;support&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-291" name="__codelineno-41-291" href="#__codelineno-41-291"></a>    <span class="s2">&quot;swf&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-292" name="__codelineno-41-292" href="#__codelineno-41-292"></a>    <span class="s2">&quot;synthetics&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-293" name="__codelineno-41-293" href="#__codelineno-41-293"></a>    <span class="s2">&quot;textract&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-294" name="__codelineno-41-294" href="#__codelineno-41-294"></a>    <span class="s2">&quot;timestream-query&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-295" name="__codelineno-41-295" href="#__codelineno-41-295"></a>    <span class="s2">&quot;timestream-write&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-296" name="__codelineno-41-296" href="#__codelineno-41-296"></a>    <span class="s2">&quot;transcribe&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-297" name="__codelineno-41-297" href="#__codelineno-41-297"></a>    <span class="s2">&quot;transfer&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-298" name="__codelineno-41-298" href="#__codelineno-41-298"></a>    <span class="s2">&quot;translate&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-299" name="__codelineno-41-299" href="#__codelineno-41-299"></a>    <span class="s2">&quot;voice-id&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-300" name="__codelineno-41-300" href="#__codelineno-41-300"></a>    <span class="s2">&quot;waf&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-301" name="__codelineno-41-301" href="#__codelineno-41-301"></a>    <span class="s2">&quot;waf-regional&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-302" name="__codelineno-41-302" href="#__codelineno-41-302"></a>    <span class="s2">&quot;wafv2&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-303" name="__codelineno-41-303" href="#__codelineno-41-303"></a>    <span class="s2">&quot;wellarchitected&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-304" name="__codelineno-41-304" href="#__codelineno-41-304"></a>    <span class="s2">&quot;wisdom&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-305" name="__codelineno-41-305" href="#__codelineno-41-305"></a>    <span class="s2">&quot;workdocs&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-306" name="__codelineno-41-306" href="#__codelineno-41-306"></a>    <span class="s2">&quot;worklink&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-307" name="__codelineno-41-307" href="#__codelineno-41-307"></a>    <span class="s2">&quot;workmail&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-308" name="__codelineno-41-308" href="#__codelineno-41-308"></a>    <span class="s2">&quot;workmailmessageflow&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-309" name="__codelineno-41-309" href="#__codelineno-41-309"></a>    <span class="s2">&quot;workspaces&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-310" name="__codelineno-41-310" href="#__codelineno-41-310"></a>    <span class="s2">&quot;workspaces-web&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-311" name="__codelineno-41-311" href="#__codelineno-41-311"></a>    <span class="s2">&quot;xray&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-312" name="__codelineno-41-312" href="#__codelineno-41-312"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="n">ServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>    <span class="s2">&quot;accessanalyzer&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>    <span class="s2">&quot;account&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>    <span class="s2">&quot;acm&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>    <span class="s2">&quot;acm-pca&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>    <span class="s2">&quot;alexaforbusiness&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>    <span class="s2">&quot;amp&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a>    <span class="s2">&quot;amplify&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a>    <span class="s2">&quot;amplifybackend&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a>    <span class="s2">&quot;amplifyuibuilder&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a>    <span class="s2">&quot;apigateway&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a>    <span class="s2">&quot;apigatewaymanagementapi&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a>    <span class="s2">&quot;apigatewayv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a>    <span class="s2">&quot;appconfig&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a>    <span class="s2">&quot;appconfigdata&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>    <span class="s2">&quot;appflow&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a>    <span class="s2">&quot;appintegrations&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a>    <span class="s2">&quot;application-autoscaling&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-19" name="__codelineno-43-19" href="#__codelineno-43-19"></a>    <span class="s2">&quot;application-insights&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-20" name="__codelineno-43-20" href="#__codelineno-43-20"></a>    <span class="s2">&quot;applicationcostprofiler&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-21" name="__codelineno-43-21" href="#__codelineno-43-21"></a>    <span class="s2">&quot;appmesh&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-22" name="__codelineno-43-22" href="#__codelineno-43-22"></a>    <span class="s2">&quot;apprunner&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-23" name="__codelineno-43-23" href="#__codelineno-43-23"></a>    <span class="s2">&quot;appstream&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-24" name="__codelineno-43-24" href="#__codelineno-43-24"></a>    <span class="s2">&quot;appsync&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-25" name="__codelineno-43-25" href="#__codelineno-43-25"></a>    <span class="s2">&quot;athena&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-26" name="__codelineno-43-26" href="#__codelineno-43-26"></a>    <span class="s2">&quot;auditmanager&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-27" name="__codelineno-43-27" href="#__codelineno-43-27"></a>    <span class="s2">&quot;autoscaling&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-28" name="__codelineno-43-28" href="#__codelineno-43-28"></a>    <span class="s2">&quot;autoscaling-plans&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-29" name="__codelineno-43-29" href="#__codelineno-43-29"></a>    <span class="s2">&quot;backup&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-30" name="__codelineno-43-30" href="#__codelineno-43-30"></a>    <span class="s2">&quot;backup-gateway&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-31" name="__codelineno-43-31" href="#__codelineno-43-31"></a>    <span class="s2">&quot;batch&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-32" name="__codelineno-43-32" href="#__codelineno-43-32"></a>    <span class="s2">&quot;billingconductor&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-33" name="__codelineno-43-33" href="#__codelineno-43-33"></a>    <span class="s2">&quot;braket&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-34" name="__codelineno-43-34" href="#__codelineno-43-34"></a>    <span class="s2">&quot;budgets&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-35" name="__codelineno-43-35" href="#__codelineno-43-35"></a>    <span class="s2">&quot;ce&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-36" name="__codelineno-43-36" href="#__codelineno-43-36"></a>    <span class="s2">&quot;chime&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-37" name="__codelineno-43-37" href="#__codelineno-43-37"></a>    <span class="s2">&quot;chime-sdk-identity&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-38" name="__codelineno-43-38" href="#__codelineno-43-38"></a>    <span class="s2">&quot;chime-sdk-media-pipelines&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-39" name="__codelineno-43-39" href="#__codelineno-43-39"></a>    <span class="s2">&quot;chime-sdk-meetings&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-40" name="__codelineno-43-40" href="#__codelineno-43-40"></a>    <span class="s2">&quot;chime-sdk-messaging&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-41" name="__codelineno-43-41" href="#__codelineno-43-41"></a>    <span class="s2">&quot;cloud9&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-42" name="__codelineno-43-42" href="#__codelineno-43-42"></a>    <span class="s2">&quot;cloudcontrol&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-43" name="__codelineno-43-43" href="#__codelineno-43-43"></a>    <span class="s2">&quot;clouddirectory&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-44" name="__codelineno-43-44" href="#__codelineno-43-44"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-45" name="__codelineno-43-45" href="#__codelineno-43-45"></a>    <span class="s2">&quot;cloudfront&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-46" name="__codelineno-43-46" href="#__codelineno-43-46"></a>    <span class="s2">&quot;cloudhsm&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-47" name="__codelineno-43-47" href="#__codelineno-43-47"></a>    <span class="s2">&quot;cloudhsmv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-48" name="__codelineno-43-48" href="#__codelineno-43-48"></a>    <span class="s2">&quot;cloudsearch&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-49" name="__codelineno-43-49" href="#__codelineno-43-49"></a>    <span class="s2">&quot;cloudsearchdomain&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-50" name="__codelineno-43-50" href="#__codelineno-43-50"></a>    <span class="s2">&quot;cloudtrail&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-51" name="__codelineno-43-51" href="#__codelineno-43-51"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-52" name="__codelineno-43-52" href="#__codelineno-43-52"></a>    <span class="s2">&quot;codeartifact&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-53" name="__codelineno-43-53" href="#__codelineno-43-53"></a>    <span class="s2">&quot;codebuild&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-54" name="__codelineno-43-54" href="#__codelineno-43-54"></a>    <span class="s2">&quot;codecommit&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-55" name="__codelineno-43-55" href="#__codelineno-43-55"></a>    <span class="s2">&quot;codedeploy&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-56" name="__codelineno-43-56" href="#__codelineno-43-56"></a>    <span class="s2">&quot;codeguru-reviewer&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-57" name="__codelineno-43-57" href="#__codelineno-43-57"></a>    <span class="s2">&quot;codeguruprofiler&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-58" name="__codelineno-43-58" href="#__codelineno-43-58"></a>    <span class="s2">&quot;codepipeline&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-59" name="__codelineno-43-59" href="#__codelineno-43-59"></a>    <span class="s2">&quot;codestar&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-60" name="__codelineno-43-60" href="#__codelineno-43-60"></a>    <span class="s2">&quot;codestar-connections&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-61" name="__codelineno-43-61" href="#__codelineno-43-61"></a>    <span class="s2">&quot;codestar-notifications&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-62" name="__codelineno-43-62" href="#__codelineno-43-62"></a>    <span class="s2">&quot;cognito-identity&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-63" name="__codelineno-43-63" href="#__codelineno-43-63"></a>    <span class="s2">&quot;cognito-idp&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-64" name="__codelineno-43-64" href="#__codelineno-43-64"></a>    <span class="s2">&quot;cognito-sync&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-65" name="__codelineno-43-65" href="#__codelineno-43-65"></a>    <span class="s2">&quot;comprehend&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-66" name="__codelineno-43-66" href="#__codelineno-43-66"></a>    <span class="s2">&quot;comprehendmedical&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-67" name="__codelineno-43-67" href="#__codelineno-43-67"></a>    <span class="s2">&quot;compute-optimizer&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-68" name="__codelineno-43-68" href="#__codelineno-43-68"></a>    <span class="s2">&quot;config&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-69" name="__codelineno-43-69" href="#__codelineno-43-69"></a>    <span class="s2">&quot;connect&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-70" name="__codelineno-43-70" href="#__codelineno-43-70"></a>    <span class="s2">&quot;connect-contact-lens&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-71" name="__codelineno-43-71" href="#__codelineno-43-71"></a>    <span class="s2">&quot;connectcampaigns&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-72" name="__codelineno-43-72" href="#__codelineno-43-72"></a>    <span class="s2">&quot;connectparticipant&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-73" name="__codelineno-43-73" href="#__codelineno-43-73"></a>    <span class="s2">&quot;cur&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-74" name="__codelineno-43-74" href="#__codelineno-43-74"></a>    <span class="s2">&quot;customer-profiles&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-75" name="__codelineno-43-75" href="#__codelineno-43-75"></a>    <span class="s2">&quot;databrew&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-76" name="__codelineno-43-76" href="#__codelineno-43-76"></a>    <span class="s2">&quot;dataexchange&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-77" name="__codelineno-43-77" href="#__codelineno-43-77"></a>    <span class="s2">&quot;datapipeline&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-78" name="__codelineno-43-78" href="#__codelineno-43-78"></a>    <span class="s2">&quot;datasync&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-79" name="__codelineno-43-79" href="#__codelineno-43-79"></a>    <span class="s2">&quot;dax&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-80" name="__codelineno-43-80" href="#__codelineno-43-80"></a>    <span class="s2">&quot;detective&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-81" name="__codelineno-43-81" href="#__codelineno-43-81"></a>    <span class="s2">&quot;devicefarm&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-82" name="__codelineno-43-82" href="#__codelineno-43-82"></a>    <span class="s2">&quot;devops-guru&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-83" name="__codelineno-43-83" href="#__codelineno-43-83"></a>    <span class="s2">&quot;directconnect&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-84" name="__codelineno-43-84" href="#__codelineno-43-84"></a>    <span class="s2">&quot;discovery&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-85" name="__codelineno-43-85" href="#__codelineno-43-85"></a>    <span class="s2">&quot;dlm&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-86" name="__codelineno-43-86" href="#__codelineno-43-86"></a>    <span class="s2">&quot;dms&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-87" name="__codelineno-43-87" href="#__codelineno-43-87"></a>    <span class="s2">&quot;docdb&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-88" name="__codelineno-43-88" href="#__codelineno-43-88"></a>    <span class="s2">&quot;drs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-89" name="__codelineno-43-89" href="#__codelineno-43-89"></a>    <span class="s2">&quot;ds&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-90" name="__codelineno-43-90" href="#__codelineno-43-90"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-91" name="__codelineno-43-91" href="#__codelineno-43-91"></a>    <span class="s2">&quot;dynamodbstreams&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-92" name="__codelineno-43-92" href="#__codelineno-43-92"></a>    <span class="s2">&quot;ebs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-93" name="__codelineno-43-93" href="#__codelineno-43-93"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-94" name="__codelineno-43-94" href="#__codelineno-43-94"></a>    <span class="s2">&quot;ec2-instance-connect&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-95" name="__codelineno-43-95" href="#__codelineno-43-95"></a>    <span class="s2">&quot;ecr&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-96" name="__codelineno-43-96" href="#__codelineno-43-96"></a>    <span class="s2">&quot;ecr-public&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-97" name="__codelineno-43-97" href="#__codelineno-43-97"></a>    <span class="s2">&quot;ecs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-98" name="__codelineno-43-98" href="#__codelineno-43-98"></a>    <span class="s2">&quot;efs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-99" name="__codelineno-43-99" href="#__codelineno-43-99"></a>    <span class="s2">&quot;eks&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-100" name="__codelineno-43-100" href="#__codelineno-43-100"></a>    <span class="s2">&quot;elastic-inference&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-101" name="__codelineno-43-101" href="#__codelineno-43-101"></a>    <span class="s2">&quot;elasticache&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-102" name="__codelineno-43-102" href="#__codelineno-43-102"></a>    <span class="s2">&quot;elasticbeanstalk&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-103" name="__codelineno-43-103" href="#__codelineno-43-103"></a>    <span class="s2">&quot;elastictranscoder&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-104" name="__codelineno-43-104" href="#__codelineno-43-104"></a>    <span class="s2">&quot;elb&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-105" name="__codelineno-43-105" href="#__codelineno-43-105"></a>    <span class="s2">&quot;elbv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-106" name="__codelineno-43-106" href="#__codelineno-43-106"></a>    <span class="s2">&quot;emr&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-107" name="__codelineno-43-107" href="#__codelineno-43-107"></a>    <span class="s2">&quot;emr-containers&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-108" name="__codelineno-43-108" href="#__codelineno-43-108"></a>    <span class="s2">&quot;emr-serverless&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-109" name="__codelineno-43-109" href="#__codelineno-43-109"></a>    <span class="s2">&quot;es&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-110" name="__codelineno-43-110" href="#__codelineno-43-110"></a>    <span class="s2">&quot;events&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-111" name="__codelineno-43-111" href="#__codelineno-43-111"></a>    <span class="s2">&quot;evidently&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-112" name="__codelineno-43-112" href="#__codelineno-43-112"></a>    <span class="s2">&quot;finspace&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-113" name="__codelineno-43-113" href="#__codelineno-43-113"></a>    <span class="s2">&quot;finspace-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-114" name="__codelineno-43-114" href="#__codelineno-43-114"></a>    <span class="s2">&quot;firehose&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-115" name="__codelineno-43-115" href="#__codelineno-43-115"></a>    <span class="s2">&quot;fis&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-116" name="__codelineno-43-116" href="#__codelineno-43-116"></a>    <span class="s2">&quot;fms&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-117" name="__codelineno-43-117" href="#__codelineno-43-117"></a>    <span class="s2">&quot;forecast&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-118" name="__codelineno-43-118" href="#__codelineno-43-118"></a>    <span class="s2">&quot;forecastquery&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-119" name="__codelineno-43-119" href="#__codelineno-43-119"></a>    <span class="s2">&quot;frauddetector&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-120" name="__codelineno-43-120" href="#__codelineno-43-120"></a>    <span class="s2">&quot;fsx&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-121" name="__codelineno-43-121" href="#__codelineno-43-121"></a>    <span class="s2">&quot;gamelift&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-122" name="__codelineno-43-122" href="#__codelineno-43-122"></a>    <span class="s2">&quot;gamesparks&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-123" name="__codelineno-43-123" href="#__codelineno-43-123"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-124" name="__codelineno-43-124" href="#__codelineno-43-124"></a>    <span class="s2">&quot;globalaccelerator&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-125" name="__codelineno-43-125" href="#__codelineno-43-125"></a>    <span class="s2">&quot;glue&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-126" name="__codelineno-43-126" href="#__codelineno-43-126"></a>    <span class="s2">&quot;grafana&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-127" name="__codelineno-43-127" href="#__codelineno-43-127"></a>    <span class="s2">&quot;greengrass&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-128" name="__codelineno-43-128" href="#__codelineno-43-128"></a>    <span class="s2">&quot;greengrassv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-129" name="__codelineno-43-129" href="#__codelineno-43-129"></a>    <span class="s2">&quot;groundstation&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-130" name="__codelineno-43-130" href="#__codelineno-43-130"></a>    <span class="s2">&quot;guardduty&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-131" name="__codelineno-43-131" href="#__codelineno-43-131"></a>    <span class="s2">&quot;health&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-132" name="__codelineno-43-132" href="#__codelineno-43-132"></a>    <span class="s2">&quot;healthlake&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-133" name="__codelineno-43-133" href="#__codelineno-43-133"></a>    <span class="s2">&quot;honeycode&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-134" name="__codelineno-43-134" href="#__codelineno-43-134"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-135" name="__codelineno-43-135" href="#__codelineno-43-135"></a>    <span class="s2">&quot;identitystore&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-136" name="__codelineno-43-136" href="#__codelineno-43-136"></a>    <span class="s2">&quot;imagebuilder&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-137" name="__codelineno-43-137" href="#__codelineno-43-137"></a>    <span class="s2">&quot;importexport&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-138" name="__codelineno-43-138" href="#__codelineno-43-138"></a>    <span class="s2">&quot;inspector&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-139" name="__codelineno-43-139" href="#__codelineno-43-139"></a>    <span class="s2">&quot;inspector2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-140" name="__codelineno-43-140" href="#__codelineno-43-140"></a>    <span class="s2">&quot;iot&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-141" name="__codelineno-43-141" href="#__codelineno-43-141"></a>    <span class="s2">&quot;iot-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-142" name="__codelineno-43-142" href="#__codelineno-43-142"></a>    <span class="s2">&quot;iot-jobs-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-143" name="__codelineno-43-143" href="#__codelineno-43-143"></a>    <span class="s2">&quot;iot1click-devices&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-144" name="__codelineno-43-144" href="#__codelineno-43-144"></a>    <span class="s2">&quot;iot1click-projects&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-145" name="__codelineno-43-145" href="#__codelineno-43-145"></a>    <span class="s2">&quot;iotanalytics&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-146" name="__codelineno-43-146" href="#__codelineno-43-146"></a>    <span class="s2">&quot;iotdeviceadvisor&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-147" name="__codelineno-43-147" href="#__codelineno-43-147"></a>    <span class="s2">&quot;iotevents&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-148" name="__codelineno-43-148" href="#__codelineno-43-148"></a>    <span class="s2">&quot;iotevents-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-149" name="__codelineno-43-149" href="#__codelineno-43-149"></a>    <span class="s2">&quot;iotfleethub&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-150" name="__codelineno-43-150" href="#__codelineno-43-150"></a>    <span class="s2">&quot;iotsecuretunneling&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-151" name="__codelineno-43-151" href="#__codelineno-43-151"></a>    <span class="s2">&quot;iotsitewise&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-152" name="__codelineno-43-152" href="#__codelineno-43-152"></a>    <span class="s2">&quot;iotthingsgraph&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-153" name="__codelineno-43-153" href="#__codelineno-43-153"></a>    <span class="s2">&quot;iottwinmaker&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-154" name="__codelineno-43-154" href="#__codelineno-43-154"></a>    <span class="s2">&quot;iotwireless&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-155" name="__codelineno-43-155" href="#__codelineno-43-155"></a>    <span class="s2">&quot;ivs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-156" name="__codelineno-43-156" href="#__codelineno-43-156"></a>    <span class="s2">&quot;ivschat&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-157" name="__codelineno-43-157" href="#__codelineno-43-157"></a>    <span class="s2">&quot;kafka&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-158" name="__codelineno-43-158" href="#__codelineno-43-158"></a>    <span class="s2">&quot;kafkaconnect&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-159" name="__codelineno-43-159" href="#__codelineno-43-159"></a>    <span class="s2">&quot;kendra&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-160" name="__codelineno-43-160" href="#__codelineno-43-160"></a>    <span class="s2">&quot;keyspaces&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-161" name="__codelineno-43-161" href="#__codelineno-43-161"></a>    <span class="s2">&quot;kinesis&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-162" name="__codelineno-43-162" href="#__codelineno-43-162"></a>    <span class="s2">&quot;kinesis-video-archived-media&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-163" name="__codelineno-43-163" href="#__codelineno-43-163"></a>    <span class="s2">&quot;kinesis-video-media&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-164" name="__codelineno-43-164" href="#__codelineno-43-164"></a>    <span class="s2">&quot;kinesis-video-signaling&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-165" name="__codelineno-43-165" href="#__codelineno-43-165"></a>    <span class="s2">&quot;kinesisanalytics&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-166" name="__codelineno-43-166" href="#__codelineno-43-166"></a>    <span class="s2">&quot;kinesisanalyticsv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-167" name="__codelineno-43-167" href="#__codelineno-43-167"></a>    <span class="s2">&quot;kinesisvideo&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-168" name="__codelineno-43-168" href="#__codelineno-43-168"></a>    <span class="s2">&quot;kms&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-169" name="__codelineno-43-169" href="#__codelineno-43-169"></a>    <span class="s2">&quot;lakeformation&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-170" name="__codelineno-43-170" href="#__codelineno-43-170"></a>    <span class="s2">&quot;lambda&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-171" name="__codelineno-43-171" href="#__codelineno-43-171"></a>    <span class="s2">&quot;lex-models&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-172" name="__codelineno-43-172" href="#__codelineno-43-172"></a>    <span class="s2">&quot;lex-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-173" name="__codelineno-43-173" href="#__codelineno-43-173"></a>    <span class="s2">&quot;lexv2-models&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-174" name="__codelineno-43-174" href="#__codelineno-43-174"></a>    <span class="s2">&quot;lexv2-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-175" name="__codelineno-43-175" href="#__codelineno-43-175"></a>    <span class="s2">&quot;license-manager&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-176" name="__codelineno-43-176" href="#__codelineno-43-176"></a>    <span class="s2">&quot;lightsail&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-177" name="__codelineno-43-177" href="#__codelineno-43-177"></a>    <span class="s2">&quot;location&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-178" name="__codelineno-43-178" href="#__codelineno-43-178"></a>    <span class="s2">&quot;logs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-179" name="__codelineno-43-179" href="#__codelineno-43-179"></a>    <span class="s2">&quot;lookoutequipment&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-180" name="__codelineno-43-180" href="#__codelineno-43-180"></a>    <span class="s2">&quot;lookoutmetrics&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-181" name="__codelineno-43-181" href="#__codelineno-43-181"></a>    <span class="s2">&quot;lookoutvision&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-182" name="__codelineno-43-182" href="#__codelineno-43-182"></a>    <span class="s2">&quot;m2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-183" name="__codelineno-43-183" href="#__codelineno-43-183"></a>    <span class="s2">&quot;machinelearning&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-184" name="__codelineno-43-184" href="#__codelineno-43-184"></a>    <span class="s2">&quot;macie&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-185" name="__codelineno-43-185" href="#__codelineno-43-185"></a>    <span class="s2">&quot;macie2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-186" name="__codelineno-43-186" href="#__codelineno-43-186"></a>    <span class="s2">&quot;managedblockchain&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-187" name="__codelineno-43-187" href="#__codelineno-43-187"></a>    <span class="s2">&quot;marketplace-catalog&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-188" name="__codelineno-43-188" href="#__codelineno-43-188"></a>    <span class="s2">&quot;marketplace-entitlement&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-189" name="__codelineno-43-189" href="#__codelineno-43-189"></a>    <span class="s2">&quot;marketplacecommerceanalytics&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-190" name="__codelineno-43-190" href="#__codelineno-43-190"></a>    <span class="s2">&quot;mediaconnect&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-191" name="__codelineno-43-191" href="#__codelineno-43-191"></a>    <span class="s2">&quot;mediaconvert&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-192" name="__codelineno-43-192" href="#__codelineno-43-192"></a>    <span class="s2">&quot;medialive&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-193" name="__codelineno-43-193" href="#__codelineno-43-193"></a>    <span class="s2">&quot;mediapackage&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-194" name="__codelineno-43-194" href="#__codelineno-43-194"></a>    <span class="s2">&quot;mediapackage-vod&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-195" name="__codelineno-43-195" href="#__codelineno-43-195"></a>    <span class="s2">&quot;mediastore&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-196" name="__codelineno-43-196" href="#__codelineno-43-196"></a>    <span class="s2">&quot;mediastore-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-197" name="__codelineno-43-197" href="#__codelineno-43-197"></a>    <span class="s2">&quot;mediatailor&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-198" name="__codelineno-43-198" href="#__codelineno-43-198"></a>    <span class="s2">&quot;memorydb&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-199" name="__codelineno-43-199" href="#__codelineno-43-199"></a>    <span class="s2">&quot;meteringmarketplace&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-200" name="__codelineno-43-200" href="#__codelineno-43-200"></a>    <span class="s2">&quot;mgh&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-201" name="__codelineno-43-201" href="#__codelineno-43-201"></a>    <span class="s2">&quot;mgn&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-202" name="__codelineno-43-202" href="#__codelineno-43-202"></a>    <span class="s2">&quot;migration-hub-refactor-spaces&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-203" name="__codelineno-43-203" href="#__codelineno-43-203"></a>    <span class="s2">&quot;migrationhub-config&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-204" name="__codelineno-43-204" href="#__codelineno-43-204"></a>    <span class="s2">&quot;migrationhubstrategy&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-205" name="__codelineno-43-205" href="#__codelineno-43-205"></a>    <span class="s2">&quot;mobile&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-206" name="__codelineno-43-206" href="#__codelineno-43-206"></a>    <span class="s2">&quot;mq&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-207" name="__codelineno-43-207" href="#__codelineno-43-207"></a>    <span class="s2">&quot;mturk&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-208" name="__codelineno-43-208" href="#__codelineno-43-208"></a>    <span class="s2">&quot;mwaa&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-209" name="__codelineno-43-209" href="#__codelineno-43-209"></a>    <span class="s2">&quot;neptune&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-210" name="__codelineno-43-210" href="#__codelineno-43-210"></a>    <span class="s2">&quot;network-firewall&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-211" name="__codelineno-43-211" href="#__codelineno-43-211"></a>    <span class="s2">&quot;networkmanager&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-212" name="__codelineno-43-212" href="#__codelineno-43-212"></a>    <span class="s2">&quot;nimble&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-213" name="__codelineno-43-213" href="#__codelineno-43-213"></a>    <span class="s2">&quot;opensearch&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-214" name="__codelineno-43-214" href="#__codelineno-43-214"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-215" name="__codelineno-43-215" href="#__codelineno-43-215"></a>    <span class="s2">&quot;opsworkscm&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-216" name="__codelineno-43-216" href="#__codelineno-43-216"></a>    <span class="s2">&quot;organizations&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-217" name="__codelineno-43-217" href="#__codelineno-43-217"></a>    <span class="s2">&quot;outposts&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-218" name="__codelineno-43-218" href="#__codelineno-43-218"></a>    <span class="s2">&quot;panorama&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-219" name="__codelineno-43-219" href="#__codelineno-43-219"></a>    <span class="s2">&quot;personalize&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-220" name="__codelineno-43-220" href="#__codelineno-43-220"></a>    <span class="s2">&quot;personalize-events&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-221" name="__codelineno-43-221" href="#__codelineno-43-221"></a>    <span class="s2">&quot;personalize-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-222" name="__codelineno-43-222" href="#__codelineno-43-222"></a>    <span class="s2">&quot;pi&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-223" name="__codelineno-43-223" href="#__codelineno-43-223"></a>    <span class="s2">&quot;pinpoint&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-224" name="__codelineno-43-224" href="#__codelineno-43-224"></a>    <span class="s2">&quot;pinpoint-email&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-225" name="__codelineno-43-225" href="#__codelineno-43-225"></a>    <span class="s2">&quot;pinpoint-sms-voice&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-226" name="__codelineno-43-226" href="#__codelineno-43-226"></a>    <span class="s2">&quot;pinpoint-sms-voice-v2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-227" name="__codelineno-43-227" href="#__codelineno-43-227"></a>    <span class="s2">&quot;polly&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-228" name="__codelineno-43-228" href="#__codelineno-43-228"></a>    <span class="s2">&quot;pricing&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-229" name="__codelineno-43-229" href="#__codelineno-43-229"></a>    <span class="s2">&quot;proton&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-230" name="__codelineno-43-230" href="#__codelineno-43-230"></a>    <span class="s2">&quot;qldb&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-231" name="__codelineno-43-231" href="#__codelineno-43-231"></a>    <span class="s2">&quot;qldb-session&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-232" name="__codelineno-43-232" href="#__codelineno-43-232"></a>    <span class="s2">&quot;quicksight&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-233" name="__codelineno-43-233" href="#__codelineno-43-233"></a>    <span class="s2">&quot;ram&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-234" name="__codelineno-43-234" href="#__codelineno-43-234"></a>    <span class="s2">&quot;rbin&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-235" name="__codelineno-43-235" href="#__codelineno-43-235"></a>    <span class="s2">&quot;rds&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-236" name="__codelineno-43-236" href="#__codelineno-43-236"></a>    <span class="s2">&quot;rds-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-237" name="__codelineno-43-237" href="#__codelineno-43-237"></a>    <span class="s2">&quot;redshift&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-238" name="__codelineno-43-238" href="#__codelineno-43-238"></a>    <span class="s2">&quot;redshift-data&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-239" name="__codelineno-43-239" href="#__codelineno-43-239"></a>    <span class="s2">&quot;redshift-serverless&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-240" name="__codelineno-43-240" href="#__codelineno-43-240"></a>    <span class="s2">&quot;rekognition&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-241" name="__codelineno-43-241" href="#__codelineno-43-241"></a>    <span class="s2">&quot;resiliencehub&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-242" name="__codelineno-43-242" href="#__codelineno-43-242"></a>    <span class="s2">&quot;resource-groups&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-243" name="__codelineno-43-243" href="#__codelineno-43-243"></a>    <span class="s2">&quot;resourcegroupstaggingapi&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-244" name="__codelineno-43-244" href="#__codelineno-43-244"></a>    <span class="s2">&quot;robomaker&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-245" name="__codelineno-43-245" href="#__codelineno-43-245"></a>    <span class="s2">&quot;rolesanywhere&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-246" name="__codelineno-43-246" href="#__codelineno-43-246"></a>    <span class="s2">&quot;route53&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-247" name="__codelineno-43-247" href="#__codelineno-43-247"></a>    <span class="s2">&quot;route53-recovery-cluster&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-248" name="__codelineno-43-248" href="#__codelineno-43-248"></a>    <span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-249" name="__codelineno-43-249" href="#__codelineno-43-249"></a>    <span class="s2">&quot;route53-recovery-readiness&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-250" name="__codelineno-43-250" href="#__codelineno-43-250"></a>    <span class="s2">&quot;route53domains&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-251" name="__codelineno-43-251" href="#__codelineno-43-251"></a>    <span class="s2">&quot;route53resolver&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-252" name="__codelineno-43-252" href="#__codelineno-43-252"></a>    <span class="s2">&quot;rum&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-253" name="__codelineno-43-253" href="#__codelineno-43-253"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-254" name="__codelineno-43-254" href="#__codelineno-43-254"></a>    <span class="s2">&quot;s3control&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-255" name="__codelineno-43-255" href="#__codelineno-43-255"></a>    <span class="s2">&quot;s3outposts&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-256" name="__codelineno-43-256" href="#__codelineno-43-256"></a>    <span class="s2">&quot;sagemaker&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-257" name="__codelineno-43-257" href="#__codelineno-43-257"></a>    <span class="s2">&quot;sagemaker-a2i-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-258" name="__codelineno-43-258" href="#__codelineno-43-258"></a>    <span class="s2">&quot;sagemaker-edge&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-259" name="__codelineno-43-259" href="#__codelineno-43-259"></a>    <span class="s2">&quot;sagemaker-featurestore-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-260" name="__codelineno-43-260" href="#__codelineno-43-260"></a>    <span class="s2">&quot;sagemaker-runtime&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-261" name="__codelineno-43-261" href="#__codelineno-43-261"></a>    <span class="s2">&quot;savingsplans&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-262" name="__codelineno-43-262" href="#__codelineno-43-262"></a>    <span class="s2">&quot;schemas&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-263" name="__codelineno-43-263" href="#__codelineno-43-263"></a>    <span class="s2">&quot;sdb&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-264" name="__codelineno-43-264" href="#__codelineno-43-264"></a>    <span class="s2">&quot;secretsmanager&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-265" name="__codelineno-43-265" href="#__codelineno-43-265"></a>    <span class="s2">&quot;securityhub&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-266" name="__codelineno-43-266" href="#__codelineno-43-266"></a>    <span class="s2">&quot;serverlessrepo&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-267" name="__codelineno-43-267" href="#__codelineno-43-267"></a>    <span class="s2">&quot;service-quotas&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-268" name="__codelineno-43-268" href="#__codelineno-43-268"></a>    <span class="s2">&quot;servicecatalog&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-269" name="__codelineno-43-269" href="#__codelineno-43-269"></a>    <span class="s2">&quot;servicecatalog-appregistry&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-270" name="__codelineno-43-270" href="#__codelineno-43-270"></a>    <span class="s2">&quot;servicediscovery&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-271" name="__codelineno-43-271" href="#__codelineno-43-271"></a>    <span class="s2">&quot;ses&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-272" name="__codelineno-43-272" href="#__codelineno-43-272"></a>    <span class="s2">&quot;sesv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-273" name="__codelineno-43-273" href="#__codelineno-43-273"></a>    <span class="s2">&quot;shield&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-274" name="__codelineno-43-274" href="#__codelineno-43-274"></a>    <span class="s2">&quot;signer&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-275" name="__codelineno-43-275" href="#__codelineno-43-275"></a>    <span class="s2">&quot;sms&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-276" name="__codelineno-43-276" href="#__codelineno-43-276"></a>    <span class="s2">&quot;sms-voice&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-277" name="__codelineno-43-277" href="#__codelineno-43-277"></a>    <span class="s2">&quot;snow-device-management&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-278" name="__codelineno-43-278" href="#__codelineno-43-278"></a>    <span class="s2">&quot;snowball&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-279" name="__codelineno-43-279" href="#__codelineno-43-279"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-280" name="__codelineno-43-280" href="#__codelineno-43-280"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-281" name="__codelineno-43-281" href="#__codelineno-43-281"></a>    <span class="s2">&quot;ssm&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-282" name="__codelineno-43-282" href="#__codelineno-43-282"></a>    <span class="s2">&quot;ssm-contacts&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-283" name="__codelineno-43-283" href="#__codelineno-43-283"></a>    <span class="s2">&quot;ssm-incidents&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-284" name="__codelineno-43-284" href="#__codelineno-43-284"></a>    <span class="s2">&quot;sso&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-285" name="__codelineno-43-285" href="#__codelineno-43-285"></a>    <span class="s2">&quot;sso-admin&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-286" name="__codelineno-43-286" href="#__codelineno-43-286"></a>    <span class="s2">&quot;sso-oidc&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-287" name="__codelineno-43-287" href="#__codelineno-43-287"></a>    <span class="s2">&quot;stepfunctions&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-288" name="__codelineno-43-288" href="#__codelineno-43-288"></a>    <span class="s2">&quot;storagegateway&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-289" name="__codelineno-43-289" href="#__codelineno-43-289"></a>    <span class="s2">&quot;sts&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-290" name="__codelineno-43-290" href="#__codelineno-43-290"></a>    <span class="s2">&quot;support&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-291" name="__codelineno-43-291" href="#__codelineno-43-291"></a>    <span class="s2">&quot;swf&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-292" name="__codelineno-43-292" href="#__codelineno-43-292"></a>    <span class="s2">&quot;synthetics&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-293" name="__codelineno-43-293" href="#__codelineno-43-293"></a>    <span class="s2">&quot;textract&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-294" name="__codelineno-43-294" href="#__codelineno-43-294"></a>    <span class="s2">&quot;timestream-query&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-295" name="__codelineno-43-295" href="#__codelineno-43-295"></a>    <span class="s2">&quot;timestream-write&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-296" name="__codelineno-43-296" href="#__codelineno-43-296"></a>    <span class="s2">&quot;transcribe&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-297" name="__codelineno-43-297" href="#__codelineno-43-297"></a>    <span class="s2">&quot;transfer&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-298" name="__codelineno-43-298" href="#__codelineno-43-298"></a>    <span class="s2">&quot;translate&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-299" name="__codelineno-43-299" href="#__codelineno-43-299"></a>    <span class="s2">&quot;voice-id&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-300" name="__codelineno-43-300" href="#__codelineno-43-300"></a>    <span class="s2">&quot;waf&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-301" name="__codelineno-43-301" href="#__codelineno-43-301"></a>    <span class="s2">&quot;waf-regional&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-302" name="__codelineno-43-302" href="#__codelineno-43-302"></a>    <span class="s2">&quot;wafv2&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-303" name="__codelineno-43-303" href="#__codelineno-43-303"></a>    <span class="s2">&quot;wellarchitected&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-304" name="__codelineno-43-304" href="#__codelineno-43-304"></a>    <span class="s2">&quot;wisdom&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-305" name="__codelineno-43-305" href="#__codelineno-43-305"></a>    <span class="s2">&quot;workdocs&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-306" name="__codelineno-43-306" href="#__codelineno-43-306"></a>    <span class="s2">&quot;worklink&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-307" name="__codelineno-43-307" href="#__codelineno-43-307"></a>    <span class="s2">&quot;workmail&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-308" name="__codelineno-43-308" href="#__codelineno-43-308"></a>    <span class="s2">&quot;workmailmessageflow&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-309" name="__codelineno-43-309" href="#__codelineno-43-309"></a>    <span class="s2">&quot;workspaces&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-310" name="__codelineno-43-310" href="#__codelineno-43-310"></a>    <span class="s2">&quot;workspaces-web&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-311" name="__codelineno-43-311" href="#__codelineno-43-311"></a>    <span class="s2">&quot;xray&quot;</span><span class="p">,</span>
+<a id="__codelineno-43-312" name="__codelineno-43-312" href="#__codelineno-43-312"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="resourceservicename">ResourceServiceName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ResourceServiceName</span>
-<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>
-<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResourceServiceName</span><span class="p">:</span>
-<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>    <span class="k">return</span> <span class="s2">&quot;cloudformation&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">ResourceServiceName</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResourceServiceName</span><span class="p">:</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>    <span class="k">return</span> <span class="s2">&quot;cloudformation&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="n">ResourceServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
-<a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">ResourceServiceName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>    <span class="s2">&quot;cloudformation&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>    <span class="s2">&quot;cloudwatch&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>    <span class="s2">&quot;dynamodb&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>    <span class="s2">&quot;ec2&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>    <span class="s2">&quot;glacier&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>    <span class="s2">&quot;iam&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>    <span class="s2">&quot;opsworks&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>    <span class="s2">&quot;s3&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>    <span class="s2">&quot;sns&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>    <span class="s2">&quot;sqs&quot;</span><span class="p">,</span>
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="paginatorname">PaginatorName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">PaginatorName</span>
-<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>
-<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">PaginatorName</span><span class="p">:</span>
-<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>    <span class="k">return</span> <span class="s2">&quot;list_apps_lists&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">PaginatorName</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">PaginatorName</span><span class="p">:</span>
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>    <span class="k">return</span> <span class="s2">&quot;list_apps_lists&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">PaginatorName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>    <span class="s2">&quot;list_apps_lists&quot;</span><span class="p">,</span>
-<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>    <span class="s2">&quot;list_compliance_status&quot;</span><span class="p">,</span>
-<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>    <span class="s2">&quot;list_member_accounts&quot;</span><span class="p">,</span>
-<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>    <span class="s2">&quot;list_policies&quot;</span><span class="p">,</span>
-<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>    <span class="s2">&quot;list_protocols_lists&quot;</span><span class="p">,</span>
-<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>    <span class="s2">&quot;list_third_party_firewall_firewall_policies&quot;</span><span class="p">,</span>
-<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="n">PaginatorName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>    <span class="s2">&quot;list_apps_lists&quot;</span><span class="p">,</span>
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>    <span class="s2">&quot;list_compliance_status&quot;</span><span class="p">,</span>
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a>    <span class="s2">&quot;list_member_accounts&quot;</span><span class="p">,</span>
+<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>    <span class="s2">&quot;list_policies&quot;</span><span class="p">,</span>
+<a id="__codelineno-47-6" name="__codelineno-47-6" href="#__codelineno-47-6"></a>    <span class="s2">&quot;list_protocols_lists&quot;</span><span class="p">,</span>
+<a id="__codelineno-47-7" name="__codelineno-47-7" href="#__codelineno-47-7"></a>    <span class="s2">&quot;list_third_party_firewall_firewall_policies&quot;</span><span class="p">,</span>
+<a id="__codelineno-47-8" name="__codelineno-47-8" href="#__codelineno-47-8"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="regionname">RegionName</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">RegionName</span>
-<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>
-<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RegionName</span><span class="p">:</span>
-<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>    <span class="k">return</span> <span class="s2">&quot;af-south-1&quot;</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_fms.literals</span> <span class="kn">import</span> <span class="n">RegionName</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RegionName</span><span class="p">:</span>
+<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a>    <span class="k">return</span> <span class="s2">&quot;af-south-1&quot;</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="n">RegionName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>    <span class="s2">&quot;af-south-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>    <span class="s2">&quot;ap-east-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a>    <span class="s2">&quot;ap-northeast-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>    <span class="s2">&quot;ap-northeast-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-6" name="__codelineno-47-6" href="#__codelineno-47-6"></a>    <span class="s2">&quot;ap-northeast-3&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-7" name="__codelineno-47-7" href="#__codelineno-47-7"></a>    <span class="s2">&quot;ap-south-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-8" name="__codelineno-47-8" href="#__codelineno-47-8"></a>    <span class="s2">&quot;ap-southeast-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-9" name="__codelineno-47-9" href="#__codelineno-47-9"></a>    <span class="s2">&quot;ap-southeast-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-10" name="__codelineno-47-10" href="#__codelineno-47-10"></a>    <span class="s2">&quot;ca-central-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-11" name="__codelineno-47-11" href="#__codelineno-47-11"></a>    <span class="s2">&quot;eu-central-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-12" name="__codelineno-47-12" href="#__codelineno-47-12"></a>    <span class="s2">&quot;eu-north-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-13" name="__codelineno-47-13" href="#__codelineno-47-13"></a>    <span class="s2">&quot;eu-south-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-14" name="__codelineno-47-14" href="#__codelineno-47-14"></a>    <span class="s2">&quot;eu-west-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-15" name="__codelineno-47-15" href="#__codelineno-47-15"></a>    <span class="s2">&quot;eu-west-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-16" name="__codelineno-47-16" href="#__codelineno-47-16"></a>    <span class="s2">&quot;eu-west-3&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-17" name="__codelineno-47-17" href="#__codelineno-47-17"></a>    <span class="s2">&quot;me-south-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-18" name="__codelineno-47-18" href="#__codelineno-47-18"></a>    <span class="s2">&quot;sa-east-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-19" name="__codelineno-47-19" href="#__codelineno-47-19"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-20" name="__codelineno-47-20" href="#__codelineno-47-20"></a>    <span class="s2">&quot;us-east-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-21" name="__codelineno-47-21" href="#__codelineno-47-21"></a>    <span class="s2">&quot;us-west-1&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-22" name="__codelineno-47-22" href="#__codelineno-47-22"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
-<a id="__codelineno-47-23" name="__codelineno-47-23" href="#__codelineno-47-23"></a><span class="p">]</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="n">RegionName</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>    <span class="s2">&quot;af-south-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>    <span class="s2">&quot;ap-east-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a>    <span class="s2">&quot;ap-northeast-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a>    <span class="s2">&quot;ap-northeast-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a>    <span class="s2">&quot;ap-northeast-3&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a>    <span class="s2">&quot;ap-south-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a>    <span class="s2">&quot;ap-southeast-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-9" name="__codelineno-49-9" href="#__codelineno-49-9"></a>    <span class="s2">&quot;ap-southeast-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-10" name="__codelineno-49-10" href="#__codelineno-49-10"></a>    <span class="s2">&quot;ca-central-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-11" name="__codelineno-49-11" href="#__codelineno-49-11"></a>    <span class="s2">&quot;eu-central-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-12" name="__codelineno-49-12" href="#__codelineno-49-12"></a>    <span class="s2">&quot;eu-north-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-13" name="__codelineno-49-13" href="#__codelineno-49-13"></a>    <span class="s2">&quot;eu-south-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-14" name="__codelineno-49-14" href="#__codelineno-49-14"></a>    <span class="s2">&quot;eu-west-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-15" name="__codelineno-49-15" href="#__codelineno-49-15"></a>    <span class="s2">&quot;eu-west-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-16" name="__codelineno-49-16" href="#__codelineno-49-16"></a>    <span class="s2">&quot;eu-west-3&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-17" name="__codelineno-49-17" href="#__codelineno-49-17"></a>    <span class="s2">&quot;me-south-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-18" name="__codelineno-49-18" href="#__codelineno-49-18"></a>    <span class="s2">&quot;sa-east-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-19" name="__codelineno-49-19" href="#__codelineno-49-19"></a>    <span class="s2">&quot;us-east-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-20" name="__codelineno-49-20" href="#__codelineno-49-20"></a>    <span class="s2">&quot;us-east-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-21" name="__codelineno-49-21" href="#__codelineno-49-21"></a>    <span class="s2">&quot;us-west-1&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-22" name="__codelineno-49-22" href="#__codelineno-49-22"></a>    <span class="s2">&quot;us-west-2&quot;</span><span class="p">,</span>
+<a id="__codelineno-49-23" name="__codelineno-49-23" href="#__codelineno-49-23"></a><span class="p">]</span>
 </code></pre></div>
 
               

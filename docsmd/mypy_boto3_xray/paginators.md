@@ -21,6 +21,23 @@ def get_batch_get_traces_paginator() -> BatchGetTracesPaginator:
     return Session().client("xray").get_paginator("batch_get_traces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import BatchGetTracesPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: BatchGetTracesPaginator = client.get_paginator("batch_get_traces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [BatchGetTracesPaginator](./paginators.md#batchgettracespaginator)
+3. item: [:material-code-braces: BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_get_groups_paginator() -> GetGroupsPaginator:
     return Session().client("xray").get_paginator("get_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import GetGroupsPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: GetGroupsPaginator = client.get_paginator("get_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [GetGroupsPaginator](./paginators.md#getgroupspaginator)
+3. item: [:material-code-braces: GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_xray.paginator import GetSamplingRulesPaginator
 def get_get_sampling_rules_paginator() -> GetSamplingRulesPaginator:
     return Session().client("xray").get_paginator("get_sampling_rules")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import GetSamplingRulesPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: GetSamplingRulesPaginator = client.get_paginator("get_sampling_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [GetSamplingRulesPaginator](./paginators.md#getsamplingrulespaginator)
+3. item: [:material-code-braces: GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef) 
 
 
 ### paginate
@@ -145,6 +196,23 @@ def get_get_sampling_statistic_summaries_paginator() -> GetSamplingStatisticSumm
     return Session().client("xray").get_paginator("get_sampling_statistic_summaries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import GetSamplingStatisticSummariesPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: GetSamplingStatisticSummariesPaginator = client.get_paginator("get_sampling_statistic_summaries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [GetSamplingStatisticSummariesPaginator](./paginators.md#getsamplingstatisticsummariespaginator)
+3. item: [:material-code-braces: GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef) 
+
 
 ### paginate
 
@@ -185,6 +253,23 @@ from mypy_boto3_xray.paginator import GetServiceGraphPaginator
 def get_get_service_graph_paginator() -> GetServiceGraphPaginator:
     return Session().client("xray").get_paginator("get_service_graph")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import GetServiceGraphPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: GetServiceGraphPaginator = client.get_paginator("get_service_graph")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [GetServiceGraphPaginator](./paginators.md#getservicegraphpaginator)
+3. item: [:material-code-braces: GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef) 
 
 
 ### paginate
@@ -231,6 +316,23 @@ from mypy_boto3_xray.paginator import GetTimeSeriesServiceStatisticsPaginator
 def get_get_time_series_service_statistics_paginator() -> GetTimeSeriesServiceStatisticsPaginator:
     return Session().client("xray").get_paginator("get_time_series_service_statistics")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import GetTimeSeriesServiceStatisticsPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: GetTimeSeriesServiceStatisticsPaginator = client.get_paginator("get_time_series_service_statistics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [GetTimeSeriesServiceStatisticsPaginator](./paginators.md#gettimeseriesservicestatisticspaginator)
+3. item: [:material-code-braces: GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef) 
 
 
 ### paginate
@@ -281,6 +383,23 @@ def get_get_trace_graph_paginator() -> GetTraceGraphPaginator:
     return Session().client("xray").get_paginator("get_trace_graph")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import GetTraceGraphPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: GetTraceGraphPaginator = client.get_paginator("get_trace_graph")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [GetTraceGraphPaginator](./paginators.md#gettracegraphpaginator)
+3. item: [:material-code-braces: GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef) 
+
 
 ### paginate
 
@@ -322,6 +441,23 @@ from mypy_boto3_xray.paginator import GetTraceSummariesPaginator
 def get_get_trace_summaries_paginator() -> GetTraceSummariesPaginator:
     return Session().client("xray").get_paginator("get_trace_summaries")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import GetTraceSummariesPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: GetTraceSummariesPaginator = client.get_paginator("get_trace_summaries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [GetTraceSummariesPaginator](./paginators.md#gettracesummariespaginator)
+3. item: [:material-code-braces: GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef) 
 
 
 ### paginate

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelCreatedWaiter
 
-def get_channel_created_waiter() -> ChannelCreatedWaiter:
-    return Session().client("medialive").get_waiter("channel_created")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: ChannelCreatedWaiter = client.get_waiter("channel_created")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelDeletedWaiter
 
-def get_channel_deleted_waiter() -> ChannelDeletedWaiter:
-    return Session().client("medialive").get_waiter("channel_deleted")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: ChannelDeletedWaiter = client.get_waiter("channel_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [ChannelDeletedWaiter](./waiters.md#channeldeletedwaiter)
 
 
 ### wait
@@ -99,9 +113,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelRunningWaiter
 
-def get_channel_running_waiter() -> ChannelRunningWaiter:
-    return Session().client("medialive").get_waiter("channel_running")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: ChannelRunningWaiter = client.get_waiter("channel_running")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [ChannelRunningWaiter](./waiters.md#channelrunningwaiter)
 
 
 ### wait
@@ -140,9 +161,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelStoppedWaiter
 
-def get_channel_stopped_waiter() -> ChannelStoppedWaiter:
-    return Session().client("medialive").get_waiter("channel_stopped")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: ChannelStoppedWaiter = client.get_waiter("channel_stopped")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [ChannelStoppedWaiter](./waiters.md#channelstoppedwaiter)
 
 
 ### wait
@@ -181,9 +209,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import InputAttachedWaiter
 
-def get_input_attached_waiter() -> InputAttachedWaiter:
-    return Session().client("medialive").get_waiter("input_attached")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: InputAttachedWaiter = client.get_waiter("input_attached")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [InputAttachedWaiter](./waiters.md#inputattachedwaiter)
 
 
 ### wait
@@ -222,9 +257,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import InputDeletedWaiter
 
-def get_input_deleted_waiter() -> InputDeletedWaiter:
-    return Session().client("medialive").get_waiter("input_deleted")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: InputDeletedWaiter = client.get_waiter("input_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [InputDeletedWaiter](./waiters.md#inputdeletedwaiter)
 
 
 ### wait
@@ -263,9 +305,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import InputDetachedWaiter
 
-def get_input_detached_waiter() -> InputDetachedWaiter:
-    return Session().client("medialive").get_waiter("input_detached")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: InputDetachedWaiter = client.get_waiter("input_detached")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [InputDetachedWaiter](./waiters.md#inputdetachedwaiter)
 
 
 ### wait
@@ -304,9 +353,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexCreatedWaiter
 
-def get_multiplex_created_waiter() -> MultiplexCreatedWaiter:
-    return Session().client("medialive").get_waiter("multiplex_created")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: MultiplexCreatedWaiter = client.get_waiter("multiplex_created")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [MultiplexCreatedWaiter](./waiters.md#multiplexcreatedwaiter)
 
 
 ### wait
@@ -345,9 +401,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexDeletedWaiter
 
-def get_multiplex_deleted_waiter() -> MultiplexDeletedWaiter:
-    return Session().client("medialive").get_waiter("multiplex_deleted")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: MultiplexDeletedWaiter = client.get_waiter("multiplex_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [MultiplexDeletedWaiter](./waiters.md#multiplexdeletedwaiter)
 
 
 ### wait
@@ -386,9 +449,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexRunningWaiter
 
-def get_multiplex_running_waiter() -> MultiplexRunningWaiter:
-    return Session().client("medialive").get_waiter("multiplex_running")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: MultiplexRunningWaiter = client.get_waiter("multiplex_running")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
 
 
 ### wait
@@ -427,9 +497,16 @@ from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexStoppedWaiter
 
-def get_multiplex_stopped_waiter() -> MultiplexStoppedWaiter:
-    return Session().client("medialive").get_waiter("multiplex_stopped")
+
+session = Session()
+
+client = session.client("medialive")  # (1)
+waiter: MultiplexStoppedWaiter = client.get_waiter("multiplex_stopped")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MediaLiveClient](./client.md)
+2. waiter: [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)
 
 
 ### wait

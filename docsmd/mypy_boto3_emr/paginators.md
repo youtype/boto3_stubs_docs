@@ -21,6 +21,23 @@ def get_list_bootstrap_actions_paginator() -> ListBootstrapActionsPaginator:
     return Session().client("emr").get_paginator("list_bootstrap_actions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListBootstrapActionsPaginator = client.get_paginator("list_bootstrap_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
+3. item: [:material-code-braces: ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_emr.paginator import ListClustersPaginator
 def get_list_clusters_paginator() -> ListClustersPaginator:
     return Session().client("emr").get_paginator("list_clusters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListClustersPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListClustersPaginator = client.get_paginator("list_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListClustersPaginator](./paginators.md#listclusterspaginator)
+3. item: [:material-code-braces: ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef) 
 
 
 ### paginate
@@ -108,6 +142,23 @@ def get_list_instance_fleets_paginator() -> ListInstanceFleetsPaginator:
     return Session().client("emr").get_paginator("list_instance_fleets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListInstanceFleetsPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListInstanceFleetsPaginator = client.get_paginator("list_instance_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListInstanceFleetsPaginator](./paginators.md#listinstancefleetspaginator)
+3. item: [:material-code-braces: ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef) 
+
 
 ### paginate
 
@@ -150,6 +201,23 @@ def get_list_instance_groups_paginator() -> ListInstanceGroupsPaginator:
     return Session().client("emr").get_paginator("list_instance_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListInstanceGroupsPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListInstanceGroupsPaginator = client.get_paginator("list_instance_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListInstanceGroupsPaginator](./paginators.md#listinstancegroupspaginator)
+3. item: [:material-code-braces: ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef) 
+
 
 ### paginate
 
@@ -191,6 +259,23 @@ from mypy_boto3_emr.paginator import ListInstancesPaginator
 def get_list_instances_paginator() -> ListInstancesPaginator:
     return Session().client("emr").get_paginator("list_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListInstancesPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListInstancesPaginator = client.get_paginator("list_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+3. item: [:material-code-braces: ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef) 
 
 
 ### paginate
@@ -242,6 +327,23 @@ def get_list_notebook_executions_paginator() -> ListNotebookExecutionsPaginator:
     return Session().client("emr").get_paginator("list_notebook_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListNotebookExecutionsPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListNotebookExecutionsPaginator = client.get_paginator("list_notebook_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListNotebookExecutionsPaginator](./paginators.md#listnotebookexecutionspaginator)
+3. item: [:material-code-braces: ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef) 
+
 
 ### paginate
 
@@ -288,6 +390,23 @@ def get_list_security_configurations_paginator() -> ListSecurityConfigurationsPa
     return Session().client("emr").get_paginator("list_security_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListSecurityConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListSecurityConfigurationsPaginator = client.get_paginator("list_security_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListSecurityConfigurationsPaginator](./paginators.md#listsecurityconfigurationspaginator)
+3. item: [:material-code-braces: ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef) 
+
 
 ### paginate
 
@@ -328,6 +447,23 @@ from mypy_boto3_emr.paginator import ListStepsPaginator
 def get_list_steps_paginator() -> ListStepsPaginator:
     return Session().client("emr").get_paginator("list_steps")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListStepsPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListStepsPaginator = client.get_paginator("list_steps")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListStepsPaginator](./paginators.md#liststepspaginator)
+3. item: [:material-code-braces: ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef) 
 
 
 ### paginate
@@ -374,6 +510,23 @@ def get_list_studio_session_mappings_paginator() -> ListStudioSessionMappingsPag
     return Session().client("emr").get_paginator("list_studio_session_mappings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListStudioSessionMappingsPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListStudioSessionMappingsPaginator = client.get_paginator("list_studio_session_mappings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
+3. item: [:material-code-braces: ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef) 
+
 
 ### paginate
 
@@ -417,6 +570,23 @@ from mypy_boto3_emr.paginator import ListStudiosPaginator
 def get_list_studios_paginator() -> ListStudiosPaginator:
     return Session().client("emr").get_paginator("list_studios")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_emr.paginator import ListStudiosPaginator
+
+session = Session()
+
+client = Session().client("emr")  # (1)
+paginator: ListStudiosPaginator = client.get_paginator("list_studios")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EMRClient](./client.md)
+2. paginator: [ListStudiosPaginator](./paginators.md#liststudiospaginator)
+3. item: [:material-code-braces: ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef) 
 
 
 ### paginate

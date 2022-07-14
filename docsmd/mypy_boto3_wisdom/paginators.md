@@ -21,6 +21,23 @@ def get_list_assistant_associations_paginator() -> ListAssistantAssociationsPagi
     return Session().client("wisdom").get_paginator("list_assistant_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator
+
+session = Session()
+
+client = Session().client("wisdom")  # (1)
+paginator: ListAssistantAssociationsPaginator = client.get_paginator("list_assistant_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectWisdomServiceClient](./client.md)
+2. paginator: [ListAssistantAssociationsPaginator](./paginators.md#listassistantassociationspaginator)
+3. item: [:material-code-braces: ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_assistants_paginator() -> ListAssistantsPaginator:
     return Session().client("wisdom").get_paginator("list_assistants")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_wisdom.paginator import ListAssistantsPaginator
+
+session = Session()
+
+client = Session().client("wisdom")  # (1)
+paginator: ListAssistantsPaginator = client.get_paginator("list_assistants")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectWisdomServiceClient](./client.md)
+2. paginator: [ListAssistantsPaginator](./paginators.md#listassistantspaginator)
+3. item: [:material-code-braces: ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_wisdom.paginator import ListContentsPaginator
 def get_list_contents_paginator() -> ListContentsPaginator:
     return Session().client("wisdom").get_paginator("list_contents")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_wisdom.paginator import ListContentsPaginator
+
+session = Session()
+
+client = Session().client("wisdom")  # (1)
+paginator: ListContentsPaginator = client.get_paginator("list_contents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectWisdomServiceClient](./client.md)
+2. paginator: [ListContentsPaginator](./paginators.md#listcontentspaginator)
+3. item: [:material-code-braces: ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ def get_list_knowledge_bases_paginator() -> ListKnowledgeBasesPaginator:
     return Session().client("wisdom").get_paginator("list_knowledge_bases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_wisdom.paginator import ListKnowledgeBasesPaginator
+
+session = Session()
+
+client = Session().client("wisdom")  # (1)
+paginator: ListKnowledgeBasesPaginator = client.get_paginator("list_knowledge_bases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectWisdomServiceClient](./client.md)
+2. paginator: [ListKnowledgeBasesPaginator](./paginators.md#listknowledgebasespaginator)
+3. item: [:material-code-braces: ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_wisdom.paginator import QueryAssistantPaginator
 def get_query_assistant_paginator() -> QueryAssistantPaginator:
     return Session().client("wisdom").get_paginator("query_assistant")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_wisdom.paginator import QueryAssistantPaginator
+
+session = Session()
+
+client = Session().client("wisdom")  # (1)
+paginator: QueryAssistantPaginator = client.get_paginator("query_assistant")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectWisdomServiceClient](./client.md)
+2. paginator: [QueryAssistantPaginator](./paginators.md#queryassistantpaginator)
+3. item: [:material-code-braces: QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef) 
 
 
 ### paginate
@@ -231,6 +316,23 @@ def get_search_content_paginator() -> SearchContentPaginator:
     return Session().client("wisdom").get_paginator("search_content")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_wisdom.paginator import SearchContentPaginator
+
+session = Session()
+
+client = Session().client("wisdom")  # (1)
+paginator: SearchContentPaginator = client.get_paginator("search_content")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectWisdomServiceClient](./client.md)
+2. paginator: [SearchContentPaginator](./paginators.md#searchcontentpaginator)
+3. item: [:material-code-braces: SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef) 
+
 
 ### paginate
 
@@ -275,6 +377,23 @@ from mypy_boto3_wisdom.paginator import SearchSessionsPaginator
 def get_search_sessions_paginator() -> SearchSessionsPaginator:
     return Session().client("wisdom").get_paginator("search_sessions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_wisdom.paginator import SearchSessionsPaginator
+
+session = Session()
+
+client = Session().client("wisdom")  # (1)
+paginator: SearchSessionsPaginator = client.get_paginator("search_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectWisdomServiceClient](./client.md)
+2. paginator: [SearchSessionsPaginator](./paginators.md#searchsessionspaginator)
+3. item: [:material-code-braces: SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef) 
 
 
 ### paginate

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import ClusterAvailableWaiter
 
-def get_cluster_available_waiter() -> ClusterAvailableWaiter:
-    return Session().client("redshift").get_waiter("cluster_available")
+
+session = Session()
+
+client = session.client("redshift")  # (1)
+waiter: ClusterAvailableWaiter = client.get_waiter("cluster_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RedshiftClient](./client.md)
+2. waiter: [ClusterAvailableWaiter](./waiters.md#clusteravailablewaiter)
 
 
 ### wait
@@ -62,9 +69,16 @@ from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import ClusterDeletedWaiter
 
-def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
-    return Session().client("redshift").get_waiter("cluster_deleted")
+
+session = Session()
+
+client = session.client("redshift")  # (1)
+waiter: ClusterDeletedWaiter = client.get_waiter("cluster_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RedshiftClient](./client.md)
+2. waiter: [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
 
 
 ### wait
@@ -107,9 +121,16 @@ from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import ClusterRestoredWaiter
 
-def get_cluster_restored_waiter() -> ClusterRestoredWaiter:
-    return Session().client("redshift").get_waiter("cluster_restored")
+
+session = Session()
+
+client = session.client("redshift")  # (1)
+waiter: ClusterRestoredWaiter = client.get_waiter("cluster_restored")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RedshiftClient](./client.md)
+2. waiter: [ClusterRestoredWaiter](./waiters.md#clusterrestoredwaiter)
 
 
 ### wait
@@ -152,9 +173,16 @@ from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import SnapshotAvailableWaiter
 
-def get_snapshot_available_waiter() -> SnapshotAvailableWaiter:
-    return Session().client("redshift").get_waiter("snapshot_available")
+
+session = Session()
+
+client = session.client("redshift")  # (1)
+waiter: SnapshotAvailableWaiter = client.get_waiter("snapshot_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RedshiftClient](./client.md)
+2. waiter: [SnapshotAvailableWaiter](./waiters.md#snapshotavailablewaiter)
 
 
 ### wait

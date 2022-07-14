@@ -21,6 +21,23 @@ def get_list_campaigns_paginator() -> ListCampaignsPaginator:
     return Session().client("connectcampaigns").get_paginator("list_campaigns")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connectcampaigns.paginator import ListCampaignsPaginator
+
+session = Session()
+
+client = Session().client("connectcampaigns")  # (1)
+paginator: ListCampaignsPaginator = client.get_paginator("list_campaigns")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectCampaignServiceClient](./client.md)
+2. paginator: [ListCampaignsPaginator](./paginators.md#listcampaignspaginator)
+3. item: [:material-code-braces: ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef) 
+
 
 ### paginate
 

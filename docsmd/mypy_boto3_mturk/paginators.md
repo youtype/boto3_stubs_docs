@@ -21,6 +21,23 @@ def get_list_assignments_for_hit_paginator() -> ListAssignmentsForHITPaginator:
     return Session().client("mturk").get_paginator("list_assignments_for_hit")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListAssignmentsForHITPaginator = client.get_paginator("list_assignments_for_hit")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
+3. item: [:material-code-braces: ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ def get_list_bonus_payments_paginator() -> ListBonusPaymentsPaginator:
     return Session().client("mturk").get_paginator("list_bonus_payments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListBonusPaymentsPaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListBonusPaymentsPaginator = client.get_paginator("list_bonus_payments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListBonusPaymentsPaginator](./paginators.md#listbonuspaymentspaginator)
+3. item: [:material-code-braces: ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef) 
+
 
 ### paginate
 
@@ -108,6 +142,23 @@ def get_list_hits_paginator() -> ListHITsPaginator:
     return Session().client("mturk").get_paginator("list_hits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListHITsPaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListHITsPaginator = client.get_paginator("list_hits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListHITsPaginator](./paginators.md#listhitspaginator)
+3. item: [:material-code-braces: ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_mturk.paginator import ListHITsForQualificationTypePaginator
 def get_list_hits_for_qualification_type_paginator() -> ListHITsForQualificationTypePaginator:
     return Session().client("mturk").get_paginator("list_hits_for_qualification_type")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListHITsForQualificationTypePaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListHITsForQualificationTypePaginator = client.get_paginator("list_hits_for_qualification_type")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListHITsForQualificationTypePaginator](./paginators.md#listhitsforqualificationtypepaginator)
+3. item: [:material-code-braces: ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef) 
 
 
 ### paginate
@@ -191,6 +259,23 @@ def get_list_qualification_requests_paginator() -> ListQualificationRequestsPagi
     return Session().client("mturk").get_paginator("list_qualification_requests")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListQualificationRequestsPaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListQualificationRequestsPaginator = client.get_paginator("list_qualification_requests")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListQualificationRequestsPaginator](./paginators.md#listqualificationrequestspaginator)
+3. item: [:material-code-braces: ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef) 
+
 
 ### paginate
 
@@ -232,6 +317,23 @@ from mypy_boto3_mturk.paginator import ListQualificationTypesPaginator
 def get_list_qualification_types_paginator() -> ListQualificationTypesPaginator:
     return Session().client("mturk").get_paginator("list_qualification_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListQualificationTypesPaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListQualificationTypesPaginator = client.get_paginator("list_qualification_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListQualificationTypesPaginator](./paginators.md#listqualificationtypespaginator)
+3. item: [:material-code-braces: ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef) 
 
 
 ### paginate
@@ -277,6 +379,23 @@ def get_list_reviewable_hits_paginator() -> ListReviewableHITsPaginator:
     return Session().client("mturk").get_paginator("list_reviewable_hits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListReviewableHITsPaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListReviewableHITsPaginator = client.get_paginator("list_reviewable_hits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListReviewableHITsPaginator](./paginators.md#listreviewablehitspaginator)
+3. item: [:material-code-braces: ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef) 
+
 
 ### paginate
 
@@ -321,6 +440,23 @@ def get_list_worker_blocks_paginator() -> ListWorkerBlocksPaginator:
     return Session().client("mturk").get_paginator("list_worker_blocks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListWorkerBlocksPaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListWorkerBlocksPaginator = client.get_paginator("list_worker_blocks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
+3. item: [:material-code-braces: ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef) 
+
 
 ### paginate
 
@@ -361,6 +497,23 @@ from mypy_boto3_mturk.paginator import ListWorkersWithQualificationTypePaginator
 def get_list_workers_with_qualification_type_paginator() -> ListWorkersWithQualificationTypePaginator:
     return Session().client("mturk").get_paginator("list_workers_with_qualification_type")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mturk.paginator import ListWorkersWithQualificationTypePaginator
+
+session = Session()
+
+client = Session().client("mturk")  # (1)
+paginator: ListWorkersWithQualificationTypePaginator = client.get_paginator("list_workers_with_qualification_type")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MTurkClient](./client.md)
+2. paginator: [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)
+3. item: [:material-code-braces: ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef) 
 
 
 ### paginate

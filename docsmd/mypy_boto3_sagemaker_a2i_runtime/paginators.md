@@ -21,6 +21,23 @@ def get_list_human_loops_paginator() -> ListHumanLoopsPaginator:
     return Session().client("sagemaker-a2i-runtime").get_paginator("list_human_loops")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker_a2i_runtime.paginator import ListHumanLoopsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker-a2i-runtime")  # (1)
+paginator: ListHumanLoopsPaginator = client.get_paginator("list_human_loops")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AugmentedAIRuntimeClient](./client.md)
+2. paginator: [ListHumanLoopsPaginator](./paginators.md#listhumanloopspaginator)
+3. item: [:material-code-braces: ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef) 
+
 
 ### paginate
 

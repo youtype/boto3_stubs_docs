@@ -21,6 +21,23 @@ def get_list_aws_default_service_quotas_paginator() -> ListAWSDefaultServiceQuot
     return Session().client("service-quotas").get_paginator("list_aws_default_service_quotas")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_service_quotas.paginator import ListAWSDefaultServiceQuotasPaginator
+
+session = Session()
+
+client = Session().client("service-quotas")  # (1)
+paginator: ListAWSDefaultServiceQuotasPaginator = client.get_paginator("list_aws_default_service_quotas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceQuotasClient](./client.md)
+2. paginator: [ListAWSDefaultServiceQuotasPaginator](./paginators.md#listawsdefaultservicequotaspaginator)
+3. item: [:material-code-braces: ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_service_quotas.paginator import ListRequestedServiceQuotaChangeH
 def get_list_requested_service_quota_change_history_paginator() -> ListRequestedServiceQuotaChangeHistoryPaginator:
     return Session().client("service-quotas").get_paginator("list_requested_service_quota_change_history")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_service_quotas.paginator import ListRequestedServiceQuotaChangeHistoryPaginator
+
+session = Session()
+
+client = Session().client("service-quotas")  # (1)
+paginator: ListRequestedServiceQuotaChangeHistoryPaginator = client.get_paginator("list_requested_service_quota_change_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceQuotasClient](./client.md)
+2. paginator: [ListRequestedServiceQuotaChangeHistoryPaginator](./paginators.md#listrequestedservicequotachangehistorypaginator)
+3. item: [:material-code-braces: ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ from mypy_boto3_service_quotas.paginator import ListRequestedServiceQuotaChangeH
 def get_list_requested_service_quota_change_history_by_quota_paginator() -> ListRequestedServiceQuotaChangeHistoryByQuotaPaginator:
     return Session().client("service-quotas").get_paginator("list_requested_service_quota_change_history_by_quota")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_service_quotas.paginator import ListRequestedServiceQuotaChangeHistoryByQuotaPaginator
+
+session = Session()
+
+client = Session().client("service-quotas")  # (1)
+paginator: ListRequestedServiceQuotaChangeHistoryByQuotaPaginator = client.get_paginator("list_requested_service_quota_change_history_by_quota")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceQuotasClient](./client.md)
+2. paginator: [ListRequestedServiceQuotaChangeHistoryByQuotaPaginator](./paginators.md#listrequestedservicequotachangehistorybyquotapaginator)
+3. item: [:material-code-braces: ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef) 
 
 
 ### paginate
@@ -153,6 +204,23 @@ def get_list_service_quota_increase_requests_in_template_paginator() -> ListServ
     return Session().client("service-quotas").get_paginator("list_service_quota_increase_requests_in_template")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_service_quotas.paginator import ListServiceQuotaIncreaseRequestsInTemplatePaginator
+
+session = Session()
+
+client = Session().client("service-quotas")  # (1)
+paginator: ListServiceQuotaIncreaseRequestsInTemplatePaginator = client.get_paginator("list_service_quota_increase_requests_in_template")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceQuotasClient](./client.md)
+2. paginator: [ListServiceQuotaIncreaseRequestsInTemplatePaginator](./paginators.md#listservicequotaincreaserequestsintemplatepaginator)
+3. item: [:material-code-braces: ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef) 
+
 
 ### paginate
 
@@ -196,6 +264,23 @@ def get_list_service_quotas_paginator() -> ListServiceQuotasPaginator:
     return Session().client("service-quotas").get_paginator("list_service_quotas")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_service_quotas.paginator import ListServiceQuotasPaginator
+
+session = Session()
+
+client = Session().client("service-quotas")  # (1)
+paginator: ListServiceQuotasPaginator = client.get_paginator("list_service_quotas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceQuotasClient](./client.md)
+2. paginator: [ListServiceQuotasPaginator](./paginators.md#listservicequotaspaginator)
+3. item: [:material-code-braces: ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef) 
+
 
 ### paginate
 
@@ -237,6 +322,23 @@ from mypy_boto3_service_quotas.paginator import ListServicesPaginator
 def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("service-quotas").get_paginator("list_services")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_service_quotas.paginator import ListServicesPaginator
+
+session = Session()
+
+client = Session().client("service-quotas")  # (1)
+paginator: ListServicesPaginator = client.get_paginator("list_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceQuotasClient](./client.md)
+2. paginator: [ListServicesPaginator](./paginators.md#listservicespaginator)
+3. item: [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
 
 ### paginate

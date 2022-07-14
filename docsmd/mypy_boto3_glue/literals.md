@@ -1546,11 +1546,12 @@ UpdateCatalogBehaviorType = Literal[
 from mypy_boto3_glue.literals import WorkerTypeType
 
 def get_value() -> WorkerTypeType:
-    return "G.1X"
+    return "G.025X"
 ```
 
 ```python title="Definition"
 WorkerTypeType = Literal[
+    "G.025X",
     "G.1X",
     "G.2X",
     "Standard",

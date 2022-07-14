@@ -21,6 +21,23 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return Session().client("workmail").get_paginator("list_aliases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListAliasesPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListAliasesPaginator = client.get_paginator("list_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+3. item: [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ def get_list_availability_configurations_paginator() -> ListAvailabilityConfigur
     return Session().client("workmail").get_paginator("list_availability_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListAvailabilityConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListAvailabilityConfigurationsPaginator = client.get_paginator("list_availability_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListAvailabilityConfigurationsPaginator](./paginators.md#listavailabilityconfigurationspaginator)
+3. item: [:material-code-braces: ListAvailabilityConfigurationsResponseTypeDef](./type_defs.md#listavailabilityconfigurationsresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_workmail.paginator import ListGroupMembersPaginator
 def get_list_group_members_paginator() -> ListGroupMembersPaginator:
     return Session().client("workmail").get_paginator("list_group_members")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListGroupMembersPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListGroupMembersPaginator = client.get_paginator("list_group_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListGroupMembersPaginator](./paginators.md#listgroupmemberspaginator)
+3. item: [:material-code-braces: ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef) 
 
 
 ### paginate
@@ -151,6 +202,23 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("workmail").get_paginator("list_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListGroupsPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListGroupsPaginator = client.get_paginator("list_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+3. item: [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -192,6 +260,23 @@ from mypy_boto3_workmail.paginator import ListMailboxPermissionsPaginator
 def get_list_mailbox_permissions_paginator() -> ListMailboxPermissionsPaginator:
     return Session().client("workmail").get_paginator("list_mailbox_permissions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListMailboxPermissionsPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListMailboxPermissionsPaginator = client.get_paginator("list_mailbox_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListMailboxPermissionsPaginator](./paginators.md#listmailboxpermissionspaginator)
+3. item: [:material-code-braces: ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef) 
 
 
 ### paginate
@@ -237,6 +322,23 @@ def get_list_organizations_paginator() -> ListOrganizationsPaginator:
     return Session().client("workmail").get_paginator("list_organizations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListOrganizationsPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListOrganizationsPaginator = client.get_paginator("list_organizations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListOrganizationsPaginator](./paginators.md#listorganizationspaginator)
+3. item: [:material-code-braces: ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef) 
+
 
 ### paginate
 
@@ -277,6 +379,23 @@ from mypy_boto3_workmail.paginator import ListResourceDelegatesPaginator
 def get_list_resource_delegates_paginator() -> ListResourceDelegatesPaginator:
     return Session().client("workmail").get_paginator("list_resource_delegates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListResourceDelegatesPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListResourceDelegatesPaginator = client.get_paginator("list_resource_delegates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListResourceDelegatesPaginator](./paginators.md#listresourcedelegatespaginator)
+3. item: [:material-code-braces: ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef) 
 
 
 ### paginate
@@ -322,6 +441,23 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
     return Session().client("workmail").get_paginator("list_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListResourcesPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListResourcesPaginator = client.get_paginator("list_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+3. item: [:material-code-braces: ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef) 
+
 
 ### paginate
 
@@ -363,6 +499,23 @@ from mypy_boto3_workmail.paginator import ListUsersPaginator
 def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("workmail").get_paginator("list_users")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workmail.paginator import ListUsersPaginator
+
+session = Session()
+
+client = Session().client("workmail")  # (1)
+paginator: ListUsersPaginator = client.get_paginator("list_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkMailClient](./client.md)
+2. paginator: [ListUsersPaginator](./paginators.md#listuserspaginator)
+3. item: [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
 
 ### paginate

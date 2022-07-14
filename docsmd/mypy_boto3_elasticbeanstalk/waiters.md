@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter
 
-def get_environment_exists_waiter() -> EnvironmentExistsWaiter:
-    return Session().client("elasticbeanstalk").get_waiter("environment_exists")
+
+session = Session()
+
+client = session.client("elasticbeanstalk")  # (1)
+waiter: EnvironmentExistsWaiter = client.get_waiter("environment_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. waiter: [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
 
 
 ### wait
@@ -65,9 +72,16 @@ from boto3.session import Session
 
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentTerminatedWaiter
 
-def get_environment_terminated_waiter() -> EnvironmentTerminatedWaiter:
-    return Session().client("elasticbeanstalk").get_waiter("environment_terminated")
+
+session = Session()
+
+client = session.client("elasticbeanstalk")  # (1)
+waiter: EnvironmentTerminatedWaiter = client.get_waiter("environment_terminated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. waiter: [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
 
 
 ### wait
@@ -113,9 +127,16 @@ from boto3.session import Session
 
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentUpdatedWaiter
 
-def get_environment_updated_waiter() -> EnvironmentUpdatedWaiter:
-    return Session().client("elasticbeanstalk").get_waiter("environment_updated")
+
+session = Session()
+
+client = session.client("elasticbeanstalk")  # (1)
+waiter: EnvironmentUpdatedWaiter = client.get_waiter("environment_updated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElasticBeanstalkClient](./client.md)
+2. waiter: [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)
 
 
 ### wait

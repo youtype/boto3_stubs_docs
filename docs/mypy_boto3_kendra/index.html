@@ -36708,14 +36708,15 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kendra.type_defs</span> <span class="kn">import</span> <span class="n">AccessControlListConfigurationTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kendra.type_defs</span> <span class="kn">import</span> <span class="n">AccessControlConfigurationSummaryTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccessControlListConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccessControlConfigurationSummaryTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;KeyPath&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#accesscontrolconfigurationsummarytypedef">AccessControlConfigurationSummaryTypeDef</a></li>
 <li><a href="type_defs/#accesscontrollistconfigurationtypedef">AccessControlListConfigurationTypeDef</a></li>
 <li><a href="type_defs/#aclconfigurationtypedef">AclConfigurationTypeDef</a></li>
 <li><a href="type_defs/#datasourcetoindexfieldmappingtypedef">DataSourceToIndexFieldMappingTypeDef</a></li>
@@ -36741,6 +36742,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#connectionconfigurationtypedef">ConnectionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#contentsourceconfigurationtypedef">ContentSourceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#correctiontypedef">CorrectionTypeDef</a></li>
+<li><a href="type_defs/#principaltypedef">PrincipalTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#serversideencryptionconfigurationtypedef">ServerSideEncryptionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#usergroupresolutionconfigurationtypedef">UserGroupResolutionConfigurationTypeDef</a></li>
@@ -36748,6 +36750,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#datasourcesummarytypedef">DataSourceSummaryTypeDef</a></li>
 <li><a href="type_defs/#datasourcesyncjobmetricstypedef">DataSourceSyncJobMetricsTypeDef</a></li>
 <li><a href="type_defs/#sqlconfigurationtypedef">SqlConfigurationTypeDef</a></li>
+<li><a href="type_defs/#deleteaccesscontrolconfigurationrequestrequesttypedef">DeleteAccessControlConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedatasourcerequestrequesttypedef">DeleteDataSourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteexperiencerequestrequesttypedef">DeleteExperienceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletefaqrequestrequesttypedef">DeleteFaqRequestRequestTypeDef</a></li>
@@ -36755,6 +36758,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#deleteprincipalmappingrequestrequesttypedef">DeletePrincipalMappingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletequerysuggestionsblocklistrequestrequesttypedef">DeleteQuerySuggestionsBlockListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletethesaurusrequestrequesttypedef">DeleteThesaurusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeaccesscontrolconfigurationrequestrequesttypedef">DescribeAccessControlConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedatasourcerequestrequesttypedef">DescribeDataSourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeexperiencerequestrequesttypedef">DescribeExperienceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#experienceendpointtypedef">ExperienceEndpointTypeDef</a></li>
@@ -36769,7 +36773,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#documentattributevaluetypedef">DocumentAttributeValueTypeDef</a></li>
 <li><a href="type_defs/#relevancetypedef">RelevanceTypeDef</a></li>
 <li><a href="type_defs/#searchtypedef">SearchTypeDef</a></li>
-<li><a href="type_defs/#principaltypedef">PrincipalTypeDef</a></li>
 <li><a href="type_defs/#documentsmetadataconfigurationtypedef">DocumentsMetadataConfigurationTypeDef</a></li>
 <li><a href="type_defs/#entitydisplaydatatypedef">EntityDisplayDataTypeDef</a></li>
 <li><a href="type_defs/#useridentityconfigurationtypedef">UserIdentityConfigurationTypeDef</a></li>
@@ -36790,6 +36793,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#textdocumentstatisticstypedef">TextDocumentStatisticsTypeDef</a></li>
 <li><a href="type_defs/#jsontokentypeconfigurationtypedef">JsonTokenTypeConfigurationTypeDef</a></li>
 <li><a href="type_defs/#jwttokentypeconfigurationtypedef">JwtTokenTypeConfigurationTypeDef</a></li>
+<li><a href="type_defs/#listaccesscontrolconfigurationsrequestrequesttypedef">ListAccessControlConfigurationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdatasourcesrequestrequesttypedef">ListDataSourcesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listentitypersonasrequestrequesttypedef">ListEntityPersonasRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#personassummarytypedef">PersonasSummaryTypeDef</a></li>
@@ -36841,6 +36845,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#disassociateentitiesfromexperiencerequestrequesttypedef">DisassociateEntitiesFromExperienceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#associateentitiestoexperienceresponsetypedef">AssociateEntitiesToExperienceResponseTypeDef</a></li>
 <li><a href="type_defs/#associatepersonastoentitiesresponsetypedef">AssociatePersonasToEntitiesResponseTypeDef</a></li>
+<li><a href="type_defs/#createaccesscontrolconfigurationresponsetypedef">CreateAccessControlConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#createdatasourceresponsetypedef">CreateDataSourceResponseTypeDef</a></li>
 <li><a href="type_defs/#createexperienceresponsetypedef">CreateExperienceResponseTypeDef</a></li>
 <li><a href="type_defs/#createfaqresponsetypedef">CreateFaqResponseTypeDef</a></li>
@@ -36854,6 +36859,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#disassociateentitiesfromexperienceresponsetypedef">DisassociateEntitiesFromExperienceResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociatepersonasfromentitiesresponsetypedef">DisassociatePersonasFromEntitiesResponseTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#listaccesscontrolconfigurationsresponsetypedef">ListAccessControlConfigurationsResponseTypeDef</a></li>
 <li><a href="type_defs/#startdatasourcesyncjobresponsetypedef">StartDataSourceSyncJobResponseTypeDef</a></li>
 <li><a href="type_defs/#associatepersonastoentitiesrequestrequesttypedef">AssociatePersonasToEntitiesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#authenticationconfigurationtypedef">AuthenticationConfigurationTypeDef</a></li>
@@ -36866,6 +36872,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#confluencepageconfigurationtypedef">ConfluencePageConfigurationTypeDef</a></li>
 <li><a href="type_defs/#confluencespaceconfigurationtypedef">ConfluenceSpaceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#spellcorrectedquerytypedef">SpellCorrectedQueryTypeDef</a></li>
+<li><a href="type_defs/#hierarchicalprincipaltypedef">HierarchicalPrincipalTypeDef</a></li>
 <li><a href="type_defs/#createfaqrequestrequesttypedef">CreateFaqRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createquerysuggestionsblocklistrequestrequesttypedef">CreateQuerySuggestionsBlockListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createthesaurusrequestrequesttypedef">CreateThesaurusRequestRequestTypeDef</a></li>
@@ -36882,7 +36889,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#documentattributevaluecountpairtypedef">DocumentAttributeValueCountPairTypeDef</a></li>
 <li><a href="type_defs/#documentrelevanceconfigurationtypedef">DocumentRelevanceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#documentmetadataconfigurationtypedef">DocumentMetadataConfigurationTypeDef</a></li>
-<li><a href="type_defs/#hierarchicalprincipaltypedef">HierarchicalPrincipalTypeDef</a></li>
 <li><a href="type_defs/#s3datasourceconfigurationtypedef">S3DataSourceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#experienceentitiessummarytypedef">ExperienceEntitiesSummaryTypeDef</a></li>
 <li><a href="type_defs/#experienceconfigurationtypedef">ExperienceConfigurationTypeDef</a></li>
@@ -36907,14 +36913,17 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#githubconfigurationtypedef">GitHubConfigurationTypeDef</a></li>
 <li><a href="type_defs/#onedriveconfigurationtypedef">OneDriveConfigurationTypeDef</a></li>
 <li><a href="type_defs/#confluenceconfigurationtypedef">ConfluenceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#createaccesscontrolconfigurationrequestrequesttypedef">CreateAccessControlConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeaccesscontrolconfigurationresponsetypedef">DescribeAccessControlConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#updateaccesscontrolconfigurationrequestrequesttypedef">UpdateAccessControlConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdatasourcesyncjobsresponsetypedef">ListDataSourceSyncJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#listexperiencesresponsetypedef">ListExperiencesResponseTypeDef</a></li>
 <li><a href="type_defs/#hookconfigurationtypedef">HookConfigurationTypeDef</a></li>
 <li><a href="type_defs/#inlinecustomdocumentenrichmentconfigurationtypedef">InlineCustomDocumentEnrichmentConfigurationTypeDef</a></li>
 <li><a href="type_defs/#attributefiltertypedef">AttributeFilterTypeDef</a></li>
 <li><a href="type_defs/#documentinfotypedef">DocumentInfoTypeDef</a></li>
-<li><a href="type_defs/#queryrequestrequesttypedef">QueryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#documenttypedef">DocumentTypeDef</a></li>
+<li><a href="type_defs/#queryrequestrequesttypedef">QueryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listexperienceentitiesresponsetypedef">ListExperienceEntitiesResponseTypeDef</a></li>
 <li><a href="type_defs/#createexperiencerequestrequesttypedef">CreateExperienceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeexperienceresponsetypedef">DescribeExperienceResponseTypeDef</a></li>

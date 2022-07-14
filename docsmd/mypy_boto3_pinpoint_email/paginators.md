@@ -21,6 +21,23 @@ def get_get_dedicated_ips_paginator() -> GetDedicatedIpsPaginator:
     return Session().client("pinpoint-email").get_paginator("get_dedicated_ips")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_email.paginator import GetDedicatedIpsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-email")  # (1)
+paginator: GetDedicatedIpsPaginator = client.get_paginator("get_dedicated_ips")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointEmailClient](./client.md)
+2. paginator: [GetDedicatedIpsPaginator](./paginators.md#getdedicatedipspaginator)
+3. item: [:material-code-braces: GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return Session().client("pinpoint-email").get_paginator("list_configuration_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_email.paginator import ListConfigurationSetsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-email")  # (1)
+paginator: ListConfigurationSetsPaginator = client.get_paginator("list_configuration_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointEmailClient](./client.md)
+2. paginator: [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
+3. item: [:material-code-braces: ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_pinpoint_email.paginator import ListDedicatedIpPoolsPaginator
 def get_list_dedicated_ip_pools_paginator() -> ListDedicatedIpPoolsPaginator:
     return Session().client("pinpoint-email").get_paginator("list_dedicated_ip_pools")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_email.paginator import ListDedicatedIpPoolsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-email")  # (1)
+paginator: ListDedicatedIpPoolsPaginator = client.get_paginator("list_dedicated_ip_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointEmailClient](./client.md)
+2. paginator: [ListDedicatedIpPoolsPaginator](./paginators.md#listdedicatedippoolspaginator)
+3. item: [:material-code-braces: ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef) 
 
 
 ### paginate
@@ -145,6 +196,23 @@ def get_list_deliverability_test_reports_paginator() -> ListDeliverabilityTestRe
     return Session().client("pinpoint-email").get_paginator("list_deliverability_test_reports")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_email.paginator import ListDeliverabilityTestReportsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-email")  # (1)
+paginator: ListDeliverabilityTestReportsPaginator = client.get_paginator("list_deliverability_test_reports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointEmailClient](./client.md)
+2. paginator: [ListDeliverabilityTestReportsPaginator](./paginators.md#listdeliverabilitytestreportspaginator)
+3. item: [:material-code-braces: ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef) 
+
 
 ### paginate
 
@@ -185,6 +253,23 @@ from mypy_boto3_pinpoint_email.paginator import ListEmailIdentitiesPaginator
 def get_list_email_identities_paginator() -> ListEmailIdentitiesPaginator:
     return Session().client("pinpoint-email").get_paginator("list_email_identities")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_email.paginator import ListEmailIdentitiesPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-email")  # (1)
+paginator: ListEmailIdentitiesPaginator = client.get_paginator("list_email_identities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointEmailClient](./client.md)
+2. paginator: [ListEmailIdentitiesPaginator](./paginators.md#listemailidentitiespaginator)
+3. item: [:material-code-braces: ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef) 
 
 
 ### paginate

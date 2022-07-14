@@ -21,6 +21,23 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("route53domains").get_paginator("list_domains")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53domains.paginator import ListDomainsPaginator
+
+session = Session()
+
+client = Session().client("route53domains")  # (1)
+paginator: ListDomainsPaginator = client.get_paginator("list_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53DomainsClient](./client.md)
+2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+3. item: [:material-code-braces: ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
     return Session().client("route53domains").get_paginator("list_operations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53domains.paginator import ListOperationsPaginator
+
+session = Session()
+
+client = Session().client("route53domains")  # (1)
+paginator: ListOperationsPaginator = client.get_paginator("list_operations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53DomainsClient](./client.md)
+2. paginator: [ListOperationsPaginator](./paginators.md#listoperationspaginator)
+3. item: [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
+
 
 ### paginate
 
@@ -108,6 +142,23 @@ def get_list_prices_paginator() -> ListPricesPaginator:
     return Session().client("route53domains").get_paginator("list_prices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53domains.paginator import ListPricesPaginator
+
+session = Session()
+
+client = Session().client("route53domains")  # (1)
+paginator: ListPricesPaginator = client.get_paginator("list_prices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53DomainsClient](./client.md)
+2. paginator: [ListPricesPaginator](./paginators.md#listpricespaginator)
+3. item: [:material-code-braces: ListPricesResponseTypeDef](./type_defs.md#listpricesresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_route53domains.paginator import ViewBillingPaginator
 def get_view_billing_paginator() -> ViewBillingPaginator:
     return Session().client("route53domains").get_paginator("view_billing")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53domains.paginator import ViewBillingPaginator
+
+session = Session()
+
+client = Session().client("route53domains")  # (1)
+paginator: ViewBillingPaginator = client.get_paginator("view_billing")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53DomainsClient](./client.md)
+2. paginator: [ViewBillingPaginator](./paginators.md#viewbillingpaginator)
+3. item: [:material-code-braces: ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef) 
 
 
 ### paginate

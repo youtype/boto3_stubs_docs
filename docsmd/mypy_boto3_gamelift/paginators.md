@@ -21,6 +21,23 @@ def get_describe_fleet_attributes_paginator() -> DescribeFleetAttributesPaginato
     return Session().client("gamelift").get_paginator("describe_fleet_attributes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeFleetAttributesPaginator = client.get_paginator("describe_fleet_attributes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
+3. item: [:material-code-braces: DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_describe_fleet_capacity_paginator() -> DescribeFleetCapacityPaginator:
     return Session().client("gamelift").get_paginator("describe_fleet_capacity")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeFleetCapacityPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeFleetCapacityPaginator = client.get_paginator("describe_fleet_capacity")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeFleetCapacityPaginator](./paginators.md#describefleetcapacitypaginator)
+3. item: [:material-code-braces: DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_gamelift.paginator import DescribeFleetEventsPaginator
 def get_describe_fleet_events_paginator() -> DescribeFleetEventsPaginator:
     return Session().client("gamelift").get_paginator("describe_fleet_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeFleetEventsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeFleetEventsPaginator = client.get_paginator("describe_fleet_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeFleetEventsPaginator](./paginators.md#describefleeteventspaginator)
+3. item: [:material-code-braces: DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef) 
 
 
 ### paginate
@@ -149,6 +200,23 @@ def get_describe_fleet_utilization_paginator() -> DescribeFleetUtilizationPagina
     return Session().client("gamelift").get_paginator("describe_fleet_utilization")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeFleetUtilizationPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeFleetUtilizationPaginator = client.get_paginator("describe_fleet_utilization")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeFleetUtilizationPaginator](./paginators.md#describefleetutilizationpaginator)
+3. item: [:material-code-braces: DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef) 
+
 
 ### paginate
 
@@ -190,6 +258,23 @@ from mypy_boto3_gamelift.paginator import DescribeGameServerInstancesPaginator
 def get_describe_game_server_instances_paginator() -> DescribeGameServerInstancesPaginator:
     return Session().client("gamelift").get_paginator("describe_game_server_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeGameServerInstancesPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeGameServerInstancesPaginator = client.get_paginator("describe_game_server_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeGameServerInstancesPaginator](./paginators.md#describegameserverinstancespaginator)
+3. item: [:material-code-braces: DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef) 
 
 
 ### paginate
@@ -233,6 +318,23 @@ from mypy_boto3_gamelift.paginator import DescribeGameSessionDetailsPaginator
 def get_describe_game_session_details_paginator() -> DescribeGameSessionDetailsPaginator:
     return Session().client("gamelift").get_paginator("describe_game_session_details")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeGameSessionDetailsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeGameSessionDetailsPaginator = client.get_paginator("describe_game_session_details")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeGameSessionDetailsPaginator](./paginators.md#describegamesessiondetailspaginator)
+3. item: [:material-code-braces: DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef) 
 
 
 ### paginate
@@ -280,6 +382,23 @@ def get_describe_game_session_queues_paginator() -> DescribeGameSessionQueuesPag
     return Session().client("gamelift").get_paginator("describe_game_session_queues")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeGameSessionQueuesPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeGameSessionQueuesPaginator = client.get_paginator("describe_game_session_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeGameSessionQueuesPaginator](./paginators.md#describegamesessionqueuespaginator)
+3. item: [:material-code-braces: DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef) 
+
 
 ### paginate
 
@@ -321,6 +440,23 @@ from mypy_boto3_gamelift.paginator import DescribeGameSessionsPaginator
 def get_describe_game_sessions_paginator() -> DescribeGameSessionsPaginator:
     return Session().client("gamelift").get_paginator("describe_game_sessions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeGameSessionsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeGameSessionsPaginator = client.get_paginator("describe_game_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeGameSessionsPaginator](./paginators.md#describegamesessionspaginator)
+3. item: [:material-code-braces: DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef) 
 
 
 ### paginate
@@ -368,6 +504,23 @@ def get_describe_instances_paginator() -> DescribeInstancesPaginator:
     return Session().client("gamelift").get_paginator("describe_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeInstancesPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeInstancesPaginator = client.get_paginator("describe_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
+3. item: [:material-code-braces: DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef) 
+
 
 ### paginate
 
@@ -412,6 +565,23 @@ def get_describe_matchmaking_configurations_paginator() -> DescribeMatchmakingCo
     return Session().client("gamelift").get_paginator("describe_matchmaking_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeMatchmakingConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeMatchmakingConfigurationsPaginator = client.get_paginator("describe_matchmaking_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeMatchmakingConfigurationsPaginator](./paginators.md#describematchmakingconfigurationspaginator)
+3. item: [:material-code-braces: DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef) 
+
 
 ### paginate
 
@@ -455,6 +625,23 @@ def get_describe_matchmaking_rule_sets_paginator() -> DescribeMatchmakingRuleSet
     return Session().client("gamelift").get_paginator("describe_matchmaking_rule_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeMatchmakingRuleSetsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeMatchmakingRuleSetsPaginator = client.get_paginator("describe_matchmaking_rule_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeMatchmakingRuleSetsPaginator](./paginators.md#describematchmakingrulesetspaginator)
+3. item: [:material-code-braces: DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef) 
+
 
 ### paginate
 
@@ -496,6 +683,23 @@ from mypy_boto3_gamelift.paginator import DescribePlayerSessionsPaginator
 def get_describe_player_sessions_paginator() -> DescribePlayerSessionsPaginator:
     return Session().client("gamelift").get_paginator("describe_player_sessions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribePlayerSessionsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribePlayerSessionsPaginator = client.get_paginator("describe_player_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribePlayerSessionsPaginator](./paginators.md#describeplayersessionspaginator)
+3. item: [:material-code-braces: DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef) 
 
 
 ### paginate
@@ -542,6 +746,23 @@ def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginato
     return Session().client("gamelift").get_paginator("describe_scaling_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import DescribeScalingPoliciesPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: DescribeScalingPoliciesPaginator = client.get_paginator("describe_scaling_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
+3. item: [:material-code-braces: DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef) 
+
 
 ### paginate
 
@@ -587,6 +808,23 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return Session().client("gamelift").get_paginator("list_aliases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListAliasesPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListAliasesPaginator = client.get_paginator("list_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+3. item: [:material-code-braces: ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef) 
+
 
 ### paginate
 
@@ -631,6 +869,23 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
     return Session().client("gamelift").get_paginator("list_builds")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListBuildsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListBuildsPaginator = client.get_paginator("list_builds")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListBuildsPaginator](./paginators.md#listbuildspaginator)
+3. item: [:material-code-braces: ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef) 
+
 
 ### paginate
 
@@ -673,6 +928,23 @@ from mypy_boto3_gamelift.paginator import ListFleetsPaginator
 def get_list_fleets_paginator() -> ListFleetsPaginator:
     return Session().client("gamelift").get_paginator("list_fleets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListFleetsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListFleetsPaginator = client.get_paginator("list_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListFleetsPaginator](./paginators.md#listfleetspaginator)
+3. item: [:material-code-braces: ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef) 
 
 
 ### paginate
@@ -717,6 +989,23 @@ def get_list_game_server_groups_paginator() -> ListGameServerGroupsPaginator:
     return Session().client("gamelift").get_paginator("list_game_server_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListGameServerGroupsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListGameServerGroupsPaginator = client.get_paginator("list_game_server_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListGameServerGroupsPaginator](./paginators.md#listgameservergroupspaginator)
+3. item: [:material-code-braces: ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef) 
+
 
 ### paginate
 
@@ -757,6 +1046,23 @@ from mypy_boto3_gamelift.paginator import ListGameServersPaginator
 def get_list_game_servers_paginator() -> ListGameServersPaginator:
     return Session().client("gamelift").get_paginator("list_game_servers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListGameServersPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListGameServersPaginator = client.get_paginator("list_game_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
+3. item: [:material-code-braces: ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef) 
 
 
 ### paginate
@@ -802,6 +1108,23 @@ def get_list_scripts_paginator() -> ListScriptsPaginator:
     return Session().client("gamelift").get_paginator("list_scripts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListScriptsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListScriptsPaginator = client.get_paginator("list_scripts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListScriptsPaginator](./paginators.md#listscriptspaginator)
+3. item: [:material-code-braces: ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef) 
+
 
 ### paginate
 
@@ -842,6 +1165,23 @@ from mypy_boto3_gamelift.paginator import SearchGameSessionsPaginator
 def get_search_game_sessions_paginator() -> SearchGameSessionsPaginator:
     return Session().client("gamelift").get_paginator("search_game_sessions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import SearchGameSessionsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: SearchGameSessionsPaginator = client.get_paginator("search_game_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
+3. item: [:material-code-braces: SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef) 
 
 
 ### paginate

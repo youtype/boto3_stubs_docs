@@ -21,6 +21,23 @@ def get_list_entitlements_paginator() -> ListEntitlementsPaginator:
     return Session().client("mediaconnect").get_paginator("list_entitlements")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconnect.paginator import ListEntitlementsPaginator
+
+session = Session()
+
+client = Session().client("mediaconnect")  # (1)
+paginator: ListEntitlementsPaginator = client.get_paginator("list_entitlements")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConnectClient](./client.md)
+2. paginator: [ListEntitlementsPaginator](./paginators.md#listentitlementspaginator)
+3. item: [:material-code-braces: ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_mediaconnect.paginator import ListFlowsPaginator
 def get_list_flows_paginator() -> ListFlowsPaginator:
     return Session().client("mediaconnect").get_paginator("list_flows")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconnect.paginator import ListFlowsPaginator
+
+session = Session()
+
+client = Session().client("mediaconnect")  # (1)
+paginator: ListFlowsPaginator = client.get_paginator("list_flows")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConnectClient](./client.md)
+2. paginator: [ListFlowsPaginator](./paginators.md#listflowspaginator)
+3. item: [:material-code-braces: ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return Session().client("mediaconnect").get_paginator("list_offerings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconnect.paginator import ListOfferingsPaginator
+
+session = Session()
+
+client = Session().client("mediaconnect")  # (1)
+paginator: ListOfferingsPaginator = client.get_paginator("list_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConnectClient](./client.md)
+2. paginator: [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
+3. item: [:material-code-braces: ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef) 
+
 
 ### paginate
 
@@ -143,6 +194,23 @@ from mypy_boto3_mediaconnect.paginator import ListReservationsPaginator
 def get_list_reservations_paginator() -> ListReservationsPaginator:
     return Session().client("mediaconnect").get_paginator("list_reservations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mediaconnect.paginator import ListReservationsPaginator
+
+session = Session()
+
+client = Session().client("mediaconnect")  # (1)
+paginator: ListReservationsPaginator = client.get_paginator("list_reservations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaConnectClient](./client.md)
+2. paginator: [ListReservationsPaginator](./paginators.md#listreservationspaginator)
+3. item: [:material-code-braces: ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef) 
 
 
 ### paginate

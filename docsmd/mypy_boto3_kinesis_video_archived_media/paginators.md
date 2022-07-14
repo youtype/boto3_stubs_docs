@@ -21,6 +21,23 @@ def get_get_images_paginator() -> GetImagesPaginator:
     return Session().client("kinesis-video-archived-media").get_paginator("get_images")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesis_video_archived_media.paginator import GetImagesPaginator
+
+session = Session()
+
+client = Session().client("kinesis-video-archived-media")  # (1)
+paginator: GetImagesPaginator = client.get_paginator("get_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisVideoArchivedMediaClient](./client.md)
+2. paginator: [GetImagesPaginator](./paginators.md#getimagespaginator)
+3. item: [:material-code-braces: GetImagesOutputTypeDef](./type_defs.md#getimagesoutputtypedef) 
+
 
 ### paginate
 
@@ -78,6 +95,23 @@ from mypy_boto3_kinesis_video_archived_media.paginator import ListFragmentsPagin
 def get_list_fragments_paginator() -> ListFragmentsPaginator:
     return Session().client("kinesis-video-archived-media").get_paginator("list_fragments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesis_video_archived_media.paginator import ListFragmentsPaginator
+
+session = Session()
+
+client = Session().client("kinesis-video-archived-media")  # (1)
+paginator: ListFragmentsPaginator = client.get_paginator("list_fragments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisVideoArchivedMediaClient](./client.md)
+2. paginator: [ListFragmentsPaginator](./paginators.md#listfragmentspaginator)
+3. item: [:material-code-braces: ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef) 
 
 
 ### paginate

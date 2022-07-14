@@ -21,6 +21,23 @@ def get_get_server_details_paginator() -> GetServerDetailsPaginator:
     return Session().client("migrationhubstrategy").get_paginator("get_server_details")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migrationhubstrategy.paginator import GetServerDetailsPaginator
+
+session = Session()
+
+client = Session().client("migrationhubstrategy")  # (1)
+paginator: GetServerDetailsPaginator = client.get_paginator("get_server_details")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubStrategyRecommendationsClient](./client.md)
+2. paginator: [GetServerDetailsPaginator](./paginators.md#getserverdetailspaginator)
+3. item: [:material-code-braces: GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_migrationhubstrategy.paginator import ListApplicationComponentsP
 def get_list_application_components_paginator() -> ListApplicationComponentsPaginator:
     return Session().client("migrationhubstrategy").get_paginator("list_application_components")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migrationhubstrategy.paginator import ListApplicationComponentsPaginator
+
+session = Session()
+
+client = Session().client("migrationhubstrategy")  # (1)
+paginator: ListApplicationComponentsPaginator = client.get_paginator("list_application_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubStrategyRecommendationsClient](./client.md)
+2. paginator: [ListApplicationComponentsPaginator](./paginators.md#listapplicationcomponentspaginator)
+3. item: [:material-code-braces: ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef) 
 
 
 ### paginate
@@ -111,6 +145,23 @@ def get_list_collectors_paginator() -> ListCollectorsPaginator:
     return Session().client("migrationhubstrategy").get_paginator("list_collectors")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migrationhubstrategy.paginator import ListCollectorsPaginator
+
+session = Session()
+
+client = Session().client("migrationhubstrategy")  # (1)
+paginator: ListCollectorsPaginator = client.get_paginator("list_collectors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubStrategyRecommendationsClient](./client.md)
+2. paginator: [ListCollectorsPaginator](./paginators.md#listcollectorspaginator)
+3. item: [:material-code-braces: ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef) 
+
 
 ### paginate
 
@@ -152,6 +203,23 @@ def get_list_import_file_task_paginator() -> ListImportFileTaskPaginator:
     return Session().client("migrationhubstrategy").get_paginator("list_import_file_task")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migrationhubstrategy.paginator import ListImportFileTaskPaginator
+
+session = Session()
+
+client = Session().client("migrationhubstrategy")  # (1)
+paginator: ListImportFileTaskPaginator = client.get_paginator("list_import_file_task")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubStrategyRecommendationsClient](./client.md)
+2. paginator: [ListImportFileTaskPaginator](./paginators.md#listimportfiletaskpaginator)
+3. item: [:material-code-braces: ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef) 
+
 
 ### paginate
 
@@ -192,6 +260,23 @@ from mypy_boto3_migrationhubstrategy.paginator import ListServersPaginator
 def get_list_servers_paginator() -> ListServersPaginator:
     return Session().client("migrationhubstrategy").get_paginator("list_servers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_migrationhubstrategy.paginator import ListServersPaginator
+
+session = Session()
+
+client = Session().client("migrationhubstrategy")  # (1)
+paginator: ListServersPaginator = client.get_paginator("list_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubStrategyRecommendationsClient](./client.md)
+2. paginator: [ListServersPaginator](./paginators.md#listserverspaginator)
+3. item: [:material-code-braces: ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef) 
 
 
 ### paginate

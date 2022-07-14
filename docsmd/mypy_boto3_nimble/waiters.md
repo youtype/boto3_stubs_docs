@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import LaunchProfileDeletedWaiter
 
-def get_launch_profile_deleted_waiter() -> LaunchProfileDeletedWaiter:
-    return Session().client("nimble").get_waiter("launch_profile_deleted")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: LaunchProfileDeletedWaiter = client.get_waiter("launch_profile_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [LaunchProfileDeletedWaiter](./waiters.md#launchprofiledeletedwaiter)
 
 
 ### wait
@@ -60,9 +67,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import LaunchProfileReadyWaiter
 
-def get_launch_profile_ready_waiter() -> LaunchProfileReadyWaiter:
-    return Session().client("nimble").get_waiter("launch_profile_ready")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: LaunchProfileReadyWaiter = client.get_waiter("launch_profile_ready")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [LaunchProfileReadyWaiter](./waiters.md#launchprofilereadywaiter)
 
 
 ### wait
@@ -103,9 +117,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingImageDeletedWaiter
 
-def get_streaming_image_deleted_waiter() -> StreamingImageDeletedWaiter:
-    return Session().client("nimble").get_waiter("streaming_image_deleted")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StreamingImageDeletedWaiter = client.get_waiter("streaming_image_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StreamingImageDeletedWaiter](./waiters.md#streamingimagedeletedwaiter)
 
 
 ### wait
@@ -146,9 +167,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingImageReadyWaiter
 
-def get_streaming_image_ready_waiter() -> StreamingImageReadyWaiter:
-    return Session().client("nimble").get_waiter("streaming_image_ready")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StreamingImageReadyWaiter = client.get_waiter("streaming_image_ready")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StreamingImageReadyWaiter](./waiters.md#streamingimagereadywaiter)
 
 
 ### wait
@@ -189,9 +217,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionDeletedWaiter
 
-def get_streaming_session_deleted_waiter() -> StreamingSessionDeletedWaiter:
-    return Session().client("nimble").get_waiter("streaming_session_deleted")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StreamingSessionDeletedWaiter = client.get_waiter("streaming_session_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StreamingSessionDeletedWaiter](./waiters.md#streamingsessiondeletedwaiter)
 
 
 ### wait
@@ -232,9 +267,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionReadyWaiter
 
-def get_streaming_session_ready_waiter() -> StreamingSessionReadyWaiter:
-    return Session().client("nimble").get_waiter("streaming_session_ready")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StreamingSessionReadyWaiter = client.get_waiter("streaming_session_ready")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StreamingSessionReadyWaiter](./waiters.md#streamingsessionreadywaiter)
 
 
 ### wait
@@ -275,9 +317,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionStoppedWaiter
 
-def get_streaming_session_stopped_waiter() -> StreamingSessionStoppedWaiter:
-    return Session().client("nimble").get_waiter("streaming_session_stopped")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StreamingSessionStoppedWaiter = client.get_waiter("streaming_session_stopped")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StreamingSessionStoppedWaiter](./waiters.md#streamingsessionstoppedwaiter)
 
 
 ### wait
@@ -318,9 +367,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionStreamReadyWaiter
 
-def get_streaming_session_stream_ready_waiter() -> StreamingSessionStreamReadyWaiter:
-    return Session().client("nimble").get_waiter("streaming_session_stream_ready")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StreamingSessionStreamReadyWaiter = client.get_waiter("streaming_session_stream_ready")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StreamingSessionStreamReadyWaiter](./waiters.md#streamingsessionstreamreadywaiter)
 
 
 ### wait
@@ -363,9 +419,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioComponentDeletedWaiter
 
-def get_studio_component_deleted_waiter() -> StudioComponentDeletedWaiter:
-    return Session().client("nimble").get_waiter("studio_component_deleted")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StudioComponentDeletedWaiter = client.get_waiter("studio_component_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StudioComponentDeletedWaiter](./waiters.md#studiocomponentdeletedwaiter)
 
 
 ### wait
@@ -406,9 +469,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioComponentReadyWaiter
 
-def get_studio_component_ready_waiter() -> StudioComponentReadyWaiter:
-    return Session().client("nimble").get_waiter("studio_component_ready")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StudioComponentReadyWaiter = client.get_waiter("studio_component_ready")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StudioComponentReadyWaiter](./waiters.md#studiocomponentreadywaiter)
 
 
 ### wait
@@ -449,9 +519,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioDeletedWaiter
 
-def get_studio_deleted_waiter() -> StudioDeletedWaiter:
-    return Session().client("nimble").get_waiter("studio_deleted")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StudioDeletedWaiter = client.get_waiter("studio_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StudioDeletedWaiter](./waiters.md#studiodeletedwaiter)
 
 
 ### wait
@@ -490,9 +567,16 @@ from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioReadyWaiter
 
-def get_studio_ready_waiter() -> StudioReadyWaiter:
-    return Session().client("nimble").get_waiter("studio_ready")
+
+session = Session()
+
+client = session.client("nimble")  # (1)
+waiter: StudioReadyWaiter = client.get_waiter("studio_ready")  # (2)
+await waiter.wait()
 ```
+
+1. client: [NimbleStudioClient](./client.md)
+2. waiter: [StudioReadyWaiter](./waiters.md#studioreadywaiter)
 
 
 ### wait

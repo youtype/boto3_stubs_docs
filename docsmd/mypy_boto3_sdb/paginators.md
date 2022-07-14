@@ -21,6 +21,23 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("sdb").get_paginator("list_domains")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sdb.paginator import ListDomainsPaginator
+
+session = Session()
+
+client = Session().client("sdb")  # (1)
+paginator: ListDomainsPaginator = client.get_paginator("list_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SimpleDBClient](./client.md)
+2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+3. item: [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_sdb.paginator import SelectPaginator
 def get_select_paginator() -> SelectPaginator:
     return Session().client("sdb").get_paginator("select")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sdb.paginator import SelectPaginator
+
+session = Session()
+
+client = Session().client("sdb")  # (1)
+paginator: SelectPaginator = client.get_paginator("select")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SimpleDBClient](./client.md)
+2. paginator: [SelectPaginator](./paginators.md#selectpaginator)
+3. item: [:material-code-braces: SelectResultTypeDef](./type_defs.md#selectresulttypedef) 
 
 
 ### paginate

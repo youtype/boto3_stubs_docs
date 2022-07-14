@@ -21,6 +21,23 @@ def get_export_components_paginator() -> ExportComponentsPaginator:
     return Session().client("amplifyuibuilder").get_paginator("export_components")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator
+
+session = Session()
+
+client = Session().client("amplifyuibuilder")  # (1)
+paginator: ExportComponentsPaginator = client.get_paginator("export_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyUIBuilderClient](./client.md)
+2. paginator: [ExportComponentsPaginator](./paginators.md#exportcomponentspaginator)
+3. item: [:material-code-braces: ExportComponentsResponseTypeDef](./type_defs.md#exportcomponentsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_amplifyuibuilder.paginator import ExportThemesPaginator
 def get_export_themes_paginator() -> ExportThemesPaginator:
     return Session().client("amplifyuibuilder").get_paginator("export_themes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ExportThemesPaginator
+
+session = Session()
+
+client = Session().client("amplifyuibuilder")  # (1)
+paginator: ExportThemesPaginator = client.get_paginator("export_themes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyUIBuilderClient](./client.md)
+2. paginator: [ExportThemesPaginator](./paginators.md#exportthemespaginator)
+3. item: [:material-code-braces: ExportThemesResponseTypeDef](./type_defs.md#exportthemesresponsetypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_list_components_paginator() -> ListComponentsPaginator:
     return Session().client("amplifyuibuilder").get_paginator("list_components")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ListComponentsPaginator
+
+session = Session()
+
+client = Session().client("amplifyuibuilder")  # (1)
+paginator: ListComponentsPaginator = client.get_paginator("list_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyUIBuilderClient](./client.md)
+2. paginator: [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
+3. item: [:material-code-braces: ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef) 
+
 
 ### paginate
 
@@ -152,6 +203,23 @@ from mypy_boto3_amplifyuibuilder.paginator import ListThemesPaginator
 def get_list_themes_paginator() -> ListThemesPaginator:
     return Session().client("amplifyuibuilder").get_paginator("list_themes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ListThemesPaginator
+
+session = Session()
+
+client = Session().client("amplifyuibuilder")  # (1)
+paginator: ListThemesPaginator = client.get_paginator("list_themes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyUIBuilderClient](./client.md)
+2. paginator: [ListThemesPaginator](./paginators.md#listthemespaginator)
+3. item: [:material-code-braces: ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef) 
 
 
 ### paginate

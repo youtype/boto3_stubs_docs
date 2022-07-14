@@ -21,6 +21,23 @@ def get_list_access_preview_findings_paginator() -> ListAccessPreviewFindingsPag
     return Session().client("accessanalyzer").get_paginator("list_access_preview_findings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ListAccessPreviewFindingsPaginator = client.get_paginator("list_access_preview_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ListAccessPreviewFindingsPaginator](./paginators.md#listaccesspreviewfindingspaginator)
+3. item: [:material-code-braces: ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ def get_list_access_previews_paginator() -> ListAccessPreviewsPaginator:
     return Session().client("accessanalyzer").get_paginator("list_access_previews")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewsPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ListAccessPreviewsPaginator = client.get_paginator("list_access_previews")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ListAccessPreviewsPaginator](./paginators.md#listaccesspreviewspaginator)
+3. item: [:material-code-braces: ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef) 
+
 
 ### paginate
 
@@ -108,6 +142,23 @@ from mypy_boto3_accessanalyzer.paginator import ListAnalyzedResourcesPaginator
 def get_list_analyzed_resources_paginator() -> ListAnalyzedResourcesPaginator:
     return Session().client("accessanalyzer").get_paginator("list_analyzed_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ListAnalyzedResourcesPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ListAnalyzedResourcesPaginator = client.get_paginator("list_analyzed_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ListAnalyzedResourcesPaginator](./paginators.md#listanalyzedresourcespaginator)
+3. item: [:material-code-braces: ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef) 
 
 
 ### paginate
@@ -153,6 +204,23 @@ def get_list_analyzers_paginator() -> ListAnalyzersPaginator:
     return Session().client("accessanalyzer").get_paginator("list_analyzers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ListAnalyzersPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ListAnalyzersPaginator = client.get_paginator("list_analyzers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ListAnalyzersPaginator](./paginators.md#listanalyzerspaginator)
+3. item: [:material-code-braces: ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef) 
+
 
 ### paginate
 
@@ -196,6 +264,23 @@ def get_list_archive_rules_paginator() -> ListArchiveRulesPaginator:
     return Session().client("accessanalyzer").get_paginator("list_archive_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ListArchiveRulesPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ListArchiveRulesPaginator = client.get_paginator("list_archive_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ListArchiveRulesPaginator](./paginators.md#listarchiverulespaginator)
+3. item: [:material-code-braces: ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef) 
+
 
 ### paginate
 
@@ -237,6 +322,23 @@ from mypy_boto3_accessanalyzer.paginator import ListFindingsPaginator
 def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("accessanalyzer").get_paginator("list_findings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ListFindingsPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ListFindingsPaginator = client.get_paginator("list_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+3. item: [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
 
 ### paginate
@@ -284,6 +386,23 @@ def get_list_policy_generations_paginator() -> ListPolicyGenerationsPaginator:
     return Session().client("accessanalyzer").get_paginator("list_policy_generations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ListPolicyGenerationsPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ListPolicyGenerationsPaginator = client.get_paginator("list_policy_generations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ListPolicyGenerationsPaginator](./paginators.md#listpolicygenerationspaginator)
+3. item: [:material-code-braces: ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef) 
+
 
 ### paginate
 
@@ -325,6 +444,23 @@ from mypy_boto3_accessanalyzer.paginator import ValidatePolicyPaginator
 def get_validate_policy_paginator() -> ValidatePolicyPaginator:
     return Session().client("accessanalyzer").get_paginator("validate_policy")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_accessanalyzer.paginator import ValidatePolicyPaginator
+
+session = Session()
+
+client = Session().client("accessanalyzer")  # (1)
+paginator: ValidatePolicyPaginator = client.get_paginator("validate_policy")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AccessAnalyzerClient](./client.md)
+2. paginator: [ValidatePolicyPaginator](./paginators.md#validatepolicypaginator)
+3. item: [:material-code-braces: ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef) 
 
 
 ### paginate

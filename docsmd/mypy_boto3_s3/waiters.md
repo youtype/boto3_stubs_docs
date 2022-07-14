@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_s3.waiter import BucketExistsWaiter
 
-def get_bucket_exists_waiter() -> BucketExistsWaiter:
-    return Session().client("s3").get_waiter("bucket_exists")
+
+session = Session()
+
+client = session.client("s3")  # (1)
+waiter: BucketExistsWaiter = client.get_waiter("bucket_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [S3Client](./client.md)
+2. waiter: [BucketExistsWaiter](./waiters.md#bucketexistswaiter)
 
 
 ### wait
@@ -59,9 +66,16 @@ from boto3.session import Session
 
 from mypy_boto3_s3.waiter import BucketNotExistsWaiter
 
-def get_bucket_not_exists_waiter() -> BucketNotExistsWaiter:
-    return Session().client("s3").get_waiter("bucket_not_exists")
+
+session = Session()
+
+client = session.client("s3")  # (1)
+waiter: BucketNotExistsWaiter = client.get_waiter("bucket_not_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [S3Client](./client.md)
+2. waiter: [BucketNotExistsWaiter](./waiters.md#bucketnotexistswaiter)
 
 
 ### wait
@@ -101,9 +115,16 @@ from boto3.session import Session
 
 from mypy_boto3_s3.waiter import ObjectExistsWaiter
 
-def get_object_exists_waiter() -> ObjectExistsWaiter:
-    return Session().client("s3").get_waiter("object_exists")
+
+session = Session()
+
+client = session.client("s3")  # (1)
+waiter: ObjectExistsWaiter = client.get_waiter("object_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [S3Client](./client.md)
+2. waiter: [ObjectExistsWaiter](./waiters.md#objectexistswaiter)
 
 
 ### wait
@@ -159,9 +180,16 @@ from boto3.session import Session
 
 from mypy_boto3_s3.waiter import ObjectNotExistsWaiter
 
-def get_object_not_exists_waiter() -> ObjectNotExistsWaiter:
-    return Session().client("s3").get_waiter("object_not_exists")
+
+session = Session()
+
+client = session.client("s3")  # (1)
+waiter: ObjectNotExistsWaiter = client.get_waiter("object_not_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [S3Client](./client.md)
+2. waiter: [ObjectNotExistsWaiter](./waiters.md#objectnotexistswaiter)
 
 
 ### wait

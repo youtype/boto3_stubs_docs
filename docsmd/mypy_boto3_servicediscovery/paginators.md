@@ -21,6 +21,23 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return Session().client("servicediscovery").get_paginator("list_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicediscovery.paginator import ListInstancesPaginator
+
+session = Session()
+
+client = Session().client("servicediscovery")  # (1)
+paginator: ListInstancesPaginator = client.get_paginator("list_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceDiscoveryClient](./client.md)
+2. paginator: [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+3. item: [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_servicediscovery.paginator import ListNamespacesPaginator
 def get_list_namespaces_paginator() -> ListNamespacesPaginator:
     return Session().client("servicediscovery").get_paginator("list_namespaces")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicediscovery.paginator import ListNamespacesPaginator
+
+session = Session()
+
+client = Session().client("servicediscovery")  # (1)
+paginator: ListNamespacesPaginator = client.get_paginator("list_namespaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceDiscoveryClient](./client.md)
+2. paginator: [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
+3. item: [:material-code-braces: ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
     return Session().client("servicediscovery").get_paginator("list_operations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicediscovery.paginator import ListOperationsPaginator
+
+session = Session()
+
+client = Session().client("servicediscovery")  # (1)
+paginator: ListOperationsPaginator = client.get_paginator("list_operations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceDiscoveryClient](./client.md)
+2. paginator: [ListOperationsPaginator](./paginators.md#listoperationspaginator)
+3. item: [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_servicediscovery.paginator import ListServicesPaginator
 def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("servicediscovery").get_paginator("list_services")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicediscovery.paginator import ListServicesPaginator
+
+session = Session()
+
+client = Session().client("servicediscovery")  # (1)
+paginator: ListServicesPaginator = client.get_paginator("list_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServiceDiscoveryClient](./client.md)
+2. paginator: [ListServicesPaginator](./paginators.md#listservicespaginator)
+3. item: [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
 
 ### paginate

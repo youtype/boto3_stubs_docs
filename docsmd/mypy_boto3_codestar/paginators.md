@@ -21,6 +21,23 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("codestar").get_paginator("list_projects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codestar.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("codestar")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeStarClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_codestar.paginator import ListResourcesPaginator
 def get_list_resources_paginator() -> ListResourcesPaginator:
     return Session().client("codestar").get_paginator("list_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codestar.paginator import ListResourcesPaginator
+
+session = Session()
+
+client = Session().client("codestar")  # (1)
+paginator: ListResourcesPaginator = client.get_paginator("list_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeStarClient](./client.md)
+2. paginator: [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+3. item: [:material-code-braces: ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef) 
 
 
 ### paginate
@@ -104,6 +138,23 @@ def get_list_team_members_paginator() -> ListTeamMembersPaginator:
     return Session().client("codestar").get_paginator("list_team_members")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codestar.paginator import ListTeamMembersPaginator
+
+session = Session()
+
+client = Session().client("codestar")  # (1)
+paginator: ListTeamMembersPaginator = client.get_paginator("list_team_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeStarClient](./client.md)
+2. paginator: [ListTeamMembersPaginator](./paginators.md#listteammemberspaginator)
+3. item: [:material-code-braces: ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_codestar.paginator import ListUserProfilesPaginator
 def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
     return Session().client("codestar").get_paginator("list_user_profiles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codestar.paginator import ListUserProfilesPaginator
+
+session = Session()
+
+client = Session().client("codestar")  # (1)
+paginator: ListUserProfilesPaginator = client.get_paginator("list_user_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeStarClient](./client.md)
+2. paginator: [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
+3. item: [:material-code-braces: ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef) 
 
 
 ### paginate

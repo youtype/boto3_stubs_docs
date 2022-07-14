@@ -2139,11 +2139,11 @@ def create_flow_logs(
     *,
     ResourceIds: Sequence[str],
     ResourceType: FlowLogsResourceTypeType,  # (1)
-    TrafficType: TrafficTypeType,  # (2)
     DryRun: bool = ...,
     ClientToken: str = ...,
     DeliverLogsPermissionArn: str = ...,
     LogGroupName: str = ...,
+    TrafficType: TrafficTypeType = ...,  # (2)
     LogDestinationType: LogDestinationTypeType = ...,  # (3)
     LogDestination: str = ...,
     LogFormat: str = ...,
@@ -2166,7 +2166,6 @@ def create_flow_logs(
 kwargs: CreateFlowLogsRequestRequestTypeDef = {  # (1)
     "ResourceIds": ...,
     "ResourceType": ...,
-    "TrafficType": ...,
 }
 
 parent.create_flow_logs(**kwargs)

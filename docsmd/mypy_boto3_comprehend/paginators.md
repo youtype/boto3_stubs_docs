@@ -21,6 +21,23 @@ def get_list_document_classification_jobs_paginator() -> ListDocumentClassificat
     return Session().client("comprehend").get_paginator("list_document_classification_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListDocumentClassificationJobsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListDocumentClassificationJobsPaginator = client.get_paginator("list_document_classification_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListDocumentClassificationJobsPaginator](./paginators.md#listdocumentclassificationjobspaginator)
+3. item: [:material-code-braces: ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_comprehend.paginator import ListDocumentClassifiersPaginator
 def get_list_document_classifiers_paginator() -> ListDocumentClassifiersPaginator:
     return Session().client("comprehend").get_paginator("list_document_classifiers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListDocumentClassifiersPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListDocumentClassifiersPaginator = client.get_paginator("list_document_classifiers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListDocumentClassifiersPaginator](./paginators.md#listdocumentclassifierspaginator)
+3. item: [:material-code-braces: ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_list_dominant_language_detection_jobs_paginator() -> ListDominantLanguag
     return Session().client("comprehend").get_paginator("list_dominant_language_detection_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListDominantLanguageDetectionJobsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListDominantLanguageDetectionJobsPaginator = client.get_paginator("list_dominant_language_detection_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListDominantLanguageDetectionJobsPaginator](./paginators.md#listdominantlanguagedetectionjobspaginator)
+3. item: [:material-code-braces: ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_comprehend.paginator import ListEntitiesDetectionJobsPaginator
 def get_list_entities_detection_jobs_paginator() -> ListEntitiesDetectionJobsPaginator:
     return Session().client("comprehend").get_paginator("list_entities_detection_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListEntitiesDetectionJobsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListEntitiesDetectionJobsPaginator = client.get_paginator("list_entities_detection_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListEntitiesDetectionJobsPaginator](./paginators.md#listentitiesdetectionjobspaginator)
+3. item: [:material-code-braces: ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ def get_list_entity_recognizers_paginator() -> ListEntityRecognizersPaginator:
     return Session().client("comprehend").get_paginator("list_entity_recognizers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListEntityRecognizersPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListEntityRecognizersPaginator = client.get_paginator("list_entity_recognizers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListEntityRecognizersPaginator](./paginators.md#listentityrecognizerspaginator)
+3. item: [:material-code-braces: ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef) 
+
 
 ### paginate
 
@@ -235,6 +320,23 @@ from mypy_boto3_comprehend.paginator import ListKeyPhrasesDetectionJobsPaginator
 def get_list_key_phrases_detection_jobs_paginator() -> ListKeyPhrasesDetectionJobsPaginator:
     return Session().client("comprehend").get_paginator("list_key_phrases_detection_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListKeyPhrasesDetectionJobsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListKeyPhrasesDetectionJobsPaginator = client.get_paginator("list_key_phrases_detection_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListKeyPhrasesDetectionJobsPaginator](./paginators.md#listkeyphrasesdetectionjobspaginator)
+3. item: [:material-code-braces: ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef) 
 
 
 ### paginate
@@ -279,6 +381,23 @@ def get_list_sentiment_detection_jobs_paginator() -> ListSentimentDetectionJobsP
     return Session().client("comprehend").get_paginator("list_sentiment_detection_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListSentimentDetectionJobsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListSentimentDetectionJobsPaginator = client.get_paginator("list_sentiment_detection_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListSentimentDetectionJobsPaginator](./paginators.md#listsentimentdetectionjobspaginator)
+3. item: [:material-code-braces: ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -321,6 +440,23 @@ from mypy_boto3_comprehend.paginator import ListTopicsDetectionJobsPaginator
 def get_list_topics_detection_jobs_paginator() -> ListTopicsDetectionJobsPaginator:
     return Session().client("comprehend").get_paginator("list_topics_detection_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListTopicsDetectionJobsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListTopicsDetectionJobsPaginator = client.get_paginator("list_topics_detection_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListTopicsDetectionJobsPaginator](./paginators.md#listtopicsdetectionjobspaginator)
+3. item: [:material-code-braces: ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef) 
 
 
 ### paginate

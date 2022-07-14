@@ -21,6 +21,23 @@ def get_list_hapgs_paginator() -> ListHapgsPaginator:
     return Session().client("cloudhsm").get_paginator("list_hapgs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudhsm.paginator import ListHapgsPaginator
+
+session = Session()
+
+client = Session().client("cloudhsm")  # (1)
+paginator: ListHapgsPaginator = client.get_paginator("list_hapgs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudHSMClient](./client.md)
+2. paginator: [ListHapgsPaginator](./paginators.md#listhapgspaginator)
+3. item: [:material-code-braces: ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ def get_list_hsms_paginator() -> ListHsmsPaginator:
     return Session().client("cloudhsm").get_paginator("list_hsms")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudhsm.paginator import ListHsmsPaginator
+
+session = Session()
+
+client = Session().client("cloudhsm")  # (1)
+paginator: ListHsmsPaginator = client.get_paginator("list_hsms")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudHSMClient](./client.md)
+2. paginator: [ListHsmsPaginator](./paginators.md#listhsmspaginator)
+3. item: [:material-code-braces: ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef) 
+
 
 ### paginate
 
@@ -102,6 +136,23 @@ from mypy_boto3_cloudhsm.paginator import ListLunaClientsPaginator
 def get_list_luna_clients_paginator() -> ListLunaClientsPaginator:
     return Session().client("cloudhsm").get_paginator("list_luna_clients")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudhsm.paginator import ListLunaClientsPaginator
+
+session = Session()
+
+client = Session().client("cloudhsm")  # (1)
+paginator: ListLunaClientsPaginator = client.get_paginator("list_luna_clients")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudHSMClient](./client.md)
+2. paginator: [ListLunaClientsPaginator](./paginators.md#listlunaclientspaginator)
+3. item: [:material-code-braces: ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef) 
 
 
 ### paginate

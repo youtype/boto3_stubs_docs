@@ -21,6 +21,23 @@ def get_list_event_types_paginator() -> ListEventTypesPaginator:
     return Session().client("codestar-notifications").get_paginator("list_event_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codestar_notifications.paginator import ListEventTypesPaginator
+
+session = Session()
+
+client = Session().client("codestar-notifications")  # (1)
+paginator: ListEventTypesPaginator = client.get_paginator("list_event_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeStarNotificationsClient](./client.md)
+2. paginator: [ListEventTypesPaginator](./paginators.md#listeventtypespaginator)
+3. item: [:material-code-braces: ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_notification_rules_paginator() -> ListNotificationRulesPaginator:
     return Session().client("codestar-notifications").get_paginator("list_notification_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codestar_notifications.paginator import ListNotificationRulesPaginator
+
+session = Session()
+
+client = Session().client("codestar-notifications")  # (1)
+paginator: ListNotificationRulesPaginator = client.get_paginator("list_notification_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeStarNotificationsClient](./client.md)
+2. paginator: [ListNotificationRulesPaginator](./paginators.md#listnotificationrulespaginator)
+3. item: [:material-code-braces: ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_codestar_notifications.paginator import ListTargetsPaginator
 def get_list_targets_paginator() -> ListTargetsPaginator:
     return Session().client("codestar-notifications").get_paginator("list_targets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codestar_notifications.paginator import ListTargetsPaginator
+
+session = Session()
+
+client = Session().client("codestar-notifications")  # (1)
+paginator: ListTargetsPaginator = client.get_paginator("list_targets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeStarNotificationsClient](./client.md)
+2. paginator: [ListTargetsPaginator](./paginators.md#listtargetspaginator)
+3. item: [:material-code-braces: ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef) 
 
 
 ### paginate

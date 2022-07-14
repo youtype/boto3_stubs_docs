@@ -21,6 +21,23 @@ def get_list_application_dependencies_paginator() -> ListApplicationDependencies
     return Session().client("serverlessrepo").get_paginator("list_application_dependencies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator
+
+session = Session()
+
+client = Session().client("serverlessrepo")  # (1)
+paginator: ListApplicationDependenciesPaginator = client.get_paginator("list_application_dependencies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServerlessApplicationRepositoryClient](./client.md)
+2. paginator: [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
+3. item: [:material-code-braces: ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_application_versions_paginator() -> ListApplicationVersionsPaginato
     return Session().client("serverlessrepo").get_paginator("list_application_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_serverlessrepo.paginator import ListApplicationVersionsPaginator
+
+session = Session()
+
+client = Session().client("serverlessrepo")  # (1)
+paginator: ListApplicationVersionsPaginator = client.get_paginator("list_application_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServerlessApplicationRepositoryClient](./client.md)
+2. paginator: [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
+3. item: [:material-code-braces: ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_serverlessrepo.paginator import ListApplicationsPaginator
 def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("serverlessrepo").get_paginator("list_applications")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_serverlessrepo.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("serverlessrepo")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ServerlessApplicationRepositoryClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_list_cluster_operations_paginator() -> ListClusterOperationsPaginator:
     return Session().client("kafka").get_paginator("list_cluster_operations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListClusterOperationsPaginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListClusterOperationsPaginator = client.get_paginator("list_cluster_operations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListClusterOperationsPaginator](./paginators.md#listclusteroperationspaginator)
+3. item: [:material-code-braces: ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return Session().client("kafka").get_paginator("list_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListClustersPaginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListClustersPaginator = client.get_paginator("list_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListClustersPaginator](./paginators.md#listclusterspaginator)
+3. item: [:material-code-braces: ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_kafka.paginator import ListClustersV2Paginator
 def get_list_clusters_v2_paginator() -> ListClustersV2Paginator:
     return Session().client("kafka").get_paginator("list_clusters_v2")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListClustersV2Paginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListClustersV2Paginator = client.get_paginator("list_clusters_v2")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListClustersV2Paginator](./paginators.md#listclustersv2paginator)
+3. item: [:material-code-braces: ListClustersV2ResponseTypeDef](./type_defs.md#listclustersv2responsetypedef) 
 
 
 ### paginate
@@ -148,6 +199,23 @@ def get_list_configuration_revisions_paginator() -> ListConfigurationRevisionsPa
     return Session().client("kafka").get_paginator("list_configuration_revisions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListConfigurationRevisionsPaginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListConfigurationRevisionsPaginator = client.get_paginator("list_configuration_revisions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListConfigurationRevisionsPaginator](./paginators.md#listconfigurationrevisionspaginator)
+3. item: [:material-code-braces: ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef) 
+
 
 ### paginate
 
@@ -190,6 +258,23 @@ def get_list_configurations_paginator() -> ListConfigurationsPaginator:
     return Session().client("kafka").get_paginator("list_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListConfigurationsPaginator = client.get_paginator("list_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
+3. item: [:material-code-braces: ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef) 
+
 
 ### paginate
 
@@ -230,6 +315,23 @@ from mypy_boto3_kafka.paginator import ListKafkaVersionsPaginator
 def get_list_kafka_versions_paginator() -> ListKafkaVersionsPaginator:
     return Session().client("kafka").get_paginator("list_kafka_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListKafkaVersionsPaginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListKafkaVersionsPaginator = client.get_paginator("list_kafka_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListKafkaVersionsPaginator](./paginators.md#listkafkaversionspaginator)
+3. item: [:material-code-braces: ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef) 
 
 
 ### paginate
@@ -272,6 +374,23 @@ def get_list_nodes_paginator() -> ListNodesPaginator:
     return Session().client("kafka").get_paginator("list_nodes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListNodesPaginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListNodesPaginator = client.get_paginator("list_nodes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListNodesPaginator](./paginators.md#listnodespaginator)
+3. item: [:material-code-braces: ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef) 
+
 
 ### paginate
 
@@ -313,6 +432,23 @@ from mypy_boto3_kafka.paginator import ListScramSecretsPaginator
 def get_list_scram_secrets_paginator() -> ListScramSecretsPaginator:
     return Session().client("kafka").get_paginator("list_scram_secrets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kafka.paginator import ListScramSecretsPaginator
+
+session = Session()
+
+client = Session().client("kafka")  # (1)
+paginator: ListScramSecretsPaginator = client.get_paginator("list_scram_secrets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KafkaClient](./client.md)
+2. paginator: [ListScramSecretsPaginator](./paginators.md#listscramsecretspaginator)
+3. item: [:material-code-braces: ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef) 
 
 
 ### paginate

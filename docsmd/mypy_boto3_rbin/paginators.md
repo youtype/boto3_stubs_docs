@@ -21,6 +21,23 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return Session().client("rbin").get_paginator("list_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rbin.paginator import ListRulesPaginator
+
+session = Session()
+
+client = Session().client("rbin")  # (1)
+paginator: ListRulesPaginator = client.get_paginator("list_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RecycleBinClient](./client.md)
+2. paginator: [ListRulesPaginator](./paginators.md#listrulespaginator)
+3. item: [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+
 
 ### paginate
 

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_ecr.waiter import ImageScanCompleteWaiter
 
-def get_image_scan_complete_waiter() -> ImageScanCompleteWaiter:
-    return Session().client("ecr").get_waiter("image_scan_complete")
+
+session = Session()
+
+client = session.client("ecr")  # (1)
+waiter: ImageScanCompleteWaiter = client.get_waiter("image_scan_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ECRClient](./client.md)
+2. waiter: [ImageScanCompleteWaiter](./waiters.md#imagescancompletewaiter)
 
 
 ### wait
@@ -64,9 +71,16 @@ from boto3.session import Session
 
 from mypy_boto3_ecr.waiter import LifecyclePolicyPreviewCompleteWaiter
 
-def get_lifecycle_policy_preview_complete_waiter() -> LifecyclePolicyPreviewCompleteWaiter:
-    return Session().client("ecr").get_waiter("lifecycle_policy_preview_complete")
+
+session = Session()
+
+client = session.client("ecr")  # (1)
+waiter: LifecyclePolicyPreviewCompleteWaiter = client.get_waiter("lifecycle_policy_preview_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ECRClient](./client.md)
+2. waiter: [LifecyclePolicyPreviewCompleteWaiter](./waiters.md#lifecyclepolicypreviewcompletewaiter)
 
 
 ### wait

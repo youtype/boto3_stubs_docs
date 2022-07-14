@@ -21,6 +21,23 @@ def get_list_data_set_revisions_paginator() -> ListDataSetRevisionsPaginator:
     return Session().client("dataexchange").get_paginator("list_data_set_revisions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator
+
+session = Session()
+
+client = Session().client("dataexchange")  # (1)
+paginator: ListDataSetRevisionsPaginator = client.get_paginator("list_data_set_revisions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataExchangeClient](./client.md)
+2. paginator: [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
+3. item: [:material-code-braces: ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_dataexchange.paginator import ListDataSetsPaginator
 def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return Session().client("dataexchange").get_paginator("list_data_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dataexchange.paginator import ListDataSetsPaginator
+
+session = Session()
+
+client = Session().client("dataexchange")  # (1)
+paginator: ListDataSetsPaginator = client.get_paginator("list_data_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataExchangeClient](./client.md)
+2. paginator: [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_event_actions_paginator() -> ListEventActionsPaginator:
     return Session().client("dataexchange").get_paginator("list_event_actions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dataexchange.paginator import ListEventActionsPaginator
+
+session = Session()
+
+client = Session().client("dataexchange")  # (1)
+paginator: ListEventActionsPaginator = client.get_paginator("list_event_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataExchangeClient](./client.md)
+2. paginator: [ListEventActionsPaginator](./paginators.md#listeventactionspaginator)
+3. item: [:material-code-braces: ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_dataexchange.paginator import ListJobsPaginator
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("dataexchange").get_paginator("list_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dataexchange.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("dataexchange")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataExchangeClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
 
 ### paginate
@@ -189,6 +257,23 @@ from mypy_boto3_dataexchange.paginator import ListRevisionAssetsPaginator
 def get_list_revision_assets_paginator() -> ListRevisionAssetsPaginator:
     return Session().client("dataexchange").get_paginator("list_revision_assets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dataexchange.paginator import ListRevisionAssetsPaginator
+
+session = Session()
+
+client = Session().client("dataexchange")  # (1)
+paginator: ListRevisionAssetsPaginator = client.get_paginator("list_revision_assets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DataExchangeClient](./client.md)
+2. paginator: [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)
+3. item: [:material-code-braces: ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef) 
 
 
 ### paginate

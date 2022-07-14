@@ -21,6 +21,23 @@ def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsP
     return Session().client("neptune").get_paginator("describe_db_cluster_endpoints")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBClusterEndpointsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBClusterEndpointsPaginator = client.get_paginator("describe_db_cluster_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBClusterEndpointsPaginator](./paginators.md#describedbclusterendpointspaginator)
+3. item: [:material-code-braces: DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterPar
     return Session().client("neptune").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBClusterParameterGroupsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBClusterParameterGroupsPaginator = client.get_paginator("describe_db_cluster_parameter_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBClusterParameterGroupsPaginator](./paginators.md#describedbclusterparametergroupspaginator)
+3. item: [:material-code-braces: DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef) 
+
 
 ### paginate
 
@@ -109,6 +143,23 @@ from mypy_boto3_neptune.paginator import DescribeDBClusterParametersPaginator
 def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParametersPaginator:
     return Session().client("neptune").get_paginator("describe_db_cluster_parameters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBClusterParametersPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBClusterParametersPaginator = client.get_paginator("describe_db_cluster_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBClusterParametersPaginator](./paginators.md#describedbclusterparameterspaginator)
+3. item: [:material-code-braces: DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef) 
 
 
 ### paginate
@@ -154,6 +205,23 @@ from mypy_boto3_neptune.paginator import DescribeDBClusterSnapshotsPaginator
 def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsPaginator:
     return Session().client("neptune").get_paginator("describe_db_cluster_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBClusterSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBClusterSnapshotsPaginator = client.get_paginator("describe_db_cluster_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBClusterSnapshotsPaginator](./paginators.md#describedbclustersnapshotspaginator)
+3. item: [:material-code-braces: DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef) 
 
 
 ### paginate
@@ -203,6 +271,23 @@ def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return Session().client("neptune").get_paginator("describe_db_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBClustersPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBClustersPaginator = client.get_paginator("describe_db_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBClustersPaginator](./paginators.md#describedbclusterspaginator)
+3. item: [:material-code-braces: DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef) 
+
 
 ### paginate
 
@@ -246,6 +331,23 @@ from mypy_boto3_neptune.paginator import DescribeDBEngineVersionsPaginator
 def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPaginator:
     return Session().client("neptune").get_paginator("describe_db_engine_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBEngineVersionsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBEngineVersionsPaginator = client.get_paginator("describe_db_engine_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBEngineVersionsPaginator](./paginators.md#describedbengineversionspaginator)
+3. item: [:material-code-braces: DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef) 
 
 
 ### paginate
@@ -296,6 +398,23 @@ def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return Session().client("neptune").get_paginator("describe_db_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBInstancesPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBInstancesPaginator = client.get_paginator("describe_db_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBInstancesPaginator](./paginators.md#describedbinstancespaginator)
+3. item: [:material-code-braces: DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef) 
+
 
 ### paginate
 
@@ -340,6 +459,23 @@ def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPag
     return Session().client("neptune").get_paginator("describe_db_parameter_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBParameterGroupsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBParameterGroupsPaginator = client.get_paginator("describe_db_parameter_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBParameterGroupsPaginator](./paginators.md#describedbparametergroupspaginator)
+3. item: [:material-code-braces: DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef) 
+
 
 ### paginate
 
@@ -383,6 +519,23 @@ from mypy_boto3_neptune.paginator import DescribeDBParametersPaginator
 def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
     return Session().client("neptune").get_paginator("describe_db_parameters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBParametersPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBParametersPaginator = client.get_paginator("describe_db_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBParametersPaginator](./paginators.md#describedbparameterspaginator)
+3. item: [:material-code-braces: DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef) 
 
 
 ### paginate
@@ -429,6 +582,23 @@ def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator
     return Session().client("neptune").get_paginator("describe_db_subnet_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeDBSubnetGroupsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeDBSubnetGroupsPaginator = client.get_paginator("describe_db_subnet_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeDBSubnetGroupsPaginator](./paginators.md#describedbsubnetgroupspaginator)
+3. item: [:material-code-braces: DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef) 
+
 
 ### paginate
 
@@ -472,6 +642,23 @@ from mypy_boto3_neptune.paginator import DescribeEngineDefaultParametersPaginato
 def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultParametersPaginator:
     return Session().client("neptune").get_paginator("describe_engine_default_parameters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeEngineDefaultParametersPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeEngineDefaultParametersPaginator = client.get_paginator("describe_engine_default_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeEngineDefaultParametersPaginator](./paginators.md#describeenginedefaultparameterspaginator)
+3. item: [:material-code-braces: DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef) 
 
 
 ### paginate
@@ -517,6 +704,23 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return Session().client("neptune").get_paginator("describe_event_subscriptions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeEventSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeEventSubscriptionsPaginator = client.get_paginator("describe_event_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+3. item: [:material-code-braces: EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef) 
+
 
 ### paginate
 
@@ -560,6 +764,23 @@ from mypy_boto3_neptune.paginator import DescribeEventsPaginator
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("neptune").get_paginator("describe_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef) 
 
 
 ### paginate
@@ -611,6 +832,23 @@ def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableD
     return Session().client("neptune").get_paginator("describe_orderable_db_instance_options")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeOrderableDBInstanceOptionsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeOrderableDBInstanceOptionsPaginator = client.get_paginator("describe_orderable_db_instance_options")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
+3. item: [:material-code-braces: OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef) 
+
 
 ### paginate
 
@@ -658,6 +896,23 @@ from mypy_boto3_neptune.paginator import DescribePendingMaintenanceActionsPagina
 def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaintenanceActionsPaginator:
     return Session().client("neptune").get_paginator("describe_pending_maintenance_actions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribePendingMaintenanceActionsPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribePendingMaintenanceActionsPaginator = client.get_paginator("describe_pending_maintenance_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
+3. item: [:material-code-braces: PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef) 
 
 
 ### paginate

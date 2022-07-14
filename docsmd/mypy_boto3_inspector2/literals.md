@@ -215,6 +215,38 @@ Ec2PlatformType = Literal[
     "WINDOWS",
 ]
 ```
+## EcrRescanDurationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import EcrRescanDurationStatusType
+
+def get_value() -> EcrRescanDurationStatusType:
+    return "FAILED"
+```
+
+```python title="Definition"
+EcrRescanDurationStatusType = Literal[
+    "FAILED",
+    "PENDING",
+    "SUCCESS",
+]
+```
+## EcrRescanDurationType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import EcrRescanDurationType
+
+def get_value() -> EcrRescanDurationType:
+    return "DAYS_180"
+```
+
+```python title="Definition"
+EcrRescanDurationType = Literal[
+    "DAYS_180",
+    "DAYS_30",
+    "LIFETIME",
+]
+```
 ## EcrScanFrequencyType
 
 ```python title="Usage Example"
@@ -243,6 +275,7 @@ def get_value() -> ErrorCodeType:
 ```python title="Definition"
 ErrorCodeType = Literal[
     "ACCESS_DENIED",
+    "ACCOUNT_IS_ISOLATED",
     "ALREADY_ENABLED",
     "DISABLE_IN_PROGRESS",
     "DISASSOCIATE_ALL_MEMBERS",
@@ -604,11 +637,15 @@ PackageManagerType = Literal[
     "GOBINARY",
     "GOMOD",
     "JAR",
+    "NODEPKG",
     "NPM",
     "NUGET",
     "OS",
+    "PIP",
     "PIPENV",
     "POETRY",
+    "POM",
+    "PYTHONPKG",
     "YARN",
 ]
 ```
@@ -674,13 +711,17 @@ ReportFormatType = Literal[
 from mypy_boto3_inspector2.literals import ReportingErrorCodeType
 
 def get_value() -> ReportingErrorCodeType:
-    return "INTERNAL_ERROR"
+    return "BUCKET_NOT_FOUND"
 ```
 
 ```python title="Definition"
 ReportingErrorCodeType = Literal[
+    "BUCKET_NOT_FOUND",
+    "INCOMPATIBLE_BUCKET_REGION",
     "INTERNAL_ERROR",
     "INVALID_PERMISSIONS",
+    "MALFORMED_KMS_KEY",
+    "NO_FINDINGS_FOUND",
 ]
 ```
 ## RepositorySortByType
@@ -762,6 +803,7 @@ ScanStatusReasonType = Literal[
     "IMAGE_SIZE_EXCEEDED",
     "INTERNAL_ERROR",
     "NO_RESOURCES_FOUND",
+    "PENDING_DISABLE",
     "PENDING_INITIAL_SCAN",
     "RESOURCE_TERMINATED",
     "SCAN_ELIGIBILITY_EXPIRED",

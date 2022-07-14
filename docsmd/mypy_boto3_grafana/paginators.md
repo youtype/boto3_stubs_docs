@@ -21,6 +21,23 @@ def get_list_permissions_paginator() -> ListPermissionsPaginator:
     return Session().client("grafana").get_paginator("list_permissions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_grafana.paginator import ListPermissionsPaginator
+
+session = Session()
+
+client = Session().client("grafana")  # (1)
+paginator: ListPermissionsPaginator = client.get_paginator("list_permissions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ManagedGrafanaClient](./client.md)
+2. paginator: [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
+3. item: [:material-code-braces: ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ from mypy_boto3_grafana.paginator import ListWorkspacesPaginator
 def get_list_workspaces_paginator() -> ListWorkspacesPaginator:
     return Session().client("grafana").get_paginator("list_workspaces")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_grafana.paginator import ListWorkspacesPaginator
+
+session = Session()
+
+client = Session().client("grafana")  # (1)
+paginator: ListWorkspacesPaginator = client.get_paginator("list_workspaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ManagedGrafanaClient](./client.md)
+2. paginator: [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+3. item: [:material-code-braces: ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef) 
 
 
 ### paginate

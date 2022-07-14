@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_opsworkscm.waiter import NodeAssociatedWaiter
 
-def get_node_associated_waiter() -> NodeAssociatedWaiter:
-    return Session().client("opsworkscm").get_waiter("node_associated")
+
+session = Session()
+
+client = session.client("opsworkscm")  # (1)
+waiter: NodeAssociatedWaiter = client.get_waiter("node_associated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [OpsWorksCMClient](./client.md)
+2. waiter: [NodeAssociatedWaiter](./waiters.md#nodeassociatedwaiter)
 
 
 ### wait

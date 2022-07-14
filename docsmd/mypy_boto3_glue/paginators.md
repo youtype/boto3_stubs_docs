@@ -21,6 +21,23 @@ def get_get_classifiers_paginator() -> GetClassifiersPaginator:
     return Session().client("glue").get_paginator("get_classifiers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetClassifiersPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetClassifiersPaginator = client.get_paginator("get_classifiers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetClassifiersPaginator](./paginators.md#getclassifierspaginator)
+3. item: [:material-code-braces: GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_glue.paginator import GetConnectionsPaginator
 def get_get_connections_paginator() -> GetConnectionsPaginator:
     return Session().client("glue").get_paginator("get_connections")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetConnectionsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetConnectionsPaginator = client.get_paginator("get_connections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+3. item: [:material-code-braces: GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_get_crawler_metrics_paginator() -> GetCrawlerMetricsPaginator:
     return Session().client("glue").get_paginator("get_crawler_metrics")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetCrawlerMetricsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetCrawlerMetricsPaginator = client.get_paginator("get_crawler_metrics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetCrawlerMetricsPaginator](./paginators.md#getcrawlermetricspaginator)
+3. item: [:material-code-braces: GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ def get_get_crawlers_paginator() -> GetCrawlersPaginator:
     return Session().client("glue").get_paginator("get_crawlers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetCrawlersPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetCrawlersPaginator = client.get_paginator("get_crawlers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetCrawlersPaginator](./paginators.md#getcrawlerspaginator)
+3. item: [:material-code-braces: GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef) 
+
 
 ### paginate
 
@@ -189,6 +257,23 @@ from mypy_boto3_glue.paginator import GetDatabasesPaginator
 def get_get_databases_paginator() -> GetDatabasesPaginator:
     return Session().client("glue").get_paginator("get_databases")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetDatabasesPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetDatabasesPaginator = client.get_paginator("get_databases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetDatabasesPaginator](./paginators.md#getdatabasespaginator)
+3. item: [:material-code-braces: GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef) 
 
 
 ### paginate
@@ -234,6 +319,23 @@ def get_get_dev_endpoints_paginator() -> GetDevEndpointsPaginator:
     return Session().client("glue").get_paginator("get_dev_endpoints")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetDevEndpointsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetDevEndpointsPaginator = client.get_paginator("get_dev_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetDevEndpointsPaginator](./paginators.md#getdevendpointspaginator)
+3. item: [:material-code-braces: GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef) 
+
 
 ### paginate
 
@@ -274,6 +376,23 @@ from mypy_boto3_glue.paginator import GetJobRunsPaginator
 def get_get_job_runs_paginator() -> GetJobRunsPaginator:
     return Session().client("glue").get_paginator("get_job_runs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetJobRunsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetJobRunsPaginator = client.get_paginator("get_job_runs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetJobRunsPaginator](./paginators.md#getjobrunspaginator)
+3. item: [:material-code-braces: GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef) 
 
 
 ### paginate
@@ -317,6 +436,23 @@ def get_get_jobs_paginator() -> GetJobsPaginator:
     return Session().client("glue").get_paginator("get_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetJobsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetJobsPaginator = client.get_paginator("get_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetJobsPaginator](./paginators.md#getjobspaginator)
+3. item: [:material-code-braces: GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -357,6 +493,23 @@ from mypy_boto3_glue.paginator import GetPartitionIndexesPaginator
 def get_get_partition_indexes_paginator() -> GetPartitionIndexesPaginator:
     return Session().client("glue").get_paginator("get_partition_indexes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetPartitionIndexesPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetPartitionIndexesPaginator = client.get_paginator("get_partition_indexes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetPartitionIndexesPaginator](./paginators.md#getpartitionindexespaginator)
+3. item: [:material-code-braces: GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef) 
 
 
 ### paginate
@@ -402,6 +555,23 @@ from mypy_boto3_glue.paginator import GetPartitionsPaginator
 def get_get_partitions_paginator() -> GetPartitionsPaginator:
     return Session().client("glue").get_paginator("get_partitions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetPartitionsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetPartitionsPaginator = client.get_paginator("get_partitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetPartitionsPaginator](./paginators.md#getpartitionspaginator)
+3. item: [:material-code-braces: GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef) 
 
 
 ### paginate
@@ -454,6 +624,23 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
     return Session().client("glue").get_paginator("get_resource_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetResourcePoliciesPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetResourcePoliciesPaginator = client.get_paginator("get_resource_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
+3. item: [:material-code-braces: GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -495,6 +682,23 @@ def get_get_security_configurations_paginator() -> GetSecurityConfigurationsPagi
     return Session().client("glue").get_paginator("get_security_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetSecurityConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetSecurityConfigurationsPaginator = client.get_paginator("get_security_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetSecurityConfigurationsPaginator](./paginators.md#getsecurityconfigurationspaginator)
+3. item: [:material-code-braces: GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef) 
+
 
 ### paginate
 
@@ -535,6 +739,23 @@ from mypy_boto3_glue.paginator import GetTableVersionsPaginator
 def get_get_table_versions_paginator() -> GetTableVersionsPaginator:
     return Session().client("glue").get_paginator("get_table_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetTableVersionsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetTableVersionsPaginator = client.get_paginator("get_table_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetTableVersionsPaginator](./paginators.md#gettableversionspaginator)
+3. item: [:material-code-braces: GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef) 
 
 
 ### paginate
@@ -580,6 +801,23 @@ from mypy_boto3_glue.paginator import GetTablesPaginator
 def get_get_tables_paginator() -> GetTablesPaginator:
     return Session().client("glue").get_paginator("get_tables")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetTablesPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetTablesPaginator = client.get_paginator("get_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetTablesPaginator](./paginators.md#gettablespaginator)
+3. item: [:material-code-braces: GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef) 
 
 
 ### paginate
@@ -627,6 +865,23 @@ def get_get_triggers_paginator() -> GetTriggersPaginator:
     return Session().client("glue").get_paginator("get_triggers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetTriggersPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetTriggersPaginator = client.get_paginator("get_triggers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetTriggersPaginator](./paginators.md#gettriggerspaginator)
+3. item: [:material-code-braces: GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef) 
+
 
 ### paginate
 
@@ -668,6 +923,23 @@ from mypy_boto3_glue.paginator import GetUserDefinedFunctionsPaginator
 def get_get_user_defined_functions_paginator() -> GetUserDefinedFunctionsPaginator:
     return Session().client("glue").get_paginator("get_user_defined_functions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import GetUserDefinedFunctionsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: GetUserDefinedFunctionsPaginator = client.get_paginator("get_user_defined_functions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [GetUserDefinedFunctionsPaginator](./paginators.md#getuserdefinedfunctionspaginator)
+3. item: [:material-code-braces: GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef) 
 
 
 ### paginate
@@ -713,6 +985,23 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
     return Session().client("glue").get_paginator("list_registries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import ListRegistriesPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: ListRegistriesPaginator = client.get_paginator("list_registries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
+3. item: [:material-code-braces: ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef) 
+
 
 ### paginate
 
@@ -753,6 +1042,23 @@ from mypy_boto3_glue.paginator import ListSchemaVersionsPaginator
 def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
     return Session().client("glue").get_paginator("list_schema_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import ListSchemaVersionsPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: ListSchemaVersionsPaginator = client.get_paginator("list_schema_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
+3. item: [:material-code-braces: ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef) 
 
 
 ### paginate
@@ -796,6 +1102,23 @@ from mypy_boto3_glue.paginator import ListSchemasPaginator
 def get_list_schemas_paginator() -> ListSchemasPaginator:
     return Session().client("glue").get_paginator("list_schemas")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glue.paginator import ListSchemasPaginator
+
+session = Session()
+
+client = Session().client("glue")  # (1)
+paginator: ListSchemasPaginator = client.get_paginator("list_schemas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlueClient](./client.md)
+2. paginator: [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+3. item: [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
 
 ### paginate

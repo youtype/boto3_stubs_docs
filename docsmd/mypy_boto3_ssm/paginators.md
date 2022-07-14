@@ -21,6 +21,23 @@ def get_describe_activations_paginator() -> DescribeActivationsPaginator:
     return Session().client("ssm").get_paginator("describe_activations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeActivationsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeActivationsPaginator = client.get_paginator("describe_activations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeActivationsPaginator](./paginators.md#describeactivationspaginator)
+3. item: [:material-code-braces: DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_ssm.paginator import DescribeAssociationExecutionTargetsPaginato
 def get_describe_association_execution_targets_paginator() -> DescribeAssociationExecutionTargetsPaginator:
     return Session().client("ssm").get_paginator("describe_association_execution_targets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeAssociationExecutionTargetsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeAssociationExecutionTargetsPaginator = client.get_paginator("describe_association_execution_targets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeAssociationExecutionTargetsPaginator](./paginators.md#describeassociationexecutiontargetspaginator)
+3. item: [:material-code-braces: DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef) 
 
 
 ### paginate
@@ -110,6 +144,23 @@ def get_describe_association_executions_paginator() -> DescribeAssociationExecut
     return Session().client("ssm").get_paginator("describe_association_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeAssociationExecutionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeAssociationExecutionsPaginator = client.get_paginator("describe_association_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeAssociationExecutionsPaginator](./paginators.md#describeassociationexecutionspaginator)
+3. item: [:material-code-braces: DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef) 
+
 
 ### paginate
 
@@ -154,6 +205,23 @@ def get_describe_automation_executions_paginator() -> DescribeAutomationExecutio
     return Session().client("ssm").get_paginator("describe_automation_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeAutomationExecutionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeAutomationExecutionsPaginator = client.get_paginator("describe_automation_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeAutomationExecutionsPaginator](./paginators.md#describeautomationexecutionspaginator)
+3. item: [:material-code-braces: DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef) 
+
 
 ### paginate
 
@@ -196,6 +264,23 @@ from mypy_boto3_ssm.paginator import DescribeAutomationStepExecutionsPaginator
 def get_describe_automation_step_executions_paginator() -> DescribeAutomationStepExecutionsPaginator:
     return Session().client("ssm").get_paginator("describe_automation_step_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeAutomationStepExecutionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeAutomationStepExecutionsPaginator = client.get_paginator("describe_automation_step_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeAutomationStepExecutionsPaginator](./paginators.md#describeautomationstepexecutionspaginator)
+3. item: [:material-code-braces: DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef) 
 
 
 ### paginate
@@ -242,6 +327,23 @@ def get_describe_available_patches_paginator() -> DescribeAvailablePatchesPagina
     return Session().client("ssm").get_paginator("describe_available_patches")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeAvailablePatchesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeAvailablePatchesPaginator = client.get_paginator("describe_available_patches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeAvailablePatchesPaginator](./paginators.md#describeavailablepatchespaginator)
+3. item: [:material-code-braces: DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef) 
+
 
 ### paginate
 
@@ -285,6 +387,23 @@ def get_describe_effective_instance_associations_paginator() -> DescribeEffectiv
     return Session().client("ssm").get_paginator("describe_effective_instance_associations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeEffectiveInstanceAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeEffectiveInstanceAssociationsPaginator = client.get_paginator("describe_effective_instance_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeEffectiveInstanceAssociationsPaginator](./paginators.md#describeeffectiveinstanceassociationspaginator)
+3. item: [:material-code-braces: DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef) 
+
 
 ### paginate
 
@@ -326,6 +445,23 @@ from mypy_boto3_ssm.paginator import DescribeEffectivePatchesForPatchBaselinePag
 def get_describe_effective_patches_for_patch_baseline_paginator() -> DescribeEffectivePatchesForPatchBaselinePaginator:
     return Session().client("ssm").get_paginator("describe_effective_patches_for_patch_baseline")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeEffectivePatchesForPatchBaselinePaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeEffectivePatchesForPatchBaselinePaginator = client.get_paginator("describe_effective_patches_for_patch_baseline")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeEffectivePatchesForPatchBaselinePaginator](./paginators.md#describeeffectivepatchesforpatchbaselinepaginator)
+3. item: [:material-code-braces: DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef) 
 
 
 ### paginate
@@ -369,6 +505,23 @@ def get_describe_instance_associations_status_paginator() -> DescribeInstanceAss
     return Session().client("ssm").get_paginator("describe_instance_associations_status")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeInstanceAssociationsStatusPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeInstanceAssociationsStatusPaginator = client.get_paginator("describe_instance_associations_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeInstanceAssociationsStatusPaginator](./paginators.md#describeinstanceassociationsstatuspaginator)
+3. item: [:material-code-braces: DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef) 
+
 
 ### paginate
 
@@ -410,6 +563,23 @@ from mypy_boto3_ssm.paginator import DescribeInstanceInformationPaginator
 def get_describe_instance_information_paginator() -> DescribeInstanceInformationPaginator:
     return Session().client("ssm").get_paginator("describe_instance_information")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeInstanceInformationPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeInstanceInformationPaginator = client.get_paginator("describe_instance_information")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeInstanceInformationPaginator](./paginators.md#describeinstanceinformationpaginator)
+3. item: [:material-code-braces: DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef) 
 
 
 ### paginate
@@ -456,6 +626,23 @@ def get_describe_instance_patch_states_paginator() -> DescribeInstancePatchState
     return Session().client("ssm").get_paginator("describe_instance_patch_states")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeInstancePatchStatesPaginator = client.get_paginator("describe_instance_patch_states")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeInstancePatchStatesPaginator](./paginators.md#describeinstancepatchstatespaginator)
+3. item: [:material-code-braces: DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef) 
+
 
 ### paginate
 
@@ -497,6 +684,23 @@ from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesForPatchGroupPag
 def get_describe_instance_patch_states_for_patch_group_paginator() -> DescribeInstancePatchStatesForPatchGroupPaginator:
     return Session().client("ssm").get_paginator("describe_instance_patch_states_for_patch_group")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesForPatchGroupPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeInstancePatchStatesForPatchGroupPaginator = client.get_paginator("describe_instance_patch_states_for_patch_group")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeInstancePatchStatesForPatchGroupPaginator](./paginators.md#describeinstancepatchstatesforpatchgrouppaginator)
+3. item: [:material-code-braces: DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef) 
 
 
 ### paginate
@@ -542,6 +746,23 @@ def get_describe_instance_patches_paginator() -> DescribeInstancePatchesPaginato
     return Session().client("ssm").get_paginator("describe_instance_patches")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeInstancePatchesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeInstancePatchesPaginator = client.get_paginator("describe_instance_patches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeInstancePatchesPaginator](./paginators.md#describeinstancepatchespaginator)
+3. item: [:material-code-braces: DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef) 
+
 
 ### paginate
 
@@ -586,6 +807,23 @@ def get_describe_inventory_deletions_paginator() -> DescribeInventoryDeletionsPa
     return Session().client("ssm").get_paginator("describe_inventory_deletions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeInventoryDeletionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeInventoryDeletionsPaginator = client.get_paginator("describe_inventory_deletions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeInventoryDeletionsPaginator](./paginators.md#describeinventorydeletionspaginator)
+3. item: [:material-code-braces: DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef) 
+
 
 ### paginate
 
@@ -627,6 +865,23 @@ from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTaskInvoc
 def get_describe_maintenance_window_execution_task_invocations_paginator() -> DescribeMaintenanceWindowExecutionTaskInvocationsPaginator:
     return Session().client("ssm").get_paginator("describe_maintenance_window_execution_task_invocations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowExecutionTaskInvocationsPaginator = client.get_paginator("describe_maintenance_window_execution_task_invocations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowExecutionTaskInvocationsPaginator](./paginators.md#describemaintenancewindowexecutiontaskinvocationspaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef) 
 
 
 ### paginate
@@ -674,6 +929,23 @@ def get_describe_maintenance_window_execution_tasks_paginator() -> DescribeMaint
     return Session().client("ssm").get_paginator("describe_maintenance_window_execution_tasks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTasksPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowExecutionTasksPaginator = client.get_paginator("describe_maintenance_window_execution_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowExecutionTasksPaginator](./paginators.md#describemaintenancewindowexecutiontaskspaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef) 
+
 
 ### paginate
 
@@ -718,6 +990,23 @@ def get_describe_maintenance_window_executions_paginator() -> DescribeMaintenanc
     return Session().client("ssm").get_paginator("describe_maintenance_window_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowExecutionsPaginator = client.get_paginator("describe_maintenance_window_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowExecutionsPaginator](./paginators.md#describemaintenancewindowexecutionspaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef) 
+
 
 ### paginate
 
@@ -761,6 +1050,23 @@ from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowSchedulePaginator
 def get_describe_maintenance_window_schedule_paginator() -> DescribeMaintenanceWindowSchedulePaginator:
     return Session().client("ssm").get_paginator("describe_maintenance_window_schedule")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowSchedulePaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowSchedulePaginator = client.get_paginator("describe_maintenance_window_schedule")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowSchedulePaginator](./paginators.md#describemaintenancewindowschedulepaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef) 
 
 
 ### paginate
@@ -810,6 +1116,23 @@ def get_describe_maintenance_window_targets_paginator() -> DescribeMaintenanceWi
     return Session().client("ssm").get_paginator("describe_maintenance_window_targets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTargetsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowTargetsPaginator = client.get_paginator("describe_maintenance_window_targets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowTargetsPaginator](./paginators.md#describemaintenancewindowtargetspaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef) 
+
 
 ### paginate
 
@@ -853,6 +1176,23 @@ from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTasksPaginator
 def get_describe_maintenance_window_tasks_paginator() -> DescribeMaintenanceWindowTasksPaginator:
     return Session().client("ssm").get_paginator("describe_maintenance_window_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTasksPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowTasksPaginator = client.get_paginator("describe_maintenance_window_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowTasksPaginator](./paginators.md#describemaintenancewindowtaskspaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef) 
 
 
 ### paginate
@@ -898,6 +1238,23 @@ def get_describe_maintenance_windows_paginator() -> DescribeMaintenanceWindowsPa
     return Session().client("ssm").get_paginator("describe_maintenance_windows")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowsPaginator = client.get_paginator("describe_maintenance_windows")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowsPaginator](./paginators.md#describemaintenancewindowspaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef) 
+
 
 ### paginate
 
@@ -940,6 +1297,23 @@ from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsForTargetPaginato
 def get_describe_maintenance_windows_for_target_paginator() -> DescribeMaintenanceWindowsForTargetPaginator:
     return Session().client("ssm").get_paginator("describe_maintenance_windows_for_target")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsForTargetPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeMaintenanceWindowsForTargetPaginator = client.get_paginator("describe_maintenance_windows_for_target")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeMaintenanceWindowsForTargetPaginator](./paginators.md#describemaintenancewindowsfortargetpaginator)
+3. item: [:material-code-braces: DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef) 
 
 
 ### paginate
@@ -987,6 +1361,23 @@ def get_describe_ops_items_paginator() -> DescribeOpsItemsPaginator:
     return Session().client("ssm").get_paginator("describe_ops_items")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeOpsItemsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeOpsItemsPaginator = client.get_paginator("describe_ops_items")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeOpsItemsPaginator](./paginators.md#describeopsitemspaginator)
+3. item: [:material-code-braces: DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef) 
+
 
 ### paginate
 
@@ -1029,6 +1420,23 @@ from mypy_boto3_ssm.paginator import DescribeParametersPaginator
 def get_describe_parameters_paginator() -> DescribeParametersPaginator:
     return Session().client("ssm").get_paginator("describe_parameters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeParametersPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeParametersPaginator = client.get_paginator("describe_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
+3. item: [:material-code-braces: DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef) 
 
 
 ### paginate
@@ -1075,6 +1483,23 @@ def get_describe_patch_baselines_paginator() -> DescribePatchBaselinesPaginator:
     return Session().client("ssm").get_paginator("describe_patch_baselines")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribePatchBaselinesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribePatchBaselinesPaginator = client.get_paginator("describe_patch_baselines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribePatchBaselinesPaginator](./paginators.md#describepatchbaselinespaginator)
+3. item: [:material-code-braces: DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef) 
+
 
 ### paginate
 
@@ -1118,6 +1543,23 @@ def get_describe_patch_groups_paginator() -> DescribePatchGroupsPaginator:
     return Session().client("ssm").get_paginator("describe_patch_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribePatchGroupsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribePatchGroupsPaginator = client.get_paginator("describe_patch_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribePatchGroupsPaginator](./paginators.md#describepatchgroupspaginator)
+3. item: [:material-code-braces: DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef) 
+
 
 ### paginate
 
@@ -1160,6 +1602,23 @@ from mypy_boto3_ssm.paginator import DescribePatchPropertiesPaginator
 def get_describe_patch_properties_paginator() -> DescribePatchPropertiesPaginator:
     return Session().client("ssm").get_paginator("describe_patch_properties")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribePatchPropertiesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribePatchPropertiesPaginator = client.get_paginator("describe_patch_properties")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribePatchPropertiesPaginator](./paginators.md#describepatchpropertiespaginator)
+3. item: [:material-code-braces: DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef) 
 
 
 ### paginate
@@ -1209,6 +1668,23 @@ def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
     return Session().client("ssm").get_paginator("describe_sessions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import DescribeSessionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: DescribeSessionsPaginator = client.get_paginator("describe_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [DescribeSessionsPaginator](./paginators.md#describesessionspaginator)
+3. item: [:material-code-braces: DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef) 
+
 
 ### paginate
 
@@ -1253,6 +1729,23 @@ from mypy_boto3_ssm.paginator import GetInventoryPaginator
 def get_get_inventory_paginator() -> GetInventoryPaginator:
     return Session().client("ssm").get_paginator("get_inventory")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import GetInventoryPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: GetInventoryPaginator = client.get_paginator("get_inventory")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [GetInventoryPaginator](./paginators.md#getinventorypaginator)
+3. item: [:material-code-braces: GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef) 
 
 
 ### paginate
@@ -1301,6 +1794,23 @@ def get_get_inventory_schema_paginator() -> GetInventorySchemaPaginator:
     return Session().client("ssm").get_paginator("get_inventory_schema")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import GetInventorySchemaPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: GetInventorySchemaPaginator = client.get_paginator("get_inventory_schema")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [GetInventorySchemaPaginator](./paginators.md#getinventoryschemapaginator)
+3. item: [:material-code-braces: GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef) 
+
 
 ### paginate
 
@@ -1344,6 +1854,23 @@ from mypy_boto3_ssm.paginator import GetOpsSummaryPaginator
 def get_get_ops_summary_paginator() -> GetOpsSummaryPaginator:
     return Session().client("ssm").get_paginator("get_ops_summary")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import GetOpsSummaryPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: GetOpsSummaryPaginator = client.get_paginator("get_ops_summary")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [GetOpsSummaryPaginator](./paginators.md#getopssummarypaginator)
+3. item: [:material-code-braces: GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef) 
 
 
 ### paginate
@@ -1393,6 +1920,23 @@ def get_get_parameter_history_paginator() -> GetParameterHistoryPaginator:
     return Session().client("ssm").get_paginator("get_parameter_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import GetParameterHistoryPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: GetParameterHistoryPaginator = client.get_paginator("get_parameter_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [GetParameterHistoryPaginator](./paginators.md#getparameterhistorypaginator)
+3. item: [:material-code-braces: GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef) 
+
 
 ### paginate
 
@@ -1435,6 +1979,23 @@ from mypy_boto3_ssm.paginator import GetParametersByPathPaginator
 def get_get_parameters_by_path_paginator() -> GetParametersByPathPaginator:
     return Session().client("ssm").get_paginator("get_parameters_by_path")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import GetParametersByPathPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: GetParametersByPathPaginator = client.get_paginator("get_parameters_by_path")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [GetParametersByPathPaginator](./paginators.md#getparametersbypathpaginator)
+3. item: [:material-code-braces: GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef) 
 
 
 ### paginate
@@ -1482,6 +2043,23 @@ def get_list_association_versions_paginator() -> ListAssociationVersionsPaginato
     return Session().client("ssm").get_paginator("list_association_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListAssociationVersionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListAssociationVersionsPaginator = client.get_paginator("list_association_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListAssociationVersionsPaginator](./paginators.md#listassociationversionspaginator)
+3. item: [:material-code-braces: ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef) 
+
 
 ### paginate
 
@@ -1523,6 +2101,23 @@ from mypy_boto3_ssm.paginator import ListAssociationsPaginator
 def get_list_associations_paginator() -> ListAssociationsPaginator:
     return Session().client("ssm").get_paginator("list_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListAssociationsPaginator = client.get_paginator("list_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListAssociationsPaginator](./paginators.md#listassociationspaginator)
+3. item: [:material-code-braces: ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef) 
 
 
 ### paginate
@@ -1566,6 +2161,23 @@ from mypy_boto3_ssm.paginator import ListCommandInvocationsPaginator
 def get_list_command_invocations_paginator() -> ListCommandInvocationsPaginator:
     return Session().client("ssm").get_paginator("list_command_invocations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListCommandInvocationsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListCommandInvocationsPaginator = client.get_paginator("list_command_invocations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListCommandInvocationsPaginator](./paginators.md#listcommandinvocationspaginator)
+3. item: [:material-code-braces: ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef) 
 
 
 ### paginate
@@ -1613,6 +2225,23 @@ def get_list_commands_paginator() -> ListCommandsPaginator:
     return Session().client("ssm").get_paginator("list_commands")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListCommandsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListCommandsPaginator = client.get_paginator("list_commands")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListCommandsPaginator](./paginators.md#listcommandspaginator)
+3. item: [:material-code-braces: ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef) 
+
 
 ### paginate
 
@@ -1657,6 +2286,23 @@ from mypy_boto3_ssm.paginator import ListComplianceItemsPaginator
 def get_list_compliance_items_paginator() -> ListComplianceItemsPaginator:
     return Session().client("ssm").get_paginator("list_compliance_items")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListComplianceItemsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListComplianceItemsPaginator = client.get_paginator("list_compliance_items")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListComplianceItemsPaginator](./paginators.md#listcomplianceitemspaginator)
+3. item: [:material-code-braces: ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef) 
 
 
 ### paginate
@@ -1703,6 +2349,23 @@ def get_list_compliance_summaries_paginator() -> ListComplianceSummariesPaginato
     return Session().client("ssm").get_paginator("list_compliance_summaries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListComplianceSummariesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListComplianceSummariesPaginator = client.get_paginator("list_compliance_summaries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListComplianceSummariesPaginator](./paginators.md#listcompliancesummariespaginator)
+3. item: [:material-code-braces: ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef) 
+
 
 ### paginate
 
@@ -1746,6 +2409,23 @@ def get_list_document_versions_paginator() -> ListDocumentVersionsPaginator:
     return Session().client("ssm").get_paginator("list_document_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListDocumentVersionsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListDocumentVersionsPaginator = client.get_paginator("list_document_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListDocumentVersionsPaginator](./paginators.md#listdocumentversionspaginator)
+3. item: [:material-code-braces: ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef) 
+
 
 ### paginate
 
@@ -1787,6 +2467,23 @@ from mypy_boto3_ssm.paginator import ListDocumentsPaginator
 def get_list_documents_paginator() -> ListDocumentsPaginator:
     return Session().client("ssm").get_paginator("list_documents")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListDocumentsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListDocumentsPaginator = client.get_paginator("list_documents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListDocumentsPaginator](./paginators.md#listdocumentspaginator)
+3. item: [:material-code-braces: ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef) 
 
 
 ### paginate
@@ -1833,6 +2530,23 @@ def get_list_ops_item_events_paginator() -> ListOpsItemEventsPaginator:
     return Session().client("ssm").get_paginator("list_ops_item_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListOpsItemEventsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListOpsItemEventsPaginator = client.get_paginator("list_ops_item_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListOpsItemEventsPaginator](./paginators.md#listopsitemeventspaginator)
+3. item: [:material-code-braces: ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef) 
+
 
 ### paginate
 
@@ -1875,6 +2589,23 @@ from mypy_boto3_ssm.paginator import ListOpsItemRelatedItemsPaginator
 def get_list_ops_item_related_items_paginator() -> ListOpsItemRelatedItemsPaginator:
     return Session().client("ssm").get_paginator("list_ops_item_related_items")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListOpsItemRelatedItemsPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListOpsItemRelatedItemsPaginator = client.get_paginator("list_ops_item_related_items")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListOpsItemRelatedItemsPaginator](./paginators.md#listopsitemrelateditemspaginator)
+3. item: [:material-code-braces: ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef) 
 
 
 ### paginate
@@ -1920,6 +2651,23 @@ def get_list_ops_metadata_paginator() -> ListOpsMetadataPaginator:
     return Session().client("ssm").get_paginator("list_ops_metadata")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListOpsMetadataPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListOpsMetadataPaginator = client.get_paginator("list_ops_metadata")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListOpsMetadataPaginator](./paginators.md#listopsmetadatapaginator)
+3. item: [:material-code-braces: ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef) 
+
 
 ### paginate
 
@@ -1963,6 +2711,23 @@ def get_list_resource_compliance_summaries_paginator() -> ListResourceCompliance
     return Session().client("ssm").get_paginator("list_resource_compliance_summaries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListResourceComplianceSummariesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListResourceComplianceSummariesPaginator = client.get_paginator("list_resource_compliance_summaries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListResourceComplianceSummariesPaginator](./paginators.md#listresourcecompliancesummariespaginator)
+3. item: [:material-code-braces: ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef) 
+
 
 ### paginate
 
@@ -2005,6 +2770,23 @@ from mypy_boto3_ssm.paginator import ListResourceDataSyncPaginator
 def get_list_resource_data_sync_paginator() -> ListResourceDataSyncPaginator:
     return Session().client("ssm").get_paginator("list_resource_data_sync")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import ListResourceDataSyncPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: ListResourceDataSyncPaginator = client.get_paginator("list_resource_data_sync")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [ListResourceDataSyncPaginator](./paginators.md#listresourcedatasyncpaginator)
+3. item: [:material-code-braces: ListResourceDataSyncResultTypeDef](./type_defs.md#listresourcedatasyncresulttypedef) 
 
 
 ### paginate

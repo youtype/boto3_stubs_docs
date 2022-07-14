@@ -21,6 +21,23 @@ def get_list_keyspaces_paginator() -> ListKeyspacesPaginator:
     return Session().client("keyspaces").get_paginator("list_keyspaces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_keyspaces.paginator import ListKeyspacesPaginator
+
+session = Session()
+
+client = Session().client("keyspaces")  # (1)
+paginator: ListKeyspacesPaginator = client.get_paginator("list_keyspaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KeyspacesClient](./client.md)
+2. paginator: [ListKeyspacesPaginator](./paginators.md#listkeyspacespaginator)
+3. item: [:material-code-braces: ListKeyspacesResponseTypeDef](./type_defs.md#listkeyspacesresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_keyspaces.paginator import ListTablesPaginator
 def get_list_tables_paginator() -> ListTablesPaginator:
     return Session().client("keyspaces").get_paginator("list_tables")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_keyspaces.paginator import ListTablesPaginator
+
+session = Session()
+
+client = Session().client("keyspaces")  # (1)
+paginator: ListTablesPaginator = client.get_paginator("list_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KeyspacesClient](./client.md)
+2. paginator: [ListTablesPaginator](./paginators.md#listtablespaginator)
+3. item: [:material-code-braces: ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ from mypy_boto3_keyspaces.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("keyspaces").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_keyspaces.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("keyspaces")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KeyspacesClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
 
 ### paginate

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_appstream.waiter import FleetStartedWaiter
 
-def get_fleet_started_waiter() -> FleetStartedWaiter:
-    return Session().client("appstream").get_waiter("fleet_started")
+
+session = Session()
+
+client = session.client("appstream")  # (1)
+waiter: FleetStartedWaiter = client.get_waiter("fleet_started")  # (2)
+await waiter.wait()
 ```
+
+1. client: [AppStreamClient](./client.md)
+2. waiter: [FleetStartedWaiter](./waiters.md#fleetstartedwaiter)
 
 
 ### wait
@@ -59,9 +66,16 @@ from boto3.session import Session
 
 from mypy_boto3_appstream.waiter import FleetStoppedWaiter
 
-def get_fleet_stopped_waiter() -> FleetStoppedWaiter:
-    return Session().client("appstream").get_waiter("fleet_stopped")
+
+session = Session()
+
+client = session.client("appstream")  # (1)
+waiter: FleetStoppedWaiter = client.get_waiter("fleet_stopped")  # (2)
+await waiter.wait()
 ```
+
+1. client: [AppStreamClient](./client.md)
+2. waiter: [FleetStoppedWaiter](./waiters.md#fleetstoppedwaiter)
 
 
 ### wait

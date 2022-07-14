@@ -21,6 +21,23 @@ def get_list_eula_acceptances_paginator() -> ListEulaAcceptancesPaginator:
     return Session().client("nimble").get_paginator("list_eula_acceptances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListEulaAcceptancesPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListEulaAcceptancesPaginator = client.get_paginator("list_eula_acceptances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListEulaAcceptancesPaginator](./paginators.md#listeulaacceptancespaginator)
+3. item: [:material-code-braces: ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_eulas_paginator() -> ListEulasPaginator:
     return Session().client("nimble").get_paginator("list_eulas")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListEulasPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListEulasPaginator = client.get_paginator("list_eulas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListEulasPaginator](./paginators.md#listeulaspaginator)
+3. item: [:material-code-braces: ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_nimble.paginator import ListLaunchProfileMembersPaginator
 def get_list_launch_profile_members_paginator() -> ListLaunchProfileMembersPaginator:
     return Session().client("nimble").get_paginator("list_launch_profile_members")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListLaunchProfileMembersPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListLaunchProfileMembersPaginator = client.get_paginator("list_launch_profile_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListLaunchProfileMembersPaginator](./paginators.md#listlaunchprofilememberspaginator)
+3. item: [:material-code-braces: ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef) 
 
 
 ### paginate
@@ -149,6 +200,23 @@ from mypy_boto3_nimble.paginator import ListLaunchProfilesPaginator
 def get_list_launch_profiles_paginator() -> ListLaunchProfilesPaginator:
     return Session().client("nimble").get_paginator("list_launch_profiles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListLaunchProfilesPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListLaunchProfilesPaginator = client.get_paginator("list_launch_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListLaunchProfilesPaginator](./paginators.md#listlaunchprofilespaginator)
+3. item: [:material-code-braces: ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef) 
 
 
 ### paginate
@@ -195,6 +263,23 @@ def get_list_streaming_images_paginator() -> ListStreamingImagesPaginator:
     return Session().client("nimble").get_paginator("list_streaming_images")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListStreamingImagesPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListStreamingImagesPaginator = client.get_paginator("list_streaming_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListStreamingImagesPaginator](./paginators.md#liststreamingimagespaginator)
+3. item: [:material-code-braces: ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef) 
+
 
 ### paginate
 
@@ -237,6 +322,23 @@ from mypy_boto3_nimble.paginator import ListStreamingSessionsPaginator
 def get_list_streaming_sessions_paginator() -> ListStreamingSessionsPaginator:
     return Session().client("nimble").get_paginator("list_streaming_sessions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListStreamingSessionsPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListStreamingSessionsPaginator = client.get_paginator("list_streaming_sessions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListStreamingSessionsPaginator](./paginators.md#liststreamingsessionspaginator)
+3. item: [:material-code-braces: ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef) 
 
 
 ### paginate
@@ -282,6 +384,23 @@ from mypy_boto3_nimble.paginator import ListStudioComponentsPaginator
 def get_list_studio_components_paginator() -> ListStudioComponentsPaginator:
     return Session().client("nimble").get_paginator("list_studio_components")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListStudioComponentsPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListStudioComponentsPaginator = client.get_paginator("list_studio_components")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListStudioComponentsPaginator](./paginators.md#liststudiocomponentspaginator)
+3. item: [:material-code-braces: ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef) 
 
 
 ### paginate
@@ -329,6 +448,23 @@ def get_list_studio_members_paginator() -> ListStudioMembersPaginator:
     return Session().client("nimble").get_paginator("list_studio_members")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListStudioMembersPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListStudioMembersPaginator = client.get_paginator("list_studio_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
+3. item: [:material-code-braces: ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef) 
+
 
 ### paginate
 
@@ -370,6 +506,23 @@ from mypy_boto3_nimble.paginator import ListStudiosPaginator
 def get_list_studios_paginator() -> ListStudiosPaginator:
     return Session().client("nimble").get_paginator("list_studios")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListStudiosPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListStudiosPaginator = client.get_paginator("list_studios")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListStudiosPaginator](./paginators.md#liststudiospaginator)
+3. item: [:material-code-braces: ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef) 
 
 
 ### paginate

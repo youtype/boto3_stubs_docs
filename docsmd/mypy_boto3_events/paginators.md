@@ -21,6 +21,23 @@ def get_list_rule_names_by_target_paginator() -> ListRuleNamesByTargetPaginator:
     return Session().client("events").get_paginator("list_rule_names_by_target")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_events.paginator import ListRuleNamesByTargetPaginator
+
+session = Session()
+
+client = Session().client("events")  # (1)
+paginator: ListRuleNamesByTargetPaginator = client.get_paginator("list_rule_names_by_target")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EventBridgeClient](./client.md)
+2. paginator: [ListRuleNamesByTargetPaginator](./paginators.md#listrulenamesbytargetpaginator)
+3. item: [:material-code-braces: ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return Session().client("events").get_paginator("list_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_events.paginator import ListRulesPaginator
+
+session = Session()
+
+client = Session().client("events")  # (1)
+paginator: ListRulesPaginator = client.get_paginator("list_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EventBridgeClient](./client.md)
+2. paginator: [ListRulesPaginator](./paginators.md#listrulespaginator)
+3. item: [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_events.paginator import ListTargetsByRulePaginator
 def get_list_targets_by_rule_paginator() -> ListTargetsByRulePaginator:
     return Session().client("events").get_paginator("list_targets_by_rule")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_events.paginator import ListTargetsByRulePaginator
+
+session = Session()
+
+client = Session().client("events")  # (1)
+paginator: ListTargetsByRulePaginator = client.get_paginator("list_targets_by_rule")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EventBridgeClient](./client.md)
+2. paginator: [ListTargetsByRulePaginator](./paginators.md#listtargetsbyrulepaginator)
+3. item: [:material-code-braces: ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef) 
 
 
 ### paginate

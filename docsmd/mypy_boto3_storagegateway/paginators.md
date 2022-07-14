@@ -21,6 +21,23 @@ def get_describe_tape_archives_paginator() -> DescribeTapeArchivesPaginator:
     return Session().client("storagegateway").get_paginator("describe_tape_archives")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: DescribeTapeArchivesPaginator = client.get_paginator("describe_tape_archives")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [DescribeTapeArchivesPaginator](./paginators.md#describetapearchivespaginator)
+3. item: [:material-code-braces: DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_describe_tape_recovery_points_paginator() -> DescribeTapeRecoveryPointsP
     return Session().client("storagegateway").get_paginator("describe_tape_recovery_points")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import DescribeTapeRecoveryPointsPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: DescribeTapeRecoveryPointsPaginator = client.get_paginator("describe_tape_recovery_points")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [DescribeTapeRecoveryPointsPaginator](./paginators.md#describetaperecoverypointspaginator)
+3. item: [:material-code-braces: DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_storagegateway.paginator import DescribeTapesPaginator
 def get_describe_tapes_paginator() -> DescribeTapesPaginator:
     return Session().client("storagegateway").get_paginator("describe_tapes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import DescribeTapesPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: DescribeTapesPaginator = client.get_paginator("describe_tapes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [DescribeTapesPaginator](./paginators.md#describetapespaginator)
+3. item: [:material-code-braces: DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef) 
 
 
 ### paginate
@@ -148,6 +199,23 @@ def get_describe_vtl_devices_paginator() -> DescribeVTLDevicesPaginator:
     return Session().client("storagegateway").get_paginator("describe_vtl_devices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import DescribeVTLDevicesPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: DescribeVTLDevicesPaginator = client.get_paginator("describe_vtl_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [DescribeVTLDevicesPaginator](./paginators.md#describevtldevicespaginator)
+3. item: [:material-code-braces: DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef) 
+
 
 ### paginate
 
@@ -191,6 +259,23 @@ def get_list_file_shares_paginator() -> ListFileSharesPaginator:
     return Session().client("storagegateway").get_paginator("list_file_shares")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import ListFileSharesPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: ListFileSharesPaginator = client.get_paginator("list_file_shares")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [ListFileSharesPaginator](./paginators.md#listfilesharespaginator)
+3. item: [:material-code-braces: ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef) 
+
 
 ### paginate
 
@@ -232,6 +317,23 @@ from mypy_boto3_storagegateway.paginator import ListFileSystemAssociationsPagina
 def get_list_file_system_associations_paginator() -> ListFileSystemAssociationsPaginator:
     return Session().client("storagegateway").get_paginator("list_file_system_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import ListFileSystemAssociationsPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: ListFileSystemAssociationsPaginator = client.get_paginator("list_file_system_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [ListFileSystemAssociationsPaginator](./paginators.md#listfilesystemassociationspaginator)
+3. item: [:material-code-braces: ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef) 
 
 
 ### paginate
@@ -275,6 +377,23 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return Session().client("storagegateway").get_paginator("list_gateways")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import ListGatewaysPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: ListGatewaysPaginator = client.get_paginator("list_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
+3. item: [:material-code-braces: ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef) 
+
 
 ### paginate
 
@@ -315,6 +434,23 @@ from mypy_boto3_storagegateway.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("storagegateway").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
 
 ### paginate
@@ -358,6 +494,23 @@ def get_list_tape_pools_paginator() -> ListTapePoolsPaginator:
     return Session().client("storagegateway").get_paginator("list_tape_pools")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import ListTapePoolsPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: ListTapePoolsPaginator = client.get_paginator("list_tape_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [ListTapePoolsPaginator](./paginators.md#listtapepoolspaginator)
+3. item: [:material-code-braces: ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef) 
+
 
 ### paginate
 
@@ -400,6 +553,23 @@ def get_list_tapes_paginator() -> ListTapesPaginator:
     return Session().client("storagegateway").get_paginator("list_tapes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import ListTapesPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: ListTapesPaginator = client.get_paginator("list_tapes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [ListTapesPaginator](./paginators.md#listtapespaginator)
+3. item: [:material-code-braces: ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef) 
+
 
 ### paginate
 
@@ -441,6 +611,23 @@ from mypy_boto3_storagegateway.paginator import ListVolumesPaginator
 def get_list_volumes_paginator() -> ListVolumesPaginator:
     return Session().client("storagegateway").get_paginator("list_volumes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_storagegateway.paginator import ListVolumesPaginator
+
+session = Session()
+
+client = Session().client("storagegateway")  # (1)
+paginator: ListVolumesPaginator = client.get_paginator("list_volumes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [StorageGatewayClient](./client.md)
+2. paginator: [ListVolumesPaginator](./paginators.md#listvolumespaginator)
+3. item: [:material-code-braces: ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef) 
 
 
 ### paginate

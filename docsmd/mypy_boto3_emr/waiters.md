@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_emr.waiter import ClusterRunningWaiter
 
-def get_cluster_running_waiter() -> ClusterRunningWaiter:
-    return Session().client("emr").get_waiter("cluster_running")
+
+session = Session()
+
+client = session.client("emr")  # (1)
+waiter: ClusterRunningWaiter = client.get_waiter("cluster_running")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EMRClient](./client.md)
+2. waiter: [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_emr.waiter import ClusterTerminatedWaiter
 
-def get_cluster_terminated_waiter() -> ClusterTerminatedWaiter:
-    return Session().client("emr").get_waiter("cluster_terminated")
+
+session = Session()
+
+client = session.client("emr")  # (1)
+waiter: ClusterTerminatedWaiter = client.get_waiter("cluster_terminated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EMRClient](./client.md)
+2. waiter: [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
 
 
 ### wait
@@ -99,9 +113,16 @@ from boto3.session import Session
 
 from mypy_boto3_emr.waiter import StepCompleteWaiter
 
-def get_step_complete_waiter() -> StepCompleteWaiter:
-    return Session().client("emr").get_waiter("step_complete")
+
+session = Session()
+
+client = session.client("emr")  # (1)
+waiter: StepCompleteWaiter = client.get_waiter("step_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EMRClient](./client.md)
+2. waiter: [StepCompleteWaiter](./waiters.md#stepcompletewaiter)
 
 
 ### wait

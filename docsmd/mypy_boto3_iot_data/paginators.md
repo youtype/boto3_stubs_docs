@@ -21,6 +21,23 @@ def get_list_retained_messages_paginator() -> ListRetainedMessagesPaginator:
     return Session().client("iot-data").get_paginator("list_retained_messages")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot_data.paginator import ListRetainedMessagesPaginator
+
+session = Session()
+
+client = Session().client("iot-data")  # (1)
+paginator: ListRetainedMessagesPaginator = client.get_paginator("list_retained_messages")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTDataPlaneClient](./client.md)
+2. paginator: [ListRetainedMessagesPaginator](./paginators.md#listretainedmessagespaginator)
+3. item: [:material-code-braces: ListRetainedMessagesResponseTypeDef](./type_defs.md#listretainedmessagesresponsetypedef) 
+
 
 ### paginate
 

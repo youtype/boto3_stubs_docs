@@ -21,6 +21,23 @@ def get_describe_directories_paginator() -> DescribeDirectoriesPaginator:
     return Session().client("ds").get_paginator("describe_directories")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeDirectoriesPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeDirectoriesPaginator = client.get_paginator("describe_directories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
+3. item: [:material-code-braces: DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_ds.paginator import DescribeDomainControllersPaginator
 def get_describe_domain_controllers_paginator() -> DescribeDomainControllersPaginator:
     return Session().client("ds").get_paginator("describe_domain_controllers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeDomainControllersPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeDomainControllersPaginator = client.get_paginator("describe_domain_controllers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeDomainControllersPaginator](./paginators.md#describedomaincontrollerspaginator)
+3. item: [:material-code-braces: DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ def get_describe_shared_directories_paginator() -> DescribeSharedDirectoriesPagi
     return Session().client("ds").get_paginator("describe_shared_directories")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeSharedDirectoriesPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeSharedDirectoriesPaginator = client.get_paginator("describe_shared_directories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeSharedDirectoriesPaginator](./paginators.md#describeshareddirectoriespaginator)
+3. item: [:material-code-braces: DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_ds.paginator import DescribeSnapshotsPaginator
 def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return Session().client("ds").get_paginator("describe_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeSnapshotsPaginator = client.get_paginator("describe_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
+3. item: [:material-code-braces: DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef) 
 
 
 ### paginate
@@ -192,6 +260,23 @@ def get_describe_trusts_paginator() -> DescribeTrustsPaginator:
     return Session().client("ds").get_paginator("describe_trusts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeTrustsPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeTrustsPaginator = client.get_paginator("describe_trusts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeTrustsPaginator](./paginators.md#describetrustspaginator)
+3. item: [:material-code-braces: DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef) 
+
 
 ### paginate
 
@@ -235,6 +320,23 @@ def get_list_ip_routes_paginator() -> ListIpRoutesPaginator:
     return Session().client("ds").get_paginator("list_ip_routes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import ListIpRoutesPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: ListIpRoutesPaginator = client.get_paginator("list_ip_routes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [ListIpRoutesPaginator](./paginators.md#listiproutespaginator)
+3. item: [:material-code-braces: ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef) 
+
 
 ### paginate
 
@@ -276,6 +378,23 @@ from mypy_boto3_ds.paginator import ListLogSubscriptionsPaginator
 def get_list_log_subscriptions_paginator() -> ListLogSubscriptionsPaginator:
     return Session().client("ds").get_paginator("list_log_subscriptions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import ListLogSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: ListLogSubscriptionsPaginator = client.get_paginator("list_log_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
+3. item: [:material-code-braces: ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef) 
 
 
 ### paginate
@@ -319,6 +438,23 @@ def get_list_schema_extensions_paginator() -> ListSchemaExtensionsPaginator:
     return Session().client("ds").get_paginator("list_schema_extensions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import ListSchemaExtensionsPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: ListSchemaExtensionsPaginator = client.get_paginator("list_schema_extensions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
+3. item: [:material-code-braces: ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef) 
+
 
 ### paginate
 
@@ -360,6 +496,23 @@ from mypy_boto3_ds.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("ds").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
 
 ### paginate

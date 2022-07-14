@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_elasticache.waiter import CacheClusterAvailableWaiter
 
-def get_cache_cluster_available_waiter() -> CacheClusterAvailableWaiter:
-    return Session().client("elasticache").get_waiter("cache_cluster_available")
+
+session = Session()
+
+client = session.client("elasticache")  # (1)
+waiter: CacheClusterAvailableWaiter = client.get_waiter("cache_cluster_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElastiCacheClient](./client.md)
+2. waiter: [CacheClusterAvailableWaiter](./waiters.md#cacheclusteravailablewaiter)
 
 
 ### wait
@@ -62,9 +69,16 @@ from boto3.session import Session
 
 from mypy_boto3_elasticache.waiter import CacheClusterDeletedWaiter
 
-def get_cache_cluster_deleted_waiter() -> CacheClusterDeletedWaiter:
-    return Session().client("elasticache").get_waiter("cache_cluster_deleted")
+
+session = Session()
+
+client = session.client("elasticache")  # (1)
+waiter: CacheClusterDeletedWaiter = client.get_waiter("cache_cluster_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElastiCacheClient](./client.md)
+2. waiter: [CacheClusterDeletedWaiter](./waiters.md#cacheclusterdeletedwaiter)
 
 
 ### wait
@@ -107,9 +121,16 @@ from boto3.session import Session
 
 from mypy_boto3_elasticache.waiter import ReplicationGroupAvailableWaiter
 
-def get_replication_group_available_waiter() -> ReplicationGroupAvailableWaiter:
-    return Session().client("elasticache").get_waiter("replication_group_available")
+
+session = Session()
+
+client = session.client("elasticache")  # (1)
+waiter: ReplicationGroupAvailableWaiter = client.get_waiter("replication_group_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElastiCacheClient](./client.md)
+2. waiter: [ReplicationGroupAvailableWaiter](./waiters.md#replicationgroupavailablewaiter)
 
 
 ### wait
@@ -150,9 +171,16 @@ from boto3.session import Session
 
 from mypy_boto3_elasticache.waiter import ReplicationGroupDeletedWaiter
 
-def get_replication_group_deleted_waiter() -> ReplicationGroupDeletedWaiter:
-    return Session().client("elasticache").get_waiter("replication_group_deleted")
+
+session = Session()
+
+client = session.client("elasticache")  # (1)
+waiter: ReplicationGroupDeletedWaiter = client.get_waiter("replication_group_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElastiCacheClient](./client.md)
+2. waiter: [ReplicationGroupDeletedWaiter](./waiters.md#replicationgroupdeletedwaiter)
 
 
 ### wait

@@ -21,6 +21,23 @@ def get_describe_pull_request_events_paginator() -> DescribePullRequestEventsPag
     return Session().client("codecommit").get_paginator("describe_pull_request_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codecommit.paginator import DescribePullRequestEventsPaginator
+
+session = Session()
+
+client = Session().client("codecommit")  # (1)
+paginator: DescribePullRequestEventsPaginator = client.get_paginator("describe_pull_request_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCommitClient](./client.md)
+2. paginator: [DescribePullRequestEventsPaginator](./paginators.md#describepullrequesteventspaginator)
+3. item: [:material-code-braces: DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ from mypy_boto3_codecommit.paginator import GetCommentsForComparedCommitPaginato
 def get_get_comments_for_compared_commit_paginator() -> GetCommentsForComparedCommitPaginator:
     return Session().client("codecommit").get_paginator("get_comments_for_compared_commit")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codecommit.paginator import GetCommentsForComparedCommitPaginator
+
+session = Session()
+
+client = Session().client("codecommit")  # (1)
+paginator: GetCommentsForComparedCommitPaginator = client.get_paginator("get_comments_for_compared_commit")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCommitClient](./client.md)
+2. paginator: [GetCommentsForComparedCommitPaginator](./paginators.md#getcommentsforcomparedcommitpaginator)
+3. item: [:material-code-braces: GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef) 
 
 
 ### paginate
@@ -111,6 +145,23 @@ def get_get_comments_for_pull_request_paginator() -> GetCommentsForPullRequestPa
     return Session().client("codecommit").get_paginator("get_comments_for_pull_request")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codecommit.paginator import GetCommentsForPullRequestPaginator
+
+session = Session()
+
+client = Session().client("codecommit")  # (1)
+paginator: GetCommentsForPullRequestPaginator = client.get_paginator("get_comments_for_pull_request")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCommitClient](./client.md)
+2. paginator: [GetCommentsForPullRequestPaginator](./paginators.md#getcommentsforpullrequestpaginator)
+3. item: [:material-code-braces: GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef) 
+
 
 ### paginate
 
@@ -155,6 +206,23 @@ from mypy_boto3_codecommit.paginator import GetDifferencesPaginator
 def get_get_differences_paginator() -> GetDifferencesPaginator:
     return Session().client("codecommit").get_paginator("get_differences")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codecommit.paginator import GetDifferencesPaginator
+
+session = Session()
+
+client = Session().client("codecommit")  # (1)
+paginator: GetDifferencesPaginator = client.get_paginator("get_differences")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCommitClient](./client.md)
+2. paginator: [GetDifferencesPaginator](./paginators.md#getdifferencespaginator)
+3. item: [:material-code-braces: GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef) 
 
 
 ### paginate
@@ -203,6 +271,23 @@ def get_list_branches_paginator() -> ListBranchesPaginator:
     return Session().client("codecommit").get_paginator("list_branches")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codecommit.paginator import ListBranchesPaginator
+
+session = Session()
+
+client = Session().client("codecommit")  # (1)
+paginator: ListBranchesPaginator = client.get_paginator("list_branches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCommitClient](./client.md)
+2. paginator: [ListBranchesPaginator](./paginators.md#listbranchespaginator)
+3. item: [:material-code-braces: ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef) 
+
 
 ### paginate
 
@@ -244,6 +329,23 @@ from mypy_boto3_codecommit.paginator import ListPullRequestsPaginator
 def get_list_pull_requests_paginator() -> ListPullRequestsPaginator:
     return Session().client("codecommit").get_paginator("list_pull_requests")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codecommit.paginator import ListPullRequestsPaginator
+
+session = Session()
+
+client = Session().client("codecommit")  # (1)
+paginator: ListPullRequestsPaginator = client.get_paginator("list_pull_requests")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCommitClient](./client.md)
+2. paginator: [ListPullRequestsPaginator](./paginators.md#listpullrequestspaginator)
+3. item: [:material-code-braces: ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef) 
 
 
 ### paginate
@@ -289,6 +391,23 @@ from mypy_boto3_codecommit.paginator import ListRepositoriesPaginator
 def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return Session().client("codecommit").get_paginator("list_repositories")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codecommit.paginator import ListRepositoriesPaginator
+
+session = Session()
+
+client = Session().client("codecommit")  # (1)
+paginator: ListRepositoriesPaginator = client.get_paginator("list_repositories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeCommitClient](./client.md)
+2. paginator: [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+3. item: [:material-code-braces: ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef) 
 
 
 ### paginate

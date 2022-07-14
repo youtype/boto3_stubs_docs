@@ -21,6 +21,23 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
     return Session().client("ram").get_paginator("get_resource_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ram.paginator import GetResourcePoliciesPaginator
+
+session = Session()
+
+client = Session().client("ram")  # (1)
+paginator: GetResourcePoliciesPaginator = client.get_paginator("get_resource_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RAMClient](./client.md)
+2. paginator: [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
+3. item: [:material-code-braces: GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_ram.paginator import GetResourceShareAssociationsPaginator
 def get_get_resource_share_associations_paginator() -> GetResourceShareAssociationsPaginator:
     return Session().client("ram").get_paginator("get_resource_share_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ram.paginator import GetResourceShareAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ram")  # (1)
+paginator: GetResourceShareAssociationsPaginator = client.get_paginator("get_resource_share_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RAMClient](./client.md)
+2. paginator: [GetResourceShareAssociationsPaginator](./paginators.md#getresourceshareassociationspaginator)
+3. item: [:material-code-braces: GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef) 
 
 
 ### paginate
@@ -112,6 +146,23 @@ def get_get_resource_share_invitations_paginator() -> GetResourceShareInvitation
     return Session().client("ram").get_paginator("get_resource_share_invitations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ram.paginator import GetResourceShareInvitationsPaginator
+
+session = Session()
+
+client = Session().client("ram")  # (1)
+paginator: GetResourceShareInvitationsPaginator = client.get_paginator("get_resource_share_invitations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RAMClient](./client.md)
+2. paginator: [GetResourceShareInvitationsPaginator](./paginators.md#getresourceshareinvitationspaginator)
+3. item: [:material-code-braces: GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef) 
+
 
 ### paginate
 
@@ -154,6 +205,23 @@ from mypy_boto3_ram.paginator import GetResourceSharesPaginator
 def get_get_resource_shares_paginator() -> GetResourceSharesPaginator:
     return Session().client("ram").get_paginator("get_resource_shares")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ram.paginator import GetResourceSharesPaginator
+
+session = Session()
+
+client = Session().client("ram")  # (1)
+paginator: GetResourceSharesPaginator = client.get_paginator("get_resource_shares")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RAMClient](./client.md)
+2. paginator: [GetResourceSharesPaginator](./paginators.md#getresourcesharespaginator)
+3. item: [:material-code-braces: GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef) 
 
 
 ### paginate
@@ -205,6 +273,23 @@ def get_list_principals_paginator() -> ListPrincipalsPaginator:
     return Session().client("ram").get_paginator("list_principals")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ram.paginator import ListPrincipalsPaginator
+
+session = Session()
+
+client = Session().client("ram")  # (1)
+paginator: ListPrincipalsPaginator = client.get_paginator("list_principals")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RAMClient](./client.md)
+2. paginator: [ListPrincipalsPaginator](./paginators.md#listprincipalspaginator)
+3. item: [:material-code-braces: ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef) 
+
 
 ### paginate
 
@@ -251,6 +336,23 @@ from mypy_boto3_ram.paginator import ListResourcesPaginator
 def get_list_resources_paginator() -> ListResourcesPaginator:
     return Session().client("ram").get_paginator("list_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ram.paginator import ListResourcesPaginator
+
+session = Session()
+
+client = Session().client("ram")  # (1)
+paginator: ListResourcesPaginator = client.get_paginator("list_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RAMClient](./client.md)
+2. paginator: [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+3. item: [:material-code-braces: ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef) 
 
 
 ### paginate

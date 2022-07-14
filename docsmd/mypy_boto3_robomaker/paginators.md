@@ -21,6 +21,23 @@ def get_list_deployment_jobs_paginator() -> ListDeploymentJobsPaginator:
     return Session().client("robomaker").get_paginator("list_deployment_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListDeploymentJobsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListDeploymentJobsPaginator = client.get_paginator("list_deployment_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListDeploymentJobsPaginator](./paginators.md#listdeploymentjobspaginator)
+3. item: [:material-code-braces: ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_fleets_paginator() -> ListFleetsPaginator:
     return Session().client("robomaker").get_paginator("list_fleets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListFleetsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListFleetsPaginator = client.get_paginator("list_fleets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListFleetsPaginator](./paginators.md#listfleetspaginator)
+3. item: [:material-code-braces: ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_robomaker.paginator import ListRobotApplicationsPaginator
 def get_list_robot_applications_paginator() -> ListRobotApplicationsPaginator:
     return Session().client("robomaker").get_paginator("list_robot_applications")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListRobotApplicationsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListRobotApplicationsPaginator = client.get_paginator("list_robot_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListRobotApplicationsPaginator](./paginators.md#listrobotapplicationspaginator)
+3. item: [:material-code-braces: ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef) 
 
 
 ### paginate
@@ -151,6 +202,23 @@ def get_list_robots_paginator() -> ListRobotsPaginator:
     return Session().client("robomaker").get_paginator("list_robots")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListRobotsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListRobotsPaginator = client.get_paginator("list_robots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListRobotsPaginator](./paginators.md#listrobotspaginator)
+3. item: [:material-code-braces: ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef) 
+
 
 ### paginate
 
@@ -193,6 +261,23 @@ from mypy_boto3_robomaker.paginator import ListSimulationApplicationsPaginator
 def get_list_simulation_applications_paginator() -> ListSimulationApplicationsPaginator:
     return Session().client("robomaker").get_paginator("list_simulation_applications")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListSimulationApplicationsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListSimulationApplicationsPaginator = client.get_paginator("list_simulation_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListSimulationApplicationsPaginator](./paginators.md#listsimulationapplicationspaginator)
+3. item: [:material-code-braces: ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef) 
 
 
 ### paginate
@@ -238,6 +323,23 @@ def get_list_simulation_job_batches_paginator() -> ListSimulationJobBatchesPagin
     return Session().client("robomaker").get_paginator("list_simulation_job_batches")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListSimulationJobBatchesPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListSimulationJobBatchesPaginator = client.get_paginator("list_simulation_job_batches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListSimulationJobBatchesPaginator](./paginators.md#listsimulationjobbatchespaginator)
+3. item: [:material-code-braces: ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef) 
+
 
 ### paginate
 
@@ -280,6 +382,23 @@ from mypy_boto3_robomaker.paginator import ListSimulationJobsPaginator
 def get_list_simulation_jobs_paginator() -> ListSimulationJobsPaginator:
     return Session().client("robomaker").get_paginator("list_simulation_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListSimulationJobsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListSimulationJobsPaginator = client.get_paginator("list_simulation_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListSimulationJobsPaginator](./paginators.md#listsimulationjobspaginator)
+3. item: [:material-code-braces: ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef) 
 
 
 ### paginate
@@ -324,6 +443,23 @@ def get_list_world_export_jobs_paginator() -> ListWorldExportJobsPaginator:
     return Session().client("robomaker").get_paginator("list_world_export_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListWorldExportJobsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListWorldExportJobsPaginator = client.get_paginator("list_world_export_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListWorldExportJobsPaginator](./paginators.md#listworldexportjobspaginator)
+3. item: [:material-code-braces: ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -366,6 +502,23 @@ from mypy_boto3_robomaker.paginator import ListWorldGenerationJobsPaginator
 def get_list_world_generation_jobs_paginator() -> ListWorldGenerationJobsPaginator:
     return Session().client("robomaker").get_paginator("list_world_generation_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListWorldGenerationJobsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListWorldGenerationJobsPaginator = client.get_paginator("list_world_generation_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListWorldGenerationJobsPaginator](./paginators.md#listworldgenerationjobspaginator)
+3. item: [:material-code-braces: ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef) 
 
 
 ### paginate
@@ -410,6 +563,23 @@ def get_list_world_templates_paginator() -> ListWorldTemplatesPaginator:
     return Session().client("robomaker").get_paginator("list_world_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListWorldTemplatesPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListWorldTemplatesPaginator = client.get_paginator("list_world_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
+3. item: [:material-code-braces: ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -450,6 +620,23 @@ from mypy_boto3_robomaker.paginator import ListWorldsPaginator
 def get_list_worlds_paginator() -> ListWorldsPaginator:
     return Session().client("robomaker").get_paginator("list_worlds")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_robomaker.paginator import ListWorldsPaginator
+
+session = Session()
+
+client = Session().client("robomaker")  # (1)
+paginator: ListWorldsPaginator = client.get_paginator("list_worlds")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RoboMakerClient](./client.md)
+2. paginator: [ListWorldsPaginator](./paginators.md#listworldspaginator)
+3. item: [:material-code-braces: ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef) 
 
 
 ### paginate

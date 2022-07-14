@@ -21,6 +21,23 @@ def get_describe_action_targets_paginator() -> DescribeActionTargetsPaginator:
     return Session().client("securityhub").get_paginator("describe_action_targets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: DescribeActionTargetsPaginator = client.get_paginator("describe_action_targets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [DescribeActionTargetsPaginator](./paginators.md#describeactiontargetspaginator)
+3. item: [:material-code-braces: DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_securityhub.paginator import DescribeProductsPaginator
 def get_describe_products_paginator() -> DescribeProductsPaginator:
     return Session().client("securityhub").get_paginator("describe_products")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import DescribeProductsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: DescribeProductsPaginator = client.get_paginator("describe_products")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [DescribeProductsPaginator](./paginators.md#describeproductspaginator)
+3. item: [:material-code-braces: DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_describe_standards_paginator() -> DescribeStandardsPaginator:
     return Session().client("securityhub").get_paginator("describe_standards")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import DescribeStandardsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: DescribeStandardsPaginator = client.get_paginator("describe_standards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [DescribeStandardsPaginator](./paginators.md#describestandardspaginator)
+3. item: [:material-code-braces: DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_securityhub.paginator import DescribeStandardsControlsPaginator
 def get_describe_standards_controls_paginator() -> DescribeStandardsControlsPaginator:
     return Session().client("securityhub").get_paginator("describe_standards_controls")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import DescribeStandardsControlsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: DescribeStandardsControlsPaginator = client.get_paginator("describe_standards_controls")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [DescribeStandardsControlsPaginator](./paginators.md#describestandardscontrolspaginator)
+3. item: [:material-code-braces: DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef) 
 
 
 ### paginate
@@ -188,6 +256,23 @@ def get_get_enabled_standards_paginator() -> GetEnabledStandardsPaginator:
     return Session().client("securityhub").get_paginator("get_enabled_standards")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import GetEnabledStandardsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: GetEnabledStandardsPaginator = client.get_paginator("get_enabled_standards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [GetEnabledStandardsPaginator](./paginators.md#getenabledstandardspaginator)
+3. item: [:material-code-braces: GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef) 
+
 
 ### paginate
 
@@ -229,6 +314,23 @@ from mypy_boto3_securityhub.paginator import GetFindingsPaginator
 def get_get_findings_paginator() -> GetFindingsPaginator:
     return Session().client("securityhub").get_paginator("get_findings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import GetFindingsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: GetFindingsPaginator = client.get_paginator("get_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [GetFindingsPaginator](./paginators.md#getfindingspaginator)
+3. item: [:material-code-braces: GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef) 
 
 
 ### paginate
@@ -275,6 +377,23 @@ def get_get_insights_paginator() -> GetInsightsPaginator:
     return Session().client("securityhub").get_paginator("get_insights")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import GetInsightsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: GetInsightsPaginator = client.get_paginator("get_insights")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [GetInsightsPaginator](./paginators.md#getinsightspaginator)
+3. item: [:material-code-braces: GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef) 
+
 
 ### paginate
 
@@ -317,6 +436,23 @@ def get_list_enabled_products_for_import_paginator() -> ListEnabledProductsForIm
     return Session().client("securityhub").get_paginator("list_enabled_products_for_import")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListEnabledProductsForImportPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: ListEnabledProductsForImportPaginator = client.get_paginator("list_enabled_products_for_import")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [ListEnabledProductsForImportPaginator](./paginators.md#listenabledproductsforimportpaginator)
+3. item: [:material-code-braces: ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef) 
+
 
 ### paginate
 
@@ -357,6 +493,23 @@ from mypy_boto3_securityhub.paginator import ListFindingAggregatorsPaginator
 def get_list_finding_aggregators_paginator() -> ListFindingAggregatorsPaginator:
     return Session().client("securityhub").get_paginator("list_finding_aggregators")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListFindingAggregatorsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: ListFindingAggregatorsPaginator = client.get_paginator("list_finding_aggregators")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [ListFindingAggregatorsPaginator](./paginators.md#listfindingaggregatorspaginator)
+3. item: [:material-code-braces: ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef) 
 
 
 ### paginate
@@ -399,6 +552,23 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return Session().client("securityhub").get_paginator("list_invitations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListInvitationsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: ListInvitationsPaginator = client.get_paginator("list_invitations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+3. item: [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
+
 
 ### paginate
 
@@ -439,6 +609,23 @@ from mypy_boto3_securityhub.paginator import ListMembersPaginator
 def get_list_members_paginator() -> ListMembersPaginator:
     return Session().client("securityhub").get_paginator("list_members")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListMembersPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: ListMembersPaginator = client.get_paginator("list_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [ListMembersPaginator](./paginators.md#listmemberspaginator)
+3. item: [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
 
 ### paginate
@@ -481,6 +668,23 @@ from mypy_boto3_securityhub.paginator import ListOrganizationAdminAccountsPagina
 def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAccountsPaginator:
     return Session().client("securityhub").get_paginator("list_organization_admin_accounts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListOrganizationAdminAccountsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: ListOrganizationAdminAccountsPaginator = client.get_paginator("list_organization_admin_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+3. item: [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
 
 
 ### paginate

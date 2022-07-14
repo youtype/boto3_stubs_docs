@@ -21,6 +21,23 @@ def get_list_accelerators_paginator() -> ListAcceleratorsPaginator:
     return Session().client("globalaccelerator").get_paginator("list_accelerators")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListAcceleratorsPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListAcceleratorsPaginator = client.get_paginator("list_accelerators")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListAcceleratorsPaginator](./paginators.md#listacceleratorspaginator)
+3. item: [:material-code-braces: ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_globalaccelerator.paginator import ListByoipCidrsPaginator
 def get_list_byoip_cidrs_paginator() -> ListByoipCidrsPaginator:
     return Session().client("globalaccelerator").get_paginator("list_byoip_cidrs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListByoipCidrsPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListByoipCidrsPaginator = client.get_paginator("list_byoip_cidrs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListByoipCidrsPaginator](./paginators.md#listbyoipcidrspaginator)
+3. item: [:material-code-braces: ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ def get_list_custom_routing_accelerators_paginator() -> ListCustomRoutingAcceler
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_accelerators")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingAcceleratorsPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListCustomRoutingAcceleratorsPaginator = client.get_paginator("list_custom_routing_accelerators")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListCustomRoutingAcceleratorsPaginator](./paginators.md#listcustomroutingacceleratorspaginator)
+3. item: [:material-code-braces: ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef) 
+
 
 ### paginate
 
@@ -143,6 +194,23 @@ from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingListenersPag
 def get_list_custom_routing_listeners_paginator() -> ListCustomRoutingListenersPaginator:
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_listeners")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingListenersPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListCustomRoutingListenersPaginator = client.get_paginator("list_custom_routing_listeners")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListCustomRoutingListenersPaginator](./paginators.md#listcustomroutinglistenerspaginator)
+3. item: [:material-code-braces: ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef) 
 
 
 ### paginate
@@ -186,6 +254,23 @@ def get_list_custom_routing_port_mappings_paginator() -> ListCustomRoutingPortMa
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingPortMappingsPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListCustomRoutingPortMappingsPaginator = client.get_paginator("list_custom_routing_port_mappings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListCustomRoutingPortMappingsPaginator](./paginators.md#listcustomroutingportmappingspaginator)
+3. item: [:material-code-braces: ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef) 
+
 
 ### paginate
 
@@ -228,6 +313,23 @@ from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingPortMappings
 def get_list_custom_routing_port_mappings_by_destination_paginator() -> ListCustomRoutingPortMappingsByDestinationPaginator:
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingPortMappingsByDestinationPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListCustomRoutingPortMappingsByDestinationPaginator = client.get_paginator("list_custom_routing_port_mappings_by_destination")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListCustomRoutingPortMappingsByDestinationPaginator](./paginators.md#listcustomroutingportmappingsbydestinationpaginator)
+3. item: [:material-code-braces: ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef) 
 
 
 ### paginate
@@ -273,6 +375,23 @@ def get_list_endpoint_groups_paginator() -> ListEndpointGroupsPaginator:
     return Session().client("globalaccelerator").get_paginator("list_endpoint_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListEndpointGroupsPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListEndpointGroupsPaginator = client.get_paginator("list_endpoint_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListEndpointGroupsPaginator](./paginators.md#listendpointgroupspaginator)
+3. item: [:material-code-braces: ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -314,6 +433,23 @@ from mypy_boto3_globalaccelerator.paginator import ListListenersPaginator
 def get_list_listeners_paginator() -> ListListenersPaginator:
     return Session().client("globalaccelerator").get_paginator("list_listeners")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_globalaccelerator.paginator import ListListenersPaginator
+
+session = Session()
+
+client = Session().client("globalaccelerator")  # (1)
+paginator: ListListenersPaginator = client.get_paginator("list_listeners")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlobalAcceleratorClient](./client.md)
+2. paginator: [ListListenersPaginator](./paginators.md#listlistenerspaginator)
+3. item: [:material-code-braces: ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef) 
 
 
 ### paginate

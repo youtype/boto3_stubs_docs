@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import BatchPredictionAvailableWaiter
 
-def get_batch_prediction_available_waiter() -> BatchPredictionAvailableWaiter:
-    return Session().client("machinelearning").get_waiter("batch_prediction_available")
+
+session = Session()
+
+client = session.client("machinelearning")  # (1)
+waiter: BatchPredictionAvailableWaiter = client.get_waiter("batch_prediction_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MachineLearningClient](./client.md)
+2. waiter: [BatchPredictionAvailableWaiter](./waiters.md#batchpredictionavailablewaiter)
 
 
 ### wait
@@ -70,9 +77,16 @@ from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import DataSourceAvailableWaiter
 
-def get_data_source_available_waiter() -> DataSourceAvailableWaiter:
-    return Session().client("machinelearning").get_waiter("data_source_available")
+
+session = Session()
+
+client = session.client("machinelearning")  # (1)
+waiter: DataSourceAvailableWaiter = client.get_waiter("data_source_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MachineLearningClient](./client.md)
+2. waiter: [DataSourceAvailableWaiter](./waiters.md#datasourceavailablewaiter)
 
 
 ### wait
@@ -123,9 +137,16 @@ from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import EvaluationAvailableWaiter
 
-def get_evaluation_available_waiter() -> EvaluationAvailableWaiter:
-    return Session().client("machinelearning").get_waiter("evaluation_available")
+
+session = Session()
+
+client = session.client("machinelearning")  # (1)
+waiter: EvaluationAvailableWaiter = client.get_waiter("evaluation_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MachineLearningClient](./client.md)
+2. waiter: [EvaluationAvailableWaiter](./waiters.md#evaluationavailablewaiter)
 
 
 ### wait
@@ -176,9 +197,16 @@ from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import MLModelAvailableWaiter
 
-def get_ml_model_available_waiter() -> MLModelAvailableWaiter:
-    return Session().client("machinelearning").get_waiter("ml_model_available")
+
+session = Session()
+
+client = session.client("machinelearning")  # (1)
+waiter: MLModelAvailableWaiter = client.get_waiter("ml_model_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [MachineLearningClient](./client.md)
+2. waiter: [MLModelAvailableWaiter](./waiters.md#mlmodelavailablewaiter)
 
 
 ### wait

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_iam.waiter import InstanceProfileExistsWaiter
 
-def get_instance_profile_exists_waiter() -> InstanceProfileExistsWaiter:
-    return Session().client("iam").get_waiter("instance_profile_exists")
+
+session = Session()
+
+client = session.client("iam")  # (1)
+waiter: InstanceProfileExistsWaiter = client.get_waiter("instance_profile_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IAMClient](./client.md)
+2. waiter: [InstanceProfileExistsWaiter](./waiters.md#instanceprofileexistswaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_iam.waiter import PolicyExistsWaiter
 
-def get_policy_exists_waiter() -> PolicyExistsWaiter:
-    return Session().client("iam").get_waiter("policy_exists")
+
+session = Session()
+
+client = session.client("iam")  # (1)
+waiter: PolicyExistsWaiter = client.get_waiter("policy_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IAMClient](./client.md)
+2. waiter: [PolicyExistsWaiter](./waiters.md#policyexistswaiter)
 
 
 ### wait
@@ -99,9 +113,16 @@ from boto3.session import Session
 
 from mypy_boto3_iam.waiter import RoleExistsWaiter
 
-def get_role_exists_waiter() -> RoleExistsWaiter:
-    return Session().client("iam").get_waiter("role_exists")
+
+session = Session()
+
+client = session.client("iam")  # (1)
+waiter: RoleExistsWaiter = client.get_waiter("role_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IAMClient](./client.md)
+2. waiter: [RoleExistsWaiter](./waiters.md#roleexistswaiter)
 
 
 ### wait
@@ -140,9 +161,16 @@ from boto3.session import Session
 
 from mypy_boto3_iam.waiter import UserExistsWaiter
 
-def get_user_exists_waiter() -> UserExistsWaiter:
-    return Session().client("iam").get_waiter("user_exists")
+
+session = Session()
+
+client = session.client("iam")  # (1)
+waiter: UserExistsWaiter = client.get_waiter("user_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [IAMClient](./client.md)
+2. waiter: [UserExistsWaiter](./waiters.md#userexistswaiter)
 
 
 ### wait

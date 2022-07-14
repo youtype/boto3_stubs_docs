@@ -21,6 +21,23 @@ def get_get_workflow_execution_history_paginator() -> GetWorkflowExecutionHistor
     return Session().client("swf").get_paginator("get_workflow_execution_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_swf.paginator import GetWorkflowExecutionHistoryPaginator
+
+session = Session()
+
+client = Session().client("swf")  # (1)
+paginator: GetWorkflowExecutionHistoryPaginator = client.get_paginator("get_workflow_execution_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SWFClient](./client.md)
+2. paginator: [GetWorkflowExecutionHistoryPaginator](./paginators.md#getworkflowexecutionhistorypaginator)
+3. item: [:material-code-braces: HistoryTypeDef](./type_defs.md#historytypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ from mypy_boto3_swf.paginator import ListActivityTypesPaginator
 def get_list_activity_types_paginator() -> ListActivityTypesPaginator:
     return Session().client("swf").get_paginator("list_activity_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_swf.paginator import ListActivityTypesPaginator
+
+session = Session()
+
+client = Session().client("swf")  # (1)
+paginator: ListActivityTypesPaginator = client.get_paginator("list_activity_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SWFClient](./client.md)
+2. paginator: [ListActivityTypesPaginator](./paginators.md#listactivitytypespaginator)
+3. item: [:material-code-braces: ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef) 
 
 
 ### paginate
@@ -113,6 +147,23 @@ from mypy_boto3_swf.paginator import ListClosedWorkflowExecutionsPaginator
 def get_list_closed_workflow_executions_paginator() -> ListClosedWorkflowExecutionsPaginator:
     return Session().client("swf").get_paginator("list_closed_workflow_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_swf.paginator import ListClosedWorkflowExecutionsPaginator
+
+session = Session()
+
+client = Session().client("swf")  # (1)
+paginator: ListClosedWorkflowExecutionsPaginator = client.get_paginator("list_closed_workflow_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SWFClient](./client.md)
+2. paginator: [ListClosedWorkflowExecutionsPaginator](./paginators.md#listclosedworkflowexecutionspaginator)
+3. item: [:material-code-braces: WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef) 
 
 
 ### paginate
@@ -169,6 +220,23 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("swf").get_paginator("list_domains")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_swf.paginator import ListDomainsPaginator
+
+session = Session()
+
+client = Session().client("swf")  # (1)
+paginator: ListDomainsPaginator = client.get_paginator("list_domains")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SWFClient](./client.md)
+2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+3. item: [:material-code-braces: DomainInfosTypeDef](./type_defs.md#domaininfostypedef) 
+
 
 ### paginate
 
@@ -212,6 +280,23 @@ from mypy_boto3_swf.paginator import ListOpenWorkflowExecutionsPaginator
 def get_list_open_workflow_executions_paginator() -> ListOpenWorkflowExecutionsPaginator:
     return Session().client("swf").get_paginator("list_open_workflow_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_swf.paginator import ListOpenWorkflowExecutionsPaginator
+
+session = Session()
+
+client = Session().client("swf")  # (1)
+paginator: ListOpenWorkflowExecutionsPaginator = client.get_paginator("list_open_workflow_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SWFClient](./client.md)
+2. paginator: [ListOpenWorkflowExecutionsPaginator](./paginators.md#listopenworkflowexecutionspaginator)
+3. item: [:material-code-braces: WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef) 
 
 
 ### paginate
@@ -265,6 +350,23 @@ def get_list_workflow_types_paginator() -> ListWorkflowTypesPaginator:
     return Session().client("swf").get_paginator("list_workflow_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_swf.paginator import ListWorkflowTypesPaginator
+
+session = Session()
+
+client = Session().client("swf")  # (1)
+paginator: ListWorkflowTypesPaginator = client.get_paginator("list_workflow_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SWFClient](./client.md)
+2. paginator: [ListWorkflowTypesPaginator](./paginators.md#listworkflowtypespaginator)
+3. item: [:material-code-braces: WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef) 
+
 
 ### paginate
 
@@ -311,6 +413,23 @@ from mypy_boto3_swf.paginator import PollForDecisionTaskPaginator
 def get_poll_for_decision_task_paginator() -> PollForDecisionTaskPaginator:
     return Session().client("swf").get_paginator("poll_for_decision_task")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_swf.paginator import PollForDecisionTaskPaginator
+
+session = Session()
+
+client = Session().client("swf")  # (1)
+paginator: PollForDecisionTaskPaginator = client.get_paginator("poll_for_decision_task")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SWFClient](./client.md)
+2. paginator: [PollForDecisionTaskPaginator](./paginators.md#pollfordecisiontaskpaginator)
+3. item: [:material-code-braces: DecisionTaskTypeDef](./type_defs.md#decisiontasktypedef) 
 
 
 ### paginate

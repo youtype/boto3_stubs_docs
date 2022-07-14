@@ -21,6 +21,23 @@ def get_list_gateway_routes_paginator() -> ListGatewayRoutesPaginator:
     return Session().client("appmesh").get_paginator("list_gateway_routes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListGatewayRoutesPaginator = client.get_paginator("list_gateway_routes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
+3. item: [:material-code-braces: ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef) 
+
 
 ### paginate
 
@@ -66,6 +83,23 @@ def get_list_meshes_paginator() -> ListMeshesPaginator:
     return Session().client("appmesh").get_paginator("list_meshes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListMeshesPaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListMeshesPaginator = client.get_paginator("list_meshes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListMeshesPaginator](./paginators.md#listmeshespaginator)
+3. item: [:material-code-braces: ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_appmesh.paginator import ListRoutesPaginator
 def get_list_routes_paginator() -> ListRoutesPaginator:
     return Session().client("appmesh").get_paginator("list_routes")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListRoutesPaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListRoutesPaginator = client.get_paginator("list_routes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListRoutesPaginator](./paginators.md#listroutespaginator)
+3. item: [:material-code-braces: ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef) 
 
 
 ### paginate
@@ -152,6 +203,23 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("appmesh").get_paginator("list_tags_for_resource")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
+
 
 ### paginate
 
@@ -193,6 +261,23 @@ from mypy_boto3_appmesh.paginator import ListVirtualGatewaysPaginator
 def get_list_virtual_gateways_paginator() -> ListVirtualGatewaysPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_gateways")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListVirtualGatewaysPaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListVirtualGatewaysPaginator = client.get_paginator("list_virtual_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListVirtualGatewaysPaginator](./paginators.md#listvirtualgatewayspaginator)
+3. item: [:material-code-braces: ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef) 
 
 
 ### paginate
@@ -237,6 +322,23 @@ def get_list_virtual_nodes_paginator() -> ListVirtualNodesPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_nodes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListVirtualNodesPaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListVirtualNodesPaginator = client.get_paginator("list_virtual_nodes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListVirtualNodesPaginator](./paginators.md#listvirtualnodespaginator)
+3. item: [:material-code-braces: ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef) 
+
 
 ### paginate
 
@@ -280,6 +382,23 @@ def get_list_virtual_routers_paginator() -> ListVirtualRoutersPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_routers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListVirtualRoutersPaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListVirtualRoutersPaginator = client.get_paginator("list_virtual_routers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListVirtualRoutersPaginator](./paginators.md#listvirtualrouterspaginator)
+3. item: [:material-code-braces: ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef) 
+
 
 ### paginate
 
@@ -322,6 +441,23 @@ from mypy_boto3_appmesh.paginator import ListVirtualServicesPaginator
 def get_list_virtual_services_paginator() -> ListVirtualServicesPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_services")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appmesh.paginator import ListVirtualServicesPaginator
+
+session = Session()
+
+client = Session().client("appmesh")  # (1)
+paginator: ListVirtualServicesPaginator = client.get_paginator("list_virtual_services")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppMeshClient](./client.md)
+2. paginator: [ListVirtualServicesPaginator](./paginators.md#listvirtualservicespaginator)
+3. item: [:material-code-braces: ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef) 
 
 
 ### paginate

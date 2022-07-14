@@ -21,6 +21,23 @@ def get_list_account_roles_paginator() -> ListAccountRolesPaginator:
     return Session().client("sso").get_paginator("list_account_roles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sso.paginator import ListAccountRolesPaginator
+
+session = Session()
+
+client = Session().client("sso")  # (1)
+paginator: ListAccountRolesPaginator = client.get_paginator("list_account_roles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSOClient](./client.md)
+2. paginator: [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
+3. item: [:material-code-braces: ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_sso.paginator import ListAccountsPaginator
 def get_list_accounts_paginator() -> ListAccountsPaginator:
     return Session().client("sso").get_paginator("list_accounts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sso.paginator import ListAccountsPaginator
+
+session = Session()
+
+client = Session().client("sso")  # (1)
+paginator: ListAccountsPaginator = client.get_paginator("list_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSOClient](./client.md)
+2. paginator: [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+3. item: [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
 
 
 ### paginate

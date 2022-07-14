@@ -601,7 +601,7 @@ parent.cancel_ml_task_run(**kwargs)
 
 ### cancel\_statement
 
-Cancels the statement..
+Cancels the statement.
 
 Type annotations and code completion for `#!python boto3.client("glue").cancel_statement` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_statement)
@@ -4498,7 +4498,7 @@ parent.list_schemas(**kwargs)
 
 ### list\_sessions
 
-Retrieve a session..
+Retrieve a list of sessions.
 
 Type annotations and code completion for `#!python boto3.client("glue").list_sessions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_sessions)

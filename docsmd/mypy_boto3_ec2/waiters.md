@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter
 
-def get_bundle_task_complete_waiter() -> BundleTaskCompleteWaiter:
-    return Session().client("ec2").get_waiter("bundle_task_complete")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: BundleTaskCompleteWaiter = client.get_waiter("bundle_task_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [BundleTaskCompleteWaiter](./waiters.md#bundletaskcompletewaiter)
 
 
 ### wait
@@ -61,9 +68,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ConversionTaskCancelledWaiter
 
-def get_conversion_task_cancelled_waiter() -> ConversionTaskCancelledWaiter:
-    return Session().client("ec2").get_waiter("conversion_task_cancelled")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: ConversionTaskCancelledWaiter = client.get_waiter("conversion_task_cancelled")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [ConversionTaskCancelledWaiter](./waiters.md#conversiontaskcancelledwaiter)
 
 
 ### wait
@@ -103,9 +117,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ConversionTaskCompletedWaiter
 
-def get_conversion_task_completed_waiter() -> ConversionTaskCompletedWaiter:
-    return Session().client("ec2").get_waiter("conversion_task_completed")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: ConversionTaskCompletedWaiter = client.get_waiter("conversion_task_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [ConversionTaskCompletedWaiter](./waiters.md#conversiontaskcompletedwaiter)
 
 
 ### wait
@@ -145,9 +166,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ConversionTaskDeletedWaiter
 
-def get_conversion_task_deleted_waiter() -> ConversionTaskDeletedWaiter:
-    return Session().client("ec2").get_waiter("conversion_task_deleted")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: ConversionTaskDeletedWaiter = client.get_waiter("conversion_task_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [ConversionTaskDeletedWaiter](./waiters.md#conversiontaskdeletedwaiter)
 
 
 ### wait
@@ -187,9 +215,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import CustomerGatewayAvailableWaiter
 
-def get_customer_gateway_available_waiter() -> CustomerGatewayAvailableWaiter:
-    return Session().client("ec2").get_waiter("customer_gateway_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: CustomerGatewayAvailableWaiter = client.get_waiter("customer_gateway_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [CustomerGatewayAvailableWaiter](./waiters.md#customergatewayavailablewaiter)
 
 
 ### wait
@@ -231,9 +266,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ExportTaskCancelledWaiter
 
-def get_export_task_cancelled_waiter() -> ExportTaskCancelledWaiter:
-    return Session().client("ec2").get_waiter("export_task_cancelled")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: ExportTaskCancelledWaiter = client.get_waiter("export_task_cancelled")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [ExportTaskCancelledWaiter](./waiters.md#exporttaskcancelledwaiter)
 
 
 ### wait
@@ -274,9 +316,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ExportTaskCompletedWaiter
 
-def get_export_task_completed_waiter() -> ExportTaskCompletedWaiter:
-    return Session().client("ec2").get_waiter("export_task_completed")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: ExportTaskCompletedWaiter = client.get_waiter("export_task_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [ExportTaskCompletedWaiter](./waiters.md#exporttaskcompletedwaiter)
 
 
 ### wait
@@ -317,9 +366,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ImageAvailableWaiter
 
-def get_image_available_waiter() -> ImageAvailableWaiter:
-    return Session().client("ec2").get_waiter("image_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: ImageAvailableWaiter = client.get_waiter("image_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [ImageAvailableWaiter](./waiters.md#imageavailablewaiter)
 
 
 ### wait
@@ -364,9 +420,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ImageExistsWaiter
 
-def get_image_exists_waiter() -> ImageExistsWaiter:
-    return Session().client("ec2").get_waiter("image_exists")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: ImageExistsWaiter = client.get_waiter("image_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [ImageExistsWaiter](./waiters.md#imageexistswaiter)
 
 
 ### wait
@@ -411,9 +474,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceExistsWaiter
 
-def get_instance_exists_waiter() -> InstanceExistsWaiter:
-    return Session().client("ec2").get_waiter("instance_exists")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: InstanceExistsWaiter = client.get_waiter("instance_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [InstanceExistsWaiter](./waiters.md#instanceexistswaiter)
 
 
 ### wait
@@ -457,9 +527,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceRunningWaiter
 
-def get_instance_running_waiter() -> InstanceRunningWaiter:
-    return Session().client("ec2").get_waiter("instance_running")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: InstanceRunningWaiter = client.get_waiter("instance_running")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [InstanceRunningWaiter](./waiters.md#instancerunningwaiter)
 
 
 ### wait
@@ -503,9 +580,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceStatusOkWaiter
 
-def get_instance_status_ok_waiter() -> InstanceStatusOkWaiter:
-    return Session().client("ec2").get_waiter("instance_status_ok")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: InstanceStatusOkWaiter = client.get_waiter("instance_status_ok")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [InstanceStatusOkWaiter](./waiters.md#instancestatusokwaiter)
 
 
 ### wait
@@ -550,9 +634,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceStoppedWaiter
 
-def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
-    return Session().client("ec2").get_waiter("instance_stopped")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: InstanceStoppedWaiter = client.get_waiter("instance_stopped")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [InstanceStoppedWaiter](./waiters.md#instancestoppedwaiter)
 
 
 ### wait
@@ -596,9 +687,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceTerminatedWaiter
 
-def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
-    return Session().client("ec2").get_waiter("instance_terminated")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: InstanceTerminatedWaiter = client.get_waiter("instance_terminated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [InstanceTerminatedWaiter](./waiters.md#instanceterminatedwaiter)
 
 
 ### wait
@@ -642,9 +740,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InternetGatewayExistsWaiter
 
-def get_internet_gateway_exists_waiter() -> InternetGatewayExistsWaiter:
-    return Session().client("ec2").get_waiter("internet_gateway_exists")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: InternetGatewayExistsWaiter = client.get_waiter("internet_gateway_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [InternetGatewayExistsWaiter](./waiters.md#internetgatewayexistswaiter)
 
 
 ### wait
@@ -688,9 +793,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import KeyPairExistsWaiter
 
-def get_key_pair_exists_waiter() -> KeyPairExistsWaiter:
-    return Session().client("ec2").get_waiter("key_pair_exists")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: KeyPairExistsWaiter = client.get_waiter("key_pair_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [KeyPairExistsWaiter](./waiters.md#keypairexistswaiter)
 
 
 ### wait
@@ -734,9 +846,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import NatGatewayAvailableWaiter
 
-def get_nat_gateway_available_waiter() -> NatGatewayAvailableWaiter:
-    return Session().client("ec2").get_waiter("nat_gateway_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: NatGatewayAvailableWaiter = client.get_waiter("nat_gateway_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [NatGatewayAvailableWaiter](./waiters.md#natgatewayavailablewaiter)
 
 
 ### wait
@@ -780,9 +899,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import NatGatewayDeletedWaiter
 
-def get_nat_gateway_deleted_waiter() -> NatGatewayDeletedWaiter:
-    return Session().client("ec2").get_waiter("nat_gateway_deleted")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: NatGatewayDeletedWaiter = client.get_waiter("nat_gateway_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [NatGatewayDeletedWaiter](./waiters.md#natgatewaydeletedwaiter)
 
 
 ### wait
@@ -826,9 +952,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import NetworkInterfaceAvailableWaiter
 
-def get_network_interface_available_waiter() -> NetworkInterfaceAvailableWaiter:
-    return Session().client("ec2").get_waiter("network_interface_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: NetworkInterfaceAvailableWaiter = client.get_waiter("network_interface_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [NetworkInterfaceAvailableWaiter](./waiters.md#networkinterfaceavailablewaiter)
 
 
 ### wait
@@ -872,9 +1005,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import PasswordDataAvailableWaiter
 
-def get_password_data_available_waiter() -> PasswordDataAvailableWaiter:
-    return Session().client("ec2").get_waiter("password_data_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: PasswordDataAvailableWaiter = client.get_waiter("password_data_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [PasswordDataAvailableWaiter](./waiters.md#passworddataavailablewaiter)
 
 
 ### wait
@@ -914,9 +1054,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SecurityGroupExistsWaiter
 
-def get_security_group_exists_waiter() -> SecurityGroupExistsWaiter:
-    return Session().client("ec2").get_waiter("security_group_exists")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: SecurityGroupExistsWaiter = client.get_waiter("security_group_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [SecurityGroupExistsWaiter](./waiters.md#securitygroupexistswaiter)
 
 
 ### wait
@@ -961,9 +1108,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SnapshotCompletedWaiter
 
-def get_snapshot_completed_waiter() -> SnapshotCompletedWaiter:
-    return Session().client("ec2").get_waiter("snapshot_completed")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: SnapshotCompletedWaiter = client.get_waiter("snapshot_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [SnapshotCompletedWaiter](./waiters.md#snapshotcompletedwaiter)
 
 
 ### wait
@@ -1009,9 +1163,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SpotInstanceRequestFulfilledWaiter
 
-def get_spot_instance_request_fulfilled_waiter() -> SpotInstanceRequestFulfilledWaiter:
-    return Session().client("ec2").get_waiter("spot_instance_request_fulfilled")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: SpotInstanceRequestFulfilledWaiter = client.get_waiter("spot_instance_request_fulfilled")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [SpotInstanceRequestFulfilledWaiter](./waiters.md#spotinstancerequestfulfilledwaiter)
 
 
 ### wait
@@ -1055,9 +1216,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SubnetAvailableWaiter
 
-def get_subnet_available_waiter() -> SubnetAvailableWaiter:
-    return Session().client("ec2").get_waiter("subnet_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: SubnetAvailableWaiter = client.get_waiter("subnet_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [SubnetAvailableWaiter](./waiters.md#subnetavailablewaiter)
 
 
 ### wait
@@ -1101,9 +1269,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SystemStatusOkWaiter
 
-def get_system_status_ok_waiter() -> SystemStatusOkWaiter:
-    return Session().client("ec2").get_waiter("system_status_ok")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: SystemStatusOkWaiter = client.get_waiter("system_status_ok")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [SystemStatusOkWaiter](./waiters.md#systemstatusokwaiter)
 
 
 ### wait
@@ -1148,9 +1323,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VolumeAvailableWaiter
 
-def get_volume_available_waiter() -> VolumeAvailableWaiter:
-    return Session().client("ec2").get_waiter("volume_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VolumeAvailableWaiter = client.get_waiter("volume_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VolumeAvailableWaiter](./waiters.md#volumeavailablewaiter)
 
 
 ### wait
@@ -1194,9 +1376,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VolumeDeletedWaiter
 
-def get_volume_deleted_waiter() -> VolumeDeletedWaiter:
-    return Session().client("ec2").get_waiter("volume_deleted")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VolumeDeletedWaiter = client.get_waiter("volume_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VolumeDeletedWaiter](./waiters.md#volumedeletedwaiter)
 
 
 ### wait
@@ -1240,9 +1429,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VolumeInUseWaiter
 
-def get_volume_in_use_waiter() -> VolumeInUseWaiter:
-    return Session().client("ec2").get_waiter("volume_in_use")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VolumeInUseWaiter = client.get_waiter("volume_in_use")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VolumeInUseWaiter](./waiters.md#volumeinusewaiter)
 
 
 ### wait
@@ -1286,9 +1482,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcAvailableWaiter
 
-def get_vpc_available_waiter() -> VpcAvailableWaiter:
-    return Session().client("ec2").get_waiter("vpc_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VpcAvailableWaiter = client.get_waiter("vpc_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VpcAvailableWaiter](./waiters.md#vpcavailablewaiter)
 
 
 ### wait
@@ -1332,9 +1535,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcExistsWaiter
 
-def get_vpc_exists_waiter() -> VpcExistsWaiter:
-    return Session().client("ec2").get_waiter("vpc_exists")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VpcExistsWaiter = client.get_waiter("vpc_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VpcExistsWaiter](./waiters.md#vpcexistswaiter)
 
 
 ### wait
@@ -1378,9 +1588,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcPeeringConnectionDeletedWaiter
 
-def get_vpc_peering_connection_deleted_waiter() -> VpcPeeringConnectionDeletedWaiter:
-    return Session().client("ec2").get_waiter("vpc_peering_connection_deleted")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VpcPeeringConnectionDeletedWaiter = client.get_waiter("vpc_peering_connection_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VpcPeeringConnectionDeletedWaiter](./waiters.md#vpcpeeringconnectiondeletedwaiter)
 
 
 ### wait
@@ -1424,9 +1641,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcPeeringConnectionExistsWaiter
 
-def get_vpc_peering_connection_exists_waiter() -> VpcPeeringConnectionExistsWaiter:
-    return Session().client("ec2").get_waiter("vpc_peering_connection_exists")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VpcPeeringConnectionExistsWaiter = client.get_waiter("vpc_peering_connection_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VpcPeeringConnectionExistsWaiter](./waiters.md#vpcpeeringconnectionexistswaiter)
 
 
 ### wait
@@ -1470,9 +1694,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpnConnectionAvailableWaiter
 
-def get_vpn_connection_available_waiter() -> VpnConnectionAvailableWaiter:
-    return Session().client("ec2").get_waiter("vpn_connection_available")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VpnConnectionAvailableWaiter = client.get_waiter("vpn_connection_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VpnConnectionAvailableWaiter](./waiters.md#vpnconnectionavailablewaiter)
 
 
 ### wait
@@ -1514,9 +1745,16 @@ from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpnConnectionDeletedWaiter
 
-def get_vpn_connection_deleted_waiter() -> VpnConnectionDeletedWaiter:
-    return Session().client("ec2").get_waiter("vpn_connection_deleted")
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: VpnConnectionDeletedWaiter = client.get_waiter("vpn_connection_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [VpnConnectionDeletedWaiter](./waiters.md#vpnconnectiondeletedwaiter)
 
 
 ### wait

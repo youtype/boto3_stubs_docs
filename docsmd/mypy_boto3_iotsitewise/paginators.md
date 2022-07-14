@@ -21,6 +21,23 @@ def get_get_asset_property_aggregates_paginator() -> GetAssetPropertyAggregatesP
     return Session().client("iotsitewise").get_paginator("get_asset_property_aggregates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import GetAssetPropertyAggregatesPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: GetAssetPropertyAggregatesPaginator = client.get_paginator("get_asset_property_aggregates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [GetAssetPropertyAggregatesPaginator](./paginators.md#getassetpropertyaggregatespaginator)
+3. item: [:material-code-braces: GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef) 
+
 
 ### paginate
 
@@ -77,6 +94,23 @@ def get_get_asset_property_value_history_paginator() -> GetAssetPropertyValueHis
     return Session().client("iotsitewise").get_paginator("get_asset_property_value_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import GetAssetPropertyValueHistoryPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: GetAssetPropertyValueHistoryPaginator = client.get_paginator("get_asset_property_value_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [GetAssetPropertyValueHistoryPaginator](./paginators.md#getassetpropertyvaluehistorypaginator)
+3. item: [:material-code-braces: GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef) 
+
 
 ### paginate
 
@@ -126,6 +160,23 @@ from mypy_boto3_iotsitewise.paginator import GetInterpolatedAssetPropertyValuesP
 def get_get_interpolated_asset_property_values_paginator() -> GetInterpolatedAssetPropertyValuesPaginator:
     return Session().client("iotsitewise").get_paginator("get_interpolated_asset_property_values")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import GetInterpolatedAssetPropertyValuesPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: GetInterpolatedAssetPropertyValuesPaginator = client.get_paginator("get_interpolated_asset_property_values")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [GetInterpolatedAssetPropertyValuesPaginator](./paginators.md#getinterpolatedassetpropertyvaluespaginator)
+3. item: [:material-code-braces: GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef) 
 
 
 ### paginate
@@ -184,6 +235,23 @@ def get_list_access_policies_paginator() -> ListAccessPoliciesPaginator:
     return Session().client("iotsitewise").get_paginator("list_access_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAccessPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListAccessPoliciesPaginator = client.get_paginator("list_access_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListAccessPoliciesPaginator](./paginators.md#listaccesspoliciespaginator)
+3. item: [:material-code-braces: ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -232,6 +300,23 @@ def get_list_asset_models_paginator() -> ListAssetModelsPaginator:
     return Session().client("iotsitewise").get_paginator("list_asset_models")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssetModelsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListAssetModelsPaginator = client.get_paginator("list_asset_models")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListAssetModelsPaginator](./paginators.md#listassetmodelspaginator)
+3. item: [:material-code-braces: ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef) 
+
 
 ### paginate
 
@@ -272,6 +357,23 @@ from mypy_boto3_iotsitewise.paginator import ListAssetRelationshipsPaginator
 def get_list_asset_relationships_paginator() -> ListAssetRelationshipsPaginator:
     return Session().client("iotsitewise").get_paginator("list_asset_relationships")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssetRelationshipsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListAssetRelationshipsPaginator = client.get_paginator("list_asset_relationships")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListAssetRelationshipsPaginator](./paginators.md#listassetrelationshipspaginator)
+3. item: [:material-code-braces: ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef) 
 
 
 ### paginate
@@ -318,6 +420,23 @@ def get_list_assets_paginator() -> ListAssetsPaginator:
     return Session().client("iotsitewise").get_paginator("list_assets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssetsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListAssetsPaginator = client.get_paginator("list_assets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListAssetsPaginator](./paginators.md#listassetspaginator)
+3. item: [:material-code-braces: ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef) 
+
 
 ### paginate
 
@@ -361,6 +480,23 @@ from mypy_boto3_iotsitewise.paginator import ListAssociatedAssetsPaginator
 def get_list_associated_assets_paginator() -> ListAssociatedAssetsPaginator:
     return Session().client("iotsitewise").get_paginator("list_associated_assets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssociatedAssetsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListAssociatedAssetsPaginator = client.get_paginator("list_associated_assets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListAssociatedAssetsPaginator](./paginators.md#listassociatedassetspaginator)
+3. item: [:material-code-braces: ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef) 
 
 
 ### paginate
@@ -407,6 +543,23 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return Session().client("iotsitewise").get_paginator("list_dashboards")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListDashboardsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListDashboardsPaginator = client.get_paginator("list_dashboards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
+3. item: [:material-code-braces: ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef) 
+
 
 ### paginate
 
@@ -449,6 +602,23 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return Session().client("iotsitewise").get_paginator("list_gateways")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListGatewaysPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListGatewaysPaginator = client.get_paginator("list_gateways")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
+3. item: [:material-code-braces: ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef) 
+
 
 ### paginate
 
@@ -490,6 +660,23 @@ def get_list_portals_paginator() -> ListPortalsPaginator:
     return Session().client("iotsitewise").get_paginator("list_portals")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListPortalsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListPortalsPaginator = client.get_paginator("list_portals")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListPortalsPaginator](./paginators.md#listportalspaginator)
+3. item: [:material-code-braces: ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef) 
+
 
 ### paginate
 
@@ -530,6 +717,23 @@ from mypy_boto3_iotsitewise.paginator import ListProjectAssetsPaginator
 def get_list_project_assets_paginator() -> ListProjectAssetsPaginator:
     return Session().client("iotsitewise").get_paginator("list_project_assets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListProjectAssetsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListProjectAssetsPaginator = client.get_paginator("list_project_assets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListProjectAssetsPaginator](./paginators.md#listprojectassetspaginator)
+3. item: [:material-code-braces: ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef) 
 
 
 ### paginate
@@ -573,6 +777,23 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("iotsitewise").get_paginator("list_projects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
+
 
 ### paginate
 
@@ -614,6 +835,23 @@ from mypy_boto3_iotsitewise.paginator import ListTimeSeriesPaginator
 def get_list_time_series_paginator() -> ListTimeSeriesPaginator:
     return Session().client("iotsitewise").get_paginator("list_time_series")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListTimeSeriesPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListTimeSeriesPaginator = client.get_paginator("list_time_series")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListTimeSeriesPaginator](./paginators.md#listtimeseriespaginator)
+3. item: [:material-code-braces: ListTimeSeriesResponseTypeDef](./type_defs.md#listtimeseriesresponsetypedef) 
 
 
 ### paginate

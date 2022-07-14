@@ -3102,6 +3102,8 @@ def get_value() -> FlowLogsResourceTypeType:
 FlowLogsResourceTypeType = Literal[
     "NetworkInterface",
     "Subnet",
+    "TransitGateway",
+    "TransitGatewayAttachment",
     "VPC",
 ]
 ```

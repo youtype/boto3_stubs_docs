@@ -323,7 +323,9 @@ def create_studio_component(
     description: str = ...,
     ec2SecurityGroupIds: Sequence[str] = ...,
     initializationScripts: Sequence[StudioComponentInitializationScriptTypeDef] = ...,  # (3)
+    runtimeRoleArn: str = ...,
     scriptParameters: Sequence[ScriptParameterKeyValueTypeDef] = ...,  # (4)
+    secureInitializationRoleArn: str = ...,
     subtype: StudioComponentSubtypeType = ...,  # (5)
     tags: Mapping[str, str] = ...,
 ) -> CreateStudioComponentResponseTypeDef:  # (6)
@@ -1100,7 +1102,7 @@ parent.list_streaming_images(**kwargs)
 
 ### list\_streaming\_sessions
 
-Lists the streaming image resources in a studio.
+Lists the streaming sessions in a studio.
 
 Type annotations and code completion for `#!python boto3.client("nimble").list_streaming_sessions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
@@ -1640,7 +1642,9 @@ def update_studio_component(
     ec2SecurityGroupIds: Sequence[str] = ...,
     initializationScripts: Sequence[StudioComponentInitializationScriptTypeDef] = ...,  # (2)
     name: str = ...,
+    runtimeRoleArn: str = ...,
     scriptParameters: Sequence[ScriptParameterKeyValueTypeDef] = ...,  # (3)
+    secureInitializationRoleArn: str = ...,
     subtype: StudioComponentSubtypeType = ...,  # (4)
     type: StudioComponentTypeType = ...,  # (5)
 ) -> UpdateStudioComponentResponseTypeDef:  # (6)

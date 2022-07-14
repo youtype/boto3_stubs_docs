@@ -21,6 +21,23 @@ def get_get_behavior_model_training_summaries_paginator() -> GetBehaviorModelTra
     return Session().client("iot").get_paginator("get_behavior_model_training_summaries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: GetBehaviorModelTrainingSummariesPaginator = client.get_paginator("get_behavior_model_training_summaries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [GetBehaviorModelTrainingSummariesPaginator](./paginators.md#getbehaviormodeltrainingsummariespaginator)
+3. item: [:material-code-braces: GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_iot.paginator import ListActiveViolationsPaginator
 def get_list_active_violations_paginator() -> ListActiveViolationsPaginator:
     return Session().client("iot").get_paginator("list_active_violations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListActiveViolationsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListActiveViolationsPaginator = client.get_paginator("list_active_violations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListActiveViolationsPaginator](./paginators.md#listactiveviolationspaginator)
+3. item: [:material-code-braces: ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef) 
 
 
 ### paginate
@@ -111,6 +145,23 @@ def get_list_attached_policies_paginator() -> ListAttachedPoliciesPaginator:
     return Session().client("iot").get_paginator("list_attached_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListAttachedPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListAttachedPoliciesPaginator = client.get_paginator("list_attached_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListAttachedPoliciesPaginator](./paginators.md#listattachedpoliciespaginator)
+3. item: [:material-code-braces: ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -153,6 +204,23 @@ from mypy_boto3_iot.paginator import ListAuditFindingsPaginator
 def get_list_audit_findings_paginator() -> ListAuditFindingsPaginator:
     return Session().client("iot").get_paginator("list_audit_findings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListAuditFindingsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListAuditFindingsPaginator = client.get_paginator("list_audit_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListAuditFindingsPaginator](./paginators.md#listauditfindingspaginator)
+3. item: [:material-code-braces: ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef) 
 
 
 ### paginate
@@ -202,6 +270,23 @@ def get_list_audit_mitigation_actions_executions_paginator() -> ListAuditMitigat
     return Session().client("iot").get_paginator("list_audit_mitigation_actions_executions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListAuditMitigationActionsExecutionsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListAuditMitigationActionsExecutionsPaginator = client.get_paginator("list_audit_mitigation_actions_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListAuditMitigationActionsExecutionsPaginator](./paginators.md#listauditmitigationactionsexecutionspaginator)
+3. item: [:material-code-braces: ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef) 
+
 
 ### paginate
 
@@ -247,6 +332,23 @@ from mypy_boto3_iot.paginator import ListAuditMitigationActionsTasksPaginator
 def get_list_audit_mitigation_actions_tasks_paginator() -> ListAuditMitigationActionsTasksPaginator:
     return Session().client("iot").get_paginator("list_audit_mitigation_actions_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListAuditMitigationActionsTasksPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListAuditMitigationActionsTasksPaginator = client.get_paginator("list_audit_mitigation_actions_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListAuditMitigationActionsTasksPaginator](./paginators.md#listauditmitigationactionstaskspaginator)
+3. item: [:material-code-braces: ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef) 
 
 
 ### paginate
@@ -296,6 +398,23 @@ def get_list_audit_suppressions_paginator() -> ListAuditSuppressionsPaginator:
     return Session().client("iot").get_paginator("list_audit_suppressions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListAuditSuppressionsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListAuditSuppressionsPaginator = client.get_paginator("list_audit_suppressions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListAuditSuppressionsPaginator](./paginators.md#listauditsuppressionspaginator)
+3. item: [:material-code-braces: ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef) 
+
 
 ### paginate
 
@@ -340,6 +459,23 @@ from mypy_boto3_iot.paginator import ListAuditTasksPaginator
 def get_list_audit_tasks_paginator() -> ListAuditTasksPaginator:
     return Session().client("iot").get_paginator("list_audit_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListAuditTasksPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListAuditTasksPaginator = client.get_paginator("list_audit_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListAuditTasksPaginator](./paginators.md#listaudittaskspaginator)
+3. item: [:material-code-braces: ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef) 
 
 
 ### paginate
@@ -389,6 +525,23 @@ def get_list_authorizers_paginator() -> ListAuthorizersPaginator:
     return Session().client("iot").get_paginator("list_authorizers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListAuthorizersPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListAuthorizersPaginator = client.get_paginator("list_authorizers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListAuthorizersPaginator](./paginators.md#listauthorizerspaginator)
+3. item: [:material-code-braces: ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef) 
+
 
 ### paginate
 
@@ -433,6 +586,23 @@ def get_list_billing_groups_paginator() -> ListBillingGroupsPaginator:
     return Session().client("iot").get_paginator("list_billing_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListBillingGroupsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListBillingGroupsPaginator = client.get_paginator("list_billing_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListBillingGroupsPaginator](./paginators.md#listbillinggroupspaginator)
+3. item: [:material-code-braces: ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -474,6 +644,23 @@ from mypy_boto3_iot.paginator import ListCACertificatesPaginator
 def get_list_ca_certificates_paginator() -> ListCACertificatesPaginator:
     return Session().client("iot").get_paginator("list_ca_certificates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListCACertificatesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListCACertificatesPaginator = client.get_paginator("list_ca_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListCACertificatesPaginator](./paginators.md#listcacertificatespaginator)
+3. item: [:material-code-braces: ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef) 
 
 
 ### paginate
@@ -517,6 +704,23 @@ def get_list_certificates_paginator() -> ListCertificatesPaginator:
     return Session().client("iot").get_paginator("list_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListCertificatesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListCertificatesPaginator = client.get_paginator("list_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+3. item: [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
+
 
 ### paginate
 
@@ -558,6 +762,23 @@ from mypy_boto3_iot.paginator import ListCertificatesByCAPaginator
 def get_list_certificates_by_ca_paginator() -> ListCertificatesByCAPaginator:
     return Session().client("iot").get_paginator("list_certificates_by_ca")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListCertificatesByCAPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListCertificatesByCAPaginator = client.get_paginator("list_certificates_by_ca")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListCertificatesByCAPaginator](./paginators.md#listcertificatesbycapaginator)
+3. item: [:material-code-braces: ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef) 
 
 
 ### paginate
@@ -602,6 +823,23 @@ def get_list_custom_metrics_paginator() -> ListCustomMetricsPaginator:
     return Session().client("iot").get_paginator("list_custom_metrics")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListCustomMetricsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListCustomMetricsPaginator = client.get_paginator("list_custom_metrics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListCustomMetricsPaginator](./paginators.md#listcustommetricspaginator)
+3. item: [:material-code-braces: ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef) 
+
 
 ### paginate
 
@@ -642,6 +880,23 @@ from mypy_boto3_iot.paginator import ListDetectMitigationActionsExecutionsPagina
 def get_list_detect_mitigation_actions_executions_paginator() -> ListDetectMitigationActionsExecutionsPaginator:
     return Session().client("iot").get_paginator("list_detect_mitigation_actions_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListDetectMitigationActionsExecutionsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListDetectMitigationActionsExecutionsPaginator = client.get_paginator("list_detect_mitigation_actions_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListDetectMitigationActionsExecutionsPaginator](./paginators.md#listdetectmitigationactionsexecutionspaginator)
+3. item: [:material-code-braces: ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef) 
 
 
 ### paginate
@@ -689,6 +944,23 @@ def get_list_detect_mitigation_actions_tasks_paginator() -> ListDetectMitigation
     return Session().client("iot").get_paginator("list_detect_mitigation_actions_tasks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListDetectMitigationActionsTasksPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListDetectMitigationActionsTasksPaginator = client.get_paginator("list_detect_mitigation_actions_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListDetectMitigationActionsTasksPaginator](./paginators.md#listdetectmitigationactionstaskspaginator)
+3. item: [:material-code-braces: ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef) 
+
 
 ### paginate
 
@@ -733,6 +1005,23 @@ def get_list_dimensions_paginator() -> ListDimensionsPaginator:
     return Session().client("iot").get_paginator("list_dimensions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListDimensionsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListDimensionsPaginator = client.get_paginator("list_dimensions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListDimensionsPaginator](./paginators.md#listdimensionspaginator)
+3. item: [:material-code-braces: ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef) 
+
 
 ### paginate
 
@@ -773,6 +1062,23 @@ from mypy_boto3_iot.paginator import ListDomainConfigurationsPaginator
 def get_list_domain_configurations_paginator() -> ListDomainConfigurationsPaginator:
     return Session().client("iot").get_paginator("list_domain_configurations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListDomainConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListDomainConfigurationsPaginator = client.get_paginator("list_domain_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListDomainConfigurationsPaginator](./paginators.md#listdomainconfigurationspaginator)
+3. item: [:material-code-braces: ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef) 
 
 
 ### paginate
@@ -817,6 +1123,23 @@ def get_list_fleet_metrics_paginator() -> ListFleetMetricsPaginator:
     return Session().client("iot").get_paginator("list_fleet_metrics")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListFleetMetricsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListFleetMetricsPaginator = client.get_paginator("list_fleet_metrics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListFleetMetricsPaginator](./paginators.md#listfleetmetricspaginator)
+3. item: [:material-code-braces: ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef) 
+
 
 ### paginate
 
@@ -858,6 +1181,23 @@ def get_list_indices_paginator() -> ListIndicesPaginator:
     return Session().client("iot").get_paginator("list_indices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListIndicesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListIndicesPaginator = client.get_paginator("list_indices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListIndicesPaginator](./paginators.md#listindicespaginator)
+3. item: [:material-code-braces: ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef) 
+
 
 ### paginate
 
@@ -898,6 +1238,23 @@ from mypy_boto3_iot.paginator import ListJobExecutionsForJobPaginator
 def get_list_job_executions_for_job_paginator() -> ListJobExecutionsForJobPaginator:
     return Session().client("iot").get_paginator("list_job_executions_for_job")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListJobExecutionsForJobPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListJobExecutionsForJobPaginator = client.get_paginator("list_job_executions_for_job")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListJobExecutionsForJobPaginator](./paginators.md#listjobexecutionsforjobpaginator)
+3. item: [:material-code-braces: ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef) 
 
 
 ### paginate
@@ -942,6 +1299,23 @@ from mypy_boto3_iot.paginator import ListJobExecutionsForThingPaginator
 def get_list_job_executions_for_thing_paginator() -> ListJobExecutionsForThingPaginator:
     return Session().client("iot").get_paginator("list_job_executions_for_thing")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListJobExecutionsForThingPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListJobExecutionsForThingPaginator = client.get_paginator("list_job_executions_for_thing")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListJobExecutionsForThingPaginator](./paginators.md#listjobexecutionsforthingpaginator)
+3. item: [:material-code-braces: ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef) 
 
 
 ### paginate
@@ -989,6 +1363,23 @@ def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
     return Session().client("iot").get_paginator("list_job_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListJobTemplatesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListJobTemplatesPaginator = client.get_paginator("list_job_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
+3. item: [:material-code-braces: ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -1029,6 +1420,23 @@ from mypy_boto3_iot.paginator import ListJobsPaginator
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("iot").get_paginator("list_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
 
 ### paginate
@@ -1077,6 +1485,23 @@ from mypy_boto3_iot.paginator import ListMetricValuesPaginator
 def get_list_metric_values_paginator() -> ListMetricValuesPaginator:
     return Session().client("iot").get_paginator("list_metric_values")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListMetricValuesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListMetricValuesPaginator = client.get_paginator("list_metric_values")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListMetricValuesPaginator](./paginators.md#listmetricvaluespaginator)
+3. item: [:material-code-braces: ListMetricValuesResponseTypeDef](./type_defs.md#listmetricvaluesresponsetypedef) 
 
 
 ### paginate
@@ -1129,6 +1554,23 @@ def get_list_mitigation_actions_paginator() -> ListMitigationActionsPaginator:
     return Session().client("iot").get_paginator("list_mitigation_actions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListMitigationActionsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListMitigationActionsPaginator = client.get_paginator("list_mitigation_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListMitigationActionsPaginator](./paginators.md#listmitigationactionspaginator)
+3. item: [:material-code-braces: ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef) 
+
 
 ### paginate
 
@@ -1171,6 +1613,23 @@ from mypy_boto3_iot.paginator import ListOTAUpdatesPaginator
 def get_list_ota_updates_paginator() -> ListOTAUpdatesPaginator:
     return Session().client("iot").get_paginator("list_ota_updates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListOTAUpdatesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListOTAUpdatesPaginator = client.get_paginator("list_ota_updates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListOTAUpdatesPaginator](./paginators.md#listotaupdatespaginator)
+3. item: [:material-code-braces: ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef) 
 
 
 ### paginate
@@ -1215,6 +1674,23 @@ def get_list_outgoing_certificates_paginator() -> ListOutgoingCertificatesPagina
     return Session().client("iot").get_paginator("list_outgoing_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListOutgoingCertificatesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListOutgoingCertificatesPaginator = client.get_paginator("list_outgoing_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListOutgoingCertificatesPaginator](./paginators.md#listoutgoingcertificatespaginator)
+3. item: [:material-code-braces: ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef) 
+
 
 ### paginate
 
@@ -1257,6 +1733,23 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return Session().client("iot").get_paginator("list_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListPoliciesPaginator = client.get_paginator("list_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+3. item: [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -1298,6 +1791,23 @@ from mypy_boto3_iot.paginator import ListPolicyPrincipalsPaginator
 def get_list_policy_principals_paginator() -> ListPolicyPrincipalsPaginator:
     return Session().client("iot").get_paginator("list_policy_principals")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListPolicyPrincipalsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListPolicyPrincipalsPaginator = client.get_paginator("list_policy_principals")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListPolicyPrincipalsPaginator](./paginators.md#listpolicyprincipalspaginator)
+3. item: [:material-code-braces: ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef) 
 
 
 ### paginate
@@ -1342,6 +1852,23 @@ def get_list_principal_policies_paginator() -> ListPrincipalPoliciesPaginator:
     return Session().client("iot").get_paginator("list_principal_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListPrincipalPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListPrincipalPoliciesPaginator = client.get_paginator("list_principal_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListPrincipalPoliciesPaginator](./paginators.md#listprincipalpoliciespaginator)
+3. item: [:material-code-braces: ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -1385,6 +1912,23 @@ def get_list_principal_things_paginator() -> ListPrincipalThingsPaginator:
     return Session().client("iot").get_paginator("list_principal_things")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListPrincipalThingsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListPrincipalThingsPaginator = client.get_paginator("list_principal_things")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListPrincipalThingsPaginator](./paginators.md#listprincipalthingspaginator)
+3. item: [:material-code-braces: ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef) 
+
 
 ### paginate
 
@@ -1426,6 +1970,23 @@ from mypy_boto3_iot.paginator import ListProvisioningTemplateVersionsPaginator
 def get_list_provisioning_template_versions_paginator() -> ListProvisioningTemplateVersionsPaginator:
     return Session().client("iot").get_paginator("list_provisioning_template_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListProvisioningTemplateVersionsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListProvisioningTemplateVersionsPaginator = client.get_paginator("list_provisioning_template_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListProvisioningTemplateVersionsPaginator](./paginators.md#listprovisioningtemplateversionspaginator)
+3. item: [:material-code-braces: ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef) 
 
 
 ### paginate
@@ -1469,6 +2030,23 @@ def get_list_provisioning_templates_paginator() -> ListProvisioningTemplatesPagi
     return Session().client("iot").get_paginator("list_provisioning_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListProvisioningTemplatesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListProvisioningTemplatesPaginator = client.get_paginator("list_provisioning_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListProvisioningTemplatesPaginator](./paginators.md#listprovisioningtemplatespaginator)
+3. item: [:material-code-braces: ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -1509,6 +2087,23 @@ from mypy_boto3_iot.paginator import ListRoleAliasesPaginator
 def get_list_role_aliases_paginator() -> ListRoleAliasesPaginator:
     return Session().client("iot").get_paginator("list_role_aliases")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListRoleAliasesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListRoleAliasesPaginator = client.get_paginator("list_role_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListRoleAliasesPaginator](./paginators.md#listrolealiasespaginator)
+3. item: [:material-code-braces: ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef) 
 
 
 ### paginate
@@ -1552,6 +2147,23 @@ def get_list_scheduled_audits_paginator() -> ListScheduledAuditsPaginator:
     return Session().client("iot").get_paginator("list_scheduled_audits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListScheduledAuditsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListScheduledAuditsPaginator = client.get_paginator("list_scheduled_audits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListScheduledAuditsPaginator](./paginators.md#listscheduledauditspaginator)
+3. item: [:material-code-braces: ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef) 
+
 
 ### paginate
 
@@ -1592,6 +2204,23 @@ from mypy_boto3_iot.paginator import ListSecurityProfilesPaginator
 def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
     return Session().client("iot").get_paginator("list_security_profiles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListSecurityProfilesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListSecurityProfilesPaginator = client.get_paginator("list_security_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
+3. item: [:material-code-braces: ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef) 
 
 
 ### paginate
@@ -1636,6 +2265,23 @@ def get_list_security_profiles_for_target_paginator() -> ListSecurityProfilesFor
     return Session().client("iot").get_paginator("list_security_profiles_for_target")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListSecurityProfilesForTargetPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListSecurityProfilesForTargetPaginator = client.get_paginator("list_security_profiles_for_target")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListSecurityProfilesForTargetPaginator](./paginators.md#listsecurityprofilesfortargetpaginator)
+3. item: [:material-code-braces: ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef) 
+
 
 ### paginate
 
@@ -1679,6 +2325,23 @@ def get_list_streams_paginator() -> ListStreamsPaginator:
     return Session().client("iot").get_paginator("list_streams")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListStreamsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListStreamsPaginator = client.get_paginator("list_streams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+3. item: [:material-code-braces: ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef) 
+
 
 ### paginate
 
@@ -1720,6 +2383,23 @@ from mypy_boto3_iot.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("iot").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
 
 ### paginate
@@ -1763,6 +2443,23 @@ def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
     return Session().client("iot").get_paginator("list_targets_for_policy")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListTargetsForPolicyPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListTargetsForPolicyPaginator = client.get_paginator("list_targets_for_policy")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
+3. item: [:material-code-braces: ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef) 
+
 
 ### paginate
 
@@ -1805,6 +2502,23 @@ def get_list_targets_for_security_profile_paginator() -> ListTargetsForSecurityP
     return Session().client("iot").get_paginator("list_targets_for_security_profile")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListTargetsForSecurityProfilePaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListTargetsForSecurityProfilePaginator = client.get_paginator("list_targets_for_security_profile")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListTargetsForSecurityProfilePaginator](./paginators.md#listtargetsforsecurityprofilepaginator)
+3. item: [:material-code-braces: ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef) 
+
 
 ### paginate
 
@@ -1846,6 +2560,23 @@ from mypy_boto3_iot.paginator import ListThingGroupsPaginator
 def get_list_thing_groups_paginator() -> ListThingGroupsPaginator:
     return Session().client("iot").get_paginator("list_thing_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingGroupsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingGroupsPaginator = client.get_paginator("list_thing_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingGroupsPaginator](./paginators.md#listthinggroupspaginator)
+3. item: [:material-code-braces: ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef) 
 
 
 ### paginate
@@ -1891,6 +2622,23 @@ def get_list_thing_groups_for_thing_paginator() -> ListThingGroupsForThingPagina
     return Session().client("iot").get_paginator("list_thing_groups_for_thing")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingGroupsForThingPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingGroupsForThingPaginator = client.get_paginator("list_thing_groups_for_thing")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingGroupsForThingPaginator](./paginators.md#listthinggroupsforthingpaginator)
+3. item: [:material-code-braces: ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef) 
+
 
 ### paginate
 
@@ -1933,6 +2681,23 @@ def get_list_thing_principals_paginator() -> ListThingPrincipalsPaginator:
     return Session().client("iot").get_paginator("list_thing_principals")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingPrincipalsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingPrincipalsPaginator = client.get_paginator("list_thing_principals")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingPrincipalsPaginator](./paginators.md#listthingprincipalspaginator)
+3. item: [:material-code-braces: ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef) 
+
 
 ### paginate
 
@@ -1974,6 +2739,23 @@ from mypy_boto3_iot.paginator import ListThingRegistrationTaskReportsPaginator
 def get_list_thing_registration_task_reports_paginator() -> ListThingRegistrationTaskReportsPaginator:
     return Session().client("iot").get_paginator("list_thing_registration_task_reports")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingRegistrationTaskReportsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingRegistrationTaskReportsPaginator = client.get_paginator("list_thing_registration_task_reports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingRegistrationTaskReportsPaginator](./paginators.md#listthingregistrationtaskreportspaginator)
+3. item: [:material-code-braces: ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef) 
 
 
 ### paginate
@@ -2020,6 +2802,23 @@ def get_list_thing_registration_tasks_paginator() -> ListThingRegistrationTasksP
     return Session().client("iot").get_paginator("list_thing_registration_tasks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingRegistrationTasksPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingRegistrationTasksPaginator = client.get_paginator("list_thing_registration_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingRegistrationTasksPaginator](./paginators.md#listthingregistrationtaskspaginator)
+3. item: [:material-code-braces: ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef) 
+
 
 ### paginate
 
@@ -2063,6 +2862,23 @@ def get_list_thing_types_paginator() -> ListThingTypesPaginator:
     return Session().client("iot").get_paginator("list_thing_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingTypesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingTypesPaginator = client.get_paginator("list_thing_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingTypesPaginator](./paginators.md#listthingtypespaginator)
+3. item: [:material-code-braces: ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef) 
+
 
 ### paginate
 
@@ -2104,6 +2920,23 @@ from mypy_boto3_iot.paginator import ListThingsPaginator
 def get_list_things_paginator() -> ListThingsPaginator:
     return Session().client("iot").get_paginator("list_things")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingsPaginator = client.get_paginator("list_things")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingsPaginator](./paginators.md#listthingspaginator)
+3. item: [:material-code-braces: ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef) 
 
 
 ### paginate
@@ -2150,6 +2983,23 @@ def get_list_things_in_billing_group_paginator() -> ListThingsInBillingGroupPagi
     return Session().client("iot").get_paginator("list_things_in_billing_group")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingsInBillingGroupPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingsInBillingGroupPaginator = client.get_paginator("list_things_in_billing_group")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingsInBillingGroupPaginator](./paginators.md#listthingsinbillinggrouppaginator)
+3. item: [:material-code-braces: ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef) 
+
 
 ### paginate
 
@@ -2191,6 +3041,23 @@ from mypy_boto3_iot.paginator import ListThingsInThingGroupPaginator
 def get_list_things_in_thing_group_paginator() -> ListThingsInThingGroupPaginator:
     return Session().client("iot").get_paginator("list_things_in_thing_group")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListThingsInThingGroupPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListThingsInThingGroupPaginator = client.get_paginator("list_things_in_thing_group")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListThingsInThingGroupPaginator](./paginators.md#listthingsinthinggrouppaginator)
+3. item: [:material-code-braces: ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef) 
 
 
 ### paginate
@@ -2235,6 +3102,23 @@ def get_list_topic_rule_destinations_paginator() -> ListTopicRuleDestinationsPag
     return Session().client("iot").get_paginator("list_topic_rule_destinations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListTopicRuleDestinationsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListTopicRuleDestinationsPaginator = client.get_paginator("list_topic_rule_destinations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListTopicRuleDestinationsPaginator](./paginators.md#listtopicruledestinationspaginator)
+3. item: [:material-code-braces: ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef) 
+
 
 ### paginate
 
@@ -2275,6 +3159,23 @@ from mypy_boto3_iot.paginator import ListTopicRulesPaginator
 def get_list_topic_rules_paginator() -> ListTopicRulesPaginator:
     return Session().client("iot").get_paginator("list_topic_rules")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListTopicRulesPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListTopicRulesPaginator = client.get_paginator("list_topic_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListTopicRulesPaginator](./paginators.md#listtopicrulespaginator)
+3. item: [:material-code-braces: ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef) 
 
 
 ### paginate
@@ -2319,6 +3220,23 @@ def get_list_v2_logging_levels_paginator() -> ListV2LoggingLevelsPaginator:
     return Session().client("iot").get_paginator("list_v2_logging_levels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListV2LoggingLevelsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListV2LoggingLevelsPaginator = client.get_paginator("list_v2_logging_levels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListV2LoggingLevelsPaginator](./paginators.md#listv2logginglevelspaginator)
+3. item: [:material-code-braces: ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef) 
+
 
 ### paginate
 
@@ -2361,6 +3279,23 @@ from mypy_boto3_iot.paginator import ListViolationEventsPaginator
 def get_list_violation_events_paginator() -> ListViolationEventsPaginator:
     return Session().client("iot").get_paginator("list_violation_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iot.paginator import ListViolationEventsPaginator
+
+session = Session()
+
+client = Session().client("iot")  # (1)
+paginator: ListViolationEventsPaginator = client.get_paginator("list_violation_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTClient](./client.md)
+2. paginator: [ListViolationEventsPaginator](./paginators.md#listviolationeventspaginator)
+3. item: [:material-code-braces: ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef) 
 
 
 ### paginate

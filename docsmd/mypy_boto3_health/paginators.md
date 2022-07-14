@@ -21,6 +21,23 @@ def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffec
     return Session().client("health").get_paginator("describe_affected_accounts_for_organization")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator
+
+session = Session()
+
+client = Session().client("health")  # (1)
+paginator: DescribeAffectedAccountsForOrganizationPaginator = client.get_paginator("describe_affected_accounts_for_organization")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [HealthClient](./client.md)
+2. paginator: [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
+3. item: [:material-code-braces: DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_health.paginator import DescribeAffectedEntitiesPaginator
 def get_describe_affected_entities_paginator() -> DescribeAffectedEntitiesPaginator:
     return Session().client("health").get_paginator("describe_affected_entities")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_health.paginator import DescribeAffectedEntitiesPaginator
+
+session = Session()
+
+client = Session().client("health")  # (1)
+paginator: DescribeAffectedEntitiesPaginator = client.get_paginator("describe_affected_entities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [HealthClient](./client.md)
+2. paginator: [DescribeAffectedEntitiesPaginator](./paginators.md#describeaffectedentitiespaginator)
+3. item: [:material-code-braces: DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_describe_affected_entities_for_organization_paginator() -> DescribeAffec
     return Session().client("health").get_paginator("describe_affected_entities_for_organization")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_health.paginator import DescribeAffectedEntitiesForOrganizationPaginator
+
+session = Session()
+
+client = Session().client("health")  # (1)
+paginator: DescribeAffectedEntitiesForOrganizationPaginator = client.get_paginator("describe_affected_entities_for_organization")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [HealthClient](./client.md)
+2. paginator: [DescribeAffectedEntitiesForOrganizationPaginator](./paginators.md#describeaffectedentitiesfororganizationpaginator)
+3. item: [:material-code-braces: DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef) 
+
 
 ### paginate
 
@@ -150,6 +201,23 @@ from mypy_boto3_health.paginator import DescribeEventAggregatesPaginator
 def get_describe_event_aggregates_paginator() -> DescribeEventAggregatesPaginator:
     return Session().client("health").get_paginator("describe_event_aggregates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_health.paginator import DescribeEventAggregatesPaginator
+
+session = Session()
+
+client = Session().client("health")  # (1)
+paginator: DescribeEventAggregatesPaginator = client.get_paginator("describe_event_aggregates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [HealthClient](./client.md)
+2. paginator: [DescribeEventAggregatesPaginator](./paginators.md#describeeventaggregatespaginator)
+3. item: [:material-code-braces: DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef) 
 
 
 ### paginate
@@ -196,6 +264,23 @@ def get_describe_event_types_paginator() -> DescribeEventTypesPaginator:
     return Session().client("health").get_paginator("describe_event_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_health.paginator import DescribeEventTypesPaginator
+
+session = Session()
+
+client = Session().client("health")  # (1)
+paginator: DescribeEventTypesPaginator = client.get_paginator("describe_event_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [HealthClient](./client.md)
+2. paginator: [DescribeEventTypesPaginator](./paginators.md#describeeventtypespaginator)
+3. item: [:material-code-braces: DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef) 
+
 
 ### paginate
 
@@ -240,6 +325,23 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("health").get_paginator("describe_events")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_health.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("health")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [HealthClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
+
 
 ### paginate
 
@@ -283,6 +385,23 @@ from mypy_boto3_health.paginator import DescribeEventsForOrganizationPaginator
 def get_describe_events_for_organization_paginator() -> DescribeEventsForOrganizationPaginator:
     return Session().client("health").get_paginator("describe_events_for_organization")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_health.paginator import DescribeEventsForOrganizationPaginator
+
+session = Session()
+
+client = Session().client("health")  # (1)
+paginator: DescribeEventsForOrganizationPaginator = client.get_paginator("describe_events_for_organization")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [HealthClient](./client.md)
+2. paginator: [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)
+3. item: [:material-code-braces: DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef) 
 
 
 ### paginate

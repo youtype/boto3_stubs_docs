@@ -21,6 +21,23 @@ def get_describe_table_paginator() -> DescribeTablePaginator:
     return Session().client("redshift-data").get_paginator("describe_table")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_data.paginator import DescribeTablePaginator
+
+session = Session()
+
+client = Session().client("redshift-data")  # (1)
+paginator: DescribeTablePaginator = client.get_paginator("describe_table")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftDataAPIServiceClient](./client.md)
+2. paginator: [DescribeTablePaginator](./paginators.md#describetablepaginator)
+3. item: [:material-code-braces: DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef) 
+
 
 ### paginate
 
@@ -70,6 +87,23 @@ def get_get_statement_result_paginator() -> GetStatementResultPaginator:
     return Session().client("redshift-data").get_paginator("get_statement_result")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_data.paginator import GetStatementResultPaginator
+
+session = Session()
+
+client = Session().client("redshift-data")  # (1)
+paginator: GetStatementResultPaginator = client.get_paginator("get_statement_result")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftDataAPIServiceClient](./client.md)
+2. paginator: [GetStatementResultPaginator](./paginators.md#getstatementresultpaginator)
+3. item: [:material-code-braces: GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef) 
+
 
 ### paginate
 
@@ -111,6 +145,23 @@ from mypy_boto3_redshift_data.paginator import ListDatabasesPaginator
 def get_list_databases_paginator() -> ListDatabasesPaginator:
     return Session().client("redshift-data").get_paginator("list_databases")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_data.paginator import ListDatabasesPaginator
+
+session = Session()
+
+client = Session().client("redshift-data")  # (1)
+paginator: ListDatabasesPaginator = client.get_paginator("list_databases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftDataAPIServiceClient](./client.md)
+2. paginator: [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+3. item: [:material-code-braces: ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef) 
 
 
 ### paginate
@@ -157,6 +208,23 @@ from mypy_boto3_redshift_data.paginator import ListSchemasPaginator
 def get_list_schemas_paginator() -> ListSchemasPaginator:
     return Session().client("redshift-data").get_paginator("list_schemas")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_data.paginator import ListSchemasPaginator
+
+session = Session()
+
+client = Session().client("redshift-data")  # (1)
+paginator: ListSchemasPaginator = client.get_paginator("list_schemas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftDataAPIServiceClient](./client.md)
+2. paginator: [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+3. item: [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
 
 ### paginate
@@ -206,6 +274,23 @@ def get_list_statements_paginator() -> ListStatementsPaginator:
     return Session().client("redshift-data").get_paginator("list_statements")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_data.paginator import ListStatementsPaginator
+
+session = Session()
+
+client = Session().client("redshift-data")  # (1)
+paginator: ListStatementsPaginator = client.get_paginator("list_statements")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftDataAPIServiceClient](./client.md)
+2. paginator: [ListStatementsPaginator](./paginators.md#liststatementspaginator)
+3. item: [:material-code-braces: ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef) 
+
 
 ### paginate
 
@@ -250,6 +335,23 @@ from mypy_boto3_redshift_data.paginator import ListTablesPaginator
 def get_list_tables_paginator() -> ListTablesPaginator:
     return Session().client("redshift-data").get_paginator("list_tables")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_data.paginator import ListTablesPaginator
+
+session = Session()
+
+client = Session().client("redshift-data")  # (1)
+paginator: ListTablesPaginator = client.get_paginator("list_tables")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftDataAPIServiceClient](./client.md)
+2. paginator: [ListTablesPaginator](./paginators.md#listtablespaginator)
+3. item: [:material-code-braces: ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef) 
 
 
 ### paginate

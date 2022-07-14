@@ -21,6 +21,23 @@ def get_describe_addresses_paginator() -> DescribeAddressesPaginator:
     return Session().client("snowball").get_paginator("describe_addresses")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snowball.paginator import DescribeAddressesPaginator
+
+session = Session()
+
+client = Session().client("snowball")  # (1)
+paginator: DescribeAddressesPaginator = client.get_paginator("describe_addresses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowballClient](./client.md)
+2. paginator: [DescribeAddressesPaginator](./paginators.md#describeaddressespaginator)
+3. item: [:material-code-braces: DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_snowball.paginator import ListClusterJobsPaginator
 def get_list_cluster_jobs_paginator() -> ListClusterJobsPaginator:
     return Session().client("snowball").get_paginator("list_cluster_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snowball.paginator import ListClusterJobsPaginator
+
+session = Session()
+
+client = Session().client("snowball")  # (1)
+paginator: ListClusterJobsPaginator = client.get_paginator("list_cluster_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowballClient](./client.md)
+2. paginator: [ListClusterJobsPaginator](./paginators.md#listclusterjobspaginator)
+3. item: [:material-code-braces: ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef) 
 
 
 ### paginate
@@ -104,6 +138,23 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return Session().client("snowball").get_paginator("list_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snowball.paginator import ListClustersPaginator
+
+session = Session()
+
+client = Session().client("snowball")  # (1)
+paginator: ListClustersPaginator = client.get_paginator("list_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowballClient](./client.md)
+2. paginator: [ListClustersPaginator](./paginators.md#listclusterspaginator)
+3. item: [:material-code-braces: ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ def get_list_compatible_images_paginator() -> ListCompatibleImagesPaginator:
     return Session().client("snowball").get_paginator("list_compatible_images")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snowball.paginator import ListCompatibleImagesPaginator
+
+session = Session()
+
+client = Session().client("snowball")  # (1)
+paginator: ListCompatibleImagesPaginator = client.get_paginator("list_compatible_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowballClient](./client.md)
+2. paginator: [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
+3. item: [:material-code-braces: ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef) 
+
 
 ### paginate
 
@@ -185,6 +253,23 @@ from mypy_boto3_snowball.paginator import ListJobsPaginator
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("snowball").get_paginator("list_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snowball.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("snowball")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowballClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef) 
 
 
 ### paginate

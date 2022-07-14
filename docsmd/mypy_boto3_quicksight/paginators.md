@@ -21,6 +21,23 @@ def get_list_analyses_paginator() -> ListAnalysesPaginator:
     return Session().client("quicksight").get_paginator("list_analyses")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListAnalysesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListAnalysesPaginator = client.get_paginator("list_analyses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListAnalysesPaginator](./paginators.md#listanalysespaginator)
+3. item: [:material-code-braces: ListAnalysesResponseTypeDef](./type_defs.md#listanalysesresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_quicksight.paginator import ListDashboardVersionsPaginator
 def get_list_dashboard_versions_paginator() -> ListDashboardVersionsPaginator:
     return Session().client("quicksight").get_paginator("list_dashboard_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListDashboardVersionsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListDashboardVersionsPaginator = client.get_paginator("list_dashboard_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListDashboardVersionsPaginator](./paginators.md#listdashboardversionspaginator)
+3. item: [:material-code-braces: ListDashboardVersionsResponseTypeDef](./type_defs.md#listdashboardversionsresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return Session().client("quicksight").get_paginator("list_dashboards")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListDashboardsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListDashboardsPaginator = client.get_paginator("list_dashboards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
+3. item: [:material-code-braces: ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_quicksight.paginator import ListDataSetsPaginator
 def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return Session().client("quicksight").get_paginator("list_data_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListDataSetsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListDataSetsPaginator = client.get_paginator("list_data_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
 
 ### paginate
@@ -191,6 +259,23 @@ def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
     return Session().client("quicksight").get_paginator("list_data_sources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListDataSourcesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListDataSourcesPaginator = client.get_paginator("list_data_sources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
+3. item: [:material-code-braces: ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef) 
+
 
 ### paginate
 
@@ -232,6 +317,23 @@ from mypy_boto3_quicksight.paginator import ListIngestionsPaginator
 def get_list_ingestions_paginator() -> ListIngestionsPaginator:
     return Session().client("quicksight").get_paginator("list_ingestions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListIngestionsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListIngestionsPaginator = client.get_paginator("list_ingestions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListIngestionsPaginator](./paginators.md#listingestionspaginator)
+3. item: [:material-code-braces: ListIngestionsResponseTypeDef](./type_defs.md#listingestionsresponsetypedef) 
 
 
 ### paginate
@@ -277,6 +379,23 @@ def get_list_namespaces_paginator() -> ListNamespacesPaginator:
     return Session().client("quicksight").get_paginator("list_namespaces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListNamespacesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListNamespacesPaginator = client.get_paginator("list_namespaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
+3. item: [:material-code-braces: ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef) 
+
 
 ### paginate
 
@@ -318,6 +437,23 @@ from mypy_boto3_quicksight.paginator import ListTemplateAliasesPaginator
 def get_list_template_aliases_paginator() -> ListTemplateAliasesPaginator:
     return Session().client("quicksight").get_paginator("list_template_aliases")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListTemplateAliasesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListTemplateAliasesPaginator = client.get_paginator("list_template_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListTemplateAliasesPaginator](./paginators.md#listtemplatealiasespaginator)
+3. item: [:material-code-braces: ListTemplateAliasesResponseTypeDef](./type_defs.md#listtemplatealiasesresponsetypedef) 
 
 
 ### paginate
@@ -363,6 +499,23 @@ def get_list_template_versions_paginator() -> ListTemplateVersionsPaginator:
     return Session().client("quicksight").get_paginator("list_template_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListTemplateVersionsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListTemplateVersionsPaginator = client.get_paginator("list_template_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListTemplateVersionsPaginator](./paginators.md#listtemplateversionspaginator)
+3. item: [:material-code-braces: ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -407,6 +560,23 @@ def get_list_templates_paginator() -> ListTemplatesPaginator:
     return Session().client("quicksight").get_paginator("list_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListTemplatesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListTemplatesPaginator = client.get_paginator("list_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
+3. item: [:material-code-braces: ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -448,6 +618,23 @@ from mypy_boto3_quicksight.paginator import ListThemeVersionsPaginator
 def get_list_theme_versions_paginator() -> ListThemeVersionsPaginator:
     return Session().client("quicksight").get_paginator("list_theme_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListThemeVersionsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListThemeVersionsPaginator = client.get_paginator("list_theme_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListThemeVersionsPaginator](./paginators.md#listthemeversionspaginator)
+3. item: [:material-code-braces: ListThemeVersionsResponseTypeDef](./type_defs.md#listthemeversionsresponsetypedef) 
 
 
 ### paginate
@@ -493,6 +680,23 @@ def get_list_themes_paginator() -> ListThemesPaginator:
     return Session().client("quicksight").get_paginator("list_themes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import ListThemesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: ListThemesPaginator = client.get_paginator("list_themes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [ListThemesPaginator](./paginators.md#listthemespaginator)
+3. item: [:material-code-braces: ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef) 
+
 
 ### paginate
 
@@ -536,6 +740,23 @@ from mypy_boto3_quicksight.paginator import SearchAnalysesPaginator
 def get_search_analyses_paginator() -> SearchAnalysesPaginator:
     return Session().client("quicksight").get_paginator("search_analyses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import SearchAnalysesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: SearchAnalysesPaginator = client.get_paginator("search_analyses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [SearchAnalysesPaginator](./paginators.md#searchanalysespaginator)
+3. item: [:material-code-braces: SearchAnalysesResponseTypeDef](./type_defs.md#searchanalysesresponsetypedef) 
 
 
 ### paginate
@@ -581,6 +802,23 @@ from mypy_boto3_quicksight.paginator import SearchDashboardsPaginator
 def get_search_dashboards_paginator() -> SearchDashboardsPaginator:
     return Session().client("quicksight").get_paginator("search_dashboards")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import SearchDashboardsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: SearchDashboardsPaginator = client.get_paginator("search_dashboards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [SearchDashboardsPaginator](./paginators.md#searchdashboardspaginator)
+3. item: [:material-code-braces: SearchDashboardsResponseTypeDef](./type_defs.md#searchdashboardsresponsetypedef) 
 
 
 ### paginate

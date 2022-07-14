@@ -21,6 +21,23 @@ def get_describe_account_attributes_paginator() -> DescribeAccountAttributesPagi
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_account_attributes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeAccountAttributesPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeAccountAttributesPaginator = client.get_paginator("describe_account_attributes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeAccountAttributesPaginator](./paginators.md#describeaccountattributespaginator)
+3. item: [:material-code-braces: DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_account_limits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeAccountLimitsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeAccountLimitsPaginator = client.get_paginator("describe_account_limits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
+3. item: [:material-code-braces: DescribeAccountLimitsResultTypeDef](./type_defs.md#describeaccountlimitsresulttypedef) 
+
 
 ### paginate
 
@@ -102,6 +136,23 @@ from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeConfigurationSets
 def get_describe_configuration_sets_paginator() -> DescribeConfigurationSetsPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_configuration_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeConfigurationSetsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeConfigurationSetsPaginator = client.get_paginator("describe_configuration_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeConfigurationSetsPaginator](./paginators.md#describeconfigurationsetspaginator)
+3. item: [:material-code-braces: DescribeConfigurationSetsResultTypeDef](./type_defs.md#describeconfigurationsetsresulttypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeKeywordsPaginator
 def get_describe_keywords_paginator() -> DescribeKeywordsPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_keywords")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeKeywordsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeKeywordsPaginator = client.get_paginator("describe_keywords")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeKeywordsPaginator](./paginators.md#describekeywordspaginator)
+3. item: [:material-code-braces: DescribeKeywordsResultTypeDef](./type_defs.md#describekeywordsresulttypedef) 
 
 
 ### paginate
@@ -192,6 +260,23 @@ def get_describe_opt_out_lists_paginator() -> DescribeOptOutListsPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_opt_out_lists")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeOptOutListsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeOptOutListsPaginator = client.get_paginator("describe_opt_out_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeOptOutListsPaginator](./paginators.md#describeoptoutlistspaginator)
+3. item: [:material-code-braces: DescribeOptOutListsResultTypeDef](./type_defs.md#describeoptoutlistsresulttypedef) 
+
 
 ### paginate
 
@@ -233,6 +318,23 @@ from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeOptedOutNumbersPa
 def get_describe_opted_out_numbers_paginator() -> DescribeOptedOutNumbersPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_opted_out_numbers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeOptedOutNumbersPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeOptedOutNumbersPaginator = client.get_paginator("describe_opted_out_numbers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeOptedOutNumbersPaginator](./paginators.md#describeoptedoutnumberspaginator)
+3. item: [:material-code-braces: DescribeOptedOutNumbersResultTypeDef](./type_defs.md#describeoptedoutnumbersresulttypedef) 
 
 
 ### paginate
@@ -279,6 +381,23 @@ def get_describe_phone_numbers_paginator() -> DescribePhoneNumbersPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_phone_numbers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribePhoneNumbersPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribePhoneNumbersPaginator = client.get_paginator("describe_phone_numbers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribePhoneNumbersPaginator](./paginators.md#describephonenumberspaginator)
+3. item: [:material-code-braces: DescribePhoneNumbersResultTypeDef](./type_defs.md#describephonenumbersresulttypedef) 
+
 
 ### paginate
 
@@ -323,6 +442,23 @@ def get_describe_pools_paginator() -> DescribePoolsPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_pools")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribePoolsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribePoolsPaginator = client.get_paginator("describe_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribePoolsPaginator](./paginators.md#describepoolspaginator)
+3. item: [:material-code-braces: DescribePoolsResultTypeDef](./type_defs.md#describepoolsresulttypedef) 
+
 
 ### paginate
 
@@ -366,6 +502,23 @@ from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeSenderIdsPaginato
 def get_describe_sender_ids_paginator() -> DescribeSenderIdsPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_sender_ids")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeSenderIdsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeSenderIdsPaginator = client.get_paginator("describe_sender_ids")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeSenderIdsPaginator](./paginators.md#describesenderidspaginator)
+3. item: [:material-code-braces: DescribeSenderIdsResultTypeDef](./type_defs.md#describesenderidsresulttypedef) 
 
 
 ### paginate
@@ -412,6 +565,23 @@ def get_describe_spend_limits_paginator() -> DescribeSpendLimitsPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("describe_spend_limits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import DescribeSpendLimitsPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: DescribeSpendLimitsPaginator = client.get_paginator("describe_spend_limits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [DescribeSpendLimitsPaginator](./paginators.md#describespendlimitspaginator)
+3. item: [:material-code-braces: DescribeSpendLimitsResultTypeDef](./type_defs.md#describespendlimitsresulttypedef) 
+
 
 ### paginate
 
@@ -452,6 +622,23 @@ from mypy_boto3_pinpoint_sms_voice_v2.paginator import ListPoolOriginationIdenti
 def get_list_pool_origination_identities_paginator() -> ListPoolOriginationIdentitiesPaginator:
     return Session().client("pinpoint-sms-voice-v2").get_paginator("list_pool_origination_identities")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pinpoint_sms_voice_v2.paginator import ListPoolOriginationIdentitiesPaginator
+
+session = Session()
+
+client = Session().client("pinpoint-sms-voice-v2")  # (1)
+paginator: ListPoolOriginationIdentitiesPaginator = client.get_paginator("list_pool_origination_identities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PinpointSMSVoiceV2Client](./client.md)
+2. paginator: [ListPoolOriginationIdentitiesPaginator](./paginators.md#listpooloriginationidentitiespaginator)
+3. item: [:material-code-braces: ListPoolOriginationIdentitiesResultTypeDef](./type_defs.md#listpooloriginationidentitiesresulttypedef) 
 
 
 ### paginate

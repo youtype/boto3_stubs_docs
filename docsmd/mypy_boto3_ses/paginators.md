@@ -21,6 +21,23 @@ def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return Session().client("ses").get_paginator("list_configuration_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ses.paginator import ListConfigurationSetsPaginator
+
+session = Session()
+
+client = Session().client("ses")  # (1)
+paginator: ListConfigurationSetsPaginator = client.get_paginator("list_configuration_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SESClient](./client.md)
+2. paginator: [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
+3. item: [:material-code-braces: ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ def get_list_custom_verification_email_templates_paginator() -> ListCustomVerifi
     return Session().client("ses").get_paginator("list_custom_verification_email_templates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ses.paginator import ListCustomVerificationEmailTemplatesPaginator
+
+session = Session()
+
+client = Session().client("ses")  # (1)
+paginator: ListCustomVerificationEmailTemplatesPaginator = client.get_paginator("list_custom_verification_email_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SESClient](./client.md)
+2. paginator: [ListCustomVerificationEmailTemplatesPaginator](./paginators.md#listcustomverificationemailtemplatespaginator)
+3. item: [:material-code-braces: ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef) 
+
 
 ### paginate
 
@@ -102,6 +136,23 @@ from mypy_boto3_ses.paginator import ListIdentitiesPaginator
 def get_list_identities_paginator() -> ListIdentitiesPaginator:
     return Session().client("ses").get_paginator("list_identities")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ses.paginator import ListIdentitiesPaginator
+
+session = Session()
+
+client = Session().client("ses")  # (1)
+paginator: ListIdentitiesPaginator = client.get_paginator("list_identities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SESClient](./client.md)
+2. paginator: [ListIdentitiesPaginator](./paginators.md#listidentitiespaginator)
+3. item: [:material-code-braces: ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ def get_list_receipt_rule_sets_paginator() -> ListReceiptRuleSetsPaginator:
     return Session().client("ses").get_paginator("list_receipt_rule_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ses.paginator import ListReceiptRuleSetsPaginator
+
+session = Session()
+
+client = Session().client("ses")  # (1)
+paginator: ListReceiptRuleSetsPaginator = client.get_paginator("list_receipt_rule_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SESClient](./client.md)
+2. paginator: [ListReceiptRuleSetsPaginator](./paginators.md#listreceiptrulesetspaginator)
+3. item: [:material-code-braces: ListReceiptRuleSetsResponseTypeDef](./type_defs.md#listreceiptrulesetsresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_ses.paginator import ListTemplatesPaginator
 def get_list_templates_paginator() -> ListTemplatesPaginator:
     return Session().client("ses").get_paginator("list_templates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ses.paginator import ListTemplatesPaginator
+
+session = Session()
+
+client = Session().client("ses")  # (1)
+paginator: ListTemplatesPaginator = client.get_paginator("list_templates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SESClient](./client.md)
+2. paginator: [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
+3. item: [:material-code-braces: ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef) 
 
 
 ### paginate

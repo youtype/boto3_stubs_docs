@@ -21,6 +21,23 @@ def get_admin_list_groups_for_user_paginator() -> AdminListGroupsForUserPaginato
     return Session().client("cognito-idp").get_paginator("admin_list_groups_for_user")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: AdminListGroupsForUserPaginator = client.get_paginator("admin_list_groups_for_user")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [AdminListGroupsForUserPaginator](./paginators.md#adminlistgroupsforuserpaginator)
+3. item: [:material-code-braces: AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_cognito_idp.paginator import AdminListUserAuthEventsPaginator
 def get_admin_list_user_auth_events_paginator() -> AdminListUserAuthEventsPaginator:
     return Session().client("cognito-idp").get_paginator("admin_list_user_auth_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import AdminListUserAuthEventsPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: AdminListUserAuthEventsPaginator = client.get_paginator("admin_list_user_auth_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [AdminListUserAuthEventsPaginator](./paginators.md#adminlistuserautheventspaginator)
+3. item: [:material-code-braces: AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("cognito-idp").get_paginator("list_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import ListGroupsPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: ListGroupsPaginator = client.get_paginator("list_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+3. item: [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -150,6 +201,23 @@ from mypy_boto3_cognito_idp.paginator import ListIdentityProvidersPaginator
 def get_list_identity_providers_paginator() -> ListIdentityProvidersPaginator:
     return Session().client("cognito-idp").get_paginator("list_identity_providers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import ListIdentityProvidersPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: ListIdentityProvidersPaginator = client.get_paginator("list_identity_providers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [ListIdentityProvidersPaginator](./paginators.md#listidentityproviderspaginator)
+3. item: [:material-code-braces: ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ def get_list_resource_servers_paginator() -> ListResourceServersPaginator:
     return Session().client("cognito-idp").get_paginator("list_resource_servers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import ListResourceServersPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: ListResourceServersPaginator = client.get_paginator("list_resource_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [ListResourceServersPaginator](./paginators.md#listresourceserverspaginator)
+3. item: [:material-code-braces: ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef) 
+
 
 ### paginate
 
@@ -234,6 +319,23 @@ from mypy_boto3_cognito_idp.paginator import ListUserPoolClientsPaginator
 def get_list_user_pool_clients_paginator() -> ListUserPoolClientsPaginator:
     return Session().client("cognito-idp").get_paginator("list_user_pool_clients")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import ListUserPoolClientsPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: ListUserPoolClientsPaginator = client.get_paginator("list_user_pool_clients")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [ListUserPoolClientsPaginator](./paginators.md#listuserpoolclientspaginator)
+3. item: [:material-code-braces: ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef) 
 
 
 ### paginate
@@ -277,6 +379,23 @@ def get_list_user_pools_paginator() -> ListUserPoolsPaginator:
     return Session().client("cognito-idp").get_paginator("list_user_pools")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import ListUserPoolsPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: ListUserPoolsPaginator = client.get_paginator("list_user_pools")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [ListUserPoolsPaginator](./paginators.md#listuserpoolspaginator)
+3. item: [:material-code-braces: ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef) 
+
 
 ### paginate
 
@@ -317,6 +436,23 @@ from mypy_boto3_cognito_idp.paginator import ListUsersPaginator
 def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("cognito-idp").get_paginator("list_users")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import ListUsersPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: ListUsersPaginator = client.get_paginator("list_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [ListUsersPaginator](./paginators.md#listuserspaginator)
+3. item: [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
 
 ### paginate
@@ -361,6 +497,23 @@ from mypy_boto3_cognito_idp.paginator import ListUsersInGroupPaginator
 def get_list_users_in_group_paginator() -> ListUsersInGroupPaginator:
     return Session().client("cognito-idp").get_paginator("list_users_in_group")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cognito_idp.paginator import ListUsersInGroupPaginator
+
+session = Session()
+
+client = Session().client("cognito-idp")  # (1)
+paginator: ListUsersInGroupPaginator = client.get_paginator("list_users_in_group")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CognitoIdentityProviderClient](./client.md)
+2. paginator: [ListUsersInGroupPaginator](./paginators.md#listusersingrouppaginator)
+3. item: [:material-code-braces: ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef) 
 
 
 ### paginate

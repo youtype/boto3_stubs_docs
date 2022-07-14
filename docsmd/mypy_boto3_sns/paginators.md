@@ -21,6 +21,23 @@ def get_list_endpoints_by_platform_application_paginator() -> ListEndpointsByPla
     return Session().client("sns").get_paginator("list_endpoints_by_platform_application")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListEndpointsByPlatformApplicationPaginator = client.get_paginator("list_endpoints_by_platform_application")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
+3. item: [:material-code-braces: ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_origination_numbers_paginator() -> ListOriginationNumbersPaginator:
     return Session().client("sns").get_paginator("list_origination_numbers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListOriginationNumbersPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListOriginationNumbersPaginator = client.get_paginator("list_origination_numbers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListOriginationNumbersPaginator](./paginators.md#listoriginationnumberspaginator)
+3. item: [:material-code-braces: ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_sns.paginator import ListPhoneNumbersOptedOutPaginator
 def get_list_phone_numbers_opted_out_paginator() -> ListPhoneNumbersOptedOutPaginator:
     return Session().client("sns").get_paginator("list_phone_numbers_opted_out")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListPhoneNumbersOptedOutPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListPhoneNumbersOptedOutPaginator = client.get_paginator("list_phone_numbers_opted_out")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListPhoneNumbersOptedOutPaginator](./paginators.md#listphonenumbersoptedoutpaginator)
+3. item: [:material-code-braces: ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef) 
 
 
 ### paginate
@@ -145,6 +196,23 @@ def get_list_platform_applications_paginator() -> ListPlatformApplicationsPagina
     return Session().client("sns").get_paginator("list_platform_applications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListPlatformApplicationsPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListPlatformApplicationsPaginator = client.get_paginator("list_platform_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListPlatformApplicationsPaginator](./paginators.md#listplatformapplicationspaginator)
+3. item: [:material-code-braces: ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef) 
+
 
 ### paginate
 
@@ -185,6 +253,23 @@ from mypy_boto3_sns.paginator import ListSMSSandboxPhoneNumbersPaginator
 def get_list_sms_sandbox_phone_numbers_paginator() -> ListSMSSandboxPhoneNumbersPaginator:
     return Session().client("sns").get_paginator("list_sms_sandbox_phone_numbers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListSMSSandboxPhoneNumbersPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListSMSSandboxPhoneNumbersPaginator = client.get_paginator("list_sms_sandbox_phone_numbers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListSMSSandboxPhoneNumbersPaginator](./paginators.md#listsmssandboxphonenumberspaginator)
+3. item: [:material-code-braces: ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef) 
 
 
 ### paginate
@@ -227,6 +312,23 @@ def get_list_subscriptions_paginator() -> ListSubscriptionsPaginator:
     return Session().client("sns").get_paginator("list_subscriptions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListSubscriptionsPaginator = client.get_paginator("list_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
+3. item: [:material-code-braces: ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef) 
+
 
 ### paginate
 
@@ -267,6 +369,23 @@ from mypy_boto3_sns.paginator import ListSubscriptionsByTopicPaginator
 def get_list_subscriptions_by_topic_paginator() -> ListSubscriptionsByTopicPaginator:
     return Session().client("sns").get_paginator("list_subscriptions_by_topic")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListSubscriptionsByTopicPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListSubscriptionsByTopicPaginator = client.get_paginator("list_subscriptions_by_topic")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
+3. item: [:material-code-braces: ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef) 
 
 
 ### paginate
@@ -309,6 +428,23 @@ from mypy_boto3_sns.paginator import ListTopicsPaginator
 def get_list_topics_paginator() -> ListTopicsPaginator:
     return Session().client("sns").get_paginator("list_topics")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.paginator import ListTopicsPaginator
+
+session = Session()
+
+client = Session().client("sns")  # (1)
+paginator: ListTopicsPaginator = client.get_paginator("list_topics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SNSClient](./client.md)
+2. paginator: [ListTopicsPaginator](./paginators.md#listtopicspaginator)
+3. item: [:material-code-braces: ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef) 
 
 
 ### paginate

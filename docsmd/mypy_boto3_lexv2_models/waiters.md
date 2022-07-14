@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter
 
-def get_bot_alias_available_waiter() -> BotAliasAvailableWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_alias_available")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotAliasAvailableWaiter = client.get_waiter("bot_alias_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
 
 
 ### wait
@@ -60,9 +67,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotAvailableWaiter
 
-def get_bot_available_waiter() -> BotAvailableWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_available")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotAvailableWaiter = client.get_waiter("bot_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotAvailableWaiter](./waiters.md#botavailablewaiter)
 
 
 ### wait
@@ -101,9 +115,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotExportCompletedWaiter
 
-def get_bot_export_completed_waiter() -> BotExportCompletedWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_export_completed")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotExportCompletedWaiter = client.get_waiter("bot_export_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotExportCompletedWaiter](./waiters.md#botexportcompletedwaiter)
 
 
 ### wait
@@ -142,9 +163,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotImportCompletedWaiter
 
-def get_bot_import_completed_waiter() -> BotImportCompletedWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_import_completed")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotImportCompletedWaiter = client.get_waiter("bot_import_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotImportCompletedWaiter](./waiters.md#botimportcompletedwaiter)
 
 
 ### wait
@@ -183,9 +211,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotLocaleBuiltWaiter
 
-def get_bot_locale_built_waiter() -> BotLocaleBuiltWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_locale_built")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotLocaleBuiltWaiter = client.get_waiter("bot_locale_built")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotLocaleBuiltWaiter](./waiters.md#botlocalebuiltwaiter)
 
 
 ### wait
@@ -228,9 +263,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotLocaleCreatedWaiter
 
-def get_bot_locale_created_waiter() -> BotLocaleCreatedWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_locale_created")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotLocaleCreatedWaiter = client.get_waiter("bot_locale_created")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotLocaleCreatedWaiter](./waiters.md#botlocalecreatedwaiter)
 
 
 ### wait
@@ -273,9 +315,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotLocaleExpressTestingAvailableWaiter
 
-def get_bot_locale_express_testing_available_waiter() -> BotLocaleExpressTestingAvailableWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_locale_express_testing_available")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotLocaleExpressTestingAvailableWaiter = client.get_waiter("bot_locale_express_testing_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
 
 
 ### wait
@@ -318,9 +367,16 @@ from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotVersionAvailableWaiter
 
-def get_bot_version_available_waiter() -> BotVersionAvailableWaiter:
-    return Session().client("lexv2-models").get_waiter("bot_version_available")
+
+session = Session()
+
+client = session.client("lexv2-models")  # (1)
+waiter: BotVersionAvailableWaiter = client.get_waiter("bot_version_available")  # (2)
+await waiter.wait()
 ```
+
+1. client: [LexModelsV2Client](./client.md)
+2. waiter: [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)
 
 
 ### wait

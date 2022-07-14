@@ -21,6 +21,23 @@ def get_describe_project_versions_paginator() -> DescribeProjectVersionsPaginato
     return Session().client("rekognition").get_paginator("describe_project_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import DescribeProjectVersionsPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: DescribeProjectVersionsPaginator = client.get_paginator("describe_project_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [DescribeProjectVersionsPaginator](./paginators.md#describeprojectversionspaginator)
+3. item: [:material-code-braces: DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_describe_projects_paginator() -> DescribeProjectsPaginator:
     return Session().client("rekognition").get_paginator("describe_projects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import DescribeProjectsPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: DescribeProjectsPaginator = client.get_paginator("describe_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [DescribeProjectsPaginator](./paginators.md#describeprojectspaginator)
+3. item: [:material-code-braces: DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ def get_list_collections_paginator() -> ListCollectionsPaginator:
     return Session().client("rekognition").get_paginator("list_collections")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import ListCollectionsPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: ListCollectionsPaginator = client.get_paginator("list_collections")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [ListCollectionsPaginator](./paginators.md#listcollectionspaginator)
+3. item: [:material-code-braces: ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_rekognition.paginator import ListDatasetEntriesPaginator
 def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
     return Session().client("rekognition").get_paginator("list_dataset_entries")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import ListDatasetEntriesPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: ListDatasetEntriesPaginator = client.get_paginator("list_dataset_entries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
+3. item: [:material-code-braces: ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ def get_list_dataset_labels_paginator() -> ListDatasetLabelsPaginator:
     return Session().client("rekognition").get_paginator("list_dataset_labels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import ListDatasetLabelsPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: ListDatasetLabelsPaginator = client.get_paginator("list_dataset_labels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [ListDatasetLabelsPaginator](./paginators.md#listdatasetlabelspaginator)
+3. item: [:material-code-braces: ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef) 
+
 
 ### paginate
 
@@ -235,6 +320,23 @@ def get_list_faces_paginator() -> ListFacesPaginator:
     return Session().client("rekognition").get_paginator("list_faces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import ListFacesPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: ListFacesPaginator = client.get_paginator("list_faces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [ListFacesPaginator](./paginators.md#listfacespaginator)
+3. item: [:material-code-braces: ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef) 
+
 
 ### paginate
 
@@ -276,6 +378,23 @@ from mypy_boto3_rekognition.paginator import ListStreamProcessorsPaginator
 def get_list_stream_processors_paginator() -> ListStreamProcessorsPaginator:
     return Session().client("rekognition").get_paginator("list_stream_processors")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import ListStreamProcessorsPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: ListStreamProcessorsPaginator = client.get_paginator("list_stream_processors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
+3. item: [:material-code-braces: ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_list_endpoint_access_paginator() -> ListEndpointAccessPaginator:
     return Session().client("redshift-serverless").get_paginator("list_endpoint_access")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListEndpointAccessPaginator
+
+session = Session()
+
+client = Session().client("redshift-serverless")  # (1)
+paginator: ListEndpointAccessPaginator = client.get_paginator("list_endpoint_access")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftServerlessClient](./client.md)
+2. paginator: [ListEndpointAccessPaginator](./paginators.md#listendpointaccesspaginator)
+3. item: [:material-code-braces: ListEndpointAccessResponseTypeDef](./type_defs.md#listendpointaccessresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_namespaces_paginator() -> ListNamespacesPaginator:
     return Session().client("redshift-serverless").get_paginator("list_namespaces")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListNamespacesPaginator
+
+session = Session()
+
+client = Session().client("redshift-serverless")  # (1)
+paginator: ListNamespacesPaginator = client.get_paginator("list_namespaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftServerlessClient](./client.md)
+2. paginator: [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
+3. item: [:material-code-braces: ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef) 
+
 
 ### paginate
 
@@ -104,6 +138,23 @@ from mypy_boto3_redshift_serverless.paginator import ListRecoveryPointsPaginator
 def get_list_recovery_points_paginator() -> ListRecoveryPointsPaginator:
     return Session().client("redshift-serverless").get_paginator("list_recovery_points")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListRecoveryPointsPaginator
+
+session = Session()
+
+client = Session().client("redshift-serverless")  # (1)
+paginator: ListRecoveryPointsPaginator = client.get_paginator("list_recovery_points")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftServerlessClient](./client.md)
+2. paginator: [ListRecoveryPointsPaginator](./paginators.md#listrecoverypointspaginator)
+3. item: [:material-code-braces: ListRecoveryPointsResponseTypeDef](./type_defs.md#listrecoverypointsresponsetypedef) 
 
 
 ### paginate
@@ -148,6 +199,23 @@ from mypy_boto3_redshift_serverless.paginator import ListSnapshotsPaginator
 def get_list_snapshots_paginator() -> ListSnapshotsPaginator:
     return Session().client("redshift-serverless").get_paginator("list_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("redshift-serverless")  # (1)
+paginator: ListSnapshotsPaginator = client.get_paginator("list_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftServerlessClient](./client.md)
+2. paginator: [ListSnapshotsPaginator](./paginators.md#listsnapshotspaginator)
+3. item: [:material-code-braces: ListSnapshotsResponseTypeDef](./type_defs.md#listsnapshotsresponsetypedef) 
 
 
 ### paginate
@@ -195,6 +263,23 @@ def get_list_usage_limits_paginator() -> ListUsageLimitsPaginator:
     return Session().client("redshift-serverless").get_paginator("list_usage_limits")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListUsageLimitsPaginator
+
+session = Session()
+
+client = Session().client("redshift-serverless")  # (1)
+paginator: ListUsageLimitsPaginator = client.get_paginator("list_usage_limits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftServerlessClient](./client.md)
+2. paginator: [ListUsageLimitsPaginator](./paginators.md#listusagelimitspaginator)
+3. item: [:material-code-braces: ListUsageLimitsResponseTypeDef](./type_defs.md#listusagelimitsresponsetypedef) 
+
 
 ### paginate
 
@@ -238,6 +323,23 @@ from mypy_boto3_redshift_serverless.paginator import ListWorkgroupsPaginator
 def get_list_workgroups_paginator() -> ListWorkgroupsPaginator:
     return Session().client("redshift-serverless").get_paginator("list_workgroups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListWorkgroupsPaginator
+
+session = Session()
+
+client = Session().client("redshift-serverless")  # (1)
+paginator: ListWorkgroupsPaginator = client.get_paginator("list_workgroups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftServerlessClient](./client.md)
+2. paginator: [ListWorkgroupsPaginator](./paginators.md#listworkgroupspaginator)
+3. item: [:material-code-braces: ListWorkgroupsResponseTypeDef](./type_defs.md#listworkgroupsresponsetypedef) 
 
 
 ### paginate

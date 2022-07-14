@@ -21,6 +21,23 @@ def get_list_application_versions_paginator() -> ListApplicationVersionsPaginato
     return Session().client("m2").get_paginator("list_application_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListApplicationVersionsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListApplicationVersionsPaginator = client.get_paginator("list_application_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
+3. item: [:material-code-braces: ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_m2.paginator import ListApplicationsPaginator
 def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("m2").get_paginator("list_applications")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
 
 
 ### paginate
@@ -106,6 +140,23 @@ def get_list_batch_job_definitions_paginator() -> ListBatchJobDefinitionsPaginat
     return Session().client("m2").get_paginator("list_batch_job_definitions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListBatchJobDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListBatchJobDefinitionsPaginator = client.get_paginator("list_batch_job_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListBatchJobDefinitionsPaginator](./paginators.md#listbatchjobdefinitionspaginator)
+3. item: [:material-code-braces: ListBatchJobDefinitionsResponseTypeDef](./type_defs.md#listbatchjobdefinitionsresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_m2.paginator import ListBatchJobExecutionsPaginator
 def get_list_batch_job_executions_paginator() -> ListBatchJobExecutionsPaginator:
     return Session().client("m2").get_paginator("list_batch_job_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListBatchJobExecutionsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListBatchJobExecutionsPaginator = client.get_paginator("list_batch_job_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListBatchJobExecutionsPaginator](./paginators.md#listbatchjobexecutionspaginator)
+3. item: [:material-code-braces: ListBatchJobExecutionsResponseTypeDef](./type_defs.md#listbatchjobexecutionsresponsetypedef) 
 
 
 ### paginate
@@ -197,6 +265,23 @@ def get_list_data_set_import_history_paginator() -> ListDataSetImportHistoryPagi
     return Session().client("m2").get_paginator("list_data_set_import_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListDataSetImportHistoryPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListDataSetImportHistoryPaginator = client.get_paginator("list_data_set_import_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListDataSetImportHistoryPaginator](./paginators.md#listdatasetimporthistorypaginator)
+3. item: [:material-code-braces: ListDataSetImportHistoryResponseTypeDef](./type_defs.md#listdatasetimporthistoryresponsetypedef) 
+
 
 ### paginate
 
@@ -238,6 +323,23 @@ from mypy_boto3_m2.paginator import ListDataSetsPaginator
 def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return Session().client("m2").get_paginator("list_data_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListDataSetsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListDataSetsPaginator = client.get_paginator("list_data_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
+3. item: [:material-code-braces: ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
 
 ### paginate
@@ -282,6 +384,23 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return Session().client("m2").get_paginator("list_deployments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListDeploymentsPaginator = client.get_paginator("list_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
+3. item: [:material-code-braces: ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef) 
+
 
 ### paginate
 
@@ -323,6 +442,23 @@ from mypy_boto3_m2.paginator import ListEngineVersionsPaginator
 def get_list_engine_versions_paginator() -> ListEngineVersionsPaginator:
     return Session().client("m2").get_paginator("list_engine_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListEngineVersionsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListEngineVersionsPaginator = client.get_paginator("list_engine_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListEngineVersionsPaginator](./paginators.md#listengineversionspaginator)
+3. item: [:material-code-braces: ListEngineVersionsResponseTypeDef](./type_defs.md#listengineversionsresponsetypedef) 
 
 
 ### paginate
@@ -366,6 +502,23 @@ from mypy_boto3_m2.paginator import ListEnvironmentsPaginator
 def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("m2").get_paginator("list_environments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_m2.paginator import ListEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("m2")  # (1)
+paginator: ListEnvironmentsPaginator = client.get_paginator("list_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MainframeModernizationClient](./client.md)
+2. paginator: [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+3. item: [:material-code-braces: ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef) 
 
 
 ### paginate

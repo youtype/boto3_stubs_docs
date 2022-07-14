@@ -21,6 +21,23 @@ def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
     return Session().client("stepfunctions").get_paginator("get_execution_history")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator
+
+session = Session()
+
+client = Session().client("stepfunctions")  # (1)
+paginator: GetExecutionHistoryPaginator = client.get_paginator("get_execution_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SFNClient](./client.md)
+2. paginator: [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
+3. item: [:material-code-braces: GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ def get_list_activities_paginator() -> ListActivitiesPaginator:
     return Session().client("stepfunctions").get_paginator("list_activities")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_stepfunctions.paginator import ListActivitiesPaginator
+
+session = Session()
+
+client = Session().client("stepfunctions")  # (1)
+paginator: ListActivitiesPaginator = client.get_paginator("list_activities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SFNClient](./client.md)
+2. paginator: [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
+3. item: [:material-code-braces: ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_stepfunctions.paginator import ListExecutionsPaginator
 def get_list_executions_paginator() -> ListExecutionsPaginator:
     return Session().client("stepfunctions").get_paginator("list_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_stepfunctions.paginator import ListExecutionsPaginator
+
+session = Session()
+
+client = Session().client("stepfunctions")  # (1)
+paginator: ListExecutionsPaginator = client.get_paginator("list_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SFNClient](./client.md)
+2. paginator: [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+3. item: [:material-code-braces: ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef) 
 
 
 ### paginate
@@ -149,6 +200,23 @@ from mypy_boto3_stepfunctions.paginator import ListStateMachinesPaginator
 def get_list_state_machines_paginator() -> ListStateMachinesPaginator:
     return Session().client("stepfunctions").get_paginator("list_state_machines")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_stepfunctions.paginator import ListStateMachinesPaginator
+
+session = Session()
+
+client = Session().client("stepfunctions")  # (1)
+paginator: ListStateMachinesPaginator = client.get_paginator("list_state_machines")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SFNClient](./client.md)
+2. paginator: [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
+3. item: [:material-code-braces: ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef) 
 
 
 ### paginate

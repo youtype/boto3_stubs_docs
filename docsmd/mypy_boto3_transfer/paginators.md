@@ -21,6 +21,23 @@ def get_list_accesses_paginator() -> ListAccessesPaginator:
     return Session().client("transfer").get_paginator("list_accesses")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_transfer.paginator import ListAccessesPaginator
+
+session = Session()
+
+client = Session().client("transfer")  # (1)
+paginator: ListAccessesPaginator = client.get_paginator("list_accesses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TransferClient](./client.md)
+2. paginator: [ListAccessesPaginator](./paginators.md#listaccessespaginator)
+3. item: [:material-code-braces: ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_transfer.paginator import ListExecutionsPaginator
 def get_list_executions_paginator() -> ListExecutionsPaginator:
     return Session().client("transfer").get_paginator("list_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_transfer.paginator import ListExecutionsPaginator
+
+session = Session()
+
+client = Session().client("transfer")  # (1)
+paginator: ListExecutionsPaginator = client.get_paginator("list_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TransferClient](./client.md)
+2. paginator: [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+3. item: [:material-code-braces: ListExecutionsResponseTypeDef](./type_defs.md#listexecutionsresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_security_policies_paginator() -> ListSecurityPoliciesPaginator:
     return Session().client("transfer").get_paginator("list_security_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_transfer.paginator import ListSecurityPoliciesPaginator
+
+session = Session()
+
+client = Session().client("transfer")  # (1)
+paginator: ListSecurityPoliciesPaginator = client.get_paginator("list_security_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TransferClient](./client.md)
+2. paginator: [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
+3. item: [:material-code-braces: ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ def get_list_servers_paginator() -> ListServersPaginator:
     return Session().client("transfer").get_paginator("list_servers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_transfer.paginator import ListServersPaginator
+
+session = Session()
+
+client = Session().client("transfer")  # (1)
+paginator: ListServersPaginator = client.get_paginator("list_servers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TransferClient](./client.md)
+2. paginator: [ListServersPaginator](./paginators.md#listserverspaginator)
+3. item: [:material-code-braces: ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_transfer.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("transfer").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_transfer.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("transfer")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TransferClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
 
 ### paginate
@@ -229,6 +314,23 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("transfer").get_paginator("list_users")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_transfer.paginator import ListUsersPaginator
+
+session = Session()
+
+client = Session().client("transfer")  # (1)
+paginator: ListUsersPaginator = client.get_paginator("list_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TransferClient](./client.md)
+2. paginator: [ListUsersPaginator](./paginators.md#listuserspaginator)
+3. item: [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
+
 
 ### paginate
 
@@ -270,6 +372,23 @@ from mypy_boto3_transfer.paginator import ListWorkflowsPaginator
 def get_list_workflows_paginator() -> ListWorkflowsPaginator:
     return Session().client("transfer").get_paginator("list_workflows")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_transfer.paginator import ListWorkflowsPaginator
+
+session = Session()
+
+client = Session().client("transfer")  # (1)
+paginator: ListWorkflowsPaginator = client.get_paginator("list_workflows")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [TransferClient](./client.md)
+2. paginator: [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
+3. item: [:material-code-braces: ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_list_application_revisions_paginator() -> ListApplicationRevisionsPagina
     return Session().client("codedeploy").get_paginator("list_application_revisions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListApplicationRevisionsPaginator = client.get_paginator("list_application_revisions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListApplicationRevisionsPaginator](./paginators.md#listapplicationrevisionspaginator)
+3. item: [:material-code-braces: ListApplicationRevisionsOutputTypeDef](./type_defs.md#listapplicationrevisionsoutputtypedef) 
+
 
 ### paginate
 
@@ -71,6 +88,23 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("codedeploy").get_paginator("list_applications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsOutputTypeDef](./type_defs.md#listapplicationsoutputtypedef) 
+
 
 ### paginate
 
@@ -111,6 +145,23 @@ from mypy_boto3_codedeploy.paginator import ListDeploymentConfigsPaginator
 def get_list_deployment_configs_paginator() -> ListDeploymentConfigsPaginator:
     return Session().client("codedeploy").get_paginator("list_deployment_configs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListDeploymentConfigsPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListDeploymentConfigsPaginator = client.get_paginator("list_deployment_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListDeploymentConfigsPaginator](./paginators.md#listdeploymentconfigspaginator)
+3. item: [:material-code-braces: ListDeploymentConfigsOutputTypeDef](./type_defs.md#listdeploymentconfigsoutputtypedef) 
 
 
 ### paginate
@@ -153,6 +204,23 @@ def get_list_deployment_groups_paginator() -> ListDeploymentGroupsPaginator:
     return Session().client("codedeploy").get_paginator("list_deployment_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListDeploymentGroupsPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListDeploymentGroupsPaginator = client.get_paginator("list_deployment_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListDeploymentGroupsPaginator](./paginators.md#listdeploymentgroupspaginator)
+3. item: [:material-code-braces: ListDeploymentGroupsOutputTypeDef](./type_defs.md#listdeploymentgroupsoutputtypedef) 
+
 
 ### paginate
 
@@ -194,6 +262,23 @@ from mypy_boto3_codedeploy.paginator import ListDeploymentInstancesPaginator
 def get_list_deployment_instances_paginator() -> ListDeploymentInstancesPaginator:
     return Session().client("codedeploy").get_paginator("list_deployment_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListDeploymentInstancesPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListDeploymentInstancesPaginator = client.get_paginator("list_deployment_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListDeploymentInstancesPaginator](./paginators.md#listdeploymentinstancespaginator)
+3. item: [:material-code-braces: ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef) 
 
 
 ### paginate
@@ -241,6 +326,23 @@ def get_list_deployment_targets_paginator() -> ListDeploymentTargetsPaginator:
     return Session().client("codedeploy").get_paginator("list_deployment_targets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListDeploymentTargetsPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListDeploymentTargetsPaginator = client.get_paginator("list_deployment_targets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListDeploymentTargetsPaginator](./paginators.md#listdeploymenttargetspaginator)
+3. item: [:material-code-braces: ListDeploymentTargetsOutputTypeDef](./type_defs.md#listdeploymenttargetsoutputtypedef) 
+
 
 ### paginate
 
@@ -284,6 +386,23 @@ from mypy_boto3_codedeploy.paginator import ListDeploymentsPaginator
 def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return Session().client("codedeploy").get_paginator("list_deployments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListDeploymentsPaginator = client.get_paginator("list_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
+3. item: [:material-code-braces: ListDeploymentsOutputTypeDef](./type_defs.md#listdeploymentsoutputtypedef) 
 
 
 ### paginate
@@ -333,6 +452,23 @@ def get_list_git_hub_account_token_names_paginator() -> ListGitHubAccountTokenNa
     return Session().client("codedeploy").get_paginator("list_git_hub_account_token_names")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListGitHubAccountTokenNamesPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListGitHubAccountTokenNamesPaginator = client.get_paginator("list_git_hub_account_token_names")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListGitHubAccountTokenNamesPaginator](./paginators.md#listgithubaccounttokennamespaginator)
+3. item: [:material-code-braces: ListGitHubAccountTokenNamesOutputTypeDef](./type_defs.md#listgithubaccounttokennamesoutputtypedef) 
+
 
 ### paginate
 
@@ -373,6 +509,23 @@ from mypy_boto3_codedeploy.paginator import ListOnPremisesInstancesPaginator
 def get_list_on_premises_instances_paginator() -> ListOnPremisesInstancesPaginator:
     return Session().client("codedeploy").get_paginator("list_on_premises_instances")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codedeploy.paginator import ListOnPremisesInstancesPaginator
+
+session = Session()
+
+client = Session().client("codedeploy")  # (1)
+paginator: ListOnPremisesInstancesPaginator = client.get_paginator("list_on_premises_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeDeployClient](./client.md)
+2. paginator: [ListOnPremisesInstancesPaginator](./paginators.md#listonpremisesinstancespaginator)
+3. item: [:material-code-braces: ListOnPremisesInstancesOutputTypeDef](./type_defs.md#listonpremisesinstancesoutputtypedef) 
 
 
 ### paginate

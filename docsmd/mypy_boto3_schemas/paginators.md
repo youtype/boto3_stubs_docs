@@ -21,6 +21,23 @@ def get_list_discoverers_paginator() -> ListDiscoverersPaginator:
     return Session().client("schemas").get_paginator("list_discoverers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_schemas.paginator import ListDiscoverersPaginator
+
+session = Session()
+
+client = Session().client("schemas")  # (1)
+paginator: ListDiscoverersPaginator = client.get_paginator("list_discoverers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SchemasClient](./client.md)
+2. paginator: [ListDiscoverersPaginator](./paginators.md#listdiscovererspaginator)
+3. item: [:material-code-braces: ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
     return Session().client("schemas").get_paginator("list_registries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_schemas.paginator import ListRegistriesPaginator
+
+session = Session()
+
+client = Session().client("schemas")  # (1)
+paginator: ListRegistriesPaginator = client.get_paginator("list_registries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SchemasClient](./client.md)
+2. paginator: [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
+3. item: [:material-code-braces: ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_schemas.paginator import ListSchemaVersionsPaginator
 def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
     return Session().client("schemas").get_paginator("list_schema_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_schemas.paginator import ListSchemaVersionsPaginator
+
+session = Session()
+
+client = Session().client("schemas")  # (1)
+paginator: ListSchemaVersionsPaginator = client.get_paginator("list_schema_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SchemasClient](./client.md)
+2. paginator: [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
+3. item: [:material-code-braces: ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef) 
 
 
 ### paginate
@@ -151,6 +202,23 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return Session().client("schemas").get_paginator("list_schemas")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_schemas.paginator import ListSchemasPaginator
+
+session = Session()
+
+client = Session().client("schemas")  # (1)
+paginator: ListSchemasPaginator = client.get_paginator("list_schemas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SchemasClient](./client.md)
+2. paginator: [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+3. item: [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
+
 
 ### paginate
 
@@ -193,6 +261,23 @@ from mypy_boto3_schemas.paginator import SearchSchemasPaginator
 def get_search_schemas_paginator() -> SearchSchemasPaginator:
     return Session().client("schemas").get_paginator("search_schemas")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_schemas.paginator import SearchSchemasPaginator
+
+session = Session()
+
+client = Session().client("schemas")  # (1)
+paginator: SearchSchemasPaginator = client.get_paginator("search_schemas")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SchemasClient](./client.md)
+2. paginator: [SearchSchemasPaginator](./paginators.md#searchschemaspaginator)
+3. item: [:material-code-braces: SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef) 
 
 
 ### paginate

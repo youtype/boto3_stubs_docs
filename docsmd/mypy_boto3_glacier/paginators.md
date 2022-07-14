@@ -21,6 +21,23 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("glacier").get_paginator("list_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glacier.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("glacier")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlacierClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
     return Session().client("glacier").get_paginator("list_multipart_uploads")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glacier.paginator import ListMultipartUploadsPaginator
+
+session = Session()
+
+client = Session().client("glacier")  # (1)
+paginator: ListMultipartUploadsPaginator = client.get_paginator("list_multipart_uploads")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlacierClient](./client.md)
+2. paginator: [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
+3. item: [:material-code-braces: ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef) 
+
 
 ### paginate
 
@@ -110,6 +144,23 @@ from mypy_boto3_glacier.paginator import ListPartsPaginator
 def get_list_parts_paginator() -> ListPartsPaginator:
     return Session().client("glacier").get_paginator("list_parts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glacier.paginator import ListPartsPaginator
+
+session = Session()
+
+client = Session().client("glacier")  # (1)
+paginator: ListPartsPaginator = client.get_paginator("list_parts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlacierClient](./client.md)
+2. paginator: [ListPartsPaginator](./paginators.md#listpartspaginator)
+3. item: [:material-code-braces: ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef) 
 
 
 ### paginate
@@ -156,6 +207,23 @@ from mypy_boto3_glacier.paginator import ListVaultsPaginator
 def get_list_vaults_paginator() -> ListVaultsPaginator:
     return Session().client("glacier").get_paginator("list_vaults")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glacier.paginator import ListVaultsPaginator
+
+session = Session()
+
+client = Session().client("glacier")  # (1)
+paginator: ListVaultsPaginator = client.get_paginator("list_vaults")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GlacierClient](./client.md)
+2. paginator: [ListVaultsPaginator](./paginators.md#listvaultspaginator)
+3. item: [:material-code-braces: ListVaultsOutputTypeDef](./type_defs.md#listvaultsoutputtypedef) 
 
 
 ### paginate

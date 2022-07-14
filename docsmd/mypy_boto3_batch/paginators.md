@@ -21,6 +21,23 @@ def get_describe_compute_environments_paginator() -> DescribeComputeEnvironments
     return Session().client("batch").get_paginator("describe_compute_environments")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_batch.paginator import DescribeComputeEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("batch")  # (1)
+paginator: DescribeComputeEnvironmentsPaginator = client.get_paginator("describe_compute_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BatchClient](./client.md)
+2. paginator: [DescribeComputeEnvironmentsPaginator](./paginators.md#describecomputeenvironmentspaginator)
+3. item: [:material-code-braces: DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_batch.paginator import DescribeJobDefinitionsPaginator
 def get_describe_job_definitions_paginator() -> DescribeJobDefinitionsPaginator:
     return Session().client("batch").get_paginator("describe_job_definitions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_batch.paginator import DescribeJobDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("batch")  # (1)
+paginator: DescribeJobDefinitionsPaginator = client.get_paginator("describe_job_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BatchClient](./client.md)
+2. paginator: [DescribeJobDefinitionsPaginator](./paginators.md#describejobdefinitionspaginator)
+3. item: [:material-code-braces: DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_describe_job_queues_paginator() -> DescribeJobQueuesPaginator:
     return Session().client("batch").get_paginator("describe_job_queues")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_batch.paginator import DescribeJobQueuesPaginator
+
+session = Session()
+
+client = Session().client("batch")  # (1)
+paginator: DescribeJobQueuesPaginator = client.get_paginator("describe_job_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BatchClient](./client.md)
+2. paginator: [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
+3. item: [:material-code-braces: DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_batch.paginator import ListJobsPaginator
 def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("batch").get_paginator("list_jobs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_batch.paginator import ListJobsPaginator
+
+session = Session()
+
+client = Session().client("batch")  # (1)
+paginator: ListJobsPaginator = client.get_paginator("list_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BatchClient](./client.md)
+2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+3. item: [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
 
 ### paginate
@@ -196,6 +264,23 @@ from mypy_boto3_batch.paginator import ListSchedulingPoliciesPaginator
 def get_list_scheduling_policies_paginator() -> ListSchedulingPoliciesPaginator:
     return Session().client("batch").get_paginator("list_scheduling_policies")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_batch.paginator import ListSchedulingPoliciesPaginator
+
+session = Session()
+
+client = Session().client("batch")  # (1)
+paginator: ListSchedulingPoliciesPaginator = client.get_paginator("list_scheduling_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BatchClient](./client.md)
+2. paginator: [ListSchedulingPoliciesPaginator](./paginators.md#listschedulingpoliciespaginator)
+3. item: [:material-code-braces: ListSchedulingPoliciesResponseTypeDef](./type_defs.md#listschedulingpoliciesresponsetypedef) 
 
 
 ### paginate

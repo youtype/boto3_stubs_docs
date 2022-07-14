@@ -21,6 +21,23 @@ def get_describe_schedule_paginator() -> DescribeSchedulePaginator:
     return Session().client("medialive").get_paginator("describe_schedule")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import DescribeSchedulePaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: DescribeSchedulePaginator = client.get_paginator("describe_schedule")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
+3. item: [:material-code-braces: DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return Session().client("medialive").get_paginator("list_channels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListChannelsPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListChannelsPaginator = client.get_paginator("list_channels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+3. item: [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
+
 
 ### paginate
 
@@ -103,6 +137,23 @@ from mypy_boto3_medialive.paginator import ListInputDeviceTransfersPaginator
 def get_list_input_device_transfers_paginator() -> ListInputDeviceTransfersPaginator:
     return Session().client("medialive").get_paginator("list_input_device_transfers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListInputDeviceTransfersPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListInputDeviceTransfersPaginator = client.get_paginator("list_input_device_transfers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListInputDeviceTransfersPaginator](./paginators.md#listinputdevicetransferspaginator)
+3. item: [:material-code-braces: ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef) 
 
 
 ### paginate
@@ -146,6 +197,23 @@ def get_list_input_devices_paginator() -> ListInputDevicesPaginator:
     return Session().client("medialive").get_paginator("list_input_devices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListInputDevicesPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListInputDevicesPaginator = client.get_paginator("list_input_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListInputDevicesPaginator](./paginators.md#listinputdevicespaginator)
+3. item: [:material-code-braces: ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_medialive.paginator import ListInputSecurityGroupsPaginator
 def get_list_input_security_groups_paginator() -> ListInputSecurityGroupsPaginator:
     return Session().client("medialive").get_paginator("list_input_security_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListInputSecurityGroupsPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListInputSecurityGroupsPaginator = client.get_paginator("list_input_security_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListInputSecurityGroupsPaginator](./paginators.md#listinputsecuritygroupspaginator)
+3. item: [:material-code-braces: ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef) 
 
 
 ### paginate
@@ -228,6 +313,23 @@ def get_list_inputs_paginator() -> ListInputsPaginator:
     return Session().client("medialive").get_paginator("list_inputs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListInputsPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListInputsPaginator = client.get_paginator("list_inputs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListInputsPaginator](./paginators.md#listinputspaginator)
+3. item: [:material-code-braces: ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef) 
+
 
 ### paginate
 
@@ -268,6 +370,23 @@ from mypy_boto3_medialive.paginator import ListMultiplexProgramsPaginator
 def get_list_multiplex_programs_paginator() -> ListMultiplexProgramsPaginator:
     return Session().client("medialive").get_paginator("list_multiplex_programs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListMultiplexProgramsPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListMultiplexProgramsPaginator = client.get_paginator("list_multiplex_programs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListMultiplexProgramsPaginator](./paginators.md#listmultiplexprogramspaginator)
+3. item: [:material-code-braces: ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef) 
 
 
 ### paginate
@@ -311,6 +430,23 @@ def get_list_multiplexes_paginator() -> ListMultiplexesPaginator:
     return Session().client("medialive").get_paginator("list_multiplexes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListMultiplexesPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListMultiplexesPaginator = client.get_paginator("list_multiplexes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListMultiplexesPaginator](./paginators.md#listmultiplexespaginator)
+3. item: [:material-code-braces: ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef) 
+
 
 ### paginate
 
@@ -351,6 +487,23 @@ from mypy_boto3_medialive.paginator import ListOfferingsPaginator
 def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return Session().client("medialive").get_paginator("list_offerings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListOfferingsPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListOfferingsPaginator = client.get_paginator("list_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
+3. item: [:material-code-braces: ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef) 
 
 
 ### paginate
@@ -402,6 +555,23 @@ from mypy_boto3_medialive.paginator import ListReservationsPaginator
 def get_list_reservations_paginator() -> ListReservationsPaginator:
     return Session().client("medialive").get_paginator("list_reservations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_medialive.paginator import ListReservationsPaginator
+
+session = Session()
+
+client = Session().client("medialive")  # (1)
+paginator: ListReservationsPaginator = client.get_paginator("list_reservations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MediaLiveClient](./client.md)
+2. paginator: [ListReservationsPaginator](./paginators.md#listreservationspaginator)
+3. item: [:material-code-braces: ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef) 
 
 
 ### paginate

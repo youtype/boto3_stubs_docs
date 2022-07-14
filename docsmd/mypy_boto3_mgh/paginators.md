@@ -21,6 +21,23 @@ def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
     return Session().client("mgh").get_paginator("list_application_states")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator
+
+session = Session()
+
+client = Session().client("mgh")  # (1)
+paginator: ListApplicationStatesPaginator = client.get_paginator("list_application_states")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubClient](./client.md)
+2. paginator: [ListApplicationStatesPaginator](./paginators.md#listapplicationstatespaginator)
+3. item: [:material-code-braces: ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_mgh.paginator import ListCreatedArtifactsPaginator
 def get_list_created_artifacts_paginator() -> ListCreatedArtifactsPaginator:
     return Session().client("mgh").get_paginator("list_created_artifacts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgh.paginator import ListCreatedArtifactsPaginator
+
+session = Session()
+
+client = Session().client("mgh")  # (1)
+paginator: ListCreatedArtifactsPaginator = client.get_paginator("list_created_artifacts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubClient](./client.md)
+2. paginator: [ListCreatedArtifactsPaginator](./paginators.md#listcreatedartifactspaginator)
+3. item: [:material-code-braces: ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return Session().client("mgh").get_paginator("list_discovered_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgh.paginator import ListDiscoveredResourcesPaginator
+
+session = Session()
+
+client = Session().client("mgh")  # (1)
+paginator: ListDiscoveredResourcesPaginator = client.get_paginator("list_discovered_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubClient](./client.md)
+2. paginator: [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
+3. item: [:material-code-braces: ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef) 
+
 
 ### paginate
 
@@ -151,6 +202,23 @@ def get_list_migration_tasks_paginator() -> ListMigrationTasksPaginator:
     return Session().client("mgh").get_paginator("list_migration_tasks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgh.paginator import ListMigrationTasksPaginator
+
+session = Session()
+
+client = Session().client("mgh")  # (1)
+paginator: ListMigrationTasksPaginator = client.get_paginator("list_migration_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubClient](./client.md)
+2. paginator: [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
+3. item: [:material-code-braces: ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef) 
+
 
 ### paginate
 
@@ -192,6 +260,23 @@ from mypy_boto3_mgh.paginator import ListProgressUpdateStreamsPaginator
 def get_list_progress_update_streams_paginator() -> ListProgressUpdateStreamsPaginator:
     return Session().client("mgh").get_paginator("list_progress_update_streams")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgh.paginator import ListProgressUpdateStreamsPaginator
+
+session = Session()
+
+client = Session().client("mgh")  # (1)
+paginator: ListProgressUpdateStreamsPaginator = client.get_paginator("list_progress_update_streams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MigrationHubClient](./client.md)
+2. paginator: [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)
+3. item: [:material-code-braces: ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef) 
 
 
 ### paginate

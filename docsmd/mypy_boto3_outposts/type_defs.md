@@ -415,26 +415,41 @@ class GetSiteInputRequestTypeDef(TypedDict):
     SiteId: str,
 ```
 
-## LineItemTypeDef
+## LineItemAssetInformationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_outposts.type_defs import LineItemTypeDef
+from mypy_boto3_outposts.type_defs import LineItemAssetInformationTypeDef
 
-def get_value() -> LineItemTypeDef:
+def get_value() -> LineItemAssetInformationTypeDef:
     return {
-        "CatalogItemId": ...,
+        "AssetId": ...,
     }
 ```
 
 ```python title="Definition"
-class LineItemTypeDef(TypedDict):
-    CatalogItemId: NotRequired[str],
-    LineItemId: NotRequired[str],
-    Quantity: NotRequired[int],
-    Status: NotRequired[LineItemStatusType],  # (1)
+class LineItemAssetInformationTypeDef(TypedDict):
+    AssetId: NotRequired[str],
+    MacAddressList: NotRequired[List[str]],
 ```
 
-1. See [:material-code-brackets: LineItemStatusType](./literals.md#lineitemstatustype) 
+## ShipmentInformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_outposts.type_defs import ShipmentInformationTypeDef
+
+def get_value() -> ShipmentInformationTypeDef:
+    return {
+        "ShipmentTrackingNumber": ...,
+    }
+```
+
+```python title="Definition"
+class ShipmentInformationTypeDef(TypedDict):
+    ShipmentTrackingNumber: NotRequired[str],
+    ShipmentCarrier: NotRequired[ShipmentCarrierType],  # (1)
+```
+
+1. See [:material-code-brackets: ShipmentCarrierType](./literals.md#shipmentcarriertype) 
 ## ListAssetsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1070,31 +1085,30 @@ class GetOutpostInstanceTypesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceTypeItemTypeDef](./type_defs.md#instancetypeitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## OrderTypeDef
+## LineItemTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_outposts.type_defs import OrderTypeDef
+from mypy_boto3_outposts.type_defs import LineItemTypeDef
 
-def get_value() -> OrderTypeDef:
+def get_value() -> LineItemTypeDef:
     return {
-        "OutpostId": ...,
+        "CatalogItemId": ...,
     }
 ```
 
 ```python title="Definition"
-class OrderTypeDef(TypedDict):
-    OutpostId: NotRequired[str],
-    OrderId: NotRequired[str],
-    Status: NotRequired[OrderStatusType],  # (1)
-    LineItems: NotRequired[List[LineItemTypeDef]],  # (2)
-    PaymentOption: NotRequired[PaymentOptionType],  # (3)
-    OrderSubmissionDate: NotRequired[datetime],
-    OrderFulfilledDate: NotRequired[datetime],
+class LineItemTypeDef(TypedDict):
+    CatalogItemId: NotRequired[str],
+    LineItemId: NotRequired[str],
+    Quantity: NotRequired[int],
+    Status: NotRequired[LineItemStatusType],  # (1)
+    ShipmentInformation: NotRequired[ShipmentInformationTypeDef],  # (2)
+    AssetInformationList: NotRequired[List[LineItemAssetInformationTypeDef]],  # (3)
 ```
 
-1. See [:material-code-brackets: OrderStatusType](./literals.md#orderstatustype) 
-2. See [:material-code-braces: LineItemTypeDef](./type_defs.md#lineitemtypedef) 
-3. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+1. See [:material-code-brackets: LineItemStatusType](./literals.md#lineitemstatustype) 
+2. See [:material-code-braces: ShipmentInformationTypeDef](./type_defs.md#shipmentinformationtypedef) 
+3. See [:material-code-braces: LineItemAssetInformationTypeDef](./type_defs.md#lineitemassetinformationtypedef) 
 ## ListOrdersOutputTypeDef
 
 ```python title="Usage Example"
@@ -1283,6 +1297,31 @@ class UpdateSiteRackPhysicalPropertiesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OrderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_outposts.type_defs import OrderTypeDef
+
+def get_value() -> OrderTypeDef:
+    return {
+        "OutpostId": ...,
+    }
+```
+
+```python title="Definition"
+class OrderTypeDef(TypedDict):
+    OutpostId: NotRequired[str],
+    OrderId: NotRequired[str],
+    Status: NotRequired[OrderStatusType],  # (1)
+    LineItems: NotRequired[List[LineItemTypeDef]],  # (2)
+    PaymentOption: NotRequired[PaymentOptionType],  # (3)
+    OrderSubmissionDate: NotRequired[datetime],
+    OrderFulfilledDate: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: OrderStatusType](./literals.md#orderstatustype) 
+2. See [:material-code-braces: LineItemTypeDef](./type_defs.md#lineitemtypedef) 
+3. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
 ## CreateOrderOutputTypeDef
 
 ```python title="Usage Example"

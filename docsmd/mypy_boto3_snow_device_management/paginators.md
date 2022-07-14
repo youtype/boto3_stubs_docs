@@ -21,6 +21,23 @@ def get_list_device_resources_paginator() -> ListDeviceResourcesPaginator:
     return Session().client("snow-device-management").get_paginator("list_device_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snow_device_management.paginator import ListDeviceResourcesPaginator
+
+session = Session()
+
+client = Session().client("snow-device-management")  # (1)
+paginator: ListDeviceResourcesPaginator = client.get_paginator("list_device_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowDeviceManagementClient](./client.md)
+2. paginator: [ListDeviceResourcesPaginator](./paginators.md#listdeviceresourcespaginator)
+3. item: [:material-code-braces: ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
     return Session().client("snow-device-management").get_paginator("list_devices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snow_device_management.paginator import ListDevicesPaginator
+
+session = Session()
+
+client = Session().client("snow-device-management")  # (1)
+paginator: ListDevicesPaginator = client.get_paginator("list_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowDeviceManagementClient](./client.md)
+2. paginator: [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+3. item: [:material-code-braces: ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_snow_device_management.paginator import ListExecutionsPaginator
 def get_list_executions_paginator() -> ListExecutionsPaginator:
     return Session().client("snow-device-management").get_paginator("list_executions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snow_device_management.paginator import ListExecutionsPaginator
+
+session = Session()
+
+client = Session().client("snow-device-management")  # (1)
+paginator: ListExecutionsPaginator = client.get_paginator("list_executions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowDeviceManagementClient](./client.md)
+2. paginator: [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+3. item: [:material-code-braces: ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef) 
 
 
 ### paginate
@@ -149,6 +200,23 @@ from mypy_boto3_snow_device_management.paginator import ListTasksPaginator
 def get_list_tasks_paginator() -> ListTasksPaginator:
     return Session().client("snow-device-management").get_paginator("list_tasks")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snow_device_management.paginator import ListTasksPaginator
+
+session = Session()
+
+client = Session().client("snow-device-management")  # (1)
+paginator: ListTasksPaginator = client.get_paginator("list_tasks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowDeviceManagementClient](./client.md)
+2. paginator: [ListTasksPaginator](./paginators.md#listtaskspaginator)
+3. item: [:material-code-braces: ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef) 
 
 
 ### paginate

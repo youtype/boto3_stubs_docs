@@ -21,6 +21,23 @@ def get_get_cell_readiness_summary_paginator() -> GetCellReadinessSummaryPaginat
     return Session().client("route53-recovery-readiness").get_paginator("get_cell_readiness_summary")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import GetCellReadinessSummaryPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: GetCellReadinessSummaryPaginator = client.get_paginator("get_cell_readiness_summary")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [GetCellReadinessSummaryPaginator](./paginators.md#getcellreadinesssummarypaginator)
+3. item: [:material-code-braces: GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_route53_recovery_readiness.paginator import GetReadinessCheckRes
 def get_get_readiness_check_resource_status_paginator() -> GetReadinessCheckResourceStatusPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("get_readiness_check_resource_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import GetReadinessCheckResourceStatusPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: GetReadinessCheckResourceStatusPaginator = client.get_paginator("get_readiness_check_resource_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [GetReadinessCheckResourceStatusPaginator](./paginators.md#getreadinesscheckresourcestatuspaginator)
+3. item: [:material-code-braces: GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_get_readiness_check_status_paginator() -> GetReadinessCheckStatusPaginat
     return Session().client("route53-recovery-readiness").get_paginator("get_readiness_check_status")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import GetReadinessCheckStatusPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: GetReadinessCheckStatusPaginator = client.get_paginator("get_readiness_check_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [GetReadinessCheckStatusPaginator](./paginators.md#getreadinesscheckstatuspaginator)
+3. item: [:material-code-braces: GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef) 
+
 
 ### paginate
 
@@ -148,6 +199,23 @@ from mypy_boto3_route53_recovery_readiness.paginator import GetRecoveryGroupRead
 def get_get_recovery_group_readiness_summary_paginator() -> GetRecoveryGroupReadinessSummaryPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("get_recovery_group_readiness_summary")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import GetRecoveryGroupReadinessSummaryPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: GetRecoveryGroupReadinessSummaryPaginator = client.get_paginator("get_recovery_group_readiness_summary")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [GetRecoveryGroupReadinessSummaryPaginator](./paginators.md#getrecoverygroupreadinesssummarypaginator)
+3. item: [:material-code-braces: GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef) 
 
 
 ### paginate
@@ -191,6 +259,23 @@ def get_list_cells_paginator() -> ListCellsPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("list_cells")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import ListCellsPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: ListCellsPaginator = client.get_paginator("list_cells")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [ListCellsPaginator](./paginators.md#listcellspaginator)
+3. item: [:material-code-braces: ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef) 
+
 
 ### paginate
 
@@ -231,6 +316,23 @@ from mypy_boto3_route53_recovery_readiness.paginator import ListCrossAccountAuth
 def get_list_cross_account_authorizations_paginator() -> ListCrossAccountAuthorizationsPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("list_cross_account_authorizations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import ListCrossAccountAuthorizationsPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: ListCrossAccountAuthorizationsPaginator = client.get_paginator("list_cross_account_authorizations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [ListCrossAccountAuthorizationsPaginator](./paginators.md#listcrossaccountauthorizationspaginator)
+3. item: [:material-code-braces: ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef) 
 
 
 ### paginate
@@ -273,6 +375,23 @@ def get_list_readiness_checks_paginator() -> ListReadinessChecksPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("list_readiness_checks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import ListReadinessChecksPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: ListReadinessChecksPaginator = client.get_paginator("list_readiness_checks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [ListReadinessChecksPaginator](./paginators.md#listreadinesscheckspaginator)
+3. item: [:material-code-braces: ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef) 
+
 
 ### paginate
 
@@ -313,6 +432,23 @@ from mypy_boto3_route53_recovery_readiness.paginator import ListRecoveryGroupsPa
 def get_list_recovery_groups_paginator() -> ListRecoveryGroupsPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("list_recovery_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import ListRecoveryGroupsPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: ListRecoveryGroupsPaginator = client.get_paginator("list_recovery_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [ListRecoveryGroupsPaginator](./paginators.md#listrecoverygroupspaginator)
+3. item: [:material-code-braces: ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef) 
 
 
 ### paginate
@@ -355,6 +491,23 @@ def get_list_resource_sets_paginator() -> ListResourceSetsPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("list_resource_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import ListResourceSetsPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: ListResourceSetsPaginator = client.get_paginator("list_resource_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [ListResourceSetsPaginator](./paginators.md#listresourcesetspaginator)
+3. item: [:material-code-braces: ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef) 
+
 
 ### paginate
 
@@ -395,6 +548,23 @@ from mypy_boto3_route53_recovery_readiness.paginator import ListRulesPaginator
 def get_list_rules_paginator() -> ListRulesPaginator:
     return Session().client("route53-recovery-readiness").get_paginator("list_rules")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_readiness.paginator import ListRulesPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-readiness")  # (1)
+paginator: ListRulesPaginator = client.get_paginator("list_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryReadinessClient](./client.md)
+2. paginator: [ListRulesPaginator](./paginators.md#listrulespaginator)
+3. item: [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
 
 ### paginate

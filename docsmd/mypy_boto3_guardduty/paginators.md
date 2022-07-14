@@ -21,6 +21,23 @@ def get_list_detectors_paginator() -> ListDetectorsPaginator:
     return Session().client("guardduty").get_paginator("list_detectors")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListDetectorsPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListDetectorsPaginator = client.get_paginator("list_detectors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
+3. item: [:material-code-braces: ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_guardduty.paginator import ListFiltersPaginator
 def get_list_filters_paginator() -> ListFiltersPaginator:
     return Session().client("guardduty").get_paginator("list_filters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListFiltersPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListFiltersPaginator = client.get_paginator("list_filters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+3. item: [:material-code-braces: ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ from mypy_boto3_guardduty.paginator import ListFindingsPaginator
 def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("guardduty").get_paginator("list_findings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListFindingsPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListFindingsPaginator = client.get_paginator("list_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+3. item: [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
 
 ### paginate
@@ -150,6 +201,23 @@ def get_list_ip_sets_paginator() -> ListIPSetsPaginator:
     return Session().client("guardduty").get_paginator("list_ip_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListIPSetsPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListIPSetsPaginator = client.get_paginator("list_ip_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
+3. item: [:material-code-braces: ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -192,6 +260,23 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return Session().client("guardduty").get_paginator("list_invitations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListInvitationsPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListInvitationsPaginator = client.get_paginator("list_invitations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+3. item: [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
+
 
 ### paginate
 
@@ -232,6 +317,23 @@ from mypy_boto3_guardduty.paginator import ListMembersPaginator
 def get_list_members_paginator() -> ListMembersPaginator:
     return Session().client("guardduty").get_paginator("list_members")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListMembersPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListMembersPaginator = client.get_paginator("list_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListMembersPaginator](./paginators.md#listmemberspaginator)
+3. item: [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
 
 ### paginate
@@ -276,6 +378,23 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
     return Session().client("guardduty").get_paginator("list_organization_admin_accounts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListOrganizationAdminAccountsPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListOrganizationAdminAccountsPaginator = client.get_paginator("list_organization_admin_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+3. item: [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
+
 
 ### paginate
 
@@ -316,6 +435,23 @@ from mypy_boto3_guardduty.paginator import ListThreatIntelSetsPaginator
 def get_list_threat_intel_sets_paginator() -> ListThreatIntelSetsPaginator:
     return Session().client("guardduty").get_paginator("list_threat_intel_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import ListThreatIntelSetsPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: ListThreatIntelSetsPaginator = client.get_paginator("list_threat_intel_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)
+3. item: [:material-code-braces: ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef) 
 
 
 ### paginate

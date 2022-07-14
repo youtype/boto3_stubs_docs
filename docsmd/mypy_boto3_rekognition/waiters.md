@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_rekognition.waiter import ProjectVersionRunningWaiter
 
-def get_project_version_running_waiter() -> ProjectVersionRunningWaiter:
-    return Session().client("rekognition").get_waiter("project_version_running")
+
+session = Session()
+
+client = session.client("rekognition")  # (1)
+waiter: ProjectVersionRunningWaiter = client.get_waiter("project_version_running")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RekognitionClient](./client.md)
+2. waiter: [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
 
 
 ### wait
@@ -61,9 +68,16 @@ from boto3.session import Session
 
 from mypy_boto3_rekognition.waiter import ProjectVersionTrainingCompletedWaiter
 
-def get_project_version_training_completed_waiter() -> ProjectVersionTrainingCompletedWaiter:
-    return Session().client("rekognition").get_waiter("project_version_training_completed")
+
+session = Session()
+
+client = session.client("rekognition")  # (1)
+waiter: ProjectVersionTrainingCompletedWaiter = client.get_waiter("project_version_training_completed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [RekognitionClient](./client.md)
+2. waiter: [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)
 
 
 ### wait

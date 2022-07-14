@@ -21,6 +21,23 @@ def get_list_cloud_front_origin_access_identities_paginator() -> ListCloudFrontO
     return Session().client("cloudfront").get_paginator("list_cloud_front_origin_access_identities")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentitiesPaginator
+
+session = Session()
+
+client = Session().client("cloudfront")  # (1)
+paginator: ListCloudFrontOriginAccessIdentitiesPaginator = client.get_paginator("list_cloud_front_origin_access_identities")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFrontClient](./client.md)
+2. paginator: [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
+3. item: [:material-code-braces: ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_cloudfront.paginator import ListDistributionsPaginator
 def get_list_distributions_paginator() -> ListDistributionsPaginator:
     return Session().client("cloudfront").get_paginator("list_distributions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudfront.paginator import ListDistributionsPaginator
+
+session = Session()
+
+client = Session().client("cloudfront")  # (1)
+paginator: ListDistributionsPaginator = client.get_paginator("list_distributions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFrontClient](./client.md)
+2. paginator: [ListDistributionsPaginator](./paginators.md#listdistributionspaginator)
+3. item: [:material-code-braces: ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ def get_list_invalidations_paginator() -> ListInvalidationsPaginator:
     return Session().client("cloudfront").get_paginator("list_invalidations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudfront.paginator import ListInvalidationsPaginator
+
+session = Session()
+
+client = Session().client("cloudfront")  # (1)
+paginator: ListInvalidationsPaginator = client.get_paginator("list_invalidations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFrontClient](./client.md)
+2. paginator: [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
+3. item: [:material-code-braces: ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef) 
+
 
 ### paginate
 
@@ -144,6 +195,23 @@ from mypy_boto3_cloudfront.paginator import ListStreamingDistributionsPaginator
 def get_list_streaming_distributions_paginator() -> ListStreamingDistributionsPaginator:
     return Session().client("cloudfront").get_paginator("list_streaming_distributions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudfront.paginator import ListStreamingDistributionsPaginator
+
+session = Session()
+
+client = Session().client("cloudfront")  # (1)
+paginator: ListStreamingDistributionsPaginator = client.get_paginator("list_streaming_distributions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudFrontClient](./client.md)
+2. paginator: [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
+3. item: [:material-code-braces: ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_describe_addon_versions_paginator() -> DescribeAddonVersionsPaginator:
     return Session().client("eks").get_paginator("describe_addon_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_eks.paginator import DescribeAddonVersionsPaginator
+
+session = Session()
+
+client = Session().client("eks")  # (1)
+paginator: DescribeAddonVersionsPaginator = client.get_paginator("describe_addon_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EKSClient](./client.md)
+2. paginator: [DescribeAddonVersionsPaginator](./paginators.md#describeaddonversionspaginator)
+3. item: [:material-code-braces: DescribeAddonVersionsResponseTypeDef](./type_defs.md#describeaddonversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_addons_paginator() -> ListAddonsPaginator:
     return Session().client("eks").get_paginator("list_addons")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_eks.paginator import ListAddonsPaginator
+
+session = Session()
+
+client = Session().client("eks")  # (1)
+paginator: ListAddonsPaginator = client.get_paginator("list_addons")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EKSClient](./client.md)
+2. paginator: [ListAddonsPaginator](./paginators.md#listaddonspaginator)
+3. item: [:material-code-braces: ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_eks.paginator import ListClustersPaginator
 def get_list_clusters_paginator() -> ListClustersPaginator:
     return Session().client("eks").get_paginator("list_clusters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_eks.paginator import ListClustersPaginator
+
+session = Session()
+
+client = Session().client("eks")  # (1)
+paginator: ListClustersPaginator = client.get_paginator("list_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EKSClient](./client.md)
+2. paginator: [ListClustersPaginator](./paginators.md#listclusterspaginator)
+3. item: [:material-code-braces: ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef) 
 
 
 ### paginate
@@ -148,6 +199,23 @@ def get_list_fargate_profiles_paginator() -> ListFargateProfilesPaginator:
     return Session().client("eks").get_paginator("list_fargate_profiles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_eks.paginator import ListFargateProfilesPaginator
+
+session = Session()
+
+client = Session().client("eks")  # (1)
+paginator: ListFargateProfilesPaginator = client.get_paginator("list_fargate_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EKSClient](./client.md)
+2. paginator: [ListFargateProfilesPaginator](./paginators.md#listfargateprofilespaginator)
+3. item: [:material-code-braces: ListFargateProfilesResponseTypeDef](./type_defs.md#listfargateprofilesresponsetypedef) 
+
 
 ### paginate
 
@@ -189,6 +257,23 @@ from mypy_boto3_eks.paginator import ListIdentityProviderConfigsPaginator
 def get_list_identity_provider_configs_paginator() -> ListIdentityProviderConfigsPaginator:
     return Session().client("eks").get_paginator("list_identity_provider_configs")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_eks.paginator import ListIdentityProviderConfigsPaginator
+
+session = Session()
+
+client = Session().client("eks")  # (1)
+paginator: ListIdentityProviderConfigsPaginator = client.get_paginator("list_identity_provider_configs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EKSClient](./client.md)
+2. paginator: [ListIdentityProviderConfigsPaginator](./paginators.md#listidentityproviderconfigspaginator)
+3. item: [:material-code-braces: ListIdentityProviderConfigsResponseTypeDef](./type_defs.md#listidentityproviderconfigsresponsetypedef) 
 
 
 ### paginate
@@ -232,6 +317,23 @@ def get_list_nodegroups_paginator() -> ListNodegroupsPaginator:
     return Session().client("eks").get_paginator("list_nodegroups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_eks.paginator import ListNodegroupsPaginator
+
+session = Session()
+
+client = Session().client("eks")  # (1)
+paginator: ListNodegroupsPaginator = client.get_paginator("list_nodegroups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EKSClient](./client.md)
+2. paginator: [ListNodegroupsPaginator](./paginators.md#listnodegroupspaginator)
+3. item: [:material-code-braces: ListNodegroupsResponseTypeDef](./type_defs.md#listnodegroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -273,6 +375,23 @@ from mypy_boto3_eks.paginator import ListUpdatesPaginator
 def get_list_updates_paginator() -> ListUpdatesPaginator:
     return Session().client("eks").get_paginator("list_updates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_eks.paginator import ListUpdatesPaginator
+
+session = Session()
+
+client = Session().client("eks")  # (1)
+paginator: ListUpdatesPaginator = client.get_paginator("list_updates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EKSClient](./client.md)
+2. paginator: [ListUpdatesPaginator](./paginators.md#listupdatespaginator)
+3. item: [:material-code-braces: ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef) 
 
 
 ### paginate

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_dynamodb.waiter import TableExistsWaiter
 
-def get_table_exists_waiter() -> TableExistsWaiter:
-    return Session().client("dynamodb").get_waiter("table_exists")
+
+session = Session()
+
+client = session.client("dynamodb")  # (1)
+waiter: TableExistsWaiter = client.get_waiter("table_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DynamoDBClient](./client.md)
+2. waiter: [TableExistsWaiter](./waiters.md#tableexistswaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_dynamodb.waiter import TableNotExistsWaiter
 
-def get_table_not_exists_waiter() -> TableNotExistsWaiter:
-    return Session().client("dynamodb").get_waiter("table_not_exists")
+
+session = Session()
+
+client = session.client("dynamodb")  # (1)
+waiter: TableNotExistsWaiter = client.get_waiter("table_not_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [DynamoDBClient](./client.md)
+2. waiter: [TableNotExistsWaiter](./waiters.md#tablenotexistswaiter)
 
 
 ### wait

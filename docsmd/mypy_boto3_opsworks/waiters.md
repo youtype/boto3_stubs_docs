@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_opsworks.waiter import AppExistsWaiter
 
-def get_app_exists_waiter() -> AppExistsWaiter:
-    return Session().client("opsworks").get_waiter("app_exists")
+
+session = Session()
+
+client = session.client("opsworks")  # (1)
+waiter: AppExistsWaiter = client.get_waiter("app_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [OpsWorksClient](./client.md)
+2. waiter: [AppExistsWaiter](./waiters.md#appexistswaiter)
 
 
 ### wait
@@ -59,9 +66,16 @@ from boto3.session import Session
 
 from mypy_boto3_opsworks.waiter import DeploymentSuccessfulWaiter
 
-def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
-    return Session().client("opsworks").get_waiter("deployment_successful")
+
+session = Session()
+
+client = session.client("opsworks")  # (1)
+waiter: DeploymentSuccessfulWaiter = client.get_waiter("deployment_successful")  # (2)
+await waiter.wait()
 ```
+
+1. client: [OpsWorksClient](./client.md)
+2. waiter: [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
 
 
 ### wait
@@ -102,9 +116,16 @@ from boto3.session import Session
 
 from mypy_boto3_opsworks.waiter import InstanceOnlineWaiter
 
-def get_instance_online_waiter() -> InstanceOnlineWaiter:
-    return Session().client("opsworks").get_waiter("instance_online")
+
+session = Session()
+
+client = session.client("opsworks")  # (1)
+waiter: InstanceOnlineWaiter = client.get_waiter("instance_online")  # (2)
+await waiter.wait()
 ```
+
+1. client: [OpsWorksClient](./client.md)
+2. waiter: [InstanceOnlineWaiter](./waiters.md#instanceonlinewaiter)
 
 
 ### wait
@@ -145,9 +166,16 @@ from boto3.session import Session
 
 from mypy_boto3_opsworks.waiter import InstanceRegisteredWaiter
 
-def get_instance_registered_waiter() -> InstanceRegisteredWaiter:
-    return Session().client("opsworks").get_waiter("instance_registered")
+
+session = Session()
+
+client = session.client("opsworks")  # (1)
+waiter: InstanceRegisteredWaiter = client.get_waiter("instance_registered")  # (2)
+await waiter.wait()
 ```
+
+1. client: [OpsWorksClient](./client.md)
+2. waiter: [InstanceRegisteredWaiter](./waiters.md#instanceregisteredwaiter)
 
 
 ### wait
@@ -188,9 +216,16 @@ from boto3.session import Session
 
 from mypy_boto3_opsworks.waiter import InstanceStoppedWaiter
 
-def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
-    return Session().client("opsworks").get_waiter("instance_stopped")
+
+session = Session()
+
+client = session.client("opsworks")  # (1)
+waiter: InstanceStoppedWaiter = client.get_waiter("instance_stopped")  # (2)
+await waiter.wait()
 ```
+
+1. client: [OpsWorksClient](./client.md)
+2. waiter: [InstanceStoppedWaiter](./waiters.md#instancestoppedwaiter)
 
 
 ### wait
@@ -231,9 +266,16 @@ from boto3.session import Session
 
 from mypy_boto3_opsworks.waiter import InstanceTerminatedWaiter
 
-def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
-    return Session().client("opsworks").get_waiter("instance_terminated")
+
+session = Session()
+
+client = session.client("opsworks")  # (1)
+waiter: InstanceTerminatedWaiter = client.get_waiter("instance_terminated")  # (2)
+await waiter.wait()
 ```
+
+1. client: [OpsWorksClient](./client.md)
+2. waiter: [InstanceTerminatedWaiter](./waiters.md#instanceterminatedwaiter)
 
 
 ### wait

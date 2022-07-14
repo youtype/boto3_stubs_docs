@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_kinesis.waiter import StreamExistsWaiter
 
-def get_stream_exists_waiter() -> StreamExistsWaiter:
-    return Session().client("kinesis").get_waiter("stream_exists")
+
+session = Session()
+
+client = session.client("kinesis")  # (1)
+waiter: StreamExistsWaiter = client.get_waiter("stream_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [KinesisClient](./client.md)
+2. waiter: [StreamExistsWaiter](./waiters.md#streamexistswaiter)
 
 
 ### wait
@@ -60,9 +67,16 @@ from boto3.session import Session
 
 from mypy_boto3_kinesis.waiter import StreamNotExistsWaiter
 
-def get_stream_not_exists_waiter() -> StreamNotExistsWaiter:
-    return Session().client("kinesis").get_waiter("stream_not_exists")
+
+session = Session()
+
+client = session.client("kinesis")  # (1)
+waiter: StreamNotExistsWaiter = client.get_waiter("stream_not_exists")  # (2)
+await waiter.wait()
 ```
+
+1. client: [KinesisClient](./client.md)
+2. waiter: [StreamNotExistsWaiter](./waiters.md#streamnotexistswaiter)
 
 
 ### wait

@@ -21,6 +21,23 @@ def get_list_api_keys_paginator() -> ListApiKeysPaginator:
     return Session().client("appsync").get_paginator("list_api_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appsync.paginator import ListApiKeysPaginator
+
+session = Session()
+
+client = Session().client("appsync")  # (1)
+paginator: ListApiKeysPaginator = client.get_paginator("list_api_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppSyncClient](./client.md)
+2. paginator: [ListApiKeysPaginator](./paginators.md#listapikeyspaginator)
+3. item: [:material-code-braces: ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_appsync.paginator import ListDataSourcesPaginator
 def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
     return Session().client("appsync").get_paginator("list_data_sources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appsync.paginator import ListDataSourcesPaginator
+
+session = Session()
+
+client = Session().client("appsync")  # (1)
+paginator: ListDataSourcesPaginator = client.get_paginator("list_data_sources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppSyncClient](./client.md)
+2. paginator: [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
+3. item: [:material-code-braces: ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_functions_paginator() -> ListFunctionsPaginator:
     return Session().client("appsync").get_paginator("list_functions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appsync.paginator import ListFunctionsPaginator
+
+session = Session()
+
+client = Session().client("appsync")  # (1)
+paginator: ListFunctionsPaginator = client.get_paginator("list_functions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppSyncClient](./client.md)
+2. paginator: [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
+3. item: [:material-code-braces: ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef) 
+
 
 ### paginate
 
@@ -147,6 +198,23 @@ def get_list_graphql_apis_paginator() -> ListGraphqlApisPaginator:
     return Session().client("appsync").get_paginator("list_graphql_apis")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appsync.paginator import ListGraphqlApisPaginator
+
+session = Session()
+
+client = Session().client("appsync")  # (1)
+paginator: ListGraphqlApisPaginator = client.get_paginator("list_graphql_apis")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppSyncClient](./client.md)
+2. paginator: [ListGraphqlApisPaginator](./paginators.md#listgraphqlapispaginator)
+3. item: [:material-code-braces: ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef) 
+
 
 ### paginate
 
@@ -187,6 +255,23 @@ from mypy_boto3_appsync.paginator import ListResolversPaginator
 def get_list_resolvers_paginator() -> ListResolversPaginator:
     return Session().client("appsync").get_paginator("list_resolvers")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appsync.paginator import ListResolversPaginator
+
+session = Session()
+
+client = Session().client("appsync")  # (1)
+paginator: ListResolversPaginator = client.get_paginator("list_resolvers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppSyncClient](./client.md)
+2. paginator: [ListResolversPaginator](./paginators.md#listresolverspaginator)
+3. item: [:material-code-braces: ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef) 
 
 
 ### paginate
@@ -232,6 +317,23 @@ def get_list_resolvers_by_function_paginator() -> ListResolversByFunctionPaginat
     return Session().client("appsync").get_paginator("list_resolvers_by_function")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appsync.paginator import ListResolversByFunctionPaginator
+
+session = Session()
+
+client = Session().client("appsync")  # (1)
+paginator: ListResolversByFunctionPaginator = client.get_paginator("list_resolvers_by_function")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppSyncClient](./client.md)
+2. paginator: [ListResolversByFunctionPaginator](./paginators.md#listresolversbyfunctionpaginator)
+3. item: [:material-code-braces: ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef) 
+
 
 ### paginate
 
@@ -275,6 +377,23 @@ from mypy_boto3_appsync.paginator import ListTypesPaginator
 def get_list_types_paginator() -> ListTypesPaginator:
     return Session().client("appsync").get_paginator("list_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_appsync.paginator import ListTypesPaginator
+
+session = Session()
+
+client = Session().client("appsync")  # (1)
+paginator: ListTypesPaginator = client.get_paginator("list_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppSyncClient](./client.md)
+2. paginator: [ListTypesPaginator](./paginators.md#listtypespaginator)
+3. item: [:material-code-braces: ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return Session().client("docdb").get_paginator("describe_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeCertificatesPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeCertificatesPaginator = client.get_paginator("describe_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
+3. item: [:material-code-braces: CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_docdb.paginator import DescribeDBClusterParameterGroupsPaginator
 def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterParameterGroupsPaginator:
     return Session().client("docdb").get_paginator("describe_db_cluster_parameter_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeDBClusterParameterGroupsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeDBClusterParameterGroupsPaginator = client.get_paginator("describe_db_cluster_parameter_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeDBClusterParameterGroupsPaginator](./paginators.md#describedbclusterparametergroupspaginator)
+3. item: [:material-code-braces: DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParameter
     return Session().client("docdb").get_paginator("describe_db_cluster_parameters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeDBClusterParametersPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeDBClusterParametersPaginator = client.get_paginator("describe_db_cluster_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeDBClusterParametersPaginator](./paginators.md#describedbclusterparameterspaginator)
+3. item: [:material-code-braces: DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef) 
+
 
 ### paginate
 
@@ -153,6 +204,23 @@ from mypy_boto3_docdb.paginator import DescribeDBClusterSnapshotsPaginator
 def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsPaginator:
     return Session().client("docdb").get_paginator("describe_db_cluster_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeDBClusterSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeDBClusterSnapshotsPaginator = client.get_paginator("describe_db_cluster_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeDBClusterSnapshotsPaginator](./paginators.md#describedbclustersnapshotspaginator)
+3. item: [:material-code-braces: DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef) 
 
 
 ### paginate
@@ -202,6 +270,23 @@ def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return Session().client("docdb").get_paginator("describe_db_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeDBClustersPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeDBClustersPaginator = client.get_paginator("describe_db_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeDBClustersPaginator](./paginators.md#describedbclusterspaginator)
+3. item: [:material-code-braces: DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef) 
+
 
 ### paginate
 
@@ -245,6 +330,23 @@ from mypy_boto3_docdb.paginator import DescribeDBEngineVersionsPaginator
 def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPaginator:
     return Session().client("docdb").get_paginator("describe_db_engine_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeDBEngineVersionsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeDBEngineVersionsPaginator = client.get_paginator("describe_db_engine_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeDBEngineVersionsPaginator](./paginators.md#describedbengineversionspaginator)
+3. item: [:material-code-braces: DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef) 
 
 
 ### paginate
@@ -295,6 +397,23 @@ def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return Session().client("docdb").get_paginator("describe_db_instances")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeDBInstancesPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeDBInstancesPaginator = client.get_paginator("describe_db_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeDBInstancesPaginator](./paginators.md#describedbinstancespaginator)
+3. item: [:material-code-braces: DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef) 
+
 
 ### paginate
 
@@ -338,6 +457,23 @@ from mypy_boto3_docdb.paginator import DescribeDBSubnetGroupsPaginator
 def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator:
     return Session().client("docdb").get_paginator("describe_db_subnet_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeDBSubnetGroupsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeDBSubnetGroupsPaginator = client.get_paginator("describe_db_subnet_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeDBSubnetGroupsPaginator](./paginators.md#describedbsubnetgroupspaginator)
+3. item: [:material-code-braces: DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef) 
 
 
 ### paginate
@@ -383,6 +519,23 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return Session().client("docdb").get_paginator("describe_event_subscriptions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeEventSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeEventSubscriptionsPaginator = client.get_paginator("describe_event_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+3. item: [:material-code-braces: EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef) 
+
 
 ### paginate
 
@@ -426,6 +579,23 @@ from mypy_boto3_docdb.paginator import DescribeEventsPaginator
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("docdb").get_paginator("describe_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef) 
 
 
 ### paginate
@@ -477,6 +647,23 @@ def get_describe_global_clusters_paginator() -> DescribeGlobalClustersPaginator:
     return Session().client("docdb").get_paginator("describe_global_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeGlobalClustersPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeGlobalClustersPaginator = client.get_paginator("describe_global_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
+3. item: [:material-code-braces: GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef) 
+
 
 ### paginate
 
@@ -520,6 +707,23 @@ from mypy_boto3_docdb.paginator import DescribeOrderableDBInstanceOptionsPaginat
 def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableDBInstanceOptionsPaginator:
     return Session().client("docdb").get_paginator("describe_orderable_db_instance_options")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribeOrderableDBInstanceOptionsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribeOrderableDBInstanceOptionsPaginator = client.get_paginator("describe_orderable_db_instance_options")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
+3. item: [:material-code-braces: OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef) 
 
 
 ### paginate
@@ -568,6 +772,23 @@ from mypy_boto3_docdb.paginator import DescribePendingMaintenanceActionsPaginato
 def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaintenanceActionsPaginator:
     return Session().client("docdb").get_paginator("describe_pending_maintenance_actions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_docdb.paginator import DescribePendingMaintenanceActionsPaginator
+
+session = Session()
+
+client = Session().client("docdb")  # (1)
+paginator: DescribePendingMaintenanceActionsPaginator = client.get_paginator("describe_pending_maintenance_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DocDBClient](./client.md)
+2. paginator: [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
+3. item: [:material-code-braces: PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef) 
 
 
 ### paginate

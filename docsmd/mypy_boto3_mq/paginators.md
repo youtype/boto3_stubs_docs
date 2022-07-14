@@ -21,6 +21,23 @@ def get_list_brokers_paginator() -> ListBrokersPaginator:
     return Session().client("mq").get_paginator("list_brokers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mq.paginator import ListBrokersPaginator
+
+session = Session()
+
+client = Session().client("mq")  # (1)
+paginator: ListBrokersPaginator = client.get_paginator("list_brokers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [MQClient](./client.md)
+2. paginator: [ListBrokersPaginator](./paginators.md#listbrokerspaginator)
+3. item: [:material-code-braces: ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef) 
+
 
 ### paginate
 

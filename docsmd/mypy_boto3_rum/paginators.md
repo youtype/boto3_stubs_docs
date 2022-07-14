@@ -21,6 +21,23 @@ def get_get_app_monitor_data_paginator() -> GetAppMonitorDataPaginator:
     return Session().client("rum").get_paginator("get_app_monitor_data")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator
+
+session = Session()
+
+client = Session().client("rum")  # (1)
+paginator: GetAppMonitorDataPaginator = client.get_paginator("get_app_monitor_data")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchRUMClient](./client.md)
+2. paginator: [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
+3. item: [:material-code-braces: GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ from mypy_boto3_rum.paginator import ListAppMonitorsPaginator
 def get_list_app_monitors_paginator() -> ListAppMonitorsPaginator:
     return Session().client("rum").get_paginator("list_app_monitors")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rum.paginator import ListAppMonitorsPaginator
+
+session = Session()
+
+client = Session().client("rum")  # (1)
+paginator: ListAppMonitorsPaginator = client.get_paginator("list_app_monitors")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchRUMClient](./client.md)
+2. paginator: [ListAppMonitorsPaginator](./paginators.md#listappmonitorspaginator)
+3. item: [:material-code-braces: ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef) 
 
 
 ### paginate

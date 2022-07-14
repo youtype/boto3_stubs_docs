@@ -21,6 +21,23 @@ def get_list_public_keys_paginator() -> ListPublicKeysPaginator:
     return Session().client("cloudtrail").get_paginator("list_public_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import ListPublicKeysPaginator
+
+session = Session()
+
+client = Session().client("cloudtrail")  # (1)
+paginator: ListPublicKeysPaginator = client.get_paginator("list_public_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudTrailClient](./client.md)
+2. paginator: [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
+3. item: [:material-code-braces: ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("cloudtrail").get_paginator("list_tags")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import ListTagsPaginator
+
+session = Session()
+
+client = Session().client("cloudtrail")  # (1)
+paginator: ListTagsPaginator = client.get_paginator("list_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudTrailClient](./client.md)
+2. paginator: [ListTagsPaginator](./paginators.md#listtagspaginator)
+3. item: [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ def get_list_trails_paginator() -> ListTrailsPaginator:
     return Session().client("cloudtrail").get_paginator("list_trails")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import ListTrailsPaginator
+
+session = Session()
+
+client = Session().client("cloudtrail")  # (1)
+paginator: ListTrailsPaginator = client.get_paginator("list_trails")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudTrailClient](./client.md)
+2. paginator: [ListTrailsPaginator](./paginators.md#listtrailspaginator)
+3. item: [:material-code-braces: ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ from mypy_boto3_cloudtrail.paginator import LookupEventsPaginator
 def get_lookup_events_paginator() -> LookupEventsPaginator:
     return Session().client("cloudtrail").get_paginator("lookup_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import LookupEventsPaginator
+
+session = Session()
+
+client = Session().client("cloudtrail")  # (1)
+paginator: LookupEventsPaginator = client.get_paginator("lookup_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudTrailClient](./client.md)
+2. paginator: [LookupEventsPaginator](./paginators.md#lookupeventspaginator)
+3. item: [:material-code-braces: LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef) 
 
 
 ### paginate

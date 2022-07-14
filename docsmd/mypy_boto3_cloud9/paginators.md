@@ -21,6 +21,23 @@ def get_describe_environment_memberships_paginator() -> DescribeEnvironmentMembe
     return Session().client("cloud9").get_paginator("describe_environment_memberships")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloud9.paginator import DescribeEnvironmentMembershipsPaginator
+
+session = Session()
+
+client = Session().client("cloud9")  # (1)
+paginator: DescribeEnvironmentMembershipsPaginator = client.get_paginator("describe_environment_memberships")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Cloud9Client](./client.md)
+2. paginator: [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
+3. item: [:material-code-braces: DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ from mypy_boto3_cloud9.paginator import ListEnvironmentsPaginator
 def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("cloud9").get_paginator("list_environments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloud9.paginator import ListEnvironmentsPaginator
+
+session = Session()
+
+client = Session().client("cloud9")  # (1)
+paginator: ListEnvironmentsPaginator = client.get_paginator("list_environments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Cloud9Client](./client.md)
+2. paginator: [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+3. item: [:material-code-braces: ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_get_compliance_summary_paginator() -> GetComplianceSummaryPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetComplianceSummaryPaginator
+
+session = Session()
+
+client = Session().client("resourcegroupstaggingapi")  # (1)
+paginator: GetComplianceSummaryPaginator = client.get_paginator("get_compliance_summary")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ResourceGroupsTaggingAPIClient](./client.md)
+2. paginator: [GetComplianceSummaryPaginator](./paginators.md#getcompliancesummarypaginator)
+3. item: [:material-code-braces: GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef) 
+
 
 ### paginate
 
@@ -67,6 +84,23 @@ from mypy_boto3_resourcegroupstaggingapi.paginator import GetResourcesPaginator
 def get_get_resources_paginator() -> GetResourcesPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetResourcesPaginator
+
+session = Session()
+
+client = Session().client("resourcegroupstaggingapi")  # (1)
+paginator: GetResourcesPaginator = client.get_paginator("get_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ResourceGroupsTaggingAPIClient](./client.md)
+2. paginator: [GetResourcesPaginator](./paginators.md#getresourcespaginator)
+3. item: [:material-code-braces: GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef) 
 
 
 ### paginate
@@ -116,6 +150,23 @@ def get_get_tag_keys_paginator() -> GetTagKeysPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_tag_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetTagKeysPaginator
+
+session = Session()
+
+client = Session().client("resourcegroupstaggingapi")  # (1)
+paginator: GetTagKeysPaginator = client.get_paginator("get_tag_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ResourceGroupsTaggingAPIClient](./client.md)
+2. paginator: [GetTagKeysPaginator](./paginators.md#gettagkeyspaginator)
+3. item: [:material-code-braces: GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef) 
+
 
 ### paginate
 
@@ -156,6 +207,23 @@ from mypy_boto3_resourcegroupstaggingapi.paginator import GetTagValuesPaginator
 def get_get_tag_values_paginator() -> GetTagValuesPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_tag_values")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetTagValuesPaginator
+
+session = Session()
+
+client = Session().client("resourcegroupstaggingapi")  # (1)
+paginator: GetTagValuesPaginator = client.get_paginator("get_tag_values")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ResourceGroupsTaggingAPIClient](./client.md)
+2. paginator: [GetTagValuesPaginator](./paginators.md#gettagvaluespaginator)
+3. item: [:material-code-braces: GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef) 
 
 
 ### paginate

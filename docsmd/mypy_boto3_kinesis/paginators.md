@@ -21,6 +21,23 @@ def get_describe_stream_paginator() -> DescribeStreamPaginator:
     return Session().client("kinesis").get_paginator("describe_stream")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesis.paginator import DescribeStreamPaginator
+
+session = Session()
+
+client = Session().client("kinesis")  # (1)
+paginator: DescribeStreamPaginator = client.get_paginator("describe_stream")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisClient](./client.md)
+2. paginator: [DescribeStreamPaginator](./paginators.md#describestreampaginator)
+3. item: [:material-code-braces: DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_kinesis.paginator import ListShardsPaginator
 def get_list_shards_paginator() -> ListShardsPaginator:
     return Session().client("kinesis").get_paginator("list_shards")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesis.paginator import ListShardsPaginator
+
+session = Session()
+
+client = Session().client("kinesis")  # (1)
+paginator: ListShardsPaginator = client.get_paginator("list_shards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisClient](./client.md)
+2. paginator: [ListShardsPaginator](./paginators.md#listshardspaginator)
+3. item: [:material-code-braces: ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_list_stream_consumers_paginator() -> ListStreamConsumersPaginator:
     return Session().client("kinesis").get_paginator("list_stream_consumers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesis.paginator import ListStreamConsumersPaginator
+
+session = Session()
+
+client = Session().client("kinesis")  # (1)
+paginator: ListStreamConsumersPaginator = client.get_paginator("list_stream_consumers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisClient](./client.md)
+2. paginator: [ListStreamConsumersPaginator](./paginators.md#liststreamconsumerspaginator)
+3. item: [:material-code-braces: ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef) 
+
 
 ### paginate
 
@@ -151,6 +202,23 @@ from mypy_boto3_kinesis.paginator import ListStreamsPaginator
 def get_list_streams_paginator() -> ListStreamsPaginator:
     return Session().client("kinesis").get_paginator("list_streams")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesis.paginator import ListStreamsPaginator
+
+session = Session()
+
+client = Session().client("kinesis")  # (1)
+paginator: ListStreamsPaginator = client.get_paginator("list_streams")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisClient](./client.md)
+2. paginator: [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+3. item: [:material-code-braces: ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef) 
 
 
 ### paginate

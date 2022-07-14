@@ -21,6 +21,23 @@ def get_list_signing_jobs_paginator() -> ListSigningJobsPaginator:
     return Session().client("signer").get_paginator("list_signing_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_signer.paginator import ListSigningJobsPaginator
+
+session = Session()
+
+client = Session().client("signer")  # (1)
+paginator: ListSigningJobsPaginator = client.get_paginator("list_signing_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [signerClient](./client.md)
+2. paginator: [ListSigningJobsPaginator](./paginators.md#listsigningjobspaginator)
+3. item: [:material-code-braces: ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -70,6 +87,23 @@ def get_list_signing_platforms_paginator() -> ListSigningPlatformsPaginator:
     return Session().client("signer").get_paginator("list_signing_platforms")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_signer.paginator import ListSigningPlatformsPaginator
+
+session = Session()
+
+client = Session().client("signer")  # (1)
+paginator: ListSigningPlatformsPaginator = client.get_paginator("list_signing_platforms")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [signerClient](./client.md)
+2. paginator: [ListSigningPlatformsPaginator](./paginators.md#listsigningplatformspaginator)
+3. item: [:material-code-braces: ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef) 
+
 
 ### paginate
 
@@ -113,6 +147,23 @@ from mypy_boto3_signer.paginator import ListSigningProfilesPaginator
 def get_list_signing_profiles_paginator() -> ListSigningProfilesPaginator:
     return Session().client("signer").get_paginator("list_signing_profiles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_signer.paginator import ListSigningProfilesPaginator
+
+session = Session()
+
+client = Session().client("signer")  # (1)
+paginator: ListSigningProfilesPaginator = client.get_paginator("list_signing_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [signerClient](./client.md)
+2. paginator: [ListSigningProfilesPaginator](./paginators.md#listsigningprofilespaginator)
+3. item: [:material-code-braces: ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef) 
 
 
 ### paginate

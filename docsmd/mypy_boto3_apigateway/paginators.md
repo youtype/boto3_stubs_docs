@@ -21,6 +21,23 @@ def get_get_api_keys_paginator() -> GetApiKeysPaginator:
     return Session().client("apigateway").get_paginator("get_api_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetApiKeysPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetApiKeysPaginator = client.get_paginator("get_api_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetApiKeysPaginator](./paginators.md#getapikeyspaginator)
+3. item: [:material-code-braces: ApiKeysTypeDef](./type_defs.md#apikeystypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ def get_get_authorizers_paginator() -> GetAuthorizersPaginator:
     return Session().client("apigateway").get_paginator("get_authorizers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetAuthorizersPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetAuthorizersPaginator = client.get_paginator("get_authorizers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetAuthorizersPaginator](./paginators.md#getauthorizerspaginator)
+3. item: [:material-code-braces: AuthorizersTypeDef](./type_defs.md#authorizerstypedef) 
+
 
 ### paginate
 
@@ -106,6 +140,23 @@ from mypy_boto3_apigateway.paginator import GetBasePathMappingsPaginator
 def get_get_base_path_mappings_paginator() -> GetBasePathMappingsPaginator:
     return Session().client("apigateway").get_paginator("get_base_path_mappings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetBasePathMappingsPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetBasePathMappingsPaginator = client.get_paginator("get_base_path_mappings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetBasePathMappingsPaginator](./paginators.md#getbasepathmappingspaginator)
+3. item: [:material-code-braces: BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef) 
 
 
 ### paginate
@@ -149,6 +200,23 @@ def get_get_client_certificates_paginator() -> GetClientCertificatesPaginator:
     return Session().client("apigateway").get_paginator("get_client_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetClientCertificatesPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetClientCertificatesPaginator = client.get_paginator("get_client_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetClientCertificatesPaginator](./paginators.md#getclientcertificatespaginator)
+3. item: [:material-code-braces: ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef) 
+
 
 ### paginate
 
@@ -189,6 +257,23 @@ from mypy_boto3_apigateway.paginator import GetDeploymentsPaginator
 def get_get_deployments_paginator() -> GetDeploymentsPaginator:
     return Session().client("apigateway").get_paginator("get_deployments")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetDeploymentsPaginator = client.get_paginator("get_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetDeploymentsPaginator](./paginators.md#getdeploymentspaginator)
+3. item: [:material-code-braces: DeploymentsTypeDef](./type_defs.md#deploymentstypedef) 
 
 
 ### paginate
@@ -231,6 +316,23 @@ from mypy_boto3_apigateway.paginator import GetDocumentationPartsPaginator
 def get_get_documentation_parts_paginator() -> GetDocumentationPartsPaginator:
     return Session().client("apigateway").get_paginator("get_documentation_parts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetDocumentationPartsPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetDocumentationPartsPaginator = client.get_paginator("get_documentation_parts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetDocumentationPartsPaginator](./paginators.md#getdocumentationpartspaginator)
+3. item: [:material-code-braces: DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef) 
 
 
 ### paginate
@@ -280,6 +382,23 @@ def get_get_documentation_versions_paginator() -> GetDocumentationVersionsPagina
     return Session().client("apigateway").get_paginator("get_documentation_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetDocumentationVersionsPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetDocumentationVersionsPaginator = client.get_paginator("get_documentation_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetDocumentationVersionsPaginator](./paginators.md#getdocumentationversionspaginator)
+3. item: [:material-code-braces: DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef) 
+
 
 ### paginate
 
@@ -322,6 +441,23 @@ def get_get_domain_names_paginator() -> GetDomainNamesPaginator:
     return Session().client("apigateway").get_paginator("get_domain_names")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetDomainNamesPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetDomainNamesPaginator = client.get_paginator("get_domain_names")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetDomainNamesPaginator](./paginators.md#getdomainnamespaginator)
+3. item: [:material-code-braces: DomainNamesTypeDef](./type_defs.md#domainnamestypedef) 
+
 
 ### paginate
 
@@ -362,6 +498,23 @@ from mypy_boto3_apigateway.paginator import GetGatewayResponsesPaginator
 def get_get_gateway_responses_paginator() -> GetGatewayResponsesPaginator:
     return Session().client("apigateway").get_paginator("get_gateway_responses")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetGatewayResponsesPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetGatewayResponsesPaginator = client.get_paginator("get_gateway_responses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetGatewayResponsesPaginator](./paginators.md#getgatewayresponsespaginator)
+3. item: [:material-code-braces: GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef) 
 
 
 ### paginate
@@ -405,6 +558,23 @@ def get_get_models_paginator() -> GetModelsPaginator:
     return Session().client("apigateway").get_paginator("get_models")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetModelsPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetModelsPaginator = client.get_paginator("get_models")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetModelsPaginator](./paginators.md#getmodelspaginator)
+3. item: [:material-code-braces: ModelsTypeDef](./type_defs.md#modelstypedef) 
+
 
 ### paginate
 
@@ -447,6 +617,23 @@ def get_get_request_validators_paginator() -> GetRequestValidatorsPaginator:
     return Session().client("apigateway").get_paginator("get_request_validators")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetRequestValidatorsPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetRequestValidatorsPaginator = client.get_paginator("get_request_validators")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetRequestValidatorsPaginator](./paginators.md#getrequestvalidatorspaginator)
+3. item: [:material-code-braces: RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef) 
+
 
 ### paginate
 
@@ -488,6 +675,23 @@ from mypy_boto3_apigateway.paginator import GetResourcesPaginator
 def get_get_resources_paginator() -> GetResourcesPaginator:
     return Session().client("apigateway").get_paginator("get_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetResourcesPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetResourcesPaginator = client.get_paginator("get_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetResourcesPaginator](./paginators.md#getresourcespaginator)
+3. item: [:material-code-braces: ResourcesTypeDef](./type_defs.md#resourcestypedef) 
 
 
 ### paginate
@@ -532,6 +736,23 @@ def get_get_rest_apis_paginator() -> GetRestApisPaginator:
     return Session().client("apigateway").get_paginator("get_rest_apis")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetRestApisPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetRestApisPaginator = client.get_paginator("get_rest_apis")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetRestApisPaginator](./paginators.md#getrestapispaginator)
+3. item: [:material-code-braces: RestApisTypeDef](./type_defs.md#restapistypedef) 
+
 
 ### paginate
 
@@ -573,6 +794,23 @@ def get_get_sdk_types_paginator() -> GetSdkTypesPaginator:
     return Session().client("apigateway").get_paginator("get_sdk_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetSdkTypesPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetSdkTypesPaginator = client.get_paginator("get_sdk_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetSdkTypesPaginator](./paginators.md#getsdktypespaginator)
+3. item: [:material-code-braces: SdkTypesTypeDef](./type_defs.md#sdktypestypedef) 
+
 
 ### paginate
 
@@ -613,6 +851,23 @@ from mypy_boto3_apigateway.paginator import GetUsagePaginator
 def get_get_usage_paginator() -> GetUsagePaginator:
     return Session().client("apigateway").get_paginator("get_usage")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetUsagePaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetUsagePaginator = client.get_paginator("get_usage")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetUsagePaginator](./paginators.md#getusagepaginator)
+3. item: [:material-code-braces: UsageTypeDef](./type_defs.md#usagetypedef) 
 
 
 ### paginate
@@ -661,6 +916,23 @@ def get_get_usage_plan_keys_paginator() -> GetUsagePlanKeysPaginator:
     return Session().client("apigateway").get_paginator("get_usage_plan_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetUsagePlanKeysPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetUsagePlanKeysPaginator = client.get_paginator("get_usage_plan_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetUsagePlanKeysPaginator](./paginators.md#getusageplankeyspaginator)
+3. item: [:material-code-braces: UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef) 
+
 
 ### paginate
 
@@ -704,6 +976,23 @@ def get_get_usage_plans_paginator() -> GetUsagePlansPaginator:
     return Session().client("apigateway").get_paginator("get_usage_plans")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetUsagePlansPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetUsagePlansPaginator = client.get_paginator("get_usage_plans")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetUsagePlansPaginator](./paginators.md#getusageplanspaginator)
+3. item: [:material-code-braces: UsagePlansTypeDef](./type_defs.md#usageplanstypedef) 
+
 
 ### paginate
 
@@ -745,6 +1034,23 @@ from mypy_boto3_apigateway.paginator import GetVpcLinksPaginator
 def get_get_vpc_links_paginator() -> GetVpcLinksPaginator:
     return Session().client("apigateway").get_paginator("get_vpc_links")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_apigateway.paginator import GetVpcLinksPaginator
+
+session = Session()
+
+client = Session().client("apigateway")  # (1)
+paginator: GetVpcLinksPaginator = client.get_paginator("get_vpc_links")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [APIGatewayClient](./client.md)
+2. paginator: [GetVpcLinksPaginator](./paginators.md#getvpclinkspaginator)
+3. item: [:material-code-braces: VpcLinksTypeDef](./type_defs.md#vpclinkstypedef) 
 
 
 ### paginate

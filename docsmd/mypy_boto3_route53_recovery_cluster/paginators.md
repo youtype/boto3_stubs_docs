@@ -21,6 +21,23 @@ def get_list_routing_controls_paginator() -> ListRoutingControlsPaginator:
     return Session().client("route53-recovery-cluster").get_paginator("list_routing_controls")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_cluster.paginator import ListRoutingControlsPaginator
+
+session = Session()
+
+client = Session().client("route53-recovery-cluster")  # (1)
+paginator: ListRoutingControlsPaginator = client.get_paginator("list_routing_controls")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Route53RecoveryClusterClient](./client.md)
+2. paginator: [ListRoutingControlsPaginator](./paginators.md#listroutingcontrolspaginator)
+3. item: [:material-code-braces: ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef) 
+
 
 ### paginate
 

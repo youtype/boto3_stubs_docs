@@ -21,6 +21,23 @@ def get_describe_ecs_clusters_paginator() -> DescribeEcsClustersPaginator:
     return Session().client("opsworks").get_paginator("describe_ecs_clusters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_opsworks.paginator import DescribeEcsClustersPaginator
+
+session = Session()
+
+client = Session().client("opsworks")  # (1)
+paginator: DescribeEcsClustersPaginator = client.get_paginator("describe_ecs_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [OpsWorksClient](./client.md)
+2. paginator: [DescribeEcsClustersPaginator](./paginators.md#describeecsclusterspaginator)
+3. item: [:material-code-braces: DescribeEcsClustersResultTypeDef](./type_defs.md#describeecsclustersresulttypedef) 
+
 
 ### paginate
 

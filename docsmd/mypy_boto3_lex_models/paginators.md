@@ -21,6 +21,23 @@ def get_get_bot_aliases_paginator() -> GetBotAliasesPaginator:
     return Session().client("lex-models").get_paginator("get_bot_aliases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetBotAliasesPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetBotAliasesPaginator = client.get_paginator("get_bot_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetBotAliasesPaginator](./paginators.md#getbotaliasespaginator)
+3. item: [:material-code-braces: GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef) 
+
 
 ### paginate
 
@@ -63,6 +80,23 @@ from mypy_boto3_lex_models.paginator import GetBotChannelAssociationsPaginator
 def get_get_bot_channel_associations_paginator() -> GetBotChannelAssociationsPaginator:
     return Session().client("lex-models").get_paginator("get_bot_channel_associations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetBotChannelAssociationsPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetBotChannelAssociationsPaginator = client.get_paginator("get_bot_channel_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetBotChannelAssociationsPaginator](./paginators.md#getbotchannelassociationspaginator)
+3. item: [:material-code-braces: GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef) 
 
 
 ### paginate
@@ -109,6 +143,23 @@ def get_get_bot_versions_paginator() -> GetBotVersionsPaginator:
     return Session().client("lex-models").get_paginator("get_bot_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetBotVersionsPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetBotVersionsPaginator = client.get_paginator("get_bot_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetBotVersionsPaginator](./paginators.md#getbotversionspaginator)
+3. item: [:material-code-braces: GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -151,6 +202,23 @@ def get_get_bots_paginator() -> GetBotsPaginator:
     return Session().client("lex-models").get_paginator("get_bots")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetBotsPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetBotsPaginator = client.get_paginator("get_bots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetBotsPaginator](./paginators.md#getbotspaginator)
+3. item: [:material-code-braces: GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef) 
+
 
 ### paginate
 
@@ -192,6 +260,23 @@ from mypy_boto3_lex_models.paginator import GetBuiltinIntentsPaginator
 def get_get_builtin_intents_paginator() -> GetBuiltinIntentsPaginator:
     return Session().client("lex-models").get_paginator("get_builtin_intents")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetBuiltinIntentsPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetBuiltinIntentsPaginator = client.get_paginator("get_builtin_intents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetBuiltinIntentsPaginator](./paginators.md#getbuiltinintentspaginator)
+3. item: [:material-code-braces: GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef) 
 
 
 ### paginate
@@ -237,6 +322,23 @@ def get_get_builtin_slot_types_paginator() -> GetBuiltinSlotTypesPaginator:
     return Session().client("lex-models").get_paginator("get_builtin_slot_types")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetBuiltinSlotTypesPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetBuiltinSlotTypesPaginator = client.get_paginator("get_builtin_slot_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetBuiltinSlotTypesPaginator](./paginators.md#getbuiltinslottypespaginator)
+3. item: [:material-code-braces: GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef) 
+
 
 ### paginate
 
@@ -281,6 +383,23 @@ def get_get_intent_versions_paginator() -> GetIntentVersionsPaginator:
     return Session().client("lex-models").get_paginator("get_intent_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetIntentVersionsPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetIntentVersionsPaginator = client.get_paginator("get_intent_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetIntentVersionsPaginator](./paginators.md#getintentversionspaginator)
+3. item: [:material-code-braces: GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -322,6 +441,23 @@ from mypy_boto3_lex_models.paginator import GetIntentsPaginator
 def get_get_intents_paginator() -> GetIntentsPaginator:
     return Session().client("lex-models").get_paginator("get_intents")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetIntentsPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetIntentsPaginator = client.get_paginator("get_intents")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetIntentsPaginator](./paginators.md#getintentspaginator)
+3. item: [:material-code-braces: GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef) 
 
 
 ### paginate
@@ -365,6 +501,23 @@ def get_get_slot_type_versions_paginator() -> GetSlotTypeVersionsPaginator:
     return Session().client("lex-models").get_paginator("get_slot_type_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetSlotTypeVersionsPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetSlotTypeVersionsPaginator = client.get_paginator("get_slot_type_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetSlotTypeVersionsPaginator](./paginators.md#getslottypeversionspaginator)
+3. item: [:material-code-braces: GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -406,6 +559,23 @@ from mypy_boto3_lex_models.paginator import GetSlotTypesPaginator
 def get_get_slot_types_paginator() -> GetSlotTypesPaginator:
     return Session().client("lex-models").get_paginator("get_slot_types")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lex_models.paginator import GetSlotTypesPaginator
+
+session = Session()
+
+client = Session().client("lex-models")  # (1)
+paginator: GetSlotTypesPaginator = client.get_paginator("get_slot_types")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LexModelBuildingServiceClient](./client.md)
+2. paginator: [GetSlotTypesPaginator](./paginators.md#getslottypespaginator)
+3. item: [:material-code-braces: GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef) 
 
 
 ### paginate

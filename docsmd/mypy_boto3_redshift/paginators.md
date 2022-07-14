@@ -21,6 +21,23 @@ def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsP
     return Session().client("redshift").get_paginator("describe_cluster_db_revisions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterDbRevisionsPaginator = client.get_paginator("describe_cluster_db_revisions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterDbRevisionsPaginator](./paginators.md#describeclusterdbrevisionspaginator)
+3. item: [:material-code-braces: ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_redshift.paginator import DescribeClusterParameterGroupsPaginato
 def get_describe_cluster_parameter_groups_paginator() -> DescribeClusterParameterGroupsPaginator:
     return Session().client("redshift").get_paginator("describe_cluster_parameter_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterParameterGroupsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterParameterGroupsPaginator = client.get_paginator("describe_cluster_parameter_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterParameterGroupsPaginator](./paginators.md#describeclusterparametergroupspaginator)
+3. item: [:material-code-braces: ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_describe_cluster_parameters_paginator() -> DescribeClusterParametersPagi
     return Session().client("redshift").get_paginator("describe_cluster_parameters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterParametersPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterParametersPaginator = client.get_paginator("describe_cluster_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterParametersPaginator](./paginators.md#describeclusterparameterspaginator)
+3. item: [:material-code-braces: ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef) 
+
 
 ### paginate
 
@@ -149,6 +200,23 @@ from mypy_boto3_redshift.paginator import DescribeClusterSecurityGroupsPaginator
 def get_describe_cluster_security_groups_paginator() -> DescribeClusterSecurityGroupsPaginator:
     return Session().client("redshift").get_paginator("describe_cluster_security_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterSecurityGroupsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterSecurityGroupsPaginator = client.get_paginator("describe_cluster_security_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterSecurityGroupsPaginator](./paginators.md#describeclustersecuritygroupspaginator)
+3. item: [:material-code-braces: ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef) 
 
 
 ### paginate
@@ -193,6 +261,23 @@ from mypy_boto3_redshift.paginator import DescribeClusterSnapshotsPaginator
 def get_describe_cluster_snapshots_paginator() -> DescribeClusterSnapshotsPaginator:
     return Session().client("redshift").get_paginator("describe_cluster_snapshots")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterSnapshotsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterSnapshotsPaginator = client.get_paginator("describe_cluster_snapshots")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterSnapshotsPaginator](./paginators.md#describeclustersnapshotspaginator)
+3. item: [:material-code-braces: SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef) 
 
 
 ### paginate
@@ -247,6 +332,23 @@ def get_describe_cluster_subnet_groups_paginator() -> DescribeClusterSubnetGroup
     return Session().client("redshift").get_paginator("describe_cluster_subnet_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterSubnetGroupsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterSubnetGroupsPaginator = client.get_paginator("describe_cluster_subnet_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterSubnetGroupsPaginator](./paginators.md#describeclustersubnetgroupspaginator)
+3. item: [:material-code-braces: ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef) 
+
 
 ### paginate
 
@@ -291,6 +393,23 @@ def get_describe_cluster_tracks_paginator() -> DescribeClusterTracksPaginator:
     return Session().client("redshift").get_paginator("describe_cluster_tracks")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterTracksPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterTracksPaginator = client.get_paginator("describe_cluster_tracks")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterTracksPaginator](./paginators.md#describeclustertrackspaginator)
+3. item: [:material-code-braces: TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef) 
+
 
 ### paginate
 
@@ -332,6 +451,23 @@ from mypy_boto3_redshift.paginator import DescribeClusterVersionsPaginator
 def get_describe_cluster_versions_paginator() -> DescribeClusterVersionsPaginator:
     return Session().client("redshift").get_paginator("describe_cluster_versions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClusterVersionsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClusterVersionsPaginator = client.get_paginator("describe_cluster_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClusterVersionsPaginator](./paginators.md#describeclusterversionspaginator)
+3. item: [:material-code-braces: ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef) 
 
 
 ### paginate
@@ -375,6 +511,23 @@ from mypy_boto3_redshift.paginator import DescribeClustersPaginator
 def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return Session().client("redshift").get_paginator("describe_clusters")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeClustersPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeClustersPaginator = client.get_paginator("describe_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+3. item: [:material-code-braces: ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef) 
 
 
 ### paginate
@@ -420,6 +573,23 @@ def get_describe_data_shares_paginator() -> DescribeDataSharesPaginator:
     return Session().client("redshift").get_paginator("describe_data_shares")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeDataSharesPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeDataSharesPaginator = client.get_paginator("describe_data_shares")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeDataSharesPaginator](./paginators.md#describedatasharespaginator)
+3. item: [:material-code-braces: DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef) 
+
 
 ### paginate
 
@@ -461,6 +631,23 @@ from mypy_boto3_redshift.paginator import DescribeDataSharesForConsumerPaginator
 def get_describe_data_shares_for_consumer_paginator() -> DescribeDataSharesForConsumerPaginator:
     return Session().client("redshift").get_paginator("describe_data_shares_for_consumer")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeDataSharesForConsumerPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeDataSharesForConsumerPaginator = client.get_paginator("describe_data_shares_for_consumer")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeDataSharesForConsumerPaginator](./paginators.md#describedatasharesforconsumerpaginator)
+3. item: [:material-code-braces: DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef) 
 
 
 ### paginate
@@ -506,6 +693,23 @@ def get_describe_data_shares_for_producer_paginator() -> DescribeDataSharesForPr
     return Session().client("redshift").get_paginator("describe_data_shares_for_producer")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeDataSharesForProducerPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeDataSharesForProducerPaginator = client.get_paginator("describe_data_shares_for_producer")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeDataSharesForProducerPaginator](./paginators.md#describedatasharesforproducerpaginator)
+3. item: [:material-code-braces: DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef) 
+
 
 ### paginate
 
@@ -550,6 +754,23 @@ def get_describe_default_cluster_parameters_paginator() -> DescribeDefaultCluste
     return Session().client("redshift").get_paginator("describe_default_cluster_parameters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeDefaultClusterParametersPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeDefaultClusterParametersPaginator = client.get_paginator("describe_default_cluster_parameters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeDefaultClusterParametersPaginator](./paginators.md#describedefaultclusterparameterspaginator)
+3. item: [:material-code-braces: DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef) 
+
 
 ### paginate
 
@@ -591,6 +812,23 @@ from mypy_boto3_redshift.paginator import DescribeEndpointAccessPaginator
 def get_describe_endpoint_access_paginator() -> DescribeEndpointAccessPaginator:
     return Session().client("redshift").get_paginator("describe_endpoint_access")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeEndpointAccessPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeEndpointAccessPaginator = client.get_paginator("describe_endpoint_access")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeEndpointAccessPaginator](./paginators.md#describeendpointaccesspaginator)
+3. item: [:material-code-braces: EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef) 
 
 
 ### paginate
@@ -637,6 +875,23 @@ def get_describe_endpoint_authorization_paginator() -> DescribeEndpointAuthoriza
     return Session().client("redshift").get_paginator("describe_endpoint_authorization")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeEndpointAuthorizationPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeEndpointAuthorizationPaginator = client.get_paginator("describe_endpoint_authorization")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeEndpointAuthorizationPaginator](./paginators.md#describeendpointauthorizationpaginator)
+3. item: [:material-code-braces: EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef) 
+
 
 ### paginate
 
@@ -681,6 +936,23 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return Session().client("redshift").get_paginator("describe_event_subscriptions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeEventSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeEventSubscriptionsPaginator = client.get_paginator("describe_event_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+3. item: [:material-code-braces: EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef) 
+
 
 ### paginate
 
@@ -724,6 +996,23 @@ from mypy_boto3_redshift.paginator import DescribeEventsPaginator
 def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("redshift").get_paginator("describe_events")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeEventsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeEventsPaginator = client.get_paginator("describe_events")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+3. item: [:material-code-braces: EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef) 
 
 
 ### paginate
@@ -772,6 +1061,23 @@ def get_describe_hsm_client_certificates_paginator() -> DescribeHsmClientCertifi
     return Session().client("redshift").get_paginator("describe_hsm_client_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeHsmClientCertificatesPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeHsmClientCertificatesPaginator = client.get_paginator("describe_hsm_client_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeHsmClientCertificatesPaginator](./paginators.md#describehsmclientcertificatespaginator)
+3. item: [:material-code-braces: HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef) 
+
 
 ### paginate
 
@@ -816,6 +1122,23 @@ def get_describe_hsm_configurations_paginator() -> DescribeHsmConfigurationsPagi
     return Session().client("redshift").get_paginator("describe_hsm_configurations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeHsmConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeHsmConfigurationsPaginator = client.get_paginator("describe_hsm_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeHsmConfigurationsPaginator](./paginators.md#describehsmconfigurationspaginator)
+3. item: [:material-code-braces: HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef) 
+
 
 ### paginate
 
@@ -859,6 +1182,23 @@ from mypy_boto3_redshift.paginator import DescribeNodeConfigurationOptionsPagina
 def get_describe_node_configuration_options_paginator() -> DescribeNodeConfigurationOptionsPaginator:
     return Session().client("redshift").get_paginator("describe_node_configuration_options")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeNodeConfigurationOptionsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeNodeConfigurationOptionsPaginator = client.get_paginator("describe_node_configuration_options")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeNodeConfigurationOptionsPaginator](./paginators.md#describenodeconfigurationoptionspaginator)
+3. item: [:material-code-braces: NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef) 
 
 
 ### paginate
@@ -909,6 +1249,23 @@ def get_describe_orderable_cluster_options_paginator() -> DescribeOrderableClust
     return Session().client("redshift").get_paginator("describe_orderable_cluster_options")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeOrderableClusterOptionsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeOrderableClusterOptionsPaginator = client.get_paginator("describe_orderable_cluster_options")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeOrderableClusterOptionsPaginator](./paginators.md#describeorderableclusteroptionspaginator)
+3. item: [:material-code-braces: OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef) 
+
 
 ### paginate
 
@@ -951,6 +1308,23 @@ from mypy_boto3_redshift.paginator import DescribeReservedNodeExchangeStatusPagi
 def get_describe_reserved_node_exchange_status_paginator() -> DescribeReservedNodeExchangeStatusPaginator:
     return Session().client("redshift").get_paginator("describe_reserved_node_exchange_status")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeReservedNodeExchangeStatusPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeReservedNodeExchangeStatusPaginator = client.get_paginator("describe_reserved_node_exchange_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeReservedNodeExchangeStatusPaginator](./paginators.md#describereservednodeexchangestatuspaginator)
+3. item: [:material-code-braces: DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef) 
 
 
 ### paginate
@@ -995,6 +1369,23 @@ def get_describe_reserved_node_offerings_paginator() -> DescribeReservedNodeOffe
     return Session().client("redshift").get_paginator("describe_reserved_node_offerings")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeReservedNodeOfferingsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeReservedNodeOfferingsPaginator = client.get_paginator("describe_reserved_node_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeReservedNodeOfferingsPaginator](./paginators.md#describereservednodeofferingspaginator)
+3. item: [:material-code-braces: ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef) 
+
 
 ### paginate
 
@@ -1037,6 +1428,23 @@ def get_describe_reserved_nodes_paginator() -> DescribeReservedNodesPaginator:
     return Session().client("redshift").get_paginator("describe_reserved_nodes")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeReservedNodesPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeReservedNodesPaginator = client.get_paginator("describe_reserved_nodes")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeReservedNodesPaginator](./paginators.md#describereservednodespaginator)
+3. item: [:material-code-braces: ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef) 
+
 
 ### paginate
 
@@ -1078,6 +1486,23 @@ from mypy_boto3_redshift.paginator import DescribeScheduledActionsPaginator
 def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPaginator:
     return Session().client("redshift").get_paginator("describe_scheduled_actions")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeScheduledActionsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeScheduledActionsPaginator = client.get_paginator("describe_scheduled_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+3. item: [:material-code-braces: ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef) 
 
 
 ### paginate
@@ -1128,6 +1553,23 @@ def get_describe_snapshot_copy_grants_paginator() -> DescribeSnapshotCopyGrantsP
     return Session().client("redshift").get_paginator("describe_snapshot_copy_grants")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeSnapshotCopyGrantsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeSnapshotCopyGrantsPaginator = client.get_paginator("describe_snapshot_copy_grants")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeSnapshotCopyGrantsPaginator](./paginators.md#describesnapshotcopygrantspaginator)
+3. item: [:material-code-braces: SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef) 
+
 
 ### paginate
 
@@ -1171,6 +1613,23 @@ from mypy_boto3_redshift.paginator import DescribeSnapshotSchedulesPaginator
 def get_describe_snapshot_schedules_paginator() -> DescribeSnapshotSchedulesPaginator:
     return Session().client("redshift").get_paginator("describe_snapshot_schedules")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeSnapshotSchedulesPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeSnapshotSchedulesPaginator = client.get_paginator("describe_snapshot_schedules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeSnapshotSchedulesPaginator](./paginators.md#describesnapshotschedulespaginator)
+3. item: [:material-code-braces: DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef) 
 
 
 ### paginate
@@ -1217,6 +1676,23 @@ def get_describe_table_restore_status_paginator() -> DescribeTableRestoreStatusP
     return Session().client("redshift").get_paginator("describe_table_restore_status")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeTableRestoreStatusPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeTableRestoreStatusPaginator = client.get_paginator("describe_table_restore_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeTableRestoreStatusPaginator](./paginators.md#describetablerestorestatuspaginator)
+3. item: [:material-code-braces: TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef) 
+
 
 ### paginate
 
@@ -1259,6 +1735,23 @@ from mypy_boto3_redshift.paginator import DescribeTagsPaginator
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return Session().client("redshift").get_paginator("describe_tags")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeTagsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeTagsPaginator = client.get_paginator("describe_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+3. item: [:material-code-braces: TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef) 
 
 
 ### paginate
@@ -1304,6 +1797,23 @@ from mypy_boto3_redshift.paginator import DescribeUsageLimitsPaginator
 def get_describe_usage_limits_paginator() -> DescribeUsageLimitsPaginator:
     return Session().client("redshift").get_paginator("describe_usage_limits")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import DescribeUsageLimitsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: DescribeUsageLimitsPaginator = client.get_paginator("describe_usage_limits")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [DescribeUsageLimitsPaginator](./paginators.md#describeusagelimitspaginator)
+3. item: [:material-code-braces: UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef) 
 
 
 ### paginate
@@ -1352,6 +1862,23 @@ def get_get_reserved_node_exchange_configuration_options_paginator() -> GetReser
     return Session().client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import GetReservedNodeExchangeConfigurationOptionsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: GetReservedNodeExchangeConfigurationOptionsPaginator = client.get_paginator("get_reserved_node_exchange_configuration_options")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [GetReservedNodeExchangeConfigurationOptionsPaginator](./paginators.md#getreservednodeexchangeconfigurationoptionspaginator)
+3. item: [:material-code-braces: GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef) 
+
 
 ### paginate
 
@@ -1396,6 +1923,23 @@ from mypy_boto3_redshift.paginator import GetReservedNodeExchangeOfferingsPagina
 def get_get_reserved_node_exchange_offerings_paginator() -> GetReservedNodeExchangeOfferingsPaginator:
     return Session().client("redshift").get_paginator("get_reserved_node_exchange_offerings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift.paginator import GetReservedNodeExchangeOfferingsPaginator
+
+session = Session()
+
+client = Session().client("redshift")  # (1)
+paginator: GetReservedNodeExchangeOfferingsPaginator = client.get_paginator("get_reserved_node_exchange_offerings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftClient](./client.md)
+2. paginator: [GetReservedNodeExchangeOfferingsPaginator](./paginators.md#getreservednodeexchangeofferingspaginator)
+3. item: [:material-code-braces: GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef) 
 
 
 ### paginate

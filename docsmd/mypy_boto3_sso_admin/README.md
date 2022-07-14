@@ -125,6 +125,7 @@ def get_value() -> InstanceAccessControlAttributeConfigurationStatusType:
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
 
 

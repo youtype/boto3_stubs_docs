@@ -21,6 +21,23 @@ def get_describe_code_coverages_paginator() -> DescribeCodeCoveragesPaginator:
     return Session().client("codebuild").get_paginator("describe_code_coverages")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: DescribeCodeCoveragesPaginator = client.get_paginator("describe_code_coverages")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [DescribeCodeCoveragesPaginator](./paginators.md#describecodecoveragespaginator)
+3. item: [:material-code-braces: DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef) 
+
 
 ### paginate
 
@@ -69,6 +86,23 @@ def get_describe_test_cases_paginator() -> DescribeTestCasesPaginator:
     return Session().client("codebuild").get_paginator("describe_test_cases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import DescribeTestCasesPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: DescribeTestCasesPaginator = client.get_paginator("describe_test_cases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [DescribeTestCasesPaginator](./paginators.md#describetestcasespaginator)
+3. item: [:material-code-braces: DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef) 
+
 
 ### paginate
 
@@ -112,6 +146,23 @@ from mypy_boto3_codebuild.paginator import ListBuildBatchesPaginator
 def get_list_build_batches_paginator() -> ListBuildBatchesPaginator:
     return Session().client("codebuild").get_paginator("list_build_batches")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListBuildBatchesPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListBuildBatchesPaginator = client.get_paginator("list_build_batches")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListBuildBatchesPaginator](./paginators.md#listbuildbatchespaginator)
+3. item: [:material-code-braces: ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef) 
 
 
 ### paginate
@@ -157,6 +208,23 @@ from mypy_boto3_codebuild.paginator import ListBuildBatchesForProjectPaginator
 def get_list_build_batches_for_project_paginator() -> ListBuildBatchesForProjectPaginator:
     return Session().client("codebuild").get_paginator("list_build_batches_for_project")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListBuildBatchesForProjectPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListBuildBatchesForProjectPaginator = client.get_paginator("list_build_batches_for_project")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListBuildBatchesForProjectPaginator](./paginators.md#listbuildbatchesforprojectpaginator)
+3. item: [:material-code-braces: ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef) 
 
 
 ### paginate
@@ -204,6 +272,23 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
     return Session().client("codebuild").get_paginator("list_builds")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListBuildsPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListBuildsPaginator = client.get_paginator("list_builds")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListBuildsPaginator](./paginators.md#listbuildspaginator)
+3. item: [:material-code-braces: ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef) 
+
 
 ### paginate
 
@@ -246,6 +331,23 @@ from mypy_boto3_codebuild.paginator import ListBuildsForProjectPaginator
 def get_list_builds_for_project_paginator() -> ListBuildsForProjectPaginator:
     return Session().client("codebuild").get_paginator("list_builds_for_project")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListBuildsForProjectPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListBuildsForProjectPaginator = client.get_paginator("list_builds_for_project")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListBuildsForProjectPaginator](./paginators.md#listbuildsforprojectpaginator)
+3. item: [:material-code-braces: ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef) 
 
 
 ### paginate
@@ -290,6 +392,23 @@ from mypy_boto3_codebuild.paginator import ListProjectsPaginator
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("codebuild").get_paginator("list_projects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef) 
 
 
 ### paginate
@@ -336,6 +455,23 @@ def get_list_report_groups_paginator() -> ListReportGroupsPaginator:
     return Session().client("codebuild").get_paginator("list_report_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListReportGroupsPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListReportGroupsPaginator = client.get_paginator("list_report_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListReportGroupsPaginator](./paginators.md#listreportgroupspaginator)
+3. item: [:material-code-braces: ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef) 
+
 
 ### paginate
 
@@ -381,6 +517,23 @@ def get_list_reports_paginator() -> ListReportsPaginator:
     return Session().client("codebuild").get_paginator("list_reports")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListReportsPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListReportsPaginator = client.get_paginator("list_reports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListReportsPaginator](./paginators.md#listreportspaginator)
+3. item: [:material-code-braces: ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef) 
+
 
 ### paginate
 
@@ -425,6 +578,23 @@ from mypy_boto3_codebuild.paginator import ListReportsForReportGroupPaginator
 def get_list_reports_for_report_group_paginator() -> ListReportsForReportGroupPaginator:
     return Session().client("codebuild").get_paginator("list_reports_for_report_group")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListReportsForReportGroupPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListReportsForReportGroupPaginator = client.get_paginator("list_reports_for_report_group")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListReportsForReportGroupPaginator](./paginators.md#listreportsforreportgrouppaginator)
+3. item: [:material-code-braces: ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef) 
 
 
 ### paginate
@@ -472,6 +642,23 @@ def get_list_shared_projects_paginator() -> ListSharedProjectsPaginator:
     return Session().client("codebuild").get_paginator("list_shared_projects")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListSharedProjectsPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListSharedProjectsPaginator = client.get_paginator("list_shared_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListSharedProjectsPaginator](./paginators.md#listsharedprojectspaginator)
+3. item: [:material-code-braces: ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef) 
+
 
 ### paginate
 
@@ -516,6 +703,23 @@ from mypy_boto3_codebuild.paginator import ListSharedReportGroupsPaginator
 def get_list_shared_report_groups_paginator() -> ListSharedReportGroupsPaginator:
     return Session().client("codebuild").get_paginator("list_shared_report_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_codebuild.paginator import ListSharedReportGroupsPaginator
+
+session = Session()
+
+client = Session().client("codebuild")  # (1)
+paginator: ListSharedReportGroupsPaginator = client.get_paginator("list_shared_report_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CodeBuildClient](./client.md)
+2. paginator: [ListSharedReportGroupsPaginator](./paginators.md#listsharedreportgroupspaginator)
+3. item: [:material-code-braces: ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef) 
 
 
 ### paginate

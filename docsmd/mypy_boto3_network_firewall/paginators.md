@@ -21,6 +21,23 @@ def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
     return Session().client("network-firewall").get_paginator("list_firewall_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator
+
+session = Session()
+
+client = Session().client("network-firewall")  # (1)
+paginator: ListFirewallPoliciesPaginator = client.get_paginator("list_firewall_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkFirewallClient](./client.md)
+2. paginator: [ListFirewallPoliciesPaginator](./paginators.md#listfirewallpoliciespaginator)
+3. item: [:material-code-braces: ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_network_firewall.paginator import ListFirewallsPaginator
 def get_list_firewalls_paginator() -> ListFirewallsPaginator:
     return Session().client("network-firewall").get_paginator("list_firewalls")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_network_firewall.paginator import ListFirewallsPaginator
+
+session = Session()
+
+client = Session().client("network-firewall")  # (1)
+paginator: ListFirewallsPaginator = client.get_paginator("list_firewalls")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkFirewallClient](./client.md)
+2. paginator: [ListFirewallsPaginator](./paginators.md#listfirewallspaginator)
+3. item: [:material-code-braces: ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ from mypy_boto3_network_firewall.paginator import ListRuleGroupsPaginator
 def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return Session().client("network-firewall").get_paginator("list_rule_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_network_firewall.paginator import ListRuleGroupsPaginator
+
+session = Session()
+
+client = Session().client("network-firewall")  # (1)
+paginator: ListRuleGroupsPaginator = client.get_paginator("list_rule_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkFirewallClient](./client.md)
+2. paginator: [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
+3. item: [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
 
 
 ### paginate
@@ -150,6 +201,23 @@ from mypy_boto3_network_firewall.paginator import ListTagsForResourcePaginator
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("network-firewall").get_paginator("list_tags_for_resource")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_network_firewall.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("network-firewall")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NetworkFirewallClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
 
 ### paginate

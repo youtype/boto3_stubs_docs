@@ -21,6 +21,23 @@ def get_get_account_authorization_details_paginator() -> GetAccountAuthorization
     return Session().client("iam").get_paginator("get_account_authorization_details")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import GetAccountAuthorizationDetailsPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: GetAccountAuthorizationDetailsPaginator = client.get_paginator("get_account_authorization_details")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [GetAccountAuthorizationDetailsPaginator](./paginators.md#getaccountauthorizationdetailspaginator)
+3. item: [:material-code-braces: GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ def get_get_group_paginator() -> GetGroupPaginator:
     return Session().client("iam").get_paginator("get_group")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import GetGroupPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: GetGroupPaginator = client.get_paginator("get_group")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [GetGroupPaginator](./paginators.md#getgrouppaginator)
+3. item: [:material-code-braces: GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef) 
+
 
 ### paginate
 
@@ -105,6 +139,23 @@ from mypy_boto3_iam.paginator import ListAccessKeysPaginator
 def get_list_access_keys_paginator() -> ListAccessKeysPaginator:
     return Session().client("iam").get_paginator("list_access_keys")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListAccessKeysPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListAccessKeysPaginator = client.get_paginator("list_access_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListAccessKeysPaginator](./paginators.md#listaccesskeyspaginator)
+3. item: [:material-code-braces: ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef) 
 
 
 ### paginate
@@ -148,6 +199,23 @@ def get_list_account_aliases_paginator() -> ListAccountAliasesPaginator:
     return Session().client("iam").get_paginator("list_account_aliases")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListAccountAliasesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListAccountAliasesPaginator = client.get_paginator("list_account_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListAccountAliasesPaginator](./paginators.md#listaccountaliasespaginator)
+3. item: [:material-code-braces: ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef) 
+
 
 ### paginate
 
@@ -188,6 +256,23 @@ from mypy_boto3_iam.paginator import ListAttachedGroupPoliciesPaginator
 def get_list_attached_group_policies_paginator() -> ListAttachedGroupPoliciesPaginator:
     return Session().client("iam").get_paginator("list_attached_group_policies")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListAttachedGroupPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListAttachedGroupPoliciesPaginator = client.get_paginator("list_attached_group_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListAttachedGroupPoliciesPaginator](./paginators.md#listattachedgrouppoliciespaginator)
+3. item: [:material-code-braces: ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef) 
 
 
 ### paginate
@@ -232,6 +317,23 @@ def get_list_attached_role_policies_paginator() -> ListAttachedRolePoliciesPagin
     return Session().client("iam").get_paginator("list_attached_role_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListAttachedRolePoliciesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListAttachedRolePoliciesPaginator = client.get_paginator("list_attached_role_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListAttachedRolePoliciesPaginator](./paginators.md#listattachedrolepoliciespaginator)
+3. item: [:material-code-braces: ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -275,6 +377,23 @@ def get_list_attached_user_policies_paginator() -> ListAttachedUserPoliciesPagin
     return Session().client("iam").get_paginator("list_attached_user_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListAttachedUserPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListAttachedUserPoliciesPaginator = client.get_paginator("list_attached_user_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListAttachedUserPoliciesPaginator](./paginators.md#listattacheduserpoliciespaginator)
+3. item: [:material-code-braces: ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -317,6 +436,23 @@ from mypy_boto3_iam.paginator import ListEntitiesForPolicyPaginator
 def get_list_entities_for_policy_paginator() -> ListEntitiesForPolicyPaginator:
     return Session().client("iam").get_paginator("list_entities_for_policy")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListEntitiesForPolicyPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListEntitiesForPolicyPaginator = client.get_paginator("list_entities_for_policy")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListEntitiesForPolicyPaginator](./paginators.md#listentitiesforpolicypaginator)
+3. item: [:material-code-braces: ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef) 
 
 
 ### paginate
@@ -365,6 +501,23 @@ def get_list_group_policies_paginator() -> ListGroupPoliciesPaginator:
     return Session().client("iam").get_paginator("list_group_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListGroupPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListGroupPoliciesPaginator = client.get_paginator("list_group_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListGroupPoliciesPaginator](./paginators.md#listgrouppoliciespaginator)
+3. item: [:material-code-braces: ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -406,6 +559,23 @@ from mypy_boto3_iam.paginator import ListGroupsPaginator
 def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("iam").get_paginator("list_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListGroupsPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListGroupsPaginator = client.get_paginator("list_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+3. item: [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
 
 ### paginate
@@ -449,6 +619,23 @@ def get_list_groups_for_user_paginator() -> ListGroupsForUserPaginator:
     return Session().client("iam").get_paginator("list_groups_for_user")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListGroupsForUserPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListGroupsForUserPaginator = client.get_paginator("list_groups_for_user")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListGroupsForUserPaginator](./paginators.md#listgroupsforuserpaginator)
+3. item: [:material-code-braces: ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef) 
+
 
 ### paginate
 
@@ -490,6 +677,23 @@ from mypy_boto3_iam.paginator import ListInstanceProfilesPaginator
 def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
     return Session().client("iam").get_paginator("list_instance_profiles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListInstanceProfilesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListInstanceProfilesPaginator = client.get_paginator("list_instance_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListInstanceProfilesPaginator](./paginators.md#listinstanceprofilespaginator)
+3. item: [:material-code-braces: ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef) 
 
 
 ### paginate
@@ -533,6 +737,23 @@ def get_list_instance_profiles_for_role_paginator() -> ListInstanceProfilesForRo
     return Session().client("iam").get_paginator("list_instance_profiles_for_role")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListInstanceProfilesForRolePaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListInstanceProfilesForRolePaginator = client.get_paginator("list_instance_profiles_for_role")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListInstanceProfilesForRolePaginator](./paginators.md#listinstanceprofilesforrolepaginator)
+3. item: [:material-code-braces: ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef) 
+
 
 ### paginate
 
@@ -575,6 +796,23 @@ def get_list_mfa_devices_paginator() -> ListMFADevicesPaginator:
     return Session().client("iam").get_paginator("list_mfa_devices")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListMFADevicesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListMFADevicesPaginator = client.get_paginator("list_mfa_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListMFADevicesPaginator](./paginators.md#listmfadevicespaginator)
+3. item: [:material-code-braces: ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef) 
+
 
 ### paginate
 
@@ -616,6 +854,23 @@ from mypy_boto3_iam.paginator import ListPoliciesPaginator
 def get_list_policies_paginator() -> ListPoliciesPaginator:
     return Session().client("iam").get_paginator("list_policies")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListPoliciesPaginator = client.get_paginator("list_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+3. item: [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
 
 ### paginate
@@ -664,6 +919,23 @@ def get_list_policy_versions_paginator() -> ListPolicyVersionsPaginator:
     return Session().client("iam").get_paginator("list_policy_versions")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListPolicyVersionsPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListPolicyVersionsPaginator = client.get_paginator("list_policy_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListPolicyVersionsPaginator](./paginators.md#listpolicyversionspaginator)
+3. item: [:material-code-braces: ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef) 
+
 
 ### paginate
 
@@ -705,6 +977,23 @@ from mypy_boto3_iam.paginator import ListRolePoliciesPaginator
 def get_list_role_policies_paginator() -> ListRolePoliciesPaginator:
     return Session().client("iam").get_paginator("list_role_policies")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListRolePoliciesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListRolePoliciesPaginator = client.get_paginator("list_role_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListRolePoliciesPaginator](./paginators.md#listrolepoliciespaginator)
+3. item: [:material-code-braces: ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef) 
 
 
 ### paginate
@@ -748,6 +1037,23 @@ def get_list_roles_paginator() -> ListRolesPaginator:
     return Session().client("iam").get_paginator("list_roles")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListRolesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListRolesPaginator = client.get_paginator("list_roles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListRolesPaginator](./paginators.md#listrolespaginator)
+3. item: [:material-code-braces: ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef) 
+
 
 ### paginate
 
@@ -789,6 +1095,23 @@ from mypy_boto3_iam.paginator import ListSSHPublicKeysPaginator
 def get_list_ssh_public_keys_paginator() -> ListSSHPublicKeysPaginator:
     return Session().client("iam").get_paginator("list_ssh_public_keys")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListSSHPublicKeysPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListSSHPublicKeysPaginator = client.get_paginator("list_ssh_public_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListSSHPublicKeysPaginator](./paginators.md#listsshpublickeyspaginator)
+3. item: [:material-code-braces: ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef) 
 
 
 ### paginate
@@ -832,6 +1155,23 @@ def get_list_server_certificates_paginator() -> ListServerCertificatesPaginator:
     return Session().client("iam").get_paginator("list_server_certificates")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListServerCertificatesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListServerCertificatesPaginator = client.get_paginator("list_server_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListServerCertificatesPaginator](./paginators.md#listservercertificatespaginator)
+3. item: [:material-code-braces: ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef) 
+
 
 ### paginate
 
@@ -873,6 +1213,23 @@ from mypy_boto3_iam.paginator import ListSigningCertificatesPaginator
 def get_list_signing_certificates_paginator() -> ListSigningCertificatesPaginator:
     return Session().client("iam").get_paginator("list_signing_certificates")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListSigningCertificatesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListSigningCertificatesPaginator = client.get_paginator("list_signing_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListSigningCertificatesPaginator](./paginators.md#listsigningcertificatespaginator)
+3. item: [:material-code-braces: ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef) 
 
 
 ### paginate
@@ -916,6 +1273,23 @@ def get_list_user_policies_paginator() -> ListUserPoliciesPaginator:
     return Session().client("iam").get_paginator("list_user_policies")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListUserPoliciesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListUserPoliciesPaginator = client.get_paginator("list_user_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListUserPoliciesPaginator](./paginators.md#listuserpoliciespaginator)
+3. item: [:material-code-braces: ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef) 
+
 
 ### paginate
 
@@ -957,6 +1331,23 @@ from mypy_boto3_iam.paginator import ListUserTagsPaginator
 def get_list_user_tags_paginator() -> ListUserTagsPaginator:
     return Session().client("iam").get_paginator("list_user_tags")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListUserTagsPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListUserTagsPaginator = client.get_paginator("list_user_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListUserTagsPaginator](./paginators.md#listusertagspaginator)
+3. item: [:material-code-braces: ListUserTagsResponseTypeDef](./type_defs.md#listusertagsresponsetypedef) 
 
 
 ### paginate
@@ -1000,6 +1391,23 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("iam").get_paginator("list_users")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListUsersPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListUsersPaginator = client.get_paginator("list_users")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListUsersPaginator](./paginators.md#listuserspaginator)
+3. item: [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
+
 
 ### paginate
 
@@ -1041,6 +1449,23 @@ from mypy_boto3_iam.paginator import ListVirtualMFADevicesPaginator
 def get_list_virtual_mfa_devices_paginator() -> ListVirtualMFADevicesPaginator:
     return Session().client("iam").get_paginator("list_virtual_mfa_devices")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import ListVirtualMFADevicesPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: ListVirtualMFADevicesPaginator = client.get_paginator("list_virtual_mfa_devices")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [ListVirtualMFADevicesPaginator](./paginators.md#listvirtualmfadevicespaginator)
+3. item: [:material-code-braces: ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef) 
 
 
 ### paginate
@@ -1084,6 +1509,23 @@ from mypy_boto3_iam.paginator import SimulateCustomPolicyPaginator
 def get_simulate_custom_policy_paginator() -> SimulateCustomPolicyPaginator:
     return Session().client("iam").get_paginator("simulate_custom_policy")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import SimulateCustomPolicyPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: SimulateCustomPolicyPaginator = client.get_paginator("simulate_custom_policy")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
+3. item: [:material-code-braces: SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef) 
 
 
 ### paginate
@@ -1136,6 +1578,23 @@ from mypy_boto3_iam.paginator import SimulatePrincipalPolicyPaginator
 def get_simulate_principal_policy_paginator() -> SimulatePrincipalPolicyPaginator:
     return Session().client("iam").get_paginator("simulate_principal_policy")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iam.paginator import SimulatePrincipalPolicyPaginator
+
+session = Session()
+
+client = Session().client("iam")  # (1)
+paginator: SimulatePrincipalPolicyPaginator = client.get_paginator("simulate_principal_policy")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IAMClient](./client.md)
+2. paginator: [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
+3. item: [:material-code-braces: SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef) 
 
 
 ### paginate

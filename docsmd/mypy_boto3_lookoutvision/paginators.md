@@ -21,6 +21,23 @@ def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
     return Session().client("lookoutvision").get_paginator("list_dataset_entries")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lookoutvision.paginator import ListDatasetEntriesPaginator
+
+session = Session()
+
+client = Session().client("lookoutvision")  # (1)
+paginator: ListDatasetEntriesPaginator = client.get_paginator("list_dataset_entries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LookoutforVisionClient](./client.md)
+2. paginator: [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
+3. item: [:material-code-braces: ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef) 
+
 
 ### paginate
 
@@ -70,6 +87,23 @@ def get_list_model_packaging_jobs_paginator() -> ListModelPackagingJobsPaginator
     return Session().client("lookoutvision").get_paginator("list_model_packaging_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lookoutvision.paginator import ListModelPackagingJobsPaginator
+
+session = Session()
+
+client = Session().client("lookoutvision")  # (1)
+paginator: ListModelPackagingJobsPaginator = client.get_paginator("list_model_packaging_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LookoutforVisionClient](./client.md)
+2. paginator: [ListModelPackagingJobsPaginator](./paginators.md#listmodelpackagingjobspaginator)
+3. item: [:material-code-braces: ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -112,6 +146,23 @@ def get_list_models_paginator() -> ListModelsPaginator:
     return Session().client("lookoutvision").get_paginator("list_models")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lookoutvision.paginator import ListModelsPaginator
+
+session = Session()
+
+client = Session().client("lookoutvision")  # (1)
+paginator: ListModelsPaginator = client.get_paginator("list_models")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LookoutforVisionClient](./client.md)
+2. paginator: [ListModelsPaginator](./paginators.md#listmodelspaginator)
+3. item: [:material-code-braces: ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef) 
+
 
 ### paginate
 
@@ -153,6 +204,23 @@ from mypy_boto3_lookoutvision.paginator import ListProjectsPaginator
 def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("lookoutvision").get_paginator("list_projects")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lookoutvision.paginator import ListProjectsPaginator
+
+session = Session()
+
+client = Session().client("lookoutvision")  # (1)
+paginator: ListProjectsPaginator = client.get_paginator("list_projects")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LookoutforVisionClient](./client.md)
+2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+3. item: [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
 
 ### paginate

@@ -21,6 +21,23 @@ def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
     return Session().client("macie2").get_paginator("describe_buckets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import DescribeBucketsPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: DescribeBucketsPaginator = client.get_paginator("describe_buckets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [DescribeBucketsPaginator](./paginators.md#describebucketspaginator)
+3. item: [:material-code-braces: DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef) 
+
 
 ### paginate
 
@@ -65,6 +82,23 @@ from mypy_boto3_macie2.paginator import GetUsageStatisticsPaginator
 def get_get_usage_statistics_paginator() -> GetUsageStatisticsPaginator:
     return Session().client("macie2").get_paginator("get_usage_statistics")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import GetUsageStatisticsPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: GetUsageStatisticsPaginator = client.get_paginator("get_usage_statistics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [GetUsageStatisticsPaginator](./paginators.md#getusagestatisticspaginator)
+3. item: [:material-code-braces: GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef) 
 
 
 ### paginate
@@ -113,6 +147,23 @@ def get_list_classification_jobs_paginator() -> ListClassificationJobsPaginator:
     return Session().client("macie2").get_paginator("list_classification_jobs")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import ListClassificationJobsPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: ListClassificationJobsPaginator = client.get_paginator("list_classification_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [ListClassificationJobsPaginator](./paginators.md#listclassificationjobspaginator)
+3. item: [:material-code-braces: ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef) 
+
 
 ### paginate
 
@@ -158,6 +209,23 @@ def get_list_custom_data_identifiers_paginator() -> ListCustomDataIdentifiersPag
     return Session().client("macie2").get_paginator("list_custom_data_identifiers")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import ListCustomDataIdentifiersPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: ListCustomDataIdentifiersPaginator = client.get_paginator("list_custom_data_identifiers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [ListCustomDataIdentifiersPaginator](./paginators.md#listcustomdataidentifierspaginator)
+3. item: [:material-code-braces: ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef) 
+
 
 ### paginate
 
@@ -198,6 +266,23 @@ from mypy_boto3_macie2.paginator import ListFindingsPaginator
 def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("macie2").get_paginator("list_findings")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import ListFindingsPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: ListFindingsPaginator = client.get_paginator("list_findings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+3. item: [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
 
 ### paginate
@@ -244,6 +329,23 @@ def get_list_findings_filters_paginator() -> ListFindingsFiltersPaginator:
     return Session().client("macie2").get_paginator("list_findings_filters")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import ListFindingsFiltersPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: ListFindingsFiltersPaginator = client.get_paginator("list_findings_filters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [ListFindingsFiltersPaginator](./paginators.md#listfindingsfilterspaginator)
+3. item: [:material-code-braces: ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef) 
+
 
 ### paginate
 
@@ -285,6 +387,23 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return Session().client("macie2").get_paginator("list_invitations")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import ListInvitationsPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: ListInvitationsPaginator = client.get_paginator("list_invitations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+3. item: [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
+
 
 ### paginate
 
@@ -325,6 +444,23 @@ from mypy_boto3_macie2.paginator import ListMembersPaginator
 def get_list_members_paginator() -> ListMembersPaginator:
     return Session().client("macie2").get_paginator("list_members")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import ListMembersPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: ListMembersPaginator = client.get_paginator("list_members")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [ListMembersPaginator](./paginators.md#listmemberspaginator)
+3. item: [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
 
 ### paginate
@@ -368,6 +504,23 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
     return Session().client("macie2").get_paginator("list_organization_admin_accounts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import ListOrganizationAdminAccountsPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: ListOrganizationAdminAccountsPaginator = client.get_paginator("list_organization_admin_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+3. item: [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
+
 
 ### paginate
 
@@ -408,6 +561,23 @@ from mypy_boto3_macie2.paginator import SearchResourcesPaginator
 def get_search_resources_paginator() -> SearchResourcesPaginator:
     return Session().client("macie2").get_paginator("search_resources")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.paginator import SearchResourcesPaginator
+
+session = Session()
+
+client = Session().client("macie2")  # (1)
+paginator: SearchResourcesPaginator = client.get_paginator("search_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [Macie2Client](./client.md)
+2. paginator: [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
+3. item: [:material-code-braces: SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef) 
 
 
 ### paginate

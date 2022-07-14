@@ -21,6 +21,23 @@ def get_describe_account_modifications_paginator() -> DescribeAccountModificatio
     return Session().client("workspaces").get_paginator("describe_account_modifications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import DescribeAccountModificationsPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: DescribeAccountModificationsPaginator = client.get_paginator("describe_account_modifications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [DescribeAccountModificationsPaginator](./paginators.md#describeaccountmodificationspaginator)
+3. item: [:material-code-braces: DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_workspaces.paginator import DescribeIpGroupsPaginator
 def get_describe_ip_groups_paginator() -> DescribeIpGroupsPaginator:
     return Session().client("workspaces").get_paginator("describe_ip_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import DescribeIpGroupsPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: DescribeIpGroupsPaginator = client.get_paginator("describe_ip_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [DescribeIpGroupsPaginator](./paginators.md#describeipgroupspaginator)
+3. item: [:material-code-braces: DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef) 
 
 
 ### paginate
@@ -103,6 +137,23 @@ from mypy_boto3_workspaces.paginator import DescribeWorkspaceBundlesPaginator
 def get_describe_workspace_bundles_paginator() -> DescribeWorkspaceBundlesPaginator:
     return Session().client("workspaces").get_paginator("describe_workspace_bundles")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import DescribeWorkspaceBundlesPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: DescribeWorkspaceBundlesPaginator = client.get_paginator("describe_workspace_bundles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [DescribeWorkspaceBundlesPaginator](./paginators.md#describeworkspacebundlespaginator)
+3. item: [:material-code-braces: DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef) 
 
 
 ### paginate
@@ -147,6 +198,23 @@ def get_describe_workspace_directories_paginator() -> DescribeWorkspaceDirectori
     return Session().client("workspaces").get_paginator("describe_workspace_directories")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import DescribeWorkspaceDirectoriesPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: DescribeWorkspaceDirectoriesPaginator = client.get_paginator("describe_workspace_directories")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [DescribeWorkspaceDirectoriesPaginator](./paginators.md#describeworkspacedirectoriespaginator)
+3. item: [:material-code-braces: DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef) 
+
 
 ### paginate
 
@@ -189,6 +257,23 @@ from mypy_boto3_workspaces.paginator import DescribeWorkspaceImagesPaginator
 def get_describe_workspace_images_paginator() -> DescribeWorkspaceImagesPaginator:
     return Session().client("workspaces").get_paginator("describe_workspace_images")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import DescribeWorkspaceImagesPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: DescribeWorkspaceImagesPaginator = client.get_paginator("describe_workspace_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [DescribeWorkspaceImagesPaginator](./paginators.md#describeworkspaceimagespaginator)
+3. item: [:material-code-braces: DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef) 
 
 
 ### paginate
@@ -233,6 +318,23 @@ from mypy_boto3_workspaces.paginator import DescribeWorkspacesPaginator
 def get_describe_workspaces_paginator() -> DescribeWorkspacesPaginator:
     return Session().client("workspaces").get_paginator("describe_workspaces")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import DescribeWorkspacesPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: DescribeWorkspacesPaginator = client.get_paginator("describe_workspaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [DescribeWorkspacesPaginator](./paginators.md#describeworkspacespaginator)
+3. item: [:material-code-braces: DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef) 
 
 
 ### paginate
@@ -279,6 +381,23 @@ def get_describe_workspaces_connection_status_paginator() -> DescribeWorkspacesC
     return Session().client("workspaces").get_paginator("describe_workspaces_connection_status")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import DescribeWorkspacesConnectionStatusPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: DescribeWorkspacesConnectionStatusPaginator = client.get_paginator("describe_workspaces_connection_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [DescribeWorkspacesConnectionStatusPaginator](./paginators.md#describeworkspacesconnectionstatuspaginator)
+3. item: [:material-code-braces: DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef) 
+
 
 ### paginate
 
@@ -320,6 +439,23 @@ from mypy_boto3_workspaces.paginator import ListAvailableManagementCidrRangesPag
 def get_list_available_management_cidr_ranges_paginator() -> ListAvailableManagementCidrRangesPaginator:
     return Session().client("workspaces").get_paginator("list_available_management_cidr_ranges")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_workspaces.paginator import ListAvailableManagementCidrRangesPaginator
+
+session = Session()
+
+client = Session().client("workspaces")  # (1)
+paginator: ListAvailableManagementCidrRangesPaginator = client.get_paginator("list_available_management_cidr_ranges")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WorkSpacesClient](./client.md)
+2. paginator: [ListAvailableManagementCidrRangesPaginator](./paginators.md#listavailablemanagementcidrrangespaginator)
+3. item: [:material-code-braces: ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef) 
 
 
 ### paginate

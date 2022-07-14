@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_route53_recovery_control_config.waiter import ClusterCreatedWaiter
 
-def get_cluster_created_waiter() -> ClusterCreatedWaiter:
-    return Session().client("route53-recovery-control-config").get_waiter("cluster_created")
+
+session = Session()
+
+client = session.client("route53-recovery-control-config")  # (1)
+waiter: ClusterCreatedWaiter = client.get_waiter("cluster_created")  # (2)
+await waiter.wait()
 ```
+
+1. client: [Route53RecoveryControlConfigClient](./client.md)
+2. waiter: [ClusterCreatedWaiter](./waiters.md#clustercreatedwaiter)
 
 
 ### wait
@@ -58,9 +65,16 @@ from boto3.session import Session
 
 from mypy_boto3_route53_recovery_control_config.waiter import ClusterDeletedWaiter
 
-def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
-    return Session().client("route53-recovery-control-config").get_waiter("cluster_deleted")
+
+session = Session()
+
+client = session.client("route53-recovery-control-config")  # (1)
+waiter: ClusterDeletedWaiter = client.get_waiter("cluster_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [Route53RecoveryControlConfigClient](./client.md)
+2. waiter: [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
 
 
 ### wait
@@ -99,9 +113,16 @@ from boto3.session import Session
 
 from mypy_boto3_route53_recovery_control_config.waiter import ControlPanelCreatedWaiter
 
-def get_control_panel_created_waiter() -> ControlPanelCreatedWaiter:
-    return Session().client("route53-recovery-control-config").get_waiter("control_panel_created")
+
+session = Session()
+
+client = session.client("route53-recovery-control-config")  # (1)
+waiter: ControlPanelCreatedWaiter = client.get_waiter("control_panel_created")  # (2)
+await waiter.wait()
 ```
+
+1. client: [Route53RecoveryControlConfigClient](./client.md)
+2. waiter: [ControlPanelCreatedWaiter](./waiters.md#controlpanelcreatedwaiter)
 
 
 ### wait
@@ -140,9 +161,16 @@ from boto3.session import Session
 
 from mypy_boto3_route53_recovery_control_config.waiter import ControlPanelDeletedWaiter
 
-def get_control_panel_deleted_waiter() -> ControlPanelDeletedWaiter:
-    return Session().client("route53-recovery-control-config").get_waiter("control_panel_deleted")
+
+session = Session()
+
+client = session.client("route53-recovery-control-config")  # (1)
+waiter: ControlPanelDeletedWaiter = client.get_waiter("control_panel_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [Route53RecoveryControlConfigClient](./client.md)
+2. waiter: [ControlPanelDeletedWaiter](./waiters.md#controlpaneldeletedwaiter)
 
 
 ### wait
@@ -181,9 +209,16 @@ from boto3.session import Session
 
 from mypy_boto3_route53_recovery_control_config.waiter import RoutingControlCreatedWaiter
 
-def get_routing_control_created_waiter() -> RoutingControlCreatedWaiter:
-    return Session().client("route53-recovery-control-config").get_waiter("routing_control_created")
+
+session = Session()
+
+client = session.client("route53-recovery-control-config")  # (1)
+waiter: RoutingControlCreatedWaiter = client.get_waiter("routing_control_created")  # (2)
+await waiter.wait()
 ```
+
+1. client: [Route53RecoveryControlConfigClient](./client.md)
+2. waiter: [RoutingControlCreatedWaiter](./waiters.md#routingcontrolcreatedwaiter)
 
 
 ### wait
@@ -222,9 +257,16 @@ from boto3.session import Session
 
 from mypy_boto3_route53_recovery_control_config.waiter import RoutingControlDeletedWaiter
 
-def get_routing_control_deleted_waiter() -> RoutingControlDeletedWaiter:
-    return Session().client("route53-recovery-control-config").get_waiter("routing_control_deleted")
+
+session = Session()
+
+client = session.client("route53-recovery-control-config")  # (1)
+waiter: RoutingControlDeletedWaiter = client.get_waiter("routing_control_deleted")  # (2)
+await waiter.wait()
 ```
+
+1. client: [Route53RecoveryControlConfigClient](./client.md)
+2. waiter: [RoutingControlDeletedWaiter](./waiters.md#routingcontroldeletedwaiter)
 
 
 ### wait

@@ -7,6 +7,22 @@
     Auto-generated documentation for [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
     type annotations stubs module [mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
+## AccessControlConfigurationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import AccessControlConfigurationSummaryTypeDef
+
+def get_value() -> AccessControlConfigurationSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class AccessControlConfigurationSummaryTypeDef(TypedDict):
+    Id: str,
+```
+
 ## AccessControlListConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -476,6 +492,29 @@ class CorrectionTypeDef(TypedDict):
     CorrectedTerm: NotRequired[str],
 ```
 
+## PrincipalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import PrincipalTypeDef
+
+def get_value() -> PrincipalTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+        "Access": ...,
+    }
+```
+
+```python title="Definition"
+class PrincipalTypeDef(TypedDict):
+    Name: str,
+    Type: PrincipalTypeType,  # (1)
+    Access: ReadAccessTypeType,  # (2)
+    DataSourceId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+2. See [:material-code-brackets: ReadAccessTypeType](./literals.md#readaccesstypetype) 
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -606,6 +645,24 @@ class SqlConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: QueryIdentifiersEnclosingOptionType](./literals.md#queryidentifiersenclosingoptiontype) 
+## DeleteAccessControlConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import DeleteAccessControlConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteAccessControlConfigurationRequestRequestTypeDef:
+    return {
+        "IndexId": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAccessControlConfigurationRequestRequestTypeDef(TypedDict):
+    IndexId: str,
+    Id: str,
+```
+
 ## DeleteDataSourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -730,6 +787,24 @@ def get_value() -> DeleteThesaurusRequestRequestTypeDef:
 class DeleteThesaurusRequestRequestTypeDef(TypedDict):
     Id: str,
     IndexId: str,
+```
+
+## DescribeAccessControlConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import DescribeAccessControlConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeAccessControlConfigurationRequestRequestTypeDef:
+    return {
+        "IndexId": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccessControlConfigurationRequestRequestTypeDef(TypedDict):
+    IndexId: str,
+    Id: str,
 ```
 
 ## DescribeDataSourceRequestRequestTypeDef
@@ -991,29 +1066,6 @@ class SearchTypeDef(TypedDict):
     Sortable: NotRequired[bool],
 ```
 
-## PrincipalTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kendra.type_defs import PrincipalTypeDef
-
-def get_value() -> PrincipalTypeDef:
-    return {
-        "Name": ...,
-        "Type": ...,
-        "Access": ...,
-    }
-```
-
-```python title="Definition"
-class PrincipalTypeDef(TypedDict):
-    Name: str,
-    Type: PrincipalTypeType,  # (1)
-    Access: ReadAccessTypeType,  # (2)
-    DataSourceId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
-2. See [:material-code-brackets: ReadAccessTypeType](./literals.md#readaccesstypetype) 
 ## DocumentsMetadataConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1400,6 +1452,24 @@ class JwtTokenTypeConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: KeyLocationType](./literals.md#keylocationtype) 
+## ListAccessControlConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import ListAccessControlConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListAccessControlConfigurationsRequestRequestTypeDef:
+    return {
+        "IndexId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessControlConfigurationsRequestRequestTypeDef(TypedDict):
+    IndexId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
 ## ListDataSourcesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2498,6 +2568,25 @@ class AssociatePersonasToEntitiesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FailedEntityTypeDef](./type_defs.md#failedentitytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAccessControlConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import CreateAccessControlConfigurationResponseTypeDef
+
+def get_value() -> CreateAccessControlConfigurationResponseTypeDef:
+    return {
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessControlConfigurationResponseTypeDef(TypedDict):
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDataSourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -2838,6 +2927,28 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccessControlConfigurationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import ListAccessControlConfigurationsResponseTypeDef
+
+def get_value() -> ListAccessControlConfigurationsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "AccessControlConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessControlConfigurationsResponseTypeDef(TypedDict):
+    NextToken: str,
+    AccessControlConfigurations: List[AccessControlConfigurationSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccessControlConfigurationSummaryTypeDef](./type_defs.md#accesscontrolconfigurationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartDataSourceSyncJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -3069,6 +3180,23 @@ class SpellCorrectedQueryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CorrectionTypeDef](./type_defs.md#correctiontypedef) 
+## HierarchicalPrincipalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import HierarchicalPrincipalTypeDef
+
+def get_value() -> HierarchicalPrincipalTypeDef:
+    return {
+        "PrincipalList": ...,
+    }
+```
+
+```python title="Definition"
+class HierarchicalPrincipalTypeDef(TypedDict):
+    PrincipalList: Sequence[PrincipalTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
 ## CreateFaqRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3429,23 +3557,6 @@ class DocumentMetadataConfigurationTypeDef(TypedDict):
 1. See [:material-code-brackets: DocumentAttributeValueTypeType](./literals.md#documentattributevaluetypetype) 
 2. See [:material-code-braces: RelevanceTypeDef](./type_defs.md#relevancetypedef) 
 3. See [:material-code-braces: SearchTypeDef](./type_defs.md#searchtypedef) 
-## HierarchicalPrincipalTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kendra.type_defs import HierarchicalPrincipalTypeDef
-
-def get_value() -> HierarchicalPrincipalTypeDef:
-    return {
-        "PrincipalList": ...,
-    }
-```
-
-```python title="Definition"
-class HierarchicalPrincipalTypeDef(TypedDict):
-    PrincipalList: Sequence[PrincipalTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
 ## S3DataSourceConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4013,6 +4124,83 @@ class ConfluenceConfigurationTypeDef(TypedDict):
 4. See [:material-code-braces: ConfluenceBlogConfigurationTypeDef](./type_defs.md#confluenceblogconfigurationtypedef) 
 5. See [:material-code-braces: ConfluenceAttachmentConfigurationTypeDef](./type_defs.md#confluenceattachmentconfigurationtypedef) 
 6. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+## CreateAccessControlConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import CreateAccessControlConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateAccessControlConfigurationRequestRequestTypeDef:
+    return {
+        "IndexId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessControlConfigurationRequestRequestTypeDef(TypedDict):
+    IndexId: str,
+    Name: str,
+    Description: NotRequired[str],
+    AccessControlList: NotRequired[Sequence[PrincipalTypeDef]],  # (1)
+    HierarchicalAccessControlList: NotRequired[Sequence[HierarchicalPrincipalTypeDef]],  # (2)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
+2. See [:material-code-braces: HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef) 
+## DescribeAccessControlConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import DescribeAccessControlConfigurationResponseTypeDef
+
+def get_value() -> DescribeAccessControlConfigurationResponseTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "ErrorMessage": ...,
+        "AccessControlList": ...,
+        "HierarchicalAccessControlList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccessControlConfigurationResponseTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    ErrorMessage: str,
+    AccessControlList: List[PrincipalTypeDef],  # (1)
+    HierarchicalAccessControlList: List[HierarchicalPrincipalTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
+2. See [:material-code-braces: HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAccessControlConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import UpdateAccessControlConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateAccessControlConfigurationRequestRequestTypeDef:
+    return {
+        "IndexId": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccessControlConfigurationRequestRequestTypeDef(TypedDict):
+    IndexId: str,
+    Id: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    AccessControlList: NotRequired[Sequence[PrincipalTypeDef]],  # (1)
+    HierarchicalAccessControlList: NotRequired[Sequence[HierarchicalPrincipalTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
+2. See [:material-code-braces: HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef) 
 ## ListDataSourceSyncJobsResponseTypeDef
 
 ```python title="Usage Example"
@@ -4150,6 +4338,35 @@ class DocumentInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef) 
+## DocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import DocumentTypeDef
+
+def get_value() -> DocumentTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentTypeDef(TypedDict):
+    Id: str,
+    Title: NotRequired[str],
+    Blob: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    S3Path: NotRequired[S3PathTypeDef],  # (1)
+    Attributes: NotRequired[Sequence[DocumentAttributeTypeDef]],  # (2)
+    AccessControlList: NotRequired[Sequence[PrincipalTypeDef]],  # (3)
+    HierarchicalAccessControlList: NotRequired[Sequence[HierarchicalPrincipalTypeDef]],  # (4)
+    ContentType: NotRequired[ContentTypeType],  # (5)
+    AccessControlConfigurationId: NotRequired[str],
+```
+
+1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+2. See [:material-code-braces: DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef) 
+3. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
+4. See [:material-code-braces: HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef) 
+5. See [:material-code-brackets: ContentTypeType](./literals.md#contenttypetype) 
 ## QueryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4185,34 +4402,6 @@ class QueryRequestRequestTypeDef(TypedDict):
 5. See [:material-code-braces: SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef) 
 6. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
 7. See [:material-code-braces: SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef) 
-## DocumentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kendra.type_defs import DocumentTypeDef
-
-def get_value() -> DocumentTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentTypeDef(TypedDict):
-    Id: str,
-    Title: NotRequired[str],
-    Blob: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
-    S3Path: NotRequired[S3PathTypeDef],  # (1)
-    Attributes: NotRequired[Sequence[DocumentAttributeTypeDef]],  # (2)
-    AccessControlList: NotRequired[Sequence[PrincipalTypeDef]],  # (3)
-    HierarchicalAccessControlList: NotRequired[Sequence[HierarchicalPrincipalTypeDef]],  # (4)
-    ContentType: NotRequired[ContentTypeType],  # (5)
-```
-
-1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
-2. See [:material-code-braces: DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef) 
-3. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
-4. See [:material-code-braces: HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef) 
-5. See [:material-code-brackets: ContentTypeType](./literals.md#contenttypetype) 
 ## ListExperienceEntitiesResponseTypeDef
 
 ```python title="Usage Example"

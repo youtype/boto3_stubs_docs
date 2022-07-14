@@ -21,6 +21,23 @@ def get_get_rate_based_rule_managed_keys_paginator() -> GetRateBasedRuleManagedK
     return Session().client("waf").get_paginator("get_rate_based_rule_managed_keys")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: GetRateBasedRuleManagedKeysPaginator = client.get_paginator("get_rate_based_rule_managed_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [GetRateBasedRuleManagedKeysPaginator](./paginators.md#getratebasedrulemanagedkeyspaginator)
+3. item: [:material-code-braces: GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_waf.paginator import ListActivatedRulesInRuleGroupPaginator
 def get_list_activated_rules_in_rule_group_paginator() -> ListActivatedRulesInRuleGroupPaginator:
     return Session().client("waf").get_paginator("list_activated_rules_in_rule_group")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListActivatedRulesInRuleGroupPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListActivatedRulesInRuleGroupPaginator = client.get_paginator("list_activated_rules_in_rule_group")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListActivatedRulesInRuleGroupPaginator](./paginators.md#listactivatedrulesinrulegrouppaginator)
+3. item: [:material-code-braces: ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ def get_list_byte_match_sets_paginator() -> ListByteMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_byte_match_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListByteMatchSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListByteMatchSetsPaginator = client.get_paginator("list_byte_match_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListByteMatchSetsPaginator](./paginators.md#listbytematchsetspaginator)
+3. item: [:material-code-braces: ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -145,6 +196,23 @@ from mypy_boto3_waf.paginator import ListGeoMatchSetsPaginator
 def get_list_geo_match_sets_paginator() -> ListGeoMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_geo_match_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListGeoMatchSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListGeoMatchSetsPaginator = client.get_paginator("list_geo_match_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListGeoMatchSetsPaginator](./paginators.md#listgeomatchsetspaginator)
+3. item: [:material-code-braces: ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef) 
 
 
 ### paginate
@@ -187,6 +255,23 @@ def get_list_ip_sets_paginator() -> ListIPSetsPaginator:
     return Session().client("waf").get_paginator("list_ip_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListIPSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListIPSetsPaginator = client.get_paginator("list_ip_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
+3. item: [:material-code-braces: ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -227,6 +312,23 @@ from mypy_boto3_waf.paginator import ListLoggingConfigurationsPaginator
 def get_list_logging_configurations_paginator() -> ListLoggingConfigurationsPaginator:
     return Session().client("waf").get_paginator("list_logging_configurations")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListLoggingConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListLoggingConfigurationsPaginator = client.get_paginator("list_logging_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListLoggingConfigurationsPaginator](./paginators.md#listloggingconfigurationspaginator)
+3. item: [:material-code-braces: ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef) 
 
 
 ### paginate
@@ -269,6 +371,23 @@ def get_list_rate_based_rules_paginator() -> ListRateBasedRulesPaginator:
     return Session().client("waf").get_paginator("list_rate_based_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListRateBasedRulesPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListRateBasedRulesPaginator = client.get_paginator("list_rate_based_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListRateBasedRulesPaginator](./paginators.md#listratebasedrulespaginator)
+3. item: [:material-code-braces: ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef) 
+
 
 ### paginate
 
@@ -309,6 +428,23 @@ from mypy_boto3_waf.paginator import ListRegexMatchSetsPaginator
 def get_list_regex_match_sets_paginator() -> ListRegexMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_regex_match_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListRegexMatchSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListRegexMatchSetsPaginator = client.get_paginator("list_regex_match_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListRegexMatchSetsPaginator](./paginators.md#listregexmatchsetspaginator)
+3. item: [:material-code-braces: ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef) 
 
 
 ### paginate
@@ -351,6 +487,23 @@ def get_list_regex_pattern_sets_paginator() -> ListRegexPatternSetsPaginator:
     return Session().client("waf").get_paginator("list_regex_pattern_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListRegexPatternSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListRegexPatternSetsPaginator = client.get_paginator("list_regex_pattern_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListRegexPatternSetsPaginator](./paginators.md#listregexpatternsetspaginator)
+3. item: [:material-code-braces: ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -391,6 +544,23 @@ from mypy_boto3_waf.paginator import ListRuleGroupsPaginator
 def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return Session().client("waf").get_paginator("list_rule_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListRuleGroupsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListRuleGroupsPaginator = client.get_paginator("list_rule_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
+3. item: [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
 
 
 ### paginate
@@ -433,6 +603,23 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return Session().client("waf").get_paginator("list_rules")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListRulesPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListRulesPaginator = client.get_paginator("list_rules")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListRulesPaginator](./paginators.md#listrulespaginator)
+3. item: [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+
 
 ### paginate
 
@@ -473,6 +660,23 @@ from mypy_boto3_waf.paginator import ListSizeConstraintSetsPaginator
 def get_list_size_constraint_sets_paginator() -> ListSizeConstraintSetsPaginator:
     return Session().client("waf").get_paginator("list_size_constraint_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListSizeConstraintSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListSizeConstraintSetsPaginator = client.get_paginator("list_size_constraint_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListSizeConstraintSetsPaginator](./paginators.md#listsizeconstraintsetspaginator)
+3. item: [:material-code-braces: ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef) 
 
 
 ### paginate
@@ -515,6 +719,23 @@ def get_list_sql_injection_match_sets_paginator() -> ListSqlInjectionMatchSetsPa
     return Session().client("waf").get_paginator("list_sql_injection_match_sets")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListSqlInjectionMatchSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListSqlInjectionMatchSetsPaginator = client.get_paginator("list_sql_injection_match_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListSqlInjectionMatchSetsPaginator](./paginators.md#listsqlinjectionmatchsetspaginator)
+3. item: [:material-code-braces: ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef) 
+
 
 ### paginate
 
@@ -555,6 +776,23 @@ from mypy_boto3_waf.paginator import ListSubscribedRuleGroupsPaginator
 def get_list_subscribed_rule_groups_paginator() -> ListSubscribedRuleGroupsPaginator:
     return Session().client("waf").get_paginator("list_subscribed_rule_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListSubscribedRuleGroupsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListSubscribedRuleGroupsPaginator = client.get_paginator("list_subscribed_rule_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListSubscribedRuleGroupsPaginator](./paginators.md#listsubscribedrulegroupspaginator)
+3. item: [:material-code-braces: ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef) 
 
 
 ### paginate
@@ -597,6 +835,23 @@ def get_list_web_acls_paginator() -> ListWebACLsPaginator:
     return Session().client("waf").get_paginator("list_web_acls")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListWebACLsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListWebACLsPaginator = client.get_paginator("list_web_acls")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListWebACLsPaginator](./paginators.md#listwebaclspaginator)
+3. item: [:material-code-braces: ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef) 
+
 
 ### paginate
 
@@ -637,6 +892,23 @@ from mypy_boto3_waf.paginator import ListXssMatchSetsPaginator
 def get_list_xss_match_sets_paginator() -> ListXssMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_xss_match_sets")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_waf.paginator import ListXssMatchSetsPaginator
+
+session = Session()
+
+client = Session().client("waf")  # (1)
+paginator: ListXssMatchSetsPaginator = client.get_paginator("list_xss_match_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [WAFClient](./client.md)
+2. paginator: [ListXssMatchSetsPaginator](./paginators.md#listxssmatchsetspaginator)
+3. item: [:material-code-braces: ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef) 
 
 
 ### paginate

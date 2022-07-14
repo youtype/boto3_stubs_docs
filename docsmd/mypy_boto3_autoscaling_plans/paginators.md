@@ -21,6 +21,23 @@ def get_describe_scaling_plan_resources_paginator() -> DescribeScalingPlanResour
     return Session().client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlanResourcesPaginator
+
+session = Session()
+
+client = Session().client("autoscaling-plans")  # (1)
+paginator: DescribeScalingPlanResourcesPaginator = client.get_paginator("describe_scaling_plan_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AutoScalingPlansClient](./client.md)
+2. paginator: [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
+3. item: [:material-code-braces: DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef) 
+
 
 ### paginate
 
@@ -64,6 +81,23 @@ from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlansPaginator
 def get_describe_scaling_plans_paginator() -> DescribeScalingPlansPaginator:
     return Session().client("autoscaling-plans").get_paginator("describe_scaling_plans")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlansPaginator
+
+session = Session()
+
+client = Session().client("autoscaling-plans")  # (1)
+paginator: DescribeScalingPlansPaginator = client.get_paginator("describe_scaling_plans")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AutoScalingPlansClient](./client.md)
+2. paginator: [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)
+3. item: [:material-code-braces: DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef) 
 
 
 ### paginate

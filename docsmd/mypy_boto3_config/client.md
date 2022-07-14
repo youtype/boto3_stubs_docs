@@ -2236,8 +2236,7 @@ parent.put_aggregation_authorization(**kwargs)
 
 ### put\_config\_rule
 
-Adds or updates an Config rule for evaluating whether your Amazon Web Services
-resources comply with your desired configurations.
+.
 
 Type annotations and code completion for `#!python boto3.client("config").put_config_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
@@ -2336,7 +2335,7 @@ parent.put_configuration_recorder(**kwargs)
 
 ### put\_conformance\_pack
 
-Creates or updates a conformance pack.
+.
 
 Type annotations and code completion for `#!python boto3.client("config").put_conformance_pack` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
@@ -2465,9 +2464,7 @@ parent.put_external_evaluation(**kwargs)
 
 ### put\_organization\_config\_rule
 
-Adds or updates organization Config rule for your entire organization evaluating
-whether your Amazon Web Services resources comply with your desired
-configurations.
+.
 
 Type annotations and code completion for `#!python boto3.client("config").put_organization_config_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)

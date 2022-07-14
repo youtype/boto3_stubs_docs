@@ -21,6 +21,23 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("servicecatalog-appregistry").get_paginator("list_applications")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog-appregistry")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppRegistryClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
 
 ### paginate
 
@@ -61,6 +78,23 @@ from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedAttrib
 def get_list_associated_attribute_groups_paginator() -> ListAssociatedAttributeGroupsPaginator:
     return Session().client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedAttributeGroupsPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog-appregistry")  # (1)
+paginator: ListAssociatedAttributeGroupsPaginator = client.get_paginator("list_associated_attribute_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppRegistryClient](./client.md)
+2. paginator: [ListAssociatedAttributeGroupsPaginator](./paginators.md#listassociatedattributegroupspaginator)
+3. item: [:material-code-braces: ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef) 
 
 
 ### paginate
@@ -104,6 +138,23 @@ def get_list_associated_resources_paginator() -> ListAssociatedResourcesPaginato
     return Session().client("servicecatalog-appregistry").get_paginator("list_associated_resources")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedResourcesPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog-appregistry")  # (1)
+paginator: ListAssociatedResourcesPaginator = client.get_paginator("list_associated_resources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppRegistryClient](./client.md)
+2. paginator: [ListAssociatedResourcesPaginator](./paginators.md#listassociatedresourcespaginator)
+3. item: [:material-code-braces: ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef) 
+
 
 ### paginate
 
@@ -146,6 +197,23 @@ def get_list_attribute_groups_paginator() -> ListAttributeGroupsPaginator:
     return Session().client("servicecatalog-appregistry").get_paginator("list_attribute_groups")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAttributeGroupsPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog-appregistry")  # (1)
+paginator: ListAttributeGroupsPaginator = client.get_paginator("list_attribute_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppRegistryClient](./client.md)
+2. paginator: [ListAttributeGroupsPaginator](./paginators.md#listattributegroupspaginator)
+3. item: [:material-code-braces: ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef) 
+
 
 ### paginate
 
@@ -186,6 +254,23 @@ from mypy_boto3_servicecatalog_appregistry.paginator import ListAttributeGroupsF
 def get_list_attribute_groups_for_application_paginator() -> ListAttributeGroupsForApplicationPaginator:
     return Session().client("servicecatalog-appregistry").get_paginator("list_attribute_groups_for_application")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_servicecatalog_appregistry.paginator import ListAttributeGroupsForApplicationPaginator
+
+session = Session()
+
+client = Session().client("servicecatalog-appregistry")  # (1)
+paginator: ListAttributeGroupsForApplicationPaginator = client.get_paginator("list_attribute_groups_for_application")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AppRegistryClient](./client.md)
+2. paginator: [ListAttributeGroupsForApplicationPaginator](./paginators.md#listattributegroupsforapplicationpaginator)
+3. item: [:material-code-braces: ListAttributeGroupsForApplicationResponseTypeDef](./type_defs.md#listattributegroupsforapplicationresponsetypedef) 
 
 
 ### paginate

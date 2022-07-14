@@ -21,6 +21,23 @@ def get_list_contact_channels_paginator() -> ListContactChannelsPaginator:
     return Session().client("ssm-contacts").get_paginator("list_contact_channels")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator
+
+session = Session()
+
+client = Session().client("ssm-contacts")  # (1)
+paginator: ListContactChannelsPaginator = client.get_paginator("list_contact_channels")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMContactsClient](./client.md)
+2. paginator: [ListContactChannelsPaginator](./paginators.md#listcontactchannelspaginator)
+3. item: [:material-code-braces: ListContactChannelsResultTypeDef](./type_defs.md#listcontactchannelsresulttypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_ssm_contacts.paginator import ListContactsPaginator
 def get_list_contacts_paginator() -> ListContactsPaginator:
     return Session().client("ssm-contacts").get_paginator("list_contacts")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_contacts.paginator import ListContactsPaginator
+
+session = Session()
+
+client = Session().client("ssm-contacts")  # (1)
+paginator: ListContactsPaginator = client.get_paginator("list_contacts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMContactsClient](./client.md)
+2. paginator: [ListContactsPaginator](./paginators.md#listcontactspaginator)
+3. item: [:material-code-braces: ListContactsResultTypeDef](./type_defs.md#listcontactsresulttypedef) 
 
 
 ### paginate
@@ -107,6 +141,23 @@ def get_list_engagements_paginator() -> ListEngagementsPaginator:
     return Session().client("ssm-contacts").get_paginator("list_engagements")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_contacts.paginator import ListEngagementsPaginator
+
+session = Session()
+
+client = Session().client("ssm-contacts")  # (1)
+paginator: ListEngagementsPaginator = client.get_paginator("list_engagements")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMContactsClient](./client.md)
+2. paginator: [ListEngagementsPaginator](./paginators.md#listengagementspaginator)
+3. item: [:material-code-braces: ListEngagementsResultTypeDef](./type_defs.md#listengagementsresulttypedef) 
+
 
 ### paginate
 
@@ -151,6 +202,23 @@ def get_list_page_receipts_paginator() -> ListPageReceiptsPaginator:
     return Session().client("ssm-contacts").get_paginator("list_page_receipts")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_contacts.paginator import ListPageReceiptsPaginator
+
+session = Session()
+
+client = Session().client("ssm-contacts")  # (1)
+paginator: ListPageReceiptsPaginator = client.get_paginator("list_page_receipts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMContactsClient](./client.md)
+2. paginator: [ListPageReceiptsPaginator](./paginators.md#listpagereceiptspaginator)
+3. item: [:material-code-braces: ListPageReceiptsResultTypeDef](./type_defs.md#listpagereceiptsresulttypedef) 
+
 
 ### paginate
 
@@ -193,6 +261,23 @@ def get_list_pages_by_contact_paginator() -> ListPagesByContactPaginator:
     return Session().client("ssm-contacts").get_paginator("list_pages_by_contact")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_contacts.paginator import ListPagesByContactPaginator
+
+session = Session()
+
+client = Session().client("ssm-contacts")  # (1)
+paginator: ListPagesByContactPaginator = client.get_paginator("list_pages_by_contact")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMContactsClient](./client.md)
+2. paginator: [ListPagesByContactPaginator](./paginators.md#listpagesbycontactpaginator)
+3. item: [:material-code-braces: ListPagesByContactResultTypeDef](./type_defs.md#listpagesbycontactresulttypedef) 
+
 
 ### paginate
 
@@ -234,6 +319,23 @@ from mypy_boto3_ssm_contacts.paginator import ListPagesByEngagementPaginator
 def get_list_pages_by_engagement_paginator() -> ListPagesByEngagementPaginator:
     return Session().client("ssm-contacts").get_paginator("list_pages_by_engagement")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_contacts.paginator import ListPagesByEngagementPaginator
+
+session = Session()
+
+client = Session().client("ssm-contacts")  # (1)
+paginator: ListPagesByEngagementPaginator = client.get_paginator("list_pages_by_engagement")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMContactsClient](./client.md)
+2. paginator: [ListPagesByEngagementPaginator](./paginators.md#listpagesbyengagementpaginator)
+3. item: [:material-code-braces: ListPagesByEngagementResultTypeDef](./type_defs.md#listpagesbyengagementresulttypedef) 
 
 
 ### paginate

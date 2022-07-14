@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter
 
-def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter:
-    return Session().client("route53").get_waiter("resource_record_sets_changed")
+
+session = Session()
+
+client = session.client("route53")  # (1)
+waiter: ResourceRecordSetsChangedWaiter = client.get_waiter("resource_record_sets_changed")  # (2)
+await waiter.wait()
 ```
+
+1. client: [Route53Client](./client.md)
+2. waiter: [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
 
 
 ### wait

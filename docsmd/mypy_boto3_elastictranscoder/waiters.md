@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_elastictranscoder.waiter import JobCompleteWaiter
 
-def get_job_complete_waiter() -> JobCompleteWaiter:
-    return Session().client("elastictranscoder").get_waiter("job_complete")
+
+session = Session()
+
+client = session.client("elastictranscoder")  # (1)
+waiter: JobCompleteWaiter = client.get_waiter("job_complete")  # (2)
+await waiter.wait()
 ```
+
+1. client: [ElasticTranscoderClient](./client.md)
+2. waiter: [JobCompleteWaiter](./waiters.md#jobcompletewaiter)
 
 
 ### wait

@@ -17,9 +17,16 @@ from boto3.session import Session
 
 from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter
 
-def get_resource_request_success_waiter() -> ResourceRequestSuccessWaiter:
-    return Session().client("cloudcontrol").get_waiter("resource_request_success")
+
+session = Session()
+
+client = session.client("cloudcontrol")  # (1)
+waiter: ResourceRequestSuccessWaiter = client.get_waiter("resource_request_success")  # (2)
+await waiter.wait()
 ```
+
+1. client: [CloudControlApiClient](./client.md)
+2. waiter: [ResourceRequestSuccessWaiter](./waiters.md#resourcerequestsuccesswaiter)
 
 
 ### wait

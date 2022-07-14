@@ -21,6 +21,23 @@ def get_get_work_units_paginator() -> GetWorkUnitsPaginator:
     return Session().client("lakeformation").get_paginator("get_work_units")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator
+
+session = Session()
+
+client = Session().client("lakeformation")  # (1)
+paginator: GetWorkUnitsPaginator = client.get_paginator("get_work_units")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LakeFormationClient](./client.md)
+2. paginator: [GetWorkUnitsPaginator](./paginators.md#getworkunitspaginator)
+3. item: [:material-code-braces: GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef) 
+
 
 ### paginate
 
@@ -62,6 +79,23 @@ from mypy_boto3_lakeformation.paginator import ListDataCellsFilterPaginator
 def get_list_data_cells_filter_paginator() -> ListDataCellsFilterPaginator:
     return Session().client("lakeformation").get_paginator("list_data_cells_filter")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lakeformation.paginator import ListDataCellsFilterPaginator
+
+session = Session()
+
+client = Session().client("lakeformation")  # (1)
+paginator: ListDataCellsFilterPaginator = client.get_paginator("list_data_cells_filter")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LakeFormationClient](./client.md)
+2. paginator: [ListDataCellsFilterPaginator](./paginators.md#listdatacellsfilterpaginator)
+3. item: [:material-code-braces: ListDataCellsFilterResponseTypeDef](./type_defs.md#listdatacellsfilterresponsetypedef) 
 
 
 ### paginate
@@ -105,6 +139,23 @@ from mypy_boto3_lakeformation.paginator import ListLFTagsPaginator
 def get_list_lf_tags_paginator() -> ListLFTagsPaginator:
     return Session().client("lakeformation").get_paginator("list_lf_tags")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lakeformation.paginator import ListLFTagsPaginator
+
+session = Session()
+
+client = Session().client("lakeformation")  # (1)
+paginator: ListLFTagsPaginator = client.get_paginator("list_lf_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LakeFormationClient](./client.md)
+2. paginator: [ListLFTagsPaginator](./paginators.md#listlftagspaginator)
+3. item: [:material-code-braces: ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef) 
 
 
 ### paginate
@@ -150,6 +201,23 @@ def get_search_databases_by_lf_tags_paginator() -> SearchDatabasesByLFTagsPagina
     return Session().client("lakeformation").get_paginator("search_databases_by_lf_tags")
 ```
 
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lakeformation.paginator import SearchDatabasesByLFTagsPaginator
+
+session = Session()
+
+client = Session().client("lakeformation")  # (1)
+paginator: SearchDatabasesByLFTagsPaginator = client.get_paginator("search_databases_by_lf_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LakeFormationClient](./client.md)
+2. paginator: [SearchDatabasesByLFTagsPaginator](./paginators.md#searchdatabasesbylftagspaginator)
+3. item: [:material-code-braces: SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef) 
+
 
 ### paginate
 
@@ -193,6 +261,23 @@ from mypy_boto3_lakeformation.paginator import SearchTablesByLFTagsPaginator
 def get_search_tables_by_lf_tags_paginator() -> SearchTablesByLFTagsPaginator:
     return Session().client("lakeformation").get_paginator("search_tables_by_lf_tags")
 ```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lakeformation.paginator import SearchTablesByLFTagsPaginator
+
+session = Session()
+
+client = Session().client("lakeformation")  # (1)
+paginator: SearchTablesByLFTagsPaginator = client.get_paginator("search_tables_by_lf_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LakeFormationClient](./client.md)
+2. paginator: [SearchTablesByLFTagsPaginator](./paginators.md#searchtablesbylftagspaginator)
+3. item: [:material-code-braces: SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef) 
 
 
 ### paginate
