@@ -9,12 +9,14 @@
 
 ## How to install
 
+
 ### VSCode extension
 
 Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WAFV2`.
+
 
 ### From PyPI with pip
 
@@ -100,6 +102,7 @@ def get_value() -> ActionValueType:
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [ResponseContentTypeType](./literals.md#responsecontenttypetype)
 - [ScopeType](./literals.md#scopetype)
+- [SensitivityLevelType](./literals.md#sensitivityleveltype)
 - [TextTransformationTypeType](./literals.md#texttransformationtypetype)
 - [WAFV2ServiceName](./literals.md#wafv2servicename)
 - [ServiceName](./literals.md#servicename)

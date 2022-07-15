@@ -280,6 +280,34 @@ ListProjectsPaginatorName = Literal[
     "list_projects",
 ]
 ```
+## ListSegmentReferencesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_evidently.literals import ListSegmentReferencesPaginatorName
+
+def get_value() -> ListSegmentReferencesPaginatorName:
+    return "list_segment_references"
+```
+
+```python title="Definition"
+ListSegmentReferencesPaginatorName = Literal[
+    "list_segment_references",
+]
+```
+## ListSegmentsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_evidently.literals import ListSegmentsPaginatorName
+
+def get_value() -> ListSegmentsPaginatorName:
+    return "list_segments"
+```
+
+```python title="Definition"
+ListSegmentsPaginatorName = Literal[
+    "list_segments",
+]
+```
 ## ProjectStatusType
 
 ```python title="Usage Example"
@@ -293,6 +321,21 @@ def get_value() -> ProjectStatusType:
 ProjectStatusType = Literal[
     "AVAILABLE",
     "UPDATING",
+]
+```
+## SegmentReferenceResourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_evidently.literals import SegmentReferenceResourceTypeType
+
+def get_value() -> SegmentReferenceResourceTypeType:
+    return "EXPERIMENT"
+```
+
+```python title="Definition"
+SegmentReferenceResourceTypeType = Literal[
+    "EXPERIMENT",
+    "LAUNCH",
 ]
 ```
 ## VariationValueTypeType
@@ -687,6 +730,8 @@ PaginatorName = Literal[
     "list_features",
     "list_launches",
     "list_projects",
+    "list_segment_references",
+    "list_segments",
 ]
 ```
 ## RegionName

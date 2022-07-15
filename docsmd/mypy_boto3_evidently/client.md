@@ -138,6 +138,7 @@ def create_experiment(
     onlineAbConfig: OnlineAbConfigTypeDef = ...,  # (3)
     randomizationSalt: str = ...,
     samplingRate: int = ...,
+    segment: str = ...,
     tags: Mapping[str, str] = ...,
 ) -> CreateExperimentResponseTypeDef:  # (4)
     ...
@@ -277,6 +278,39 @@ parent.create_project(**kwargs)
 
 1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
+### create\_segment
+
+Use this operation to define a *segment* of your audience.
+
+Type annotations and code completion for `#!python boto3.client("evidently").create_segment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_segment)
+
+```python title="Method definition"
+def create_segment(
+    self,
+    *,
+    name: str,
+    pattern: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateSegmentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateSegmentResponseTypeDef](./type_defs.md#createsegmentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateSegmentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "pattern": ...,
+}
+
+parent.create_segment(**kwargs)
+```
+
+1. See [:material-code-braces: CreateSegmentRequestRequestTypeDef](./type_defs.md#createsegmentrequestrequesttypedef) 
+
 ### delete\_experiment
 
 Deletes an Evidently experiment.
@@ -394,6 +428,34 @@ parent.delete_project(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
+
+### delete\_segment
+
+Deletes a segment.
+
+Type annotations and code completion for `#!python boto3.client("evidently").delete_segment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_segment)
+
+```python title="Method definition"
+def delete_segment(
+    self,
+    *,
+    segment: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteSegmentRequestRequestTypeDef = {  # (1)
+    "segment": ...,
+}
+
+parent.delete_segment(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteSegmentRequestRequestTypeDef](./type_defs.md#deletesegmentrequestrequesttypedef) 
 
 ### evaluate\_feature
 
@@ -614,6 +676,35 @@ parent.get_project(**kwargs)
 
 1. See [:material-code-braces: GetProjectRequestRequestTypeDef](./type_defs.md#getprojectrequestrequesttypedef) 
 
+### get\_segment
+
+Returns information about the specified segment.
+
+Type annotations and code completion for `#!python boto3.client("evidently").get_segment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_segment)
+
+```python title="Method definition"
+def get_segment(
+    self,
+    *,
+    segment: str,
+) -> GetSegmentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetSegmentResponseTypeDef](./type_defs.md#getsegmentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSegmentRequestRequestTypeDef = {  # (1)
+    "segment": ...,
+}
+
+parent.get_segment(**kwargs)
+```
+
+1. See [:material-code-braces: GetSegmentRequestRequestTypeDef](./type_defs.md#getsegmentrequestrequesttypedef) 
+
 ### list\_experiments
 
 Returns configuration details about all the experiments in the specified
@@ -742,6 +833,72 @@ parent.list_projects(**kwargs)
 ```
 
 1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
+
+### list\_segment\_references
+
+Use this operation to find which experiments or launches are using a specified
+segment.
+
+Type annotations and code completion for `#!python boto3.client("evidently").list_segment_references` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_segment_references)
+
+```python title="Method definition"
+def list_segment_references(
+    self,
+    *,
+    segment: str,
+    type: SegmentReferenceResourceTypeType,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSegmentReferencesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: SegmentReferenceResourceTypeType](./literals.md#segmentreferenceresourcetypetype) 
+2. See [:material-code-braces: ListSegmentReferencesResponseTypeDef](./type_defs.md#listsegmentreferencesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSegmentReferencesRequestRequestTypeDef = {  # (1)
+    "segment": ...,
+    "type": ...,
+}
+
+parent.list_segment_references(**kwargs)
+```
+
+1. See [:material-code-braces: ListSegmentReferencesRequestRequestTypeDef](./type_defs.md#listsegmentreferencesrequestrequesttypedef) 
+
+### list\_segments
+
+Returns a list of audience segments that you have created in your account in
+this Region.
+
+Type annotations and code completion for `#!python boto3.client("evidently").list_segments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_segments)
+
+```python title="Method definition"
+def list_segments(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSegmentsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSegmentsResponseTypeDef](./type_defs.md#listsegmentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSegmentsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
+
+parent.list_segments(**kwargs)
+```
+
+1. See [:material-code-braces: ListSegmentsRequestRequestTypeDef](./type_defs.md#listsegmentsrequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 
@@ -967,6 +1124,38 @@ parent.tag_resource(**kwargs)
 
 1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
+### test\_segment\_pattern
+
+Use this operation to test a rules pattern that you plan to use to create an
+audience segment.
+
+Type annotations and code completion for `#!python boto3.client("evidently").test_segment_pattern` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.test_segment_pattern)
+
+```python title="Method definition"
+def test_segment_pattern(
+    self,
+    *,
+    pattern: str,
+    payload: str,
+) -> TestSegmentPatternResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: TestSegmentPatternResponseTypeDef](./type_defs.md#testsegmentpatternresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TestSegmentPatternRequestRequestTypeDef = {  # (1)
+    "pattern": ...,
+    "payload": ...,
+}
+
+parent.test_segment_pattern(**kwargs)
+```
+
+1. See [:material-code-braces: TestSegmentPatternRequestRequestTypeDef](./type_defs.md#testsegmentpatternrequestrequesttypedef) 
+
 ### untag\_resource
 
 Removes one or more tags from the specified resource.
@@ -1014,7 +1203,9 @@ def update_experiment(
     metricGoals: Sequence[MetricGoalConfigTypeDef] = ...,  # (1)
     onlineAbConfig: OnlineAbConfigTypeDef = ...,  # (2)
     randomizationSalt: str = ...,
+    removeSegment: bool = ...,
     samplingRate: int = ...,
+    segment: str = ...,
     treatments: Sequence[TreatmentConfigTypeDef] = ...,  # (3)
 ) -> UpdateExperimentResponseTypeDef:  # (4)
     ...
@@ -1188,6 +1379,8 @@ Type annotations and code completion for `#!python boto3.client("evidently").get
 - `client.get_paginator("list_features")` -> [ListFeaturesPaginator](./paginators.md#listfeaturespaginator)
 - `client.get_paginator("list_launches")` -> [ListLaunchesPaginator](./paginators.md#listlaunchespaginator)
 - `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_segment_references")` -> [ListSegmentReferencesPaginator](./paginators.md#listsegmentreferencespaginator)
+- `client.get_paginator("list_segments")` -> [ListSegmentsPaginator](./paginators.md#listsegmentspaginator)
 
 
 

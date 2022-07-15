@@ -546,11 +546,12 @@ ReplicationConfigurationDataPlaneRoutingType = Literal[
 from mypy_boto3_drs.literals import ReplicationConfigurationDefaultLargeStagingDiskTypeType
 
 def get_value() -> ReplicationConfigurationDefaultLargeStagingDiskTypeType:
-    return "GP2"
+    return "AUTO"
 ```
 
 ```python title="Definition"
 ReplicationConfigurationDefaultLargeStagingDiskTypeType = Literal[
+    "AUTO",
     "GP2",
     "GP3",
     "ST1",

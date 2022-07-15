@@ -9,12 +9,14 @@
 
 ## How to install
 
+
 ### VSCode extension
 
 Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudWatchEvidently`.
+
 
 ### From PyPI with pip
 
@@ -79,6 +81,8 @@ def get_list_experiments_paginator() -> ListExperimentsPaginator:
 - [ListFeaturesPaginator](./paginators.md#listfeaturespaginator)
 - [ListLaunchesPaginator](./paginators.md#listlaunchespaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- [ListSegmentReferencesPaginator](./paginators.md#listsegmentreferencespaginator)
+- [ListSegmentsPaginator](./paginators.md#listsegmentspaginator)
 
 
 
@@ -117,7 +121,10 @@ def get_value() -> ChangeDirectionEnumType:
 - [ListFeaturesPaginatorName](./literals.md#listfeaturespaginatorname)
 - [ListLaunchesPaginatorName](./literals.md#listlaunchespaginatorname)
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
+- [ListSegmentReferencesPaginatorName](./literals.md#listsegmentreferencespaginatorname)
+- [ListSegmentsPaginatorName](./literals.md#listsegmentspaginatorname)
 - [ProjectStatusType](./literals.md#projectstatustype)
+- [SegmentReferenceResourceTypeType](./literals.md#segmentreferenceresourcetypetype)
 - [VariationValueTypeType](./literals.md#variationvaluetypetype)
 - [CloudWatchEvidentlyServiceName](./literals.md#cloudwatchevidentlyservicename)
 - [ServiceName](./literals.md#servicename)
@@ -149,10 +156,13 @@ def get_value() -> EvaluationRequestTypeDef:
 - [OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef)
 - [TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef)
 - [LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef)
+- [CreateSegmentRequestRequestTypeDef](./type_defs.md#createsegmentrequestrequesttypedef)
+- [SegmentTypeDef](./type_defs.md#segmenttypedef)
 - [DeleteExperimentRequestRequestTypeDef](./type_defs.md#deleteexperimentrequestrequesttypedef)
 - [DeleteFeatureRequestRequestTypeDef](./type_defs.md#deletefeaturerequestrequesttypedef)
 - [DeleteLaunchRequestRequestTypeDef](./type_defs.md#deletelaunchrequestrequesttypedef)
 - [DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef)
+- [DeleteSegmentRequestRequestTypeDef](./type_defs.md#deletesegmentrequestrequesttypedef)
 - [EvaluateFeatureRequestRequestTypeDef](./type_defs.md#evaluatefeaturerequestrequesttypedef)
 - [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
 - [EvaluationRuleTypeDef](./type_defs.md#evaluationruletypedef)
@@ -168,6 +178,7 @@ def get_value() -> EvaluationRequestTypeDef:
 - [GetFeatureRequestRequestTypeDef](./type_defs.md#getfeaturerequestrequesttypedef)
 - [GetLaunchRequestRequestTypeDef](./type_defs.md#getlaunchrequestrequesttypedef)
 - [GetProjectRequestRequestTypeDef](./type_defs.md#getprojectrequestrequesttypedef)
+- [GetSegmentRequestRequestTypeDef](./type_defs.md#getsegmentrequestrequesttypedef)
 - [LaunchExecutionTypeDef](./type_defs.md#launchexecutiontypedef)
 - [LaunchGroupTypeDef](./type_defs.md#launchgrouptypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -176,19 +187,22 @@ def get_value() -> EvaluationRequestTypeDef:
 - [ListLaunchesRequestRequestTypeDef](./type_defs.md#listlaunchesrequestrequesttypedef)
 - [ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef)
 - [ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)
+- [ListSegmentReferencesRequestRequestTypeDef](./type_defs.md#listsegmentreferencesrequestrequesttypedef)
+- [RefResourceTypeDef](./type_defs.md#refresourcetypedef)
+- [ListSegmentsRequestRequestTypeDef](./type_defs.md#listsegmentsrequestrequesttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [MetricDefinitionConfigTypeDef](./type_defs.md#metricdefinitionconfigtypedef)
 - [MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)
 - [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
 - [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - [PutProjectEventsResultEntryTypeDef](./type_defs.md#putprojecteventsresultentrytypedef)
-- [ScheduledSplitConfigTypeDef](./type_defs.md#scheduledsplitconfigtypedef)
-- [ScheduledSplitTypeDef](./type_defs.md#scheduledsplittypedef)
+- [SegmentOverrideTypeDef](./type_defs.md#segmentoverridetypedef)
 - [StartExperimentRequestRequestTypeDef](./type_defs.md#startexperimentrequestrequesttypedef)
 - [StartLaunchRequestRequestTypeDef](./type_defs.md#startlaunchrequestrequesttypedef)
 - [StopExperimentRequestRequestTypeDef](./type_defs.md#stopexperimentrequestrequesttypedef)
 - [StopLaunchRequestRequestTypeDef](./type_defs.md#stoplaunchrequestrequesttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [TestSegmentPatternRequestRequestTypeDef](./type_defs.md#testsegmentpatternrequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef)
 - [BatchEvaluateFeatureRequestRequestTypeDef](./type_defs.md#batchevaluatefeaturerequestrequesttypedef)
@@ -196,6 +210,10 @@ def get_value() -> EvaluationRequestTypeDef:
 - [StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef)
 - [StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef)
 - [StopLaunchResponseTypeDef](./type_defs.md#stoplaunchresponsetypedef)
+- [TestSegmentPatternResponseTypeDef](./type_defs.md#testsegmentpatternresponsetypedef)
+- [CreateSegmentResponseTypeDef](./type_defs.md#createsegmentresponsetypedef)
+- [GetSegmentResponseTypeDef](./type_defs.md#getsegmentresponsetypedef)
+- [ListSegmentsResponseTypeDef](./type_defs.md#listsegmentsresponsetypedef)
 - [EvaluateFeatureResponseTypeDef](./type_defs.md#evaluatefeatureresponsetypedef)
 - [EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)
 - [VariationConfigTypeDef](./type_defs.md#variationconfigtypedef)
@@ -207,7 +225,10 @@ def get_value() -> EvaluationRequestTypeDef:
 - [ListFeaturesRequestListFeaturesPaginateTypeDef](./type_defs.md#listfeaturesrequestlistfeaturespaginatetypedef)
 - [ListLaunchesRequestListLaunchesPaginateTypeDef](./type_defs.md#listlaunchesrequestlistlaunchespaginatetypedef)
 - [ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef)
+- [ListSegmentReferencesRequestListSegmentReferencesPaginateTypeDef](./type_defs.md#listsegmentreferencesrequestlistsegmentreferencespaginatetypedef)
+- [ListSegmentsRequestListSegmentsPaginateTypeDef](./type_defs.md#listsegmentsrequestlistsegmentspaginatetypedef)
 - [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)
+- [ListSegmentReferencesResponseTypeDef](./type_defs.md#listsegmentreferencesresponsetypedef)
 - [MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef)
 - [MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef)
 - [MetricGoalTypeDef](./type_defs.md#metricgoaltypedef)
@@ -216,8 +237,8 @@ def get_value() -> EvaluationRequestTypeDef:
 - [UpdateProjectDataDeliveryRequestRequestTypeDef](./type_defs.md#updateprojectdatadeliveryrequestrequesttypedef)
 - [ProjectDataDeliveryTypeDef](./type_defs.md#projectdatadeliverytypedef)
 - [PutProjectEventsResponseTypeDef](./type_defs.md#putprojecteventsresponsetypedef)
-- [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
-- [ScheduledSplitsLaunchDefinitionTypeDef](./type_defs.md#scheduledsplitslaunchdefinitiontypedef)
+- [ScheduledSplitConfigTypeDef](./type_defs.md#scheduledsplitconfigtypedef)
+- [ScheduledSplitTypeDef](./type_defs.md#scheduledsplittypedef)
 - [BatchEvaluateFeatureResponseTypeDef](./type_defs.md#batchevaluatefeatureresponsetypedef)
 - [CreateFeatureRequestRequestTypeDef](./type_defs.md#createfeaturerequestrequesttypedef)
 - [UpdateFeatureRequestRequestTypeDef](./type_defs.md#updatefeaturerequestrequesttypedef)
@@ -228,9 +249,8 @@ def get_value() -> EvaluationRequestTypeDef:
 - [ExperimentTypeDef](./type_defs.md#experimenttypedef)
 - [CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef)
 - [ProjectTypeDef](./type_defs.md#projecttypedef)
-- [CreateLaunchRequestRequestTypeDef](./type_defs.md#createlaunchrequestrequesttypedef)
-- [UpdateLaunchRequestRequestTypeDef](./type_defs.md#updatelaunchrequestrequesttypedef)
-- [LaunchTypeDef](./type_defs.md#launchtypedef)
+- [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
+- [ScheduledSplitsLaunchDefinitionTypeDef](./type_defs.md#scheduledsplitslaunchdefinitiontypedef)
 - [CreateFeatureResponseTypeDef](./type_defs.md#createfeatureresponsetypedef)
 - [GetFeatureResponseTypeDef](./type_defs.md#getfeatureresponsetypedef)
 - [UpdateFeatureResponseTypeDef](./type_defs.md#updatefeatureresponsetypedef)
@@ -242,6 +262,9 @@ def get_value() -> EvaluationRequestTypeDef:
 - [GetProjectResponseTypeDef](./type_defs.md#getprojectresponsetypedef)
 - [UpdateProjectDataDeliveryResponseTypeDef](./type_defs.md#updateprojectdatadeliveryresponsetypedef)
 - [UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef)
+- [CreateLaunchRequestRequestTypeDef](./type_defs.md#createlaunchrequestrequesttypedef)
+- [UpdateLaunchRequestRequestTypeDef](./type_defs.md#updatelaunchrequestrequesttypedef)
+- [LaunchTypeDef](./type_defs.md#launchtypedef)
 - [CreateLaunchResponseTypeDef](./type_defs.md#createlaunchresponsetypedef)
 - [GetLaunchResponseTypeDef](./type_defs.md#getlaunchresponsetypedef)
 - [ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef)

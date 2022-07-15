@@ -141,6 +141,54 @@ class LaunchGroupConfigTypeDef(TypedDict):
     description: NotRequired[str],
 ```
 
+## CreateSegmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import CreateSegmentRequestRequestTypeDef
+
+def get_value() -> CreateSegmentRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "pattern": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSegmentRequestRequestTypeDef(TypedDict):
+    name: str,
+    pattern: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## SegmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import SegmentTypeDef
+
+def get_value() -> SegmentTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "pattern": ...,
+    }
+```
+
+```python title="Definition"
+class SegmentTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    lastUpdatedTime: datetime,
+    name: str,
+    pattern: str,
+    description: NotRequired[str],
+    experimentCount: NotRequired[int],
+    launchCount: NotRequired[int],
+    tags: NotRequired[Dict[str, str]],
+```
+
 ## DeleteExperimentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -209,6 +257,22 @@ def get_value() -> DeleteProjectRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteProjectRequestRequestTypeDef(TypedDict):
     project: str,
+```
+
+## DeleteSegmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import DeleteSegmentRequestRequestTypeDef
+
+def get_value() -> DeleteSegmentRequestRequestTypeDef:
+    return {
+        "segment": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteSegmentRequestRequestTypeDef(TypedDict):
+    segment: str,
 ```
 
 ## EvaluateFeatureRequestRequestTypeDef
@@ -498,6 +562,22 @@ class GetProjectRequestRequestTypeDef(TypedDict):
     project: str,
 ```
 
+## GetSegmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import GetSegmentRequestRequestTypeDef
+
+def get_value() -> GetSegmentRequestRequestTypeDef:
+    return {
+        "segment": ...,
+    }
+```
+
+```python title="Definition"
+class GetSegmentRequestRequestTypeDef(TypedDict):
+    segment: str,
+```
+
 ## LaunchExecutionTypeDef
 
 ```python title="Usage Example"
@@ -659,6 +739,67 @@ class ProjectSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
+## ListSegmentReferencesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListSegmentReferencesRequestRequestTypeDef
+
+def get_value() -> ListSegmentReferencesRequestRequestTypeDef:
+    return {
+        "segment": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class ListSegmentReferencesRequestRequestTypeDef(TypedDict):
+    segment: str,
+    type: SegmentReferenceResourceTypeType,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SegmentReferenceResourceTypeType](./literals.md#segmentreferenceresourcetypetype) 
+## RefResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import RefResourceTypeDef
+
+def get_value() -> RefResourceTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class RefResourceTypeDef(TypedDict):
+    name: str,
+    type: str,
+    arn: NotRequired[str],
+    endTime: NotRequired[str],
+    lastUpdatedOn: NotRequired[str],
+    startTime: NotRequired[str],
+    status: NotRequired[str],
+```
+
+## ListSegmentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListSegmentsRequestRequestTypeDef
+
+def get_value() -> ListSegmentsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListSegmentsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -769,39 +910,24 @@ class PutProjectEventsResultEntryTypeDef(TypedDict):
     eventId: NotRequired[str],
 ```
 
-## ScheduledSplitConfigTypeDef
+## SegmentOverrideTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import ScheduledSplitConfigTypeDef
+from mypy_boto3_evidently.type_defs import SegmentOverrideTypeDef
 
-def get_value() -> ScheduledSplitConfigTypeDef:
+def get_value() -> SegmentOverrideTypeDef:
     return {
-        "groupWeights": ...,
-        "startTime": ...,
+        "evaluationOrder": ...,
+        "segment": ...,
+        "weights": ...,
     }
 ```
 
 ```python title="Definition"
-class ScheduledSplitConfigTypeDef(TypedDict):
-    groupWeights: Mapping[str, int],
-    startTime: Union[datetime, str],
-```
-
-## ScheduledSplitTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import ScheduledSplitTypeDef
-
-def get_value() -> ScheduledSplitTypeDef:
-    return {
-        "startTime": ...,
-    }
-```
-
-```python title="Definition"
-class ScheduledSplitTypeDef(TypedDict):
-    startTime: datetime,
-    groupWeights: NotRequired[Dict[str, int]],
+class SegmentOverrideTypeDef(TypedDict):
+    evaluationOrder: int,
+    segment: str,
+    weights: Mapping[str, int],
 ```
 
 ## StartExperimentRequestRequestTypeDef
@@ -900,6 +1026,24 @@ def get_value() -> TagResourceRequestRequestTypeDef:
 class TagResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
     tags: Mapping[str, str],
+```
+
+## TestSegmentPatternRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import TestSegmentPatternRequestRequestTypeDef
+
+def get_value() -> TestSegmentPatternRequestRequestTypeDef:
+    return {
+        "pattern": ...,
+        "payload": ...,
+    }
+```
+
+```python title="Definition"
+class TestSegmentPatternRequestRequestTypeDef(TypedDict):
+    pattern: str,
+    payload: str,
 ```
 
 ## UntagResourceRequestRequestTypeDef
@@ -1032,6 +1176,87 @@ class StopLaunchResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestSegmentPatternResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import TestSegmentPatternResponseTypeDef
+
+def get_value() -> TestSegmentPatternResponseTypeDef:
+    return {
+        "match": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TestSegmentPatternResponseTypeDef(TypedDict):
+    match: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSegmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import CreateSegmentResponseTypeDef
+
+def get_value() -> CreateSegmentResponseTypeDef:
+    return {
+        "segment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSegmentResponseTypeDef(TypedDict):
+    segment: SegmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSegmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import GetSegmentResponseTypeDef
+
+def get_value() -> GetSegmentResponseTypeDef:
+    return {
+        "segment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSegmentResponseTypeDef(TypedDict):
+    segment: SegmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSegmentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListSegmentsResponseTypeDef
+
+def get_value() -> ListSegmentsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "segments": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSegmentsResponseTypeDef(TypedDict):
+    nextToken: str,
+    segments: List[SegmentTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EvaluateFeatureResponseTypeDef
 
 ```python title="Usage Example"
@@ -1273,6 +1498,44 @@ class ListProjectsRequestListProjectsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSegmentReferencesRequestListSegmentReferencesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListSegmentReferencesRequestListSegmentReferencesPaginateTypeDef
+
+def get_value() -> ListSegmentReferencesRequestListSegmentReferencesPaginateTypeDef:
+    return {
+        "segment": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class ListSegmentReferencesRequestListSegmentReferencesPaginateTypeDef(TypedDict):
+    segment: str,
+    type: SegmentReferenceResourceTypeType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SegmentReferenceResourceTypeType](./literals.md#segmentreferenceresourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSegmentsRequestListSegmentsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListSegmentsRequestListSegmentsPaginateTypeDef
+
+def get_value() -> ListSegmentsRequestListSegmentsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSegmentsRequestListSegmentsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1294,6 +1557,28 @@ class ListProjectsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSegmentReferencesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListSegmentReferencesResponseTypeDef
+
+def get_value() -> ListSegmentReferencesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "referencedBy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSegmentReferencesResponseTypeDef(TypedDict):
+    nextToken: str,
+    referencedBy: List[RefResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RefResourceTypeDef](./type_defs.md#refresourcetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricGoalConfigTypeDef
 
@@ -1447,40 +1732,45 @@ class PutProjectEventsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PutProjectEventsResultEntryTypeDef](./type_defs.md#putprojecteventsresultentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ScheduledSplitsLaunchConfigTypeDef
+## ScheduledSplitConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import ScheduledSplitsLaunchConfigTypeDef
+from mypy_boto3_evidently.type_defs import ScheduledSplitConfigTypeDef
 
-def get_value() -> ScheduledSplitsLaunchConfigTypeDef:
+def get_value() -> ScheduledSplitConfigTypeDef:
     return {
-        "steps": ...,
+        "groupWeights": ...,
+        "startTime": ...,
     }
 ```
 
 ```python title="Definition"
-class ScheduledSplitsLaunchConfigTypeDef(TypedDict):
-    steps: Sequence[ScheduledSplitConfigTypeDef],  # (1)
+class ScheduledSplitConfigTypeDef(TypedDict):
+    groupWeights: Mapping[str, int],
+    startTime: Union[datetime, str],
+    segmentOverrides: NotRequired[Sequence[SegmentOverrideTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: ScheduledSplitConfigTypeDef](./type_defs.md#scheduledsplitconfigtypedef) 
-## ScheduledSplitsLaunchDefinitionTypeDef
+1. See [:material-code-braces: SegmentOverrideTypeDef](./type_defs.md#segmentoverridetypedef) 
+## ScheduledSplitTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import ScheduledSplitsLaunchDefinitionTypeDef
+from mypy_boto3_evidently.type_defs import ScheduledSplitTypeDef
 
-def get_value() -> ScheduledSplitsLaunchDefinitionTypeDef:
+def get_value() -> ScheduledSplitTypeDef:
     return {
-        "steps": ...,
+        "startTime": ...,
     }
 ```
 
 ```python title="Definition"
-class ScheduledSplitsLaunchDefinitionTypeDef(TypedDict):
-    steps: NotRequired[List[ScheduledSplitTypeDef]],  # (1)
+class ScheduledSplitTypeDef(TypedDict):
+    startTime: datetime,
+    groupWeights: NotRequired[Dict[str, int]],
+    segmentOverrides: NotRequired[List[SegmentOverrideTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: ScheduledSplitTypeDef](./type_defs.md#scheduledsplittypedef) 
+1. See [:material-code-braces: SegmentOverrideTypeDef](./type_defs.md#segmentoverridetypedef) 
 ## BatchEvaluateFeatureResponseTypeDef
 
 ```python title="Usage Example"
@@ -1641,6 +1931,7 @@ class CreateExperimentRequestRequestTypeDef(TypedDict):
     onlineAbConfig: NotRequired[OnlineAbConfigTypeDef],  # (3)
     randomizationSalt: NotRequired[str],
     samplingRate: NotRequired[int],
+    segment: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
 ```
 
@@ -1667,7 +1958,9 @@ class UpdateExperimentRequestRequestTypeDef(TypedDict):
     metricGoals: NotRequired[Sequence[MetricGoalConfigTypeDef]],  # (1)
     onlineAbConfig: NotRequired[OnlineAbConfigTypeDef],  # (2)
     randomizationSalt: NotRequired[str],
+    removeSegment: NotRequired[bool],
     samplingRate: NotRequired[int],
+    segment: NotRequired[str],
     treatments: NotRequired[Sequence[TreatmentConfigTypeDef]],  # (3)
 ```
 
@@ -1706,6 +1999,7 @@ class ExperimentTypeDef(TypedDict):
     randomizationSalt: NotRequired[str],
     samplingRate: NotRequired[int],
     schedule: NotRequired[ExperimentScheduleTypeDef],  # (4)
+    segment: NotRequired[str],
     statusReason: NotRequired[str],
     tags: NotRequired[Dict[str, str]],
     treatments: NotRequired[List[TreatmentTypeDef]],  # (6)
@@ -1772,101 +2066,40 @@ class ProjectTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProjectDataDeliveryTypeDef](./type_defs.md#projectdatadeliverytypedef) 
 2. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
-## CreateLaunchRequestRequestTypeDef
+## ScheduledSplitsLaunchConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import CreateLaunchRequestRequestTypeDef
+from mypy_boto3_evidently.type_defs import ScheduledSplitsLaunchConfigTypeDef
 
-def get_value() -> CreateLaunchRequestRequestTypeDef:
+def get_value() -> ScheduledSplitsLaunchConfigTypeDef:
     return {
-        "groups": ...,
-        "name": ...,
-        "project": ...,
+        "steps": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateLaunchRequestRequestTypeDef(TypedDict):
-    groups: Sequence[LaunchGroupConfigTypeDef],  # (1)
-    name: str,
-    project: str,
-    description: NotRequired[str],
-    metricMonitors: NotRequired[Sequence[MetricMonitorConfigTypeDef]],  # (2)
-    randomizationSalt: NotRequired[str],
-    scheduledSplitsConfig: NotRequired[ScheduledSplitsLaunchConfigTypeDef],  # (3)
-    tags: NotRequired[Mapping[str, str]],
+class ScheduledSplitsLaunchConfigTypeDef(TypedDict):
+    steps: Sequence[ScheduledSplitConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
-2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
-3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
-## UpdateLaunchRequestRequestTypeDef
+1. See [:material-code-braces: ScheduledSplitConfigTypeDef](./type_defs.md#scheduledsplitconfigtypedef) 
+## ScheduledSplitsLaunchDefinitionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import UpdateLaunchRequestRequestTypeDef
+from mypy_boto3_evidently.type_defs import ScheduledSplitsLaunchDefinitionTypeDef
 
-def get_value() -> UpdateLaunchRequestRequestTypeDef:
+def get_value() -> ScheduledSplitsLaunchDefinitionTypeDef:
     return {
-        "launch": ...,
-        "project": ...,
+        "steps": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateLaunchRequestRequestTypeDef(TypedDict):
-    launch: str,
-    project: str,
-    description: NotRequired[str],
-    groups: NotRequired[Sequence[LaunchGroupConfigTypeDef]],  # (1)
-    metricMonitors: NotRequired[Sequence[MetricMonitorConfigTypeDef]],  # (2)
-    randomizationSalt: NotRequired[str],
-    scheduledSplitsConfig: NotRequired[ScheduledSplitsLaunchConfigTypeDef],  # (3)
+class ScheduledSplitsLaunchDefinitionTypeDef(TypedDict):
+    steps: NotRequired[List[ScheduledSplitTypeDef]],  # (1)
 ```
 
-1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
-2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
-3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
-## LaunchTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import LaunchTypeDef
-
-def get_value() -> LaunchTypeDef:
-    return {
-        "arn": ...,
-        "createdTime": ...,
-        "lastUpdatedTime": ...,
-        "name": ...,
-        "status": ...,
-        "type": ...,
-    }
-```
-
-```python title="Definition"
-class LaunchTypeDef(TypedDict):
-    arn: str,
-    createdTime: datetime,
-    lastUpdatedTime: datetime,
-    name: str,
-    status: LaunchStatusType,  # (5)
-    type: LaunchTypeType,  # (6)
-    description: NotRequired[str],
-    execution: NotRequired[LaunchExecutionTypeDef],  # (1)
-    groups: NotRequired[List[LaunchGroupTypeDef]],  # (2)
-    metricMonitors: NotRequired[List[MetricMonitorTypeDef]],  # (3)
-    project: NotRequired[str],
-    randomizationSalt: NotRequired[str],
-    scheduledSplitsDefinition: NotRequired[ScheduledSplitsLaunchDefinitionTypeDef],  # (4)
-    statusReason: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: LaunchExecutionTypeDef](./type_defs.md#launchexecutiontypedef) 
-2. See [:material-code-braces: LaunchGroupTypeDef](./type_defs.md#launchgrouptypedef) 
-3. See [:material-code-braces: MetricMonitorTypeDef](./type_defs.md#metricmonitortypedef) 
-4. See [:material-code-braces: ScheduledSplitsLaunchDefinitionTypeDef](./type_defs.md#scheduledsplitslaunchdefinitiontypedef) 
-5. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
-6. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+1. See [:material-code-braces: ScheduledSplitTypeDef](./type_defs.md#scheduledsplittypedef) 
 ## CreateFeatureResponseTypeDef
 
 ```python title="Usage Example"
@@ -2089,6 +2322,101 @@ class UpdateProjectResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLaunchRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import CreateLaunchRequestRequestTypeDef
+
+def get_value() -> CreateLaunchRequestRequestTypeDef:
+    return {
+        "groups": ...,
+        "name": ...,
+        "project": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLaunchRequestRequestTypeDef(TypedDict):
+    groups: Sequence[LaunchGroupConfigTypeDef],  # (1)
+    name: str,
+    project: str,
+    description: NotRequired[str],
+    metricMonitors: NotRequired[Sequence[MetricMonitorConfigTypeDef]],  # (2)
+    randomizationSalt: NotRequired[str],
+    scheduledSplitsConfig: NotRequired[ScheduledSplitsLaunchConfigTypeDef],  # (3)
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
+2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
+3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
+## UpdateLaunchRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import UpdateLaunchRequestRequestTypeDef
+
+def get_value() -> UpdateLaunchRequestRequestTypeDef:
+    return {
+        "launch": ...,
+        "project": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateLaunchRequestRequestTypeDef(TypedDict):
+    launch: str,
+    project: str,
+    description: NotRequired[str],
+    groups: NotRequired[Sequence[LaunchGroupConfigTypeDef]],  # (1)
+    metricMonitors: NotRequired[Sequence[MetricMonitorConfigTypeDef]],  # (2)
+    randomizationSalt: NotRequired[str],
+    scheduledSplitsConfig: NotRequired[ScheduledSplitsLaunchConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
+2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
+3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
+## LaunchTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import LaunchTypeDef
+
+def get_value() -> LaunchTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "status": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    lastUpdatedTime: datetime,
+    name: str,
+    status: LaunchStatusType,  # (5)
+    type: LaunchTypeType,  # (6)
+    description: NotRequired[str],
+    execution: NotRequired[LaunchExecutionTypeDef],  # (1)
+    groups: NotRequired[List[LaunchGroupTypeDef]],  # (2)
+    metricMonitors: NotRequired[List[MetricMonitorTypeDef]],  # (3)
+    project: NotRequired[str],
+    randomizationSalt: NotRequired[str],
+    scheduledSplitsDefinition: NotRequired[ScheduledSplitsLaunchDefinitionTypeDef],  # (4)
+    statusReason: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: LaunchExecutionTypeDef](./type_defs.md#launchexecutiontypedef) 
+2. See [:material-code-braces: LaunchGroupTypeDef](./type_defs.md#launchgrouptypedef) 
+3. See [:material-code-braces: MetricMonitorTypeDef](./type_defs.md#metricmonitortypedef) 
+4. See [:material-code-braces: ScheduledSplitsLaunchDefinitionTypeDef](./type_defs.md#scheduledsplitslaunchdefinitiontypedef) 
+5. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
+6. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
 ## CreateLaunchResponseTypeDef
 
 ```python title="Usage Example"

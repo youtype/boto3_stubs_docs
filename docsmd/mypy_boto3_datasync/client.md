@@ -543,7 +543,7 @@ parent.create_location_smb(**kwargs)
 
 ### create\_task
 
-Creates a task.
+Configures a task, which defines where and how DataSync transfers your data.
 
 Type annotations and code completion for `#!python boto3.client("datasync").create_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task)
@@ -1197,7 +1197,7 @@ parent.list_task_executions(**kwargs)
 
 ### list\_tasks
 
-Returns a list of all the tasks.
+Returns a list of the DataSync tasks you created.
 
 Type annotations and code completion for `#!python boto3.client("datasync").list_tasks` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks)

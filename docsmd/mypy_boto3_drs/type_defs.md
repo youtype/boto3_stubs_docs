@@ -780,11 +780,13 @@ class ReplicationConfigurationReplicatedDiskTypeDef(TypedDict):
     deviceName: NotRequired[str],
     iops: NotRequired[int],
     isBootDisk: NotRequired[bool],
+    optimizedStagingDiskType: NotRequired[ReplicationConfigurationReplicatedDiskStagingDiskTypeType],  # (1)
     stagingDiskType: NotRequired[ReplicationConfigurationReplicatedDiskStagingDiskTypeType],  # (1)
     throughput: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype) 
+2. See [:material-code-brackets: ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype) 
 ## RetryDataReplicationRequestRequestTypeDef
 
 ```python title="Usage Example"

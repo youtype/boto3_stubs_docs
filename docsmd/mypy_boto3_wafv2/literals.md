@@ -587,6 +587,21 @@ ScopeType = Literal[
     "REGIONAL",
 ]
 ```
+## SensitivityLevelType
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.literals import SensitivityLevelType
+
+def get_value() -> SensitivityLevelType:
+    return "HIGH"
+```
+
+```python title="Definition"
+SensitivityLevelType = Literal[
+    "HIGH",
+    "LOW",
+]
+```
 ## TextTransformationTypeType
 
 ```python title="Usage Example"

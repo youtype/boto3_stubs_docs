@@ -246,3 +246,123 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef) 
+## ListSegmentReferencesPaginator
+
+Type annotations and code completion for `#!python boto3.client("evidently").get_paginator("list_segment_references")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListSegmentReferences)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListSegmentReferencesPaginator
+
+def get_list_segment_references_paginator() -> ListSegmentReferencesPaginator:
+    return Session().client("evidently").get_paginator("list_segment_references")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListSegmentReferencesPaginator
+
+session = Session()
+
+client = Session().client("evidently")  # (1)
+paginator: ListSegmentReferencesPaginator = client.get_paginator("list_segment_references")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchEvidentlyClient](./client.md)
+2. paginator: [ListSegmentReferencesPaginator](./paginators.md#listsegmentreferencespaginator)
+3. item: [:material-code-braces: ListSegmentReferencesResponseTypeDef](./type_defs.md#listsegmentreferencesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSegmentReferencesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    segment: str,
+    type: SegmentReferenceResourceTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSegmentReferencesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: SegmentReferenceResourceTypeType](./literals.md#segmentreferenceresourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSegmentReferencesResponseTypeDef](./type_defs.md#listsegmentreferencesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSegmentReferencesRequestListSegmentReferencesPaginateTypeDef = {  # (1)
+    "segment": ...,
+    "type": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSegmentReferencesRequestListSegmentReferencesPaginateTypeDef](./type_defs.md#listsegmentreferencesrequestlistsegmentreferencespaginatetypedef) 
+## ListSegmentsPaginator
+
+Type annotations and code completion for `#!python boto3.client("evidently").get_paginator("list_segments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListSegments)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListSegmentsPaginator
+
+def get_list_segments_paginator() -> ListSegmentsPaginator:
+    return Session().client("evidently").get_paginator("list_segments")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_evidently.paginator import ListSegmentsPaginator
+
+session = Session()
+
+client = Session().client("evidently")  # (1)
+paginator: ListSegmentsPaginator = client.get_paginator("list_segments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudWatchEvidentlyClient](./client.md)
+2. paginator: [ListSegmentsPaginator](./paginators.md#listsegmentspaginator)
+3. item: [:material-code-braces: ListSegmentsResponseTypeDef](./type_defs.md#listsegmentsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSegmentsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSegmentsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSegmentsResponseTypeDef](./type_defs.md#listsegmentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSegmentsRequestListSegmentsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSegmentsRequestListSegmentsPaginateTypeDef](./type_defs.md#listsegmentsrequestlistsegmentspaginatetypedef) 

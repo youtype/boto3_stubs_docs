@@ -2976,10 +2976,12 @@ def get_value() -> SqliMatchStatementTypeDef:
 class SqliMatchStatementTypeDef(TypedDict):
     FieldToMatch: FieldToMatchTypeDef,  # (1)
     TextTransformations: Sequence[TextTransformationTypeDef],  # (2)
+    SensitivityLevel: NotRequired[SensitivityLevelType],  # (3)
 ```
 
 1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
 2. See [:material-code-braces: TextTransformationTypeDef](./type_defs.md#texttransformationtypedef) 
+3. See [:material-code-brackets: SensitivityLevelType](./literals.md#sensitivityleveltype) 
 ## XssMatchStatementTypeDef
 
 ```python title="Usage Example"

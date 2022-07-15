@@ -9,12 +9,14 @@
 
 ## How to install
 
+
 ### VSCode extension
 
 Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Kafka`.
+
 
 ### From PyPI with pip
 
