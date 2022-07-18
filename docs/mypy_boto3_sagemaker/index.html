@@ -36692,6 +36692,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listdevicefleetspaginator">ListDeviceFleetsPaginator</a></li>
 <li><a href="paginators/#listdevicespaginator">ListDevicesPaginator</a></li>
 <li><a href="paginators/#listdomainspaginator">ListDomainsPaginator</a></li>
+<li><a href="paginators/#listedgedeploymentplanspaginator">ListEdgeDeploymentPlansPaginator</a></li>
 <li><a href="paginators/#listedgepackagingjobspaginator">ListEdgePackagingJobsPaginator</a></li>
 <li><a href="paginators/#listendpointconfigspaginator">ListEndpointConfigsPaginator</a></li>
 <li><a href="paginators/#listendpointspaginator">ListEndpointsPaginator</a></li>
@@ -36722,6 +36723,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listpipelineparametersforexecutionpaginator">ListPipelineParametersForExecutionPaginator</a></li>
 <li><a href="paginators/#listpipelinespaginator">ListPipelinesPaginator</a></li>
 <li><a href="paginators/#listprocessingjobspaginator">ListProcessingJobsPaginator</a></li>
+<li><a href="paginators/#liststagedevicespaginator">ListStageDevicesPaginator</a></li>
 <li><a href="paginators/#liststudiolifecycleconfigspaginator">ListStudioLifecycleConfigsPaginator</a></li>
 <li><a href="paginators/#listsubscribedworkteamspaginator">ListSubscribedWorkteamsPaginator</a></li>
 <li><a href="paginators/#listtagspaginator">ListTagsPaginator</a></li>
@@ -36812,6 +36814,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#datadistributiontypetype">DataDistributionTypeType</a></li>
 <li><a href="literals/#detailedalgorithmstatustype">DetailedAlgorithmStatusType</a></li>
 <li><a href="literals/#detailedmodelpackagestatustype">DetailedModelPackageStatusType</a></li>
+<li><a href="literals/#devicedeploymentstatustype">DeviceDeploymentStatusType</a></li>
+<li><a href="literals/#devicesubsettypetype">DeviceSubsetTypeType</a></li>
 <li><a href="literals/#directinternetaccesstype">DirectInternetAccessType</a></li>
 <li><a href="literals/#directiontype">DirectionType</a></li>
 <li><a href="literals/#domainstatustype">DomainStatusType</a></li>
@@ -36824,6 +36828,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#endpointsortkeytype">EndpointSortKeyType</a></li>
 <li><a href="literals/#endpointstatustype">EndpointStatusType</a></li>
 <li><a href="literals/#executionstatustype">ExecutionStatusType</a></li>
+<li><a href="literals/#failurehandlingpolicytype">FailureHandlingPolicyType</a></li>
 <li><a href="literals/#featuregroupsortbytype">FeatureGroupSortByType</a></li>
 <li><a href="literals/#featuregroupsortordertype">FeatureGroupSortOrderType</a></li>
 <li><a href="literals/#featuregroupstatustype">FeatureGroupStatusType</a></li>
@@ -36874,6 +36879,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listdevicefleetssortbytype">ListDeviceFleetsSortByType</a></li>
 <li><a href="literals/#listdevicespaginatorname">ListDevicesPaginatorName</a></li>
 <li><a href="literals/#listdomainspaginatorname">ListDomainsPaginatorName</a></li>
+<li><a href="literals/#listedgedeploymentplanspaginatorname">ListEdgeDeploymentPlansPaginatorName</a></li>
+<li><a href="literals/#listedgedeploymentplanssortbytype">ListEdgeDeploymentPlansSortByType</a></li>
 <li><a href="literals/#listedgepackagingjobspaginatorname">ListEdgePackagingJobsPaginatorName</a></li>
 <li><a href="literals/#listedgepackagingjobssortbytype">ListEdgePackagingJobsSortByType</a></li>
 <li><a href="literals/#listendpointconfigspaginatorname">ListEndpointConfigsPaginatorName</a></li>
@@ -36907,6 +36914,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listpipelineparametersforexecutionpaginatorname">ListPipelineParametersForExecutionPaginatorName</a></li>
 <li><a href="literals/#listpipelinespaginatorname">ListPipelinesPaginatorName</a></li>
 <li><a href="literals/#listprocessingjobspaginatorname">ListProcessingJobsPaginatorName</a></li>
+<li><a href="literals/#liststagedevicespaginatorname">ListStageDevicesPaginatorName</a></li>
 <li><a href="literals/#liststudiolifecycleconfigspaginatorname">ListStudioLifecycleConfigsPaginatorName</a></li>
 <li><a href="literals/#listsubscribedworkteamspaginatorname">ListSubscribedWorkteamsPaginatorName</a></li>
 <li><a href="literals/#listtagspaginatorname">ListTagsPaginatorName</a></li>
@@ -36999,6 +37007,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#sorttrialcomponentsbytype">SortTrialComponentsByType</a></li>
 <li><a href="literals/#sorttrialsbytype">SortTrialsByType</a></li>
 <li><a href="literals/#splittypetype">SplitTypeType</a></li>
+<li><a href="literals/#stagestatustype">StageStatusType</a></li>
 <li><a href="literals/#stepstatustype">StepStatusType</a></li>
 <li><a href="literals/#studiolifecycleconfigapptypetype">StudioLifecycleConfigAppTypeType</a></li>
 <li><a href="literals/#studiolifecycleconfigsortkeytype">StudioLifecycleConfigSortKeyType</a></li>
@@ -37106,6 +37115,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#dataqualityappspecificationtypedef">DataQualityAppSpecificationTypeDef</a></li>
 <li><a href="type_defs/#monitoringstoppingconditiontypedef">MonitoringStoppingConditionTypeDef</a></li>
 <li><a href="type_defs/#edgeoutputconfigtypedef">EdgeOutputConfigTypeDef</a></li>
+<li><a href="type_defs/#edgedeploymentmodelconfigtypedef">EdgeDeploymentModelConfigTypeDef</a></li>
 <li><a href="type_defs/#featuredefinitiontypedef">FeatureDefinitionTypeDef</a></li>
 <li><a href="type_defs/#flowdefinitionoutputconfigtypedef">FlowDefinitionOutputConfigTypeDef</a></li>
 <li><a href="type_defs/#humanlooprequestsourcetypedef">HumanLoopRequestSourceTypeDef</a></li>
@@ -37162,6 +37172,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletedataqualityjobdefinitionrequestrequesttypedef">DeleteDataQualityJobDefinitionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedevicefleetrequestrequesttypedef">DeleteDeviceFleetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#retentionpolicytypedef">RetentionPolicyTypeDef</a></li>
+<li><a href="type_defs/#deleteedgedeploymentplanrequestrequesttypedef">DeleteEdgeDeploymentPlanRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteedgedeploymentstagerequestrequesttypedef">DeleteEdgeDeploymentStageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteendpointconfiginputrequesttypedef">DeleteEndpointConfigInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteendpointinputrequesttypedef">DeleteEndpointInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteexperimentrequestrequesttypedef">DeleteExperimentRequestRequestTypeDef</a></li>
@@ -37190,6 +37202,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteworkforcerequestrequesttypedef">DeleteWorkforceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteworkteamrequestrequesttypedef">DeleteWorkteamRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deployedimagetypedef">DeployedImageTypeDef</a></li>
+<li><a href="type_defs/#deviceselectionconfigtypedef">DeviceSelectionConfigTypeDef</a></li>
+<li><a href="type_defs/#edgedeploymentconfigtypedef">EdgeDeploymentConfigTypeDef</a></li>
+<li><a href="type_defs/#edgedeploymentstatustypedef">EdgeDeploymentStatusTypeDef</a></li>
 <li><a href="type_defs/#deregisterdevicesrequestrequesttypedef">DeregisterDevicesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeactionrequestrequesttypedef">DescribeActionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describealgorithminputrequesttypedef">DescribeAlgorithmInputRequestTypeDef</a></li>
@@ -37208,6 +37223,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describedevicerequestrequesttypedef">DescribeDeviceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#edgemodeltypedef">EdgeModelTypeDef</a></li>
 <li><a href="type_defs/#describedomainrequestrequesttypedef">DescribeDomainRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeedgedeploymentplanrequestrequesttypedef">DescribeEdgeDeploymentPlanRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeedgepackagingjobrequestrequesttypedef">DescribeEdgePackagingJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#edgepresetdeploymentoutputtypedef">EdgePresetDeploymentOutputTypeDef</a></li>
 <li><a href="type_defs/#describeendpointconfiginputrequesttypedef">DescribeEndpointConfigInputRequestTypeDef</a></li>
@@ -37267,6 +37283,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeworkforcerequestrequesttypedef">DescribeWorkforceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeworkteamrequestrequesttypedef">DescribeWorkteamRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#desiredweightandcapacitytypedef">DesiredWeightAndCapacityTypeDef</a></li>
+<li><a href="type_defs/#devicedeploymentsummarytypedef">DeviceDeploymentSummaryTypeDef</a></li>
 <li><a href="type_defs/#devicefleetsummarytypedef">DeviceFleetSummaryTypeDef</a></li>
 <li><a href="type_defs/#devicestatstypedef">DeviceStatsTypeDef</a></li>
 <li><a href="type_defs/#edgemodelsummarytypedef">EdgeModelSummaryTypeDef</a></li>
@@ -37275,6 +37292,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#domaindetailstypedef">DomainDetailsTypeDef</a></li>
 <li><a href="type_defs/#filesourcetypedef">FileSourceTypeDef</a></li>
 <li><a href="type_defs/#emrstepmetadatatypedef">EMRStepMetadataTypeDef</a></li>
+<li><a href="type_defs/#edgedeploymentplansummarytypedef">EdgeDeploymentPlanSummaryTypeDef</a></li>
 <li><a href="type_defs/#edgemodelstattypedef">EdgeModelStatTypeDef</a></li>
 <li><a href="type_defs/#edgepackagingjobsummarytypedef">EdgePackagingJobSummaryTypeDef</a></li>
 <li><a href="type_defs/#edgetypedef">EdgeTypeDef</a></li>
@@ -37330,6 +37348,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdevicefleetsrequestrequesttypedef">ListDeviceFleetsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdevicesrequestrequesttypedef">ListDevicesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdomainsrequestrequesttypedef">ListDomainsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listedgedeploymentplansrequestrequesttypedef">ListEdgeDeploymentPlansRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listedgepackagingjobsrequestrequesttypedef">ListEdgePackagingJobsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listendpointconfigsinputrequesttypedef">ListEndpointConfigsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listendpointsinputrequesttypedef">ListEndpointsInputRequestTypeDef</a></li>
@@ -37372,6 +37391,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#processingjobsummarytypedef">ProcessingJobSummaryTypeDef</a></li>
 <li><a href="type_defs/#listprojectsinputrequesttypedef">ListProjectsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#projectsummarytypedef">ProjectSummaryTypeDef</a></li>
+<li><a href="type_defs/#liststagedevicesrequestrequesttypedef">ListStageDevicesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#liststudiolifecycleconfigsrequestrequesttypedef">ListStudioLifecycleConfigsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#studiolifecycleconfigdetailstypedef">StudioLifecycleConfigDetailsTypeDef</a></li>
 <li><a href="type_defs/#listsubscribedworkteamsrequestrequesttypedef">ListSubscribedWorkteamsRequestRequestTypeDef</a></li>
@@ -37433,10 +37453,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#sendpipelineexecutionstepfailurerequestrequesttypedef">SendPipelineExecutionStepFailureRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sharingsettingstypedef">SharingSettingsTypeDef</a></li>
 <li><a href="type_defs/#sourcealgorithmtypedef">SourceAlgorithmTypeDef</a></li>
+<li><a href="type_defs/#startedgedeploymentstagerequestrequesttypedef">StartEdgeDeploymentStageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startmonitoringschedulerequestrequesttypedef">StartMonitoringScheduleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startnotebookinstanceinputrequesttypedef">StartNotebookInstanceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#stopautomljobrequestrequesttypedef">StopAutoMLJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopcompilationjobrequestrequesttypedef">StopCompilationJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stopedgedeploymentstagerequestrequesttypedef">StopEdgeDeploymentStageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopedgepackagingjobrequestrequesttypedef">StopEdgePackagingJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stophyperparametertuningjobrequestrequesttypedef">StopHyperParameterTuningJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopinferencerecommendationsjobrequestrequesttypedef">StopInferenceRecommendationsJobRequestRequestTypeDef</a></li>
@@ -37470,6 +37492,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcontextresponsetypedef">CreateContextResponseTypeDef</a></li>
 <li><a href="type_defs/#createdataqualityjobdefinitionresponsetypedef">CreateDataQualityJobDefinitionResponseTypeDef</a></li>
 <li><a href="type_defs/#createdomainresponsetypedef">CreateDomainResponseTypeDef</a></li>
+<li><a href="type_defs/#createedgedeploymentplanresponsetypedef">CreateEdgeDeploymentPlanResponseTypeDef</a></li>
 <li><a href="type_defs/#createendpointconfigoutputtypedef">CreateEndpointConfigOutputTypeDef</a></li>
 <li><a href="type_defs/#createendpointoutputtypedef">CreateEndpointOutputTypeDef</a></li>
 <li><a href="type_defs/#createexperimentresponsetypedef">CreateExperimentResponseTypeDef</a></li>
@@ -37638,6 +37661,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#datasourcetypedef">DataSourceTypeDef</a></li>
 <li><a href="type_defs/#datasetdefinitiontypedef">DatasetDefinitionTypeDef</a></li>
 <li><a href="type_defs/#deletedomainrequestrequesttypedef">DeleteDomainRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deploymentstagetypedef">DeploymentStageTypeDef</a></li>
+<li><a href="type_defs/#deploymentstagestatussummarytypedef">DeploymentStageStatusSummaryTypeDef</a></li>
 <li><a href="type_defs/#describedeviceresponsetypedef">DescribeDeviceResponseTypeDef</a></li>
 <li><a href="type_defs/#describeedgepackagingjobresponsetypedef">DescribeEdgePackagingJobResponseTypeDef</a></li>
 <li><a href="type_defs/#describeendpointinputendpointdeletedwaittypedef">DescribeEndpointInputEndpointDeletedWaitTypeDef</a></li>
@@ -37671,6 +37696,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describetrialresponsetypedef">DescribeTrialResponseTypeDef</a></li>
 <li><a href="type_defs/#trialsummarytypedef">TrialSummaryTypeDef</a></li>
 <li><a href="type_defs/#updateendpointweightsandcapacitiesinputrequesttypedef">UpdateEndpointWeightsAndCapacitiesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#liststagedevicesresponsetypedef">ListStageDevicesResponseTypeDef</a></li>
 <li><a href="type_defs/#listdevicefleetsresponsetypedef">ListDeviceFleetsResponseTypeDef</a></li>
 <li><a href="type_defs/#devicesummarytypedef">DeviceSummaryTypeDef</a></li>
 <li><a href="type_defs/#registerdevicesrequestrequesttypedef">RegisterDevicesRequestRequestTypeDef</a></li>
@@ -37678,6 +37704,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdomainsresponsetypedef">ListDomainsResponseTypeDef</a></li>
 <li><a href="type_defs/#driftcheckbiastypedef">DriftCheckBiasTypeDef</a></li>
 <li><a href="type_defs/#driftcheckexplainabilitytypedef">DriftCheckExplainabilityTypeDef</a></li>
+<li><a href="type_defs/#listedgedeploymentplansresponsetypedef">ListEdgeDeploymentPlansResponseTypeDef</a></li>
 <li><a href="type_defs/#getdevicefleetreportresponsetypedef">GetDeviceFleetReportResponseTypeDef</a></li>
 <li><a href="type_defs/#listedgepackagingjobsresponsetypedef">ListEdgePackagingJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#listendpointconfigsoutputtypedef">ListEndpointConfigsOutputTypeDef</a></li>
@@ -37718,6 +37745,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdevicefleetsrequestlistdevicefleetspaginatetypedef">ListDeviceFleetsRequestListDeviceFleetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdevicesrequestlistdevicespaginatetypedef">ListDevicesRequestListDevicesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdomainsrequestlistdomainspaginatetypedef">ListDomainsRequestListDomainsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listedgedeploymentplansrequestlistedgedeploymentplanspaginatetypedef">ListEdgeDeploymentPlansRequestListEdgeDeploymentPlansPaginateTypeDef</a></li>
 <li><a href="type_defs/#listedgepackagingjobsrequestlistedgepackagingjobspaginatetypedef">ListEdgePackagingJobsRequestListEdgePackagingJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listendpointconfigsinputlistendpointconfigspaginatetypedef">ListEndpointConfigsInputListEndpointConfigsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listendpointsinputlistendpointspaginatetypedef">ListEndpointsInputListEndpointsPaginateTypeDef</a></li>
@@ -37747,6 +37775,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listpipelineparametersforexecutionrequestlistpipelineparametersforexecutionpaginatetypedef">ListPipelineParametersForExecutionRequestListPipelineParametersForExecutionPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpipelinesrequestlistpipelinespaginatetypedef">ListPipelinesRequestListPipelinesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listprocessingjobsrequestlistprocessingjobspaginatetypedef">ListProcessingJobsRequestListProcessingJobsPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststagedevicesrequestliststagedevicespaginatetypedef">ListStageDevicesRequestListStageDevicesPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststudiolifecycleconfigsrequestliststudiolifecycleconfigspaginatetypedef">ListStudioLifecycleConfigsRequestListStudioLifecycleConfigsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsubscribedworkteamsrequestlistsubscribedworkteamspaginatetypedef">ListSubscribedWorkteamsRequestListSubscribedWorkteamsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtagsinputlisttagspaginatetypedef">ListTagsInputListTagsPaginateTypeDef</a></li>
@@ -37835,6 +37864,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#usersettingstypedef">UserSettingsTypeDef</a></li>
 <li><a href="type_defs/#channeltypedef">ChannelTypeDef</a></li>
 <li><a href="type_defs/#processinginputtypedef">ProcessingInputTypeDef</a></li>
+<li><a href="type_defs/#createedgedeploymentplanrequestrequesttypedef">CreateEdgeDeploymentPlanRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createedgedeploymentstagerequestrequesttypedef">CreateEdgeDeploymentStageRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeedgedeploymentplanresponsetypedef">DescribeEdgeDeploymentPlanResponseTypeDef</a></li>
 <li><a href="type_defs/#listexperimentsresponsetypedef">ListExperimentsResponseTypeDef</a></li>
 <li><a href="type_defs/#listfeaturegroupsresponsetypedef">ListFeatureGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#trialtypedef">TrialTypeDef</a></li>

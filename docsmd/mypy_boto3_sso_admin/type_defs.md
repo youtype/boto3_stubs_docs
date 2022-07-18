@@ -89,6 +89,23 @@ class AccountAssignmentTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+## CustomerManagedPolicyReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import CustomerManagedPolicyReferenceTypeDef
+
+def get_value() -> CustomerManagedPolicyReferenceTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CustomerManagedPolicyReferenceTypeDef(TypedDict):
+    Name: str,
+    Path: NotRequired[str],
+```
+
 ## AttachManagedPolicyToPermissionSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -186,13 +203,14 @@ from mypy_boto3_sso_admin.type_defs import TagTypeDef
 def get_value() -> TagTypeDef:
     return {
         "Key": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
 class TagTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
+    Key: str,
+    Value: str,
 ```
 
 ## PermissionSetTypeDef
@@ -292,6 +310,24 @@ def get_value() -> DeletePermissionSetRequestRequestTypeDef:
 
 ```python title="Definition"
 class DeletePermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+```
+
+## DeletePermissionsBoundaryFromPermissionSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import DeletePermissionsBoundaryFromPermissionSetRequestRequestTypeDef
+
+def get_value() -> DeletePermissionsBoundaryFromPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeletePermissionsBoundaryFromPermissionSetRequestRequestTypeDef(TypedDict):
     InstanceArn: str,
     PermissionSetArn: str,
 ```
@@ -444,6 +480,24 @@ class GetInlinePolicyForPermissionSetRequestRequestTypeDef(TypedDict):
     PermissionSetArn: str,
 ```
 
+## GetPermissionsBoundaryForPermissionSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import GetPermissionsBoundaryForPermissionSetRequestRequestTypeDef
+
+def get_value() -> GetPermissionsBoundaryForPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetPermissionsBoundaryForPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+```
+
 ## InstanceMetadataTypeDef
 
 ```python title="Usage Example"
@@ -540,6 +594,26 @@ class ListAccountsForProvisionedPermissionSetRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
+## ListCustomerManagedPolicyReferencesInPermissionSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListCustomerManagedPolicyReferencesInPermissionSetRequestRequestTypeDef
+
+def get_value() -> ListCustomerManagedPolicyReferencesInPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomerManagedPolicyReferencesInPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
 ## ListInstancesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -757,6 +831,66 @@ class AccessControlAttributeTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AccessControlAttributeValueTypeDef](./type_defs.md#accesscontrolattributevaluetypedef) 
+## AttachCustomerManagedPolicyReferenceToPermissionSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import AttachCustomerManagedPolicyReferenceToPermissionSetRequestRequestTypeDef
+
+def get_value() -> AttachCustomerManagedPolicyReferenceToPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+        "CustomerManagedPolicyReference": ...,
+    }
+```
+
+```python title="Definition"
+class AttachCustomerManagedPolicyReferenceToPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    CustomerManagedPolicyReference: CustomerManagedPolicyReferenceTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: CustomerManagedPolicyReferenceTypeDef](./type_defs.md#customermanagedpolicyreferencetypedef) 
+## DetachCustomerManagedPolicyReferenceFromPermissionSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import DetachCustomerManagedPolicyReferenceFromPermissionSetRequestRequestTypeDef
+
+def get_value() -> DetachCustomerManagedPolicyReferenceFromPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+        "CustomerManagedPolicyReference": ...,
+    }
+```
+
+```python title="Definition"
+class DetachCustomerManagedPolicyReferenceFromPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    CustomerManagedPolicyReference: CustomerManagedPolicyReferenceTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: CustomerManagedPolicyReferenceTypeDef](./type_defs.md#customermanagedpolicyreferencetypedef) 
+## PermissionsBoundaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import PermissionsBoundaryTypeDef
+
+def get_value() -> PermissionsBoundaryTypeDef:
+    return {
+        "CustomerManagedPolicyReference": ...,
+    }
+```
+
+```python title="Definition"
+class PermissionsBoundaryTypeDef(TypedDict):
+    CustomerManagedPolicyReference: NotRequired[CustomerManagedPolicyReferenceTypeDef],  # (1)
+    ManagedPolicyArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: CustomerManagedPolicyReferenceTypeDef](./type_defs.md#customermanagedpolicyreferencetypedef) 
 ## CreateAccountAssignmentResponseTypeDef
 
 ```python title="Usage Example"
@@ -943,6 +1077,28 @@ class ListAccountsForProvisionedPermissionSetResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef
+
+def get_value() -> ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef:
+    return {
+        "CustomerManagedPolicyReferences": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef(TypedDict):
+    CustomerManagedPolicyReferences: List[CustomerManagedPolicyReferenceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomerManagedPolicyReferenceTypeDef](./type_defs.md#customermanagedpolicyreferencetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListManagedPoliciesInPermissionSetResponseTypeDef
 
 ```python title="Usage Example"
@@ -1319,6 +1475,26 @@ class ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPe
 
 1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCustomerManagedPolicyReferencesInPermissionSetRequestListCustomerManagedPolicyReferencesInPermissionSetPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListCustomerManagedPolicyReferencesInPermissionSetRequestListCustomerManagedPolicyReferencesInPermissionSetPaginateTypeDef
+
+def get_value() -> ListCustomerManagedPolicyReferencesInPermissionSetRequestListCustomerManagedPolicyReferencesInPermissionSetPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomerManagedPolicyReferencesInPermissionSetRequestListCustomerManagedPolicyReferencesInPermissionSetPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstancesRequestListInstancesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1475,6 +1651,47 @@ class InstanceAccessControlAttributeConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef) 
+## GetPermissionsBoundaryForPermissionSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import GetPermissionsBoundaryForPermissionSetResponseTypeDef
+
+def get_value() -> GetPermissionsBoundaryForPermissionSetResponseTypeDef:
+    return {
+        "PermissionsBoundary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPermissionsBoundaryForPermissionSetResponseTypeDef(TypedDict):
+    PermissionsBoundary: PermissionsBoundaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PermissionsBoundaryTypeDef](./type_defs.md#permissionsboundarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutPermissionsBoundaryToPermissionSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import PutPermissionsBoundaryToPermissionSetRequestRequestTypeDef
+
+def get_value() -> PutPermissionsBoundaryToPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+        "PermissionsBoundary": ...,
+    }
+```
+
+```python title="Definition"
+class PutPermissionsBoundaryToPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    PermissionsBoundary: PermissionsBoundaryTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: PermissionsBoundaryTypeDef](./type_defs.md#permissionsboundarytypedef) 
 ## CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"

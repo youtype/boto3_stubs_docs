@@ -36657,16 +36657,19 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;kms&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kms.paginator</span> <span class="kn">import</span> <span class="n">ListAliasesPaginator</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_kms.paginator</span> <span class="kn">import</span> <span class="n">DescribeCustomKeyStoresPaginator</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_aliases_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListAliasesPaginator</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;kms&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_aliases&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_describe_custom_key_stores_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeCustomKeyStoresPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;kms&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_custom_key_stores&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#describecustomkeystorespaginator">DescribeCustomKeyStoresPaginator</a></li>
 <li><a href="paginators/#listaliasespaginator">ListAliasesPaginator</a></li>
 <li><a href="paginators/#listgrantspaginator">ListGrantsPaginator</a></li>
 <li><a href="paginators/#listkeypoliciespaginator">ListKeyPoliciesPaginator</a></li>
 <li><a href="paginators/#listkeyspaginator">ListKeysPaginator</a></li>
+<li><a href="paginators/#listresourcetagspaginator">ListResourceTagsPaginator</a></li>
+<li><a href="paginators/#listretirablegrantspaginator">ListRetirableGrantsPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
@@ -36682,6 +36685,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#customermasterkeyspectype">CustomerMasterKeySpecType</a></li>
 <li><a href="literals/#datakeypairspectype">DataKeyPairSpecType</a></li>
 <li><a href="literals/#datakeyspectype">DataKeySpecType</a></li>
+<li><a href="literals/#describecustomkeystorespaginatorname">DescribeCustomKeyStoresPaginatorName</a></li>
 <li><a href="literals/#encryptionalgorithmspectype">EncryptionAlgorithmSpecType</a></li>
 <li><a href="literals/#expirationmodeltypetype">ExpirationModelTypeType</a></li>
 <li><a href="literals/#grantoperationtype">GrantOperationType</a></li>
@@ -36693,6 +36697,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listgrantspaginatorname">ListGrantsPaginatorName</a></li>
 <li><a href="literals/#listkeypoliciespaginatorname">ListKeyPoliciesPaginatorName</a></li>
 <li><a href="literals/#listkeyspaginatorname">ListKeysPaginatorName</a></li>
+<li><a href="literals/#listresourcetagspaginatorname">ListResourceTagsPaginatorName</a></li>
+<li><a href="literals/#listretirablegrantspaginatorname">ListRetirableGrantsPaginatorName</a></li>
 <li><a href="literals/#macalgorithmspectype">MacAlgorithmSpecType</a></li>
 <li><a href="literals/#messagetypetype">MessageTypeType</a></li>
 <li><a href="literals/#multiregionkeytypetype">MultiRegionKeyTypeType</a></li>
@@ -36728,6 +36734,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletealiasrequestrequesttypedef">DeleteAliasRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletecustomkeystorerequestrequesttypedef">DeleteCustomKeyStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteimportedkeymaterialrequestrequesttypedef">DeleteImportedKeyMaterialRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describecustomkeystoresrequestrequesttypedef">DescribeCustomKeyStoresRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describekeyrequestrequesttypedef">DescribeKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disablekeyrequestrequesttypedef">DisableKeyRequestRequestTypeDef</a></li>
@@ -36748,7 +36755,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getpublickeyrequestrequesttypedef">GetPublicKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#importkeymaterialrequestrequesttypedef">ImportKeyMaterialRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#keylistentrytypedef">KeyListEntryTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listaliasesrequestrequesttypedef">ListAliasesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listgrantsrequestrequesttypedef">ListGrantsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listkeypoliciesrequestrequesttypedef">ListKeyPoliciesRequestRequestTypeDef</a></li>
@@ -36799,11 +36805,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#replicatekeyrequestrequesttypedef">ReplicateKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describecustomkeystoresresponsetypedef">DescribeCustomKeyStoresResponseTypeDef</a></li>
-<li><a href="type_defs/#listkeysresponsetypedef">ListKeysResponseTypeDef</a></li>
+<li><a href="type_defs/#describecustomkeystoresrequestdescribecustomkeystorespaginatetypedef">DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef</a></li>
 <li><a href="type_defs/#listaliasesrequestlistaliasespaginatetypedef">ListAliasesRequestListAliasesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listgrantsrequestlistgrantspaginatetypedef">ListGrantsRequestListGrantsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listkeypoliciesrequestlistkeypoliciespaginatetypedef">ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listkeysrequestlistkeyspaginatetypedef">ListKeysRequestListKeysPaginateTypeDef</a></li>
+<li><a href="type_defs/#listresourcetagsrequestlistresourcetagspaginatetypedef">ListResourceTagsRequestListResourceTagsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listretirablegrantsrequestlistretirablegrantspaginatetypedef">ListRetirableGrantsRequestListRetirableGrantsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listkeysresponsetypedef">ListKeysResponseTypeDef</a></li>
 <li><a href="type_defs/#multiregionconfigurationtypedef">MultiRegionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listgrantsresponsetypedef">ListGrantsResponseTypeDef</a></li>
 <li><a href="type_defs/#keymetadatatypedef">KeyMetadataTypeDef</a></li>

@@ -55,9 +55,43 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 ## Methods
 
 
+### attach\_customer\_managed\_policy\_reference\_to\_permission\_set
+
+Attaches the specified IAM customer managed policy to the specified
+PermissionSet .
+
+Type annotations and code completion for `#!python boto3.client("sso-admin").attach_customer_managed_policy_reference_to_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_customer_managed_policy_reference_to_permission_set)
+
+```python title="Method definition"
+def attach_customer_managed_policy_reference_to_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    CustomerManagedPolicyReference: CustomerManagedPolicyReferenceTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: CustomerManagedPolicyReferenceTypeDef](./type_defs.md#customermanagedpolicyreferencetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AttachCustomerManagedPolicyReferenceToPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+    "CustomerManagedPolicyReference": ...,
+}
+
+parent.attach_customer_managed_policy_reference_to_permission_set(**kwargs)
+```
+
+1. See [:material-code-braces: AttachCustomerManagedPolicyReferenceToPermissionSetRequestRequestTypeDef](./type_defs.md#attachcustomermanagedpolicyreferencetopermissionsetrequestrequesttypedef) 
+
 ### attach\_managed\_policy\_to\_permission\_set
 
-Attaches an IAM managed policy ARN to a permission set.
+Attaches an Amazon Web Services managed IAM policy ARN to a permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
@@ -360,6 +394,36 @@ parent.delete_permission_set(**kwargs)
 
 1. See [:material-code-braces: DeletePermissionSetRequestRequestTypeDef](./type_defs.md#deletepermissionsetrequestrequesttypedef) 
 
+### delete\_permissions\_boundary\_from\_permission\_set
+
+Deletes the permissions boundary from a specified  PermissionSet .
+
+Type annotations and code completion for `#!python boto3.client("sso-admin").delete_permissions_boundary_from_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permissions_boundary_from_permission_set)
+
+```python title="Method definition"
+def delete_permissions_boundary_from_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeletePermissionsBoundaryFromPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
+
+parent.delete_permissions_boundary_from_permission_set(**kwargs)
+```
+
+1. See [:material-code-braces: DeletePermissionsBoundaryFromPermissionSetRequestRequestTypeDef](./type_defs.md#deletepermissionsboundaryfrompermissionsetrequestrequesttypedef) 
+
 ### describe\_account\_assignment\_creation\_status
 
 Describes the status of the assignment creation request.
@@ -515,9 +579,44 @@ parent.describe_permission_set_provisioning_status(**kwargs)
 
 1. See [:material-code-braces: DescribePermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#describepermissionsetprovisioningstatusrequestrequesttypedef) 
 
+### detach\_customer\_managed\_policy\_reference\_from\_permission\_set
+
+Detaches the specified IAM customer managed policy from the specified
+PermissionSet .
+
+Type annotations and code completion for `#!python boto3.client("sso-admin").detach_customer_managed_policy_reference_from_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_customer_managed_policy_reference_from_permission_set)
+
+```python title="Method definition"
+def detach_customer_managed_policy_reference_from_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    CustomerManagedPolicyReference: CustomerManagedPolicyReferenceTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: CustomerManagedPolicyReferenceTypeDef](./type_defs.md#customermanagedpolicyreferencetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DetachCustomerManagedPolicyReferenceFromPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+    "CustomerManagedPolicyReference": ...,
+}
+
+parent.detach_customer_managed_policy_reference_from_permission_set(**kwargs)
+```
+
+1. See [:material-code-braces: DetachCustomerManagedPolicyReferenceFromPermissionSetRequestRequestTypeDef](./type_defs.md#detachcustomermanagedpolicyreferencefrompermissionsetrequestrequesttypedef) 
+
 ### detach\_managed\_policy\_from\_permission\_set
 
-Detaches the attached IAM managed policy ARN from the specified permission set.
+Detaches the attached Amazon Web Services managed IAM policy ARN from the
+specified permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
@@ -596,6 +695,37 @@ parent.get_inline_policy_for_permission_set(**kwargs)
 ```
 
 1. See [:material-code-braces: GetInlinePolicyForPermissionSetRequestRequestTypeDef](./type_defs.md#getinlinepolicyforpermissionsetrequestrequesttypedef) 
+
+### get\_permissions\_boundary\_for\_permission\_set
+
+Obtains the permissions boundary for a specified  PermissionSet .
+
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_permissions_boundary_for_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_permissions_boundary_for_permission_set)
+
+```python title="Method definition"
+def get_permissions_boundary_for_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+) -> GetPermissionsBoundaryForPermissionSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetPermissionsBoundaryForPermissionSetResponseTypeDef](./type_defs.md#getpermissionsboundaryforpermissionsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPermissionsBoundaryForPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
+
+parent.get_permissions_boundary_for_permission_set(**kwargs)
+```
+
+1. See [:material-code-braces: GetPermissionsBoundaryForPermissionSetRequestRequestTypeDef](./type_defs.md#getpermissionsboundaryforpermissionsetrequestrequesttypedef) 
 
 ### list\_account\_assignment\_creation\_status
 
@@ -737,6 +867,39 @@ parent.list_accounts_for_provisioned_permission_set(**kwargs)
 
 1. See [:material-code-braces: ListAccountsForProvisionedPermissionSetRequestRequestTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestrequesttypedef) 
 
+### list\_customer\_managed\_policy\_references\_in\_permission\_set
+
+Lists all IAM customer managed policies attached to a specified  PermissionSet .
+
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_customer_managed_policy_references_in_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_customer_managed_policy_references_in_permission_set)
+
+```python title="Method definition"
+def list_customer_managed_policy_references_in_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef](./type_defs.md#listcustomermanagedpolicyreferencesinpermissionsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomerManagedPolicyReferencesInPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
+
+parent.list_customer_managed_policy_references_in_permission_set(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomerManagedPolicyReferencesInPermissionSetRequestRequestTypeDef](./type_defs.md#listcustomermanagedpolicyreferencesinpermissionsetrequestrequesttypedef) 
+
 ### list\_instances
 
 Lists the SSO instances that the caller has access to.
@@ -769,7 +932,8 @@ parent.list_instances(**kwargs)
 
 ### list\_managed\_policies\_in\_permission\_set
 
-Lists the IAM managed policy that is attached to a specified permission set.
+Lists the Amazon Web Services managed IAM policy that is attached to a specified
+permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
@@ -1001,6 +1165,40 @@ parent.put_inline_policy_to_permission_set(**kwargs)
 
 1. See [:material-code-braces: PutInlinePolicyToPermissionSetRequestRequestTypeDef](./type_defs.md#putinlinepolicytopermissionsetrequestrequesttypedef) 
 
+### put\_permissions\_boundary\_to\_permission\_set
+
+Attaches an Amazon Web Services managed or customer managed IAM policy to the
+specified  PermissionSet as a permissions boundary.
+
+Type annotations and code completion for `#!python boto3.client("sso-admin").put_permissions_boundary_to_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_permissions_boundary_to_permission_set)
+
+```python title="Method definition"
+def put_permissions_boundary_to_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    PermissionsBoundary: PermissionsBoundaryTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: PermissionsBoundaryTypeDef](./type_defs.md#permissionsboundarytypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutPermissionsBoundaryToPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+    "PermissionsBoundary": ...,
+}
+
+parent.put_permissions_boundary_to_permission_set(**kwargs)
+```
+
+1. See [:material-code-braces: PutPermissionsBoundaryToPermissionSetRequestRequestTypeDef](./type_defs.md#putpermissionsboundarytopermissionsetrequestrequesttypedef) 
+
 ### tag\_resource
 
 Associates a set of tags with a specified resource.
@@ -1142,6 +1340,7 @@ Type annotations and code completion for `#!python boto3.client("sso-admin").get
 - `client.get_paginator("list_account_assignment_deletion_status")` -> [ListAccountAssignmentDeletionStatusPaginator](./paginators.md#listaccountassignmentdeletionstatuspaginator)
 - `client.get_paginator("list_account_assignments")` -> [ListAccountAssignmentsPaginator](./paginators.md#listaccountassignmentspaginator)
 - `client.get_paginator("list_accounts_for_provisioned_permission_set")` -> [ListAccountsForProvisionedPermissionSetPaginator](./paginators.md#listaccountsforprovisionedpermissionsetpaginator)
+- `client.get_paginator("list_customer_managed_policy_references_in_permission_set")` -> [ListCustomerManagedPolicyReferencesInPermissionSetPaginator](./paginators.md#listcustomermanagedpolicyreferencesinpermissionsetpaginator)
 - `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
 - `client.get_paginator("list_managed_policies_in_permission_set")` -> [ListManagedPoliciesInPermissionSetPaginator](./paginators.md#listmanagedpoliciesinpermissionsetpaginator)
 - `client.get_paginator("list_permission_set_provisioning_status")` -> [ListPermissionSetProvisioningStatusPaginator](./paginators.md#listpermissionsetprovisioningstatuspaginator)

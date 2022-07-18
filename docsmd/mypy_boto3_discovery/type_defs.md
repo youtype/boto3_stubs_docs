@@ -228,6 +228,34 @@ class CustomerAgentInfoTypeDef(TypedDict):
     unknownAgents: int,
 ```
 
+## CustomerAgentlessCollectorInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_discovery.type_defs import CustomerAgentlessCollectorInfoTypeDef
+
+def get_value() -> CustomerAgentlessCollectorInfoTypeDef:
+    return {
+        "activeAgentlessCollectors": ...,
+        "healthyAgentlessCollectors": ...,
+        "denyListedAgentlessCollectors": ...,
+        "shutdownAgentlessCollectors": ...,
+        "unhealthyAgentlessCollectors": ...,
+        "totalAgentlessCollectors": ...,
+        "unknownAgentlessCollectors": ...,
+    }
+```
+
+```python title="Definition"
+class CustomerAgentlessCollectorInfoTypeDef(TypedDict):
+    activeAgentlessCollectors: int,
+    healthyAgentlessCollectors: int,
+    denyListedAgentlessCollectors: int,
+    shutdownAgentlessCollectors: int,
+    unhealthyAgentlessCollectors: int,
+    totalAgentlessCollectors: int,
+    unknownAgentlessCollectors: int,
+```
+
 ## CustomerConnectorInfoTypeDef
 
 ```python title="Usage Example"
@@ -993,6 +1021,7 @@ def get_value() -> GetDiscoverySummaryResponseTypeDef:
         "agentSummary": ...,
         "connectorSummary": ...,
         "meCollectorSummary": ...,
+        "agentlessCollectorSummary": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1006,13 +1035,15 @@ class GetDiscoverySummaryResponseTypeDef(TypedDict):
     agentSummary: CustomerAgentInfoTypeDef,  # (1)
     connectorSummary: CustomerConnectorInfoTypeDef,  # (2)
     meCollectorSummary: CustomerMeCollectorInfoTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    agentlessCollectorSummary: CustomerAgentlessCollectorInfoTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: CustomerAgentInfoTypeDef](./type_defs.md#customeragentinfotypedef) 
 2. See [:material-code-braces: CustomerConnectorInfoTypeDef](./type_defs.md#customerconnectorinfotypedef) 
 3. See [:material-code-braces: CustomerMeCollectorInfoTypeDef](./type_defs.md#customermecollectorinfotypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: CustomerAgentlessCollectorInfoTypeDef](./type_defs.md#customeragentlesscollectorinfotypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAgentsRequestRequestTypeDef
 
 ```python title="Usage Example"

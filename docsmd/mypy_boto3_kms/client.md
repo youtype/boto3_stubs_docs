@@ -219,9 +219,9 @@ def create_custom_key_store(
     self,
     *,
     CustomKeyStoreName: str,
-    CloudHsmClusterId: str,
-    TrustAnchorCertificate: str,
-    KeyStorePassword: str,
+    CloudHsmClusterId: str = ...,
+    TrustAnchorCertificate: str = ...,
+    KeyStorePassword: str = ...,
 ) -> CreateCustomKeyStoreResponseTypeDef:  # (1)
     ...
 ```
@@ -232,9 +232,6 @@ def create_custom_key_store(
 ```python title="Usage example with kwargs"
 kwargs: CreateCustomKeyStoreRequestRequestTypeDef = {  # (1)
     "CustomKeyStoreName": ...,
-    "CloudHsmClusterId": ...,
-    "TrustAnchorCertificate": ...,
-    "KeyStorePassword": ...,
 }
 
 parent.create_custom_key_store(**kwargs)
@@ -1788,10 +1785,13 @@ parent.verify_mac(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("kms").get_paginator` method with overloads.
 
+- `client.get_paginator("describe_custom_key_stores")` -> [DescribeCustomKeyStoresPaginator](./paginators.md#describecustomkeystorespaginator)
 - `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
 - `client.get_paginator("list_grants")` -> [ListGrantsPaginator](./paginators.md#listgrantspaginator)
 - `client.get_paginator("list_key_policies")` -> [ListKeyPoliciesPaginator](./paginators.md#listkeypoliciespaginator)
 - `client.get_paginator("list_keys")` -> [ListKeysPaginator](./paginators.md#listkeyspaginator)
+- `client.get_paginator("list_resource_tags")` -> [ListResourceTagsPaginator](./paginators.md#listresourcetagspaginator)
+- `client.get_paginator("list_retirable_grants")` -> [ListRetirableGrantsPaginator](./paginators.md#listretirablegrantspaginator)
 
 
 

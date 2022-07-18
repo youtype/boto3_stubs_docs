@@ -152,6 +152,7 @@ def get_value() -> AgentConfigurationStatusTypeDef:
 - [CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [CustomerAgentInfoTypeDef](./type_defs.md#customeragentinfotypedef)
+- [CustomerAgentlessCollectorInfoTypeDef](./type_defs.md#customeragentlesscollectorinfotypedef)
 - [CustomerConnectorInfoTypeDef](./type_defs.md#customerconnectorinfotypedef)
 - [CustomerMeCollectorInfoTypeDef](./type_defs.md#customermecollectorinfotypedef)
 - [DeleteApplicationsRequestRequestTypeDef](./type_defs.md#deleteapplicationsrequestrequesttypedef)

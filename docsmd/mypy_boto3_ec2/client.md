@@ -2548,7 +2548,7 @@ parent.create_launch_template(**kwargs)
 
 ### create\_launch\_template\_version
 
-Creates a new version for a launch template.
+Creates a new version of a launch template.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_launch_template_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template_version)

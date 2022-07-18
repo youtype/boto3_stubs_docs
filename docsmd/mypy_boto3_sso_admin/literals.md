@@ -79,6 +79,20 @@ ListAccountsForProvisionedPermissionSetPaginatorName = Literal[
     "list_accounts_for_provisioned_permission_set",
 ]
 ```
+## ListCustomerManagedPolicyReferencesInPermissionSetPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sso_admin.literals import ListCustomerManagedPolicyReferencesInPermissionSetPaginatorName
+
+def get_value() -> ListCustomerManagedPolicyReferencesInPermissionSetPaginatorName:
+    return "list_customer_managed_policy_references_in_permission_set"
+```
+
+```python title="Definition"
+ListCustomerManagedPolicyReferencesInPermissionSetPaginatorName = Literal[
+    "list_customer_managed_policy_references_in_permission_set",
+]
+```
 ## ListInstancesPaginatorName
 
 ```python title="Usage Example"
@@ -613,6 +627,7 @@ PaginatorName = Literal[
     "list_account_assignment_deletion_status",
     "list_account_assignments",
     "list_accounts_for_provisioned_permission_set",
+    "list_customer_managed_policy_references_in_permission_set",
     "list_instances",
     "list_managed_policies_in_permission_set",
     "list_permission_set_provisioning_status",

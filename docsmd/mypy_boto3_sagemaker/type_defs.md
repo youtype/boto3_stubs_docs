@@ -1253,6 +1253,24 @@ class EdgeOutputConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EdgePresetDeploymentTypeType](./literals.md#edgepresetdeploymenttypetype) 
+## EdgeDeploymentModelConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EdgeDeploymentModelConfigTypeDef
+
+def get_value() -> EdgeDeploymentModelConfigTypeDef:
+    return {
+        "ModelHandle": ...,
+        "EdgePackagingJobName": ...,
+    }
+```
+
+```python title="Definition"
+class EdgeDeploymentModelConfigTypeDef(TypedDict):
+    ModelHandle: str,
+    EdgePackagingJobName: str,
+```
+
 ## FeatureDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -2310,6 +2328,40 @@ class RetentionPolicyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RetentionTypeType](./literals.md#retentiontypetype) 
+## DeleteEdgeDeploymentPlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteEdgeDeploymentPlanRequestRequestTypeDef
+
+def get_value() -> DeleteEdgeDeploymentPlanRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteEdgeDeploymentPlanRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+```
+
+## DeleteEdgeDeploymentStageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteEdgeDeploymentStageRequestRequestTypeDef
+
+def get_value() -> DeleteEdgeDeploymentStageRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+        "StageName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteEdgeDeploymentStageRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+```
+
 ## DeleteEndpointConfigInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2768,6 +2820,68 @@ class DeployedImageTypeDef(TypedDict):
     ResolutionTime: NotRequired[datetime],
 ```
 
+## DeviceSelectionConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeviceSelectionConfigTypeDef
+
+def get_value() -> DeviceSelectionConfigTypeDef:
+    return {
+        "DeviceSubsetType": ...,
+    }
+```
+
+```python title="Definition"
+class DeviceSelectionConfigTypeDef(TypedDict):
+    DeviceSubsetType: DeviceSubsetTypeType,  # (1)
+    Percentage: NotRequired[int],
+    DeviceNames: NotRequired[Sequence[str]],
+    DeviceNameContains: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DeviceSubsetTypeType](./literals.md#devicesubsettypetype) 
+## EdgeDeploymentConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EdgeDeploymentConfigTypeDef
+
+def get_value() -> EdgeDeploymentConfigTypeDef:
+    return {
+        "FailureHandlingPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class EdgeDeploymentConfigTypeDef(TypedDict):
+    FailureHandlingPolicy: FailureHandlingPolicyType,  # (1)
+```
+
+1. See [:material-code-brackets: FailureHandlingPolicyType](./literals.md#failurehandlingpolicytype) 
+## EdgeDeploymentStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EdgeDeploymentStatusTypeDef
+
+def get_value() -> EdgeDeploymentStatusTypeDef:
+    return {
+        "StageStatus": ...,
+        "EdgeDeploymentSuccessInStage": ...,
+        "EdgeDeploymentPendingInStage": ...,
+        "EdgeDeploymentFailedInStage": ...,
+    }
+```
+
+```python title="Definition"
+class EdgeDeploymentStatusTypeDef(TypedDict):
+    StageStatus: StageStatusType,  # (1)
+    EdgeDeploymentSuccessInStage: int,
+    EdgeDeploymentPendingInStage: int,
+    EdgeDeploymentFailedInStage: int,
+    EdgeDeploymentStatusMessage: NotRequired[str],
+    EdgeDeploymentStageStartTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: StageStatusType](./literals.md#stagestatustype) 
 ## DeregisterDevicesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3070,6 +3184,24 @@ def get_value() -> DescribeDomainRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeDomainRequestRequestTypeDef(TypedDict):
     DomainId: str,
+```
+
+## DescribeEdgeDeploymentPlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeEdgeDeploymentPlanRequestRequestTypeDef
+
+def get_value() -> DescribeEdgeDeploymentPlanRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEdgeDeploymentPlanRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## DescribeEdgePackagingJobRequestRequestTypeDef
@@ -4091,6 +4223,37 @@ class DesiredWeightAndCapacityTypeDef(TypedDict):
     DesiredInstanceCount: NotRequired[int],
 ```
 
+## DeviceDeploymentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeviceDeploymentSummaryTypeDef
+
+def get_value() -> DeviceDeploymentSummaryTypeDef:
+    return {
+        "EdgeDeploymentPlanArn": ...,
+        "EdgeDeploymentPlanName": ...,
+        "StageName": ...,
+        "DeviceName": ...,
+        "DeviceArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeviceDeploymentSummaryTypeDef(TypedDict):
+    EdgeDeploymentPlanArn: str,
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+    DeviceName: str,
+    DeviceArn: str,
+    DeployedStageName: NotRequired[str],
+    DeviceFleetName: NotRequired[str],
+    DeviceDeploymentStatus: NotRequired[DeviceDeploymentStatusType],  # (1)
+    DeviceDeploymentStatusMessage: NotRequired[str],
+    Description: NotRequired[str],
+    DeploymentStartTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: DeviceDeploymentStatusType](./literals.md#devicedeploymentstatustype) 
 ## DeviceFleetSummaryTypeDef
 
 ```python title="Usage Example"
@@ -4241,6 +4404,34 @@ class EMRStepMetadataTypeDef(TypedDict):
     StepId: NotRequired[str],
     StepName: NotRequired[str],
     LogFilePath: NotRequired[str],
+```
+
+## EdgeDeploymentPlanSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EdgeDeploymentPlanSummaryTypeDef
+
+def get_value() -> EdgeDeploymentPlanSummaryTypeDef:
+    return {
+        "EdgeDeploymentPlanArn": ...,
+        "EdgeDeploymentPlanName": ...,
+        "DeviceFleetName": ...,
+        "EdgeDeploymentSuccess": ...,
+        "EdgeDeploymentPending": ...,
+        "EdgeDeploymentFailed": ...,
+    }
+```
+
+```python title="Definition"
+class EdgeDeploymentPlanSummaryTypeDef(TypedDict):
+    EdgeDeploymentPlanArn: str,
+    EdgeDeploymentPlanName: str,
+    DeviceFleetName: str,
+    EdgeDeploymentSuccess: int,
+    EdgeDeploymentPending: int,
+    EdgeDeploymentFailed: int,
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
 ```
 
 ## EdgeModelStatTypeDef
@@ -5406,6 +5597,33 @@ class ListDomainsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListEdgeDeploymentPlansRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListEdgeDeploymentPlansRequestRequestTypeDef
+
+def get_value() -> ListEdgeDeploymentPlansRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListEdgeDeploymentPlansRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    LastModifiedTimeAfter: NotRequired[Union[datetime, str]],
+    LastModifiedTimeBefore: NotRequired[Union[datetime, str]],
+    NameContains: NotRequired[str],
+    DeviceFleetNameContains: NotRequired[str],
+    SortBy: NotRequired[ListEdgeDeploymentPlansSortByType],  # (1)
+    SortOrder: NotRequired[SortOrderType],  # (2)
+```
+
+1. See [:material-code-brackets: ListEdgeDeploymentPlansSortByType](./literals.md#listedgedeploymentplanssortbytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListEdgePackagingJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6466,6 +6684,27 @@ class ProjectSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
+## ListStageDevicesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListStageDevicesRequestRequestTypeDef
+
+def get_value() -> ListStageDevicesRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+        "StageName": ...,
+    }
+```
+
+```python title="Definition"
+class ListStageDevicesRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ExcludeDevicesDeployedInOtherStage: NotRequired[bool],
+```
+
 ## ListStudioLifecycleConfigsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7670,6 +7909,24 @@ class SourceAlgorithmTypeDef(TypedDict):
     ModelDataUrl: NotRequired[str],
 ```
 
+## StartEdgeDeploymentStageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import StartEdgeDeploymentStageRequestRequestTypeDef
+
+def get_value() -> StartEdgeDeploymentStageRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+        "StageName": ...,
+    }
+```
+
+```python title="Definition"
+class StartEdgeDeploymentStageRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+```
+
 ## StartMonitoringScheduleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7732,6 +7989,24 @@ def get_value() -> StopCompilationJobRequestRequestTypeDef:
 ```python title="Definition"
 class StopCompilationJobRequestRequestTypeDef(TypedDict):
     CompilationJobName: str,
+```
+
+## StopEdgeDeploymentStageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import StopEdgeDeploymentStageRequestRequestTypeDef
+
+def get_value() -> StopEdgeDeploymentStageRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+        "StageName": ...,
+    }
+```
+
+```python title="Definition"
+class StopEdgeDeploymentStageRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    StageName: str,
 ```
 
 ## StopEdgePackagingJobRequestRequestTypeDef
@@ -8340,6 +8615,25 @@ def get_value() -> CreateDomainResponseTypeDef:
 class CreateDomainResponseTypeDef(TypedDict):
     DomainArn: str,
     Url: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateEdgeDeploymentPlanResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateEdgeDeploymentPlanResponseTypeDef
+
+def get_value() -> CreateEdgeDeploymentPlanResponseTypeDef:
+    return {
+        "EdgeDeploymentPlanArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEdgeDeploymentPlanResponseTypeDef(TypedDict):
+    EdgeDeploymentPlanArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -12014,6 +12308,52 @@ class DeleteDomainRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RetentionPolicyTypeDef](./type_defs.md#retentionpolicytypedef) 
+## DeploymentStageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeploymentStageTypeDef
+
+def get_value() -> DeploymentStageTypeDef:
+    return {
+        "StageName": ...,
+        "DeviceSelectionConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DeploymentStageTypeDef(TypedDict):
+    StageName: str,
+    DeviceSelectionConfig: DeviceSelectionConfigTypeDef,  # (1)
+    DeploymentConfig: NotRequired[EdgeDeploymentConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DeviceSelectionConfigTypeDef](./type_defs.md#deviceselectionconfigtypedef) 
+2. See [:material-code-braces: EdgeDeploymentConfigTypeDef](./type_defs.md#edgedeploymentconfigtypedef) 
+## DeploymentStageStatusSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeploymentStageStatusSummaryTypeDef
+
+def get_value() -> DeploymentStageStatusSummaryTypeDef:
+    return {
+        "StageName": ...,
+        "DeviceSelectionConfig": ...,
+        "DeploymentConfig": ...,
+        "DeploymentStatus": ...,
+    }
+```
+
+```python title="Definition"
+class DeploymentStageStatusSummaryTypeDef(TypedDict):
+    StageName: str,
+    DeviceSelectionConfig: DeviceSelectionConfigTypeDef,  # (1)
+    DeploymentConfig: EdgeDeploymentConfigTypeDef,  # (2)
+    DeploymentStatus: EdgeDeploymentStatusTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: DeviceSelectionConfigTypeDef](./type_defs.md#deviceselectionconfigtypedef) 
+2. See [:material-code-braces: EdgeDeploymentConfigTypeDef](./type_defs.md#edgedeploymentconfigtypedef) 
+3. See [:material-code-braces: EdgeDeploymentStatusTypeDef](./type_defs.md#edgedeploymentstatustypedef) 
 ## DescribeDeviceResponseTypeDef
 
 ```python title="Usage Example"
@@ -12868,6 +13208,28 @@ class UpdateEndpointWeightsAndCapacitiesInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DesiredWeightAndCapacityTypeDef](./type_defs.md#desiredweightandcapacitytypedef) 
+## ListStageDevicesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListStageDevicesResponseTypeDef
+
+def get_value() -> ListStageDevicesResponseTypeDef:
+    return {
+        "DeviceDeploymentSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStageDevicesResponseTypeDef(TypedDict):
+    DeviceDeploymentSummaries: List[DeviceDeploymentSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceDeploymentSummaryTypeDef](./type_defs.md#devicedeploymentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDeviceFleetsResponseTypeDef
 
 ```python title="Usage Example"
@@ -13018,6 +13380,28 @@ class DriftCheckExplainabilityTypeDef(TypedDict):
 
 1. See [:material-code-braces: MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef) 
 2. See [:material-code-braces: FileSourceTypeDef](./type_defs.md#filesourcetypedef) 
+## ListEdgeDeploymentPlansResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListEdgeDeploymentPlansResponseTypeDef
+
+def get_value() -> ListEdgeDeploymentPlansResponseTypeDef:
+    return {
+        "EdgeDeploymentPlanSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEdgeDeploymentPlansResponseTypeDef(TypedDict):
+    EdgeDeploymentPlanSummaries: List[EdgeDeploymentPlanSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EdgeDeploymentPlanSummaryTypeDef](./type_defs.md#edgedeploymentplansummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceFleetReportResponseTypeDef
 
 ```python title="Usage Example"
@@ -13952,6 +14336,33 @@ class ListDomainsRequestListDomainsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListEdgeDeploymentPlansRequestListEdgeDeploymentPlansPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListEdgeDeploymentPlansRequestListEdgeDeploymentPlansPaginateTypeDef
+
+def get_value() -> ListEdgeDeploymentPlansRequestListEdgeDeploymentPlansPaginateTypeDef:
+    return {
+        "CreationTimeAfter": ...,
+    }
+```
+
+```python title="Definition"
+class ListEdgeDeploymentPlansRequestListEdgeDeploymentPlansPaginateTypeDef(TypedDict):
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    LastModifiedTimeAfter: NotRequired[Union[datetime, str]],
+    LastModifiedTimeBefore: NotRequired[Union[datetime, str]],
+    NameContains: NotRequired[str],
+    DeviceFleetNameContains: NotRequired[str],
+    SortBy: NotRequired[ListEdgeDeploymentPlansSortByType],  # (1)
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ListEdgeDeploymentPlansSortByType](./literals.md#listedgedeploymentplanssortbytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEdgePackagingJobsRequestListEdgePackagingJobsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -14699,6 +15110,27 @@ class ListProcessingJobsRequestListProcessingJobsPaginateTypeDef(TypedDict):
 2. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
 3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListStageDevicesRequestListStageDevicesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListStageDevicesRequestListStageDevicesPaginateTypeDef
+
+def get_value() -> ListStageDevicesRequestListStageDevicesPaginateTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+        "StageName": ...,
+    }
+```
+
+```python title="Definition"
+class ListStageDevicesRequestListStageDevicesPaginateTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+    ExcludeDevicesDeployedInOtherStage: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStudioLifecycleConfigsRequestListStudioLifecycleConfigsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -16686,6 +17118,91 @@ class ProcessingInputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProcessingS3InputTypeDef](./type_defs.md#processings3inputtypedef) 
 2. See [:material-code-braces: DatasetDefinitionTypeDef](./type_defs.md#datasetdefinitiontypedef) 
+## CreateEdgeDeploymentPlanRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateEdgeDeploymentPlanRequestRequestTypeDef
+
+def get_value() -> CreateEdgeDeploymentPlanRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+        "ModelConfigs": ...,
+        "DeviceFleetName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEdgeDeploymentPlanRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    ModelConfigs: Sequence[EdgeDeploymentModelConfigTypeDef],  # (1)
+    DeviceFleetName: str,
+    Stages: NotRequired[Sequence[DeploymentStageTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: EdgeDeploymentModelConfigTypeDef](./type_defs.md#edgedeploymentmodelconfigtypedef) 
+2. See [:material-code-braces: DeploymentStageTypeDef](./type_defs.md#deploymentstagetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateEdgeDeploymentStageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateEdgeDeploymentStageRequestRequestTypeDef
+
+def get_value() -> CreateEdgeDeploymentStageRequestRequestTypeDef:
+    return {
+        "EdgeDeploymentPlanName": ...,
+        "Stages": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEdgeDeploymentStageRequestRequestTypeDef(TypedDict):
+    EdgeDeploymentPlanName: str,
+    Stages: Sequence[DeploymentStageTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DeploymentStageTypeDef](./type_defs.md#deploymentstagetypedef) 
+## DescribeEdgeDeploymentPlanResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeEdgeDeploymentPlanResponseTypeDef
+
+def get_value() -> DescribeEdgeDeploymentPlanResponseTypeDef:
+    return {
+        "EdgeDeploymentPlanArn": ...,
+        "EdgeDeploymentPlanName": ...,
+        "ModelConfigs": ...,
+        "DeviceFleetName": ...,
+        "EdgeDeploymentSuccess": ...,
+        "EdgeDeploymentPending": ...,
+        "EdgeDeploymentFailed": ...,
+        "Stages": ...,
+        "NextToken": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEdgeDeploymentPlanResponseTypeDef(TypedDict):
+    EdgeDeploymentPlanArn: str,
+    EdgeDeploymentPlanName: str,
+    ModelConfigs: List[EdgeDeploymentModelConfigTypeDef],  # (1)
+    DeviceFleetName: str,
+    EdgeDeploymentSuccess: int,
+    EdgeDeploymentPending: int,
+    EdgeDeploymentFailed: int,
+    Stages: List[DeploymentStageStatusSummaryTypeDef],  # (2)
+    NextToken: str,
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: EdgeDeploymentModelConfigTypeDef](./type_defs.md#edgedeploymentmodelconfigtypedef) 
+2. See [:material-code-braces: DeploymentStageStatusSummaryTypeDef](./type_defs.md#deploymentstagestatussummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExperimentsResponseTypeDef
 
 ```python title="Usage Example"

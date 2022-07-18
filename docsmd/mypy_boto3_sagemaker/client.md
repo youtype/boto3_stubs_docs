@@ -705,6 +705,76 @@ parent.create_domain(**kwargs)
 
 1. See [:material-code-braces: CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef) 
 
+### create\_edge\_deployment\_plan
+
+Creates an edge deployment plan, consisting of multiple stages.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").create_edge_deployment_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_deployment_plan)
+
+```python title="Method definition"
+def create_edge_deployment_plan(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+    ModelConfigs: Sequence[EdgeDeploymentModelConfigTypeDef],  # (1)
+    DeviceFleetName: str,
+    Stages: Sequence[DeploymentStageTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateEdgeDeploymentPlanResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: EdgeDeploymentModelConfigTypeDef](./type_defs.md#edgedeploymentmodelconfigtypedef) 
+2. See [:material-code-braces: DeploymentStageTypeDef](./type_defs.md#deploymentstagetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateEdgeDeploymentPlanResponseTypeDef](./type_defs.md#createedgedeploymentplanresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateEdgeDeploymentPlanRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+    "ModelConfigs": ...,
+    "DeviceFleetName": ...,
+}
+
+parent.create_edge_deployment_plan(**kwargs)
+```
+
+1. See [:material-code-braces: CreateEdgeDeploymentPlanRequestRequestTypeDef](./type_defs.md#createedgedeploymentplanrequestrequesttypedef) 
+
+### create\_edge\_deployment\_stage
+
+Creates a new stage in an existing edge deployment plan.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").create_edge_deployment_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_deployment_stage)
+
+```python title="Method definition"
+def create_edge_deployment_stage(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+    Stages: Sequence[DeploymentStageTypeDef],  # (1)
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DeploymentStageTypeDef](./type_defs.md#deploymentstagetypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateEdgeDeploymentStageRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+    "Stages": ...,
+}
+
+parent.create_edge_deployment_stage(**kwargs)
+```
+
+1. See [:material-code-braces: CreateEdgeDeploymentStageRequestRequestTypeDef](./type_defs.md#createedgedeploymentstagerequestrequesttypedef) 
+
 ### create\_edge\_packaging\_job
 
 Starts a SageMaker Edge Manager model packaging job.
@@ -2460,6 +2530,68 @@ parent.delete_domain(**kwargs)
 
 1. See [:material-code-braces: DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef) 
 
+### delete\_edge\_deployment\_plan
+
+Deletes an edge deployment plan if (and only if) all the stages in the plan are
+inactive or there are no stages in the plan.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").delete_edge_deployment_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_edge_deployment_plan)
+
+```python title="Method definition"
+def delete_edge_deployment_plan(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteEdgeDeploymentPlanRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+}
+
+parent.delete_edge_deployment_plan(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteEdgeDeploymentPlanRequestRequestTypeDef](./type_defs.md#deleteedgedeploymentplanrequestrequesttypedef) 
+
+### delete\_edge\_deployment\_stage
+
+Delete a stage in an edge deployment plan if (and only if) the stage is
+inactive.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").delete_edge_deployment_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_edge_deployment_stage)
+
+```python title="Method definition"
+def delete_edge_deployment_stage(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteEdgeDeploymentStageRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+    "StageName": ...,
+}
+
+parent.delete_edge_deployment_stage(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteEdgeDeploymentStageRequestRequestTypeDef](./type_defs.md#deleteedgedeploymentstagerequestrequesttypedef) 
+
 ### delete\_endpoint
 
 Deletes an endpoint.
@@ -3663,6 +3795,37 @@ parent.describe_domain(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef) 
+
+### describe\_edge\_deployment\_plan
+
+Describes an edge deployment plan with deployment status per stage.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_edge_deployment_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_edge_deployment_plan)
+
+```python title="Method definition"
+def describe_edge_deployment_plan(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeEdgeDeploymentPlanResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeEdgeDeploymentPlanResponseTypeDef](./type_defs.md#describeedgedeploymentplanresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEdgeDeploymentPlanRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+}
+
+parent.describe_edge_deployment_plan(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEdgeDeploymentPlanRequestRequestTypeDef](./type_defs.md#describeedgedeploymentplanrequestrequesttypedef) 
 
 ### describe\_edge\_packaging\_job
 
@@ -5530,6 +5693,46 @@ parent.list_domains(**kwargs)
 
 1. See [:material-code-braces: ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef) 
 
+### list\_edge\_deployment\_plans
+
+Lists all edge deployment plans.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_edge_deployment_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_edge_deployment_plans)
+
+```python title="Method definition"
+def list_edge_deployment_plans(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    LastModifiedTimeAfter: Union[datetime, str] = ...,
+    LastModifiedTimeBefore: Union[datetime, str] = ...,
+    NameContains: str = ...,
+    DeviceFleetNameContains: str = ...,
+    SortBy: ListEdgeDeploymentPlansSortByType = ...,  # (1)
+    SortOrder: SortOrderType = ...,  # (2)
+) -> ListEdgeDeploymentPlansResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ListEdgeDeploymentPlansSortByType](./literals.md#listedgedeploymentplanssortbytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: ListEdgeDeploymentPlansResponseTypeDef](./type_defs.md#listedgedeploymentplansresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListEdgeDeploymentPlansRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_edge_deployment_plans(**kwargs)
+```
+
+1. See [:material-code-braces: ListEdgeDeploymentPlansRequestRequestTypeDef](./type_defs.md#listedgedeploymentplansrequestrequesttypedef) 
+
 ### list\_edge\_packaging\_jobs
 
 Returns a list of edge packaging jobs.
@@ -6727,6 +6930,41 @@ parent.list_projects(**kwargs)
 
 1. See [:material-code-braces: ListProjectsInputRequestTypeDef](./type_defs.md#listprojectsinputrequesttypedef) 
 
+### list\_stage\_devices
+
+Lists devices allocated to the stage, containing detailed device information and
+deployment status.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_stage_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_stage_devices)
+
+```python title="Method definition"
+def list_stage_devices(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ExcludeDevicesDeployedInOtherStage: bool = ...,
+) -> ListStageDevicesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListStageDevicesResponseTypeDef](./type_defs.md#liststagedevicesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStageDevicesRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+    "StageName": ...,
+}
+
+parent.list_stage_devices(**kwargs)
+```
+
+1. See [:material-code-braces: ListStageDevicesRequestRequestTypeDef](./type_defs.md#liststagedevicesrequestrequesttypedef) 
+
 ### list\_studio\_lifecycle\_configs
 
 Lists the Studio Lifecycle Configurations in your Amazon Web Services Account.
@@ -7408,6 +7646,37 @@ parent.send_pipeline_execution_step_success(**kwargs)
 
 1. See [:material-code-braces: SendPipelineExecutionStepSuccessRequestRequestTypeDef](./type_defs.md#sendpipelineexecutionstepsuccessrequestrequesttypedef) 
 
+### start\_edge\_deployment\_stage
+
+Starts a stage in an edge deployment plan.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").start_edge_deployment_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_edge_deployment_stage)
+
+```python title="Method definition"
+def start_edge_deployment_stage(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartEdgeDeploymentStageRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+    "StageName": ...,
+}
+
+parent.start_edge_deployment_stage(**kwargs)
+```
+
+1. See [:material-code-braces: StartEdgeDeploymentStageRequestRequestTypeDef](./type_defs.md#startedgedeploymentstagerequestrequesttypedef) 
+
 ### start\_monitoring\_schedule
 
 Starts a previously stopped monitoring schedule.
@@ -7561,6 +7830,37 @@ parent.stop_compilation_job(**kwargs)
 ```
 
 1. See [:material-code-braces: StopCompilationJobRequestRequestTypeDef](./type_defs.md#stopcompilationjobrequestrequesttypedef) 
+
+### stop\_edge\_deployment\_stage
+
+Stops a stage in an edge deployment plan.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").stop_edge_deployment_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_edge_deployment_stage)
+
+```python title="Method definition"
+def stop_edge_deployment_stage(
+    self,
+    *,
+    EdgeDeploymentPlanName: str,
+    StageName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopEdgeDeploymentStageRequestRequestTypeDef = {  # (1)
+    "EdgeDeploymentPlanName": ...,
+    "StageName": ...,
+}
+
+parent.stop_edge_deployment_stage(**kwargs)
+```
+
+1. See [:material-code-braces: StopEdgeDeploymentStageRequestRequestTypeDef](./type_defs.md#stopedgedeploymentstagerequestrequesttypedef) 
 
 ### stop\_edge\_packaging\_job
 
@@ -8797,6 +9097,7 @@ Type annotations and code completion for `#!python boto3.client("sagemaker").get
 - `client.get_paginator("list_device_fleets")` -> [ListDeviceFleetsPaginator](./paginators.md#listdevicefleetspaginator)
 - `client.get_paginator("list_devices")` -> [ListDevicesPaginator](./paginators.md#listdevicespaginator)
 - `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("list_edge_deployment_plans")` -> [ListEdgeDeploymentPlansPaginator](./paginators.md#listedgedeploymentplanspaginator)
 - `client.get_paginator("list_edge_packaging_jobs")` -> [ListEdgePackagingJobsPaginator](./paginators.md#listedgepackagingjobspaginator)
 - `client.get_paginator("list_endpoint_configs")` -> [ListEndpointConfigsPaginator](./paginators.md#listendpointconfigspaginator)
 - `client.get_paginator("list_endpoints")` -> [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
@@ -8827,6 +9128,7 @@ Type annotations and code completion for `#!python boto3.client("sagemaker").get
 - `client.get_paginator("list_pipeline_parameters_for_execution")` -> [ListPipelineParametersForExecutionPaginator](./paginators.md#listpipelineparametersforexecutionpaginator)
 - `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - `client.get_paginator("list_processing_jobs")` -> [ListProcessingJobsPaginator](./paginators.md#listprocessingjobspaginator)
+- `client.get_paginator("list_stage_devices")` -> [ListStageDevicesPaginator](./paginators.md#liststagedevicespaginator)
 - `client.get_paginator("list_studio_lifecycle_configs")` -> [ListStudioLifecycleConfigsPaginator](./paginators.md#liststudiolifecycleconfigspaginator)
 - `client.get_paginator("list_subscribed_workteams")` -> [ListSubscribedWorkteamsPaginator](./paginators.md#listsubscribedworkteamspaginator)
 - `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)

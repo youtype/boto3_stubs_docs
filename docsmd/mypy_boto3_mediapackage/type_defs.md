@@ -1151,6 +1151,7 @@ class DashPackageTypeDef(TypedDict):
     AdTriggers: NotRequired[Sequence[AdTriggersElementType]],  # (1)
     AdsOnDeliveryRestrictions: NotRequired[AdsOnDeliveryRestrictionsType],  # (2)
     Encryption: NotRequired[DashEncryptionTypeDef],  # (3)
+    IncludeIframeOnlyStream: NotRequired[bool],
     ManifestLayout: NotRequired[ManifestLayoutType],  # (4)
     ManifestWindowSeconds: NotRequired[int],
     MinBufferTimeSeconds: NotRequired[int],

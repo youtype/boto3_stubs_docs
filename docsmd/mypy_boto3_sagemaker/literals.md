@@ -791,6 +791,41 @@ DetailedModelPackageStatusType = Literal[
     "NotStarted",
 ]
 ```
+## DeviceDeploymentStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import DeviceDeploymentStatusType
+
+def get_value() -> DeviceDeploymentStatusType:
+    return "DEPLOYED"
+```
+
+```python title="Definition"
+DeviceDeploymentStatusType = Literal[
+    "DEPLOYED",
+    "FAILED",
+    "INPROGRESS",
+    "READYTODEPLOY",
+    "STOPPED",
+    "STOPPING",
+]
+```
+## DeviceSubsetTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import DeviceSubsetTypeType
+
+def get_value() -> DeviceSubsetTypeType:
+    return "NAMECONTAINS"
+```
+
+```python title="Definition"
+DeviceSubsetTypeType = Literal[
+    "NAMECONTAINS",
+    "PERCENTAGE",
+    "SELECTION",
+]
+```
 ## DirectInternetAccessType
 
 ```python title="Usage Example"
@@ -988,6 +1023,21 @@ ExecutionStatusType = Literal[
     "Pending",
     "Stopped",
     "Stopping",
+]
+```
+## FailureHandlingPolicyType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import FailureHandlingPolicyType
+
+def get_value() -> FailureHandlingPolicyType:
+    return "DO_NOTHING"
+```
+
+```python title="Definition"
+FailureHandlingPolicyType = Literal[
+    "DO_NOTHING",
+    "ROLLBACK_ON_FAILURE",
 ]
 ```
 ## FeatureGroupSortByType
@@ -1827,6 +1877,37 @@ ListDomainsPaginatorName = Literal[
     "list_domains",
 ]
 ```
+## ListEdgeDeploymentPlansPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListEdgeDeploymentPlansPaginatorName
+
+def get_value() -> ListEdgeDeploymentPlansPaginatorName:
+    return "list_edge_deployment_plans"
+```
+
+```python title="Definition"
+ListEdgeDeploymentPlansPaginatorName = Literal[
+    "list_edge_deployment_plans",
+]
+```
+## ListEdgeDeploymentPlansSortByType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListEdgeDeploymentPlansSortByType
+
+def get_value() -> ListEdgeDeploymentPlansSortByType:
+    return "CREATION_TIME"
+```
+
+```python title="Definition"
+ListEdgeDeploymentPlansSortByType = Literal[
+    "CREATION_TIME",
+    "DEVICE_FLEET_NAME",
+    "LAST_MODIFIED_TIME",
+    "NAME",
+]
+```
 ## ListEdgePackagingJobsPaginatorName
 
 ```python title="Usage Example"
@@ -2293,6 +2374,20 @@ def get_value() -> ListProcessingJobsPaginatorName:
 ```python title="Definition"
 ListProcessingJobsPaginatorName = Literal[
     "list_processing_jobs",
+]
+```
+## ListStageDevicesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListStageDevicesPaginatorName
+
+def get_value() -> ListStageDevicesPaginatorName:
+    return "list_stage_devices"
+```
+
+```python title="Definition"
+ListStageDevicesPaginatorName = Literal[
+    "list_stage_devices",
 ]
 ```
 ## ListStudioLifecycleConfigsPaginatorName
@@ -3884,6 +3979,27 @@ SplitTypeType = Literal[
     "TFRecord",
 ]
 ```
+## StageStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import StageStatusType
+
+def get_value() -> StageStatusType:
+    return "CREATING"
+```
+
+```python title="Definition"
+StageStatusType = Literal[
+    "CREATING",
+    "DEPLOYED",
+    "FAILED",
+    "INPROGRESS",
+    "READYTODEPLOY",
+    "STARTING",
+    "STOPPED",
+    "STOPPING",
+]
+```
 ## StepStatusType
 
 ```python title="Usage Example"
@@ -4767,6 +4883,7 @@ PaginatorName = Literal[
     "list_device_fleets",
     "list_devices",
     "list_domains",
+    "list_edge_deployment_plans",
     "list_edge_packaging_jobs",
     "list_endpoint_configs",
     "list_endpoints",
@@ -4797,6 +4914,7 @@ PaginatorName = Literal[
     "list_pipeline_parameters_for_execution",
     "list_pipelines",
     "list_processing_jobs",
+    "list_stage_devices",
     "list_studio_lifecycle_configs",
     "list_subscribed_workteams",
     "list_tags",

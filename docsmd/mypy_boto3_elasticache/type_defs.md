@@ -4113,6 +4113,7 @@ class ReplicationGroupTypeDef(TypedDict):
     LogDeliveryConfigurations: NotRequired[List[LogDeliveryConfigurationTypeDef]],  # (7)
     ReplicationGroupCreateTime: NotRequired[datetime],
     DataTiering: NotRequired[DataTieringStatusType],  # (8)
+    AutoMinorVersionUpgrade: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: GlobalReplicationGroupInfoTypeDef](./type_defs.md#globalreplicationgroupinfotypedef) 

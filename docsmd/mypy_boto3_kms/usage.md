@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("kms")  # (1)
 
-    paginator = client.get_paginator("list_aliases")  # (2)
+    paginator = client.get_paginator("describe_custom_key_stores")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [KMSClient](./client.md)
-    2. paginator: [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-    3. item: [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+    2. paginator: [DescribeCustomKeyStoresPaginator](./paginators.md#describecustomkeystorespaginator)
+    3. item: [:material-code-braces: DescribeCustomKeyStoresResponseTypeDef](./type_defs.md#describecustomkeystoresresponsetypedef) 
 
 
 
@@ -90,16 +90,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_kms.client import KMSClient
-    from mypy_boto3_kms.paginator import ListAliasesPaginator
-    from mypy_boto3_kms.type_defs import ListAliasesResponseTypeDef
+    from mypy_boto3_kms.paginator import DescribeCustomKeyStoresPaginator
+    from mypy_boto3_kms.type_defs import DescribeCustomKeyStoresResponseTypeDef
 
 
     session = Session()
     client: KMSClient = session.client("kms")
 
-    paginator: ListAliasesPaginator = client.get_paginator("list_aliases")
+    paginator: DescribeCustomKeyStoresPaginator = client.get_paginator("describe_custom_key_stores")
     for item in paginator.paginate(...):
-        item: ListAliasesResponseTypeDef
+        item: DescribeCustomKeyStoresResponseTypeDef
         print(item)
     ```
 

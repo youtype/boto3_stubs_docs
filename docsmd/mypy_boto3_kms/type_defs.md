@@ -109,18 +109,15 @@ from mypy_boto3_kms.type_defs import CreateCustomKeyStoreRequestRequestTypeDef
 def get_value() -> CreateCustomKeyStoreRequestRequestTypeDef:
     return {
         "CustomKeyStoreName": ...,
-        "CloudHsmClusterId": ...,
-        "TrustAnchorCertificate": ...,
-        "KeyStorePassword": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateCustomKeyStoreRequestRequestTypeDef(TypedDict):
     CustomKeyStoreName: str,
-    CloudHsmClusterId: str,
-    TrustAnchorCertificate: str,
-    KeyStorePassword: str,
+    CloudHsmClusterId: NotRequired[str],
+    TrustAnchorCertificate: NotRequired[str],
+    KeyStorePassword: NotRequired[str],
 ```
 
 ## GrantConstraintsTypeDef
@@ -249,6 +246,24 @@ def get_value() -> DeleteImportedKeyMaterialRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteImportedKeyMaterialRequestRequestTypeDef(TypedDict):
     KeyId: str,
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
 ```
 
 ## DescribeCustomKeyStoresRequestRequestTypeDef
@@ -623,24 +638,6 @@ def get_value() -> KeyListEntryTypeDef:
 class KeyListEntryTypeDef(TypedDict):
     KeyId: NotRequired[str],
     KeyArn: NotRequired[str],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## ListAliasesRequestRequestTypeDef
@@ -1744,30 +1741,25 @@ class DescribeCustomKeyStoresResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: CustomKeyStoresListEntryTypeDef](./type_defs.md#customkeystoreslistentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListKeysResponseTypeDef
+## DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import ListKeysResponseTypeDef
+from mypy_boto3_kms.type_defs import DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef
 
-def get_value() -> ListKeysResponseTypeDef:
+def get_value() -> DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef:
     return {
-        "Keys": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
+        "CustomKeyStoreId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListKeysResponseTypeDef(TypedDict):
-    Keys: List[KeyListEntryTypeDef],  # (1)
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef(TypedDict):
+    CustomKeyStoreId: NotRequired[str],
+    CustomKeyStoreName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: KeyListEntryTypeDef](./type_defs.md#keylistentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAliasesRequestListAliasesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1841,6 +1833,66 @@ class ListKeysRequestListKeysPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourceTagsRequestListResourceTagsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListResourceTagsRequestListResourceTagsPaginateTypeDef
+
+def get_value() -> ListResourceTagsRequestListResourceTagsPaginateTypeDef:
+    return {
+        "KeyId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceTagsRequestListResourceTagsPaginateTypeDef(TypedDict):
+    KeyId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRetirableGrantsRequestListRetirableGrantsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListRetirableGrantsRequestListRetirableGrantsPaginateTypeDef
+
+def get_value() -> ListRetirableGrantsRequestListRetirableGrantsPaginateTypeDef:
+    return {
+        "RetiringPrincipal": ...,
+    }
+```
+
+```python title="Definition"
+class ListRetirableGrantsRequestListRetirableGrantsPaginateTypeDef(TypedDict):
+    RetiringPrincipal: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListKeysResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import ListKeysResponseTypeDef
+
+def get_value() -> ListKeysResponseTypeDef:
+    return {
+        "Keys": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeysResponseTypeDef(TypedDict):
+    Keys: List[KeyListEntryTypeDef],  # (1)
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KeyListEntryTypeDef](./type_defs.md#keylistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MultiRegionConfigurationTypeDef
 
 ```python title="Usage Example"

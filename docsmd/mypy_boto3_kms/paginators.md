@@ -7,6 +7,66 @@
     Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
     type annotations stubs module [mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
+## DescribeCustomKeyStoresPaginator
+
+Type annotations and code completion for `#!python boto3.client("kms").get_paginator("describe_custom_key_stores")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.DescribeCustomKeyStores)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import DescribeCustomKeyStoresPaginator
+
+def get_describe_custom_key_stores_paginator() -> DescribeCustomKeyStoresPaginator:
+    return Session().client("kms").get_paginator("describe_custom_key_stores")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import DescribeCustomKeyStoresPaginator
+
+session = Session()
+
+client = Session().client("kms")  # (1)
+paginator: DescribeCustomKeyStoresPaginator = client.get_paginator("describe_custom_key_stores")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KMSClient](./client.md)
+2. paginator: [DescribeCustomKeyStoresPaginator](./paginators.md#describecustomkeystorespaginator)
+3. item: [:material-code-braces: DescribeCustomKeyStoresResponseTypeDef](./type_defs.md#describecustomkeystoresresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeCustomKeyStoresPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CustomKeyStoreId: str = ...,
+    CustomKeyStoreName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeCustomKeyStoresResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeCustomKeyStoresResponseTypeDef](./type_defs.md#describecustomkeystoresresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef = {  # (1)
+    "CustomKeyStoreId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef](./type_defs.md#describecustomkeystoresrequestdescribecustomkeystorespaginatetypedef) 
 ## ListAliasesPaginator
 
 Type annotations and code completion for `#!python boto3.client("kms").get_paginator("list_aliases")`.
@@ -244,3 +304,121 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListKeysRequestListKeysPaginateTypeDef](./type_defs.md#listkeysrequestlistkeyspaginatetypedef) 
+## ListResourceTagsPaginator
+
+Type annotations and code completion for `#!python boto3.client("kms").get_paginator("list_resource_tags")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListResourceTags)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListResourceTagsPaginator
+
+def get_list_resource_tags_paginator() -> ListResourceTagsPaginator:
+    return Session().client("kms").get_paginator("list_resource_tags")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListResourceTagsPaginator
+
+session = Session()
+
+client = Session().client("kms")  # (1)
+paginator: ListResourceTagsPaginator = client.get_paginator("list_resource_tags")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KMSClient](./client.md)
+2. paginator: [ListResourceTagsPaginator](./paginators.md#listresourcetagspaginator)
+3. item: [:material-code-braces: ListResourceTagsResponseTypeDef](./type_defs.md#listresourcetagsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListResourceTagsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    KeyId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourceTagsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourceTagsResponseTypeDef](./type_defs.md#listresourcetagsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceTagsRequestListResourceTagsPaginateTypeDef = {  # (1)
+    "KeyId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceTagsRequestListResourceTagsPaginateTypeDef](./type_defs.md#listresourcetagsrequestlistresourcetagspaginatetypedef) 
+## ListRetirableGrantsPaginator
+
+Type annotations and code completion for `#!python boto3.client("kms").get_paginator("list_retirable_grants")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListRetirableGrants)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListRetirableGrantsPaginator
+
+def get_list_retirable_grants_paginator() -> ListRetirableGrantsPaginator:
+    return Session().client("kms").get_paginator("list_retirable_grants")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kms.paginator import ListRetirableGrantsPaginator
+
+session = Session()
+
+client = Session().client("kms")  # (1)
+paginator: ListRetirableGrantsPaginator = client.get_paginator("list_retirable_grants")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KMSClient](./client.md)
+2. paginator: [ListRetirableGrantsPaginator](./paginators.md#listretirablegrantspaginator)
+3. item: [:material-code-braces: ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListRetirableGrantsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RetiringPrincipal: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGrantsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRetirableGrantsRequestListRetirableGrantsPaginateTypeDef = {  # (1)
+    "RetiringPrincipal": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRetirableGrantsRequestListRetirableGrantsPaginateTypeDef](./type_defs.md#listretirablegrantsrequestlistretirablegrantspaginatetypedef) 

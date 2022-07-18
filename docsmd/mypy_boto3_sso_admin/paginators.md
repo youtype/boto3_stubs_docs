@@ -255,6 +255,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestlistaccountsforprovisionedpermissionsetpaginatetypedef) 
+## ListCustomerManagedPolicyReferencesInPermissionSetPaginator
+
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_customer_managed_policy_references_in_permission_set")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListCustomerManagedPolicyReferencesInPermissionSet)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sso_admin.paginator import ListCustomerManagedPolicyReferencesInPermissionSetPaginator
+
+def get_list_customer_managed_policy_references_in_permission_set_paginator() -> ListCustomerManagedPolicyReferencesInPermissionSetPaginator:
+    return Session().client("sso-admin").get_paginator("list_customer_managed_policy_references_in_permission_set")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sso_admin.paginator import ListCustomerManagedPolicyReferencesInPermissionSetPaginator
+
+session = Session()
+
+client = Session().client("sso-admin")  # (1)
+paginator: ListCustomerManagedPolicyReferencesInPermissionSetPaginator = client.get_paginator("list_customer_managed_policy_references_in_permission_set")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSOAdminClient](./client.md)
+2. paginator: [ListCustomerManagedPolicyReferencesInPermissionSetPaginator](./paginators.md#listcustomermanagedpolicyreferencesinpermissionsetpaginator)
+3. item: [:material-code-braces: ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef](./type_defs.md#listcustomermanagedpolicyreferencesinpermissionsetresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListCustomerManagedPolicyReferencesInPermissionSetPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCustomerManagedPolicyReferencesInPermissionSetResponseTypeDef](./type_defs.md#listcustomermanagedpolicyreferencesinpermissionsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomerManagedPolicyReferencesInPermissionSetRequestListCustomerManagedPolicyReferencesInPermissionSetPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomerManagedPolicyReferencesInPermissionSetRequestListCustomerManagedPolicyReferencesInPermissionSetPaginateTypeDef](./type_defs.md#listcustomermanagedpolicyreferencesinpermissionsetrequestlistcustomermanagedpolicyreferencesinpermissionsetpaginatetypedef) 
 ## ListInstancesPaginator
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_instances")`.

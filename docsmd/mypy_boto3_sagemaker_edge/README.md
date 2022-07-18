@@ -84,6 +84,7 @@ def get_value() -> SagemakerEdgeManagerServiceName:
 - [SagemakerEdgeManagerServiceName](./literals.md#sagemakeredgemanagerservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 
