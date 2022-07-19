@@ -7416,7 +7416,7 @@ Type annotations and code completion for `#!python boto3.client("sagemaker").que
 def query_lineage(
     self,
     *,
-    StartArns: Sequence[str],
+    StartArns: Sequence[str] = ...,
     Direction: DirectionType = ...,  # (1)
     IncludeEdges: bool = ...,
     Filters: QueryFiltersTypeDef = ...,  # (2)

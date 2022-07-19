@@ -605,6 +605,24 @@ class StartTimeRangeTypeDef(TypedDict):
     ToTime: NotRequired[Union[datetime, str]],
 ```
 
+## ListAnomalousLogGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListAnomalousLogGroupsRequestRequestTypeDef
+
+def get_value() -> ListAnomalousLogGroupsRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnomalousLogGroupsRequestRequestTypeDef(TypedDict):
+    InsightId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
 ## ListInsightsOngoingStatusFilterTypeDef
 
 ```python title="Usage Example"
@@ -622,6 +640,45 @@ class ListInsightsOngoingStatusFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+## ListMonitoredResourcesFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListMonitoredResourcesFiltersTypeDef
+
+def get_value() -> ListMonitoredResourcesFiltersTypeDef:
+    return {
+        "ResourcePermission": ...,
+        "ResourceTypeFilters": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoredResourcesFiltersTypeDef(TypedDict):
+    ResourcePermission: ResourcePermissionType,  # (1)
+    ResourceTypeFilters: Sequence[ResourceTypeFilterType],  # (2)
+```
+
+1. See [:material-code-brackets: ResourcePermissionType](./literals.md#resourcepermissiontype) 
+2. See [:material-code-brackets: ResourceTypeFilterType](./literals.md#resourcetypefiltertype) 
+## MonitoredResourceIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import MonitoredResourceIdentifierTypeDef
+
+def get_value() -> MonitoredResourceIdentifierTypeDef:
+    return {
+        "MonitoredResourceName": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoredResourceIdentifierTypeDef(TypedDict):
+    MonitoredResourceName: NotRequired[str],
+    Type: NotRequired[str],
+    ResourcePermission: NotRequired[ResourcePermissionType],  # (1)
+```
+
+1. See [:material-code-brackets: ResourcePermissionType](./literals.md#resourcepermissiontype) 
 ## ListNotificationChannelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -658,6 +715,63 @@ class ListRecommendationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+## LogAnomalyClassTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import LogAnomalyClassTypeDef
+
+def get_value() -> LogAnomalyClassTypeDef:
+    return {
+        "LogStreamName": ...,
+    }
+```
+
+```python title="Definition"
+class LogAnomalyClassTypeDef(TypedDict):
+    LogStreamName: NotRequired[str],
+    LogAnomalyType: NotRequired[LogAnomalyTypeType],  # (1)
+    LogAnomalyToken: NotRequired[str],
+    LogEventId: NotRequired[str],
+    Explanation: NotRequired[str],
+    NumberOfLogLinesOccurrences: NotRequired[int],
+    LogEventTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: LogAnomalyTypeType](./literals.md#loganomalytypetype) 
+## LogsAnomalyDetectionIntegrationConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import LogsAnomalyDetectionIntegrationConfigTypeDef
+
+def get_value() -> LogsAnomalyDetectionIntegrationConfigTypeDef:
+    return {
+        "OptInStatus": ...,
+    }
+```
+
+```python title="Definition"
+class LogsAnomalyDetectionIntegrationConfigTypeDef(TypedDict):
+    OptInStatus: NotRequired[OptInStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: OptInStatusType](./literals.md#optinstatustype) 
+## LogsAnomalyDetectionIntegrationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import LogsAnomalyDetectionIntegrationTypeDef
+
+def get_value() -> LogsAnomalyDetectionIntegrationTypeDef:
+    return {
+        "OptInStatus": ...,
+    }
+```
+
+```python title="Definition"
+class LogsAnomalyDetectionIntegrationTypeDef(TypedDict):
+    OptInStatus: NotRequired[OptInStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: OptInStatusType](./literals.md#optinstatustype) 
 ## SnsChannelConfigTypeDef
 
 ```python title="Usage Example"
@@ -1284,6 +1398,24 @@ class GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef(TypedDict
 
 1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAnomalousLogGroupsRequestListAnomalousLogGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListAnomalousLogGroupsRequestListAnomalousLogGroupsPaginateTypeDef
+
+def get_value() -> ListAnomalousLogGroupsRequestListAnomalousLogGroupsPaginateTypeDef:
+    return {
+        "InsightId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnomalousLogGroupsRequestListAnomalousLogGroupsPaginateTypeDef(TypedDict):
+    InsightId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1404,6 +1536,83 @@ class ListInsightsAnyStatusFilterTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
 2. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+## ListMonitoredResourcesRequestListMonitoredResourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListMonitoredResourcesRequestListMonitoredResourcesPaginateTypeDef
+
+def get_value() -> ListMonitoredResourcesRequestListMonitoredResourcesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoredResourcesRequestListMonitoredResourcesPaginateTypeDef(TypedDict):
+    Filters: ListMonitoredResourcesFiltersTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListMonitoredResourcesFiltersTypeDef](./type_defs.md#listmonitoredresourcesfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMonitoredResourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListMonitoredResourcesRequestRequestTypeDef
+
+def get_value() -> ListMonitoredResourcesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoredResourcesRequestRequestTypeDef(TypedDict):
+    Filters: ListMonitoredResourcesFiltersTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ListMonitoredResourcesFiltersTypeDef](./type_defs.md#listmonitoredresourcesfilterstypedef) 
+## ListMonitoredResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListMonitoredResourcesResponseTypeDef
+
+def get_value() -> ListMonitoredResourcesResponseTypeDef:
+    return {
+        "MonitoredResourceIdentifiers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoredResourcesResponseTypeDef(TypedDict):
+    MonitoredResourceIdentifiers: List[MonitoredResourceIdentifierTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MonitoredResourceIdentifierTypeDef](./type_defs.md#monitoredresourceidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LogAnomalyShowcaseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import LogAnomalyShowcaseTypeDef
+
+def get_value() -> LogAnomalyShowcaseTypeDef:
+    return {
+        "LogAnomalyClasses": ...,
+    }
+```
+
+```python title="Definition"
+class LogAnomalyShowcaseTypeDef(TypedDict):
+    LogAnomalyClasses: NotRequired[List[LogAnomalyClassTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: LogAnomalyClassTypeDef](./type_defs.md#loganomalyclasstypedef) 
 ## NotificationChannelConfigTypeDef
 
 ```python title="Usage Example"
@@ -1435,9 +1644,11 @@ def get_value() -> UpdateServiceIntegrationConfigTypeDef:
 ```python title="Definition"
 class UpdateServiceIntegrationConfigTypeDef(TypedDict):
     OpsCenter: NotRequired[OpsCenterIntegrationConfigTypeDef],  # (1)
+    LogsAnomalyDetection: NotRequired[LogsAnomalyDetectionIntegrationConfigTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: OpsCenterIntegrationConfigTypeDef](./type_defs.md#opscenterintegrationconfigtypedef) 
+2. See [:material-code-braces: LogsAnomalyDetectionIntegrationConfigTypeDef](./type_defs.md#logsanomalydetectionintegrationconfigtypedef) 
 ## ServiceIntegrationConfigTypeDef
 
 ```python title="Usage Example"
@@ -1452,9 +1663,11 @@ def get_value() -> ServiceIntegrationConfigTypeDef:
 ```python title="Definition"
 class ServiceIntegrationConfigTypeDef(TypedDict):
     OpsCenter: NotRequired[OpsCenterIntegrationTypeDef],  # (1)
+    LogsAnomalyDetection: NotRequired[LogsAnomalyDetectionIntegrationTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: OpsCenterIntegrationTypeDef](./type_defs.md#opscenterintegrationtypedef) 
+2. See [:material-code-braces: LogsAnomalyDetectionIntegrationTypeDef](./type_defs.md#logsanomalydetectionintegrationtypedef) 
 ## PerformanceInsightsMetricQueryTypeDef
 
 ```python title="Usage Example"
@@ -1719,6 +1932,27 @@ class ListInsightsStatusFilterTypeDef(TypedDict):
 1. See [:material-code-braces: ListInsightsOngoingStatusFilterTypeDef](./type_defs.md#listinsightsongoingstatusfiltertypedef) 
 2. See [:material-code-braces: ListInsightsClosedStatusFilterTypeDef](./type_defs.md#listinsightsclosedstatusfiltertypedef) 
 3. See [:material-code-braces: ListInsightsAnyStatusFilterTypeDef](./type_defs.md#listinsightsanystatusfiltertypedef) 
+## AnomalousLogGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import AnomalousLogGroupTypeDef
+
+def get_value() -> AnomalousLogGroupTypeDef:
+    return {
+        "LogGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class AnomalousLogGroupTypeDef(TypedDict):
+    LogGroupName: NotRequired[str],
+    ImpactStartTime: NotRequired[datetime],
+    ImpactEndTime: NotRequired[datetime],
+    NumberOfLogLinesScanned: NotRequired[int],
+    LogAnomalyShowcases: NotRequired[List[LogAnomalyShowcaseTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: LogAnomalyShowcaseTypeDef](./type_defs.md#loganomalyshowcasetypedef) 
 ## AddNotificationChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2281,6 +2515,30 @@ class ListOrganizationInsightsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef) 
+## ListAnomalousLogGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListAnomalousLogGroupsResponseTypeDef
+
+def get_value() -> ListAnomalousLogGroupsResponseTypeDef:
+    return {
+        "InsightId": ...,
+        "AnomalousLogGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnomalousLogGroupsResponseTypeDef(TypedDict):
+    InsightId: str,
+    AnomalousLogGroups: List[AnomalousLogGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AnomalousLogGroupTypeDef](./type_defs.md#anomalousloggrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNotificationChannelsResponseTypeDef
 
 ```python title="Usage Example"

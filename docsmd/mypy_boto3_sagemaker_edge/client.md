@@ -99,6 +99,37 @@ def generate_presigned_url(
 ```
 
 
+### get\_deployments
+
+Use to get the active deployments from a device.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker-edge").get_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_deployments)
+
+```python title="Method definition"
+def get_deployments(
+    self,
+    *,
+    DeviceName: str,
+    DeviceFleetName: str,
+) -> GetDeploymentsResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDeploymentsResultTypeDef](./type_defs.md#getdeploymentsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentsRequestRequestTypeDef = {  # (1)
+    "DeviceName": ...,
+    "DeviceFleetName": ...,
+}
+
+parent.get_deployments(**kwargs)
+```
+
+1. See [:material-code-braces: GetDeploymentsRequestRequestTypeDef](./type_defs.md#getdeploymentsrequestrequesttypedef) 
+
 ### get\_device\_registration
 
 Use to check if a device is registered with SageMaker Edge Manager.
@@ -146,13 +177,15 @@ def send_heartbeat(
     DeviceFleetName: str,
     AgentMetrics: Sequence[EdgeMetricTypeDef] = ...,  # (1)
     Models: Sequence[ModelTypeDef] = ...,  # (2)
-) -> EmptyResponseMetadataTypeDef:  # (3)
+    DeploymentResult: DeploymentResultTypeDef = ...,  # (3)
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef) 
 2. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 
-3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+3. See [:material-code-braces: DeploymentResultTypeDef](./type_defs.md#deploymentresulttypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

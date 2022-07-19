@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
@@ -36668,8 +36668,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#getcostestimationpaginator">GetCostEstimationPaginator</a></li>
 <li><a href="paginators/#getresourcecollectionpaginator">GetResourceCollectionPaginator</a></li>
 <li><a href="paginators/#listanomaliesforinsightpaginator">ListAnomaliesForInsightPaginator</a></li>
+<li><a href="paginators/#listanomalousloggroupspaginator">ListAnomalousLogGroupsPaginator</a></li>
 <li><a href="paginators/#listeventspaginator">ListEventsPaginator</a></li>
 <li><a href="paginators/#listinsightspaginator">ListInsightsPaginator</a></li>
+<li><a href="paginators/#listmonitoredresourcespaginator">ListMonitoredResourcesPaginator</a></li>
 <li><a href="paginators/#listnotificationchannelspaginator">ListNotificationChannelsPaginator</a></li>
 <li><a href="paginators/#listorganizationinsightspaginator">ListOrganizationInsightsPaginator</a></li>
 <li><a href="paginators/#listrecommendationspaginator">ListRecommendationsPaginator</a></li>
@@ -36703,15 +36705,20 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#insightstatustype">InsightStatusType</a></li>
 <li><a href="literals/#insighttypetype">InsightTypeType</a></li>
 <li><a href="literals/#listanomaliesforinsightpaginatorname">ListAnomaliesForInsightPaginatorName</a></li>
+<li><a href="literals/#listanomalousloggroupspaginatorname">ListAnomalousLogGroupsPaginatorName</a></li>
 <li><a href="literals/#listeventspaginatorname">ListEventsPaginatorName</a></li>
 <li><a href="literals/#listinsightspaginatorname">ListInsightsPaginatorName</a></li>
+<li><a href="literals/#listmonitoredresourcespaginatorname">ListMonitoredResourcesPaginatorName</a></li>
 <li><a href="literals/#listnotificationchannelspaginatorname">ListNotificationChannelsPaginatorName</a></li>
 <li><a href="literals/#listorganizationinsightspaginatorname">ListOrganizationInsightsPaginatorName</a></li>
 <li><a href="literals/#listrecommendationspaginatorname">ListRecommendationsPaginatorName</a></li>
 <li><a href="literals/#localetype">LocaleType</a></li>
+<li><a href="literals/#loganomalytypetype">LogAnomalyTypeType</a></li>
 <li><a href="literals/#optinstatustype">OptInStatusType</a></li>
 <li><a href="literals/#organizationresourcecollectiontypetype">OrganizationResourceCollectionTypeType</a></li>
 <li><a href="literals/#resourcecollectiontypetype">ResourceCollectionTypeType</a></li>
+<li><a href="literals/#resourcepermissiontype">ResourcePermissionType</a></li>
+<li><a href="literals/#resourcetypefiltertype">ResourceTypeFilterType</a></li>
 <li><a href="literals/#searchinsightspaginatorname">SearchInsightsPaginatorName</a></li>
 <li><a href="literals/#searchorganizationinsightspaginatorname">SearchOrganizationInsightsPaginatorName</a></li>
 <li><a href="literals/#servicenametype">ServiceNameType</a></li>
@@ -36766,9 +36773,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getresourcecollectionrequestrequesttypedef">GetResourceCollectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#insighttimerangetypedef">InsightTimeRangeTypeDef</a></li>
 <li><a href="type_defs/#starttimerangetypedef">StartTimeRangeTypeDef</a></li>
+<li><a href="type_defs/#listanomalousloggroupsrequestrequesttypedef">ListAnomalousLogGroupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinsightsongoingstatusfiltertypedef">ListInsightsOngoingStatusFilterTypeDef</a></li>
+<li><a href="type_defs/#listmonitoredresourcesfilterstypedef">ListMonitoredResourcesFiltersTypeDef</a></li>
+<li><a href="type_defs/#monitoredresourceidentifiertypedef">MonitoredResourceIdentifierTypeDef</a></li>
 <li><a href="type_defs/#listnotificationchannelsrequestrequesttypedef">ListNotificationChannelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listrecommendationsrequestrequesttypedef">ListRecommendationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#loganomalyclasstypedef">LogAnomalyClassTypeDef</a></li>
+<li><a href="type_defs/#logsanomalydetectionintegrationconfigtypedef">LogsAnomalyDetectionIntegrationConfigTypeDef</a></li>
+<li><a href="type_defs/#logsanomalydetectionintegrationtypedef">LogsAnomalyDetectionIntegrationTypeDef</a></li>
 <li><a href="type_defs/#snschannelconfigtypedef">SnsChannelConfigTypeDef</a></li>
 <li><a href="type_defs/#opscenterintegrationconfigtypedef">OpsCenterIntegrationConfigTypeDef</a></li>
 <li><a href="type_defs/#opscenterintegrationtypedef">OpsCenterIntegrationTypeDef</a></li>
@@ -36803,12 +36816,17 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeresourcecollectionhealthrequestdescriberesourcecollectionhealthpaginatetypedef">DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef</a></li>
 <li><a href="type_defs/#getcostestimationrequestgetcostestimationpaginatetypedef">GetCostEstimationRequestGetCostEstimationPaginateTypeDef</a></li>
 <li><a href="type_defs/#getresourcecollectionrequestgetresourcecollectionpaginatetypedef">GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef</a></li>
+<li><a href="type_defs/#listanomalousloggroupsrequestlistanomalousloggroupspaginatetypedef">ListAnomalousLogGroupsRequestListAnomalousLogGroupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listnotificationchannelsrequestlistnotificationchannelspaginatetypedef">ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrecommendationsrequestlistrecommendationspaginatetypedef">ListRecommendationsRequestListRecommendationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listinsightsclosedstatusfiltertypedef">ListInsightsClosedStatusFilterTypeDef</a></li>
 <li><a href="type_defs/#listanomaliesforinsightrequestlistanomaliesforinsightpaginatetypedef">ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef</a></li>
 <li><a href="type_defs/#listanomaliesforinsightrequestrequesttypedef">ListAnomaliesForInsightRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinsightsanystatusfiltertypedef">ListInsightsAnyStatusFilterTypeDef</a></li>
+<li><a href="type_defs/#listmonitoredresourcesrequestlistmonitoredresourcespaginatetypedef">ListMonitoredResourcesRequestListMonitoredResourcesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listmonitoredresourcesrequestrequesttypedef">ListMonitoredResourcesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listmonitoredresourcesresponsetypedef">ListMonitoredResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#loganomalyshowcasetypedef">LogAnomalyShowcaseTypeDef</a></li>
 <li><a href="type_defs/#notificationchannelconfigtypedef">NotificationChannelConfigTypeDef</a></li>
 <li><a href="type_defs/#updateserviceintegrationconfigtypedef">UpdateServiceIntegrationConfigTypeDef</a></li>
 <li><a href="type_defs/#serviceintegrationconfigtypedef">ServiceIntegrationConfigTypeDef</a></li>
@@ -36825,6 +36843,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getcostestimationresponsetypedef">GetCostEstimationResponseTypeDef</a></li>
 <li><a href="type_defs/#startcostestimationrequestrequesttypedef">StartCostEstimationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinsightsstatusfiltertypedef">ListInsightsStatusFilterTypeDef</a></li>
+<li><a href="type_defs/#anomalousloggrouptypedef">AnomalousLogGroupTypeDef</a></li>
 <li><a href="type_defs/#addnotificationchannelrequestrequesttypedef">AddNotificationChannelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#notificationchanneltypedef">NotificationChannelTypeDef</a></li>
 <li><a href="type_defs/#updateserviceintegrationrequestrequesttypedef">UpdateServiceIntegrationRequestRequestTypeDef</a></li>
@@ -36849,6 +36868,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listinsightsrequestrequesttypedef">ListInsightsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listorganizationinsightsrequestlistorganizationinsightspaginatetypedef">ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listorganizationinsightsrequestrequesttypedef">ListOrganizationInsightsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listanomalousloggroupsresponsetypedef">ListAnomalousLogGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#listnotificationchannelsresponsetypedef">ListNotificationChannelsResponseTypeDef</a></li>
 <li><a href="type_defs/#performanceinsightsreferencecomparisonvaluestypedef">PerformanceInsightsReferenceComparisonValuesTypeDef</a></li>
 <li><a href="type_defs/#recommendationtypedef">RecommendationTypeDef</a></li>

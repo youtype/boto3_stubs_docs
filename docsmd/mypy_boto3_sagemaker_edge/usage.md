@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("sagemaker-edge")  # (1)
-    result = client.get_device_registration()  # (2)
+    result = client.get_deployments()  # (2)
     ```
 
     1. client: [SagemakerEdgeManagerClient](./client.md)
-    2. result: [:material-code-braces: GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef) 
+    2. result: [:material-code-braces: GetDeploymentsResultTypeDef](./type_defs.md#getdeploymentsresulttypedef) 
 
 
 
@@ -52,16 +52,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_sagemaker_edge.client import SagemakerEdgeManagerClient
-    from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationResultTypeDef
-    from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationRequestRequestTypeDef
+    from mypy_boto3_sagemaker_edge.type_defs import GetDeploymentsResultTypeDef
+    from mypy_boto3_sagemaker_edge.type_defs import GetDeploymentsRequestRequestTypeDef
 
 
     session = Session()
 
     client: SagemakerEdgeManagerClient = session.client("sagemaker-edge")
 
-    kwargs: GetDeviceRegistrationRequestRequestTypeDef = {...}
-    result: GetDeviceRegistrationResultTypeDef = client.get_device_registration(**kwargs)
+    kwargs: GetDeploymentsRequestRequestTypeDef = {...}
+    result: GetDeploymentsResultTypeDef = client.get_deployments(**kwargs)
     ```
 
 

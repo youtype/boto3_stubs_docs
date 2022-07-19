@@ -565,6 +565,37 @@ parent.list_anomalies_for_insight(**kwargs)
 
 1. See [:material-code-braces: ListAnomaliesForInsightRequestRequestTypeDef](./type_defs.md#listanomaliesforinsightrequestrequesttypedef) 
 
+### list\_anomalous\_log\_groups
+
+Returns the list of log groups that contain log anomalies.
+
+Type annotations and code completion for `#!python boto3.client("devops-guru").list_anomalous_log_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_anomalous_log_groups)
+
+```python title="Method definition"
+def list_anomalous_log_groups(
+    self,
+    *,
+    InsightId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAnomalousLogGroupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAnomalousLogGroupsResponseTypeDef](./type_defs.md#listanomalousloggroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAnomalousLogGroupsRequestRequestTypeDef = {  # (1)
+    "InsightId": ...,
+}
+
+parent.list_anomalous_log_groups(**kwargs)
+```
+
+1. See [:material-code-braces: ListAnomalousLogGroupsRequestRequestTypeDef](./type_defs.md#listanomalousloggroupsrequestrequesttypedef) 
+
 ### list\_events
 
 Returns a list of the events emitted by the resources that are evaluated by
@@ -630,6 +661,39 @@ parent.list_insights(**kwargs)
 ```
 
 1. See [:material-code-braces: ListInsightsRequestRequestTypeDef](./type_defs.md#listinsightsrequestrequesttypedef) 
+
+### list\_monitored\_resources
+
+Returns the list of all log groups that are being monitored and tagged by DevOps
+Guru.
+
+Type annotations and code completion for `#!python boto3.client("devops-guru").list_monitored_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_monitored_resources)
+
+```python title="Method definition"
+def list_monitored_resources(
+    self,
+    *,
+    Filters: ListMonitoredResourcesFiltersTypeDef,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListMonitoredResourcesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ListMonitoredResourcesFiltersTypeDef](./type_defs.md#listmonitoredresourcesfilterstypedef) 
+2. See [:material-code-braces: ListMonitoredResourcesResponseTypeDef](./type_defs.md#listmonitoredresourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMonitoredResourcesRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.list_monitored_resources(**kwargs)
+```
+
+1. See [:material-code-braces: ListMonitoredResourcesRequestRequestTypeDef](./type_defs.md#listmonitoredresourcesrequestrequesttypedef) 
 
 ### list\_notification\_channels
 
@@ -994,8 +1058,10 @@ Type annotations and code completion for `#!python boto3.client("devops-guru").g
 - `client.get_paginator("get_cost_estimation")` -> [GetCostEstimationPaginator](./paginators.md#getcostestimationpaginator)
 - `client.get_paginator("get_resource_collection")` -> [GetResourceCollectionPaginator](./paginators.md#getresourcecollectionpaginator)
 - `client.get_paginator("list_anomalies_for_insight")` -> [ListAnomaliesForInsightPaginator](./paginators.md#listanomaliesforinsightpaginator)
+- `client.get_paginator("list_anomalous_log_groups")` -> [ListAnomalousLogGroupsPaginator](./paginators.md#listanomalousloggroupspaginator)
 - `client.get_paginator("list_events")` -> [ListEventsPaginator](./paginators.md#listeventspaginator)
 - `client.get_paginator("list_insights")` -> [ListInsightsPaginator](./paginators.md#listinsightspaginator)
+- `client.get_paginator("list_monitored_resources")` -> [ListMonitoredResourcesPaginator](./paginators.md#listmonitoredresourcespaginator)
 - `client.get_paginator("list_notification_channels")` -> [ListNotificationChannelsPaginator](./paginators.md#listnotificationchannelspaginator)
 - `client.get_paginator("list_organization_insights")` -> [ListOrganizationInsightsPaginator](./paginators.md#listorganizationinsightspaginator)
 - `client.get_paginator("list_recommendations")` -> [ListRecommendationsPaginator](./paginators.md#listrecommendationspaginator)

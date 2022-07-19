@@ -16398,7 +16398,7 @@ def get_value() -> QueryLineageRequestRequestTypeDef:
 
 ```python title="Definition"
 class QueryLineageRequestRequestTypeDef(TypedDict):
-    StartArns: Sequence[str],
+    StartArns: NotRequired[Sequence[str]],
     Direction: NotRequired[DirectionType],  # (1)
     IncludeEdges: NotRequired[bool],
     Filters: NotRequired[QueryFiltersTypeDef],  # (2)

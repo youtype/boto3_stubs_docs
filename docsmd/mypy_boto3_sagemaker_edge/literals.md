@@ -7,6 +7,79 @@
     Auto-generated documentation for [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
     type annotations stubs module [mypy-boto3-sagemaker-edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
+## ChecksumTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_edge.literals import ChecksumTypeType
+
+def get_value() -> ChecksumTypeType:
+    return "SHA1"
+```
+
+```python title="Definition"
+ChecksumTypeType = Literal[
+    "SHA1",
+]
+```
+## DeploymentStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_edge.literals import DeploymentStatusType
+
+def get_value() -> DeploymentStatusType:
+    return "FAIL"
+```
+
+```python title="Definition"
+DeploymentStatusType = Literal[
+    "FAIL",
+    "SUCCESS",
+]
+```
+## DeploymentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_edge.literals import DeploymentTypeType
+
+def get_value() -> DeploymentTypeType:
+    return "Model"
+```
+
+```python title="Definition"
+DeploymentTypeType = Literal[
+    "Model",
+]
+```
+## FailureHandlingPolicyType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_edge.literals import FailureHandlingPolicyType
+
+def get_value() -> FailureHandlingPolicyType:
+    return "DO_NOTHING"
+```
+
+```python title="Definition"
+FailureHandlingPolicyType = Literal[
+    "DO_NOTHING",
+    "ROLLBACK_ON_FAILURE",
+]
+```
+## ModelStateType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_edge.literals import ModelStateType
+
+def get_value() -> ModelStateType:
+    return "DEPLOY"
+```
+
+```python title="Definition"
+ModelStateType = Literal[
+    "DEPLOY",
+    "UNDEPLOY",
+]
+```
 ## SagemakerEdgeManagerServiceName
 
 ```python title="Usage Example"
