@@ -451,11 +451,15 @@ ResourceServiceName = Literal[
 from mypy_boto3_workspaces_web.literals import RegionName
 
 def get_value() -> RegionName:
-    return "eu-west-1"
+    return "ap-northeast-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "ap-northeast-1",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
     "eu-west-1",
     "us-east-1",
     "us-west-2",
