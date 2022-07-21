@@ -548,6 +548,43 @@ class CreateAssetRequestRequestTypeDef(TypedDict):
     assetDescription: NotRequired[str],
 ```
 
+## ErrorReportLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ErrorReportLocationTypeDef
+
+def get_value() -> ErrorReportLocationTypeDef:
+    return {
+        "bucket": ...,
+        "prefix": ...,
+    }
+```
+
+```python title="Definition"
+class ErrorReportLocationTypeDef(TypedDict):
+    bucket: str,
+    prefix: str,
+```
+
+## FileTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import FileTypeDef
+
+def get_value() -> FileTypeDef:
+    return {
+        "bucket": ...,
+        "key": ...,
+    }
+```
+
+```python title="Definition"
+class FileTypeDef(TypedDict):
+    bucket: str,
+    key: str,
+    versionId: NotRequired[str],
+```
+
 ## CreateDashboardRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -611,6 +648,23 @@ class CreateProjectRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
+## CsvTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import CsvTypeDef
+
+def get_value() -> CsvTypeDef:
+    return {
+        "columnNames": ...,
+    }
+```
+
+```python title="Definition"
+class CsvTypeDef(TypedDict):
+    columnNames: NotRequired[Sequence[ColumnNameType]],  # (1)
+```
+
+1. See [:material-code-brackets: ColumnNameType](./literals.md#columnnametype) 
 ## CustomerManagedS3StorageTypeDef
 
 ```python title="Usage Example"
@@ -868,6 +922,22 @@ def get_value() -> DescribeAssetRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeAssetRequestRequestTypeDef(TypedDict):
     assetId: str,
+```
+
+## DescribeBulkImportJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribeBulkImportJobRequestRequestTypeDef
+
+def get_value() -> DescribeBulkImportJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBulkImportJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
 ```
 
 ## DescribeDashboardRequestRequestTypeDef
@@ -1359,6 +1429,27 @@ class UserIdentityTypeDef(TypedDict):
     id: str,
 ```
 
+## JobSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import JobSummaryTypeDef
+
+def get_value() -> JobSummaryTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class JobSummaryTypeDef(TypedDict):
+    id: str,
+    name: str,
+    status: JobStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 ## ListAccessPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1462,6 +1553,25 @@ class ListAssociatedAssetsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TraversalDirectionType](./literals.md#traversaldirectiontype) 
+## ListBulkImportJobsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListBulkImportJobsRequestRequestTypeDef
+
+def get_value() -> ListBulkImportJobsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListBulkImportJobsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filter: NotRequired[ListBulkImportJobsFilterType],  # (1)
+```
+
+1. See [:material-code-brackets: ListBulkImportJobsFilterType](./literals.md#listbulkimportjobsfiltertype) 
 ## ListDashboardsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2086,6 +2196,30 @@ class CreateAccessPolicyResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateBulkImportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import CreateBulkImportJobResponseTypeDef
+
+def get_value() -> CreateBulkImportJobResponseTypeDef:
+    return {
+        "jobId": ...,
+        "jobName": ...,
+        "jobStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBulkImportJobResponseTypeDef(TypedDict):
+    jobId: str,
+    jobName: str,
+    jobStatus: JobStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDashboardResponseTypeDef
 
 ```python title="Usage Example"
@@ -2538,6 +2672,23 @@ class ImageTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ImageFileTypeDef](./type_defs.md#imagefiletypedef) 
+## FileFormatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import FileFormatTypeDef
+
+def get_value() -> FileFormatTypeDef:
+    return {
+        "csv": ...,
+    }
+```
+
+```python title="Definition"
+class FileFormatTypeDef(TypedDict):
+    csv: NotRequired[CsvTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CsvTypeDef](./type_defs.md#csvtypedef) 
 ## MultiLayerStorageTypeDef
 
 ```python title="Usage Example"
@@ -3011,6 +3162,25 @@ class ListAssociatedAssetsRequestListAssociatedAssetsPaginateTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TraversalDirectionType](./literals.md#traversaldirectiontype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListBulkImportJobsRequestListBulkImportJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListBulkImportJobsRequestListBulkImportJobsPaginateTypeDef
+
+def get_value() -> ListBulkImportJobsRequestListBulkImportJobsPaginateTypeDef:
+    return {
+        "filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListBulkImportJobsRequestListBulkImportJobsPaginateTypeDef(TypedDict):
+    filter: NotRequired[ListBulkImportJobsFilterType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ListBulkImportJobsFilterType](./literals.md#listbulkimportjobsfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDashboardsRequestListDashboardsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3143,6 +3313,28 @@ class IdentityTypeDef(TypedDict):
 2. See [:material-code-braces: GroupIdentityTypeDef](./type_defs.md#groupidentitytypedef) 
 3. See [:material-code-braces: IAMUserIdentityTypeDef](./type_defs.md#iamuseridentitytypedef) 
 4. See [:material-code-braces: IAMRoleIdentityTypeDef](./type_defs.md#iamroleidentitytypedef) 
+## ListBulkImportJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListBulkImportJobsResponseTypeDef
+
+def get_value() -> ListBulkImportJobsResponseTypeDef:
+    return {
+        "jobSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBulkImportJobsResponseTypeDef(TypedDict):
+    jobSummaries: List[JobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProjectsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3548,6 +3740,23 @@ class UpdatePortalRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
 2. See [:material-code-braces: AlarmsTypeDef](./type_defs.md#alarmstypedef) 
+## JobConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import JobConfigurationTypeDef
+
+def get_value() -> JobConfigurationTypeDef:
+    return {
+        "fileFormat": ...,
+    }
+```
+
+```python title="Definition"
+class JobConfigurationTypeDef(TypedDict):
+    fileFormat: FileFormatTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: FileFormatTypeDef](./type_defs.md#fileformattypedef) 
 ## DescribeStorageConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -4195,6 +4404,72 @@ class BatchPutAssetPropertyValueRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef) 
+## CreateBulkImportJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import CreateBulkImportJobRequestRequestTypeDef
+
+def get_value() -> CreateBulkImportJobRequestRequestTypeDef:
+    return {
+        "jobName": ...,
+        "jobRoleArn": ...,
+        "files": ...,
+        "errorReportLocation": ...,
+        "jobConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBulkImportJobRequestRequestTypeDef(TypedDict):
+    jobName: str,
+    jobRoleArn: str,
+    files: Sequence[FileTypeDef],  # (1)
+    errorReportLocation: ErrorReportLocationTypeDef,  # (2)
+    jobConfiguration: JobConfigurationTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: FileTypeDef](./type_defs.md#filetypedef) 
+2. See [:material-code-braces: ErrorReportLocationTypeDef](./type_defs.md#errorreportlocationtypedef) 
+3. See [:material-code-braces: JobConfigurationTypeDef](./type_defs.md#jobconfigurationtypedef) 
+## DescribeBulkImportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribeBulkImportJobResponseTypeDef
+
+def get_value() -> DescribeBulkImportJobResponseTypeDef:
+    return {
+        "jobId": ...,
+        "jobName": ...,
+        "jobStatus": ...,
+        "jobRoleArn": ...,
+        "files": ...,
+        "errorReportLocation": ...,
+        "jobConfiguration": ...,
+        "jobCreationDate": ...,
+        "jobLastUpdateDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBulkImportJobResponseTypeDef(TypedDict):
+    jobId: str,
+    jobName: str,
+    jobStatus: JobStatusType,  # (1)
+    jobRoleArn: str,
+    files: List[FileTypeDef],  # (2)
+    errorReportLocation: ErrorReportLocationTypeDef,  # (3)
+    jobConfiguration: JobConfigurationTypeDef,  # (4)
+    jobCreationDate: datetime,
+    jobLastUpdateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: FileTypeDef](./type_defs.md#filetypedef) 
+3. See [:material-code-braces: ErrorReportLocationTypeDef](./type_defs.md#errorreportlocationtypedef) 
+4. See [:material-code-braces: JobConfigurationTypeDef](./type_defs.md#jobconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssetModelSummaryTypeDef
 
 ```python title="Usage Example"

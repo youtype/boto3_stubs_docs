@@ -813,6 +813,21 @@ ServiceNowBuildVersionTypeType = Literal[
     "OTHERS",
 ]
 ```
+## SharePointOnlineAuthenticationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_kendra.literals import SharePointOnlineAuthenticationTypeType
+
+def get_value() -> SharePointOnlineAuthenticationTypeType:
+    return "HTTP_BASIC"
+```
+
+```python title="Definition"
+SharePointOnlineAuthenticationTypeType = Literal[
+    "HTTP_BASIC",
+    "OAUTH2",
+]
+```
 ## SharePointVersionType
 
 ```python title="Usage Example"

@@ -953,6 +953,9 @@ def put_composite_alarm(
     InsufficientDataActions: Sequence[str] = ...,
     OKActions: Sequence[str] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
+    ActionsSuppressor: str = ...,
+    ActionsSuppressorWaitPeriod: int = ...,
+    ActionsSuppressorExtensionPeriod: int = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```

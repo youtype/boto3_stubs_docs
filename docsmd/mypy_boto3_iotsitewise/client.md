@@ -460,6 +460,46 @@ parent.create_asset_model(**kwargs)
 
 1. See [:material-code-braces: CreateAssetModelRequestRequestTypeDef](./type_defs.md#createassetmodelrequestrequesttypedef) 
 
+### create\_bulk\_import\_job
+
+.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_bulk_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_bulk_import_job)
+
+```python title="Method definition"
+def create_bulk_import_job(
+    self,
+    *,
+    jobName: str,
+    jobRoleArn: str,
+    files: Sequence[FileTypeDef],  # (1)
+    errorReportLocation: ErrorReportLocationTypeDef,  # (2)
+    jobConfiguration: JobConfigurationTypeDef,  # (3)
+) -> CreateBulkImportJobResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: FileTypeDef](./type_defs.md#filetypedef) 
+2. See [:material-code-braces: ErrorReportLocationTypeDef](./type_defs.md#errorreportlocationtypedef) 
+3. See [:material-code-braces: JobConfigurationTypeDef](./type_defs.md#jobconfigurationtypedef) 
+4. See [:material-code-braces: CreateBulkImportJobResponseTypeDef](./type_defs.md#createbulkimportjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateBulkImportJobRequestRequestTypeDef = {  # (1)
+    "jobName": ...,
+    "jobRoleArn": ...,
+    "files": ...,
+    "errorReportLocation": ...,
+    "jobConfiguration": ...,
+}
+
+parent.create_bulk_import_job(**kwargs)
+```
+
+1. See [:material-code-braces: CreateBulkImportJobRequestRequestTypeDef](./type_defs.md#createbulkimportjobrequestrequesttypedef) 
+
 ### create\_dashboard
 
 Creates a dashboard in an IoT SiteWise Monitor project.
@@ -964,6 +1004,35 @@ parent.describe_asset_property(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeAssetPropertyRequestRequestTypeDef](./type_defs.md#describeassetpropertyrequestrequesttypedef) 
+
+### describe\_bulk\_import\_job
+
+.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_bulk_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_bulk_import_job)
+
+```python title="Method definition"
+def describe_bulk_import_job(
+    self,
+    *,
+    jobId: str,
+) -> DescribeBulkImportJobResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeBulkImportJobResponseTypeDef](./type_defs.md#describebulkimportjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBulkImportJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
+
+parent.describe_bulk_import_job(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBulkImportJobRequestRequestTypeDef](./type_defs.md#describebulkimportjobrequestrequesttypedef) 
 
 ### describe\_dashboard
 
@@ -1611,6 +1680,38 @@ parent.list_associated_assets(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAssociatedAssetsRequestRequestTypeDef](./type_defs.md#listassociatedassetsrequestrequesttypedef) 
+
+### list\_bulk\_import\_jobs
+
+.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_bulk_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_bulk_import_jobs)
+
+```python title="Method definition"
+def list_bulk_import_jobs(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filter: ListBulkImportJobsFilterType = ...,  # (1)
+) -> ListBulkImportJobsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ListBulkImportJobsFilterType](./literals.md#listbulkimportjobsfiltertype) 
+2. See [:material-code-braces: ListBulkImportJobsResponseTypeDef](./type_defs.md#listbulkimportjobsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListBulkImportJobsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
+
+parent.list_bulk_import_jobs(**kwargs)
+```
+
+1. See [:material-code-braces: ListBulkImportJobsRequestRequestTypeDef](./type_defs.md#listbulkimportjobsrequestrequesttypedef) 
 
 ### list\_dashboards
 
@@ -2318,6 +2419,7 @@ Type annotations and code completion for `#!python boto3.client("iotsitewise").g
 - `client.get_paginator("list_asset_relationships")` -> [ListAssetRelationshipsPaginator](./paginators.md#listassetrelationshipspaginator)
 - `client.get_paginator("list_assets")` -> [ListAssetsPaginator](./paginators.md#listassetspaginator)
 - `client.get_paginator("list_associated_assets")` -> [ListAssociatedAssetsPaginator](./paginators.md#listassociatedassetspaginator)
+- `client.get_paginator("list_bulk_import_jobs")` -> [ListBulkImportJobsPaginator](./paginators.md#listbulkimportjobspaginator)
 - `client.get_paginator("list_dashboards")` -> [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
 - `client.get_paginator("list_gateways")` -> [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
 - `client.get_paginator("list_portals")` -> [ListPortalsPaginator](./paginators.md#listportalspaginator)

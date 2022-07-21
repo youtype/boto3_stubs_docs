@@ -127,6 +127,7 @@ def get_value() -> AdditionalResultAttributeValueTypeType:
 - [ScoreConfidenceType](./literals.md#scoreconfidencetype)
 - [ServiceNowAuthenticationTypeType](./literals.md#servicenowauthenticationtypetype)
 - [ServiceNowBuildVersionTypeType](./literals.md#servicenowbuildversiontypetype)
+- [SharePointOnlineAuthenticationTypeType](./literals.md#sharepointonlineauthenticationtypetype)
 - [SharePointVersionType](./literals.md#sharepointversiontype)
 - [SlackEntityType](./literals.md#slackentitytype)
 - [SortOrderType](./literals.md#sortordertype)

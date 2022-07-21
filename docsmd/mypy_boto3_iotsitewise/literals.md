@@ -264,6 +264,27 @@ CapabilitySyncStatusType = Literal[
     "UNKNOWN",
 ]
 ```
+## ColumnNameType
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import ColumnNameType
+
+def get_value() -> ColumnNameType:
+    return "ALIAS"
+```
+
+```python title="Definition"
+ColumnNameType = Literal[
+    "ALIAS",
+    "ASSET_ID",
+    "DATA_TYPE",
+    "PROPERTY_ID",
+    "QUALITY",
+    "TIMESTAMP_NANO_OFFSET",
+    "TIMESTAMP_SECONDS",
+    "VALUE",
+]
+```
 ## ComputeLocationType
 
 ```python title="Usage Example"
@@ -442,6 +463,25 @@ ImageFileTypeType = Literal[
     "PNG",
 ]
 ```
+## JobStatusType
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import JobStatusType
+
+def get_value() -> JobStatusType:
+    return "CANCELLED"
+```
+
+```python title="Definition"
+JobStatusType = Literal[
+    "CANCELLED",
+    "COMPLETED",
+    "COMPLETED_WITH_FAILURES",
+    "FAILED",
+    "PENDING",
+    "RUNNING",
+]
+```
 ## ListAccessPoliciesPaginatorName
 
 ```python title="Usage Example"
@@ -525,6 +565,40 @@ def get_value() -> ListAssociatedAssetsPaginatorName:
 ```python title="Definition"
 ListAssociatedAssetsPaginatorName = Literal[
     "list_associated_assets",
+]
+```
+## ListBulkImportJobsFilterType
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import ListBulkImportJobsFilterType
+
+def get_value() -> ListBulkImportJobsFilterType:
+    return "ALL"
+```
+
+```python title="Definition"
+ListBulkImportJobsFilterType = Literal[
+    "ALL",
+    "CANCELLED",
+    "COMPLETED",
+    "COMPLETED_WITH_FAILURES",
+    "FAILED",
+    "PENDING",
+    "RUNNING",
+]
+```
+## ListBulkImportJobsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import ListBulkImportJobsPaginatorName
+
+def get_value() -> ListBulkImportJobsPaginatorName:
+    return "list_bulk_import_jobs"
+```
+
+```python title="Definition"
+ListBulkImportJobsPaginatorName = Literal[
+    "list_bulk_import_jobs",
 ]
 ```
 ## ListDashboardsPaginatorName
@@ -1221,6 +1295,7 @@ PaginatorName = Literal[
     "list_asset_relationships",
     "list_assets",
     "list_associated_assets",
+    "list_bulk_import_jobs",
     "list_dashboards",
     "list_gateways",
     "list_portals",

@@ -688,6 +688,7 @@ class ModifyDBInstanceMessageRequestTypeDef(TypedDict):
     AutoMinorVersionUpgrade: NotRequired[bool],
     NewDBInstanceIdentifier: NotRequired[str],
     CACertificateIdentifier: NotRequired[str],
+    CopyTagsToSnapshot: NotRequired[bool],
     PromotionTier: NotRequired[int],
     EnablePerformanceInsights: NotRequired[bool],
     PerformanceInsightsKMSKeyId: NotRequired[str],
@@ -1218,6 +1219,7 @@ class CreateDBInstanceMessageRequestTypeDef(TypedDict):
     PreferredMaintenanceWindow: NotRequired[str],
     AutoMinorVersionUpgrade: NotRequired[bool],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    CopyTagsToSnapshot: NotRequired[bool],
     PromotionTier: NotRequired[int],
     EnablePerformanceInsights: NotRequired[bool],
     PerformanceInsightsKMSKeyId: NotRequired[str],
@@ -1316,6 +1318,7 @@ def get_value() -> RestoreDBClusterToPointInTimeMessageRequestTypeDef:
 class RestoreDBClusterToPointInTimeMessageRequestTypeDef(TypedDict):
     DBClusterIdentifier: str,
     SourceDBClusterIdentifier: str,
+    RestoreType: NotRequired[str],
     RestoreToTime: NotRequired[Union[datetime, str]],
     UseLatestRestorableTime: NotRequired[bool],
     Port: NotRequired[int],
@@ -1722,6 +1725,7 @@ class DBClusterTypeDef(TypedDict):
     DbClusterResourceId: NotRequired[str],
     DBClusterArn: NotRequired[str],
     AssociatedRoles: NotRequired[List[DBClusterRoleTypeDef]],  # (3)
+    CloneGroupId: NotRequired[str],
     ClusterCreateTime: NotRequired[datetime],
     EnabledCloudwatchLogsExports: NotRequired[List[str]],
     DeletionProtection: NotRequired[bool],
@@ -3038,6 +3042,7 @@ class DBInstanceTypeDef(TypedDict):
     KmsKeyId: NotRequired[str],
     DbiResourceId: NotRequired[str],
     CACertificateIdentifier: NotRequired[str],
+    CopyTagsToSnapshot: NotRequired[bool],
     PromotionTier: NotRequired[int],
     DBInstanceArn: NotRequired[str],
     EnabledCloudwatchLogsExports: NotRequired[List[str]],

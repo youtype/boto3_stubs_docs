@@ -615,6 +615,22 @@ class GetQueryResultsInputRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## GetQueryRuntimeStatisticsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetQueryRuntimeStatisticsInputRequestTypeDef
+
+def get_value() -> GetQueryRuntimeStatisticsInputRequestTypeDef:
+    return {
+        "QueryExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetQueryRuntimeStatisticsInputRequestTypeDef(TypedDict):
+    QueryExecutionId: str,
+```
+
 ## GetTableMetadataInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -869,6 +885,91 @@ class QueryExecutionStatisticsTypeDef(TypedDict):
     ServiceProcessingTimeInMillis: NotRequired[int],
 ```
 
+## QueryRuntimeStatisticsRowsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import QueryRuntimeStatisticsRowsTypeDef
+
+def get_value() -> QueryRuntimeStatisticsRowsTypeDef:
+    return {
+        "InputRows": ...,
+    }
+```
+
+```python title="Definition"
+class QueryRuntimeStatisticsRowsTypeDef(TypedDict):
+    InputRows: NotRequired[int],
+    InputBytes: NotRequired[int],
+    OutputBytes: NotRequired[int],
+    OutputRows: NotRequired[int],
+```
+
+## QueryRuntimeStatisticsTimelineTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import QueryRuntimeStatisticsTimelineTypeDef
+
+def get_value() -> QueryRuntimeStatisticsTimelineTypeDef:
+    return {
+        "QueryQueueTimeInMillis": ...,
+    }
+```
+
+```python title="Definition"
+class QueryRuntimeStatisticsTimelineTypeDef(TypedDict):
+    QueryQueueTimeInMillis: NotRequired[int],
+    QueryPlanningTimeInMillis: NotRequired[int],
+    EngineExecutionTimeInMillis: NotRequired[int],
+    ServiceProcessingTimeInMillis: NotRequired[int],
+    TotalExecutionTimeInMillis: NotRequired[int],
+```
+
+## QueryStagePlanNodeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import QueryStagePlanNodeTypeDef
+
+def get_value() -> QueryStagePlanNodeTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class QueryStagePlanNodeTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Identifier: NotRequired[str],
+    Children: NotRequired[List[QueryStagePlanNodeTypeDef]],  # (1)
+    RemoteSources: NotRequired[List[str]],
+```
+
+1. See [:material-code-braces: QueryStagePlanNodeTypeDef](./type_defs.md#querystageplannodetypedef) 
+## QueryStageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import QueryStageTypeDef
+
+def get_value() -> QueryStageTypeDef:
+    return {
+        "StageId": ...,
+    }
+```
+
+```python title="Definition"
+class QueryStageTypeDef(TypedDict):
+    StageId: NotRequired[int],
+    State: NotRequired[str],
+    OutputBytes: NotRequired[int],
+    OutputRows: NotRequired[int],
+    InputBytes: NotRequired[int],
+    InputRows: NotRequired[int],
+    ExecutionTime: NotRequired[int],
+    QueryStagePlan: NotRequired[QueryStagePlanNodeTypeDef],  # (1)
+    SubStages: NotRequired[List[QueryStageTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: QueryStagePlanNodeTypeDef](./type_defs.md#querystageplannodetypedef) 
+2. See [:material-code-braces: QueryStageTypeDef](./type_defs.md#querystagetypedef) 
 ## StopQueryExecutionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1600,6 +1701,27 @@ class ListPreparedStatementsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: PreparedStatementSummaryTypeDef](./type_defs.md#preparedstatementsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## QueryRuntimeStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import QueryRuntimeStatisticsTypeDef
+
+def get_value() -> QueryRuntimeStatisticsTypeDef:
+    return {
+        "Timeline": ...,
+    }
+```
+
+```python title="Definition"
+class QueryRuntimeStatisticsTypeDef(TypedDict):
+    Timeline: NotRequired[QueryRuntimeStatisticsTimelineTypeDef],  # (1)
+    Rows: NotRequired[QueryRuntimeStatisticsRowsTypeDef],  # (2)
+    OutputStage: NotRequired[QueryStageTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: QueryRuntimeStatisticsTimelineTypeDef](./type_defs.md#queryruntimestatisticstimelinetypedef) 
+2. See [:material-code-braces: QueryRuntimeStatisticsRowsTypeDef](./type_defs.md#queryruntimestatisticsrowstypedef) 
+3. See [:material-code-braces: QueryStageTypeDef](./type_defs.md#querystagetypedef) 
 ## GetTableMetadataOutputTypeDef
 
 ```python title="Usage Example"
@@ -1783,6 +1905,26 @@ class ListWorkGroupsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WorkGroupSummaryTypeDef](./type_defs.md#workgroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetQueryRuntimeStatisticsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetQueryRuntimeStatisticsOutputTypeDef
+
+def get_value() -> GetQueryRuntimeStatisticsOutputTypeDef:
+    return {
+        "QueryRuntimeStatistics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetQueryRuntimeStatisticsOutputTypeDef(TypedDict):
+    QueryRuntimeStatistics: QueryRuntimeStatisticsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: QueryRuntimeStatisticsTypeDef](./type_defs.md#queryruntimestatisticstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueryResultsOutputTypeDef
 

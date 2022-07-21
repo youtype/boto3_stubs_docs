@@ -169,11 +169,12 @@ ModelSourceType = Literal[
 from mypy_boto3_frauddetector.literals import ModelTypeEnumType
 
 def get_value() -> ModelTypeEnumType:
-    return "ONLINE_FRAUD_INSIGHTS"
+    return "ACCOUNT_TAKEOVER_INSIGHTS"
 ```
 
 ```python title="Definition"
 ModelTypeEnumType = Literal[
+    "ACCOUNT_TAKEOVER_INSIGHTS",
     "ONLINE_FRAUD_INSIGHTS",
     "TRANSACTION_FRAUD_INSIGHTS",
 ]

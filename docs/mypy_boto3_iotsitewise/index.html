@@ -36685,6 +36685,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listassetrelationshipspaginator">ListAssetRelationshipsPaginator</a></li>
 <li><a href="paginators/#listassetspaginator">ListAssetsPaginator</a></li>
 <li><a href="paginators/#listassociatedassetspaginator">ListAssociatedAssetsPaginator</a></li>
+<li><a href="paginators/#listbulkimportjobspaginator">ListBulkImportJobsPaginator</a></li>
 <li><a href="paginators/#listdashboardspaginator">ListDashboardsPaginator</a></li>
 <li><a href="paginators/#listgatewayspaginator">ListGatewaysPaginator</a></li>
 <li><a href="paginators/#listportalspaginator">ListPortalsPaginator</a></li>
@@ -36734,6 +36735,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#batchgetassetpropertyvaluehistoryerrorcodetype">BatchGetAssetPropertyValueHistoryErrorCodeType</a></li>
 <li><a href="literals/#batchputassetpropertyvalueerrorcodetype">BatchPutAssetPropertyValueErrorCodeType</a></li>
 <li><a href="literals/#capabilitysyncstatustype">CapabilitySyncStatusType</a></li>
+<li><a href="literals/#columnnametype">ColumnNameType</a></li>
 <li><a href="literals/#computelocationtype">ComputeLocationType</a></li>
 <li><a href="literals/#configurationstatetype">ConfigurationStateType</a></li>
 <li><a href="literals/#detailederrorcodetype">DetailedErrorCodeType</a></li>
@@ -36746,12 +36748,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#getinterpolatedassetpropertyvaluespaginatorname">GetInterpolatedAssetPropertyValuesPaginatorName</a></li>
 <li><a href="literals/#identitytypetype">IdentityTypeType</a></li>
 <li><a href="literals/#imagefiletypetype">ImageFileTypeType</a></li>
+<li><a href="literals/#jobstatustype">JobStatusType</a></li>
 <li><a href="literals/#listaccesspoliciespaginatorname">ListAccessPoliciesPaginatorName</a></li>
 <li><a href="literals/#listassetmodelspaginatorname">ListAssetModelsPaginatorName</a></li>
 <li><a href="literals/#listassetrelationshipspaginatorname">ListAssetRelationshipsPaginatorName</a></li>
 <li><a href="literals/#listassetsfiltertype">ListAssetsFilterType</a></li>
 <li><a href="literals/#listassetspaginatorname">ListAssetsPaginatorName</a></li>
 <li><a href="literals/#listassociatedassetspaginatorname">ListAssociatedAssetsPaginatorName</a></li>
+<li><a href="literals/#listbulkimportjobsfiltertype">ListBulkImportJobsFilterType</a></li>
+<li><a href="literals/#listbulkimportjobspaginatorname">ListBulkImportJobsPaginatorName</a></li>
 <li><a href="literals/#listdashboardspaginatorname">ListDashboardsPaginatorName</a></li>
 <li><a href="literals/#listgatewayspaginatorname">ListGatewaysPaginatorName</a></li>
 <li><a href="literals/#listportalspaginatorname">ListPortalsPaginatorName</a></li>
@@ -36817,9 +36822,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchgetassetpropertyvaluehistoryerrorinfotypedef">BatchGetAssetPropertyValueHistoryErrorInfoTypeDef</a></li>
 <li><a href="type_defs/#configurationerrordetailstypedef">ConfigurationErrorDetailsTypeDef</a></li>
 <li><a href="type_defs/#createassetrequestrequesttypedef">CreateAssetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#errorreportlocationtypedef">ErrorReportLocationTypeDef</a></li>
+<li><a href="type_defs/#filetypedef">FileTypeDef</a></li>
 <li><a href="type_defs/#createdashboardrequestrequesttypedef">CreateDashboardRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#imagefiletypedef">ImageFileTypeDef</a></li>
 <li><a href="type_defs/#createprojectrequestrequesttypedef">CreateProjectRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#csvtypedef">CsvTypeDef</a></li>
 <li><a href="type_defs/#customermanageds3storagetypedef">CustomerManagedS3StorageTypeDef</a></li>
 <li><a href="type_defs/#dashboardsummarytypedef">DashboardSummaryTypeDef</a></li>
 <li><a href="type_defs/#deleteaccesspolicyrequestrequesttypedef">DeleteAccessPolicyRequestRequestTypeDef</a></li>
@@ -36835,6 +36843,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeassetmodelrequestrequesttypedef">DescribeAssetModelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeassetpropertyrequestrequesttypedef">DescribeAssetPropertyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeassetrequestrequesttypedef">DescribeAssetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describebulkimportjobrequestrequesttypedef">DescribeBulkImportJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedashboardrequestrequesttypedef">DescribeDashboardRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describegatewaycapabilityconfigurationrequestrequesttypedef">DescribeGatewayCapabilityConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describegatewayrequestrequesttypedef">DescribeGatewayRequestRequestTypeDef</a></li>
@@ -36861,11 +36870,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#iamroleidentitytypedef">IAMRoleIdentityTypeDef</a></li>
 <li><a href="type_defs/#iamuseridentitytypedef">IAMUserIdentityTypeDef</a></li>
 <li><a href="type_defs/#useridentitytypedef">UserIdentityTypeDef</a></li>
+<li><a href="type_defs/#jobsummarytypedef">JobSummaryTypeDef</a></li>
 <li><a href="type_defs/#listaccesspoliciesrequestrequesttypedef">ListAccessPoliciesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listassetmodelsrequestrequesttypedef">ListAssetModelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listassetrelationshipsrequestrequesttypedef">ListAssetRelationshipsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listassetsrequestrequesttypedef">ListAssetsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listassociatedassetsrequestrequesttypedef">ListAssociatedAssetsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listbulkimportjobsrequestrequesttypedef">ListBulkImportJobsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdashboardsrequestrequesttypedef">ListDashboardsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listgatewaysrequestrequesttypedef">ListGatewaysRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listportalsrequestrequesttypedef">ListPortalsRequestRequestTypeDef</a></li>
@@ -36898,6 +36909,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchassociateprojectassetsresponsetypedef">BatchAssociateProjectAssetsResponseTypeDef</a></li>
 <li><a href="type_defs/#batchdisassociateprojectassetsresponsetypedef">BatchDisassociateProjectAssetsResponseTypeDef</a></li>
 <li><a href="type_defs/#createaccesspolicyresponsetypedef">CreateAccessPolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#createbulkimportjobresponsetypedef">CreateBulkImportJobResponseTypeDef</a></li>
 <li><a href="type_defs/#createdashboardresponsetypedef">CreateDashboardResponseTypeDef</a></li>
 <li><a href="type_defs/#creategatewayresponsetypedef">CreateGatewayResponseTypeDef</a></li>
 <li><a href="type_defs/#createprojectresponsetypedef">CreateProjectResponseTypeDef</a></li>
@@ -36918,6 +36930,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#configurationstatustypedef">ConfigurationStatusTypeDef</a></li>
 <li><a href="type_defs/#createportalrequestrequesttypedef">CreatePortalRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#imagetypedef">ImageTypeDef</a></li>
+<li><a href="type_defs/#fileformattypedef">FileFormatTypeDef</a></li>
 <li><a href="type_defs/#multilayerstoragetypedef">MultiLayerStorageTypeDef</a></li>
 <li><a href="type_defs/#listdashboardsresponsetypedef">ListDashboardsResponseTypeDef</a></li>
 <li><a href="type_defs/#describeassetmodelrequestassetmodelactivewaittypedef">DescribeAssetModelRequestAssetModelActiveWaitTypeDef</a></li>
@@ -36941,6 +36954,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listassetrelationshipsrequestlistassetrelationshipspaginatetypedef">ListAssetRelationshipsRequestListAssetRelationshipsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listassetsrequestlistassetspaginatetypedef">ListAssetsRequestListAssetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listassociatedassetsrequestlistassociatedassetspaginatetypedef">ListAssociatedAssetsRequestListAssociatedAssetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listbulkimportjobsrequestlistbulkimportjobspaginatetypedef">ListBulkImportJobsRequestListBulkImportJobsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdashboardsrequestlistdashboardspaginatetypedef">ListDashboardsRequestListDashboardsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listgatewaysrequestlistgatewayspaginatetypedef">ListGatewaysRequestListGatewaysPaginateTypeDef</a></li>
 <li><a href="type_defs/#listportalsrequestlistportalspaginatetypedef">ListPortalsRequestListPortalsPaginateTypeDef</a></li>
@@ -36948,6 +36962,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listprojectsrequestlistprojectspaginatetypedef">ListProjectsRequestListProjectsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtimeseriesrequestlisttimeseriespaginatetypedef">ListTimeSeriesRequestListTimeSeriesPaginateTypeDef</a></li>
 <li><a href="type_defs/#identitytypedef">IdentityTypeDef</a></li>
+<li><a href="type_defs/#listbulkimportjobsresponsetypedef">ListBulkImportJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#listprojectsresponsetypedef">ListProjectsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtimeseriesresponsetypedef">ListTimeSeriesResponseTypeDef</a></li>
 <li><a href="type_defs/#metricwindowtypedef">MetricWindowTypeDef</a></li>
@@ -36967,6 +36982,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describedefaultencryptionconfigurationresponsetypedef">DescribeDefaultEncryptionConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#putdefaultencryptionconfigurationresponsetypedef">PutDefaultEncryptionConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#updateportalrequestrequesttypedef">UpdatePortalRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#jobconfigurationtypedef">JobConfigurationTypeDef</a></li>
 <li><a href="type_defs/#describestorageconfigurationresponsetypedef">DescribeStorageConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#putstorageconfigurationrequestrequesttypedef">PutStorageConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putstorageconfigurationresponsetypedef">PutStorageConfigurationResponseTypeDef</a></li>
@@ -36992,6 +37008,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchgetassetpropertyvaluehistoryresponsetypedef">BatchGetAssetPropertyValueHistoryResponseTypeDef</a></li>
 <li><a href="type_defs/#batchgetassetpropertyvalueresponsetypedef">BatchGetAssetPropertyValueResponseTypeDef</a></li>
 <li><a href="type_defs/#batchputassetpropertyvaluerequestrequesttypedef">BatchPutAssetPropertyValueRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createbulkimportjobrequestrequesttypedef">CreateBulkImportJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describebulkimportjobresponsetypedef">DescribeBulkImportJobResponseTypeDef</a></li>
 <li><a href="type_defs/#assetmodelsummarytypedef">AssetModelSummaryTypeDef</a></li>
 <li><a href="type_defs/#createassetmodelresponsetypedef">CreateAssetModelResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteassetmodelresponsetypedef">DeleteAssetModelResponseTypeDef</a></li>

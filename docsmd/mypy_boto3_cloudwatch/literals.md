@@ -7,6 +7,22 @@
     Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
     type annotations stubs module [mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
+## ActionsSuppressedByType
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.literals import ActionsSuppressedByType
+
+def get_value() -> ActionsSuppressedByType:
+    return "Alarm"
+```
+
+```python title="Definition"
+ActionsSuppressedByType = Literal[
+    "Alarm",
+    "ExtensionPeriod",
+    "WaitPeriod",
+]
+```
 ## AlarmExistsWaiterName
 
 ```python title="Usage Example"

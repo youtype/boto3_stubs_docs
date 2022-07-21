@@ -37,6 +37,7 @@ except (
     client.EC2InstanceNotFoundException,
     client.EC2InstanceStateInvalidException,
     client.EC2InstanceTypeInvalidException,
+    client.EC2InstanceUnavailableException,
     client.InvalidArgsException,
     client.SerialConsoleAccessDisabledException,
     client.SerialConsoleSessionLimitExceededException,

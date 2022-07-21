@@ -101,6 +101,22 @@ class AttachmentTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 
+## IPSetMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import IPSetMetadataTypeDef
+
+def get_value() -> IPSetMetadataTypeDef:
+    return {
+        "ResolvedCIDRCount": ...,
+    }
+```
+
+```python title="Definition"
+class IPSetMetadataTypeDef(TypedDict):
+    ResolvedCIDRCount: NotRequired[int],
+```
+
 ## EncryptionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -477,6 +493,22 @@ class HeaderTypeDef(TypedDict):
 
 1. See [:material-code-brackets: StatefulRuleProtocolType](./literals.md#statefulruleprotocoltype) 
 2. See [:material-code-brackets: StatefulRuleDirectionType](./literals.md#statefulruledirectiontype) 
+## IPSetReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import IPSetReferenceTypeDef
+
+def get_value() -> IPSetReferenceTypeDef:
+    return {
+        "ReferenceArn": ...,
+    }
+```
+
+```python title="Definition"
+class IPSetReferenceTypeDef(TypedDict):
+    ReferenceArn: NotRequired[str],
+```
+
 ## IPSetTypeDef
 
 ```python title="Usage Example"
@@ -1081,6 +1113,25 @@ class DisassociateSubnetsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CIDRSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import CIDRSummaryTypeDef
+
+def get_value() -> CIDRSummaryTypeDef:
+    return {
+        "AvailableCIDRCount": ...,
+    }
+```
+
+```python title="Definition"
+class CIDRSummaryTypeDef(TypedDict):
+    AvailableCIDRCount: NotRequired[int],
+    UtilizedCIDRCount: NotRequired[int],
+    IPSetReferences: NotRequired[Dict[str, IPSetMetadataTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: IPSetMetadataTypeDef](./type_defs.md#ipsetmetadatatypedef) 
 ## UpdateFirewallEncryptionConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1393,6 +1444,23 @@ class ListFirewallPoliciesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FirewallPolicyMetadataTypeDef](./type_defs.md#firewallpolicymetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReferenceSetsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import ReferenceSetsTypeDef
+
+def get_value() -> ReferenceSetsTypeDef:
+    return {
+        "IPSetReferences": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceSetsTypeDef(TypedDict):
+    IPSetReferences: NotRequired[Mapping[str, IPSetReferenceTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: IPSetReferenceTypeDef](./type_defs.md#ipsetreferencetypedef) 
 ## ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1614,6 +1682,23 @@ class StatefulRuleGroupReferenceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: StatefulRuleGroupOverrideTypeDef](./type_defs.md#statefulrulegroupoverridetypedef) 
+## CapacityUsageSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import CapacityUsageSummaryTypeDef
+
+def get_value() -> CapacityUsageSummaryTypeDef:
+    return {
+        "CIDRs": ...,
+    }
+```
+
+```python title="Definition"
+class CapacityUsageSummaryTypeDef(TypedDict):
+    CIDRs: NotRequired[CIDRSummaryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CIDRSummaryTypeDef](./type_defs.md#cidrsummarytypedef) 
 ## CreateFirewallPolicyResponseTypeDef
 
 ```python title="Usage Example"
@@ -1860,11 +1945,13 @@ class FirewallStatusTypeDef(TypedDict):
     Status: FirewallStatusValueType,  # (1)
     ConfigurationSyncStateSummary: ConfigurationSyncStateType,  # (2)
     SyncStates: NotRequired[Dict[str, SyncStateTypeDef]],  # (3)
+    CapacityUsageSummary: NotRequired[CapacityUsageSummaryTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: FirewallStatusValueType](./literals.md#firewallstatusvaluetype) 
 2. See [:material-code-brackets: ConfigurationSyncStateType](./literals.md#configurationsyncstatetype) 
 3. See [:material-code-braces: SyncStateTypeDef](./type_defs.md#syncstatetypedef) 
+4. See [:material-code-braces: CapacityUsageSummaryTypeDef](./type_defs.md#capacityusagesummarytypedef) 
 ## CustomActionTypeDef
 
 ```python title="Usage Example"
@@ -2130,14 +2217,16 @@ def get_value() -> RuleGroupTypeDef:
 
 ```python title="Definition"
 class RuleGroupTypeDef(TypedDict):
-    RulesSource: RulesSourceTypeDef,  # (2)
+    RulesSource: RulesSourceTypeDef,  # (3)
     RuleVariables: NotRequired[RuleVariablesTypeDef],  # (1)
-    StatefulRuleOptions: NotRequired[StatefulRuleOptionsTypeDef],  # (3)
+    ReferenceSets: NotRequired[ReferenceSetsTypeDef],  # (2)
+    StatefulRuleOptions: NotRequired[StatefulRuleOptionsTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: RuleVariablesTypeDef](./type_defs.md#rulevariablestypedef) 
-2. See [:material-code-braces: RulesSourceTypeDef](./type_defs.md#rulessourcetypedef) 
-3. See [:material-code-braces: StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef) 
+2. See [:material-code-braces: ReferenceSetsTypeDef](./type_defs.md#referencesetstypedef) 
+3. See [:material-code-braces: RulesSourceTypeDef](./type_defs.md#rulessourcetypedef) 
+4. See [:material-code-braces: StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef) 
 ## CreateRuleGroupRequestRequestTypeDef
 
 ```python title="Usage Example"

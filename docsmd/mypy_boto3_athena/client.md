@@ -632,6 +632,36 @@ parent.get_query_results(**kwargs)
 
 1. See [:material-code-braces: GetQueryResultsInputRequestTypeDef](./type_defs.md#getqueryresultsinputrequesttypedef) 
 
+### get\_query\_runtime\_statistics
+
+Returns query execution runtime statistics related to a single execution of a
+query if you have access to the workgroup in which the query ran.
+
+Type annotations and code completion for `#!python boto3.client("athena").get_query_runtime_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_runtime_statistics)
+
+```python title="Method definition"
+def get_query_runtime_statistics(
+    self,
+    *,
+    QueryExecutionId: str,
+) -> GetQueryRuntimeStatisticsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetQueryRuntimeStatisticsOutputTypeDef](./type_defs.md#getqueryruntimestatisticsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetQueryRuntimeStatisticsInputRequestTypeDef = {  # (1)
+    "QueryExecutionId": ...,
+}
+
+parent.get_query_runtime_statistics(**kwargs)
+```
+
+1. See [:material-code-braces: GetQueryRuntimeStatisticsInputRequestTypeDef](./type_defs.md#getqueryruntimestatisticsinputrequesttypedef) 
+
 ### get\_table\_metadata
 
 Returns table metadata for the specified catalog, database, and table.

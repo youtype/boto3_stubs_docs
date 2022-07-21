@@ -2434,12 +2434,14 @@ class SharePointConfigurationTypeDef(TypedDict):
     DocumentTitleFieldName: NotRequired[str],
     DisableLocalGroups: NotRequired[bool],
     SslCertificateS3Path: NotRequired[S3PathTypeDef],  # (4)
+    AuthenticationType: NotRequired[SharePointOnlineAuthenticationTypeType],  # (5)
 ```
 
 1. See [:material-code-brackets: SharePointVersionType](./literals.md#sharepointversiontype) 
 2. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
 3. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
 4. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+5. See [:material-code-brackets: SharePointOnlineAuthenticationTypeType](./literals.md#sharepointonlineauthenticationtypetype) 
 ## UpdateQuerySuggestionsBlockListRequestRequestTypeDef
 
 ```python title="Usage Example"

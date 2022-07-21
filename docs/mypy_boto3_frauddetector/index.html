@@ -36668,14 +36668,18 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_frauddetector.type_defs</span> <span class="kn">import</span> <span class="n">BatchCreateVariableErrorTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_frauddetector.type_defs</span> <span class="kn">import</span> <span class="n">ATIMetricDataPointTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BatchCreateVariableErrorTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ATIMetricDataPointTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;cr&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#atimetricdatapointtypedef">ATIMetricDataPointTypeDef</a></li>
+<li><a href="type_defs/#atimodelperformancetypedef">ATIModelPerformanceTypeDef</a></li>
+<li><a href="type_defs/#aggregatedlogoddsmetrictypedef">AggregatedLogOddsMetricTypeDef</a></li>
+<li><a href="type_defs/#aggregatedvariablesimpactexplanationtypedef">AggregatedVariablesImpactExplanationTypeDef</a></li>
 <li><a href="type_defs/#batchcreatevariableerrortypedef">BatchCreateVariableErrorTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#variableentrytypedef">VariableEntryTypeDef</a></li>
@@ -36750,8 +36754,12 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#logoddsmetrictypedef">LogOddsMetricTypeDef</a></li>
 <li><a href="type_defs/#metricdatapointtypedef">MetricDataPointTypeDef</a></li>
+<li><a href="type_defs/#ofimetricdatapointtypedef">OFIMetricDataPointTypeDef</a></li>
+<li><a href="type_defs/#ofimodelperformancetypedef">OFIModelPerformanceTypeDef</a></li>
 <li><a href="type_defs/#variableimpactexplanationtypedef">VariableImpactExplanationTypeDef</a></li>
 <li><a href="type_defs/#putkmsencryptionkeyrequestrequesttypedef">PutKMSEncryptionKeyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tfimetricdatapointtypedef">TFIMetricDataPointTypeDef</a></li>
+<li><a href="type_defs/#tfimodelperformancetypedef">TFIModelPerformanceTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedetectorversionmetadatarequestrequesttypedef">UpdateDetectorVersionMetadataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedetectorversionstatusrequestrequesttypedef">UpdateDetectorVersionStatusRequestRequestTypeDef</a></li>
@@ -36759,6 +36767,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#updatemodelrequestrequesttypedef">UpdateModelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatemodelversionstatusrequestrequesttypedef">UpdateModelVersionStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatevariablerequestrequesttypedef">UpdateVariableRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#atitrainingmetricsvaluetypedef">ATITrainingMetricsValueTypeDef</a></li>
+<li><a href="type_defs/#aggregatedvariablesimportancemetricstypedef">AggregatedVariablesImportanceMetricsTypeDef</a></li>
 <li><a href="type_defs/#createbatchimportjobrequestrequesttypedef">CreateBatchImportJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createbatchpredictionjobrequestrequesttypedef">CreateBatchPredictionJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createmodelrequestrequesttypedef">CreateModelRequestRequestTypeDef</a></li>
@@ -36813,7 +36823,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listeventpredictionsrequestrequesttypedef">ListEventPredictionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#variableimportancemetricstypedef">VariableImportanceMetricsTypeDef</a></li>
 <li><a href="type_defs/#trainingmetricstypedef">TrainingMetricsTypeDef</a></li>
+<li><a href="type_defs/#ofitrainingmetricsvaluetypedef">OFITrainingMetricsValueTypeDef</a></li>
 <li><a href="type_defs/#predictionexplanationstypedef">PredictionExplanationsTypeDef</a></li>
+<li><a href="type_defs/#tfitrainingmetricsvaluetypedef">TFITrainingMetricsValueTypeDef</a></li>
 <li><a href="type_defs/#geteventresulttypedef">GetEventResultTypeDef</a></li>
 <li><a href="type_defs/#geteventtypesresulttypedef">GetEventTypesResultTypeDef</a></li>
 <li><a href="type_defs/#geteventpredictionresulttypedef">GetEventPredictionResultTypeDef</a></li>
@@ -36823,10 +36835,12 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getmodelversionresulttypedef">GetModelVersionResultTypeDef</a></li>
 <li><a href="type_defs/#trainingresulttypedef">TrainingResultTypeDef</a></li>
 <li><a href="type_defs/#modelversionevaluationtypedef">ModelVersionEvaluationTypeDef</a></li>
-<li><a href="type_defs/#modelversiondetailtypedef">ModelVersionDetailTypeDef</a></li>
+<li><a href="type_defs/#trainingmetricsv2typedef">TrainingMetricsV2TypeDef</a></li>
 <li><a href="type_defs/#evaluatedmodelversiontypedef">EvaluatedModelVersionTypeDef</a></li>
-<li><a href="type_defs/#describemodelversionsresulttypedef">DescribeModelVersionsResultTypeDef</a></li>
+<li><a href="type_defs/#trainingresultv2typedef">TrainingResultV2TypeDef</a></li>
 <li><a href="type_defs/#geteventpredictionmetadataresulttypedef">GetEventPredictionMetadataResultTypeDef</a></li>
+<li><a href="type_defs/#modelversiondetailtypedef">ModelVersionDetailTypeDef</a></li>
+<li><a href="type_defs/#describemodelversionsresulttypedef">DescribeModelVersionsResultTypeDef</a></li>
 </ul>
 
               

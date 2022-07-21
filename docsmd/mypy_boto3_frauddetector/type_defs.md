@@ -7,6 +7,77 @@
     Auto-generated documentation for [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
     type annotations stubs module [mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
+## ATIMetricDataPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ATIMetricDataPointTypeDef
+
+def get_value() -> ATIMetricDataPointTypeDef:
+    return {
+        "cr": ...,
+    }
+```
+
+```python title="Definition"
+class ATIMetricDataPointTypeDef(TypedDict):
+    cr: NotRequired[float],
+    adr: NotRequired[float],
+    threshold: NotRequired[float],
+    atodr: NotRequired[float],
+```
+
+## ATIModelPerformanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ATIModelPerformanceTypeDef
+
+def get_value() -> ATIModelPerformanceTypeDef:
+    return {
+        "asi": ...,
+    }
+```
+
+```python title="Definition"
+class ATIModelPerformanceTypeDef(TypedDict):
+    asi: NotRequired[float],
+```
+
+## AggregatedLogOddsMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import AggregatedLogOddsMetricTypeDef
+
+def get_value() -> AggregatedLogOddsMetricTypeDef:
+    return {
+        "variableNames": ...,
+        "aggregatedVariablesImportance": ...,
+    }
+```
+
+```python title="Definition"
+class AggregatedLogOddsMetricTypeDef(TypedDict):
+    variableNames: List[str],
+    aggregatedVariablesImportance: float,
+```
+
+## AggregatedVariablesImpactExplanationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import AggregatedVariablesImpactExplanationTypeDef
+
+def get_value() -> AggregatedVariablesImpactExplanationTypeDef:
+    return {
+        "eventVariableNames": ...,
+    }
+```
+
+```python title="Definition"
+class AggregatedVariablesImpactExplanationTypeDef(TypedDict):
+    eventVariableNames: NotRequired[List[str]],
+    relativeImpact: NotRequired[str],
+    logOddsImpact: NotRequired[float],
+```
+
 ## BatchCreateVariableErrorTypeDef
 
 ```python title="Usage Example"
@@ -1336,7 +1407,7 @@ def get_value() -> LabelSchemaTypeDef:
 
 ```python title="Definition"
 class LabelSchemaTypeDef(TypedDict):
-    labelMapper: Mapping[str, Sequence[str]],
+    labelMapper: NotRequired[Mapping[str, Sequence[str]]],
     unlabeledEventsTreatment: NotRequired[UnlabeledEventsTreatmentType],  # (1)
 ```
 
@@ -1416,6 +1487,41 @@ class MetricDataPointTypeDef(TypedDict):
     threshold: NotRequired[float],
 ```
 
+## OFIMetricDataPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import OFIMetricDataPointTypeDef
+
+def get_value() -> OFIMetricDataPointTypeDef:
+    return {
+        "fpr": ...,
+    }
+```
+
+```python title="Definition"
+class OFIMetricDataPointTypeDef(TypedDict):
+    fpr: NotRequired[float],
+    precision: NotRequired[float],
+    tpr: NotRequired[float],
+    threshold: NotRequired[float],
+```
+
+## OFIModelPerformanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import OFIModelPerformanceTypeDef
+
+def get_value() -> OFIModelPerformanceTypeDef:
+    return {
+        "auc": ...,
+    }
+```
+
+```python title="Definition"
+class OFIModelPerformanceTypeDef(TypedDict):
+    auc: NotRequired[float],
+```
+
 ## VariableImpactExplanationTypeDef
 
 ```python title="Usage Example"
@@ -1448,6 +1554,41 @@ def get_value() -> PutKMSEncryptionKeyRequestRequestTypeDef:
 ```python title="Definition"
 class PutKMSEncryptionKeyRequestRequestTypeDef(TypedDict):
     kmsEncryptionKeyArn: str,
+```
+
+## TFIMetricDataPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import TFIMetricDataPointTypeDef
+
+def get_value() -> TFIMetricDataPointTypeDef:
+    return {
+        "fpr": ...,
+    }
+```
+
+```python title="Definition"
+class TFIMetricDataPointTypeDef(TypedDict):
+    fpr: NotRequired[float],
+    precision: NotRequired[float],
+    tpr: NotRequired[float],
+    threshold: NotRequired[float],
+```
+
+## TFIModelPerformanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import TFIModelPerformanceTypeDef
+
+def get_value() -> TFIModelPerformanceTypeDef:
+    return {
+        "auc": ...,
+    }
+```
+
+```python title="Definition"
+class TFIModelPerformanceTypeDef(TypedDict):
+    auc: NotRequired[float],
 ```
 
 ## UntagResourceRequestRequestTypeDef
@@ -1594,6 +1735,42 @@ class UpdateVariableRequestRequestTypeDef(TypedDict):
     variableType: NotRequired[str],
 ```
 
+## ATITrainingMetricsValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ATITrainingMetricsValueTypeDef
+
+def get_value() -> ATITrainingMetricsValueTypeDef:
+    return {
+        "metricDataPoints": ...,
+    }
+```
+
+```python title="Definition"
+class ATITrainingMetricsValueTypeDef(TypedDict):
+    metricDataPoints: NotRequired[List[ATIMetricDataPointTypeDef]],  # (1)
+    modelPerformance: NotRequired[ATIModelPerformanceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ATIMetricDataPointTypeDef](./type_defs.md#atimetricdatapointtypedef) 
+2. See [:material-code-braces: ATIModelPerformanceTypeDef](./type_defs.md#atimodelperformancetypedef) 
+## AggregatedVariablesImportanceMetricsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import AggregatedVariablesImportanceMetricsTypeDef
+
+def get_value() -> AggregatedVariablesImportanceMetricsTypeDef:
+    return {
+        "logOddsMetrics": ...,
+    }
+```
+
+```python title="Definition"
+class AggregatedVariablesImportanceMetricsTypeDef(TypedDict):
+    logOddsMetrics: NotRequired[List[AggregatedLogOddsMetricTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AggregatedLogOddsMetricTypeDef](./type_defs.md#aggregatedlogoddsmetrictypedef) 
 ## CreateBatchImportJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2769,14 +2946,13 @@ from mypy_boto3_frauddetector.type_defs import TrainingDataSchemaTypeDef
 def get_value() -> TrainingDataSchemaTypeDef:
     return {
         "modelVariables": ...,
-        "labelSchema": ...,
     }
 ```
 
 ```python title="Definition"
 class TrainingDataSchemaTypeDef(TypedDict):
     modelVariables: Sequence[str],
-    labelSchema: LabelSchemaTypeDef,  # (1)
+    labelSchema: NotRequired[LabelSchemaTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: LabelSchemaTypeDef](./type_defs.md#labelschematypedef) 
@@ -2842,6 +3018,25 @@ class TrainingMetricsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MetricDataPointTypeDef](./type_defs.md#metricdatapointtypedef) 
+## OFITrainingMetricsValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import OFITrainingMetricsValueTypeDef
+
+def get_value() -> OFITrainingMetricsValueTypeDef:
+    return {
+        "metricDataPoints": ...,
+    }
+```
+
+```python title="Definition"
+class OFITrainingMetricsValueTypeDef(TypedDict):
+    metricDataPoints: NotRequired[List[OFIMetricDataPointTypeDef]],  # (1)
+    modelPerformance: NotRequired[OFIModelPerformanceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OFIMetricDataPointTypeDef](./type_defs.md#ofimetricdatapointtypedef) 
+2. See [:material-code-braces: OFIModelPerformanceTypeDef](./type_defs.md#ofimodelperformancetypedef) 
 ## PredictionExplanationsTypeDef
 
 ```python title="Usage Example"
@@ -2856,9 +3051,30 @@ def get_value() -> PredictionExplanationsTypeDef:
 ```python title="Definition"
 class PredictionExplanationsTypeDef(TypedDict):
     variableImpactExplanations: NotRequired[List[VariableImpactExplanationTypeDef]],  # (1)
+    aggregatedVariablesImpactExplanations: NotRequired[List[AggregatedVariablesImpactExplanationTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: VariableImpactExplanationTypeDef](./type_defs.md#variableimpactexplanationtypedef) 
+2. See [:material-code-braces: AggregatedVariablesImpactExplanationTypeDef](./type_defs.md#aggregatedvariablesimpactexplanationtypedef) 
+## TFITrainingMetricsValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import TFITrainingMetricsValueTypeDef
+
+def get_value() -> TFITrainingMetricsValueTypeDef:
+    return {
+        "metricDataPoints": ...,
+    }
+```
+
+```python title="Definition"
+class TFITrainingMetricsValueTypeDef(TypedDict):
+    metricDataPoints: NotRequired[List[TFIMetricDataPointTypeDef]],  # (1)
+    modelPerformance: NotRequired[TFIModelPerformanceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TFIMetricDataPointTypeDef](./type_defs.md#tfimetricdatapointtypedef) 
+2. See [:material-code-braces: TFIModelPerformanceTypeDef](./type_defs.md#tfimodelperformancetypedef) 
 ## GetEventResultTypeDef
 
 ```python title="Usage Example"
@@ -3087,39 +3303,27 @@ class ModelVersionEvaluationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PredictionExplanationsTypeDef](./type_defs.md#predictionexplanationstypedef) 
-## ModelVersionDetailTypeDef
+## TrainingMetricsV2TypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import ModelVersionDetailTypeDef
+from mypy_boto3_frauddetector.type_defs import TrainingMetricsV2TypeDef
 
-def get_value() -> ModelVersionDetailTypeDef:
+def get_value() -> TrainingMetricsV2TypeDef:
     return {
-        "modelId": ...,
+        "ofi": ...,
     }
 ```
 
 ```python title="Definition"
-class ModelVersionDetailTypeDef(TypedDict):
-    modelId: NotRequired[str],
-    modelType: NotRequired[ModelTypeEnumType],  # (1)
-    modelVersionNumber: NotRequired[str],
-    status: NotRequired[str],
-    trainingDataSource: NotRequired[TrainingDataSourceEnumType],  # (2)
-    trainingDataSchema: NotRequired[TrainingDataSchemaTypeDef],  # (3)
-    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (4)
-    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (5)
-    trainingResult: NotRequired[TrainingResultTypeDef],  # (6)
-    lastUpdatedTime: NotRequired[str],
-    createdTime: NotRequired[str],
-    arn: NotRequired[str],
+class TrainingMetricsV2TypeDef(TypedDict):
+    ofi: NotRequired[OFITrainingMetricsValueTypeDef],  # (1)
+    tfi: NotRequired[TFITrainingMetricsValueTypeDef],  # (2)
+    ati: NotRequired[ATITrainingMetricsValueTypeDef],  # (3)
 ```
 
-1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
-2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
-3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
-4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
-5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
-6. See [:material-code-braces: TrainingResultTypeDef](./type_defs.md#trainingresulttypedef) 
+1. See [:material-code-braces: OFITrainingMetricsValueTypeDef](./type_defs.md#ofitrainingmetricsvaluetypedef) 
+2. See [:material-code-braces: TFITrainingMetricsValueTypeDef](./type_defs.md#tfitrainingmetricsvaluetypedef) 
+3. See [:material-code-braces: ATITrainingMetricsValueTypeDef](./type_defs.md#atitrainingmetricsvaluetypedef) 
 ## EvaluatedModelVersionTypeDef
 
 ```python title="Usage Example"
@@ -3140,28 +3344,29 @@ class EvaluatedModelVersionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ModelVersionEvaluationTypeDef](./type_defs.md#modelversionevaluationtypedef) 
-## DescribeModelVersionsResultTypeDef
+## TrainingResultV2TypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsResultTypeDef
+from mypy_boto3_frauddetector.type_defs import TrainingResultV2TypeDef
 
-def get_value() -> DescribeModelVersionsResultTypeDef:
+def get_value() -> TrainingResultV2TypeDef:
     return {
-        "modelVersionDetails": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "dataValidationMetrics": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeModelVersionsResultTypeDef(TypedDict):
-    modelVersionDetails: List[ModelVersionDetailTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TrainingResultV2TypeDef(TypedDict):
+    dataValidationMetrics: NotRequired[DataValidationMetricsTypeDef],  # (1)
+    trainingMetricsV2: NotRequired[TrainingMetricsV2TypeDef],  # (2)
+    variableImportanceMetrics: NotRequired[VariableImportanceMetricsTypeDef],  # (3)
+    aggregatedVariablesImportanceMetrics: NotRequired[AggregatedVariablesImportanceMetricsTypeDef],  # (4)
 ```
 
-1. See [:material-code-braces: ModelVersionDetailTypeDef](./type_defs.md#modelversiondetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: DataValidationMetricsTypeDef](./type_defs.md#datavalidationmetricstypedef) 
+2. See [:material-code-braces: TrainingMetricsV2TypeDef](./type_defs.md#trainingmetricsv2typedef) 
+3. See [:material-code-braces: VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef) 
+4. See [:material-code-braces: AggregatedVariablesImportanceMetricsTypeDef](./type_defs.md#aggregatedvariablesimportancemetricstypedef) 
 ## GetEventPredictionMetadataResultTypeDef
 
 ```python title="Usage Example"
@@ -3214,3 +3419,60 @@ class GetEventPredictionMetadataResultTypeDef(TypedDict):
 4. See [:material-code-braces: EvaluatedModelVersionTypeDef](./type_defs.md#evaluatedmodelversiontypedef) 
 5. See [:material-code-braces: EvaluatedExternalModelTypeDef](./type_defs.md#evaluatedexternalmodeltypedef) 
 6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModelVersionDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import ModelVersionDetailTypeDef
+
+def get_value() -> ModelVersionDetailTypeDef:
+    return {
+        "modelId": ...,
+    }
+```
+
+```python title="Definition"
+class ModelVersionDetailTypeDef(TypedDict):
+    modelId: NotRequired[str],
+    modelType: NotRequired[ModelTypeEnumType],  # (1)
+    modelVersionNumber: NotRequired[str],
+    status: NotRequired[str],
+    trainingDataSource: NotRequired[TrainingDataSourceEnumType],  # (2)
+    trainingDataSchema: NotRequired[TrainingDataSchemaTypeDef],  # (3)
+    externalEventsDetail: NotRequired[ExternalEventsDetailTypeDef],  # (4)
+    ingestedEventsDetail: NotRequired[IngestedEventsDetailTypeDef],  # (5)
+    trainingResult: NotRequired[TrainingResultTypeDef],  # (6)
+    lastUpdatedTime: NotRequired[str],
+    createdTime: NotRequired[str],
+    arn: NotRequired[str],
+    trainingResultV2: NotRequired[TrainingResultV2TypeDef],  # (7)
+```
+
+1. See [:material-code-brackets: ModelTypeEnumType](./literals.md#modeltypeenumtype) 
+2. See [:material-code-brackets: TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype) 
+3. See [:material-code-braces: TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef) 
+4. See [:material-code-braces: ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef) 
+5. See [:material-code-braces: IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef) 
+6. See [:material-code-braces: TrainingResultTypeDef](./type_defs.md#trainingresulttypedef) 
+7. See [:material-code-braces: TrainingResultV2TypeDef](./type_defs.md#trainingresultv2typedef) 
+## DescribeModelVersionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsResultTypeDef
+
+def get_value() -> DescribeModelVersionsResultTypeDef:
+    return {
+        "modelVersionDetails": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelVersionsResultTypeDef(TypedDict):
+    modelVersionDetails: List[ModelVersionDetailTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ModelVersionDetailTypeDef](./type_defs.md#modelversiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

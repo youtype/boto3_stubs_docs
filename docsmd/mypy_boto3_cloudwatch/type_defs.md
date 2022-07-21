@@ -92,9 +92,16 @@ class CompositeAlarmTypeDef(TypedDict):
     StateReasonData: NotRequired[str],
     StateUpdatedTimestamp: NotRequired[datetime],
     StateValue: NotRequired[StateValueType],  # (1)
+    StateTransitionedTimestamp: NotRequired[datetime],
+    ActionsSuppressedBy: NotRequired[ActionsSuppressedByType],  # (2)
+    ActionsSuppressedReason: NotRequired[str],
+    ActionsSuppressor: NotRequired[str],
+    ActionsSuppressorWaitPeriod: NotRequired[int],
+    ActionsSuppressorExtensionPeriod: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+2. See [:material-code-brackets: ActionsSuppressedByType](./literals.md#actionssuppressedbytype) 
 ## DashboardEntryTypeDef
 
 ```python title="Usage Example"
@@ -1622,6 +1629,9 @@ class PutCompositeAlarmInputRequestTypeDef(TypedDict):
     InsufficientDataActions: NotRequired[Sequence[str]],
     OKActions: NotRequired[Sequence[str]],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    ActionsSuppressor: NotRequired[str],
+    ActionsSuppressorWaitPeriod: NotRequired[int],
+    ActionsSuppressorExtensionPeriod: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

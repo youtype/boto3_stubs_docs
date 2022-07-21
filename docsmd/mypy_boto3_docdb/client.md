@@ -443,6 +443,7 @@ def create_db_instance(
     PreferredMaintenanceWindow: str = ...,
     AutoMinorVersionUpgrade: bool = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
+    CopyTagsToSnapshot: bool = ...,
     PromotionTier: int = ...,
     EnablePerformanceInsights: bool = ...,
     PerformanceInsightsKMSKeyId: str = ...,
@@ -1534,6 +1535,7 @@ def modify_db_instance(
     AutoMinorVersionUpgrade: bool = ...,
     NewDBInstanceIdentifier: str = ...,
     CACertificateIdentifier: str = ...,
+    CopyTagsToSnapshot: bool = ...,
     PromotionTier: int = ...,
     EnablePerformanceInsights: bool = ...,
     PerformanceInsightsKMSKeyId: str = ...,
@@ -1862,6 +1864,7 @@ def restore_db_cluster_to_point_in_time(
     *,
     DBClusterIdentifier: str,
     SourceDBClusterIdentifier: str,
+    RestoreType: str = ...,
     RestoreToTime: Union[datetime, str] = ...,
     UseLatestRestorableTime: bool = ...,
     Port: int = ...,

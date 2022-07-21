@@ -30,11 +30,12 @@ AttachmentStatusType = Literal[
 from mypy_boto3_network_firewall.literals import ConfigurationSyncStateType
 
 def get_value() -> ConfigurationSyncStateType:
-    return "IN_SYNC"
+    return "CAPACITY_CONSTRAINED"
 ```
 
 ```python title="Definition"
 ConfigurationSyncStateType = Literal[
+    "CAPACITY_CONSTRAINED",
     "IN_SYNC",
     "PENDING",
 ]
@@ -192,11 +193,12 @@ OverrideActionType = Literal[
 from mypy_boto3_network_firewall.literals import PerObjectSyncStatusType
 
 def get_value() -> PerObjectSyncStatusType:
-    return "IN_SYNC"
+    return "CAPACITY_CONSTRAINED"
 ```
 
 ```python title="Definition"
 PerObjectSyncStatusType = Literal[
+    "CAPACITY_CONSTRAINED",
     "IN_SYNC",
     "PENDING",
 ]

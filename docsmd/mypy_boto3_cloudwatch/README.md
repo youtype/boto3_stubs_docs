@@ -169,12 +169,13 @@ def get_resource() -> Alarm:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName
+from mypy_boto3_cloudwatch.literals import ActionsSuppressedByType
 
-def get_value() -> AlarmExistsWaiterName:
-    return "alarm_exists"
+def get_value() -> ActionsSuppressedByType:
+    return "Alarm"
 ```
 
+- [ActionsSuppressedByType](./literals.md#actionssuppressedbytype)
 - [AlarmExistsWaiterName](./literals.md#alarmexistswaitername)
 - [AlarmTypeType](./literals.md#alarmtypetype)
 - [AnomalyDetectorStateValueType](./literals.md#anomalydetectorstatevaluetype)
