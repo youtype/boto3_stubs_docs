@@ -7,6 +7,21 @@
     Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
     type annotations stubs module [mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
+## ProtocolType
+
+```python title="Usage Example"
+from mypy_boto3_iotdeviceadvisor.literals import ProtocolType
+
+def get_value() -> ProtocolType:
+    return "MqttV3_1_1"
+```
+
+```python title="Definition"
+ProtocolType = Literal[
+    "MqttV3_1_1",
+    "MqttV5",
+]
+```
 ## StatusType
 
 ```python title="Usage Example"
@@ -49,6 +64,43 @@ SuiteRunStatusType = Literal[
     "RUNNING",
     "STOPPED",
     "STOPPING",
+]
+```
+## TestCaseScenarioStatusType
+
+```python title="Usage Example"
+from mypy_boto3_iotdeviceadvisor.literals import TestCaseScenarioStatusType
+
+def get_value() -> TestCaseScenarioStatusType:
+    return "CANCELED"
+```
+
+```python title="Definition"
+TestCaseScenarioStatusType = Literal[
+    "CANCELED",
+    "ERROR",
+    "FAIL",
+    "PASS",
+    "PASS_WITH_WARNINGS",
+    "PENDING",
+    "RUNNING",
+    "STOPPED",
+    "STOPPING",
+]
+```
+## TestCaseScenarioTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iotdeviceadvisor.literals import TestCaseScenarioTypeType
+
+def get_value() -> TestCaseScenarioTypeType:
+    return "Advanced"
+```
+
+```python title="Definition"
+TestCaseScenarioTypeType = Literal[
+    "Advanced",
+    "Basic",
 ]
 ```
 ## IoTDeviceAdvisorServiceName

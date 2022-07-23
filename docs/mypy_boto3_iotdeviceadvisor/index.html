@@ -36640,14 +36640,17 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iotdeviceadvisor.literals</span> <span class="kn">import</span> <span class="n">StatusType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iotdeviceadvisor.literals</span> <span class="kn">import</span> <span class="n">ProtocolType</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">StatusType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;CANCELED&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ProtocolType</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;MqttV3_1_1&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#protocoltype">ProtocolType</a></li>
 <li><a href="literals/#statustype">StatusType</a></li>
 <li><a href="literals/#suiterunstatustype">SuiteRunStatusType</a></li>
+<li><a href="literals/#testcasescenariostatustype">TestCaseScenarioStatusType</a></li>
+<li><a href="literals/#testcasescenariotypetype">TestCaseScenarioTypeType</a></li>
 <li><a href="literals/#iotdeviceadvisorservicename">IoTDeviceAdvisorServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -36674,13 +36677,13 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getsuitedefinitionrequestrequesttypedef">GetSuiteDefinitionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getsuiterunreportrequestrequesttypedef">GetSuiteRunReportRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getsuiterunrequestrequesttypedef">GetSuiteRunRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#testcaseruntypedef">TestCaseRunTypeDef</a></li>
 <li><a href="type_defs/#listsuitedefinitionsrequestrequesttypedef">ListSuiteDefinitionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listsuiterunsrequestrequesttypedef">ListSuiteRunsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#suiteruninformationtypedef">SuiteRunInformationTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopsuiterunrequestrequesttypedef">StopSuiteRunRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#testcasescenariotypedef">TestCaseScenarioTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createsuitedefinitionresponsetypedef">CreateSuiteDefinitionResponseTypeDef</a></li>
 <li><a href="type_defs/#getendpointresponsetypedef">GetEndpointResponseTypeDef</a></li>
@@ -36691,13 +36694,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#suitedefinitionconfigurationtypedef">SuiteDefinitionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#suitedefinitioninformationtypedef">SuiteDefinitionInformationTypeDef</a></li>
 <li><a href="type_defs/#suiterunconfigurationtypedef">SuiteRunConfigurationTypeDef</a></li>
-<li><a href="type_defs/#groupresulttypedef">GroupResultTypeDef</a></li>
 <li><a href="type_defs/#listsuiterunsresponsetypedef">ListSuiteRunsResponseTypeDef</a></li>
+<li><a href="type_defs/#testcaseruntypedef">TestCaseRunTypeDef</a></li>
 <li><a href="type_defs/#createsuitedefinitionrequestrequesttypedef">CreateSuiteDefinitionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getsuitedefinitionresponsetypedef">GetSuiteDefinitionResponseTypeDef</a></li>
 <li><a href="type_defs/#updatesuitedefinitionrequestrequesttypedef">UpdateSuiteDefinitionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listsuitedefinitionsresponsetypedef">ListSuiteDefinitionsResponseTypeDef</a></li>
 <li><a href="type_defs/#startsuiterunrequestrequesttypedef">StartSuiteRunRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#groupresulttypedef">GroupResultTypeDef</a></li>
 <li><a href="type_defs/#testresulttypedef">TestResultTypeDef</a></li>
 <li><a href="type_defs/#getsuiterunresponsetypedef">GetSuiteRunResponseTypeDef</a></li>
 </ul>

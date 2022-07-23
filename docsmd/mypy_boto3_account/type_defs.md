@@ -28,6 +28,38 @@ class AlternateContactTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
+## ContactInformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import ContactInformationTypeDef
+
+def get_value() -> ContactInformationTypeDef:
+    return {
+        "AddressLine1": ...,
+        "City": ...,
+        "CountryCode": ...,
+        "FullName": ...,
+        "PhoneNumber": ...,
+        "PostalCode": ...,
+    }
+```
+
+```python title="Definition"
+class ContactInformationTypeDef(TypedDict):
+    AddressLine1: str,
+    City: str,
+    CountryCode: str,
+    FullName: str,
+    PhoneNumber: str,
+    PostalCode: str,
+    AddressLine2: NotRequired[str],
+    AddressLine3: NotRequired[str],
+    CompanyName: NotRequired[str],
+    DistrictOrCounty: NotRequired[str],
+    StateOrRegion: NotRequired[str],
+    WebsiteUrl: NotRequired[str],
+```
+
 ## DeleteAlternateContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -88,6 +120,22 @@ class GetAlternateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
+## GetContactInformationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import GetContactInformationRequestRequestTypeDef
+
+def get_value() -> GetContactInformationRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class GetContactInformationRequestRequestTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+```
+
 ## PutAlternateContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -114,6 +162,24 @@ class PutAlternateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
+## PutContactInformationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import PutContactInformationRequestRequestTypeDef
+
+def get_value() -> PutContactInformationRequestRequestTypeDef:
+    return {
+        "ContactInformation": ...,
+    }
+```
+
+```python title="Definition"
+class PutContactInformationRequestRequestTypeDef(TypedDict):
+    ContactInformation: ContactInformationTypeDef,  # (1)
+    AccountId: NotRequired[str],
+```
+
+1. See [:material-code-braces: ContactInformationTypeDef](./type_defs.md#contactinformationtypedef) 
 ## EmptyResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -150,4 +216,24 @@ class GetAlternateContactResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AlternateContactTypeDef](./type_defs.md#alternatecontacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetContactInformationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import GetContactInformationResponseTypeDef
+
+def get_value() -> GetContactInformationResponseTypeDef:
+    return {
+        "ContactInformation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetContactInformationResponseTypeDef(TypedDict):
+    ContactInformation: ContactInformationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContactInformationTypeDef](./type_defs.md#contactinformationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

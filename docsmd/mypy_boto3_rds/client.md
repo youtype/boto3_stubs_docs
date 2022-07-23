@@ -3314,6 +3314,38 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef) 
 
+### modify\_activity\_stream
+
+Changes the audit policy state of a database activity stream to either locked
+(default) or unlocked.
+
+Type annotations and code completion for `#!python boto3.client("rds").modify_activity_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_activity_stream)
+
+```python title="Method definition"
+def modify_activity_stream(
+    self,
+    *,
+    ResourceArn: str = ...,
+    AuditPolicyState: AuditPolicyStateType = ...,  # (1)
+) -> ModifyActivityStreamResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: AuditPolicyStateType](./literals.md#auditpolicystatetype) 
+2. See [:material-code-braces: ModifyActivityStreamResponseTypeDef](./type_defs.md#modifyactivitystreamresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyActivityStreamRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.modify_activity_stream(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyActivityStreamRequestRequestTypeDef](./type_defs.md#modifyactivitystreamrequestrequesttypedef) 
+
 ### modify\_certificates
 
 Override the system-default Secure Sockets Layer/Transport Layer Security

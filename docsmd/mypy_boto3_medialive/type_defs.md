@@ -2704,6 +2704,24 @@ class PipelinePauseStateSettingsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PipelineIdType](./literals.md#pipelineidtype) 
+## RebootInputDeviceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import RebootInputDeviceRequestRequestTypeDef
+
+def get_value() -> RebootInputDeviceRequestRequestTypeDef:
+    return {
+        "InputDeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class RebootInputDeviceRequestRequestTypeDef(TypedDict):
+    InputDeviceId: str,
+    Force: NotRequired[RebootInputDeviceForceType],  # (1)
+```
+
+1. See [:material-code-brackets: RebootInputDeviceForceType](./literals.md#rebootinputdeviceforcetype) 
 ## RejectInputDeviceTransferRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2810,6 +2828,22 @@ def get_value() -> StartChannelRequestRequestTypeDef:
 ```python title="Definition"
 class StartChannelRequestRequestTypeDef(TypedDict):
     ChannelId: str,
+```
+
+## StartInputDeviceMaintenanceWindowRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import StartInputDeviceMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> StartInputDeviceMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "InputDeviceId": ...,
+    }
+```
+
+```python title="Definition"
+class StartInputDeviceMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    InputDeviceId: str,
 ```
 
 ## StartMultiplexRequestRequestTypeDef

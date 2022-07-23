@@ -1485,6 +1485,36 @@ parent.purchase_offering(**kwargs)
 
 1. See [:material-code-braces: PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef) 
 
+### reboot\_input\_device
+
+Send a reboot command to the specified input device.
+
+Type annotations and code completion for `#!python boto3.client("medialive").reboot_input_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reboot_input_device)
+
+```python title="Method definition"
+def reboot_input_device(
+    self,
+    *,
+    InputDeviceId: str,
+    Force: RebootInputDeviceForceType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: RebootInputDeviceForceType](./literals.md#rebootinputdeviceforcetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RebootInputDeviceRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
+
+parent.reboot_input_device(**kwargs)
+```
+
+1. See [:material-code-braces: RebootInputDeviceRequestRequestTypeDef](./type_defs.md#rebootinputdevicerequestrequesttypedef) 
+
 ### reject\_input\_device\_transfer
 
 Reject the transfer of the specified input device to your AWS account.
@@ -1542,6 +1572,34 @@ parent.start_channel(**kwargs)
 ```
 
 1. See [:material-code-braces: StartChannelRequestRequestTypeDef](./type_defs.md#startchannelrequestrequesttypedef) 
+
+### start\_input\_device\_maintenance\_window
+
+Start a maintenance window for the specified input device.
+
+Type annotations and code completion for `#!python boto3.client("medialive").start_input_device_maintenance_window` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_input_device_maintenance_window)
+
+```python title="Method definition"
+def start_input_device_maintenance_window(
+    self,
+    *,
+    InputDeviceId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: StartInputDeviceMaintenanceWindowRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
+
+parent.start_input_device_maintenance_window(**kwargs)
+```
+
+1. See [:material-code-braces: StartInputDeviceMaintenanceWindowRequestRequestTypeDef](./type_defs.md#startinputdevicemaintenancewindowrequestrequesttypedef) 
 
 ### start\_multiplex
 

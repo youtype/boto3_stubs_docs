@@ -897,6 +897,7 @@ def get_value() -> UpdateMedicalVocabularyRequestRequestTypeDef:
     return {
         "VocabularyName": ...,
         "LanguageCode": ...,
+        "VocabularyFileUri": ...,
     }
 ```
 
@@ -904,7 +905,7 @@ def get_value() -> UpdateMedicalVocabularyRequestRequestTypeDef:
 class UpdateMedicalVocabularyRequestRequestTypeDef(TypedDict):
     VocabularyName: str,
     LanguageCode: LanguageCodeType,  # (1)
-    VocabularyFileUri: NotRequired[str],
+    VocabularyFileUri: str,
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 

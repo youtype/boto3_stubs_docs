@@ -179,8 +179,10 @@ def get_value() -> ActivityStreamModeType:
 ```
 
 - [ActivityStreamModeType](./literals.md#activitystreammodetype)
+- [ActivityStreamPolicyStatusType](./literals.md#activitystreampolicystatustype)
 - [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
 - [ApplyMethodType](./literals.md#applymethodtype)
+- [AuditPolicyStateType](./literals.md#auditpolicystatetype)
 - [AuthSchemeType](./literals.md#authschemetype)
 - [AutomationModeType](./literals.md#automationmodetype)
 - [CustomEngineVersionStatusType](./literals.md#customengineversionstatustype)
@@ -351,6 +353,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [FailoverStateTypeDef](./type_defs.md#failoverstatetypedef)
 - [GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef)
 - [MinimumEngineVersionPerAllowedValueTypeDef](./type_defs.md#minimumengineversionperallowedvaluetypedef)
+- [ModifyActivityStreamRequestRequestTypeDef](./type_defs.md#modifyactivitystreamrequestrequesttypedef)
 - [ModifyCertificatesMessageRequestTypeDef](./type_defs.md#modifycertificatesmessagerequesttypedef)
 - [ModifyCurrentDBClusterCapacityMessageRequestTypeDef](./type_defs.md#modifycurrentdbclustercapacitymessagerequesttypedef)
 - [ModifyCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#modifycustomdbengineversionmessagerequesttypedef)
@@ -398,6 +401,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef)
+- [ModifyActivityStreamResponseTypeDef](./type_defs.md#modifyactivitystreamresponsetypedef)
 - [StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef)
 - [StopActivityStreamResponseTypeDef](./type_defs.md#stopactivitystreamresponsetypedef)
 - [AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef)

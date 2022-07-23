@@ -3635,6 +3635,21 @@ PreferredChannelPipelineType = Literal[
     "PIPELINE_1",
 ]
 ```
+## RebootInputDeviceForceType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import RebootInputDeviceForceType
+
+def get_value() -> RebootInputDeviceForceType:
+    return "NO"
+```
+
+```python title="Definition"
+RebootInputDeviceForceType = Literal[
+    "NO",
+    "YES",
+]
+```
 ## ReservationAutomaticRenewalType
 
 ```python title="Usage Example"

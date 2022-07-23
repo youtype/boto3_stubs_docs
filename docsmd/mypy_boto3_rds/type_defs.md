@@ -1649,6 +1649,24 @@ class MinimumEngineVersionPerAllowedValueTypeDef(TypedDict):
     MinimumEngineVersion: NotRequired[str],
 ```
 
+## ModifyActivityStreamRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import ModifyActivityStreamRequestRequestTypeDef
+
+def get_value() -> ModifyActivityStreamRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyActivityStreamRequestRequestTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+    AuditPolicyState: NotRequired[AuditPolicyStateType],  # (1)
+```
+
+1. See [:material-code-brackets: AuditPolicyStateType](./literals.md#auditpolicystatetype) 
 ## ModifyCertificatesMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -2595,6 +2613,38 @@ class ExportTaskResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyActivityStreamResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import ModifyActivityStreamResponseTypeDef
+
+def get_value() -> ModifyActivityStreamResponseTypeDef:
+    return {
+        "KmsKeyId": ...,
+        "KinesisStreamName": ...,
+        "Status": ...,
+        "Mode": ...,
+        "EngineNativeAuditFieldsIncluded": ...,
+        "PolicyStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyActivityStreamResponseTypeDef(TypedDict):
+    KmsKeyId: str,
+    KinesisStreamName: str,
+    Status: ActivityStreamStatusType,  # (1)
+    Mode: ActivityStreamModeType,  # (2)
+    EngineNativeAuditFieldsIncluded: bool,
+    PolicyStatus: ActivityStreamPolicyStatusType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: ActivityStreamStatusType](./literals.md#activitystreamstatustype) 
+2. See [:material-code-brackets: ActivityStreamModeType](./literals.md#activitystreammodetype) 
+3. See [:material-code-brackets: ActivityStreamPolicyStatusType](./literals.md#activitystreampolicystatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartActivityStreamResponseTypeDef
 
 ```python title="Usage Example"
@@ -8445,6 +8495,7 @@ class DBInstanceTypeDef(TypedDict):
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
+    ActivityStreamPolicyStatus: NotRequired[ActivityStreamPolicyStatusType],  # (19)
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
@@ -8465,6 +8516,7 @@ class DBInstanceTypeDef(TypedDict):
 16. See [:material-code-brackets: ActivityStreamStatusType](./literals.md#activitystreamstatustype) 
 17. See [:material-code-brackets: ActivityStreamModeType](./literals.md#activitystreammodetype) 
 18. See [:material-code-brackets: AutomationModeType](./literals.md#automationmodetype) 
+19. See [:material-code-brackets: ActivityStreamPolicyStatusType](./literals.md#activitystreampolicystatustype) 
 ## DBSubnetGroupMessageTypeDef
 
 ```python title="Usage Example"

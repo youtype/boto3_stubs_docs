@@ -22,6 +22,23 @@ ActivityStreamModeType = Literal[
     "sync",
 ]
 ```
+## ActivityStreamPolicyStatusType
+
+```python title="Usage Example"
+from mypy_boto3_rds.literals import ActivityStreamPolicyStatusType
+
+def get_value() -> ActivityStreamPolicyStatusType:
+    return "locked"
+```
+
+```python title="Definition"
+ActivityStreamPolicyStatusType = Literal[
+    "locked",
+    "locking-policy",
+    "unlocked",
+    "unlocking-policy",
+]
+```
 ## ActivityStreamStatusType
 
 ```python title="Usage Example"
@@ -52,6 +69,21 @@ def get_value() -> ApplyMethodType:
 ApplyMethodType = Literal[
     "immediate",
     "pending-reboot",
+]
+```
+## AuditPolicyStateType
+
+```python title="Usage Example"
+from mypy_boto3_rds.literals import AuditPolicyStateType
+
+def get_value() -> AuditPolicyStateType:
+    return "locked"
+```
+
+```python title="Definition"
+AuditPolicyStateType = Literal[
+    "locked",
+    "unlocked",
 ]
 ```
 ## AuthSchemeType

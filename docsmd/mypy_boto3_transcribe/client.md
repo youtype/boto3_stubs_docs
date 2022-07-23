@@ -1299,7 +1299,7 @@ def update_medical_vocabulary(
     *,
     VocabularyName: str,
     LanguageCode: LanguageCodeType,  # (1)
-    VocabularyFileUri: str = ...,
+    VocabularyFileUri: str,
 ) -> UpdateMedicalVocabularyResponseTypeDef:  # (2)
     ...
 ```
@@ -1312,6 +1312,7 @@ def update_medical_vocabulary(
 kwargs: UpdateMedicalVocabularyRequestRequestTypeDef = {  # (1)
     "VocabularyName": ...,
     "LanguageCode": ...,
+    "VocabularyFileUri": ...,
 }
 
 parent.update_medical_vocabulary(**kwargs)

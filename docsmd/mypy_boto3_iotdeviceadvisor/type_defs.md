@@ -134,31 +134,6 @@ class GetSuiteRunRequestRequestTypeDef(TypedDict):
     suiteRunId: str,
 ```
 
-## TestCaseRunTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseRunTypeDef
-
-def get_value() -> TestCaseRunTypeDef:
-    return {
-        "testCaseRunId": ...,
-    }
-```
-
-```python title="Definition"
-class TestCaseRunTypeDef(TypedDict):
-    testCaseRunId: NotRequired[str],
-    testCaseDefinitionId: NotRequired[str],
-    testCaseDefinitionName: NotRequired[str],
-    status: NotRequired[StatusType],  # (1)
-    startTime: NotRequired[datetime],
-    endTime: NotRequired[datetime],
-    logUrl: NotRequired[str],
-    warnings: NotRequired[str],
-    failure: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## ListSuiteDefinitionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -273,6 +248,28 @@ class TagResourceRequestRequestTypeDef(TypedDict):
     tags: Mapping[str, str],
 ```
 
+## TestCaseScenarioTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseScenarioTypeDef
+
+def get_value() -> TestCaseScenarioTypeDef:
+    return {
+        "testCaseScenarioId": ...,
+    }
+```
+
+```python title="Definition"
+class TestCaseScenarioTypeDef(TypedDict):
+    testCaseScenarioId: NotRequired[str],
+    testCaseScenarioType: NotRequired[TestCaseScenarioTypeType],  # (1)
+    status: NotRequired[TestCaseScenarioStatusType],  # (2)
+    failure: NotRequired[str],
+    systemMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: TestCaseScenarioTypeType](./literals.md#testcasescenariotypetype) 
+2. See [:material-code-brackets: TestCaseScenarioStatusType](./literals.md#testcasescenariostatustype) 
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -441,11 +438,14 @@ class SuiteDefinitionConfigurationTypeDef(TypedDict):
     suiteDefinitionName: NotRequired[str],
     devices: NotRequired[Sequence[DeviceUnderTestTypeDef]],  # (1)
     intendedForQualification: NotRequired[bool],
+    isLongDurationTest: NotRequired[bool],
     rootGroup: NotRequired[str],
     devicePermissionRoleArn: NotRequired[str],
+    protocol: NotRequired[ProtocolType],  # (2)
 ```
 
 1. See [:material-code-braces: DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
 ## SuiteDefinitionInformationTypeDef
 
 ```python title="Usage Example"
@@ -463,10 +463,13 @@ class SuiteDefinitionInformationTypeDef(TypedDict):
     suiteDefinitionName: NotRequired[str],
     defaultDevices: NotRequired[List[DeviceUnderTestTypeDef]],  # (1)
     intendedForQualification: NotRequired[bool],
+    isLongDurationTest: NotRequired[bool],
+    protocol: NotRequired[ProtocolType],  # (2)
     createdAt: NotRequired[datetime],
 ```
 
 1. See [:material-code-braces: DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
 ## SuiteRunConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -486,25 +489,6 @@ class SuiteRunConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef) 
-## GroupResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotdeviceadvisor.type_defs import GroupResultTypeDef
-
-def get_value() -> GroupResultTypeDef:
-    return {
-        "groupId": ...,
-    }
-```
-
-```python title="Definition"
-class GroupResultTypeDef(TypedDict):
-    groupId: NotRequired[str],
-    groupName: NotRequired[str],
-    tests: NotRequired[List[TestCaseRunTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef) 
 ## ListSuiteRunsResponseTypeDef
 
 ```python title="Usage Example"
@@ -527,6 +511,33 @@ class ListSuiteRunsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SuiteRunInformationTypeDef](./type_defs.md#suiteruninformationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TestCaseRunTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseRunTypeDef
+
+def get_value() -> TestCaseRunTypeDef:
+    return {
+        "testCaseRunId": ...,
+    }
+```
+
+```python title="Definition"
+class TestCaseRunTypeDef(TypedDict):
+    testCaseRunId: NotRequired[str],
+    testCaseDefinitionId: NotRequired[str],
+    testCaseDefinitionName: NotRequired[str],
+    status: NotRequired[StatusType],  # (1)
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    logUrl: NotRequired[str],
+    warnings: NotRequired[str],
+    failure: NotRequired[str],
+    testScenarios: NotRequired[List[TestCaseScenarioTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: TestCaseScenarioTypeDef](./type_defs.md#testcasescenariotypedef) 
 ## CreateSuiteDefinitionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -639,6 +650,25 @@ class StartSuiteRunRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef) 
+## GroupResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotdeviceadvisor.type_defs import GroupResultTypeDef
+
+def get_value() -> GroupResultTypeDef:
+    return {
+        "groupId": ...,
+    }
+```
+
+```python title="Definition"
+class GroupResultTypeDef(TypedDict):
+    groupId: NotRequired[str],
+    groupName: NotRequired[str],
+    tests: NotRequired[List[TestCaseRunTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef) 
 ## TestResultTypeDef
 
 ```python title="Usage Example"
