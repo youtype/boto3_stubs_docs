@@ -913,8 +913,8 @@ parent.describe_lifecycle_hooks(**kwargs)
 
 ### describe\_load\_balancer\_target\_groups
 
-Gets information about the load balancer target groups for the specified Auto
-Scaling group.
+Gets information about the Elastic Load Balancing target groups for the
+specified Auto Scaling group.
 
 Type annotations and code completion for `#!python boto3.client("autoscaling").describe_load_balancer_target_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups)
@@ -1314,7 +1314,7 @@ parent.detach_load_balancers(**kwargs)
 
 ### disable\_metrics\_collection
 
-Disables group metrics for the specified Auto Scaling group.
+Disables group metrics collection for the specified Auto Scaling group.
 
 Type annotations and code completion for `#!python boto3.client("autoscaling").disable_metrics_collection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection)
@@ -1344,7 +1344,7 @@ parent.disable_metrics_collection(**kwargs)
 
 ### enable\_metrics\_collection
 
-Enables group metrics for the specified Auto Scaling group.
+Enables group metrics collection for the specified Auto Scaling group.
 
 Type annotations and code completion for `#!python boto3.client("autoscaling").enable_metrics_collection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection)
