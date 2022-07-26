@@ -7,6 +7,37 @@
     Auto-generated documentation for [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
     type annotations stubs module [mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
 
+## DatasourcePackageIngestStateType
+
+```python title="Usage Example"
+from mypy_boto3_detective.literals import DatasourcePackageIngestStateType
+
+def get_value() -> DatasourcePackageIngestStateType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+DatasourcePackageIngestStateType = Literal[
+    "DISABLED",
+    "STARTED",
+    "STOPPED",
+]
+```
+## DatasourcePackageType
+
+```python title="Usage Example"
+from mypy_boto3_detective.literals import DatasourcePackageType
+
+def get_value() -> DatasourcePackageType:
+    return "DETECTIVE_CORE"
+```
+
+```python title="Definition"
+DatasourcePackageType = Literal[
+    "DETECTIVE_CORE",
+    "EKS_AUDIT",
+]
+```
 ## InvitationTypeType
 
 ```python title="Usage Example"

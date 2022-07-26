@@ -198,7 +198,7 @@ def get_value() -> CachingConfigTypeDef:
 
 ```python title="Definition"
 class CachingConfigTypeDef(TypedDict):
-    ttl: NotRequired[int],
+    ttl: int,
     cachingKeys: NotRequired[Sequence[str]],
 ```
 
@@ -609,6 +609,40 @@ def get_value() -> DisassociateApiRequestRequestTypeDef:
 ```python title="Definition"
 class DisassociateApiRequestRequestTypeDef(TypedDict):
     domainName: str,
+```
+
+## ErrorDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import ErrorDetailTypeDef
+
+def get_value() -> ErrorDetailTypeDef:
+    return {
+        "message": ...,
+    }
+```
+
+```python title="Definition"
+class ErrorDetailTypeDef(TypedDict):
+    message: NotRequired[str],
+```
+
+## EvaluateMappingTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import EvaluateMappingTemplateRequestRequestTypeDef
+
+def get_value() -> EvaluateMappingTemplateRequestRequestTypeDef:
+    return {
+        "template": ...,
+        "context": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluateMappingTemplateRequestRequestTypeDef(TypedDict):
+    template: str,
+    context: str,
 ```
 
 ## FlushApiCacheRequestRequestTypeDef
@@ -1630,6 +1664,28 @@ class DynamodbDataSourceConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DeltaSyncConfigTypeDef](./type_defs.md#deltasyncconfigtypedef) 
+## EvaluateMappingTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import EvaluateMappingTemplateResponseTypeDef
+
+def get_value() -> EvaluateMappingTemplateResponseTypeDef:
+    return {
+        "evaluationResult": ...,
+        "error": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluateMappingTemplateResponseTypeDef(TypedDict):
+    evaluationResult: str,
+    error: ErrorDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SyncConfigTypeDef
 
 ```python title="Usage Example"

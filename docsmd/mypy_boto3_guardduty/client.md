@@ -669,6 +669,41 @@ parent.delete_threat_intel_set(**kwargs)
 
 1. See [:material-code-braces: DeleteThreatIntelSetRequestRequestTypeDef](./type_defs.md#deletethreatintelsetrequestrequesttypedef) 
 
+### describe\_malware\_scans
+
+Returns a list of malware scans.
+
+Type annotations and code completion for `#!python boto3.client("guardduty").describe_malware_scans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_malware_scans)
+
+```python title="Method definition"
+def describe_malware_scans(
+    self,
+    *,
+    DetectorId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    FilterCriteria: FilterCriteriaTypeDef = ...,  # (1)
+    SortCriteria: SortCriteriaTypeDef = ...,  # (2)
+) -> DescribeMalwareScansResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: DescribeMalwareScansResponseTypeDef](./type_defs.md#describemalwarescansresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMalwareScansRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
+
+parent.describe_malware_scans(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMalwareScansRequestRequestTypeDef](./type_defs.md#describemalwarescansrequestrequesttypedef) 
+
 ### describe\_organization\_configuration
 
 Returns information about the account selected as the delegated administrator
@@ -1102,6 +1137,35 @@ parent.get_ip_set(**kwargs)
 ```
 
 1. See [:material-code-braces: GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef) 
+
+### get\_malware\_scan\_settings
+
+Returns the details of the malware scan settings.
+
+Type annotations and code completion for `#!python boto3.client("guardduty").get_malware_scan_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_malware_scan_settings)
+
+```python title="Method definition"
+def get_malware_scan_settings(
+    self,
+    *,
+    DetectorId: str,
+) -> GetMalwareScanSettingsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetMalwareScanSettingsResponseTypeDef](./type_defs.md#getmalwarescansettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetMalwareScanSettingsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
+
+parent.get_malware_scan_settings(**kwargs)
+```
+
+1. See [:material-code-braces: GetMalwareScanSettingsRequestRequestTypeDef](./type_defs.md#getmalwarescansettingsrequestrequesttypedef) 
 
 ### get\_master\_account
 
@@ -1935,6 +1999,38 @@ parent.update_ip_set(**kwargs)
 
 1. See [:material-code-braces: UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef) 
 
+### update\_malware\_scan\_settings
+
+Updates the malware scan settings.
+
+Type annotations and code completion for `#!python boto3.client("guardduty").update_malware_scan_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_malware_scan_settings)
+
+```python title="Method definition"
+def update_malware_scan_settings(
+    self,
+    *,
+    DetectorId: str,
+    ScanResourceCriteria: ScanResourceCriteriaTypeDef = ...,  # (1)
+    EbsSnapshotPreservation: EbsSnapshotPreservationType = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: ScanResourceCriteriaTypeDef](./type_defs.md#scanresourcecriteriatypedef) 
+2. See [:material-code-brackets: EbsSnapshotPreservationType](./literals.md#ebssnapshotpreservationtype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateMalwareScanSettingsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
+
+parent.update_malware_scan_settings(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateMalwareScanSettingsRequestRequestTypeDef](./type_defs.md#updatemalwarescansettingsrequestrequesttypedef) 
+
 ### update\_member\_detectors
 
 Contains information on member accounts to be updated.
@@ -2072,6 +2168,7 @@ parent.update_threat_intel_set(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("guardduty").get_paginator` method with overloads.
 
+- `client.get_paginator("describe_malware_scans")` -> [DescribeMalwareScansPaginator](./paginators.md#describemalwarescanspaginator)
 - `client.get_paginator("list_detectors")` -> [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
 - `client.get_paginator("list_filters")` -> [ListFiltersPaginator](./paginators.md#listfilterspaginator)
 - `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)

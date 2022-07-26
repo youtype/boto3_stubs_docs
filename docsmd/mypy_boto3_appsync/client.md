@@ -699,6 +699,37 @@ parent.disassociate_api(**kwargs)
 
 1. See [:material-code-braces: DisassociateApiRequestRequestTypeDef](./type_defs.md#disassociateapirequestrequesttypedef) 
 
+### evaluate\_mapping\_template
+
+Evaluates a given template and returns the response.
+
+Type annotations and code completion for `#!python boto3.client("appsync").evaluate_mapping_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.evaluate_mapping_template)
+
+```python title="Method definition"
+def evaluate_mapping_template(
+    self,
+    *,
+    template: str,
+    context: str,
+) -> EvaluateMappingTemplateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EvaluateMappingTemplateResponseTypeDef](./type_defs.md#evaluatemappingtemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: EvaluateMappingTemplateRequestRequestTypeDef = {  # (1)
+    "template": ...,
+    "context": ...,
+}
+
+parent.evaluate_mapping_template(**kwargs)
+```
+
+1. See [:material-code-braces: EvaluateMappingTemplateRequestRequestTypeDef](./type_defs.md#evaluatemappingtemplaterequestrequesttypedef) 
+
 ### flush\_api\_cache
 
 Flushes an `ApiCache` object.

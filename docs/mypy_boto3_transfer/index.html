@@ -21704,6 +21704,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mypy_boto3_macie2/waiters/" class="md-nav__link">
+        Waiters
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -36678,7 +36692,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="paginators/#listaccessespaginator">ListAccessesPaginator</a></li>
+<li><a href="paginators/#listagreementspaginator">ListAgreementsPaginator</a></li>
+<li><a href="paginators/#listcertificatespaginator">ListCertificatesPaginator</a></li>
+<li><a href="paginators/#listconnectorspaginator">ListConnectorsPaginator</a></li>
 <li><a href="paginators/#listexecutionspaginator">ListExecutionsPaginator</a></li>
+<li><a href="paginators/#listprofilespaginator">ListProfilesPaginator</a></li>
 <li><a href="paginators/#listsecuritypoliciespaginator">ListSecurityPoliciesPaginator</a></li>
 <li><a href="paginators/#listserverspaginator">ListServersPaginator</a></li>
 <li><a href="paginators/#listtagsforresourcepaginator">ListTagsForResourcePaginator</a></li>
@@ -36701,31 +36719,46 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_transfer.literals</span> <span class="kn">import</span> <span class="n">CustomStepStatusType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_transfer.literals</span> <span class="kn">import</span> <span class="n">AgreementStatusTypeType</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CustomStepStatusType</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="s2">&quot;FAILURE&quot;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AgreementStatusTypeType</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="s2">&quot;ACTIVE&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#agreementstatustypetype">AgreementStatusTypeType</a></li>
+<li><a href="literals/#as2transporttype">As2TransportType</a></li>
+<li><a href="literals/#certificatestatustypetype">CertificateStatusTypeType</a></li>
+<li><a href="literals/#certificatetypetype">CertificateTypeType</a></li>
+<li><a href="literals/#certificateusagetypetype">CertificateUsageTypeType</a></li>
+<li><a href="literals/#compressionenumtype">CompressionEnumType</a></li>
 <li><a href="literals/#customstepstatustype">CustomStepStatusType</a></li>
 <li><a href="literals/#domaintype">DomainType</a></li>
+<li><a href="literals/#encryptionalgtype">EncryptionAlgType</a></li>
 <li><a href="literals/#endpointtypetype">EndpointTypeType</a></li>
 <li><a href="literals/#executionerrortypetype">ExecutionErrorTypeType</a></li>
 <li><a href="literals/#executionstatustype">ExecutionStatusType</a></li>
 <li><a href="literals/#homedirectorytypetype">HomeDirectoryTypeType</a></li>
 <li><a href="literals/#identityprovidertypetype">IdentityProviderTypeType</a></li>
 <li><a href="literals/#listaccessespaginatorname">ListAccessesPaginatorName</a></li>
+<li><a href="literals/#listagreementspaginatorname">ListAgreementsPaginatorName</a></li>
+<li><a href="literals/#listcertificatespaginatorname">ListCertificatesPaginatorName</a></li>
+<li><a href="literals/#listconnectorspaginatorname">ListConnectorsPaginatorName</a></li>
 <li><a href="literals/#listexecutionspaginatorname">ListExecutionsPaginatorName</a></li>
+<li><a href="literals/#listprofilespaginatorname">ListProfilesPaginatorName</a></li>
 <li><a href="literals/#listsecuritypoliciespaginatorname">ListSecurityPoliciesPaginatorName</a></li>
 <li><a href="literals/#listserverspaginatorname">ListServersPaginatorName</a></li>
 <li><a href="literals/#listtagsforresourcepaginatorname">ListTagsForResourcePaginatorName</a></li>
 <li><a href="literals/#listuserspaginatorname">ListUsersPaginatorName</a></li>
 <li><a href="literals/#listworkflowspaginatorname">ListWorkflowsPaginatorName</a></li>
+<li><a href="literals/#mdnresponsetype">MdnResponseType</a></li>
+<li><a href="literals/#mdnsigningalgtype">MdnSigningAlgType</a></li>
 <li><a href="literals/#overwriteexistingtype">OverwriteExistingType</a></li>
+<li><a href="literals/#profiletypetype">ProfileTypeType</a></li>
 <li><a href="literals/#protocoltype">ProtocolType</a></li>
 <li><a href="literals/#serverofflinewaitername">ServerOfflineWaiterName</a></li>
 <li><a href="literals/#serveronlinewaitername">ServerOnlineWaiterName</a></li>
 <li><a href="literals/#setstatoptiontype">SetStatOptionType</a></li>
+<li><a href="literals/#signingalgtype">SigningAlgType</a></li>
 <li><a href="literals/#statetype">StateType</a></li>
 <li><a href="literals/#tlssessionresumptionmodetype">TlsSessionResumptionModeType</a></li>
 <li><a href="literals/#workflowsteptypetype">WorkflowStepTypeType</a></li>
@@ -36738,31 +36771,39 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_transfer.type_defs</span> <span class="kn">import</span> <span class="n">HomeDirectoryMapEntryTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_transfer.type_defs</span> <span class="kn">import</span> <span class="n">As2ConnectorConfigTypeDef</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">HomeDirectoryMapEntryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">As2ConnectorConfigTypeDef</span><span class="p">:</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;Entry&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;Target&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="p">}</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;LocalProfileId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#as2connectorconfigtypedef">As2ConnectorConfigTypeDef</a></li>
 <li><a href="type_defs/#homedirectorymapentrytypedef">HomeDirectoryMapEntryTypeDef</a></li>
 <li><a href="type_defs/#posixprofiletypedef">PosixProfileTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#endpointdetailstypedef">EndpointDetailsTypeDef</a></li>
 <li><a href="type_defs/#identityproviderdetailstypedef">IdentityProviderDetailsTypeDef</a></li>
 <li><a href="type_defs/#protocoldetailstypedef">ProtocolDetailsTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#customstepdetailstypedef">CustomStepDetailsTypeDef</a></li>
 <li><a href="type_defs/#deleteaccessrequestrequesttypedef">DeleteAccessRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteagreementrequestrequesttypedef">DeleteAgreementRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletecertificaterequestrequesttypedef">DeleteCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteconnectorrequestrequesttypedef">DeleteConnectorRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteprofilerequestrequesttypedef">DeleteProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteserverrequestrequesttypedef">DeleteServerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesshpublickeyrequestrequesttypedef">DeleteSshPublicKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletestepdetailstypedef">DeleteStepDetailsTypeDef</a></li>
 <li><a href="type_defs/#deleteuserrequestrequesttypedef">DeleteUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteworkflowrequestrequesttypedef">DeleteWorkflowRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeaccessrequestrequesttypedef">DescribeAccessRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeagreementrequestrequesttypedef">DescribeAgreementRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describecertificaterequestrequesttypedef">DescribeCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeconnectorrequestrequesttypedef">DescribeConnectorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeexecutionrequestrequesttypedef">DescribeExecutionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeprofilerequestrequesttypedef">DescribeProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describesecuritypolicyrequestrequesttypedef">DescribeSecurityPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedsecuritypolicytypedef">DescribedSecurityPolicyTypeDef</a></li>
 <li><a href="type_defs/#describeserverrequestrequesttypedef">DescribeServerRequestRequestTypeDef</a></li>
@@ -36779,7 +36820,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listaccessesrequestrequesttypedef">ListAccessesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listedaccesstypedef">ListedAccessTypeDef</a></li>
+<li><a href="type_defs/#listagreementsrequestrequesttypedef">ListAgreementsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listedagreementtypedef">ListedAgreementTypeDef</a></li>
+<li><a href="type_defs/#listcertificatesrequestrequesttypedef">ListCertificatesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listedcertificatetypedef">ListedCertificateTypeDef</a></li>
+<li><a href="type_defs/#listconnectorsrequestrequesttypedef">ListConnectorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listedconnectortypedef">ListedConnectorTypeDef</a></li>
 <li><a href="type_defs/#listexecutionsrequestrequesttypedef">ListExecutionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listprofilesrequestrequesttypedef">ListProfilesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listedprofiletypedef">ListedProfileTypeDef</a></li>
 <li><a href="type_defs/#listsecuritypoliciesrequestrequesttypedef">ListSecurityPoliciesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listserversrequestrequesttypedef">ListServersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listedservertypedef">ListedServerTypeDef</a></li>
@@ -36791,27 +36840,49 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#s3tagtypedef">S3TagTypeDef</a></li>
 <li><a href="type_defs/#sendworkflowstepstaterequestrequesttypedef">SendWorkflowStepStateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#userdetailstypedef">UserDetailsTypeDef</a></li>
+<li><a href="type_defs/#startfiletransferrequestrequesttypedef">StartFileTransferRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startserverrequestrequesttypedef">StartServerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopserverrequestrequesttypedef">StopServerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#testidentityproviderrequestrequesttypedef">TestIdentityProviderRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateagreementrequestrequesttypedef">UpdateAgreementRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatecertificaterequestrequesttypedef">UpdateCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateprofilerequestrequesttypedef">UpdateProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#workflowdetailtypedef">WorkflowDetailTypeDef</a></li>
+<li><a href="type_defs/#updateconnectorrequestrequesttypedef">UpdateConnectorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createaccessrequestrequesttypedef">CreateAccessRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedaccesstypedef">DescribedAccessTypeDef</a></li>
 <li><a href="type_defs/#updateaccessrequestrequesttypedef">UpdateAccessRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateuserrequestrequesttypedef">UpdateUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createaccessresponsetypedef">CreateAccessResponseTypeDef</a></li>
+<li><a href="type_defs/#createagreementresponsetypedef">CreateAgreementResponseTypeDef</a></li>
+<li><a href="type_defs/#createconnectorresponsetypedef">CreateConnectorResponseTypeDef</a></li>
+<li><a href="type_defs/#createprofileresponsetypedef">CreateProfileResponseTypeDef</a></li>
 <li><a href="type_defs/#createserverresponsetypedef">CreateServerResponseTypeDef</a></li>
 <li><a href="type_defs/#createuserresponsetypedef">CreateUserResponseTypeDef</a></li>
 <li><a href="type_defs/#createworkflowresponsetypedef">CreateWorkflowResponseTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#importcertificateresponsetypedef">ImportCertificateResponseTypeDef</a></li>
 <li><a href="type_defs/#importsshpublickeyresponsetypedef">ImportSshPublicKeyResponseTypeDef</a></li>
 <li><a href="type_defs/#listsecuritypoliciesresponsetypedef">ListSecurityPoliciesResponseTypeDef</a></li>
+<li><a href="type_defs/#startfiletransferresponsetypedef">StartFileTransferResponseTypeDef</a></li>
 <li><a href="type_defs/#testidentityproviderresponsetypedef">TestIdentityProviderResponseTypeDef</a></li>
 <li><a href="type_defs/#updateaccessresponsetypedef">UpdateAccessResponseTypeDef</a></li>
+<li><a href="type_defs/#updateagreementresponsetypedef">UpdateAgreementResponseTypeDef</a></li>
+<li><a href="type_defs/#updatecertificateresponsetypedef">UpdateCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#updateconnectorresponsetypedef">UpdateConnectorResponseTypeDef</a></li>
+<li><a href="type_defs/#updateprofileresponsetypedef">UpdateProfileResponseTypeDef</a></li>
 <li><a href="type_defs/#updateserverresponsetypedef">UpdateServerResponseTypeDef</a></li>
 <li><a href="type_defs/#updateuserresponsetypedef">UpdateUserResponseTypeDef</a></li>
+<li><a href="type_defs/#createagreementrequestrequesttypedef">CreateAgreementRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createconnectorrequestrequesttypedef">CreateConnectorRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createprofilerequestrequesttypedef">CreateProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createuserrequestrequesttypedef">CreateUserRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describedagreementtypedef">DescribedAgreementTypeDef</a></li>
+<li><a href="type_defs/#describedcertificatetypedef">DescribedCertificateTypeDef</a></li>
+<li><a href="type_defs/#describedconnectortypedef">DescribedConnectorTypeDef</a></li>
+<li><a href="type_defs/#describedprofiletypedef">DescribedProfileTypeDef</a></li>
+<li><a href="type_defs/#importcertificaterequestrequesttypedef">ImportCertificateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describesecuritypolicyresponsetypedef">DescribeSecurityPolicyResponseTypeDef</a></li>
@@ -36822,13 +36893,21 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#filelocationtypedef">FileLocationTypeDef</a></li>
 <li><a href="type_defs/#inputfilelocationtypedef">InputFileLocationTypeDef</a></li>
 <li><a href="type_defs/#listaccessesrequestlistaccessespaginatetypedef">ListAccessesRequestListAccessesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listagreementsrequestlistagreementspaginatetypedef">ListAgreementsRequestListAgreementsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listcertificatesrequestlistcertificatespaginatetypedef">ListCertificatesRequestListCertificatesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listconnectorsrequestlistconnectorspaginatetypedef">ListConnectorsRequestListConnectorsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listexecutionsrequestlistexecutionspaginatetypedef">ListExecutionsRequestListExecutionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listprofilesrequestlistprofilespaginatetypedef">ListProfilesRequestListProfilesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsecuritypoliciesrequestlistsecuritypoliciespaginatetypedef">ListSecurityPoliciesRequestListSecurityPoliciesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listserversrequestlistserverspaginatetypedef">ListServersRequestListServersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestlisttagsforresourcepaginatetypedef">ListTagsForResourceRequestListTagsForResourcePaginateTypeDef</a></li>
 <li><a href="type_defs/#listusersrequestlistuserspaginatetypedef">ListUsersRequestListUsersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listworkflowsrequestlistworkflowspaginatetypedef">ListWorkflowsRequestListWorkflowsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listaccessesresponsetypedef">ListAccessesResponseTypeDef</a></li>
+<li><a href="type_defs/#listagreementsresponsetypedef">ListAgreementsResponseTypeDef</a></li>
+<li><a href="type_defs/#listcertificatesresponsetypedef">ListCertificatesResponseTypeDef</a></li>
+<li><a href="type_defs/#listconnectorsresponsetypedef">ListConnectorsResponseTypeDef</a></li>
+<li><a href="type_defs/#listprofilesresponsetypedef">ListProfilesResponseTypeDef</a></li>
 <li><a href="type_defs/#listserversresponsetypedef">ListServersResponseTypeDef</a></li>
 <li><a href="type_defs/#listusersresponsetypedef">ListUsersResponseTypeDef</a></li>
 <li><a href="type_defs/#listworkflowsresponsetypedef">ListWorkflowsResponseTypeDef</a></li>
@@ -36836,6 +36915,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#servicemetadatatypedef">ServiceMetadataTypeDef</a></li>
 <li><a href="type_defs/#workflowdetailstypedef">WorkflowDetailsTypeDef</a></li>
 <li><a href="type_defs/#describeaccessresponsetypedef">DescribeAccessResponseTypeDef</a></li>
+<li><a href="type_defs/#describeagreementresponsetypedef">DescribeAgreementResponseTypeDef</a></li>
+<li><a href="type_defs/#describecertificateresponsetypedef">DescribeCertificateResponseTypeDef</a></li>
+<li><a href="type_defs/#describeconnectorresponsetypedef">DescribeConnectorResponseTypeDef</a></li>
+<li><a href="type_defs/#describeprofileresponsetypedef">DescribeProfileResponseTypeDef</a></li>
 <li><a href="type_defs/#describeuserresponsetypedef">DescribeUserResponseTypeDef</a></li>
 <li><a href="type_defs/#executionresultstypedef">ExecutionResultsTypeDef</a></li>
 <li><a href="type_defs/#copystepdetailstypedef">CopyStepDetailsTypeDef</a></li>

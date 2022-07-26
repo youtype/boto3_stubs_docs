@@ -1440,6 +1440,7 @@ def get_value() -> StartProjectVersionRequestRequestTypeDef:
 class StartProjectVersionRequestRequestTypeDef(TypedDict):
     ProjectVersionArn: str,
     MinInferenceUnits: int,
+    MaxInferenceUnits: NotRequired[int],
 ```
 
 ## StartShotDetectionFilterTypeDef
@@ -4537,6 +4538,7 @@ class ProjectVersionDescriptionTypeDef(TypedDict):
     EvaluationResult: NotRequired[EvaluationResultTypeDef],  # (5)
     ManifestSummary: NotRequired[GroundTruthManifestTypeDef],  # (6)
     KmsKeyId: NotRequired[str],
+    MaxInferenceUnits: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ProjectVersionStatusType](./literals.md#projectversionstatustype) 

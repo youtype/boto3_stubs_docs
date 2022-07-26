@@ -810,6 +810,22 @@ class UserPausedDetailsTypeDef(TypedDict):
     jobPausedAt: NotRequired[datetime],
 ```
 
+## DetectedDataDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import DetectedDataDetailsTypeDef
+
+def get_value() -> DetectedDataDetailsTypeDef:
+    return {
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedDataDetailsTypeDef(TypedDict):
+    value: str,
+```
+
 ## DisableOrganizationAdminAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1088,6 +1104,73 @@ def get_value() -> GetMemberRequestRequestTypeDef:
 ```python title="Definition"
 class GetMemberRequestRequestTypeDef(TypedDict):
     id: str,
+```
+
+## RevealConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import RevealConfigurationTypeDef
+
+def get_value() -> RevealConfigurationTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class RevealConfigurationTypeDef(TypedDict):
+    status: RevealStatusType,  # (1)
+    kmsKeyId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: RevealStatusType](./literals.md#revealstatustype) 
+## GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef
+
+def get_value() -> GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef:
+    return {
+        "findingId": ...,
+    }
+```
+
+```python title="Definition"
+class GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef(TypedDict):
+    findingId: str,
+```
+
+## WaiterConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
+```
+
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
+
+## GetSensitiveDataOccurrencesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetSensitiveDataOccurrencesRequestRequestTypeDef
+
+def get_value() -> GetSensitiveDataOccurrencesRequestRequestTypeDef:
+    return {
+        "findingId": ...,
+    }
+```
+
+```python title="Definition"
+class GetSensitiveDataOccurrencesRequestRequestTypeDef(TypedDict):
+    findingId: str,
 ```
 
 ## UsageStatisticsFilterTypeDef
@@ -2149,6 +2232,29 @@ class GetMemberResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSensitiveDataOccurrencesAvailabilityResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetSensitiveDataOccurrencesAvailabilityResponseTypeDef
+
+def get_value() -> GetSensitiveDataOccurrencesAvailabilityResponseTypeDef:
+    return {
+        "code": ...,
+        "reasons": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSensitiveDataOccurrencesAvailabilityResponseTypeDef(TypedDict):
+    code: AvailabilityCodeType,  # (1)
+    reasons: List[UnavailabilityReasonCodeType],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: AvailabilityCodeType](./literals.md#availabilitycodetype) 
+2. See [:material-code-brackets: UnavailabilityReasonCodeType](./literals.md#unavailabilityreasoncodetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFindingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2666,6 +2772,31 @@ class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateT
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetSensitiveDataOccurrencesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetSensitiveDataOccurrencesResponseTypeDef
+
+def get_value() -> GetSensitiveDataOccurrencesResponseTypeDef:
+    return {
+        "error": ...,
+        "sensitiveDataOccurrences": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSensitiveDataOccurrencesResponseTypeDef(TypedDict):
+    error: str,
+    sensitiveDataOccurrences: Dict[str, List[DetectedDataDetailsTypeDef]],  # (1)
+    status: RevealRequestStatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: DetectedDataDetailsTypeDef](./type_defs.md#detecteddatadetailstypedef) 
+2. See [:material-code-brackets: RevealRequestStatusType](./literals.md#revealrequeststatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFindingsFiltersResponseTypeDef
 
 ```python title="Usage Example"
@@ -2826,6 +2957,81 @@ class GetFindingsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+## GetRevealConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetRevealConfigurationResponseTypeDef
+
+def get_value() -> GetRevealConfigurationResponseTypeDef:
+    return {
+        "configuration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRevealConfigurationResponseTypeDef(TypedDict):
+    configuration: RevealConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RevealConfigurationTypeDef](./type_defs.md#revealconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateRevealConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateRevealConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateRevealConfigurationRequestRequestTypeDef:
+    return {
+        "configuration": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRevealConfigurationRequestRequestTypeDef(TypedDict):
+    configuration: RevealConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RevealConfigurationTypeDef](./type_defs.md#revealconfigurationtypedef) 
+## UpdateRevealConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateRevealConfigurationResponseTypeDef
+
+def get_value() -> UpdateRevealConfigurationResponseTypeDef:
+    return {
+        "configuration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRevealConfigurationResponseTypeDef(TypedDict):
+    configuration: RevealConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RevealConfigurationTypeDef](./type_defs.md#revealconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSensitiveDataOccurrencesRequestFindingRevealedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetSensitiveDataOccurrencesRequestFindingRevealedWaitTypeDef
+
+def get_value() -> GetSensitiveDataOccurrencesRequestFindingRevealedWaitTypeDef:
+    return {
+        "findingId": ...,
+    }
+```
+
+```python title="Definition"
+class GetSensitiveDataOccurrencesRequestFindingRevealedWaitTypeDef(TypedDict):
+    findingId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef
 
 ```python title="Usage Example"

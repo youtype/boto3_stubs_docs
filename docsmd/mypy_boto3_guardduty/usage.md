@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("guardduty")  # (1)
 
-    paginator = client.get_paginator("list_detectors")  # (2)
+    paginator = client.get_paginator("describe_malware_scans")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [GuardDutyClient](./client.md)
-    2. paginator: [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
-    3. item: [:material-code-braces: ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef) 
+    2. paginator: [DescribeMalwareScansPaginator](./paginators.md#describemalwarescanspaginator)
+    3. item: [:material-code-braces: DescribeMalwareScansResponseTypeDef](./type_defs.md#describemalwarescansresponsetypedef) 
 
 
 
@@ -90,16 +90,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_guardduty.client import GuardDutyClient
-    from mypy_boto3_guardduty.paginator import ListDetectorsPaginator
-    from mypy_boto3_guardduty.type_defs import ListDetectorsResponseTypeDef
+    from mypy_boto3_guardduty.paginator import DescribeMalwareScansPaginator
+    from mypy_boto3_guardduty.type_defs import DescribeMalwareScansResponseTypeDef
 
 
     session = Session()
     client: GuardDutyClient = session.client("guardduty")
 
-    paginator: ListDetectorsPaginator = client.get_paginator("list_detectors")
+    paginator: DescribeMalwareScansPaginator = client.get_paginator("describe_malware_scans")
     for item in paginator.paginate(...):
-        item: ListDetectorsResponseTypeDef
+        item: DescribeMalwareScansResponseTypeDef
         print(item)
     ```
 

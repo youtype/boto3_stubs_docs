@@ -21802,6 +21802,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mypy_boto3_macie2/waiters/" class="md-nav__link">
+        Waiters
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -36640,12 +36654,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_detective.literals</span> <span class="kn">import</span> <span class="n">InvitationTypeType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_detective.literals</span> <span class="kn">import</span> <span class="n">DatasourcePackageIngestStateType</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">InvitationTypeType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;INVITATION&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DatasourcePackageIngestStateType</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;DISABLED&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#datasourcepackageingeststatetype">DatasourcePackageIngestStateType</a></li>
+<li><a href="literals/#datasourcepackagetype">DatasourcePackageType</a></li>
 <li><a href="literals/#invitationtypetype">InvitationTypeType</a></li>
 <li><a href="literals/#memberdisabledreasontype">MemberDisabledReasonType</a></li>
 <li><a href="literals/#memberstatustype">MemberStatusType</a></li>
@@ -36667,10 +36683,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#acceptinvitationrequestrequesttypedef">AcceptInvitationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#accounttypedef">AccountTypeDef</a></li>
 <li><a href="type_defs/#administratortypedef">AdministratorTypeDef</a></li>
-<li><a href="type_defs/#creategraphrequestrequesttypedef">CreateGraphRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchgetgraphmemberdatasourcesrequestrequesttypedef">BatchGetGraphMemberDatasourcesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
-<li><a href="type_defs/#memberdetailtypedef">MemberDetailTypeDef</a></li>
 <li><a href="type_defs/#unprocessedaccounttypedef">UnprocessedAccountTypeDef</a></li>
+<li><a href="type_defs/#batchgetmembershipdatasourcesrequestrequesttypedef">BatchGetMembershipDatasourcesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#unprocessedgraphtypedef">UnprocessedGraphTypeDef</a></li>
+<li><a href="type_defs/#creategraphrequestrequesttypedef">CreateGraphRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#timestampforcollectiontypedef">TimestampForCollectionTypeDef</a></li>
+<li><a href="type_defs/#datasourcepackageusageinfotypedef">DatasourcePackageUsageInfoTypeDef</a></li>
 <li><a href="type_defs/#deletegraphrequestrequesttypedef">DeleteGraphRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemembersrequestrequesttypedef">DeleteMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeorganizationconfigurationrequestrequesttypedef">DescribeOrganizationConfigurationRequestRequestTypeDef</a></li>
@@ -36678,6 +36698,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#enableorganizationadminaccountrequestrequesttypedef">EnableOrganizationAdminAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmembersrequestrequesttypedef">GetMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#graphtypedef">GraphTypeDef</a></li>
+<li><a href="type_defs/#listdatasourcepackagesrequestrequesttypedef">ListDatasourcePackagesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listgraphsrequestrequesttypedef">ListGraphsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinvitationsrequestrequesttypedef">ListInvitationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listmembersrequestrequesttypedef">ListMembersRequestRequestTypeDef</a></li>
@@ -36687,6 +36708,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#startmonitoringmemberrequestrequesttypedef">StartMonitoringMemberRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatedatasourcepackagesrequestrequesttypedef">UpdateDatasourcePackagesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateorganizationconfigurationrequestrequesttypedef">UpdateOrganizationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createmembersrequestrequesttypedef">CreateMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#creategraphresponsetypedef">CreateGraphResponseTypeDef</a></li>
@@ -36694,12 +36716,18 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#listorganizationadminaccountsresponsetypedef">ListOrganizationAdminAccountsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#deletemembersresponsetypedef">DeleteMembersResponseTypeDef</a></li>
+<li><a href="type_defs/#datasourcepackageingestdetailtypedef">DatasourcePackageIngestDetailTypeDef</a></li>
+<li><a href="type_defs/#membershipdatasourcestypedef">MembershipDatasourcesTypeDef</a></li>
+<li><a href="type_defs/#memberdetailtypedef">MemberDetailTypeDef</a></li>
+<li><a href="type_defs/#listgraphsresponsetypedef">ListGraphsResponseTypeDef</a></li>
+<li><a href="type_defs/#listdatasourcepackagesresponsetypedef">ListDatasourcePackagesResponseTypeDef</a></li>
+<li><a href="type_defs/#batchgetgraphmemberdatasourcesresponsetypedef">BatchGetGraphMemberDatasourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#batchgetmembershipdatasourcesresponsetypedef">BatchGetMembershipDatasourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#createmembersresponsetypedef">CreateMembersResponseTypeDef</a></li>
+<li><a href="type_defs/#getmembersresponsetypedef">GetMembersResponseTypeDef</a></li>
 <li><a href="type_defs/#listinvitationsresponsetypedef">ListInvitationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listmembersresponsetypedef">ListMembersResponseTypeDef</a></li>
-<li><a href="type_defs/#createmembersresponsetypedef">CreateMembersResponseTypeDef</a></li>
-<li><a href="type_defs/#deletemembersresponsetypedef">DeleteMembersResponseTypeDef</a></li>
-<li><a href="type_defs/#getmembersresponsetypedef">GetMembersResponseTypeDef</a></li>
-<li><a href="type_defs/#listgraphsresponsetypedef">ListGraphsResponseTypeDef</a></li>
 </ul>
 
               

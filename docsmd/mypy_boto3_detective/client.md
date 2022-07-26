@@ -84,6 +84,66 @@ parent.accept_invitation(**kwargs)
 
 1. See [:material-code-braces: AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef) 
 
+### batch\_get\_graph\_member\_datasources
+
+Gets data source package information for the behavior graph.
+
+Type annotations and code completion for `#!python boto3.client("detective").batch_get_graph_member_datasources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.batch_get_graph_member_datasources)
+
+```python title="Method definition"
+def batch_get_graph_member_datasources(
+    self,
+    *,
+    GraphArn: str,
+    AccountIds: Sequence[str],
+) -> BatchGetGraphMemberDatasourcesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetGraphMemberDatasourcesResponseTypeDef](./type_defs.md#batchgetgraphmemberdatasourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetGraphMemberDatasourcesRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+    "AccountIds": ...,
+}
+
+parent.batch_get_graph_member_datasources(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetGraphMemberDatasourcesRequestRequestTypeDef](./type_defs.md#batchgetgraphmemberdatasourcesrequestrequesttypedef) 
+
+### batch\_get\_membership\_datasources
+
+Gets information on the data source package history for an account.
+
+Type annotations and code completion for `#!python boto3.client("detective").batch_get_membership_datasources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.batch_get_membership_datasources)
+
+```python title="Method definition"
+def batch_get_membership_datasources(
+    self,
+    *,
+    GraphArns: Sequence[str],
+) -> BatchGetMembershipDatasourcesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetMembershipDatasourcesResponseTypeDef](./type_defs.md#batchgetmembershipdatasourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetMembershipDatasourcesRequestRequestTypeDef = {  # (1)
+    "GraphArns": ...,
+}
+
+parent.batch_get_membership_datasources(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetMembershipDatasourcesRequestRequestTypeDef](./type_defs.md#batchgetmembershipdatasourcesrequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -270,8 +330,7 @@ parent.describe_organization_configuration(**kwargs)
 
 ### disable\_organization\_admin\_account
 
-Removes the Detective administrator account for the organization in the current
-Region.
+Removes the Detective administrator account in the current Region.
 
 Type annotations and code completion for `#!python boto3.client("detective").disable_organization_admin_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disable_organization_admin_account)
@@ -394,6 +453,37 @@ parent.get_members(**kwargs)
 ```
 
 1. See [:material-code-braces: GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef) 
+
+### list\_datasource\_packages
+
+Lists data source packages in the behavior graph.
+
+Type annotations and code completion for `#!python boto3.client("detective").list_datasource_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_datasource_packages)
+
+```python title="Method definition"
+def list_datasource_packages(
+    self,
+    *,
+    GraphArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatasourcePackagesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListDatasourcePackagesResponseTypeDef](./type_defs.md#listdatasourcepackagesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasourcePackagesRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
+
+parent.list_datasource_packages(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasourcePackagesRequestRequestTypeDef](./type_defs.md#listdatasourcepackagesrequestrequesttypedef) 
 
 ### list\_graphs
 
@@ -668,6 +758,38 @@ parent.untag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_datasource\_packages
+
+Starts a data source packages for the behavior graph.
+
+Type annotations and code completion for `#!python boto3.client("detective").update_datasource_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.update_datasource_packages)
+
+```python title="Method definition"
+def update_datasource_packages(
+    self,
+    *,
+    GraphArn: str,
+    DatasourcePackages: Sequence[DatasourcePackageType],  # (1)
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: DatasourcePackageType](./literals.md#datasourcepackagetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateDatasourcePackagesRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+    "DatasourcePackages": ...,
+}
+
+parent.update_datasource_packages(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateDatasourcePackagesRequestRequestTypeDef](./type_defs.md#updatedatasourcepackagesrequestrequesttypedef) 
 
 ### update\_organization\_configuration
 

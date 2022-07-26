@@ -21717,6 +21717,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#waiters" class="md-nav__link">
+    Waiters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -21803,6 +21810,20 @@
     <li class="md-nav__item">
       <a href="usage/" class="md-nav__link">
         Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="waiters/" class="md-nav__link">
+        Waiters
       </a>
     </li>
   
@@ -36583,6 +36604,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#waiters" class="md-nav__link">
+    Waiters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -36674,16 +36702,30 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listorganizationadminaccountspaginator">ListOrganizationAdminAccountsPaginator</a></li>
 <li><a href="paginators/#searchresourcespaginator">SearchResourcesPaginator</a></li>
 </ul>
+<h2 id="waiters">Waiters</h2>
+<p>Type annotations and code completion for <a href="waiters/">waiters</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;macie2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_macie2.waiter</span> <span class="kn">import</span> <span class="n">FindingRevealedWaiter</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">def</span> <span class="nf">get_finding_revealed_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">FindingRevealedWaiter</span><span class="p">:</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;macie2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;finding_revealed&quot;</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li><a href="waiters/#findingrevealedwaiter">FindingRevealedWaiter</a></li>
+</ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_macie2.literals</span> <span class="kn">import</span> <span class="n">AdminStatusType</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AdminStatusType</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;DISABLING_IN_PROGRESS&quot;</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_macie2.literals</span> <span class="kn">import</span> <span class="n">AdminStatusType</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AdminStatusType</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="s2">&quot;DISABLING_IN_PROGRESS&quot;</span>
 </code></pre></div>
 <ul>
 <li><a href="literals/#adminstatustype">AdminStatusType</a></li>
 <li><a href="literals/#allowsunencryptedobjectuploadstype">AllowsUnencryptedObjectUploadsType</a></li>
+<li><a href="literals/#availabilitycodetype">AvailabilityCodeType</a></li>
 <li><a href="literals/#bucketmetadataerrorcodetype">BucketMetadataErrorCodeType</a></li>
 <li><a href="literals/#currencytype">CurrencyType</a></li>
 <li><a href="literals/#dataidentifierseveritytype">DataIdentifierSeverityType</a></li>
@@ -36695,6 +36737,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#findingactiontypetype">FindingActionTypeType</a></li>
 <li><a href="literals/#findingcategorytype">FindingCategoryType</a></li>
 <li><a href="literals/#findingpublishingfrequencytype">FindingPublishingFrequencyType</a></li>
+<li><a href="literals/#findingrevealedwaitername">FindingRevealedWaiterName</a></li>
 <li><a href="literals/#findingstatisticssortattributenametype">FindingStatisticsSortAttributeNameType</a></li>
 <li><a href="literals/#findingtypetype">FindingTypeType</a></li>
 <li><a href="literals/#findingsfilteractiontype">FindingsFilterActionType</a></li>
@@ -36720,6 +36763,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#orderbytype">OrderByType</a></li>
 <li><a href="literals/#origintypetype">OriginTypeType</a></li>
 <li><a href="literals/#relationshipstatustype">RelationshipStatusType</a></li>
+<li><a href="literals/#revealrequeststatustype">RevealRequestStatusType</a></li>
+<li><a href="literals/#revealstatustype">RevealStatusType</a></li>
 <li><a href="literals/#scopefilterkeytype">ScopeFilterKeyType</a></li>
 <li><a href="literals/#searchresourcescomparatortype">SearchResourcesComparatorType</a></li>
 <li><a href="literals/#searchresourcespaginatorname">SearchResourcesPaginatorName</a></li>
@@ -36733,6 +36778,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#tagtargettype">TagTargetType</a></li>
 <li><a href="literals/#timerangetype">TimeRangeType</a></li>
 <li><a href="literals/#typetype">TypeType</a></li>
+<li><a href="literals/#unavailabilityreasoncodetype">UnavailabilityReasonCodeType</a></li>
 <li><a href="literals/#unittype">UnitType</a></li>
 <li><a href="literals/#usagestatisticsfiltercomparatortype">UsageStatisticsFilterComparatorType</a></li>
 <li><a href="literals/#usagestatisticsfilterkeytype">UsageStatisticsFilterKeyType</a></li>
@@ -36743,16 +36789,17 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
 <li><a href="literals/#paginatorname">PaginatorName</a></li>
+<li><a href="literals/#waitername">WaiterName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_macie2.type_defs</span> <span class="kn">import</span> <span class="n">AcceptInvitationRequestRequestTypeDef</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AcceptInvitationRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;invitationId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_macie2.type_defs</span> <span class="kn">import</span> <span class="n">AcceptInvitationRequestRequestTypeDef</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AcceptInvitationRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;invitationId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#acceptinvitationrequestrequesttypedef">AcceptInvitationRequestRequestTypeDef</a></li>
@@ -36799,6 +36846,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#lastrunerrorstatustypedef">LastRunErrorStatusTypeDef</a></li>
 <li><a href="type_defs/#statisticstypedef">StatisticsTypeDef</a></li>
 <li><a href="type_defs/#userpauseddetailstypedef">UserPausedDetailsTypeDef</a></li>
+<li><a href="type_defs/#detecteddatadetailstypedef">DetectedDataDetailsTypeDef</a></li>
 <li><a href="type_defs/#disableorganizationadminaccountrequestrequesttypedef">DisableOrganizationAdminAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatememberrequestrequesttypedef">DisassociateMemberRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#domaindetailstypedef">DomainDetailsTypeDef</a></li>
@@ -36815,6 +36863,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#securityhubconfigurationtypedef">SecurityHubConfigurationTypeDef</a></li>
 <li><a href="type_defs/#sortcriteriatypedef">SortCriteriaTypeDef</a></li>
 <li><a href="type_defs/#getmemberrequestrequesttypedef">GetMemberRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#revealconfigurationtypedef">RevealConfigurationTypeDef</a></li>
+<li><a href="type_defs/#getsensitivedataoccurrencesavailabilityrequestrequesttypedef">GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
+<li><a href="type_defs/#getsensitivedataoccurrencesrequestrequesttypedef">GetSensitiveDataOccurrencesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usagestatisticsfiltertypedef">UsageStatisticsFilterTypeDef</a></li>
 <li><a href="type_defs/#usagestatisticssortbytypedef">UsageStatisticsSortByTypeDef</a></li>
 <li><a href="type_defs/#getusagetotalsrequestrequesttypedef">GetUsageTotalsRequestRequestTypeDef</a></li>
@@ -36871,6 +36923,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getinvitationscountresponsetypedef">GetInvitationsCountResponseTypeDef</a></li>
 <li><a href="type_defs/#getmaciesessionresponsetypedef">GetMacieSessionResponseTypeDef</a></li>
 <li><a href="type_defs/#getmemberresponsetypedef">GetMemberResponseTypeDef</a></li>
+<li><a href="type_defs/#getsensitivedataoccurrencesavailabilityresponsetypedef">GetSensitiveDataOccurrencesAvailabilityResponseTypeDef</a></li>
 <li><a href="type_defs/#listfindingsresponsetypedef">ListFindingsResponseTypeDef</a></li>
 <li><a href="type_defs/#listorganizationadminaccountsresponsetypedef">ListOrganizationAdminAccountsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
@@ -36894,6 +36947,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listinvitationsrequestlistinvitationspaginatetypedef">ListInvitationsRequestListInvitationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listmembersrequestlistmemberspaginatetypedef">ListMembersRequestListMembersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef">ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getsensitivedataoccurrencesresponsetypedef">GetSensitiveDataOccurrencesResponseTypeDef</a></li>
 <li><a href="type_defs/#listfindingsfiltersresponsetypedef">ListFindingsFiltersResponseTypeDef</a></li>
 <li><a href="type_defs/#getadministratoraccountresponsetypedef">GetAdministratorAccountResponseTypeDef</a></li>
 <li><a href="type_defs/#getmasteraccountresponsetypedef">GetMasterAccountResponseTypeDef</a></li>
@@ -36902,6 +36956,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getfindingspublicationconfigurationresponsetypedef">GetFindingsPublicationConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#putfindingspublicationconfigurationrequestrequesttypedef">PutFindingsPublicationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getfindingsrequestrequesttypedef">GetFindingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getrevealconfigurationresponsetypedef">GetRevealConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#updaterevealconfigurationrequestrequesttypedef">UpdateRevealConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updaterevealconfigurationresponsetypedef">UpdateRevealConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#getsensitivedataoccurrencesrequestfindingrevealedwaittypedef">GetSensitiveDataOccurrencesRequestFindingRevealedWaitTypeDef</a></li>
 <li><a href="type_defs/#getusagestatisticsrequestgetusagestatisticspaginatetypedef">GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getusagestatisticsrequestrequesttypedef">GetUsageStatisticsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getusagetotalsresponsetypedef">GetUsageTotalsResponseTypeDef</a></li>

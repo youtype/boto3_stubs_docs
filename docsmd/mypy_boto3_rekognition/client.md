@@ -1736,6 +1736,7 @@ def start_project_version(
     *,
     ProjectVersionArn: str,
     MinInferenceUnits: int,
+    MaxInferenceUnits: int = ...,
 ) -> StartProjectVersionResponseTypeDef:  # (1)
     ...
 ```

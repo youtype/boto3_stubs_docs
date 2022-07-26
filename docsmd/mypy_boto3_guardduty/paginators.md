@@ -7,6 +7,69 @@
     Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
     type annotations stubs module [mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
+## DescribeMalwareScansPaginator
+
+Type annotations and code completion for `#!python boto3.client("guardduty").get_paginator("describe_malware_scans")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Paginator.DescribeMalwareScans)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import DescribeMalwareScansPaginator
+
+def get_describe_malware_scans_paginator() -> DescribeMalwareScansPaginator:
+    return Session().client("guardduty").get_paginator("describe_malware_scans")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_guardduty.paginator import DescribeMalwareScansPaginator
+
+session = Session()
+
+client = Session().client("guardduty")  # (1)
+paginator: DescribeMalwareScansPaginator = client.get_paginator("describe_malware_scans")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GuardDutyClient](./client.md)
+2. paginator: [DescribeMalwareScansPaginator](./paginators.md#describemalwarescanspaginator)
+3. item: [:material-code-braces: DescribeMalwareScansResponseTypeDef](./type_defs.md#describemalwarescansresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeMalwareScansPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DetectorId: str,
+    FilterCriteria: FilterCriteriaTypeDef = ...,  # (1)
+    SortCriteria: SortCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeMalwareScansResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeMalwareScansResponseTypeDef](./type_defs.md#describemalwarescansresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef = {  # (1)
+    "DetectorId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef](./type_defs.md#describemalwarescansrequestdescribemalwarescanspaginatetypedef) 
 ## ListDetectorsPaginator
 
 Type annotations and code completion for `#!python boto3.client("guardduty").get_paginator("list_detectors")`.

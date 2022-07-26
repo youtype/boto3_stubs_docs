@@ -75,12 +75,14 @@ def get_client() -> DetectiveClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_detective.literals import InvitationTypeType
+from mypy_boto3_detective.literals import DatasourcePackageIngestStateType
 
-def get_value() -> InvitationTypeType:
-    return "INVITATION"
+def get_value() -> DatasourcePackageIngestStateType:
+    return "DISABLED"
 ```
 
+- [DatasourcePackageIngestStateType](./literals.md#datasourcepackageingeststatetype)
+- [DatasourcePackageType](./literals.md#datasourcepackagetype)
 - [InvitationTypeType](./literals.md#invitationtypetype)
 - [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
 - [MemberStatusType](./literals.md#memberstatustype)
@@ -108,10 +110,14 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef)
 - [AccountTypeDef](./type_defs.md#accounttypedef)
 - [AdministratorTypeDef](./type_defs.md#administratortypedef)
-- [CreateGraphRequestRequestTypeDef](./type_defs.md#creategraphrequestrequesttypedef)
+- [BatchGetGraphMemberDatasourcesRequestRequestTypeDef](./type_defs.md#batchgetgraphmemberdatasourcesrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)
 - [UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)
+- [BatchGetMembershipDatasourcesRequestRequestTypeDef](./type_defs.md#batchgetmembershipdatasourcesrequestrequesttypedef)
+- [UnprocessedGraphTypeDef](./type_defs.md#unprocessedgraphtypedef)
+- [CreateGraphRequestRequestTypeDef](./type_defs.md#creategraphrequestrequesttypedef)
+- [TimestampForCollectionTypeDef](./type_defs.md#timestampforcollectiontypedef)
+- [DatasourcePackageUsageInfoTypeDef](./type_defs.md#datasourcepackageusageinfotypedef)
 - [DeleteGraphRequestRequestTypeDef](./type_defs.md#deletegraphrequestrequesttypedef)
 - [DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef)
 - [DescribeOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequestrequesttypedef)
@@ -119,6 +125,7 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef)
 - [GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef)
 - [GraphTypeDef](./type_defs.md#graphtypedef)
+- [ListDatasourcePackagesRequestRequestTypeDef](./type_defs.md#listdatasourcepackagesrequestrequesttypedef)
 - [ListGraphsRequestRequestTypeDef](./type_defs.md#listgraphsrequestrequesttypedef)
 - [ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef)
 - [ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef)
@@ -128,6 +135,7 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [StartMonitoringMemberRequestRequestTypeDef](./type_defs.md#startmonitoringmemberrequestrequesttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateDatasourcePackagesRequestRequestTypeDef](./type_defs.md#updatedatasourcepackagesrequestrequesttypedef)
 - [UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef)
 - [CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef)
 - [CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef)
@@ -135,10 +143,16 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef)
+- [DatasourcePackageIngestDetailTypeDef](./type_defs.md#datasourcepackageingestdetailtypedef)
+- [MembershipDatasourcesTypeDef](./type_defs.md#membershipdatasourcestypedef)
+- [MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)
+- [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef)
+- [ListDatasourcePackagesResponseTypeDef](./type_defs.md#listdatasourcepackagesresponsetypedef)
+- [BatchGetGraphMemberDatasourcesResponseTypeDef](./type_defs.md#batchgetgraphmemberdatasourcesresponsetypedef)
+- [BatchGetMembershipDatasourcesResponseTypeDef](./type_defs.md#batchgetmembershipdatasourcesresponsetypedef)
+- [CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef)
+- [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef)
 - [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
-- [CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef)
-- [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef)
-- [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef)
-- [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef)
 

@@ -555,6 +555,7 @@ class StartModelRequestRequestTypeDef(TypedDict):
     ModelVersion: str,
     MinInferenceUnits: int,
     ClientToken: NotRequired[str],
+    MaxInferenceUnits: NotRequired[int],
 ```
 
 ## StopModelRequestRequestTypeDef
@@ -1246,6 +1247,8 @@ class ModelDescriptionTypeDef(TypedDict):
     EvaluationResult: NotRequired[OutputS3ObjectTypeDef],  # (4)
     EvaluationEndTimestamp: NotRequired[datetime],
     KmsKeyId: NotRequired[str],
+    MinInferenceUnits: NotRequired[int],
+    MaxInferenceUnits: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 

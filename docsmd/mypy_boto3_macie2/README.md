@@ -91,6 +91,23 @@ def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
 
 
 
+## Waiters
+
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("macie2").get_waiter("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_macie2.waiter import FindingRevealedWaiter
+
+def get_finding_revealed_waiter() -> FindingRevealedWaiter:
+    return Session().client("macie2").get_waiter("finding_revealed")
+```
+
+- [FindingRevealedWaiter](./waiters.md#findingrevealedwaiter)
+
+
 
 
 
@@ -109,6 +126,7 @@ def get_value() -> AdminStatusType:
 
 - [AdminStatusType](./literals.md#adminstatustype)
 - [AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype)
+- [AvailabilityCodeType](./literals.md#availabilitycodetype)
 - [BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype)
 - [CurrencyType](./literals.md#currencytype)
 - [DataIdentifierSeverityType](./literals.md#dataidentifierseveritytype)
@@ -120,6 +138,7 @@ def get_value() -> AdminStatusType:
 - [FindingActionTypeType](./literals.md#findingactiontypetype)
 - [FindingCategoryType](./literals.md#findingcategorytype)
 - [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
+- [FindingRevealedWaiterName](./literals.md#findingrevealedwaitername)
 - [FindingStatisticsSortAttributeNameType](./literals.md#findingstatisticssortattributenametype)
 - [FindingTypeType](./literals.md#findingtypetype)
 - [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
@@ -145,6 +164,8 @@ def get_value() -> AdminStatusType:
 - [OrderByType](./literals.md#orderbytype)
 - [OriginTypeType](./literals.md#origintypetype)
 - [RelationshipStatusType](./literals.md#relationshipstatustype)
+- [RevealRequestStatusType](./literals.md#revealrequeststatustype)
+- [RevealStatusType](./literals.md#revealstatustype)
 - [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
 - [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
 - [SearchResourcesPaginatorName](./literals.md#searchresourcespaginatorname)
@@ -158,6 +179,7 @@ def get_value() -> AdminStatusType:
 - [TagTargetType](./literals.md#tagtargettype)
 - [TimeRangeType](./literals.md#timerangetype)
 - [TypeType](./literals.md#typetype)
+- [UnavailabilityReasonCodeType](./literals.md#unavailabilityreasoncodetype)
 - [UnitType](./literals.md#unittype)
 - [UsageStatisticsFilterComparatorType](./literals.md#usagestatisticsfiltercomparatortype)
 - [UsageStatisticsFilterKeyType](./literals.md#usagestatisticsfilterkeytype)
@@ -168,6 +190,7 @@ def get_value() -> AdminStatusType:
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 - [RegionName](./literals.md#regionname)
 
 
@@ -230,6 +253,7 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef)
 - [StatisticsTypeDef](./type_defs.md#statisticstypedef)
 - [UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef)
+- [DetectedDataDetailsTypeDef](./type_defs.md#detecteddatadetailstypedef)
 - [DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef)
 - [DisassociateMemberRequestRequestTypeDef](./type_defs.md#disassociatememberrequestrequesttypedef)
 - [DomainDetailsTypeDef](./type_defs.md#domaindetailstypedef)
@@ -246,6 +270,10 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
 - [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 - [GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef)
+- [RevealConfigurationTypeDef](./type_defs.md#revealconfigurationtypedef)
+- [GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef](./type_defs.md#getsensitivedataoccurrencesavailabilityrequestrequesttypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+- [GetSensitiveDataOccurrencesRequestRequestTypeDef](./type_defs.md#getsensitivedataoccurrencesrequestrequesttypedef)
 - [UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)
 - [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
 - [GetUsageTotalsRequestRequestTypeDef](./type_defs.md#getusagetotalsrequestrequesttypedef)
@@ -302,6 +330,7 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef)
 - [GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef)
 - [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef)
+- [GetSensitiveDataOccurrencesAvailabilityResponseTypeDef](./type_defs.md#getsensitivedataoccurrencesavailabilityresponsetypedef)
 - [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
@@ -325,6 +354,7 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [ListInvitationsRequestListInvitationsPaginateTypeDef](./type_defs.md#listinvitationsrequestlistinvitationspaginatetypedef)
 - [ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef)
 - [ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef](./type_defs.md#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef)
+- [GetSensitiveDataOccurrencesResponseTypeDef](./type_defs.md#getsensitivedataoccurrencesresponsetypedef)
 - [ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef)
 - [GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef)
 - [GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef)
@@ -333,6 +363,10 @@ def get_value() -> AcceptInvitationRequestRequestTypeDef:
 - [GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef)
 - [PutFindingsPublicationConfigurationRequestRequestTypeDef](./type_defs.md#putfindingspublicationconfigurationrequestrequesttypedef)
 - [GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef)
+- [GetRevealConfigurationResponseTypeDef](./type_defs.md#getrevealconfigurationresponsetypedef)
+- [UpdateRevealConfigurationRequestRequestTypeDef](./type_defs.md#updaterevealconfigurationrequestrequesttypedef)
+- [UpdateRevealConfigurationResponseTypeDef](./type_defs.md#updaterevealconfigurationresponsetypedef)
+- [GetSensitiveDataOccurrencesRequestFindingRevealedWaitTypeDef](./type_defs.md#getsensitivedataoccurrencesrequestfindingrevealedwaittypedef)
 - [GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef](./type_defs.md#getusagestatisticsrequestgetusagestatisticspaginatetypedef)
 - [GetUsageStatisticsRequestRequestTypeDef](./type_defs.md#getusagestatisticsrequestrequesttypedef)
 - [GetUsageTotalsResponseTypeDef](./type_defs.md#getusagetotalsresponsetypedef)

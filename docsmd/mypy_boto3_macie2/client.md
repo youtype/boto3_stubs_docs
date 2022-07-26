@@ -39,6 +39,7 @@ except (
     client.ResourceNotFoundException,
     client.ServiceQuotaExceededException,
     client.ThrottlingException,
+    client.UnprocessableEntityException,
     client.ValidationException,
 ) as e:
     print(e)
@@ -1059,6 +1060,82 @@ parent.get_member(**kwargs)
 
 1. See [:material-code-braces: GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef) 
 
+### get\_reveal\_configuration
+
+Retrieves the status and configuration settings for retrieving (revealing)
+occurrences of sensitive data reported by findings.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_reveal_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_reveal_configuration)
+
+```python title="Method definition"
+def get_reveal_configuration(
+    self,
+) -> GetRevealConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetRevealConfigurationResponseTypeDef](./type_defs.md#getrevealconfigurationresponsetypedef) 
+
+### get\_sensitive\_data\_occurrences
+
+Retrieves (reveals) occurrences of sensitive data reported by a finding.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_sensitive_data_occurrences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_sensitive_data_occurrences)
+
+```python title="Method definition"
+def get_sensitive_data_occurrences(
+    self,
+    *,
+    findingId: str,
+) -> GetSensitiveDataOccurrencesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetSensitiveDataOccurrencesResponseTypeDef](./type_defs.md#getsensitivedataoccurrencesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSensitiveDataOccurrencesRequestRequestTypeDef = {  # (1)
+    "findingId": ...,
+}
+
+parent.get_sensitive_data_occurrences(**kwargs)
+```
+
+1. See [:material-code-braces: GetSensitiveDataOccurrencesRequestRequestTypeDef](./type_defs.md#getsensitivedataoccurrencesrequestrequesttypedef) 
+
+### get\_sensitive\_data\_occurrences\_availability
+
+Checks whether occurrences of sensitive data can be retrieved (revealed) for a
+finding.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_sensitive_data_occurrences_availability` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_sensitive_data_occurrences_availability)
+
+```python title="Method definition"
+def get_sensitive_data_occurrences_availability(
+    self,
+    *,
+    findingId: str,
+) -> GetSensitiveDataOccurrencesAvailabilityResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetSensitiveDataOccurrencesAvailabilityResponseTypeDef](./type_defs.md#getsensitivedataoccurrencesavailabilityresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef = {  # (1)
+    "findingId": ...,
+}
+
+parent.get_sensitive_data_occurrences_availability(**kwargs)
+```
+
+1. See [:material-code-braces: GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef](./type_defs.md#getsensitivedataoccurrencesavailabilityrequestrequesttypedef) 
+
 ### get\_usage\_statistics
 
 Retrieves (queries) quotas and aggregated usage data for one or more accounts.
@@ -1760,6 +1837,37 @@ parent.update_organization_configuration(**kwargs)
 
 1. See [:material-code-braces: UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef) 
 
+### update\_reveal\_configuration
+
+Updates the status and configuration settings for retrieving (revealing)
+occurrences of sensitive data reported by findings.
+
+Type annotations and code completion for `#!python boto3.client("macie2").update_reveal_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_reveal_configuration)
+
+```python title="Method definition"
+def update_reveal_configuration(
+    self,
+    *,
+    configuration: RevealConfigurationTypeDef,  # (1)
+) -> UpdateRevealConfigurationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RevealConfigurationTypeDef](./type_defs.md#revealconfigurationtypedef) 
+2. See [:material-code-braces: UpdateRevealConfigurationResponseTypeDef](./type_defs.md#updaterevealconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRevealConfigurationRequestRequestTypeDef = {  # (1)
+    "configuration": ...,
+}
+
+parent.update_reveal_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRevealConfigurationRequestRequestTypeDef](./type_defs.md#updaterevealconfigurationrequestrequesttypedef) 
+
 
 
 ### get_paginator
@@ -1778,4 +1886,11 @@ Type annotations and code completion for `#!python boto3.client("macie2").get_pa
 - `client.get_paginator("search_resources")` -> [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
 
 
+
+
+### get_waiter
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_waiter` method with overloads.
+
+- `client.get_waiter("finding_revealed")` -> [FindingRevealedWaiter](./waiters.md#findingrevealedwaiter)
 

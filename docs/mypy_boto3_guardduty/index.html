@@ -21809,6 +21809,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mypy_boto3_macie2/waiters/" class="md-nav__link">
+        Waiters
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -36657,12 +36671,13 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;guardduty&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_guardduty.paginator</span> <span class="kn">import</span> <span class="n">ListDetectorsPaginator</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_guardduty.paginator</span> <span class="kn">import</span> <span class="n">DescribeMalwareScansPaginator</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_detectors_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListDetectorsPaginator</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;guardduty&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_detectors&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_describe_malware_scans_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeMalwareScansPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;guardduty&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_malware_scans&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#describemalwarescanspaginator">DescribeMalwareScansPaginator</a></li>
 <li><a href="paginators/#listdetectorspaginator">ListDetectorsPaginator</a></li>
 <li><a href="paginators/#listfilterspaginator">ListFiltersPaginator</a></li>
 <li><a href="paginators/#listfindingspaginator">ListFindingsPaginator</a></li>
@@ -36681,10 +36696,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="literals/#adminstatustype">AdminStatusType</a></li>
+<li><a href="literals/#criterionkeytype">CriterionKeyType</a></li>
 <li><a href="literals/#datasourcestatustype">DataSourceStatusType</a></li>
 <li><a href="literals/#datasourcetype">DataSourceType</a></li>
+<li><a href="literals/#describemalwarescanspaginatorname">DescribeMalwareScansPaginatorName</a></li>
 <li><a href="literals/#destinationtypetype">DestinationTypeType</a></li>
 <li><a href="literals/#detectorstatustype">DetectorStatusType</a></li>
+<li><a href="literals/#ebssnapshotpreservationtype">EbsSnapshotPreservationType</a></li>
 <li><a href="literals/#feedbacktype">FeedbackType</a></li>
 <li><a href="literals/#filteractiontype">FilterActionType</a></li>
 <li><a href="literals/#findingpublishingfrequencytype">FindingPublishingFrequencyType</a></li>
@@ -36701,6 +36719,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listthreatintelsetspaginatorname">ListThreatIntelSetsPaginatorName</a></li>
 <li><a href="literals/#orderbytype">OrderByType</a></li>
 <li><a href="literals/#publishingstatustype">PublishingStatusType</a></li>
+<li><a href="literals/#scancriterionkeytype">ScanCriterionKeyType</a></li>
+<li><a href="literals/#scanresulttype">ScanResultType</a></li>
+<li><a href="literals/#scanstatustype">ScanStatusType</a></li>
 <li><a href="literals/#threatintelsetformattype">ThreatIntelSetFormatType</a></li>
 <li><a href="literals/#threatintelsetstatustype">ThreatIntelSetStatusType</a></li>
 <li><a href="literals/#usagestatistictypetype">UsageStatisticTypeType</a></li>
@@ -36761,6 +36782,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletemembersrequestrequesttypedef">DeleteMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletepublishingdestinationrequestrequesttypedef">DeletePublishingDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletethreatintelsetrequestrequesttypedef">DeleteThreatIntelSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#sortcriteriatypedef">SortCriteriaTypeDef</a></li>
 <li><a href="type_defs/#describeorganizationconfigurationrequestrequesttypedef">DescribeOrganizationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describepublishingdestinationrequestrequesttypedef">DescribePublishingDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#destinationtypedef">DestinationTypeDef</a></li>
@@ -36768,16 +36791,19 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#disassociatefromadministratoraccountrequestrequesttypedef">DisassociateFromAdministratorAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatefrommasteraccountrequestrequesttypedef">DisassociateFromMasterAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatemembersrequestrequesttypedef">DisassociateMembersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#volumedetailtypedef">VolumeDetailTypeDef</a></li>
+<li><a href="type_defs/#ebsvolumesresulttypedef">EbsVolumesResultTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#enableorganizationadminaccountrequestrequesttypedef">EnableOrganizationAdminAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#threatintelligencedetailtypedef">ThreatIntelligenceDetailTypeDef</a></li>
+<li><a href="type_defs/#filterconditiontypedef">FilterConditionTypeDef</a></li>
 <li><a href="type_defs/#findingstatisticstypedef">FindingStatisticsTypeDef</a></li>
 <li><a href="type_defs/#geolocationtypedef">GeoLocationTypeDef</a></li>
 <li><a href="type_defs/#getadministratoraccountrequestrequesttypedef">GetAdministratorAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdetectorrequestrequesttypedef">GetDetectorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getfilterrequestrequesttypedef">GetFilterRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#sortcriteriatypedef">SortCriteriaTypeDef</a></li>
 <li><a href="type_defs/#getipsetrequestrequesttypedef">GetIPSetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getmalwarescansettingsrequestrequesttypedef">GetMalwareScanSettingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmasteraccountrequestrequesttypedef">GetMasterAccountRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#mastertypedef">MasterTypeDef</a></li>
 <li><a href="type_defs/#getmemberdetectorsrequestrequesttypedef">GetMemberDetectorsRequestRequestTypeDef</a></li>
@@ -36786,6 +36812,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getremainingfreetrialdaysrequestrequesttypedef">GetRemainingFreeTrialDaysRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getthreatintelsetrequestrequesttypedef">GetThreatIntelSetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usagecriteriatypedef">UsageCriteriaTypeDef</a></li>
+<li><a href="type_defs/#highestseveritythreatdetailstypedef">HighestSeverityThreatDetailsTypeDef</a></li>
 <li><a href="type_defs/#hostpathtypedef">HostPathTypeDef</a></li>
 <li><a href="type_defs/#iaminstanceprofiletypedef">IamInstanceProfileTypeDef</a></li>
 <li><a href="type_defs/#productcodetypedef">ProductCodeTypeDef</a></li>
@@ -36794,7 +36821,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#kubernetesauditlogsconfigurationresulttypedef">KubernetesAuditLogsConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#kubernetesauditlogsconfigurationtypedef">KubernetesAuditLogsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#kubernetesuserdetailstypedef">KubernetesUserDetailsTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listdetectorsrequestrequesttypedef">ListDetectorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listfiltersrequestrequesttypedef">ListFiltersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listipsetsrequestrequesttypedef">ListIPSetsRequestRequestTypeDef</a></li>
@@ -36806,15 +36832,25 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listthreatintelsetsrequestrequesttypedef">ListThreatIntelSetsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#localipdetailstypedef">LocalIpDetailsTypeDef</a></li>
 <li><a href="type_defs/#localportdetailstypedef">LocalPortDetailsTypeDef</a></li>
+<li><a href="type_defs/#scanec2instancewithfindingstypedef">ScanEc2InstanceWithFindingsTypeDef</a></li>
 <li><a href="type_defs/#remoteportdetailstypedef">RemotePortDetailsTypeDef</a></li>
 <li><a href="type_defs/#privateipaddressdetailstypedef">PrivateIpAddressDetailsTypeDef</a></li>
 <li><a href="type_defs/#securitygrouptypedef">SecurityGroupTypeDef</a></li>
 <li><a href="type_defs/#organizations3logsconfigurationresulttypedef">OrganizationS3LogsConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#organizations3logsconfigurationtypedef">OrganizationS3LogsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#organizationebsvolumesresulttypedef">OrganizationEbsVolumesResultTypeDef</a></li>
+<li><a href="type_defs/#organizationebsvolumestypedef">OrganizationEbsVolumesTypeDef</a></li>
 <li><a href="type_defs/#organizationkubernetesauditlogsconfigurationresulttypedef">OrganizationKubernetesAuditLogsConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#organizationkubernetesauditlogsconfigurationtypedef">OrganizationKubernetesAuditLogsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#organizationtypedef">OrganizationTypeDef</a></li>
 <li><a href="type_defs/#ownertypedef">OwnerTypeDef</a></li>
+<li><a href="type_defs/#resourcedetailstypedef">ResourceDetailsTypeDef</a></li>
+<li><a href="type_defs/#scanconditionpairtypedef">ScanConditionPairTypeDef</a></li>
+<li><a href="type_defs/#scanneditemcounttypedef">ScannedItemCountTypeDef</a></li>
+<li><a href="type_defs/#threatsdetecteditemcounttypedef">ThreatsDetectedItemCountTypeDef</a></li>
+<li><a href="type_defs/#scanfilepathtypedef">ScanFilePathTypeDef</a></li>
+<li><a href="type_defs/#scanresultdetailstypedef">ScanResultDetailsTypeDef</a></li>
+<li><a href="type_defs/#triggerdetailstypedef">TriggerDetailsTypeDef</a></li>
 <li><a href="type_defs/#serviceadditionalinfotypedef">ServiceAdditionalInfoTypeDef</a></li>
 <li><a href="type_defs/#startmonitoringmembersrequestrequesttypedef">StartMonitoringMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopmonitoringmembersrequestrequesttypedef">StopMonitoringMembersRequestRequestTypeDef</a></li>
@@ -36860,11 +36896,22 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describepublishingdestinationresponsetypedef">DescribePublishingDestinationResponseTypeDef</a></li>
 <li><a href="type_defs/#updatepublishingdestinationrequestrequesttypedef">UpdatePublishingDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#kubernetesdatasourcefreetrialtypedef">KubernetesDataSourceFreeTrialTypeDef</a></li>
+<li><a href="type_defs/#malwareprotectiondatasourcefreetrialtypedef">MalwareProtectionDataSourceFreeTrialTypeDef</a></li>
+<li><a href="type_defs/#listdetectorsrequestlistdetectorspaginatetypedef">ListDetectorsRequestListDetectorsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listfiltersrequestlistfilterspaginatetypedef">ListFiltersRequestListFiltersPaginateTypeDef</a></li>
+<li><a href="type_defs/#listipsetsrequestlistipsetspaginatetypedef">ListIPSetsRequestListIPSetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listinvitationsrequestlistinvitationspaginatetypedef">ListInvitationsRequestListInvitationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listmembersrequestlistmemberspaginatetypedef">ListMembersRequestListMembersPaginateTypeDef</a></li>
+<li><a href="type_defs/#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef">ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listthreatintelsetsrequestlistthreatintelsetspaginatetypedef">ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getfindingsrequestrequesttypedef">GetFindingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listpublishingdestinationsresponsetypedef">ListPublishingDestinationsResponseTypeDef</a></li>
+<li><a href="type_defs/#ebsvolumedetailstypedef">EbsVolumeDetailsTypeDef</a></li>
+<li><a href="type_defs/#scanec2instancewithfindingsresulttypedef">ScanEc2InstanceWithFindingsResultTypeDef</a></li>
 <li><a href="type_defs/#eksclusterdetailstypedef">EksClusterDetailsTypeDef</a></li>
 <li><a href="type_defs/#evidencetypedef">EvidenceTypeDef</a></li>
+<li><a href="type_defs/#filtercriteriontypedef">FilterCriterionTypeDef</a></li>
 <li><a href="type_defs/#getfindingsstatisticsresponsetypedef">GetFindingsStatisticsResponseTypeDef</a></li>
-<li><a href="type_defs/#getfindingsrequestrequesttypedef">GetFindingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmasteraccountresponsetypedef">GetMasterAccountResponseTypeDef</a></li>
 <li><a href="type_defs/#getmembersresponsetypedef">GetMembersResponseTypeDef</a></li>
 <li><a href="type_defs/#listmembersresponsetypedef">ListMembersResponseTypeDef</a></li>
@@ -36873,17 +36920,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listinvitationsresponsetypedef">ListInvitationsResponseTypeDef</a></li>
 <li><a href="type_defs/#kubernetesconfigurationresulttypedef">KubernetesConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#kubernetesconfigurationtypedef">KubernetesConfigurationTypeDef</a></li>
-<li><a href="type_defs/#listdetectorsrequestlistdetectorspaginatetypedef">ListDetectorsRequestListDetectorsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listfiltersrequestlistfilterspaginatetypedef">ListFiltersRequestListFiltersPaginateTypeDef</a></li>
-<li><a href="type_defs/#listipsetsrequestlistipsetspaginatetypedef">ListIPSetsRequestListIPSetsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listinvitationsrequestlistinvitationspaginatetypedef">ListInvitationsRequestListInvitationsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listmembersrequestlistmemberspaginatetypedef">ListMembersRequestListMembersPaginateTypeDef</a></li>
-<li><a href="type_defs/#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef">ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listthreatintelsetsrequestlistthreatintelsetspaginatetypedef">ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef</a></li>
+<li><a href="type_defs/#malwareprotectionconfigurationtypedef">MalwareProtectionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#networkinterfacetypedef">NetworkInterfaceTypeDef</a></li>
+<li><a href="type_defs/#organizationscanec2instancewithfindingsresulttypedef">OrganizationScanEc2InstanceWithFindingsResultTypeDef</a></li>
+<li><a href="type_defs/#organizationscanec2instancewithfindingstypedef">OrganizationScanEc2InstanceWithFindingsTypeDef</a></li>
 <li><a href="type_defs/#organizationkubernetesconfigurationresulttypedef">OrganizationKubernetesConfigurationResultTypeDef</a></li>
 <li><a href="type_defs/#organizationkubernetesconfigurationtypedef">OrganizationKubernetesConfigurationTypeDef</a></li>
 <li><a href="type_defs/#remoteipdetailstypedef">RemoteIpDetailsTypeDef</a></li>
+<li><a href="type_defs/#scanconditiontypedef">ScanConditionTypeDef</a></li>
+<li><a href="type_defs/#scanthreatnametypedef">ScanThreatNameTypeDef</a></li>
+<li><a href="type_defs/#scantypedef">ScanTypeDef</a></li>
 <li><a href="type_defs/#usageaccountresulttypedef">UsageAccountResultTypeDef</a></li>
 <li><a href="type_defs/#usagedatasourceresulttypedef">UsageDataSourceResultTypeDef</a></li>
 <li><a href="type_defs/#usageresourceresulttypedef">UsageResourceResultTypeDef</a></li>
@@ -36895,34 +36941,49 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listfindingsrequestrequesttypedef">ListFindingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefilterrequestrequesttypedef">UpdateFilterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datasourcesfreetrialtypedef">DataSourcesFreeTrialTypeDef</a></li>
+<li><a href="type_defs/#malwareprotectionconfigurationresulttypedef">MalwareProtectionConfigurationResultTypeDef</a></li>
+<li><a href="type_defs/#filtercriteriatypedef">FilterCriteriaTypeDef</a></li>
+<li><a href="type_defs/#ecstaskdetailstypedef">EcsTaskDetailsTypeDef</a></li>
 <li><a href="type_defs/#kubernetesworkloaddetailstypedef">KubernetesWorkloadDetailsTypeDef</a></li>
-<li><a href="type_defs/#datasourceconfigurationsresulttypedef">DataSourceConfigurationsResultTypeDef</a></li>
 <li><a href="type_defs/#datasourceconfigurationstypedef">DataSourceConfigurationsTypeDef</a></li>
 <li><a href="type_defs/#instancedetailstypedef">InstanceDetailsTypeDef</a></li>
-<li><a href="type_defs/#organizationdatasourceconfigurationsresulttypedef">OrganizationDataSourceConfigurationsResultTypeDef</a></li>
-<li><a href="type_defs/#organizationdatasourceconfigurationstypedef">OrganizationDataSourceConfigurationsTypeDef</a></li>
+<li><a href="type_defs/#organizationmalwareprotectionconfigurationresulttypedef">OrganizationMalwareProtectionConfigurationResultTypeDef</a></li>
+<li><a href="type_defs/#organizationmalwareprotectionconfigurationtypedef">OrganizationMalwareProtectionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#awsapicallactiontypedef">AwsApiCallActionTypeDef</a></li>
 <li><a href="type_defs/#kubernetesapicallactiontypedef">KubernetesApiCallActionTypeDef</a></li>
 <li><a href="type_defs/#networkconnectionactiontypedef">NetworkConnectionActionTypeDef</a></li>
 <li><a href="type_defs/#portprobedetailtypedef">PortProbeDetailTypeDef</a></li>
+<li><a href="type_defs/#scanresourcecriteriatypedef">ScanResourceCriteriaTypeDef</a></li>
+<li><a href="type_defs/#threatdetectedbynametypedef">ThreatDetectedByNameTypeDef</a></li>
+<li><a href="type_defs/#describemalwarescansresponsetypedef">DescribeMalwareScansResponseTypeDef</a></li>
 <li><a href="type_defs/#usagestatisticstypedef">UsageStatisticsTypeDef</a></li>
 <li><a href="type_defs/#publicaccesstypedef">PublicAccessTypeDef</a></li>
 <li><a href="type_defs/#accountfreetrialinfotypedef">AccountFreeTrialInfoTypeDef</a></li>
+<li><a href="type_defs/#datasourceconfigurationsresulttypedef">DataSourceConfigurationsResultTypeDef</a></li>
+<li><a href="type_defs/#describemalwarescansrequestdescribemalwarescanspaginatetypedef">DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef</a></li>
+<li><a href="type_defs/#describemalwarescansrequestrequesttypedef">DescribeMalwareScansRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ecsclusterdetailstypedef">EcsClusterDetailsTypeDef</a></li>
 <li><a href="type_defs/#kubernetesdetailstypedef">KubernetesDetailsTypeDef</a></li>
-<li><a href="type_defs/#getdetectorresponsetypedef">GetDetectorResponseTypeDef</a></li>
-<li><a href="type_defs/#memberdatasourceconfigurationtypedef">MemberDataSourceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createdetectorrequestrequesttypedef">CreateDetectorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedetectorrequestrequesttypedef">UpdateDetectorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatememberdetectorsrequestrequesttypedef">UpdateMemberDetectorsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describeorganizationconfigurationresponsetypedef">DescribeOrganizationConfigurationResponseTypeDef</a></li>
-<li><a href="type_defs/#updateorganizationconfigurationrequestrequesttypedef">UpdateOrganizationConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#organizationdatasourceconfigurationsresulttypedef">OrganizationDataSourceConfigurationsResultTypeDef</a></li>
+<li><a href="type_defs/#organizationdatasourceconfigurationstypedef">OrganizationDataSourceConfigurationsTypeDef</a></li>
 <li><a href="type_defs/#portprobeactiontypedef">PortProbeActionTypeDef</a></li>
+<li><a href="type_defs/#getmalwarescansettingsresponsetypedef">GetMalwareScanSettingsResponseTypeDef</a></li>
+<li><a href="type_defs/#updatemalwarescansettingsrequestrequesttypedef">UpdateMalwareScanSettingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#scandetectionstypedef">ScanDetectionsTypeDef</a></li>
 <li><a href="type_defs/#getusagestatisticsresponsetypedef">GetUsageStatisticsResponseTypeDef</a></li>
 <li><a href="type_defs/#s3bucketdetailtypedef">S3BucketDetailTypeDef</a></li>
 <li><a href="type_defs/#getremainingfreetrialdaysresponsetypedef">GetRemainingFreeTrialDaysResponseTypeDef</a></li>
-<li><a href="type_defs/#getmemberdetectorsresponsetypedef">GetMemberDetectorsResponseTypeDef</a></li>
+<li><a href="type_defs/#getdetectorresponsetypedef">GetDetectorResponseTypeDef</a></li>
+<li><a href="type_defs/#memberdatasourceconfigurationtypedef">MemberDataSourceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#describeorganizationconfigurationresponsetypedef">DescribeOrganizationConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#updateorganizationconfigurationrequestrequesttypedef">UpdateOrganizationConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#actiontypedef">ActionTypeDef</a></li>
+<li><a href="type_defs/#ebsvolumescandetailstypedef">EbsVolumeScanDetailsTypeDef</a></li>
 <li><a href="type_defs/#resourcetypedef">ResourceTypeDef</a></li>
+<li><a href="type_defs/#getmemberdetectorsresponsetypedef">GetMemberDetectorsResponseTypeDef</a></li>
 <li><a href="type_defs/#servicetypedef">ServiceTypeDef</a></li>
 <li><a href="type_defs/#findingtypedef">FindingTypeDef</a></li>
 <li><a href="type_defs/#getfindingsresponsetypedef">GetFindingsResponseTypeDef</a></li>

@@ -59,20 +59,22 @@ class AdministratorTypeDef(TypedDict):
     DelegationTime: NotRequired[datetime],
 ```
 
-## CreateGraphRequestRequestTypeDef
+## BatchGetGraphMemberDatasourcesRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_detective.type_defs import CreateGraphRequestRequestTypeDef
+from mypy_boto3_detective.type_defs import BatchGetGraphMemberDatasourcesRequestRequestTypeDef
 
-def get_value() -> CreateGraphRequestRequestTypeDef:
+def get_value() -> BatchGetGraphMemberDatasourcesRequestRequestTypeDef:
     return {
-        "Tags": ...,
+        "GraphArn": ...,
+        "AccountIds": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateGraphRequestRequestTypeDef(TypedDict):
-    Tags: NotRequired[Mapping[str, str]],
+class BatchGetGraphMemberDatasourcesRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    AccountIds: Sequence[str],
 ```
 
 ## ResponseMetadataTypeDef
@@ -99,38 +101,6 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
-## MemberDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_detective.type_defs import MemberDetailTypeDef
-
-def get_value() -> MemberDetailTypeDef:
-    return {
-        "AccountId": ...,
-    }
-```
-
-```python title="Definition"
-class MemberDetailTypeDef(TypedDict):
-    AccountId: NotRequired[str],
-    EmailAddress: NotRequired[str],
-    GraphArn: NotRequired[str],
-    MasterId: NotRequired[str],
-    AdministratorId: NotRequired[str],
-    Status: NotRequired[MemberStatusType],  # (1)
-    DisabledReason: NotRequired[MemberDisabledReasonType],  # (2)
-    InvitedTime: NotRequired[datetime],
-    UpdatedTime: NotRequired[datetime],
-    VolumeUsageInBytes: NotRequired[int],
-    VolumeUsageUpdatedTime: NotRequired[datetime],
-    PercentOfGraphUtilization: NotRequired[float],
-    PercentOfGraphUtilizationUpdatedTime: NotRequired[datetime],
-    InvitationType: NotRequired[InvitationTypeType],  # (3)
-```
-
-1. See [:material-code-brackets: MemberStatusType](./literals.md#memberstatustype) 
-2. See [:material-code-brackets: MemberDisabledReasonType](./literals.md#memberdisabledreasontype) 
-3. See [:material-code-brackets: InvitationTypeType](./literals.md#invitationtypetype) 
 ## UnprocessedAccountTypeDef
 
 ```python title="Usage Example"
@@ -146,6 +116,88 @@ def get_value() -> UnprocessedAccountTypeDef:
 class UnprocessedAccountTypeDef(TypedDict):
     AccountId: NotRequired[str],
     Reason: NotRequired[str],
+```
+
+## BatchGetMembershipDatasourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import BatchGetMembershipDatasourcesRequestRequestTypeDef
+
+def get_value() -> BatchGetMembershipDatasourcesRequestRequestTypeDef:
+    return {
+        "GraphArns": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetMembershipDatasourcesRequestRequestTypeDef(TypedDict):
+    GraphArns: Sequence[str],
+```
+
+## UnprocessedGraphTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import UnprocessedGraphTypeDef
+
+def get_value() -> UnprocessedGraphTypeDef:
+    return {
+        "GraphArn": ...,
+    }
+```
+
+```python title="Definition"
+class UnprocessedGraphTypeDef(TypedDict):
+    GraphArn: NotRequired[str],
+    Reason: NotRequired[str],
+```
+
+## CreateGraphRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import CreateGraphRequestRequestTypeDef
+
+def get_value() -> CreateGraphRequestRequestTypeDef:
+    return {
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGraphRequestRequestTypeDef(TypedDict):
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+## TimestampForCollectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import TimestampForCollectionTypeDef
+
+def get_value() -> TimestampForCollectionTypeDef:
+    return {
+        "Timestamp": ...,
+    }
+```
+
+```python title="Definition"
+class TimestampForCollectionTypeDef(TypedDict):
+    Timestamp: NotRequired[datetime],
+```
+
+## DatasourcePackageUsageInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import DatasourcePackageUsageInfoTypeDef
+
+def get_value() -> DatasourcePackageUsageInfoTypeDef:
+    return {
+        "VolumeUsageInBytes": ...,
+    }
+```
+
+```python title="Definition"
+class DatasourcePackageUsageInfoTypeDef(TypedDict):
+    VolumeUsageInBytes: NotRequired[int],
+    VolumeUsageUpdateTime: NotRequired[datetime],
 ```
 
 ## DeleteGraphRequestRequestTypeDef
@@ -263,6 +315,24 @@ def get_value() -> GraphTypeDef:
 class GraphTypeDef(TypedDict):
     Arn: NotRequired[str],
     CreatedTime: NotRequired[datetime],
+```
+
+## ListDatasourcePackagesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import ListDatasourcePackagesRequestRequestTypeDef
+
+def get_value() -> ListDatasourcePackagesRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasourcePackagesRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## ListGraphsRequestRequestTypeDef
@@ -420,6 +490,25 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## UpdateDatasourcePackagesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import UpdateDatasourcePackagesRequestRequestTypeDef
+
+def get_value() -> UpdateDatasourcePackagesRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+        "DatasourcePackages": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDatasourcePackagesRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    DatasourcePackages: Sequence[DatasourcePackageType],  # (1)
+```
+
+1. See [:material-code-brackets: DatasourcePackageType](./literals.md#datasourcepackagetype) 
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -554,6 +643,238 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import DeleteMembersResponseTypeDef
+
+def get_value() -> DeleteMembersResponseTypeDef:
+    return {
+        "AccountIds": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMembersResponseTypeDef(TypedDict):
+    AccountIds: List[str],
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DatasourcePackageIngestDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import DatasourcePackageIngestDetailTypeDef
+
+def get_value() -> DatasourcePackageIngestDetailTypeDef:
+    return {
+        "DatasourcePackageIngestState": ...,
+    }
+```
+
+```python title="Definition"
+class DatasourcePackageIngestDetailTypeDef(TypedDict):
+    DatasourcePackageIngestState: NotRequired[DatasourcePackageIngestStateType],  # (1)
+    LastIngestStateChange: NotRequired[Dict[DatasourcePackageIngestStateType, TimestampForCollectionTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: DatasourcePackageIngestStateType](./literals.md#datasourcepackageingeststatetype) 
+2. See [:material-code-brackets: DatasourcePackageIngestStateType](./literals.md#datasourcepackageingeststatetype) [:material-code-braces: TimestampForCollectionTypeDef](./type_defs.md#timestampforcollectiontypedef) 
+## MembershipDatasourcesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import MembershipDatasourcesTypeDef
+
+def get_value() -> MembershipDatasourcesTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class MembershipDatasourcesTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    GraphArn: NotRequired[str],
+    DatasourcePackageIngestHistory: NotRequired[Dict[DatasourcePackageType, Dict[DatasourcePackageIngestStateType, TimestampForCollectionTypeDef]]],  # (1)
+```
+
+1. See [:material-code-brackets: DatasourcePackageType](./literals.md#datasourcepackagetype) [:material-code-brackets: DatasourcePackageIngestStateType](./literals.md#datasourcepackageingeststatetype) [:material-code-braces: TimestampForCollectionTypeDef](./type_defs.md#timestampforcollectiontypedef) 
+## MemberDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import MemberDetailTypeDef
+
+def get_value() -> MemberDetailTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class MemberDetailTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    GraphArn: NotRequired[str],
+    MasterId: NotRequired[str],
+    AdministratorId: NotRequired[str],
+    Status: NotRequired[MemberStatusType],  # (1)
+    DisabledReason: NotRequired[MemberDisabledReasonType],  # (2)
+    InvitedTime: NotRequired[datetime],
+    UpdatedTime: NotRequired[datetime],
+    VolumeUsageInBytes: NotRequired[int],
+    VolumeUsageUpdatedTime: NotRequired[datetime],
+    PercentOfGraphUtilization: NotRequired[float],
+    PercentOfGraphUtilizationUpdatedTime: NotRequired[datetime],
+    InvitationType: NotRequired[InvitationTypeType],  # (3)
+    VolumeUsageByDatasourcePackage: NotRequired[Dict[DatasourcePackageType, DatasourcePackageUsageInfoTypeDef]],  # (4)
+    DatasourcePackageIngestStates: NotRequired[Dict[DatasourcePackageType, DatasourcePackageIngestStateType]],  # (5)
+```
+
+1. See [:material-code-brackets: MemberStatusType](./literals.md#memberstatustype) 
+2. See [:material-code-brackets: MemberDisabledReasonType](./literals.md#memberdisabledreasontype) 
+3. See [:material-code-brackets: InvitationTypeType](./literals.md#invitationtypetype) 
+4. See [:material-code-brackets: DatasourcePackageType](./literals.md#datasourcepackagetype) [:material-code-braces: DatasourcePackageUsageInfoTypeDef](./type_defs.md#datasourcepackageusageinfotypedef) 
+5. See [:material-code-brackets: DatasourcePackageType](./literals.md#datasourcepackagetype) [:material-code-brackets: DatasourcePackageIngestStateType](./literals.md#datasourcepackageingeststatetype) 
+## ListGraphsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import ListGraphsResponseTypeDef
+
+def get_value() -> ListGraphsResponseTypeDef:
+    return {
+        "GraphList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGraphsResponseTypeDef(TypedDict):
+    GraphList: List[GraphTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GraphTypeDef](./type_defs.md#graphtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasourcePackagesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import ListDatasourcePackagesResponseTypeDef
+
+def get_value() -> ListDatasourcePackagesResponseTypeDef:
+    return {
+        "DatasourcePackages": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasourcePackagesResponseTypeDef(TypedDict):
+    DatasourcePackages: Dict[DatasourcePackageType, DatasourcePackageIngestDetailTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: DatasourcePackageType](./literals.md#datasourcepackagetype) [:material-code-braces: DatasourcePackageIngestDetailTypeDef](./type_defs.md#datasourcepackageingestdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetGraphMemberDatasourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import BatchGetGraphMemberDatasourcesResponseTypeDef
+
+def get_value() -> BatchGetGraphMemberDatasourcesResponseTypeDef:
+    return {
+        "MemberDatasources": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetGraphMemberDatasourcesResponseTypeDef(TypedDict):
+    MemberDatasources: List[MembershipDatasourcesTypeDef],  # (1)
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MembershipDatasourcesTypeDef](./type_defs.md#membershipdatasourcestypedef) 
+2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetMembershipDatasourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import BatchGetMembershipDatasourcesResponseTypeDef
+
+def get_value() -> BatchGetMembershipDatasourcesResponseTypeDef:
+    return {
+        "MembershipDatasources": ...,
+        "UnprocessedGraphs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetMembershipDatasourcesResponseTypeDef(TypedDict):
+    MembershipDatasources: List[MembershipDatasourcesTypeDef],  # (1)
+    UnprocessedGraphs: List[UnprocessedGraphTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MembershipDatasourcesTypeDef](./type_defs.md#membershipdatasourcestypedef) 
+2. See [:material-code-braces: UnprocessedGraphTypeDef](./type_defs.md#unprocessedgraphtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import CreateMembersResponseTypeDef
+
+def get_value() -> CreateMembersResponseTypeDef:
+    return {
+        "Members": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMembersResponseTypeDef(TypedDict):
+    Members: List[MemberDetailTypeDef],  # (1)
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
+2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMembersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_detective.type_defs import GetMembersResponseTypeDef
+
+def get_value() -> GetMembersResponseTypeDef:
+    return {
+        "MemberDetails": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMembersResponseTypeDef(TypedDict):
+    MemberDetails: List[MemberDetailTypeDef],  # (1)
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
+2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInvitationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -597,94 +918,4 @@ class ListMembersResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_detective.type_defs import CreateMembersResponseTypeDef
-
-def get_value() -> CreateMembersResponseTypeDef:
-    return {
-        "Members": ...,
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateMembersResponseTypeDef(TypedDict):
-    Members: List[MemberDetailTypeDef],  # (1)
-    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
-2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_detective.type_defs import DeleteMembersResponseTypeDef
-
-def get_value() -> DeleteMembersResponseTypeDef:
-    return {
-        "AccountIds": ...,
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteMembersResponseTypeDef(TypedDict):
-    AccountIds: List[str],
-    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMembersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_detective.type_defs import GetMembersResponseTypeDef
-
-def get_value() -> GetMembersResponseTypeDef:
-    return {
-        "MemberDetails": ...,
-        "UnprocessedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMembersResponseTypeDef(TypedDict):
-    MemberDetails: List[MemberDetailTypeDef],  # (1)
-    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
-2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGraphsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_detective.type_defs import ListGraphsResponseTypeDef
-
-def get_value() -> ListGraphsResponseTypeDef:
-    return {
-        "GraphList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListGraphsResponseTypeDef(TypedDict):
-    GraphList: List[GraphTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GraphTypeDef](./type_defs.md#graphtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

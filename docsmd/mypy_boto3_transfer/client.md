@@ -91,8 +91,8 @@ def close(
 ### create\_access
 
 Used by administrators to choose which groups in the directory should have
-access to upload and download files over the enabled protocols using Amazon Web
-Services Transfer Family.
+access to upload and download files over the enabled protocols using Transfer
+Family.
 
 Type annotations and code completion for `#!python boto3.client("transfer").create_access` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_access)
@@ -130,6 +130,121 @@ parent.create_access(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateAccessRequestRequestTypeDef](./type_defs.md#createaccessrequestrequesttypedef) 
+
+### create\_agreement
+
+Creates an agreement.
+
+Type annotations and code completion for `#!python boto3.client("transfer").create_agreement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_agreement)
+
+```python title="Method definition"
+def create_agreement(
+    self,
+    *,
+    ServerId: str,
+    LocalProfileId: str,
+    PartnerProfileId: str,
+    BaseDirectory: str,
+    AccessRole: str,
+    Description: str = ...,
+    Status: AgreementStatusTypeType = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateAgreementResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: AgreementStatusTypeType](./literals.md#agreementstatustypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAgreementResponseTypeDef](./type_defs.md#createagreementresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateAgreementRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "LocalProfileId": ...,
+    "PartnerProfileId": ...,
+    "BaseDirectory": ...,
+    "AccessRole": ...,
+}
+
+parent.create_agreement(**kwargs)
+```
+
+1. See [:material-code-braces: CreateAgreementRequestRequestTypeDef](./type_defs.md#createagreementrequestrequesttypedef) 
+
+### create\_connector
+
+Creates the connector, which captures the parameters for an outbound connection
+for the AS2 protocol.
+
+Type annotations and code completion for `#!python boto3.client("transfer").create_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_connector)
+
+```python title="Method definition"
+def create_connector(
+    self,
+    *,
+    Url: str,
+    As2Config: As2ConnectorConfigTypeDef,  # (1)
+    AccessRole: str,
+    LoggingRole: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateConnectorResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: As2ConnectorConfigTypeDef](./type_defs.md#as2connectorconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateConnectorResponseTypeDef](./type_defs.md#createconnectorresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateConnectorRequestRequestTypeDef = {  # (1)
+    "Url": ...,
+    "As2Config": ...,
+    "AccessRole": ...,
+}
+
+parent.create_connector(**kwargs)
+```
+
+1. See [:material-code-braces: CreateConnectorRequestRequestTypeDef](./type_defs.md#createconnectorrequestrequesttypedef) 
+
+### create\_profile
+
+Creates the profile for the AS2 process.
+
+Type annotations and code completion for `#!python boto3.client("transfer").create_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_profile)
+
+```python title="Method definition"
+def create_profile(
+    self,
+    *,
+    As2Id: str,
+    ProfileType: ProfileTypeType,  # (1)
+    CertificateIds: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateProfileResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ProfileTypeType](./literals.md#profiletypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateProfileRequestRequestTypeDef = {  # (1)
+    "As2Id": ...,
+    "ProfileType": ...,
+}
+
+parent.create_profile(**kwargs)
+```
+
+1. See [:material-code-braces: CreateProfileRequestRequestTypeDef](./type_defs.md#createprofilerequestrequesttypedef) 
 
 ### create\_server
 
@@ -297,6 +412,124 @@ parent.delete_access(**kwargs)
 
 1. See [:material-code-braces: DeleteAccessRequestRequestTypeDef](./type_defs.md#deleteaccessrequestrequesttypedef) 
 
+### delete\_agreement
+
+Delete the agreement that's specified in the provided `AgreementId` .
+
+Type annotations and code completion for `#!python boto3.client("transfer").delete_agreement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_agreement)
+
+```python title="Method definition"
+def delete_agreement(
+    self,
+    *,
+    AgreementId: str,
+    ServerId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteAgreementRequestRequestTypeDef = {  # (1)
+    "AgreementId": ...,
+    "ServerId": ...,
+}
+
+parent.delete_agreement(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteAgreementRequestRequestTypeDef](./type_defs.md#deleteagreementrequestrequesttypedef) 
+
+### delete\_certificate
+
+Deletes the certificate that's specified in the `CertificateId` parameter.
+
+Type annotations and code completion for `#!python boto3.client("transfer").delete_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_certificate)
+
+```python title="Method definition"
+def delete_certificate(
+    self,
+    *,
+    CertificateId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateId": ...,
+}
+
+parent.delete_certificate(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef) 
+
+### delete\_connector
+
+Deletes the agreement that's specified in the provided `ConnectorId` .
+
+Type annotations and code completion for `#!python boto3.client("transfer").delete_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_connector)
+
+```python title="Method definition"
+def delete_connector(
+    self,
+    *,
+    ConnectorId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectorRequestRequestTypeDef = {  # (1)
+    "ConnectorId": ...,
+}
+
+parent.delete_connector(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteConnectorRequestRequestTypeDef](./type_defs.md#deleteconnectorrequestrequesttypedef) 
+
+### delete\_profile
+
+Deletes the profile that's specified in the `ProfileId` parameter.
+
+Type annotations and code completion for `#!python boto3.client("transfer").delete_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_profile)
+
+```python title="Method definition"
+def delete_profile(
+    self,
+    *,
+    ProfileId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteProfileRequestRequestTypeDef = {  # (1)
+    "ProfileId": ...,
+}
+
+parent.delete_profile(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteProfileRequestRequestTypeDef](./type_defs.md#deleteprofilerequestrequesttypedef) 
+
 ### delete\_server
 
 Deletes the file transfer protocol-enabled server that you specify.
@@ -423,7 +656,7 @@ parent.delete_workflow(**kwargs)
 ### describe\_access
 
 Describes the access that is assigned to the specific file transfer protocol-
-enabled server, as identified by its `ServerId` property and its `ExternalID` .
+enabled server, as identified by its `ServerId` property and its `ExternalId` .
 
 Type annotations and code completion for `#!python boto3.client("transfer").describe_access` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_access)
@@ -451,6 +684,97 @@ parent.describe_access(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeAccessRequestRequestTypeDef](./type_defs.md#describeaccessrequestrequesttypedef) 
+
+### describe\_agreement
+
+Describes the agreement that's identified by the `AgreementId` .
+
+Type annotations and code completion for `#!python boto3.client("transfer").describe_agreement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_agreement)
+
+```python title="Method definition"
+def describe_agreement(
+    self,
+    *,
+    AgreementId: str,
+    ServerId: str,
+) -> DescribeAgreementResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeAgreementResponseTypeDef](./type_defs.md#describeagreementresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAgreementRequestRequestTypeDef = {  # (1)
+    "AgreementId": ...,
+    "ServerId": ...,
+}
+
+parent.describe_agreement(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAgreementRequestRequestTypeDef](./type_defs.md#describeagreementrequestrequesttypedef) 
+
+### describe\_certificate
+
+Describes the certificate that's identified by the `CertificateId` .
+
+Type annotations and code completion for `#!python boto3.client("transfer").describe_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_certificate)
+
+```python title="Method definition"
+def describe_certificate(
+    self,
+    *,
+    CertificateId: str,
+) -> DescribeCertificateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateId": ...,
+}
+
+parent.describe_certificate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef) 
+
+### describe\_connector
+
+Describes the connector that's identified by the `ConnectorId.` See also: [AWS
+API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/transfer-2018-11-05/DescribeConnector).
+
+Type annotations and code completion for `#!python boto3.client("transfer").describe_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_connector)
+
+```python title="Method definition"
+def describe_connector(
+    self,
+    *,
+    ConnectorId: str,
+) -> DescribeConnectorResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectorRequestRequestTypeDef = {  # (1)
+    "ConnectorId": ...,
+}
+
+parent.describe_connector(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConnectorRequestRequestTypeDef](./type_defs.md#describeconnectorrequestrequesttypedef) 
 
 ### describe\_execution
 
@@ -483,6 +807,35 @@ parent.describe_execution(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeExecutionRequestRequestTypeDef](./type_defs.md#describeexecutionrequestrequesttypedef) 
+
+### describe\_profile
+
+Returns the details of the profile that's specified by the `ProfileId` .
+
+Type annotations and code completion for `#!python boto3.client("transfer").describe_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_profile)
+
+```python title="Method definition"
+def describe_profile(
+    self,
+    *,
+    ProfileId: str,
+) -> DescribeProfileResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeProfileResponseTypeDef](./type_defs.md#describeprofileresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeProfileRequestRequestTypeDef = {  # (1)
+    "ProfileId": ...,
+}
+
+parent.describe_profile(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeProfileRequestRequestTypeDef](./type_defs.md#describeprofilerequestrequesttypedef) 
 
 ### describe\_security\_policy
 
@@ -624,6 +977,46 @@ def generate_presigned_url(
 ```
 
 
+### import\_certificate
+
+Imports the signing and encryption certificates that you need to create local
+(AS2) profiles and partner profiles.
+
+Type annotations and code completion for `#!python boto3.client("transfer").import_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_certificate)
+
+```python title="Method definition"
+def import_certificate(
+    self,
+    *,
+    Usage: CertificateUsageTypeType,  # (1)
+    Certificate: str,
+    CertificateChain: str = ...,
+    PrivateKey: str = ...,
+    ActiveDate: Union[datetime, str] = ...,
+    InactiveDate: Union[datetime, str] = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> ImportCertificateResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: CertificateUsageTypeType](./literals.md#certificateusagetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ImportCertificateRequestRequestTypeDef = {  # (1)
+    "Usage": ...,
+    "Certificate": ...,
+}
+
+parent.import_certificate(**kwargs)
+```
+
+1. See [:material-code-braces: ImportCertificateRequestRequestTypeDef](./type_defs.md#importcertificaterequestrequesttypedef) 
+
 ### import\_ssh\_public\_key
 
 Adds a Secure Shell (SSH) public key to a user account identified by a
@@ -690,6 +1083,99 @@ parent.list_accesses(**kwargs)
 
 1. See [:material-code-braces: ListAccessesRequestRequestTypeDef](./type_defs.md#listaccessesrequestrequesttypedef) 
 
+### list\_agreements
+
+Returns a list of the agreements for the server that's identified by the
+`ServerId` that you supply.
+
+Type annotations and code completion for `#!python boto3.client("transfer").list_agreements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_agreements)
+
+```python title="Method definition"
+def list_agreements(
+    self,
+    *,
+    ServerId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAgreementsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAgreementsResponseTypeDef](./type_defs.md#listagreementsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAgreementsRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
+
+parent.list_agreements(**kwargs)
+```
+
+1. See [:material-code-braces: ListAgreementsRequestRequestTypeDef](./type_defs.md#listagreementsrequestrequesttypedef) 
+
+### list\_certificates
+
+Returns a list of the current certificates that have been imported into Transfer
+Family.
+
+Type annotations and code completion for `#!python boto3.client("transfer").list_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_certificates)
+
+```python title="Method definition"
+def list_certificates(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCertificatesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCertificatesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_certificates(**kwargs)
+```
+
+1. See [:material-code-braces: ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef) 
+
+### list\_connectors
+
+Lists the connectors for the specified Region.
+
+Type annotations and code completion for `#!python boto3.client("transfer").list_connectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_connectors)
+
+```python title="Method definition"
+def list_connectors(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListConnectorsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListConnectorsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_connectors(**kwargs)
+```
+
+1. See [:material-code-braces: ListConnectorsRequestRequestTypeDef](./type_defs.md#listconnectorsrequestrequesttypedef) 
+
 ### list\_executions
 
 Lists all executions for the specified workflow.
@@ -720,6 +1206,38 @@ parent.list_executions(**kwargs)
 ```
 
 1. See [:material-code-braces: ListExecutionsRequestRequestTypeDef](./type_defs.md#listexecutionsrequestrequesttypedef) 
+
+### list\_profiles
+
+Returns a list of the profiles for your system.
+
+Type annotations and code completion for `#!python boto3.client("transfer").list_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_profiles)
+
+```python title="Method definition"
+def list_profiles(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ProfileType: ProfileTypeType = ...,  # (1)
+) -> ListProfilesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ProfileTypeType](./literals.md#profiletypetype) 
+2. See [:material-code-braces: ListProfilesResponseTypeDef](./type_defs.md#listprofilesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListProfilesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_profiles(**kwargs)
+```
+
+1. See [:material-code-braces: ListProfilesRequestRequestTypeDef](./type_defs.md#listprofilesrequestrequesttypedef) 
 
 ### list\_security\_policies
 
@@ -911,6 +1429,37 @@ parent.send_workflow_step_state(**kwargs)
 ```
 
 1. See [:material-code-braces: SendWorkflowStepStateRequestRequestTypeDef](./type_defs.md#sendworkflowstepstaterequestrequesttypedef) 
+
+### start\_file\_transfer
+
+Begins an outbound file transfer.
+
+Type annotations and code completion for `#!python boto3.client("transfer").start_file_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_file_transfer)
+
+```python title="Method definition"
+def start_file_transfer(
+    self,
+    *,
+    ConnectorId: str,
+    SendFilePaths: Sequence[str],
+) -> StartFileTransferResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartFileTransferResponseTypeDef](./type_defs.md#startfiletransferresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartFileTransferRequestRequestTypeDef = {  # (1)
+    "ConnectorId": ...,
+    "SendFilePaths": ...,
+}
+
+parent.start_file_transfer(**kwargs)
+```
+
+1. See [:material-code-braces: StartFileTransferRequestRequestTypeDef](./type_defs.md#startfiletransferrequestrequesttypedef) 
 
 ### start\_server
 
@@ -1115,6 +1664,140 @@ parent.update_access(**kwargs)
 
 1. See [:material-code-braces: UpdateAccessRequestRequestTypeDef](./type_defs.md#updateaccessrequestrequesttypedef) 
 
+### update\_agreement
+
+Updates some of the parameters for an existing agreement.
+
+Type annotations and code completion for `#!python boto3.client("transfer").update_agreement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_agreement)
+
+```python title="Method definition"
+def update_agreement(
+    self,
+    *,
+    AgreementId: str,
+    ServerId: str,
+    Description: str = ...,
+    Status: AgreementStatusTypeType = ...,  # (1)
+    LocalProfileId: str = ...,
+    PartnerProfileId: str = ...,
+    BaseDirectory: str = ...,
+    AccessRole: str = ...,
+) -> UpdateAgreementResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: AgreementStatusTypeType](./literals.md#agreementstatustypetype) 
+2. See [:material-code-braces: UpdateAgreementResponseTypeDef](./type_defs.md#updateagreementresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateAgreementRequestRequestTypeDef = {  # (1)
+    "AgreementId": ...,
+    "ServerId": ...,
+}
+
+parent.update_agreement(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAgreementRequestRequestTypeDef](./type_defs.md#updateagreementrequestrequesttypedef) 
+
+### update\_certificate
+
+Updates the active and inactive dates for a certificate.
+
+Type annotations and code completion for `#!python boto3.client("transfer").update_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_certificate)
+
+```python title="Method definition"
+def update_certificate(
+    self,
+    *,
+    CertificateId: str,
+    ActiveDate: Union[datetime, str] = ...,
+    InactiveDate: Union[datetime, str] = ...,
+    Description: str = ...,
+) -> UpdateCertificateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateCertificateResponseTypeDef](./type_defs.md#updatecertificateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateId": ...,
+}
+
+parent.update_certificate(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateCertificateRequestRequestTypeDef](./type_defs.md#updatecertificaterequestrequesttypedef) 
+
+### update\_connector
+
+Updates some of the parameters for an existing connector.
+
+Type annotations and code completion for `#!python boto3.client("transfer").update_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_connector)
+
+```python title="Method definition"
+def update_connector(
+    self,
+    *,
+    ConnectorId: str,
+    Url: str = ...,
+    As2Config: As2ConnectorConfigTypeDef = ...,  # (1)
+    AccessRole: str = ...,
+    LoggingRole: str = ...,
+) -> UpdateConnectorResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: As2ConnectorConfigTypeDef](./type_defs.md#as2connectorconfigtypedef) 
+2. See [:material-code-braces: UpdateConnectorResponseTypeDef](./type_defs.md#updateconnectorresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectorRequestRequestTypeDef = {  # (1)
+    "ConnectorId": ...,
+}
+
+parent.update_connector(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateConnectorRequestRequestTypeDef](./type_defs.md#updateconnectorrequestrequesttypedef) 
+
+### update\_profile
+
+Updates some of the parameters for an existing profile.
+
+Type annotations and code completion for `#!python boto3.client("transfer").update_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_profile)
+
+```python title="Method definition"
+def update_profile(
+    self,
+    *,
+    ProfileId: str,
+    CertificateIds: Sequence[str] = ...,
+) -> UpdateProfileResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateProfileResponseTypeDef](./type_defs.md#updateprofileresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateProfileRequestRequestTypeDef = {  # (1)
+    "ProfileId": ...,
+}
+
+parent.update_profile(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateProfileRequestRequestTypeDef](./type_defs.md#updateprofilerequestrequesttypedef) 
+
 ### update\_server
 
 Updates the file transfer protocol-enabled server's properties after that server
@@ -1210,7 +1893,11 @@ parent.update_user(**kwargs)
 Type annotations and code completion for `#!python boto3.client("transfer").get_paginator` method with overloads.
 
 - `client.get_paginator("list_accesses")` -> [ListAccessesPaginator](./paginators.md#listaccessespaginator)
+- `client.get_paginator("list_agreements")` -> [ListAgreementsPaginator](./paginators.md#listagreementspaginator)
+- `client.get_paginator("list_certificates")` -> [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+- `client.get_paginator("list_connectors")` -> [ListConnectorsPaginator](./paginators.md#listconnectorspaginator)
 - `client.get_paginator("list_executions")` -> [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- `client.get_paginator("list_profiles")` -> [ListProfilesPaginator](./paginators.md#listprofilespaginator)
 - `client.get_paginator("list_security_policies")` -> [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
 - `client.get_paginator("list_servers")` -> [ListServersPaginator](./paginators.md#listserverspaginator)
 - `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)

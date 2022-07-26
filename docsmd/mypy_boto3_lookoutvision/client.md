@@ -558,7 +558,8 @@ parent.list_models(**kwargs)
 
 ### list\_projects
 
-Lists the Amazon Lookout for Vision projects in your AWS account.
+Lists the Amazon Lookout for Vision projects in your AWS account that are in the
+AWS Region in which you call `ListProjects` .
 
 Type annotations and code completion for `#!python boto3.client("lookoutvision").list_projects` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
@@ -631,6 +632,7 @@ def start_model(
     ModelVersion: str,
     MinInferenceUnits: int,
     ClientToken: str = ...,
+    MaxInferenceUnits: int = ...,
 ) -> StartModelResponseTypeDef:  # (1)
     ...
 ```

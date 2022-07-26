@@ -38,6 +38,21 @@ AllowsUnencryptedObjectUploadsType = Literal[
     "UNKNOWN",
 ]
 ```
+## AvailabilityCodeType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import AvailabilityCodeType
+
+def get_value() -> AvailabilityCodeType:
+    return "AVAILABLE"
+```
+
+```python title="Definition"
+AvailabilityCodeType = Literal[
+    "AVAILABLE",
+    "UNAVAILABLE",
+]
+```
 ## BucketMetadataErrorCodeType
 
 ```python title="Usage Example"
@@ -207,6 +222,20 @@ FindingPublishingFrequencyType = Literal[
     "FIFTEEN_MINUTES",
     "ONE_HOUR",
     "SIX_HOURS",
+]
+```
+## FindingRevealedWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import FindingRevealedWaiterName
+
+def get_value() -> FindingRevealedWaiterName:
+    return "finding_revealed"
+```
+
+```python title="Definition"
+FindingRevealedWaiterName = Literal[
+    "finding_revealed",
 ]
 ```
 ## FindingStatisticsSortAttributeNameType
@@ -611,6 +640,37 @@ RelationshipStatusType = Literal[
     "Resigned",
 ]
 ```
+## RevealRequestStatusType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import RevealRequestStatusType
+
+def get_value() -> RevealRequestStatusType:
+    return "ERROR"
+```
+
+```python title="Definition"
+RevealRequestStatusType = Literal[
+    "ERROR",
+    "PROCESSING",
+    "SUCCESS",
+]
+```
+## RevealStatusType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import RevealStatusType
+
+def get_value() -> RevealStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+RevealStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ScopeFilterKeyType
 
 ```python title="Usage Example"
@@ -821,6 +881,24 @@ TypeType = Literal[
     "AES256",
     "aws:kms",
     "NONE",
+]
+```
+## UnavailabilityReasonCodeType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import UnavailabilityReasonCodeType
+
+def get_value() -> UnavailabilityReasonCodeType:
+    return "INVALID_CLASSIFICATION_RESULT"
+```
+
+```python title="Definition"
+UnavailabilityReasonCodeType = Literal[
+    "INVALID_CLASSIFICATION_RESULT",
+    "OBJECT_EXCEEDS_SIZE_QUOTA",
+    "OBJECT_UNAVAILABLE",
+    "UNSUPPORTED_FINDING_TYPE",
+    "UNSUPPORTED_OBJECT_TYPE",
 ]
 ```
 ## UnitType
@@ -1306,6 +1384,20 @@ PaginatorName = Literal[
     "list_members",
     "list_organization_admin_accounts",
     "search_resources",
+]
+```
+## WaiterName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "finding_revealed"
+```
+
+```python title="Definition"
+WaiterName = Literal[
+    "finding_revealed",
 ]
 ```
 ## RegionName

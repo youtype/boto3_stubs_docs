@@ -7,6 +7,96 @@
     Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
     type annotations stubs module [mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
+## AgreementStatusTypeType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import AgreementStatusTypeType
+
+def get_value() -> AgreementStatusTypeType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+AgreementStatusTypeType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
+## As2TransportType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import As2TransportType
+
+def get_value() -> As2TransportType:
+    return "HTTP"
+```
+
+```python title="Definition"
+As2TransportType = Literal[
+    "HTTP",
+]
+```
+## CertificateStatusTypeType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import CertificateStatusTypeType
+
+def get_value() -> CertificateStatusTypeType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+CertificateStatusTypeType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+    "PENDING_ROTATION",
+]
+```
+## CertificateTypeType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import CertificateTypeType
+
+def get_value() -> CertificateTypeType:
+    return "CERTIFICATE"
+```
+
+```python title="Definition"
+CertificateTypeType = Literal[
+    "CERTIFICATE",
+    "CERTIFICATE_WITH_PRIVATE_KEY",
+]
+```
+## CertificateUsageTypeType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import CertificateUsageTypeType
+
+def get_value() -> CertificateUsageTypeType:
+    return "ENCRYPTION"
+```
+
+```python title="Definition"
+CertificateUsageTypeType = Literal[
+    "ENCRYPTION",
+    "SIGNING",
+]
+```
+## CompressionEnumType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import CompressionEnumType
+
+def get_value() -> CompressionEnumType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+CompressionEnumType = Literal[
+    "DISABLED",
+    "ZLIB",
+]
+```
 ## CustomStepStatusType
 
 ```python title="Usage Example"
@@ -35,6 +125,22 @@ def get_value() -> DomainType:
 DomainType = Literal[
     "EFS",
     "S3",
+]
+```
+## EncryptionAlgType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import EncryptionAlgType
+
+def get_value() -> EncryptionAlgType:
+    return "AES128_CBC"
+```
+
+```python title="Definition"
+EncryptionAlgType = Literal[
+    "AES128_CBC",
+    "AES192_CBC",
+    "AES256_CBC",
 ]
 ```
 ## EndpointTypeType
@@ -137,6 +243,48 @@ ListAccessesPaginatorName = Literal[
     "list_accesses",
 ]
 ```
+## ListAgreementsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import ListAgreementsPaginatorName
+
+def get_value() -> ListAgreementsPaginatorName:
+    return "list_agreements"
+```
+
+```python title="Definition"
+ListAgreementsPaginatorName = Literal[
+    "list_agreements",
+]
+```
+## ListCertificatesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import ListCertificatesPaginatorName
+
+def get_value() -> ListCertificatesPaginatorName:
+    return "list_certificates"
+```
+
+```python title="Definition"
+ListCertificatesPaginatorName = Literal[
+    "list_certificates",
+]
+```
+## ListConnectorsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import ListConnectorsPaginatorName
+
+def get_value() -> ListConnectorsPaginatorName:
+    return "list_connectors"
+```
+
+```python title="Definition"
+ListConnectorsPaginatorName = Literal[
+    "list_connectors",
+]
+```
 ## ListExecutionsPaginatorName
 
 ```python title="Usage Example"
@@ -149,6 +297,20 @@ def get_value() -> ListExecutionsPaginatorName:
 ```python title="Definition"
 ListExecutionsPaginatorName = Literal[
     "list_executions",
+]
+```
+## ListProfilesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import ListProfilesPaginatorName
+
+def get_value() -> ListProfilesPaginatorName:
+    return "list_profiles"
+```
+
+```python title="Definition"
+ListProfilesPaginatorName = Literal[
+    "list_profiles",
 ]
 ```
 ## ListSecurityPoliciesPaginatorName
@@ -221,6 +383,40 @@ ListWorkflowsPaginatorName = Literal[
     "list_workflows",
 ]
 ```
+## MdnResponseType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import MdnResponseType
+
+def get_value() -> MdnResponseType:
+    return "NONE"
+```
+
+```python title="Definition"
+MdnResponseType = Literal[
+    "NONE",
+    "SYNC",
+]
+```
+## MdnSigningAlgType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import MdnSigningAlgType
+
+def get_value() -> MdnSigningAlgType:
+    return "DEFAULT"
+```
+
+```python title="Definition"
+MdnSigningAlgType = Literal[
+    "DEFAULT",
+    "NONE",
+    "SHA1",
+    "SHA256",
+    "SHA384",
+    "SHA512",
+]
+```
 ## OverwriteExistingType
 
 ```python title="Usage Example"
@@ -236,17 +432,33 @@ OverwriteExistingType = Literal[
     "TRUE",
 ]
 ```
+## ProfileTypeType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import ProfileTypeType
+
+def get_value() -> ProfileTypeType:
+    return "LOCAL"
+```
+
+```python title="Definition"
+ProfileTypeType = Literal[
+    "LOCAL",
+    "PARTNER",
+]
+```
 ## ProtocolType
 
 ```python title="Usage Example"
 from mypy_boto3_transfer.literals import ProtocolType
 
 def get_value() -> ProtocolType:
-    return "FTP"
+    return "AS2"
 ```
 
 ```python title="Definition"
 ProtocolType = Literal[
+    "AS2",
     "FTP",
     "FTPS",
     "SFTP",
@@ -293,6 +505,24 @@ def get_value() -> SetStatOptionType:
 SetStatOptionType = Literal[
     "DEFAULT",
     "ENABLE_NO_OP",
+]
+```
+## SigningAlgType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import SigningAlgType
+
+def get_value() -> SigningAlgType:
+    return "NONE"
+```
+
+```python title="Definition"
+SigningAlgType = Literal[
+    "NONE",
+    "SHA1",
+    "SHA256",
+    "SHA384",
+    "SHA512",
 ]
 ```
 ## StateType
@@ -719,7 +949,11 @@ def get_value() -> PaginatorName:
 ```python title="Definition"
 PaginatorName = Literal[
     "list_accesses",
+    "list_agreements",
+    "list_certificates",
+    "list_connectors",
     "list_executions",
+    "list_profiles",
     "list_security_policies",
     "list_servers",
     "list_tags_for_resource",

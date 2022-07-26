@@ -721,6 +721,42 @@ class DeleteThreatIntelSetRequestRequestTypeDef(TypedDict):
     ThreatIntelSetId: str,
 ```
 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## SortCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import SortCriteriaTypeDef
+
+def get_value() -> SortCriteriaTypeDef:
+    return {
+        "AttributeName": ...,
+    }
+```
+
+```python title="Definition"
+class SortCriteriaTypeDef(TypedDict):
+    AttributeName: NotRequired[str],
+    OrderBy: NotRequired[OrderByType],  # (1)
+```
+
+1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## DescribeOrganizationConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -843,6 +879,45 @@ class DisassociateMembersRequestRequestTypeDef(TypedDict):
     AccountIds: Sequence[str],
 ```
 
+## VolumeDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import VolumeDetailTypeDef
+
+def get_value() -> VolumeDetailTypeDef:
+    return {
+        "VolumeArn": ...,
+    }
+```
+
+```python title="Definition"
+class VolumeDetailTypeDef(TypedDict):
+    VolumeArn: NotRequired[str],
+    VolumeType: NotRequired[str],
+    DeviceName: NotRequired[str],
+    VolumeSizeInGB: NotRequired[int],
+    EncryptionType: NotRequired[str],
+    SnapshotArn: NotRequired[str],
+    KmsKeyArn: NotRequired[str],
+```
+
+## EbsVolumesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import EbsVolumesResultTypeDef
+
+def get_value() -> EbsVolumesResultTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class EbsVolumesResultTypeDef(TypedDict):
+    Status: NotRequired[DataSourceStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: DataSourceStatusType](./literals.md#datasourcestatustype) 
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -891,6 +966,24 @@ def get_value() -> ThreatIntelligenceDetailTypeDef:
 class ThreatIntelligenceDetailTypeDef(TypedDict):
     ThreatListName: NotRequired[str],
     ThreatNames: NotRequired[List[str]],
+```
+
+## FilterConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import FilterConditionTypeDef
+
+def get_value() -> FilterConditionTypeDef:
+    return {
+        "EqualsValue": ...,
+    }
+```
+
+```python title="Definition"
+class FilterConditionTypeDef(TypedDict):
+    EqualsValue: NotRequired[str],
+    GreaterThan: NotRequired[int],
+    LessThan: NotRequired[int],
 ```
 
 ## FindingStatisticsTypeDef
@@ -976,24 +1069,6 @@ class GetFilterRequestRequestTypeDef(TypedDict):
     FilterName: str,
 ```
 
-## SortCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import SortCriteriaTypeDef
-
-def get_value() -> SortCriteriaTypeDef:
-    return {
-        "AttributeName": ...,
-    }
-```
-
-```python title="Definition"
-class SortCriteriaTypeDef(TypedDict):
-    AttributeName: NotRequired[str],
-    OrderBy: NotRequired[OrderByType],  # (1)
-```
-
-1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## GetIPSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1010,6 +1085,22 @@ def get_value() -> GetIPSetRequestRequestTypeDef:
 class GetIPSetRequestRequestTypeDef(TypedDict):
     DetectorId: str,
     IpSetId: str,
+```
+
+## GetMalwareScanSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetMalwareScanSettingsRequestRequestTypeDef
+
+def get_value() -> GetMalwareScanSettingsRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class GetMalwareScanSettingsRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
 ```
 
 ## GetMasterAccountRequestRequestTypeDef
@@ -1164,6 +1255,24 @@ class UsageCriteriaTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataSourceType](./literals.md#datasourcetype) 
+## HighestSeverityThreatDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import HighestSeverityThreatDetailsTypeDef
+
+def get_value() -> HighestSeverityThreatDetailsTypeDef:
+    return {
+        "Severity": ...,
+    }
+```
+
+```python title="Definition"
+class HighestSeverityThreatDetailsTypeDef(TypedDict):
+    Severity: NotRequired[str],
+    ThreatName: NotRequired[str],
+    Count: NotRequired[int],
+```
+
 ## HostPathTypeDef
 
 ```python title="Usage Example"
@@ -1302,24 +1411,6 @@ class KubernetesUserDetailsTypeDef(TypedDict):
     Username: NotRequired[str],
     Uid: NotRequired[str],
     Groups: NotRequired[List[str]],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## ListDetectorsRequestRequestTypeDef
@@ -1513,6 +1604,22 @@ class LocalPortDetailsTypeDef(TypedDict):
     PortName: NotRequired[str],
 ```
 
+## ScanEc2InstanceWithFindingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanEc2InstanceWithFindingsTypeDef
+
+def get_value() -> ScanEc2InstanceWithFindingsTypeDef:
+    return {
+        "EbsVolumes": ...,
+    }
+```
+
+```python title="Definition"
+class ScanEc2InstanceWithFindingsTypeDef(TypedDict):
+    EbsVolumes: NotRequired[bool],
+```
+
 ## RemotePortDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1596,6 +1703,38 @@ class OrganizationS3LogsConfigurationTypeDef(TypedDict):
     AutoEnable: bool,
 ```
 
+## OrganizationEbsVolumesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import OrganizationEbsVolumesResultTypeDef
+
+def get_value() -> OrganizationEbsVolumesResultTypeDef:
+    return {
+        "AutoEnable": ...,
+    }
+```
+
+```python title="Definition"
+class OrganizationEbsVolumesResultTypeDef(TypedDict):
+    AutoEnable: NotRequired[bool],
+```
+
+## OrganizationEbsVolumesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import OrganizationEbsVolumesTypeDef
+
+def get_value() -> OrganizationEbsVolumesTypeDef:
+    return {
+        "AutoEnable": ...,
+    }
+```
+
+```python title="Definition"
+class OrganizationEbsVolumesTypeDef(TypedDict):
+    AutoEnable: NotRequired[bool],
+```
+
 ## OrganizationKubernetesAuditLogsConfigurationResultTypeDef
 
 ```python title="Usage Example"
@@ -1661,6 +1800,126 @@ def get_value() -> OwnerTypeDef:
 ```python title="Definition"
 class OwnerTypeDef(TypedDict):
     Id: NotRequired[str],
+```
+
+## ResourceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ResourceDetailsTypeDef
+
+def get_value() -> ResourceDetailsTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceDetailsTypeDef(TypedDict):
+    InstanceArn: NotRequired[str],
+```
+
+## ScanConditionPairTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanConditionPairTypeDef
+
+def get_value() -> ScanConditionPairTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class ScanConditionPairTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
+
+## ScannedItemCountTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScannedItemCountTypeDef
+
+def get_value() -> ScannedItemCountTypeDef:
+    return {
+        "TotalGb": ...,
+    }
+```
+
+```python title="Definition"
+class ScannedItemCountTypeDef(TypedDict):
+    TotalGb: NotRequired[int],
+    Files: NotRequired[int],
+    Volumes: NotRequired[int],
+```
+
+## ThreatsDetectedItemCountTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ThreatsDetectedItemCountTypeDef
+
+def get_value() -> ThreatsDetectedItemCountTypeDef:
+    return {
+        "Files": ...,
+    }
+```
+
+```python title="Definition"
+class ThreatsDetectedItemCountTypeDef(TypedDict):
+    Files: NotRequired[int],
+```
+
+## ScanFilePathTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanFilePathTypeDef
+
+def get_value() -> ScanFilePathTypeDef:
+    return {
+        "FilePath": ...,
+    }
+```
+
+```python title="Definition"
+class ScanFilePathTypeDef(TypedDict):
+    FilePath: NotRequired[str],
+    VolumeArn: NotRequired[str],
+    Hash: NotRequired[str],
+    FileName: NotRequired[str],
+```
+
+## ScanResultDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanResultDetailsTypeDef
+
+def get_value() -> ScanResultDetailsTypeDef:
+    return {
+        "ScanResult": ...,
+    }
+```
+
+```python title="Definition"
+class ScanResultDetailsTypeDef(TypedDict):
+    ScanResult: NotRequired[ScanResultType],  # (1)
+```
+
+1. See [:material-code-brackets: ScanResultType](./literals.md#scanresulttype) 
+## TriggerDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import TriggerDetailsTypeDef
+
+def get_value() -> TriggerDetailsTypeDef:
+    return {
+        "GuardDutyFindingId": ...,
+    }
+```
+
+```python title="Definition"
+class TriggerDetailsTypeDef(TypedDict):
+    GuardDutyFindingId: NotRequired[str],
+    Description: NotRequired[str],
 ```
 
 ## ServiceAdditionalInfoTypeDef
@@ -2576,6 +2835,167 @@ class KubernetesDataSourceFreeTrialTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
+## MalwareProtectionDataSourceFreeTrialTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import MalwareProtectionDataSourceFreeTrialTypeDef
+
+def get_value() -> MalwareProtectionDataSourceFreeTrialTypeDef:
+    return {
+        "ScanEc2InstanceWithFindings": ...,
+    }
+```
+
+```python title="Definition"
+class MalwareProtectionDataSourceFreeTrialTypeDef(TypedDict):
+    ScanEc2InstanceWithFindings: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
+## ListDetectorsRequestListDetectorsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ListDetectorsRequestListDetectorsPaginateTypeDef
+
+def get_value() -> ListDetectorsRequestListDetectorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDetectorsRequestListDetectorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFiltersRequestListFiltersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ListFiltersRequestListFiltersPaginateTypeDef
+
+def get_value() -> ListFiltersRequestListFiltersPaginateTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFiltersRequestListFiltersPaginateTypeDef(TypedDict):
+    DetectorId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListIPSetsRequestListIPSetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ListIPSetsRequestListIPSetsPaginateTypeDef
+
+def get_value() -> ListIPSetsRequestListIPSetsPaginateTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class ListIPSetsRequestListIPSetsPaginateTypeDef(TypedDict):
+    DetectorId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListInvitationsRequestListInvitationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ListInvitationsRequestListInvitationsPaginateTypeDef
+
+def get_value() -> ListInvitationsRequestListInvitationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListInvitationsRequestListInvitationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMembersRequestListMembersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ListMembersRequestListMembersPaginateTypeDef
+
+def get_value() -> ListMembersRequestListMembersPaginateTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class ListMembersRequestListMembersPaginateTypeDef(TypedDict):
+    DetectorId: str,
+    OnlyAssociated: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef
+
+def get_value() -> ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef(TypedDict):
+    DetectorId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetFindingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetFindingsRequestRequestTypeDef
+
+def get_value() -> GetFindingsRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+        "FindingIds": ...,
+    }
+```
+
+```python title="Definition"
+class GetFindingsRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
+    FindingIds: Sequence[str],
+    SortCriteria: NotRequired[SortCriteriaTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
 ## ListPublishingDestinationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2598,6 +3018,42 @@ class ListPublishingDestinationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EbsVolumeDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import EbsVolumeDetailsTypeDef
+
+def get_value() -> EbsVolumeDetailsTypeDef:
+    return {
+        "ScannedVolumeDetails": ...,
+    }
+```
+
+```python title="Definition"
+class EbsVolumeDetailsTypeDef(TypedDict):
+    ScannedVolumeDetails: NotRequired[List[VolumeDetailTypeDef]],  # (1)
+    SkippedVolumeDetails: NotRequired[List[VolumeDetailTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: VolumeDetailTypeDef](./type_defs.md#volumedetailtypedef) 
+2. See [:material-code-braces: VolumeDetailTypeDef](./type_defs.md#volumedetailtypedef) 
+## ScanEc2InstanceWithFindingsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanEc2InstanceWithFindingsResultTypeDef
+
+def get_value() -> ScanEc2InstanceWithFindingsResultTypeDef:
+    return {
+        "EbsVolumes": ...,
+    }
+```
+
+```python title="Definition"
+class ScanEc2InstanceWithFindingsResultTypeDef(TypedDict):
+    EbsVolumes: NotRequired[EbsVolumesResultTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EbsVolumesResultTypeDef](./type_defs.md#ebsvolumesresulttypedef) 
 ## EksClusterDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2637,6 +3093,25 @@ class EvidenceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ThreatIntelligenceDetailTypeDef](./type_defs.md#threatintelligencedetailtypedef) 
+## FilterCriterionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import FilterCriterionTypeDef
+
+def get_value() -> FilterCriterionTypeDef:
+    return {
+        "CriterionKey": ...,
+    }
+```
+
+```python title="Definition"
+class FilterCriterionTypeDef(TypedDict):
+    CriterionKey: NotRequired[CriterionKeyType],  # (1)
+    FilterCondition: NotRequired[FilterConditionTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: CriterionKeyType](./literals.md#criterionkeytype) 
+2. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
 ## GetFindingsStatisticsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2657,26 +3132,6 @@ class GetFindingsStatisticsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FindingStatisticsTypeDef](./type_defs.md#findingstatisticstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetFindingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import GetFindingsRequestRequestTypeDef
-
-def get_value() -> GetFindingsRequestRequestTypeDef:
-    return {
-        "DetectorId": ...,
-        "FindingIds": ...,
-    }
-```
-
-```python title="Definition"
-class GetFindingsRequestRequestTypeDef(TypedDict):
-    DetectorId: str,
-    FindingIds: Sequence[str],
-    SortCriteria: NotRequired[SortCriteriaTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
 ## GetMasterAccountResponseTypeDef
 
 ```python title="Usage Example"
@@ -2841,130 +3296,23 @@ class KubernetesConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: KubernetesAuditLogsConfigurationTypeDef](./type_defs.md#kubernetesauditlogsconfigurationtypedef) 
-## ListDetectorsRequestListDetectorsPaginateTypeDef
+## MalwareProtectionConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import ListDetectorsRequestListDetectorsPaginateTypeDef
+from mypy_boto3_guardduty.type_defs import MalwareProtectionConfigurationTypeDef
 
-def get_value() -> ListDetectorsRequestListDetectorsPaginateTypeDef:
+def get_value() -> MalwareProtectionConfigurationTypeDef:
     return {
-        "PaginationConfig": ...,
+        "ScanEc2InstanceWithFindings": ...,
     }
 ```
 
 ```python title="Definition"
-class ListDetectorsRequestListDetectorsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+class MalwareProtectionConfigurationTypeDef(TypedDict):
+    ScanEc2InstanceWithFindings: NotRequired[ScanEc2InstanceWithFindingsTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListFiltersRequestListFiltersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import ListFiltersRequestListFiltersPaginateTypeDef
-
-def get_value() -> ListFiltersRequestListFiltersPaginateTypeDef:
-    return {
-        "DetectorId": ...,
-    }
-```
-
-```python title="Definition"
-class ListFiltersRequestListFiltersPaginateTypeDef(TypedDict):
-    DetectorId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListIPSetsRequestListIPSetsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import ListIPSetsRequestListIPSetsPaginateTypeDef
-
-def get_value() -> ListIPSetsRequestListIPSetsPaginateTypeDef:
-    return {
-        "DetectorId": ...,
-    }
-```
-
-```python title="Definition"
-class ListIPSetsRequestListIPSetsPaginateTypeDef(TypedDict):
-    DetectorId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListInvitationsRequestListInvitationsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import ListInvitationsRequestListInvitationsPaginateTypeDef
-
-def get_value() -> ListInvitationsRequestListInvitationsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListInvitationsRequestListInvitationsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListMembersRequestListMembersPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import ListMembersRequestListMembersPaginateTypeDef
-
-def get_value() -> ListMembersRequestListMembersPaginateTypeDef:
-    return {
-        "DetectorId": ...,
-    }
-```
-
-```python title="Definition"
-class ListMembersRequestListMembersPaginateTypeDef(TypedDict):
-    DetectorId: str,
-    OnlyAssociated: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
-
-def get_value() -> ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef:
-    return {
-        "PaginationConfig": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef
-
-def get_value() -> ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef:
-    return {
-        "DetectorId": ...,
-    }
-```
-
-```python title="Definition"
-class ListThreatIntelSetsRequestListThreatIntelSetsPaginateTypeDef(TypedDict):
-    DetectorId: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-braces: ScanEc2InstanceWithFindingsTypeDef](./type_defs.md#scanec2instancewithfindingstypedef) 
 ## NetworkInterfaceTypeDef
 
 ```python title="Usage Example"
@@ -2992,6 +3340,40 @@ class NetworkInterfaceTypeDef(TypedDict):
 
 1. See [:material-code-braces: PrivateIpAddressDetailsTypeDef](./type_defs.md#privateipaddressdetailstypedef) 
 2. See [:material-code-braces: SecurityGroupTypeDef](./type_defs.md#securitygrouptypedef) 
+## OrganizationScanEc2InstanceWithFindingsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import OrganizationScanEc2InstanceWithFindingsResultTypeDef
+
+def get_value() -> OrganizationScanEc2InstanceWithFindingsResultTypeDef:
+    return {
+        "EbsVolumes": ...,
+    }
+```
+
+```python title="Definition"
+class OrganizationScanEc2InstanceWithFindingsResultTypeDef(TypedDict):
+    EbsVolumes: NotRequired[OrganizationEbsVolumesResultTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OrganizationEbsVolumesResultTypeDef](./type_defs.md#organizationebsvolumesresulttypedef) 
+## OrganizationScanEc2InstanceWithFindingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import OrganizationScanEc2InstanceWithFindingsTypeDef
+
+def get_value() -> OrganizationScanEc2InstanceWithFindingsTypeDef:
+    return {
+        "EbsVolumes": ...,
+    }
+```
+
+```python title="Definition"
+class OrganizationScanEc2InstanceWithFindingsTypeDef(TypedDict):
+    EbsVolumes: NotRequired[OrganizationEbsVolumesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OrganizationEbsVolumesTypeDef](./type_defs.md#organizationebsvolumestypedef) 
 ## OrganizationKubernetesConfigurationResultTypeDef
 
 ```python title="Usage Example"
@@ -3050,6 +3432,77 @@ class RemoteIpDetailsTypeDef(TypedDict):
 2. See [:material-code-braces: CountryTypeDef](./type_defs.md#countrytypedef) 
 3. See [:material-code-braces: GeoLocationTypeDef](./type_defs.md#geolocationtypedef) 
 4. See [:material-code-braces: OrganizationTypeDef](./type_defs.md#organizationtypedef) 
+## ScanConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanConditionTypeDef
+
+def get_value() -> ScanConditionTypeDef:
+    return {
+        "MapEquals": ...,
+    }
+```
+
+```python title="Definition"
+class ScanConditionTypeDef(TypedDict):
+    MapEquals: List[ScanConditionPairTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ScanConditionPairTypeDef](./type_defs.md#scanconditionpairtypedef) 
+## ScanThreatNameTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanThreatNameTypeDef
+
+def get_value() -> ScanThreatNameTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ScanThreatNameTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Severity: NotRequired[str],
+    ItemCount: NotRequired[int],
+    FilePaths: NotRequired[List[ScanFilePathTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ScanFilePathTypeDef](./type_defs.md#scanfilepathtypedef) 
+## ScanTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanTypeDef
+
+def get_value() -> ScanTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class ScanTypeDef(TypedDict):
+    DetectorId: NotRequired[str],
+    AdminDetectorId: NotRequired[str],
+    ScanId: NotRequired[str],
+    ScanStatus: NotRequired[ScanStatusType],  # (1)
+    FailureReason: NotRequired[str],
+    ScanStartTime: NotRequired[datetime],
+    ScanEndTime: NotRequired[datetime],
+    TriggerDetails: NotRequired[TriggerDetailsTypeDef],  # (2)
+    ResourceDetails: NotRequired[ResourceDetailsTypeDef],  # (3)
+    ScanResultDetails: NotRequired[ScanResultDetailsTypeDef],  # (4)
+    AccountId: NotRequired[str],
+    TotalBytes: NotRequired[int],
+    FileCount: NotRequired[int],
+    AttachedVolumes: NotRequired[List[VolumeDetailTypeDef]],  # (5)
+```
+
+1. See [:material-code-brackets: ScanStatusType](./literals.md#scanstatustype) 
+2. See [:material-code-braces: TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef) 
+3. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+4. See [:material-code-braces: ScanResultDetailsTypeDef](./type_defs.md#scanresultdetailstypedef) 
+5. See [:material-code-braces: VolumeDetailTypeDef](./type_defs.md#volumedetailtypedef) 
 ## UsageAccountResultTypeDef
 
 ```python title="Usage Example"
@@ -3289,6 +3742,7 @@ class DataSourcesFreeTrialTypeDef(TypedDict):
     FlowLogs: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
     S3Logs: NotRequired[DataSourceFreeTrialTypeDef],  # (1)
     Kubernetes: NotRequired[KubernetesDataSourceFreeTrialTypeDef],  # (5)
+    MalwareProtection: NotRequired[MalwareProtectionDataSourceFreeTrialTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
@@ -3296,6 +3750,70 @@ class DataSourcesFreeTrialTypeDef(TypedDict):
 3. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
 4. See [:material-code-braces: DataSourceFreeTrialTypeDef](./type_defs.md#datasourcefreetrialtypedef) 
 5. See [:material-code-braces: KubernetesDataSourceFreeTrialTypeDef](./type_defs.md#kubernetesdatasourcefreetrialtypedef) 
+6. See [:material-code-braces: MalwareProtectionDataSourceFreeTrialTypeDef](./type_defs.md#malwareprotectiondatasourcefreetrialtypedef) 
+## MalwareProtectionConfigurationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import MalwareProtectionConfigurationResultTypeDef
+
+def get_value() -> MalwareProtectionConfigurationResultTypeDef:
+    return {
+        "ScanEc2InstanceWithFindings": ...,
+    }
+```
+
+```python title="Definition"
+class MalwareProtectionConfigurationResultTypeDef(TypedDict):
+    ScanEc2InstanceWithFindings: NotRequired[ScanEc2InstanceWithFindingsResultTypeDef],  # (1)
+    ServiceRole: NotRequired[str],
+```
+
+1. See [:material-code-braces: ScanEc2InstanceWithFindingsResultTypeDef](./type_defs.md#scanec2instancewithfindingsresulttypedef) 
+## FilterCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import FilterCriteriaTypeDef
+
+def get_value() -> FilterCriteriaTypeDef:
+    return {
+        "FilterCriterion": ...,
+    }
+```
+
+```python title="Definition"
+class FilterCriteriaTypeDef(TypedDict):
+    FilterCriterion: NotRequired[Sequence[FilterCriterionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterCriterionTypeDef](./type_defs.md#filtercriteriontypedef) 
+## EcsTaskDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import EcsTaskDetailsTypeDef
+
+def get_value() -> EcsTaskDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class EcsTaskDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    DefinitionArn: NotRequired[str],
+    Version: NotRequired[str],
+    TaskCreatedAt: NotRequired[datetime],
+    StartedAt: NotRequired[datetime],
+    StartedBy: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    Volumes: NotRequired[List[VolumeTypeDef]],  # (2)
+    Containers: NotRequired[List[ContainerTypeDef]],  # (3)
+    Group: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: VolumeTypeDef](./type_defs.md#volumetypedef) 
+3. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
 ## KubernetesWorkloadDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3320,34 +3838,6 @@ class KubernetesWorkloadDetailsTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
 2. See [:material-code-braces: VolumeTypeDef](./type_defs.md#volumetypedef) 
-## DataSourceConfigurationsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import DataSourceConfigurationsResultTypeDef
-
-def get_value() -> DataSourceConfigurationsResultTypeDef:
-    return {
-        "CloudTrail": ...,
-        "DNSLogs": ...,
-        "FlowLogs": ...,
-        "S3Logs": ...,
-    }
-```
-
-```python title="Definition"
-class DataSourceConfigurationsResultTypeDef(TypedDict):
-    CloudTrail: CloudTrailConfigurationResultTypeDef,  # (1)
-    DNSLogs: DNSLogsConfigurationResultTypeDef,  # (2)
-    FlowLogs: FlowLogsConfigurationResultTypeDef,  # (3)
-    S3Logs: S3LogsConfigurationResultTypeDef,  # (4)
-    Kubernetes: NotRequired[KubernetesConfigurationResultTypeDef],  # (5)
-```
-
-1. See [:material-code-braces: CloudTrailConfigurationResultTypeDef](./type_defs.md#cloudtrailconfigurationresulttypedef) 
-2. See [:material-code-braces: DNSLogsConfigurationResultTypeDef](./type_defs.md#dnslogsconfigurationresulttypedef) 
-3. See [:material-code-braces: FlowLogsConfigurationResultTypeDef](./type_defs.md#flowlogsconfigurationresulttypedef) 
-4. See [:material-code-braces: S3LogsConfigurationResultTypeDef](./type_defs.md#s3logsconfigurationresulttypedef) 
-5. See [:material-code-braces: KubernetesConfigurationResultTypeDef](./type_defs.md#kubernetesconfigurationresulttypedef) 
 ## DataSourceConfigurationsTypeDef
 
 ```python title="Usage Example"
@@ -3363,10 +3853,12 @@ def get_value() -> DataSourceConfigurationsTypeDef:
 class DataSourceConfigurationsTypeDef(TypedDict):
     S3Logs: NotRequired[S3LogsConfigurationTypeDef],  # (1)
     Kubernetes: NotRequired[KubernetesConfigurationTypeDef],  # (2)
+    MalwareProtection: NotRequired[MalwareProtectionConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: S3LogsConfigurationTypeDef](./type_defs.md#s3logsconfigurationtypedef) 
 2. See [:material-code-braces: KubernetesConfigurationTypeDef](./type_defs.md#kubernetesconfigurationtypedef) 
+3. See [:material-code-braces: MalwareProtectionConfigurationTypeDef](./type_defs.md#malwareprotectionconfigurationtypedef) 
 ## InstanceDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3399,44 +3891,40 @@ class InstanceDetailsTypeDef(TypedDict):
 2. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
 3. See [:material-code-braces: ProductCodeTypeDef](./type_defs.md#productcodetypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## OrganizationDataSourceConfigurationsResultTypeDef
+## OrganizationMalwareProtectionConfigurationResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import OrganizationDataSourceConfigurationsResultTypeDef
+from mypy_boto3_guardduty.type_defs import OrganizationMalwareProtectionConfigurationResultTypeDef
 
-def get_value() -> OrganizationDataSourceConfigurationsResultTypeDef:
+def get_value() -> OrganizationMalwareProtectionConfigurationResultTypeDef:
     return {
-        "S3Logs": ...,
+        "ScanEc2InstanceWithFindings": ...,
     }
 ```
 
 ```python title="Definition"
-class OrganizationDataSourceConfigurationsResultTypeDef(TypedDict):
-    S3Logs: OrganizationS3LogsConfigurationResultTypeDef,  # (1)
-    Kubernetes: NotRequired[OrganizationKubernetesConfigurationResultTypeDef],  # (2)
+class OrganizationMalwareProtectionConfigurationResultTypeDef(TypedDict):
+    ScanEc2InstanceWithFindings: NotRequired[OrganizationScanEc2InstanceWithFindingsResultTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: OrganizationS3LogsConfigurationResultTypeDef](./type_defs.md#organizations3logsconfigurationresulttypedef) 
-2. See [:material-code-braces: OrganizationKubernetesConfigurationResultTypeDef](./type_defs.md#organizationkubernetesconfigurationresulttypedef) 
-## OrganizationDataSourceConfigurationsTypeDef
+1. See [:material-code-braces: OrganizationScanEc2InstanceWithFindingsResultTypeDef](./type_defs.md#organizationscanec2instancewithfindingsresulttypedef) 
+## OrganizationMalwareProtectionConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import OrganizationDataSourceConfigurationsTypeDef
+from mypy_boto3_guardduty.type_defs import OrganizationMalwareProtectionConfigurationTypeDef
 
-def get_value() -> OrganizationDataSourceConfigurationsTypeDef:
+def get_value() -> OrganizationMalwareProtectionConfigurationTypeDef:
     return {
-        "S3Logs": ...,
+        "ScanEc2InstanceWithFindings": ...,
     }
 ```
 
 ```python title="Definition"
-class OrganizationDataSourceConfigurationsTypeDef(TypedDict):
-    S3Logs: NotRequired[OrganizationS3LogsConfigurationTypeDef],  # (1)
-    Kubernetes: NotRequired[OrganizationKubernetesConfigurationTypeDef],  # (2)
+class OrganizationMalwareProtectionConfigurationTypeDef(TypedDict):
+    ScanEc2InstanceWithFindings: NotRequired[OrganizationScanEc2InstanceWithFindingsTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: OrganizationS3LogsConfigurationTypeDef](./type_defs.md#organizations3logsconfigurationtypedef) 
-2. See [:material-code-braces: OrganizationKubernetesConfigurationTypeDef](./type_defs.md#organizationkubernetesconfigurationtypedef) 
+1. See [:material-code-braces: OrganizationScanEc2InstanceWithFindingsTypeDef](./type_defs.md#organizationscanec2instancewithfindingstypedef) 
 ## AwsApiCallActionTypeDef
 
 ```python title="Usage Example"
@@ -3534,6 +4022,67 @@ class PortProbeDetailTypeDef(TypedDict):
 1. See [:material-code-braces: LocalPortDetailsTypeDef](./type_defs.md#localportdetailstypedef) 
 2. See [:material-code-braces: LocalIpDetailsTypeDef](./type_defs.md#localipdetailstypedef) 
 3. See [:material-code-braces: RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef) 
+## ScanResourceCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanResourceCriteriaTypeDef
+
+def get_value() -> ScanResourceCriteriaTypeDef:
+    return {
+        "Include": ...,
+    }
+```
+
+```python title="Definition"
+class ScanResourceCriteriaTypeDef(TypedDict):
+    Include: NotRequired[Dict[ScanCriterionKeyType, ScanConditionTypeDef]],  # (1)
+    Exclude: NotRequired[Dict[ScanCriterionKeyType, ScanConditionTypeDef]],  # (1)
+```
+
+1. See [:material-code-brackets: ScanCriterionKeyType](./literals.md#scancriterionkeytype) [:material-code-braces: ScanConditionTypeDef](./type_defs.md#scanconditiontypedef) 
+2. See [:material-code-brackets: ScanCriterionKeyType](./literals.md#scancriterionkeytype) [:material-code-braces: ScanConditionTypeDef](./type_defs.md#scanconditiontypedef) 
+## ThreatDetectedByNameTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ThreatDetectedByNameTypeDef
+
+def get_value() -> ThreatDetectedByNameTypeDef:
+    return {
+        "ItemCount": ...,
+    }
+```
+
+```python title="Definition"
+class ThreatDetectedByNameTypeDef(TypedDict):
+    ItemCount: NotRequired[int],
+    UniqueThreatNameCount: NotRequired[int],
+    Shortened: NotRequired[bool],
+    ThreatNames: NotRequired[List[ScanThreatNameTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ScanThreatNameTypeDef](./type_defs.md#scanthreatnametypedef) 
+## DescribeMalwareScansResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DescribeMalwareScansResponseTypeDef
+
+def get_value() -> DescribeMalwareScansResponseTypeDef:
+    return {
+        "Scans": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMalwareScansResponseTypeDef(TypedDict):
+    Scans: List[ScanTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ScanTypeDef](./type_defs.md#scantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UsageStatisticsTypeDef
 
 ```python title="Usage Example"
@@ -3593,6 +4142,105 @@ class AccountFreeTrialInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DataSourcesFreeTrialTypeDef](./type_defs.md#datasourcesfreetrialtypedef) 
+## DataSourceConfigurationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DataSourceConfigurationsResultTypeDef
+
+def get_value() -> DataSourceConfigurationsResultTypeDef:
+    return {
+        "CloudTrail": ...,
+        "DNSLogs": ...,
+        "FlowLogs": ...,
+        "S3Logs": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceConfigurationsResultTypeDef(TypedDict):
+    CloudTrail: CloudTrailConfigurationResultTypeDef,  # (1)
+    DNSLogs: DNSLogsConfigurationResultTypeDef,  # (2)
+    FlowLogs: FlowLogsConfigurationResultTypeDef,  # (3)
+    S3Logs: S3LogsConfigurationResultTypeDef,  # (4)
+    Kubernetes: NotRequired[KubernetesConfigurationResultTypeDef],  # (5)
+    MalwareProtection: NotRequired[MalwareProtectionConfigurationResultTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: CloudTrailConfigurationResultTypeDef](./type_defs.md#cloudtrailconfigurationresulttypedef) 
+2. See [:material-code-braces: DNSLogsConfigurationResultTypeDef](./type_defs.md#dnslogsconfigurationresulttypedef) 
+3. See [:material-code-braces: FlowLogsConfigurationResultTypeDef](./type_defs.md#flowlogsconfigurationresulttypedef) 
+4. See [:material-code-braces: S3LogsConfigurationResultTypeDef](./type_defs.md#s3logsconfigurationresulttypedef) 
+5. See [:material-code-braces: KubernetesConfigurationResultTypeDef](./type_defs.md#kubernetesconfigurationresulttypedef) 
+6. See [:material-code-braces: MalwareProtectionConfigurationResultTypeDef](./type_defs.md#malwareprotectionconfigurationresulttypedef) 
+## DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef
+
+def get_value() -> DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef(TypedDict):
+    DetectorId: str,
+    FilterCriteria: NotRequired[FilterCriteriaTypeDef],  # (1)
+    SortCriteria: NotRequired[SortCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeMalwareScansRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DescribeMalwareScansRequestRequestTypeDef
+
+def get_value() -> DescribeMalwareScansRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMalwareScansRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    FilterCriteria: NotRequired[FilterCriteriaTypeDef],  # (1)
+    SortCriteria: NotRequired[SortCriteriaTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+## EcsClusterDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import EcsClusterDetailsTypeDef
+
+def get_value() -> EcsClusterDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class EcsClusterDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Status: NotRequired[str],
+    ActiveServicesCount: NotRequired[int],
+    RegisteredContainerInstancesCount: NotRequired[int],
+    RunningTasksCount: NotRequired[int],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    TaskDetails: NotRequired[EcsTaskDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: EcsTaskDetailsTypeDef](./type_defs.md#ecstaskdetailstypedef) 
 ## KubernetesDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3612,59 +4260,6 @@ class KubernetesDetailsTypeDef(TypedDict):
 
 1. See [:material-code-braces: KubernetesUserDetailsTypeDef](./type_defs.md#kubernetesuserdetailstypedef) 
 2. See [:material-code-braces: KubernetesWorkloadDetailsTypeDef](./type_defs.md#kubernetesworkloaddetailstypedef) 
-## GetDetectorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import GetDetectorResponseTypeDef
-
-def get_value() -> GetDetectorResponseTypeDef:
-    return {
-        "CreatedAt": ...,
-        "FindingPublishingFrequency": ...,
-        "ServiceRole": ...,
-        "Status": ...,
-        "UpdatedAt": ...,
-        "DataSources": ...,
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDetectorResponseTypeDef(TypedDict):
-    CreatedAt: str,
-    FindingPublishingFrequency: FindingPublishingFrequencyType,  # (1)
-    ServiceRole: str,
-    Status: DetectorStatusType,  # (2)
-    UpdatedAt: str,
-    DataSources: DataSourceConfigurationsResultTypeDef,  # (3)
-    Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
-2. See [:material-code-brackets: DetectorStatusType](./literals.md#detectorstatustype) 
-3. See [:material-code-braces: DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MemberDataSourceConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import MemberDataSourceConfigurationTypeDef
-
-def get_value() -> MemberDataSourceConfigurationTypeDef:
-    return {
-        "AccountId": ...,
-        "DataSources": ...,
-    }
-```
-
-```python title="Definition"
-class MemberDataSourceConfigurationTypeDef(TypedDict):
-    AccountId: str,
-    DataSources: DataSourceConfigurationsResultTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef) 
 ## CreateDetectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3728,50 +4323,48 @@ class UpdateMemberDetectorsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef) 
-## DescribeOrganizationConfigurationResponseTypeDef
+## OrganizationDataSourceConfigurationsResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+from mypy_boto3_guardduty.type_defs import OrganizationDataSourceConfigurationsResultTypeDef
 
-def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
+def get_value() -> OrganizationDataSourceConfigurationsResultTypeDef:
     return {
-        "AutoEnable": ...,
-        "MemberAccountLimitReached": ...,
-        "DataSources": ...,
-        "ResponseMetadata": ...,
+        "S3Logs": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
-    AutoEnable: bool,
-    MemberAccountLimitReached: bool,
-    DataSources: OrganizationDataSourceConfigurationsResultTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class OrganizationDataSourceConfigurationsResultTypeDef(TypedDict):
+    S3Logs: OrganizationS3LogsConfigurationResultTypeDef,  # (1)
+    Kubernetes: NotRequired[OrganizationKubernetesConfigurationResultTypeDef],  # (2)
+    MalwareProtection: NotRequired[OrganizationMalwareProtectionConfigurationResultTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: OrganizationDataSourceConfigurationsResultTypeDef](./type_defs.md#organizationdatasourceconfigurationsresulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateOrganizationConfigurationRequestRequestTypeDef
+1. See [:material-code-braces: OrganizationS3LogsConfigurationResultTypeDef](./type_defs.md#organizations3logsconfigurationresulttypedef) 
+2. See [:material-code-braces: OrganizationKubernetesConfigurationResultTypeDef](./type_defs.md#organizationkubernetesconfigurationresulttypedef) 
+3. See [:material-code-braces: OrganizationMalwareProtectionConfigurationResultTypeDef](./type_defs.md#organizationmalwareprotectionconfigurationresulttypedef) 
+## OrganizationDataSourceConfigurationsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
+from mypy_boto3_guardduty.type_defs import OrganizationDataSourceConfigurationsTypeDef
 
-def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
+def get_value() -> OrganizationDataSourceConfigurationsTypeDef:
     return {
-        "DetectorId": ...,
-        "AutoEnable": ...,
+        "S3Logs": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
-    DetectorId: str,
-    AutoEnable: bool,
-    DataSources: NotRequired[OrganizationDataSourceConfigurationsTypeDef],  # (1)
+class OrganizationDataSourceConfigurationsTypeDef(TypedDict):
+    S3Logs: NotRequired[OrganizationS3LogsConfigurationTypeDef],  # (1)
+    Kubernetes: NotRequired[OrganizationKubernetesConfigurationTypeDef],  # (2)
+    MalwareProtection: NotRequired[OrganizationMalwareProtectionConfigurationTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: OrganizationDataSourceConfigurationsTypeDef](./type_defs.md#organizationdatasourceconfigurationstypedef) 
+1. See [:material-code-braces: OrganizationS3LogsConfigurationTypeDef](./type_defs.md#organizations3logsconfigurationtypedef) 
+2. See [:material-code-braces: OrganizationKubernetesConfigurationTypeDef](./type_defs.md#organizationkubernetesconfigurationtypedef) 
+3. See [:material-code-braces: OrganizationMalwareProtectionConfigurationTypeDef](./type_defs.md#organizationmalwareprotectionconfigurationtypedef) 
 ## PortProbeActionTypeDef
 
 ```python title="Usage Example"
@@ -3790,6 +4383,72 @@ class PortProbeActionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef) 
+## GetMalwareScanSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetMalwareScanSettingsResponseTypeDef
+
+def get_value() -> GetMalwareScanSettingsResponseTypeDef:
+    return {
+        "ScanResourceCriteria": ...,
+        "EbsSnapshotPreservation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMalwareScanSettingsResponseTypeDef(TypedDict):
+    ScanResourceCriteria: ScanResourceCriteriaTypeDef,  # (1)
+    EbsSnapshotPreservation: EbsSnapshotPreservationType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ScanResourceCriteriaTypeDef](./type_defs.md#scanresourcecriteriatypedef) 
+2. See [:material-code-brackets: EbsSnapshotPreservationType](./literals.md#ebssnapshotpreservationtype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateMalwareScanSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import UpdateMalwareScanSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateMalwareScanSettingsRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMalwareScanSettingsRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
+    ScanResourceCriteria: NotRequired[ScanResourceCriteriaTypeDef],  # (1)
+    EbsSnapshotPreservation: NotRequired[EbsSnapshotPreservationType],  # (2)
+```
+
+1. See [:material-code-braces: ScanResourceCriteriaTypeDef](./type_defs.md#scanresourcecriteriatypedef) 
+2. See [:material-code-brackets: EbsSnapshotPreservationType](./literals.md#ebssnapshotpreservationtype) 
+## ScanDetectionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import ScanDetectionsTypeDef
+
+def get_value() -> ScanDetectionsTypeDef:
+    return {
+        "ScannedItemCount": ...,
+    }
+```
+
+```python title="Definition"
+class ScanDetectionsTypeDef(TypedDict):
+    ScannedItemCount: NotRequired[ScannedItemCountTypeDef],  # (1)
+    ThreatsDetectedItemCount: NotRequired[ThreatsDetectedItemCountTypeDef],  # (2)
+    HighestSeverityThreatDetails: NotRequired[HighestSeverityThreatDetailsTypeDef],  # (3)
+    ThreatDetectedByName: NotRequired[ThreatDetectedByNameTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: ScannedItemCountTypeDef](./type_defs.md#scanneditemcounttypedef) 
+2. See [:material-code-braces: ThreatsDetectedItemCountTypeDef](./type_defs.md#threatsdetecteditemcounttypedef) 
+3. See [:material-code-braces: HighestSeverityThreatDetailsTypeDef](./type_defs.md#highestseveritythreatdetailstypedef) 
+4. See [:material-code-braces: ThreatDetectedByNameTypeDef](./type_defs.md#threatdetectedbynametypedef) 
 ## GetUsageStatisticsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3862,29 +4521,103 @@ class GetRemainingFreeTrialDaysResponseTypeDef(TypedDict):
 1. See [:material-code-braces: AccountFreeTrialInfoTypeDef](./type_defs.md#accountfreetrialinfotypedef) 
 2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMemberDetectorsResponseTypeDef
+## GetDetectorResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import GetMemberDetectorsResponseTypeDef
+from mypy_boto3_guardduty.type_defs import GetDetectorResponseTypeDef
 
-def get_value() -> GetMemberDetectorsResponseTypeDef:
+def get_value() -> GetDetectorResponseTypeDef:
     return {
-        "MemberDataSourceConfigurations": ...,
-        "UnprocessedAccounts": ...,
+        "CreatedAt": ...,
+        "FindingPublishingFrequency": ...,
+        "ServiceRole": ...,
+        "Status": ...,
+        "UpdatedAt": ...,
+        "DataSources": ...,
+        "Tags": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetMemberDetectorsResponseTypeDef(TypedDict):
-    MemberDataSourceConfigurations: List[MemberDataSourceConfigurationTypeDef],  # (1)
-    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class GetDetectorResponseTypeDef(TypedDict):
+    CreatedAt: str,
+    FindingPublishingFrequency: FindingPublishingFrequencyType,  # (1)
+    ServiceRole: str,
+    Status: DetectorStatusType,  # (2)
+    UpdatedAt: str,
+    DataSources: DataSourceConfigurationsResultTypeDef,  # (3)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: MemberDataSourceConfigurationTypeDef](./type_defs.md#memberdatasourceconfigurationtypedef) 
-2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-brackets: DetectorStatusType](./literals.md#detectorstatustype) 
+3. See [:material-code-braces: DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MemberDataSourceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import MemberDataSourceConfigurationTypeDef
+
+def get_value() -> MemberDataSourceConfigurationTypeDef:
+    return {
+        "AccountId": ...,
+        "DataSources": ...,
+    }
+```
+
+```python title="Definition"
+class MemberDataSourceConfigurationTypeDef(TypedDict):
+    AccountId: str,
+    DataSources: DataSourceConfigurationsResultTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef) 
+## DescribeOrganizationConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+
+def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
+    return {
+        "AutoEnable": ...,
+        "MemberAccountLimitReached": ...,
+        "DataSources": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
+    AutoEnable: bool,
+    MemberAccountLimitReached: bool,
+    DataSources: OrganizationDataSourceConfigurationsResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrganizationDataSourceConfigurationsResultTypeDef](./type_defs.md#organizationdatasourceconfigurationsresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateOrganizationConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
+    return {
+        "DetectorId": ...,
+        "AutoEnable": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
+    DetectorId: str,
+    AutoEnable: bool,
+    DataSources: NotRequired[OrganizationDataSourceConfigurationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OrganizationDataSourceConfigurationsTypeDef](./type_defs.md#organizationdatasourceconfigurationstypedef) 
 ## ActionTypeDef
 
 ```python title="Usage Example"
@@ -3911,6 +4644,28 @@ class ActionTypeDef(TypedDict):
 3. See [:material-code-braces: NetworkConnectionActionTypeDef](./type_defs.md#networkconnectionactiontypedef) 
 4. See [:material-code-braces: PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef) 
 5. See [:material-code-braces: KubernetesApiCallActionTypeDef](./type_defs.md#kubernetesapicallactiontypedef) 
+## EbsVolumeScanDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import EbsVolumeScanDetailsTypeDef
+
+def get_value() -> EbsVolumeScanDetailsTypeDef:
+    return {
+        "ScanId": ...,
+    }
+```
+
+```python title="Definition"
+class EbsVolumeScanDetailsTypeDef(TypedDict):
+    ScanId: NotRequired[str],
+    ScanStartedAt: NotRequired[datetime],
+    ScanCompletedAt: NotRequired[datetime],
+    TriggerFindingId: NotRequired[str],
+    Sources: NotRequired[List[str]],
+    ScanDetections: NotRequired[ScanDetectionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ScanDetectionsTypeDef](./type_defs.md#scandetectionstypedef) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"
@@ -3930,6 +4685,9 @@ class ResourceTypeDef(TypedDict):
     EksClusterDetails: NotRequired[EksClusterDetailsTypeDef],  # (4)
     KubernetesDetails: NotRequired[KubernetesDetailsTypeDef],  # (5)
     ResourceType: NotRequired[str],
+    EbsVolumeDetails: NotRequired[EbsVolumeDetailsTypeDef],  # (6)
+    EcsClusterDetails: NotRequired[EcsClusterDetailsTypeDef],  # (7)
+    ContainerDetails: NotRequired[ContainerTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: AccessKeyDetailsTypeDef](./type_defs.md#accesskeydetailstypedef) 
@@ -3937,6 +4695,32 @@ class ResourceTypeDef(TypedDict):
 3. See [:material-code-braces: InstanceDetailsTypeDef](./type_defs.md#instancedetailstypedef) 
 4. See [:material-code-braces: EksClusterDetailsTypeDef](./type_defs.md#eksclusterdetailstypedef) 
 5. See [:material-code-braces: KubernetesDetailsTypeDef](./type_defs.md#kubernetesdetailstypedef) 
+6. See [:material-code-braces: EbsVolumeDetailsTypeDef](./type_defs.md#ebsvolumedetailstypedef) 
+7. See [:material-code-braces: EcsClusterDetailsTypeDef](./type_defs.md#ecsclusterdetailstypedef) 
+8. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
+## GetMemberDetectorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import GetMemberDetectorsResponseTypeDef
+
+def get_value() -> GetMemberDetectorsResponseTypeDef:
+    return {
+        "MemberDataSourceConfigurations": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMemberDetectorsResponseTypeDef(TypedDict):
+    MemberDataSourceConfigurations: List[MemberDataSourceConfigurationTypeDef],  # (1)
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: MemberDataSourceConfigurationTypeDef](./type_defs.md#memberdatasourceconfigurationtypedef) 
+2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceTypeDef
 
 ```python title="Usage Example"
@@ -3961,11 +4745,14 @@ class ServiceTypeDef(TypedDict):
     ServiceName: NotRequired[str],
     UserFeedback: NotRequired[str],
     AdditionalInfo: NotRequired[ServiceAdditionalInfoTypeDef],  # (3)
+    FeatureName: NotRequired[str],
+    EbsVolumeScanDetails: NotRequired[EbsVolumeScanDetailsTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 2. See [:material-code-braces: EvidenceTypeDef](./type_defs.md#evidencetypedef) 
 3. See [:material-code-braces: ServiceAdditionalInfoTypeDef](./type_defs.md#serviceadditionalinfotypedef) 
+4. See [:material-code-braces: EbsVolumeScanDetailsTypeDef](./type_defs.md#ebsvolumescandetailstypedef) 
 ## FindingTypeDef
 
 ```python title="Usage Example"
