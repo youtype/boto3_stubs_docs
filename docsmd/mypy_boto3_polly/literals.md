@@ -237,6 +237,7 @@ VoiceIdType = Literal[
     "Joanna",
     "Joey",
     "Justin",
+    "Kajal",
     "Karl",
     "Kendra",
     "Kevin",

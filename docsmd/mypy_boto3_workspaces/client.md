@@ -429,6 +429,41 @@ parent.create_workspace_bundle(**kwargs)
 
 1. See [:material-code-braces: CreateWorkspaceBundleRequestRequestTypeDef](./type_defs.md#createworkspacebundlerequestrequesttypedef) 
 
+### create\_workspace\_image
+
+Creates a new WorkSpace image from an existing WorkSpace.
+
+Type annotations and code completion for `#!python boto3.client("workspaces").create_workspace_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_image)
+
+```python title="Method definition"
+def create_workspace_image(
+    self,
+    *,
+    Name: str,
+    Description: str,
+    WorkspaceId: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateWorkspaceImageResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateWorkspaceImageResultTypeDef](./type_defs.md#createworkspaceimageresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateWorkspaceImageRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Description": ...,
+    "WorkspaceId": ...,
+}
+
+parent.create_workspace_image(**kwargs)
+```
+
+1. See [:material-code-braces: CreateWorkspaceImageRequestRequestTypeDef](./type_defs.md#createworkspaceimagerequestrequesttypedef) 
+
 ### create\_workspaces
 
 Creates one or more WorkSpaces.

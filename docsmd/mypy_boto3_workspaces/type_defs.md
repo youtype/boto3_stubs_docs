@@ -267,6 +267,23 @@ class UserStorageTypeDef(TypedDict):
     Capacity: NotRequired[str],
 ```
 
+## OperatingSystemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import OperatingSystemTypeDef
+
+def get_value() -> OperatingSystemTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class OperatingSystemTypeDef(TypedDict):
+    Type: NotRequired[OperatingSystemTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: OperatingSystemTypeType](./literals.md#operatingsystemtypetype) 
 ## DefaultClientBrandingAttributesTypeDef
 
 ```python title="Usage Example"
@@ -1085,23 +1102,6 @@ class ModifyWorkspaceStateRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TargetWorkspaceStateType](./literals.md#targetworkspacestatetype) 
-## OperatingSystemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces.type_defs import OperatingSystemTypeDef
-
-def get_value() -> OperatingSystemTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class OperatingSystemTypeDef(TypedDict):
-    Type: NotRequired[OperatingSystemTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: OperatingSystemTypeType](./literals.md#operatingsystemtypetype) 
 ## RebootRequestTypeDef
 
 ```python title="Usage Example"
@@ -1794,6 +1794,28 @@ class CreateUpdatedWorkspaceImageRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateWorkspaceImageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import CreateWorkspaceImageRequestRequestTypeDef
+
+def get_value() -> CreateWorkspaceImageRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "WorkspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkspaceImageRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    WorkspaceId: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DescribeTagsResultTypeDef
 
 ```python title="Usage Example"
@@ -1923,6 +1945,42 @@ class WorkspaceBundleTypeDef(TypedDict):
 1. See [:material-code-braces: RootStorageTypeDef](./type_defs.md#rootstoragetypedef) 
 2. See [:material-code-braces: UserStorageTypeDef](./type_defs.md#userstoragetypedef) 
 3. See [:material-code-braces: ComputeTypeTypeDef](./type_defs.md#computetypetypedef) 
+## CreateWorkspaceImageResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import CreateWorkspaceImageResultTypeDef
+
+def get_value() -> CreateWorkspaceImageResultTypeDef:
+    return {
+        "ImageId": ...,
+        "Name": ...,
+        "Description": ...,
+        "OperatingSystem": ...,
+        "State": ...,
+        "RequiredTenancy": ...,
+        "Created": ...,
+        "OwnerAccountId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkspaceImageResultTypeDef(TypedDict):
+    ImageId: str,
+    Name: str,
+    Description: str,
+    OperatingSystem: OperatingSystemTypeDef,  # (1)
+    State: WorkspaceImageStateType,  # (2)
+    RequiredTenancy: WorkspaceImageRequiredTenancyType,  # (3)
+    Created: datetime,
+    OwnerAccountId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: OperatingSystemTypeDef](./type_defs.md#operatingsystemtypedef) 
+2. See [:material-code-brackets: WorkspaceImageStateType](./literals.md#workspaceimagestatetype) 
+3. See [:material-code-brackets: WorkspaceImageRequiredTenancyType](./literals.md#workspaceimagerequiredtenancytype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef
 
 ```python title="Usage Example"

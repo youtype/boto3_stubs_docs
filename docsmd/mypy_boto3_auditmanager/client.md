@@ -36,6 +36,7 @@ except (
     client.ClientError,
     client.InternalServerException,
     client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
     client.ThrottlingException,
     client.ValidationException,
 ) as e:

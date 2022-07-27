@@ -101,8 +101,8 @@ parent.add_custom_routing_endpoints(**kwargs)
 
 ### advertise\_byoip\_cidr
 
-Advertises an IPv4 address range that is provisioned for use with your AWS
-resources through bring your own IP addresses (BYOIP).
+Advertises an IPv4 address range that is provisioned for use with your Amazon
+Web Services resources through bring your own IP addresses (BYOIP).
 
 Type annotations and code completion for `#!python boto3.client("globalaccelerator").advertise_byoip_cidr` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
@@ -635,9 +635,9 @@ parent.deny_custom_routing_traffic(**kwargs)
 
 ### deprovision\_byoip\_cidr
 
-Releases the specified address range that you provisioned to use with your AWS
-resources through bring your own IP addresses (BYOIP) and deletes the
-corresponding address pool.
+Releases the specified address range that you provisioned to use with your
+Amazon Web Services resources through bring your own IP addresses (BYOIP) and
+deletes the corresponding address pool.
 
 Type annotations and code completion for `#!python boto3.client("globalaccelerator").deprovision_byoip_cidr` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
@@ -917,7 +917,7 @@ def generate_presigned_url(
 
 ### list\_accelerators
 
-List the accelerators for an AWS account.
+List the accelerators for an Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_accelerators` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
@@ -980,7 +980,7 @@ parent.list_byoip_cidrs(**kwargs)
 
 ### list\_custom\_routing\_accelerators
 
-List the custom routing accelerators for an AWS account.
+List the custom routing accelerators for an Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_custom_routing_accelerators` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
@@ -1232,8 +1232,9 @@ parent.list_tags_for_resource(**kwargs)
 
 ### provision\_byoip\_cidr
 
-Provisions an IP address range to use with your AWS resources through bring your
-own IP addresses (BYOIP) and creates a corresponding address pool.
+Provisions an IP address range to use with your Amazon Web Services resources
+through bring your own IP addresses (BYOIP) and creates a corresponding address
+pool.
 
 Type annotations and code completion for `#!python boto3.client("globalaccelerator").provision_byoip_cidr` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)

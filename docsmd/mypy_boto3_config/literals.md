@@ -1030,6 +1030,35 @@ SelectResourceConfigPaginatorName = Literal[
     "select_resource_config",
 ]
 ```
+## SortByType
+
+```python title="Usage Example"
+from mypy_boto3_config.literals import SortByType
+
+def get_value() -> SortByType:
+    return "SCORE"
+```
+
+```python title="Definition"
+SortByType = Literal[
+    "SCORE",
+]
+```
+## SortOrderType
+
+```python title="Usage Example"
+from mypy_boto3_config.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
+```
+
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## ConfigServiceServiceName
 
 ```python title="Usage Example"

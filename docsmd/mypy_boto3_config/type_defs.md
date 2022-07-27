@@ -501,6 +501,40 @@ class ConformancePackComplianceFiltersTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
+## ConformancePackComplianceScoreTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ConformancePackComplianceScoreTypeDef
+
+def get_value() -> ConformancePackComplianceScoreTypeDef:
+    return {
+        "Score": ...,
+    }
+```
+
+```python title="Definition"
+class ConformancePackComplianceScoreTypeDef(TypedDict):
+    Score: NotRequired[str],
+    ConformancePackName: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+```
+
+## ConformancePackComplianceScoresFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ConformancePackComplianceScoresFiltersTypeDef
+
+def get_value() -> ConformancePackComplianceScoresFiltersTypeDef:
+    return {
+        "ConformancePackNames": ...,
+    }
+```
+
+```python title="Definition"
+class ConformancePackComplianceScoresFiltersTypeDef(TypedDict):
+    ConformancePackNames: Sequence[str],
+```
+
 ## ConformancePackComplianceSummaryTypeDef
 
 ```python title="Usage Example"
@@ -3015,6 +3049,51 @@ class DescribeConformancePackComplianceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConformancePackComplianceFiltersTypeDef](./type_defs.md#conformancepackcompliancefilterstypedef) 
+## ListConformancePackComplianceScoresResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListConformancePackComplianceScoresResponseTypeDef
+
+def get_value() -> ListConformancePackComplianceScoresResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ConformancePackComplianceScores": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListConformancePackComplianceScoresResponseTypeDef(TypedDict):
+    NextToken: str,
+    ConformancePackComplianceScores: List[ConformancePackComplianceScoreTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConformancePackComplianceScoreTypeDef](./type_defs.md#conformancepackcompliancescoretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListConformancePackComplianceScoresRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListConformancePackComplianceScoresRequestRequestTypeDef
+
+def get_value() -> ListConformancePackComplianceScoresRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListConformancePackComplianceScoresRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[ConformancePackComplianceScoresFiltersTypeDef],  # (1)
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    SortBy: NotRequired[SortByType],  # (3)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ConformancePackComplianceScoresFiltersTypeDef](./type_defs.md#conformancepackcompliancescoresfilterstypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
 ## GetConformancePackComplianceSummaryResponseTypeDef
 
 ```python title="Usage Example"

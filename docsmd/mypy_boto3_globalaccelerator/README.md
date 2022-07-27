@@ -113,6 +113,7 @@ def get_value() -> AcceleratorStatusType:
 - [CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)
 - [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
 - [HealthStateType](./literals.md#healthstatetype)
+- [IpAddressFamilyType](./literals.md#ipaddressfamilytype)
 - [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - [ListAcceleratorsPaginatorName](./literals.md#listacceleratorspaginatorname)
 - [ListByoipCidrsPaginatorName](./literals.md#listbyoipcidrspaginatorname)
@@ -145,6 +146,7 @@ def get_value() -> AcceleratorAttributesTypeDef:
 ```
 
 - [AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef)
+- [AcceleratorEventTypeDef](./type_defs.md#acceleratoreventtypedef)
 - [IpSetTypeDef](./type_defs.md#ipsettypedef)
 - [CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)
 - [CustomRoutingEndpointDescriptionTypeDef](./type_defs.md#customroutingendpointdescriptiontypedef)

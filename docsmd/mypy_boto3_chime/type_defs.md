@@ -40,6 +40,31 @@ class SigninDelegateGroupTypeDef(TypedDict):
     GroupName: NotRequired[str],
 ```
 
+## AddressTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import AddressTypeDef
+
+def get_value() -> AddressTypeDef:
+    return {
+        "streetName": ...,
+    }
+```
+
+```python title="Definition"
+class AddressTypeDef(TypedDict):
+    streetName: NotRequired[str],
+    streetSuffix: NotRequired[str],
+    postDirectional: NotRequired[str],
+    preDirectional: NotRequired[str],
+    streetNumber: NotRequired[str],
+    city: NotRequired[str],
+    state: NotRequired[str],
+    postalCode: NotRequired[str],
+    postalCodePlus4: NotRequired[str],
+    country: NotRequired[str],
+```
+
 ## AlexaForBusinessMetadataTypeDef
 
 ```python title="Usage Example"
@@ -601,6 +626,28 @@ def get_value() -> BusinessCallingSettingsTypeDef:
 ```python title="Definition"
 class BusinessCallingSettingsTypeDef(TypedDict):
     CdrBucket: NotRequired[str],
+```
+
+## CandidateAddressTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import CandidateAddressTypeDef
+
+def get_value() -> CandidateAddressTypeDef:
+    return {
+        "streetInfo": ...,
+    }
+```
+
+```python title="Definition"
+class CandidateAddressTypeDef(TypedDict):
+    streetInfo: NotRequired[str],
+    streetNumber: NotRequired[str],
+    city: NotRequired[str],
+    state: NotRequired[str],
+    postalCode: NotRequired[str],
+    postalCodePlus4: NotRequired[str],
+    country: NotRequired[str],
 ```
 
 ## ChannelSummaryTypeDef
@@ -3904,6 +3951,34 @@ class UpdateVoiceConnectorRequestRequestTypeDef(TypedDict):
     RequireEncryption: bool,
 ```
 
+## ValidateE911AddressRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ValidateE911AddressRequestRequestTypeDef
+
+def get_value() -> ValidateE911AddressRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "StreetNumber": ...,
+        "StreetInfo": ...,
+        "City": ...,
+        "State": ...,
+        "Country": ...,
+        "PostalCode": ...,
+    }
+```
+
+```python title="Definition"
+class ValidateE911AddressRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    StreetNumber: str,
+    StreetInfo: str,
+    City: str,
+    State: str,
+    Country: str,
+    PostalCode: str,
+```
+
 ## UpdateAccountSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5320,6 +5395,33 @@ class UpdateBotResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BotTypeDef](./type_defs.md#bottypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ValidateE911AddressResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime.type_defs import ValidateE911AddressResponseTypeDef
+
+def get_value() -> ValidateE911AddressResponseTypeDef:
+    return {
+        "ValidationResult": ...,
+        "AddressExternalId": ...,
+        "Address": ...,
+        "CandidateAddressList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ValidateE911AddressResponseTypeDef(TypedDict):
+    ValidationResult: int,
+    AddressExternalId: str,
+    Address: AddressTypeDef,  # (1)
+    CandidateAddressList: List[CandidateAddressTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: CandidateAddressTypeDef](./type_defs.md#candidateaddresstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChannelMembershipForAppInstanceUserSummaryTypeDef
 
 ```python title="Usage Example"

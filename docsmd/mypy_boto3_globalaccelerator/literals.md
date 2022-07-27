@@ -138,17 +138,33 @@ HealthStateType = Literal[
     "UNHEALTHY",
 ]
 ```
+## IpAddressFamilyType
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.literals import IpAddressFamilyType
+
+def get_value() -> IpAddressFamilyType:
+    return "IPv4"
+```
+
+```python title="Definition"
+IpAddressFamilyType = Literal[
+    "IPv4",
+    "IPv6",
+]
+```
 ## IpAddressTypeType
 
 ```python title="Usage Example"
 from mypy_boto3_globalaccelerator.literals import IpAddressTypeType
 
 def get_value() -> IpAddressTypeType:
-    return "IPV4"
+    return "DUAL_STACK"
 ```
 
 ```python title="Definition"
 IpAddressTypeType = Literal[
+    "DUAL_STACK",
     "IPV4",
 ]
 ```

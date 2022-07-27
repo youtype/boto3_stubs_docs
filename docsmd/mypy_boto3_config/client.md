@@ -2102,6 +2102,42 @@ parent.list_aggregate_discovered_resources(**kwargs)
 
 1. See [:material-code-braces: ListAggregateDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listaggregatediscoveredresourcesrequestrequesttypedef) 
 
+### list\_conformance\_pack\_compliance\_scores
+
+Returns a list of conformance pack compliance scores.
+
+Type annotations and code completion for `#!python boto3.client("config").list_conformance_pack_compliance_scores` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_conformance_pack_compliance_scores)
+
+```python title="Method definition"
+def list_conformance_pack_compliance_scores(
+    self,
+    *,
+    Filters: ConformancePackComplianceScoresFiltersTypeDef = ...,  # (1)
+    SortOrder: SortOrderType = ...,  # (2)
+    SortBy: SortByType = ...,  # (3)
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListConformancePackComplianceScoresResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: ConformancePackComplianceScoresFiltersTypeDef](./type_defs.md#conformancepackcompliancescoresfilterstypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
+4. See [:material-code-braces: ListConformancePackComplianceScoresResponseTypeDef](./type_defs.md#listconformancepackcompliancescoresresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListConformancePackComplianceScoresRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.list_conformance_pack_compliance_scores(**kwargs)
+```
+
+1. See [:material-code-braces: ListConformancePackComplianceScoresRequestRequestTypeDef](./type_defs.md#listconformancepackcompliancescoresrequestrequesttypedef) 
+
 ### list\_discovered\_resources
 
 Accepts a resource type and returns a list of resource identifiers for the

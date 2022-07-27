@@ -25,6 +25,23 @@ class AcceleratorAttributesTypeDef(TypedDict):
     FlowLogsS3Prefix: NotRequired[str],
 ```
 
+## AcceleratorEventTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import AcceleratorEventTypeDef
+
+def get_value() -> AcceleratorEventTypeDef:
+    return {
+        "Message": ...,
+    }
+```
+
+```python title="Definition"
+class AcceleratorEventTypeDef(TypedDict):
+    Message: NotRequired[str],
+    Timestamp: NotRequired[datetime],
+```
+
 ## IpSetTypeDef
 
 ```python title="Usage Example"
@@ -40,8 +57,10 @@ def get_value() -> IpSetTypeDef:
 class IpSetTypeDef(TypedDict):
     IpFamily: NotRequired[str],
     IpAddresses: NotRequired[List[str]],
+    IpAddressFamily: NotRequired[IpAddressFamilyType],  # (1)
 ```
 
+1. See [:material-code-brackets: IpAddressFamilyType](./literals.md#ipaddressfamilytype) 
 ## CustomRoutingEndpointConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -945,11 +964,14 @@ class AcceleratorTypeDef(TypedDict):
     Status: NotRequired[AcceleratorStatusType],  # (3)
     CreatedTime: NotRequired[datetime],
     LastModifiedTime: NotRequired[datetime],
+    DualStackDnsName: NotRequired[str],
+    Events: NotRequired[List[AcceleratorEventTypeDef]],  # (4)
 ```
 
 1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
 2. See [:material-code-braces: IpSetTypeDef](./type_defs.md#ipsettypedef) 
 3. See [:material-code-brackets: AcceleratorStatusType](./literals.md#acceleratorstatustype) 
+4. See [:material-code-braces: AcceleratorEventTypeDef](./type_defs.md#acceleratoreventtypedef) 
 ## CustomRoutingAcceleratorTypeDef
 
 ```python title="Usage Example"
