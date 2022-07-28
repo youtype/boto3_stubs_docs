@@ -388,6 +388,7 @@ class EBSOptionsTypeDef(TypedDict):
     VolumeType: NotRequired[VolumeTypeType],  # (1)
     VolumeSize: NotRequired[int],
     Iops: NotRequired[int],
+    Throughput: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: VolumeTypeType](./literals.md#volumetypetype) 

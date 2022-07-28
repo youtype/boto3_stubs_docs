@@ -127,14 +127,15 @@ def get_value() -> DatasetStatusType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_lookoutvision.type_defs import DatasetMetadataTypeDef
+from mypy_boto3_lookoutvision.type_defs import PixelAnomalyTypeDef
 
-def get_value() -> DatasetMetadataTypeDef:
+def get_value() -> PixelAnomalyTypeDef:
     return {
-        "DatasetType": ...,
+        "TotalPercentageArea": ...,
     }
 ```
 
+- [PixelAnomalyTypeDef](./type_defs.md#pixelanomalytypedef)
 - [DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
@@ -167,6 +168,7 @@ def get_value() -> DatasetMetadataTypeDef:
 - [StopModelRequestRequestTypeDef](./type_defs.md#stopmodelrequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef)
+- [AnomalyTypeDef](./type_defs.md#anomalytypedef)
 - [ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef)
 - [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef)
 - [DeleteModelResponseTypeDef](./type_defs.md#deletemodelresponsetypedef)
@@ -182,7 +184,6 @@ def get_value() -> DatasetMetadataTypeDef:
 - [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)
 - [DatasetDescriptionTypeDef](./type_defs.md#datasetdescriptiontypedef)
 - [DatasetGroundTruthManifestTypeDef](./type_defs.md#datasetgroundtruthmanifesttypedef)
-- [DetectAnomalyResultTypeDef](./type_defs.md#detectanomalyresulttypedef)
 - [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - [GreengrassConfigurationTypeDef](./type_defs.md#greengrassconfigurationtypedef)
 - [ModelPackagingOutputDetailsTypeDef](./type_defs.md#modelpackagingoutputdetailstypedef)
@@ -192,15 +193,16 @@ def get_value() -> DatasetMetadataTypeDef:
 - [ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef)
 - [ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef)
 - [ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef)
+- [DetectAnomalyResultTypeDef](./type_defs.md#detectanomalyresulttypedef)
 - [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef)
 - [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef)
 - [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
-- [DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef)
 - [CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef)
 - [ModelDescriptionTypeDef](./type_defs.md#modeldescriptiontypedef)
 - [ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef)
 - [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef)
 - [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef)
+- [DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef)
 - [CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef)
 - [DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef)
 - [ModelPackagingDescriptionTypeDef](./type_defs.md#modelpackagingdescriptiontypedef)

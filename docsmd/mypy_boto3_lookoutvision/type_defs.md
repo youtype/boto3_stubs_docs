@@ -7,6 +7,23 @@
     Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
     type annotations stubs module [mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
+## PixelAnomalyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import PixelAnomalyTypeDef
+
+def get_value() -> PixelAnomalyTypeDef:
+    return {
+        "TotalPercentageArea": ...,
+    }
+```
+
+```python title="Definition"
+class PixelAnomalyTypeDef(TypedDict):
+    TotalPercentageArea: NotRequired[float],
+    Color: NotRequired[str],
+```
+
 ## DatasetMetadataTypeDef
 
 ```python title="Usage Example"
@@ -331,7 +348,6 @@ def get_value() -> TargetPlatformTypeDef:
     return {
         "Os": ...,
         "Arch": ...,
-        "Accelerator": ...,
     }
 ```
 
@@ -339,7 +355,7 @@ def get_value() -> TargetPlatformTypeDef:
 class TargetPlatformTypeDef(TypedDict):
     Os: TargetPlatformOsType,  # (1)
     Arch: TargetPlatformArchType,  # (2)
-    Accelerator: TargetPlatformAcceleratorType,  # (3)
+    Accelerator: NotRequired[TargetPlatformAcceleratorType],  # (3)
 ```
 
 1. See [:material-code-brackets: TargetPlatformOsType](./literals.md#targetplatformostype) 
@@ -616,6 +632,24 @@ class UpdateDatasetEntriesRequestRequestTypeDef(TypedDict):
     ClientToken: NotRequired[str],
 ```
 
+## AnomalyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import AnomalyTypeDef
+
+def get_value() -> AnomalyTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AnomalyTypeDef(TypedDict):
+    Name: NotRequired[str],
+    PixelAnomaly: NotRequired[PixelAnomalyTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PixelAnomalyTypeDef](./type_defs.md#pixelanomalytypedef) 
 ## ProjectDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -916,25 +950,6 @@ class DatasetGroundTruthManifestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: InputS3ObjectTypeDef](./type_defs.md#inputs3objecttypedef) 
-## DetectAnomalyResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lookoutvision.type_defs import DetectAnomalyResultTypeDef
-
-def get_value() -> DetectAnomalyResultTypeDef:
-    return {
-        "Source": ...,
-    }
-```
-
-```python title="Definition"
-class DetectAnomalyResultTypeDef(TypedDict):
-    Source: NotRequired[ImageSourceTypeDef],  # (1)
-    IsAnomalous: NotRequired[bool],
-    Confidence: NotRequired[float],
-```
-
-1. See [:material-code-braces: ImageSourceTypeDef](./type_defs.md#imagesourcetypedef) 
 ## OutputConfigTypeDef
 
 ```python title="Usage Example"
@@ -1121,6 +1136,28 @@ class ModelMetadataTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
 2. See [:material-code-braces: ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef) 
+## DetectAnomalyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import DetectAnomalyResultTypeDef
+
+def get_value() -> DetectAnomalyResultTypeDef:
+    return {
+        "Source": ...,
+    }
+```
+
+```python title="Definition"
+class DetectAnomalyResultTypeDef(TypedDict):
+    Source: NotRequired[ImageSourceTypeDef],  # (1)
+    IsAnomalous: NotRequired[bool],
+    Confidence: NotRequired[float],
+    Anomalies: NotRequired[List[AnomalyTypeDef]],  # (2)
+    AnomalyMask: NotRequired[bytes],
+```
+
+1. See [:material-code-braces: ImageSourceTypeDef](./type_defs.md#imagesourcetypedef) 
+2. See [:material-code-braces: AnomalyTypeDef](./type_defs.md#anomalytypedef) 
 ## DescribeProjectResponseTypeDef
 
 ```python title="Usage Example"
@@ -1178,26 +1215,6 @@ class DatasetSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DatasetGroundTruthManifestTypeDef](./type_defs.md#datasetgroundtruthmanifesttypedef) 
-## DetectAnomaliesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesResponseTypeDef
-
-def get_value() -> DetectAnomaliesResponseTypeDef:
-    return {
-        "DetectAnomalyResult": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DetectAnomaliesResponseTypeDef(TypedDict):
-    DetectAnomalyResult: DetectAnomalyResultTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DetectAnomalyResultTypeDef](./type_defs.md#detectanomalyresulttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateModelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1314,6 +1331,26 @@ class ListModelsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetectAnomaliesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesResponseTypeDef
+
+def get_value() -> DetectAnomaliesResponseTypeDef:
+    return {
+        "DetectAnomalyResult": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetectAnomaliesResponseTypeDef(TypedDict):
+    DetectAnomalyResult: DetectAnomalyResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectAnomalyResultTypeDef](./type_defs.md#detectanomalyresulttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetRequestRequestTypeDef
 

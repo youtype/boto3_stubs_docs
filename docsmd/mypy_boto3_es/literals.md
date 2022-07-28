@@ -542,6 +542,7 @@ def get_value() -> VolumeTypeType:
 ```python title="Definition"
 VolumeTypeType = Literal[
     "gp2",
+    "gp3",
     "io1",
     "standard",
 ]
