@@ -532,7 +532,7 @@ def describe_subscription(
 ### disable\_application\_layer\_automatic\_response
 
 Disable the Shield Advanced automatic application layer DDoS mitigation feature
-for the resource.
+for the protected resource.
 
 Type annotations and code completion for `#!python boto3.client("shield").disable_application_layer_automatic_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_application_layer_automatic_response)
@@ -653,7 +653,7 @@ parent.disassociate_health_check(**kwargs)
 ### enable\_application\_layer\_automatic\_response
 
 Enable the Shield Advanced automatic application layer DDoS mitigation for the
-resource.
+protected resource.
 
 Type annotations and code completion for `#!python boto3.client("shield").enable_application_layer_automatic_response` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_application_layer_automatic_response)
@@ -772,7 +772,7 @@ parent.list_attacks(**kwargs)
 
 ### list\_protection\_groups
 
-Retrieves the  ProtectionGroup objects for the account.
+Retrieves  ProtectionGroup objects for the account.
 
 Type annotations and code completion for `#!python boto3.client("shield").list_protection_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protection_groups)
@@ -783,11 +783,13 @@ def list_protection_groups(
     *,
     NextToken: str = ...,
     MaxResults: int = ...,
-) -> ListProtectionGroupsResponseTypeDef:  # (1)
+    InclusionFilters: InclusionProtectionGroupFiltersTypeDef = ...,  # (1)
+) -> ListProtectionGroupsResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ListProtectionGroupsResponseTypeDef](./type_defs.md#listprotectiongroupsresponsetypedef) 
+1. See [:material-code-braces: InclusionProtectionGroupFiltersTypeDef](./type_defs.md#inclusionprotectiongroupfilterstypedef) 
+2. See [:material-code-braces: ListProtectionGroupsResponseTypeDef](./type_defs.md#listprotectiongroupsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -802,7 +804,7 @@ parent.list_protection_groups(**kwargs)
 
 ### list\_protections
 
-Lists all  Protection objects for the account.
+Retrieves  Protection objects for the account.
 
 Type annotations and code completion for `#!python boto3.client("shield").list_protections` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protections)
@@ -813,11 +815,13 @@ def list_protections(
     *,
     NextToken: str = ...,
     MaxResults: int = ...,
-) -> ListProtectionsResponseTypeDef:  # (1)
+    InclusionFilters: InclusionProtectionFiltersTypeDef = ...,  # (1)
+) -> ListProtectionsResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef) 
+1. See [:material-code-braces: InclusionProtectionFiltersTypeDef](./type_defs.md#inclusionprotectionfilterstypedef) 
+2. See [:material-code-braces: ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -352,12 +352,12 @@ def get_queue_attributes(
     self,
     *,
     QueueUrl: str,
-    AttributeNames: Sequence[QueueAttributeNameType] = ...,  # (1)
+    AttributeNames: Sequence[QueueAttributeFilterType] = ...,  # (1)
 ) -> GetQueueAttributesResultTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
+1. See [:material-code-brackets: QueueAttributeFilterType](./literals.md#queueattributefiltertype) 
 2. See [:material-code-braces: GetQueueAttributesResultTypeDef](./type_defs.md#getqueueattributesresulttypedef) 
 
 
@@ -534,7 +534,7 @@ def receive_message(
     self,
     *,
     QueueUrl: str,
-    AttributeNames: Sequence[QueueAttributeNameType] = ...,  # (1)
+    AttributeNames: Sequence[QueueAttributeFilterType] = ...,  # (1)
     MessageAttributeNames: Sequence[str] = ...,
     MaxNumberOfMessages: int = ...,
     VisibilityTimeout: int = ...,
@@ -544,7 +544,7 @@ def receive_message(
     ...
 ```
 
-1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
+1. See [:material-code-brackets: QueueAttributeFilterType](./literals.md#queueattributefiltertype) 
 2. See [:material-code-braces: ReceiveMessageResultTypeDef](./type_defs.md#receivemessageresulttypedef) 
 
 

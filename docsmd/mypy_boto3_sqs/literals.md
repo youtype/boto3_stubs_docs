@@ -70,6 +70,29 @@ MessageSystemAttributeNameType = Literal[
     "SequenceNumber",
 ]
 ```
+## QueueAttributeFilterType
+
+```python title="Usage Example"
+from mypy_boto3_sqs.literals import QueueAttributeFilterType
+
+def get_value() -> QueueAttributeFilterType:
+    return "AWSTraceHeader"
+```
+
+```python title="Definition"
+QueueAttributeFilterType = Literal[
+    "All",
+    "ApproximateFirstReceiveTimestamp",
+    "ApproximateReceiveCount",
+    "AWSTraceHeader",
+    "MessageDeduplicationId",
+    "MessageGroupId",
+    "SenderId",
+    "SentTimestamp",
+    "SequenceNumber",
+    "SqsManagedSseEnabled",
+]
+```
 ## QueueAttributeNameType
 
 ```python title="Usage Example"

@@ -1088,8 +1088,7 @@ def generate_presigned_url(
 
 ### list\_tags\_for\_resource
 
-Lists tags for an Amazon FSx file systems and backups in the case of Amazon FSx
-for Windows File Server.
+Lists tags for Amazon FSx resources.
 
 Type annotations and code completion for `#!python boto3.client("fsx").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)

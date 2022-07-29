@@ -5818,6 +5818,7 @@ def get_value() -> ResourceTypeType:
 ```python title="Definition"
 ResourceTypeType = Literal[
     "capacity-reservation",
+    "capacity-reservation-fleet",
     "carrier-gateway",
     "client-vpn-endpoint",
     "customer-gateway",
@@ -5870,6 +5871,7 @@ ResourceTypeType = Literal[
     "subnet",
     "subnet-cidr-reservation",
     "traffic-mirror-filter",
+    "traffic-mirror-filter-rule",
     "traffic-mirror-session",
     "traffic-mirror-target",
     "transit-gateway",
@@ -5882,6 +5884,7 @@ ResourceTypeType = Literal[
     "volume",
     "vpc",
     "vpc-endpoint",
+    "vpc-endpoint-connection-device-type",
     "vpc-endpoint-service",
     "vpc-flow-log",
     "vpc-peering-connection",

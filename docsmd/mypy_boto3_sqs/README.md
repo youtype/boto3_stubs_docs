@@ -179,6 +179,7 @@ def get_value() -> ListDeadLetterSourceQueuesPaginatorName:
 - [ListQueuesPaginatorName](./literals.md#listqueuespaginatorname)
 - [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)
 - [MessageSystemAttributeNameType](./literals.md#messagesystemattributenametype)
+- [QueueAttributeFilterType](./literals.md#queueattributefiltertype)
 - [QueueAttributeNameType](./literals.md#queueattributenametype)
 - [SQSServiceName](./literals.md#sqsservicename)
 - [ServiceName](./literals.md#servicename)

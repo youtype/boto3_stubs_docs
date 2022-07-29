@@ -110,18 +110,20 @@ Type annotations and code completion for `#!python ListProtectionsPaginator.pagi
 def paginate(
     self,
     *,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[ListProtectionsResponseTypeDef]:  # (2)
+    InclusionFilters: InclusionProtectionFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListProtectionsResponseTypeDef]:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef) 
+1. See [:material-code-braces: InclusionProtectionFiltersTypeDef](./type_defs.md#inclusionprotectionfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: ListProtectionsRequestListProtectionsPaginateTypeDef = {  # (1)
-    "PaginationConfig": ...,
+    "InclusionFilters": ...,
 }
 
 parent.paginate(**kwargs)

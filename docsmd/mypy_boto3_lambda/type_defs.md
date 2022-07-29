@@ -1004,26 +1004,6 @@ class InvocationRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InvocationTypeType](./literals.md#invocationtypetype) 
 2. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
-## InvocationResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lambda.type_defs import InvocationResponseTypeDef
-
-def get_value() -> InvocationResponseTypeDef:
-    return {
-        "StatusCode": ...,
-    }
-```
-
-```python title="Definition"
-class InvocationResponseTypeDef(TypedDict):
-    StatusCode: NotRequired[int],
-    FunctionError: NotRequired[str],
-    LogResult: NotRequired[str],
-    Payload: NotRequired[IO[bytes]],
-    ExecutedVersion: NotRequired[str],
-```
-
 ## InvokeAsyncRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1739,6 +1719,33 @@ class GetProvisionedConcurrencyConfigResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## InvocationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import InvocationResponseTypeDef
+
+def get_value() -> InvocationResponseTypeDef:
+    return {
+        "StatusCode": ...,
+        "FunctionError": ...,
+        "LogResult": ...,
+        "Payload": ...,
+        "ExecutedVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class InvocationResponseTypeDef(TypedDict):
+    StatusCode: int,
+    FunctionError: str,
+    LogResult: str,
+    Payload: StreamingBody,
+    ExecutedVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InvokeAsyncResponseTypeDef
 
 ```python title="Usage Example"

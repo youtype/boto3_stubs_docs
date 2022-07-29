@@ -2373,8 +2373,7 @@ def get_collection() -> InstanceVpcAddressesCollection:
 
 #### Instance.attach\_classic\_link\_vpc method
 
-Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more
-of the VPC's security groups.
+.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").attach_classic_link_vpc` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.attach_classic_link_vpc)
@@ -2596,7 +2595,7 @@ parent.describe_attribute(**kwargs)
 
 #### Instance.detach\_classic\_link\_vpc method
 
-Unlinks (detaches) a linked EC2-Classic instance from a VPC.
+.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").detach_classic_link_vpc` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Instance.detach_classic_link_vpc)
@@ -6599,8 +6598,7 @@ parent.associate_dhcp_options(**kwargs)
 
 #### Vpc.attach\_classic\_link\_instance method
 
-Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more
-of the VPC's security groups.
+.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").attach_classic_link_instance` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.attach_classic_link_instance)
@@ -6881,7 +6879,7 @@ parent.describe_attribute(**kwargs)
 
 #### Vpc.detach\_classic\_link\_instance method
 
-Unlinks (detaches) a linked EC2-Classic instance from a VPC.
+.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").detach_classic_link_instance` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.detach_classic_link_instance)
@@ -6970,7 +6968,7 @@ parent.disable_classic_link(**kwargs)
 
 #### Vpc.enable\_classic\_link method
 
-Enables a VPC for ClassicLink.
+.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").enable_classic_link` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.enable_classic_link)

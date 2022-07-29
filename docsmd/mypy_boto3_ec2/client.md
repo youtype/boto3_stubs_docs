@@ -921,8 +921,7 @@ parent.associate_vpc_cidr_block(**kwargs)
 
 ### attach\_classic\_link\_vpc
 
-Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more
-of the VPC's security groups.
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").attach_classic_link_vpc` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_classic_link_vpc)
@@ -10792,7 +10791,7 @@ parent.describe_vpc_classic_link(**kwargs)
 
 ### describe\_vpc\_classic\_link\_dns\_support
 
-Describes the ClassicLink DNS support status of one or more VPCs.
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").describe_vpc_classic_link_dns_support` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link_dns_support)
@@ -11162,7 +11161,7 @@ parent.describe_vpn_gateways(**kwargs)
 
 ### detach\_classic\_link\_vpc
 
-Unlinks (detaches) a linked EC2-Classic instance from a VPC.
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").detach_classic_link_vpc` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_classic_link_vpc)
@@ -12290,7 +12289,7 @@ parent.enable_volume_io(**kwargs)
 
 ### enable\_vpc\_classic\_link
 
-Enables a VPC for ClassicLink.
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").enable_vpc_classic_link` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link)
@@ -12320,7 +12319,7 @@ parent.enable_vpc_classic_link(**kwargs)
 
 ### enable\_vpc\_classic\_link\_dns\_support
 
-Enables a VPC to support DNS hostname resolution for ClassicLink.
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").enable_vpc_classic_link_dns_support` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link_dns_support)
@@ -15812,8 +15811,7 @@ parent.modify_vpc_endpoint_service_permissions(**kwargs)
 
 ### modify\_vpc\_peering\_connection\_options
 
-Modifies the VPC peering connection options on one side of a VPC peering
-connection.
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").modify_vpc_peering_connection_options` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_peering_connection_options)

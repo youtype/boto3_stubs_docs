@@ -394,6 +394,47 @@ class DisassociateHealthCheckRequestRequestTypeDef(TypedDict):
     HealthCheckArn: str,
 ```
 
+## InclusionProtectionFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_shield.type_defs import InclusionProtectionFiltersTypeDef
+
+def get_value() -> InclusionProtectionFiltersTypeDef:
+    return {
+        "ResourceArns": ...,
+    }
+```
+
+```python title="Definition"
+class InclusionProtectionFiltersTypeDef(TypedDict):
+    ResourceArns: NotRequired[Sequence[str]],
+    ProtectionNames: NotRequired[Sequence[str]],
+    ResourceTypes: NotRequired[Sequence[ProtectedResourceTypeType]],  # (1)
+```
+
+1. See [:material-code-brackets: ProtectedResourceTypeType](./literals.md#protectedresourcetypetype) 
+## InclusionProtectionGroupFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_shield.type_defs import InclusionProtectionGroupFiltersTypeDef
+
+def get_value() -> InclusionProtectionGroupFiltersTypeDef:
+    return {
+        "ProtectionGroupIds": ...,
+    }
+```
+
+```python title="Definition"
+class InclusionProtectionGroupFiltersTypeDef(TypedDict):
+    ProtectionGroupIds: NotRequired[Sequence[str]],
+    Patterns: NotRequired[Sequence[ProtectionGroupPatternType]],  # (1)
+    ResourceTypes: NotRequired[Sequence[ProtectedResourceTypeType]],  # (2)
+    Aggregations: NotRequired[Sequence[ProtectionGroupAggregationType]],  # (3)
+```
+
+1. See [:material-code-brackets: ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype) 
+2. See [:material-code-brackets: ProtectedResourceTypeType](./literals.md#protectedresourcetypetype) 
+3. See [:material-code-brackets: ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype) 
 ## LimitTypeDef
 
 ```python title="Usage Example"
@@ -427,40 +468,6 @@ class PaginatorConfigTypeDef(TypedDict):
     MaxItems: NotRequired[int],
     PageSize: NotRequired[int],
     StartingToken: NotRequired[str],
-```
-
-## ListProtectionGroupsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_shield.type_defs import ListProtectionGroupsRequestRequestTypeDef
-
-def get_value() -> ListProtectionGroupsRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListProtectionGroupsRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
-## ListProtectionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_shield.type_defs import ListProtectionsRequestRequestTypeDef
-
-def get_value() -> ListProtectionsRequestRequestTypeDef:
-    return {
-        "NextToken": ...,
-    }
-```
-
-```python title="Definition"
-class ListProtectionsRequestRequestTypeDef(TypedDict):
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
 ```
 
 ## ListResourcesInProtectionGroupRequestRequestTypeDef
@@ -1000,6 +1007,44 @@ class ListProtectionGroupsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProtectionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_shield.type_defs import ListProtectionsRequestRequestTypeDef
+
+def get_value() -> ListProtectionsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListProtectionsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    InclusionFilters: NotRequired[InclusionProtectionFiltersTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InclusionProtectionFiltersTypeDef](./type_defs.md#inclusionprotectionfilterstypedef) 
+## ListProtectionGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_shield.type_defs import ListProtectionGroupsRequestRequestTypeDef
+
+def get_value() -> ListProtectionGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListProtectionGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    InclusionFilters: NotRequired[InclusionProtectionGroupFiltersTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InclusionProtectionGroupFiltersTypeDef](./type_defs.md#inclusionprotectiongroupfilterstypedef) 
 ## ProtectionLimitsTypeDef
 
 ```python title="Usage Example"
@@ -1046,16 +1091,18 @@ from mypy_boto3_shield.type_defs import ListProtectionsRequestListProtectionsPag
 
 def get_value() -> ListProtectionsRequestListProtectionsPaginateTypeDef:
     return {
-        "PaginationConfig": ...,
+        "InclusionFilters": ...,
     }
 ```
 
 ```python title="Definition"
 class ListProtectionsRequestListProtectionsPaginateTypeDef(TypedDict):
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    InclusionFilters: NotRequired[InclusionProtectionFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-braces: InclusionProtectionFiltersTypeDef](./type_defs.md#inclusionprotectionfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ProtectionGroupPatternTypeLimitsTypeDef
 
 ```python title="Usage Example"

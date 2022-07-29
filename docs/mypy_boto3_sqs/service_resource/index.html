@@ -37435,7 +37435,7 @@ Queue resource.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">def</span> <span class="nf">receive_messages</span><span class="p">(</span>
 <a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="n">AttributeNames</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">QueueAttributeNameType</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="n">AttributeNames</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">QueueAttributeFilterType</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="n">MessageAttributeNames</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>    <span class="n">MaxNumberOfMessages</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>    <span class="n">VisibilityTimeout</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
@@ -37445,7 +37445,7 @@ Queue resource.</p>
 <a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
-<li>See <a href="../literals/#queueattributenametype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> QueueAttributeNameType</a> </li>
+<li>See <a href="../literals/#queueattributefiltertype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> QueueAttributeFilterType</a> </li>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">ReceiveMessageRequestQueueReceiveMessagesTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>    <span class="s2">&quot;AttributeNames&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>

@@ -531,7 +531,7 @@ Type annotations and code completion for `#!python boto3.resource("sqs").receive
 def receive_messages(
     self,
     *,
-    AttributeNames: Sequence[QueueAttributeNameType] = ...,  # (1)
+    AttributeNames: Sequence[QueueAttributeFilterType] = ...,  # (1)
     MessageAttributeNames: Sequence[str] = ...,
     MaxNumberOfMessages: int = ...,
     VisibilityTimeout: int = ...,
@@ -541,7 +541,7 @@ def receive_messages(
     ...
 ```
 
-1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
+1. See [:material-code-brackets: QueueAttributeFilterType](./literals.md#queueattributefiltertype) 
 
 
 ```python title="Usage example with kwargs"

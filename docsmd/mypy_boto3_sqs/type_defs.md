@@ -285,10 +285,10 @@ def get_value() -> GetQueueAttributesRequestRequestTypeDef:
 ```python title="Definition"
 class GetQueueAttributesRequestRequestTypeDef(TypedDict):
     QueueUrl: str,
-    AttributeNames: NotRequired[Sequence[QueueAttributeNameType]],  # (1)
+    AttributeNames: NotRequired[Sequence[QueueAttributeFilterType]],  # (1)
 ```
 
-1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
+1. See [:material-code-brackets: QueueAttributeFilterType](./literals.md#queueattributefiltertype) 
 ## GetQueueUrlRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -478,7 +478,7 @@ def get_value() -> ReceiveMessageRequestQueueReceiveMessagesTypeDef:
 
 ```python title="Definition"
 class ReceiveMessageRequestQueueReceiveMessagesTypeDef(TypedDict):
-    AttributeNames: NotRequired[Sequence[QueueAttributeNameType]],  # (1)
+    AttributeNames: NotRequired[Sequence[QueueAttributeFilterType]],  # (1)
     MessageAttributeNames: NotRequired[Sequence[str]],
     MaxNumberOfMessages: NotRequired[int],
     VisibilityTimeout: NotRequired[int],
@@ -486,7 +486,7 @@ class ReceiveMessageRequestQueueReceiveMessagesTypeDef(TypedDict):
     ReceiveRequestAttemptId: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
+1. See [:material-code-brackets: QueueAttributeFilterType](./literals.md#queueattributefiltertype) 
 ## ReceiveMessageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -501,7 +501,7 @@ def get_value() -> ReceiveMessageRequestRequestTypeDef:
 ```python title="Definition"
 class ReceiveMessageRequestRequestTypeDef(TypedDict):
     QueueUrl: str,
-    AttributeNames: NotRequired[Sequence[QueueAttributeNameType]],  # (1)
+    AttributeNames: NotRequired[Sequence[QueueAttributeFilterType]],  # (1)
     MessageAttributeNames: NotRequired[Sequence[str]],
     MaxNumberOfMessages: NotRequired[int],
     VisibilityTimeout: NotRequired[int],
@@ -509,7 +509,7 @@ class ReceiveMessageRequestRequestTypeDef(TypedDict):
     ReceiveRequestAttemptId: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: QueueAttributeNameType](./literals.md#queueattributenametype) 
+1. See [:material-code-brackets: QueueAttributeFilterType](./literals.md#queueattributefiltertype) 
 ## RemovePermissionRequestQueueRemovePermissionTypeDef
 
 ```python title="Usage Example"
