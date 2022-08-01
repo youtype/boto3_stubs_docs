@@ -984,6 +984,25 @@ class ModifyAccountRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype) 
+## SamlPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import SamlPropertiesTypeDef
+
+def get_value() -> SamlPropertiesTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class SamlPropertiesTypeDef(TypedDict):
+    Status: NotRequired[SamlStatusEnumType],  # (1)
+    UserAccessUrl: NotRequired[str],
+    RelayStateParameterName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SamlStatusEnumType](./literals.md#samlstatusenumtype) 
 ## SelfservicePermissionsTypeDef
 
 ```python title="Usage Example"
@@ -2398,6 +2417,26 @@ class ImportClientBrandingRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: IosImportClientBrandingAttributesTypeDef](./type_defs.md#iosimportclientbrandingattributestypedef) 
 5. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
 6. See [:material-code-braces: DefaultImportClientBrandingAttributesTypeDef](./type_defs.md#defaultimportclientbrandingattributestypedef) 
+## ModifySamlPropertiesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import ModifySamlPropertiesRequestRequestTypeDef
+
+def get_value() -> ModifySamlPropertiesRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifySamlPropertiesRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    SamlProperties: NotRequired[SamlPropertiesTypeDef],  # (1)
+    PropertiesToDelete: NotRequired[Sequence[DeletableSamlPropertyType]],  # (2)
+```
+
+1. See [:material-code-braces: SamlPropertiesTypeDef](./type_defs.md#samlpropertiestypedef) 
+2. See [:material-code-brackets: DeletableSamlPropertyType](./literals.md#deletablesamlpropertytype) 
 ## ModifySelfservicePermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2465,6 +2504,7 @@ class WorkspaceDirectoryTypeDef(TypedDict):
     WorkspaceAccessProperties: NotRequired[WorkspaceAccessPropertiesTypeDef],  # (4)
     Tenancy: NotRequired[TenancyType],  # (5)
     SelfservicePermissions: NotRequired[SelfservicePermissionsTypeDef],  # (6)
+    SamlProperties: NotRequired[SamlPropertiesTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: WorkspaceDirectoryTypeType](./literals.md#workspacedirectorytypetype) 
@@ -2473,6 +2513,7 @@ class WorkspaceDirectoryTypeDef(TypedDict):
 4. See [:material-code-braces: WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef) 
 5. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
 6. See [:material-code-braces: SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef) 
+7. See [:material-code-braces: SamlPropertiesTypeDef](./type_defs.md#samlpropertiestypedef) 
 ## ModifyWorkspaceCreationPropertiesRequestRequestTypeDef
 
 ```python title="Usage Example"

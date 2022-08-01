@@ -1495,6 +1495,40 @@ parent.modify_client_properties(**kwargs)
 
 1. See [:material-code-braces: ModifyClientPropertiesRequestRequestTypeDef](./type_defs.md#modifyclientpropertiesrequestrequesttypedef) 
 
+### modify\_saml\_properties
+
+Modifies multiple properties related to SAML 2.0 authentication, including the
+enablement status, user access URL, and relay state parameter name that are used
+for configuring federation with an SAML 2.0 identity provider.
+
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_saml_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_saml_properties)
+
+```python title="Method definition"
+def modify_saml_properties(
+    self,
+    *,
+    ResourceId: str,
+    SamlProperties: SamlPropertiesTypeDef = ...,  # (1)
+    PropertiesToDelete: Sequence[DeletableSamlPropertyType] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: SamlPropertiesTypeDef](./type_defs.md#samlpropertiestypedef) 
+2. See [:material-code-brackets: DeletableSamlPropertyType](./literals.md#deletablesamlpropertytype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifySamlPropertiesRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
+
+parent.modify_saml_properties(**kwargs)
+```
+
+1. See [:material-code-braces: ModifySamlPropertiesRequestRequestTypeDef](./type_defs.md#modifysamlpropertiesrequestrequesttypedef) 
+
 ### modify\_selfservice\_permissions
 
 Modifies the self-service WorkSpace management capabilities for your users.

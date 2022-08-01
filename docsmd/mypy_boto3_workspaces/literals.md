@@ -173,6 +173,21 @@ DedicatedTenancySupportResultEnumType = Literal[
     "ENABLED",
 ]
 ```
+## DeletableSamlPropertyType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import DeletableSamlPropertyType
+
+def get_value() -> DeletableSamlPropertyType:
+    return "SAML_PROPERTIES_RELAY_STATE_PARAMETER_NAME"
+```
+
+```python title="Definition"
+DeletableSamlPropertyType = Literal[
+    "SAML_PROPERTIES_RELAY_STATE_PARAMETER_NAME",
+    "SAML_PROPERTIES_USER_ACCESS_URL",
+]
+```
 ## DescribeAccountModificationsPaginatorName
 
 ```python title="Usage Example"
@@ -374,6 +389,22 @@ def get_value() -> RunningModeType:
 RunningModeType = Literal[
     "ALWAYS_ON",
     "AUTO_STOP",
+]
+```
+## SamlStatusEnumType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import SamlStatusEnumType
+
+def get_value() -> SamlStatusEnumType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+SamlStatusEnumType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK",
 ]
 ```
 ## TargetWorkspaceStateType
