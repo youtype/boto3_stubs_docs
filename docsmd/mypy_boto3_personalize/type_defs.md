@@ -389,8 +389,10 @@ class DatasetImportJobSummaryTypeDef(TypedDict):
     creationDateTime: NotRequired[datetime],
     lastUpdatedDateTime: NotRequired[datetime],
     failureReason: NotRequired[str],
+    importMode: NotRequired[ImportModeType],  # (1)
 ```
 
+1. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
 ## DatasetSchemaSummaryTypeDef
 
 ```python title="Usage Example"
@@ -2320,10 +2322,12 @@ class CreateDatasetImportJobRequestRequestTypeDef(TypedDict):
     dataSource: DataSourceTypeDef,  # (1)
     roleArn: str,
     tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    importMode: NotRequired[ImportModeType],  # (3)
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
 ## DatasetImportJobTypeDef
 
 ```python title="Usage Example"
@@ -2346,9 +2350,11 @@ class DatasetImportJobTypeDef(TypedDict):
     creationDateTime: NotRequired[datetime],
     lastUpdatedDateTime: NotRequired[datetime],
     failureReason: NotRequired[str],
+    importMode: NotRequired[ImportModeType],  # (2)
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
 ## CreateRecommenderRequestRequestTypeDef
 
 ```python title="Usage Example"

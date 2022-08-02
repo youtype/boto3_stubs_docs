@@ -112,6 +112,7 @@ def get_value() -> DomainType:
 ```
 
 - [DomainType](./literals.md#domaintype)
+- [ImportModeType](./literals.md#importmodetype)
 - [IngestionModeType](./literals.md#ingestionmodetype)
 - [ListBatchInferenceJobsPaginatorName](./literals.md#listbatchinferencejobspaginatorname)
 - [ListBatchSegmentJobsPaginatorName](./literals.md#listbatchsegmentjobspaginatorname)

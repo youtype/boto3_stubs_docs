@@ -22,6 +22,21 @@ DomainType = Literal[
     "VIDEO_ON_DEMAND",
 ]
 ```
+## ImportModeType
+
+```python title="Usage Example"
+from mypy_boto3_personalize.literals import ImportModeType
+
+def get_value() -> ImportModeType:
+    return "FULL"
+```
+
+```python title="Definition"
+ImportModeType = Literal[
+    "FULL",
+    "INCREMENTAL",
+]
+```
 ## IngestionModeType
 
 ```python title="Usage Example"
@@ -479,6 +494,7 @@ ServiceName = Literal[
     "lexv2-models",
     "lexv2-runtime",
     "license-manager",
+    "license-manager-user-subscriptions",
     "lightsail",
     "location",
     "logs",
