@@ -554,6 +554,7 @@ ResourceTypeType = Literal[
     "API_GATEWAY",
     "APPLICATION_LOAD_BALANCER",
     "APPSYNC",
+    "COGNITO_USER_POOL",
 ]
 ```
 ## ResponseContentTypeType

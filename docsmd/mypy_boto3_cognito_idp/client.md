@@ -40,6 +40,7 @@ except (
     client.DuplicateProviderException,
     client.EnableSoftwareTokenMFAException,
     client.ExpiredCodeException,
+    client.ForbiddenException,
     client.GroupExistsException,
     client.InternalErrorException,
     client.InvalidEmailRoleAccessPolicyException,
@@ -996,8 +997,8 @@ parent.admin_user_global_sign_out(**kwargs)
 
 ### associate\_software\_token
 
-Begins setup of time-based one-time password multi-factor authentication (TOTP
-MFA) for a user, with a unique private key that Amazon Cognito generates and
+Begins setup of time-based one-time password (TOTP) multi-factor authentication
+(MFA) for a user, with a unique private key that Amazon Cognito generates and
 returns in the API response.
 
 Type annotations and code completion for `#!python boto3.client("cognito-idp").associate_software_token` method.
