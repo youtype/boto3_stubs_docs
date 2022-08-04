@@ -38,9 +38,11 @@ except (
     client.ForbiddenException,
     client.LimitExceededException,
     client.NotFoundException,
+    client.ResourceNotFoundException,
     client.ServiceFailureException,
     client.ServiceUnavailableException,
     client.ThrottlingException,
+    client.TooManyTagsException,
     client.UnauthorizedException,
     client.UnprocessableEntityException,
 ) as e:
@@ -210,13 +212,15 @@ def create_meeting(
     MeetingFeatures: MeetingFeaturesConfigurationTypeDef = ...,  # (2)
     PrimaryMeetingId: str = ...,
     TenantIds: Sequence[str] = ...,
-) -> CreateMeetingResponseTypeDef:  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateMeetingResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef) 
 2. See [:material-code-braces: MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef) 
-3. See [:material-code-braces: CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -252,14 +256,16 @@ def create_meeting_with_attendees(
     NotificationsConfiguration: NotificationsConfigurationTypeDef = ...,  # (3)
     PrimaryMeetingId: str = ...,
     TenantIds: Sequence[str] = ...,
-) -> CreateMeetingWithAttendeesResponseTypeDef:  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateMeetingWithAttendeesResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
 2. See [:material-code-braces: MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef) 
 3. See [:material-code-braces: NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef) 
-4. See [:material-code-braces: CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -447,6 +453,35 @@ parent.list_attendees(**kwargs)
 
 1. See [:material-code-braces: ListAttendeesRequestRequestTypeDef](./type_defs.md#listattendeesrequestrequesttypedef) 
 
+### list\_tags\_for\_resource
+
+Returns a list of the tags available for the specified resource.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.list_tags_for_resource)
+
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
+
+parent.list_tags_for_resource(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
 ### start\_meeting\_transcription
 
 Starts transcription for the specified `meetingId` .
@@ -507,6 +542,67 @@ parent.stop_meeting_transcription(**kwargs)
 ```
 
 1. See [:material-code-braces: StopMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#stopmeetingtranscriptionrequestrequesttypedef) 
+
+### tag\_resource
+
+The resource that supports tags.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.tag_resource)
+
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
+
+parent.tag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
+
+Removes the specified tags from the specified resources.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.untag_resource)
+
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
+
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
 ### update\_attendee\_capabilities
 

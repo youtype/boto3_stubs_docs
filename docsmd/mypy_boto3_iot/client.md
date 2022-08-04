@@ -1230,7 +1230,7 @@ parent.create_provisioning_claim(**kwargs)
 
 ### create\_provisioning\_template
 
-Creates a fleet provisioning template.
+Creates a provisioning template.
 
 Type annotations and code completion for `#!python boto3.client("iot").create_provisioning_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template)
@@ -1246,13 +1246,15 @@ def create_provisioning_template(
     enabled: bool = ...,
     preProvisioningHook: ProvisioningHookTypeDef = ...,  # (1)
     tags: Sequence[TagTypeDef] = ...,  # (2)
-) -> CreateProvisioningTemplateResponseTypeDef:  # (3)
+    type: TemplateTypeType = ...,  # (3)
+) -> CreateProvisioningTemplateResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef) 
+3. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+4. See [:material-code-braces: CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1269,7 +1271,7 @@ parent.create_provisioning_template(**kwargs)
 
 ### create\_provisioning\_template\_version
 
-Creates a new version of a fleet provisioning template.
+Creates a new version of a provisioning template.
 
 Type annotations and code completion for `#!python boto3.client("iot").create_provisioning_template_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template_version)
@@ -2143,7 +2145,7 @@ parent.delete_policy_version(**kwargs)
 
 ### delete\_provisioning\_template
 
-Deletes a fleet provisioning template.
+Deletes a provisioning template.
 
 Type annotations and code completion for `#!python boto3.client("iot").delete_provisioning_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template)
@@ -2171,7 +2173,7 @@ parent.delete_provisioning_template(**kwargs)
 
 ### delete\_provisioning\_template\_version
 
-Deletes a fleet provisioning template version.
+Deletes a provisioning template version.
 
 Type annotations and code completion for `#!python boto3.client("iot").delete_provisioning_template_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template_version)
@@ -3174,7 +3176,7 @@ parent.describe_mitigation_action(**kwargs)
 
 ### describe\_provisioning\_template
 
-Returns information about a fleet provisioning template.
+Returns information about a provisioning template.
 
 Type annotations and code completion for `#!python boto3.client("iot").describe_provisioning_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template)
@@ -3203,7 +3205,7 @@ parent.describe_provisioning_template(**kwargs)
 
 ### describe\_provisioning\_template\_version
 
-Returns information about a fleet provisioning template version.
+Returns information about a provisioning template version.
 
 Type annotations and code completion for `#!python boto3.client("iot").describe_provisioning_template_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template_version)
@@ -4431,6 +4433,7 @@ def list_ca_certificates(
     pageSize: int = ...,
     marker: str = ...,
     ascendingOrder: bool = ...,
+    templateName: str = ...,
 ) -> ListCACertificatesResponseTypeDef:  # (1)
     ...
 ```
@@ -5193,7 +5196,7 @@ parent.list_principal_things(**kwargs)
 
 ### list\_provisioning\_template\_versions
 
-A list of fleet provisioning template versions.
+A list of provisioning template versions.
 
 Type annotations and code completion for `#!python boto3.client("iot").list_provisioning_template_versions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_template_versions)
@@ -5224,7 +5227,7 @@ parent.list_provisioning_template_versions(**kwargs)
 
 ### list\_provisioning\_templates
 
-Lists the fleet provisioning templates in your Amazon Web Services account.
+Lists the provisioning templates in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("iot").list_provisioning_templates` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_templates)
@@ -7250,7 +7253,7 @@ parent.update_mitigation_action(**kwargs)
 
 ### update\_provisioning\_template
 
-Updates a fleet provisioning template.
+Updates a provisioning template.
 
 Type annotations and code completion for `#!python boto3.client("iot").update_provisioning_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_provisioning_template)

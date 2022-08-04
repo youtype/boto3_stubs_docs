@@ -123,6 +123,24 @@ class NotificationsConfigurationTypeDef(TypedDict):
     SqsQueueArn: NotRequired[str],
 ```
 
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
 ## DeleteAttendeeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -273,6 +291,22 @@ class ListAttendeesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
+
 ## MediaPlacementTypeDef
 
 ```python title="Usage Example"
@@ -310,6 +344,24 @@ def get_value() -> StopMeetingTranscriptionRequestRequestTypeDef:
 ```python title="Definition"
 class StopMeetingTranscriptionRequestRequestTypeDef(TypedDict):
     MeetingId: str,
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
 ```
 
 ## AttendeeTypeDef
@@ -447,6 +499,45 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_meetings.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TranscriptionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -613,10 +704,12 @@ class CreateMeetingRequestRequestTypeDef(TypedDict):
     MeetingFeatures: NotRequired[MeetingFeaturesConfigurationTypeDef],  # (2)
     PrimaryMeetingId: NotRequired[str],
     TenantIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
 ```
 
 1. See [:material-code-braces: NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef) 
 2. See [:material-code-braces: MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateMeetingWithAttendeesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -642,11 +735,13 @@ class CreateMeetingWithAttendeesRequestRequestTypeDef(TypedDict):
     NotificationsConfiguration: NotRequired[NotificationsConfigurationTypeDef],  # (3)
     PrimaryMeetingId: NotRequired[str],
     TenantIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
 ```
 
 1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
 2. See [:material-code-braces: MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef) 
 3. See [:material-code-braces: NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## MeetingTypeDef
 
 ```python title="Usage Example"
@@ -668,6 +763,7 @@ class MeetingTypeDef(TypedDict):
     MeetingFeatures: NotRequired[MeetingFeaturesConfigurationTypeDef],  # (2)
     PrimaryMeetingId: NotRequired[str],
     TenantIds: NotRequired[List[str]],
+    MeetingArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef) 

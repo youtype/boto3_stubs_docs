@@ -1794,6 +1794,21 @@ TargetSelectionType = Literal[
     "SNAPSHOT",
 ]
 ```
+## TemplateTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iot.literals import TemplateTypeType
+
+def get_value() -> TemplateTypeType:
+    return "FLEET_PROVISIONING"
+```
+
+```python title="Definition"
+TemplateTypeType = Literal[
+    "FLEET_PROVISIONING",
+    "JITP",
+]
+```
 ## ThingConnectivityIndexingModeType
 
 ```python title="Usage Example"

@@ -2262,6 +2262,7 @@ def get_value() -> RegistrationConfigTypeDef:
 class RegistrationConfigTypeDef(TypedDict):
     templateBody: NotRequired[str],
     roleArn: NotRequired[str],
+    templateName: NotRequired[str],
 ```
 
 ## DescribeCertificateRequestRequestTypeDef
@@ -3772,6 +3773,7 @@ class ListCACertificatesRequestRequestTypeDef(TypedDict):
     pageSize: NotRequired[int],
     marker: NotRequired[str],
     ascendingOrder: NotRequired[bool],
+    templateName: NotRequired[str],
 ```
 
 ## ListCertificatesByCARequestRequestTypeDef
@@ -4381,8 +4383,10 @@ class ProvisioningTemplateSummaryTypeDef(TypedDict):
     creationDate: NotRequired[datetime],
     lastModifiedDate: NotRequired[datetime],
     enabled: NotRequired[bool],
+    type: NotRequired[TemplateTypeType],  # (1)
 ```
 
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## ListRoleAliasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8647,10 +8651,12 @@ class CreateProvisioningTemplateRequestRequestTypeDef(TypedDict):
     enabled: NotRequired[bool],
     preProvisioningHook: NotRequired[ProvisioningHookTypeDef],  # (1)
     tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    type: NotRequired[TemplateTypeType],  # (3)
 ```
 
 1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## DescribeProvisioningTemplateResponseTypeDef
 
 ```python title="Usage Example"
@@ -8668,6 +8674,7 @@ def get_value() -> DescribeProvisioningTemplateResponseTypeDef:
         "enabled": ...,
         "provisioningRoleArn": ...,
         "preProvisioningHook": ...,
+        "type": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -8684,11 +8691,13 @@ class DescribeProvisioningTemplateResponseTypeDef(TypedDict):
     enabled: bool,
     provisioningRoleArn: str,
     preProvisioningHook: ProvisioningHookTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    type: TemplateTypeType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProvisioningTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9366,6 +9375,7 @@ def get_value() -> ListCACertificatesRequestListCACertificatesPaginateTypeDef:
 ```python title="Definition"
 class ListCACertificatesRequestListCACertificatesPaginateTypeDef(TypedDict):
     ascendingOrder: NotRequired[bool],
+    templateName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 

@@ -672,6 +672,7 @@ def paginate(
     self,
     *,
     ascendingOrder: bool = ...,
+    templateName: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[ListCACertificatesResponseTypeDef]:  # (2)
     ...

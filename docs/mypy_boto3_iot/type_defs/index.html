@@ -47260,6 +47260,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-iot/"
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-247-1" name="__codelineno-247-1" href="#__codelineno-247-1"></a><span class="k">class</span> <span class="nc">RegistrationConfigTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-247-2" name="__codelineno-247-2" href="#__codelineno-247-2"></a>    <span class="n">templateBody</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-247-3" name="__codelineno-247-3" href="#__codelineno-247-3"></a>    <span class="n">roleArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-247-4" name="__codelineno-247-4" href="#__codelineno-247-4"></a>    <span class="n">templateName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="describecertificaterequestrequesttypedef">DescribeCertificateRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-248-1" name="__codelineno-248-1" href="#__codelineno-248-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iot.type_defs</span> <span class="kn">import</span> <span class="n">DescribeCertificateRequestRequestTypeDef</span>
@@ -48376,6 +48377,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-iot/"
 <a id="__codelineno-415-2" name="__codelineno-415-2" href="#__codelineno-415-2"></a>    <span class="n">pageSize</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-415-3" name="__codelineno-415-3" href="#__codelineno-415-3"></a>    <span class="n">marker</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-415-4" name="__codelineno-415-4" href="#__codelineno-415-4"></a>    <span class="n">ascendingOrder</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-415-5" name="__codelineno-415-5" href="#__codelineno-415-5"></a>    <span class="n">templateName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="listcertificatesbycarequestrequesttypedef">ListCertificatesByCARequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-416-1" name="__codelineno-416-1" href="#__codelineno-416-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iot.type_defs</span> <span class="kn">import</span> <span class="n">ListCertificatesByCARequestRequestTypeDef</span>
@@ -48839,7 +48841,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-iot/"
 <a id="__codelineno-479-5" name="__codelineno-479-5" href="#__codelineno-479-5"></a>    <span class="n">creationDate</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">datetime</span><span class="p">],</span>
 <a id="__codelineno-479-6" name="__codelineno-479-6" href="#__codelineno-479-6"></a>    <span class="n">lastModifiedDate</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">datetime</span><span class="p">],</span>
 <a id="__codelineno-479-7" name="__codelineno-479-7" href="#__codelineno-479-7"></a>    <span class="n">enabled</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-479-8" name="__codelineno-479-8" href="#__codelineno-479-8"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TemplateTypeType</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
+<ol>
+<li>See <a href="../literals/#templatetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateTypeType</a> </li>
+</ol>
 <h2 id="listrolealiasesrequestrequesttypedef">ListRoleAliasesRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-480-1" name="__codelineno-480-1" href="#__codelineno-480-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iot.type_defs</span> <span class="kn">import</span> <span class="n">ListRoleAliasesRequestRequestTypeDef</span>
 <a id="__codelineno-480-2" name="__codelineno-480-2" href="#__codelineno-480-2"></a>
@@ -52401,10 +52407,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-iot/"
 <a id="__codelineno-879-6" name="__codelineno-879-6" href="#__codelineno-879-6"></a>    <span class="n">enabled</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 <a id="__codelineno-879-7" name="__codelineno-879-7" href="#__codelineno-879-7"></a>    <span class="n">preProvisioningHook</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ProvisioningHookTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-879-8" name="__codelineno-879-8" href="#__codelineno-879-8"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TagTypeDef</span><span class="p">]],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-879-9" name="__codelineno-879-9" href="#__codelineno-879-9"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TemplateTypeType</span><span class="p">],</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#provisioninghooktypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ProvisioningHookTypeDef</a> </li>
 <li>See <a href="./#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
+<li>See <a href="../literals/#templatetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateTypeType</a> </li>
 </ol>
 <h2 id="describeprovisioningtemplateresponsetypedef">DescribeProvisioningTemplateResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-880-1" name="__codelineno-880-1" href="#__codelineno-880-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_iot.type_defs</span> <span class="kn">import</span> <span class="n">DescribeProvisioningTemplateResponseTypeDef</span>
@@ -52421,8 +52429,9 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-iot/"
 <a id="__codelineno-880-12" name="__codelineno-880-12" href="#__codelineno-880-12"></a>        <span class="s2">&quot;enabled&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-880-13" name="__codelineno-880-13" href="#__codelineno-880-13"></a>        <span class="s2">&quot;provisioningRoleArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-880-14" name="__codelineno-880-14" href="#__codelineno-880-14"></a>        <span class="s2">&quot;preProvisioningHook&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-880-15" name="__codelineno-880-15" href="#__codelineno-880-15"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-880-16" name="__codelineno-880-16" href="#__codelineno-880-16"></a>    <span class="p">}</span>
+<a id="__codelineno-880-15" name="__codelineno-880-15" href="#__codelineno-880-15"></a>        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-880-16" name="__codelineno-880-16" href="#__codelineno-880-16"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-880-17" name="__codelineno-880-17" href="#__codelineno-880-17"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-881-1" name="__codelineno-881-1" href="#__codelineno-881-1"></a><span class="k">class</span> <span class="nc">DescribeProvisioningTemplateResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-881-2" name="__codelineno-881-2" href="#__codelineno-881-2"></a>    <span class="n">templateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -52435,10 +52444,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-iot/"
 <a id="__codelineno-881-9" name="__codelineno-881-9" href="#__codelineno-881-9"></a>    <span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
 <a id="__codelineno-881-10" name="__codelineno-881-10" href="#__codelineno-881-10"></a>    <span class="n">provisioningRoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-881-11" name="__codelineno-881-11" href="#__codelineno-881-11"></a>    <span class="n">preProvisioningHook</span><span class="p">:</span> <span class="n">ProvisioningHookTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-881-12" name="__codelineno-881-12" href="#__codelineno-881-12"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-881-12" name="__codelineno-881-12" href="#__codelineno-881-12"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">TemplateTypeType</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-881-13" name="__codelineno-881-13" href="#__codelineno-881-13"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#provisioninghooktypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ProvisioningHookTypeDef</a> </li>
+<li>See <a href="../literals/#templatetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateTypeType</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="updateprovisioningtemplaterequestrequesttypedef">UpdateProvisioningTemplateRequestRequestTypeDef</h2>
@@ -53027,7 +53038,8 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-iot/"
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-941-1" name="__codelineno-941-1" href="#__codelineno-941-1"></a><span class="k">class</span> <span class="nc">ListCACertificatesRequestListCACertificatesPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-941-2" name="__codelineno-941-2" href="#__codelineno-941-2"></a>    <span class="n">ascendingOrder</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
-<a id="__codelineno-941-3" name="__codelineno-941-3" href="#__codelineno-941-3"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-941-3" name="__codelineno-941-3" href="#__codelineno-941-3"></a>    <span class="n">templateName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-941-4" name="__codelineno-941-4" href="#__codelineno-941-4"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#paginatorconfigtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> PaginatorConfigTypeDef</a> </li>

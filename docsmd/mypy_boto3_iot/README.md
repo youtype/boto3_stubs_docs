@@ -267,6 +267,7 @@ def get_value() -> AbortActionType:
 - [ServiceTypeType](./literals.md#servicetypetype)
 - [StatusType](./literals.md#statustype)
 - [TargetSelectionType](./literals.md#targetselectiontype)
+- [TemplateTypeType](./literals.md#templatetypetype)
 - [ThingConnectivityIndexingModeType](./literals.md#thingconnectivityindexingmodetype)
 - [ThingGroupIndexingModeType](./literals.md#thinggroupindexingmodetype)
 - [ThingIndexingModeType](./literals.md#thingindexingmodetype)
