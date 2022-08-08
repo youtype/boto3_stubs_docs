@@ -121,6 +121,26 @@ ChannelTypeType = Literal[
     "VOICE",
 ]
 ```
+## DayOfWeekType
+
+```python title="Usage Example"
+from mypy_boto3_pinpoint.literals import DayOfWeekType
+
+def get_value() -> DayOfWeekType:
+    return "FRIDAY"
+```
+
+```python title="Definition"
+DayOfWeekType = Literal[
+    "FRIDAY",
+    "MONDAY",
+    "SATURDAY",
+    "SUNDAY",
+    "THURSDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+]
+```
 ## DeliveryStatusType
 
 ```python title="Usage Example"

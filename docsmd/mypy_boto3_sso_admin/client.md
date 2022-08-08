@@ -57,8 +57,7 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### attach\_customer\_managed\_policy\_reference\_to\_permission\_set
 
-Attaches the specified IAM customer managed policy to the specified
-PermissionSet .
+Attaches the specified customer managed policy to the specified  PermissionSet .
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").attach_customer_managed_policy_reference_to_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_customer_managed_policy_reference_to_permission_set)
@@ -91,7 +90,7 @@ parent.attach_customer_managed_policy_reference_to_permission_set(**kwargs)
 
 ### attach\_managed\_policy\_to\_permission\_set
 
-Attaches an Amazon Web Services managed IAM policy ARN to a permission set.
+Attaches an Amazon Web Services managed policy ARN to a permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
@@ -228,7 +227,7 @@ parent.create_instance_access_control_attribute_configuration(**kwargs)
 
 ### create\_permission\_set
 
-Creates a permission set within a specified SSO instance.
+Creates a permission set within a specified Amazon Web Services SSO instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").create_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
@@ -581,8 +580,8 @@ parent.describe_permission_set_provisioning_status(**kwargs)
 
 ### detach\_customer\_managed\_policy\_reference\_from\_permission\_set
 
-Detaches the specified IAM customer managed policy from the specified
-PermissionSet .
+Detaches the specified customer managed policy from the specified  PermissionSet
+.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").detach_customer_managed_policy_reference_from_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_customer_managed_policy_reference_from_permission_set)
@@ -615,8 +614,8 @@ parent.detach_customer_managed_policy_reference_from_permission_set(**kwargs)
 
 ### detach\_managed\_policy\_from\_permission\_set
 
-Detaches the attached Amazon Web Services managed IAM policy ARN from the
-specified permission set.
+Detaches the attached Amazon Web Services managed policy ARN from the specified
+permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
@@ -730,7 +729,7 @@ parent.get_permissions_boundary_for_permission_set(**kwargs)
 ### list\_account\_assignment\_creation\_status
 
 Lists the status of the Amazon Web Services account assignment creation requests
-for a specified SSO instance.
+for a specified Amazon Web Services SSO instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignment_creation_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
@@ -764,7 +763,7 @@ parent.list_account_assignment_creation_status(**kwargs)
 ### list\_account\_assignment\_deletion\_status
 
 Lists the status of the Amazon Web Services account assignment deletion requests
-for a specified SSO instance.
+for a specified Amazon Web Services SSO instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignment_deletion_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
@@ -869,7 +868,7 @@ parent.list_accounts_for_provisioned_permission_set(**kwargs)
 
 ### list\_customer\_managed\_policy\_references\_in\_permission\_set
 
-Lists all IAM customer managed policies attached to a specified  PermissionSet .
+Lists all customer managed policies attached to a specified  PermissionSet .
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_customer_managed_policy_references_in_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_customer_managed_policy_references_in_permission_set)
@@ -902,7 +901,7 @@ parent.list_customer_managed_policy_references_in_permission_set(**kwargs)
 
 ### list\_instances
 
-Lists the SSO instances that the caller has access to.
+Lists the Amazon Web Services SSO instances that the caller has access to.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
@@ -932,7 +931,7 @@ parent.list_instances(**kwargs)
 
 ### list\_managed\_policies\_in\_permission\_set
 
-Lists the Amazon Web Services managed IAM policy that is attached to a specified
+Lists the Amazon Web Services managed policy that is attached to a specified
 permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
@@ -966,8 +965,8 @@ parent.list_managed_policies_in_permission_set(**kwargs)
 
 ### list\_permission\_set\_provisioning\_status
 
-Lists the status of the permission set provisioning requests for a specified SSO
-instance.
+Lists the status of the permission set provisioning requests for a specified
+Amazon Web Services SSO instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_set_provisioning_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
@@ -1000,7 +999,7 @@ parent.list_permission_set_provisioning_status(**kwargs)
 
 ### list\_permission\_sets
 
-Lists the  PermissionSet s in an SSO instance.
+Lists the  PermissionSet s in an Amazon Web Services SSO instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_sets` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
@@ -1135,7 +1134,7 @@ parent.provision_permission_set(**kwargs)
 
 ### put\_inline\_policy\_to\_permission\_set
 
-Attaches an IAM inline policy to a permission set.
+Attaches an inline policy to a permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").put_inline_policy_to_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
@@ -1167,7 +1166,7 @@ parent.put_inline_policy_to_permission_set(**kwargs)
 
 ### put\_permissions\_boundary\_to\_permission\_set
 
-Attaches an Amazon Web Services managed or customer managed IAM policy to the
+Attaches an Amazon Web Services managed or customer managed policy to the
 specified  PermissionSet as a permissions boundary.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").put_permissions_boundary_to_permission_set` method.

@@ -151,7 +151,7 @@ def generate_presigned_url(
 
 ### register\_client
 
-Registers a client with AWS SSO.
+Registers a client with Amazon Web Services SSO.
 
 Type annotations and code completion for `#!python boto3.client("sso-oidc").register_client` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)

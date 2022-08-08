@@ -757,6 +757,24 @@ class ChannelResponseTypeDef(TypedDict):
     Version: NotRequired[int],
 ```
 
+## ClosedDaysRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pinpoint.type_defs import ClosedDaysRuleTypeDef
+
+def get_value() -> ClosedDaysRuleTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ClosedDaysRuleTypeDef(TypedDict):
+    Name: NotRequired[str],
+    StartDateTime: NotRequired[str],
+    EndDateTime: NotRequired[str],
+```
+
 ## WaitTimeTypeDef
 
 ```python title="Usage Example"
@@ -3377,6 +3395,23 @@ class NumberValidateResponseTypeDef(TypedDict):
     ZipCode: NotRequired[str],
 ```
 
+## OpenHoursRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pinpoint.type_defs import OpenHoursRuleTypeDef
+
+def get_value() -> OpenHoursRuleTypeDef:
+    return {
+        "StartTime": ...,
+    }
+```
+
+```python title="Definition"
+class OpenHoursRuleTypeDef(TypedDict):
+    StartTime: NotRequired[str],
+    EndTime: NotRequired[str],
+```
+
 ## WriteEventStreamTypeDef
 
 ```python title="Usage Example"
@@ -3986,6 +4021,31 @@ class ChannelsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ChannelResponseTypeDef](./type_defs.md#channelresponsetypedef) 
+## ClosedDaysTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pinpoint.type_defs import ClosedDaysTypeDef
+
+def get_value() -> ClosedDaysTypeDef:
+    return {
+        "EMAIL": ...,
+    }
+```
+
+```python title="Definition"
+class ClosedDaysTypeDef(TypedDict):
+    EMAIL: NotRequired[Sequence[ClosedDaysRuleTypeDef]],  # (1)
+    SMS: NotRequired[Sequence[ClosedDaysRuleTypeDef]],  # (1)
+    PUSH: NotRequired[Sequence[ClosedDaysRuleTypeDef]],  # (1)
+    VOICE: NotRequired[Sequence[ClosedDaysRuleTypeDef]],  # (1)
+    CUSTOM: NotRequired[Sequence[ClosedDaysRuleTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ClosedDaysRuleTypeDef](./type_defs.md#closeddaysruletypedef) 
+2. See [:material-code-braces: ClosedDaysRuleTypeDef](./type_defs.md#closeddaysruletypedef) 
+3. See [:material-code-braces: ClosedDaysRuleTypeDef](./type_defs.md#closeddaysruletypedef) 
+4. See [:material-code-braces: ClosedDaysRuleTypeDef](./type_defs.md#closeddaysruletypedef) 
+5. See [:material-code-braces: ClosedDaysRuleTypeDef](./type_defs.md#closeddaysruletypedef) 
 ## WaitActivityTypeDef
 
 ```python title="Usage Example"
@@ -6167,6 +6227,31 @@ class PhoneNumberValidateResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: NumberValidateResponseTypeDef](./type_defs.md#numbervalidateresponsetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OpenHoursTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pinpoint.type_defs import OpenHoursTypeDef
+
+def get_value() -> OpenHoursTypeDef:
+    return {
+        "EMAIL": ...,
+    }
+```
+
+```python title="Definition"
+class OpenHoursTypeDef(TypedDict):
+    EMAIL: NotRequired[Mapping[DayOfWeekType, Sequence[OpenHoursRuleTypeDef]]],  # (1)
+    SMS: NotRequired[Mapping[DayOfWeekType, Sequence[OpenHoursRuleTypeDef]]],  # (1)
+    PUSH: NotRequired[Mapping[DayOfWeekType, Sequence[OpenHoursRuleTypeDef]]],  # (1)
+    VOICE: NotRequired[Mapping[DayOfWeekType, Sequence[OpenHoursRuleTypeDef]]],  # (1)
+    CUSTOM: NotRequired[Mapping[DayOfWeekType, Sequence[OpenHoursRuleTypeDef]]],  # (1)
+```
+
+1. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) [:material-code-braces: OpenHoursRuleTypeDef](./type_defs.md#openhoursruletypedef) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) [:material-code-braces: OpenHoursRuleTypeDef](./type_defs.md#openhoursruletypedef) 
+3. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) [:material-code-braces: OpenHoursRuleTypeDef](./type_defs.md#openhoursruletypedef) 
+4. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) [:material-code-braces: OpenHoursRuleTypeDef](./type_defs.md#openhoursruletypedef) 
+5. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) [:material-code-braces: OpenHoursRuleTypeDef](./type_defs.md#openhoursruletypedef) 
 ## PutEventStreamRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8758,6 +8843,9 @@ class JourneyResponseTypeDef(TypedDict):
     WaitForQuietTime: NotRequired[bool],
     RefreshOnSegmentUpdate: NotRequired[bool],
     JourneyChannelSettings: NotRequired[JourneyChannelSettingsTypeDef],  # (7)
+    SendingSchedule: NotRequired[bool],
+    OpenHours: NotRequired[OpenHoursTypeDef],  # (8)
+    ClosedDays: NotRequired[ClosedDaysTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
@@ -8767,6 +8855,8 @@ class JourneyResponseTypeDef(TypedDict):
 5. See [:material-code-braces: StartConditionTypeDef](./type_defs.md#startconditiontypedef) 
 6. See [:material-code-brackets: StateType](./literals.md#statetype) 
 7. See [:material-code-braces: JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef) 
+8. See [:material-code-braces: OpenHoursTypeDef](./type_defs.md#openhourstypedef) 
+9. See [:material-code-braces: ClosedDaysTypeDef](./type_defs.md#closeddaystypedef) 
 ## WriteJourneyRequestTypeDef
 
 ```python title="Usage Example"
@@ -8795,6 +8885,9 @@ class WriteJourneyRequestTypeDef(TypedDict):
     WaitForQuietTime: NotRequired[bool],
     RefreshOnSegmentUpdate: NotRequired[bool],
     JourneyChannelSettings: NotRequired[JourneyChannelSettingsTypeDef],  # (7)
+    SendingSchedule: NotRequired[bool],
+    OpenHours: NotRequired[OpenHoursTypeDef],  # (8)
+    ClosedDays: NotRequired[ClosedDaysTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
@@ -8804,6 +8897,8 @@ class WriteJourneyRequestTypeDef(TypedDict):
 5. See [:material-code-braces: StartConditionTypeDef](./type_defs.md#startconditiontypedef) 
 6. See [:material-code-brackets: StateType](./literals.md#statetype) 
 7. See [:material-code-braces: JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef) 
+8. See [:material-code-braces: OpenHoursTypeDef](./type_defs.md#openhourstypedef) 
+9. See [:material-code-braces: ClosedDaysTypeDef](./type_defs.md#closeddaystypedef) 
 ## GetCampaignVersionsResponseTypeDef
 
 ```python title="Usage Example"

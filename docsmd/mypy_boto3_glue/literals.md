@@ -267,6 +267,7 @@ def get_value() -> CrawlStateType:
 CrawlStateType = Literal[
     "CANCELLED",
     "CANCELLING",
+    "ERROR",
     "FAILED",
     "RUNNING",
     "SUCCEEDED",
@@ -381,6 +382,21 @@ def get_value() -> EnableHybridValuesType:
 EnableHybridValuesType = Literal[
     "FALSE",
     "TRUE",
+]
+```
+## ExecutionClassType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import ExecutionClassType
+
+def get_value() -> ExecutionClassType:
+    return "FLEX"
+```
+
+```python title="Definition"
+ExecutionClassType = Literal[
+    "FLEX",
+    "STANDARD",
 ]
 ```
 ## ExistConditionType
@@ -806,11 +822,12 @@ JobBookmarksEncryptionModeType = Literal[
 from mypy_boto3_glue.literals import JobRunStateType
 
 def get_value() -> JobRunStateType:
-    return "FAILED"
+    return "ERROR"
 ```
 
 ```python title="Definition"
 JobRunStateType = Literal[
+    "ERROR",
     "FAILED",
     "RUNNING",
     "STARTING",
@@ -818,6 +835,7 @@ JobRunStateType = Literal[
     "STOPPING",
     "SUCCEEDED",
     "TIMEOUT",
+    "WAITING",
 ]
 ```
 ## JoinTypeType

@@ -486,7 +486,7 @@ parent.create_folder_membership(**kwargs)
 
 ### create\_group
 
-Creates an Amazon QuickSight group.
+Use the `CreateGroup` operation to create a group in Amazon QuickSight.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").create_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group)
@@ -2329,8 +2329,9 @@ def generate_presigned_url(
 
 ### get\_dashboard\_embed\_url
 
-Generates a temporary session URL and authorization code that you can use to
-embed an Amazon QuickSight read-only dashboard in your website or application.
+Generates a temporary session URL and authorization code(bearer token) that you
+can use to embed an Amazon QuickSight read-only dashboard in your website or
+application.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").get_dashboard_embed_url` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)

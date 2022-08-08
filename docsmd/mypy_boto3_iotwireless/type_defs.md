@@ -399,6 +399,8 @@ def get_value() -> LoRaWANServiceProfileTypeDef:
 ```python title="Definition"
 class LoRaWANServiceProfileTypeDef(TypedDict):
     AddGwMetadata: NotRequired[bool],
+    DrMin: NotRequired[int],
+    DrMax: NotRequired[int],
 ```
 
 ## LoRaWANGatewayTypeDef
@@ -1979,6 +1981,7 @@ def get_value() -> SidewalkSendDataToDeviceTypeDef:
 class SidewalkSendDataToDeviceTypeDef(TypedDict):
     Seq: NotRequired[int],
     MessageType: NotRequired[MessageTypeType],  # (1)
+    AckModeRetryDurationSecs: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
@@ -3233,6 +3236,25 @@ class DeviceRegistrationStateEventConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-braces: SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef) 
 2. See [:material-code-brackets: EventNotificationTopicStatusType](./literals.md#eventnotificationtopicstatustype) 
+## MessageDeliveryStatusEventConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import MessageDeliveryStatusEventConfigurationTypeDef
+
+def get_value() -> MessageDeliveryStatusEventConfigurationTypeDef:
+    return {
+        "Sidewalk": ...,
+    }
+```
+
+```python title="Definition"
+class MessageDeliveryStatusEventConfigurationTypeDef(TypedDict):
+    Sidewalk: NotRequired[SidewalkEventNotificationConfigurationsTypeDef],  # (1)
+    WirelessDeviceIdEventTopic: NotRequired[EventNotificationTopicStatusType],  # (2)
+```
+
+1. See [:material-code-braces: SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef) 
+2. See [:material-code-brackets: EventNotificationTopicStatusType](./literals.md#eventnotificationtopicstatustype) 
 ## ProximityEventConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3265,6 +3287,23 @@ def get_value() -> DeviceRegistrationStateResourceTypeEventConfigurationTypeDef:
 
 ```python title="Definition"
 class DeviceRegistrationStateResourceTypeEventConfigurationTypeDef(TypedDict):
+    Sidewalk: NotRequired[SidewalkResourceTypeEventConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SidewalkResourceTypeEventConfigurationTypeDef](./type_defs.md#sidewalkresourcetypeeventconfigurationtypedef) 
+## MessageDeliveryStatusResourceTypeEventConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import MessageDeliveryStatusResourceTypeEventConfigurationTypeDef
+
+def get_value() -> MessageDeliveryStatusResourceTypeEventConfigurationTypeDef:
+    return {
+        "Sidewalk": ...,
+    }
+```
+
+```python title="Definition"
+class MessageDeliveryStatusResourceTypeEventConfigurationTypeDef(TypedDict):
     Sidewalk: NotRequired[SidewalkResourceTypeEventConfigurationTypeDef],  # (1)
 ```
 
@@ -4042,12 +4081,14 @@ class EventNotificationItemConfigurationsTypeDef(TypedDict):
     Proximity: NotRequired[ProximityEventConfigurationTypeDef],  # (2)
     Join: NotRequired[JoinEventConfigurationTypeDef],  # (3)
     ConnectionStatus: NotRequired[ConnectionStatusEventConfigurationTypeDef],  # (4)
+    MessageDeliveryStatus: NotRequired[MessageDeliveryStatusEventConfigurationTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef) 
 2. See [:material-code-braces: ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef) 
 3. See [:material-code-braces: JoinEventConfigurationTypeDef](./type_defs.md#joineventconfigurationtypedef) 
 4. See [:material-code-braces: ConnectionStatusEventConfigurationTypeDef](./type_defs.md#connectionstatuseventconfigurationtypedef) 
+5. See [:material-code-braces: MessageDeliveryStatusEventConfigurationTypeDef](./type_defs.md#messagedeliverystatuseventconfigurationtypedef) 
 ## GetResourceEventConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -4059,6 +4100,7 @@ def get_value() -> GetResourceEventConfigurationResponseTypeDef:
         "Proximity": ...,
         "Join": ...,
         "ConnectionStatus": ...,
+        "MessageDeliveryStatus": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4069,14 +4111,16 @@ class GetResourceEventConfigurationResponseTypeDef(TypedDict):
     Proximity: ProximityEventConfigurationTypeDef,  # (2)
     Join: JoinEventConfigurationTypeDef,  # (3)
     ConnectionStatus: ConnectionStatusEventConfigurationTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    MessageDeliveryStatus: MessageDeliveryStatusEventConfigurationTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-braces: DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef) 
 2. See [:material-code-braces: ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef) 
 3. See [:material-code-braces: JoinEventConfigurationTypeDef](./type_defs.md#joineventconfigurationtypedef) 
 4. See [:material-code-braces: ConnectionStatusEventConfigurationTypeDef](./type_defs.md#connectionstatuseventconfigurationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-braces: MessageDeliveryStatusEventConfigurationTypeDef](./type_defs.md#messagedeliverystatuseventconfigurationtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResourceEventConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4098,6 +4142,7 @@ class UpdateResourceEventConfigurationRequestRequestTypeDef(TypedDict):
     Proximity: NotRequired[ProximityEventConfigurationTypeDef],  # (4)
     Join: NotRequired[JoinEventConfigurationTypeDef],  # (5)
     ConnectionStatus: NotRequired[ConnectionStatusEventConfigurationTypeDef],  # (6)
+    MessageDeliveryStatus: NotRequired[MessageDeliveryStatusEventConfigurationTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: IdentifierTypeType](./literals.md#identifiertypetype) 
@@ -4106,6 +4151,7 @@ class UpdateResourceEventConfigurationRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef) 
 5. See [:material-code-braces: JoinEventConfigurationTypeDef](./type_defs.md#joineventconfigurationtypedef) 
 6. See [:material-code-braces: ConnectionStatusEventConfigurationTypeDef](./type_defs.md#connectionstatuseventconfigurationtypedef) 
+7. See [:material-code-braces: MessageDeliveryStatusEventConfigurationTypeDef](./type_defs.md#messagedeliverystatuseventconfigurationtypedef) 
 ## GetEventConfigurationByResourceTypesResponseTypeDef
 
 ```python title="Usage Example"
@@ -4117,6 +4163,7 @@ def get_value() -> GetEventConfigurationByResourceTypesResponseTypeDef:
         "Proximity": ...,
         "Join": ...,
         "ConnectionStatus": ...,
+        "MessageDeliveryStatus": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4127,14 +4174,16 @@ class GetEventConfigurationByResourceTypesResponseTypeDef(TypedDict):
     Proximity: ProximityResourceTypeEventConfigurationTypeDef,  # (2)
     Join: JoinResourceTypeEventConfigurationTypeDef,  # (3)
     ConnectionStatus: ConnectionStatusResourceTypeEventConfigurationTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    MessageDeliveryStatus: MessageDeliveryStatusResourceTypeEventConfigurationTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-braces: DeviceRegistrationStateResourceTypeEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateresourcetypeeventconfigurationtypedef) 
 2. See [:material-code-braces: ProximityResourceTypeEventConfigurationTypeDef](./type_defs.md#proximityresourcetypeeventconfigurationtypedef) 
 3. See [:material-code-braces: JoinResourceTypeEventConfigurationTypeDef](./type_defs.md#joinresourcetypeeventconfigurationtypedef) 
 4. See [:material-code-braces: ConnectionStatusResourceTypeEventConfigurationTypeDef](./type_defs.md#connectionstatusresourcetypeeventconfigurationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-braces: MessageDeliveryStatusResourceTypeEventConfigurationTypeDef](./type_defs.md#messagedeliverystatusresourcetypeeventconfigurationtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEventConfigurationByResourceTypesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4152,12 +4201,14 @@ class UpdateEventConfigurationByResourceTypesRequestRequestTypeDef(TypedDict):
     Proximity: NotRequired[ProximityResourceTypeEventConfigurationTypeDef],  # (2)
     Join: NotRequired[JoinResourceTypeEventConfigurationTypeDef],  # (3)
     ConnectionStatus: NotRequired[ConnectionStatusResourceTypeEventConfigurationTypeDef],  # (4)
+    MessageDeliveryStatus: NotRequired[MessageDeliveryStatusResourceTypeEventConfigurationTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: DeviceRegistrationStateResourceTypeEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateresourcetypeeventconfigurationtypedef) 
 2. See [:material-code-braces: ProximityResourceTypeEventConfigurationTypeDef](./type_defs.md#proximityresourcetypeeventconfigurationtypedef) 
 3. See [:material-code-braces: JoinResourceTypeEventConfigurationTypeDef](./type_defs.md#joinresourcetypeeventconfigurationtypedef) 
 4. See [:material-code-braces: ConnectionStatusResourceTypeEventConfigurationTypeDef](./type_defs.md#connectionstatusresourcetypeeventconfigurationtypedef) 
+5. See [:material-code-braces: MessageDeliveryStatusResourceTypeEventConfigurationTypeDef](./type_defs.md#messagedeliverystatusresourcetypeeventconfigurationtypedef) 
 ## GetWirelessDeviceStatisticsResponseTypeDef
 
 ```python title="Usage Example"

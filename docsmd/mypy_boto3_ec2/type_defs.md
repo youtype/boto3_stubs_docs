@@ -339,7 +339,7 @@ def get_value() -> TagTypeDef:
 
 ```python title="Definition"
 class TagTypeDef(TypedDict):
-    Key: str,
+    Key: NotRequired[str],
     Value: NotRequired[str],
 ```
 

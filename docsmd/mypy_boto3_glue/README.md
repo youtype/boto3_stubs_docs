@@ -136,6 +136,7 @@ def get_value() -> AggFunctionType:
 - [DataFormatType](./literals.md#dataformattype)
 - [DeleteBehaviorType](./literals.md#deletebehaviortype)
 - [EnableHybridValuesType](./literals.md#enablehybridvaluestype)
+- [ExecutionClassType](./literals.md#executionclasstype)
 - [ExistConditionType](./literals.md#existconditiontype)
 - [FieldNameType](./literals.md#fieldnametype)
 - [FilterLogicalOperatorType](./literals.md#filterlogicaloperatortype)

@@ -5157,6 +5157,8 @@ class WorkflowRunStatisticsTypeDef(TypedDict):
     StoppedActions: NotRequired[int],
     SucceededActions: NotRequired[int],
     RunningActions: NotRequired[int],
+    ErroredActions: NotRequired[int],
+    WaitingActions: NotRequired[int],
 ```
 
 ## ActionTypeDef
@@ -5204,10 +5206,12 @@ class StartJobRunRequestRequestTypeDef(TypedDict):
     NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (1)
     WorkerType: NotRequired[WorkerTypeType],  # (2)
     NumberOfWorkers: NotRequired[int],
+    ExecutionClass: NotRequired[ExecutionClassType],  # (3)
 ```
 
 1. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 2. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+3. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
 ## AggregateTypeDef
 
 ```python title="Usage Example"
@@ -8783,12 +8787,14 @@ class JobRunTypeDef(TypedDict):
     NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (4)
     GlueVersion: NotRequired[str],
     DPUSeconds: NotRequired[float],
+    ExecutionClass: NotRequired[ExecutionClassType],  # (5)
 ```
 
 1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
 2. See [:material-code-braces: PredecessorTypeDef](./type_defs.md#predecessortypedef) 
 3. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 4. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
+5. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
 ## JoinTypeDef
 
 ```python title="Usage Example"
@@ -12038,6 +12044,7 @@ class CreateJobRequestRequestTypeDef(TypedDict):
     NumberOfWorkers: NotRequired[int],
     WorkerType: NotRequired[WorkerTypeType],  # (5)
     CodeGenConfigurationNodes: NotRequired[Mapping[str, CodeGenConfigurationNodeTypeDef]],  # (6)
+    ExecutionClass: NotRequired[ExecutionClassType],  # (7)
 ```
 
 1. See [:material-code-braces: JobCommandTypeDef](./type_defs.md#jobcommandtypedef) 
@@ -12046,6 +12053,7 @@ class CreateJobRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 5. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
+7. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
 ## JobTypeDef
 
 ```python title="Usage Example"
@@ -12080,6 +12088,7 @@ class JobTypeDef(TypedDict):
     NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (5)
     GlueVersion: NotRequired[str],
     CodeGenConfigurationNodes: NotRequired[Dict[str, CodeGenConfigurationNodeTypeDef]],  # (6)
+    ExecutionClass: NotRequired[ExecutionClassType],  # (7)
 ```
 
 1. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
@@ -12088,6 +12097,7 @@ class JobTypeDef(TypedDict):
 4. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 5. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
+7. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
 ## JobUpdateTypeDef
 
 ```python title="Usage Example"
@@ -12119,6 +12129,7 @@ class JobUpdateTypeDef(TypedDict):
     NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (5)
     GlueVersion: NotRequired[str],
     CodeGenConfigurationNodes: NotRequired[Mapping[str, CodeGenConfigurationNodeTypeDef]],  # (6)
+    ExecutionClass: NotRequired[ExecutionClassType],  # (7)
 ```
 
 1. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
@@ -12127,6 +12138,7 @@ class JobUpdateTypeDef(TypedDict):
 4. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 5. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
+7. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
 ## WorkflowGraphTypeDef
 
 ```python title="Usage Example"

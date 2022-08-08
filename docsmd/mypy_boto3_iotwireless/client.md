@@ -2801,6 +2801,7 @@ def update_event_configuration_by_resource_types(
     Proximity: ProximityResourceTypeEventConfigurationTypeDef = ...,  # (2)
     Join: JoinResourceTypeEventConfigurationTypeDef = ...,  # (3)
     ConnectionStatus: ConnectionStatusResourceTypeEventConfigurationTypeDef = ...,  # (4)
+    MessageDeliveryStatus: MessageDeliveryStatusResourceTypeEventConfigurationTypeDef = ...,  # (5)
 ) -> Dict[str, Any]:
     ...
 ```
@@ -2809,6 +2810,7 @@ def update_event_configuration_by_resource_types(
 2. See [:material-code-braces: ProximityResourceTypeEventConfigurationTypeDef](./type_defs.md#proximityresourcetypeeventconfigurationtypedef) 
 3. See [:material-code-braces: JoinResourceTypeEventConfigurationTypeDef](./type_defs.md#joinresourcetypeeventconfigurationtypedef) 
 4. See [:material-code-braces: ConnectionStatusResourceTypeEventConfigurationTypeDef](./type_defs.md#connectionstatusresourcetypeeventconfigurationtypedef) 
+5. See [:material-code-braces: MessageDeliveryStatusResourceTypeEventConfigurationTypeDef](./type_defs.md#messagedeliverystatusresourcetypeeventconfigurationtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3040,6 +3042,7 @@ def update_resource_event_configuration(
     Proximity: ProximityEventConfigurationTypeDef = ...,  # (4)
     Join: JoinEventConfigurationTypeDef = ...,  # (5)
     ConnectionStatus: ConnectionStatusEventConfigurationTypeDef = ...,  # (6)
+    MessageDeliveryStatus: MessageDeliveryStatusEventConfigurationTypeDef = ...,  # (7)
 ) -> Dict[str, Any]:
     ...
 ```
@@ -3050,6 +3053,7 @@ def update_resource_event_configuration(
 4. See [:material-code-braces: ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef) 
 5. See [:material-code-braces: JoinEventConfigurationTypeDef](./type_defs.md#joineventconfigurationtypedef) 
 6. See [:material-code-braces: ConnectionStatusEventConfigurationTypeDef](./type_defs.md#connectionstatuseventconfigurationtypedef) 
+7. See [:material-code-braces: MessageDeliveryStatusEventConfigurationTypeDef](./type_defs.md#messagedeliverystatuseventconfigurationtypedef) 
 
 
 ```python title="Usage example with kwargs"
