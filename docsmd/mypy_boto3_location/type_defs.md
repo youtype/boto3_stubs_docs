@@ -121,22 +121,6 @@ class BatchGetDevicePositionRequestRequestTypeDef(TypedDict):
     TrackerName: str,
 ```
 
-## GeofenceGeometryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_location.type_defs import GeofenceGeometryTypeDef
-
-def get_value() -> GeofenceGeometryTypeDef:
-    return {
-        "Polygon": ...,
-    }
-```
-
-```python title="Definition"
-class GeofenceGeometryTypeDef(TypedDict):
-    Polygon: NotRequired[Sequence[Sequence[Sequence[float]]]],
-```
-
 ## BatchPutGeofenceSuccessTypeDef
 
 ```python title="Usage Example"
@@ -260,6 +244,24 @@ class TruckWeightTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: VehicleWeightUnitType](./literals.md#vehicleweightunittype) 
+## CircleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import CircleTypeDef
+
+def get_value() -> CircleTypeDef:
+    return {
+        "Center": ...,
+        "Radius": ...,
+    }
+```
+
+```python title="Definition"
+class CircleTypeDef(TypedDict):
+    Center: Sequence[float],
+    Radius: float,
+```
+
 ## CreateGeofenceCollectionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1949,99 +1951,6 @@ class UpdateTrackerResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchPutGeofenceRequestEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_location.type_defs import BatchPutGeofenceRequestEntryTypeDef
-
-def get_value() -> BatchPutGeofenceRequestEntryTypeDef:
-    return {
-        "GeofenceId": ...,
-        "Geometry": ...,
-    }
-```
-
-```python title="Definition"
-class BatchPutGeofenceRequestEntryTypeDef(TypedDict):
-    GeofenceId: str,
-    Geometry: GeofenceGeometryTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
-## GetGeofenceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_location.type_defs import GetGeofenceResponseTypeDef
-
-def get_value() -> GetGeofenceResponseTypeDef:
-    return {
-        "CreateTime": ...,
-        "GeofenceId": ...,
-        "Geometry": ...,
-        "Status": ...,
-        "UpdateTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetGeofenceResponseTypeDef(TypedDict):
-    CreateTime: datetime,
-    GeofenceId: str,
-    Geometry: GeofenceGeometryTypeDef,  # (1)
-    Status: str,
-    UpdateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListGeofenceResponseEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_location.type_defs import ListGeofenceResponseEntryTypeDef
-
-def get_value() -> ListGeofenceResponseEntryTypeDef:
-    return {
-        "CreateTime": ...,
-        "GeofenceId": ...,
-        "Geometry": ...,
-        "Status": ...,
-        "UpdateTime": ...,
-    }
-```
-
-```python title="Definition"
-class ListGeofenceResponseEntryTypeDef(TypedDict):
-    CreateTime: datetime,
-    GeofenceId: str,
-    Geometry: GeofenceGeometryTypeDef,  # (1)
-    Status: str,
-    UpdateTime: datetime,
-```
-
-1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
-## PutGeofenceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_location.type_defs import PutGeofenceRequestRequestTypeDef
-
-def get_value() -> PutGeofenceRequestRequestTypeDef:
-    return {
-        "CollectionName": ...,
-        "GeofenceId": ...,
-        "Geometry": ...,
-    }
-```
-
-```python title="Definition"
-class PutGeofenceRequestRequestTypeDef(TypedDict):
-    CollectionName: str,
-    GeofenceId: str,
-    Geometry: GeofenceGeometryTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
 ## CalculateRouteTruckModeOptionsTypeDef
 
 ```python title="Usage Example"
@@ -2063,6 +1972,24 @@ class CalculateRouteTruckModeOptionsTypeDef(TypedDict):
 
 1. See [:material-code-braces: TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef) 
 2. See [:material-code-braces: TruckWeightTypeDef](./type_defs.md#truckweighttypedef) 
+## GeofenceGeometryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import GeofenceGeometryTypeDef
+
+def get_value() -> GeofenceGeometryTypeDef:
+    return {
+        "Circle": ...,
+    }
+```
+
+```python title="Definition"
+class GeofenceGeometryTypeDef(TypedDict):
+    Circle: NotRequired[CircleTypeDef],  # (1)
+    Polygon: NotRequired[Sequence[Sequence[Sequence[float]]]],
+```
+
+1. See [:material-code-braces: CircleTypeDef](./type_defs.md#circletypedef) 
 ## CreateMapRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2777,47 +2704,6 @@ class BatchUpdateDevicePositionResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BatchUpdateDevicePositionErrorTypeDef](./type_defs.md#batchupdatedevicepositionerrortypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchPutGeofenceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_location.type_defs import BatchPutGeofenceRequestRequestTypeDef
-
-def get_value() -> BatchPutGeofenceRequestRequestTypeDef:
-    return {
-        "CollectionName": ...,
-        "Entries": ...,
-    }
-```
-
-```python title="Definition"
-class BatchPutGeofenceRequestRequestTypeDef(TypedDict):
-    CollectionName: str,
-    Entries: Sequence[BatchPutGeofenceRequestEntryTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef) 
-## ListGeofencesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_location.type_defs import ListGeofencesResponseTypeDef
-
-def get_value() -> ListGeofencesResponseTypeDef:
-    return {
-        "Entries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListGeofencesResponseTypeDef(TypedDict):
-    Entries: List[ListGeofenceResponseEntryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ListGeofenceResponseEntryTypeDef](./type_defs.md#listgeofenceresponseentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CalculateRouteMatrixRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2880,6 +2766,99 @@ class CalculateRouteRequestRequestTypeDef(TypedDict):
 2. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
 3. See [:material-code-brackets: TravelModeType](./literals.md#travelmodetype) 
 4. See [:material-code-braces: CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef) 
+## BatchPutGeofenceRequestEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import BatchPutGeofenceRequestEntryTypeDef
+
+def get_value() -> BatchPutGeofenceRequestEntryTypeDef:
+    return {
+        "GeofenceId": ...,
+        "Geometry": ...,
+    }
+```
+
+```python title="Definition"
+class BatchPutGeofenceRequestEntryTypeDef(TypedDict):
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
+## GetGeofenceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import GetGeofenceResponseTypeDef
+
+def get_value() -> GetGeofenceResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "GeofenceId": ...,
+        "Geometry": ...,
+        "Status": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetGeofenceResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+    Status: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGeofenceResponseEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListGeofenceResponseEntryTypeDef
+
+def get_value() -> ListGeofenceResponseEntryTypeDef:
+    return {
+        "CreateTime": ...,
+        "GeofenceId": ...,
+        "Geometry": ...,
+        "Status": ...,
+        "UpdateTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListGeofenceResponseEntryTypeDef(TypedDict):
+    CreateTime: datetime,
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+    Status: str,
+    UpdateTime: datetime,
+```
+
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
+## PutGeofenceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import PutGeofenceRequestRequestTypeDef
+
+def get_value() -> PutGeofenceRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+        "GeofenceId": ...,
+        "Geometry": ...,
+    }
+```
+
+```python title="Definition"
+class PutGeofenceRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    GeofenceId: str,
+    Geometry: GeofenceGeometryTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef) 
 ## BatchGetDevicePositionResponseTypeDef
 
 ```python title="Usage Example"
@@ -3073,6 +3052,47 @@ class CalculateRouteMatrixResponseTypeDef(TypedDict):
 1. See [:material-code-braces: RouteMatrixEntryTypeDef](./type_defs.md#routematrixentrytypedef) 
 2. See [:material-code-braces: CalculateRouteMatrixSummaryTypeDef](./type_defs.md#calculateroutematrixsummarytypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchPutGeofenceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import BatchPutGeofenceRequestRequestTypeDef
+
+def get_value() -> BatchPutGeofenceRequestRequestTypeDef:
+    return {
+        "CollectionName": ...,
+        "Entries": ...,
+    }
+```
+
+```python title="Definition"
+class BatchPutGeofenceRequestRequestTypeDef(TypedDict):
+    CollectionName: str,
+    Entries: Sequence[BatchPutGeofenceRequestEntryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef) 
+## ListGeofencesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListGeofencesResponseTypeDef
+
+def get_value() -> ListGeofencesResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListGeofencesResponseTypeDef(TypedDict):
+    Entries: List[ListGeofenceResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ListGeofenceResponseEntryTypeDef](./type_defs.md#listgeofenceresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchPlaceIndexForPositionResponseTypeDef
 
 ```python title="Usage Example"

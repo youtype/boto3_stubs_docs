@@ -1207,6 +1207,20 @@ HyperParameterScalingTypeType = Literal[
     "ReverseLogarithmic",
 ]
 ```
+## HyperParameterTuningAllocationStrategyType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import HyperParameterTuningAllocationStrategyType
+
+def get_value() -> HyperParameterTuningAllocationStrategyType:
+    return "Prioritized"
+```
+
+```python title="Definition"
+HyperParameterTuningAllocationStrategyType = Literal[
+    "Prioritized",
+]
+```
 ## HyperParameterTuningJobObjectiveTypeType
 
 ```python title="Usage Example"

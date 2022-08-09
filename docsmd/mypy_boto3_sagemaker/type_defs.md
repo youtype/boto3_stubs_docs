@@ -4842,6 +4842,27 @@ class HyperParameterTuningJobObjectiveTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: HyperParameterTuningJobObjectiveTypeType](./literals.md#hyperparametertuningjobobjectivetypetype) 
+## HyperParameterTuningInstanceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HyperParameterTuningInstanceConfigTypeDef
+
+def get_value() -> HyperParameterTuningInstanceConfigTypeDef:
+    return {
+        "InstanceType": ...,
+        "InstanceCount": ...,
+        "VolumeSizeInGB": ...,
+    }
+```
+
+```python title="Definition"
+class HyperParameterTuningInstanceConfigTypeDef(TypedDict):
+    InstanceType: TrainingInstanceTypeType,  # (1)
+    InstanceCount: int,
+    VolumeSizeInGB: int,
+```
+
+1. See [:material-code-brackets: TrainingInstanceTypeType](./literals.md#traininginstancetypetype) 
 ## ResourceLimitsTypeDef
 
 ```python title="Usage Example"
@@ -13675,6 +13696,30 @@ class ListHumanTaskUisResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: HumanTaskUiSummaryTypeDef](./type_defs.md#humantaskuisummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## HyperParameterTuningResourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HyperParameterTuningResourceConfigTypeDef
+
+def get_value() -> HyperParameterTuningResourceConfigTypeDef:
+    return {
+        "InstanceType": ...,
+    }
+```
+
+```python title="Definition"
+class HyperParameterTuningResourceConfigTypeDef(TypedDict):
+    InstanceType: NotRequired[TrainingInstanceTypeType],  # (1)
+    InstanceCount: NotRequired[int],
+    VolumeSizeInGB: NotRequired[int],
+    VolumeKmsKeyId: NotRequired[str],
+    AllocationStrategy: NotRequired[HyperParameterTuningAllocationStrategyType],  # (2)
+    InstanceConfigs: NotRequired[Sequence[HyperParameterTuningInstanceConfigTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: TrainingInstanceTypeType](./literals.md#traininginstancetypetype) 
+2. See [:material-code-brackets: HyperParameterTuningAllocationStrategyType](./literals.md#hyperparametertuningallocationstrategytype) 
+3. See [:material-code-braces: HyperParameterTuningInstanceConfigTypeDef](./type_defs.md#hyperparametertuninginstanceconfigtypedef) 
 ## HyperParameterTuningJobSummaryTypeDef
 
 ```python title="Usage Example"
@@ -19064,7 +19109,6 @@ def get_value() -> HyperParameterTrainingJobDefinitionTypeDef:
         "AlgorithmSpecification": ...,
         "RoleArn": ...,
         "OutputDataConfig": ...,
-        "ResourceConfig": ...,
         "StoppingCondition": ...,
     }
 ```
@@ -19074,7 +19118,6 @@ class HyperParameterTrainingJobDefinitionTypeDef(TypedDict):
     AlgorithmSpecification: HyperParameterAlgorithmSpecificationTypeDef,  # (3)
     RoleArn: str,
     OutputDataConfig: OutputDataConfigTypeDef,  # (6)
-    ResourceConfig: ResourceConfigTypeDef,  # (7)
     StoppingCondition: StoppingConditionTypeDef,  # (8)
     DefinitionName: NotRequired[str],
     TuningObjective: NotRequired[HyperParameterTuningJobObjectiveTypeDef],  # (1)
@@ -19082,11 +19125,13 @@ class HyperParameterTrainingJobDefinitionTypeDef(TypedDict):
     StaticHyperParameters: NotRequired[Mapping[str, str]],
     InputDataConfig: NotRequired[Sequence[ChannelTypeDef]],  # (4)
     VpcConfig: NotRequired[VpcConfigTypeDef],  # (5)
+    ResourceConfig: NotRequired[ResourceConfigTypeDef],  # (7)
     EnableNetworkIsolation: NotRequired[bool],
     EnableInterContainerTrafficEncryption: NotRequired[bool],
     EnableManagedSpotTraining: NotRequired[bool],
     CheckpointConfig: NotRequired[CheckpointConfigTypeDef],  # (9)
     RetryStrategy: NotRequired[RetryStrategyTypeDef],  # (10)
+    HyperParameterTuningResourceConfig: NotRequired[HyperParameterTuningResourceConfigTypeDef],  # (11)
 ```
 
 1. See [:material-code-braces: HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef) 
@@ -19099,6 +19144,7 @@ class HyperParameterTrainingJobDefinitionTypeDef(TypedDict):
 8. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
 9. See [:material-code-braces: CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef) 
 10. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
+11. See [:material-code-braces: HyperParameterTuningResourceConfigTypeDef](./type_defs.md#hyperparametertuningresourceconfigtypedef) 
 ## TrainingJobDefinitionTypeDef
 
 ```python title="Usage Example"
