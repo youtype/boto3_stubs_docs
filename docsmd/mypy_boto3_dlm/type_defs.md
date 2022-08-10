@@ -258,23 +258,6 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
-## ParametersTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dlm.type_defs import ParametersTypeDef
-
-def get_value() -> ParametersTypeDef:
-    return {
-        "ExcludeBootVolume": ...,
-    }
-```
-
-```python title="Definition"
-class ParametersTypeDef(TypedDict):
-    ExcludeBootVolume: NotRequired[bool],
-    NoReboot: NotRequired[bool],
-```
-
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -489,6 +472,25 @@ class GetLifecyclePoliciesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: LifecyclePolicySummaryTypeDef](./type_defs.md#lifecyclepolicysummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ParametersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dlm.type_defs import ParametersTypeDef
+
+def get_value() -> ParametersTypeDef:
+    return {
+        "ExcludeBootVolume": ...,
+    }
+```
+
+```python title="Definition"
+class ParametersTypeDef(TypedDict):
+    ExcludeBootVolume: NotRequired[bool],
+    NoReboot: NotRequired[bool],
+    ExcludeDataVolumeTags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ActionTypeDef
 
 ```python title="Usage Example"

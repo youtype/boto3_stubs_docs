@@ -2894,6 +2894,7 @@ def get_value() -> InstanceSpecificationTypeDef:
 class InstanceSpecificationTypeDef(TypedDict):
     InstanceId: NotRequired[str],
     ExcludeBootVolume: NotRequired[bool],
+    ExcludeDataVolumeIds: NotRequired[Sequence[str]],
 ```
 
 ## CreateSpotDatafeedSubscriptionRequestRequestTypeDef
