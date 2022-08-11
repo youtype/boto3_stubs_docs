@@ -127,6 +127,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-backup-gateway](./mypy_boto3_backup_gateway/README.md) for [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway) service
 
+- [mypy-boto3-backupstorage](./mypy_boto3_backupstorage/README.md) for [BackupStorage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backupstorage.html#BackupStorage) service
+
 - [mypy-boto3-batch](./mypy_boto3_batch/README.md) for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch) service
 
 - [mypy-boto3-billingconductor](./mypy_boto3_billingconductor/README.md) for [BillingConductor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor) service
@@ -524,6 +526,8 @@ python -m pip uninstall -y boto3-stubs
 - [mypy-boto3-polly](./mypy_boto3_polly/README.md) for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly) service
 
 - [mypy-boto3-pricing](./mypy_boto3_pricing/README.md) for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing) service
+
+- [mypy-boto3-privatenetworks](./mypy_boto3_privatenetworks/README.md) for [Private5G](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/privatenetworks.html#Private5G) service
 
 - [mypy-boto3-proton](./mypy_boto3_proton/README.md) for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton) service
 
