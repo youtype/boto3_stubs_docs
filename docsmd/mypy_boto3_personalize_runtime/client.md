@@ -155,11 +155,13 @@ def get_recommendations(
     filterArn: str = ...,
     filterValues: Mapping[str, str] = ...,
     recommenderArn: str = ...,
-) -> GetRecommendationsResponseTypeDef:  # (1)
+    promotions: Sequence[PromotionTypeDef] = ...,  # (1)
+) -> GetRecommendationsResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef) 
+1. See [:material-code-braces: PromotionTypeDef](./type_defs.md#promotiontypedef) 
+2. See [:material-code-braces: GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

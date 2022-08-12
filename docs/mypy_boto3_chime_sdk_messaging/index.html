@@ -37041,6 +37041,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#messageattributevaluetypedef">MessageAttributeValueTypeDef</a></li>
 <li><a href="type_defs/#pushnotificationconfigurationtypedef">PushNotificationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#channelmessagestatusstructuretypedef">ChannelMessageStatusStructureTypeDef</a></li>
+<li><a href="type_defs/#elasticchannelconfigurationtypedef">ElasticChannelConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createchannelbanrequestrequesttypedef">CreateChannelBanRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#createchannelmembershiprequestrequesttypedef">CreateChannelMembershipRequestRequestTypeDef</a></li>
@@ -37073,6 +37074,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listchannelsassociatedwithchannelflowrequestrequesttypedef">ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef">ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listchannelsrequestrequesttypedef">ListChannelsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listsubchannelsrequestrequesttypedef">ListSubChannelsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#subchannelsummarytypedef">SubChannelSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#redactchannelmessagerequestrequesttypedef">RedactChannelMessageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#searchfieldtypedef">SearchFieldTypeDef</a></li>
@@ -37087,7 +37090,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#channelmembershiptypedef">ChannelMembershipTypeDef</a></li>
 <li><a href="type_defs/#channelmoderatorsummarytypedef">ChannelModeratorSummaryTypeDef</a></li>
 <li><a href="type_defs/#channelmoderatortypedef">ChannelModeratorTypeDef</a></li>
-<li><a href="type_defs/#channeltypedef">ChannelTypeDef</a></li>
 <li><a href="type_defs/#channelflowcallbackresponsetypedef">ChannelFlowCallbackResponseTypeDef</a></li>
 <li><a href="type_defs/#createchannelbanresponsetypedef">CreateChannelBanResponseTypeDef</a></li>
 <li><a href="type_defs/#createchannelflowresponsetypedef">CreateChannelFlowResponseTypeDef</a></li>
@@ -37112,11 +37114,13 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getchannelmessagestatusresponsetypedef">GetChannelMessageStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#sendchannelmessageresponsetypedef">SendChannelMessageResponseTypeDef</a></li>
 <li><a href="type_defs/#updatechannelmessageresponsetypedef">UpdateChannelMessageResponseTypeDef</a></li>
+<li><a href="type_defs/#channeltypedef">ChannelTypeDef</a></li>
 <li><a href="type_defs/#createchannelrequestrequesttypedef">CreateChannelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmessagingsessionendpointresponsetypedef">GetMessagingSessionEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#processorconfigurationtypedef">ProcessorConfigurationTypeDef</a></li>
+<li><a href="type_defs/#listsubchannelsresponsetypedef">ListSubChannelsResponseTypeDef</a></li>
 <li><a href="type_defs/#searchchannelsrequestrequesttypedef">SearchChannelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#batchcreatechannelmembershipresponsetypedef">BatchCreateChannelMembershipResponseTypeDef</a></li>
 <li><a href="type_defs/#listchannelbansresponsetypedef">ListChannelBansResponseTypeDef</a></li>
@@ -37125,7 +37129,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#describechannelmembershipresponsetypedef">DescribeChannelMembershipResponseTypeDef</a></li>
 <li><a href="type_defs/#listchannelmoderatorsresponsetypedef">ListChannelModeratorsResponseTypeDef</a></li>
 <li><a href="type_defs/#describechannelmoderatorresponsetypedef">DescribeChannelModeratorResponseTypeDef</a></li>
-<li><a href="type_defs/#describechannelresponsetypedef">DescribeChannelResponseTypeDef</a></li>
 <li><a href="type_defs/#describechannelmembershipforappinstanceuserresponsetypedef">DescribeChannelMembershipForAppInstanceUserResponseTypeDef</a></li>
 <li><a href="type_defs/#listchannelmembershipsforappinstanceuserresponsetypedef">ListChannelMembershipsForAppInstanceUserResponseTypeDef</a></li>
 <li><a href="type_defs/#describechannelmoderatedbyappinstanceuserresponsetypedef">DescribeChannelModeratedByAppInstanceUserResponseTypeDef</a></li>
@@ -37136,6 +37139,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#channelflowcallbackrequestrequesttypedef">ChannelFlowCallbackRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listchannelmessagesresponsetypedef">ListChannelMessagesResponseTypeDef</a></li>
 <li><a href="type_defs/#getchannelmessageresponsetypedef">GetChannelMessageResponseTypeDef</a></li>
+<li><a href="type_defs/#describechannelresponsetypedef">DescribeChannelResponseTypeDef</a></li>
 <li><a href="type_defs/#processortypedef">ProcessorTypeDef</a></li>
 <li><a href="type_defs/#channelflowsummarytypedef">ChannelFlowSummaryTypeDef</a></li>
 <li><a href="type_defs/#channelflowtypedef">ChannelFlowTypeDef</a></li>

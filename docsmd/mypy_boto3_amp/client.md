@@ -118,6 +118,38 @@ parent.create_alert_manager_definition(**kwargs)
 
 1. See [:material-code-braces: CreateAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#createalertmanagerdefinitionrequestrequesttypedef) 
 
+### create\_logging\_configuration
+
+Create logging configuration.
+
+Type annotations and code completion for `#!python boto3.client("amp").create_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_logging_configuration)
+
+```python title="Method definition"
+def create_logging_configuration(
+    self,
+    *,
+    logGroupArn: str,
+    workspaceId: str,
+    clientToken: str = ...,
+) -> CreateLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateLoggingConfigurationResponseTypeDef](./type_defs.md#createloggingconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "logGroupArn": ...,
+    "workspaceId": ...,
+}
+
+parent.create_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLoggingConfigurationRequestRequestTypeDef](./type_defs.md#createloggingconfigurationrequestrequesttypedef) 
+
 ### create\_rule\_groups\_namespace
 
 Create a rule group namespace.
@@ -214,6 +246,36 @@ parent.delete_alert_manager_definition(**kwargs)
 
 1. See [:material-code-braces: DeleteAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#deletealertmanagerdefinitionrequestrequesttypedef) 
 
+### delete\_logging\_configuration
+
+Delete logging configuration.
+
+Type annotations and code completion for `#!python boto3.client("amp").delete_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_logging_configuration)
+
+```python title="Method definition"
+def delete_logging_configuration(
+    self,
+    *,
+    workspaceId: str,
+    clientToken: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
+
+parent.delete_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef) 
+
 ### delete\_rule\_groups\_namespace
 
 Delete a rule groups namespace.
@@ -304,6 +366,35 @@ parent.describe_alert_manager_definition(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#describealertmanagerdefinitionrequestrequesttypedef) 
+
+### describe\_logging\_configuration
+
+Describes logging configuration.
+
+Type annotations and code completion for `#!python boto3.client("amp").describe_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_logging_configuration)
+
+```python title="Method definition"
+def describe_logging_configuration(
+    self,
+    *,
+    workspaceId: str,
+) -> DescribeLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeLoggingConfigurationResponseTypeDef](./type_defs.md#describeloggingconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
+
+parent.describe_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLoggingConfigurationRequestRequestTypeDef](./type_defs.md#describeloggingconfigurationrequestrequesttypedef) 
 
 ### describe\_rule\_groups\_namespace
 
@@ -601,6 +692,38 @@ parent.untag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_logging\_configuration
+
+Update logging configuration.
+
+Type annotations and code completion for `#!python boto3.client("amp").update_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_logging_configuration)
+
+```python title="Method definition"
+def update_logging_configuration(
+    self,
+    *,
+    logGroupArn: str,
+    workspaceId: str,
+    clientToken: str = ...,
+) -> UpdateLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateLoggingConfigurationResponseTypeDef](./type_defs.md#updateloggingconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "logGroupArn": ...,
+    "workspaceId": ...,
+}
+
+parent.update_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateLoggingConfigurationRequestRequestTypeDef](./type_defs.md#updateloggingconfigurationrequestrequesttypedef) 
 
 ### update\_workspace\_alias
 

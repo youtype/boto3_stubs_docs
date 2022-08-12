@@ -68,6 +68,43 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## CreateLoggingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import CreateLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "logGroupArn": ...,
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    logGroupArn: str,
+    workspaceId: str,
+    clientToken: NotRequired[str],
+```
+
+## LoggingConfigurationStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import LoggingConfigurationStatusTypeDef
+
+def get_value() -> LoggingConfigurationStatusTypeDef:
+    return {
+        "statusCode": ...,
+    }
+```
+
+```python title="Definition"
+class LoggingConfigurationStatusTypeDef(TypedDict):
+    statusCode: LoggingConfigurationStatusCodeType,  # (1)
+    statusReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LoggingConfigurationStatusCodeType](./literals.md#loggingconfigurationstatuscodetype) 
 ## CreateRuleGroupsNamespaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -160,6 +197,23 @@ class DeleteAlertManagerDefinitionRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
+## DeleteLoggingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DeleteLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    clientToken: NotRequired[str],
+```
+
 ## DeleteRuleGroupsNamespaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -209,6 +263,22 @@ def get_value() -> DescribeAlertManagerDefinitionRequestRequestTypeDef:
 
 ```python title="Definition"
 class DescribeAlertManagerDefinitionRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+```
+
+## DescribeLoggingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DescribeLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoggingConfigurationRequestRequestTypeDef(TypedDict):
     workspaceId: str,
 ```
 
@@ -410,6 +480,25 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     tagKeys: Sequence[str],
 ```
 
+## UpdateLoggingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import UpdateLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "logGroupArn": ...,
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    logGroupArn: str,
+    workspaceId: str,
+    clientToken: NotRequired[str],
+```
+
 ## UpdateWorkspaceAliasRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -526,6 +615,71 @@ class PutAlertManagerDefinitionResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLoggingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import CreateLoggingConfigurationResponseTypeDef
+
+def get_value() -> CreateLoggingConfigurationResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLoggingConfigurationResponseTypeDef(TypedDict):
+    status: LoggingConfigurationStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoggingConfigurationStatusTypeDef](./type_defs.md#loggingconfigurationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LoggingConfigurationMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import LoggingConfigurationMetadataTypeDef
+
+def get_value() -> LoggingConfigurationMetadataTypeDef:
+    return {
+        "createdAt": ...,
+        "logGroupArn": ...,
+        "modifiedAt": ...,
+        "status": ...,
+        "workspace": ...,
+    }
+```
+
+```python title="Definition"
+class LoggingConfigurationMetadataTypeDef(TypedDict):
+    createdAt: datetime,
+    logGroupArn: str,
+    modifiedAt: datetime,
+    status: LoggingConfigurationStatusTypeDef,  # (1)
+    workspace: str,
+```
+
+1. See [:material-code-braces: LoggingConfigurationStatusTypeDef](./type_defs.md#loggingconfigurationstatustypedef) 
+## UpdateLoggingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import UpdateLoggingConfigurationResponseTypeDef
+
+def get_value() -> UpdateLoggingConfigurationResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateLoggingConfigurationResponseTypeDef(TypedDict):
+    status: LoggingConfigurationStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoggingConfigurationStatusTypeDef](./type_defs.md#loggingconfigurationstatustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRuleGroupsNamespaceResponseTypeDef
 
@@ -802,6 +956,26 @@ class DescribeAlertManagerDefinitionResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AlertManagerDefinitionDescriptionTypeDef](./type_defs.md#alertmanagerdefinitiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLoggingConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amp.type_defs import DescribeLoggingConfigurationResponseTypeDef
+
+def get_value() -> DescribeLoggingConfigurationResponseTypeDef:
+    return {
+        "loggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLoggingConfigurationResponseTypeDef(TypedDict):
+    loggingConfiguration: LoggingConfigurationMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoggingConfigurationMetadataTypeDef](./type_defs.md#loggingconfigurationmetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRuleGroupsNamespaceResponseTypeDef
 

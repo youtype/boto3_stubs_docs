@@ -45,6 +45,7 @@ def get_value() -> PredictedItemTypeDef:
 class PredictedItemTypeDef(TypedDict):
     itemId: NotRequired[str],
     score: NotRequired[float],
+    promotionName: NotRequired[str],
 ```
 
 ## ResponseMetadataTypeDef
@@ -71,27 +72,23 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
-## GetRecommendationsRequestRequestTypeDef
+## PromotionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestRequestTypeDef
+from mypy_boto3_personalize_runtime.type_defs import PromotionTypeDef
 
-def get_value() -> GetRecommendationsRequestRequestTypeDef:
+def get_value() -> PromotionTypeDef:
     return {
-        "campaignArn": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
-class GetRecommendationsRequestRequestTypeDef(TypedDict):
-    campaignArn: NotRequired[str],
-    itemId: NotRequired[str],
-    userId: NotRequired[str],
-    numResults: NotRequired[int],
-    context: NotRequired[Mapping[str, str]],
+class PromotionTypeDef(TypedDict):
+    name: NotRequired[str],
+    percentPromotedItems: NotRequired[int],
     filterArn: NotRequired[str],
     filterValues: NotRequired[Mapping[str, str]],
-    recommenderArn: NotRequired[str],
 ```
 
 ## GetPersonalizedRankingResponseTypeDef
@@ -138,3 +135,28 @@ class GetRecommendationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PredictedItemTypeDef](./type_defs.md#predicteditemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestRequestTypeDef
+
+def get_value() -> GetRecommendationsRequestRequestTypeDef:
+    return {
+        "campaignArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetRecommendationsRequestRequestTypeDef(TypedDict):
+    campaignArn: NotRequired[str],
+    itemId: NotRequired[str],
+    userId: NotRequired[str],
+    numResults: NotRequired[int],
+    context: NotRequired[Mapping[str, str]],
+    filterArn: NotRequired[str],
+    filterValues: NotRequired[Mapping[str, str]],
+    recommenderArn: NotRequired[str],
+    promotions: NotRequired[Sequence[PromotionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PromotionTypeDef](./type_defs.md#promotiontypedef) 

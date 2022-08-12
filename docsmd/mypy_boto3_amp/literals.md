@@ -54,6 +54,25 @@ ListWorkspacesPaginatorName = Literal[
     "list_workspaces",
 ]
 ```
+## LoggingConfigurationStatusCodeType
+
+```python title="Usage Example"
+from mypy_boto3_amp.literals import LoggingConfigurationStatusCodeType
+
+def get_value() -> LoggingConfigurationStatusCodeType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+LoggingConfigurationStatusCodeType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "CREATION_FAILED",
+    "DELETING",
+    "UPDATE_FAILED",
+    "UPDATING",
+]
+```
 ## RuleGroupsNamespaceStatusCodeType
 
 ```python title="Usage Example"

@@ -105,6 +105,7 @@ def batch_create_channel_membership(
     MemberArns: Sequence[str],
     ChimeBearer: str,
     Type: ChannelMembershipTypeType = ...,  # (1)
+    SubChannelId: str = ...,
 ) -> BatchCreateChannelMembershipResponseTypeDef:  # (2)
     ...
 ```
@@ -213,14 +214,16 @@ def create_channel(
     ChannelId: str = ...,
     MemberArns: Sequence[str] = ...,
     ModeratorArns: Sequence[str] = ...,
-) -> CreateChannelResponseTypeDef:  # (4)
+    ElasticChannelConfiguration: ElasticChannelConfigurationTypeDef = ...,  # (4)
+) -> CreateChannelResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
 2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
+4. See [:material-code-braces: ElasticChannelConfigurationTypeDef](./type_defs.md#elasticchannelconfigurationtypedef) 
+5. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -322,6 +325,7 @@ def create_channel_membership(
     MemberArn: str,
     Type: ChannelMembershipTypeType,  # (1)
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> CreateChannelMembershipResponseTypeDef:  # (2)
     ...
 ```
@@ -390,6 +394,7 @@ def delete_channel(
     *,
     ChannelArn: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -484,6 +489,7 @@ def delete_channel_membership(
     ChannelArn: str,
     MemberArn: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -517,6 +523,7 @@ def delete_channel_message(
     ChannelArn: str,
     MessageId: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -676,6 +683,7 @@ def describe_channel_membership(
     ChannelArn: str,
     MemberArn: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> DescribeChannelMembershipResponseTypeDef:  # (1)
     ...
 ```
@@ -896,6 +904,7 @@ def get_channel_message(
     ChannelArn: str,
     MessageId: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> GetChannelMessageResponseTypeDef:  # (1)
     ...
 ```
@@ -929,6 +938,7 @@ def get_channel_message_status(
     ChannelArn: str,
     MessageId: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> GetChannelMessageStatusResponseTypeDef:  # (1)
     ...
 ```
@@ -1044,6 +1054,7 @@ def list_channel_memberships(
     Type: ChannelMembershipTypeType = ...,  # (1)
     MaxResults: int = ...,
     NextToken: str = ...,
+    SubChannelId: str = ...,
 ) -> ListChannelMembershipsResponseTypeDef:  # (2)
     ...
 ```
@@ -1113,6 +1124,7 @@ def list_channel_messages(
     NotAfter: Union[datetime, str] = ...,
     MaxResults: int = ...,
     NextToken: str = ...,
+    SubChannelId: str = ...,
 ) -> ListChannelMessagesResponseTypeDef:  # (2)
     ...
 ```
@@ -1263,6 +1275,39 @@ parent.list_channels_moderated_by_app_instance_user(**kwargs)
 
 1. See [:material-code-braces: ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef) 
 
+### list\_sub\_channels
+
+Lists all the SubChannels in an elastic channel when given a channel ID.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_sub_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_sub_channels)
+
+```python title="Method definition"
+def list_sub_channels(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSubChannelsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSubChannelsResponseTypeDef](./type_defs.md#listsubchannelsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSubChannelsRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
+
+parent.list_sub_channels(**kwargs)
+```
+
+1. See [:material-code-braces: ListSubChannelsRequestRequestTypeDef](./type_defs.md#listsubchannelsrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
 Lists the tags applied to an Amazon Chime SDK messaging resource.
@@ -1343,6 +1388,7 @@ def redact_channel_message(
     ChannelArn: str,
     MessageId: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> RedactChannelMessageResponseTypeDef:  # (1)
     ...
 ```
@@ -1415,6 +1461,7 @@ def send_channel_message(
     Metadata: str = ...,
     PushNotification: PushNotificationConfigurationTypeDef = ...,  # (3)
     MessageAttributes: Mapping[str, MessageAttributeValueTypeDef] = ...,  # (4)
+    SubChannelId: str = ...,
 ) -> SendChannelMessageResponseTypeDef:  # (5)
     ...
 ```
@@ -1590,6 +1637,7 @@ def update_channel_message(
     ChimeBearer: str,
     Content: str = ...,
     Metadata: str = ...,
+    SubChannelId: str = ...,
 ) -> UpdateChannelMessageResponseTypeDef:  # (1)
     ...
 ```
@@ -1622,6 +1670,7 @@ def update_channel_read_marker(
     *,
     ChannelArn: str,
     ChimeBearer: str,
+    SubChannelId: str = ...,
 ) -> UpdateChannelReadMarkerResponseTypeDef:  # (1)
     ...
 ```
