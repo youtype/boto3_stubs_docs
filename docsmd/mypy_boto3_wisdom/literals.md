@@ -266,6 +266,21 @@ RelevanceLevelType = Literal[
     "MEDIUM",
 ]
 ```
+## RelevanceType
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.literals import RelevanceType
+
+def get_value() -> RelevanceType:
+    return "HELPFUL"
+```
+
+```python title="Definition"
+RelevanceType = Literal[
+    "HELPFUL",
+    "NOT_HELPFUL",
+]
+```
 ## SearchContentPaginatorName
 
 ```python title="Usage Example"
@@ -292,6 +307,21 @@ def get_value() -> SearchSessionsPaginatorName:
 ```python title="Definition"
 SearchSessionsPaginatorName = Literal[
     "search_sessions",
+]
+```
+## TargetTypeType
+
+```python title="Usage Example"
+from mypy_boto3_wisdom.literals import TargetTypeType
+
+def get_value() -> TargetTypeType:
+    return "RECOMMENDATION"
+```
+
+```python title="Definition"
+TargetTypeType = Literal[
+    "RECOMMENDATION",
+    "RESULT",
 ]
 ```
 ## ConnectWisdomServiceServiceName

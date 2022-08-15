@@ -205,6 +205,8 @@ def get_value() -> HttpVersionType:
 HttpVersionType = Literal[
     "http1.1",
     "http2",
+    "http2and3",
+    "http3",
 ]
 ```
 ## ICPRecordalStatusType

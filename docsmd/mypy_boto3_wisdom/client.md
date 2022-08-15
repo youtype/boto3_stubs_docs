@@ -809,6 +809,43 @@ parent.notify_recommendations_received(**kwargs)
 
 1. See [:material-code-braces: NotifyRecommendationsReceivedRequestRequestTypeDef](./type_defs.md#notifyrecommendationsreceivedrequestrequesttypedef) 
 
+### put\_feedback
+
+Submits feedback to Wisdom.
+
+Type annotations and code completion for `#!python boto3.client("wisdom").put_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.put_feedback)
+
+```python title="Method definition"
+def put_feedback(
+    self,
+    *,
+    assistantId: str,
+    feedback: FeedbackDataTypeDef,  # (1)
+    targetId: str,
+    targetType: TargetTypeType,  # (2)
+) -> PutFeedbackResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FeedbackDataTypeDef](./type_defs.md#feedbackdatatypedef) 
+2. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+3. See [:material-code-braces: PutFeedbackResponseTypeDef](./type_defs.md#putfeedbackresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutFeedbackRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "feedback": ...,
+    "targetId": ...,
+    "targetType": ...,
+}
+
+parent.put_feedback(**kwargs)
+```
+
+1. See [:material-code-braces: PutFeedbackRequestRequestTypeDef](./type_defs.md#putfeedbackrequestrequesttypedef) 
+
 ### query\_assistant
 
 Performs a manual search against the specified assistant.
