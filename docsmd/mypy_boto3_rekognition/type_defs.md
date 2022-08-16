@@ -278,6 +278,23 @@ class ModerationLabelTypeDef(TypedDict):
     ParentName: NotRequired[str],
 ```
 
+## OutputConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import OutputConfigTypeDef
+
+def get_value() -> OutputConfigTypeDef:
+    return {
+        "S3Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class OutputConfigTypeDef(TypedDict):
+    S3Bucket: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+```
+
 ## CoversBodyPartTypeDef
 
 ```python title="Usage Example"
@@ -326,23 +343,6 @@ def get_value() -> CreateProjectRequestRequestTypeDef:
 ```python title="Definition"
 class CreateProjectRequestRequestTypeDef(TypedDict):
     ProjectName: str,
-```
-
-## OutputConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rekognition.type_defs import OutputConfigTypeDef
-
-def get_value() -> OutputConfigTypeDef:
-    return {
-        "S3Bucket": ...,
-    }
-```
-
-```python title="Definition"
-class OutputConfigTypeDef(TypedDict):
-    S3Bucket: NotRequired[str],
-    S3KeyPrefix: NotRequired[str],
 ```
 
 ## StreamProcessorDataSharingPreferenceTypeDef
@@ -501,6 +501,25 @@ def get_value() -> DeleteFacesRequestRequestTypeDef:
 class DeleteFacesRequestRequestTypeDef(TypedDict):
     CollectionId: str,
     FaceIds: Sequence[str],
+```
+
+## DeleteProjectPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DeleteProjectPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteProjectPolicyRequestRequestTypeDef:
+    return {
+        "ProjectArn": ...,
+        "PolicyName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteProjectPolicyRequestRequestTypeDef(TypedDict):
+    ProjectArn: str,
+    PolicyName: str,
+    PolicyRevisionId: NotRequired[str],
 ```
 
 ## DeleteProjectRequestRequestTypeDef
@@ -1283,6 +1302,45 @@ class ListFacesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListProjectPoliciesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListProjectPoliciesRequestRequestTypeDef
+
+def get_value() -> ListProjectPoliciesRequestRequestTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectPoliciesRequestRequestTypeDef(TypedDict):
+    ProjectArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ProjectPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ProjectPolicyTypeDef
+
+def get_value() -> ProjectPolicyTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
+```
+
+```python title="Definition"
+class ProjectPolicyTypeDef(TypedDict):
+    ProjectArn: NotRequired[str],
+    PolicyName: NotRequired[str],
+    PolicyRevisionId: NotRequired[str],
+    PolicyDocument: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
+
 ## ListStreamProcessorsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1350,6 +1408,27 @@ def get_value() -> NotificationChannelTypeDef:
 class NotificationChannelTypeDef(TypedDict):
     SNSTopicArn: str,
     RoleArn: str,
+```
+
+## PutProjectPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import PutProjectPolicyRequestRequestTypeDef
+
+def get_value() -> PutProjectPolicyRequestRequestTypeDef:
+    return {
+        "ProjectArn": ...,
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
+```
+
+```python title="Definition"
+class PutProjectPolicyRequestRequestTypeDef(TypedDict):
+    ProjectArn: str,
+    PolicyName: str,
+    PolicyDocument: str,
+    PolicyRevisionId: NotRequired[str],
 ```
 
 ## S3DestinationTypeDef
@@ -1619,6 +1698,25 @@ class InstanceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+## CopyProjectVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import CopyProjectVersionResponseTypeDef
+
+def get_value() -> CopyProjectVersionResponseTypeDef:
+    return {
+        "ProjectVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CopyProjectVersionResponseTypeDef(TypedDict):
+    ProjectVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCollectionResponseTypeDef
 
 ```python title="Usage Example"
@@ -1908,6 +2006,25 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutProjectPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import PutProjectPolicyResponseTypeDef
+
+def get_value() -> PutProjectPolicyResponseTypeDef:
+    return {
+        "PolicyRevisionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutProjectPolicyResponseTypeDef(TypedDict):
+    PolicyRevisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartCelebrityRecognitionResponseTypeDef
 
 ```python title="Usage Example"
@@ -2182,6 +2299,33 @@ class ContentModerationDetectionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef) 
+## CopyProjectVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import CopyProjectVersionRequestRequestTypeDef
+
+def get_value() -> CopyProjectVersionRequestRequestTypeDef:
+    return {
+        "SourceProjectArn": ...,
+        "SourceProjectVersionArn": ...,
+        "DestinationProjectArn": ...,
+        "VersionName": ...,
+        "OutputConfig": ...,
+    }
+```
+
+```python title="Definition"
+class CopyProjectVersionRequestRequestTypeDef(TypedDict):
+    SourceProjectArn: str,
+    SourceProjectVersionArn: str,
+    DestinationProjectArn: str,
+    VersionName: str,
+    OutputConfig: OutputConfigTypeDef,  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+    KmsKeyId: NotRequired[str],
+```
+
+1. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
 ## EquipmentDetectionTypeDef
 
 ```python title="Usage Example"
@@ -2394,6 +2538,24 @@ def get_value() -> ListFacesRequestListFacesPaginateTypeDef:
 ```python title="Definition"
 class ListFacesRequestListFacesPaginateTypeDef(TypedDict):
     CollectionId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListProjectPoliciesRequestListProjectPoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListProjectPoliciesRequestListProjectPoliciesPaginateTypeDef
+
+def get_value() -> ListProjectPoliciesRequestListProjectPoliciesPaginateTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectPoliciesRequestListProjectPoliciesPaginateTypeDef(TypedDict):
+    ProjectArn: str,
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -2723,6 +2885,28 @@ class StreamProcessorInputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: KinesisVideoStreamTypeDef](./type_defs.md#kinesisvideostreamtypedef) 
+## ListProjectPoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListProjectPoliciesResponseTypeDef
+
+def get_value() -> ListProjectPoliciesResponseTypeDef:
+    return {
+        "ProjectPolicies": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectPoliciesResponseTypeDef(TypedDict):
+    ProjectPolicies: List[ProjectPolicyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProjectPolicyTypeDef](./type_defs.md#projectpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStreamProcessorsResponseTypeDef
 
 ```python title="Usage Example"
@@ -4539,6 +4723,7 @@ class ProjectVersionDescriptionTypeDef(TypedDict):
     ManifestSummary: NotRequired[GroundTruthManifestTypeDef],  # (6)
     KmsKeyId: NotRequired[str],
     MaxInferenceUnits: NotRequired[int],
+    SourceProjectVersionArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ProjectVersionStatusType](./literals.md#projectversionstatustype) 

@@ -37037,6 +37037,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listdatasetentriespaginator">ListDatasetEntriesPaginator</a></li>
 <li><a href="paginators/#listdatasetlabelspaginator">ListDatasetLabelsPaginator</a></li>
 <li><a href="paginators/#listfacespaginator">ListFacesPaginator</a></li>
+<li><a href="paginators/#listprojectpoliciespaginator">ListProjectPoliciesPaginator</a></li>
 <li><a href="paginators/#liststreamprocessorspaginator">ListStreamProcessorsPaginator</a></li>
 </ul>
 <h2 id="waiters">Waiters</h2>
@@ -37082,6 +37083,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listdatasetentriespaginatorname">ListDatasetEntriesPaginatorName</a></li>
 <li><a href="literals/#listdatasetlabelspaginatorname">ListDatasetLabelsPaginatorName</a></li>
 <li><a href="literals/#listfacespaginatorname">ListFacesPaginatorName</a></li>
+<li><a href="literals/#listprojectpoliciespaginatorname">ListProjectPoliciesPaginatorName</a></li>
 <li><a href="literals/#liststreamprocessorspaginatorname">ListStreamProcessorsPaginatorName</a></li>
 <li><a href="literals/#orientationcorrectiontype">OrientationCorrectionType</a></li>
 <li><a href="literals/#persontrackingsortbytype">PersonTrackingSortByType</a></li>
@@ -37131,10 +37133,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#connectedhomesettingsforupdatetypedef">ConnectedHomeSettingsForUpdateTypeDef</a></li>
 <li><a href="type_defs/#connectedhomesettingstypedef">ConnectedHomeSettingsTypeDef</a></li>
 <li><a href="type_defs/#moderationlabeltypedef">ModerationLabelTypeDef</a></li>
+<li><a href="type_defs/#outputconfigtypedef">OutputConfigTypeDef</a></li>
 <li><a href="type_defs/#coversbodyparttypedef">CoversBodyPartTypeDef</a></li>
 <li><a href="type_defs/#createcollectionrequestrequesttypedef">CreateCollectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createprojectrequestrequesttypedef">CreateProjectRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#outputconfigtypedef">OutputConfigTypeDef</a></li>
 <li><a href="type_defs/#streamprocessordatasharingpreferencetypedef">StreamProcessorDataSharingPreferenceTypeDef</a></li>
 <li><a href="type_defs/#streamprocessornotificationchanneltypedef">StreamProcessorNotificationChannelTypeDef</a></li>
 <li><a href="type_defs/#datasetchangestypedef">DatasetChangesTypeDef</a></li>
@@ -37144,6 +37146,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletecollectionrequestrequesttypedef">DeleteCollectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedatasetrequestrequesttypedef">DeleteDatasetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletefacesrequestrequesttypedef">DeleteFacesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteprojectpolicyrequestrequesttypedef">DeleteProjectPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteprojectrequestrequesttypedef">DeleteProjectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteprojectversionrequestrequesttypedef">DeleteProjectVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletestreamprocessorrequestrequesttypedef">DeleteStreamProcessorRequestRequestTypeDef</a></li>
@@ -37188,10 +37191,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdatasetentriesrequestrequesttypedef">ListDatasetEntriesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listdatasetlabelsrequestrequesttypedef">ListDatasetLabelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listfacesrequestrequesttypedef">ListFacesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listprojectpoliciesrequestrequesttypedef">ListProjectPoliciesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#projectpolicytypedef">ProjectPolicyTypeDef</a></li>
 <li><a href="type_defs/#liststreamprocessorsrequestrequesttypedef">ListStreamProcessorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#streamprocessortypedef">StreamProcessorTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#notificationchanneltypedef">NotificationChannelTypeDef</a></li>
+<li><a href="type_defs/#putprojectpolicyrequestrequesttypedef">PutProjectPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#s3destinationtypedef">S3DestinationTypeDef</a></li>
 <li><a href="type_defs/#searchfacesrequestrequesttypedef">SearchFacesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#shotsegmenttypedef">ShotSegmentTypeDef</a></li>
@@ -37207,6 +37213,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#comparedsourceimagefacetypedef">ComparedSourceImageFaceTypeDef</a></li>
 <li><a href="type_defs/#facetypedef">FaceTypeDef</a></li>
 <li><a href="type_defs/#instancetypedef">InstanceTypeDef</a></li>
+<li><a href="type_defs/#copyprojectversionresponsetypedef">CopyProjectVersionResponseTypeDef</a></li>
 <li><a href="type_defs/#createcollectionresponsetypedef">CreateCollectionResponseTypeDef</a></li>
 <li><a href="type_defs/#createdatasetresponsetypedef">CreateDatasetResponseTypeDef</a></li>
 <li><a href="type_defs/#createprojectresponsetypedef">CreateProjectResponseTypeDef</a></li>
@@ -37221,6 +37228,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listcollectionsresponsetypedef">ListCollectionsResponseTypeDef</a></li>
 <li><a href="type_defs/#listdatasetentriesresponsetypedef">ListDatasetEntriesResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#putprojectpolicyresponsetypedef">PutProjectPolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#startcelebrityrecognitionresponsetypedef">StartCelebrityRecognitionResponseTypeDef</a></li>
 <li><a href="type_defs/#startcontentmoderationresponsetypedef">StartContentModerationResponseTypeDef</a></li>
 <li><a href="type_defs/#startfacedetectionresponsetypedef">StartFaceDetectionResponseTypeDef</a></li>
@@ -37235,6 +37243,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#comparedfacetypedef">ComparedFaceTypeDef</a></li>
 <li><a href="type_defs/#streamprocessorsettingsforupdatetypedef">StreamProcessorSettingsForUpdateTypeDef</a></li>
 <li><a href="type_defs/#contentmoderationdetectiontypedef">ContentModerationDetectionTypeDef</a></li>
+<li><a href="type_defs/#copyprojectversionrequestrequesttypedef">CopyProjectVersionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#equipmentdetectiontypedef">EquipmentDetectionTypeDef</a></li>
 <li><a href="type_defs/#updatedatasetentriesrequestrequesttypedef">UpdateDatasetEntriesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datasetdescriptiontypedef">DatasetDescriptionTypeDef</a></li>
@@ -37246,6 +37255,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdatasetentriesrequestlistdatasetentriespaginatetypedef">ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdatasetlabelsrequestlistdatasetlabelspaginatetypedef">ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfacesrequestlistfacespaginatetypedef">ListFacesRequestListFacesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listprojectpoliciesrequestlistprojectpoliciespaginatetypedef">ListProjectPoliciesRequestListProjectPoliciesPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststreamprocessorsrequestliststreamprocessorspaginatetypedef">ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeprojectversionsrequestprojectversionrunningwaittypedef">DescribeProjectVersionsRequestProjectVersionRunningWaitTypeDef</a></li>
 <li><a href="type_defs/#describeprojectversionsrequestprojectversiontrainingcompletedwaittypedef">DescribeProjectVersionsRequestProjectVersionTrainingCompletedWaitTypeDef</a></li>
@@ -37262,6 +37272,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#humanloopconfigtypedef">HumanLoopConfigTypeDef</a></li>
 <li><a href="type_defs/#streamprocessingstartselectortypedef">StreamProcessingStartSelectorTypeDef</a></li>
 <li><a href="type_defs/#streamprocessorinputtypedef">StreamProcessorInputTypeDef</a></li>
+<li><a href="type_defs/#listprojectpoliciesresponsetypedef">ListProjectPoliciesResponseTypeDef</a></li>
 <li><a href="type_defs/#liststreamprocessorsresponsetypedef">ListStreamProcessorsResponseTypeDef</a></li>
 <li><a href="type_defs/#streamprocessoroutputtypedef">StreamProcessorOutputTypeDef</a></li>
 <li><a href="type_defs/#segmentdetectiontypedef">SegmentDetectionTypeDef</a></li>

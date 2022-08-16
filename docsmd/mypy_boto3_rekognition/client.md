@@ -41,8 +41,10 @@ except (
     client.InvalidImageFormatException,
     client.InvalidPaginationTokenException,
     client.InvalidParameterException,
+    client.InvalidPolicyRevisionIdException,
     client.InvalidS3ObjectException,
     client.LimitExceededException,
+    client.MalformedPolicyDocumentException,
     client.ProvisionedThroughputExceededException,
     client.ResourceAlreadyExistsException,
     client.ResourceInUseException,
@@ -133,6 +135,47 @@ parent.compare_faces(**kwargs)
 ```
 
 1. See [:material-code-braces: CompareFacesRequestRequestTypeDef](./type_defs.md#comparefacesrequestrequesttypedef) 
+
+### copy\_project\_version
+
+Copies a version of an Amazon Rekognition Custom Labels model from a source
+project to a destination project.
+
+Type annotations and code completion for `#!python boto3.client("rekognition").copy_project_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.copy_project_version)
+
+```python title="Method definition"
+def copy_project_version(
+    self,
+    *,
+    SourceProjectArn: str,
+    SourceProjectVersionArn: str,
+    DestinationProjectArn: str,
+    VersionName: str,
+    OutputConfig: OutputConfigTypeDef,  # (1)
+    Tags: Mapping[str, str] = ...,
+    KmsKeyId: str = ...,
+) -> CopyProjectVersionResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+2. See [:material-code-braces: CopyProjectVersionResponseTypeDef](./type_defs.md#copyprojectversionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CopyProjectVersionRequestRequestTypeDef = {  # (1)
+    "SourceProjectArn": ...,
+    "SourceProjectVersionArn": ...,
+    "DestinationProjectArn": ...,
+    "VersionName": ...,
+    "OutputConfig": ...,
+}
+
+parent.copy_project_version(**kwargs)
+```
+
+1. See [:material-code-braces: CopyProjectVersionRequestRequestTypeDef](./type_defs.md#copyprojectversionrequestrequesttypedef) 
 
 ### create\_collection
 
@@ -432,6 +475,37 @@ parent.delete_project(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
+
+### delete\_project\_policy
+
+Deletes an existing project policy.
+
+Type annotations and code completion for `#!python boto3.client("rekognition").delete_project_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_policy)
+
+```python title="Method definition"
+def delete_project_policy(
+    self,
+    *,
+    ProjectArn: str,
+    PolicyName: str,
+    PolicyRevisionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectPolicyRequestRequestTypeDef = {  # (1)
+    "ProjectArn": ...,
+    "PolicyName": ...,
+}
+
+parent.delete_project_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteProjectPolicyRequestRequestTypeDef](./type_defs.md#deleteprojectpolicyrequestrequesttypedef) 
 
 ### delete\_project\_version
 
@@ -1348,6 +1422,37 @@ parent.list_faces(**kwargs)
 
 1. See [:material-code-braces: ListFacesRequestRequestTypeDef](./type_defs.md#listfacesrequestrequesttypedef) 
 
+### list\_project\_policies
+
+Gets a list of the project policies attached to a project.
+
+Type annotations and code completion for `#!python boto3.client("rekognition").list_project_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_project_policies)
+
+```python title="Method definition"
+def list_project_policies(
+    self,
+    *,
+    ProjectArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProjectPoliciesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListProjectPoliciesResponseTypeDef](./type_defs.md#listprojectpoliciesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectPoliciesRequestRequestTypeDef = {  # (1)
+    "ProjectArn": ...,
+}
+
+parent.list_project_policies(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectPoliciesRequestRequestTypeDef](./type_defs.md#listprojectpoliciesrequestrequesttypedef) 
+
 ### list\_stream\_processors
 
 Gets a list of stream processors that you have created with
@@ -1408,6 +1513,41 @@ parent.list_tags_for_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
+### put\_project\_policy
+
+Attaches a project policy to a Amazon Rekognition Custom Labels project in a
+trusting AWS account.
+
+Type annotations and code completion for `#!python boto3.client("rekognition").put_project_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.put_project_policy)
+
+```python title="Method definition"
+def put_project_policy(
+    self,
+    *,
+    ProjectArn: str,
+    PolicyName: str,
+    PolicyDocument: str,
+    PolicyRevisionId: str = ...,
+) -> PutProjectPolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: PutProjectPolicyResponseTypeDef](./type_defs.md#putprojectpolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutProjectPolicyRequestRequestTypeDef = {  # (1)
+    "ProjectArn": ...,
+    "PolicyName": ...,
+    "PolicyDocument": ...,
+}
+
+parent.put_project_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutProjectPolicyRequestRequestTypeDef](./type_defs.md#putprojectpolicyrequestrequesttypedef) 
 
 ### recognize\_celebrities
 
@@ -2061,6 +2201,7 @@ Type annotations and code completion for `#!python boto3.client("rekognition").g
 - `client.get_paginator("list_dataset_entries")` -> [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
 - `client.get_paginator("list_dataset_labels")` -> [ListDatasetLabelsPaginator](./paginators.md#listdatasetlabelspaginator)
 - `client.get_paginator("list_faces")` -> [ListFacesPaginator](./paginators.md#listfacespaginator)
+- `client.get_paginator("list_project_policies")` -> [ListProjectPoliciesPaginator](./paginators.md#listprojectpoliciespaginator)
 - `client.get_paginator("list_stream_processors")` -> [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
 
 

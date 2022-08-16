@@ -365,6 +365,65 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListFacesRequestListFacesPaginateTypeDef](./type_defs.md#listfacesrequestlistfacespaginatetypedef) 
+## ListProjectPoliciesPaginator
+
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("list_project_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListProjectPolicies)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import ListProjectPoliciesPaginator
+
+def get_list_project_policies_paginator() -> ListProjectPoliciesPaginator:
+    return Session().client("rekognition").get_paginator("list_project_policies")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rekognition.paginator import ListProjectPoliciesPaginator
+
+session = Session()
+
+client = Session().client("rekognition")  # (1)
+paginator: ListProjectPoliciesPaginator = client.get_paginator("list_project_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RekognitionClient](./client.md)
+2. paginator: [ListProjectPoliciesPaginator](./paginators.md#listprojectpoliciespaginator)
+3. item: [:material-code-braces: ListProjectPoliciesResponseTypeDef](./type_defs.md#listprojectpoliciesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListProjectPoliciesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProjectArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProjectPoliciesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProjectPoliciesResponseTypeDef](./type_defs.md#listprojectpoliciesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectPoliciesRequestListProjectPoliciesPaginateTypeDef = {  # (1)
+    "ProjectArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectPoliciesRequestListProjectPoliciesPaginateTypeDef](./type_defs.md#listprojectpoliciesrequestlistprojectpoliciespaginatetypedef) 
 ## ListStreamProcessorsPaginator
 
 Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("list_stream_processors")`.

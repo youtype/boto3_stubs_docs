@@ -1436,7 +1436,7 @@ parent.describe_tag_option(**kwargs)
 
 ### disable\_aws\_organizations\_access
 
-Disable portfolio sharing through AWS Organizations feature.
+Disable portfolio sharing through the Organizations service.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog").disable_aws_organizations_access` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access)
@@ -1607,7 +1607,7 @@ parent.disassociate_tag_option_from_resource(**kwargs)
 
 ### enable\_aws\_organizations\_access
 
-Enable portfolio sharing feature through AWS Organizations.
+Enable portfolio sharing feature through Organizations.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog").enable_aws_organizations_access` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access)
@@ -1709,7 +1709,7 @@ def generate_presigned_url(
 
 ### get\_aws\_organizations\_access\_status
 
-Get the Access Status for AWS Organization portfolio share feature.
+Get the Access Status for Organizations portfolio share feature.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog").get_aws_organizations_access_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
@@ -1761,8 +1761,9 @@ parent.get_provisioned_product_outputs(**kwargs)
 
 ### import\_as\_provisioned\_product
 
-Requests the import of a resource as a Service Catalog provisioned product that
-is associated to a Service Catalog product and provisioning artifact.
+Requests the import of a resource as a Amazon Web Services Service Catalog
+provisioned product that is associated to a Amazon Web Services Service Catalog
+product and provisioning artifact.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog").import_as_provisioned_product` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)

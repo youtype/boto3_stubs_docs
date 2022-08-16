@@ -361,6 +361,20 @@ ListFacesPaginatorName = Literal[
     "list_faces",
 ]
 ```
+## ListProjectPoliciesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.literals import ListProjectPoliciesPaginatorName
+
+def get_value() -> ListProjectPoliciesPaginatorName:
+    return "list_project_policies"
+```
+
+```python title="Definition"
+ListProjectPoliciesPaginatorName = Literal[
+    "list_project_policies",
+]
+```
 ## ListStreamProcessorsPaginatorName
 
 ```python title="Usage Example"
@@ -443,11 +457,14 @@ ProjectVersionRunningWaiterName = Literal[
 from mypy_boto3_rekognition.literals import ProjectVersionStatusType
 
 def get_value() -> ProjectVersionStatusType:
-    return "DELETING"
+    return "COPYING_COMPLETED"
 ```
 
 ```python title="Definition"
 ProjectVersionStatusType = Literal[
+    "COPYING_COMPLETED",
+    "COPYING_FAILED",
+    "COPYING_IN_PROGRESS",
     "DELETING",
     "FAILED",
     "RUNNING",
@@ -1022,6 +1039,7 @@ PaginatorName = Literal[
     "list_dataset_entries",
     "list_dataset_labels",
     "list_faces",
+    "list_project_policies",
     "list_stream_processors",
 ]
 ```
