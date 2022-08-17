@@ -3624,6 +3624,7 @@ class CreateDBClusterMessageRequestTypeDef(TypedDict):
     PerformanceInsightsKMSKeyId: NotRequired[str],
     PerformanceInsightsRetentionPeriod: NotRequired[int],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
+    NetworkType: NotRequired[str],
     SourceRegion: NotRequired[str],
 ```
 
@@ -3678,6 +3679,7 @@ class ModifyDBClusterMessageRequestTypeDef(TypedDict):
     PerformanceInsightsKMSKeyId: NotRequired[str],
     PerformanceInsightsRetentionPeriod: NotRequired[int],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
@@ -3735,6 +3737,7 @@ class RestoreDBClusterFromS3MessageRequestTypeDef(TypedDict):
     Domain: NotRequired[str],
     DomainIAMRoleName: NotRequired[str],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (2)
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -3781,6 +3784,7 @@ class RestoreDBClusterFromSnapshotMessageRequestTypeDef(TypedDict):
     Iops: NotRequired[int],
     PubliclyAccessible: NotRequired[bool],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -3826,6 +3830,7 @@ class RestoreDBClusterToPointInTimeMessageRequestTypeDef(TypedDict):
     PubliclyAccessible: NotRequired[bool],
     Iops: NotRequired[int],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -7106,6 +7111,7 @@ class DBClusterTypeDef(TypedDict):
     PerformanceInsightsKMSKeyId: NotRequired[str],
     PerformanceInsightsRetentionPeriod: NotRequired[int],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationInfoTypeDef],  # (12)
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DBClusterOptionGroupStatusTypeDef](./type_defs.md#dbclusteroptiongroupstatustypedef) 

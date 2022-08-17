@@ -343,22 +343,24 @@ def create_data_source(
     IndexId: str,
     Type: DataSourceTypeType,  # (1)
     Configuration: DataSourceConfigurationTypeDef = ...,  # (2)
+    VpcConfiguration: DataSourceVpcConfigurationTypeDef = ...,  # (3)
     Description: str = ...,
     Schedule: str = ...,
     RoleArn: str = ...,
-    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
     ClientToken: str = ...,
     LanguageCode: str = ...,
-    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (4)
-) -> CreateDataSourceResponseTypeDef:  # (5)
+    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (5)
+) -> CreateDataSourceResponseTypeDef:  # (6)
     ...
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
 2. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
-5. See [:material-code-braces: CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef) 
+3. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+6. See [:material-code-braces: CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1941,18 +1943,20 @@ def update_data_source(
     IndexId: str,
     Name: str = ...,
     Configuration: DataSourceConfigurationTypeDef = ...,  # (1)
+    VpcConfiguration: DataSourceVpcConfigurationTypeDef = ...,  # (2)
     Description: str = ...,
     Schedule: str = ...,
     RoleArn: str = ...,
     LanguageCode: str = ...,
-    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (2)
-) -> EmptyResponseMetadataTypeDef:  # (3)
+    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (3)
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
-2. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
-3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+2. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+3. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

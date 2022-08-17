@@ -247,6 +247,7 @@ DataSourceTypeType = Literal[
     "SERVICENOW",
     "SHAREPOINT",
     "SLACK",
+    "TEMPLATE",
     "WEBCRAWLER",
     "WORKDOCS",
 ]

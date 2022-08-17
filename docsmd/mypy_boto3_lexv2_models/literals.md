@@ -417,6 +417,28 @@ CustomVocabularyStatusType = Literal[
     "Ready",
 ]
 ```
+## DialogActionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.literals import DialogActionTypeType
+
+def get_value() -> DialogActionTypeType:
+    return "CloseIntent"
+```
+
+```python title="Definition"
+DialogActionTypeType = Literal[
+    "CloseIntent",
+    "ConfirmIntent",
+    "ElicitIntent",
+    "ElicitSlot",
+    "EndConversation",
+    "EvaluateConditional",
+    "FulfillIntent",
+    "InvokeDialogCodeHook",
+    "StartIntent",
+]
+```
 ## EffectType
 
 ```python title="Usage Example"
@@ -730,6 +752,21 @@ def get_value() -> SlotFilterOperatorType:
 SlotFilterOperatorType = Literal[
     "CO",
     "EQ",
+]
+```
+## SlotShapeType
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.literals import SlotShapeType
+
+def get_value() -> SlotShapeType:
+    return "List"
+```
+
+```python title="Definition"
+SlotShapeType = Literal[
+    "List",
+    "Scalar",
 ]
 ```
 ## SlotSortAttributeType

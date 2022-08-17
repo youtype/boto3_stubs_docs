@@ -297,7 +297,9 @@ def create_event_source_mapping(
     SourceAccessConfigurations: Sequence[SourceAccessConfigurationTypeDef] = ...,  # (4)
     SelfManagedEventSource: SelfManagedEventSourceTypeDef = ...,  # (5)
     FunctionResponseTypes: Sequence[FunctionResponseTypeType] = ...,  # (6)
-) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (7)
+    AmazonManagedKafkaEventSourceConfig: AmazonManagedKafkaEventSourceConfigTypeDef = ...,  # (7)
+    SelfManagedKafkaEventSourceConfig: SelfManagedKafkaEventSourceConfigTypeDef = ...,  # (8)
+) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (9)
     ...
 ```
 
@@ -307,7 +309,9 @@ def create_event_source_mapping(
 4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
 5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
 6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
-7. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
+7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
+8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
+9. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

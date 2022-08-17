@@ -393,6 +393,25 @@ class ConfluenceBlogToIndexFieldMappingTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ConfluenceBlogFieldNameType](./literals.md#confluenceblogfieldnametype) 
+## ProxyConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import ProxyConfigurationTypeDef
+
+def get_value() -> ProxyConfigurationTypeDef:
+    return {
+        "Host": ...,
+        "Port": ...,
+    }
+```
+
+```python title="Definition"
+class ProxyConfigurationTypeDef(TypedDict):
+    Host: str,
+    Port: int,
+    Credentials: NotRequired[str],
+```
+
 ## ConfluencePageToIndexFieldMappingTypeDef
 
 ```python title="Usage Example"
@@ -566,6 +585,22 @@ class UserGroupResolutionConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype) 
+## TemplateConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import TemplateConfigurationTypeDef
+
+def get_value() -> TemplateConfigurationTypeDef:
+    return {
+        "Template": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateConfigurationTypeDef(TypedDict):
+    Template: NotRequired[Mapping[str, Any]],
+```
+
 ## DataSourceGroupTypeDef
 
 ```python title="Usage Example"
@@ -1716,25 +1751,6 @@ class ThesaurusSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ThesaurusStatusType](./literals.md#thesaurusstatustype) 
-## ProxyConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kendra.type_defs import ProxyConfigurationTypeDef
-
-def get_value() -> ProxyConfigurationTypeDef:
-    return {
-        "Host": ...,
-        "Port": ...,
-    }
-```
-
-```python title="Definition"
-class ProxyConfigurationTypeDef(TypedDict):
-    Host: str,
-    Port: int,
-    Credentials: NotRequired[str],
-```
-
 ## SortingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2407,41 +2423,6 @@ class OneDriveUsersTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
-## SharePointConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kendra.type_defs import SharePointConfigurationTypeDef
-
-def get_value() -> SharePointConfigurationTypeDef:
-    return {
-        "SharePointVersion": ...,
-        "Urls": ...,
-        "SecretArn": ...,
-    }
-```
-
-```python title="Definition"
-class SharePointConfigurationTypeDef(TypedDict):
-    SharePointVersion: SharePointVersionType,  # (1)
-    Urls: Sequence[str],
-    SecretArn: str,
-    CrawlAttachments: NotRequired[bool],
-    UseChangeLog: NotRequired[bool],
-    InclusionPatterns: NotRequired[Sequence[str]],
-    ExclusionPatterns: NotRequired[Sequence[str]],
-    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (2)
-    FieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (3)
-    DocumentTitleFieldName: NotRequired[str],
-    DisableLocalGroups: NotRequired[bool],
-    SslCertificateS3Path: NotRequired[S3PathTypeDef],  # (4)
-    AuthenticationType: NotRequired[SharePointOnlineAuthenticationTypeType],  # (5)
-```
-
-1. See [:material-code-brackets: SharePointVersionType](./literals.md#sharepointversiontype) 
-2. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
-3. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
-4. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
-5. See [:material-code-brackets: SharePointOnlineAuthenticationTypeType](./literals.md#sharepointonlineauthenticationtypetype) 
 ## UpdateQuerySuggestionsBlockListRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3126,6 +3107,43 @@ class ConfluenceBlogConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConfluenceBlogToIndexFieldMappingTypeDef](./type_defs.md#confluenceblogtoindexfieldmappingtypedef) 
+## SharePointConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import SharePointConfigurationTypeDef
+
+def get_value() -> SharePointConfigurationTypeDef:
+    return {
+        "SharePointVersion": ...,
+        "Urls": ...,
+        "SecretArn": ...,
+    }
+```
+
+```python title="Definition"
+class SharePointConfigurationTypeDef(TypedDict):
+    SharePointVersion: SharePointVersionType,  # (1)
+    Urls: Sequence[str],
+    SecretArn: str,
+    CrawlAttachments: NotRequired[bool],
+    UseChangeLog: NotRequired[bool],
+    InclusionPatterns: NotRequired[Sequence[str]],
+    ExclusionPatterns: NotRequired[Sequence[str]],
+    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (2)
+    FieldMappings: NotRequired[Sequence[DataSourceToIndexFieldMappingTypeDef]],  # (3)
+    DocumentTitleFieldName: NotRequired[str],
+    DisableLocalGroups: NotRequired[bool],
+    SslCertificateS3Path: NotRequired[S3PathTypeDef],  # (4)
+    AuthenticationType: NotRequired[SharePointOnlineAuthenticationTypeType],  # (5)
+    ProxyConfiguration: NotRequired[ProxyConfigurationTypeDef],  # (6)
+```
+
+1. See [:material-code-brackets: SharePointVersionType](./literals.md#sharepointversiontype) 
+2. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+3. See [:material-code-braces: DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef) 
+4. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+5. See [:material-code-brackets: SharePointOnlineAuthenticationTypeType](./literals.md#sharepointonlineauthenticationtypetype) 
+6. See [:material-code-braces: ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef) 
 ## ConfluencePageConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4118,6 +4136,7 @@ class ConfluenceConfigurationTypeDef(TypedDict):
     VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (6)
     InclusionPatterns: NotRequired[Sequence[str]],
     ExclusionPatterns: NotRequired[Sequence[str]],
+    ProxyConfiguration: NotRequired[ProxyConfigurationTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: ConfluenceVersionType](./literals.md#confluenceversiontype) 
@@ -4126,6 +4145,7 @@ class ConfluenceConfigurationTypeDef(TypedDict):
 4. See [:material-code-braces: ConfluenceBlogConfigurationTypeDef](./type_defs.md#confluenceblogconfigurationtypedef) 
 5. See [:material-code-braces: ConfluenceAttachmentConfigurationTypeDef](./type_defs.md#confluenceattachmentconfigurationtypedef) 
 6. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+7. See [:material-code-braces: ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef) 
 ## CreateAccessControlConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4858,6 +4878,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
     JiraConfiguration: NotRequired[JiraConfigurationTypeDef],  # (15)
     GitHubConfiguration: NotRequired[GitHubConfigurationTypeDef],  # (16)
     AlfrescoConfiguration: NotRequired[AlfrescoConfigurationTypeDef],  # (17)
+    TemplateConfiguration: NotRequired[TemplateConfigurationTypeDef],  # (18)
 ```
 
 1. See [:material-code-braces: S3DataSourceConfigurationTypeDef](./type_defs.md#s3datasourceconfigurationtypedef) 
@@ -4877,6 +4898,7 @@ class DataSourceConfigurationTypeDef(TypedDict):
 15. See [:material-code-braces: JiraConfigurationTypeDef](./type_defs.md#jiraconfigurationtypedef) 
 16. See [:material-code-braces: GitHubConfigurationTypeDef](./type_defs.md#githubconfigurationtypedef) 
 17. See [:material-code-braces: AlfrescoConfigurationTypeDef](./type_defs.md#alfrescoconfigurationtypedef) 
+18. See [:material-code-braces: TemplateConfigurationTypeDef](./type_defs.md#templateconfigurationtypedef) 
 ## BatchPutDocumentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4971,19 +4993,21 @@ class CreateDataSourceRequestRequestTypeDef(TypedDict):
     IndexId: str,
     Type: DataSourceTypeType,  # (1)
     Configuration: NotRequired[DataSourceConfigurationTypeDef],  # (2)
+    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (3)
     Description: NotRequired[str],
     Schedule: NotRequired[str],
     RoleArn: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
     ClientToken: NotRequired[str],
     LanguageCode: NotRequired[str],
-    CustomDocumentEnrichmentConfiguration: NotRequired[CustomDocumentEnrichmentConfigurationTypeDef],  # (4)
+    CustomDocumentEnrichmentConfiguration: NotRequired[CustomDocumentEnrichmentConfigurationTypeDef],  # (5)
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
 2. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+3. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
 ## DescribeDataSourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -4996,6 +5020,7 @@ def get_value() -> DescribeDataSourceResponseTypeDef:
         "Name": ...,
         "Type": ...,
         "Configuration": ...,
+        "VpcConfiguration": ...,
         "CreatedAt": ...,
         "UpdatedAt": ...,
         "Description": ...,
@@ -5016,23 +5041,25 @@ class DescribeDataSourceResponseTypeDef(TypedDict):
     Name: str,
     Type: DataSourceTypeType,  # (1)
     Configuration: DataSourceConfigurationTypeDef,  # (2)
+    VpcConfiguration: DataSourceVpcConfigurationTypeDef,  # (3)
     CreatedAt: datetime,
     UpdatedAt: datetime,
     Description: str,
-    Status: DataSourceStatusType,  # (3)
+    Status: DataSourceStatusType,  # (4)
     Schedule: str,
     RoleArn: str,
     ErrorMessage: str,
     LanguageCode: str,
-    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
 2. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
-3. See [:material-code-brackets: DataSourceStatusType](./literals.md#datasourcestatustype) 
-4. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+4. See [:material-code-brackets: DataSourceStatusType](./literals.md#datasourcestatustype) 
+5. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDataSourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5051,15 +5078,17 @@ class UpdateDataSourceRequestRequestTypeDef(TypedDict):
     IndexId: str,
     Name: NotRequired[str],
     Configuration: NotRequired[DataSourceConfigurationTypeDef],  # (1)
+    VpcConfiguration: NotRequired[DataSourceVpcConfigurationTypeDef],  # (2)
     Description: NotRequired[str],
     Schedule: NotRequired[str],
     RoleArn: NotRequired[str],
     LanguageCode: NotRequired[str],
-    CustomDocumentEnrichmentConfiguration: NotRequired[CustomDocumentEnrichmentConfigurationTypeDef],  # (2)
+    CustomDocumentEnrichmentConfiguration: NotRequired[CustomDocumentEnrichmentConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
-2. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+2. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
+3. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
 ## QueryResultTypeDef
 
 ```python title="Usage Example"

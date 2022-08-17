@@ -328,7 +328,8 @@ def create_intent(
     inputContexts: Sequence[InputContextTypeDef] = ...,  # (6)
     outputContexts: Sequence[OutputContextTypeDef] = ...,  # (7)
     kendraConfiguration: KendraConfigurationTypeDef = ...,  # (8)
-) -> CreateIntentResponseTypeDef:  # (9)
+    initialResponseSetting: InitialResponseSettingTypeDef = ...,  # (9)
+) -> CreateIntentResponseTypeDef:  # (10)
     ...
 ```
 
@@ -340,7 +341,8 @@ def create_intent(
 6. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
 7. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 8. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
-9. See [:material-code-braces: CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef) 
+9. See [:material-code-braces: InitialResponseSettingTypeDef](./type_defs.md#initialresponsesettingtypedef) 
+10. See [:material-code-braces: CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2289,7 +2291,8 @@ def update_intent(
     inputContexts: Sequence[InputContextTypeDef] = ...,  # (7)
     outputContexts: Sequence[OutputContextTypeDef] = ...,  # (8)
     kendraConfiguration: KendraConfigurationTypeDef = ...,  # (9)
-) -> UpdateIntentResponseTypeDef:  # (10)
+    initialResponseSetting: InitialResponseSettingTypeDef = ...,  # (10)
+) -> UpdateIntentResponseTypeDef:  # (11)
     ...
 ```
 
@@ -2302,7 +2305,8 @@ def update_intent(
 7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
 8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
-10. See [:material-code-braces: UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef) 
+10. See [:material-code-braces: InitialResponseSettingTypeDef](./type_defs.md#initialresponsesettingtypedef) 
+11. See [:material-code-braces: UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

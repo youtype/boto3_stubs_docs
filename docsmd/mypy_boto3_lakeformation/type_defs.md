@@ -71,6 +71,27 @@ class AddObjectInputTypeDef(TypedDict):
     PartitionValues: NotRequired[Sequence[str]],
 ```
 
+## AssumeDecoratedRoleWithSAMLRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import AssumeDecoratedRoleWithSAMLRequestRequestTypeDef
+
+def get_value() -> AssumeDecoratedRoleWithSAMLRequestRequestTypeDef:
+    return {
+        "SAMLAssertion": ...,
+        "RoleArn": ...,
+        "PrincipalArn": ...,
+    }
+```
+
+```python title="Definition"
+class AssumeDecoratedRoleWithSAMLRequestRequestTypeDef(TypedDict):
+    SAMLAssertion: str,
+    RoleArn: str,
+    PrincipalArn: str,
+    DurationSeconds: NotRequired[int],
+```
+
 ## AuditContextTypeDef
 
 ```python title="Usage Example"
@@ -993,6 +1014,31 @@ class ColumnLFTagTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+## AssumeDecoratedRoleWithSAMLResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import AssumeDecoratedRoleWithSAMLResponseTypeDef
+
+def get_value() -> AssumeDecoratedRoleWithSAMLResponseTypeDef:
+    return {
+        "AccessKeyId": ...,
+        "SecretAccessKey": ...,
+        "SessionToken": ...,
+        "Expiration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssumeDecoratedRoleWithSAMLResponseTypeDef(TypedDict):
+    AccessKeyId: str,
+    SecretAccessKey: str,
+    SessionToken: str,
+    Expiration: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CommitTransactionResponseTypeDef
 
 ```python title="Usage Example"

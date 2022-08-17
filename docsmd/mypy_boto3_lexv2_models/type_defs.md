@@ -682,6 +682,22 @@ class LambdaCodeHookTypeDef(TypedDict):
     codeHookInterfaceVersion: str,
 ```
 
+## ConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import ConditionTypeDef
+
+def get_value() -> ConditionTypeDef:
+    return {
+        "expressionString": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionTypeDef(TypedDict):
+    expressionString: str,
+```
+
 ## SentimentAnalysisSettingsTypeDef
 
 ```python title="Usage Example"
@@ -1459,6 +1475,60 @@ class DescribeSlotTypeRequestRequestTypeDef(TypedDict):
     localeId: str,
 ```
 
+## DialogActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DialogActionTypeDef
+
+def get_value() -> DialogActionTypeDef:
+    return {
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class DialogActionTypeDef(TypedDict):
+    type: DialogActionTypeType,  # (1)
+    slotToElicit: NotRequired[str],
+    suppressNextMessage: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: DialogActionTypeType](./literals.md#dialogactiontypetype) 
+## IntentOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import IntentOverrideTypeDef
+
+def get_value() -> IntentOverrideTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class IntentOverrideTypeDef(TypedDict):
+    name: NotRequired[str],
+    slots: NotRequired[Mapping[str, SlotValueOverrideTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SlotValueOverrideTypeDef](./type_defs.md#slotvalueoverridetypedef) 
+## ElicitationCodeHookInvocationSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import ElicitationCodeHookInvocationSettingTypeDef
+
+def get_value() -> ElicitationCodeHookInvocationSettingTypeDef:
+    return {
+        "enableCodeHookInvocation": ...,
+    }
+```
+
+```python title="Definition"
+class ElicitationCodeHookInvocationSettingTypeDef(TypedDict):
+    enableCodeHookInvocation: bool,
+    invocationLabel: NotRequired[str],
+```
+
 ## ExportFilterTypeDef
 
 ```python title="Usage Example"
@@ -1931,6 +2001,22 @@ def get_value() -> SlotDefaultValueTypeDef:
 ```python title="Definition"
 class SlotDefaultValueTypeDef(TypedDict):
     defaultValue: str,
+```
+
+## SlotValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SlotValueTypeDef
+
+def get_value() -> SlotValueTypeDef:
+    return {
+        "interpretedValue": ...,
+    }
+```
+
+```python title="Definition"
+class SlotValueTypeDef(TypedDict):
+    interpretedValue: NotRequired[str],
 ```
 
 ## SlotValueRegexFilterTypeDef
@@ -3617,6 +3703,26 @@ class UpdateBotRecommendationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
+## DialogStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DialogStateTypeDef
+
+def get_value() -> DialogStateTypeDef:
+    return {
+        "dialogAction": ...,
+    }
+```
+
+```python title="Definition"
+class DialogStateTypeDef(TypedDict):
+    dialogAction: NotRequired[DialogActionTypeDef],  # (1)
+    intent: NotRequired[IntentOverrideTypeDef],  # (2)
+    sessionAttributes: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: DialogActionTypeDef](./type_defs.md#dialogactiontypedef) 
+2. See [:material-code-braces: IntentOverrideTypeDef](./type_defs.md#intentoverridetypedef) 
 ## ListExportsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3901,6 +4007,27 @@ class SlotDefaultValueSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SlotDefaultValueTypeDef](./type_defs.md#slotdefaultvaluetypedef) 
+## SlotValueOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SlotValueOverrideTypeDef
+
+def get_value() -> SlotValueOverrideTypeDef:
+    return {
+        "shape": ...,
+    }
+```
+
+```python title="Definition"
+class SlotValueOverrideTypeDef(TypedDict):
+    shape: NotRequired[SlotShapeType],  # (1)
+    value: NotRequired[SlotValueTypeDef],  # (2)
+    values: NotRequired[Sequence[SlotValueOverrideTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: SlotShapeType](./literals.md#slotshapetype) 
+2. See [:material-code-braces: SlotValueTypeDef](./type_defs.md#slotvaluetypedef) 
+3. See [:material-code-braces: SlotValueOverrideTypeDef](./type_defs.md#slotvalueoverridetypedef) 
 ## SlotValueSelectionSettingTypeDef
 
 ```python title="Usage Example"
@@ -5038,66 +5165,49 @@ class SlotSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SlotConstraintType](./literals.md#slotconstrainttype) 
 2. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
-## IntentClosingSettingTypeDef
+## ConditionalBranchTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import IntentClosingSettingTypeDef
+from mypy_boto3_lexv2_models.type_defs import ConditionalBranchTypeDef
 
-def get_value() -> IntentClosingSettingTypeDef:
+def get_value() -> ConditionalBranchTypeDef:
     return {
-        "closingResponse": ...,
+        "name": ...,
+        "condition": ...,
+        "nextStep": ...,
     }
 ```
 
 ```python title="Definition"
-class IntentClosingSettingTypeDef(TypedDict):
-    closingResponse: ResponseSpecificationTypeDef,  # (1)
-    active: NotRequired[bool],
+class ConditionalBranchTypeDef(TypedDict):
+    name: str,
+    condition: ConditionTypeDef,  # (1)
+    nextStep: DialogStateTypeDef,  # (2)
+    response: NotRequired[ResponseSpecificationTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
-## IntentConfirmationSettingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import IntentConfirmationSettingTypeDef
-
-def get_value() -> IntentConfirmationSettingTypeDef:
-    return {
-        "promptSpecification": ...,
-        "declinationResponse": ...,
-    }
-```
-
-```python title="Definition"
-class IntentConfirmationSettingTypeDef(TypedDict):
-    promptSpecification: PromptSpecificationTypeDef,  # (1)
-    declinationResponse: ResponseSpecificationTypeDef,  # (2)
-    active: NotRequired[bool],
-```
-
-1. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
-2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
-## PostFulfillmentStatusSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import PostFulfillmentStatusSpecificationTypeDef
-
-def get_value() -> PostFulfillmentStatusSpecificationTypeDef:
-    return {
-        "successResponse": ...,
-    }
-```
-
-```python title="Definition"
-class PostFulfillmentStatusSpecificationTypeDef(TypedDict):
-    successResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
-    failureResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
-    timeoutResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
-2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+1. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
 3. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+## DefaultConditionalBranchTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DefaultConditionalBranchTypeDef
+
+def get_value() -> DefaultConditionalBranchTypeDef:
+    return {
+        "nextStep": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultConditionalBranchTypeDef(TypedDict):
+    nextStep: NotRequired[DialogStateTypeDef],  # (1)
+    response: NotRequired[ResponseSpecificationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
 ## WaitAndContinueSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -5293,6 +5403,138 @@ class ListSlotsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SlotSummaryTypeDef](./type_defs.md#slotsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ConditionalSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import ConditionalSpecificationTypeDef
+
+def get_value() -> ConditionalSpecificationTypeDef:
+    return {
+        "active": ...,
+        "conditionalBranches": ...,
+        "defaultBranch": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalSpecificationTypeDef(TypedDict):
+    active: bool,
+    conditionalBranches: Sequence[ConditionalBranchTypeDef],  # (1)
+    defaultBranch: DefaultConditionalBranchTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConditionalBranchTypeDef](./type_defs.md#conditionalbranchtypedef) 
+2. See [:material-code-braces: DefaultConditionalBranchTypeDef](./type_defs.md#defaultconditionalbranchtypedef) 
+## IntentClosingSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import IntentClosingSettingTypeDef
+
+def get_value() -> IntentClosingSettingTypeDef:
+    return {
+        "closingResponse": ...,
+    }
+```
+
+```python title="Definition"
+class IntentClosingSettingTypeDef(TypedDict):
+    closingResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    active: NotRequired[bool],
+    nextStep: NotRequired[DialogStateTypeDef],  # (2)
+    conditional: NotRequired[ConditionalSpecificationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+2. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+3. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+## PostDialogCodeHookInvocationSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import PostDialogCodeHookInvocationSpecificationTypeDef
+
+def get_value() -> PostDialogCodeHookInvocationSpecificationTypeDef:
+    return {
+        "successResponse": ...,
+    }
+```
+
+```python title="Definition"
+class PostDialogCodeHookInvocationSpecificationTypeDef(TypedDict):
+    successResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    successNextStep: NotRequired[DialogStateTypeDef],  # (2)
+    successConditional: NotRequired[ConditionalSpecificationTypeDef],  # (3)
+    failureResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    failureNextStep: NotRequired[DialogStateTypeDef],  # (2)
+    failureConditional: NotRequired[ConditionalSpecificationTypeDef],  # (3)
+    timeoutResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    timeoutNextStep: NotRequired[DialogStateTypeDef],  # (2)
+    timeoutConditional: NotRequired[ConditionalSpecificationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+2. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+3. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+4. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+5. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+6. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+7. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+8. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+9. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+## PostFulfillmentStatusSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import PostFulfillmentStatusSpecificationTypeDef
+
+def get_value() -> PostFulfillmentStatusSpecificationTypeDef:
+    return {
+        "successResponse": ...,
+    }
+```
+
+```python title="Definition"
+class PostFulfillmentStatusSpecificationTypeDef(TypedDict):
+    successResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    failureResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    timeoutResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    successNextStep: NotRequired[DialogStateTypeDef],  # (4)
+    successConditional: NotRequired[ConditionalSpecificationTypeDef],  # (5)
+    failureNextStep: NotRequired[DialogStateTypeDef],  # (4)
+    failureConditional: NotRequired[ConditionalSpecificationTypeDef],  # (5)
+    timeoutNextStep: NotRequired[DialogStateTypeDef],  # (4)
+    timeoutConditional: NotRequired[ConditionalSpecificationTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+3. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+4. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+5. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+6. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+7. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+8. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+9. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+## DialogCodeHookInvocationSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DialogCodeHookInvocationSettingTypeDef
+
+def get_value() -> DialogCodeHookInvocationSettingTypeDef:
+    return {
+        "enableCodeHookInvocation": ...,
+        "active": ...,
+        "postCodeHookSpecification": ...,
+    }
+```
+
+```python title="Definition"
+class DialogCodeHookInvocationSettingTypeDef(TypedDict):
+    enableCodeHookInvocation: bool,
+    active: bool,
+    postCodeHookSpecification: PostDialogCodeHookInvocationSpecificationTypeDef,  # (1)
+    invocationLabel: NotRequired[str],
+```
+
+1. See [:material-code-braces: PostDialogCodeHookInvocationSpecificationTypeDef](./type_defs.md#postdialogcodehookinvocationspecificationtypedef) 
 ## FulfillmentCodeHookSettingsTypeDef
 
 ```python title="Usage Example"
@@ -5309,35 +5551,105 @@ class FulfillmentCodeHookSettingsTypeDef(TypedDict):
     enabled: bool,
     postFulfillmentStatusSpecification: NotRequired[PostFulfillmentStatusSpecificationTypeDef],  # (1)
     fulfillmentUpdatesSpecification: NotRequired[FulfillmentUpdatesSpecificationTypeDef],  # (2)
+    active: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: PostFulfillmentStatusSpecificationTypeDef](./type_defs.md#postfulfillmentstatusspecificationtypedef) 
 2. See [:material-code-braces: FulfillmentUpdatesSpecificationTypeDef](./type_defs.md#fulfillmentupdatesspecificationtypedef) 
-## SlotValueElicitationSettingTypeDef
+## InitialResponseSettingTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import SlotValueElicitationSettingTypeDef
+from mypy_boto3_lexv2_models.type_defs import InitialResponseSettingTypeDef
 
-def get_value() -> SlotValueElicitationSettingTypeDef:
+def get_value() -> InitialResponseSettingTypeDef:
     return {
-        "slotConstraint": ...,
+        "initialResponse": ...,
     }
 ```
 
 ```python title="Definition"
-class SlotValueElicitationSettingTypeDef(TypedDict):
-    slotConstraint: SlotConstraintType,  # (2)
-    defaultValueSpecification: NotRequired[SlotDefaultValueSpecificationTypeDef],  # (1)
-    promptSpecification: NotRequired[PromptSpecificationTypeDef],  # (3)
-    sampleUtterances: NotRequired[Sequence[SampleUtteranceTypeDef]],  # (4)
-    waitAndContinueSpecification: NotRequired[WaitAndContinueSpecificationTypeDef],  # (5)
+class InitialResponseSettingTypeDef(TypedDict):
+    initialResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    nextStep: NotRequired[DialogStateTypeDef],  # (2)
+    conditional: NotRequired[ConditionalSpecificationTypeDef],  # (3)
+    codeHook: NotRequired[DialogCodeHookInvocationSettingTypeDef],  # (4)
 ```
 
-1. See [:material-code-braces: SlotDefaultValueSpecificationTypeDef](./type_defs.md#slotdefaultvaluespecificationtypedef) 
-2. See [:material-code-brackets: SlotConstraintType](./literals.md#slotconstrainttype) 
-3. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
-4. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
-5. See [:material-code-braces: WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef) 
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+2. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+3. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+4. See [:material-code-braces: DialogCodeHookInvocationSettingTypeDef](./type_defs.md#dialogcodehookinvocationsettingtypedef) 
+## IntentConfirmationSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import IntentConfirmationSettingTypeDef
+
+def get_value() -> IntentConfirmationSettingTypeDef:
+    return {
+        "promptSpecification": ...,
+    }
+```
+
+```python title="Definition"
+class IntentConfirmationSettingTypeDef(TypedDict):
+    promptSpecification: PromptSpecificationTypeDef,  # (1)
+    declinationResponse: NotRequired[ResponseSpecificationTypeDef],  # (2)
+    active: NotRequired[bool],
+    confirmationResponse: NotRequired[ResponseSpecificationTypeDef],  # (2)
+    confirmationNextStep: NotRequired[DialogStateTypeDef],  # (4)
+    confirmationConditional: NotRequired[ConditionalSpecificationTypeDef],  # (5)
+    declinationNextStep: NotRequired[DialogStateTypeDef],  # (4)
+    declinationConditional: NotRequired[ConditionalSpecificationTypeDef],  # (5)
+    failureResponse: NotRequired[ResponseSpecificationTypeDef],  # (2)
+    failureNextStep: NotRequired[DialogStateTypeDef],  # (4)
+    failureConditional: NotRequired[ConditionalSpecificationTypeDef],  # (5)
+    codeHook: NotRequired[DialogCodeHookInvocationSettingTypeDef],  # (11)
+    elicitationCodeHook: NotRequired[ElicitationCodeHookInvocationSettingTypeDef],  # (12)
+```
+
+1. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
+2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+3. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+4. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+5. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+6. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+7. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+8. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+9. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+10. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+11. See [:material-code-braces: DialogCodeHookInvocationSettingTypeDef](./type_defs.md#dialogcodehookinvocationsettingtypedef) 
+12. See [:material-code-braces: ElicitationCodeHookInvocationSettingTypeDef](./type_defs.md#elicitationcodehookinvocationsettingtypedef) 
+## SlotCaptureSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SlotCaptureSettingTypeDef
+
+def get_value() -> SlotCaptureSettingTypeDef:
+    return {
+        "captureResponse": ...,
+    }
+```
+
+```python title="Definition"
+class SlotCaptureSettingTypeDef(TypedDict):
+    captureResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    captureNextStep: NotRequired[DialogStateTypeDef],  # (2)
+    captureConditional: NotRequired[ConditionalSpecificationTypeDef],  # (3)
+    failureResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    failureNextStep: NotRequired[DialogStateTypeDef],  # (2)
+    failureConditional: NotRequired[ConditionalSpecificationTypeDef],  # (3)
+    codeHook: NotRequired[DialogCodeHookInvocationSettingTypeDef],  # (7)
+    elicitationCodeHook: NotRequired[ElicitationCodeHookInvocationSettingTypeDef],  # (8)
+```
+
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+2. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+3. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+4. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+5. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
+6. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+7. See [:material-code-braces: DialogCodeHookInvocationSettingTypeDef](./type_defs.md#dialogcodehookinvocationsettingtypedef) 
+8. See [:material-code-braces: ElicitationCodeHookInvocationSettingTypeDef](./type_defs.md#elicitationcodehookinvocationsettingtypedef) 
 ## CreateIntentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5368,6 +5680,7 @@ class CreateIntentRequestRequestTypeDef(TypedDict):
     inputContexts: NotRequired[Sequence[InputContextTypeDef]],  # (6)
     outputContexts: NotRequired[Sequence[OutputContextTypeDef]],  # (7)
     kendraConfiguration: NotRequired[KendraConfigurationTypeDef],  # (8)
+    initialResponseSetting: NotRequired[InitialResponseSettingTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
@@ -5378,6 +5691,7 @@ class CreateIntentRequestRequestTypeDef(TypedDict):
 6. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
 7. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 8. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+9. See [:material-code-braces: InitialResponseSettingTypeDef](./type_defs.md#initialresponsesettingtypedef) 
 ## CreateIntentResponseTypeDef
 
 ```python title="Usage Example"
@@ -5401,6 +5715,7 @@ def get_value() -> CreateIntentResponseTypeDef:
         "botVersion": ...,
         "localeId": ...,
         "creationDateTime": ...,
+        "initialResponseSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -5423,7 +5738,8 @@ class CreateIntentResponseTypeDef(TypedDict):
     botVersion: str,
     localeId: str,
     creationDateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
+    initialResponseSetting: InitialResponseSettingTypeDef,  # (9)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
 ```
 
 1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
@@ -5434,7 +5750,8 @@ class CreateIntentResponseTypeDef(TypedDict):
 6. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
 7. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 8. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
-9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+9. See [:material-code-braces: InitialResponseSettingTypeDef](./type_defs.md#initialresponsesettingtypedef) 
+10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIntentResponseTypeDef
 
 ```python title="Usage Example"
@@ -5460,6 +5777,7 @@ def get_value() -> DescribeIntentResponseTypeDef:
         "localeId": ...,
         "creationDateTime": ...,
         "lastUpdatedDateTime": ...,
+        "initialResponseSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -5484,7 +5802,8 @@ class DescribeIntentResponseTypeDef(TypedDict):
     localeId: str,
     creationDateTime: datetime,
     lastUpdatedDateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+    initialResponseSetting: InitialResponseSettingTypeDef,  # (10)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (11)
 ```
 
 1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
@@ -5496,7 +5815,8 @@ class DescribeIntentResponseTypeDef(TypedDict):
 7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
 8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
-10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+10. See [:material-code-braces: InitialResponseSettingTypeDef](./type_defs.md#initialresponsesettingtypedef) 
+11. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateIntentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5530,6 +5850,7 @@ class UpdateIntentRequestRequestTypeDef(TypedDict):
     inputContexts: NotRequired[Sequence[InputContextTypeDef]],  # (7)
     outputContexts: NotRequired[Sequence[OutputContextTypeDef]],  # (8)
     kendraConfiguration: NotRequired[KendraConfigurationTypeDef],  # (9)
+    initialResponseSetting: NotRequired[InitialResponseSettingTypeDef],  # (10)
 ```
 
 1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
@@ -5541,6 +5862,7 @@ class UpdateIntentRequestRequestTypeDef(TypedDict):
 7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
 8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+10. See [:material-code-braces: InitialResponseSettingTypeDef](./type_defs.md#initialresponsesettingtypedef) 
 ## UpdateIntentResponseTypeDef
 
 ```python title="Usage Example"
@@ -5566,6 +5888,7 @@ def get_value() -> UpdateIntentResponseTypeDef:
         "localeId": ...,
         "creationDateTime": ...,
         "lastUpdatedDateTime": ...,
+        "initialResponseSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -5590,7 +5913,8 @@ class UpdateIntentResponseTypeDef(TypedDict):
     localeId: str,
     creationDateTime: datetime,
     lastUpdatedDateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+    initialResponseSetting: InitialResponseSettingTypeDef,  # (10)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (11)
 ```
 
 1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
@@ -5602,7 +5926,35 @@ class UpdateIntentResponseTypeDef(TypedDict):
 7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
 8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
-10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+10. See [:material-code-braces: InitialResponseSettingTypeDef](./type_defs.md#initialresponsesettingtypedef) 
+11. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SlotValueElicitationSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SlotValueElicitationSettingTypeDef
+
+def get_value() -> SlotValueElicitationSettingTypeDef:
+    return {
+        "slotConstraint": ...,
+    }
+```
+
+```python title="Definition"
+class SlotValueElicitationSettingTypeDef(TypedDict):
+    slotConstraint: SlotConstraintType,  # (2)
+    defaultValueSpecification: NotRequired[SlotDefaultValueSpecificationTypeDef],  # (1)
+    promptSpecification: NotRequired[PromptSpecificationTypeDef],  # (3)
+    sampleUtterances: NotRequired[Sequence[SampleUtteranceTypeDef]],  # (4)
+    waitAndContinueSpecification: NotRequired[WaitAndContinueSpecificationTypeDef],  # (5)
+    slotCaptureSetting: NotRequired[SlotCaptureSettingTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: SlotDefaultValueSpecificationTypeDef](./type_defs.md#slotdefaultvaluespecificationtypedef) 
+2. See [:material-code-brackets: SlotConstraintType](./literals.md#slotconstrainttype) 
+3. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
+4. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+5. See [:material-code-braces: WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef) 
+6. See [:material-code-braces: SlotCaptureSettingTypeDef](./type_defs.md#slotcapturesettingtypedef) 
 ## CreateSlotRequestRequestTypeDef
 
 ```python title="Usage Example"

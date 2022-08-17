@@ -156,6 +156,22 @@ class AllowedPublishersTypeDef(TypedDict):
     SigningProfileVersionArns: Sequence[str],
 ```
 
+## AmazonManagedKafkaEventSourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import AmazonManagedKafkaEventSourceConfigTypeDef
+
+def get_value() -> AmazonManagedKafkaEventSourceConfigTypeDef:
+    return {
+        "ConsumerGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class AmazonManagedKafkaEventSourceConfigTypeDef(TypedDict):
+    ConsumerGroupId: NotRequired[str],
+```
+
 ## CodeSigningPoliciesTypeDef
 
 ```python title="Usage Example"
@@ -227,6 +243,22 @@ class SelfManagedEventSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EndPointTypeType](./literals.md#endpointtypetype) 
+## SelfManagedKafkaEventSourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import SelfManagedKafkaEventSourceConfigTypeDef
+
+def get_value() -> SelfManagedKafkaEventSourceConfigTypeDef:
+    return {
+        "ConsumerGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class SelfManagedKafkaEventSourceConfigTypeDef(TypedDict):
+    ConsumerGroupId: NotRequired[str],
+```
+
 ## SourceAccessConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3062,6 +3094,8 @@ class CreateEventSourceMappingRequestRequestTypeDef(TypedDict):
     SourceAccessConfigurations: NotRequired[Sequence[SourceAccessConfigurationTypeDef]],  # (4)
     SelfManagedEventSource: NotRequired[SelfManagedEventSourceTypeDef],  # (5)
     FunctionResponseTypes: NotRequired[Sequence[FunctionResponseTypeType]],  # (6)
+    AmazonManagedKafkaEventSourceConfig: NotRequired[AmazonManagedKafkaEventSourceConfigTypeDef],  # (7)
+    SelfManagedKafkaEventSourceConfig: NotRequired[SelfManagedKafkaEventSourceConfigTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
@@ -3070,6 +3104,8 @@ class CreateEventSourceMappingRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
 5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
 6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
+7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
+8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
 ## EventSourceMappingConfigurationResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -3100,6 +3136,8 @@ def get_value() -> EventSourceMappingConfigurationResponseMetadataTypeDef:
         "MaximumRetryAttempts": ...,
         "TumblingWindowInSeconds": ...,
         "FunctionResponseTypes": ...,
+        "AmazonManagedKafkaEventSourceConfig": ...,
+        "SelfManagedKafkaEventSourceConfig": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3129,7 +3167,9 @@ class EventSourceMappingConfigurationResponseMetadataTypeDef(TypedDict):
     MaximumRetryAttempts: int,
     TumblingWindowInSeconds: int,
     FunctionResponseTypes: List[FunctionResponseTypeType],  # (6)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+    AmazonManagedKafkaEventSourceConfig: AmazonManagedKafkaEventSourceConfigTypeDef,  # (7)
+    SelfManagedKafkaEventSourceConfig: SelfManagedKafkaEventSourceConfigTypeDef,  # (8)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
 ```
 
 1. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
@@ -3138,7 +3178,9 @@ class EventSourceMappingConfigurationResponseMetadataTypeDef(TypedDict):
 4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
 5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
 6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
+8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventSourceMappingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3175,6 +3217,8 @@ class EventSourceMappingConfigurationTypeDef(TypedDict):
     MaximumRetryAttempts: NotRequired[int],
     TumblingWindowInSeconds: NotRequired[int],
     FunctionResponseTypes: NotRequired[List[FunctionResponseTypeType]],  # (6)
+    AmazonManagedKafkaEventSourceConfig: NotRequired[AmazonManagedKafkaEventSourceConfigTypeDef],  # (7)
+    SelfManagedKafkaEventSourceConfig: NotRequired[SelfManagedKafkaEventSourceConfigTypeDef],  # (8)
 ```
 
 1. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
@@ -3183,6 +3227,8 @@ class EventSourceMappingConfigurationTypeDef(TypedDict):
 4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
 5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
 6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
+7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
+8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
 ## UpdateEventSourceMappingRequestRequestTypeDef
 
 ```python title="Usage Example"

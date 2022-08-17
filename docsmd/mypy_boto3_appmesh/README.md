@@ -147,15 +147,15 @@ def get_value() -> DefaultGatewayRouteRewriteType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_appmesh.type_defs import FileAccessLogTypeDef
+from mypy_boto3_appmesh.type_defs import AwsCloudMapInstanceAttributeTypeDef
 
-def get_value() -> FileAccessLogTypeDef:
+def get_value() -> AwsCloudMapInstanceAttributeTypeDef:
     return {
-        "path": ...,
+        "key": ...,
+        "value": ...,
     }
 ```
 
-- [FileAccessLogTypeDef](./type_defs.md#fileaccesslogtypedef)
 - [AwsCloudMapInstanceAttributeTypeDef](./type_defs.md#awscloudmapinstanceattributetypedef)
 - [ListenerTlsFileCertificateTypeDef](./type_defs.md#listenertlsfilecertificatetypedef)
 - [ListenerTlsSdsCertificateTypeDef](./type_defs.md#listenertlssdscertificatetypedef)
@@ -191,6 +191,7 @@ def get_value() -> FileAccessLogTypeDef:
 - [HttpGatewayRoutePathRewriteTypeDef](./type_defs.md#httpgatewayroutepathrewritetypedef)
 - [HttpGatewayRoutePrefixRewriteTypeDef](./type_defs.md#httpgatewayrouteprefixrewritetypedef)
 - [QueryParameterMatchTypeDef](./type_defs.md#queryparametermatchtypedef)
+- [JsonFormatRefTypeDef](./type_defs.md#jsonformatreftypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListGatewayRoutesInputRequestTypeDef](./type_defs.md#listgatewayroutesinputrequesttypedef)
 - [ListMeshesInputRequestTypeDef](./type_defs.md#listmeshesinputrequesttypedef)
@@ -214,9 +215,9 @@ def get_value() -> FileAccessLogTypeDef:
 - [MeshServiceDiscoveryTypeDef](./type_defs.md#meshservicediscoverytypedef)
 - [RouteStatusTypeDef](./type_defs.md#routestatustypedef)
 - [SubjectAlternativeNameMatchersTypeDef](./type_defs.md#subjectalternativenamematcherstypedef)
+- [TcpRouteMatchTypeDef](./type_defs.md#tcproutematchtypedef)
 - [TlsValidationContextAcmTrustTypeDef](./type_defs.md#tlsvalidationcontextacmtrusttypedef)
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
-- [VirtualGatewayFileAccessLogTypeDef](./type_defs.md#virtualgatewayfileaccesslogtypedef)
 - [VirtualGatewayListenerTlsFileCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsfilecertificatetypedef)
 - [VirtualGatewayListenerTlsSdsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlssdscertificatetypedef)
 - [VirtualGatewayGrpcConnectionPoolTypeDef](./type_defs.md#virtualgatewaygrpcconnectionpooltypedef)
@@ -238,7 +239,6 @@ def get_value() -> FileAccessLogTypeDef:
 - [VirtualRouterStatusTypeDef](./type_defs.md#virtualrouterstatustypedef)
 - [VirtualRouterServiceProviderTypeDef](./type_defs.md#virtualrouterserviceprovidertypedef)
 - [VirtualServiceStatusTypeDef](./type_defs.md#virtualservicestatustypedef)
-- [AccessLogTypeDef](./type_defs.md#accesslogtypedef)
 - [AwsCloudMapServiceDiscoveryTypeDef](./type_defs.md#awscloudmapservicediscoverytypedef)
 - [ClientTlsCertificateTypeDef](./type_defs.md#clienttlscertificatetypedef)
 - [TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef)
@@ -260,6 +260,7 @@ def get_value() -> FileAccessLogTypeDef:
 - [TcpRouteActionTypeDef](./type_defs.md#tcprouteactiontypedef)
 - [HttpGatewayRouteRewriteTypeDef](./type_defs.md#httpgatewayrouterewritetypedef)
 - [HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)
+- [LoggingFormatTypeDef](./type_defs.md#loggingformattypedef)
 - [ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef](./type_defs.md#listgatewayroutesinputlistgatewayroutespaginatetypedef)
 - [ListMeshesInputListMeshesPaginateTypeDef](./type_defs.md#listmeshesinputlistmeshespaginatetypedef)
 - [ListRoutesInputListRoutesPaginateTypeDef](./type_defs.md#listroutesinputlistroutespaginatetypedef)
@@ -280,7 +281,6 @@ def get_value() -> FileAccessLogTypeDef:
 - [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
 - [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
 - [TlsValidationContextTrustTypeDef](./type_defs.md#tlsvalidationcontexttrusttypedef)
-- [VirtualGatewayAccessLogTypeDef](./type_defs.md#virtualgatewayaccesslogtypedef)
 - [VirtualGatewayClientTlsCertificateTypeDef](./type_defs.md#virtualgatewayclienttlscertificatetypedef)
 - [VirtualGatewayConnectionPoolTypeDef](./type_defs.md#virtualgatewayconnectionpooltypedef)
 - [VirtualGatewayListenerTlsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlscertificatetypedef)
@@ -288,7 +288,6 @@ def get_value() -> FileAccessLogTypeDef:
 - [VirtualGatewayTlsValidationContextTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttrusttypedef)
 - [VirtualNodeConnectionPoolTypeDef](./type_defs.md#virtualnodeconnectionpooltypedef)
 - [VirtualServiceProviderTypeDef](./type_defs.md#virtualserviceprovidertypedef)
-- [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - [ServiceDiscoveryTypeDef](./type_defs.md#servicediscoverytypedef)
 - [ListenerTimeoutTypeDef](./type_defs.md#listenertimeouttypedef)
 - [GrpcGatewayRouteActionTypeDef](./type_defs.md#grpcgatewayrouteactiontypedef)
@@ -298,13 +297,14 @@ def get_value() -> FileAccessLogTypeDef:
 - [HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)
 - [TcpRouteTypeDef](./type_defs.md#tcproutetypedef)
 - [HttpGatewayRouteActionTypeDef](./type_defs.md#httpgatewayrouteactiontypedef)
+- [FileAccessLogTypeDef](./type_defs.md#fileaccesslogtypedef)
+- [VirtualGatewayFileAccessLogTypeDef](./type_defs.md#virtualgatewayfileaccesslogtypedef)
 - [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
 - [CreateMeshInputRequestTypeDef](./type_defs.md#createmeshinputrequesttypedef)
 - [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
 - [UpdateMeshInputRequestTypeDef](./type_defs.md#updatemeshinputrequesttypedef)
 - [ListenerTlsValidationContextTypeDef](./type_defs.md#listenertlsvalidationcontexttypedef)
 - [TlsValidationContextTypeDef](./type_defs.md#tlsvalidationcontexttypedef)
-- [VirtualGatewayLoggingTypeDef](./type_defs.md#virtualgatewayloggingtypedef)
 - [VirtualGatewayListenerTlsValidationContextTypeDef](./type_defs.md#virtualgatewaylistenertlsvalidationcontexttypedef)
 - [VirtualGatewayTlsValidationContextTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttypedef)
 - [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
@@ -312,6 +312,8 @@ def get_value() -> FileAccessLogTypeDef:
 - [GrpcRouteMatchTypeDef](./type_defs.md#grpcroutematchtypedef)
 - [HttpGatewayRouteMatchTypeDef](./type_defs.md#httpgatewayroutematchtypedef)
 - [HttpRouteMatchTypeDef](./type_defs.md#httproutematchtypedef)
+- [AccessLogTypeDef](./type_defs.md#accesslogtypedef)
+- [VirtualGatewayAccessLogTypeDef](./type_defs.md#virtualgatewayaccesslogtypedef)
 - [CreateVirtualRouterInputRequestTypeDef](./type_defs.md#createvirtualrouterinputrequesttypedef)
 - [UpdateVirtualRouterInputRequestTypeDef](./type_defs.md#updatevirtualrouterinputrequesttypedef)
 - [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
@@ -330,6 +332,8 @@ def get_value() -> FileAccessLogTypeDef:
 - [GrpcRouteTypeDef](./type_defs.md#grpcroutetypedef)
 - [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
 - [HttpRouteTypeDef](./type_defs.md#httproutetypedef)
+- [LoggingTypeDef](./type_defs.md#loggingtypedef)
+- [VirtualGatewayLoggingTypeDef](./type_defs.md#virtualgatewayloggingtypedef)
 - [CreateVirtualRouterOutputTypeDef](./type_defs.md#createvirtualrouteroutputtypedef)
 - [DeleteVirtualRouterOutputTypeDef](./type_defs.md#deletevirtualrouteroutputtypedef)
 - [DescribeVirtualRouterOutputTypeDef](./type_defs.md#describevirtualrouteroutputtypedef)

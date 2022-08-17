@@ -733,6 +733,7 @@ def create_db_cluster(
     PerformanceInsightsKMSKeyId: str = ...,
     PerformanceInsightsRetentionPeriod: int = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
+    NetworkType: str = ...,
     SourceRegion: str = ...,
 ) -> CreateDBClusterResultTypeDef:  # (4)
     ...
@@ -3490,6 +3491,7 @@ def modify_db_cluster(
     PerformanceInsightsKMSKeyId: str = ...,
     PerformanceInsightsRetentionPeriod: int = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
+    NetworkType: str = ...,
 ) -> ModifyDBClusterResultTypeDef:  # (4)
     ...
 ```
@@ -4472,6 +4474,7 @@ def restore_db_cluster_from_s3(
     Domain: str = ...,
     DomainIAMRoleName: str = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (2)
+    NetworkType: str = ...,
 ) -> RestoreDBClusterFromS3ResultTypeDef:  # (3)
     ...
 ```
@@ -4536,6 +4539,7 @@ def restore_db_cluster_from_snapshot(
     Iops: int = ...,
     PubliclyAccessible: bool = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
+    NetworkType: str = ...,
 ) -> RestoreDBClusterFromSnapshotResultTypeDef:  # (4)
     ...
 ```
@@ -4595,6 +4599,7 @@ def restore_db_cluster_to_point_in_time(
     PubliclyAccessible: bool = ...,
     Iops: int = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
+    NetworkType: str = ...,
 ) -> RestoreDBClusterToPointInTimeResultTypeDef:  # (4)
     ...
 ```
