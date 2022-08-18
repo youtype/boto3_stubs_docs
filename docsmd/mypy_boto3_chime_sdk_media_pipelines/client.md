@@ -89,7 +89,7 @@ def close(
 
 ### create\_media\_capture\_pipeline
 
-Creates a media capture pipeline.
+Creates a media pipeline.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").create_media_capture_pipeline` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.create_media_capture_pipeline)
@@ -129,9 +129,81 @@ parent.create_media_capture_pipeline(**kwargs)
 
 1. See [:material-code-braces: CreateMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#createmediacapturepipelinerequestrequesttypedef) 
 
+### create\_media\_concatenation\_pipeline
+
+Creates a media concatenation pipeline.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").create_media_concatenation_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.create_media_concatenation_pipeline)
+
+```python title="Method definition"
+def create_media_concatenation_pipeline(
+    self,
+    *,
+    Sources: Sequence[ConcatenationSourceTypeDef],  # (1)
+    Sinks: Sequence[ConcatenationSinkTypeDef],  # (2)
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateMediaConcatenationPipelineResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: ConcatenationSourceTypeDef](./type_defs.md#concatenationsourcetypedef) 
+2. See [:material-code-braces: ConcatenationSinkTypeDef](./type_defs.md#concatenationsinktypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateMediaConcatenationPipelineResponseTypeDef](./type_defs.md#createmediaconcatenationpipelineresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateMediaConcatenationPipelineRequestRequestTypeDef = {  # (1)
+    "Sources": ...,
+    "Sinks": ...,
+}
+
+parent.create_media_concatenation_pipeline(**kwargs)
+```
+
+1. See [:material-code-braces: CreateMediaConcatenationPipelineRequestRequestTypeDef](./type_defs.md#createmediaconcatenationpipelinerequestrequesttypedef) 
+
+### create\_media\_live\_connector\_pipeline
+
+Creates a streaming media pipeline in an Amazon Chime SDK meeting.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").create_media_live_connector_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.create_media_live_connector_pipeline)
+
+```python title="Method definition"
+def create_media_live_connector_pipeline(
+    self,
+    *,
+    Sources: Sequence[LiveConnectorSourceConfigurationTypeDef],  # (1)
+    Sinks: Sequence[LiveConnectorSinkConfigurationTypeDef],  # (2)
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateMediaLiveConnectorPipelineResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: LiveConnectorSourceConfigurationTypeDef](./type_defs.md#liveconnectorsourceconfigurationtypedef) 
+2. See [:material-code-braces: LiveConnectorSinkConfigurationTypeDef](./type_defs.md#liveconnectorsinkconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateMediaLiveConnectorPipelineResponseTypeDef](./type_defs.md#createmedialiveconnectorpipelineresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateMediaLiveConnectorPipelineRequestRequestTypeDef = {  # (1)
+    "Sources": ...,
+    "Sinks": ...,
+}
+
+parent.create_media_live_connector_pipeline(**kwargs)
+```
+
+1. See [:material-code-braces: CreateMediaLiveConnectorPipelineRequestRequestTypeDef](./type_defs.md#createmedialiveconnectorpipelinerequestrequesttypedef) 
+
 ### delete\_media\_capture\_pipeline
 
-Deletes the media capture pipeline.
+Deletes the media pipeline.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").delete_media_capture_pipeline` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.delete_media_capture_pipeline)
@@ -158,6 +230,35 @@ parent.delete_media_capture_pipeline(**kwargs)
 
 1. See [:material-code-braces: DeleteMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#deletemediacapturepipelinerequestrequesttypedef) 
 
+### delete\_media\_pipeline
+
+Deletes the media pipeline.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").delete_media_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.delete_media_pipeline)
+
+```python title="Method definition"
+def delete_media_pipeline(
+    self,
+    *,
+    MediaPipelineId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteMediaPipelineRequestRequestTypeDef = {  # (1)
+    "MediaPipelineId": ...,
+}
+
+parent.delete_media_pipeline(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteMediaPipelineRequestRequestTypeDef](./type_defs.md#deletemediapipelinerequestrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -179,7 +280,7 @@ def generate_presigned_url(
 
 ### get\_media\_capture\_pipeline
 
-Gets an existing media capture pipeline.
+Gets an existing media pipeline.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").get_media_capture_pipeline` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.get_media_capture_pipeline)
@@ -206,9 +307,38 @@ parent.get_media_capture_pipeline(**kwargs)
 
 1. See [:material-code-braces: GetMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#getmediacapturepipelinerequestrequesttypedef) 
 
+### get\_media\_pipeline
+
+Gets an existing media pipeline.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").get_media_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.get_media_pipeline)
+
+```python title="Method definition"
+def get_media_pipeline(
+    self,
+    *,
+    MediaPipelineId: str,
+) -> GetMediaPipelineResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetMediaPipelineResponseTypeDef](./type_defs.md#getmediapipelineresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetMediaPipelineRequestRequestTypeDef = {  # (1)
+    "MediaPipelineId": ...,
+}
+
+parent.get_media_pipeline(**kwargs)
+```
+
+1. See [:material-code-braces: GetMediaPipelineRequestRequestTypeDef](./type_defs.md#getmediapipelinerequestrequesttypedef) 
+
 ### list\_media\_capture\_pipelines
 
-Returns a list of media capture pipelines.
+Returns a list of media pipelines.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").list_media_capture_pipelines` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.list_media_capture_pipelines)
@@ -236,9 +366,39 @@ parent.list_media_capture_pipelines(**kwargs)
 
 1. See [:material-code-braces: ListMediaCapturePipelinesRequestRequestTypeDef](./type_defs.md#listmediacapturepipelinesrequestrequesttypedef) 
 
+### list\_media\_pipelines
+
+Returns a list of media pipelines.
+
+Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").list_media_pipelines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.list_media_pipelines)
+
+```python title="Method definition"
+def list_media_pipelines(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMediaPipelinesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListMediaPipelinesResponseTypeDef](./type_defs.md#listmediapipelinesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMediaPipelinesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_media_pipelines(**kwargs)
+```
+
+1. See [:material-code-braces: ListMediaPipelinesRequestRequestTypeDef](./type_defs.md#listmediapipelinesrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
-Lists the tags applied to an Amazon Chime SDK media capture pipeline.
+Lists the tags available for a media pipeline.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.list_tags_for_resource)
@@ -267,8 +427,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### tag\_resource
 
-Applies the specified tags to the specified Amazon Chime SDK media capture
-pipeline.
+The ARN of the media pipeline that you want to tag.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.tag_resource)
@@ -299,8 +458,7 @@ parent.tag_resource(**kwargs)
 
 ### untag\_resource
 
-Removes the specified tags from the specified Amazon Chime SDK media capture
-pipeline.
+Removes any tags from a media pipeline.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-media-pipelines").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines.Client.untag_resource)

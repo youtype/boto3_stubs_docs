@@ -37944,6 +37944,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#clientvpnendpointstatustypedef">ClientVpnEndpointStatusTypeDef</a></li>
 <li><a href="type_defs/#connectionlogresponseoptionstypedef">ConnectionLogResponseOptionsTypeDef</a></li>
 <li><a href="type_defs/#clientvpnroutestatustypedef">ClientVpnRouteStatusTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchlogoptionsspecificationtypedef">CloudWatchLogOptionsSpecificationTypeDef</a></li>
+<li><a href="type_defs/#cloudwatchlogoptionstypedef">CloudWatchLogOptionsTypeDef</a></li>
 <li><a href="type_defs/#coipaddressusagetypedef">CoipAddressUsageTypeDef</a></li>
 <li><a href="type_defs/#confirmproductinstancerequestrequesttypedef">ConfirmProductInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#connectionlogoptionstypedef">ConnectionLogOptionsTypeDef</a></li>
@@ -38844,6 +38846,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#clientvpnroutetypedef">ClientVpnRouteTypeDef</a></li>
 <li><a href="type_defs/#createclientvpnrouteresulttypedef">CreateClientVpnRouteResultTypeDef</a></li>
 <li><a href="type_defs/#deleteclientvpnrouteresulttypedef">DeleteClientVpnRouteResultTypeDef</a></li>
+<li><a href="type_defs/#vpntunnellogoptionsspecificationtypedef">VpnTunnelLogOptionsSpecificationTypeDef</a></li>
+<li><a href="type_defs/#vpntunnellogoptionstypedef">VpnTunnelLogOptionsTypeDef</a></li>
 <li><a href="type_defs/#getcoippoolusageresulttypedef">GetCoipPoolUsageResultTypeDef</a></li>
 <li><a href="type_defs/#createvpcendpointconnectionnotificationresulttypedef">CreateVpcEndpointConnectionNotificationResultTypeDef</a></li>
 <li><a href="type_defs/#describevpcendpointconnectionnotificationsresulttypedef">DescribeVpcEndpointConnectionNotificationsResultTypeDef</a></li>
@@ -39269,8 +39273,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#modifytransitgatewayvpcattachmentrequestrequesttypedef">ModifyTransitGatewayVpcAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#modifyvpcpeeringconnectionoptionsrequestrequesttypedef">ModifyVpcPeeringConnectionOptionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#modifyvpcpeeringconnectionoptionsresulttypedef">ModifyVpcPeeringConnectionOptionsResultTypeDef</a></li>
-<li><a href="type_defs/#modifyvpntunneloptionsspecificationtypedef">ModifyVpnTunnelOptionsSpecificationTypeDef</a></li>
-<li><a href="type_defs/#vpntunneloptionsspecificationtypedef">VpnTunnelOptionsSpecificationTypeDef</a></li>
 <li><a href="type_defs/#natgatewaytypedef">NatGatewayTypeDef</a></li>
 <li><a href="type_defs/#networkinfotypedef">NetworkInfoTypeDef</a></li>
 <li><a href="type_defs/#networkinterfaceprivateipaddresstypedef">NetworkInterfacePrivateIpAddressTypeDef</a></li>
@@ -39279,7 +39281,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#throughresourcesstatementrequesttypedef">ThroughResourcesStatementRequestTypeDef</a></li>
 <li><a href="type_defs/#pathstatementtypedef">PathStatementTypeDef</a></li>
 <li><a href="type_defs/#throughresourcesstatementtypedef">ThroughResourcesStatementTypeDef</a></li>
-<li><a href="type_defs/#tunneloptiontypedef">TunnelOptionTypeDef</a></li>
 <li><a href="type_defs/#reservedinstanceslistingtypedef">ReservedInstancesListingTypeDef</a></li>
 <li><a href="type_defs/#provisionpublicipv4poolcidrresulttypedef">ProvisionPublicIpv4PoolCidrResultTypeDef</a></li>
 <li><a href="type_defs/#publicipv4pooltypedef">PublicIpv4PoolTypeDef</a></li>
@@ -39508,6 +39509,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeclientvpnconnectionsresulttypedef">DescribeClientVpnConnectionsResultTypeDef</a></li>
 <li><a href="type_defs/#terminateclientvpnconnectionsresulttypedef">TerminateClientVpnConnectionsResultTypeDef</a></li>
 <li><a href="type_defs/#describeclientvpnroutesresulttypedef">DescribeClientVpnRoutesResultTypeDef</a></li>
+<li><a href="type_defs/#modifyvpntunneloptionsspecificationtypedef">ModifyVpnTunnelOptionsSpecificationTypeDef</a></li>
+<li><a href="type_defs/#vpntunneloptionsspecificationtypedef">VpnTunnelOptionsSpecificationTypeDef</a></li>
+<li><a href="type_defs/#tunneloptiontypedef">TunnelOptionTypeDef</a></li>
 <li><a href="type_defs/#networkacltypedef">NetworkAclTypeDef</a></li>
 <li><a href="type_defs/#launchspecificationtypedef">LaunchSpecificationTypeDef</a></li>
 <li><a href="type_defs/#requestspotlaunchspecificationtypedef">RequestSpotLaunchSpecificationTypeDef</a></li>
@@ -39601,8 +39605,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#responselaunchtemplatedatatypedef">ResponseLaunchTemplateDataTypeDef</a></li>
 <li><a href="type_defs/#modifyfpgaimageattributerequestrequesttypedef">ModifyFpgaImageAttributeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#reservedinstancesmodificationtypedef">ReservedInstancesModificationTypeDef</a></li>
-<li><a href="type_defs/#modifyvpntunneloptionsrequestrequesttypedef">ModifyVpnTunnelOptionsRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#vpnconnectionoptionsspecificationtypedef">VpnConnectionOptionsSpecificationTypeDef</a></li>
 <li><a href="type_defs/#createnatgatewayresulttypedef">CreateNatGatewayResultTypeDef</a></li>
 <li><a href="type_defs/#describenatgatewaysresulttypedef">DescribeNatGatewaysResultTypeDef</a></li>
 <li><a href="type_defs/#networkinterfacetypedef">NetworkInterfaceTypeDef</a></li>
@@ -39610,7 +39612,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describenetworkinterfacepermissionsresulttypedef">DescribeNetworkInterfacePermissionsResultTypeDef</a></li>
 <li><a href="type_defs/#accessscopepathrequesttypedef">AccessScopePathRequestTypeDef</a></li>
 <li><a href="type_defs/#accessscopepathtypedef">AccessScopePathTypeDef</a></li>
-<li><a href="type_defs/#vpnconnectionoptionstypedef">VpnConnectionOptionsTypeDef</a></li>
 <li><a href="type_defs/#cancelreservedinstanceslistingresulttypedef">CancelReservedInstancesListingResultTypeDef</a></li>
 <li><a href="type_defs/#createreservedinstanceslistingresulttypedef">CreateReservedInstancesListingResultTypeDef</a></li>
 <li><a href="type_defs/#describereservedinstanceslistingsresulttypedef">DescribeReservedInstancesListingsResultTypeDef</a></li>
@@ -39714,6 +39715,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describehostsresulttypedef">DescribeHostsResultTypeDef</a></li>
 <li><a href="type_defs/#describeimagesresulttypedef">DescribeImagesResultTypeDef</a></li>
 <li><a href="type_defs/#describeclientvpnendpointsresulttypedef">DescribeClientVpnEndpointsResultTypeDef</a></li>
+<li><a href="type_defs/#modifyvpntunneloptionsrequestrequesttypedef">ModifyVpnTunnelOptionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#vpnconnectionoptionsspecificationtypedef">VpnConnectionOptionsSpecificationTypeDef</a></li>
+<li><a href="type_defs/#vpnconnectionoptionstypedef">VpnConnectionOptionsTypeDef</a></li>
 <li><a href="type_defs/#createnetworkaclresulttypedef">CreateNetworkAclResultTypeDef</a></li>
 <li><a href="type_defs/#describenetworkaclsresulttypedef">DescribeNetworkAclsResultTypeDef</a></li>
 <li><a href="type_defs/#spotinstancerequesttypedef">SpotInstanceRequestTypeDef</a></li>
@@ -39737,12 +39741,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getlaunchtemplatedataresulttypedef">GetLaunchTemplateDataResultTypeDef</a></li>
 <li><a href="type_defs/#launchtemplateversiontypedef">LaunchTemplateVersionTypeDef</a></li>
 <li><a href="type_defs/#describereservedinstancesmodificationsresulttypedef">DescribeReservedInstancesModificationsResultTypeDef</a></li>
-<li><a href="type_defs/#createvpnconnectionrequestrequesttypedef">CreateVpnConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createnetworkinterfaceresulttypedef">CreateNetworkInterfaceResultTypeDef</a></li>
 <li><a href="type_defs/#describenetworkinterfacesresulttypedef">DescribeNetworkInterfacesResultTypeDef</a></li>
 <li><a href="type_defs/#createnetworkinsightsaccessscoperequestrequesttypedef">CreateNetworkInsightsAccessScopeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#networkinsightsaccessscopecontenttypedef">NetworkInsightsAccessScopeContentTypeDef</a></li>
-<li><a href="type_defs/#vpnconnectiontypedef">VpnConnectionTypeDef</a></li>
 <li><a href="type_defs/#bundleinstanceresulttypedef">BundleInstanceResultTypeDef</a></li>
 <li><a href="type_defs/#cancelbundletaskresulttypedef">CancelBundleTaskResultTypeDef</a></li>
 <li><a href="type_defs/#describebundletasksresulttypedef">DescribeBundleTasksResultTypeDef</a></li>
@@ -39769,6 +39771,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getnetworkinsightsaccessscopeanalysisfindingsresulttypedef">GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef</a></li>
 <li><a href="type_defs/#describenetworkinsightsanalysesresulttypedef">DescribeNetworkInsightsAnalysesResultTypeDef</a></li>
 <li><a href="type_defs/#startnetworkinsightsanalysisresulttypedef">StartNetworkInsightsAnalysisResultTypeDef</a></li>
+<li><a href="type_defs/#createvpnconnectionrequestrequesttypedef">CreateVpnConnectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#vpnconnectiontypedef">VpnConnectionTypeDef</a></li>
 <li><a href="type_defs/#describespotinstancerequestsresulttypedef">DescribeSpotInstanceRequestsResultTypeDef</a></li>
 <li><a href="type_defs/#requestspotinstancesresulttypedef">RequestSpotInstancesResultTypeDef</a></li>
 <li><a href="type_defs/#describeconversiontasksresulttypedef">DescribeConversionTasksResultTypeDef</a></li>

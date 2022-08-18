@@ -2273,6 +2273,42 @@ class ClientVpnRouteStatusTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ClientVpnRouteStatusCodeType](./literals.md#clientvpnroutestatuscodetype) 
+## CloudWatchLogOptionsSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CloudWatchLogOptionsSpecificationTypeDef
+
+def get_value() -> CloudWatchLogOptionsSpecificationTypeDef:
+    return {
+        "LogEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class CloudWatchLogOptionsSpecificationTypeDef(TypedDict):
+    LogEnabled: NotRequired[bool],
+    LogGroupArn: NotRequired[str],
+    LogOutputFormat: NotRequired[str],
+```
+
+## CloudWatchLogOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CloudWatchLogOptionsTypeDef
+
+def get_value() -> CloudWatchLogOptionsTypeDef:
+    return {
+        "LogEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class CloudWatchLogOptionsTypeDef(TypedDict):
+    LogEnabled: NotRequired[bool],
+    LogGroupArn: NotRequired[str],
+    LogOutputFormat: NotRequired[str],
+```
+
 ## CoipAddressUsageTypeDef
 
 ```python title="Usage Example"
@@ -19639,6 +19675,40 @@ class DeleteClientVpnRouteResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ClientVpnRouteStatusTypeDef](./type_defs.md#clientvpnroutestatustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VpnTunnelLogOptionsSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VpnTunnelLogOptionsSpecificationTypeDef
+
+def get_value() -> VpnTunnelLogOptionsSpecificationTypeDef:
+    return {
+        "CloudWatchLogOptions": ...,
+    }
+```
+
+```python title="Definition"
+class VpnTunnelLogOptionsSpecificationTypeDef(TypedDict):
+    CloudWatchLogOptions: NotRequired[CloudWatchLogOptionsSpecificationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CloudWatchLogOptionsSpecificationTypeDef](./type_defs.md#cloudwatchlogoptionsspecificationtypedef) 
+## VpnTunnelLogOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VpnTunnelLogOptionsTypeDef
+
+def get_value() -> VpnTunnelLogOptionsTypeDef:
+    return {
+        "CloudWatchLogOptions": ...,
+    }
+```
+
+```python title="Definition"
+class VpnTunnelLogOptionsTypeDef(TypedDict):
+    CloudWatchLogOptions: NotRequired[CloudWatchLogOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CloudWatchLogOptionsTypeDef](./type_defs.md#cloudwatchlogoptionstypedef) 
 ## GetCoipPoolUsageResultTypeDef
 
 ```python title="Usage Example"
@@ -29050,86 +29120,6 @@ class ModifyVpcPeeringConnectionOptionsResultTypeDef(TypedDict):
 1. See [:material-code-braces: PeeringConnectionOptionsTypeDef](./type_defs.md#peeringconnectionoptionstypedef) 
 2. See [:material-code-braces: PeeringConnectionOptionsTypeDef](./type_defs.md#peeringconnectionoptionstypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModifyVpnTunnelOptionsSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsSpecificationTypeDef
-
-def get_value() -> ModifyVpnTunnelOptionsSpecificationTypeDef:
-    return {
-        "TunnelInsideCidr": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyVpnTunnelOptionsSpecificationTypeDef(TypedDict):
-    TunnelInsideCidr: NotRequired[str],
-    TunnelInsideIpv6Cidr: NotRequired[str],
-    PreSharedKey: NotRequired[str],
-    Phase1LifetimeSeconds: NotRequired[int],
-    Phase2LifetimeSeconds: NotRequired[int],
-    RekeyMarginTimeSeconds: NotRequired[int],
-    RekeyFuzzPercentage: NotRequired[int],
-    ReplayWindowSize: NotRequired[int],
-    DPDTimeoutSeconds: NotRequired[int],
-    DPDTimeoutAction: NotRequired[str],
-    Phase1EncryptionAlgorithms: NotRequired[Sequence[Phase1EncryptionAlgorithmsRequestListValueTypeDef]],  # (1)
-    Phase2EncryptionAlgorithms: NotRequired[Sequence[Phase2EncryptionAlgorithmsRequestListValueTypeDef]],  # (2)
-    Phase1IntegrityAlgorithms: NotRequired[Sequence[Phase1IntegrityAlgorithmsRequestListValueTypeDef]],  # (3)
-    Phase2IntegrityAlgorithms: NotRequired[Sequence[Phase2IntegrityAlgorithmsRequestListValueTypeDef]],  # (4)
-    Phase1DHGroupNumbers: NotRequired[Sequence[Phase1DHGroupNumbersRequestListValueTypeDef]],  # (5)
-    Phase2DHGroupNumbers: NotRequired[Sequence[Phase2DHGroupNumbersRequestListValueTypeDef]],  # (6)
-    IKEVersions: NotRequired[Sequence[IKEVersionsRequestListValueTypeDef]],  # (7)
-    StartupAction: NotRequired[str],
-```
-
-1. See [:material-code-braces: Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef) 
-2. See [:material-code-braces: Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef) 
-3. See [:material-code-braces: Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef) 
-4. See [:material-code-braces: Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef) 
-5. See [:material-code-braces: Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef) 
-6. See [:material-code-braces: Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef) 
-7. See [:material-code-braces: IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef) 
-## VpnTunnelOptionsSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import VpnTunnelOptionsSpecificationTypeDef
-
-def get_value() -> VpnTunnelOptionsSpecificationTypeDef:
-    return {
-        "TunnelInsideCidr": ...,
-    }
-```
-
-```python title="Definition"
-class VpnTunnelOptionsSpecificationTypeDef(TypedDict):
-    TunnelInsideCidr: NotRequired[str],
-    TunnelInsideIpv6Cidr: NotRequired[str],
-    PreSharedKey: NotRequired[str],
-    Phase1LifetimeSeconds: NotRequired[int],
-    Phase2LifetimeSeconds: NotRequired[int],
-    RekeyMarginTimeSeconds: NotRequired[int],
-    RekeyFuzzPercentage: NotRequired[int],
-    ReplayWindowSize: NotRequired[int],
-    DPDTimeoutSeconds: NotRequired[int],
-    DPDTimeoutAction: NotRequired[str],
-    Phase1EncryptionAlgorithms: NotRequired[Sequence[Phase1EncryptionAlgorithmsRequestListValueTypeDef]],  # (1)
-    Phase2EncryptionAlgorithms: NotRequired[Sequence[Phase2EncryptionAlgorithmsRequestListValueTypeDef]],  # (2)
-    Phase1IntegrityAlgorithms: NotRequired[Sequence[Phase1IntegrityAlgorithmsRequestListValueTypeDef]],  # (3)
-    Phase2IntegrityAlgorithms: NotRequired[Sequence[Phase2IntegrityAlgorithmsRequestListValueTypeDef]],  # (4)
-    Phase1DHGroupNumbers: NotRequired[Sequence[Phase1DHGroupNumbersRequestListValueTypeDef]],  # (5)
-    Phase2DHGroupNumbers: NotRequired[Sequence[Phase2DHGroupNumbersRequestListValueTypeDef]],  # (6)
-    IKEVersions: NotRequired[Sequence[IKEVersionsRequestListValueTypeDef]],  # (7)
-    StartupAction: NotRequired[str],
-```
-
-1. See [:material-code-braces: Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef) 
-2. See [:material-code-braces: Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef) 
-3. See [:material-code-braces: Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef) 
-4. See [:material-code-braces: Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef) 
-5. See [:material-code-braces: Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef) 
-6. See [:material-code-braces: Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef) 
-7. See [:material-code-braces: IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef) 
 ## NatGatewayTypeDef
 
 ```python title="Usage Example"
@@ -29307,47 +29297,6 @@ class ThroughResourcesStatementTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourceStatementTypeDef](./type_defs.md#resourcestatementtypedef) 
-## TunnelOptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import TunnelOptionTypeDef
-
-def get_value() -> TunnelOptionTypeDef:
-    return {
-        "OutsideIpAddress": ...,
-    }
-```
-
-```python title="Definition"
-class TunnelOptionTypeDef(TypedDict):
-    OutsideIpAddress: NotRequired[str],
-    TunnelInsideCidr: NotRequired[str],
-    TunnelInsideIpv6Cidr: NotRequired[str],
-    PreSharedKey: NotRequired[str],
-    Phase1LifetimeSeconds: NotRequired[int],
-    Phase2LifetimeSeconds: NotRequired[int],
-    RekeyMarginTimeSeconds: NotRequired[int],
-    RekeyFuzzPercentage: NotRequired[int],
-    ReplayWindowSize: NotRequired[int],
-    DpdTimeoutSeconds: NotRequired[int],
-    DpdTimeoutAction: NotRequired[str],
-    Phase1EncryptionAlgorithms: NotRequired[List[Phase1EncryptionAlgorithmsListValueTypeDef]],  # (1)
-    Phase2EncryptionAlgorithms: NotRequired[List[Phase2EncryptionAlgorithmsListValueTypeDef]],  # (2)
-    Phase1IntegrityAlgorithms: NotRequired[List[Phase1IntegrityAlgorithmsListValueTypeDef]],  # (3)
-    Phase2IntegrityAlgorithms: NotRequired[List[Phase2IntegrityAlgorithmsListValueTypeDef]],  # (4)
-    Phase1DHGroupNumbers: NotRequired[List[Phase1DHGroupNumbersListValueTypeDef]],  # (5)
-    Phase2DHGroupNumbers: NotRequired[List[Phase2DHGroupNumbersListValueTypeDef]],  # (6)
-    IkeVersions: NotRequired[List[IKEVersionsListValueTypeDef]],  # (7)
-    StartupAction: NotRequired[str],
-```
-
-1. See [:material-code-braces: Phase1EncryptionAlgorithmsListValueTypeDef](./type_defs.md#phase1encryptionalgorithmslistvaluetypedef) 
-2. See [:material-code-braces: Phase2EncryptionAlgorithmsListValueTypeDef](./type_defs.md#phase2encryptionalgorithmslistvaluetypedef) 
-3. See [:material-code-braces: Phase1IntegrityAlgorithmsListValueTypeDef](./type_defs.md#phase1integrityalgorithmslistvaluetypedef) 
-4. See [:material-code-braces: Phase2IntegrityAlgorithmsListValueTypeDef](./type_defs.md#phase2integrityalgorithmslistvaluetypedef) 
-5. See [:material-code-braces: Phase1DHGroupNumbersListValueTypeDef](./type_defs.md#phase1dhgroupnumberslistvaluetypedef) 
-6. See [:material-code-braces: Phase2DHGroupNumbersListValueTypeDef](./type_defs.md#phase2dhgroupnumberslistvaluetypedef) 
-7. See [:material-code-braces: IKEVersionsListValueTypeDef](./type_defs.md#ikeversionslistvaluetypedef) 
 ## ReservedInstancesListingTypeDef
 
 ```python title="Usage Example"
@@ -34889,6 +34838,133 @@ class DescribeClientVpnRoutesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ClientVpnRouteTypeDef](./type_defs.md#clientvpnroutetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVpnTunnelOptionsSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsSpecificationTypeDef
+
+def get_value() -> ModifyVpnTunnelOptionsSpecificationTypeDef:
+    return {
+        "TunnelInsideCidr": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVpnTunnelOptionsSpecificationTypeDef(TypedDict):
+    TunnelInsideCidr: NotRequired[str],
+    TunnelInsideIpv6Cidr: NotRequired[str],
+    PreSharedKey: NotRequired[str],
+    Phase1LifetimeSeconds: NotRequired[int],
+    Phase2LifetimeSeconds: NotRequired[int],
+    RekeyMarginTimeSeconds: NotRequired[int],
+    RekeyFuzzPercentage: NotRequired[int],
+    ReplayWindowSize: NotRequired[int],
+    DPDTimeoutSeconds: NotRequired[int],
+    DPDTimeoutAction: NotRequired[str],
+    Phase1EncryptionAlgorithms: NotRequired[Sequence[Phase1EncryptionAlgorithmsRequestListValueTypeDef]],  # (1)
+    Phase2EncryptionAlgorithms: NotRequired[Sequence[Phase2EncryptionAlgorithmsRequestListValueTypeDef]],  # (2)
+    Phase1IntegrityAlgorithms: NotRequired[Sequence[Phase1IntegrityAlgorithmsRequestListValueTypeDef]],  # (3)
+    Phase2IntegrityAlgorithms: NotRequired[Sequence[Phase2IntegrityAlgorithmsRequestListValueTypeDef]],  # (4)
+    Phase1DHGroupNumbers: NotRequired[Sequence[Phase1DHGroupNumbersRequestListValueTypeDef]],  # (5)
+    Phase2DHGroupNumbers: NotRequired[Sequence[Phase2DHGroupNumbersRequestListValueTypeDef]],  # (6)
+    IKEVersions: NotRequired[Sequence[IKEVersionsRequestListValueTypeDef]],  # (7)
+    StartupAction: NotRequired[str],
+    LogOptions: NotRequired[VpnTunnelLogOptionsSpecificationTypeDef],  # (8)
+```
+
+1. See [:material-code-braces: Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef) 
+2. See [:material-code-braces: Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef) 
+3. See [:material-code-braces: Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef) 
+4. See [:material-code-braces: Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef) 
+5. See [:material-code-braces: Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef) 
+6. See [:material-code-braces: Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef) 
+7. See [:material-code-braces: IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef) 
+8. See [:material-code-braces: VpnTunnelLogOptionsSpecificationTypeDef](./type_defs.md#vpntunnellogoptionsspecificationtypedef) 
+## VpnTunnelOptionsSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VpnTunnelOptionsSpecificationTypeDef
+
+def get_value() -> VpnTunnelOptionsSpecificationTypeDef:
+    return {
+        "TunnelInsideCidr": ...,
+    }
+```
+
+```python title="Definition"
+class VpnTunnelOptionsSpecificationTypeDef(TypedDict):
+    TunnelInsideCidr: NotRequired[str],
+    TunnelInsideIpv6Cidr: NotRequired[str],
+    PreSharedKey: NotRequired[str],
+    Phase1LifetimeSeconds: NotRequired[int],
+    Phase2LifetimeSeconds: NotRequired[int],
+    RekeyMarginTimeSeconds: NotRequired[int],
+    RekeyFuzzPercentage: NotRequired[int],
+    ReplayWindowSize: NotRequired[int],
+    DPDTimeoutSeconds: NotRequired[int],
+    DPDTimeoutAction: NotRequired[str],
+    Phase1EncryptionAlgorithms: NotRequired[Sequence[Phase1EncryptionAlgorithmsRequestListValueTypeDef]],  # (1)
+    Phase2EncryptionAlgorithms: NotRequired[Sequence[Phase2EncryptionAlgorithmsRequestListValueTypeDef]],  # (2)
+    Phase1IntegrityAlgorithms: NotRequired[Sequence[Phase1IntegrityAlgorithmsRequestListValueTypeDef]],  # (3)
+    Phase2IntegrityAlgorithms: NotRequired[Sequence[Phase2IntegrityAlgorithmsRequestListValueTypeDef]],  # (4)
+    Phase1DHGroupNumbers: NotRequired[Sequence[Phase1DHGroupNumbersRequestListValueTypeDef]],  # (5)
+    Phase2DHGroupNumbers: NotRequired[Sequence[Phase2DHGroupNumbersRequestListValueTypeDef]],  # (6)
+    IKEVersions: NotRequired[Sequence[IKEVersionsRequestListValueTypeDef]],  # (7)
+    StartupAction: NotRequired[str],
+    LogOptions: NotRequired[VpnTunnelLogOptionsSpecificationTypeDef],  # (8)
+```
+
+1. See [:material-code-braces: Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef) 
+2. See [:material-code-braces: Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef) 
+3. See [:material-code-braces: Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef) 
+4. See [:material-code-braces: Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef) 
+5. See [:material-code-braces: Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef) 
+6. See [:material-code-braces: Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef) 
+7. See [:material-code-braces: IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef) 
+8. See [:material-code-braces: VpnTunnelLogOptionsSpecificationTypeDef](./type_defs.md#vpntunnellogoptionsspecificationtypedef) 
+## TunnelOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TunnelOptionTypeDef
+
+def get_value() -> TunnelOptionTypeDef:
+    return {
+        "OutsideIpAddress": ...,
+    }
+```
+
+```python title="Definition"
+class TunnelOptionTypeDef(TypedDict):
+    OutsideIpAddress: NotRequired[str],
+    TunnelInsideCidr: NotRequired[str],
+    TunnelInsideIpv6Cidr: NotRequired[str],
+    PreSharedKey: NotRequired[str],
+    Phase1LifetimeSeconds: NotRequired[int],
+    Phase2LifetimeSeconds: NotRequired[int],
+    RekeyMarginTimeSeconds: NotRequired[int],
+    RekeyFuzzPercentage: NotRequired[int],
+    ReplayWindowSize: NotRequired[int],
+    DpdTimeoutSeconds: NotRequired[int],
+    DpdTimeoutAction: NotRequired[str],
+    Phase1EncryptionAlgorithms: NotRequired[List[Phase1EncryptionAlgorithmsListValueTypeDef]],  # (1)
+    Phase2EncryptionAlgorithms: NotRequired[List[Phase2EncryptionAlgorithmsListValueTypeDef]],  # (2)
+    Phase1IntegrityAlgorithms: NotRequired[List[Phase1IntegrityAlgorithmsListValueTypeDef]],  # (3)
+    Phase2IntegrityAlgorithms: NotRequired[List[Phase2IntegrityAlgorithmsListValueTypeDef]],  # (4)
+    Phase1DHGroupNumbers: NotRequired[List[Phase1DHGroupNumbersListValueTypeDef]],  # (5)
+    Phase2DHGroupNumbers: NotRequired[List[Phase2DHGroupNumbersListValueTypeDef]],  # (6)
+    IkeVersions: NotRequired[List[IKEVersionsListValueTypeDef]],  # (7)
+    StartupAction: NotRequired[str],
+    LogOptions: NotRequired[VpnTunnelLogOptionsTypeDef],  # (8)
+```
+
+1. See [:material-code-braces: Phase1EncryptionAlgorithmsListValueTypeDef](./type_defs.md#phase1encryptionalgorithmslistvaluetypedef) 
+2. See [:material-code-braces: Phase2EncryptionAlgorithmsListValueTypeDef](./type_defs.md#phase2encryptionalgorithmslistvaluetypedef) 
+3. See [:material-code-braces: Phase1IntegrityAlgorithmsListValueTypeDef](./type_defs.md#phase1integrityalgorithmslistvaluetypedef) 
+4. See [:material-code-braces: Phase2IntegrityAlgorithmsListValueTypeDef](./type_defs.md#phase2integrityalgorithmslistvaluetypedef) 
+5. See [:material-code-braces: Phase1DHGroupNumbersListValueTypeDef](./type_defs.md#phase1dhgroupnumberslistvaluetypedef) 
+6. See [:material-code-braces: Phase2DHGroupNumbersListValueTypeDef](./type_defs.md#phase2dhgroupnumberslistvaluetypedef) 
+7. See [:material-code-braces: IKEVersionsListValueTypeDef](./type_defs.md#ikeversionslistvaluetypedef) 
+8. See [:material-code-braces: VpnTunnelLogOptionsTypeDef](./type_defs.md#vpntunnellogoptionstypedef) 
 ## NetworkAclTypeDef
 
 ```python title="Usage Example"
@@ -37431,55 +37507,6 @@ class ReservedInstancesModificationTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReservedInstancesModificationResultTypeDef](./type_defs.md#reservedinstancesmodificationresulttypedef) 
 2. See [:material-code-braces: ReservedInstancesIdTypeDef](./type_defs.md#reservedinstancesidtypedef) 
-## ModifyVpnTunnelOptionsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsRequestRequestTypeDef
-
-def get_value() -> ModifyVpnTunnelOptionsRequestRequestTypeDef:
-    return {
-        "VpnConnectionId": ...,
-        "VpnTunnelOutsideIpAddress": ...,
-        "TunnelOptions": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyVpnTunnelOptionsRequestRequestTypeDef(TypedDict):
-    VpnConnectionId: str,
-    VpnTunnelOutsideIpAddress: str,
-    TunnelOptions: ModifyVpnTunnelOptionsSpecificationTypeDef,  # (1)
-    DryRun: NotRequired[bool],
-```
-
-1. See [:material-code-braces: ModifyVpnTunnelOptionsSpecificationTypeDef](./type_defs.md#modifyvpntunneloptionsspecificationtypedef) 
-## VpnConnectionOptionsSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import VpnConnectionOptionsSpecificationTypeDef
-
-def get_value() -> VpnConnectionOptionsSpecificationTypeDef:
-    return {
-        "EnableAcceleration": ...,
-    }
-```
-
-```python title="Definition"
-class VpnConnectionOptionsSpecificationTypeDef(TypedDict):
-    EnableAcceleration: NotRequired[bool],
-    StaticRoutesOnly: NotRequired[bool],
-    TunnelInsideIpVersion: NotRequired[TunnelInsideIpVersionType],  # (1)
-    TunnelOptions: NotRequired[Sequence[VpnTunnelOptionsSpecificationTypeDef]],  # (2)
-    LocalIpv4NetworkCidr: NotRequired[str],
-    RemoteIpv4NetworkCidr: NotRequired[str],
-    LocalIpv6NetworkCidr: NotRequired[str],
-    RemoteIpv6NetworkCidr: NotRequired[str],
-    OutsideIpAddressType: NotRequired[str],
-    TransportTransitGatewayAttachmentId: NotRequired[str],
-```
-
-1. See [:material-code-brackets: TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype) 
-2. See [:material-code-braces: VpnTunnelOptionsSpecificationTypeDef](./type_defs.md#vpntunneloptionsspecificationtypedef) 
 ## CreateNatGatewayResultTypeDef
 
 ```python title="Usage Example"
@@ -37659,33 +37686,6 @@ class AccessScopePathTypeDef(TypedDict):
 1. See [:material-code-braces: PathStatementTypeDef](./type_defs.md#pathstatementtypedef) 
 2. See [:material-code-braces: PathStatementTypeDef](./type_defs.md#pathstatementtypedef) 
 3. See [:material-code-braces: ThroughResourcesStatementTypeDef](./type_defs.md#throughresourcesstatementtypedef) 
-## VpnConnectionOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import VpnConnectionOptionsTypeDef
-
-def get_value() -> VpnConnectionOptionsTypeDef:
-    return {
-        "EnableAcceleration": ...,
-    }
-```
-
-```python title="Definition"
-class VpnConnectionOptionsTypeDef(TypedDict):
-    EnableAcceleration: NotRequired[bool],
-    StaticRoutesOnly: NotRequired[bool],
-    LocalIpv4NetworkCidr: NotRequired[str],
-    RemoteIpv4NetworkCidr: NotRequired[str],
-    LocalIpv6NetworkCidr: NotRequired[str],
-    RemoteIpv6NetworkCidr: NotRequired[str],
-    OutsideIpAddressType: NotRequired[str],
-    TransportTransitGatewayAttachmentId: NotRequired[str],
-    TunnelInsideIpVersion: NotRequired[TunnelInsideIpVersionType],  # (1)
-    TunnelOptions: NotRequired[List[TunnelOptionTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype) 
-2. See [:material-code-braces: TunnelOptionTypeDef](./type_defs.md#tunneloptiontypedef) 
 ## CancelReservedInstancesListingResultTypeDef
 
 ```python title="Usage Example"
@@ -39990,6 +39990,82 @@ class DescribeClientVpnEndpointsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ClientVpnEndpointTypeDef](./type_defs.md#clientvpnendpointtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVpnTunnelOptionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsRequestRequestTypeDef
+
+def get_value() -> ModifyVpnTunnelOptionsRequestRequestTypeDef:
+    return {
+        "VpnConnectionId": ...,
+        "VpnTunnelOutsideIpAddress": ...,
+        "TunnelOptions": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVpnTunnelOptionsRequestRequestTypeDef(TypedDict):
+    VpnConnectionId: str,
+    VpnTunnelOutsideIpAddress: str,
+    TunnelOptions: ModifyVpnTunnelOptionsSpecificationTypeDef,  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: ModifyVpnTunnelOptionsSpecificationTypeDef](./type_defs.md#modifyvpntunneloptionsspecificationtypedef) 
+## VpnConnectionOptionsSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VpnConnectionOptionsSpecificationTypeDef
+
+def get_value() -> VpnConnectionOptionsSpecificationTypeDef:
+    return {
+        "EnableAcceleration": ...,
+    }
+```
+
+```python title="Definition"
+class VpnConnectionOptionsSpecificationTypeDef(TypedDict):
+    EnableAcceleration: NotRequired[bool],
+    StaticRoutesOnly: NotRequired[bool],
+    TunnelInsideIpVersion: NotRequired[TunnelInsideIpVersionType],  # (1)
+    TunnelOptions: NotRequired[Sequence[VpnTunnelOptionsSpecificationTypeDef]],  # (2)
+    LocalIpv4NetworkCidr: NotRequired[str],
+    RemoteIpv4NetworkCidr: NotRequired[str],
+    LocalIpv6NetworkCidr: NotRequired[str],
+    RemoteIpv6NetworkCidr: NotRequired[str],
+    OutsideIpAddressType: NotRequired[str],
+    TransportTransitGatewayAttachmentId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype) 
+2. See [:material-code-braces: VpnTunnelOptionsSpecificationTypeDef](./type_defs.md#vpntunneloptionsspecificationtypedef) 
+## VpnConnectionOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VpnConnectionOptionsTypeDef
+
+def get_value() -> VpnConnectionOptionsTypeDef:
+    return {
+        "EnableAcceleration": ...,
+    }
+```
+
+```python title="Definition"
+class VpnConnectionOptionsTypeDef(TypedDict):
+    EnableAcceleration: NotRequired[bool],
+    StaticRoutesOnly: NotRequired[bool],
+    LocalIpv4NetworkCidr: NotRequired[str],
+    RemoteIpv4NetworkCidr: NotRequired[str],
+    LocalIpv6NetworkCidr: NotRequired[str],
+    RemoteIpv6NetworkCidr: NotRequired[str],
+    OutsideIpAddressType: NotRequired[str],
+    TransportTransitGatewayAttachmentId: NotRequired[str],
+    TunnelInsideIpVersion: NotRequired[TunnelInsideIpVersionType],  # (1)
+    TunnelOptions: NotRequired[List[TunnelOptionTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype) 
+2. See [:material-code-braces: TunnelOptionTypeDef](./type_defs.md#tunneloptiontypedef) 
 ## CreateNetworkAclResultTypeDef
 
 ```python title="Usage Example"
@@ -40639,31 +40715,6 @@ class DescribeReservedInstancesModificationsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReservedInstancesModificationTypeDef](./type_defs.md#reservedinstancesmodificationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateVpnConnectionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import CreateVpnConnectionRequestRequestTypeDef
-
-def get_value() -> CreateVpnConnectionRequestRequestTypeDef:
-    return {
-        "CustomerGatewayId": ...,
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class CreateVpnConnectionRequestRequestTypeDef(TypedDict):
-    CustomerGatewayId: str,
-    Type: str,
-    VpnGatewayId: NotRequired[str],
-    TransitGatewayId: NotRequired[str],
-    DryRun: NotRequired[bool],
-    Options: NotRequired[VpnConnectionOptionsSpecificationTypeDef],  # (1)
-    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: VpnConnectionOptionsSpecificationTypeDef](./type_defs.md#vpnconnectionoptionsspecificationtypedef) 
-2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## CreateNetworkInterfaceResultTypeDef
 
 ```python title="Usage Example"
@@ -40751,43 +40802,6 @@ class NetworkInsightsAccessScopeContentTypeDef(TypedDict):
 
 1. See [:material-code-braces: AccessScopePathTypeDef](./type_defs.md#accessscopepathtypedef) 
 2. See [:material-code-braces: AccessScopePathTypeDef](./type_defs.md#accessscopepathtypedef) 
-## VpnConnectionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import VpnConnectionTypeDef
-
-def get_value() -> VpnConnectionTypeDef:
-    return {
-        "CustomerGatewayConfiguration": ...,
-    }
-```
-
-```python title="Definition"
-class VpnConnectionTypeDef(TypedDict):
-    CustomerGatewayConfiguration: NotRequired[str],
-    CustomerGatewayId: NotRequired[str],
-    Category: NotRequired[str],
-    State: NotRequired[VpnStateType],  # (1)
-    Type: NotRequired[GatewayTypeType],  # (2)
-    VpnConnectionId: NotRequired[str],
-    VpnGatewayId: NotRequired[str],
-    TransitGatewayId: NotRequired[str],
-    CoreNetworkArn: NotRequired[str],
-    CoreNetworkAttachmentArn: NotRequired[str],
-    GatewayAssociationState: NotRequired[GatewayAssociationStateType],  # (3)
-    Options: NotRequired[VpnConnectionOptionsTypeDef],  # (4)
-    Routes: NotRequired[List[VpnStaticRouteTypeDef]],  # (5)
-    Tags: NotRequired[List[TagTypeDef]],  # (6)
-    VgwTelemetry: NotRequired[List[VgwTelemetryTypeDef]],  # (7)
-```
-
-1. See [:material-code-brackets: VpnStateType](./literals.md#vpnstatetype) 
-2. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
-3. See [:material-code-brackets: GatewayAssociationStateType](./literals.md#gatewayassociationstatetype) 
-4. See [:material-code-braces: VpnConnectionOptionsTypeDef](./type_defs.md#vpnconnectionoptionstypedef) 
-5. See [:material-code-braces: VpnStaticRouteTypeDef](./type_defs.md#vpnstaticroutetypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-7. See [:material-code-braces: VgwTelemetryTypeDef](./type_defs.md#vgwtelemetrytypedef) 
 ## BundleInstanceResultTypeDef
 
 ```python title="Usage Example"
@@ -41337,6 +41351,68 @@ class StartNetworkInsightsAnalysisResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVpnConnectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVpnConnectionRequestRequestTypeDef
+
+def get_value() -> CreateVpnConnectionRequestRequestTypeDef:
+    return {
+        "CustomerGatewayId": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVpnConnectionRequestRequestTypeDef(TypedDict):
+    CustomerGatewayId: str,
+    Type: str,
+    VpnGatewayId: NotRequired[str],
+    TransitGatewayId: NotRequired[str],
+    DryRun: NotRequired[bool],
+    Options: NotRequired[VpnConnectionOptionsSpecificationTypeDef],  # (1)
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: VpnConnectionOptionsSpecificationTypeDef](./type_defs.md#vpnconnectionoptionsspecificationtypedef) 
+2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## VpnConnectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VpnConnectionTypeDef
+
+def get_value() -> VpnConnectionTypeDef:
+    return {
+        "CustomerGatewayConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class VpnConnectionTypeDef(TypedDict):
+    CustomerGatewayConfiguration: NotRequired[str],
+    CustomerGatewayId: NotRequired[str],
+    Category: NotRequired[str],
+    State: NotRequired[VpnStateType],  # (1)
+    Type: NotRequired[GatewayTypeType],  # (2)
+    VpnConnectionId: NotRequired[str],
+    VpnGatewayId: NotRequired[str],
+    TransitGatewayId: NotRequired[str],
+    CoreNetworkArn: NotRequired[str],
+    CoreNetworkAttachmentArn: NotRequired[str],
+    GatewayAssociationState: NotRequired[GatewayAssociationStateType],  # (3)
+    Options: NotRequired[VpnConnectionOptionsTypeDef],  # (4)
+    Routes: NotRequired[List[VpnStaticRouteTypeDef]],  # (5)
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
+    VgwTelemetry: NotRequired[List[VgwTelemetryTypeDef]],  # (7)
+```
+
+1. See [:material-code-brackets: VpnStateType](./literals.md#vpnstatetype) 
+2. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
+3. See [:material-code-brackets: GatewayAssociationStateType](./literals.md#gatewayassociationstatetype) 
+4. See [:material-code-braces: VpnConnectionOptionsTypeDef](./type_defs.md#vpnconnectionoptionstypedef) 
+5. See [:material-code-braces: VpnStaticRouteTypeDef](./type_defs.md#vpnstaticroutetypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: VgwTelemetryTypeDef](./type_defs.md#vgwtelemetrytypedef) 
 ## DescribeSpotInstanceRequestsResultTypeDef
 
 ```python title="Usage Example"

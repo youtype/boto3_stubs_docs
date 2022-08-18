@@ -827,6 +827,23 @@ class TagServiceResourceTypeDef(TypedDict):
     Value: str,
 ```
 
+## CsvOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import CsvOptionsTypeDef
+
+def get_value() -> CsvOptionsTypeDef:
+    return {
+        "Delimiter": ...,
+    }
+```
+
+```python title="Definition"
+class CsvOptionsTypeDef(TypedDict):
+    Delimiter: NotRequired[str],
+    HeaderList: NotRequired[List[str]],
+```
+
 ## DeleteBackupInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1161,6 +1178,22 @@ class DescribeGlobalTableSettingsInputRequestTypeDef(TypedDict):
     GlobalTableName: str,
 ```
 
+## DescribeImportInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DescribeImportInputRequestTypeDef
+
+def get_value() -> DescribeImportInputRequestTypeDef:
+    return {
+        "ImportArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImportInputRequestTypeDef(TypedDict):
+    ImportArn: str,
+```
+
 ## DescribeKinesisStreamingDestinationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1404,6 +1437,24 @@ class ProjectionServiceResourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProjectionTypeType](./literals.md#projectiontypetype) 
+## S3BucketSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import S3BucketSourceTypeDef
+
+def get_value() -> S3BucketSourceTypeDef:
+    return {
+        "S3Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class S3BucketSourceTypeDef(TypedDict):
+    S3Bucket: str,
+    S3BucketOwner: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+```
+
 ## KinesisStreamingDestinationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1514,6 +1565,24 @@ class ListGlobalTablesInputRequestTypeDef(TypedDict):
     ExclusiveStartGlobalTableName: NotRequired[str],
     Limit: NotRequired[int],
     RegionName: NotRequired[str],
+```
+
+## ListImportsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListImportsInputRequestTypeDef
+
+def get_value() -> ListImportsInputRequestTypeDef:
+    return {
+        "TableArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportsInputRequestTypeDef(TypedDict):
+    TableArn: NotRequired[str],
+    PageSize: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
 ## ListTablesInputRequestTypeDef
@@ -3228,6 +3297,23 @@ class TagResourceInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## InputFormatOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import InputFormatOptionsTypeDef
+
+def get_value() -> InputFormatOptionsTypeDef:
+    return {
+        "Csv": ...,
+    }
+```
+
+```python title="Definition"
+class InputFormatOptionsTypeDef(TypedDict):
+    Csv: NotRequired[CsvOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CsvOptionsTypeDef](./type_defs.md#csvoptionstypedef) 
 ## DeleteItemInputTableDeleteItemTypeDef
 
 ```python title="Usage Example"
@@ -3630,6 +3716,32 @@ class LocalSecondaryIndexServiceResourceTypeDef(TypedDict):
 
 1. See [:material-code-braces: KeySchemaElementServiceResourceTypeDef](./type_defs.md#keyschemaelementserviceresourcetypedef) 
 2. See [:material-code-braces: ProjectionServiceResourceTypeDef](./type_defs.md#projectionserviceresourcetypedef) 
+## ImportSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ImportSummaryTypeDef
+
+def get_value() -> ImportSummaryTypeDef:
+    return {
+        "ImportArn": ...,
+    }
+```
+
+```python title="Definition"
+class ImportSummaryTypeDef(TypedDict):
+    ImportArn: NotRequired[str],
+    ImportStatus: NotRequired[ImportStatusType],  # (1)
+    TableArn: NotRequired[str],
+    S3BucketSource: NotRequired[S3BucketSourceTypeDef],  # (2)
+    CloudWatchLogGroupArn: NotRequired[str],
+    InputFormat: NotRequired[InputFormatType],  # (3)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+2. See [:material-code-braces: S3BucketSourceTypeDef](./type_defs.md#s3bucketsourcetypedef) 
+3. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
 ## ListBackupsInputListBackupsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -4862,6 +4974,36 @@ class RestoreTableToPointInTimeInputRequestTypeDef(TypedDict):
 3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
 4. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
 5. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+## TableCreationParametersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import TableCreationParametersTypeDef
+
+def get_value() -> TableCreationParametersTypeDef:
+    return {
+        "TableName": ...,
+        "AttributeDefinitions": ...,
+        "KeySchema": ...,
+    }
+```
+
+```python title="Definition"
+class TableCreationParametersTypeDef(TypedDict):
+    TableName: str,
+    AttributeDefinitions: List[AttributeDefinitionTypeDef],  # (1)
+    KeySchema: List[KeySchemaElementTypeDef],  # (2)
+    BillingMode: NotRequired[BillingModeType],  # (3)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (4)
+    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (5)
+    GlobalSecondaryIndexes: NotRequired[List[GlobalSecondaryIndexTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+3. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+4. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+5. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+6. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
 ## GlobalSecondaryIndexUpdateTypeDef
 
 ```python title="Usage Example"
@@ -5110,6 +5252,28 @@ class CreateTableInputServiceResourceCreateTableTypeDef(TypedDict):
 8. See [:material-code-braces: SSESpecificationServiceResourceTypeDef](./type_defs.md#ssespecificationserviceresourcetypedef) 
 9. See [:material-code-braces: TagServiceResourceTypeDef](./type_defs.md#tagserviceresourcetypedef) 
 10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
+## ListImportsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListImportsOutputTypeDef
+
+def get_value() -> ListImportsOutputTypeDef:
+    return {
+        "ImportSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportsOutputTypeDef(TypedDict):
+    ImportSummaryList: List[ImportSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportSummaryTypeDef](./type_defs.md#importsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchWriteItemInputServiceResourceBatchWriteItemTypeDef
 
 ```python title="Usage Example"
@@ -5386,6 +5550,74 @@ class BackupDescriptionTypeDef(TypedDict):
 1. See [:material-code-braces: BackupDetailsTypeDef](./type_defs.md#backupdetailstypedef) 
 2. See [:material-code-braces: SourceTableDetailsTypeDef](./type_defs.md#sourcetabledetailstypedef) 
 3. See [:material-code-braces: SourceTableFeatureDetailsTypeDef](./type_defs.md#sourcetablefeaturedetailstypedef) 
+## ImportTableDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ImportTableDescriptionTypeDef
+
+def get_value() -> ImportTableDescriptionTypeDef:
+    return {
+        "ImportArn": ...,
+    }
+```
+
+```python title="Definition"
+class ImportTableDescriptionTypeDef(TypedDict):
+    ImportArn: NotRequired[str],
+    ImportStatus: NotRequired[ImportStatusType],  # (1)
+    TableArn: NotRequired[str],
+    TableId: NotRequired[str],
+    ClientToken: NotRequired[str],
+    S3BucketSource: NotRequired[S3BucketSourceTypeDef],  # (2)
+    ErrorCount: NotRequired[int],
+    CloudWatchLogGroupArn: NotRequired[str],
+    InputFormat: NotRequired[InputFormatType],  # (3)
+    InputFormatOptions: NotRequired[InputFormatOptionsTypeDef],  # (4)
+    InputCompressionType: NotRequired[InputCompressionTypeType],  # (5)
+    TableCreationParameters: NotRequired[TableCreationParametersTypeDef],  # (6)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    ProcessedSizeBytes: NotRequired[int],
+    ProcessedItemCount: NotRequired[int],
+    ImportedItemCount: NotRequired[int],
+    FailureCode: NotRequired[str],
+    FailureMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+2. See [:material-code-braces: S3BucketSourceTypeDef](./type_defs.md#s3bucketsourcetypedef) 
+3. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
+4. See [:material-code-braces: InputFormatOptionsTypeDef](./type_defs.md#inputformatoptionstypedef) 
+5. See [:material-code-brackets: InputCompressionTypeType](./literals.md#inputcompressiontypetype) 
+6. See [:material-code-braces: TableCreationParametersTypeDef](./type_defs.md#tablecreationparameterstypedef) 
+## ImportTableInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ImportTableInputRequestTypeDef
+
+def get_value() -> ImportTableInputRequestTypeDef:
+    return {
+        "S3BucketSource": ...,
+        "InputFormat": ...,
+        "TableCreationParameters": ...,
+    }
+```
+
+```python title="Definition"
+class ImportTableInputRequestTypeDef(TypedDict):
+    S3BucketSource: S3BucketSourceTypeDef,  # (1)
+    InputFormat: InputFormatType,  # (2)
+    TableCreationParameters: TableCreationParametersTypeDef,  # (3)
+    ClientToken: NotRequired[str],
+    InputFormatOptions: NotRequired[InputFormatOptionsTypeDef],  # (4)
+    InputCompressionType: NotRequired[InputCompressionTypeType],  # (5)
+```
+
+1. See [:material-code-braces: S3BucketSourceTypeDef](./type_defs.md#s3bucketsourcetypedef) 
+2. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
+3. See [:material-code-braces: TableCreationParametersTypeDef](./type_defs.md#tablecreationparameterstypedef) 
+4. See [:material-code-braces: InputFormatOptionsTypeDef](./type_defs.md#inputformatoptionstypedef) 
+5. See [:material-code-brackets: InputCompressionTypeType](./literals.md#inputcompressiontypetype) 
 ## TableDescriptionTableTypeDef
 
 ```python title="Usage Example"
@@ -5686,6 +5918,46 @@ class DescribeBackupOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BackupDescriptionTypeDef](./type_defs.md#backupdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeImportOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DescribeImportOutputTypeDef
+
+def get_value() -> DescribeImportOutputTypeDef:
+    return {
+        "ImportTableDescription": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImportOutputTypeDef(TypedDict):
+    ImportTableDescription: ImportTableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportTableDescriptionTypeDef](./type_defs.md#importtabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportTableOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ImportTableOutputTypeDef
+
+def get_value() -> ImportTableOutputTypeDef:
+    return {
+        "ImportTableDescription": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportTableOutputTypeDef(TypedDict):
+    ImportTableDescription: ImportTableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportTableDescriptionTypeDef](./type_defs.md#importtabledescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTableOutputTableTypeDef
 

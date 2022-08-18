@@ -266,6 +266,24 @@ GlobalTableStatusType = Literal[
     "UPDATING",
 ]
 ```
+## ImportStatusType
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.literals import ImportStatusType
+
+def get_value() -> ImportStatusType:
+    return "CANCELLED"
+```
+
+```python title="Definition"
+ImportStatusType = Literal[
+    "CANCELLED",
+    "CANCELLING",
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## IndexStatusType
 
 ```python title="Usage Example"
@@ -281,6 +299,38 @@ IndexStatusType = Literal[
     "CREATING",
     "DELETING",
     "UPDATING",
+]
+```
+## InputCompressionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.literals import InputCompressionTypeType
+
+def get_value() -> InputCompressionTypeType:
+    return "GZIP"
+```
+
+```python title="Definition"
+InputCompressionTypeType = Literal[
+    "GZIP",
+    "NONE",
+    "ZSTD",
+]
+```
+## InputFormatType
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.literals import InputFormatType
+
+def get_value() -> InputFormatType:
+    return "CSV"
+```
+
+```python title="Definition"
+InputFormatType = Literal[
+    "CSV",
+    "DYNAMODB_JSON",
+    "ION",
 ]
 ```
 ## KeyTypeType

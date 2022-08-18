@@ -3865,6 +3865,7 @@ def get_value() -> TransitGatewayPeeringTypeDef:
 class TransitGatewayPeeringTypeDef(TypedDict):
     Peering: NotRequired[PeeringTypeDef],  # (1)
     TransitGatewayArn: NotRequired[str],
+    TransitGatewayPeeringAttachmentId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PeeringTypeDef](./type_defs.md#peeringtypedef) 

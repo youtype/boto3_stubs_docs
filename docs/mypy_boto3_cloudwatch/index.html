@@ -37087,6 +37087,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <ul>
 <li><a href="paginators/#describealarmhistorypaginator">DescribeAlarmHistoryPaginator</a></li>
 <li><a href="paginators/#describealarmspaginator">DescribeAlarmsPaginator</a></li>
+<li><a href="paginators/#describeanomalydetectorspaginator">DescribeAnomalyDetectorsPaginator</a></li>
 <li><a href="paginators/#getmetricdatapaginator">GetMetricDataPaginator</a></li>
 <li><a href="paginators/#listdashboardspaginator">ListDashboardsPaginator</a></li>
 <li><a href="paginators/#listmetricspaginator">ListMetricsPaginator</a></li>
@@ -37161,6 +37162,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#compositealarmexistswaitername">CompositeAlarmExistsWaiterName</a></li>
 <li><a href="literals/#describealarmhistorypaginatorname">DescribeAlarmHistoryPaginatorName</a></li>
 <li><a href="literals/#describealarmspaginatorname">DescribeAlarmsPaginatorName</a></li>
+<li><a href="literals/#describeanomalydetectorspaginatorname">DescribeAnomalyDetectorsPaginatorName</a></li>
 <li><a href="literals/#getmetricdatapaginatorname">GetMetricDataPaginatorName</a></li>
 <li><a href="literals/#historyitemtypetype">HistoryItemTypeType</a></li>
 <li><a href="literals/#listdashboardspaginatorname">ListDashboardsPaginatorName</a></li>
@@ -37224,10 +37226,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getmetricwidgetimageinputrequesttypedef">GetMetricWidgetImageInputRequestTypeDef</a></li>
 <li><a href="type_defs/#insightrulecontributordatapointtypedef">InsightRuleContributorDatapointTypeDef</a></li>
 <li><a href="type_defs/#listdashboardsinputrequesttypedef">ListDashboardsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listmanagedinsightrulesinputrequesttypedef">ListManagedInsightRulesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listmetricstreamsinputrequesttypedef">ListMetricStreamsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#metricstreamentrytypedef">MetricStreamEntryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceinputrequesttypedef">ListTagsForResourceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
+<li><a href="type_defs/#managedrulestatetypedef">ManagedRuleStateTypeDef</a></li>
 <li><a href="type_defs/#statisticsettypedef">StatisticSetTypeDef</a></li>
 <li><a href="type_defs/#metricstreamstatisticsmetrictypedef">MetricStreamStatisticsMetricTypeDef</a></li>
 <li><a href="type_defs/#putdashboardinputrequesttypedef">PutDashboardInputRequestTypeDef</a></li>
@@ -37255,9 +37259,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getmetricwidgetimageoutputtypedef">GetMetricWidgetImageOutputTypeDef</a></li>
 <li><a href="type_defs/#listdashboardsoutputtypedef">ListDashboardsOutputTypeDef</a></li>
 <li><a href="type_defs/#putdashboardoutputtypedef">PutDashboardOutputTypeDef</a></li>
+<li><a href="type_defs/#putmanagedinsightrulesoutputtypedef">PutManagedInsightRulesOutputTypeDef</a></li>
 <li><a href="type_defs/#putmetricstreamoutputtypedef">PutMetricStreamOutputTypeDef</a></li>
 <li><a href="type_defs/#describealarmhistoryinputdescribealarmhistorypaginatetypedef">DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef</a></li>
 <li><a href="type_defs/#describealarmsinputdescribealarmspaginatetypedef">DescribeAlarmsInputDescribeAlarmsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeanomalydetectorsinputdescribeanomalydetectorspaginatetypedef">DescribeAnomalyDetectorsInputDescribeAnomalyDetectorsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listdashboardsinputlistdashboardspaginatetypedef">ListDashboardsInputListDashboardsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describealarmsinputalarmexistswaittypedef">DescribeAlarmsInputAlarmExistsWaitTypeDef</a></li>
 <li><a href="type_defs/#describealarmsinputcompositealarmexistswaittypedef">DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef</a></li>
@@ -37268,15 +37274,19 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#insightrulecontributortypedef">InsightRuleContributorTypeDef</a></li>
 <li><a href="type_defs/#listmetricstreamsoutputtypedef">ListMetricStreamsOutputTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceoutputtypedef">ListTagsForResourceOutputTypeDef</a></li>
+<li><a href="type_defs/#managedruletypedef">ManagedRuleTypeDef</a></li>
 <li><a href="type_defs/#putcompositealarminputrequesttypedef">PutCompositeAlarmInputRequestTypeDef</a></li>
 <li><a href="type_defs/#putinsightruleinputrequesttypedef">PutInsightRuleInputRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourceinputrequesttypedef">TagResourceInputRequestTypeDef</a></li>
+<li><a href="type_defs/#managedruledescriptiontypedef">ManagedRuleDescriptionTypeDef</a></li>
 <li><a href="type_defs/#metricdatumtypedef">MetricDatumTypeDef</a></li>
 <li><a href="type_defs/#metricstreamstatisticsconfigurationtypedef">MetricStreamStatisticsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listmetricsoutputtypedef">ListMetricsOutputTypeDef</a></li>
 <li><a href="type_defs/#metricstattypedef">MetricStatTypeDef</a></li>
 <li><a href="type_defs/#getmetricdataoutputtypedef">GetMetricDataOutputTypeDef</a></li>
 <li><a href="type_defs/#getinsightrulereportoutputtypedef">GetInsightRuleReportOutputTypeDef</a></li>
+<li><a href="type_defs/#putmanagedinsightrulesinputrequesttypedef">PutManagedInsightRulesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listmanagedinsightrulesoutputtypedef">ListManagedInsightRulesOutputTypeDef</a></li>
 <li><a href="type_defs/#putmetricdatainputrequesttypedef">PutMetricDataInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getmetricstreamoutputtypedef">GetMetricStreamOutputTypeDef</a></li>
 <li><a href="type_defs/#putmetricstreaminputrequesttypedef">PutMetricStreamInputRequestTypeDef</a></li>

@@ -418,6 +418,7 @@ class InsightRuleTypeDef(TypedDict):
     State: str,
     Schema: str,
     Definition: str,
+    ManagedRule: NotRequired[bool],
 ```
 
 ## DimensionFilterTypeDef
@@ -682,6 +683,24 @@ class ListDashboardsInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListManagedInsightRulesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ListManagedInsightRulesInputRequestTypeDef
+
+def get_value() -> ListManagedInsightRulesInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListManagedInsightRulesInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
 ## ListMetricStreamsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -754,6 +773,24 @@ def get_value() -> TagTypeDef:
 class TagTypeDef(TypedDict):
     Key: str,
     Value: str,
+```
+
+## ManagedRuleStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ManagedRuleStateTypeDef
+
+def get_value() -> ManagedRuleStateTypeDef:
+    return {
+        "RuleName": ...,
+        "State": ...,
+    }
+```
+
+```python title="Definition"
+class ManagedRuleStateTypeDef(TypedDict):
+    RuleName: str,
+    State: str,
 ```
 
 ## StatisticSetTypeDef
@@ -1309,6 +1346,26 @@ class PutDashboardOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: DashboardValidationMessageTypeDef](./type_defs.md#dashboardvalidationmessagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutManagedInsightRulesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutManagedInsightRulesOutputTypeDef
+
+def get_value() -> PutManagedInsightRulesOutputTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutManagedInsightRulesOutputTypeDef(TypedDict):
+    Failures: List[PartialFailureTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PartialFailureTypeDef](./type_defs.md#partialfailuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutMetricStreamOutputTypeDef
 
 ```python title="Usage Example"
@@ -1379,6 +1436,29 @@ class DescribeAlarmsInputDescribeAlarmsPaginateTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
 2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeAnomalyDetectorsInputDescribeAnomalyDetectorsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import DescribeAnomalyDetectorsInputDescribeAnomalyDetectorsPaginateTypeDef
+
+def get_value() -> DescribeAnomalyDetectorsInputDescribeAnomalyDetectorsPaginateTypeDef:
+    return {
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnomalyDetectorsInputDescribeAnomalyDetectorsPaginateTypeDef(TypedDict):
+    Namespace: NotRequired[str],
+    MetricName: NotRequired[str],
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
+    AnomalyDetectorTypes: NotRequired[Sequence[AnomalyDetectorTypeType]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-brackets: AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDashboardsInputListDashboardsPaginateTypeDef
 
@@ -1607,6 +1687,26 @@ class ListTagsForResourceOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ManagedRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ManagedRuleTypeDef
+
+def get_value() -> ManagedRuleTypeDef:
+    return {
+        "TemplateName": ...,
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ManagedRuleTypeDef(TypedDict):
+    TemplateName: str,
+    ResourceARN: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutCompositeAlarmInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1675,6 +1775,25 @@ class TagResourceInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ManagedRuleDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ManagedRuleDescriptionTypeDef
+
+def get_value() -> ManagedRuleDescriptionTypeDef:
+    return {
+        "TemplateName": ...,
+    }
+```
+
+```python title="Definition"
+class ManagedRuleDescriptionTypeDef(TypedDict):
+    TemplateName: NotRequired[str],
+    ResourceARN: NotRequired[str],
+    RuleState: NotRequired[ManagedRuleStateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ManagedRuleStateTypeDef](./type_defs.md#managedrulestatetypedef) 
 ## MetricDatumTypeDef
 
 ```python title="Usage Example"
@@ -1822,6 +1941,45 @@ class GetInsightRuleReportOutputTypeDef(TypedDict):
 1. See [:material-code-braces: InsightRuleContributorTypeDef](./type_defs.md#insightrulecontributortypedef) 
 2. See [:material-code-braces: InsightRuleMetricDatapointTypeDef](./type_defs.md#insightrulemetricdatapointtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutManagedInsightRulesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import PutManagedInsightRulesInputRequestTypeDef
+
+def get_value() -> PutManagedInsightRulesInputRequestTypeDef:
+    return {
+        "ManagedRules": ...,
+    }
+```
+
+```python title="Definition"
+class PutManagedInsightRulesInputRequestTypeDef(TypedDict):
+    ManagedRules: Sequence[ManagedRuleTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ManagedRuleTypeDef](./type_defs.md#managedruletypedef) 
+## ListManagedInsightRulesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.type_defs import ListManagedInsightRulesOutputTypeDef
+
+def get_value() -> ListManagedInsightRulesOutputTypeDef:
+    return {
+        "ManagedRules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListManagedInsightRulesOutputTypeDef(TypedDict):
+    ManagedRules: List[ManagedRuleDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ManagedRuleDescriptionTypeDef](./type_defs.md#managedruledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutMetricDataInputRequestTypeDef
 
 ```python title="Usage Example"

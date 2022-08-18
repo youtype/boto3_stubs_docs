@@ -37193,7 +37193,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#exportformattype">ExportFormatType</a></li>
 <li><a href="literals/#exportstatustype">ExportStatusType</a></li>
 <li><a href="literals/#globaltablestatustype">GlobalTableStatusType</a></li>
+<li><a href="literals/#importstatustype">ImportStatusType</a></li>
 <li><a href="literals/#indexstatustype">IndexStatusType</a></li>
+<li><a href="literals/#inputcompressiontypetype">InputCompressionTypeType</a></li>
+<li><a href="literals/#inputformattype">InputFormatType</a></li>
 <li><a href="literals/#keytypetype">KeyTypeType</a></li>
 <li><a href="literals/#listbackupspaginatorname">ListBackupsPaginatorName</a></li>
 <li><a href="literals/#listtablespaginatorname">ListTablesPaginatorName</a></li>
@@ -37282,6 +37285,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#ssespecificationserviceresourcetypedef">SSESpecificationServiceResourceTypeDef</a></li>
 <li><a href="type_defs/#streamspecificationserviceresourcetypedef">StreamSpecificationServiceResourceTypeDef</a></li>
 <li><a href="type_defs/#tagserviceresourcetypedef">TagServiceResourceTypeDef</a></li>
+<li><a href="type_defs/#csvoptionstypedef">CsvOptionsTypeDef</a></li>
 <li><a href="type_defs/#deletebackupinputrequesttypedef">DeleteBackupInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteglobalsecondaryindexactiontabletypedef">DeleteGlobalSecondaryIndexActionTableTypeDef</a></li>
 <li><a href="type_defs/#deleteglobalsecondaryindexactiontypedef">DeleteGlobalSecondaryIndexActionTypeDef</a></li>
@@ -37301,6 +37305,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#exportdescriptiontypedef">ExportDescriptionTypeDef</a></li>
 <li><a href="type_defs/#describeglobaltableinputrequesttypedef">DescribeGlobalTableInputRequestTypeDef</a></li>
 <li><a href="type_defs/#describeglobaltablesettingsinputrequesttypedef">DescribeGlobalTableSettingsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#describeimportinputrequesttypedef">DescribeImportInputRequestTypeDef</a></li>
 <li><a href="type_defs/#describekinesisstreamingdestinationinputrequesttypedef">DescribeKinesisStreamingDestinationInputRequestTypeDef</a></li>
 <li><a href="type_defs/#kinesisdatastreamdestinationtypedef">KinesisDataStreamDestinationTypeDef</a></li>
 <li><a href="type_defs/#describetableinputrequesttypedef">DescribeTableInputRequestTypeDef</a></li>
@@ -37314,12 +37319,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#provisionedthroughputdescriptiontabletypedef">ProvisionedThroughputDescriptionTableTypeDef</a></li>
 <li><a href="type_defs/#provisionedthroughputdescriptiontypedef">ProvisionedThroughputDescriptionTypeDef</a></li>
 <li><a href="type_defs/#projectionserviceresourcetypedef">ProjectionServiceResourceTypeDef</a></li>
+<li><a href="type_defs/#s3bucketsourcetypedef">S3BucketSourceTypeDef</a></li>
 <li><a href="type_defs/#kinesisstreamingdestinationinputrequesttypedef">KinesisStreamingDestinationInputRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listbackupsinputrequesttypedef">ListBackupsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listcontributorinsightsinputrequesttypedef">ListContributorInsightsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listexportsinputrequesttypedef">ListExportsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listglobaltablesinputrequesttypedef">ListGlobalTablesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listimportsinputrequesttypedef">ListImportsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listtablesinputrequesttypedef">ListTablesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsofresourceinputrequesttypedef">ListTagsOfResourceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#tagtabletypedef">TagTableTypeDef</a></li>
@@ -37401,6 +37408,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#replicaglobalsecondaryindextypedef">ReplicaGlobalSecondaryIndexTypeDef</a></li>
 <li><a href="type_defs/#listtagsofresourceoutputtypedef">ListTagsOfResourceOutputTypeDef</a></li>
 <li><a href="type_defs/#tagresourceinputrequesttypedef">TagResourceInputRequestTypeDef</a></li>
+<li><a href="type_defs/#inputformatoptionstypedef">InputFormatOptionsTypeDef</a></li>
 <li><a href="type_defs/#deleteiteminputtabledeleteitemtypedef">DeleteItemInputTableDeleteItemTypeDef</a></li>
 <li><a href="type_defs/#putiteminputtableputitemtypedef">PutItemInputTablePutItemTypeDef</a></li>
 <li><a href="type_defs/#updateiteminputtableupdateitemtypedef">UpdateItemInputTableUpdateItemTypeDef</a></li>
@@ -37418,6 +37426,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#globalsecondaryindexdescriptiontypedef">GlobalSecondaryIndexDescriptionTypeDef</a></li>
 <li><a href="type_defs/#globalsecondaryindexserviceresourcetypedef">GlobalSecondaryIndexServiceResourceTypeDef</a></li>
 <li><a href="type_defs/#localsecondaryindexserviceresourcetypedef">LocalSecondaryIndexServiceResourceTypeDef</a></li>
+<li><a href="type_defs/#importsummarytypedef">ImportSummaryTypeDef</a></li>
 <li><a href="type_defs/#listbackupsinputlistbackupspaginatetypedef">ListBackupsInputListBackupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtablesinputlisttablespaginatetypedef">ListTablesInputListTablesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtagsofresourceinputlisttagsofresourcepaginatetypedef">ListTagsOfResourceInputListTagsOfResourcePaginateTypeDef</a></li>
@@ -37467,6 +37476,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createtableinputrequesttypedef">CreateTableInputRequestTypeDef</a></li>
 <li><a href="type_defs/#restoretablefrombackupinputrequesttypedef">RestoreTableFromBackupInputRequestTypeDef</a></li>
 <li><a href="type_defs/#restoretabletopointintimeinputrequesttypedef">RestoreTableToPointInTimeInputRequestTypeDef</a></li>
+<li><a href="type_defs/#tablecreationparameterstypedef">TableCreationParametersTypeDef</a></li>
 <li><a href="type_defs/#globalsecondaryindexupdatetypedef">GlobalSecondaryIndexUpdateTypeDef</a></li>
 <li><a href="type_defs/#listglobaltablesoutputtypedef">ListGlobalTablesOutputTypeDef</a></li>
 <li><a href="type_defs/#replicadescriptiontabletypedef">ReplicaDescriptionTableTypeDef</a></li>
@@ -37477,6 +37487,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatereplicationgroupmemberactiontypedef">UpdateReplicationGroupMemberActionTypeDef</a></li>
 <li><a href="type_defs/#updateglobaltableinputrequesttypedef">UpdateGlobalTableInputRequestTypeDef</a></li>
 <li><a href="type_defs/#createtableinputserviceresourcecreatetabletypedef">CreateTableInputServiceResourceCreateTableTypeDef</a></li>
+<li><a href="type_defs/#listimportsoutputtypedef">ListImportsOutputTypeDef</a></li>
 <li><a href="type_defs/#batchwriteiteminputserviceresourcebatchwriteitemtypedef">BatchWriteItemInputServiceResourceBatchWriteItemTypeDef</a></li>
 <li><a href="type_defs/#batchwriteitemoutputserviceresourcetypedef">BatchWriteItemOutputServiceResourceTypeDef</a></li>
 <li><a href="type_defs/#transactgetitemsinputrequesttypedef">TransactGetItemsInputRequestTypeDef</a></li>
@@ -37490,6 +37501,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#replicaglobalsecondaryindexautoscalingupdatetypedef">ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef</a></li>
 <li><a href="type_defs/#replicaglobalsecondaryindexsettingsupdatetypedef">ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef</a></li>
 <li><a href="type_defs/#backupdescriptiontypedef">BackupDescriptionTypeDef</a></li>
+<li><a href="type_defs/#importtabledescriptiontypedef">ImportTableDescriptionTypeDef</a></li>
+<li><a href="type_defs/#importtableinputrequesttypedef">ImportTableInputRequestTypeDef</a></li>
 <li><a href="type_defs/#tabledescriptiontabletypedef">TableDescriptionTableTypeDef</a></li>
 <li><a href="type_defs/#replicationgroupupdatetabletypedef">ReplicationGroupUpdateTableTypeDef</a></li>
 <li><a href="type_defs/#globaltabledescriptiontypedef">GlobalTableDescriptionTypeDef</a></li>
@@ -37501,6 +37514,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#replicasettingsupdatetypedef">ReplicaSettingsUpdateTypeDef</a></li>
 <li><a href="type_defs/#deletebackupoutputtypedef">DeleteBackupOutputTypeDef</a></li>
 <li><a href="type_defs/#describebackupoutputtypedef">DescribeBackupOutputTypeDef</a></li>
+<li><a href="type_defs/#describeimportoutputtypedef">DescribeImportOutputTypeDef</a></li>
+<li><a href="type_defs/#importtableoutputtypedef">ImportTableOutputTypeDef</a></li>
 <li><a href="type_defs/#deletetableoutputtabletypedef">DeleteTableOutputTableTypeDef</a></li>
 <li><a href="type_defs/#updatetableinputtableupdatetypedef">UpdateTableInputTableUpdateTypeDef</a></li>
 <li><a href="type_defs/#createglobaltableoutputtypedef">CreateGlobalTableOutputTypeDef</a></li>

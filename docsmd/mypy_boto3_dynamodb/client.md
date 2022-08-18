@@ -43,6 +43,8 @@ except (
     client.GlobalTableAlreadyExistsException,
     client.GlobalTableNotFoundException,
     client.IdempotentParameterMismatchException,
+    client.ImportConflictException,
+    client.ImportNotFoundException,
     client.IndexNotFoundException,
     client.InternalServerError,
     client.InvalidExportTimeException,
@@ -620,6 +622,35 @@ parent.describe_global_table_settings(**kwargs)
 
 1. See [:material-code-braces: DescribeGlobalTableSettingsInputRequestTypeDef](./type_defs.md#describeglobaltablesettingsinputrequesttypedef) 
 
+### describe\_import
+
+Represents the properties of the import.
+
+Type annotations and code completion for `#!python boto3.client("dynamodb").describe_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.describe_import)
+
+```python title="Method definition"
+def describe_import(
+    self,
+    *,
+    ImportArn: str,
+) -> DescribeImportOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeImportOutputTypeDef](./type_defs.md#describeimportoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImportInputRequestTypeDef = {  # (1)
+    "ImportArn": ...,
+}
+
+parent.describe_import(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImportInputRequestTypeDef](./type_defs.md#describeimportinputrequesttypedef) 
+
 ### describe\_kinesis\_streaming\_destination
 
 Returns information about the status of Kinesis streaming.
@@ -987,6 +1018,47 @@ parent.get_item(**kwargs)
 
 1. See [:material-code-braces: GetItemInputRequestTypeDef](./type_defs.md#getiteminputrequesttypedef) 
 
+### import\_table
+
+Imports table data from an S3 bucket.
+
+Type annotations and code completion for `#!python boto3.client("dynamodb").import_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.import_table)
+
+```python title="Method definition"
+def import_table(
+    self,
+    *,
+    S3BucketSource: S3BucketSourceTypeDef,  # (1)
+    InputFormat: InputFormatType,  # (2)
+    TableCreationParameters: TableCreationParametersTypeDef,  # (3)
+    ClientToken: str = ...,
+    InputFormatOptions: InputFormatOptionsTypeDef = ...,  # (4)
+    InputCompressionType: InputCompressionTypeType = ...,  # (5)
+) -> ImportTableOutputTypeDef:  # (6)
+    ...
+```
+
+1. See [:material-code-braces: S3BucketSourceTypeDef](./type_defs.md#s3bucketsourcetypedef) 
+2. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
+3. See [:material-code-braces: TableCreationParametersTypeDef](./type_defs.md#tablecreationparameterstypedef) 
+4. See [:material-code-braces: InputFormatOptionsTypeDef](./type_defs.md#inputformatoptionstypedef) 
+5. See [:material-code-brackets: InputCompressionTypeType](./literals.md#inputcompressiontypetype) 
+6. See [:material-code-braces: ImportTableOutputTypeDef](./type_defs.md#importtableoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ImportTableInputRequestTypeDef = {  # (1)
+    "S3BucketSource": ...,
+    "InputFormat": ...,
+    "TableCreationParameters": ...,
+}
+
+parent.import_table(**kwargs)
+```
+
+1. See [:material-code-braces: ImportTableInputRequestTypeDef](./type_defs.md#importtableinputrequesttypedef) 
+
 ### list\_backups
 
 List backups associated with an Amazon Web Services account.
@@ -1115,6 +1187,37 @@ parent.list_global_tables(**kwargs)
 ```
 
 1. See [:material-code-braces: ListGlobalTablesInputRequestTypeDef](./type_defs.md#listglobaltablesinputrequesttypedef) 
+
+### list\_imports
+
+Lists completed imports within the past 90 days.
+
+Type annotations and code completion for `#!python boto3.client("dynamodb").list_imports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client.list_imports)
+
+```python title="Method definition"
+def list_imports(
+    self,
+    *,
+    TableArn: str = ...,
+    PageSize: int = ...,
+    NextToken: str = ...,
+) -> ListImportsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListImportsInputRequestTypeDef = {  # (1)
+    "TableArn": ...,
+}
+
+parent.list_imports(**kwargs)
+```
+
+1. See [:material-code-braces: ListImportsInputRequestTypeDef](./type_defs.md#listimportsinputrequesttypedef) 
 
 ### list\_tables
 

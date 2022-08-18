@@ -36994,18 +36994,30 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_media_pipelines.literals</span> <span class="kn">import</span> <span class="n">ArtifactsStateType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_media_pipelines.literals</span> <span class="kn">import</span> <span class="n">ArtifactsConcatenationStateType</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ArtifactsStateType</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ArtifactsConcatenationStateType</span><span class="p">:</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;Disabled&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#artifactsconcatenationstatetype">ArtifactsConcatenationStateType</a></li>
 <li><a href="literals/#artifactsstatetype">ArtifactsStateType</a></li>
+<li><a href="literals/#audioartifactsconcatenationstatetype">AudioArtifactsConcatenationStateType</a></li>
+<li><a href="literals/#audiochannelsoptiontype">AudioChannelsOptionType</a></li>
 <li><a href="literals/#audiomuxtypetype">AudioMuxTypeType</a></li>
+<li><a href="literals/#concatenationsinktypetype">ConcatenationSinkTypeType</a></li>
+<li><a href="literals/#concatenationsourcetypetype">ConcatenationSourceTypeType</a></li>
 <li><a href="literals/#contentmuxtypetype">ContentMuxTypeType</a></li>
+<li><a href="literals/#contentsharelayoutoptiontype">ContentShareLayoutOptionType</a></li>
+<li><a href="literals/#layoutoptiontype">LayoutOptionType</a></li>
+<li><a href="literals/#liveconnectormuxtypetype">LiveConnectorMuxTypeType</a></li>
+<li><a href="literals/#liveconnectorsinktypetype">LiveConnectorSinkTypeType</a></li>
+<li><a href="literals/#liveconnectorsourcetypetype">LiveConnectorSourceTypeType</a></li>
 <li><a href="literals/#mediapipelinesinktypetype">MediaPipelineSinkTypeType</a></li>
 <li><a href="literals/#mediapipelinesourcetypetype">MediaPipelineSourceTypeType</a></li>
 <li><a href="literals/#mediapipelinestatustype">MediaPipelineStatusType</a></li>
+<li><a href="literals/#presenterpositiontype">PresenterPositionType</a></li>
+<li><a href="literals/#resolutionoptiontype">ResolutionOptionType</a></li>
 <li><a href="literals/#videomuxtypetype">VideoMuxTypeType</a></li>
 <li><a href="literals/#chimesdkmediapipelinesservicename">ChimeSDKMediaPipelinesServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -37014,37 +37026,70 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_media_pipelines.type_defs</span> <span class="kn">import</span> <span class="n">AudioArtifactsConfigurationTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_chime_sdk_media_pipelines.type_defs</span> <span class="kn">import</span> <span class="n">AudioConcatenationConfigurationTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AudioArtifactsConfigurationTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AudioConcatenationConfigurationTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;MuxType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;State&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#audioconcatenationconfigurationtypedef">AudioConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#compositedvideoconcatenationconfigurationtypedef">CompositedVideoConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#contentconcatenationconfigurationtypedef">ContentConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#datachannelconcatenationconfigurationtypedef">DataChannelConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#meetingeventsconcatenationconfigurationtypedef">MeetingEventsConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#transcriptionmessagesconcatenationconfigurationtypedef">TranscriptionMessagesConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#videoconcatenationconfigurationtypedef">VideoConcatenationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#audioartifactsconfigurationtypedef">AudioArtifactsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#contentartifactsconfigurationtypedef">ContentArtifactsConfigurationTypeDef</a></li>
 <li><a href="type_defs/#videoartifactsconfigurationtypedef">VideoArtifactsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#s3bucketsinkconfigurationtypedef">S3BucketSinkConfigurationTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#deletemediacapturepipelinerequestrequesttypedef">DeleteMediaCapturePipelineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletemediapipelinerequestrequesttypedef">DeleteMediaPipelineRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmediacapturepipelinerequestrequesttypedef">GetMediaCapturePipelineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getmediapipelinerequestrequesttypedef">GetMediaPipelineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#presenteronlyconfigurationtypedef">PresenterOnlyConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listmediacapturepipelinesrequestrequesttypedef">ListMediaCapturePipelinesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#mediacapturepipelinesummarytypedef">MediaCapturePipelineSummaryTypeDef</a></li>
+<li><a href="type_defs/#listmediapipelinesrequestrequesttypedef">ListMediaPipelinesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#mediapipelinesummarytypedef">MediaPipelineSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#liveconnectorrtmpconfigurationtypedef">LiveConnectorRTMPConfigurationTypeDef</a></li>
 <li><a href="type_defs/#selectedvideostreamstypedef">SelectedVideoStreamsTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#artifactsconfigurationtypedef">ArtifactsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#artifactsconcatenationconfigurationtypedef">ArtifactsConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#concatenationsinktypedef">ConcatenationSinkTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#gridviewconfigurationtypedef">GridViewConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listmediacapturepipelinesresponsetypedef">ListMediaCapturePipelinesResponseTypeDef</a></li>
+<li><a href="type_defs/#listmediapipelinesresponsetypedef">ListMediaPipelinesResponseTypeDef</a></li>
+<li><a href="type_defs/#liveconnectorsinkconfigurationtypedef">LiveConnectorSinkConfigurationTypeDef</a></li>
 <li><a href="type_defs/#sourceconfigurationtypedef">SourceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#chimesdkmeetingconcatenationconfigurationtypedef">ChimeSdkMeetingConcatenationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#compositedvideoartifactsconfigurationtypedef">CompositedVideoArtifactsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#mediacapturepipelinesourceconfigurationtypedef">MediaCapturePipelineSourceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#artifactsconfigurationtypedef">ArtifactsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#chimesdkmeetingliveconnectorconfigurationtypedef">ChimeSdkMeetingLiveConnectorConfigurationTypeDef</a></li>
+<li><a href="type_defs/#concatenationsourcetypedef">ConcatenationSourceTypeDef</a></li>
 <li><a href="type_defs/#chimesdkmeetingconfigurationtypedef">ChimeSdkMeetingConfigurationTypeDef</a></li>
+<li><a href="type_defs/#liveconnectorsourceconfigurationtypedef">LiveConnectorSourceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#createmediaconcatenationpipelinerequestrequesttypedef">CreateMediaConcatenationPipelineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#mediaconcatenationpipelinetypedef">MediaConcatenationPipelineTypeDef</a></li>
 <li><a href="type_defs/#createmediacapturepipelinerequestrequesttypedef">CreateMediaCapturePipelineRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#mediacapturepipelinetypedef">MediaCapturePipelineTypeDef</a></li>
+<li><a href="type_defs/#createmedialiveconnectorpipelinerequestrequesttypedef">CreateMediaLiveConnectorPipelineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#medialiveconnectorpipelinetypedef">MediaLiveConnectorPipelineTypeDef</a></li>
+<li><a href="type_defs/#createmediaconcatenationpipelineresponsetypedef">CreateMediaConcatenationPipelineResponseTypeDef</a></li>
 <li><a href="type_defs/#createmediacapturepipelineresponsetypedef">CreateMediaCapturePipelineResponseTypeDef</a></li>
 <li><a href="type_defs/#getmediacapturepipelineresponsetypedef">GetMediaCapturePipelineResponseTypeDef</a></li>
+<li><a href="type_defs/#createmedialiveconnectorpipelineresponsetypedef">CreateMediaLiveConnectorPipelineResponseTypeDef</a></li>
+<li><a href="type_defs/#mediapipelinetypedef">MediaPipelineTypeDef</a></li>
+<li><a href="type_defs/#getmediapipelineresponsetypedef">GetMediaPipelineResponseTypeDef</a></li>
 </ul>
 
 

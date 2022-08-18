@@ -7,6 +7,21 @@
     Auto-generated documentation for [ChimeSDKMediaPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-media-pipelines.html#ChimeSDKMediaPipelines)
     type annotations stubs module [mypy-boto3-chime-sdk-media-pipelines](https://pypi.org/project/mypy-boto3-chime-sdk-media-pipelines/).
 
+## ArtifactsConcatenationStateType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import ArtifactsConcatenationStateType
+
+def get_value() -> ArtifactsConcatenationStateType:
+    return "Disabled"
+```
+
+```python title="Definition"
+ArtifactsConcatenationStateType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ArtifactsStateType
 
 ```python title="Usage Example"
@@ -22,6 +37,35 @@ ArtifactsStateType = Literal[
     "Enabled",
 ]
 ```
+## AudioArtifactsConcatenationStateType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import AudioArtifactsConcatenationStateType
+
+def get_value() -> AudioArtifactsConcatenationStateType:
+    return "Enabled"
+```
+
+```python title="Definition"
+AudioArtifactsConcatenationStateType = Literal[
+    "Enabled",
+]
+```
+## AudioChannelsOptionType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import AudioChannelsOptionType
+
+def get_value() -> AudioChannelsOptionType:
+    return "Mono"
+```
+
+```python title="Definition"
+AudioChannelsOptionType = Literal[
+    "Mono",
+    "Stereo",
+]
+```
 ## AudioMuxTypeType
 
 ```python title="Usage Example"
@@ -35,6 +79,35 @@ def get_value() -> AudioMuxTypeType:
 AudioMuxTypeType = Literal[
     "AudioOnly",
     "AudioWithActiveSpeakerVideo",
+    "AudioWithCompositedVideo",
+]
+```
+## ConcatenationSinkTypeType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import ConcatenationSinkTypeType
+
+def get_value() -> ConcatenationSinkTypeType:
+    return "S3Bucket"
+```
+
+```python title="Definition"
+ConcatenationSinkTypeType = Literal[
+    "S3Bucket",
+]
+```
+## ConcatenationSourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import ConcatenationSourceTypeType
+
+def get_value() -> ConcatenationSourceTypeType:
+    return "MediaCapturePipeline"
+```
+
+```python title="Definition"
+ConcatenationSourceTypeType = Literal[
+    "MediaCapturePipeline",
 ]
 ```
 ## ContentMuxTypeType
@@ -49,6 +122,79 @@ def get_value() -> ContentMuxTypeType:
 ```python title="Definition"
 ContentMuxTypeType = Literal[
     "ContentOnly",
+]
+```
+## ContentShareLayoutOptionType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import ContentShareLayoutOptionType
+
+def get_value() -> ContentShareLayoutOptionType:
+    return "Horizontal"
+```
+
+```python title="Definition"
+ContentShareLayoutOptionType = Literal[
+    "Horizontal",
+    "PresenterOnly",
+    "Vertical",
+]
+```
+## LayoutOptionType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import LayoutOptionType
+
+def get_value() -> LayoutOptionType:
+    return "GridView"
+```
+
+```python title="Definition"
+LayoutOptionType = Literal[
+    "GridView",
+]
+```
+## LiveConnectorMuxTypeType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import LiveConnectorMuxTypeType
+
+def get_value() -> LiveConnectorMuxTypeType:
+    return "AudioWithActiveSpeakerVideo"
+```
+
+```python title="Definition"
+LiveConnectorMuxTypeType = Literal[
+    "AudioWithActiveSpeakerVideo",
+    "AudioWithCompositedVideo",
+]
+```
+## LiveConnectorSinkTypeType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import LiveConnectorSinkTypeType
+
+def get_value() -> LiveConnectorSinkTypeType:
+    return "RTMP"
+```
+
+```python title="Definition"
+LiveConnectorSinkTypeType = Literal[
+    "RTMP",
+]
+```
+## LiveConnectorSourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import LiveConnectorSourceTypeType
+
+def get_value() -> LiveConnectorSourceTypeType:
+    return "ChimeSdkMeeting"
+```
+
+```python title="Definition"
+LiveConnectorSourceTypeType = Literal[
+    "ChimeSdkMeeting",
 ]
 ```
 ## MediaPipelineSinkTypeType
@@ -95,6 +241,38 @@ MediaPipelineStatusType = Literal[
     "InProgress",
     "Stopped",
     "Stopping",
+]
+```
+## PresenterPositionType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import PresenterPositionType
+
+def get_value() -> PresenterPositionType:
+    return "BottomLeft"
+```
+
+```python title="Definition"
+PresenterPositionType = Literal[
+    "BottomLeft",
+    "BottomRight",
+    "TopLeft",
+    "TopRight",
+]
+```
+## ResolutionOptionType
+
+```python title="Usage Example"
+from mypy_boto3_chime_sdk_media_pipelines.literals import ResolutionOptionType
+
+def get_value() -> ResolutionOptionType:
+    return "FHD"
+```
+
+```python title="Definition"
+ResolutionOptionType = Literal[
+    "FHD",
+    "HD",
 ]
 ```
 ## VideoMuxTypeType

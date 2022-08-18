@@ -317,13 +317,14 @@ EventFilterTypeType = Literal[
 from mypy_boto3_cognito_idp.literals import EventResponseTypeType
 
 def get_value() -> EventResponseTypeType:
-    return "Failure"
+    return "Fail"
 ```
 
 ```python title="Definition"
 EventResponseTypeType = Literal[
-    "Failure",
-    "Success",
+    "Fail",
+    "InProgress",
+    "Pass",
 ]
 ```
 ## EventTypeType
@@ -338,6 +339,8 @@ def get_value() -> EventTypeType:
 ```python title="Definition"
 EventTypeType = Literal[
     "ForgotPassword",
+    "PasswordChange",
+    "ResendCode",
     "SignIn",
     "SignUp",
 ]

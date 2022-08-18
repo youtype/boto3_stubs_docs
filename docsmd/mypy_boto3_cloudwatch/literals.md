@@ -145,6 +145,20 @@ DescribeAlarmsPaginatorName = Literal[
     "describe_alarms",
 ]
 ```
+## DescribeAnomalyDetectorsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.literals import DescribeAnomalyDetectorsPaginatorName
+
+def get_value() -> DescribeAnomalyDetectorsPaginatorName:
+    return "describe_anomaly_detectors"
+```
+
+```python title="Definition"
+DescribeAnomalyDetectorsPaginatorName = Literal[
+    "describe_anomaly_detectors",
+]
+```
 ## GetMetricDataPaginatorName
 
 ```python title="Usage Example"
@@ -713,6 +727,7 @@ def get_value() -> PaginatorName:
 PaginatorName = Literal[
     "describe_alarm_history",
     "describe_alarms",
+    "describe_anomaly_detectors",
     "get_metric_data",
     "list_dashboards",
     "list_metrics",

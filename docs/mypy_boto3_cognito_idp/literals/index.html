@@ -37766,12 +37766,13 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cogni
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cognito_idp.literals</span> <span class="kn">import</span> <span class="n">EventResponseTypeType</span>
 <a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>
 <a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EventResponseTypeType</span><span class="p">:</span>
-<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>    <span class="k">return</span> <span class="s2">&quot;Failure&quot;</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>    <span class="k">return</span> <span class="s2">&quot;Fail&quot;</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">EventResponseTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>    <span class="s2">&quot;Failure&quot;</span><span class="p">,</span>
-<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>    <span class="s2">&quot;Success&quot;</span><span class="p">,</span>
-<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="p">]</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>    <span class="s2">&quot;Fail&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>    <span class="s2">&quot;InProgress&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>    <span class="s2">&quot;Pass&quot;</span><span class="p">,</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="eventtypetype">EventTypeType</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cognito_idp.literals</span> <span class="kn">import</span> <span class="n">EventTypeType</span>
@@ -37781,9 +37782,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cogni
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="n">EventTypeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
 <a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>    <span class="s2">&quot;ForgotPassword&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>    <span class="s2">&quot;SignIn&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>    <span class="s2">&quot;SignUp&quot;</span><span class="p">,</span>
-<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="p">]</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>    <span class="s2">&quot;PasswordChange&quot;</span><span class="p">,</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>    <span class="s2">&quot;ResendCode&quot;</span><span class="p">,</span>
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>    <span class="s2">&quot;SignIn&quot;</span><span class="p">,</span>
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>    <span class="s2">&quot;SignUp&quot;</span><span class="p">,</span>
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="explicitauthflowstypetype">ExplicitAuthFlowsTypeType</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cognito_idp.literals</span> <span class="kn">import</span> <span class="n">ExplicitAuthFlowsTypeType</span>
