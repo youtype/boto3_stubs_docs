@@ -366,7 +366,7 @@ def delete_item(
     self,
     *,
     TableName: str,
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (3)
     ReturnValues: ReturnValueType = ...,  # (4)
@@ -374,7 +374,7 @@ def delete_item(
     ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (6)
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (1)
+    ExpressionAttributeValues: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (1)
 ) -> DeleteItemOutputTypeDef:  # (8)
     ...
 ```
@@ -862,7 +862,7 @@ def execute_statement(
     self,
     *,
     Statement: str,
-    Parameters: Sequence[AttributeValueTypeDef] = ...,  # (1)
+    Parameters: Sequence[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (1)
     ConsistentRead: bool = ...,
     NextToken: str = ...,
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
@@ -992,7 +992,7 @@ def get_item(
     self,
     *,
     TableName: str,
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     AttributesToGet: Sequence[str] = ...,
     ConsistentRead: bool = ...,
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
@@ -1292,7 +1292,7 @@ def put_item(
     self,
     *,
     TableName: str,
-    Item: Mapping[str, AttributeValueTypeDef],  # (1)
+    Item: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (2)
     ReturnValues: ReturnValueType = ...,  # (3)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
@@ -1300,7 +1300,7 @@ def put_item(
     ConditionalOperator: ConditionalOperatorType = ...,  # (6)
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (1)
+    ExpressionAttributeValues: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (1)
 ) -> PutItemOutputTypeDef:  # (8)
     ...
 ```
@@ -1348,13 +1348,13 @@ def query(
     QueryFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (4)
     ScanIndexForward: bool = ...,
-    ExclusiveStartKey: Mapping[str, AttributeValueTypeDef] = ...,  # (5)
+    ExclusiveStartKey: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (5)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (6)
     ProjectionExpression: str = ...,
     FilterExpression: str = ...,
     KeyConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (5)
+    ExpressionAttributeValues: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (5)
 ) -> QueryOutputTypeDef:  # (8)
     ...
 ```
@@ -1483,14 +1483,14 @@ def scan(
     Select: SelectType = ...,  # (1)
     ScanFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
     ConditionalOperator: ConditionalOperatorType = ...,  # (3)
-    ExclusiveStartKey: Mapping[str, AttributeValueTypeDef] = ...,  # (4)
+    ExclusiveStartKey: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (4)
     ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
     TotalSegments: int = ...,
     Segment: int = ...,
     ProjectionExpression: str = ...,
     FilterExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (4)
+    ExpressionAttributeValues: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (4)
     ConsistentRead: bool = ...,
 ) -> ScanOutputTypeDef:  # (7)
     ...
@@ -1797,7 +1797,7 @@ def update_item(
     self,
     *,
     TableName: str,
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     AttributeUpdates: Mapping[str, AttributeValueUpdateTypeDef] = ...,  # (2)
     Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (3)
     ConditionalOperator: ConditionalOperatorType = ...,  # (4)
@@ -1807,7 +1807,7 @@ def update_item(
     UpdateExpression: str = ...,
     ConditionExpression: str = ...,
     ExpressionAttributeNames: Mapping[str, str] = ...,
-    ExpressionAttributeValues: Mapping[str, AttributeValueTypeDef] = ...,  # (1)
+    ExpressionAttributeValues: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]] = ...,  # (1)
 ) -> UpdateItemOutputTypeDef:  # (9)
     ...
 ```

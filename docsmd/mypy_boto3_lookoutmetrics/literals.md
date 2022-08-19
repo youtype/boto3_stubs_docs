@@ -142,6 +142,29 @@ ConfidenceType = Literal[
     "NONE",
 ]
 ```
+## DataQualityMetricTypeType
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.literals import DataQualityMetricTypeType
+
+def get_value() -> DataQualityMetricTypeType:
+    return "BACKTEST_INFERENCE_DATA_END_TIME_STAMP"
+```
+
+```python title="Definition"
+DataQualityMetricTypeType = Literal[
+    "BACKTEST_INFERENCE_DATA_END_TIME_STAMP",
+    "BACKTEST_INFERENCE_DATA_START_TIME_STAMP",
+    "BACKTEST_TRAINING_DATA_END_TIME_STAMP",
+    "BACKTEST_TRAINING_DATA_START_TIME_STAMP",
+    "COLUMN_COMPLETENESS",
+    "DIMENSION_UNIQUENESS",
+    "INVALID_ROWS_COMPLIANCE",
+    "ROWS_PARTIAL_COMPLIANCE",
+    "ROWS_PROCESSED",
+    "TIME_SERIES_COUNT",
+]
+```
 ## FrequencyType
 
 ```python title="Usage Example"

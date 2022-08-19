@@ -1221,6 +1221,20 @@ SearchAvailablePhoneNumbersPaginatorName = Literal[
     "search_available_phone_numbers",
 ]
 ```
+## SearchSecurityProfilesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import SearchSecurityProfilesPaginatorName
+
+def get_value() -> SearchSecurityProfilesPaginatorName:
+    return "search_security_profiles"
+```
+
+```python title="Definition"
+SearchSecurityProfilesPaginatorName = Literal[
+    "search_security_profiles",
+]
+```
 ## SearchUsersPaginatorName
 
 ```python title="Usage Example"
@@ -1871,6 +1885,7 @@ PaginatorName = Literal[
     "list_user_hierarchy_groups",
     "list_users",
     "search_available_phone_numbers",
+    "search_security_profiles",
     "search_users",
     "search_vocabularies",
 ]

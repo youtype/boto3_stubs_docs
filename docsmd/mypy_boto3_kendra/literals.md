@@ -85,6 +85,21 @@ ConfluenceAttachmentFieldNameType = Literal[
     "VERSION",
 ]
 ```
+## ConfluenceAuthenticationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_kendra.literals import ConfluenceAuthenticationTypeType
+
+def get_value() -> ConfluenceAuthenticationTypeType:
+    return "HTTP_BASIC"
+```
+
+```python title="Definition"
+ConfluenceAuthenticationTypeType = Literal[
+    "HTTP_BASIC",
+    "PAT",
+]
+```
 ## ConfluenceBlogFieldNameType
 
 ```python title="Usage Example"

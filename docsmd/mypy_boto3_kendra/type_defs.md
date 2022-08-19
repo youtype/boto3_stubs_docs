@@ -4137,6 +4137,7 @@ class ConfluenceConfigurationTypeDef(TypedDict):
     InclusionPatterns: NotRequired[Sequence[str]],
     ExclusionPatterns: NotRequired[Sequence[str]],
     ProxyConfiguration: NotRequired[ProxyConfigurationTypeDef],  # (7)
+    AuthenticationType: NotRequired[ConfluenceAuthenticationTypeType],  # (8)
 ```
 
 1. See [:material-code-brackets: ConfluenceVersionType](./literals.md#confluenceversiontype) 
@@ -4146,6 +4147,7 @@ class ConfluenceConfigurationTypeDef(TypedDict):
 5. See [:material-code-braces: ConfluenceAttachmentConfigurationTypeDef](./type_defs.md#confluenceattachmentconfigurationtypedef) 
 6. See [:material-code-braces: DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef) 
 7. See [:material-code-braces: ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef) 
+8. See [:material-code-brackets: ConfluenceAuthenticationTypeType](./literals.md#confluenceauthenticationtypetype) 
 ## CreateAccessControlConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"

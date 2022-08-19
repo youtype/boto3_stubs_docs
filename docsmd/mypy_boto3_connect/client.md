@@ -264,8 +264,7 @@ parent.associate_lex_bot(**kwargs)
 
 ### associate\_phone\_number\_contact\_flow
 
-Associates a contact flow with a phone number claimed to your Amazon Connect
-instance.
+Associates a flow with a phone number claimed to your Amazon Connect instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").associate_phone_number_contact_flow` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_phone_number_contact_flow)
@@ -498,7 +497,7 @@ parent.create_agent_status(**kwargs)
 
 ### create\_contact\_flow
 
-Creates a contact flow for the specified Amazon Connect instance.
+Creates a flow for the specified Amazon Connect instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").create_contact_flow` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow)
@@ -536,7 +535,7 @@ parent.create_contact_flow(**kwargs)
 
 ### create\_contact\_flow\_module
 
-Creates a contact flow module for the specified Amazon Connect instance.
+Creates a flow module for the specified Amazon Connect instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").create_contact_flow_module` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow_module)
@@ -1030,7 +1029,7 @@ parent.create_vocabulary(**kwargs)
 
 ### delete\_contact\_flow
 
-Deletes a contact flow for the specified Amazon Connect instance.
+Deletes a flow for the specified Amazon Connect instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").delete_contact_flow` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow)
@@ -1061,7 +1060,7 @@ parent.delete_contact_flow(**kwargs)
 
 ### delete\_contact\_flow\_module
 
-Deletes the specified contact flow module.
+Deletes the specified flow module.
 
 Type annotations and code completion for `#!python boto3.client("connect").delete_contact_flow_module` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow_module)
@@ -1463,7 +1462,7 @@ parent.describe_contact(**kwargs)
 
 ### describe\_contact\_flow
 
-Describes the specified contact flow.
+Describes the specified flow.
 
 Type annotations and code completion for `#!python boto3.client("connect").describe_contact_flow` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow)
@@ -1494,7 +1493,7 @@ parent.describe_contact_flow(**kwargs)
 
 ### describe\_contact\_flow\_module
 
-Describes the specified contact flow module.
+Describes the specified flow module.
 
 Type annotations and code completion for `#!python boto3.client("connect").describe_contact_flow_module` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow_module)
@@ -2090,8 +2089,8 @@ parent.disassociate_lex_bot(**kwargs)
 
 ### disassociate\_phone\_number\_contact\_flow
 
-Removes the contact flow association from a phone number claimed to your Amazon
-Connect instance, if a contact flow association exists.
+Removes the flow association from a phone number claimed to your Amazon Connect
+instance, if a flow association exists.
 
 Type annotations and code completion for `#!python boto3.client("connect").disassociate_phone_number_contact_flow` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_phone_number_contact_flow)
@@ -2546,8 +2545,8 @@ parent.list_bots(**kwargs)
 
 ### list\_contact\_flow\_modules
 
-Provides information about the contact flow modules for the specified Amazon
-Connect instance.
+Provides information about the flow modules for the specified Amazon Connect
+instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").list_contact_flow_modules` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flow_modules)
@@ -2580,8 +2579,7 @@ parent.list_contact_flow_modules(**kwargs)
 
 ### list\_contact\_flows
 
-Provides information about the contact flows for the specified Amazon Connect
-instance.
+Provides information about the flows for the specified Amazon Connect instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").list_contact_flows` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flows)
@@ -3562,6 +3560,41 @@ parent.search_available_phone_numbers(**kwargs)
 
 1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef) 
 
+### search\_security\_profiles
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").search_security_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_security_profiles)
+
+```python title="Method definition"
+def search_security_profiles(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SearchCriteria: SecurityProfileSearchCriteriaTypeDef = ...,  # (1)
+    SearchFilter: SecurityProfilesSearchFilterTypeDef = ...,  # (2)
+) -> SearchSecurityProfilesResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+2. See [:material-code-braces: SecurityProfilesSearchFilterTypeDef](./type_defs.md#securityprofilessearchfiltertypedef) 
+3. See [:material-code-braces: SearchSecurityProfilesResponseTypeDef](./type_defs.md#searchsecurityprofilesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchSecurityProfilesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.search_security_profiles(**kwargs)
+```
+
+1. See [:material-code-braces: SearchSecurityProfilesRequestRequestTypeDef](./type_defs.md#searchsecurityprofilesrequestrequesttypedef) 
+
 ### search\_users
 
 Searches users in an Amazon Connect instance, with optional filtering.
@@ -3636,7 +3669,7 @@ parent.search_vocabularies(**kwargs)
 
 ### start\_chat\_contact
 
-Initiates a contact flow to start a new chat for the customer.
+Initiates a flow to start a new chat for the customer.
 
 Type annotations and code completion for `#!python boto3.client("connect").start_chat_contact` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_chat_contact)
@@ -3748,7 +3781,7 @@ parent.start_contact_streaming(**kwargs)
 
 ### start\_outbound\_voice\_contact
 
-Places an outbound call to a contact, and then initiates the contact flow.
+Places an outbound call to a contact, and then initiates the flow.
 
 Type annotations and code completion for `#!python boto3.client("connect").start_outbound_voice_contact` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_outbound_voice_contact)
@@ -3790,7 +3823,7 @@ parent.start_outbound_voice_contact(**kwargs)
 
 ### start\_task\_contact
 
-Initiates a contact flow to start a new task.
+Initiates a flow to start a new task.
 
 Type annotations and code completion for `#!python boto3.client("connect").start_task_contact` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_task_contact)
@@ -4160,7 +4193,7 @@ parent.update_contact_attributes(**kwargs)
 
 ### update\_contact\_flow\_content
 
-Updates the specified contact flow.
+Updates the specified flow.
 
 Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_content` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_content)
@@ -4193,7 +4226,7 @@ parent.update_contact_flow_content(**kwargs)
 
 ### update\_contact\_flow\_metadata
 
-Updates metadata about specified contact flow.
+Updates metadata about specified flow.
 
 Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_metadata` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_metadata)
@@ -4228,7 +4261,7 @@ parent.update_contact_flow_metadata(**kwargs)
 
 ### update\_contact\_flow\_module\_content
 
-Updates specified contact flow module for the specified Amazon Connect instance.
+Updates specified flow module for the specified Amazon Connect instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_module_content` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_content)
@@ -4260,7 +4293,7 @@ parent.update_contact_flow_module_content(**kwargs)
 
 ### update\_contact\_flow\_module\_metadata
 
-Updates metadata about specified contact flow module.
+Updates metadata about specified flow module.
 
 Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_module_metadata` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_metadata)
@@ -4294,7 +4327,7 @@ parent.update_contact_flow_module_metadata(**kwargs)
 
 ### update\_contact\_flow\_name
 
-The name of the contact flow.
+The name of the flow.
 
 Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_name` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_name)
@@ -5210,6 +5243,7 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_user_hierarchy_groups")` -> [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
 - `client.get_paginator("search_available_phone_numbers")` -> [SearchAvailablePhoneNumbersPaginator](./paginators.md#searchavailablephonenumberspaginator)
+- `client.get_paginator("search_security_profiles")` -> [SearchSecurityProfilesPaginator](./paginators.md#searchsecurityprofilespaginator)
 - `client.get_paginator("search_users")` -> [SearchUsersPaginator](./paginators.md#searchuserspaginator)
 - `client.get_paginator("search_vocabularies")` -> [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
 

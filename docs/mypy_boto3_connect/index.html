@@ -37048,6 +37048,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listuserhierarchygroupspaginator">ListUserHierarchyGroupsPaginator</a></li>
 <li><a href="paginators/#listuserspaginator">ListUsersPaginator</a></li>
 <li><a href="paginators/#searchavailablephonenumberspaginator">SearchAvailablePhoneNumbersPaginator</a></li>
+<li><a href="paginators/#searchsecurityprofilespaginator">SearchSecurityProfilesPaginator</a></li>
 <li><a href="paginators/#searchuserspaginator">SearchUsersPaginator</a></li>
 <li><a href="paginators/#searchvocabulariespaginator">SearchVocabulariesPaginator</a></li>
 </ul>
@@ -37121,6 +37122,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#referencestatustype">ReferenceStatusType</a></li>
 <li><a href="literals/#referencetypetype">ReferenceTypeType</a></li>
 <li><a href="literals/#searchavailablephonenumberspaginatorname">SearchAvailablePhoneNumbersPaginatorName</a></li>
+<li><a href="literals/#searchsecurityprofilespaginatorname">SearchSecurityProfilesPaginatorName</a></li>
 <li><a href="literals/#searchuserspaginatorname">SearchUsersPaginatorName</a></li>
 <li><a href="literals/#searchvocabulariespaginatorname">SearchVocabulariesPaginatorName</a></li>
 <li><a href="literals/#sourcetypetype">SourceTypeType</a></li>
@@ -37312,13 +37314,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#resumecontactrecordingrequestrequesttypedef">ResumeContactRecordingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#routingprofilereferencetypedef">RoutingProfileReferenceTypeDef</a></li>
 <li><a href="type_defs/#searchavailablephonenumbersrequestrequesttypedef">SearchAvailablePhoneNumbersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#securityprofilesearchsummarytypedef">SecurityProfileSearchSummaryTypeDef</a></li>
 <li><a href="type_defs/#searchvocabulariesrequestrequesttypedef">SearchVocabulariesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#vocabularysummarytypedef">VocabularySummaryTypeDef</a></li>
+<li><a href="type_defs/#stringconditiontypedef">StringConditionTypeDef</a></li>
 <li><a href="type_defs/#voicerecordingconfigurationtypedef">VoiceRecordingConfigurationTypeDef</a></li>
 <li><a href="type_defs/#stopcontactrecordingrequestrequesttypedef">StopContactRecordingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopcontactrequestrequesttypedef">StopContactRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopcontactstreamingrequestrequesttypedef">StopContactStreamingRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#stringconditiontypedef">StringConditionTypeDef</a></li>
 <li><a href="type_defs/#suspendcontactrecordingrequestrequesttypedef">SuspendContactRecordingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#transfercontactrequestrequesttypedef">TransferContactRequestRequestTypeDef</a></li>
@@ -37484,14 +37487,17 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#referencesummarytypedef">ReferenceSummaryTypeDef</a></li>
 <li><a href="type_defs/#starttaskcontactrequestrequesttypedef">StartTaskContactRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecontactrequestrequesttypedef">UpdateContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#searchsecurityprofilesresponsetypedef">SearchSecurityProfilesResponseTypeDef</a></li>
 <li><a href="type_defs/#searchvocabulariesresponsetypedef">SearchVocabulariesResponseTypeDef</a></li>
-<li><a href="type_defs/#startcontactrecordingrequestrequesttypedef">StartContactRecordingRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#securityprofilesearchcriteriatypedef">SecurityProfileSearchCriteriaTypeDef</a></li>
 <li><a href="type_defs/#usersearchcriteriatypedef">UserSearchCriteriaTypeDef</a></li>
+<li><a href="type_defs/#startcontactrecordingrequestrequesttypedef">StartContactRecordingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usersearchsummarytypedef">UserSearchSummaryTypeDef</a></li>
 <li><a href="type_defs/#listbotsresponsetypedef">ListBotsResponseTypeDef</a></li>
 <li><a href="type_defs/#describephonenumberresponsetypedef">DescribePhoneNumberResponseTypeDef</a></li>
 <li><a href="type_defs/#getcurrentuserdatarequestrequesttypedef">GetCurrentUserDataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describecontactresponsetypedef">DescribeContactResponseTypeDef</a></li>
+<li><a href="type_defs/#securityprofilessearchfiltertypedef">SecurityProfilesSearchFilterTypeDef</a></li>
 <li><a href="type_defs/#usersearchfiltertypedef">UserSearchFilterTypeDef</a></li>
 <li><a href="type_defs/#describequeueresponsetypedef">DescribeQueueResponseTypeDef</a></li>
 <li><a href="type_defs/#describeroutingprofileresponsetypedef">DescribeRoutingProfileResponseTypeDef</a></li>
@@ -37519,6 +37525,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatequickconnectconfigrequestrequesttypedef">UpdateQuickConnectConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcontactreferencesresponsetypedef">ListContactReferencesResponseTypeDef</a></li>
 <li><a href="type_defs/#searchusersresponsetypedef">SearchUsersResponseTypeDef</a></li>
+<li><a href="type_defs/#searchsecurityprofilesrequestrequesttypedef">SearchSecurityProfilesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#searchsecurityprofilesrequestsearchsecurityprofilespaginatetypedef">SearchSecurityProfilesRequestSearchSecurityProfilesPaginateTypeDef</a></li>
 <li><a href="type_defs/#searchusersrequestrequesttypedef">SearchUsersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#searchusersrequestsearchuserspaginatetypedef">SearchUsersRequestSearchUsersPaginateTypeDef</a></li>
 <li><a href="type_defs/#getcurrentmetricdataresponsetypedef">GetCurrentMetricDataResponseTypeDef</a></li>

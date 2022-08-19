@@ -3094,6 +3094,27 @@ class SearchAvailablePhoneNumbersRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
 2. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+## SecurityProfileSearchSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SecurityProfileSearchSummaryTypeDef
+
+def get_value() -> SecurityProfileSearchSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class SecurityProfileSearchSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    OrganizationResourceId: NotRequired[str],
+    Arn: NotRequired[str],
+    SecurityProfileName: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
+
 ## SearchVocabulariesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3146,6 +3167,25 @@ class VocabularySummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+## StringConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import StringConditionTypeDef
+
+def get_value() -> StringConditionTypeDef:
+    return {
+        "FieldName": ...,
+    }
+```
+
+```python title="Definition"
+class StringConditionTypeDef(TypedDict):
+    FieldName: NotRequired[str],
+    Value: NotRequired[str],
+    ComparisonType: NotRequired[StringComparisonTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: StringComparisonTypeType](./literals.md#stringcomparisontypetype) 
 ## VoiceRecordingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3221,25 +3261,6 @@ class StopContactStreamingRequestRequestTypeDef(TypedDict):
     StreamingId: str,
 ```
 
-## StringConditionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import StringConditionTypeDef
-
-def get_value() -> StringConditionTypeDef:
-    return {
-        "FieldName": ...,
-    }
-```
-
-```python title="Definition"
-class StringConditionTypeDef(TypedDict):
-    FieldName: NotRequired[str],
-    Value: NotRequired[str],
-    ComparisonType: NotRequired[StringComparisonTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: StringComparisonTypeType](./literals.md#stringcomparisontypetype) 
 ## SuspendContactRecordingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6733,6 +6754,30 @@ class UpdateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
+## SearchSecurityProfilesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchSecurityProfilesResponseTypeDef
+
+def get_value() -> SearchSecurityProfilesResponseTypeDef:
+    return {
+        "SecurityProfiles": ...,
+        "NextToken": ...,
+        "ApproximateTotalCount": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchSecurityProfilesResponseTypeDef(TypedDict):
+    SecurityProfiles: List[SecurityProfileSearchSummaryTypeDef],  # (1)
+    NextToken: str,
+    ApproximateTotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SecurityProfileSearchSummaryTypeDef](./type_defs.md#securityprofilesearchsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchVocabulariesResponseTypeDef
 
 ```python title="Usage Example"
@@ -6755,29 +6800,27 @@ class SearchVocabulariesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: VocabularySummaryTypeDef](./type_defs.md#vocabularysummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartContactRecordingRequestRequestTypeDef
+## SecurityProfileSearchCriteriaTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_connect.type_defs import StartContactRecordingRequestRequestTypeDef
+from mypy_boto3_connect.type_defs import SecurityProfileSearchCriteriaTypeDef
 
-def get_value() -> StartContactRecordingRequestRequestTypeDef:
+def get_value() -> SecurityProfileSearchCriteriaTypeDef:
     return {
-        "InstanceId": ...,
-        "ContactId": ...,
-        "InitialContactId": ...,
-        "VoiceRecordingConfiguration": ...,
+        "OrConditions": ...,
     }
 ```
 
 ```python title="Definition"
-class StartContactRecordingRequestRequestTypeDef(TypedDict):
-    InstanceId: str,
-    ContactId: str,
-    InitialContactId: str,
-    VoiceRecordingConfiguration: VoiceRecordingConfigurationTypeDef,  # (1)
+class SecurityProfileSearchCriteriaTypeDef(TypedDict):
+    OrConditions: NotRequired[Sequence[SecurityProfileSearchCriteriaTypeDef]],  # (1)
+    AndConditions: NotRequired[Sequence[SecurityProfileSearchCriteriaTypeDef]],  # (1)
+    StringCondition: NotRequired[StringConditionTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef) 
+1. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+2. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
 ## UserSearchCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -6801,6 +6844,29 @@ class UserSearchCriteriaTypeDef(TypedDict):
 2. See [:material-code-braces: UserSearchCriteriaTypeDef](./type_defs.md#usersearchcriteriatypedef) 
 3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
 4. See [:material-code-braces: HierarchyGroupConditionTypeDef](./type_defs.md#hierarchygroupconditiontypedef) 
+## StartContactRecordingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import StartContactRecordingRequestRequestTypeDef
+
+def get_value() -> StartContactRecordingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "InitialContactId": ...,
+        "VoiceRecordingConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class StartContactRecordingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+    VoiceRecordingConfiguration: VoiceRecordingConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef) 
 ## UserSearchSummaryTypeDef
 
 ```python title="Usage Example"
@@ -6911,6 +6977,23 @@ class DescribeContactResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContactTypeDef](./type_defs.md#contacttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SecurityProfilesSearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SecurityProfilesSearchFilterTypeDef
+
+def get_value() -> SecurityProfilesSearchFilterTypeDef:
+    return {
+        "TagFilter": ...,
+    }
+```
+
+```python title="Definition"
+class SecurityProfilesSearchFilterTypeDef(TypedDict):
+    TagFilter: NotRequired[ControlPlaneTagFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ControlPlaneTagFilterTypeDef](./type_defs.md#controlplanetagfiltertypedef) 
 ## UserSearchFilterTypeDef
 
 ```python title="Usage Example"
@@ -7514,6 +7597,50 @@ class SearchUsersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserSearchSummaryTypeDef](./type_defs.md#usersearchsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchSecurityProfilesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchSecurityProfilesRequestRequestTypeDef
+
+def get_value() -> SearchSecurityProfilesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchSecurityProfilesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SearchCriteria: NotRequired[SecurityProfileSearchCriteriaTypeDef],  # (1)
+    SearchFilter: NotRequired[SecurityProfilesSearchFilterTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+2. See [:material-code-braces: SecurityProfilesSearchFilterTypeDef](./type_defs.md#securityprofilessearchfiltertypedef) 
+## SearchSecurityProfilesRequestSearchSecurityProfilesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchSecurityProfilesRequestSearchSecurityProfilesPaginateTypeDef
+
+def get_value() -> SearchSecurityProfilesRequestSearchSecurityProfilesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchSecurityProfilesRequestSearchSecurityProfilesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    SearchCriteria: NotRequired[SecurityProfileSearchCriteriaTypeDef],  # (1)
+    SearchFilter: NotRequired[SecurityProfilesSearchFilterTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+2. See [:material-code-braces: SecurityProfilesSearchFilterTypeDef](./type_defs.md#securityprofilessearchfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchUsersRequestRequestTypeDef
 
 ```python title="Usage Example"

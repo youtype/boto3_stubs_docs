@@ -547,6 +547,36 @@ parent.get_anomaly_group(**kwargs)
 
 1. See [:material-code-braces: GetAnomalyGroupRequestRequestTypeDef](./type_defs.md#getanomalygrouprequestrequesttypedef) 
 
+### get\_data\_quality\_metrics
+
+Returns details about the requested data quality metrics.
+
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").get_data_quality_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_data_quality_metrics)
+
+```python title="Method definition"
+def get_data_quality_metrics(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    MetricSetArn: str = ...,
+) -> GetDataQualityMetricsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataQualityMetricsResponseTypeDef](./type_defs.md#getdataqualitymetricsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataQualityMetricsRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
+
+parent.get_data_quality_metrics(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataQualityMetricsRequestRequestTypeDef](./type_defs.md#getdataqualitymetricsrequestrequesttypedef) 
+
 ### get\_feedback
 
 Get feedback for an anomaly group.

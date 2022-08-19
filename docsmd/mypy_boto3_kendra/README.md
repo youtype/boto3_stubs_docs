@@ -85,6 +85,7 @@ def get_value() -> AdditionalResultAttributeValueTypeType:
 - [AlfrescoEntityType](./literals.md#alfrescoentitytype)
 - [ConditionOperatorType](./literals.md#conditionoperatortype)
 - [ConfluenceAttachmentFieldNameType](./literals.md#confluenceattachmentfieldnametype)
+- [ConfluenceAuthenticationTypeType](./literals.md#confluenceauthenticationtypetype)
 - [ConfluenceBlogFieldNameType](./literals.md#confluenceblogfieldnametype)
 - [ConfluencePageFieldNameType](./literals.md#confluencepagefieldnametype)
 - [ConfluenceSpaceFieldNameType](./literals.md#confluencespacefieldnametype)

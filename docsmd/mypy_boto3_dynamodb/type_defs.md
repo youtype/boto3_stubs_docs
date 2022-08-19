@@ -2225,7 +2225,7 @@ def get_value() -> AttributeValueUpdateTypeDef:
 
 ```python title="Definition"
 class AttributeValueUpdateTypeDef(TypedDict):
-    Value: NotRequired[AttributeValueTypeDef],  # (1)
+    Value: NotRequired[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     Action: NotRequired[AttributeActionType],  # (2)
 ```
 
@@ -2245,7 +2245,7 @@ def get_value() -> BatchStatementRequestTypeDef:
 ```python title="Definition"
 class BatchStatementRequestTypeDef(TypedDict):
     Statement: str,
-    Parameters: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
+    Parameters: NotRequired[Sequence[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     ConsistentRead: NotRequired[bool],
 ```
 
@@ -2265,11 +2265,11 @@ def get_value() -> ConditionCheckTypeDef:
 
 ```python title="Definition"
 class ConditionCheckTypeDef(TypedDict):
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     TableName: str,
     ConditionExpression: str,
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
@@ -2290,7 +2290,7 @@ def get_value() -> ConditionTypeDef:
 ```python title="Definition"
 class ConditionTypeDef(TypedDict):
     ComparisonOperator: ComparisonOperatorType,  # (2)
-    AttributeValueList: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
+    AttributeValueList: NotRequired[Sequence[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -2308,7 +2308,7 @@ def get_value() -> DeleteRequestTypeDef:
 
 ```python title="Definition"
 class DeleteRequestTypeDef(TypedDict):
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -2326,11 +2326,11 @@ def get_value() -> DeleteTypeDef:
 
 ```python title="Definition"
 class DeleteTypeDef(TypedDict):
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     TableName: str,
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
@@ -2351,7 +2351,7 @@ def get_value() -> ExecuteStatementInputRequestTypeDef:
 ```python title="Definition"
 class ExecuteStatementInputRequestTypeDef(TypedDict):
     Statement: str,
-    Parameters: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
+    Parameters: NotRequired[Sequence[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     ConsistentRead: NotRequired[bool],
     NextToken: NotRequired[str],
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
@@ -2373,10 +2373,10 @@ def get_value() -> ExpectedAttributeValueTypeDef:
 
 ```python title="Definition"
 class ExpectedAttributeValueTypeDef(TypedDict):
-    Value: NotRequired[AttributeValueTypeDef],  # (1)
+    Value: NotRequired[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     Exists: NotRequired[bool],
     ComparisonOperator: NotRequired[ComparisonOperatorType],  # (2)
-    AttributeValueList: NotRequired[Sequence[AttributeValueTypeDef]],  # (3)
+    AttributeValueList: NotRequired[Sequence[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (3)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -2397,7 +2397,7 @@ def get_value() -> GetItemInputRequestTypeDef:
 ```python title="Definition"
 class GetItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     AttributesToGet: NotRequired[Sequence[str]],
     ConsistentRead: NotRequired[bool],
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
@@ -2421,7 +2421,7 @@ def get_value() -> GetTypeDef:
 
 ```python title="Definition"
 class GetTypeDef(TypedDict):
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     TableName: str,
     ProjectionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
@@ -2441,7 +2441,7 @@ def get_value() -> ItemCollectionMetricsTypeDef:
 
 ```python title="Definition"
 class ItemCollectionMetricsTypeDef(TypedDict):
-    ItemCollectionKey: NotRequired[Dict[str, AttributeValueTypeDef]],  # (1)
+    ItemCollectionKey: NotRequired[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     SizeEstimateRangeGB: NotRequired[List[float]],
 ```
 
@@ -2459,7 +2459,7 @@ def get_value() -> ItemResponseTypeDef:
 
 ```python title="Definition"
 class ItemResponseTypeDef(TypedDict):
-    Item: NotRequired[Dict[str, AttributeValueTypeDef]],  # (1)
+    Item: NotRequired[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -2476,7 +2476,7 @@ def get_value() -> KeysAndAttributesTypeDef:
 
 ```python title="Definition"
 class KeysAndAttributesTypeDef(TypedDict):
-    Keys: Sequence[Mapping[str, AttributeValueTypeDef]],  # (1)
+    Keys: Sequence[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     AttributesToGet: NotRequired[Sequence[str]],
     ConsistentRead: NotRequired[bool],
     ProjectionExpression: NotRequired[str],
@@ -2498,7 +2498,7 @@ def get_value() -> ParameterizedStatementTypeDef:
 ```python title="Definition"
 class ParameterizedStatementTypeDef(TypedDict):
     Statement: str,
-    Parameters: NotRequired[Sequence[AttributeValueTypeDef]],  # (1)
+    Parameters: NotRequired[Sequence[Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -2515,7 +2515,7 @@ def get_value() -> PutRequestTypeDef:
 
 ```python title="Definition"
 class PutRequestTypeDef(TypedDict):
-    Item: Mapping[str, AttributeValueTypeDef],  # (1)
+    Item: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -2533,11 +2533,11 @@ def get_value() -> PutTypeDef:
 
 ```python title="Definition"
 class PutTypeDef(TypedDict):
-    Item: Mapping[str, AttributeValueTypeDef],  # (1)
+    Item: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     TableName: str,
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
@@ -2559,12 +2559,12 @@ def get_value() -> UpdateTypeDef:
 
 ```python title="Definition"
 class UpdateTypeDef(TypedDict):
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     UpdateExpression: str,
     TableName: str,
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (3)
 ```
 
@@ -2705,7 +2705,7 @@ def get_value() -> BatchStatementResponseTypeDef:
 class BatchStatementResponseTypeDef(TypedDict):
     Error: NotRequired[BatchStatementErrorTypeDef],  # (1)
     TableName: NotRequired[str],
-    Item: NotRequired[Dict[str, AttributeValueTypeDef]],  # (2)
+    Item: NotRequired[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (2)
 ```
 
 1. See [:material-code-braces: BatchStatementErrorTypeDef](./type_defs.md#batchstatementerrortypedef) 
@@ -4012,13 +4012,13 @@ class QueryInputRequestTypeDef(TypedDict):
     QueryFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
     ScanIndexForward: NotRequired[bool],
-    ExclusiveStartKey: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (5)
+    ExclusiveStartKey: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (5)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (6)
     ProjectionExpression: NotRequired[str],
     FilterExpression: NotRequired[str],
     KeyConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (5)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (5)
 ```
 
 1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
@@ -4048,14 +4048,14 @@ class ScanInputRequestTypeDef(TypedDict):
     Select: NotRequired[SelectType],  # (1)
     ScanFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
-    ExclusiveStartKey: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (4)
+    ExclusiveStartKey: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (4)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
     TotalSegments: NotRequired[int],
     Segment: NotRequired[int],
     ProjectionExpression: NotRequired[str],
     FilterExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (4)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (4)
     ConsistentRead: NotRequired[bool],
 ```
 
@@ -4080,7 +4080,7 @@ def get_value() -> DeleteItemInputRequestTypeDef:
 ```python title="Definition"
 class DeleteItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
     ReturnValues: NotRequired[ReturnValueType],  # (4)
@@ -4088,7 +4088,7 @@ class DeleteItemInputRequestTypeDef(TypedDict):
     ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (6)
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -4113,7 +4113,7 @@ def get_value() -> PutItemInputRequestTypeDef:
 ```python title="Definition"
 class PutItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Item: Mapping[str, AttributeValueTypeDef],  # (1)
+    Item: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
     ReturnValues: NotRequired[ReturnValueType],  # (3)
     ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
@@ -4121,7 +4121,7 @@ class PutItemInputRequestTypeDef(TypedDict):
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (6)
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -4146,7 +4146,7 @@ def get_value() -> UpdateItemInputRequestTypeDef:
 ```python title="Definition"
 class UpdateItemInputRequestTypeDef(TypedDict):
     TableName: str,
-    Key: Mapping[str, AttributeValueTypeDef],  # (1)
+    Key: Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     AttributeUpdates: NotRequired[Mapping[str, AttributeValueUpdateTypeDef]],  # (2)
     Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (3)
     ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
@@ -4156,7 +4156,7 @@ class UpdateItemInputRequestTypeDef(TypedDict):
     UpdateExpression: NotRequired[str],
     ConditionExpression: NotRequired[str],
     ExpressionAttributeNames: NotRequired[Mapping[str, str]],
-    ExpressionAttributeValues: NotRequired[Mapping[str, AttributeValueTypeDef]],  # (1)
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -4524,7 +4524,7 @@ def get_value() -> BatchGetItemOutputTypeDef:
 
 ```python title="Definition"
 class BatchGetItemOutputTypeDef(TypedDict):
-    Responses: Dict[str, List[Dict[str, AttributeValueTypeDef]]],  # (1)
+    Responses: Dict[str, List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]]],  # (1)
     UnprocessedKeys: Dict[str, KeysAndAttributesTypeDef],  # (2)
     ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
@@ -4550,7 +4550,7 @@ def get_value() -> DeleteItemOutputTypeDef:
 
 ```python title="Definition"
 class DeleteItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
+    Attributes: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
@@ -4577,10 +4577,10 @@ def get_value() -> ExecuteStatementOutputTypeDef:
 
 ```python title="Definition"
 class ExecuteStatementOutputTypeDef(TypedDict):
-    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
+    Items: List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     NextToken: str,
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
-    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (3)
+    LastEvaluatedKey: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
@@ -4626,7 +4626,7 @@ def get_value() -> GetItemOutputTypeDef:
 
 ```python title="Definition"
 class GetItemOutputTypeDef(TypedDict):
-    Item: Dict[str, AttributeValueTypeDef],  # (1)
+    Item: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
@@ -4650,7 +4650,7 @@ def get_value() -> PutItemOutputTypeDef:
 
 ```python title="Definition"
 class PutItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
+    Attributes: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
@@ -4678,10 +4678,10 @@ def get_value() -> QueryOutputTypeDef:
 
 ```python title="Definition"
 class QueryOutputTypeDef(TypedDict):
-    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
+    Items: List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     Count: int,
     ScannedCount: int,
-    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (2)
+    LastEvaluatedKey: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (2)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
@@ -4708,10 +4708,10 @@ def get_value() -> ScanOutputTypeDef:
 
 ```python title="Definition"
 class ScanOutputTypeDef(TypedDict):
-    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
+    Items: List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
     Count: int,
     ScannedCount: int,
-    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (2)
+    LastEvaluatedKey: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (2)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
@@ -4782,7 +4782,7 @@ def get_value() -> UpdateItemOutputTypeDef:
 
 ```python title="Definition"
 class UpdateItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
+    Attributes: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)

@@ -1899,6 +1899,69 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestSearchAvailablePhoneNumbersPaginateTypeDef](./type_defs.md#searchavailablephonenumbersrequestsearchavailablephonenumberspaginatetypedef) 
+## SearchSecurityProfilesPaginator
+
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_security_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.SearchSecurityProfiles)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchSecurityProfilesPaginator
+
+def get_search_security_profiles_paginator() -> SearchSecurityProfilesPaginator:
+    return Session().client("connect").get_paginator("search_security_profiles")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchSecurityProfilesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: SearchSecurityProfilesPaginator = client.get_paginator("search_security_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [SearchSecurityProfilesPaginator](./paginators.md#searchsecurityprofilespaginator)
+3. item: [:material-code-braces: SearchSecurityProfilesResponseTypeDef](./type_defs.md#searchsecurityprofilesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python SearchSecurityProfilesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    SearchCriteria: SecurityProfileSearchCriteriaTypeDef = ...,  # (1)
+    SearchFilter: SecurityProfilesSearchFilterTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[SearchSecurityProfilesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+2. See [:material-code-braces: SecurityProfilesSearchFilterTypeDef](./type_defs.md#securityprofilessearchfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: SearchSecurityProfilesResponseTypeDef](./type_defs.md#searchsecurityprofilesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchSecurityProfilesRequestSearchSecurityProfilesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchSecurityProfilesRequestSearchSecurityProfilesPaginateTypeDef](./type_defs.md#searchsecurityprofilesrequestsearchsecurityprofilespaginatetypedef) 
 ## SearchUsersPaginator
 
 Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_users")`.

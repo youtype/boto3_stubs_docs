@@ -330,7 +330,8 @@ parent.create_access_control_configuration(**kwargs)
 
 ### create\_data\_source
 
-Creates a data source that you want to use with an Amazon Kendra index.
+Creates a data source connector that you want to use with an Amazon Kendra
+index.
 
 Type annotations and code completion for `#!python boto3.client("kendra").create_data_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_data_source)
@@ -612,7 +613,7 @@ parent.delete_access_control_configuration(**kwargs)
 
 ### delete\_data\_source
 
-Deletes an Amazon Kendra data source.
+Deletes an Amazon Kendra data source connector.
 
 Type annotations and code completion for `#!python boto3.client("kendra").delete_data_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_data_source)
@@ -861,7 +862,7 @@ parent.describe_access_control_configuration(**kwargs)
 
 ### describe\_data\_source
 
-Gets information about an Amazon Kendra data source.
+Gets information about an Amazon Kendra data source connector.
 
 Type annotations and code completion for `#!python boto3.client("kendra").describe_data_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_data_source)
@@ -1296,7 +1297,7 @@ parent.list_access_control_configurations(**kwargs)
 
 ### list\_data\_source\_sync\_jobs
 
-Gets statistics about synchronizing Amazon Kendra with a data source.
+Gets statistics about synchronizing a data source connector.
 
 Type annotations and code completion for `#!python boto3.client("kendra").list_data_source_sync_jobs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_source_sync_jobs)
@@ -1333,7 +1334,7 @@ parent.list_data_source_sync_jobs(**kwargs)
 
 ### list\_data\_sources
 
-Lists the data sources that you have created.
+Lists the data source connectors that you have created.
 
 Type annotations and code completion for `#!python boto3.client("kendra").list_data_sources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_sources)
@@ -1735,7 +1736,7 @@ parent.query(**kwargs)
 
 ### start\_data\_source\_sync\_job
 
-Starts a synchronization job for a data source.
+Starts a synchronization job for a data source connector.
 
 Type annotations and code completion for `#!python boto3.client("kendra").start_data_source_sync_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.start_data_source_sync_job)
@@ -1930,7 +1931,7 @@ parent.update_access_control_configuration(**kwargs)
 
 ### update\_data\_source
 
-Updates an existing Amazon Kendra data source.
+Updates an existing Amazon Kendra data source connector.
 
 Type annotations and code completion for `#!python boto3.client("kendra").update_data_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_data_source)

@@ -405,6 +405,26 @@ class CsvFormatDescriptorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CSVFileCompressionType](./literals.md#csvfilecompressiontype) 
+## DataQualityMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import DataQualityMetricTypeDef
+
+def get_value() -> DataQualityMetricTypeDef:
+    return {
+        "MetricType": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityMetricTypeDef(TypedDict):
+    MetricType: NotRequired[DataQualityMetricTypeType],  # (1)
+    MetricDescription: NotRequired[str],
+    RelatedColumnName: NotRequired[str],
+    MetricValue: NotRequired[float],
+```
+
+1. See [:material-code-brackets: DataQualityMetricTypeType](./literals.md#dataqualitymetrictypetype) 
 ## DeactivateAnomalyDetectorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -608,6 +628,23 @@ def get_value() -> GetAnomalyGroupRequestRequestTypeDef:
 class GetAnomalyGroupRequestRequestTypeDef(TypedDict):
     AnomalyGroupId: str,
     AnomalyDetectorArn: str,
+```
+
+## GetDataQualityMetricsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import GetDataQualityMetricsRequestRequestTypeDef
+
+def get_value() -> GetDataQualityMetricsRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityMetricsRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    MetricSetArn: NotRequired[str],
 ```
 
 ## TimeSeriesFeedbackTypeDef
@@ -1310,6 +1347,24 @@ class UpdateMetricSetResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MetricSetDataQualityMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import MetricSetDataQualityMetricTypeDef
+
+def get_value() -> MetricSetDataQualityMetricTypeDef:
+    return {
+        "MetricSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class MetricSetDataQualityMetricTypeDef(TypedDict):
+    MetricSetArn: NotRequired[str],
+    DataQualityMetricList: NotRequired[List[DataQualityMetricTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DataQualityMetricTypeDef](./type_defs.md#dataqualitymetrictypedef) 
 ## DescribeAnomalyDetectionExecutionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1672,6 +1727,24 @@ class DetectMetricSetConfigRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoDetectionMetricSourceTypeDef](./type_defs.md#autodetectionmetricsourcetypedef) 
+## AnomalyDetectorDataQualityMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorDataQualityMetricTypeDef
+
+def get_value() -> AnomalyDetectorDataQualityMetricTypeDef:
+    return {
+        "StartTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class AnomalyDetectorDataQualityMetricTypeDef(TypedDict):
+    StartTimestamp: NotRequired[datetime],
+    MetricSetDataQualityMetricList: NotRequired[List[MetricSetDataQualityMetricTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: MetricSetDataQualityMetricTypeDef](./type_defs.md#metricsetdataqualitymetrictypedef) 
 ## ContributionMatrixTypeDef
 
 ```python title="Usage Example"
@@ -1797,6 +1870,26 @@ class DetectedFileFormatDescriptorTypeDef(TypedDict):
 
 1. See [:material-code-braces: DetectedCsvFormatDescriptorTypeDef](./type_defs.md#detectedcsvformatdescriptortypedef) 
 2. See [:material-code-braces: DetectedJsonFormatDescriptorTypeDef](./type_defs.md#detectedjsonformatdescriptortypedef) 
+## GetDataQualityMetricsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import GetDataQualityMetricsResponseTypeDef
+
+def get_value() -> GetDataQualityMetricsResponseTypeDef:
+    return {
+        "AnomalyDetectorDataQualityMetricList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityMetricsResponseTypeDef(TypedDict):
+    AnomalyDetectorDataQualityMetricList: List[AnomalyDetectorDataQualityMetricTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AnomalyDetectorDataQualityMetricTypeDef](./type_defs.md#anomalydetectordataqualitymetrictypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricLevelImpactTypeDef
 
 ```python title="Usage Example"
