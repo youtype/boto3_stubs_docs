@@ -40,6 +40,23 @@ AutoMLOverrideStrategyType = Literal[
     "LatencyOptimized",
 ]
 ```
+## ConditionType
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ConditionType
+
+def get_value() -> ConditionType:
+    return "EQUALS"
+```
+
+```python title="Definition"
+ConditionType = Literal[
+    "EQUALS",
+    "GREATER_THAN",
+    "LESS_THAN",
+    "NOT_EQUALS",
+]
+```
 ## DatasetTypeType
 
 ```python title="Usage Example"
@@ -294,6 +311,48 @@ ListPredictorsPaginatorName = Literal[
     "list_predictors",
 ]
 ```
+## ListWhatIfAnalysesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ListWhatIfAnalysesPaginatorName
+
+def get_value() -> ListWhatIfAnalysesPaginatorName:
+    return "list_what_if_analyses"
+```
+
+```python title="Definition"
+ListWhatIfAnalysesPaginatorName = Literal[
+    "list_what_if_analyses",
+]
+```
+## ListWhatIfForecastExportsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ListWhatIfForecastExportsPaginatorName
+
+def get_value() -> ListWhatIfForecastExportsPaginatorName:
+    return "list_what_if_forecast_exports"
+```
+
+```python title="Definition"
+ListWhatIfForecastExportsPaginatorName = Literal[
+    "list_what_if_forecast_exports",
+]
+```
+## ListWhatIfForecastsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ListWhatIfForecastsPaginatorName
+
+def get_value() -> ListWhatIfForecastsPaginatorName:
+    return "list_what_if_forecasts"
+```
+
+```python title="Definition"
+ListWhatIfForecastsPaginatorName = Literal[
+    "list_what_if_forecasts",
+]
+```
 ## MonthType
 
 ```python title="Usage Example"
@@ -317,6 +376,23 @@ MonthType = Literal[
     "NOVEMBER",
     "OCTOBER",
     "SEPTEMBER",
+]
+```
+## OperationType
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import OperationType
+
+def get_value() -> OperationType:
+    return "ADD"
+```
+
+```python title="Definition"
+OperationType = Literal[
+    "ADD",
+    "DIVIDE",
+    "MULTIPLY",
+    "SUBTRACT",
 ]
 ```
 ## OptimizationMetricType
@@ -716,6 +792,7 @@ ServiceName = Literal[
     "storagegateway",
     "sts",
     "support",
+    "support-app",
     "swf",
     "synthetics",
     "textract",
@@ -784,6 +861,9 @@ PaginatorName = Literal[
     "list_monitors",
     "list_predictor_backtest_export_jobs",
     "list_predictors",
+    "list_what_if_analyses",
+    "list_what_if_forecast_exports",
+    "list_what_if_forecasts",
 ]
 ```
 ## RegionName

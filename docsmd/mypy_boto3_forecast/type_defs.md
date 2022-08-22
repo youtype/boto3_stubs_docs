@@ -7,6 +7,27 @@
     Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
     type annotations stubs module [mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
+## ActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "AttributeName": ...,
+        "Operation": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    AttributeName: str,
+    Operation: OperationType,  # (1)
+    Value: float,
+```
+
+1. See [:material-code-brackets: OperationType](./literals.md#operationtype) 
 ## AdditionalDatasetTypeDef
 
 ```python title="Usage Example"
@@ -470,6 +491,54 @@ class DeleteResourceTreeRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
+## DeleteWhatIfAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DeleteWhatIfAnalysisRequestRequestTypeDef
+
+def get_value() -> DeleteWhatIfAnalysisRequestRequestTypeDef:
+    return {
+        "WhatIfAnalysisArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteWhatIfAnalysisRequestRequestTypeDef(TypedDict):
+    WhatIfAnalysisArn: str,
+```
+
+## DeleteWhatIfForecastExportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DeleteWhatIfForecastExportRequestRequestTypeDef
+
+def get_value() -> DeleteWhatIfForecastExportRequestRequestTypeDef:
+    return {
+        "WhatIfForecastExportArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteWhatIfForecastExportRequestRequestTypeDef(TypedDict):
+    WhatIfForecastExportArn: str,
+```
+
+## DeleteWhatIfForecastRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DeleteWhatIfForecastRequestRequestTypeDef
+
+def get_value() -> DeleteWhatIfForecastRequestRequestTypeDef:
+    return {
+        "WhatIfForecastArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteWhatIfForecastRequestRequestTypeDef(TypedDict):
+    WhatIfForecastArn: str,
+```
+
 ## DescribeAutoPredictorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -725,6 +794,54 @@ class DescribePredictorRequestRequestTypeDef(TypedDict):
     PredictorArn: str,
 ```
 
+## DescribeWhatIfAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DescribeWhatIfAnalysisRequestRequestTypeDef
+
+def get_value() -> DescribeWhatIfAnalysisRequestRequestTypeDef:
+    return {
+        "WhatIfAnalysisArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWhatIfAnalysisRequestRequestTypeDef(TypedDict):
+    WhatIfAnalysisArn: str,
+```
+
+## DescribeWhatIfForecastExportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DescribeWhatIfForecastExportRequestRequestTypeDef
+
+def get_value() -> DescribeWhatIfForecastExportRequestRequestTypeDef:
+    return {
+        "WhatIfForecastExportArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWhatIfForecastExportRequestRequestTypeDef(TypedDict):
+    WhatIfForecastExportArn: str,
+```
+
+## DescribeWhatIfForecastRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DescribeWhatIfForecastRequestRequestTypeDef
+
+def get_value() -> DescribeWhatIfForecastRequestRequestTypeDef:
+    return {
+        "WhatIfForecastArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWhatIfForecastRequestRequestTypeDef(TypedDict):
+    WhatIfForecastArn: str,
+```
+
 ## ErrorMetricTypeDef
 
 ```python title="Usage Example"
@@ -953,6 +1070,50 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
+## WhatIfAnalysisSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import WhatIfAnalysisSummaryTypeDef
+
+def get_value() -> WhatIfAnalysisSummaryTypeDef:
+    return {
+        "WhatIfAnalysisArn": ...,
+    }
+```
+
+```python title="Definition"
+class WhatIfAnalysisSummaryTypeDef(TypedDict):
+    WhatIfAnalysisArn: NotRequired[str],
+    WhatIfAnalysisName: NotRequired[str],
+    ForecastArn: NotRequired[str],
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
+
+## WhatIfForecastSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import WhatIfForecastSummaryTypeDef
+
+def get_value() -> WhatIfForecastSummaryTypeDef:
+    return {
+        "WhatIfForecastArn": ...,
+    }
+```
+
+```python title="Definition"
+class WhatIfForecastSummaryTypeDef(TypedDict):
+    WhatIfForecastArn: NotRequired[str],
+    WhatIfForecastName: NotRequired[str],
+    WhatIfAnalysisArn: NotRequired[str],
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
+
 ## MetricResultTypeDef
 
 ```python title="Usage Example"
@@ -1091,6 +1252,27 @@ class StopResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
+## TimeSeriesConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import TimeSeriesConditionTypeDef
+
+def get_value() -> TimeSeriesConditionTypeDef:
+    return {
+        "AttributeName": ...,
+        "AttributeValue": ...,
+        "Condition": ...,
+    }
+```
+
+```python title="Definition"
+class TimeSeriesConditionTypeDef(TypedDict):
+    AttributeName: str,
+    AttributeValue: str,
+    Condition: ConditionType,  # (1)
+```
+
+1. See [:material-code-brackets: ConditionType](./literals.md#conditiontype) 
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1430,6 +1612,63 @@ def get_value() -> CreatePredictorResponseTypeDef:
 ```python title="Definition"
 class CreatePredictorResponseTypeDef(TypedDict):
     PredictorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateWhatIfAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import CreateWhatIfAnalysisResponseTypeDef
+
+def get_value() -> CreateWhatIfAnalysisResponseTypeDef:
+    return {
+        "WhatIfAnalysisArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWhatIfAnalysisResponseTypeDef(TypedDict):
+    WhatIfAnalysisArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateWhatIfForecastExportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import CreateWhatIfForecastExportResponseTypeDef
+
+def get_value() -> CreateWhatIfForecastExportResponseTypeDef:
+    return {
+        "WhatIfForecastExportArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWhatIfForecastExportResponseTypeDef(TypedDict):
+    WhatIfForecastExportArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateWhatIfForecastResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import CreateWhatIfForecastResponseTypeDef
+
+def get_value() -> CreateWhatIfForecastResponseTypeDef:
+    return {
+        "WhatIfForecastArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWhatIfForecastResponseTypeDef(TypedDict):
+    WhatIfForecastArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1820,6 +2059,63 @@ class ListPredictorsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListWhatIfAnalysesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfAnalysesRequestRequestTypeDef
+
+def get_value() -> ListWhatIfAnalysesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfAnalysesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListWhatIfForecastExportsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfForecastExportsRequestRequestTypeDef
+
+def get_value() -> ListWhatIfForecastExportsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfForecastExportsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListWhatIfForecastsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfForecastsRequestRequestTypeDef
+
+def get_value() -> ListWhatIfForecastsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfForecastsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListForecastsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2087,6 +2383,63 @@ class ListPredictorsRequestListPredictorsPaginateTypeDef(TypedDict):
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListWhatIfAnalysesRequestListWhatIfAnalysesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfAnalysesRequestListWhatIfAnalysesPaginateTypeDef
+
+def get_value() -> ListWhatIfAnalysesRequestListWhatIfAnalysesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfAnalysesRequestListWhatIfAnalysesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListWhatIfForecastExportsRequestListWhatIfForecastExportsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfForecastExportsRequestListWhatIfForecastExportsPaginateTypeDef
+
+def get_value() -> ListWhatIfForecastExportsRequestListWhatIfForecastExportsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfForecastExportsRequestListWhatIfForecastExportsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListWhatIfForecastsRequestListWhatIfForecastsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfForecastsRequestListWhatIfForecastsPaginateTypeDef
+
+def get_value() -> ListWhatIfForecastsRequestListWhatIfForecastsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfForecastsRequestListWhatIfForecastsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMonitorsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2108,6 +2461,50 @@ class ListMonitorsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MonitorSummaryTypeDef](./type_defs.md#monitorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWhatIfAnalysesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfAnalysesResponseTypeDef
+
+def get_value() -> ListWhatIfAnalysesResponseTypeDef:
+    return {
+        "WhatIfAnalyses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfAnalysesResponseTypeDef(TypedDict):
+    WhatIfAnalyses: List[WhatIfAnalysisSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WhatIfAnalysisSummaryTypeDef](./type_defs.md#whatifanalysissummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWhatIfForecastsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfForecastsResponseTypeDef
+
+def get_value() -> ListWhatIfForecastsResponseTypeDef:
+    return {
+        "WhatIfForecasts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfForecastsResponseTypeDef(TypedDict):
+    WhatIfForecasts: List[WhatIfForecastSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WhatIfForecastSummaryTypeDef](./type_defs.md#whatifforecastsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricsTypeDef
 
@@ -2194,6 +2591,25 @@ class SchemaTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SchemaAttributeTypeDef](./type_defs.md#schemaattributetypedef) 
+## TimeSeriesTransformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import TimeSeriesTransformationTypeDef
+
+def get_value() -> TimeSeriesTransformationTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class TimeSeriesTransformationTypeDef(TypedDict):
+    Action: NotRequired[ActionTypeDef],  # (1)
+    TimeSeriesConditions: NotRequired[Sequence[TimeSeriesConditionTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: TimeSeriesConditionTypeDef](./type_defs.md#timeseriesconditiontypedef) 
 ## CreateAutoPredictorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2401,6 +2817,30 @@ class CreatePredictorBacktestExportJobRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateWhatIfForecastExportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import CreateWhatIfForecastExportRequestRequestTypeDef
+
+def get_value() -> CreateWhatIfForecastExportRequestRequestTypeDef:
+    return {
+        "WhatIfForecastExportName": ...,
+        "WhatIfForecastArns": ...,
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWhatIfForecastExportRequestRequestTypeDef(TypedDict):
+    WhatIfForecastExportName: str,
+    WhatIfForecastArns: Sequence[str],
+    Destination: DataDestinationTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    Format: NotRequired[str],
+```
+
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DescribeExplainabilityExportResponseTypeDef
 
 ```python title="Usage Example"
@@ -2509,6 +2949,44 @@ class DescribePredictorBacktestExportJobResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWhatIfForecastExportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DescribeWhatIfForecastExportResponseTypeDef
+
+def get_value() -> DescribeWhatIfForecastExportResponseTypeDef:
+    return {
+        "WhatIfForecastExportArn": ...,
+        "WhatIfForecastExportName": ...,
+        "WhatIfForecastArns": ...,
+        "Destination": ...,
+        "Message": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "LastModificationTime": ...,
+        "Format": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWhatIfForecastExportResponseTypeDef(TypedDict):
+    WhatIfForecastExportArn: str,
+    WhatIfForecastExportName: str,
+    WhatIfForecastArns: List[str],
+    Destination: DataDestinationTypeDef,  # (1)
+    Message: str,
+    Status: str,
+    CreationTime: datetime,
+    EstimatedTimeRemainingInMinutes: int,
+    LastModificationTime: datetime,
+    Format: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExplainabilityExportSummaryTypeDef
 
 ```python title="Usage Example"
@@ -2570,6 +3048,30 @@ def get_value() -> PredictorBacktestExportJobSummaryTypeDef:
 class PredictorBacktestExportJobSummaryTypeDef(TypedDict):
     PredictorBacktestExportJobArn: NotRequired[str],
     PredictorBacktestExportJobName: NotRequired[str],
+    Destination: NotRequired[DataDestinationTypeDef],  # (1)
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+## WhatIfForecastExportSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import WhatIfForecastExportSummaryTypeDef
+
+def get_value() -> WhatIfForecastExportSummaryTypeDef:
+    return {
+        "WhatIfForecastExportArn": ...,
+    }
+```
+
+```python title="Definition"
+class WhatIfForecastExportSummaryTypeDef(TypedDict):
+    WhatIfForecastExportArn: NotRequired[str],
+    WhatIfForecastArns: NotRequired[List[str]],
+    WhatIfForecastExportName: NotRequired[str],
     Destination: NotRequired[DataDestinationTypeDef],  # (1)
     Status: NotRequired[str],
     Message: NotRequired[str],
@@ -2968,6 +3470,28 @@ class TimeSeriesIdentifiersTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 2. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
+## TimeSeriesReplacementsDataSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import TimeSeriesReplacementsDataSourceTypeDef
+
+def get_value() -> TimeSeriesReplacementsDataSourceTypeDef:
+    return {
+        "S3Config": ...,
+        "Schema": ...,
+    }
+```
+
+```python title="Definition"
+class TimeSeriesReplacementsDataSourceTypeDef(TypedDict):
+    S3Config: S3ConfigTypeDef,  # (1)
+    Schema: SchemaTypeDef,  # (2)
+    Format: NotRequired[str],
+    TimestampFormat: NotRequired[str],
+```
+
+1. See [:material-code-braces: S3ConfigTypeDef](./type_defs.md#s3configtypedef) 
+2. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
 ## DescribeMonitorResponseTypeDef
 
 ```python title="Usage Example"
@@ -3073,6 +3597,28 @@ class ListPredictorBacktestExportJobsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PredictorBacktestExportJobSummaryTypeDef](./type_defs.md#predictorbacktestexportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWhatIfForecastExportsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListWhatIfForecastExportsResponseTypeDef
+
+def get_value() -> ListWhatIfForecastExportsResponseTypeDef:
+    return {
+        "WhatIfForecastExports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWhatIfForecastExportsResponseTypeDef(TypedDict):
+    WhatIfForecastExports: List[WhatIfForecastExportSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WhatIfForecastExportSummaryTypeDef](./type_defs.md#whatifforecastexportsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDatasetImportJobsResponseTypeDef
 
@@ -3245,6 +3791,71 @@ class TimeSeriesSelectorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TimeSeriesIdentifiersTypeDef](./type_defs.md#timeseriesidentifierstypedef) 
+## CreateWhatIfForecastRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import CreateWhatIfForecastRequestRequestTypeDef
+
+def get_value() -> CreateWhatIfForecastRequestRequestTypeDef:
+    return {
+        "WhatIfForecastName": ...,
+        "WhatIfAnalysisArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWhatIfForecastRequestRequestTypeDef(TypedDict):
+    WhatIfForecastName: str,
+    WhatIfAnalysisArn: str,
+    TimeSeriesTransformations: NotRequired[Sequence[TimeSeriesTransformationTypeDef]],  # (1)
+    TimeSeriesReplacementsDataSource: NotRequired[TimeSeriesReplacementsDataSourceTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: TimeSeriesTransformationTypeDef](./type_defs.md#timeseriestransformationtypedef) 
+2. See [:material-code-braces: TimeSeriesReplacementsDataSourceTypeDef](./type_defs.md#timeseriesreplacementsdatasourcetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeWhatIfForecastResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DescribeWhatIfForecastResponseTypeDef
+
+def get_value() -> DescribeWhatIfForecastResponseTypeDef:
+    return {
+        "WhatIfForecastName": ...,
+        "WhatIfForecastArn": ...,
+        "WhatIfAnalysisArn": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "Status": ...,
+        "Message": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "TimeSeriesTransformations": ...,
+        "TimeSeriesReplacementsDataSource": ...,
+        "ForecastTypes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWhatIfForecastResponseTypeDef(TypedDict):
+    WhatIfForecastName: str,
+    WhatIfForecastArn: str,
+    WhatIfAnalysisArn: str,
+    EstimatedTimeRemainingInMinutes: int,
+    Status: str,
+    Message: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    TimeSeriesTransformations: List[TimeSeriesTransformationTypeDef],  # (1)
+    TimeSeriesReplacementsDataSource: TimeSeriesReplacementsDataSourceTypeDef,  # (2)
+    ForecastTypes: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: TimeSeriesTransformationTypeDef](./type_defs.md#timeseriestransformationtypedef) 
+2. See [:material-code-braces: TimeSeriesReplacementsDataSourceTypeDef](./type_defs.md#timeseriesreplacementsdatasourcetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccuracyMetricsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3296,6 +3907,28 @@ class CreateForecastRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: TimeSeriesSelectorTypeDef](./type_defs.md#timeseriesselectortypedef) 
+## CreateWhatIfAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import CreateWhatIfAnalysisRequestRequestTypeDef
+
+def get_value() -> CreateWhatIfAnalysisRequestRequestTypeDef:
+    return {
+        "WhatIfAnalysisName": ...,
+        "ForecastArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWhatIfAnalysisRequestRequestTypeDef(TypedDict):
+    WhatIfAnalysisName: str,
+    ForecastArn: str,
+    TimeSeriesSelector: NotRequired[TimeSeriesSelectorTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: TimeSeriesSelectorTypeDef](./type_defs.md#timeseriesselectortypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DescribeForecastResponseTypeDef
 
 ```python title="Usage Example"
@@ -3325,6 +3958,42 @@ class DescribeForecastResponseTypeDef(TypedDict):
     ForecastTypes: List[str],
     PredictorArn: str,
     DatasetGroupArn: str,
+    EstimatedTimeRemainingInMinutes: int,
+    Status: str,
+    Message: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    TimeSeriesSelector: TimeSeriesSelectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TimeSeriesSelectorTypeDef](./type_defs.md#timeseriesselectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWhatIfAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import DescribeWhatIfAnalysisResponseTypeDef
+
+def get_value() -> DescribeWhatIfAnalysisResponseTypeDef:
+    return {
+        "WhatIfAnalysisName": ...,
+        "WhatIfAnalysisArn": ...,
+        "ForecastArn": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "Status": ...,
+        "Message": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "TimeSeriesSelector": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWhatIfAnalysisResponseTypeDef(TypedDict):
+    WhatIfAnalysisName: str,
+    WhatIfAnalysisArn: str,
+    ForecastArn: str,
     EstimatedTimeRemainingInMinutes: int,
     Status: str,
     Message: str,

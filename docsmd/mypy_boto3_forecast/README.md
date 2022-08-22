@@ -88,6 +88,9 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
 - [ListMonitorsPaginator](./paginators.md#listmonitorspaginator)
 - [ListPredictorBacktestExportJobsPaginator](./paginators.md#listpredictorbacktestexportjobspaginator)
 - [ListPredictorsPaginator](./paginators.md#listpredictorspaginator)
+- [ListWhatIfAnalysesPaginator](./paginators.md#listwhatifanalysespaginator)
+- [ListWhatIfForecastExportsPaginator](./paginators.md#listwhatifforecastexportspaginator)
+- [ListWhatIfForecastsPaginator](./paginators.md#listwhatifforecastspaginator)
 
 
 
@@ -110,6 +113,7 @@ def get_value() -> AttributeTypeType:
 
 - [AttributeTypeType](./literals.md#attributetypetype)
 - [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
+- [ConditionType](./literals.md#conditiontype)
 - [DatasetTypeType](./literals.md#datasettypetype)
 - [DayOfWeekType](./literals.md#dayofweektype)
 - [DomainType](./literals.md#domaintype)
@@ -127,7 +131,11 @@ def get_value() -> AttributeTypeType:
 - [ListMonitorsPaginatorName](./literals.md#listmonitorspaginatorname)
 - [ListPredictorBacktestExportJobsPaginatorName](./literals.md#listpredictorbacktestexportjobspaginatorname)
 - [ListPredictorsPaginatorName](./literals.md#listpredictorspaginatorname)
+- [ListWhatIfAnalysesPaginatorName](./literals.md#listwhatifanalysespaginatorname)
+- [ListWhatIfForecastExportsPaginatorName](./literals.md#listwhatifforecastexportspaginatorname)
+- [ListWhatIfForecastsPaginatorName](./literals.md#listwhatifforecastspaginatorname)
 - [MonthType](./literals.md#monthtype)
+- [OperationType](./literals.md#operationtype)
 - [OptimizationMetricType](./literals.md#optimizationmetrictype)
 - [ScalingTypeType](./literals.md#scalingtypetype)
 - [StateType](./literals.md#statetype)
@@ -147,14 +155,17 @@ def get_value() -> AttributeTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_forecast.type_defs import AdditionalDatasetTypeDef
+from mypy_boto3_forecast.type_defs import ActionTypeDef
 
-def get_value() -> AdditionalDatasetTypeDef:
+def get_value() -> ActionTypeDef:
     return {
-        "Name": ...,
+        "AttributeName": ...,
+        "Operation": ...,
+        "Value": ...,
     }
 ```
 
+- [ActionTypeDef](./type_defs.md#actiontypedef)
 - [AdditionalDatasetTypeDef](./type_defs.md#additionaldatasettypedef)
 - [AttributeConfigTypeDef](./type_defs.md#attributeconfigtypedef)
 - [BaselineMetricTypeDef](./type_defs.md#baselinemetrictypedef)
@@ -181,6 +192,9 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [DeletePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#deletepredictorbacktestexportjobrequestrequesttypedef)
 - [DeletePredictorRequestRequestTypeDef](./type_defs.md#deletepredictorrequestrequesttypedef)
 - [DeleteResourceTreeRequestRequestTypeDef](./type_defs.md#deleteresourcetreerequestrequesttypedef)
+- [DeleteWhatIfAnalysisRequestRequestTypeDef](./type_defs.md#deletewhatifanalysisrequestrequesttypedef)
+- [DeleteWhatIfForecastExportRequestRequestTypeDef](./type_defs.md#deletewhatifforecastexportrequestrequesttypedef)
+- [DeleteWhatIfForecastRequestRequestTypeDef](./type_defs.md#deletewhatifforecastrequestrequesttypedef)
 - [DescribeAutoPredictorRequestRequestTypeDef](./type_defs.md#describeautopredictorrequestrequesttypedef)
 - [ExplainabilityInfoTypeDef](./type_defs.md#explainabilityinfotypedef)
 - [MonitorInfoTypeDef](./type_defs.md#monitorinfotypedef)
@@ -196,6 +210,9 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [DescribeMonitorRequestRequestTypeDef](./type_defs.md#describemonitorrequestrequesttypedef)
 - [DescribePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#describepredictorbacktestexportjobrequestrequesttypedef)
 - [DescribePredictorRequestRequestTypeDef](./type_defs.md#describepredictorrequestrequesttypedef)
+- [DescribeWhatIfAnalysisRequestRequestTypeDef](./type_defs.md#describewhatifanalysisrequestrequesttypedef)
+- [DescribeWhatIfForecastExportRequestRequestTypeDef](./type_defs.md#describewhatifforecastexportrequestrequesttypedef)
+- [DescribeWhatIfForecastRequestRequestTypeDef](./type_defs.md#describewhatifforecastrequestrequesttypedef)
 - [ErrorMetricTypeDef](./type_defs.md#errormetrictypedef)
 - [FeaturizationMethodTypeDef](./type_defs.md#featurizationmethodtypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
@@ -208,6 +225,8 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [MonitorSummaryTypeDef](./type_defs.md#monitorsummarytypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [WhatIfAnalysisSummaryTypeDef](./type_defs.md#whatifanalysissummarytypedef)
+- [WhatIfForecastSummaryTypeDef](./type_defs.md#whatifforecastsummarytypedef)
 - [MetricResultTypeDef](./type_defs.md#metricresulttypedef)
 - [WeightedQuantileLossTypeDef](./type_defs.md#weightedquantilelosstypedef)
 - [MonitorDataSourceTypeDef](./type_defs.md#monitordatasourcetypedef)
@@ -216,6 +235,7 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [ResumeResourceRequestRequestTypeDef](./type_defs.md#resumeresourcerequestrequesttypedef)
 - [SchemaAttributeTypeDef](./type_defs.md#schemaattributetypedef)
 - [StopResourceRequestRequestTypeDef](./type_defs.md#stopresourcerequestrequesttypedef)
+- [TimeSeriesConditionTypeDef](./type_defs.md#timeseriesconditiontypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDatasetGroupRequestRequestTypeDef](./type_defs.md#updatedatasetgrouprequestrequesttypedef)
 - [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
@@ -234,6 +254,9 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [CreateMonitorResponseTypeDef](./type_defs.md#createmonitorresponsetypedef)
 - [CreatePredictorBacktestExportJobResponseTypeDef](./type_defs.md#createpredictorbacktestexportjobresponsetypedef)
 - [CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef)
+- [CreateWhatIfAnalysisResponseTypeDef](./type_defs.md#createwhatifanalysisresponsetypedef)
+- [CreateWhatIfForecastExportResponseTypeDef](./type_defs.md#createwhatifforecastexportresponsetypedef)
+- [CreateWhatIfForecastResponseTypeDef](./type_defs.md#createwhatifforecastresponsetypedef)
 - [DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
@@ -253,6 +276,9 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [ListMonitorsRequestRequestTypeDef](./type_defs.md#listmonitorsrequestrequesttypedef)
 - [ListPredictorBacktestExportJobsRequestRequestTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestrequesttypedef)
 - [ListPredictorsRequestRequestTypeDef](./type_defs.md#listpredictorsrequestrequesttypedef)
+- [ListWhatIfAnalysesRequestRequestTypeDef](./type_defs.md#listwhatifanalysesrequestrequesttypedef)
+- [ListWhatIfForecastExportsRequestRequestTypeDef](./type_defs.md#listwhatifforecastexportsrequestrequesttypedef)
+- [ListWhatIfForecastsRequestRequestTypeDef](./type_defs.md#listwhatifforecastsrequestrequesttypedef)
 - [ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef)
 - [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - [ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef)
@@ -267,11 +293,17 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [ListMonitorsRequestListMonitorsPaginateTypeDef](./type_defs.md#listmonitorsrequestlistmonitorspaginatetypedef)
 - [ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestlistpredictorbacktestexportjobspaginatetypedef)
 - [ListPredictorsRequestListPredictorsPaginateTypeDef](./type_defs.md#listpredictorsrequestlistpredictorspaginatetypedef)
+- [ListWhatIfAnalysesRequestListWhatIfAnalysesPaginateTypeDef](./type_defs.md#listwhatifanalysesrequestlistwhatifanalysespaginatetypedef)
+- [ListWhatIfForecastExportsRequestListWhatIfForecastExportsPaginateTypeDef](./type_defs.md#listwhatifforecastexportsrequestlistwhatifforecastexportspaginatetypedef)
+- [ListWhatIfForecastsRequestListWhatIfForecastsPaginateTypeDef](./type_defs.md#listwhatifforecastsrequestlistwhatifforecastspaginatetypedef)
 - [ListMonitorsResponseTypeDef](./type_defs.md#listmonitorsresponsetypedef)
+- [ListWhatIfAnalysesResponseTypeDef](./type_defs.md#listwhatifanalysesresponsetypedef)
+- [ListWhatIfForecastsResponseTypeDef](./type_defs.md#listwhatifforecastsresponsetypedef)
 - [MetricsTypeDef](./type_defs.md#metricstypedef)
 - [PredictorMonitorEvaluationTypeDef](./type_defs.md#predictormonitorevaluationtypedef)
 - [PredictorExecutionTypeDef](./type_defs.md#predictorexecutiontypedef)
 - [SchemaTypeDef](./type_defs.md#schematypedef)
+- [TimeSeriesTransformationTypeDef](./type_defs.md#timeseriestransformationtypedef)
 - [CreateAutoPredictorRequestRequestTypeDef](./type_defs.md#createautopredictorrequestrequesttypedef)
 - [DescribeAutoPredictorResponseTypeDef](./type_defs.md#describeautopredictorresponsetypedef)
 - [BaselineTypeDef](./type_defs.md#baselinetypedef)
@@ -279,12 +311,15 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [CreateExplainabilityExportRequestRequestTypeDef](./type_defs.md#createexplainabilityexportrequestrequesttypedef)
 - [CreateForecastExportJobRequestRequestTypeDef](./type_defs.md#createforecastexportjobrequestrequesttypedef)
 - [CreatePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#createpredictorbacktestexportjobrequestrequesttypedef)
+- [CreateWhatIfForecastExportRequestRequestTypeDef](./type_defs.md#createwhatifforecastexportrequestrequesttypedef)
 - [DescribeExplainabilityExportResponseTypeDef](./type_defs.md#describeexplainabilityexportresponsetypedef)
 - [DescribeForecastExportJobResponseTypeDef](./type_defs.md#describeforecastexportjobresponsetypedef)
 - [DescribePredictorBacktestExportJobResponseTypeDef](./type_defs.md#describepredictorbacktestexportjobresponsetypedef)
+- [DescribeWhatIfForecastExportResponseTypeDef](./type_defs.md#describewhatifforecastexportresponsetypedef)
 - [ExplainabilityExportSummaryTypeDef](./type_defs.md#explainabilityexportsummarytypedef)
 - [ForecastExportJobSummaryTypeDef](./type_defs.md#forecastexportjobsummarytypedef)
 - [PredictorBacktestExportJobSummaryTypeDef](./type_defs.md#predictorbacktestexportjobsummarytypedef)
+- [WhatIfForecastExportSummaryTypeDef](./type_defs.md#whatifforecastexportsummarytypedef)
 - [CreateDatasetImportJobRequestRequestTypeDef](./type_defs.md#createdatasetimportjobrequestrequesttypedef)
 - [DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef)
 - [DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef)
@@ -299,16 +334,22 @@ def get_value() -> AdditionalDatasetTypeDef:
 - [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef)
 - [DescribeExplainabilityResponseTypeDef](./type_defs.md#describeexplainabilityresponsetypedef)
 - [TimeSeriesIdentifiersTypeDef](./type_defs.md#timeseriesidentifierstypedef)
+- [TimeSeriesReplacementsDataSourceTypeDef](./type_defs.md#timeseriesreplacementsdatasourcetypedef)
 - [DescribeMonitorResponseTypeDef](./type_defs.md#describemonitorresponsetypedef)
 - [ListExplainabilityExportsResponseTypeDef](./type_defs.md#listexplainabilityexportsresponsetypedef)
 - [ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef)
 - [ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef)
+- [ListWhatIfForecastExportsResponseTypeDef](./type_defs.md#listwhatifforecastexportsresponsetypedef)
 - [ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)
 - [CreatePredictorRequestRequestTypeDef](./type_defs.md#createpredictorrequestrequesttypedef)
 - [EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)
 - [DescribePredictorResponseTypeDef](./type_defs.md#describepredictorresponsetypedef)
 - [TimeSeriesSelectorTypeDef](./type_defs.md#timeseriesselectortypedef)
+- [CreateWhatIfForecastRequestRequestTypeDef](./type_defs.md#createwhatifforecastrequestrequesttypedef)
+- [DescribeWhatIfForecastResponseTypeDef](./type_defs.md#describewhatifforecastresponsetypedef)
 - [GetAccuracyMetricsResponseTypeDef](./type_defs.md#getaccuracymetricsresponsetypedef)
 - [CreateForecastRequestRequestTypeDef](./type_defs.md#createforecastrequestrequesttypedef)
+- [CreateWhatIfAnalysisRequestRequestTypeDef](./type_defs.md#createwhatifanalysisrequestrequesttypedef)
 - [DescribeForecastResponseTypeDef](./type_defs.md#describeforecastresponsetypedef)
+- [DescribeWhatIfAnalysisResponseTypeDef](./type_defs.md#describewhatifanalysisresponsetypedef)
 

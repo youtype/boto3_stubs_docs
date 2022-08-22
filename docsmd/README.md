@@ -653,6 +653,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-support](./mypy_boto3_support/README.md) for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support) service
 
+- [mypy-boto3-support-app](./mypy_boto3_support_app/README.md) for [SupportApp](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support-app.html#SupportApp) service
+
 - [mypy-boto3-swf](./mypy_boto3_swf/README.md) for [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF) service
 
 - [mypy-boto3-synthetics](./mypy_boto3_synthetics/README.md) for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics) service

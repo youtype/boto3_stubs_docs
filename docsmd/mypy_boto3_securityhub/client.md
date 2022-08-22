@@ -207,8 +207,7 @@ parent.batch_import_findings(**kwargs)
 
 ### batch\_update\_findings
 
-Used by Security Hub customers to update information about their investigation
-into a finding.
+.
 
 Type annotations and code completion for `#!python boto3.client("securityhub").batch_update_findings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)

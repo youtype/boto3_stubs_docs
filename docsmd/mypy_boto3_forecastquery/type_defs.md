@@ -69,6 +69,27 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## QueryWhatIfForecastRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecastquery.type_defs import QueryWhatIfForecastRequestRequestTypeDef
+
+def get_value() -> QueryWhatIfForecastRequestRequestTypeDef:
+    return {
+        "WhatIfForecastArn": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class QueryWhatIfForecastRequestRequestTypeDef(TypedDict):
+    WhatIfForecastArn: str,
+    Filters: Mapping[str, str],
+    StartDate: NotRequired[str],
+    EndDate: NotRequired[str],
+    NextToken: NotRequired[str],
+```
+
 ## ForecastTypeDef
 
 ```python title="Usage Example"
@@ -100,6 +121,26 @@ def get_value() -> QueryForecastResponseTypeDef:
 
 ```python title="Definition"
 class QueryForecastResponseTypeDef(TypedDict):
+    Forecast: ForecastTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ForecastTypeDef](./type_defs.md#forecasttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## QueryWhatIfForecastResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_forecastquery.type_defs import QueryWhatIfForecastResponseTypeDef
+
+def get_value() -> QueryWhatIfForecastResponseTypeDef:
+    return {
+        "Forecast": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class QueryWhatIfForecastResponseTypeDef(TypedDict):
     Forecast: ForecastTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```

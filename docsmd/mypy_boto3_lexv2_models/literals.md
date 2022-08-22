@@ -306,6 +306,8 @@ BotRecommendationStatusType = Literal[
     "Downloading",
     "Failed",
     "Processing",
+    "Stopped",
+    "Stopping",
     "Updating",
 ]
 ```
@@ -1237,6 +1239,7 @@ ServiceName = Literal[
     "storagegateway",
     "sts",
     "support",
+    "support-app",
     "swf",
     "synthetics",
     "textract",

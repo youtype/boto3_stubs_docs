@@ -562,6 +562,22 @@ VerificationStateType = Literal[
     "UNKNOWN",
 ]
 ```
+## VulnerabilityFixAvailableType
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import VulnerabilityFixAvailableType
+
+def get_value() -> VulnerabilityFixAvailableType:
+    return "NO"
+```
+
+```python title="Definition"
+VulnerabilityFixAvailableType = Literal[
+    "NO",
+    "PARTIAL",
+    "YES",
+]
+```
 ## WorkflowStateType
 
 ```python title="Usage Example"
@@ -914,6 +930,7 @@ ServiceName = Literal[
     "storagegateway",
     "sts",
     "support",
+    "support-app",
     "swf",
     "synthetics",
     "textract",

@@ -664,3 +664,183 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListPredictorsRequestListPredictorsPaginateTypeDef](./type_defs.md#listpredictorsrequestlistpredictorspaginatetypedef) 
+## ListWhatIfAnalysesPaginator
+
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_what_if_analyses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListWhatIfAnalyses)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListWhatIfAnalysesPaginator
+
+def get_list_what_if_analyses_paginator() -> ListWhatIfAnalysesPaginator:
+    return Session().client("forecast").get_paginator("list_what_if_analyses")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListWhatIfAnalysesPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListWhatIfAnalysesPaginator = client.get_paginator("list_what_if_analyses")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListWhatIfAnalysesPaginator](./paginators.md#listwhatifanalysespaginator)
+3. item: [:material-code-braces: ListWhatIfAnalysesResponseTypeDef](./type_defs.md#listwhatifanalysesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListWhatIfAnalysesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWhatIfAnalysesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWhatIfAnalysesResponseTypeDef](./type_defs.md#listwhatifanalysesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWhatIfAnalysesRequestListWhatIfAnalysesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWhatIfAnalysesRequestListWhatIfAnalysesPaginateTypeDef](./type_defs.md#listwhatifanalysesrequestlistwhatifanalysespaginatetypedef) 
+## ListWhatIfForecastExportsPaginator
+
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_what_if_forecast_exports")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListWhatIfForecastExports)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListWhatIfForecastExportsPaginator
+
+def get_list_what_if_forecast_exports_paginator() -> ListWhatIfForecastExportsPaginator:
+    return Session().client("forecast").get_paginator("list_what_if_forecast_exports")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListWhatIfForecastExportsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListWhatIfForecastExportsPaginator = client.get_paginator("list_what_if_forecast_exports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListWhatIfForecastExportsPaginator](./paginators.md#listwhatifforecastexportspaginator)
+3. item: [:material-code-braces: ListWhatIfForecastExportsResponseTypeDef](./type_defs.md#listwhatifforecastexportsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListWhatIfForecastExportsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWhatIfForecastExportsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWhatIfForecastExportsResponseTypeDef](./type_defs.md#listwhatifforecastexportsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWhatIfForecastExportsRequestListWhatIfForecastExportsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWhatIfForecastExportsRequestListWhatIfForecastExportsPaginateTypeDef](./type_defs.md#listwhatifforecastexportsrequestlistwhatifforecastexportspaginatetypedef) 
+## ListWhatIfForecastsPaginator
+
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_what_if_forecasts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListWhatIfForecasts)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListWhatIfForecastsPaginator
+
+def get_list_what_if_forecasts_paginator() -> ListWhatIfForecastsPaginator:
+    return Session().client("forecast").get_paginator("list_what_if_forecasts")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_forecast.paginator import ListWhatIfForecastsPaginator
+
+session = Session()
+
+client = Session().client("forecast")  # (1)
+paginator: ListWhatIfForecastsPaginator = client.get_paginator("list_what_if_forecasts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ForecastServiceClient](./client.md)
+2. paginator: [ListWhatIfForecastsPaginator](./paginators.md#listwhatifforecastspaginator)
+3. item: [:material-code-braces: ListWhatIfForecastsResponseTypeDef](./type_defs.md#listwhatifforecastsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListWhatIfForecastsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWhatIfForecastsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWhatIfForecastsResponseTypeDef](./type_defs.md#listwhatifforecastsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWhatIfForecastsRequestListWhatIfForecastsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWhatIfForecastsRequestListWhatIfForecastsPaginateTypeDef](./type_defs.md#listwhatifforecastsrequestlistwhatifforecastspaginatetypedef) 

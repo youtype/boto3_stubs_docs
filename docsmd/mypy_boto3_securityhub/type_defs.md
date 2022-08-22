@@ -550,6 +550,110 @@ class AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef(TypedDict):
     HttpTokens: NotRequired[str],
 ```
 
+## AwsBackupBackupPlanAdvancedBackupSettingsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupPlanAdvancedBackupSettingsDetailsTypeDef
+
+def get_value() -> AwsBackupBackupPlanAdvancedBackupSettingsDetailsTypeDef:
+    return {
+        "BackupOptions": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupPlanAdvancedBackupSettingsDetailsTypeDef(TypedDict):
+    BackupOptions: NotRequired[Mapping[str, str]],
+    ResourceType: NotRequired[str],
+```
+
+## AwsBackupBackupPlanLifecycleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupPlanLifecycleDetailsTypeDef
+
+def get_value() -> AwsBackupBackupPlanLifecycleDetailsTypeDef:
+    return {
+        "DeleteAfterDays": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupPlanLifecycleDetailsTypeDef(TypedDict):
+    DeleteAfterDays: NotRequired[int],
+    MoveToColdStorageAfterDays: NotRequired[int],
+```
+
+## AwsBackupBackupVaultNotificationsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupVaultNotificationsDetailsTypeDef
+
+def get_value() -> AwsBackupBackupVaultNotificationsDetailsTypeDef:
+    return {
+        "BackupVaultEvents": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupVaultNotificationsDetailsTypeDef(TypedDict):
+    BackupVaultEvents: NotRequired[Sequence[str]],
+    SnsTopicArn: NotRequired[str],
+```
+
+## AwsBackupRecoveryPointCalculatedLifecycleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupRecoveryPointCalculatedLifecycleDetailsTypeDef
+
+def get_value() -> AwsBackupRecoveryPointCalculatedLifecycleDetailsTypeDef:
+    return {
+        "DeleteAt": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupRecoveryPointCalculatedLifecycleDetailsTypeDef(TypedDict):
+    DeleteAt: NotRequired[str],
+    MoveToColdStorageAt: NotRequired[str],
+```
+
+## AwsBackupRecoveryPointCreatedByDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupRecoveryPointCreatedByDetailsTypeDef
+
+def get_value() -> AwsBackupRecoveryPointCreatedByDetailsTypeDef:
+    return {
+        "BackupPlanArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupRecoveryPointCreatedByDetailsTypeDef(TypedDict):
+    BackupPlanArn: NotRequired[str],
+    BackupPlanId: NotRequired[str],
+    BackupPlanVersion: NotRequired[str],
+    BackupRuleId: NotRequired[str],
+```
+
+## AwsBackupRecoveryPointLifecycleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupRecoveryPointLifecycleDetailsTypeDef
+
+def get_value() -> AwsBackupRecoveryPointLifecycleDetailsTypeDef:
+    return {
+        "DeleteAfterDays": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupRecoveryPointLifecycleDetailsTypeDef(TypedDict):
+    DeleteAfterDays: NotRequired[int],
+    MoveToColdStorageAfterDays: NotRequired[int],
+```
+
 ## AwsCertificateManagerCertificateExtendedKeyUsageTypeDef
 
 ```python title="Usage Example"
@@ -5942,6 +6046,8 @@ class SoftwarePackageTypeDef(TypedDict):
     Architecture: NotRequired[str],
     PackageManager: NotRequired[str],
     FilePath: NotRequired[str],
+    FixedInVersion: NotRequired[str],
+    Remediation: NotRequired[str],
 ```
 
 ## StandardsStatusReasonTypeDef
@@ -6340,6 +6446,82 @@ class AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef(TypedDi
 ```
 
 1. See [:material-code-braces: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsebsdetailstypedef) 
+## AwsBackupBackupPlanRuleCopyActionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupPlanRuleCopyActionsDetailsTypeDef
+
+def get_value() -> AwsBackupBackupPlanRuleCopyActionsDetailsTypeDef:
+    return {
+        "DestinationBackupVaultArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupPlanRuleCopyActionsDetailsTypeDef(TypedDict):
+    DestinationBackupVaultArn: NotRequired[str],
+    Lifecycle: NotRequired[AwsBackupBackupPlanLifecycleDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsBackupBackupPlanLifecycleDetailsTypeDef](./type_defs.md#awsbackupbackupplanlifecycledetailstypedef) 
+## AwsBackupBackupVaultDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupVaultDetailsTypeDef
+
+def get_value() -> AwsBackupBackupVaultDetailsTypeDef:
+    return {
+        "BackupVaultArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupVaultDetailsTypeDef(TypedDict):
+    BackupVaultArn: NotRequired[str],
+    BackupVaultName: NotRequired[str],
+    EncryptionKeyArn: NotRequired[str],
+    Notifications: NotRequired[AwsBackupBackupVaultNotificationsDetailsTypeDef],  # (1)
+    AccessPolicy: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsBackupBackupVaultNotificationsDetailsTypeDef](./type_defs.md#awsbackupbackupvaultnotificationsdetailstypedef) 
+## AwsBackupRecoveryPointDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupRecoveryPointDetailsTypeDef
+
+def get_value() -> AwsBackupRecoveryPointDetailsTypeDef:
+    return {
+        "BackupSizeInBytes": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupRecoveryPointDetailsTypeDef(TypedDict):
+    BackupSizeInBytes: NotRequired[int],
+    BackupVaultArn: NotRequired[str],
+    BackupVaultName: NotRequired[str],
+    CalculatedLifecycle: NotRequired[AwsBackupRecoveryPointCalculatedLifecycleDetailsTypeDef],  # (1)
+    CompletionDate: NotRequired[str],
+    CreatedBy: NotRequired[AwsBackupRecoveryPointCreatedByDetailsTypeDef],  # (2)
+    CreationDate: NotRequired[str],
+    EncryptionKeyArn: NotRequired[str],
+    IamRoleArn: NotRequired[str],
+    IsEncrypted: NotRequired[bool],
+    LastRestoreTime: NotRequired[str],
+    Lifecycle: NotRequired[AwsBackupRecoveryPointLifecycleDetailsTypeDef],  # (3)
+    RecoveryPointArn: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    ResourceType: NotRequired[str],
+    SourceBackupVaultArn: NotRequired[str],
+    Status: NotRequired[str],
+    StatusMessage: NotRequired[str],
+    StorageClass: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsBackupRecoveryPointCalculatedLifecycleDetailsTypeDef](./type_defs.md#awsbackuprecoverypointcalculatedlifecycledetailstypedef) 
+2. See [:material-code-braces: AwsBackupRecoveryPointCreatedByDetailsTypeDef](./type_defs.md#awsbackuprecoverypointcreatedbydetailstypedef) 
+3. See [:material-code-braces: AwsBackupRecoveryPointLifecycleDetailsTypeDef](./type_defs.md#awsbackuprecoverypointlifecycledetailstypedef) 
 ## AwsCertificateManagerCertificateDomainValidationOptionTypeDef
 
 ```python title="Usage Example"
@@ -9313,11 +9495,13 @@ class VulnerabilityTypeDef(TypedDict):
     RelatedVulnerabilities: NotRequired[Sequence[str]],
     Vendor: NotRequired[VulnerabilityVendorTypeDef],  # (3)
     ReferenceUrls: NotRequired[Sequence[str]],
+    FixAvailable: NotRequired[VulnerabilityFixAvailableType],  # (4)
 ```
 
 1. See [:material-code-braces: SoftwarePackageTypeDef](./type_defs.md#softwarepackagetypedef) 
 2. See [:material-code-braces: CvssTypeDef](./type_defs.md#cvsstypedef) 
 3. See [:material-code-braces: VulnerabilityVendorTypeDef](./type_defs.md#vulnerabilityvendortypedef) 
+4. See [:material-code-brackets: VulnerabilityFixAvailableType](./literals.md#vulnerabilityfixavailabletype) 
 ## AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef
 
 ```python title="Usage Example"
@@ -9374,6 +9558,32 @@ class AwsAutoScalingLaunchConfigurationDetailsTypeDef(TypedDict):
 1. See [:material-code-braces: AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef) 
 2. See [:material-code-braces: AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationinstancemonitoringdetailstypedef) 
 3. See [:material-code-braces: AwsAutoScalingLaunchConfigurationMetadataOptionsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationmetadataoptionstypedef) 
+## AwsBackupBackupPlanRuleDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupPlanRuleDetailsTypeDef
+
+def get_value() -> AwsBackupBackupPlanRuleDetailsTypeDef:
+    return {
+        "TargetBackupVault": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupPlanRuleDetailsTypeDef(TypedDict):
+    TargetBackupVault: NotRequired[str],
+    StartWindowMinutes: NotRequired[int],
+    ScheduleExpression: NotRequired[str],
+    RuleName: NotRequired[str],
+    RuleId: NotRequired[str],
+    EnableContinuousBackup: NotRequired[bool],
+    CompletionWindowMinutes: NotRequired[int],
+    CopyActions: NotRequired[Sequence[AwsBackupBackupPlanRuleCopyActionsDetailsTypeDef]],  # (1)
+    Lifecycle: NotRequired[AwsBackupBackupPlanLifecycleDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsBackupBackupPlanRuleCopyActionsDetailsTypeDef](./type_defs.md#awsbackupbackupplanrulecopyactionsdetailstypedef) 
+2. See [:material-code-braces: AwsBackupBackupPlanLifecycleDetailsTypeDef](./type_defs.md#awsbackupbackupplanlifecycledetailstypedef) 
 ## AwsCertificateManagerCertificateRenewalSummaryTypeDef
 
 ```python title="Usage Example"
@@ -10723,6 +10933,26 @@ class AwsAutoScalingAutoScalingGroupDetailsTypeDef(TypedDict):
 1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupMixedInstancesPolicyDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupmixedinstancespolicydetailstypedef) 
 2. See [:material-code-braces: AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupavailabilityzoneslistdetailstypedef) 
 3. See [:material-code-braces: AwsAutoScalingAutoScalingGroupLaunchTemplateLaunchTemplateSpecificationTypeDef](./type_defs.md#awsautoscalingautoscalinggrouplaunchtemplatelaunchtemplatespecificationtypedef) 
+## AwsBackupBackupPlanBackupPlanDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupPlanBackupPlanDetailsTypeDef
+
+def get_value() -> AwsBackupBackupPlanBackupPlanDetailsTypeDef:
+    return {
+        "BackupPlanName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupPlanBackupPlanDetailsTypeDef(TypedDict):
+    BackupPlanName: NotRequired[str],
+    AdvancedBackupSettings: NotRequired[Sequence[AwsBackupBackupPlanAdvancedBackupSettingsDetailsTypeDef]],  # (1)
+    BackupPlanRule: NotRequired[Sequence[AwsBackupBackupPlanRuleDetailsTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AwsBackupBackupPlanAdvancedBackupSettingsDetailsTypeDef](./type_defs.md#awsbackupbackupplanadvancedbackupsettingsdetailstypedef) 
+2. See [:material-code-braces: AwsBackupBackupPlanRuleDetailsTypeDef](./type_defs.md#awsbackupbackupplanruledetailstypedef) 
 ## AwsCertificateManagerCertificateDetailsTypeDef
 
 ```python title="Usage Example"
@@ -11291,6 +11521,26 @@ class ActionTypeDef(TypedDict):
 2. See [:material-code-braces: AwsApiCallActionTypeDef](./type_defs.md#awsapicallactiontypedef) 
 3. See [:material-code-braces: DnsRequestActionTypeDef](./type_defs.md#dnsrequestactiontypedef) 
 4. See [:material-code-braces: PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef) 
+## AwsBackupBackupPlanDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsBackupBackupPlanDetailsTypeDef
+
+def get_value() -> AwsBackupBackupPlanDetailsTypeDef:
+    return {
+        "BackupPlan": ...,
+    }
+```
+
+```python title="Definition"
+class AwsBackupBackupPlanDetailsTypeDef(TypedDict):
+    BackupPlan: NotRequired[AwsBackupBackupPlanBackupPlanDetailsTypeDef],  # (1)
+    BackupPlanArn: NotRequired[str],
+    BackupPlanId: NotRequired[str],
+    VersionId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsBackupBackupPlanBackupPlanDetailsTypeDef](./type_defs.md#awsbackupbackupplanbackupplandetailstypedef) 
 ## AwsCloudFrontDistributionDetailsTypeDef
 
 ```python title="Usage Example"
@@ -11739,6 +11989,9 @@ class ResourceDetailsTypeDef(TypedDict):
     AwsWafRule: NotRequired[AwsWafRuleDetailsTypeDef],  # (73)
     AwsWafRuleGroup: NotRequired[AwsWafRuleGroupDetailsTypeDef],  # (74)
     AwsEcsTask: NotRequired[AwsEcsTaskDetailsTypeDef],  # (75)
+    AwsBackupBackupVault: NotRequired[AwsBackupBackupVaultDetailsTypeDef],  # (76)
+    AwsBackupBackupPlan: NotRequired[AwsBackupBackupPlanDetailsTypeDef],  # (77)
+    AwsBackupRecoveryPoint: NotRequired[AwsBackupRecoveryPointDetailsTypeDef],  # (78)
 ```
 
 1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupdetailstypedef) 
@@ -11816,6 +12069,9 @@ class ResourceDetailsTypeDef(TypedDict):
 73. See [:material-code-braces: AwsWafRuleDetailsTypeDef](./type_defs.md#awswafruledetailstypedef) 
 74. See [:material-code-braces: AwsWafRuleGroupDetailsTypeDef](./type_defs.md#awswafrulegroupdetailstypedef) 
 75. See [:material-code-braces: AwsEcsTaskDetailsTypeDef](./type_defs.md#awsecstaskdetailstypedef) 
+76. See [:material-code-braces: AwsBackupBackupVaultDetailsTypeDef](./type_defs.md#awsbackupbackupvaultdetailstypedef) 
+77. See [:material-code-braces: AwsBackupBackupPlanDetailsTypeDef](./type_defs.md#awsbackupbackupplandetailstypedef) 
+78. See [:material-code-braces: AwsBackupRecoveryPointDetailsTypeDef](./type_defs.md#awsbackuprecoverypointdetailstypedef) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"

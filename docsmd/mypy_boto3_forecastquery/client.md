@@ -137,6 +137,40 @@ parent.query_forecast(**kwargs)
 
 1. See [:material-code-braces: QueryForecastRequestRequestTypeDef](./type_defs.md#queryforecastrequestrequesttypedef) 
 
+### query\_what\_if\_forecast
+
+Retrieves a what-if forecast.
+
+Type annotations and code completion for `#!python boto3.client("forecastquery").query_what_if_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_what_if_forecast)
+
+```python title="Method definition"
+def query_what_if_forecast(
+    self,
+    *,
+    WhatIfForecastArn: str,
+    Filters: Mapping[str, str],
+    StartDate: str = ...,
+    EndDate: str = ...,
+    NextToken: str = ...,
+) -> QueryWhatIfForecastResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: QueryWhatIfForecastResponseTypeDef](./type_defs.md#querywhatifforecastresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: QueryWhatIfForecastRequestRequestTypeDef = {  # (1)
+    "WhatIfForecastArn": ...,
+    "Filters": ...,
+}
+
+parent.query_what_if_forecast(**kwargs)
+```
+
+1. See [:material-code-braces: QueryWhatIfForecastRequestRequestTypeDef](./type_defs.md#querywhatifforecastrequestrequesttypedef) 
+
 
 
 

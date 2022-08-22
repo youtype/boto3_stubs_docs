@@ -2018,6 +2018,41 @@ parent.start_import(**kwargs)
 
 1. See [:material-code-braces: StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef) 
 
+### stop\_bot\_recommendation
+
+Stop an already running Bot Recommendation request.
+
+Type annotations and code completion for `#!python boto3.client("lexv2-models").stop_bot_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.stop_bot_recommendation)
+
+```python title="Method definition"
+def stop_bot_recommendation(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+) -> StopBotRecommendationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StopBotRecommendationResponseTypeDef](./type_defs.md#stopbotrecommendationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopBotRecommendationRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "botRecommendationId": ...,
+}
+
+parent.stop_bot_recommendation(**kwargs)
+```
+
+1. See [:material-code-braces: StopBotRecommendationRequestRequestTypeDef](./type_defs.md#stopbotrecommendationrequestrequesttypedef) 
+
 ### tag\_resource
 
 Adds the specified tags to the specified resource.

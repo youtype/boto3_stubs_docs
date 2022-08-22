@@ -2035,6 +2035,28 @@ class SlotValueRegexFilterTypeDef(TypedDict):
     pattern: str,
 ```
 
+## StopBotRecommendationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import StopBotRecommendationRequestRequestTypeDef
+
+def get_value() -> StopBotRecommendationRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationId": ...,
+    }
+```
+
+```python title="Definition"
+class StopBotRecommendationRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+```
+
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3184,6 +3206,34 @@ class SearchAssociatedTranscriptsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AssociatedTranscriptTypeDef](./type_defs.md#associatedtranscripttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopBotRecommendationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import StopBotRecommendationResponseTypeDef
+
+def get_value() -> StopBotRecommendationResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationStatus": ...,
+        "botRecommendationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopBotRecommendationResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationStatus: BotRecommendationStatusType,  # (1)
+    botRecommendationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: BotRecommendationStatusType](./literals.md#botrecommendationstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBotLocaleResponseTypeDef
 
