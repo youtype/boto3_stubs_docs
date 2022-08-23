@@ -392,6 +392,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [StopDBClusterMessageRequestTypeDef](./type_defs.md#stopdbclustermessagerequesttypedef)
 - [StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagerequesttypedef)
 - [StopDBInstanceMessageRequestTypeDef](./type_defs.md#stopdbinstancemessagerequesttypedef)
+- [SwitchoverReadReplicaMessageRequestTypeDef](./type_defs.md#switchoverreadreplicamessagerequesttypedef)
 - [AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef)
 - [DBClusterBacktrackResponseMetadataTypeDef](./type_defs.md#dbclusterbacktrackresponsemetadatatypedef)
 - [DBClusterCapacityInfoTypeDef](./type_defs.md#dbclustercapacityinfotypedef)
@@ -654,4 +655,5 @@ def get_value() -> AccountQuotaTypeDef:
 - [RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef)
 - [StartDBInstanceResultTypeDef](./type_defs.md#startdbinstanceresulttypedef)
 - [StopDBInstanceResultTypeDef](./type_defs.md#stopdbinstanceresulttypedef)
+- [SwitchoverReadReplicaResultTypeDef](./type_defs.md#switchoverreadreplicaresulttypedef)
 

@@ -2375,6 +2375,22 @@ class StopDBInstanceMessageRequestTypeDef(TypedDict):
     DBSnapshotIdentifier: NotRequired[str],
 ```
 
+## SwitchoverReadReplicaMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import SwitchoverReadReplicaMessageRequestTypeDef
+
+def get_value() -> SwitchoverReadReplicaMessageRequestTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class SwitchoverReadReplicaMessageRequestTypeDef(TypedDict):
+    DBInstanceIdentifier: str,
+```
+
 ## AccountAttributesMessageTypeDef
 
 ```python title="Usage Example"
@@ -4003,6 +4019,7 @@ class DBSnapshotTypeDef(TypedDict):
     DbiResourceId: NotRequired[str],
     TagList: NotRequired[List[TagTypeDef]],  # (2)
     OriginalSnapshotCreateTime: NotRequired[datetime],
+    SnapshotDatabaseTime: NotRequired[datetime],
     SnapshotTarget: NotRequired[str],
 ```
 
@@ -8821,6 +8838,26 @@ def get_value() -> StopDBInstanceResultTypeDef:
 
 ```python title="Definition"
 class StopDBInstanceResultTypeDef(TypedDict):
+    DBInstance: DBInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DBInstanceTypeDef](./type_defs.md#dbinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SwitchoverReadReplicaResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import SwitchoverReadReplicaResultTypeDef
+
+def get_value() -> SwitchoverReadReplicaResultTypeDef:
+    return {
+        "DBInstance": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SwitchoverReadReplicaResultTypeDef(TypedDict):
     DBInstance: DBInstanceTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```

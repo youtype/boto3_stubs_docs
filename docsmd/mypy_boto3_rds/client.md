@@ -5156,6 +5156,36 @@ parent.stop_db_instance_automated_backups_replication(**kwargs)
 
 1. See [:material-code-braces: StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagerequesttypedef) 
 
+### switchover\_read\_replica
+
+Switches over an Oracle standby database in an Oracle Data Guard environment,
+making it the new primary database.
+
+Type annotations and code completion for `#!python boto3.client("rds").switchover_read_replica` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.switchover_read_replica)
+
+```python title="Method definition"
+def switchover_read_replica(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+) -> SwitchoverReadReplicaResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: SwitchoverReadReplicaResultTypeDef](./type_defs.md#switchoverreadreplicaresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SwitchoverReadReplicaMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
+
+parent.switchover_read_replica(**kwargs)
+```
+
+1. See [:material-code-braces: SwitchoverReadReplicaMessageRequestTypeDef](./type_defs.md#switchoverreadreplicamessagerequesttypedef) 
+
 
 
 ### get_paginator
