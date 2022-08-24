@@ -2233,7 +2233,7 @@ parent.describe_user(**kwargs)
 ### generate\_embed\_url\_for\_anonymous\_user
 
 Generates an embed URL that you can use to embed an Amazon QuickSight dashboard
-in your website, without having to register any reader users.
+or visual in your website, without having to register any reader users.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").generate_embed_url_for_anonymous_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_anonymous_user)

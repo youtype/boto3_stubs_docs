@@ -53,10 +53,12 @@ except (
     client.FunctionSizeLimitExceeded,
     client.IllegalDelete,
     client.IllegalFieldLevelEncryptionConfigAssociationWithCacheBehavior,
+    client.IllegalOriginAccessConfiguration,
     client.IllegalUpdate,
     client.InconsistentQuantities,
     client.InvalidArgument,
     client.InvalidDefaultRootObject,
+    client.InvalidDomainNameForOriginAccessControl,
     client.InvalidErrorCode,
     client.InvalidForwardCookies,
     client.InvalidFunctionAssociation,
@@ -67,6 +69,7 @@ except (
     client.InvalidLocationCode,
     client.InvalidMinimumProtocolVersion,
     client.InvalidOrigin,
+    client.InvalidOriginAccessControl,
     client.InvalidOriginAccessIdentity,
     client.InvalidOriginKeepaliveTimeout,
     client.InvalidOriginReadTimeout,
@@ -81,6 +84,7 @@ except (
     client.InvalidWebACLId,
     client.KeyGroupAlreadyExists,
     client.MissingBody,
+    client.MonitoringSubscriptionAlreadyExists,
     client.NoSuchCachePolicy,
     client.NoSuchCloudFrontOriginAccessIdentity,
     client.NoSuchDistribution,
@@ -88,13 +92,17 @@ except (
     client.NoSuchFieldLevelEncryptionProfile,
     client.NoSuchFunctionExists,
     client.NoSuchInvalidation,
+    client.NoSuchMonitoringSubscription,
     client.NoSuchOrigin,
+    client.NoSuchOriginAccessControl,
     client.NoSuchOriginRequestPolicy,
     client.NoSuchPublicKey,
     client.NoSuchRealtimeLogConfig,
     client.NoSuchResource,
     client.NoSuchResponseHeadersPolicy,
     client.NoSuchStreamingDistribution,
+    client.OriginAccessControlAlreadyExists,
+    client.OriginAccessControlInUse,
     client.OriginRequestPolicyAlreadyExists,
     client.OriginRequestPolicyInUse,
     client.PreconditionFailed,
@@ -124,6 +132,7 @@ except (
     client.TooManyDistributionsAssociatedToCachePolicy,
     client.TooManyDistributionsAssociatedToFieldLevelEncryptionConfig,
     client.TooManyDistributionsAssociatedToKeyGroup,
+    client.TooManyDistributionsAssociatedToOriginAccessControl,
     client.TooManyDistributionsAssociatedToOriginRequestPolicy,
     client.TooManyDistributionsAssociatedToResponseHeadersPolicy,
     client.TooManyDistributionsWithFunctionAssociations,
@@ -144,6 +153,7 @@ except (
     client.TooManyKeyGroups,
     client.TooManyKeyGroupsAssociatedToDistribution,
     client.TooManyLambdaFunctionAssociations,
+    client.TooManyOriginAccessControls,
     client.TooManyOriginCustomHeaders,
     client.TooManyOriginGroupsPerDistribution,
     client.TooManyOriginRequestPolicies,
@@ -548,6 +558,36 @@ parent.create_monitoring_subscription(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#createmonitoringsubscriptionrequestrequesttypedef) 
+
+### create\_origin\_access\_control
+
+Creates a new origin access control in CloudFront.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_origin_access_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_access_control)
+
+```python title="Method definition"
+def create_origin_access_control(
+    self,
+    *,
+    OriginAccessControlConfig: OriginAccessControlConfigTypeDef,  # (1)
+) -> CreateOriginAccessControlResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: OriginAccessControlConfigTypeDef](./type_defs.md#originaccesscontrolconfigtypedef) 
+2. See [:material-code-braces: CreateOriginAccessControlResultTypeDef](./type_defs.md#createoriginaccesscontrolresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateOriginAccessControlRequestRequestTypeDef = {  # (1)
+    "OriginAccessControlConfig": ...,
+}
+
+parent.create_origin_access_control(**kwargs)
+```
+
+1. See [:material-code-braces: CreateOriginAccessControlRequestRequestTypeDef](./type_defs.md#createoriginaccesscontrolrequestrequesttypedef) 
 
 ### create\_origin\_request\_policy
 
@@ -978,6 +1018,36 @@ parent.delete_monitoring_subscription(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#deletemonitoringsubscriptionrequestrequesttypedef) 
+
+### delete\_origin\_access\_control
+
+Deletes a CloudFront origin access control.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_origin_access_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_access_control)
+
+```python title="Method definition"
+def delete_origin_access_control(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteOriginAccessControlRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.delete_origin_access_control(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteOriginAccessControlRequestRequestTypeDef](./type_defs.md#deleteoriginaccesscontrolrequestrequesttypedef) 
 
 ### delete\_origin\_request\_policy
 
@@ -1620,6 +1690,64 @@ parent.get_monitoring_subscription(**kwargs)
 ```
 
 1. See [:material-code-braces: GetMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#getmonitoringsubscriptionrequestrequesttypedef) 
+
+### get\_origin\_access\_control
+
+Gets a CloudFront origin access control.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_origin_access_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_access_control)
+
+```python title="Method definition"
+def get_origin_access_control(
+    self,
+    *,
+    Id: str,
+) -> GetOriginAccessControlResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetOriginAccessControlResultTypeDef](./type_defs.md#getoriginaccesscontrolresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetOriginAccessControlRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.get_origin_access_control(**kwargs)
+```
+
+1. See [:material-code-braces: GetOriginAccessControlRequestRequestTypeDef](./type_defs.md#getoriginaccesscontrolrequestrequesttypedef) 
+
+### get\_origin\_access\_control\_config
+
+Gets a CloudFront origin access control.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_origin_access_control_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_access_control_config)
+
+```python title="Method definition"
+def get_origin_access_control_config(
+    self,
+    *,
+    Id: str,
+) -> GetOriginAccessControlConfigResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetOriginAccessControlConfigResultTypeDef](./type_defs.md#getoriginaccesscontrolconfigresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetOriginAccessControlConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.get_origin_access_control_config(**kwargs)
+```
+
+1. See [:material-code-braces: GetOriginAccessControlConfigRequestRequestTypeDef](./type_defs.md#getoriginaccesscontrolconfigrequestrequesttypedef) 
 
 ### get\_origin\_request\_policy
 
@@ -2360,6 +2488,37 @@ parent.list_key_groups(**kwargs)
 
 1. See [:material-code-braces: ListKeyGroupsRequestRequestTypeDef](./type_defs.md#listkeygroupsrequestrequesttypedef) 
 
+### list\_origin\_access\_controls
+
+Gets the list of CloudFront origin access controls in this Amazon Web Services
+account.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_origin_access_controls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_access_controls)
+
+```python title="Method definition"
+def list_origin_access_controls(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListOriginAccessControlsResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListOriginAccessControlsResultTypeDef](./type_defs.md#listoriginaccesscontrolsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListOriginAccessControlsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
+
+parent.list_origin_access_controls(**kwargs)
+```
+
+1. See [:material-code-braces: ListOriginAccessControlsRequestRequestTypeDef](./type_defs.md#listoriginaccesscontrolsrequestrequesttypedef) 
+
 ### list\_origin\_request\_policies
 
 Gets a list of origin request policies.
@@ -2907,6 +3066,39 @@ parent.update_key_group(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateKeyGroupRequestRequestTypeDef](./type_defs.md#updatekeygrouprequestrequesttypedef) 
+
+### update\_origin\_access\_control
+
+Updates a CloudFront origin access control.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_origin_access_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_access_control)
+
+```python title="Method definition"
+def update_origin_access_control(
+    self,
+    *,
+    OriginAccessControlConfig: OriginAccessControlConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateOriginAccessControlResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: OriginAccessControlConfigTypeDef](./type_defs.md#originaccesscontrolconfigtypedef) 
+2. See [:material-code-braces: UpdateOriginAccessControlResultTypeDef](./type_defs.md#updateoriginaccesscontrolresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateOriginAccessControlRequestRequestTypeDef = {  # (1)
+    "OriginAccessControlConfig": ...,
+    "Id": ...,
+}
+
+parent.update_origin_access_control(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateOriginAccessControlRequestRequestTypeDef](./type_defs.md#updateoriginaccesscontrolrequestrequesttypedef) 
 
 ### update\_origin\_request\_policy
 

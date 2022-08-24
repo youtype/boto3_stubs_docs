@@ -37185,6 +37185,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#liststreamingdistributionspaginatorname">ListStreamingDistributionsPaginatorName</a></li>
 <li><a href="literals/#methodtype">MethodType</a></li>
 <li><a href="literals/#minimumprotocolversiontype">MinimumProtocolVersionType</a></li>
+<li><a href="literals/#originaccesscontrolorigintypestype">OriginAccessControlOriginTypesType</a></li>
+<li><a href="literals/#originaccesscontrolsigningbehaviorstype">OriginAccessControlSigningBehaviorsType</a></li>
+<li><a href="literals/#originaccesscontrolsigningprotocolstype">OriginAccessControlSigningProtocolsType</a></li>
 <li><a href="literals/#originprotocolpolicytype">OriginProtocolPolicyType</a></li>
 <li><a href="literals/#originrequestpolicycookiebehaviortype">OriginRequestPolicyCookieBehaviorType</a></li>
 <li><a href="literals/#originrequestpolicyheaderbehaviortype">OriginRequestPolicyHeaderBehaviorType</a></li>
@@ -37231,6 +37234,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#functionconfigtypedef">FunctionConfigTypeDef</a></li>
 <li><a href="type_defs/#keygroupconfigtypedef">KeyGroupConfigTypeDef</a></li>
+<li><a href="type_defs/#originaccesscontrolconfigtypedef">OriginAccessControlConfigTypeDef</a></li>
 <li><a href="type_defs/#publickeyconfigtypedef">PublicKeyConfigTypeDef</a></li>
 <li><a href="type_defs/#customerrorresponsetypedef">CustomErrorResponseTypeDef</a></li>
 <li><a href="type_defs/#origincustomheadertypedef">OriginCustomHeaderTypeDef</a></li>
@@ -37243,6 +37247,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletefunctionrequestrequesttypedef">DeleteFunctionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletekeygrouprequestrequesttypedef">DeleteKeyGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemonitoringsubscriptionrequestrequesttypedef">DeleteMonitoringSubscriptionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteoriginaccesscontrolrequestrequesttypedef">DeleteOriginAccessControlRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteoriginrequestpolicyrequestrequesttypedef">DeleteOriginRequestPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletepublickeyrequestrequesttypedef">DeletePublicKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleterealtimelogconfigrequestrequesttypedef">DeleteRealtimeLogConfigRequestRequestTypeDef</a></li>
@@ -37274,6 +37279,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getkeygroupconfigrequestrequesttypedef">GetKeyGroupConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getkeygrouprequestrequesttypedef">GetKeyGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmonitoringsubscriptionrequestrequesttypedef">GetMonitoringSubscriptionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getoriginaccesscontrolconfigrequestrequesttypedef">GetOriginAccessControlConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getoriginaccesscontrolrequestrequesttypedef">GetOriginAccessControlRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getoriginrequestpolicyconfigrequestrequesttypedef">GetOriginRequestPolicyConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getoriginrequestpolicyrequestrequesttypedef">GetOriginRequestPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getpublickeyconfigrequestrequesttypedef">GetPublicKeyConfigRequestRequestTypeDef</a></li>
@@ -37303,6 +37310,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listfunctionsrequestrequesttypedef">ListFunctionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinvalidationsrequestrequesttypedef">ListInvalidationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listkeygroupsrequestrequesttypedef">ListKeyGroupsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listoriginaccesscontrolsrequestrequesttypedef">ListOriginAccessControlsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listoriginrequestpoliciesrequestrequesttypedef">ListOriginRequestPoliciesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listpublickeysrequestrequesttypedef">ListPublicKeysRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listrealtimelogconfigsrequestrequesttypedef">ListRealtimeLogConfigsRequestRequestTypeDef</a></li>
@@ -37310,6 +37318,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#liststreamingdistributionsrequestrequesttypedef">ListStreamingDistributionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#realtimemetricssubscriptionconfigtypedef">RealtimeMetricsSubscriptionConfigTypeDef</a></li>
+<li><a href="type_defs/#originaccesscontrolsummarytypedef">OriginAccessControlSummaryTypeDef</a></li>
 <li><a href="type_defs/#statuscodestypedef">StatusCodesTypeDef</a></li>
 <li><a href="type_defs/#origingroupmembertypedef">OriginGroupMemberTypeDef</a></li>
 <li><a href="type_defs/#originshieldtypedef">OriginShieldTypeDef</a></li>
@@ -37357,6 +37366,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getkeygroupconfigresulttypedef">GetKeyGroupConfigResultTypeDef</a></li>
 <li><a href="type_defs/#keygrouptypedef">KeyGroupTypeDef</a></li>
 <li><a href="type_defs/#updatekeygrouprequestrequesttypedef">UpdateKeyGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createoriginaccesscontrolrequestrequesttypedef">CreateOriginAccessControlRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getoriginaccesscontrolconfigresulttypedef">GetOriginAccessControlConfigResultTypeDef</a></li>
+<li><a href="type_defs/#originaccesscontroltypedef">OriginAccessControlTypeDef</a></li>
+<li><a href="type_defs/#updateoriginaccesscontrolrequestrequesttypedef">UpdateOriginAccessControlRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createpublickeyrequestrequesttypedef">CreatePublicKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getpublickeyconfigresulttypedef">GetPublicKeyConfigResultTypeDef</a></li>
 <li><a href="type_defs/#publickeytypedef">PublicKeyTypeDef</a></li>
@@ -37386,6 +37399,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listinvalidationsrequestlistinvalidationspaginatetypedef">ListInvalidationsRequestListInvalidationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststreamingdistributionsrequestliststreamingdistributionspaginatetypedef">ListStreamingDistributionsRequestListStreamingDistributionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#monitoringsubscriptiontypedef">MonitoringSubscriptionTypeDef</a></li>
+<li><a href="type_defs/#originaccesscontrollisttypedef">OriginAccessControlListTypeDef</a></li>
 <li><a href="type_defs/#origingroupfailovercriteriatypedef">OriginGroupFailoverCriteriaTypeDef</a></li>
 <li><a href="type_defs/#origingroupmemberstypedef">OriginGroupMembersTypeDef</a></li>
 <li><a href="type_defs/#publickeylisttypedef">PublicKeyListTypeDef</a></li>
@@ -37410,6 +37424,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getkeygroupresulttypedef">GetKeyGroupResultTypeDef</a></li>
 <li><a href="type_defs/#keygroupsummarytypedef">KeyGroupSummaryTypeDef</a></li>
 <li><a href="type_defs/#updatekeygroupresulttypedef">UpdateKeyGroupResultTypeDef</a></li>
+<li><a href="type_defs/#createoriginaccesscontrolresulttypedef">CreateOriginAccessControlResultTypeDef</a></li>
+<li><a href="type_defs/#getoriginaccesscontrolresulttypedef">GetOriginAccessControlResultTypeDef</a></li>
+<li><a href="type_defs/#updateoriginaccesscontrolresulttypedef">UpdateOriginAccessControlResultTypeDef</a></li>
 <li><a href="type_defs/#createpublickeyresulttypedef">CreatePublicKeyResultTypeDef</a></li>
 <li><a href="type_defs/#getpublickeyresulttypedef">GetPublicKeyResultTypeDef</a></li>
 <li><a href="type_defs/#updatepublickeyresulttypedef">UpdatePublicKeyResultTypeDef</a></li>
@@ -37432,6 +37449,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createmonitoringsubscriptionrequestrequesttypedef">CreateMonitoringSubscriptionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createmonitoringsubscriptionresulttypedef">CreateMonitoringSubscriptionResultTypeDef</a></li>
 <li><a href="type_defs/#getmonitoringsubscriptionresulttypedef">GetMonitoringSubscriptionResultTypeDef</a></li>
+<li><a href="type_defs/#listoriginaccesscontrolsresulttypedef">ListOriginAccessControlsResultTypeDef</a></li>
 <li><a href="type_defs/#origingrouptypedef">OriginGroupTypeDef</a></li>
 <li><a href="type_defs/#listpublickeysresulttypedef">ListPublicKeysResultTypeDef</a></li>
 <li><a href="type_defs/#queryargprofileconfigtypedef">QueryArgProfileConfigTypeDef</a></li>

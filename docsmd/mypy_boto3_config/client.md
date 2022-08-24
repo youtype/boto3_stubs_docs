@@ -2386,12 +2386,14 @@ def put_conformance_pack(
     DeliveryS3Bucket: str = ...,
     DeliveryS3KeyPrefix: str = ...,
     ConformancePackInputParameters: Sequence[ConformancePackInputParameterTypeDef] = ...,  # (1)
-) -> PutConformancePackResponseTypeDef:  # (2)
+    TemplateSSMDocumentDetails: TemplateSSMDocumentDetailsTypeDef = ...,  # (2)
+) -> PutConformancePackResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
-2. See [:material-code-braces: PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef) 
+2. See [:material-code-braces: TemplateSSMDocumentDetailsTypeDef](./type_defs.md#templatessmdocumentdetailstypedef) 
+3. See [:material-code-braces: PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

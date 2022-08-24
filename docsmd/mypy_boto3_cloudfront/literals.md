@@ -351,6 +351,50 @@ MinimumProtocolVersionType = Literal[
     "TLSv1_2016",
 ]
 ```
+## OriginAccessControlOriginTypesType
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.literals import OriginAccessControlOriginTypesType
+
+def get_value() -> OriginAccessControlOriginTypesType:
+    return "s3"
+```
+
+```python title="Definition"
+OriginAccessControlOriginTypesType = Literal[
+    "s3",
+]
+```
+## OriginAccessControlSigningBehaviorsType
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.literals import OriginAccessControlSigningBehaviorsType
+
+def get_value() -> OriginAccessControlSigningBehaviorsType:
+    return "always"
+```
+
+```python title="Definition"
+OriginAccessControlSigningBehaviorsType = Literal[
+    "always",
+    "never",
+    "no-override",
+]
+```
+## OriginAccessControlSigningProtocolsType
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.literals import OriginAccessControlSigningProtocolsType
+
+def get_value() -> OriginAccessControlSigningProtocolsType:
+    return "sigv4"
+```
+
+```python title="Definition"
+OriginAccessControlSigningProtocolsType = Literal[
+    "sigv4",
+]
+```
 ## OriginProtocolPolicyType
 
 ```python title="Usage Example"

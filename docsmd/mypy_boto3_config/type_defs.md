@@ -572,6 +572,23 @@ class ConformancePackInputParameterTypeDef(TypedDict):
     ParameterValue: str,
 ```
 
+## TemplateSSMDocumentDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import TemplateSSMDocumentDetailsTypeDef
+
+def get_value() -> TemplateSSMDocumentDetailsTypeDef:
+    return {
+        "DocumentName": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateSSMDocumentDetailsTypeDef(TypedDict):
+    DocumentName: str,
+    DocumentVersion: NotRequired[str],
+```
+
 ## ConformancePackEvaluationFiltersTypeDef
 
 ```python title="Usage Example"
@@ -3116,32 +3133,6 @@ class GetConformancePackComplianceSummaryResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConformancePackComplianceSummaryTypeDef](./type_defs.md#conformancepackcompliancesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ConformancePackDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_config.type_defs import ConformancePackDetailTypeDef
-
-def get_value() -> ConformancePackDetailTypeDef:
-    return {
-        "ConformancePackName": ...,
-        "ConformancePackArn": ...,
-        "ConformancePackId": ...,
-    }
-```
-
-```python title="Definition"
-class ConformancePackDetailTypeDef(TypedDict):
-    ConformancePackName: str,
-    ConformancePackArn: str,
-    ConformancePackId: str,
-    DeliveryS3Bucket: NotRequired[str],
-    DeliveryS3KeyPrefix: NotRequired[str],
-    ConformancePackInputParameters: NotRequired[List[ConformancePackInputParameterTypeDef]],  # (1)
-    LastUpdateRequestedTime: NotRequired[datetime],
-    CreatedBy: NotRequired[str],
-```
-
-1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
 ## OrganizationConformancePackTypeDef
 
 ```python title="Usage Example"
@@ -3164,28 +3155,6 @@ class OrganizationConformancePackTypeDef(TypedDict):
     DeliveryS3KeyPrefix: NotRequired[str],
     ConformancePackInputParameters: NotRequired[List[ConformancePackInputParameterTypeDef]],  # (1)
     ExcludedAccounts: NotRequired[List[str]],
-```
-
-1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
-## PutConformancePackRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_config.type_defs import PutConformancePackRequestRequestTypeDef
-
-def get_value() -> PutConformancePackRequestRequestTypeDef:
-    return {
-        "ConformancePackName": ...,
-    }
-```
-
-```python title="Definition"
-class PutConformancePackRequestRequestTypeDef(TypedDict):
-    ConformancePackName: str,
-    TemplateS3Uri: NotRequired[str],
-    TemplateBody: NotRequired[str],
-    DeliveryS3Bucket: NotRequired[str],
-    DeliveryS3KeyPrefix: NotRequired[str],
-    ConformancePackInputParameters: NotRequired[Sequence[ConformancePackInputParameterTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
@@ -3212,6 +3181,58 @@ class PutOrganizationConformancePackRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
+## ConformancePackDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ConformancePackDetailTypeDef
+
+def get_value() -> ConformancePackDetailTypeDef:
+    return {
+        "ConformancePackName": ...,
+        "ConformancePackArn": ...,
+        "ConformancePackId": ...,
+    }
+```
+
+```python title="Definition"
+class ConformancePackDetailTypeDef(TypedDict):
+    ConformancePackName: str,
+    ConformancePackArn: str,
+    ConformancePackId: str,
+    DeliveryS3Bucket: NotRequired[str],
+    DeliveryS3KeyPrefix: NotRequired[str],
+    ConformancePackInputParameters: NotRequired[List[ConformancePackInputParameterTypeDef]],  # (1)
+    LastUpdateRequestedTime: NotRequired[datetime],
+    CreatedBy: NotRequired[str],
+    TemplateSSMDocumentDetails: NotRequired[TemplateSSMDocumentDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
+2. See [:material-code-braces: TemplateSSMDocumentDetailsTypeDef](./type_defs.md#templatessmdocumentdetailstypedef) 
+## PutConformancePackRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import PutConformancePackRequestRequestTypeDef
+
+def get_value() -> PutConformancePackRequestRequestTypeDef:
+    return {
+        "ConformancePackName": ...,
+    }
+```
+
+```python title="Definition"
+class PutConformancePackRequestRequestTypeDef(TypedDict):
+    ConformancePackName: str,
+    TemplateS3Uri: NotRequired[str],
+    TemplateBody: NotRequired[str],
+    DeliveryS3Bucket: NotRequired[str],
+    DeliveryS3KeyPrefix: NotRequired[str],
+    ConformancePackInputParameters: NotRequired[Sequence[ConformancePackInputParameterTypeDef]],  # (1)
+    TemplateSSMDocumentDetails: NotRequired[TemplateSSMDocumentDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
+2. See [:material-code-braces: TemplateSSMDocumentDetailsTypeDef](./type_defs.md#templatessmdocumentdetailstypedef) 
 ## GetConformancePackComplianceDetailsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4997,28 +5018,6 @@ class PutConfigurationRecorderRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef) 
-## DescribeConformancePacksResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_config.type_defs import DescribeConformancePacksResponseTypeDef
-
-def get_value() -> DescribeConformancePacksResponseTypeDef:
-    return {
-        "ConformancePackDetails": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeConformancePacksResponseTypeDef(TypedDict):
-    ConformancePackDetails: List[ConformancePackDetailTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ConformancePackDetailTypeDef](./type_defs.md#conformancepackdetailtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationConformancePacksResponseTypeDef
 
 ```python title="Usage Example"
@@ -5040,6 +5039,28 @@ class DescribeOrganizationConformancePacksResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: OrganizationConformancePackTypeDef](./type_defs.md#organizationconformancepacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConformancePacksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConformancePacksResponseTypeDef
+
+def get_value() -> DescribeConformancePacksResponseTypeDef:
+    return {
+        "ConformancePackDetails": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConformancePacksResponseTypeDef(TypedDict):
+    ConformancePackDetails: List[ConformancePackDetailTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ConformancePackDetailTypeDef](./type_defs.md#conformancepackdetailtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRemediationExceptionsResponseTypeDef
 

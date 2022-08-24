@@ -306,6 +306,33 @@ class KeyGroupConfigTypeDef(TypedDict):
     Comment: NotRequired[str],
 ```
 
+## OriginAccessControlConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import OriginAccessControlConfigTypeDef
+
+def get_value() -> OriginAccessControlConfigTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "SigningProtocol": ...,
+        "SigningBehavior": ...,
+        "OriginAccessControlOriginType": ...,
+    }
+```
+
+```python title="Definition"
+class OriginAccessControlConfigTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    SigningProtocol: OriginAccessControlSigningProtocolsType,  # (1)
+    SigningBehavior: OriginAccessControlSigningBehaviorsType,  # (2)
+    OriginAccessControlOriginType: OriginAccessControlOriginTypesType,  # (3)
+```
+
+1. See [:material-code-brackets: OriginAccessControlSigningProtocolsType](./literals.md#originaccesscontrolsigningprotocolstype) 
+2. See [:material-code-brackets: OriginAccessControlSigningBehaviorsType](./literals.md#originaccesscontrolsigningbehaviorstype) 
+3. See [:material-code-brackets: OriginAccessControlOriginTypesType](./literals.md#originaccesscontrolorigintypestype) 
 ## PublicKeyConfigTypeDef
 
 ```python title="Usage Example"
@@ -517,6 +544,23 @@ def get_value() -> DeleteMonitoringSubscriptionRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteMonitoringSubscriptionRequestRequestTypeDef(TypedDict):
     DistributionId: str,
+```
+
+## DeleteOriginAccessControlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import DeleteOriginAccessControlRequestRequestTypeDef
+
+def get_value() -> DeleteOriginAccessControlRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteOriginAccessControlRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
 ```
 
 ## DeleteOriginRequestPolicyRequestRequestTypeDef
@@ -1066,6 +1110,38 @@ class GetMonitoringSubscriptionRequestRequestTypeDef(TypedDict):
     DistributionId: str,
 ```
 
+## GetOriginAccessControlConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetOriginAccessControlConfigRequestRequestTypeDef
+
+def get_value() -> GetOriginAccessControlConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetOriginAccessControlConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
+
+## GetOriginAccessControlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetOriginAccessControlRequestRequestTypeDef
+
+def get_value() -> GetOriginAccessControlRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetOriginAccessControlRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
+
 ## GetOriginRequestPolicyConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1573,6 +1649,23 @@ class ListKeyGroupsRequestRequestTypeDef(TypedDict):
     MaxItems: NotRequired[str],
 ```
 
+## ListOriginAccessControlsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListOriginAccessControlsRequestRequestTypeDef
+
+def get_value() -> ListOriginAccessControlsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
+```
+
+```python title="Definition"
+class ListOriginAccessControlsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
+
 ## ListOriginRequestPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1695,6 +1788,35 @@ class RealtimeMetricsSubscriptionConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype) 
+## OriginAccessControlSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import OriginAccessControlSummaryTypeDef
+
+def get_value() -> OriginAccessControlSummaryTypeDef:
+    return {
+        "Id": ...,
+        "Description": ...,
+        "Name": ...,
+        "SigningProtocol": ...,
+        "SigningBehavior": ...,
+        "OriginAccessControlOriginType": ...,
+    }
+```
+
+```python title="Definition"
+class OriginAccessControlSummaryTypeDef(TypedDict):
+    Id: str,
+    Description: str,
+    Name: str,
+    SigningProtocol: OriginAccessControlSigningProtocolsType,  # (1)
+    SigningBehavior: OriginAccessControlSigningBehaviorsType,  # (2)
+    OriginAccessControlOriginType: OriginAccessControlOriginTypesType,  # (3)
+```
+
+1. See [:material-code-brackets: OriginAccessControlSigningProtocolsType](./literals.md#originaccesscontrolsigningprotocolstype) 
+2. See [:material-code-brackets: OriginAccessControlSigningBehaviorsType](./literals.md#originaccesscontrolsigningbehaviorstype) 
+3. See [:material-code-brackets: OriginAccessControlOriginTypesType](./literals.md#originaccesscontrolorigintypestype) 
 ## StatusCodesTypeDef
 
 ```python title="Usage Example"
@@ -2595,6 +2717,83 @@ class UpdateKeyGroupRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) 
+## CreateOriginAccessControlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import CreateOriginAccessControlRequestRequestTypeDef
+
+def get_value() -> CreateOriginAccessControlRequestRequestTypeDef:
+    return {
+        "OriginAccessControlConfig": ...,
+    }
+```
+
+```python title="Definition"
+class CreateOriginAccessControlRequestRequestTypeDef(TypedDict):
+    OriginAccessControlConfig: OriginAccessControlConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: OriginAccessControlConfigTypeDef](./type_defs.md#originaccesscontrolconfigtypedef) 
+## GetOriginAccessControlConfigResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetOriginAccessControlConfigResultTypeDef
+
+def get_value() -> GetOriginAccessControlConfigResultTypeDef:
+    return {
+        "OriginAccessControlConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetOriginAccessControlConfigResultTypeDef(TypedDict):
+    OriginAccessControlConfig: OriginAccessControlConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OriginAccessControlConfigTypeDef](./type_defs.md#originaccesscontrolconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OriginAccessControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import OriginAccessControlTypeDef
+
+def get_value() -> OriginAccessControlTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class OriginAccessControlTypeDef(TypedDict):
+    Id: str,
+    OriginAccessControlConfig: NotRequired[OriginAccessControlConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OriginAccessControlConfigTypeDef](./type_defs.md#originaccesscontrolconfigtypedef) 
+## UpdateOriginAccessControlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import UpdateOriginAccessControlRequestRequestTypeDef
+
+def get_value() -> UpdateOriginAccessControlRequestRequestTypeDef:
+    return {
+        "OriginAccessControlConfig": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateOriginAccessControlRequestRequestTypeDef(TypedDict):
+    OriginAccessControlConfig: OriginAccessControlConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
+
+1. See [:material-code-braces: OriginAccessControlConfigTypeDef](./type_defs.md#originaccesscontrolconfigtypedef) 
 ## CreatePublicKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3153,6 +3352,31 @@ class MonitoringSubscriptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RealtimeMetricsSubscriptionConfigTypeDef](./type_defs.md#realtimemetricssubscriptionconfigtypedef) 
+## OriginAccessControlListTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import OriginAccessControlListTypeDef
+
+def get_value() -> OriginAccessControlListTypeDef:
+    return {
+        "Marker": ...,
+        "MaxItems": ...,
+        "IsTruncated": ...,
+        "Quantity": ...,
+    }
+```
+
+```python title="Definition"
+class OriginAccessControlListTypeDef(TypedDict):
+    Marker: str,
+    MaxItems: int,
+    IsTruncated: bool,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[OriginAccessControlSummaryTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: OriginAccessControlSummaryTypeDef](./type_defs.md#originaccesscontrolsummarytypedef) 
 ## OriginGroupFailoverCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -3697,6 +3921,74 @@ class UpdateKeyGroupResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: KeyGroupTypeDef](./type_defs.md#keygrouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateOriginAccessControlResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import CreateOriginAccessControlResultTypeDef
+
+def get_value() -> CreateOriginAccessControlResultTypeDef:
+    return {
+        "OriginAccessControl": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateOriginAccessControlResultTypeDef(TypedDict):
+    OriginAccessControl: OriginAccessControlTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OriginAccessControlTypeDef](./type_defs.md#originaccesscontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOriginAccessControlResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetOriginAccessControlResultTypeDef
+
+def get_value() -> GetOriginAccessControlResultTypeDef:
+    return {
+        "OriginAccessControl": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetOriginAccessControlResultTypeDef(TypedDict):
+    OriginAccessControl: OriginAccessControlTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OriginAccessControlTypeDef](./type_defs.md#originaccesscontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateOriginAccessControlResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import UpdateOriginAccessControlResultTypeDef
+
+def get_value() -> UpdateOriginAccessControlResultTypeDef:
+    return {
+        "OriginAccessControl": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateOriginAccessControlResultTypeDef(TypedDict):
+    OriginAccessControl: OriginAccessControlTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OriginAccessControlTypeDef](./type_defs.md#originaccesscontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePublicKeyResultTypeDef
 
 ```python title="Usage Example"
@@ -3788,6 +4080,7 @@ class OriginTypeDef(TypedDict):
     ConnectionAttempts: NotRequired[int],
     ConnectionTimeout: NotRequired[int],
     OriginShield: NotRequired[OriginShieldTypeDef],  # (4)
+    OriginAccessControlId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CustomHeadersTypeDef](./type_defs.md#customheaderstypedef) 
@@ -4172,6 +4465,26 @@ class GetMonitoringSubscriptionResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOriginAccessControlsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListOriginAccessControlsResultTypeDef
+
+def get_value() -> ListOriginAccessControlsResultTypeDef:
+    return {
+        "OriginAccessControlList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOriginAccessControlsResultTypeDef(TypedDict):
+    OriginAccessControlList: OriginAccessControlListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OriginAccessControlListTypeDef](./type_defs.md#originaccesscontrollisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OriginGroupTypeDef
 
 ```python title="Usage Example"
@@ -4249,14 +4562,14 @@ class ResponseHeadersPolicyConfigTypeDef(TypedDict):
     Comment: NotRequired[str],
     CorsConfig: NotRequired[ResponseHeadersPolicyCorsConfigTypeDef],  # (1)
     SecurityHeadersConfig: NotRequired[ResponseHeadersPolicySecurityHeadersConfigTypeDef],  # (2)
-    CustomHeadersConfig: NotRequired[ResponseHeadersPolicyCustomHeadersConfigTypeDef],  # (3)
-    ServerTimingHeadersConfig: NotRequired[ResponseHeadersPolicyServerTimingHeadersConfigTypeDef],  # (4)
+    ServerTimingHeadersConfig: NotRequired[ResponseHeadersPolicyServerTimingHeadersConfigTypeDef],  # (3)
+    CustomHeadersConfig: NotRequired[ResponseHeadersPolicyCustomHeadersConfigTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: ResponseHeadersPolicyCorsConfigTypeDef](./type_defs.md#responseheaderspolicycorsconfigtypedef) 
 2. See [:material-code-braces: ResponseHeadersPolicySecurityHeadersConfigTypeDef](./type_defs.md#responseheaderspolicysecurityheadersconfigtypedef) 
-3. See [:material-code-braces: ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef) 
-4. See [:material-code-braces: ResponseHeadersPolicyServerTimingHeadersConfigTypeDef](./type_defs.md#responseheaderspolicyservertimingheadersconfigtypedef) 
+3. See [:material-code-braces: ResponseHeadersPolicyServerTimingHeadersConfigTypeDef](./type_defs.md#responseheaderspolicyservertimingheadersconfigtypedef) 
+4. See [:material-code-braces: ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef) 
 ## StreamingDistributionListTypeDef
 
 ```python title="Usage Example"
