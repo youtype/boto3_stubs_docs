@@ -227,6 +227,23 @@ class AssociateWirelessGatewayWithThingRequestRequestTypeDef(TypedDict):
     ThingArn: str,
 ```
 
+## BeaconingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import BeaconingTypeDef
+
+def get_value() -> BeaconingTypeDef:
+    return {
+        "DataRate": ...,
+    }
+```
+
+```python title="Definition"
+class BeaconingTypeDef(TypedDict):
+    DataRate: NotRequired[int],
+    Frequencies: NotRequired[Sequence[int]],
+```
+
 ## CancelMulticastGroupSessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -401,26 +418,6 @@ class LoRaWANServiceProfileTypeDef(TypedDict):
     AddGwMetadata: NotRequired[bool],
     DrMin: NotRequired[int],
     DrMax: NotRequired[int],
-```
-
-## LoRaWANGatewayTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import LoRaWANGatewayTypeDef
-
-def get_value() -> LoRaWANGatewayTypeDef:
-    return {
-        "GatewayEui": ...,
-    }
-```
-
-```python title="Definition"
-class LoRaWANGatewayTypeDef(TypedDict):
-    GatewayEui: NotRequired[str],
-    RfRegion: NotRequired[str],
-    JoinEuiFilters: NotRequired[Sequence[Sequence[str]]],
-    NetIdFilters: NotRequired[Sequence[str]],
-    SubBands: NotRequired[Sequence[int]],
 ```
 
 ## CreateWirelessGatewayTaskRequestRequestTypeDef
@@ -816,22 +813,6 @@ class DisassociateWirelessGatewayFromThingRequestRequestTypeDef(TypedDict):
     Id: str,
 ```
 
-## LoRaWANSendDataToDeviceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import LoRaWANSendDataToDeviceTypeDef
-
-def get_value() -> LoRaWANSendDataToDeviceTypeDef:
-    return {
-        "FPort": ...,
-    }
-```
-
-```python title="Definition"
-class LoRaWANSendDataToDeviceTypeDef(TypedDict):
-    FPort: NotRequired[int],
-```
-
 ## PositioningTypeDef
 
 ```python title="Usage Example"
@@ -866,6 +847,24 @@ class FuotaTaskTypeDef(TypedDict):
     Id: NotRequired[str],
     Arn: NotRequired[str],
     Name: NotRequired[str],
+```
+
+## GatewayListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GatewayListItemTypeDef
+
+def get_value() -> GatewayListItemTypeDef:
+    return {
+        "GatewayId": ...,
+        "DownlinkFrequency": ...,
+    }
+```
+
+```python title="Definition"
+class GatewayListItemTypeDef(TypedDict):
+    GatewayId: str,
+    DownlinkFrequency: int,
 ```
 
 ## GetDestinationRequestRequestTypeDef
@@ -2787,6 +2786,28 @@ class TestWirelessDeviceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LoRaWANGatewayTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import LoRaWANGatewayTypeDef
+
+def get_value() -> LoRaWANGatewayTypeDef:
+    return {
+        "GatewayEui": ...,
+    }
+```
+
+```python title="Definition"
+class LoRaWANGatewayTypeDef(TypedDict):
+    GatewayEui: NotRequired[str],
+    RfRegion: NotRequired[str],
+    JoinEuiFilters: NotRequired[Sequence[Sequence[str]]],
+    NetIdFilters: NotRequired[Sequence[str]],
+    SubBands: NotRequired[Sequence[int]],
+    Beaconing: NotRequired[BeaconingTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BeaconingTypeDef](./type_defs.md#beaconingtypedef) 
 ## SidewalkDeviceTypeDef
 
 ```python title="Usage Example"
@@ -3097,82 +3118,6 @@ class CreateServiceProfileRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoRaWANServiceProfileTypeDef](./type_defs.md#lorawanserviceprofiletypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateWirelessGatewayRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayRequestRequestTypeDef
-
-def get_value() -> CreateWirelessGatewayRequestRequestTypeDef:
-    return {
-        "LoRaWAN": ...,
-    }
-```
-
-```python title="Definition"
-class CreateWirelessGatewayRequestRequestTypeDef(TypedDict):
-    LoRaWAN: LoRaWANGatewayTypeDef,  # (1)
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-    ClientRequestToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## GetWirelessGatewayResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayResponseTypeDef
-
-def get_value() -> GetWirelessGatewayResponseTypeDef:
-    return {
-        "Name": ...,
-        "Id": ...,
-        "Description": ...,
-        "LoRaWAN": ...,
-        "Arn": ...,
-        "ThingName": ...,
-        "ThingArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetWirelessGatewayResponseTypeDef(TypedDict):
-    Name: str,
-    Id: str,
-    Description: str,
-    LoRaWAN: LoRaWANGatewayTypeDef,  # (1)
-    Arn: str,
-    ThingName: str,
-    ThingArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## WirelessGatewayStatisticsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import WirelessGatewayStatisticsTypeDef
-
-def get_value() -> WirelessGatewayStatisticsTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class WirelessGatewayStatisticsTypeDef(TypedDict):
-    Arn: NotRequired[str],
-    Id: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    LoRaWAN: NotRequired[LoRaWANGatewayTypeDef],  # (1)
-    LastUplinkReceivedAt: NotRequired[str],
-```
-
-1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
 ## ListDestinationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3325,26 +3270,6 @@ class ProximityResourceTypeEventConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SidewalkResourceTypeEventConfigurationTypeDef](./type_defs.md#sidewalkresourcetypeeventconfigurationtypedef) 
-## DownlinkQueueMessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import DownlinkQueueMessageTypeDef
-
-def get_value() -> DownlinkQueueMessageTypeDef:
-    return {
-        "MessageId": ...,
-    }
-```
-
-```python title="Definition"
-class DownlinkQueueMessageTypeDef(TypedDict):
-    MessageId: NotRequired[str],
-    TransmitMode: NotRequired[int],
-    ReceivedAt: NotRequired[str],
-    LoRaWAN: NotRequired[LoRaWANSendDataToDeviceTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef) 
 ## FPortsTypeDef
 
 ```python title="Usage Example"
@@ -3404,6 +3329,28 @@ class ListFuotaTasksResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FuotaTaskTypeDef](./type_defs.md#fuotatasktypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ParticipatingGatewaysTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import ParticipatingGatewaysTypeDef
+
+def get_value() -> ParticipatingGatewaysTypeDef:
+    return {
+        "DownlinkMode": ...,
+        "GatewayList": ...,
+        "TransmissionInterval": ...,
+    }
+```
+
+```python title="Definition"
+class ParticipatingGatewaysTypeDef(TypedDict):
+    DownlinkMode: DownlinkModeType,  # (1)
+    GatewayList: List[GatewayListItemTypeDef],  # (2)
+    TransmissionInterval: int,
+```
+
+1. See [:material-code-brackets: DownlinkModeType](./literals.md#downlinkmodetype) 
+2. See [:material-code-braces: GatewayListItemTypeDef](./type_defs.md#gatewaylistitemtypedef) 
 ## GetFuotaTaskResponseTypeDef
 
 ```python title="Usage Example"
@@ -3854,25 +3801,6 @@ class PositionSolverDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SemtechGnssDetailTypeDef](./type_defs.md#semtechgnssdetailtypedef) 
-## WirelessMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import WirelessMetadataTypeDef
-
-def get_value() -> WirelessMetadataTypeDef:
-    return {
-        "LoRaWAN": ...,
-    }
-```
-
-```python title="Definition"
-class WirelessMetadataTypeDef(TypedDict):
-    LoRaWAN: NotRequired[LoRaWANSendDataToDeviceTypeDef],  # (1)
-    Sidewalk: NotRequired[SidewalkSendDataToDeviceTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef) 
-2. See [:material-code-braces: SidewalkSendDataToDeviceTypeDef](./type_defs.md#sidewalksenddatatodevicetypedef) 
 ## UpdatePartnerAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3939,6 +3867,82 @@ class WirelessGatewayLogOptionTypeDef(TypedDict):
 1. See [:material-code-brackets: WirelessGatewayTypeType](./literals.md#wirelessgatewaytypetype) 
 2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 3. See [:material-code-braces: WirelessGatewayEventLogOptionTypeDef](./type_defs.md#wirelessgatewayeventlogoptiontypedef) 
+## CreateWirelessGatewayRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayRequestRequestTypeDef
+
+def get_value() -> CreateWirelessGatewayRequestRequestTypeDef:
+    return {
+        "LoRaWAN": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWirelessGatewayRequestRequestTypeDef(TypedDict):
+    LoRaWAN: LoRaWANGatewayTypeDef,  # (1)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientRequestToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GetWirelessGatewayResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayResponseTypeDef
+
+def get_value() -> GetWirelessGatewayResponseTypeDef:
+    return {
+        "Name": ...,
+        "Id": ...,
+        "Description": ...,
+        "LoRaWAN": ...,
+        "Arn": ...,
+        "ThingName": ...,
+        "ThingArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetWirelessGatewayResponseTypeDef(TypedDict):
+    Name: str,
+    Id: str,
+    Description: str,
+    LoRaWAN: LoRaWANGatewayTypeDef,  # (1)
+    Arn: str,
+    ThingName: str,
+    ThingArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## WirelessGatewayStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import WirelessGatewayStatisticsTypeDef
+
+def get_value() -> WirelessGatewayStatisticsTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class WirelessGatewayStatisticsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANGatewayTypeDef],  # (1)
+    LastUplinkReceivedAt: NotRequired[str],
+```
+
+1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
 ## WirelessDeviceStatisticsTypeDef
 
 ```python title="Usage Example"
@@ -3969,50 +3973,6 @@ class WirelessDeviceStatisticsTypeDef(TypedDict):
 2. See [:material-code-braces: LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef) 
 3. See [:material-code-braces: SidewalkListDeviceTypeDef](./type_defs.md#sidewalklistdevicetypedef) 
 4. See [:material-code-brackets: FuotaDeviceStatusType](./literals.md#fuotadevicestatustype) 
-## ListWirelessGatewaysResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import ListWirelessGatewaysResponseTypeDef
-
-def get_value() -> ListWirelessGatewaysResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "WirelessGatewayList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListWirelessGatewaysResponseTypeDef(TypedDict):
-    NextToken: str,
-    WirelessGatewayList: List[WirelessGatewayStatisticsTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListQueuedMessagesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import ListQueuedMessagesResponseTypeDef
-
-def get_value() -> ListQueuedMessagesResponseTypeDef:
-    return {
-        "NextToken": ...,
-        "DownlinkQueueMessagesList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListQueuedMessagesResponseTypeDef(TypedDict):
-    NextToken: str,
-    DownlinkQueueMessagesList: List[DownlinkQueueMessageTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DownlinkQueueMessageTypeDef](./type_defs.md#downlinkqueuemessagetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoRaWANDeviceTypeDef
 
 ```python title="Usage Example"
@@ -4064,6 +4024,24 @@ class LoRaWANUpdateDeviceTypeDef(TypedDict):
 1. See [:material-code-braces: UpdateAbpV1_1TypeDef](./type_defs.md#updateabpv1_1typedef) 
 2. See [:material-code-braces: UpdateAbpV1_0_xTypeDef](./type_defs.md#updateabpv1_0_xtypedef) 
 3. See [:material-code-braces: UpdateFPortsTypeDef](./type_defs.md#updatefportstypedef) 
+## LoRaWANSendDataToDeviceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import LoRaWANSendDataToDeviceTypeDef
+
+def get_value() -> LoRaWANSendDataToDeviceTypeDef:
+    return {
+        "FPort": ...,
+    }
+```
+
+```python title="Definition"
+class LoRaWANSendDataToDeviceTypeDef(TypedDict):
+    FPort: NotRequired[int],
+    ParticipatingGateways: NotRequired[ParticipatingGatewaysTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ParticipatingGatewaysTypeDef](./type_defs.md#participatinggatewaystypedef) 
 ## EventNotificationItemConfigurationsTypeDef
 
 ```python title="Usage Example"
@@ -4380,28 +4358,6 @@ class PositionConfigurationItemTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
 2. See [:material-code-braces: PositionSolverDetailsTypeDef](./type_defs.md#positionsolverdetailstypedef) 
-## SendDataToWirelessDeviceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iotwireless.type_defs import SendDataToWirelessDeviceRequestRequestTypeDef
-
-def get_value() -> SendDataToWirelessDeviceRequestRequestTypeDef:
-    return {
-        "Id": ...,
-        "TransmitMode": ...,
-        "PayloadData": ...,
-    }
-```
-
-```python title="Definition"
-class SendDataToWirelessDeviceRequestRequestTypeDef(TypedDict):
-    Id: str,
-    TransmitMode: int,
-    PayloadData: str,
-    WirelessMetadata: NotRequired[WirelessMetadataTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef) 
 ## GetLogLevelsByResourceTypesResponseTypeDef
 
 ```python title="Usage Example"
@@ -4449,6 +4405,28 @@ class UpdateLogLevelsByResourceTypesRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 2. See [:material-code-braces: WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef) 
 3. See [:material-code-braces: WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef) 
+## ListWirelessGatewaysResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import ListWirelessGatewaysResponseTypeDef
+
+def get_value() -> ListWirelessGatewaysResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "WirelessGatewayList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWirelessGatewaysResponseTypeDef(TypedDict):
+    NextToken: str,
+    WirelessGatewayList: List[WirelessGatewayStatisticsTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWirelessDevicesResponseTypeDef
 
 ```python title="Usage Example"
@@ -4558,6 +4536,45 @@ class UpdateWirelessDeviceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LoRaWANUpdateDeviceTypeDef](./type_defs.md#lorawanupdatedevicetypedef) 
+## DownlinkQueueMessageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import DownlinkQueueMessageTypeDef
+
+def get_value() -> DownlinkQueueMessageTypeDef:
+    return {
+        "MessageId": ...,
+    }
+```
+
+```python title="Definition"
+class DownlinkQueueMessageTypeDef(TypedDict):
+    MessageId: NotRequired[str],
+    TransmitMode: NotRequired[int],
+    ReceivedAt: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANSendDataToDeviceTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef) 
+## WirelessMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import WirelessMetadataTypeDef
+
+def get_value() -> WirelessMetadataTypeDef:
+    return {
+        "LoRaWAN": ...,
+    }
+```
+
+```python title="Definition"
+class WirelessMetadataTypeDef(TypedDict):
+    LoRaWAN: NotRequired[LoRaWANSendDataToDeviceTypeDef],  # (1)
+    Sidewalk: NotRequired[SidewalkSendDataToDeviceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef) 
+2. See [:material-code-braces: SidewalkSendDataToDeviceTypeDef](./type_defs.md#sidewalksenddatatodevicetypedef) 
 ## EventConfigurationItemTypeDef
 
 ```python title="Usage Example"
@@ -4672,6 +4689,50 @@ class ListPositionConfigurationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PositionConfigurationItemTypeDef](./type_defs.md#positionconfigurationitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQueuedMessagesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import ListQueuedMessagesResponseTypeDef
+
+def get_value() -> ListQueuedMessagesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "DownlinkQueueMessagesList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueuedMessagesResponseTypeDef(TypedDict):
+    NextToken: str,
+    DownlinkQueueMessagesList: List[DownlinkQueueMessageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DownlinkQueueMessageTypeDef](./type_defs.md#downlinkqueuemessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendDataToWirelessDeviceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import SendDataToWirelessDeviceRequestRequestTypeDef
+
+def get_value() -> SendDataToWirelessDeviceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "TransmitMode": ...,
+        "PayloadData": ...,
+    }
+```
+
+```python title="Definition"
+class SendDataToWirelessDeviceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    TransmitMode: int,
+    PayloadData: str,
+    WirelessMetadata: NotRequired[WirelessMetadataTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef) 
 ## ListEventConfigurationsResponseTypeDef
 
 ```python title="Usage Example"

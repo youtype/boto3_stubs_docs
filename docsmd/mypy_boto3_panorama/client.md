@@ -753,18 +753,25 @@ Type annotations and code completion for `#!python boto3.client("panorama").list
 def list_devices(
     self,
     *,
+    DeviceAggregatedStatusFilter: DeviceAggregatedStatusType = ...,  # (1)
     MaxResults: int = ...,
+    NameFilter: str = ...,
     NextToken: str = ...,
-) -> ListDevicesResponseTypeDef:  # (1)
+    SortBy: ListDevicesSortByType = ...,  # (2)
+    SortOrder: SortOrderType = ...,  # (3)
+) -> ListDevicesResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
+1. See [:material-code-brackets: DeviceAggregatedStatusType](./literals.md#deviceaggregatedstatustype) 
+2. See [:material-code-brackets: ListDevicesSortByType](./literals.md#listdevicessortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: ListDevicesRequestRequestTypeDef = {  # (1)
-    "MaxResults": ...,
+    "DeviceAggregatedStatusFilter": ...,
 }
 
 parent.list_devices(**kwargs)

@@ -70,6 +70,22 @@ DlClassType = Literal[
     "ClassC",
 ]
 ```
+## DownlinkModeType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import DownlinkModeType
+
+def get_value() -> DownlinkModeType:
+    return "CONCURRENT"
+```
+
+```python title="Definition"
+DownlinkModeType = Literal[
+    "CONCURRENT",
+    "SEQUENTIAL",
+    "USING_UPLINK_GATEWAY",
+]
+```
 ## EventNotificationPartnerTypeType
 
 ```python title="Usage Example"

@@ -303,6 +303,24 @@ class DescribeDeviceRequestRequestTypeDef(TypedDict):
     DeviceId: str,
 ```
 
+## LatestDeviceJobTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import LatestDeviceJobTypeDef
+
+def get_value() -> LatestDeviceJobTypeDef:
+    return {
+        "ImageVersion": ...,
+    }
+```
+
+```python title="Definition"
+class LatestDeviceJobTypeDef(TypedDict):
+    ImageVersion: NotRequired[str],
+    Status: NotRequired[UpdateProgressType],  # (1)
+```
+
+1. See [:material-code-brackets: UpdateProgressType](./literals.md#updateprogresstype) 
 ## DescribeNodeFromTemplateJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -423,30 +441,6 @@ class DeviceJobTypeDef(TypedDict):
     JobId: NotRequired[str],
 ```
 
-## DeviceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_panorama.type_defs import DeviceTypeDef
-
-def get_value() -> DeviceTypeDef:
-    return {
-        "Brand": ...,
-    }
-```
-
-```python title="Definition"
-class DeviceTypeDef(TypedDict):
-    Brand: NotRequired[DeviceBrandType],  # (1)
-    CreatedTime: NotRequired[datetime],
-    DeviceId: NotRequired[str],
-    LastUpdatedTime: NotRequired[datetime],
-    LeaseExpirationTime: NotRequired[datetime],
-    Name: NotRequired[str],
-    ProvisioningStatus: NotRequired[DeviceStatusType],  # (2)
-```
-
-1. See [:material-code-brackets: DeviceBrandType](./literals.md#devicebrandtype) 
-2. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
 ## StaticIpConnectionInfoTypeDef
 
 ```python title="Usage Example"
@@ -613,16 +607,23 @@ from mypy_boto3_panorama.type_defs import ListDevicesRequestRequestTypeDef
 
 def get_value() -> ListDevicesRequestRequestTypeDef:
     return {
-        "MaxResults": ...,
+        "DeviceAggregatedStatusFilter": ...,
     }
 ```
 
 ```python title="Definition"
 class ListDevicesRequestRequestTypeDef(TypedDict):
+    DeviceAggregatedStatusFilter: NotRequired[DeviceAggregatedStatusType],  # (1)
     MaxResults: NotRequired[int],
+    NameFilter: NotRequired[str],
     NextToken: NotRequired[str],
+    SortBy: NotRequired[ListDevicesSortByType],  # (2)
+    SortOrder: NotRequired[SortOrderType],  # (3)
 ```
 
+1. See [:material-code-brackets: DeviceAggregatedStatusType](./literals.md#deviceaggregatedstatustype) 
+2. See [:material-code-brackets: ListDevicesSortByType](./literals.md#listdevicessortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListNodeFromTemplateJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1530,6 +1531,39 @@ class DescribePackageResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StorageLocationTypeDef](./type_defs.md#storagelocationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeviceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import DeviceTypeDef
+
+def get_value() -> DeviceTypeDef:
+    return {
+        "Brand": ...,
+    }
+```
+
+```python title="Definition"
+class DeviceTypeDef(TypedDict):
+    Brand: NotRequired[DeviceBrandType],  # (1)
+    CreatedTime: NotRequired[datetime],
+    CurrentSoftware: NotRequired[str],
+    Description: NotRequired[str],
+    DeviceAggregatedStatus: NotRequired[DeviceAggregatedStatusType],  # (2)
+    DeviceId: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+    LatestDeviceJob: NotRequired[LatestDeviceJobTypeDef],  # (3)
+    LeaseExpirationTime: NotRequired[datetime],
+    Name: NotRequired[str],
+    ProvisioningStatus: NotRequired[DeviceStatusType],  # (4)
+    Tags: NotRequired[Dict[str, str]],
+    Type: NotRequired[DeviceTypeType],  # (5)
+```
+
+1. See [:material-code-brackets: DeviceBrandType](./literals.md#devicebrandtype) 
+2. See [:material-code-brackets: DeviceAggregatedStatusType](./literals.md#deviceaggregatedstatustype) 
+3. See [:material-code-braces: LatestDeviceJobTypeDef](./type_defs.md#latestdevicejobtypedef) 
+4. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
+5. See [:material-code-brackets: DeviceTypeType](./literals.md#devicetypetype) 
 ## DeviceJobConfigTypeDef
 
 ```python title="Usage Example"
@@ -1568,28 +1602,6 @@ class ListDevicesJobsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DeviceJobTypeDef](./type_defs.md#devicejobtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListDevicesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_panorama.type_defs import ListDevicesResponseTypeDef
-
-def get_value() -> ListDevicesResponseTypeDef:
-    return {
-        "Devices": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListDevicesResponseTypeDef(TypedDict):
-    Devices: List[DeviceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EthernetPayloadTypeDef
 
@@ -1841,6 +1853,28 @@ class PackageVersionInputConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+## ListDevicesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import ListDevicesResponseTypeDef
+
+def get_value() -> ListDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateJobForDevicesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1962,9 +1996,11 @@ def get_value() -> DescribeDeviceResponseTypeDef:
         "CurrentNetworkingStatus": ...,
         "CurrentSoftware": ...,
         "Description": ...,
+        "DeviceAggregatedStatus": ...,
         "DeviceConnectionStatus": ...,
         "DeviceId": ...,
         "LatestAlternateSoftware": ...,
+        "LatestDeviceJob": ...,
         "LatestSoftware": ...,
         "LeaseExpirationTime": ...,
         "Name": ...,
@@ -1986,28 +2022,32 @@ class DescribeDeviceResponseTypeDef(TypedDict):
     CurrentNetworkingStatus: NetworkStatusTypeDef,  # (3)
     CurrentSoftware: str,
     Description: str,
-    DeviceConnectionStatus: DeviceConnectionStatusType,  # (4)
+    DeviceAggregatedStatus: DeviceAggregatedStatusType,  # (4)
+    DeviceConnectionStatus: DeviceConnectionStatusType,  # (5)
     DeviceId: str,
     LatestAlternateSoftware: str,
+    LatestDeviceJob: LatestDeviceJobTypeDef,  # (6)
     LatestSoftware: str,
     LeaseExpirationTime: datetime,
     Name: str,
-    NetworkingConfiguration: NetworkPayloadTypeDef,  # (5)
-    ProvisioningStatus: DeviceStatusType,  # (6)
+    NetworkingConfiguration: NetworkPayloadTypeDef,  # (7)
+    ProvisioningStatus: DeviceStatusType,  # (8)
     SerialNumber: str,
     Tags: Dict[str, str],
-    Type: DeviceTypeType,  # (7)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+    Type: DeviceTypeType,  # (9)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
 ```
 
 1. See [:material-code-braces: AlternateSoftwareMetadataTypeDef](./type_defs.md#alternatesoftwaremetadatatypedef) 
 2. See [:material-code-brackets: DeviceBrandType](./literals.md#devicebrandtype) 
 3. See [:material-code-braces: NetworkStatusTypeDef](./type_defs.md#networkstatustypedef) 
-4. See [:material-code-brackets: DeviceConnectionStatusType](./literals.md#deviceconnectionstatustype) 
-5. See [:material-code-braces: NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef) 
-6. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
-7. See [:material-code-brackets: DeviceTypeType](./literals.md#devicetypetype) 
-8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-brackets: DeviceAggregatedStatusType](./literals.md#deviceaggregatedstatustype) 
+5. See [:material-code-brackets: DeviceConnectionStatusType](./literals.md#deviceconnectionstatustype) 
+6. See [:material-code-braces: LatestDeviceJobTypeDef](./type_defs.md#latestdevicejobtypedef) 
+7. See [:material-code-braces: NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef) 
+8. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
+9. See [:material-code-brackets: DeviceTypeType](./literals.md#devicetypetype) 
+10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ProvisionDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"

@@ -88,6 +88,7 @@ def get_value() -> DecimalReturnTypeType:
 - [RDSDataServiceServiceName](./literals.md#rdsdataserviceservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

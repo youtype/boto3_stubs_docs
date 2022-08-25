@@ -17,7 +17,6 @@ def get_value() -> CreateTokenRequestRequestTypeDef:
         "clientId": ...,
         "clientSecret": ...,
         "grantType": ...,
-        "deviceCode": ...,
     }
 ```
 
@@ -26,7 +25,7 @@ class CreateTokenRequestRequestTypeDef(TypedDict):
     clientId: str,
     clientSecret: str,
     grantType: str,
-    deviceCode: str,
+    deviceCode: NotRequired[str],
     code: NotRequired[str],
     refreshToken: NotRequired[str],
     scope: NotRequired[Sequence[str]],

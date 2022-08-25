@@ -62,6 +62,28 @@ ConnectionTypeType = Literal[
     "STATIC_IP",
 ]
 ```
+## DeviceAggregatedStatusType
+
+```python title="Usage Example"
+from mypy_boto3_panorama.literals import DeviceAggregatedStatusType
+
+def get_value() -> DeviceAggregatedStatusType:
+    return "AWAITING_PROVISIONING"
+```
+
+```python title="Definition"
+DeviceAggregatedStatusType = Literal[
+    "AWAITING_PROVISIONING",
+    "DELETING",
+    "ERROR",
+    "FAILED",
+    "LEASE_EXPIRED",
+    "OFFLINE",
+    "ONLINE",
+    "PENDING",
+    "UPDATE_NEEDED",
+]
+```
 ## DeviceBrandType
 
 ```python title="Usage Example"
@@ -155,6 +177,23 @@ def get_value() -> JobTypeType:
 ```python title="Definition"
 JobTypeType = Literal[
     "OTA",
+]
+```
+## ListDevicesSortByType
+
+```python title="Usage Example"
+from mypy_boto3_panorama.literals import ListDevicesSortByType
+
+def get_value() -> ListDevicesSortByType:
+    return "CREATED_TIME"
+```
+
+```python title="Definition"
+ListDevicesSortByType = Literal[
+    "CREATED_TIME",
+    "DEVICE_AGGREGATED_STATUS",
+    "DEVICE_ID",
+    "NAME",
 ]
 ```
 ## NetworkConnectionStatusType
@@ -286,6 +325,21 @@ PortTypeType = Literal[
     "INT32",
     "MEDIA",
     "STRING",
+]
+```
+## SortOrderType
+
+```python title="Usage Example"
+from mypy_boto3_panorama.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
+```
+
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
 ]
 ```
 ## StatusFilterType

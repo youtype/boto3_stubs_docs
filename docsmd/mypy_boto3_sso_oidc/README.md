@@ -101,7 +101,6 @@ def get_value() -> CreateTokenRequestRequestTypeDef:
         "clientId": ...,
         "clientSecret": ...,
         "grantType": ...,
-        "deviceCode": ...,
     }
 ```
 
