@@ -125,10 +125,14 @@ class HlsManifestTypeDef(TypedDict):
     PlaylistWindowSeconds: NotRequired[int],
     ProgramDateTimeIntervalSeconds: NotRequired[int],
     Url: NotRequired[str],
+    AdTriggers: NotRequired[List[AdTriggersElementType]],  # (3)
+    AdsOnDeliveryRestrictions: NotRequired[AdsOnDeliveryRestrictionsType],  # (4)
 ```
 
 1. See [:material-code-brackets: AdMarkersType](./literals.md#admarkerstype) 
 2. See [:material-code-brackets: PlaylistTypeType](./literals.md#playlisttypetype) 
+3. See [:material-code-brackets: AdTriggersElementType](./literals.md#adtriggerselementtype) 
+4. See [:material-code-brackets: AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"

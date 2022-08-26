@@ -2441,7 +2441,7 @@ def get_value() -> ItemCollectionMetricsTypeDef:
 
 ```python title="Definition"
 class ItemCollectionMetricsTypeDef(TypedDict):
-    ItemCollectionKey: NotRequired[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
+    ItemCollectionKey: NotRequired[Dict[str, AttributeValueTypeDef]],  # (1)
     SizeEstimateRangeGB: NotRequired[List[float]],
 ```
 
@@ -2459,7 +2459,7 @@ def get_value() -> ItemResponseTypeDef:
 
 ```python title="Definition"
 class ItemResponseTypeDef(TypedDict):
-    Item: NotRequired[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
+    Item: NotRequired[Dict[str, AttributeValueTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
@@ -2705,7 +2705,7 @@ def get_value() -> BatchStatementResponseTypeDef:
 class BatchStatementResponseTypeDef(TypedDict):
     Error: NotRequired[BatchStatementErrorTypeDef],  # (1)
     TableName: NotRequired[str],
-    Item: NotRequired[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (2)
+    Item: NotRequired[Dict[str, AttributeValueTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: BatchStatementErrorTypeDef](./type_defs.md#batchstatementerrortypedef) 
@@ -4524,7 +4524,7 @@ def get_value() -> BatchGetItemOutputTypeDef:
 
 ```python title="Definition"
 class BatchGetItemOutputTypeDef(TypedDict):
-    Responses: Dict[str, List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]]],  # (1)
+    Responses: Dict[str, List[Dict[str, AttributeValueTypeDef]]],  # (1)
     UnprocessedKeys: Dict[str, KeysAndAttributesTypeDef],  # (2)
     ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
@@ -4550,7 +4550,7 @@ def get_value() -> DeleteItemOutputTypeDef:
 
 ```python title="Definition"
 class DeleteItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
+    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
@@ -4577,10 +4577,10 @@ def get_value() -> ExecuteStatementOutputTypeDef:
 
 ```python title="Definition"
 class ExecuteStatementOutputTypeDef(TypedDict):
-    Items: List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
+    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
     NextToken: str,
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
-    LastEvaluatedKey: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (3)
+    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
@@ -4626,7 +4626,7 @@ def get_value() -> GetItemOutputTypeDef:
 
 ```python title="Definition"
 class GetItemOutputTypeDef(TypedDict):
-    Item: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
+    Item: Dict[str, AttributeValueTypeDef],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
@@ -4650,7 +4650,7 @@ def get_value() -> PutItemOutputTypeDef:
 
 ```python title="Definition"
 class PutItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
+    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
@@ -4678,10 +4678,10 @@ def get_value() -> QueryOutputTypeDef:
 
 ```python title="Definition"
 class QueryOutputTypeDef(TypedDict):
-    Items: List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
+    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
     Count: int,
     ScannedCount: int,
-    LastEvaluatedKey: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (2)
+    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (2)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
@@ -4708,10 +4708,10 @@ def get_value() -> ScanOutputTypeDef:
 
 ```python title="Definition"
 class ScanOutputTypeDef(TypedDict):
-    Items: List[Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],  # (1)
+    Items: List[Dict[str, AttributeValueTypeDef]],  # (1)
     Count: int,
     ScannedCount: int,
-    LastEvaluatedKey: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (2)
+    LastEvaluatedKey: Dict[str, AttributeValueTypeDef],  # (2)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
@@ -4782,7 +4782,7 @@ def get_value() -> UpdateItemOutputTypeDef:
 
 ```python title="Definition"
 class UpdateItemOutputTypeDef(TypedDict):
-    Attributes: Dict[str, Union[AttributeValueTypeDef, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],  # (1)
+    Attributes: Dict[str, AttributeValueTypeDef],  # (1)
     ConsumedCapacity: ConsumedCapacityTypeDef,  # (2)
     ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (3)
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
