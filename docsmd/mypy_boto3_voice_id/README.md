@@ -159,6 +159,7 @@ def get_value() -> AuthenticationConfigurationTypeDef:
 - [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
 - [FraudDetectionConfigurationTypeDef](./type_defs.md#frauddetectionconfigurationtypedef)
 - [KnownFraudsterRiskTypeDef](./type_defs.md#knownfraudsterrisktypedef)
+- [VoiceSpoofingRiskTypeDef](./type_defs.md#voicespoofingrisktypedef)
 - [JobProgressTypeDef](./type_defs.md#jobprogresstypedef)
 - [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)

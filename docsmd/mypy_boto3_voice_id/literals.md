@@ -116,6 +116,7 @@ def get_value() -> FraudDetectionReasonType:
 ```python title="Definition"
 FraudDetectionReasonType = Literal[
     "KNOWN_FRAUDSTER",
+    "VOICE_SPOOFING",
 ]
 ```
 ## FraudsterRegistrationJobStatusType

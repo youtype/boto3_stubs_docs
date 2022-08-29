@@ -367,6 +367,22 @@ class KnownFraudsterRiskTypeDef(TypedDict):
     GeneratedFraudsterId: NotRequired[str],
 ```
 
+## VoiceSpoofingRiskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_voice_id.type_defs import VoiceSpoofingRiskTypeDef
+
+def get_value() -> VoiceSpoofingRiskTypeDef:
+    return {
+        "RiskScore": ...,
+    }
+```
+
+```python title="Definition"
+class VoiceSpoofingRiskTypeDef(TypedDict):
+    RiskScore: int,
+```
+
 ## JobProgressTypeDef
 
 ```python title="Usage Example"
@@ -869,15 +885,18 @@ from mypy_boto3_voice_id.type_defs import FraudRiskDetailsTypeDef
 def get_value() -> FraudRiskDetailsTypeDef:
     return {
         "KnownFraudsterRisk": ...,
+        "VoiceSpoofingRisk": ...,
     }
 ```
 
 ```python title="Definition"
 class FraudRiskDetailsTypeDef(TypedDict):
     KnownFraudsterRisk: KnownFraudsterRiskTypeDef,  # (1)
+    VoiceSpoofingRisk: VoiceSpoofingRiskTypeDef,  # (2)
 ```
 
 1. See [:material-code-braces: KnownFraudsterRiskTypeDef](./type_defs.md#knownfraudsterrisktypedef) 
+2. See [:material-code-braces: VoiceSpoofingRiskTypeDef](./type_defs.md#voicespoofingrisktypedef) 
 ## FraudsterRegistrationJobSummaryTypeDef
 
 ```python title="Usage Example"
