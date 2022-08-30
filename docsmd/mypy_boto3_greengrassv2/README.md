@@ -114,6 +114,7 @@ def get_value() -> CloudComponentStateType:
 - [DeploymentStatusType](./literals.md#deploymentstatustype)
 - [EffectiveDeploymentExecutionStatusType](./literals.md#effectivedeploymentexecutionstatustype)
 - [InstalledComponentLifecycleStateType](./literals.md#installedcomponentlifecyclestatetype)
+- [InstalledComponentTopologyFilterType](./literals.md#installedcomponenttopologyfiltertype)
 - [IoTJobAbortActionType](./literals.md#iotjobabortactiontype)
 - [IoTJobExecutionFailureTypeType](./literals.md#iotjobexecutionfailuretypetype)
 - [LambdaEventSourceTypeType](./literals.md#lambdaeventsourcetypetype)

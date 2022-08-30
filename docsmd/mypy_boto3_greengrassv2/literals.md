@@ -174,6 +174,21 @@ InstalledComponentLifecycleStateType = Literal[
     "STOPPING",
 ]
 ```
+## InstalledComponentTopologyFilterType
+
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.literals import InstalledComponentTopologyFilterType
+
+def get_value() -> InstalledComponentTopologyFilterType:
+    return "ALL"
+```
+
+```python title="Definition"
+InstalledComponentTopologyFilterType = Literal[
+    "ALL",
+    "ROOT",
+]
+```
 ## IoTJobAbortActionType
 
 ```python title="Usage Example"

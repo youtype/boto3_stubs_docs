@@ -138,8 +138,7 @@ parent.get_role_credentials(**kwargs)
 
 ### list\_account\_roles
 
-Lists all roles that are assigned to the user for a given Amazon Web Services
-account.
+Lists all roles that are assigned to the user for a given AWS account.
 
 Type annotations and code completion for `#!python boto3.client("sso").list_account_roles` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
@@ -172,7 +171,7 @@ parent.list_account_roles(**kwargs)
 
 ### list\_accounts
 
-Lists all Amazon Web Services accounts assigned to the user.
+Lists all AWS accounts assigned to the user.
 
 Type annotations and code completion for `#!python boto3.client("sso").list_accounts` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
@@ -204,8 +203,8 @@ parent.list_accounts(**kwargs)
 ### logout
 
 Removes the locally stored SSO tokens from the client-side cache and sends an
-API call to the Amazon Web Services SSO service to invalidate the corresponding
-server-side Amazon Web Services SSO sign in session.
+API call to the IAM Identity Center service to invalidate the corresponding
+server-side IAM Identity Center sign in session.
 
 Type annotations and code completion for `#!python boto3.client("sso").logout` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)

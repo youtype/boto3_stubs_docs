@@ -583,6 +583,7 @@ class InstalledComponentTypeDef(TypedDict):
     lifecycleState: NotRequired[InstalledComponentLifecycleStateType],  # (1)
     lifecycleStateDetails: NotRequired[str],
     isRoot: NotRequired[bool],
+    lastStatusChangeTimestamp: NotRequired[datetime],
 ```
 
 1. See [:material-code-brackets: InstalledComponentLifecycleStateType](./literals.md#installedcomponentlifecyclestatetype) 
@@ -833,8 +834,10 @@ class ListInstalledComponentsRequestRequestTypeDef(TypedDict):
     coreDeviceThingName: str,
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    topologyFilter: NotRequired[InstalledComponentTopologyFilterType],  # (1)
 ```
 
+1. See [:material-code-brackets: InstalledComponentTopologyFilterType](./literals.md#installedcomponenttopologyfiltertype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1723,10 +1726,12 @@ def get_value() -> ListInstalledComponentsRequestListInstalledComponentsPaginate
 ```python title="Definition"
 class ListInstalledComponentsRequestListInstalledComponentsPaginateTypeDef(TypedDict):
     coreDeviceThingName: str,
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    topologyFilter: NotRequired[InstalledComponentTopologyFilterType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: InstalledComponentTopologyFilterType](./literals.md#installedcomponenttopologyfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ResolveComponentCandidatesResponseTypeDef
 
 ```python title="Usage Example"

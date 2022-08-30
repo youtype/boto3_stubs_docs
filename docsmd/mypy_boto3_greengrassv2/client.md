@@ -805,11 +805,13 @@ def list_installed_components(
     coreDeviceThingName: str,
     maxResults: int = ...,
     nextToken: str = ...,
-) -> ListInstalledComponentsResponseTypeDef:  # (1)
+    topologyFilter: InstalledComponentTopologyFilterType = ...,  # (1)
+) -> ListInstalledComponentsResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef) 
+1. See [:material-code-brackets: InstalledComponentTopologyFilterType](./literals.md#installedcomponenttopologyfiltertype) 
+2. See [:material-code-braces: ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

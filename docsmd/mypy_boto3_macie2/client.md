@@ -147,6 +147,42 @@ def close(
 ```
 
 
+### create\_allow\_list
+
+Creates and defines the settings for an allow list.
+
+Type annotations and code completion for `#!python boto3.client("macie2").create_allow_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_allow_list)
+
+```python title="Method definition"
+def create_allow_list(
+    self,
+    *,
+    clientToken: str,
+    criteria: AllowListCriteriaTypeDef,  # (1)
+    name: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAllowListResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: AllowListCriteriaTypeDef](./type_defs.md#allowlistcriteriatypedef) 
+2. See [:material-code-braces: CreateAllowListResponseTypeDef](./type_defs.md#createallowlistresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateAllowListRequestRequestTypeDef = {  # (1)
+    "clientToken": ...,
+    "criteria": ...,
+    "name": ...,
+}
+
+parent.create_allow_list(**kwargs)
+```
+
+1. See [:material-code-braces: CreateAllowListRequestRequestTypeDef](./type_defs.md#createallowlistrequestrequesttypedef) 
+
 ### create\_classification\_job
 
 Creates and defines the settings for a classification job.
@@ -162,6 +198,7 @@ def create_classification_job(
     jobType: JobTypeType,  # (1)
     name: str,
     s3JobDefinition: S3JobDefinitionTypeDef,  # (2)
+    allowListIds: Sequence[str] = ...,
     customDataIdentifierIds: Sequence[str] = ...,
     description: str = ...,
     initialRun: bool = ...,
@@ -393,6 +430,35 @@ parent.decline_invitations(**kwargs)
 ```
 
 1. See [:material-code-braces: DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef) 
+
+### delete\_allow\_list
+
+Deletes an allow list.
+
+Type annotations and code completion for `#!python boto3.client("macie2").delete_allow_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_allow_list)
+
+```python title="Method definition"
+def delete_allow_list(
+    self,
+    *,
+    id: str,
+    ignoreJobChecks: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteAllowListRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.delete_allow_list(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteAllowListRequestRequestTypeDef](./type_defs.md#deleteallowlistrequestrequesttypedef) 
 
 ### delete\_custom\_data\_identifier
 
@@ -793,6 +859,35 @@ def get_administrator_account(
 
 1. See [:material-code-braces: GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef) 
 
+### get\_allow\_list
+
+Retrieves the settings and status of an allow list.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_allow_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_allow_list)
+
+```python title="Method definition"
+def get_allow_list(
+    self,
+    *,
+    id: str,
+) -> GetAllowListResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetAllowListResponseTypeDef](./type_defs.md#getallowlistresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetAllowListRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.get_allow_list(**kwargs)
+```
+
+1. See [:material-code-braces: GetAllowListRequestRequestTypeDef](./type_defs.md#getallowlistrequestrequesttypedef) 
+
 ### get\_bucket\_statistics
 
 Retrieves (queries) aggregated statistical data about S3 buckets that Amazon
@@ -1062,8 +1157,8 @@ parent.get_member(**kwargs)
 
 ### get\_reveal\_configuration
 
-Retrieves the status and configuration settings for retrieving (revealing)
-occurrences of sensitive data reported by findings.
+Retrieves the status and configuration settings for retrieving occurrences of
+sensitive data reported by findings.
 
 Type annotations and code completion for `#!python boto3.client("macie2").get_reveal_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_reveal_configuration)
@@ -1079,7 +1174,7 @@ def get_reveal_configuration(
 
 ### get\_sensitive\_data\_occurrences
 
-Retrieves (reveals) occurrences of sensitive data reported by a finding.
+Retrieves occurrences of sensitive data reported by a finding.
 
 Type annotations and code completion for `#!python boto3.client("macie2").get_sensitive_data_occurrences` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_sensitive_data_occurrences)
@@ -1108,8 +1203,7 @@ parent.get_sensitive_data_occurrences(**kwargs)
 
 ### get\_sensitive\_data\_occurrences\_availability
 
-Checks whether occurrences of sensitive data can be retrieved (revealed) for a
-finding.
+Checks whether occurrences of sensitive data can be retrieved for a finding.
 
 Type annotations and code completion for `#!python boto3.client("macie2").get_sensitive_data_occurrences_availability` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_sensitive_data_occurrences_availability)
@@ -1200,6 +1294,36 @@ parent.get_usage_totals(**kwargs)
 ```
 
 1. See [:material-code-braces: GetUsageTotalsRequestRequestTypeDef](./type_defs.md#getusagetotalsrequestrequesttypedef) 
+
+### list\_allow\_lists
+
+Retrieves a subset of information about all the allow lists for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").list_allow_lists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_allow_lists)
+
+```python title="Method definition"
+def list_allow_lists(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAllowListsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAllowListsResponseTypeDef](./type_defs.md#listallowlistsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAllowListsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
+
+parent.list_allow_lists(**kwargs)
+```
+
+1. See [:material-code-braces: ListAllowListsRequestRequestTypeDef](./type_defs.md#listallowlistsrequestrequesttypedef) 
 
 ### list\_classification\_jobs
 
@@ -1456,8 +1580,8 @@ parent.list_organization_admin_accounts(**kwargs)
 
 ### list\_tags\_for\_resource
 
-Retrieves the tags (keys and values) that are associated with a classification
-job, custom data identifier, findings filter, or member account.
+Retrieves the tags (keys and values) that are associated with an Amazon Macie
+resource.
 
 Type annotations and code completion for `#!python boto3.client("macie2").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_tags_for_resource)
@@ -1582,8 +1706,8 @@ parent.search_resources(**kwargs)
 
 ### tag\_resource
 
-Adds or updates one or more tags (keys and values) that are associated with a
-classification job, custom data identifier, findings filter, or member account.
+Adds or updates one or more tags (keys and values) that are associated with an
+Amazon Macie resource.
 
 Type annotations and code completion for `#!python boto3.client("macie2").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.tag_resource)
@@ -1647,8 +1771,7 @@ parent.test_custom_data_identifier(**kwargs)
 
 ### untag\_resource
 
-Removes one or more tags (keys and values) from a classification job, custom
-data identifier, findings filter, or member account.
+Removes one or more tags (keys and values) from an Amazon Macie resource.
 
 Type annotations and code completion for `#!python boto3.client("macie2").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.untag_resource)
@@ -1675,6 +1798,41 @@ parent.untag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_allow\_list
+
+Updates the settings for an allow list.
+
+Type annotations and code completion for `#!python boto3.client("macie2").update_allow_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_allow_list)
+
+```python title="Method definition"
+def update_allow_list(
+    self,
+    *,
+    criteria: AllowListCriteriaTypeDef,  # (1)
+    id: str,
+    name: str,
+    description: str = ...,
+) -> UpdateAllowListResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: AllowListCriteriaTypeDef](./type_defs.md#allowlistcriteriatypedef) 
+2. See [:material-code-braces: UpdateAllowListResponseTypeDef](./type_defs.md#updateallowlistresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateAllowListRequestRequestTypeDef = {  # (1)
+    "criteria": ...,
+    "id": ...,
+    "name": ...,
+}
+
+parent.update_allow_list(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAllowListRequestRequestTypeDef](./type_defs.md#updateallowlistrequestrequesttypedef) 
 
 ### update\_classification\_job
 
@@ -1839,8 +1997,8 @@ parent.update_organization_configuration(**kwargs)
 
 ### update\_reveal\_configuration
 
-Updates the status and configuration settings for retrieving (revealing)
-occurrences of sensitive data reported by findings.
+Updates the status and configuration settings for retrieving occurrences of
+sensitive data reported by findings.
 
 Type annotations and code completion for `#!python boto3.client("macie2").update_reveal_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_reveal_configuration)

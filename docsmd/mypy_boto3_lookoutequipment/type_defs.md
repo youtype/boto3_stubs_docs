@@ -101,6 +101,34 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## CreateLabelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import CreateLabelRequestRequestTypeDef
+
+def get_value() -> CreateLabelRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "Rating": ...,
+        "ClientToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLabelRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Rating: LabelRatingType,  # (1)
+    ClientToken: str,
+    FaultCode: NotRequired[str],
+    Notes: NotRequired[str],
+    Equipment: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LabelRatingType](./literals.md#labelratingtype) 
 ## DataPreProcessingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -238,6 +266,40 @@ class DeleteInferenceSchedulerRequestRequestTypeDef(TypedDict):
     InferenceSchedulerName: str,
 ```
 
+## DeleteLabelGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import DeleteLabelGroupRequestRequestTypeDef
+
+def get_value() -> DeleteLabelGroupRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLabelGroupRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+```
+
+## DeleteLabelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import DeleteLabelRequestRequestTypeDef
+
+def get_value() -> DeleteLabelRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+        "LabelId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLabelRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+    LabelId: str,
+```
+
 ## DeleteModelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -300,6 +362,40 @@ def get_value() -> DescribeInferenceSchedulerRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeInferenceSchedulerRequestRequestTypeDef(TypedDict):
     InferenceSchedulerName: str,
+```
+
+## DescribeLabelGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import DescribeLabelGroupRequestRequestTypeDef
+
+def get_value() -> DescribeLabelGroupRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLabelGroupRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+```
+
+## DescribeLabelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import DescribeLabelRequestRequestTypeDef
+
+def get_value() -> DescribeLabelRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+        "LabelId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLabelRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+    LabelId: str,
 ```
 
 ## DescribeModelRequestRequestTypeDef
@@ -428,10 +524,12 @@ class InferenceSchedulerSummaryTypeDef(TypedDict):
     Status: NotRequired[InferenceSchedulerStatusType],  # (1)
     DataDelayOffsetInMinutes: NotRequired[int],
     DataUploadFrequency: NotRequired[DataUploadFrequencyType],  # (2)
+    LatestInferenceResult: NotRequired[LatestInferenceResultType],  # (3)
 ```
 
 1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
 2. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
+3. See [:material-code-brackets: LatestInferenceResultType](./literals.md#latestinferenceresulttype) 
 ## IngestionS3InputConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -482,6 +580,50 @@ class SensorsWithShortDateRangeTypeDef(TypedDict):
     AffectedSensorCount: int,
 ```
 
+## LabelGroupSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import LabelGroupSummaryTypeDef
+
+def get_value() -> LabelGroupSummaryTypeDef:
+    return {
+        "LabelGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class LabelGroupSummaryTypeDef(TypedDict):
+    LabelGroupName: NotRequired[str],
+    LabelGroupArn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    UpdatedAt: NotRequired[datetime],
+```
+
+## LabelSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import LabelSummaryTypeDef
+
+def get_value() -> LabelSummaryTypeDef:
+    return {
+        "LabelGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class LabelSummaryTypeDef(TypedDict):
+    LabelGroupName: NotRequired[str],
+    LabelId: NotRequired[str],
+    LabelGroupArn: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    Rating: NotRequired[LabelRatingType],  # (1)
+    FaultCode: NotRequired[str],
+    Equipment: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: LabelRatingType](./literals.md#labelratingtype) 
 ## LabelsS3InputConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -617,6 +759,46 @@ class ListInferenceSchedulersRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     InferenceSchedulerNameBeginsWith: NotRequired[str],
     ModelName: NotRequired[str],
+```
+
+## ListLabelGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import ListLabelGroupsRequestRequestTypeDef
+
+def get_value() -> ListLabelGroupsRequestRequestTypeDef:
+    return {
+        "LabelGroupNameBeginsWith": ...,
+    }
+```
+
+```python title="Definition"
+class ListLabelGroupsRequestRequestTypeDef(TypedDict):
+    LabelGroupNameBeginsWith: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListLabelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import ListLabelsRequestRequestTypeDef
+
+def get_value() -> ListLabelsRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListLabelsRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+    IntervalStartTime: NotRequired[Union[datetime, str]],
+    IntervalEndTime: NotRequired[Union[datetime, str]],
+    FaultCode: NotRequired[str],
+    Equipment: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## ListModelsRequestRequestTypeDef
@@ -783,6 +965,23 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## UpdateLabelGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import UpdateLabelGroupRequestRequestTypeDef
+
+def get_value() -> UpdateLabelGroupRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateLabelGroupRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+    FaultCodes: NotRequired[Sequence[str]],
+```
+
 ## CreateDatasetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -806,6 +1005,27 @@ class CreateDatasetRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateLabelGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import CreateLabelGroupRequestRequestTypeDef
+
+def get_value() -> CreateLabelGroupRequestRequestTypeDef:
+    return {
+        "LabelGroupName": ...,
+        "ClientToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLabelGroupRequestRequestTypeDef(TypedDict):
+    LabelGroupName: str,
+    ClientToken: str,
+    FaultCodes: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -873,6 +1093,46 @@ class CreateInferenceSchedulerResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLabelGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import CreateLabelGroupResponseTypeDef
+
+def get_value() -> CreateLabelGroupResponseTypeDef:
+    return {
+        "LabelGroupName": ...,
+        "LabelGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLabelGroupResponseTypeDef(TypedDict):
+    LabelGroupName: str,
+    LabelGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLabelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import CreateLabelResponseTypeDef
+
+def get_value() -> CreateLabelResponseTypeDef:
+    return {
+        "LabelId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLabelResponseTypeDef(TypedDict):
+    LabelId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateModelResponseTypeDef
 
 ```python title="Usage Example"
@@ -894,6 +1154,71 @@ class CreateModelResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLabelGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import DescribeLabelGroupResponseTypeDef
+
+def get_value() -> DescribeLabelGroupResponseTypeDef:
+    return {
+        "LabelGroupName": ...,
+        "LabelGroupArn": ...,
+        "FaultCodes": ...,
+        "CreatedAt": ...,
+        "UpdatedAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLabelGroupResponseTypeDef(TypedDict):
+    LabelGroupName: str,
+    LabelGroupArn: str,
+    FaultCodes: List[str],
+    CreatedAt: datetime,
+    UpdatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLabelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import DescribeLabelResponseTypeDef
+
+def get_value() -> DescribeLabelResponseTypeDef:
+    return {
+        "LabelGroupName": ...,
+        "LabelGroupArn": ...,
+        "LabelId": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "Rating": ...,
+        "FaultCode": ...,
+        "Notes": ...,
+        "Equipment": ...,
+        "CreatedAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLabelResponseTypeDef(TypedDict):
+    LabelGroupName: str,
+    LabelGroupArn: str,
+    LabelId: str,
+    StartTime: datetime,
+    EndTime: datetime,
+    Rating: LabelRatingType,  # (1)
+    FaultCode: str,
+    Notes: str,
+    Equipment: str,
+    CreatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: LabelRatingType](./literals.md#labelratingtype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EmptyResponseMetadataTypeDef
 
@@ -1171,6 +1496,50 @@ class InsufficientSensorDataTypeDef(TypedDict):
 
 1. See [:material-code-braces: MissingCompleteSensorDataTypeDef](./type_defs.md#missingcompletesensordatatypedef) 
 2. See [:material-code-braces: SensorsWithShortDateRangeTypeDef](./type_defs.md#sensorswithshortdaterangetypedef) 
+## ListLabelGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import ListLabelGroupsResponseTypeDef
+
+def get_value() -> ListLabelGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "LabelGroupSummaries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLabelGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    LabelGroupSummaries: List[LabelGroupSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LabelGroupSummaryTypeDef](./type_defs.md#labelgroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLabelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.type_defs import ListLabelsResponseTypeDef
+
+def get_value() -> ListLabelsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "LabelSummaries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLabelsResponseTypeDef(TypedDict):
+    NextToken: str,
+    LabelSummaries: List[LabelSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LabelSummaryTypeDef](./type_defs.md#labelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LabelsInputConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1184,7 +1553,8 @@ def get_value() -> LabelsInputConfigurationTypeDef:
 
 ```python title="Definition"
 class LabelsInputConfigurationTypeDef(TypedDict):
-    S3InputConfiguration: LabelsS3InputConfigurationTypeDef,  # (1)
+    S3InputConfiguration: NotRequired[LabelsS3InputConfigurationTypeDef],  # (1)
+    LabelGroupName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: LabelsS3InputConfigurationTypeDef](./type_defs.md#labelss3inputconfigurationtypedef) 
@@ -1301,6 +1671,7 @@ def get_value() -> DescribeInferenceSchedulerResponseTypeDef:
         "DataOutputConfiguration": ...,
         "RoleArn": ...,
         "ServerSideKmsKeyId": ...,
+        "LatestInferenceResult": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1320,14 +1691,16 @@ class DescribeInferenceSchedulerResponseTypeDef(TypedDict):
     DataOutputConfiguration: InferenceOutputConfigurationTypeDef,  # (4)
     RoleArn: str,
     ServerSideKmsKeyId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    LatestInferenceResult: LatestInferenceResultType,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
 2. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
 3. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
 4. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-brackets: LatestInferenceResultType](./literals.md#latestinferenceresulttype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InferenceExecutionSummaryTypeDef
 
 ```python title="Usage Example"

@@ -407,13 +407,15 @@ def paginate(
     self,
     *,
     coreDeviceThingName: str,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[ListInstalledComponentsResponseTypeDef]:  # (2)
+    topologyFilter: InstalledComponentTopologyFilterType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListInstalledComponentsResponseTypeDef]:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef) 
+1. See [:material-code-brackets: InstalledComponentTopologyFilterType](./literals.md#installedcomponenttopologyfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

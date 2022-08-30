@@ -90,6 +90,37 @@ IngestionJobStatusType = Literal[
     "SUCCESS",
 ]
 ```
+## LabelRatingType
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.literals import LabelRatingType
+
+def get_value() -> LabelRatingType:
+    return "ANOMALY"
+```
+
+```python title="Definition"
+LabelRatingType = Literal[
+    "ANOMALY",
+    "NEUTRAL",
+    "NO_ANOMALY",
+]
+```
+## LatestInferenceResultType
+
+```python title="Usage Example"
+from mypy_boto3_lookoutequipment.literals import LatestInferenceResultType
+
+def get_value() -> LatestInferenceResultType:
+    return "ANOMALOUS"
+```
+
+```python title="Definition"
+LatestInferenceResultType = Literal[
+    "ANOMALOUS",
+    "NORMAL",
+]
+```
 ## ModelStatusType
 
 ```python title="Usage Example"

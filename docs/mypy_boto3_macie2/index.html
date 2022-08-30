@@ -37168,6 +37168,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="literals/#adminstatustype">AdminStatusType</a></li>
+<li><a href="literals/#allowliststatuscodetype">AllowListStatusCodeType</a></li>
 <li><a href="literals/#allowsunencryptedobjectuploadstype">AllowsUnencryptedObjectUploadsType</a></li>
 <li><a href="literals/#availabilitycodetype">AvailabilityCodeType</a></li>
 <li><a href="literals/#bucketmetadataerrorcodetype">BucketMetadataErrorCodeType</a></li>
@@ -37251,6 +37252,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#accountdetailtypedef">AccountDetailTypeDef</a></li>
 <li><a href="type_defs/#blockpublicaccesstypedef">BlockPublicAccessTypeDef</a></li>
 <li><a href="type_defs/#adminaccounttypedef">AdminAccountTypeDef</a></li>
+<li><a href="type_defs/#s3wordslisttypedef">S3WordsListTypeDef</a></li>
+<li><a href="type_defs/#allowliststatustypedef">AllowListStatusTypeDef</a></li>
+<li><a href="type_defs/#allowlistsummarytypedef">AllowListSummaryTypeDef</a></li>
 <li><a href="type_defs/#apicalldetailstypedef">ApiCallDetailsTypeDef</a></li>
 <li><a href="type_defs/#awsaccounttypedef">AwsAccountTypeDef</a></li>
 <li><a href="type_defs/#awsservicetypedef">AwsServiceTypeDef</a></li>
@@ -37281,6 +37285,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#criterionadditionalpropertiestypedef">CriterionAdditionalPropertiesTypeDef</a></li>
 <li><a href="type_defs/#customdataidentifiersummarytypedef">CustomDataIdentifierSummaryTypeDef</a></li>
 <li><a href="type_defs/#declineinvitationsrequestrequesttypedef">DeclineInvitationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteallowlistrequestrequesttypedef">DeleteAllowListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletecustomdataidentifierrequestrequesttypedef">DeleteCustomDataIdentifierRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletefindingsfilterrequestrequesttypedef">DeleteFindingsFilterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteinvitationsrequestrequesttypedef">DeleteInvitationsRequestRequestTypeDef</a></li>
@@ -37300,6 +37305,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#severitytypedef">SeverityTypeDef</a></li>
 <li><a href="type_defs/#findingsfilterlistitemtypedef">FindingsFilterListItemTypeDef</a></li>
 <li><a href="type_defs/#invitationtypedef">InvitationTypeDef</a></li>
+<li><a href="type_defs/#getallowlistrequestrequesttypedef">GetAllowListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getbucketstatisticsrequestrequesttypedef">GetBucketStatisticsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcustomdataidentifierrequestrequesttypedef">GetCustomDataIdentifierRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#groupcounttypedef">GroupCountTypeDef</a></li>
@@ -37324,6 +37330,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#weeklyscheduletypedef">WeeklyScheduleTypeDef</a></li>
 <li><a href="type_defs/#simplescopetermtypedef">SimpleScopeTermTypeDef</a></li>
 <li><a href="type_defs/#s3bucketdefinitionforjobtypedef">S3BucketDefinitionForJobTypeDef</a></li>
+<li><a href="type_defs/#listallowlistsrequestrequesttypedef">ListAllowListsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listjobssortcriteriatypedef">ListJobsSortCriteriaTypeDef</a></li>
 <li><a href="type_defs/#listcustomdataidentifiersrequestrequesttypedef">ListCustomDataIdentifiersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listfindingsfiltersrequestrequesttypedef">ListFindingsFiltersRequestRequestTypeDef</a></li>
@@ -37357,8 +37364,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#useridentityroottypedef">UserIdentityRootTypeDef</a></li>
 <li><a href="type_defs/#creatememberrequestrequesttypedef">CreateMemberRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#accountlevelpermissionstypedef">AccountLevelPermissionsTypeDef</a></li>
+<li><a href="type_defs/#allowlistcriteriatypedef">AllowListCriteriaTypeDef</a></li>
 <li><a href="type_defs/#findingactiontypedef">FindingActionTypeDef</a></li>
 <li><a href="type_defs/#batchgetcustomdataidentifiersresponsetypedef">BatchGetCustomDataIdentifiersResponseTypeDef</a></li>
+<li><a href="type_defs/#createallowlistresponsetypedef">CreateAllowListResponseTypeDef</a></li>
 <li><a href="type_defs/#createclassificationjobresponsetypedef">CreateClassificationJobResponseTypeDef</a></li>
 <li><a href="type_defs/#createcustomdataidentifierresponsetypedef">CreateCustomDataIdentifierResponseTypeDef</a></li>
 <li><a href="type_defs/#createfindingsfilterresponsetypedef">CreateFindingsFilterResponseTypeDef</a></li>
@@ -37368,10 +37377,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getmaciesessionresponsetypedef">GetMacieSessionResponseTypeDef</a></li>
 <li><a href="type_defs/#getmemberresponsetypedef">GetMemberResponseTypeDef</a></li>
 <li><a href="type_defs/#getsensitivedataoccurrencesavailabilityresponsetypedef">GetSensitiveDataOccurrencesAvailabilityResponseTypeDef</a></li>
+<li><a href="type_defs/#listallowlistsresponsetypedef">ListAllowListsResponseTypeDef</a></li>
 <li><a href="type_defs/#listfindingsresponsetypedef">ListFindingsResponseTypeDef</a></li>
 <li><a href="type_defs/#listorganizationadminaccountsresponsetypedef">ListOrganizationAdminAccountsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#testcustomdataidentifierresponsetypedef">TestCustomDataIdentifierResponseTypeDef</a></li>
+<li><a href="type_defs/#updateallowlistresponsetypedef">UpdateAllowListResponseTypeDef</a></li>
 <li><a href="type_defs/#updatefindingsfilterresponsetypedef">UpdateFindingsFilterResponseTypeDef</a></li>
 <li><a href="type_defs/#bucketlevelpermissionstypedef">BucketLevelPermissionsTypeDef</a></li>
 <li><a href="type_defs/#getbucketstatisticsresponsetypedef">GetBucketStatisticsResponseTypeDef</a></li>
@@ -37419,6 +37430,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#sessioncontexttypedef">SessionContextTypeDef</a></li>
 <li><a href="type_defs/#tagcriterionforjobtypedef">TagCriterionForJobTypeDef</a></li>
 <li><a href="type_defs/#tagscopetermtypedef">TagScopeTermTypeDef</a></li>
+<li><a href="type_defs/#createallowlistrequestrequesttypedef">CreateAllowListRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getallowlistresponsetypedef">GetAllowListResponseTypeDef</a></li>
+<li><a href="type_defs/#updateallowlistrequestrequesttypedef">UpdateAllowListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#bucketpermissionconfigurationtypedef">BucketPermissionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#matchingresourcetypedef">MatchingResourceTypeDef</a></li>
 <li><a href="type_defs/#getclassificationexportconfigurationresponsetypedef">GetClassificationExportConfigurationResponseTypeDef</a></li>

@@ -170,6 +170,81 @@ parent.create_inference_scheduler(**kwargs)
 
 1. See [:material-code-braces: CreateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#createinferenceschedulerrequestrequesttypedef) 
 
+### create\_label
+
+Creates a label for an event.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").create_label` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_label)
+
+```python title="Method definition"
+def create_label(
+    self,
+    *,
+    LabelGroupName: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Rating: LabelRatingType,  # (1)
+    ClientToken: str,
+    FaultCode: str = ...,
+    Notes: str = ...,
+    Equipment: str = ...,
+) -> CreateLabelResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: LabelRatingType](./literals.md#labelratingtype) 
+2. See [:material-code-braces: CreateLabelResponseTypeDef](./type_defs.md#createlabelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLabelRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+    "Rating": ...,
+    "ClientToken": ...,
+}
+
+parent.create_label(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLabelRequestRequestTypeDef](./type_defs.md#createlabelrequestrequesttypedef) 
+
+### create\_label\_group
+
+Creates a group of labels.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").create_label_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_label_group)
+
+```python title="Method definition"
+def create_label_group(
+    self,
+    *,
+    LabelGroupName: str,
+    ClientToken: str,
+    FaultCodes: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateLabelGroupResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateLabelGroupResponseTypeDef](./type_defs.md#createlabelgroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLabelGroupRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+    "ClientToken": ...,
+}
+
+parent.create_label_group(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLabelGroupRequestRequestTypeDef](./type_defs.md#createlabelgrouprequestrequesttypedef) 
+
 ### create\_model
 
 Creates an ML model for data inference.
@@ -275,6 +350,66 @@ parent.delete_inference_scheduler(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteInferenceSchedulerRequestRequestTypeDef](./type_defs.md#deleteinferenceschedulerrequestrequesttypedef) 
+
+### delete\_label
+
+Deletes a label.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").delete_label` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_label)
+
+```python title="Method definition"
+def delete_label(
+    self,
+    *,
+    LabelGroupName: str,
+    LabelId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLabelRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+    "LabelId": ...,
+}
+
+parent.delete_label(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLabelRequestRequestTypeDef](./type_defs.md#deletelabelrequestrequesttypedef) 
+
+### delete\_label\_group
+
+Deletes a group of labels.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").delete_label_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_label_group)
+
+```python title="Method definition"
+def delete_label_group(
+    self,
+    *,
+    LabelGroupName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLabelGroupRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+}
+
+parent.delete_label_group(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLabelGroupRequestRequestTypeDef](./type_defs.md#deletelabelgrouprequestrequesttypedef) 
 
 ### delete\_model
 
@@ -395,6 +530,66 @@ parent.describe_inference_scheduler(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeInferenceSchedulerRequestRequestTypeDef](./type_defs.md#describeinferenceschedulerrequestrequesttypedef) 
+
+### describe\_label
+
+Returns the name of the label.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_label` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_label)
+
+```python title="Method definition"
+def describe_label(
+    self,
+    *,
+    LabelGroupName: str,
+    LabelId: str,
+) -> DescribeLabelResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeLabelResponseTypeDef](./type_defs.md#describelabelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLabelRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+    "LabelId": ...,
+}
+
+parent.describe_label(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLabelRequestRequestTypeDef](./type_defs.md#describelabelrequestrequesttypedef) 
+
+### describe\_label\_group
+
+Returns information about the label group.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_label_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_label_group)
+
+```python title="Method definition"
+def describe_label_group(
+    self,
+    *,
+    LabelGroupName: str,
+) -> DescribeLabelGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeLabelGroupResponseTypeDef](./type_defs.md#describelabelgroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLabelGroupRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+}
+
+parent.describe_label_group(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLabelGroupRequestRequestTypeDef](./type_defs.md#describelabelgrouprequestrequesttypedef) 
 
 ### describe\_model
 
@@ -616,6 +811,72 @@ parent.list_inference_schedulers(**kwargs)
 ```
 
 1. See [:material-code-braces: ListInferenceSchedulersRequestRequestTypeDef](./type_defs.md#listinferenceschedulersrequestrequesttypedef) 
+
+### list\_label\_groups
+
+Returns a list of the label groups.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_label_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_label_groups)
+
+```python title="Method definition"
+def list_label_groups(
+    self,
+    *,
+    LabelGroupNameBeginsWith: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLabelGroupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListLabelGroupsResponseTypeDef](./type_defs.md#listlabelgroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLabelGroupsRequestRequestTypeDef = {  # (1)
+    "LabelGroupNameBeginsWith": ...,
+}
+
+parent.list_label_groups(**kwargs)
+```
+
+1. See [:material-code-braces: ListLabelGroupsRequestRequestTypeDef](./type_defs.md#listlabelgroupsrequestrequesttypedef) 
+
+### list\_labels
+
+Provides a list of labels.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_labels)
+
+```python title="Method definition"
+def list_labels(
+    self,
+    *,
+    LabelGroupName: str,
+    IntervalStartTime: Union[datetime, str] = ...,
+    IntervalEndTime: Union[datetime, str] = ...,
+    FaultCode: str = ...,
+    Equipment: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLabelsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListLabelsResponseTypeDef](./type_defs.md#listlabelsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLabelsRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+}
+
+parent.list_labels(**kwargs)
+```
+
+1. See [:material-code-braces: ListLabelsRequestRequestTypeDef](./type_defs.md#listlabelsrequestrequesttypedef) 
 
 ### list\_models
 
@@ -905,6 +1166,36 @@ parent.update_inference_scheduler(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#updateinferenceschedulerrequestrequesttypedef) 
+
+### update\_label\_group
+
+Updates the label group.
+
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").update_label_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_label_group)
+
+```python title="Method definition"
+def update_label_group(
+    self,
+    *,
+    LabelGroupName: str,
+    FaultCodes: Sequence[str] = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateLabelGroupRequestRequestTypeDef = {  # (1)
+    "LabelGroupName": ...,
+}
+
+parent.update_label_group(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateLabelGroupRequestRequestTypeDef](./type_defs.md#updatelabelgrouprequestrequesttypedef) 
 
 
 

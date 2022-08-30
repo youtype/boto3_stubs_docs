@@ -37109,6 +37109,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#inferenceexecutionstatustype">InferenceExecutionStatusType</a></li>
 <li><a href="literals/#inferenceschedulerstatustype">InferenceSchedulerStatusType</a></li>
 <li><a href="literals/#ingestionjobstatustype">IngestionJobStatusType</a></li>
+<li><a href="literals/#labelratingtype">LabelRatingType</a></li>
+<li><a href="literals/#latestinferenceresulttype">LatestInferenceResultType</a></li>
 <li><a href="literals/#modelstatustype">ModelStatusType</a></li>
 <li><a href="literals/#monotonicitytype">MonotonicityType</a></li>
 <li><a href="literals/#statisticalissuestatustype">StatisticalIssueStatusType</a></li>
@@ -37133,6 +37135,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#datasetschematypedef">DatasetSchemaTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#createlabelrequestrequesttypedef">CreateLabelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datapreprocessingconfigurationtypedef">DataPreProcessingConfigurationTypeDef</a></li>
 <li><a href="type_defs/#duplicatetimestampstypedef">DuplicateTimestampsTypeDef</a></li>
 <li><a href="type_defs/#invalidsensordatatypedef">InvalidSensorDataTypeDef</a></li>
@@ -37141,10 +37144,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#datasetsummarytypedef">DatasetSummaryTypeDef</a></li>
 <li><a href="type_defs/#deletedatasetrequestrequesttypedef">DeleteDatasetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteinferenceschedulerrequestrequesttypedef">DeleteInferenceSchedulerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletelabelgrouprequestrequesttypedef">DeleteLabelGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletelabelrequestrequesttypedef">DeleteLabelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemodelrequestrequesttypedef">DeleteModelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedataingestionjobrequestrequesttypedef">DescribeDataIngestionJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedatasetrequestrequesttypedef">DescribeDatasetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeinferenceschedulerrequestrequesttypedef">DescribeInferenceSchedulerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describelabelgrouprequestrequesttypedef">DescribeLabelGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describelabelrequestrequesttypedef">DescribeLabelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describemodelrequestrequesttypedef">DescribeModelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#inferenceeventsummarytypedef">InferenceEventSummaryTypeDef</a></li>
 <li><a href="type_defs/#s3objecttypedef">S3ObjectTypeDef</a></li>
@@ -37155,6 +37162,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#ingestions3inputconfigurationtypedef">IngestionS3InputConfigurationTypeDef</a></li>
 <li><a href="type_defs/#missingcompletesensordatatypedef">MissingCompleteSensorDataTypeDef</a></li>
 <li><a href="type_defs/#sensorswithshortdaterangetypedef">SensorsWithShortDateRangeTypeDef</a></li>
+<li><a href="type_defs/#labelgroupsummarytypedef">LabelGroupSummaryTypeDef</a></li>
+<li><a href="type_defs/#labelsummarytypedef">LabelSummaryTypeDef</a></li>
 <li><a href="type_defs/#labelss3inputconfigurationtypedef">LabelsS3InputConfigurationTypeDef</a></li>
 <li><a href="type_defs/#largetimestampgapstypedef">LargeTimestampGapsTypeDef</a></li>
 <li><a href="type_defs/#listdataingestionjobsrequestrequesttypedef">ListDataIngestionJobsRequestRequestTypeDef</a></li>
@@ -37162,6 +37171,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listinferenceeventsrequestrequesttypedef">ListInferenceEventsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinferenceexecutionsrequestrequesttypedef">ListInferenceExecutionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinferenceschedulersrequestrequesttypedef">ListInferenceSchedulersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listlabelgroupsrequestrequesttypedef">ListLabelGroupsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listlabelsrequestrequesttypedef">ListLabelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listmodelsrequestrequesttypedef">ListModelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#modelsummarytypedef">ModelSummaryTypeDef</a></li>
 <li><a href="type_defs/#listsensorstatisticsrequestrequesttypedef">ListSensorStatisticsRequestRequestTypeDef</a></li>
@@ -37171,11 +37182,17 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#startinferenceschedulerrequestrequesttypedef">StartInferenceSchedulerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopinferenceschedulerrequestrequesttypedef">StopInferenceSchedulerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatelabelgrouprequestrequesttypedef">UpdateLabelGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdatasetrequestrequesttypedef">CreateDatasetRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createlabelgrouprequestrequesttypedef">CreateLabelGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdatasetresponsetypedef">CreateDatasetResponseTypeDef</a></li>
 <li><a href="type_defs/#createinferenceschedulerresponsetypedef">CreateInferenceSchedulerResponseTypeDef</a></li>
+<li><a href="type_defs/#createlabelgroupresponsetypedef">CreateLabelGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#createlabelresponsetypedef">CreateLabelResponseTypeDef</a></li>
 <li><a href="type_defs/#createmodelresponsetypedef">CreateModelResponseTypeDef</a></li>
+<li><a href="type_defs/#describelabelgroupresponsetypedef">DescribeLabelGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#describelabelresponsetypedef">DescribeLabelResponseTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#startdataingestionjobresponsetypedef">StartDataIngestionJobResponseTypeDef</a></li>
@@ -37189,6 +37206,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listinferenceschedulersresponsetypedef">ListInferenceSchedulersResponseTypeDef</a></li>
 <li><a href="type_defs/#ingestioninputconfigurationtypedef">IngestionInputConfigurationTypeDef</a></li>
 <li><a href="type_defs/#insufficientsensordatatypedef">InsufficientSensorDataTypeDef</a></li>
+<li><a href="type_defs/#listlabelgroupsresponsetypedef">ListLabelGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#listlabelsresponsetypedef">ListLabelsResponseTypeDef</a></li>
 <li><a href="type_defs/#labelsinputconfigurationtypedef">LabelsInputConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listmodelsresponsetypedef">ListModelsResponseTypeDef</a></li>
 <li><a href="type_defs/#sensorstatisticssummarytypedef">SensorStatisticsSummaryTypeDef</a></li>

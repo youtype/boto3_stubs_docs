@@ -22,6 +22,27 @@ AdminStatusType = Literal[
     "ENABLED",
 ]
 ```
+## AllowListStatusCodeType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import AllowListStatusCodeType
+
+def get_value() -> AllowListStatusCodeType:
+    return "OK"
+```
+
+```python title="Definition"
+AllowListStatusCodeType = Literal[
+    "OK",
+    "S3_OBJECT_ACCESS_DENIED",
+    "S3_OBJECT_EMPTY",
+    "S3_OBJECT_NOT_FOUND",
+    "S3_OBJECT_OVERSIZE",
+    "S3_THROTTLED",
+    "S3_USER_ACCESS_DENIED",
+    "UNKNOWN_ERROR",
+]
+```
 ## AllowsUnencryptedObjectUploadsType
 
 ```python title="Usage Example"

@@ -97,6 +97,63 @@ class AdminAccountTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AdminStatusType](./literals.md#adminstatustype) 
+## S3WordsListTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import S3WordsListTypeDef
+
+def get_value() -> S3WordsListTypeDef:
+    return {
+        "bucketName": ...,
+        "objectKey": ...,
+    }
+```
+
+```python title="Definition"
+class S3WordsListTypeDef(TypedDict):
+    bucketName: str,
+    objectKey: str,
+```
+
+## AllowListStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import AllowListStatusTypeDef
+
+def get_value() -> AllowListStatusTypeDef:
+    return {
+        "code": ...,
+    }
+```
+
+```python title="Definition"
+class AllowListStatusTypeDef(TypedDict):
+    code: AllowListStatusCodeType,  # (1)
+    description: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AllowListStatusCodeType](./literals.md#allowliststatuscodetype) 
+## AllowListSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import AllowListSummaryTypeDef
+
+def get_value() -> AllowListSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class AllowListSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    description: NotRequired[str],
+    id: NotRequired[str],
+    name: NotRequired[str],
+    updatedAt: NotRequired[datetime],
+```
+
 ## ApiCallDetailsTypeDef
 
 ```python title="Usage Example"
@@ -660,6 +717,23 @@ class DeclineInvitationsRequestRequestTypeDef(TypedDict):
     accountIds: Sequence[str],
 ```
 
+## DeleteAllowListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import DeleteAllowListRequestRequestTypeDef
+
+def get_value() -> DeleteAllowListRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAllowListRequestRequestTypeDef(TypedDict):
+    id: str,
+    ignoreJobChecks: NotRequired[str],
+```
+
 ## DeleteCustomDataIdentifierRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -989,6 +1063,22 @@ class InvitationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
+## GetAllowListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetAllowListRequestRequestTypeDef
+
+def get_value() -> GetAllowListRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetAllowListRequestRequestTypeDef(TypedDict):
+    id: str,
+```
+
 ## GetBucketStatisticsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1405,6 +1495,23 @@ def get_value() -> S3BucketDefinitionForJobTypeDef:
 class S3BucketDefinitionForJobTypeDef(TypedDict):
     accountId: str,
     buckets: Sequence[str],
+```
+
+## ListAllowListsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListAllowListsRequestRequestTypeDef
+
+def get_value() -> ListAllowListsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListAllowListsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
 ```
 
 ## ListJobsSortCriteriaTypeDef
@@ -2006,6 +2113,24 @@ class AccountLevelPermissionsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef) 
+## AllowListCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import AllowListCriteriaTypeDef
+
+def get_value() -> AllowListCriteriaTypeDef:
+    return {
+        "regex": ...,
+    }
+```
+
+```python title="Definition"
+class AllowListCriteriaTypeDef(TypedDict):
+    regex: NotRequired[str],
+    s3WordsList: NotRequired[S3WordsListTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3WordsListTypeDef](./type_defs.md#s3wordslisttypedef) 
 ## FindingActionTypeDef
 
 ```python title="Usage Example"
@@ -2047,6 +2172,27 @@ class BatchGetCustomDataIdentifiersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BatchGetCustomDataIdentifierSummaryTypeDef](./type_defs.md#batchgetcustomdataidentifiersummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAllowListResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import CreateAllowListResponseTypeDef
+
+def get_value() -> CreateAllowListResponseTypeDef:
+    return {
+        "arn": ...,
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAllowListResponseTypeDef(TypedDict):
+    arn: str,
+    id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClassificationJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -2255,6 +2401,28 @@ class GetSensitiveDataOccurrencesAvailabilityResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: AvailabilityCodeType](./literals.md#availabilitycodetype) 
 2. See [:material-code-brackets: UnavailabilityReasonCodeType](./literals.md#unavailabilityreasoncodetype) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAllowListsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListAllowListsResponseTypeDef
+
+def get_value() -> ListAllowListsResponseTypeDef:
+    return {
+        "allowLists": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAllowListsResponseTypeDef(TypedDict):
+    allowLists: List[AllowListSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AllowListSummaryTypeDef](./type_defs.md#allowlistsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFindingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2332,6 +2500,27 @@ def get_value() -> TestCustomDataIdentifierResponseTypeDef:
 ```python title="Definition"
 class TestCustomDataIdentifierResponseTypeDef(TypedDict):
     matchCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAllowListResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateAllowListResponseTypeDef
+
+def get_value() -> UpdateAllowListResponseTypeDef:
+    return {
+        "arn": ...,
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAllowListResponseTypeDef(TypedDict):
+    arn: str,
+    id: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -3359,6 +3548,88 @@ class TagScopeTermTypeDef(TypedDict):
 1. See [:material-code-brackets: JobComparatorType](./literals.md#jobcomparatortype) 
 2. See [:material-code-braces: TagValuePairTypeDef](./type_defs.md#tagvaluepairtypedef) 
 3. See [:material-code-brackets: TagTargetType](./literals.md#tagtargettype) 
+## CreateAllowListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import CreateAllowListRequestRequestTypeDef
+
+def get_value() -> CreateAllowListRequestRequestTypeDef:
+    return {
+        "clientToken": ...,
+        "criteria": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAllowListRequestRequestTypeDef(TypedDict):
+    clientToken: str,
+    criteria: AllowListCriteriaTypeDef,  # (1)
+    name: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: AllowListCriteriaTypeDef](./type_defs.md#allowlistcriteriatypedef) 
+## GetAllowListResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetAllowListResponseTypeDef
+
+def get_value() -> GetAllowListResponseTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "criteria": ...,
+        "description": ...,
+        "id": ...,
+        "name": ...,
+        "status": ...,
+        "tags": ...,
+        "updatedAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAllowListResponseTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    criteria: AllowListCriteriaTypeDef,  # (1)
+    description: str,
+    id: str,
+    name: str,
+    status: AllowListStatusTypeDef,  # (2)
+    tags: Dict[str, str],
+    updatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AllowListCriteriaTypeDef](./type_defs.md#allowlistcriteriatypedef) 
+2. See [:material-code-braces: AllowListStatusTypeDef](./type_defs.md#allowliststatustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAllowListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateAllowListRequestRequestTypeDef
+
+def get_value() -> UpdateAllowListRequestRequestTypeDef:
+    return {
+        "criteria": ...,
+        "id": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAllowListRequestRequestTypeDef(TypedDict):
+    criteria: AllowListCriteriaTypeDef,  # (1)
+    id: str,
+    name: str,
+    description: NotRequired[str],
+```
+
+1. See [:material-code-braces: AllowListCriteriaTypeDef](./type_defs.md#allowlistcriteriatypedef) 
 ## BucketPermissionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4406,6 +4677,7 @@ class CreateClassificationJobRequestRequestTypeDef(TypedDict):
     jobType: JobTypeType,  # (1)
     name: str,
     s3JobDefinition: S3JobDefinitionTypeDef,  # (2)
+    allowListIds: NotRequired[Sequence[str]],
     customDataIdentifierIds: NotRequired[Sequence[str]],
     description: NotRequired[str],
     initialRun: NotRequired[bool],
@@ -4427,6 +4699,7 @@ from mypy_boto3_macie2.type_defs import DescribeClassificationJobResponseTypeDef
 
 def get_value() -> DescribeClassificationJobResponseTypeDef:
     return {
+        "allowListIds": ...,
         "clientToken": ...,
         "createdAt": ...,
         "customDataIdentifierIds": ...,
@@ -4453,6 +4726,7 @@ def get_value() -> DescribeClassificationJobResponseTypeDef:
 
 ```python title="Definition"
 class DescribeClassificationJobResponseTypeDef(TypedDict):
+    allowListIds: List[str],
     clientToken: str,
     createdAt: datetime,
     customDataIdentifierIds: List[str],

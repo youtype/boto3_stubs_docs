@@ -90,7 +90,7 @@ parent.attach_customer_managed_policy_reference_to_permission_set(**kwargs)
 
 ### attach\_managed\_policy\_to\_permission\_set
 
-Attaches an Amazon Web Services managed policy ARN to a permission set.
+Attaches an AWS managed policy ARN to a permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
@@ -153,8 +153,8 @@ def close(
 
 ### create\_account\_assignment
 
-Assigns access to a principal for a specified Amazon Web Services account using
-a specified permission set.
+Assigns access to a principal for a specified AWS account using a specified
+permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").create_account_assignment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
@@ -195,8 +195,8 @@ parent.create_account_assignment(**kwargs)
 
 ### create\_instance\_access\_control\_attribute\_configuration
 
-Enables the attributes-based access control (ABAC) feature for the specified
-Amazon Web Services SSO instance.
+Enables the attributes-based access control (ABAC) feature for the specified IAM
+Identity Center instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").create_instance_access_control_attribute_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
@@ -227,7 +227,7 @@ parent.create_instance_access_control_attribute_configuration(**kwargs)
 
 ### create\_permission\_set
 
-Creates a permission set within a specified Amazon Web Services SSO instance.
+Creates a permission set within a specified IAM Identity Center instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").create_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
@@ -263,8 +263,8 @@ parent.create_permission_set(**kwargs)
 
 ### delete\_account\_assignment
 
-Deletes a principal's access from a specified Amazon Web Services account using
-a specified permission set.
+Deletes a principal's access from a specified AWS account using a specified
+permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").delete_account_assignment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
@@ -336,8 +336,8 @@ parent.delete_inline_policy_from_permission_set(**kwargs)
 ### delete\_instance\_access\_control\_attribute\_configuration
 
 Disables the attributes-based access control (ABAC) feature for the specified
-Amazon Web Services SSO instance and deletes all of the attribute mappings that
-have been configured.
+IAM Identity Center instance and deletes all of the attribute mappings that have
+been configured.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").delete_instance_access_control_attribute_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
@@ -487,9 +487,9 @@ parent.describe_account_assignment_deletion_status(**kwargs)
 
 ### describe\_instance\_access\_control\_attribute\_configuration
 
-Returns the list of Amazon Web Services SSO identity store attributes that have
-been configured to work with attributes-based access control (ABAC) for the
-specified Amazon Web Services SSO instance.
+Returns the list of IAM Identity Center identity store attributes that have been
+configured to work with attributes-based access control (ABAC) for the specified
+IAM Identity Center instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").describe_instance_access_control_attribute_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
@@ -614,8 +614,7 @@ parent.detach_customer_managed_policy_reference_from_permission_set(**kwargs)
 
 ### detach\_managed\_policy\_from\_permission\_set
 
-Detaches the attached Amazon Web Services managed policy ARN from the specified
-permission set.
+Detaches the attached AWS managed policy ARN from the specified permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
@@ -728,8 +727,8 @@ parent.get_permissions_boundary_for_permission_set(**kwargs)
 
 ### list\_account\_assignment\_creation\_status
 
-Lists the status of the Amazon Web Services account assignment creation requests
-for a specified Amazon Web Services SSO instance.
+Lists the status of the AWS account assignment creation requests for a specified
+IAM Identity Center instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignment_creation_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
@@ -762,8 +761,8 @@ parent.list_account_assignment_creation_status(**kwargs)
 
 ### list\_account\_assignment\_deletion\_status
 
-Lists the status of the Amazon Web Services account assignment deletion requests
-for a specified Amazon Web Services SSO instance.
+Lists the status of the AWS account assignment deletion requests for a specified
+IAM Identity Center instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignment_deletion_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
@@ -796,8 +795,8 @@ parent.list_account_assignment_deletion_status(**kwargs)
 
 ### list\_account\_assignments
 
-Lists the assignee of the specified Amazon Web Services account with the
-specified permission set.
+Lists the assignee of the specified AWS account with the specified permission
+set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignments` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
@@ -832,8 +831,7 @@ parent.list_account_assignments(**kwargs)
 
 ### list\_accounts\_for\_provisioned\_permission\_set
 
-Lists all the Amazon Web Services accounts where the specified permission set is
-provisioned.
+Lists all the AWS accounts where the specified permission set is provisioned.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_accounts_for_provisioned_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
@@ -901,7 +899,7 @@ parent.list_customer_managed_policy_references_in_permission_set(**kwargs)
 
 ### list\_instances
 
-Lists the Amazon Web Services SSO instances that the caller has access to.
+Lists the IAM Identity Center instances that the caller has access to.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
@@ -931,8 +929,7 @@ parent.list_instances(**kwargs)
 
 ### list\_managed\_policies\_in\_permission\_set
 
-Lists the Amazon Web Services managed policy that is attached to a specified
-permission set.
+Lists the AWS managed policy that is attached to a specified permission set.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
@@ -965,8 +962,8 @@ parent.list_managed_policies_in_permission_set(**kwargs)
 
 ### list\_permission\_set\_provisioning\_status
 
-Lists the status of the permission set provisioning requests for a specified
-Amazon Web Services SSO instance.
+Lists the status of the permission set provisioning requests for a specified IAM
+Identity Center instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_set_provisioning_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
@@ -999,7 +996,7 @@ parent.list_permission_set_provisioning_status(**kwargs)
 
 ### list\_permission\_sets
 
-Lists the  PermissionSet s in an Amazon Web Services SSO instance.
+Lists the  PermissionSet s in an IAM Identity Center instance.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_sets` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
@@ -1030,8 +1027,7 @@ parent.list_permission_sets(**kwargs)
 
 ### list\_permission\_sets\_provisioned\_to\_account
 
-Lists all the permission sets that are provisioned to a specified Amazon Web
-Services account.
+Lists all the permission sets that are provisioned to a specified AWS account.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
@@ -1166,8 +1162,8 @@ parent.put_inline_policy_to_permission_set(**kwargs)
 
 ### put\_permissions\_boundary\_to\_permission\_set
 
-Attaches an Amazon Web Services managed or customer managed policy to the
-specified  PermissionSet as a permissions boundary.
+Attaches an AWS managed or customer managed policy to the specified
+PermissionSet as a permissions boundary.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").put_permissions_boundary_to_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_permissions_boundary_to_permission_set)
@@ -1265,9 +1261,8 @@ parent.untag_resource(**kwargs)
 
 ### update\_instance\_access\_control\_attribute\_configuration
 
-Updates the Amazon Web Services SSO identity store attributes that you can use
-with the Amazon Web Services SSO instance for attributes-based access control
-(ABAC).
+Updates the IAM Identity Center identity store attributes that you can use with
+the IAM Identity Center instance for attributes-based access control (ABAC).
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").update_instance_access_control_attribute_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
