@@ -196,6 +196,7 @@ def create_recording_configuration(
     *,
     destinationConfiguration: DestinationConfigurationTypeDef,  # (1)
     name: str = ...,
+    recordingReconnectWindowSeconds: int = ...,
     tags: Mapping[str, str] = ...,
     thumbnailConfiguration: ThumbnailConfigurationTypeDef = ...,  # (2)
 ) -> CreateRecordingConfigurationResponseTypeDef:  # (3)

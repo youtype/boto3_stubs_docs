@@ -14,17 +14,17 @@ from mypy_boto3_rds_data.type_defs import ArrayValueTypeDef
 
 def get_value() -> ArrayValueTypeDef:
     return {
-        "arrayValues": ...,
+        "booleanValues": ...,
     }
 ```
 
 ```python title="Definition"
 class ArrayValueTypeDef(TypedDict):
-    arrayValues: NotRequired[Sequence[ArrayValueTypeDef]],  # (1)
     booleanValues: NotRequired[Sequence[bool]],
-    doubleValues: NotRequired[Sequence[float]],
     longValues: NotRequired[Sequence[int]],
+    doubleValues: NotRequired[Sequence[float]],
     stringValues: NotRequired[Sequence[str]],
+    arrayValues: NotRequired[Sequence[ArrayValueTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: ArrayValueTypeDef](./type_defs.md#arrayvaluetypedef) 
@@ -79,26 +79,26 @@ from mypy_boto3_rds_data.type_defs import ColumnMetadataTypeDef
 
 def get_value() -> ColumnMetadataTypeDef:
     return {
-        "arrayBaseColumnType": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
 class ColumnMetadataTypeDef(TypedDict):
-    arrayBaseColumnType: NotRequired[int],
-    isAutoIncrement: NotRequired[bool],
-    isCaseSensitive: NotRequired[bool],
-    isCurrency: NotRequired[bool],
-    isSigned: NotRequired[bool],
-    label: NotRequired[str],
     name: NotRequired[str],
+    type: NotRequired[int],
+    typeName: NotRequired[str],
+    label: NotRequired[str],
+    schemaName: NotRequired[str],
+    tableName: NotRequired[str],
+    isAutoIncrement: NotRequired[bool],
+    isSigned: NotRequired[bool],
+    isCurrency: NotRequired[bool],
+    isCaseSensitive: NotRequired[bool],
     nullable: NotRequired[int],
     precision: NotRequired[int],
     scale: NotRequired[int],
-    schemaName: NotRequired[str],
-    tableName: NotRequired[str],
-    type: NotRequired[int],
-    typeName: NotRequired[str],
+    arrayBaseColumnType: NotRequired[int],
 ```
 
 ## CommitTransactionRequestRequestTypeDef
@@ -128,16 +128,16 @@ from mypy_boto3_rds_data.type_defs import ExecuteSqlRequestRequestTypeDef
 
 def get_value() -> ExecuteSqlRequestRequestTypeDef:
     return {
-        "awsSecretStoreArn": ...,
         "dbClusterOrInstanceArn": ...,
+        "awsSecretStoreArn": ...,
         "sqlStatements": ...,
     }
 ```
 
 ```python title="Definition"
 class ExecuteSqlRequestRequestTypeDef(TypedDict):
-    awsSecretStoreArn: str,
     dbClusterOrInstanceArn: str,
+    awsSecretStoreArn: str,
     sqlStatements: str,
     database: NotRequired[str],
     schema: NotRequired[str],
@@ -169,19 +169,19 @@ from mypy_boto3_rds_data.type_defs import FieldTypeDef
 
 def get_value() -> FieldTypeDef:
     return {
-        "arrayValue": ...,
+        "isNull": ...,
     }
 ```
 
 ```python title="Definition"
 class FieldTypeDef(TypedDict):
-    arrayValue: NotRequired[ArrayValueTypeDef],  # (1)
-    blobValue: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
-    booleanValue: NotRequired[bool],
-    doubleValue: NotRequired[float],
     isNull: NotRequired[bool],
+    booleanValue: NotRequired[bool],
     longValue: NotRequired[int],
+    doubleValue: NotRequired[float],
     stringValue: NotRequired[str],
+    blobValue: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    arrayValue: NotRequired[ArrayValueTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: ArrayValueTypeDef](./type_defs.md#arrayvaluetypedef) 
@@ -246,21 +246,21 @@ from mypy_boto3_rds_data.type_defs import ValueTypeDef
 
 def get_value() -> ValueTypeDef:
     return {
-        "arrayValues": ...,
+        "isNull": ...,
     }
 ```
 
 ```python title="Definition"
 class ValueTypeDef(TypedDict):
-    arrayValues: NotRequired[List[ValueTypeDef]],  # (1)
-    bigIntValue: NotRequired[int],
-    bitValue: NotRequired[bool],
-    blobValue: NotRequired[bytes],
-    doubleValue: NotRequired[float],
-    intValue: NotRequired[int],
     isNull: NotRequired[bool],
+    bitValue: NotRequired[bool],
+    bigIntValue: NotRequired[int],
+    intValue: NotRequired[int],
+    doubleValue: NotRequired[float],
     realValue: NotRequired[float],
     stringValue: NotRequired[str],
+    blobValue: NotRequired[bytes],
+    arrayValues: NotRequired[List[ValueTypeDef]],  # (1)
     structValue: NotRequired[StructValueTypeDef],  # (2)
 ```
 
@@ -348,27 +348,27 @@ from mypy_boto3_rds_data.type_defs import ExecuteStatementResponseTypeDef
 
 def get_value() -> ExecuteStatementResponseTypeDef:
     return {
-        "columnMetadata": ...,
-        "formattedRecords": ...,
-        "generatedFields": ...,
-        "numberOfRecordsUpdated": ...,
         "records": ...,
+        "columnMetadata": ...,
+        "numberOfRecordsUpdated": ...,
+        "generatedFields": ...,
+        "formattedRecords": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
 class ExecuteStatementResponseTypeDef(TypedDict):
-    columnMetadata: List[ColumnMetadataTypeDef],  # (1)
-    formattedRecords: str,
-    generatedFields: List[FieldTypeDef],  # (2)
+    records: List[List[FieldTypeDef]],  # (1)
+    columnMetadata: List[ColumnMetadataTypeDef],  # (2)
     numberOfRecordsUpdated: int,
-    records: List[List[FieldTypeDef]],  # (3)
+    generatedFields: List[FieldTypeDef],  # (3)
+    formattedRecords: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef) 
-2. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+1. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+2. See [:material-code-braces: ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef) 
 3. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SqlParameterTypeDef
@@ -385,12 +385,12 @@ def get_value() -> SqlParameterTypeDef:
 ```python title="Definition"
 class SqlParameterTypeDef(TypedDict):
     name: NotRequired[str],
-    typeHint: NotRequired[TypeHintType],  # (1)
-    value: NotRequired[FieldTypeDef],  # (2)
+    value: NotRequired[FieldTypeDef],  # (1)
+    typeHint: NotRequired[TypeHintType],  # (2)
 ```
 
-1. See [:material-code-brackets: TypeHintType](./literals.md#typehinttype) 
-2. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+1. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+2. See [:material-code-brackets: TypeHintType](./literals.md#typehinttype) 
 ## UpdateResultTypeDef
 
 ```python title="Usage Example"
@@ -415,18 +415,18 @@ from mypy_boto3_rds_data.type_defs import ResultFrameTypeDef
 
 def get_value() -> ResultFrameTypeDef:
     return {
-        "records": ...,
+        "resultSetMetadata": ...,
     }
 ```
 
 ```python title="Definition"
 class ResultFrameTypeDef(TypedDict):
-    records: NotRequired[List[RecordTypeDef]],  # (1)
-    resultSetMetadata: NotRequired[ResultSetMetadataTypeDef],  # (2)
+    resultSetMetadata: NotRequired[ResultSetMetadataTypeDef],  # (1)
+    records: NotRequired[List[RecordTypeDef]],  # (2)
 ```
 
-1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
-2. See [:material-code-braces: ResultSetMetadataTypeDef](./type_defs.md#resultsetmetadatatypedef) 
+1. See [:material-code-braces: ResultSetMetadataTypeDef](./type_defs.md#resultsetmetadatatypedef) 
+2. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
 ## BatchExecuteStatementRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -446,8 +446,8 @@ class BatchExecuteStatementRequestRequestTypeDef(TypedDict):
     secretArn: str,
     sql: str,
     database: NotRequired[str],
-    parameterSets: NotRequired[Sequence[Sequence[SqlParameterTypeDef]]],  # (1)
     schema: NotRequired[str],
+    parameterSets: NotRequired[Sequence[Sequence[SqlParameterTypeDef]]],  # (1)
     transactionId: NotRequired[str],
 ```
 
@@ -470,19 +470,19 @@ class ExecuteStatementRequestRequestTypeDef(TypedDict):
     resourceArn: str,
     secretArn: str,
     sql: str,
-    continueAfterTimeout: NotRequired[bool],
     database: NotRequired[str],
-    formatRecordsAs: NotRequired[RecordsFormatTypeType],  # (1)
-    includeResultMetadata: NotRequired[bool],
-    parameters: NotRequired[Sequence[SqlParameterTypeDef]],  # (2)
-    resultSetOptions: NotRequired[ResultSetOptionsTypeDef],  # (3)
     schema: NotRequired[str],
+    parameters: NotRequired[Sequence[SqlParameterTypeDef]],  # (1)
     transactionId: NotRequired[str],
+    includeResultMetadata: NotRequired[bool],
+    continueAfterTimeout: NotRequired[bool],
+    resultSetOptions: NotRequired[ResultSetOptionsTypeDef],  # (2)
+    formatRecordsAs: NotRequired[RecordsFormatTypeType],  # (3)
 ```
 
-1. See [:material-code-brackets: RecordsFormatTypeType](./literals.md#recordsformattypetype) 
-2. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
-3. See [:material-code-braces: ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef) 
+1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+2. See [:material-code-braces: ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef) 
+3. See [:material-code-brackets: RecordsFormatTypeType](./literals.md#recordsformattypetype) 
 ## BatchExecuteStatementResponseTypeDef
 
 ```python title="Usage Example"
@@ -510,14 +510,14 @@ from mypy_boto3_rds_data.type_defs import SqlStatementResultTypeDef
 
 def get_value() -> SqlStatementResultTypeDef:
     return {
-        "numberOfRecordsUpdated": ...,
+        "resultFrame": ...,
     }
 ```
 
 ```python title="Definition"
 class SqlStatementResultTypeDef(TypedDict):
-    numberOfRecordsUpdated: NotRequired[int],
     resultFrame: NotRequired[ResultFrameTypeDef],  # (1)
+    numberOfRecordsUpdated: NotRequired[int],
 ```
 
 1. See [:material-code-braces: ResultFrameTypeDef](./type_defs.md#resultframetypedef) 

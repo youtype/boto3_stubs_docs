@@ -7801,6 +7801,23 @@ class RecommendationJobCompiledOutputConfigTypeDef(TypedDict):
     S3OutputUri: NotRequired[str],
 ```
 
+## RecommendationJobPayloadConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RecommendationJobPayloadConfigTypeDef
+
+def get_value() -> RecommendationJobPayloadConfigTypeDef:
+    return {
+        "SamplePayloadUrl": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationJobPayloadConfigTypeDef(TypedDict):
+    SamplePayloadUrl: NotRequired[str],
+    SupportedContentTypes: NotRequired[Sequence[str]],
+```
+
 ## RecommendationJobResourceLimitTypeDef
 
 ```python title="Usage Example"
@@ -16497,6 +16514,29 @@ class RecommendationJobOutputConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RecommendationJobCompiledOutputConfigTypeDef](./type_defs.md#recommendationjobcompiledoutputconfigtypedef) 
+## RecommendationJobContainerConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RecommendationJobContainerConfigTypeDef
+
+def get_value() -> RecommendationJobContainerConfigTypeDef:
+    return {
+        "Domain": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationJobContainerConfigTypeDef(TypedDict):
+    Domain: NotRequired[str],
+    Task: NotRequired[str],
+    Framework: NotRequired[str],
+    FrameworkVersion: NotRequired[str],
+    PayloadConfig: NotRequired[RecommendationJobPayloadConfigTypeDef],  # (1)
+    NearestModelName: NotRequired[str],
+    SupportedInstanceTypes: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: RecommendationJobPayloadConfigTypeDef](./type_defs.md#recommendationjobpayloadconfigtypedef) 
 ## RenderUiTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -18714,11 +18754,13 @@ class RecommendationJobInputConfigTypeDef(TypedDict):
     ResourceLimit: NotRequired[RecommendationJobResourceLimitTypeDef],  # (2)
     EndpointConfigurations: NotRequired[Sequence[EndpointInputConfigurationTypeDef]],  # (3)
     VolumeKmsKeyId: NotRequired[str],
+    ContainerConfig: NotRequired[RecommendationJobContainerConfigTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: TrafficPatternTypeDef](./type_defs.md#trafficpatterntypedef) 
 2. See [:material-code-braces: RecommendationJobResourceLimitTypeDef](./type_defs.md#recommendationjobresourcelimittypedef) 
 3. See [:material-code-braces: EndpointInputConfigurationTypeDef](./type_defs.md#endpointinputconfigurationtypedef) 
+4. See [:material-code-braces: RecommendationJobContainerConfigTypeDef](./type_defs.md#recommendationjobcontainerconfigtypedef) 
 ## CreateDomainRequestRequestTypeDef
 
 ```python title="Usage Example"

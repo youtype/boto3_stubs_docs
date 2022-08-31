@@ -1330,6 +1330,7 @@ def get_value() -> CreateRecordingConfigurationRequestRequestTypeDef:
 class CreateRecordingConfigurationRequestRequestTypeDef(TypedDict):
     destinationConfiguration: DestinationConfigurationTypeDef,  # (1)
     name: NotRequired[str],
+    recordingReconnectWindowSeconds: NotRequired[int],
     tags: NotRequired[Mapping[str, str]],
     thumbnailConfiguration: NotRequired[ThumbnailConfigurationTypeDef],  # (2)
 ```
@@ -1379,6 +1380,7 @@ class RecordingConfigurationTypeDef(TypedDict):
     destinationConfiguration: DestinationConfigurationTypeDef,  # (1)
     state: RecordingConfigurationStateType,  # (2)
     name: NotRequired[str],
+    recordingReconnectWindowSeconds: NotRequired[int],
     tags: NotRequired[Dict[str, str]],
     thumbnailConfiguration: NotRequired[ThumbnailConfigurationTypeDef],  # (3)
 ```

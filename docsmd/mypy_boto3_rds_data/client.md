@@ -70,8 +70,8 @@ def batch_execute_statement(
     secretArn: str,
     sql: str,
     database: str = ...,
-    parameterSets: Sequence[Sequence[SqlParameterTypeDef]] = ...,  # (1)
     schema: str = ...,
+    parameterSets: Sequence[Sequence[SqlParameterTypeDef]] = ...,  # (1)
     transactionId: str = ...,
 ) -> BatchExecuteStatementResponseTypeDef:  # (2)
     ...
@@ -202,8 +202,8 @@ Type annotations and code completion for `#!python boto3.client("rds-data").exec
 def execute_sql(
     self,
     *,
-    awsSecretStoreArn: str,
     dbClusterOrInstanceArn: str,
+    awsSecretStoreArn: str,
     sqlStatements: str,
     database: str = ...,
     schema: str = ...,
@@ -216,8 +216,8 @@ def execute_sql(
 
 ```python title="Usage example with kwargs"
 kwargs: ExecuteSqlRequestRequestTypeDef = {  # (1)
-    "awsSecretStoreArn": ...,
     "dbClusterOrInstanceArn": ...,
+    "awsSecretStoreArn": ...,
     "sqlStatements": ...,
 }
 
@@ -240,21 +240,21 @@ def execute_statement(
     resourceArn: str,
     secretArn: str,
     sql: str,
-    continueAfterTimeout: bool = ...,
     database: str = ...,
-    formatRecordsAs: RecordsFormatTypeType = ...,  # (1)
-    includeResultMetadata: bool = ...,
-    parameters: Sequence[SqlParameterTypeDef] = ...,  # (2)
-    resultSetOptions: ResultSetOptionsTypeDef = ...,  # (3)
     schema: str = ...,
+    parameters: Sequence[SqlParameterTypeDef] = ...,  # (1)
     transactionId: str = ...,
+    includeResultMetadata: bool = ...,
+    continueAfterTimeout: bool = ...,
+    resultSetOptions: ResultSetOptionsTypeDef = ...,  # (2)
+    formatRecordsAs: RecordsFormatTypeType = ...,  # (3)
 ) -> ExecuteStatementResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-brackets: RecordsFormatTypeType](./literals.md#recordsformattypetype) 
-2. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
-3. See [:material-code-braces: ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef) 
+1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+2. See [:material-code-braces: ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef) 
+3. See [:material-code-brackets: RecordsFormatTypeType](./literals.md#recordsformattypetype) 
 4. See [:material-code-braces: ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef) 
 
 

@@ -34,8 +34,10 @@ try:
 except (
     client.AccessDeniedException,
     client.ClientError,
+    client.ConflictException,
     client.InternalServerException,
     client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
     client.ThrottlingException,
     client.ValidationException,
 ) as e:
@@ -84,6 +86,207 @@ def close(
 ```
 
 
+### create\_group
+
+Creates a group within the specified identity store.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.create_group)
+
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    IdentityStoreId: str,
+    DisplayName: str = ...,
+    Description: str = ...,
+) -> CreateGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+}
+
+parent.create_group(**kwargs)
+```
+
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
+
+### create\_group\_membership
+
+Creates a relationship between a member and a group.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").create_group_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.create_group_membership)
+
+```python title="Method definition"
+def create_group_membership(
+    self,
+    *,
+    IdentityStoreId: str,
+    GroupId: str,
+    MemberId: MemberIdTypeDef,  # (1)
+) -> CreateGroupMembershipResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: MemberIdTypeDef](./type_defs.md#memberidtypedef) 
+2. See [:material-code-braces: CreateGroupMembershipResponseTypeDef](./type_defs.md#creategroupmembershipresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateGroupMembershipRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "GroupId": ...,
+    "MemberId": ...,
+}
+
+parent.create_group_membership(**kwargs)
+```
+
+1. See [:material-code-braces: CreateGroupMembershipRequestRequestTypeDef](./type_defs.md#creategroupmembershiprequestrequesttypedef) 
+
+### create\_user
+
+Creates a new user within the specified identity store.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.create_user)
+
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    IdentityStoreId: str,
+    UserName: str = ...,
+    Name: NameTypeDef = ...,  # (1)
+    DisplayName: str = ...,
+    NickName: str = ...,
+    ProfileUrl: str = ...,
+    Emails: Sequence[EmailTypeDef] = ...,  # (2)
+    Addresses: Sequence[AddressTypeDef] = ...,  # (3)
+    PhoneNumbers: Sequence[PhoneNumberTypeDef] = ...,  # (4)
+    UserType: str = ...,
+    Title: str = ...,
+    PreferredLanguage: str = ...,
+    Locale: str = ...,
+    Timezone: str = ...,
+) -> CreateUserResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: NameTypeDef](./type_defs.md#nametypedef) 
+2. See [:material-code-braces: EmailTypeDef](./type_defs.md#emailtypedef) 
+3. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+4. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+5. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+}
+
+parent.create_user(**kwargs)
+```
+
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
+
+### delete\_group
+
+Delete a group within an identity store given `GroupId` .
+
+Type annotations and code completion for `#!python boto3.client("identitystore").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.delete_group)
+
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    IdentityStoreId: str,
+    GroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "GroupId": ...,
+}
+
+parent.delete_group(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
+
+### delete\_group\_membership
+
+Delete a membership within a group given `MembershipId` .
+
+Type annotations and code completion for `#!python boto3.client("identitystore").delete_group_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.delete_group_membership)
+
+```python title="Method definition"
+def delete_group_membership(
+    self,
+    *,
+    IdentityStoreId: str,
+    MembershipId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupMembershipRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "MembershipId": ...,
+}
+
+parent.delete_group_membership(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteGroupMembershipRequestRequestTypeDef](./type_defs.md#deletegroupmembershiprequestrequesttypedef) 
+
+### delete\_user
+
+Deletes a user within an identity store given `UserId` .
+
+Type annotations and code completion for `#!python boto3.client("identitystore").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.delete_user)
+
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    IdentityStoreId: str,
+    UserId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "UserId": ...,
+}
+
+parent.delete_user(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
+
 ### describe\_group
 
 Retrieves the group metadata and attributes from `GroupId` in an identity store.
@@ -115,9 +318,41 @@ parent.describe_group(**kwargs)
 
 1. See [:material-code-braces: DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef) 
 
+### describe\_group\_membership
+
+Retrieves membership metadata and attributes from `MembershipId` in a group.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").describe_group_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group_membership)
+
+```python title="Method definition"
+def describe_group_membership(
+    self,
+    *,
+    IdentityStoreId: str,
+    MembershipId: str,
+) -> DescribeGroupMembershipResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeGroupMembershipResponseTypeDef](./type_defs.md#describegroupmembershipresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGroupMembershipRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "MembershipId": ...,
+}
+
+parent.describe_group_membership(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGroupMembershipRequestRequestTypeDef](./type_defs.md#describegroupmembershiprequestrequesttypedef) 
+
 ### describe\_user
 
-Retrieves the user metadata and attributes from `UserId` in an identity store.
+Retrieves the user metadata and attributes from the `UserId` in an identity
+store.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").describe_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_user)
@@ -165,10 +400,210 @@ def generate_presigned_url(
 ```
 
 
+### get\_group\_id
+
+Retrieves `GroupId` in an identity store.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").get_group_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.get_group_id)
+
+```python title="Method definition"
+def get_group_id(
+    self,
+    *,
+    IdentityStoreId: str,
+    AlternateIdentifier: AlternateIdentifierTypeDef,  # (1)
+) -> GetGroupIdResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: AlternateIdentifierTypeDef](./type_defs.md#alternateidentifiertypedef) 
+2. See [:material-code-braces: GetGroupIdResponseTypeDef](./type_defs.md#getgroupidresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetGroupIdRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "AlternateIdentifier": ...,
+}
+
+parent.get_group_id(**kwargs)
+```
+
+1. See [:material-code-braces: GetGroupIdRequestRequestTypeDef](./type_defs.md#getgroupidrequestrequesttypedef) 
+
+### get\_group\_membership\_id
+
+Retrieves the `MembershipId` in a group.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").get_group_membership_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.get_group_membership_id)
+
+```python title="Method definition"
+def get_group_membership_id(
+    self,
+    *,
+    IdentityStoreId: str,
+    GroupId: str,
+    MemberId: MemberIdTypeDef,  # (1)
+) -> GetGroupMembershipIdResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: MemberIdTypeDef](./type_defs.md#memberidtypedef) 
+2. See [:material-code-braces: GetGroupMembershipIdResponseTypeDef](./type_defs.md#getgroupmembershipidresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetGroupMembershipIdRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "GroupId": ...,
+    "MemberId": ...,
+}
+
+parent.get_group_membership_id(**kwargs)
+```
+
+1. See [:material-code-braces: GetGroupMembershipIdRequestRequestTypeDef](./type_defs.md#getgroupmembershipidrequestrequesttypedef) 
+
+### get\_user\_id
+
+Retrieves the `UserId` in an identity store.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").get_user_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.get_user_id)
+
+```python title="Method definition"
+def get_user_id(
+    self,
+    *,
+    IdentityStoreId: str,
+    AlternateIdentifier: AlternateIdentifierTypeDef,  # (1)
+) -> GetUserIdResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: AlternateIdentifierTypeDef](./type_defs.md#alternateidentifiertypedef) 
+2. See [:material-code-braces: GetUserIdResponseTypeDef](./type_defs.md#getuseridresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetUserIdRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "AlternateIdentifier": ...,
+}
+
+parent.get_user_id(**kwargs)
+```
+
+1. See [:material-code-braces: GetUserIdRequestRequestTypeDef](./type_defs.md#getuseridrequestrequesttypedef) 
+
+### is\_member\_in\_groups
+
+Returns if a member exists in specified groups.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").is_member_in_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.is_member_in_groups)
+
+```python title="Method definition"
+def is_member_in_groups(
+    self,
+    *,
+    IdentityStoreId: str,
+    MemberId: MemberIdTypeDef,  # (1)
+    GroupIds: Sequence[str],
+) -> IsMemberInGroupsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: MemberIdTypeDef](./type_defs.md#memberidtypedef) 
+2. See [:material-code-braces: IsMemberInGroupsResponseTypeDef](./type_defs.md#ismemberingroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: IsMemberInGroupsRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "MemberId": ...,
+    "GroupIds": ...,
+}
+
+parent.is_member_in_groups(**kwargs)
+```
+
+1. See [:material-code-braces: IsMemberInGroupsRequestRequestTypeDef](./type_defs.md#ismemberingroupsrequestrequesttypedef) 
+
+### list\_group\_memberships
+
+For the specified group in the specified identity store, returns the list of all
+`GroupMembership` objects and returns results in paginated form.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").list_group_memberships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_group_memberships)
+
+```python title="Method definition"
+def list_group_memberships(
+    self,
+    *,
+    IdentityStoreId: str,
+    GroupId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListGroupMembershipsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListGroupMembershipsResponseTypeDef](./type_defs.md#listgroupmembershipsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupMembershipsRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "GroupId": ...,
+}
+
+parent.list_group_memberships(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupMembershipsRequestRequestTypeDef](./type_defs.md#listgroupmembershipsrequestrequesttypedef) 
+
+### list\_group\_memberships\_for\_member
+
+For the specified member in the specified identity store, returns the list of
+all `GroupMembership` objects and returns results in paginated form.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").list_group_memberships_for_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_group_memberships_for_member)
+
+```python title="Method definition"
+def list_group_memberships_for_member(
+    self,
+    *,
+    IdentityStoreId: str,
+    MemberId: MemberIdTypeDef,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListGroupMembershipsForMemberResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: MemberIdTypeDef](./type_defs.md#memberidtypedef) 
+2. See [:material-code-braces: ListGroupMembershipsForMemberResponseTypeDef](./type_defs.md#listgroupmembershipsformemberresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupMembershipsForMemberRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "MemberId": ...,
+}
+
+parent.list_group_memberships_for_member(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupMembershipsForMemberRequestRequestTypeDef](./type_defs.md#listgroupmembershipsformemberrequestrequesttypedef) 
+
 ### list\_groups
 
-Lists the attribute name and value of the group that you specified in the
-search.
+*Filtering for a group by the group `DisplayName` attribute is deprecated.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").list_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
@@ -201,7 +636,7 @@ parent.list_groups(**kwargs)
 
 ### list\_users
 
-Lists the attribute name and value of the user that you specified in the search.
+*Filtering for a user by the `UserName` attribute is deprecated.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").list_users` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)
@@ -232,6 +667,84 @@ parent.list_users(**kwargs)
 
 1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
+### update\_group
+
+For the specified group in the specified identity store, updates the group
+metadata and attributes.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").update_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.update_group)
+
+```python title="Method definition"
+def update_group(
+    self,
+    *,
+    IdentityStoreId: str,
+    GroupId: str,
+    Operations: Sequence[AttributeOperationTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: AttributeOperationTypeDef](./type_defs.md#attributeoperationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateGroupRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "GroupId": ...,
+    "Operations": ...,
+}
+
+parent.update_group(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef) 
+
+### update\_user
+
+For the specified user in the specified identity store, updates the user
+metadata and attributes.
+
+Type annotations and code completion for `#!python boto3.client("identitystore").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.update_user)
+
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    IdentityStoreId: str,
+    UserId: str,
+    Operations: Sequence[AttributeOperationTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: AttributeOperationTypeDef](./type_defs.md#attributeoperationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "UserId": ...,
+    "Operations": ...,
+}
+
+parent.update_user(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+
+
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("identitystore").get_paginator` method with overloads.
+
+- `client.get_paginator("list_group_memberships")` -> [ListGroupMembershipsPaginator](./paginators.md#listgroupmembershipspaginator)
+- `client.get_paginator("list_group_memberships_for_member")` -> [ListGroupMembershipsForMemberPaginator](./paginators.md#listgroupmembershipsformemberpaginator)
+- `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
 
 
 

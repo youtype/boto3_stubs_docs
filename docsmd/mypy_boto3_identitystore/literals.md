@@ -7,6 +7,62 @@
     Auto-generated documentation for [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
     type annotations stubs module [mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
+## ListGroupMembershipsForMemberPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_identitystore.literals import ListGroupMembershipsForMemberPaginatorName
+
+def get_value() -> ListGroupMembershipsForMemberPaginatorName:
+    return "list_group_memberships_for_member"
+```
+
+```python title="Definition"
+ListGroupMembershipsForMemberPaginatorName = Literal[
+    "list_group_memberships_for_member",
+]
+```
+## ListGroupMembershipsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_identitystore.literals import ListGroupMembershipsPaginatorName
+
+def get_value() -> ListGroupMembershipsPaginatorName:
+    return "list_group_memberships"
+```
+
+```python title="Definition"
+ListGroupMembershipsPaginatorName = Literal[
+    "list_group_memberships",
+]
+```
+## ListGroupsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_identitystore.literals import ListGroupsPaginatorName
+
+def get_value() -> ListGroupsPaginatorName:
+    return "list_groups"
+```
+
+```python title="Definition"
+ListGroupsPaginatorName = Literal[
+    "list_groups",
+]
+```
+## ListUsersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_identitystore.literals import ListUsersPaginatorName
+
+def get_value() -> ListUsersPaginatorName:
+    return "list_users"
+```
+
+```python title="Definition"
+ListUsersPaginatorName = Literal[
+    "list_users",
+]
+```
 ## IdentityStoreServiceName
 
 ```python title="Usage Example"
@@ -369,6 +425,23 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_identitystore.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_group_memberships"
+```
+
+```python title="Definition"
+PaginatorName = Literal[
+    "list_group_memberships",
+    "list_group_memberships_for_member",
+    "list_groups",
+    "list_users",
 ]
 ```
 ## RegionName

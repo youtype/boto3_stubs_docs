@@ -102,7 +102,7 @@ from mypy_boto3_rds_data.type_defs import ArrayValueTypeDef
 
 def get_value() -> ArrayValueTypeDef:
     return {
-        "arrayValues": ...,
+        "booleanValues": ...,
     }
 ```
 

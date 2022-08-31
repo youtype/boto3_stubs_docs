@@ -16110,6 +16110,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -16154,6 +16161,20 @@
     <li class="md-nav__item">
       <a href="literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -37027,6 +37048,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -37096,41 +37124,102 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">IdentityStoreClient</span><span class="p">:</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;identitystore&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="literals">Literals</h2>
-<p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_identitystore.literals</span> <span class="kn">import</span> <span class="n">IdentityStoreServiceName</span>
+<h2 id="paginators">Paginators</h2>
+<p>Type annotations and code completion for <a href="paginators/">paginators</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;identitystore&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">IdentityStoreServiceName</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;identitystore&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_identitystore.paginator</span> <span class="kn">import</span> <span class="n">ListGroupMembershipsPaginator</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_group_memberships_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListGroupMembershipsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;identitystore&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_group_memberships&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#listgroupmembershipspaginator">ListGroupMembershipsPaginator</a></li>
+<li><a href="paginators/#listgroupmembershipsformemberpaginator">ListGroupMembershipsForMemberPaginator</a></li>
+<li><a href="paginators/#listgroupspaginator">ListGroupsPaginator</a></li>
+<li><a href="paginators/#listuserspaginator">ListUsersPaginator</a></li>
+</ul>
+<h2 id="literals">Literals</h2>
+<p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_identitystore.literals</span> <span class="kn">import</span> <span class="n">ListGroupMembershipsForMemberPaginatorName</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListGroupMembershipsForMemberPaginatorName</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;list_group_memberships_for_member&quot;</span>
+</code></pre></div>
+<ul>
+<li><a href="literals/#listgroupmembershipsformemberpaginatorname">ListGroupMembershipsForMemberPaginatorName</a></li>
+<li><a href="literals/#listgroupmembershipspaginatorname">ListGroupMembershipsPaginatorName</a></li>
+<li><a href="literals/#listgroupspaginatorname">ListGroupsPaginatorName</a></li>
+<li><a href="literals/#listuserspaginatorname">ListUsersPaginatorName</a></li>
 <li><a href="literals/#identitystoreservicename">IdentityStoreServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
+<li><a href="literals/#paginatorname">PaginatorName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_identitystore.type_defs</span> <span class="kn">import</span> <span class="n">DescribeGroupRequestRequestTypeDef</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeGroupRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;IdentityStoreId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;GroupId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_identitystore.type_defs</span> <span class="kn">import</span> <span class="n">AddressTypeDef</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AddressTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;StreetAddress&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
-<li><a href="type_defs/#describegrouprequestrequesttypedef">DescribeGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addresstypedef">AddressTypeDef</a></li>
+<li><a href="type_defs/#externalidtypedef">ExternalIdTypeDef</a></li>
+<li><a href="type_defs/#uniqueattributetypedef">UniqueAttributeTypeDef</a></li>
+<li><a href="type_defs/#attributeoperationtypedef">AttributeOperationTypeDef</a></li>
+<li><a href="type_defs/#memberidtypedef">MemberIdTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#creategrouprequestrequesttypedef">CreateGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#emailtypedef">EmailTypeDef</a></li>
+<li><a href="type_defs/#nametypedef">NameTypeDef</a></li>
+<li><a href="type_defs/#phonenumbertypedef">PhoneNumberTypeDef</a></li>
+<li><a href="type_defs/#deletegroupmembershiprequestrequesttypedef">DeleteGroupMembershipRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletegrouprequestrequesttypedef">DeleteGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteuserrequestrequesttypedef">DeleteUserRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describegroupmembershiprequestrequesttypedef">DescribeGroupMembershipRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describegrouprequestrequesttypedef">DescribeGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeuserrequestrequesttypedef">DescribeUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#filtertypedef">FilterTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listgroupmembershipsrequestrequesttypedef">ListGroupMembershipsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#grouptypedef">GroupTypeDef</a></li>
-<li><a href="type_defs/#usertypedef">UserTypeDef</a></li>
+<li><a href="type_defs/#alternateidentifiertypedef">AlternateIdentifierTypeDef</a></li>
+<li><a href="type_defs/#updategrouprequestrequesttypedef">UpdateGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateuserrequestrequesttypedef">UpdateUserRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#creategroupmembershiprequestrequesttypedef">CreateGroupMembershipRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getgroupmembershipidrequestrequesttypedef">GetGroupMembershipIdRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#groupmembershipexistenceresulttypedef">GroupMembershipExistenceResultTypeDef</a></li>
+<li><a href="type_defs/#groupmembershiptypedef">GroupMembershipTypeDef</a></li>
+<li><a href="type_defs/#ismemberingroupsrequestrequesttypedef">IsMemberInGroupsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listgroupmembershipsformemberrequestrequesttypedef">ListGroupMembershipsForMemberRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#creategroupmembershipresponsetypedef">CreateGroupMembershipResponseTypeDef</a></li>
+<li><a href="type_defs/#creategroupresponsetypedef">CreateGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#createuserresponsetypedef">CreateUserResponseTypeDef</a></li>
+<li><a href="type_defs/#describegroupmembershipresponsetypedef">DescribeGroupMembershipResponseTypeDef</a></li>
 <li><a href="type_defs/#describegroupresponsetypedef">DescribeGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#getgroupidresponsetypedef">GetGroupIdResponseTypeDef</a></li>
+<li><a href="type_defs/#getgroupmembershipidresponsetypedef">GetGroupMembershipIdResponseTypeDef</a></li>
+<li><a href="type_defs/#getuseridresponsetypedef">GetUserIdResponseTypeDef</a></li>
+<li><a href="type_defs/#createuserrequestrequesttypedef">CreateUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeuserresponsetypedef">DescribeUserResponseTypeDef</a></li>
+<li><a href="type_defs/#usertypedef">UserTypeDef</a></li>
 <li><a href="type_defs/#listgroupsrequestrequesttypedef">ListGroupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listusersrequestrequesttypedef">ListUsersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listgroupmembershipsformemberrequestlistgroupmembershipsformemberpaginatetypedef">ListGroupMembershipsForMemberRequestListGroupMembershipsForMemberPaginateTypeDef</a></li>
+<li><a href="type_defs/#listgroupmembershipsrequestlistgroupmembershipspaginatetypedef">ListGroupMembershipsRequestListGroupMembershipsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listgroupsrequestlistgroupspaginatetypedef">ListGroupsRequestListGroupsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listusersrequestlistuserspaginatetypedef">ListUsersRequestListUsersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listgroupsresponsetypedef">ListGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#getgroupidrequestrequesttypedef">GetGroupIdRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getuseridrequestrequesttypedef">GetUserIdRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ismemberingroupsresponsetypedef">IsMemberInGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#listgroupmembershipsformemberresponsetypedef">ListGroupMembershipsForMemberResponseTypeDef</a></li>
+<li><a href="type_defs/#listgroupmembershipsresponsetypedef">ListGroupMembershipsResponseTypeDef</a></li>
 <li><a href="type_defs/#listusersresponsetypedef">ListUsersResponseTypeDef</a></li>
 </ul>
 

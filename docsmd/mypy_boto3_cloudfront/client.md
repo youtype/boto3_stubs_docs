@@ -1693,7 +1693,7 @@ parent.get_monitoring_subscription(**kwargs)
 
 ### get\_origin\_access\_control
 
-Gets a CloudFront origin access control.
+Gets a CloudFront origin access control, including its unique identifier.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").get_origin_access_control` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_access_control)
@@ -1722,7 +1722,7 @@ parent.get_origin_access_control(**kwargs)
 
 ### get\_origin\_access\_control\_config
 
-Gets a CloudFront origin access control.
+Gets a CloudFront origin access control configuration.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").get_origin_access_control_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_access_control_config)

@@ -26,13 +26,31 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("identitystore")  # (1)
-    result = client.describe_group()  # (2)
+    result = client.create_group()  # (2)
     ```
 
     1. client: [IdentityStoreClient](./client.md)
-    2. result: [:material-code-braces: DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef) 
+    2. result: [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("identitystore")  # (1)
+
+    paginator = client.get_paginator("list_group_memberships")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [IdentityStoreClient](./client.md)
+    2. paginator: [ListGroupMembershipsPaginator](./paginators.md#listgroupmembershipspaginator)
+    3. item: [:material-code-braces: ListGroupMembershipsResponseTypeDef](./type_defs.md#listgroupmembershipsresponsetypedef) 
 
 
 
@@ -52,19 +70,38 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_identitystore.client import IdentityStoreClient
-    from mypy_boto3_identitystore.type_defs import DescribeGroupResponseTypeDef
-    from mypy_boto3_identitystore.type_defs import DescribeGroupRequestRequestTypeDef
+    from mypy_boto3_identitystore.type_defs import CreateGroupResponseTypeDef
+    from mypy_boto3_identitystore.type_defs import CreateGroupRequestRequestTypeDef
 
 
     session = Session()
 
     client: IdentityStoreClient = session.client("identitystore")
 
-    kwargs: DescribeGroupRequestRequestTypeDef = {...}
-    result: DescribeGroupResponseTypeDef = client.describe_group(**kwargs)
+    kwargs: CreateGroupRequestRequestTypeDef = {...}
+    result: CreateGroupResponseTypeDef = client.create_group(**kwargs)
     ```
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_identitystore.client import IdentityStoreClient
+    from mypy_boto3_identitystore.paginator import ListGroupMembershipsPaginator
+    from mypy_boto3_identitystore.type_defs import ListGroupMembershipsResponseTypeDef
+
+
+    session = Session()
+    client: IdentityStoreClient = session.client("identitystore")
+
+    paginator: ListGroupMembershipsPaginator = client.get_paginator("list_group_memberships")
+    for item in paginator.paginate(...):
+        item: ListGroupMembershipsResponseTypeDef
+        print(item)
+    ```
 
 
 
