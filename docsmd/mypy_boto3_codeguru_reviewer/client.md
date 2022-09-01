@@ -57,7 +57,9 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### associate\_repository
 
-.
+Use to associate an Amazon Web Services CodeCommit repository or a repository
+managed by Amazon Web Services CodeStar Connections with Amazon CodeGuru
+Reviewer.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").associate_repository` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
@@ -122,7 +124,9 @@ def close(
 
 ### create\_code\_review
 
-.
+Use to create a code review with a
+[CodeReviewType](https://docs.aws.amazon.com/codeguru/latest/reviewer-
+api/API_CodeReviewType.html)_ of `RepositoryAnalysis`.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").create_code_review` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
@@ -157,7 +161,7 @@ parent.create_code_review(**kwargs)
 
 ### describe\_code\_review
 
-.
+Returns the metadata associated with the code review along with its status.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").describe_code_review` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
@@ -186,7 +190,7 @@ parent.describe_code_review(**kwargs)
 
 ### describe\_recommendation\_feedback
 
-.
+Describes the customer feedback for a CodeGuru Reviewer recommendation.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").describe_recommendation_feedback` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
@@ -218,7 +222,10 @@ parent.describe_recommendation_feedback(**kwargs)
 
 ### describe\_repository\_association
 
-.
+Returns a
+[RepositoryAssociation](https://docs.aws.amazon.com/codeguru/latest/reviewer-
+api/API_RepositoryAssociation.html)_ object that contains information about the
+requested repository association.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").describe_repository_association` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
@@ -247,7 +254,7 @@ parent.describe_repository_association(**kwargs)
 
 ### disassociate\_repository
 
-.
+Removes the association between Amazon CodeGuru Reviewer and a repository.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").disassociate_repository` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
@@ -295,7 +302,7 @@ def generate_presigned_url(
 
 ### list\_code\_reviews
 
-.
+Lists all the code reviews that the customer has created in the past 90 days.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_code_reviews` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
@@ -332,7 +339,10 @@ parent.list_code_reviews(**kwargs)
 
 ### list\_recommendation\_feedback
 
-.
+Returns a list of
+[RecommendationFeedbackSummary](https://docs.aws.amazon.com/codeguru/latest/reviewer-
+api/API_RecommendationFeedbackSummary.html)_ objects that contain customer
+recommendation feedback for all CodeGuru Reviewer users.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_recommendation_feedback` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
@@ -365,7 +375,7 @@ parent.list_recommendation_feedback(**kwargs)
 
 ### list\_recommendations
 
-.
+Returns the list of all recommendations for a completed code review.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_recommendations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
@@ -396,7 +406,10 @@ parent.list_recommendations(**kwargs)
 
 ### list\_repository\_associations
 
-.
+Returns a list of
+[RepositoryAssociationSummary](https://docs.aws.amazon.com/codeguru/latest/reviewer-
+api/API_RepositoryAssociationSummary.html)_ objects that contain summary
+information about a repository association.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_repository_associations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
@@ -432,7 +445,7 @@ parent.list_repository_associations(**kwargs)
 
 ### list\_tags\_for\_resource
 
-.
+Returns the list of tags associated with an associated repository resource.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
@@ -461,7 +474,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### put\_recommendation\_feedback
 
-.
+Stores customer feedback for a CodeGuru Reviewer recommendation.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").put_recommendation_feedback` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
@@ -494,7 +507,7 @@ parent.put_recommendation_feedback(**kwargs)
 
 ### tag\_resource
 
-.
+Adds one or more tags to an associated repository.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
@@ -524,7 +537,7 @@ parent.tag_resource(**kwargs)
 
 ### untag\_resource
 
-.
+Removes a tag from an associated repository.
 
 Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)

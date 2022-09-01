@@ -296,6 +296,7 @@ ServiceName = Literal[
     "connect-contact-lens",
     "connectcampaigns",
     "connectparticipant",
+    "controltower",
     "cur",
     "customer-profiles",
     "databrew",

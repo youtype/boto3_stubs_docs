@@ -213,6 +213,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-connectparticipant](./mypy_boto3_connectparticipant/README.md) for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant) service
 
+- [mypy-boto3-controltower](./mypy_boto3_controltower/README.md) for [ControlTower](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/controltower.html#ControlTower) service
+
 - [mypy-boto3-cur](./mypy_boto3_cur/README.md) for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService) service
 
 - [mypy-boto3-customer-profiles](./mypy_boto3_customer_profiles/README.md) for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles) service
