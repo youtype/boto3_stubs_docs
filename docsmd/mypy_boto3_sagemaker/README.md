@@ -242,6 +242,7 @@ def get_value() -> ActionStatusType:
 - [EndpointInServiceWaiterName](./literals.md#endpointinservicewaitername)
 - [EndpointSortKeyType](./literals.md#endpointsortkeytype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
+- [ExecutionRoleIdentityConfigType](./literals.md#executionroleidentityconfigtype)
 - [ExecutionStatusType](./literals.md#executionstatustype)
 - [FailureHandlingPolicyType](./literals.md#failurehandlingpolicytype)
 - [FeatureGroupSortByType](./literals.md#featuregroupsortbytype)

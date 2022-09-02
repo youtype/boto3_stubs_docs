@@ -2944,6 +2944,25 @@ class QueueQuickConnectConfigTypeDef(TypedDict):
     ContactFlowId: str,
 ```
 
+## StringConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import StringConditionTypeDef
+
+def get_value() -> StringConditionTypeDef:
+    return {
+        "FieldName": ...,
+    }
+```
+
+```python title="Definition"
+class StringConditionTypeDef(TypedDict):
+    FieldName: NotRequired[str],
+    Value: NotRequired[str],
+    ComparisonType: NotRequired[StringComparisonTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: StringComparisonTypeType](./literals.md#stringcomparisontypetype) 
 ## UserQuickConnectConfigTypeDef
 
 ```python title="Usage Example"
@@ -3167,25 +3186,6 @@ class VocabularySummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
-## StringConditionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import StringConditionTypeDef
-
-def get_value() -> StringConditionTypeDef:
-    return {
-        "FieldName": ...,
-    }
-```
-
-```python title="Definition"
-class StringConditionTypeDef(TypedDict):
-    FieldName: NotRequired[str],
-    Value: NotRequired[str],
-    ComparisonType: NotRequired[StringComparisonTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: StringComparisonTypeType](./literals.md#stringcomparisontypetype) 
 ## VoiceRecordingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -5042,6 +5042,8 @@ class RoutingProfileTypeDef(TypedDict):
     MediaConcurrencies: NotRequired[List[MediaConcurrencyTypeDef]],  # (1)
     DefaultOutboundQueueId: NotRequired[str],
     Tags: NotRequired[Dict[str, str]],
+    NumberOfAssociatedQueues: NotRequired[int],
+    NumberOfAssociatedUsers: NotRequired[int],
 ```
 
 1. See [:material-code-braces: MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef) 
@@ -6654,6 +6656,94 @@ class StartChatContactRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef) 
 2. See [:material-code-braces: ChatMessageTypeDef](./type_defs.md#chatmessagetypedef) 
+## QueueSearchCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import QueueSearchCriteriaTypeDef
+
+def get_value() -> QueueSearchCriteriaTypeDef:
+    return {
+        "OrConditions": ...,
+    }
+```
+
+```python title="Definition"
+class QueueSearchCriteriaTypeDef(TypedDict):
+    OrConditions: NotRequired[Sequence[QueueSearchCriteriaTypeDef]],  # (1)
+    AndConditions: NotRequired[Sequence[QueueSearchCriteriaTypeDef]],  # (1)
+    StringCondition: NotRequired[StringConditionTypeDef],  # (3)
+    QueueTypeCondition: NotRequired[SearchableQueueTypeType],  # (4)
+```
+
+1. See [:material-code-braces: QueueSearchCriteriaTypeDef](./type_defs.md#queuesearchcriteriatypedef) 
+2. See [:material-code-braces: QueueSearchCriteriaTypeDef](./type_defs.md#queuesearchcriteriatypedef) 
+3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
+4. See [:material-code-brackets: SearchableQueueTypeType](./literals.md#searchablequeuetypetype) 
+## RoutingProfileSearchCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RoutingProfileSearchCriteriaTypeDef
+
+def get_value() -> RoutingProfileSearchCriteriaTypeDef:
+    return {
+        "OrConditions": ...,
+    }
+```
+
+```python title="Definition"
+class RoutingProfileSearchCriteriaTypeDef(TypedDict):
+    OrConditions: NotRequired[Sequence[RoutingProfileSearchCriteriaTypeDef]],  # (1)
+    AndConditions: NotRequired[Sequence[RoutingProfileSearchCriteriaTypeDef]],  # (1)
+    StringCondition: NotRequired[StringConditionTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: RoutingProfileSearchCriteriaTypeDef](./type_defs.md#routingprofilesearchcriteriatypedef) 
+2. See [:material-code-braces: RoutingProfileSearchCriteriaTypeDef](./type_defs.md#routingprofilesearchcriteriatypedef) 
+3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
+## SecurityProfileSearchCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SecurityProfileSearchCriteriaTypeDef
+
+def get_value() -> SecurityProfileSearchCriteriaTypeDef:
+    return {
+        "OrConditions": ...,
+    }
+```
+
+```python title="Definition"
+class SecurityProfileSearchCriteriaTypeDef(TypedDict):
+    OrConditions: NotRequired[Sequence[SecurityProfileSearchCriteriaTypeDef]],  # (1)
+    AndConditions: NotRequired[Sequence[SecurityProfileSearchCriteriaTypeDef]],  # (1)
+    StringCondition: NotRequired[StringConditionTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+2. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
+3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
+## UserSearchCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UserSearchCriteriaTypeDef
+
+def get_value() -> UserSearchCriteriaTypeDef:
+    return {
+        "OrConditions": ...,
+    }
+```
+
+```python title="Definition"
+class UserSearchCriteriaTypeDef(TypedDict):
+    OrConditions: NotRequired[Sequence[UserSearchCriteriaTypeDef]],  # (1)
+    AndConditions: NotRequired[Sequence[UserSearchCriteriaTypeDef]],  # (1)
+    StringCondition: NotRequired[StringConditionTypeDef],  # (3)
+    HierarchyGroupCondition: NotRequired[HierarchyGroupConditionTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: UserSearchCriteriaTypeDef](./type_defs.md#usersearchcriteriatypedef) 
+2. See [:material-code-braces: UserSearchCriteriaTypeDef](./type_defs.md#usersearchcriteriatypedef) 
+3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
+4. See [:material-code-braces: HierarchyGroupConditionTypeDef](./type_defs.md#hierarchygroupconditiontypedef) 
 ## QuickConnectConfigTypeDef
 
 ```python title="Usage Example"
@@ -6800,50 +6890,6 @@ class SearchVocabulariesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: VocabularySummaryTypeDef](./type_defs.md#vocabularysummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SecurityProfileSearchCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import SecurityProfileSearchCriteriaTypeDef
-
-def get_value() -> SecurityProfileSearchCriteriaTypeDef:
-    return {
-        "OrConditions": ...,
-    }
-```
-
-```python title="Definition"
-class SecurityProfileSearchCriteriaTypeDef(TypedDict):
-    OrConditions: NotRequired[Sequence[SecurityProfileSearchCriteriaTypeDef]],  # (1)
-    AndConditions: NotRequired[Sequence[SecurityProfileSearchCriteriaTypeDef]],  # (1)
-    StringCondition: NotRequired[StringConditionTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
-2. See [:material-code-braces: SecurityProfileSearchCriteriaTypeDef](./type_defs.md#securityprofilesearchcriteriatypedef) 
-3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
-## UserSearchCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import UserSearchCriteriaTypeDef
-
-def get_value() -> UserSearchCriteriaTypeDef:
-    return {
-        "OrConditions": ...,
-    }
-```
-
-```python title="Definition"
-class UserSearchCriteriaTypeDef(TypedDict):
-    OrConditions: NotRequired[Sequence[UserSearchCriteriaTypeDef]],  # (1)
-    AndConditions: NotRequired[Sequence[UserSearchCriteriaTypeDef]],  # (1)
-    StringCondition: NotRequired[StringConditionTypeDef],  # (3)
-    HierarchyGroupCondition: NotRequired[HierarchyGroupConditionTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: UserSearchCriteriaTypeDef](./type_defs.md#usersearchcriteriatypedef) 
-2. See [:material-code-braces: UserSearchCriteriaTypeDef](./type_defs.md#usersearchcriteriatypedef) 
-3. See [:material-code-braces: StringConditionTypeDef](./type_defs.md#stringconditiontypedef) 
-4. See [:material-code-braces: HierarchyGroupConditionTypeDef](./type_defs.md#hierarchygroupconditiontypedef) 
 ## StartContactRecordingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6977,6 +7023,40 @@ class DescribeContactResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContactTypeDef](./type_defs.md#contacttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## QueueSearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import QueueSearchFilterTypeDef
+
+def get_value() -> QueueSearchFilterTypeDef:
+    return {
+        "TagFilter": ...,
+    }
+```
+
+```python title="Definition"
+class QueueSearchFilterTypeDef(TypedDict):
+    TagFilter: NotRequired[ControlPlaneTagFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ControlPlaneTagFilterTypeDef](./type_defs.md#controlplanetagfiltertypedef) 
+## RoutingProfileSearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RoutingProfileSearchFilterTypeDef
+
+def get_value() -> RoutingProfileSearchFilterTypeDef:
+    return {
+        "TagFilter": ...,
+    }
+```
+
+```python title="Definition"
+class RoutingProfileSearchFilterTypeDef(TypedDict):
+    TagFilter: NotRequired[ControlPlaneTagFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ControlPlaneTagFilterTypeDef](./type_defs.md#controlplanetagfiltertypedef) 
 ## SecurityProfilesSearchFilterTypeDef
 
 ```python title="Usage Example"
@@ -7031,6 +7111,30 @@ class DescribeQueueResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchQueuesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchQueuesResponseTypeDef
+
+def get_value() -> SearchQueuesResponseTypeDef:
+    return {
+        "Queues": ...,
+        "NextToken": ...,
+        "ApproximateTotalCount": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchQueuesResponseTypeDef(TypedDict):
+    Queues: List[QueueTypeDef],  # (1)
+    NextToken: str,
+    ApproximateTotalCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRoutingProfileResponseTypeDef
 
 ```python title="Usage Example"
@@ -7046,6 +7150,30 @@ def get_value() -> DescribeRoutingProfileResponseTypeDef:
 ```python title="Definition"
 class DescribeRoutingProfileResponseTypeDef(TypedDict):
     RoutingProfile: RoutingProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RoutingProfileTypeDef](./type_defs.md#routingprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchRoutingProfilesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchRoutingProfilesResponseTypeDef
+
+def get_value() -> SearchRoutingProfilesResponseTypeDef:
+    return {
+        "RoutingProfiles": ...,
+        "NextToken": ...,
+        "ApproximateTotalCount": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchRoutingProfilesResponseTypeDef(TypedDict):
+    RoutingProfiles: List[RoutingProfileTypeDef],  # (1)
+    NextToken: str,
+    ApproximateTotalCount: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -7597,6 +7725,94 @@ class SearchUsersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserSearchSummaryTypeDef](./type_defs.md#usersearchsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchQueuesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchQueuesRequestRequestTypeDef
+
+def get_value() -> SearchQueuesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchQueuesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SearchFilter: NotRequired[QueueSearchFilterTypeDef],  # (1)
+    SearchCriteria: NotRequired[QueueSearchCriteriaTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: QueueSearchFilterTypeDef](./type_defs.md#queuesearchfiltertypedef) 
+2. See [:material-code-braces: QueueSearchCriteriaTypeDef](./type_defs.md#queuesearchcriteriatypedef) 
+## SearchQueuesRequestSearchQueuesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchQueuesRequestSearchQueuesPaginateTypeDef
+
+def get_value() -> SearchQueuesRequestSearchQueuesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchQueuesRequestSearchQueuesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    SearchFilter: NotRequired[QueueSearchFilterTypeDef],  # (1)
+    SearchCriteria: NotRequired[QueueSearchCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: QueueSearchFilterTypeDef](./type_defs.md#queuesearchfiltertypedef) 
+2. See [:material-code-braces: QueueSearchCriteriaTypeDef](./type_defs.md#queuesearchcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchRoutingProfilesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchRoutingProfilesRequestRequestTypeDef
+
+def get_value() -> SearchRoutingProfilesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchRoutingProfilesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SearchFilter: NotRequired[RoutingProfileSearchFilterTypeDef],  # (1)
+    SearchCriteria: NotRequired[RoutingProfileSearchCriteriaTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: RoutingProfileSearchFilterTypeDef](./type_defs.md#routingprofilesearchfiltertypedef) 
+2. See [:material-code-braces: RoutingProfileSearchCriteriaTypeDef](./type_defs.md#routingprofilesearchcriteriatypedef) 
+## SearchRoutingProfilesRequestSearchRoutingProfilesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchRoutingProfilesRequestSearchRoutingProfilesPaginateTypeDef
+
+def get_value() -> SearchRoutingProfilesRequestSearchRoutingProfilesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class SearchRoutingProfilesRequestSearchRoutingProfilesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    SearchFilter: NotRequired[RoutingProfileSearchFilterTypeDef],  # (1)
+    SearchCriteria: NotRequired[RoutingProfileSearchCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: RoutingProfileSearchFilterTypeDef](./type_defs.md#routingprofilesearchfiltertypedef) 
+2. See [:material-code-braces: RoutingProfileSearchCriteriaTypeDef](./type_defs.md#routingprofilesearchcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchSecurityProfilesRequestRequestTypeDef
 
 ```python title="Usage Example"

@@ -3560,6 +3560,76 @@ parent.search_available_phone_numbers(**kwargs)
 
 1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef) 
 
+### search\_queues
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").search_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_queues)
+
+```python title="Method definition"
+def search_queues(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SearchFilter: QueueSearchFilterTypeDef = ...,  # (1)
+    SearchCriteria: QueueSearchCriteriaTypeDef = ...,  # (2)
+) -> SearchQueuesResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: QueueSearchFilterTypeDef](./type_defs.md#queuesearchfiltertypedef) 
+2. See [:material-code-braces: QueueSearchCriteriaTypeDef](./type_defs.md#queuesearchcriteriatypedef) 
+3. See [:material-code-braces: SearchQueuesResponseTypeDef](./type_defs.md#searchqueuesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchQueuesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.search_queues(**kwargs)
+```
+
+1. See [:material-code-braces: SearchQueuesRequestRequestTypeDef](./type_defs.md#searchqueuesrequestrequesttypedef) 
+
+### search\_routing\_profiles
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").search_routing_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_routing_profiles)
+
+```python title="Method definition"
+def search_routing_profiles(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SearchFilter: RoutingProfileSearchFilterTypeDef = ...,  # (1)
+    SearchCriteria: RoutingProfileSearchCriteriaTypeDef = ...,  # (2)
+) -> SearchRoutingProfilesResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: RoutingProfileSearchFilterTypeDef](./type_defs.md#routingprofilesearchfiltertypedef) 
+2. See [:material-code-braces: RoutingProfileSearchCriteriaTypeDef](./type_defs.md#routingprofilesearchcriteriatypedef) 
+3. See [:material-code-braces: SearchRoutingProfilesResponseTypeDef](./type_defs.md#searchroutingprofilesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchRoutingProfilesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.search_routing_profiles(**kwargs)
+```
+
+1. See [:material-code-braces: SearchRoutingProfilesRequestRequestTypeDef](./type_defs.md#searchroutingprofilesrequestrequesttypedef) 
+
 ### search\_security\_profiles
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -5243,6 +5313,8 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_user_hierarchy_groups")` -> [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
 - `client.get_paginator("search_available_phone_numbers")` -> [SearchAvailablePhoneNumbersPaginator](./paginators.md#searchavailablephonenumberspaginator)
+- `client.get_paginator("search_queues")` -> [SearchQueuesPaginator](./paginators.md#searchqueuespaginator)
+- `client.get_paginator("search_routing_profiles")` -> [SearchRoutingProfilesPaginator](./paginators.md#searchroutingprofilespaginator)
 - `client.get_paginator("search_security_profiles")` -> [SearchSecurityProfilesPaginator](./paginators.md#searchsecurityprofilespaginator)
 - `client.get_paginator("search_users")` -> [SearchUsersPaginator](./paginators.md#searchuserspaginator)
 - `client.get_paginator("search_vocabularies")` -> [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)

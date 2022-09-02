@@ -1221,6 +1221,34 @@ SearchAvailablePhoneNumbersPaginatorName = Literal[
     "search_available_phone_numbers",
 ]
 ```
+## SearchQueuesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import SearchQueuesPaginatorName
+
+def get_value() -> SearchQueuesPaginatorName:
+    return "search_queues"
+```
+
+```python title="Definition"
+SearchQueuesPaginatorName = Literal[
+    "search_queues",
+]
+```
+## SearchRoutingProfilesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import SearchRoutingProfilesPaginatorName
+
+def get_value() -> SearchRoutingProfilesPaginatorName:
+    return "search_routing_profiles"
+```
+
+```python title="Definition"
+SearchRoutingProfilesPaginatorName = Literal[
+    "search_routing_profiles",
+]
+```
 ## SearchSecurityProfilesPaginatorName
 
 ```python title="Usage Example"
@@ -1261,6 +1289,20 @@ def get_value() -> SearchVocabulariesPaginatorName:
 ```python title="Definition"
 SearchVocabulariesPaginatorName = Literal[
     "search_vocabularies",
+]
+```
+## SearchableQueueTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import SearchableQueueTypeType
+
+def get_value() -> SearchableQueueTypeType:
+    return "STANDARD"
+```
+
+```python title="Definition"
+SearchableQueueTypeType = Literal[
+    "STANDARD",
 ]
 ```
 ## SourceTypeType
@@ -1887,6 +1929,8 @@ PaginatorName = Literal[
     "list_user_hierarchy_groups",
     "list_users",
     "search_available_phone_numbers",
+    "search_queues",
+    "search_routing_profiles",
     "search_security_profiles",
     "search_users",
     "search_vocabularies",

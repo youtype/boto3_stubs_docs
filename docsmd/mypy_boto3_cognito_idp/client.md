@@ -1442,6 +1442,7 @@ def create_user_pool_client(
     PreventUserExistenceErrors: PreventUserExistenceErrorTypesType = ...,  # (5)
     EnableTokenRevocation: bool = ...,
     EnablePropagateAdditionalUserContextData: bool = ...,
+    AuthSessionValidity: int = ...,
 ) -> CreateUserPoolClientResponseTypeDef:  # (6)
     ...
 ```
@@ -3428,6 +3429,7 @@ def update_user_pool_client(
     PreventUserExistenceErrors: PreventUserExistenceErrorTypesType = ...,  # (5)
     EnableTokenRevocation: bool = ...,
     EnablePropagateAdditionalUserContextData: bool = ...,
+    AuthSessionValidity: int = ...,
 ) -> UpdateUserPoolClientResponseTypeDef:  # (6)
     ...
 ```

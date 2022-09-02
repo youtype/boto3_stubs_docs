@@ -1005,6 +1005,21 @@ EndpointStatusType = Literal[
     "Updating",
 ]
 ```
+## ExecutionRoleIdentityConfigType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ExecutionRoleIdentityConfigType
+
+def get_value() -> ExecutionRoleIdentityConfigType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+ExecutionRoleIdentityConfigType = Literal[
+    "DISABLED",
+    "USER_PROFILE_NAME",
+]
+```
 ## ExecutionStatusType
 
 ```python title="Usage Example"

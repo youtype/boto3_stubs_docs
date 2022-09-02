@@ -801,12 +801,14 @@ def get_value() -> CmafEncryptionTypeDef:
 
 ```python title="Definition"
 class CmafEncryptionTypeDef(TypedDict):
-    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (2)
     ConstantInitializationVector: NotRequired[str],
+    EncryptionMethod: NotRequired[CmafEncryptionMethodType],  # (1)
     KeyRotationIntervalSeconds: NotRequired[int],
 ```
 
-1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
+1. See [:material-code-brackets: CmafEncryptionMethodType](./literals.md#cmafencryptionmethodtype) 
+2. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## DashEncryptionTypeDef
 
 ```python title="Usage Example"

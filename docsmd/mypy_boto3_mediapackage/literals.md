@@ -62,6 +62,21 @@ AdsOnDeliveryRestrictionsType = Literal[
     "UNRESTRICTED",
 ]
 ```
+## CmafEncryptionMethodType
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage.literals import CmafEncryptionMethodType
+
+def get_value() -> CmafEncryptionMethodType:
+    return "AES_CTR"
+```
+
+```python title="Definition"
+CmafEncryptionMethodType = Literal[
+    "AES_CTR",
+    "SAMPLE_AES",
+]
+```
 ## EncryptionMethodType
 
 ```python title="Usage Example"

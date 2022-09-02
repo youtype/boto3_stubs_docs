@@ -3692,6 +3692,7 @@ class CreateUserPoolClientRequestRequestTypeDef(TypedDict):
     PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
     EnableTokenRevocation: NotRequired[bool],
     EnablePropagateAdditionalUserContextData: NotRequired[bool],
+    AuthSessionValidity: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
@@ -3734,6 +3735,7 @@ class UpdateUserPoolClientRequestRequestTypeDef(TypedDict):
     PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
     EnableTokenRevocation: NotRequired[bool],
     EnablePropagateAdditionalUserContextData: NotRequired[bool],
+    AuthSessionValidity: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
@@ -3778,6 +3780,7 @@ class UserPoolClientTypeTypeDef(TypedDict):
     PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
     EnableTokenRevocation: NotRequired[bool],
     EnablePropagateAdditionalUserContextData: NotRequired[bool],
+    AuthSessionValidity: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 

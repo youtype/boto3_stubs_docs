@@ -1899,6 +1899,132 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestSearchAvailablePhoneNumbersPaginateTypeDef](./type_defs.md#searchavailablephonenumbersrequestsearchavailablephonenumberspaginatetypedef) 
+## SearchQueuesPaginator
+
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_queues")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.SearchQueues)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchQueuesPaginator
+
+def get_search_queues_paginator() -> SearchQueuesPaginator:
+    return Session().client("connect").get_paginator("search_queues")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchQueuesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: SearchQueuesPaginator = client.get_paginator("search_queues")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [SearchQueuesPaginator](./paginators.md#searchqueuespaginator)
+3. item: [:material-code-braces: SearchQueuesResponseTypeDef](./type_defs.md#searchqueuesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python SearchQueuesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    SearchFilter: QueueSearchFilterTypeDef = ...,  # (1)
+    SearchCriteria: QueueSearchCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[SearchQueuesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: QueueSearchFilterTypeDef](./type_defs.md#queuesearchfiltertypedef) 
+2. See [:material-code-braces: QueueSearchCriteriaTypeDef](./type_defs.md#queuesearchcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: SearchQueuesResponseTypeDef](./type_defs.md#searchqueuesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchQueuesRequestSearchQueuesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchQueuesRequestSearchQueuesPaginateTypeDef](./type_defs.md#searchqueuesrequestsearchqueuespaginatetypedef) 
+## SearchRoutingProfilesPaginator
+
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_routing_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.SearchRoutingProfiles)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchRoutingProfilesPaginator
+
+def get_search_routing_profiles_paginator() -> SearchRoutingProfilesPaginator:
+    return Session().client("connect").get_paginator("search_routing_profiles")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchRoutingProfilesPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: SearchRoutingProfilesPaginator = client.get_paginator("search_routing_profiles")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [SearchRoutingProfilesPaginator](./paginators.md#searchroutingprofilespaginator)
+3. item: [:material-code-braces: SearchRoutingProfilesResponseTypeDef](./type_defs.md#searchroutingprofilesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python SearchRoutingProfilesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    SearchFilter: RoutingProfileSearchFilterTypeDef = ...,  # (1)
+    SearchCriteria: RoutingProfileSearchCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[SearchRoutingProfilesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: RoutingProfileSearchFilterTypeDef](./type_defs.md#routingprofilesearchfiltertypedef) 
+2. See [:material-code-braces: RoutingProfileSearchCriteriaTypeDef](./type_defs.md#routingprofilesearchcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: SearchRoutingProfilesResponseTypeDef](./type_defs.md#searchroutingprofilesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchRoutingProfilesRequestSearchRoutingProfilesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchRoutingProfilesRequestSearchRoutingProfilesPaginateTypeDef](./type_defs.md#searchroutingprofilesrequestsearchroutingprofilespaginatetypedef) 
 ## SearchSecurityProfilesPaginator
 
 Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_security_profiles")`.

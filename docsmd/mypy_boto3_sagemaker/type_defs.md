@@ -17104,9 +17104,11 @@ def get_value() -> DomainSettingsForUpdateTypeDef:
 ```python title="Definition"
 class DomainSettingsForUpdateTypeDef(TypedDict):
     RStudioServerProDomainSettingsForUpdate: NotRequired[RStudioServerProDomainSettingsForUpdateTypeDef],  # (1)
+    ExecutionRoleIdentityConfig: NotRequired[ExecutionRoleIdentityConfigType],  # (2)
 ```
 
 1. See [:material-code-braces: RStudioServerProDomainSettingsForUpdateTypeDef](./type_defs.md#rstudioserverprodomainsettingsforupdatetypedef) 
+2. See [:material-code-brackets: ExecutionRoleIdentityConfigType](./literals.md#executionroleidentityconfigtype) 
 ## DomainSettingsTypeDef
 
 ```python title="Usage Example"
@@ -17122,9 +17124,11 @@ def get_value() -> DomainSettingsTypeDef:
 class DomainSettingsTypeDef(TypedDict):
     SecurityGroupIds: NotRequired[Sequence[str]],
     RStudioServerProDomainSettings: NotRequired[RStudioServerProDomainSettingsTypeDef],  # (1)
+    ExecutionRoleIdentityConfig: NotRequired[ExecutionRoleIdentityConfigType],  # (2)
 ```
 
 1. See [:material-code-braces: RStudioServerProDomainSettingsTypeDef](./type_defs.md#rstudioserverprodomainsettingstypedef) 
+2. See [:material-code-brackets: ExecutionRoleIdentityConfigType](./literals.md#executionroleidentityconfigtype) 
 ## UserSettingsTypeDef
 
 ```python title="Usage Example"

@@ -103,6 +103,7 @@ def get_value() -> AdMarkersType:
 - [AdMarkersType](./literals.md#admarkerstype)
 - [AdTriggersElementType](./literals.md#adtriggerselementtype)
 - [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
+- [CmafEncryptionMethodType](./literals.md#cmafencryptionmethodtype)
 - [EncryptionMethodType](./literals.md#encryptionmethodtype)
 - [ListChannelsPaginatorName](./literals.md#listchannelspaginatorname)
 - [ListHarvestJobsPaginatorName](./literals.md#listharvestjobspaginatorname)
