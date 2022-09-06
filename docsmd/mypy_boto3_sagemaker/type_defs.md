@@ -20711,6 +20711,47 @@ class DescribeHyperParameterTuningJobResponseTypeDef(TypedDict):
 8. See [:material-code-braces: HyperParameterTrainingJobSummaryTypeDef](./type_defs.md#hyperparametertrainingjobsummarytypedef) 
 9. See [:material-code-braces: HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef) 
 10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## HyperParameterTuningJobSearchEntityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobSearchEntityTypeDef
+
+def get_value() -> HyperParameterTuningJobSearchEntityTypeDef:
+    return {
+        "HyperParameterTuningJobName": ...,
+    }
+```
+
+```python title="Definition"
+class HyperParameterTuningJobSearchEntityTypeDef(TypedDict):
+    HyperParameterTuningJobName: NotRequired[str],
+    HyperParameterTuningJobArn: NotRequired[str],
+    HyperParameterTuningJobConfig: NotRequired[HyperParameterTuningJobConfigTypeDef],  # (1)
+    TrainingJobDefinition: NotRequired[HyperParameterTrainingJobDefinitionTypeDef],  # (2)
+    TrainingJobDefinitions: NotRequired[List[HyperParameterTrainingJobDefinitionTypeDef]],  # (3)
+    HyperParameterTuningJobStatus: NotRequired[HyperParameterTuningJobStatusType],  # (4)
+    CreationTime: NotRequired[datetime],
+    HyperParameterTuningEndTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    TrainingJobStatusCounters: NotRequired[TrainingJobStatusCountersTypeDef],  # (5)
+    ObjectiveStatusCounters: NotRequired[ObjectiveStatusCountersTypeDef],  # (6)
+    BestTrainingJob: NotRequired[HyperParameterTrainingJobSummaryTypeDef],  # (7)
+    OverallBestTrainingJob: NotRequired[HyperParameterTrainingJobSummaryTypeDef],  # (7)
+    WarmStartConfig: NotRequired[HyperParameterTuningJobWarmStartConfigTypeDef],  # (9)
+    FailureReason: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (10)
+```
+
+1. See [:material-code-braces: HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef) 
+2. See [:material-code-braces: HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef) 
+3. See [:material-code-braces: HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef) 
+4. See [:material-code-brackets: HyperParameterTuningJobStatusType](./literals.md#hyperparametertuningjobstatustype) 
+5. See [:material-code-braces: TrainingJobStatusCountersTypeDef](./type_defs.md#trainingjobstatuscounterstypedef) 
+6. See [:material-code-braces: ObjectiveStatusCountersTypeDef](./type_defs.md#objectivestatuscounterstypedef) 
+7. See [:material-code-braces: HyperParameterTrainingJobSummaryTypeDef](./type_defs.md#hyperparametertrainingjobsummarytypedef) 
+8. See [:material-code-braces: HyperParameterTrainingJobSummaryTypeDef](./type_defs.md#hyperparametertrainingjobsummarytypedef) 
+9. See [:material-code-braces: HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ListLabelingJobsResponseTypeDef
 
 ```python title="Usage Example"
@@ -21344,6 +21385,7 @@ class SearchRecordTypeDef(TypedDict):
     FeatureGroup: NotRequired[FeatureGroupTypeDef],  # (10)
     Project: NotRequired[ProjectTypeDef],  # (11)
     FeatureMetadata: NotRequired[FeatureMetadataTypeDef],  # (12)
+    HyperParameterTuningJob: NotRequired[HyperParameterTuningJobSearchEntityTypeDef],  # (13)
 ```
 
 1. See [:material-code-braces: TrainingJobTypeDef](./type_defs.md#trainingjobtypedef) 
@@ -21358,6 +21400,7 @@ class SearchRecordTypeDef(TypedDict):
 10. See [:material-code-braces: FeatureGroupTypeDef](./type_defs.md#featuregrouptypedef) 
 11. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
 12. See [:material-code-braces: FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef) 
+13. See [:material-code-braces: HyperParameterTuningJobSearchEntityTypeDef](./type_defs.md#hyperparametertuningjobsearchentitytypedef) 
 ## SearchResponseTypeDef
 
 ```python title="Usage Example"

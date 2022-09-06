@@ -320,7 +320,8 @@ parent.describe_group(**kwargs)
 
 ### describe\_group\_membership
 
-Retrieves membership metadata and attributes from `MembershipId` in a group.
+Retrieves membership metadata and attributes from `MembershipId` in an identity
+store.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").describe_group_membership` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group_membership)
@@ -434,7 +435,7 @@ parent.get_group_id(**kwargs)
 
 ### get\_group\_membership\_id
 
-Retrieves the `MembershipId` in a group.
+Retrieves the `MembershipId` in an identity store.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").get_group_membership_id` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.get_group_membership_id)
@@ -500,7 +501,8 @@ parent.get_user_id(**kwargs)
 
 ### is\_member\_in\_groups
 
-Returns if a member exists in specified groups.
+Checks the user's membership in all requested groups and returns if the member
+exists in all queried groups.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").is_member_in_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.is_member_in_groups)
@@ -603,7 +605,8 @@ parent.list_group_memberships_for_member(**kwargs)
 
 ### list\_groups
 
-*Filtering for a group by the group `DisplayName` attribute is deprecated.
+Lists the attribute name and value of the group that you specified in the
+search.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").list_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
@@ -636,7 +639,7 @@ parent.list_groups(**kwargs)
 
 ### list\_users
 
-*Filtering for a user by the `UserName` attribute is deprecated.
+Lists the attribute name and value of the user that you specified in the search.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").list_users` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)

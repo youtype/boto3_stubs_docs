@@ -1398,6 +1398,7 @@ def get_value() -> ActionSourceTypeDef:
 - [DescribeInferenceRecommendationsJobResponseTypeDef](./type_defs.md#describeinferencerecommendationsjobresponsetypedef)
 - [CreateHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#createhyperparametertuningjobrequestrequesttypedef)
 - [DescribeHyperParameterTuningJobResponseTypeDef](./type_defs.md#describehyperparametertuningjobresponsetypedef)
+- [HyperParameterTuningJobSearchEntityTypeDef](./type_defs.md#hyperparametertuningjobsearchentitytypedef)
 - [ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef)
 - [BatchDescribeModelPackageOutputTypeDef](./type_defs.md#batchdescribemodelpackageoutputtypedef)
 - [MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef)

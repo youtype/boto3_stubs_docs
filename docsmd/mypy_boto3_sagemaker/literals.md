@@ -3630,6 +3630,7 @@ ResourceTypeType = Literal[
     "ExperimentTrialComponent",
     "FeatureGroup",
     "FeatureMetadata",
+    "HyperParameterTuningJob",
     "ModelPackage",
     "ModelPackageGroup",
     "Pipeline",
