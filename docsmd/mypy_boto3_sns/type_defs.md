@@ -341,6 +341,22 @@ class EndpointTypeDef(TypedDict):
     Attributes: NotRequired[Dict[str, str]],
 ```
 
+## GetDataProtectionPolicyInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import GetDataProtectionPolicyInputRequestTypeDef
+
+def get_value() -> GetDataProtectionPolicyInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataProtectionPolicyInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
 ## GetEndpointAttributesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -731,6 +747,24 @@ class PublishBatchResultEntryTypeDef(TypedDict):
     Id: NotRequired[str],
     MessageId: NotRequired[str],
     SequenceNumber: NotRequired[str],
+```
+
+## PutDataProtectionPolicyInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import PutDataProtectionPolicyInputRequestTypeDef
+
+def get_value() -> PutDataProtectionPolicyInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "DataProtectionPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class PutDataProtectionPolicyInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    DataProtectionPolicy: str,
 ```
 
 ## RemovePermissionInputRequestTypeDef
@@ -1191,6 +1225,25 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDataProtectionPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import GetDataProtectionPolicyResponseTypeDef
+
+def get_value() -> GetDataProtectionPolicyResponseTypeDef:
+    return {
+        "DataProtectionPolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataProtectionPolicyResponseTypeDef(TypedDict):
+    DataProtectionPolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEndpointAttributesResponseTypeDef
 
 ```python title="Usage Example"
@@ -1382,6 +1435,7 @@ class CreateTopicInputRequestTypeDef(TypedDict):
     Name: str,
     Attributes: NotRequired[Mapping[str, str]],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    DataProtectionPolicy: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -1401,6 +1455,7 @@ class CreateTopicInputServiceResourceCreateTopicTypeDef(TypedDict):
     Name: str,
     Attributes: NotRequired[Mapping[str, str]],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    DataProtectionPolicy: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

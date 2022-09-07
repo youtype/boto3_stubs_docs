@@ -1902,6 +1902,7 @@ class UpdateAssetPropertyRequestRequestTypeDef(TypedDict):
     propertyAlias: NotRequired[str],
     propertyNotificationState: NotRequired[PropertyNotificationStateType],  # (1)
     clientToken: NotRequired[str],
+    propertyUnit: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PropertyNotificationStateType](./literals.md#propertynotificationstatetype) 

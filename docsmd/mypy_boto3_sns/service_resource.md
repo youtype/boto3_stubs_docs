@@ -241,6 +241,7 @@ def create_topic(
     Name: str,
     Attributes: Mapping[str, str] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
+    DataProtectionPolicy: str = ...,
 ) -> Topic:
     ...
 ```

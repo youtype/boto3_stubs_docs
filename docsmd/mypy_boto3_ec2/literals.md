@@ -5931,6 +5931,7 @@ ResourceTypeType = Literal[
     "vpc-flow-log",
     "vpc-peering-connection",
     "vpn-connection",
+    "vpn-connection-device-type",
     "vpn-gateway",
 ]
 ```

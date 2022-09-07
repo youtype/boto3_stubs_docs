@@ -462,7 +462,7 @@ parent.create_asset_model(**kwargs)
 
 ### create\_bulk\_import\_job
 
-.
+Defines a job to ingest data to IoT SiteWise from Amazon S3.
 
 Type annotations and code completion for `#!python boto3.client("iotsitewise").create_bulk_import_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_bulk_import_job)
@@ -1007,7 +1007,7 @@ parent.describe_asset_property(**kwargs)
 
 ### describe\_bulk\_import\_job
 
-.
+Retrieves information about a bulk import job request.
 
 Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_bulk_import_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_bulk_import_job)
@@ -1683,7 +1683,7 @@ parent.list_associated_assets(**kwargs)
 
 ### list\_bulk\_import\_jobs
 
-.
+Retrieves a paginated list of bulk import job requests.
 
 Type annotations and code completion for `#!python boto3.client("iotsitewise").list_bulk_import_jobs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_bulk_import_jobs)
@@ -2213,6 +2213,7 @@ def update_asset_property(
     propertyAlias: str = ...,
     propertyNotificationState: PropertyNotificationStateType = ...,  # (1)
     clientToken: str = ...,
+    propertyUnit: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```

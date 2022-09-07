@@ -94,6 +94,7 @@ AddonStatusType = Literal[
     "DEGRADED",
     "DELETE_FAILED",
     "DELETING",
+    "UPDATE_FAILED",
     "UPDATING",
 ]
 ```
@@ -481,6 +482,7 @@ def get_value() -> ResolveConflictsType:
 ResolveConflictsType = Literal[
     "NONE",
     "OVERWRITE",
+    "PRESERVE",
 ]
 ```
 ## TaintEffectType

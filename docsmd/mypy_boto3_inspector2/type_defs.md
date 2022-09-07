@@ -1045,6 +1045,7 @@ class VulnerablePackageTypeDef(TypedDict):
     fixedInVersion: NotRequired[str],
     packageManager: NotRequired[PackageManagerType],  # (1)
     release: NotRequired[str],
+    remediation: NotRequired[str],
     sourceLayerHash: NotRequired[str],
 ```
 
@@ -2219,7 +2220,6 @@ def get_value() -> PackageVulnerabilityDetailsTypeDef:
     return {
         "source": ...,
         "vulnerabilityId": ...,
-        "vulnerablePackages": ...,
     }
 ```
 
@@ -2227,7 +2227,6 @@ def get_value() -> PackageVulnerabilityDetailsTypeDef:
 class PackageVulnerabilityDetailsTypeDef(TypedDict):
     source: str,
     vulnerabilityId: str,
-    vulnerablePackages: List[VulnerablePackageTypeDef],  # (2)
     cvss: NotRequired[List[CvssScoreTypeDef]],  # (1)
     referenceUrls: NotRequired[List[str]],
     relatedVulnerabilities: NotRequired[List[str]],
@@ -2235,6 +2234,7 @@ class PackageVulnerabilityDetailsTypeDef(TypedDict):
     vendorCreatedAt: NotRequired[datetime],
     vendorSeverity: NotRequired[str],
     vendorUpdatedAt: NotRequired[datetime],
+    vulnerablePackages: NotRequired[List[VulnerablePackageTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: CvssScoreTypeDef](./type_defs.md#cvssscoretypedef) 
@@ -2605,13 +2605,14 @@ class FilterCriteriaTypeDef(TypedDict):
     findingStatus: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     findingType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     firstObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
-    inspectorScore: NotRequired[Sequence[NumberFilterTypeDef]],  # (17)
+    fixAvailable: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    inspectorScore: NotRequired[Sequence[NumberFilterTypeDef]],  # (18)
     lastObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
     networkProtocol: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    portRange: NotRequired[Sequence[PortRangeFilterTypeDef]],  # (20)
+    portRange: NotRequired[Sequence[PortRangeFilterTypeDef]],  # (21)
     relatedVulnerabilities: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     resourceId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    resourceTags: NotRequired[Sequence[MapFilterTypeDef]],  # (23)
+    resourceTags: NotRequired[Sequence[MapFilterTypeDef]],  # (24)
     resourceType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     severity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     title: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
@@ -2619,7 +2620,7 @@ class FilterCriteriaTypeDef(TypedDict):
     vendorSeverity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     vulnerabilityId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     vulnerabilitySource: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    vulnerablePackages: NotRequired[Sequence[PackageFilterTypeDef]],  # (31)
+    vulnerablePackages: NotRequired[Sequence[PackageFilterTypeDef]],  # (32)
 ```
 
 1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
@@ -2638,21 +2639,22 @@ class FilterCriteriaTypeDef(TypedDict):
 14. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 15. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 16. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
-17. See [:material-code-braces: NumberFilterTypeDef](./type_defs.md#numberfiltertypedef) 
-18. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
-19. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-20. See [:material-code-braces: PortRangeFilterTypeDef](./type_defs.md#portrangefiltertypedef) 
-21. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+17. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+18. See [:material-code-braces: NumberFilterTypeDef](./type_defs.md#numberfiltertypedef) 
+19. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+20. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+21. See [:material-code-braces: PortRangeFilterTypeDef](./type_defs.md#portrangefiltertypedef) 
 22. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-23. See [:material-code-braces: MapFilterTypeDef](./type_defs.md#mapfiltertypedef) 
-24. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+23. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+24. See [:material-code-braces: MapFilterTypeDef](./type_defs.md#mapfiltertypedef) 
 25. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 26. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-27. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
-28. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+27. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+28. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
 29. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 30. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-31. See [:material-code-braces: PackageFilterTypeDef](./type_defs.md#packagefiltertypedef) 
+31. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+32. See [:material-code-braces: PackageFilterTypeDef](./type_defs.md#packagefiltertypedef) 
 ## BatchGetFreeTrialInfoResponseTypeDef
 
 ```python title="Usage Example"
@@ -3042,27 +3044,29 @@ class FindingTypeDef(TypedDict):
     findingArn: str,
     firstObservedAt: datetime,
     lastObservedAt: datetime,
-    remediation: RemediationTypeDef,  # (4)
-    resources: List[ResourceTypeDef],  # (5)
-    severity: SeverityType,  # (6)
-    status: FindingStatusType,  # (7)
-    type: FindingTypeType,  # (8)
+    remediation: RemediationTypeDef,  # (5)
+    resources: List[ResourceTypeDef],  # (6)
+    severity: SeverityType,  # (7)
+    status: FindingStatusType,  # (8)
+    type: FindingTypeType,  # (9)
+    fixAvailable: NotRequired[FixAvailableType],  # (1)
     inspectorScore: NotRequired[float],
-    inspectorScoreDetails: NotRequired[InspectorScoreDetailsTypeDef],  # (1)
-    networkReachabilityDetails: NotRequired[NetworkReachabilityDetailsTypeDef],  # (2)
-    packageVulnerabilityDetails: NotRequired[PackageVulnerabilityDetailsTypeDef],  # (3)
+    inspectorScoreDetails: NotRequired[InspectorScoreDetailsTypeDef],  # (2)
+    networkReachabilityDetails: NotRequired[NetworkReachabilityDetailsTypeDef],  # (3)
+    packageVulnerabilityDetails: NotRequired[PackageVulnerabilityDetailsTypeDef],  # (4)
     title: NotRequired[str],
     updatedAt: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: InspectorScoreDetailsTypeDef](./type_defs.md#inspectorscoredetailstypedef) 
-2. See [:material-code-braces: NetworkReachabilityDetailsTypeDef](./type_defs.md#networkreachabilitydetailstypedef) 
-3. See [:material-code-braces: PackageVulnerabilityDetailsTypeDef](./type_defs.md#packagevulnerabilitydetailstypedef) 
-4. See [:material-code-braces: RemediationTypeDef](./type_defs.md#remediationtypedef) 
-5. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
-6. See [:material-code-brackets: SeverityType](./literals.md#severitytype) 
-7. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
-8. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
+1. See [:material-code-brackets: FixAvailableType](./literals.md#fixavailabletype) 
+2. See [:material-code-braces: InspectorScoreDetailsTypeDef](./type_defs.md#inspectorscoredetailstypedef) 
+3. See [:material-code-braces: NetworkReachabilityDetailsTypeDef](./type_defs.md#networkreachabilitydetailstypedef) 
+4. See [:material-code-braces: PackageVulnerabilityDetailsTypeDef](./type_defs.md#packagevulnerabilitydetailstypedef) 
+5. See [:material-code-braces: RemediationTypeDef](./type_defs.md#remediationtypedef) 
+6. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+7. See [:material-code-brackets: SeverityType](./literals.md#severitytype) 
+8. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+9. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
 ## ListFiltersResponseTypeDef
 
 ```python title="Usage Example"

@@ -369,6 +369,22 @@ FindingTypeType = Literal[
     "PACKAGE_VULNERABILITY",
 ]
 ```
+## FixAvailableType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import FixAvailableType
+
+def get_value() -> FixAvailableType:
+    return "NO"
+```
+
+```python title="Definition"
+FixAvailableType = Literal[
+    "NO",
+    "PARTIAL",
+    "YES",
+]
+```
 ## FreeTrialInfoErrorCodeType
 
 ```python title="Usage Example"
@@ -802,6 +818,7 @@ ScanStatusReasonType = Literal[
     "EC2_INSTANCE_STOPPED",
     "IMAGE_SIZE_EXCEEDED",
     "INTERNAL_ERROR",
+    "NO_INVENTORY",
     "NO_RESOURCES_FOUND",
     "PENDING_DISABLE",
     "PENDING_INITIAL_SCAN",
@@ -809,6 +826,7 @@ ScanStatusReasonType = Literal[
     "SCAN_ELIGIBILITY_EXPIRED",
     "SCAN_FREQUENCY_MANUAL",
     "SCAN_FREQUENCY_SCAN_ON_PUSH",
+    "STALE_INVENTORY",
     "SUCCESSFUL",
     "UNMANAGED_EC2_INSTANCE",
     "UNSUPPORTED_OS",

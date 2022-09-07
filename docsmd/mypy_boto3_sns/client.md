@@ -324,6 +324,7 @@ def create_topic(
     Name: str,
     Attributes: Mapping[str, str] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
+    DataProtectionPolicy: str = ...,
 ) -> CreateTopicResponseTypeDef:  # (2)
     ...
 ```
@@ -477,6 +478,36 @@ def generate_presigned_url(
     ...
 ```
 
+
+### get\_data\_protection\_policy
+
+Retrieves the specified inline `DataProtectionPolicy` document that is stored in
+the specified Amazon SNS topic.
+
+Type annotations and code completion for `#!python boto3.client("sns").get_data_protection_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_data_protection_policy)
+
+```python title="Method definition"
+def get_data_protection_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetDataProtectionPolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataProtectionPolicyResponseTypeDef](./type_defs.md#getdataprotectionpolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataProtectionPolicyInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.get_data_protection_policy(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataProtectionPolicyInputRequestTypeDef](./type_defs.md#getdataprotectionpolicyinputrequesttypedef) 
 
 ### get\_endpoint\_attributes
 
@@ -1013,6 +1044,38 @@ parent.publish_batch(**kwargs)
 ```
 
 1. See [:material-code-braces: PublishBatchInputRequestTypeDef](./type_defs.md#publishbatchinputrequesttypedef) 
+
+### put\_data\_protection\_policy
+
+Adds or updates an inline policy document that is stored in the specified Amazon
+SNS topic.
+
+Type annotations and code completion for `#!python boto3.client("sns").put_data_protection_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.put_data_protection_policy)
+
+```python title="Method definition"
+def put_data_protection_policy(
+    self,
+    *,
+    ResourceArn: str,
+    DataProtectionPolicy: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutDataProtectionPolicyInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "DataProtectionPolicy": ...,
+}
+
+parent.put_data_protection_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutDataProtectionPolicyInputRequestTypeDef](./type_defs.md#putdataprotectionpolicyinputrequesttypedef) 
 
 ### remove\_permission
 

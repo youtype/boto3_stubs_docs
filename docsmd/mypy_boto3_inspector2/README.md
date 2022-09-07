@@ -128,6 +128,7 @@ def get_value() -> AccountSortByType:
 - [FindingStatusType](./literals.md#findingstatustype)
 - [FindingTypeSortByType](./literals.md#findingtypesortbytype)
 - [FindingTypeType](./literals.md#findingtypetype)
+- [FixAvailableType](./literals.md#fixavailabletype)
 - [FreeTrialInfoErrorCodeType](./literals.md#freetrialinfoerrorcodetype)
 - [FreeTrialStatusType](./literals.md#freetrialstatustype)
 - [FreeTrialTypeType](./literals.md#freetrialtypetype)

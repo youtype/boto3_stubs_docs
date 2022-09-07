@@ -16349,6 +16349,9 @@ class ProductionVariantTypeDef(TypedDict):
     AcceleratorType: NotRequired[ProductionVariantAcceleratorTypeType],  # (2)
     CoreDumpConfig: NotRequired[ProductionVariantCoreDumpConfigTypeDef],  # (3)
     ServerlessConfig: NotRequired[ProductionVariantServerlessConfigTypeDef],  # (4)
+    VolumeSizeInGB: NotRequired[int],
+    ModelDataDownloadTimeoutInSeconds: NotRequired[int],
+    ContainerStartupHealthCheckTimeoutInSeconds: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype) 
