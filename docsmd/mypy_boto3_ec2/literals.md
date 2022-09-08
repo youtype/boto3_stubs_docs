@@ -5140,6 +5140,7 @@ def get_value() -> LogDestinationTypeType:
 ```python title="Definition"
 LogDestinationTypeType = Literal[
     "cloud-watch-logs",
+    "kinesis-data-firehose",
     "s3",
 ]
 ```

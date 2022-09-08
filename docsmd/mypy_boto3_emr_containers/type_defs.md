@@ -204,6 +204,23 @@ class DescribeVirtualClusterRequestRequestTypeDef(TypedDict):
     id: str,
 ```
 
+## SparkSqlJobDriverTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import SparkSqlJobDriverTypeDef
+
+def get_value() -> SparkSqlJobDriverTypeDef:
+    return {
+        "entryPoint": ...,
+    }
+```
+
+```python title="Definition"
+class SparkSqlJobDriverTypeDef(TypedDict):
+    entryPoint: NotRequired[str],
+    sparkSqlParameters: NotRequired[str],
+```
+
 ## SparkSubmitJobDriverTypeDef
 
 ```python title="Usage Example"
@@ -562,9 +579,11 @@ def get_value() -> JobDriverTypeDef:
 ```python title="Definition"
 class JobDriverTypeDef(TypedDict):
     sparkSubmitJobDriver: NotRequired[SparkSubmitJobDriverTypeDef],  # (1)
+    sparkSqlJobDriver: NotRequired[SparkSqlJobDriverTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: SparkSubmitJobDriverTypeDef](./type_defs.md#sparksubmitjobdrivertypedef) 
+2. See [:material-code-braces: SparkSqlJobDriverTypeDef](./type_defs.md#sparksqljobdrivertypedef) 
 ## ListJobRunsRequestListJobRunsPaginateTypeDef
 
 ```python title="Usage Example"

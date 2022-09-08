@@ -106,6 +106,7 @@ except (
     client.InvalidResultAttributeException,
     client.InvalidRole,
     client.InvalidSchedule,
+    client.InvalidTag,
     client.InvalidTarget,
     client.InvalidTargetMaps,
     client.InvalidTypeNameException,
@@ -399,7 +400,8 @@ def create_association(
     TargetLocations: Sequence[TargetLocationTypeDef] = ...,  # (5)
     ScheduleOffset: int = ...,
     TargetMaps: Sequence[Mapping[str, Sequence[str]]] = ...,
-) -> CreateAssociationResultTypeDef:  # (6)
+    Tags: Sequence[TagTypeDef] = ...,  # (6)
+) -> CreateAssociationResultTypeDef:  # (7)
     ...
 ```
 
@@ -408,7 +410,8 @@ def create_association(
 3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
 4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-6. See [:material-code-braces: CreateAssociationResultTypeDef](./type_defs.md#createassociationresulttypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: CreateAssociationResultTypeDef](./type_defs.md#createassociationresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

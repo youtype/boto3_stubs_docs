@@ -612,6 +612,24 @@ class JsonFormatDescriptorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JsonFileCompressionType](./literals.md#jsonfilecompressiontype) 
+## FilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "DimensionValue": ...,
+    }
+```
+
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    DimensionValue: NotRequired[str],
+    FilterOperation: NotRequired[FilterOperationType],  # (1)
+```
+
+1. See [:material-code-brackets: FilterOperationType](./literals.md#filteroperationtype) 
 ## GetAnomalyGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1445,6 +1463,24 @@ class FileFormatDescriptorTypeDef(TypedDict):
 
 1. See [:material-code-braces: CsvFormatDescriptorTypeDef](./type_defs.md#csvformatdescriptortypedef) 
 2. See [:material-code-braces: JsonFormatDescriptorTypeDef](./type_defs.md#jsonformatdescriptortypedef) 
+## MetricSetDimensionFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.type_defs import MetricSetDimensionFilterTypeDef
+
+def get_value() -> MetricSetDimensionFilterTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class MetricSetDimensionFilterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    FilterList: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## GetFeedbackResponseTypeDef
 
 ```python title="Usage Example"
@@ -2019,12 +2055,14 @@ class CreateMetricSetRequestRequestTypeDef(TypedDict):
     MetricSetFrequency: NotRequired[FrequencyType],  # (4)
     Timezone: NotRequired[str],
     Tags: NotRequired[Mapping[str, str]],
+    DimensionFilterList: NotRequired[Sequence[MetricSetDimensionFilterTypeDef]],  # (5)
 ```
 
 1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
 2. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
 3. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
 4. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
+5. See [:material-code-braces: MetricSetDimensionFilterTypeDef](./type_defs.md#metricsetdimensionfiltertypedef) 
 ## DescribeMetricSetResponseTypeDef
 
 ```python title="Usage Example"
@@ -2045,6 +2083,7 @@ def get_value() -> DescribeMetricSetResponseTypeDef:
         "MetricSetFrequency": ...,
         "Timezone": ...,
         "MetricSource": ...,
+        "DimensionFilterList": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2064,14 +2103,16 @@ class DescribeMetricSetResponseTypeDef(TypedDict):
     MetricSetFrequency: FrequencyType,  # (3)
     Timezone: str,
     MetricSource: MetricSourceTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    DimensionFilterList: List[MetricSetDimensionFilterTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
 2. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
 3. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
 4. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-braces: MetricSetDimensionFilterTypeDef](./type_defs.md#metricsetdimensionfiltertypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMetricSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2093,12 +2134,14 @@ class UpdateMetricSetRequestRequestTypeDef(TypedDict):
     DimensionList: NotRequired[Sequence[str]],
     MetricSetFrequency: NotRequired[FrequencyType],  # (3)
     MetricSource: NotRequired[MetricSourceTypeDef],  # (4)
+    DimensionFilterList: NotRequired[Sequence[MetricSetDimensionFilterTypeDef]],  # (5)
 ```
 
 1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
 2. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
 3. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
 4. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
+5. See [:material-code-braces: MetricSetDimensionFilterTypeDef](./type_defs.md#metricsetdimensionfiltertypedef) 
 ## DetectedMetricSourceTypeDef
 
 ```python title="Usage Example"

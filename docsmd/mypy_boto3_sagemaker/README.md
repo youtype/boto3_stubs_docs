@@ -207,6 +207,7 @@ def get_value() -> ActionStatusType:
 - [AutoMLJobStatusType](./literals.md#automljobstatustype)
 - [AutoMLMetricEnumType](./literals.md#automlmetricenumtype)
 - [AutoMLMetricExtendedEnumType](./literals.md#automlmetricextendedenumtype)
+- [AutoMLModeType](./literals.md#automlmodetype)
 - [AutoMLS3DataTypeType](./literals.md#automls3datatypetype)
 - [AutoMLSortByType](./literals.md#automlsortbytype)
 - [AutoMLSortOrderType](./literals.md#automlsortordertype)

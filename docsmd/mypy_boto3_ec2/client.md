@@ -2141,6 +2141,7 @@ def create_flow_logs(
     DryRun: bool = ...,
     ClientToken: str = ...,
     DeliverLogsPermissionArn: str = ...,
+    DeliverCrossAccountRole: str = ...,
     LogGroupName: str = ...,
     TrafficType: TrafficTypeType = ...,  # (2)
     LogDestinationType: LogDestinationTypeType = ...,  # (3)

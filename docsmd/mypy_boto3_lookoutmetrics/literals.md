@@ -165,6 +165,20 @@ DataQualityMetricTypeType = Literal[
     "TIME_SERIES_COUNT",
 ]
 ```
+## FilterOperationType
+
+```python title="Usage Example"
+from mypy_boto3_lookoutmetrics.literals import FilterOperationType
+
+def get_value() -> FilterOperationType:
+    return "EQUALS"
+```
+
+```python title="Definition"
+FilterOperationType = Literal[
+    "EQUALS",
+]
+```
 ## FrequencyType
 
 ```python title="Usage Example"

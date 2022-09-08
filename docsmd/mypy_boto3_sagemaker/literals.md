@@ -446,6 +446,22 @@ AutoMLMetricExtendedEnumType = Literal[
     "RMSE",
 ]
 ```
+## AutoMLModeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import AutoMLModeType
+
+def get_value() -> AutoMLModeType:
+    return "AUTO"
+```
+
+```python title="Definition"
+AutoMLModeType = Literal[
+    "AUTO",
+    "ENSEMBLING",
+    "HYPERPARAMETER_TUNING",
+]
+```
 ## AutoMLS3DataTypeType
 
 ```python title="Usage Example"

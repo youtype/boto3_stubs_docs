@@ -143,6 +143,7 @@ def get_value() -> CancelJobRunRequestRequestTypeDef:
 - [DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef)
 - [DescribeManagedEndpointRequestRequestTypeDef](./type_defs.md#describemanagedendpointrequestrequesttypedef)
 - [DescribeVirtualClusterRequestRequestTypeDef](./type_defs.md#describevirtualclusterrequestrequesttypedef)
+- [SparkSqlJobDriverTypeDef](./type_defs.md#sparksqljobdrivertypedef)
 - [SparkSubmitJobDriverTypeDef](./type_defs.md#sparksubmitjobdrivertypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef)

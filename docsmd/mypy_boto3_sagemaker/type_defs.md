@@ -16884,12 +16884,14 @@ class AutoMLJobConfigTypeDef(TypedDict):
     SecurityConfig: NotRequired[AutoMLSecurityConfigTypeDef],  # (2)
     DataSplitConfig: NotRequired[AutoMLDataSplitConfigTypeDef],  # (3)
     CandidateGenerationConfig: NotRequired[AutoMLCandidateGenerationConfigTypeDef],  # (4)
+    Mode: NotRequired[AutoMLModeType],  # (5)
 ```
 
 1. See [:material-code-braces: AutoMLJobCompletionCriteriaTypeDef](./type_defs.md#automljobcompletioncriteriatypedef) 
 2. See [:material-code-braces: AutoMLSecurityConfigTypeDef](./type_defs.md#automlsecurityconfigtypedef) 
 3. See [:material-code-braces: AutoMLDataSplitConfigTypeDef](./type_defs.md#automldatasplitconfigtypedef) 
 4. See [:material-code-braces: AutoMLCandidateGenerationConfigTypeDef](./type_defs.md#automlcandidategenerationconfigtypedef) 
+5. See [:material-code-brackets: AutoMLModeType](./literals.md#automlmodetype) 
 ## LabelingJobAlgorithmsConfigTypeDef
 
 ```python title="Usage Example"

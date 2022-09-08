@@ -8739,6 +8739,7 @@ class CreateAssociationRequestRequestTypeDef(TypedDict):
     TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
     ScheduleOffset: NotRequired[int],
     TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (6)
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -8746,6 +8747,7 @@ class CreateAssociationRequestRequestTypeDef(TypedDict):
 3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
 4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"

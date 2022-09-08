@@ -838,6 +838,60 @@ DvbSubOcrLanguageType = Literal[
     "SPA",
 ]
 ```
+## Eac3AtmosCodingModeType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import Eac3AtmosCodingModeType
+
+def get_value() -> Eac3AtmosCodingModeType:
+    return "CODING_MODE_5_1_4"
+```
+
+```python title="Definition"
+Eac3AtmosCodingModeType = Literal[
+    "CODING_MODE_5_1_4",
+    "CODING_MODE_7_1_4",
+    "CODING_MODE_9_1_6",
+]
+```
+## Eac3AtmosDrcLineType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import Eac3AtmosDrcLineType
+
+def get_value() -> Eac3AtmosDrcLineType:
+    return "FILM_LIGHT"
+```
+
+```python title="Definition"
+Eac3AtmosDrcLineType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
+## Eac3AtmosDrcRfType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import Eac3AtmosDrcRfType
+
+def get_value() -> Eac3AtmosDrcRfType:
+    return "FILM_LIGHT"
+```
+
+```python title="Definition"
+Eac3AtmosDrcRfType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
 ## Eac3AttenuationControlType
 
 ```python title="Usage Example"

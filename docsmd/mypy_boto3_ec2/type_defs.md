@@ -27031,6 +27031,7 @@ class FlowLogTypeDef(TypedDict):
     CreationTime: NotRequired[datetime],
     DeliverLogsErrorMessage: NotRequired[str],
     DeliverLogsPermissionArn: NotRequired[str],
+    DeliverCrossAccountRole: NotRequired[str],
     DeliverLogsStatus: NotRequired[str],
     FlowLogId: NotRequired[str],
     FlowLogStatus: NotRequired[str],
@@ -32005,6 +32006,7 @@ class CreateFlowLogsRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     ClientToken: NotRequired[str],
     DeliverLogsPermissionArn: NotRequired[str],
+    DeliverCrossAccountRole: NotRequired[str],
     LogGroupName: NotRequired[str],
     TrafficType: NotRequired[TrafficTypeType],  # (2)
     LogDestinationType: NotRequired[LogDestinationTypeType],  # (3)

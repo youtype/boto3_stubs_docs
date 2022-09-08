@@ -148,6 +148,31 @@ class InputChannelLevelTypeDef(TypedDict):
     InputChannel: int,
 ```
 
+## Eac3AtmosSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import Eac3AtmosSettingsTypeDef
+
+def get_value() -> Eac3AtmosSettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
+```
+
+```python title="Definition"
+class Eac3AtmosSettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[float],
+    CodingMode: NotRequired[Eac3AtmosCodingModeType],  # (1)
+    Dialnorm: NotRequired[int],
+    DrcLine: NotRequired[Eac3AtmosDrcLineType],  # (2)
+    DrcRf: NotRequired[Eac3AtmosDrcRfType],  # (3)
+    HeightTrim: NotRequired[float],
+    SurroundTrim: NotRequired[float],
+```
+
+1. See [:material-code-brackets: Eac3AtmosCodingModeType](./literals.md#eac3atmoscodingmodetype) 
+2. See [:material-code-brackets: Eac3AtmosDrcLineType](./literals.md#eac3atmosdrclinetype) 
+3. See [:material-code-brackets: Eac3AtmosDrcRfType](./literals.md#eac3atmosdrcrftype) 
 ## Eac3SettingsTypeDef
 
 ```python title="Usage Example"
@@ -3095,17 +3120,19 @@ def get_value() -> AudioCodecSettingsTypeDef:
 class AudioCodecSettingsTypeDef(TypedDict):
     AacSettings: NotRequired[AacSettingsTypeDef],  # (1)
     Ac3Settings: NotRequired[Ac3SettingsTypeDef],  # (2)
-    Eac3Settings: NotRequired[Eac3SettingsTypeDef],  # (3)
-    Mp2Settings: NotRequired[Mp2SettingsTypeDef],  # (4)
+    Eac3AtmosSettings: NotRequired[Eac3AtmosSettingsTypeDef],  # (3)
+    Eac3Settings: NotRequired[Eac3SettingsTypeDef],  # (4)
+    Mp2Settings: NotRequired[Mp2SettingsTypeDef],  # (5)
     PassThroughSettings: NotRequired[Mapping[str, Any]],
-    WavSettings: NotRequired[WavSettingsTypeDef],  # (5)
+    WavSettings: NotRequired[WavSettingsTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: AacSettingsTypeDef](./type_defs.md#aacsettingstypedef) 
 2. See [:material-code-braces: Ac3SettingsTypeDef](./type_defs.md#ac3settingstypedef) 
-3. See [:material-code-braces: Eac3SettingsTypeDef](./type_defs.md#eac3settingstypedef) 
-4. See [:material-code-braces: Mp2SettingsTypeDef](./type_defs.md#mp2settingstypedef) 
-5. See [:material-code-braces: WavSettingsTypeDef](./type_defs.md#wavsettingstypedef) 
+3. See [:material-code-braces: Eac3AtmosSettingsTypeDef](./type_defs.md#eac3atmossettingstypedef) 
+4. See [:material-code-braces: Eac3SettingsTypeDef](./type_defs.md#eac3settingstypedef) 
+5. See [:material-code-braces: Mp2SettingsTypeDef](./type_defs.md#mp2settingstypedef) 
+6. See [:material-code-braces: WavSettingsTypeDef](./type_defs.md#wavsettingstypedef) 
 ## AudioOnlyHlsSettingsTypeDef
 
 ```python title="Usage Example"
@@ -4667,6 +4694,7 @@ def get_value() -> H265ColorSpaceSettingsTypeDef:
 ```python title="Definition"
 class H265ColorSpaceSettingsTypeDef(TypedDict):
     ColorSpacePassthroughSettings: NotRequired[Mapping[str, Any]],
+    DolbyVision81Settings: NotRequired[Mapping[str, Any]],
     Hdr10Settings: NotRequired[Hdr10SettingsTypeDef],  # (1)
     Rec601Settings: NotRequired[Mapping[str, Any]],
     Rec709Settings: NotRequired[Mapping[str, Any]],

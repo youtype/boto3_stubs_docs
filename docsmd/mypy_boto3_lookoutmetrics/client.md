@@ -238,7 +238,8 @@ def create_metric_set(
     MetricSetFrequency: FrequencyType = ...,  # (4)
     Timezone: str = ...,
     Tags: Mapping[str, str] = ...,
-) -> CreateMetricSetResponseTypeDef:  # (5)
+    DimensionFilterList: Sequence[MetricSetDimensionFilterTypeDef] = ...,  # (5)
+) -> CreateMetricSetResponseTypeDef:  # (6)
     ...
 ```
 
@@ -246,7 +247,8 @@ def create_metric_set(
 2. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
 3. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
 4. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
-5. See [:material-code-braces: CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef) 
+5. See [:material-code-braces: MetricSetDimensionFilterTypeDef](./type_defs.md#metricsetdimensionfiltertypedef) 
+6. See [:material-code-braces: CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1048,7 +1050,8 @@ def update_metric_set(
     DimensionList: Sequence[str] = ...,
     MetricSetFrequency: FrequencyType = ...,  # (3)
     MetricSource: MetricSourceTypeDef = ...,  # (4)
-) -> UpdateMetricSetResponseTypeDef:  # (5)
+    DimensionFilterList: Sequence[MetricSetDimensionFilterTypeDef] = ...,  # (5)
+) -> UpdateMetricSetResponseTypeDef:  # (6)
     ...
 ```
 
@@ -1056,7 +1059,8 @@ def update_metric_set(
 2. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
 3. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
 4. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
-5. See [:material-code-braces: UpdateMetricSetResponseTypeDef](./type_defs.md#updatemetricsetresponsetypedef) 
+5. See [:material-code-braces: MetricSetDimensionFilterTypeDef](./type_defs.md#metricsetdimensionfiltertypedef) 
+6. See [:material-code-braces: UpdateMetricSetResponseTypeDef](./type_defs.md#updatemetricsetresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

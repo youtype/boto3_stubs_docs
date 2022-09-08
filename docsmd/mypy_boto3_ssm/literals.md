@@ -1978,11 +1978,12 @@ ResourceDataSyncS3FormatType = Literal[
 from mypy_boto3_ssm.literals import ResourceTypeForTaggingType
 
 def get_value() -> ResourceTypeForTaggingType:
-    return "Automation"
+    return "Association"
 ```
 
 ```python title="Definition"
 ResourceTypeForTaggingType = Literal[
+    "Association",
     "Automation",
     "Document",
     "MaintenanceWindow",
