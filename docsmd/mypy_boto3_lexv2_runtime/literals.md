@@ -101,11 +101,12 @@ SentimentTypeType = Literal[
 from mypy_boto3_lexv2_runtime.literals import ShapeType
 
 def get_value() -> ShapeType:
-    return "List"
+    return "Composite"
 ```
 
 ```python title="Definition"
 ShapeType = Literal[
+    "Composite",
     "List",
     "Scalar",
 ]

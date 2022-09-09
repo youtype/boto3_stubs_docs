@@ -7,6 +7,21 @@
     Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
     type annotations stubs module [mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
+## DestinationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.literals import DestinationTypeType
+
+def get_value() -> DestinationTypeType:
+    return "AWS_SERVICE"
+```
+
+```python title="Definition"
+DestinationTypeType = Literal[
+    "AWS_SERVICE",
+    "EVENT_DATA_STORE",
+]
+```
 ## EventCategoryType
 
 ```python title="Usage Example"

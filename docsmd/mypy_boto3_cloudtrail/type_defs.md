@@ -88,6 +88,23 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## ChannelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ChannelTypeDef
+
+def get_value() -> ChannelTypeDef:
+    return {
+        "ChannelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ChannelTypeDef(TypedDict):
+    ChannelArn: NotRequired[str],
+    Name: NotRequired[str],
+```
+
 ## DataResourceTypeDef
 
 ```python title="Usage Example"
@@ -223,6 +240,25 @@ class TrailTypeDef(TypedDict):
     IsOrganizationTrail: NotRequired[bool],
 ```
 
+## DestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "Type": ...,
+        "Location": ...,
+    }
+```
+
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    Type: DestinationTypeType,  # (1)
+    Location: str,
+```
+
+1. See [:material-code-brackets: DestinationTypeType](./literals.md#destinationtypetype) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"
@@ -238,6 +274,22 @@ def get_value() -> ResourceTypeDef:
 class ResourceTypeDef(TypedDict):
     ResourceType: NotRequired[str],
     ResourceName: NotRequired[str],
+```
+
+## GetChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import GetChannelRequestRequestTypeDef
+
+def get_value() -> GetChannelRequestRequestTypeDef:
+    return {
+        "Channel": ...,
+    }
+```
+
+```python title="Definition"
+class GetChannelRequestRequestTypeDef(TypedDict):
+    Channel: str,
 ```
 
 ## GetEventDataStoreRequestRequestTypeDef
@@ -373,6 +425,23 @@ def get_value() -> GetTrailStatusRequestRequestTypeDef:
 ```python title="Definition"
 class GetTrailStatusRequestRequestTypeDef(TypedDict):
     Name: str,
+```
+
+## ListChannelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListChannelsRequestRequestTypeDef
+
+def get_value() -> ListChannelsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
 ## ListEventDataStoresRequestRequestTypeDef
@@ -929,6 +998,28 @@ class UpdateTrailResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListChannelsResponseTypeDef
+
+def get_value() -> ListChannelsResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsResponseTypeDef(TypedDict):
+    Channels: List[ChannelTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventSelectorTypeDef
 
 ```python title="Usage Example"
@@ -1495,6 +1586,24 @@ class RestoreEventDataStoreResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: EventDataStoreStatusType](./literals.md#eventdatastorestatustype) 
 2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import SourceConfigTypeDef
+
+def get_value() -> SourceConfigTypeDef:
+    return {
+        "ApplyToAllRegions": ...,
+    }
+```
+
+```python title="Definition"
+class SourceConfigTypeDef(TypedDict):
+    ApplyToAllRegions: NotRequired[bool],
+    AdvancedEventSelectors: NotRequired[List[AdvancedEventSelectorTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
 ## UpdateEventDataStoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1671,3 +1780,32 @@ class ListEventDataStoresResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EventDataStoreTypeDef](./type_defs.md#eventdatastoretypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import GetChannelResponseTypeDef
+
+def get_value() -> GetChannelResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Name": ...,
+        "Source": ...,
+        "SourceConfig": ...,
+        "Destinations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetChannelResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Name: str,
+    Source: str,
+    SourceConfig: SourceConfigTypeDef,  # (1)
+    Destinations: List[DestinationTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

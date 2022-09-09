@@ -682,6 +682,24 @@ class LambdaCodeHookTypeDef(TypedDict):
     codeHookInterfaceVersion: str,
 ```
 
+## SubSlotTypeCompositionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SubSlotTypeCompositionTypeDef
+
+def get_value() -> SubSlotTypeCompositionTypeDef:
+    return {
+        "name": ...,
+        "slotTypeId": ...,
+    }
+```
+
+```python title="Definition"
+class SubSlotTypeCompositionTypeDef(TypedDict):
+    name: str,
+    slotTypeId: str,
+```
+
 ## ConditionTypeDef
 
 ```python title="Usage Example"
@@ -3478,6 +3496,23 @@ class CodeHookSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LambdaCodeHookTypeDef](./type_defs.md#lambdacodehooktypedef) 
+## CompositeSlotTypeSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import CompositeSlotTypeSettingTypeDef
+
+def get_value() -> CompositeSlotTypeSettingTypeDef:
+    return {
+        "subSlots": ...,
+    }
+```
+
+```python title="Definition"
+class CompositeSlotTypeSettingTypeDef(TypedDict):
+    subSlots: NotRequired[Sequence[SubSlotTypeCompositionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SubSlotTypeCompositionTypeDef](./type_defs.md#subslottypecompositiontypedef) 
 ## IntentSummaryTypeDef
 
 ```python title="Usage Example"
@@ -4697,11 +4732,13 @@ class CreateSlotTypeRequestRequestTypeDef(TypedDict):
     valueSelectionSetting: NotRequired[SlotValueSelectionSettingTypeDef],  # (2)
     parentSlotTypeSignature: NotRequired[str],
     externalSourceSetting: NotRequired[ExternalSourceSettingTypeDef],  # (3)
+    compositeSlotTypeSetting: NotRequired[CompositeSlotTypeSettingTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
 2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
 3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
+4. See [:material-code-braces: CompositeSlotTypeSettingTypeDef](./type_defs.md#compositeslottypesettingtypedef) 
 ## CreateSlotTypeResponseTypeDef
 
 ```python title="Usage Example"
@@ -4720,6 +4757,7 @@ def get_value() -> CreateSlotTypeResponseTypeDef:
         "localeId": ...,
         "creationDateTime": ...,
         "externalSourceSetting": ...,
+        "compositeSlotTypeSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4737,13 +4775,15 @@ class CreateSlotTypeResponseTypeDef(TypedDict):
     localeId: str,
     creationDateTime: datetime,
     externalSourceSetting: ExternalSourceSettingTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    compositeSlotTypeSetting: CompositeSlotTypeSettingTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
 2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
 3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: CompositeSlotTypeSettingTypeDef](./type_defs.md#compositeslottypesettingtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSlotTypeResponseTypeDef
 
 ```python title="Usage Example"
@@ -4763,6 +4803,7 @@ def get_value() -> DescribeSlotTypeResponseTypeDef:
         "creationDateTime": ...,
         "lastUpdatedDateTime": ...,
         "externalSourceSetting": ...,
+        "compositeSlotTypeSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4781,13 +4822,15 @@ class DescribeSlotTypeResponseTypeDef(TypedDict):
     creationDateTime: datetime,
     lastUpdatedDateTime: datetime,
     externalSourceSetting: ExternalSourceSettingTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    compositeSlotTypeSetting: CompositeSlotTypeSettingTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
 2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
 3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: CompositeSlotTypeSettingTypeDef](./type_defs.md#compositeslottypesettingtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSlotTypeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4815,11 +4858,13 @@ class UpdateSlotTypeRequestRequestTypeDef(TypedDict):
     valueSelectionSetting: NotRequired[SlotValueSelectionSettingTypeDef],  # (2)
     parentSlotTypeSignature: NotRequired[str],
     externalSourceSetting: NotRequired[ExternalSourceSettingTypeDef],  # (3)
+    compositeSlotTypeSetting: NotRequired[CompositeSlotTypeSettingTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
 2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
 3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
+4. See [:material-code-braces: CompositeSlotTypeSettingTypeDef](./type_defs.md#compositeslottypesettingtypedef) 
 ## UpdateSlotTypeResponseTypeDef
 
 ```python title="Usage Example"
@@ -4839,6 +4884,7 @@ def get_value() -> UpdateSlotTypeResponseTypeDef:
         "creationDateTime": ...,
         "lastUpdatedDateTime": ...,
         "externalSourceSetting": ...,
+        "compositeSlotTypeSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4857,13 +4903,15 @@ class UpdateSlotTypeResponseTypeDef(TypedDict):
     creationDateTime: datetime,
     lastUpdatedDateTime: datetime,
     externalSourceSetting: ExternalSourceSettingTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    compositeSlotTypeSetting: CompositeSlotTypeSettingTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
 2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
 3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: CompositeSlotTypeSettingTypeDef](./type_defs.md#compositeslottypesettingtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FulfillmentStartResponseSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -5475,6 +5523,29 @@ class ConditionalSpecificationTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConditionalBranchTypeDef](./type_defs.md#conditionalbranchtypedef) 
 2. See [:material-code-braces: DefaultConditionalBranchTypeDef](./type_defs.md#defaultconditionalbranchtypedef) 
+## SubSlotValueElicitationSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SubSlotValueElicitationSettingTypeDef
+
+def get_value() -> SubSlotValueElicitationSettingTypeDef:
+    return {
+        "promptSpecification": ...,
+    }
+```
+
+```python title="Definition"
+class SubSlotValueElicitationSettingTypeDef(TypedDict):
+    promptSpecification: PromptSpecificationTypeDef,  # (2)
+    defaultValueSpecification: NotRequired[SlotDefaultValueSpecificationTypeDef],  # (1)
+    sampleUtterances: NotRequired[Sequence[SampleUtteranceTypeDef]],  # (3)
+    waitAndContinueSpecification: NotRequired[WaitAndContinueSpecificationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: SlotDefaultValueSpecificationTypeDef](./type_defs.md#slotdefaultvaluespecificationtypedef) 
+2. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
+3. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+4. See [:material-code-braces: WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef) 
 ## IntentClosingSettingTypeDef
 
 ```python title="Usage Example"
@@ -5563,6 +5634,25 @@ class PostFulfillmentStatusSpecificationTypeDef(TypedDict):
 7. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
 8. See [:material-code-braces: DialogStateTypeDef](./type_defs.md#dialogstatetypedef) 
 9. See [:material-code-braces: ConditionalSpecificationTypeDef](./type_defs.md#conditionalspecificationtypedef) 
+## SpecificationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SpecificationsTypeDef
+
+def get_value() -> SpecificationsTypeDef:
+    return {
+        "slotTypeId": ...,
+        "valueElicitationSetting": ...,
+    }
+```
+
+```python title="Definition"
+class SpecificationsTypeDef(TypedDict):
+    slotTypeId: str,
+    valueElicitationSetting: SubSlotValueElicitationSettingTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: SubSlotValueElicitationSettingTypeDef](./type_defs.md#subslotvalueelicitationsettingtypedef) 
 ## DialogCodeHookInvocationSettingTypeDef
 
 ```python title="Usage Example"
@@ -5606,6 +5696,24 @@ class FulfillmentCodeHookSettingsTypeDef(TypedDict):
 
 1. See [:material-code-braces: PostFulfillmentStatusSpecificationTypeDef](./type_defs.md#postfulfillmentstatusspecificationtypedef) 
 2. See [:material-code-braces: FulfillmentUpdatesSpecificationTypeDef](./type_defs.md#fulfillmentupdatesspecificationtypedef) 
+## SubSlotSettingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import SubSlotSettingTypeDef
+
+def get_value() -> SubSlotSettingTypeDef:
+    return {
+        "expression": ...,
+    }
+```
+
+```python title="Definition"
+class SubSlotSettingTypeDef(TypedDict):
+    expression: NotRequired[str],
+    slotSpecifications: NotRequired[Mapping[str, SpecificationsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SpecificationsTypeDef](./type_defs.md#specificationstypedef) 
 ## InitialResponseSettingTypeDef
 
 ```python title="Usage Example"
@@ -6033,11 +6141,13 @@ class CreateSlotRequestRequestTypeDef(TypedDict):
     slotTypeId: NotRequired[str],
     obfuscationSetting: NotRequired[ObfuscationSettingTypeDef],  # (2)
     multipleValuesSetting: NotRequired[MultipleValuesSettingTypeDef],  # (3)
+    subSlotSetting: NotRequired[SubSlotSettingTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
 2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
 3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
+4. See [:material-code-braces: SubSlotSettingTypeDef](./type_defs.md#subslotsettingtypedef) 
 ## CreateSlotResponseTypeDef
 
 ```python title="Usage Example"
@@ -6057,6 +6167,7 @@ def get_value() -> CreateSlotResponseTypeDef:
         "intentId": ...,
         "creationDateTime": ...,
         "multipleValuesSetting": ...,
+        "subSlotSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -6075,13 +6186,15 @@ class CreateSlotResponseTypeDef(TypedDict):
     intentId: str,
     creationDateTime: datetime,
     multipleValuesSetting: MultipleValuesSettingTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    subSlotSetting: SubSlotSettingTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
 2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
 3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: SubSlotSettingTypeDef](./type_defs.md#subslotsettingtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSlotResponseTypeDef
 
 ```python title="Usage Example"
@@ -6102,6 +6215,7 @@ def get_value() -> DescribeSlotResponseTypeDef:
         "creationDateTime": ...,
         "lastUpdatedDateTime": ...,
         "multipleValuesSetting": ...,
+        "subSlotSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -6121,13 +6235,15 @@ class DescribeSlotResponseTypeDef(TypedDict):
     creationDateTime: datetime,
     lastUpdatedDateTime: datetime,
     multipleValuesSetting: MultipleValuesSettingTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    subSlotSetting: SubSlotSettingTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
 2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
 3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: SubSlotSettingTypeDef](./type_defs.md#subslotsettingtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSlotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6158,11 +6274,13 @@ class UpdateSlotRequestRequestTypeDef(TypedDict):
     slotTypeId: NotRequired[str],
     obfuscationSetting: NotRequired[ObfuscationSettingTypeDef],  # (2)
     multipleValuesSetting: NotRequired[MultipleValuesSettingTypeDef],  # (3)
+    subSlotSetting: NotRequired[SubSlotSettingTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
 2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
 3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
+4. See [:material-code-braces: SubSlotSettingTypeDef](./type_defs.md#subslotsettingtypedef) 
 ## UpdateSlotResponseTypeDef
 
 ```python title="Usage Example"
@@ -6183,6 +6301,7 @@ def get_value() -> UpdateSlotResponseTypeDef:
         "creationDateTime": ...,
         "lastUpdatedDateTime": ...,
         "multipleValuesSetting": ...,
+        "subSlotSetting": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -6202,10 +6321,12 @@ class UpdateSlotResponseTypeDef(TypedDict):
     creationDateTime: datetime,
     lastUpdatedDateTime: datetime,
     multipleValuesSetting: MultipleValuesSettingTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    subSlotSetting: SubSlotSettingTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
 2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
 3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: SubSlotSettingTypeDef](./type_defs.md#subslotsettingtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

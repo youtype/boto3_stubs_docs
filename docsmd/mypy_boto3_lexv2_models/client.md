@@ -451,14 +451,16 @@ def create_slot(
     slotTypeId: str = ...,
     obfuscationSetting: ObfuscationSettingTypeDef = ...,  # (2)
     multipleValuesSetting: MultipleValuesSettingTypeDef = ...,  # (3)
-) -> CreateSlotResponseTypeDef:  # (4)
+    subSlotSetting: SubSlotSettingTypeDef = ...,  # (4)
+) -> CreateSlotResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
 2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
 3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
-4. See [:material-code-braces: CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef) 
+4. See [:material-code-braces: SubSlotSettingTypeDef](./type_defs.md#subslotsettingtypedef) 
+5. See [:material-code-braces: CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -498,14 +500,16 @@ def create_slot_type(
     valueSelectionSetting: SlotValueSelectionSettingTypeDef = ...,  # (2)
     parentSlotTypeSignature: str = ...,
     externalSourceSetting: ExternalSourceSettingTypeDef = ...,  # (3)
-) -> CreateSlotTypeResponseTypeDef:  # (4)
+    compositeSlotTypeSetting: CompositeSlotTypeSettingTypeDef = ...,  # (4)
+) -> CreateSlotTypeResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
 2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
 3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
-4. See [:material-code-braces: CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef) 
+4. See [:material-code-braces: CompositeSlotTypeSettingTypeDef](./type_defs.md#compositeslottypesettingtypedef) 
+5. See [:material-code-braces: CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2412,14 +2416,16 @@ def update_slot(
     slotTypeId: str = ...,
     obfuscationSetting: ObfuscationSettingTypeDef = ...,  # (2)
     multipleValuesSetting: MultipleValuesSettingTypeDef = ...,  # (3)
-) -> UpdateSlotResponseTypeDef:  # (4)
+    subSlotSetting: SubSlotSettingTypeDef = ...,  # (4)
+) -> UpdateSlotResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
 2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
 3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
-4. See [:material-code-braces: UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef) 
+4. See [:material-code-braces: SubSlotSettingTypeDef](./type_defs.md#subslotsettingtypedef) 
+5. See [:material-code-braces: UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2459,14 +2465,16 @@ def update_slot_type(
     valueSelectionSetting: SlotValueSelectionSettingTypeDef = ...,  # (2)
     parentSlotTypeSignature: str = ...,
     externalSourceSetting: ExternalSourceSettingTypeDef = ...,  # (3)
-) -> UpdateSlotTypeResponseTypeDef:  # (4)
+    compositeSlotTypeSetting: CompositeSlotTypeSettingTypeDef = ...,  # (4)
+) -> UpdateSlotTypeResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
 2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
 3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
-4. See [:material-code-braces: UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef) 
+4. See [:material-code-braces: CompositeSlotTypeSettingTypeDef](./type_defs.md#compositeslottypesettingtypedef) 
+5. See [:material-code-braces: UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

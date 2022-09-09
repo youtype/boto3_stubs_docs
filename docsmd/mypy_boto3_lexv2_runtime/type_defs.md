@@ -121,10 +121,30 @@ class DialogActionTypeDef(TypedDict):
     type: DialogActionTypeType,  # (1)
     slotToElicit: NotRequired[str],
     slotElicitationStyle: NotRequired[StyleTypeType],  # (2)
+    subSlotToElicit: NotRequired[ElicitSubSlotTypeDef],  # (3)
 ```
 
 1. See [:material-code-brackets: DialogActionTypeType](./literals.md#dialogactiontypetype) 
 2. See [:material-code-brackets: StyleTypeType](./literals.md#styletypetype) 
+3. See [:material-code-braces: ElicitSubSlotTypeDef](./type_defs.md#elicitsubslottypedef) 
+## ElicitSubSlotTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_runtime.type_defs import ElicitSubSlotTypeDef
+
+def get_value() -> ElicitSubSlotTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ElicitSubSlotTypeDef(TypedDict):
+    name: str,
+    subSlotToElicit: NotRequired[ElicitSubSlotTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ElicitSubSlotTypeDef](./type_defs.md#elicitsubslottypedef) 
 ## GetSessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -213,6 +233,23 @@ class RuntimeHintValueTypeDef(TypedDict):
     phrase: str,
 ```
 
+## RuntimeHintsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintsTypeDef
+
+def get_value() -> RuntimeHintsTypeDef:
+    return {
+        "slotHints": ...,
+    }
+```
+
+```python title="Definition"
+class RuntimeHintsTypeDef(TypedDict):
+    slotHints: NotRequired[Dict[str, Dict[str, RuntimeHintDetailsTypeDef]]],  # (1)
+```
+
+1. See [:material-code-braces: RuntimeHintDetailsTypeDef](./type_defs.md#runtimehintdetailstypedef) 
 ## SentimentScoreTypeDef
 
 ```python title="Usage Example"
@@ -393,10 +430,12 @@ def get_value() -> RuntimeHintDetailsTypeDef:
 
 ```python title="Definition"
 class RuntimeHintDetailsTypeDef(TypedDict):
-    runtimeHintValues: List[RuntimeHintValueTypeDef],  # (1)
+    runtimeHintValues: NotRequired[List[RuntimeHintValueTypeDef]],  # (1)
+    subSlotHints: NotRequired[Dict[str, RuntimeHintDetailsTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: RuntimeHintValueTypeDef](./type_defs.md#runtimehintvaluetypedef) 
+2. See [:material-code-braces: RuntimeHintDetailsTypeDef](./type_defs.md#runtimehintdetailstypedef) 
 ## SentimentResponseTypeDef
 
 ```python title="Usage Example"
@@ -432,69 +471,13 @@ class SlotTypeDef(TypedDict):
     value: NotRequired[ValueTypeDef],  # (1)
     shape: NotRequired[ShapeType],  # (2)
     values: NotRequired[List[SlotTypeDef]],  # (3)
+    subSlots: NotRequired[Dict[str, SlotTypeDef]],  # (4)
 ```
 
 1. See [:material-code-braces: ValueTypeDef](./type_defs.md#valuetypedef) 
 2. See [:material-code-brackets: ShapeType](./literals.md#shapetype) 
 3. See [:material-code-braces: SlotTypeDef](./type_defs.md#slottypedef) 
-## MessageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_runtime.type_defs import MessageTypeDef
-
-def get_value() -> MessageTypeDef:
-    return {
-        "contentType": ...,
-    }
-```
-
-```python title="Definition"
-class MessageTypeDef(TypedDict):
-    contentType: MessageContentTypeType,  # (1)
-    content: NotRequired[str],
-    imageResponseCard: NotRequired[ImageResponseCardTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: MessageContentTypeType](./literals.md#messagecontenttypetype) 
-2. See [:material-code-braces: ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef) 
-## RuntimeHintsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintsTypeDef
-
-def get_value() -> RuntimeHintsTypeDef:
-    return {
-        "slotHints": ...,
-    }
-```
-
-```python title="Definition"
-class RuntimeHintsTypeDef(TypedDict):
-    slotHints: NotRequired[Dict[str, Dict[str, RuntimeHintDetailsTypeDef]]],  # (1)
-```
-
-1. See [:material-code-braces: RuntimeHintDetailsTypeDef](./type_defs.md#runtimehintdetailstypedef) 
-## InterpretationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_runtime.type_defs import InterpretationTypeDef
-
-def get_value() -> InterpretationTypeDef:
-    return {
-        "nluConfidence": ...,
-    }
-```
-
-```python title="Definition"
-class InterpretationTypeDef(TypedDict):
-    nluConfidence: NotRequired[ConfidenceScoreTypeDef],  # (1)
-    sentimentResponse: NotRequired[SentimentResponseTypeDef],  # (2)
-    intent: NotRequired[IntentTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: ConfidenceScoreTypeDef](./type_defs.md#confidencescoretypedef) 
-2. See [:material-code-braces: SentimentResponseTypeDef](./type_defs.md#sentimentresponsetypedef) 
-3. See [:material-code-braces: IntentTypeDef](./type_defs.md#intenttypedef) 
+4. See [:material-code-braces: SlotTypeDef](./type_defs.md#slottypedef) 
 ## SessionStateTypeDef
 
 ```python title="Usage Example"
@@ -520,34 +503,74 @@ class SessionStateTypeDef(TypedDict):
 2. See [:material-code-braces: IntentTypeDef](./type_defs.md#intenttypedef) 
 3. See [:material-code-braces: ActiveContextTypeDef](./type_defs.md#activecontexttypedef) 
 4. See [:material-code-braces: RuntimeHintsTypeDef](./type_defs.md#runtimehintstypedef) 
-## GetSessionResponseTypeDef
+## MessageTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_lexv2_runtime.type_defs import GetSessionResponseTypeDef
+from mypy_boto3_lexv2_runtime.type_defs import MessageTypeDef
 
-def get_value() -> GetSessionResponseTypeDef:
+def get_value() -> MessageTypeDef:
     return {
-        "sessionId": ...,
-        "messages": ...,
-        "interpretations": ...,
-        "sessionState": ...,
-        "ResponseMetadata": ...,
+        "contentType": ...,
     }
 ```
 
 ```python title="Definition"
-class GetSessionResponseTypeDef(TypedDict):
-    sessionId: str,
-    messages: List[MessageTypeDef],  # (1)
-    interpretations: List[InterpretationTypeDef],  # (2)
-    sessionState: SessionStateTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+class MessageTypeDef(TypedDict):
+    contentType: MessageContentTypeType,  # (1)
+    content: NotRequired[str],
+    imageResponseCard: NotRequired[ImageResponseCardTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
-2. See [:material-code-braces: InterpretationTypeDef](./type_defs.md#interpretationtypedef) 
-3. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: MessageContentTypeType](./literals.md#messagecontenttypetype) 
+2. See [:material-code-braces: ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef) 
+## InterpretationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_runtime.type_defs import InterpretationTypeDef
+
+def get_value() -> InterpretationTypeDef:
+    return {
+        "nluConfidence": ...,
+    }
+```
+
+```python title="Definition"
+class InterpretationTypeDef(TypedDict):
+    nluConfidence: NotRequired[ConfidenceScoreTypeDef],  # (1)
+    sentimentResponse: NotRequired[SentimentResponseTypeDef],  # (2)
+    intent: NotRequired[IntentTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ConfidenceScoreTypeDef](./type_defs.md#confidencescoretypedef) 
+2. See [:material-code-braces: SentimentResponseTypeDef](./type_defs.md#sentimentresponsetypedef) 
+3. See [:material-code-braces: IntentTypeDef](./type_defs.md#intenttypedef) 
+## RecognizeTextRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_runtime.type_defs import RecognizeTextRequestRequestTypeDef
+
+def get_value() -> RecognizeTextRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "localeId": ...,
+        "sessionId": ...,
+        "text": ...,
+    }
+```
+
+```python title="Definition"
+class RecognizeTextRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    text: str,
+    sessionState: NotRequired[SessionStateTypeDef],  # (1)
+    requestAttributes: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
 ## PutSessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -577,33 +600,34 @@ class PutSessionRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
 2. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
-## RecognizeTextRequestRequestTypeDef
+## GetSessionResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_lexv2_runtime.type_defs import RecognizeTextRequestRequestTypeDef
+from mypy_boto3_lexv2_runtime.type_defs import GetSessionResponseTypeDef
 
-def get_value() -> RecognizeTextRequestRequestTypeDef:
+def get_value() -> GetSessionResponseTypeDef:
     return {
-        "botId": ...,
-        "botAliasId": ...,
-        "localeId": ...,
         "sessionId": ...,
-        "text": ...,
+        "messages": ...,
+        "interpretations": ...,
+        "sessionState": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class RecognizeTextRequestRequestTypeDef(TypedDict):
-    botId: str,
-    botAliasId: str,
-    localeId: str,
+class GetSessionResponseTypeDef(TypedDict):
     sessionId: str,
-    text: str,
-    sessionState: NotRequired[SessionStateTypeDef],  # (1)
-    requestAttributes: NotRequired[Mapping[str, str]],
+    messages: List[MessageTypeDef],  # (1)
+    interpretations: List[InterpretationTypeDef],  # (2)
+    sessionState: SessionStateTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
-1. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: InterpretationTypeDef](./type_defs.md#interpretationtypedef) 
+3. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecognizeTextResponseTypeDef
 
 ```python title="Usage Example"

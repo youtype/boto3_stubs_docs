@@ -3167,7 +3167,7 @@ parent.get_reserved_node_exchange_offerings(**kwargs)
 
 ### modify\_aqua\_configuration
 
-Modifies whether a cluster can use AQUA (Advanced Query Accelerator).
+This operation is retired.
 
 Type annotations and code completion for `#!python boto3.client("redshift").modify_aqua_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client.modify_aqua_configuration)

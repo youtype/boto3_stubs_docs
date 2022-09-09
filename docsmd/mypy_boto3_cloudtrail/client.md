@@ -32,6 +32,8 @@ client = boto3.client("cloudtrail")
 try:
     do_something(client)
 except (
+    client.ChannelARNInvalidException,
+    client.ChannelNotFoundException,
     client.ClientError,
     client.CloudTrailARNInvalidException,
     client.CloudTrailAccessNotEnabledException,
@@ -98,7 +100,7 @@ except (
 ```python title="Type checking example"
 from mypy_boto3_cloudtrail.client import Exceptions
 
-def handle_error(exc: Exceptions.ClientError) -> None:
+def handle_error(exc: Exceptions.ChannelARNInvalidException) -> None:
     ...
 ```
 
@@ -419,6 +421,35 @@ def generate_presigned_url(
 ```
 
 
+### get\_channel
+
+Returns the specified CloudTrail service-linked channel.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_channel)
+
+```python title="Method definition"
+def get_channel(
+    self,
+    *,
+    Channel: str,
+) -> GetChannelResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetChannelRequestRequestTypeDef = {  # (1)
+    "Channel": ...,
+}
+
+parent.get_channel(**kwargs)
+```
+
+1. See [:material-code-braces: GetChannelRequestRequestTypeDef](./type_defs.md#getchannelrequestrequesttypedef) 
+
 ### get\_event\_data\_store
 
 Returns information about an event data store specified as either an ARN or the
@@ -599,6 +630,36 @@ parent.get_trail_status(**kwargs)
 ```
 
 1. See [:material-code-braces: GetTrailStatusRequestRequestTypeDef](./type_defs.md#gettrailstatusrequestrequesttypedef) 
+
+### list\_channels
+
+Returns all CloudTrail channels.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_channels)
+
+```python title="Method definition"
+def list_channels(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_channels(**kwargs)
+```
+
+1. See [:material-code-braces: ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef) 
 
 ### list\_event\_data\_stores
 

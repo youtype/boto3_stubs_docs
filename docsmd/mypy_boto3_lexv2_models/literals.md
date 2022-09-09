@@ -792,11 +792,12 @@ SlotSortAttributeType = Literal[
 from mypy_boto3_lexv2_models.literals import SlotTypeCategoryType
 
 def get_value() -> SlotTypeCategoryType:
-    return "Custom"
+    return "Composite"
 ```
 
 ```python title="Definition"
 SlotTypeCategoryType = Literal[
+    "Composite",
     "Custom",
     "Extended",
     "ExternalGrammar",
@@ -853,11 +854,12 @@ SlotTypeSortAttributeType = Literal[
 from mypy_boto3_lexv2_models.literals import SlotValueResolutionStrategyType
 
 def get_value() -> SlotValueResolutionStrategyType:
-    return "OriginalValue"
+    return "Concatenation"
 ```
 
 ```python title="Definition"
 SlotValueResolutionStrategyType = Literal[
+    "Concatenation",
     "OriginalValue",
     "TopResolution",
 ]

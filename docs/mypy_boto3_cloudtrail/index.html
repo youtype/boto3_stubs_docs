@@ -37260,12 +37260,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudtrail.literals</span> <span class="kn">import</span> <span class="n">EventCategoryType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudtrail.literals</span> <span class="kn">import</span> <span class="n">DestinationTypeType</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EventCategoryType</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;insight&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DestinationTypeType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;AWS_SERVICE&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#destinationtypetype">DestinationTypeType</a></li>
 <li><a href="literals/#eventcategorytype">EventCategoryType</a></li>
 <li><a href="literals/#eventdatastorestatustype">EventDataStoreStatusType</a></li>
 <li><a href="literals/#insighttypetype">InsightTypeType</a></li>
@@ -37296,6 +37297,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#advancedfieldselectortypedef">AdvancedFieldSelectorTypeDef</a></li>
 <li><a href="type_defs/#cancelqueryrequestrequesttypedef">CancelQueryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#channeltypedef">ChannelTypeDef</a></li>
 <li><a href="type_defs/#dataresourcetypedef">DataResourceTypeDef</a></li>
 <li><a href="type_defs/#deleteeventdatastorerequestrequesttypedef">DeleteEventDataStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetrailrequestrequesttypedef">DeleteTrailRequestRequestTypeDef</a></li>
@@ -37303,7 +37305,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#querystatisticsfordescribequerytypedef">QueryStatisticsForDescribeQueryTypeDef</a></li>
 <li><a href="type_defs/#describetrailsrequestrequesttypedef">DescribeTrailsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#trailtypedef">TrailTypeDef</a></li>
+<li><a href="type_defs/#destinationtypedef">DestinationTypeDef</a></li>
 <li><a href="type_defs/#resourcetypedef">ResourceTypeDef</a></li>
+<li><a href="type_defs/#getchannelrequestrequesttypedef">GetChannelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#geteventdatastorerequestrequesttypedef">GetEventDataStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#geteventselectorsrequestrequesttypedef">GetEventSelectorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getinsightselectorsrequestrequesttypedef">GetInsightSelectorsRequestRequestTypeDef</a></li>
@@ -37312,6 +37316,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#querystatisticstypedef">QueryStatisticsTypeDef</a></li>
 <li><a href="type_defs/#gettrailrequestrequesttypedef">GetTrailRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gettrailstatusrequestrequesttypedef">GetTrailStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listchannelsrequestrequesttypedef">ListChannelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listeventdatastoresrequestrequesttypedef">ListEventDataStoresRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listpublickeysrequestrequesttypedef">ListPublicKeysRequestRequestTypeDef</a></li>
@@ -37337,6 +37342,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#gettrailstatusresponsetypedef">GetTrailStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#startqueryresponsetypedef">StartQueryResponseTypeDef</a></li>
 <li><a href="type_defs/#updatetrailresponsetypedef">UpdateTrailResponseTypeDef</a></li>
+<li><a href="type_defs/#listchannelsresponsetypedef">ListChannelsResponseTypeDef</a></li>
 <li><a href="type_defs/#eventselectortypedef">EventSelectorTypeDef</a></li>
 <li><a href="type_defs/#describequeryresponsetypedef">DescribeQueryResponseTypeDef</a></li>
 <li><a href="type_defs/#describetrailsresponsetypedef">DescribeTrailsResponseTypeDef</a></li>
@@ -37360,6 +37366,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#eventdatastoretypedef">EventDataStoreTypeDef</a></li>
 <li><a href="type_defs/#geteventdatastoreresponsetypedef">GetEventDataStoreResponseTypeDef</a></li>
 <li><a href="type_defs/#restoreeventdatastoreresponsetypedef">RestoreEventDataStoreResponseTypeDef</a></li>
+<li><a href="type_defs/#sourceconfigtypedef">SourceConfigTypeDef</a></li>
 <li><a href="type_defs/#updateeventdatastorerequestrequesttypedef">UpdateEventDataStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateeventdatastoreresponsetypedef">UpdateEventDataStoreResponseTypeDef</a></li>
 <li><a href="type_defs/#geteventselectorsresponsetypedef">GetEventSelectorsResponseTypeDef</a></li>
@@ -37367,6 +37374,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#puteventselectorsresponsetypedef">PutEventSelectorsResponseTypeDef</a></li>
 <li><a href="type_defs/#lookupeventsresponsetypedef">LookupEventsResponseTypeDef</a></li>
 <li><a href="type_defs/#listeventdatastoresresponsetypedef">ListEventDataStoresResponseTypeDef</a></li>
+<li><a href="type_defs/#getchannelresponsetypedef">GetChannelResponseTypeDef</a></li>
 </ul>
 
 

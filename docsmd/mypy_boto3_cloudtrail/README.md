@@ -95,12 +95,13 @@ def get_list_public_keys_paginator() -> ListPublicKeysPaginator:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_cloudtrail.literals import EventCategoryType
+from mypy_boto3_cloudtrail.literals import DestinationTypeType
 
-def get_value() -> EventCategoryType:
-    return "insight"
+def get_value() -> DestinationTypeType:
+    return "AWS_SERVICE"
 ```
 
+- [DestinationTypeType](./literals.md#destinationtypetype)
 - [EventCategoryType](./literals.md#eventcategorytype)
 - [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
 - [InsightTypeType](./literals.md#insighttypetype)
@@ -137,6 +138,7 @@ def get_value() -> TagTypeDef:
 - [AdvancedFieldSelectorTypeDef](./type_defs.md#advancedfieldselectortypedef)
 - [CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [ChannelTypeDef](./type_defs.md#channeltypedef)
 - [DataResourceTypeDef](./type_defs.md#dataresourcetypedef)
 - [DeleteEventDataStoreRequestRequestTypeDef](./type_defs.md#deleteeventdatastorerequestrequesttypedef)
 - [DeleteTrailRequestRequestTypeDef](./type_defs.md#deletetrailrequestrequesttypedef)
@@ -144,7 +146,9 @@ def get_value() -> TagTypeDef:
 - [QueryStatisticsForDescribeQueryTypeDef](./type_defs.md#querystatisticsfordescribequerytypedef)
 - [DescribeTrailsRequestRequestTypeDef](./type_defs.md#describetrailsrequestrequesttypedef)
 - [TrailTypeDef](./type_defs.md#trailtypedef)
+- [DestinationTypeDef](./type_defs.md#destinationtypedef)
 - [ResourceTypeDef](./type_defs.md#resourcetypedef)
+- [GetChannelRequestRequestTypeDef](./type_defs.md#getchannelrequestrequesttypedef)
 - [GetEventDataStoreRequestRequestTypeDef](./type_defs.md#geteventdatastorerequestrequesttypedef)
 - [GetEventSelectorsRequestRequestTypeDef](./type_defs.md#geteventselectorsrequestrequesttypedef)
 - [GetInsightSelectorsRequestRequestTypeDef](./type_defs.md#getinsightselectorsrequestrequesttypedef)
@@ -153,6 +157,7 @@ def get_value() -> TagTypeDef:
 - [QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef)
 - [GetTrailRequestRequestTypeDef](./type_defs.md#gettrailrequestrequesttypedef)
 - [GetTrailStatusRequestRequestTypeDef](./type_defs.md#gettrailstatusrequestrequesttypedef)
+- [ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef)
 - [ListEventDataStoresRequestRequestTypeDef](./type_defs.md#listeventdatastoresrequestrequesttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef)
@@ -178,6 +183,7 @@ def get_value() -> TagTypeDef:
 - [GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef)
 - [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef)
 - [UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef)
+- [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)
 - [EventSelectorTypeDef](./type_defs.md#eventselectortypedef)
 - [DescribeQueryResponseTypeDef](./type_defs.md#describequeryresponsetypedef)
 - [DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef)
@@ -201,6 +207,7 @@ def get_value() -> TagTypeDef:
 - [EventDataStoreTypeDef](./type_defs.md#eventdatastoretypedef)
 - [GetEventDataStoreResponseTypeDef](./type_defs.md#geteventdatastoreresponsetypedef)
 - [RestoreEventDataStoreResponseTypeDef](./type_defs.md#restoreeventdatastoreresponsetypedef)
+- [SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)
 - [UpdateEventDataStoreRequestRequestTypeDef](./type_defs.md#updateeventdatastorerequestrequesttypedef)
 - [UpdateEventDataStoreResponseTypeDef](./type_defs.md#updateeventdatastoreresponsetypedef)
 - [GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef)
@@ -208,4 +215,5 @@ def get_value() -> TagTypeDef:
 - [PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef)
 - [LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef)
 - [ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef)
+- [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef)
 
