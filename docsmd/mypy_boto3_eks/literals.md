@@ -141,6 +141,25 @@ ClusterDeletedWaiterName = Literal[
     "cluster_deleted",
 ]
 ```
+## ClusterIssueCodeType
+
+```python title="Usage Example"
+from mypy_boto3_eks.literals import ClusterIssueCodeType
+
+def get_value() -> ClusterIssueCodeType:
+    return "AccessDenied"
+```
+
+```python title="Definition"
+ClusterIssueCodeType = Literal[
+    "AccessDenied",
+    "ClusterUnreachable",
+    "ConfigurationConflict",
+    "InternalFailure",
+    "ResourceLimitExceeded",
+    "ResourceNotFound",
+]
+```
 ## ClusterStatusType
 
 ```python title="Usage Example"

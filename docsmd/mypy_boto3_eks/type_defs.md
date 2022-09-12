@@ -125,6 +125,25 @@ class CertificateTypeDef(TypedDict):
     data: NotRequired[str],
 ```
 
+## ClusterIssueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ClusterIssueTypeDef
+
+def get_value() -> ClusterIssueTypeDef:
+    return {
+        "code": ...,
+    }
+```
+
+```python title="Definition"
+class ClusterIssueTypeDef(TypedDict):
+    code: NotRequired[ClusterIssueCodeType],  # (1)
+    message: NotRequired[str],
+    resourceIds: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: ClusterIssueCodeType](./literals.md#clusterissuecodetype) 
 ## ConnectorConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -164,6 +183,24 @@ class KubernetesNetworkConfigResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IpFamilyType](./literals.md#ipfamilytype) 
+## OutpostConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import OutpostConfigResponseTypeDef
+
+def get_value() -> OutpostConfigResponseTypeDef:
+    return {
+        "outpostArns": ...,
+        "controlPlaneInstanceType": ...,
+    }
+```
+
+```python title="Definition"
+class OutpostConfigResponseTypeDef(TypedDict):
+    outpostArns: List[str],
+    controlPlaneInstanceType: str,
+```
+
 ## VpcConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -247,6 +284,24 @@ class KubernetesNetworkConfigRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IpFamilyType](./literals.md#ipfamilytype) 
+## OutpostConfigRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import OutpostConfigRequestTypeDef
+
+def get_value() -> OutpostConfigRequestTypeDef:
+    return {
+        "outpostArns": ...,
+        "controlPlaneInstanceType": ...,
+    }
+```
+
+```python title="Definition"
+class OutpostConfigRequestTypeDef(TypedDict):
+    outpostArns: Sequence[str],
+    controlPlaneInstanceType: str,
+```
+
 ## VpcConfigRequestTypeDef
 
 ```python title="Usage Example"
@@ -1176,6 +1231,23 @@ class NodegroupResourcesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
+## ClusterHealthTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ClusterHealthTypeDef
+
+def get_value() -> ClusterHealthTypeDef:
+    return {
+        "issues": ...,
+    }
+```
+
+```python title="Definition"
+class ClusterHealthTypeDef(TypedDict):
+    issues: NotRequired[List[ClusterIssueTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ClusterIssueTypeDef](./type_defs.md#clusterissuetypedef) 
 ## RegisterClusterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2042,6 +2114,9 @@ class ClusterTypeDef(TypedDict):
     tags: NotRequired[Dict[str, str]],
     encryptionConfig: NotRequired[List[EncryptionConfigTypeDef]],  # (7)
     connectorConfig: NotRequired[ConnectorConfigResponseTypeDef],  # (8)
+    id: NotRequired[str],
+    health: NotRequired[ClusterHealthTypeDef],  # (9)
+    outpostConfig: NotRequired[OutpostConfigResponseTypeDef],  # (10)
 ```
 
 1. See [:material-code-braces: VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef) 
@@ -2052,6 +2127,8 @@ class ClusterTypeDef(TypedDict):
 6. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
 7. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
 8. See [:material-code-braces: ConnectorConfigResponseTypeDef](./type_defs.md#connectorconfigresponsetypedef) 
+9. See [:material-code-braces: ClusterHealthTypeDef](./type_defs.md#clusterhealthtypedef) 
+10. See [:material-code-braces: OutpostConfigResponseTypeDef](./type_defs.md#outpostconfigresponsetypedef) 
 ## CreateClusterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2076,12 +2153,14 @@ class CreateClusterRequestRequestTypeDef(TypedDict):
     clientRequestToken: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
     encryptionConfig: NotRequired[Sequence[EncryptionConfigTypeDef]],  # (4)
+    outpostConfig: NotRequired[OutpostConfigRequestTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef) 
 2. See [:material-code-braces: KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef) 
 3. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
 4. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+5. See [:material-code-braces: OutpostConfigRequestTypeDef](./type_defs.md#outpostconfigrequesttypedef) 
 ## UpdateClusterConfigRequestRequestTypeDef
 
 ```python title="Usage Example"

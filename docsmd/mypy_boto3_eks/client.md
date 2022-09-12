@@ -216,7 +216,8 @@ def create_cluster(
     clientRequestToken: str = ...,
     tags: Mapping[str, str] = ...,
     encryptionConfig: Sequence[EncryptionConfigTypeDef] = ...,  # (4)
-) -> CreateClusterResponseTypeDef:  # (5)
+    outpostConfig: OutpostConfigRequestTypeDef = ...,  # (5)
+) -> CreateClusterResponseTypeDef:  # (6)
     ...
 ```
 
@@ -224,7 +225,8 @@ def create_cluster(
 2. See [:material-code-braces: KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef) 
 3. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
 4. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
-5. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
+5. See [:material-code-braces: OutpostConfigRequestTypeDef](./type_defs.md#outpostconfigrequesttypedef) 
+6. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
