@@ -740,6 +740,7 @@ class ListIntegrationItemTypeDef(TypedDict):
     Tags: NotRequired[Dict[str, str]],
     ObjectTypeNames: NotRequired[Dict[str, str]],
     WorkflowId: NotRequired[str],
+    IsUnstructured: NotRequired[bool],
 ```
 
 ## ListDomainItemTypeDef
@@ -1419,6 +1420,7 @@ def get_value() -> GetIntegrationResponseTypeDef:
         "Tags": ...,
         "ObjectTypeNames": ...,
         "WorkflowId": ...,
+        "IsUnstructured": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1433,6 +1435,7 @@ class GetIntegrationResponseTypeDef(TypedDict):
     Tags: Dict[str, str],
     ObjectTypeNames: Dict[str, str],
     WorkflowId: str,
+    IsUnstructured: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1490,6 +1493,7 @@ def get_value() -> PutIntegrationResponseTypeDef:
         "Tags": ...,
         "ObjectTypeNames": ...,
         "WorkflowId": ...,
+        "IsUnstructured": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1504,6 +1508,7 @@ class PutIntegrationResponseTypeDef(TypedDict):
     Tags: Dict[str, str],
     ObjectTypeNames: Dict[str, str],
     WorkflowId: str,
+    IsUnstructured: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 

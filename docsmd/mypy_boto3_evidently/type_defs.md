@@ -141,6 +141,23 @@ class LaunchGroupConfigTypeDef(TypedDict):
     description: NotRequired[str],
 ```
 
+## ProjectAppConfigResourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ProjectAppConfigResourceConfigTypeDef
+
+def get_value() -> ProjectAppConfigResourceConfigTypeDef:
+    return {
+        "applicationId": ...,
+    }
+```
+
+```python title="Definition"
+class ProjectAppConfigResourceConfigTypeDef(TypedDict):
+    applicationId: NotRequired[str],
+    environmentId: NotRequired[str],
+```
+
 ## CreateSegmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -858,6 +875,26 @@ class MetricDefinitionTypeDef(TypedDict):
     valueKey: NotRequired[str],
 ```
 
+## ProjectAppConfigResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ProjectAppConfigResourceTypeDef
+
+def get_value() -> ProjectAppConfigResourceTypeDef:
+    return {
+        "applicationId": ...,
+        "configurationProfileId": ...,
+        "environmentId": ...,
+    }
+```
+
+```python title="Definition"
+class ProjectAppConfigResourceTypeDef(TypedDict):
+    applicationId: str,
+    configurationProfileId: str,
+    environmentId: str,
+```
+
 ## S3DestinationConfigTypeDef
 
 ```python title="Usage Example"
@@ -1064,23 +1101,6 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     tagKeys: Sequence[str],
 ```
 
-## UpdateProjectRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_evidently.type_defs import UpdateProjectRequestRequestTypeDef
-
-def get_value() -> UpdateProjectRequestRequestTypeDef:
-    return {
-        "project": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProjectRequestRequestTypeDef(TypedDict):
-    project: str,
-    description: NotRequired[str],
-```
-
 ## BatchEvaluateFeatureRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1195,6 +1215,25 @@ class TestSegmentPatternResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProjectRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import UpdateProjectRequestRequestTypeDef
+
+def get_value() -> UpdateProjectRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProjectRequestRequestTypeDef(TypedDict):
+    project: str,
+    appConfigResource: NotRequired[ProjectAppConfigResourceConfigTypeDef],  # (1)
+    description: NotRequired[str],
+```
+
+1. See [:material-code-braces: ProjectAppConfigResourceConfigTypeDef](./type_defs.md#projectappconfigresourceconfigtypedef) 
 ## CreateSegmentResponseTypeDef
 
 ```python title="Usage Example"
@@ -2026,12 +2065,14 @@ def get_value() -> CreateProjectRequestRequestTypeDef:
 ```python title="Definition"
 class CreateProjectRequestRequestTypeDef(TypedDict):
     name: str,
-    dataDelivery: NotRequired[ProjectDataDeliveryConfigTypeDef],  # (1)
+    appConfigResource: NotRequired[ProjectAppConfigResourceConfigTypeDef],  # (1)
+    dataDelivery: NotRequired[ProjectDataDeliveryConfigTypeDef],  # (2)
     description: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
 ```
 
-1. See [:material-code-braces: ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef) 
+1. See [:material-code-braces: ProjectAppConfigResourceConfigTypeDef](./type_defs.md#projectappconfigresourceconfigtypedef) 
+2. See [:material-code-braces: ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef) 
 ## ProjectTypeDef
 
 ```python title="Usage Example"
@@ -2053,10 +2094,11 @@ class ProjectTypeDef(TypedDict):
     createdTime: datetime,
     lastUpdatedTime: datetime,
     name: str,
-    status: ProjectStatusType,  # (2)
+    status: ProjectStatusType,  # (3)
     activeExperimentCount: NotRequired[int],
     activeLaunchCount: NotRequired[int],
-    dataDelivery: NotRequired[ProjectDataDeliveryTypeDef],  # (1)
+    appConfigResource: NotRequired[ProjectAppConfigResourceTypeDef],  # (1)
+    dataDelivery: NotRequired[ProjectDataDeliveryTypeDef],  # (2)
     description: NotRequired[str],
     experimentCount: NotRequired[int],
     featureCount: NotRequired[int],
@@ -2064,8 +2106,9 @@ class ProjectTypeDef(TypedDict):
     tags: NotRequired[Dict[str, str]],
 ```
 
-1. See [:material-code-braces: ProjectDataDeliveryTypeDef](./type_defs.md#projectdatadeliverytypedef) 
-2. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
+1. See [:material-code-braces: ProjectAppConfigResourceTypeDef](./type_defs.md#projectappconfigresourcetypedef) 
+2. See [:material-code-braces: ProjectDataDeliveryTypeDef](./type_defs.md#projectdatadeliverytypedef) 
+3. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
 ## ScheduledSplitsLaunchConfigTypeDef
 
 ```python title="Usage Example"

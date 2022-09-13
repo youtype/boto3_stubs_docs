@@ -262,6 +262,24 @@ class DeleteConnectorRequestRequestTypeDef(TypedDict):
     ConnectorId: str,
 ```
 
+## DeleteHostKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DeleteHostKeyRequestRequestTypeDef
+
+def get_value() -> DeleteHostKeyRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "HostKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteHostKeyRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    HostKeyId: str,
+```
+
 ## DeleteProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -449,6 +467,24 @@ def get_value() -> DescribeExecutionRequestRequestTypeDef:
 class DescribeExecutionRequestRequestTypeDef(TypedDict):
     ExecutionId: str,
     WorkflowId: str,
+```
+
+## DescribeHostKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeHostKeyRequestRequestTypeDef
+
+def get_value() -> DescribeHostKeyRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "HostKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHostKeyRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    HostKeyId: str,
 ```
 
 ## DescribeProfileRequestRequestTypeDef
@@ -893,6 +929,45 @@ class ListExecutionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListHostKeysRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListHostKeysRequestRequestTypeDef
+
+def get_value() -> ListHostKeysRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+    }
+```
+
+```python title="Definition"
+class ListHostKeysRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListedHostKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListedHostKeyTypeDef
+
+def get_value() -> ListedHostKeyTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListedHostKeyTypeDef(TypedDict):
+    Arn: str,
+    HostKeyId: NotRequired[str],
+    Fingerprint: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[str],
+    DateImported: NotRequired[datetime],
+```
+
 ## ListProfilesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1280,6 +1355,26 @@ class UpdateCertificateRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
+## UpdateHostKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UpdateHostKeyRequestRequestTypeDef
+
+def get_value() -> UpdateHostKeyRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "HostKeyId": ...,
+        "Description": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateHostKeyRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    HostKeyId: str,
+    Description: str,
+```
+
 ## UpdateProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1616,6 +1711,27 @@ class ImportCertificateResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportHostKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ImportHostKeyResponseTypeDef
+
+def get_value() -> ImportHostKeyResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "HostKeyId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportHostKeyResponseTypeDef(TypedDict):
+    ServerId: str,
+    HostKeyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportSshPublicKeyResponseTypeDef
 
 ```python title="Usage Example"
@@ -1778,6 +1894,27 @@ def get_value() -> UpdateConnectorResponseTypeDef:
 ```python title="Definition"
 class UpdateConnectorResponseTypeDef(TypedDict):
     ConnectorId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateHostKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import UpdateHostKeyResponseTypeDef
+
+def get_value() -> UpdateHostKeyResponseTypeDef:
+    return {
+        "ServerId": ...,
+        "HostKeyId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateHostKeyResponseTypeDef(TypedDict):
+    ServerId: str,
+    HostKeyId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2031,6 +2168,29 @@ class DescribedConnectorTypeDef(TypedDict):
 
 1. See [:material-code-braces: As2ConnectorConfigTypeDef](./type_defs.md#as2connectorconfigtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribedHostKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribedHostKeyTypeDef
+
+def get_value() -> DescribedHostKeyTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribedHostKeyTypeDef(TypedDict):
+    Arn: str,
+    HostKeyId: NotRequired[str],
+    HostKeyFingerprint: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[str],
+    DateImported: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DescribedProfileTypeDef
 
 ```python title="Usage Example"
@@ -2080,6 +2240,27 @@ class ImportCertificateRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: CertificateUsageTypeType](./literals.md#certificateusagetypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ImportHostKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ImportHostKeyRequestRequestTypeDef
+
+def get_value() -> ImportHostKeyRequestRequestTypeDef:
+    return {
+        "ServerId": ...,
+        "HostKeyBody": ...,
+    }
+```
+
+```python title="Definition"
+class ImportHostKeyRequestRequestTypeDef(TypedDict):
+    ServerId: str,
+    HostKeyBody: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -2551,6 +2732,30 @@ class ListConnectorsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ListedConnectorTypeDef](./type_defs.md#listedconnectortypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHostKeysResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import ListHostKeysResponseTypeDef
+
+def get_value() -> ListHostKeysResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ServerId": ...,
+        "HostKeys": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListHostKeysResponseTypeDef(TypedDict):
+    NextToken: str,
+    ServerId: str,
+    HostKeys: List[ListedHostKeyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ListedHostKeyTypeDef](./type_defs.md#listedhostkeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProfilesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2775,6 +2980,26 @@ class DescribeConnectorResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DescribedConnectorTypeDef](./type_defs.md#describedconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeHostKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DescribeHostKeyResponseTypeDef
+
+def get_value() -> DescribeHostKeyResponseTypeDef:
+    return {
+        "HostKey": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHostKeyResponseTypeDef(TypedDict):
+    HostKey: DescribedHostKeyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DescribedHostKeyTypeDef](./type_defs.md#describedhostkeytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProfileResponseTypeDef
 

@@ -2695,7 +2695,6 @@ def get_value() -> CreateLocalGatewayRouteRequestRequestTypeDef:
     return {
         "DestinationCidrBlock": ...,
         "LocalGatewayRouteTableId": ...,
-        "LocalGatewayVirtualInterfaceGroupId": ...,
     }
 ```
 
@@ -2703,8 +2702,9 @@ def get_value() -> CreateLocalGatewayRouteRequestRequestTypeDef:
 class CreateLocalGatewayRouteRequestRequestTypeDef(TypedDict):
     DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
-    LocalGatewayVirtualInterfaceGroupId: str,
+    LocalGatewayVirtualInterfaceGroupId: NotRequired[str],
     DryRun: NotRequired[bool],
+    NetworkInterfaceId: NotRequired[str],
 ```
 
 ## LocalGatewayRouteTypeDef
@@ -2727,6 +2727,9 @@ class LocalGatewayRouteTypeDef(TypedDict):
     LocalGatewayRouteTableId: NotRequired[str],
     LocalGatewayRouteTableArn: NotRequired[str],
     OwnerId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    CoipPoolId: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LocalGatewayRouteTypeType](./literals.md#localgatewayroutetypetype) 
@@ -10563,6 +10566,27 @@ class ModifyLaunchTemplateRequestRequestTypeDef(TypedDict):
     DefaultVersion: NotRequired[str],
 ```
 
+## ModifyLocalGatewayRouteRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyLocalGatewayRouteRequestRequestTypeDef
+
+def get_value() -> ModifyLocalGatewayRouteRequestRequestTypeDef:
+    return {
+        "DestinationCidrBlock": ...,
+        "LocalGatewayRouteTableId": ...,
+        "NetworkInterfaceId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyLocalGatewayRouteRequestRequestTypeDef(TypedDict):
+    DestinationCidrBlock: str,
+    LocalGatewayRouteTableId: str,
+    NetworkInterfaceId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## RemovePrefixListEntryTypeDef
 
 ```python title="Usage Example"
@@ -17507,9 +17531,11 @@ class LocalGatewayRouteTableTypeDef(TypedDict):
     OwnerId: NotRequired[str],
     State: NotRequired[str],
     Tags: NotRequired[List[TagTypeDef]],  # (1)
+    Mode: NotRequired[LocalGatewayRouteTableModeType],  # (2)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: LocalGatewayRouteTableModeType](./literals.md#localgatewayroutetablemodetype) 
 ## LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef
 
 ```python title="Usage Example"
@@ -19859,6 +19885,26 @@ def get_value() -> DeleteLocalGatewayRouteResultTypeDef:
 
 ```python title="Definition"
 class DeleteLocalGatewayRouteResultTypeDef(TypedDict):
+    Route: LocalGatewayRouteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocalGatewayRouteTypeDef](./type_defs.md#localgatewayroutetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyLocalGatewayRouteResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyLocalGatewayRouteResultTypeDef
+
+def get_value() -> ModifyLocalGatewayRouteResultTypeDef:
+    return {
+        "Route": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyLocalGatewayRouteResultTypeDef(TypedDict):
     Route: LocalGatewayRouteTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```

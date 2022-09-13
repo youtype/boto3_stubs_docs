@@ -55,8 +55,8 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### add\_profile\_key
 
-Associates a new key value with a specific profile, such as a Contact Trace
-Record (CTR) ContactId.
+Associates a new key value with a specific profile, such as a Contact Record
+ContactId.
 
 Type annotations and code completion for `#!python boto3.client("customer-profiles").add_profile_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.add_profile_key)

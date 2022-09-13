@@ -257,15 +257,17 @@ def create_project(
     self,
     *,
     name: str,
-    dataDelivery: ProjectDataDeliveryConfigTypeDef = ...,  # (1)
+    appConfigResource: ProjectAppConfigResourceConfigTypeDef = ...,  # (1)
+    dataDelivery: ProjectDataDeliveryConfigTypeDef = ...,  # (2)
     description: str = ...,
     tags: Mapping[str, str] = ...,
-) -> CreateProjectResponseTypeDef:  # (2)
+) -> CreateProjectResponseTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef) 
-2. See [:material-code-braces: CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef) 
+1. See [:material-code-braces: ProjectAppConfigResourceConfigTypeDef](./type_defs.md#projectappconfigresourceconfigtypedef) 
+2. See [:material-code-braces: ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef) 
+3. See [:material-code-braces: CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1318,12 +1320,14 @@ def update_project(
     self,
     *,
     project: str,
+    appConfigResource: ProjectAppConfigResourceConfigTypeDef = ...,  # (1)
     description: str = ...,
-) -> UpdateProjectResponseTypeDef:  # (1)
+) -> UpdateProjectResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef) 
+1. See [:material-code-braces: ProjectAppConfigResourceConfigTypeDef](./type_defs.md#projectappconfigresourceconfigtypedef) 
+2. See [:material-code-braces: UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

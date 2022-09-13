@@ -501,6 +501,37 @@ parent.delete_connector(**kwargs)
 
 1. See [:material-code-braces: DeleteConnectorRequestRequestTypeDef](./type_defs.md#deleteconnectorrequestrequesttypedef) 
 
+### delete\_host\_key
+
+Deletes the host key that's specified in the `HoskKeyId` parameter.
+
+Type annotations and code completion for `#!python boto3.client("transfer").delete_host_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_host_key)
+
+```python title="Method definition"
+def delete_host_key(
+    self,
+    *,
+    ServerId: str,
+    HostKeyId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteHostKeyRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "HostKeyId": ...,
+}
+
+parent.delete_host_key(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteHostKeyRequestRequestTypeDef](./type_defs.md#deletehostkeyrequestrequesttypedef) 
+
 ### delete\_profile
 
 Deletes the profile that's specified in the `ProfileId` parameter.
@@ -808,6 +839,38 @@ parent.describe_execution(**kwargs)
 
 1. See [:material-code-braces: DescribeExecutionRequestRequestTypeDef](./type_defs.md#describeexecutionrequestrequesttypedef) 
 
+### describe\_host\_key
+
+Returns the details of the host key that's specified by the `HostKeyId` and
+`ServerId` .
+
+Type annotations and code completion for `#!python boto3.client("transfer").describe_host_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_host_key)
+
+```python title="Method definition"
+def describe_host_key(
+    self,
+    *,
+    ServerId: str,
+    HostKeyId: str,
+) -> DescribeHostKeyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeHostKeyResponseTypeDef](./type_defs.md#describehostkeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHostKeyRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "HostKeyId": ...,
+}
+
+parent.describe_host_key(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHostKeyRequestRequestTypeDef](./type_defs.md#describehostkeyrequestrequesttypedef) 
+
 ### describe\_profile
 
 Returns the details of the profile that's specified by the `ProfileId` .
@@ -1017,6 +1080,40 @@ parent.import_certificate(**kwargs)
 
 1. See [:material-code-braces: ImportCertificateRequestRequestTypeDef](./type_defs.md#importcertificaterequestrequesttypedef) 
 
+### import\_host\_key
+
+Adds a host key to the server specified by the `ServerId` parameter.
+
+Type annotations and code completion for `#!python boto3.client("transfer").import_host_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_host_key)
+
+```python title="Method definition"
+def import_host_key(
+    self,
+    *,
+    ServerId: str,
+    HostKeyBody: str,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> ImportHostKeyResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ImportHostKeyResponseTypeDef](./type_defs.md#importhostkeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ImportHostKeyRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "HostKeyBody": ...,
+}
+
+parent.import_host_key(**kwargs)
+```
+
+1. See [:material-code-braces: ImportHostKeyRequestRequestTypeDef](./type_defs.md#importhostkeyrequestrequesttypedef) 
+
 ### import\_ssh\_public\_key
 
 Adds a Secure Shell (SSH) public key to a user account identified by a
@@ -1206,6 +1303,37 @@ parent.list_executions(**kwargs)
 ```
 
 1. See [:material-code-braces: ListExecutionsRequestRequestTypeDef](./type_defs.md#listexecutionsrequestrequesttypedef) 
+
+### list\_host\_keys
+
+Returns a list of host keys for the server specified by the `ServerId` paramter.
+
+Type annotations and code completion for `#!python boto3.client("transfer").list_host_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_host_keys)
+
+```python title="Method definition"
+def list_host_keys(
+    self,
+    *,
+    ServerId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListHostKeysResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListHostKeysResponseTypeDef](./type_defs.md#listhostkeysresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListHostKeysRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
+
+parent.list_host_keys(**kwargs)
+```
+
+1. See [:material-code-braces: ListHostKeysRequestRequestTypeDef](./type_defs.md#listhostkeysrequestrequesttypedef) 
 
 ### list\_profiles
 
@@ -1767,6 +1895,40 @@ parent.update_connector(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateConnectorRequestRequestTypeDef](./type_defs.md#updateconnectorrequestrequesttypedef) 
+
+### update\_host\_key
+
+Updates the description for the host key specified by the specified by the
+`ServerId` and `HostKeyId` parameters.
+
+Type annotations and code completion for `#!python boto3.client("transfer").update_host_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_host_key)
+
+```python title="Method definition"
+def update_host_key(
+    self,
+    *,
+    ServerId: str,
+    HostKeyId: str,
+    Description: str,
+) -> UpdateHostKeyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateHostKeyResponseTypeDef](./type_defs.md#updatehostkeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateHostKeyRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "HostKeyId": ...,
+    "Description": ...,
+}
+
+parent.update_host_key(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateHostKeyRequestRequestTypeDef](./type_defs.md#updatehostkeyrequestrequesttypedef) 
 
 ### update\_profile
 

@@ -36,6 +36,8 @@ def get_value() -> AcceleratorNameType:
 ```python title="Definition"
 AcceleratorNameType = Literal[
     "a100",
+    "inferentia",
+    "k520",
     "k80",
     "m60",
     "radeon-pro-v520",
@@ -5064,6 +5066,21 @@ LocalGatewayRouteStateType = Literal[
     "deleted",
     "deleting",
     "pending",
+]
+```
+## LocalGatewayRouteTableModeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import LocalGatewayRouteTableModeType
+
+def get_value() -> LocalGatewayRouteTableModeType:
+    return "coip"
+```
+
+```python title="Definition"
+LocalGatewayRouteTableModeType = Literal[
+    "coip",
+    "direct-vpc-routing",
 ]
 ```
 ## LocalGatewayRouteTypeType

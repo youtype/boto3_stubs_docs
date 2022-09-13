@@ -857,6 +857,7 @@ def get_value() -> SharePointVersionType:
 SharePointVersionType = Literal[
     "SHAREPOINT_2013",
     "SHAREPOINT_2016",
+    "SHAREPOINT_2019",
     "SHAREPOINT_ONLINE",
 ]
 ```

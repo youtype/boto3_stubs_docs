@@ -2595,8 +2595,9 @@ def create_local_gateway_route(
     *,
     DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
-    LocalGatewayVirtualInterfaceGroupId: str,
+    LocalGatewayVirtualInterfaceGroupId: str = ...,
     DryRun: bool = ...,
+    NetworkInterfaceId: str = ...,
 ) -> CreateLocalGatewayRouteResultTypeDef:  # (1)
     ...
 ```
@@ -2608,7 +2609,6 @@ def create_local_gateway_route(
 kwargs: CreateLocalGatewayRouteRequestRequestTypeDef = {  # (1)
     "DestinationCidrBlock": ...,
     "LocalGatewayRouteTableId": ...,
-    "LocalGatewayVirtualInterfaceGroupId": ...,
 }
 
 parent.create_local_gateway_route(**kwargs)
@@ -14981,6 +14981,40 @@ parent.modify_launch_template(**kwargs)
 ```
 
 1. See [:material-code-braces: ModifyLaunchTemplateRequestRequestTypeDef](./type_defs.md#modifylaunchtemplaterequestrequesttypedef) 
+
+### modify\_local\_gateway\_route
+
+Modifies the specified local gateway route.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_local_gateway_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_local_gateway_route)
+
+```python title="Method definition"
+def modify_local_gateway_route(
+    self,
+    *,
+    DestinationCidrBlock: str,
+    LocalGatewayRouteTableId: str,
+    NetworkInterfaceId: str,
+    DryRun: bool = ...,
+) -> ModifyLocalGatewayRouteResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyLocalGatewayRouteResultTypeDef](./type_defs.md#modifylocalgatewayrouteresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyLocalGatewayRouteRequestRequestTypeDef = {  # (1)
+    "DestinationCidrBlock": ...,
+    "LocalGatewayRouteTableId": ...,
+    "NetworkInterfaceId": ...,
+}
+
+parent.modify_local_gateway_route(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyLocalGatewayRouteRequestRequestTypeDef](./type_defs.md#modifylocalgatewayrouterequestrequesttypedef) 
 
 ### modify\_managed\_prefix\_list
 
