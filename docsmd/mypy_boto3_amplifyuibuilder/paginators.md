@@ -68,6 +68,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ExportComponentsRequestExportComponentsPaginateTypeDef](./type_defs.md#exportcomponentsrequestexportcomponentspaginatetypedef) 
+## ExportFormsPaginator
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").get_paginator("export_forms")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Paginator.ExportForms)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ExportFormsPaginator
+
+def get_export_forms_paginator() -> ExportFormsPaginator:
+    return Session().client("amplifyuibuilder").get_paginator("export_forms")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ExportFormsPaginator
+
+session = Session()
+
+client = Session().client("amplifyuibuilder")  # (1)
+paginator: ExportFormsPaginator = client.get_paginator("export_forms")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyUIBuilderClient](./client.md)
+2. paginator: [ExportFormsPaginator](./paginators.md#exportformspaginator)
+3. item: [:material-code-braces: ExportFormsResponseTypeDef](./type_defs.md#exportformsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ExportFormsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ExportFormsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ExportFormsResponseTypeDef](./type_defs.md#exportformsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ExportFormsRequestExportFormsPaginateTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ExportFormsRequestExportFormsPaginateTypeDef](./type_defs.md#exportformsrequestexportformspaginatetypedef) 
 ## ExportThemesPaginator
 
 Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").get_paginator("export_themes")`.
@@ -190,6 +251,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListComponentsRequestListComponentsPaginateTypeDef](./type_defs.md#listcomponentsrequestlistcomponentspaginatetypedef) 
+## ListFormsPaginator
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").get_paginator("list_forms")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Paginator.ListForms)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ListFormsPaginator
+
+def get_list_forms_paginator() -> ListFormsPaginator:
+    return Session().client("amplifyuibuilder").get_paginator("list_forms")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_amplifyuibuilder.paginator import ListFormsPaginator
+
+session = Session()
+
+client = Session().client("amplifyuibuilder")  # (1)
+paginator: ListFormsPaginator = client.get_paginator("list_forms")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [AmplifyUIBuilderClient](./client.md)
+2. paginator: [ListFormsPaginator](./paginators.md#listformspaginator)
+3. item: [:material-code-braces: ListFormsResponseTypeDef](./type_defs.md#listformsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListFormsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFormsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFormsResponseTypeDef](./type_defs.md#listformsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListFormsRequestListFormsPaginateTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFormsRequestListFormsPaginateTypeDef](./type_defs.md#listformsrequestlistformspaginatetypedef) 
 ## ListThemesPaginator
 
 Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").get_paginator("list_themes")`.

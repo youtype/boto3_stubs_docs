@@ -47,6 +47,7 @@ class ComponentBindingPropertiesValuePropertiesTypeDef(TypedDict):
     key: NotRequired[str],
     model: NotRequired[str],
     predicates: NotRequired[Sequence[PredicateTypeDef]],  # (1)
+    slotName: NotRequired[str],
     userAttribute: NotRequired[str],
 ```
 
@@ -194,6 +195,25 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## FormDataTypeConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormDataTypeConfigTypeDef
+
+def get_value() -> FormDataTypeConfigTypeDef:
+    return {
+        "dataSourceType": ...,
+        "dataTypeName": ...,
+    }
+```
+
+```python title="Definition"
+class FormDataTypeConfigTypeDef(TypedDict):
+    dataSourceType: FormDataSourceTypeType,  # (1)
+    dataTypeName: str,
+```
+
+1. See [:material-code-brackets: FormDataSourceTypeType](./literals.md#formdatasourcetypetype) 
 ## CreateThemeDataTypeDef
 
 ```python title="Usage Example"
@@ -262,6 +282,26 @@ def get_value() -> DeleteComponentRequestRequestTypeDef:
 
 ```python title="Definition"
 class DeleteComponentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+```
+
+## DeleteFormRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import DeleteFormRequestRequestTypeDef
+
+def get_value() -> DeleteFormRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFormRequestRequestTypeDef(TypedDict):
     appId: str,
     environmentName: str,
     id: str,
@@ -342,6 +382,25 @@ class ExportComponentsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
+## ExportFormsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ExportFormsRequestRequestTypeDef
+
+def get_value() -> ExportFormsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ExportFormsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    nextToken: NotRequired[str],
+```
+
 ## ExportThemesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -359,6 +418,77 @@ class ExportThemesRequestRequestTypeDef(TypedDict):
     appId: str,
     environmentName: str,
     nextToken: NotRequired[str],
+```
+
+## FieldPositionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FieldPositionTypeDef
+
+def get_value() -> FieldPositionTypeDef:
+    return {
+        "below": ...,
+    }
+```
+
+```python title="Definition"
+class FieldPositionTypeDef(TypedDict):
+    below: NotRequired[str],
+    fixed: NotRequired[FixedPositionType],  # (1)
+    rightOf: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FixedPositionType](./literals.md#fixedpositiontype) 
+## FieldValidationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FieldValidationConfigurationTypeDef
+
+def get_value() -> FieldValidationConfigurationTypeDef:
+    return {
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class FieldValidationConfigurationTypeDef(TypedDict):
+    type: str,
+    numValues: NotRequired[Sequence[int]],
+    strValues: NotRequired[Sequence[str]],
+    validationMessage: NotRequired[str],
+```
+
+## FormInputValuePropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormInputValuePropertyTypeDef
+
+def get_value() -> FormInputValuePropertyTypeDef:
+    return {
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class FormInputValuePropertyTypeDef(TypedDict):
+    value: NotRequired[str],
+```
+
+## FormStyleConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormStyleConfigTypeDef
+
+def get_value() -> FormStyleConfigTypeDef:
+    return {
+        "tokenReference": ...,
+    }
+```
+
+```python title="Definition"
+class FormStyleConfigTypeDef(TypedDict):
+    tokenReference: NotRequired[str],
+    value: NotRequired[str],
 ```
 
 ## GetComponentRequestRequestTypeDef
@@ -379,6 +509,44 @@ class GetComponentRequestRequestTypeDef(TypedDict):
     appId: str,
     environmentName: str,
     id: str,
+```
+
+## GetFormRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import GetFormRequestRequestTypeDef
+
+def get_value() -> GetFormRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetFormRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+```
+
+## GetMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import GetMetadataRequestRequestTypeDef
+
+def get_value() -> GetMetadataRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetadataRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
 ```
 
 ## GetThemeRequestRequestTypeDef
@@ -415,6 +583,26 @@ def get_value() -> ListComponentsRequestRequestTypeDef:
 
 ```python title="Definition"
 class ListComponentsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListFormsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ListFormsRequestRequestTypeDef
+
+def get_value() -> ListFormsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListFormsRequestRequestTypeDef(TypedDict):
     appId: str,
     environmentName: str,
     maxResults: NotRequired[int],
@@ -485,6 +673,22 @@ class PredicateTypeDef(TypedDict):
 
 1. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
 2. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+## PutMetadataFlagBodyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import PutMetadataFlagBodyTypeDef
+
+def get_value() -> PutMetadataFlagBodyTypeDef:
+    return {
+        "newValue": ...,
+    }
+```
+
+```python title="Definition"
+class PutMetadataFlagBodyTypeDef(TypedDict):
+    newValue: str,
+```
+
 ## RefreshTokenRequestBodyTypeDef
 
 ```python title="Usage Example"
@@ -705,6 +909,25 @@ class ExchangeCodeForTokenResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMetadataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import GetMetadataResponseTypeDef
+
+def get_value() -> GetMetadataResponseTypeDef:
+    return {
+        "features": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetadataResponseTypeDef(TypedDict):
+    features: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListComponentsResponseTypeDef
 
 ```python title="Usage Example"
@@ -748,6 +971,34 @@ class RefreshTokenResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FormSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormSummaryTypeDef
+
+def get_value() -> FormSummaryTypeDef:
+    return {
+        "appId": ...,
+        "dataType": ...,
+        "environmentName": ...,
+        "formActionType": ...,
+        "id": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class FormSummaryTypeDef(TypedDict):
+    appId: str,
+    dataType: FormDataTypeConfigTypeDef,  # (1)
+    environmentName: str,
+    formActionType: FormActionTypeType,  # (2)
+    id: str,
+    name: str,
+```
+
+1. See [:material-code-braces: FormDataTypeConfigTypeDef](./type_defs.md#formdatatypeconfigtypedef) 
+2. See [:material-code-brackets: FormActionTypeType](./literals.md#formactiontypetype) 
 ## CreateThemeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -892,6 +1143,26 @@ class ExportComponentsRequestExportComponentsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ExportFormsRequestExportFormsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ExportFormsRequestExportFormsPaginateTypeDef
+
+def get_value() -> ExportFormsRequestExportFormsPaginateTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ExportFormsRequestExportFormsPaginateTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ExportThemesRequestExportThemesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -932,6 +1203,26 @@ class ListComponentsRequestListComponentsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListFormsRequestListFormsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ListFormsRequestListFormsPaginateTypeDef
+
+def get_value() -> ListFormsRequestListFormsPaginateTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListFormsRequestListFormsPaginateTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThemesRequestListThemesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -952,6 +1243,86 @@ class ListThemesRequestListThemesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## FormButtonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormButtonTypeDef
+
+def get_value() -> FormButtonTypeDef:
+    return {
+        "children": ...,
+    }
+```
+
+```python title="Definition"
+class FormButtonTypeDef(TypedDict):
+    children: NotRequired[str],
+    excluded: NotRequired[bool],
+    position: NotRequired[FieldPositionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FieldPositionTypeDef](./type_defs.md#fieldpositiontypedef) 
+## SectionalElementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import SectionalElementTypeDef
+
+def get_value() -> SectionalElementTypeDef:
+    return {
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class SectionalElementTypeDef(TypedDict):
+    type: str,
+    level: NotRequired[int],
+    orientation: NotRequired[str],
+    position: NotRequired[FieldPositionTypeDef],  # (1)
+    text: NotRequired[str],
+```
+
+1. See [:material-code-braces: FieldPositionTypeDef](./type_defs.md#fieldpositiontypedef) 
+## ValueMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ValueMappingTypeDef
+
+def get_value() -> ValueMappingTypeDef:
+    return {
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class ValueMappingTypeDef(TypedDict):
+    value: FormInputValuePropertyTypeDef,  # (1)
+    displayValue: NotRequired[FormInputValuePropertyTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FormInputValuePropertyTypeDef](./type_defs.md#forminputvaluepropertytypedef) 
+2. See [:material-code-braces: FormInputValuePropertyTypeDef](./type_defs.md#forminputvaluepropertytypedef) 
+## FormStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormStyleTypeDef
+
+def get_value() -> FormStyleTypeDef:
+    return {
+        "horizontalGap": ...,
+    }
+```
+
+```python title="Definition"
+class FormStyleTypeDef(TypedDict):
+    horizontalGap: NotRequired[FormStyleConfigTypeDef],  # (1)
+    outerPadding: NotRequired[FormStyleConfigTypeDef],  # (1)
+    verticalGap: NotRequired[FormStyleConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FormStyleConfigTypeDef](./type_defs.md#formstyleconfigtypedef) 
+2. See [:material-code-braces: FormStyleConfigTypeDef](./type_defs.md#formstyleconfigtypedef) 
+3. See [:material-code-braces: FormStyleConfigTypeDef](./type_defs.md#formstyleconfigtypedef) 
 ## ListThemesResponseTypeDef
 
 ```python title="Usage Example"
@@ -974,6 +1345,29 @@ class ListThemesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ThemeSummaryTypeDef](./type_defs.md#themesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutMetadataFlagRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import PutMetadataFlagRequestRequestTypeDef
+
+def get_value() -> PutMetadataFlagRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "body": ...,
+        "environmentName": ...,
+        "featureName": ...,
+    }
+```
+
+```python title="Definition"
+class PutMetadataFlagRequestRequestTypeDef(TypedDict):
+    appId: str,
+    body: PutMetadataFlagBodyTypeDef,  # (1)
+    environmentName: str,
+    featureName: str,
+```
+
+1. See [:material-code-braces: PutMetadataFlagBodyTypeDef](./type_defs.md#putmetadataflagbodytypedef) 
 ## RefreshTokenRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1037,6 +1431,68 @@ class ComponentEventTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ActionParametersTypeDef](./type_defs.md#actionparameterstypedef) 
+## ListFormsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ListFormsResponseTypeDef
+
+def get_value() -> ListFormsResponseTypeDef:
+    return {
+        "entities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFormsResponseTypeDef(TypedDict):
+    entities: List[FormSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FormSummaryTypeDef](./type_defs.md#formsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FormCTATypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormCTATypeDef
+
+def get_value() -> FormCTATypeDef:
+    return {
+        "cancel": ...,
+    }
+```
+
+```python title="Definition"
+class FormCTATypeDef(TypedDict):
+    cancel: NotRequired[FormButtonTypeDef],  # (1)
+    clear: NotRequired[FormButtonTypeDef],  # (1)
+    position: NotRequired[FormButtonsPositionType],  # (3)
+    submit: NotRequired[FormButtonTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FormButtonTypeDef](./type_defs.md#formbuttontypedef) 
+2. See [:material-code-braces: FormButtonTypeDef](./type_defs.md#formbuttontypedef) 
+3. See [:material-code-brackets: FormButtonsPositionType](./literals.md#formbuttonspositiontype) 
+4. See [:material-code-braces: FormButtonTypeDef](./type_defs.md#formbuttontypedef) 
+## ValueMappingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ValueMappingsTypeDef
+
+def get_value() -> ValueMappingsTypeDef:
+    return {
+        "values": ...,
+    }
+```
+
+```python title="Definition"
+class ValueMappingsTypeDef(TypedDict):
+    values: Sequence[ValueMappingTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ValueMappingTypeDef](./type_defs.md#valuemappingtypedef) 
 ## ComponentChildTypeDef
 
 ```python title="Usage Example"
@@ -1181,6 +1637,36 @@ class UpdateComponentDataTypeDef(TypedDict):
 4. See [:material-code-braces: ComponentEventTypeDef](./type_defs.md#componenteventtypedef) 
 5. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
 6. See [:material-code-braces: ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef) 
+## FieldInputConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FieldInputConfigTypeDef
+
+def get_value() -> FieldInputConfigTypeDef:
+    return {
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class FieldInputConfigTypeDef(TypedDict):
+    type: str,
+    defaultChecked: NotRequired[bool],
+    defaultCountryCode: NotRequired[str],
+    defaultValue: NotRequired[str],
+    descriptiveText: NotRequired[str],
+    maxValue: NotRequired[float],
+    minValue: NotRequired[float],
+    name: NotRequired[str],
+    placeholder: NotRequired[str],
+    readOnly: NotRequired[bool],
+    required: NotRequired[bool],
+    step: NotRequired[float],
+    value: NotRequired[str],
+    valueMappings: NotRequired[ValueMappingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ValueMappingsTypeDef](./type_defs.md#valuemappingstypedef) 
 ## CreateComponentResponseTypeDef
 
 ```python title="Usage Example"
@@ -1309,3 +1795,261 @@ class UpdateComponentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: UpdateComponentDataTypeDef](./type_defs.md#updatecomponentdatatypedef) 
+## FieldConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FieldConfigTypeDef
+
+def get_value() -> FieldConfigTypeDef:
+    return {
+        "excluded": ...,
+    }
+```
+
+```python title="Definition"
+class FieldConfigTypeDef(TypedDict):
+    excluded: NotRequired[bool],
+    inputType: NotRequired[FieldInputConfigTypeDef],  # (1)
+    label: NotRequired[str],
+    position: NotRequired[FieldPositionTypeDef],  # (2)
+    validations: NotRequired[Sequence[FieldValidationConfigurationTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: FieldInputConfigTypeDef](./type_defs.md#fieldinputconfigtypedef) 
+2. See [:material-code-braces: FieldPositionTypeDef](./type_defs.md#fieldpositiontypedef) 
+3. See [:material-code-braces: FieldValidationConfigurationTypeDef](./type_defs.md#fieldvalidationconfigurationtypedef) 
+## CreateFormDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import CreateFormDataTypeDef
+
+def get_value() -> CreateFormDataTypeDef:
+    return {
+        "dataType": ...,
+        "fields": ...,
+        "formActionType": ...,
+        "name": ...,
+        "schemaVersion": ...,
+        "sectionalElements": ...,
+        "style": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFormDataTypeDef(TypedDict):
+    dataType: FormDataTypeConfigTypeDef,  # (2)
+    fields: Mapping[str, FieldConfigTypeDef],  # (3)
+    formActionType: FormActionTypeType,  # (4)
+    name: str,
+    schemaVersion: str,
+    sectionalElements: Mapping[str, SectionalElementTypeDef],  # (5)
+    style: FormStyleTypeDef,  # (6)
+    cta: NotRequired[FormCTATypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: FormCTATypeDef](./type_defs.md#formctatypedef) 
+2. See [:material-code-braces: FormDataTypeConfigTypeDef](./type_defs.md#formdatatypeconfigtypedef) 
+3. See [:material-code-braces: FieldConfigTypeDef](./type_defs.md#fieldconfigtypedef) 
+4. See [:material-code-brackets: FormActionTypeType](./literals.md#formactiontypetype) 
+5. See [:material-code-braces: SectionalElementTypeDef](./type_defs.md#sectionalelementtypedef) 
+6. See [:material-code-braces: FormStyleTypeDef](./type_defs.md#formstyletypedef) 
+## FormTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import FormTypeDef
+
+def get_value() -> FormTypeDef:
+    return {
+        "appId": ...,
+        "dataType": ...,
+        "environmentName": ...,
+        "fields": ...,
+        "formActionType": ...,
+        "id": ...,
+        "name": ...,
+        "schemaVersion": ...,
+        "sectionalElements": ...,
+        "style": ...,
+    }
+```
+
+```python title="Definition"
+class FormTypeDef(TypedDict):
+    appId: str,
+    dataType: FormDataTypeConfigTypeDef,  # (2)
+    environmentName: str,
+    fields: Dict[str, FieldConfigTypeDef],  # (3)
+    formActionType: FormActionTypeType,  # (4)
+    id: str,
+    name: str,
+    schemaVersion: str,
+    sectionalElements: Dict[str, SectionalElementTypeDef],  # (5)
+    style: FormStyleTypeDef,  # (6)
+    cta: NotRequired[FormCTATypeDef],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: FormCTATypeDef](./type_defs.md#formctatypedef) 
+2. See [:material-code-braces: FormDataTypeConfigTypeDef](./type_defs.md#formdatatypeconfigtypedef) 
+3. See [:material-code-braces: FieldConfigTypeDef](./type_defs.md#fieldconfigtypedef) 
+4. See [:material-code-brackets: FormActionTypeType](./literals.md#formactiontypetype) 
+5. See [:material-code-braces: SectionalElementTypeDef](./type_defs.md#sectionalelementtypedef) 
+6. See [:material-code-braces: FormStyleTypeDef](./type_defs.md#formstyletypedef) 
+## UpdateFormDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import UpdateFormDataTypeDef
+
+def get_value() -> UpdateFormDataTypeDef:
+    return {
+        "cta": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFormDataTypeDef(TypedDict):
+    cta: NotRequired[FormCTATypeDef],  # (1)
+    dataType: NotRequired[FormDataTypeConfigTypeDef],  # (2)
+    fields: NotRequired[Mapping[str, FieldConfigTypeDef]],  # (3)
+    formActionType: NotRequired[FormActionTypeType],  # (4)
+    name: NotRequired[str],
+    schemaVersion: NotRequired[str],
+    sectionalElements: NotRequired[Mapping[str, SectionalElementTypeDef]],  # (5)
+    style: NotRequired[FormStyleTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: FormCTATypeDef](./type_defs.md#formctatypedef) 
+2. See [:material-code-braces: FormDataTypeConfigTypeDef](./type_defs.md#formdatatypeconfigtypedef) 
+3. See [:material-code-braces: FieldConfigTypeDef](./type_defs.md#fieldconfigtypedef) 
+4. See [:material-code-brackets: FormActionTypeType](./literals.md#formactiontypetype) 
+5. See [:material-code-braces: SectionalElementTypeDef](./type_defs.md#sectionalelementtypedef) 
+6. See [:material-code-braces: FormStyleTypeDef](./type_defs.md#formstyletypedef) 
+## CreateFormRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import CreateFormRequestRequestTypeDef
+
+def get_value() -> CreateFormRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "formToCreate": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFormRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    formToCreate: CreateFormDataTypeDef,  # (1)
+    clientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: CreateFormDataTypeDef](./type_defs.md#createformdatatypedef) 
+## CreateFormResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import CreateFormResponseTypeDef
+
+def get_value() -> CreateFormResponseTypeDef:
+    return {
+        "entity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFormResponseTypeDef(TypedDict):
+    entity: FormTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FormTypeDef](./type_defs.md#formtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExportFormsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ExportFormsResponseTypeDef
+
+def get_value() -> ExportFormsResponseTypeDef:
+    return {
+        "entities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExportFormsResponseTypeDef(TypedDict):
+    entities: List[FormTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FormTypeDef](./type_defs.md#formtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFormResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import GetFormResponseTypeDef
+
+def get_value() -> GetFormResponseTypeDef:
+    return {
+        "form": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetFormResponseTypeDef(TypedDict):
+    form: FormTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FormTypeDef](./type_defs.md#formtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFormResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import UpdateFormResponseTypeDef
+
+def get_value() -> UpdateFormResponseTypeDef:
+    return {
+        "entity": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFormResponseTypeDef(TypedDict):
+    entity: FormTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FormTypeDef](./type_defs.md#formtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFormRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import UpdateFormRequestRequestTypeDef
+
+def get_value() -> UpdateFormRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+        "updatedForm": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFormRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+    updatedForm: UpdateFormDataTypeDef,  # (1)
+    clientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: UpdateFormDataTypeDef](./type_defs.md#updateformdatatypedef) 

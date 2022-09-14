@@ -5881,6 +5881,7 @@ ResourceTypeType = Literal[
     "capacity-reservation-fleet",
     "carrier-gateway",
     "client-vpn-endpoint",
+    "coip-pool",
     "customer-gateway",
     "dedicated-host",
     "dhcp-options",

@@ -38,6 +38,7 @@ except (
     client.ResourceConflictException,
     client.ResourceNotFoundException,
     client.ServiceQuotaExceededException,
+    client.UnauthorizedException,
 ) as e:
     print(e)
 ```
@@ -119,6 +120,41 @@ parent.create_component(**kwargs)
 
 1. See [:material-code-braces: CreateComponentRequestRequestTypeDef](./type_defs.md#createcomponentrequestrequesttypedef) 
 
+### create\_form
+
+Creates a new form for an Amplify app.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").create_form` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.create_form)
+
+```python title="Method definition"
+def create_form(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    formToCreate: CreateFormDataTypeDef,  # (1)
+    clientToken: str = ...,
+) -> CreateFormResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: CreateFormDataTypeDef](./type_defs.md#createformdatatypedef) 
+2. See [:material-code-braces: CreateFormResponseTypeDef](./type_defs.md#createformresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateFormRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+    "formToCreate": ...,
+}
+
+parent.create_form(**kwargs)
+```
+
+1. See [:material-code-braces: CreateFormRequestRequestTypeDef](./type_defs.md#createformrequestrequesttypedef) 
+
 ### create\_theme
 
 Creates a theme to apply to the components in an Amplify app.
@@ -186,6 +222,39 @@ parent.delete_component(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef) 
+
+### delete\_form
+
+Deletes a form from an Amplify app.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").delete_form` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.delete_form)
+
+```python title="Method definition"
+def delete_form(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    id: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteFormRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+    "id": ...,
+}
+
+parent.delete_form(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteFormRequestRequestTypeDef](./type_defs.md#deleteformrequestrequesttypedef) 
 
 ### delete\_theme
 
@@ -286,6 +355,39 @@ parent.export_components(**kwargs)
 
 1. See [:material-code-braces: ExportComponentsRequestRequestTypeDef](./type_defs.md#exportcomponentsrequestrequesttypedef) 
 
+### export\_forms
+
+Exports form configurations to code that is ready to integrate into an Amplify
+app.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").export_forms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.export_forms)
+
+```python title="Method definition"
+def export_forms(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    nextToken: str = ...,
+) -> ExportFormsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExportFormsResponseTypeDef](./type_defs.md#exportformsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ExportFormsRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+}
+
+parent.export_forms(**kwargs)
+```
+
+1. See [:material-code-braces: ExportFormsRequestRequestTypeDef](./type_defs.md#exportformsrequestrequesttypedef) 
+
 ### export\_themes
 
 Exports theme configurations to code that is ready to integrate into an Amplify
@@ -371,6 +473,70 @@ parent.get_component(**kwargs)
 
 1. See [:material-code-braces: GetComponentRequestRequestTypeDef](./type_defs.md#getcomponentrequestrequesttypedef) 
 
+### get\_form
+
+Returns an existing form for an Amplify app.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").get_form` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.get_form)
+
+```python title="Method definition"
+def get_form(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    id: str,
+) -> GetFormResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetFormResponseTypeDef](./type_defs.md#getformresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFormRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+    "id": ...,
+}
+
+parent.get_form(**kwargs)
+```
+
+1. See [:material-code-braces: GetFormRequestRequestTypeDef](./type_defs.md#getformrequestrequesttypedef) 
+
+### get\_metadata
+
+Returns existing metadata for an Amplify app.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").get_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.get_metadata)
+
+```python title="Method definition"
+def get_metadata(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+) -> GetMetadataResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetMetadataResponseTypeDef](./type_defs.md#getmetadataresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetMetadataRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+}
+
+parent.get_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: GetMetadataRequestRequestTypeDef](./type_defs.md#getmetadatarequestrequesttypedef) 
+
 ### get\_theme
 
 Returns an existing theme for an Amplify app.
@@ -438,6 +604,39 @@ parent.list_components(**kwargs)
 
 1. See [:material-code-braces: ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef) 
 
+### list\_forms
+
+Retrieves a list of forms for a specified Amplify app and backend environment.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").list_forms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.list_forms)
+
+```python title="Method definition"
+def list_forms(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFormsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListFormsResponseTypeDef](./type_defs.md#listformsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListFormsRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+}
+
+parent.list_forms(**kwargs)
+```
+
+1. See [:material-code-braces: ListFormsRequestRequestTypeDef](./type_defs.md#listformsrequestrequesttypedef) 
+
 ### list\_themes
 
 Retrieves a list of themes for a specified Amplify app and backend environment.
@@ -470,6 +669,42 @@ parent.list_themes(**kwargs)
 ```
 
 1. See [:material-code-braces: ListThemesRequestRequestTypeDef](./type_defs.md#listthemesrequestrequesttypedef) 
+
+### put\_metadata\_flag
+
+Stores the metadata information about a feature on a form or view.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").put_metadata_flag` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.put_metadata_flag)
+
+```python title="Method definition"
+def put_metadata_flag(
+    self,
+    *,
+    appId: str,
+    body: PutMetadataFlagBodyTypeDef,  # (1)
+    environmentName: str,
+    featureName: str,
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PutMetadataFlagBodyTypeDef](./type_defs.md#putmetadataflagbodytypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutMetadataFlagRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "body": ...,
+    "environmentName": ...,
+    "featureName": ...,
+}
+
+parent.put_metadata_flag(**kwargs)
+```
+
+1. See [:material-code-braces: PutMetadataFlagRequestRequestTypeDef](./type_defs.md#putmetadataflagrequestrequesttypedef) 
 
 ### refresh\_token
 
@@ -541,6 +776,43 @@ parent.update_component(**kwargs)
 
 1. See [:material-code-braces: UpdateComponentRequestRequestTypeDef](./type_defs.md#updatecomponentrequestrequesttypedef) 
 
+### update\_form
+
+Updates an existing form.
+
+Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").update_form` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client.update_form)
+
+```python title="Method definition"
+def update_form(
+    self,
+    *,
+    appId: str,
+    environmentName: str,
+    id: str,
+    updatedForm: UpdateFormDataTypeDef,  # (1)
+    clientToken: str = ...,
+) -> UpdateFormResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: UpdateFormDataTypeDef](./type_defs.md#updateformdatatypedef) 
+2. See [:material-code-braces: UpdateFormResponseTypeDef](./type_defs.md#updateformresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateFormRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+    "environmentName": ...,
+    "id": ...,
+    "updatedForm": ...,
+}
+
+parent.update_form(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFormRequestRequestTypeDef](./type_defs.md#updateformrequestrequesttypedef) 
+
 ### update\_theme
 
 Updates an existing theme.
@@ -585,8 +857,10 @@ parent.update_theme(**kwargs)
 Type annotations and code completion for `#!python boto3.client("amplifyuibuilder").get_paginator` method with overloads.
 
 - `client.get_paginator("export_components")` -> [ExportComponentsPaginator](./paginators.md#exportcomponentspaginator)
+- `client.get_paginator("export_forms")` -> [ExportFormsPaginator](./paginators.md#exportformspaginator)
 - `client.get_paginator("export_themes")` -> [ExportThemesPaginator](./paginators.md#exportthemespaginator)
 - `client.get_paginator("list_components")` -> [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
+- `client.get_paginator("list_forms")` -> [ListFormsPaginator](./paginators.md#listformspaginator)
 - `client.get_paginator("list_themes")` -> [ListThemesPaginator](./paginators.md#listthemespaginator)
 
 

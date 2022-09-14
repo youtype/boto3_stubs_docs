@@ -21,6 +21,20 @@ ExportComponentsPaginatorName = Literal[
     "export_components",
 ]
 ```
+## ExportFormsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.literals import ExportFormsPaginatorName
+
+def get_value() -> ExportFormsPaginatorName:
+    return "export_forms"
+```
+
+```python title="Definition"
+ExportFormsPaginatorName = Literal[
+    "export_forms",
+]
+```
 ## ExportThemesPaginatorName
 
 ```python title="Usage Example"
@@ -35,6 +49,66 @@ ExportThemesPaginatorName = Literal[
     "export_themes",
 ]
 ```
+## FixedPositionType
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.literals import FixedPositionType
+
+def get_value() -> FixedPositionType:
+    return "first"
+```
+
+```python title="Definition"
+FixedPositionType = Literal[
+    "first",
+]
+```
+## FormActionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.literals import FormActionTypeType
+
+def get_value() -> FormActionTypeType:
+    return "create"
+```
+
+```python title="Definition"
+FormActionTypeType = Literal[
+    "create",
+    "update",
+]
+```
+## FormButtonsPositionType
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.literals import FormButtonsPositionType
+
+def get_value() -> FormButtonsPositionType:
+    return "bottom"
+```
+
+```python title="Definition"
+FormButtonsPositionType = Literal[
+    "bottom",
+    "top",
+    "top_and_bottom",
+]
+```
+## FormDataSourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.literals import FormDataSourceTypeType
+
+def get_value() -> FormDataSourceTypeType:
+    return "Custom"
+```
+
+```python title="Definition"
+FormDataSourceTypeType = Literal[
+    "Custom",
+    "DataStore",
+]
+```
 ## ListComponentsPaginatorName
 
 ```python title="Usage Example"
@@ -47,6 +121,20 @@ def get_value() -> ListComponentsPaginatorName:
 ```python title="Definition"
 ListComponentsPaginatorName = Literal[
     "list_components",
+]
+```
+## ListFormsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.literals import ListFormsPaginatorName
+
+def get_value() -> ListFormsPaginatorName:
+    return "list_forms"
+```
+
+```python title="Definition"
+ListFormsPaginatorName = Literal[
+    "list_forms",
 ]
 ```
 ## ListThemesPaginatorName
@@ -469,8 +557,10 @@ def get_value() -> PaginatorName:
 ```python title="Definition"
 PaginatorName = Literal[
     "export_components",
+    "export_forms",
     "export_themes",
     "list_components",
+    "list_forms",
     "list_themes",
 ]
 ```

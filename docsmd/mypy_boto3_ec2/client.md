@@ -1907,6 +1907,70 @@ parent.create_client_vpn_route(**kwargs)
 
 1. See [:material-code-braces: CreateClientVpnRouteRequestRequestTypeDef](./type_defs.md#createclientvpnrouterequestrequesttypedef) 
 
+### create\_coip\_cidr
+
+Creates a range of customer-owned IP addresses.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_coip_cidr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_coip_cidr)
+
+```python title="Method definition"
+def create_coip_cidr(
+    self,
+    *,
+    Cidr: str,
+    CoipPoolId: str,
+    DryRun: bool = ...,
+) -> CreateCoipCidrResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateCoipCidrResultTypeDef](./type_defs.md#createcoipcidrresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateCoipCidrRequestRequestTypeDef = {  # (1)
+    "Cidr": ...,
+    "CoipPoolId": ...,
+}
+
+parent.create_coip_cidr(**kwargs)
+```
+
+1. See [:material-code-braces: CreateCoipCidrRequestRequestTypeDef](./type_defs.md#createcoipcidrrequestrequesttypedef) 
+
+### create\_coip\_pool
+
+Creates a pool of customer-owned IP (CoIP) addresses.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_coip_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_coip_pool)
+
+```python title="Method definition"
+def create_coip_pool(
+    self,
+    *,
+    LocalGatewayRouteTableId: str,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> CreateCoipPoolResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+2. See [:material-code-braces: CreateCoipPoolResultTypeDef](./type_defs.md#createcoippoolresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateCoipPoolRequestRequestTypeDef = {  # (1)
+    "LocalGatewayRouteTableId": ...,
+}
+
+parent.create_coip_pool(**kwargs)
+```
+
+1. See [:material-code-braces: CreateCoipPoolRequestRequestTypeDef](./type_defs.md#createcoippoolrequestrequesttypedef) 
+
 ### create\_customer\_gateway
 
 Provides information to Amazon Web Services about your customer gateway device.
@@ -2615,6 +2679,74 @@ parent.create_local_gateway_route(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateLocalGatewayRouteRequestRequestTypeDef](./type_defs.md#createlocalgatewayrouterequestrequesttypedef) 
+
+### create\_local\_gateway\_route\_table
+
+Creates a local gateway route table.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_local_gateway_route_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route_table)
+
+```python title="Method definition"
+def create_local_gateway_route_table(
+    self,
+    *,
+    LocalGatewayId: str,
+    Mode: LocalGatewayRouteTableModeType = ...,  # (1)
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
+    DryRun: bool = ...,
+) -> CreateLocalGatewayRouteTableResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: LocalGatewayRouteTableModeType](./literals.md#localgatewayroutetablemodetype) 
+2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+3. See [:material-code-braces: CreateLocalGatewayRouteTableResultTypeDef](./type_defs.md#createlocalgatewayroutetableresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLocalGatewayRouteTableRequestRequestTypeDef = {  # (1)
+    "LocalGatewayId": ...,
+}
+
+parent.create_local_gateway_route_table(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLocalGatewayRouteTableRequestRequestTypeDef](./type_defs.md#createlocalgatewayroutetablerequestrequesttypedef) 
+
+### create\_local\_gateway\_route\_table\_virtual\_interface\_group\_association
+
+Creates a local gateway route table virtual interface group association.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_local_gateway_route_table_virtual_interface_group_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route_table_virtual_interface_group_association)
+
+```python title="Method definition"
+def create_local_gateway_route_table_virtual_interface_group_association(
+    self,
+    *,
+    LocalGatewayRouteTableId: str,
+    LocalGatewayVirtualInterfaceGroupId: str,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+2. See [:material-code-braces: CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef](./type_defs.md#createlocalgatewayroutetablevirtualinterfacegroupassociationresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef = {  # (1)
+    "LocalGatewayRouteTableId": ...,
+    "LocalGatewayVirtualInterfaceGroupId": ...,
+}
+
+parent.create_local_gateway_route_table_virtual_interface_group_association(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef](./type_defs.md#createlocalgatewayroutetablevirtualinterfacegroupassociationrequestrequesttypedef) 
 
 ### create\_local\_gateway\_route\_table\_vpc\_association
 
@@ -4492,6 +4624,68 @@ parent.delete_client_vpn_route(**kwargs)
 
 1. See [:material-code-braces: DeleteClientVpnRouteRequestRequestTypeDef](./type_defs.md#deleteclientvpnrouterequestrequesttypedef) 
 
+### delete\_coip\_cidr
+
+Deletes a range of customer-owned IP addresses.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_coip_cidr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_coip_cidr)
+
+```python title="Method definition"
+def delete_coip_cidr(
+    self,
+    *,
+    Cidr: str,
+    CoipPoolId: str,
+    DryRun: bool = ...,
+) -> DeleteCoipCidrResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteCoipCidrResultTypeDef](./type_defs.md#deletecoipcidrresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteCoipCidrRequestRequestTypeDef = {  # (1)
+    "Cidr": ...,
+    "CoipPoolId": ...,
+}
+
+parent.delete_coip_cidr(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteCoipCidrRequestRequestTypeDef](./type_defs.md#deletecoipcidrrequestrequesttypedef) 
+
+### delete\_coip\_pool
+
+Deletes a pool of customer-owned IP (CoIP) addresses.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_coip_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_coip_pool)
+
+```python title="Method definition"
+def delete_coip_pool(
+    self,
+    *,
+    CoipPoolId: str,
+    DryRun: bool = ...,
+) -> DeleteCoipPoolResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteCoipPoolResultTypeDef](./type_defs.md#deletecoippoolresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteCoipPoolRequestRequestTypeDef = {  # (1)
+    "CoipPoolId": ...,
+}
+
+parent.delete_coip_pool(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteCoipPoolRequestRequestTypeDef](./type_defs.md#deletecoippoolrequestrequesttypedef) 
+
 ### delete\_customer\_gateway
 
 Deletes the specified customer gateway.
@@ -4951,6 +5145,66 @@ parent.delete_local_gateway_route(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteLocalGatewayRouteRequestRequestTypeDef](./type_defs.md#deletelocalgatewayrouterequestrequesttypedef) 
+
+### delete\_local\_gateway\_route\_table
+
+Deletes a local gateway route table.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_local_gateway_route_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route_table)
+
+```python title="Method definition"
+def delete_local_gateway_route_table(
+    self,
+    *,
+    LocalGatewayRouteTableId: str,
+    DryRun: bool = ...,
+) -> DeleteLocalGatewayRouteTableResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteLocalGatewayRouteTableResultTypeDef](./type_defs.md#deletelocalgatewayroutetableresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLocalGatewayRouteTableRequestRequestTypeDef = {  # (1)
+    "LocalGatewayRouteTableId": ...,
+}
+
+parent.delete_local_gateway_route_table(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLocalGatewayRouteTableRequestRequestTypeDef](./type_defs.md#deletelocalgatewayroutetablerequestrequesttypedef) 
+
+### delete\_local\_gateway\_route\_table\_virtual\_interface\_group\_association
+
+Deletes a local gateway route table virtual interface group association.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_local_gateway_route_table_virtual_interface_group_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route_table_virtual_interface_group_association)
+
+```python title="Method definition"
+def delete_local_gateway_route_table_virtual_interface_group_association(
+    self,
+    *,
+    LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: str,
+    DryRun: bool = ...,
+) -> DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef](./type_defs.md#deletelocalgatewayroutetablevirtualinterfacegroupassociationresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef = {  # (1)
+    "LocalGatewayRouteTableVirtualInterfaceGroupAssociationId": ...,
+}
+
+parent.delete_local_gateway_route_table_virtual_interface_group_association(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef](./type_defs.md#deletelocalgatewayroutetablevirtualinterfacegroupassociationrequestrequesttypedef) 
 
 ### delete\_local\_gateway\_route\_table\_vpc\_association
 
@@ -14995,7 +15249,8 @@ def modify_local_gateway_route(
     *,
     DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
-    NetworkInterfaceId: str,
+    LocalGatewayVirtualInterfaceGroupId: str = ...,
+    NetworkInterfaceId: str = ...,
     DryRun: bool = ...,
 ) -> ModifyLocalGatewayRouteResultTypeDef:  # (1)
     ...
@@ -15008,7 +15263,6 @@ def modify_local_gateway_route(
 kwargs: ModifyLocalGatewayRouteRequestRequestTypeDef = {  # (1)
     "DestinationCidrBlock": ...,
     "LocalGatewayRouteTableId": ...,
-    "NetworkInterfaceId": ...,
 }
 
 parent.modify_local_gateway_route(**kwargs)

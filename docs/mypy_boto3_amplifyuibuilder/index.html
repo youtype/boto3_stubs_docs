@@ -37257,8 +37257,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="paginators/#exportcomponentspaginator">ExportComponentsPaginator</a></li>
+<li><a href="paginators/#exportformspaginator">ExportFormsPaginator</a></li>
 <li><a href="paginators/#exportthemespaginator">ExportThemesPaginator</a></li>
 <li><a href="paginators/#listcomponentspaginator">ListComponentsPaginator</a></li>
+<li><a href="paginators/#listformspaginator">ListFormsPaginator</a></li>
 <li><a href="paginators/#listthemespaginator">ListThemesPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
@@ -37270,8 +37272,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="literals/#exportcomponentspaginatorname">ExportComponentsPaginatorName</a></li>
+<li><a href="literals/#exportformspaginatorname">ExportFormsPaginatorName</a></li>
 <li><a href="literals/#exportthemespaginatorname">ExportThemesPaginatorName</a></li>
+<li><a href="literals/#fixedpositiontype">FixedPositionType</a></li>
+<li><a href="literals/#formactiontypetype">FormActionTypeType</a></li>
+<li><a href="literals/#formbuttonspositiontype">FormButtonsPositionType</a></li>
+<li><a href="literals/#formdatasourcetypetype">FormDataSourceTypeType</a></li>
 <li><a href="literals/#listcomponentspaginatorname">ListComponentsPaginatorName</a></li>
+<li><a href="literals/#listformspaginatorname">ListFormsPaginatorName</a></li>
 <li><a href="literals/#listthemespaginatorname">ListThemesPaginatorName</a></li>
 <li><a href="literals/#sortdirectiontype">SortDirectionType</a></li>
 <li><a href="literals/#tokenproviderstype">TokenProvidersType</a></li>
@@ -37302,20 +37310,31 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#componentsummarytypedef">ComponentSummaryTypeDef</a></li>
 <li><a href="type_defs/#componentvarianttypedef">ComponentVariantTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#formdatatypeconfigtypedef">FormDataTypeConfigTypeDef</a></li>
 <li><a href="type_defs/#createthemedatatypedef">CreateThemeDataTypeDef</a></li>
 <li><a href="type_defs/#themetypedef">ThemeTypeDef</a></li>
 <li><a href="type_defs/#deletecomponentrequestrequesttypedef">DeleteComponentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteformrequestrequesttypedef">DeleteFormRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletethemerequestrequesttypedef">DeleteThemeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exchangecodefortokenrequestbodytypedef">ExchangeCodeForTokenRequestBodyTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#exportcomponentsrequestrequesttypedef">ExportComponentsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#exportformsrequestrequesttypedef">ExportFormsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportthemesrequestrequesttypedef">ExportThemesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#fieldpositiontypedef">FieldPositionTypeDef</a></li>
+<li><a href="type_defs/#fieldvalidationconfigurationtypedef">FieldValidationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#forminputvaluepropertytypedef">FormInputValuePropertyTypeDef</a></li>
+<li><a href="type_defs/#formstyleconfigtypedef">FormStyleConfigTypeDef</a></li>
 <li><a href="type_defs/#getcomponentrequestrequesttypedef">GetComponentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getformrequestrequesttypedef">GetFormRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getmetadatarequestrequesttypedef">GetMetadataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getthemerequestrequesttypedef">GetThemeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcomponentsrequestrequesttypedef">ListComponentsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listformsrequestrequesttypedef">ListFormsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listthemesrequestrequesttypedef">ListThemesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#themesummarytypedef">ThemeSummaryTypeDef</a></li>
 <li><a href="type_defs/#predicatetypedef">PredicateTypeDef</a></li>
+<li><a href="type_defs/#putmetadataflagbodytypedef">PutMetadataFlagBodyTypeDef</a></li>
 <li><a href="type_defs/#refreshtokenrequestbodytypedef">RefreshTokenRequestBodyTypeDef</a></li>
 <li><a href="type_defs/#themevaluetypedef">ThemeValueTypeDef</a></li>
 <li><a href="type_defs/#themevaluestypedef">ThemeValuesTypeDef</a></li>
@@ -37326,8 +37345,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#componentpropertytypedef">ComponentPropertyTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#exchangecodefortokenresponsetypedef">ExchangeCodeForTokenResponseTypeDef</a></li>
+<li><a href="type_defs/#getmetadataresponsetypedef">GetMetadataResponseTypeDef</a></li>
 <li><a href="type_defs/#listcomponentsresponsetypedef">ListComponentsResponseTypeDef</a></li>
 <li><a href="type_defs/#refreshtokenresponsetypedef">RefreshTokenResponseTypeDef</a></li>
+<li><a href="type_defs/#formsummarytypedef">FormSummaryTypeDef</a></li>
 <li><a href="type_defs/#createthemerequestrequesttypedef">CreateThemeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createthemeresponsetypedef">CreateThemeResponseTypeDef</a></li>
 <li><a href="type_defs/#exportthemesresponsetypedef">ExportThemesResponseTypeDef</a></li>
@@ -37335,23 +37356,44 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatethemeresponsetypedef">UpdateThemeResponseTypeDef</a></li>
 <li><a href="type_defs/#exchangecodefortokenrequestrequesttypedef">ExchangeCodeForTokenRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportcomponentsrequestexportcomponentspaginatetypedef">ExportComponentsRequestExportComponentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#exportformsrequestexportformspaginatetypedef">ExportFormsRequestExportFormsPaginateTypeDef</a></li>
 <li><a href="type_defs/#exportthemesrequestexportthemespaginatetypedef">ExportThemesRequestExportThemesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listcomponentsrequestlistcomponentspaginatetypedef">ListComponentsRequestListComponentsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listformsrequestlistformspaginatetypedef">ListFormsRequestListFormsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listthemesrequestlistthemespaginatetypedef">ListThemesRequestListThemesPaginateTypeDef</a></li>
+<li><a href="type_defs/#formbuttontypedef">FormButtonTypeDef</a></li>
+<li><a href="type_defs/#sectionalelementtypedef">SectionalElementTypeDef</a></li>
+<li><a href="type_defs/#valuemappingtypedef">ValueMappingTypeDef</a></li>
+<li><a href="type_defs/#formstyletypedef">FormStyleTypeDef</a></li>
 <li><a href="type_defs/#listthemesresponsetypedef">ListThemesResponseTypeDef</a></li>
+<li><a href="type_defs/#putmetadataflagrequestrequesttypedef">PutMetadataFlagRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#refreshtokenrequestrequesttypedef">RefreshTokenRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatethemerequestrequesttypedef">UpdateThemeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#componenteventtypedef">ComponentEventTypeDef</a></li>
+<li><a href="type_defs/#listformsresponsetypedef">ListFormsResponseTypeDef</a></li>
+<li><a href="type_defs/#formctatypedef">FormCTATypeDef</a></li>
+<li><a href="type_defs/#valuemappingstypedef">ValueMappingsTypeDef</a></li>
 <li><a href="type_defs/#componentchildtypedef">ComponentChildTypeDef</a></li>
 <li><a href="type_defs/#componenttypedef">ComponentTypeDef</a></li>
 <li><a href="type_defs/#createcomponentdatatypedef">CreateComponentDataTypeDef</a></li>
 <li><a href="type_defs/#updatecomponentdatatypedef">UpdateComponentDataTypeDef</a></li>
+<li><a href="type_defs/#fieldinputconfigtypedef">FieldInputConfigTypeDef</a></li>
 <li><a href="type_defs/#createcomponentresponsetypedef">CreateComponentResponseTypeDef</a></li>
 <li><a href="type_defs/#exportcomponentsresponsetypedef">ExportComponentsResponseTypeDef</a></li>
 <li><a href="type_defs/#getcomponentresponsetypedef">GetComponentResponseTypeDef</a></li>
 <li><a href="type_defs/#updatecomponentresponsetypedef">UpdateComponentResponseTypeDef</a></li>
 <li><a href="type_defs/#createcomponentrequestrequesttypedef">CreateComponentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecomponentrequestrequesttypedef">UpdateComponentRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#fieldconfigtypedef">FieldConfigTypeDef</a></li>
+<li><a href="type_defs/#createformdatatypedef">CreateFormDataTypeDef</a></li>
+<li><a href="type_defs/#formtypedef">FormTypeDef</a></li>
+<li><a href="type_defs/#updateformdatatypedef">UpdateFormDataTypeDef</a></li>
+<li><a href="type_defs/#createformrequestrequesttypedef">CreateFormRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createformresponsetypedef">CreateFormResponseTypeDef</a></li>
+<li><a href="type_defs/#exportformsresponsetypedef">ExportFormsResponseTypeDef</a></li>
+<li><a href="type_defs/#getformresponsetypedef">GetFormResponseTypeDef</a></li>
+<li><a href="type_defs/#updateformresponsetypedef">UpdateFormResponseTypeDef</a></li>
+<li><a href="type_defs/#updateformrequestrequesttypedef">UpdateFormRequestRequestTypeDef</a></li>
 </ul>
 
 

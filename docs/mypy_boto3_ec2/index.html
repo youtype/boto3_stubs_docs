@@ -38187,6 +38187,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#cloudwatchlogoptionsspecificationtypedef">CloudWatchLogOptionsSpecificationTypeDef</a></li>
 <li><a href="type_defs/#cloudwatchlogoptionstypedef">CloudWatchLogOptionsTypeDef</a></li>
 <li><a href="type_defs/#coipaddressusagetypedef">CoipAddressUsageTypeDef</a></li>
+<li><a href="type_defs/#coipcidrtypedef">CoipCidrTypeDef</a></li>
 <li><a href="type_defs/#confirmproductinstancerequestrequesttypedef">ConfirmProductInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#connectionlogoptionstypedef">ConnectionLogOptionsTypeDef</a></li>
 <li><a href="type_defs/#connectionnotificationtypedef">ConnectionNotificationTypeDef</a></li>
@@ -38196,6 +38197,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#cpuoptionstypedef">CpuOptionsTypeDef</a></li>
 <li><a href="type_defs/#reservationfleetinstancespecificationtypedef">ReservationFleetInstanceSpecificationTypeDef</a></li>
 <li><a href="type_defs/#createclientvpnrouterequestrequesttypedef">CreateClientVpnRouteRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createcoipcidrrequestrequesttypedef">CreateCoipCidrRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdefaultsubnetrequestrequesttypedef">CreateDefaultSubnetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdefaultvpcrequestrequesttypedef">CreateDefaultVpcRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#newdhcpconfigurationtypedef">NewDhcpConfigurationTypeDef</a></li>
@@ -38237,6 +38239,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletecarriergatewayrequestrequesttypedef">DeleteCarrierGatewayRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteclientvpnendpointrequestrequesttypedef">DeleteClientVpnEndpointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteclientvpnrouterequestrequesttypedef">DeleteClientVpnRouteRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletecoipcidrrequestrequesttypedef">DeleteCoipCidrRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletecoippoolrequestrequesttypedef">DeleteCoipPoolRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletecustomergatewayrequestrequesttypedef">DeleteCustomerGatewayRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedhcpoptionsrequestdhcpoptionsdeletetypedef">DeleteDhcpOptionsRequestDhcpOptionsDeleteTypeDef</a></li>
 <li><a href="type_defs/#deletedhcpoptionsrequestrequesttypedef">DeleteDhcpOptionsRequestRequestTypeDef</a></li>
@@ -38261,6 +38265,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#responseerrortypedef">ResponseErrorTypeDef</a></li>
 <li><a href="type_defs/#deletelaunchtemplateversionsresponsesuccessitemtypedef">DeleteLaunchTemplateVersionsResponseSuccessItemTypeDef</a></li>
 <li><a href="type_defs/#deletelocalgatewayrouterequestrequesttypedef">DeleteLocalGatewayRouteRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletelocalgatewayroutetablerequestrequesttypedef">DeleteLocalGatewayRouteTableRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletelocalgatewayroutetablevirtualinterfacegroupassociationrequestrequesttypedef">DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletelocalgatewayroutetablevpcassociationrequestrequesttypedef">DeleteLocalGatewayRouteTableVpcAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemanagedprefixlistrequestrequesttypedef">DeleteManagedPrefixListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletenatgatewayrequestrequesttypedef">DeleteNatGatewayRequestRequestTypeDef</a></li>
@@ -38991,7 +38997,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#launchtemplatetagspecificationrequesttypedef">LaunchTemplateTagSpecificationRequestTypeDef</a></li>
 <li><a href="type_defs/#launchtemplatetagspecificationtypedef">LaunchTemplateTagSpecificationTypeDef</a></li>
 <li><a href="type_defs/#launchtemplatetypedef">LaunchTemplateTypeDef</a></li>
-<li><a href="type_defs/#localgatewayroutetabletypedef">LocalGatewayRouteTableTypeDef</a></li>
 <li><a href="type_defs/#localgatewayroutetablevirtualinterfacegroupassociationtypedef">LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef</a></li>
 <li><a href="type_defs/#localgatewayroutetablevpcassociationtypedef">LocalGatewayRouteTableVpcAssociationTypeDef</a></li>
 <li><a href="type_defs/#localgatewaytypedef">LocalGatewayTypeDef</a></li>
@@ -39090,6 +39095,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#vpntunnellogoptionsspecificationtypedef">VpnTunnelLogOptionsSpecificationTypeDef</a></li>
 <li><a href="type_defs/#vpntunnellogoptionstypedef">VpnTunnelLogOptionsTypeDef</a></li>
 <li><a href="type_defs/#getcoippoolusageresulttypedef">GetCoipPoolUsageResultTypeDef</a></li>
+<li><a href="type_defs/#createcoipcidrresulttypedef">CreateCoipCidrResultTypeDef</a></li>
+<li><a href="type_defs/#deletecoipcidrresulttypedef">DeleteCoipCidrResultTypeDef</a></li>
 <li><a href="type_defs/#createvpcendpointconnectionnotificationresulttypedef">CreateVpcEndpointConnectionNotificationResultTypeDef</a></li>
 <li><a href="type_defs/#describevpcendpointconnectionnotificationsresulttypedef">DescribeVpcEndpointConnectionNotificationsResultTypeDef</a></li>
 <li><a href="type_defs/#modifyinstanceeventwindowrequestrequesttypedef">ModifyInstanceEventWindowRequestRequestTypeDef</a></li>
@@ -39477,6 +39484,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#imagediskcontainertypedef">ImageDiskContainerTypeDef</a></li>
 <li><a href="type_defs/#snapshotdiskcontainertypedef">SnapshotDiskContainerTypeDef</a></li>
 <li><a href="type_defs/#listimagesinrecyclebinresulttypedef">ListImagesInRecycleBinResultTypeDef</a></li>
+<li><a href="type_defs/#localgatewayroutetabletypedef">LocalGatewayRouteTableTypeDef</a></li>
 <li><a href="type_defs/#importinstancelaunchspecificationtypedef">ImportInstanceLaunchSpecificationTypeDef</a></li>
 <li><a href="type_defs/#inferenceacceleratorinfotypedef">InferenceAcceleratorInfoTypeDef</a></li>
 <li><a href="type_defs/#modifyinstancecreditspecificationrequestrequesttypedef">ModifyInstanceCreditSpecificationRequestRequestTypeDef</a></li>
@@ -39584,6 +39592,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcarriergatewayresulttypedef">CreateCarrierGatewayResultTypeDef</a></li>
 <li><a href="type_defs/#deletecarriergatewayresulttypedef">DeleteCarrierGatewayResultTypeDef</a></li>
 <li><a href="type_defs/#describecarriergatewaysresulttypedef">DescribeCarrierGatewaysResultTypeDef</a></li>
+<li><a href="type_defs/#createcoippoolresulttypedef">CreateCoipPoolResultTypeDef</a></li>
+<li><a href="type_defs/#deletecoippoolresulttypedef">DeleteCoipPoolResultTypeDef</a></li>
 <li><a href="type_defs/#describecoippoolsresulttypedef">DescribeCoipPoolsResultTypeDef</a></li>
 <li><a href="type_defs/#createcustomergatewayresulttypedef">CreateCustomerGatewayResultTypeDef</a></li>
 <li><a href="type_defs/#describecustomergatewaysresulttypedef">DescribeCustomerGatewaysResultTypeDef</a></li>
@@ -39599,7 +39609,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletelaunchtemplateresulttypedef">DeleteLaunchTemplateResultTypeDef</a></li>
 <li><a href="type_defs/#describelaunchtemplatesresulttypedef">DescribeLaunchTemplatesResultTypeDef</a></li>
 <li><a href="type_defs/#modifylaunchtemplateresulttypedef">ModifyLaunchTemplateResultTypeDef</a></li>
-<li><a href="type_defs/#describelocalgatewayroutetablesresulttypedef">DescribeLocalGatewayRouteTablesResultTypeDef</a></li>
+<li><a href="type_defs/#createlocalgatewayroutetablevirtualinterfacegroupassociationresulttypedef">CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef</a></li>
+<li><a href="type_defs/#deletelocalgatewayroutetablevirtualinterfacegroupassociationresulttypedef">DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef</a></li>
 <li><a href="type_defs/#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef">DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef</a></li>
 <li><a href="type_defs/#createlocalgatewayroutetablevpcassociationresulttypedef">CreateLocalGatewayRouteTableVpcAssociationResultTypeDef</a></li>
 <li><a href="type_defs/#deletelocalgatewayroutetablevpcassociationresulttypedef">DeleteLocalGatewayRouteTableVpcAssociationResultTypeDef</a></li>
@@ -39634,6 +39645,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcapacityreservationfleetrequestrequesttypedef">CreateCapacityReservationFleetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createcapacityreservationrequestrequesttypedef">CreateCapacityReservationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createcarriergatewayrequestrequesttypedef">CreateCarrierGatewayRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createcoippoolrequestrequesttypedef">CreateCoipPoolRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createcustomergatewayrequestrequesttypedef">CreateCustomerGatewayRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdhcpoptionsrequestrequesttypedef">CreateDhcpOptionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdhcpoptionsrequestserviceresourcecreatedhcpoptionstypedef">CreateDhcpOptionsRequestServiceResourceCreateDhcpOptionsTypeDef</a></li>
@@ -39649,6 +39661,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createipamscoperequestrequesttypedef">CreateIpamScopeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createkeypairrequestrequesttypedef">CreateKeyPairRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createkeypairrequestserviceresourcecreatekeypairtypedef">CreateKeyPairRequestServiceResourceCreateKeyPairTypeDef</a></li>
+<li><a href="type_defs/#createlocalgatewayroutetablerequestrequesttypedef">CreateLocalGatewayRouteTableRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createlocalgatewayroutetablevirtualinterfacegroupassociationrequestrequesttypedef">CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createlocalgatewayroutetablevpcassociationrequestrequesttypedef">CreateLocalGatewayRouteTableVpcAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createmanagedprefixlistrequestrequesttypedef">CreateManagedPrefixListRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createnatgatewayrequestrequesttypedef">CreateNatGatewayRequestRequestTypeDef</a></li>
@@ -39797,6 +39811,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#modifyimageattributerequestrequesttypedef">ModifyImageAttributeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#importimagerequestrequesttypedef">ImportImageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#importsnapshotrequestrequesttypedef">ImportSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createlocalgatewayroutetableresulttypedef">CreateLocalGatewayRouteTableResultTypeDef</a></li>
+<li><a href="type_defs/#deletelocalgatewayroutetableresulttypedef">DeleteLocalGatewayRouteTableResultTypeDef</a></li>
+<li><a href="type_defs/#describelocalgatewayroutetablesresulttypedef">DescribeLocalGatewayRouteTablesResultTypeDef</a></li>
 <li><a href="type_defs/#importinstancerequestrequesttypedef">ImportInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#runinstancesrequestrequesttypedef">RunInstancesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#runinstancesrequestserviceresourcecreateinstancestypedef">RunInstancesRequestServiceResourceCreateInstancesTypeDef</a></li>

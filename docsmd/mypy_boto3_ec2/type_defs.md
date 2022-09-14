@@ -2328,6 +2328,24 @@ class CoipAddressUsageTypeDef(TypedDict):
     CoIp: NotRequired[str],
 ```
 
+## CoipCidrTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CoipCidrTypeDef
+
+def get_value() -> CoipCidrTypeDef:
+    return {
+        "Cidr": ...,
+    }
+```
+
+```python title="Definition"
+class CoipCidrTypeDef(TypedDict):
+    Cidr: NotRequired[str],
+    CoipPoolId: NotRequired[str],
+    LocalGatewayRouteTableId: NotRequired[str],
+```
+
 ## ConfirmProductInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2515,6 +2533,25 @@ class CreateClientVpnRouteRequestRequestTypeDef(TypedDict):
     TargetVpcSubnetId: str,
     Description: NotRequired[str],
     ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+## CreateCoipCidrRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateCoipCidrRequestRequestTypeDef
+
+def get_value() -> CreateCoipCidrRequestRequestTypeDef:
+    return {
+        "Cidr": ...,
+        "CoipPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCoipCidrRequestRequestTypeDef(TypedDict):
+    Cidr: str,
+    CoipPoolId: str,
     DryRun: NotRequired[bool],
 ```
 
@@ -3312,6 +3349,42 @@ class DeleteClientVpnRouteRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## DeleteCoipCidrRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteCoipCidrRequestRequestTypeDef
+
+def get_value() -> DeleteCoipCidrRequestRequestTypeDef:
+    return {
+        "Cidr": ...,
+        "CoipPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCoipCidrRequestRequestTypeDef(TypedDict):
+    Cidr: str,
+    CoipPoolId: str,
+    DryRun: NotRequired[bool],
+```
+
+## DeleteCoipPoolRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteCoipPoolRequestRequestTypeDef
+
+def get_value() -> DeleteCoipPoolRequestRequestTypeDef:
+    return {
+        "CoipPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCoipPoolRequestRequestTypeDef(TypedDict):
+    CoipPoolId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## DeleteCustomerGatewayRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3732,6 +3805,40 @@ def get_value() -> DeleteLocalGatewayRouteRequestRequestTypeDef:
 class DeleteLocalGatewayRouteRequestRequestTypeDef(TypedDict):
     DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
+    DryRun: NotRequired[bool],
+```
+
+## DeleteLocalGatewayRouteTableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableRequestRequestTypeDef
+
+def get_value() -> DeleteLocalGatewayRouteTableRequestRequestTypeDef:
+    return {
+        "LocalGatewayRouteTableId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLocalGatewayRouteTableRequestRequestTypeDef(TypedDict):
+    LocalGatewayRouteTableId: str,
+    DryRun: NotRequired[bool],
+```
+
+## DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef
+
+def get_value() -> DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef:
+    return {
+        "LocalGatewayRouteTableVirtualInterfaceGroupAssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef(TypedDict):
+    LocalGatewayRouteTableVirtualInterfaceGroupAssociationId: str,
     DryRun: NotRequired[bool],
 ```
 
@@ -10575,7 +10682,6 @@ def get_value() -> ModifyLocalGatewayRouteRequestRequestTypeDef:
     return {
         "DestinationCidrBlock": ...,
         "LocalGatewayRouteTableId": ...,
-        "NetworkInterfaceId": ...,
     }
 ```
 
@@ -10583,7 +10689,8 @@ def get_value() -> ModifyLocalGatewayRouteRequestRequestTypeDef:
 class ModifyLocalGatewayRouteRequestRequestTypeDef(TypedDict):
     DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
-    NetworkInterfaceId: str,
+    LocalGatewayVirtualInterfaceGroupId: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
     DryRun: NotRequired[bool],
 ```
 
@@ -17511,31 +17618,6 @@ class LaunchTemplateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## LocalGatewayRouteTableTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import LocalGatewayRouteTableTypeDef
-
-def get_value() -> LocalGatewayRouteTableTypeDef:
-    return {
-        "LocalGatewayRouteTableId": ...,
-    }
-```
-
-```python title="Definition"
-class LocalGatewayRouteTableTypeDef(TypedDict):
-    LocalGatewayRouteTableId: NotRequired[str],
-    LocalGatewayRouteTableArn: NotRequired[str],
-    LocalGatewayId: NotRequired[str],
-    OutpostArn: NotRequired[str],
-    OwnerId: NotRequired[str],
-    State: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (1)
-    Mode: NotRequired[LocalGatewayRouteTableModeType],  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-brackets: LocalGatewayRouteTableModeType](./literals.md#localgatewayroutetablemodetype) 
 ## LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef
 
 ```python title="Usage Example"
@@ -19758,6 +19840,46 @@ class GetCoipPoolUsageResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CoipAddressUsageTypeDef](./type_defs.md#coipaddressusagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCoipCidrResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateCoipCidrResultTypeDef
+
+def get_value() -> CreateCoipCidrResultTypeDef:
+    return {
+        "CoipCidr": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCoipCidrResultTypeDef(TypedDict):
+    CoipCidr: CoipCidrTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoipCidrTypeDef](./type_defs.md#coipcidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteCoipCidrResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteCoipCidrResultTypeDef
+
+def get_value() -> DeleteCoipCidrResultTypeDef:
+    return {
+        "CoipCidr": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCoipCidrResultTypeDef(TypedDict):
+    CoipCidr: CoipCidrTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoipCidrTypeDef](./type_defs.md#coipcidrtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVpcEndpointConnectionNotificationResultTypeDef
 
@@ -28228,6 +28350,33 @@ class ListImagesInRecycleBinResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ImageRecycleBinInfoTypeDef](./type_defs.md#imagerecyclebininfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LocalGatewayRouteTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import LocalGatewayRouteTableTypeDef
+
+def get_value() -> LocalGatewayRouteTableTypeDef:
+    return {
+        "LocalGatewayRouteTableId": ...,
+    }
+```
+
+```python title="Definition"
+class LocalGatewayRouteTableTypeDef(TypedDict):
+    LocalGatewayRouteTableId: NotRequired[str],
+    LocalGatewayRouteTableArn: NotRequired[str],
+    LocalGatewayId: NotRequired[str],
+    OutpostArn: NotRequired[str],
+    OwnerId: NotRequired[str],
+    State: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    Mode: NotRequired[LocalGatewayRouteTableModeType],  # (2)
+    StateReason: NotRequired[StateReasonTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: LocalGatewayRouteTableModeType](./literals.md#localgatewayroutetablemodetype) 
+3. See [:material-code-braces: StateReasonTypeDef](./type_defs.md#statereasontypedef) 
 ## ImportInstanceLaunchSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -30851,6 +31000,46 @@ class DescribeCarrierGatewaysResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCoipPoolResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateCoipPoolResultTypeDef
+
+def get_value() -> CreateCoipPoolResultTypeDef:
+    return {
+        "CoipPool": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCoipPoolResultTypeDef(TypedDict):
+    CoipPool: CoipPoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoipPoolTypeDef](./type_defs.md#coippooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteCoipPoolResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteCoipPoolResultTypeDef
+
+def get_value() -> DeleteCoipPoolResultTypeDef:
+    return {
+        "CoipPool": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteCoipPoolResultTypeDef(TypedDict):
+    CoipPool: CoipPoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoipPoolTypeDef](./type_defs.md#coippooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCoipPoolsResultTypeDef
 
 ```python title="Usage Example"
@@ -31165,27 +31354,45 @@ class ModifyLaunchTemplateResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeLocalGatewayRouteTablesResultTypeDef
+## CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTablesResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef
 
-def get_value() -> DescribeLocalGatewayRouteTablesResultTypeDef:
+def get_value() -> CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef:
     return {
-        "LocalGatewayRouteTables": ...,
-        "NextToken": ...,
+        "LocalGatewayRouteTableVirtualInterfaceGroupAssociation": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeLocalGatewayRouteTablesResultTypeDef(TypedDict):
-    LocalGatewayRouteTables: List[LocalGatewayRouteTableTypeDef],  # (1)
-    NextToken: str,
+class CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef(TypedDict):
+    LocalGatewayRouteTableVirtualInterfaceGroupAssociation: LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: LocalGatewayRouteTableTypeDef](./type_defs.md#localgatewayroutetabletypedef) 
+1. See [:material-code-braces: LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef](./type_defs.md#localgatewayroutetablevirtualinterfacegroupassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef
+
+def get_value() -> DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef:
+    return {
+        "LocalGatewayRouteTableVirtualInterfaceGroupAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResultTypeDef(TypedDict):
+    LocalGatewayRouteTableVirtualInterfaceGroupAssociation: LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef](./type_defs.md#localgatewayroutetablevirtualinterfacegroupassociationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef
 
@@ -31947,6 +32154,25 @@ class CreateCarrierGatewayRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateCoipPoolRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateCoipPoolRequestRequestTypeDef
+
+def get_value() -> CreateCoipPoolRequestRequestTypeDef:
+    return {
+        "LocalGatewayRouteTableId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCoipPoolRequestRequestTypeDef(TypedDict):
+    LocalGatewayRouteTableId: str,
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## CreateCustomerGatewayRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -32300,6 +32526,48 @@ class CreateKeyPairRequestServiceResourceCreateKeyPairTypeDef(TypedDict):
 1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 3. See [:material-code-brackets: KeyFormatType](./literals.md#keyformattype) 
+## CreateLocalGatewayRouteTableRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableRequestRequestTypeDef
+
+def get_value() -> CreateLocalGatewayRouteTableRequestRequestTypeDef:
+    return {
+        "LocalGatewayId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocalGatewayRouteTableRequestRequestTypeDef(TypedDict):
+    LocalGatewayId: str,
+    Mode: NotRequired[LocalGatewayRouteTableModeType],  # (1)
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: LocalGatewayRouteTableModeType](./literals.md#localgatewayroutetablemodetype) 
+2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef
+
+def get_value() -> CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef:
+    return {
+        "LocalGatewayRouteTableId": ...,
+        "LocalGatewayVirtualInterfaceGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociationRequestRequestTypeDef(TypedDict):
+    LocalGatewayRouteTableId: str,
+    LocalGatewayVirtualInterfaceGroupId: str,
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## CreateLocalGatewayRouteTableVpcAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -36113,6 +36381,68 @@ class ImportSnapshotRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: ClientDataTypeDef](./type_defs.md#clientdatatypedef) 
 2. See [:material-code-braces: SnapshotDiskContainerTypeDef](./type_defs.md#snapshotdiskcontainertypedef) 
 3. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateLocalGatewayRouteTableResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableResultTypeDef
+
+def get_value() -> CreateLocalGatewayRouteTableResultTypeDef:
+    return {
+        "LocalGatewayRouteTable": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocalGatewayRouteTableResultTypeDef(TypedDict):
+    LocalGatewayRouteTable: LocalGatewayRouteTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocalGatewayRouteTableTypeDef](./type_defs.md#localgatewayroutetabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteLocalGatewayRouteTableResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableResultTypeDef
+
+def get_value() -> DeleteLocalGatewayRouteTableResultTypeDef:
+    return {
+        "LocalGatewayRouteTable": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLocalGatewayRouteTableResultTypeDef(TypedDict):
+    LocalGatewayRouteTable: LocalGatewayRouteTableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocalGatewayRouteTableTypeDef](./type_defs.md#localgatewayroutetabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeLocalGatewayRouteTablesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTablesResultTypeDef
+
+def get_value() -> DescribeLocalGatewayRouteTablesResultTypeDef:
+    return {
+        "LocalGatewayRouteTables": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLocalGatewayRouteTablesResultTypeDef(TypedDict):
+    LocalGatewayRouteTables: List[LocalGatewayRouteTableTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocalGatewayRouteTableTypeDef](./type_defs.md#localgatewayroutetabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
