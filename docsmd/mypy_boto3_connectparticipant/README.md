@@ -90,6 +90,7 @@ def get_value() -> ArtifactStatusType:
 - [ConnectParticipantServiceName](./literals.md#connectparticipantservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

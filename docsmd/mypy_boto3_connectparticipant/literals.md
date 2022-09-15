@@ -472,3 +472,26 @@ ResourceServiceName = Literal[
     "sqs",
 ]
 ```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-west-2",
+]
+```

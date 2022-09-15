@@ -1583,7 +1583,7 @@ parent.transact_get_items(**kwargs)
 
 ### transact\_write\_items
 
-`TransactWriteItems` is a synchronous write operation that groups up to 25
+`TransactWriteItems` is a synchronous write operation that groups up to 100
 action requests.
 
 Type annotations and code completion for `#!python boto3.client("dynamodb").transact_write_items` method.

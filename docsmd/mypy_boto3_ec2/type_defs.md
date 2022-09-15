@@ -290,6 +290,26 @@ class AddPrefixListEntryTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
+## AddedPrincipalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AddedPrincipalTypeDef
+
+def get_value() -> AddedPrincipalTypeDef:
+    return {
+        "PrincipalType": ...,
+    }
+```
+
+```python title="Definition"
+class AddedPrincipalTypeDef(TypedDict):
+    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
+    Principal: NotRequired[str],
+    ServicePermissionId: NotRequired[str],
+    ServiceId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## AnalysisComponentTypeDef
 
 ```python title="Usage Example"
@@ -426,24 +446,6 @@ class IpamPoolAllocationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IpamPoolAllocationResourceTypeType](./literals.md#ipampoolallocationresourcetypetype) 
-## AllowedPrincipalTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import AllowedPrincipalTypeDef
-
-def get_value() -> AllowedPrincipalTypeDef:
-    return {
-        "PrincipalType": ...,
-    }
-```
-
-```python title="Definition"
-class AllowedPrincipalTypeDef(TypedDict):
-    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
-    Principal: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## AlternatePathHintTypeDef
 
 ```python title="Usage Example"
@@ -16081,25 +16083,6 @@ class ModifyVpcEndpointServicePayerResponsibilityResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModifyVpcEndpointServicePermissionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePermissionsResultTypeDef
-
-def get_value() -> ModifyVpcEndpointServicePermissionsResultTypeDef:
-    return {
-        "ReturnValue": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyVpcEndpointServicePermissionsResultTypeDef(TypedDict):
-    ReturnValue: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyVpcTenancyResultTypeDef
 
 ```python title="Usage Example"
@@ -16824,6 +16807,28 @@ class DescribeSpotFleetInstancesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ActiveInstanceTypeDef](./type_defs.md#activeinstancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVpcEndpointServicePermissionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePermissionsResultTypeDef
+
+def get_value() -> ModifyVpcEndpointServicePermissionsResultTypeDef:
+    return {
+        "AddedPrincipals": ...,
+        "ReturnValue": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVpcEndpointServicePermissionsResultTypeDef(TypedDict):
+    AddedPrincipals: List[AddedPrincipalTypeDef],  # (1)
+    ReturnValue: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AddedPrincipalTypeDef](./type_defs.md#addedprincipaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdditionalDetailTypeDef
 
 ```python title="Usage Example"
@@ -16912,6 +16917,28 @@ class AddressTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DomainTypeType](./literals.md#domaintypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## AllowedPrincipalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AllowedPrincipalTypeDef
+
+def get_value() -> AllowedPrincipalTypeDef:
+    return {
+        "PrincipalType": ...,
+    }
+```
+
+```python title="Definition"
+class AllowedPrincipalTypeDef(TypedDict):
+    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
+    Principal: NotRequired[str],
+    ServicePermissionId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+    ServiceId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CapacityReservationTypeDef
 
@@ -18429,28 +18456,6 @@ class GetIpamPoolAllocationsResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: IpamPoolAllocationTypeDef](./type_defs.md#ipampoolallocationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeVpcEndpointServicePermissionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicePermissionsResultTypeDef
-
-def get_value() -> DescribeVpcEndpointServicePermissionsResultTypeDef:
-    return {
-        "AllowedPrincipals": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeVpcEndpointServicePermissionsResultTypeDef(TypedDict):
-    AllowedPrincipals: List[AllowedPrincipalTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AllowedPrincipalTypeDef](./type_defs.md#allowedprincipaltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AnalysisAclRuleTypeDef
 
@@ -27410,11 +27415,14 @@ class VpcEndpointConnectionTypeDef(TypedDict):
     NetworkLoadBalancerArns: NotRequired[List[str]],
     GatewayLoadBalancerArns: NotRequired[List[str]],
     IpAddressType: NotRequired[IpAddressTypeType],  # (3)
+    VpcEndpointConnectionId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
 ```
 
 1. See [:material-code-brackets: StateType](./literals.md#statetype) 
 2. See [:material-code-braces: DnsEntryTypeDef](./type_defs.md#dnsentrytypedef) 
 3. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ModifyClientVpnEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -30895,6 +30903,28 @@ class DescribeAddressesResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVpcEndpointServicePermissionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicePermissionsResultTypeDef
+
+def get_value() -> DescribeVpcEndpointServicePermissionsResultTypeDef:
+    return {
+        "AllowedPrincipals": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVpcEndpointServicePermissionsResultTypeDef(TypedDict):
+    AllowedPrincipals: List[AllowedPrincipalTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AllowedPrincipalTypeDef](./type_defs.md#allowedprincipaltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCapacityReservationResultTypeDef
 

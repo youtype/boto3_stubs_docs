@@ -1313,6 +1313,7 @@ def get_value() -> HyperParameterTuningJobStrategyTypeType:
 ```python title="Definition"
 HyperParameterTuningJobStrategyTypeType = Literal[
     "Bayesian",
+    "Hyperband",
     "Random",
 ]
 ```

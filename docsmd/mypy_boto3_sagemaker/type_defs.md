@@ -4897,6 +4897,23 @@ class TuningJobCompletionCriteriaTypeDef(TypedDict):
     TargetObjectiveMetricValue: float,
 ```
 
+## HyperbandStrategyConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HyperbandStrategyConfigTypeDef
+
+def get_value() -> HyperbandStrategyConfigTypeDef:
+    return {
+        "MinResource": ...,
+    }
+```
+
+```python title="Definition"
+class HyperbandStrategyConfigTypeDef(TypedDict):
+    MinResource: NotRequired[int],
+    MaxResource: NotRequired[int],
+```
+
 ## ParentHyperParameterTuningJobTypeDef
 
 ```python title="Usage Example"
@@ -13773,6 +13790,23 @@ class HyperParameterTuningJobSummaryTypeDef(TypedDict):
 3. See [:material-code-braces: TrainingJobStatusCountersTypeDef](./type_defs.md#trainingjobstatuscounterstypedef) 
 4. See [:material-code-braces: ObjectiveStatusCountersTypeDef](./type_defs.md#objectivestatuscounterstypedef) 
 5. See [:material-code-braces: ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef) 
+## HyperParameterTuningJobStrategyConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobStrategyConfigTypeDef
+
+def get_value() -> HyperParameterTuningJobStrategyConfigTypeDef:
+    return {
+        "HyperbandStrategyConfig": ...,
+    }
+```
+
+```python title="Definition"
+class HyperParameterTuningJobStrategyConfigTypeDef(TypedDict):
+    HyperbandStrategyConfig: NotRequired[HyperbandStrategyConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: HyperbandStrategyConfigTypeDef](./type_defs.md#hyperbandstrategyconfigtypedef) 
 ## HyperParameterTuningJobWarmStartConfigTypeDef
 
 ```python title="Usage Example"
@@ -17620,19 +17654,21 @@ def get_value() -> HyperParameterTuningJobConfigTypeDef:
 ```python title="Definition"
 class HyperParameterTuningJobConfigTypeDef(TypedDict):
     Strategy: HyperParameterTuningJobStrategyTypeType,  # (1)
-    ResourceLimits: ResourceLimitsTypeDef,  # (3)
-    HyperParameterTuningJobObjective: NotRequired[HyperParameterTuningJobObjectiveTypeDef],  # (2)
-    ParameterRanges: NotRequired[ParameterRangesTypeDef],  # (4)
-    TrainingJobEarlyStoppingType: NotRequired[TrainingJobEarlyStoppingTypeType],  # (5)
-    TuningJobCompletionCriteria: NotRequired[TuningJobCompletionCriteriaTypeDef],  # (6)
+    ResourceLimits: ResourceLimitsTypeDef,  # (4)
+    StrategyConfig: NotRequired[HyperParameterTuningJobStrategyConfigTypeDef],  # (2)
+    HyperParameterTuningJobObjective: NotRequired[HyperParameterTuningJobObjectiveTypeDef],  # (3)
+    ParameterRanges: NotRequired[ParameterRangesTypeDef],  # (5)
+    TrainingJobEarlyStoppingType: NotRequired[TrainingJobEarlyStoppingTypeType],  # (6)
+    TuningJobCompletionCriteria: NotRequired[TuningJobCompletionCriteriaTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: HyperParameterTuningJobStrategyTypeType](./literals.md#hyperparametertuningjobstrategytypetype) 
-2. See [:material-code-braces: HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef) 
-3. See [:material-code-braces: ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef) 
-4. See [:material-code-braces: ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef) 
-5. See [:material-code-brackets: TrainingJobEarlyStoppingTypeType](./literals.md#trainingjobearlystoppingtypetype) 
-6. See [:material-code-braces: TuningJobCompletionCriteriaTypeDef](./type_defs.md#tuningjobcompletioncriteriatypedef) 
+2. See [:material-code-braces: HyperParameterTuningJobStrategyConfigTypeDef](./type_defs.md#hyperparametertuningjobstrategyconfigtypedef) 
+3. See [:material-code-braces: HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef) 
+4. See [:material-code-braces: ResourceLimitsTypeDef](./type_defs.md#resourcelimitstypedef) 
+5. See [:material-code-braces: ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef) 
+6. See [:material-code-brackets: TrainingJobEarlyStoppingTypeType](./literals.md#trainingjobearlystoppingtypetype) 
+7. See [:material-code-braces: TuningJobCompletionCriteriaTypeDef](./type_defs.md#tuningjobcompletioncriteriatypedef) 
 ## AppImageConfigDetailsTypeDef
 
 ```python title="Usage Example"
