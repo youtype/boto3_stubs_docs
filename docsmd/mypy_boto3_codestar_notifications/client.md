@@ -271,7 +271,7 @@ parent.list_event_types(**kwargs)
 
 ### list\_notification\_rules
 
-Returns a list of the notification rules for an AWS account.
+Returns a list of the notification rules for an Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("codestar-notifications").list_notification_rules` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules)
@@ -332,7 +332,8 @@ parent.list_tags_for_resource(**kwargs)
 
 ### list\_targets
 
-Returns a list of the notification rule targets for an AWS account.
+Returns a list of the notification rule targets for an Amazon Web Services
+account.
 
 Type annotations and code completion for `#!python boto3.client("codestar-notifications").list_targets` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets)
@@ -364,9 +365,9 @@ parent.list_targets(**kwargs)
 
 ### subscribe
 
-Creates an association between a notification rule and an SNS topic so that the
-associated target can receive notifications when the events described in the
-rule are triggered.
+Creates an association between a notification rule and an Chatbot topic or
+Chatbot client so that the associated target can receive notifications when the
+events described in the rule are triggered.
 
 Type annotations and code completion for `#!python boto3.client("codestar-notifications").subscribe` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe)
@@ -430,9 +431,9 @@ parent.tag_resource(**kwargs)
 
 ### unsubscribe
 
-Removes an association between a notification rule and an Amazon SNS topic so
-that subscribers to that topic stop receiving notifications when the events
-described in the rule are triggered.
+Removes an association between a notification rule and an Chatbot topic so that
+subscribers to that topic stop receiving notifications when the events described
+in the rule are triggered.
 
 Type annotations and code completion for `#!python boto3.client("codestar-notifications").unsubscribe` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe)
