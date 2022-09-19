@@ -52,6 +52,40 @@ EventDataStoreStatusType = Literal[
     "PENDING_DELETION",
 ]
 ```
+## ImportFailureStatusType
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.literals import ImportFailureStatusType
+
+def get_value() -> ImportFailureStatusType:
+    return "FAILED"
+```
+
+```python title="Definition"
+ImportFailureStatusType = Literal[
+    "FAILED",
+    "RETRY",
+    "SUCCEEDED",
+]
+```
+## ImportStatusType
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.literals import ImportStatusType
+
+def get_value() -> ImportStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+ImportStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+    "INITIALIZING",
+    "STOPPED",
+]
+```
 ## InsightTypeType
 
 ```python title="Usage Example"
@@ -65,6 +99,34 @@ def get_value() -> InsightTypeType:
 InsightTypeType = Literal[
     "ApiCallRateInsight",
     "ApiErrorRateInsight",
+]
+```
+## ListImportFailuresPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.literals import ListImportFailuresPaginatorName
+
+def get_value() -> ListImportFailuresPaginatorName:
+    return "list_import_failures"
+```
+
+```python title="Definition"
+ListImportFailuresPaginatorName = Literal[
+    "list_import_failures",
+]
+```
+## ListImportsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.literals import ListImportsPaginatorName
+
+def get_value() -> ListImportsPaginatorName:
+    return "list_imports"
+```
+
+```python title="Definition"
+ListImportsPaginatorName = Literal[
+    "list_imports",
 ]
 ```
 ## ListPublicKeysPaginatorName
@@ -550,11 +612,13 @@ ResourceServiceName = Literal[
 from mypy_boto3_cloudtrail.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "list_public_keys"
+    return "list_import_failures"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "list_import_failures",
+    "list_imports",
     "list_public_keys",
     "list_tags",
     "list_trails",

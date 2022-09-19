@@ -174,6 +174,20 @@ AllocationStrategyType = Literal[
     "lowestPrice",
 ]
 ```
+## AllocationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import AllocationTypeType
+
+def get_value() -> AllocationTypeType:
+    return "used"
+```
+
+```python title="Definition"
+AllocationTypeType = Literal[
+    "used",
+]
+```
 ## AllowsMultipleInstanceTypesType
 
 ```python title="Usage Example"

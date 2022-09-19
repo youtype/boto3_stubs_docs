@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("cloudtrail")  # (1)
 
-    paginator = client.get_paginator("list_public_keys")  # (2)
+    paginator = client.get_paginator("list_import_failures")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [CloudTrailClient](./client.md)
-    2. paginator: [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
-    3. item: [:material-code-braces: ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef) 
+    2. paginator: [ListImportFailuresPaginator](./paginators.md#listimportfailurespaginator)
+    3. item: [:material-code-braces: ListImportFailuresResponseTypeDef](./type_defs.md#listimportfailuresresponsetypedef) 
 
 
 
@@ -90,16 +90,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_cloudtrail.client import CloudTrailClient
-    from mypy_boto3_cloudtrail.paginator import ListPublicKeysPaginator
-    from mypy_boto3_cloudtrail.type_defs import ListPublicKeysResponseTypeDef
+    from mypy_boto3_cloudtrail.paginator import ListImportFailuresPaginator
+    from mypy_boto3_cloudtrail.type_defs import ListImportFailuresResponseTypeDef
 
 
     session = Session()
     client: CloudTrailClient = session.client("cloudtrail")
 
-    paginator: ListPublicKeysPaginator = client.get_paginator("list_public_keys")
+    paginator: ListImportFailuresPaginator = client.get_paginator("list_import_failures")
     for item in paginator.paginate(...):
-        item: ListPublicKeysResponseTypeDef
+        item: ListImportFailuresResponseTypeDef
         print(item)
     ```
 

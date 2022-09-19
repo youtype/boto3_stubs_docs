@@ -802,6 +802,7 @@ def get_value() -> EngineFamilyType:
 EngineFamilyType = Literal[
     "MYSQL",
     "POSTGRESQL",
+    "SQLSERVER",
 ]
 ```
 ## FailoverStatusType
@@ -832,6 +833,7 @@ def get_value() -> IAMAuthModeType:
 ```python title="Definition"
 IAMAuthModeType = Literal[
     "DISABLED",
+    "ENABLED",
     "REQUIRED",
 ]
 ```

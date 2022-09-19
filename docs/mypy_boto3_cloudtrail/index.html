@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.1">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.2">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2e8b5541.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.9f9400aa.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -37250,12 +37250,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudtrail&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudtrail.paginator</span> <span class="kn">import</span> <span class="n">ListPublicKeysPaginator</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudtrail.paginator</span> <span class="kn">import</span> <span class="n">ListImportFailuresPaginator</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_public_keys_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListPublicKeysPaginator</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudtrail&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_public_keys&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_import_failures_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListImportFailuresPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;cloudtrail&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_import_failures&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#listimportfailurespaginator">ListImportFailuresPaginator</a></li>
+<li><a href="paginators/#listimportspaginator">ListImportsPaginator</a></li>
 <li><a href="paginators/#listpublickeyspaginator">ListPublicKeysPaginator</a></li>
 <li><a href="paginators/#listtagspaginator">ListTagsPaginator</a></li>
 <li><a href="paginators/#listtrailspaginator">ListTrailsPaginator</a></li>
@@ -37272,7 +37274,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#destinationtypetype">DestinationTypeType</a></li>
 <li><a href="literals/#eventcategorytype">EventCategoryType</a></li>
 <li><a href="literals/#eventdatastorestatustype">EventDataStoreStatusType</a></li>
+<li><a href="literals/#importfailurestatustype">ImportFailureStatusType</a></li>
+<li><a href="literals/#importstatustype">ImportStatusType</a></li>
 <li><a href="literals/#insighttypetype">InsightTypeType</a></li>
+<li><a href="literals/#listimportfailurespaginatorname">ListImportFailuresPaginatorName</a></li>
+<li><a href="literals/#listimportspaginatorname">ListImportsPaginatorName</a></li>
 <li><a href="literals/#listpublickeyspaginatorname">ListPublicKeysPaginatorName</a></li>
 <li><a href="literals/#listtagspaginatorname">ListTagsPaginatorName</a></li>
 <li><a href="literals/#listtrailspaginatorname">ListTrailsPaginatorName</a></li>
@@ -37313,15 +37319,22 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getchannelrequestrequesttypedef">GetChannelRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#geteventdatastorerequestrequesttypedef">GetEventDataStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#geteventselectorsrequestrequesttypedef">GetEventSelectorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getimportrequestrequesttypedef">GetImportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#importstatisticstypedef">ImportStatisticsTypeDef</a></li>
 <li><a href="type_defs/#getinsightselectorsrequestrequesttypedef">GetInsightSelectorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#insightselectortypedef">InsightSelectorTypeDef</a></li>
 <li><a href="type_defs/#getqueryresultsrequestrequesttypedef">GetQueryResultsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#querystatisticstypedef">QueryStatisticsTypeDef</a></li>
 <li><a href="type_defs/#gettrailrequestrequesttypedef">GetTrailRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gettrailstatusrequestrequesttypedef">GetTrailStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#importfailurelistitemtypedef">ImportFailureListItemTypeDef</a></li>
+<li><a href="type_defs/#s3importsourcetypedef">S3ImportSourceTypeDef</a></li>
+<li><a href="type_defs/#importslistitemtypedef">ImportsListItemTypeDef</a></li>
 <li><a href="type_defs/#listchannelsrequestrequesttypedef">ListChannelsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listeventdatastoresrequestrequesttypedef">ListEventDataStoresRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listimportfailuresrequestrequesttypedef">ListImportFailuresRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listimportsrequestrequesttypedef">ListImportsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listpublickeysrequestrequesttypedef">ListPublicKeysRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#publickeytypedef">PublicKeyTypeDef</a></li>
 <li><a href="type_defs/#listqueriesrequestrequesttypedef">ListQueriesRequestRequestTypeDef</a></li>
@@ -37333,6 +37346,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#restoreeventdatastorerequestrequesttypedef">RestoreEventDataStoreRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startloggingrequestrequesttypedef">StartLoggingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startqueryrequestrequesttypedef">StartQueryRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stopimportrequestrequesttypedef">StopImportRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stoploggingrequestrequesttypedef">StopLoggingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatetrailrequestrequesttypedef">UpdateTrailRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#addtagsrequestrequesttypedef">AddTagsRequestRequestTypeDef</a></li>
@@ -37355,6 +37369,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#putinsightselectorsrequestrequesttypedef">PutInsightSelectorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putinsightselectorsresponsetypedef">PutInsightSelectorsResponseTypeDef</a></li>
 <li><a href="type_defs/#getqueryresultsresponsetypedef">GetQueryResultsResponseTypeDef</a></li>
+<li><a href="type_defs/#listimportfailuresresponsetypedef">ListImportFailuresResponseTypeDef</a></li>
+<li><a href="type_defs/#importsourcetypedef">ImportSourceTypeDef</a></li>
+<li><a href="type_defs/#listimportsresponsetypedef">ListImportsResponseTypeDef</a></li>
+<li><a href="type_defs/#listimportfailuresrequestlistimportfailurespaginatetypedef">ListImportFailuresRequestListImportFailuresPaginateTypeDef</a></li>
+<li><a href="type_defs/#listimportsrequestlistimportspaginatetypedef">ListImportsRequestListImportsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpublickeysrequestlistpublickeyspaginatetypedef">ListPublicKeysRequestListPublicKeysPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtagsrequestlisttagspaginatetypedef">ListTagsRequestListTagsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtrailsrequestlisttrailspaginatetypedef">ListTrailsRequestListTrailsPaginateTypeDef</a></li>
@@ -37376,6 +37395,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#puteventselectorsrequestrequesttypedef">PutEventSelectorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#puteventselectorsresponsetypedef">PutEventSelectorsResponseTypeDef</a></li>
 <li><a href="type_defs/#lookupeventsresponsetypedef">LookupEventsResponseTypeDef</a></li>
+<li><a href="type_defs/#getimportresponsetypedef">GetImportResponseTypeDef</a></li>
+<li><a href="type_defs/#startimportrequestrequesttypedef">StartImportRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startimportresponsetypedef">StartImportResponseTypeDef</a></li>
+<li><a href="type_defs/#stopimportresponsetypedef">StopImportResponseTypeDef</a></li>
 <li><a href="type_defs/#listeventdatastoresresponsetypedef">ListEventDataStoresResponseTypeDef</a></li>
 <li><a href="type_defs/#getchannelresponsetypedef">GetChannelResponseTypeDef</a></li>
 </ul>
@@ -37455,7 +37478,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.d691e9de.min.js"></script>
+      <script src="../assets/javascripts/bundle.39f04ddb.min.js"></script>
       
     
   </body>

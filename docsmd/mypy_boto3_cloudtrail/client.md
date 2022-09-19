@@ -32,6 +32,7 @@ client = boto3.client("cloudtrail")
 try:
     do_something(client)
 except (
+    client.AccountHasOngoingImportException,
     client.ChannelARNInvalidException,
     client.ChannelNotFoundException,
     client.ClientError,
@@ -42,9 +43,11 @@ except (
     client.ConflictException,
     client.EventDataStoreARNInvalidException,
     client.EventDataStoreAlreadyExistsException,
+    client.EventDataStoreHasOngoingImportException,
     client.EventDataStoreMaxLimitExceededException,
     client.EventDataStoreNotFoundException,
     client.EventDataStoreTerminationProtectedException,
+    client.ImportNotFoundException,
     client.InactiveEventDataStoreException,
     client.InactiveQueryException,
     client.InsightNotEnabledException,
@@ -56,9 +59,11 @@ except (
     client.InvalidCloudWatchLogsRoleArnException,
     client.InvalidDateRangeException,
     client.InvalidEventCategoryException,
+    client.InvalidEventDataStoreCategoryException,
     client.InvalidEventDataStoreStatusException,
     client.InvalidEventSelectorsException,
     client.InvalidHomeRegionException,
+    client.InvalidImportSourceException,
     client.InvalidInsightSelectorsException,
     client.InvalidKmsKeyIdException,
     client.InvalidLookupAttributesException,
@@ -100,7 +105,7 @@ except (
 ```python title="Type checking example"
 from mypy_boto3_cloudtrail.client import Exceptions
 
-def handle_error(exc: Exceptions.ChannelARNInvalidException) -> None:
+def handle_error(exc: Exceptions.AccountHasOngoingImportException) -> None:
     ...
 ```
 
@@ -510,6 +515,35 @@ parent.get_event_selectors(**kwargs)
 
 1. See [:material-code-braces: GetEventSelectorsRequestRequestTypeDef](./type_defs.md#geteventselectorsrequestrequesttypedef) 
 
+### get\_import
+
+Returns information for the specified import.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_import)
+
+```python title="Method definition"
+def get_import(
+    self,
+    *,
+    ImportId: str,
+) -> GetImportResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetImportResponseTypeDef](./type_defs.md#getimportresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetImportRequestRequestTypeDef = {  # (1)
+    "ImportId": ...,
+}
+
+parent.get_import(**kwargs)
+```
+
+1. See [:material-code-braces: GetImportRequestRequestTypeDef](./type_defs.md#getimportrequestrequesttypedef) 
+
 ### get\_insight\_selectors
 
 Describes the settings for the Insights event selectors that you configured for
@@ -691,6 +725,71 @@ parent.list_event_data_stores(**kwargs)
 ```
 
 1. See [:material-code-braces: ListEventDataStoresRequestRequestTypeDef](./type_defs.md#listeventdatastoresrequestrequesttypedef) 
+
+### list\_import\_failures
+
+Returns a list of failures for the specified import.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_import_failures` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_import_failures)
+
+```python title="Method definition"
+def list_import_failures(
+    self,
+    *,
+    ImportId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListImportFailuresResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListImportFailuresResponseTypeDef](./type_defs.md#listimportfailuresresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListImportFailuresRequestRequestTypeDef = {  # (1)
+    "ImportId": ...,
+}
+
+parent.list_import_failures(**kwargs)
+```
+
+1. See [:material-code-braces: ListImportFailuresRequestRequestTypeDef](./type_defs.md#listimportfailuresrequestrequesttypedef) 
+
+### list\_imports
+
+Returns information on all imports, or a select set of imports by `ImportStatus`
+or `Destination` .
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_imports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_imports)
+
+```python title="Method definition"
+def list_imports(
+    self,
+    *,
+    MaxResults: int = ...,
+    Destination: str = ...,
+    ImportStatus: ImportStatusType = ...,  # (1)
+    NextToken: str = ...,
+) -> ListImportsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+2. See [:material-code-braces: ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListImportsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_imports(**kwargs)
+```
+
+1. See [:material-code-braces: ListImportsRequestRequestTypeDef](./type_defs.md#listimportsrequestrequesttypedef) 
 
 ### list\_public\_keys
 
@@ -985,6 +1084,41 @@ parent.restore_event_data_store(**kwargs)
 
 1. See [:material-code-braces: RestoreEventDataStoreRequestRequestTypeDef](./type_defs.md#restoreeventdatastorerequestrequesttypedef) 
 
+### start\_import
+
+Starts an import of logged trail events from a source S3 bucket to a destination
+event data store.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").start_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_import)
+
+```python title="Method definition"
+def start_import(
+    self,
+    *,
+    Destinations: Sequence[str] = ...,
+    ImportSource: ImportSourceTypeDef = ...,  # (1)
+    StartEventTime: Union[datetime, str] = ...,
+    EndEventTime: Union[datetime, str] = ...,
+    ImportId: str = ...,
+) -> StartImportResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ImportSourceTypeDef](./type_defs.md#importsourcetypedef) 
+2. See [:material-code-braces: StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartImportRequestRequestTypeDef = {  # (1)
+    "Destinations": ...,
+}
+
+parent.start_import(**kwargs)
+```
+
+1. See [:material-code-braces: StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef) 
+
 ### start\_logging
 
 Starts the recording of Amazon Web Services API calls and log file delivery for
@@ -1042,6 +1176,35 @@ parent.start_query(**kwargs)
 ```
 
 1. See [:material-code-braces: StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef) 
+
+### stop\_import
+
+Stops a specified import.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").stop_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_import)
+
+```python title="Method definition"
+def stop_import(
+    self,
+    *,
+    ImportId: str,
+) -> StopImportResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StopImportResponseTypeDef](./type_defs.md#stopimportresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopImportRequestRequestTypeDef = {  # (1)
+    "ImportId": ...,
+}
+
+parent.stop_import(**kwargs)
+```
+
+1. See [:material-code-braces: StopImportRequestRequestTypeDef](./type_defs.md#stopimportrequestrequesttypedef) 
 
 ### stop\_logging
 
@@ -1154,6 +1317,8 @@ parent.update_trail(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").get_paginator` method with overloads.
 
+- `client.get_paginator("list_import_failures")` -> [ListImportFailuresPaginator](./paginators.md#listimportfailurespaginator)
+- `client.get_paginator("list_imports")` -> [ListImportsPaginator](./paginators.md#listimportspaginator)
 - `client.get_paginator("list_public_keys")` -> [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
 - `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
 - `client.get_paginator("list_trails")` -> [ListTrailsPaginator](./paginators.md#listtrailspaginator)

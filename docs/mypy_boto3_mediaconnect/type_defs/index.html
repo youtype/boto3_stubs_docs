@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.1">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.2">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2e8b5541.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9f9400aa.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -39070,7 +39070,9 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-media
 <a id="__codelineno-57-9" name="__codelineno-57-9" href="#__codelineno-57-9"></a>    <span class="n">SenderControlPort</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-57-10" name="__codelineno-57-10" href="#__codelineno-57-10"></a>    <span class="n">SenderIpAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-57-11" name="__codelineno-57-11" href="#__codelineno-57-11"></a>    <span class="n">SmoothingLatency</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
-<a id="__codelineno-57-12" name="__codelineno-57-12" href="#__codelineno-57-12"></a>    <span class="n">StreamId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-57-12" name="__codelineno-57-12" href="#__codelineno-57-12"></a>    <span class="n">SourceListenerAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-57-13" name="__codelineno-57-13" href="#__codelineno-57-13"></a>    <span class="n">SourceListenerPort</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-57-14" name="__codelineno-57-14" href="#__codelineno-57-14"></a>    <span class="n">StreamId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#protocoltype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ProtocolType</a> </li>
@@ -40290,9 +40292,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-media
 <a id="__codelineno-189-12" name="__codelineno-189-12" href="#__codelineno-189-12"></a>    <span class="n">Protocol</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ProtocolType</span><span class="p">],</span>  <span class="c1"># (3)</span>
 <a id="__codelineno-189-13" name="__codelineno-189-13" href="#__codelineno-189-13"></a>    <span class="n">SenderControlPort</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-189-14" name="__codelineno-189-14" href="#__codelineno-189-14"></a>    <span class="n">SenderIpAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-189-15" name="__codelineno-189-15" href="#__codelineno-189-15"></a>    <span class="n">StreamId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-189-16" name="__codelineno-189-16" href="#__codelineno-189-16"></a>    <span class="n">VpcInterfaceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-189-17" name="__codelineno-189-17" href="#__codelineno-189-17"></a>    <span class="n">WhitelistCidr</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-189-15" name="__codelineno-189-15" href="#__codelineno-189-15"></a>    <span class="n">SourceListenerAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-189-16" name="__codelineno-189-16" href="#__codelineno-189-16"></a>    <span class="n">SourceListenerPort</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-189-17" name="__codelineno-189-17" href="#__codelineno-189-17"></a>    <span class="n">StreamId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-189-18" name="__codelineno-189-18" href="#__codelineno-189-18"></a>    <span class="n">VpcInterfaceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-189-19" name="__codelineno-189-19" href="#__codelineno-189-19"></a>    <span class="n">WhitelistCidr</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#encryptiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> EncryptionTypeDef</a> </li>
@@ -40323,9 +40327,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-media
 <a id="__codelineno-191-13" name="__codelineno-191-13" href="#__codelineno-191-13"></a>    <span class="n">Protocol</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ProtocolType</span><span class="p">],</span>  <span class="c1"># (3)</span>
 <a id="__codelineno-191-14" name="__codelineno-191-14" href="#__codelineno-191-14"></a>    <span class="n">SenderControlPort</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-191-15" name="__codelineno-191-15" href="#__codelineno-191-15"></a>    <span class="n">SenderIpAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-191-16" name="__codelineno-191-16" href="#__codelineno-191-16"></a>    <span class="n">StreamId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-191-17" name="__codelineno-191-17" href="#__codelineno-191-17"></a>    <span class="n">VpcInterfaceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-191-18" name="__codelineno-191-18" href="#__codelineno-191-18"></a>    <span class="n">WhitelistCidr</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-191-16" name="__codelineno-191-16" href="#__codelineno-191-16"></a>    <span class="n">SourceListenerAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-191-17" name="__codelineno-191-17" href="#__codelineno-191-17"></a>    <span class="n">SourceListenerPort</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-191-18" name="__codelineno-191-18" href="#__codelineno-191-18"></a>    <span class="n">StreamId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-191-19" name="__codelineno-191-19" href="#__codelineno-191-19"></a>    <span class="n">VpcInterfaceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-191-20" name="__codelineno-191-20" href="#__codelineno-191-20"></a>    <span class="n">WhitelistCidr</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#updateencryptiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UpdateEncryptionTypeDef</a> </li>
@@ -40755,7 +40761,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-media
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d691e9de.min.js"></script>
+      <script src="../../assets/javascripts/bundle.39f04ddb.min.js"></script>
       
     
   </body>

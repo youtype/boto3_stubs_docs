@@ -1802,6 +1802,24 @@ class CancelledSpotInstanceRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CancelSpotInstanceRequestStateType](./literals.md#cancelspotinstancerequeststatetype) 
+## CapacityAllocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CapacityAllocationTypeDef
+
+def get_value() -> CapacityAllocationTypeDef:
+    return {
+        "AllocationType": ...,
+    }
+```
+
+```python title="Definition"
+class CapacityAllocationTypeDef(TypedDict):
+    AllocationType: NotRequired[AllocationTypeType],  # (1)
+    Count: NotRequired[int],
+```
+
+1. See [:material-code-brackets: AllocationTypeType](./literals.md#allocationtypetype) 
 ## FleetCapacityReservationTypeDef
 
 ```python title="Usage Example"
@@ -16940,49 +16958,6 @@ class AllowedPrincipalTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CapacityReservationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import CapacityReservationTypeDef
-
-def get_value() -> CapacityReservationTypeDef:
-    return {
-        "CapacityReservationId": ...,
-    }
-```
-
-```python title="Definition"
-class CapacityReservationTypeDef(TypedDict):
-    CapacityReservationId: NotRequired[str],
-    OwnerId: NotRequired[str],
-    CapacityReservationArn: NotRequired[str],
-    AvailabilityZoneId: NotRequired[str],
-    InstanceType: NotRequired[str],
-    InstancePlatform: NotRequired[CapacityReservationInstancePlatformType],  # (1)
-    AvailabilityZone: NotRequired[str],
-    Tenancy: NotRequired[CapacityReservationTenancyType],  # (2)
-    TotalInstanceCount: NotRequired[int],
-    AvailableInstanceCount: NotRequired[int],
-    EbsOptimized: NotRequired[bool],
-    EphemeralStorage: NotRequired[bool],
-    State: NotRequired[CapacityReservationStateType],  # (3)
-    StartDate: NotRequired[datetime],
-    EndDate: NotRequired[datetime],
-    EndDateType: NotRequired[EndDateTypeType],  # (4)
-    InstanceMatchCriteria: NotRequired[InstanceMatchCriteriaType],  # (5)
-    CreateDate: NotRequired[datetime],
-    Tags: NotRequired[List[TagTypeDef]],  # (6)
-    OutpostArn: NotRequired[str],
-    CapacityReservationFleetId: NotRequired[str],
-    PlacementGroupArn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: CapacityReservationInstancePlatformType](./literals.md#capacityreservationinstanceplatformtype) 
-2. See [:material-code-brackets: CapacityReservationTenancyType](./literals.md#capacityreservationtenancytype) 
-3. See [:material-code-brackets: CapacityReservationStateType](./literals.md#capacityreservationstatetype) 
-4. See [:material-code-brackets: EndDateTypeType](./literals.md#enddatetypetype) 
-5. See [:material-code-brackets: InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CarrierGatewayTypeDef
 
 ```python title="Usage Example"
@@ -19241,6 +19216,51 @@ class CancelSpotInstanceRequestsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: CancelledSpotInstanceRequestTypeDef](./type_defs.md#cancelledspotinstancerequesttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CapacityReservationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CapacityReservationTypeDef
+
+def get_value() -> CapacityReservationTypeDef:
+    return {
+        "CapacityReservationId": ...,
+    }
+```
+
+```python title="Definition"
+class CapacityReservationTypeDef(TypedDict):
+    CapacityReservationId: NotRequired[str],
+    OwnerId: NotRequired[str],
+    CapacityReservationArn: NotRequired[str],
+    AvailabilityZoneId: NotRequired[str],
+    InstanceType: NotRequired[str],
+    InstancePlatform: NotRequired[CapacityReservationInstancePlatformType],  # (1)
+    AvailabilityZone: NotRequired[str],
+    Tenancy: NotRequired[CapacityReservationTenancyType],  # (2)
+    TotalInstanceCount: NotRequired[int],
+    AvailableInstanceCount: NotRequired[int],
+    EbsOptimized: NotRequired[bool],
+    EphemeralStorage: NotRequired[bool],
+    State: NotRequired[CapacityReservationStateType],  # (3)
+    StartDate: NotRequired[datetime],
+    EndDate: NotRequired[datetime],
+    EndDateType: NotRequired[EndDateTypeType],  # (4)
+    InstanceMatchCriteria: NotRequired[InstanceMatchCriteriaType],  # (5)
+    CreateDate: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
+    OutpostArn: NotRequired[str],
+    CapacityReservationFleetId: NotRequired[str],
+    PlacementGroupArn: NotRequired[str],
+    CapacityAllocations: NotRequired[List[CapacityAllocationTypeDef]],  # (7)
+```
+
+1. See [:material-code-brackets: CapacityReservationInstancePlatformType](./literals.md#capacityreservationinstanceplatformtype) 
+2. See [:material-code-brackets: CapacityReservationTenancyType](./literals.md#capacityreservationtenancytype) 
+3. See [:material-code-brackets: CapacityReservationStateType](./literals.md#capacityreservationstatetype) 
+4. See [:material-code-brackets: EndDateTypeType](./literals.md#enddatetypetype) 
+5. See [:material-code-brackets: InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: CapacityAllocationTypeDef](./type_defs.md#capacityallocationtypedef) 
 ## CapacityReservationFleetTypeDef
 
 ```python title="Usage Example"
@@ -30926,48 +30946,6 @@ class DescribeVpcEndpointServicePermissionsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: AllowedPrincipalTypeDef](./type_defs.md#allowedprincipaltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateCapacityReservationResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import CreateCapacityReservationResultTypeDef
-
-def get_value() -> CreateCapacityReservationResultTypeDef:
-    return {
-        "CapacityReservation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateCapacityReservationResultTypeDef(TypedDict):
-    CapacityReservation: CapacityReservationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeCapacityReservationsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeCapacityReservationsResultTypeDef
-
-def get_value() -> DescribeCapacityReservationsResultTypeDef:
-    return {
-        "NextToken": ...,
-        "CapacityReservations": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeCapacityReservationsResultTypeDef(TypedDict):
-    NextToken: str,
-    CapacityReservations: List[CapacityReservationTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCarrierGatewayResultTypeDef
 
 ```python title="Usage Example"
@@ -34962,6 +34940,48 @@ class CancelSpotFleetRequestsResponseTypeDef(TypedDict):
 1. See [:material-code-braces: CancelSpotFleetRequestsSuccessItemTypeDef](./type_defs.md#cancelspotfleetrequestssuccessitemtypedef) 
 2. See [:material-code-braces: CancelSpotFleetRequestsErrorItemTypeDef](./type_defs.md#cancelspotfleetrequestserroritemtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCapacityReservationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateCapacityReservationResultTypeDef
+
+def get_value() -> CreateCapacityReservationResultTypeDef:
+    return {
+        "CapacityReservation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCapacityReservationResultTypeDef(TypedDict):
+    CapacityReservation: CapacityReservationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCapacityReservationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeCapacityReservationsResultTypeDef
+
+def get_value() -> DescribeCapacityReservationsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "CapacityReservations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCapacityReservationsResultTypeDef(TypedDict):
+    NextToken: str,
+    CapacityReservations: List[CapacityReservationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCapacityReservationFleetsResultTypeDef
 
 ```python title="Usage Example"

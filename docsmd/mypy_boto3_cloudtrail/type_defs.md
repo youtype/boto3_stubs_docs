@@ -324,6 +324,42 @@ class GetEventSelectorsRequestRequestTypeDef(TypedDict):
     TrailName: str,
 ```
 
+## GetImportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import GetImportRequestRequestTypeDef
+
+def get_value() -> GetImportRequestRequestTypeDef:
+    return {
+        "ImportId": ...,
+    }
+```
+
+```python title="Definition"
+class GetImportRequestRequestTypeDef(TypedDict):
+    ImportId: str,
+```
+
+## ImportStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ImportStatisticsTypeDef
+
+def get_value() -> ImportStatisticsTypeDef:
+    return {
+        "PrefixesFound": ...,
+    }
+```
+
+```python title="Definition"
+class ImportStatisticsTypeDef(TypedDict):
+    PrefixesFound: NotRequired[int],
+    PrefixesCompleted: NotRequired[int],
+    FilesCompleted: NotRequired[int],
+    EventsCompleted: NotRequired[int],
+    FailedEntries: NotRequired[int],
+```
+
 ## GetInsightSelectorsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -427,6 +463,68 @@ class GetTrailStatusRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
+## ImportFailureListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ImportFailureListItemTypeDef
+
+def get_value() -> ImportFailureListItemTypeDef:
+    return {
+        "Location": ...,
+    }
+```
+
+```python title="Definition"
+class ImportFailureListItemTypeDef(TypedDict):
+    Location: NotRequired[str],
+    Status: NotRequired[ImportFailureStatusType],  # (1)
+    ErrorType: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ImportFailureStatusType](./literals.md#importfailurestatustype) 
+## S3ImportSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import S3ImportSourceTypeDef
+
+def get_value() -> S3ImportSourceTypeDef:
+    return {
+        "S3LocationUri": ...,
+        "S3BucketRegion": ...,
+        "S3BucketAccessRoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class S3ImportSourceTypeDef(TypedDict):
+    S3LocationUri: str,
+    S3BucketRegion: str,
+    S3BucketAccessRoleArn: str,
+```
+
+## ImportsListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ImportsListItemTypeDef
+
+def get_value() -> ImportsListItemTypeDef:
+    return {
+        "ImportId": ...,
+    }
+```
+
+```python title="Definition"
+class ImportsListItemTypeDef(TypedDict):
+    ImportId: NotRequired[str],
+    ImportStatus: NotRequired[ImportStatusType],  # (1)
+    Destinations: NotRequired[List[str]],
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
 ## ListChannelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -479,6 +577,44 @@ class PaginatorConfigTypeDef(TypedDict):
     StartingToken: NotRequired[str],
 ```
 
+## ListImportFailuresRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListImportFailuresRequestRequestTypeDef
+
+def get_value() -> ListImportFailuresRequestRequestTypeDef:
+    return {
+        "ImportId": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportFailuresRequestRequestTypeDef(TypedDict):
+    ImportId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListImportsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListImportsRequestRequestTypeDef
+
+def get_value() -> ListImportsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    Destination: NotRequired[str],
+    ImportStatus: NotRequired[ImportStatusType],  # (1)
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
 ## ListPublicKeysRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -673,6 +809,22 @@ def get_value() -> StartQueryRequestRequestTypeDef:
 ```python title="Definition"
 class StartQueryRequestRequestTypeDef(TypedDict):
     QueryStatement: str,
+```
+
+## StopImportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import StopImportRequestRequestTypeDef
+
+def get_value() -> StopImportRequestRequestTypeDef:
+    return {
+        "ImportId": ...,
+    }
+```
+
+```python title="Definition"
+class StopImportRequestRequestTypeDef(TypedDict):
+    ImportId: str,
 ```
 
 ## StopLoggingRequestRequestTypeDef
@@ -1227,6 +1379,105 @@ class GetQueryResultsResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
 2. See [:material-code-braces: QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImportFailuresResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListImportFailuresResponseTypeDef
+
+def get_value() -> ListImportFailuresResponseTypeDef:
+    return {
+        "Failures": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportFailuresResponseTypeDef(TypedDict):
+    Failures: List[ImportFailureListItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportFailureListItemTypeDef](./type_defs.md#importfailurelistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ImportSourceTypeDef
+
+def get_value() -> ImportSourceTypeDef:
+    return {
+        "S3": ...,
+    }
+```
+
+```python title="Definition"
+class ImportSourceTypeDef(TypedDict):
+    S3: S3ImportSourceTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: S3ImportSourceTypeDef](./type_defs.md#s3importsourcetypedef) 
+## ListImportsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListImportsResponseTypeDef
+
+def get_value() -> ListImportsResponseTypeDef:
+    return {
+        "Imports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportsResponseTypeDef(TypedDict):
+    Imports: List[ImportsListItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImportsListItemTypeDef](./type_defs.md#importslistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImportFailuresRequestListImportFailuresPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListImportFailuresRequestListImportFailuresPaginateTypeDef
+
+def get_value() -> ListImportFailuresRequestListImportFailuresPaginateTypeDef:
+    return {
+        "ImportId": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportFailuresRequestListImportFailuresPaginateTypeDef(TypedDict):
+    ImportId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListImportsRequestListImportsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListImportsRequestListImportsPaginateTypeDef
+
+def get_value() -> ListImportsRequestListImportsPaginateTypeDef:
+    return {
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportsRequestListImportsPaginateTypeDef(TypedDict):
+    Destination: NotRequired[str],
+    ImportStatus: NotRequired[ImportStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPublicKeysRequestListPublicKeysPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1758,6 +2009,138 @@ class LookupEventsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetImportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import GetImportResponseTypeDef
+
+def get_value() -> GetImportResponseTypeDef:
+    return {
+        "ImportId": ...,
+        "Destinations": ...,
+        "ImportSource": ...,
+        "StartEventTime": ...,
+        "EndEventTime": ...,
+        "ImportStatus": ...,
+        "CreatedTimestamp": ...,
+        "UpdatedTimestamp": ...,
+        "ImportStatistics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetImportResponseTypeDef(TypedDict):
+    ImportId: str,
+    Destinations: List[str],
+    ImportSource: ImportSourceTypeDef,  # (1)
+    StartEventTime: datetime,
+    EndEventTime: datetime,
+    ImportStatus: ImportStatusType,  # (2)
+    CreatedTimestamp: datetime,
+    UpdatedTimestamp: datetime,
+    ImportStatistics: ImportStatisticsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ImportSourceTypeDef](./type_defs.md#importsourcetypedef) 
+2. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+3. See [:material-code-braces: ImportStatisticsTypeDef](./type_defs.md#importstatisticstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartImportRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import StartImportRequestRequestTypeDef
+
+def get_value() -> StartImportRequestRequestTypeDef:
+    return {
+        "Destinations": ...,
+    }
+```
+
+```python title="Definition"
+class StartImportRequestRequestTypeDef(TypedDict):
+    Destinations: NotRequired[Sequence[str]],
+    ImportSource: NotRequired[ImportSourceTypeDef],  # (1)
+    StartEventTime: NotRequired[Union[datetime, str]],
+    EndEventTime: NotRequired[Union[datetime, str]],
+    ImportId: NotRequired[str],
+```
+
+1. See [:material-code-braces: ImportSourceTypeDef](./type_defs.md#importsourcetypedef) 
+## StartImportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import StartImportResponseTypeDef
+
+def get_value() -> StartImportResponseTypeDef:
+    return {
+        "ImportId": ...,
+        "Destinations": ...,
+        "ImportSource": ...,
+        "StartEventTime": ...,
+        "EndEventTime": ...,
+        "ImportStatus": ...,
+        "CreatedTimestamp": ...,
+        "UpdatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartImportResponseTypeDef(TypedDict):
+    ImportId: str,
+    Destinations: List[str],
+    ImportSource: ImportSourceTypeDef,  # (1)
+    StartEventTime: datetime,
+    EndEventTime: datetime,
+    ImportStatus: ImportStatusType,  # (2)
+    CreatedTimestamp: datetime,
+    UpdatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ImportSourceTypeDef](./type_defs.md#importsourcetypedef) 
+2. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopImportResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import StopImportResponseTypeDef
+
+def get_value() -> StopImportResponseTypeDef:
+    return {
+        "ImportId": ...,
+        "ImportSource": ...,
+        "Destinations": ...,
+        "ImportStatus": ...,
+        "CreatedTimestamp": ...,
+        "UpdatedTimestamp": ...,
+        "StartEventTime": ...,
+        "EndEventTime": ...,
+        "ImportStatistics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopImportResponseTypeDef(TypedDict):
+    ImportId: str,
+    ImportSource: ImportSourceTypeDef,  # (1)
+    Destinations: List[str],
+    ImportStatus: ImportStatusType,  # (2)
+    CreatedTimestamp: datetime,
+    UpdatedTimestamp: datetime,
+    StartEventTime: datetime,
+    EndEventTime: datetime,
+    ImportStatistics: ImportStatisticsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ImportSourceTypeDef](./type_defs.md#importsourcetypedef) 
+2. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+3. See [:material-code-braces: ImportStatisticsTypeDef](./type_defs.md#importstatisticstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEventDataStoresResponseTypeDef
 
 ```python title="Usage Example"

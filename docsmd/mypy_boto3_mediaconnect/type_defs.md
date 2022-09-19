@@ -560,6 +560,8 @@ class TransportTypeDef(TypedDict):
     SenderControlPort: NotRequired[int],
     SenderIpAddress: NotRequired[str],
     SmoothingLatency: NotRequired[int],
+    SourceListenerAddress: NotRequired[str],
+    SourceListenerPort: NotRequired[int],
     StreamId: NotRequired[str],
 ```
 
@@ -1998,6 +2000,8 @@ class SetSourceRequestTypeDef(TypedDict):
     Protocol: NotRequired[ProtocolType],  # (3)
     SenderControlPort: NotRequired[int],
     SenderIpAddress: NotRequired[str],
+    SourceListenerAddress: NotRequired[str],
+    SourceListenerPort: NotRequired[int],
     StreamId: NotRequired[str],
     VpcInterfaceName: NotRequired[str],
     WhitelistCidr: NotRequired[str],
@@ -2034,6 +2038,8 @@ class UpdateFlowSourceRequestRequestTypeDef(TypedDict):
     Protocol: NotRequired[ProtocolType],  # (3)
     SenderControlPort: NotRequired[int],
     SenderIpAddress: NotRequired[str],
+    SourceListenerAddress: NotRequired[str],
+    SourceListenerPort: NotRequired[int],
     StreamId: NotRequired[str],
     VpcInterfaceName: NotRequired[str],
     WhitelistCidr: NotRequired[str],

@@ -7,6 +7,126 @@
     Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
     type annotations stubs module [mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
+## ListImportFailuresPaginator
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_paginator("list_import_failures")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListImportFailures)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import ListImportFailuresPaginator
+
+def get_list_import_failures_paginator() -> ListImportFailuresPaginator:
+    return Session().client("cloudtrail").get_paginator("list_import_failures")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import ListImportFailuresPaginator
+
+session = Session()
+
+client = Session().client("cloudtrail")  # (1)
+paginator: ListImportFailuresPaginator = client.get_paginator("list_import_failures")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudTrailClient](./client.md)
+2. paginator: [ListImportFailuresPaginator](./paginators.md#listimportfailurespaginator)
+3. item: [:material-code-braces: ListImportFailuresResponseTypeDef](./type_defs.md#listimportfailuresresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListImportFailuresPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ImportId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListImportFailuresResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListImportFailuresResponseTypeDef](./type_defs.md#listimportfailuresresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListImportFailuresRequestListImportFailuresPaginateTypeDef = {  # (1)
+    "ImportId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListImportFailuresRequestListImportFailuresPaginateTypeDef](./type_defs.md#listimportfailuresrequestlistimportfailurespaginatetypedef) 
+## ListImportsPaginator
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_paginator("list_imports")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Paginator.ListImports)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import ListImportsPaginator
+
+def get_list_imports_paginator() -> ListImportsPaginator:
+    return Session().client("cloudtrail").get_paginator("list_imports")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudtrail.paginator import ListImportsPaginator
+
+session = Session()
+
+client = Session().client("cloudtrail")  # (1)
+paginator: ListImportsPaginator = client.get_paginator("list_imports")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [CloudTrailClient](./client.md)
+2. paginator: [ListImportsPaginator](./paginators.md#listimportspaginator)
+3. item: [:material-code-braces: ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListImportsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Destination: str = ...,
+    ImportStatus: ImportStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListImportsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListImportsRequestListImportsPaginateTypeDef = {  # (1)
+    "Destination": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListImportsRequestListImportsPaginateTypeDef](./type_defs.md#listimportsrequestlistimportspaginatetypedef) 
 ## ListPublicKeysPaginator
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").get_paginator("list_public_keys")`.

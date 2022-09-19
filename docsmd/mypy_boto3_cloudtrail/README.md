@@ -71,12 +71,14 @@ from `#!python boto3.client("cloudtrail").get_paginator("...")`.
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_cloudtrail.paginator import ListPublicKeysPaginator
+from mypy_boto3_cloudtrail.paginator import ListImportFailuresPaginator
 
-def get_list_public_keys_paginator() -> ListPublicKeysPaginator:
-    return Session().client("cloudtrail").get_paginator("list_public_keys"))
+def get_list_import_failures_paginator() -> ListImportFailuresPaginator:
+    return Session().client("cloudtrail").get_paginator("list_import_failures"))
 ```
 
+- [ListImportFailuresPaginator](./paginators.md#listimportfailurespaginator)
+- [ListImportsPaginator](./paginators.md#listimportspaginator)
 - [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
 - [ListTrailsPaginator](./paginators.md#listtrailspaginator)
@@ -104,7 +106,11 @@ def get_value() -> DestinationTypeType:
 - [DestinationTypeType](./literals.md#destinationtypetype)
 - [EventCategoryType](./literals.md#eventcategorytype)
 - [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
+- [ImportFailureStatusType](./literals.md#importfailurestatustype)
+- [ImportStatusType](./literals.md#importstatustype)
 - [InsightTypeType](./literals.md#insighttypetype)
+- [ListImportFailuresPaginatorName](./literals.md#listimportfailurespaginatorname)
+- [ListImportsPaginatorName](./literals.md#listimportspaginatorname)
 - [ListPublicKeysPaginatorName](./literals.md#listpublickeyspaginatorname)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
 - [ListTrailsPaginatorName](./literals.md#listtrailspaginatorname)
@@ -151,15 +157,22 @@ def get_value() -> TagTypeDef:
 - [GetChannelRequestRequestTypeDef](./type_defs.md#getchannelrequestrequesttypedef)
 - [GetEventDataStoreRequestRequestTypeDef](./type_defs.md#geteventdatastorerequestrequesttypedef)
 - [GetEventSelectorsRequestRequestTypeDef](./type_defs.md#geteventselectorsrequestrequesttypedef)
+- [GetImportRequestRequestTypeDef](./type_defs.md#getimportrequestrequesttypedef)
+- [ImportStatisticsTypeDef](./type_defs.md#importstatisticstypedef)
 - [GetInsightSelectorsRequestRequestTypeDef](./type_defs.md#getinsightselectorsrequestrequesttypedef)
 - [InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)
 - [GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef)
 - [QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef)
 - [GetTrailRequestRequestTypeDef](./type_defs.md#gettrailrequestrequesttypedef)
 - [GetTrailStatusRequestRequestTypeDef](./type_defs.md#gettrailstatusrequestrequesttypedef)
+- [ImportFailureListItemTypeDef](./type_defs.md#importfailurelistitemtypedef)
+- [S3ImportSourceTypeDef](./type_defs.md#s3importsourcetypedef)
+- [ImportsListItemTypeDef](./type_defs.md#importslistitemtypedef)
 - [ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef)
 - [ListEventDataStoresRequestRequestTypeDef](./type_defs.md#listeventdatastoresrequestrequesttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ListImportFailuresRequestRequestTypeDef](./type_defs.md#listimportfailuresrequestrequesttypedef)
+- [ListImportsRequestRequestTypeDef](./type_defs.md#listimportsrequestrequesttypedef)
 - [ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef)
 - [PublicKeyTypeDef](./type_defs.md#publickeytypedef)
 - [ListQueriesRequestRequestTypeDef](./type_defs.md#listqueriesrequestrequesttypedef)
@@ -171,6 +184,7 @@ def get_value() -> TagTypeDef:
 - [RestoreEventDataStoreRequestRequestTypeDef](./type_defs.md#restoreeventdatastorerequestrequesttypedef)
 - [StartLoggingRequestRequestTypeDef](./type_defs.md#startloggingrequestrequesttypedef)
 - [StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef)
+- [StopImportRequestRequestTypeDef](./type_defs.md#stopimportrequestrequesttypedef)
 - [StopLoggingRequestRequestTypeDef](./type_defs.md#stoploggingrequestrequesttypedef)
 - [UpdateTrailRequestRequestTypeDef](./type_defs.md#updatetrailrequestrequesttypedef)
 - [AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef)
@@ -193,6 +207,11 @@ def get_value() -> TagTypeDef:
 - [PutInsightSelectorsRequestRequestTypeDef](./type_defs.md#putinsightselectorsrequestrequesttypedef)
 - [PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef)
 - [GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef)
+- [ListImportFailuresResponseTypeDef](./type_defs.md#listimportfailuresresponsetypedef)
+- [ImportSourceTypeDef](./type_defs.md#importsourcetypedef)
+- [ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef)
+- [ListImportFailuresRequestListImportFailuresPaginateTypeDef](./type_defs.md#listimportfailuresrequestlistimportfailurespaginatetypedef)
+- [ListImportsRequestListImportsPaginateTypeDef](./type_defs.md#listimportsrequestlistimportspaginatetypedef)
 - [ListPublicKeysRequestListPublicKeysPaginateTypeDef](./type_defs.md#listpublickeysrequestlistpublickeyspaginatetypedef)
 - [ListTagsRequestListTagsPaginateTypeDef](./type_defs.md#listtagsrequestlisttagspaginatetypedef)
 - [ListTrailsRequestListTrailsPaginateTypeDef](./type_defs.md#listtrailsrequestlisttrailspaginatetypedef)
@@ -214,6 +233,10 @@ def get_value() -> TagTypeDef:
 - [PutEventSelectorsRequestRequestTypeDef](./type_defs.md#puteventselectorsrequestrequesttypedef)
 - [PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef)
 - [LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef)
+- [GetImportResponseTypeDef](./type_defs.md#getimportresponsetypedef)
+- [StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef)
+- [StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef)
+- [StopImportResponseTypeDef](./type_defs.md#stopimportresponsetypedef)
 - [ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef)
 - [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef)
 

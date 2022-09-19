@@ -10131,7 +10131,7 @@ parent.describe_spot_fleet_request_history(**kwargs)
 
 ### describe\_spot\_fleet\_requests
 
-.
+Describes your Spot Fleet requests.
 
 Type annotations and code completion for `#!python boto3.client("ec2").describe_spot_fleet_requests` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_requests)
@@ -15380,8 +15380,8 @@ parent.modify_private_dns_name_options(**kwargs)
 
 ### modify\_reserved\_instances
 
-Modifies the Availability Zone, instance count, instance type, or network
-platform (EC2-Classic or EC2-VPC) of your Reserved Instances.
+Modifies the configuration of your Reserved Instances, such as the Availability
+Zone, instance count, or instance type.
 
 Type annotations and code completion for `#!python boto3.client("ec2").modify_reserved_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_reserved_instances)
@@ -16577,7 +16577,7 @@ parent.purchase_reserved_instances_offering(**kwargs)
 
 ### purchase\_scheduled\_instances
 
-Purchases the Scheduled Instances with the specified schedule.
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").purchase_scheduled_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_scheduled_instances)
@@ -17295,7 +17295,7 @@ parent.report_instance_status(**kwargs)
 
 ### request\_spot\_fleet
 
-.
+Creates a Spot Fleet request.
 
 Type annotations and code completion for `#!python boto3.client("ec2").request_spot_fleet` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_fleet)

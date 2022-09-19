@@ -1075,6 +1075,8 @@ def update_flow_source(
     Protocol: ProtocolType = ...,  # (3)
     SenderControlPort: int = ...,
     SenderIpAddress: str = ...,
+    SourceListenerAddress: str = ...,
+    SourceListenerPort: int = ...,
     StreamId: str = ...,
     VpcInterfaceName: str = ...,
     WhitelistCidr: str = ...,
