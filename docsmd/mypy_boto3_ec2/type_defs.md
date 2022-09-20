@@ -520,6 +520,7 @@ class AnalysisRouteTableRouteTypeDef(TypedDict):
     Origin: NotRequired[str],
     TransitGatewayId: NotRequired[str],
     VpcPeeringConnectionId: NotRequired[str],
+    State: NotRequired[str],
 ```
 
 ## ApplySecurityGroupsToClientVpnTargetNetworkRequestRequestTypeDef
@@ -34372,6 +34373,8 @@ class ExplanationTypeDef(TypedDict):
     TransitGatewayRouteTable: NotRequired[AnalysisComponentTypeDef],  # (1)
     TransitGatewayRouteTableRoute: NotRequired[TransitGatewayRouteTableRouteTypeDef],  # (34)
     TransitGatewayAttachment: NotRequired[AnalysisComponentTypeDef],  # (1)
+    ComponentAccount: NotRequired[str],
+    ComponentRegion: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
@@ -34409,50 +34412,6 @@ class ExplanationTypeDef(TypedDict):
 33. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
 34. See [:material-code-braces: TransitGatewayRouteTableRouteTypeDef](./type_defs.md#transitgatewayroutetableroutetypedef) 
 35. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-## PathComponentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import PathComponentTypeDef
-
-def get_value() -> PathComponentTypeDef:
-    return {
-        "SequenceNumber": ...,
-    }
-```
-
-```python title="Definition"
-class PathComponentTypeDef(TypedDict):
-    SequenceNumber: NotRequired[int],
-    AclRule: NotRequired[AnalysisAclRuleTypeDef],  # (1)
-    AttachedTo: NotRequired[AnalysisComponentTypeDef],  # (2)
-    Component: NotRequired[AnalysisComponentTypeDef],  # (2)
-    DestinationVpc: NotRequired[AnalysisComponentTypeDef],  # (2)
-    OutboundHeader: NotRequired[AnalysisPacketHeaderTypeDef],  # (5)
-    InboundHeader: NotRequired[AnalysisPacketHeaderTypeDef],  # (5)
-    RouteTableRoute: NotRequired[AnalysisRouteTableRouteTypeDef],  # (7)
-    SecurityGroupRule: NotRequired[AnalysisSecurityGroupRuleTypeDef],  # (8)
-    SourceVpc: NotRequired[AnalysisComponentTypeDef],  # (2)
-    Subnet: NotRequired[AnalysisComponentTypeDef],  # (2)
-    Vpc: NotRequired[AnalysisComponentTypeDef],  # (2)
-    AdditionalDetails: NotRequired[List[AdditionalDetailTypeDef]],  # (12)
-    TransitGateway: NotRequired[AnalysisComponentTypeDef],  # (2)
-    TransitGatewayRouteTableRoute: NotRequired[TransitGatewayRouteTableRouteTypeDef],  # (14)
-```
-
-1. See [:material-code-braces: AnalysisAclRuleTypeDef](./type_defs.md#analysisaclruletypedef) 
-2. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-3. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-4. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-5. See [:material-code-braces: AnalysisPacketHeaderTypeDef](./type_defs.md#analysispacketheadertypedef) 
-6. See [:material-code-braces: AnalysisPacketHeaderTypeDef](./type_defs.md#analysispacketheadertypedef) 
-7. See [:material-code-braces: AnalysisRouteTableRouteTypeDef](./type_defs.md#analysisroutetableroutetypedef) 
-8. See [:material-code-braces: AnalysisSecurityGroupRuleTypeDef](./type_defs.md#analysissecuritygroupruletypedef) 
-9. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-10. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-11. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-12. See [:material-code-braces: AdditionalDetailTypeDef](./type_defs.md#additionaldetailtypedef) 
-13. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
-14. See [:material-code-braces: TransitGatewayRouteTableRouteTypeDef](./type_defs.md#transitgatewayroutetableroutetypedef) 
 ## DescribeClientVpnTargetNetworksResultTypeDef
 
 ```python title="Usage Example"
@@ -40215,61 +40174,54 @@ class ModifyInstanceEventWindowResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceEventWindowTypeDef](./type_defs.md#instanceeventwindowtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AccessScopeAnalysisFindingTypeDef
+## PathComponentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import AccessScopeAnalysisFindingTypeDef
+from mypy_boto3_ec2.type_defs import PathComponentTypeDef
 
-def get_value() -> AccessScopeAnalysisFindingTypeDef:
+def get_value() -> PathComponentTypeDef:
     return {
-        "NetworkInsightsAccessScopeAnalysisId": ...,
+        "SequenceNumber": ...,
     }
 ```
 
 ```python title="Definition"
-class AccessScopeAnalysisFindingTypeDef(TypedDict):
-    NetworkInsightsAccessScopeAnalysisId: NotRequired[str],
-    NetworkInsightsAccessScopeId: NotRequired[str],
-    FindingId: NotRequired[str],
-    FindingComponents: NotRequired[List[PathComponentTypeDef]],  # (1)
+class PathComponentTypeDef(TypedDict):
+    SequenceNumber: NotRequired[int],
+    AclRule: NotRequired[AnalysisAclRuleTypeDef],  # (1)
+    AttachedTo: NotRequired[AnalysisComponentTypeDef],  # (2)
+    Component: NotRequired[AnalysisComponentTypeDef],  # (2)
+    DestinationVpc: NotRequired[AnalysisComponentTypeDef],  # (2)
+    OutboundHeader: NotRequired[AnalysisPacketHeaderTypeDef],  # (5)
+    InboundHeader: NotRequired[AnalysisPacketHeaderTypeDef],  # (5)
+    RouteTableRoute: NotRequired[AnalysisRouteTableRouteTypeDef],  # (7)
+    SecurityGroupRule: NotRequired[AnalysisSecurityGroupRuleTypeDef],  # (8)
+    SourceVpc: NotRequired[AnalysisComponentTypeDef],  # (2)
+    Subnet: NotRequired[AnalysisComponentTypeDef],  # (2)
+    Vpc: NotRequired[AnalysisComponentTypeDef],  # (2)
+    AdditionalDetails: NotRequired[List[AdditionalDetailTypeDef]],  # (12)
+    TransitGateway: NotRequired[AnalysisComponentTypeDef],  # (2)
+    TransitGatewayRouteTableRoute: NotRequired[TransitGatewayRouteTableRouteTypeDef],  # (14)
+    Explanations: NotRequired[List[ExplanationTypeDef]],  # (15)
+    ElasticLoadBalancerListener: NotRequired[AnalysisComponentTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
-## NetworkInsightsAnalysisTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import NetworkInsightsAnalysisTypeDef
-
-def get_value() -> NetworkInsightsAnalysisTypeDef:
-    return {
-        "NetworkInsightsAnalysisId": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInsightsAnalysisTypeDef(TypedDict):
-    NetworkInsightsAnalysisId: NotRequired[str],
-    NetworkInsightsAnalysisArn: NotRequired[str],
-    NetworkInsightsPathId: NotRequired[str],
-    FilterInArns: NotRequired[List[str]],
-    StartDate: NotRequired[datetime],
-    Status: NotRequired[AnalysisStatusType],  # (1)
-    StatusMessage: NotRequired[str],
-    WarningMessage: NotRequired[str],
-    NetworkPathFound: NotRequired[bool],
-    ForwardPathComponents: NotRequired[List[PathComponentTypeDef]],  # (2)
-    ReturnPathComponents: NotRequired[List[PathComponentTypeDef]],  # (2)
-    Explanations: NotRequired[List[ExplanationTypeDef]],  # (4)
-    AlternatePathHints: NotRequired[List[AlternatePathHintTypeDef]],  # (5)
-    Tags: NotRequired[List[TagTypeDef]],  # (6)
-```
-
-1. See [:material-code-brackets: AnalysisStatusType](./literals.md#analysisstatustype) 
-2. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
-3. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
-4. See [:material-code-braces: ExplanationTypeDef](./type_defs.md#explanationtypedef) 
-5. See [:material-code-braces: AlternatePathHintTypeDef](./type_defs.md#alternatepathhinttypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+1. See [:material-code-braces: AnalysisAclRuleTypeDef](./type_defs.md#analysisaclruletypedef) 
+2. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
+3. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
+4. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
+5. See [:material-code-braces: AnalysisPacketHeaderTypeDef](./type_defs.md#analysispacketheadertypedef) 
+6. See [:material-code-braces: AnalysisPacketHeaderTypeDef](./type_defs.md#analysispacketheadertypedef) 
+7. See [:material-code-braces: AnalysisRouteTableRouteTypeDef](./type_defs.md#analysisroutetableroutetypedef) 
+8. See [:material-code-braces: AnalysisSecurityGroupRuleTypeDef](./type_defs.md#analysissecuritygroupruletypedef) 
+9. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
+10. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
+11. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
+12. See [:material-code-braces: AdditionalDetailTypeDef](./type_defs.md#additionaldetailtypedef) 
+13. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
+14. See [:material-code-braces: TransitGatewayRouteTableRouteTypeDef](./type_defs.md#transitgatewayroutetableroutetypedef) 
+15. See [:material-code-braces: ExplanationTypeDef](./type_defs.md#explanationtypedef) 
+16. See [:material-code-braces: AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef) 
 ## CreateRouteTableResultTypeDef
 
 ```python title="Usage Example"
@@ -41710,75 +41662,61 @@ class DescribeVpcPeeringConnectionsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef
+## AccessScopeAnalysisFindingTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef
+from mypy_boto3_ec2.type_defs import AccessScopeAnalysisFindingTypeDef
 
-def get_value() -> GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef:
+def get_value() -> AccessScopeAnalysisFindingTypeDef:
     return {
         "NetworkInsightsAccessScopeAnalysisId": ...,
-        "AnalysisStatus": ...,
-        "AnalysisFindings": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef(TypedDict):
-    NetworkInsightsAccessScopeAnalysisId: str,
-    AnalysisStatus: AnalysisStatusType,  # (1)
-    AnalysisFindings: List[AccessScopeAnalysisFindingTypeDef],  # (2)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class AccessScopeAnalysisFindingTypeDef(TypedDict):
+    NetworkInsightsAccessScopeAnalysisId: NotRequired[str],
+    NetworkInsightsAccessScopeId: NotRequired[str],
+    FindingId: NotRequired[str],
+    FindingComponents: NotRequired[List[PathComponentTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
+## NetworkInsightsAnalysisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import NetworkInsightsAnalysisTypeDef
+
+def get_value() -> NetworkInsightsAnalysisTypeDef:
+    return {
+        "NetworkInsightsAnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInsightsAnalysisTypeDef(TypedDict):
+    NetworkInsightsAnalysisId: NotRequired[str],
+    NetworkInsightsAnalysisArn: NotRequired[str],
+    NetworkInsightsPathId: NotRequired[str],
+    FilterInArns: NotRequired[List[str]],
+    StartDate: NotRequired[datetime],
+    Status: NotRequired[AnalysisStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    WarningMessage: NotRequired[str],
+    NetworkPathFound: NotRequired[bool],
+    ForwardPathComponents: NotRequired[List[PathComponentTypeDef]],  # (2)
+    ReturnPathComponents: NotRequired[List[PathComponentTypeDef]],  # (2)
+    Explanations: NotRequired[List[ExplanationTypeDef]],  # (4)
+    AlternatePathHints: NotRequired[List[AlternatePathHintTypeDef]],  # (5)
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
 ```
 
 1. See [:material-code-brackets: AnalysisStatusType](./literals.md#analysisstatustype) 
-2. See [:material-code-braces: AccessScopeAnalysisFindingTypeDef](./type_defs.md#accessscopeanalysisfindingtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeNetworkInsightsAnalysesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAnalysesResultTypeDef
-
-def get_value() -> DescribeNetworkInsightsAnalysesResultTypeDef:
-    return {
-        "NetworkInsightsAnalyses": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNetworkInsightsAnalysesResultTypeDef(TypedDict):
-    NetworkInsightsAnalyses: List[NetworkInsightsAnalysisTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartNetworkInsightsAnalysisResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import StartNetworkInsightsAnalysisResultTypeDef
-
-def get_value() -> StartNetworkInsightsAnalysisResultTypeDef:
-    return {
-        "NetworkInsightsAnalysis": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartNetworkInsightsAnalysisResultTypeDef(TypedDict):
-    NetworkInsightsAnalysis: NetworkInsightsAnalysisTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
+3. See [:material-code-braces: PathComponentTypeDef](./type_defs.md#pathcomponenttypedef) 
+4. See [:material-code-braces: ExplanationTypeDef](./type_defs.md#explanationtypedef) 
+5. See [:material-code-braces: AlternatePathHintTypeDef](./type_defs.md#alternatepathhinttypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateVpnConnectionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -42330,6 +42268,75 @@ class GetNetworkInsightsAccessScopeContentResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NetworkInsightsAccessScopeContentTypeDef](./type_defs.md#networkinsightsaccessscopecontenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef
+
+def get_value() -> GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef:
+    return {
+        "NetworkInsightsAccessScopeAnalysisId": ...,
+        "AnalysisStatus": ...,
+        "AnalysisFindings": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef(TypedDict):
+    NetworkInsightsAccessScopeAnalysisId: str,
+    AnalysisStatus: AnalysisStatusType,  # (1)
+    AnalysisFindings: List[AccessScopeAnalysisFindingTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: AnalysisStatusType](./literals.md#analysisstatustype) 
+2. See [:material-code-braces: AccessScopeAnalysisFindingTypeDef](./type_defs.md#accessscopeanalysisfindingtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNetworkInsightsAnalysesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAnalysesResultTypeDef
+
+def get_value() -> DescribeNetworkInsightsAnalysesResultTypeDef:
+    return {
+        "NetworkInsightsAnalyses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNetworkInsightsAnalysesResultTypeDef(TypedDict):
+    NetworkInsightsAnalyses: List[NetworkInsightsAnalysisTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartNetworkInsightsAnalysisResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import StartNetworkInsightsAnalysisResultTypeDef
+
+def get_value() -> StartNetworkInsightsAnalysisResultTypeDef:
+    return {
+        "NetworkInsightsAnalysis": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartNetworkInsightsAnalysisResultTypeDef(TypedDict):
+    NetworkInsightsAnalysis: NetworkInsightsAnalysisTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVpnConnectionResultTypeDef
 

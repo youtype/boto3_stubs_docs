@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.2">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9f9400aa.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7a952b86.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -42855,7 +42855,7 @@ BucketWebsite resource.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-185-1" name="__codelineno-185-1" href="#__codelineno-185-1"></a><span class="k">def</span> <span class="nf">copy_from</span><span class="p">(</span>
 <a id="__codelineno-185-2" name="__codelineno-185-2" href="#__codelineno-185-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-185-3" name="__codelineno-185-3" href="#__codelineno-185-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-185-4" name="__codelineno-185-4" href="#__codelineno-185-4"></a>    <span class="n">CopySource</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-185-4" name="__codelineno-185-4" href="#__codelineno-185-4"></a>    <span class="n">CopySource</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">CopySourceTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-185-5" name="__codelineno-185-5" href="#__codelineno-185-5"></a>    <span class="n">CopySourceIfMatch</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-185-6" name="__codelineno-185-6" href="#__codelineno-185-6"></a>    <span class="n">CopySourceIfModifiedSince</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">datetime</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-185-7" name="__codelineno-185-7" href="#__codelineno-185-7"></a>    <span class="n">CopySourceIfNoneMatch</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
@@ -42867,13 +42867,14 @@ BucketWebsite resource.</p>
 <a id="__codelineno-185-13" name="__codelineno-185-13" href="#__codelineno-185-13"></a>    <span class="n">CopySourceSSECustomerAlgorithm</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-185-14" name="__codelineno-185-14" href="#__codelineno-185-14"></a>    <span class="n">CopySourceSSECustomerKey</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-185-15" name="__codelineno-185-15" href="#__codelineno-185-15"></a>    <span class="n">CopySourceSSECustomerKeyMD5</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-185-16" name="__codelineno-185-16" href="#__codelineno-185-16"></a>    <span class="n">RequestPayer</span><span class="p">:</span> <span class="n">RequestPayerType</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-185-16" name="__codelineno-185-16" href="#__codelineno-185-16"></a>    <span class="n">RequestPayer</span><span class="p">:</span> <span class="n">RequestPayerType</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (2)</span>
 <a id="__codelineno-185-17" name="__codelineno-185-17" href="#__codelineno-185-17"></a>    <span class="n">ExpectedBucketOwner</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-185-18" name="__codelineno-185-18" href="#__codelineno-185-18"></a>    <span class="n">ExpectedSourceBucketOwner</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-185-19" name="__codelineno-185-19" href="#__codelineno-185-19"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UploadPartCopyOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-185-19" name="__codelineno-185-19" href="#__codelineno-185-19"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UploadPartCopyOutputTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
 <a id="__codelineno-185-20" name="__codelineno-185-20" href="#__codelineno-185-20"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
+<li>See <a href="../type_defs/#copysourcetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CopySourceTypeDef</a> </li>
 <li>See <a href="../literals/#requestpayertype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> RequestPayerType</a> </li>
 <li>See <a href="../type_defs/#uploadpartcopyoutputtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> UploadPartCopyOutputTypeDef</a> </li>
 </ol>
@@ -44220,10 +44221,10 @@ itself.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.39f04ddb.min.js"></script>
+      <script src="../../assets/javascripts/bundle.37e9125f.min.js"></script>
       
     
   </body>

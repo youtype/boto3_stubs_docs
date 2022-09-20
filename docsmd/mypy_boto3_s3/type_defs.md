@@ -4001,37 +4001,6 @@ class StatsTypeDef(TypedDict):
     BytesReturned: NotRequired[int],
 ```
 
-## UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_s3.type_defs import UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef
-
-def get_value() -> UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef:
-    return {
-        "CopySource": ...,
-    }
-```
-
-```python title="Definition"
-class UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef(TypedDict):
-    CopySource: str,
-    CopySourceIfMatch: NotRequired[str],
-    CopySourceIfModifiedSince: NotRequired[Union[datetime, str]],
-    CopySourceIfNoneMatch: NotRequired[str],
-    CopySourceIfUnmodifiedSince: NotRequired[Union[datetime, str]],
-    CopySourceRange: NotRequired[str],
-    SSECustomerAlgorithm: NotRequired[str],
-    SSECustomerKey: NotRequired[str],
-    SSECustomerKeyMD5: NotRequired[str],
-    CopySourceSSECustomerAlgorithm: NotRequired[str],
-    CopySourceSSECustomerKey: NotRequired[str],
-    CopySourceSSECustomerKeyMD5: NotRequired[str],
-    RequestPayer: NotRequired[RequestPayerType],  # (1)
-    ExpectedBucketOwner: NotRequired[str],
-    ExpectedSourceBucketOwner: NotRequired[str],
-```
-
-1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## UploadPartRequestMultipartUploadPartUploadTypeDef
 
 ```python title="Usage Example"
@@ -5376,6 +5345,38 @@ class ObjectCopyRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
+## UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef
+
+def get_value() -> UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef:
+    return {
+        "CopySource": ...,
+    }
+```
+
+```python title="Definition"
+class UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef(TypedDict):
+    CopySource: Union[str, CopySourceTypeDef],  # (1)
+    CopySourceIfMatch: NotRequired[str],
+    CopySourceIfModifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceIfNoneMatch: NotRequired[str],
+    CopySourceIfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceRange: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    CopySourceSSECustomerAlgorithm: NotRequired[str],
+    CopySourceSSECustomerKey: NotRequired[str],
+    CopySourceSSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+    ExpectedSourceBucketOwner: NotRequired[str],
+```
+
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## UploadPartCopyRequestRequestTypeDef
 
 ```python title="Usage Example"

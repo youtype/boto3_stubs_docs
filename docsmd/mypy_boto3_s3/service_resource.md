@@ -3132,7 +3132,7 @@ Type annotations and code completion for `#!python boto3.resource("s3").copy_fro
 def copy_from(
     self,
     *,
-    CopySource: str,
+    CopySource: Union[str, CopySourceTypeDef],  # (1)
     CopySourceIfMatch: str = ...,
     CopySourceIfModifiedSince: Union[datetime, str] = ...,
     CopySourceIfNoneMatch: str = ...,
@@ -3144,15 +3144,16 @@ def copy_from(
     CopySourceSSECustomerAlgorithm: str = ...,
     CopySourceSSECustomerKey: str = ...,
     CopySourceSSECustomerKeyMD5: str = ...,
-    RequestPayer: RequestPayerType = ...,  # (1)
+    RequestPayer: RequestPayerType = ...,  # (2)
     ExpectedBucketOwner: str = ...,
     ExpectedSourceBucketOwner: str = ...,
-) -> UploadPartCopyOutputTypeDef:  # (2)
+) -> UploadPartCopyOutputTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
-2. See [:material-code-braces: UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef) 
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-braces: UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
