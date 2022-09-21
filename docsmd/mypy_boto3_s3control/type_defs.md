@@ -770,6 +770,24 @@ class GetBucketTaggingRequestRequestTypeDef(TypedDict):
     Bucket: str,
 ```
 
+## GetBucketVersioningRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetBucketVersioningRequestRequestTypeDef
+
+def get_value() -> GetBucketVersioningRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketVersioningRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Bucket: str,
+```
+
 ## GetJobTaggingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1443,6 +1461,25 @@ class PutBucketPolicyRequestRequestTypeDef(TypedDict):
     ConfirmRemoveSelfBucketAccess: NotRequired[bool],
 ```
 
+## VersioningConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import VersioningConfigurationTypeDef
+
+def get_value() -> VersioningConfigurationTypeDef:
+    return {
+        "MFADelete": ...,
+    }
+```
+
+```python title="Definition"
+class VersioningConfigurationTypeDef(TypedDict):
+    MFADelete: NotRequired[MFADeleteType],  # (1)
+    Status: NotRequired[BucketVersioningStatusType],  # (2)
+```
+
+1. See [:material-code-brackets: MFADeleteType](./literals.md#mfadeletetype) 
+2. See [:material-code-brackets: BucketVersioningStatusType](./literals.md#bucketversioningstatustype) 
 ## S3ObjectOwnerTypeDef
 
 ```python title="Usage Example"
@@ -1914,6 +1951,29 @@ class GetBucketResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBucketVersioningResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetBucketVersioningResultTypeDef
+
+def get_value() -> GetBucketVersioningResultTypeDef:
+    return {
+        "Status": ...,
+        "MFADelete": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketVersioningResultTypeDef(TypedDict):
+    Status: BucketVersioningStatusType,  # (1)
+    MFADelete: MFADeleteStatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: BucketVersioningStatusType](./literals.md#bucketversioningstatustype) 
+2. See [:material-code-brackets: MFADeleteStatusType](./literals.md#mfadeletestatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutMultiRegionAccessPointPolicyResultTypeDef
 
 ```python title="Usage Example"
@@ -2604,6 +2664,28 @@ class PrefixLevelStorageMetricsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SelectionCriteriaTypeDef](./type_defs.md#selectioncriteriatypedef) 
+## PutBucketVersioningRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import PutBucketVersioningRequestRequestTypeDef
+
+def get_value() -> PutBucketVersioningRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Bucket": ...,
+        "VersioningConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class PutBucketVersioningRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Bucket: str,
+    VersioningConfiguration: VersioningConfigurationTypeDef,  # (1)
+    MFA: NotRequired[str],
+```
+
+1. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
 ## S3GrantTypeDef
 
 ```python title="Usage Example"

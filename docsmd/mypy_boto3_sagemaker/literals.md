@@ -1121,6 +1121,21 @@ FeatureGroupStatusType = Literal[
     "Deleting",
 ]
 ```
+## FeatureStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import FeatureStatusType
+
+def get_value() -> FeatureStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+FeatureStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## FeatureTypeType
 
 ```python title="Usage Example"

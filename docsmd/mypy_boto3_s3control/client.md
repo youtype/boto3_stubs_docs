@@ -1118,6 +1118,37 @@ parent.get_bucket_tagging(**kwargs)
 
 1. See [:material-code-braces: GetBucketTaggingRequestRequestTypeDef](./type_defs.md#getbuckettaggingrequestrequesttypedef) 
 
+### get\_bucket\_versioning
+
+.
+
+Type annotations and code completion for `#!python boto3.client("s3control").get_bucket_versioning` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_versioning)
+
+```python title="Method definition"
+def get_bucket_versioning(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> GetBucketVersioningResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetBucketVersioningResultTypeDef](./type_defs.md#getbucketversioningresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetBucketVersioningRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
+
+parent.get_bucket_versioning(**kwargs)
+```
+
+1. See [:material-code-braces: GetBucketVersioningRequestRequestTypeDef](./type_defs.md#getbucketversioningrequestrequesttypedef) 
+
 ### get\_job\_tagging
 
 Returns the tags on an S3 Batch Operations job.
@@ -1729,6 +1760,41 @@ parent.put_bucket_tagging(**kwargs)
 ```
 
 1. See [:material-code-braces: PutBucketTaggingRequestRequestTypeDef](./type_defs.md#putbuckettaggingrequestrequesttypedef) 
+
+### put\_bucket\_versioning
+
+.
+
+Type annotations and code completion for `#!python boto3.client("s3control").put_bucket_versioning` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_versioning)
+
+```python title="Method definition"
+def put_bucket_versioning(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+    VersioningConfiguration: VersioningConfigurationTypeDef,  # (1)
+    MFA: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutBucketVersioningRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+    "VersioningConfiguration": ...,
+}
+
+parent.put_bucket_versioning(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketVersioningRequestRequestTypeDef](./type_defs.md#putbucketversioningrequestrequesttypedef) 
 
 ### put\_job\_tagging
 

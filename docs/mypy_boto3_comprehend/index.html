@@ -37301,6 +37301,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#sentimenttypetype">SentimentTypeType</a></li>
 <li><a href="literals/#splittype">SplitType</a></li>
 <li><a href="literals/#syntaxlanguagecodetype">SyntaxLanguageCodeType</a></li>
+<li><a href="literals/#targetedsentimententitytypetype">TargetedSentimentEntityTypeType</a></li>
 <li><a href="literals/#comprehendservicename">ComprehendServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -37330,6 +37331,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#sentimentscoretypedef">SentimentScoreTypeDef</a></li>
 <li><a href="type_defs/#batchdetectsentimentrequestrequesttypedef">BatchDetectSentimentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#batchdetectsyntaxrequestrequesttypedef">BatchDetectSyntaxRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchdetecttargetedsentimentrequestrequesttypedef">BatchDetectTargetedSentimentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#classifierevaluationmetricstypedef">ClassifierEvaluationMetricsTypeDef</a></li>
 <li><a href="type_defs/#classifydocumentrequestrequesttypedef">ClassifyDocumentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#documentclasstypedef">DocumentClassTypeDef</a></li>
@@ -37364,6 +37366,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#piientitytypedef">PiiEntityTypeDef</a></li>
 <li><a href="type_defs/#detectsentimentrequestrequesttypedef">DetectSentimentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#detectsyntaxrequestrequesttypedef">DetectSyntaxRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#detecttargetedsentimentrequestrequesttypedef">DetectTargetedSentimentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#documentclassificationjobfiltertypedef">DocumentClassificationJobFilterTypeDef</a></li>
 <li><a href="type_defs/#outputdataconfigtypedef">OutputDataConfigTypeDef</a></li>
 <li><a href="type_defs/#documentclassifierfiltertypedef">DocumentClassifierFilterTypeDef</a></li>
@@ -37436,6 +37439,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#detectkeyphrasesresponsetypedef">DetectKeyPhrasesResponseTypeDef</a></li>
 <li><a href="type_defs/#batchdetectsentimentitemresulttypedef">BatchDetectSentimentItemResultTypeDef</a></li>
 <li><a href="type_defs/#detectsentimentresponsetypedef">DetectSentimentResponseTypeDef</a></li>
+<li><a href="type_defs/#mentionsentimenttypedef">MentionSentimentTypeDef</a></li>
 <li><a href="type_defs/#classifiermetadatatypedef">ClassifierMetadataTypeDef</a></li>
 <li><a href="type_defs/#classifydocumentresponsetypedef">ClassifyDocumentResponseTypeDef</a></li>
 <li><a href="type_defs/#containspiientitiesresponsetypedef">ContainsPiiEntitiesResponseTypeDef</a></li>
@@ -37477,6 +37481,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchdetectentitiesresponsetypedef">BatchDetectEntitiesResponseTypeDef</a></li>
 <li><a href="type_defs/#batchdetectkeyphrasesresponsetypedef">BatchDetectKeyPhrasesResponseTypeDef</a></li>
 <li><a href="type_defs/#batchdetectsentimentresponsetypedef">BatchDetectSentimentResponseTypeDef</a></li>
+<li><a href="type_defs/#targetedsentimentmentiontypedef">TargetedSentimentMentionTypeDef</a></li>
 <li><a href="type_defs/#documentclassifierpropertiestypedef">DocumentClassifierPropertiesTypeDef</a></li>
 <li><a href="type_defs/#documentclassificationjobpropertiestypedef">DocumentClassificationJobPropertiesTypeDef</a></li>
 <li><a href="type_defs/#dominantlanguagedetectionjobpropertiestypedef">DominantLanguageDetectionJobPropertiesTypeDef</a></li>
@@ -37500,6 +37505,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#entityrecognizermetadatatypedef">EntityRecognizerMetadataTypeDef</a></li>
 <li><a href="type_defs/#batchdetectsyntaxitemresulttypedef">BatchDetectSyntaxItemResultTypeDef</a></li>
 <li><a href="type_defs/#detectsyntaxresponsetypedef">DetectSyntaxResponseTypeDef</a></li>
+<li><a href="type_defs/#targetedsentimententitytypedef">TargetedSentimentEntityTypeDef</a></li>
 <li><a href="type_defs/#describedocumentclassifierresponsetypedef">DescribeDocumentClassifierResponseTypeDef</a></li>
 <li><a href="type_defs/#listdocumentclassifiersresponsetypedef">ListDocumentClassifiersResponseTypeDef</a></li>
 <li><a href="type_defs/#describedocumentclassificationjobresponsetypedef">DescribeDocumentClassificationJobResponseTypeDef</a></li>
@@ -37522,8 +37528,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtopicsdetectionjobsresponsetypedef">ListTopicsDetectionJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#entityrecognizerpropertiestypedef">EntityRecognizerPropertiesTypeDef</a></li>
 <li><a href="type_defs/#batchdetectsyntaxresponsetypedef">BatchDetectSyntaxResponseTypeDef</a></li>
+<li><a href="type_defs/#batchdetecttargetedsentimentitemresulttypedef">BatchDetectTargetedSentimentItemResultTypeDef</a></li>
+<li><a href="type_defs/#detecttargetedsentimentresponsetypedef">DetectTargetedSentimentResponseTypeDef</a></li>
 <li><a href="type_defs/#describeentityrecognizerresponsetypedef">DescribeEntityRecognizerResponseTypeDef</a></li>
 <li><a href="type_defs/#listentityrecognizersresponsetypedef">ListEntityRecognizersResponseTypeDef</a></li>
+<li><a href="type_defs/#batchdetecttargetedsentimentresponsetypedef">BatchDetectTargetedSentimentResponseTypeDef</a></li>
 </ul>
 
 

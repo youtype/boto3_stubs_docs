@@ -698,6 +698,24 @@ class MetricDatumTypeDef(TypedDict):
 1. See [:material-code-brackets: AutoMLMetricEnumType](./literals.md#automlmetricenumtype) 
 2. See [:material-code-brackets: MetricSetSourceType](./literals.md#metricsetsourcetype) 
 3. See [:material-code-brackets: AutoMLMetricExtendedEnumType](./literals.md#automlmetricextendedenumtype) 
+## TimeSeriesForecastingSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TimeSeriesForecastingSettingsTypeDef
+
+def get_value() -> TimeSeriesForecastingSettingsTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class TimeSeriesForecastingSettingsTypeDef(TypedDict):
+    Status: NotRequired[FeatureStatusType],  # (1)
+    AmazonForecastRoleArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FeatureStatusType](./literals.md#featurestatustype) 
 ## CapacitySizeTypeDef
 
 ```python title="Usage Example"
@@ -10966,6 +10984,23 @@ class CandidatePropertiesTypeDef(TypedDict):
 
 1. See [:material-code-braces: CandidateArtifactLocationsTypeDef](./type_defs.md#candidateartifactlocationstypedef) 
 2. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
+## CanvasAppSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CanvasAppSettingsTypeDef
+
+def get_value() -> CanvasAppSettingsTypeDef:
+    return {
+        "TimeSeriesForecastingSettings": ...,
+    }
+```
+
+```python title="Definition"
+class CanvasAppSettingsTypeDef(TypedDict):
+    TimeSeriesForecastingSettings: NotRequired[TimeSeriesForecastingSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TimeSeriesForecastingSettingsTypeDef](./type_defs.md#timeseriesforecastingsettingstypedef) 
 ## TrafficRoutingConfigTypeDef
 
 ```python title="Usage Example"
@@ -17189,6 +17224,7 @@ class UserSettingsTypeDef(TypedDict):
     TensorBoardAppSettings: NotRequired[TensorBoardAppSettingsTypeDef],  # (4)
     RStudioServerProAppSettings: NotRequired[RStudioServerProAppSettingsTypeDef],  # (5)
     RSessionAppSettings: NotRequired[RSessionAppSettingsTypeDef],  # (6)
+    CanvasAppSettings: NotRequired[CanvasAppSettingsTypeDef],  # (7)
 ```
 
 1. See [:material-code-braces: SharingSettingsTypeDef](./type_defs.md#sharingsettingstypedef) 
@@ -17197,6 +17233,7 @@ class UserSettingsTypeDef(TypedDict):
 4. See [:material-code-braces: TensorBoardAppSettingsTypeDef](./type_defs.md#tensorboardappsettingstypedef) 
 5. See [:material-code-braces: RStudioServerProAppSettingsTypeDef](./type_defs.md#rstudioserverproappsettingstypedef) 
 6. See [:material-code-braces: RSessionAppSettingsTypeDef](./type_defs.md#rsessionappsettingstypedef) 
+7. See [:material-code-braces: CanvasAppSettingsTypeDef](./type_defs.md#canvasappsettingstypedef) 
 ## ChannelTypeDef
 
 ```python title="Usage Example"

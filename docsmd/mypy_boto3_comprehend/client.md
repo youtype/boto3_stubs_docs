@@ -224,6 +224,39 @@ parent.batch_detect_syntax(**kwargs)
 
 1. See [:material-code-braces: BatchDetectSyntaxRequestRequestTypeDef](./type_defs.md#batchdetectsyntaxrequestrequesttypedef) 
 
+### batch\_detect\_targeted\_sentiment
+
+Inspects a batch of documents and returns a sentiment analysis for each entity
+identified in the documents.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").batch_detect_targeted_sentiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.batch_detect_targeted_sentiment)
+
+```python title="Method definition"
+def batch_detect_targeted_sentiment(
+    self,
+    *,
+    TextList: Sequence[str],
+    LanguageCode: LanguageCodeType,  # (1)
+) -> BatchDetectTargetedSentimentResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: BatchDetectTargetedSentimentResponseTypeDef](./type_defs.md#batchdetecttargetedsentimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchDetectTargetedSentimentRequestRequestTypeDef = {  # (1)
+    "TextList": ...,
+    "LanguageCode": ...,
+}
+
+parent.batch_detect_targeted_sentiment(**kwargs)
+```
+
+1. See [:material-code-braces: BatchDetectTargetedSentimentRequestRequestTypeDef](./type_defs.md#batchdetecttargetedsentimentrequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -1140,6 +1173,39 @@ parent.detect_syntax(**kwargs)
 ```
 
 1. See [:material-code-braces: DetectSyntaxRequestRequestTypeDef](./type_defs.md#detectsyntaxrequestrequesttypedef) 
+
+### detect\_targeted\_sentiment
+
+Inspects the input text and returns a sentiment analysis for each entity
+identified in the text.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").detect_targeted_sentiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_targeted_sentiment)
+
+```python title="Method definition"
+def detect_targeted_sentiment(
+    self,
+    *,
+    Text: str,
+    LanguageCode: LanguageCodeType,  # (1)
+) -> DetectTargetedSentimentResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: DetectTargetedSentimentResponseTypeDef](./type_defs.md#detecttargetedsentimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DetectTargetedSentimentRequestRequestTypeDef = {  # (1)
+    "Text": ...,
+    "LanguageCode": ...,
+}
+
+parent.detect_targeted_sentiment(**kwargs)
+```
+
+1. See [:material-code-braces: DetectTargetedSentimentRequestRequestTypeDef](./type_defs.md#detecttargetedsentimentrequestrequesttypedef) 
 
 ### generate\_presigned\_url
 

@@ -241,6 +241,25 @@ class BatchDetectSyntaxRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype) 
+## BatchDetectTargetedSentimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BatchDetectTargetedSentimentRequestRequestTypeDef
+
+def get_value() -> BatchDetectTargetedSentimentRequestRequestTypeDef:
+    return {
+        "TextList": ...,
+        "LanguageCode": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDetectTargetedSentimentRequestRequestTypeDef(TypedDict):
+    TextList: Sequence[str],
+    LanguageCode: LanguageCodeType,  # (1)
+```
+
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## ClassifierEvaluationMetricsTypeDef
 
 ```python title="Usage Example"
@@ -836,6 +855,25 @@ class DetectSyntaxRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype) 
+## DetectTargetedSentimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DetectTargetedSentimentRequestRequestTypeDef
+
+def get_value() -> DetectTargetedSentimentRequestRequestTypeDef:
+    return {
+        "Text": ...,
+        "LanguageCode": ...,
+    }
+```
+
+```python title="Definition"
+class DetectTargetedSentimentRequestRequestTypeDef(TypedDict):
+    Text: str,
+    LanguageCode: LanguageCodeType,  # (1)
+```
+
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## DocumentClassificationJobFilterTypeDef
 
 ```python title="Usage Example"
@@ -2252,6 +2290,25 @@ class DetectSentimentResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: SentimentTypeType](./literals.md#sentimenttypetype) 
 2. See [:material-code-braces: SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MentionSentimentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import MentionSentimentTypeDef
+
+def get_value() -> MentionSentimentTypeDef:
+    return {
+        "Sentiment": ...,
+    }
+```
+
+```python title="Definition"
+class MentionSentimentTypeDef(TypedDict):
+    Sentiment: NotRequired[SentimentTypeType],  # (1)
+    SentimentScore: NotRequired[SentimentScoreTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SentimentTypeType](./literals.md#sentimenttypetype) 
+2. See [:material-code-braces: SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef) 
 ## ClassifierMetadataTypeDef
 
 ```python title="Usage Example"
@@ -3104,6 +3161,30 @@ class BatchDetectSentimentResponseTypeDef(TypedDict):
 1. See [:material-code-braces: BatchDetectSentimentItemResultTypeDef](./type_defs.md#batchdetectsentimentitemresulttypedef) 
 2. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TargetedSentimentMentionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import TargetedSentimentMentionTypeDef
+
+def get_value() -> TargetedSentimentMentionTypeDef:
+    return {
+        "Score": ...,
+    }
+```
+
+```python title="Definition"
+class TargetedSentimentMentionTypeDef(TypedDict):
+    Score: NotRequired[float],
+    GroupScore: NotRequired[float],
+    Text: NotRequired[str],
+    Type: NotRequired[TargetedSentimentEntityTypeType],  # (1)
+    MentionSentiment: NotRequired[MentionSentimentTypeDef],  # (2)
+    BeginOffset: NotRequired[int],
+    EndOffset: NotRequired[int],
+```
+
+1. See [:material-code-brackets: TargetedSentimentEntityTypeType](./literals.md#targetedsentimententitytypetype) 
+2. See [:material-code-braces: MentionSentimentTypeDef](./type_defs.md#mentionsentimenttypedef) 
 ## DocumentClassifierPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -3813,6 +3894,24 @@ class DetectSyntaxResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SyntaxTokenTypeDef](./type_defs.md#syntaxtokentypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TargetedSentimentEntityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import TargetedSentimentEntityTypeDef
+
+def get_value() -> TargetedSentimentEntityTypeDef:
+    return {
+        "DescriptiveMentionIndex": ...,
+    }
+```
+
+```python title="Definition"
+class TargetedSentimentEntityTypeDef(TypedDict):
+    DescriptiveMentionIndex: NotRequired[List[int]],
+    Mentions: NotRequired[List[TargetedSentimentMentionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TargetedSentimentMentionTypeDef](./type_defs.md#targetedsentimentmentiontypedef) 
 ## DescribeDocumentClassifierResponseTypeDef
 
 ```python title="Usage Example"
@@ -4292,6 +4391,44 @@ class BatchDetectSyntaxResponseTypeDef(TypedDict):
 1. See [:material-code-braces: BatchDetectSyntaxItemResultTypeDef](./type_defs.md#batchdetectsyntaxitemresulttypedef) 
 2. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDetectTargetedSentimentItemResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BatchDetectTargetedSentimentItemResultTypeDef
+
+def get_value() -> BatchDetectTargetedSentimentItemResultTypeDef:
+    return {
+        "Index": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDetectTargetedSentimentItemResultTypeDef(TypedDict):
+    Index: NotRequired[int],
+    Entities: NotRequired[List[TargetedSentimentEntityTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TargetedSentimentEntityTypeDef](./type_defs.md#targetedsentimententitytypedef) 
+## DetectTargetedSentimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DetectTargetedSentimentResponseTypeDef
+
+def get_value() -> DetectTargetedSentimentResponseTypeDef:
+    return {
+        "Entities": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetectTargetedSentimentResponseTypeDef(TypedDict):
+    Entities: List[TargetedSentimentEntityTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TargetedSentimentEntityTypeDef](./type_defs.md#targetedsentimententitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEntityRecognizerResponseTypeDef
 
 ```python title="Usage Example"
@@ -4334,3 +4471,26 @@ class ListEntityRecognizersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EntityRecognizerPropertiesTypeDef](./type_defs.md#entityrecognizerpropertiestypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDetectTargetedSentimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BatchDetectTargetedSentimentResponseTypeDef
+
+def get_value() -> BatchDetectTargetedSentimentResponseTypeDef:
+    return {
+        "ResultList": ...,
+        "ErrorList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDetectTargetedSentimentResponseTypeDef(TypedDict):
+    ResultList: List[BatchDetectTargetedSentimentItemResultTypeDef],  # (1)
+    ErrorList: List[BatchItemErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: BatchDetectTargetedSentimentItemResultTypeDef](./type_defs.md#batchdetecttargetedsentimentitemresulttypedef) 
+2. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

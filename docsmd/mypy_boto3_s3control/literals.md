@@ -64,6 +64,21 @@ BucketLocationConstraintType = Literal[
     "us-west-2",
 ]
 ```
+## BucketVersioningStatusType
+
+```python title="Usage Example"
+from mypy_boto3_s3control.literals import BucketVersioningStatusType
+
+def get_value() -> BucketVersioningStatusType:
+    return "Enabled"
+```
+
+```python title="Definition"
+BucketVersioningStatusType = Literal[
+    "Enabled",
+    "Suspended",
+]
+```
 ## ExpirationStatusType
 
 ```python title="Usage Example"
@@ -207,6 +222,36 @@ def get_value() -> ListAccessPointsForObjectLambdaPaginatorName:
 ```python title="Definition"
 ListAccessPointsForObjectLambdaPaginatorName = Literal[
     "list_access_points_for_object_lambda",
+]
+```
+## MFADeleteStatusType
+
+```python title="Usage Example"
+from mypy_boto3_s3control.literals import MFADeleteStatusType
+
+def get_value() -> MFADeleteStatusType:
+    return "Disabled"
+```
+
+```python title="Definition"
+MFADeleteStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
+## MFADeleteType
+
+```python title="Usage Example"
+from mypy_boto3_s3control.literals import MFADeleteType
+
+def get_value() -> MFADeleteType:
+    return "Disabled"
+```
+
+```python title="Definition"
+MFADeleteType = Literal[
+    "Disabled",
+    "Enabled",
 ]
 ```
 ## MultiRegionAccessPointStatusType

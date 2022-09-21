@@ -505,6 +505,36 @@ SyntaxLanguageCodeType = Literal[
     "pt",
 ]
 ```
+## TargetedSentimentEntityTypeType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import TargetedSentimentEntityTypeType
+
+def get_value() -> TargetedSentimentEntityTypeType:
+    return "ATTRIBUTE"
+```
+
+```python title="Definition"
+TargetedSentimentEntityTypeType = Literal[
+    "ATTRIBUTE",
+    "BOOK",
+    "BRAND",
+    "COMMERCIAL_ITEM",
+    "DATE",
+    "EVENT",
+    "FACILITY",
+    "GAME",
+    "LOCATION",
+    "MOVIE",
+    "MUSIC",
+    "ORGANIZATION",
+    "OTHER",
+    "PERSON",
+    "PERSONAL_TITLE",
+    "QUANTITY",
+    "SOFTWARE",
+]
+```
 ## ComprehendServiceName
 
 ```python title="Usage Example"
