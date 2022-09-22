@@ -605,8 +605,7 @@ parent.list_group_memberships_for_member(**kwargs)
 
 ### list\_groups
 
-Lists the attribute name and value of the group that you specified in the
-search.
+Lists all groups in the identity store.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").list_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
@@ -639,7 +638,7 @@ parent.list_groups(**kwargs)
 
 ### list\_users
 
-Lists the attribute name and value of the user that you specified in the search.
+Lists all users in the identity store.
 
 Type annotations and code completion for `#!python boto3.client("identitystore").list_users` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)

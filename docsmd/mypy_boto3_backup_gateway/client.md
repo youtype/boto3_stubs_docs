@@ -37,6 +37,7 @@ except (
     client.ConflictException,
     client.InternalServerException,
     client.ResourceNotFoundException,
+    client.ThrottlingException,
     client.ValidationException,
 ) as e:
     print(e)
@@ -286,6 +287,36 @@ parent.get_gateway(**kwargs)
 
 1. See [:material-code-braces: GetGatewayInputRequestTypeDef](./type_defs.md#getgatewayinputrequesttypedef) 
 
+### get\_virtual\_machine
+
+By providing the ARN (Amazon Resource Name), this API returns the virtual
+machine.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").get_virtual_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.get_virtual_machine)
+
+```python title="Method definition"
+def get_virtual_machine(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetVirtualMachineOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetVirtualMachineOutputTypeDef](./type_defs.md#getvirtualmachineoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetVirtualMachineInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.get_virtual_machine(**kwargs)
+```
+
+1. See [:material-code-braces: GetVirtualMachineInputRequestTypeDef](./type_defs.md#getvirtualmachineinputrequesttypedef) 
+
 ### import\_hypervisor\_configuration
 
 Connect to a hypervisor by importing its configuration.
@@ -424,6 +455,7 @@ Type annotations and code completion for `#!python boto3.client("backup-gateway"
 def list_virtual_machines(
     self,
     *,
+    HypervisorArn: str = ...,
     MaxResults: int = ...,
     NextToken: str = ...,
 ) -> ListVirtualMachinesOutputTypeDef:  # (1)
@@ -435,7 +467,7 @@ def list_virtual_machines(
 
 ```python title="Usage example with kwargs"
 kwargs: ListVirtualMachinesInputRequestTypeDef = {  # (1)
-    "MaxResults": ...,
+    "HypervisorArn": ...,
 }
 
 parent.list_virtual_machines(**kwargs)

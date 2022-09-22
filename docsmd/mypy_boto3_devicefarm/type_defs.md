@@ -227,40 +227,24 @@ class NetworkProfileTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
-## CreateProjectRequestRequestTypeDef
+## VpcConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_devicefarm.type_defs import CreateProjectRequestRequestTypeDef
+from mypy_boto3_devicefarm.type_defs import VpcConfigTypeDef
 
-def get_value() -> CreateProjectRequestRequestTypeDef:
+def get_value() -> VpcConfigTypeDef:
     return {
-        "name": ...,
+        "securityGroupIds": ...,
+        "subnetIds": ...,
+        "vpcId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateProjectRequestRequestTypeDef(TypedDict):
-    name: str,
-    defaultJobTimeoutMinutes: NotRequired[int],
-```
-
-## ProjectTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_devicefarm.type_defs import ProjectTypeDef
-
-def get_value() -> ProjectTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class ProjectTypeDef(TypedDict):
-    arn: NotRequired[str],
-    name: NotRequired[str],
-    defaultJobTimeoutMinutes: NotRequired[int],
-    created: NotRequired[datetime],
+class VpcConfigTypeDef(TypedDict):
+    securityGroupIds: Sequence[str],
+    subnetIds: Sequence[str],
+    vpcId: str,
 ```
 
 ## CreateRemoteAccessSessionConfigurationTypeDef
@@ -1746,24 +1730,6 @@ class UpdateNetworkProfileRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
-## UpdateProjectRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_devicefarm.type_defs import UpdateProjectRequestRequestTypeDef
-
-def get_value() -> UpdateProjectRequestRequestTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProjectRequestRequestTypeDef(TypedDict):
-    arn: str,
-    name: NotRequired[str],
-    defaultJobTimeoutMinutes: NotRequired[int],
-```
-
 ## UpdateUploadRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2127,88 +2093,66 @@ class UpdateNetworkProfileResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProjectResultTypeDef
+## CreateProjectRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_devicefarm.type_defs import CreateProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateProjectRequestRequestTypeDef
 
-def get_value() -> CreateProjectResultTypeDef:
+def get_value() -> CreateProjectRequestRequestTypeDef:
     return {
-        "project": ...,
-        "ResponseMetadata": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateProjectResultTypeDef(TypedDict):
-    project: ProjectTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    name: str,
+    defaultJobTimeoutMinutes: NotRequired[int],
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetProjectResultTypeDef
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## ProjectTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_devicefarm.type_defs import GetProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ProjectTypeDef
 
-def get_value() -> GetProjectResultTypeDef:
+def get_value() -> ProjectTypeDef:
     return {
-        "project": ...,
-        "ResponseMetadata": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class GetProjectResultTypeDef(TypedDict):
-    project: ProjectTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ProjectTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    defaultJobTimeoutMinutes: NotRequired[int],
+    created: NotRequired[datetime],
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListProjectsResultTypeDef
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## UpdateProjectRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_devicefarm.type_defs import ListProjectsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateProjectRequestRequestTypeDef
 
-def get_value() -> ListProjectsResultTypeDef:
+def get_value() -> UpdateProjectRequestRequestTypeDef:
     return {
-        "projects": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class ListProjectsResultTypeDef(TypedDict):
-    projects: List[ProjectTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class UpdateProjectRequestRequestTypeDef(TypedDict):
+    arn: str,
+    name: NotRequired[str],
+    defaultJobTimeoutMinutes: NotRequired[int],
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateProjectResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_devicefarm.type_defs import UpdateProjectResultTypeDef
-
-def get_value() -> UpdateProjectResultTypeDef:
-    return {
-        "project": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateProjectResultTypeDef(TypedDict):
-    project: ProjectTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
 ## CreateRemoteAccessSessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3388,6 +3332,88 @@ class UpdateDeviceInstanceResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProjectResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import CreateProjectResultTypeDef
+
+def get_value() -> CreateProjectResultTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProjectResultTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetProjectResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import GetProjectResultTypeDef
+
+def get_value() -> GetProjectResultTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetProjectResultTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListProjectsResultTypeDef
+
+def get_value() -> ListProjectsResultTypeDef:
+    return {
+        "projects": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsResultTypeDef(TypedDict):
+    projects: List[ProjectTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProjectResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import UpdateProjectResultTypeDef
+
+def get_value() -> UpdateProjectResultTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProjectResultTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTestGridProjectResultTypeDef
 
 ```python title="Usage Example"
@@ -3514,6 +3540,7 @@ class RunTypeDef(TypedDict):
     skipAppResign: NotRequired[bool],
     testSpecArn: NotRequired[str],
     deviceSelectionResult: NotRequired[DeviceSelectionResultTypeDef],  # (13)
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (14)
 ```
 
 1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
@@ -3529,6 +3556,7 @@ class RunTypeDef(TypedDict):
 11. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
 12. See [:material-code-braces: CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef) 
 13. See [:material-code-braces: DeviceSelectionResultTypeDef](./type_defs.md#deviceselectionresulttypedef) 
+14. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
 ## GetSuiteResultTypeDef
 
 ```python title="Usage Example"
@@ -3847,6 +3875,7 @@ class RemoteAccessSessionTypeDef(TypedDict):
     deviceUdid: NotRequired[str],
     interactionMode: NotRequired[InteractionModeType],  # (6)
     skipAppResign: NotRequired[bool],
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
@@ -3855,6 +3884,7 @@ class RemoteAccessSessionTypeDef(TypedDict):
 4. See [:material-code-brackets: BillingMethodType](./literals.md#billingmethodtype) 
 5. See [:material-code-braces: DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef) 
 6. See [:material-code-brackets: InteractionModeType](./literals.md#interactionmodetype) 
+7. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
 ## GetRunResultTypeDef
 
 ```python title="Usage Example"

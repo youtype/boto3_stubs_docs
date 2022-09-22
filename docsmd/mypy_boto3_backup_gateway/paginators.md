@@ -163,6 +163,7 @@ Type annotations and code completion for `#!python ListVirtualMachinesPaginator.
 def paginate(
     self,
     *,
+    HypervisorArn: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[ListVirtualMachinesOutputTypeDef]:  # (2)
     ...
@@ -174,7 +175,7 @@ def paginate(
 
 ```python title="Usage example with kwargs"
 kwargs: ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef = {  # (1)
-    "PaginationConfig": ...,
+    "HypervisorArn": ...,
 }
 
 parent.paginate(**kwargs)

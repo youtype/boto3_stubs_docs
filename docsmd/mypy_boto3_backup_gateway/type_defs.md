@@ -115,29 +115,26 @@ class DisassociateGatewayFromServerInputRequestTypeDef(TypedDict):
     GatewayArn: str,
 ```
 
-## GatewayDetailsTypeDef
+## MaintenanceStartTimeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import GatewayDetailsTypeDef
+from mypy_boto3_backup_gateway.type_defs import MaintenanceStartTimeTypeDef
 
-def get_value() -> GatewayDetailsTypeDef:
+def get_value() -> MaintenanceStartTimeTypeDef:
     return {
-        "GatewayArn": ...,
+        "HourOfDay": ...,
+        "MinuteOfHour": ...,
     }
 ```
 
 ```python title="Definition"
-class GatewayDetailsTypeDef(TypedDict):
-    GatewayArn: NotRequired[str],
-    GatewayDisplayName: NotRequired[str],
-    GatewayType: NotRequired[GatewayTypeType],  # (1)
-    HypervisorId: NotRequired[str],
-    LastSeenTime: NotRequired[datetime],
-    NextUpdateAvailabilityTime: NotRequired[datetime],
-    VpcEndpoint: NotRequired[str],
+class MaintenanceStartTimeTypeDef(TypedDict):
+    HourOfDay: int,
+    MinuteOfHour: int,
+    DayOfMonth: NotRequired[int],
+    DayOfWeek: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
 ## GatewayTypeDef
 
 ```python title="Usage Example"
@@ -173,6 +170,43 @@ def get_value() -> GetGatewayInputRequestTypeDef:
 ```python title="Definition"
 class GetGatewayInputRequestTypeDef(TypedDict):
     GatewayArn: str,
+```
+
+## GetVirtualMachineInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetVirtualMachineInputRequestTypeDef
+
+def get_value() -> GetVirtualMachineInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetVirtualMachineInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## VirtualMachineDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import VirtualMachineDetailsTypeDef
+
+def get_value() -> VirtualMachineDetailsTypeDef:
+    return {
+        "HostName": ...,
+    }
+```
+
+```python title="Definition"
+class VirtualMachineDetailsTypeDef(TypedDict):
+    HostName: NotRequired[str],
+    HypervisorId: NotRequired[str],
+    LastBackupDate: NotRequired[datetime],
+    Name: NotRequired[str],
+    Path: NotRequired[str],
+    ResourceArn: NotRequired[str],
 ```
 
 ## HypervisorTypeDef
@@ -271,12 +305,13 @@ from mypy_boto3_backup_gateway.type_defs import ListVirtualMachinesInputRequestT
 
 def get_value() -> ListVirtualMachinesInputRequestTypeDef:
     return {
-        "MaxResults": ...,
+        "HypervisorArn": ...,
     }
 ```
 
 ```python title="Definition"
 class ListVirtualMachinesInputRequestTypeDef(TypedDict):
+    HypervisorArn: NotRequired[str],
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
 ```
@@ -730,26 +765,31 @@ class TagResourceInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## GetGatewayOutputTypeDef
+## GatewayDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import GetGatewayOutputTypeDef
+from mypy_boto3_backup_gateway.type_defs import GatewayDetailsTypeDef
 
-def get_value() -> GetGatewayOutputTypeDef:
+def get_value() -> GatewayDetailsTypeDef:
     return {
-        "Gateway": ...,
-        "ResponseMetadata": ...,
+        "GatewayArn": ...,
     }
 ```
 
 ```python title="Definition"
-class GetGatewayOutputTypeDef(TypedDict):
-    Gateway: GatewayDetailsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class GatewayDetailsTypeDef(TypedDict):
+    GatewayArn: NotRequired[str],
+    GatewayDisplayName: NotRequired[str],
+    GatewayType: NotRequired[GatewayTypeType],  # (1)
+    HypervisorId: NotRequired[str],
+    LastSeenTime: NotRequired[datetime],
+    MaintenanceStartTime: NotRequired[MaintenanceStartTimeTypeDef],  # (2)
+    NextUpdateAvailabilityTime: NotRequired[datetime],
+    VpcEndpoint: NotRequired[str],
 ```
 
-1. See [:material-code-braces: GatewayDetailsTypeDef](./type_defs.md#gatewaydetailstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
+2. See [:material-code-braces: MaintenanceStartTimeTypeDef](./type_defs.md#maintenancestarttimetypedef) 
 ## ListGatewaysOutputTypeDef
 
 ```python title="Usage Example"
@@ -771,6 +811,26 @@ class ListGatewaysOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GatewayTypeDef](./type_defs.md#gatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVirtualMachineOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetVirtualMachineOutputTypeDef
+
+def get_value() -> GetVirtualMachineOutputTypeDef:
+    return {
+        "VirtualMachine": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVirtualMachineOutputTypeDef(TypedDict):
+    VirtualMachine: VirtualMachineDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VirtualMachineDetailsTypeDef](./type_defs.md#virtualmachinedetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListHypervisorsOutputTypeDef
 
@@ -835,12 +895,13 @@ from mypy_boto3_backup_gateway.type_defs import ListVirtualMachinesInputListVirt
 
 def get_value() -> ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef:
     return {
-        "PaginationConfig": ...,
+        "HypervisorArn": ...,
     }
 ```
 
 ```python title="Definition"
 class ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef(TypedDict):
+    HypervisorArn: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -866,4 +927,24 @@ class ListVirtualMachinesOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: VirtualMachineTypeDef](./type_defs.md#virtualmachinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetGatewayOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetGatewayOutputTypeDef
+
+def get_value() -> GetGatewayOutputTypeDef:
+    return {
+        "Gateway": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetGatewayOutputTypeDef(TypedDict):
+    Gateway: GatewayDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GatewayDetailsTypeDef](./type_defs.md#gatewaydetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

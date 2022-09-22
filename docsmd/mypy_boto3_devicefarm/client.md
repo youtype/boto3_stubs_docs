@@ -216,11 +216,13 @@ def create_project(
     *,
     name: str,
     defaultJobTimeoutMinutes: int = ...,
-) -> CreateProjectResultTypeDef:  # (1)
+    vpcConfig: VpcConfigTypeDef = ...,  # (1)
+) -> CreateProjectResultTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef) 
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+2. See [:material-code-braces: CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2386,11 +2388,13 @@ def update_project(
     arn: str,
     name: str = ...,
     defaultJobTimeoutMinutes: int = ...,
-) -> UpdateProjectResultTypeDef:  # (1)
+    vpcConfig: VpcConfigTypeDef = ...,  # (1)
+) -> UpdateProjectResultTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef) 
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+2. See [:material-code-braces: UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

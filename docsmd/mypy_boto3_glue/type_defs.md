@@ -740,6 +740,8 @@ class CatalogTargetTypeDef(TypedDict):
     DatabaseName: str,
     Tables: List[str],
     ConnectionName: NotRequired[str],
+    EventQueueArn: NotRequired[str],
+    DlqEventQueueArn: NotRequired[str],
 ```
 
 ## CheckSchemaVersionValidityInputRequestTypeDef
