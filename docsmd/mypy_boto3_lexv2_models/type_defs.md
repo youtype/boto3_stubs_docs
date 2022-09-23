@@ -87,6 +87,24 @@ class AggregatedUtterancesSummaryTypeDef(TypedDict):
     containsDataFromDeletedResources: NotRequired[bool],
 ```
 
+## AllowedInputTypesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import AllowedInputTypesTypeDef
+
+def get_value() -> AllowedInputTypesTypeDef:
+    return {
+        "allowAudioInput": ...,
+        "allowDTMFInput": ...,
+    }
+```
+
+```python title="Definition"
+class AllowedInputTypesTypeDef(TypedDict):
+    allowAudioInput: bool,
+    allowDTMFInput: bool,
+```
+
 ## AssociatedTranscriptFilterTypeDef
 
 ```python title="Usage Example"
@@ -120,6 +138,46 @@ def get_value() -> AssociatedTranscriptTypeDef:
 ```python title="Definition"
 class AssociatedTranscriptTypeDef(TypedDict):
     transcript: NotRequired[str],
+```
+
+## AudioSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import AudioSpecificationTypeDef
+
+def get_value() -> AudioSpecificationTypeDef:
+    return {
+        "maxLengthMs": ...,
+        "endTimeoutMs": ...,
+    }
+```
+
+```python title="Definition"
+class AudioSpecificationTypeDef(TypedDict):
+    maxLengthMs: int,
+    endTimeoutMs: int,
+```
+
+## DTMFSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DTMFSpecificationTypeDef
+
+def get_value() -> DTMFSpecificationTypeDef:
+    return {
+        "maxLength": ...,
+        "endTimeoutMs": ...,
+        "deletionCharacter": ...,
+        "endCharacter": ...,
+    }
+```
+
+```python title="Definition"
+class DTMFSpecificationTypeDef(TypedDict):
+    maxLength: int,
+    endTimeoutMs: int,
+    deletionCharacter: str,
+    endCharacter: str,
 ```
 
 ## S3BucketLogDestinationTypeDef
@@ -1970,6 +2028,22 @@ class PathFormatTypeDef(TypedDict):
     objectPrefixes: NotRequired[List[str]],
 ```
 
+## TextInputSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import TextInputSpecificationTypeDef
+
+def get_value() -> TextInputSpecificationTypeDef:
+    return {
+        "startTimeoutMs": ...,
+    }
+```
+
+```python title="Definition"
+class TextInputSpecificationTypeDef(TypedDict):
+    startTimeoutMs: int,
+```
+
 ## RelativeAggregationDurationTypeDef
 
 ```python title="Usage Example"
@@ -2176,6 +2250,26 @@ class SearchAssociatedTranscriptsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssociatedTranscriptFilterTypeDef](./type_defs.md#associatedtranscriptfiltertypedef) 
 2. See [:material-code-brackets: SearchOrderType](./literals.md#searchordertype) 
+## AudioAndDTMFInputSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import AudioAndDTMFInputSpecificationTypeDef
+
+def get_value() -> AudioAndDTMFInputSpecificationTypeDef:
+    return {
+        "startTimeoutMs": ...,
+    }
+```
+
+```python title="Definition"
+class AudioAndDTMFInputSpecificationTypeDef(TypedDict):
+    startTimeoutMs: int,
+    audioSpecification: NotRequired[AudioSpecificationTypeDef],  # (1)
+    dtmfSpecification: NotRequired[DTMFSpecificationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AudioSpecificationTypeDef](./type_defs.md#audiospecificationtypedef) 
+2. See [:material-code-braces: DTMFSpecificationTypeDef](./type_defs.md#dtmfspecificationtypedef) 
 ## AudioLogDestinationTypeDef
 
 ```python title="Usage Example"
@@ -4134,6 +4228,28 @@ class SlotValueSelectionSettingTypeDef(TypedDict):
 1. See [:material-code-brackets: SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype) 
 2. See [:material-code-braces: SlotValueRegexFilterTypeDef](./type_defs.md#slotvalueregexfiltertypedef) 
 3. See [:material-code-braces: AdvancedRecognitionSettingTypeDef](./type_defs.md#advancedrecognitionsettingtypedef) 
+## PromptAttemptSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import PromptAttemptSpecificationTypeDef
+
+def get_value() -> PromptAttemptSpecificationTypeDef:
+    return {
+        "allowedInputTypes": ...,
+    }
+```
+
+```python title="Definition"
+class PromptAttemptSpecificationTypeDef(TypedDict):
+    allowedInputTypes: AllowedInputTypesTypeDef,  # (1)
+    allowInterrupt: NotRequired[bool],
+    audioAndDTMFInputSpecification: NotRequired[AudioAndDTMFInputSpecificationTypeDef],  # (2)
+    textInputSpecification: NotRequired[TextInputSpecificationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AllowedInputTypesTypeDef](./type_defs.md#allowedinputtypestypedef) 
+2. See [:material-code-braces: AudioAndDTMFInputSpecificationTypeDef](./type_defs.md#audioanddtmfinputspecificationtypedef) 
+3. See [:material-code-braces: TextInputSpecificationTypeDef](./type_defs.md#textinputspecificationtypedef) 
 ## AudioLogSettingTypeDef
 
 ```python title="Usage Example"
@@ -4970,10 +5086,12 @@ class PromptSpecificationTypeDef(TypedDict):
     maxRetries: int,
     allowInterrupt: NotRequired[bool],
     messageSelectionStrategy: NotRequired[MessageSelectionStrategyType],  # (2)
+    promptAttemptsSpecification: NotRequired[Mapping[PromptAttemptType, PromptAttemptSpecificationTypeDef]],  # (3)
 ```
 
 1. See [:material-code-braces: MessageGroupTypeDef](./type_defs.md#messagegrouptypedef) 
 2. See [:material-code-brackets: MessageSelectionStrategyType](./literals.md#messageselectionstrategytype) 
+3. See [:material-code-brackets: PromptAttemptType](./literals.md#promptattempttype) [:material-code-braces: PromptAttemptSpecificationTypeDef](./type_defs.md#promptattemptspecificationtypedef) 
 ## ResponseSpecificationTypeDef
 
 ```python title="Usage Example"

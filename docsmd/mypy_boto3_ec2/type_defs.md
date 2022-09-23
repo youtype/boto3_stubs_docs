@@ -36810,6 +36810,7 @@ class FleetLaunchTemplateOverridesRequestTypeDef(TypedDict):
     Priority: NotRequired[float],
     Placement: NotRequired[PlacementTypeDef],  # (2)
     InstanceRequirements: NotRequired[InstanceRequirementsRequestTypeDef],  # (3)
+    ImageId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
@@ -36909,6 +36910,7 @@ class FleetLaunchTemplateOverridesTypeDef(TypedDict):
     Priority: NotRequired[float],
     Placement: NotRequired[PlacementResponseTypeDef],  # (2)
     InstanceRequirements: NotRequired[InstanceRequirementsTypeDef],  # (3)
+    ImageId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 

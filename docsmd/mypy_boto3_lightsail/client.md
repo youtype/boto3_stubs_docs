@@ -4848,6 +4848,43 @@ parent.update_domain_entry(**kwargs)
 
 1. See [:material-code-braces: UpdateDomainEntryRequestRequestTypeDef](./type_defs.md#updatedomainentryrequestrequesttypedef) 
 
+### update\_instance\_metadata\_options
+
+Modifies the Amazon Lightsail instance metadata parameters on a running or
+stopped instance.
+
+Type annotations and code completion for `#!python boto3.client("lightsail").update_instance_metadata_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_instance_metadata_options)
+
+```python title="Method definition"
+def update_instance_metadata_options(
+    self,
+    *,
+    instanceName: str,
+    httpTokens: HttpTokensType = ...,  # (1)
+    httpEndpoint: HttpEndpointType = ...,  # (2)
+    httpPutResponseHopLimit: int = ...,
+    httpProtocolIpv6: HttpProtocolIpv6Type = ...,  # (3)
+) -> UpdateInstanceMetadataOptionsResultTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: HttpTokensType](./literals.md#httptokenstype) 
+2. See [:material-code-brackets: HttpEndpointType](./literals.md#httpendpointtype) 
+3. See [:material-code-brackets: HttpProtocolIpv6Type](./literals.md#httpprotocolipv6type) 
+4. See [:material-code-braces: UpdateInstanceMetadataOptionsResultTypeDef](./type_defs.md#updateinstancemetadataoptionsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateInstanceMetadataOptionsRequestRequestTypeDef = {  # (1)
+    "instanceName": ...,
+}
+
+parent.update_instance_metadata_options(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateInstanceMetadataOptionsRequestRequestTypeDef](./type_defs.md#updateinstancemetadataoptionsrequestrequesttypedef) 
+
 ### update\_load\_balancer\_attribute
 
 Updates the specified attribute for a load balancer.

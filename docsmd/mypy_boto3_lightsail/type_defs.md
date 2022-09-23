@@ -2777,6 +2777,30 @@ class InstanceHealthSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InstanceHealthStateType](./literals.md#instancehealthstatetype) 
 2. See [:material-code-brackets: InstanceHealthReasonType](./literals.md#instancehealthreasontype) 
+## InstanceMetadataOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import InstanceMetadataOptionsTypeDef
+
+def get_value() -> InstanceMetadataOptionsTypeDef:
+    return {
+        "state": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceMetadataOptionsTypeDef(TypedDict):
+    state: NotRequired[InstanceMetadataStateType],  # (1)
+    httpTokens: NotRequired[HttpTokensType],  # (2)
+    httpEndpoint: NotRequired[HttpEndpointType],  # (3)
+    httpPutResponseHopLimit: NotRequired[int],
+    httpProtocolIpv6: NotRequired[HttpProtocolIpv6Type],  # (4)
+```
+
+1. See [:material-code-brackets: InstanceMetadataStateType](./literals.md#instancemetadatastatetype) 
+2. See [:material-code-brackets: HttpTokensType](./literals.md#httptokenstype) 
+3. See [:material-code-brackets: HttpEndpointType](./literals.md#httpendpointtype) 
+4. See [:material-code-brackets: HttpProtocolIpv6Type](./literals.md#httpprotocolipv6type) 
 ## InstancePortInfoTypeDef
 
 ```python title="Usage Example"
@@ -3289,6 +3313,29 @@ class UpdateDistributionBundleRequestRequestTypeDef(TypedDict):
     bundleId: NotRequired[str],
 ```
 
+## UpdateInstanceMetadataOptionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import UpdateInstanceMetadataOptionsRequestRequestTypeDef
+
+def get_value() -> UpdateInstanceMetadataOptionsRequestRequestTypeDef:
+    return {
+        "instanceName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateInstanceMetadataOptionsRequestRequestTypeDef(TypedDict):
+    instanceName: str,
+    httpTokens: NotRequired[HttpTokensType],  # (1)
+    httpEndpoint: NotRequired[HttpEndpointType],  # (2)
+    httpPutResponseHopLimit: NotRequired[int],
+    httpProtocolIpv6: NotRequired[HttpProtocolIpv6Type],  # (3)
+```
+
+1. See [:material-code-brackets: HttpTokensType](./literals.md#httptokenstype) 
+2. See [:material-code-brackets: HttpEndpointType](./literals.md#httpendpointtype) 
+3. See [:material-code-brackets: HttpProtocolIpv6Type](./literals.md#httpprotocolipv6type) 
 ## UpdateLoadBalancerAttributeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7242,6 +7289,26 @@ class UpdateDomainEntryResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: OperationTypeDef](./type_defs.md#operationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateInstanceMetadataOptionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import UpdateInstanceMetadataOptionsResultTypeDef
+
+def get_value() -> UpdateInstanceMetadataOptionsResultTypeDef:
+    return {
+        "operation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateInstanceMetadataOptionsResultTypeDef(TypedDict):
+    operation: OperationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OperationTypeDef](./type_defs.md#operationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLoadBalancerAttributeResultTypeDef
 
 ```python title="Usage Example"
@@ -8192,6 +8259,7 @@ class InstanceTypeDef(TypedDict):
     state: NotRequired[InstanceStateTypeDef],  # (8)
     username: NotRequired[str],
     sshKeyName: NotRequired[str],
+    metadataOptions: NotRequired[InstanceMetadataOptionsTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef) 
@@ -8202,6 +8270,7 @@ class InstanceTypeDef(TypedDict):
 6. See [:material-code-braces: InstanceHardwareTypeDef](./type_defs.md#instancehardwaretypedef) 
 7. See [:material-code-braces: InstanceNetworkingTypeDef](./type_defs.md#instancenetworkingtypedef) 
 8. See [:material-code-braces: InstanceStateTypeDef](./type_defs.md#instancestatetypedef) 
+9. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
 ## GetInstanceSnapshotResultTypeDef
 
 ```python title="Usage Example"

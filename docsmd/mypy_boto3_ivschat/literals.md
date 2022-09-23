@@ -409,11 +409,15 @@ ResourceServiceName = Literal[
 from mypy_boto3_ivschat.literals import RegionName
 
 def get_value() -> RegionName:
-    return "eu-west-1"
+    return "ap-northeast-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "eu-central-1",
     "eu-west-1",
     "us-east-1",
     "us-west-2",

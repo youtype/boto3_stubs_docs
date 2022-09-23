@@ -762,6 +762,51 @@ HeaderEnumType = Literal[
     "Referer",
 ]
 ```
+## HttpEndpointType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import HttpEndpointType
+
+def get_value() -> HttpEndpointType:
+    return "disabled"
+```
+
+```python title="Definition"
+HttpEndpointType = Literal[
+    "disabled",
+    "enabled",
+]
+```
+## HttpProtocolIpv6Type
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import HttpProtocolIpv6Type
+
+def get_value() -> HttpProtocolIpv6Type:
+    return "disabled"
+```
+
+```python title="Definition"
+HttpProtocolIpv6Type = Literal[
+    "disabled",
+    "enabled",
+]
+```
+## HttpTokensType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import HttpTokensType
+
+def get_value() -> HttpTokensType:
+    return "optional"
+```
+
+```python title="Definition"
+HttpTokensType = Literal[
+    "optional",
+    "required",
+]
+```
 ## InstanceAccessProtocolType
 
 ```python title="Usage Example"
@@ -820,6 +865,21 @@ InstanceHealthStateType = Literal[
     "unused",
 ]
 ```
+## InstanceMetadataStateType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import InstanceMetadataStateType
+
+def get_value() -> InstanceMetadataStateType:
+    return "applied"
+```
+
+```python title="Definition"
+InstanceMetadataStateType = Literal[
+    "applied",
+    "pending",
+]
+```
 ## InstanceMetricNameType
 
 ```python title="Usage Example"
@@ -834,6 +894,7 @@ InstanceMetricNameType = Literal[
     "BurstCapacityPercentage",
     "BurstCapacityTime",
     "CPUUtilization",
+    "MetadataNoToken",
     "NetworkIn",
     "NetworkOut",
     "StatusCheckFailed",
@@ -1276,6 +1337,7 @@ OperationTypeType = Literal[
     "UpdateDistribution",
     "UpdateDistributionBundle",
     "UpdateDomainEntry",
+    "UpdateInstanceMetadataOptions",
     "UpdateLoadBalancerAttribute",
     "UpdateRelationalDatabase",
     "UpdateRelationalDatabaseParameters",

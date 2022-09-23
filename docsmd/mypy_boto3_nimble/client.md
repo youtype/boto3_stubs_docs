@@ -1362,7 +1362,7 @@ parent.start_streaming_session(**kwargs)
 
 ### start\_studio\_sso\_configuration\_repair
 
-Repairs the Amazon Web Services SSO configuration for a given studio.
+Repairs the IAM Identity Center configuration for a given studio.
 
 Type annotations and code completion for `#!python boto3.client("nimble").start_studio_sso_configuration_repair` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)

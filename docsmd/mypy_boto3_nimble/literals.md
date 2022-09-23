@@ -99,6 +99,8 @@ LaunchProfileStatusCodeType = Literal[
     "ENCRYPTION_KEY_ACCESS_DENIED",
     "ENCRYPTION_KEY_NOT_FOUND",
     "INTERNAL_ERROR",
+    "INVALID_INSTANCE_TYPES_PROVIDED",
+    "INVALID_SUBNETS_COMBINATION",
     "INVALID_SUBNETS_PROVIDED",
     "LAUNCH_PROFILE_CREATE_IN_PROGRESS",
     "LAUNCH_PROFILE_CREATED",
@@ -398,17 +400,24 @@ StreamingImageStatusCodeType = Literal[
 from mypy_boto3_nimble.literals import StreamingInstanceTypeType
 
 def get_value() -> StreamingInstanceTypeType:
-    return "g4dn.12xlarge"
+    return "g3.4xlarge"
 ```
 
 ```python title="Definition"
 StreamingInstanceTypeType = Literal[
+    "g3.4xlarge",
+    "g3s.xlarge",
     "g4dn.12xlarge",
     "g4dn.16xlarge",
     "g4dn.2xlarge",
     "g4dn.4xlarge",
     "g4dn.8xlarge",
     "g4dn.xlarge",
+    "g5.16xlarge",
+    "g5.2xlarge",
+    "g5.4xlarge",
+    "g5.8xlarge",
+    "g5.xlarge",
 ]
 ```
 ## StreamingSessionDeletedWaiterName

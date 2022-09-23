@@ -217,6 +217,7 @@ RuntimeType = Literal[
     "CORRETTO_8",
     "NODEJS_12",
     "NODEJS_14",
+    "NODEJS_16",
     "PYTHON_3",
 ]
 ```

@@ -697,6 +697,25 @@ ObfuscationSettingTypeType = Literal[
     "None",
 ]
 ```
+## PromptAttemptType
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.literals import PromptAttemptType
+
+def get_value() -> PromptAttemptType:
+    return "Initial"
+```
+
+```python title="Definition"
+PromptAttemptType = Literal[
+    "Initial",
+    "Retry1",
+    "Retry2",
+    "Retry3",
+    "Retry4",
+    "Retry5",
+]
+```
 ## SearchOrderType
 
 ```python title="Usage Example"
