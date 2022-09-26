@@ -4734,6 +4734,7 @@ ServiceName = Literal[
     "iotevents",
     "iotevents-data",
     "iotfleethub",
+    "iotfleetwise",
     "iotsecuretunneling",
     "iotsitewise",
     "iotthingsgraph",

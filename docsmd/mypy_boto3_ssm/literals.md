@@ -1019,6 +1019,21 @@ ExecutionModeType = Literal[
     "Interactive",
 ]
 ```
+## ExternalAlarmStateType
+
+```python title="Usage Example"
+from mypy_boto3_ssm.literals import ExternalAlarmStateType
+
+def get_value() -> ExternalAlarmStateType:
+    return "ALARM"
+```
+
+```python title="Definition"
+ExternalAlarmStateType = Literal[
+    "ALARM",
+    "UNKNOWN",
+]
+```
 ## FaultType
 
 ```python title="Usage Example"
@@ -2325,6 +2340,7 @@ ServiceName = Literal[
     "iotevents",
     "iotevents-data",
     "iotfleethub",
+    "iotfleetwise",
     "iotsecuretunneling",
     "iotsitewise",
     "iotthingsgraph",

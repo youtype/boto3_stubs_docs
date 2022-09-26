@@ -369,6 +369,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-iotfleethub](./mypy_boto3_iotfleethub/README.md) for [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub) service
 
+- [mypy-boto3-iotfleetwise](./mypy_boto3_iotfleetwise/README.md) for [IoTFleetWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleetwise.html#IoTFleetWise) service
+
 - [mypy-boto3-iotsecuretunneling](./mypy_boto3_iotsecuretunneling/README.md) for [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling) service
 
 - [mypy-boto3-iotsitewise](./mypy_boto3_iotsitewise/README.md) for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise) service

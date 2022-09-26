@@ -401,7 +401,8 @@ def create_association(
     ScheduleOffset: int = ...,
     TargetMaps: Sequence[Mapping[str, Sequence[str]]] = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (6)
-) -> CreateAssociationResultTypeDef:  # (7)
+    AlarmConfiguration: AlarmConfigurationTypeDef = ...,  # (7)
+) -> CreateAssociationResultTypeDef:  # (8)
     ...
 ```
 
@@ -411,7 +412,8 @@ def create_association(
 4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-7. See [:material-code-braces: CreateAssociationResultTypeDef](./type_defs.md#createassociationresulttypedef) 
+7. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+8. See [:material-code-braces: CreateAssociationResultTypeDef](./type_defs.md#createassociationresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3846,7 +3848,8 @@ def register_task_with_maintenance_window(
     Description: str = ...,
     ClientToken: str = ...,
     CutoffBehavior: MaintenanceWindowTaskCutoffBehaviorType = ...,  # (6)
-) -> RegisterTaskWithMaintenanceWindowResultTypeDef:  # (7)
+    AlarmConfiguration: AlarmConfigurationTypeDef = ...,  # (7)
+) -> RegisterTaskWithMaintenanceWindowResultTypeDef:  # (8)
     ...
 ```
 
@@ -3856,7 +3859,8 @@ def register_task_with_maintenance_window(
 4. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
 5. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
 6. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
-7. See [:material-code-braces: RegisterTaskWithMaintenanceWindowResultTypeDef](./type_defs.md#registertaskwithmaintenancewindowresulttypedef) 
+7. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+8. See [:material-code-braces: RegisterTaskWithMaintenanceWindowResultTypeDef](./type_defs.md#registertaskwithmaintenancewindowresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4023,7 +4027,8 @@ def send_command(
     ServiceRoleArn: str = ...,
     NotificationConfig: NotificationConfigTypeDef = ...,  # (3)
     CloudWatchOutputConfig: CloudWatchOutputConfigTypeDef = ...,  # (4)
-) -> SendCommandResultTypeDef:  # (5)
+    AlarmConfiguration: AlarmConfigurationTypeDef = ...,  # (5)
+) -> SendCommandResultTypeDef:  # (6)
     ...
 ```
 
@@ -4031,7 +4036,8 @@ def send_command(
 2. See [:material-code-brackets: DocumentHashTypeType](./literals.md#documenthashtypetype) 
 3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
 4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
-5. See [:material-code-braces: SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+6. See [:material-code-braces: SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4095,7 +4101,8 @@ def start_automation_execution(
     MaxErrors: str = ...,
     TargetLocations: Sequence[TargetLocationTypeDef] = ...,  # (3)
     Tags: Sequence[TagTypeDef] = ...,  # (4)
-) -> StartAutomationExecutionResultTypeDef:  # (5)
+    AlarmConfiguration: AlarmConfigurationTypeDef = ...,  # (5)
+) -> StartAutomationExecutionResultTypeDef:  # (6)
     ...
 ```
 
@@ -4103,7 +4110,8 @@ def start_automation_execution(
 2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 3. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: StartAutomationExecutionResultTypeDef](./type_defs.md#startautomationexecutionresulttypedef) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+6. See [:material-code-braces: StartAutomationExecutionResultTypeDef](./type_defs.md#startautomationexecutionresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4314,7 +4322,8 @@ def update_association(
     TargetLocations: Sequence[TargetLocationTypeDef] = ...,  # (5)
     ScheduleOffset: int = ...,
     TargetMaps: Sequence[Mapping[str, Sequence[str]]] = ...,
-) -> UpdateAssociationResultTypeDef:  # (6)
+    AlarmConfiguration: AlarmConfigurationTypeDef = ...,  # (6)
+) -> UpdateAssociationResultTypeDef:  # (7)
     ...
 ```
 
@@ -4323,7 +4332,8 @@ def update_association(
 3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
 4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-6. See [:material-code-braces: UpdateAssociationResultTypeDef](./type_defs.md#updateassociationresulttypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+7. See [:material-code-braces: UpdateAssociationResultTypeDef](./type_defs.md#updateassociationresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4578,7 +4588,8 @@ def update_maintenance_window_task(
     Description: str = ...,
     Replace: bool = ...,
     CutoffBehavior: MaintenanceWindowTaskCutoffBehaviorType = ...,  # (5)
-) -> UpdateMaintenanceWindowTaskResultTypeDef:  # (6)
+    AlarmConfiguration: AlarmConfigurationTypeDef = ...,  # (6)
+) -> UpdateMaintenanceWindowTaskResultTypeDef:  # (7)
     ...
 ```
 
@@ -4587,7 +4598,8 @@ def update_maintenance_window_task(
 3. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
 4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
 5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
-6. See [:material-code-braces: UpdateMaintenanceWindowTaskResultTypeDef](./type_defs.md#updatemaintenancewindowtaskresulttypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+7. See [:material-code-braces: UpdateMaintenanceWindowTaskResultTypeDef](./type_defs.md#updatemaintenancewindowtaskresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

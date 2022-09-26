@@ -42,6 +42,41 @@ class TagTypeDef(TypedDict):
     Value: str,
 ```
 
+## AlarmTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import AlarmTypeDef
+
+def get_value() -> AlarmTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AlarmTypeDef(TypedDict):
+    Name: str,
+```
+
+## AlarmStateInformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import AlarmStateInformationTypeDef
+
+def get_value() -> AlarmStateInformationTypeDef:
+    return {
+        "Name": ...,
+        "State": ...,
+    }
+```
+
+```python title="Definition"
+class AlarmStateInformationTypeDef(TypedDict):
+    Name: str,
+    State: ExternalAlarmStateType,  # (1)
+```
+
+1. See [:material-code-brackets: ExternalAlarmStateType](./literals.md#externalalarmstatetype) 
 ## AssociateOpsItemRelatedItemRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -223,29 +258,6 @@ class AssociationExecutionTargetsFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AssociationExecutionTargetsFilterKeyType](./literals.md#associationexecutiontargetsfilterkeytype) 
-## AssociationExecutionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import AssociationExecutionTypeDef
-
-def get_value() -> AssociationExecutionTypeDef:
-    return {
-        "AssociationId": ...,
-    }
-```
-
-```python title="Definition"
-class AssociationExecutionTypeDef(TypedDict):
-    AssociationId: NotRequired[str],
-    AssociationVersion: NotRequired[str],
-    ExecutionId: NotRequired[str],
-    Status: NotRequired[str],
-    DetailedStatus: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    LastExecutionDate: NotRequired[datetime],
-    ResourceCountByStatus: NotRequired[str],
-```
-
 ## AssociationFilterTypeDef
 
 ```python title="Usage Example"
@@ -1390,31 +1402,6 @@ class MaintenanceWindowExecutionTaskInvocationIdentityTypeDef(TypedDict):
 
 1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
 2. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
-## MaintenanceWindowExecutionTaskIdentityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTaskIdentityTypeDef
-
-def get_value() -> MaintenanceWindowExecutionTaskIdentityTypeDef:
-    return {
-        "WindowExecutionId": ...,
-    }
-```
-
-```python title="Definition"
-class MaintenanceWindowExecutionTaskIdentityTypeDef(TypedDict):
-    WindowExecutionId: NotRequired[str],
-    TaskExecutionId: NotRequired[str],
-    Status: NotRequired[MaintenanceWindowExecutionStatusType],  # (1)
-    StatusDetails: NotRequired[str],
-    StartTime: NotRequired[datetime],
-    EndTime: NotRequired[datetime],
-    TaskArn: NotRequired[str],
-    TaskType: NotRequired[MaintenanceWindowTaskTypeType],  # (2)
-```
-
-1. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
-2. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
 ## MaintenanceWindowExecutionTypeDef
 
 ```python title="Usage Example"
@@ -3263,6 +3250,24 @@ class PutParameterRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: ParameterTypeType](./literals.md#parametertypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-brackets: ParameterTierType](./literals.md#parametertiertype) 
+## AlarmConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import AlarmConfigurationTypeDef
+
+def get_value() -> AlarmConfigurationTypeDef:
+    return {
+        "Alarms": ...,
+    }
+```
+
+```python title="Definition"
+class AlarmConfigurationTypeDef(TypedDict):
+    Alarms: Sequence[AlarmTypeDef],  # (1)
+    IgnorePollAlarmFailure: NotRequired[bool],
+```
+
+1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
 ## AssociateOpsItemRelatedItemResponseTypeDef
 
 ```python title="Usage Example"
@@ -4364,37 +4369,6 @@ class RunbookTypeDef(TypedDict):
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 2. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-## StartAutomationExecutionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import StartAutomationExecutionRequestRequestTypeDef
-
-def get_value() -> StartAutomationExecutionRequestRequestTypeDef:
-    return {
-        "DocumentName": ...,
-    }
-```
-
-```python title="Definition"
-class StartAutomationExecutionRequestRequestTypeDef(TypedDict):
-    DocumentName: str,
-    DocumentVersion: NotRequired[str],
-    Parameters: NotRequired[Mapping[str, Sequence[str]]],
-    ClientToken: NotRequired[str],
-    Mode: NotRequired[ExecutionModeType],  # (1)
-    TargetParameterName: NotRequired[str],
-    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
-    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (3)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-```
-
-1. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
-2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-3. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateMaintenanceWindowTargetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4516,28 +4490,6 @@ class DescribeAssociationExecutionTargetsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef) 
-## DescribeAssociationExecutionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsResultTypeDef
-
-def get_value() -> DescribeAssociationExecutionsResultTypeDef:
-    return {
-        "AssociationExecutions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAssociationExecutionsResultTypeDef(TypedDict):
-    AssociationExecutions: List[AssociationExecutionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AssociationExecutionTypeDef](./type_defs.md#associationexecutiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAssociationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4733,49 +4685,6 @@ class CommandInvocationTypeDef(TypedDict):
 2. See [:material-code-braces: CommandPluginTypeDef](./type_defs.md#commandplugintypedef) 
 3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
 4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
-## CommandTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import CommandTypeDef
-
-def get_value() -> CommandTypeDef:
-    return {
-        "CommandId": ...,
-    }
-```
-
-```python title="Definition"
-class CommandTypeDef(TypedDict):
-    CommandId: NotRequired[str],
-    DocumentName: NotRequired[str],
-    DocumentVersion: NotRequired[str],
-    Comment: NotRequired[str],
-    ExpiresAfter: NotRequired[datetime],
-    Parameters: NotRequired[Dict[str, List[str]]],
-    InstanceIds: NotRequired[List[str]],
-    Targets: NotRequired[List[TargetTypeDef]],  # (1)
-    RequestedDateTime: NotRequired[datetime],
-    Status: NotRequired[CommandStatusType],  # (2)
-    StatusDetails: NotRequired[str],
-    OutputS3Region: NotRequired[str],
-    OutputS3BucketName: NotRequired[str],
-    OutputS3KeyPrefix: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    TargetCount: NotRequired[int],
-    CompletedCount: NotRequired[int],
-    ErrorCount: NotRequired[int],
-    DeliveryTimedOutCount: NotRequired[int],
-    ServiceRole: NotRequired[str],
-    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
-    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (4)
-    TimeoutSeconds: NotRequired[int],
-```
-
-1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-2. See [:material-code-brackets: CommandStatusType](./literals.md#commandstatustype) 
-3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
-4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
 ## MaintenanceWindowRunCommandParametersTypeDef
 
 ```python title="Usage Example"
@@ -4805,42 +4714,6 @@ class MaintenanceWindowRunCommandParametersTypeDef(TypedDict):
 1. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
 2. See [:material-code-brackets: DocumentHashTypeType](./literals.md#documenthashtypetype) 
 3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
-## SendCommandRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import SendCommandRequestRequestTypeDef
-
-def get_value() -> SendCommandRequestRequestTypeDef:
-    return {
-        "DocumentName": ...,
-    }
-```
-
-```python title="Definition"
-class SendCommandRequestRequestTypeDef(TypedDict):
-    DocumentName: str,
-    InstanceIds: NotRequired[Sequence[str]],
-    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
-    DocumentVersion: NotRequired[str],
-    DocumentHash: NotRequired[str],
-    DocumentHashType: NotRequired[DocumentHashTypeType],  # (2)
-    TimeoutSeconds: NotRequired[int],
-    Comment: NotRequired[str],
-    Parameters: NotRequired[Mapping[str, Sequence[str]]],
-    OutputS3Region: NotRequired[str],
-    OutputS3BucketName: NotRequired[str],
-    OutputS3KeyPrefix: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    ServiceRoleArn: NotRequired[str],
-    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
-    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-2. See [:material-code-brackets: DocumentHashTypeType](./literals.md#documenthashtypetype) 
-3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
-4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
 ## ComplianceItemTypeDef
 
 ```python title="Usage Example"
@@ -6488,28 +6361,6 @@ class DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: MaintenanceWindowExecutionTaskInvocationIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskinvocationidentitytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeMaintenanceWindowExecutionTasksResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksResultTypeDef
-
-def get_value() -> DescribeMaintenanceWindowExecutionTasksResultTypeDef:
-    return {
-        "WindowExecutionTaskIdentities": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMaintenanceWindowExecutionTasksResultTypeDef(TypedDict):
-    WindowExecutionTaskIdentities: List[MaintenanceWindowExecutionTaskIdentityTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MaintenanceWindowExecutionTaskIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskidentitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMaintenanceWindowExecutionsResultTypeDef
 
 ```python title="Usage Example"
@@ -7153,86 +7004,6 @@ class GetInventoryRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
 2. See [:material-code-braces: InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef) 
 3. See [:material-code-braces: ResultAttributeTypeDef](./type_defs.md#resultattributetypedef) 
-## GetMaintenanceWindowExecutionTaskResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskResultTypeDef
-
-def get_value() -> GetMaintenanceWindowExecutionTaskResultTypeDef:
-    return {
-        "WindowExecutionId": ...,
-        "TaskExecutionId": ...,
-        "TaskArn": ...,
-        "ServiceRole": ...,
-        "Type": ...,
-        "TaskParameters": ...,
-        "Priority": ...,
-        "MaxConcurrency": ...,
-        "MaxErrors": ...,
-        "Status": ...,
-        "StatusDetails": ...,
-        "StartTime": ...,
-        "EndTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMaintenanceWindowExecutionTaskResultTypeDef(TypedDict):
-    WindowExecutionId: str,
-    TaskExecutionId: str,
-    TaskArn: str,
-    ServiceRole: str,
-    Type: MaintenanceWindowTaskTypeType,  # (1)
-    TaskParameters: List[Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (2)
-    Priority: int,
-    MaxConcurrency: str,
-    MaxErrors: str,
-    Status: MaintenanceWindowExecutionStatusType,  # (3)
-    StatusDetails: str,
-    StartTime: datetime,
-    EndTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
-2. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
-3. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MaintenanceWindowTaskTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskTypeDef
-
-def get_value() -> MaintenanceWindowTaskTypeDef:
-    return {
-        "WindowId": ...,
-    }
-```
-
-```python title="Definition"
-class MaintenanceWindowTaskTypeDef(TypedDict):
-    WindowId: NotRequired[str],
-    WindowTaskId: NotRequired[str],
-    TaskArn: NotRequired[str],
-    Type: NotRequired[MaintenanceWindowTaskTypeType],  # (1)
-    Targets: NotRequired[List[TargetTypeDef]],  # (2)
-    TaskParameters: NotRequired[Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (3)
-    Priority: NotRequired[int],
-    LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (4)
-    ServiceRoleArn: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    CutoffBehavior: NotRequired[MaintenanceWindowTaskCutoffBehaviorType],  # (5)
-```
-
-1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
-2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-3. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
-4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
-5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
 ## OpsAggregatorTypeDef
 
 ```python title="Usage Example"
@@ -7935,6 +7706,268 @@ class DescribeActivationsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ActivationTypeDef](./type_defs.md#activationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociationExecutionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import AssociationExecutionTypeDef
+
+def get_value() -> AssociationExecutionTypeDef:
+    return {
+        "AssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class AssociationExecutionTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    ExecutionId: NotRequired[str],
+    Status: NotRequired[str],
+    DetailedStatus: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    LastExecutionDate: NotRequired[datetime],
+    ResourceCountByStatus: NotRequired[str],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (1)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+2. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+## CommandTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import CommandTypeDef
+
+def get_value() -> CommandTypeDef:
+    return {
+        "CommandId": ...,
+    }
+```
+
+```python title="Definition"
+class CommandTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    DocumentName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Comment: NotRequired[str],
+    ExpiresAfter: NotRequired[datetime],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    InstanceIds: NotRequired[List[str]],
+    Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    RequestedDateTime: NotRequired[datetime],
+    Status: NotRequired[CommandStatusType],  # (2)
+    StatusDetails: NotRequired[str],
+    OutputS3Region: NotRequired[str],
+    OutputS3BucketName: NotRequired[str],
+    OutputS3KeyPrefix: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    TargetCount: NotRequired[int],
+    CompletedCount: NotRequired[int],
+    ErrorCount: NotRequired[int],
+    DeliveryTimedOutCount: NotRequired[int],
+    ServiceRole: NotRequired[str],
+    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
+    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (4)
+    TimeoutSeconds: NotRequired[int],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (5)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: CommandStatusType](./literals.md#commandstatustype) 
+3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
+4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+6. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+## GetMaintenanceWindowExecutionTaskResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskResultTypeDef
+
+def get_value() -> GetMaintenanceWindowExecutionTaskResultTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskExecutionId": ...,
+        "TaskArn": ...,
+        "ServiceRole": ...,
+        "Type": ...,
+        "TaskParameters": ...,
+        "Priority": ...,
+        "MaxConcurrency": ...,
+        "MaxErrors": ...,
+        "Status": ...,
+        "StatusDetails": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "AlarmConfiguration": ...,
+        "TriggeredAlarms": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMaintenanceWindowExecutionTaskResultTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskExecutionId: str,
+    TaskArn: str,
+    ServiceRole: str,
+    Type: MaintenanceWindowTaskTypeType,  # (1)
+    TaskParameters: List[Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (2)
+    Priority: int,
+    MaxConcurrency: str,
+    MaxErrors: str,
+    Status: MaintenanceWindowExecutionStatusType,  # (3)
+    StatusDetails: str,
+    StartTime: datetime,
+    EndTime: datetime,
+    AlarmConfiguration: AlarmConfigurationTypeDef,  # (4)
+    TriggeredAlarms: List[AlarmStateInformationTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+2. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+3. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
+4. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+5. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MaintenanceWindowExecutionTaskIdentityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTaskIdentityTypeDef
+
+def get_value() -> MaintenanceWindowExecutionTaskIdentityTypeDef:
+    return {
+        "WindowExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class MaintenanceWindowExecutionTaskIdentityTypeDef(TypedDict):
+    WindowExecutionId: NotRequired[str],
+    TaskExecutionId: NotRequired[str],
+    Status: NotRequired[MaintenanceWindowExecutionStatusType],  # (1)
+    StatusDetails: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    TaskArn: NotRequired[str],
+    TaskType: NotRequired[MaintenanceWindowTaskTypeType],  # (2)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (3)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
+2. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+3. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+4. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+## MaintenanceWindowTaskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskTypeDef
+
+def get_value() -> MaintenanceWindowTaskTypeDef:
+    return {
+        "WindowId": ...,
+    }
+```
+
+```python title="Definition"
+class MaintenanceWindowTaskTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    WindowTaskId: NotRequired[str],
+    TaskArn: NotRequired[str],
+    Type: NotRequired[MaintenanceWindowTaskTypeType],  # (1)
+    Targets: NotRequired[List[TargetTypeDef]],  # (2)
+    TaskParameters: NotRequired[Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (3)
+    Priority: NotRequired[int],
+    LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (4)
+    ServiceRoleArn: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CutoffBehavior: NotRequired[MaintenanceWindowTaskCutoffBehaviorType],  # (5)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
+```
+
+1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+## SendCommandRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import SendCommandRequestRequestTypeDef
+
+def get_value() -> SendCommandRequestRequestTypeDef:
+    return {
+        "DocumentName": ...,
+    }
+```
+
+```python title="Definition"
+class SendCommandRequestRequestTypeDef(TypedDict):
+    DocumentName: str,
+    InstanceIds: NotRequired[Sequence[str]],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    DocumentVersion: NotRequired[str],
+    DocumentHash: NotRequired[str],
+    DocumentHashType: NotRequired[DocumentHashTypeType],  # (2)
+    TimeoutSeconds: NotRequired[int],
+    Comment: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    OutputS3Region: NotRequired[str],
+    OutputS3BucketName: NotRequired[str],
+    OutputS3KeyPrefix: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    ServiceRoleArn: NotRequired[str],
+    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
+    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (4)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: DocumentHashTypeType](./literals.md#documenthashtypetype) 
+3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
+4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+## StartAutomationExecutionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import StartAutomationExecutionRequestRequestTypeDef
+
+def get_value() -> StartAutomationExecutionRequestRequestTypeDef:
+    return {
+        "DocumentName": ...,
+    }
+```
+
+```python title="Definition"
+class StartAutomationExecutionRequestRequestTypeDef(TypedDict):
+    DocumentName: str,
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    ClientToken: NotRequired[str],
+    Mode: NotRequired[ExecutionModeType],  # (1)
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
+    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## ListAssociationsResultTypeDef
 
 ```python title="Usage Example"
@@ -8014,9 +8047,11 @@ class AutomationExecutionMetadataTypeDef(TypedDict):
     MaxErrors: NotRequired[str],
     Target: NotRequired[str],
     AutomationType: NotRequired[AutomationTypeType],  # (5)
-    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (6)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (7)
+    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (8)
     ScheduledTime: NotRequired[datetime],
-    Runbooks: NotRequired[List[RunbookTypeDef]],  # (7)
+    Runbooks: NotRequired[List[RunbookTypeDef]],  # (9)
     OpsItemId: NotRequired[str],
     AssociationId: NotRequired[str],
     ChangeRequestName: NotRequired[str],
@@ -8027,8 +8062,10 @@ class AutomationExecutionMetadataTypeDef(TypedDict):
 3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 4. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
 5. See [:material-code-brackets: AutomationTypeType](./literals.md#automationtypetype) 
-6. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
-7. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+7. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+8. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
+9. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
 ## StartChangeRequestExecutionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8101,48 +8138,6 @@ class ListCommandInvocationsResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CommandInvocationTypeDef](./type_defs.md#commandinvocationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCommandsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import ListCommandsResultTypeDef
-
-def get_value() -> ListCommandsResultTypeDef:
-    return {
-        "Commands": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCommandsResultTypeDef(TypedDict):
-    Commands: List[CommandTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## SendCommandResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import SendCommandResultTypeDef
-
-def get_value() -> SendCommandResultTypeDef:
-    return {
-        "Command": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SendCommandResultTypeDef(TypedDict):
-    Command: CommandTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MaintenanceWindowTaskInvocationParametersTypeDef
 
@@ -8480,9 +8475,11 @@ class AutomationExecutionTypeDef(TypedDict):
     Target: NotRequired[str],
     TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (6)
     ProgressCounters: NotRequired[ProgressCountersTypeDef],  # (7)
-    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (8)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (8)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (9)
+    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (10)
     ScheduledTime: NotRequired[datetime],
-    Runbooks: NotRequired[List[RunbookTypeDef]],  # (9)
+    Runbooks: NotRequired[List[RunbookTypeDef]],  # (11)
     OpsItemId: NotRequired[str],
     AssociationId: NotRequired[str],
     ChangeRequestName: NotRequired[str],
@@ -8495,8 +8492,10 @@ class AutomationExecutionTypeDef(TypedDict):
 5. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
 6. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 7. See [:material-code-braces: ProgressCountersTypeDef](./type_defs.md#progresscounterstypedef) 
-8. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
-9. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
+8. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+9. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+10. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
+11. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
 ## DescribeAutomationStepExecutionsResultTypeDef
 
 ```python title="Usage Example"
@@ -8539,28 +8538,6 @@ class InventoryAggregatorTypeDef(TypedDict):
 
 1. See [:material-code-braces: InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef) 
 2. See [:material-code-braces: InventoryGroupTypeDef](./type_defs.md#inventorygrouptypedef) 
-## DescribeMaintenanceWindowTasksResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksResultTypeDef
-
-def get_value() -> DescribeMaintenanceWindowTasksResultTypeDef:
-    return {
-        "Tasks": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeMaintenanceWindowTasksResultTypeDef(TypedDict):
-    Tasks: List[MaintenanceWindowTaskTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MaintenanceWindowTaskTypeDef](./type_defs.md#maintenancewindowtasktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInstanceInformationResultTypeDef
 
 ```python title="Usage Example"
@@ -8622,6 +8599,8 @@ class AssociationDescriptionTypeDef(TypedDict):
     TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (7)
     ScheduleOffset: NotRequired[int],
     TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (8)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (9)
 ```
 
 1. See [:material-code-braces: AssociationStatusTypeDef](./type_defs.md#associationstatustypedef) 
@@ -8631,6 +8610,8 @@ class AssociationDescriptionTypeDef(TypedDict):
 5. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
 6. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 7. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+8. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+9. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
 ## AssociationVersionInfoTypeDef
 
 ```python title="Usage Example"
@@ -8701,6 +8682,7 @@ class CreateAssociationBatchRequestEntryTypeDef(TypedDict):
     TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
     ScheduleOffset: NotRequired[int],
     TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -8708,6 +8690,7 @@ class CreateAssociationBatchRequestEntryTypeDef(TypedDict):
 3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
 4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## CreateAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8740,6 +8723,7 @@ class CreateAssociationRequestRequestTypeDef(TypedDict):
     ScheduleOffset: NotRequired[int],
     TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (7)
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -8748,6 +8732,7 @@ class CreateAssociationRequestRequestTypeDef(TypedDict):
 4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## UpdateAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8780,6 +8765,7 @@ class UpdateAssociationRequestRequestTypeDef(TypedDict):
     TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
     ScheduleOffset: NotRequired[int],
     TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
@@ -8787,6 +8773,7 @@ class UpdateAssociationRequestRequestTypeDef(TypedDict):
 3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
 4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
 5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## InstanceAssociationStatusInfoTypeDef
 
 ```python title="Usage Example"
@@ -9105,6 +9092,114 @@ class DescribeSessionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAssociationExecutionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsResultTypeDef
+
+def get_value() -> DescribeAssociationExecutionsResultTypeDef:
+    return {
+        "AssociationExecutions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAssociationExecutionsResultTypeDef(TypedDict):
+    AssociationExecutions: List[AssociationExecutionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AssociationExecutionTypeDef](./type_defs.md#associationexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCommandsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListCommandsResultTypeDef
+
+def get_value() -> ListCommandsResultTypeDef:
+    return {
+        "Commands": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCommandsResultTypeDef(TypedDict):
+    Commands: List[CommandTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendCommandResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import SendCommandResultTypeDef
+
+def get_value() -> SendCommandResultTypeDef:
+    return {
+        "Command": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SendCommandResultTypeDef(TypedDict):
+    Command: CommandTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowExecutionTasksResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowExecutionTasksResultTypeDef:
+    return {
+        "WindowExecutionTaskIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionTasksResultTypeDef(TypedDict):
+    WindowExecutionTaskIdentities: List[MaintenanceWindowExecutionTaskIdentityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowExecutionTaskIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowTasksResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowTasksResultTypeDef:
+    return {
+        "Tasks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowTasksResultTypeDef(TypedDict):
+    Tasks: List[MaintenanceWindowTaskTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowTaskTypeDef](./type_defs.md#maintenancewindowtasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAutomationExecutionsResultTypeDef
 
 ```python title="Usage Example"
@@ -9149,6 +9244,7 @@ def get_value() -> GetMaintenanceWindowTaskResultTypeDef:
         "Name": ...,
         "Description": ...,
         "CutoffBehavior": ...,
+        "AlarmConfiguration": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -9170,7 +9266,8 @@ class GetMaintenanceWindowTaskResultTypeDef(TypedDict):
     Name: str,
     Description: str,
     CutoffBehavior: MaintenanceWindowTaskCutoffBehaviorType,  # (6)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+    AlarmConfiguration: AlarmConfigurationTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -9179,7 +9276,8 @@ class GetMaintenanceWindowTaskResultTypeDef(TypedDict):
 4. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
 5. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
 6. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+7. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterTaskWithMaintenanceWindowRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9210,6 +9308,7 @@ class RegisterTaskWithMaintenanceWindowRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
     ClientToken: NotRequired[str],
     CutoffBehavior: NotRequired[MaintenanceWindowTaskCutoffBehaviorType],  # (6)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
@@ -9218,6 +9317,7 @@ class RegisterTaskWithMaintenanceWindowRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
 5. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
 6. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
+7. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## UpdateMaintenanceWindowTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9247,6 +9347,7 @@ class UpdateMaintenanceWindowTaskRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
     Replace: NotRequired[bool],
     CutoffBehavior: NotRequired[MaintenanceWindowTaskCutoffBehaviorType],  # (5)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -9254,6 +9355,7 @@ class UpdateMaintenanceWindowTaskRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
 4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
 5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## UpdateMaintenanceWindowTaskResultTypeDef
 
 ```python title="Usage Example"
@@ -9275,6 +9377,7 @@ def get_value() -> UpdateMaintenanceWindowTaskResultTypeDef:
         "Name": ...,
         "Description": ...,
         "CutoffBehavior": ...,
+        "AlarmConfiguration": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -9295,7 +9398,8 @@ class UpdateMaintenanceWindowTaskResultTypeDef(TypedDict):
     Name: str,
     Description: str,
     CutoffBehavior: MaintenanceWindowTaskCutoffBehaviorType,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+    AlarmConfiguration: AlarmConfigurationTypeDef,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
 ```
 
 1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
@@ -9303,7 +9407,8 @@ class UpdateMaintenanceWindowTaskResultTypeDef(TypedDict):
 3. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
 4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
 5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListComplianceSummariesResultTypeDef
 
 ```python title="Usage Example"
