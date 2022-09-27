@@ -61,7 +61,7 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### associate\_entities\_to\_experience
 
-Grants users or groups in your Amazon Web Services SSO identity source access to
+Grants users or groups in your IAM Identity Center identity source access to
 your Amazon Kendra experience.
 
 Type annotations and code completion for `#!python boto3.client("kendra").associate_entities_to_experience` method.
@@ -96,8 +96,8 @@ parent.associate_entities_to_experience(**kwargs)
 
 ### associate\_personas\_to\_entities
 
-Defines the specific permissions of users or groups in your Amazon Web Services
-SSO identity source with access to your Amazon Kendra experience.
+Defines the specific permissions of users or groups in your IAM Identity Center
+identity source with access to your Amazon Kendra experience.
 
 Type annotations and code completion for `#!python boto3.client("kendra").associate_personas_to_entities` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.associate_personas_to_entities)
@@ -1109,7 +1109,7 @@ parent.describe_thesaurus(**kwargs)
 
 ### disassociate\_entities\_from\_experience
 
-Prevents users or groups in your Amazon Web Services SSO identity source from
+Prevents users or groups in your IAM Identity Center identity source from
 accessing your Amazon Kendra experience.
 
 Type annotations and code completion for `#!python boto3.client("kendra").disassociate_entities_from_experience` method.
@@ -1144,8 +1144,8 @@ parent.disassociate_entities_from_experience(**kwargs)
 
 ### disassociate\_personas\_from\_entities
 
-Removes the specific permissions of users or groups in your Amazon Web Services
-SSO identity source with access to your Amazon Kendra experience.
+Removes the specific permissions of users or groups in your IAM Identity Center
+identity source with access to your Amazon Kendra experience.
 
 Type annotations and code completion for `#!python boto3.client("kendra").disassociate_personas_from_entities` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.disassociate_personas_from_entities)
@@ -1399,7 +1399,7 @@ parent.list_entity_personas(**kwargs)
 
 ### list\_experience\_entities
 
-Lists users or groups in your Amazon Web Services SSO identity source that are
+Lists users or groups in your IAM Identity Center identity source that are
 granted access to your Amazon Kendra experience.
 
 Type annotations and code completion for `#!python boto3.client("kendra").list_experience_entities` method.

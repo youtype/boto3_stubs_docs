@@ -2562,6 +2562,7 @@ class CreateCostCategoryDefinitionRequestRequestTypeDef(TypedDict):
     Name: str,
     RuleVersion: CostCategoryRuleVersionType,  # (1)
     Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    EffectiveStart: NotRequired[str],
     DefaultValue: NotRequired[str],
     SplitChargeRules: NotRequired[Sequence[CostCategorySplitChargeRuleTypeDef]],  # (3)
     ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (4)
@@ -2589,6 +2590,7 @@ class UpdateCostCategoryDefinitionRequestRequestTypeDef(TypedDict):
     CostCategoryArn: str,
     RuleVersion: CostCategoryRuleVersionType,  # (1)
     Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    EffectiveStart: NotRequired[str],
     DefaultValue: NotRequired[str],
     SplitChargeRules: NotRequired[Sequence[CostCategorySplitChargeRuleTypeDef]],  # (3)
 ```

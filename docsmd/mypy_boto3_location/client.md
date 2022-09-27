@@ -1138,6 +1138,38 @@ parent.get_map_tile(**kwargs)
 
 1. See [:material-code-braces: GetMapTileRequestRequestTypeDef](./type_defs.md#getmaptilerequestrequesttypedef) 
 
+### get\_place
+
+Finds a place by its unique ID.
+
+Type annotations and code completion for `#!python boto3.client("location").get_place` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_place)
+
+```python title="Method definition"
+def get_place(
+    self,
+    *,
+    IndexName: str,
+    PlaceId: str,
+    Language: str = ...,
+) -> GetPlaceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetPlaceResponseTypeDef](./type_defs.md#getplaceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPlaceRequestRequestTypeDef = {  # (1)
+    "IndexName": ...,
+    "PlaceId": ...,
+}
+
+parent.get_place(**kwargs)
+```
+
+1. See [:material-code-braces: GetPlaceRequestRequestTypeDef](./type_defs.md#getplacerequestrequesttypedef) 
+
 ### list\_device\_positions
 
 A batch request to retrieve all device positions.

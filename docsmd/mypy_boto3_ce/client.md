@@ -168,6 +168,7 @@ def create_cost_category_definition(
     Name: str,
     RuleVersion: CostCategoryRuleVersionType,  # (1)
     Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    EffectiveStart: str = ...,
     DefaultValue: str = ...,
     SplitChargeRules: Sequence[CostCategorySplitChargeRuleTypeDef] = ...,  # (3)
     ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (4)
@@ -1335,6 +1336,7 @@ def update_cost_category_definition(
     CostCategoryArn: str,
     RuleVersion: CostCategoryRuleVersionType,  # (1)
     Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    EffectiveStart: str = ...,
     DefaultValue: str = ...,
     SplitChargeRules: Sequence[CostCategorySplitChargeRuleTypeDef] = ...,  # (3)
 ) -> UpdateCostCategoryDefinitionResponseTypeDef:  # (4)

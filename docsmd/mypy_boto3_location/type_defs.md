@@ -709,6 +709,25 @@ class GetMapTileRequestRequestTypeDef(TypedDict):
     Z: str,
 ```
 
+## GetPlaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import GetPlaceRequestRequestTypeDef
+
+def get_value() -> GetPlaceRequestRequestTypeDef:
+    return {
+        "IndexName": ...,
+        "PlaceId": ...,
+    }
+```
+
+```python title="Definition"
+class GetPlaceRequestRequestTypeDef(TypedDict):
+    IndexName: str,
+    PlaceId: str,
+    Language: NotRequired[str],
+```
+
 ## LegGeometryTypeDef
 
 ```python title="Usage Example"
@@ -1096,6 +1115,7 @@ def get_value() -> SearchForSuggestionsResultTypeDef:
 ```python title="Definition"
 class SearchForSuggestionsResultTypeDef(TypedDict):
     Text: str,
+    PlaceId: NotRequired[str],
 ```
 
 ## SearchPlaceIndexForPositionRequestRequestTypeDef
@@ -2555,6 +2575,8 @@ class PlaceTypeDef(TypedDict):
     Street: NotRequired[str],
     SubRegion: NotRequired[str],
     TimeZone: NotRequired[TimeZoneTypeDef],  # (2)
+    UnitNumber: NotRequired[str],
+    UnitType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PlaceGeometryTypeDef](./type_defs.md#placegeometrytypedef) 
@@ -2987,6 +3009,26 @@ class CalculateRouteResponseTypeDef(TypedDict):
 1. See [:material-code-braces: LegTypeDef](./type_defs.md#legtypedef) 
 2. See [:material-code-braces: CalculateRouteSummaryTypeDef](./type_defs.md#calculateroutesummarytypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPlaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import GetPlaceResponseTypeDef
+
+def get_value() -> GetPlaceResponseTypeDef:
+    return {
+        "Place": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPlaceResponseTypeDef(TypedDict):
+    Place: PlaceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PlaceTypeDef](./type_defs.md#placetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchForPositionResultTypeDef
 
 ```python title="Usage Example"
@@ -3003,6 +3045,7 @@ def get_value() -> SearchForPositionResultTypeDef:
 class SearchForPositionResultTypeDef(TypedDict):
     Distance: float,
     Place: PlaceTypeDef,  # (1)
+    PlaceId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PlaceTypeDef](./type_defs.md#placetypedef) 
@@ -3021,6 +3064,7 @@ def get_value() -> SearchForTextResultTypeDef:
 class SearchForTextResultTypeDef(TypedDict):
     Place: PlaceTypeDef,  # (1)
     Distance: NotRequired[float],
+    PlaceId: NotRequired[str],
     Relevance: NotRequired[float],
 ```
 
