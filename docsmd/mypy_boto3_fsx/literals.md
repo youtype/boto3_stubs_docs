@@ -144,6 +144,7 @@ def get_value() -> DataRepositoryTaskFilterNameType:
 ```python title="Definition"
 DataRepositoryTaskFilterNameType = Literal[
     "data-repository-association-id",
+    "file-cache-id",
     "file-system-id",
     "task-lifecycle",
 ]
@@ -173,13 +174,15 @@ DataRepositoryTaskLifecycleType = Literal[
 from mypy_boto3_fsx.literals import DataRepositoryTaskTypeType
 
 def get_value() -> DataRepositoryTaskTypeType:
-    return "EXPORT_TO_REPOSITORY"
+    return "AUTO_RELEASE_DATA"
 ```
 
 ```python title="Definition"
 DataRepositoryTaskTypeType = Literal[
+    "AUTO_RELEASE_DATA",
     "EXPORT_TO_REPOSITORY",
     "IMPORT_METADATA_FROM_REPOSITORY",
+    "RELEASE_DATA_FROM_FILESYSTEM",
 ]
 ```
 ## DeleteFileSystemOpenZFSOptionType
@@ -312,6 +315,52 @@ EventTypeType = Literal[
     "NEW",
 ]
 ```
+## FileCacheLifecycleType
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import FileCacheLifecycleType
+
+def get_value() -> FileCacheLifecycleType:
+    return "AVAILABLE"
+```
+
+```python title="Definition"
+FileCacheLifecycleType = Literal[
+    "AVAILABLE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
+## FileCacheLustreDeploymentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import FileCacheLustreDeploymentTypeType
+
+def get_value() -> FileCacheLustreDeploymentTypeType:
+    return "CACHE_1"
+```
+
+```python title="Definition"
+FileCacheLustreDeploymentTypeType = Literal[
+    "CACHE_1",
+]
+```
+## FileCacheTypeType
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import FileCacheTypeType
+
+def get_value() -> FileCacheTypeType:
+    return "LUSTRE"
+```
+
+```python title="Definition"
+FileCacheTypeType = Literal[
+    "LUSTRE",
+]
+```
 ## FileSystemLifecycleType
 
 ```python title="Usage Example"
@@ -377,6 +426,8 @@ def get_value() -> FilterNameType:
 FilterNameType = Literal[
     "backup-type",
     "data-repository-type",
+    "file-cache-id",
+    "file-cache-type",
     "file-system-id",
     "file-system-type",
     "volume-id",
@@ -444,6 +495,20 @@ LustreDeploymentTypeType = Literal[
     "PERSISTENT_2",
     "SCRATCH_1",
     "SCRATCH_2",
+]
+```
+## NfsVersionType
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import NfsVersionType
+
+def get_value() -> NfsVersionType:
+    return "NFS3"
+```
+
+```python title="Definition"
+NfsVersionType = Literal[
+    "NFS3",
 ]
 ```
 ## OntapDeploymentTypeType
@@ -1073,6 +1138,7 @@ ServiceName = Literal[
     "mgn",
     "migration-hub-refactor-spaces",
     "migrationhub-config",
+    "migrationhuborchestrator",
     "migrationhubstrategy",
     "mobile",
     "mq",

@@ -129,6 +129,8 @@ def get_value() -> CertificateStatusType:
 - [RenewalEligibilityType](./literals.md#renewaleligibilitytype)
 - [RenewalStatusType](./literals.md#renewalstatustype)
 - [RevocationReasonType](./literals.md#revocationreasontype)
+- [SortByType](./literals.md#sortbytype)
+- [SortOrderType](./literals.md#sortordertype)
 - [ValidationMethodType](./literals.md#validationmethodtype)
 - [ACMServiceName](./literals.md#acmservicename)
 - [ServiceName](./literals.md#servicename)

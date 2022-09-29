@@ -43,6 +43,7 @@ except (
     client.DataRepositoryTaskEnded,
     client.DataRepositoryTaskExecuting,
     client.DataRepositoryTaskNotFound,
+    client.FileCacheNotFound,
     client.FileSystemNotFound,
     client.IncompatibleParameterError,
     client.IncompatibleRegionForMultiAZ,
@@ -55,6 +56,7 @@ except (
     client.InvalidPerUnitStorageThroughput,
     client.InvalidRegion,
     client.InvalidSourceKmsKey,
+    client.MissingFileCacheConfiguration,
     client.MissingFileSystemConfiguration,
     client.MissingVolumeConfiguration,
     client.NotServiceResourceError,
@@ -259,8 +261,8 @@ def create_data_repository_association(
     self,
     *,
     FileSystemId: str,
-    FileSystemPath: str,
     DataRepositoryPath: str,
+    FileSystemPath: str = ...,
     BatchImportMetaDataOnCreate: bool = ...,
     ImportedFileChunkSize: int = ...,
     S3: S3DataRepositoryConfigurationTypeDef = ...,  # (1)
@@ -278,7 +280,6 @@ def create_data_repository_association(
 ```python title="Usage example with kwargs"
 kwargs: CreateDataRepositoryAssociationRequestRequestTypeDef = {  # (1)
     "FileSystemId": ...,
-    "FileSystemPath": ...,
     "DataRepositoryPath": ...,
 }
 
@@ -304,6 +305,7 @@ def create_data_repository_task(
     Paths: Sequence[str] = ...,
     ClientRequestToken: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (3)
+    CapacityToRelease: int = ...,
 ) -> CreateDataRepositoryTaskResponseTypeDef:  # (4)
     ...
 ```
@@ -325,6 +327,52 @@ parent.create_data_repository_task(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#createdatarepositorytaskrequestrequesttypedef) 
+
+### create\_file\_cache
+
+Creates a new Amazon File Cache resource.
+
+Type annotations and code completion for `#!python boto3.client("fsx").create_file_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_cache)
+
+```python title="Method definition"
+def create_file_cache(
+    self,
+    *,
+    FileCacheType: FileCacheTypeType,  # (1)
+    FileCacheTypeVersion: str,
+    StorageCapacity: int,
+    SubnetIds: Sequence[str],
+    ClientRequestToken: str = ...,
+    SecurityGroupIds: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    CopyTagsToDataRepositoryAssociations: bool = ...,
+    KmsKeyId: str = ...,
+    LustreConfiguration: CreateFileCacheLustreConfigurationTypeDef = ...,  # (3)
+    DataRepositoryAssociations: Sequence[FileCacheDataRepositoryAssociationTypeDef] = ...,  # (4)
+) -> CreateFileCacheResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: FileCacheTypeType](./literals.md#filecachetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateFileCacheLustreConfigurationTypeDef](./type_defs.md#createfilecachelustreconfigurationtypedef) 
+4. See [:material-code-braces: FileCacheDataRepositoryAssociationTypeDef](./type_defs.md#filecachedatarepositoryassociationtypedef) 
+5. See [:material-code-braces: CreateFileCacheResponseTypeDef](./type_defs.md#createfilecacheresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateFileCacheRequestRequestTypeDef = {  # (1)
+    "FileCacheType": ...,
+    "FileCacheTypeVersion": ...,
+    "StorageCapacity": ...,
+    "SubnetIds": ...,
+}
+
+parent.create_file_cache(**kwargs)
+```
+
+1. See [:material-code-braces: CreateFileCacheRequestRequestTypeDef](./type_defs.md#createfilecacherequestrequesttypedef) 
 
 ### create\_file\_system
 
@@ -399,6 +447,7 @@ def create_file_system_from_backup(
     KmsKeyId: str = ...,
     FileSystemTypeVersion: str = ...,
     OpenZFSConfiguration: CreateFileSystemOpenZFSConfigurationTypeDef = ...,  # (5)
+    StorageCapacity: int = ...,
 ) -> CreateFileSystemFromBackupResponseTypeDef:  # (6)
     ...
 ```
@@ -613,8 +662,8 @@ def delete_data_repository_association(
     self,
     *,
     AssociationId: str,
-    DeleteDataInFileSystem: bool,
     ClientRequestToken: str = ...,
+    DeleteDataInFileSystem: bool = ...,
 ) -> DeleteDataRepositoryAssociationResponseTypeDef:  # (1)
     ...
 ```
@@ -625,13 +674,42 @@ def delete_data_repository_association(
 ```python title="Usage example with kwargs"
 kwargs: DeleteDataRepositoryAssociationRequestRequestTypeDef = {  # (1)
     "AssociationId": ...,
-    "DeleteDataInFileSystem": ...,
 }
 
 parent.delete_data_repository_association(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#deletedatarepositoryassociationrequestrequesttypedef) 
+
+### delete\_file\_cache
+
+Deletes an Amazon File Cache resource.
+
+Type annotations and code completion for `#!python boto3.client("fsx").delete_file_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_cache)
+
+```python title="Method definition"
+def delete_file_cache(
+    self,
+    *,
+    FileCacheId: str,
+    ClientRequestToken: str = ...,
+) -> DeleteFileCacheResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteFileCacheResponseTypeDef](./type_defs.md#deletefilecacheresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteFileCacheRequestRequestTypeDef = {  # (1)
+    "FileCacheId": ...,
+}
+
+parent.delete_file_cache(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteFileCacheRequestRequestTypeDef](./type_defs.md#deletefilecacherequestrequesttypedef) 
 
 ### delete\_file\_system
 
@@ -799,9 +877,9 @@ parent.describe_backups(**kwargs)
 
 ### describe\_data\_repository\_associations
 
-Returns the description of specific Amazon FSx for Lustre data repository
-associations, if one or more `AssociationIds` values are provided in the
-request, or if filters are used in the request.
+Returns the description of specific Amazon FSx for Lustre or Amazon File Cache
+data repository associations, if one or more `AssociationIds` values are
+provided in the request, or if filters are used in the request.
 
 Type annotations and code completion for `#!python boto3.client("fsx").describe_data_repository_associations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_associations)
@@ -834,9 +912,9 @@ parent.describe_data_repository_associations(**kwargs)
 
 ### describe\_data\_repository\_tasks
 
-Returns the description of specific Amazon FSx for Lustre data repository tasks,
-if one or more `TaskIds` values are provided in the request, or if filters are
-used in the request.
+Returns the description of specific Amazon FSx for Lustre or Amazon File Cache
+data repository tasks, if one or more `TaskIds` values are provided in the
+request, or if filters are used in the request.
 
 Type annotations and code completion for `#!python boto3.client("fsx").describe_data_repository_tasks` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
@@ -866,6 +944,38 @@ parent.describe_data_repository_tasks(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeDataRepositoryTasksRequestRequestTypeDef](./type_defs.md#describedatarepositorytasksrequestrequesttypedef) 
+
+### describe\_file\_caches
+
+Returns the description of a specific Amazon File Cache resource, if a
+`FileCacheIds` value is provided for that cache.
+
+Type annotations and code completion for `#!python boto3.client("fsx").describe_file_caches` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_caches)
+
+```python title="Method definition"
+def describe_file_caches(
+    self,
+    *,
+    FileCacheIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeFileCachesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeFileCachesResponseTypeDef](./type_defs.md#describefilecachesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFileCachesRequestRequestTypeDef = {  # (1)
+    "FileCacheIds": ...,
+}
+
+parent.describe_file_caches(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFileCachesRequestRequestTypeDef](./type_defs.md#describefilecachesrequestrequesttypedef) 
 
 ### describe\_file\_system\_aliases
 
@@ -1276,6 +1386,38 @@ parent.update_data_repository_association(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#updatedatarepositoryassociationrequestrequesttypedef) 
+
+### update\_file\_cache
+
+Updates the configuration of an existing Amazon File Cache resource.
+
+Type annotations and code completion for `#!python boto3.client("fsx").update_file_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_cache)
+
+```python title="Method definition"
+def update_file_cache(
+    self,
+    *,
+    FileCacheId: str,
+    ClientRequestToken: str = ...,
+    LustreConfiguration: UpdateFileCacheLustreConfigurationTypeDef = ...,  # (1)
+) -> UpdateFileCacheResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: UpdateFileCacheLustreConfigurationTypeDef](./type_defs.md#updatefilecachelustreconfigurationtypedef) 
+2. See [:material-code-braces: UpdateFileCacheResponseTypeDef](./type_defs.md#updatefilecacheresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateFileCacheRequestRequestTypeDef = {  # (1)
+    "FileCacheId": ...,
+}
+
+parent.update_file_cache(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFileCacheRequestRequestTypeDef](./type_defs.md#updatefilecacherequestrequesttypedef) 
 
 ### update\_file\_system
 

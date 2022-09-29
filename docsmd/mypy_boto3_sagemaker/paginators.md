@@ -3355,16 +3355,18 @@ def paginate(
     StatusEquals: TrainingJobStatusType = ...,  # (1)
     SortBy: SortByType = ...,  # (2)
     SortOrder: SortOrderType = ...,  # (3)
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
-) -> _PageIterator[ListTrainingJobsResponseTypeDef]:  # (5)
+    WarmPoolStatusEquals: WarmPoolResourceStatusType = ...,  # (4)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (5)
+) -> _PageIterator[ListTrainingJobsResponseTypeDef]:  # (6)
     ...
 ```
 
 1. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
 2. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
 3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-5. See [:material-code-braces: ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef) 
+4. See [:material-code-brackets: WarmPoolResourceStatusType](./literals.md#warmpoolresourcestatustype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+6. See [:material-code-braces: ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

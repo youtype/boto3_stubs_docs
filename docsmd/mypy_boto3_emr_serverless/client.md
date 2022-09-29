@@ -236,6 +236,37 @@ parent.get_application(**kwargs)
 
 1. See [:material-code-braces: GetApplicationRequestRequestTypeDef](./type_defs.md#getapplicationrequestrequesttypedef) 
 
+### get\_dashboard\_for\_job\_run
+
+Returns a URL to access the job run dashboard.
+
+Type annotations and code completion for `#!python boto3.client("emr-serverless").get_dashboard_for_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-serverless.html#EMRServerless.Client.get_dashboard_for_job_run)
+
+```python title="Method definition"
+def get_dashboard_for_job_run(
+    self,
+    *,
+    applicationId: str,
+    jobRunId: str,
+) -> GetDashboardForJobRunResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDashboardForJobRunResponseTypeDef](./type_defs.md#getdashboardforjobrunresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDashboardForJobRunRequestRequestTypeDef = {  # (1)
+    "applicationId": ...,
+    "jobRunId": ...,
+}
+
+parent.get_dashboard_for_job_run(**kwargs)
+```
+
+1. See [:material-code-braces: GetDashboardForJobRunRequestRequestTypeDef](./type_defs.md#getdashboardforjobrunrequestrequesttypedef) 
+
 ### get\_job\_run
 
 Displays detailed information about a job run.

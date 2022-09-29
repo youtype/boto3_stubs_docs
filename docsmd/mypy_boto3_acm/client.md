@@ -284,8 +284,8 @@ parent.get_certificate(**kwargs)
 
 ### import\_certificate
 
-Imports a certificate into Amazon Web Services Certificate Manager (ACM) to use
-with services that are integrated with ACM.
+Imports a certificate into Certificate Manager (ACM) to use with services that
+are integrated with ACM.
 
 Type annotations and code completion for `#!python boto3.client("acm").import_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
@@ -333,13 +333,17 @@ def list_certificates(
     Includes: FiltersTypeDef = ...,  # (2)
     NextToken: str = ...,
     MaxItems: int = ...,
-) -> ListCertificatesResponseTypeDef:  # (3)
+    SortBy: SortByType = ...,  # (3)
+    SortOrder: SortOrderType = ...,  # (4)
+) -> ListCertificatesResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
 2. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
-3. See [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
+3. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

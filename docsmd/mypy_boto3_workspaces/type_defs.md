@@ -121,9 +121,11 @@ def get_value() -> ClientPropertiesTypeDef:
 ```python title="Definition"
 class ClientPropertiesTypeDef(TypedDict):
     ReconnectEnabled: NotRequired[ReconnectEnumType],  # (1)
+    LogUploadEnabled: NotRequired[LogUploadEnumType],  # (2)
 ```
 
 1. See [:material-code-brackets: ReconnectEnumType](./literals.md#reconnectenumtype) 
+2. See [:material-code-brackets: LogUploadEnumType](./literals.md#loguploadenumtype) 
 ## ComputeTypeTypeDef
 
 ```python title="Usage Example"

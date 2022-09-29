@@ -4541,6 +4541,23 @@ VariantStatusType = Literal[
     "Updating",
 ]
 ```
+## WarmPoolResourceStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import WarmPoolResourceStatusType
+
+def get_value() -> WarmPoolResourceStatusType:
+    return "Available"
+```
+
+```python title="Definition"
+WarmPoolResourceStatusType = Literal[
+    "Available",
+    "InUse",
+    "Reused",
+    "Terminated",
+]
+```
 ## WorkforceStatusType
 
 ```python title="Usage Example"
@@ -4790,6 +4807,7 @@ ServiceName = Literal[
     "mgn",
     "migration-hub-refactor-spaces",
     "migrationhub-config",
+    "migrationhuborchestrator",
     "migrationhubstrategy",
     "mobile",
     "mq",

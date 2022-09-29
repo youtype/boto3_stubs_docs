@@ -200,6 +200,24 @@ class GetApplicationRequestRequestTypeDef(TypedDict):
     applicationId: str,
 ```
 
+## GetDashboardForJobRunRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_serverless.type_defs import GetDashboardForJobRunRequestRequestTypeDef
+
+def get_value() -> GetDashboardForJobRunRequestRequestTypeDef:
+    return {
+        "applicationId": ...,
+        "jobRunId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDashboardForJobRunRequestRequestTypeDef(TypedDict):
+    applicationId: str,
+    jobRunId: str,
+```
+
 ## GetJobRunRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -545,6 +563,25 @@ class CreateApplicationResponseTypeDef(TypedDict):
     applicationId: str,
     name: str,
     arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDashboardForJobRunResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_serverless.type_defs import GetDashboardForJobRunResponseTypeDef
+
+def get_value() -> GetDashboardForJobRunResponseTypeDef:
+    return {
+        "url": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDashboardForJobRunResponseTypeDef(TypedDict):
+    url: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 

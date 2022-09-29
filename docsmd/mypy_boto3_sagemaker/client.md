@@ -7090,14 +7090,16 @@ def list_training_jobs(
     StatusEquals: TrainingJobStatusType = ...,  # (1)
     SortBy: SortByType = ...,  # (2)
     SortOrder: SortOrderType = ...,  # (3)
-) -> ListTrainingJobsResponseTypeDef:  # (4)
+    WarmPoolStatusEquals: WarmPoolResourceStatusType = ...,  # (4)
+) -> ListTrainingJobsResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
 2. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
 3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-4. See [:material-code-braces: ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef) 
+4. See [:material-code-brackets: WarmPoolResourceStatusType](./literals.md#warmpoolresourcestatustype) 
+5. See [:material-code-braces: ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -8870,7 +8872,8 @@ parent.update_project(**kwargs)
 
 ### update\_training\_job
 
-Update a model training job to request a new Debugger profiling configuration.
+Update a model training job to request a new Debugger profiling configuration or
+to change warm pool retention length.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").update_training_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_training_job)
@@ -8882,13 +8885,15 @@ def update_training_job(
     TrainingJobName: str,
     ProfilerConfig: ProfilerConfigForUpdateTypeDef = ...,  # (1)
     ProfilerRuleConfigurations: Sequence[ProfilerRuleConfigurationTypeDef] = ...,  # (2)
-) -> UpdateTrainingJobResponseTypeDef:  # (3)
+    ResourceConfig: ResourceConfigForUpdateTypeDef = ...,  # (3)
+) -> UpdateTrainingJobResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: ProfilerConfigForUpdateTypeDef](./type_defs.md#profilerconfigforupdatetypedef) 
 2. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
-3. See [:material-code-braces: UpdateTrainingJobResponseTypeDef](./type_defs.md#updatetrainingjobresponsetypedef) 
+3. See [:material-code-braces: ResourceConfigForUpdateTypeDef](./type_defs.md#resourceconfigforupdatetypedef) 
+4. See [:material-code-braces: UpdateTrainingJobResponseTypeDef](./type_defs.md#updatetrainingjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -270,6 +270,35 @@ RevocationReasonType = Literal[
     "UNSPECIFIED",
 ]
 ```
+## SortByType
+
+```python title="Usage Example"
+from mypy_boto3_acm.literals import SortByType
+
+def get_value() -> SortByType:
+    return "CREATED_AT"
+```
+
+```python title="Definition"
+SortByType = Literal[
+    "CREATED_AT",
+]
+```
+## SortOrderType
+
+```python title="Usage Example"
+from mypy_boto3_acm.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
+```
+
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## ValidationMethodType
 
 ```python title="Usage Example"
@@ -516,6 +545,7 @@ ServiceName = Literal[
     "mgn",
     "migration-hub-refactor-spaces",
     "migrationhub-config",
+    "migrationhuborchestrator",
     "migrationhubstrategy",
     "mobile",
     "mq",

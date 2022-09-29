@@ -95,6 +95,7 @@ LanguageCodeType = Literal[
     "ru-RU",
     "sv-SE",
     "tr-TR",
+    "yue-CN",
 ]
 ```
 ## ListLexiconsPaginatorName
@@ -230,6 +231,7 @@ VoiceIdType = Literal[
     "Gwyneth",
     "Hannah",
     "Hans",
+    "Hiujin",
     "Ines",
     "Ivy",
     "Jacek",
@@ -507,6 +509,7 @@ ServiceName = Literal[
     "mgn",
     "migration-hub-refactor-spaces",
     "migrationhub-config",
+    "migrationhuborchestrator",
     "migrationhubstrategy",
     "mobile",
     "mq",

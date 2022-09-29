@@ -125,6 +125,7 @@ def get_value() -> AccessPropertyValueType:
 - [DescribeWorkspacesPaginatorName](./literals.md#describeworkspacespaginatorname)
 - [ImageTypeType](./literals.md#imagetypetype)
 - [ListAvailableManagementCidrRangesPaginatorName](./literals.md#listavailablemanagementcidrrangespaginatorname)
+- [LogUploadEnumType](./literals.md#loguploadenumtype)
 - [ModificationResourceEnumType](./literals.md#modificationresourceenumtype)
 - [ModificationStateEnumType](./literals.md#modificationstateenumtype)
 - [OperatingSystemTypeType](./literals.md#operatingsystemtypetype)

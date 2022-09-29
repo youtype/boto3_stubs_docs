@@ -45,6 +45,7 @@ except (
     client.ServiceUnavailableException,
     client.TextSizeLimitExceededException,
     client.TooManyRequestsException,
+    client.TooManyTagsException,
     client.UnsupportedDisplayLanguageCodeException,
     client.UnsupportedLanguagePairException,
 ) as e:
@@ -110,13 +111,15 @@ def create_parallel_data(
     ClientToken: str,
     Description: str = ...,
     EncryptionKey: EncryptionKeyTypeDef = ...,  # (2)
-) -> CreateParallelDataResponseTypeDef:  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateParallelDataResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
 2. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
-3. See [:material-code-braces: CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -316,14 +319,16 @@ def import_terminology(
     TerminologyData: TerminologyDataTypeDef,  # (2)
     Description: str = ...,
     EncryptionKey: EncryptionKeyTypeDef = ...,  # (3)
-) -> ImportTerminologyResponseTypeDef:  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> ImportTerminologyResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
 2. See [:material-code-braces: TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) 
 3. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
-4. See [:material-code-braces: ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -400,6 +405,36 @@ parent.list_parallel_data(**kwargs)
 ```
 
 1. See [:material-code-braces: ListParallelDataRequestRequestTypeDef](./type_defs.md#listparalleldatarequestrequesttypedef) 
+
+### list\_tags\_for\_resource
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/translate-2017-07-01/ListTagsForResource).
+
+Type annotations and code completion for `#!python boto3.client("translate").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_tags_for_resource)
+
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.list_tags_for_resource(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
 ### list\_terminologies
 
@@ -538,6 +573,38 @@ parent.stop_text_translation_job(**kwargs)
 
 1. See [:material-code-braces: StopTextTranslationJobRequestRequestTypeDef](./type_defs.md#stoptexttranslationjobrequestrequesttypedef) 
 
+### tag\_resource
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/translate-2017-07-01/TagResource).
+
+Type annotations and code completion for `#!python boto3.client("translate").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.tag_resource)
+
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
+
+parent.tag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
 ### translate\_text
 
 Translates input text from the source language to the target language.
@@ -573,6 +640,37 @@ parent.translate_text(**kwargs)
 ```
 
 1. See [:material-code-braces: TranslateTextRequestRequestTypeDef](./type_defs.md#translatetextrequestrequesttypedef) 
+
+### untag\_resource
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/translate-2017-07-01/UntagResource).
+
+Type annotations and code completion for `#!python boto3.client("translate").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.untag_resource)
+
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
+
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
 ### update\_parallel\_data
 

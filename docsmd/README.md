@@ -481,6 +481,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-migrationhub-config](./mypy_boto3_migrationhub_config/README.md) for [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig) service
 
+- [mypy-boto3-migrationhuborchestrator](./mypy_boto3_migrationhuborchestrator/README.md) for [MigrationHubOrchestrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhuborchestrator.html#MigrationHubOrchestrator) service
+
 - [mypy-boto3-migrationhubstrategy](./mypy_boto3_migrationhubstrategy/README.md) for [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations) service
 
 - [mypy-boto3-mobile](./mypy_boto3_mobile/README.md) for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile) service

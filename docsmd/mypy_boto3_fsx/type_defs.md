@@ -207,6 +207,22 @@ class CompletionReportTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ReportFormatType](./literals.md#reportformattype) 
 2. See [:material-code-brackets: ReportScopeType](./literals.md#reportscopetype) 
+## FileCacheLustreMetadataConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import FileCacheLustreMetadataConfigurationTypeDef
+
+def get_value() -> FileCacheLustreMetadataConfigurationTypeDef:
+    return {
+        "StorageCapacity": ...,
+    }
+```
+
+```python title="Definition"
+class FileCacheLustreMetadataConfigurationTypeDef(TypedDict):
+    StorageCapacity: int,
+```
+
 ## LustreLogCreateConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -430,6 +446,7 @@ class DataRepositoryTaskStatusTypeDef(TypedDict):
     SucceededCount: NotRequired[int],
     FailedCount: NotRequired[int],
     LastUpdatedTime: NotRequired[datetime],
+    ReleasedCapacity: NotRequired[int],
 ```
 
 ## DeleteBackupRequestRequestTypeDef
@@ -457,14 +474,30 @@ from mypy_boto3_fsx.type_defs import DeleteDataRepositoryAssociationRequestReque
 def get_value() -> DeleteDataRepositoryAssociationRequestRequestTypeDef:
     return {
         "AssociationId": ...,
-        "DeleteDataInFileSystem": ...,
     }
 ```
 
 ```python title="Definition"
 class DeleteDataRepositoryAssociationRequestRequestTypeDef(TypedDict):
     AssociationId: str,
-    DeleteDataInFileSystem: bool,
+    ClientRequestToken: NotRequired[str],
+    DeleteDataInFileSystem: NotRequired[bool],
+```
+
+## DeleteFileCacheRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import DeleteFileCacheRequestRequestTypeDef
+
+def get_value() -> DeleteFileCacheRequestRequestTypeDef:
+    return {
+        "FileCacheId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFileCacheRequestRequestTypeDef(TypedDict):
+    FileCacheId: str,
     ClientRequestToken: NotRequired[str],
 ```
 
@@ -553,6 +586,24 @@ class PaginatorConfigTypeDef(TypedDict):
     MaxItems: NotRequired[int],
     PageSize: NotRequired[int],
     StartingToken: NotRequired[str],
+```
+
+## DescribeFileCachesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import DescribeFileCachesRequestRequestTypeDef
+
+def get_value() -> DescribeFileCachesRequestRequestTypeDef:
+    return {
+        "FileCacheIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFileCachesRequestRequestTypeDef(TypedDict):
+    FileCacheIds: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
 ## DescribeFileSystemAliasesRequestRequestTypeDef
@@ -665,6 +716,58 @@ class DisassociateFileSystemAliasesRequestRequestTypeDef(TypedDict):
     ClientRequestToken: NotRequired[str],
 ```
 
+## FileCacheFailureDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import FileCacheFailureDetailsTypeDef
+
+def get_value() -> FileCacheFailureDetailsTypeDef:
+    return {
+        "Message": ...,
+    }
+```
+
+```python title="Definition"
+class FileCacheFailureDetailsTypeDef(TypedDict):
+    Message: NotRequired[str],
+```
+
+## FileCacheNFSConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import FileCacheNFSConfigurationTypeDef
+
+def get_value() -> FileCacheNFSConfigurationTypeDef:
+    return {
+        "Version": ...,
+    }
+```
+
+```python title="Definition"
+class FileCacheNFSConfigurationTypeDef(TypedDict):
+    Version: NfsVersionType,  # (1)
+    DnsIps: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: NfsVersionType](./literals.md#nfsversiontype) 
+## LustreLogConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import LustreLogConfigurationTypeDef
+
+def get_value() -> LustreLogConfigurationTypeDef:
+    return {
+        "Level": ...,
+    }
+```
+
+```python title="Definition"
+class LustreLogConfigurationTypeDef(TypedDict):
+    Level: LustreAccessAuditLogLevelType,  # (1)
+    Destination: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LustreAccessAuditLogLevelType](./literals.md#lustreaccessauditlogleveltype) 
 ## FileSystemEndpointTypeDef
 
 ```python title="Usage Example"
@@ -732,24 +835,6 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## LustreLogConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_fsx.type_defs import LustreLogConfigurationTypeDef
-
-def get_value() -> LustreLogConfigurationTypeDef:
-    return {
-        "Level": ...,
-    }
-```
-
-```python title="Definition"
-class LustreLogConfigurationTypeDef(TypedDict):
-    Level: LustreAccessAuditLogLevelType,  # (1)
-    Destination: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LustreAccessAuditLogLevelType](./literals.md#lustreaccessauditlogleveltype) 
 ## OpenZFSClientConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -895,6 +980,22 @@ def get_value() -> UntagResourceRequestRequestTypeDef:
 class UntagResourceRequestRequestTypeDef(TypedDict):
     ResourceARN: str,
     TagKeys: Sequence[str],
+```
+
+## UpdateFileCacheLustreConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import UpdateFileCacheLustreConfigurationTypeDef
+
+def get_value() -> UpdateFileCacheLustreConfigurationTypeDef:
+    return {
+        "WeeklyMaintenanceStartTime": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFileCacheLustreConfigurationTypeDef(TypedDict):
+    WeeklyMaintenanceStartTime: NotRequired[str],
 ```
 
 ## UpdateSnapshotRequestRequestTypeDef
@@ -1064,6 +1165,28 @@ class DeleteDataRepositoryAssociationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataRepositoryLifecycleType](./literals.md#datarepositorylifecycletype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteFileCacheResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import DeleteFileCacheResponseTypeDef
+
+def get_value() -> DeleteFileCacheResponseTypeDef:
+    return {
+        "FileCacheId": ...,
+        "Lifecycle": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFileCacheResponseTypeDef(TypedDict):
+    FileCacheId: str,
+    Lifecycle: FileCacheLifecycleType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: FileCacheLifecycleType](./literals.md#filecachelifecycletype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSnapshotResponseTypeDef
 
@@ -1235,6 +1358,26 @@ class UpdateFileSystemResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FileSystemTypeDef](./type_defs.md#filesystemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## NFSDataRepositoryConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import NFSDataRepositoryConfigurationTypeDef
+
+def get_value() -> NFSDataRepositoryConfigurationTypeDef:
+    return {
+        "Version": ...,
+    }
+```
+
+```python title="Definition"
+class NFSDataRepositoryConfigurationTypeDef(TypedDict):
+    Version: NfsVersionType,  # (1)
+    DnsIps: NotRequired[List[str]],
+    AutoExportPolicy: NotRequired[AutoExportPolicyTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: NfsVersionType](./literals.md#nfsversiontype) 
+2. See [:material-code-braces: AutoExportPolicyTypeDef](./type_defs.md#autoexportpolicytypedef) 
 ## S3DataRepositoryConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1525,11 +1668,35 @@ class CreateDataRepositoryTaskRequestRequestTypeDef(TypedDict):
     Paths: NotRequired[Sequence[str]],
     ClientRequestToken: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    CapacityToRelease: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype) 
 2. See [:material-code-braces: CompletionReportTypeDef](./type_defs.md#completionreporttypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateFileCacheLustreConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import CreateFileCacheLustreConfigurationTypeDef
+
+def get_value() -> CreateFileCacheLustreConfigurationTypeDef:
+    return {
+        "PerUnitStorageThroughput": ...,
+        "DeploymentType": ...,
+        "MetadataConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFileCacheLustreConfigurationTypeDef(TypedDict):
+    PerUnitStorageThroughput: int,
+    DeploymentType: FileCacheLustreDeploymentTypeType,  # (1)
+    MetadataConfiguration: FileCacheLustreMetadataConfigurationTypeDef,  # (2)
+    WeeklyMaintenanceStartTime: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FileCacheLustreDeploymentTypeType](./literals.md#filecachelustredeploymenttypetype) 
+2. See [:material-code-braces: FileCacheLustreMetadataConfigurationTypeDef](./type_defs.md#filecachelustremetadataconfigurationtypedef) 
 ## CreateFileSystemLustreConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1869,7 +2036,6 @@ def get_value() -> DataRepositoryTaskTypeDef:
         "Lifecycle": ...,
         "Type": ...,
         "CreationTime": ...,
-        "FileSystemId": ...,
     }
 ```
 
@@ -1879,15 +2045,17 @@ class DataRepositoryTaskTypeDef(TypedDict):
     Lifecycle: DataRepositoryTaskLifecycleType,  # (1)
     Type: DataRepositoryTaskTypeType,  # (2)
     CreationTime: datetime,
-    FileSystemId: str,
     StartTime: NotRequired[datetime],
     EndTime: NotRequired[datetime],
     ResourceARN: NotRequired[str],
     Tags: NotRequired[List[TagTypeDef]],  # (3)
+    FileSystemId: NotRequired[str],
     Paths: NotRequired[List[str]],
     FailureDetails: NotRequired[DataRepositoryTaskFailureDetailsTypeDef],  # (4)
     Status: NotRequired[DataRepositoryTaskStatusTypeDef],  # (5)
     Report: NotRequired[CompletionReportTypeDef],  # (6)
+    CapacityToRelease: NotRequired[int],
+    FileCacheId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype) 
@@ -2092,6 +2260,51 @@ class DescribeVolumesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef) 
+## FileCacheDataRepositoryAssociationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import FileCacheDataRepositoryAssociationTypeDef
+
+def get_value() -> FileCacheDataRepositoryAssociationTypeDef:
+    return {
+        "FileCachePath": ...,
+        "DataRepositoryPath": ...,
+    }
+```
+
+```python title="Definition"
+class FileCacheDataRepositoryAssociationTypeDef(TypedDict):
+    FileCachePath: str,
+    DataRepositoryPath: str,
+    DataRepositorySubdirectories: NotRequired[Sequence[str]],
+    NFS: NotRequired[FileCacheNFSConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FileCacheNFSConfigurationTypeDef](./type_defs.md#filecachenfsconfigurationtypedef) 
+## FileCacheLustreConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import FileCacheLustreConfigurationTypeDef
+
+def get_value() -> FileCacheLustreConfigurationTypeDef:
+    return {
+        "PerUnitStorageThroughput": ...,
+    }
+```
+
+```python title="Definition"
+class FileCacheLustreConfigurationTypeDef(TypedDict):
+    PerUnitStorageThroughput: NotRequired[int],
+    DeploymentType: NotRequired[FileCacheLustreDeploymentTypeType],  # (1)
+    MountName: NotRequired[str],
+    WeeklyMaintenanceStartTime: NotRequired[str],
+    MetadataConfiguration: NotRequired[FileCacheLustreMetadataConfigurationTypeDef],  # (2)
+    LogConfiguration: NotRequired[LustreLogConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: FileCacheLustreDeploymentTypeType](./literals.md#filecachelustredeploymenttypetype) 
+2. See [:material-code-braces: FileCacheLustreMetadataConfigurationTypeDef](./type_defs.md#filecachelustremetadataconfigurationtypedef) 
+3. See [:material-code-braces: LustreLogConfigurationTypeDef](./type_defs.md#lustrelogconfigurationtypedef) 
 ## FileSystemEndpointsTypeDef
 
 ```python title="Usage Example"
@@ -2237,6 +2450,25 @@ class SvmEndpointsTypeDef(TypedDict):
 2. See [:material-code-braces: SvmEndpointTypeDef](./type_defs.md#svmendpointtypedef) 
 3. See [:material-code-braces: SvmEndpointTypeDef](./type_defs.md#svmendpointtypedef) 
 4. See [:material-code-braces: SvmEndpointTypeDef](./type_defs.md#svmendpointtypedef) 
+## UpdateFileCacheRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import UpdateFileCacheRequestRequestTypeDef
+
+def get_value() -> UpdateFileCacheRequestRequestTypeDef:
+    return {
+        "FileCacheId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFileCacheRequestRequestTypeDef(TypedDict):
+    FileCacheId: str,
+    ClientRequestToken: NotRequired[str],
+    LustreConfiguration: NotRequired[UpdateFileCacheLustreConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UpdateFileCacheLustreConfigurationTypeDef](./type_defs.md#updatefilecachelustreconfigurationtypedef) 
 ## WindowsFileSystemConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2279,7 +2511,6 @@ from mypy_boto3_fsx.type_defs import CreateDataRepositoryAssociationRequestReque
 def get_value() -> CreateDataRepositoryAssociationRequestRequestTypeDef:
     return {
         "FileSystemId": ...,
-        "FileSystemPath": ...,
         "DataRepositoryPath": ...,
     }
 ```
@@ -2287,8 +2518,8 @@ def get_value() -> CreateDataRepositoryAssociationRequestRequestTypeDef:
 ```python title="Definition"
 class CreateDataRepositoryAssociationRequestRequestTypeDef(TypedDict):
     FileSystemId: str,
-    FileSystemPath: str,
     DataRepositoryPath: str,
+    FileSystemPath: NotRequired[str],
     BatchImportMetaDataOnCreate: NotRequired[bool],
     ImportedFileChunkSize: NotRequired[int],
     S3: NotRequired[S3DataRepositoryConfigurationTypeDef],  # (1)
@@ -2323,12 +2554,17 @@ class DataRepositoryAssociationTypeDef(TypedDict):
     S3: NotRequired[S3DataRepositoryConfigurationTypeDef],  # (3)
     Tags: NotRequired[List[TagTypeDef]],  # (4)
     CreationTime: NotRequired[datetime],
+    FileCacheId: NotRequired[str],
+    FileCachePath: NotRequired[str],
+    DataRepositorySubdirectories: NotRequired[List[str]],
+    NFS: NotRequired[NFSDataRepositoryConfigurationTypeDef],  # (5)
 ```
 
 1. See [:material-code-brackets: DataRepositoryLifecycleType](./literals.md#datarepositorylifecycletype) 
 2. See [:material-code-braces: DataRepositoryFailureDetailsTypeDef](./type_defs.md#datarepositoryfailuredetailstypedef) 
 3. See [:material-code-braces: S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: NFSDataRepositoryConfigurationTypeDef](./type_defs.md#nfsdatarepositoryconfigurationtypedef) 
 ## UpdateDataRepositoryAssociationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2573,6 +2809,112 @@ class DescribeDataRepositoryTasksResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataRepositoryTaskTypeDef](./type_defs.md#datarepositorytasktypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFileCacheRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import CreateFileCacheRequestRequestTypeDef
+
+def get_value() -> CreateFileCacheRequestRequestTypeDef:
+    return {
+        "FileCacheType": ...,
+        "FileCacheTypeVersion": ...,
+        "StorageCapacity": ...,
+        "SubnetIds": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFileCacheRequestRequestTypeDef(TypedDict):
+    FileCacheType: FileCacheTypeType,  # (1)
+    FileCacheTypeVersion: str,
+    StorageCapacity: int,
+    SubnetIds: Sequence[str],
+    ClientRequestToken: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    CopyTagsToDataRepositoryAssociations: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    LustreConfiguration: NotRequired[CreateFileCacheLustreConfigurationTypeDef],  # (3)
+    DataRepositoryAssociations: NotRequired[Sequence[FileCacheDataRepositoryAssociationTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: FileCacheTypeType](./literals.md#filecachetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateFileCacheLustreConfigurationTypeDef](./type_defs.md#createfilecachelustreconfigurationtypedef) 
+4. See [:material-code-braces: FileCacheDataRepositoryAssociationTypeDef](./type_defs.md#filecachedatarepositoryassociationtypedef) 
+## FileCacheCreatingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import FileCacheCreatingTypeDef
+
+def get_value() -> FileCacheCreatingTypeDef:
+    return {
+        "OwnerId": ...,
+    }
+```
+
+```python title="Definition"
+class FileCacheCreatingTypeDef(TypedDict):
+    OwnerId: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    FileCacheId: NotRequired[str],
+    FileCacheType: NotRequired[FileCacheTypeType],  # (1)
+    FileCacheTypeVersion: NotRequired[str],
+    Lifecycle: NotRequired[FileCacheLifecycleType],  # (2)
+    FailureDetails: NotRequired[FileCacheFailureDetailsTypeDef],  # (3)
+    StorageCapacity: NotRequired[int],
+    VpcId: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+    NetworkInterfaceIds: NotRequired[List[str]],
+    DNSName: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    ResourceARN: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+    CopyTagsToDataRepositoryAssociations: NotRequired[bool],
+    LustreConfiguration: NotRequired[FileCacheLustreConfigurationTypeDef],  # (5)
+    DataRepositoryAssociationIds: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: FileCacheTypeType](./literals.md#filecachetypetype) 
+2. See [:material-code-brackets: FileCacheLifecycleType](./literals.md#filecachelifecycletype) 
+3. See [:material-code-braces: FileCacheFailureDetailsTypeDef](./type_defs.md#filecachefailuredetailstypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: FileCacheLustreConfigurationTypeDef](./type_defs.md#filecachelustreconfigurationtypedef) 
+## FileCacheTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import FileCacheTypeDef
+
+def get_value() -> FileCacheTypeDef:
+    return {
+        "OwnerId": ...,
+    }
+```
+
+```python title="Definition"
+class FileCacheTypeDef(TypedDict):
+    OwnerId: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    FileCacheId: NotRequired[str],
+    FileCacheType: NotRequired[FileCacheTypeType],  # (1)
+    FileCacheTypeVersion: NotRequired[str],
+    Lifecycle: NotRequired[FileCacheLifecycleType],  # (2)
+    FailureDetails: NotRequired[FileCacheFailureDetailsTypeDef],  # (3)
+    StorageCapacity: NotRequired[int],
+    VpcId: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+    NetworkInterfaceIds: NotRequired[List[str]],
+    DNSName: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    ResourceARN: NotRequired[str],
+    LustreConfiguration: NotRequired[FileCacheLustreConfigurationTypeDef],  # (4)
+    DataRepositoryAssociationIds: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: FileCacheTypeType](./literals.md#filecachetypetype) 
+2. See [:material-code-brackets: FileCacheLifecycleType](./literals.md#filecachelifecycletype) 
+3. See [:material-code-braces: FileCacheFailureDetailsTypeDef](./type_defs.md#filecachefailuredetailstypedef) 
+4. See [:material-code-braces: FileCacheLustreConfigurationTypeDef](./type_defs.md#filecachelustreconfigurationtypedef) 
 ## OntapFileSystemConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2914,6 +3256,68 @@ class UpdateDataRepositoryAssociationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataRepositoryAssociationTypeDef](./type_defs.md#datarepositoryassociationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFileCacheResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import CreateFileCacheResponseTypeDef
+
+def get_value() -> CreateFileCacheResponseTypeDef:
+    return {
+        "FileCache": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFileCacheResponseTypeDef(TypedDict):
+    FileCache: FileCacheCreatingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FileCacheCreatingTypeDef](./type_defs.md#filecachecreatingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFileCachesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import DescribeFileCachesResponseTypeDef
+
+def get_value() -> DescribeFileCachesResponseTypeDef:
+    return {
+        "FileCaches": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFileCachesResponseTypeDef(TypedDict):
+    FileCaches: List[FileCacheTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FileCacheTypeDef](./type_defs.md#filecachetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFileCacheResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fsx.type_defs import UpdateFileCacheResponseTypeDef
+
+def get_value() -> UpdateFileCacheResponseTypeDef:
+    return {
+        "FileCache": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFileCacheResponseTypeDef(TypedDict):
+    FileCache: FileCacheTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FileCacheTypeDef](./type_defs.md#filecachetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FileSystemTypeDef
 
 ```python title="Usage Example"
@@ -3157,6 +3561,7 @@ class CreateFileSystemFromBackupRequestRequestTypeDef(TypedDict):
     KmsKeyId: NotRequired[str],
     FileSystemTypeVersion: NotRequired[str],
     OpenZFSConfiguration: NotRequired[CreateFileSystemOpenZFSConfigurationTypeDef],  # (5)
+    StorageCapacity: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

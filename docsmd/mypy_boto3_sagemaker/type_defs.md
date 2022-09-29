@@ -4067,6 +4067,25 @@ class SecondaryStatusTransitionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SecondaryStatusType](./literals.md#secondarystatustype) 
+## WarmPoolStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import WarmPoolStatusTypeDef
+
+def get_value() -> WarmPoolStatusTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class WarmPoolStatusTypeDef(TypedDict):
+    Status: WarmPoolResourceStatusType,  # (1)
+    ResourceRetainedBillableTimeInSeconds: NotRequired[int],
+    ReusedByJob: NotRequired[str],
+```
+
+1. See [:material-code-brackets: WarmPoolResourceStatusType](./literals.md#warmpoolresourcestatustype) 
 ## DescribeTransformJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6893,36 +6912,13 @@ class ListTrainingJobsRequestRequestTypeDef(TypedDict):
     StatusEquals: NotRequired[TrainingJobStatusType],  # (1)
     SortBy: NotRequired[SortByType],  # (2)
     SortOrder: NotRequired[SortOrderType],  # (3)
+    WarmPoolStatusEquals: NotRequired[WarmPoolResourceStatusType],  # (4)
 ```
 
 1. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
 2. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
 3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-## TrainingJobSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import TrainingJobSummaryTypeDef
-
-def get_value() -> TrainingJobSummaryTypeDef:
-    return {
-        "TrainingJobName": ...,
-        "TrainingJobArn": ...,
-        "CreationTime": ...,
-        "TrainingJobStatus": ...,
-    }
-```
-
-```python title="Definition"
-class TrainingJobSummaryTypeDef(TypedDict):
-    TrainingJobName: str,
-    TrainingJobArn: str,
-    CreationTime: datetime,
-    TrainingJobStatus: TrainingJobStatusType,  # (1)
-    TrainingEndTime: NotRequired[datetime],
-    LastModifiedTime: NotRequired[datetime],
-```
-
-1. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
+4. See [:material-code-brackets: WarmPoolResourceStatusType](./literals.md#warmpoolresourcestatustype) 
 ## ListTransformJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7902,6 +7898,22 @@ def get_value() -> RenderingErrorTypeDef:
 class RenderingErrorTypeDef(TypedDict):
     Code: str,
     Message: str,
+```
+
+## ResourceConfigForUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ResourceConfigForUpdateTypeDef
+
+def get_value() -> ResourceConfigForUpdateTypeDef:
+    return {
+        "KeepAlivePeriodInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceConfigForUpdateTypeDef(TypedDict):
+    KeepAlivePeriodInSeconds: int,
 ```
 
 ## SearchRequestRequestTypeDef
@@ -13104,6 +13116,33 @@ class ListSubscribedWorkteamsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SubscribedWorkteamTypeDef](./type_defs.md#subscribedworkteamtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TrainingJobSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrainingJobSummaryTypeDef
+
+def get_value() -> TrainingJobSummaryTypeDef:
+    return {
+        "TrainingJobName": ...,
+        "TrainingJobArn": ...,
+        "CreationTime": ...,
+        "TrainingJobStatus": ...,
+    }
+```
+
+```python title="Definition"
+class TrainingJobSummaryTypeDef(TypedDict):
+    TrainingJobName: str,
+    TrainingJobArn: str,
+    CreationTime: datetime,
+    TrainingJobStatus: TrainingJobStatusType,  # (1)
+    TrainingEndTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    WarmPoolStatus: NotRequired[WarmPoolStatusTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
+2. See [:material-code-braces: WarmPoolStatusTypeDef](./type_defs.md#warmpoolstatustypedef) 
 ## DescribeTrialComponentResponseTypeDef
 
 ```python title="Usage Example"
@@ -13965,6 +14004,7 @@ class ResourceConfigTypeDef(TypedDict):
     InstanceCount: NotRequired[int],
     VolumeKmsKeyId: NotRequired[str],
     InstanceGroups: NotRequired[Sequence[InstanceGroupTypeDef]],  # (2)
+    KeepAlivePeriodInSeconds: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: TrainingInstanceTypeType](./literals.md#traininginstancetypetype) 
@@ -15371,13 +15411,15 @@ class ListTrainingJobsRequestListTrainingJobsPaginateTypeDef(TypedDict):
     StatusEquals: NotRequired[TrainingJobStatusType],  # (1)
     SortBy: NotRequired[SortByType],  # (2)
     SortOrder: NotRequired[SortOrderType],  # (3)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+    WarmPoolStatusEquals: NotRequired[WarmPoolResourceStatusType],  # (4)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
 ```
 
 1. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
 2. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
 3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
-4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-brackets: WarmPoolResourceStatusType](./literals.md#warmpoolresourcestatustype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTransformJobsRequestListTransformJobsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -15980,28 +16022,6 @@ class ListStudioLifecycleConfigsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StudioLifecycleConfigDetailsTypeDef](./type_defs.md#studiolifecycleconfigdetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTrainingJobsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ListTrainingJobsResponseTypeDef
-
-def get_value() -> ListTrainingJobsResponseTypeDef:
-    return {
-        "TrainingJobSummaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTrainingJobsResponseTypeDef(TypedDict):
-    TrainingJobSummaries: List[TrainingJobSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TrainingJobSummaryTypeDef](./type_defs.md#trainingjobsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTransformJobsResponseTypeDef
 
 ```python title="Usage Example"
@@ -16427,26 +16447,6 @@ class ProductionVariantTypeDef(TypedDict):
 2. See [:material-code-brackets: ProductionVariantAcceleratorTypeType](./literals.md#productionvariantacceleratortypetype) 
 3. See [:material-code-braces: ProductionVariantCoreDumpConfigTypeDef](./type_defs.md#productionvariantcoredumpconfigtypedef) 
 4. See [:material-code-braces: ProductionVariantServerlessConfigTypeDef](./type_defs.md#productionvariantserverlessconfigtypedef) 
-## UpdateTrainingJobRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import UpdateTrainingJobRequestRequestTypeDef
-
-def get_value() -> UpdateTrainingJobRequestRequestTypeDef:
-    return {
-        "TrainingJobName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTrainingJobRequestRequestTypeDef(TypedDict):
-    TrainingJobName: str,
-    ProfilerConfig: NotRequired[ProfilerConfigForUpdateTypeDef],  # (1)
-    ProfilerRuleConfigurations: NotRequired[Sequence[ProfilerRuleConfigurationTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ProfilerConfigForUpdateTypeDef](./type_defs.md#profilerconfigforupdatetypedef) 
-2. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
 ## SuggestionQueryTypeDef
 
 ```python title="Usage Example"
@@ -16653,6 +16653,28 @@ class RenderUiTemplateResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: RenderingErrorTypeDef](./type_defs.md#renderingerrortypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTrainingJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateTrainingJobRequestRequestTypeDef
+
+def get_value() -> UpdateTrainingJobRequestRequestTypeDef:
+    return {
+        "TrainingJobName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTrainingJobRequestRequestTypeDef(TypedDict):
+    TrainingJobName: str,
+    ProfilerConfig: NotRequired[ProfilerConfigForUpdateTypeDef],  # (1)
+    ProfilerRuleConfigurations: NotRequired[Sequence[ProfilerRuleConfigurationTypeDef]],  # (2)
+    ResourceConfig: NotRequired[ResourceConfigForUpdateTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ProfilerConfigForUpdateTypeDef](./type_defs.md#profilerconfigforupdatetypedef) 
+2. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
+3. See [:material-code-braces: ResourceConfigForUpdateTypeDef](./type_defs.md#resourceconfigforupdatetypedef) 
 ## SourceAlgorithmSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -17411,6 +17433,28 @@ class ListFeatureGroupsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FeatureGroupSummaryTypeDef](./type_defs.md#featuregroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTrainingJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListTrainingJobsResponseTypeDef
+
+def get_value() -> ListTrainingJobsResponseTypeDef:
+    return {
+        "TrainingJobSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrainingJobsResponseTypeDef(TypedDict):
+    TrainingJobSummaries: List[TrainingJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TrainingJobSummaryTypeDef](./type_defs.md#trainingjobsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TrialTypeDef
 
@@ -19151,6 +19195,7 @@ def get_value() -> DescribeTrainingJobResponseTypeDef:
         "ProfilingStatus": ...,
         "RetryStrategy": ...,
         "Environment": ...,
+        "WarmPoolStatus": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -19197,7 +19242,8 @@ class DescribeTrainingJobResponseTypeDef(TypedDict):
     ProfilingStatus: ProfilingStatusType,  # (21)
     RetryStrategy: RetryStrategyTypeDef,  # (22)
     Environment: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (23)
+    WarmPoolStatus: WarmPoolStatusTypeDef,  # (23)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (24)
 ```
 
 1. See [:material-code-braces: ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef) 
@@ -19222,7 +19268,8 @@ class DescribeTrainingJobResponseTypeDef(TypedDict):
 20. See [:material-code-braces: ProfilerRuleEvaluationStatusTypeDef](./type_defs.md#profilerruleevaluationstatustypedef) 
 21. See [:material-code-brackets: ProfilingStatusType](./literals.md#profilingstatustype) 
 22. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
-23. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+23. See [:material-code-braces: WarmPoolStatusTypeDef](./type_defs.md#warmpoolstatustypedef) 
+24. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HyperParameterTrainingJobDefinitionTypeDef
 
 ```python title="Usage Example"

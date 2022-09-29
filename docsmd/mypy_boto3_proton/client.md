@@ -435,8 +435,7 @@ parent.create_environment_template_version(**kwargs)
 
 ### create\_repository
 
-Create and register a link to a repository that can be used with self-managed
-provisioning (infrastructure or pipelines) or for template sync configurations.
+Create and register a link to a repository.
 
 Type annotations and code completion for `#!python boto3.client("proton").create_repository` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_repository)
@@ -593,7 +592,8 @@ parent.create_service_template_version(**kwargs)
 
 ### create\_template\_sync\_config
 
-Set up a template to create new template versions automatically.
+Set up a template to create new template versions automatically by tracking a
+linked repository.
 
 Type annotations and code completion for `#!python boto3.client("proton").create_template_sync_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_template_sync_config)
@@ -960,7 +960,7 @@ def generate_presigned_url(
 
 ### get\_account\_settings
 
-Get detail data for the Proton pipeline service role.
+Get detail data for Proton account-wide settings.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_account_settings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_account_settings)
@@ -1126,7 +1126,7 @@ parent.get_environment_template_version(**kwargs)
 
 ### get\_repository
 
-Get detail data for a repository.
+Get detail data for a linked repository.
 
 Type annotations and code completion for `#!python boto3.client("proton").get_repository` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository)
@@ -1665,7 +1665,7 @@ parent.list_environments(**kwargs)
 
 ### list\_repositories
 
-List repositories with detail data.
+List linked repositories with detail data.
 
 Type annotations and code completion for `#!python boto3.client("proton").list_repositories` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_repositories)
@@ -2136,7 +2136,8 @@ parent.untag_resource(**kwargs)
 
 ### update\_account\_settings
 
-Update the Proton service pipeline role or repository settings.
+Update Proton settings that are used for multiple services in the Amazon Web
+Services account.
 
 Type annotations and code completion for `#!python boto3.client("proton").update_account_settings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_account_settings)
@@ -2145,6 +2146,7 @@ Type annotations and code completion for `#!python boto3.client("proton").update
 def update_account_settings(
     self,
     *,
+    deletePipelineProvisioningRepository: bool = ...,
     pipelineProvisioningRepository: RepositoryBranchInputTypeDef = ...,  # (1)
     pipelineServiceRoleArn: str = ...,
 ) -> UpdateAccountSettingsOutputTypeDef:  # (2)
@@ -2157,7 +2159,7 @@ def update_account_settings(
 
 ```python title="Usage example with kwargs"
 kwargs: UpdateAccountSettingsInputRequestTypeDef = {  # (1)
-    "pipelineProvisioningRepository": ...,
+    "deletePipelineProvisioningRepository": ...,
 }
 
 parent.update_account_settings(**kwargs)
@@ -2520,7 +2522,7 @@ parent.update_service_template_version(**kwargs)
 ### update\_template\_sync\_config
 
 Update template sync configuration parameters, except for the `templateName` and
-`templateType` .
+`templateType`.
 
 Type annotations and code completion for `#!python boto3.client("proton").update_template_sync_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_template_sync_config)

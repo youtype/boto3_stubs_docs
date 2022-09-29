@@ -315,6 +315,21 @@ ListAvailableManagementCidrRangesPaginatorName = Literal[
     "list_available_management_cidr_ranges",
 ]
 ```
+## LogUploadEnumType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import LogUploadEnumType
+
+def get_value() -> LogUploadEnumType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+LogUploadEnumType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ModificationResourceEnumType
 
 ```python title="Usage Example"
@@ -780,6 +795,7 @@ ServiceName = Literal[
     "mgn",
     "migration-hub-refactor-spaces",
     "migrationhub-config",
+    "migrationhuborchestrator",
     "migrationhubstrategy",
     "mobile",
     "mq",

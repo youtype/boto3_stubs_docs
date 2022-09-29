@@ -62,6 +62,24 @@ class ParallelDataConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ParallelDataFormatType](./literals.md#paralleldataformattype) 
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -315,6 +333,22 @@ class ListParallelDataRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -405,6 +439,24 @@ class StopTextTranslationJobRequestRequestTypeDef(TypedDict):
     JobId: str,
 ```
 
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
+
 ## AppliedTerminologyTypeDef
 
 ```python title="Usage Example"
@@ -473,30 +525,6 @@ class TerminologyPropertiesTypeDef(TypedDict):
 1. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 2. See [:material-code-brackets: DirectionalityType](./literals.md#directionalitytype) 
 3. See [:material-code-brackets: TerminologyDataFormatType](./literals.md#terminologydataformattype) 
-## CreateParallelDataRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_translate.type_defs import CreateParallelDataRequestRequestTypeDef
-
-def get_value() -> CreateParallelDataRequestRequestTypeDef:
-    return {
-        "Name": ...,
-        "ParallelDataConfig": ...,
-        "ClientToken": ...,
-    }
-```
-
-```python title="Definition"
-class CreateParallelDataRequestRequestTypeDef(TypedDict):
-    Name: str,
-    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
-    ClientToken: str,
-    Description: NotRequired[str],
-    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
-2. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
 ## ParallelDataPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -555,6 +583,51 @@ class UpdateParallelDataRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
+## CreateParallelDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import CreateParallelDataRequestRequestTypeDef
+
+def get_value() -> CreateParallelDataRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ParallelDataConfig": ...,
+        "ClientToken": ...,
+    }
+```
+
+```python title="Definition"
+class CreateParallelDataRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
+    ClientToken: str,
+    Description: NotRequired[str],
+    EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
+2. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateParallelDataResponseTypeDef
 
 ```python title="Usage Example"
@@ -616,6 +689,26 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_translate.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartTextTranslationJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -707,11 +800,13 @@ class ImportTerminologyRequestRequestTypeDef(TypedDict):
     TerminologyData: TerminologyDataTypeDef,  # (2)
     Description: NotRequired[str],
     EncryptionKey: NotRequired[EncryptionKeyTypeDef],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
 ```
 
 1. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
 2. See [:material-code-braces: TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) 
 3. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ListLanguagesResponseTypeDef
 
 ```python title="Usage Example"

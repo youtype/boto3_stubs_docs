@@ -91,8 +91,30 @@ def get_value() -> CertificateSummaryTypeDef:
 class CertificateSummaryTypeDef(TypedDict):
     CertificateArn: NotRequired[str],
     DomainName: NotRequired[str],
+    SubjectAlternativeNameSummaries: NotRequired[List[str]],
+    HasAdditionalSubjectAlternativeNames: NotRequired[bool],
+    Status: NotRequired[CertificateStatusType],  # (1)
+    Type: NotRequired[CertificateTypeType],  # (2)
+    KeyAlgorithm: NotRequired[KeyAlgorithmType],  # (3)
+    KeyUsages: NotRequired[List[KeyUsageNameType]],  # (4)
+    ExtendedKeyUsages: NotRequired[List[ExtendedKeyUsageNameType]],  # (5)
+    InUse: NotRequired[bool],
+    Exported: NotRequired[bool],
+    RenewalEligibility: NotRequired[RenewalEligibilityType],  # (6)
+    NotBefore: NotRequired[datetime],
+    NotAfter: NotRequired[datetime],
+    CreatedAt: NotRequired[datetime],
+    IssuedAt: NotRequired[datetime],
+    ImportedAt: NotRequired[datetime],
+    RevokedAt: NotRequired[datetime],
 ```
 
+1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
+2. See [:material-code-brackets: CertificateTypeType](./literals.md#certificatetypetype) 
+3. See [:material-code-brackets: KeyAlgorithmType](./literals.md#keyalgorithmtype) 
+4. See [:material-code-brackets: KeyUsageNameType](./literals.md#keyusagenametype) 
+5. See [:material-code-brackets: ExtendedKeyUsageNameType](./literals.md#extendedkeyusagenametype) 
+6. See [:material-code-brackets: RenewalEligibilityType](./literals.md#renewaleligibilitytype) 
 ## DeleteCertificateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -690,10 +712,14 @@ class ListCertificatesRequestRequestTypeDef(TypedDict):
     Includes: NotRequired[FiltersTypeDef],  # (2)
     NextToken: NotRequired[str],
     MaxItems: NotRequired[int],
+    SortBy: NotRequired[SortByType],  # (3)
+    SortOrder: NotRequired[SortOrderType],  # (4)
 ```
 
 1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
 2. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+3. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListCertificatesRequestListCertificatesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -709,12 +735,16 @@ def get_value() -> ListCertificatesRequestListCertificatesPaginateTypeDef:
 class ListCertificatesRequestListCertificatesPaginateTypeDef(TypedDict):
     CertificateStatuses: NotRequired[Sequence[CertificateStatusType]],  # (1)
     Includes: NotRequired[FiltersTypeDef],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+    SortBy: NotRequired[SortByType],  # (3)
+    SortOrder: NotRequired[SortOrderType],  # (4)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
 ```
 
 1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
 2. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## RenewalSummaryTypeDef
 
 ```python title="Usage Example"

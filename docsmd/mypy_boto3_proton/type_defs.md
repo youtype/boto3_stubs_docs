@@ -2746,12 +2746,13 @@ from mypy_boto3_proton.type_defs import UpdateAccountSettingsInputRequestTypeDef
 
 def get_value() -> UpdateAccountSettingsInputRequestTypeDef:
     return {
-        "pipelineProvisioningRepository": ...,
+        "deletePipelineProvisioningRepository": ...,
     }
 ```
 
 ```python title="Definition"
 class UpdateAccountSettingsInputRequestTypeDef(TypedDict):
+    deletePipelineProvisioningRepository: NotRequired[bool],
     pipelineProvisioningRepository: NotRequired[RepositoryBranchInputTypeDef],  # (1)
     pipelineServiceRoleArn: NotRequired[str],
 ```
