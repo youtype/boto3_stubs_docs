@@ -126,6 +126,7 @@ def invoke_endpoint(
     TargetVariant: str = ...,
     TargetContainerHostname: str = ...,
     InferenceId: str = ...,
+    EnableExplanations: str = ...,
 ) -> InvokeEndpointOutputTypeDef:  # (1)
     ...
 ```

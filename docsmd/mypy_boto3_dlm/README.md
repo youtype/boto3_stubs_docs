@@ -104,18 +104,15 @@ def get_value() -> EventSourceValuesType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_dlm.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_dlm.type_defs import RetentionArchiveTierTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> RetentionArchiveTierTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "Count": ...,
     }
 ```
 
+- [RetentionArchiveTierTypeDef](./type_defs.md#retentionarchivetiertypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [CreateRuleTypeDef](./type_defs.md#createruletypedef)
 - [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
@@ -134,6 +131,7 @@ def get_value() -> ResponseMetadataTypeDef:
 - [ShareRuleTypeDef](./type_defs.md#shareruletypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [ArchiveRetainRuleTypeDef](./type_defs.md#archiveretainruletypedef)
 - [CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)
@@ -141,6 +139,7 @@ def get_value() -> ResponseMetadataTypeDef:
 - [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
 - [GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef)
 - [ParametersTypeDef](./type_defs.md#parameterstypedef)
+- [ArchiveRuleTypeDef](./type_defs.md#archiveruletypedef)
 - [ActionTypeDef](./type_defs.md#actiontypedef)
 - [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)

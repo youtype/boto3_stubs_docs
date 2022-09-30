@@ -7,6 +7,25 @@
     Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
     type annotations stubs module [mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
+## RetentionArchiveTierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dlm.type_defs import RetentionArchiveTierTypeDef
+
+def get_value() -> RetentionArchiveTierTypeDef:
+    return {
+        "Count": ...,
+    }
+```
+
+```python title="Definition"
+class RetentionArchiveTierTypeDef(TypedDict):
+    Count: NotRequired[int],
+    Interval: NotRequired[int],
+    IntervalUnit: NotRequired[RetentionIntervalUnitValuesType],  # (1)
+```
+
+1. See [:material-code-brackets: RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -350,6 +369,23 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## ArchiveRetainRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dlm.type_defs import ArchiveRetainRuleTypeDef
+
+def get_value() -> ArchiveRetainRuleTypeDef:
+    return {
+        "RetentionArchiveTier": ...,
+    }
+```
+
+```python title="Definition"
+class ArchiveRetainRuleTypeDef(TypedDict):
+    RetentionArchiveTier: RetentionArchiveTierTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RetentionArchiveTierTypeDef](./type_defs.md#retentionarchivetiertypedef) 
 ## CreateLifecyclePolicyResponseTypeDef
 
 ```python title="Usage Example"
@@ -491,6 +527,23 @@ class ParametersTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ArchiveRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dlm.type_defs import ArchiveRuleTypeDef
+
+def get_value() -> ArchiveRuleTypeDef:
+    return {
+        "RetainRule": ...,
+    }
+```
+
+```python title="Definition"
+class ArchiveRuleTypeDef(TypedDict):
+    RetainRule: ArchiveRetainRuleTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ArchiveRetainRuleTypeDef](./type_defs.md#archiveretainruletypedef) 
 ## ActionTypeDef
 
 ```python title="Usage Example"
@@ -533,6 +586,7 @@ class ScheduleTypeDef(TypedDict):
     CrossRegionCopyRules: NotRequired[Sequence[CrossRegionCopyRuleTypeDef]],  # (6)
     ShareRules: NotRequired[Sequence[ShareRuleTypeDef]],  # (7)
     DeprecateRule: NotRequired[DeprecateRuleTypeDef],  # (8)
+    ArchiveRule: NotRequired[ArchiveRuleTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -543,6 +597,7 @@ class ScheduleTypeDef(TypedDict):
 6. See [:material-code-braces: CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef) 
 7. See [:material-code-braces: ShareRuleTypeDef](./type_defs.md#shareruletypedef) 
 8. See [:material-code-braces: DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef) 
+9. See [:material-code-braces: ArchiveRuleTypeDef](./type_defs.md#archiveruletypedef) 
 ## PolicyDetailsTypeDef
 
 ```python title="Usage Example"

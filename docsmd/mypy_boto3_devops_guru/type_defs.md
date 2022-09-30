@@ -772,6 +772,25 @@ class LogsAnomalyDetectionIntegrationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: OptInStatusType](./literals.md#optinstatustype) 
+## NotificationFilterConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import NotificationFilterConfigTypeDef
+
+def get_value() -> NotificationFilterConfigTypeDef:
+    return {
+        "Severities": ...,
+    }
+```
+
+```python title="Definition"
+class NotificationFilterConfigTypeDef(TypedDict):
+    Severities: NotRequired[Sequence[InsightSeverityType]],  # (1)
+    MessageTypes: NotRequired[Sequence[NotificationMessageTypeType]],  # (2)
+```
+
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: NotificationMessageTypeType](./literals.md#notificationmessagetypetype) 
 ## SnsChannelConfigTypeDef
 
 ```python title="Usage Example"
@@ -1627,9 +1646,11 @@ def get_value() -> NotificationChannelConfigTypeDef:
 ```python title="Definition"
 class NotificationChannelConfigTypeDef(TypedDict):
     Sns: SnsChannelConfigTypeDef,  # (1)
+    Filters: NotRequired[NotificationFilterConfigTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: SnsChannelConfigTypeDef](./type_defs.md#snschannelconfigtypedef) 
+2. See [:material-code-braces: NotificationFilterConfigTypeDef](./type_defs.md#notificationfilterconfigtypedef) 
 ## UpdateServiceIntegrationConfigTypeDef
 
 ```python title="Usage Example"

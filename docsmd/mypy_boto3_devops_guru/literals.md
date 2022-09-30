@@ -445,6 +445,24 @@ LogAnomalyTypeType = Literal[
     "NUMERICAL_POINT",
 ]
 ```
+## NotificationMessageTypeType
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.literals import NotificationMessageTypeType
+
+def get_value() -> NotificationMessageTypeType:
+    return "CLOSED_INSIGHT"
+```
+
+```python title="Definition"
+NotificationMessageTypeType = Literal[
+    "CLOSED_INSIGHT",
+    "NEW_ASSOCIATION",
+    "NEW_INSIGHT",
+    "NEW_RECOMMENDATION",
+    "SEVERITY_UPGRADED",
+]
+```
 ## OptInStatusType
 
 ```python title="Usage Example"

@@ -870,7 +870,8 @@ def create_endpoint_config(
     Tags: Sequence[TagTypeDef] = ...,  # (3)
     KmsKeyId: str = ...,
     AsyncInferenceConfig: AsyncInferenceConfigTypeDef = ...,  # (4)
-) -> CreateEndpointConfigOutputTypeDef:  # (5)
+    ExplainerConfig: ExplainerConfigTypeDef = ...,  # (5)
+) -> CreateEndpointConfigOutputTypeDef:  # (6)
     ...
 ```
 
@@ -878,7 +879,8 @@ def create_endpoint_config(
 2. See [:material-code-braces: DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 4. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
-5. See [:material-code-braces: CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef) 
+5. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
+6. See [:material-code-braces: CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

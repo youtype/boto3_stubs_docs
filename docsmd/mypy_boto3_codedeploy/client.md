@@ -521,7 +521,8 @@ def create_deployment(
     autoRollbackConfiguration: AutoRollbackConfigurationTypeDef = ...,  # (3)
     updateOutdatedInstancesOnly: bool = ...,
     fileExistsBehavior: FileExistsBehaviorType = ...,  # (4)
-) -> CreateDeploymentOutputTypeDef:  # (5)
+    overrideAlarmConfiguration: AlarmConfigurationTypeDef = ...,  # (5)
+) -> CreateDeploymentOutputTypeDef:  # (6)
     ...
 ```
 
@@ -529,7 +530,8 @@ def create_deployment(
 2. See [:material-code-braces: TargetInstancesTypeDef](./type_defs.md#targetinstancestypedef) 
 3. See [:material-code-braces: AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef) 
 4. See [:material-code-brackets: FileExistsBehaviorType](./literals.md#fileexistsbehaviortype) 
-5. See [:material-code-braces: CreateDeploymentOutputTypeDef](./type_defs.md#createdeploymentoutputtypedef) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+6. See [:material-code-braces: CreateDeploymentOutputTypeDef](./type_defs.md#createdeploymentoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1112,7 +1114,8 @@ parent.list_application_revisions(**kwargs)
 
 ### list\_applications
 
-Lists the applications registered with the IAM user or AWS account.
+Lists the applications registered with the IAM user or Amazon Web Services
+account.
 
 Type annotations and code completion for `#!python boto3.client("codedeploy").list_applications` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_applications)
@@ -1141,7 +1144,8 @@ parent.list_applications(**kwargs)
 
 ### list\_deployment\_configs
 
-Lists the deployment configurations with the IAM user or AWS account.
+Lists the deployment configurations with the IAM user or Amazon Web Services
+account.
 
 Type annotations and code completion for `#!python boto3.client("codedeploy").list_deployment_configs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_configs)
@@ -1171,7 +1175,7 @@ parent.list_deployment_configs(**kwargs)
 ### list\_deployment\_groups
 
 Lists the deployment groups for an application registered with the IAM user or
-AWS account.
+Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("codedeploy").list_deployment_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployment_groups)
@@ -1268,7 +1272,7 @@ parent.list_deployment_targets(**kwargs)
 ### list\_deployments
 
 Lists the deployments in a deployment group for an application registered with
-the IAM user or AWS account.
+the IAM user or Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("codedeploy").list_deployments` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.list_deployments)
@@ -1429,7 +1433,7 @@ parent.put_lifecycle_event_hook_execution_status(**kwargs)
 
 ### register\_application\_revision
 
-Registers with AWS CodeDeploy a revision for the specified application.
+Registers with CodeDeploy a revision for the specified application.
 
 Type annotations and code completion for `#!python boto3.client("codedeploy").register_application_revision` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.register_application_revision)

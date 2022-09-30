@@ -2584,12 +2584,14 @@ class CreateDeploymentInputRequestTypeDef(TypedDict):
     autoRollbackConfiguration: NotRequired[AutoRollbackConfigurationTypeDef],  # (3)
     updateOutdatedInstancesOnly: NotRequired[bool],
     fileExistsBehavior: NotRequired[FileExistsBehaviorType],  # (4)
+    overrideAlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
 2. See [:material-code-braces: TargetInstancesTypeDef](./type_defs.md#targetinstancestypedef) 
 3. See [:material-code-braces: AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef) 
 4. See [:material-code-brackets: FileExistsBehaviorType](./literals.md#fileexistsbehaviortype) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## BatchGetDeploymentInstancesOutputTypeDef
 
 ```python title="Usage Example"
@@ -2825,6 +2827,7 @@ class DeploymentInfoTypeDef(TypedDict):
     computePlatform: NotRequired[ComputePlatformType],  # (14)
     externalId: NotRequired[str],
     relatedDeployments: NotRequired[RelatedDeploymentsTypeDef],  # (15)
+    overrideAlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (16)
 ```
 
 1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
@@ -2842,6 +2845,7 @@ class DeploymentInfoTypeDef(TypedDict):
 13. See [:material-code-brackets: FileExistsBehaviorType](./literals.md#fileexistsbehaviortype) 
 14. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
 15. See [:material-code-braces: RelatedDeploymentsTypeDef](./type_defs.md#relateddeploymentstypedef) 
+16. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## UpdateDeploymentGroupInputRequestTypeDef
 
 ```python title="Usage Example"

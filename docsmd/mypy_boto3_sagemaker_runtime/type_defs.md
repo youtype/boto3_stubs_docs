@@ -77,6 +77,7 @@ class InvokeEndpointInputRequestTypeDef(TypedDict):
     TargetVariant: NotRequired[str],
     TargetContainerHostname: NotRequired[str],
     InferenceId: NotRequired[str],
+    EnableExplanations: NotRequired[str],
 ```
 
 ## InvokeEndpointAsyncOutputTypeDef

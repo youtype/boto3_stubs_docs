@@ -648,6 +648,111 @@ CaptureStatusType = Literal[
     "Stopped",
 ]
 ```
+## ClarifyFeatureTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ClarifyFeatureTypeType
+
+def get_value() -> ClarifyFeatureTypeType:
+    return "categorical"
+```
+
+```python title="Definition"
+ClarifyFeatureTypeType = Literal[
+    "categorical",
+    "numerical",
+    "text",
+]
+```
+## ClarifyTextGranularityType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ClarifyTextGranularityType
+
+def get_value() -> ClarifyTextGranularityType:
+    return "paragraph"
+```
+
+```python title="Definition"
+ClarifyTextGranularityType = Literal[
+    "paragraph",
+    "sentence",
+    "token",
+]
+```
+## ClarifyTextLanguageType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ClarifyTextLanguageType
+
+def get_value() -> ClarifyTextLanguageType:
+    return "af"
+```
+
+```python title="Definition"
+ClarifyTextLanguageType = Literal[
+    "af",
+    "ar",
+    "bg",
+    "bn",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "ga",
+    "gu",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "kn",
+    "ky",
+    "lb",
+    "lij",
+    "lt",
+    "lv",
+    "mk",
+    "ml",
+    "mr",
+    "nb",
+    "ne",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "si",
+    "sk",
+    "sl",
+    "sq",
+    "sr",
+    "sv",
+    "ta",
+    "te",
+    "tl",
+    "tn",
+    "tr",
+    "tt",
+    "uk",
+    "ur",
+    "xx",
+    "yo",
+    "zh",
+]
+```
 ## CodeRepositorySortByType
 
 ```python title="Usage Example"

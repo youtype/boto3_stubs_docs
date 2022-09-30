@@ -902,6 +902,71 @@ class ClarifyCheckStepMetadataTypeDef(TypedDict):
     RegisterNewBaseline: NotRequired[bool],
 ```
 
+## ClarifyInferenceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ClarifyInferenceConfigTypeDef
+
+def get_value() -> ClarifyInferenceConfigTypeDef:
+    return {
+        "FeaturesAttribute": ...,
+    }
+```
+
+```python title="Definition"
+class ClarifyInferenceConfigTypeDef(TypedDict):
+    FeaturesAttribute: NotRequired[str],
+    ContentTemplate: NotRequired[str],
+    MaxRecordCount: NotRequired[int],
+    MaxPayloadInMB: NotRequired[int],
+    ProbabilityIndex: NotRequired[int],
+    LabelIndex: NotRequired[int],
+    ProbabilityAttribute: NotRequired[str],
+    LabelAttribute: NotRequired[str],
+    LabelHeaders: NotRequired[Sequence[str]],
+    FeatureHeaders: NotRequired[Sequence[str]],
+    FeatureTypes: NotRequired[Sequence[ClarifyFeatureTypeType]],  # (1)
+```
+
+1. See [:material-code-brackets: ClarifyFeatureTypeType](./literals.md#clarifyfeaturetypetype) 
+## ClarifyShapBaselineConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ClarifyShapBaselineConfigTypeDef
+
+def get_value() -> ClarifyShapBaselineConfigTypeDef:
+    return {
+        "MimeType": ...,
+    }
+```
+
+```python title="Definition"
+class ClarifyShapBaselineConfigTypeDef(TypedDict):
+    MimeType: NotRequired[str],
+    ShapBaseline: NotRequired[str],
+    ShapBaselineUri: NotRequired[str],
+```
+
+## ClarifyTextConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ClarifyTextConfigTypeDef
+
+def get_value() -> ClarifyTextConfigTypeDef:
+    return {
+        "Language": ...,
+        "Granularity": ...,
+    }
+```
+
+```python title="Definition"
+class ClarifyTextConfigTypeDef(TypedDict):
+    Language: ClarifyTextLanguageType,  # (1)
+    Granularity: ClarifyTextGranularityType,  # (2)
+```
+
+1. See [:material-code-brackets: ClarifyTextLanguageType](./literals.md#clarifytextlanguagetype) 
+2. See [:material-code-brackets: ClarifyTextGranularityType](./literals.md#clarifytextgranularitytype) 
 ## GitConfigTypeDef
 
 ```python title="Usage Example"
@@ -11078,6 +11143,28 @@ class EnvironmentParameterRangesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CategoricalParameterTypeDef](./type_defs.md#categoricalparametertypedef) 
+## ClarifyShapConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ClarifyShapConfigTypeDef
+
+def get_value() -> ClarifyShapConfigTypeDef:
+    return {
+        "ShapBaselineConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ClarifyShapConfigTypeDef(TypedDict):
+    ShapBaselineConfig: ClarifyShapBaselineConfigTypeDef,  # (1)
+    NumberOfSamples: NotRequired[int],
+    UseLogit: NotRequired[bool],
+    Seed: NotRequired[int],
+    TextConfig: NotRequired[ClarifyTextConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ClarifyShapBaselineConfigTypeDef](./type_defs.md#clarifyshapbaselineconfigtypedef) 
+2. See [:material-code-braces: ClarifyTextConfigTypeDef](./type_defs.md#clarifytextconfigtypedef) 
 ## CodeRepositorySummaryTypeDef
 
 ```python title="Usage Example"
@@ -17142,6 +17229,26 @@ class EndpointInputConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype) 
 2. See [:material-code-braces: EnvironmentParameterRangesTypeDef](./type_defs.md#environmentparameterrangestypedef) 
+## ClarifyExplainerConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ClarifyExplainerConfigTypeDef
+
+def get_value() -> ClarifyExplainerConfigTypeDef:
+    return {
+        "ShapConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ClarifyExplainerConfigTypeDef(TypedDict):
+    ShapConfig: ClarifyShapConfigTypeDef,  # (2)
+    EnableExplanations: NotRequired[str],
+    InferenceConfig: NotRequired[ClarifyInferenceConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ClarifyInferenceConfigTypeDef](./type_defs.md#clarifyinferenceconfigtypedef) 
+2. See [:material-code-braces: ClarifyShapConfigTypeDef](./type_defs.md#clarifyshapconfigtypedef) 
 ## ListCodeRepositoriesOutputTypeDef
 
 ```python title="Usage Example"
@@ -18625,66 +18732,6 @@ class ListArtifactsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ArtifactSummaryTypeDef](./type_defs.md#artifactsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateEndpointConfigInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import CreateEndpointConfigInputRequestTypeDef
-
-def get_value() -> CreateEndpointConfigInputRequestTypeDef:
-    return {
-        "EndpointConfigName": ...,
-        "ProductionVariants": ...,
-    }
-```
-
-```python title="Definition"
-class CreateEndpointConfigInputRequestTypeDef(TypedDict):
-    EndpointConfigName: str,
-    ProductionVariants: Sequence[ProductionVariantTypeDef],  # (1)
-    DataCaptureConfig: NotRequired[DataCaptureConfigTypeDef],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-    KmsKeyId: NotRequired[str],
-    AsyncInferenceConfig: NotRequired[AsyncInferenceConfigTypeDef],  # (4)
-```
-
-1. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
-2. See [:material-code-braces: DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
-## DescribeEndpointConfigOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeEndpointConfigOutputTypeDef
-
-def get_value() -> DescribeEndpointConfigOutputTypeDef:
-    return {
-        "EndpointConfigName": ...,
-        "EndpointConfigArn": ...,
-        "ProductionVariants": ...,
-        "DataCaptureConfig": ...,
-        "KmsKeyId": ...,
-        "CreationTime": ...,
-        "AsyncInferenceConfig": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeEndpointConfigOutputTypeDef(TypedDict):
-    EndpointConfigName: str,
-    EndpointConfigArn: str,
-    ProductionVariants: List[ProductionVariantTypeDef],  # (1)
-    DataCaptureConfig: DataCaptureConfigTypeDef,  # (2)
-    KmsKeyId: str,
-    CreationTime: datetime,
-    AsyncInferenceConfig: AsyncInferenceConfigTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
-2. See [:material-code-braces: DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef) 
-3. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAutoMLJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -18887,6 +18934,23 @@ class RecommendationJobInputConfigTypeDef(TypedDict):
 2. See [:material-code-braces: RecommendationJobResourceLimitTypeDef](./type_defs.md#recommendationjobresourcelimittypedef) 
 3. See [:material-code-braces: EndpointInputConfigurationTypeDef](./type_defs.md#endpointinputconfigurationtypedef) 
 4. See [:material-code-braces: RecommendationJobContainerConfigTypeDef](./type_defs.md#recommendationjobcontainerconfigtypedef) 
+## ExplainerConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ExplainerConfigTypeDef
+
+def get_value() -> ExplainerConfigTypeDef:
+    return {
+        "ClarifyExplainerConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ExplainerConfigTypeDef(TypedDict):
+    ClarifyExplainerConfig: NotRequired[ClarifyExplainerConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ClarifyExplainerConfigTypeDef](./type_defs.md#clarifyexplainerconfigtypedef) 
 ## CreateDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -20603,53 +20667,6 @@ class CreateEndpointInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DescribeEndpointOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeEndpointOutputTypeDef
-
-def get_value() -> DescribeEndpointOutputTypeDef:
-    return {
-        "EndpointName": ...,
-        "EndpointArn": ...,
-        "EndpointConfigName": ...,
-        "ProductionVariants": ...,
-        "DataCaptureConfig": ...,
-        "EndpointStatus": ...,
-        "FailureReason": ...,
-        "CreationTime": ...,
-        "LastModifiedTime": ...,
-        "LastDeploymentConfig": ...,
-        "AsyncInferenceConfig": ...,
-        "PendingDeploymentSummary": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeEndpointOutputTypeDef(TypedDict):
-    EndpointName: str,
-    EndpointArn: str,
-    EndpointConfigName: str,
-    ProductionVariants: List[ProductionVariantSummaryTypeDef],  # (1)
-    DataCaptureConfig: DataCaptureConfigSummaryTypeDef,  # (2)
-    EndpointStatus: EndpointStatusType,  # (3)
-    FailureReason: str,
-    CreationTime: datetime,
-    LastModifiedTime: datetime,
-    LastDeploymentConfig: DeploymentConfigTypeDef,  # (4)
-    AsyncInferenceConfig: AsyncInferenceConfigTypeDef,  # (5)
-    PendingDeploymentSummary: PendingDeploymentSummaryTypeDef,  # (6)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
-```
-
-1. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
-2. See [:material-code-braces: DataCaptureConfigSummaryTypeDef](./type_defs.md#datacaptureconfigsummarytypedef) 
-3. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
-4. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
-5. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
-6. See [:material-code-braces: PendingDeploymentSummaryTypeDef](./type_defs.md#pendingdeploymentsummarytypedef) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEndpointInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -20753,6 +20770,121 @@ class DescribeInferenceRecommendationsJobResponseTypeDef(TypedDict):
 4. See [:material-code-braces: RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef) 
 5. See [:material-code-braces: InferenceRecommendationTypeDef](./type_defs.md#inferencerecommendationtypedef) 
 6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateEndpointConfigInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateEndpointConfigInputRequestTypeDef
+
+def get_value() -> CreateEndpointConfigInputRequestTypeDef:
+    return {
+        "EndpointConfigName": ...,
+        "ProductionVariants": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEndpointConfigInputRequestTypeDef(TypedDict):
+    EndpointConfigName: str,
+    ProductionVariants: Sequence[ProductionVariantTypeDef],  # (1)
+    DataCaptureConfig: NotRequired[DataCaptureConfigTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    KmsKeyId: NotRequired[str],
+    AsyncInferenceConfig: NotRequired[AsyncInferenceConfigTypeDef],  # (4)
+    ExplainerConfig: NotRequired[ExplainerConfigTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
+2. See [:material-code-braces: DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
+5. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
+## DescribeEndpointConfigOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeEndpointConfigOutputTypeDef
+
+def get_value() -> DescribeEndpointConfigOutputTypeDef:
+    return {
+        "EndpointConfigName": ...,
+        "EndpointConfigArn": ...,
+        "ProductionVariants": ...,
+        "DataCaptureConfig": ...,
+        "KmsKeyId": ...,
+        "CreationTime": ...,
+        "AsyncInferenceConfig": ...,
+        "ExplainerConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndpointConfigOutputTypeDef(TypedDict):
+    EndpointConfigName: str,
+    EndpointConfigArn: str,
+    ProductionVariants: List[ProductionVariantTypeDef],  # (1)
+    DataCaptureConfig: DataCaptureConfigTypeDef,  # (2)
+    KmsKeyId: str,
+    CreationTime: datetime,
+    AsyncInferenceConfig: AsyncInferenceConfigTypeDef,  # (3)
+    ExplainerConfig: ExplainerConfigTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
+2. See [:material-code-braces: DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef) 
+3. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
+4. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEndpointOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeEndpointOutputTypeDef
+
+def get_value() -> DescribeEndpointOutputTypeDef:
+    return {
+        "EndpointName": ...,
+        "EndpointArn": ...,
+        "EndpointConfigName": ...,
+        "ProductionVariants": ...,
+        "DataCaptureConfig": ...,
+        "EndpointStatus": ...,
+        "FailureReason": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "LastDeploymentConfig": ...,
+        "AsyncInferenceConfig": ...,
+        "PendingDeploymentSummary": ...,
+        "ExplainerConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndpointOutputTypeDef(TypedDict):
+    EndpointName: str,
+    EndpointArn: str,
+    EndpointConfigName: str,
+    ProductionVariants: List[ProductionVariantSummaryTypeDef],  # (1)
+    DataCaptureConfig: DataCaptureConfigSummaryTypeDef,  # (2)
+    EndpointStatus: EndpointStatusType,  # (3)
+    FailureReason: str,
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    LastDeploymentConfig: DeploymentConfigTypeDef,  # (4)
+    AsyncInferenceConfig: AsyncInferenceConfigTypeDef,  # (5)
+    PendingDeploymentSummary: PendingDeploymentSummaryTypeDef,  # (6)
+    ExplainerConfig: ExplainerConfigTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
+2. See [:material-code-braces: DataCaptureConfigSummaryTypeDef](./type_defs.md#datacaptureconfigsummarytypedef) 
+3. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
+4. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
+5. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
+6. See [:material-code-braces: PendingDeploymentSummaryTypeDef](./type_defs.md#pendingdeploymentsummarytypedef) 
+7. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHyperParameterTuningJobRequestRequestTypeDef
 
 ```python title="Usage Example"
