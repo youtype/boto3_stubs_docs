@@ -34693,6 +34693,7 @@ def get_value() -> ImageAttributeTypeDef:
         "TpmSupport": ...,
         "UefiData": ...,
         "LastLaunchedTime": ...,
+        "ImdsSupport": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -34711,7 +34712,8 @@ class ImageAttributeTypeDef(TypedDict):
     TpmSupport: AttributeValueTypeDef,  # (4)
     UefiData: AttributeValueTypeDef,  # (4)
     LastLaunchedTime: AttributeValueTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
+    ImdsSupport: AttributeValueTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (13)
 ```
 
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
@@ -34725,7 +34727,8 @@ class ImageAttributeTypeDef(TypedDict):
 9. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 10. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 11. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
-12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+12. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+13. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImageTypeDef
 
 ```python title="Usage Example"
@@ -34768,6 +34771,7 @@ class ImageTypeDef(TypedDict):
     BootMode: NotRequired[BootModeValuesType],  # (12)
     TpmSupport: NotRequired[TpmSupportValuesType],  # (13)
     DeprecationTime: NotRequired[str],
+    ImdsSupport: NotRequired[ImdsSupportValuesType],  # (14)
 ```
 
 1. See [:material-code-brackets: ArchitectureValuesType](./literals.md#architecturevaluestype) 
@@ -34783,6 +34787,7 @@ class ImageTypeDef(TypedDict):
 11. See [:material-code-brackets: VirtualizationTypeType](./literals.md#virtualizationtypetype) 
 12. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
 13. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
+14. See [:material-code-brackets: ImdsSupportValuesType](./literals.md#imdssupportvaluestype) 
 ## RegisterImageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -34812,12 +34817,14 @@ class RegisterImageRequestRequestTypeDef(TypedDict):
     BootMode: NotRequired[BootModeValuesType],  # (3)
     TpmSupport: NotRequired[TpmSupportValuesType],  # (4)
     UefiData: NotRequired[str],
+    ImdsSupport: NotRequired[ImdsSupportValuesType],  # (5)
 ```
 
 1. See [:material-code-brackets: ArchitectureValuesType](./literals.md#architecturevaluestype) 
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
 4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
+5. See [:material-code-brackets: ImdsSupportValuesType](./literals.md#imdssupportvaluestype) 
 ## RegisterImageRequestServiceResourceRegisterImageTypeDef
 
 ```python title="Usage Example"
@@ -34847,12 +34854,14 @@ class RegisterImageRequestServiceResourceRegisterImageTypeDef(TypedDict):
     BootMode: NotRequired[BootModeValuesType],  # (3)
     TpmSupport: NotRequired[TpmSupportValuesType],  # (4)
     UefiData: NotRequired[str],
+    ImdsSupport: NotRequired[ImdsSupportValuesType],  # (5)
 ```
 
 1. See [:material-code-brackets: ArchitectureValuesType](./literals.md#architecturevaluestype) 
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
 4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
+5. See [:material-code-brackets: ImdsSupportValuesType](./literals.md#imdssupportvaluestype) 
 ## CancelCapacityReservationFleetsResultTypeDef
 
 ```python title="Usage Example"

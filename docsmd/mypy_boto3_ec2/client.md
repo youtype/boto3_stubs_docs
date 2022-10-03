@@ -16664,7 +16664,8 @@ def register_image(
     BootMode: BootModeValuesType = ...,  # (3)
     TpmSupport: TpmSupportValuesType = ...,  # (4)
     UefiData: str = ...,
-) -> RegisterImageResultTypeDef:  # (5)
+    ImdsSupport: ImdsSupportValuesType = ...,  # (5)
+) -> RegisterImageResultTypeDef:  # (6)
     ...
 ```
 
@@ -16672,7 +16673,8 @@ def register_image(
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
 4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
-5. See [:material-code-braces: RegisterImageResultTypeDef](./type_defs.md#registerimageresulttypedef) 
+5. See [:material-code-brackets: ImdsSupportValuesType](./literals.md#imdssupportvaluestype) 
+6. See [:material-code-braces: RegisterImageResultTypeDef](./type_defs.md#registerimageresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

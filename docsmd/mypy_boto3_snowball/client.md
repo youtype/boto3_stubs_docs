@@ -935,6 +935,7 @@ Type annotations and code completion for `#!python boto3.client("snowball").get_
 - `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
 - `client.get_paginator("list_compatible_images")` -> [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
 - `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_long_term_pricing")` -> [ListLongTermPricingPaginator](./paginators.md#listlongtermpricingpaginator)
 
 
 

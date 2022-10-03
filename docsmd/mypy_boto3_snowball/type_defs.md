@@ -1086,6 +1086,23 @@ class ListJobsRequestListJobsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListLongTermPricingRequestListLongTermPricingPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ListLongTermPricingRequestListLongTermPricingPaginateTypeDef
+
+def get_value() -> ListLongTermPricingRequestListLongTermPricingPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListLongTermPricingRequestListLongTermPricingPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## LambdaResourceTypeDef
 
 ```python title="Usage Example"

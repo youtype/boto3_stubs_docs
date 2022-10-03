@@ -195,8 +195,8 @@ def create_analyzer(
     analyzerName: str,
     type: TypeType,  # (1)
     archiveRules: Sequence[InlineArchiveRuleTypeDef] = ...,  # (2)
-    clientToken: str = ...,
     tags: Mapping[str, str] = ...,
+    clientToken: str = ...,
 ) -> CreateAnalyzerResponseTypeDef:  # (3)
     ...
 ```
@@ -229,8 +229,8 @@ def create_archive_rule(
     self,
     *,
     analyzerName: str,
-    filter: Mapping[str, CriterionTypeDef],  # (1)
     ruleName: str,
+    filter: Mapping[str, CriterionTypeDef],  # (1)
     clientToken: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
@@ -243,8 +243,8 @@ def create_archive_rule(
 ```python title="Usage example with kwargs"
 kwargs: CreateArchiveRuleRequestRequestTypeDef = {  # (1)
     "analyzerName": ...,
-    "filter": ...,
     "ruleName": ...,
+    "filter": ...,
 }
 
 parent.create_archive_rule(**kwargs)
@@ -532,8 +532,8 @@ def list_access_preview_findings(
     accessPreviewId: str,
     analyzerArn: str,
     filter: Mapping[str, CriterionTypeDef] = ...,  # (1)
-    maxResults: int = ...,
     nextToken: str = ...,
+    maxResults: int = ...,
 ) -> ListAccessPreviewFindingsResponseTypeDef:  # (2)
     ...
 ```
@@ -565,8 +565,8 @@ def list_access_previews(
     self,
     *,
     analyzerArn: str,
-    maxResults: int = ...,
     nextToken: str = ...,
+    maxResults: int = ...,
 ) -> ListAccessPreviewsResponseTypeDef:  # (1)
     ...
 ```
@@ -597,9 +597,9 @@ def list_analyzed_resources(
     self,
     *,
     analyzerArn: str,
-    maxResults: int = ...,
-    nextToken: str = ...,
     resourceType: ResourceTypeType = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
 ) -> ListAnalyzedResourcesResponseTypeDef:  # (2)
     ...
 ```
@@ -629,8 +629,8 @@ Type annotations and code completion for `#!python boto3.client("accessanalyzer"
 def list_analyzers(
     self,
     *,
-    maxResults: int = ...,
     nextToken: str = ...,
+    maxResults: int = ...,
     type: TypeType = ...,  # (1)
 ) -> ListAnalyzersResponseTypeDef:  # (2)
     ...
@@ -642,7 +642,7 @@ def list_analyzers(
 
 ```python title="Usage example with kwargs"
 kwargs: ListAnalyzersRequestRequestTypeDef = {  # (1)
-    "maxResults": ...,
+    "nextToken": ...,
 }
 
 parent.list_analyzers(**kwargs)
@@ -662,8 +662,8 @@ def list_archive_rules(
     self,
     *,
     analyzerName: str,
-    maxResults: int = ...,
     nextToken: str = ...,
+    maxResults: int = ...,
 ) -> ListArchiveRulesResponseTypeDef:  # (1)
     ...
 ```
@@ -694,9 +694,9 @@ def list_findings(
     *,
     analyzerArn: str,
     filter: Mapping[str, CriterionTypeDef] = ...,  # (1)
-    maxResults: int = ...,
-    nextToken: str = ...,
     sort: SortCriteriaTypeDef = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
 ) -> ListFindingsResponseTypeDef:  # (3)
     ...
 ```
@@ -727,9 +727,9 @@ Type annotations and code completion for `#!python boto3.client("accessanalyzer"
 def list_policy_generations(
     self,
     *,
+    principalArn: str = ...,
     maxResults: int = ...,
     nextToken: str = ...,
-    principalArn: str = ...,
 ) -> ListPolicyGenerationsResponseTypeDef:  # (1)
     ...
 ```
@@ -739,7 +739,7 @@ def list_policy_generations(
 
 ```python title="Usage example with kwargs"
 kwargs: ListPolicyGenerationsRequestRequestTypeDef = {  # (1)
-    "maxResults": ...,
+    "principalArn": ...,
 }
 
 parent.list_policy_generations(**kwargs)
@@ -788,8 +788,8 @@ def start_policy_generation(
     self,
     *,
     policyGenerationDetails: PolicyGenerationDetailsTypeDef,  # (1)
-    clientToken: str = ...,
     cloudTrailDetails: CloudTrailDetailsTypeDef = ...,  # (2)
+    clientToken: str = ...,
 ) -> StartPolicyGenerationResponseTypeDef:  # (3)
     ...
 ```
@@ -912,8 +912,8 @@ def update_archive_rule(
     self,
     *,
     analyzerName: str,
-    filter: Mapping[str, CriterionTypeDef],  # (1)
     ruleName: str,
+    filter: Mapping[str, CriterionTypeDef],  # (1)
     clientToken: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
@@ -926,8 +926,8 @@ def update_archive_rule(
 ```python title="Usage example with kwargs"
 kwargs: UpdateArchiveRuleRequestRequestTypeDef = {  # (1)
     "analyzerName": ...,
-    "filter": ...,
     "ruleName": ...,
+    "filter": ...,
 }
 
 parent.update_archive_rule(**kwargs)
@@ -948,9 +948,9 @@ def update_findings(
     *,
     analyzerArn: str,
     status: FindingStatusUpdateType,  # (1)
-    clientToken: str = ...,
     ids: Sequence[str] = ...,
     resourceArn: str = ...,
+    clientToken: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```

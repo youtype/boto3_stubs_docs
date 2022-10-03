@@ -298,3 +298,61 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef) 
+## ListLongTermPricingPaginator
+
+Type annotations and code completion for `#!python boto3.client("snowball").get_paginator("list_long_term_pricing")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Paginator.ListLongTermPricing)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snowball.paginator import ListLongTermPricingPaginator
+
+def get_list_long_term_pricing_paginator() -> ListLongTermPricingPaginator:
+    return Session().client("snowball").get_paginator("list_long_term_pricing")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_snowball.paginator import ListLongTermPricingPaginator
+
+session = Session()
+
+client = Session().client("snowball")  # (1)
+paginator: ListLongTermPricingPaginator = client.get_paginator("list_long_term_pricing")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SnowballClient](./client.md)
+2. paginator: [ListLongTermPricingPaginator](./paginators.md#listlongtermpricingpaginator)
+3. item: [:material-code-braces: ListLongTermPricingResultTypeDef](./type_defs.md#listlongtermpricingresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListLongTermPricingPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLongTermPricingResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLongTermPricingResultTypeDef](./type_defs.md#listlongtermpricingresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLongTermPricingRequestListLongTermPricingPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLongTermPricingRequestListLongTermPricingPaginateTypeDef](./type_defs.md#listlongtermpricingrequestlistlongtermpricingpaginatetypedef) 

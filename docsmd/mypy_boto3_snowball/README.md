@@ -82,6 +82,7 @@ def get_describe_addresses_paginator() -> DescribeAddressesPaginator:
 - [ListClustersPaginator](./paginators.md#listclusterspaginator)
 - [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
+- [ListLongTermPricingPaginator](./paginators.md#listlongtermpricingpaginator)
 
 
 
@@ -111,6 +112,7 @@ def get_value() -> ClusterStateType:
 - [ListClustersPaginatorName](./literals.md#listclusterspaginatorname)
 - [ListCompatibleImagesPaginatorName](./literals.md#listcompatibleimagespaginatorname)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
+- [ListLongTermPricingPaginatorName](./literals.md#listlongtermpricingpaginatorname)
 - [LongTermPricingTypeType](./literals.md#longtermpricingtypetype)
 - [RemoteManagementType](./literals.md#remotemanagementtype)
 - [ShipmentStateType](./literals.md#shipmentstatetype)
@@ -200,6 +202,7 @@ def get_value() -> AddressTypeDef:
 - [ListClustersRequestListClustersPaginateTypeDef](./type_defs.md#listclustersrequestlistclusterspaginatetypedef)
 - [ListCompatibleImagesRequestListCompatibleImagesPaginateTypeDef](./type_defs.md#listcompatibleimagesrequestlistcompatibleimagespaginatetypedef)
 - [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
+- [ListLongTermPricingRequestListLongTermPricingPaginateTypeDef](./type_defs.md#listlongtermpricingrequestlistlongtermpricingpaginatetypedef)
 - [LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef)
 - [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
 - [ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)

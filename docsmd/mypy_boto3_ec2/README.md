@@ -622,6 +622,7 @@ def get_value() -> AcceleratorManufacturerType:
 - [ImageExistsWaiterName](./literals.md#imageexistswaitername)
 - [ImageStateType](./literals.md#imagestatetype)
 - [ImageTypeValuesType](./literals.md#imagetypevaluestype)
+- [ImdsSupportValuesType](./literals.md#imdssupportvaluestype)
 - [InstanceAttributeNameType](./literals.md#instanceattributenametype)
 - [InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype)
 - [InstanceEventWindowStateType](./literals.md#instanceeventwindowstatetype)

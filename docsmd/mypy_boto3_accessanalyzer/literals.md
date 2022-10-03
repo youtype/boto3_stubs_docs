@@ -438,11 +438,12 @@ ValidatePolicyPaginatorName = Literal[
 from mypy_boto3_accessanalyzer.literals import ValidatePolicyResourceTypeType
 
 def get_value() -> ValidatePolicyResourceTypeType:
-    return "AWS::S3::AccessPoint"
+    return "AWS::IAM::AssumeRolePolicyDocument"
 ```
 
 ```python title="Definition"
 ValidatePolicyResourceTypeType = Literal[
+    "AWS::IAM::AssumeRolePolicyDocument",
     "AWS::S3::AccessPoint",
     "AWS::S3::Bucket",
     "AWS::S3::MultiRegionAccessPoint",

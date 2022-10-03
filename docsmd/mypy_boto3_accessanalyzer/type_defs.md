@@ -69,29 +69,29 @@ from mypy_boto3_accessanalyzer.type_defs import AnalyzedResourceTypeDef
 
 def get_value() -> AnalyzedResourceTypeDef:
     return {
-        "analyzedAt": ...,
-        "createdAt": ...,
-        "isPublic": ...,
         "resourceArn": ...,
-        "resourceOwnerAccount": ...,
         "resourceType": ...,
+        "createdAt": ...,
+        "analyzedAt": ...,
         "updatedAt": ...,
+        "isPublic": ...,
+        "resourceOwnerAccount": ...,
     }
 ```
 
 ```python title="Definition"
 class AnalyzedResourceTypeDef(TypedDict):
-    analyzedAt: datetime,
-    createdAt: datetime,
-    isPublic: bool,
     resourceArn: str,
-    resourceOwnerAccount: str,
     resourceType: ResourceTypeType,  # (1)
+    createdAt: datetime,
+    analyzedAt: datetime,
     updatedAt: datetime,
+    isPublic: bool,
+    resourceOwnerAccount: str,
     actions: NotRequired[List[str]],
-    error: NotRequired[str],
     sharedVia: NotRequired[List[str]],
     status: NotRequired[FindingStatusType],  # (2)
+    error: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
@@ -139,16 +139,16 @@ from mypy_boto3_accessanalyzer.type_defs import CriterionTypeDef
 
 def get_value() -> CriterionTypeDef:
     return {
-        "contains": ...,
+        "eq": ...,
     }
 ```
 
 ```python title="Definition"
 class CriterionTypeDef(TypedDict):
-    contains: NotRequired[Sequence[str]],
     eq: NotRequired[Sequence[str]],
-    exists: NotRequired[bool],
     neq: NotRequired[Sequence[str]],
+    contains: NotRequired[Sequence[str]],
+    exists: NotRequired[bool],
 ```
 
 ## CancelPolicyGenerationRequestRequestTypeDef
@@ -181,8 +181,8 @@ def get_value() -> TrailTypeDef:
 ```python title="Definition"
 class TrailTypeDef(TypedDict):
     cloudTrailArn: str,
-    allRegions: NotRequired[bool],
     regions: NotRequired[Sequence[str]],
+    allRegions: NotRequired[bool],
 ```
 
 ## TrailPropertiesTypeDef
@@ -199,8 +199,8 @@ def get_value() -> TrailPropertiesTypeDef:
 ```python title="Definition"
 class TrailPropertiesTypeDef(TypedDict):
     cloudTrailArn: str,
-    allRegions: NotRequired[bool],
     regions: NotRequired[List[str]],
+    allRegions: NotRequired[bool],
 ```
 
 ## IamRoleConfigurationTypeDef
@@ -518,8 +518,8 @@ def get_value() -> ListAccessPreviewsRequestRequestTypeDef:
 ```python title="Definition"
 class ListAccessPreviewsRequestRequestTypeDef(TypedDict):
     analyzerArn: str,
-    maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
 ## ListAnalyzedResourcesRequestRequestTypeDef
@@ -536,9 +536,9 @@ def get_value() -> ListAnalyzedResourcesRequestRequestTypeDef:
 ```python title="Definition"
 class ListAnalyzedResourcesRequestRequestTypeDef(TypedDict):
     analyzerArn: str,
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
     resourceType: NotRequired[ResourceTypeType],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
@@ -549,14 +549,14 @@ from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersRequestRequestTypeD
 
 def get_value() -> ListAnalyzersRequestRequestTypeDef:
     return {
-        "maxResults": ...,
+        "nextToken": ...,
     }
 ```
 
 ```python title="Definition"
 class ListAnalyzersRequestRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
     type: NotRequired[TypeType],  # (1)
 ```
 
@@ -575,8 +575,8 @@ def get_value() -> ListArchiveRulesRequestRequestTypeDef:
 ```python title="Definition"
 class ListArchiveRulesRequestRequestTypeDef(TypedDict):
     analyzerName: str,
-    maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
 ## SortCriteriaTypeDef
@@ -604,15 +604,15 @@ from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsRequestRequ
 
 def get_value() -> ListPolicyGenerationsRequestRequestTypeDef:
     return {
-        "maxResults": ...,
+        "principalArn": ...,
     }
 ```
 
 ```python title="Definition"
 class ListPolicyGenerationsRequestRequestTypeDef(TypedDict):
+    principalArn: NotRequired[str],
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
-    principalArn: NotRequired[str],
 ```
 
 ## PolicyGenerationTypeDef
@@ -624,8 +624,8 @@ def get_value() -> PolicyGenerationTypeDef:
     return {
         "jobId": ...,
         "principalArn": ...,
-        "startedOn": ...,
         "status": ...,
+        "startedOn": ...,
     }
 ```
 
@@ -633,8 +633,8 @@ def get_value() -> PolicyGenerationTypeDef:
 class PolicyGenerationTypeDef(TypedDict):
     jobId: str,
     principalArn: str,
-    startedOn: datetime,
     status: JobStatusType,  # (1)
+    startedOn: datetime,
     completedOn: NotRequired[datetime],
 ```
 
@@ -678,15 +678,15 @@ from mypy_boto3_accessanalyzer.type_defs import SubstringTypeDef
 
 def get_value() -> SubstringTypeDef:
     return {
-        "length": ...,
         "start": ...,
+        "length": ...,
     }
 ```
 
 ```python title="Definition"
 class SubstringTypeDef(TypedDict):
-    length: int,
     start: int,
+    length: int,
 ```
 
 ## PolicyGenerationDetailsTypeDef
@@ -712,16 +712,16 @@ from mypy_boto3_accessanalyzer.type_defs import PositionTypeDef
 
 def get_value() -> PositionTypeDef:
     return {
-        "column": ...,
         "line": ...,
+        "column": ...,
         "offset": ...,
     }
 ```
 
 ```python title="Definition"
 class PositionTypeDef(TypedDict):
-    column: int,
     line: int,
+    column: int,
     offset: int,
 ```
 
@@ -813,9 +813,9 @@ def get_value() -> UpdateFindingsRequestRequestTypeDef:
 class UpdateFindingsRequestRequestTypeDef(TypedDict):
     analyzerArn: str,
     status: FindingStatusUpdateType,  # (1)
-    clientToken: NotRequired[str],
     ids: NotRequired[Sequence[str]],
     resourceArn: NotRequired[str],
+    clientToken: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: FindingStatusUpdateType](./literals.md#findingstatusupdatetype) 
@@ -851,18 +851,18 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewSummaryTypeDef
 
 def get_value() -> AccessPreviewSummaryTypeDef:
     return {
+        "id": ...,
         "analyzerArn": ...,
         "createdAt": ...,
-        "id": ...,
         "status": ...,
     }
 ```
 
 ```python title="Definition"
 class AccessPreviewSummaryTypeDef(TypedDict):
+    id: str,
     analyzerArn: str,
     createdAt: datetime,
-    id: str,
     status: AccessPreviewStatusType,  # (1)
     statusReason: NotRequired[AccessPreviewStatusReasonTypeDef],  # (2)
 ```
@@ -876,19 +876,19 @@ from mypy_boto3_accessanalyzer.type_defs import S3BucketAclGrantConfigurationTyp
 
 def get_value() -> S3BucketAclGrantConfigurationTypeDef:
     return {
-        "grantee": ...,
         "permission": ...,
+        "grantee": ...,
     }
 ```
 
 ```python title="Definition"
 class S3BucketAclGrantConfigurationTypeDef(TypedDict):
-    grantee: AclGranteeTypeDef,  # (1)
-    permission: AclPermissionType,  # (2)
+    permission: AclPermissionType,  # (1)
+    grantee: AclGranteeTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: AclGranteeTypeDef](./type_defs.md#aclgranteetypedef) 
-2. See [:material-code-brackets: AclPermissionType](./literals.md#aclpermissiontype) 
+1. See [:material-code-brackets: AclPermissionType](./literals.md#aclpermissiontype) 
+2. See [:material-code-braces: AclGranteeTypeDef](./type_defs.md#aclgranteetypedef) 
 ## AnalyzerSummaryTypeDef
 
 ```python title="Usage Example"
@@ -897,29 +897,29 @@ from mypy_boto3_accessanalyzer.type_defs import AnalyzerSummaryTypeDef
 def get_value() -> AnalyzerSummaryTypeDef:
     return {
         "arn": ...,
-        "createdAt": ...,
         "name": ...,
-        "status": ...,
         "type": ...,
+        "createdAt": ...,
+        "status": ...,
     }
 ```
 
 ```python title="Definition"
 class AnalyzerSummaryTypeDef(TypedDict):
     arn: str,
-    createdAt: datetime,
     name: str,
-    status: AnalyzerStatusType,  # (1)
-    type: TypeType,  # (3)
+    type: TypeType,  # (1)
+    createdAt: datetime,
+    status: AnalyzerStatusType,  # (2)
     lastResourceAnalyzed: NotRequired[str],
     lastResourceAnalyzedAt: NotRequired[datetime],
-    statusReason: NotRequired[StatusReasonTypeDef],  # (2)
     tags: NotRequired[Dict[str, str]],
+    statusReason: NotRequired[StatusReasonTypeDef],  # (3)
 ```
 
-1. See [:material-code-brackets: AnalyzerStatusType](./literals.md#analyzerstatustype) 
-2. See [:material-code-braces: StatusReasonTypeDef](./type_defs.md#statusreasontypedef) 
-3. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-brackets: AnalyzerStatusType](./literals.md#analyzerstatustype) 
+3. See [:material-code-braces: StatusReasonTypeDef](./type_defs.md#statusreasontypedef) 
 ## ArchiveRuleSummaryTypeDef
 
 ```python title="Usage Example"
@@ -927,18 +927,18 @@ from mypy_boto3_accessanalyzer.type_defs import ArchiveRuleSummaryTypeDef
 
 def get_value() -> ArchiveRuleSummaryTypeDef:
     return {
-        "createdAt": ...,
-        "filter": ...,
         "ruleName": ...,
+        "filter": ...,
+        "createdAt": ...,
         "updatedAt": ...,
     }
 ```
 
 ```python title="Definition"
 class ArchiveRuleSummaryTypeDef(TypedDict):
-    createdAt: datetime,
-    filter: Dict[str, CriterionTypeDef],  # (1)
     ruleName: str,
+    filter: Dict[str, CriterionTypeDef],  # (1)
+    createdAt: datetime,
     updatedAt: datetime,
 ```
 
@@ -951,16 +951,16 @@ from mypy_boto3_accessanalyzer.type_defs import CreateArchiveRuleRequestRequestT
 def get_value() -> CreateArchiveRuleRequestRequestTypeDef:
     return {
         "analyzerName": ...,
-        "filter": ...,
         "ruleName": ...,
+        "filter": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateArchiveRuleRequestRequestTypeDef(TypedDict):
     analyzerName: str,
-    filter: Mapping[str, CriterionTypeDef],  # (1)
     ruleName: str,
+    filter: Mapping[str, CriterionTypeDef],  # (1)
     clientToken: NotRequired[str],
 ```
 
@@ -972,15 +972,15 @@ from mypy_boto3_accessanalyzer.type_defs import InlineArchiveRuleTypeDef
 
 def get_value() -> InlineArchiveRuleTypeDef:
     return {
-        "filter": ...,
         "ruleName": ...,
+        "filter": ...,
     }
 ```
 
 ```python title="Definition"
 class InlineArchiveRuleTypeDef(TypedDict):
-    filter: Mapping[str, CriterionTypeDef],  # (1)
     ruleName: str,
+    filter: Mapping[str, CriterionTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
@@ -1001,8 +1001,8 @@ class ListAccessPreviewFindingsRequestRequestTypeDef(TypedDict):
     accessPreviewId: str,
     analyzerArn: str,
     filter: NotRequired[Mapping[str, CriterionTypeDef]],  # (1)
-    maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
 1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
@@ -1014,16 +1014,16 @@ from mypy_boto3_accessanalyzer.type_defs import UpdateArchiveRuleRequestRequestT
 def get_value() -> UpdateArchiveRuleRequestRequestTypeDef:
     return {
         "analyzerName": ...,
-        "filter": ...,
         "ruleName": ...,
+        "filter": ...,
     }
 ```
 
 ```python title="Definition"
 class UpdateArchiveRuleRequestRequestTypeDef(TypedDict):
     analyzerName: str,
-    filter: Mapping[str, CriterionTypeDef],  # (1)
     ruleName: str,
+    filter: Mapping[str, CriterionTypeDef],  # (1)
     clientToken: NotRequired[str],
 ```
 
@@ -1035,17 +1035,17 @@ from mypy_boto3_accessanalyzer.type_defs import CloudTrailDetailsTypeDef
 
 def get_value() -> CloudTrailDetailsTypeDef:
     return {
+        "trails": ...,
         "accessRole": ...,
         "startTime": ...,
-        "trails": ...,
     }
 ```
 
 ```python title="Definition"
 class CloudTrailDetailsTypeDef(TypedDict):
+    trails: Sequence[TrailTypeDef],  # (1)
     accessRole: str,
     startTime: Union[datetime, str],
-    trails: Sequence[TrailTypeDef],  # (1)
     endTime: NotRequired[Union[datetime, str]],
 ```
 
@@ -1057,17 +1057,17 @@ from mypy_boto3_accessanalyzer.type_defs import CloudTrailPropertiesTypeDef
 
 def get_value() -> CloudTrailPropertiesTypeDef:
     return {
-        "endTime": ...,
-        "startTime": ...,
         "trailProperties": ...,
+        "startTime": ...,
+        "endTime": ...,
     }
 ```
 
 ```python title="Definition"
 class CloudTrailPropertiesTypeDef(TypedDict):
-    endTime: datetime,
-    startTime: datetime,
     trailProperties: List[TrailPropertiesTypeDef],  # (1)
+    startTime: datetime,
+    endTime: datetime,
 ```
 
 1. See [:material-code-braces: TrailPropertiesTypeDef](./type_defs.md#trailpropertiestypedef) 
@@ -1219,12 +1219,12 @@ def get_value() -> FindingSourceTypeDef:
 
 ```python title="Definition"
 class FindingSourceTypeDef(TypedDict):
-    type: FindingSourceTypeType,  # (2)
-    detail: NotRequired[FindingSourceDetailTypeDef],  # (1)
+    type: FindingSourceTypeType,  # (1)
+    detail: NotRequired[FindingSourceDetailTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: FindingSourceDetailTypeDef](./type_defs.md#findingsourcedetailtypedef) 
-2. See [:material-code-brackets: FindingSourceTypeType](./literals.md#findingsourcetypetype) 
+1. See [:material-code-brackets: FindingSourceTypeType](./literals.md#findingsourcetypetype) 
+2. See [:material-code-braces: FindingSourceDetailTypeDef](./type_defs.md#findingsourcedetailtypedef) 
 ## JobDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1233,22 +1233,22 @@ from mypy_boto3_accessanalyzer.type_defs import JobDetailsTypeDef
 def get_value() -> JobDetailsTypeDef:
     return {
         "jobId": ...,
-        "startedOn": ...,
         "status": ...,
+        "startedOn": ...,
     }
 ```
 
 ```python title="Definition"
 class JobDetailsTypeDef(TypedDict):
     jobId: str,
+    status: JobStatusType,  # (1)
     startedOn: datetime,
-    status: JobStatusType,  # (2)
     completedOn: NotRequired[datetime],
-    jobError: NotRequired[JobErrorTypeDef],  # (1)
+    jobError: NotRequired[JobErrorTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: JobErrorTypeDef](./type_defs.md#joberrortypedef) 
-2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: JobErrorTypeDef](./type_defs.md#joberrortypedef) 
 ## KmsGrantConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1256,23 +1256,23 @@ from mypy_boto3_accessanalyzer.type_defs import KmsGrantConfigurationTypeDef
 
 def get_value() -> KmsGrantConfigurationTypeDef:
     return {
+        "operations": ...,
         "granteePrincipal": ...,
         "issuingAccount": ...,
-        "operations": ...,
     }
 ```
 
 ```python title="Definition"
 class KmsGrantConfigurationTypeDef(TypedDict):
+    operations: Sequence[KmsGrantOperationType],  # (1)
     granteePrincipal: str,
     issuingAccount: str,
-    operations: Sequence[KmsGrantOperationType],  # (2)
-    constraints: NotRequired[KmsGrantConstraintsTypeDef],  # (1)
     retiringPrincipal: NotRequired[str],
+    constraints: NotRequired[KmsGrantConstraintsTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: KmsGrantConstraintsTypeDef](./type_defs.md#kmsgrantconstraintstypedef) 
-2. See [:material-code-brackets: KmsGrantOperationType](./literals.md#kmsgrantoperationtype) 
+1. See [:material-code-brackets: KmsGrantOperationType](./literals.md#kmsgrantoperationtype) 
+2. See [:material-code-braces: KmsGrantConstraintsTypeDef](./type_defs.md#kmsgrantconstraintstypedef) 
 ## ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1450,9 +1450,9 @@ def get_value() -> ListFindingsRequestRequestTypeDef:
 class ListFindingsRequestRequestTypeDef(TypedDict):
     analyzerArn: str,
     filter: NotRequired[Mapping[str, CriterionTypeDef]],  # (1)
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
     sort: NotRequired[SortCriteriaTypeDef],  # (2)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
 ```
 
 1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
@@ -1464,16 +1464,16 @@ from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsResponseTyp
 
 def get_value() -> ListPolicyGenerationsResponseTypeDef:
     return {
-        "nextToken": ...,
         "policyGenerations": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
 class ListPolicyGenerationsResponseTypeDef(TypedDict):
-    nextToken: str,
     policyGenerations: List[PolicyGenerationTypeDef],  # (1)
+    nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -1486,14 +1486,14 @@ from mypy_boto3_accessanalyzer.type_defs import NetworkOriginConfigurationTypeDe
 
 def get_value() -> NetworkOriginConfigurationTypeDef:
     return {
-        "internetConfiguration": ...,
+        "vpcConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
 class NetworkOriginConfigurationTypeDef(TypedDict):
-    internetConfiguration: NotRequired[Mapping[str, Any]],
     vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
+    internetConfiguration: NotRequired[Mapping[str, Any]],
 ```
 
 1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
@@ -1524,15 +1524,15 @@ from mypy_boto3_accessanalyzer.type_defs import SpanTypeDef
 
 def get_value() -> SpanTypeDef:
     return {
-        "end": ...,
         "start": ...,
+        "end": ...,
     }
 ```
 
 ```python title="Definition"
 class SpanTypeDef(TypedDict):
-    end: PositionTypeDef,  # (1)
     start: PositionTypeDef,  # (1)
+    end: PositionTypeDef,  # (1)
 ```
 
 1. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
@@ -1660,8 +1660,8 @@ class CreateAnalyzerRequestRequestTypeDef(TypedDict):
     analyzerName: str,
     type: TypeType,  # (1)
     archiveRules: NotRequired[Sequence[InlineArchiveRuleTypeDef]],  # (2)
-    clientToken: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
+    clientToken: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
@@ -1680,8 +1680,8 @@ def get_value() -> StartPolicyGenerationRequestRequestTypeDef:
 ```python title="Definition"
 class StartPolicyGenerationRequestRequestTypeDef(TypedDict):
     policyGenerationDetails: PolicyGenerationDetailsTypeDef,  # (1)
-    clientToken: NotRequired[str],
     cloudTrailDetails: NotRequired[CloudTrailDetailsTypeDef],  # (2)
+    clientToken: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PolicyGenerationDetailsTypeDef](./type_defs.md#policygenerationdetailstypedef) 
@@ -1700,8 +1700,8 @@ def get_value() -> GeneratedPolicyPropertiesTypeDef:
 ```python title="Definition"
 class GeneratedPolicyPropertiesTypeDef(TypedDict):
     principalArn: str,
-    cloudTrailProperties: NotRequired[CloudTrailPropertiesTypeDef],  # (1)
     isComplete: NotRequired[bool],
+    cloudTrailProperties: NotRequired[CloudTrailPropertiesTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: CloudTrailPropertiesTypeDef](./type_defs.md#cloudtrailpropertiestypedef) 
@@ -1712,39 +1712,39 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef
 
 def get_value() -> AccessPreviewFindingTypeDef:
     return {
-        "changeType": ...,
-        "createdAt": ...,
         "id": ...,
-        "resourceOwnerAccount": ...,
         "resourceType": ...,
+        "createdAt": ...,
+        "changeType": ...,
         "status": ...,
+        "resourceOwnerAccount": ...,
     }
 ```
 
 ```python title="Definition"
 class AccessPreviewFindingTypeDef(TypedDict):
-    changeType: FindingChangeTypeType,  # (1)
-    createdAt: datetime,
     id: str,
+    resourceType: ResourceTypeType,  # (2)
+    createdAt: datetime,
+    changeType: FindingChangeTypeType,  # (3)
+    status: FindingStatusType,  # (1)
     resourceOwnerAccount: str,
-    resourceType: ResourceTypeType,  # (3)
-    status: FindingStatusType,  # (2)
+    existingFindingId: NotRequired[str],
+    existingFindingStatus: NotRequired[FindingStatusType],  # (1)
+    principal: NotRequired[Dict[str, str]],
     action: NotRequired[List[str]],
     condition: NotRequired[Dict[str, str]],
-    error: NotRequired[str],
-    existingFindingId: NotRequired[str],
-    existingFindingStatus: NotRequired[FindingStatusType],  # (2)
-    isPublic: NotRequired[bool],
-    principal: NotRequired[Dict[str, str]],
     resource: NotRequired[str],
-    sources: NotRequired[List[FindingSourceTypeDef]],  # (4)
+    isPublic: NotRequired[bool],
+    error: NotRequired[str],
+    sources: NotRequired[List[FindingSourceTypeDef]],  # (5)
 ```
 
-1. See [:material-code-brackets: FindingChangeTypeType](./literals.md#findingchangetypetype) 
-2. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
-3. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-4. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
-5. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+1. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-brackets: FindingChangeTypeType](./literals.md#findingchangetypetype) 
+4. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+5. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
 ## FindingSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1752,38 +1752,38 @@ from mypy_boto3_accessanalyzer.type_defs import FindingSummaryTypeDef
 
 def get_value() -> FindingSummaryTypeDef:
     return {
-        "analyzedAt": ...,
+        "id": ...,
+        "resourceType": ...,
         "condition": ...,
         "createdAt": ...,
-        "id": ...,
-        "resourceOwnerAccount": ...,
-        "resourceType": ...,
-        "status": ...,
+        "analyzedAt": ...,
         "updatedAt": ...,
+        "status": ...,
+        "resourceOwnerAccount": ...,
     }
 ```
 
 ```python title="Definition"
 class FindingSummaryTypeDef(TypedDict):
-    analyzedAt: datetime,
+    id: str,
+    resourceType: ResourceTypeType,  # (1)
     condition: Dict[str, str],
     createdAt: datetime,
-    id: str,
-    resourceOwnerAccount: str,
-    resourceType: ResourceTypeType,  # (1)
-    status: FindingStatusType,  # (3)
+    analyzedAt: datetime,
     updatedAt: datetime,
-    action: NotRequired[List[str]],
-    error: NotRequired[str],
-    isPublic: NotRequired[bool],
+    status: FindingStatusType,  # (2)
+    resourceOwnerAccount: str,
     principal: NotRequired[Dict[str, str]],
+    action: NotRequired[List[str]],
     resource: NotRequired[str],
-    sources: NotRequired[List[FindingSourceTypeDef]],  # (2)
+    isPublic: NotRequired[bool],
+    error: NotRequired[str],
+    sources: NotRequired[List[FindingSourceTypeDef]],  # (3)
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
-3. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+2. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+3. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
 ## FindingTypeDef
 
 ```python title="Usage Example"
@@ -1791,38 +1791,38 @@ from mypy_boto3_accessanalyzer.type_defs import FindingTypeDef
 
 def get_value() -> FindingTypeDef:
     return {
-        "analyzedAt": ...,
+        "id": ...,
+        "resourceType": ...,
         "condition": ...,
         "createdAt": ...,
-        "id": ...,
-        "resourceOwnerAccount": ...,
-        "resourceType": ...,
-        "status": ...,
+        "analyzedAt": ...,
         "updatedAt": ...,
+        "status": ...,
+        "resourceOwnerAccount": ...,
     }
 ```
 
 ```python title="Definition"
 class FindingTypeDef(TypedDict):
-    analyzedAt: datetime,
+    id: str,
+    resourceType: ResourceTypeType,  # (1)
     condition: Dict[str, str],
     createdAt: datetime,
-    id: str,
-    resourceOwnerAccount: str,
-    resourceType: ResourceTypeType,  # (1)
-    status: FindingStatusType,  # (3)
+    analyzedAt: datetime,
     updatedAt: datetime,
-    action: NotRequired[List[str]],
-    error: NotRequired[str],
-    isPublic: NotRequired[bool],
+    status: FindingStatusType,  # (2)
+    resourceOwnerAccount: str,
     principal: NotRequired[Dict[str, str]],
+    action: NotRequired[List[str]],
     resource: NotRequired[str],
-    sources: NotRequired[List[FindingSourceTypeDef]],  # (2)
+    isPublic: NotRequired[bool],
+    error: NotRequired[str],
+    sources: NotRequired[List[FindingSourceTypeDef]],  # (3)
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
-3. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+2. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+3. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
 ## KmsKeyConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1830,14 +1830,14 @@ from mypy_boto3_accessanalyzer.type_defs import KmsKeyConfigurationTypeDef
 
 def get_value() -> KmsKeyConfigurationTypeDef:
     return {
-        "grants": ...,
+        "keyPolicies": ...,
     }
 ```
 
 ```python title="Definition"
 class KmsKeyConfigurationTypeDef(TypedDict):
-    grants: NotRequired[Sequence[KmsGrantConfigurationTypeDef]],  # (1)
     keyPolicies: NotRequired[Mapping[str, str]],
+    grants: NotRequired[Sequence[KmsGrantConfigurationTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef) 
@@ -1855,12 +1855,12 @@ def get_value() -> S3AccessPointConfigurationTypeDef:
 ```python title="Definition"
 class S3AccessPointConfigurationTypeDef(TypedDict):
     accessPointPolicy: NotRequired[str],
-    networkOrigin: NotRequired[NetworkOriginConfigurationTypeDef],  # (1)
-    publicAccessBlock: NotRequired[S3PublicAccessBlockConfigurationTypeDef],  # (2)
+    publicAccessBlock: NotRequired[S3PublicAccessBlockConfigurationTypeDef],  # (1)
+    networkOrigin: NotRequired[NetworkOriginConfigurationTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: NetworkOriginConfigurationTypeDef](./type_defs.md#networkoriginconfigurationtypedef) 
-2. See [:material-code-braces: S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef) 
+1. See [:material-code-braces: S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef) 
+2. See [:material-code-braces: NetworkOriginConfigurationTypeDef](./type_defs.md#networkoriginconfigurationtypedef) 
 ## LocationTypeDef
 
 ```python title="Usage Example"
@@ -1894,12 +1894,12 @@ def get_value() -> GeneratedPolicyResultTypeDef:
 
 ```python title="Definition"
 class GeneratedPolicyResultTypeDef(TypedDict):
-    properties: GeneratedPolicyPropertiesTypeDef,  # (2)
-    generatedPolicies: NotRequired[List[GeneratedPolicyTypeDef]],  # (1)
+    properties: GeneratedPolicyPropertiesTypeDef,  # (1)
+    generatedPolicies: NotRequired[List[GeneratedPolicyTypeDef]],  # (2)
 ```
 
-1. See [:material-code-braces: GeneratedPolicyTypeDef](./type_defs.md#generatedpolicytypedef) 
-2. See [:material-code-braces: GeneratedPolicyPropertiesTypeDef](./type_defs.md#generatedpolicypropertiestypedef) 
+1. See [:material-code-braces: GeneratedPolicyPropertiesTypeDef](./type_defs.md#generatedpolicypropertiestypedef) 
+2. See [:material-code-braces: GeneratedPolicyTypeDef](./type_defs.md#generatedpolicytypedef) 
 ## ListAccessPreviewFindingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1971,21 +1971,21 @@ from mypy_boto3_accessanalyzer.type_defs import S3BucketConfigurationTypeDef
 
 def get_value() -> S3BucketConfigurationTypeDef:
     return {
-        "accessPoints": ...,
+        "bucketPolicy": ...,
     }
 ```
 
 ```python title="Definition"
 class S3BucketConfigurationTypeDef(TypedDict):
-    accessPoints: NotRequired[Mapping[str, S3AccessPointConfigurationTypeDef]],  # (1)
-    bucketAclGrants: NotRequired[Sequence[S3BucketAclGrantConfigurationTypeDef]],  # (2)
     bucketPolicy: NotRequired[str],
-    bucketPublicAccessBlock: NotRequired[S3PublicAccessBlockConfigurationTypeDef],  # (3)
+    bucketAclGrants: NotRequired[Sequence[S3BucketAclGrantConfigurationTypeDef]],  # (1)
+    bucketPublicAccessBlock: NotRequired[S3PublicAccessBlockConfigurationTypeDef],  # (2)
+    accessPoints: NotRequired[Mapping[str, S3AccessPointConfigurationTypeDef]],  # (3)
 ```
 
-1. See [:material-code-braces: S3AccessPointConfigurationTypeDef](./type_defs.md#s3accesspointconfigurationtypedef) 
-2. See [:material-code-braces: S3BucketAclGrantConfigurationTypeDef](./type_defs.md#s3bucketaclgrantconfigurationtypedef) 
-3. See [:material-code-braces: S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef) 
+1. See [:material-code-braces: S3BucketAclGrantConfigurationTypeDef](./type_defs.md#s3bucketaclgrantconfigurationtypedef) 
+2. See [:material-code-braces: S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef) 
+3. See [:material-code-braces: S3AccessPointConfigurationTypeDef](./type_defs.md#s3accesspointconfigurationtypedef) 
 ## ValidatePolicyFindingTypeDef
 
 ```python title="Usage Example"
@@ -2019,21 +2019,21 @@ from mypy_boto3_accessanalyzer.type_defs import GetGeneratedPolicyResponseTypeDe
 
 def get_value() -> GetGeneratedPolicyResponseTypeDef:
     return {
-        "generatedPolicyResult": ...,
         "jobDetails": ...,
+        "generatedPolicyResult": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
 class GetGeneratedPolicyResponseTypeDef(TypedDict):
-    generatedPolicyResult: GeneratedPolicyResultTypeDef,  # (1)
-    jobDetails: JobDetailsTypeDef,  # (2)
+    jobDetails: JobDetailsTypeDef,  # (1)
+    generatedPolicyResult: GeneratedPolicyResultTypeDef,  # (2)
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: GeneratedPolicyResultTypeDef](./type_defs.md#generatedpolicyresulttypedef) 
-2. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
+1. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
+2. See [:material-code-braces: GeneratedPolicyResultTypeDef](./type_defs.md#generatedpolicyresulttypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationTypeDef
 
@@ -2050,15 +2050,15 @@ def get_value() -> ConfigurationTypeDef:
 class ConfigurationTypeDef(TypedDict):
     iamRole: NotRequired[IamRoleConfigurationTypeDef],  # (1)
     kmsKey: NotRequired[KmsKeyConfigurationTypeDef],  # (2)
-    s3Bucket: NotRequired[S3BucketConfigurationTypeDef],  # (3)
-    secretsManagerSecret: NotRequired[SecretsManagerSecretConfigurationTypeDef],  # (4)
+    secretsManagerSecret: NotRequired[SecretsManagerSecretConfigurationTypeDef],  # (3)
+    s3Bucket: NotRequired[S3BucketConfigurationTypeDef],  # (4)
     sqsQueue: NotRequired[SqsQueueConfigurationTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: IamRoleConfigurationTypeDef](./type_defs.md#iamroleconfigurationtypedef) 
 2. See [:material-code-braces: KmsKeyConfigurationTypeDef](./type_defs.md#kmskeyconfigurationtypedef) 
-3. See [:material-code-braces: S3BucketConfigurationTypeDef](./type_defs.md#s3bucketconfigurationtypedef) 
-4. See [:material-code-braces: SecretsManagerSecretConfigurationTypeDef](./type_defs.md#secretsmanagersecretconfigurationtypedef) 
+3. See [:material-code-braces: SecretsManagerSecretConfigurationTypeDef](./type_defs.md#secretsmanagersecretconfigurationtypedef) 
+4. See [:material-code-braces: S3BucketConfigurationTypeDef](./type_defs.md#s3bucketconfigurationtypedef) 
 5. See [:material-code-braces: SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef) 
 ## ValidatePolicyResponseTypeDef
 
@@ -2089,20 +2089,20 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewTypeDef
 
 def get_value() -> AccessPreviewTypeDef:
     return {
+        "id": ...,
         "analyzerArn": ...,
         "configurations": ...,
         "createdAt": ...,
-        "id": ...,
         "status": ...,
     }
 ```
 
 ```python title="Definition"
 class AccessPreviewTypeDef(TypedDict):
+    id: str,
     analyzerArn: str,
     configurations: Dict[str, ConfigurationTypeDef],  # (1)
     createdAt: datetime,
-    id: str,
     status: AccessPreviewStatusType,  # (2)
     statusReason: NotRequired[AccessPreviewStatusReasonTypeDef],  # (3)
 ```

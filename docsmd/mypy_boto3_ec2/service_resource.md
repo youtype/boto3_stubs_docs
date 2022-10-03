@@ -1592,6 +1592,7 @@ def register_image(
     BootMode: BootModeValuesType = ...,  # (3)
     TpmSupport: TpmSupportValuesType = ...,  # (4)
     UefiData: str = ...,
+    ImdsSupport: ImdsSupportValuesType = ...,  # (5)
 ) -> Image:
     ...
 ```
@@ -1600,6 +1601,7 @@ def register_image(
 2. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 3. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
 4. See [:material-code-brackets: TpmSupportValuesType](./literals.md#tpmsupportvaluestype) 
+5. See [:material-code-brackets: ImdsSupportValuesType](./literals.md#imdssupportvaluestype) 
 
 
 ```python title="Usage example with kwargs"
@@ -2012,6 +2014,7 @@ def get_resource() -> Image:
 - `boot_mode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 - `tpm_support`: `Literal['v2.0']` (see [TpmSupportValuesType](./literals.md#tpmsupportvaluestype))
 - `deprecation_time`: `str`
+- `imds_support`: `Literal['v2.0']` (see [ImdsSupportValuesType](./literals.md#imdssupportvaluestype))
 - `id`: `str`
 
 

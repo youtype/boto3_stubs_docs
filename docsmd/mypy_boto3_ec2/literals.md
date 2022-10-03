@@ -3547,6 +3547,7 @@ ImageAttributeNameType = Literal[
     "blockDeviceMapping",
     "bootMode",
     "description",
+    "imdsSupport",
     "kernel",
     "lastLaunchedTime",
     "launchPermission",
@@ -3619,6 +3620,20 @@ ImageTypeValuesType = Literal[
     "kernel",
     "machine",
     "ramdisk",
+]
+```
+## ImdsSupportValuesType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import ImdsSupportValuesType
+
+def get_value() -> ImdsSupportValuesType:
+    return "v2.0"
+```
+
+```python title="Definition"
+ImdsSupportValuesType = Literal[
+    "v2.0",
 ]
 ```
 ## InstanceAttributeNameType

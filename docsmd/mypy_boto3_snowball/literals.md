@@ -152,6 +152,20 @@ ListJobsPaginatorName = Literal[
     "list_jobs",
 ]
 ```
+## ListLongTermPricingPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_snowball.literals import ListLongTermPricingPaginatorName
+
+def get_value() -> ListLongTermPricingPaginatorName:
+    return "list_long_term_pricing"
+```
+
+```python title="Definition"
+ListLongTermPricingPaginatorName = Literal[
+    "list_long_term_pricing",
+]
+```
 ## LongTermPricingTypeType
 
 ```python title="Usage Example"
@@ -245,6 +259,7 @@ SnowballCapacityType = Literal[
     "NoPreference",
     "T100",
     "T14",
+    "T32",
     "T42",
     "T50",
     "T8",
@@ -270,6 +285,7 @@ SnowballTypeType = Literal[
     "SNC1_HDD",
     "SNC1_SSD",
     "STANDARD",
+    "V3_5C",
 ]
 ```
 ## StorageUnitType
@@ -685,6 +701,7 @@ PaginatorName = Literal[
     "list_clusters",
     "list_compatible_images",
     "list_jobs",
+    "list_long_term_pricing",
 ]
 ```
 ## RegionName
