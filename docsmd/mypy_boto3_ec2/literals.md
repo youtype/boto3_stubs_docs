@@ -7265,6 +7265,7 @@ def get_value() -> VpcAttributeNameType:
 VpcAttributeNameType = Literal[
     "enableDnsHostnames",
     "enableDnsSupport",
+    "enableNetworkAddressUsageMetrics",
 ]
 ```
 ## VpcAvailableWaiterName
@@ -7628,6 +7629,7 @@ ServiceName = Literal[
     "connect",
     "connect-contact-lens",
     "connectcampaigns",
+    "connectcases",
     "connectparticipant",
     "controltower",
     "cur",

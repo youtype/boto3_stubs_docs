@@ -31,6 +31,8 @@ class AccessControlRuleTypeDef(TypedDict):
     NotUserIds: NotRequired[List[str]],
     DateCreated: NotRequired[datetime],
     DateModified: NotRequired[datetime],
+    ImpersonationRoleIds: NotRequired[List[str]],
+    NotImpersonationRoleIds: NotRequired[List[str]],
 ```
 
 1. See [:material-code-brackets: AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype) 
@@ -72,6 +74,48 @@ class AssociateMemberToGroupRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
     GroupId: str,
     MemberId: str,
+```
+
+## AssumeImpersonationRoleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import AssumeImpersonationRoleRequestRequestTypeDef
+
+def get_value() -> AssumeImpersonationRoleRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ImpersonationRoleId": ...,
+    }
+```
+
+```python title="Definition"
+class AssumeImpersonationRoleRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+```
+
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
 ```
 
 ## LambdaAvailabilityProviderTypeDef
@@ -203,30 +247,29 @@ class CreateGroupRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## ResponseMetadataTypeDef
+## ImpersonationRuleTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import ResponseMetadataTypeDef
+from mypy_boto3_workmail.type_defs import ImpersonationRuleTypeDef
 
-def get_value() -> ResponseMetadataTypeDef:
+def get_value() -> ImpersonationRuleTypeDef:
     return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
+        "ImpersonationRuleId": ...,
+        "Effect": ...,
     }
 ```
 
 ```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
+class ImpersonationRuleTypeDef(TypedDict):
+    ImpersonationRuleId: str,
+    Effect: AccessEffectType,  # (1)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    TargetUsers: NotRequired[Sequence[str]],
+    NotTargetUsers: NotRequired[Sequence[str]],
 ```
 
+1. See [:material-code-brackets: AccessEffectType](./literals.md#accesseffecttype) 
 ## CreateMobileDeviceAccessRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -425,6 +468,24 @@ def get_value() -> DeleteGroupRequestRequestTypeDef:
 class DeleteGroupRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
     GroupId: str,
+```
+
+## DeleteImpersonationRoleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DeleteImpersonationRoleRequestRequestTypeDef
+
+def get_value() -> DeleteImpersonationRoleRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ImpersonationRoleId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteImpersonationRoleRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    ImpersonationRoleId: str,
 ```
 
 ## DeleteMailboxPermissionsRequestRequestTypeDef
@@ -803,7 +864,6 @@ def get_value() -> GetAccessControlEffectRequestRequestTypeDef:
         "OrganizationId": ...,
         "IpAddress": ...,
         "Action": ...,
-        "UserId": ...,
     }
 ```
 
@@ -812,7 +872,8 @@ class GetAccessControlEffectRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
     IpAddress: str,
     Action: str,
-    UserId: str,
+    UserId: NotRequired[str],
+    ImpersonationRoleId: NotRequired[str],
 ```
 
 ## GetDefaultRetentionPolicyRequestRequestTypeDef
@@ -829,6 +890,61 @@ def get_value() -> GetDefaultRetentionPolicyRequestRequestTypeDef:
 ```python title="Definition"
 class GetDefaultRetentionPolicyRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
+```
+
+## GetImpersonationRoleEffectRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetImpersonationRoleEffectRequestRequestTypeDef
+
+def get_value() -> GetImpersonationRoleEffectRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ImpersonationRoleId": ...,
+        "TargetUser": ...,
+    }
+```
+
+```python title="Definition"
+class GetImpersonationRoleEffectRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+    TargetUser: str,
+```
+
+## ImpersonationMatchedRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ImpersonationMatchedRuleTypeDef
+
+def get_value() -> ImpersonationMatchedRuleTypeDef:
+    return {
+        "ImpersonationRuleId": ...,
+    }
+```
+
+```python title="Definition"
+class ImpersonationMatchedRuleTypeDef(TypedDict):
+    ImpersonationRuleId: NotRequired[str],
+    Name: NotRequired[str],
+```
+
+## GetImpersonationRoleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetImpersonationRoleRequestRequestTypeDef
+
+def get_value() -> GetImpersonationRoleRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ImpersonationRoleId": ...,
+    }
+```
+
+```python title="Definition"
+class GetImpersonationRoleRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    ImpersonationRoleId: str,
 ```
 
 ## GetMailDomainRequestRequestTypeDef
@@ -946,6 +1062,27 @@ class GroupTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
+## ImpersonationRoleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ImpersonationRoleTypeDef
+
+def get_value() -> ImpersonationRoleTypeDef:
+    return {
+        "ImpersonationRoleId": ...,
+    }
+```
+
+```python title="Definition"
+class ImpersonationRoleTypeDef(TypedDict):
+    ImpersonationRoleId: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[ImpersonationRoleTypeType],  # (1)
+    DateCreated: NotRequired[datetime],
+    DateModified: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ImpersonationRoleTypeType](./literals.md#impersonationroletypetype) 
 ## ListAccessControlRulesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1074,6 +1211,24 @@ def get_value() -> ListGroupsRequestRequestTypeDef:
 
 ```python title="Definition"
 class ListGroupsRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ListImpersonationRolesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListImpersonationRolesRequestRequestTypeDef
+
+def get_value() -> ListImpersonationRolesRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListImpersonationRolesRequestRequestTypeDef(TypedDict):
     OrganizationId: str,
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
@@ -1489,6 +1644,8 @@ class PutAccessControlRuleRequestRequestTypeDef(TypedDict):
     NotActions: NotRequired[Sequence[str]],
     UserIds: NotRequired[Sequence[str]],
     NotUserIds: NotRequired[Sequence[str]],
+    ImpersonationRoleIds: NotRequired[Sequence[str]],
+    NotImpersonationRoleIds: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype) 
@@ -1773,117 +1930,27 @@ class UpdatePrimaryEmailAddressRequestRequestTypeDef(TypedDict):
     Email: str,
 ```
 
-## AvailabilityConfigurationTypeDef
+## AssumeImpersonationRoleResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import AvailabilityConfigurationTypeDef
+from mypy_boto3_workmail.type_defs import AssumeImpersonationRoleResponseTypeDef
 
-def get_value() -> AvailabilityConfigurationTypeDef:
+def get_value() -> AssumeImpersonationRoleResponseTypeDef:
     return {
-        "DomainName": ...,
+        "Token": ...,
+        "ExpiresIn": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class AvailabilityConfigurationTypeDef(TypedDict):
-    DomainName: NotRequired[str],
-    ProviderType: NotRequired[AvailabilityProviderTypeType],  # (1)
-    EwsProvider: NotRequired[RedactedEwsAvailabilityProviderTypeDef],  # (2)
-    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (3)
-    DateCreated: NotRequired[datetime],
-    DateModified: NotRequired[datetime],
+class AssumeImpersonationRoleResponseTypeDef(TypedDict):
+    Token: str,
+    ExpiresIn: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-brackets: AvailabilityProviderTypeType](./literals.md#availabilityprovidertypetype) 
-2. See [:material-code-braces: RedactedEwsAvailabilityProviderTypeDef](./type_defs.md#redactedewsavailabilityprovidertypedef) 
-3. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
-## UpdateResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import UpdateResourceRequestRequestTypeDef
-
-def get_value() -> UpdateResourceRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-        "ResourceId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateResourceRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    ResourceId: str,
-    Name: NotRequired[str],
-    BookingOptions: NotRequired[BookingOptionsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
-## CreateAvailabilityConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import CreateAvailabilityConfigurationRequestRequestTypeDef
-
-def get_value() -> CreateAvailabilityConfigurationRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-        "DomainName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    DomainName: str,
-    ClientToken: NotRequired[str],
-    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
-    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
-2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
-## TestAvailabilityConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import TestAvailabilityConfigurationRequestRequestTypeDef
-
-def get_value() -> TestAvailabilityConfigurationRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-    }
-```
-
-```python title="Definition"
-class TestAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    DomainName: NotRequired[str],
-    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
-    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
-2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
-## UpdateAvailabilityConfigurationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import UpdateAvailabilityConfigurationRequestRequestTypeDef
-
-def get_value() -> UpdateAvailabilityConfigurationRequestRequestTypeDef:
-    return {
-        "OrganizationId": ...,
-        "DomainName": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
-    OrganizationId: str,
-    DomainName: str,
-    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
-    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
-2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGroupResponseTypeDef
 
 ```python title="Usage Example"
@@ -1899,6 +1966,25 @@ def get_value() -> CreateGroupResponseTypeDef:
 ```python title="Definition"
 class CreateGroupResponseTypeDef(TypedDict):
     GroupId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateImpersonationRoleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateImpersonationRoleResponseTypeDef
+
+def get_value() -> CreateImpersonationRoleResponseTypeDef:
+    return {
+        "ImpersonationRoleId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImpersonationRoleResponseTypeDef(TypedDict):
+    ImpersonationRoleId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2147,42 +2233,6 @@ class DescribeOrganizationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workmail.type_defs import DescribeResourceResponseTypeDef
-
-def get_value() -> DescribeResourceResponseTypeDef:
-    return {
-        "ResourceId": ...,
-        "Email": ...,
-        "Name": ...,
-        "Type": ...,
-        "BookingOptions": ...,
-        "State": ...,
-        "EnabledDate": ...,
-        "DisabledDate": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeResourceResponseTypeDef(TypedDict):
-    ResourceId: str,
-    Email: str,
-    Name: str,
-    Type: ResourceTypeType,  # (1)
-    BookingOptions: BookingOptionsTypeDef,  # (2)
-    State: EntityStateType,  # (3)
-    EnabledDate: datetime,
-    DisabledDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
-3. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserResponseTypeDef
 
 ```python title="Usage Example"
@@ -2372,6 +2422,239 @@ class TestAvailabilityConfigurationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AvailabilityConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import AvailabilityConfigurationTypeDef
+
+def get_value() -> AvailabilityConfigurationTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class AvailabilityConfigurationTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    ProviderType: NotRequired[AvailabilityProviderTypeType],  # (1)
+    EwsProvider: NotRequired[RedactedEwsAvailabilityProviderTypeDef],  # (2)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (3)
+    DateCreated: NotRequired[datetime],
+    DateModified: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: AvailabilityProviderTypeType](./literals.md#availabilityprovidertypetype) 
+2. See [:material-code-braces: RedactedEwsAvailabilityProviderTypeDef](./type_defs.md#redactedewsavailabilityprovidertypedef) 
+3. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+## DescribeResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import DescribeResourceResponseTypeDef
+
+def get_value() -> DescribeResourceResponseTypeDef:
+    return {
+        "ResourceId": ...,
+        "Email": ...,
+        "Name": ...,
+        "Type": ...,
+        "BookingOptions": ...,
+        "State": ...,
+        "EnabledDate": ...,
+        "DisabledDate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeResourceResponseTypeDef(TypedDict):
+    ResourceId: str,
+    Email: str,
+    Name: str,
+    Type: ResourceTypeType,  # (1)
+    BookingOptions: BookingOptionsTypeDef,  # (2)
+    State: EntityStateType,  # (3)
+    EnabledDate: datetime,
+    DisabledDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
+3. See [:material-code-brackets: EntityStateType](./literals.md#entitystatetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import UpdateResourceRequestRequestTypeDef
+
+def get_value() -> UpdateResourceRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResourceRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    ResourceId: str,
+    Name: NotRequired[str],
+    BookingOptions: NotRequired[BookingOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
+## CreateAvailabilityConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateAvailabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateAvailabilityConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    DomainName: str,
+    ClientToken: NotRequired[str],
+    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+## TestAvailabilityConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import TestAvailabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> TestAvailabilityConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class TestAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    DomainName: NotRequired[str],
+    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+## UpdateAvailabilityConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import UpdateAvailabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateAvailabilityConfigurationRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAvailabilityConfigurationRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    DomainName: str,
+    EwsProvider: NotRequired[EwsAvailabilityProviderTypeDef],  # (1)
+    LambdaProvider: NotRequired[LambdaAvailabilityProviderTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EwsAvailabilityProviderTypeDef](./type_defs.md#ewsavailabilityprovidertypedef) 
+2. See [:material-code-braces: LambdaAvailabilityProviderTypeDef](./type_defs.md#lambdaavailabilityprovidertypedef) 
+## CreateImpersonationRoleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import CreateImpersonationRoleRequestRequestTypeDef
+
+def get_value() -> CreateImpersonationRoleRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "Name": ...,
+        "Type": ...,
+        "Rules": ...,
+    }
+```
+
+```python title="Definition"
+class CreateImpersonationRoleRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    Name: str,
+    Type: ImpersonationRoleTypeType,  # (1)
+    Rules: Sequence[ImpersonationRuleTypeDef],  # (2)
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ImpersonationRoleTypeType](./literals.md#impersonationroletypetype) 
+2. See [:material-code-braces: ImpersonationRuleTypeDef](./type_defs.md#impersonationruletypedef) 
+## GetImpersonationRoleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetImpersonationRoleResponseTypeDef
+
+def get_value() -> GetImpersonationRoleResponseTypeDef:
+    return {
+        "ImpersonationRoleId": ...,
+        "Name": ...,
+        "Type": ...,
+        "Description": ...,
+        "Rules": ...,
+        "DateCreated": ...,
+        "DateModified": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetImpersonationRoleResponseTypeDef(TypedDict):
+    ImpersonationRoleId: str,
+    Name: str,
+    Type: ImpersonationRoleTypeType,  # (1)
+    Description: str,
+    Rules: List[ImpersonationRuleTypeDef],  # (2)
+    DateCreated: datetime,
+    DateModified: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: ImpersonationRoleTypeType](./literals.md#impersonationroletypetype) 
+2. See [:material-code-braces: ImpersonationRuleTypeDef](./type_defs.md#impersonationruletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateImpersonationRoleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import UpdateImpersonationRoleRequestRequestTypeDef
+
+def get_value() -> UpdateImpersonationRoleRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "ImpersonationRoleId": ...,
+        "Name": ...,
+        "Type": ...,
+        "Rules": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateImpersonationRoleRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+    Name: str,
+    Type: ImpersonationRoleTypeType,  # (1)
+    Rules: Sequence[ImpersonationRuleTypeDef],  # (2)
+    Description: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ImpersonationRoleTypeType](./literals.md#impersonationroletypetype) 
+2. See [:material-code-braces: ImpersonationRuleTypeDef](./type_defs.md#impersonationruletypedef) 
 ## CreateOrganizationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2495,6 +2778,32 @@ class PutRetentionPolicyRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef) 
+## GetImpersonationRoleEffectResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import GetImpersonationRoleEffectResponseTypeDef
+
+def get_value() -> GetImpersonationRoleEffectResponseTypeDef:
+    return {
+        "Type": ...,
+        "Effect": ...,
+        "MatchedRules": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetImpersonationRoleEffectResponseTypeDef(TypedDict):
+    Type: ImpersonationRoleTypeType,  # (1)
+    Effect: AccessEffectType,  # (2)
+    MatchedRules: List[ImpersonationMatchedRuleTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: ImpersonationRoleTypeType](./literals.md#impersonationroletypetype) 
+2. See [:material-code-brackets: AccessEffectType](./literals.md#accesseffecttype) 
+3. See [:material-code-braces: ImpersonationMatchedRuleTypeDef](./type_defs.md#impersonationmatchedruletypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMobileDeviceAccessEffectResponseTypeDef
 
 ```python title="Usage Example"
@@ -2539,6 +2848,28 @@ class ListGroupsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImpersonationRolesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workmail.type_defs import ListImpersonationRolesResponseTypeDef
+
+def get_value() -> ListImpersonationRolesResponseTypeDef:
+    return {
+        "Roles": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListImpersonationRolesResponseTypeDef(TypedDict):
+    Roles: List[ImpersonationRoleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ImpersonationRoleTypeDef](./type_defs.md#impersonationroletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAliasesRequestListAliasesPaginateTypeDef
 

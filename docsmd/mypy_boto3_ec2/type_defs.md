@@ -18889,6 +18889,7 @@ def get_value() -> DescribeVpcAttributeResultTypeDef:
         "VpcId": ...,
         "EnableDnsHostnames": ...,
         "EnableDnsSupport": ...,
+        "EnableNetworkAddressUsageMetrics": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -18898,12 +18899,14 @@ class DescribeVpcAttributeResultTypeDef(TypedDict):
     VpcId: str,
     EnableDnsHostnames: AttributeBooleanValueTypeDef,  # (1)
     EnableDnsSupport: AttributeBooleanValueTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    EnableNetworkAddressUsageMetrics: AttributeBooleanValueTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 2. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifySubnetAttributeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -18991,10 +18994,12 @@ class ModifyVpcAttributeRequestRequestTypeDef(TypedDict):
     VpcId: str,
     EnableDnsHostnames: NotRequired[AttributeBooleanValueTypeDef],  # (1)
     EnableDnsSupport: NotRequired[AttributeBooleanValueTypeDef],  # (1)
+    EnableNetworkAddressUsageMetrics: NotRequired[AttributeBooleanValueTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 2. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 ## ModifyVpcAttributeRequestVpcModifyAttributeTypeDef
 
 ```python title="Usage Example"
@@ -19010,10 +19015,12 @@ def get_value() -> ModifyVpcAttributeRequestVpcModifyAttributeTypeDef:
 class ModifyVpcAttributeRequestVpcModifyAttributeTypeDef(TypedDict):
     EnableDnsHostnames: NotRequired[AttributeBooleanValueTypeDef],  # (1)
     EnableDnsSupport: NotRequired[AttributeBooleanValueTypeDef],  # (1)
+    EnableNetworkAddressUsageMetrics: NotRequired[AttributeBooleanValueTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 2. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 ## DhcpConfigurationTypeDef
 
 ```python title="Usage Example"

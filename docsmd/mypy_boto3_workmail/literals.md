@@ -22,6 +22,21 @@ AccessControlRuleEffectType = Literal[
     "DENY",
 ]
 ```
+## AccessEffectType
+
+```python title="Usage Example"
+from mypy_boto3_workmail.literals import AccessEffectType
+
+def get_value() -> AccessEffectType:
+    return "ALLOW"
+```
+
+```python title="Definition"
+AccessEffectType = Literal[
+    "ALLOW",
+    "DENY",
+]
+```
 ## AvailabilityProviderTypeType
 
 ```python title="Usage Example"
@@ -85,6 +100,21 @@ FolderNameType = Literal[
     "INBOX",
     "JUNK_EMAIL",
     "SENT_ITEMS",
+]
+```
+## ImpersonationRoleTypeType
+
+```python title="Usage Example"
+from mypy_boto3_workmail.literals import ImpersonationRoleTypeType
+
+def get_value() -> ImpersonationRoleTypeType:
+    return "FULL_ACCESS"
+```
+
+```python title="Definition"
+ImpersonationRoleTypeType = Literal[
+    "FULL_ACCESS",
+    "READ_ONLY",
 ]
 ```
 ## ListAliasesPaginatorName
@@ -419,6 +449,7 @@ ServiceName = Literal[
     "connect",
     "connect-contact-lens",
     "connectcampaigns",
+    "connectcases",
     "connectparticipant",
     "controltower",
     "cur",

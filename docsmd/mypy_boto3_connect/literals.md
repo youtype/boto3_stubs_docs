@@ -398,11 +398,12 @@ InstanceStorageResourceTypeType = Literal[
 from mypy_boto3_connect.literals import IntegrationTypeType
 
 def get_value() -> IntegrationTypeType:
-    return "EVENT"
+    return "CASES_DOMAIN"
 ```
 
 ```python title="Definition"
 IntegrationTypeType = Literal[
+    "CASES_DOMAIN",
     "EVENT",
     "PINPOINT_APP",
     "VOICE_ID",
@@ -1618,6 +1619,7 @@ ServiceName = Literal[
     "connect",
     "connect-contact-lens",
     "connectcampaigns",
+    "connectcases",
     "connectparticipant",
     "controltower",
     "cur",

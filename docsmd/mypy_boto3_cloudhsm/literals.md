@@ -210,6 +210,7 @@ ServiceName = Literal[
     "connect",
     "connect-contact-lens",
     "connectcampaigns",
+    "connectcases",
     "connectparticipant",
     "controltower",
     "cur",

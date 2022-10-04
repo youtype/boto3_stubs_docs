@@ -301,6 +301,8 @@ def get_value() -> ObjectLambdaAllowedFeatureType:
 ObjectLambdaAllowedFeatureType = Literal[
     "GetObject-PartNumber",
     "GetObject-Range",
+    "HeadObject-PartNumber",
+    "HeadObject-Range",
 ]
 ```
 ## ObjectLambdaTransformationConfigurationActionType
@@ -315,6 +317,9 @@ def get_value() -> ObjectLambdaTransformationConfigurationActionType:
 ```python title="Definition"
 ObjectLambdaTransformationConfigurationActionType = Literal[
     "GetObject",
+    "HeadObject",
+    "ListObjects",
+    "ListObjectsV2",
 ]
 ```
 ## OperationNameType
@@ -680,6 +685,7 @@ ServiceName = Literal[
     "connect",
     "connect-contact-lens",
     "connectcampaigns",
+    "connectcases",
     "connectparticipant",
     "controltower",
     "cur",

@@ -134,6 +134,37 @@ parent.associate_member_to_group(**kwargs)
 
 1. See [:material-code-braces: AssociateMemberToGroupRequestRequestTypeDef](./type_defs.md#associatemembertogrouprequestrequesttypedef) 
 
+### assume\_impersonation\_role
+
+Assumes an impersonation role for the given WorkMail organization.
+
+Type annotations and code completion for `#!python boto3.client("workmail").assume_impersonation_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.assume_impersonation_role)
+
+```python title="Method definition"
+def assume_impersonation_role(
+    self,
+    *,
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+) -> AssumeImpersonationRoleResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AssumeImpersonationRoleResponseTypeDef](./type_defs.md#assumeimpersonationroleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssumeImpersonationRoleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ImpersonationRoleId": ...,
+}
+
+parent.assume_impersonation_role(**kwargs)
+```
+
+1. See [:material-code-braces: AssumeImpersonationRoleRequestRequestTypeDef](./type_defs.md#assumeimpersonationrolerequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -199,7 +230,7 @@ def close(
 
 ### create\_alias
 
-Adds an alias to the set of a given member (user or group) of Amazon WorkMail.
+Adds an alias to the set of a given member (user or group) of WorkMail.
 
 Type annotations and code completion for `#!python boto3.client("workmail").create_alias` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias)
@@ -267,8 +298,8 @@ parent.create_availability_configuration(**kwargs)
 
 ### create\_group
 
-Creates a group that can be used in Amazon WorkMail by calling the
-RegisterToWorkMail operation.
+Creates a group that can be used in WorkMail by calling the  RegisterToWorkMail
+operation.
 
 Type annotations and code completion for `#!python boto3.client("workmail").create_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group)
@@ -297,10 +328,48 @@ parent.create_group(**kwargs)
 
 1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
 
+### create\_impersonation\_role
+
+Creates an impersonation role for the given WorkMail organization.
+
+Type annotations and code completion for `#!python boto3.client("workmail").create_impersonation_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_impersonation_role)
+
+```python title="Method definition"
+def create_impersonation_role(
+    self,
+    *,
+    OrganizationId: str,
+    Name: str,
+    Type: ImpersonationRoleTypeType,  # (1)
+    Rules: Sequence[ImpersonationRuleTypeDef],  # (2)
+    ClientToken: str = ...,
+    Description: str = ...,
+) -> CreateImpersonationRoleResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ImpersonationRoleTypeType](./literals.md#impersonationroletypetype) 
+2. See [:material-code-braces: ImpersonationRuleTypeDef](./type_defs.md#impersonationruletypedef) 
+3. See [:material-code-braces: CreateImpersonationRoleResponseTypeDef](./type_defs.md#createimpersonationroleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateImpersonationRoleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Name": ...,
+    "Type": ...,
+    "Rules": ...,
+}
+
+parent.create_impersonation_role(**kwargs)
+```
+
+1. See [:material-code-braces: CreateImpersonationRoleRequestRequestTypeDef](./type_defs.md#createimpersonationrolerequestrequesttypedef) 
+
 ### create\_mobile\_device\_access\_rule
 
-Creates a new mobile device access rule for the specified Amazon WorkMail
-organization.
+Creates a new mobile device access rule for the specified WorkMail organization.
 
 Type annotations and code completion for `#!python boto3.client("workmail").create_mobile_device_access_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
@@ -344,7 +413,7 @@ parent.create_mobile_device_access_rule(**kwargs)
 
 ### create\_organization
 
-Creates a new Amazon WorkMail organization.
+Creates a new WorkMail organization.
 
 Type annotations and code completion for `#!python boto3.client("workmail").create_organization` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization)
@@ -379,7 +448,7 @@ parent.create_organization(**kwargs)
 
 ### create\_resource
 
-Creates a new Amazon WorkMail resource.
+Creates a new WorkMail resource.
 
 Type annotations and code completion for `#!python boto3.client("workmail").create_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource)
@@ -413,8 +482,8 @@ parent.create_resource(**kwargs)
 
 ### create\_user
 
-Creates a user who can be used in Amazon WorkMail by calling the
-RegisterToWorkMail operation.
+Creates a user who can be used in WorkMail by calling the  RegisterToWorkMail
+operation.
 
 Type annotations and code completion for `#!python boto3.client("workmail").create_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user)
@@ -570,7 +639,7 @@ parent.delete_email_monitoring_configuration(**kwargs)
 
 ### delete\_group
 
-Deletes a group from Amazon WorkMail.
+Deletes a group from WorkMail.
 
 Type annotations and code completion for `#!python boto3.client("workmail").delete_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group)
@@ -597,6 +666,36 @@ parent.delete_group(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
+
+### delete\_impersonation\_role
+
+Deletes an impersonation role for the given WorkMail organization.
+
+Type annotations and code completion for `#!python boto3.client("workmail").delete_impersonation_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_impersonation_role)
+
+```python title="Method definition"
+def delete_impersonation_role(
+    self,
+    *,
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteImpersonationRoleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ImpersonationRoleId": ...,
+}
+
+parent.delete_impersonation_role(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteImpersonationRoleRequestRequestTypeDef](./type_defs.md#deleteimpersonationrolerequestrequesttypedef) 
 
 ### delete\_mailbox\_permissions
 
@@ -665,8 +764,7 @@ parent.delete_mobile_device_access_override(**kwargs)
 
 ### delete\_mobile\_device\_access\_rule
 
-Deletes a mobile device access rule for the specified Amazon WorkMail
-organization.
+Deletes a mobile device access rule for the specified WorkMail organization.
 
 Type annotations and code completion for `#!python boto3.client("workmail").delete_mobile_device_access_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule)
@@ -696,8 +794,8 @@ parent.delete_mobile_device_access_rule(**kwargs)
 
 ### delete\_organization
 
-Deletes an Amazon WorkMail organization and all underlying AWS resources managed
-by Amazon WorkMail as part of the organization.
+Deletes an WorkMail organization and all underlying AWS resources managed by
+WorkMail as part of the organization.
 
 Type annotations and code completion for `#!python boto3.client("workmail").delete_organization` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization)
@@ -789,7 +887,7 @@ parent.delete_retention_policy(**kwargs)
 
 ### delete\_user
 
-Deletes a user from Amazon WorkMail and all subsequent systems.
+Deletes a user from WorkMail and all subsequent systems.
 
 Type annotations and code completion for `#!python boto3.client("workmail").delete_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user)
@@ -819,7 +917,7 @@ parent.delete_user(**kwargs)
 
 ### deregister\_from\_work\_mail
 
-Mark a user, group, or resource as no longer used in Amazon WorkMail.
+Mark a user, group, or resource as no longer used in WorkMail.
 
 Type annotations and code completion for `#!python boto3.client("workmail").deregister_from_work_mail` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail)
@@ -849,8 +947,8 @@ parent.deregister_from_work_mail(**kwargs)
 
 ### deregister\_mail\_domain
 
-Removes a domain from Amazon WorkMail, stops email routing to WorkMail, and
-removes the authorization allowing WorkMail use.
+Removes a domain from WorkMail, stops email routing to WorkMail, and removes the
+authorization allowing WorkMail use.
 
 Type annotations and code completion for `#!python boto3.client("workmail").deregister_mail_domain` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_mail_domain)
@@ -1177,7 +1275,8 @@ def generate_presigned_url(
 ### get\_access\_control\_effect
 
 Gets the effects of an organization's access control rules as they apply to a
-specified IPv4 address, access protocol action, or user ID.
+specified IPv4 address, access protocol action, and user ID or impersonation
+role ID.
 
 Type annotations and code completion for `#!python boto3.client("workmail").get_access_control_effect` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
@@ -1189,7 +1288,8 @@ def get_access_control_effect(
     OrganizationId: str,
     IpAddress: str,
     Action: str,
-    UserId: str,
+    UserId: str = ...,
+    ImpersonationRoleId: str = ...,
 ) -> GetAccessControlEffectResponseTypeDef:  # (1)
     ...
 ```
@@ -1202,7 +1302,6 @@ kwargs: GetAccessControlEffectRequestRequestTypeDef = {  # (1)
     "OrganizationId": ...,
     "IpAddress": ...,
     "Action": ...,
-    "UserId": ...,
 }
 
 parent.get_access_control_effect(**kwargs)
@@ -1238,6 +1337,70 @@ parent.get_default_retention_policy(**kwargs)
 ```
 
 1. See [:material-code-braces: GetDefaultRetentionPolicyRequestRequestTypeDef](./type_defs.md#getdefaultretentionpolicyrequestrequesttypedef) 
+
+### get\_impersonation\_role
+
+Gets the impersonation role details for the given WorkMail organization.
+
+Type annotations and code completion for `#!python boto3.client("workmail").get_impersonation_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_impersonation_role)
+
+```python title="Method definition"
+def get_impersonation_role(
+    self,
+    *,
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+) -> GetImpersonationRoleResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetImpersonationRoleResponseTypeDef](./type_defs.md#getimpersonationroleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetImpersonationRoleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ImpersonationRoleId": ...,
+}
+
+parent.get_impersonation_role(**kwargs)
+```
+
+1. See [:material-code-braces: GetImpersonationRoleRequestRequestTypeDef](./type_defs.md#getimpersonationrolerequestrequesttypedef) 
+
+### get\_impersonation\_role\_effect
+
+Tests whether the given impersonation role can impersonate a target user.
+
+Type annotations and code completion for `#!python boto3.client("workmail").get_impersonation_role_effect` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_impersonation_role_effect)
+
+```python title="Method definition"
+def get_impersonation_role_effect(
+    self,
+    *,
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+    TargetUser: str,
+) -> GetImpersonationRoleEffectResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetImpersonationRoleEffectResponseTypeDef](./type_defs.md#getimpersonationroleeffectresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetImpersonationRoleEffectRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ImpersonationRoleId": ...,
+    "TargetUser": ...,
+}
+
+parent.get_impersonation_role_effect(**kwargs)
+```
+
+1. See [:material-code-braces: GetImpersonationRoleEffectRequestRequestTypeDef](./type_defs.md#getimpersonationroleeffectrequestrequesttypedef) 
 
 ### get\_mail\_domain
 
@@ -1527,9 +1690,40 @@ parent.list_groups(**kwargs)
 
 1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
 
+### list\_impersonation\_roles
+
+Lists all the impersonation roles for the given WorkMail organization.
+
+Type annotations and code completion for `#!python boto3.client("workmail").list_impersonation_roles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_impersonation_roles)
+
+```python title="Method definition"
+def list_impersonation_roles(
+    self,
+    *,
+    OrganizationId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListImpersonationRolesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListImpersonationRolesResponseTypeDef](./type_defs.md#listimpersonationrolesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListImpersonationRolesRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
+
+parent.list_impersonation_roles(**kwargs)
+```
+
+1. See [:material-code-braces: ListImpersonationRolesRequestRequestTypeDef](./type_defs.md#listimpersonationrolesrequestrequesttypedef) 
+
 ### list\_mail\_domains
 
-Lists the mail domains in a given Amazon WorkMail organization.
+Lists the mail domains in a given WorkMail organization.
 
 Type annotations and code completion for `#!python boto3.client("workmail").list_mail_domains` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mail_domains)
@@ -1660,8 +1854,7 @@ parent.list_mobile_device_access_overrides(**kwargs)
 
 ### list\_mobile\_device\_access\_rules
 
-Lists the mobile device access rules for the specified Amazon WorkMail
-organization.
+Lists the mobile device access rules for the specified WorkMail organization.
 
 Type annotations and code completion for `#!python boto3.client("workmail").list_mobile_device_access_rules` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules)
@@ -1784,7 +1977,7 @@ parent.list_resources(**kwargs)
 
 ### list\_tags\_for\_resource
 
-Lists the tags applied to an Amazon WorkMail organization resource.
+Lists the tags applied to an WorkMail organization resource.
 
 Type annotations and code completion for `#!python boto3.client("workmail").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource)
@@ -1863,6 +2056,8 @@ def put_access_control_rule(
     NotActions: Sequence[str] = ...,
     UserIds: Sequence[str] = ...,
     NotUserIds: Sequence[str] = ...,
+    ImpersonationRoleIds: Sequence[str] = ...,
+    NotImpersonationRoleIds: Sequence[str] = ...,
 ) -> Dict[str, Any]:
     ...
 ```
@@ -2055,7 +2250,7 @@ parent.put_retention_policy(**kwargs)
 
 ### register\_mail\_domain
 
-Registers a new domain in Amazon WorkMail and SES, and configures it for use by
+Registers a new domain in WorkMail and SES, and configures it for use by
 WorkMail.
 
 Type annotations and code completion for `#!python boto3.client("workmail").register_mail_domain` method.
@@ -2087,8 +2282,8 @@ parent.register_mail_domain(**kwargs)
 
 ### register\_to\_work\_mail
 
-Registers an existing and disabled user, group, or resource for Amazon WorkMail
-use by associating a mailbox and calendaring capabilities.
+Registers an existing and disabled user, group, or resource for WorkMail use by
+associating a mailbox and calendaring capabilities.
 
 Type annotations and code completion for `#!python boto3.client("workmail").register_to_work_mail` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
@@ -2196,8 +2391,7 @@ parent.start_mailbox_export_job(**kwargs)
 
 ### tag\_resource
 
-Applies the specified tags to the specified Amazon WorkMail organization
-resource.
+Applies the specified tags to the specified WorkMailorganization resource.
 
 Type annotations and code completion for `#!python boto3.client("workmail").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource)
@@ -2262,8 +2456,7 @@ parent.test_availability_configuration(**kwargs)
 
 ### untag\_resource
 
-Untags the specified tags from the specified Amazon WorkMail organization
-resource.
+Untags the specified tags from the specified WorkMail organization resource.
 
 Type annotations and code completion for `#!python boto3.client("workmail").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource)
@@ -2356,6 +2549,45 @@ parent.update_default_mail_domain(**kwargs)
 
 1. See [:material-code-braces: UpdateDefaultMailDomainRequestRequestTypeDef](./type_defs.md#updatedefaultmaildomainrequestrequesttypedef) 
 
+### update\_impersonation\_role
+
+Updates an impersonation role for the given WorkMail organization.
+
+Type annotations and code completion for `#!python boto3.client("workmail").update_impersonation_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_impersonation_role)
+
+```python title="Method definition"
+def update_impersonation_role(
+    self,
+    *,
+    OrganizationId: str,
+    ImpersonationRoleId: str,
+    Name: str,
+    Type: ImpersonationRoleTypeType,  # (1)
+    Rules: Sequence[ImpersonationRuleTypeDef],  # (2)
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: ImpersonationRoleTypeType](./literals.md#impersonationroletypetype) 
+2. See [:material-code-braces: ImpersonationRuleTypeDef](./type_defs.md#impersonationruletypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateImpersonationRoleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ImpersonationRoleId": ...,
+    "Name": ...,
+    "Type": ...,
+    "Rules": ...,
+}
+
+parent.update_impersonation_role(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateImpersonationRoleRequestRequestTypeDef](./type_defs.md#updateimpersonationrolerequestrequesttypedef) 
+
 ### update\_mailbox\_quota
 
 Updates a user's current mailbox quota for a specified organization and user.
@@ -2390,8 +2622,7 @@ parent.update_mailbox_quota(**kwargs)
 
 ### update\_mobile\_device\_access\_rule
 
-Updates a mobile device access rule for the specified Amazon WorkMail
-organization.
+Updates a mobile device access rule for the specified WorkMail organization.
 
 Type annotations and code completion for `#!python boto3.client("workmail").update_mobile_device_access_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)

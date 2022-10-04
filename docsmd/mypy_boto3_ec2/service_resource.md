@@ -7042,12 +7042,14 @@ def modify_attribute(
     *,
     EnableDnsHostnames: AttributeBooleanValueTypeDef = ...,  # (1)
     EnableDnsSupport: AttributeBooleanValueTypeDef = ...,  # (1)
+    EnableNetworkAddressUsageMetrics: AttributeBooleanValueTypeDef = ...,  # (1)
 ) -> None:
     ...
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 2. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 
 
 ```python title="Usage example with kwargs"

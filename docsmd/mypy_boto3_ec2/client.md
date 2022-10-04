@@ -15900,13 +15900,15 @@ def modify_vpc_attribute(
     VpcId: str,
     EnableDnsHostnames: AttributeBooleanValueTypeDef = ...,  # (1)
     EnableDnsSupport: AttributeBooleanValueTypeDef = ...,  # (1)
-) -> EmptyResponseMetadataTypeDef:  # (3)
+    EnableNetworkAddressUsageMetrics: AttributeBooleanValueTypeDef = ...,  # (1)
+) -> EmptyResponseMetadataTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 2. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
-3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

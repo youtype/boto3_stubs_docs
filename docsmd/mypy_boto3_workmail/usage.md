@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("workmail")  # (1)
-    result = client.create_group()  # (2)
+    result = client.assume_impersonation_role()  # (2)
     ```
 
     1. client: [WorkMailClient](./client.md)
-    2. result: [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
+    2. result: [:material-code-braces: AssumeImpersonationRoleResponseTypeDef](./type_defs.md#assumeimpersonationroleresponsetypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_workmail.client import WorkMailClient
-    from mypy_boto3_workmail.type_defs import CreateGroupResponseTypeDef
-    from mypy_boto3_workmail.type_defs import CreateGroupRequestRequestTypeDef
+    from mypy_boto3_workmail.type_defs import AssumeImpersonationRoleResponseTypeDef
+    from mypy_boto3_workmail.type_defs import AssumeImpersonationRoleRequestRequestTypeDef
 
 
     session = Session()
 
     client: WorkMailClient = session.client("workmail")
 
-    kwargs: CreateGroupRequestRequestTypeDef = {...}
-    result: CreateGroupResponseTypeDef = client.create_group(**kwargs)
+    kwargs: AssumeImpersonationRoleRequestRequestTypeDef = {...}
+    result: AssumeImpersonationRoleResponseTypeDef = client.assume_impersonation_role(**kwargs)
     ```
 
 
