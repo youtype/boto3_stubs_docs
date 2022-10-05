@@ -72,7 +72,7 @@ def can_paginate(
 
 ### cancel\_order
 
-Cancels an order for an Outpost.
+Cancels the specified order for an Outpost.
 
 Type annotations and code completion for `#!python boto3.client("outposts").cancel_order` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.cancel_order)
@@ -227,7 +227,7 @@ parent.create_site(**kwargs)
 
 ### delete\_outpost
 
-Deletes the Outpost.
+Deletes the specified Outpost.
 
 Type annotations and code completion for `#!python boto3.client("outposts").delete_outpost` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost)
@@ -255,7 +255,7 @@ parent.delete_outpost(**kwargs)
 
 ### delete\_site
 
-Deletes the site.
+Deletes the specified site.
 
 Type annotations and code completion for `#!python boto3.client("outposts").delete_site` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site)
@@ -302,7 +302,7 @@ def generate_presigned_url(
 
 ### get\_catalog\_item
 
-Gets information about a catalog item.
+Gets information about the specified catalog item.
 
 Type annotations and code completion for `#!python boto3.client("outposts").get_catalog_item` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_catalog_item)
@@ -360,7 +360,7 @@ parent.get_connection(**kwargs)
 
 ### get\_order
 
-Gets an order.
+Gets information about the specified order.
 
 Type annotations and code completion for `#!python boto3.client("outposts").get_order` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_order)
@@ -478,7 +478,7 @@ parent.get_site(**kwargs)
 
 ### get\_site\_address
 
-Gets the site address.
+Gets the site address of the specified site.
 
 Type annotations and code completion for `#!python boto3.client("outposts").get_site_address` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_site_address)
@@ -510,7 +510,7 @@ parent.get_site_address(**kwargs)
 
 ### list\_assets
 
-Lists the hardware assets in an Outpost.
+Lists the hardware assets for the specified Outpost.
 
 Type annotations and code completion for `#!python boto3.client("outposts").list_assets` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_assets)
@@ -523,11 +523,13 @@ def list_assets(
     HostIdFilter: Sequence[str] = ...,
     MaxResults: int = ...,
     NextToken: str = ...,
-) -> ListAssetsOutputTypeDef:  # (1)
+    StatusFilter: Sequence[AssetStateType] = ...,  # (1)
+) -> ListAssetsOutputTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ListAssetsOutputTypeDef](./type_defs.md#listassetsoutputtypedef) 
+1. See [:material-code-brackets: AssetStateType](./literals.md#assetstatetype) 
+2. See [:material-code-braces: ListAssetsOutputTypeDef](./type_defs.md#listassetsoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -831,7 +833,7 @@ parent.update_outpost(**kwargs)
 
 ### update\_site
 
-Updates the site.
+Updates the specified site.
 
 Type annotations and code completion for `#!python boto3.client("outposts").update_site` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site)
@@ -863,7 +865,7 @@ parent.update_site(**kwargs)
 
 ### update\_site\_address
 
-Updates the site address.
+Updates the address of the specified site.
 
 Type annotations and code completion for `#!python boto3.client("outposts").update_site_address` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site_address)

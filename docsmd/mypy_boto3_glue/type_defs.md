@@ -2084,6 +2084,31 @@ class JobCommandTypeDef(TypedDict):
     PythonVersion: NotRequired[str],
 ```
 
+## SourceControlDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import SourceControlDetailsTypeDef
+
+def get_value() -> SourceControlDetailsTypeDef:
+    return {
+        "Provider": ...,
+    }
+```
+
+```python title="Definition"
+class SourceControlDetailsTypeDef(TypedDict):
+    Provider: NotRequired[SourceControlProviderType],  # (1)
+    Repository: NotRequired[str],
+    Owner: NotRequired[str],
+    Branch: NotRequired[str],
+    Folder: NotRequired[str],
+    LastCommitId: NotRequired[str],
+    AuthStrategy: NotRequired[SourceControlAuthStrategyType],  # (2)
+    AuthToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SourceControlProviderType](./literals.md#sourcecontrolprovidertype) 
+2. See [:material-code-brackets: SourceControlAuthStrategyType](./literals.md#sourcecontrolauthstrategytype) 
 ## GlueTableTypeDef
 
 ```python title="Usage Example"
@@ -5121,6 +5146,58 @@ class UpdateCrawlerScheduleRequestRequestTypeDef(TypedDict):
     Schedule: NotRequired[str],
 ```
 
+## UpdateJobFromSourceControlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import UpdateJobFromSourceControlRequestRequestTypeDef
+
+def get_value() -> UpdateJobFromSourceControlRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateJobFromSourceControlRequestRequestTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    Provider: NotRequired[SourceControlProviderType],  # (1)
+    RepositoryName: NotRequired[str],
+    RepositoryOwner: NotRequired[str],
+    BranchName: NotRequired[str],
+    Folder: NotRequired[str],
+    CommitId: NotRequired[str],
+    AuthStrategy: NotRequired[SourceControlAuthStrategyType],  # (2)
+    AuthToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SourceControlProviderType](./literals.md#sourcecontrolprovidertype) 
+2. See [:material-code-brackets: SourceControlAuthStrategyType](./literals.md#sourcecontrolauthstrategytype) 
+## UpdateSourceControlFromJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import UpdateSourceControlFromJobRequestRequestTypeDef
+
+def get_value() -> UpdateSourceControlFromJobRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSourceControlFromJobRequestRequestTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    Provider: NotRequired[SourceControlProviderType],  # (1)
+    RepositoryName: NotRequired[str],
+    RepositoryOwner: NotRequired[str],
+    BranchName: NotRequired[str],
+    Folder: NotRequired[str],
+    CommitId: NotRequired[str],
+    AuthStrategy: NotRequired[SourceControlAuthStrategyType],  # (2)
+    AuthToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SourceControlProviderType](./literals.md#sourcecontrolprovidertype) 
+2. See [:material-code-brackets: SourceControlAuthStrategyType](./literals.md#sourcecontrolauthstrategytype) 
 ## UpdateWorkflowRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6633,6 +6710,25 @@ class UpdateBlueprintResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateJobFromSourceControlResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import UpdateJobFromSourceControlResponseTypeDef
+
+def get_value() -> UpdateJobFromSourceControlResponseTypeDef:
+    return {
+        "JobName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateJobFromSourceControlResponseTypeDef(TypedDict):
+    JobName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -6711,6 +6807,25 @@ class UpdateSchemaResponseTypeDef(TypedDict):
     SchemaArn: str,
     SchemaName: str,
     RegistryName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSourceControlFromJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import UpdateSourceControlFromJobResponseTypeDef
+
+def get_value() -> UpdateSourceControlFromJobResponseTypeDef:
+    return {
+        "JobName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSourceControlFromJobResponseTypeDef(TypedDict):
+    JobName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -12047,6 +12162,7 @@ class CreateJobRequestRequestTypeDef(TypedDict):
     WorkerType: NotRequired[WorkerTypeType],  # (5)
     CodeGenConfigurationNodes: NotRequired[Mapping[str, CodeGenConfigurationNodeTypeDef]],  # (6)
     ExecutionClass: NotRequired[ExecutionClassType],  # (7)
+    SourceControlDetails: NotRequired[SourceControlDetailsTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: JobCommandTypeDef](./type_defs.md#jobcommandtypedef) 
@@ -12056,6 +12172,7 @@ class CreateJobRequestRequestTypeDef(TypedDict):
 5. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
 7. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
+8. See [:material-code-braces: SourceControlDetailsTypeDef](./type_defs.md#sourcecontroldetailstypedef) 
 ## JobTypeDef
 
 ```python title="Usage Example"
@@ -12091,6 +12208,7 @@ class JobTypeDef(TypedDict):
     GlueVersion: NotRequired[str],
     CodeGenConfigurationNodes: NotRequired[Dict[str, CodeGenConfigurationNodeTypeDef]],  # (6)
     ExecutionClass: NotRequired[ExecutionClassType],  # (7)
+    SourceControlDetails: NotRequired[SourceControlDetailsTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
@@ -12100,6 +12218,7 @@ class JobTypeDef(TypedDict):
 5. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
 7. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
+8. See [:material-code-braces: SourceControlDetailsTypeDef](./type_defs.md#sourcecontroldetailstypedef) 
 ## JobUpdateTypeDef
 
 ```python title="Usage Example"
@@ -12132,6 +12251,7 @@ class JobUpdateTypeDef(TypedDict):
     GlueVersion: NotRequired[str],
     CodeGenConfigurationNodes: NotRequired[Mapping[str, CodeGenConfigurationNodeTypeDef]],  # (6)
     ExecutionClass: NotRequired[ExecutionClassType],  # (7)
+    SourceControlDetails: NotRequired[SourceControlDetailsTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
@@ -12141,6 +12261,7 @@ class JobUpdateTypeDef(TypedDict):
 5. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
 7. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
+8. See [:material-code-braces: SourceControlDetailsTypeDef](./type_defs.md#sourcecontroldetailstypedef) 
 ## WorkflowGraphTypeDef
 
 ```python title="Usage Example"

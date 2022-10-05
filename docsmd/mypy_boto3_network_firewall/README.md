@@ -122,6 +122,7 @@ def get_value() -> AttachmentStatusType:
 - [StatefulActionType](./literals.md#statefulactiontype)
 - [StatefulRuleDirectionType](./literals.md#statefulruledirectiontype)
 - [StatefulRuleProtocolType](./literals.md#statefulruleprotocoltype)
+- [StreamExceptionPolicyType](./literals.md#streamexceptionpolicytype)
 - [TCPFlagType](./literals.md#tcpflagtype)
 - [TargetTypeType](./literals.md#targettypetype)
 - [NetworkFirewallServiceName](./literals.md#networkfirewallservicename)

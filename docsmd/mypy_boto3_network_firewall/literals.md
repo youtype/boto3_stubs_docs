@@ -341,6 +341,21 @@ StatefulRuleProtocolType = Literal[
     "UDP",
 ]
 ```
+## StreamExceptionPolicyType
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.literals import StreamExceptionPolicyType
+
+def get_value() -> StreamExceptionPolicyType:
+    return "CONTINUE"
+```
+
+```python title="Definition"
+StreamExceptionPolicyType = Literal[
+    "CONTINUE",
+    "DROP",
+]
+```
 ## TCPFlagType
 
 ```python title="Usage Example"

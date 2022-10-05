@@ -967,7 +967,8 @@ def create_job(
     WorkerType: WorkerTypeType = ...,  # (5)
     CodeGenConfigurationNodes: Mapping[str, CodeGenConfigurationNodeTypeDef] = ...,  # (6)
     ExecutionClass: ExecutionClassType = ...,  # (7)
-) -> CreateJobResponseTypeDef:  # (8)
+    SourceControlDetails: SourceControlDetailsTypeDef = ...,  # (8)
+) -> CreateJobResponseTypeDef:  # (9)
     ...
 ```
 
@@ -978,7 +979,8 @@ def create_job(
 5. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 6. See [:material-code-braces: CodeGenConfigurationNodeTypeDef](./type_defs.md#codegenconfigurationnodetypedef) 
 7. See [:material-code-brackets: ExecutionClassType](./literals.md#executionclasstype) 
-8. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
+8. See [:material-code-braces: SourceControlDetailsTypeDef](./type_defs.md#sourcecontroldetailstypedef) 
+9. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -5865,6 +5867,45 @@ parent.update_job(**kwargs)
 
 1. See [:material-code-braces: UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef) 
 
+### update\_job\_from\_source\_control
+
+Synchronizes a job from the source control repository.
+
+Type annotations and code completion for `#!python boto3.client("glue").update_job_from_source_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job_from_source_control)
+
+```python title="Method definition"
+def update_job_from_source_control(
+    self,
+    *,
+    JobName: str = ...,
+    Provider: SourceControlProviderType = ...,  # (1)
+    RepositoryName: str = ...,
+    RepositoryOwner: str = ...,
+    BranchName: str = ...,
+    Folder: str = ...,
+    CommitId: str = ...,
+    AuthStrategy: SourceControlAuthStrategyType = ...,  # (2)
+    AuthToken: str = ...,
+) -> UpdateJobFromSourceControlResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: SourceControlProviderType](./literals.md#sourcecontrolprovidertype) 
+2. See [:material-code-brackets: SourceControlAuthStrategyType](./literals.md#sourcecontrolauthstrategytype) 
+3. See [:material-code-braces: UpdateJobFromSourceControlResponseTypeDef](./type_defs.md#updatejobfromsourcecontrolresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateJobFromSourceControlRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
+
+parent.update_job_from_source_control(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateJobFromSourceControlRequestRequestTypeDef](./type_defs.md#updatejobfromsourcecontrolrequestrequesttypedef) 
+
 ### update\_ml\_transform
 
 Updates an existing machine learning transform.
@@ -6009,6 +6050,45 @@ parent.update_schema(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateSchemaInputRequestTypeDef](./type_defs.md#updateschemainputrequesttypedef) 
+
+### update\_source\_control\_from\_job
+
+Synchronizes a job to the source control repository.
+
+Type annotations and code completion for `#!python boto3.client("glue").update_source_control_from_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_source_control_from_job)
+
+```python title="Method definition"
+def update_source_control_from_job(
+    self,
+    *,
+    JobName: str = ...,
+    Provider: SourceControlProviderType = ...,  # (1)
+    RepositoryName: str = ...,
+    RepositoryOwner: str = ...,
+    BranchName: str = ...,
+    Folder: str = ...,
+    CommitId: str = ...,
+    AuthStrategy: SourceControlAuthStrategyType = ...,  # (2)
+    AuthToken: str = ...,
+) -> UpdateSourceControlFromJobResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: SourceControlProviderType](./literals.md#sourcecontrolprovidertype) 
+2. See [:material-code-brackets: SourceControlAuthStrategyType](./literals.md#sourcecontrolauthstrategytype) 
+3. See [:material-code-braces: UpdateSourceControlFromJobResponseTypeDef](./type_defs.md#updatesourcecontrolfromjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateSourceControlFromJobRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
+
+parent.update_source_control_from_job(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSourceControlFromJobRequestRequestTypeDef](./type_defs.md#updatesourcecontrolfromjobrequestrequesttypedef) 
 
 ### update\_table
 

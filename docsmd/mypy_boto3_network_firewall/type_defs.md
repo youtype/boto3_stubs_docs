@@ -444,9 +444,11 @@ def get_value() -> StatefulEngineOptionsTypeDef:
 ```python title="Definition"
 class StatefulEngineOptionsTypeDef(TypedDict):
     RuleOrder: NotRequired[RuleOrderType],  # (1)
+    StreamExceptionPolicy: NotRequired[StreamExceptionPolicyType],  # (2)
 ```
 
 1. See [:material-code-brackets: RuleOrderType](./literals.md#ruleordertype) 
+2. See [:material-code-brackets: StreamExceptionPolicyType](./literals.md#streamexceptionpolicytype) 
 ## StatelessRuleGroupReferenceTypeDef
 
 ```python title="Usage Example"

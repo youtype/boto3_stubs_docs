@@ -82,9 +82,11 @@ def get_value() -> AddressTypeType:
 ```
 
 - [AddressTypeType](./literals.md#addresstypetype)
+- [AssetStateType](./literals.md#assetstatetype)
 - [AssetTypeType](./literals.md#assettypetype)
 - [CatalogItemClassType](./literals.md#catalogitemclasstype)
 - [CatalogItemStatusType](./literals.md#catalogitemstatustype)
+- [ComputeAssetStateType](./literals.md#computeassetstatetype)
 - [FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype)
 - [LineItemStatusType](./literals.md#lineitemstatustype)
 - [MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype)

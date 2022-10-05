@@ -1320,6 +1320,36 @@ SortType = Literal[
     "DESC",
 ]
 ```
+## SourceControlAuthStrategyType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import SourceControlAuthStrategyType
+
+def get_value() -> SourceControlAuthStrategyType:
+    return "AWS_SECRETS_MANAGER"
+```
+
+```python title="Definition"
+SourceControlAuthStrategyType = Literal[
+    "AWS_SECRETS_MANAGER",
+    "PERSONAL_ACCESS_TOKEN",
+]
+```
+## SourceControlProviderType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import SourceControlProviderType
+
+def get_value() -> SourceControlProviderType:
+    return "AWS_CODE_COMMIT"
+```
+
+```python title="Definition"
+SourceControlProviderType = Literal[
+    "AWS_CODE_COMMIT",
+    "GITHUB",
+]
+```
 ## StartingPositionType
 
 ```python title="Usage Example"

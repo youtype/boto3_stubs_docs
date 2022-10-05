@@ -67,8 +67,10 @@ def get_value() -> ComputeAttributesTypeDef:
 ```python title="Definition"
 class ComputeAttributesTypeDef(TypedDict):
     HostId: NotRequired[str],
+    State: NotRequired[ComputeAssetStateType],  # (1)
 ```
 
+1. See [:material-code-brackets: ComputeAssetStateType](./literals.md#computeassetstatetype) 
 ## CancelOrderInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -467,8 +469,10 @@ class ListAssetsInputRequestTypeDef(TypedDict):
     HostIdFilter: NotRequired[Sequence[str]],
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+    StatusFilter: NotRequired[Sequence[AssetStateType]],  # (1)
 ```
 
+1. See [:material-code-brackets: AssetStateType](./literals.md#assetstatetype) 
 ## ListCatalogItemsInputRequestTypeDef
 
 ```python title="Usage Example"

@@ -22,6 +22,21 @@ AddressTypeType = Literal[
     "SHIPPING_ADDRESS",
 ]
 ```
+## AssetStateType
+
+```python title="Usage Example"
+from mypy_boto3_outposts.literals import AssetStateType
+
+def get_value() -> AssetStateType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+AssetStateType = Literal[
+    "ACTIVE",
+    "RETIRING",
+]
+```
 ## AssetTypeType
 
 ```python title="Usage Example"
@@ -64,6 +79,22 @@ def get_value() -> CatalogItemStatusType:
 CatalogItemStatusType = Literal[
     "AVAILABLE",
     "DISCONTINUED",
+]
+```
+## ComputeAssetStateType
+
+```python title="Usage Example"
+from mypy_boto3_outposts.literals import ComputeAssetStateType
+
+def get_value() -> ComputeAssetStateType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+ComputeAssetStateType = Literal[
+    "ACTIVE",
+    "ISOLATED",
+    "RETIRING",
 ]
 ```
 ## FiberOpticCableTypeType
@@ -206,11 +237,12 @@ PaymentOptionType = Literal[
 from mypy_boto3_outposts.literals import PaymentTermType
 
 def get_value() -> PaymentTermType:
-    return "THREE_YEARS"
+    return "ONE_YEAR"
 ```
 
 ```python title="Definition"
 PaymentTermType = Literal[
+    "ONE_YEAR",
     "THREE_YEARS",
 ]
 ```
