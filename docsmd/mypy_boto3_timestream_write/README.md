@@ -89,6 +89,7 @@ def get_value() -> DimensionValueTypeType:
 - [TimestreamWriteServiceName](./literals.md#timestreamwriteservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 
