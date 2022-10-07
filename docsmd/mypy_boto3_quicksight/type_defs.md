@@ -475,7 +475,6 @@ from mypy_boto3_quicksight.type_defs import GeoSpatialColumnGroupTypeDef
 def get_value() -> GeoSpatialColumnGroupTypeDef:
     return {
         "Name": ...,
-        "CountryCode": ...,
         "Columns": ...,
     }
 ```
@@ -483,8 +482,8 @@ def get_value() -> GeoSpatialColumnGroupTypeDef:
 ```python title="Definition"
 class GeoSpatialColumnGroupTypeDef(TypedDict):
     Name: str,
-    CountryCode: GeoSpatialCountryCodeType,  # (1)
     Columns: Sequence[str],
+    CountryCode: NotRequired[GeoSpatialCountryCodeType],  # (1)
 ```
 
 1. See [:material-code-brackets: GeoSpatialCountryCodeType](./literals.md#geospatialcountrycodetype) 
@@ -8487,6 +8486,7 @@ class DataSourceTypeDef(TypedDict):
     VpcConnectionProperties: NotRequired[VpcConnectionPropertiesTypeDef],  # (5)
     SslProperties: NotRequired[SslPropertiesTypeDef],  # (6)
     ErrorInfo: NotRequired[DataSourceErrorInfoTypeDef],  # (7)
+    SecretArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
@@ -8575,6 +8575,7 @@ def get_value() -> DataSourceCredentialsTypeDef:
 class DataSourceCredentialsTypeDef(TypedDict):
     CredentialPair: NotRequired[CredentialPairTypeDef],  # (1)
     CopySourceArn: NotRequired[str],
+    SecretArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CredentialPairTypeDef](./type_defs.md#credentialpairtypedef) 

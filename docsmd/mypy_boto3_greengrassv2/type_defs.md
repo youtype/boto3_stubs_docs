@@ -450,37 +450,23 @@ class DescribeComponentRequestRequestTypeDef(TypedDict):
     arn: str,
 ```
 
-## EffectiveDeploymentTypeDef
+## EffectiveDeploymentStatusDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_greengrassv2.type_defs import EffectiveDeploymentTypeDef
+from mypy_boto3_greengrassv2.type_defs import EffectiveDeploymentStatusDetailsTypeDef
 
-def get_value() -> EffectiveDeploymentTypeDef:
+def get_value() -> EffectiveDeploymentStatusDetailsTypeDef:
     return {
-        "deploymentId": ...,
-        "deploymentName": ...,
-        "targetArn": ...,
-        "coreDeviceExecutionStatus": ...,
-        "creationTimestamp": ...,
-        "modifiedTimestamp": ...,
+        "errorStack": ...,
     }
 ```
 
 ```python title="Definition"
-class EffectiveDeploymentTypeDef(TypedDict):
-    deploymentId: str,
-    deploymentName: str,
-    targetArn: str,
-    coreDeviceExecutionStatus: EffectiveDeploymentExecutionStatusType,  # (1)
-    creationTimestamp: datetime,
-    modifiedTimestamp: datetime,
-    iotJobId: NotRequired[str],
-    iotJobArn: NotRequired[str],
-    description: NotRequired[str],
-    reason: NotRequired[str],
+class EffectiveDeploymentStatusDetailsTypeDef(TypedDict):
+    errorStack: NotRequired[List[str]],
+    errorTypes: NotRequired[List[str]],
 ```
 
-1. See [:material-code-brackets: EffectiveDeploymentExecutionStatusType](./literals.md#effectivedeploymentexecutionstatustype) 
 ## GetComponentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -584,6 +570,9 @@ class InstalledComponentTypeDef(TypedDict):
     lifecycleStateDetails: NotRequired[str],
     isRoot: NotRequired[bool],
     lastStatusChangeTimestamp: NotRequired[datetime],
+    lastReportedTimestamp: NotRequired[datetime],
+    lastInstallationSource: NotRequired[str],
+    lifecycleStatusCodes: NotRequired[List[str]],
 ```
 
 1. See [:material-code-brackets: InstalledComponentLifecycleStateType](./literals.md#installedcomponentlifecyclestatetype) 
@@ -1496,28 +1485,39 @@ class ListDeploymentsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListEffectiveDeploymentsResponseTypeDef
+## EffectiveDeploymentTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import EffectiveDeploymentTypeDef
 
-def get_value() -> ListEffectiveDeploymentsResponseTypeDef:
+def get_value() -> EffectiveDeploymentTypeDef:
     return {
-        "effectiveDeployments": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
+        "deploymentId": ...,
+        "deploymentName": ...,
+        "targetArn": ...,
+        "coreDeviceExecutionStatus": ...,
+        "creationTimestamp": ...,
+        "modifiedTimestamp": ...,
     }
 ```
 
 ```python title="Definition"
-class ListEffectiveDeploymentsResponseTypeDef(TypedDict):
-    effectiveDeployments: List[EffectiveDeploymentTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class EffectiveDeploymentTypeDef(TypedDict):
+    deploymentId: str,
+    deploymentName: str,
+    targetArn: str,
+    coreDeviceExecutionStatus: EffectiveDeploymentExecutionStatusType,  # (1)
+    creationTimestamp: datetime,
+    modifiedTimestamp: datetime,
+    iotJobId: NotRequired[str],
+    iotJobArn: NotRequired[str],
+    description: NotRequired[str],
+    reason: NotRequired[str],
+    statusDetails: NotRequired[EffectiveDeploymentStatusDetailsTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: EffectiveDeploymentTypeDef](./type_defs.md#effectivedeploymenttypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: EffectiveDeploymentExecutionStatusType](./literals.md#effectivedeploymentexecutionstatustype) 
+2. See [:material-code-braces: EffectiveDeploymentStatusDetailsTypeDef](./type_defs.md#effectivedeploymentstatusdetailstypedef) 
 ## ListInstalledComponentsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1791,6 +1791,28 @@ class ComponentDeploymentSpecificationTypeDef(TypedDict):
 
 1. See [:material-code-braces: ComponentConfigurationUpdateTypeDef](./type_defs.md#componentconfigurationupdatetypedef) 
 2. See [:material-code-braces: ComponentRunWithTypeDef](./type_defs.md#componentrunwithtypedef) 
+## ListEffectiveDeploymentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsResponseTypeDef
+
+def get_value() -> ListEffectiveDeploymentsResponseTypeDef:
+    return {
+        "effectiveDeployments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEffectiveDeploymentsResponseTypeDef(TypedDict):
+    effectiveDeployments: List[EffectiveDeploymentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EffectiveDeploymentTypeDef](./type_defs.md#effectivedeploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IoTJobExecutionsRolloutConfigTypeDef
 
 ```python title="Usage Example"

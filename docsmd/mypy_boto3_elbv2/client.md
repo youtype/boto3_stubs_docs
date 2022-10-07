@@ -1135,8 +1135,8 @@ parent.remove_tags(**kwargs)
 
 ### set\_ip\_address\_type
 
-Sets the type of IP addresses used by the subnets of the specified Application
-Load Balancer or Network Load Balancer.
+Sets the type of IP addresses used by the subnets of the specified load
+balancer.
 
 Type annotations and code completion for `#!python boto3.client("elbv2").set_ip_address_type` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type)
