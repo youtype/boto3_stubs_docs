@@ -1655,6 +1655,7 @@ class FieldInputConfigTypeDef(TypedDict):
     defaultCountryCode: NotRequired[str],
     defaultValue: NotRequired[str],
     descriptiveText: NotRequired[str],
+    isArray: NotRequired[bool],
     maxValue: NotRequired[float],
     minValue: NotRequired[float],
     name: NotRequired[str],

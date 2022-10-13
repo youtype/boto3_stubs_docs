@@ -48,26 +48,6 @@ class AuthorizationTypeDef(TypedDict):
     SecretsRoleArn: str,
 ```
 
-## SpekeKeyProviderTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediapackage_vod.type_defs import SpekeKeyProviderTypeDef
-
-def get_value() -> SpekeKeyProviderTypeDef:
-    return {
-        "RoleArn": ...,
-        "SystemIds": ...,
-        "Url": ...,
-    }
-```
-
-```python title="Definition"
-class SpekeKeyProviderTypeDef(TypedDict):
-    RoleArn: str,
-    SystemIds: Sequence[str],
-    Url: str,
-```
-
 ## EgressAccessLogsTypeDef
 
 ```python title="Usage Example"
@@ -265,6 +245,26 @@ class DescribePackagingGroupRequestRequestTypeDef(TypedDict):
     Id: str,
 ```
 
+## EncryptionContractConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.type_defs import EncryptionContractConfigurationTypeDef
+
+def get_value() -> EncryptionContractConfigurationTypeDef:
+    return {
+        "PresetSpeke20Audio": ...,
+        "PresetSpeke20Video": ...,
+    }
+```
+
+```python title="Definition"
+class EncryptionContractConfigurationTypeDef(TypedDict):
+    PresetSpeke20Audio: PresetSpeke20AudioType,  # (1)
+    PresetSpeke20Video: PresetSpeke20VideoType,  # (2)
+```
+
+1. See [:material-code-brackets: PresetSpeke20AudioType](./literals.md#presetspeke20audiotype) 
+2. See [:material-code-brackets: PresetSpeke20VideoType](./literals.md#presetspeke20videotype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -406,78 +406,6 @@ class UpdatePackagingGroupRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AuthorizationTypeDef](./type_defs.md#authorizationtypedef) 
-## CmafEncryptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediapackage_vod.type_defs import CmafEncryptionTypeDef
-
-def get_value() -> CmafEncryptionTypeDef:
-    return {
-        "SpekeKeyProvider": ...,
-    }
-```
-
-```python title="Definition"
-class CmafEncryptionTypeDef(TypedDict):
-    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
-    ConstantInitializationVector: NotRequired[str],
-```
-
-1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
-## DashEncryptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediapackage_vod.type_defs import DashEncryptionTypeDef
-
-def get_value() -> DashEncryptionTypeDef:
-    return {
-        "SpekeKeyProvider": ...,
-    }
-```
-
-```python title="Definition"
-class DashEncryptionTypeDef(TypedDict):
-    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
-## HlsEncryptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediapackage_vod.type_defs import HlsEncryptionTypeDef
-
-def get_value() -> HlsEncryptionTypeDef:
-    return {
-        "SpekeKeyProvider": ...,
-    }
-```
-
-```python title="Definition"
-class HlsEncryptionTypeDef(TypedDict):
-    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (2)
-    ConstantInitializationVector: NotRequired[str],
-    EncryptionMethod: NotRequired[EncryptionMethodType],  # (1)
-```
-
-1. See [:material-code-brackets: EncryptionMethodType](./literals.md#encryptionmethodtype) 
-2. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
-## MssEncryptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediapackage_vod.type_defs import MssEncryptionTypeDef
-
-def get_value() -> MssEncryptionTypeDef:
-    return {
-        "SpekeKeyProvider": ...,
-    }
-```
-
-```python title="Definition"
-class MssEncryptionTypeDef(TypedDict):
-    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## ConfigureLogsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -860,6 +788,28 @@ class MssManifestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
+## SpekeKeyProviderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.type_defs import SpekeKeyProviderTypeDef
+
+def get_value() -> SpekeKeyProviderTypeDef:
+    return {
+        "RoleArn": ...,
+        "SystemIds": ...,
+        "Url": ...,
+    }
+```
+
+```python title="Definition"
+class SpekeKeyProviderTypeDef(TypedDict):
+    RoleArn: str,
+    SystemIds: Sequence[str],
+    Url: str,
+    EncryptionContractConfiguration: NotRequired[EncryptionContractConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EncryptionContractConfigurationTypeDef](./type_defs.md#encryptioncontractconfigurationtypedef) 
 ## ListAssetsRequestListAssetsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -935,6 +885,99 @@ class ListPackagingGroupsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PackagingGroupTypeDef](./type_defs.md#packaginggrouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CmafEncryptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.type_defs import CmafEncryptionTypeDef
+
+def get_value() -> CmafEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
+```
+
+```python title="Definition"
+class CmafEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
+    ConstantInitializationVector: NotRequired[str],
+```
+
+1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
+## DashEncryptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.type_defs import DashEncryptionTypeDef
+
+def get_value() -> DashEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
+```
+
+```python title="Definition"
+class DashEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
+## HlsEncryptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.type_defs import HlsEncryptionTypeDef
+
+def get_value() -> HlsEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
+```
+
+```python title="Definition"
+class HlsEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (2)
+    ConstantInitializationVector: NotRequired[str],
+    EncryptionMethod: NotRequired[EncryptionMethodType],  # (1)
+```
+
+1. See [:material-code-brackets: EncryptionMethodType](./literals.md#encryptionmethodtype) 
+2. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
+## MssEncryptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.type_defs import MssEncryptionTypeDef
+
+def get_value() -> MssEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
+```
+
+```python title="Definition"
+class MssEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
+## CmafPackageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.type_defs import CmafPackageTypeDef
+
+def get_value() -> CmafPackageTypeDef:
+    return {
+        "HlsManifests": ...,
+    }
+```
+
+```python title="Definition"
+class CmafPackageTypeDef(TypedDict):
+    HlsManifests: Sequence[HlsManifestTypeDef],  # (2)
+    Encryption: NotRequired[CmafEncryptionTypeDef],  # (1)
+    IncludeEncoderConfigurationInSegments: NotRequired[bool],
+    SegmentDurationSeconds: NotRequired[int],
+```
+
+1. See [:material-code-braces: CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef) 
+2. See [:material-code-braces: HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef) 
 ## DashPackageTypeDef
 
 ```python title="Usage Example"
@@ -960,27 +1003,6 @@ class DashPackageTypeDef(TypedDict):
 2. See [:material-code-braces: DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef) 
 3. See [:material-code-brackets: PeriodTriggersElementType](./literals.md#periodtriggerselementtype) 
 4. See [:material-code-brackets: SegmentTemplateFormatType](./literals.md#segmenttemplateformattype) 
-## CmafPackageTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediapackage_vod.type_defs import CmafPackageTypeDef
-
-def get_value() -> CmafPackageTypeDef:
-    return {
-        "HlsManifests": ...,
-    }
-```
-
-```python title="Definition"
-class CmafPackageTypeDef(TypedDict):
-    HlsManifests: Sequence[HlsManifestTypeDef],  # (2)
-    Encryption: NotRequired[CmafEncryptionTypeDef],  # (1)
-    IncludeEncoderConfigurationInSegments: NotRequired[bool],
-    SegmentDurationSeconds: NotRequired[int],
-```
-
-1. See [:material-code-braces: CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef) 
-2. See [:material-code-braces: HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef) 
 ## HlsPackageTypeDef
 
 ```python title="Usage Example"

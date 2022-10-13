@@ -915,6 +915,7 @@ def get_value() -> EbsVolumesResultTypeDef:
 ```python title="Definition"
 class EbsVolumesResultTypeDef(TypedDict):
     Status: NotRequired[DataSourceStatusType],  # (1)
+    Reason: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: DataSourceStatusType](./literals.md#datasourcestatustype) 
@@ -2208,25 +2209,6 @@ class ContainerTypeDef(TypedDict):
 
 1. See [:material-code-braces: VolumeMountTypeDef](./type_defs.md#volumemounttypedef) 
 2. See [:material-code-braces: SecurityContextTypeDef](./type_defs.md#securitycontexttypedef) 
-## CreateDetectorResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_guardduty.type_defs import CreateDetectorResponseTypeDef
-
-def get_value() -> CreateDetectorResponseTypeDef:
-    return {
-        "DetectorId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDetectorResponseTypeDef(TypedDict):
-    DetectorId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFilterResponseTypeDef
 
 ```python title="Usage Example"
@@ -4172,6 +4154,23 @@ class DataSourceConfigurationsResultTypeDef(TypedDict):
 4. See [:material-code-braces: S3LogsConfigurationResultTypeDef](./type_defs.md#s3logsconfigurationresulttypedef) 
 5. See [:material-code-braces: KubernetesConfigurationResultTypeDef](./type_defs.md#kubernetesconfigurationresulttypedef) 
 6. See [:material-code-braces: MalwareProtectionConfigurationResultTypeDef](./type_defs.md#malwareprotectionconfigurationresulttypedef) 
+## UnprocessedDataSourcesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import UnprocessedDataSourcesResultTypeDef
+
+def get_value() -> UnprocessedDataSourcesResultTypeDef:
+    return {
+        "MalwareProtection": ...,
+    }
+```
+
+```python title="Definition"
+class UnprocessedDataSourcesResultTypeDef(TypedDict):
+    MalwareProtection: NotRequired[MalwareProtectionConfigurationResultTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MalwareProtectionConfigurationResultTypeDef](./type_defs.md#malwareprotectionconfigurationresulttypedef) 
 ## DescribeMalwareScansRequestDescribeMalwareScansPaginateTypeDef
 
 ```python title="Usage Example"
@@ -4574,6 +4573,28 @@ class MemberDataSourceConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef) 
+## CreateDetectorResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_guardduty.type_defs import CreateDetectorResponseTypeDef
+
+def get_value() -> CreateDetectorResponseTypeDef:
+    return {
+        "DetectorId": ...,
+        "UnprocessedDataSources": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDetectorResponseTypeDef(TypedDict):
+    DetectorId: str,
+    UnprocessedDataSources: UnprocessedDataSourcesResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UnprocessedDataSourcesResultTypeDef](./type_defs.md#unprocesseddatasourcesresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
 ```python title="Usage Example"

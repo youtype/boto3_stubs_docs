@@ -136,21 +136,20 @@ def create_job_for_devices(
     self,
     *,
     DeviceIds: Sequence[str],
-    DeviceJobConfig: DeviceJobConfigTypeDef,  # (1)
-    JobType: JobTypeType,  # (2)
+    JobType: JobTypeType,  # (1)
+    DeviceJobConfig: DeviceJobConfigTypeDef = ...,  # (2)
 ) -> CreateJobForDevicesResponseTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef) 
-2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef) 
 3. See [:material-code-braces: CreateJobForDevicesResponseTypeDef](./type_defs.md#createjobfordevicesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: CreateJobForDevicesRequestRequestTypeDef = {  # (1)
     "DeviceIds": ...,
-    "DeviceJobConfig": ...,
     "JobType": ...,
 }
 
@@ -1059,6 +1058,38 @@ parent.remove_application_instance(**kwargs)
 ```
 
 1. See [:material-code-braces: RemoveApplicationInstanceRequestRequestTypeDef](./type_defs.md#removeapplicationinstancerequestrequesttypedef) 
+
+### signal\_application\_instance\_node\_instances
+
+Signal camera nodes to stop or resume.
+
+Type annotations and code completion for `#!python boto3.client("panorama").signal_application_instance_node_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.signal_application_instance_node_instances)
+
+```python title="Method definition"
+def signal_application_instance_node_instances(
+    self,
+    *,
+    ApplicationInstanceId: str,
+    NodeSignals: Sequence[NodeSignalTypeDef],  # (1)
+) -> SignalApplicationInstanceNodeInstancesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: NodeSignalTypeDef](./type_defs.md#nodesignaltypedef) 
+2. See [:material-code-braces: SignalApplicationInstanceNodeInstancesResponseTypeDef](./type_defs.md#signalapplicationinstancenodeinstancesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SignalApplicationInstanceNodeInstancesRequestRequestTypeDef = {  # (1)
+    "ApplicationInstanceId": ...,
+    "NodeSignals": ...,
+}
+
+parent.signal_application_instance_node_instances(**kwargs)
+```
+
+1. See [:material-code-braces: SignalApplicationInstanceNodeInstancesRequestRequestTypeDef](./type_defs.md#signalapplicationinstancenodeinstancesrequestrequesttypedef) 
 
 ### tag\_resource
 

@@ -802,6 +802,8 @@ class UserIdentityInfoTypeDef(TypedDict):
     FirstName: NotRequired[str],
     LastName: NotRequired[str],
     Email: NotRequired[str],
+    SecondaryEmail: NotRequired[str],
+    Mobile: NotRequired[str],
 ```
 
 ## UserPhoneConfigTypeDef

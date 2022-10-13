@@ -43,6 +43,7 @@ except (
     client.DirectoryAlreadyInRegionException,
     client.DirectoryAlreadySharedException,
     client.DirectoryDoesNotExistException,
+    client.DirectoryInDesiredStateException,
     client.DirectoryLimitExceededException,
     client.DirectoryNotSharedException,
     client.DirectoryUnavailableException,
@@ -1193,6 +1194,40 @@ parent.describe_trusts(**kwargs)
 
 1. See [:material-code-braces: DescribeTrustsRequestRequestTypeDef](./type_defs.md#describetrustsrequestrequesttypedef) 
 
+### describe\_update\_directory
+
+Describes the updates of a directory for a particular update type.
+
+Type annotations and code completion for `#!python boto3.client("ds").describe_update_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_update_directory)
+
+```python title="Method definition"
+def describe_update_directory(
+    self,
+    *,
+    DirectoryId: str,
+    UpdateType: UpdateTypeType,  # (1)
+    RegionName: str = ...,
+    NextToken: str = ...,
+) -> DescribeUpdateDirectoryResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+2. See [:material-code-braces: DescribeUpdateDirectoryResultTypeDef](./type_defs.md#describeupdatedirectoryresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUpdateDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "UpdateType": ...,
+}
+
+parent.describe_update_directory(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUpdateDirectoryRequestRequestTypeDef](./type_defs.md#describeupdatedirectoryrequestrequesttypedef) 
+
 ### disable\_client\_authentication
 
 Disables alternative client authentication methods for the specified directory.
@@ -2041,6 +2076,40 @@ parent.update_conditional_forwarder(**kwargs)
 
 1. See [:material-code-braces: UpdateConditionalForwarderRequestRequestTypeDef](./type_defs.md#updateconditionalforwarderrequestrequesttypedef) 
 
+### update\_directory\_setup
+
+Updates the directory for a particular update type.
+
+Type annotations and code completion for `#!python boto3.client("ds").update_directory_setup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_directory_setup)
+
+```python title="Method definition"
+def update_directory_setup(
+    self,
+    *,
+    DirectoryId: str,
+    UpdateType: UpdateTypeType,  # (1)
+    OSUpdateSettings: OSUpdateSettingsTypeDef = ...,  # (2)
+    CreateSnapshotBeforeUpdate: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+2. See [:material-code-braces: OSUpdateSettingsTypeDef](./type_defs.md#osupdatesettingstypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateDirectorySetupRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "UpdateType": ...,
+}
+
+parent.update_directory_setup(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateDirectorySetupRequestRequestTypeDef](./type_defs.md#updatedirectorysetuprequestrequesttypedef) 
+
 ### update\_number\_of\_domain\_controllers
 
 Adds or removes domain controllers to or from the directory.
@@ -2203,11 +2272,16 @@ parent.verify_trust(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("ds").get_paginator` method with overloads.
 
+- `client.get_paginator("describe_client_authentication_settings")` -> [DescribeClientAuthenticationSettingsPaginator](./paginators.md#describeclientauthenticationsettingspaginator)
 - `client.get_paginator("describe_directories")` -> [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
 - `client.get_paginator("describe_domain_controllers")` -> [DescribeDomainControllersPaginator](./paginators.md#describedomaincontrollerspaginator)
+- `client.get_paginator("describe_ldaps_settings")` -> [DescribeLDAPSSettingsPaginator](./paginators.md#describeldapssettingspaginator)
+- `client.get_paginator("describe_regions")` -> [DescribeRegionsPaginator](./paginators.md#describeregionspaginator)
 - `client.get_paginator("describe_shared_directories")` -> [DescribeSharedDirectoriesPaginator](./paginators.md#describeshareddirectoriespaginator)
 - `client.get_paginator("describe_snapshots")` -> [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
 - `client.get_paginator("describe_trusts")` -> [DescribeTrustsPaginator](./paginators.md#describetrustspaginator)
+- `client.get_paginator("describe_update_directory")` -> [DescribeUpdateDirectoryPaginator](./paginators.md#describeupdatedirectorypaginator)
+- `client.get_paginator("list_certificates")` -> [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
 - `client.get_paginator("list_ip_routes")` -> [ListIpRoutesPaginator](./paginators.md#listiproutespaginator)
 - `client.get_paginator("list_log_subscriptions")` -> [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
 - `client.get_paginator("list_schema_extensions")` -> [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)

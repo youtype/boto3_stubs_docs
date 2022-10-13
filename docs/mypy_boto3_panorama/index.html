@@ -37596,9 +37596,11 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#applicationinstancehealthstatustype">ApplicationInstanceHealthStatusType</a></li>
 <li><a href="literals/#applicationinstancestatustype">ApplicationInstanceStatusType</a></li>
 <li><a href="literals/#connectiontypetype">ConnectionTypeType</a></li>
+<li><a href="literals/#desiredstatetype">DesiredStateType</a></li>
 <li><a href="literals/#deviceaggregatedstatustype">DeviceAggregatedStatusType</a></li>
 <li><a href="literals/#devicebrandtype">DeviceBrandType</a></li>
 <li><a href="literals/#deviceconnectionstatustype">DeviceConnectionStatusType</a></li>
+<li><a href="literals/#devicereportedstatustype">DeviceReportedStatusType</a></li>
 <li><a href="literals/#devicestatustype">DeviceStatusType</a></li>
 <li><a href="literals/#devicetypetype">DeviceTypeType</a></li>
 <li><a href="literals/#jobresourcetypetype">JobResourceTypeType</a></li>
@@ -37608,6 +37610,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#nodecategorytype">NodeCategoryType</a></li>
 <li><a href="literals/#nodefromtemplatejobstatustype">NodeFromTemplateJobStatusType</a></li>
 <li><a href="literals/#nodeinstancestatustype">NodeInstanceStatusType</a></li>
+<li><a href="literals/#nodesignalvaluetype">NodeSignalValueType</a></li>
 <li><a href="literals/#packageimportjobstatustype">PackageImportJobStatusType</a></li>
 <li><a href="literals/#packageimportjobtypetype">PackageImportJobTypeType</a></li>
 <li><a href="literals/#packageversionstatustype">PackageVersionStatusType</a></li>
@@ -37631,7 +37634,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#alternatesoftwaremetadatatypedef">AlternateSoftwareMetadataTypeDef</a></li>
-<li><a href="type_defs/#applicationinstancetypedef">ApplicationInstanceTypeDef</a></li>
+<li><a href="type_defs/#reportedruntimecontextstatetypedef">ReportedRuntimeContextStateTypeDef</a></li>
 <li><a href="type_defs/#manifestoverridespayloadtypedef">ManifestOverridesPayloadTypeDef</a></li>
 <li><a href="type_defs/#manifestpayloadtypedef">ManifestPayloadTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
@@ -37676,6 +37679,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#ntpstatustypedef">NtpStatusTypeDef</a></li>
 <li><a href="type_defs/#nodeinputporttypedef">NodeInputPortTypeDef</a></li>
 <li><a href="type_defs/#nodeoutputporttypedef">NodeOutputPortTypeDef</a></li>
+<li><a href="type_defs/#nodesignaltypedef">NodeSignalTypeDef</a></li>
 <li><a href="type_defs/#outputs3locationtypedef">OutPutS3LocationTypeDef</a></li>
 <li><a href="type_defs/#packageversionoutputconfigtypedef">PackageVersionOutputConfigTypeDef</a></li>
 <li><a href="type_defs/#s3locationtypedef">S3LocationTypeDef</a></li>
@@ -37684,6 +37688,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedevicemetadatarequestrequesttypedef">UpdateDeviceMetadataRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#applicationinstancetypedef">ApplicationInstanceTypeDef</a></li>
 <li><a href="type_defs/#createapplicationinstancerequestrequesttypedef">CreateApplicationInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createapplicationinstanceresponsetypedef">CreateApplicationInstanceResponseTypeDef</a></li>
 <li><a href="type_defs/#createnodefromtemplatejobresponsetypedef">CreateNodeFromTemplateJobResponseTypeDef</a></li>
@@ -37693,9 +37698,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#describeapplicationinstanceresponsetypedef">DescribeApplicationInstanceResponseTypeDef</a></li>
 <li><a href="type_defs/#describedevicejobresponsetypedef">DescribeDeviceJobResponseTypeDef</a></li>
 <li><a href="type_defs/#describepackageversionresponsetypedef">DescribePackageVersionResponseTypeDef</a></li>
-<li><a href="type_defs/#listapplicationinstancesresponsetypedef">ListApplicationInstancesResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#provisiondeviceresponsetypedef">ProvisionDeviceResponseTypeDef</a></li>
+<li><a href="type_defs/#signalapplicationinstancenodeinstancesresponsetypedef">SignalApplicationInstanceNodeInstancesResponseTypeDef</a></li>
 <li><a href="type_defs/#updatedevicemetadataresponsetypedef">UpdateDeviceMetadataResponseTypeDef</a></li>
 <li><a href="type_defs/#createjobfordevicesresponsetypedef">CreateJobForDevicesResponseTypeDef</a></li>
 <li><a href="type_defs/#createnodefromtemplatejobrequestrequesttypedef">CreateNodeFromTemplateJobRequestRequestTypeDef</a></li>
@@ -37714,9 +37719,11 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listpackagesresponsetypedef">ListPackagesResponseTypeDef</a></li>
 <li><a href="type_defs/#networkstatustypedef">NetworkStatusTypeDef</a></li>
 <li><a href="type_defs/#nodeinterfacetypedef">NodeInterfaceTypeDef</a></li>
+<li><a href="type_defs/#signalapplicationinstancenodeinstancesrequestrequesttypedef">SignalApplicationInstanceNodeInstancesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#packageimportjoboutputtypedef">PackageImportJobOutputTypeDef</a></li>
 <li><a href="type_defs/#packageimportjoboutputconfigtypedef">PackageImportJobOutputConfigTypeDef</a></li>
 <li><a href="type_defs/#packageversioninputconfigtypedef">PackageVersionInputConfigTypeDef</a></li>
+<li><a href="type_defs/#listapplicationinstancesresponsetypedef">ListApplicationInstancesResponseTypeDef</a></li>
 <li><a href="type_defs/#listdevicesresponsetypedef">ListDevicesResponseTypeDef</a></li>
 <li><a href="type_defs/#createjobfordevicesrequestrequesttypedef">CreateJobForDevicesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#networkpayloadtypedef">NetworkPayloadTypeDef</a></li>

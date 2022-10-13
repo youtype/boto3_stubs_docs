@@ -2895,10 +2895,12 @@ def get_value() -> WorkflowDetailsTypeDef:
 
 ```python title="Definition"
 class WorkflowDetailsTypeDef(TypedDict):
-    OnUpload: Sequence[WorkflowDetailTypeDef],  # (1)
+    OnUpload: NotRequired[Sequence[WorkflowDetailTypeDef]],  # (1)
+    OnPartialUpload: NotRequired[Sequence[WorkflowDetailTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef) 
+2. See [:material-code-braces: WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef) 
 ## DescribeAccessResponseTypeDef
 
 ```python title="Usage Example"

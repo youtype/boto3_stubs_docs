@@ -55,6 +55,7 @@ ItemTypeType = Literal[
     "METRIC",
     "OTHER",
     "PARENT",
+    "TASK",
 ]
 ```
 ## ListIncidentRecordsPaginatorName

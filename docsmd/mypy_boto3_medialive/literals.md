@@ -4026,6 +4026,21 @@ Scte35DeviceRestrictionsType = Literal[
     "RESTRICT_GROUP2",
 ]
 ```
+## Scte35InputModeType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import Scte35InputModeType
+
+def get_value() -> Scte35InputModeType:
+    return "FIXED"
+```
+
+```python title="Definition"
+Scte35InputModeType = Literal[
+    "FIXED",
+    "FOLLOW_ACTIVE",
+]
+```
 ## Scte35NoRegionalBlackoutFlagType
 
 ```python title="Usage Example"

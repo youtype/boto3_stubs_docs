@@ -357,6 +357,7 @@ OperatorPropertiesKeysType = Literal[
     "DATA_TYPE",
     "DESTINATION_DATA_TYPE",
     "EXCLUDE_SOURCE_FIELDS_LIST",
+    "INCLUDE_NEW_FIELDS",
     "LOWER_BOUND",
     "MASK_LENGTH",
     "MASK_VALUE",
@@ -620,6 +621,22 @@ SalesforceConnectorOperatorType = Literal[
     "VALIDATE_NON_NULL",
     "VALIDATE_NON_ZERO",
     "VALIDATE_NUMERIC",
+]
+```
+## SalesforceDataTransferApiType
+
+```python title="Usage Example"
+from mypy_boto3_appflow.literals import SalesforceDataTransferApiType
+
+def get_value() -> SalesforceDataTransferApiType:
+    return "AUTOMATIC"
+```
+
+```python title="Definition"
+SalesforceDataTransferApiType = Literal[
+    "AUTOMATIC",
+    "BULKV2",
+    "REST_SYNC",
 ]
 ```
 ## ScheduleFrequencyTypeType

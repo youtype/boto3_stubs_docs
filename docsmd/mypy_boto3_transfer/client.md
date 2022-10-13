@@ -213,7 +213,7 @@ parent.create_connector(**kwargs)
 
 ### create\_profile
 
-Creates the profile for the AS2 process.
+Creates the local or partner profile to use for AS2 transfers.
 
 Type annotations and code completion for `#!python boto3.client("transfer").create_profile` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_profile)
@@ -1082,7 +1082,7 @@ parent.import_certificate(**kwargs)
 
 ### import\_host\_key
 
-Adds a host key to the server specified by the `ServerId` parameter.
+Adds a host key to the server that's specified by the `ServerId` parameter.
 
 Type annotations and code completion for `#!python boto3.client("transfer").import_host_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_host_key)
@@ -1306,7 +1306,8 @@ parent.list_executions(**kwargs)
 
 ### list\_host\_keys
 
-Returns a list of host keys for the server specified by the `ServerId` paramter.
+Returns a list of host keys for the server that's specified by the `ServerId`
+parameter.
 
 Type annotations and code completion for `#!python boto3.client("transfer").list_host_keys` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_host_keys)
@@ -1560,7 +1561,7 @@ parent.send_workflow_step_state(**kwargs)
 
 ### start\_file\_transfer
 
-Begins an outbound file transfer.
+Begins an outbound file transfer to a remote AS2 server.
 
 Type annotations and code completion for `#!python boto3.client("transfer").start_file_transfer` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_file_transfer)
@@ -1898,8 +1899,8 @@ parent.update_connector(**kwargs)
 
 ### update\_host\_key
 
-Updates the description for the host key specified by the specified by the
-`ServerId` and `HostKeyId` parameters.
+Updates the description for the host key that's specified by the `ServerId` and
+`HostKeyId` parameters.
 
 Type annotations and code completion for `#!python boto3.client("transfer").update_host_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_host_key)

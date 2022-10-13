@@ -498,6 +498,24 @@ class DescribeCertificateRequestRequestTypeDef(TypedDict):
     CertificateId: str,
 ```
 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
 ## DescribeClientAuthenticationSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -533,24 +551,6 @@ def get_value() -> DescribeConditionalForwardersRequestRequestTypeDef:
 class DescribeConditionalForwardersRequestRequestTypeDef(TypedDict):
     DirectoryId: str,
     RemoteDomainNames: NotRequired[Sequence[str]],
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ds.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## DescribeDirectoriesRequestRequestTypeDef
@@ -867,6 +867,27 @@ class TrustTypeDef(TypedDict):
 2. See [:material-code-brackets: TrustDirectionType](./literals.md#trustdirectiontype) 
 3. See [:material-code-brackets: TrustStateType](./literals.md#truststatetype) 
 4. See [:material-code-brackets: SelectiveAuthType](./literals.md#selectiveauthtype) 
+## DescribeUpdateDirectoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeUpdateDirectoryRequestRequestTypeDef
+
+def get_value() -> DescribeUpdateDirectoryRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "UpdateType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUpdateDirectoryRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    UpdateType: UpdateTypeType,  # (1)
+    RegionName: NotRequired[str],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
 ## DirectoryConnectSettingsDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -1287,6 +1308,23 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
+## OSUpdateSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import OSUpdateSettingsTypeDef
+
+def get_value() -> OSUpdateSettingsTypeDef:
+    return {
+        "OSVersion": ...,
+    }
+```
+
+```python title="Definition"
+class OSUpdateSettingsTypeDef(TypedDict):
+    OSVersion: NotRequired[OSVersionType],  # (1)
+```
+
+1. See [:material-code-brackets: OSVersionType](./literals.md#osversiontype) 
 ## RegisterEventTopicRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2273,6 +2311,26 @@ class ConnectDirectoryRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
 2. See [:material-code-braces: DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeClientAuthenticationSettingsRequestDescribeClientAuthenticationSettingsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsRequestDescribeClientAuthenticationSettingsPaginateTypeDef
+
+def get_value() -> DescribeClientAuthenticationSettingsRequestDescribeClientAuthenticationSettingsPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClientAuthenticationSettingsRequestDescribeClientAuthenticationSettingsPaginateTypeDef(TypedDict):
+    DirectoryId: str,
+    Type: NotRequired[ClientAuthenticationTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2306,6 +2364,45 @@ def get_value() -> DescribeDomainControllersRequestDescribeDomainControllersPagi
 class DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef(TypedDict):
     DirectoryId: str,
     DomainControllerIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeLDAPSSettingsRequestDescribeLDAPSSettingsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeLDAPSSettingsRequestDescribeLDAPSSettingsPaginateTypeDef
+
+def get_value() -> DescribeLDAPSSettingsRequestDescribeLDAPSSettingsPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeLDAPSSettingsRequestDescribeLDAPSSettingsPaginateTypeDef(TypedDict):
+    DirectoryId: str,
+    Type: NotRequired[LDAPSTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LDAPSTypeType](./literals.md#ldapstypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeRegionsRequestDescribeRegionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeRegionsRequestDescribeRegionsPaginateTypeDef
+
+def get_value() -> DescribeRegionsRequestDescribeRegionsPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRegionsRequestDescribeRegionsPaginateTypeDef(TypedDict):
+    DirectoryId: str,
+    RegionName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -2363,6 +2460,46 @@ def get_value() -> DescribeTrustsRequestDescribeTrustsPaginateTypeDef:
 class DescribeTrustsRequestDescribeTrustsPaginateTypeDef(TypedDict):
     DirectoryId: NotRequired[str],
     TrustIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeUpdateDirectoryRequestDescribeUpdateDirectoryPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeUpdateDirectoryRequestDescribeUpdateDirectoryPaginateTypeDef
+
+def get_value() -> DescribeUpdateDirectoryRequestDescribeUpdateDirectoryPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+        "UpdateType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUpdateDirectoryRequestDescribeUpdateDirectoryPaginateTypeDef(TypedDict):
+    DirectoryId: str,
+    UpdateType: UpdateTypeType,  # (1)
+    RegionName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCertificatesRequestListCertificatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import ListCertificatesRequestListCertificatesPaginateTypeDef
+
+def get_value() -> ListCertificatesRequestListCertificatesPaginateTypeDef:
+    return {
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCertificatesRequestListCertificatesPaginateTypeDef(TypedDict):
+    DirectoryId: str,
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -2739,6 +2876,45 @@ class ListSchemaExtensionsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: SchemaExtensionInfoTypeDef](./type_defs.md#schemaextensioninfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDirectorySetupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UpdateDirectorySetupRequestRequestTypeDef
+
+def get_value() -> UpdateDirectorySetupRequestRequestTypeDef:
+    return {
+        "DirectoryId": ...,
+        "UpdateType": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDirectorySetupRequestRequestTypeDef(TypedDict):
+    DirectoryId: str,
+    UpdateType: UpdateTypeType,  # (1)
+    OSUpdateSettings: NotRequired[OSUpdateSettingsTypeDef],  # (2)
+    CreateSnapshotBeforeUpdate: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+2. See [:material-code-braces: OSUpdateSettingsTypeDef](./type_defs.md#osupdatesettingstypedef) 
+## UpdateValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UpdateValueTypeDef
+
+def get_value() -> UpdateValueTypeDef:
+    return {
+        "OSUpdateSettings": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateValueTypeDef(TypedDict):
+    OSUpdateSettings: NotRequired[OSUpdateSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OSUpdateSettingsTypeDef](./type_defs.md#osupdatesettingstypedef) 
 ## UpdateSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2900,6 +3076,7 @@ class DirectoryDescriptionTypeDef(TypedDict):
     DesiredNumberOfDomainControllers: NotRequired[int],
     OwnerDirectoryDescription: NotRequired[OwnerDirectoryDescriptionTypeDef],  # (11)
     RegionsInfo: NotRequired[RegionsInfoTypeDef],  # (12)
+    OsVersion: NotRequired[OSVersionType],  # (13)
 ```
 
 1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
@@ -2914,6 +3091,33 @@ class DirectoryDescriptionTypeDef(TypedDict):
 10. See [:material-code-brackets: RadiusStatusType](./literals.md#radiusstatustype) 
 11. See [:material-code-braces: OwnerDirectoryDescriptionTypeDef](./type_defs.md#ownerdirectorydescriptiontypedef) 
 12. See [:material-code-braces: RegionsInfoTypeDef](./type_defs.md#regionsinfotypedef) 
+13. See [:material-code-brackets: OSVersionType](./literals.md#osversiontype) 
+## UpdateInfoEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import UpdateInfoEntryTypeDef
+
+def get_value() -> UpdateInfoEntryTypeDef:
+    return {
+        "Region": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateInfoEntryTypeDef(TypedDict):
+    Region: NotRequired[str],
+    Status: NotRequired[UpdateStatusType],  # (1)
+    StatusReason: NotRequired[str],
+    InitiatedBy: NotRequired[str],
+    NewValue: NotRequired[UpdateValueTypeDef],  # (2)
+    PreviousValue: NotRequired[UpdateValueTypeDef],  # (2)
+    StartTime: NotRequired[datetime],
+    LastUpdatedDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: UpdateStatusType](./literals.md#updatestatustype) 
+2. See [:material-code-braces: UpdateValueTypeDef](./type_defs.md#updatevaluetypedef) 
+3. See [:material-code-braces: UpdateValueTypeDef](./type_defs.md#updatevaluetypedef) 
 ## DescribeDirectoriesResultTypeDef
 
 ```python title="Usage Example"
@@ -2935,4 +3139,26 @@ class DescribeDirectoriesResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DirectoryDescriptionTypeDef](./type_defs.md#directorydescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeUpdateDirectoryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ds.type_defs import DescribeUpdateDirectoryResultTypeDef
+
+def get_value() -> DescribeUpdateDirectoryResultTypeDef:
+    return {
+        "UpdateActivities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUpdateDirectoryResultTypeDef(TypedDict):
+    UpdateActivities: List[UpdateInfoEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UpdateInfoEntryTypeDef](./type_defs.md#updateinfoentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

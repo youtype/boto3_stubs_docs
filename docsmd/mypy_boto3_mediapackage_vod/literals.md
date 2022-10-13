@@ -109,6 +109,47 @@ PeriodTriggersElementType = Literal[
     "ADS",
 ]
 ```
+## PresetSpeke20AudioType
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.literals import PresetSpeke20AudioType
+
+def get_value() -> PresetSpeke20AudioType:
+    return "PRESET-AUDIO-1"
+```
+
+```python title="Definition"
+PresetSpeke20AudioType = Literal[
+    "PRESET-AUDIO-1",
+    "PRESET-AUDIO-2",
+    "PRESET-AUDIO-3",
+    "SHARED",
+    "UNENCRYPTED",
+]
+```
+## PresetSpeke20VideoType
+
+```python title="Usage Example"
+from mypy_boto3_mediapackage_vod.literals import PresetSpeke20VideoType
+
+def get_value() -> PresetSpeke20VideoType:
+    return "PRESET-VIDEO-1"
+```
+
+```python title="Definition"
+PresetSpeke20VideoType = Literal[
+    "PRESET-VIDEO-1",
+    "PRESET-VIDEO-2",
+    "PRESET-VIDEO-3",
+    "PRESET-VIDEO-4",
+    "PRESET-VIDEO-5",
+    "PRESET-VIDEO-6",
+    "PRESET-VIDEO-7",
+    "PRESET-VIDEO-8",
+    "SHARED",
+    "UNENCRYPTED",
+]
+```
 ## ProfileType
 
 ```python title="Usage Example"

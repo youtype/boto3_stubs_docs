@@ -1535,6 +1535,7 @@ def get_value() -> OperatingSystemType:
 OperatingSystemType = Literal[
     "AMAZON_LINUX",
     "AMAZON_LINUX_2",
+    "AMAZON_LINUX_2022",
     "CENTOS",
     "DEBIAN",
     "MACOS",

@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("ds")  # (1)
 
-    paginator = client.get_paginator("describe_directories")  # (2)
+    paginator = client.get_paginator("describe_client_authentication_settings")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [DirectoryServiceClient](./client.md)
-    2. paginator: [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
-    3. item: [:material-code-braces: DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef) 
+    2. paginator: [DescribeClientAuthenticationSettingsPaginator](./paginators.md#describeclientauthenticationsettingspaginator)
+    3. item: [:material-code-braces: DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef) 
 
 
 
@@ -90,16 +90,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_ds.client import DirectoryServiceClient
-    from mypy_boto3_ds.paginator import DescribeDirectoriesPaginator
-    from mypy_boto3_ds.type_defs import DescribeDirectoriesResultTypeDef
+    from mypy_boto3_ds.paginator import DescribeClientAuthenticationSettingsPaginator
+    from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsResultTypeDef
 
 
     session = Session()
     client: DirectoryServiceClient = session.client("ds")
 
-    paginator: DescribeDirectoriesPaginator = client.get_paginator("describe_directories")
+    paginator: DescribeClientAuthenticationSettingsPaginator = client.get_paginator("describe_client_authentication_settings")
     for item in paginator.paginate(...):
-        item: DescribeDirectoriesResultTypeDef
+        item: DescribeClientAuthenticationSettingsResultTypeDef
         print(item)
     ```
 

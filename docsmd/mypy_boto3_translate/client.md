@@ -408,8 +408,7 @@ parent.list_parallel_data(**kwargs)
 
 ### list\_tags\_for\_resource
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/translate-2017-07-01/ListTagsForResource).
+Lists all tags associated with a given Amazon Translate resource.
 
 Type annotations and code completion for `#!python boto3.client("translate").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_tags_for_resource)
@@ -575,8 +574,7 @@ parent.stop_text_translation_job(**kwargs)
 
 ### tag\_resource
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/translate-2017-07-01/TagResource).
+Associates a specific tag with a resource.
 
 Type annotations and code completion for `#!python boto3.client("translate").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.tag_resource)
@@ -643,8 +641,7 @@ parent.translate_text(**kwargs)
 
 ### untag\_resource
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/translate-2017-07-01/UntagResource).
+Removes a specific tag associated with an Amazon Translate resource.
 
 Type annotations and code completion for `#!python boto3.client("translate").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.untag_resource)

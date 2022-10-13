@@ -855,8 +855,8 @@ parent.disassociate_from_master_account(**kwargs)
 
 ### disassociate\_members
 
-Disassociates GuardDuty member accounts (to the current GuardDuty administrator
-account) specified by the account IDs.
+Disassociates GuardDuty member accounts (to the current administrator account)
+specified by the account IDs.
 
 Type annotations and code completion for `#!python boto3.client("guardduty").disassociate_members` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
@@ -1557,8 +1557,7 @@ parent.list_ip_sets(**kwargs)
 
 ### list\_members
 
-Lists details about all member accounts for the current GuardDuty administrator
-account.
+.
 
 Type annotations and code completion for `#!python boto3.client("guardduty").list_members` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)

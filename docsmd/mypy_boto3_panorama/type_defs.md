@@ -23,34 +23,30 @@ class AlternateSoftwareMetadataTypeDef(TypedDict):
     Version: NotRequired[str],
 ```
 
-## ApplicationInstanceTypeDef
+## ReportedRuntimeContextStateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_panorama.type_defs import ApplicationInstanceTypeDef
+from mypy_boto3_panorama.type_defs import ReportedRuntimeContextStateTypeDef
 
-def get_value() -> ApplicationInstanceTypeDef:
+def get_value() -> ReportedRuntimeContextStateTypeDef:
     return {
-        "ApplicationInstanceId": ...,
+        "DesiredState": ...,
+        "DeviceReportedStatus": ...,
+        "DeviceReportedTime": ...,
+        "RuntimeContextName": ...,
     }
 ```
 
 ```python title="Definition"
-class ApplicationInstanceTypeDef(TypedDict):
-    ApplicationInstanceId: NotRequired[str],
-    Arn: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    DefaultRuntimeContextDevice: NotRequired[str],
-    DefaultRuntimeContextDeviceName: NotRequired[str],
-    Description: NotRequired[str],
-    HealthStatus: NotRequired[ApplicationInstanceHealthStatusType],  # (1)
-    Name: NotRequired[str],
-    Status: NotRequired[ApplicationInstanceStatusType],  # (2)
-    StatusDescription: NotRequired[str],
-    Tags: NotRequired[Dict[str, str]],
+class ReportedRuntimeContextStateTypeDef(TypedDict):
+    DesiredState: DesiredStateType,  # (1)
+    DeviceReportedStatus: DeviceReportedStatusType,  # (2)
+    DeviceReportedTime: datetime,
+    RuntimeContextName: str,
 ```
 
-1. See [:material-code-brackets: ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype) 
-2. See [:material-code-brackets: ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype) 
+1. See [:material-code-brackets: DesiredStateType](./literals.md#desiredstatetype) 
+2. See [:material-code-brackets: DeviceReportedStatusType](./literals.md#devicereportedstatustype) 
 ## ManifestOverridesPayloadTypeDef
 
 ```python title="Usage Example"
@@ -317,10 +313,12 @@ def get_value() -> LatestDeviceJobTypeDef:
 ```python title="Definition"
 class LatestDeviceJobTypeDef(TypedDict):
     ImageVersion: NotRequired[str],
-    Status: NotRequired[UpdateProgressType],  # (1)
+    JobType: NotRequired[JobTypeType],  # (1)
+    Status: NotRequired[UpdateProgressType],  # (2)
 ```
 
-1. See [:material-code-brackets: UpdateProgressType](./literals.md#updateprogresstype) 
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-brackets: UpdateProgressType](./literals.md#updateprogresstype) 
 ## DescribeNodeFromTemplateJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -439,8 +437,10 @@ class DeviceJobTypeDef(TypedDict):
     DeviceId: NotRequired[str],
     DeviceName: NotRequired[str],
     JobId: NotRequired[str],
+    JobType: NotRequired[JobTypeType],  # (1)
 ```
 
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
 ## StaticIpConnectionInfoTypeDef
 
 ```python title="Usage Example"
@@ -889,6 +889,25 @@ class NodeOutputPortTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PortTypeType](./literals.md#porttypetype) 
+## NodeSignalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import NodeSignalTypeDef
+
+def get_value() -> NodeSignalTypeDef:
+    return {
+        "NodeInstanceId": ...,
+        "Signal": ...,
+    }
+```
+
+```python title="Definition"
+class NodeSignalTypeDef(TypedDict):
+    NodeInstanceId: str,
+    Signal: NodeSignalValueType,  # (1)
+```
+
+1. See [:material-code-brackets: NodeSignalValueType](./literals.md#nodesignalvaluetype) 
 ## OutPutS3LocationTypeDef
 
 ```python title="Usage Example"
@@ -1036,6 +1055,36 @@ class UpdateDeviceMetadataRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
+## ApplicationInstanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import ApplicationInstanceTypeDef
+
+def get_value() -> ApplicationInstanceTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationInstanceTypeDef(TypedDict):
+    ApplicationInstanceId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    DefaultRuntimeContextDevice: NotRequired[str],
+    DefaultRuntimeContextDeviceName: NotRequired[str],
+    Description: NotRequired[str],
+    HealthStatus: NotRequired[ApplicationInstanceHealthStatusType],  # (1)
+    Name: NotRequired[str],
+    RuntimeContextStates: NotRequired[List[ReportedRuntimeContextStateTypeDef]],  # (2)
+    Status: NotRequired[ApplicationInstanceStatusType],  # (3)
+    StatusDescription: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype) 
+2. See [:material-code-braces: ReportedRuntimeContextStateTypeDef](./type_defs.md#reportedruntimecontextstatetypedef) 
+3. See [:material-code-brackets: ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype) 
 ## CreateApplicationInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1190,6 +1239,7 @@ def get_value() -> DescribeApplicationInstanceResponseTypeDef:
         "HealthStatus": ...,
         "LastUpdatedTime": ...,
         "Name": ...,
+        "RuntimeContextStates": ...,
         "RuntimeRoleArn": ...,
         "Status": ...,
         "StatusDescription": ...,
@@ -1210,16 +1260,18 @@ class DescribeApplicationInstanceResponseTypeDef(TypedDict):
     HealthStatus: ApplicationInstanceHealthStatusType,  # (1)
     LastUpdatedTime: datetime,
     Name: str,
+    RuntimeContextStates: List[ReportedRuntimeContextStateTypeDef],  # (2)
     RuntimeRoleArn: str,
-    Status: ApplicationInstanceStatusType,  # (2)
+    Status: ApplicationInstanceStatusType,  # (3)
     StatusDescription: str,
     Tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-brackets: ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype) 
-2. See [:material-code-brackets: ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: ReportedRuntimeContextStateTypeDef](./type_defs.md#reportedruntimecontextstatetypedef) 
+3. See [:material-code-brackets: ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeviceJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -1234,6 +1286,7 @@ def get_value() -> DescribeDeviceJobResponseTypeDef:
         "DeviceType": ...,
         "ImageVersion": ...,
         "JobId": ...,
+        "JobType": ...,
         "Status": ...,
         "ResponseMetadata": ...,
     }
@@ -1248,13 +1301,15 @@ class DescribeDeviceJobResponseTypeDef(TypedDict):
     DeviceType: DeviceTypeType,  # (1)
     ImageVersion: str,
     JobId: str,
-    Status: UpdateProgressType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    JobType: JobTypeType,  # (2)
+    Status: UpdateProgressType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-brackets: DeviceTypeType](./literals.md#devicetypetype) 
-2. See [:material-code-brackets: UpdateProgressType](./literals.md#updateprogresstype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: UpdateProgressType](./literals.md#updateprogresstype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePackageVersionResponseTypeDef
 
 ```python title="Usage Example"
@@ -1292,28 +1347,6 @@ class DescribePackageVersionResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListApplicationInstancesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_panorama.type_defs import ListApplicationInstancesResponseTypeDef
-
-def get_value() -> ListApplicationInstancesResponseTypeDef:
-    return {
-        "ApplicationInstances": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListApplicationInstancesResponseTypeDef(TypedDict):
-    ApplicationInstances: List[ApplicationInstanceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ApplicationInstanceTypeDef](./type_defs.md#applicationinstancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1362,6 +1395,25 @@ class ProvisionDeviceResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SignalApplicationInstanceNodeInstancesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import SignalApplicationInstanceNodeInstancesResponseTypeDef
+
+def get_value() -> SignalApplicationInstanceNodeInstancesResponseTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SignalApplicationInstanceNodeInstancesResponseTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDeviceMetadataResponseTypeDef
 
 ```python title="Usage Example"
@@ -1796,6 +1848,25 @@ class NodeInterfaceTypeDef(TypedDict):
 
 1. See [:material-code-braces: NodeInputPortTypeDef](./type_defs.md#nodeinputporttypedef) 
 2. See [:material-code-braces: NodeOutputPortTypeDef](./type_defs.md#nodeoutputporttypedef) 
+## SignalApplicationInstanceNodeInstancesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import SignalApplicationInstanceNodeInstancesRequestRequestTypeDef
+
+def get_value() -> SignalApplicationInstanceNodeInstancesRequestRequestTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+        "NodeSignals": ...,
+    }
+```
+
+```python title="Definition"
+class SignalApplicationInstanceNodeInstancesRequestRequestTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+    NodeSignals: Sequence[NodeSignalTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: NodeSignalTypeDef](./type_defs.md#nodesignaltypedef) 
 ## PackageImportJobOutputTypeDef
 
 ```python title="Usage Example"
@@ -1853,6 +1924,28 @@ class PackageVersionInputConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+## ListApplicationInstancesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_panorama.type_defs import ListApplicationInstancesResponseTypeDef
+
+def get_value() -> ListApplicationInstancesResponseTypeDef:
+    return {
+        "ApplicationInstances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationInstancesResponseTypeDef(TypedDict):
+    ApplicationInstances: List[ApplicationInstanceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationInstanceTypeDef](./type_defs.md#applicationinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDevicesResponseTypeDef
 
 ```python title="Usage Example"
@@ -1883,7 +1976,6 @@ from mypy_boto3_panorama.type_defs import CreateJobForDevicesRequestRequestTypeD
 def get_value() -> CreateJobForDevicesRequestRequestTypeDef:
     return {
         "DeviceIds": ...,
-        "DeviceJobConfig": ...,
         "JobType": ...,
     }
 ```
@@ -1891,12 +1983,12 @@ def get_value() -> CreateJobForDevicesRequestRequestTypeDef:
 ```python title="Definition"
 class CreateJobForDevicesRequestRequestTypeDef(TypedDict):
     DeviceIds: Sequence[str],
-    DeviceJobConfig: DeviceJobConfigTypeDef,  # (1)
-    JobType: JobTypeType,  # (2)
+    JobType: JobTypeType,  # (1)
+    DeviceJobConfig: NotRequired[DeviceJobConfigTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef) 
-2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef) 
 ## NetworkPayloadTypeDef
 
 ```python title="Usage Example"

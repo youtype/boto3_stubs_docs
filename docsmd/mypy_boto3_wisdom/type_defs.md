@@ -363,23 +363,6 @@ class HighlightTypeDef(TypedDict):
     endOffsetExclusive: NotRequired[int],
 ```
 
-## FeedbackDataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wisdom.type_defs import FeedbackDataTypeDef
-
-def get_value() -> FeedbackDataTypeDef:
-    return {
-        "relevance": ...,
-    }
-```
-
-```python title="Definition"
-class FeedbackDataTypeDef(TypedDict):
-    relevance: RelevanceType,  # (1)
-```
-
-1. See [:material-code-brackets: RelevanceType](./literals.md#relevancetype) 
 ## FilterTypeDef
 
 ```python title="Usage Example"
@@ -1205,59 +1188,6 @@ class DocumentTextTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: HighlightTypeDef](./type_defs.md#highlighttypedef) 
-## PutFeedbackRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wisdom.type_defs import PutFeedbackRequestRequestTypeDef
-
-def get_value() -> PutFeedbackRequestRequestTypeDef:
-    return {
-        "assistantId": ...,
-        "feedback": ...,
-        "targetId": ...,
-        "targetType": ...,
-    }
-```
-
-```python title="Definition"
-class PutFeedbackRequestRequestTypeDef(TypedDict):
-    assistantId: str,
-    feedback: FeedbackDataTypeDef,  # (1)
-    targetId: str,
-    targetType: TargetTypeType,  # (2)
-```
-
-1. See [:material-code-braces: FeedbackDataTypeDef](./type_defs.md#feedbackdatatypedef) 
-2. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
-## PutFeedbackResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wisdom.type_defs import PutFeedbackResponseTypeDef
-
-def get_value() -> PutFeedbackResponseTypeDef:
-    return {
-        "assistantArn": ...,
-        "assistantId": ...,
-        "feedback": ...,
-        "targetId": ...,
-        "targetType": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class PutFeedbackResponseTypeDef(TypedDict):
-    assistantArn: str,
-    assistantId: str,
-    feedback: FeedbackDataTypeDef,  # (1)
-    targetId: str,
-    targetType: TargetTypeType,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: FeedbackDataTypeDef](./type_defs.md#feedbackdatatypedef) 
-2. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchExpressionTypeDef
 
 ```python title="Usage Example"

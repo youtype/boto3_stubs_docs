@@ -383,6 +383,28 @@ class AudioTrackTypeDef(TypedDict):
     Track: int,
 ```
 
+## EsamTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import EsamTypeDef
+
+def get_value() -> EsamTypeDef:
+    return {
+        "AcquisitionPointId": ...,
+        "PoisEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class EsamTypeDef(TypedDict):
+    AcquisitionPointId: str,
+    PoisEndpoint: str,
+    AdAvailOffset: NotRequired[int],
+    PasswordParam: NotRequired[str],
+    Username: NotRequired[str],
+    ZoneIdentity: NotRequired[str],
+```
+
 ## Scte35SpliceInsertTypeDef
 
 ```python title="Usage Example"
@@ -2763,6 +2785,24 @@ class RejectInputDeviceTransferRequestRequestTypeDef(TypedDict):
     InputDeviceId: str,
 ```
 
+## Scte35InputScheduleActionSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import Scte35InputScheduleActionSettingsTypeDef
+
+def get_value() -> Scte35InputScheduleActionSettingsTypeDef:
+    return {
+        "Mode": ...,
+    }
+```
+
+```python title="Definition"
+class Scte35InputScheduleActionSettingsTypeDef(TypedDict):
+    Mode: Scte35InputModeType,  # (1)
+    InputAttachmentNameReference: NotRequired[str],
+```
+
+1. See [:material-code-brackets: Scte35InputModeType](./literals.md#scte35inputmodetype) 
 ## Scte35ReturnToNetworkScheduleActionSettingsTypeDef
 
 ```python title="Usage Example"
@@ -3366,18 +3406,20 @@ from mypy_boto3_medialive.type_defs import AvailSettingsTypeDef
 
 def get_value() -> AvailSettingsTypeDef:
     return {
-        "Scte35SpliceInsert": ...,
+        "Esam": ...,
     }
 ```
 
 ```python title="Definition"
 class AvailSettingsTypeDef(TypedDict):
-    Scte35SpliceInsert: NotRequired[Scte35SpliceInsertTypeDef],  # (1)
-    Scte35TimeSignalApos: NotRequired[Scte35TimeSignalAposTypeDef],  # (2)
+    Esam: NotRequired[EsamTypeDef],  # (1)
+    Scte35SpliceInsert: NotRequired[Scte35SpliceInsertTypeDef],  # (2)
+    Scte35TimeSignalApos: NotRequired[Scte35TimeSignalAposTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: Scte35SpliceInsertTypeDef](./type_defs.md#scte35spliceinserttypedef) 
-2. See [:material-code-braces: Scte35TimeSignalAposTypeDef](./type_defs.md#scte35timesignalapostypedef) 
+1. See [:material-code-braces: EsamTypeDef](./type_defs.md#esamtypedef) 
+2. See [:material-code-braces: Scte35SpliceInsertTypeDef](./type_defs.md#scte35spliceinserttypedef) 
+3. See [:material-code-braces: Scte35TimeSignalAposTypeDef](./type_defs.md#scte35timesignalapostypedef) 
 ## BatchDeleteResponseTypeDef
 
 ```python title="Usage Example"
@@ -6967,11 +7009,12 @@ class ScheduleActionSettingsTypeDef(TypedDict):
     MotionGraphicsImageActivateSettings: NotRequired[MotionGraphicsActivateScheduleActionSettingsTypeDef],  # (5)
     MotionGraphicsImageDeactivateSettings: NotRequired[Mapping[str, Any]],
     PauseStateSettings: NotRequired[PauseStateScheduleActionSettingsTypeDef],  # (6)
-    Scte35ReturnToNetworkSettings: NotRequired[Scte35ReturnToNetworkScheduleActionSettingsTypeDef],  # (7)
-    Scte35SpliceInsertSettings: NotRequired[Scte35SpliceInsertScheduleActionSettingsTypeDef],  # (8)
-    Scte35TimeSignalSettings: NotRequired[Scte35TimeSignalScheduleActionSettingsTypeDef],  # (9)
-    StaticImageActivateSettings: NotRequired[StaticImageActivateScheduleActionSettingsTypeDef],  # (10)
-    StaticImageDeactivateSettings: NotRequired[StaticImageDeactivateScheduleActionSettingsTypeDef],  # (11)
+    Scte35InputSettings: NotRequired[Scte35InputScheduleActionSettingsTypeDef],  # (7)
+    Scte35ReturnToNetworkSettings: NotRequired[Scte35ReturnToNetworkScheduleActionSettingsTypeDef],  # (8)
+    Scte35SpliceInsertSettings: NotRequired[Scte35SpliceInsertScheduleActionSettingsTypeDef],  # (9)
+    Scte35TimeSignalSettings: NotRequired[Scte35TimeSignalScheduleActionSettingsTypeDef],  # (10)
+    StaticImageActivateSettings: NotRequired[StaticImageActivateScheduleActionSettingsTypeDef],  # (11)
+    StaticImageDeactivateSettings: NotRequired[StaticImageDeactivateScheduleActionSettingsTypeDef],  # (12)
 ```
 
 1. See [:material-code-braces: HlsId3SegmentTaggingScheduleActionSettingsTypeDef](./type_defs.md#hlsid3segmenttaggingscheduleactionsettingstypedef) 
@@ -6980,11 +7023,12 @@ class ScheduleActionSettingsTypeDef(TypedDict):
 4. See [:material-code-braces: InputSwitchScheduleActionSettingsTypeDef](./type_defs.md#inputswitchscheduleactionsettingstypedef) 
 5. See [:material-code-braces: MotionGraphicsActivateScheduleActionSettingsTypeDef](./type_defs.md#motiongraphicsactivatescheduleactionsettingstypedef) 
 6. See [:material-code-braces: PauseStateScheduleActionSettingsTypeDef](./type_defs.md#pausestatescheduleactionsettingstypedef) 
-7. See [:material-code-braces: Scte35ReturnToNetworkScheduleActionSettingsTypeDef](./type_defs.md#scte35returntonetworkscheduleactionsettingstypedef) 
-8. See [:material-code-braces: Scte35SpliceInsertScheduleActionSettingsTypeDef](./type_defs.md#scte35spliceinsertscheduleactionsettingstypedef) 
-9. See [:material-code-braces: Scte35TimeSignalScheduleActionSettingsTypeDef](./type_defs.md#scte35timesignalscheduleactionsettingstypedef) 
-10. See [:material-code-braces: StaticImageActivateScheduleActionSettingsTypeDef](./type_defs.md#staticimageactivatescheduleactionsettingstypedef) 
-11. See [:material-code-braces: StaticImageDeactivateScheduleActionSettingsTypeDef](./type_defs.md#staticimagedeactivatescheduleactionsettingstypedef) 
+7. See [:material-code-braces: Scte35InputScheduleActionSettingsTypeDef](./type_defs.md#scte35inputscheduleactionsettingstypedef) 
+8. See [:material-code-braces: Scte35ReturnToNetworkScheduleActionSettingsTypeDef](./type_defs.md#scte35returntonetworkscheduleactionsettingstypedef) 
+9. See [:material-code-braces: Scte35SpliceInsertScheduleActionSettingsTypeDef](./type_defs.md#scte35spliceinsertscheduleactionsettingstypedef) 
+10. See [:material-code-braces: Scte35TimeSignalScheduleActionSettingsTypeDef](./type_defs.md#scte35timesignalscheduleactionsettingstypedef) 
+11. See [:material-code-braces: StaticImageActivateScheduleActionSettingsTypeDef](./type_defs.md#staticimageactivatescheduleactionsettingstypedef) 
+12. See [:material-code-braces: StaticImageDeactivateScheduleActionSettingsTypeDef](./type_defs.md#staticimagedeactivatescheduleactionsettingstypedef) 
 ## ChannelSummaryTypeDef
 
 ```python title="Usage Example"

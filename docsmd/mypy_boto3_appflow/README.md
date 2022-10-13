@@ -109,6 +109,7 @@ def get_value() -> AggregationTypeType:
 - [S3InputFileTypeType](./literals.md#s3inputfiletypetype)
 - [SAPODataConnectorOperatorType](./literals.md#sapodataconnectoroperatortype)
 - [SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype)
+- [SalesforceDataTransferApiType](./literals.md#salesforcedatatransferapitype)
 - [ScheduleFrequencyTypeType](./literals.md#schedulefrequencytypetype)
 - [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
 - [SingularConnectorOperatorType](./literals.md#singularconnectoroperatortype)

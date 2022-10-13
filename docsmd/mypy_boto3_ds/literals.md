@@ -71,6 +71,20 @@ ClientAuthenticationTypeType = Literal[
     "SmartCardOrPassword",
 ]
 ```
+## DescribeClientAuthenticationSettingsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import DescribeClientAuthenticationSettingsPaginatorName
+
+def get_value() -> DescribeClientAuthenticationSettingsPaginatorName:
+    return "describe_client_authentication_settings"
+```
+
+```python title="Definition"
+DescribeClientAuthenticationSettingsPaginatorName = Literal[
+    "describe_client_authentication_settings",
+]
+```
 ## DescribeDirectoriesPaginatorName
 
 ```python title="Usage Example"
@@ -97,6 +111,34 @@ def get_value() -> DescribeDomainControllersPaginatorName:
 ```python title="Definition"
 DescribeDomainControllersPaginatorName = Literal[
     "describe_domain_controllers",
+]
+```
+## DescribeLDAPSSettingsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import DescribeLDAPSSettingsPaginatorName
+
+def get_value() -> DescribeLDAPSSettingsPaginatorName:
+    return "describe_ldaps_settings"
+```
+
+```python title="Definition"
+DescribeLDAPSSettingsPaginatorName = Literal[
+    "describe_ldaps_settings",
+]
+```
+## DescribeRegionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import DescribeRegionsPaginatorName
+
+def get_value() -> DescribeRegionsPaginatorName:
+    return "describe_regions"
+```
+
+```python title="Definition"
+DescribeRegionsPaginatorName = Literal[
+    "describe_regions",
 ]
 ```
 ## DescribeSharedDirectoriesPaginatorName
@@ -139,6 +181,20 @@ def get_value() -> DescribeTrustsPaginatorName:
 ```python title="Definition"
 DescribeTrustsPaginatorName = Literal[
     "describe_trusts",
+]
+```
+## DescribeUpdateDirectoryPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import DescribeUpdateDirectoryPaginatorName
+
+def get_value() -> DescribeUpdateDirectoryPaginatorName:
+    return "describe_update_directory"
+```
+
+```python title="Definition"
+DescribeUpdateDirectoryPaginatorName = Literal[
+    "describe_update_directory",
 ]
 ```
 ## DirectoryConfigurationStatusType
@@ -300,6 +356,20 @@ LDAPSTypeType = Literal[
     "Client",
 ]
 ```
+## ListCertificatesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import ListCertificatesPaginatorName
+
+def get_value() -> ListCertificatesPaginatorName:
+    return "list_certificates"
+```
+
+```python title="Definition"
+ListCertificatesPaginatorName = Literal[
+    "list_certificates",
+]
+```
 ## ListIpRoutesPaginatorName
 
 ```python title="Usage Example"
@@ -354,6 +424,21 @@ def get_value() -> ListTagsForResourcePaginatorName:
 ```python title="Definition"
 ListTagsForResourcePaginatorName = Literal[
     "list_tags_for_resource",
+]
+```
+## OSVersionType
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import OSVersionType
+
+def get_value() -> OSVersionType:
+    return "SERVER_2012"
+```
+
+```python title="Definition"
+OSVersionType = Literal[
+    "SERVER_2012",
+    "SERVER_2019",
 ]
 ```
 ## RadiusAuthenticationProtocolType
@@ -607,6 +692,36 @@ def get_value() -> TrustTypeType:
 TrustTypeType = Literal[
     "External",
     "Forest",
+]
+```
+## UpdateStatusType
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import UpdateStatusType
+
+def get_value() -> UpdateStatusType:
+    return "UpdateFailed"
+```
+
+```python title="Definition"
+UpdateStatusType = Literal[
+    "Updated",
+    "UpdateFailed",
+    "Updating",
+]
+```
+## UpdateTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ds.literals import UpdateTypeType
+
+def get_value() -> UpdateTypeType:
+    return "OS"
+```
+
+```python title="Definition"
+UpdateTypeType = Literal[
+    "OS",
 ]
 ```
 ## DirectoryServiceServiceName
@@ -983,16 +1098,21 @@ ResourceServiceName = Literal[
 from mypy_boto3_ds.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "describe_directories"
+    return "describe_client_authentication_settings"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "describe_client_authentication_settings",
     "describe_directories",
     "describe_domain_controllers",
+    "describe_ldaps_settings",
+    "describe_regions",
     "describe_shared_directories",
     "describe_snapshots",
     "describe_trusts",
+    "describe_update_directory",
+    "list_certificates",
     "list_ip_routes",
     "list_log_subscriptions",
     "list_schema_extensions",

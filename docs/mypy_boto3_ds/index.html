@@ -37604,17 +37604,22 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ds&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ds.paginator</span> <span class="kn">import</span> <span class="n">DescribeDirectoriesPaginator</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ds.paginator</span> <span class="kn">import</span> <span class="n">DescribeClientAuthenticationSettingsPaginator</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_describe_directories_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeDirectoriesPaginator</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ds&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_directories&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_describe_client_authentication_settings_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeClientAuthenticationSettingsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ds&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_client_authentication_settings&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#describeclientauthenticationsettingspaginator">DescribeClientAuthenticationSettingsPaginator</a></li>
 <li><a href="paginators/#describedirectoriespaginator">DescribeDirectoriesPaginator</a></li>
 <li><a href="paginators/#describedomaincontrollerspaginator">DescribeDomainControllersPaginator</a></li>
+<li><a href="paginators/#describeldapssettingspaginator">DescribeLDAPSSettingsPaginator</a></li>
+<li><a href="paginators/#describeregionspaginator">DescribeRegionsPaginator</a></li>
 <li><a href="paginators/#describeshareddirectoriespaginator">DescribeSharedDirectoriesPaginator</a></li>
 <li><a href="paginators/#describesnapshotspaginator">DescribeSnapshotsPaginator</a></li>
 <li><a href="paginators/#describetrustspaginator">DescribeTrustsPaginator</a></li>
+<li><a href="paginators/#describeupdatedirectorypaginator">DescribeUpdateDirectoryPaginator</a></li>
+<li><a href="paginators/#listcertificatespaginator">ListCertificatesPaginator</a></li>
 <li><a href="paginators/#listiproutespaginator">ListIpRoutesPaginator</a></li>
 <li><a href="paginators/#listlogsubscriptionspaginator">ListLogSubscriptionsPaginator</a></li>
 <li><a href="paginators/#listschemaextensionspaginator">ListSchemaExtensionsPaginator</a></li>
@@ -37632,11 +37637,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#certificatetypetype">CertificateTypeType</a></li>
 <li><a href="literals/#clientauthenticationstatustype">ClientAuthenticationStatusType</a></li>
 <li><a href="literals/#clientauthenticationtypetype">ClientAuthenticationTypeType</a></li>
+<li><a href="literals/#describeclientauthenticationsettingspaginatorname">DescribeClientAuthenticationSettingsPaginatorName</a></li>
 <li><a href="literals/#describedirectoriespaginatorname">DescribeDirectoriesPaginatorName</a></li>
 <li><a href="literals/#describedomaincontrollerspaginatorname">DescribeDomainControllersPaginatorName</a></li>
+<li><a href="literals/#describeldapssettingspaginatorname">DescribeLDAPSSettingsPaginatorName</a></li>
+<li><a href="literals/#describeregionspaginatorname">DescribeRegionsPaginatorName</a></li>
 <li><a href="literals/#describeshareddirectoriespaginatorname">DescribeSharedDirectoriesPaginatorName</a></li>
 <li><a href="literals/#describesnapshotspaginatorname">DescribeSnapshotsPaginatorName</a></li>
 <li><a href="literals/#describetrustspaginatorname">DescribeTrustsPaginatorName</a></li>
+<li><a href="literals/#describeupdatedirectorypaginatorname">DescribeUpdateDirectoryPaginatorName</a></li>
 <li><a href="literals/#directoryconfigurationstatustype">DirectoryConfigurationStatusType</a></li>
 <li><a href="literals/#directoryeditiontype">DirectoryEditionType</a></li>
 <li><a href="literals/#directorysizetype">DirectorySizeType</a></li>
@@ -37646,10 +37655,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#iproutestatusmsgtype">IpRouteStatusMsgType</a></li>
 <li><a href="literals/#ldapsstatustype">LDAPSStatusType</a></li>
 <li><a href="literals/#ldapstypetype">LDAPSTypeType</a></li>
+<li><a href="literals/#listcertificatespaginatorname">ListCertificatesPaginatorName</a></li>
 <li><a href="literals/#listiproutespaginatorname">ListIpRoutesPaginatorName</a></li>
 <li><a href="literals/#listlogsubscriptionspaginatorname">ListLogSubscriptionsPaginatorName</a></li>
 <li><a href="literals/#listschemaextensionspaginatorname">ListSchemaExtensionsPaginatorName</a></li>
 <li><a href="literals/#listtagsforresourcepaginatorname">ListTagsForResourcePaginatorName</a></li>
+<li><a href="literals/#osversiontype">OSVersionType</a></li>
 <li><a href="literals/#radiusauthenticationprotocoltype">RadiusAuthenticationProtocolType</a></li>
 <li><a href="literals/#radiusstatustype">RadiusStatusType</a></li>
 <li><a href="literals/#regiontypetype">RegionTypeType</a></li>
@@ -37665,6 +37676,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#trustdirectiontype">TrustDirectionType</a></li>
 <li><a href="literals/#truststatetype">TrustStateType</a></li>
 <li><a href="literals/#trusttypetype">TrustTypeType</a></li>
+<li><a href="literals/#updatestatustype">UpdateStatusType</a></li>
+<li><a href="literals/#updatetypetype">UpdateTypeType</a></li>
 <li><a href="literals/#directoryserviceservicename">DirectoryServiceServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -37707,9 +37720,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deregistercertificaterequestrequesttypedef">DeregisterCertificateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregistereventtopicrequestrequesttypedef">DeregisterEventTopicRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describecertificaterequestrequesttypedef">DescribeCertificateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describeclientauthenticationsettingsrequestrequesttypedef">DescribeClientAuthenticationSettingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeconditionalforwardersrequestrequesttypedef">DescribeConditionalForwardersRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describedirectoriesrequestrequesttypedef">DescribeDirectoriesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describedomaincontrollersrequestrequesttypedef">DescribeDomainControllersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#domaincontrollertypedef">DomainControllerTypeDef</a></li>
@@ -37725,6 +37738,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#snapshottypedef">SnapshotTypeDef</a></li>
 <li><a href="type_defs/#describetrustsrequestrequesttypedef">DescribeTrustsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#trusttypedef">TrustTypeDef</a></li>
+<li><a href="type_defs/#describeupdatedirectoryrequestrequesttypedef">DescribeUpdateDirectoryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#directoryconnectsettingsdescriptiontypedef">DirectoryConnectSettingsDescriptionTypeDef</a></li>
 <li><a href="type_defs/#directoryvpcsettingsdescriptiontypedef">DirectoryVpcSettingsDescriptionTypeDef</a></li>
 <li><a href="type_defs/#radiussettingstypedef">RadiusSettingsTypeDef</a></li>
@@ -37747,6 +37761,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listschemaextensionsrequestrequesttypedef">ListSchemaExtensionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#schemaextensioninfotypedef">SchemaExtensionInfoTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#osupdatesettingstypedef">OSUpdateSettingsTypeDef</a></li>
 <li><a href="type_defs/#registereventtopicrequestrequesttypedef">RegisterEventTopicRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#rejectshareddirectoryrequestrequesttypedef">RejectSharedDirectoryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#removeiproutesrequestrequesttypedef">RemoveIpRoutesRequestRequestTypeDef</a></li>
@@ -37796,11 +37811,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeclientauthenticationsettingsresulttypedef">DescribeClientAuthenticationSettingsResultTypeDef</a></li>
 <li><a href="type_defs/#describeconditionalforwardersresulttypedef">DescribeConditionalForwardersResultTypeDef</a></li>
 <li><a href="type_defs/#connectdirectoryrequestrequesttypedef">ConnectDirectoryRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describeclientauthenticationsettingsrequestdescribeclientauthenticationsettingspaginatetypedef">DescribeClientAuthenticationSettingsRequestDescribeClientAuthenticationSettingsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describedirectoriesrequestdescribedirectoriespaginatetypedef">DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef</a></li>
 <li><a href="type_defs/#describedomaincontrollersrequestdescribedomaincontrollerspaginatetypedef">DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeldapssettingsrequestdescribeldapssettingspaginatetypedef">DescribeLDAPSSettingsRequestDescribeLDAPSSettingsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeregionsrequestdescriberegionspaginatetypedef">DescribeRegionsRequestDescribeRegionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeshareddirectoriesrequestdescribeshareddirectoriespaginatetypedef">DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef</a></li>
 <li><a href="type_defs/#describesnapshotsrequestdescribesnapshotspaginatetypedef">DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describetrustsrequestdescribetrustspaginatetypedef">DescribeTrustsRequestDescribeTrustsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeupdatedirectoryrequestdescribeupdatedirectorypaginatetypedef">DescribeUpdateDirectoryRequestDescribeUpdateDirectoryPaginateTypeDef</a></li>
+<li><a href="type_defs/#listcertificatesrequestlistcertificatespaginatetypedef">ListCertificatesRequestListCertificatesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listiproutesrequestlistiproutespaginatetypedef">ListIpRoutesRequestListIpRoutesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listlogsubscriptionsrequestlistlogsubscriptionspaginatetypedef">ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listschemaextensionsrequestlistschemaextensionspaginatetypedef">ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef</a></li>
@@ -37819,6 +37839,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listiproutesresulttypedef">ListIpRoutesResultTypeDef</a></li>
 <li><a href="type_defs/#listlogsubscriptionsresulttypedef">ListLogSubscriptionsResultTypeDef</a></li>
 <li><a href="type_defs/#listschemaextensionsresulttypedef">ListSchemaExtensionsResultTypeDef</a></li>
+<li><a href="type_defs/#updatedirectorysetuprequestrequesttypedef">UpdateDirectorySetupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatevaluetypedef">UpdateValueTypeDef</a></li>
 <li><a href="type_defs/#updatesettingsrequestrequesttypedef">UpdateSettingsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sharedirectoryrequestrequesttypedef">ShareDirectoryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#unsharedirectoryrequestrequesttypedef">UnshareDirectoryRequestRequestTypeDef</a></li>
@@ -37826,7 +37848,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcomputerresulttypedef">CreateComputerResultTypeDef</a></li>
 <li><a href="type_defs/#describecertificateresulttypedef">DescribeCertificateResultTypeDef</a></li>
 <li><a href="type_defs/#directorydescriptiontypedef">DirectoryDescriptionTypeDef</a></li>
+<li><a href="type_defs/#updateinfoentrytypedef">UpdateInfoEntryTypeDef</a></li>
 <li><a href="type_defs/#describedirectoriesresulttypedef">DescribeDirectoriesResultTypeDef</a></li>
+<li><a href="type_defs/#describeupdatedirectoryresulttypedef">DescribeUpdateDirectoryResultTypeDef</a></li>
 </ul>
 
 

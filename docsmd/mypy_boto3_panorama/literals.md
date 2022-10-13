@@ -62,6 +62,22 @@ ConnectionTypeType = Literal[
     "STATIC_IP",
 ]
 ```
+## DesiredStateType
+
+```python title="Usage Example"
+from mypy_boto3_panorama.literals import DesiredStateType
+
+def get_value() -> DesiredStateType:
+    return "REMOVED"
+```
+
+```python title="Definition"
+DesiredStateType = Literal[
+    "REMOVED",
+    "RUNNING",
+    "STOPPED",
+]
+```
 ## DeviceAggregatedStatusType
 
 ```python title="Usage Example"
@@ -81,6 +97,7 @@ DeviceAggregatedStatusType = Literal[
     "OFFLINE",
     "ONLINE",
     "PENDING",
+    "REBOOTING",
     "UPDATE_NEEDED",
 ]
 ```
@@ -115,6 +132,30 @@ DeviceConnectionStatusType = Literal[
     "NOT_AVAILABLE",
     "OFFLINE",
     "ONLINE",
+]
+```
+## DeviceReportedStatusType
+
+```python title="Usage Example"
+from mypy_boto3_panorama.literals import DeviceReportedStatusType
+
+def get_value() -> DeviceReportedStatusType:
+    return "INSTALL_ERROR"
+```
+
+```python title="Definition"
+DeviceReportedStatusType = Literal[
+    "INSTALL_ERROR",
+    "INSTALL_IN_PROGRESS",
+    "LAUNCH_ERROR",
+    "LAUNCHED",
+    "REMOVAL_FAILED",
+    "REMOVAL_IN_PROGRESS",
+    "RUNNING",
+    "STARTING",
+    "STOP_ERROR",
+    "STOPPED",
+    "STOPPING",
 ]
 ```
 ## DeviceStatusType
@@ -177,6 +218,7 @@ def get_value() -> JobTypeType:
 ```python title="Definition"
 JobTypeType = Literal[
     "OTA",
+    "REBOOT",
 ]
 ```
 ## ListDevicesSortByType
@@ -258,7 +300,23 @@ def get_value() -> NodeInstanceStatusType:
 NodeInstanceStatusType = Literal[
     "ERROR",
     "NOT_AVAILABLE",
+    "PAUSED",
     "RUNNING",
+]
+```
+## NodeSignalValueType
+
+```python title="Usage Example"
+from mypy_boto3_panorama.literals import NodeSignalValueType
+
+def get_value() -> NodeSignalValueType:
+    return "PAUSE"
+```
+
+```python title="Definition"
+NodeSignalValueType = Literal[
+    "PAUSE",
+    "RESUME",
 ]
 ```
 ## PackageImportJobStatusType

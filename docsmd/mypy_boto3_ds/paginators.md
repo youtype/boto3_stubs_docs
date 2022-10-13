@@ -7,6 +7,67 @@
     Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
     type annotations stubs module [mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
+## DescribeClientAuthenticationSettingsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ds").get_paginator("describe_client_authentication_settings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeClientAuthenticationSettings)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeClientAuthenticationSettingsPaginator
+
+def get_describe_client_authentication_settings_paginator() -> DescribeClientAuthenticationSettingsPaginator:
+    return Session().client("ds").get_paginator("describe_client_authentication_settings")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeClientAuthenticationSettingsPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeClientAuthenticationSettingsPaginator = client.get_paginator("describe_client_authentication_settings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeClientAuthenticationSettingsPaginator](./paginators.md#describeclientauthenticationsettingspaginator)
+3. item: [:material-code-braces: DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeClientAuthenticationSettingsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DirectoryId: str,
+    Type: ClientAuthenticationTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeClientAuthenticationSettingsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClientAuthenticationSettingsRequestDescribeClientAuthenticationSettingsPaginateTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClientAuthenticationSettingsRequestDescribeClientAuthenticationSettingsPaginateTypeDef](./type_defs.md#describeclientauthenticationsettingsrequestdescribeclientauthenticationsettingspaginatetypedef) 
 ## DescribeDirectoriesPaginator
 
 Type annotations and code completion for `#!python boto3.client("ds").get_paginator("describe_directories")`.
@@ -126,6 +187,127 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef](./type_defs.md#describedomaincontrollersrequestdescribedomaincontrollerspaginatetypedef) 
+## DescribeLDAPSSettingsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ds").get_paginator("describe_ldaps_settings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeLDAPSSettings)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeLDAPSSettingsPaginator
+
+def get_describe_ldaps_settings_paginator() -> DescribeLDAPSSettingsPaginator:
+    return Session().client("ds").get_paginator("describe_ldaps_settings")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeLDAPSSettingsPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeLDAPSSettingsPaginator = client.get_paginator("describe_ldaps_settings")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeLDAPSSettingsPaginator](./paginators.md#describeldapssettingspaginator)
+3. item: [:material-code-braces: DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeLDAPSSettingsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DirectoryId: str,
+    Type: LDAPSTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLDAPSSettingsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: LDAPSTypeType](./literals.md#ldapstypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLDAPSSettingsRequestDescribeLDAPSSettingsPaginateTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLDAPSSettingsRequestDescribeLDAPSSettingsPaginateTypeDef](./type_defs.md#describeldapssettingsrequestdescribeldapssettingspaginatetypedef) 
+## DescribeRegionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ds").get_paginator("describe_regions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeRegions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeRegionsPaginator
+
+def get_describe_regions_paginator() -> DescribeRegionsPaginator:
+    return Session().client("ds").get_paginator("describe_regions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeRegionsPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeRegionsPaginator = client.get_paginator("describe_regions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeRegionsPaginator](./paginators.md#describeregionspaginator)
+3. item: [:material-code-braces: DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeRegionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DirectoryId: str,
+    RegionName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeRegionsResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRegionsRequestDescribeRegionsPaginateTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRegionsRequestDescribeRegionsPaginateTypeDef](./type_defs.md#describeregionsrequestdescriberegionspaginatetypedef) 
 ## DescribeSharedDirectoriesPaginator
 
 Type annotations and code completion for `#!python boto3.client("ds").get_paginator("describe_shared_directories")`.
@@ -306,6 +488,128 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeTrustsRequestDescribeTrustsPaginateTypeDef](./type_defs.md#describetrustsrequestdescribetrustspaginatetypedef) 
+## DescribeUpdateDirectoryPaginator
+
+Type annotations and code completion for `#!python boto3.client("ds").get_paginator("describe_update_directory")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.DescribeUpdateDirectory)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeUpdateDirectoryPaginator
+
+def get_describe_update_directory_paginator() -> DescribeUpdateDirectoryPaginator:
+    return Session().client("ds").get_paginator("describe_update_directory")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import DescribeUpdateDirectoryPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: DescribeUpdateDirectoryPaginator = client.get_paginator("describe_update_directory")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [DescribeUpdateDirectoryPaginator](./paginators.md#describeupdatedirectorypaginator)
+3. item: [:material-code-braces: DescribeUpdateDirectoryResultTypeDef](./type_defs.md#describeupdatedirectoryresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeUpdateDirectoryPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DirectoryId: str,
+    UpdateType: UpdateTypeType,  # (1)
+    RegionName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeUpdateDirectoryResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeUpdateDirectoryResultTypeDef](./type_defs.md#describeupdatedirectoryresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUpdateDirectoryRequestDescribeUpdateDirectoryPaginateTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "UpdateType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUpdateDirectoryRequestDescribeUpdateDirectoryPaginateTypeDef](./type_defs.md#describeupdatedirectoryrequestdescribeupdatedirectorypaginatetypedef) 
+## ListCertificatesPaginator
+
+Type annotations and code completion for `#!python boto3.client("ds").get_paginator("list_certificates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Paginator.ListCertificates)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import ListCertificatesPaginator
+
+def get_list_certificates_paginator() -> ListCertificatesPaginator:
+    return Session().client("ds").get_paginator("list_certificates")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ds.paginator import ListCertificatesPaginator
+
+session = Session()
+
+client = Session().client("ds")  # (1)
+paginator: ListCertificatesPaginator = client.get_paginator("list_certificates")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [DirectoryServiceClient](./client.md)
+2. paginator: [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+3. item: [:material-code-braces: ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListCertificatesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DirectoryId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCertificatesResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCertificatesRequestListCertificatesPaginateTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCertificatesRequestListCertificatesPaginateTypeDef](./type_defs.md#listcertificatesrequestlistcertificatespaginatetypedef) 
 ## ListIpRoutesPaginator
 
 Type annotations and code completion for `#!python boto3.client("ds").get_paginator("list_ip_routes")`.

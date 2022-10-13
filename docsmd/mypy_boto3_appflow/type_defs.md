@@ -268,8 +268,10 @@ def get_value() -> SalesforceMetadataTypeDef:
 ```python title="Definition"
 class SalesforceMetadataTypeDef(TypedDict):
     oAuthScopes: NotRequired[List[str]],
+    dataTransferApis: NotRequired[List[SalesforceDataTransferApiType]],  # (1)
 ```
 
+1. See [:material-code-brackets: SalesforceDataTransferApiType](./literals.md#salesforcedatatransferapitype) 
 ## SlackMetadataTypeDef
 
 ```python title="Usage Example"
@@ -1374,8 +1376,10 @@ class SalesforceSourcePropertiesTypeDef(TypedDict):
     object: str,
     enableDynamicFieldUpdate: NotRequired[bool],
     includeDeletedRecords: NotRequired[bool],
+    dataTransferApi: NotRequired[SalesforceDataTransferApiType],  # (1)
 ```
 
+1. See [:material-code-brackets: SalesforceDataTransferApiType](./literals.md#salesforcedatatransferapitype) 
 ## ScheduledTriggerPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -2173,10 +2177,12 @@ class SalesforceDestinationPropertiesTypeDef(TypedDict):
     idFieldNames: NotRequired[Sequence[str]],
     errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
     writeOperationType: NotRequired[WriteOperationTypeType],  # (2)
+    dataTransferApi: NotRequired[SalesforceDataTransferApiType],  # (3)
 ```
 
 1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
 2. See [:material-code-brackets: WriteOperationTypeType](./literals.md#writeoperationtypetype) 
+3. See [:material-code-brackets: SalesforceDataTransferApiType](./literals.md#salesforcedatatransferapitype) 
 ## SnowflakeDestinationPropertiesTypeDef
 
 ```python title="Usage Example"
