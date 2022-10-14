@@ -2242,6 +2242,7 @@ class Mpeg2SettingsTypeDef(TypedDict):
     GopClosedCadence: NotRequired[int],
     GopSize: NotRequired[float],
     GopSizeUnits: NotRequired[Mpeg2GopSizeUnitsType],  # (7)
+    HrdBufferFinalFillPercentage: NotRequired[int],
     HrdBufferInitialFillPercentage: NotRequired[int],
     HrdBufferSize: NotRequired[int],
     InterlaceMode: NotRequired[Mpeg2InterlaceModeType],  # (8)
@@ -3423,6 +3424,7 @@ class H264SettingsTypeDef(TypedDict):
     GopClosedCadence: NotRequired[int],
     GopSize: NotRequired[float],
     GopSizeUnits: NotRequired[H264GopSizeUnitsType],  # (11)
+    HrdBufferFinalFillPercentage: NotRequired[int],
     HrdBufferInitialFillPercentage: NotRequired[int],
     HrdBufferSize: NotRequired[int],
     InterlaceMode: NotRequired[H264InterlaceModeType],  # (12)
@@ -3502,6 +3504,7 @@ class H265SettingsTypeDef(TypedDict):
     GopClosedCadence: NotRequired[int],
     GopSize: NotRequired[float],
     GopSizeUnits: NotRequired[H265GopSizeUnitsType],  # (10)
+    HrdBufferFinalFillPercentage: NotRequired[int],
     HrdBufferInitialFillPercentage: NotRequired[int],
     HrdBufferSize: NotRequired[int],
     InterlaceMode: NotRequired[H265InterlaceModeType],  # (11)
