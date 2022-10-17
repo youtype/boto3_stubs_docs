@@ -4434,6 +4434,7 @@ class FunctionConfigurationTypeDef(TypedDict):
     MemorySize: NotRequired[int],
     Pinned: NotRequired[bool],
     Timeout: NotRequired[int],
+    FunctionRuntimeOverride: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
