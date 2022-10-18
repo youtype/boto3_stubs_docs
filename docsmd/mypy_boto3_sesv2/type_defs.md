@@ -544,6 +544,25 @@ class VolumeStatisticsTypeDef(TypedDict):
     ProjectedSpam: NotRequired[int],
 ```
 
+## DedicatedIpPoolTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import DedicatedIpPoolTypeDef
+
+def get_value() -> DedicatedIpPoolTypeDef:
+    return {
+        "PoolName": ...,
+        "ScalingMode": ...,
+    }
+```
+
+```python title="Definition"
+class DedicatedIpPoolTypeDef(TypedDict):
+    PoolName: str,
+    ScalingMode: ScalingModeType,  # (1)
+```
+
+1. See [:material-code-brackets: ScalingModeType](./literals.md#scalingmodetype) 
 ## DedicatedIpTypeDef
 
 ```python title="Usage Example"
@@ -1033,6 +1052,22 @@ class GetCustomVerificationEmailTemplateRequestRequestTypeDef(TypedDict):
     TemplateName: str,
 ```
 
+## GetDedicatedIpPoolRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDedicatedIpPoolRequestRequestTypeDef
+
+def get_value() -> GetDedicatedIpPoolRequestRequestTypeDef:
+    return {
+        "PoolName": ...,
+    }
+```
+
+```python title="Definition"
+class GetDedicatedIpPoolRequestRequestTypeDef(TypedDict):
+    PoolName: str,
+```
+
 ## GetDedicatedIpRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1257,9 +1292,11 @@ class IdentityInfoTypeDef(TypedDict):
     IdentityType: NotRequired[IdentityTypeType],  # (1)
     IdentityName: NotRequired[str],
     SendingEnabled: NotRequired[bool],
+    VerificationStatus: NotRequired[VerificationStatusType],  # (2)
 ```
 
 1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-brackets: VerificationStatusType](./literals.md#verificationstatustype) 
 ## SuppressionListDestinationTypeDef
 
 ```python title="Usage Example"
@@ -2108,9 +2145,11 @@ def get_value() -> CreateDedicatedIpPoolRequestRequestTypeDef:
 class CreateDedicatedIpPoolRequestRequestTypeDef(TypedDict):
     PoolName: str,
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    ScalingMode: NotRequired[ScalingModeType],  # (2)
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: ScalingModeType](./literals.md#scalingmodetype) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2782,6 +2821,26 @@ class OverallVolumeTypeDef(TypedDict):
 
 1. See [:material-code-braces: VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef) 
 2. See [:material-code-braces: DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef) 
+## GetDedicatedIpPoolResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.type_defs import GetDedicatedIpPoolResponseTypeDef
+
+def get_value() -> GetDedicatedIpPoolResponseTypeDef:
+    return {
+        "DedicatedIpPool": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDedicatedIpPoolResponseTypeDef(TypedDict):
+    DedicatedIpPool: DedicatedIpPoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DedicatedIpPoolTypeDef](./type_defs.md#dedicatedippooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDedicatedIpResponseTypeDef
 
 ```python title="Usage Example"
@@ -2962,6 +3021,7 @@ def get_value() -> GetEmailIdentityResponseTypeDef:
         "Policies": ...,
         "Tags": ...,
         "ConfigurationSetName": ...,
+        "VerificationStatus": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2976,14 +3036,16 @@ class GetEmailIdentityResponseTypeDef(TypedDict):
     Policies: Dict[str, str],
     Tags: List[TagTypeDef],  # (4)
     ConfigurationSetName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    VerificationStatus: VerificationStatusType,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 2. See [:material-code-braces: DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef) 
 3. See [:material-code-braces: MailFromAttributesTypeDef](./type_defs.md#mailfromattributestypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-brackets: VerificationStatusType](./literals.md#verificationstatustype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEmailIdentitiesResponseTypeDef
 
 ```python title="Usage Example"
@@ -3414,6 +3476,8 @@ class ImportJobSummaryTypeDef(TypedDict):
     ImportDestination: NotRequired[ImportDestinationTypeDef],  # (1)
     JobStatus: NotRequired[JobStatusType],  # (2)
     CreatedTimestamp: NotRequired[datetime],
+    ProcessedRecordsCount: NotRequired[int],
+    FailedRecordsCount: NotRequired[int],
 ```
 
 1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 

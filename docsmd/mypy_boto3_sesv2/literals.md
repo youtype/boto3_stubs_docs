@@ -309,6 +309,21 @@ ReviewStatusType = Literal[
     "PENDING",
 ]
 ```
+## ScalingModeType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import ScalingModeType
+
+def get_value() -> ScalingModeType:
+    return "MANAGED"
+```
+
+```python title="Definition"
+ScalingModeType = Literal[
+    "MANAGED",
+    "STANDARD",
+]
+```
 ## SubscriptionStatusType
 
 ```python title="Usage Example"
@@ -367,6 +382,24 @@ def get_value() -> TlsPolicyType:
 TlsPolicyType = Literal[
     "OPTIONAL",
     "REQUIRE",
+]
+```
+## VerificationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import VerificationStatusType
+
+def get_value() -> VerificationStatusType:
+    return "FAILED"
+```
+
+```python title="Definition"
+VerificationStatusType = Literal[
+    "FAILED",
+    "NOT_STARTED",
+    "PENDING",
+    "SUCCESS",
+    "TEMPORARY_FAILURE",
 ]
 ```
 ## WarmupStatusType

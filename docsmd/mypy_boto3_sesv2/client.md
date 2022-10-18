@@ -283,11 +283,13 @@ def create_dedicated_ip_pool(
     *,
     PoolName: str,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
+    ScalingMode: ScalingModeType = ...,  # (2)
 ) -> Dict[str, Any]:
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: ScalingModeType](./literals.md#scalingmodetype) 
 
 
 ```python title="Usage example with kwargs"
@@ -999,6 +1001,35 @@ parent.get_dedicated_ip(**kwargs)
 ```
 
 1. See [:material-code-braces: GetDedicatedIpRequestRequestTypeDef](./type_defs.md#getdedicatediprequestrequesttypedef) 
+
+### get\_dedicated\_ip\_pool
+
+Retrieve information about the dedicated pool.
+
+Type annotations and code completion for `#!python boto3.client("sesv2").get_dedicated_ip_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ip_pool)
+
+```python title="Method definition"
+def get_dedicated_ip_pool(
+    self,
+    *,
+    PoolName: str,
+) -> GetDedicatedIpPoolResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDedicatedIpPoolResponseTypeDef](./type_defs.md#getdedicatedippoolresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDedicatedIpPoolRequestRequestTypeDef = {  # (1)
+    "PoolName": ...,
+}
+
+parent.get_dedicated_ip_pool(**kwargs)
+```
+
+1. See [:material-code-braces: GetDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#getdedicatedippoolrequestrequesttypedef) 
 
 ### get\_dedicated\_ips
 

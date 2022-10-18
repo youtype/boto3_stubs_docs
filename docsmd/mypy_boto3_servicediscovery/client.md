@@ -572,7 +572,7 @@ parent.list_instances(**kwargs)
 ### list\_namespaces
 
 Lists summary information about the namespaces that were created by the current
-account.
+Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("servicediscovery").list_namespaces` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)

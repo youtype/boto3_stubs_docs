@@ -28,11 +28,12 @@ CustomHealthStatusType = Literal[
 from mypy_boto3_servicediscovery.literals import FilterConditionType
 
 def get_value() -> FilterConditionType:
-    return "BETWEEN"
+    return "BEGINS_WITH"
 ```
 
 ```python title="Definition"
 FilterConditionType = Literal[
+    "BEGINS_WITH",
     "BETWEEN",
     "EQ",
     "IN",
@@ -149,11 +150,13 @@ ListServicesPaginatorName = Literal[
 from mypy_boto3_servicediscovery.literals import NamespaceFilterNameType
 
 def get_value() -> NamespaceFilterNameType:
-    return "TYPE"
+    return "HTTP_NAME"
 ```
 
 ```python title="Definition"
 NamespaceFilterNameType = Literal[
+    "HTTP_NAME",
+    "NAME",
     "TYPE",
 ]
 ```

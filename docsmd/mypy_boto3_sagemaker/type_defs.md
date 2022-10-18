@@ -572,6 +572,24 @@ class VpcConfigTypeDef(TypedDict):
     Subnets: Sequence[str],
 ```
 
+## BatchDataCaptureConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import BatchDataCaptureConfigTypeDef
+
+def get_value() -> BatchDataCaptureConfigTypeDef:
+    return {
+        "DestinationS3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDataCaptureConfigTypeDef(TypedDict):
+    DestinationS3Uri: str,
+    KmsKeyId: NotRequired[str],
+    GenerateInferenceId: NotRequired[bool],
+```
+
 ## BatchDescribeModelPackageErrorTypeDef
 
 ```python title="Usage Example"
@@ -7339,6 +7357,38 @@ class MonitoringClusterConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProcessingInstanceTypeType](./literals.md#processinginstancetypetype) 
+## MonitoringCsvDatasetFormatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringCsvDatasetFormatTypeDef
+
+def get_value() -> MonitoringCsvDatasetFormatTypeDef:
+    return {
+        "Header": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringCsvDatasetFormatTypeDef(TypedDict):
+    Header: NotRequired[bool],
+```
+
+## MonitoringJsonDatasetFormatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringJsonDatasetFormatTypeDef
+
+def get_value() -> MonitoringJsonDatasetFormatTypeDef:
+    return {
+        "Line": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringJsonDatasetFormatTypeDef(TypedDict):
+    Line: NotRequired[bool],
+```
+
 ## MonitoringS3OutputTypeDef
 
 ```python title="Usage Example"
@@ -12385,57 +12435,6 @@ class MonitoringBaselineConfigTypeDef(TypedDict):
 
 1. See [:material-code-braces: MonitoringConstraintsResourceTypeDef](./type_defs.md#monitoringconstraintsresourcetypedef) 
 2. See [:material-code-braces: MonitoringStatisticsResourceTypeDef](./type_defs.md#monitoringstatisticsresourcetypedef) 
-## DataQualityJobInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DataQualityJobInputTypeDef
-
-def get_value() -> DataQualityJobInputTypeDef:
-    return {
-        "EndpointInput": ...,
-    }
-```
-
-```python title="Definition"
-class DataQualityJobInputTypeDef(TypedDict):
-    EndpointInput: EndpointInputTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
-## ModelExplainabilityJobInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ModelExplainabilityJobInputTypeDef
-
-def get_value() -> ModelExplainabilityJobInputTypeDef:
-    return {
-        "EndpointInput": ...,
-    }
-```
-
-```python title="Definition"
-class ModelExplainabilityJobInputTypeDef(TypedDict):
-    EndpointInput: EndpointInputTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
-## MonitoringInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import MonitoringInputTypeDef
-
-def get_value() -> MonitoringInputTypeDef:
-    return {
-        "EndpointInput": ...,
-    }
-```
-
-```python title="Definition"
-class MonitoringInputTypeDef(TypedDict):
-    EndpointInput: EndpointInputTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
 ## DataSourceTypeDef
 
 ```python title="Usage Example"
@@ -16172,46 +16171,6 @@ class MemberDefinitionTypeDef(TypedDict):
 
 1. See [:material-code-braces: CognitoMemberDefinitionTypeDef](./type_defs.md#cognitomemberdefinitiontypedef) 
 2. See [:material-code-braces: OidcMemberDefinitionTypeDef](./type_defs.md#oidcmemberdefinitiontypedef) 
-## ModelBiasJobInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ModelBiasJobInputTypeDef
-
-def get_value() -> ModelBiasJobInputTypeDef:
-    return {
-        "EndpointInput": ...,
-        "GroundTruthS3Input": ...,
-    }
-```
-
-```python title="Definition"
-class ModelBiasJobInputTypeDef(TypedDict):
-    EndpointInput: EndpointInputTypeDef,  # (1)
-    GroundTruthS3Input: MonitoringGroundTruthS3InputTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
-2. See [:material-code-braces: MonitoringGroundTruthS3InputTypeDef](./type_defs.md#monitoringgroundtruths3inputtypedef) 
-## ModelQualityJobInputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ModelQualityJobInputTypeDef
-
-def get_value() -> ModelQualityJobInputTypeDef:
-    return {
-        "EndpointInput": ...,
-        "GroundTruthS3Input": ...,
-    }
-```
-
-```python title="Definition"
-class ModelQualityJobInputTypeDef(TypedDict):
-    EndpointInput: EndpointInputTypeDef,  # (1)
-    GroundTruthS3Input: MonitoringGroundTruthS3InputTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
-2. See [:material-code-braces: MonitoringGroundTruthS3InputTypeDef](./type_defs.md#monitoringgroundtruths3inputtypedef) 
 ## ModelPackageContainerDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -16309,6 +16268,26 @@ class MonitoringResourcesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MonitoringClusterConfigTypeDef](./type_defs.md#monitoringclusterconfigtypedef) 
+## MonitoringDatasetFormatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringDatasetFormatTypeDef
+
+def get_value() -> MonitoringDatasetFormatTypeDef:
+    return {
+        "Csv": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringDatasetFormatTypeDef(TypedDict):
+    Csv: NotRequired[MonitoringCsvDatasetFormatTypeDef],  # (1)
+    Json: NotRequired[MonitoringJsonDatasetFormatTypeDef],  # (2)
+    Parquet: NotRequired[Mapping[str, Any]],
+```
+
+1. See [:material-code-braces: MonitoringCsvDatasetFormatTypeDef](./type_defs.md#monitoringcsvdatasetformattypedef) 
+2. See [:material-code-braces: MonitoringJsonDatasetFormatTypeDef](./type_defs.md#monitoringjsondatasetformattypedef) 
 ## MonitoringOutputTypeDef
 
 ```python title="Usage Example"
@@ -18151,6 +18130,37 @@ class ListModelMetadataRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ModelMetadataSearchExpressionTypeDef](./type_defs.md#modelmetadatasearchexpressiontypedef) 
+## BatchTransformInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import BatchTransformInputTypeDef
+
+def get_value() -> BatchTransformInputTypeDef:
+    return {
+        "DataCapturedDestinationS3Uri": ...,
+        "DatasetFormat": ...,
+        "LocalPath": ...,
+    }
+```
+
+```python title="Definition"
+class BatchTransformInputTypeDef(TypedDict):
+    DataCapturedDestinationS3Uri: str,
+    DatasetFormat: MonitoringDatasetFormatTypeDef,  # (1)
+    LocalPath: str,
+    S3InputMode: NotRequired[ProcessingS3InputModeType],  # (2)
+    S3DataDistributionType: NotRequired[ProcessingS3DataDistributionTypeType],  # (3)
+    FeaturesAttribute: NotRequired[str],
+    InferenceAttribute: NotRequired[str],
+    ProbabilityAttribute: NotRequired[str],
+    ProbabilityThresholdAttribute: NotRequired[float],
+    StartTimeOffset: NotRequired[str],
+    EndTimeOffset: NotRequired[str],
+```
+
+1. See [:material-code-braces: MonitoringDatasetFormatTypeDef](./type_defs.md#monitoringdatasetformattypedef) 
+2. See [:material-code-brackets: ProcessingS3InputModeType](./literals.md#processings3inputmodetype) 
+3. See [:material-code-brackets: ProcessingS3DataDistributionTypeType](./literals.md#processings3datadistributiontypetype) 
 ## MonitoringOutputConfigTypeDef
 
 ```python title="Usage Example"
@@ -19754,377 +19764,105 @@ class BatchDescribeModelPackageSummaryTypeDef(TypedDict):
 1. See [:material-code-braces: InferenceSpecificationTypeDef](./type_defs.md#inferencespecificationtypedef) 
 2. See [:material-code-brackets: ModelPackageStatusType](./literals.md#modelpackagestatustype) 
 3. See [:material-code-brackets: ModelApprovalStatusType](./literals.md#modelapprovalstatustype) 
-## CreateDataQualityJobDefinitionRequestRequestTypeDef
+## DataQualityJobInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import CreateDataQualityJobDefinitionRequestRequestTypeDef
+from mypy_boto3_sagemaker.type_defs import DataQualityJobInputTypeDef
 
-def get_value() -> CreateDataQualityJobDefinitionRequestRequestTypeDef:
+def get_value() -> DataQualityJobInputTypeDef:
     return {
-        "JobDefinitionName": ...,
-        "DataQualityAppSpecification": ...,
-        "DataQualityJobInput": ...,
-        "DataQualityJobOutputConfig": ...,
-        "JobResources": ...,
-        "RoleArn": ...,
+        "EndpointInput": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDataQualityJobDefinitionRequestRequestTypeDef(TypedDict):
-    JobDefinitionName: str,
-    DataQualityAppSpecification: DataQualityAppSpecificationTypeDef,  # (1)
-    DataQualityJobInput: DataQualityJobInputTypeDef,  # (2)
-    DataQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
-    JobResources: MonitoringResourcesTypeDef,  # (4)
-    RoleArn: str,
-    DataQualityBaselineConfig: NotRequired[DataQualityBaselineConfigTypeDef],  # (5)
-    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
-    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+class DataQualityJobInputTypeDef(TypedDict):
+    EndpointInput: NotRequired[EndpointInputTypeDef],  # (1)
+    BatchTransformInput: NotRequired[BatchTransformInputTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: DataQualityAppSpecificationTypeDef](./type_defs.md#dataqualityappspecificationtypedef) 
-2. See [:material-code-braces: DataQualityJobInputTypeDef](./type_defs.md#dataqualityjobinputtypedef) 
-3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-5. See [:material-code-braces: DataQualityBaselineConfigTypeDef](./type_defs.md#dataqualitybaselineconfigtypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateModelBiasJobDefinitionRequestRequestTypeDef
+1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
+2. See [:material-code-braces: BatchTransformInputTypeDef](./type_defs.md#batchtransforminputtypedef) 
+## ModelBiasJobInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import CreateModelBiasJobDefinitionRequestRequestTypeDef
+from mypy_boto3_sagemaker.type_defs import ModelBiasJobInputTypeDef
 
-def get_value() -> CreateModelBiasJobDefinitionRequestRequestTypeDef:
+def get_value() -> ModelBiasJobInputTypeDef:
     return {
-        "JobDefinitionName": ...,
-        "ModelBiasAppSpecification": ...,
-        "ModelBiasJobInput": ...,
-        "ModelBiasJobOutputConfig": ...,
-        "JobResources": ...,
-        "RoleArn": ...,
+        "GroundTruthS3Input": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateModelBiasJobDefinitionRequestRequestTypeDef(TypedDict):
-    JobDefinitionName: str,
-    ModelBiasAppSpecification: ModelBiasAppSpecificationTypeDef,  # (1)
-    ModelBiasJobInput: ModelBiasJobInputTypeDef,  # (2)
-    ModelBiasJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
-    JobResources: MonitoringResourcesTypeDef,  # (4)
-    RoleArn: str,
-    ModelBiasBaselineConfig: NotRequired[ModelBiasBaselineConfigTypeDef],  # (5)
-    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
-    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+class ModelBiasJobInputTypeDef(TypedDict):
+    GroundTruthS3Input: MonitoringGroundTruthS3InputTypeDef,  # (3)
+    EndpointInput: NotRequired[EndpointInputTypeDef],  # (1)
+    BatchTransformInput: NotRequired[BatchTransformInputTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: ModelBiasAppSpecificationTypeDef](./type_defs.md#modelbiasappspecificationtypedef) 
-2. See [:material-code-braces: ModelBiasJobInputTypeDef](./type_defs.md#modelbiasjobinputtypedef) 
-3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-5. See [:material-code-braces: ModelBiasBaselineConfigTypeDef](./type_defs.md#modelbiasbaselineconfigtypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateModelExplainabilityJobDefinitionRequestRequestTypeDef
+1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
+2. See [:material-code-braces: BatchTransformInputTypeDef](./type_defs.md#batchtransforminputtypedef) 
+3. See [:material-code-braces: MonitoringGroundTruthS3InputTypeDef](./type_defs.md#monitoringgroundtruths3inputtypedef) 
+## ModelExplainabilityJobInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import CreateModelExplainabilityJobDefinitionRequestRequestTypeDef
+from mypy_boto3_sagemaker.type_defs import ModelExplainabilityJobInputTypeDef
 
-def get_value() -> CreateModelExplainabilityJobDefinitionRequestRequestTypeDef:
+def get_value() -> ModelExplainabilityJobInputTypeDef:
     return {
-        "JobDefinitionName": ...,
-        "ModelExplainabilityAppSpecification": ...,
-        "ModelExplainabilityJobInput": ...,
-        "ModelExplainabilityJobOutputConfig": ...,
-        "JobResources": ...,
-        "RoleArn": ...,
+        "EndpointInput": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateModelExplainabilityJobDefinitionRequestRequestTypeDef(TypedDict):
-    JobDefinitionName: str,
-    ModelExplainabilityAppSpecification: ModelExplainabilityAppSpecificationTypeDef,  # (1)
-    ModelExplainabilityJobInput: ModelExplainabilityJobInputTypeDef,  # (2)
-    ModelExplainabilityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
-    JobResources: MonitoringResourcesTypeDef,  # (4)
-    RoleArn: str,
-    ModelExplainabilityBaselineConfig: NotRequired[ModelExplainabilityBaselineConfigTypeDef],  # (5)
-    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
-    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+class ModelExplainabilityJobInputTypeDef(TypedDict):
+    EndpointInput: NotRequired[EndpointInputTypeDef],  # (1)
+    BatchTransformInput: NotRequired[BatchTransformInputTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: ModelExplainabilityAppSpecificationTypeDef](./type_defs.md#modelexplainabilityappspecificationtypedef) 
-2. See [:material-code-braces: ModelExplainabilityJobInputTypeDef](./type_defs.md#modelexplainabilityjobinputtypedef) 
-3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-5. See [:material-code-braces: ModelExplainabilityBaselineConfigTypeDef](./type_defs.md#modelexplainabilitybaselineconfigtypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateModelQualityJobDefinitionRequestRequestTypeDef
+1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
+2. See [:material-code-braces: BatchTransformInputTypeDef](./type_defs.md#batchtransforminputtypedef) 
+## ModelQualityJobInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import CreateModelQualityJobDefinitionRequestRequestTypeDef
+from mypy_boto3_sagemaker.type_defs import ModelQualityJobInputTypeDef
 
-def get_value() -> CreateModelQualityJobDefinitionRequestRequestTypeDef:
+def get_value() -> ModelQualityJobInputTypeDef:
     return {
-        "JobDefinitionName": ...,
-        "ModelQualityAppSpecification": ...,
-        "ModelQualityJobInput": ...,
-        "ModelQualityJobOutputConfig": ...,
-        "JobResources": ...,
-        "RoleArn": ...,
+        "GroundTruthS3Input": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateModelQualityJobDefinitionRequestRequestTypeDef(TypedDict):
-    JobDefinitionName: str,
-    ModelQualityAppSpecification: ModelQualityAppSpecificationTypeDef,  # (1)
-    ModelQualityJobInput: ModelQualityJobInputTypeDef,  # (2)
-    ModelQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
-    JobResources: MonitoringResourcesTypeDef,  # (4)
-    RoleArn: str,
-    ModelQualityBaselineConfig: NotRequired[ModelQualityBaselineConfigTypeDef],  # (5)
-    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
-    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+class ModelQualityJobInputTypeDef(TypedDict):
+    GroundTruthS3Input: MonitoringGroundTruthS3InputTypeDef,  # (3)
+    EndpointInput: NotRequired[EndpointInputTypeDef],  # (1)
+    BatchTransformInput: NotRequired[BatchTransformInputTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: ModelQualityAppSpecificationTypeDef](./type_defs.md#modelqualityappspecificationtypedef) 
-2. See [:material-code-braces: ModelQualityJobInputTypeDef](./type_defs.md#modelqualityjobinputtypedef) 
-3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-5. See [:material-code-braces: ModelQualityBaselineConfigTypeDef](./type_defs.md#modelqualitybaselineconfigtypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DescribeDataQualityJobDefinitionResponseTypeDef
+1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
+2. See [:material-code-braces: BatchTransformInputTypeDef](./type_defs.md#batchtransforminputtypedef) 
+3. See [:material-code-braces: MonitoringGroundTruthS3InputTypeDef](./type_defs.md#monitoringgroundtruths3inputtypedef) 
+## MonitoringInputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeDataQualityJobDefinitionResponseTypeDef
+from mypy_boto3_sagemaker.type_defs import MonitoringInputTypeDef
 
-def get_value() -> DescribeDataQualityJobDefinitionResponseTypeDef:
+def get_value() -> MonitoringInputTypeDef:
     return {
-        "JobDefinitionArn": ...,
-        "JobDefinitionName": ...,
-        "CreationTime": ...,
-        "DataQualityBaselineConfig": ...,
-        "DataQualityAppSpecification": ...,
-        "DataQualityJobInput": ...,
-        "DataQualityJobOutputConfig": ...,
-        "JobResources": ...,
-        "NetworkConfig": ...,
-        "RoleArn": ...,
-        "StoppingCondition": ...,
-        "ResponseMetadata": ...,
+        "EndpointInput": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDataQualityJobDefinitionResponseTypeDef(TypedDict):
-    JobDefinitionArn: str,
-    JobDefinitionName: str,
-    CreationTime: datetime,
-    DataQualityBaselineConfig: DataQualityBaselineConfigTypeDef,  # (1)
-    DataQualityAppSpecification: DataQualityAppSpecificationTypeDef,  # (2)
-    DataQualityJobInput: DataQualityJobInputTypeDef,  # (3)
-    DataQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
-    JobResources: MonitoringResourcesTypeDef,  # (5)
-    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
-    RoleArn: str,
-    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+class MonitoringInputTypeDef(TypedDict):
+    EndpointInput: NotRequired[EndpointInputTypeDef],  # (1)
+    BatchTransformInput: NotRequired[BatchTransformInputTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: DataQualityBaselineConfigTypeDef](./type_defs.md#dataqualitybaselineconfigtypedef) 
-2. See [:material-code-braces: DataQualityAppSpecificationTypeDef](./type_defs.md#dataqualityappspecificationtypedef) 
-3. See [:material-code-braces: DataQualityJobInputTypeDef](./type_defs.md#dataqualityjobinputtypedef) 
-4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeModelBiasJobDefinitionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeModelBiasJobDefinitionResponseTypeDef
-
-def get_value() -> DescribeModelBiasJobDefinitionResponseTypeDef:
-    return {
-        "JobDefinitionArn": ...,
-        "JobDefinitionName": ...,
-        "CreationTime": ...,
-        "ModelBiasBaselineConfig": ...,
-        "ModelBiasAppSpecification": ...,
-        "ModelBiasJobInput": ...,
-        "ModelBiasJobOutputConfig": ...,
-        "JobResources": ...,
-        "NetworkConfig": ...,
-        "RoleArn": ...,
-        "StoppingCondition": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeModelBiasJobDefinitionResponseTypeDef(TypedDict):
-    JobDefinitionArn: str,
-    JobDefinitionName: str,
-    CreationTime: datetime,
-    ModelBiasBaselineConfig: ModelBiasBaselineConfigTypeDef,  # (1)
-    ModelBiasAppSpecification: ModelBiasAppSpecificationTypeDef,  # (2)
-    ModelBiasJobInput: ModelBiasJobInputTypeDef,  # (3)
-    ModelBiasJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
-    JobResources: MonitoringResourcesTypeDef,  # (5)
-    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
-    RoleArn: str,
-    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
-```
-
-1. See [:material-code-braces: ModelBiasBaselineConfigTypeDef](./type_defs.md#modelbiasbaselineconfigtypedef) 
-2. See [:material-code-braces: ModelBiasAppSpecificationTypeDef](./type_defs.md#modelbiasappspecificationtypedef) 
-3. See [:material-code-braces: ModelBiasJobInputTypeDef](./type_defs.md#modelbiasjobinputtypedef) 
-4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeModelExplainabilityJobDefinitionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeModelExplainabilityJobDefinitionResponseTypeDef
-
-def get_value() -> DescribeModelExplainabilityJobDefinitionResponseTypeDef:
-    return {
-        "JobDefinitionArn": ...,
-        "JobDefinitionName": ...,
-        "CreationTime": ...,
-        "ModelExplainabilityBaselineConfig": ...,
-        "ModelExplainabilityAppSpecification": ...,
-        "ModelExplainabilityJobInput": ...,
-        "ModelExplainabilityJobOutputConfig": ...,
-        "JobResources": ...,
-        "NetworkConfig": ...,
-        "RoleArn": ...,
-        "StoppingCondition": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeModelExplainabilityJobDefinitionResponseTypeDef(TypedDict):
-    JobDefinitionArn: str,
-    JobDefinitionName: str,
-    CreationTime: datetime,
-    ModelExplainabilityBaselineConfig: ModelExplainabilityBaselineConfigTypeDef,  # (1)
-    ModelExplainabilityAppSpecification: ModelExplainabilityAppSpecificationTypeDef,  # (2)
-    ModelExplainabilityJobInput: ModelExplainabilityJobInputTypeDef,  # (3)
-    ModelExplainabilityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
-    JobResources: MonitoringResourcesTypeDef,  # (5)
-    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
-    RoleArn: str,
-    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
-```
-
-1. See [:material-code-braces: ModelExplainabilityBaselineConfigTypeDef](./type_defs.md#modelexplainabilitybaselineconfigtypedef) 
-2. See [:material-code-braces: ModelExplainabilityAppSpecificationTypeDef](./type_defs.md#modelexplainabilityappspecificationtypedef) 
-3. See [:material-code-braces: ModelExplainabilityJobInputTypeDef](./type_defs.md#modelexplainabilityjobinputtypedef) 
-4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeModelQualityJobDefinitionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeModelQualityJobDefinitionResponseTypeDef
-
-def get_value() -> DescribeModelQualityJobDefinitionResponseTypeDef:
-    return {
-        "JobDefinitionArn": ...,
-        "JobDefinitionName": ...,
-        "CreationTime": ...,
-        "ModelQualityBaselineConfig": ...,
-        "ModelQualityAppSpecification": ...,
-        "ModelQualityJobInput": ...,
-        "ModelQualityJobOutputConfig": ...,
-        "JobResources": ...,
-        "NetworkConfig": ...,
-        "RoleArn": ...,
-        "StoppingCondition": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeModelQualityJobDefinitionResponseTypeDef(TypedDict):
-    JobDefinitionArn: str,
-    JobDefinitionName: str,
-    CreationTime: datetime,
-    ModelQualityBaselineConfig: ModelQualityBaselineConfigTypeDef,  # (1)
-    ModelQualityAppSpecification: ModelQualityAppSpecificationTypeDef,  # (2)
-    ModelQualityJobInput: ModelQualityJobInputTypeDef,  # (3)
-    ModelQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
-    JobResources: MonitoringResourcesTypeDef,  # (5)
-    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
-    RoleArn: str,
-    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
-```
-
-1. See [:material-code-braces: ModelQualityBaselineConfigTypeDef](./type_defs.md#modelqualitybaselineconfigtypedef) 
-2. See [:material-code-braces: ModelQualityAppSpecificationTypeDef](./type_defs.md#modelqualityappspecificationtypedef) 
-3. See [:material-code-braces: ModelQualityJobInputTypeDef](./type_defs.md#modelqualityjobinputtypedef) 
-4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
-7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MonitoringJobDefinitionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import MonitoringJobDefinitionTypeDef
-
-def get_value() -> MonitoringJobDefinitionTypeDef:
-    return {
-        "MonitoringInputs": ...,
-        "MonitoringOutputConfig": ...,
-        "MonitoringResources": ...,
-        "MonitoringAppSpecification": ...,
-        "RoleArn": ...,
-    }
-```
-
-```python title="Definition"
-class MonitoringJobDefinitionTypeDef(TypedDict):
-    MonitoringInputs: Sequence[MonitoringInputTypeDef],  # (2)
-    MonitoringOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
-    MonitoringResources: MonitoringResourcesTypeDef,  # (4)
-    MonitoringAppSpecification: MonitoringAppSpecificationTypeDef,  # (5)
-    RoleArn: str,
-    BaselineConfig: NotRequired[MonitoringBaselineConfigTypeDef],  # (1)
-    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (6)
-    Environment: NotRequired[Mapping[str, str]],
-    NetworkConfig: NotRequired[NetworkConfigTypeDef],  # (7)
-```
-
-1. See [:material-code-braces: MonitoringBaselineConfigTypeDef](./type_defs.md#monitoringbaselineconfigtypedef) 
-2. See [:material-code-braces: MonitoringInputTypeDef](./type_defs.md#monitoringinputtypedef) 
-3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
-4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
-5. See [:material-code-braces: MonitoringAppSpecificationTypeDef](./type_defs.md#monitoringappspecificationtypedef) 
-6. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
-7. See [:material-code-braces: NetworkConfigTypeDef](./type_defs.md#networkconfigtypedef) 
+1. See [:material-code-braces: EndpointInputTypeDef](./type_defs.md#endpointinputtypedef) 
+2. See [:material-code-braces: BatchTransformInputTypeDef](./type_defs.md#batchtransforminputtypedef) 
 ## CreateProcessingJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -20472,9 +20210,10 @@ class CreateTransformJobRequestRequestTypeDef(TypedDict):
     MaxPayloadInMB: NotRequired[int],
     BatchStrategy: NotRequired[BatchStrategyType],  # (5)
     Environment: NotRequired[Mapping[str, str]],
-    DataProcessing: NotRequired[DataProcessingTypeDef],  # (6)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
-    ExperimentConfig: NotRequired[ExperimentConfigTypeDef],  # (8)
+    DataCaptureConfig: NotRequired[BatchDataCaptureConfigTypeDef],  # (6)
+    DataProcessing: NotRequired[DataProcessingTypeDef],  # (7)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+    ExperimentConfig: NotRequired[ExperimentConfigTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: TransformInputTypeDef](./type_defs.md#transforminputtypedef) 
@@ -20482,9 +20221,10 @@ class CreateTransformJobRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: TransformResourcesTypeDef](./type_defs.md#transformresourcestypedef) 
 4. See [:material-code-braces: ModelClientConfigTypeDef](./type_defs.md#modelclientconfigtypedef) 
 5. See [:material-code-brackets: BatchStrategyType](./literals.md#batchstrategytype) 
-6. See [:material-code-braces: DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef) 
-7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-8. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
+6. See [:material-code-braces: BatchDataCaptureConfigTypeDef](./type_defs.md#batchdatacaptureconfigtypedef) 
+7. See [:material-code-braces: DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
 ## DescribeTransformJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -20504,6 +20244,7 @@ def get_value() -> DescribeTransformJobResponseTypeDef:
         "Environment": ...,
         "TransformInput": ...,
         "TransformOutput": ...,
+        "DataCaptureConfig": ...,
         "TransformResources": ...,
         "CreationTime": ...,
         "TransformStartTime": ...,
@@ -20530,15 +20271,16 @@ class DescribeTransformJobResponseTypeDef(TypedDict):
     Environment: Dict[str, str],
     TransformInput: TransformInputTypeDef,  # (4)
     TransformOutput: TransformOutputTypeDef,  # (5)
-    TransformResources: TransformResourcesTypeDef,  # (6)
+    DataCaptureConfig: BatchDataCaptureConfigTypeDef,  # (6)
+    TransformResources: TransformResourcesTypeDef,  # (7)
     CreationTime: datetime,
     TransformStartTime: datetime,
     TransformEndTime: datetime,
     LabelingJobArn: str,
     AutoMLJobArn: str,
-    DataProcessing: DataProcessingTypeDef,  # (7)
-    ExperimentConfig: ExperimentConfigTypeDef,  # (8)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
+    DataProcessing: DataProcessingTypeDef,  # (8)
+    ExperimentConfig: ExperimentConfigTypeDef,  # (9)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
 ```
 
 1. See [:material-code-brackets: TransformJobStatusType](./literals.md#transformjobstatustype) 
@@ -20546,10 +20288,11 @@ class DescribeTransformJobResponseTypeDef(TypedDict):
 3. See [:material-code-brackets: BatchStrategyType](./literals.md#batchstrategytype) 
 4. See [:material-code-braces: TransformInputTypeDef](./type_defs.md#transforminputtypedef) 
 5. See [:material-code-braces: TransformOutputTypeDef](./type_defs.md#transformoutputtypedef) 
-6. See [:material-code-braces: TransformResourcesTypeDef](./type_defs.md#transformresourcestypedef) 
-7. See [:material-code-braces: DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef) 
-8. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
-9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+6. See [:material-code-braces: BatchDataCaptureConfigTypeDef](./type_defs.md#batchdatacaptureconfigtypedef) 
+7. See [:material-code-braces: TransformResourcesTypeDef](./type_defs.md#transformresourcestypedef) 
+8. See [:material-code-braces: DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef) 
+9. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
+10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TransformJobDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -21054,28 +20797,377 @@ class BatchDescribeModelPackageOutputTypeDef(TypedDict):
 1. See [:material-code-braces: BatchDescribeModelPackageSummaryTypeDef](./type_defs.md#batchdescribemodelpackagesummarytypedef) 
 2. See [:material-code-braces: BatchDescribeModelPackageErrorTypeDef](./type_defs.md#batchdescribemodelpackageerrortypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## MonitoringScheduleConfigTypeDef
+## CreateDataQualityJobDefinitionRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import MonitoringScheduleConfigTypeDef
+from mypy_boto3_sagemaker.type_defs import CreateDataQualityJobDefinitionRequestRequestTypeDef
 
-def get_value() -> MonitoringScheduleConfigTypeDef:
+def get_value() -> CreateDataQualityJobDefinitionRequestRequestTypeDef:
     return {
-        "ScheduleConfig": ...,
+        "JobDefinitionName": ...,
+        "DataQualityAppSpecification": ...,
+        "DataQualityJobInput": ...,
+        "DataQualityJobOutputConfig": ...,
+        "JobResources": ...,
+        "RoleArn": ...,
     }
 ```
 
 ```python title="Definition"
-class MonitoringScheduleConfigTypeDef(TypedDict):
-    ScheduleConfig: NotRequired[ScheduleConfigTypeDef],  # (1)
-    MonitoringJobDefinition: NotRequired[MonitoringJobDefinitionTypeDef],  # (2)
-    MonitoringJobDefinitionName: NotRequired[str],
-    MonitoringType: NotRequired[MonitoringTypeType],  # (3)
+class CreateDataQualityJobDefinitionRequestRequestTypeDef(TypedDict):
+    JobDefinitionName: str,
+    DataQualityAppSpecification: DataQualityAppSpecificationTypeDef,  # (1)
+    DataQualityJobInput: DataQualityJobInputTypeDef,  # (2)
+    DataQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
+    JobResources: MonitoringResourcesTypeDef,  # (4)
+    RoleArn: str,
+    DataQualityBaselineConfig: NotRequired[DataQualityBaselineConfigTypeDef],  # (5)
+    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
+    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
 ```
 
-1. See [:material-code-braces: ScheduleConfigTypeDef](./type_defs.md#scheduleconfigtypedef) 
-2. See [:material-code-braces: MonitoringJobDefinitionTypeDef](./type_defs.md#monitoringjobdefinitiontypedef) 
-3. See [:material-code-brackets: MonitoringTypeType](./literals.md#monitoringtypetype) 
+1. See [:material-code-braces: DataQualityAppSpecificationTypeDef](./type_defs.md#dataqualityappspecificationtypedef) 
+2. See [:material-code-braces: DataQualityJobInputTypeDef](./type_defs.md#dataqualityjobinputtypedef) 
+3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+5. See [:material-code-braces: DataQualityBaselineConfigTypeDef](./type_defs.md#dataqualitybaselineconfigtypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeDataQualityJobDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeDataQualityJobDefinitionResponseTypeDef
+
+def get_value() -> DescribeDataQualityJobDefinitionResponseTypeDef:
+    return {
+        "JobDefinitionArn": ...,
+        "JobDefinitionName": ...,
+        "CreationTime": ...,
+        "DataQualityBaselineConfig": ...,
+        "DataQualityAppSpecification": ...,
+        "DataQualityJobInput": ...,
+        "DataQualityJobOutputConfig": ...,
+        "JobResources": ...,
+        "NetworkConfig": ...,
+        "RoleArn": ...,
+        "StoppingCondition": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataQualityJobDefinitionResponseTypeDef(TypedDict):
+    JobDefinitionArn: str,
+    JobDefinitionName: str,
+    CreationTime: datetime,
+    DataQualityBaselineConfig: DataQualityBaselineConfigTypeDef,  # (1)
+    DataQualityAppSpecification: DataQualityAppSpecificationTypeDef,  # (2)
+    DataQualityJobInput: DataQualityJobInputTypeDef,  # (3)
+    DataQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
+    JobResources: MonitoringResourcesTypeDef,  # (5)
+    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
+    RoleArn: str,
+    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-braces: DataQualityBaselineConfigTypeDef](./type_defs.md#dataqualitybaselineconfigtypedef) 
+2. See [:material-code-braces: DataQualityAppSpecificationTypeDef](./type_defs.md#dataqualityappspecificationtypedef) 
+3. See [:material-code-braces: DataQualityJobInputTypeDef](./type_defs.md#dataqualityjobinputtypedef) 
+4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateModelBiasJobDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateModelBiasJobDefinitionRequestRequestTypeDef
+
+def get_value() -> CreateModelBiasJobDefinitionRequestRequestTypeDef:
+    return {
+        "JobDefinitionName": ...,
+        "ModelBiasAppSpecification": ...,
+        "ModelBiasJobInput": ...,
+        "ModelBiasJobOutputConfig": ...,
+        "JobResources": ...,
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelBiasJobDefinitionRequestRequestTypeDef(TypedDict):
+    JobDefinitionName: str,
+    ModelBiasAppSpecification: ModelBiasAppSpecificationTypeDef,  # (1)
+    ModelBiasJobInput: ModelBiasJobInputTypeDef,  # (2)
+    ModelBiasJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
+    JobResources: MonitoringResourcesTypeDef,  # (4)
+    RoleArn: str,
+    ModelBiasBaselineConfig: NotRequired[ModelBiasBaselineConfigTypeDef],  # (5)
+    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
+    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+```
+
+1. See [:material-code-braces: ModelBiasAppSpecificationTypeDef](./type_defs.md#modelbiasappspecificationtypedef) 
+2. See [:material-code-braces: ModelBiasJobInputTypeDef](./type_defs.md#modelbiasjobinputtypedef) 
+3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+5. See [:material-code-braces: ModelBiasBaselineConfigTypeDef](./type_defs.md#modelbiasbaselineconfigtypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeModelBiasJobDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelBiasJobDefinitionResponseTypeDef
+
+def get_value() -> DescribeModelBiasJobDefinitionResponseTypeDef:
+    return {
+        "JobDefinitionArn": ...,
+        "JobDefinitionName": ...,
+        "CreationTime": ...,
+        "ModelBiasBaselineConfig": ...,
+        "ModelBiasAppSpecification": ...,
+        "ModelBiasJobInput": ...,
+        "ModelBiasJobOutputConfig": ...,
+        "JobResources": ...,
+        "NetworkConfig": ...,
+        "RoleArn": ...,
+        "StoppingCondition": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelBiasJobDefinitionResponseTypeDef(TypedDict):
+    JobDefinitionArn: str,
+    JobDefinitionName: str,
+    CreationTime: datetime,
+    ModelBiasBaselineConfig: ModelBiasBaselineConfigTypeDef,  # (1)
+    ModelBiasAppSpecification: ModelBiasAppSpecificationTypeDef,  # (2)
+    ModelBiasJobInput: ModelBiasJobInputTypeDef,  # (3)
+    ModelBiasJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
+    JobResources: MonitoringResourcesTypeDef,  # (5)
+    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
+    RoleArn: str,
+    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-braces: ModelBiasBaselineConfigTypeDef](./type_defs.md#modelbiasbaselineconfigtypedef) 
+2. See [:material-code-braces: ModelBiasAppSpecificationTypeDef](./type_defs.md#modelbiasappspecificationtypedef) 
+3. See [:material-code-braces: ModelBiasJobInputTypeDef](./type_defs.md#modelbiasjobinputtypedef) 
+4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateModelExplainabilityJobDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateModelExplainabilityJobDefinitionRequestRequestTypeDef
+
+def get_value() -> CreateModelExplainabilityJobDefinitionRequestRequestTypeDef:
+    return {
+        "JobDefinitionName": ...,
+        "ModelExplainabilityAppSpecification": ...,
+        "ModelExplainabilityJobInput": ...,
+        "ModelExplainabilityJobOutputConfig": ...,
+        "JobResources": ...,
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelExplainabilityJobDefinitionRequestRequestTypeDef(TypedDict):
+    JobDefinitionName: str,
+    ModelExplainabilityAppSpecification: ModelExplainabilityAppSpecificationTypeDef,  # (1)
+    ModelExplainabilityJobInput: ModelExplainabilityJobInputTypeDef,  # (2)
+    ModelExplainabilityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
+    JobResources: MonitoringResourcesTypeDef,  # (4)
+    RoleArn: str,
+    ModelExplainabilityBaselineConfig: NotRequired[ModelExplainabilityBaselineConfigTypeDef],  # (5)
+    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
+    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+```
+
+1. See [:material-code-braces: ModelExplainabilityAppSpecificationTypeDef](./type_defs.md#modelexplainabilityappspecificationtypedef) 
+2. See [:material-code-braces: ModelExplainabilityJobInputTypeDef](./type_defs.md#modelexplainabilityjobinputtypedef) 
+3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+5. See [:material-code-braces: ModelExplainabilityBaselineConfigTypeDef](./type_defs.md#modelexplainabilitybaselineconfigtypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeModelExplainabilityJobDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelExplainabilityJobDefinitionResponseTypeDef
+
+def get_value() -> DescribeModelExplainabilityJobDefinitionResponseTypeDef:
+    return {
+        "JobDefinitionArn": ...,
+        "JobDefinitionName": ...,
+        "CreationTime": ...,
+        "ModelExplainabilityBaselineConfig": ...,
+        "ModelExplainabilityAppSpecification": ...,
+        "ModelExplainabilityJobInput": ...,
+        "ModelExplainabilityJobOutputConfig": ...,
+        "JobResources": ...,
+        "NetworkConfig": ...,
+        "RoleArn": ...,
+        "StoppingCondition": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelExplainabilityJobDefinitionResponseTypeDef(TypedDict):
+    JobDefinitionArn: str,
+    JobDefinitionName: str,
+    CreationTime: datetime,
+    ModelExplainabilityBaselineConfig: ModelExplainabilityBaselineConfigTypeDef,  # (1)
+    ModelExplainabilityAppSpecification: ModelExplainabilityAppSpecificationTypeDef,  # (2)
+    ModelExplainabilityJobInput: ModelExplainabilityJobInputTypeDef,  # (3)
+    ModelExplainabilityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
+    JobResources: MonitoringResourcesTypeDef,  # (5)
+    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
+    RoleArn: str,
+    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-braces: ModelExplainabilityBaselineConfigTypeDef](./type_defs.md#modelexplainabilitybaselineconfigtypedef) 
+2. See [:material-code-braces: ModelExplainabilityAppSpecificationTypeDef](./type_defs.md#modelexplainabilityappspecificationtypedef) 
+3. See [:material-code-braces: ModelExplainabilityJobInputTypeDef](./type_defs.md#modelexplainabilityjobinputtypedef) 
+4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateModelQualityJobDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateModelQualityJobDefinitionRequestRequestTypeDef
+
+def get_value() -> CreateModelQualityJobDefinitionRequestRequestTypeDef:
+    return {
+        "JobDefinitionName": ...,
+        "ModelQualityAppSpecification": ...,
+        "ModelQualityJobInput": ...,
+        "ModelQualityJobOutputConfig": ...,
+        "JobResources": ...,
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelQualityJobDefinitionRequestRequestTypeDef(TypedDict):
+    JobDefinitionName: str,
+    ModelQualityAppSpecification: ModelQualityAppSpecificationTypeDef,  # (1)
+    ModelQualityJobInput: ModelQualityJobInputTypeDef,  # (2)
+    ModelQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
+    JobResources: MonitoringResourcesTypeDef,  # (4)
+    RoleArn: str,
+    ModelQualityBaselineConfig: NotRequired[ModelQualityBaselineConfigTypeDef],  # (5)
+    NetworkConfig: NotRequired[MonitoringNetworkConfigTypeDef],  # (6)
+    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (7)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+```
+
+1. See [:material-code-braces: ModelQualityAppSpecificationTypeDef](./type_defs.md#modelqualityappspecificationtypedef) 
+2. See [:material-code-braces: ModelQualityJobInputTypeDef](./type_defs.md#modelqualityjobinputtypedef) 
+3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+5. See [:material-code-braces: ModelQualityBaselineConfigTypeDef](./type_defs.md#modelqualitybaselineconfigtypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeModelQualityJobDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelQualityJobDefinitionResponseTypeDef
+
+def get_value() -> DescribeModelQualityJobDefinitionResponseTypeDef:
+    return {
+        "JobDefinitionArn": ...,
+        "JobDefinitionName": ...,
+        "CreationTime": ...,
+        "ModelQualityBaselineConfig": ...,
+        "ModelQualityAppSpecification": ...,
+        "ModelQualityJobInput": ...,
+        "ModelQualityJobOutputConfig": ...,
+        "JobResources": ...,
+        "NetworkConfig": ...,
+        "RoleArn": ...,
+        "StoppingCondition": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelQualityJobDefinitionResponseTypeDef(TypedDict):
+    JobDefinitionArn: str,
+    JobDefinitionName: str,
+    CreationTime: datetime,
+    ModelQualityBaselineConfig: ModelQualityBaselineConfigTypeDef,  # (1)
+    ModelQualityAppSpecification: ModelQualityAppSpecificationTypeDef,  # (2)
+    ModelQualityJobInput: ModelQualityJobInputTypeDef,  # (3)
+    ModelQualityJobOutputConfig: MonitoringOutputConfigTypeDef,  # (4)
+    JobResources: MonitoringResourcesTypeDef,  # (5)
+    NetworkConfig: MonitoringNetworkConfigTypeDef,  # (6)
+    RoleArn: str,
+    StoppingCondition: MonitoringStoppingConditionTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-braces: ModelQualityBaselineConfigTypeDef](./type_defs.md#modelqualitybaselineconfigtypedef) 
+2. See [:material-code-braces: ModelQualityAppSpecificationTypeDef](./type_defs.md#modelqualityappspecificationtypedef) 
+3. See [:material-code-braces: ModelQualityJobInputTypeDef](./type_defs.md#modelqualityjobinputtypedef) 
+4. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+5. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+6. See [:material-code-braces: MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef) 
+7. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MonitoringJobDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringJobDefinitionTypeDef
+
+def get_value() -> MonitoringJobDefinitionTypeDef:
+    return {
+        "MonitoringInputs": ...,
+        "MonitoringOutputConfig": ...,
+        "MonitoringResources": ...,
+        "MonitoringAppSpecification": ...,
+        "RoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringJobDefinitionTypeDef(TypedDict):
+    MonitoringInputs: Sequence[MonitoringInputTypeDef],  # (2)
+    MonitoringOutputConfig: MonitoringOutputConfigTypeDef,  # (3)
+    MonitoringResources: MonitoringResourcesTypeDef,  # (4)
+    MonitoringAppSpecification: MonitoringAppSpecificationTypeDef,  # (5)
+    RoleArn: str,
+    BaselineConfig: NotRequired[MonitoringBaselineConfigTypeDef],  # (1)
+    StoppingCondition: NotRequired[MonitoringStoppingConditionTypeDef],  # (6)
+    Environment: NotRequired[Mapping[str, str]],
+    NetworkConfig: NotRequired[NetworkConfigTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: MonitoringBaselineConfigTypeDef](./type_defs.md#monitoringbaselineconfigtypedef) 
+2. See [:material-code-braces: MonitoringInputTypeDef](./type_defs.md#monitoringinputtypedef) 
+3. See [:material-code-braces: MonitoringOutputConfigTypeDef](./type_defs.md#monitoringoutputconfigtypedef) 
+4. See [:material-code-braces: MonitoringResourcesTypeDef](./type_defs.md#monitoringresourcestypedef) 
+5. See [:material-code-braces: MonitoringAppSpecificationTypeDef](./type_defs.md#monitoringappspecificationtypedef) 
+6. See [:material-code-braces: MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef) 
+7. See [:material-code-braces: NetworkConfigTypeDef](./type_defs.md#networkconfigtypedef) 
 ## AlgorithmValidationProfileTypeDef
 
 ```python title="Usage Example"
@@ -21138,6 +21230,113 @@ class TrialComponentSourceDetailTypeDef(TypedDict):
 1. See [:material-code-braces: TrainingJobTypeDef](./type_defs.md#trainingjobtypedef) 
 2. See [:material-code-braces: ProcessingJobTypeDef](./type_defs.md#processingjobtypedef) 
 3. See [:material-code-braces: TransformJobTypeDef](./type_defs.md#transformjobtypedef) 
+## MonitoringScheduleConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringScheduleConfigTypeDef
+
+def get_value() -> MonitoringScheduleConfigTypeDef:
+    return {
+        "ScheduleConfig": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringScheduleConfigTypeDef(TypedDict):
+    ScheduleConfig: NotRequired[ScheduleConfigTypeDef],  # (1)
+    MonitoringJobDefinition: NotRequired[MonitoringJobDefinitionTypeDef],  # (2)
+    MonitoringJobDefinitionName: NotRequired[str],
+    MonitoringType: NotRequired[MonitoringTypeType],  # (3)
+```
+
+1. See [:material-code-braces: ScheduleConfigTypeDef](./type_defs.md#scheduleconfigtypedef) 
+2. See [:material-code-braces: MonitoringJobDefinitionTypeDef](./type_defs.md#monitoringjobdefinitiontypedef) 
+3. See [:material-code-brackets: MonitoringTypeType](./literals.md#monitoringtypetype) 
+## AlgorithmValidationSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import AlgorithmValidationSpecificationTypeDef
+
+def get_value() -> AlgorithmValidationSpecificationTypeDef:
+    return {
+        "ValidationRole": ...,
+        "ValidationProfiles": ...,
+    }
+```
+
+```python title="Definition"
+class AlgorithmValidationSpecificationTypeDef(TypedDict):
+    ValidationRole: str,
+    ValidationProfiles: Sequence[AlgorithmValidationProfileTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AlgorithmValidationProfileTypeDef](./type_defs.md#algorithmvalidationprofiletypedef) 
+## ModelPackageValidationSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelPackageValidationSpecificationTypeDef
+
+def get_value() -> ModelPackageValidationSpecificationTypeDef:
+    return {
+        "ValidationRole": ...,
+        "ValidationProfiles": ...,
+    }
+```
+
+```python title="Definition"
+class ModelPackageValidationSpecificationTypeDef(TypedDict):
+    ValidationRole: str,
+    ValidationProfiles: Sequence[ModelPackageValidationProfileTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ModelPackageValidationProfileTypeDef](./type_defs.md#modelpackagevalidationprofiletypedef) 
+## TrialComponentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrialComponentTypeDef
+
+def get_value() -> TrialComponentTypeDef:
+    return {
+        "TrialComponentName": ...,
+    }
+```
+
+```python title="Definition"
+class TrialComponentTypeDef(TypedDict):
+    TrialComponentName: NotRequired[str],
+    DisplayName: NotRequired[str],
+    TrialComponentArn: NotRequired[str],
+    Source: NotRequired[TrialComponentSourceTypeDef],  # (1)
+    Status: NotRequired[TrialComponentStatusTypeDef],  # (2)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
+    Parameters: NotRequired[Dict[str, TrialComponentParameterValueTypeDef]],  # (5)
+    InputArtifacts: NotRequired[Dict[str, TrialComponentArtifactTypeDef]],  # (6)
+    OutputArtifacts: NotRequired[Dict[str, TrialComponentArtifactTypeDef]],  # (6)
+    Metrics: NotRequired[List[TrialComponentMetricSummaryTypeDef]],  # (8)
+    MetadataProperties: NotRequired[MetadataPropertiesTypeDef],  # (9)
+    SourceDetail: NotRequired[TrialComponentSourceDetailTypeDef],  # (10)
+    LineageGroupArn: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (11)
+    Parents: NotRequired[List[ParentTypeDef]],  # (12)
+```
+
+1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
+2. See [:material-code-braces: TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef) 
+6. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
+7. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
+8. See [:material-code-braces: TrialComponentMetricSummaryTypeDef](./type_defs.md#trialcomponentmetricsummarytypedef) 
+9. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
+10. See [:material-code-braces: TrialComponentSourceDetailTypeDef](./type_defs.md#trialcomponentsourcedetailtypedef) 
+11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+12. See [:material-code-braces: ParentTypeDef](./type_defs.md#parenttypedef) 
 ## CreateMonitoringScheduleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -21250,127 +21449,6 @@ class UpdateMonitoringScheduleRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef) 
-## AlgorithmValidationSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import AlgorithmValidationSpecificationTypeDef
-
-def get_value() -> AlgorithmValidationSpecificationTypeDef:
-    return {
-        "ValidationRole": ...,
-        "ValidationProfiles": ...,
-    }
-```
-
-```python title="Definition"
-class AlgorithmValidationSpecificationTypeDef(TypedDict):
-    ValidationRole: str,
-    ValidationProfiles: Sequence[AlgorithmValidationProfileTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: AlgorithmValidationProfileTypeDef](./type_defs.md#algorithmvalidationprofiletypedef) 
-## ModelPackageValidationSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import ModelPackageValidationSpecificationTypeDef
-
-def get_value() -> ModelPackageValidationSpecificationTypeDef:
-    return {
-        "ValidationRole": ...,
-        "ValidationProfiles": ...,
-    }
-```
-
-```python title="Definition"
-class ModelPackageValidationSpecificationTypeDef(TypedDict):
-    ValidationRole: str,
-    ValidationProfiles: Sequence[ModelPackageValidationProfileTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ModelPackageValidationProfileTypeDef](./type_defs.md#modelpackagevalidationprofiletypedef) 
-## TrialComponentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import TrialComponentTypeDef
-
-def get_value() -> TrialComponentTypeDef:
-    return {
-        "TrialComponentName": ...,
-    }
-```
-
-```python title="Definition"
-class TrialComponentTypeDef(TypedDict):
-    TrialComponentName: NotRequired[str],
-    DisplayName: NotRequired[str],
-    TrialComponentArn: NotRequired[str],
-    Source: NotRequired[TrialComponentSourceTypeDef],  # (1)
-    Status: NotRequired[TrialComponentStatusTypeDef],  # (2)
-    StartTime: NotRequired[datetime],
-    EndTime: NotRequired[datetime],
-    CreationTime: NotRequired[datetime],
-    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
-    LastModifiedTime: NotRequired[datetime],
-    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
-    Parameters: NotRequired[Dict[str, TrialComponentParameterValueTypeDef]],  # (5)
-    InputArtifacts: NotRequired[Dict[str, TrialComponentArtifactTypeDef]],  # (6)
-    OutputArtifacts: NotRequired[Dict[str, TrialComponentArtifactTypeDef]],  # (6)
-    Metrics: NotRequired[List[TrialComponentMetricSummaryTypeDef]],  # (8)
-    MetadataProperties: NotRequired[MetadataPropertiesTypeDef],  # (9)
-    SourceDetail: NotRequired[TrialComponentSourceDetailTypeDef],  # (10)
-    LineageGroupArn: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (11)
-    Parents: NotRequired[List[ParentTypeDef]],  # (12)
-```
-
-1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
-2. See [:material-code-braces: TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef) 
-3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
-5. See [:material-code-braces: TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef) 
-6. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
-7. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
-8. See [:material-code-braces: TrialComponentMetricSummaryTypeDef](./type_defs.md#trialcomponentmetricsummarytypedef) 
-9. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
-10. See [:material-code-braces: TrialComponentSourceDetailTypeDef](./type_defs.md#trialcomponentsourcedetailtypedef) 
-11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-12. See [:material-code-braces: ParentTypeDef](./type_defs.md#parenttypedef) 
-## EndpointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import EndpointTypeDef
-
-def get_value() -> EndpointTypeDef:
-    return {
-        "EndpointName": ...,
-        "EndpointArn": ...,
-        "EndpointConfigName": ...,
-        "EndpointStatus": ...,
-        "CreationTime": ...,
-        "LastModifiedTime": ...,
-    }
-```
-
-```python title="Definition"
-class EndpointTypeDef(TypedDict):
-    EndpointName: str,
-    EndpointArn: str,
-    EndpointConfigName: str,
-    EndpointStatus: EndpointStatusType,  # (3)
-    CreationTime: datetime,
-    LastModifiedTime: datetime,
-    ProductionVariants: NotRequired[List[ProductionVariantSummaryTypeDef]],  # (1)
-    DataCaptureConfig: NotRequired[DataCaptureConfigSummaryTypeDef],  # (2)
-    FailureReason: NotRequired[str],
-    MonitoringSchedules: NotRequired[List[MonitoringScheduleTypeDef]],  # (4)
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-```
-
-1. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
-2. See [:material-code-braces: DataCaptureConfigSummaryTypeDef](./type_defs.md#datacaptureconfigsummarytypedef) 
-3. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
-4. See [:material-code-braces: MonitoringScheduleTypeDef](./type_defs.md#monitoringscheduletypedef) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateAlgorithmInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -21617,6 +21695,42 @@ class ModelPackageTypeDef(TypedDict):
 11. See [:material-code-braces: AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef) 
 12. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 13. See [:material-code-braces: DriftCheckBaselinesTypeDef](./type_defs.md#driftcheckbaselinestypedef) 
+## EndpointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "EndpointName": ...,
+        "EndpointArn": ...,
+        "EndpointConfigName": ...,
+        "EndpointStatus": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    EndpointName: str,
+    EndpointArn: str,
+    EndpointConfigName: str,
+    EndpointStatus: EndpointStatusType,  # (3)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    ProductionVariants: NotRequired[List[ProductionVariantSummaryTypeDef]],  # (1)
+    DataCaptureConfig: NotRequired[DataCaptureConfigSummaryTypeDef],  # (2)
+    FailureReason: NotRequired[str],
+    MonitoringSchedules: NotRequired[List[MonitoringScheduleTypeDef]],  # (4)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
+2. See [:material-code-braces: DataCaptureConfigSummaryTypeDef](./type_defs.md#datacaptureconfigsummarytypedef) 
+3. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
+4. See [:material-code-braces: MonitoringScheduleTypeDef](./type_defs.md#monitoringscheduletypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## SearchRecordTypeDef
 
 ```python title="Usage Example"

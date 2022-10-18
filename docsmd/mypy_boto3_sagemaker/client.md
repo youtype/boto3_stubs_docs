@@ -1973,10 +1973,11 @@ def create_transform_job(
     MaxPayloadInMB: int = ...,
     BatchStrategy: BatchStrategyType = ...,  # (5)
     Environment: Mapping[str, str] = ...,
-    DataProcessing: DataProcessingTypeDef = ...,  # (6)
-    Tags: Sequence[TagTypeDef] = ...,  # (7)
-    ExperimentConfig: ExperimentConfigTypeDef = ...,  # (8)
-) -> CreateTransformJobResponseTypeDef:  # (9)
+    DataCaptureConfig: BatchDataCaptureConfigTypeDef = ...,  # (6)
+    DataProcessing: DataProcessingTypeDef = ...,  # (7)
+    Tags: Sequence[TagTypeDef] = ...,  # (8)
+    ExperimentConfig: ExperimentConfigTypeDef = ...,  # (9)
+) -> CreateTransformJobResponseTypeDef:  # (10)
     ...
 ```
 
@@ -1985,10 +1986,11 @@ def create_transform_job(
 3. See [:material-code-braces: TransformResourcesTypeDef](./type_defs.md#transformresourcestypedef) 
 4. See [:material-code-braces: ModelClientConfigTypeDef](./type_defs.md#modelclientconfigtypedef) 
 5. See [:material-code-brackets: BatchStrategyType](./literals.md#batchstrategytype) 
-6. See [:material-code-braces: DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef) 
-7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-8. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
-9. See [:material-code-braces: CreateTransformJobResponseTypeDef](./type_defs.md#createtransformjobresponsetypedef) 
+6. See [:material-code-braces: BatchDataCaptureConfigTypeDef](./type_defs.md#batchdatacaptureconfigtypedef) 
+7. See [:material-code-braces: DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
+10. See [:material-code-braces: CreateTransformJobResponseTypeDef](./type_defs.md#createtransformjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
