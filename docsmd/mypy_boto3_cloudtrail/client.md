@@ -428,7 +428,7 @@ def generate_presigned_url(
 
 ### get\_channel
 
-Returns the specified CloudTrail service-linked channel.
+Returns information about a specific channel.
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").get_channel` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_channel)
@@ -517,7 +517,7 @@ parent.get_event_selectors(**kwargs)
 
 ### get\_import
 
-Returns information for the specified import.
+Returns information about a specific import.
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").get_import` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_import)
@@ -667,7 +667,7 @@ parent.get_trail_status(**kwargs)
 
 ### list\_channels
 
-Returns all CloudTrail channels.
+Lists the channels in the current account, and their source names.
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").list_channels` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_channels)
@@ -1160,6 +1160,7 @@ def start_query(
     self,
     *,
     QueryStatement: str,
+    DeliveryS3Uri: str = ...,
 ) -> StartQueryResponseTypeDef:  # (1)
     ...
 ```

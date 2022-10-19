@@ -163,6 +163,8 @@ def get_value() -> SlackWorkspaceConfigurationTypeDef:
 ```python title="Definition"
 class SlackWorkspaceConfigurationTypeDef(TypedDict):
     teamId: str,
+    allowOrganizationMemberAccount: NotRequired[bool],
+    teamName: NotRequired[str],
 ```
 
 ## PutAccountAliasRequestRequestTypeDef
@@ -179,6 +181,22 @@ def get_value() -> PutAccountAliasRequestRequestTypeDef:
 ```python title="Definition"
 class PutAccountAliasRequestRequestTypeDef(TypedDict):
     accountAlias: str,
+```
+
+## RegisterSlackWorkspaceForOrganizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_support_app.type_defs import RegisterSlackWorkspaceForOrganizationRequestRequestTypeDef
+
+def get_value() -> RegisterSlackWorkspaceForOrganizationRequestRequestTypeDef:
+    return {
+        "teamId": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterSlackWorkspaceForOrganizationRequestRequestTypeDef(TypedDict):
+    teamId: str,
 ```
 
 ## UpdateSlackChannelConfigurationRequestRequestTypeDef
@@ -225,6 +243,30 @@ class GetAccountAliasResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterSlackWorkspaceForOrganizationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_support_app.type_defs import RegisterSlackWorkspaceForOrganizationResultTypeDef
+
+def get_value() -> RegisterSlackWorkspaceForOrganizationResultTypeDef:
+    return {
+        "accountType": ...,
+        "teamId": ...,
+        "teamName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterSlackWorkspaceForOrganizationResultTypeDef(TypedDict):
+    accountType: AccountTypeType,  # (1)
+    teamId: str,
+    teamName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AccountTypeType](./literals.md#accounttypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSlackChannelConfigurationResultTypeDef
 
 ```python title="Usage Example"

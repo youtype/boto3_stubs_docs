@@ -26,13 +26,31 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("managedblockchain")  # (1)
-    result = client.create_member()  # (2)
+    result = client.create_accessor()  # (2)
     ```
 
     1. client: [ManagedBlockchainClient](./client.md)
-    2. result: [:material-code-braces: CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef) 
+    2. result: [:material-code-braces: CreateAccessorOutputTypeDef](./type_defs.md#createaccessoroutputtypedef) 
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("managedblockchain")  # (1)
+
+    paginator = client.get_paginator("list_accessors")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ManagedBlockchainClient](./client.md)
+    2. paginator: [ListAccessorsPaginator](./paginators.md#listaccessorspaginator)
+    3. item: [:material-code-braces: ListAccessorsOutputTypeDef](./type_defs.md#listaccessorsoutputtypedef) 
 
 
 
@@ -52,19 +70,38 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
-    from mypy_boto3_managedblockchain.type_defs import CreateMemberOutputTypeDef
-    from mypy_boto3_managedblockchain.type_defs import CreateMemberInputRequestTypeDef
+    from mypy_boto3_managedblockchain.type_defs import CreateAccessorOutputTypeDef
+    from mypy_boto3_managedblockchain.type_defs import CreateAccessorInputRequestTypeDef
 
 
     session = Session()
 
     client: ManagedBlockchainClient = session.client("managedblockchain")
 
-    kwargs: CreateMemberInputRequestTypeDef = {...}
-    result: CreateMemberOutputTypeDef = client.create_member(**kwargs)
+    kwargs: CreateAccessorInputRequestTypeDef = {...}
+    result: CreateAccessorOutputTypeDef = client.create_accessor(**kwargs)
     ```
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
+    from mypy_boto3_managedblockchain.paginator import ListAccessorsPaginator
+    from mypy_boto3_managedblockchain.type_defs import ListAccessorsOutputTypeDef
+
+
+    session = Session()
+    client: ManagedBlockchainClient = session.client("managedblockchain")
+
+    paginator: ListAccessorsPaginator = client.get_paginator("list_accessors")
+    for item in paginator.paginate(...):
+        item: ListAccessorsOutputTypeDef
+        print(item)
+    ```
 
 
 

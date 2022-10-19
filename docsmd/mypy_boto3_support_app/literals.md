@@ -7,6 +7,21 @@
     Auto-generated documentation for [SupportApp](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support-app.html#SupportApp)
     type annotations stubs module [mypy-boto3-support-app](https://pypi.org/project/mypy-boto3-support-app/).
 
+## AccountTypeType
+
+```python title="Usage Example"
+from mypy_boto3_support_app.literals import AccountTypeType
+
+def get_value() -> AccountTypeType:
+    return "management"
+```
+
+```python title="Definition"
+AccountTypeType = Literal[
+    "management",
+    "member",
+]
+```
 ## NotificationSeverityLevelType
 
 ```python title="Usage Example"

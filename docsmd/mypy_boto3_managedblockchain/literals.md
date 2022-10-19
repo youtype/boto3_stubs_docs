@@ -7,6 +7,36 @@
     Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
     type annotations stubs module [mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
+## AccessorStatusType
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.literals import AccessorStatusType
+
+def get_value() -> AccessorStatusType:
+    return "AVAILABLE"
+```
+
+```python title="Definition"
+AccessorStatusType = Literal[
+    "AVAILABLE",
+    "DELETED",
+    "PENDING_DELETION",
+]
+```
+## AccessorTypeType
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.literals import AccessorTypeType
+
+def get_value() -> AccessorTypeType:
+    return "BILLING_TOKEN"
+```
+
+```python title="Definition"
+AccessorTypeType = Literal[
+    "BILLING_TOKEN",
+]
+```
 ## EditionType
 
 ```python title="Usage Example"
@@ -53,6 +83,20 @@ InvitationStatusType = Literal[
     "EXPIRED",
     "PENDING",
     "REJECTED",
+]
+```
+## ListAccessorsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.literals import ListAccessorsPaginatorName
+
+def get_value() -> ListAccessorsPaginatorName:
+    return "list_accessors"
+```
+
+```python title="Definition"
+ListAccessorsPaginatorName = Literal[
+    "list_accessors",
 ]
 ```
 ## MemberStatusType
@@ -544,6 +588,20 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_accessors"
+```
+
+```python title="Definition"
+PaginatorName = Literal[
+    "list_accessors",
 ]
 ```
 ## RegionName

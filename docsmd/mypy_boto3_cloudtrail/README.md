@@ -97,12 +97,13 @@ def get_list_import_failures_paginator() -> ListImportFailuresPaginator:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_cloudtrail.literals import DestinationTypeType
+from mypy_boto3_cloudtrail.literals import DeliveryStatusType
 
-def get_value() -> DestinationTypeType:
-    return "AWS_SERVICE"
+def get_value() -> DeliveryStatusType:
+    return "ACCESS_DENIED"
 ```
 
+- [DeliveryStatusType](./literals.md#deliverystatustype)
 - [DestinationTypeType](./literals.md#destinationtypetype)
 - [EventCategoryType](./literals.md#eventcategorytype)
 - [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)

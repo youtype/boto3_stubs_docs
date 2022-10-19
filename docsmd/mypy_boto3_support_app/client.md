@@ -318,6 +318,35 @@ parent.put_account_alias(**kwargs)
 
 1. See [:material-code-braces: PutAccountAliasRequestRequestTypeDef](./type_defs.md#putaccountaliasrequestrequesttypedef) 
 
+### register\_slack\_workspace\_for\_organization
+
+Registers a Slack workspace for your Amazon Web Services account.
+
+Type annotations and code completion for `#!python boto3.client("support-app").register_slack_workspace_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support-app.html#SupportApp.Client.register_slack_workspace_for_organization)
+
+```python title="Method definition"
+def register_slack_workspace_for_organization(
+    self,
+    *,
+    teamId: str,
+) -> RegisterSlackWorkspaceForOrganizationResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: RegisterSlackWorkspaceForOrganizationResultTypeDef](./type_defs.md#registerslackworkspacefororganizationresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RegisterSlackWorkspaceForOrganizationRequestRequestTypeDef = {  # (1)
+    "teamId": ...,
+}
+
+parent.register_slack_workspace_for_organization(**kwargs)
+```
+
+1. See [:material-code-braces: RegisterSlackWorkspaceForOrganizationRequestRequestTypeDef](./type_defs.md#registerslackworkspacefororganizationrequestrequesttypedef) 
+
 ### update\_slack\_channel\_configuration
 
 Updates the configuration for a Slack channel, such as case update

@@ -22434,6 +22434,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -22478,6 +22485,20 @@
     <li class="md-nav__item">
       <a href="literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -37515,6 +37536,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -37585,17 +37613,33 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ManagedBlockchainClient</span><span class="p">:</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;managedblockchain&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="literals">Literals</h2>
-<p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_managedblockchain.literals</span> <span class="kn">import</span> <span class="n">EditionType</span>
+<h2 id="paginators">Paginators</h2>
+<p>Type annotations and code completion for <a href="paginators/">paginators</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;managedblockchain&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EditionType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;STANDARD&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_managedblockchain.paginator</span> <span class="kn">import</span> <span class="n">ListAccessorsPaginator</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_accessors_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListAccessorsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;managedblockchain&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_accessors&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#listaccessorspaginator">ListAccessorsPaginator</a></li>
+</ul>
+<h2 id="literals">Literals</h2>
+<p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_managedblockchain.literals</span> <span class="kn">import</span> <span class="n">AccessorStatusType</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccessorStatusType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;AVAILABLE&quot;</span>
+</code></pre></div>
+<ul>
+<li><a href="literals/#accessorstatustype">AccessorStatusType</a></li>
+<li><a href="literals/#accessortypetype">AccessorTypeType</a></li>
 <li><a href="literals/#editiontype">EditionType</a></li>
 <li><a href="literals/#frameworktype">FrameworkType</a></li>
 <li><a href="literals/#invitationstatustype">InvitationStatusType</a></li>
+<li><a href="literals/#listaccessorspaginatorname">ListAccessorsPaginatorName</a></li>
 <li><a href="literals/#memberstatustype">MemberStatusType</a></li>
 <li><a href="literals/#networkstatustype">NetworkStatusType</a></li>
 <li><a href="literals/#nodestatustype">NodeStatusType</a></li>
@@ -37606,28 +37650,36 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#managedblockchainservicename">ManagedBlockchainServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
+<li><a href="literals/#paginatorname">PaginatorName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_managedblockchain.type_defs</span> <span class="kn">import</span> <span class="n">ApprovalThresholdPolicyTypeDef</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ApprovalThresholdPolicyTypeDef</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;ThresholdPercentage&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_managedblockchain.type_defs</span> <span class="kn">import</span> <span class="n">AccessorSummaryTypeDef</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccessorSummaryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#accessorsummarytypedef">AccessorSummaryTypeDef</a></li>
+<li><a href="type_defs/#accessortypedef">AccessorTypeDef</a></li>
 <li><a href="type_defs/#approvalthresholdpolicytypedef">ApprovalThresholdPolicyTypeDef</a></li>
+<li><a href="type_defs/#createaccessorinputrequesttypedef">CreateAccessorInputRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#deleteaccessorinputrequesttypedef">DeleteAccessorInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletememberinputrequesttypedef">DeleteMemberInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletenodeinputrequesttypedef">DeleteNodeInputRequestTypeDef</a></li>
+<li><a href="type_defs/#getaccessorinputrequesttypedef">GetAccessorInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getmemberinputrequesttypedef">GetMemberInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getnetworkinputrequesttypedef">GetNetworkInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getnodeinputrequesttypedef">GetNodeInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getproposalinputrequesttypedef">GetProposalInputRequestTypeDef</a></li>
 <li><a href="type_defs/#networksummarytypedef">NetworkSummaryTypeDef</a></li>
 <li><a href="type_defs/#inviteactiontypedef">InviteActionTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#listaccessorsinputrequesttypedef">ListAccessorsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listinvitationsinputrequesttypedef">ListInvitationsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listmembersinputrequesttypedef">ListMembersInputRequestTypeDef</a></li>
 <li><a href="type_defs/#membersummarytypedef">MemberSummaryTypeDef</a></li>
@@ -37653,13 +37705,17 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#voteonproposalinputrequesttypedef">VoteOnProposalInputRequestTypeDef</a></li>
 <li><a href="type_defs/#votingpolicytypedef">VotingPolicyTypeDef</a></li>
+<li><a href="type_defs/#createaccessoroutputtypedef">CreateAccessorOutputTypeDef</a></li>
 <li><a href="type_defs/#creatememberoutputtypedef">CreateMemberOutputTypeDef</a></li>
 <li><a href="type_defs/#createnetworkoutputtypedef">CreateNetworkOutputTypeDef</a></li>
 <li><a href="type_defs/#createnodeoutputtypedef">CreateNodeOutputTypeDef</a></li>
 <li><a href="type_defs/#createproposaloutputtypedef">CreateProposalOutputTypeDef</a></li>
+<li><a href="type_defs/#getaccessoroutputtypedef">GetAccessorOutputTypeDef</a></li>
+<li><a href="type_defs/#listaccessorsoutputtypedef">ListAccessorsOutputTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#invitationtypedef">InvitationTypeDef</a></li>
 <li><a href="type_defs/#listnetworksoutputtypedef">ListNetworksOutputTypeDef</a></li>
+<li><a href="type_defs/#listaccessorsinputlistaccessorspaginatetypedef">ListAccessorsInputListAccessorsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listmembersoutputtypedef">ListMembersOutputTypeDef</a></li>
 <li><a href="type_defs/#listnodesoutputtypedef">ListNodesOutputTypeDef</a></li>
 <li><a href="type_defs/#listproposalvotesoutputtypedef">ListProposalVotesOutputTypeDef</a></li>

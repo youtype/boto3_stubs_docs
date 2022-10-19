@@ -790,6 +790,20 @@ ListTaskTemplatesPaginatorName = Literal[
     "list_task_templates",
 ]
 ```
+## ListTrafficDistributionGroupsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import ListTrafficDistributionGroupsPaginatorName
+
+def get_value() -> ListTrafficDistributionGroupsPaginatorName:
+    return "list_traffic_distribution_groups"
+```
+
+```python title="Definition"
+ListTrafficDistributionGroupsPaginatorName = Literal[
+    "list_traffic_distribution_groups",
+]
+```
 ## ListUseCasesPaginatorName
 
 ```python title="Usage Example"
@@ -1410,6 +1424,25 @@ TaskTemplateStatusType = Literal[
     "INACTIVE",
 ]
 ```
+## TrafficDistributionGroupStatusType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import TrafficDistributionGroupStatusType
+
+def get_value() -> TrafficDistributionGroupStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+TrafficDistributionGroupStatusType = Literal[
+    "ACTIVE",
+    "CREATION_FAILED",
+    "CREATION_IN_PROGRESS",
+    "DELETION_FAILED",
+    "PENDING_DELETION",
+    "UPDATE_IN_PROGRESS",
+]
+```
 ## TrafficTypeType
 
 ```python title="Usage Example"
@@ -1929,6 +1962,7 @@ PaginatorName = Literal[
     "list_security_profile_permissions",
     "list_security_profiles",
     "list_task_templates",
+    "list_traffic_distribution_groups",
     "list_use_cases",
     "list_user_hierarchy_groups",
     "list_users",

@@ -7,6 +7,51 @@
     Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
     type annotations stubs module [mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
+## AccessorSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import AccessorSummaryTypeDef
+
+def get_value() -> AccessorSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class AccessorSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Type: NotRequired[AccessorTypeType],  # (1)
+    Status: NotRequired[AccessorStatusType],  # (2)
+    CreationDate: NotRequired[datetime],
+    Arn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AccessorTypeType](./literals.md#accessortypetype) 
+2. See [:material-code-brackets: AccessorStatusType](./literals.md#accessorstatustype) 
+## AccessorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import AccessorTypeDef
+
+def get_value() -> AccessorTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class AccessorTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Type: NotRequired[AccessorTypeType],  # (1)
+    BillingToken: NotRequired[str],
+    Status: NotRequired[AccessorStatusType],  # (2)
+    CreationDate: NotRequired[datetime],
+    Arn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AccessorTypeType](./literals.md#accessortypetype) 
+2. See [:material-code-brackets: AccessorStatusType](./literals.md#accessorstatustype) 
 ## ApprovalThresholdPolicyTypeDef
 
 ```python title="Usage Example"
@@ -26,6 +71,25 @@ class ApprovalThresholdPolicyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ThresholdComparatorType](./literals.md#thresholdcomparatortype) 
+## CreateAccessorInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import CreateAccessorInputRequestTypeDef
+
+def get_value() -> CreateAccessorInputRequestTypeDef:
+    return {
+        "ClientRequestToken": ...,
+        "AccessorType": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessorInputRequestTypeDef(TypedDict):
+    ClientRequestToken: str,
+    AccessorType: AccessorTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: AccessorTypeType](./literals.md#accessortypetype) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -48,6 +112,22 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
+```
+
+## DeleteAccessorInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import DeleteAccessorInputRequestTypeDef
+
+def get_value() -> DeleteAccessorInputRequestTypeDef:
+    return {
+        "AccessorId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAccessorInputRequestTypeDef(TypedDict):
+    AccessorId: str,
 ```
 
 ## DeleteMemberInputRequestTypeDef
@@ -85,6 +165,22 @@ class DeleteNodeInputRequestTypeDef(TypedDict):
     NetworkId: str,
     NodeId: str,
     MemberId: NotRequired[str],
+```
+
+## GetAccessorInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import GetAccessorInputRequestTypeDef
+
+def get_value() -> GetAccessorInputRequestTypeDef:
+    return {
+        "AccessorId": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessorInputRequestTypeDef(TypedDict):
+    AccessorId: str,
 ```
 
 ## GetMemberInputRequestTypeDef
@@ -197,6 +293,41 @@ def get_value() -> InviteActionTypeDef:
 ```python title="Definition"
 class InviteActionTypeDef(TypedDict):
     Principal: str,
+```
+
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## ListAccessorsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import ListAccessorsInputRequestTypeDef
+
+def get_value() -> ListAccessorsInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessorsInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
 ## ListInvitationsInputRequestTypeDef
@@ -667,6 +798,27 @@ class VotingPolicyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ApprovalThresholdPolicyTypeDef](./type_defs.md#approvalthresholdpolicytypedef) 
+## CreateAccessorOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import CreateAccessorOutputTypeDef
+
+def get_value() -> CreateAccessorOutputTypeDef:
+    return {
+        "AccessorId": ...,
+        "BillingToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAccessorOutputTypeDef(TypedDict):
+    AccessorId: str,
+    BillingToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMemberOutputTypeDef
 
 ```python title="Usage Example"
@@ -745,6 +897,48 @@ class CreateProposalOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccessorOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import GetAccessorOutputTypeDef
+
+def get_value() -> GetAccessorOutputTypeDef:
+    return {
+        "Accessor": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccessorOutputTypeDef(TypedDict):
+    Accessor: AccessorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccessorTypeDef](./type_defs.md#accessortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccessorsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import ListAccessorsOutputTypeDef
+
+def get_value() -> ListAccessorsOutputTypeDef:
+    return {
+        "Accessors": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessorsOutputTypeDef(TypedDict):
+    Accessors: List[AccessorSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccessorSummaryTypeDef](./type_defs.md#accessorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -809,6 +1003,23 @@ class ListNetworksOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkSummaryTypeDef](./type_defs.md#networksummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccessorsInputListAccessorsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_managedblockchain.type_defs import ListAccessorsInputListAccessorsPaginateTypeDef
+
+def get_value() -> ListAccessorsInputListAccessorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessorsInputListAccessorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMembersOutputTypeDef
 
 ```python title="Usage Example"

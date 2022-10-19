@@ -63,6 +63,23 @@ def get_client() -> ManagedBlockchainClient:
 ```
 
 
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("managedblockchain").get_paginator("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_managedblockchain.paginator import ListAccessorsPaginator
+
+def get_list_accessors_paginator() -> ListAccessorsPaginator:
+    return Session().client("managedblockchain").get_paginator("list_accessors"))
+```
+
+- [ListAccessorsPaginator](./paginators.md#listaccessorspaginator)
+
+
 
 
 
@@ -75,15 +92,18 @@ def get_client() -> ManagedBlockchainClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_managedblockchain.literals import EditionType
+from mypy_boto3_managedblockchain.literals import AccessorStatusType
 
-def get_value() -> EditionType:
-    return "STANDARD"
+def get_value() -> AccessorStatusType:
+    return "AVAILABLE"
 ```
 
+- [AccessorStatusType](./literals.md#accessorstatustype)
+- [AccessorTypeType](./literals.md#accessortypetype)
 - [EditionType](./literals.md#editiontype)
 - [FrameworkType](./literals.md#frameworktype)
 - [InvitationStatusType](./literals.md#invitationstatustype)
+- [ListAccessorsPaginatorName](./literals.md#listaccessorspaginatorname)
 - [MemberStatusType](./literals.md#memberstatustype)
 - [NetworkStatusType](./literals.md#networkstatustype)
 - [NodeStatusType](./literals.md#nodestatustype)
@@ -94,6 +114,7 @@ def get_value() -> EditionType:
 - [ManagedBlockchainServiceName](./literals.md#managedblockchainservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
 - [RegionName](./literals.md#regionname)
 
 
@@ -104,24 +125,31 @@ def get_value() -> EditionType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_managedblockchain.type_defs import ApprovalThresholdPolicyTypeDef
+from mypy_boto3_managedblockchain.type_defs import AccessorSummaryTypeDef
 
-def get_value() -> ApprovalThresholdPolicyTypeDef:
+def get_value() -> AccessorSummaryTypeDef:
     return {
-        "ThresholdPercentage": ...,
+        "Id": ...,
     }
 ```
 
+- [AccessorSummaryTypeDef](./type_defs.md#accessorsummarytypedef)
+- [AccessorTypeDef](./type_defs.md#accessortypedef)
 - [ApprovalThresholdPolicyTypeDef](./type_defs.md#approvalthresholdpolicytypedef)
+- [CreateAccessorInputRequestTypeDef](./type_defs.md#createaccessorinputrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [DeleteAccessorInputRequestTypeDef](./type_defs.md#deleteaccessorinputrequesttypedef)
 - [DeleteMemberInputRequestTypeDef](./type_defs.md#deletememberinputrequesttypedef)
 - [DeleteNodeInputRequestTypeDef](./type_defs.md#deletenodeinputrequesttypedef)
+- [GetAccessorInputRequestTypeDef](./type_defs.md#getaccessorinputrequesttypedef)
 - [GetMemberInputRequestTypeDef](./type_defs.md#getmemberinputrequesttypedef)
 - [GetNetworkInputRequestTypeDef](./type_defs.md#getnetworkinputrequesttypedef)
 - [GetNodeInputRequestTypeDef](./type_defs.md#getnodeinputrequesttypedef)
 - [GetProposalInputRequestTypeDef](./type_defs.md#getproposalinputrequesttypedef)
 - [NetworkSummaryTypeDef](./type_defs.md#networksummarytypedef)
 - [InviteActionTypeDef](./type_defs.md#inviteactiontypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ListAccessorsInputRequestTypeDef](./type_defs.md#listaccessorsinputrequesttypedef)
 - [ListInvitationsInputRequestTypeDef](./type_defs.md#listinvitationsinputrequesttypedef)
 - [ListMembersInputRequestTypeDef](./type_defs.md#listmembersinputrequesttypedef)
 - [MemberSummaryTypeDef](./type_defs.md#membersummarytypedef)
@@ -147,13 +175,17 @@ def get_value() -> ApprovalThresholdPolicyTypeDef:
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [VoteOnProposalInputRequestTypeDef](./type_defs.md#voteonproposalinputrequesttypedef)
 - [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)
+- [CreateAccessorOutputTypeDef](./type_defs.md#createaccessoroutputtypedef)
 - [CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef)
 - [CreateNetworkOutputTypeDef](./type_defs.md#createnetworkoutputtypedef)
 - [CreateNodeOutputTypeDef](./type_defs.md#createnodeoutputtypedef)
 - [CreateProposalOutputTypeDef](./type_defs.md#createproposaloutputtypedef)
+- [GetAccessorOutputTypeDef](./type_defs.md#getaccessoroutputtypedef)
+- [ListAccessorsOutputTypeDef](./type_defs.md#listaccessorsoutputtypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [InvitationTypeDef](./type_defs.md#invitationtypedef)
 - [ListNetworksOutputTypeDef](./type_defs.md#listnetworksoutputtypedef)
+- [ListAccessorsInputListAccessorsPaginateTypeDef](./type_defs.md#listaccessorsinputlistaccessorspaginatetypedef)
 - [ListMembersOutputTypeDef](./type_defs.md#listmembersoutputtypedef)
 - [ListNodesOutputTypeDef](./type_defs.md#listnodesoutputtypedef)
 - [ListProposalVotesOutputTypeDef](./type_defs.md#listproposalvotesoutputtypedef)

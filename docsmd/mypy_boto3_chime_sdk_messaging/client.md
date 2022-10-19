@@ -1410,7 +1410,7 @@ parent.redact_channel_message(**kwargs)
 
 ### search\_channels
 
-Allows an `AppInstanceUser` to search the channels that they belong to.
+Allows `ChimeBearer` to search channels by channel members.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").search_channels` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.search_channels)

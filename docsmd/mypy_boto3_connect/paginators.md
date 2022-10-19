@@ -1654,6 +1654,65 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTaskTemplatesRequestListTaskTemplatesPaginateTypeDef](./type_defs.md#listtasktemplatesrequestlisttasktemplatespaginatetypedef) 
+## ListTrafficDistributionGroupsPaginator
+
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_traffic_distribution_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListTrafficDistributionGroups)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListTrafficDistributionGroupsPaginator
+
+def get_list_traffic_distribution_groups_paginator() -> ListTrafficDistributionGroupsPaginator:
+    return Session().client("connect").get_paginator("list_traffic_distribution_groups")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListTrafficDistributionGroupsPaginator
+
+session = Session()
+
+client = Session().client("connect")  # (1)
+paginator: ListTrafficDistributionGroupsPaginator = client.get_paginator("list_traffic_distribution_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConnectClient](./client.md)
+2. paginator: [ListTrafficDistributionGroupsPaginator](./paginators.md#listtrafficdistributiongroupspaginator)
+3. item: [:material-code-braces: ListTrafficDistributionGroupsResponseTypeDef](./type_defs.md#listtrafficdistributiongroupsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListTrafficDistributionGroupsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTrafficDistributionGroupsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTrafficDistributionGroupsResponseTypeDef](./type_defs.md#listtrafficdistributiongroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTrafficDistributionGroupsRequestListTrafficDistributionGroupsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTrafficDistributionGroupsRequestListTrafficDistributionGroupsPaginateTypeDef](./type_defs.md#listtrafficdistributiongroupsrequestlisttrafficdistributiongroupspaginatetypedef) 
 ## ListUseCasesPaginator
 
 Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_use_cases")`.

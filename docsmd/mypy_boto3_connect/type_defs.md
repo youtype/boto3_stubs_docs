@@ -744,6 +744,27 @@ class CreateSecurityProfileRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
 ```
 
+## CreateTrafficDistributionGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import CreateTrafficDistributionGroupRequestRequestTypeDef
+
+def get_value() -> CreateTrafficDistributionGroupRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTrafficDistributionGroupRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InstanceId: str,
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
+
 ## CreateUseCaseRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1069,6 +1090,22 @@ def get_value() -> DeleteTaskTemplateRequestRequestTypeDef:
 class DeleteTaskTemplateRequestRequestTypeDef(TypedDict):
     InstanceId: str,
     TaskTemplateId: str,
+```
+
+## DeleteTrafficDistributionGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DeleteTrafficDistributionGroupRequestRequestTypeDef
+
+def get_value() -> DeleteTrafficDistributionGroupRequestRequestTypeDef:
+    return {
+        "TrafficDistributionGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTrafficDistributionGroupRequestRequestTypeDef(TypedDict):
+    TrafficDistributionGroupId: str,
 ```
 
 ## DeleteUseCaseRequestRequestTypeDef
@@ -1400,6 +1437,45 @@ class SecurityProfileTypeDef(TypedDict):
     Tags: NotRequired[Dict[str, str]],
 ```
 
+## DescribeTrafficDistributionGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DescribeTrafficDistributionGroupRequestRequestTypeDef
+
+def get_value() -> DescribeTrafficDistributionGroupRequestRequestTypeDef:
+    return {
+        "TrafficDistributionGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrafficDistributionGroupRequestRequestTypeDef(TypedDict):
+    TrafficDistributionGroupId: str,
+```
+
+## TrafficDistributionGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TrafficDistributionGroupTypeDef
+
+def get_value() -> TrafficDistributionGroupTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class TrafficDistributionGroupTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    InstanceArn: NotRequired[str],
+    Status: NotRequired[TrafficDistributionGroupStatusType],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: TrafficDistributionGroupStatusType](./literals.md#trafficdistributiongroupstatustype) 
 ## DescribeUserHierarchyGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1653,6 +1729,24 @@ class DisassociateSecurityKeyRequestRequestTypeDef(TypedDict):
     AssociationId: str,
 ```
 
+## DistributionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DistributionTypeDef
+
+def get_value() -> DistributionTypeDef:
+    return {
+        "Region": ...,
+        "Percentage": ...,
+    }
+```
+
+```python title="Definition"
+class DistributionTypeDef(TypedDict):
+    Region: str,
+    Percentage: int,
+```
+
 ## EmailReferenceTypeDef
 
 ```python title="Usage Example"
@@ -1776,6 +1870,22 @@ class GetTaskTemplateRequestRequestTypeDef(TypedDict):
     InstanceId: str,
     TaskTemplateId: str,
     SnapshotVersion: NotRequired[str],
+```
+
+## GetTrafficDistributionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetTrafficDistributionRequestRequestTypeDef
+
+def get_value() -> GetTrafficDistributionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetTrafficDistributionRequestRequestTypeDef(TypedDict):
+    Id: str,
 ```
 
 ## HierarchyGroupConditionTypeDef
@@ -2766,6 +2876,45 @@ class TaskTemplateMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
+## ListTrafficDistributionGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListTrafficDistributionGroupsRequestRequestTypeDef
+
+def get_value() -> ListTrafficDistributionGroupsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrafficDistributionGroupsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    InstanceId: NotRequired[str],
+```
+
+## TrafficDistributionGroupSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TrafficDistributionGroupSummaryTypeDef
+
+def get_value() -> TrafficDistributionGroupSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class TrafficDistributionGroupSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    InstanceArn: NotRequired[str],
+    Status: NotRequired[TrafficDistributionGroupStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: TrafficDistributionGroupStatusType](./literals.md#trafficdistributiongroupstatustype) 
 ## ListUseCasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3050,6 +3199,27 @@ def get_value() -> ReleasePhoneNumberRequestRequestTypeDef:
 ```python title="Definition"
 class ReleasePhoneNumberRequestRequestTypeDef(TypedDict):
     PhoneNumberId: str,
+    ClientToken: NotRequired[str],
+```
+
+## ReplicateInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ReplicateInstanceRequestRequestTypeDef
+
+def get_value() -> ReplicateInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ReplicaRegion": ...,
+        "ReplicaAlias": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicateInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ReplicaRegion: str,
+    ReplicaAlias: str,
     ClientToken: NotRequired[str],
 ```
 
@@ -4265,6 +4435,27 @@ class CreateTaskTemplateResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTrafficDistributionGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import CreateTrafficDistributionGroupResponseTypeDef
+
+def get_value() -> CreateTrafficDistributionGroupResponseTypeDef:
+    return {
+        "Id": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTrafficDistributionGroupResponseTypeDef(TypedDict):
+    Id: str,
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUseCaseResponseTypeDef
 
 ```python title="Usage Example"
@@ -4554,6 +4745,27 @@ def get_value() -> ListTagsForResourceResponseTypeDef:
 ```python title="Definition"
 class ListTagsForResourceResponseTypeDef(TypedDict):
     tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicateInstanceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ReplicateInstanceResponseTypeDef
+
+def get_value() -> ReplicateInstanceResponseTypeDef:
+    return {
+        "Id": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicateInstanceResponseTypeDef(TypedDict):
+    Id: str,
+    Arn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -5250,6 +5462,26 @@ class DescribeSecurityProfileResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SecurityProfileTypeDef](./type_defs.md#securityprofiletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTrafficDistributionGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DescribeTrafficDistributionGroupResponseTypeDef
+
+def get_value() -> DescribeTrafficDistributionGroupResponseTypeDef:
+    return {
+        "TrafficDistributionGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrafficDistributionGroupResponseTypeDef(TypedDict):
+    TrafficDistributionGroup: TrafficDistributionGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TrafficDistributionGroupTypeDef](./type_defs.md#trafficdistributiongrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVocabularyResponseTypeDef
 
 ```python title="Usage Example"
@@ -5312,6 +5544,23 @@ class RoutingProfileQueueConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef) 
+## TelephonyConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TelephonyConfigTypeDef
+
+def get_value() -> TelephonyConfigTypeDef:
+    return {
+        "Distributions": ...,
+    }
+```
+
+```python title="Definition"
+class TelephonyConfigTypeDef(TypedDict):
+    Distributions: List[DistributionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
 ## KinesisVideoStreamConfigTypeDef
 
 ```python title="Usage Example"
@@ -5889,6 +6138,24 @@ class ListTaskTemplatesRequestListTaskTemplatesPaginateTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTrafficDistributionGroupsRequestListTrafficDistributionGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListTrafficDistributionGroupsRequestListTrafficDistributionGroupsPaginateTypeDef
+
+def get_value() -> ListTrafficDistributionGroupsRequestListTrafficDistributionGroupsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrafficDistributionGroupsRequestListTrafficDistributionGroupsPaginateTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUseCasesRequestListUseCasesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -6586,6 +6853,28 @@ class ListTaskTemplatesResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TaskTemplateMetadataTypeDef](./type_defs.md#tasktemplatemetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTrafficDistributionGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListTrafficDistributionGroupsResponseTypeDef
+
+def get_value() -> ListTrafficDistributionGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "TrafficDistributionGroupSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrafficDistributionGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    TrafficDistributionGroupSummaryList: List[TrafficDistributionGroupSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TrafficDistributionGroupSummaryTypeDef](./type_defs.md#trafficdistributiongroupsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListUseCasesResponseTypeDef
 
@@ -7290,6 +7579,48 @@ class UpdateRoutingProfileQueuesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef) 
+## GetTrafficDistributionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetTrafficDistributionResponseTypeDef
+
+def get_value() -> GetTrafficDistributionResponseTypeDef:
+    return {
+        "TelephonyConfig": ...,
+        "Id": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTrafficDistributionResponseTypeDef(TypedDict):
+    TelephonyConfig: TelephonyConfigTypeDef,  # (1)
+    Id: str,
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TelephonyConfigTypeDef](./type_defs.md#telephonyconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTrafficDistributionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UpdateTrafficDistributionRequestRequestTypeDef
+
+def get_value() -> UpdateTrafficDistributionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTrafficDistributionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    TelephonyConfig: NotRequired[TelephonyConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TelephonyConfigTypeDef](./type_defs.md#telephonyconfigtypedef) 
 ## InstanceStorageConfigTypeDef
 
 ```python title="Usage Example"

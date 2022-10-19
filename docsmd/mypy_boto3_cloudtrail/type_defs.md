@@ -809,6 +809,7 @@ def get_value() -> StartQueryRequestRequestTypeDef:
 ```python title="Definition"
 class StartQueryRequestRequestTypeDef(TypedDict):
     QueryStatement: str,
+    DeliveryS3Uri: NotRequired[str],
 ```
 
 ## StopImportRequestRequestTypeDef
@@ -1205,6 +1206,8 @@ def get_value() -> DescribeQueryResponseTypeDef:
         "QueryStatus": ...,
         "QueryStatistics": ...,
         "ErrorMessage": ...,
+        "DeliveryS3Uri": ...,
+        "DeliveryStatus": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1216,12 +1219,15 @@ class DescribeQueryResponseTypeDef(TypedDict):
     QueryStatus: QueryStatusType,  # (1)
     QueryStatistics: QueryStatisticsForDescribeQueryTypeDef,  # (2)
     ErrorMessage: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    DeliveryS3Uri: str,
+    DeliveryStatus: DeliveryStatusType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
 2. See [:material-code-braces: QueryStatisticsForDescribeQueryTypeDef](./type_defs.md#querystatisticsfordescribequerytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-brackets: DeliveryStatusType](./literals.md#deliverystatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTrailsResponseTypeDef
 
 ```python title="Usage Example"

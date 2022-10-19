@@ -50,6 +50,7 @@ except (
     client.ResourceConflictException,
     client.ResourceInUseException,
     client.ResourceNotFoundException,
+    client.ResourceNotReadyException,
     client.ServiceQuotaExceededException,
     client.ThrottlingException,
     client.UserNotFoundException,
@@ -411,7 +412,8 @@ def can_paginate(
 
 ### claim\_phone\_number
 
-Claims an available phone number to your Amazon Connect instance.
+Claims an available phone number to your Amazon Connect instance or traffic
+distribution group.
 
 Type annotations and code completion for `#!python boto3.client("connect").claim_phone_number` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.claim_phone_number)
@@ -877,6 +879,41 @@ parent.create_task_template(**kwargs)
 
 1. See [:material-code-braces: CreateTaskTemplateRequestRequestTypeDef](./type_defs.md#createtasktemplaterequestrequesttypedef) 
 
+### create\_traffic\_distribution\_group
+
+Creates a traffic distribution group given an Amazon Connect instance that has
+been replicated.
+
+Type annotations and code completion for `#!python boto3.client("connect").create_traffic_distribution_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_traffic_distribution_group)
+
+```python title="Method definition"
+def create_traffic_distribution_group(
+    self,
+    *,
+    Name: str,
+    InstanceId: str,
+    Description: str = ...,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateTrafficDistributionGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateTrafficDistributionGroupResponseTypeDef](./type_defs.md#createtrafficdistributiongroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateTrafficDistributionGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InstanceId": ...,
+}
+
+parent.create_traffic_distribution_group(**kwargs)
+```
+
+1. See [:material-code-braces: CreateTrafficDistributionGroupRequestRequestTypeDef](./type_defs.md#createtrafficdistributiongrouprequestrequesttypedef) 
+
 ### create\_use\_case
 
 Creates a use case for an integration association.
@@ -1272,6 +1309,34 @@ parent.delete_task_template(**kwargs)
 
 1. See [:material-code-braces: DeleteTaskTemplateRequestRequestTypeDef](./type_defs.md#deletetasktemplaterequestrequesttypedef) 
 
+### delete\_traffic\_distribution\_group
+
+Deletes a traffic distribution group.
+
+Type annotations and code completion for `#!python boto3.client("connect").delete_traffic_distribution_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_traffic_distribution_group)
+
+```python title="Method definition"
+def delete_traffic_distribution_group(
+    self,
+    *,
+    TrafficDistributionGroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteTrafficDistributionGroupRequestRequestTypeDef = {  # (1)
+    "TrafficDistributionGroupId": ...,
+}
+
+parent.delete_traffic_distribution_group(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteTrafficDistributionGroupRequestRequestTypeDef](./type_defs.md#deletetrafficdistributiongrouprequestrequesttypedef) 
+
 ### delete\_use\_case
 
 Deletes a use case from an integration association.
@@ -1651,8 +1716,7 @@ parent.describe_instance_storage_config(**kwargs)
 ### describe\_phone\_number
 
 Gets details and status of a phone number that’s claimed to your Amazon Connect
-instance See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/connect-2017-08-08/DescribePhoneNumber).
+instance or traffic distribution group.
 
 Type annotations and code completion for `#!python boto3.client("connect").describe_phone_number` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_phone_number)
@@ -1802,6 +1866,35 @@ parent.describe_security_profile(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeSecurityProfileRequestRequestTypeDef](./type_defs.md#describesecurityprofilerequestrequesttypedef) 
+
+### describe\_traffic\_distribution\_group
+
+Gets details and status of a traffic distribution group.
+
+Type annotations and code completion for `#!python boto3.client("connect").describe_traffic_distribution_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_traffic_distribution_group)
+
+```python title="Method definition"
+def describe_traffic_distribution_group(
+    self,
+    *,
+    TrafficDistributionGroupId: str,
+) -> DescribeTrafficDistributionGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeTrafficDistributionGroupResponseTypeDef](./type_defs.md#describetrafficdistributiongroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTrafficDistributionGroupRequestRequestTypeDef = {  # (1)
+    "TrafficDistributionGroupId": ...,
+}
+
+parent.describe_traffic_distribution_group(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTrafficDistributionGroupRequestRequestTypeDef](./type_defs.md#describetrafficdistributiongrouprequestrequesttypedef) 
 
 ### describe\_user
 
@@ -2090,7 +2183,7 @@ parent.disassociate_lex_bot(**kwargs)
 ### disassociate\_phone\_number\_contact\_flow
 
 Removes the flow association from a phone number claimed to your Amazon Connect
-instance, if a flow association exists.
+instance.
 
 Type annotations and code completion for `#!python boto3.client("connect").disassociate_phone_number_contact_flow` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_phone_number_contact_flow)
@@ -2444,6 +2537,36 @@ parent.get_task_template(**kwargs)
 ```
 
 1. See [:material-code-braces: GetTaskTemplateRequestRequestTypeDef](./type_defs.md#gettasktemplaterequestrequesttypedef) 
+
+### get\_traffic\_distribution
+
+Retrieves the current traffic distribution for a given traffic distribution
+group.
+
+Type annotations and code completion for `#!python boto3.client("connect").get_traffic_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_traffic_distribution)
+
+```python title="Method definition"
+def get_traffic_distribution(
+    self,
+    *,
+    Id: str,
+) -> GetTrafficDistributionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetTrafficDistributionResponseTypeDef](./type_defs.md#gettrafficdistributionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTrafficDistributionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.get_traffic_distribution(**kwargs)
+```
+
+1. See [:material-code-braces: GetTrafficDistributionRequestRequestTypeDef](./type_defs.md#gettrafficdistributionrequestrequesttypedef) 
 
 ### list\_agent\_statuses
 
@@ -2939,7 +3062,8 @@ parent.list_phone_numbers(**kwargs)
 
 ### list\_phone\_numbers\_v2
 
-Lists phone numbers claimed to your Amazon Connect instance.
+Lists phone numbers claimed to your Amazon Connect instance or traffic
+distribution group.
 
 Type annotations and code completion for `#!python boto3.client("connect").list_phone_numbers_v2` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers_v2)
@@ -3329,6 +3453,37 @@ parent.list_task_templates(**kwargs)
 
 1. See [:material-code-braces: ListTaskTemplatesRequestRequestTypeDef](./type_defs.md#listtasktemplatesrequestrequesttypedef) 
 
+### list\_traffic\_distribution\_groups
+
+Lists traffic distribution groups.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_traffic_distribution_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_traffic_distribution_groups)
+
+```python title="Method definition"
+def list_traffic_distribution_groups(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    InstanceId: str = ...,
+) -> ListTrafficDistributionGroupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTrafficDistributionGroupsResponseTypeDef](./type_defs.md#listtrafficdistributiongroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTrafficDistributionGroupsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_traffic_distribution_groups(**kwargs)
+```
+
+1. See [:material-code-braces: ListTrafficDistributionGroupsRequestRequestTypeDef](./type_defs.md#listtrafficdistributiongroupsrequestrequesttypedef) 
+
 ### list\_use\_cases
 
 Lists the use cases for the integration association.
@@ -3460,7 +3615,8 @@ parent.put_user_status(**kwargs)
 
 ### release\_phone\_number
 
-Releases a phone number previously claimed to an Amazon Connect instance.
+Releases a phone number previously claimed to an Amazon Connect instance or
+traffic distribution group.
 
 Type annotations and code completion for `#!python boto3.client("connect").release_phone_number` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.release_phone_number)
@@ -3487,6 +3643,41 @@ parent.release_phone_number(**kwargs)
 ```
 
 1. See [:material-code-braces: ReleasePhoneNumberRequestRequestTypeDef](./type_defs.md#releasephonenumberrequestrequesttypedef) 
+
+### replicate\_instance
+
+Replicates an Amazon Connect instance in the specified Amazon Web Services
+Region.
+
+Type annotations and code completion for `#!python boto3.client("connect").replicate_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.replicate_instance)
+
+```python title="Method definition"
+def replicate_instance(
+    self,
+    *,
+    InstanceId: str,
+    ReplicaRegion: str,
+    ReplicaAlias: str,
+    ClientToken: str = ...,
+) -> ReplicateInstanceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ReplicateInstanceResponseTypeDef](./type_defs.md#replicateinstanceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ReplicateInstanceRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ReplicaRegion": ...,
+    "ReplicaAlias": ...,
+}
+
+parent.replicate_instance(**kwargs)
+```
+
+1. See [:material-code-braces: ReplicateInstanceRequestRequestTypeDef](./type_defs.md#replicateinstancerequestrequesttypedef) 
 
 ### resume\_contact\_recording
 
@@ -3524,7 +3715,7 @@ parent.resume_contact_recording(**kwargs)
 ### search\_available\_phone\_numbers
 
 Searches for available phone numbers that you can claim to your Amazon Connect
-instance.
+instance or traffic distribution group.
 
 Type annotations and code completion for `#!python boto3.client("connect").search_available_phone_numbers` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_available_phone_numbers)
@@ -4569,8 +4760,9 @@ parent.update_instance_storage_config(**kwargs)
 
 ### update\_phone\_number
 
-Updates your claimed phone number from its current Amazon Connect instance to
-another Amazon Connect instance in the same Region.
+Updates your claimed phone number from its current Amazon Connect instance or
+traffic distribution group to another Amazon Connect instance or traffic
+distribution group in the same Amazon Web Services Region.
 
 Type annotations and code completion for `#!python boto3.client("connect").update_phone_number` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_phone_number)
@@ -5044,6 +5236,36 @@ parent.update_task_template(**kwargs)
 
 1. See [:material-code-braces: UpdateTaskTemplateRequestRequestTypeDef](./type_defs.md#updatetasktemplaterequestrequesttypedef) 
 
+### update\_traffic\_distribution
+
+Updates the traffic distribution for a given traffic distribution group.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_traffic_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_traffic_distribution)
+
+```python title="Method definition"
+def update_traffic_distribution(
+    self,
+    *,
+    Id: str,
+    TelephonyConfig: TelephonyConfigTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TelephonyConfigTypeDef](./type_defs.md#telephonyconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateTrafficDistributionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.update_traffic_distribution(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateTrafficDistributionRequestRequestTypeDef](./type_defs.md#updatetrafficdistributionrequestrequesttypedef) 
+
 ### update\_user\_hierarchy
 
 Assigns the specified hierarchy group to the specified user.
@@ -5309,6 +5531,7 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_security_profile_permissions")` -> [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
 - `client.get_paginator("list_security_profiles")` -> [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
 - `client.get_paginator("list_task_templates")` -> [ListTaskTemplatesPaginator](./paginators.md#listtasktemplatespaginator)
+- `client.get_paginator("list_traffic_distribution_groups")` -> [ListTrafficDistributionGroupsPaginator](./paginators.md#listtrafficdistributiongroupspaginator)
 - `client.get_paginator("list_use_cases")` -> [ListUseCasesPaginator](./paginators.md#listusecasespaginator)
 - `client.get_paginator("list_user_hierarchy_groups")` -> [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)

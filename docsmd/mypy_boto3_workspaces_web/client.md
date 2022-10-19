@@ -149,6 +149,37 @@ parent.associate_trust_store(**kwargs)
 
 1. See [:material-code-braces: AssociateTrustStoreRequestRequestTypeDef](./type_defs.md#associatetruststorerequestrequesttypedef) 
 
+### associate\_user\_access\_logging\_settings
+
+Associates a user access logging settings resource with a web portal.
+
+Type annotations and code completion for `#!python boto3.client("workspaces-web").associate_user_access_logging_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_user_access_logging_settings)
+
+```python title="Method definition"
+def associate_user_access_logging_settings(
+    self,
+    *,
+    portalArn: str,
+    userAccessLoggingSettingsArn: str,
+) -> AssociateUserAccessLoggingSettingsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AssociateUserAccessLoggingSettingsResponseTypeDef](./type_defs.md#associateuseraccessloggingsettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateUserAccessLoggingSettingsRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+    "userAccessLoggingSettingsArn": ...,
+}
+
+parent.associate_user_access_logging_settings(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateUserAccessLoggingSettingsRequestRequestTypeDef](./type_defs.md#associateuseraccessloggingsettingsrequestrequesttypedef) 
+
 ### associate\_user\_settings
 
 Associates a user settings resource with a web portal.
@@ -384,6 +415,39 @@ parent.create_trust_store(**kwargs)
 
 1. See [:material-code-braces: CreateTrustStoreRequestRequestTypeDef](./type_defs.md#createtruststorerequestrequesttypedef) 
 
+### create\_user\_access\_logging\_settings
+
+Creates a user access logging settings resource that can be associated with a
+web portal.
+
+Type annotations and code completion for `#!python boto3.client("workspaces-web").create_user_access_logging_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_user_access_logging_settings)
+
+```python title="Method definition"
+def create_user_access_logging_settings(
+    self,
+    *,
+    kinesisStreamArn: str,
+    clientToken: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateUserAccessLoggingSettingsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateUserAccessLoggingSettingsResponseTypeDef](./type_defs.md#createuseraccessloggingsettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateUserAccessLoggingSettingsRequestRequestTypeDef = {  # (1)
+    "kinesisStreamArn": ...,
+}
+
+parent.create_user_access_logging_settings(**kwargs)
+```
+
+1. See [:material-code-braces: CreateUserAccessLoggingSettingsRequestRequestTypeDef](./type_defs.md#createuseraccessloggingsettingsrequestrequesttypedef) 
+
 ### create\_user\_settings
 
 Creates a user settings resource that can be associated with a web portal.
@@ -571,6 +635,34 @@ parent.delete_trust_store(**kwargs)
 
 1. See [:material-code-braces: DeleteTrustStoreRequestRequestTypeDef](./type_defs.md#deletetruststorerequestrequesttypedef) 
 
+### delete\_user\_access\_logging\_settings
+
+Deletes user access logging settings.
+
+Type annotations and code completion for `#!python boto3.client("workspaces-web").delete_user_access_logging_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_user_access_logging_settings)
+
+```python title="Method definition"
+def delete_user_access_logging_settings(
+    self,
+    *,
+    userAccessLoggingSettingsArn: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteUserAccessLoggingSettingsRequestRequestTypeDef = {  # (1)
+    "userAccessLoggingSettingsArn": ...,
+}
+
+parent.delete_user_access_logging_settings(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteUserAccessLoggingSettingsRequestRequestTypeDef](./type_defs.md#deleteuseraccessloggingsettingsrequestrequesttypedef) 
+
 ### delete\_user\_settings
 
 Deletes user settings.
@@ -682,6 +774,34 @@ parent.disassociate_trust_store(**kwargs)
 ```
 
 1. See [:material-code-braces: DisassociateTrustStoreRequestRequestTypeDef](./type_defs.md#disassociatetruststorerequestrequesttypedef) 
+
+### disassociate\_user\_access\_logging\_settings
+
+Disassociates user access logging settings from a web portal.
+
+Type annotations and code completion for `#!python boto3.client("workspaces-web").disassociate_user_access_logging_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_user_access_logging_settings)
+
+```python title="Method definition"
+def disassociate_user_access_logging_settings(
+    self,
+    *,
+    portalArn: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateUserAccessLoggingSettingsRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
+
+parent.disassociate_user_access_logging_settings(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateUserAccessLoggingSettingsRequestRequestTypeDef](./type_defs.md#disassociateuseraccessloggingsettingsrequestrequesttypedef) 
 
 ### disassociate\_user\_settings
 
@@ -935,6 +1055,35 @@ parent.get_trust_store_certificate(**kwargs)
 
 1. See [:material-code-braces: GetTrustStoreCertificateRequestRequestTypeDef](./type_defs.md#gettruststorecertificaterequestrequesttypedef) 
 
+### get\_user\_access\_logging\_settings
+
+Gets user access logging settings.
+
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_user_access_logging_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_user_access_logging_settings)
+
+```python title="Method definition"
+def get_user_access_logging_settings(
+    self,
+    *,
+    userAccessLoggingSettingsArn: str,
+) -> GetUserAccessLoggingSettingsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetUserAccessLoggingSettingsResponseTypeDef](./type_defs.md#getuseraccessloggingsettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetUserAccessLoggingSettingsRequestRequestTypeDef = {  # (1)
+    "userAccessLoggingSettingsArn": ...,
+}
+
+parent.get_user_access_logging_settings(**kwargs)
+```
+
+1. See [:material-code-braces: GetUserAccessLoggingSettingsRequestRequestTypeDef](./type_defs.md#getuseraccessloggingsettingsrequestrequesttypedef) 
+
 ### get\_user\_settings
 
 Gets user settings.
@@ -1174,6 +1323,36 @@ parent.list_trust_stores(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTrustStoresRequestRequestTypeDef](./type_defs.md#listtruststoresrequestrequesttypedef) 
+
+### list\_user\_access\_logging\_settings
+
+Retrieves a list of user access logging settings.
+
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_user_access_logging_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_user_access_logging_settings)
+
+```python title="Method definition"
+def list_user_access_logging_settings(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListUserAccessLoggingSettingsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListUserAccessLoggingSettingsResponseTypeDef](./type_defs.md#listuseraccessloggingsettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUserAccessLoggingSettingsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
+
+parent.list_user_access_logging_settings(**kwargs)
+```
+
+1. See [:material-code-braces: ListUserAccessLoggingSettingsRequestRequestTypeDef](./type_defs.md#listuseraccessloggingsettingsrequestrequesttypedef) 
 
 ### list\_user\_settings
 
@@ -1426,6 +1605,37 @@ parent.update_trust_store(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateTrustStoreRequestRequestTypeDef](./type_defs.md#updatetruststorerequestrequesttypedef) 
+
+### update\_user\_access\_logging\_settings
+
+Updates the user access logging settings.
+
+Type annotations and code completion for `#!python boto3.client("workspaces-web").update_user_access_logging_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_user_access_logging_settings)
+
+```python title="Method definition"
+def update_user_access_logging_settings(
+    self,
+    *,
+    userAccessLoggingSettingsArn: str,
+    clientToken: str = ...,
+    kinesisStreamArn: str = ...,
+) -> UpdateUserAccessLoggingSettingsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateUserAccessLoggingSettingsResponseTypeDef](./type_defs.md#updateuseraccessloggingsettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateUserAccessLoggingSettingsRequestRequestTypeDef = {  # (1)
+    "userAccessLoggingSettingsArn": ...,
+}
+
+parent.update_user_access_logging_settings(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateUserAccessLoggingSettingsRequestRequestTypeDef](./type_defs.md#updateuseraccessloggingsettingsrequestrequesttypedef) 
 
 ### update\_user\_settings
 

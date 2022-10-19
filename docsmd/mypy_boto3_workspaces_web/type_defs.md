@@ -85,6 +85,24 @@ class AssociateTrustStoreRequestRequestTypeDef(TypedDict):
     trustStoreArn: str,
 ```
 
+## AssociateUserAccessLoggingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import AssociateUserAccessLoggingSettingsRequestRequestTypeDef
+
+def get_value() -> AssociateUserAccessLoggingSettingsRequestRequestTypeDef:
+    return {
+        "portalArn": ...,
+        "userAccessLoggingSettingsArn": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateUserAccessLoggingSettingsRequestRequestTypeDef(TypedDict):
+    portalArn: str,
+    userAccessLoggingSettingsArn: str,
+```
+
 ## AssociateUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -300,6 +318,22 @@ class DeleteTrustStoreRequestRequestTypeDef(TypedDict):
     trustStoreArn: str,
 ```
 
+## DeleteUserAccessLoggingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import DeleteUserAccessLoggingSettingsRequestRequestTypeDef
+
+def get_value() -> DeleteUserAccessLoggingSettingsRequestRequestTypeDef:
+    return {
+        "userAccessLoggingSettingsArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteUserAccessLoggingSettingsRequestRequestTypeDef(TypedDict):
+    userAccessLoggingSettingsArn: str,
+```
+
 ## DeleteUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -361,6 +395,22 @@ def get_value() -> DisassociateTrustStoreRequestRequestTypeDef:
 
 ```python title="Definition"
 class DisassociateTrustStoreRequestRequestTypeDef(TypedDict):
+    portalArn: str,
+```
+
+## DisassociateUserAccessLoggingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import DisassociateUserAccessLoggingSettingsRequestRequestTypeDef
+
+def get_value() -> DisassociateUserAccessLoggingSettingsRequestRequestTypeDef:
+    return {
+        "portalArn": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateUserAccessLoggingSettingsRequestRequestTypeDef(TypedDict):
     portalArn: str,
 ```
 
@@ -508,6 +558,7 @@ class PortalTypeDef(TypedDict):
     rendererType: NotRequired[RendererTypeType],  # (3)
     statusReason: NotRequired[str],
     trustStoreArn: NotRequired[str],
+    userAccessLoggingSettingsArn: NotRequired[str],
     userSettingsArn: NotRequired[str],
 ```
 
@@ -579,6 +630,40 @@ def get_value() -> TrustStoreTypeDef:
 class TrustStoreTypeDef(TypedDict):
     associatedPortalArns: NotRequired[List[str]],
     trustStoreArn: NotRequired[str],
+```
+
+## GetUserAccessLoggingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import GetUserAccessLoggingSettingsRequestRequestTypeDef
+
+def get_value() -> GetUserAccessLoggingSettingsRequestRequestTypeDef:
+    return {
+        "userAccessLoggingSettingsArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetUserAccessLoggingSettingsRequestRequestTypeDef(TypedDict):
+    userAccessLoggingSettingsArn: str,
+```
+
+## UserAccessLoggingSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UserAccessLoggingSettingsTypeDef
+
+def get_value() -> UserAccessLoggingSettingsTypeDef:
+    return {
+        "userAccessLoggingSettingsArn": ...,
+    }
+```
+
+```python title="Definition"
+class UserAccessLoggingSettingsTypeDef(TypedDict):
+    userAccessLoggingSettingsArn: str,
+    associatedPortalArns: NotRequired[List[str]],
+    kinesisStreamArn: NotRequired[str],
 ```
 
 ## GetUserSettingsRequestRequestTypeDef
@@ -754,6 +839,7 @@ class PortalSummaryTypeDef(TypedDict):
     portalStatus: NotRequired[PortalStatusType],  # (2)
     rendererType: NotRequired[RendererTypeType],  # (3)
     trustStoreArn: NotRequired[str],
+    userAccessLoggingSettingsArn: NotRequired[str],
     userSettingsArn: NotRequired[str],
 ```
 
@@ -825,6 +911,40 @@ def get_value() -> TrustStoreSummaryTypeDef:
 ```python title="Definition"
 class TrustStoreSummaryTypeDef(TypedDict):
     trustStoreArn: NotRequired[str],
+```
+
+## ListUserAccessLoggingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListUserAccessLoggingSettingsRequestRequestTypeDef
+
+def get_value() -> ListUserAccessLoggingSettingsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserAccessLoggingSettingsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## UserAccessLoggingSettingsSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UserAccessLoggingSettingsSummaryTypeDef
+
+def get_value() -> UserAccessLoggingSettingsSummaryTypeDef:
+    return {
+        "kinesisStreamArn": ...,
+    }
+```
+
+```python title="Definition"
+class UserAccessLoggingSettingsSummaryTypeDef(TypedDict):
+    kinesisStreamArn: NotRequired[str],
+    userAccessLoggingSettingsArn: NotRequired[str],
 ```
 
 ## ListUserSettingsRequestRequestTypeDef
@@ -985,6 +1105,24 @@ class UpdateTrustStoreRequestRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
+## UpdateUserAccessLoggingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdateUserAccessLoggingSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateUserAccessLoggingSettingsRequestRequestTypeDef:
+    return {
+        "userAccessLoggingSettingsArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserAccessLoggingSettingsRequestRequestTypeDef(TypedDict):
+    userAccessLoggingSettingsArn: str,
+    clientToken: NotRequired[str],
+    kinesisStreamArn: NotRequired[str],
+```
+
 ## UpdateUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1073,6 +1211,27 @@ def get_value() -> AssociateTrustStoreResponseTypeDef:
 class AssociateTrustStoreResponseTypeDef(TypedDict):
     portalArn: str,
     trustStoreArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateUserAccessLoggingSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import AssociateUserAccessLoggingSettingsResponseTypeDef
+
+def get_value() -> AssociateUserAccessLoggingSettingsResponseTypeDef:
+    return {
+        "portalArn": ...,
+        "userAccessLoggingSettingsArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateUserAccessLoggingSettingsResponseTypeDef(TypedDict):
+    portalArn: str,
+    userAccessLoggingSettingsArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1191,6 +1350,25 @@ def get_value() -> CreateTrustStoreResponseTypeDef:
 ```python title="Definition"
 class CreateTrustStoreResponseTypeDef(TypedDict):
     trustStoreArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUserAccessLoggingSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateUserAccessLoggingSettingsResponseTypeDef
+
+def get_value() -> CreateUserAccessLoggingSettingsResponseTypeDef:
+    return {
+        "userAccessLoggingSettingsArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserAccessLoggingSettingsResponseTypeDef(TypedDict):
+    userAccessLoggingSettingsArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1446,6 +1624,25 @@ class CreateTrustStoreRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateUserAccessLoggingSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import CreateUserAccessLoggingSettingsRequestRequestTypeDef
+
+def get_value() -> CreateUserAccessLoggingSettingsRequestRequestTypeDef:
+    return {
+        "kinesisStreamArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserAccessLoggingSettingsRequestRequestTypeDef(TypedDict):
+    kinesisStreamArn: str,
+    clientToken: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUserSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1660,6 +1857,46 @@ class GetTrustStoreResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TrustStoreTypeDef](./type_defs.md#truststoretypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetUserAccessLoggingSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import GetUserAccessLoggingSettingsResponseTypeDef
+
+def get_value() -> GetUserAccessLoggingSettingsResponseTypeDef:
+    return {
+        "userAccessLoggingSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetUserAccessLoggingSettingsResponseTypeDef(TypedDict):
+    userAccessLoggingSettings: UserAccessLoggingSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserAccessLoggingSettingsTypeDef](./type_defs.md#useraccessloggingsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateUserAccessLoggingSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import UpdateUserAccessLoggingSettingsResponseTypeDef
+
+def get_value() -> UpdateUserAccessLoggingSettingsResponseTypeDef:
+    return {
+        "userAccessLoggingSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateUserAccessLoggingSettingsResponseTypeDef(TypedDict):
+    userAccessLoggingSettings: UserAccessLoggingSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserAccessLoggingSettingsTypeDef](./type_defs.md#useraccessloggingsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserSettingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1787,6 +2024,28 @@ class ListTrustStoresResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TrustStoreSummaryTypeDef](./type_defs.md#truststoresummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserAccessLoggingSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.type_defs import ListUserAccessLoggingSettingsResponseTypeDef
+
+def get_value() -> ListUserAccessLoggingSettingsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "userAccessLoggingSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserAccessLoggingSettingsResponseTypeDef(TypedDict):
+    nextToken: str,
+    userAccessLoggingSettings: List[UserAccessLoggingSettingsSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UserAccessLoggingSettingsSummaryTypeDef](./type_defs.md#useraccessloggingsettingssummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListUserSettingsResponseTypeDef
 

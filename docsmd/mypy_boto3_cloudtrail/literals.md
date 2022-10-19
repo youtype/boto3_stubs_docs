@@ -7,6 +7,28 @@
     Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
     type annotations stubs module [mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
+## DeliveryStatusType
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.literals import DeliveryStatusType
+
+def get_value() -> DeliveryStatusType:
+    return "ACCESS_DENIED"
+```
+
+```python title="Definition"
+DeliveryStatusType = Literal[
+    "ACCESS_DENIED",
+    "ACCESS_DENIED_SIGNING_FILE",
+    "CANCELLED",
+    "FAILED",
+    "FAILED_SIGNING_FILE",
+    "PENDING",
+    "RESOURCE_NOT_FOUND",
+    "SUCCESS",
+    "UNKNOWN",
+]
+```
 ## DestinationTypeType
 
 ```python title="Usage Example"

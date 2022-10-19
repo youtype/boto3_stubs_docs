@@ -75,12 +75,13 @@ def get_client() -> SupportAppClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_support_app.literals import NotificationSeverityLevelType
+from mypy_boto3_support_app.literals import AccountTypeType
 
-def get_value() -> NotificationSeverityLevelType:
-    return "all"
+def get_value() -> AccountTypeType:
+    return "management"
 ```
 
+- [AccountTypeType](./literals.md#accounttypetype)
 - [NotificationSeverityLevelType](./literals.md#notificationseverityleveltype)
 - [SupportAppServiceName](./literals.md#supportappservicename)
 - [ServiceName](./literals.md#servicename)
@@ -115,8 +116,10 @@ def get_value() -> CreateSlackChannelConfigurationRequestRequestTypeDef:
 - [ListSlackWorkspaceConfigurationsRequestRequestTypeDef](./type_defs.md#listslackworkspaceconfigurationsrequestrequesttypedef)
 - [SlackWorkspaceConfigurationTypeDef](./type_defs.md#slackworkspaceconfigurationtypedef)
 - [PutAccountAliasRequestRequestTypeDef](./type_defs.md#putaccountaliasrequestrequesttypedef)
+- [RegisterSlackWorkspaceForOrganizationRequestRequestTypeDef](./type_defs.md#registerslackworkspacefororganizationrequestrequesttypedef)
 - [UpdateSlackChannelConfigurationRequestRequestTypeDef](./type_defs.md#updateslackchannelconfigurationrequestrequesttypedef)
 - [GetAccountAliasResultTypeDef](./type_defs.md#getaccountaliasresulttypedef)
+- [RegisterSlackWorkspaceForOrganizationResultTypeDef](./type_defs.md#registerslackworkspacefororganizationresulttypedef)
 - [UpdateSlackChannelConfigurationResultTypeDef](./type_defs.md#updateslackchannelconfigurationresulttypedef)
 - [ListSlackChannelConfigurationsResultTypeDef](./type_defs.md#listslackchannelconfigurationsresulttypedef)
 - [ListSlackWorkspaceConfigurationsResultTypeDef](./type_defs.md#listslackworkspaceconfigurationsresulttypedef)

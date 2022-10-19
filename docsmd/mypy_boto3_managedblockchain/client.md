@@ -89,6 +89,38 @@ def close(
 ```
 
 
+### create\_accessor
+
+.
+
+Type annotations and code completion for `#!python boto3.client("managedblockchain").create_accessor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_accessor)
+
+```python title="Method definition"
+def create_accessor(
+    self,
+    *,
+    ClientRequestToken: str,
+    AccessorType: AccessorTypeType,  # (1)
+) -> CreateAccessorOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: AccessorTypeType](./literals.md#accessortypetype) 
+2. See [:material-code-braces: CreateAccessorOutputTypeDef](./type_defs.md#createaccessoroutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateAccessorInputRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+    "AccessorType": ...,
+}
+
+parent.create_accessor(**kwargs)
+```
+
+1. See [:material-code-braces: CreateAccessorInputRequestTypeDef](./type_defs.md#createaccessorinputrequesttypedef) 
+
 ### create\_member
 
 Creates a member within a Managed Blockchain network.
@@ -246,6 +278,34 @@ parent.create_proposal(**kwargs)
 
 1. See [:material-code-braces: CreateProposalInputRequestTypeDef](./type_defs.md#createproposalinputrequesttypedef) 
 
+### delete\_accessor
+
+.
+
+Type annotations and code completion for `#!python boto3.client("managedblockchain").delete_accessor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_accessor)
+
+```python title="Method definition"
+def delete_accessor(
+    self,
+    *,
+    AccessorId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessorInputRequestTypeDef = {  # (1)
+    "AccessorId": ...,
+}
+
+parent.delete_accessor(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteAccessorInputRequestTypeDef](./type_defs.md#deleteaccessorinputrequesttypedef) 
+
 ### delete\_member
 
 Deletes a member.
@@ -278,7 +338,7 @@ parent.delete_member(**kwargs)
 
 ### delete\_node
 
-Deletes a node that your AWS account owns.
+Deletes a node that your Amazon Web Services account owns.
 
 Type annotations and code completion for `#!python boto3.client("managedblockchain").delete_node` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node)
@@ -325,6 +385,35 @@ def generate_presigned_url(
     ...
 ```
 
+
+### get\_accessor
+
+.
+
+Type annotations and code completion for `#!python boto3.client("managedblockchain").get_accessor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_accessor)
+
+```python title="Method definition"
+def get_accessor(
+    self,
+    *,
+    AccessorId: str,
+) -> GetAccessorOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetAccessorOutputTypeDef](./type_defs.md#getaccessoroutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetAccessorInputRequestTypeDef = {  # (1)
+    "AccessorId": ...,
+}
+
+parent.get_accessor(**kwargs)
+```
+
+1. See [:material-code-braces: GetAccessorInputRequestTypeDef](./type_defs.md#getaccessorinputrequesttypedef) 
 
 ### get\_member
 
@@ -449,9 +538,39 @@ parent.get_proposal(**kwargs)
 
 1. See [:material-code-braces: GetProposalInputRequestTypeDef](./type_defs.md#getproposalinputrequesttypedef) 
 
+### list\_accessors
+
+.
+
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_accessors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_accessors)
+
+```python title="Method definition"
+def list_accessors(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAccessorsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAccessorsOutputTypeDef](./type_defs.md#listaccessorsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAccessorsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_accessors(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccessorsInputRequestTypeDef](./type_defs.md#listaccessorsinputrequesttypedef) 
+
 ### list\_invitations
 
-Returns a list of all invitations for the current AWS account.
+Returns a list of all invitations for the current Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("managedblockchain").list_invitations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations)
@@ -517,8 +636,8 @@ parent.list_members(**kwargs)
 
 ### list\_networks
 
-Returns information about the networks in which the current AWS account
-participates.
+Returns information about the networks in which the current Amazon Web Services
+account participates.
 
 Type annotations and code completion for `#!python boto3.client("managedblockchain").list_networks` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks)
@@ -868,6 +987,13 @@ parent.vote_on_proposal(**kwargs)
 
 1. See [:material-code-braces: VoteOnProposalInputRequestTypeDef](./type_defs.md#voteonproposalinputrequesttypedef) 
 
+
+
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("managedblockchain").get_paginator` method with overloads.
+
+- `client.get_paginator("list_accessors")` -> [ListAccessorsPaginator](./paginators.md#listaccessorspaginator)
 
 
 
