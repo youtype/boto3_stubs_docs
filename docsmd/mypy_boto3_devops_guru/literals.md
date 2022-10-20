@@ -532,12 +532,38 @@ ResourcePermissionType = Literal[
 from mypy_boto3_devops_guru.literals import ResourceTypeFilterType
 
 def get_value() -> ResourceTypeFilterType:
-    return "LOG_GROUPS"
+    return "CLOUDFRONT_DISTRIBUTION"
 ```
 
 ```python title="Definition"
 ResourceTypeFilterType = Literal[
+    "CLOUDFRONT_DISTRIBUTION",
+    "DYNAMODB_TABLE",
+    "EC2_NAT_GATEWAY",
+    "ECS_CLUSTER",
+    "ECS_SERVICE",
+    "EKS_CLUSTER",
+    "ELASTIC_BEANSTALK_ENVIRONMENT",
+    "ELASTIC_LOAD_BALANCER_LOAD_BALANCER",
+    "ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER",
+    "ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP",
+    "ELASTICACHE_CACHE_CLUSTER",
+    "ELASTICSEARCH_DOMAIN",
+    "KINESIS_STREAM",
+    "LAMBDA_FUNCTION",
     "LOG_GROUPS",
+    "OPEN_SEARCH_SERVICE_DOMAIN",
+    "RDS_DB_CLUSTER",
+    "RDS_DB_INSTANCE",
+    "REDSHIFT_CLUSTER",
+    "ROUTE53_HEALTH_CHECK",
+    "ROUTE53_HOSTED_ZONE",
+    "S3_BUCKET",
+    "SAGEMAKER_ENDPOINT",
+    "SNS_TOPIC",
+    "SQS_QUEUE",
+    "STEP_FUNCTIONS_ACTIVITY",
+    "STEP_FUNCTIONS_STATE_MACHINE",
 ]
 ```
 ## SearchInsightsPaginatorName

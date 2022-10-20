@@ -37618,25 +37618,30 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;rum&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_rum.paginator</span> <span class="kn">import</span> <span class="n">GetAppMonitorDataPaginator</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_rum.paginator</span> <span class="kn">import</span> <span class="n">BatchGetRumMetricDefinitionsPaginator</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_get_app_monitor_data_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">GetAppMonitorDataPaginator</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;rum&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;get_app_monitor_data&quot;</span><span class="p">))</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_batch_get_rum_metric_definitions_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BatchGetRumMetricDefinitionsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;rum&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;batch_get_rum_metric_definitions&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#batchgetrummetricdefinitionspaginator">BatchGetRumMetricDefinitionsPaginator</a></li>
 <li><a href="paginators/#getappmonitordatapaginator">GetAppMonitorDataPaginator</a></li>
 <li><a href="paginators/#listappmonitorspaginator">ListAppMonitorsPaginator</a></li>
+<li><a href="paginators/#listrummetricsdestinationspaginator">ListRumMetricsDestinationsPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_rum.literals</span> <span class="kn">import</span> <span class="n">GetAppMonitorDataPaginatorName</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_rum.literals</span> <span class="kn">import</span> <span class="n">BatchGetRumMetricDefinitionsPaginatorName</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">GetAppMonitorDataPaginatorName</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;get_app_monitor_data&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">BatchGetRumMetricDefinitionsPaginatorName</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;batch_get_rum_metric_definitions&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#batchgetrummetricdefinitionspaginatorname">BatchGetRumMetricDefinitionsPaginatorName</a></li>
 <li><a href="literals/#getappmonitordatapaginatorname">GetAppMonitorDataPaginatorName</a></li>
 <li><a href="literals/#listappmonitorspaginatorname">ListAppMonitorsPaginatorName</a></li>
+<li><a href="literals/#listrummetricsdestinationspaginatorname">ListRumMetricsDestinationsPaginatorName</a></li>
+<li><a href="literals/#metricdestinationtype">MetricDestinationType</a></li>
 <li><a href="literals/#stateenumtype">StateEnumType</a></li>
 <li><a href="literals/#telemetrytype">TelemetryType</a></li>
 <li><a href="literals/#cloudwatchrumservicename">CloudWatchRUMServiceName</a></li>
@@ -37658,30 +37663,48 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#appmonitorconfigurationtypedef">AppMonitorConfigurationTypeDef</a></li>
 <li><a href="type_defs/#appmonitordetailstypedef">AppMonitorDetailsTypeDef</a></li>
 <li><a href="type_defs/#appmonitorsummarytypedef">AppMonitorSummaryTypeDef</a></li>
+<li><a href="type_defs/#metricdefinitionrequesttypedef">MetricDefinitionRequestTypeDef</a></li>
+<li><a href="type_defs/#metricdefinitiontypedef">MetricDefinitionTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#batchdeleterummetricdefinitionserrortypedef">BatchDeleteRumMetricDefinitionsErrorTypeDef</a></li>
+<li><a href="type_defs/#batchdeleterummetricdefinitionsrequestrequesttypedef">BatchDeleteRumMetricDefinitionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#batchgetrummetricdefinitionsrequestrequesttypedef">BatchGetRumMetricDefinitionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#cwlogtypedef">CwLogTypeDef</a></li>
 <li><a href="type_defs/#deleteappmonitorrequestrequesttypedef">DeleteAppMonitorRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#deleterummetricsdestinationrequestrequesttypedef">DeleteRumMetricsDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#queryfiltertypedef">QueryFilterTypeDef</a></li>
 <li><a href="type_defs/#timerangetypedef">TimeRangeTypeDef</a></li>
 <li><a href="type_defs/#getappmonitorrequestrequesttypedef">GetAppMonitorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listappmonitorsrequestrequesttypedef">ListAppMonitorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listrummetricsdestinationsrequestrequesttypedef">ListRumMetricsDestinationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#metricdestinationsummarytypedef">MetricDestinationSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#rumeventtypedef">RumEventTypeDef</a></li>
 <li><a href="type_defs/#userdetailstypedef">UserDetailsTypeDef</a></li>
+<li><a href="type_defs/#putrummetricsdestinationrequestrequesttypedef">PutRumMetricsDestinationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createappmonitorrequestrequesttypedef">CreateAppMonitorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateappmonitorrequestrequesttypedef">UpdateAppMonitorRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchcreaterummetricdefinitionserrortypedef">BatchCreateRumMetricDefinitionsErrorTypeDef</a></li>
+<li><a href="type_defs/#batchcreaterummetricdefinitionsrequestrequesttypedef">BatchCreateRumMetricDefinitionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updaterummetricdefinitionrequestrequesttypedef">UpdateRumMetricDefinitionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchgetrummetricdefinitionsresponsetypedef">BatchGetRumMetricDefinitionsResponseTypeDef</a></li>
 <li><a href="type_defs/#createappmonitorresponsetypedef">CreateAppMonitorResponseTypeDef</a></li>
 <li><a href="type_defs/#getappmonitordataresponsetypedef">GetAppMonitorDataResponseTypeDef</a></li>
 <li><a href="type_defs/#listappmonitorsresponsetypedef">ListAppMonitorsResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#datastoragetypedef">DataStorageTypeDef</a></li>
+<li><a href="type_defs/#batchdeleterummetricdefinitionsresponsetypedef">BatchDeleteRumMetricDefinitionsResponseTypeDef</a></li>
+<li><a href="type_defs/#batchgetrummetricdefinitionsrequestbatchgetrummetricdefinitionspaginatetypedef">BatchGetRumMetricDefinitionsRequestBatchGetRumMetricDefinitionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listappmonitorsrequestlistappmonitorspaginatetypedef">ListAppMonitorsRequestListAppMonitorsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listrummetricsdestinationsrequestlistrummetricsdestinationspaginatetypedef">ListRumMetricsDestinationsRequestListRumMetricsDestinationsPaginateTypeDef</a></li>
+<li><a href="type_defs/#datastoragetypedef">DataStorageTypeDef</a></li>
 <li><a href="type_defs/#getappmonitordatarequestgetappmonitordatapaginatetypedef">GetAppMonitorDataRequestGetAppMonitorDataPaginateTypeDef</a></li>
 <li><a href="type_defs/#getappmonitordatarequestrequesttypedef">GetAppMonitorDataRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listrummetricsdestinationsresponsetypedef">ListRumMetricsDestinationsResponseTypeDef</a></li>
 <li><a href="type_defs/#putrumeventsrequestrequesttypedef">PutRumEventsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchcreaterummetricdefinitionsresponsetypedef">BatchCreateRumMetricDefinitionsResponseTypeDef</a></li>
 <li><a href="type_defs/#appmonitortypedef">AppMonitorTypeDef</a></li>
 <li><a href="type_defs/#getappmonitorresponsetypedef">GetAppMonitorResponseTypeDef</a></li>
 </ul>

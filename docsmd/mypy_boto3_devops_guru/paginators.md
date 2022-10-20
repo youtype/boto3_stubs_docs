@@ -530,7 +530,7 @@ Type annotations and code completion for `#!python ListMonitoredResourcesPaginat
 def paginate(
     self,
     *,
-    Filters: ListMonitoredResourcesFiltersTypeDef,  # (1)
+    Filters: ListMonitoredResourcesFiltersTypeDef = ...,  # (1)
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[ListMonitoredResourcesResponseTypeDef]:  # (3)
     ...

@@ -674,7 +674,7 @@ Type annotations and code completion for `#!python boto3.client("devops-guru").l
 def list_monitored_resources(
     self,
     *,
-    Filters: ListMonitoredResourcesFiltersTypeDef,  # (1)
+    Filters: ListMonitoredResourcesFiltersTypeDef = ...,  # (1)
     MaxResults: int = ...,
     NextToken: str = ...,
 ) -> ListMonitoredResourcesResponseTypeDef:  # (2)

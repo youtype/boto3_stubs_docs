@@ -38434,11 +38434,37 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-devop
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_devops_guru.literals</span> <span class="kn">import</span> <span class="n">ResourceTypeFilterType</span>
 <a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>
 <a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResourceTypeFilterType</span><span class="p">:</span>
-<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>    <span class="k">return</span> <span class="s2">&quot;LOG_GROUPS&quot;</span>
+<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>    <span class="k">return</span> <span class="s2">&quot;CLOUDFRONT_DISTRIBUTION&quot;</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="n">ResourceTypeFilterType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a>    <span class="s2">&quot;LOG_GROUPS&quot;</span><span class="p">,</span>
-<a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a><span class="p">]</span>
+<a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a>    <span class="s2">&quot;CLOUDFRONT_DISTRIBUTION&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a>    <span class="s2">&quot;DYNAMODB_TABLE&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-4" name="__codelineno-67-4" href="#__codelineno-67-4"></a>    <span class="s2">&quot;EC2_NAT_GATEWAY&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-5" name="__codelineno-67-5" href="#__codelineno-67-5"></a>    <span class="s2">&quot;ECS_CLUSTER&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-6" name="__codelineno-67-6" href="#__codelineno-67-6"></a>    <span class="s2">&quot;ECS_SERVICE&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-7" name="__codelineno-67-7" href="#__codelineno-67-7"></a>    <span class="s2">&quot;EKS_CLUSTER&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-8" name="__codelineno-67-8" href="#__codelineno-67-8"></a>    <span class="s2">&quot;ELASTIC_BEANSTALK_ENVIRONMENT&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-9" name="__codelineno-67-9" href="#__codelineno-67-9"></a>    <span class="s2">&quot;ELASTIC_LOAD_BALANCER_LOAD_BALANCER&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-10" name="__codelineno-67-10" href="#__codelineno-67-10"></a>    <span class="s2">&quot;ELASTIC_LOAD_BALANCING_V2_LOAD_BALANCER&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-11" name="__codelineno-67-11" href="#__codelineno-67-11"></a>    <span class="s2">&quot;ELASTIC_LOAD_BALANCING_V2_TARGET_GROUP&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-12" name="__codelineno-67-12" href="#__codelineno-67-12"></a>    <span class="s2">&quot;ELASTICACHE_CACHE_CLUSTER&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-13" name="__codelineno-67-13" href="#__codelineno-67-13"></a>    <span class="s2">&quot;ELASTICSEARCH_DOMAIN&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-14" name="__codelineno-67-14" href="#__codelineno-67-14"></a>    <span class="s2">&quot;KINESIS_STREAM&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-15" name="__codelineno-67-15" href="#__codelineno-67-15"></a>    <span class="s2">&quot;LAMBDA_FUNCTION&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-16" name="__codelineno-67-16" href="#__codelineno-67-16"></a>    <span class="s2">&quot;LOG_GROUPS&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-17" name="__codelineno-67-17" href="#__codelineno-67-17"></a>    <span class="s2">&quot;OPEN_SEARCH_SERVICE_DOMAIN&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-18" name="__codelineno-67-18" href="#__codelineno-67-18"></a>    <span class="s2">&quot;RDS_DB_CLUSTER&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-19" name="__codelineno-67-19" href="#__codelineno-67-19"></a>    <span class="s2">&quot;RDS_DB_INSTANCE&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-20" name="__codelineno-67-20" href="#__codelineno-67-20"></a>    <span class="s2">&quot;REDSHIFT_CLUSTER&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-21" name="__codelineno-67-21" href="#__codelineno-67-21"></a>    <span class="s2">&quot;ROUTE53_HEALTH_CHECK&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-22" name="__codelineno-67-22" href="#__codelineno-67-22"></a>    <span class="s2">&quot;ROUTE53_HOSTED_ZONE&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-23" name="__codelineno-67-23" href="#__codelineno-67-23"></a>    <span class="s2">&quot;S3_BUCKET&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-24" name="__codelineno-67-24" href="#__codelineno-67-24"></a>    <span class="s2">&quot;SAGEMAKER_ENDPOINT&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-25" name="__codelineno-67-25" href="#__codelineno-67-25"></a>    <span class="s2">&quot;SNS_TOPIC&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-26" name="__codelineno-67-26" href="#__codelineno-67-26"></a>    <span class="s2">&quot;SQS_QUEUE&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-27" name="__codelineno-67-27" href="#__codelineno-67-27"></a>    <span class="s2">&quot;STEP_FUNCTIONS_ACTIVITY&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-28" name="__codelineno-67-28" href="#__codelineno-67-28"></a>    <span class="s2">&quot;STEP_FUNCTIONS_STATE_MACHINE&quot;</span><span class="p">,</span>
+<a id="__codelineno-67-29" name="__codelineno-67-29" href="#__codelineno-67-29"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="searchinsightspaginatorname">SearchInsightsPaginatorName</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_devops_guru.literals</span> <span class="kn">import</span> <span class="n">SearchInsightsPaginatorName</span>

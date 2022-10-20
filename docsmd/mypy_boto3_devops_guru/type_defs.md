@@ -660,25 +660,6 @@ class ListMonitoredResourcesFiltersTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ResourcePermissionType](./literals.md#resourcepermissiontype) 
 2. See [:material-code-brackets: ResourceTypeFilterType](./literals.md#resourcetypefiltertype) 
-## MonitoredResourceIdentifierTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_devops_guru.type_defs import MonitoredResourceIdentifierTypeDef
-
-def get_value() -> MonitoredResourceIdentifierTypeDef:
-    return {
-        "MonitoredResourceName": ...,
-    }
-```
-
-```python title="Definition"
-class MonitoredResourceIdentifierTypeDef(TypedDict):
-    MonitoredResourceName: NotRequired[str],
-    Type: NotRequired[str],
-    ResourcePermission: NotRequired[ResourcePermissionType],  # (1)
-```
-
-1. See [:material-code-brackets: ResourcePermissionType](./literals.md#resourcepermissiontype) 
 ## ListNotificationChannelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1128,6 +1109,7 @@ def get_value() -> DescribeAccountHealthResponseTypeDef:
         "OpenProactiveInsights": ...,
         "MetricsAnalyzed": ...,
         "ResourceHours": ...,
+        "AnalyzedResourceCount": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1138,6 +1120,7 @@ class DescribeAccountHealthResponseTypeDef(TypedDict):
     OpenProactiveInsights: int,
     MetricsAnalyzed: int,
     ResourceHours: int,
+    AnalyzedResourceCount: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1243,6 +1226,7 @@ def get_value() -> CloudFormationHealthTypeDef:
 class CloudFormationHealthTypeDef(TypedDict):
     StackName: NotRequired[str],
     Insight: NotRequired[InsightHealthTypeDef],  # (1)
+    AnalyzedResourceCount: NotRequired[int],
 ```
 
 1. See [:material-code-braces: InsightHealthTypeDef](./type_defs.md#insighthealthtypedef) 
@@ -1262,6 +1246,7 @@ class TagHealthTypeDef(TypedDict):
     AppBoundaryKey: NotRequired[str],
     TagValue: NotRequired[str],
     Insight: NotRequired[InsightHealthTypeDef],  # (1)
+    AnalyzedResourceCount: NotRequired[int],
 ```
 
 1. See [:material-code-braces: InsightHealthTypeDef](./type_defs.md#insighthealthtypedef) 
@@ -1568,7 +1553,7 @@ def get_value() -> ListMonitoredResourcesRequestListMonitoredResourcesPaginateTy
 
 ```python title="Definition"
 class ListMonitoredResourcesRequestListMonitoredResourcesPaginateTypeDef(TypedDict):
-    Filters: ListMonitoredResourcesFiltersTypeDef,  # (1)
+    Filters: NotRequired[ListMonitoredResourcesFiltersTypeDef],  # (1)
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -1587,34 +1572,12 @@ def get_value() -> ListMonitoredResourcesRequestRequestTypeDef:
 
 ```python title="Definition"
 class ListMonitoredResourcesRequestRequestTypeDef(TypedDict):
-    Filters: ListMonitoredResourcesFiltersTypeDef,  # (1)
+    Filters: NotRequired[ListMonitoredResourcesFiltersTypeDef],  # (1)
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ListMonitoredResourcesFiltersTypeDef](./type_defs.md#listmonitoredresourcesfilterstypedef) 
-## ListMonitoredResourcesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_devops_guru.type_defs import ListMonitoredResourcesResponseTypeDef
-
-def get_value() -> ListMonitoredResourcesResponseTypeDef:
-    return {
-        "MonitoredResourceIdentifiers": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListMonitoredResourcesResponseTypeDef(TypedDict):
-    MonitoredResourceIdentifiers: List[MonitoredResourceIdentifierTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: MonitoredResourceIdentifierTypeDef](./type_defs.md#monitoredresourceidentifiertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogAnomalyShowcaseTypeDef
 
 ```python title="Usage Example"
@@ -1796,6 +1759,7 @@ def get_value() -> ServiceHealthTypeDef:
 class ServiceHealthTypeDef(TypedDict):
     ServiceName: NotRequired[ServiceNameType],  # (1)
     Insight: NotRequired[ServiceInsightHealthTypeDef],  # (2)
+    AnalyzedResourceCount: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
@@ -2157,6 +2121,28 @@ class ListEventsFiltersTypeDef(TypedDict):
 2. See [:material-code-brackets: EventClassType](./literals.md#eventclasstype) 
 3. See [:material-code-brackets: EventDataSourceType](./literals.md#eventdatasourcetype) 
 4. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+## MonitoredResourceIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import MonitoredResourceIdentifierTypeDef
+
+def get_value() -> MonitoredResourceIdentifierTypeDef:
+    return {
+        "MonitoredResourceName": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoredResourceIdentifierTypeDef(TypedDict):
+    MonitoredResourceName: NotRequired[str],
+    Type: NotRequired[str],
+    ResourcePermission: NotRequired[ResourcePermissionType],  # (1)
+    LastUpdated: NotRequired[datetime],
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourcePermissionType](./literals.md#resourcepermissiontype) 
+2. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
 ## ProactiveInsightSummaryTypeDef
 
 ```python title="Usage Example"
@@ -2687,6 +2673,28 @@ class ListEventsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef) 
+## ListMonitoredResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListMonitoredResourcesResponseTypeDef
+
+def get_value() -> ListMonitoredResourcesResponseTypeDef:
+    return {
+        "MonitoredResourceIdentifiers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoredResourcesResponseTypeDef(TypedDict):
+    MonitoredResourceIdentifiers: List[MonitoredResourceIdentifierTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MonitoredResourceIdentifierTypeDef](./type_defs.md#monitoredresourceidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInsightsResponseTypeDef
 
 ```python title="Usage Example"

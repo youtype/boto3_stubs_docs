@@ -117,6 +117,45 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## EndpointConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import EndpointConfigurationTypeDef
+
+def get_value() -> EndpointConfigurationTypeDef:
+    return {
+        "EndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointConfigurationTypeDef(TypedDict):
+    EndpointId: NotRequired[str],
+    Weight: NotRequired[int],
+    ClientIPPreservationEnabled: NotRequired[bool],
+```
+
+## EndpointDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import EndpointDescriptionTypeDef
+
+def get_value() -> EndpointDescriptionTypeDef:
+    return {
+        "EndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointDescriptionTypeDef(TypedDict):
+    EndpointId: NotRequired[str],
+    Weight: NotRequired[int],
+    HealthState: NotRequired[HealthStateType],  # (1)
+    HealthReason: NotRequired[str],
+    ClientIPPreservationEnabled: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: HealthStateType](./literals.md#healthstatetype) 
 ## AdvertiseByoipCidrRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -243,24 +282,6 @@ def get_value() -> PortRangeTypeDef:
 class PortRangeTypeDef(TypedDict):
     FromPort: NotRequired[int],
     ToPort: NotRequired[int],
-```
-
-## EndpointConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_globalaccelerator.type_defs import EndpointConfigurationTypeDef
-
-def get_value() -> EndpointConfigurationTypeDef:
-    return {
-        "EndpointId": ...,
-    }
-```
-
-```python title="Definition"
-class EndpointConfigurationTypeDef(TypedDict):
-    EndpointId: NotRequired[str],
-    Weight: NotRequired[int],
-    ClientIPPreservationEnabled: NotRequired[bool],
 ```
 
 ## PortOverrideTypeDef
@@ -595,27 +616,23 @@ class SocketAddressTypeDef(TypedDict):
     Port: NotRequired[int],
 ```
 
-## EndpointDescriptionTypeDef
+## EndpointIdentifierTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_globalaccelerator.type_defs import EndpointDescriptionTypeDef
+from mypy_boto3_globalaccelerator.type_defs import EndpointIdentifierTypeDef
 
-def get_value() -> EndpointDescriptionTypeDef:
+def get_value() -> EndpointIdentifierTypeDef:
     return {
         "EndpointId": ...,
     }
 ```
 
 ```python title="Definition"
-class EndpointDescriptionTypeDef(TypedDict):
-    EndpointId: NotRequired[str],
-    Weight: NotRequired[int],
-    HealthState: NotRequired[HealthStateType],  # (1)
-    HealthReason: NotRequired[str],
+class EndpointIdentifierTypeDef(TypedDict):
+    EndpointId: str,
     ClientIPPreservationEnabled: NotRequired[bool],
 ```
 
-1. See [:material-code-brackets: HealthStateType](./literals.md#healthstatetype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -1097,6 +1114,47 @@ class UpdateAcceleratorAttributesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AddEndpointsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import AddEndpointsRequestRequestTypeDef
+
+def get_value() -> AddEndpointsRequestRequestTypeDef:
+    return {
+        "EndpointConfigurations": ...,
+        "EndpointGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class AddEndpointsRequestRequestTypeDef(TypedDict):
+    EndpointConfigurations: Sequence[EndpointConfigurationTypeDef],  # (1)
+    EndpointGroupArn: str,
+```
+
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+## AddEndpointsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import AddEndpointsResponseTypeDef
+
+def get_value() -> AddEndpointsResponseTypeDef:
+    return {
+        "EndpointDescriptions": ...,
+        "EndpointGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AddEndpointsResponseTypeDef(TypedDict):
+    EndpointDescriptions: List[EndpointDescriptionTypeDef],  # (1)
+    EndpointGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EndpointDescriptionTypeDef](./type_defs.md#endpointdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ByoipCidrTypeDef
 
 ```python title="Usage Example"
@@ -1405,6 +1463,34 @@ class CreateEndpointGroupRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
 2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
 3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
+## EndpointGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import EndpointGroupTypeDef
+
+def get_value() -> EndpointGroupTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointGroupTypeDef(TypedDict):
+    EndpointGroupArn: NotRequired[str],
+    EndpointGroupRegion: NotRequired[str],
+    EndpointDescriptions: NotRequired[List[EndpointDescriptionTypeDef]],  # (1)
+    TrafficDialPercentage: NotRequired[float],
+    HealthCheckPort: NotRequired[int],
+    HealthCheckProtocol: NotRequired[HealthCheckProtocolType],  # (2)
+    HealthCheckPath: NotRequired[str],
+    HealthCheckIntervalSeconds: NotRequired[int],
+    ThresholdCount: NotRequired[int],
+    PortOverrides: NotRequired[List[PortOverrideTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: EndpointDescriptionTypeDef](./type_defs.md#endpointdescriptiontypedef) 
+2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
+3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
 ## UpdateEndpointGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1544,34 +1630,25 @@ class PortMappingTypeDef(TypedDict):
 1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
 2. See [:material-code-brackets: CustomRoutingProtocolType](./literals.md#customroutingprotocoltype) 
 3. See [:material-code-brackets: CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype) 
-## EndpointGroupTypeDef
+## RemoveEndpointsRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_globalaccelerator.type_defs import EndpointGroupTypeDef
+from mypy_boto3_globalaccelerator.type_defs import RemoveEndpointsRequestRequestTypeDef
 
-def get_value() -> EndpointGroupTypeDef:
+def get_value() -> RemoveEndpointsRequestRequestTypeDef:
     return {
+        "EndpointIdentifiers": ...,
         "EndpointGroupArn": ...,
     }
 ```
 
 ```python title="Definition"
-class EndpointGroupTypeDef(TypedDict):
-    EndpointGroupArn: NotRequired[str],
-    EndpointGroupRegion: NotRequired[str],
-    EndpointDescriptions: NotRequired[List[EndpointDescriptionTypeDef]],  # (1)
-    TrafficDialPercentage: NotRequired[float],
-    HealthCheckPort: NotRequired[int],
-    HealthCheckProtocol: NotRequired[HealthCheckProtocolType],  # (2)
-    HealthCheckPath: NotRequired[str],
-    HealthCheckIntervalSeconds: NotRequired[int],
-    ThresholdCount: NotRequired[int],
-    PortOverrides: NotRequired[List[PortOverrideTypeDef]],  # (3)
+class RemoveEndpointsRequestRequestTypeDef(TypedDict):
+    EndpointIdentifiers: Sequence[EndpointIdentifierTypeDef],  # (1)
+    EndpointGroupArn: str,
 ```
 
-1. See [:material-code-braces: EndpointDescriptionTypeDef](./type_defs.md#endpointdescriptiontypedef) 
-2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
-3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
+1. See [:material-code-braces: EndpointIdentifierTypeDef](./type_defs.md#endpointidentifiertypedef) 
 ## ListAcceleratorsRequestListAcceleratorsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2146,6 +2223,88 @@ class UpdateListenerResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateEndpointGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupResponseTypeDef
+
+def get_value() -> CreateEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: EndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEndpointGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupResponseTypeDef
+
+def get_value() -> DescribeEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: EndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEndpointGroupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsResponseTypeDef
+
+def get_value() -> ListEndpointGroupsResponseTypeDef:
+    return {
+        "EndpointGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEndpointGroupsResponseTypeDef(TypedDict):
+    EndpointGroups: List[EndpointGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateEndpointGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupResponseTypeDef
+
+def get_value() -> UpdateEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: EndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomRoutingEndpointGroupResponseTypeDef
 
 ```python title="Usage Example"
@@ -2251,86 +2410,4 @@ class ListCustomRoutingPortMappingsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PortMappingTypeDef](./type_defs.md#portmappingtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateEndpointGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupResponseTypeDef
-
-def get_value() -> CreateEndpointGroupResponseTypeDef:
-    return {
-        "EndpointGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateEndpointGroupResponseTypeDef(TypedDict):
-    EndpointGroup: EndpointGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeEndpointGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupResponseTypeDef
-
-def get_value() -> DescribeEndpointGroupResponseTypeDef:
-    return {
-        "EndpointGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeEndpointGroupResponseTypeDef(TypedDict):
-    EndpointGroup: EndpointGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListEndpointGroupsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsResponseTypeDef
-
-def get_value() -> ListEndpointGroupsResponseTypeDef:
-    return {
-        "EndpointGroups": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListEndpointGroupsResponseTypeDef(TypedDict):
-    EndpointGroups: List[EndpointGroupTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateEndpointGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupResponseTypeDef
-
-def get_value() -> UpdateEndpointGroupResponseTypeDef:
-    return {
-        "EndpointGroup": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateEndpointGroupResponseTypeDef(TypedDict):
-    EndpointGroup: EndpointGroupTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

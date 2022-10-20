@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("rum")  # (1)
-    result = client.create_app_monitor()  # (2)
+    result = client.batch_create_rum_metric_definitions()  # (2)
     ```
 
     1. client: [CloudWatchRUMClient](./client.md)
-    2. result: [:material-code-braces: CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef) 
+    2. result: [:material-code-braces: BatchCreateRumMetricDefinitionsResponseTypeDef](./type_defs.md#batchcreaterummetricdefinitionsresponsetypedef) 
 
 
 
@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("rum")  # (1)
 
-    paginator = client.get_paginator("get_app_monitor_data")  # (2)
+    paginator = client.get_paginator("batch_get_rum_metric_definitions")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [CloudWatchRUMClient](./client.md)
-    2. paginator: [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
-    3. item: [:material-code-braces: GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef) 
+    2. paginator: [BatchGetRumMetricDefinitionsPaginator](./paginators.md#batchgetrummetricdefinitionspaginator)
+    3. item: [:material-code-braces: BatchGetRumMetricDefinitionsResponseTypeDef](./type_defs.md#batchgetrummetricdefinitionsresponsetypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_rum.client import CloudWatchRUMClient
-    from mypy_boto3_rum.type_defs import CreateAppMonitorResponseTypeDef
-    from mypy_boto3_rum.type_defs import CreateAppMonitorRequestRequestTypeDef
+    from mypy_boto3_rum.type_defs import BatchCreateRumMetricDefinitionsResponseTypeDef
+    from mypy_boto3_rum.type_defs import BatchCreateRumMetricDefinitionsRequestRequestTypeDef
 
 
     session = Session()
 
     client: CloudWatchRUMClient = session.client("rum")
 
-    kwargs: CreateAppMonitorRequestRequestTypeDef = {...}
-    result: CreateAppMonitorResponseTypeDef = client.create_app_monitor(**kwargs)
+    kwargs: BatchCreateRumMetricDefinitionsRequestRequestTypeDef = {...}
+    result: BatchCreateRumMetricDefinitionsResponseTypeDef = client.batch_create_rum_metric_definitions(**kwargs)
     ```
 
 
@@ -90,16 +90,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_rum.client import CloudWatchRUMClient
-    from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator
-    from mypy_boto3_rum.type_defs import GetAppMonitorDataResponseTypeDef
+    from mypy_boto3_rum.paginator import BatchGetRumMetricDefinitionsPaginator
+    from mypy_boto3_rum.type_defs import BatchGetRumMetricDefinitionsResponseTypeDef
 
 
     session = Session()
     client: CloudWatchRUMClient = session.client("rum")
 
-    paginator: GetAppMonitorDataPaginator = client.get_paginator("get_app_monitor_data")
+    paginator: BatchGetRumMetricDefinitionsPaginator = client.get_paginator("batch_get_rum_metric_definitions")
     for item in paginator.paginate(...):
-        item: GetAppMonitorDataResponseTypeDef
+        item: BatchGetRumMetricDefinitionsResponseTypeDef
         print(item)
     ```
 

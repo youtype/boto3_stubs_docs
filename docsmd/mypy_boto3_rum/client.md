@@ -55,6 +55,115 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 ## Methods
 
 
+### batch\_create\_rum\_metric\_definitions
+
+Specifies the extended metrics that you want a CloudWatch RUM app monitor to
+send to a destination.
+
+Type annotations and code completion for `#!python boto3.client("rum").batch_create_rum_metric_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.batch_create_rum_metric_definitions)
+
+```python title="Method definition"
+def batch_create_rum_metric_definitions(
+    self,
+    *,
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    MetricDefinitions: Sequence[MetricDefinitionRequestTypeDef],  # (2)
+    DestinationArn: str = ...,
+) -> BatchCreateRumMetricDefinitionsResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+2. See [:material-code-braces: MetricDefinitionRequestTypeDef](./type_defs.md#metricdefinitionrequesttypedef) 
+3. See [:material-code-braces: BatchCreateRumMetricDefinitionsResponseTypeDef](./type_defs.md#batchcreaterummetricdefinitionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchCreateRumMetricDefinitionsRequestRequestTypeDef = {  # (1)
+    "AppMonitorName": ...,
+    "Destination": ...,
+    "MetricDefinitions": ...,
+}
+
+parent.batch_create_rum_metric_definitions(**kwargs)
+```
+
+1. See [:material-code-braces: BatchCreateRumMetricDefinitionsRequestRequestTypeDef](./type_defs.md#batchcreaterummetricdefinitionsrequestrequesttypedef) 
+
+### batch\_delete\_rum\_metric\_definitions
+
+Removes the specified metrics from being sent to an extended metrics
+destination.
+
+Type annotations and code completion for `#!python boto3.client("rum").batch_delete_rum_metric_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.batch_delete_rum_metric_definitions)
+
+```python title="Method definition"
+def batch_delete_rum_metric_definitions(
+    self,
+    *,
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    MetricDefinitionIds: Sequence[str],
+    DestinationArn: str = ...,
+) -> BatchDeleteRumMetricDefinitionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+2. See [:material-code-braces: BatchDeleteRumMetricDefinitionsResponseTypeDef](./type_defs.md#batchdeleterummetricdefinitionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteRumMetricDefinitionsRequestRequestTypeDef = {  # (1)
+    "AppMonitorName": ...,
+    "Destination": ...,
+    "MetricDefinitionIds": ...,
+}
+
+parent.batch_delete_rum_metric_definitions(**kwargs)
+```
+
+1. See [:material-code-braces: BatchDeleteRumMetricDefinitionsRequestRequestTypeDef](./type_defs.md#batchdeleterummetricdefinitionsrequestrequesttypedef) 
+
+### batch\_get\_rum\_metric\_definitions
+
+Retrieves the list of metrics and dimensions that a RUM app monitor is sending
+to a single destination.
+
+Type annotations and code completion for `#!python boto3.client("rum").batch_get_rum_metric_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.batch_get_rum_metric_definitions)
+
+```python title="Method definition"
+def batch_get_rum_metric_definitions(
+    self,
+    *,
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    DestinationArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> BatchGetRumMetricDefinitionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+2. See [:material-code-braces: BatchGetRumMetricDefinitionsResponseTypeDef](./type_defs.md#batchgetrummetricdefinitionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetRumMetricDefinitionsRequestRequestTypeDef = {  # (1)
+    "AppMonitorName": ...,
+    "Destination": ...,
+}
+
+parent.batch_get_rum_metric_definitions(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetRumMetricDefinitionsRequestRequestTypeDef](./type_defs.md#batchgetrummetricdefinitionsrequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -149,6 +258,39 @@ parent.delete_app_monitor(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteAppMonitorRequestRequestTypeDef](./type_defs.md#deleteappmonitorrequestrequesttypedef) 
+
+### delete\_rum\_metrics\_destination
+
+Deletes a destination for CloudWatch RUM extended metrics, so that the specified
+app monitor stops sending extended metrics to that destination.
+
+Type annotations and code completion for `#!python boto3.client("rum").delete_rum_metrics_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.delete_rum_metrics_destination)
+
+```python title="Method definition"
+def delete_rum_metrics_destination(
+    self,
+    *,
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    DestinationArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteRumMetricsDestinationRequestRequestTypeDef = {  # (1)
+    "AppMonitorName": ...,
+    "Destination": ...,
+}
+
+parent.delete_rum_metrics_destination(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteRumMetricsDestinationRequestRequestTypeDef](./type_defs.md#deleterummetricsdestinationrequestrequesttypedef) 
 
 ### generate\_presigned\_url
 
@@ -265,6 +407,38 @@ parent.list_app_monitors(**kwargs)
 
 1. See [:material-code-braces: ListAppMonitorsRequestRequestTypeDef](./type_defs.md#listappmonitorsrequestrequesttypedef) 
 
+### list\_rum\_metrics\_destinations
+
+Returns a list of destinations that you have created to receive RUM extended
+metrics, for the specified app monitor.
+
+Type annotations and code completion for `#!python boto3.client("rum").list_rum_metrics_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.list_rum_metrics_destinations)
+
+```python title="Method definition"
+def list_rum_metrics_destinations(
+    self,
+    *,
+    AppMonitorName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRumMetricsDestinationsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListRumMetricsDestinationsResponseTypeDef](./type_defs.md#listrummetricsdestinationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRumMetricsDestinationsRequestRequestTypeDef = {  # (1)
+    "AppMonitorName": ...,
+}
+
+parent.list_rum_metrics_destinations(**kwargs)
+```
+
+1. See [:material-code-braces: ListRumMetricsDestinationsRequestRequestTypeDef](./type_defs.md#listrummetricsdestinationsrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
 Displays the tags associated with a CloudWatch RUM resource.
@@ -333,6 +507,40 @@ parent.put_rum_events(**kwargs)
 ```
 
 1. See [:material-code-braces: PutRumEventsRequestRequestTypeDef](./type_defs.md#putrumeventsrequestrequesttypedef) 
+
+### put\_rum\_metrics\_destination
+
+Creates or updates a destination to receive extended metrics from CloudWatch
+RUM.
+
+Type annotations and code completion for `#!python boto3.client("rum").put_rum_metrics_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.put_rum_metrics_destination)
+
+```python title="Method definition"
+def put_rum_metrics_destination(
+    self,
+    *,
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    DestinationArn: str = ...,
+    IamRoleArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutRumMetricsDestinationRequestRequestTypeDef = {  # (1)
+    "AppMonitorName": ...,
+    "Destination": ...,
+}
+
+parent.put_rum_metrics_destination(**kwargs)
+```
+
+1. See [:material-code-braces: PutRumMetricsDestinationRequestRequestTypeDef](./type_defs.md#putrummetricsdestinationrequestrequesttypedef) 
 
 ### tag\_resource
 
@@ -427,14 +635,53 @@ parent.update_app_monitor(**kwargs)
 
 1. See [:material-code-braces: UpdateAppMonitorRequestRequestTypeDef](./type_defs.md#updateappmonitorrequestrequesttypedef) 
 
+### update\_rum\_metric\_definition
+
+Modifies one existing metric definition for CloudWatch RUM extended metrics.
+
+Type annotations and code completion for `#!python boto3.client("rum").update_rum_metric_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.update_rum_metric_definition)
+
+```python title="Method definition"
+def update_rum_metric_definition(
+    self,
+    *,
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    MetricDefinition: MetricDefinitionRequestTypeDef,  # (2)
+    MetricDefinitionId: str,
+    DestinationArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+2. See [:material-code-braces: MetricDefinitionRequestTypeDef](./type_defs.md#metricdefinitionrequesttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRumMetricDefinitionRequestRequestTypeDef = {  # (1)
+    "AppMonitorName": ...,
+    "Destination": ...,
+    "MetricDefinition": ...,
+    "MetricDefinitionId": ...,
+}
+
+parent.update_rum_metric_definition(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRumMetricDefinitionRequestRequestTypeDef](./type_defs.md#updaterummetricdefinitionrequestrequesttypedef) 
+
 
 
 ### get_paginator
 
 Type annotations and code completion for `#!python boto3.client("rum").get_paginator` method with overloads.
 
+- `client.get_paginator("batch_get_rum_metric_definitions")` -> [BatchGetRumMetricDefinitionsPaginator](./paginators.md#batchgetrummetricdefinitionspaginator)
 - `client.get_paginator("get_app_monitor_data")` -> [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
 - `client.get_paginator("list_app_monitors")` -> [ListAppMonitorsPaginator](./paginators.md#listappmonitorspaginator)
+- `client.get_paginator("list_rum_metrics_destinations")` -> [ListRumMetricsDestinationsPaginator](./paginators.md#listrummetricsdestinationspaginator)
 
 
 

@@ -156,10 +156,12 @@ class AppSummaryTypeDef(TypedDict):
     complianceStatus: NotRequired[AppComplianceStatusTypeType],  # (2)
     description: NotRequired[str],
     resiliencyScore: NotRequired[float],
+    status: NotRequired[AppStatusTypeType],  # (3)
 ```
 
 1. See [:material-code-brackets: AppAssessmentScheduleTypeType](./literals.md#appassessmentscheduletypetype) 
 2. See [:material-code-brackets: AppComplianceStatusTypeType](./literals.md#appcompliancestatustypetype) 
+3. See [:material-code-brackets: AppStatusTypeType](./literals.md#appstatustypetype) 
 ## AppTypeDef
 
 ```python title="Usage Example"

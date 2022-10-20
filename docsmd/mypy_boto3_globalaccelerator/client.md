@@ -51,6 +51,7 @@ except (
     client.InvalidPortRangeException,
     client.LimitExceededException,
     client.ListenerNotFoundException,
+    client.TransactionInProgressException,
 ) as e:
     print(e)
 ```
@@ -98,6 +99,38 @@ parent.add_custom_routing_endpoints(**kwargs)
 ```
 
 1. See [:material-code-braces: AddCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#addcustomroutingendpointsrequestrequesttypedef) 
+
+### add\_endpoints
+
+Add endpoints to an endpoint group.
+
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").add_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_endpoints)
+
+```python title="Method definition"
+def add_endpoints(
+    self,
+    *,
+    EndpointConfigurations: Sequence[EndpointConfigurationTypeDef],  # (1)
+    EndpointGroupArn: str,
+) -> AddEndpointsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-braces: AddEndpointsResponseTypeDef](./type_defs.md#addendpointsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AddEndpointsRequestRequestTypeDef = {  # (1)
+    "EndpointConfigurations": ...,
+    "EndpointGroupArn": ...,
+}
+
+parent.add_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: AddEndpointsRequestRequestTypeDef](./type_defs.md#addendpointsrequestrequesttypedef) 
 
 ### advertise\_byoip\_cidr
 
@@ -1294,6 +1327,38 @@ parent.remove_custom_routing_endpoints(**kwargs)
 ```
 
 1. See [:material-code-braces: RemoveCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#removecustomroutingendpointsrequestrequesttypedef) 
+
+### remove\_endpoints
+
+Remove endpoints from an endpoint group.
+
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").remove_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_endpoints)
+
+```python title="Method definition"
+def remove_endpoints(
+    self,
+    *,
+    EndpointIdentifiers: Sequence[EndpointIdentifierTypeDef],  # (1)
+    EndpointGroupArn: str,
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: EndpointIdentifierTypeDef](./type_defs.md#endpointidentifiertypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RemoveEndpointsRequestRequestTypeDef = {  # (1)
+    "EndpointIdentifiers": ...,
+    "EndpointGroupArn": ...,
+}
+
+parent.remove_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: RemoveEndpointsRequestRequestTypeDef](./type_defs.md#removeendpointsrequestrequesttypedef) 
 
 ### tag\_resource
 

@@ -37681,6 +37681,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#customroutingendpointconfigurationtypedef">CustomRoutingEndpointConfigurationTypeDef</a></li>
 <li><a href="type_defs/#customroutingendpointdescriptiontypedef">CustomRoutingEndpointDescriptionTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#endpointconfigurationtypedef">EndpointConfigurationTypeDef</a></li>
+<li><a href="type_defs/#endpointdescriptiontypedef">EndpointDescriptionTypeDef</a></li>
 <li><a href="type_defs/#advertisebyoipcidrrequestrequesttypedef">AdvertiseByoipCidrRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#allowcustomroutingtrafficrequestrequesttypedef">AllowCustomRoutingTrafficRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#byoipcidreventtypedef">ByoipCidrEventTypeDef</a></li>
@@ -37688,7 +37690,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#customroutingdestinationconfigurationtypedef">CustomRoutingDestinationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#portrangetypedef">PortRangeTypeDef</a></li>
-<li><a href="type_defs/#endpointconfigurationtypedef">EndpointConfigurationTypeDef</a></li>
 <li><a href="type_defs/#portoverridetypedef">PortOverrideTypeDef</a></li>
 <li><a href="type_defs/#customroutingacceleratorattributestypedef">CustomRoutingAcceleratorAttributesTypeDef</a></li>
 <li><a href="type_defs/#customroutingdestinationdescriptiontypedef">CustomRoutingDestinationDescriptionTypeDef</a></li>
@@ -37709,7 +37710,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeendpointgrouprequestrequesttypedef">DescribeEndpointGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describelistenerrequestrequesttypedef">DescribeListenerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#socketaddresstypedef">SocketAddressTypeDef</a></li>
-<li><a href="type_defs/#endpointdescriptiontypedef">EndpointDescriptionTypeDef</a></li>
+<li><a href="type_defs/#endpointidentifiertypedef">EndpointIdentifierTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listacceleratorsrequestrequesttypedef">ListAcceleratorsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listbyoipcidrsrequestrequesttypedef">ListByoipCidrsRequestRequestTypeDef</a></li>
@@ -37735,6 +37736,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeacceleratorattributesresponsetypedef">DescribeAcceleratorAttributesResponseTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#updateacceleratorattributesresponsetypedef">UpdateAcceleratorAttributesResponseTypeDef</a></li>
+<li><a href="type_defs/#addendpointsrequestrequesttypedef">AddEndpointsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#addendpointsresponsetypedef">AddEndpointsResponseTypeDef</a></li>
 <li><a href="type_defs/#byoipcidrtypedef">ByoipCidrTypeDef</a></li>
 <li><a href="type_defs/#provisionbyoipcidrrequestrequesttypedef">ProvisionByoipCidrRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createacceleratorrequestrequesttypedef">CreateAcceleratorRequestRequestTypeDef</a></li>
@@ -37749,13 +37752,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatecustomroutinglistenerrequestrequesttypedef">UpdateCustomRoutingListenerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatelistenerrequestrequesttypedef">UpdateListenerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createendpointgrouprequestrequesttypedef">CreateEndpointGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#endpointgrouptypedef">EndpointGroupTypeDef</a></li>
 <li><a href="type_defs/#updateendpointgrouprequestrequesttypedef">UpdateEndpointGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describecustomroutingacceleratorattributesresponsetypedef">DescribeCustomRoutingAcceleratorAttributesResponseTypeDef</a></li>
 <li><a href="type_defs/#updatecustomroutingacceleratorattributesresponsetypedef">UpdateCustomRoutingAcceleratorAttributesResponseTypeDef</a></li>
 <li><a href="type_defs/#customroutingendpointgrouptypedef">CustomRoutingEndpointGroupTypeDef</a></li>
 <li><a href="type_defs/#destinationportmappingtypedef">DestinationPortMappingTypeDef</a></li>
 <li><a href="type_defs/#portmappingtypedef">PortMappingTypeDef</a></li>
-<li><a href="type_defs/#endpointgrouptypedef">EndpointGroupTypeDef</a></li>
+<li><a href="type_defs/#removeendpointsrequestrequesttypedef">RemoveEndpointsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listacceleratorsrequestlistacceleratorspaginatetypedef">ListAcceleratorsRequestListAcceleratorsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listbyoipcidrsrequestlistbyoipcidrspaginatetypedef">ListByoipCidrsRequestListByoipCidrsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listcustomroutingacceleratorsrequestlistcustomroutingacceleratorspaginatetypedef">ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef</a></li>
@@ -37785,15 +37789,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describelistenerresponsetypedef">DescribeListenerResponseTypeDef</a></li>
 <li><a href="type_defs/#listlistenersresponsetypedef">ListListenersResponseTypeDef</a></li>
 <li><a href="type_defs/#updatelistenerresponsetypedef">UpdateListenerResponseTypeDef</a></li>
+<li><a href="type_defs/#createendpointgroupresponsetypedef">CreateEndpointGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#describeendpointgroupresponsetypedef">DescribeEndpointGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#listendpointgroupsresponsetypedef">ListEndpointGroupsResponseTypeDef</a></li>
+<li><a href="type_defs/#updateendpointgroupresponsetypedef">UpdateEndpointGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#createcustomroutingendpointgroupresponsetypedef">CreateCustomRoutingEndpointGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#describecustomroutingendpointgroupresponsetypedef">DescribeCustomRoutingEndpointGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#listcustomroutingendpointgroupsresponsetypedef">ListCustomRoutingEndpointGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#listcustomroutingportmappingsbydestinationresponsetypedef">ListCustomRoutingPortMappingsByDestinationResponseTypeDef</a></li>
 <li><a href="type_defs/#listcustomroutingportmappingsresponsetypedef">ListCustomRoutingPortMappingsResponseTypeDef</a></li>
-<li><a href="type_defs/#createendpointgroupresponsetypedef">CreateEndpointGroupResponseTypeDef</a></li>
-<li><a href="type_defs/#describeendpointgroupresponsetypedef">DescribeEndpointGroupResponseTypeDef</a></li>
-<li><a href="type_defs/#listendpointgroupsresponsetypedef">ListEndpointGroupsResponseTypeDef</a></li>
-<li><a href="type_defs/#updateendpointgroupresponsetypedef">UpdateEndpointGroupResponseTypeDef</a></li>
 </ul>
 
 

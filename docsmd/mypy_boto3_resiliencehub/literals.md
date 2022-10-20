@@ -132,6 +132,7 @@ def get_value() -> ConfigRecommendationOptimizationTypeType:
 ConfigRecommendationOptimizationTypeType = Literal[
     "BestAttainable",
     "BestAZRecovery",
+    "BestRegionRecovery",
     "LeastChange",
     "LeastCost",
     "LeastErrors",

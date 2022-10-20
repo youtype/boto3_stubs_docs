@@ -7,6 +7,20 @@
     Auto-generated documentation for [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
     type annotations stubs module [mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
+## BatchGetRumMetricDefinitionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_rum.literals import BatchGetRumMetricDefinitionsPaginatorName
+
+def get_value() -> BatchGetRumMetricDefinitionsPaginatorName:
+    return "batch_get_rum_metric_definitions"
+```
+
+```python title="Definition"
+BatchGetRumMetricDefinitionsPaginatorName = Literal[
+    "batch_get_rum_metric_definitions",
+]
+```
 ## GetAppMonitorDataPaginatorName
 
 ```python title="Usage Example"
@@ -33,6 +47,35 @@ def get_value() -> ListAppMonitorsPaginatorName:
 ```python title="Definition"
 ListAppMonitorsPaginatorName = Literal[
     "list_app_monitors",
+]
+```
+## ListRumMetricsDestinationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_rum.literals import ListRumMetricsDestinationsPaginatorName
+
+def get_value() -> ListRumMetricsDestinationsPaginatorName:
+    return "list_rum_metrics_destinations"
+```
+
+```python title="Definition"
+ListRumMetricsDestinationsPaginatorName = Literal[
+    "list_rum_metrics_destinations",
+]
+```
+## MetricDestinationType
+
+```python title="Usage Example"
+from mypy_boto3_rum.literals import MetricDestinationType
+
+def get_value() -> MetricDestinationType:
+    return "CloudWatch"
+```
+
+```python title="Definition"
+MetricDestinationType = Literal[
+    "CloudWatch",
+    "Evidently",
 ]
 ```
 ## StateEnumType
@@ -441,13 +484,15 @@ ResourceServiceName = Literal[
 from mypy_boto3_rum.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "get_app_monitor_data"
+    return "batch_get_rum_metric_definitions"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "batch_get_rum_metric_definitions",
     "get_app_monitor_data",
     "list_app_monitors",
+    "list_rum_metrics_destinations",
 ]
 ```
 ## RegionName

@@ -71,6 +71,48 @@ class AppMonitorSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StateEnumType](./literals.md#stateenumtype) 
+## MetricDefinitionRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import MetricDefinitionRequestTypeDef
+
+def get_value() -> MetricDefinitionRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDefinitionRequestTypeDef(TypedDict):
+    Name: str,
+    DimensionKeys: NotRequired[Mapping[str, str]],
+    EventPattern: NotRequired[str],
+    UnitLabel: NotRequired[str],
+    ValueKey: NotRequired[str],
+```
+
+## MetricDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import MetricDefinitionTypeDef
+
+def get_value() -> MetricDefinitionTypeDef:
+    return {
+        "MetricDefinitionId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDefinitionTypeDef(TypedDict):
+    MetricDefinitionId: str,
+    Name: str,
+    DimensionKeys: NotRequired[Dict[str, str]],
+    EventPattern: NotRequired[str],
+    UnitLabel: NotRequired[str],
+    ValueKey: NotRequired[str],
+```
+
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -95,6 +137,88 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## BatchDeleteRumMetricDefinitionsErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchDeleteRumMetricDefinitionsErrorTypeDef
+
+def get_value() -> BatchDeleteRumMetricDefinitionsErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+        "ErrorMessage": ...,
+        "MetricDefinitionId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDeleteRumMetricDefinitionsErrorTypeDef(TypedDict):
+    ErrorCode: str,
+    ErrorMessage: str,
+    MetricDefinitionId: str,
+```
+
+## BatchDeleteRumMetricDefinitionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchDeleteRumMetricDefinitionsRequestRequestTypeDef
+
+def get_value() -> BatchDeleteRumMetricDefinitionsRequestRequestTypeDef:
+    return {
+        "AppMonitorName": ...,
+        "Destination": ...,
+        "MetricDefinitionIds": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDeleteRumMetricDefinitionsRequestRequestTypeDef(TypedDict):
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    MetricDefinitionIds: Sequence[str],
+    DestinationArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## BatchGetRumMetricDefinitionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchGetRumMetricDefinitionsRequestRequestTypeDef
+
+def get_value() -> BatchGetRumMetricDefinitionsRequestRequestTypeDef:
+    return {
+        "AppMonitorName": ...,
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetRumMetricDefinitionsRequestRequestTypeDef(TypedDict):
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    DestinationArn: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
 ## CwLogTypeDef
 
 ```python title="Usage Example"
@@ -128,24 +252,26 @@ class DeleteAppMonitorRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
-## PaginatorConfigTypeDef
+## DeleteRumMetricsDestinationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_rum.type_defs import PaginatorConfigTypeDef
+from mypy_boto3_rum.type_defs import DeleteRumMetricsDestinationRequestRequestTypeDef
 
-def get_value() -> PaginatorConfigTypeDef:
+def get_value() -> DeleteRumMetricsDestinationRequestRequestTypeDef:
     return {
-        "MaxItems": ...,
+        "AppMonitorName": ...,
+        "Destination": ...,
     }
 ```
 
 ```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
+class DeleteRumMetricsDestinationRequestRequestTypeDef(TypedDict):
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    DestinationArn: NotRequired[str],
 ```
 
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
 ## QueryFilterTypeDef
 
 ```python title="Usage Example"
@@ -213,6 +339,43 @@ class ListAppMonitorsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListRumMetricsDestinationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import ListRumMetricsDestinationsRequestRequestTypeDef
+
+def get_value() -> ListRumMetricsDestinationsRequestRequestTypeDef:
+    return {
+        "AppMonitorName": ...,
+    }
+```
+
+```python title="Definition"
+class ListRumMetricsDestinationsRequestRequestTypeDef(TypedDict):
+    AppMonitorName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## MetricDestinationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import MetricDestinationSummaryTypeDef
+
+def get_value() -> MetricDestinationSummaryTypeDef:
+    return {
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class MetricDestinationSummaryTypeDef(TypedDict):
+    Destination: NotRequired[MetricDestinationType],  # (1)
+    DestinationArn: NotRequired[str],
+    IamRoleArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -269,6 +432,27 @@ class UserDetailsTypeDef(TypedDict):
     userId: NotRequired[str],
 ```
 
+## PutRumMetricsDestinationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import PutRumMetricsDestinationRequestRequestTypeDef
+
+def get_value() -> PutRumMetricsDestinationRequestRequestTypeDef:
+    return {
+        "AppMonitorName": ...,
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class PutRumMetricsDestinationRequestRequestTypeDef(TypedDict):
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    DestinationArn: NotRequired[str],
+    IamRoleArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -347,6 +531,97 @@ class UpdateAppMonitorRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
+## BatchCreateRumMetricDefinitionsErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchCreateRumMetricDefinitionsErrorTypeDef
+
+def get_value() -> BatchCreateRumMetricDefinitionsErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+        "ErrorMessage": ...,
+        "MetricDefinition": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateRumMetricDefinitionsErrorTypeDef(TypedDict):
+    ErrorCode: str,
+    ErrorMessage: str,
+    MetricDefinition: MetricDefinitionRequestTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: MetricDefinitionRequestTypeDef](./type_defs.md#metricdefinitionrequesttypedef) 
+## BatchCreateRumMetricDefinitionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchCreateRumMetricDefinitionsRequestRequestTypeDef
+
+def get_value() -> BatchCreateRumMetricDefinitionsRequestRequestTypeDef:
+    return {
+        "AppMonitorName": ...,
+        "Destination": ...,
+        "MetricDefinitions": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateRumMetricDefinitionsRequestRequestTypeDef(TypedDict):
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    MetricDefinitions: Sequence[MetricDefinitionRequestTypeDef],  # (2)
+    DestinationArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+2. See [:material-code-braces: MetricDefinitionRequestTypeDef](./type_defs.md#metricdefinitionrequesttypedef) 
+## UpdateRumMetricDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import UpdateRumMetricDefinitionRequestRequestTypeDef
+
+def get_value() -> UpdateRumMetricDefinitionRequestRequestTypeDef:
+    return {
+        "AppMonitorName": ...,
+        "Destination": ...,
+        "MetricDefinition": ...,
+        "MetricDefinitionId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRumMetricDefinitionRequestRequestTypeDef(TypedDict):
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    MetricDefinition: MetricDefinitionRequestTypeDef,  # (2)
+    MetricDefinitionId: str,
+    DestinationArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+2. See [:material-code-braces: MetricDefinitionRequestTypeDef](./type_defs.md#metricdefinitionrequesttypedef) 
+## BatchGetRumMetricDefinitionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchGetRumMetricDefinitionsResponseTypeDef
+
+def get_value() -> BatchGetRumMetricDefinitionsResponseTypeDef:
+    return {
+        "MetricDefinitions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetRumMetricDefinitionsResponseTypeDef(TypedDict):
+    MetricDefinitions: List[MetricDefinitionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAppMonitorResponseTypeDef
 
 ```python title="Usage Example"
@@ -430,23 +705,50 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DataStorageTypeDef
+## BatchDeleteRumMetricDefinitionsResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_rum.type_defs import DataStorageTypeDef
+from mypy_boto3_rum.type_defs import BatchDeleteRumMetricDefinitionsResponseTypeDef
 
-def get_value() -> DataStorageTypeDef:
+def get_value() -> BatchDeleteRumMetricDefinitionsResponseTypeDef:
     return {
-        "CwLog": ...,
+        "Errors": ...,
+        "MetricDefinitionIds": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DataStorageTypeDef(TypedDict):
-    CwLog: NotRequired[CwLogTypeDef],  # (1)
+class BatchDeleteRumMetricDefinitionsResponseTypeDef(TypedDict):
+    Errors: List[BatchDeleteRumMetricDefinitionsErrorTypeDef],  # (1)
+    MetricDefinitionIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: CwLogTypeDef](./type_defs.md#cwlogtypedef) 
+1. See [:material-code-braces: BatchDeleteRumMetricDefinitionsErrorTypeDef](./type_defs.md#batchdeleterummetricdefinitionserrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetRumMetricDefinitionsRequestBatchGetRumMetricDefinitionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchGetRumMetricDefinitionsRequestBatchGetRumMetricDefinitionsPaginateTypeDef
+
+def get_value() -> BatchGetRumMetricDefinitionsRequestBatchGetRumMetricDefinitionsPaginateTypeDef:
+    return {
+        "AppMonitorName": ...,
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetRumMetricDefinitionsRequestBatchGetRumMetricDefinitionsPaginateTypeDef(TypedDict):
+    AppMonitorName: str,
+    Destination: MetricDestinationType,  # (1)
+    DestinationArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: MetricDestinationType](./literals.md#metricdestinationtype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAppMonitorsRequestListAppMonitorsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -464,6 +766,41 @@ class ListAppMonitorsRequestListAppMonitorsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRumMetricsDestinationsRequestListRumMetricsDestinationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import ListRumMetricsDestinationsRequestListRumMetricsDestinationsPaginateTypeDef
+
+def get_value() -> ListRumMetricsDestinationsRequestListRumMetricsDestinationsPaginateTypeDef:
+    return {
+        "AppMonitorName": ...,
+    }
+```
+
+```python title="Definition"
+class ListRumMetricsDestinationsRequestListRumMetricsDestinationsPaginateTypeDef(TypedDict):
+    AppMonitorName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DataStorageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import DataStorageTypeDef
+
+def get_value() -> DataStorageTypeDef:
+    return {
+        "CwLog": ...,
+    }
+```
+
+```python title="Definition"
+class DataStorageTypeDef(TypedDict):
+    CwLog: NotRequired[CwLogTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CwLogTypeDef](./type_defs.md#cwlogtypedef) 
 ## GetAppMonitorDataRequestGetAppMonitorDataPaginateTypeDef
 
 ```python title="Usage Example"
@@ -510,6 +847,28 @@ class GetAppMonitorDataRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
 2. See [:material-code-braces: QueryFilterTypeDef](./type_defs.md#queryfiltertypedef) 
+## ListRumMetricsDestinationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import ListRumMetricsDestinationsResponseTypeDef
+
+def get_value() -> ListRumMetricsDestinationsResponseTypeDef:
+    return {
+        "Destinations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRumMetricsDestinationsResponseTypeDef(TypedDict):
+    Destinations: List[MetricDestinationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricDestinationSummaryTypeDef](./type_defs.md#metricdestinationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRumEventsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -537,6 +896,29 @@ class PutRumEventsRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: AppMonitorDetailsTypeDef](./type_defs.md#appmonitordetailstypedef) 
 2. See [:material-code-braces: RumEventTypeDef](./type_defs.md#rumeventtypedef) 
 3. See [:material-code-braces: UserDetailsTypeDef](./type_defs.md#userdetailstypedef) 
+## BatchCreateRumMetricDefinitionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import BatchCreateRumMetricDefinitionsResponseTypeDef
+
+def get_value() -> BatchCreateRumMetricDefinitionsResponseTypeDef:
+    return {
+        "Errors": ...,
+        "MetricDefinitions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchCreateRumMetricDefinitionsResponseTypeDef(TypedDict):
+    Errors: List[BatchCreateRumMetricDefinitionsErrorTypeDef],  # (1)
+    MetricDefinitions: List[MetricDefinitionTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: BatchCreateRumMetricDefinitionsErrorTypeDef](./type_defs.md#batchcreaterummetricdefinitionserrortypedef) 
+2. See [:material-code-braces: MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AppMonitorTypeDef
 
 ```python title="Usage Example"
