@@ -4645,6 +4645,22 @@ class EndpointConfigSummaryTypeDef(TypedDict):
     CreationTime: datetime,
 ```
 
+## EndpointInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EndpointInfoTypeDef
+
+def get_value() -> EndpointInfoTypeDef:
+    return {
+        "EndpointName": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointInfoTypeDef(TypedDict):
+    EndpointName: str,
+```
+
 ## EndpointOutputConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4668,6 +4684,24 @@ class EndpointOutputConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProductionVariantInstanceTypeType](./literals.md#productionvariantinstancetypetype) 
+## InferenceMetricsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import InferenceMetricsTypeDef
+
+def get_value() -> InferenceMetricsTypeDef:
+    return {
+        "MaxInvocations": ...,
+        "ModelLatency": ...,
+    }
+```
+
+```python title="Definition"
+class InferenceMetricsTypeDef(TypedDict):
+    MaxInvocations: int,
+    ModelLatency: int,
+```
+
 ## EndpointSummaryTypeDef
 
 ```python title="Usage Example"
@@ -13698,6 +13732,26 @@ class ListEndpointConfigsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: EndpointConfigSummaryTypeDef](./type_defs.md#endpointconfigsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EndpointPerformanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EndpointPerformanceTypeDef
+
+def get_value() -> EndpointPerformanceTypeDef:
+    return {
+        "Metrics": ...,
+        "EndpointInfo": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointPerformanceTypeDef(TypedDict):
+    Metrics: InferenceMetricsTypeDef,  # (1)
+    EndpointInfo: EndpointInfoTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InferenceMetricsTypeDef](./type_defs.md#inferencemetricstypedef) 
+2. See [:material-code-braces: EndpointInfoTypeDef](./type_defs.md#endpointinfotypedef) 
 ## ListEndpointsOutputTypeDef
 
 ```python title="Usage Example"
@@ -18938,12 +18992,14 @@ class RecommendationJobInputConfigTypeDef(TypedDict):
     EndpointConfigurations: NotRequired[Sequence[EndpointInputConfigurationTypeDef]],  # (3)
     VolumeKmsKeyId: NotRequired[str],
     ContainerConfig: NotRequired[RecommendationJobContainerConfigTypeDef],  # (4)
+    Endpoints: NotRequired[Sequence[EndpointInfoTypeDef]],  # (5)
 ```
 
 1. See [:material-code-braces: TrafficPatternTypeDef](./type_defs.md#trafficpatterntypedef) 
 2. See [:material-code-braces: RecommendationJobResourceLimitTypeDef](./type_defs.md#recommendationjobresourcelimittypedef) 
 3. See [:material-code-braces: EndpointInputConfigurationTypeDef](./type_defs.md#endpointinputconfigurationtypedef) 
 4. See [:material-code-braces: RecommendationJobContainerConfigTypeDef](./type_defs.md#recommendationjobcontainerconfigtypedef) 
+5. See [:material-code-braces: EndpointInfoTypeDef](./type_defs.md#endpointinfotypedef) 
 ## ExplainerConfigTypeDef
 
 ```python title="Usage Example"
@@ -20485,6 +20541,7 @@ def get_value() -> DescribeInferenceRecommendationsJobResponseTypeDef:
         "InputConfig": ...,
         "StoppingConditions": ...,
         "InferenceRecommendations": ...,
+        "EndpointPerformances": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -20504,7 +20561,8 @@ class DescribeInferenceRecommendationsJobResponseTypeDef(TypedDict):
     InputConfig: RecommendationJobInputConfigTypeDef,  # (3)
     StoppingConditions: RecommendationJobStoppingConditionsTypeDef,  # (4)
     InferenceRecommendations: List[InferenceRecommendationTypeDef],  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+    EndpointPerformances: List[EndpointPerformanceTypeDef],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
 ```
 
 1. See [:material-code-brackets: RecommendationJobTypeType](./literals.md#recommendationjobtypetype) 
@@ -20512,7 +20570,8 @@ class DescribeInferenceRecommendationsJobResponseTypeDef(TypedDict):
 3. See [:material-code-braces: RecommendationJobInputConfigTypeDef](./type_defs.md#recommendationjobinputconfigtypedef) 
 4. See [:material-code-braces: RecommendationJobStoppingConditionsTypeDef](./type_defs.md#recommendationjobstoppingconditionstypedef) 
 5. See [:material-code-braces: InferenceRecommendationTypeDef](./type_defs.md#inferencerecommendationtypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+6. See [:material-code-braces: EndpointPerformanceTypeDef](./type_defs.md#endpointperformancetypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEndpointConfigInputRequestTypeDef
 
 ```python title="Usage Example"

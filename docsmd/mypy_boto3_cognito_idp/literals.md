@@ -232,6 +232,21 @@ DefaultEmailOptionTypeType = Literal[
     "CONFIRM_WITH_LINK",
 ]
 ```
+## DeletionProtectionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.literals import DeletionProtectionTypeType
+
+def get_value() -> DeletionProtectionTypeType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+DeletionProtectionTypeType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
 ## DeliveryMediumTypeType
 
 ```python title="Usage Example"

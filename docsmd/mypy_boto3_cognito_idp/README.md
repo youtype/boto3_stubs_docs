@@ -120,6 +120,7 @@ def get_value() -> AccountTakeoverEventActionTypeType:
 - [CustomEmailSenderLambdaVersionTypeType](./literals.md#customemailsenderlambdaversiontypetype)
 - [CustomSMSSenderLambdaVersionTypeType](./literals.md#customsmssenderlambdaversiontypetype)
 - [DefaultEmailOptionTypeType](./literals.md#defaultemailoptiontypetype)
+- [DeletionProtectionTypeType](./literals.md#deletionprotectiontypetype)
 - [DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)
 - [DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype)
 - [DomainStatusTypeType](./literals.md#domainstatustypetype)

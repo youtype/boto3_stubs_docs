@@ -323,7 +323,7 @@ parent.admin_disable_provider_for_user(**kwargs)
 
 ### admin\_disable\_user
 
-Disables the specified user.
+Deactivates a user and revokes all access tokens for the user.
 
 Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_disable_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_user)
@@ -1357,47 +1357,49 @@ def create_user_pool(
     *,
     PoolName: str,
     Policies: UserPoolPolicyTypeTypeDef = ...,  # (1)
-    LambdaConfig: LambdaConfigTypeTypeDef = ...,  # (2)
-    AutoVerifiedAttributes: Sequence[VerifiedAttributeTypeType] = ...,  # (3)
-    AliasAttributes: Sequence[AliasAttributeTypeType] = ...,  # (4)
-    UsernameAttributes: Sequence[UsernameAttributeTypeType] = ...,  # (5)
+    DeletionProtection: DeletionProtectionTypeType = ...,  # (2)
+    LambdaConfig: LambdaConfigTypeTypeDef = ...,  # (3)
+    AutoVerifiedAttributes: Sequence[VerifiedAttributeTypeType] = ...,  # (4)
+    AliasAttributes: Sequence[AliasAttributeTypeType] = ...,  # (5)
+    UsernameAttributes: Sequence[UsernameAttributeTypeType] = ...,  # (6)
     SmsVerificationMessage: str = ...,
     EmailVerificationMessage: str = ...,
     EmailVerificationSubject: str = ...,
-    VerificationMessageTemplate: VerificationMessageTemplateTypeTypeDef = ...,  # (6)
+    VerificationMessageTemplate: VerificationMessageTemplateTypeTypeDef = ...,  # (7)
     SmsAuthenticationMessage: str = ...,
-    MfaConfiguration: UserPoolMfaTypeType = ...,  # (7)
-    UserAttributeUpdateSettings: UserAttributeUpdateSettingsTypeTypeDef = ...,  # (8)
-    DeviceConfiguration: DeviceConfigurationTypeTypeDef = ...,  # (9)
-    EmailConfiguration: EmailConfigurationTypeTypeDef = ...,  # (10)
-    SmsConfiguration: SmsConfigurationTypeTypeDef = ...,  # (11)
+    MfaConfiguration: UserPoolMfaTypeType = ...,  # (8)
+    UserAttributeUpdateSettings: UserAttributeUpdateSettingsTypeTypeDef = ...,  # (9)
+    DeviceConfiguration: DeviceConfigurationTypeTypeDef = ...,  # (10)
+    EmailConfiguration: EmailConfigurationTypeTypeDef = ...,  # (11)
+    SmsConfiguration: SmsConfigurationTypeTypeDef = ...,  # (12)
     UserPoolTags: Mapping[str, str] = ...,
-    AdminCreateUserConfig: AdminCreateUserConfigTypeTypeDef = ...,  # (12)
-    Schema: Sequence[SchemaAttributeTypeTypeDef] = ...,  # (13)
-    UserPoolAddOns: UserPoolAddOnsTypeTypeDef = ...,  # (14)
-    UsernameConfiguration: UsernameConfigurationTypeTypeDef = ...,  # (15)
-    AccountRecoverySetting: AccountRecoverySettingTypeTypeDef = ...,  # (16)
-) -> CreateUserPoolResponseTypeDef:  # (17)
+    AdminCreateUserConfig: AdminCreateUserConfigTypeTypeDef = ...,  # (13)
+    Schema: Sequence[SchemaAttributeTypeTypeDef] = ...,  # (14)
+    UserPoolAddOns: UserPoolAddOnsTypeTypeDef = ...,  # (15)
+    UsernameConfiguration: UsernameConfigurationTypeTypeDef = ...,  # (16)
+    AccountRecoverySetting: AccountRecoverySettingTypeTypeDef = ...,  # (17)
+) -> CreateUserPoolResponseTypeDef:  # (18)
     ...
 ```
 
 1. See [:material-code-braces: UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef) 
-2. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
-3. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
-4. See [:material-code-brackets: AliasAttributeTypeType](./literals.md#aliasattributetypetype) 
-5. See [:material-code-brackets: UsernameAttributeTypeType](./literals.md#usernameattributetypetype) 
-6. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
-7. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
-8. See [:material-code-braces: UserAttributeUpdateSettingsTypeTypeDef](./type_defs.md#userattributeupdatesettingstypetypedef) 
-9. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
-10. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
-11. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
-12. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
-13. See [:material-code-braces: SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef) 
-14. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
-15. See [:material-code-braces: UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef) 
-16. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
-17. See [:material-code-braces: CreateUserPoolResponseTypeDef](./type_defs.md#createuserpoolresponsetypedef) 
+2. See [:material-code-brackets: DeletionProtectionTypeType](./literals.md#deletionprotectiontypetype) 
+3. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+4. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
+5. See [:material-code-brackets: AliasAttributeTypeType](./literals.md#aliasattributetypetype) 
+6. See [:material-code-brackets: UsernameAttributeTypeType](./literals.md#usernameattributetypetype) 
+7. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
+8. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+9. See [:material-code-braces: UserAttributeUpdateSettingsTypeTypeDef](./type_defs.md#userattributeupdatesettingstypetypedef) 
+10. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
+11. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
+12. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
+13. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
+14. See [:material-code-braces: SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef) 
+15. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
+16. See [:material-code-braces: UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef) 
+17. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
+18. See [:material-code-braces: CreateUserPoolResponseTypeDef](./type_defs.md#createuserpoolresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2771,7 +2773,8 @@ parent.respond_to_auth_challenge(**kwargs)
 
 ### revoke\_token
 
-Revokes all of the access tokens generated by the specified refresh token.
+Revokes all of the access tokens generated by, and at the same time as, the
+specified refresh token.
 
 Type annotations and code completion for `#!python boto3.client("cognito-idp").revoke_token` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.revoke_token)
@@ -3353,38 +3356,40 @@ def update_user_pool(
     *,
     UserPoolId: str,
     Policies: UserPoolPolicyTypeTypeDef = ...,  # (1)
-    LambdaConfig: LambdaConfigTypeTypeDef = ...,  # (2)
-    AutoVerifiedAttributes: Sequence[VerifiedAttributeTypeType] = ...,  # (3)
+    DeletionProtection: DeletionProtectionTypeType = ...,  # (2)
+    LambdaConfig: LambdaConfigTypeTypeDef = ...,  # (3)
+    AutoVerifiedAttributes: Sequence[VerifiedAttributeTypeType] = ...,  # (4)
     SmsVerificationMessage: str = ...,
     EmailVerificationMessage: str = ...,
     EmailVerificationSubject: str = ...,
-    VerificationMessageTemplate: VerificationMessageTemplateTypeTypeDef = ...,  # (4)
+    VerificationMessageTemplate: VerificationMessageTemplateTypeTypeDef = ...,  # (5)
     SmsAuthenticationMessage: str = ...,
-    UserAttributeUpdateSettings: UserAttributeUpdateSettingsTypeTypeDef = ...,  # (5)
-    MfaConfiguration: UserPoolMfaTypeType = ...,  # (6)
-    DeviceConfiguration: DeviceConfigurationTypeTypeDef = ...,  # (7)
-    EmailConfiguration: EmailConfigurationTypeTypeDef = ...,  # (8)
-    SmsConfiguration: SmsConfigurationTypeTypeDef = ...,  # (9)
+    UserAttributeUpdateSettings: UserAttributeUpdateSettingsTypeTypeDef = ...,  # (6)
+    MfaConfiguration: UserPoolMfaTypeType = ...,  # (7)
+    DeviceConfiguration: DeviceConfigurationTypeTypeDef = ...,  # (8)
+    EmailConfiguration: EmailConfigurationTypeTypeDef = ...,  # (9)
+    SmsConfiguration: SmsConfigurationTypeTypeDef = ...,  # (10)
     UserPoolTags: Mapping[str, str] = ...,
-    AdminCreateUserConfig: AdminCreateUserConfigTypeTypeDef = ...,  # (10)
-    UserPoolAddOns: UserPoolAddOnsTypeTypeDef = ...,  # (11)
-    AccountRecoverySetting: AccountRecoverySettingTypeTypeDef = ...,  # (12)
+    AdminCreateUserConfig: AdminCreateUserConfigTypeTypeDef = ...,  # (11)
+    UserPoolAddOns: UserPoolAddOnsTypeTypeDef = ...,  # (12)
+    AccountRecoverySetting: AccountRecoverySettingTypeTypeDef = ...,  # (13)
 ) -> Dict[str, Any]:
     ...
 ```
 
 1. See [:material-code-braces: UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef) 
-2. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
-3. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
-4. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
-5. See [:material-code-braces: UserAttributeUpdateSettingsTypeTypeDef](./type_defs.md#userattributeupdatesettingstypetypedef) 
-6. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
-7. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
-8. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
-9. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
-10. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
-11. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
-12. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
+2. See [:material-code-brackets: DeletionProtectionTypeType](./literals.md#deletionprotectiontypetype) 
+3. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+4. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
+5. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
+6. See [:material-code-braces: UserAttributeUpdateSettingsTypeTypeDef](./type_defs.md#userattributeupdatesettingstypetypedef) 
+7. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+8. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
+9. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
+10. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
+11. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
+12. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
+13. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
 
 
 ```python title="Usage example with kwargs"
