@@ -127,6 +127,7 @@ def get_value() -> AccessMethodTypeType:
 - [CertificateAuthorityCSRCreatedWaiterName](./literals.md#certificateauthoritycsrcreatedwaitername)
 - [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
 - [CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype)
+- [CertificateAuthorityUsageModeType](./literals.md#certificateauthorityusagemodetype)
 - [CertificateIssuedWaiterName](./literals.md#certificateissuedwaitername)
 - [ExtendedKeyUsageTypeType](./literals.md#extendedkeyusagetypetype)
 - [FailureReasonType](./literals.md#failurereasontype)

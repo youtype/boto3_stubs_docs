@@ -435,6 +435,7 @@ AutoMLMetricExtendedEnumType = Literal[
     "BalancedAccuracy",
     "F1",
     "F1macro",
+    "InferenceLatency",
     "LogLoss",
     "MAE",
     "MSE",
@@ -2232,6 +2233,20 @@ ListImagesPaginatorName = Literal[
     "list_images",
 ]
 ```
+## ListInferenceRecommendationsJobStepsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListInferenceRecommendationsJobStepsPaginatorName
+
+def get_value() -> ListInferenceRecommendationsJobStepsPaginatorName:
+    return "list_inference_recommendations_job_steps"
+```
+
+```python title="Definition"
+ListInferenceRecommendationsJobStepsPaginatorName = Literal[
+    "list_inference_recommendations_job_steps",
+]
+```
 ## ListInferenceRecommendationsJobsPaginatorName
 
 ```python title="Usage Example"
@@ -3743,6 +3758,20 @@ RecommendationJobTypeType = Literal[
     "Default",
 ]
 ```
+## RecommendationStepTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import RecommendationStepTypeType
+
+def get_value() -> RecommendationStepTypeType:
+    return "BENCHMARK"
+```
+
+```python title="Definition"
+RecommendationStepTypeType = Literal[
+    "BENCHMARK",
+]
+```
 ## RecordWrapperType
 
 ```python title="Usage Example"
@@ -5142,6 +5171,7 @@ PaginatorName = Literal[
     "list_hyper_parameter_tuning_jobs",
     "list_image_versions",
     "list_images",
+    "list_inference_recommendations_job_steps",
     "list_inference_recommendations_jobs",
     "list_labeling_jobs",
     "list_labeling_jobs_for_workteam",

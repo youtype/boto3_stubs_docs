@@ -339,6 +339,21 @@ LogDriverType = Literal[
     "syslog",
 ]
 ```
+## OrchestrationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_batch.literals import OrchestrationTypeType
+
+def get_value() -> OrchestrationTypeType:
+    return "ECS"
+```
+
+```python title="Definition"
+OrchestrationTypeType = Literal[
+    "ECS",
+    "EKS",
+]
+```
 ## PlatformCapabilityType
 
 ```python title="Usage Example"

@@ -6070,6 +6070,28 @@ class ListImagesRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ImageSortByType](./literals.md#imagesortbytype) 
 2. See [:material-code-brackets: ImageSortOrderType](./literals.md#imagesortordertype) 
+## ListInferenceRecommendationsJobStepsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListInferenceRecommendationsJobStepsRequestRequestTypeDef
+
+def get_value() -> ListInferenceRecommendationsJobStepsRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceRecommendationsJobStepsRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    Status: NotRequired[RecommendationJobStatusType],  # (1)
+    StepType: NotRequired[RecommendationStepTypeType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: RecommendationJobStatusType](./literals.md#recommendationjobstatustype) 
+2. See [:material-code-brackets: RecommendationStepTypeType](./literals.md#recommendationsteptypetype) 
 ## ListInferenceRecommendationsJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -14928,6 +14950,28 @@ class ListImagesRequestListImagesPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: ImageSortByType](./literals.md#imagesortbytype) 
 2. See [:material-code-brackets: ImageSortOrderType](./literals.md#imagesortordertype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListInferenceRecommendationsJobStepsRequestListInferenceRecommendationsJobStepsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListInferenceRecommendationsJobStepsRequestListInferenceRecommendationsJobStepsPaginateTypeDef
+
+def get_value() -> ListInferenceRecommendationsJobStepsRequestListInferenceRecommendationsJobStepsPaginateTypeDef:
+    return {
+        "JobName": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceRecommendationsJobStepsRequestListInferenceRecommendationsJobStepsPaginateTypeDef(TypedDict):
+    JobName: str,
+    Status: NotRequired[RecommendationJobStatusType],  # (1)
+    StepType: NotRequired[RecommendationStepTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RecommendationJobStatusType](./literals.md#recommendationjobstatustype) 
+2. See [:material-code-brackets: RecommendationStepTypeType](./literals.md#recommendationsteptypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInferenceRecommendationsJobsRequestListInferenceRecommendationsJobsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -17741,6 +17785,28 @@ class InferenceRecommendationTypeDef(TypedDict):
 1. See [:material-code-braces: RecommendationMetricsTypeDef](./type_defs.md#recommendationmetricstypedef) 
 2. See [:material-code-braces: EndpointOutputConfigurationTypeDef](./type_defs.md#endpointoutputconfigurationtypedef) 
 3. See [:material-code-braces: ModelConfigurationTypeDef](./type_defs.md#modelconfigurationtypedef) 
+## RecommendationJobInferenceBenchmarkTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RecommendationJobInferenceBenchmarkTypeDef
+
+def get_value() -> RecommendationJobInferenceBenchmarkTypeDef:
+    return {
+        "ModelConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationJobInferenceBenchmarkTypeDef(TypedDict):
+    ModelConfiguration: ModelConfigurationTypeDef,  # (3)
+    Metrics: NotRequired[RecommendationMetricsTypeDef],  # (1)
+    EndpointConfiguration: NotRequired[EndpointOutputConfigurationTypeDef],  # (2)
+    FailureReason: NotRequired[str],
+```
+
+1. See [:material-code-braces: RecommendationMetricsTypeDef](./type_defs.md#recommendationmetricstypedef) 
+2. See [:material-code-braces: EndpointOutputConfigurationTypeDef](./type_defs.md#endpointoutputconfigurationtypedef) 
+3. See [:material-code-braces: ModelConfigurationTypeDef](./type_defs.md#modelconfigurationtypedef) 
 ## SearchExpressionTypeDef
 
 ```python title="Usage Example"
@@ -19547,6 +19613,30 @@ class TrainingJobTypeDef(TypedDict):
 17. See [:material-code-braces: DebugRuleEvaluationStatusTypeDef](./type_defs.md#debugruleevaluationstatustypedef) 
 18. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
 19. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## InferenceRecommendationsJobStepTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import InferenceRecommendationsJobStepTypeDef
+
+def get_value() -> InferenceRecommendationsJobStepTypeDef:
+    return {
+        "StepType": ...,
+        "JobName": ...,
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class InferenceRecommendationsJobStepTypeDef(TypedDict):
+    StepType: RecommendationStepTypeType,  # (1)
+    JobName: str,
+    Status: RecommendationJobStatusType,  # (2)
+    InferenceBenchmark: NotRequired[RecommendationJobInferenceBenchmarkTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RecommendationStepTypeType](./literals.md#recommendationsteptypetype) 
+2. See [:material-code-brackets: RecommendationJobStatusType](./literals.md#recommendationjobstatustype) 
+3. See [:material-code-braces: RecommendationJobInferenceBenchmarkTypeDef](./type_defs.md#recommendationjobinferencebenchmarktypedef) 
 ## CreateModelInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -20811,6 +20901,28 @@ class HyperParameterTuningJobSearchEntityTypeDef(TypedDict):
 8. See [:material-code-braces: HyperParameterTrainingJobSummaryTypeDef](./type_defs.md#hyperparametertrainingjobsummarytypedef) 
 9. See [:material-code-braces: HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef) 
 10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListInferenceRecommendationsJobStepsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListInferenceRecommendationsJobStepsResponseTypeDef
+
+def get_value() -> ListInferenceRecommendationsJobStepsResponseTypeDef:
+    return {
+        "Steps": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceRecommendationsJobStepsResponseTypeDef(TypedDict):
+    Steps: List[InferenceRecommendationsJobStepTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InferenceRecommendationsJobStepTypeDef](./type_defs.md#inferencerecommendationsjobsteptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLabelingJobsResponseTypeDef
 
 ```python title="Usage Example"

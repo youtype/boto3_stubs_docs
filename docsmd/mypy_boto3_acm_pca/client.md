@@ -115,7 +115,8 @@ def create_certificate_authority(
     IdempotencyToken: str = ...,
     KeyStorageSecurityStandard: KeyStorageSecurityStandardType = ...,  # (4)
     Tags: Sequence[TagTypeDef] = ...,  # (5)
-) -> CreateCertificateAuthorityResponseTypeDef:  # (6)
+    UsageMode: CertificateAuthorityUsageModeType = ...,  # (6)
+) -> CreateCertificateAuthorityResponseTypeDef:  # (7)
     ...
 ```
 
@@ -124,7 +125,8 @@ def create_certificate_authority(
 3. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
 4. See [:material-code-brackets: KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-6. See [:material-code-braces: CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef) 
+6. See [:material-code-brackets: CertificateAuthorityUsageModeType](./literals.md#certificateauthorityusagemodetype) 
+7. See [:material-code-braces: CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

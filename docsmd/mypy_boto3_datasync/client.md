@@ -68,7 +68,7 @@ def can_paginate(
 
 ### cancel\_task\_execution
 
-Cancels execution of a task.
+Stops an DataSync task execution that's in progress.
 
 Type annotations and code completion for `#!python boto3.client("datasync").cancel_task_execution` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
@@ -111,7 +111,7 @@ def close(
 
 ### create\_agent
 
-Activates an DataSync agent that you have deployed on your host.
+Activates an DataSync agent that you have deployed in your storage environment.
 
 Type annotations and code completion for `#!python boto3.client("datasync").create_agent` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent)
@@ -258,7 +258,8 @@ parent.create_location_fsx_ontap(**kwargs)
 
 ### create\_location\_fsx\_open\_zfs
 
-Creates an endpoint for an Amazon FSx for OpenZFS file system.
+Creates an endpoint for an Amazon FSx for OpenZFS file system that DataSync can
+access for a transfer.
 
 Type annotations and code completion for `#!python boto3.client("datasync").create_location_fsx_open_zfs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_open_zfs)
@@ -439,6 +440,7 @@ def create_location_object_storage(
     AccessKey: str = ...,
     SecretKey: str = ...,
     Tags: Sequence[TagListEntryTypeDef] = ...,  # (2)
+    ServerCertificate: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> CreateLocationObjectStorageResponseTypeDef:  # (3)
     ...
 ```
@@ -462,7 +464,8 @@ parent.create_location_object_storage(**kwargs)
 
 ### create\_location\_s3
 
-Creates an endpoint for an Amazon S3 bucket.
+Creates an endpoint for an Amazon S3 bucket that DataSync can access for a
+transfer.
 
 Type annotations and code completion for `#!python boto3.client("datasync").create_location_s3` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3)
@@ -729,8 +732,8 @@ parent.describe_location_efs(**kwargs)
 
 ### describe\_location\_fsx\_lustre
 
-Returns metadata about an Amazon FSx for Lustre location, such as information
-about its path.
+Provides details about how an DataSync location for an Amazon FSx for Lustre
+file system is configured.
 
 Type annotations and code completion for `#!python boto3.client("datasync").describe_location_fsx_lustre` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_lustre)
@@ -789,8 +792,8 @@ parent.describe_location_fsx_ontap(**kwargs)
 
 ### describe\_location\_fsx\_open\_zfs
 
-Returns metadata about an Amazon FSx for OpenZFS location, such as information
-about its path.
+Provides details about how an DataSync location for an Amazon FSx for OpenZFS
+file system is configured.
 
 Type annotations and code completion for `#!python boto3.client("datasync").describe_location_fsx_open_zfs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_open_zfs)
@@ -1432,8 +1435,8 @@ parent.update_location_nfs(**kwargs)
 
 ### update\_location\_object\_storage
 
-Updates some of the parameters of a previously created location for self-managed
-object storage server access.
+Updates some parameters of an existing object storage location that DataSync
+accesses for a transfer.
 
 Type annotations and code completion for `#!python boto3.client("datasync").update_location_object_storage` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
@@ -1449,6 +1452,7 @@ def update_location_object_storage(
     AccessKey: str = ...,
     SecretKey: str = ...,
     AgentArns: Sequence[str] = ...,
+    ServerCertificate: Union[str, bytes, IO[Any], StreamingBody] = ...,
 ) -> Dict[str, Any]:
     ...
 ```

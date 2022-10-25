@@ -1310,6 +1310,7 @@ class CertificateAuthorityTypeDef(TypedDict):
     RevocationConfiguration: NotRequired[RevocationConfigurationTypeDef],  # (5)
     RestorableUntil: NotRequired[datetime],
     KeyStorageSecurityStandard: NotRequired[KeyStorageSecurityStandardType],  # (6)
+    UsageMode: NotRequired[CertificateAuthorityUsageModeType],  # (7)
 ```
 
 1. See [:material-code-brackets: CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype) 
@@ -1318,6 +1319,7 @@ class CertificateAuthorityTypeDef(TypedDict):
 4. See [:material-code-braces: CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef) 
 5. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
 6. See [:material-code-brackets: KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype) 
+7. See [:material-code-brackets: CertificateAuthorityUsageModeType](./literals.md#certificateauthorityusagemodetype) 
 ## CreateCertificateAuthorityRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1338,6 +1340,7 @@ class CreateCertificateAuthorityRequestRequestTypeDef(TypedDict):
     IdempotencyToken: NotRequired[str],
     KeyStorageSecurityStandard: NotRequired[KeyStorageSecurityStandardType],  # (4)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    UsageMode: NotRequired[CertificateAuthorityUsageModeType],  # (6)
 ```
 
 1. See [:material-code-braces: CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef) 
@@ -1345,6 +1348,7 @@ class CreateCertificateAuthorityRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
 4. See [:material-code-brackets: KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-brackets: CertificateAuthorityUsageModeType](./literals.md#certificateauthorityusagemodetype) 
 ## DescribeCertificateAuthorityResponseTypeDef
 
 ```python title="Usage Example"

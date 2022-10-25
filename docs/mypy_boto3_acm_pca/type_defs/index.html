@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -39461,6 +39461,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-acm-p
 <a id="__codelineno-131-13" name="__codelineno-131-13" href="#__codelineno-131-13"></a>    <span class="n">RevocationConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">RevocationConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (5)</span>
 <a id="__codelineno-131-14" name="__codelineno-131-14" href="#__codelineno-131-14"></a>    <span class="n">RestorableUntil</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">datetime</span><span class="p">],</span>
 <a id="__codelineno-131-15" name="__codelineno-131-15" href="#__codelineno-131-15"></a>    <span class="n">KeyStorageSecurityStandard</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">KeyStorageSecurityStandardType</span><span class="p">],</span>  <span class="c1"># (6)</span>
+<a id="__codelineno-131-16" name="__codelineno-131-16" href="#__codelineno-131-16"></a>    <span class="n">UsageMode</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CertificateAuthorityUsageModeType</span><span class="p">],</span>  <span class="c1"># (7)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#certificateauthoritytypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CertificateAuthorityTypeType</a> </li>
@@ -39469,6 +39470,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-acm-p
 <li>See <a href="./#certificateauthorityconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CertificateAuthorityConfigurationTypeDef</a> </li>
 <li>See <a href="./#revocationconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RevocationConfigurationTypeDef</a> </li>
 <li>See <a href="../literals/#keystoragesecuritystandardtype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> KeyStorageSecurityStandardType</a> </li>
+<li>See <a href="../literals/#certificateauthorityusagemodetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CertificateAuthorityUsageModeType</a> </li>
 </ol>
 <h2 id="createcertificateauthorityrequestrequesttypedef">CreateCertificateAuthorityRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_acm_pca.type_defs</span> <span class="kn">import</span> <span class="n">CreateCertificateAuthorityRequestRequestTypeDef</span>
@@ -39486,6 +39488,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-acm-p
 <a id="__codelineno-133-5" name="__codelineno-133-5" href="#__codelineno-133-5"></a>    <span class="n">IdempotencyToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-133-6" name="__codelineno-133-6" href="#__codelineno-133-6"></a>    <span class="n">KeyStorageSecurityStandard</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">KeyStorageSecurityStandardType</span><span class="p">],</span>  <span class="c1"># (4)</span>
 <a id="__codelineno-133-7" name="__codelineno-133-7" href="#__codelineno-133-7"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TagTypeDef</span><span class="p">]],</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-133-8" name="__codelineno-133-8" href="#__codelineno-133-8"></a>    <span class="n">UsageMode</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">CertificateAuthorityUsageModeType</span><span class="p">],</span>  <span class="c1"># (6)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#certificateauthorityconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CertificateAuthorityConfigurationTypeDef</a> </li>
@@ -39493,6 +39496,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-acm-p
 <li>See <a href="./#revocationconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RevocationConfigurationTypeDef</a> </li>
 <li>See <a href="../literals/#keystoragesecuritystandardtype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> KeyStorageSecurityStandardType</a> </li>
 <li>See <a href="./#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
+<li>See <a href="../literals/#certificateauthorityusagemodetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CertificateAuthorityUsageModeType</a> </li>
 </ol>
 <h2 id="describecertificateauthorityresponsetypedef">DescribeCertificateAuthorityResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_acm_pca.type_defs</span> <span class="kn">import</span> <span class="n">DescribeCertificateAuthorityResponseTypeDef</span>
@@ -39603,10 +39607,10 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-acm-p
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
     
   </body>

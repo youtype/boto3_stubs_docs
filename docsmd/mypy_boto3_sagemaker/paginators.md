@@ -1726,6 +1726,69 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListImagesRequestListImagesPaginateTypeDef](./type_defs.md#listimagesrequestlistimagespaginatetypedef) 
+## ListInferenceRecommendationsJobStepsPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_inference_recommendations_job_steps")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListInferenceRecommendationsJobSteps)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListInferenceRecommendationsJobStepsPaginator
+
+def get_list_inference_recommendations_job_steps_paginator() -> ListInferenceRecommendationsJobStepsPaginator:
+    return Session().client("sagemaker").get_paginator("list_inference_recommendations_job_steps")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListInferenceRecommendationsJobStepsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListInferenceRecommendationsJobStepsPaginator = client.get_paginator("list_inference_recommendations_job_steps")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListInferenceRecommendationsJobStepsPaginator](./paginators.md#listinferencerecommendationsjobstepspaginator)
+3. item: [:material-code-braces: ListInferenceRecommendationsJobStepsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobstepsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListInferenceRecommendationsJobStepsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    JobName: str,
+    Status: RecommendationJobStatusType = ...,  # (1)
+    StepType: RecommendationStepTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListInferenceRecommendationsJobStepsResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: RecommendationJobStatusType](./literals.md#recommendationjobstatustype) 
+2. See [:material-code-brackets: RecommendationStepTypeType](./literals.md#recommendationsteptypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListInferenceRecommendationsJobStepsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobstepsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListInferenceRecommendationsJobStepsRequestListInferenceRecommendationsJobStepsPaginateTypeDef = {  # (1)
+    "JobName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInferenceRecommendationsJobStepsRequestListInferenceRecommendationsJobStepsPaginateTypeDef](./type_defs.md#listinferencerecommendationsjobstepsrequestlistinferencerecommendationsjobstepspaginatetypedef) 
 ## ListInferenceRecommendationsJobsPaginator
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_inference_recommendations_jobs")`.

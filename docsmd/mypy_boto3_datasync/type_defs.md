@@ -808,6 +808,7 @@ class UpdateLocationObjectStorageRequestRequestTypeDef(TypedDict):
     AccessKey: NotRequired[str],
     SecretKey: NotRequired[str],
     AgentArns: NotRequired[Sequence[str]],
+    ServerCertificate: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 1. See [:material-code-brackets: ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype) 
@@ -904,6 +905,7 @@ class CreateLocationObjectStorageRequestRequestTypeDef(TypedDict):
     AccessKey: NotRequired[str],
     SecretKey: NotRequired[str],
     Tags: NotRequired[Sequence[TagListEntryTypeDef]],  # (2)
+    ServerCertificate: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
 ```
 
 1. See [:material-code-brackets: ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype) 
@@ -1223,6 +1225,7 @@ def get_value() -> DescribeLocationObjectStorageResponseTypeDef:
         "ServerProtocol": ...,
         "AgentArns": ...,
         "CreationTime": ...,
+        "ServerCertificate": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1236,6 +1239,7 @@ class DescribeLocationObjectStorageResponseTypeDef(TypedDict):
     ServerProtocol: ObjectStorageServerProtocolType,  # (1)
     AgentArns: List[str],
     CreationTime: datetime,
+    ServerCertificate: bytes,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -1929,6 +1933,7 @@ def get_value() -> DescribeTaskExecutionResponseTypeDef:
         "BytesWritten": ...,
         "BytesTransferred": ...,
         "Result": ...,
+        "BytesCompressed": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1947,6 +1952,7 @@ class DescribeTaskExecutionResponseTypeDef(TypedDict):
     BytesWritten: int,
     BytesTransferred: int,
     Result: TaskExecutionResultDetailTypeDef,  # (5)
+    BytesCompressed: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 

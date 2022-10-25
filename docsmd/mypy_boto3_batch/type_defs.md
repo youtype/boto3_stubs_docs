@@ -94,6 +94,24 @@ class CancelJobRequestRequestTypeDef(TypedDict):
     reason: str,
 ```
 
+## EksConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksConfigurationTypeDef
+
+def get_value() -> EksConfigurationTypeDef:
+    return {
+        "eksClusterArn": ...,
+        "kubernetesNamespace": ...,
+    }
+```
+
+```python title="Definition"
+class EksConfigurationTypeDef(TypedDict):
+    eksClusterArn: str,
+    kubernetesNamespace: str,
+```
+
 ## UpdatePolicyTypeDef
 
 ```python title="Usage Example"
@@ -144,6 +162,7 @@ def get_value() -> Ec2ConfigurationTypeDef:
 class Ec2ConfigurationTypeDef(TypedDict):
     imageType: str,
     imageIdOverride: NotRequired[str],
+    imageKubernetesVersion: NotRequired[str],
 ```
 
 ## LaunchTemplateSpecificationTypeDef
@@ -537,6 +556,145 @@ class EFSAuthorizationConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype) 
+## EksAttemptContainerDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksAttemptContainerDetailTypeDef
+
+def get_value() -> EksAttemptContainerDetailTypeDef:
+    return {
+        "exitCode": ...,
+    }
+```
+
+```python title="Definition"
+class EksAttemptContainerDetailTypeDef(TypedDict):
+    exitCode: NotRequired[int],
+    reason: NotRequired[str],
+```
+
+## EksContainerEnvironmentVariableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksContainerEnvironmentVariableTypeDef
+
+def get_value() -> EksContainerEnvironmentVariableTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class EksContainerEnvironmentVariableTypeDef(TypedDict):
+    name: str,
+    value: NotRequired[str],
+```
+
+## EksContainerResourceRequirementsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksContainerResourceRequirementsTypeDef
+
+def get_value() -> EksContainerResourceRequirementsTypeDef:
+    return {
+        "limits": ...,
+    }
+```
+
+```python title="Definition"
+class EksContainerResourceRequirementsTypeDef(TypedDict):
+    limits: NotRequired[Dict[str, str]],
+    requests: NotRequired[Dict[str, str]],
+```
+
+## EksContainerSecurityContextTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksContainerSecurityContextTypeDef
+
+def get_value() -> EksContainerSecurityContextTypeDef:
+    return {
+        "runAsUser": ...,
+    }
+```
+
+```python title="Definition"
+class EksContainerSecurityContextTypeDef(TypedDict):
+    runAsUser: NotRequired[int],
+    runAsGroup: NotRequired[int],
+    privileged: NotRequired[bool],
+    readOnlyRootFilesystem: NotRequired[bool],
+    runAsNonRoot: NotRequired[bool],
+```
+
+## EksContainerVolumeMountTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksContainerVolumeMountTypeDef
+
+def get_value() -> EksContainerVolumeMountTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class EksContainerVolumeMountTypeDef(TypedDict):
+    name: NotRequired[str],
+    mountPath: NotRequired[str],
+    readOnly: NotRequired[bool],
+```
+
+## EksEmptyDirTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksEmptyDirTypeDef
+
+def get_value() -> EksEmptyDirTypeDef:
+    return {
+        "medium": ...,
+    }
+```
+
+```python title="Definition"
+class EksEmptyDirTypeDef(TypedDict):
+    medium: NotRequired[str],
+    sizeLimit: NotRequired[str],
+```
+
+## EksHostPathTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksHostPathTypeDef
+
+def get_value() -> EksHostPathTypeDef:
+    return {
+        "path": ...,
+    }
+```
+
+```python title="Definition"
+class EksHostPathTypeDef(TypedDict):
+    path: NotRequired[str],
+```
+
+## EksSecretTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksSecretTypeDef
+
+def get_value() -> EksSecretTypeDef:
+    return {
+        "secretName": ...,
+    }
+```
+
+```python title="Definition"
+class EksSecretTypeDef(TypedDict):
+    secretName: str,
+    optional: NotRequired[bool],
+```
+
 ## EvaluateOnExitTypeDef
 
 ```python title="Usage Example"
@@ -1280,6 +1438,130 @@ class EFSVolumeConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: EFSTransitEncryptionType](./literals.md#efstransitencryptiontype) 
 2. See [:material-code-braces: EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef) 
+## EksAttemptDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksAttemptDetailTypeDef
+
+def get_value() -> EksAttemptDetailTypeDef:
+    return {
+        "containers": ...,
+    }
+```
+
+```python title="Definition"
+class EksAttemptDetailTypeDef(TypedDict):
+    containers: NotRequired[List[EksAttemptContainerDetailTypeDef]],  # (1)
+    podName: NotRequired[str],
+    nodeName: NotRequired[str],
+    startedAt: NotRequired[int],
+    stoppedAt: NotRequired[int],
+    statusReason: NotRequired[str],
+```
+
+1. See [:material-code-braces: EksAttemptContainerDetailTypeDef](./type_defs.md#eksattemptcontainerdetailtypedef) 
+## EksContainerOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksContainerOverrideTypeDef
+
+def get_value() -> EksContainerOverrideTypeDef:
+    return {
+        "image": ...,
+    }
+```
+
+```python title="Definition"
+class EksContainerOverrideTypeDef(TypedDict):
+    image: NotRequired[str],
+    command: NotRequired[Sequence[str]],
+    args: NotRequired[Sequence[str]],
+    env: NotRequired[Sequence[EksContainerEnvironmentVariableTypeDef]],  # (1)
+    resources: NotRequired[EksContainerResourceRequirementsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EksContainerEnvironmentVariableTypeDef](./type_defs.md#ekscontainerenvironmentvariabletypedef) 
+2. See [:material-code-braces: EksContainerResourceRequirementsTypeDef](./type_defs.md#ekscontainerresourcerequirementstypedef) 
+## EksContainerDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksContainerDetailTypeDef
+
+def get_value() -> EksContainerDetailTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class EksContainerDetailTypeDef(TypedDict):
+    name: NotRequired[str],
+    image: NotRequired[str],
+    imagePullPolicy: NotRequired[str],
+    command: NotRequired[List[str]],
+    args: NotRequired[List[str]],
+    env: NotRequired[List[EksContainerEnvironmentVariableTypeDef]],  # (1)
+    resources: NotRequired[EksContainerResourceRequirementsTypeDef],  # (2)
+    exitCode: NotRequired[int],
+    reason: NotRequired[str],
+    volumeMounts: NotRequired[List[EksContainerVolumeMountTypeDef]],  # (3)
+    securityContext: NotRequired[EksContainerSecurityContextTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: EksContainerEnvironmentVariableTypeDef](./type_defs.md#ekscontainerenvironmentvariabletypedef) 
+2. See [:material-code-braces: EksContainerResourceRequirementsTypeDef](./type_defs.md#ekscontainerresourcerequirementstypedef) 
+3. See [:material-code-braces: EksContainerVolumeMountTypeDef](./type_defs.md#ekscontainervolumemounttypedef) 
+4. See [:material-code-braces: EksContainerSecurityContextTypeDef](./type_defs.md#ekscontainersecuritycontexttypedef) 
+## EksContainerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksContainerTypeDef
+
+def get_value() -> EksContainerTypeDef:
+    return {
+        "image": ...,
+    }
+```
+
+```python title="Definition"
+class EksContainerTypeDef(TypedDict):
+    image: str,
+    name: NotRequired[str],
+    imagePullPolicy: NotRequired[str],
+    command: NotRequired[List[str]],
+    args: NotRequired[List[str]],
+    env: NotRequired[List[EksContainerEnvironmentVariableTypeDef]],  # (1)
+    resources: NotRequired[EksContainerResourceRequirementsTypeDef],  # (2)
+    volumeMounts: NotRequired[List[EksContainerVolumeMountTypeDef]],  # (3)
+    securityContext: NotRequired[EksContainerSecurityContextTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: EksContainerEnvironmentVariableTypeDef](./type_defs.md#ekscontainerenvironmentvariabletypedef) 
+2. See [:material-code-braces: EksContainerResourceRequirementsTypeDef](./type_defs.md#ekscontainerresourcerequirementstypedef) 
+3. See [:material-code-braces: EksContainerVolumeMountTypeDef](./type_defs.md#ekscontainervolumemounttypedef) 
+4. See [:material-code-braces: EksContainerSecurityContextTypeDef](./type_defs.md#ekscontainersecuritycontexttypedef) 
+## EksVolumeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksVolumeTypeDef
+
+def get_value() -> EksVolumeTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class EksVolumeTypeDef(TypedDict):
+    name: str,
+    hostPath: NotRequired[EksHostPathTypeDef],  # (1)
+    emptyDir: NotRequired[EksEmptyDirTypeDef],  # (2)
+    secret: NotRequired[EksSecretTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: EksHostPathTypeDef](./type_defs.md#ekshostpathtypedef) 
+2. See [:material-code-braces: EksEmptyDirTypeDef](./type_defs.md#eksemptydirtypedef) 
+3. See [:material-code-braces: EksSecretTypeDef](./type_defs.md#ekssecrettypedef) 
 ## RetryStrategyTypeDef
 
 ```python title="Usage Example"
@@ -1510,6 +1792,9 @@ class ComputeEnvironmentDetailTypeDef(TypedDict):
     computeResources: NotRequired[ComputeResourceTypeDef],  # (4)
     serviceRole: NotRequired[str],
     updatePolicy: NotRequired[UpdatePolicyTypeDef],  # (5)
+    eksConfiguration: NotRequired[EksConfigurationTypeDef],  # (6)
+    containerOrchestrationType: NotRequired[OrchestrationTypeType],  # (7)
+    uuid: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: CETypeType](./literals.md#cetypetype) 
@@ -1517,6 +1802,8 @@ class ComputeEnvironmentDetailTypeDef(TypedDict):
 3. See [:material-code-brackets: CEStatusType](./literals.md#cestatustype) 
 4. See [:material-code-braces: ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef) 
 5. See [:material-code-braces: UpdatePolicyTypeDef](./type_defs.md#updatepolicytypedef) 
+6. See [:material-code-braces: EksConfigurationTypeDef](./type_defs.md#eksconfigurationtypedef) 
+7. See [:material-code-brackets: OrchestrationTypeType](./literals.md#orchestrationtypetype) 
 ## CreateComputeEnvironmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1538,11 +1825,13 @@ class CreateComputeEnvironmentRequestRequestTypeDef(TypedDict):
     computeResources: NotRequired[ComputeResourceTypeDef],  # (3)
     serviceRole: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
+    eksConfiguration: NotRequired[EksConfigurationTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: CETypeType](./literals.md#cetypetype) 
 2. See [:material-code-brackets: CEStateType](./literals.md#cestatetype) 
 3. See [:material-code-braces: ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef) 
+4. See [:material-code-braces: EksConfigurationTypeDef](./type_defs.md#eksconfigurationtypedef) 
 ## UpdateComputeEnvironmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1605,6 +1894,69 @@ class VolumeTypeDef(TypedDict):
 
 1. See [:material-code-braces: HostTypeDef](./type_defs.md#hosttypedef) 
 2. See [:material-code-braces: EFSVolumeConfigurationTypeDef](./type_defs.md#efsvolumeconfigurationtypedef) 
+## EksPodPropertiesOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksPodPropertiesOverrideTypeDef
+
+def get_value() -> EksPodPropertiesOverrideTypeDef:
+    return {
+        "containers": ...,
+    }
+```
+
+```python title="Definition"
+class EksPodPropertiesOverrideTypeDef(TypedDict):
+    containers: NotRequired[Sequence[EksContainerOverrideTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: EksContainerOverrideTypeDef](./type_defs.md#ekscontaineroverridetypedef) 
+## EksPodPropertiesDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksPodPropertiesDetailTypeDef
+
+def get_value() -> EksPodPropertiesDetailTypeDef:
+    return {
+        "serviceAccountName": ...,
+    }
+```
+
+```python title="Definition"
+class EksPodPropertiesDetailTypeDef(TypedDict):
+    serviceAccountName: NotRequired[str],
+    hostNetwork: NotRequired[bool],
+    dnsPolicy: NotRequired[str],
+    containers: NotRequired[List[EksContainerDetailTypeDef]],  # (1)
+    volumes: NotRequired[List[EksVolumeTypeDef]],  # (2)
+    podName: NotRequired[str],
+    nodeName: NotRequired[str],
+```
+
+1. See [:material-code-braces: EksContainerDetailTypeDef](./type_defs.md#ekscontainerdetailtypedef) 
+2. See [:material-code-braces: EksVolumeTypeDef](./type_defs.md#eksvolumetypedef) 
+## EksPodPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksPodPropertiesTypeDef
+
+def get_value() -> EksPodPropertiesTypeDef:
+    return {
+        "serviceAccountName": ...,
+    }
+```
+
+```python title="Definition"
+class EksPodPropertiesTypeDef(TypedDict):
+    serviceAccountName: NotRequired[str],
+    hostNetwork: NotRequired[bool],
+    dnsPolicy: NotRequired[str],
+    containers: NotRequired[List[EksContainerTypeDef]],  # (1)
+    volumes: NotRequired[List[EksVolumeTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: EksContainerTypeDef](./type_defs.md#ekscontainertypedef) 
+2. See [:material-code-braces: EksVolumeTypeDef](./type_defs.md#eksvolumetypedef) 
 ## CreateSchedulingPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1822,6 +2174,57 @@ class ContainerPropertiesTypeDef(TypedDict):
 8. See [:material-code-braces: SecretTypeDef](./type_defs.md#secrettypedef) 
 9. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 10. See [:material-code-braces: FargatePlatformConfigurationTypeDef](./type_defs.md#fargateplatformconfigurationtypedef) 
+## EksPropertiesOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksPropertiesOverrideTypeDef
+
+def get_value() -> EksPropertiesOverrideTypeDef:
+    return {
+        "podProperties": ...,
+    }
+```
+
+```python title="Definition"
+class EksPropertiesOverrideTypeDef(TypedDict):
+    podProperties: NotRequired[EksPodPropertiesOverrideTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EksPodPropertiesOverrideTypeDef](./type_defs.md#ekspodpropertiesoverridetypedef) 
+## EksPropertiesDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksPropertiesDetailTypeDef
+
+def get_value() -> EksPropertiesDetailTypeDef:
+    return {
+        "podProperties": ...,
+    }
+```
+
+```python title="Definition"
+class EksPropertiesDetailTypeDef(TypedDict):
+    podProperties: NotRequired[EksPodPropertiesDetailTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EksPodPropertiesDetailTypeDef](./type_defs.md#ekspodpropertiesdetailtypedef) 
+## EksPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import EksPropertiesTypeDef
+
+def get_value() -> EksPropertiesTypeDef:
+    return {
+        "podProperties": ...,
+    }
+```
+
+```python title="Definition"
+class EksPropertiesTypeDef(TypedDict):
+    podProperties: NotRequired[EksPodPropertiesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EksPodPropertiesTypeDef](./type_defs.md#ekspodpropertiestypedef) 
 ## DescribeSchedulingPoliciesResponseTypeDef
 
 ```python title="Usage Example"
@@ -1842,6 +2245,24 @@ class DescribeSchedulingPoliciesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SchedulingPolicyDetailTypeDef](./type_defs.md#schedulingpolicydetailtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## NodeRangePropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_batch.type_defs import NodeRangePropertyTypeDef
+
+def get_value() -> NodeRangePropertyTypeDef:
+    return {
+        "targetNodes": ...,
+    }
+```
+
+```python title="Definition"
+class NodeRangePropertyTypeDef(TypedDict):
+    targetNodes: str,
+    container: NotRequired[ContainerPropertiesTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef) 
 ## SubmitJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1871,6 +2292,7 @@ class SubmitJobRequestRequestTypeDef(TypedDict):
     propagateTags: NotRequired[bool],
     timeout: NotRequired[JobTimeoutTypeDef],  # (6)
     tags: NotRequired[Mapping[str, str]],
+    eksPropertiesOverride: NotRequired[EksPropertiesOverrideTypeDef],  # (7)
 ```
 
 1. See [:material-code-braces: ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef) 
@@ -1879,24 +2301,7 @@ class SubmitJobRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef) 
 5. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
 6. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
-## NodeRangePropertyTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_batch.type_defs import NodeRangePropertyTypeDef
-
-def get_value() -> NodeRangePropertyTypeDef:
-    return {
-        "targetNodes": ...,
-    }
-```
-
-```python title="Definition"
-class NodeRangePropertyTypeDef(TypedDict):
-    targetNodes: str,
-    container: NotRequired[ContainerPropertiesTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef) 
+7. See [:material-code-braces: EksPropertiesOverrideTypeDef](./type_defs.md#ekspropertiesoverridetypedef) 
 ## NodePropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1948,6 +2353,8 @@ class JobDefinitionTypeDef(TypedDict):
     tags: NotRequired[Dict[str, str]],
     propagateTags: NotRequired[bool],
     platformCapabilities: NotRequired[List[PlatformCapabilityType]],  # (5)
+    eksProperties: NotRequired[EksPropertiesTypeDef],  # (6)
+    containerOrchestrationType: NotRequired[OrchestrationTypeType],  # (7)
 ```
 
 1. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
@@ -1955,6 +2362,8 @@ class JobDefinitionTypeDef(TypedDict):
 3. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
 4. See [:material-code-braces: NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef) 
 5. See [:material-code-brackets: PlatformCapabilityType](./literals.md#platformcapabilitytype) 
+6. See [:material-code-braces: EksPropertiesTypeDef](./type_defs.md#ekspropertiestypedef) 
+7. See [:material-code-brackets: OrchestrationTypeType](./literals.md#orchestrationtypetype) 
 ## JobDetailTypeDef
 
 ```python title="Usage Example"
@@ -1997,6 +2406,8 @@ class JobDetailTypeDef(TypedDict):
     tags: NotRequired[Dict[str, str]],
     propagateTags: NotRequired[bool],
     platformCapabilities: NotRequired[List[PlatformCapabilityType]],  # (10)
+    eksProperties: NotRequired[EksPropertiesDetailTypeDef],  # (11)
+    eksAttempts: NotRequired[List[EksAttemptDetailTypeDef]],  # (12)
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
@@ -2009,6 +2420,8 @@ class JobDetailTypeDef(TypedDict):
 8. See [:material-code-braces: ArrayPropertiesDetailTypeDef](./type_defs.md#arraypropertiesdetailtypedef) 
 9. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
 10. See [:material-code-brackets: PlatformCapabilityType](./literals.md#platformcapabilitytype) 
+11. See [:material-code-braces: EksPropertiesDetailTypeDef](./type_defs.md#ekspropertiesdetailtypedef) 
+12. See [:material-code-braces: EksAttemptDetailTypeDef](./type_defs.md#eksattemptdetailtypedef) 
 ## RegisterJobDefinitionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2034,6 +2447,7 @@ class RegisterJobDefinitionRequestRequestTypeDef(TypedDict):
     timeout: NotRequired[JobTimeoutTypeDef],  # (5)
     tags: NotRequired[Mapping[str, str]],
     platformCapabilities: NotRequired[Sequence[PlatformCapabilityType]],  # (6)
+    eksProperties: NotRequired[EksPropertiesTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: JobDefinitionTypeType](./literals.md#jobdefinitiontypetype) 
@@ -2042,6 +2456,7 @@ class RegisterJobDefinitionRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
 5. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
 6. See [:material-code-brackets: PlatformCapabilityType](./literals.md#platformcapabilitytype) 
+7. See [:material-code-braces: EksPropertiesTypeDef](./type_defs.md#ekspropertiestypedef) 
 ## DescribeJobDefinitionsResponseTypeDef
 
 ```python title="Usage Example"

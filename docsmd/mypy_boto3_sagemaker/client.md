@@ -6122,6 +6122,41 @@ parent.list_images(**kwargs)
 
 1. See [:material-code-braces: ListImagesRequestRequestTypeDef](./type_defs.md#listimagesrequestrequesttypedef) 
 
+### list\_inference\_recommendations\_job\_steps
+
+Returns a list of the subtasks for an Inference Recommender job.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_inference_recommendations_job_steps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_inference_recommendations_job_steps)
+
+```python title="Method definition"
+def list_inference_recommendations_job_steps(
+    self,
+    *,
+    JobName: str,
+    Status: RecommendationJobStatusType = ...,  # (1)
+    StepType: RecommendationStepTypeType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInferenceRecommendationsJobStepsResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: RecommendationJobStatusType](./literals.md#recommendationjobstatustype) 
+2. See [:material-code-brackets: RecommendationStepTypeType](./literals.md#recommendationsteptypetype) 
+3. See [:material-code-braces: ListInferenceRecommendationsJobStepsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobstepsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListInferenceRecommendationsJobStepsRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
+
+parent.list_inference_recommendations_job_steps(**kwargs)
+```
+
+1. See [:material-code-braces: ListInferenceRecommendationsJobStepsRequestRequestTypeDef](./type_defs.md#listinferencerecommendationsjobstepsrequestrequesttypedef) 
+
 ### list\_inference\_recommendations\_jobs
 
 Lists recommendation jobs that satisfy various filters.
@@ -9117,6 +9152,7 @@ Type annotations and code completion for `#!python boto3.client("sagemaker").get
 - `client.get_paginator("list_hyper_parameter_tuning_jobs")` -> [ListHyperParameterTuningJobsPaginator](./paginators.md#listhyperparametertuningjobspaginator)
 - `client.get_paginator("list_image_versions")` -> [ListImageVersionsPaginator](./paginators.md#listimageversionspaginator)
 - `client.get_paginator("list_images")` -> [ListImagesPaginator](./paginators.md#listimagespaginator)
+- `client.get_paginator("list_inference_recommendations_job_steps")` -> [ListInferenceRecommendationsJobStepsPaginator](./paginators.md#listinferencerecommendationsjobstepspaginator)
 - `client.get_paginator("list_inference_recommendations_jobs")` -> [ListInferenceRecommendationsJobsPaginator](./paginators.md#listinferencerecommendationsjobspaginator)
 - `client.get_paginator("list_labeling_jobs")` -> [ListLabelingJobsPaginator](./paginators.md#listlabelingjobspaginator)
 - `client.get_paginator("list_labeling_jobs_for_workteam")` -> [ListLabelingJobsForWorkteamPaginator](./paginators.md#listlabelingjobsforworkteampaginator)

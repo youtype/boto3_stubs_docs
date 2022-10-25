@@ -133,6 +133,21 @@ CertificateAuthorityTypeType = Literal[
     "SUBORDINATE",
 ]
 ```
+## CertificateAuthorityUsageModeType
+
+```python title="Usage Example"
+from mypy_boto3_acm_pca.literals import CertificateAuthorityUsageModeType
+
+def get_value() -> CertificateAuthorityUsageModeType:
+    return "GENERAL_PURPOSE"
+```
+
+```python title="Definition"
+CertificateAuthorityUsageModeType = Literal[
+    "GENERAL_PURPOSE",
+    "SHORT_LIVED_CERTIFICATE",
+]
+```
 ## CertificateIssuedWaiterName
 
 ```python title="Usage Example"

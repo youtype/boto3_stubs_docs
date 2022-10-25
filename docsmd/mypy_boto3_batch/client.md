@@ -129,14 +129,16 @@ def create_compute_environment(
     computeResources: ComputeResourceTypeDef = ...,  # (3)
     serviceRole: str = ...,
     tags: Mapping[str, str] = ...,
-) -> CreateComputeEnvironmentResponseTypeDef:  # (4)
+    eksConfiguration: EksConfigurationTypeDef = ...,  # (4)
+) -> CreateComputeEnvironmentResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: CETypeType](./literals.md#cetypetype) 
 2. See [:material-code-brackets: CEStateType](./literals.md#cestatetype) 
 3. See [:material-code-braces: ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef) 
-4. See [:material-code-braces: CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef) 
+4. See [:material-code-braces: EksConfigurationTypeDef](./type_defs.md#eksconfigurationtypedef) 
+5. See [:material-code-braces: CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -622,7 +624,8 @@ def register_job_definition(
     timeout: JobTimeoutTypeDef = ...,  # (5)
     tags: Mapping[str, str] = ...,
     platformCapabilities: Sequence[PlatformCapabilityType] = ...,  # (6)
-) -> RegisterJobDefinitionResponseTypeDef:  # (7)
+    eksProperties: EksPropertiesTypeDef = ...,  # (7)
+) -> RegisterJobDefinitionResponseTypeDef:  # (8)
     ...
 ```
 
@@ -632,7 +635,8 @@ def register_job_definition(
 4. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
 5. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
 6. See [:material-code-brackets: PlatformCapabilityType](./literals.md#platformcapabilitytype) 
-7. See [:material-code-braces: RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef) 
+7. See [:material-code-braces: EksPropertiesTypeDef](./type_defs.md#ekspropertiestypedef) 
+8. See [:material-code-braces: RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -671,7 +675,8 @@ def submit_job(
     propagateTags: bool = ...,
     timeout: JobTimeoutTypeDef = ...,  # (6)
     tags: Mapping[str, str] = ...,
-) -> SubmitJobResponseTypeDef:  # (7)
+    eksPropertiesOverride: EksPropertiesOverrideTypeDef = ...,  # (7)
+) -> SubmitJobResponseTypeDef:  # (8)
     ...
 ```
 
@@ -681,7 +686,8 @@ def submit_job(
 4. See [:material-code-braces: NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef) 
 5. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
 6. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
-7. See [:material-code-braces: SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef) 
+7. See [:material-code-braces: EksPropertiesOverrideTypeDef](./type_defs.md#ekspropertiesoverridetypedef) 
+8. See [:material-code-braces: SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
