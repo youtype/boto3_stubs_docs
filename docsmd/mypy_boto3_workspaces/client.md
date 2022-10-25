@@ -1329,8 +1329,8 @@ parent.import_client_branding(**kwargs)
 
 ### import\_workspace\_image
 
-Imports the specified Windows 10 Bring Your Own License (BYOL) image into Amazon
-WorkSpaces.
+Imports the specified Windows 10 Bring Your Own License (BYOL) or Windows Server
+2016 BYOL image into Amazon WorkSpaces.
 
 Type annotations and code completion for `#!python boto3.client("workspaces").import_workspace_image` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)

@@ -2122,12 +2122,13 @@ from mypy_boto3_mediatailor.type_defs import PutPlaybackConfigurationRequestRequ
 
 def get_value() -> PutPlaybackConfigurationRequestRequestTypeDef:
     return {
-        "AdDecisionServerUrl": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
 class PutPlaybackConfigurationRequestRequestTypeDef(TypedDict):
+    Name: str,
     AdDecisionServerUrl: NotRequired[str],
     AvailSuppression: NotRequired[AvailSuppressionTypeDef],  # (1)
     Bumper: NotRequired[BumperTypeDef],  # (2)
@@ -2136,7 +2137,6 @@ class PutPlaybackConfigurationRequestRequestTypeDef(TypedDict):
     DashConfiguration: NotRequired[DashConfigurationForPutTypeDef],  # (4)
     LivePreRollConfiguration: NotRequired[LivePreRollConfigurationTypeDef],  # (5)
     ManifestProcessingRules: NotRequired[ManifestProcessingRulesTypeDef],  # (6)
-    Name: NotRequired[str],
     PersonalizationThresholdSeconds: NotRequired[int],
     SlateAdUrl: NotRequired[str],
     Tags: NotRequired[Mapping[str, str]],

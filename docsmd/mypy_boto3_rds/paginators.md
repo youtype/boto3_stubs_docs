@@ -1548,14 +1548,16 @@ def paginate(
     ExportTaskIdentifier: str = ...,
     SourceArn: str = ...,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
-) -> _PageIterator[ExportTasksMessageTypeDef]:  # (3)
+    SourceType: ExportSourceTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ExportTasksMessageTypeDef]:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-3. See [:material-code-braces: ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef) 
+2. See [:material-code-brackets: ExportSourceTypeType](./literals.md#exportsourcetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef) 
 
 
 ```python title="Usage example with kwargs"

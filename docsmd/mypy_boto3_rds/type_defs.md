@@ -1556,8 +1556,10 @@ class ExportTaskTypeDef(TypedDict):
     TotalExtractedDataInGB: NotRequired[int],
     FailureCause: NotRequired[str],
     WarningMessage: NotRequired[str],
+    SourceType: NotRequired[ExportSourceTypeType],  # (1)
 ```
 
+1. See [:material-code-brackets: ExportSourceTypeType](./literals.md#exportsourcetypetype) 
 ## FailoverDBClusterMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -2604,6 +2606,7 @@ def get_value() -> ExportTaskResponseMetadataTypeDef:
         "TotalExtractedDataInGB": ...,
         "FailureCause": ...,
         "WarningMessage": ...,
+        "SourceType": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2625,10 +2628,12 @@ class ExportTaskResponseMetadataTypeDef(TypedDict):
     TotalExtractedDataInGB: int,
     FailureCause: str,
     WarningMessage: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    SourceType: ExportSourceTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ExportSourceTypeType](./literals.md#exportsourcetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyActivityStreamResponseTypeDef
 
 ```python title="Usage Example"
@@ -5455,9 +5460,11 @@ class DescribeExportTasksMessageRequestTypeDef(TypedDict):
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     Marker: NotRequired[str],
     MaxRecords: NotRequired[int],
+    SourceType: NotRequired[ExportSourceTypeType],  # (2)
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: ExportSourceTypeType](./literals.md#exportsourcetypetype) 
 ## DescribeGlobalClustersMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -6186,11 +6193,13 @@ class DescribeExportTasksMessageDescribeExportTasksPaginateTypeDef(TypedDict):
     ExportTaskIdentifier: NotRequired[str],
     SourceArn: NotRequired[str],
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+    SourceType: NotRequired[ExportSourceTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-brackets: ExportSourceTypeType](./literals.md#exportsourcetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef
 
 ```python title="Usage Example"

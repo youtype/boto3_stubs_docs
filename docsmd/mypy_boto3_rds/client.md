@@ -2802,12 +2802,14 @@ def describe_export_tasks(
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     Marker: str = ...,
     MaxRecords: int = ...,
-) -> ExportTasksMessageTypeDef:  # (2)
+    SourceType: ExportSourceTypeType = ...,  # (2)
+) -> ExportTasksMessageTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
-2. See [:material-code-braces: ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef) 
+2. See [:material-code-brackets: ExportSourceTypeType](./literals.md#exportsourcetypetype) 
+3. See [:material-code-braces: ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef) 
 
 
 ```python title="Usage example with kwargs"

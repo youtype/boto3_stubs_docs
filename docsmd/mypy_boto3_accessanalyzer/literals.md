@@ -372,17 +372,23 @@ ReasonCodeType = Literal[
 from mypy_boto3_accessanalyzer.literals import ResourceTypeType
 
 def get_value() -> ResourceTypeType:
-    return "AWS::IAM::Role"
+    return "AWS::EC2::Snapshot"
 ```
 
 ```python title="Definition"
 ResourceTypeType = Literal[
+    "AWS::EC2::Snapshot",
+    "AWS::ECR::Repository",
+    "AWS::EFS::FileSystem",
     "AWS::IAM::Role",
     "AWS::KMS::Key",
     "AWS::Lambda::Function",
     "AWS::Lambda::LayerVersion",
+    "AWS::RDS::DBClusterSnapshot",
+    "AWS::RDS::DBSnapshot",
     "AWS::S3::Bucket",
     "AWS::SecretsManager::Secret",
+    "AWS::SNS::Topic",
     "AWS::SQS::Queue",
 ]
 ```

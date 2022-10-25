@@ -233,6 +233,7 @@ def get_value() -> ActivityStreamModeType:
 - [DescribeSourceRegionsPaginatorName](./literals.md#describesourceregionspaginatorname)
 - [DownloadDBLogFilePortionPaginatorName](./literals.md#downloaddblogfileportionpaginatorname)
 - [EngineFamilyType](./literals.md#enginefamilytype)
+- [ExportSourceTypeType](./literals.md#exportsourcetypetype)
 - [FailoverStatusType](./literals.md#failoverstatustype)
 - [IAMAuthModeType](./literals.md#iamauthmodetype)
 - [ReplicaModeType](./literals.md#replicamodetype)

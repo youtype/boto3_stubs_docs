@@ -404,6 +404,7 @@ def get_value() -> RunningModeType:
 RunningModeType = Literal[
     "ALWAYS_ON",
     "AUTO_STOP",
+    "MANUAL",
 ]
 ```
 ## SamlStatusEnumType
@@ -498,8 +499,10 @@ def get_value() -> WorkspaceImageIngestionProcessType:
 WorkspaceImageIngestionProcessType = Literal[
     "BYOL_GRAPHICS",
     "BYOL_GRAPHICS_G4DN",
+    "BYOL_GRAPHICS_G4DN_BYOP",
     "BYOL_GRAPHICSPRO",
     "BYOL_REGULAR",
+    "BYOL_REGULAR_BYOP",
     "BYOL_REGULAR_WSP",
 ]
 ```

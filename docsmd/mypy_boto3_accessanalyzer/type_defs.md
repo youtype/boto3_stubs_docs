@@ -203,6 +203,56 @@ class TrailPropertiesTypeDef(TypedDict):
     allRegions: NotRequired[bool],
 ```
 
+## EbsSnapshotConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import EbsSnapshotConfigurationTypeDef
+
+def get_value() -> EbsSnapshotConfigurationTypeDef:
+    return {
+        "userIds": ...,
+    }
+```
+
+```python title="Definition"
+class EbsSnapshotConfigurationTypeDef(TypedDict):
+    userIds: NotRequired[Sequence[str]],
+    groups: NotRequired[Sequence[str]],
+    kmsKeyId: NotRequired[str],
+```
+
+## EcrRepositoryConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import EcrRepositoryConfigurationTypeDef
+
+def get_value() -> EcrRepositoryConfigurationTypeDef:
+    return {
+        "repositoryPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class EcrRepositoryConfigurationTypeDef(TypedDict):
+    repositoryPolicy: NotRequired[str],
+```
+
+## EfsFileSystemConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import EfsFileSystemConfigurationTypeDef
+
+def get_value() -> EfsFileSystemConfigurationTypeDef:
+    return {
+        "fileSystemPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class EfsFileSystemConfigurationTypeDef(TypedDict):
+    fileSystemPolicy: NotRequired[str],
+```
+
 ## IamRoleConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -234,6 +284,22 @@ def get_value() -> SecretsManagerSecretConfigurationTypeDef:
 class SecretsManagerSecretConfigurationTypeDef(TypedDict):
     kmsKeyId: NotRequired[str],
     secretPolicy: NotRequired[str],
+```
+
+## SnsTopicConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import SnsTopicConfigurationTypeDef
+
+def get_value() -> SnsTopicConfigurationTypeDef:
+    return {
+        "topicPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class SnsTopicConfigurationTypeDef(TypedDict):
+    topicPolicy: NotRequired[str],
 ```
 
 ## SqsQueueConfigurationTypeDef
@@ -725,6 +791,38 @@ class PositionTypeDef(TypedDict):
     offset: int,
 ```
 
+## RdsDbClusterSnapshotAttributeValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import RdsDbClusterSnapshotAttributeValueTypeDef
+
+def get_value() -> RdsDbClusterSnapshotAttributeValueTypeDef:
+    return {
+        "accountIds": ...,
+    }
+```
+
+```python title="Definition"
+class RdsDbClusterSnapshotAttributeValueTypeDef(TypedDict):
+    accountIds: NotRequired[Sequence[str]],
+```
+
+## RdsDbSnapshotAttributeValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import RdsDbSnapshotAttributeValueTypeDef
+
+def get_value() -> RdsDbSnapshotAttributeValueTypeDef:
+    return {
+        "accountIds": ...,
+    }
+```
+
+```python title="Definition"
+class RdsDbSnapshotAttributeValueTypeDef(TypedDict):
+    accountIds: NotRequired[Sequence[str]],
+```
+
 ## S3PublicAccessBlockConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -759,6 +857,7 @@ def get_value() -> StartResourceScanRequestRequestTypeDef:
 class StartResourceScanRequestRequestTypeDef(TypedDict):
     analyzerArn: str,
     resourceArn: str,
+    resourceOwnerAccount: NotRequired[str],
 ```
 
 ## TagResourceRequestRequestTypeDef
@@ -1537,6 +1636,42 @@ class SpanTypeDef(TypedDict):
 
 1. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
 2. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
+## RdsDbClusterSnapshotConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import RdsDbClusterSnapshotConfigurationTypeDef
+
+def get_value() -> RdsDbClusterSnapshotConfigurationTypeDef:
+    return {
+        "attributes": ...,
+    }
+```
+
+```python title="Definition"
+class RdsDbClusterSnapshotConfigurationTypeDef(TypedDict):
+    attributes: NotRequired[Mapping[str, RdsDbClusterSnapshotAttributeValueTypeDef]],  # (1)
+    kmsKeyId: NotRequired[str],
+```
+
+1. See [:material-code-braces: RdsDbClusterSnapshotAttributeValueTypeDef](./type_defs.md#rdsdbclustersnapshotattributevaluetypedef) 
+## RdsDbSnapshotConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import RdsDbSnapshotConfigurationTypeDef
+
+def get_value() -> RdsDbSnapshotConfigurationTypeDef:
+    return {
+        "attributes": ...,
+    }
+```
+
+```python title="Definition"
+class RdsDbSnapshotConfigurationTypeDef(TypedDict):
+    attributes: NotRequired[Mapping[str, RdsDbSnapshotAttributeValueTypeDef]],  # (1)
+    kmsKeyId: NotRequired[str],
+```
+
+1. See [:material-code-braces: RdsDbSnapshotAttributeValueTypeDef](./type_defs.md#rdsdbsnapshotattributevaluetypedef) 
 ## ListAccessPreviewsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2042,24 +2177,36 @@ from mypy_boto3_accessanalyzer.type_defs import ConfigurationTypeDef
 
 def get_value() -> ConfigurationTypeDef:
     return {
-        "iamRole": ...,
+        "ebsSnapshot": ...,
     }
 ```
 
 ```python title="Definition"
 class ConfigurationTypeDef(TypedDict):
-    iamRole: NotRequired[IamRoleConfigurationTypeDef],  # (1)
-    kmsKey: NotRequired[KmsKeyConfigurationTypeDef],  # (2)
-    secretsManagerSecret: NotRequired[SecretsManagerSecretConfigurationTypeDef],  # (3)
-    s3Bucket: NotRequired[S3BucketConfigurationTypeDef],  # (4)
-    sqsQueue: NotRequired[SqsQueueConfigurationTypeDef],  # (5)
+    ebsSnapshot: NotRequired[EbsSnapshotConfigurationTypeDef],  # (1)
+    ecrRepository: NotRequired[EcrRepositoryConfigurationTypeDef],  # (2)
+    iamRole: NotRequired[IamRoleConfigurationTypeDef],  # (3)
+    efsFileSystem: NotRequired[EfsFileSystemConfigurationTypeDef],  # (4)
+    kmsKey: NotRequired[KmsKeyConfigurationTypeDef],  # (5)
+    rdsDbClusterSnapshot: NotRequired[RdsDbClusterSnapshotConfigurationTypeDef],  # (6)
+    rdsDbSnapshot: NotRequired[RdsDbSnapshotConfigurationTypeDef],  # (7)
+    secretsManagerSecret: NotRequired[SecretsManagerSecretConfigurationTypeDef],  # (8)
+    s3Bucket: NotRequired[S3BucketConfigurationTypeDef],  # (9)
+    snsTopic: NotRequired[SnsTopicConfigurationTypeDef],  # (10)
+    sqsQueue: NotRequired[SqsQueueConfigurationTypeDef],  # (11)
 ```
 
-1. See [:material-code-braces: IamRoleConfigurationTypeDef](./type_defs.md#iamroleconfigurationtypedef) 
-2. See [:material-code-braces: KmsKeyConfigurationTypeDef](./type_defs.md#kmskeyconfigurationtypedef) 
-3. See [:material-code-braces: SecretsManagerSecretConfigurationTypeDef](./type_defs.md#secretsmanagersecretconfigurationtypedef) 
-4. See [:material-code-braces: S3BucketConfigurationTypeDef](./type_defs.md#s3bucketconfigurationtypedef) 
-5. See [:material-code-braces: SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef) 
+1. See [:material-code-braces: EbsSnapshotConfigurationTypeDef](./type_defs.md#ebssnapshotconfigurationtypedef) 
+2. See [:material-code-braces: EcrRepositoryConfigurationTypeDef](./type_defs.md#ecrrepositoryconfigurationtypedef) 
+3. See [:material-code-braces: IamRoleConfigurationTypeDef](./type_defs.md#iamroleconfigurationtypedef) 
+4. See [:material-code-braces: EfsFileSystemConfigurationTypeDef](./type_defs.md#efsfilesystemconfigurationtypedef) 
+5. See [:material-code-braces: KmsKeyConfigurationTypeDef](./type_defs.md#kmskeyconfigurationtypedef) 
+6. See [:material-code-braces: RdsDbClusterSnapshotConfigurationTypeDef](./type_defs.md#rdsdbclustersnapshotconfigurationtypedef) 
+7. See [:material-code-braces: RdsDbSnapshotConfigurationTypeDef](./type_defs.md#rdsdbsnapshotconfigurationtypedef) 
+8. See [:material-code-braces: SecretsManagerSecretConfigurationTypeDef](./type_defs.md#secretsmanagersecretconfigurationtypedef) 
+9. See [:material-code-braces: S3BucketConfigurationTypeDef](./type_defs.md#s3bucketconfigurationtypedef) 
+10. See [:material-code-braces: SnsTopicConfigurationTypeDef](./type_defs.md#snstopicconfigurationtypedef) 
+11. See [:material-code-braces: SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef) 
 ## ValidatePolicyResponseTypeDef
 
 ```python title="Usage Example"

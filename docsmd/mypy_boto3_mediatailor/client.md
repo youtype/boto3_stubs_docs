@@ -82,7 +82,7 @@ def close(
 
 ### configure\_logs\_for\_playback\_configuration
 
-Configures Amazon CloudWatch log settings for a playback configuration.
+Amazon CloudWatch log settings for a playback configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").configure_logs_for_playback_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.configure_logs_for_playback_configuration)
@@ -153,7 +153,7 @@ parent.create_channel(**kwargs)
 
 ### create\_live\_source
 
-Creates name for a specific live source in a source location.
+The live source configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").create_live_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_live_source)
@@ -188,7 +188,7 @@ parent.create_live_source(**kwargs)
 
 ### create\_prefetch\_schedule
 
-Creates a new prefetch schedule for the specified playback configuration.
+Creates a prefetch schedule for a playback configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").create_prefetch_schedule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_prefetch_schedule)
@@ -226,7 +226,7 @@ parent.create_prefetch_schedule(**kwargs)
 
 ### create\_program
 
-Creates a program.
+Creates a program within a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").create_program` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program)
@@ -266,7 +266,7 @@ parent.create_program(**kwargs)
 
 ### create\_source\_location
 
-Creates a source location on a specific channel.
+Creates a source location.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").create_source_location` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
@@ -305,7 +305,7 @@ parent.create_source_location(**kwargs)
 
 ### create\_vod\_source
 
-Creates name for a specific VOD source in a source location.
+The VOD source configuration parameters.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").create_vod_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
@@ -368,7 +368,7 @@ parent.delete_channel(**kwargs)
 
 ### delete\_channel\_policy
 
-Deletes a channel's IAM policy.
+The channel policy to delete.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").delete_channel_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
@@ -396,7 +396,7 @@ parent.delete_channel_policy(**kwargs)
 
 ### delete\_live\_source
 
-Deletes a specific live source in a specific source location.
+The live source to delete.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").delete_live_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_live_source)
@@ -426,7 +426,7 @@ parent.delete_live_source(**kwargs)
 
 ### delete\_playback\_configuration
 
-Deletes the playback configuration for the specified name.
+Deletes a playback configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").delete_playback_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
@@ -484,7 +484,7 @@ parent.delete_prefetch_schedule(**kwargs)
 
 ### delete\_program
 
-Deletes a specific program on a specific channel.
+Deletes a program within a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").delete_program` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
@@ -514,7 +514,7 @@ parent.delete_program(**kwargs)
 
 ### delete\_source\_location
 
-Deletes a source location on a specific channel.
+Deletes a source location.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").delete_source_location` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
@@ -542,7 +542,7 @@ parent.delete_source_location(**kwargs)
 
 ### delete\_vod\_source
 
-Deletes a specific VOD source in a specific source location.
+The video on demand (VOD) source to delete.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").delete_vod_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
@@ -572,7 +572,7 @@ parent.delete_vod_source(**kwargs)
 
 ### describe\_channel
 
-Describes the properties of a specific channel.
+Describes a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").describe_channel` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
@@ -601,7 +601,7 @@ parent.describe_channel(**kwargs)
 
 ### describe\_live\_source
 
-Provides details about a specific live source in a specific source location.
+The live source to describe.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").describe_live_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_live_source)
@@ -632,7 +632,7 @@ parent.describe_live_source(**kwargs)
 
 ### describe\_program
 
-Retrieves the properties of the requested program.
+Describes a program within a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").describe_program` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
@@ -663,7 +663,7 @@ parent.describe_program(**kwargs)
 
 ### describe\_source\_location
 
-Retrieves the properties of the requested source location.
+Describes a source location.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").describe_source_location` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
@@ -692,7 +692,8 @@ parent.describe_source_location(**kwargs)
 
 ### describe\_vod\_source
 
-Provides details about a specific VOD source in a specific source location.
+Provides details about a specific video on demand (VOD) source in a specific
+source location.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").describe_vod_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
@@ -742,7 +743,7 @@ def generate_presigned_url(
 
 ### get\_channel\_policy
 
-Retrieves information about a channel's IAM policy.
+Returns the channel's IAM policy.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").get_channel_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
@@ -803,7 +804,7 @@ parent.get_channel_schedule(**kwargs)
 
 ### get\_playback\_configuration
 
-Returns the playback configuration for the specified name.
+Retrieves a playback configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").get_playback_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
@@ -832,8 +833,7 @@ parent.get_playback_configuration(**kwargs)
 
 ### get\_prefetch\_schedule
 
-Returns information about the prefetch schedule for a specific playback
-configuration.
+Retrieves a prefetch schedule for a playback configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").get_prefetch_schedule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_prefetch_schedule)
@@ -864,7 +864,8 @@ parent.get_prefetch_schedule(**kwargs)
 
 ### list\_alerts
 
-Returns a list of alerts for the given resource.
+Lists the alerts that are associated with a MediaTailor channel assembly
+resource.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_alerts` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_alerts)
@@ -895,7 +896,8 @@ parent.list_alerts(**kwargs)
 
 ### list\_channels
 
-Retrieves a list of channels that are associated with this account.
+Retrieves information about the channels that are associated with the current
+AWS account.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_channels` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
@@ -925,7 +927,7 @@ parent.list_channels(**kwargs)
 
 ### list\_live\_sources
 
-lists all the live sources in a source location.
+Lists the live sources contained in a source location.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_live_sources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_live_sources)
@@ -956,8 +958,7 @@ parent.list_live_sources(**kwargs)
 
 ### list\_playback\_configurations
 
-Returns a list of the playback configurations defined in AWS Elemental
-MediaTailor.
+Retrieves existing playback configurations.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_playback_configurations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
@@ -987,7 +988,7 @@ parent.list_playback_configurations(**kwargs)
 
 ### list\_prefetch\_schedules
 
-Creates a new prefetch schedule.
+Lists the prefetch schedules for a playback configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_prefetch_schedules` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_prefetch_schedules)
@@ -1019,7 +1020,7 @@ parent.list_prefetch_schedules(**kwargs)
 
 ### list\_source\_locations
 
-Retrieves a list of source locations.
+Lists the source locations for a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_source_locations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
@@ -1049,8 +1050,7 @@ parent.list_source_locations(**kwargs)
 
 ### list\_tags\_for\_resource
 
-Returns a list of the tags assigned to the specified playback configuration
-resource.
+A list of tags that are associated with this resource.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
@@ -1079,7 +1079,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### list\_vod\_sources
 
-Lists all the VOD sources in a source location.
+Lists the VOD sources contained in a source location.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").list_vod_sources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
@@ -1140,7 +1140,7 @@ parent.put_channel_policy(**kwargs)
 
 ### put\_playback\_configuration
 
-Adds a new playback configuration to AWS Elemental MediaTailor.
+Creates a playback configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").put_playback_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
@@ -1149,6 +1149,7 @@ Type annotations and code completion for `#!python boto3.client("mediatailor").p
 def put_playback_configuration(
     self,
     *,
+    Name: str,
     AdDecisionServerUrl: str = ...,
     AvailSuppression: AvailSuppressionTypeDef = ...,  # (1)
     Bumper: BumperTypeDef = ...,  # (2)
@@ -1157,7 +1158,6 @@ def put_playback_configuration(
     DashConfiguration: DashConfigurationForPutTypeDef = ...,  # (4)
     LivePreRollConfiguration: LivePreRollConfigurationTypeDef = ...,  # (5)
     ManifestProcessingRules: ManifestProcessingRulesTypeDef = ...,  # (6)
-    Name: str = ...,
     PersonalizationThresholdSeconds: int = ...,
     SlateAdUrl: str = ...,
     Tags: Mapping[str, str] = ...,
@@ -1178,7 +1178,7 @@ def put_playback_configuration(
 
 ```python title="Usage example with kwargs"
 kwargs: PutPlaybackConfigurationRequestRequestTypeDef = {  # (1)
-    "AdDecisionServerUrl": ...,
+    "Name": ...,
 }
 
 parent.put_playback_configuration(**kwargs)
@@ -1188,7 +1188,7 @@ parent.put_playback_configuration(**kwargs)
 
 ### start\_channel
 
-Starts a specific channel.
+Starts a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").start_channel` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
@@ -1216,7 +1216,7 @@ parent.start_channel(**kwargs)
 
 ### stop\_channel
 
-Stops a specific channel.
+Stops a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").stop_channel` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
@@ -1244,7 +1244,7 @@ parent.stop_channel(**kwargs)
 
 ### tag\_resource
 
-Adds tags to the specified playback configuration resource.
+The resource to tag.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
@@ -1275,7 +1275,7 @@ parent.tag_resource(**kwargs)
 
 ### untag\_resource
 
-Removes tags from the specified playback configuration resource.
+The resource to untag.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
@@ -1306,7 +1306,7 @@ parent.untag_resource(**kwargs)
 
 ### update\_channel
 
-Updates an existing channel.
+Updates a channel.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").update_channel` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
@@ -1340,7 +1340,7 @@ parent.update_channel(**kwargs)
 
 ### update\_live\_source
 
-Updates a specific live source in a specific source location.
+Updates a live source's configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").update_live_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_live_source)
@@ -1374,7 +1374,7 @@ parent.update_live_source(**kwargs)
 
 ### update\_source\_location
 
-Updates a source location on a specific channel.
+Updates a source location.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").update_source_location` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
@@ -1412,7 +1412,7 @@ parent.update_source_location(**kwargs)
 
 ### update\_vod\_source
 
-Updates a specific VOD source in a specific source location.
+Updates a VOD source's configuration.
 
 Type annotations and code completion for `#!python boto3.client("mediatailor").update_vod_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)

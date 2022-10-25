@@ -805,6 +805,21 @@ EngineFamilyType = Literal[
     "SQLSERVER",
 ]
 ```
+## ExportSourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_rds.literals import ExportSourceTypeType
+
+def get_value() -> ExportSourceTypeType:
+    return "CLUSTER"
+```
+
+```python title="Definition"
+ExportSourceTypeType = Literal[
+    "CLUSTER",
+    "SNAPSHOT",
+]
+```
 ## FailoverStatusType
 
 ```python title="Usage Example"

@@ -822,6 +822,7 @@ def start_resource_scan(
     *,
     analyzerArn: str,
     resourceArn: str,
+    resourceOwnerAccount: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
