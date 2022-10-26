@@ -54836,13 +54836,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-sagem
 <a id="__codelineno-548-2" name="__codelineno-548-2" href="#__codelineno-548-2"></a>
 <a id="__codelineno-548-3" name="__codelineno-548-3" href="#__codelineno-548-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResourceLimitsTypeDef</span><span class="p">:</span>
 <a id="__codelineno-548-4" name="__codelineno-548-4" href="#__codelineno-548-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-548-5" name="__codelineno-548-5" href="#__codelineno-548-5"></a>        <span class="s2">&quot;MaxNumberOfTrainingJobs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-548-6" name="__codelineno-548-6" href="#__codelineno-548-6"></a>        <span class="s2">&quot;MaxParallelTrainingJobs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-548-7" name="__codelineno-548-7" href="#__codelineno-548-7"></a>    <span class="p">}</span>
+<a id="__codelineno-548-5" name="__codelineno-548-5" href="#__codelineno-548-5"></a>        <span class="s2">&quot;MaxParallelTrainingJobs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-548-6" name="__codelineno-548-6" href="#__codelineno-548-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-549-1" name="__codelineno-549-1" href="#__codelineno-549-1"></a><span class="k">class</span> <span class="nc">ResourceLimitsTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-549-2" name="__codelineno-549-2" href="#__codelineno-549-2"></a>    <span class="n">MaxNumberOfTrainingJobs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-549-3" name="__codelineno-549-3" href="#__codelineno-549-3"></a>    <span class="n">MaxParallelTrainingJobs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-549-2" name="__codelineno-549-2" href="#__codelineno-549-2"></a>    <span class="n">MaxParallelTrainingJobs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+<a id="__codelineno-549-3" name="__codelineno-549-3" href="#__codelineno-549-3"></a>    <span class="n">MaxNumberOfTrainingJobs</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="tuningjobcompletioncriteriatypedef">TuningJobCompletionCriteriaTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-550-1" name="__codelineno-550-1" href="#__codelineno-550-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sagemaker.type_defs</span> <span class="kn">import</span> <span class="n">TuningJobCompletionCriteriaTypeDef</span>

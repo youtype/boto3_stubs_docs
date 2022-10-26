@@ -419,14 +419,16 @@ def create_db_cluster(
     EnableIAMDatabaseAuthentication: bool = ...,
     EnableCloudwatchLogsExports: Sequence[str] = ...,
     DeletionProtection: bool = ...,
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (2)
     GlobalClusterIdentifier: str = ...,
     SourceRegion: str = ...,
-) -> CreateDBClusterResultTypeDef:  # (2)
+) -> CreateDBClusterResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+3. See [:material-code-braces: CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1843,12 +1845,14 @@ def modify_db_cluster(
     DBInstanceParameterGroupName: str = ...,
     DeletionProtection: bool = ...,
     CopyTagsToSnapshot: bool = ...,
-) -> ModifyDBClusterResultTypeDef:  # (2)
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (2)
+) -> ModifyDBClusterResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
-2. See [:material-code-braces: ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+3. See [:material-code-braces: ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2432,12 +2436,14 @@ def restore_db_cluster_from_snapshot(
     DBClusterParameterGroupName: str = ...,
     DeletionProtection: bool = ...,
     CopyTagsToSnapshot: bool = ...,
-) -> RestoreDBClusterFromSnapshotResultTypeDef:  # (2)
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (2)
+) -> RestoreDBClusterFromSnapshotResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+3. See [:material-code-braces: RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2478,12 +2484,14 @@ def restore_db_cluster_to_point_in_time(
     EnableCloudwatchLogsExports: Sequence[str] = ...,
     DBClusterParameterGroupName: str = ...,
     DeletionProtection: bool = ...,
-) -> RestoreDBClusterToPointInTimeResultTypeDef:  # (2)
+    ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (2)
+) -> RestoreDBClusterToPointInTimeResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+3. See [:material-code-braces: RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2575,6 +2583,7 @@ Type annotations and code completion for `#!python boto3.client("neptune").get_p
 - `client.get_paginator("describe_engine_default_parameters")` -> [DescribeEngineDefaultParametersPaginator](./paginators.md#describeenginedefaultparameterspaginator)
 - `client.get_paginator("describe_event_subscriptions")` -> [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
 - `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_global_clusters")` -> [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
 - `client.get_paginator("describe_orderable_db_instance_options")` -> [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - `client.get_paginator("describe_pending_maintenance_actions")` -> [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
 

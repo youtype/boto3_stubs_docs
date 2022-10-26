@@ -1366,6 +1366,27 @@ class UpdateSecurityResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateStorageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kafka.type_defs import UpdateStorageResponseTypeDef
+
+def get_value() -> UpdateStorageResponseTypeDef:
+    return {
+        "ClusterArn": ...,
+        "ClusterOperationArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateStorageResponseTypeDef(TypedDict):
+    ClusterArn: str,
+    ClusterOperationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchAssociateScramSecretResponseTypeDef
 
 ```python title="Usage Example"
@@ -1447,6 +1468,29 @@ class EBSStorageInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+## UpdateStorageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kafka.type_defs import UpdateStorageRequestRequestTypeDef
+
+def get_value() -> UpdateStorageRequestRequestTypeDef:
+    return {
+        "ClusterArn": ...,
+        "CurrentVersion": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateStorageRequestRequestTypeDef(TypedDict):
+    ClusterArn: str,
+    CurrentVersion: str,
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (1)
+    StorageMode: NotRequired[StorageModeType],  # (2)
+    VolumeSizeGB: NotRequired[int],
+```
+
+1. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+2. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
 ## BrokerLogsTypeDef
 
 ```python title="Usage Example"
@@ -2309,6 +2353,7 @@ class MutableClusterInfoTypeDef(TypedDict):
     ClientAuthentication: NotRequired[ClientAuthenticationTypeDef],  # (6)
     EncryptionInfo: NotRequired[EncryptionInfoTypeDef],  # (7)
     ConnectivityInfo: NotRequired[ConnectivityInfoTypeDef],  # (8)
+    StorageMode: NotRequired[StorageModeType],  # (9)
 ```
 
 1. See [:material-code-braces: BrokerEBSVolumeInfoTypeDef](./type_defs.md#brokerebsvolumeinfotypedef) 
@@ -2319,6 +2364,7 @@ class MutableClusterInfoTypeDef(TypedDict):
 6. See [:material-code-braces: ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef) 
 7. See [:material-code-braces: EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef) 
 8. See [:material-code-braces: ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef) 
+9. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
 ## UpdateSecurityRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2372,6 +2418,7 @@ class ClusterInfoTypeDef(TypedDict):
     Tags: NotRequired[Dict[str, str]],
     ZookeeperConnectString: NotRequired[str],
     ZookeeperConnectStringTls: NotRequired[str],
+    StorageMode: NotRequired[StorageModeType],  # (10)
 ```
 
 1. See [:material-code-braces: BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef) 
@@ -2383,6 +2430,7 @@ class ClusterInfoTypeDef(TypedDict):
 7. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
 8. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
 9. See [:material-code-braces: StateInfoTypeDef](./type_defs.md#stateinfotypedef) 
+10. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
 ## CreateClusterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2410,6 +2458,7 @@ class CreateClusterRequestRequestTypeDef(TypedDict):
     OpenMonitoring: NotRequired[OpenMonitoringInfoTypeDef],  # (6)
     LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (7)
     Tags: NotRequired[Mapping[str, str]],
+    StorageMode: NotRequired[StorageModeType],  # (8)
 ```
 
 1. See [:material-code-braces: BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef) 
@@ -2419,6 +2468,7 @@ class CreateClusterRequestRequestTypeDef(TypedDict):
 5. See [:material-code-brackets: EnhancedMonitoringType](./literals.md#enhancedmonitoringtype) 
 6. See [:material-code-braces: OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef) 
 7. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+8. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
 ## ProvisionedRequestTypeDef
 
 ```python title="Usage Example"
@@ -2443,6 +2493,7 @@ class ProvisionedRequestTypeDef(TypedDict):
     EnhancedMonitoring: NotRequired[EnhancedMonitoringType],  # (5)
     OpenMonitoring: NotRequired[OpenMonitoringInfoTypeDef],  # (6)
     LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (7)
+    StorageMode: NotRequired[StorageModeType],  # (8)
 ```
 
 1. See [:material-code-braces: BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef) 
@@ -2452,6 +2503,7 @@ class ProvisionedRequestTypeDef(TypedDict):
 5. See [:material-code-brackets: EnhancedMonitoringType](./literals.md#enhancedmonitoringtype) 
 6. See [:material-code-braces: OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef) 
 7. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+8. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
 ## ProvisionedTypeDef
 
 ```python title="Usage Example"
@@ -2476,6 +2528,7 @@ class ProvisionedTypeDef(TypedDict):
     LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (7)
     ZookeeperConnectString: NotRequired[str],
     ZookeeperConnectStringTls: NotRequired[str],
+    StorageMode: NotRequired[StorageModeType],  # (8)
 ```
 
 1. See [:material-code-braces: BrokerNodeGroupInfoTypeDef](./type_defs.md#brokernodegroupinfotypedef) 
@@ -2485,6 +2538,7 @@ class ProvisionedTypeDef(TypedDict):
 5. See [:material-code-brackets: EnhancedMonitoringType](./literals.md#enhancedmonitoringtype) 
 6. See [:material-code-braces: OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef) 
 7. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+8. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
 ## ClusterOperationInfoTypeDef
 
 ```python title="Usage Example"

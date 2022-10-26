@@ -232,6 +232,20 @@ DescribeEventsPaginatorName = Literal[
     "describe_events",
 ]
 ```
+## DescribeGlobalClustersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_neptune.literals import DescribeGlobalClustersPaginatorName
+
+def get_value() -> DescribeGlobalClustersPaginatorName:
+    return "describe_global_clusters"
+```
+
+```python title="Definition"
+DescribeGlobalClustersPaginatorName = Literal[
+    "describe_global_clusters",
+]
+```
 ## DescribeOrderableDBInstanceOptionsPaginatorName
 
 ```python title="Usage Example"
@@ -671,6 +685,7 @@ PaginatorName = Literal[
     "describe_engine_default_parameters",
     "describe_event_subscriptions",
     "describe_events",
+    "describe_global_clusters",
     "describe_orderable_db_instance_options",
     "describe_pending_maintenance_actions",
 ]

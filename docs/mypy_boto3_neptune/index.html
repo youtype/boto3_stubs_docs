@@ -37651,6 +37651,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#describeenginedefaultparameterspaginator">DescribeEngineDefaultParametersPaginator</a></li>
 <li><a href="paginators/#describeeventsubscriptionspaginator">DescribeEventSubscriptionsPaginator</a></li>
 <li><a href="paginators/#describeeventspaginator">DescribeEventsPaginator</a></li>
+<li><a href="paginators/#describeglobalclusterspaginator">DescribeGlobalClustersPaginator</a></li>
 <li><a href="paginators/#describeorderabledbinstanceoptionspaginator">DescribeOrderableDBInstanceOptionsPaginator</a></li>
 <li><a href="paginators/#describependingmaintenanceactionspaginator">DescribePendingMaintenanceActionsPaginator</a></li>
 </ul>
@@ -37692,6 +37693,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#describeenginedefaultparameterspaginatorname">DescribeEngineDefaultParametersPaginatorName</a></li>
 <li><a href="literals/#describeeventsubscriptionspaginatorname">DescribeEventSubscriptionsPaginatorName</a></li>
 <li><a href="literals/#describeeventspaginatorname">DescribeEventsPaginatorName</a></li>
+<li><a href="literals/#describeglobalclusterspaginatorname">DescribeGlobalClustersPaginatorName</a></li>
 <li><a href="literals/#describeorderabledbinstanceoptionspaginatorname">DescribeOrderableDBInstanceOptionsPaginatorName</a></li>
 <li><a href="literals/#describependingmaintenanceactionspaginatorname">DescribePendingMaintenanceActionsPaginatorName</a></li>
 <li><a href="literals/#sourcetypetype">SourceTypeType</a></li>
@@ -37725,6 +37727,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#dbclusterparametergrouptypedef">DBClusterParameterGroupTypeDef</a></li>
 <li><a href="type_defs/#dbclustersnapshottypedef">DBClusterSnapshotTypeDef</a></li>
 <li><a href="type_defs/#dbparametergrouptypedef">DBParameterGroupTypeDef</a></li>
+<li><a href="type_defs/#serverlessv2scalingconfigurationtypedef">ServerlessV2ScalingConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createglobalclustermessagerequesttypedef">CreateGlobalClusterMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#dbclusterendpointtypedef">DBClusterEndpointTypeDef</a></li>
 <li><a href="type_defs/#dbclustermembertypedef">DBClusterMemberTypeDef</a></li>
@@ -37732,6 +37735,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#parametertypedef">ParameterTypeDef</a></li>
 <li><a href="type_defs/#dbclusterroletypedef">DBClusterRoleTypeDef</a></li>
 <li><a href="type_defs/#dbclustersnapshotattributetypedef">DBClusterSnapshotAttributeTypeDef</a></li>
+<li><a href="type_defs/#serverlessv2scalingconfigurationinfotypedef">ServerlessV2ScalingConfigurationInfoTypeDef</a></li>
 <li><a href="type_defs/#vpcsecuritygroupmembershiptypedef">VpcSecurityGroupMembershipTypeDef</a></li>
 <li><a href="type_defs/#timezonetypedef">TimezoneTypeDef</a></li>
 <li><a href="type_defs/#upgradetargettypedef">UpgradeTargetTypeDef</a></li>
@@ -37795,19 +37799,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#copydbclustersnapshotmessagerequesttypedef">CopyDBClusterSnapshotMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#copydbparametergroupmessagerequesttypedef">CopyDBParameterGroupMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#createdbclusterendpointmessagerequesttypedef">CreateDBClusterEndpointMessageRequestTypeDef</a></li>
-<li><a href="type_defs/#createdbclustermessagerequesttypedef">CreateDBClusterMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#createdbclusterparametergroupmessagerequesttypedef">CreateDBClusterParameterGroupMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#createdbclustersnapshotmessagerequesttypedef">CreateDBClusterSnapshotMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#createdbinstancemessagerequesttypedef">CreateDBInstanceMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#createdbparametergroupmessagerequesttypedef">CreateDBParameterGroupMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#createdbsubnetgroupmessagerequesttypedef">CreateDBSubnetGroupMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#createeventsubscriptionmessagerequesttypedef">CreateEventSubscriptionMessageRequestTypeDef</a></li>
-<li><a href="type_defs/#restoredbclusterfromsnapshotmessagerequesttypedef">RestoreDBClusterFromSnapshotMessageRequestTypeDef</a></li>
-<li><a href="type_defs/#restoredbclustertopointintimemessagerequesttypedef">RestoreDBClusterToPointInTimeMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#taglistmessagetypedef">TagListMessageTypeDef</a></li>
 <li><a href="type_defs/#orderabledbinstanceoptiontypedef">OrderableDBInstanceOptionTypeDef</a></li>
 <li><a href="type_defs/#subnettypedef">SubnetTypeDef</a></li>
-<li><a href="type_defs/#modifydbclustermessagerequesttypedef">ModifyDBClusterMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#modifydbinstancemessagerequesttypedef">ModifyDBInstanceMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#copydbclusterparametergroupresulttypedef">CopyDBClusterParameterGroupResultTypeDef</a></li>
 <li><a href="type_defs/#createdbclusterparametergroupresulttypedef">CreateDBClusterParameterGroupResultTypeDef</a></li>
@@ -37819,6 +37819,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#copydbparametergroupresulttypedef">CopyDBParameterGroupResultTypeDef</a></li>
 <li><a href="type_defs/#createdbparametergroupresulttypedef">CreateDBParameterGroupResultTypeDef</a></li>
 <li><a href="type_defs/#dbparametergroupsmessagetypedef">DBParameterGroupsMessageTypeDef</a></li>
+<li><a href="type_defs/#createdbclustermessagerequesttypedef">CreateDBClusterMessageRequestTypeDef</a></li>
+<li><a href="type_defs/#modifydbclustermessagerequesttypedef">ModifyDBClusterMessageRequestTypeDef</a></li>
+<li><a href="type_defs/#restoredbclusterfromsnapshotmessagerequesttypedef">RestoreDBClusterFromSnapshotMessageRequestTypeDef</a></li>
+<li><a href="type_defs/#restoredbclustertopointintimemessagerequesttypedef">RestoreDBClusterToPointInTimeMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#dbclusterendpointmessagetypedef">DBClusterEndpointMessageTypeDef</a></li>
 <li><a href="type_defs/#dbclusterparametergroupdetailstypedef">DBClusterParameterGroupDetailsTypeDef</a></li>
 <li><a href="type_defs/#dbparametergroupdetailstypedef">DBParameterGroupDetailsTypeDef</a></li>
@@ -37861,6 +37865,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeenginedefaultparametersmessagedescribeenginedefaultparameterspaginatetypedef">DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef">DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeeventsmessagedescribeeventspaginatetypedef">DescribeEventsMessageDescribeEventsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeglobalclustersmessagedescribeglobalclusterspaginatetypedef">DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeorderabledbinstanceoptionsmessagedescribeorderabledbinstanceoptionspaginatetypedef">DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describependingmaintenanceactionsmessagedescribependingmaintenanceactionspaginatetypedef">DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describedbinstancesmessagedbinstanceavailablewaittypedef">DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef</a></li>

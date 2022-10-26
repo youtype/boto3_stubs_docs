@@ -5024,15 +5024,14 @@ from mypy_boto3_sagemaker.type_defs import ResourceLimitsTypeDef
 
 def get_value() -> ResourceLimitsTypeDef:
     return {
-        "MaxNumberOfTrainingJobs": ...,
         "MaxParallelTrainingJobs": ...,
     }
 ```
 
 ```python title="Definition"
 class ResourceLimitsTypeDef(TypedDict):
-    MaxNumberOfTrainingJobs: int,
     MaxParallelTrainingJobs: int,
+    MaxNumberOfTrainingJobs: NotRequired[int],
 ```
 
 ## TuningJobCompletionCriteriaTypeDef

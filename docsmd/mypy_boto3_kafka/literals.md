@@ -247,6 +247,21 @@ NodeTypeType = Literal[
     "BROKER",
 ]
 ```
+## StorageModeType
+
+```python title="Usage Example"
+from mypy_boto3_kafka.literals import StorageModeType
+
+def get_value() -> StorageModeType:
+    return "LOCAL"
+```
+
+```python title="Definition"
+StorageModeType = Literal[
+    "LOCAL",
+    "TIERED",
+]
+```
 ## KafkaServiceName
 
 ```python title="Usage Example"

@@ -253,6 +253,23 @@ class DBParameterGroupTypeDef(TypedDict):
     DBParameterGroupArn: NotRequired[str],
 ```
 
+## ServerlessV2ScalingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import ServerlessV2ScalingConfigurationTypeDef
+
+def get_value() -> ServerlessV2ScalingConfigurationTypeDef:
+    return {
+        "MinCapacity": ...,
+    }
+```
+
+```python title="Definition"
+class ServerlessV2ScalingConfigurationTypeDef(TypedDict):
+    MinCapacity: NotRequired[float],
+    MaxCapacity: NotRequired[float],
+```
+
 ## CreateGlobalClusterMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -394,6 +411,23 @@ def get_value() -> DBClusterSnapshotAttributeTypeDef:
 class DBClusterSnapshotAttributeTypeDef(TypedDict):
     AttributeName: NotRequired[str],
     AttributeValues: NotRequired[List[str]],
+```
+
+## ServerlessV2ScalingConfigurationInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import ServerlessV2ScalingConfigurationInfoTypeDef
+
+def get_value() -> ServerlessV2ScalingConfigurationInfoTypeDef:
+    return {
+        "MinCapacity": ...,
+    }
+```
+
+```python title="Definition"
+class ServerlessV2ScalingConfigurationInfoTypeDef(TypedDict):
+    MinCapacity: NotRequired[float],
+    MaxCapacity: NotRequired[float],
 ```
 
 ## VpcSecurityGroupMembershipTypeDef
@@ -1608,50 +1642,6 @@ class CreateDBClusterEndpointMessageRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateDBClusterMessageRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_neptune.type_defs import CreateDBClusterMessageRequestTypeDef
-
-def get_value() -> CreateDBClusterMessageRequestTypeDef:
-    return {
-        "DBClusterIdentifier": ...,
-        "Engine": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDBClusterMessageRequestTypeDef(TypedDict):
-    DBClusterIdentifier: str,
-    Engine: str,
-    AvailabilityZones: NotRequired[Sequence[str]],
-    BackupRetentionPeriod: NotRequired[int],
-    CharacterSetName: NotRequired[str],
-    CopyTagsToSnapshot: NotRequired[bool],
-    DatabaseName: NotRequired[str],
-    DBClusterParameterGroupName: NotRequired[str],
-    VpcSecurityGroupIds: NotRequired[Sequence[str]],
-    DBSubnetGroupName: NotRequired[str],
-    EngineVersion: NotRequired[str],
-    Port: NotRequired[int],
-    MasterUsername: NotRequired[str],
-    MasterUserPassword: NotRequired[str],
-    OptionGroupName: NotRequired[str],
-    PreferredBackupWindow: NotRequired[str],
-    PreferredMaintenanceWindow: NotRequired[str],
-    ReplicationSourceIdentifier: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    StorageEncrypted: NotRequired[bool],
-    KmsKeyId: NotRequired[str],
-    PreSignedUrl: NotRequired[str],
-    EnableIAMDatabaseAuthentication: NotRequired[bool],
-    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
-    DeletionProtection: NotRequired[bool],
-    GlobalClusterIdentifier: NotRequired[str],
-    SourceRegion: NotRequired[str],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDBClusterParameterGroupMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1823,73 +1813,6 @@ class CreateEventSubscriptionMessageRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## RestoreDBClusterFromSnapshotMessageRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_neptune.type_defs import RestoreDBClusterFromSnapshotMessageRequestTypeDef
-
-def get_value() -> RestoreDBClusterFromSnapshotMessageRequestTypeDef:
-    return {
-        "DBClusterIdentifier": ...,
-        "SnapshotIdentifier": ...,
-        "Engine": ...,
-    }
-```
-
-```python title="Definition"
-class RestoreDBClusterFromSnapshotMessageRequestTypeDef(TypedDict):
-    DBClusterIdentifier: str,
-    SnapshotIdentifier: str,
-    Engine: str,
-    AvailabilityZones: NotRequired[Sequence[str]],
-    EngineVersion: NotRequired[str],
-    Port: NotRequired[int],
-    DBSubnetGroupName: NotRequired[str],
-    DatabaseName: NotRequired[str],
-    OptionGroupName: NotRequired[str],
-    VpcSecurityGroupIds: NotRequired[Sequence[str]],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    KmsKeyId: NotRequired[str],
-    EnableIAMDatabaseAuthentication: NotRequired[bool],
-    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
-    DBClusterParameterGroupName: NotRequired[str],
-    DeletionProtection: NotRequired[bool],
-    CopyTagsToSnapshot: NotRequired[bool],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## RestoreDBClusterToPointInTimeMessageRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_neptune.type_defs import RestoreDBClusterToPointInTimeMessageRequestTypeDef
-
-def get_value() -> RestoreDBClusterToPointInTimeMessageRequestTypeDef:
-    return {
-        "DBClusterIdentifier": ...,
-        "SourceDBClusterIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class RestoreDBClusterToPointInTimeMessageRequestTypeDef(TypedDict):
-    DBClusterIdentifier: str,
-    SourceDBClusterIdentifier: str,
-    RestoreType: NotRequired[str],
-    RestoreToTime: NotRequired[Union[datetime, str]],
-    UseLatestRestorableTime: NotRequired[bool],
-    Port: NotRequired[int],
-    DBSubnetGroupName: NotRequired[str],
-    OptionGroupName: NotRequired[str],
-    VpcSecurityGroupIds: NotRequired[Sequence[str]],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-    KmsKeyId: NotRequired[str],
-    EnableIAMDatabaseAuthentication: NotRequired[bool],
-    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
-    DBClusterParameterGroupName: NotRequired[str],
-    DeletionProtection: NotRequired[bool],
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagListMessageTypeDef
 
 ```python title="Usage Example"
@@ -1966,40 +1889,6 @@ class SubnetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
-## ModifyDBClusterMessageRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_neptune.type_defs import ModifyDBClusterMessageRequestTypeDef
-
-def get_value() -> ModifyDBClusterMessageRequestTypeDef:
-    return {
-        "DBClusterIdentifier": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyDBClusterMessageRequestTypeDef(TypedDict):
-    DBClusterIdentifier: str,
-    NewDBClusterIdentifier: NotRequired[str],
-    ApplyImmediately: NotRequired[bool],
-    BackupRetentionPeriod: NotRequired[int],
-    DBClusterParameterGroupName: NotRequired[str],
-    VpcSecurityGroupIds: NotRequired[Sequence[str]],
-    Port: NotRequired[int],
-    MasterUserPassword: NotRequired[str],
-    OptionGroupName: NotRequired[str],
-    PreferredBackupWindow: NotRequired[str],
-    PreferredMaintenanceWindow: NotRequired[str],
-    EnableIAMDatabaseAuthentication: NotRequired[bool],
-    CloudwatchLogsExportConfiguration: NotRequired[CloudwatchLogsExportConfigurationTypeDef],  # (1)
-    EngineVersion: NotRequired[str],
-    AllowMajorVersionUpgrade: NotRequired[bool],
-    DBInstanceParameterGroupName: NotRequired[str],
-    DeletionProtection: NotRequired[bool],
-    CopyTagsToSnapshot: NotRequired[bool],
-```
-
-1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
 ## ModifyDBInstanceMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -2259,6 +2148,159 @@ class DBParameterGroupsMessageTypeDef(TypedDict):
 
 1. See [:material-code-braces: DBParameterGroupTypeDef](./type_defs.md#dbparametergrouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDBClusterMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import CreateDBClusterMessageRequestTypeDef
+
+def get_value() -> CreateDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+        "Engine": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    Engine: str,
+    AvailabilityZones: NotRequired[Sequence[str]],
+    BackupRetentionPeriod: NotRequired[int],
+    CharacterSetName: NotRequired[str],
+    CopyTagsToSnapshot: NotRequired[bool],
+    DatabaseName: NotRequired[str],
+    DBClusterParameterGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    DBSubnetGroupName: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    Port: NotRequired[int],
+    MasterUsername: NotRequired[str],
+    MasterUserPassword: NotRequired[str],
+    OptionGroupName: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    ReplicationSourceIdentifier: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    StorageEncrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    PreSignedUrl: NotRequired[str],
+    EnableIAMDatabaseAuthentication: NotRequired[bool],
+    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
+    DeletionProtection: NotRequired[bool],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (2)
+    GlobalClusterIdentifier: NotRequired[str],
+    SourceRegion: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+## ModifyDBClusterMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import ModifyDBClusterMessageRequestTypeDef
+
+def get_value() -> ModifyDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    NewDBClusterIdentifier: NotRequired[str],
+    ApplyImmediately: NotRequired[bool],
+    BackupRetentionPeriod: NotRequired[int],
+    DBClusterParameterGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    Port: NotRequired[int],
+    MasterUserPassword: NotRequired[str],
+    OptionGroupName: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    EnableIAMDatabaseAuthentication: NotRequired[bool],
+    CloudwatchLogsExportConfiguration: NotRequired[CloudwatchLogsExportConfigurationTypeDef],  # (1)
+    EngineVersion: NotRequired[str],
+    AllowMajorVersionUpgrade: NotRequired[bool],
+    DBInstanceParameterGroupName: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    CopyTagsToSnapshot: NotRequired[bool],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+## RestoreDBClusterFromSnapshotMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import RestoreDBClusterFromSnapshotMessageRequestTypeDef
+
+def get_value() -> RestoreDBClusterFromSnapshotMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+        "SnapshotIdentifier": ...,
+        "Engine": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreDBClusterFromSnapshotMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    SnapshotIdentifier: str,
+    Engine: str,
+    AvailabilityZones: NotRequired[Sequence[str]],
+    EngineVersion: NotRequired[str],
+    Port: NotRequired[int],
+    DBSubnetGroupName: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    OptionGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    KmsKeyId: NotRequired[str],
+    EnableIAMDatabaseAuthentication: NotRequired[bool],
+    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
+    DBClusterParameterGroupName: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    CopyTagsToSnapshot: NotRequired[bool],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
+## RestoreDBClusterToPointInTimeMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import RestoreDBClusterToPointInTimeMessageRequestTypeDef
+
+def get_value() -> RestoreDBClusterToPointInTimeMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+        "SourceDBClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreDBClusterToPointInTimeMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    SourceDBClusterIdentifier: str,
+    RestoreType: NotRequired[str],
+    RestoreToTime: NotRequired[Union[datetime, str]],
+    UseLatestRestorableTime: NotRequired[bool],
+    Port: NotRequired[int],
+    DBSubnetGroupName: NotRequired[str],
+    OptionGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    KmsKeyId: NotRequired[str],
+    EnableIAMDatabaseAuthentication: NotRequired[bool],
+    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
+    DBClusterParameterGroupName: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ServerlessV2ScalingConfigurationTypeDef](./type_defs.md#serverlessv2scalingconfigurationtypedef) 
 ## DBClusterEndpointMessageTypeDef
 
 ```python title="Usage Example"
@@ -2491,12 +2533,14 @@ class DBClusterTypeDef(TypedDict):
     DeletionProtection: NotRequired[bool],
     CrossAccountClone: NotRequired[bool],
     AutomaticRestartTime: NotRequired[datetime],
+    ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationInfoTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: DBClusterOptionGroupStatusTypeDef](./type_defs.md#dbclusteroptiongroupstatustypedef) 
 2. See [:material-code-braces: DBClusterMemberTypeDef](./type_defs.md#dbclustermembertypedef) 
 3. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 
 4. See [:material-code-braces: DBClusterRoleTypeDef](./type_defs.md#dbclusterroletypedef) 
+5. See [:material-code-braces: ServerlessV2ScalingConfigurationInfoTypeDef](./type_defs.md#serverlessv2scalingconfigurationinfotypedef) 
 ## DBEngineVersionTypeDef
 
 ```python title="Usage Example"
@@ -3185,6 +3229,24 @@ class DescribeEventsMessageDescribeEventsPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_neptune.type_defs import DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef
+
+def get_value() -> DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef(TypedDict):
+    GlobalClusterIdentifier: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef
 
 ```python title="Usage Example"

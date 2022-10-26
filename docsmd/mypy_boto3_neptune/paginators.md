@@ -818,6 +818,65 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef) 
+## DescribeGlobalClustersPaginator
+
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_global_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeGlobalClusters)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeGlobalClustersPaginator
+
+def get_describe_global_clusters_paginator() -> DescribeGlobalClustersPaginator:
+    return Session().client("neptune").get_paginator("describe_global_clusters")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_neptune.paginator import DescribeGlobalClustersPaginator
+
+session = Session()
+
+client = Session().client("neptune")  # (1)
+paginator: DescribeGlobalClustersPaginator = client.get_paginator("describe_global_clusters")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NeptuneClient](./client.md)
+2. paginator: [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
+3. item: [:material-code-braces: GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeGlobalClustersPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalClusterIdentifier: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GlobalClustersMessageTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef = {  # (1)
+    "GlobalClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef](./type_defs.md#describeglobalclustersmessagedescribeglobalclusterspaginatetypedef) 
 ## DescribeOrderableDBInstanceOptionsPaginator
 
 Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_orderable_db_instance_options")`.

@@ -171,7 +171,8 @@ def create_cluster(
     OpenMonitoring: OpenMonitoringInfoTypeDef = ...,  # (6)
     LoggingInfo: LoggingInfoTypeDef = ...,  # (7)
     Tags: Mapping[str, str] = ...,
-) -> CreateClusterResponseTypeDef:  # (8)
+    StorageMode: StorageModeType = ...,  # (8)
+) -> CreateClusterResponseTypeDef:  # (9)
     ...
 ```
 
@@ -182,7 +183,8 @@ def create_cluster(
 5. See [:material-code-brackets: EnhancedMonitoringType](./literals.md#enhancedmonitoringtype) 
 6. See [:material-code-braces: OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef) 
 7. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
-8. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
+8. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
+9. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1228,6 +1230,42 @@ parent.update_security(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateSecurityRequestRequestTypeDef](./type_defs.md#updatesecurityrequestrequesttypedef) 
+
+### update\_storage
+
+Updates cluster broker volume size (or) sets cluster storage mode to TIERED.
+
+Type annotations and code completion for `#!python boto3.client("kafka").update_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_storage)
+
+```python title="Method definition"
+def update_storage(
+    self,
+    *,
+    ClusterArn: str,
+    CurrentVersion: str,
+    ProvisionedThroughput: ProvisionedThroughputTypeDef = ...,  # (1)
+    StorageMode: StorageModeType = ...,  # (2)
+    VolumeSizeGB: int = ...,
+) -> UpdateStorageResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+2. See [:material-code-brackets: StorageModeType](./literals.md#storagemodetype) 
+3. See [:material-code-braces: UpdateStorageResponseTypeDef](./type_defs.md#updatestorageresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateStorageRequestRequestTypeDef = {  # (1)
+    "ClusterArn": ...,
+    "CurrentVersion": ...,
+}
+
+parent.update_storage(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateStorageRequestRequestTypeDef](./type_defs.md#updatestoragerequestrequesttypedef) 
 
 
 
