@@ -91,6 +91,7 @@ def get_value() -> ActionValueType:
 - [FilterRequirementType](./literals.md#filterrequirementtype)
 - [ForwardedIPPositionType](./literals.md#forwardedippositiontype)
 - [IPAddressVersionType](./literals.md#ipaddressversiontype)
+- [InspectionLevelType](./literals.md#inspectionleveltype)
 - [JsonMatchScopeType](./literals.md#jsonmatchscopetype)
 - [LabelMatchScopeType](./literals.md#labelmatchscopetype)
 - [MapMatchScopeType](./literals.md#mapmatchscopetype)
@@ -117,14 +118,15 @@ def get_value() -> ActionValueType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef
+from mypy_boto3_wafv2.type_defs import AWSManagedRulesBotControlRuleSetTypeDef
 
-def get_value() -> ActionConditionTypeDef:
+def get_value() -> AWSManagedRulesBotControlRuleSetTypeDef:
     return {
-        "Action": ...,
+        "InspectionLevel": ...,
     }
 ```
 
+- [AWSManagedRulesBotControlRuleSetTypeDef](./type_defs.md#awsmanagedrulesbotcontrolrulesettypedef)
 - [ActionConditionTypeDef](./type_defs.md#actionconditiontypedef)
 - [AndStatementTypeDef](./type_defs.md#andstatementtypedef)
 - [AssociateWebACLRequestRequestTypeDef](./type_defs.md#associatewebaclrequestrequesttypedef)
@@ -132,6 +134,7 @@ def get_value() -> ActionConditionTypeDef:
 - [TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)
 - [ImmunityTimePropertyTypeDef](./type_defs.md#immunitytimepropertytypedef)
 - [CaptchaResponseTypeDef](./type_defs.md#captcharesponsetypedef)
+- [ChallengeResponseTypeDef](./type_defs.md#challengeresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [LabelNameConditionTypeDef](./type_defs.md#labelnameconditiontypedef)
 - [CookieMatchPatternTypeDef](./type_defs.md#cookiematchpatterntypedef)
@@ -204,6 +207,7 @@ def get_value() -> ActionConditionTypeDef:
 - [UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef)
 - [UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydaterequestrequesttypedef)
 - [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
+- [ChallengeConfigTypeDef](./type_defs.md#challengeconfigtypedef)
 - [CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef)
 - [DeleteFirewallManagerRuleGroupsResponseTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsresponsetypedef)
 - [GenerateMobileSdkReleaseUrlResponseTypeDef](./type_defs.md#generatemobilesdkreleaseurlresponsetypedef)
@@ -234,7 +238,6 @@ def get_value() -> ActionConditionTypeDef:
 - [ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef)
 - [CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef)
 - [CustomResponseTypeDef](./type_defs.md#customresponsetypedef)
-- [RuleGroupReferenceStatementTypeDef](./type_defs.md#rulegroupreferencestatementtypedef)
 - [GeoMatchStatementTypeDef](./type_defs.md#geomatchstatementtypedef)
 - [RateBasedStatementTypeDef](./type_defs.md#ratebasedstatementtypedef)
 - [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef)
@@ -257,11 +260,11 @@ def get_value() -> ActionConditionTypeDef:
 - [GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef)
 - [AllowActionTypeDef](./type_defs.md#allowactiontypedef)
 - [CaptchaActionTypeDef](./type_defs.md#captchaactiontypedef)
+- [ChallengeActionTypeDef](./type_defs.md#challengeactiontypedef)
 - [CountActionTypeDef](./type_defs.md#countactiontypedef)
 - [BlockActionTypeDef](./type_defs.md#blockactiontypedef)
 - [SampledHTTPRequestTypeDef](./type_defs.md#sampledhttprequesttypedef)
 - [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- [ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef)
 - [GetManagedRuleSetResponseTypeDef](./type_defs.md#getmanagedrulesetresponsetypedef)
 - [LoggingFilterTypeDef](./type_defs.md#loggingfiltertypedef)
 - [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
@@ -274,16 +277,16 @@ def get_value() -> ActionConditionTypeDef:
 - [SizeConstraintStatementTypeDef](./type_defs.md#sizeconstraintstatementtypedef)
 - [SqliMatchStatementTypeDef](./type_defs.md#sqlimatchstatementtypedef)
 - [XssMatchStatementTypeDef](./type_defs.md#xssmatchstatementtypedef)
-- [FirewallManagerStatementTypeDef](./type_defs.md#firewallmanagerstatementtypedef)
 - [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- [RuleActionOverrideTypeDef](./type_defs.md#ruleactionoverridetypedef)
 - [RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)
 - [RuleTypeDef](./type_defs.md#ruletypedef)
-- [StatementTypeDef](./type_defs.md#statementtypedef)
-- [FirewallManagerRuleGroupTypeDef](./type_defs.md#firewallmanagerrulegrouptypedef)
 - [GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef)
 - [ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef)
 - [PutLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putloggingconfigurationrequestrequesttypedef)
 - [PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef)
+- [ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef)
+- [RuleGroupReferenceStatementTypeDef](./type_defs.md#rulegroupreferencestatementtypedef)
 - [DescribeManagedRuleGroupResponseTypeDef](./type_defs.md#describemanagedrulegroupresponsetypedef)
 - [CheckCapacityRequestRequestTypeDef](./type_defs.md#checkcapacityrequestrequesttypedef)
 - [CreateRuleGroupRequestRequestTypeDef](./type_defs.md#createrulegrouprequestrequesttypedef)
@@ -291,8 +294,11 @@ def get_value() -> ActionConditionTypeDef:
 - [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 - [UpdateRuleGroupRequestRequestTypeDef](./type_defs.md#updaterulegrouprequestrequesttypedef)
 - [UpdateWebACLRequestRequestTypeDef](./type_defs.md#updatewebaclrequestrequesttypedef)
-- [WebACLTypeDef](./type_defs.md#webacltypedef)
+- [FirewallManagerStatementTypeDef](./type_defs.md#firewallmanagerstatementtypedef)
+- [StatementTypeDef](./type_defs.md#statementtypedef)
 - [GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef)
+- [FirewallManagerRuleGroupTypeDef](./type_defs.md#firewallmanagerrulegrouptypedef)
+- [WebACLTypeDef](./type_defs.md#webacltypedef)
 - [GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef)
 - [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef)
 

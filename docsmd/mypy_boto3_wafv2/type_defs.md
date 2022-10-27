@@ -7,6 +7,23 @@
     Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
     type annotations stubs module [mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
+## AWSManagedRulesBotControlRuleSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import AWSManagedRulesBotControlRuleSetTypeDef
+
+def get_value() -> AWSManagedRulesBotControlRuleSetTypeDef:
+    return {
+        "InspectionLevel": ...,
+    }
+```
+
+```python title="Definition"
+class AWSManagedRulesBotControlRuleSetTypeDef(TypedDict):
+    InspectionLevel: InspectionLevelType,  # (1)
+```
+
+1. See [:material-code-brackets: InspectionLevelType](./literals.md#inspectionleveltype) 
 ## ActionConditionTypeDef
 
 ```python title="Usage Example"
@@ -124,6 +141,25 @@ def get_value() -> CaptchaResponseTypeDef:
 
 ```python title="Definition"
 class CaptchaResponseTypeDef(TypedDict):
+    ResponseCode: NotRequired[int],
+    SolveTimestamp: NotRequired[int],
+    FailureReason: NotRequired[FailureReasonType],  # (1)
+```
+
+1. See [:material-code-brackets: FailureReasonType](./literals.md#failurereasontype) 
+## ChallengeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ChallengeResponseTypeDef
+
+def get_value() -> ChallengeResponseTypeDef:
+    return {
+        "ResponseCode": ...,
+    }
+```
+
+```python title="Definition"
+class ChallengeResponseTypeDef(TypedDict):
     ResponseCode: NotRequired[int],
     SolveTimestamp: NotRequired[int],
     FailureReason: NotRequired[FailureReasonType],  # (1)
@@ -1502,6 +1538,23 @@ class CaptchaConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ImmunityTimePropertyTypeDef](./type_defs.md#immunitytimepropertytypedef) 
+## ChallengeConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ChallengeConfigTypeDef
+
+def get_value() -> ChallengeConfigTypeDef:
+    return {
+        "ImmunityTimeProperty": ...,
+    }
+```
+
+```python title="Definition"
+class ChallengeConfigTypeDef(TypedDict):
+    ImmunityTimeProperty: NotRequired[ImmunityTimePropertyTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ImmunityTimePropertyTypeDef](./type_defs.md#immunitytimepropertytypedef) 
 ## CheckCapacityResponseTypeDef
 
 ```python title="Usage Example"
@@ -2118,24 +2171,6 @@ class CustomResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef) 
-## RuleGroupReferenceStatementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wafv2.type_defs import RuleGroupReferenceStatementTypeDef
-
-def get_value() -> RuleGroupReferenceStatementTypeDef:
-    return {
-        "ARN": ...,
-    }
-```
-
-```python title="Definition"
-class RuleGroupReferenceStatementTypeDef(TypedDict):
-    ARN: str,
-    ExcludedRules: NotRequired[Sequence[ExcludedRuleTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef) 
 ## GeoMatchStatementTypeDef
 
 ```python title="Usage Example"
@@ -2443,11 +2478,13 @@ class ManagedRuleGroupConfigTypeDef(TypedDict):
     PayloadType: NotRequired[PayloadTypeType],  # (1)
     UsernameField: NotRequired[UsernameFieldTypeDef],  # (2)
     PasswordField: NotRequired[PasswordFieldTypeDef],  # (3)
+    AWSManagedRulesBotControlRuleSet: NotRequired[AWSManagedRulesBotControlRuleSetTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: PayloadTypeType](./literals.md#payloadtypetype) 
 2. See [:material-code-braces: UsernameFieldTypeDef](./type_defs.md#usernamefieldtypedef) 
 3. See [:material-code-braces: PasswordFieldTypeDef](./type_defs.md#passwordfieldtypedef) 
+4. See [:material-code-braces: AWSManagedRulesBotControlRuleSetTypeDef](./type_defs.md#awsmanagedrulesbotcontrolrulesettypedef) 
 ## ManagedRuleSetTypeDef
 
 ```python title="Usage Example"
@@ -2620,6 +2657,23 @@ class CaptchaActionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef) 
+## ChallengeActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ChallengeActionTypeDef
+
+def get_value() -> ChallengeActionTypeDef:
+    return {
+        "CustomRequestHandling": ...,
+    }
+```
+
+```python title="Definition"
+class ChallengeActionTypeDef(TypedDict):
+    CustomRequestHandling: NotRequired[CustomRequestHandlingTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef) 
 ## CountActionTypeDef
 
 ```python title="Usage Example"
@@ -2677,12 +2731,15 @@ class SampledHTTPRequestTypeDef(TypedDict):
     ResponseCodeSent: NotRequired[int],
     Labels: NotRequired[List[LabelTypeDef]],  # (3)
     CaptchaResponse: NotRequired[CaptchaResponseTypeDef],  # (4)
+    ChallengeResponse: NotRequired[ChallengeResponseTypeDef],  # (5)
+    OverriddenAction: NotRequired[str],
 ```
 
 1. See [:material-code-braces: HTTPRequestTypeDef](./type_defs.md#httprequesttypedef) 
 2. See [:material-code-braces: HTTPHeaderTypeDef](./type_defs.md#httpheadertypedef) 
 3. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
 4. See [:material-code-braces: CaptchaResponseTypeDef](./type_defs.md#captcharesponsetypedef) 
+5. See [:material-code-braces: ChallengeResponseTypeDef](./type_defs.md#challengeresponsetypedef) 
 ## FieldToMatchTypeDef
 
 ```python title="Usage Example"
@@ -2714,31 +2771,6 @@ class FieldToMatchTypeDef(TypedDict):
 4. See [:material-code-braces: JsonBodyTypeDef](./type_defs.md#jsonbodytypedef) 
 5. See [:material-code-braces: HeadersTypeDef](./type_defs.md#headerstypedef) 
 6. See [:material-code-braces: CookiesTypeDef](./type_defs.md#cookiestypedef) 
-## ManagedRuleGroupStatementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wafv2.type_defs import ManagedRuleGroupStatementTypeDef
-
-def get_value() -> ManagedRuleGroupStatementTypeDef:
-    return {
-        "VendorName": ...,
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class ManagedRuleGroupStatementTypeDef(TypedDict):
-    VendorName: str,
-    Name: str,
-    Version: NotRequired[str],
-    ExcludedRules: NotRequired[Sequence[ExcludedRuleTypeDef]],  # (1)
-    ScopeDownStatement: NotRequired[StatementTypeDef],  # (2)
-    ManagedRuleGroupConfigs: NotRequired[Sequence[ManagedRuleGroupConfigTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef) 
-2. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
-3. See [:material-code-braces: ManagedRuleGroupConfigTypeDef](./type_defs.md#managedrulegroupconfigtypedef) 
 ## GetManagedRuleSetResponseTypeDef
 
 ```python title="Usage Example"
@@ -2835,12 +2867,14 @@ class RuleActionTypeDef(TypedDict):
     Allow: NotRequired[AllowActionTypeDef],  # (2)
     Count: NotRequired[CountActionTypeDef],  # (3)
     Captcha: NotRequired[CaptchaActionTypeDef],  # (4)
+    Challenge: NotRequired[ChallengeActionTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: BlockActionTypeDef](./type_defs.md#blockactiontypedef) 
 2. See [:material-code-braces: AllowActionTypeDef](./type_defs.md#allowactiontypedef) 
 3. See [:material-code-braces: CountActionTypeDef](./type_defs.md#countactiontypedef) 
 4. See [:material-code-braces: CaptchaActionTypeDef](./type_defs.md#captchaactiontypedef) 
+5. See [:material-code-braces: ChallengeActionTypeDef](./type_defs.md#challengeactiontypedef) 
 ## GetSampledRequestsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3002,25 +3036,6 @@ class XssMatchStatementTypeDef(TypedDict):
 
 1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
 2. See [:material-code-braces: TextTransformationTypeDef](./type_defs.md#texttransformationtypedef) 
-## FirewallManagerStatementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wafv2.type_defs import FirewallManagerStatementTypeDef
-
-def get_value() -> FirewallManagerStatementTypeDef:
-    return {
-        "ManagedRuleGroupStatement": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallManagerStatementTypeDef(TypedDict):
-    ManagedRuleGroupStatement: NotRequired[ManagedRuleGroupStatementTypeDef],  # (1)
-    RuleGroupReferenceStatement: NotRequired[RuleGroupReferenceStatementTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef) 
-2. See [:material-code-braces: RuleGroupReferenceStatementTypeDef](./type_defs.md#rulegroupreferencestatementtypedef) 
 ## LoggingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3044,6 +3059,25 @@ class LoggingConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
 2. See [:material-code-braces: LoggingFilterTypeDef](./type_defs.md#loggingfiltertypedef) 
+## RuleActionOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import RuleActionOverrideTypeDef
+
+def get_value() -> RuleActionOverrideTypeDef:
+    return {
+        "Name": ...,
+        "ActionToUse": ...,
+    }
+```
+
+```python title="Definition"
+class RuleActionOverrideTypeDef(TypedDict):
+    Name: str,
+    ActionToUse: RuleActionTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RuleActionTypeDef](./type_defs.md#ruleactiontypedef) 
 ## RuleSummaryTypeDef
 
 ```python title="Usage Example"
@@ -3086,6 +3120,7 @@ class RuleTypeDef(TypedDict):
     OverrideAction: NotRequired[OverrideActionTypeDef],  # (3)
     RuleLabels: NotRequired[Sequence[LabelTypeDef]],  # (4)
     CaptchaConfig: NotRequired[CaptchaConfigTypeDef],  # (6)
+    ChallengeConfig: NotRequired[ChallengeConfigTypeDef],  # (7)
 ```
 
 1. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
@@ -3094,78 +3129,7 @@ class RuleTypeDef(TypedDict):
 4. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
 5. See [:material-code-braces: VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) 
 6. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
-## StatementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wafv2.type_defs import StatementTypeDef
-
-def get_value() -> StatementTypeDef:
-    return {
-        "ByteMatchStatement": ...,
-    }
-```
-
-```python title="Definition"
-class StatementTypeDef(TypedDict):
-    ByteMatchStatement: NotRequired[ByteMatchStatementTypeDef],  # (1)
-    SqliMatchStatement: NotRequired[SqliMatchStatementTypeDef],  # (2)
-    XssMatchStatement: NotRequired[XssMatchStatementTypeDef],  # (3)
-    SizeConstraintStatement: NotRequired[SizeConstraintStatementTypeDef],  # (4)
-    GeoMatchStatement: NotRequired[GeoMatchStatementTypeDef],  # (5)
-    RuleGroupReferenceStatement: NotRequired[RuleGroupReferenceStatementTypeDef],  # (6)
-    IPSetReferenceStatement: NotRequired[IPSetReferenceStatementTypeDef],  # (7)
-    RegexPatternSetReferenceStatement: NotRequired[RegexPatternSetReferenceStatementTypeDef],  # (8)
-    RateBasedStatement: NotRequired[RateBasedStatementTypeDef],  # (9)
-    AndStatement: NotRequired[AndStatementTypeDef],  # (10)
-    OrStatement: NotRequired[OrStatementTypeDef],  # (11)
-    NotStatement: NotRequired[NotStatementTypeDef],  # (12)
-    ManagedRuleGroupStatement: NotRequired[ManagedRuleGroupStatementTypeDef],  # (13)
-    LabelMatchStatement: NotRequired[LabelMatchStatementTypeDef],  # (14)
-    RegexMatchStatement: NotRequired[RegexMatchStatementTypeDef],  # (15)
-```
-
-1. See [:material-code-braces: ByteMatchStatementTypeDef](./type_defs.md#bytematchstatementtypedef) 
-2. See [:material-code-braces: SqliMatchStatementTypeDef](./type_defs.md#sqlimatchstatementtypedef) 
-3. See [:material-code-braces: XssMatchStatementTypeDef](./type_defs.md#xssmatchstatementtypedef) 
-4. See [:material-code-braces: SizeConstraintStatementTypeDef](./type_defs.md#sizeconstraintstatementtypedef) 
-5. See [:material-code-braces: GeoMatchStatementTypeDef](./type_defs.md#geomatchstatementtypedef) 
-6. See [:material-code-braces: RuleGroupReferenceStatementTypeDef](./type_defs.md#rulegroupreferencestatementtypedef) 
-7. See [:material-code-braces: IPSetReferenceStatementTypeDef](./type_defs.md#ipsetreferencestatementtypedef) 
-8. See [:material-code-braces: RegexPatternSetReferenceStatementTypeDef](./type_defs.md#regexpatternsetreferencestatementtypedef) 
-9. See [:material-code-braces: RateBasedStatementTypeDef](./type_defs.md#ratebasedstatementtypedef) 
-10. See [:material-code-braces: AndStatementTypeDef](./type_defs.md#andstatementtypedef) 
-11. See [:material-code-braces: OrStatementTypeDef](./type_defs.md#orstatementtypedef) 
-12. See [:material-code-braces: NotStatementTypeDef](./type_defs.md#notstatementtypedef) 
-13. See [:material-code-braces: ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef) 
-14. See [:material-code-braces: LabelMatchStatementTypeDef](./type_defs.md#labelmatchstatementtypedef) 
-15. See [:material-code-braces: RegexMatchStatementTypeDef](./type_defs.md#regexmatchstatementtypedef) 
-## FirewallManagerRuleGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wafv2.type_defs import FirewallManagerRuleGroupTypeDef
-
-def get_value() -> FirewallManagerRuleGroupTypeDef:
-    return {
-        "Name": ...,
-        "Priority": ...,
-        "FirewallManagerStatement": ...,
-        "OverrideAction": ...,
-        "VisibilityConfig": ...,
-    }
-```
-
-```python title="Definition"
-class FirewallManagerRuleGroupTypeDef(TypedDict):
-    Name: str,
-    Priority: int,
-    FirewallManagerStatement: FirewallManagerStatementTypeDef,  # (1)
-    OverrideAction: OverrideActionTypeDef,  # (2)
-    VisibilityConfig: VisibilityConfigTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: FirewallManagerStatementTypeDef](./type_defs.md#firewallmanagerstatementtypedef) 
-2. See [:material-code-braces: OverrideActionTypeDef](./type_defs.md#overrideactiontypedef) 
-3. See [:material-code-braces: VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) 
+7. See [:material-code-braces: ChallengeConfigTypeDef](./type_defs.md#challengeconfigtypedef) 
 ## GetLoggingConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -3245,6 +3209,53 @@ class PutLoggingConfigurationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ManagedRuleGroupStatementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ManagedRuleGroupStatementTypeDef
+
+def get_value() -> ManagedRuleGroupStatementTypeDef:
+    return {
+        "VendorName": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ManagedRuleGroupStatementTypeDef(TypedDict):
+    VendorName: str,
+    Name: str,
+    Version: NotRequired[str],
+    ExcludedRules: NotRequired[Sequence[ExcludedRuleTypeDef]],  # (1)
+    ScopeDownStatement: NotRequired[StatementTypeDef],  # (2)
+    ManagedRuleGroupConfigs: NotRequired[Sequence[ManagedRuleGroupConfigTypeDef]],  # (3)
+    RuleActionOverrides: NotRequired[Sequence[RuleActionOverrideTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef) 
+2. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+3. See [:material-code-braces: ManagedRuleGroupConfigTypeDef](./type_defs.md#managedrulegroupconfigtypedef) 
+4. See [:material-code-braces: RuleActionOverrideTypeDef](./type_defs.md#ruleactionoverridetypedef) 
+## RuleGroupReferenceStatementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import RuleGroupReferenceStatementTypeDef
+
+def get_value() -> RuleGroupReferenceStatementTypeDef:
+    return {
+        "ARN": ...,
+    }
+```
+
+```python title="Definition"
+class RuleGroupReferenceStatementTypeDef(TypedDict):
+    ARN: str,
+    ExcludedRules: NotRequired[Sequence[ExcludedRuleTypeDef]],  # (1)
+    RuleActionOverrides: NotRequired[Sequence[RuleActionOverrideTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef) 
+2. See [:material-code-braces: RuleActionOverrideTypeDef](./type_defs.md#ruleactionoverridetypedef) 
 ## DescribeManagedRuleGroupResponseTypeDef
 
 ```python title="Usage Example"
@@ -3355,6 +3366,8 @@ class CreateWebACLRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
     CustomResponseBodies: NotRequired[Mapping[str, CustomResponseBodyTypeDef]],  # (6)
     CaptchaConfig: NotRequired[CaptchaConfigTypeDef],  # (7)
+    ChallengeConfig: NotRequired[ChallengeConfigTypeDef],  # (8)
+    TokenDomains: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
@@ -3364,6 +3377,7 @@ class CreateWebACLRequestRequestTypeDef(TypedDict):
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 6. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
 7. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
+8. See [:material-code-braces: ChallengeConfigTypeDef](./type_defs.md#challengeconfigtypedef) 
 ## RuleGroupTypeDef
 
 ```python title="Usage Example"
@@ -3458,6 +3472,8 @@ class UpdateWebACLRequestRequestTypeDef(TypedDict):
     Rules: NotRequired[Sequence[RuleTypeDef]],  # (4)
     CustomResponseBodies: NotRequired[Mapping[str, CustomResponseBodyTypeDef]],  # (5)
     CaptchaConfig: NotRequired[CaptchaConfigTypeDef],  # (6)
+    ChallengeConfig: NotRequired[ChallengeConfigTypeDef],  # (7)
+    TokenDomains: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
@@ -3466,6 +3482,120 @@ class UpdateWebACLRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 5. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
 6. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
+7. See [:material-code-braces: ChallengeConfigTypeDef](./type_defs.md#challengeconfigtypedef) 
+## FirewallManagerStatementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import FirewallManagerStatementTypeDef
+
+def get_value() -> FirewallManagerStatementTypeDef:
+    return {
+        "ManagedRuleGroupStatement": ...,
+    }
+```
+
+```python title="Definition"
+class FirewallManagerStatementTypeDef(TypedDict):
+    ManagedRuleGroupStatement: NotRequired[ManagedRuleGroupStatementTypeDef],  # (1)
+    RuleGroupReferenceStatement: NotRequired[RuleGroupReferenceStatementTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef) 
+2. See [:material-code-braces: RuleGroupReferenceStatementTypeDef](./type_defs.md#rulegroupreferencestatementtypedef) 
+## StatementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import StatementTypeDef
+
+def get_value() -> StatementTypeDef:
+    return {
+        "ByteMatchStatement": ...,
+    }
+```
+
+```python title="Definition"
+class StatementTypeDef(TypedDict):
+    ByteMatchStatement: NotRequired[ByteMatchStatementTypeDef],  # (1)
+    SqliMatchStatement: NotRequired[SqliMatchStatementTypeDef],  # (2)
+    XssMatchStatement: NotRequired[XssMatchStatementTypeDef],  # (3)
+    SizeConstraintStatement: NotRequired[SizeConstraintStatementTypeDef],  # (4)
+    GeoMatchStatement: NotRequired[GeoMatchStatementTypeDef],  # (5)
+    RuleGroupReferenceStatement: NotRequired[RuleGroupReferenceStatementTypeDef],  # (6)
+    IPSetReferenceStatement: NotRequired[IPSetReferenceStatementTypeDef],  # (7)
+    RegexPatternSetReferenceStatement: NotRequired[RegexPatternSetReferenceStatementTypeDef],  # (8)
+    RateBasedStatement: NotRequired[RateBasedStatementTypeDef],  # (9)
+    AndStatement: NotRequired[AndStatementTypeDef],  # (10)
+    OrStatement: NotRequired[OrStatementTypeDef],  # (11)
+    NotStatement: NotRequired[NotStatementTypeDef],  # (12)
+    ManagedRuleGroupStatement: NotRequired[ManagedRuleGroupStatementTypeDef],  # (13)
+    LabelMatchStatement: NotRequired[LabelMatchStatementTypeDef],  # (14)
+    RegexMatchStatement: NotRequired[RegexMatchStatementTypeDef],  # (15)
+```
+
+1. See [:material-code-braces: ByteMatchStatementTypeDef](./type_defs.md#bytematchstatementtypedef) 
+2. See [:material-code-braces: SqliMatchStatementTypeDef](./type_defs.md#sqlimatchstatementtypedef) 
+3. See [:material-code-braces: XssMatchStatementTypeDef](./type_defs.md#xssmatchstatementtypedef) 
+4. See [:material-code-braces: SizeConstraintStatementTypeDef](./type_defs.md#sizeconstraintstatementtypedef) 
+5. See [:material-code-braces: GeoMatchStatementTypeDef](./type_defs.md#geomatchstatementtypedef) 
+6. See [:material-code-braces: RuleGroupReferenceStatementTypeDef](./type_defs.md#rulegroupreferencestatementtypedef) 
+7. See [:material-code-braces: IPSetReferenceStatementTypeDef](./type_defs.md#ipsetreferencestatementtypedef) 
+8. See [:material-code-braces: RegexPatternSetReferenceStatementTypeDef](./type_defs.md#regexpatternsetreferencestatementtypedef) 
+9. See [:material-code-braces: RateBasedStatementTypeDef](./type_defs.md#ratebasedstatementtypedef) 
+10. See [:material-code-braces: AndStatementTypeDef](./type_defs.md#andstatementtypedef) 
+11. See [:material-code-braces: OrStatementTypeDef](./type_defs.md#orstatementtypedef) 
+12. See [:material-code-braces: NotStatementTypeDef](./type_defs.md#notstatementtypedef) 
+13. See [:material-code-braces: ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef) 
+14. See [:material-code-braces: LabelMatchStatementTypeDef](./type_defs.md#labelmatchstatementtypedef) 
+15. See [:material-code-braces: RegexMatchStatementTypeDef](./type_defs.md#regexmatchstatementtypedef) 
+## GetRuleGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import GetRuleGroupResponseTypeDef
+
+def get_value() -> GetRuleGroupResponseTypeDef:
+    return {
+        "RuleGroup": ...,
+        "LockToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRuleGroupResponseTypeDef(TypedDict):
+    RuleGroup: RuleGroupTypeDef,  # (1)
+    LockToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FirewallManagerRuleGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import FirewallManagerRuleGroupTypeDef
+
+def get_value() -> FirewallManagerRuleGroupTypeDef:
+    return {
+        "Name": ...,
+        "Priority": ...,
+        "FirewallManagerStatement": ...,
+        "OverrideAction": ...,
+        "VisibilityConfig": ...,
+    }
+```
+
+```python title="Definition"
+class FirewallManagerRuleGroupTypeDef(TypedDict):
+    Name: str,
+    Priority: int,
+    FirewallManagerStatement: FirewallManagerStatementTypeDef,  # (1)
+    OverrideAction: OverrideActionTypeDef,  # (2)
+    VisibilityConfig: VisibilityConfigTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: FirewallManagerStatementTypeDef](./type_defs.md#firewallmanagerstatementtypedef) 
+2. See [:material-code-braces: OverrideActionTypeDef](./type_defs.md#overrideactiontypedef) 
+3. See [:material-code-braces: VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) 
 ## WebACLTypeDef
 
 ```python title="Usage Example"
@@ -3497,6 +3627,8 @@ class WebACLTypeDef(TypedDict):
     LabelNamespace: NotRequired[str],
     CustomResponseBodies: NotRequired[Dict[str, CustomResponseBodyTypeDef]],  # (6)
     CaptchaConfig: NotRequired[CaptchaConfigTypeDef],  # (7)
+    ChallengeConfig: NotRequired[ChallengeConfigTypeDef],  # (8)
+    TokenDomains: NotRequired[List[str]],
 ```
 
 1. See [:material-code-braces: DefaultActionTypeDef](./type_defs.md#defaultactiontypedef) 
@@ -3506,28 +3638,7 @@ class WebACLTypeDef(TypedDict):
 5. See [:material-code-braces: FirewallManagerRuleGroupTypeDef](./type_defs.md#firewallmanagerrulegrouptypedef) 
 6. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
 7. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
-## GetRuleGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_wafv2.type_defs import GetRuleGroupResponseTypeDef
-
-def get_value() -> GetRuleGroupResponseTypeDef:
-    return {
-        "RuleGroup": ...,
-        "LockToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRuleGroupResponseTypeDef(TypedDict):
-    RuleGroup: RuleGroupTypeDef,  # (1)
-    LockToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+8. See [:material-code-braces: ChallengeConfigTypeDef](./type_defs.md#challengeconfigtypedef) 
 ## GetWebACLForResourceResponseTypeDef
 
 ```python title="Usage Example"

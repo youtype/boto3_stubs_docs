@@ -188,6 +188,20 @@ MarketplaceSubscriptionOnboardingStatusType = Literal[
     "NOT_COMPLETE",
 ]
 ```
+## NetworkFirewallOverrideActionType
+
+```python title="Usage Example"
+from mypy_boto3_fms.literals import NetworkFirewallOverrideActionType
+
+def get_value() -> NetworkFirewallOverrideActionType:
+    return "DROP_TO_ALERT"
+```
+
+```python title="Definition"
+NetworkFirewallOverrideActionType = Literal[
+    "DROP_TO_ALERT",
+]
+```
 ## PolicyComplianceStatusTypeType
 
 ```python title="Usage Example"

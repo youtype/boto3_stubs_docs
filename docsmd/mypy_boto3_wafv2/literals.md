@@ -21,6 +21,7 @@ ActionValueType = Literal[
     "ALLOW",
     "BLOCK",
     "CAPTCHA",
+    "CHALLENGE",
     "COUNT",
     "EXCLUDED_AS_COUNT",
 ]
@@ -329,12 +330,14 @@ CountryCodeType = Literal[
 from mypy_boto3_wafv2.literals import FailureReasonType
 
 def get_value() -> FailureReasonType:
-    return "TOKEN_EXPIRED"
+    return "TOKEN_DOMAIN_MISMATCH"
 ```
 
 ```python title="Definition"
 FailureReasonType = Literal[
+    "TOKEN_DOMAIN_MISMATCH",
     "TOKEN_EXPIRED",
+    "TOKEN_INVALID",
     "TOKEN_MISSING",
 ]
 ```
@@ -412,6 +415,21 @@ def get_value() -> IPAddressVersionType:
 IPAddressVersionType = Literal[
     "IPV4",
     "IPV6",
+]
+```
+## InspectionLevelType
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.literals import InspectionLevelType
+
+def get_value() -> InspectionLevelType:
+    return "COMMON"
+```
+
+```python title="Definition"
+InspectionLevelType = Literal[
+    "COMMON",
+    "TARGETED",
 ]
 ```
 ## JsonMatchScopeType

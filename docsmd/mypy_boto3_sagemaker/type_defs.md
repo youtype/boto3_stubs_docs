@@ -10590,6 +10590,8 @@ class AlgorithmSpecificationTypeDef(TypedDict):
     AlgorithmName: NotRequired[str],
     MetricDefinitions: NotRequired[Sequence[MetricDefinitionTypeDef]],  # (2)
     EnableSageMakerMetricsTimeSeries: NotRequired[bool],
+    ContainerEntrypoint: NotRequired[Sequence[str]],
+    ContainerArguments: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: TrainingInputModeType](./literals.md#traininginputmodetype) 

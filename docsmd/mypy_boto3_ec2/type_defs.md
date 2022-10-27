@@ -17886,6 +17886,9 @@ class ReplaceRootVolumeTaskTypeDef(TypedDict):
     StartTime: NotRequired[str],
     CompleteTime: NotRequired[str],
     Tags: NotRequired[List[TagTypeDef]],  # (2)
+    ImageId: NotRequired[str],
+    SnapshotId: NotRequired[str],
+    DeleteReplacedRootVolume: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: ReplaceRootVolumeTaskStateType](./literals.md#replacerootvolumetaskstatetype) 
@@ -32933,6 +32936,8 @@ class CreateReplaceRootVolumeTaskRequestRequestTypeDef(TypedDict):
     ClientToken: NotRequired[str],
     DryRun: NotRequired[bool],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    ImageId: NotRequired[str],
+    DeleteReplacedRootVolume: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 

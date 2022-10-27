@@ -838,24 +838,6 @@ class StatefulEngineOptionsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RuleOrderType](./literals.md#ruleordertype) 
-## StatefulRuleGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_fms.type_defs import StatefulRuleGroupTypeDef
-
-def get_value() -> StatefulRuleGroupTypeDef:
-    return {
-        "RuleGroupName": ...,
-    }
-```
-
-```python title="Definition"
-class StatefulRuleGroupTypeDef(TypedDict):
-    RuleGroupName: NotRequired[str],
-    ResourceId: NotRequired[str],
-    Priority: NotRequired[int],
-```
-
 ## StatelessRuleGroupTypeDef
 
 ```python title="Usage Example"
@@ -891,6 +873,23 @@ class NetworkFirewallPolicyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FirewallDeploymentModelType](./literals.md#firewalldeploymentmodeltype) 
+## NetworkFirewallStatefulRuleGroupOverrideTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import NetworkFirewallStatefulRuleGroupOverrideTypeDef
+
+def get_value() -> NetworkFirewallStatefulRuleGroupOverrideTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkFirewallStatefulRuleGroupOverrideTypeDef(TypedDict):
+    Action: NotRequired[NetworkFirewallOverrideActionType],  # (1)
+```
+
+1. See [:material-code-brackets: NetworkFirewallOverrideActionType](./literals.md#networkfirewalloverrideactiontype) 
 ## ThirdPartyFirewallPolicyTypeDef
 
 ```python title="Usage Example"
@@ -1928,31 +1927,26 @@ class RouteHasOutOfScopeEndpointViolationTypeDef(TypedDict):
 1. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 2. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 3. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
-## NetworkFirewallPolicyDescriptionTypeDef
+## StatefulRuleGroupTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_fms.type_defs import NetworkFirewallPolicyDescriptionTypeDef
+from mypy_boto3_fms.type_defs import StatefulRuleGroupTypeDef
 
-def get_value() -> NetworkFirewallPolicyDescriptionTypeDef:
+def get_value() -> StatefulRuleGroupTypeDef:
     return {
-        "StatelessRuleGroups": ...,
+        "RuleGroupName": ...,
     }
 ```
 
 ```python title="Definition"
-class NetworkFirewallPolicyDescriptionTypeDef(TypedDict):
-    StatelessRuleGroups: NotRequired[List[StatelessRuleGroupTypeDef]],  # (1)
-    StatelessDefaultActions: NotRequired[List[str]],
-    StatelessFragmentDefaultActions: NotRequired[List[str]],
-    StatelessCustomActions: NotRequired[List[str]],
-    StatefulRuleGroups: NotRequired[List[StatefulRuleGroupTypeDef]],  # (2)
-    StatefulDefaultActions: NotRequired[List[str]],
-    StatefulEngineOptions: NotRequired[StatefulEngineOptionsTypeDef],  # (3)
+class StatefulRuleGroupTypeDef(TypedDict):
+    RuleGroupName: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Priority: NotRequired[int],
+    Override: NotRequired[NetworkFirewallStatefulRuleGroupOverrideTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: StatelessRuleGroupTypeDef](./type_defs.md#statelessrulegrouptypedef) 
-2. See [:material-code-braces: StatefulRuleGroupTypeDef](./type_defs.md#statefulrulegrouptypedef) 
-3. See [:material-code-braces: StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef) 
+1. See [:material-code-braces: NetworkFirewallStatefulRuleGroupOverrideTypeDef](./type_defs.md#networkfirewallstatefulrulegroupoverridetypedef) 
 ## PolicyOptionTypeDef
 
 ```python title="Usage Example"
@@ -2152,26 +2146,31 @@ class ListComplianceStatusResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: PolicyComplianceStatusTypeDef](./type_defs.md#policycompliancestatustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NetworkFirewallPolicyModifiedViolationTypeDef
+## NetworkFirewallPolicyDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_fms.type_defs import NetworkFirewallPolicyModifiedViolationTypeDef
+from mypy_boto3_fms.type_defs import NetworkFirewallPolicyDescriptionTypeDef
 
-def get_value() -> NetworkFirewallPolicyModifiedViolationTypeDef:
+def get_value() -> NetworkFirewallPolicyDescriptionTypeDef:
     return {
-        "ViolationTarget": ...,
+        "StatelessRuleGroups": ...,
     }
 ```
 
 ```python title="Definition"
-class NetworkFirewallPolicyModifiedViolationTypeDef(TypedDict):
-    ViolationTarget: NotRequired[str],
-    CurrentPolicyDescription: NotRequired[NetworkFirewallPolicyDescriptionTypeDef],  # (1)
-    ExpectedPolicyDescription: NotRequired[NetworkFirewallPolicyDescriptionTypeDef],  # (1)
+class NetworkFirewallPolicyDescriptionTypeDef(TypedDict):
+    StatelessRuleGroups: NotRequired[List[StatelessRuleGroupTypeDef]],  # (1)
+    StatelessDefaultActions: NotRequired[List[str]],
+    StatelessFragmentDefaultActions: NotRequired[List[str]],
+    StatelessCustomActions: NotRequired[List[str]],
+    StatefulRuleGroups: NotRequired[List[StatefulRuleGroupTypeDef]],  # (2)
+    StatefulDefaultActions: NotRequired[List[str]],
+    StatefulEngineOptions: NotRequired[StatefulEngineOptionsTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef) 
-2. See [:material-code-braces: NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef) 
+1. See [:material-code-braces: StatelessRuleGroupTypeDef](./type_defs.md#statelessrulegrouptypedef) 
+2. See [:material-code-braces: StatefulRuleGroupTypeDef](./type_defs.md#statefulrulegrouptypedef) 
+3. See [:material-code-braces: StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef) 
 ## SecurityServicePolicyDataTypeDef
 
 ```python title="Usage Example"
@@ -2231,6 +2230,26 @@ class RemediationActionWithOrderTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RemediationActionTypeDef](./type_defs.md#remediationactiontypedef) 
+## NetworkFirewallPolicyModifiedViolationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import NetworkFirewallPolicyModifiedViolationTypeDef
+
+def get_value() -> NetworkFirewallPolicyModifiedViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkFirewallPolicyModifiedViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    CurrentPolicyDescription: NotRequired[NetworkFirewallPolicyDescriptionTypeDef],  # (1)
+    ExpectedPolicyDescription: NotRequired[NetworkFirewallPolicyDescriptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef) 
+2. See [:material-code-braces: NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef) 
 ## PolicyTypeDef
 
 ```python title="Usage Example"

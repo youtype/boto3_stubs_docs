@@ -37617,6 +37617,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#filterrequirementtype">FilterRequirementType</a></li>
 <li><a href="literals/#forwardedippositiontype">ForwardedIPPositionType</a></li>
 <li><a href="literals/#ipaddressversiontype">IPAddressVersionType</a></li>
+<li><a href="literals/#inspectionleveltype">InspectionLevelType</a></li>
 <li><a href="literals/#jsonmatchscopetype">JsonMatchScopeType</a></li>
 <li><a href="literals/#labelmatchscopetype">LabelMatchScopeType</a></li>
 <li><a href="literals/#mapmatchscopetype">MapMatchScopeType</a></li>
@@ -37637,14 +37638,15 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wafv2.type_defs</span> <span class="kn">import</span> <span class="n">ActionConditionTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_wafv2.type_defs</span> <span class="kn">import</span> <span class="n">AWSManagedRulesBotControlRuleSetTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ActionConditionTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AWSManagedRulesBotControlRuleSetTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;Action&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;InspectionLevel&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#awsmanagedrulesbotcontrolrulesettypedef">AWSManagedRulesBotControlRuleSetTypeDef</a></li>
 <li><a href="type_defs/#actionconditiontypedef">ActionConditionTypeDef</a></li>
 <li><a href="type_defs/#andstatementtypedef">AndStatementTypeDef</a></li>
 <li><a href="type_defs/#associatewebaclrequestrequesttypedef">AssociateWebACLRequestRequestTypeDef</a></li>
@@ -37652,6 +37654,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#texttransformationtypedef">TextTransformationTypeDef</a></li>
 <li><a href="type_defs/#immunitytimepropertytypedef">ImmunityTimePropertyTypeDef</a></li>
 <li><a href="type_defs/#captcharesponsetypedef">CaptchaResponseTypeDef</a></li>
+<li><a href="type_defs/#challengeresponsetypedef">ChallengeResponseTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#labelnameconditiontypedef">LabelNameConditionTypeDef</a></li>
 <li><a href="type_defs/#cookiematchpatterntypedef">CookieMatchPatternTypeDef</a></li>
@@ -37724,6 +37727,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#updateipsetrequestrequesttypedef">UpdateIPSetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatemanagedrulesetversionexpirydaterequestrequesttypedef">UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#captchaconfigtypedef">CaptchaConfigTypeDef</a></li>
+<li><a href="type_defs/#challengeconfigtypedef">ChallengeConfigTypeDef</a></li>
 <li><a href="type_defs/#checkcapacityresponsetypedef">CheckCapacityResponseTypeDef</a></li>
 <li><a href="type_defs/#deletefirewallmanagerrulegroupsresponsetypedef">DeleteFirewallManagerRuleGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#generatemobilesdkreleaseurlresponsetypedef">GenerateMobileSdkReleaseUrlResponseTypeDef</a></li>
@@ -37754,7 +37758,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listwebaclsresponsetypedef">ListWebACLsResponseTypeDef</a></li>
 <li><a href="type_defs/#customrequesthandlingtypedef">CustomRequestHandlingTypeDef</a></li>
 <li><a href="type_defs/#customresponsetypedef">CustomResponseTypeDef</a></li>
-<li><a href="type_defs/#rulegroupreferencestatementtypedef">RuleGroupReferenceStatementTypeDef</a></li>
 <li><a href="type_defs/#geomatchstatementtypedef">GeoMatchStatementTypeDef</a></li>
 <li><a href="type_defs/#ratebasedstatementtypedef">RateBasedStatementTypeDef</a></li>
 <li><a href="type_defs/#getipsetresponsetypedef">GetIPSetResponseTypeDef</a></li>
@@ -37777,11 +37780,11 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getregexpatternsetresponsetypedef">GetRegexPatternSetResponseTypeDef</a></li>
 <li><a href="type_defs/#allowactiontypedef">AllowActionTypeDef</a></li>
 <li><a href="type_defs/#captchaactiontypedef">CaptchaActionTypeDef</a></li>
+<li><a href="type_defs/#challengeactiontypedef">ChallengeActionTypeDef</a></li>
 <li><a href="type_defs/#countactiontypedef">CountActionTypeDef</a></li>
 <li><a href="type_defs/#blockactiontypedef">BlockActionTypeDef</a></li>
 <li><a href="type_defs/#sampledhttprequesttypedef">SampledHTTPRequestTypeDef</a></li>
 <li><a href="type_defs/#fieldtomatchtypedef">FieldToMatchTypeDef</a></li>
-<li><a href="type_defs/#managedrulegroupstatementtypedef">ManagedRuleGroupStatementTypeDef</a></li>
 <li><a href="type_defs/#getmanagedrulesetresponsetypedef">GetManagedRuleSetResponseTypeDef</a></li>
 <li><a href="type_defs/#loggingfiltertypedef">LoggingFilterTypeDef</a></li>
 <li><a href="type_defs/#overrideactiontypedef">OverrideActionTypeDef</a></li>
@@ -37794,16 +37797,16 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#sizeconstraintstatementtypedef">SizeConstraintStatementTypeDef</a></li>
 <li><a href="type_defs/#sqlimatchstatementtypedef">SqliMatchStatementTypeDef</a></li>
 <li><a href="type_defs/#xssmatchstatementtypedef">XssMatchStatementTypeDef</a></li>
-<li><a href="type_defs/#firewallmanagerstatementtypedef">FirewallManagerStatementTypeDef</a></li>
 <li><a href="type_defs/#loggingconfigurationtypedef">LoggingConfigurationTypeDef</a></li>
+<li><a href="type_defs/#ruleactionoverridetypedef">RuleActionOverrideTypeDef</a></li>
 <li><a href="type_defs/#rulesummarytypedef">RuleSummaryTypeDef</a></li>
 <li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
-<li><a href="type_defs/#statementtypedef">StatementTypeDef</a></li>
-<li><a href="type_defs/#firewallmanagerrulegrouptypedef">FirewallManagerRuleGroupTypeDef</a></li>
 <li><a href="type_defs/#getloggingconfigurationresponsetypedef">GetLoggingConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#listloggingconfigurationsresponsetypedef">ListLoggingConfigurationsResponseTypeDef</a></li>
 <li><a href="type_defs/#putloggingconfigurationrequestrequesttypedef">PutLoggingConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putloggingconfigurationresponsetypedef">PutLoggingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#managedrulegroupstatementtypedef">ManagedRuleGroupStatementTypeDef</a></li>
+<li><a href="type_defs/#rulegroupreferencestatementtypedef">RuleGroupReferenceStatementTypeDef</a></li>
 <li><a href="type_defs/#describemanagedrulegroupresponsetypedef">DescribeManagedRuleGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#checkcapacityrequestrequesttypedef">CheckCapacityRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createrulegrouprequestrequesttypedef">CreateRuleGroupRequestRequestTypeDef</a></li>
@@ -37811,8 +37814,11 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#rulegrouptypedef">RuleGroupTypeDef</a></li>
 <li><a href="type_defs/#updaterulegrouprequestrequesttypedef">UpdateRuleGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatewebaclrequestrequesttypedef">UpdateWebACLRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#webacltypedef">WebACLTypeDef</a></li>
+<li><a href="type_defs/#firewallmanagerstatementtypedef">FirewallManagerStatementTypeDef</a></li>
+<li><a href="type_defs/#statementtypedef">StatementTypeDef</a></li>
 <li><a href="type_defs/#getrulegroupresponsetypedef">GetRuleGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#firewallmanagerrulegrouptypedef">FirewallManagerRuleGroupTypeDef</a></li>
+<li><a href="type_defs/#webacltypedef">WebACLTypeDef</a></li>
 <li><a href="type_defs/#getwebaclforresourceresponsetypedef">GetWebACLForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#getwebaclresponsetypedef">GetWebACLResponseTypeDef</a></li>
 </ul>

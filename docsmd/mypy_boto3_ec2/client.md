@@ -3168,7 +3168,10 @@ parent.create_public_ipv4_pool(**kwargs)
 
 ### create\_replace\_root\_volume\_task
 
-Creates a root volume replacement task for an Amazon EC2 instance.
+Replaces the EBS-backed root volume for a `running` instance with a new volume
+that is restored to the original root volume's launch state, that is restored to
+a specific snapshot taken from the original root volume, or that is restored
+from an AMI that has the same key characteristics as that ...
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_replace_root_volume_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_replace_root_volume_task)
@@ -3182,6 +3185,8 @@ def create_replace_root_volume_task(
     ClientToken: str = ...,
     DryRun: bool = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
+    ImageId: str = ...,
+    DeleteReplacedRootVolume: bool = ...,
 ) -> CreateReplaceRootVolumeTaskResultTypeDef:  # (2)
     ...
 ```

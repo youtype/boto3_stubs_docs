@@ -307,7 +307,9 @@ def create_web_acl(
     Tags: Sequence[TagTypeDef] = ...,  # (5)
     CustomResponseBodies: Mapping[str, CustomResponseBodyTypeDef] = ...,  # (6)
     CaptchaConfig: CaptchaConfigTypeDef = ...,  # (7)
-) -> CreateWebACLResponseTypeDef:  # (8)
+    ChallengeConfig: ChallengeConfigTypeDef = ...,  # (8)
+    TokenDomains: Sequence[str] = ...,
+) -> CreateWebACLResponseTypeDef:  # (9)
     ...
 ```
 
@@ -318,7 +320,8 @@ def create_web_acl(
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 6. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
 7. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
-8. See [:material-code-braces: CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef) 
+8. See [:material-code-braces: ChallengeConfigTypeDef](./type_defs.md#challengeconfigtypedef) 
+9. See [:material-code-braces: CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1749,7 +1752,9 @@ def update_web_acl(
     Rules: Sequence[RuleTypeDef] = ...,  # (4)
     CustomResponseBodies: Mapping[str, CustomResponseBodyTypeDef] = ...,  # (5)
     CaptchaConfig: CaptchaConfigTypeDef = ...,  # (6)
-) -> UpdateWebACLResponseTypeDef:  # (7)
+    ChallengeConfig: ChallengeConfigTypeDef = ...,  # (7)
+    TokenDomains: Sequence[str] = ...,
+) -> UpdateWebACLResponseTypeDef:  # (8)
     ...
 ```
 
@@ -1759,7 +1764,8 @@ def update_web_acl(
 4. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 5. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
 6. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
-7. See [:material-code-braces: UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef) 
+7. See [:material-code-braces: ChallengeConfigTypeDef](./type_defs.md#challengeconfigtypedef) 
+8. See [:material-code-braces: UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

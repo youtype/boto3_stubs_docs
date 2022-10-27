@@ -786,6 +786,8 @@ class CsvClassifierTypeDef(TypedDict):
     Header: NotRequired[List[str]],
     DisableValueTrimming: NotRequired[bool],
     AllowSingleColumn: NotRequired[bool],
+    CustomDatatypeConfigured: NotRequired[bool],
+    CustomDatatypes: NotRequired[List[str]],
 ```
 
 1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
@@ -1938,6 +1940,8 @@ class CreateCsvClassifierRequestTypeDef(TypedDict):
     Header: NotRequired[Sequence[str]],
     DisableValueTrimming: NotRequired[bool],
     AllowSingleColumn: NotRequired[bool],
+    CustomDatatypeConfigured: NotRequired[bool],
+    CustomDatatypes: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
@@ -5072,6 +5076,8 @@ class UpdateCsvClassifierRequestTypeDef(TypedDict):
     Header: NotRequired[Sequence[str]],
     DisableValueTrimming: NotRequired[bool],
     AllowSingleColumn: NotRequired[bool],
+    CustomDatatypeConfigured: NotRequired[bool],
+    CustomDatatypes: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
