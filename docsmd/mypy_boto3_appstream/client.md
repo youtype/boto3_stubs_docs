@@ -379,12 +379,14 @@ def create_directory_config(
     DirectoryName: str,
     OrganizationalUnitDistinguishedNames: Sequence[str],
     ServiceAccountCredentials: ServiceAccountCredentialsTypeDef = ...,  # (1)
-) -> CreateDirectoryConfigResultTypeDef:  # (2)
+    CertificateBasedAuthProperties: CertificateBasedAuthPropertiesTypeDef = ...,  # (2)
+) -> CreateDirectoryConfigResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
-2. See [:material-code-braces: CreateDirectoryConfigResultTypeDef](./type_defs.md#createdirectoryconfigresulttypedef) 
+2. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
+3. See [:material-code-braces: CreateDirectoryConfigResultTypeDef](./type_defs.md#createdirectoryconfigresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2046,12 +2048,14 @@ def update_directory_config(
     DirectoryName: str,
     OrganizationalUnitDistinguishedNames: Sequence[str] = ...,
     ServiceAccountCredentials: ServiceAccountCredentialsTypeDef = ...,  # (1)
-) -> UpdateDirectoryConfigResultTypeDef:  # (2)
+    CertificateBasedAuthProperties: CertificateBasedAuthPropertiesTypeDef = ...,  # (2)
+) -> UpdateDirectoryConfigResultTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
-2. See [:material-code-braces: UpdateDirectoryConfigResultTypeDef](./type_defs.md#updatedirectoryconfigresulttypedef) 
+2. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
+3. See [:material-code-braces: UpdateDirectoryConfigResultTypeDef](./type_defs.md#updatedirectoryconfigresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

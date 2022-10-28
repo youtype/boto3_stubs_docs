@@ -215,10 +215,14 @@ def get_value() -> RuntimeType:
 RuntimeType = Literal[
     "CORRETTO_11",
     "CORRETTO_8",
+    "DOTNET_6",
+    "GO_1",
     "NODEJS_12",
     "NODEJS_14",
     "NODEJS_16",
+    "PHP_81",
     "PYTHON_3",
+    "RUBY_31",
 ]
 ```
 ## ServiceStatusType

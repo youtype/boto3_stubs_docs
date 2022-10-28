@@ -195,7 +195,7 @@ parent.delete_environment(**kwargs)
 
 ### delete\_environment\_membership
 
-Deletes an environment member from an Cloud9 development environment.
+Deletes an environment member from a development environment.
 
 Type annotations and code completion for `#!python boto3.client("cloud9").delete_environment_membership` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)

@@ -1588,12 +1588,14 @@ def list_stack_set_operation_results(
     NextToken: str = ...,
     MaxResults: int = ...,
     CallAs: CallAsType = ...,  # (1)
-) -> ListStackSetOperationResultsOutputTypeDef:  # (2)
+    Filters: Sequence[OperationResultFilterTypeDef] = ...,  # (2)
+) -> ListStackSetOperationResultsOutputTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
-2. See [:material-code-braces: ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef) 
+2. See [:material-code-braces: OperationResultFilterTypeDef](./type_defs.md#operationresultfiltertypedef) 
+3. See [:material-code-braces: ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

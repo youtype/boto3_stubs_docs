@@ -586,14 +586,16 @@ def paginate(
     StackSetName: str,
     OperationId: str,
     CallAs: CallAsType = ...,  # (1)
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
-) -> _PageIterator[ListStackSetOperationResultsOutputTypeDef]:  # (3)
+    Filters: Sequence[OperationResultFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListStackSetOperationResultsOutputTypeDef]:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-3. See [:material-code-braces: ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef) 
+2. See [:material-code-braces: OperationResultFilterTypeDef](./type_defs.md#operationresultfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

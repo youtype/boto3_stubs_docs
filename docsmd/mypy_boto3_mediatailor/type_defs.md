@@ -931,6 +931,29 @@ class TransitionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RelativePositionType](./literals.md#relativepositiontype) 
+## SegmentationDescriptorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import SegmentationDescriptorTypeDef
+
+def get_value() -> SegmentationDescriptorTypeDef:
+    return {
+        "SegmentNum": ...,
+    }
+```
+
+```python title="Definition"
+class SegmentationDescriptorTypeDef(TypedDict):
+    SegmentNum: NotRequired[int],
+    SegmentationEventId: NotRequired[int],
+    SegmentationTypeId: NotRequired[int],
+    SegmentationUpid: NotRequired[str],
+    SegmentationUpidType: NotRequired[int],
+    SegmentsExpected: NotRequired[int],
+    SubSegmentNum: NotRequired[int],
+    SubSegmentsExpected: NotRequired[int],
+```
+
 ## StartChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1018,28 +1041,6 @@ class AccessConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AccessTypeType](./literals.md#accesstypetype) 
 2. See [:material-code-braces: SecretsManagerAccessTokenConfigurationTypeDef](./type_defs.md#secretsmanageraccesstokenconfigurationtypedef) 
-## AdBreakTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediatailor.type_defs import AdBreakTypeDef
-
-def get_value() -> AdBreakTypeDef:
-    return {
-        "MessageType": ...,
-    }
-```
-
-```python title="Definition"
-class AdBreakTypeDef(TypedDict):
-    MessageType: NotRequired[MessageTypeType],  # (1)
-    OffsetMillis: NotRequired[int],
-    Slate: NotRequired[SlateSourceTypeDef],  # (2)
-    SpliceInsertMessage: NotRequired[SpliceInsertMessageTypeDef],  # (3)
-```
-
-1. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
-2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
-3. See [:material-code-braces: SpliceInsertMessageTypeDef](./type_defs.md#spliceinsertmessagetypedef) 
 ## ManifestProcessingRulesTypeDef
 
 ```python title="Usage Example"
@@ -1740,6 +1741,23 @@ class ScheduleConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
+## TimeSignalMessageTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import TimeSignalMessageTypeDef
+
+def get_value() -> TimeSignalMessageTypeDef:
+    return {
+        "SegmentationDescriptors": ...,
+    }
+```
+
+```python title="Definition"
+class TimeSignalMessageTypeDef(TypedDict):
+    SegmentationDescriptors: NotRequired[Sequence[SegmentationDescriptorTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SegmentationDescriptorTypeDef](./type_defs.md#segmentationdescriptortypedef) 
 ## CreateSourceLocationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1938,78 +1956,6 @@ class UpdateSourceLocationResponseTypeDef(TypedDict):
 3. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
 4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProgramResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediatailor.type_defs import CreateProgramResponseTypeDef
-
-def get_value() -> CreateProgramResponseTypeDef:
-    return {
-        "AdBreaks": ...,
-        "Arn": ...,
-        "ChannelName": ...,
-        "CreationTime": ...,
-        "LiveSourceName": ...,
-        "ProgramName": ...,
-        "ScheduledStartTime": ...,
-        "SourceLocationName": ...,
-        "VodSourceName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateProgramResponseTypeDef(TypedDict):
-    AdBreaks: List[AdBreakTypeDef],  # (1)
-    Arn: str,
-    ChannelName: str,
-    CreationTime: datetime,
-    LiveSourceName: str,
-    ProgramName: str,
-    ScheduledStartTime: datetime,
-    SourceLocationName: str,
-    VodSourceName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeProgramResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mediatailor.type_defs import DescribeProgramResponseTypeDef
-
-def get_value() -> DescribeProgramResponseTypeDef:
-    return {
-        "AdBreaks": ...,
-        "Arn": ...,
-        "ChannelName": ...,
-        "CreationTime": ...,
-        "LiveSourceName": ...,
-        "ProgramName": ...,
-        "ScheduledStartTime": ...,
-        "SourceLocationName": ...,
-        "VodSourceName": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeProgramResponseTypeDef(TypedDict):
-    AdBreaks: List[AdBreakTypeDef],  # (1)
-    Arn: str,
-    ChannelName: str,
-    CreationTime: datetime,
-    LiveSourceName: str,
-    ProgramName: str,
-    ScheduledStartTime: datetime,
-    SourceLocationName: str,
-    VodSourceName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPlaybackConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -2593,33 +2539,30 @@ class GetChannelScheduleResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ScheduleEntryTypeDef](./type_defs.md#scheduleentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateProgramRequestRequestTypeDef
+## AdBreakTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mediatailor.type_defs import CreateProgramRequestRequestTypeDef
+from mypy_boto3_mediatailor.type_defs import AdBreakTypeDef
 
-def get_value() -> CreateProgramRequestRequestTypeDef:
+def get_value() -> AdBreakTypeDef:
     return {
-        "ChannelName": ...,
-        "ProgramName": ...,
-        "ScheduleConfiguration": ...,
-        "SourceLocationName": ...,
+        "MessageType": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateProgramRequestRequestTypeDef(TypedDict):
-    ChannelName: str,
-    ProgramName: str,
-    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
-    SourceLocationName: str,
-    AdBreaks: NotRequired[Sequence[AdBreakTypeDef]],  # (2)
-    LiveSourceName: NotRequired[str],
-    VodSourceName: NotRequired[str],
+class AdBreakTypeDef(TypedDict):
+    MessageType: NotRequired[MessageTypeType],  # (1)
+    OffsetMillis: NotRequired[int],
+    Slate: NotRequired[SlateSourceTypeDef],  # (2)
+    SpliceInsertMessage: NotRequired[SpliceInsertMessageTypeDef],  # (3)
+    TimeSignalMessage: NotRequired[TimeSignalMessageTypeDef],  # (4)
 ```
 
-1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
-2. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+1. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
+2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+3. See [:material-code-braces: SpliceInsertMessageTypeDef](./type_defs.md#spliceinsertmessagetypedef) 
+4. See [:material-code-braces: TimeSignalMessageTypeDef](./type_defs.md#timesignalmessagetypedef) 
 ## ListSourceLocationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2707,4 +2650,103 @@ class ListChannelsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateProgramRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import CreateProgramRequestRequestTypeDef
+
+def get_value() -> CreateProgramRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "ProgramName": ...,
+        "ScheduleConfiguration": ...,
+        "SourceLocationName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProgramRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    ProgramName: str,
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
+    SourceLocationName: str,
+    AdBreaks: NotRequired[Sequence[AdBreakTypeDef]],  # (2)
+    LiveSourceName: NotRequired[str],
+    VodSourceName: NotRequired[str],
+```
+
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+## CreateProgramResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import CreateProgramResponseTypeDef
+
+def get_value() -> CreateProgramResponseTypeDef:
+    return {
+        "AdBreaks": ...,
+        "Arn": ...,
+        "ChannelName": ...,
+        "CreationTime": ...,
+        "LiveSourceName": ...,
+        "ProgramName": ...,
+        "ScheduledStartTime": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateProgramResponseTypeDef(TypedDict):
+    AdBreaks: List[AdBreakTypeDef],  # (1)
+    Arn: str,
+    ChannelName: str,
+    CreationTime: datetime,
+    LiveSourceName: str,
+    ProgramName: str,
+    ScheduledStartTime: datetime,
+    SourceLocationName: str,
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProgramResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import DescribeProgramResponseTypeDef
+
+def get_value() -> DescribeProgramResponseTypeDef:
+    return {
+        "AdBreaks": ...,
+        "Arn": ...,
+        "ChannelName": ...,
+        "CreationTime": ...,
+        "LiveSourceName": ...,
+        "ProgramName": ...,
+        "ScheduledStartTime": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProgramResponseTypeDef(TypedDict):
+    AdBreaks: List[AdBreakTypeDef],  # (1)
+    Arn: str,
+    ChannelName: str,
+    CreationTime: datetime,
+    LiveSourceName: str,
+    ProgramName: str,
+    ScheduledStartTime: datetime,
+    SourceLocationName: str,
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

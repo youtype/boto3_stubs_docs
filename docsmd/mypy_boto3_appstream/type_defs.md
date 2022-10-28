@@ -198,6 +198,24 @@ class UserStackAssociationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+## CertificateBasedAuthPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appstream.type_defs import CertificateBasedAuthPropertiesTypeDef
+
+def get_value() -> CertificateBasedAuthPropertiesTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class CertificateBasedAuthPropertiesTypeDef(TypedDict):
+    Status: NotRequired[CertificateBasedAuthStatusType],  # (1)
+    CertificateAuthorityArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: CertificateBasedAuthStatusType](./literals.md#certificatebasedauthstatustype) 
 ## ComputeCapacityStatusTypeDef
 
 ```python title="Usage Example"
@@ -1787,9 +1805,11 @@ class CreateDirectoryConfigRequestRequestTypeDef(TypedDict):
     DirectoryName: str,
     OrganizationalUnitDistinguishedNames: Sequence[str],
     ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+    CertificateBasedAuthProperties: NotRequired[CertificateBasedAuthPropertiesTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+2. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
 ## DirectoryConfigTypeDef
 
 ```python title="Usage Example"
@@ -1807,9 +1827,11 @@ class DirectoryConfigTypeDef(TypedDict):
     OrganizationalUnitDistinguishedNames: NotRequired[List[str]],
     ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
     CreatedTime: NotRequired[datetime],
+    CertificateBasedAuthProperties: NotRequired[CertificateBasedAuthPropertiesTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+2. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
 ## UpdateDirectoryConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1826,9 +1848,11 @@ class UpdateDirectoryConfigRequestRequestTypeDef(TypedDict):
     DirectoryName: str,
     OrganizationalUnitDistinguishedNames: NotRequired[Sequence[str]],
     ServiceAccountCredentials: NotRequired[ServiceAccountCredentialsTypeDef],  # (1)
+    CertificateBasedAuthProperties: NotRequired[CertificateBasedAuthPropertiesTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+2. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
 ## CreateEntitlementRequestRequestTypeDef
 
 ```python title="Usage Example"

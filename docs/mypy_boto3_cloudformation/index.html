@@ -37840,6 +37840,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#liststackspaginatorname">ListStacksPaginatorName</a></li>
 <li><a href="literals/#listtypespaginatorname">ListTypesPaginatorName</a></li>
 <li><a href="literals/#onfailuretype">OnFailureType</a></li>
+<li><a href="literals/#operationresultfilternametype">OperationResultFilterNameType</a></li>
 <li><a href="literals/#operationstatustype">OperationStatusType</a></li>
 <li><a href="literals/#permissionmodelstype">PermissionModelsType</a></li>
 <li><a href="literals/#provisioningtypetype">ProvisioningTypeType</a></li>
@@ -37950,9 +37951,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listimportsinputrequesttypedef">ListImportsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#stackinstancefiltertypedef">StackInstanceFilterTypeDef</a></li>
 <li><a href="type_defs/#liststackresourcesinputrequesttypedef">ListStackResourcesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#liststacksetoperationresultsinputrequesttypedef">ListStackSetOperationResultsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#operationresultfiltertypedef">OperationResultFilterTypeDef</a></li>
 <li><a href="type_defs/#liststacksetoperationsinputrequesttypedef">ListStackSetOperationsInputRequestTypeDef</a></li>
-<li><a href="type_defs/#stacksetoperationsummarytypedef">StackSetOperationSummaryTypeDef</a></li>
 <li><a href="type_defs/#liststacksetsinputrequesttypedef">ListStackSetsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#liststacksinputrequesttypedef">ListStacksInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listtyperegistrationsinputrequesttypedef">ListTypeRegistrationsInputRequestTypeDef</a></li>
@@ -37986,6 +37986,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#stackresourcedriftinformationsummarytypedef">StackResourceDriftInformationSummaryTypeDef</a></li>
 <li><a href="type_defs/#stackresourcerequesttypedef">StackResourceRequestTypeDef</a></li>
 <li><a href="type_defs/#stacksetdriftdetectiondetailstypedef">StackSetDriftDetectionDetailsTypeDef</a></li>
+<li><a href="type_defs/#stacksetoperationstatusdetailstypedef">StackSetOperationStatusDetailsTypeDef</a></li>
 <li><a href="type_defs/#stopstacksetoperationinputrequesttypedef">StopStackSetOperationInputRequestTypeDef</a></li>
 <li><a href="type_defs/#templateparametertypedef">TemplateParameterTypeDef</a></li>
 <li><a href="type_defs/#testtypeinputrequesttypedef">TestTypeInputRequestTypeDef</a></li>
@@ -38048,7 +38049,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listexportsinputlistexportspaginatetypedef">ListExportsInputListExportsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listimportsinputlistimportspaginatetypedef">ListImportsInputListImportsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststackresourcesinputliststackresourcespaginatetypedef">ListStackResourcesInputListStackResourcesPaginateTypeDef</a></li>
-<li><a href="type_defs/#liststacksetoperationresultsinputliststacksetoperationresultspaginatetypedef">ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststacksetoperationsinputliststacksetoperationspaginatetypedef">ListStackSetOperationsInputListStackSetOperationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststacksetsinputliststacksetspaginatetypedef">ListStackSetsInputListStackSetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststacksinputliststackspaginatetypedef">ListStacksInputListStacksPaginateTypeDef</a></li>
@@ -38065,7 +38065,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listexportsoutputtypedef">ListExportsOutputTypeDef</a></li>
 <li><a href="type_defs/#liststackinstancesinputliststackinstancespaginatetypedef">ListStackInstancesInputListStackInstancesPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststackinstancesinputrequesttypedef">ListStackInstancesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#liststacksetoperationsoutputtypedef">ListStackSetOperationsOutputTypeDef</a></li>
+<li><a href="type_defs/#liststacksetoperationresultsinputliststacksetoperationresultspaginatetypedef">ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststacksetoperationresultsinputrequesttypedef">ListStackSetOperationResultsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listtypeversionsoutputtypedef">ListTypeVersionsOutputTypeDef</a></li>
 <li><a href="type_defs/#listtypesinputlisttypespaginatetypedef">ListTypesInputListTypesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listtypesinputrequesttypedef">ListTypesInputRequestTypeDef</a></li>
@@ -38081,8 +38082,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#stackresourcedetailtypedef">StackResourceDetailTypeDef</a></li>
 <li><a href="type_defs/#stackresourcetypedef">StackResourceTypeDef</a></li>
 <li><a href="type_defs/#stackresourcesummarytypedef">StackResourceSummaryTypeDef</a></li>
-<li><a href="type_defs/#stacksetoperationtypedef">StackSetOperationTypeDef</a></li>
 <li><a href="type_defs/#stacksettypedef">StackSetTypeDef</a></li>
+<li><a href="type_defs/#stacksetoperationsummarytypedef">StackSetOperationSummaryTypeDef</a></li>
+<li><a href="type_defs/#stacksetoperationtypedef">StackSetOperationTypeDef</a></li>
 <li><a href="type_defs/#validatetemplateoutputtypedef">ValidateTemplateOutputTypeDef</a></li>
 <li><a href="type_defs/#liststacksetoperationresultsoutputtypedef">ListStackSetOperationResultsOutputTypeDef</a></li>
 <li><a href="type_defs/#batchdescribetypeconfigurationsoutputtypedef">BatchDescribeTypeConfigurationsOutputTypeDef</a></li>
@@ -38104,8 +38106,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describestackresourceoutputtypedef">DescribeStackResourceOutputTypeDef</a></li>
 <li><a href="type_defs/#describestackresourcesoutputtypedef">DescribeStackResourcesOutputTypeDef</a></li>
 <li><a href="type_defs/#liststackresourcesoutputtypedef">ListStackResourcesOutputTypeDef</a></li>
-<li><a href="type_defs/#describestacksetoperationoutputtypedef">DescribeStackSetOperationOutputTypeDef</a></li>
 <li><a href="type_defs/#describestacksetoutputtypedef">DescribeStackSetOutputTypeDef</a></li>
+<li><a href="type_defs/#liststacksetoperationsoutputtypedef">ListStackSetOperationsOutputTypeDef</a></li>
+<li><a href="type_defs/#describestacksetoperationoutputtypedef">DescribeStackSetOperationOutputTypeDef</a></li>
 <li><a href="type_defs/#describechangesethooksoutputtypedef">DescribeChangeSetHooksOutputTypeDef</a></li>
 <li><a href="type_defs/#changetypedef">ChangeTypeDef</a></li>
 <li><a href="type_defs/#describestacksoutputtypedef">DescribeStacksOutputTypeDef</a></li>

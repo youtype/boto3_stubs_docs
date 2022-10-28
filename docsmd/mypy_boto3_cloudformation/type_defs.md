@@ -1066,28 +1066,24 @@ class ListStackResourcesInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
-## ListStackSetOperationResultsInputRequestTypeDef
+## OperationResultFilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsInputRequestTypeDef
+from mypy_boto3_cloudformation.type_defs import OperationResultFilterTypeDef
 
-def get_value() -> ListStackSetOperationResultsInputRequestTypeDef:
+def get_value() -> OperationResultFilterTypeDef:
     return {
-        "StackSetName": ...,
-        "OperationId": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class ListStackSetOperationResultsInputRequestTypeDef(TypedDict):
-    StackSetName: str,
-    OperationId: str,
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-    CallAs: NotRequired[CallAsType],  # (1)
+class OperationResultFilterTypeDef(TypedDict):
+    Name: NotRequired[OperationResultFilterNameType],  # (1)
+    Values: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+1. See [:material-code-brackets: OperationResultFilterNameType](./literals.md#operationresultfilternametype) 
 ## ListStackSetOperationsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1108,29 +1104,6 @@ class ListStackSetOperationsInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
-## StackSetOperationSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudformation.type_defs import StackSetOperationSummaryTypeDef
-
-def get_value() -> StackSetOperationSummaryTypeDef:
-    return {
-        "OperationId": ...,
-    }
-```
-
-```python title="Definition"
-class StackSetOperationSummaryTypeDef(TypedDict):
-    OperationId: NotRequired[str],
-    Action: NotRequired[StackSetOperationActionType],  # (1)
-    Status: NotRequired[StackSetOperationStatusType],  # (2)
-    CreationTimestamp: NotRequired[datetime],
-    EndTimestamp: NotRequired[datetime],
-    StatusReason: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 
-2. See [:material-code-brackets: StackSetOperationStatusType](./literals.md#stacksetoperationstatustype) 
 ## ListStackSetsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1782,6 +1755,22 @@ class StackSetDriftDetectionDetailsTypeDef(TypedDict):
 
 1. See [:material-code-brackets: StackSetDriftStatusType](./literals.md#stacksetdriftstatustype) 
 2. See [:material-code-brackets: StackSetDriftDetectionStatusType](./literals.md#stacksetdriftdetectionstatustype) 
+## StackSetOperationStatusDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import StackSetOperationStatusDetailsTypeDef
+
+def get_value() -> StackSetOperationStatusDetailsTypeDef:
+    return {
+        "FailedStackInstancesCount": ...,
+    }
+```
+
+```python title="Definition"
+class StackSetOperationStatusDetailsTypeDef(TypedDict):
+    FailedStackInstancesCount: NotRequired[int],
+```
+
 ## StopStackSetOperationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -3106,28 +3095,6 @@ class ListStackResourcesInputListStackResourcesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef
-
-def get_value() -> ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef:
-    return {
-        "StackSetName": ...,
-        "OperationId": ...,
-    }
-```
-
-```python title="Definition"
-class ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef(TypedDict):
-    StackSetName: str,
-    OperationId: str,
-    CallAs: NotRequired[CallAsType],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStackSetOperationsInputListStackSetOperationsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3510,28 +3477,54 @@ class ListStackInstancesInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef) 
 2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
-## ListStackSetOperationsOutputTypeDef
+## ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef
 
-def get_value() -> ListStackSetOperationsOutputTypeDef:
+def get_value() -> ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef:
     return {
-        "Summaries": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "StackSetName": ...,
+        "OperationId": ...,
     }
 ```
 
 ```python title="Definition"
-class ListStackSetOperationsOutputTypeDef(TypedDict):
-    Summaries: List[StackSetOperationSummaryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef(TypedDict):
+    StackSetName: str,
+    OperationId: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+    Filters: NotRequired[Sequence[OperationResultFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: StackSetOperationSummaryTypeDef](./type_defs.md#stacksetoperationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: OperationResultFilterTypeDef](./type_defs.md#operationresultfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListStackSetOperationResultsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsInputRequestTypeDef
+
+def get_value() -> ListStackSetOperationResultsInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "OperationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackSetOperationResultsInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    OperationId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    CallAs: NotRequired[CallAsType],  # (1)
+    Filters: NotRequired[Sequence[OperationResultFilterTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: OperationResultFilterTypeDef](./type_defs.md#operationresultfiltertypedef) 
 ## ListTypeVersionsOutputTypeDef
 
 ```python title="Usage Example"
@@ -3801,6 +3794,7 @@ class StackInstanceSummaryTypeDef(TypedDict):
     OrganizationalUnitId: NotRequired[str],
     DriftStatus: NotRequired[StackDriftStatusType],  # (3)
     LastDriftCheckTimestamp: NotRequired[datetime],
+    LastOperationId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: StackInstanceStatusType](./literals.md#stackinstancestatustype) 
@@ -3830,6 +3824,7 @@ class StackInstanceTypeDef(TypedDict):
     OrganizationalUnitId: NotRequired[str],
     DriftStatus: NotRequired[StackDriftStatusType],  # (4)
     LastDriftCheckTimestamp: NotRequired[datetime],
+    LastOperationId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
@@ -3930,39 +3925,6 @@ class StackResourceSummaryTypeDef(TypedDict):
 1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
 2. See [:material-code-braces: StackResourceDriftInformationSummaryTypeDef](./type_defs.md#stackresourcedriftinformationsummarytypedef) 
 3. See [:material-code-braces: ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef) 
-## StackSetOperationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudformation.type_defs import StackSetOperationTypeDef
-
-def get_value() -> StackSetOperationTypeDef:
-    return {
-        "OperationId": ...,
-    }
-```
-
-```python title="Definition"
-class StackSetOperationTypeDef(TypedDict):
-    OperationId: NotRequired[str],
-    StackSetId: NotRequired[str],
-    Action: NotRequired[StackSetOperationActionType],  # (1)
-    Status: NotRequired[StackSetOperationStatusType],  # (2)
-    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (3)
-    RetainStacks: NotRequired[bool],
-    AdministrationRoleARN: NotRequired[str],
-    ExecutionRoleName: NotRequired[str],
-    CreationTimestamp: NotRequired[datetime],
-    EndTimestamp: NotRequired[datetime],
-    DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (4)
-    StackSetDriftDetectionDetails: NotRequired[StackSetDriftDetectionDetailsTypeDef],  # (5)
-    StatusReason: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 
-2. See [:material-code-brackets: StackSetOperationStatusType](./literals.md#stacksetoperationstatustype) 
-3. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
-4. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
-5. See [:material-code-braces: StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef) 
 ## StackSetTypeDef
 
 ```python title="Usage Example"
@@ -4002,6 +3964,68 @@ class StackSetTypeDef(TypedDict):
 6. See [:material-code-braces: AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef) 
 7. See [:material-code-brackets: PermissionModelsType](./literals.md#permissionmodelstype) 
 8. See [:material-code-braces: ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef) 
+## StackSetOperationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import StackSetOperationSummaryTypeDef
+
+def get_value() -> StackSetOperationSummaryTypeDef:
+    return {
+        "OperationId": ...,
+    }
+```
+
+```python title="Definition"
+class StackSetOperationSummaryTypeDef(TypedDict):
+    OperationId: NotRequired[str],
+    Action: NotRequired[StackSetOperationActionType],  # (1)
+    Status: NotRequired[StackSetOperationStatusType],  # (2)
+    CreationTimestamp: NotRequired[datetime],
+    EndTimestamp: NotRequired[datetime],
+    StatusReason: NotRequired[str],
+    StatusDetails: NotRequired[StackSetOperationStatusDetailsTypeDef],  # (3)
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 
+2. See [:material-code-brackets: StackSetOperationStatusType](./literals.md#stacksetoperationstatustype) 
+3. See [:material-code-braces: StackSetOperationStatusDetailsTypeDef](./type_defs.md#stacksetoperationstatusdetailstypedef) 
+4. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+## StackSetOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import StackSetOperationTypeDef
+
+def get_value() -> StackSetOperationTypeDef:
+    return {
+        "OperationId": ...,
+    }
+```
+
+```python title="Definition"
+class StackSetOperationTypeDef(TypedDict):
+    OperationId: NotRequired[str],
+    StackSetId: NotRequired[str],
+    Action: NotRequired[StackSetOperationActionType],  # (1)
+    Status: NotRequired[StackSetOperationStatusType],  # (2)
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (3)
+    RetainStacks: NotRequired[bool],
+    AdministrationRoleARN: NotRequired[str],
+    ExecutionRoleName: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    EndTimestamp: NotRequired[datetime],
+    DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (4)
+    StackSetDriftDetectionDetails: NotRequired[StackSetDriftDetectionDetailsTypeDef],  # (5)
+    StatusReason: NotRequired[str],
+    StatusDetails: NotRequired[StackSetOperationStatusDetailsTypeDef],  # (6)
+```
+
+1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 
+2. See [:material-code-brackets: StackSetOperationStatusType](./literals.md#stacksetoperationstatustype) 
+3. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+4. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+5. See [:material-code-braces: StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef) 
+6. See [:material-code-braces: StackSetOperationStatusDetailsTypeDef](./type_defs.md#stacksetoperationstatusdetailstypedef) 
 ## ValidateTemplateOutputTypeDef
 
 ```python title="Usage Example"
@@ -4590,26 +4614,6 @@ class ListStackResourcesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: StackResourceSummaryTypeDef](./type_defs.md#stackresourcesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeStackSetOperationOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudformation.type_defs import DescribeStackSetOperationOutputTypeDef
-
-def get_value() -> DescribeStackSetOperationOutputTypeDef:
-    return {
-        "StackSetOperation": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStackSetOperationOutputTypeDef(TypedDict):
-    StackSetOperation: StackSetOperationTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StackSetOperationTypeDef](./type_defs.md#stacksetoperationtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackSetOutputTypeDef
 
 ```python title="Usage Example"
@@ -4629,6 +4633,48 @@ class DescribeStackSetOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: StackSetTypeDef](./type_defs.md#stacksettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStackSetOperationsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsOutputTypeDef
+
+def get_value() -> ListStackSetOperationsOutputTypeDef:
+    return {
+        "Summaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackSetOperationsOutputTypeDef(TypedDict):
+    Summaries: List[StackSetOperationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StackSetOperationSummaryTypeDef](./type_defs.md#stacksetoperationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeStackSetOperationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStackSetOperationOutputTypeDef
+
+def get_value() -> DescribeStackSetOperationOutputTypeDef:
+    return {
+        "StackSetOperation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStackSetOperationOutputTypeDef(TypedDict):
+    StackSetOperation: StackSetOperationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StackSetOperationTypeDef](./type_defs.md#stacksetoperationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChangeSetHooksOutputTypeDef
 

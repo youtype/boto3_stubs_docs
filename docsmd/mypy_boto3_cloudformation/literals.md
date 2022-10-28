@@ -589,6 +589,20 @@ OnFailureType = Literal[
     "ROLLBACK",
 ]
 ```
+## OperationResultFilterNameType
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.literals import OperationResultFilterNameType
+
+def get_value() -> OperationResultFilterNameType:
+    return "OPERATION_RESULT_STATUS"
+```
+
+```python title="Definition"
+OperationResultFilterNameType = Literal[
+    "OPERATION_RESULT_STATUS",
+]
+```
 ## OperationStatusType
 
 ```python title="Usage Example"
@@ -920,6 +934,7 @@ def get_value() -> StackInstanceFilterNameType:
 ```python title="Definition"
 StackInstanceFilterNameType = Literal[
     "DETAILED_STATUS",
+    "LAST_OPERATION_ID",
 ]
 ```
 ## StackInstanceStatusType

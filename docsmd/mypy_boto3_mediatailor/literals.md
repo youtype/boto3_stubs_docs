@@ -161,6 +161,7 @@ def get_value() -> MessageTypeType:
 ```python title="Definition"
 MessageTypeType = Literal[
     "SPLICE_INSERT",
+    "TIME_SIGNAL",
 ]
 ```
 ## ModeType

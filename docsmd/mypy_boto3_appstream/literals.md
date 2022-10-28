@@ -83,8 +83,25 @@ def get_value() -> AuthenticationTypeType:
 ```python title="Definition"
 AuthenticationTypeType = Literal[
     "API",
+    "AWS_AD",
     "SAML",
     "USERPOOL",
+]
+```
+## CertificateBasedAuthStatusType
+
+```python title="Usage Example"
+from mypy_boto3_appstream.literals import CertificateBasedAuthStatusType
+
+def get_value() -> CertificateBasedAuthStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+CertificateBasedAuthStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "ENABLED_NO_DIRECTORY_LOGIN_FALLBACK",
 ]
 ```
 ## DescribeDirectoryConfigsPaginatorName
