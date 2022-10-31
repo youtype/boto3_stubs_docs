@@ -7,6 +7,66 @@
     Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
     type annotations stubs module [mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
+## DescribeAddressTransfersPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_address_transfers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAddressTransfers)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeAddressTransfersPaginator
+
+def get_describe_address_transfers_paginator() -> DescribeAddressTransfersPaginator:
+    return Session().client("ec2").get_paginator("describe_address_transfers")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeAddressTransfersPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeAddressTransfersPaginator = client.get_paginator("describe_address_transfers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeAddressTransfersPaginator](./paginators.md#describeaddresstransferspaginator)
+3. item: [:material-code-braces: DescribeAddressTransfersResultTypeDef](./type_defs.md#describeaddresstransfersresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeAddressTransfersPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AllocationIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeAddressTransfersResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeAddressTransfersResultTypeDef](./type_defs.md#describeaddresstransfersresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAddressTransfersRequestDescribeAddressTransfersPaginateTypeDef = {  # (1)
+    "AllocationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAddressTransfersRequestDescribeAddressTransfersPaginateTypeDef](./type_defs.md#describeaddresstransfersrequestdescribeaddresstransferspaginatetypedef) 
 ## DescribeAddressesAttributePaginator
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_addresses_attribute")`.

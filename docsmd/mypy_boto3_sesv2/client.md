@@ -38,6 +38,7 @@ except (
     client.ClientError,
     client.ConcurrentModificationException,
     client.ConflictException,
+    client.InternalServiceErrorException,
     client.InvalidNextTokenException,
     client.LimitExceededException,
     client.MailFromDomainNotVerifiedException,
@@ -59,6 +60,36 @@ def handle_error(exc: Exceptions.AccountSuspendedException) -> None:
 
 ## Methods
 
+
+### batch\_get\_metric\_data
+
+Retrieves batches of metric data collected based on your sending activity.
+
+Type annotations and code completion for `#!python boto3.client("sesv2").batch_get_metric_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.batch_get_metric_data)
+
+```python title="Method definition"
+def batch_get_metric_data(
+    self,
+    *,
+    Queries: Sequence[BatchGetMetricDataQueryTypeDef],  # (1)
+) -> BatchGetMetricDataResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetMetricDataQueryTypeDef](./type_defs.md#batchgetmetricdataquerytypedef) 
+2. See [:material-code-braces: BatchGetMetricDataResponseTypeDef](./type_defs.md#batchgetmetricdataresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetMetricDataRequestRequestTypeDef = {  # (1)
+    "Queries": ...,
+}
+
+parent.batch_get_metric_data(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetMetricDataRequestRequestTypeDef](./type_defs.md#batchgetmetricdatarequestrequesttypedef) 
 
 ### can\_paginate
 
@@ -109,6 +140,7 @@ def create_configuration_set(
     SendingOptions: SendingOptionsTypeDef = ...,  # (4)
     Tags: Sequence[TagTypeDef] = ...,  # (5)
     SuppressionOptions: SuppressionOptionsTypeDef = ...,  # (6)
+    VdmOptions: VdmOptionsTypeDef = ...,  # (7)
 ) -> Dict[str, Any]:
     ...
 ```
@@ -119,6 +151,7 @@ def create_configuration_set(
 4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 6. See [:material-code-braces: SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef) 
+7. See [:material-code-braces: VdmOptionsTypeDef](./type_defs.md#vdmoptionstypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1639,6 +1672,39 @@ parent.list_import_jobs(**kwargs)
 
 1. See [:material-code-braces: ListImportJobsRequestRequestTypeDef](./type_defs.md#listimportjobsrequestrequesttypedef) 
 
+### list\_recommendations
+
+Lists the recommendations present in your Amazon SES account in the current
+Amazon Web Services Region.
+
+Type annotations and code completion for `#!python boto3.client("sesv2").list_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_recommendations)
+
+```python title="Method definition"
+def list_recommendations(
+    self,
+    *,
+    Filter: Mapping[ListRecommendationsFilterKeyType, str] = ...,  # (1)
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListRecommendationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ListRecommendationsFilterKeyType](./literals.md#listrecommendationsfilterkeytype) 
+2. See [:material-code-braces: ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRecommendationsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.list_recommendations(**kwargs)
+```
+
+1. See [:material-code-braces: ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef) 
+
 ### list\_suppressed\_destinations
 
 Retrieves a list of email addresses that are on the suppression list for your
@@ -1826,6 +1892,35 @@ parent.put_account_suppression_attributes(**kwargs)
 
 1. See [:material-code-braces: PutAccountSuppressionAttributesRequestRequestTypeDef](./type_defs.md#putaccountsuppressionattributesrequestrequesttypedef) 
 
+### put\_account\_vdm\_attributes
+
+Update your Amazon SES account VDM attributes.
+
+Type annotations and code completion for `#!python boto3.client("sesv2").put_account_vdm_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_vdm_attributes)
+
+```python title="Method definition"
+def put_account_vdm_attributes(
+    self,
+    *,
+    VdmAttributes: VdmAttributesTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: VdmAttributesTypeDef](./type_defs.md#vdmattributestypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutAccountVdmAttributesRequestRequestTypeDef = {  # (1)
+    "VdmAttributes": ...,
+}
+
+parent.put_account_vdm_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: PutAccountVdmAttributesRequestRequestTypeDef](./type_defs.md#putaccountvdmattributesrequestrequesttypedef) 
+
 ### put\_configuration\_set\_delivery\_options
 
 Associate a configuration set with a dedicated IP pool.
@@ -1976,6 +2071,36 @@ parent.put_configuration_set_tracking_options(**kwargs)
 ```
 
 1. See [:material-code-braces: PutConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequestrequesttypedef) 
+
+### put\_configuration\_set\_vdm\_options
+
+Specify VDM preferences for email that you send using the configuration set.
+
+Type annotations and code completion for `#!python boto3.client("sesv2").put_configuration_set_vdm_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_vdm_options)
+
+```python title="Method definition"
+def put_configuration_set_vdm_options(
+    self,
+    *,
+    ConfigurationSetName: str,
+    VdmOptions: VdmOptionsTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: VdmOptionsTypeDef](./type_defs.md#vdmoptionstypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutConfigurationSetVdmOptionsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
+
+parent.put_configuration_set_vdm_options(**kwargs)
+```
+
+1. See [:material-code-braces: PutConfigurationSetVdmOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetvdmoptionsrequestrequesttypedef) 
 
 ### put\_dedicated\_ip\_in\_pool
 

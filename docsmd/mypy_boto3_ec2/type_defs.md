@@ -75,23 +75,28 @@ class AcceleratorTotalMemoryMiBTypeDef(TypedDict):
     Max: NotRequired[int],
 ```
 
-## TargetConfigurationRequestTypeDef
+## AddressTransferTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import TargetConfigurationRequestTypeDef
+from mypy_boto3_ec2.type_defs import AddressTransferTypeDef
 
-def get_value() -> TargetConfigurationRequestTypeDef:
+def get_value() -> AddressTransferTypeDef:
     return {
-        "OfferingId": ...,
+        "PublicIp": ...,
     }
 ```
 
 ```python title="Definition"
-class TargetConfigurationRequestTypeDef(TypedDict):
-    OfferingId: str,
-    InstanceCount: NotRequired[int],
+class AddressTransferTypeDef(TypedDict):
+    PublicIp: NotRequired[str],
+    AllocationId: NotRequired[str],
+    TransferAccountId: NotRequired[str],
+    TransferOfferExpirationTimestamp: NotRequired[datetime],
+    TransferOfferAcceptedTimestamp: NotRequired[datetime],
+    AddressTransferStatus: NotRequired[AddressTransferStatusType],  # (1)
 ```
 
+1. See [:material-code-brackets: AddressTransferStatusType](./literals.md#addresstransferstatustype) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -114,6 +119,23 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
+```
+
+## TargetConfigurationRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import TargetConfigurationRequestTypeDef
+
+def get_value() -> TargetConfigurationRequestTypeDef:
+    return {
+        "OfferingId": ...,
+    }
+```
+
+```python title="Definition"
+class TargetConfigurationRequestTypeDef(TypedDict):
+    OfferingId: str,
+    InstanceCount: NotRequired[int],
 ```
 
 ## AcceptTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef
@@ -5120,6 +5142,25 @@ class PaginatorConfigTypeDef(TypedDict):
     StartingToken: NotRequired[str],
 ```
 
+## DescribeAddressTransfersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeAddressTransfersRequestRequestTypeDef
+
+def get_value() -> DescribeAddressTransfersRequestRequestTypeDef:
+    return {
+        "AllocationIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddressTransfersRequestRequestTypeDef(TypedDict):
+    AllocationIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    DryRun: NotRequired[bool],
+```
+
 ## DescribeAddressesAttributeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6340,6 +6381,23 @@ class DetachVpnGatewayRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## DisableAddressTransferRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisableAddressTransferRequestRequestTypeDef
+
+def get_value() -> DisableAddressTransferRequestRequestTypeDef:
+    return {
+        "AllocationId": ...,
+    }
+```
+
+```python title="Definition"
+class DisableAddressTransferRequestRequestTypeDef(TypedDict):
+    AllocationId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## DisableEbsEncryptionByDefaultRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7198,6 +7256,25 @@ def get_value() -> ElasticInferenceAcceleratorTypeDef:
 class ElasticInferenceAcceleratorTypeDef(TypedDict):
     Type: str,
     Count: NotRequired[int],
+```
+
+## EnableAddressTransferRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnableAddressTransferRequestRequestTypeDef
+
+def get_value() -> EnableAddressTransferRequestRequestTypeDef:
+    return {
+        "AllocationId": ...,
+        "TransferAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class EnableAddressTransferRequestRequestTypeDef(TypedDict):
+    AllocationId: str,
+    TransferAccountId: str,
+    DryRun: NotRequired[bool],
 ```
 
 ## EnableEbsEncryptionByDefaultRequestRequestTypeDef
@@ -14317,44 +14394,26 @@ class WithdrawByoipCidrRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
-## AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef
+## AcceptAddressTransferResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef
+from mypy_boto3_ec2.type_defs import AcceptAddressTransferResultTypeDef
 
-def get_value() -> AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef:
+def get_value() -> AcceptAddressTransferResultTypeDef:
     return {
-        "ReservedInstanceIds": ...,
+        "AddressTransfer": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef(TypedDict):
-    ReservedInstanceIds: Sequence[str],
-    DryRun: NotRequired[bool],
-    TargetConfigurations: NotRequired[Sequence[TargetConfigurationRequestTypeDef]],  # (1)
+class AcceptAddressTransferResultTypeDef(TypedDict):
+    AddressTransfer: AddressTransferTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef) 
-## GetReservedInstancesExchangeQuoteRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import GetReservedInstancesExchangeQuoteRequestRequestTypeDef
-
-def get_value() -> GetReservedInstancesExchangeQuoteRequestRequestTypeDef:
-    return {
-        "ReservedInstanceIds": ...,
-    }
-```
-
-```python title="Definition"
-class GetReservedInstancesExchangeQuoteRequestRequestTypeDef(TypedDict):
-    ReservedInstanceIds: Sequence[str],
-    DryRun: NotRequired[bool],
-    TargetConfigurations: NotRequired[Sequence[TargetConfigurationRequestTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef) 
+1. See [:material-code-braces: AddressTransferTypeDef](./type_defs.md#addresstransfertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AcceptReservedInstancesExchangeQuoteResultTypeDef
 
 ```python title="Usage Example"
@@ -15076,6 +15135,28 @@ class DeprovisionPublicIpv4PoolCidrResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAddressTransfersResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeAddressTransfersResultTypeDef
+
+def get_value() -> DescribeAddressTransfersResultTypeDef:
+    return {
+        "AddressTransfers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddressTransfersResultTypeDef(TypedDict):
+    AddressTransfers: List[AddressTransferTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AddressTransferTypeDef](./type_defs.md#addresstransfertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetachClassicLinkVpcResultTypeDef
 
 ```python title="Usage Example"
@@ -15095,6 +15176,26 @@ class DetachClassicLinkVpcResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisableAddressTransferResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisableAddressTransferResultTypeDef
+
+def get_value() -> DisableAddressTransferResultTypeDef:
+    return {
+        "AddressTransfer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisableAddressTransferResultTypeDef(TypedDict):
+    AddressTransfer: AddressTransferTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AddressTransferTypeDef](./type_defs.md#addresstransfertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisableEbsEncryptionByDefaultResultTypeDef
 
 ```python title="Usage Example"
@@ -15266,6 +15367,26 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EnableAddressTransferResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnableAddressTransferResultTypeDef
+
+def get_value() -> EnableAddressTransferResultTypeDef:
+    return {
+        "AddressTransfer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EnableAddressTransferResultTypeDef(TypedDict):
+    AddressTransfer: AddressTransferTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AddressTransferTypeDef](./type_defs.md#addresstransfertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnableEbsEncryptionByDefaultResultTypeDef
 
 ```python title="Usage Example"
@@ -16760,6 +16881,44 @@ class VpcPeeringConnectionStateReasonResponseMetadataTypeDef(TypedDict):
 
 1. See [:material-code-brackets: VpcPeeringConnectionStateReasonCodeType](./literals.md#vpcpeeringconnectionstatereasoncodetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef
+
+def get_value() -> AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef:
+    return {
+        "ReservedInstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef(TypedDict):
+    ReservedInstanceIds: Sequence[str],
+    DryRun: NotRequired[bool],
+    TargetConfigurations: NotRequired[Sequence[TargetConfigurationRequestTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef) 
+## GetReservedInstancesExchangeQuoteRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetReservedInstancesExchangeQuoteRequestRequestTypeDef
+
+def get_value() -> GetReservedInstancesExchangeQuoteRequestRequestTypeDef:
+    return {
+        "ReservedInstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class GetReservedInstancesExchangeQuoteRequestRequestTypeDef(TypedDict):
+    ReservedInstanceIds: Sequence[str],
+    DryRun: NotRequired[bool],
+    TargetConfigurations: NotRequired[Sequence[TargetConfigurationRequestTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef) 
 ## AccountAttributeTypeDef
 
 ```python title="Usage Example"
@@ -20634,6 +20793,25 @@ class DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: TransitGatewayMulticastDeregisteredGroupSourcesTypeDef](./type_defs.md#transitgatewaymulticastderegisteredgroupsourcestypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAddressTransfersRequestDescribeAddressTransfersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeAddressTransfersRequestDescribeAddressTransfersPaginateTypeDef
+
+def get_value() -> DescribeAddressTransfersRequestDescribeAddressTransfersPaginateTypeDef:
+    return {
+        "AllocationIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddressTransfersRequestDescribeAddressTransfersPaginateTypeDef(TypedDict):
+    AllocationIds: NotRequired[Sequence[str]],
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAddressesAttributeRequestDescribeAddressesAttributePaginateTypeDef
 
 ```python title="Usage Example"
@@ -31982,6 +32160,25 @@ class GetSubnetCidrReservationsResultTypeDef(TypedDict):
 1. See [:material-code-braces: SubnetCidrReservationTypeDef](./type_defs.md#subnetcidrreservationtypedef) 
 2. See [:material-code-braces: SubnetCidrReservationTypeDef](./type_defs.md#subnetcidrreservationtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AcceptAddressTransferRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AcceptAddressTransferRequestRequestTypeDef
+
+def get_value() -> AcceptAddressTransferRequestRequestTypeDef:
+    return {
+        "Address": ...,
+    }
+```
+
+```python title="Definition"
+class AcceptAddressTransferRequestRequestTypeDef(TypedDict):
+    Address: str,
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## AllocateAddressRequestRequestTypeDef
 
 ```python title="Usage Example"

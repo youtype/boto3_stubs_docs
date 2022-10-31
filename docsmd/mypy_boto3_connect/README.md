@@ -327,6 +327,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [DisassociateQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#disassociatequeuequickconnectsrequestrequesttypedef)
 - [RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)
 - [DisassociateSecurityKeyRequestRequestTypeDef](./type_defs.md#disassociatesecuritykeyrequestrequesttypedef)
+- [DismissUserContactRequestRequestTypeDef](./type_defs.md#dismissusercontactrequestrequesttypedef)
 - [DistributionTypeDef](./type_defs.md#distributiontypedef)
 - [EmailReferenceTypeDef](./type_defs.md#emailreferencetypedef)
 - [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)

@@ -37509,11 +37509,11 @@ type checking and code completion should work out of the box.</p>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;sesv2&quot;</span><span class="p">)</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_deliverability_test_report</span><span class="p">()</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">result</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">batch_get_metric_data</span><span class="p">()</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>client: <a href="../client/">SESV2Client</a></li>
-<li>result: <a href="../type_defs/#createdeliverabilitytestreportresponsetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CreateDeliverabilityTestReportResponseTypeDef</a> </li>
+<li>result: <a href="../type_defs/#batchgetmetricdataresponsetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> BatchGetMetricDataResponseTypeDef</a> </li>
 </ol>
 </div>
 </div>
@@ -37529,16 +37529,16 @@ However, these type annotations can be helpful in your functions and methods.</p
 <div class="highlight"><span class="filename">Client usage example</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sesv2.client</span> <span class="kn">import</span> <span class="n">SESV2Client</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sesv2.type_defs</span> <span class="kn">import</span> <span class="n">CreateDeliverabilityTestReportResponseTypeDef</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sesv2.type_defs</span> <span class="kn">import</span> <span class="n">CreateDeliverabilityTestReportRequestRequestTypeDef</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sesv2.type_defs</span> <span class="kn">import</span> <span class="n">BatchGetMetricDataResponseTypeDef</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sesv2.type_defs</span> <span class="kn">import</span> <span class="n">BatchGetMetricDataRequestRequestTypeDef</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
 <a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">session</span> <span class="o">=</span> <span class="n">Session</span><span class="p">()</span>
 <a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
 <a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">client</span><span class="p">:</span> <span class="n">SESV2Client</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;sesv2&quot;</span><span class="p">)</span>
 <a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">CreateDeliverabilityTestReportRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">result</span><span class="p">:</span> <span class="n">CreateDeliverabilityTestReportResponseTypeDef</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">create_deliverability_test_report</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">BatchGetMetricDataRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">result</span><span class="p">:</span> <span class="n">BatchGetMetricDataResponseTypeDef</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">batch_get_metric_data</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>

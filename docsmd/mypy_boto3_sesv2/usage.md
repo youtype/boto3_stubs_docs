@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("sesv2")  # (1)
-    result = client.create_deliverability_test_report()  # (2)
+    result = client.batch_get_metric_data()  # (2)
     ```
 
     1. client: [SESV2Client](./client.md)
-    2. result: [:material-code-braces: CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef) 
+    2. result: [:material-code-braces: BatchGetMetricDataResponseTypeDef](./type_defs.md#batchgetmetricdataresponsetypedef) 
 
 
 
@@ -52,16 +52,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_sesv2.client import SESV2Client
-    from mypy_boto3_sesv2.type_defs import CreateDeliverabilityTestReportResponseTypeDef
-    from mypy_boto3_sesv2.type_defs import CreateDeliverabilityTestReportRequestRequestTypeDef
+    from mypy_boto3_sesv2.type_defs import BatchGetMetricDataResponseTypeDef
+    from mypy_boto3_sesv2.type_defs import BatchGetMetricDataRequestRequestTypeDef
 
 
     session = Session()
 
     client: SESV2Client = session.client("sesv2")
 
-    kwargs: CreateDeliverabilityTestReportRequestRequestTypeDef = {...}
-    result: CreateDeliverabilityTestReportResponseTypeDef = client.create_deliverability_test_report(**kwargs)
+    kwargs: BatchGetMetricDataRequestRequestTypeDef = {...}
+    result: BatchGetMetricDataResponseTypeDef = client.batch_get_metric_data(**kwargs)
     ```
 
 

@@ -43,6 +43,7 @@ except (
     client.ResourceAlreadyExistsException,
     client.ResourceNotFoundException,
     client.ServiceUnavailableException,
+    client.TooManyTagsException,
     client.UnrecognizedClientException,
 ) as e:
     print(e)
@@ -996,9 +997,38 @@ parent.get_query_results(**kwargs)
 
 1. See [:material-code-braces: GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef) 
 
+### list\_tags\_for\_resource
+
+Displays the tags associated with a CloudWatch Logs resource.
+
+Type annotations and code completion for `#!python boto3.client("logs").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_for_resource)
+
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.list_tags_for_resource(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
 ### list\_tags\_log\_group
 
-Lists the tags for the specified log group.
+.
 
 Type annotations and code completion for `#!python boto3.client("logs").list_tags_log_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
@@ -1039,6 +1069,7 @@ def put_destination(
     destinationName: str,
     targetArn: str,
     roleArn: str,
+    tags: Mapping[str, str] = ...,
 ) -> PutDestinationResponseTypeDef:  # (1)
     ...
 ```
@@ -1363,7 +1394,7 @@ parent.stop_query(**kwargs)
 
 ### tag\_log\_group
 
-Adds or updates the specified tags for the specified log group.
+.
 
 Type annotations and code completion for `#!python boto3.client("logs").tag_log_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
@@ -1391,6 +1422,38 @@ parent.tag_log_group(**kwargs)
 ```
 
 1. See [:material-code-braces: TagLogGroupRequestRequestTypeDef](./type_defs.md#tagloggrouprequestrequesttypedef) 
+
+### tag\_resource
+
+Assigns one or more tags (key-value pairs) to the specified CloudWatch Logs
+resource.
+
+Type annotations and code completion for `#!python boto3.client("logs").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_resource)
+
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
+
+parent.tag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
 ### test\_metric\_filter
 
@@ -1426,7 +1489,7 @@ parent.test_metric_filter(**kwargs)
 
 ### untag\_log\_group
 
-Removes the specified tags from the specified log group.
+.
 
 Type annotations and code completion for `#!python boto3.client("logs").untag_log_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
@@ -1454,6 +1517,37 @@ parent.untag_log_group(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagLogGroupRequestRequestTypeDef](./type_defs.md#untagloggrouprequestrequesttypedef) 
+
+### untag\_resource
+
+Removes one or more tags from the specified resource.
+
+Type annotations and code completion for `#!python boto3.client("logs").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_resource)
+
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
+
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
 
 

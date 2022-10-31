@@ -37624,6 +37624,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#sourcecodeversiontypetype">SourceCodeVersionTypeType</a></li>
 <li><a href="literals/#tracingvendortype">TracingVendorType</a></li>
 <li><a href="literals/#vpcconnectorstatustype">VpcConnectorStatusType</a></li>
+<li><a href="literals/#vpcingressconnectionstatustype">VpcIngressConnectionStatusType</a></li>
 <li><a href="literals/#apprunnerservicename">AppRunnerServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -37642,6 +37643,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <ul>
 <li><a href="type_defs/#associatecustomdomainrequestrequesttypedef">AssociateCustomDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#vpcdnstargettypedef">VpcDNSTargetTypeDef</a></li>
 <li><a href="type_defs/#authenticationconfigurationtypedef">AuthenticationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#autoscalingconfigurationsummarytypedef">AutoScalingConfigurationSummaryTypeDef</a></li>
 <li><a href="type_defs/#autoscalingconfigurationtypedef">AutoScalingConfigurationTypeDef</a></li>
@@ -37657,19 +37659,23 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#instanceconfigurationtypedef">InstanceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#serviceobservabilityconfigurationtypedef">ServiceObservabilityConfigurationTypeDef</a></li>
 <li><a href="type_defs/#vpcconnectortypedef">VpcConnectorTypeDef</a></li>
+<li><a href="type_defs/#ingressvpcconfigurationtypedef">IngressVpcConfigurationTypeDef</a></li>
 <li><a href="type_defs/#deleteautoscalingconfigurationrequestrequesttypedef">DeleteAutoScalingConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteconnectionrequestrequesttypedef">DeleteConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteobservabilityconfigurationrequestrequesttypedef">DeleteObservabilityConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteservicerequestrequesttypedef">DeleteServiceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletevpcconnectorrequestrequesttypedef">DeleteVpcConnectorRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletevpcingressconnectionrequestrequesttypedef">DeleteVpcIngressConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeautoscalingconfigurationrequestrequesttypedef">DescribeAutoScalingConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describecustomdomainsrequestrequesttypedef">DescribeCustomDomainsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeobservabilityconfigurationrequestrequesttypedef">DescribeObservabilityConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeservicerequestrequesttypedef">DescribeServiceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describevpcconnectorrequestrequesttypedef">DescribeVpcConnectorRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describevpcingressconnectionrequestrequesttypedef">DescribeVpcIngressConnectionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatecustomdomainrequestrequesttypedef">DisassociateCustomDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#egressconfigurationtypedef">EgressConfigurationTypeDef</a></li>
 <li><a href="type_defs/#imageconfigurationtypedef">ImageConfigurationTypeDef</a></li>
+<li><a href="type_defs/#ingressconfigurationtypedef">IngressConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listautoscalingconfigurationsrequestrequesttypedef">ListAutoScalingConfigurationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listconnectionsrequestrequesttypedef">ListConnectionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listobservabilityconfigurationsrequestrequesttypedef">ListObservabilityConfigurationsRequestRequestTypeDef</a></li>
@@ -37680,6 +37686,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#servicesummarytypedef">ServiceSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listvpcconnectorsrequestrequesttypedef">ListVpcConnectorsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listvpcingressconnectionsfiltertypedef">ListVpcIngressConnectionsFilterTypeDef</a></li>
+<li><a href="type_defs/#vpcingressconnectionsummarytypedef">VpcIngressConnectionSummaryTypeDef</a></li>
 <li><a href="type_defs/#pauseservicerequestrequesttypedef">PauseServiceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#resumeservicerequestrequesttypedef">ResumeServiceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startdeploymentrequestrequesttypedef">StartDeploymentRequestRequestTypeDef</a></li>
@@ -37705,11 +37713,16 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#deletevpcconnectorresponsetypedef">DeleteVpcConnectorResponseTypeDef</a></li>
 <li><a href="type_defs/#describevpcconnectorresponsetypedef">DescribeVpcConnectorResponseTypeDef</a></li>
 <li><a href="type_defs/#listvpcconnectorsresponsetypedef">ListVpcConnectorsResponseTypeDef</a></li>
-<li><a href="type_defs/#networkconfigurationtypedef">NetworkConfigurationTypeDef</a></li>
+<li><a href="type_defs/#createvpcingressconnectionrequestrequesttypedef">CreateVpcIngressConnectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatevpcingressconnectionrequestrequesttypedef">UpdateVpcIngressConnectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#vpcingressconnectiontypedef">VpcIngressConnectionTypeDef</a></li>
 <li><a href="type_defs/#imagerepositorytypedef">ImageRepositoryTypeDef</a></li>
+<li><a href="type_defs/#networkconfigurationtypedef">NetworkConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listobservabilityconfigurationsresponsetypedef">ListObservabilityConfigurationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listoperationsresponsetypedef">ListOperationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listservicesresponsetypedef">ListServicesResponseTypeDef</a></li>
+<li><a href="type_defs/#listvpcingressconnectionsrequestrequesttypedef">ListVpcIngressConnectionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listvpcingressconnectionsresponsetypedef">ListVpcIngressConnectionsResponseTypeDef</a></li>
 <li><a href="type_defs/#associatecustomdomainresponsetypedef">AssociateCustomDomainResponseTypeDef</a></li>
 <li><a href="type_defs/#describecustomdomainsresponsetypedef">DescribeCustomDomainsResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociatecustomdomainresponsetypedef">DisassociateCustomDomainResponseTypeDef</a></li>
@@ -37717,6 +37730,10 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#createobservabilityconfigurationresponsetypedef">CreateObservabilityConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteobservabilityconfigurationresponsetypedef">DeleteObservabilityConfigurationResponseTypeDef</a></li>
 <li><a href="type_defs/#describeobservabilityconfigurationresponsetypedef">DescribeObservabilityConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#createvpcingressconnectionresponsetypedef">CreateVpcIngressConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#deletevpcingressconnectionresponsetypedef">DeleteVpcIngressConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#describevpcingressconnectionresponsetypedef">DescribeVpcIngressConnectionResponseTypeDef</a></li>
+<li><a href="type_defs/#updatevpcingressconnectionresponsetypedef">UpdateVpcIngressConnectionResponseTypeDef</a></li>
 <li><a href="type_defs/#sourceconfigurationtypedef">SourceConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createservicerequestrequesttypedef">CreateServiceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#servicetypedef">ServiceTypeDef</a></li>

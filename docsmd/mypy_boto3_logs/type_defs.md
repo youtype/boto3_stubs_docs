@@ -871,6 +871,22 @@ class InputLogEventTypeDef(TypedDict):
     message: str,
 ```
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
 ## ListTagsLogGroupRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -966,6 +982,7 @@ class PutDestinationRequestRequestTypeDef(TypedDict):
     destinationName: str,
     targetArn: str,
     roleArn: str,
+    tags: NotRequired[Mapping[str, str]],
 ```
 
 ## RejectedLogEventsInfoTypeDef
@@ -1123,6 +1140,24 @@ class TagLogGroupRequestRequestTypeDef(TypedDict):
     tags: Mapping[str, str],
 ```
 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
+
 ## TestMetricFilterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1157,6 +1192,24 @@ def get_value() -> UntagLogGroupRequestRequestTypeDef:
 class UntagLogGroupRequestRequestTypeDef(TypedDict):
     logGroupName: str,
     tags: Sequence[str],
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
 ```
 
 ## CreateExportTaskResponseTypeDef
@@ -1229,6 +1282,25 @@ def get_value() -> GetLogRecordResponseTypeDef:
 ```python title="Definition"
 class GetLogRecordResponseTypeDef(TypedDict):
     logRecord: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 

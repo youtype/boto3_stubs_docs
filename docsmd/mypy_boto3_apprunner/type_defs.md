@@ -50,6 +50,24 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## VpcDNSTargetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import VpcDNSTargetTypeDef
+
+def get_value() -> VpcDNSTargetTypeDef:
+    return {
+        "VpcIngressConnectionArn": ...,
+    }
+```
+
+```python title="Definition"
+class VpcDNSTargetTypeDef(TypedDict):
+    VpcIngressConnectionArn: NotRequired[str],
+    VpcId: NotRequired[str],
+    DomainName: NotRequired[str],
+```
+
 ## AuthenticationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -346,6 +364,23 @@ class VpcConnectorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: VpcConnectorStatusType](./literals.md#vpcconnectorstatustype) 
+## IngressVpcConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import IngressVpcConfigurationTypeDef
+
+def get_value() -> IngressVpcConfigurationTypeDef:
+    return {
+        "VpcId": ...,
+    }
+```
+
+```python title="Definition"
+class IngressVpcConfigurationTypeDef(TypedDict):
+    VpcId: NotRequired[str],
+    VpcEndpointId: NotRequired[str],
+```
+
 ## DeleteAutoScalingConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -424,6 +459,22 @@ def get_value() -> DeleteVpcConnectorRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteVpcConnectorRequestRequestTypeDef(TypedDict):
     VpcConnectorArn: str,
+```
+
+## DeleteVpcIngressConnectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import DeleteVpcIngressConnectionRequestRequestTypeDef
+
+def get_value() -> DeleteVpcIngressConnectionRequestRequestTypeDef:
+    return {
+        "VpcIngressConnectionArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVpcIngressConnectionRequestRequestTypeDef(TypedDict):
+    VpcIngressConnectionArn: str,
 ```
 
 ## DescribeAutoScalingConfigurationRequestRequestTypeDef
@@ -508,6 +559,22 @@ class DescribeVpcConnectorRequestRequestTypeDef(TypedDict):
     VpcConnectorArn: str,
 ```
 
+## DescribeVpcIngressConnectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import DescribeVpcIngressConnectionRequestRequestTypeDef
+
+def get_value() -> DescribeVpcIngressConnectionRequestRequestTypeDef:
+    return {
+        "VpcIngressConnectionArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVpcIngressConnectionRequestRequestTypeDef(TypedDict):
+    VpcIngressConnectionArn: str,
+```
+
 ## DisassociateCustomDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -560,6 +627,22 @@ class ImageConfigurationTypeDef(TypedDict):
     RuntimeEnvironmentVariables: NotRequired[Mapping[str, str]],
     StartCommand: NotRequired[str],
     Port: NotRequired[str],
+```
+
+## IngressConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import IngressConfigurationTypeDef
+
+def get_value() -> IngressConfigurationTypeDef:
+    return {
+        "IsPubliclyAccessible": ...,
+    }
+```
+
+```python title="Definition"
+class IngressConfigurationTypeDef(TypedDict):
+    IsPubliclyAccessible: NotRequired[bool],
 ```
 
 ## ListAutoScalingConfigurationsRequestRequestTypeDef
@@ -749,6 +832,40 @@ def get_value() -> ListVpcConnectorsRequestRequestTypeDef:
 class ListVpcConnectorsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+```
+
+## ListVpcIngressConnectionsFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import ListVpcIngressConnectionsFilterTypeDef
+
+def get_value() -> ListVpcIngressConnectionsFilterTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcIngressConnectionsFilterTypeDef(TypedDict):
+    ServiceArn: NotRequired[str],
+    VpcEndpointId: NotRequired[str],
+```
+
+## VpcIngressConnectionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import VpcIngressConnectionSummaryTypeDef
+
+def get_value() -> VpcIngressConnectionSummaryTypeDef:
+    return {
+        "VpcIngressConnectionArn": ...,
+    }
+```
+
+```python title="Definition"
+class VpcIngressConnectionSummaryTypeDef(TypedDict):
+    VpcIngressConnectionArn: NotRequired[str],
+    ServiceArn: NotRequired[str],
 ```
 
 ## PauseServiceRequestRequestTypeDef
@@ -1251,23 +1368,74 @@ class ListVpcConnectorsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NetworkConfigurationTypeDef
+## CreateVpcIngressConnectionRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_apprunner.type_defs import NetworkConfigurationTypeDef
+from mypy_boto3_apprunner.type_defs import CreateVpcIngressConnectionRequestRequestTypeDef
 
-def get_value() -> NetworkConfigurationTypeDef:
+def get_value() -> CreateVpcIngressConnectionRequestRequestTypeDef:
     return {
-        "EgressConfiguration": ...,
+        "ServiceArn": ...,
+        "VpcIngressConnectionName": ...,
+        "IngressVpcConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class NetworkConfigurationTypeDef(TypedDict):
-    EgressConfiguration: NotRequired[EgressConfigurationTypeDef],  # (1)
+class CreateVpcIngressConnectionRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+    VpcIngressConnectionName: str,
+    IngressVpcConfiguration: IngressVpcConfigurationTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
-1. See [:material-code-braces: EgressConfigurationTypeDef](./type_defs.md#egressconfigurationtypedef) 
+1. See [:material-code-braces: IngressVpcConfigurationTypeDef](./type_defs.md#ingressvpcconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## UpdateVpcIngressConnectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import UpdateVpcIngressConnectionRequestRequestTypeDef
+
+def get_value() -> UpdateVpcIngressConnectionRequestRequestTypeDef:
+    return {
+        "VpcIngressConnectionArn": ...,
+        "IngressVpcConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVpcIngressConnectionRequestRequestTypeDef(TypedDict):
+    VpcIngressConnectionArn: str,
+    IngressVpcConfiguration: IngressVpcConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: IngressVpcConfigurationTypeDef](./type_defs.md#ingressvpcconfigurationtypedef) 
+## VpcIngressConnectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import VpcIngressConnectionTypeDef
+
+def get_value() -> VpcIngressConnectionTypeDef:
+    return {
+        "VpcIngressConnectionArn": ...,
+    }
+```
+
+```python title="Definition"
+class VpcIngressConnectionTypeDef(TypedDict):
+    VpcIngressConnectionArn: NotRequired[str],
+    VpcIngressConnectionName: NotRequired[str],
+    ServiceArn: NotRequired[str],
+    Status: NotRequired[VpcIngressConnectionStatusType],  # (1)
+    AccountId: NotRequired[str],
+    DomainName: NotRequired[str],
+    IngressVpcConfiguration: NotRequired[IngressVpcConfigurationTypeDef],  # (2)
+    CreatedAt: NotRequired[datetime],
+    DeletedAt: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: VpcIngressConnectionStatusType](./literals.md#vpcingressconnectionstatustype) 
+2. See [:material-code-braces: IngressVpcConfigurationTypeDef](./type_defs.md#ingressvpcconfigurationtypedef) 
 ## ImageRepositoryTypeDef
 
 ```python title="Usage Example"
@@ -1289,6 +1457,25 @@ class ImageRepositoryTypeDef(TypedDict):
 
 1. See [:material-code-braces: ImageConfigurationTypeDef](./type_defs.md#imageconfigurationtypedef) 
 2. See [:material-code-brackets: ImageRepositoryTypeType](./literals.md#imagerepositorytypetype) 
+## NetworkConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import NetworkConfigurationTypeDef
+
+def get_value() -> NetworkConfigurationTypeDef:
+    return {
+        "EgressConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkConfigurationTypeDef(TypedDict):
+    EgressConfiguration: NotRequired[EgressConfigurationTypeDef],  # (1)
+    IngressConfiguration: NotRequired[IngressConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EgressConfigurationTypeDef](./type_defs.md#egressconfigurationtypedef) 
+2. See [:material-code-braces: IngressConfigurationTypeDef](./type_defs.md#ingressconfigurationtypedef) 
 ## ListObservabilityConfigurationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1355,6 +1542,47 @@ class ListServicesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVpcIngressConnectionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import ListVpcIngressConnectionsRequestRequestTypeDef
+
+def get_value() -> ListVpcIngressConnectionsRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcIngressConnectionsRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[ListVpcIngressConnectionsFilterTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ListVpcIngressConnectionsFilterTypeDef](./type_defs.md#listvpcingressconnectionsfiltertypedef) 
+## ListVpcIngressConnectionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import ListVpcIngressConnectionsResponseTypeDef
+
+def get_value() -> ListVpcIngressConnectionsResponseTypeDef:
+    return {
+        "VpcIngressConnectionSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcIngressConnectionsResponseTypeDef(TypedDict):
+    VpcIngressConnectionSummaryList: List[VpcIngressConnectionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcIngressConnectionSummaryTypeDef](./type_defs.md#vpcingressconnectionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateCustomDomainResponseTypeDef
 
 ```python title="Usage Example"
@@ -1365,6 +1593,7 @@ def get_value() -> AssociateCustomDomainResponseTypeDef:
         "DNSTarget": ...,
         "ServiceArn": ...,
         "CustomDomain": ...,
+        "VpcDNSTargets": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1374,11 +1603,13 @@ class AssociateCustomDomainResponseTypeDef(TypedDict):
     DNSTarget: str,
     ServiceArn: str,
     CustomDomain: CustomDomainTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    VpcDNSTargets: List[VpcDNSTargetTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: CustomDomainTypeDef](./type_defs.md#customdomaintypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: VpcDNSTargetTypeDef](./type_defs.md#vpcdnstargettypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomDomainsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1389,6 +1620,7 @@ def get_value() -> DescribeCustomDomainsResponseTypeDef:
         "DNSTarget": ...,
         "ServiceArn": ...,
         "CustomDomains": ...,
+        "VpcDNSTargets": ...,
         "NextToken": ...,
         "ResponseMetadata": ...,
     }
@@ -1399,12 +1631,14 @@ class DescribeCustomDomainsResponseTypeDef(TypedDict):
     DNSTarget: str,
     ServiceArn: str,
     CustomDomains: List[CustomDomainTypeDef],  # (1)
+    VpcDNSTargets: List[VpcDNSTargetTypeDef],  # (2)
     NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: CustomDomainTypeDef](./type_defs.md#customdomaintypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: VpcDNSTargetTypeDef](./type_defs.md#vpcdnstargettypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateCustomDomainResponseTypeDef
 
 ```python title="Usage Example"
@@ -1415,6 +1649,7 @@ def get_value() -> DisassociateCustomDomainResponseTypeDef:
         "DNSTarget": ...,
         "ServiceArn": ...,
         "CustomDomain": ...,
+        "VpcDNSTargets": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1424,11 +1659,13 @@ class DisassociateCustomDomainResponseTypeDef(TypedDict):
     DNSTarget: str,
     ServiceArn: str,
     CustomDomain: CustomDomainTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    VpcDNSTargets: List[VpcDNSTargetTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: CustomDomainTypeDef](./type_defs.md#customdomaintypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: VpcDNSTargetTypeDef](./type_defs.md#vpcdnstargettypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CodeRepositoryTypeDef
 
 ```python title="Usage Example"
@@ -1510,6 +1747,86 @@ class DescribeObservabilityConfigurationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ObservabilityConfigurationTypeDef](./type_defs.md#observabilityconfigurationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVpcIngressConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import CreateVpcIngressConnectionResponseTypeDef
+
+def get_value() -> CreateVpcIngressConnectionResponseTypeDef:
+    return {
+        "VpcIngressConnection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVpcIngressConnectionResponseTypeDef(TypedDict):
+    VpcIngressConnection: VpcIngressConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcIngressConnectionTypeDef](./type_defs.md#vpcingressconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteVpcIngressConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import DeleteVpcIngressConnectionResponseTypeDef
+
+def get_value() -> DeleteVpcIngressConnectionResponseTypeDef:
+    return {
+        "VpcIngressConnection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVpcIngressConnectionResponseTypeDef(TypedDict):
+    VpcIngressConnection: VpcIngressConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcIngressConnectionTypeDef](./type_defs.md#vpcingressconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVpcIngressConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import DescribeVpcIngressConnectionResponseTypeDef
+
+def get_value() -> DescribeVpcIngressConnectionResponseTypeDef:
+    return {
+        "VpcIngressConnection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVpcIngressConnectionResponseTypeDef(TypedDict):
+    VpcIngressConnection: VpcIngressConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcIngressConnectionTypeDef](./type_defs.md#vpcingressconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateVpcIngressConnectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.type_defs import UpdateVpcIngressConnectionResponseTypeDef
+
+def get_value() -> UpdateVpcIngressConnectionResponseTypeDef:
+    return {
+        "VpcIngressConnection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVpcIngressConnectionResponseTypeDef(TypedDict):
+    VpcIngressConnection: VpcIngressConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcIngressConnectionTypeDef](./type_defs.md#vpcingressconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SourceConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1574,7 +1891,6 @@ def get_value() -> ServiceTypeDef:
         "ServiceName": ...,
         "ServiceId": ...,
         "ServiceArn": ...,
-        "ServiceUrl": ...,
         "CreatedAt": ...,
         "UpdatedAt": ...,
         "Status": ...,
@@ -1590,7 +1906,6 @@ class ServiceTypeDef(TypedDict):
     ServiceName: str,
     ServiceId: str,
     ServiceArn: str,
-    ServiceUrl: str,
     CreatedAt: datetime,
     UpdatedAt: datetime,
     Status: ServiceStatusType,  # (1)
@@ -1598,6 +1913,7 @@ class ServiceTypeDef(TypedDict):
     InstanceConfiguration: InstanceConfigurationTypeDef,  # (3)
     AutoScalingConfigurationSummary: AutoScalingConfigurationSummaryTypeDef,  # (6)
     NetworkConfiguration: NetworkConfigurationTypeDef,  # (7)
+    ServiceUrl: NotRequired[str],
     DeletedAt: NotRequired[datetime],
     EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (4)
     HealthCheckConfiguration: NotRequired[HealthCheckConfigurationTypeDef],  # (5)

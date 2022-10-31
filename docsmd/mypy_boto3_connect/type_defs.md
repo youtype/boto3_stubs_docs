@@ -1729,6 +1729,26 @@ class DisassociateSecurityKeyRequestRequestTypeDef(TypedDict):
     AssociationId: str,
 ```
 
+## DismissUserContactRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DismissUserContactRequestRequestTypeDef
+
+def get_value() -> DismissUserContactRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+        "InstanceId": ...,
+        "ContactId": ...,
+    }
+```
+
+```python title="Definition"
+class DismissUserContactRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    InstanceId: str,
+    ContactId: str,
+```
+
 ## DistributionTypeDef
 
 ```python title="Usage Example"

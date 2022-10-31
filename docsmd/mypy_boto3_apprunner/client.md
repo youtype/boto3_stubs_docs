@@ -297,6 +297,42 @@ parent.create_vpc_connector(**kwargs)
 
 1. See [:material-code-braces: CreateVpcConnectorRequestRequestTypeDef](./type_defs.md#createvpcconnectorrequestrequesttypedef) 
 
+### create\_vpc\_ingress\_connection
+
+Create an App Runner VPC Ingress Connection resource.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").create_vpc_ingress_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_vpc_ingress_connection)
+
+```python title="Method definition"
+def create_vpc_ingress_connection(
+    self,
+    *,
+    ServiceArn: str,
+    VpcIngressConnectionName: str,
+    IngressVpcConfiguration: IngressVpcConfigurationTypeDef,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateVpcIngressConnectionResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: IngressVpcConfigurationTypeDef](./type_defs.md#ingressvpcconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateVpcIngressConnectionResponseTypeDef](./type_defs.md#createvpcingressconnectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateVpcIngressConnectionRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+    "VpcIngressConnectionName": ...,
+    "IngressVpcConfiguration": ...,
+}
+
+parent.create_vpc_ingress_connection(**kwargs)
+```
+
+1. See [:material-code-braces: CreateVpcIngressConnectionRequestRequestTypeDef](./type_defs.md#createvpcingressconnectionrequestrequesttypedef) 
+
 ### delete\_auto\_scaling\_configuration
 
 Delete an App Runner automatic scaling configuration resource.
@@ -441,6 +477,36 @@ parent.delete_vpc_connector(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteVpcConnectorRequestRequestTypeDef](./type_defs.md#deletevpcconnectorrequestrequesttypedef) 
+
+### delete\_vpc\_ingress\_connection
+
+Delete an App Runner VPC Ingress Connection resource that's associated with an
+App Runner service.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").delete_vpc_ingress_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_vpc_ingress_connection)
+
+```python title="Method definition"
+def delete_vpc_ingress_connection(
+    self,
+    *,
+    VpcIngressConnectionArn: str,
+) -> DeleteVpcIngressConnectionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteVpcIngressConnectionResponseTypeDef](./type_defs.md#deletevpcingressconnectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteVpcIngressConnectionRequestRequestTypeDef = {  # (1)
+    "VpcIngressConnectionArn": ...,
+}
+
+parent.delete_vpc_ingress_connection(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVpcIngressConnectionRequestRequestTypeDef](./type_defs.md#deletevpcingressconnectionrequestrequesttypedef) 
 
 ### describe\_auto\_scaling\_configuration
 
@@ -590,6 +656,35 @@ parent.describe_vpc_connector(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeVpcConnectorRequestRequestTypeDef](./type_defs.md#describevpcconnectorrequestrequesttypedef) 
+
+### describe\_vpc\_ingress\_connection
+
+Return a full description of an App Runner VPC Ingress Connection resource.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").describe_vpc_ingress_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_vpc_ingress_connection)
+
+```python title="Method definition"
+def describe_vpc_ingress_connection(
+    self,
+    *,
+    VpcIngressConnectionArn: str,
+) -> DescribeVpcIngressConnectionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeVpcIngressConnectionResponseTypeDef](./type_defs.md#describevpcingressconnectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcIngressConnectionRequestRequestTypeDef = {  # (1)
+    "VpcIngressConnectionArn": ...,
+}
+
+parent.describe_vpc_ingress_connection(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcIngressConnectionRequestRequestTypeDef](./type_defs.md#describevpcingressconnectionrequestrequesttypedef) 
 
 ### disassociate\_custom\_domain
 
@@ -860,6 +955,39 @@ parent.list_vpc_connectors(**kwargs)
 
 1. See [:material-code-braces: ListVpcConnectorsRequestRequestTypeDef](./type_defs.md#listvpcconnectorsrequestrequesttypedef) 
 
+### list\_vpc\_ingress\_connections
+
+Return a list of App Runner VPC Ingress Connections in your Amazon Web Services
+account.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").list_vpc_ingress_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_vpc_ingress_connections)
+
+```python title="Method definition"
+def list_vpc_ingress_connections(
+    self,
+    *,
+    Filter: ListVpcIngressConnectionsFilterTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListVpcIngressConnectionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ListVpcIngressConnectionsFilterTypeDef](./type_defs.md#listvpcingressconnectionsfiltertypedef) 
+2. See [:material-code-braces: ListVpcIngressConnectionsResponseTypeDef](./type_defs.md#listvpcingressconnectionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVpcIngressConnectionsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.list_vpc_ingress_connections(**kwargs)
+```
+
+1. See [:material-code-braces: ListVpcIngressConnectionsRequestRequestTypeDef](./type_defs.md#listvpcingressconnectionsrequestrequesttypedef) 
+
 ### pause\_service
 
 Pause an active App Runner service.
@@ -1048,6 +1176,38 @@ parent.update_service(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef) 
+
+### update\_vpc\_ingress\_connection
+
+Update an existing App Runner VPC Ingress Connection resource.
+
+Type annotations and code completion for `#!python boto3.client("apprunner").update_vpc_ingress_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.update_vpc_ingress_connection)
+
+```python title="Method definition"
+def update_vpc_ingress_connection(
+    self,
+    *,
+    VpcIngressConnectionArn: str,
+    IngressVpcConfiguration: IngressVpcConfigurationTypeDef,  # (1)
+) -> UpdateVpcIngressConnectionResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: IngressVpcConfigurationTypeDef](./type_defs.md#ingressvpcconfigurationtypedef) 
+2. See [:material-code-braces: UpdateVpcIngressConnectionResponseTypeDef](./type_defs.md#updatevpcingressconnectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateVpcIngressConnectionRequestRequestTypeDef = {  # (1)
+    "VpcIngressConnectionArn": ...,
+    "IngressVpcConfiguration": ...,
+}
+
+parent.update_vpc_ingress_connection(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateVpcIngressConnectionRequestRequestTypeDef](./type_defs.md#updatevpcingressconnectionrequestrequesttypedef) 
 
 
 

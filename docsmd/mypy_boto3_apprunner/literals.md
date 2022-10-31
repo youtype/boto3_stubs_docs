@@ -287,6 +287,27 @@ VpcConnectorStatusType = Literal[
     "INACTIVE",
 ]
 ```
+## VpcIngressConnectionStatusType
+
+```python title="Usage Example"
+from mypy_boto3_apprunner.literals import VpcIngressConnectionStatusType
+
+def get_value() -> VpcIngressConnectionStatusType:
+    return "AVAILABLE"
+```
+
+```python title="Definition"
+VpcIngressConnectionStatusType = Literal[
+    "AVAILABLE",
+    "DELETED",
+    "FAILED_CREATION",
+    "FAILED_DELETION",
+    "FAILED_UPDATE",
+    "PENDING_CREATION",
+    "PENDING_DELETION",
+    "PENDING_UPDATE",
+]
+```
 ## AppRunnerServiceName
 
 ```python title="Usage Example"

@@ -37714,12 +37714,13 @@ available on your platform with:</p>
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
 <div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.paginator</span> <span class="kn">import</span> <span class="n">DescribeAddressesAttributePaginator</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.paginator</span> <span class="kn">import</span> <span class="n">DescribeAddressTransfersPaginator</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">def</span> <span class="nf">get_describe_addresses_attribute_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeAddressesAttributePaginator</span><span class="p">:</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_addresses_attribute&quot;</span><span class="p">))</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">def</span> <span class="nf">get_describe_address_transfers_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeAddressTransfersPaginator</span><span class="p">:</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;ec2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_address_transfers&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#describeaddresstransferspaginator">DescribeAddressTransfersPaginator</a></li>
 <li><a href="paginators/#describeaddressesattributepaginator">DescribeAddressesAttributePaginator</a></li>
 <li><a href="paginators/#describebyoipcidrspaginator">DescribeByoipCidrsPaginator</a></li>
 <li><a href="paginators/#describecapacityreservationfleetspaginator">DescribeCapacityReservationFleetsPaginator</a></li>
@@ -37979,6 +37980,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#activitystatustype">ActivityStatusType</a></li>
 <li><a href="literals/#addressattributenametype">AddressAttributeNameType</a></li>
 <li><a href="literals/#addressfamilytype">AddressFamilyType</a></li>
+<li><a href="literals/#addresstransferstatustype">AddressTransferStatusType</a></li>
 <li><a href="literals/#affinitytype">AffinityType</a></li>
 <li><a href="literals/#allocationstatetype">AllocationStateType</a></li>
 <li><a href="literals/#allocationstrategytype">AllocationStrategyType</a></li>
@@ -38038,6 +38040,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#defaulttargetcapacitytypetype">DefaultTargetCapacityTypeType</a></li>
 <li><a href="literals/#deletefleeterrorcodetype">DeleteFleetErrorCodeType</a></li>
 <li><a href="literals/#deletequeuedreservedinstanceserrorcodetype">DeleteQueuedReservedInstancesErrorCodeType</a></li>
+<li><a href="literals/#describeaddresstransferspaginatorname">DescribeAddressTransfersPaginatorName</a></li>
 <li><a href="literals/#describeaddressesattributepaginatorname">DescribeAddressesAttributePaginatorName</a></li>
 <li><a href="literals/#describebyoipcidrspaginatorname">DescribeByoipCidrsPaginatorName</a></li>
 <li><a href="literals/#describecapacityreservationfleetspaginatorname">DescribeCapacityReservationFleetsPaginatorName</a></li>
@@ -38435,8 +38438,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#acceleratorcounttypedef">AcceleratorCountTypeDef</a></li>
 <li><a href="type_defs/#acceleratortotalmemorymibrequesttypedef">AcceleratorTotalMemoryMiBRequestTypeDef</a></li>
 <li><a href="type_defs/#acceleratortotalmemorymibtypedef">AcceleratorTotalMemoryMiBTypeDef</a></li>
-<li><a href="type_defs/#targetconfigurationrequesttypedef">TargetConfigurationRequestTypeDef</a></li>
+<li><a href="type_defs/#addresstransfertypedef">AddressTransferTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#targetconfigurationrequesttypedef">TargetConfigurationRequestTypeDef</a></li>
 <li><a href="type_defs/#accepttransitgatewaymulticastdomainassociationsrequestrequesttypedef">AcceptTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#accepttransitgatewaypeeringattachmentrequestrequesttypedef">AcceptTransitGatewayPeeringAttachmentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#accepttransitgatewayvpcattachmentrequestrequesttypedef">AcceptTransitGatewayVpcAttachmentRequestRequestTypeDef</a></li>
@@ -38711,6 +38715,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#transitgatewaymulticastderegisteredgroupsourcestypedef">TransitGatewayMulticastDeregisteredGroupSourcesTypeDef</a></li>
 <li><a href="type_defs/#describeaccountattributesrequestrequesttypedef">DescribeAccountAttributesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
+<li><a href="type_defs/#describeaddresstransfersrequestrequesttypedef">DescribeAddressTransfersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeaddressesattributerequestrequesttypedef">DescribeAddressesAttributeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#filtertypedef">FilterTypeDef</a></li>
 <li><a href="type_defs/#describeaggregateidformatrequestrequesttypedef">DescribeAggregateIdFormatRequestRequestTypeDef</a></li>
@@ -38775,6 +38780,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#detachvolumerequestrequesttypedef">DetachVolumeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#detachvolumerequestvolumedetachfrominstancetypedef">DetachVolumeRequestVolumeDetachFromInstanceTypeDef</a></li>
 <li><a href="type_defs/#detachvpngatewayrequestrequesttypedef">DetachVpnGatewayRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#disableaddresstransferrequestrequesttypedef">DisableAddressTransferRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disableebsencryptionbydefaultrequestrequesttypedef">DisableEbsEncryptionByDefaultRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disablefastlaunchrequestrequesttypedef">DisableFastLaunchRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#disablefastsnapshotrestorestateerrortypedef">DisableFastSnapshotRestoreStateErrorTypeDef</a></li>
@@ -38823,6 +38829,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#elasticgpuspecificationtypedef">ElasticGpuSpecificationTypeDef</a></li>
 <li><a href="type_defs/#elasticinferenceacceleratorassociationtypedef">ElasticInferenceAcceleratorAssociationTypeDef</a></li>
 <li><a href="type_defs/#elasticinferenceacceleratortypedef">ElasticInferenceAcceleratorTypeDef</a></li>
+<li><a href="type_defs/#enableaddresstransferrequestrequesttypedef">EnableAddressTransferRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#enableebsencryptionbydefaultrequestrequesttypedef">EnableEbsEncryptionByDefaultRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#fastlaunchlaunchtemplatespecificationrequesttypedef">FastLaunchLaunchTemplateSpecificationRequestTypeDef</a></li>
 <li><a href="type_defs/#fastlaunchsnapshotconfigurationrequesttypedef">FastLaunchSnapshotConfigurationRequestTypeDef</a></li>
@@ -39208,8 +39215,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#vpcpeeringconnectionstatereasontypedef">VpcPeeringConnectionStateReasonTypeDef</a></li>
 <li><a href="type_defs/#vpnstaticroutetypedef">VpnStaticRouteTypeDef</a></li>
 <li><a href="type_defs/#withdrawbyoipcidrrequestrequesttypedef">WithdrawByoipCidrRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#acceptreservedinstancesexchangequoterequestrequesttypedef">AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#getreservedinstancesexchangequoterequestrequesttypedef">GetReservedInstancesExchangeQuoteRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#acceptaddresstransferresulttypedef">AcceptAddressTransferResultTypeDef</a></li>
 <li><a href="type_defs/#acceptreservedinstancesexchangequoteresulttypedef">AcceptReservedInstancesExchangeQuoteResultTypeDef</a></li>
 <li><a href="type_defs/#allocateaddressresulttypedef">AllocateAddressResultTypeDef</a></li>
 <li><a href="type_defs/#allocatehostsresulttypedef">AllocateHostsResultTypeDef</a></li>
@@ -39246,7 +39252,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletetrafficmirrortargetresulttypedef">DeleteTrafficMirrorTargetResultTypeDef</a></li>
 <li><a href="type_defs/#deletevpcpeeringconnectionresulttypedef">DeleteVpcPeeringConnectionResultTypeDef</a></li>
 <li><a href="type_defs/#deprovisionpublicipv4poolcidrresulttypedef">DeprovisionPublicIpv4PoolCidrResultTypeDef</a></li>
+<li><a href="type_defs/#describeaddresstransfersresulttypedef">DescribeAddressTransfersResultTypeDef</a></li>
 <li><a href="type_defs/#detachclassiclinkvpcresulttypedef">DetachClassicLinkVpcResultTypeDef</a></li>
+<li><a href="type_defs/#disableaddresstransferresulttypedef">DisableAddressTransferResultTypeDef</a></li>
 <li><a href="type_defs/#disableebsencryptionbydefaultresulttypedef">DisableEbsEncryptionByDefaultResultTypeDef</a></li>
 <li><a href="type_defs/#disableimagedeprecationresulttypedef">DisableImageDeprecationResultTypeDef</a></li>
 <li><a href="type_defs/#disableipamorganizationadminaccountresulttypedef">DisableIpamOrganizationAdminAccountResultTypeDef</a></li>
@@ -39256,6 +39264,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#disassociateenclavecertificateiamroleresulttypedef">DisassociateEnclaveCertificateIamRoleResultTypeDef</a></li>
 <li><a href="type_defs/#disassociatetrunkinterfaceresulttypedef">DisassociateTrunkInterfaceResultTypeDef</a></li>
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#enableaddresstransferresulttypedef">EnableAddressTransferResultTypeDef</a></li>
 <li><a href="type_defs/#enableebsencryptionbydefaultresulttypedef">EnableEbsEncryptionByDefaultResultTypeDef</a></li>
 <li><a href="type_defs/#enableimagedeprecationresulttypedef">EnableImageDeprecationResultTypeDef</a></li>
 <li><a href="type_defs/#enableipamorganizationadminaccountresulttypedef">EnableIpamOrganizationAdminAccountResultTypeDef</a></li>
@@ -39327,6 +39336,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatesecuritygroupruledescriptionsingressresulttypedef">UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef</a></li>
 <li><a href="type_defs/#volumeattachmentresponsemetadatatypedef">VolumeAttachmentResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#vpcpeeringconnectionstatereasonresponsemetadatatypedef">VpcPeeringConnectionStateReasonResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#acceptreservedinstancesexchangequoterequestrequesttypedef">AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getreservedinstancesexchangequoterequestrequesttypedef">GetReservedInstancesExchangeQuoteRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#accountattributetypedef">AccountAttributeTypeDef</a></li>
 <li><a href="type_defs/#describefleetinstancesresulttypedef">DescribeFleetInstancesResultTypeDef</a></li>
 <li><a href="type_defs/#describespotfleetinstancesresponsetypedef">DescribeSpotFleetInstancesResponseTypeDef</a></li>
@@ -39498,6 +39509,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#registerinstanceeventnotificationattributesresulttypedef">RegisterInstanceEventNotificationAttributesResultTypeDef</a></li>
 <li><a href="type_defs/#deregistertransitgatewaymulticastgroupmembersresulttypedef">DeregisterTransitGatewayMulticastGroupMembersResultTypeDef</a></li>
 <li><a href="type_defs/#deregistertransitgatewaymulticastgroupsourcesresulttypedef">DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef</a></li>
+<li><a href="type_defs/#describeaddresstransfersrequestdescribeaddresstransferspaginatetypedef">DescribeAddressTransfersRequestDescribeAddressTransfersPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeaddressesattributerequestdescribeaddressesattributepaginatetypedef">DescribeAddressesAttributeRequestDescribeAddressesAttributePaginateTypeDef</a></li>
 <li><a href="type_defs/#describebyoipcidrsrequestdescribebyoipcidrspaginatetypedef">DescribeByoipCidrsRequestDescribeByoipCidrsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeprincipalidformatrequestdescribeprincipalidformatpaginatetypedef">DescribePrincipalIdFormatRequestDescribePrincipalIdFormatPaginateTypeDef</a></li>
@@ -40008,6 +40020,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createsubnetcidrreservationresulttypedef">CreateSubnetCidrReservationResultTypeDef</a></li>
 <li><a href="type_defs/#deletesubnetcidrreservationresulttypedef">DeleteSubnetCidrReservationResultTypeDef</a></li>
 <li><a href="type_defs/#getsubnetcidrreservationsresulttypedef">GetSubnetCidrReservationsResultTypeDef</a></li>
+<li><a href="type_defs/#acceptaddresstransferrequestrequesttypedef">AcceptAddressTransferRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#allocateaddressrequestrequesttypedef">AllocateAddressRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#allocatehostsrequestrequesttypedef">AllocateHostsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#copysnapshotrequestrequesttypedef">CopySnapshotRequestRequestTypeDef</a></li>

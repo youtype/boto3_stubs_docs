@@ -119,6 +119,8 @@ def get_value() -> DocumentMetadataTypeDef:
 - [RelationshipTypeDef](./type_defs.md#relationshiptypedef)
 - [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+- [ExpenseCurrencyTypeDef](./type_defs.md#expensecurrencytypedef)
+- [ExpenseGroupPropertyTypeDef](./type_defs.md#expensegrouppropertytypedef)
 - [ExpenseTypeTypeDef](./type_defs.md#expensetypetypedef)
 - [PointTypeDef](./type_defs.md#pointtypedef)
 - [GetDocumentAnalysisRequestRequestTypeDef](./type_defs.md#getdocumentanalysisrequestrequesttypedef)

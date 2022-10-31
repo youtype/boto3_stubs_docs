@@ -123,6 +123,22 @@ AddressFamilyType = Literal[
     "ipv6",
 ]
 ```
+## AddressTransferStatusType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import AddressTransferStatusType
+
+def get_value() -> AddressTransferStatusType:
+    return "accepted"
+```
+
+```python title="Definition"
+AddressTransferStatusType = Literal[
+    "accepted",
+    "disabled",
+    "pending",
+]
+```
 ## AffinityType
 
 ```python title="Usage Example"
@@ -1079,6 +1095,20 @@ DeleteQueuedReservedInstancesErrorCodeType = Literal[
     "reserved-instances-id-invalid",
     "reserved-instances-not-in-queued-state",
     "unexpected-error",
+]
+```
+## DescribeAddressTransfersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeAddressTransfersPaginatorName
+
+def get_value() -> DescribeAddressTransfersPaginatorName:
+    return "describe_address_transfers"
+```
+
+```python title="Definition"
+DescribeAddressTransfersPaginatorName = Literal[
+    "describe_address_transfers",
 ]
 ```
 ## DescribeAddressesAttributePaginatorName
@@ -7907,11 +7937,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_ec2.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "describe_addresses_attribute"
+    return "describe_address_transfers"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "describe_address_transfers",
     "describe_addresses_attribute",
     "describe_byoip_cidrs",
     "describe_capacity_reservation_fleets",

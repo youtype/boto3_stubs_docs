@@ -48,6 +48,38 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 ## Methods
 
 
+### accept\_address\_transfer
+
+Accepts an Elastic IP address transfer.
+
+Type annotations and code completion for `#!python boto3.client("ec2").accept_address_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_address_transfer)
+
+```python title="Method definition"
+def accept_address_transfer(
+    self,
+    *,
+    Address: str,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> AcceptAddressTransferResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+2. See [:material-code-braces: AcceptAddressTransferResultTypeDef](./type_defs.md#acceptaddresstransferresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AcceptAddressTransferRequestRequestTypeDef = {  # (1)
+    "Address": ...,
+}
+
+parent.accept_address_transfer(**kwargs)
+```
+
+1. See [:material-code-braces: AcceptAddressTransferRequestRequestTypeDef](./type_defs.md#acceptaddresstransferrequestrequesttypedef) 
+
 ### accept\_reserved\_instances\_exchange\_quote
 
 Accepts the Convertible Reserved Instance exchange quote described in the
@@ -6863,6 +6895,38 @@ parent.describe_account_attributes(**kwargs)
 
 1. See [:material-code-braces: DescribeAccountAttributesRequestRequestTypeDef](./type_defs.md#describeaccountattributesrequestrequesttypedef) 
 
+### describe\_address\_transfers
+
+Describes an Elastic IP address transfer.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_address_transfers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_address_transfers)
+
+```python title="Method definition"
+def describe_address_transfers(
+    self,
+    *,
+    AllocationIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    DryRun: bool = ...,
+) -> DescribeAddressTransfersResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeAddressTransfersResultTypeDef](./type_defs.md#describeaddresstransfersresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAddressTransfersRequestRequestTypeDef = {  # (1)
+    "AllocationIds": ...,
+}
+
+parent.describe_address_transfers(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAddressTransfersRequestRequestTypeDef](./type_defs.md#describeaddresstransfersrequestrequesttypedef) 
+
 ### describe\_addresses
 
 Describes the specified Elastic IP addresses or all of your Elastic IP
@@ -11580,6 +11644,36 @@ parent.detach_vpn_gateway(**kwargs)
 
 1. See [:material-code-braces: DetachVpnGatewayRequestRequestTypeDef](./type_defs.md#detachvpngatewayrequestrequesttypedef) 
 
+### disable\_address\_transfer
+
+Disables Elastic IP address transfer.
+
+Type annotations and code completion for `#!python boto3.client("ec2").disable_address_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_address_transfer)
+
+```python title="Method definition"
+def disable_address_transfer(
+    self,
+    *,
+    AllocationId: str,
+    DryRun: bool = ...,
+) -> DisableAddressTransferResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DisableAddressTransferResultTypeDef](./type_defs.md#disableaddresstransferresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisableAddressTransferRequestRequestTypeDef = {  # (1)
+    "AllocationId": ...,
+}
+
+parent.disable_address_transfer(**kwargs)
+```
+
+1. See [:material-code-braces: DisableAddressTransferRequestRequestTypeDef](./type_defs.md#disableaddresstransferrequestrequesttypedef) 
+
 ### disable\_ebs\_encryption\_by\_default
 
 Disables EBS encryption by default for your account in the current Region.
@@ -12259,6 +12353,38 @@ parent.disassociate_vpc_cidr_block(**kwargs)
 ```
 
 1. See [:material-code-braces: DisassociateVpcCidrBlockRequestRequestTypeDef](./type_defs.md#disassociatevpccidrblockrequestrequesttypedef) 
+
+### enable\_address\_transfer
+
+Enables Elastic IP address transfer.
+
+Type annotations and code completion for `#!python boto3.client("ec2").enable_address_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_address_transfer)
+
+```python title="Method definition"
+def enable_address_transfer(
+    self,
+    *,
+    AllocationId: str,
+    TransferAccountId: str,
+    DryRun: bool = ...,
+) -> EnableAddressTransferResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EnableAddressTransferResultTypeDef](./type_defs.md#enableaddresstransferresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: EnableAddressTransferRequestRequestTypeDef = {  # (1)
+    "AllocationId": ...,
+    "TransferAccountId": ...,
+}
+
+parent.enable_address_transfer(**kwargs)
+```
+
+1. See [:material-code-braces: EnableAddressTransferRequestRequestTypeDef](./type_defs.md#enableaddresstransferrequestrequesttypedef) 
 
 ### enable\_ebs\_encryption\_by\_default
 
@@ -18564,6 +18690,7 @@ parent.withdraw_byoip_cidr(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator` method with overloads.
 
+- `client.get_paginator("describe_address_transfers")` -> [DescribeAddressTransfersPaginator](./paginators.md#describeaddresstransferspaginator)
 - `client.get_paginator("describe_addresses_attribute")` -> [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
 - `client.get_paginator("describe_byoip_cidrs")` -> [DescribeByoipCidrsPaginator](./paginators.md#describebyoipcidrspaginator)
 - `client.get_paginator("describe_capacity_reservation_fleets")` -> [DescribeCapacityReservationFleetsPaginator](./paginators.md#describecapacityreservationfleetspaginator)

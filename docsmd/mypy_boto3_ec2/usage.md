@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("ec2")  # (1)
-    result = client.accept_reserved_instances_exchange_quote()  # (2)
+    result = client.accept_address_transfer()  # (2)
     ```
 
     1. client: [EC2Client](./client.md)
-    2. result: [:material-code-braces: AcceptReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#acceptreservedinstancesexchangequoteresulttypedef) 
+    2. result: [:material-code-braces: AcceptAddressTransferResultTypeDef](./type_defs.md#acceptaddresstransferresulttypedef) 
 
 
 
@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("ec2")  # (1)
 
-    paginator = client.get_paginator("describe_addresses_attribute")  # (2)
+    paginator = client.get_paginator("describe_address_transfers")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [EC2Client](./client.md)
-    2. paginator: [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
-    3. item: [:material-code-braces: DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef) 
+    2. paginator: [DescribeAddressTransfersPaginator](./paginators.md#describeaddresstransferspaginator)
+    3. item: [:material-code-braces: DescribeAddressTransfersResultTypeDef](./type_defs.md#describeaddresstransfersresulttypedef) 
 
 
 
@@ -86,16 +86,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_ec2.client import EC2Client
-    from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteResultTypeDef
-    from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef
+    from mypy_boto3_ec2.type_defs import AcceptAddressTransferResultTypeDef
+    from mypy_boto3_ec2.type_defs import AcceptAddressTransferRequestRequestTypeDef
 
 
     session = Session()
 
     client: EC2Client = session.client("ec2")
 
-    kwargs: AcceptReservedInstancesExchangeQuoteRequestRequestTypeDef = {...}
-    result: AcceptReservedInstancesExchangeQuoteResultTypeDef = client.accept_reserved_instances_exchange_quote(**kwargs)
+    kwargs: AcceptAddressTransferRequestRequestTypeDef = {...}
+    result: AcceptAddressTransferResultTypeDef = client.accept_address_transfer(**kwargs)
     ```
 
 
@@ -106,16 +106,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_ec2.client import EC2Client
-    from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator
-    from mypy_boto3_ec2.type_defs import DescribeAddressesAttributeResultTypeDef
+    from mypy_boto3_ec2.paginator import DescribeAddressTransfersPaginator
+    from mypy_boto3_ec2.type_defs import DescribeAddressTransfersResultTypeDef
 
 
     session = Session()
     client: EC2Client = session.client("ec2")
 
-    paginator: DescribeAddressesAttributePaginator = client.get_paginator("describe_addresses_attribute")
+    paginator: DescribeAddressTransfersPaginator = client.get_paginator("describe_address_transfers")
     for item in paginator.paginate(...):
-        item: DescribeAddressesAttributeResultTypeDef
+        item: DescribeAddressTransfersResultTypeDef
         print(item)
     ```
 

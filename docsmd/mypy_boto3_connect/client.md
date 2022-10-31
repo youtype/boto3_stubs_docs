@@ -2310,6 +2310,39 @@ parent.disassociate_security_key(**kwargs)
 
 1. See [:material-code-braces: DisassociateSecurityKeyRequestRequestTypeDef](./type_defs.md#disassociatesecuritykeyrequestrequesttypedef) 
 
+### dismiss\_user\_contact
+
+Dismisses contacts from an agent’s CCP and returns the agent to an available
+state, which allows the agent to receive a new routed contact.
+
+Type annotations and code completion for `#!python boto3.client("connect").dismiss_user_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.dismiss_user_contact)
+
+```python title="Method definition"
+def dismiss_user_contact(
+    self,
+    *,
+    UserId: str,
+    InstanceId: str,
+    ContactId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DismissUserContactRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+    "InstanceId": ...,
+    "ContactId": ...,
+}
+
+parent.dismiss_user_contact(**kwargs)
+```
+
+1. See [:material-code-braces: DismissUserContactRequestRequestTypeDef](./type_defs.md#dismissusercontactrequestrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.

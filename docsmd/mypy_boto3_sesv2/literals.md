@@ -212,6 +212,21 @@ EventTypeType = Literal[
     "SUBSCRIPTION",
 ]
 ```
+## FeatureStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import FeatureStatusType
+
+def get_value() -> FeatureStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+FeatureStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## IdentityTypeType
 
 ```python title="Usage Example"
@@ -260,6 +275,23 @@ JobStatusType = Literal[
     "PROCESSING",
 ]
 ```
+## ListRecommendationsFilterKeyType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import ListRecommendationsFilterKeyType
+
+def get_value() -> ListRecommendationsFilterKeyType:
+    return "IMPACT"
+```
+
+```python title="Definition"
+ListRecommendationsFilterKeyType = Literal[
+    "IMPACT",
+    "RESOURCE_ARN",
+    "STATUS",
+    "TYPE",
+]
+```
 ## MailFromDomainStatusType
 
 ```python title="Usage Example"
@@ -290,6 +322,120 @@ def get_value() -> MailTypeType:
 MailTypeType = Literal[
     "MARKETING",
     "TRANSACTIONAL",
+]
+```
+## MetricDimensionNameType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import MetricDimensionNameType
+
+def get_value() -> MetricDimensionNameType:
+    return "CONFIGURATION_SET"
+```
+
+```python title="Definition"
+MetricDimensionNameType = Literal[
+    "CONFIGURATION_SET",
+    "EMAIL_IDENTITY",
+    "ISP",
+]
+```
+## MetricNamespaceType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import MetricNamespaceType
+
+def get_value() -> MetricNamespaceType:
+    return "VDM"
+```
+
+```python title="Definition"
+MetricNamespaceType = Literal[
+    "VDM",
+]
+```
+## MetricType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import MetricType
+
+def get_value() -> MetricType:
+    return "CLICK"
+```
+
+```python title="Definition"
+MetricType = Literal[
+    "CLICK",
+    "COMPLAINT",
+    "DELIVERY",
+    "DELIVERY_CLICK",
+    "DELIVERY_COMPLAINT",
+    "DELIVERY_OPEN",
+    "OPEN",
+    "PERMANENT_BOUNCE",
+    "SEND",
+    "TRANSIENT_BOUNCE",
+]
+```
+## QueryErrorCodeType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import QueryErrorCodeType
+
+def get_value() -> QueryErrorCodeType:
+    return "ACCESS_DENIED"
+```
+
+```python title="Definition"
+QueryErrorCodeType = Literal[
+    "ACCESS_DENIED",
+    "INTERNAL_FAILURE",
+]
+```
+## RecommendationImpactType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import RecommendationImpactType
+
+def get_value() -> RecommendationImpactType:
+    return "HIGH"
+```
+
+```python title="Definition"
+RecommendationImpactType = Literal[
+    "HIGH",
+    "LOW",
+]
+```
+## RecommendationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import RecommendationStatusType
+
+def get_value() -> RecommendationStatusType:
+    return "FIXED"
+```
+
+```python title="Definition"
+RecommendationStatusType = Literal[
+    "FIXED",
+    "OPEN",
+]
+```
+## RecommendationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sesv2.literals import RecommendationTypeType
+
+def get_value() -> RecommendationTypeType:
+    return "DKIM"
+```
+
+```python title="Definition"
+RecommendationTypeType = Literal[
+    "DKIM",
+    "DMARC",
+    "SPF",
 ]
 ```
 ## ReviewStatusType

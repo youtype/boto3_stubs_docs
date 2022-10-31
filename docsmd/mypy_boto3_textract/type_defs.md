@@ -156,6 +156,40 @@ class S3ObjectTypeDef(TypedDict):
     Version: NotRequired[str],
 ```
 
+## ExpenseCurrencyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import ExpenseCurrencyTypeDef
+
+def get_value() -> ExpenseCurrencyTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class ExpenseCurrencyTypeDef(TypedDict):
+    Code: NotRequired[str],
+    Confidence: NotRequired[float],
+```
+
+## ExpenseGroupPropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import ExpenseGroupPropertyTypeDef
+
+def get_value() -> ExpenseGroupPropertyTypeDef:
+    return {
+        "Types": ...,
+    }
+```
+
+```python title="Definition"
+class ExpenseGroupPropertyTypeDef(TypedDict):
+    Types: NotRequired[List[str]],
+    Id: NotRequired[str],
+```
+
 ## ExpenseTypeTypeDef
 
 ```python title="Usage Example"
@@ -865,11 +899,15 @@ class ExpenseFieldTypeDef(TypedDict):
     LabelDetection: NotRequired[ExpenseDetectionTypeDef],  # (2)
     ValueDetection: NotRequired[ExpenseDetectionTypeDef],  # (2)
     PageNumber: NotRequired[int],
+    Currency: NotRequired[ExpenseCurrencyTypeDef],  # (4)
+    GroupProperties: NotRequired[List[ExpenseGroupPropertyTypeDef]],  # (5)
 ```
 
 1. See [:material-code-braces: ExpenseTypeTypeDef](./type_defs.md#expensetypetypedef) 
 2. See [:material-code-braces: ExpenseDetectionTypeDef](./type_defs.md#expensedetectiontypedef) 
 3. See [:material-code-braces: ExpenseDetectionTypeDef](./type_defs.md#expensedetectiontypedef) 
+4. See [:material-code-braces: ExpenseCurrencyTypeDef](./type_defs.md#expensecurrencytypedef) 
+5. See [:material-code-braces: ExpenseGroupPropertyTypeDef](./type_defs.md#expensegrouppropertytypedef) 
 ## AnalyzeIDResponseTypeDef
 
 ```python title="Usage Example"
@@ -946,10 +984,12 @@ class ExpenseDocumentTypeDef(TypedDict):
     ExpenseIndex: NotRequired[int],
     SummaryFields: NotRequired[List[ExpenseFieldTypeDef]],  # (1)
     LineItemGroups: NotRequired[List[LineItemGroupTypeDef]],  # (2)
+    Blocks: NotRequired[List[BlockTypeDef]],  # (3)
 ```
 
 1. See [:material-code-braces: ExpenseFieldTypeDef](./type_defs.md#expensefieldtypedef) 
 2. See [:material-code-braces: LineItemGroupTypeDef](./type_defs.md#lineitemgrouptypedef) 
+3. See [:material-code-braces: BlockTypeDef](./type_defs.md#blocktypedef) 
 ## AnalyzeExpenseResponseTypeDef
 
 ```python title="Usage Example"

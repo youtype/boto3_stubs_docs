@@ -4900,6 +4900,23 @@ class ListViolationEventsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
 2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+## LocationTimestampTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import LocationTimestampTypeDef
+
+def get_value() -> LocationTimestampTypeDef:
+    return {
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class LocationTimestampTypeDef(TypedDict):
+    value: str,
+    unit: NotRequired[str],
+```
+
 ## LogTargetTypeDef
 
 ```python title="Usage Example"
@@ -10819,6 +10836,32 @@ class ListTopicRulesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TopicRuleListItemTypeDef](./type_defs.md#topicrulelistitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LocationActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import LocationActionTypeDef
+
+def get_value() -> LocationActionTypeDef:
+    return {
+        "roleArn": ...,
+        "trackerName": ...,
+        "deviceId": ...,
+        "latitude": ...,
+        "longitude": ...,
+    }
+```
+
+```python title="Definition"
+class LocationActionTypeDef(TypedDict):
+    roleArn: str,
+    trackerName: str,
+    deviceId: str,
+    latitude: str,
+    longitude: str,
+    timestamp: NotRequired[LocationTimestampTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LocationTimestampTypeDef](./type_defs.md#locationtimestamptypedef) 
 ## LogTargetConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -12802,6 +12845,7 @@ class ActionTypeDef(TypedDict):
     http: NotRequired[HttpActionTypeDef],  # (20)
     kafka: NotRequired[KafkaActionTypeDef],  # (21)
     openSearch: NotRequired[OpenSearchActionTypeDef],  # (22)
+    location: NotRequired[LocationActionTypeDef],  # (23)
 ```
 
 1. See [:material-code-braces: DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef) 
@@ -12826,6 +12870,7 @@ class ActionTypeDef(TypedDict):
 20. See [:material-code-braces: HttpActionTypeDef](./type_defs.md#httpactiontypedef) 
 21. See [:material-code-braces: KafkaActionTypeDef](./type_defs.md#kafkaactiontypedef) 
 22. See [:material-code-braces: OpenSearchActionTypeDef](./type_defs.md#opensearchactiontypedef) 
+23. See [:material-code-braces: LocationActionTypeDef](./type_defs.md#locationactiontypedef) 
 ## ListActiveViolationsResponseTypeDef
 
 ```python title="Usage Example"
