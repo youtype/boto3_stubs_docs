@@ -3350,6 +3350,11 @@ class OrderableDBInstanceOptionTypeDef(TypedDict):
     SupportsGlobalDatabases: NotRequired[bool],
     SupportsClusters: NotRequired[bool],
     SupportedNetworkTypes: NotRequired[List[str]],
+    SupportsStorageThroughput: NotRequired[bool],
+    MinStorageThroughputPerDbInstance: NotRequired[int],
+    MaxStorageThroughputPerDbInstance: NotRequired[int],
+    MinStorageThroughputPerIops: NotRequired[float],
+    MaxStorageThroughputPerIops: NotRequired[float],
 ```
 
 1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
@@ -3923,6 +3928,7 @@ class CreateDBInstanceMessageRequestTypeDef(TypedDict):
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -3975,6 +3981,7 @@ class CreateDBInstanceReadReplicaMessageRequestTypeDef(TypedDict):
     MaxAllocatedStorage: NotRequired[int],
     CustomIamInstanceProfile: NotRequired[str],
     NetworkType: NotRequired[str],
+    StorageThroughput: NotRequired[int],
     SourceRegion: NotRequired[str],
 ```
 
@@ -4026,6 +4033,7 @@ class DBSnapshotTypeDef(TypedDict):
     OriginalSnapshotCreateTime: NotRequired[datetime],
     SnapshotDatabaseTime: NotRequired[datetime],
     SnapshotTarget: NotRequired[str],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef) 
@@ -4091,6 +4099,7 @@ class ModifyDBInstanceMessageRequestTypeDef(TypedDict):
     AutomationMode: NotRequired[AutomationModeType],  # (4)
     ResumeFullAutomationModeMinutes: NotRequired[int],
     NetworkType: NotRequired[str],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
@@ -4128,6 +4137,7 @@ class PendingModifiedValuesTypeDef(TypedDict):
     IAMDatabaseAuthenticationEnabled: NotRequired[bool],
     AutomationMode: NotRequired[AutomationModeType],  # (3)
     ResumeFullAutomationModeTime: NotRequired[datetime],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: PendingCloudwatchLogsExportsTypeDef](./type_defs.md#pendingcloudwatchlogsexportstypedef) 
@@ -4179,6 +4189,7 @@ class RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef(TypedDict):
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -4247,6 +4258,7 @@ class RestoreDBInstanceFromS3MessageRequestTypeDef(TypedDict):
     DeletionProtection: NotRequired[bool],
     MaxAllocatedStorage: NotRequired[int],
     NetworkType: NotRequired[str],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -4301,6 +4313,7 @@ class RestoreDBInstanceToPointInTimeMessageRequestTypeDef(TypedDict):
     CustomIamInstanceProfile: NotRequired[str],
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -4806,6 +4819,7 @@ class DBInstanceAutomatedBackupTypeDef(TypedDict):
     DBInstanceAutomatedBackupsArn: NotRequired[str],
     DBInstanceAutomatedBackupsReplications: NotRequired[List[DBInstanceAutomatedBackupsReplicationTypeDef]],  # (2)
     BackupTarget: NotRequired[str],
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: RestoreWindowTypeDef](./type_defs.md#restorewindowtypedef) 
@@ -6867,11 +6881,15 @@ class ValidStorageOptionsTypeDef(TypedDict):
     ProvisionedIops: NotRequired[List[RangeTypeDef]],  # (1)
     IopsToStorageRatio: NotRequired[List[DoubleRangeTypeDef]],  # (3)
     SupportsStorageAutoscaling: NotRequired[bool],
+    ProvisionedStorageThroughput: NotRequired[List[RangeTypeDef]],  # (1)
+    StorageThroughputToIopsRatio: NotRequired[List[DoubleRangeTypeDef]],  # (3)
 ```
 
 1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
 2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
 3. See [:material-code-braces: DoubleRangeTypeDef](./type_defs.md#doublerangetypedef) 
+4. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+5. See [:material-code-braces: DoubleRangeTypeDef](./type_defs.md#doublerangetypedef) 
 ## ReservedDBInstanceTypeDef
 
 ```python title="Usage Example"
@@ -8528,6 +8546,7 @@ class DBInstanceTypeDef(TypedDict):
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
     ActivityStreamPolicyStatus: NotRequired[ActivityStreamPolicyStatusType],  # (19)
+    StorageThroughput: NotRequired[int],
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 

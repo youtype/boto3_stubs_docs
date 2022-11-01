@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.7">
     
     
       
@@ -39491,7 +39491,7 @@
 
 <h1 id="rdsclient">RDSClient</h1>
 <blockquote>
-<p><a href="../..">Index</a> &gt; <a href="../">RDS</a> &gt; RDSClient</p>
+<p><a href="../../">Index</a> &gt; <a href="../">RDS</a> &gt; RDSClient</p>
 </blockquote>
 <div class="admonition note">
 <p>Auto-generated documentation for <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS">RDS</a>
@@ -40276,8 +40276,9 @@ cluster.</p>
 <a id="__codelineno-41-52" name="__codelineno-41-52" href="#__codelineno-41-52"></a>    <span class="n">CustomIamInstanceProfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-41-53" name="__codelineno-41-53" href="#__codelineno-41-53"></a>    <span class="n">BackupTarget</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-41-54" name="__codelineno-41-54" href="#__codelineno-41-54"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-41-55" name="__codelineno-41-55" href="#__codelineno-41-55"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-41-56" name="__codelineno-41-56" href="#__codelineno-41-56"></a>    <span class="o">...</span>
+<a id="__codelineno-41-55" name="__codelineno-41-55" href="#__codelineno-41-55"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-41-56" name="__codelineno-41-56" href="#__codelineno-41-56"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-41-57" name="__codelineno-41-57" href="#__codelineno-41-57"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
@@ -40337,9 +40338,10 @@ instance.</p>
 <a id="__codelineno-43-35" name="__codelineno-43-35" href="#__codelineno-43-35"></a>    <span class="n">MaxAllocatedStorage</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-43-36" name="__codelineno-43-36" href="#__codelineno-43-36"></a>    <span class="n">CustomIamInstanceProfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-43-37" name="__codelineno-43-37" href="#__codelineno-43-37"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-43-38" name="__codelineno-43-38" href="#__codelineno-43-38"></a>    <span class="n">SourceRegion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-43-39" name="__codelineno-43-39" href="#__codelineno-43-39"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBInstanceReadReplicaResultTypeDef</span><span class="p">:</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-43-40" name="__codelineno-43-40" href="#__codelineno-43-40"></a>    <span class="o">...</span>
+<a id="__codelineno-43-38" name="__codelineno-43-38" href="#__codelineno-43-38"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-43-39" name="__codelineno-43-39" href="#__codelineno-43-39"></a>    <span class="n">SourceRegion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-43-40" name="__codelineno-43-40" href="#__codelineno-43-40"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBInstanceReadReplicaResultTypeDef</span><span class="p">:</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-43-41" name="__codelineno-43-41" href="#__codelineno-43-41"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
@@ -42541,8 +42543,9 @@ manual DB cluster snapshot.</p>
 <a id="__codelineno-199-49" name="__codelineno-199-49" href="#__codelineno-199-49"></a>    <span class="n">AutomationMode</span><span class="p">:</span> <span class="n">AutomationModeType</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (4)</span>
 <a id="__codelineno-199-50" name="__codelineno-199-50" href="#__codelineno-199-50"></a>    <span class="n">ResumeFullAutomationModeMinutes</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-199-51" name="__codelineno-199-51" href="#__codelineno-199-51"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-199-52" name="__codelineno-199-52" href="#__codelineno-199-52"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModifyDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (5)</span>
-<a id="__codelineno-199-53" name="__codelineno-199-53" href="#__codelineno-199-53"></a>    <span class="o">...</span>
+<a id="__codelineno-199-52" name="__codelineno-199-52" href="#__codelineno-199-52"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-199-53" name="__codelineno-199-53" href="#__codelineno-199-53"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModifyDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-199-54" name="__codelineno-199-54" href="#__codelineno-199-54"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#cloudwatchlogsexportconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CloudwatchLogsExportConfigurationTypeDef</a> </li>
@@ -43374,8 +43377,9 @@ bucket.</p>
 <a id="__codelineno-253-33" name="__codelineno-253-33" href="#__codelineno-253-33"></a>    <span class="n">CustomIamInstanceProfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-253-34" name="__codelineno-253-34" href="#__codelineno-253-34"></a>    <span class="n">BackupTarget</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-253-35" name="__codelineno-253-35" href="#__codelineno-253-35"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-36" name="__codelineno-253-36" href="#__codelineno-253-36"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceFromDBSnapshotResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-253-37" name="__codelineno-253-37" href="#__codelineno-253-37"></a>    <span class="o">...</span>
+<a id="__codelineno-253-36" name="__codelineno-253-36" href="#__codelineno-253-36"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-37" name="__codelineno-253-37" href="#__codelineno-253-37"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceFromDBSnapshotResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-253-38" name="__codelineno-253-38" href="#__codelineno-253-38"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
@@ -43445,8 +43449,9 @@ databases by using backup files.</p>
 <a id="__codelineno-255-46" name="__codelineno-255-46" href="#__codelineno-255-46"></a>    <span class="n">DeletionProtection</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-255-47" name="__codelineno-255-47" href="#__codelineno-255-47"></a>    <span class="n">MaxAllocatedStorage</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-255-48" name="__codelineno-255-48" href="#__codelineno-255-48"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-255-49" name="__codelineno-255-49" href="#__codelineno-255-49"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceFromS3ResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-255-50" name="__codelineno-255-50" href="#__codelineno-255-50"></a>    <span class="o">...</span>
+<a id="__codelineno-255-49" name="__codelineno-255-49" href="#__codelineno-255-49"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-255-50" name="__codelineno-255-50" href="#__codelineno-255-50"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceFromS3ResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-255-51" name="__codelineno-255-51" href="#__codelineno-255-51"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
@@ -43512,8 +43517,9 @@ databases by using backup files.</p>
 <a id="__codelineno-257-38" name="__codelineno-257-38" href="#__codelineno-257-38"></a>    <span class="n">CustomIamInstanceProfile</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-257-39" name="__codelineno-257-39" href="#__codelineno-257-39"></a>    <span class="n">BackupTarget</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-257-40" name="__codelineno-257-40" href="#__codelineno-257-40"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-257-41" name="__codelineno-257-41" href="#__codelineno-257-41"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceToPointInTimeResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-257-42" name="__codelineno-257-42" href="#__codelineno-257-42"></a>    <span class="o">...</span>
+<a id="__codelineno-257-41" name="__codelineno-257-41" href="#__codelineno-257-41"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-257-42" name="__codelineno-257-42" href="#__codelineno-257-42"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceToPointInTimeResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-257-43" name="__codelineno-257-43" href="#__codelineno-257-43"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>

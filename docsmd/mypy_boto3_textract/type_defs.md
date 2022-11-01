@@ -741,24 +741,6 @@ class AnalyzeDocumentRequestRequestTypeDef(TypedDict):
 2. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
 3. See [:material-code-braces: HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef) 
 4. See [:material-code-braces: QueriesConfigTypeDef](./type_defs.md#queriesconfigtypedef) 
-## IdentityDocumentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_textract.type_defs import IdentityDocumentTypeDef
-
-def get_value() -> IdentityDocumentTypeDef:
-    return {
-        "DocumentIndex": ...,
-    }
-```
-
-```python title="Definition"
-class IdentityDocumentTypeDef(TypedDict):
-    DocumentIndex: NotRequired[int],
-    IdentityDocumentFields: NotRequired[List[IdentityDocumentFieldTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: IdentityDocumentFieldTypeDef](./type_defs.md#identitydocumentfieldtypedef) 
 ## AnalyzeDocumentResponseTypeDef
 
 ```python title="Usage Example"
@@ -882,6 +864,26 @@ class GetDocumentTextDetectionResponseTypeDef(TypedDict):
 3. See [:material-code-braces: BlockTypeDef](./type_defs.md#blocktypedef) 
 4. See [:material-code-braces: WarningTypeDef](./type_defs.md#warningtypedef) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## IdentityDocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import IdentityDocumentTypeDef
+
+def get_value() -> IdentityDocumentTypeDef:
+    return {
+        "DocumentIndex": ...,
+    }
+```
+
+```python title="Definition"
+class IdentityDocumentTypeDef(TypedDict):
+    DocumentIndex: NotRequired[int],
+    IdentityDocumentFields: NotRequired[List[IdentityDocumentFieldTypeDef]],  # (1)
+    Blocks: NotRequired[List[BlockTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: IdentityDocumentFieldTypeDef](./type_defs.md#identitydocumentfieldtypedef) 
+2. See [:material-code-braces: BlockTypeDef](./type_defs.md#blocktypedef) 
 ## ExpenseFieldTypeDef
 
 ```python title="Usage Example"

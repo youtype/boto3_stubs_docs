@@ -924,6 +924,7 @@ def create_db_instance(
     CustomIamInstanceProfile: str = ...,
     BackupTarget: str = ...,
     NetworkType: str = ...,
+    StorageThroughput: int = ...,
 ) -> CreateDBInstanceResultTypeDef:  # (3)
     ...
 ```
@@ -991,6 +992,7 @@ def create_db_instance_read_replica(
     MaxAllocatedStorage: int = ...,
     CustomIamInstanceProfile: str = ...,
     NetworkType: str = ...,
+    StorageThroughput: int = ...,
     SourceRegion: str = ...,
 ) -> CreateDBInstanceReadReplicaResultTypeDef:  # (4)
     ...
@@ -3671,6 +3673,7 @@ def modify_db_instance(
     AutomationMode: AutomationModeType = ...,  # (4)
     ResumeFullAutomationModeMinutes: int = ...,
     NetworkType: str = ...,
+    StorageThroughput: int = ...,
 ) -> ModifyDBInstanceResultTypeDef:  # (5)
     ...
 ```
@@ -4666,6 +4669,7 @@ def restore_db_instance_from_db_snapshot(
     CustomIamInstanceProfile: str = ...,
     BackupTarget: str = ...,
     NetworkType: str = ...,
+    StorageThroughput: int = ...,
 ) -> RestoreDBInstanceFromDBSnapshotResultTypeDef:  # (3)
     ...
 ```
@@ -4743,6 +4747,7 @@ def restore_db_instance_from_s3(
     DeletionProtection: bool = ...,
     MaxAllocatedStorage: int = ...,
     NetworkType: str = ...,
+    StorageThroughput: int = ...,
 ) -> RestoreDBInstanceFromS3ResultTypeDef:  # (3)
     ...
 ```
@@ -4816,6 +4821,7 @@ def restore_db_instance_to_point_in_time(
     CustomIamInstanceProfile: str = ...,
     BackupTarget: str = ...,
     NetworkType: str = ...,
+    StorageThroughput: int = ...,
 ) -> RestoreDBInstanceToPointInTimeResultTypeDef:  # (3)
     ...
 ```
