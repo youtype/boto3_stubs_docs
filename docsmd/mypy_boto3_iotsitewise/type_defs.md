@@ -888,6 +888,7 @@ def get_value() -> DescribeAssetModelRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeAssetModelRequestRequestTypeDef(TypedDict):
     assetModelId: str,
+    excludeProperties: NotRequired[bool],
 ```
 
 ## DescribeAssetPropertyRequestRequestTypeDef
@@ -922,6 +923,7 @@ def get_value() -> DescribeAssetRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeAssetRequestRequestTypeDef(TypedDict):
     assetId: str,
+    excludeProperties: NotRequired[bool],
 ```
 
 ## DescribeBulkImportJobRequestRequestTypeDef
@@ -1474,6 +1476,26 @@ class ListAccessPoliciesRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+## ListAssetModelPropertiesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetModelPropertiesRequestRequestTypeDef
+
+def get_value() -> ListAssetModelPropertiesRequestRequestTypeDef:
+    return {
+        "assetModelId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetModelPropertiesRequestRequestTypeDef(TypedDict):
+    assetModelId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filter: NotRequired[ListAssetModelPropertiesFilterType],  # (1)
+```
+
+1. See [:material-code-brackets: ListAssetModelPropertiesFilterType](./literals.md#listassetmodelpropertiesfiltertype) 
 ## ListAssetModelsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1491,6 +1513,26 @@ class ListAssetModelsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
+## ListAssetPropertiesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetPropertiesRequestRequestTypeDef
+
+def get_value() -> ListAssetPropertiesRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetPropertiesRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filter: NotRequired[ListAssetPropertiesFilterType],  # (1)
+```
+
+1. See [:material-code-brackets: ListAssetPropertiesFilterType](./literals.md#listassetpropertiesfiltertype) 
 ## ListAssetRelationshipsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2046,6 +2088,27 @@ class AssetRelationshipSummaryTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssetHierarchyInfoTypeDef](./type_defs.md#assethierarchyinfotypedef) 
 2. See [:material-code-brackets: AssetRelationshipTypeType](./literals.md#assetrelationshiptypetype) 
+## AssetPropertySummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import AssetPropertySummaryTypeDef
+
+def get_value() -> AssetPropertySummaryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class AssetPropertySummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    alias: NotRequired[str],
+    unit: NotRequired[str],
+    notification: NotRequired[PropertyNotificationTypeDef],  # (1)
+    assetCompositeModelId: NotRequired[str],
+```
+
+1. See [:material-code-braces: PropertyNotificationTypeDef](./type_defs.md#propertynotificationtypedef) 
 ## AssetPropertyTypeDef
 
 ```python title="Usage Example"
@@ -2743,6 +2806,7 @@ def get_value() -> DescribeAssetModelRequestAssetModelActiveWaitTypeDef:
 ```python title="Definition"
 class DescribeAssetModelRequestAssetModelActiveWaitTypeDef(TypedDict):
     assetModelId: str,
+    excludeProperties: NotRequired[bool],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -2761,6 +2825,7 @@ def get_value() -> DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef:
 ```python title="Definition"
 class DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef(TypedDict):
     assetModelId: str,
+    excludeProperties: NotRequired[bool],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -2779,6 +2844,7 @@ def get_value() -> DescribeAssetRequestAssetActiveWaitTypeDef:
 ```python title="Definition"
 class DescribeAssetRequestAssetActiveWaitTypeDef(TypedDict):
     assetId: str,
+    excludeProperties: NotRequired[bool],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -2797,6 +2863,7 @@ def get_value() -> DescribeAssetRequestAssetNotExistsWaitTypeDef:
 ```python title="Definition"
 class DescribeAssetRequestAssetNotExistsWaitTypeDef(TypedDict):
     assetId: str,
+    excludeProperties: NotRequired[bool],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -3084,6 +3151,26 @@ class ListAccessPoliciesRequestListAccessPoliciesPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAssetModelPropertiesRequestListAssetModelPropertiesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetModelPropertiesRequestListAssetModelPropertiesPaginateTypeDef
+
+def get_value() -> ListAssetModelPropertiesRequestListAssetModelPropertiesPaginateTypeDef:
+    return {
+        "assetModelId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetModelPropertiesRequestListAssetModelPropertiesPaginateTypeDef(TypedDict):
+    assetModelId: str,
+    filter: NotRequired[ListAssetModelPropertiesFilterType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ListAssetModelPropertiesFilterType](./literals.md#listassetmodelpropertiesfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssetModelsRequestListAssetModelsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3101,6 +3188,26 @@ class ListAssetModelsRequestListAssetModelsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAssetPropertiesRequestListAssetPropertiesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetPropertiesRequestListAssetPropertiesPaginateTypeDef
+
+def get_value() -> ListAssetPropertiesRequestListAssetPropertiesPaginateTypeDef:
+    return {
+        "assetId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetPropertiesRequestListAssetPropertiesPaginateTypeDef(TypedDict):
+    assetId: str,
+    filter: NotRequired[ListAssetPropertiesFilterType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ListAssetPropertiesFilterType](./literals.md#listassetpropertiesfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssetRelationshipsRequestListAssetRelationshipsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3498,6 +3605,28 @@ class ListAssetRelationshipsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssetRelationshipSummaryTypeDef](./type_defs.md#assetrelationshipsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssetPropertiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetPropertiesResponseTypeDef
+
+def get_value() -> ListAssetPropertiesResponseTypeDef:
+    return {
+        "assetPropertySummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetPropertiesResponseTypeDef(TypedDict):
+    assetPropertySummaries: List[AssetPropertySummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AssetPropertySummaryTypeDef](./type_defs.md#assetpropertysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssetCompositeModelTypeDef
 
 ```python title="Usage Example"
@@ -3517,6 +3646,7 @@ class AssetCompositeModelTypeDef(TypedDict):
     type: str,
     properties: List[AssetPropertyTypeDef],  # (1)
     description: NotRequired[str],
+    id: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AssetPropertyTypeDef](./type_defs.md#assetpropertytypedef) 
@@ -4916,6 +5046,32 @@ class AssetModelPropertyDefinitionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
 2. See [:material-code-braces: PropertyTypeTypeDef](./type_defs.md#propertytypetypedef) 
+## AssetModelPropertySummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import AssetModelPropertySummaryTypeDef
+
+def get_value() -> AssetModelPropertySummaryTypeDef:
+    return {
+        "name": ...,
+        "dataType": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class AssetModelPropertySummaryTypeDef(TypedDict):
+    name: str,
+    dataType: PropertyDataTypeType,  # (1)
+    type: PropertyTypeTypeDef,  # (2)
+    id: NotRequired[str],
+    dataTypeSpec: NotRequired[str],
+    unit: NotRequired[str],
+    assetModelCompositeModelId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
+2. See [:material-code-braces: PropertyTypeTypeDef](./type_defs.md#propertytypetypedef) 
 ## AssetModelPropertyTypeDef
 
 ```python title="Usage Example"
@@ -4989,6 +5145,28 @@ class AssetModelCompositeModelDefinitionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef) 
+## ListAssetModelPropertiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetModelPropertiesResponseTypeDef
+
+def get_value() -> ListAssetModelPropertiesResponseTypeDef:
+    return {
+        "assetModelPropertySummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetModelPropertiesResponseTypeDef(TypedDict):
+    assetModelPropertySummaries: List[AssetModelPropertySummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AssetModelPropertySummaryTypeDef](./type_defs.md#assetmodelpropertysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssetModelCompositeModelTypeDef
 
 ```python title="Usage Example"
@@ -5007,6 +5185,7 @@ class AssetModelCompositeModelTypeDef(TypedDict):
     type: str,
     description: NotRequired[str],
     properties: NotRequired[List[AssetModelPropertyTypeDef]],  # (1)
+    id: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef) 
@@ -5028,6 +5207,7 @@ class CompositeModelPropertyTypeDef(TypedDict):
     name: str,
     type: str,
     assetProperty: PropertyTypeDef,  # (1)
+    id: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PropertyTypeDef](./type_defs.md#propertytypedef) 

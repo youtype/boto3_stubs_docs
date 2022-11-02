@@ -496,6 +496,35 @@ ListAccessPoliciesPaginatorName = Literal[
     "list_access_policies",
 ]
 ```
+## ListAssetModelPropertiesFilterType
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import ListAssetModelPropertiesFilterType
+
+def get_value() -> ListAssetModelPropertiesFilterType:
+    return "ALL"
+```
+
+```python title="Definition"
+ListAssetModelPropertiesFilterType = Literal[
+    "ALL",
+    "BASE",
+]
+```
+## ListAssetModelPropertiesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import ListAssetModelPropertiesPaginatorName
+
+def get_value() -> ListAssetModelPropertiesPaginatorName:
+    return "list_asset_model_properties"
+```
+
+```python title="Definition"
+ListAssetModelPropertiesPaginatorName = Literal[
+    "list_asset_model_properties",
+]
+```
 ## ListAssetModelsPaginatorName
 
 ```python title="Usage Example"
@@ -508,6 +537,35 @@ def get_value() -> ListAssetModelsPaginatorName:
 ```python title="Definition"
 ListAssetModelsPaginatorName = Literal[
     "list_asset_models",
+]
+```
+## ListAssetPropertiesFilterType
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import ListAssetPropertiesFilterType
+
+def get_value() -> ListAssetPropertiesFilterType:
+    return "ALL"
+```
+
+```python title="Definition"
+ListAssetPropertiesFilterType = Literal[
+    "ALL",
+    "BASE",
+]
+```
+## ListAssetPropertiesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import ListAssetPropertiesPaginatorName
+
+def get_value() -> ListAssetPropertiesPaginatorName:
+    return "list_asset_properties"
+```
+
+```python title="Definition"
+ListAssetPropertiesPaginatorName = Literal[
+    "list_asset_properties",
 ]
 ```
 ## ListAssetRelationshipsPaginatorName
@@ -1299,7 +1357,9 @@ PaginatorName = Literal[
     "get_asset_property_value_history",
     "get_interpolated_asset_property_values",
     "list_access_policies",
+    "list_asset_model_properties",
     "list_asset_models",
+    "list_asset_properties",
     "list_asset_relationships",
     "list_assets",
     "list_associated_assets",

@@ -100,6 +100,7 @@ def create_replication_set(
     *,
     regions: Mapping[str, RegionMapInputValueTypeDef],  # (1)
     clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
 ) -> CreateReplicationSetOutputTypeDef:  # (2)
     ...
 ```

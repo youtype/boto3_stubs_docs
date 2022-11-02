@@ -286,6 +286,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAccessPoliciesRequestListAccessPoliciesPaginateTypeDef](./type_defs.md#listaccesspoliciesrequestlistaccesspoliciespaginatetypedef) 
+## ListAssetModelPropertiesPaginator
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_paginator("list_asset_model_properties")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetModelProperties)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssetModelPropertiesPaginator
+
+def get_list_asset_model_properties_paginator() -> ListAssetModelPropertiesPaginator:
+    return Session().client("iotsitewise").get_paginator("list_asset_model_properties")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssetModelPropertiesPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListAssetModelPropertiesPaginator = client.get_paginator("list_asset_model_properties")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListAssetModelPropertiesPaginator](./paginators.md#listassetmodelpropertiespaginator)
+3. item: [:material-code-braces: ListAssetModelPropertiesResponseTypeDef](./type_defs.md#listassetmodelpropertiesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListAssetModelPropertiesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assetModelId: str,
+    filter: ListAssetModelPropertiesFilterType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssetModelPropertiesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ListAssetModelPropertiesFilterType](./literals.md#listassetmodelpropertiesfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssetModelPropertiesResponseTypeDef](./type_defs.md#listassetmodelpropertiesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAssetModelPropertiesRequestListAssetModelPropertiesPaginateTypeDef = {  # (1)
+    "assetModelId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssetModelPropertiesRequestListAssetModelPropertiesPaginateTypeDef](./type_defs.md#listassetmodelpropertiesrequestlistassetmodelpropertiespaginatetypedef) 
 ## ListAssetModelsPaginator
 
 Type annotations and code completion for `#!python boto3.client("iotsitewise").get_paginator("list_asset_models")`.
@@ -344,6 +405,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAssetModelsRequestListAssetModelsPaginateTypeDef](./type_defs.md#listassetmodelsrequestlistassetmodelspaginatetypedef) 
+## ListAssetPropertiesPaginator
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_paginator("list_asset_properties")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Paginator.ListAssetProperties)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssetPropertiesPaginator
+
+def get_list_asset_properties_paginator() -> ListAssetPropertiesPaginator:
+    return Session().client("iotsitewise").get_paginator("list_asset_properties")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_iotsitewise.paginator import ListAssetPropertiesPaginator
+
+session = Session()
+
+client = Session().client("iotsitewise")  # (1)
+paginator: ListAssetPropertiesPaginator = client.get_paginator("list_asset_properties")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [IoTSiteWiseClient](./client.md)
+2. paginator: [ListAssetPropertiesPaginator](./paginators.md#listassetpropertiespaginator)
+3. item: [:material-code-braces: ListAssetPropertiesResponseTypeDef](./type_defs.md#listassetpropertiesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListAssetPropertiesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assetId: str,
+    filter: ListAssetPropertiesFilterType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssetPropertiesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ListAssetPropertiesFilterType](./literals.md#listassetpropertiesfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssetPropertiesResponseTypeDef](./type_defs.md#listassetpropertiesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAssetPropertiesRequestListAssetPropertiesPaginateTypeDef = {  # (1)
+    "assetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssetPropertiesRequestListAssetPropertiesPaginateTypeDef](./type_defs.md#listassetpropertiesrequestlistassetpropertiespaginatetypedef) 
 ## ListAssetRelationshipsPaginator
 
 Type annotations and code completion for `#!python boto3.client("iotsitewise").get_paginator("list_asset_relationships")`.

@@ -1104,6 +1104,7 @@ def get_value() -> NoncurrentVersionExpirationTypeDef:
 ```python title="Definition"
 class NoncurrentVersionExpirationTypeDef(TypedDict):
     NoncurrentDays: NotRequired[int],
+    NewerNoncurrentVersions: NotRequired[int],
 ```
 
 ## NoncurrentVersionTransitionTypeDef
@@ -2245,6 +2246,8 @@ def get_value() -> LifecycleRuleAndOperatorTypeDef:
 class LifecycleRuleAndOperatorTypeDef(TypedDict):
     Prefix: NotRequired[str],
     Tags: NotRequired[List[S3TagTypeDef]],  # (1)
+    ObjectSizeGreaterThan: NotRequired[int],
+    ObjectSizeLessThan: NotRequired[int],
 ```
 
 1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
@@ -2816,6 +2819,8 @@ class LifecycleRuleFilterTypeDef(TypedDict):
     Prefix: NotRequired[str],
     Tag: NotRequired[S3TagTypeDef],  # (1)
     And: NotRequired[LifecycleRuleAndOperatorTypeDef],  # (2)
+    ObjectSizeGreaterThan: NotRequired[int],
+    ObjectSizeLessThan: NotRequired[int],
 ```
 
 1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 

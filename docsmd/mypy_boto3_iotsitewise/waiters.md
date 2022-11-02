@@ -38,6 +38,7 @@ def wait(
     self,
     *,
     assetId: str,
+    excludeProperties: bool = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...
@@ -86,6 +87,7 @@ def wait(
     self,
     *,
     assetModelId: str,
+    excludeProperties: bool = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...
@@ -134,6 +136,7 @@ def wait(
     self,
     *,
     assetModelId: str,
+    excludeProperties: bool = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...
@@ -182,6 +185,7 @@ def wait(
     self,
     *,
     assetId: str,
+    excludeProperties: bool = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...

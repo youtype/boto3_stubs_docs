@@ -350,9 +350,9 @@ def close(
 
 ### create\_access\_policy
 
-Creates an access policy that grants the specified identity (Amazon Web Services
-SSO user, Amazon Web Services SSO group, or IAM user) access to the specified
-IoT SiteWise Monitor portal or project resource.
+Creates an access policy that grants the specified identity (IAM Identity Center
+user, IAM Identity Center group, or IAM user) access to the specified IoT
+SiteWise Monitor portal or project resource.
 
 Type annotations and code completion for `#!python boto3.client("iotsitewise").create_access_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
@@ -928,6 +928,7 @@ def describe_asset(
     self,
     *,
     assetId: str,
+    excludeProperties: bool = ...,
 ) -> DescribeAssetResponseTypeDef:  # (1)
     ...
 ```
@@ -957,6 +958,7 @@ def describe_asset_model(
     self,
     *,
     assetModelId: str,
+    excludeProperties: bool = ...,
 ) -> DescribeAssetModelResponseTypeDef:  # (1)
     ...
 ```
@@ -1513,9 +1515,9 @@ parent.get_interpolated_asset_property_values(**kwargs)
 
 ### list\_access\_policies
 
-Retrieves a paginated list of access policies for an identity (an Amazon Web
-Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT
-SiteWise Monitor resource (a portal or project).
+Retrieves a paginated list of access policies for an identity (an IAM Identity
+Center user, an IAM Identity Center group, or an IAM user) or an IoT SiteWise
+Monitor resource (a portal or project).
 
 Type annotations and code completion for `#!python boto3.client("iotsitewise").list_access_policies` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
@@ -1550,6 +1552,39 @@ parent.list_access_policies(**kwargs)
 
 1. See [:material-code-braces: ListAccessPoliciesRequestRequestTypeDef](./type_defs.md#listaccesspoliciesrequestrequesttypedef) 
 
+### list\_asset\_model\_properties
+
+Retrieves a paginated list of properties associated with an asset model.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_asset_model_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_model_properties)
+
+```python title="Method definition"
+def list_asset_model_properties(
+    self,
+    *,
+    assetModelId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filter: ListAssetModelPropertiesFilterType = ...,  # (1)
+) -> ListAssetModelPropertiesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ListAssetModelPropertiesFilterType](./literals.md#listassetmodelpropertiesfiltertype) 
+2. See [:material-code-braces: ListAssetModelPropertiesResponseTypeDef](./type_defs.md#listassetmodelpropertiesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAssetModelPropertiesRequestRequestTypeDef = {  # (1)
+    "assetModelId": ...,
+}
+
+parent.list_asset_model_properties(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssetModelPropertiesRequestRequestTypeDef](./type_defs.md#listassetmodelpropertiesrequestrequesttypedef) 
+
 ### list\_asset\_models
 
 Retrieves a paginated list of summaries of all asset models.
@@ -1579,6 +1614,39 @@ parent.list_asset_models(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAssetModelsRequestRequestTypeDef](./type_defs.md#listassetmodelsrequestrequesttypedef) 
+
+### list\_asset\_properties
+
+Retrieves a paginated list of properties associated with an asset.
+
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_asset_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_properties)
+
+```python title="Method definition"
+def list_asset_properties(
+    self,
+    *,
+    assetId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filter: ListAssetPropertiesFilterType = ...,  # (1)
+) -> ListAssetPropertiesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ListAssetPropertiesFilterType](./literals.md#listassetpropertiesfiltertype) 
+2. See [:material-code-braces: ListAssetPropertiesResponseTypeDef](./type_defs.md#listassetpropertiesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAssetPropertiesRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+}
+
+parent.list_asset_properties(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssetPropertiesRequestRequestTypeDef](./type_defs.md#listassetpropertiesrequestrequesttypedef) 
 
 ### list\_asset\_relationships
 
@@ -2416,7 +2484,9 @@ Type annotations and code completion for `#!python boto3.client("iotsitewise").g
 - `client.get_paginator("get_asset_property_value_history")` -> [GetAssetPropertyValueHistoryPaginator](./paginators.md#getassetpropertyvaluehistorypaginator)
 - `client.get_paginator("get_interpolated_asset_property_values")` -> [GetInterpolatedAssetPropertyValuesPaginator](./paginators.md#getinterpolatedassetpropertyvaluespaginator)
 - `client.get_paginator("list_access_policies")` -> [ListAccessPoliciesPaginator](./paginators.md#listaccesspoliciespaginator)
+- `client.get_paginator("list_asset_model_properties")` -> [ListAssetModelPropertiesPaginator](./paginators.md#listassetmodelpropertiespaginator)
 - `client.get_paginator("list_asset_models")` -> [ListAssetModelsPaginator](./paginators.md#listassetmodelspaginator)
+- `client.get_paginator("list_asset_properties")` -> [ListAssetPropertiesPaginator](./paginators.md#listassetpropertiespaginator)
 - `client.get_paginator("list_asset_relationships")` -> [ListAssetRelationshipsPaginator](./paginators.md#listassetrelationshipspaginator)
 - `client.get_paginator("list_assets")` -> [ListAssetsPaginator](./paginators.md#listassetspaginator)
 - `client.get_paginator("list_associated_assets")` -> [ListAssociatedAssetsPaginator](./paginators.md#listassociatedassetspaginator)

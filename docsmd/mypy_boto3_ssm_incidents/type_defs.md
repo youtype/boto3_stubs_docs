@@ -754,6 +754,7 @@ def get_value() -> CreateReplicationSetInputRequestTypeDef:
 class CreateReplicationSetInputRequestTypeDef(TypedDict):
     regions: Mapping[str, RegionMapInputValueTypeDef],  # (1)
     clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-braces: RegionMapInputValueTypeDef](./type_defs.md#regionmapinputvaluetypedef) 
