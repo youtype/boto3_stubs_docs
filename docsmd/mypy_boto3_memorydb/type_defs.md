@@ -1037,6 +1037,7 @@ class CreateClusterRequestRequestTypeDef(TypedDict):
     SnapshotWindow: NotRequired[str],
     EngineVersion: NotRequired[str],
     AutoMinorVersionUpgrade: NotRequired[bool],
+    DataTiering: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -1879,6 +1880,7 @@ class ClusterTypeDef(TypedDict):
     SnapshotWindow: NotRequired[str],
     ACLName: NotRequired[str],
     AutoMinorVersionUpgrade: NotRequired[bool],
+    DataTiering: NotRequired[DataTieringStatusType],  # (6)
 ```
 
 1. See [:material-code-braces: ClusterPendingUpdatesTypeDef](./type_defs.md#clusterpendingupdatestypedef) 
@@ -1886,6 +1888,7 @@ class ClusterTypeDef(TypedDict):
 3. See [:material-code-brackets: AZStatusType](./literals.md#azstatustype) 
 4. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
 5. See [:material-code-braces: SecurityGroupMembershipTypeDef](./type_defs.md#securitygroupmembershiptypedef) 
+6. See [:material-code-brackets: DataTieringStatusType](./literals.md#datatieringstatustype) 
 ## SnapshotTypeDef
 
 ```python title="Usage Example"
@@ -1905,9 +1908,11 @@ class SnapshotTypeDef(TypedDict):
     KmsKeyId: NotRequired[str],
     ARN: NotRequired[str],
     ClusterConfiguration: NotRequired[ClusterConfigurationTypeDef],  # (1)
+    DataTiering: NotRequired[DataTieringStatusType],  # (2)
 ```
 
 1. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
+2. See [:material-code-brackets: DataTieringStatusType](./literals.md#datatieringstatustype) 
 ## BatchUpdateClusterResponseTypeDef
 
 ```python title="Usage Example"

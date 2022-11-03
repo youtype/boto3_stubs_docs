@@ -4502,6 +4502,8 @@ TrainingInstanceTypeType = Literal[
     "ml.p3.8xlarge",
     "ml.p3dn.24xlarge",
     "ml.p4d.24xlarge",
+    "ml.trn1.2xlarge",
+    "ml.trn1.32xlarge",
 ]
 ```
 ## TrainingJobCompletedOrStoppedWaiterName

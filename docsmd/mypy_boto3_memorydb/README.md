@@ -83,6 +83,7 @@ def get_value() -> AZStatusType:
 
 - [AZStatusType](./literals.md#azstatustype)
 - [AuthenticationTypeType](./literals.md#authenticationtypetype)
+- [DataTieringStatusType](./literals.md#datatieringstatustype)
 - [InputAuthenticationTypeType](./literals.md#inputauthenticationtypetype)
 - [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
 - [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype)

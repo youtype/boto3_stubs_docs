@@ -37,6 +37,21 @@ AuthenticationTypeType = Literal[
     "password",
 ]
 ```
+## DataTieringStatusType
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DataTieringStatusType
+
+def get_value() -> DataTieringStatusType:
+    return "false"
+```
+
+```python title="Definition"
+DataTieringStatusType = Literal[
+    "false",
+    "true",
+]
+```
 ## InputAuthenticationTypeType
 
 ```python title="Usage Example"

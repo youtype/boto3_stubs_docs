@@ -258,6 +258,7 @@ def create_cluster(
     SnapshotWindow: str = ...,
     EngineVersion: str = ...,
     AutoMinorVersionUpgrade: bool = ...,
+    DataTiering: bool = ...,
 ) -> CreateClusterResponseTypeDef:  # (2)
     ...
 ```
@@ -922,8 +923,7 @@ parent.describe_users(**kwargs)
 
 ### failover\_shard
 
-Used to failover a shard See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/FailoverShard).
+Used to failover a shard.
 
 Type annotations and code completion for `#!python boto3.client("memorydb").failover_shard` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.failover_shard)
