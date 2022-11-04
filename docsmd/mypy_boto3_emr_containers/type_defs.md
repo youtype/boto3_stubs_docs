@@ -118,6 +118,22 @@ class EksInfoTypeDef(TypedDict):
     namespace: NotRequired[str],
 ```
 
+## DeleteJobTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import DeleteJobTemplateRequestRequestTypeDef
+
+def get_value() -> DeleteJobTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteJobTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+```
+
 ## DeleteManagedEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -168,6 +184,22 @@ def get_value() -> DescribeJobRunRequestRequestTypeDef:
 class DescribeJobRunRequestRequestTypeDef(TypedDict):
     id: str,
     virtualClusterId: str,
+```
+
+## DescribeJobTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import DescribeJobTemplateRequestRequestTypeDef
+
+def get_value() -> DescribeJobTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
 ```
 
 ## DescribeManagedEndpointRequestRequestTypeDef
@@ -235,10 +267,28 @@ def get_value() -> SparkSubmitJobDriverTypeDef:
 ```python title="Definition"
 class SparkSubmitJobDriverTypeDef(TypedDict):
     entryPoint: str,
-    entryPointArguments: NotRequired[List[str]],
+    entryPointArguments: NotRequired[Sequence[str]],
     sparkSubmitParameters: NotRequired[str],
 ```
 
+## TemplateParameterConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import TemplateParameterConfigurationTypeDef
+
+def get_value() -> TemplateParameterConfigurationTypeDef:
+    return {
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateParameterConfigurationTypeDef(TypedDict):
+    type: NotRequired[TemplateParameterDataTypeType],  # (1)
+    defaultValue: NotRequired[str],
+```
+
+1. See [:material-code-brackets: TemplateParameterDataTypeType](./literals.md#templateparameterdatatypetype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -280,6 +330,25 @@ class ListJobRunsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
+## ListJobTemplatesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import ListJobTemplatesRequestRequestTypeDef
+
+def get_value() -> ListJobTemplatesRequestRequestTypeDef:
+    return {
+        "createdAfter": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobTemplatesRequestRequestTypeDef(TypedDict):
+    createdAfter: NotRequired[Union[datetime, str]],
+    createdBefore: NotRequired[Union[datetime, str]],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
 ## ListManagedEndpointsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -359,6 +428,39 @@ class S3MonitoringConfigurationTypeDef(TypedDict):
     logUri: str,
 ```
 
+## ParametricCloudWatchMonitoringConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import ParametricCloudWatchMonitoringConfigurationTypeDef
+
+def get_value() -> ParametricCloudWatchMonitoringConfigurationTypeDef:
+    return {
+        "logGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ParametricCloudWatchMonitoringConfigurationTypeDef(TypedDict):
+    logGroupName: NotRequired[str],
+    logStreamNamePrefix: NotRequired[str],
+```
+
+## ParametricS3MonitoringConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import ParametricS3MonitoringConfigurationTypeDef
+
+def get_value() -> ParametricS3MonitoringConfigurationTypeDef:
+    return {
+        "logUri": ...,
+    }
+```
+
+```python title="Definition"
+class ParametricS3MonitoringConfigurationTypeDef(TypedDict):
+    logUri: NotRequired[str],
+```
+
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -416,6 +518,31 @@ class CancelJobRunResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateJobTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import CreateJobTemplateResponseTypeDef
+
+def get_value() -> CreateJobTemplateResponseTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "arn": ...,
+        "createdAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobTemplateResponseTypeDef(TypedDict):
+    id: str,
+    name: str,
+    arn: str,
+    createdAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateManagedEndpointResponseTypeDef
 
 ```python title="Usage Example"
@@ -460,6 +587,25 @@ class CreateVirtualClusterResponseTypeDef(TypedDict):
     id: str,
     name: str,
     arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteJobTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import DeleteJobTemplateResponseTypeDef
+
+def get_value() -> DeleteJobTemplateResponseTypeDef:
+    return {
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteJobTemplateResponseTypeDef(TypedDict):
+    id: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -607,6 +753,25 @@ class ListJobRunsRequestListJobRunsPaginateTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
+
+def get_value() -> ListJobTemplatesRequestListJobTemplatesPaginateTypeDef:
+    return {
+        "createdAfter": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobTemplatesRequestListJobTemplatesPaginateTypeDef(TypedDict):
+    createdAfter: NotRequired[Union[datetime, str]],
+    createdBefore: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListManagedEndpointsRequestListManagedEndpointsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -675,6 +840,26 @@ class MonitoringConfigurationTypeDef(TypedDict):
 1. See [:material-code-brackets: PersistentAppUIType](./literals.md#persistentappuitype) 
 2. See [:material-code-braces: CloudWatchMonitoringConfigurationTypeDef](./type_defs.md#cloudwatchmonitoringconfigurationtypedef) 
 3. See [:material-code-braces: S3MonitoringConfigurationTypeDef](./type_defs.md#s3monitoringconfigurationtypedef) 
+## ParametricMonitoringConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import ParametricMonitoringConfigurationTypeDef
+
+def get_value() -> ParametricMonitoringConfigurationTypeDef:
+    return {
+        "persistentAppUI": ...,
+    }
+```
+
+```python title="Definition"
+class ParametricMonitoringConfigurationTypeDef(TypedDict):
+    persistentAppUI: NotRequired[str],
+    cloudWatchMonitoringConfiguration: NotRequired[ParametricCloudWatchMonitoringConfigurationTypeDef],  # (1)
+    s3MonitoringConfiguration: NotRequired[ParametricS3MonitoringConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ParametricCloudWatchMonitoringConfigurationTypeDef](./type_defs.md#parametriccloudwatchmonitoringconfigurationtypedef) 
+2. See [:material-code-braces: ParametricS3MonitoringConfigurationTypeDef](./type_defs.md#parametrics3monitoringconfigurationtypedef) 
 ## ContainerProviderTypeDef
 
 ```python title="Usage Example"
@@ -715,6 +900,25 @@ class ConfigurationOverridesTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 2. See [:material-code-braces: MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef) 
+## ParametricConfigurationOverridesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import ParametricConfigurationOverridesTypeDef
+
+def get_value() -> ParametricConfigurationOverridesTypeDef:
+    return {
+        "applicationConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ParametricConfigurationOverridesTypeDef(TypedDict):
+    applicationConfiguration: NotRequired[Sequence[ConfigurationTypeDef]],  # (1)
+    monitoringConfiguration: NotRequired[ParametricMonitoringConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+2. See [:material-code-braces: ParametricMonitoringConfigurationTypeDef](./type_defs.md#parametricmonitoringconfigurationtypedef) 
 ## CreateVirtualClusterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -872,9 +1076,6 @@ def get_value() -> StartJobRunRequestRequestTypeDef:
     return {
         "virtualClusterId": ...,
         "clientToken": ...,
-        "executionRoleArn": ...,
-        "releaseLabel": ...,
-        "jobDriver": ...,
     }
 ```
 
@@ -882,16 +1083,44 @@ def get_value() -> StartJobRunRequestRequestTypeDef:
 class StartJobRunRequestRequestTypeDef(TypedDict):
     virtualClusterId: str,
     clientToken: str,
-    executionRoleArn: str,
-    releaseLabel: str,
-    jobDriver: JobDriverTypeDef,  # (1)
     name: NotRequired[str],
+    executionRoleArn: NotRequired[str],
+    releaseLabel: NotRequired[str],
+    jobDriver: NotRequired[JobDriverTypeDef],  # (1)
     configurationOverrides: NotRequired[ConfigurationOverridesTypeDef],  # (2)
     tags: NotRequired[Mapping[str, str]],
+    jobTemplateId: NotRequired[str],
+    jobTemplateParameters: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-braces: JobDriverTypeDef](./type_defs.md#jobdrivertypedef) 
 2. See [:material-code-braces: ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef) 
+## JobTemplateDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import JobTemplateDataTypeDef
+
+def get_value() -> JobTemplateDataTypeDef:
+    return {
+        "executionRoleArn": ...,
+        "releaseLabel": ...,
+        "jobDriver": ...,
+    }
+```
+
+```python title="Definition"
+class JobTemplateDataTypeDef(TypedDict):
+    executionRoleArn: str,
+    releaseLabel: str,
+    jobDriver: JobDriverTypeDef,  # (2)
+    configurationOverrides: NotRequired[ParametricConfigurationOverridesTypeDef],  # (1)
+    parameterConfiguration: NotRequired[Mapping[str, TemplateParameterConfigurationTypeDef]],  # (3)
+    jobTags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: ParametricConfigurationOverridesTypeDef](./type_defs.md#parametricconfigurationoverridestypedef) 
+2. See [:material-code-braces: JobDriverTypeDef](./type_defs.md#jobdrivertypedef) 
+3. See [:material-code-braces: TemplateParameterConfigurationTypeDef](./type_defs.md#templateparameterconfigurationtypedef) 
 ## DescribeVirtualClusterResponseTypeDef
 
 ```python title="Usage Example"
@@ -1017,4 +1246,94 @@ class ListJobRunsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: JobRunTypeDef](./type_defs.md#jobruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateJobTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import CreateJobTemplateRequestRequestTypeDef
+
+def get_value() -> CreateJobTemplateRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "clientToken": ...,
+        "jobTemplateData": ...,
+    }
+```
+
+```python title="Definition"
+class CreateJobTemplateRequestRequestTypeDef(TypedDict):
+    name: str,
+    clientToken: str,
+    jobTemplateData: JobTemplateDataTypeDef,  # (1)
+    tags: NotRequired[Mapping[str, str]],
+    kmsKeyArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: JobTemplateDataTypeDef](./type_defs.md#jobtemplatedatatypedef) 
+## JobTemplateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import JobTemplateTypeDef
+
+def get_value() -> JobTemplateTypeDef:
+    return {
+        "jobTemplateData": ...,
+    }
+```
+
+```python title="Definition"
+class JobTemplateTypeDef(TypedDict):
+    jobTemplateData: JobTemplateDataTypeDef,  # (1)
+    name: NotRequired[str],
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    createdBy: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    kmsKeyArn: NotRequired[str],
+    decryptionError: NotRequired[str],
+```
+
+1. See [:material-code-braces: JobTemplateDataTypeDef](./type_defs.md#jobtemplatedatatypedef) 
+## DescribeJobTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import DescribeJobTemplateResponseTypeDef
+
+def get_value() -> DescribeJobTemplateResponseTypeDef:
+    return {
+        "jobTemplate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeJobTemplateResponseTypeDef(TypedDict):
+    jobTemplate: JobTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import ListJobTemplatesResponseTypeDef
+
+def get_value() -> ListJobTemplatesResponseTypeDef:
+    return {
+        "templates": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobTemplatesResponseTypeDef(TypedDict):
+    templates: List[JobTemplateTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

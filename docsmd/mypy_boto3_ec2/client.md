@@ -1437,6 +1437,37 @@ parent.cancel_export_task(**kwargs)
 
 1. See [:material-code-braces: CancelExportTaskRequestRequestTypeDef](./type_defs.md#cancelexporttaskrequestrequesttypedef) 
 
+### cancel\_image\_launch\_permission
+
+Removes your Amazon Web Services account from the launch permissions for the
+specified AMI.
+
+Type annotations and code completion for `#!python boto3.client("ec2").cancel_image_launch_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_image_launch_permission)
+
+```python title="Method definition"
+def cancel_image_launch_permission(
+    self,
+    *,
+    ImageId: str,
+    DryRun: bool = ...,
+) -> CancelImageLaunchPermissionResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CancelImageLaunchPermissionResultTypeDef](./type_defs.md#cancelimagelaunchpermissionresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CancelImageLaunchPermissionRequestRequestTypeDef = {  # (1)
+    "ImageId": ...,
+}
+
+parent.cancel_image_launch_permission(**kwargs)
+```
+
+1. See [:material-code-braces: CancelImageLaunchPermissionRequestRequestTypeDef](./type_defs.md#cancelimagelaunchpermissionrequestrequesttypedef) 
+
 ### cancel\_import\_task
 
 Cancels an in-process import virtual machine or import snapshot task.

@@ -90,6 +90,20 @@ ListJobRunsPaginatorName = Literal[
     "list_job_runs",
 ]
 ```
+## ListJobTemplatesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.literals import ListJobTemplatesPaginatorName
+
+def get_value() -> ListJobTemplatesPaginatorName:
+    return "list_job_templates"
+```
+
+```python title="Definition"
+ListJobTemplatesPaginatorName = Literal[
+    "list_job_templates",
+]
+```
 ## ListManagedEndpointsPaginatorName
 
 ```python title="Usage Example"
@@ -131,6 +145,21 @@ def get_value() -> PersistentAppUIType:
 PersistentAppUIType = Literal[
     "DISABLED",
     "ENABLED",
+]
+```
+## TemplateParameterDataTypeType
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.literals import TemplateParameterDataTypeType
+
+def get_value() -> TemplateParameterDataTypeType:
+    return "NUMBER"
+```
+
+```python title="Definition"
+TemplateParameterDataTypeType = Literal[
+    "NUMBER",
+    "STRING",
 ]
 ```
 ## VirtualClusterStateType
@@ -530,6 +559,7 @@ def get_value() -> PaginatorName:
 ```python title="Definition"
 PaginatorName = Literal[
     "list_job_runs",
+    "list_job_templates",
     "list_managed_endpoints",
     "list_virtual_clusters",
 ]

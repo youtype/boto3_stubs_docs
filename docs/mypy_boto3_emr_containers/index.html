@@ -37625,6 +37625,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="paginators/#listjobrunspaginator">ListJobRunsPaginator</a></li>
+<li><a href="paginators/#listjobtemplatespaginator">ListJobTemplatesPaginator</a></li>
 <li><a href="paginators/#listmanagedendpointspaginator">ListManagedEndpointsPaginator</a></li>
 <li><a href="paginators/#listvirtualclusterspaginator">ListVirtualClustersPaginator</a></li>
 </ul>
@@ -37641,9 +37642,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#failurereasontype">FailureReasonType</a></li>
 <li><a href="literals/#jobrunstatetype">JobRunStateType</a></li>
 <li><a href="literals/#listjobrunspaginatorname">ListJobRunsPaginatorName</a></li>
+<li><a href="literals/#listjobtemplatespaginatorname">ListJobTemplatesPaginatorName</a></li>
 <li><a href="literals/#listmanagedendpointspaginatorname">ListManagedEndpointsPaginatorName</a></li>
 <li><a href="literals/#listvirtualclusterspaginatorname">ListVirtualClustersPaginatorName</a></li>
 <li><a href="literals/#persistentappuitype">PersistentAppUIType</a></li>
+<li><a href="literals/#templateparameterdatatypetype">TemplateParameterDataTypeType</a></li>
 <li><a href="literals/#virtualclusterstatetype">VirtualClusterStateType</a></li>
 <li><a href="literals/#emrcontainersservicename">EMRContainersServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
@@ -37668,24 +37671,32 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#cloudwatchmonitoringconfigurationtypedef">CloudWatchMonitoringConfigurationTypeDef</a></li>
 <li><a href="type_defs/#configurationtypedef">ConfigurationTypeDef</a></li>
 <li><a href="type_defs/#eksinfotypedef">EksInfoTypeDef</a></li>
+<li><a href="type_defs/#deletejobtemplaterequestrequesttypedef">DeleteJobTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemanagedendpointrequestrequesttypedef">DeleteManagedEndpointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletevirtualclusterrequestrequesttypedef">DeleteVirtualClusterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describejobrunrequestrequesttypedef">DescribeJobRunRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describejobtemplaterequestrequesttypedef">DescribeJobTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describemanagedendpointrequestrequesttypedef">DescribeManagedEndpointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describevirtualclusterrequestrequesttypedef">DescribeVirtualClusterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sparksqljobdrivertypedef">SparkSqlJobDriverTypeDef</a></li>
 <li><a href="type_defs/#sparksubmitjobdrivertypedef">SparkSubmitJobDriverTypeDef</a></li>
+<li><a href="type_defs/#templateparameterconfigurationtypedef">TemplateParameterConfigurationTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listjobrunsrequestrequesttypedef">ListJobRunsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listjobtemplatesrequestrequesttypedef">ListJobTemplatesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listmanagedendpointsrequestrequesttypedef">ListManagedEndpointsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listvirtualclustersrequestrequesttypedef">ListVirtualClustersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#s3monitoringconfigurationtypedef">S3MonitoringConfigurationTypeDef</a></li>
+<li><a href="type_defs/#parametriccloudwatchmonitoringconfigurationtypedef">ParametricCloudWatchMonitoringConfigurationTypeDef</a></li>
+<li><a href="type_defs/#parametrics3monitoringconfigurationtypedef">ParametricS3MonitoringConfigurationTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#canceljobrunresponsetypedef">CancelJobRunResponseTypeDef</a></li>
+<li><a href="type_defs/#createjobtemplateresponsetypedef">CreateJobTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#createmanagedendpointresponsetypedef">CreateManagedEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#createvirtualclusterresponsetypedef">CreateVirtualClusterResponseTypeDef</a></li>
+<li><a href="type_defs/#deletejobtemplateresponsetypedef">DeleteJobTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#deletemanagedendpointresponsetypedef">DeleteManagedEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#deletevirtualclusterresponsetypedef">DeleteVirtualClusterResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
@@ -37693,23 +37704,31 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#containerinfotypedef">ContainerInfoTypeDef</a></li>
 <li><a href="type_defs/#jobdrivertypedef">JobDriverTypeDef</a></li>
 <li><a href="type_defs/#listjobrunsrequestlistjobrunspaginatetypedef">ListJobRunsRequestListJobRunsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listjobtemplatesrequestlistjobtemplatespaginatetypedef">ListJobTemplatesRequestListJobTemplatesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listmanagedendpointsrequestlistmanagedendpointspaginatetypedef">ListManagedEndpointsRequestListManagedEndpointsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listvirtualclustersrequestlistvirtualclusterspaginatetypedef">ListVirtualClustersRequestListVirtualClustersPaginateTypeDef</a></li>
 <li><a href="type_defs/#monitoringconfigurationtypedef">MonitoringConfigurationTypeDef</a></li>
+<li><a href="type_defs/#parametricmonitoringconfigurationtypedef">ParametricMonitoringConfigurationTypeDef</a></li>
 <li><a href="type_defs/#containerprovidertypedef">ContainerProviderTypeDef</a></li>
 <li><a href="type_defs/#configurationoverridestypedef">ConfigurationOverridesTypeDef</a></li>
+<li><a href="type_defs/#parametricconfigurationoverridestypedef">ParametricConfigurationOverridesTypeDef</a></li>
 <li><a href="type_defs/#createvirtualclusterrequestrequesttypedef">CreateVirtualClusterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#virtualclustertypedef">VirtualClusterTypeDef</a></li>
 <li><a href="type_defs/#createmanagedendpointrequestrequesttypedef">CreateManagedEndpointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#endpointtypedef">EndpointTypeDef</a></li>
 <li><a href="type_defs/#jobruntypedef">JobRunTypeDef</a></li>
 <li><a href="type_defs/#startjobrunrequestrequesttypedef">StartJobRunRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#jobtemplatedatatypedef">JobTemplateDataTypeDef</a></li>
 <li><a href="type_defs/#describevirtualclusterresponsetypedef">DescribeVirtualClusterResponseTypeDef</a></li>
 <li><a href="type_defs/#listvirtualclustersresponsetypedef">ListVirtualClustersResponseTypeDef</a></li>
 <li><a href="type_defs/#describemanagedendpointresponsetypedef">DescribeManagedEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#listmanagedendpointsresponsetypedef">ListManagedEndpointsResponseTypeDef</a></li>
 <li><a href="type_defs/#describejobrunresponsetypedef">DescribeJobRunResponseTypeDef</a></li>
 <li><a href="type_defs/#listjobrunsresponsetypedef">ListJobRunsResponseTypeDef</a></li>
+<li><a href="type_defs/#createjobtemplaterequestrequesttypedef">CreateJobTemplateRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#jobtemplatetypedef">JobTemplateTypeDef</a></li>
+<li><a href="type_defs/#describejobtemplateresponsetypedef">DescribeJobTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#listjobtemplatesresponsetypedef">ListJobTemplatesResponseTypeDef</a></li>
 </ul>
 
 

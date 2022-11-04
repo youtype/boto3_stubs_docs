@@ -113,6 +113,42 @@ def close(
 ```
 
 
+### create\_job\_template
+
+Creates a job template.
+
+Type annotations and code completion for `#!python boto3.client("emr-containers").create_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_job_template)
+
+```python title="Method definition"
+def create_job_template(
+    self,
+    *,
+    name: str,
+    clientToken: str,
+    jobTemplateData: JobTemplateDataTypeDef,  # (1)
+    tags: Mapping[str, str] = ...,
+    kmsKeyArn: str = ...,
+) -> CreateJobTemplateResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: JobTemplateDataTypeDef](./type_defs.md#jobtemplatedatatypedef) 
+2. See [:material-code-braces: CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateJobTemplateRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "clientToken": ...,
+    "jobTemplateData": ...,
+}
+
+parent.create_job_template(**kwargs)
+```
+
+1. See [:material-code-braces: CreateJobTemplateRequestRequestTypeDef](./type_defs.md#createjobtemplaterequestrequesttypedef) 
+
 ### create\_managed\_endpoint
 
 Creates a managed endpoint.
@@ -190,6 +226,35 @@ parent.create_virtual_cluster(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateVirtualClusterRequestRequestTypeDef](./type_defs.md#createvirtualclusterrequestrequesttypedef) 
+
+### delete\_job\_template
+
+Deletes a job template.
+
+Type annotations and code completion for `#!python boto3.client("emr-containers").delete_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_job_template)
+
+```python title="Method definition"
+def delete_job_template(
+    self,
+    *,
+    id: str,
+) -> DeleteJobTemplateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteJobTemplateResponseTypeDef](./type_defs.md#deletejobtemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteJobTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.delete_job_template(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteJobTemplateRequestRequestTypeDef](./type_defs.md#deletejobtemplaterequestrequesttypedef) 
 
 ### delete\_managed\_endpoint
 
@@ -281,6 +346,35 @@ parent.describe_job_run(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef) 
+
+### describe\_job\_template
+
+Displays detailed information about a specified job template.
+
+Type annotations and code completion for `#!python boto3.client("emr-containers").describe_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_template)
+
+```python title="Method definition"
+def describe_job_template(
+    self,
+    *,
+    id: str,
+) -> DescribeJobTemplateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeJobTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.describe_job_template(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeJobTemplateRequestRequestTypeDef](./type_defs.md#describejobtemplaterequestrequesttypedef) 
 
 ### describe\_managed\_endpoint
 
@@ -397,6 +491,38 @@ parent.list_job_runs(**kwargs)
 
 1. See [:material-code-braces: ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef) 
 
+### list\_job\_templates
+
+Lists job templates based on a set of parameters.
+
+Type annotations and code completion for `#!python boto3.client("emr-containers").list_job_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_templates)
+
+```python title="Method definition"
+def list_job_templates(
+    self,
+    *,
+    createdAfter: Union[datetime, str] = ...,
+    createdBefore: Union[datetime, str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListJobTemplatesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListJobTemplatesRequestRequestTypeDef = {  # (1)
+    "createdAfter": ...,
+}
+
+parent.list_job_templates(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobTemplatesRequestRequestTypeDef](./type_defs.md#listjobtemplatesrequestrequesttypedef) 
+
 ### list\_managed\_endpoints
 
 Lists managed endpoints based on a set of parameters.
@@ -512,12 +638,14 @@ def start_job_run(
     *,
     virtualClusterId: str,
     clientToken: str,
-    executionRoleArn: str,
-    releaseLabel: str,
-    jobDriver: JobDriverTypeDef,  # (1)
     name: str = ...,
+    executionRoleArn: str = ...,
+    releaseLabel: str = ...,
+    jobDriver: JobDriverTypeDef = ...,  # (1)
     configurationOverrides: ConfigurationOverridesTypeDef = ...,  # (2)
     tags: Mapping[str, str] = ...,
+    jobTemplateId: str = ...,
+    jobTemplateParameters: Mapping[str, str] = ...,
 ) -> StartJobRunResponseTypeDef:  # (3)
     ...
 ```
@@ -531,9 +659,6 @@ def start_job_run(
 kwargs: StartJobRunRequestRequestTypeDef = {  # (1)
     "virtualClusterId": ...,
     "clientToken": ...,
-    "executionRoleArn": ...,
-    "releaseLabel": ...,
-    "jobDriver": ...,
 }
 
 parent.start_job_run(**kwargs)
@@ -608,6 +733,7 @@ parent.untag_resource(**kwargs)
 Type annotations and code completion for `#!python boto3.client("emr-containers").get_paginator` method with overloads.
 
 - `client.get_paginator("list_job_runs")` -> [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
+- `client.get_paginator("list_job_templates")` -> [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
 - `client.get_paginator("list_managed_endpoints")` -> [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
 - `client.get_paginator("list_virtual_clusters")` -> [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)
 

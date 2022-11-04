@@ -1699,6 +1699,23 @@ class CancelExportTaskRequestRequestTypeDef(TypedDict):
     ExportTaskId: str,
 ```
 
+## CancelImageLaunchPermissionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CancelImageLaunchPermissionRequestRequestTypeDef
+
+def get_value() -> CancelImageLaunchPermissionRequestRequestTypeDef:
+    return {
+        "ImageId": ...,
+    }
+```
+
+```python title="Definition"
+class CancelImageLaunchPermissionRequestRequestTypeDef(TypedDict):
+    ImageId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## CancelImportTaskRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -14624,6 +14641,25 @@ def get_value() -> CancelCapacityReservationResultTypeDef:
 
 ```python title="Definition"
 class CancelCapacityReservationResultTypeDef(TypedDict):
+    Return: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CancelImageLaunchPermissionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CancelImageLaunchPermissionResultTypeDef
+
+def get_value() -> CancelImageLaunchPermissionResultTypeDef:
+    return {
+        "Return": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CancelImageLaunchPermissionResultTypeDef(TypedDict):
     Return: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
