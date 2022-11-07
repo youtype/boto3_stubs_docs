@@ -227,6 +227,7 @@ def get_value() -> AcceleratorCountRequestTypeDef:
 - [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
 - [MemoryGiBPerVCpuRequestTypeDef](./type_defs.md#memorygibpervcpurequesttypedef)
 - [MemoryMiBRequestTypeDef](./type_defs.md#memorymibrequesttypedef)
+- [NetworkBandwidthGbpsRequestTypeDef](./type_defs.md#networkbandwidthgbpsrequesttypedef)
 - [NetworkInterfaceCountRequestTypeDef](./type_defs.md#networkinterfacecountrequesttypedef)
 - [TotalLocalStorageGBRequestTypeDef](./type_defs.md#totallocalstoragegbrequesttypedef)
 - [VCpuCountRequestTypeDef](./type_defs.md#vcpucountrequesttypedef)

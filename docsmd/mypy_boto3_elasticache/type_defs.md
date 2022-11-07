@@ -2878,10 +2878,12 @@ class SubnetTypeDef(TypedDict):
     SubnetIdentifier: NotRequired[str],
     SubnetAvailabilityZone: NotRequired[AvailabilityZoneTypeDef],  # (1)
     SubnetOutpost: NotRequired[SubnetOutpostTypeDef],  # (2)
+    SupportedNetworkTypes: NotRequired[List[NetworkTypeType]],  # (3)
 ```
 
 1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
 2. See [:material-code-braces: SubnetOutpostTypeDef](./type_defs.md#subnetoutposttypedef) 
+3. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
 ## UpdateActionResultsMessageTypeDef
 
 ```python title="Usage Example"
@@ -3581,9 +3583,11 @@ class CacheSubnetGroupTypeDef(TypedDict):
     VpcId: NotRequired[str],
     Subnets: NotRequired[List[SubnetTypeDef]],  # (1)
     ARN: NotRequired[str],
+    SupportedNetworkTypes: NotRequired[List[NetworkTypeType]],  # (2)
 ```
 
 1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
+2. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
 ## DescribeUserGroupsResultTypeDef
 
 ```python title="Usage Example"
@@ -3749,12 +3753,16 @@ class CreateCacheClusterMessageRequestTypeDef(TypedDict):
     PreferredOutpostArns: NotRequired[Sequence[str]],
     LogDeliveryConfigurations: NotRequired[Sequence[LogDeliveryConfigurationRequestTypeDef]],  # (4)
     TransitEncryptionEnabled: NotRequired[bool],
+    NetworkType: NotRequired[NetworkTypeType],  # (5)
+    IpDiscovery: NotRequired[IpDiscoveryType],  # (6)
 ```
 
 1. See [:material-code-brackets: AZModeType](./literals.md#azmodetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-brackets: OutpostModeType](./literals.md#outpostmodetype) 
 4. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
+5. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
+6. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
 ## CreateReplicationGroupMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -3803,11 +3811,15 @@ class CreateReplicationGroupMessageRequestTypeDef(TypedDict):
     UserGroupIds: NotRequired[Sequence[str]],
     LogDeliveryConfigurations: NotRequired[Sequence[LogDeliveryConfigurationRequestTypeDef]],  # (3)
     DataTieringEnabled: NotRequired[bool],
+    NetworkType: NotRequired[NetworkTypeType],  # (4)
+    IpDiscovery: NotRequired[IpDiscoveryType],  # (5)
 ```
 
 1. See [:material-code-braces: NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
+4. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
+5. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
 ## ModifyCacheClusterMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -3841,11 +3853,13 @@ class ModifyCacheClusterMessageRequestTypeDef(TypedDict):
     AuthToken: NotRequired[str],
     AuthTokenUpdateStrategy: NotRequired[AuthTokenUpdateStrategyTypeType],  # (2)
     LogDeliveryConfigurations: NotRequired[Sequence[LogDeliveryConfigurationRequestTypeDef]],  # (3)
+    IpDiscovery: NotRequired[IpDiscoveryType],  # (4)
 ```
 
 1. See [:material-code-brackets: AZModeType](./literals.md#azmodetype) 
 2. See [:material-code-brackets: AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype) 
 3. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
+4. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
 ## ModifyReplicationGroupMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -3884,10 +3898,12 @@ class ModifyReplicationGroupMessageRequestTypeDef(TypedDict):
     UserGroupIdsToRemove: NotRequired[Sequence[str]],
     RemoveUserGroups: NotRequired[bool],
     LogDeliveryConfigurations: NotRequired[Sequence[LogDeliveryConfigurationRequestTypeDef]],  # (2)
+    IpDiscovery: NotRequired[IpDiscoveryType],  # (3)
 ```
 
 1. See [:material-code-brackets: AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype) 
 2. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
+3. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
 ## PendingModifiedValuesTypeDef
 
 ```python title="Usage Example"
@@ -4064,6 +4080,8 @@ class CacheClusterTypeDef(TypedDict):
     ARN: NotRequired[str],
     ReplicationGroupLogDeliveryEnabled: NotRequired[bool],
     LogDeliveryConfigurations: NotRequired[List[LogDeliveryConfigurationTypeDef]],  # (8)
+    NetworkType: NotRequired[NetworkTypeType],  # (9)
+    IpDiscovery: NotRequired[IpDiscoveryType],  # (10)
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
@@ -4074,6 +4092,8 @@ class CacheClusterTypeDef(TypedDict):
 6. See [:material-code-braces: CacheNodeTypeDef](./type_defs.md#cachenodetypedef) 
 7. See [:material-code-braces: SecurityGroupMembershipTypeDef](./type_defs.md#securitygroupmembershiptypedef) 
 8. See [:material-code-braces: LogDeliveryConfigurationTypeDef](./type_defs.md#logdeliveryconfigurationtypedef) 
+9. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
+10. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
 ## ReplicationGroupTypeDef
 
 ```python title="Usage Example"
@@ -4114,6 +4134,8 @@ class ReplicationGroupTypeDef(TypedDict):
     ReplicationGroupCreateTime: NotRequired[datetime],
     DataTiering: NotRequired[DataTieringStatusType],  # (8)
     AutoMinorVersionUpgrade: NotRequired[bool],
+    NetworkType: NotRequired[NetworkTypeType],  # (9)
+    IpDiscovery: NotRequired[IpDiscoveryType],  # (10)
 ```
 
 1. See [:material-code-braces: GlobalReplicationGroupInfoTypeDef](./type_defs.md#globalreplicationgroupinfotypedef) 
@@ -4124,6 +4146,8 @@ class ReplicationGroupTypeDef(TypedDict):
 6. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
 7. See [:material-code-braces: LogDeliveryConfigurationTypeDef](./type_defs.md#logdeliveryconfigurationtypedef) 
 8. See [:material-code-brackets: DataTieringStatusType](./literals.md#datatieringstatustype) 
+9. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
+10. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
 ## CacheClusterMessageTypeDef
 
 ```python title="Usage Example"

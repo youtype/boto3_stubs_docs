@@ -243,12 +243,15 @@ def create_workload(
     Industry: str = ...,
     Notes: str = ...,
     Tags: Mapping[str, str] = ...,
-) -> CreateWorkloadOutputTypeDef:  # (2)
+    DiscoveryConfig: WorkloadDiscoveryConfigTypeDef = ...,  # (2)
+    Applications: Sequence[str] = ...,
+) -> CreateWorkloadOutputTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) 
-2. See [:material-code-braces: CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef) 
+2. See [:material-code-braces: WorkloadDiscoveryConfigTypeDef](./type_defs.md#workloaddiscoveryconfigtypedef) 
+3. See [:material-code-braces: CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -799,6 +802,85 @@ parent.list_answers(**kwargs)
 
 1. See [:material-code-braces: ListAnswersInputRequestTypeDef](./type_defs.md#listanswersinputrequesttypedef) 
 
+### list\_check\_details
+
+List of Trusted Advisor check details by account related to the workload.
+
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_check_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_check_details)
+
+```python title="Method definition"
+def list_check_details(
+    self,
+    *,
+    WorkloadId: str,
+    LensArn: str,
+    PillarId: str,
+    QuestionId: str,
+    ChoiceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCheckDetailsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCheckDetailsOutputTypeDef](./type_defs.md#listcheckdetailsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCheckDetailsInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensArn": ...,
+    "PillarId": ...,
+    "QuestionId": ...,
+    "ChoiceId": ...,
+}
+
+parent.list_check_details(**kwargs)
+```
+
+1. See [:material-code-braces: ListCheckDetailsInputRequestTypeDef](./type_defs.md#listcheckdetailsinputrequesttypedef) 
+
+### list\_check\_summaries
+
+List of Trusted Advisor checks summarized for all accounts related to the
+workload.
+
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_check_summaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_check_summaries)
+
+```python title="Method definition"
+def list_check_summaries(
+    self,
+    *,
+    WorkloadId: str,
+    LensArn: str,
+    PillarId: str,
+    QuestionId: str,
+    ChoiceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCheckSummariesOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCheckSummariesOutputTypeDef](./type_defs.md#listchecksummariesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCheckSummariesInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensArn": ...,
+    "PillarId": ...,
+    "QuestionId": ...,
+    "ChoiceId": ...,
+}
+
+parent.list_check_summaries(**kwargs)
+```
+
+1. See [:material-code-braces: ListCheckSummariesInputRequestTypeDef](./type_defs.md#listchecksummariesinputrequesttypedef) 
+
 ### list\_lens\_review\_improvements
 
 List lens review improvements.
@@ -1291,7 +1373,7 @@ parent.update_lens_review(**kwargs)
 
 ### update\_share\_invitation
 
-Update a workload invitation.
+Update a workload or custom lens share invitation.
 
 Type annotations and code completion for `#!python boto3.client("wellarchitected").update_share_invitation` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
@@ -1347,13 +1429,16 @@ def update_workload(
     Industry: str = ...,
     Notes: str = ...,
     ImprovementStatus: WorkloadImprovementStatusType = ...,  # (2)
-) -> UpdateWorkloadOutputTypeDef:  # (3)
+    DiscoveryConfig: WorkloadDiscoveryConfigTypeDef = ...,  # (3)
+    Applications: Sequence[str] = ...,
+) -> UpdateWorkloadOutputTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) 
 2. See [:material-code-brackets: WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype) 
-3. See [:material-code-braces: UpdateWorkloadOutputTypeDef](./type_defs.md#updateworkloadoutputtypedef) 
+3. See [:material-code-braces: WorkloadDiscoveryConfigTypeDef](./type_defs.md#workloaddiscoveryconfigtypedef) 
+4. See [:material-code-braces: UpdateWorkloadOutputTypeDef](./type_defs.md#updateworkloadoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

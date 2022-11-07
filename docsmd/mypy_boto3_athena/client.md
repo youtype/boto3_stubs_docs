@@ -1023,13 +1023,15 @@ def start_query_execution(
     ResultConfiguration: ResultConfigurationTypeDef = ...,  # (2)
     WorkGroup: str = ...,
     ExecutionParameters: Sequence[str] = ...,
-) -> StartQueryExecutionOutputTypeDef:  # (3)
+    ResultReuseConfiguration: ResultReuseConfigurationTypeDef = ...,  # (3)
+) -> StartQueryExecutionOutputTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef) 
 2. See [:material-code-braces: ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef) 
-3. See [:material-code-braces: StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef) 
+3. See [:material-code-braces: ResultReuseConfigurationTypeDef](./type_defs.md#resultreuseconfigurationtypedef) 
+4. See [:material-code-braces: StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

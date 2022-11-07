@@ -396,6 +396,21 @@ DestinationTypeType = Literal[
     "kinesis-firehose",
 ]
 ```
+## IpDiscoveryType
+
+```python title="Usage Example"
+from mypy_boto3_elasticache.literals import IpDiscoveryType
+
+def get_value() -> IpDiscoveryType:
+    return "ipv4"
+```
+
+```python title="Definition"
+IpDiscoveryType = Literal[
+    "ipv4",
+    "ipv6",
+]
+```
 ## LogDeliveryConfigurationStatusType
 
 ```python title="Usage Example"
@@ -457,6 +472,22 @@ def get_value() -> MultiAZStatusType:
 MultiAZStatusType = Literal[
     "disabled",
     "enabled",
+]
+```
+## NetworkTypeType
+
+```python title="Usage Example"
+from mypy_boto3_elasticache.literals import NetworkTypeType
+
+def get_value() -> NetworkTypeType:
+    return "dual_stack"
+```
+
+```python title="Definition"
+NetworkTypeType = Literal[
+    "dual_stack",
+    "ipv4",
+    "ipv6",
 ]
 ```
 ## NodeUpdateInitiatedByType

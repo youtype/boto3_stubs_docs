@@ -456,6 +456,23 @@ EffectType = Literal[
     "Deny",
 ]
 ```
+## ErrorCodeType
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.literals import ErrorCodeType
+
+def get_value() -> ErrorCodeType:
+    return "DUPLICATE_INPUT"
+```
+
+```python title="Definition"
+ErrorCodeType = Literal[
+    "DUPLICATE_INPUT",
+    "INTERNAL_SERVER_FAILURE",
+    "RESOURCE_ALREADY_EXISTS",
+    "RESOURCE_DOES_NOT_EXIST",
+]
+```
 ## ExportFilterNameType
 
 ```python title="Usage Example"

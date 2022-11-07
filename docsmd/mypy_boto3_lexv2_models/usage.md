@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("lexv2-models")  # (1)
-    result = client.build_bot_locale()  # (2)
+    result = client.batch_create_custom_vocabulary_item()  # (2)
     ```
 
     1. client: [LexModelsV2Client](./client.md)
-    2. result: [:material-code-braces: BuildBotLocaleResponseTypeDef](./type_defs.md#buildbotlocaleresponsetypedef) 
+    2. result: [:material-code-braces: BatchCreateCustomVocabularyItemResponseTypeDef](./type_defs.md#batchcreatecustomvocabularyitemresponsetypedef) 
 
 
 
@@ -68,16 +68,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_lexv2_models.client import LexModelsV2Client
-    from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleResponseTypeDef
-    from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleRequestRequestTypeDef
+    from mypy_boto3_lexv2_models.type_defs import BatchCreateCustomVocabularyItemResponseTypeDef
+    from mypy_boto3_lexv2_models.type_defs import BatchCreateCustomVocabularyItemRequestRequestTypeDef
 
 
     session = Session()
 
     client: LexModelsV2Client = session.client("lexv2-models")
 
-    kwargs: BuildBotLocaleRequestRequestTypeDef = {...}
-    result: BuildBotLocaleResponseTypeDef = client.build_bot_locale(**kwargs)
+    kwargs: BatchCreateCustomVocabularyItemRequestRequestTypeDef = {...}
+    result: BatchCreateCustomVocabularyItemResponseTypeDef = client.batch_create_custom_vocabulary_item(**kwargs)
     ```
 
 

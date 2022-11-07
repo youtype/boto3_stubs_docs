@@ -53,15 +53,14 @@ from mypy_boto3_cloudtrail.type_defs import CancelQueryRequestRequestTypeDef
 
 def get_value() -> CancelQueryRequestRequestTypeDef:
     return {
-        "EventDataStore": ...,
         "QueryId": ...,
     }
 ```
 
 ```python title="Definition"
 class CancelQueryRequestRequestTypeDef(TypedDict):
-    EventDataStore: str,
     QueryId: str,
+    EventDataStore: NotRequired[str],
 ```
 
 ## ResponseMetadataTypeDef
@@ -154,6 +153,22 @@ class DeleteTrailRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
+## DeregisterOrganizationDelegatedAdminRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import DeregisterOrganizationDelegatedAdminRequestRequestTypeDef
+
+def get_value() -> DeregisterOrganizationDelegatedAdminRequestRequestTypeDef:
+    return {
+        "DelegatedAdminAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DeregisterOrganizationDelegatedAdminRequestRequestTypeDef(TypedDict):
+    DelegatedAdminAccountId: str,
+```
+
 ## DescribeQueryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -161,15 +176,14 @@ from mypy_boto3_cloudtrail.type_defs import DescribeQueryRequestRequestTypeDef
 
 def get_value() -> DescribeQueryRequestRequestTypeDef:
     return {
-        "EventDataStore": ...,
         "QueryId": ...,
     }
 ```
 
 ```python title="Definition"
 class DescribeQueryRequestRequestTypeDef(TypedDict):
-    EventDataStore: str,
     QueryId: str,
+    EventDataStore: NotRequired[str],
 ```
 
 ## QueryStatisticsForDescribeQueryTypeDef
@@ -400,15 +414,14 @@ from mypy_boto3_cloudtrail.type_defs import GetQueryResultsRequestRequestTypeDef
 
 def get_value() -> GetQueryResultsRequestRequestTypeDef:
     return {
-        "EventDataStore": ...,
         "QueryId": ...,
     }
 ```
 
 ```python title="Definition"
 class GetQueryResultsRequestRequestTypeDef(TypedDict):
-    EventDataStore: str,
     QueryId: str,
+    EventDataStore: NotRequired[str],
     NextToken: NotRequired[str],
     MaxQueryResults: NotRequired[int],
 ```
@@ -763,6 +776,22 @@ class LookupAttributeTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LookupAttributeKeyType](./literals.md#lookupattributekeytype) 
+## RegisterOrganizationDelegatedAdminRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import RegisterOrganizationDelegatedAdminRequestRequestTypeDef
+
+def get_value() -> RegisterOrganizationDelegatedAdminRequestRequestTypeDef:
+    return {
+        "MemberAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterOrganizationDelegatedAdminRequestRequestTypeDef(TypedDict):
+    MemberAccountId: str,
+```
+
 ## RestoreEventDataStoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1692,6 +1721,7 @@ class CreateEventDataStoreRequestRequestTypeDef(TypedDict):
     RetentionPeriod: NotRequired[int],
     TerminationProtectionEnabled: NotRequired[bool],
     TagsList: NotRequired[Sequence[TagTypeDef]],  # (2)
+    KmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
@@ -1714,6 +1744,7 @@ def get_value() -> CreateEventDataStoreResponseTypeDef:
         "TagsList": ...,
         "CreatedTimestamp": ...,
         "UpdatedTimestamp": ...,
+        "KmsKeyId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1731,6 +1762,7 @@ class CreateEventDataStoreResponseTypeDef(TypedDict):
     TagsList: List[TagTypeDef],  # (3)
     CreatedTimestamp: datetime,
     UpdatedTimestamp: datetime,
+    KmsKeyId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
@@ -1782,6 +1814,7 @@ def get_value() -> GetEventDataStoreResponseTypeDef:
         "TerminationProtectionEnabled": ...,
         "CreatedTimestamp": ...,
         "UpdatedTimestamp": ...,
+        "KmsKeyId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1798,6 +1831,7 @@ class GetEventDataStoreResponseTypeDef(TypedDict):
     TerminationProtectionEnabled: bool,
     CreatedTimestamp: datetime,
     UpdatedTimestamp: datetime,
+    KmsKeyId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
@@ -1821,6 +1855,7 @@ def get_value() -> RestoreEventDataStoreResponseTypeDef:
         "TerminationProtectionEnabled": ...,
         "CreatedTimestamp": ...,
         "UpdatedTimestamp": ...,
+        "KmsKeyId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1837,6 +1872,7 @@ class RestoreEventDataStoreResponseTypeDef(TypedDict):
     TerminationProtectionEnabled: bool,
     CreatedTimestamp: datetime,
     UpdatedTimestamp: datetime,
+    KmsKeyId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
@@ -1881,6 +1917,7 @@ class UpdateEventDataStoreRequestRequestTypeDef(TypedDict):
     OrganizationEnabled: NotRequired[bool],
     RetentionPeriod: NotRequired[int],
     TerminationProtectionEnabled: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
@@ -1901,6 +1938,7 @@ def get_value() -> UpdateEventDataStoreResponseTypeDef:
         "TerminationProtectionEnabled": ...,
         "CreatedTimestamp": ...,
         "UpdatedTimestamp": ...,
+        "KmsKeyId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1917,6 +1955,7 @@ class UpdateEventDataStoreResponseTypeDef(TypedDict):
     TerminationProtectionEnabled: bool,
     CreatedTimestamp: datetime,
     UpdatedTimestamp: datetime,
+    KmsKeyId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 

@@ -33,6 +33,10 @@ try:
     do_something(client)
 except (
     client.AccountHasOngoingImportException,
+    client.AccountNotFoundException,
+    client.AccountNotRegisteredException,
+    client.AccountRegisteredException,
+    client.CannotDelegateManagementAccountException,
     client.ChannelARNInvalidException,
     client.ChannelNotFoundException,
     client.ClientError,
@@ -41,6 +45,7 @@ except (
     client.CloudTrailInvalidClientTokenIdException,
     client.CloudWatchLogsDeliveryUnavailableException,
     client.ConflictException,
+    client.DelegatedAdminAccountLimitExceededException,
     client.EventDataStoreARNInvalidException,
     client.EventDataStoreAlreadyExistsException,
     client.EventDataStoreHasOngoingImportException,
@@ -85,6 +90,8 @@ except (
     client.KmsKeyNotFoundException,
     client.MaxConcurrentQueriesException,
     client.MaximumNumberOfTrailsExceededException,
+    client.NoManagementAccountSLRExistsException,
+    client.NotOrganizationManagementAccountException,
     client.NotOrganizationMasterAccountException,
     client.OperationNotPermittedException,
     client.OrganizationNotInAllFeaturesModeException,
@@ -172,8 +179,8 @@ Type annotations and code completion for `#!python boto3.client("cloudtrail").ca
 def cancel_query(
     self,
     *,
-    EventDataStore: str,
     QueryId: str,
+    EventDataStore: str = ...,
 ) -> CancelQueryResponseTypeDef:  # (1)
     ...
 ```
@@ -183,7 +190,6 @@ def cancel_query(
 
 ```python title="Usage example with kwargs"
 kwargs: CancelQueryRequestRequestTypeDef = {  # (1)
-    "EventDataStore": ...,
     "QueryId": ...,
 }
 
@@ -225,6 +231,7 @@ def create_event_data_store(
     RetentionPeriod: int = ...,
     TerminationProtectionEnabled: bool = ...,
     TagsList: Sequence[TagTypeDef] = ...,  # (2)
+    KmsKeyId: str = ...,
 ) -> CreateEventDataStoreResponseTypeDef:  # (3)
     ...
 ```
@@ -344,6 +351,35 @@ parent.delete_trail(**kwargs)
 
 1. See [:material-code-braces: DeleteTrailRequestRequestTypeDef](./type_defs.md#deletetrailrequestrequesttypedef) 
 
+### deregister\_organization\_delegated\_admin
+
+Removes CloudTrail delegated administrator permissions from a member account in
+an organization.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").deregister_organization_delegated_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.deregister_organization_delegated_admin)
+
+```python title="Method definition"
+def deregister_organization_delegated_admin(
+    self,
+    *,
+    DelegatedAdminAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeregisterOrganizationDelegatedAdminRequestRequestTypeDef = {  # (1)
+    "DelegatedAdminAccountId": ...,
+}
+
+parent.deregister_organization_delegated_admin(**kwargs)
+```
+
+1. See [:material-code-braces: DeregisterOrganizationDelegatedAdminRequestRequestTypeDef](./type_defs.md#deregisterorganizationdelegatedadminrequestrequesttypedef) 
+
 ### describe\_query
 
 Returns metadata about a query, including query run time in milliseconds, number
@@ -356,8 +392,8 @@ Type annotations and code completion for `#!python boto3.client("cloudtrail").de
 def describe_query(
     self,
     *,
-    EventDataStore: str,
     QueryId: str,
+    EventDataStore: str = ...,
 ) -> DescribeQueryResponseTypeDef:  # (1)
     ...
 ```
@@ -367,7 +403,6 @@ def describe_query(
 
 ```python title="Usage example with kwargs"
 kwargs: DescribeQueryRequestRequestTypeDef = {  # (1)
-    "EventDataStore": ...,
     "QueryId": ...,
 }
 
@@ -585,8 +620,8 @@ Type annotations and code completion for `#!python boto3.client("cloudtrail").ge
 def get_query_results(
     self,
     *,
-    EventDataStore: str,
     QueryId: str,
+    EventDataStore: str = ...,
     NextToken: str = ...,
     MaxQueryResults: int = ...,
 ) -> GetQueryResultsResponseTypeDef:  # (1)
@@ -598,7 +633,6 @@ def get_query_results(
 
 ```python title="Usage example with kwargs"
 kwargs: GetQueryResultsRequestRequestTypeDef = {  # (1)
-    "EventDataStore": ...,
     "QueryId": ...,
 }
 
@@ -1023,6 +1057,35 @@ parent.put_insight_selectors(**kwargs)
 
 1. See [:material-code-braces: PutInsightSelectorsRequestRequestTypeDef](./type_defs.md#putinsightselectorsrequestrequesttypedef) 
 
+### register\_organization\_delegated\_admin
+
+Registers an organization’s member account as the CloudTrail delegated
+administrator.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").register_organization_delegated_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.register_organization_delegated_admin)
+
+```python title="Method definition"
+def register_organization_delegated_admin(
+    self,
+    *,
+    MemberAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: RegisterOrganizationDelegatedAdminRequestRequestTypeDef = {  # (1)
+    "MemberAccountId": ...,
+}
+
+parent.register_organization_delegated_admin(**kwargs)
+```
+
+1. See [:material-code-braces: RegisterOrganizationDelegatedAdminRequestRequestTypeDef](./type_defs.md#registerorganizationdelegatedadminrequestrequesttypedef) 
+
 ### remove\_tags
 
 Removes the specified tags from a trail or event data store.
@@ -1254,6 +1317,7 @@ def update_event_data_store(
     OrganizationEnabled: bool = ...,
     RetentionPeriod: int = ...,
     TerminationProtectionEnabled: bool = ...,
+    KmsKeyId: str = ...,
 ) -> UpdateEventDataStoreResponseTypeDef:  # (2)
     ...
 ```

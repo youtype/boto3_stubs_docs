@@ -163,26 +163,6 @@ class AssociationStatusTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AssociationStatusNameType](./literals.md#associationstatusnametype) 
-## TargetLocationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import TargetLocationTypeDef
-
-def get_value() -> TargetLocationTypeDef:
-    return {
-        "Accounts": ...,
-    }
-```
-
-```python title="Definition"
-class TargetLocationTypeDef(TypedDict):
-    Accounts: NotRequired[Sequence[str]],
-    Regions: NotRequired[Sequence[str]],
-    TargetLocationMaxConcurrency: NotRequired[str],
-    TargetLocationMaxErrors: NotRequired[str],
-    ExecutionRoleName: NotRequired[str],
-```
-
 ## TargetTypeDef
 
 ```python title="Usage Example"
@@ -4343,32 +4323,6 @@ class RegisterTargetWithMaintenanceWindowRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
 2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-## RunbookTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import RunbookTypeDef
-
-def get_value() -> RunbookTypeDef:
-    return {
-        "DocumentName": ...,
-    }
-```
-
-```python title="Definition"
-class RunbookTypeDef(TypedDict):
-    DocumentName: str,
-    DocumentVersion: NotRequired[str],
-    Parameters: NotRequired[Dict[str, List[str]]],
-    TargetParameterName: NotRequired[str],
-    Targets: NotRequired[List[TargetTypeDef]],  # (1)
-    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-2. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## UpdateMaintenanceWindowTargetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6855,47 +6809,6 @@ class EffectivePatchTypeDef(TypedDict):
 
 1. See [:material-code-braces: PatchTypeDef](./type_defs.md#patchtypedef) 
 2. See [:material-code-braces: PatchStatusTypeDef](./type_defs.md#patchstatustypedef) 
-## StepExecutionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import StepExecutionTypeDef
-
-def get_value() -> StepExecutionTypeDef:
-    return {
-        "StepName": ...,
-    }
-```
-
-```python title="Definition"
-class StepExecutionTypeDef(TypedDict):
-    StepName: NotRequired[str],
-    Action: NotRequired[str],
-    TimeoutSeconds: NotRequired[int],
-    OnFailure: NotRequired[str],
-    MaxAttempts: NotRequired[int],
-    ExecutionStartTime: NotRequired[datetime],
-    ExecutionEndTime: NotRequired[datetime],
-    StepStatus: NotRequired[AutomationExecutionStatusType],  # (1)
-    ResponseCode: NotRequired[str],
-    Inputs: NotRequired[Dict[str, str]],
-    Outputs: NotRequired[Dict[str, List[str]]],
-    Response: NotRequired[str],
-    FailureMessage: NotRequired[str],
-    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (2)
-    StepExecutionId: NotRequired[str],
-    OverriddenParameters: NotRequired[Dict[str, List[str]]],
-    IsEnd: NotRequired[bool],
-    NextStep: NotRequired[str],
-    IsCritical: NotRequired[bool],
-    ValidNextSteps: NotRequired[List[str]],
-    Targets: NotRequired[List[TargetTypeDef]],  # (3)
-    TargetLocation: NotRequired[TargetLocationTypeDef],  # (4)
-```
-
-1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
-2. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
-3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-4. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## GetCommandInvocationRequestCommandExecutedWaitTypeDef
 
 ```python title="Usage Example"
@@ -7935,39 +7848,28 @@ class SendCommandRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
 4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
 5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
-## StartAutomationExecutionRequestRequestTypeDef
+## TargetLocationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import StartAutomationExecutionRequestRequestTypeDef
+from mypy_boto3_ssm.type_defs import TargetLocationTypeDef
 
-def get_value() -> StartAutomationExecutionRequestRequestTypeDef:
+def get_value() -> TargetLocationTypeDef:
     return {
-        "DocumentName": ...,
+        "Accounts": ...,
     }
 ```
 
 ```python title="Definition"
-class StartAutomationExecutionRequestRequestTypeDef(TypedDict):
-    DocumentName: str,
-    DocumentVersion: NotRequired[str],
-    Parameters: NotRequired[Mapping[str, Sequence[str]]],
-    ClientToken: NotRequired[str],
-    Mode: NotRequired[ExecutionModeType],  # (1)
-    TargetParameterName: NotRequired[str],
-    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
-    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (3)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (5)
+class TargetLocationTypeDef(TypedDict):
+    Accounts: NotRequired[Sequence[str]],
+    Regions: NotRequired[Sequence[str]],
+    TargetLocationMaxConcurrency: NotRequired[str],
+    TargetLocationMaxErrors: NotRequired[str],
+    ExecutionRoleName: NotRequired[str],
+    TargetLocationAlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (1)
 ```
 
-1. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
-2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-3. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+1. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## ListAssociationsResultTypeDef
 
 ```python title="Usage Example"
@@ -8012,89 +7914,6 @@ class DescribeMaintenanceWindowTargetsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: MaintenanceWindowTargetTypeDef](./type_defs.md#maintenancewindowtargettypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AutomationExecutionMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import AutomationExecutionMetadataTypeDef
-
-def get_value() -> AutomationExecutionMetadataTypeDef:
-    return {
-        "AutomationExecutionId": ...,
-    }
-```
-
-```python title="Definition"
-class AutomationExecutionMetadataTypeDef(TypedDict):
-    AutomationExecutionId: NotRequired[str],
-    DocumentName: NotRequired[str],
-    DocumentVersion: NotRequired[str],
-    AutomationExecutionStatus: NotRequired[AutomationExecutionStatusType],  # (1)
-    ExecutionStartTime: NotRequired[datetime],
-    ExecutionEndTime: NotRequired[datetime],
-    ExecutedBy: NotRequired[str],
-    LogFile: NotRequired[str],
-    Outputs: NotRequired[Dict[str, List[str]]],
-    Mode: NotRequired[ExecutionModeType],  # (2)
-    ParentAutomationExecutionId: NotRequired[str],
-    CurrentStepName: NotRequired[str],
-    CurrentAction: NotRequired[str],
-    FailureMessage: NotRequired[str],
-    TargetParameterName: NotRequired[str],
-    Targets: NotRequired[List[TargetTypeDef]],  # (3)
-    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
-    ResolvedTargets: NotRequired[ResolvedTargetsTypeDef],  # (4)
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    Target: NotRequired[str],
-    AutomationType: NotRequired[AutomationTypeType],  # (5)
-    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
-    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (7)
-    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (8)
-    ScheduledTime: NotRequired[datetime],
-    Runbooks: NotRequired[List[RunbookTypeDef]],  # (9)
-    OpsItemId: NotRequired[str],
-    AssociationId: NotRequired[str],
-    ChangeRequestName: NotRequired[str],
-```
-
-1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
-2. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
-3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-4. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
-5. See [:material-code-brackets: AutomationTypeType](./literals.md#automationtypetype) 
-6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
-7. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
-8. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
-9. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
-## StartChangeRequestExecutionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionRequestRequestTypeDef
-
-def get_value() -> StartChangeRequestExecutionRequestRequestTypeDef:
-    return {
-        "DocumentName": ...,
-        "Runbooks": ...,
-    }
-```
-
-```python title="Definition"
-class StartChangeRequestExecutionRequestRequestTypeDef(TypedDict):
-    DocumentName: str,
-    Runbooks: Sequence[RunbookTypeDef],  # (1)
-    ScheduledTime: NotRequired[Union[datetime, str]],
-    DocumentVersion: NotRequired[str],
-    Parameters: NotRequired[Mapping[str, Sequence[str]]],
-    ChangeRequestName: NotRequired[str],
-    ClientToken: NotRequired[str],
-    AutoApprove: NotRequired[bool],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-    ScheduledEndTime: NotRequired[Union[datetime, str]],
-    ChangeDetails: NotRequired[str],
-```
-
-1. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DescribeAssociationExecutionTargetsResultTypeDef
 
 ```python title="Usage Example"
@@ -8437,87 +8256,6 @@ class DescribeEffectivePatchesForPatchBaselineResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: EffectivePatchTypeDef](./type_defs.md#effectivepatchtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AutomationExecutionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import AutomationExecutionTypeDef
-
-def get_value() -> AutomationExecutionTypeDef:
-    return {
-        "AutomationExecutionId": ...,
-    }
-```
-
-```python title="Definition"
-class AutomationExecutionTypeDef(TypedDict):
-    AutomationExecutionId: NotRequired[str],
-    DocumentName: NotRequired[str],
-    DocumentVersion: NotRequired[str],
-    ExecutionStartTime: NotRequired[datetime],
-    ExecutionEndTime: NotRequired[datetime],
-    AutomationExecutionStatus: NotRequired[AutomationExecutionStatusType],  # (1)
-    StepExecutions: NotRequired[List[StepExecutionTypeDef]],  # (2)
-    StepExecutionsTruncated: NotRequired[bool],
-    Parameters: NotRequired[Dict[str, List[str]]],
-    Outputs: NotRequired[Dict[str, List[str]]],
-    FailureMessage: NotRequired[str],
-    Mode: NotRequired[ExecutionModeType],  # (3)
-    ParentAutomationExecutionId: NotRequired[str],
-    ExecutedBy: NotRequired[str],
-    CurrentStepName: NotRequired[str],
-    CurrentAction: NotRequired[str],
-    TargetParameterName: NotRequired[str],
-    Targets: NotRequired[List[TargetTypeDef]],  # (4)
-    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
-    ResolvedTargets: NotRequired[ResolvedTargetsTypeDef],  # (5)
-    MaxConcurrency: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    Target: NotRequired[str],
-    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (6)
-    ProgressCounters: NotRequired[ProgressCountersTypeDef],  # (7)
-    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (8)
-    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (9)
-    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (10)
-    ScheduledTime: NotRequired[datetime],
-    Runbooks: NotRequired[List[RunbookTypeDef]],  # (11)
-    OpsItemId: NotRequired[str],
-    AssociationId: NotRequired[str],
-    ChangeRequestName: NotRequired[str],
-```
-
-1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
-2. See [:material-code-braces: StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef) 
-3. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
-4. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-5. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
-6. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-7. See [:material-code-braces: ProgressCountersTypeDef](./type_defs.md#progresscounterstypedef) 
-8. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
-9. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
-10. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
-11. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
-## DescribeAutomationStepExecutionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsResultTypeDef
-
-def get_value() -> DescribeAutomationStepExecutionsResultTypeDef:
-    return {
-        "StepExecutions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAutomationStepExecutionsResultTypeDef(TypedDict):
-    StepExecutions: List[StepExecutionTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InventoryAggregatorTypeDef
 
 ```python title="Usage Example"
@@ -8560,220 +8298,6 @@ class DescribeInstanceInformationResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceInformationTypeDef](./type_defs.md#instanceinformationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AssociationDescriptionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import AssociationDescriptionTypeDef
-
-def get_value() -> AssociationDescriptionTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class AssociationDescriptionTypeDef(TypedDict):
-    Name: NotRequired[str],
-    InstanceId: NotRequired[str],
-    AssociationVersion: NotRequired[str],
-    Date: NotRequired[datetime],
-    LastUpdateAssociationDate: NotRequired[datetime],
-    Status: NotRequired[AssociationStatusTypeDef],  # (1)
-    Overview: NotRequired[AssociationOverviewTypeDef],  # (2)
-    DocumentVersion: NotRequired[str],
-    AutomationTargetParameterName: NotRequired[str],
-    Parameters: NotRequired[Dict[str, List[str]]],
-    AssociationId: NotRequired[str],
-    Targets: NotRequired[List[TargetTypeDef]],  # (3)
-    ScheduleExpression: NotRequired[str],
-    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (4)
-    LastExecutionDate: NotRequired[datetime],
-    LastSuccessfulExecutionDate: NotRequired[datetime],
-    AssociationName: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (5)
-    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (6)
-    ApplyOnlyAtCronInterval: NotRequired[bool],
-    CalendarNames: NotRequired[List[str]],
-    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (7)
-    ScheduleOffset: NotRequired[int],
-    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
-    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (8)
-    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (9)
-```
-
-1. See [:material-code-braces: AssociationStatusTypeDef](./type_defs.md#associationstatustypedef) 
-2. See [:material-code-braces: AssociationOverviewTypeDef](./type_defs.md#associationoverviewtypedef) 
-3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-4. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
-5. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
-6. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
-7. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-8. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
-9. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
-## AssociationVersionInfoTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import AssociationVersionInfoTypeDef
-
-def get_value() -> AssociationVersionInfoTypeDef:
-    return {
-        "AssociationId": ...,
-    }
-```
-
-```python title="Definition"
-class AssociationVersionInfoTypeDef(TypedDict):
-    AssociationId: NotRequired[str],
-    AssociationVersion: NotRequired[str],
-    CreatedDate: NotRequired[datetime],
-    Name: NotRequired[str],
-    DocumentVersion: NotRequired[str],
-    Parameters: NotRequired[Dict[str, List[str]]],
-    Targets: NotRequired[List[TargetTypeDef]],  # (1)
-    ScheduleExpression: NotRequired[str],
-    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
-    AssociationName: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
-    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
-    ApplyOnlyAtCronInterval: NotRequired[bool],
-    CalendarNames: NotRequired[List[str]],
-    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (5)
-    ScheduleOffset: NotRequired[int],
-    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
-```
-
-1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
-3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
-4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
-5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-## CreateAssociationBatchRequestEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import CreateAssociationBatchRequestEntryTypeDef
-
-def get_value() -> CreateAssociationBatchRequestEntryTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAssociationBatchRequestEntryTypeDef(TypedDict):
-    Name: str,
-    InstanceId: NotRequired[str],
-    Parameters: NotRequired[Mapping[str, Sequence[str]]],
-    AutomationTargetParameterName: NotRequired[str],
-    DocumentVersion: NotRequired[str],
-    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
-    ScheduleExpression: NotRequired[str],
-    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
-    AssociationName: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
-    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
-    ApplyOnlyAtCronInterval: NotRequired[bool],
-    CalendarNames: NotRequired[Sequence[str]],
-    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
-    ScheduleOffset: NotRequired[int],
-    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
-    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
-```
-
-1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
-3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
-4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
-5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
-## CreateAssociationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import CreateAssociationRequestRequestTypeDef
-
-def get_value() -> CreateAssociationRequestRequestTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAssociationRequestRequestTypeDef(TypedDict):
-    Name: str,
-    DocumentVersion: NotRequired[str],
-    InstanceId: NotRequired[str],
-    Parameters: NotRequired[Mapping[str, Sequence[str]]],
-    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
-    ScheduleExpression: NotRequired[str],
-    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
-    AssociationName: NotRequired[str],
-    AutomationTargetParameterName: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
-    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
-    ApplyOnlyAtCronInterval: NotRequired[bool],
-    CalendarNames: NotRequired[Sequence[str]],
-    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
-    ScheduleOffset: NotRequired[int],
-    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (6)
-    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (7)
-```
-
-1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
-3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
-4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
-5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-7. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
-## UpdateAssociationRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import UpdateAssociationRequestRequestTypeDef
-
-def get_value() -> UpdateAssociationRequestRequestTypeDef:
-    return {
-        "AssociationId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAssociationRequestRequestTypeDef(TypedDict):
-    AssociationId: str,
-    Parameters: NotRequired[Mapping[str, Sequence[str]]],
-    DocumentVersion: NotRequired[str],
-    ScheduleExpression: NotRequired[str],
-    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (1)
-    Name: NotRequired[str],
-    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
-    AssociationName: NotRequired[str],
-    AssociationVersion: NotRequired[str],
-    AutomationTargetParameterName: NotRequired[str],
-    MaxErrors: NotRequired[str],
-    MaxConcurrency: NotRequired[str],
-    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
-    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
-    ApplyOnlyAtCronInterval: NotRequired[bool],
-    CalendarNames: NotRequired[Sequence[str]],
-    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
-    ScheduleOffset: NotRequired[int],
-    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
-    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
-```
-
-1. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
-2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
-3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
-4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
-5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
-6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## InstanceAssociationStatusInfoTypeDef
 
 ```python title="Usage Example"
@@ -9200,28 +8724,322 @@ class DescribeMaintenanceWindowTasksResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: MaintenanceWindowTaskTypeDef](./type_defs.md#maintenancewindowtasktypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeAutomationExecutionsResultTypeDef
+## AssociationDescriptionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsResultTypeDef
+from mypy_boto3_ssm.type_defs import AssociationDescriptionTypeDef
 
-def get_value() -> DescribeAutomationExecutionsResultTypeDef:
+def get_value() -> AssociationDescriptionTypeDef:
     return {
-        "AutomationExecutionMetadataList": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "Name": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeAutomationExecutionsResultTypeDef(TypedDict):
-    AutomationExecutionMetadataList: List[AutomationExecutionMetadataTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class AssociationDescriptionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    InstanceId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    Date: NotRequired[datetime],
+    LastUpdateAssociationDate: NotRequired[datetime],
+    Status: NotRequired[AssociationStatusTypeDef],  # (1)
+    Overview: NotRequired[AssociationOverviewTypeDef],  # (2)
+    DocumentVersion: NotRequired[str],
+    AutomationTargetParameterName: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    AssociationId: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (3)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (4)
+    LastExecutionDate: NotRequired[datetime],
+    LastSuccessfulExecutionDate: NotRequired[datetime],
+    AssociationName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (5)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (6)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[List[str]],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (7)
+    ScheduleOffset: NotRequired[int],
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (8)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (9)
 ```
 
-1. See [:material-code-braces: AutomationExecutionMetadataTypeDef](./type_defs.md#automationexecutionmetadatatypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AssociationStatusTypeDef](./type_defs.md#associationstatustypedef) 
+2. See [:material-code-braces: AssociationOverviewTypeDef](./type_defs.md#associationoverviewtypedef) 
+3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+4. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+5. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+6. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+7. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+8. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+9. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+## AssociationVersionInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import AssociationVersionInfoTypeDef
+
+def get_value() -> AssociationVersionInfoTypeDef:
+    return {
+        "AssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class AssociationVersionInfoTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    Name: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
+    AssociationName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[List[str]],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+## CreateAssociationBatchRequestEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import CreateAssociationBatchRequestEntryTypeDef
+
+def get_value() -> CreateAssociationBatchRequestEntryTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAssociationBatchRequestEntryTypeDef(TypedDict):
+    Name: str,
+    InstanceId: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    AutomationTargetParameterName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
+    AssociationName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[Sequence[str]],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
+    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+## CreateAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import CreateAssociationRequestRequestTypeDef
+
+def get_value() -> CreateAssociationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAssociationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DocumentVersion: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
+    AssociationName: NotRequired[str],
+    AutomationTargetParameterName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[Sequence[str]],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
+    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+## RunbookTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import RunbookTypeDef
+
+def get_value() -> RunbookTypeDef:
+    return {
+        "DocumentName": ...,
+    }
+```
+
+```python title="Definition"
+class RunbookTypeDef(TypedDict):
+    DocumentName: str,
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+## StartAutomationExecutionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import StartAutomationExecutionRequestRequestTypeDef
+
+def get_value() -> StartAutomationExecutionRequestRequestTypeDef:
+    return {
+        "DocumentName": ...,
+    }
+```
+
+```python title="Definition"
+class StartAutomationExecutionRequestRequestTypeDef(TypedDict):
+    DocumentName: str,
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    ClientToken: NotRequired[str],
+    Mode: NotRequired[ExecutionModeType],  # (1)
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
+    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+## StepExecutionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import StepExecutionTypeDef
+
+def get_value() -> StepExecutionTypeDef:
+    return {
+        "StepName": ...,
+    }
+```
+
+```python title="Definition"
+class StepExecutionTypeDef(TypedDict):
+    StepName: NotRequired[str],
+    Action: NotRequired[str],
+    TimeoutSeconds: NotRequired[int],
+    OnFailure: NotRequired[str],
+    MaxAttempts: NotRequired[int],
+    ExecutionStartTime: NotRequired[datetime],
+    ExecutionEndTime: NotRequired[datetime],
+    StepStatus: NotRequired[AutomationExecutionStatusType],  # (1)
+    ResponseCode: NotRequired[str],
+    Inputs: NotRequired[Dict[str, str]],
+    Outputs: NotRequired[Dict[str, List[str]]],
+    Response: NotRequired[str],
+    FailureMessage: NotRequired[str],
+    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (2)
+    StepExecutionId: NotRequired[str],
+    OverriddenParameters: NotRequired[Dict[str, List[str]]],
+    IsEnd: NotRequired[bool],
+    NextStep: NotRequired[str],
+    IsCritical: NotRequired[bool],
+    ValidNextSteps: NotRequired[List[str]],
+    Targets: NotRequired[List[TargetTypeDef]],  # (3)
+    TargetLocation: NotRequired[TargetLocationTypeDef],  # (4)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (5)
+```
+
+1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
+2. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+4. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+5. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+## UpdateAssociationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import UpdateAssociationRequestRequestTypeDef
+
+def get_value() -> UpdateAssociationRequestRequestTypeDef:
+    return {
+        "AssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAssociationRequestRequestTypeDef(TypedDict):
+    AssociationId: str,
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    DocumentVersion: NotRequired[str],
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (1)
+    Name: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
+    AssociationName: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    AutomationTargetParameterName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[Sequence[str]],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+    ScheduleOffset: NotRequired[int],
+    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
 ## GetMaintenanceWindowTaskResultTypeDef
 
 ```python title="Usage Example"
@@ -9481,26 +9299,137 @@ class ListDocumentMetadataHistoryResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DocumentMetadataResponseInfoTypeDef](./type_defs.md#documentmetadataresponseinfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetAutomationExecutionResultTypeDef
+## DescribeInstanceAssociationsStatusResultTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import GetAutomationExecutionResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusResultTypeDef
 
-def get_value() -> GetAutomationExecutionResultTypeDef:
+def get_value() -> DescribeInstanceAssociationsStatusResultTypeDef:
     return {
-        "AutomationExecution": ...,
+        "InstanceAssociationStatusInfos": ...,
+        "NextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetAutomationExecutionResultTypeDef(TypedDict):
-    AutomationExecution: AutomationExecutionTypeDef,  # (1)
+class DescribeInstanceAssociationsStatusResultTypeDef(TypedDict):
+    InstanceAssociationStatusInfos: List[InstanceAssociationStatusInfoTypeDef],  # (1)
+    NextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef) 
+1. See [:material-code-braces: InstanceAssociationStatusInfoTypeDef](./type_defs.md#instanceassociationstatusinfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInventoryDeletionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsResultTypeDef
+
+def get_value() -> DescribeInventoryDeletionsResultTypeDef:
+    return {
+        "InventoryDeletions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInventoryDeletionsResultTypeDef(TypedDict):
+    InventoryDeletions: List[InventoryDeletionStatusItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InventoryDeletionStatusItemTypeDef](./type_defs.md#inventorydeletionstatusitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PatchRuleGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import PatchRuleGroupTypeDef
+
+def get_value() -> PatchRuleGroupTypeDef:
+    return {
+        "PatchRules": ...,
+    }
+```
+
+```python title="Definition"
+class PatchRuleGroupTypeDef(TypedDict):
+    PatchRules: Sequence[PatchRuleTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PatchRuleTypeDef](./type_defs.md#patchruletypedef) 
+## CreateResourceDataSyncRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import CreateResourceDataSyncRequestRequestTypeDef
+
+def get_value() -> CreateResourceDataSyncRequestRequestTypeDef:
+    return {
+        "SyncName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateResourceDataSyncRequestRequestTypeDef(TypedDict):
+    SyncName: str,
+    S3Destination: NotRequired[ResourceDataSyncS3DestinationTypeDef],  # (1)
+    SyncType: NotRequired[str],
+    SyncSource: NotRequired[ResourceDataSyncSourceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef) 
+2. See [:material-code-braces: ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef) 
+## UpdateResourceDataSyncRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import UpdateResourceDataSyncRequestRequestTypeDef
+
+def get_value() -> UpdateResourceDataSyncRequestRequestTypeDef:
+    return {
+        "SyncName": ...,
+        "SyncType": ...,
+        "SyncSource": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResourceDataSyncRequestRequestTypeDef(TypedDict):
+    SyncName: str,
+    SyncType: str,
+    SyncSource: ResourceDataSyncSourceTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef) 
+## ResourceDataSyncItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ResourceDataSyncItemTypeDef
+
+def get_value() -> ResourceDataSyncItemTypeDef:
+    return {
+        "SyncName": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceDataSyncItemTypeDef(TypedDict):
+    SyncName: NotRequired[str],
+    SyncType: NotRequired[str],
+    SyncSource: NotRequired[ResourceDataSyncSourceWithStateTypeDef],  # (1)
+    S3Destination: NotRequired[ResourceDataSyncS3DestinationTypeDef],  # (2)
+    LastSyncTime: NotRequired[datetime],
+    LastSuccessfulSyncTime: NotRequired[datetime],
+    SyncLastModifiedTime: NotRequired[datetime],
+    LastStatus: NotRequired[LastResourceDataSyncStatusType],  # (3)
+    SyncCreatedTime: NotRequired[datetime],
+    LastSyncStatusMessage: NotRequired[str],
+```
+
+1. See [:material-code-braces: ResourceDataSyncSourceWithStateTypeDef](./type_defs.md#resourcedatasyncsourcewithstatetypedef) 
+2. See [:material-code-braces: ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef) 
+3. See [:material-code-brackets: LastResourceDataSyncStatusType](./literals.md#lastresourcedatasyncstatustype) 
 ## CreateAssociationResultTypeDef
 
 ```python title="Usage Example"
@@ -9640,160 +9569,170 @@ class FailedCreateAssociationTypeDef(TypedDict):
 
 1. See [:material-code-braces: CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef) 
 2. See [:material-code-brackets: FaultType](./literals.md#faulttype) 
-## DescribeInstanceAssociationsStatusResultTypeDef
+## AutomationExecutionMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusResultTypeDef
+from mypy_boto3_ssm.type_defs import AutomationExecutionMetadataTypeDef
 
-def get_value() -> DescribeInstanceAssociationsStatusResultTypeDef:
+def get_value() -> AutomationExecutionMetadataTypeDef:
     return {
-        "InstanceAssociationStatusInfos": ...,
+        "AutomationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class AutomationExecutionMetadataTypeDef(TypedDict):
+    AutomationExecutionId: NotRequired[str],
+    DocumentName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    AutomationExecutionStatus: NotRequired[AutomationExecutionStatusType],  # (1)
+    ExecutionStartTime: NotRequired[datetime],
+    ExecutionEndTime: NotRequired[datetime],
+    ExecutedBy: NotRequired[str],
+    LogFile: NotRequired[str],
+    Outputs: NotRequired[Dict[str, List[str]]],
+    Mode: NotRequired[ExecutionModeType],  # (2)
+    ParentAutomationExecutionId: NotRequired[str],
+    CurrentStepName: NotRequired[str],
+    CurrentAction: NotRequired[str],
+    FailureMessage: NotRequired[str],
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (3)
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+    ResolvedTargets: NotRequired[ResolvedTargetsTypeDef],  # (4)
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    Target: NotRequired[str],
+    AutomationType: NotRequired[AutomationTypeType],  # (5)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (7)
+    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (8)
+    ScheduledTime: NotRequired[datetime],
+    Runbooks: NotRequired[List[RunbookTypeDef]],  # (9)
+    OpsItemId: NotRequired[str],
+    AssociationId: NotRequired[str],
+    ChangeRequestName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
+2. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
+3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+4. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
+5. See [:material-code-brackets: AutomationTypeType](./literals.md#automationtypetype) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+7. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+8. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
+9. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
+## StartChangeRequestExecutionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionRequestRequestTypeDef
+
+def get_value() -> StartChangeRequestExecutionRequestRequestTypeDef:
+    return {
+        "DocumentName": ...,
+        "Runbooks": ...,
+    }
+```
+
+```python title="Definition"
+class StartChangeRequestExecutionRequestRequestTypeDef(TypedDict):
+    DocumentName: str,
+    Runbooks: Sequence[RunbookTypeDef],  # (1)
+    ScheduledTime: NotRequired[Union[datetime, str]],
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    ChangeRequestName: NotRequired[str],
+    ClientToken: NotRequired[str],
+    AutoApprove: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ScheduledEndTime: NotRequired[Union[datetime, str]],
+    ChangeDetails: NotRequired[str],
+```
+
+1. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## AutomationExecutionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import AutomationExecutionTypeDef
+
+def get_value() -> AutomationExecutionTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class AutomationExecutionTypeDef(TypedDict):
+    AutomationExecutionId: NotRequired[str],
+    DocumentName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    ExecutionStartTime: NotRequired[datetime],
+    ExecutionEndTime: NotRequired[datetime],
+    AutomationExecutionStatus: NotRequired[AutomationExecutionStatusType],  # (1)
+    StepExecutions: NotRequired[List[StepExecutionTypeDef]],  # (2)
+    StepExecutionsTruncated: NotRequired[bool],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    Outputs: NotRequired[Dict[str, List[str]]],
+    FailureMessage: NotRequired[str],
+    Mode: NotRequired[ExecutionModeType],  # (3)
+    ParentAutomationExecutionId: NotRequired[str],
+    ExecutedBy: NotRequired[str],
+    CurrentStepName: NotRequired[str],
+    CurrentAction: NotRequired[str],
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (4)
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+    ResolvedTargets: NotRequired[ResolvedTargetsTypeDef],  # (5)
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    Target: NotRequired[str],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (6)
+    ProgressCounters: NotRequired[ProgressCountersTypeDef],  # (7)
+    AlarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (8)
+    TriggeredAlarms: NotRequired[List[AlarmStateInformationTypeDef]],  # (9)
+    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (10)
+    ScheduledTime: NotRequired[datetime],
+    Runbooks: NotRequired[List[RunbookTypeDef]],  # (11)
+    OpsItemId: NotRequired[str],
+    AssociationId: NotRequired[str],
+    ChangeRequestName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
+2. See [:material-code-braces: StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef) 
+3. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
+4. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+5. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
+6. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+7. See [:material-code-braces: ProgressCountersTypeDef](./type_defs.md#progresscounterstypedef) 
+8. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+9. See [:material-code-braces: AlarmStateInformationTypeDef](./type_defs.md#alarmstateinformationtypedef) 
+10. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
+11. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
+## DescribeAutomationStepExecutionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsResultTypeDef
+
+def get_value() -> DescribeAutomationStepExecutionsResultTypeDef:
+    return {
+        "StepExecutions": ...,
         "NextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeInstanceAssociationsStatusResultTypeDef(TypedDict):
-    InstanceAssociationStatusInfos: List[InstanceAssociationStatusInfoTypeDef],  # (1)
+class DescribeAutomationStepExecutionsResultTypeDef(TypedDict):
+    StepExecutions: List[StepExecutionTypeDef],  # (1)
     NextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: InstanceAssociationStatusInfoTypeDef](./type_defs.md#instanceassociationstatusinfotypedef) 
+1. See [:material-code-braces: StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeInventoryDeletionsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsResultTypeDef
-
-def get_value() -> DescribeInventoryDeletionsResultTypeDef:
-    return {
-        "InventoryDeletions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeInventoryDeletionsResultTypeDef(TypedDict):
-    InventoryDeletions: List[InventoryDeletionStatusItemTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: InventoryDeletionStatusItemTypeDef](./type_defs.md#inventorydeletionstatusitemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PatchRuleGroupTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import PatchRuleGroupTypeDef
-
-def get_value() -> PatchRuleGroupTypeDef:
-    return {
-        "PatchRules": ...,
-    }
-```
-
-```python title="Definition"
-class PatchRuleGroupTypeDef(TypedDict):
-    PatchRules: Sequence[PatchRuleTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PatchRuleTypeDef](./type_defs.md#patchruletypedef) 
-## CreateResourceDataSyncRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import CreateResourceDataSyncRequestRequestTypeDef
-
-def get_value() -> CreateResourceDataSyncRequestRequestTypeDef:
-    return {
-        "SyncName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateResourceDataSyncRequestRequestTypeDef(TypedDict):
-    SyncName: str,
-    S3Destination: NotRequired[ResourceDataSyncS3DestinationTypeDef],  # (1)
-    SyncType: NotRequired[str],
-    SyncSource: NotRequired[ResourceDataSyncSourceTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef) 
-2. See [:material-code-braces: ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef) 
-## UpdateResourceDataSyncRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import UpdateResourceDataSyncRequestRequestTypeDef
-
-def get_value() -> UpdateResourceDataSyncRequestRequestTypeDef:
-    return {
-        "SyncName": ...,
-        "SyncType": ...,
-        "SyncSource": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateResourceDataSyncRequestRequestTypeDef(TypedDict):
-    SyncName: str,
-    SyncType: str,
-    SyncSource: ResourceDataSyncSourceTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef) 
-## ResourceDataSyncItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import ResourceDataSyncItemTypeDef
-
-def get_value() -> ResourceDataSyncItemTypeDef:
-    return {
-        "SyncName": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceDataSyncItemTypeDef(TypedDict):
-    SyncName: NotRequired[str],
-    SyncType: NotRequired[str],
-    SyncSource: NotRequired[ResourceDataSyncSourceWithStateTypeDef],  # (1)
-    S3Destination: NotRequired[ResourceDataSyncS3DestinationTypeDef],  # (2)
-    LastSyncTime: NotRequired[datetime],
-    LastSuccessfulSyncTime: NotRequired[datetime],
-    SyncLastModifiedTime: NotRequired[datetime],
-    LastStatus: NotRequired[LastResourceDataSyncStatusType],  # (3)
-    SyncCreatedTime: NotRequired[datetime],
-    LastSyncStatusMessage: NotRequired[str],
-```
-
-1. See [:material-code-braces: ResourceDataSyncSourceWithStateTypeDef](./type_defs.md#resourcedatasyncsourcewithstatetypedef) 
-2. See [:material-code-braces: ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef) 
-3. See [:material-code-brackets: LastResourceDataSyncStatusType](./literals.md#lastresourcedatasyncstatustype) 
-## CreateAssociationBatchResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm.type_defs import CreateAssociationBatchResultTypeDef
-
-def get_value() -> CreateAssociationBatchResultTypeDef:
-    return {
-        "Successful": ...,
-        "Failed": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateAssociationBatchResultTypeDef(TypedDict):
-    Successful: List[AssociationDescriptionTypeDef],  # (1)
-    Failed: List[FailedCreateAssociationTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef) 
-2. See [:material-code-braces: FailedCreateAssociationTypeDef](./type_defs.md#failedcreateassociationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BaselineOverrideTypeDef
 
 ```python title="Usage Example"
@@ -10016,6 +9955,71 @@ class ListResourceDataSyncResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourceDataSyncItemTypeDef](./type_defs.md#resourcedatasyncitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAssociationBatchResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import CreateAssociationBatchResultTypeDef
+
+def get_value() -> CreateAssociationBatchResultTypeDef:
+    return {
+        "Successful": ...,
+        "Failed": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAssociationBatchResultTypeDef(TypedDict):
+    Successful: List[AssociationDescriptionTypeDef],  # (1)
+    Failed: List[FailedCreateAssociationTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef) 
+2. See [:material-code-braces: FailedCreateAssociationTypeDef](./type_defs.md#failedcreateassociationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAutomationExecutionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsResultTypeDef
+
+def get_value() -> DescribeAutomationExecutionsResultTypeDef:
+    return {
+        "AutomationExecutionMetadataList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAutomationExecutionsResultTypeDef(TypedDict):
+    AutomationExecutionMetadataList: List[AutomationExecutionMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AutomationExecutionMetadataTypeDef](./type_defs.md#automationexecutionmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAutomationExecutionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetAutomationExecutionResultTypeDef
+
+def get_value() -> GetAutomationExecutionResultTypeDef:
+    return {
+        "AutomationExecution": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAutomationExecutionResultTypeDef(TypedDict):
+    AutomationExecution: AutomationExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeployablePatchSnapshotForInstanceRequestRequestTypeDef
 

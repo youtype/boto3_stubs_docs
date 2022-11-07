@@ -377,7 +377,9 @@ def create_cache_cluster(
     PreferredOutpostArns: Sequence[str] = ...,
     LogDeliveryConfigurations: Sequence[LogDeliveryConfigurationRequestTypeDef] = ...,  # (4)
     TransitEncryptionEnabled: bool = ...,
-) -> CreateCacheClusterResultTypeDef:  # (5)
+    NetworkType: NetworkTypeType = ...,  # (5)
+    IpDiscovery: IpDiscoveryType = ...,  # (6)
+) -> CreateCacheClusterResultTypeDef:  # (7)
     ...
 ```
 
@@ -385,7 +387,9 @@ def create_cache_cluster(
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-brackets: OutpostModeType](./literals.md#outpostmodetype) 
 4. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
-5. See [:material-code-braces: CreateCacheClusterResultTypeDef](./type_defs.md#createcacheclusterresulttypedef) 
+5. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
+6. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+7. See [:material-code-braces: CreateCacheClusterResultTypeDef](./type_defs.md#createcacheclusterresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -580,14 +584,18 @@ def create_replication_group(
     UserGroupIds: Sequence[str] = ...,
     LogDeliveryConfigurations: Sequence[LogDeliveryConfigurationRequestTypeDef] = ...,  # (3)
     DataTieringEnabled: bool = ...,
-) -> CreateReplicationGroupResultTypeDef:  # (4)
+    NetworkType: NetworkTypeType = ...,  # (4)
+    IpDiscovery: IpDiscoveryType = ...,  # (5)
+) -> CreateReplicationGroupResultTypeDef:  # (6)
     ...
 ```
 
 1. See [:material-code-braces: NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 3. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
-4. See [:material-code-braces: CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef) 
+4. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
+5. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+6. See [:material-code-braces: CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1660,7 +1668,7 @@ parent.disassociate_global_replication_group(**kwargs)
 
 ### failover\_global\_replication\_group
 
-Used to failover the primary region to a selected secondary region.
+Used to failover the primary region to a secondary region.
 
 Type annotations and code completion for `#!python boto3.client("elasticache").failover_global_replication_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.failover_global_replication_group)
@@ -1873,14 +1881,16 @@ def modify_cache_cluster(
     AuthToken: str = ...,
     AuthTokenUpdateStrategy: AuthTokenUpdateStrategyTypeType = ...,  # (2)
     LogDeliveryConfigurations: Sequence[LogDeliveryConfigurationRequestTypeDef] = ...,  # (3)
-) -> ModifyCacheClusterResultTypeDef:  # (4)
+    IpDiscovery: IpDiscoveryType = ...,  # (4)
+) -> ModifyCacheClusterResultTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: AZModeType](./literals.md#azmodetype) 
 2. See [:material-code-brackets: AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype) 
 3. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
-4. See [:material-code-braces: ModifyCacheClusterResultTypeDef](./type_defs.md#modifycacheclusterresulttypedef) 
+4. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+5. See [:material-code-braces: ModifyCacheClusterResultTypeDef](./type_defs.md#modifycacheclusterresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2028,13 +2038,15 @@ def modify_replication_group(
     UserGroupIdsToRemove: Sequence[str] = ...,
     RemoveUserGroups: bool = ...,
     LogDeliveryConfigurations: Sequence[LogDeliveryConfigurationRequestTypeDef] = ...,  # (2)
-) -> ModifyReplicationGroupResultTypeDef:  # (3)
+    IpDiscovery: IpDiscoveryType = ...,  # (3)
+) -> ModifyReplicationGroupResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype) 
 2. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
-3. See [:material-code-braces: ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef) 
+3. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+4. See [:material-code-braces: ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -129,6 +129,7 @@ def get_value() -> AccessPropertyValueType:
 - [ModificationResourceEnumType](./literals.md#modificationresourceenumtype)
 - [ModificationStateEnumType](./literals.md#modificationstateenumtype)
 - [OperatingSystemTypeType](./literals.md#operatingsystemtypetype)
+- [ProtocolType](./literals.md#protocoltype)
 - [ReconnectEnumType](./literals.md#reconnectenumtype)
 - [RunningModeType](./literals.md#runningmodetype)
 - [SamlStatusEnumType](./literals.md#samlstatusenumtype)

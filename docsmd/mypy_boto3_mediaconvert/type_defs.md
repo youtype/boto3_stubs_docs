@@ -3020,6 +3020,7 @@ class ColorCorrectorTypeDef(TypedDict):
     Hue: NotRequired[int],
     SampleRangeConversion: NotRequired[SampleRangeConversionType],  # (3)
     Saturation: NotRequired[int],
+    SdrReferenceWhiteLevel: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ColorSpaceConversionType](./literals.md#colorspaceconversiontype) 
@@ -3606,6 +3607,7 @@ def get_value() -> ImageInserterTypeDef:
 ```python title="Definition"
 class ImageInserterTypeDef(TypedDict):
     InsertableImages: NotRequired[Sequence[InsertableImageTypeDef]],  # (1)
+    SdrReferenceWhiteLevel: NotRequired[int],
 ```
 
 1. See [:material-code-braces: InsertableImageTypeDef](./type_defs.md#insertableimagetypedef) 

@@ -55,6 +55,117 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 ## Methods
 
 
+### batch\_create\_custom\_vocabulary\_item
+
+Batch create custom vocabulary item for the specified locale in the specified
+bot.
+
+Type annotations and code completion for `#!python boto3.client("lexv2-models").batch_create_custom_vocabulary_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.batch_create_custom_vocabulary_item)
+
+```python title="Method definition"
+def batch_create_custom_vocabulary_item(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    customVocabularyItemList: Sequence[NewCustomVocabularyItemTypeDef],  # (1)
+) -> BatchCreateCustomVocabularyItemResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: NewCustomVocabularyItemTypeDef](./type_defs.md#newcustomvocabularyitemtypedef) 
+2. See [:material-code-braces: BatchCreateCustomVocabularyItemResponseTypeDef](./type_defs.md#batchcreatecustomvocabularyitemresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchCreateCustomVocabularyItemRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "customVocabularyItemList": ...,
+}
+
+parent.batch_create_custom_vocabulary_item(**kwargs)
+```
+
+1. See [:material-code-braces: BatchCreateCustomVocabularyItemRequestRequestTypeDef](./type_defs.md#batchcreatecustomvocabularyitemrequestrequesttypedef) 
+
+### batch\_delete\_custom\_vocabulary\_item
+
+Batch delete custom vocabulary item for the specified locale in the specified
+bot.
+
+Type annotations and code completion for `#!python boto3.client("lexv2-models").batch_delete_custom_vocabulary_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.batch_delete_custom_vocabulary_item)
+
+```python title="Method definition"
+def batch_delete_custom_vocabulary_item(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    customVocabularyItemList: Sequence[CustomVocabularyEntryIdTypeDef],  # (1)
+) -> BatchDeleteCustomVocabularyItemResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: CustomVocabularyEntryIdTypeDef](./type_defs.md#customvocabularyentryidtypedef) 
+2. See [:material-code-braces: BatchDeleteCustomVocabularyItemResponseTypeDef](./type_defs.md#batchdeletecustomvocabularyitemresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteCustomVocabularyItemRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "customVocabularyItemList": ...,
+}
+
+parent.batch_delete_custom_vocabulary_item(**kwargs)
+```
+
+1. See [:material-code-braces: BatchDeleteCustomVocabularyItemRequestRequestTypeDef](./type_defs.md#batchdeletecustomvocabularyitemrequestrequesttypedef) 
+
+### batch\_update\_custom\_vocabulary\_item
+
+Batch update custom vocabulary item for the specified locale in the specified
+bot.
+
+Type annotations and code completion for `#!python boto3.client("lexv2-models").batch_update_custom_vocabulary_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.batch_update_custom_vocabulary_item)
+
+```python title="Method definition"
+def batch_update_custom_vocabulary_item(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    customVocabularyItemList: Sequence[CustomVocabularyItemTypeDef],  # (1)
+) -> BatchUpdateCustomVocabularyItemResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: CustomVocabularyItemTypeDef](./type_defs.md#customvocabularyitemtypedef) 
+2. See [:material-code-braces: BatchUpdateCustomVocabularyItemResponseTypeDef](./type_defs.md#batchupdatecustomvocabularyitemresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchUpdateCustomVocabularyItemRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "customVocabularyItemList": ...,
+}
+
+parent.batch_update_custom_vocabulary_item(**kwargs)
+```
+
+1. See [:material-code-braces: BatchUpdateCustomVocabularyItemRequestRequestTypeDef](./type_defs.md#batchupdatecustomvocabularyitemrequestrequesttypedef) 
+
 ### build\_bot\_locale
 
 Builds a bot, its intents, and its slot types into a specific locale.
@@ -1643,6 +1754,41 @@ parent.list_built_in_slot_types(**kwargs)
 ```
 
 1. See [:material-code-braces: ListBuiltInSlotTypesRequestRequestTypeDef](./type_defs.md#listbuiltinslottypesrequestrequesttypedef) 
+
+### list\_custom\_vocabulary\_items
+
+List custom vocabulary items for the specified locale in the specified bot.
+
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_custom_vocabulary_items` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_custom_vocabulary_items)
+
+```python title="Method definition"
+def list_custom_vocabulary_items(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListCustomVocabularyItemsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListCustomVocabularyItemsResponseTypeDef](./type_defs.md#listcustomvocabularyitemsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomVocabularyItemsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
+
+parent.list_custom_vocabulary_items(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomVocabularyItemsRequestRequestTypeDef](./type_defs.md#listcustomvocabularyitemsrequestrequesttypedef) 
 
 ### list\_exports
 

@@ -1198,6 +1198,23 @@ class MemoryMiBRequestTypeDef(TypedDict):
     Max: NotRequired[int],
 ```
 
+## NetworkBandwidthGbpsRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import NetworkBandwidthGbpsRequestTypeDef
+
+def get_value() -> NetworkBandwidthGbpsRequestTypeDef:
+    return {
+        "Min": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkBandwidthGbpsRequestTypeDef(TypedDict):
+    Min: NotRequired[float],
+    Max: NotRequired[float],
+```
+
 ## NetworkInterfaceCountRequestTypeDef
 
 ```python title="Usage Example"
@@ -2548,6 +2565,8 @@ class InstanceRequirementsTypeDef(TypedDict):
     AcceleratorManufacturers: NotRequired[Sequence[AcceleratorManufacturerType]],  # (15)
     AcceleratorNames: NotRequired[Sequence[AcceleratorNameType]],  # (16)
     AcceleratorTotalMemoryMiB: NotRequired[AcceleratorTotalMemoryMiBRequestTypeDef],  # (17)
+    NetworkBandwidthGbps: NotRequired[NetworkBandwidthGbpsRequestTypeDef],  # (18)
+    AllowedInstanceTypes: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-braces: VCpuCountRequestTypeDef](./type_defs.md#vcpucountrequesttypedef) 
@@ -2567,6 +2586,7 @@ class InstanceRequirementsTypeDef(TypedDict):
 15. See [:material-code-brackets: AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype) 
 16. See [:material-code-brackets: AcceleratorNameType](./literals.md#acceleratornametype) 
 17. See [:material-code-braces: AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef) 
+18. See [:material-code-braces: NetworkBandwidthGbpsRequestTypeDef](./type_defs.md#networkbandwidthgbpsrequesttypedef) 
 ## PutWarmPoolTypeRequestTypeDef
 
 ```python title="Usage Example"

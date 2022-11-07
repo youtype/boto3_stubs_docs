@@ -376,6 +376,21 @@ OperatingSystemTypeType = Literal[
     "WINDOWS",
 ]
 ```
+## ProtocolType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import ProtocolType
+
+def get_value() -> ProtocolType:
+    return "PCOIP"
+```
+
+```python title="Definition"
+ProtocolType = Literal[
+    "PCOIP",
+    "WSP",
+]
+```
 ## ReconnectEnumType
 
 ```python title="Usage Example"

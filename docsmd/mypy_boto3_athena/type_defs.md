@@ -863,26 +863,20 @@ class QueryExecutionContextTypeDef(TypedDict):
     Catalog: NotRequired[str],
 ```
 
-## QueryExecutionStatisticsTypeDef
+## ResultReuseInformationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_athena.type_defs import QueryExecutionStatisticsTypeDef
+from mypy_boto3_athena.type_defs import ResultReuseInformationTypeDef
 
-def get_value() -> QueryExecutionStatisticsTypeDef:
+def get_value() -> ResultReuseInformationTypeDef:
     return {
-        "EngineExecutionTimeInMillis": ...,
+        "ReusedPreviousResult": ...,
     }
 ```
 
 ```python title="Definition"
-class QueryExecutionStatisticsTypeDef(TypedDict):
-    EngineExecutionTimeInMillis: NotRequired[int],
-    DataScannedInBytes: NotRequired[int],
-    DataManifestLocation: NotRequired[str],
-    TotalExecutionTimeInMillis: NotRequired[int],
-    QueryQueueTimeInMillis: NotRequired[int],
-    QueryPlanningTimeInMillis: NotRequired[int],
-    ServiceProcessingTimeInMillis: NotRequired[int],
+class ResultReuseInformationTypeDef(TypedDict):
+    ReusedPreviousResult: bool,
 ```
 
 ## QueryRuntimeStatisticsRowsTypeDef
@@ -970,6 +964,23 @@ class QueryStageTypeDef(TypedDict):
 
 1. See [:material-code-braces: QueryStagePlanNodeTypeDef](./type_defs.md#querystageplannodetypedef) 
 2. See [:material-code-braces: QueryStageTypeDef](./type_defs.md#querystagetypedef) 
+## ResultReuseByAgeConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ResultReuseByAgeConfigurationTypeDef
+
+def get_value() -> ResultReuseByAgeConfigurationTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class ResultReuseByAgeConfigurationTypeDef(TypedDict):
+    Enabled: bool,
+    MaxAgeInMinutes: NotRequired[int],
+```
+
 ## StopQueryExecutionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1701,6 +1712,30 @@ class ListPreparedStatementsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: PreparedStatementSummaryTypeDef](./type_defs.md#preparedstatementsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## QueryExecutionStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import QueryExecutionStatisticsTypeDef
+
+def get_value() -> QueryExecutionStatisticsTypeDef:
+    return {
+        "EngineExecutionTimeInMillis": ...,
+    }
+```
+
+```python title="Definition"
+class QueryExecutionStatisticsTypeDef(TypedDict):
+    EngineExecutionTimeInMillis: NotRequired[int],
+    DataScannedInBytes: NotRequired[int],
+    DataManifestLocation: NotRequired[str],
+    TotalExecutionTimeInMillis: NotRequired[int],
+    QueryQueueTimeInMillis: NotRequired[int],
+    QueryPlanningTimeInMillis: NotRequired[int],
+    ServiceProcessingTimeInMillis: NotRequired[int],
+    ResultReuseInformation: NotRequired[ResultReuseInformationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ResultReuseInformationTypeDef](./type_defs.md#resultreuseinformationtypedef) 
 ## QueryRuntimeStatisticsTypeDef
 
 ```python title="Usage Example"
@@ -1722,6 +1757,23 @@ class QueryRuntimeStatisticsTypeDef(TypedDict):
 1. See [:material-code-braces: QueryRuntimeStatisticsTimelineTypeDef](./type_defs.md#queryruntimestatisticstimelinetypedef) 
 2. See [:material-code-braces: QueryRuntimeStatisticsRowsTypeDef](./type_defs.md#queryruntimestatisticsrowstypedef) 
 3. See [:material-code-braces: QueryStageTypeDef](./type_defs.md#querystagetypedef) 
+## ResultReuseConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ResultReuseConfigurationTypeDef
+
+def get_value() -> ResultReuseConfigurationTypeDef:
+    return {
+        "ResultReuseByAgeConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ResultReuseConfigurationTypeDef(TypedDict):
+    ResultReuseByAgeConfiguration: NotRequired[ResultReuseByAgeConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ResultReuseByAgeConfigurationTypeDef](./type_defs.md#resultreusebyageconfigurationtypedef) 
 ## GetTableMetadataOutputTypeDef
 
 ```python title="Usage Example"
@@ -1783,60 +1835,6 @@ class ResultSetTypeDef(TypedDict):
 
 1. See [:material-code-braces: RowTypeDef](./type_defs.md#rowtypedef) 
 2. See [:material-code-braces: ResultSetMetadataTypeDef](./type_defs.md#resultsetmetadatatypedef) 
-## QueryExecutionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_athena.type_defs import QueryExecutionTypeDef
-
-def get_value() -> QueryExecutionTypeDef:
-    return {
-        "QueryExecutionId": ...,
-    }
-```
-
-```python title="Definition"
-class QueryExecutionTypeDef(TypedDict):
-    QueryExecutionId: NotRequired[str],
-    Query: NotRequired[str],
-    StatementType: NotRequired[StatementTypeType],  # (1)
-    ResultConfiguration: NotRequired[ResultConfigurationTypeDef],  # (2)
-    QueryExecutionContext: NotRequired[QueryExecutionContextTypeDef],  # (3)
-    Status: NotRequired[QueryExecutionStatusTypeDef],  # (4)
-    Statistics: NotRequired[QueryExecutionStatisticsTypeDef],  # (5)
-    WorkGroup: NotRequired[str],
-    EngineVersion: NotRequired[EngineVersionTypeDef],  # (6)
-    ExecutionParameters: NotRequired[List[str]],
-```
-
-1. See [:material-code-brackets: StatementTypeType](./literals.md#statementtypetype) 
-2. See [:material-code-braces: ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef) 
-3. See [:material-code-braces: QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef) 
-4. See [:material-code-braces: QueryExecutionStatusTypeDef](./type_defs.md#queryexecutionstatustypedef) 
-5. See [:material-code-braces: QueryExecutionStatisticsTypeDef](./type_defs.md#queryexecutionstatisticstypedef) 
-6. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
-## StartQueryExecutionInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_athena.type_defs import StartQueryExecutionInputRequestTypeDef
-
-def get_value() -> StartQueryExecutionInputRequestTypeDef:
-    return {
-        "QueryString": ...,
-    }
-```
-
-```python title="Definition"
-class StartQueryExecutionInputRequestTypeDef(TypedDict):
-    QueryString: str,
-    ClientRequestToken: NotRequired[str],
-    QueryExecutionContext: NotRequired[QueryExecutionContextTypeDef],  # (1)
-    ResultConfiguration: NotRequired[ResultConfigurationTypeDef],  # (2)
-    WorkGroup: NotRequired[str],
-    ExecutionParameters: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef) 
-2. See [:material-code-braces: ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef) 
 ## WorkGroupConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1926,6 +1924,64 @@ class GetQueryRuntimeStatisticsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: QueryRuntimeStatisticsTypeDef](./type_defs.md#queryruntimestatisticstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## QueryExecutionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import QueryExecutionTypeDef
+
+def get_value() -> QueryExecutionTypeDef:
+    return {
+        "QueryExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class QueryExecutionTypeDef(TypedDict):
+    QueryExecutionId: NotRequired[str],
+    Query: NotRequired[str],
+    StatementType: NotRequired[StatementTypeType],  # (1)
+    ResultConfiguration: NotRequired[ResultConfigurationTypeDef],  # (2)
+    ResultReuseConfiguration: NotRequired[ResultReuseConfigurationTypeDef],  # (3)
+    QueryExecutionContext: NotRequired[QueryExecutionContextTypeDef],  # (4)
+    Status: NotRequired[QueryExecutionStatusTypeDef],  # (5)
+    Statistics: NotRequired[QueryExecutionStatisticsTypeDef],  # (6)
+    WorkGroup: NotRequired[str],
+    EngineVersion: NotRequired[EngineVersionTypeDef],  # (7)
+    ExecutionParameters: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: StatementTypeType](./literals.md#statementtypetype) 
+2. See [:material-code-braces: ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef) 
+3. See [:material-code-braces: ResultReuseConfigurationTypeDef](./type_defs.md#resultreuseconfigurationtypedef) 
+4. See [:material-code-braces: QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef) 
+5. See [:material-code-braces: QueryExecutionStatusTypeDef](./type_defs.md#queryexecutionstatustypedef) 
+6. See [:material-code-braces: QueryExecutionStatisticsTypeDef](./type_defs.md#queryexecutionstatisticstypedef) 
+7. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
+## StartQueryExecutionInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import StartQueryExecutionInputRequestTypeDef
+
+def get_value() -> StartQueryExecutionInputRequestTypeDef:
+    return {
+        "QueryString": ...,
+    }
+```
+
+```python title="Definition"
+class StartQueryExecutionInputRequestTypeDef(TypedDict):
+    QueryString: str,
+    ClientRequestToken: NotRequired[str],
+    QueryExecutionContext: NotRequired[QueryExecutionContextTypeDef],  # (1)
+    ResultConfiguration: NotRequired[ResultConfigurationTypeDef],  # (2)
+    WorkGroup: NotRequired[str],
+    ExecutionParameters: NotRequired[Sequence[str]],
+    ResultReuseConfiguration: NotRequired[ResultReuseConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef) 
+2. See [:material-code-braces: ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef) 
+3. See [:material-code-braces: ResultReuseConfigurationTypeDef](./type_defs.md#resultreuseconfigurationtypedef) 
 ## GetQueryResultsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1949,49 +2005,6 @@ class GetQueryResultsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResultSetTypeDef](./type_defs.md#resultsettypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchGetQueryExecutionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_athena.type_defs import BatchGetQueryExecutionOutputTypeDef
-
-def get_value() -> BatchGetQueryExecutionOutputTypeDef:
-    return {
-        "QueryExecutions": ...,
-        "UnprocessedQueryExecutionIds": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetQueryExecutionOutputTypeDef(TypedDict):
-    QueryExecutions: List[QueryExecutionTypeDef],  # (1)
-    UnprocessedQueryExecutionIds: List[UnprocessedQueryExecutionIdTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef) 
-2. See [:material-code-braces: UnprocessedQueryExecutionIdTypeDef](./type_defs.md#unprocessedqueryexecutionidtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetQueryExecutionOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_athena.type_defs import GetQueryExecutionOutputTypeDef
-
-def get_value() -> GetQueryExecutionOutputTypeDef:
-    return {
-        "QueryExecution": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetQueryExecutionOutputTypeDef(TypedDict):
-    QueryExecution: QueryExecutionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkGroupInputRequestTypeDef
 
@@ -2057,6 +2070,49 @@ class UpdateWorkGroupInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: WorkGroupConfigurationUpdatesTypeDef](./type_defs.md#workgroupconfigurationupdatestypedef) 
 2. See [:material-code-brackets: WorkGroupStateType](./literals.md#workgroupstatetype) 
+## BatchGetQueryExecutionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import BatchGetQueryExecutionOutputTypeDef
+
+def get_value() -> BatchGetQueryExecutionOutputTypeDef:
+    return {
+        "QueryExecutions": ...,
+        "UnprocessedQueryExecutionIds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetQueryExecutionOutputTypeDef(TypedDict):
+    QueryExecutions: List[QueryExecutionTypeDef],  # (1)
+    UnprocessedQueryExecutionIds: List[UnprocessedQueryExecutionIdTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef) 
+2. See [:material-code-braces: UnprocessedQueryExecutionIdTypeDef](./type_defs.md#unprocessedqueryexecutionidtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetQueryExecutionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetQueryExecutionOutputTypeDef
+
+def get_value() -> GetQueryExecutionOutputTypeDef:
+    return {
+        "QueryExecution": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetQueryExecutionOutputTypeDef(TypedDict):
+    QueryExecution: QueryExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkGroupOutputTypeDef
 
 ```python title="Usage Example"

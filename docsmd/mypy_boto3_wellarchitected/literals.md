@@ -40,6 +40,55 @@ AnswerReasonType = Literal[
     "OUT_OF_SCOPE",
 ]
 ```
+## CheckFailureReasonType
+
+```python title="Usage Example"
+from mypy_boto3_wellarchitected.literals import CheckFailureReasonType
+
+def get_value() -> CheckFailureReasonType:
+    return "ACCESS_DENIED"
+```
+
+```python title="Definition"
+CheckFailureReasonType = Literal[
+    "ACCESS_DENIED",
+    "ASSUME_ROLE_ERROR",
+    "PREMIUM_SUPPORT_REQUIRED",
+    "UNKNOWN_ERROR",
+]
+```
+## CheckProviderType
+
+```python title="Usage Example"
+from mypy_boto3_wellarchitected.literals import CheckProviderType
+
+def get_value() -> CheckProviderType:
+    return "TRUSTED_ADVISOR"
+```
+
+```python title="Definition"
+CheckProviderType = Literal[
+    "TRUSTED_ADVISOR",
+]
+```
+## CheckStatusType
+
+```python title="Usage Example"
+from mypy_boto3_wellarchitected.literals import CheckStatusType
+
+def get_value() -> CheckStatusType:
+    return "ERROR"
+```
+
+```python title="Definition"
+CheckStatusType = Literal[
+    "ERROR",
+    "FETCH_FAILED",
+    "NOT_AVAILABLE",
+    "OKAY",
+    "WARNING",
+]
+```
 ## ChoiceReasonType
 
 ```python title="Usage Example"
@@ -268,6 +317,21 @@ ShareStatusType = Literal[
     "PENDING",
     "REJECTED",
     "REVOKED",
+]
+```
+## TrustedAdvisorIntegrationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_wellarchitected.literals import TrustedAdvisorIntegrationStatusType
+
+def get_value() -> TrustedAdvisorIntegrationStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+TrustedAdvisorIntegrationStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
 ]
 ```
 ## WorkloadEnvironmentType

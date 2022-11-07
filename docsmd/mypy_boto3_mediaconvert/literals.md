@@ -1408,6 +1408,8 @@ ColorSpaceConversionType = Literal[
     "FORCE_709",
     "FORCE_HDR10",
     "FORCE_HLG_2020",
+    "FORCE_P3D65_SDR",
+    "FORCE_P3DCI",
     "NONE",
 ]
 ```
@@ -1425,6 +1427,8 @@ ColorSpaceType = Literal[
     "FOLLOW",
     "HDR10",
     "HLG_2020",
+    "P3D65_SDR",
+    "P3DCI",
     "REC_601",
     "REC_709",
 ]

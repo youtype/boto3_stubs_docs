@@ -1100,10 +1100,12 @@ class WorkspacePropertiesTypeDef(TypedDict):
     RootVolumeSizeGib: NotRequired[int],
     UserVolumeSizeGib: NotRequired[int],
     ComputeTypeName: NotRequired[ComputeType],  # (2)
+    Protocols: NotRequired[Sequence[ProtocolType]],  # (3)
 ```
 
 1. See [:material-code-brackets: RunningModeType](./literals.md#runningmodetype) 
 2. See [:material-code-brackets: ComputeType](./literals.md#computetype) 
+3. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
 ## ModifyWorkspaceStateRequestRequestTypeDef
 
 ```python title="Usage Example"

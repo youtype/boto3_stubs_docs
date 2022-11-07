@@ -37609,6 +37609,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <ul>
 <li><a href="literals/#additionalresourcetypetype">AdditionalResourceTypeType</a></li>
 <li><a href="literals/#answerreasontype">AnswerReasonType</a></li>
+<li><a href="literals/#checkfailurereasontype">CheckFailureReasonType</a></li>
+<li><a href="literals/#checkprovidertype">CheckProviderType</a></li>
+<li><a href="literals/#checkstatustype">CheckStatusType</a></li>
 <li><a href="literals/#choicereasontype">ChoiceReasonType</a></li>
 <li><a href="literals/#choicestatustype">ChoiceStatusType</a></li>
 <li><a href="literals/#differencestatustype">DifferenceStatusType</a></li>
@@ -37623,6 +37626,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#shareinvitationactiontype">ShareInvitationActionType</a></li>
 <li><a href="literals/#shareresourcetypetype">ShareResourceTypeType</a></li>
 <li><a href="literals/#sharestatustype">ShareStatusType</a></li>
+<li><a href="literals/#trustedadvisorintegrationstatustype">TrustedAdvisorIntegrationStatusType</a></li>
 <li><a href="literals/#workloadenvironmenttype">WorkloadEnvironmentType</a></li>
 <li><a href="literals/#workloadimprovementstatustype">WorkloadImprovementStatusType</a></li>
 <li><a href="literals/#wellarchitectedservicename">WellArchitectedServiceName</a></li>
@@ -37644,13 +37648,15 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#choiceanswersummarytypedef">ChoiceAnswerSummaryTypeDef</a></li>
 <li><a href="type_defs/#choiceanswertypedef">ChoiceAnswerTypeDef</a></li>
 <li><a href="type_defs/#associatelensesinputrequesttypedef">AssociateLensesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#checkdetailtypedef">CheckDetailTypeDef</a></li>
+<li><a href="type_defs/#checksummarytypedef">CheckSummaryTypeDef</a></li>
 <li><a href="type_defs/#choiceimprovementplantypedef">ChoiceImprovementPlanTypeDef</a></li>
 <li><a href="type_defs/#choiceupdatetypedef">ChoiceUpdateTypeDef</a></li>
 <li><a href="type_defs/#createlensshareinputrequesttypedef">CreateLensShareInputRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#createlensversioninputrequesttypedef">CreateLensVersionInputRequestTypeDef</a></li>
 <li><a href="type_defs/#createmilestoneinputrequesttypedef">CreateMilestoneInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createworkloadinputrequesttypedef">CreateWorkloadInputRequestTypeDef</a></li>
+<li><a href="type_defs/#workloaddiscoveryconfigtypedef">WorkloadDiscoveryConfigTypeDef</a></li>
 <li><a href="type_defs/#createworkloadshareinputrequesttypedef">CreateWorkloadShareInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletelensinputrequesttypedef">DeleteLensInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletelensshareinputrequesttypedef">DeleteLensShareInputRequestTypeDef</a></li>
@@ -37667,7 +37673,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getlensversiondifferenceinputrequesttypedef">GetLensVersionDifferenceInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getmilestoneinputrequesttypedef">GetMilestoneInputRequestTypeDef</a></li>
 <li><a href="type_defs/#getworkloadinputrequesttypedef">GetWorkloadInputRequestTypeDef</a></li>
-<li><a href="type_defs/#workloadtypedef">WorkloadTypeDef</a></li>
 <li><a href="type_defs/#importlensinputrequesttypedef">ImportLensInputRequestTypeDef</a></li>
 <li><a href="type_defs/#lensreviewsummarytypedef">LensReviewSummaryTypeDef</a></li>
 <li><a href="type_defs/#pillarreviewsummarytypedef">PillarReviewSummaryTypeDef</a></li>
@@ -37675,6 +37680,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#lenssummarytypedef">LensSummaryTypeDef</a></li>
 <li><a href="type_defs/#lensupgradesummarytypedef">LensUpgradeSummaryTypeDef</a></li>
 <li><a href="type_defs/#listanswersinputrequesttypedef">ListAnswersInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listcheckdetailsinputrequesttypedef">ListCheckDetailsInputRequestTypeDef</a></li>
+<li><a href="type_defs/#listchecksummariesinputrequesttypedef">ListCheckSummariesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listlensreviewimprovementsinputrequesttypedef">ListLensReviewImprovementsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listlensreviewsinputrequesttypedef">ListLensReviewsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listlenssharesinputrequesttypedef">ListLensSharesInputRequestTypeDef</a></li>
@@ -37695,7 +37702,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#updateglobalsettingsinputrequesttypedef">UpdateGlobalSettingsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updatelensreviewinputrequesttypedef">UpdateLensReviewInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updateshareinvitationinputrequesttypedef">UpdateShareInvitationInputRequestTypeDef</a></li>
-<li><a href="type_defs/#updateworkloadinputrequesttypedef">UpdateWorkloadInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updateworkloadshareinputrequesttypedef">UpdateWorkloadShareInputRequestTypeDef</a></li>
 <li><a href="type_defs/#workloadsharetypedef">WorkloadShareTypeDef</a></li>
 <li><a href="type_defs/#upgradelensreviewinputrequesttypedef">UpgradeLensReviewInputRequestTypeDef</a></li>
@@ -37710,12 +37716,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#exportlensoutputtypedef">ExportLensOutputTypeDef</a></li>
 <li><a href="type_defs/#importlensoutputtypedef">ImportLensOutputTypeDef</a></li>
+<li><a href="type_defs/#listcheckdetailsoutputtypedef">ListCheckDetailsOutputTypeDef</a></li>
+<li><a href="type_defs/#listchecksummariesoutputtypedef">ListCheckSummariesOutputTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceoutputtypedef">ListTagsForResourceOutputTypeDef</a></li>
+<li><a href="type_defs/#createworkloadinputrequesttypedef">CreateWorkloadInputRequestTypeDef</a></li>
+<li><a href="type_defs/#updateworkloadinputrequesttypedef">UpdateWorkloadInputRequestTypeDef</a></li>
+<li><a href="type_defs/#workloadtypedef">WorkloadTypeDef</a></li>
 <li><a href="type_defs/#getlensoutputtypedef">GetLensOutputTypeDef</a></li>
 <li><a href="type_defs/#getlensreviewreportoutputtypedef">GetLensReviewReportOutputTypeDef</a></li>
-<li><a href="type_defs/#getworkloadoutputtypedef">GetWorkloadOutputTypeDef</a></li>
-<li><a href="type_defs/#milestonetypedef">MilestoneTypeDef</a></li>
-<li><a href="type_defs/#updateworkloadoutputtypedef">UpdateWorkloadOutputTypeDef</a></li>
 <li><a href="type_defs/#listlensreviewsoutputtypedef">ListLensReviewsOutputTypeDef</a></li>
 <li><a href="type_defs/#lensreviewtypedef">LensReviewTypeDef</a></li>
 <li><a href="type_defs/#listlenssharesoutputtypedef">ListLensSharesOutputTypeDef</a></li>
@@ -37730,7 +37738,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#updateworkloadshareoutputtypedef">UpdateWorkloadShareOutputTypeDef</a></li>
 <li><a href="type_defs/#choicetypedef">ChoiceTypeDef</a></li>
 <li><a href="type_defs/#listlensreviewimprovementsoutputtypedef">ListLensReviewImprovementsOutputTypeDef</a></li>
-<li><a href="type_defs/#getmilestoneoutputtypedef">GetMilestoneOutputTypeDef</a></li>
+<li><a href="type_defs/#getworkloadoutputtypedef">GetWorkloadOutputTypeDef</a></li>
+<li><a href="type_defs/#milestonetypedef">MilestoneTypeDef</a></li>
+<li><a href="type_defs/#updateworkloadoutputtypedef">UpdateWorkloadOutputTypeDef</a></li>
 <li><a href="type_defs/#getlensreviewoutputtypedef">GetLensReviewOutputTypeDef</a></li>
 <li><a href="type_defs/#updatelensreviewoutputtypedef">UpdateLensReviewOutputTypeDef</a></li>
 <li><a href="type_defs/#listnotificationsoutputtypedef">ListNotificationsOutputTypeDef</a></li>
@@ -37738,6 +37748,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#versiondifferencestypedef">VersionDifferencesTypeDef</a></li>
 <li><a href="type_defs/#answersummarytypedef">AnswerSummaryTypeDef</a></li>
 <li><a href="type_defs/#answertypedef">AnswerTypeDef</a></li>
+<li><a href="type_defs/#getmilestoneoutputtypedef">GetMilestoneOutputTypeDef</a></li>
 <li><a href="type_defs/#getlensversiondifferenceoutputtypedef">GetLensVersionDifferenceOutputTypeDef</a></li>
 <li><a href="type_defs/#listanswersoutputtypedef">ListAnswersOutputTypeDef</a></li>
 <li><a href="type_defs/#getansweroutputtypedef">GetAnswerOutputTypeDef</a></li>
