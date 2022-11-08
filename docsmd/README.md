@@ -563,6 +563,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-resiliencehub](./mypy_boto3_resiliencehub/README.md) for [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub) service
 
+- [mypy-boto3-resource-explorer-2](./mypy_boto3_resource_explorer_2/README.md) for [ResourceExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-explorer-2.html#ResourceExplorer) service
+
 - [mypy-boto3-resource-groups](./mypy_boto3_resource_groups/README.md) for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups) service
 
 - [mypy-boto3-resourcegroupstaggingapi](./mypy_boto3_resourcegroupstaggingapi/README.md) for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI) service

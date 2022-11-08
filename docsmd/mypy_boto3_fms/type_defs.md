@@ -135,6 +135,60 @@ class PartialMatchTypeDef(TypedDict):
     TargetViolationReasons: NotRequired[List[str]],
 ```
 
+## BatchAssociateResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import BatchAssociateResourceRequestRequestTypeDef
+
+def get_value() -> BatchAssociateResourceRequestRequestTypeDef:
+    return {
+        "ResourceSetIdentifier": ...,
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class BatchAssociateResourceRequestRequestTypeDef(TypedDict):
+    ResourceSetIdentifier: str,
+    Items: Sequence[str],
+```
+
+## FailedItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import FailedItemTypeDef
+
+def get_value() -> FailedItemTypeDef:
+    return {
+        "URI": ...,
+    }
+```
+
+```python title="Definition"
+class FailedItemTypeDef(TypedDict):
+    URI: NotRequired[str],
+    Reason: NotRequired[FailedItemReasonType],  # (1)
+```
+
+1. See [:material-code-brackets: FailedItemReasonType](./literals.md#faileditemreasontype) 
+## BatchDisassociateResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import BatchDisassociateResourceRequestRequestTypeDef
+
+def get_value() -> BatchDisassociateResourceRequestRequestTypeDef:
+    return {
+        "ResourceSetIdentifier": ...,
+        "Items": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDisassociateResourceRequestRequestTypeDef(TypedDict):
+    ResourceSetIdentifier: str,
+    Items: Sequence[str],
+```
+
 ## ComplianceViolatorTypeDef
 
 ```python title="Usage Example"
@@ -204,6 +258,22 @@ class DeleteProtocolsListRequestRequestTypeDef(TypedDict):
     ListId: str,
 ```
 
+## DeleteResourceSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import DeleteResourceSetRequestRequestTypeDef
+
+def get_value() -> DeleteResourceSetRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteResourceSetRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
+
 ## DisassociateThirdPartyFirewallRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -221,6 +291,25 @@ class DisassociateThirdPartyFirewallRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ThirdPartyFirewallType](./literals.md#thirdpartyfirewalltype) 
+## DiscoveredResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import DiscoveredResourceTypeDef
+
+def get_value() -> DiscoveredResourceTypeDef:
+    return {
+        "URI": ...,
+    }
+```
+
+```python title="Definition"
+class DiscoveredResourceTypeDef(TypedDict):
+    URI: NotRequired[str],
+    AccountId: NotRequired[str],
+    Type: NotRequired[str],
+    Name: NotRequired[str],
+```
+
 ## DnsDuplicateRuleGroupViolationTypeDef
 
 ```python title="Usage Example"
@@ -484,6 +573,44 @@ class ProtocolsListDataTypeDef(TypedDict):
     PreviousProtocolsList: NotRequired[Dict[str, List[str]]],
 ```
 
+## GetResourceSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import GetResourceSetRequestRequestTypeDef
+
+def get_value() -> GetResourceSetRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceSetRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
+
+## ResourceSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ResourceSetTypeDef
+
+def get_value() -> ResourceSetTypeDef:
+    return {
+        "Name": ...,
+        "ResourceTypeList": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceSetTypeDef(TypedDict):
+    Name: str,
+    ResourceTypeList: List[str],
+    Id: NotRequired[str],
+    Description: NotRequired[str],
+    UpdateToken: NotRequired[str],
+    LastUpdateTime: NotRequired[datetime],
+```
+
 ## GetThirdPartyFirewallAssociationStatusRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -575,6 +702,26 @@ class ListComplianceStatusRequestRequestTypeDef(TypedDict):
     PolicyId: str,
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
+```
+
+## ListDiscoveredResourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListDiscoveredResourcesRequestRequestTypeDef
+
+def get_value() -> ListDiscoveredResourcesRequestRequestTypeDef:
+    return {
+        "MemberAccountIds": ...,
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class ListDiscoveredResourcesRequestRequestTypeDef(TypedDict):
+    MemberAccountIds: Sequence[str],
+    ResourceType: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
 ## ListMemberAccountsRequestRequestTypeDef
@@ -669,6 +816,77 @@ class ProtocolsListDataSummaryTypeDef(TypedDict):
     ListId: NotRequired[str],
     ListName: NotRequired[str],
     ProtocolsList: NotRequired[List[str]],
+```
+
+## ListResourceSetResourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListResourceSetResourcesRequestRequestTypeDef
+
+def get_value() -> ListResourceSetResourcesRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceSetResourcesRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "URI": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    URI: str,
+    AccountId: NotRequired[str],
+```
+
+## ListResourceSetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListResourceSetsRequestRequestTypeDef
+
+def get_value() -> ListResourceSetsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceSetsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## ResourceSetSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ResourceSetSummaryTypeDef
+
+def get_value() -> ResourceSetSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceSetSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LastUpdateTime: NotRequired[datetime],
 ```
 
 ## ListTagsForResourceRequestRequestTypeDef
@@ -1423,6 +1641,50 @@ class AwsEc2InstanceViolationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsEc2NetworkInterfaceViolationTypeDef](./type_defs.md#awsec2networkinterfaceviolationtypedef) 
+## BatchAssociateResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import BatchAssociateResourceResponseTypeDef
+
+def get_value() -> BatchAssociateResourceResponseTypeDef:
+    return {
+        "ResourceSetIdentifier": ...,
+        "FailedItems": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchAssociateResourceResponseTypeDef(TypedDict):
+    ResourceSetIdentifier: str,
+    FailedItems: List[FailedItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailedItemTypeDef](./type_defs.md#faileditemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDisassociateResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import BatchDisassociateResourceResponseTypeDef
+
+def get_value() -> BatchDisassociateResourceResponseTypeDef:
+    return {
+        "ResourceSetIdentifier": ...,
+        "FailedItems": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDisassociateResourceResponseTypeDef(TypedDict):
+    ResourceSetIdentifier: str,
+    FailedItems: List[FailedItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FailedItemTypeDef](./type_defs.md#faileditemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PolicyComplianceDetailTypeDef
 
 ```python title="Usage Example"
@@ -1447,6 +1709,28 @@ class PolicyComplianceDetailTypeDef(TypedDict):
 
 1. See [:material-code-braces: ComplianceViolatorTypeDef](./type_defs.md#complianceviolatortypedef) 
 2. See [:material-code-brackets: DependentServiceNameType](./literals.md#dependentservicenametype) 
+## ListDiscoveredResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListDiscoveredResourcesResponseTypeDef
+
+def get_value() -> ListDiscoveredResourcesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDiscoveredResourcesResponseTypeDef(TypedDict):
+    Items: List[DiscoveredResourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PolicyComplianceStatusTypeDef
 
 ```python title="Usage Example"
@@ -1533,6 +1817,50 @@ class PutProtocolsListResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourceSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import GetResourceSetResponseTypeDef
+
+def get_value() -> GetResourceSetResponseTypeDef:
+    return {
+        "ResourceSet": ...,
+        "ResourceSetArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceSetResponseTypeDef(TypedDict):
+    ResourceSet: ResourceSetTypeDef,  # (1)
+    ResourceSetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceSetTypeDef](./type_defs.md#resourcesettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResourceSetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import PutResourceSetResponseTypeDef
+
+def get_value() -> PutResourceSetResponseTypeDef:
+    return {
+        "ResourceSet": ...,
+        "ResourceSetArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourceSetResponseTypeDef(TypedDict):
+    ResourceSet: ResourceSetTypeDef,  # (1)
+    ResourceSetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceSetTypeDef](./type_defs.md#resourcesettypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppsListsRequestListAppsListsPaginateTypeDef
 
@@ -1685,6 +2013,50 @@ class ListProtocolsListsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProtocolsListDataSummaryTypeDef](./type_defs.md#protocolslistdatasummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceSetResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListResourceSetResourcesResponseTypeDef
+
+def get_value() -> ListResourceSetResourcesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceSetResourcesResponseTypeDef(TypedDict):
+    Items: List[ResourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceSetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListResourceSetsResponseTypeDef
+
+def get_value() -> ListResourceSetsResponseTypeDef:
+    return {
+        "ResourceSets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceSetsResponseTypeDef(TypedDict):
+    ResourceSets: List[ResourceSetSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceSetSummaryTypeDef](./type_defs.md#resourcesetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -1723,6 +2095,25 @@ class PutProtocolsListRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## PutResourceSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import PutResourceSetRequestRequestTypeDef
+
+def get_value() -> PutResourceSetRequestRequestTypeDef:
+    return {
+        "ResourceSet": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourceSetRequestRequestTypeDef(TypedDict):
+    ResourceSet: ResourceSetTypeDef,  # (1)
+    TagList: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ResourceSetTypeDef](./type_defs.md#resourcesettypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagResourceRequestRequestTypeDef
 
@@ -2279,6 +2670,8 @@ class PolicyTypeDef(TypedDict):
     DeleteUnusedFMManagedResources: NotRequired[bool],
     IncludeMap: NotRequired[Dict[CustomerPolicyScopeIdTypeType, List[str]]],  # (3)
     ExcludeMap: NotRequired[Dict[CustomerPolicyScopeIdTypeType, List[str]]],  # (3)
+    ResourceSetIds: NotRequired[List[str]],
+    PolicyDescription: NotRequired[str],
 ```
 
 1. See [:material-code-braces: SecurityServicePolicyDataTypeDef](./type_defs.md#securityservicepolicydatatypedef) 

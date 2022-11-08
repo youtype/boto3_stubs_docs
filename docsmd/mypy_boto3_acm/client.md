@@ -496,7 +496,8 @@ def request_certificate(
     Options: CertificateOptionsTypeDef = ...,  # (3)
     CertificateAuthorityArn: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (4)
-) -> RequestCertificateResponseTypeDef:  # (5)
+    KeyAlgorithm: KeyAlgorithmType = ...,  # (5)
+) -> RequestCertificateResponseTypeDef:  # (6)
     ...
 ```
 
@@ -504,7 +505,8 @@ def request_certificate(
 2. See [:material-code-braces: DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef) 
 3. See [:material-code-braces: CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef) 
+5. See [:material-code-brackets: KeyAlgorithmType](./literals.md#keyalgorithmtype) 
+6. See [:material-code-braces: RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

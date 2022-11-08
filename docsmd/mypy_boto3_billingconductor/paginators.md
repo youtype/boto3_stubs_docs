@@ -190,6 +190,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListBillingGroupsInputListBillingGroupsPaginateTypeDef](./type_defs.md#listbillinggroupsinputlistbillinggroupspaginatetypedef) 
+## ListCustomLineItemVersionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_custom_line_item_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListCustomLineItemVersions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_billingconductor.paginator import ListCustomLineItemVersionsPaginator
+
+def get_list_custom_line_item_versions_paginator() -> ListCustomLineItemVersionsPaginator:
+    return Session().client("billingconductor").get_paginator("list_custom_line_item_versions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_billingconductor.paginator import ListCustomLineItemVersionsPaginator
+
+session = Session()
+
+client = Session().client("billingconductor")  # (1)
+paginator: ListCustomLineItemVersionsPaginator = client.get_paginator("list_custom_line_item_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BillingConductorClient](./client.md)
+2. paginator: [ListCustomLineItemVersionsPaginator](./paginators.md#listcustomlineitemversionspaginator)
+3. item: [:material-code-braces: ListCustomLineItemVersionsOutputTypeDef](./type_defs.md#listcustomlineitemversionsoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListCustomLineItemVersionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Arn: str,
+    Filters: ListCustomLineItemVersionsFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListCustomLineItemVersionsOutputTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ListCustomLineItemVersionsFilterTypeDef](./type_defs.md#listcustomlineitemversionsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListCustomLineItemVersionsOutputTypeDef](./type_defs.md#listcustomlineitemversionsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomLineItemVersionsInputListCustomLineItemVersionsPaginateTypeDef = {  # (1)
+    "Arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomLineItemVersionsInputListCustomLineItemVersionsPaginateTypeDef](./type_defs.md#listcustomlineitemversionsinputlistcustomlineitemversionspaginatetypedef) 
 ## ListCustomLineItemsPaginator
 
 Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_custom_line_items")`.

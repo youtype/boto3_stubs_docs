@@ -73,6 +73,25 @@ DestinationTypeType = Literal[
     "PREFIX_LIST",
 ]
 ```
+## FailedItemReasonType
+
+```python title="Usage Example"
+from mypy_boto3_fms.literals import FailedItemReasonType
+
+def get_value() -> FailedItemReasonType:
+    return "NOT_VALID_ACCOUNT_ID"
+```
+
+```python title="Definition"
+FailedItemReasonType = Literal[
+    "NOT_VALID_ACCOUNT_ID",
+    "NOT_VALID_ARN",
+    "NOT_VALID_PARTITION",
+    "NOT_VALID_REGION",
+    "NOT_VALID_RESOURCE_TYPE",
+    "NOT_VALID_SERVICE",
+]
+```
 ## FirewallDeploymentModelType
 
 ```python title="Usage Example"
@@ -259,6 +278,7 @@ def get_value() -> SecurityServiceTypeType:
 ```python title="Definition"
 SecurityServiceTypeType = Literal[
     "DNS_FIREWALL",
+    "IMPORT_NETWORK_FIREWALL",
     "NETWORK_FIREWALL",
     "SECURITY_GROUPS_COMMON",
     "SECURITY_GROUPS_CONTENT_AUDIT",
@@ -637,6 +657,7 @@ ServiceName = Literal[
     "redshift-serverless",
     "rekognition",
     "resiliencehub",
+    "resource-explorer-2",
     "resource-groups",
     "resourcegroupstaggingapi",
     "robomaker",

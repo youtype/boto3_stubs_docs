@@ -15201,6 +15201,7 @@ def modify_instance_placement(
     Tenancy: HostTenancyType = ...,  # (2)
     PartitionNumber: int = ...,
     HostResourceGroupArn: str = ...,
+    GroupId: str = ...,
 ) -> ModifyInstancePlacementResultTypeDef:  # (3)
     ...
 ```

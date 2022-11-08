@@ -627,12 +627,14 @@ class RequestCertificateRequestRequestTypeDef(TypedDict):
     Options: NotRequired[CertificateOptionsTypeDef],  # (3)
     CertificateAuthorityArn: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    KeyAlgorithm: NotRequired[KeyAlgorithmType],  # (5)
 ```
 
 1. See [:material-code-brackets: ValidationMethodType](./literals.md#validationmethodtype) 
 2. See [:material-code-braces: DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef) 
 3. See [:material-code-braces: CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-brackets: KeyAlgorithmType](./literals.md#keyalgorithmtype) 
 ## DomainValidationTypeDef
 
 ```python title="Usage Example"

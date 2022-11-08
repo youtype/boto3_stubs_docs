@@ -1378,6 +1378,24 @@ class DistributionBundleTypeDef(TypedDict):
     isActive: NotRequired[bool],
 ```
 
+## DnsRecordCreationStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import DnsRecordCreationStateTypeDef
+
+def get_value() -> DnsRecordCreationStateTypeDef:
+    return {
+        "code": ...,
+    }
+```
+
+```python title="Definition"
+class DnsRecordCreationStateTypeDef(TypedDict):
+    code: NotRequired[DnsRecordCreationStateCodeType],  # (1)
+    message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: DnsRecordCreationStateCodeType](./literals.md#dnsrecordcreationstatecodetype) 
 ## ResourceRecordTypeDef
 
 ```python title="Usage Example"
@@ -2867,6 +2885,24 @@ class OriginTypeDef(TypedDict):
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 2. See [:material-code-brackets: RegionNameType](./literals.md#regionnametype) 
 3. See [:material-code-brackets: OriginProtocolPolicyEnumType](./literals.md#originprotocolpolicyenumtype) 
+## LoadBalancerTlsCertificateDnsRecordCreationStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import LoadBalancerTlsCertificateDnsRecordCreationStateTypeDef
+
+def get_value() -> LoadBalancerTlsCertificateDnsRecordCreationStateTypeDef:
+    return {
+        "code": ...,
+    }
+```
+
+```python title="Definition"
+class LoadBalancerTlsCertificateDnsRecordCreationStateTypeDef(TypedDict):
+    code: NotRequired[LoadBalancerTlsCertificateDnsRecordCreationStateCodeType],  # (1)
+    message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LoadBalancerTlsCertificateDnsRecordCreationStateCodeType](./literals.md#loadbalancertlscertificatednsrecordcreationstatecodetype) 
 ## LoadBalancerTlsCertificateDomainValidationOptionTypeDef
 
 ```python title="Usage Example"
@@ -2882,27 +2918,6 @@ def get_value() -> LoadBalancerTlsCertificateDomainValidationOptionTypeDef:
 class LoadBalancerTlsCertificateDomainValidationOptionTypeDef(TypedDict):
     domainName: NotRequired[str],
     validationStatus: NotRequired[LoadBalancerTlsCertificateDomainStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: LoadBalancerTlsCertificateDomainStatusType](./literals.md#loadbalancertlscertificatedomainstatustype) 
-## LoadBalancerTlsCertificateDomainValidationRecordTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lightsail.type_defs import LoadBalancerTlsCertificateDomainValidationRecordTypeDef
-
-def get_value() -> LoadBalancerTlsCertificateDomainValidationRecordTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class LoadBalancerTlsCertificateDomainValidationRecordTypeDef(TypedDict):
-    name: NotRequired[str],
-    type: NotRequired[str],
-    value: NotRequired[str],
-    validationStatus: NotRequired[LoadBalancerTlsCertificateDomainStatusType],  # (1)
-    domainName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LoadBalancerTlsCertificateDomainStatusType](./literals.md#loadbalancertlscertificatedomainstatustype) 
@@ -2923,6 +2938,24 @@ class LoadBalancerTlsCertificateSummaryTypeDef(TypedDict):
     isAttached: NotRequired[bool],
 ```
 
+## NameServersUpdateStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import NameServersUpdateStateTypeDef
+
+def get_value() -> NameServersUpdateStateTypeDef:
+    return {
+        "code": ...,
+    }
+```
+
+```python title="Definition"
+class NameServersUpdateStateTypeDef(TypedDict):
+    code: NotRequired[NameServersUpdateStateCodeType],  # (1)
+    message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: NameServersUpdateStateCodeType](./literals.md#nameserversupdatestatecodetype) 
 ## PendingMaintenanceActionTypeDef
 
 ```python title="Usage Example"
@@ -2995,6 +3028,24 @@ class PutAlarmRequestRequestTypeDef(TypedDict):
 3. See [:material-code-brackets: TreatMissingDataType](./literals.md#treatmissingdatatype) 
 4. See [:material-code-brackets: ContactProtocolType](./literals.md#contactprotocoltype) 
 5. See [:material-code-brackets: AlarmStateType](./literals.md#alarmstatetype) 
+## R53HostedZoneDeletionStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import R53HostedZoneDeletionStateTypeDef
+
+def get_value() -> R53HostedZoneDeletionStateTypeDef:
+    return {
+        "code": ...,
+    }
+```
+
+```python title="Definition"
+class R53HostedZoneDeletionStateTypeDef(TypedDict):
+    code: NotRequired[R53HostedZoneDeletionStateCodeType],  # (1)
+    message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: R53HostedZoneDeletionStateCodeType](./literals.md#r53hostedzonedeletionstatecodetype) 
 ## RebootInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4600,33 +4651,6 @@ class DeleteDomainEntryRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DomainEntryTypeDef](./type_defs.md#domainentrytypedef) 
-## DomainTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lightsail.type_defs import DomainTypeDef
-
-def get_value() -> DomainTypeDef:
-    return {
-        "name": ...,
-    }
-```
-
-```python title="Definition"
-class DomainTypeDef(TypedDict):
-    name: NotRequired[str],
-    arn: NotRequired[str],
-    supportCode: NotRequired[str],
-    createdAt: NotRequired[datetime],
-    location: NotRequired[ResourceLocationTypeDef],  # (1)
-    resourceType: NotRequired[ResourceTypeType],  # (2)
-    tags: NotRequired[List[TagTypeDef]],  # (3)
-    domainEntries: NotRequired[List[DomainEntryTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef) 
-2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: DomainEntryTypeDef](./type_defs.md#domainentrytypedef) 
 ## UpdateDomainEntryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4700,9 +4724,13 @@ def get_value() -> DomainValidationRecordTypeDef:
 class DomainValidationRecordTypeDef(TypedDict):
     domainName: NotRequired[str],
     resourceRecord: NotRequired[ResourceRecordTypeDef],  # (1)
+    dnsRecordCreationState: NotRequired[DnsRecordCreationStateTypeDef],  # (2)
+    validationStatus: NotRequired[CertificateDomainValidationStatusType],  # (3)
 ```
 
 1. See [:material-code-braces: ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef) 
+2. See [:material-code-braces: DnsRecordCreationStateTypeDef](./type_defs.md#dnsrecordcreationstatetypedef) 
+3. See [:material-code-brackets: CertificateDomainValidationStatusType](./literals.md#certificatedomainvalidationstatustype) 
 ## GetActiveNamesRequestGetActiveNamesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -5428,6 +5456,29 @@ class InstanceNetworkingTypeDef(TypedDict):
 
 1. See [:material-code-braces: MonthlyTransferTypeDef](./type_defs.md#monthlytransfertypedef) 
 2. See [:material-code-braces: InstancePortInfoTypeDef](./type_defs.md#instanceportinfotypedef) 
+## LoadBalancerTlsCertificateDomainValidationRecordTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import LoadBalancerTlsCertificateDomainValidationRecordTypeDef
+
+def get_value() -> LoadBalancerTlsCertificateDomainValidationRecordTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class LoadBalancerTlsCertificateDomainValidationRecordTypeDef(TypedDict):
+    name: NotRequired[str],
+    type: NotRequired[str],
+    value: NotRequired[str],
+    validationStatus: NotRequired[LoadBalancerTlsCertificateDomainStatusType],  # (1)
+    domainName: NotRequired[str],
+    dnsRecordCreationState: NotRequired[LoadBalancerTlsCertificateDnsRecordCreationStateTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LoadBalancerTlsCertificateDomainStatusType](./literals.md#loadbalancertlscertificatedomainstatustype) 
+2. See [:material-code-braces: LoadBalancerTlsCertificateDnsRecordCreationStateTypeDef](./type_defs.md#loadbalancertlscertificatednsrecordcreationstatetypedef) 
 ## LoadBalancerTlsCertificateRenewalSummaryTypeDef
 
 ```python title="Usage Example"
@@ -5490,6 +5541,25 @@ class LoadBalancerTypeDef(TypedDict):
 7. See [:material-code-braces: LoadBalancerTlsCertificateSummaryTypeDef](./type_defs.md#loadbalancertlscertificatesummarytypedef) 
 8. See [:material-code-brackets: LoadBalancerAttributeNameType](./literals.md#loadbalancerattributenametype) 
 9. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+## RegisteredDomainDelegationInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import RegisteredDomainDelegationInfoTypeDef
+
+def get_value() -> RegisteredDomainDelegationInfoTypeDef:
+    return {
+        "nameServersUpdateState": ...,
+    }
+```
+
+```python title="Definition"
+class RegisteredDomainDelegationInfoTypeDef(TypedDict):
+    nameServersUpdateState: NotRequired[NameServersUpdateStateTypeDef],  # (1)
+    r53HostedZoneDeletionState: NotRequired[R53HostedZoneDeletionStateTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: NameServersUpdateStateTypeDef](./type_defs.md#nameserversupdatestatetypedef) 
+2. See [:material-code-braces: R53HostedZoneDeletionStateTypeDef](./type_defs.md#r53hostedzonedeletionstatetypedef) 
 ## RelationalDatabaseTypeDef
 
 ```python title="Usage Example"
@@ -7984,48 +8054,6 @@ class CreateContainerServiceDeploymentRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
 2. See [:material-code-braces: EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef) 
-## GetDomainResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lightsail.type_defs import GetDomainResultTypeDef
-
-def get_value() -> GetDomainResultTypeDef:
-    return {
-        "domain": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDomainResultTypeDef(TypedDict):
-    domain: DomainTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetDomainsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lightsail.type_defs import GetDomainsResultTypeDef
-
-def get_value() -> GetDomainsResultTypeDef:
-    return {
-        "domains": ...,
-        "nextPageToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDomainsResultTypeDef(TypedDict):
-    domains: List[DomainTypeDef],  # (1)
-    nextPageToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportSnapshotRecordSourceInfoTypeDef
 
 ```python title="Usage Example"
@@ -8183,6 +8211,35 @@ class GetLoadBalancersResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DomainTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import DomainTypeDef
+
+def get_value() -> DomainTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class DomainTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    supportCode: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    location: NotRequired[ResourceLocationTypeDef],  # (1)
+    resourceType: NotRequired[ResourceTypeType],  # (2)
+    tags: NotRequired[List[TagTypeDef]],  # (3)
+    domainEntries: NotRequired[List[DomainEntryTypeDef]],  # (4)
+    registeredDomainDelegationInfo: NotRequired[RegisteredDomainDelegationInfoTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: DomainEntryTypeDef](./type_defs.md#domainentrytypedef) 
+5. See [:material-code-braces: RegisteredDomainDelegationInfoTypeDef](./type_defs.md#registereddomaindelegationinfotypedef) 
 ## GetRelationalDatabaseResultTypeDef
 
 ```python title="Usage Example"
@@ -8536,6 +8593,48 @@ class GetLoadBalancerTlsCertificatesResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LoadBalancerTlsCertificateTypeDef](./type_defs.md#loadbalancertlscertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDomainResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import GetDomainResultTypeDef
+
+def get_value() -> GetDomainResultTypeDef:
+    return {
+        "domain": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDomainResultTypeDef(TypedDict):
+    domain: DomainTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDomainsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import GetDomainsResultTypeDef
+
+def get_value() -> GetDomainsResultTypeDef:
+    return {
+        "domains": ...,
+        "nextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDomainsResultTypeDef(TypedDict):
+    domains: List[DomainTypeDef],  # (1)
+    nextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInstanceResultTypeDef
 

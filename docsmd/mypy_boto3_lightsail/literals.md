@@ -163,6 +163,22 @@ BucketMetricNameType = Literal[
     "NumberOfObjects",
 ]
 ```
+## CertificateDomainValidationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import CertificateDomainValidationStatusType
+
+def get_value() -> CertificateDomainValidationStatusType:
+    return "FAILED"
+```
+
+```python title="Definition"
+CertificateDomainValidationStatusType = Literal[
+    "FAILED",
+    "PENDING_VALIDATION",
+    "SUCCESS",
+]
+```
 ## CertificateStatusType
 
 ```python title="Usage Example"
@@ -421,6 +437,22 @@ DistributionMetricNameType = Literal[
     "Http5xxErrorRate",
     "Requests",
     "TotalErrorRate",
+]
+```
+## DnsRecordCreationStateCodeType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import DnsRecordCreationStateCodeType
+
+def get_value() -> DnsRecordCreationStateCodeType:
+    return "FAILED"
+```
+
+```python title="Definition"
+DnsRecordCreationStateCodeType = Literal[
+    "FAILED",
+    "STARTED",
+    "SUCCEEDED",
 ]
 ```
 ## ExportSnapshotRecordSourceTypeType
@@ -1024,6 +1056,22 @@ LoadBalancerStateType = Literal[
     "unknown",
 ]
 ```
+## LoadBalancerTlsCertificateDnsRecordCreationStateCodeType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import LoadBalancerTlsCertificateDnsRecordCreationStateCodeType
+
+def get_value() -> LoadBalancerTlsCertificateDnsRecordCreationStateCodeType:
+    return "FAILED"
+```
+
+```python title="Definition"
+LoadBalancerTlsCertificateDnsRecordCreationStateCodeType = Literal[
+    "FAILED",
+    "STARTED",
+    "SUCCEEDED",
+]
+```
 ## LoadBalancerTlsCertificateDomainStatusType
 
 ```python title="Usage Example"
@@ -1215,6 +1263,23 @@ MetricUnitType = Literal[
     "Terabytes/Second",
 ]
 ```
+## NameServersUpdateStateCodeType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import NameServersUpdateStateCodeType
+
+def get_value() -> NameServersUpdateStateCodeType:
+    return "FAILED"
+```
+
+```python title="Definition"
+NameServersUpdateStateCodeType = Literal[
+    "FAILED",
+    "PENDING",
+    "STARTED",
+    "SUCCEEDED",
+]
+```
 ## NetworkProtocolType
 
 ```python title="Usage Example"
@@ -1403,6 +1468,23 @@ def get_value() -> PortStateType:
 PortStateType = Literal[
     "closed",
     "open",
+]
+```
+## R53HostedZoneDeletionStateCodeType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import R53HostedZoneDeletionStateCodeType
+
+def get_value() -> R53HostedZoneDeletionStateCodeType:
+    return "FAILED"
+```
+
+```python title="Definition"
+R53HostedZoneDeletionStateCodeType = Literal[
+    "FAILED",
+    "PENDING",
+    "STARTED",
+    "SUCCEEDED",
 ]
 ```
 ## RecordStateType
@@ -1867,6 +1949,7 @@ ServiceName = Literal[
     "redshift-serverless",
     "rekognition",
     "resiliencehub",
+    "resource-explorer-2",
     "resource-groups",
     "resourcegroupstaggingapi",
     "robomaker",

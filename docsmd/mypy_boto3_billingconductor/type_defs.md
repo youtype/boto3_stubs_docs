@@ -128,14 +128,13 @@ from mypy_boto3_billingconductor.type_defs import CustomLineItemBillingPeriodRan
 def get_value() -> CustomLineItemBillingPeriodRangeTypeDef:
     return {
         "InclusiveStartBillingPeriod": ...,
-        "ExclusiveEndBillingPeriod": ...,
     }
 ```
 
 ```python title="Definition"
 class CustomLineItemBillingPeriodRangeTypeDef(TypedDict):
     InclusiveStartBillingPeriod: str,
-    ExclusiveEndBillingPeriod: str,
+    ExclusiveEndBillingPeriod: NotRequired[str],
 ```
 
 ## BillingGroupCostReportElementTypeDef
@@ -440,6 +439,23 @@ class ListCustomLineItemPercentageChargeDetailsTypeDef(TypedDict):
     PercentageValue: float,
 ```
 
+## ListCustomLineItemVersionsBillingPeriodRangeFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import ListCustomLineItemVersionsBillingPeriodRangeFilterTypeDef
+
+def get_value() -> ListCustomLineItemVersionsBillingPeriodRangeFilterTypeDef:
+    return {
+        "StartBillingPeriod": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomLineItemVersionsBillingPeriodRangeFilterTypeDef(TypedDict):
+    StartBillingPeriod: NotRequired[str],
+    EndBillingPeriod: NotRequired[str],
+```
+
 ## ListCustomLineItemsFilterTypeDef
 
 ```python title="Usage Example"
@@ -608,6 +624,7 @@ def get_value() -> ListResourcesAssociatedToCustomLineItemResponseElementTypeDef
 class ListResourcesAssociatedToCustomLineItemResponseElementTypeDef(TypedDict):
     Arn: NotRequired[str],
     Relationship: NotRequired[CustomLineItemRelationshipType],  # (1)
+    EndBillingPeriod: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: CustomLineItemRelationshipType](./literals.md#customlineitemrelationshiptype) 
@@ -1543,6 +1560,23 @@ class ListCustomLineItemChargeDetailsTypeDef(TypedDict):
 1. See [:material-code-braces: ListCustomLineItemFlatChargeDetailsTypeDef](./type_defs.md#listcustomlineitemflatchargedetailstypedef) 
 2. See [:material-code-braces: ListCustomLineItemPercentageChargeDetailsTypeDef](./type_defs.md#listcustomlineitempercentagechargedetailstypedef) 
 3. See [:material-code-brackets: CustomLineItemTypeType](./literals.md#customlineitemtypetype) 
+## ListCustomLineItemVersionsFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import ListCustomLineItemVersionsFilterTypeDef
+
+def get_value() -> ListCustomLineItemVersionsFilterTypeDef:
+    return {
+        "BillingPeriodRange": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomLineItemVersionsFilterTypeDef(TypedDict):
+    BillingPeriodRange: NotRequired[ListCustomLineItemVersionsBillingPeriodRangeFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ListCustomLineItemVersionsBillingPeriodRangeFilterTypeDef](./type_defs.md#listcustomlineitemversionsbillingperiodrangefiltertypedef) 
 ## ListCustomLineItemsInputListCustomLineItemsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1918,6 +1952,34 @@ class CustomLineItemListElementTypeDef(TypedDict):
 
 1. See [:material-code-braces: ListCustomLineItemChargeDetailsTypeDef](./type_defs.md#listcustomlineitemchargedetailstypedef) 
 2. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
+## CustomLineItemVersionListElementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import CustomLineItemVersionListElementTypeDef
+
+def get_value() -> CustomLineItemVersionListElementTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CustomLineItemVersionListElementTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ChargeDetails: NotRequired[ListCustomLineItemChargeDetailsTypeDef],  # (1)
+    CurrencyCode: NotRequired[CurrencyCodeType],  # (2)
+    Description: NotRequired[str],
+    ProductCode: NotRequired[str],
+    BillingGroupArn: NotRequired[str],
+    CreationTime: NotRequired[int],
+    LastModifiedTime: NotRequired[int],
+    AssociationSize: NotRequired[int],
+    StartBillingPeriod: NotRequired[str],
+    EndBillingPeriod: NotRequired[str],
+```
+
+1. See [:material-code-braces: ListCustomLineItemChargeDetailsTypeDef](./type_defs.md#listcustomlineitemchargedetailstypedef) 
+2. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
 ## UpdateCustomLineItemOutputTypeDef
 
 ```python title="Usage Example"
@@ -1950,6 +2012,46 @@ class UpdateCustomLineItemOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ListCustomLineItemChargeDetailsTypeDef](./type_defs.md#listcustomlineitemchargedetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomLineItemVersionsInputListCustomLineItemVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import ListCustomLineItemVersionsInputListCustomLineItemVersionsPaginateTypeDef
+
+def get_value() -> ListCustomLineItemVersionsInputListCustomLineItemVersionsPaginateTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomLineItemVersionsInputListCustomLineItemVersionsPaginateTypeDef(TypedDict):
+    Arn: str,
+    Filters: NotRequired[ListCustomLineItemVersionsFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListCustomLineItemVersionsFilterTypeDef](./type_defs.md#listcustomlineitemversionsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListCustomLineItemVersionsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import ListCustomLineItemVersionsInputRequestTypeDef
+
+def get_value() -> ListCustomLineItemVersionsInputRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomLineItemVersionsInputRequestTypeDef(TypedDict):
+    Arn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[ListCustomLineItemVersionsFilterTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ListCustomLineItemVersionsFilterTypeDef](./type_defs.md#listcustomlineitemversionsfiltertypedef) 
 ## UpdateCustomLineItemInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1993,4 +2095,26 @@ class ListCustomLineItemsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CustomLineItemListElementTypeDef](./type_defs.md#customlineitemlistelementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomLineItemVersionsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import ListCustomLineItemVersionsOutputTypeDef
+
+def get_value() -> ListCustomLineItemVersionsOutputTypeDef:
+    return {
+        "CustomLineItemVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomLineItemVersionsOutputTypeDef(TypedDict):
+    CustomLineItemVersions: List[CustomLineItemVersionListElementTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomLineItemVersionListElementTypeDef](./type_defs.md#customlineitemversionlistelementtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

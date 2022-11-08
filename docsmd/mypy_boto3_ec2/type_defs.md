@@ -7837,6 +7837,7 @@ class PlacementTypeDef(TypedDict):
     Tenancy: NotRequired[TenancyType],  # (1)
     SpreadDomain: NotRequired[str],
     HostResourceGroupArn: NotRequired[str],
+    GroupId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
@@ -10251,6 +10252,7 @@ class LaunchTemplatePlacementRequestTypeDef(TypedDict):
     SpreadDomain: NotRequired[str],
     HostResourceGroupArn: NotRequired[str],
     PartitionNumber: NotRequired[int],
+    GroupId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
@@ -10275,6 +10277,7 @@ class LaunchTemplatePlacementTypeDef(TypedDict):
     SpreadDomain: NotRequired[str],
     HostResourceGroupArn: NotRequired[str],
     PartitionNumber: NotRequired[int],
+    GroupId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
@@ -10738,6 +10741,7 @@ class ModifyInstancePlacementRequestRequestTypeDef(TypedDict):
     Tenancy: NotRequired[HostTenancyType],  # (2)
     PartitionNumber: NotRequired[int],
     HostResourceGroupArn: NotRequired[str],
+    GroupId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AffinityType](./literals.md#affinitytype) 
@@ -16434,6 +16438,7 @@ def get_value() -> PlacementResponseMetadataTypeDef:
         "Tenancy": ...,
         "SpreadDomain": ...,
         "HostResourceGroupArn": ...,
+        "GroupId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -16448,6 +16453,7 @@ class PlacementResponseMetadataTypeDef(TypedDict):
     Tenancy: TenancyType,  # (1)
     SpreadDomain: str,
     HostResourceGroupArn: str,
+    GroupId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

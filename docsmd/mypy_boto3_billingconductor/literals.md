@@ -21,6 +21,7 @@ AssociateResourceErrorReasonType = Literal[
     "ILLEGAL_CUSTOMLINEITEM",
     "INTERNAL_SERVER_EXCEPTION",
     "INVALID_ARN",
+    "INVALID_BILLING_PERIOD_RANGE",
     "SERVICE_LIMIT_EXCEEDED",
 ]
 ```
@@ -124,6 +125,20 @@ def get_value() -> ListBillingGroupsPaginatorName:
 ```python title="Definition"
 ListBillingGroupsPaginatorName = Literal[
     "list_billing_groups",
+]
+```
+## ListCustomLineItemVersionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.literals import ListCustomLineItemVersionsPaginatorName
+
+def get_value() -> ListCustomLineItemVersionsPaginatorName:
+    return "list_custom_line_item_versions"
+```
+
+```python title="Definition"
+ListCustomLineItemVersionsPaginatorName = Literal[
+    "list_custom_line_item_versions",
 ]
 ```
 ## ListCustomLineItemsPaginatorName
@@ -512,6 +527,7 @@ ServiceName = Literal[
     "redshift-serverless",
     "rekognition",
     "resiliencehub",
+    "resource-explorer-2",
     "resource-groups",
     "resourcegroupstaggingapi",
     "robomaker",
@@ -622,6 +638,7 @@ PaginatorName = Literal[
     "list_account_associations",
     "list_billing_group_cost_reports",
     "list_billing_groups",
+    "list_custom_line_item_versions",
     "list_custom_line_items",
     "list_pricing_plans",
     "list_pricing_plans_associated_with_pricing_rule",

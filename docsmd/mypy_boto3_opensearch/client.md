@@ -61,8 +61,8 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### accept\_inbound\_connection
 
-Allows the remote domain owner to accept an inbound cross-cluster connection
-request.
+Allows the destination Amazon OpenSearch Service domain owner to accept an
+inbound cross-cluster search connection request.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").accept_inbound_connection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.accept_inbound_connection)
@@ -91,7 +91,7 @@ parent.accept_inbound_connection(**kwargs)
 
 ### add\_tags
 
-Attaches tags to an existing domain.
+Attaches tags to an existing Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").add_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.add_tags)
@@ -151,6 +151,38 @@ parent.associate_package(**kwargs)
 ```
 
 1. See [:material-code-braces: AssociatePackageRequestRequestTypeDef](./type_defs.md#associatepackagerequestrequesttypedef) 
+
+### authorize\_vpc\_endpoint\_access
+
+Provides access to an Amazon OpenSearch Service domain through the use of an
+interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").authorize_vpc_endpoint_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.authorize_vpc_endpoint_access)
+
+```python title="Method definition"
+def authorize_vpc_endpoint_access(
+    self,
+    *,
+    DomainName: str,
+    Account: str,
+) -> AuthorizeVpcEndpointAccessResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AuthorizeVpcEndpointAccessResponseTypeDef](./type_defs.md#authorizevpcendpointaccessresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AuthorizeVpcEndpointAccessRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Account": ...,
+}
+
+parent.authorize_vpc_endpoint_access(**kwargs)
+```
+
+1. See [:material-code-braces: AuthorizeVpcEndpointAccessRequestRequestTypeDef](./type_defs.md#authorizevpcendpointaccessrequestrequesttypedef) 
 
 ### can\_paginate
 
@@ -215,7 +247,7 @@ def close(
 
 ### create\_domain
 
-Creates a new Amazon OpenSearch Service domain.
+Creates an Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").create_domain` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_domain)
@@ -271,8 +303,8 @@ parent.create_domain(**kwargs)
 
 ### create\_outbound\_connection
 
-Creates a new cross-cluster connection from a local OpenSearch domain to a
-remote OpenSearch domain.
+Creates a new cross-cluster search connection from a source Amazon OpenSearch
+Service domain to a destination domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").create_outbound_connection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_outbound_connection)
@@ -307,7 +339,7 @@ parent.create_outbound_connection(**kwargs)
 
 ### create\_package
 
-Create a package for use with Amazon OpenSearch Service domains.
+Creates a package for use with Amazon OpenSearch Service domains.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").create_package` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_package)
@@ -341,9 +373,42 @@ parent.create_package(**kwargs)
 
 1. See [:material-code-braces: CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef) 
 
+### create\_vpc\_endpoint
+
+Creates an Amazon OpenSearch Service-managed VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").create_vpc_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_vpc_endpoint)
+
+```python title="Method definition"
+def create_vpc_endpoint(
+    self,
+    *,
+    DomainArn: str,
+    VpcOptions: VPCOptionsTypeDef,  # (1)
+    ClientToken: str = ...,
+) -> CreateVpcEndpointResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+2. See [:material-code-braces: CreateVpcEndpointResponseTypeDef](./type_defs.md#createvpcendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateVpcEndpointRequestRequestTypeDef = {  # (1)
+    "DomainArn": ...,
+    "VpcOptions": ...,
+}
+
+parent.create_vpc_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: CreateVpcEndpointRequestRequestTypeDef](./type_defs.md#createvpcendpointrequestrequesttypedef) 
+
 ### delete\_domain
 
-Permanently deletes the specified domain and all of its data.
+Deletes an Amazon OpenSearch Service domain and all of its data.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").delete_domain` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_domain)
@@ -372,8 +437,8 @@ parent.delete_domain(**kwargs)
 
 ### delete\_inbound\_connection
 
-Allows the remote domain owner to delete an existing inbound cross-cluster
-connection.
+Allows the destination Amazon OpenSearch Service domain owner to delete an
+existing inbound cross-cluster search connection.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").delete_inbound_connection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_inbound_connection)
@@ -402,8 +467,8 @@ parent.delete_inbound_connection(**kwargs)
 
 ### delete\_outbound\_connection
 
-Allows the local domain owner to delete an existing outbound cross-cluster
-connection.
+Allows the source Amazon OpenSearch Service domain owner to delete an existing
+outbound cross-cluster search connection.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").delete_outbound_connection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_outbound_connection)
@@ -432,7 +497,7 @@ parent.delete_outbound_connection(**kwargs)
 
 ### delete\_package
 
-Deletes the package.
+Deletes an Amazon OpenSearch Service package.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").delete_package` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_package)
@@ -459,10 +524,39 @@ parent.delete_package(**kwargs)
 
 1. See [:material-code-braces: DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef) 
 
+### delete\_vpc\_endpoint
+
+Deletes an Amazon OpenSearch Service-managed interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").delete_vpc_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_vpc_endpoint)
+
+```python title="Method definition"
+def delete_vpc_endpoint(
+    self,
+    *,
+    VpcEndpointId: str,
+) -> DeleteVpcEndpointResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteVpcEndpointResponseTypeDef](./type_defs.md#deletevpcendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteVpcEndpointRequestRequestTypeDef = {  # (1)
+    "VpcEndpointId": ...,
+}
+
+parent.delete_vpc_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVpcEndpointRequestRequestTypeDef](./type_defs.md#deletevpcendpointrequestrequesttypedef) 
+
 ### describe\_domain
 
-Returns domain configuration information about the specified domain, including
-the domain ID, domain endpoint, and domain ARN.
+Describes the domain configuration for the specified Amazon OpenSearch Service
+domain, including the domain ID, domain service endpoint, and domain ARN.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain)
@@ -491,8 +585,8 @@ parent.describe_domain(**kwargs)
 
 ### describe\_domain\_auto\_tunes
 
-Provides scheduled Auto-Tune action details for the domain, such as Auto-Tune
-action type, description, severity, and scheduled date.
+Returns the list of optimizations that Auto-Tune has made to an Amazon
+OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain_auto_tunes` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_auto_tunes)
@@ -523,8 +617,8 @@ parent.describe_domain_auto_tunes(**kwargs)
 
 ### describe\_domain\_change\_progress
 
-Returns information about the current blue/green deployment happening on a
-domain, including a change ID, status, and progress stages.
+Returns information about the current blue/green deployment happening on an
+Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain_change_progress` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_change_progress)
@@ -554,8 +648,7 @@ parent.describe_domain_change_progress(**kwargs)
 
 ### describe\_domain\_config
 
-Provides cluster configuration information about the specified domain, such as
-the state, creation date, update version, and update date for cluster options.
+Returns the configuration of an Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_config)
@@ -584,8 +677,8 @@ parent.describe_domain_config(**kwargs)
 
 ### describe\_domains
 
-Returns domain configuration information about the specified domains, including
-the domain ID, domain endpoint, and domain ARN.
+Returns domain configuration information about the specified Amazon OpenSearch
+Service domains.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_domains` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domains)
@@ -614,7 +707,8 @@ parent.describe_domains(**kwargs)
 
 ### describe\_inbound\_connections
 
-Lists all the inbound cross-cluster connections for a remote domain.
+Lists all the inbound cross-cluster search connections for a destination
+(remote) Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_inbound_connections` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_inbound_connections)
@@ -646,8 +740,8 @@ parent.describe_inbound_connections(**kwargs)
 
 ### describe\_instance\_type\_limits
 
-Describe the limits for a given instance type and OpenSearch or Elasticsearch
-version.
+Describes the instance count, storage, and master node limits for a given
+OpenSearch or Elasticsearch version and instance type.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_instance_type_limits` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_instance_type_limits)
@@ -680,7 +774,8 @@ parent.describe_instance_type_limits(**kwargs)
 
 ### describe\_outbound\_connections
 
-Lists all the outbound cross-cluster connections for a local domain.
+Lists all the outbound cross-cluster connections for a local (source) Amazon
+OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_outbound_connections` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_outbound_connections)
@@ -712,7 +807,7 @@ parent.describe_outbound_connections(**kwargs)
 
 ### describe\_packages
 
-Describes all packages available to Amazon OpenSearch Service domains.
+Describes all packages available to OpenSearch Service.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_packages` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_packages)
@@ -744,7 +839,8 @@ parent.describe_packages(**kwargs)
 
 ### describe\_reserved\_instance\_offerings
 
-Lists available reserved OpenSearch instance offerings.
+Describes the available Amazon OpenSearch Service Reserved Instance offerings
+for a given Region.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_reserved_instance_offerings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_reserved_instance_offerings)
@@ -775,7 +871,8 @@ parent.describe_reserved_instance_offerings(**kwargs)
 
 ### describe\_reserved\_instances
 
-Returns information about reserved OpenSearch instances for this account.
+Describes the Amazon OpenSearch Service instances that you have reserved in a
+given Region.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").describe_reserved_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_reserved_instances)
@@ -804,9 +901,38 @@ parent.describe_reserved_instances(**kwargs)
 
 1. See [:material-code-braces: DescribeReservedInstancesRequestRequestTypeDef](./type_defs.md#describereservedinstancesrequestrequesttypedef) 
 
+### describe\_vpc\_endpoints
+
+Describes one or more Amazon OpenSearch Service-managed VPC endpoints.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_vpc_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_vpc_endpoints)
+
+```python title="Method definition"
+def describe_vpc_endpoints(
+    self,
+    *,
+    VpcEndpointIds: Sequence[str],
+) -> DescribeVpcEndpointsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointsResponseTypeDef](./type_defs.md#describevpcendpointsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointsRequestRequestTypeDef = {  # (1)
+    "VpcEndpointIds": ...,
+}
+
+parent.describe_vpc_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointsRequestRequestTypeDef](./type_defs.md#describevpcendpointsrequestrequesttypedef) 
+
 ### dissociate\_package
 
-Dissociates a package from the Amazon OpenSearch Service domain.
+Removes a package from the specified Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").dissociate_package` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.dissociate_package)
@@ -856,7 +982,8 @@ def generate_presigned_url(
 
 ### get\_compatible\_versions
 
-Returns a list of upgrade-compatible versions of OpenSearch/Elasticsearch.
+Returns a map of OpenSearch or Elasticsearch versions and the versions you can
+upgrade them to.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").get_compatible_versions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_compatible_versions)
@@ -885,8 +1012,8 @@ parent.get_compatible_versions(**kwargs)
 
 ### get\_package\_version\_history
 
-Returns a list of package versions, along with their creation time and commit
-message.
+Returns a list of Amazon OpenSearch Service package versions, along with their
+creation time and commit message.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").get_package_version_history` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_package_version_history)
@@ -917,7 +1044,8 @@ parent.get_package_version_history(**kwargs)
 
 ### get\_upgrade\_history
 
-Retrieves the complete history of the last 10 upgrades performed on the domain.
+Retrieves the complete history of the last 10 upgrades performed on an Amazon
+OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").get_upgrade_history` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_upgrade_history)
@@ -948,8 +1076,8 @@ parent.get_upgrade_history(**kwargs)
 
 ### get\_upgrade\_status
 
-Retrieves the latest status of the last upgrade or upgrade eligibility check
-performed on the domain.
+Returns the most recent status of the last upgrade or upgrade eligibility check
+performed on an Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").get_upgrade_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_upgrade_status)
@@ -978,7 +1106,8 @@ parent.get_upgrade_status(**kwargs)
 
 ### list\_domain\_names
 
-Returns the names of all domains owned by the current user's account.
+Returns the names of all Amazon OpenSearch Service domains owned by the current
+user in the active Region.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").list_domain_names` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_domain_names)
@@ -1008,7 +1137,7 @@ parent.list_domain_names(**kwargs)
 
 ### list\_domains\_for\_package
 
-Lists all Amazon OpenSearch Service domains associated with the package.
+Lists all Amazon OpenSearch Service domains associated with a given package.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").list_domains_for_package` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_domains_for_package)
@@ -1039,8 +1168,8 @@ parent.list_domains_for_package(**kwargs)
 
 ### list\_instance\_type\_details
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/opensearch-2021-01-01/ListInstanceTypeDetails).
+Lists all instance types and available features for a given OpenSearch or
+Elasticsearch version.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").list_instance_type_details` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_instance_type_details)
@@ -1072,7 +1201,7 @@ parent.list_instance_type_details(**kwargs)
 
 ### list\_packages\_for\_domain
 
-Lists all packages associated with the Amazon OpenSearch Service domain.
+Lists all packages associated with an Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").list_packages_for_domain` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_packages_for_domain)
@@ -1103,7 +1232,7 @@ parent.list_packages_for_domain(**kwargs)
 
 ### list\_tags
 
-Returns all tags for the given domain.
+Returns all resource tags for an Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").list_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_tags)
@@ -1132,7 +1261,8 @@ parent.list_tags(**kwargs)
 
 ### list\_versions
 
-List all supported versions of OpenSearch and Elasticsearch.
+Lists all versions of OpenSearch and Elasticsearch that Amazon OpenSearch
+Service supports.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").list_versions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_versions)
@@ -1160,9 +1290,102 @@ parent.list_versions(**kwargs)
 
 1. See [:material-code-braces: ListVersionsRequestRequestTypeDef](./type_defs.md#listversionsrequestrequesttypedef) 
 
+### list\_vpc\_endpoint\_access
+
+Retrieves information about each Amazon Web Services principal that is allowed
+to access a given Amazon OpenSearch Service domain through the use of an
+interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").list_vpc_endpoint_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_vpc_endpoint_access)
+
+```python title="Method definition"
+def list_vpc_endpoint_access(
+    self,
+    *,
+    DomainName: str,
+    NextToken: str = ...,
+) -> ListVpcEndpointAccessResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListVpcEndpointAccessResponseTypeDef](./type_defs.md#listvpcendpointaccessresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVpcEndpointAccessRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
+
+parent.list_vpc_endpoint_access(**kwargs)
+```
+
+1. See [:material-code-braces: ListVpcEndpointAccessRequestRequestTypeDef](./type_defs.md#listvpcendpointaccessrequestrequesttypedef) 
+
+### list\_vpc\_endpoints
+
+Retrieves all Amazon OpenSearch Service-managed VPC endpoints in the current
+Amazon Web Services account and Region.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").list_vpc_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_vpc_endpoints)
+
+```python title="Method definition"
+def list_vpc_endpoints(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListVpcEndpointsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListVpcEndpointsResponseTypeDef](./type_defs.md#listvpcendpointsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVpcEndpointsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_vpc_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: ListVpcEndpointsRequestRequestTypeDef](./type_defs.md#listvpcendpointsrequestrequesttypedef) 
+
+### list\_vpc\_endpoints\_for\_domain
+
+Retrieves all Amazon OpenSearch Service-managed VPC endpoints associated with a
+particular domain.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").list_vpc_endpoints_for_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_vpc_endpoints_for_domain)
+
+```python title="Method definition"
+def list_vpc_endpoints_for_domain(
+    self,
+    *,
+    DomainName: str,
+    NextToken: str = ...,
+) -> ListVpcEndpointsForDomainResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListVpcEndpointsForDomainResponseTypeDef](./type_defs.md#listvpcendpointsfordomainresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVpcEndpointsForDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
+
+parent.list_vpc_endpoints_for_domain(**kwargs)
+```
+
+1. See [:material-code-braces: ListVpcEndpointsForDomainRequestRequestTypeDef](./type_defs.md#listvpcendpointsfordomainrequestrequesttypedef) 
+
 ### purchase\_reserved\_instance\_offering
 
-Allows you to purchase reserved OpenSearch instances.
+Allows you to purchase Amazon OpenSearch Service Reserved Instances.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").purchase_reserved_instance_offering` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.purchase_reserved_instance_offering)
@@ -1194,8 +1417,8 @@ parent.purchase_reserved_instance_offering(**kwargs)
 
 ### reject\_inbound\_connection
 
-Allows the remote domain owner to reject an inbound cross-cluster connection
-request.
+Allows the remote Amazon OpenSearch Service domain owner to reject an inbound
+cross-cluster connection request.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").reject_inbound_connection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.reject_inbound_connection)
@@ -1224,7 +1447,7 @@ parent.reject_inbound_connection(**kwargs)
 
 ### remove\_tags
 
-Removes the specified set of tags from the given domain.
+Removes the specified set of tags from an Amazon OpenSearch Service domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").remove_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.remove_tags)
@@ -1252,6 +1475,37 @@ parent.remove_tags(**kwargs)
 ```
 
 1. See [:material-code-braces: RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef) 
+
+### revoke\_vpc\_endpoint\_access
+
+Revokes access to an Amazon OpenSearch Service domain that was provided through
+an interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").revoke_vpc_endpoint_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.revoke_vpc_endpoint_access)
+
+```python title="Method definition"
+def revoke_vpc_endpoint_access(
+    self,
+    *,
+    DomainName: str,
+    Account: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: RevokeVpcEndpointAccessRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Account": ...,
+}
+
+parent.revoke_vpc_endpoint_access(**kwargs)
+```
+
+1. See [:material-code-braces: RevokeVpcEndpointAccessRequestRequestTypeDef](./type_defs.md#revokevpcendpointaccessrequestrequesttypedef) 
 
 ### start\_service\_software\_update
 
@@ -1284,8 +1538,8 @@ parent.start_service_software_update(**kwargs)
 
 ### update\_domain\_config
 
-Modifies the cluster configuration of the specified domain, such as setting the
-instance type and the number of instances.
+Modifies the cluster configuration of the specified Amazon OpenSearch Service
+domain.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").update_domain_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.update_domain_config)
@@ -1371,10 +1625,43 @@ parent.update_package(**kwargs)
 
 1. See [:material-code-braces: UpdatePackageRequestRequestTypeDef](./type_defs.md#updatepackagerequestrequesttypedef) 
 
+### update\_vpc\_endpoint
+
+Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").update_vpc_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.update_vpc_endpoint)
+
+```python title="Method definition"
+def update_vpc_endpoint(
+    self,
+    *,
+    VpcEndpointId: str,
+    VpcOptions: VPCOptionsTypeDef,  # (1)
+) -> UpdateVpcEndpointResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+2. See [:material-code-braces: UpdateVpcEndpointResponseTypeDef](./type_defs.md#updatevpcendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateVpcEndpointRequestRequestTypeDef = {  # (1)
+    "VpcEndpointId": ...,
+    "VpcOptions": ...,
+}
+
+parent.update_vpc_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateVpcEndpointRequestRequestTypeDef](./type_defs.md#updatevpcendpointrequestrequesttypedef) 
+
 ### upgrade\_domain
 
-Allows you to either upgrade your domain or perform an upgrade eligibility check
-to a compatible version of OpenSearch or Elasticsearch.
+Allows you to either upgrade your Amazon OpenSearch Service domain or perform an
+upgrade eligibility check to a compatible version of OpenSearch or
+Elasticsearch.
 
 Type annotations and code completion for `#!python boto3.client("opensearch").upgrade_domain` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.upgrade_domain)

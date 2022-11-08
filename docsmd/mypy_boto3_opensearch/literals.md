@@ -378,6 +378,21 @@ PackageTypeType = Literal[
     "TXT-DICTIONARY",
 ]
 ```
+## PrincipalTypeType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import PrincipalTypeType
+
+def get_value() -> PrincipalTypeType:
+    return "AWS_ACCOUNT"
+```
+
+```python title="Definition"
+PrincipalTypeType = Literal[
+    "AWS_ACCOUNT",
+    "AWS_SERVICE",
+]
+```
 ## ReservedInstancePaymentOptionType
 
 ```python title="Usage Example"
@@ -517,6 +532,41 @@ VolumeTypeType = Literal[
     "gp3",
     "io1",
     "standard",
+]
+```
+## VpcEndpointErrorCodeType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import VpcEndpointErrorCodeType
+
+def get_value() -> VpcEndpointErrorCodeType:
+    return "ENDPOINT_NOT_FOUND"
+```
+
+```python title="Definition"
+VpcEndpointErrorCodeType = Literal[
+    "ENDPOINT_NOT_FOUND",
+    "SERVER_ERROR",
+]
+```
+## VpcEndpointStatusType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import VpcEndpointStatusType
+
+def get_value() -> VpcEndpointStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+VpcEndpointStatusType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATING",
+    "DELETE_FAILED",
+    "DELETING",
+    "UPDATE_FAILED",
+    "UPDATING",
 ]
 ```
 ## OpenSearchServiceServiceName
@@ -791,6 +841,7 @@ ServiceName = Literal[
     "redshift-serverless",
     "rekognition",
     "resiliencehub",
+    "resource-explorer-2",
     "resource-groups",
     "resourcegroupstaggingapi",
     "robomaker",

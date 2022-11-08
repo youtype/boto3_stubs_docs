@@ -465,7 +465,8 @@ parent.delete_pricing_plan(**kwargs)
 
 ### delete\_pricing\_rule
 
-Deletes the pricing rule identified by the input Amazon Resource Name (ARN).
+Deletes the pricing rule that's identified by the input Amazon Resource Name
+(ARN).
 
 Type annotations and code completion for `#!python boto3.client("billingconductor").delete_pricing_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_pricing_rule)
@@ -575,8 +576,8 @@ def generate_presigned_url(
 
 ### list\_account\_associations
 
-* **Amazon Web Services Billing Conductor is in beta release and is subject to
-change.
+This is a paginated call to list linked accounts that are linked to the payer
+account for the specified time period.
 
 Type annotations and code completion for `#!python boto3.client("billingconductor").list_account_associations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_account_associations)
@@ -675,6 +676,39 @@ parent.list_billing_groups(**kwargs)
 
 1. See [:material-code-braces: ListBillingGroupsInputRequestTypeDef](./type_defs.md#listbillinggroupsinputrequesttypedef) 
 
+### list\_custom\_line\_item\_versions
+
+A paginated call to get a list of all custom line item versions.
+
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_custom_line_item_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_custom_line_item_versions)
+
+```python title="Method definition"
+def list_custom_line_item_versions(
+    self,
+    *,
+    Arn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: ListCustomLineItemVersionsFilterTypeDef = ...,  # (1)
+) -> ListCustomLineItemVersionsOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ListCustomLineItemVersionsFilterTypeDef](./type_defs.md#listcustomlineitemversionsfiltertypedef) 
+2. See [:material-code-braces: ListCustomLineItemVersionsOutputTypeDef](./type_defs.md#listcustomlineitemversionsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomLineItemVersionsInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
+
+parent.list_custom_line_item_versions(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomLineItemVersionsInputRequestTypeDef](./type_defs.md#listcustomlineitemversionsinputrequesttypedef) 
+
 ### list\_custom\_line\_items
 
 A paginated call to get a list of all custom line items (FFLIs) for the given
@@ -744,7 +778,7 @@ parent.list_pricing_plans(**kwargs)
 
 ### list\_pricing\_plans\_associated\_with\_pricing\_rule
 
-A list of the pricing plans associated with a pricing rule.
+A list of the pricing plans that are associated with a pricing rule.
 
 Type annotations and code completion for `#!python boto3.client("billingconductor").list_pricing_plans_associated_with_pricing_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_plans_associated_with_pricing_rule)
@@ -810,7 +844,7 @@ parent.list_pricing_rules(**kwargs)
 
 ### list\_pricing\_rules\_associated\_to\_pricing\_plan
 
-Lists the pricing rules associated with a pricing plan.
+Lists the pricing rules that are associated with a pricing plan.
 
 Type annotations and code completion for `#!python boto3.client("billingconductor").list_pricing_rules_associated_to_pricing_plan` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_rules_associated_to_pricing_plan)
@@ -842,7 +876,7 @@ parent.list_pricing_rules_associated_to_pricing_plan(**kwargs)
 
 ### list\_resources\_associated\_to\_custom\_line\_item
 
-List the resources associated to a custom line item.
+List the resources that are associated to a custom line item.
 
 Type annotations and code completion for `#!python boto3.client("billingconductor").list_resources_associated_to_custom_line_item` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_resources_associated_to_custom_line_item)
@@ -1107,6 +1141,7 @@ Type annotations and code completion for `#!python boto3.client("billingconducto
 - `client.get_paginator("list_account_associations")` -> [ListAccountAssociationsPaginator](./paginators.md#listaccountassociationspaginator)
 - `client.get_paginator("list_billing_group_cost_reports")` -> [ListBillingGroupCostReportsPaginator](./paginators.md#listbillinggroupcostreportspaginator)
 - `client.get_paginator("list_billing_groups")` -> [ListBillingGroupsPaginator](./paginators.md#listbillinggroupspaginator)
+- `client.get_paginator("list_custom_line_item_versions")` -> [ListCustomLineItemVersionsPaginator](./paginators.md#listcustomlineitemversionspaginator)
 - `client.get_paginator("list_custom_line_items")` -> [ListCustomLineItemsPaginator](./paginators.md#listcustomlineitemspaginator)
 - `client.get_paginator("list_pricing_plans")` -> [ListPricingPlansPaginator](./paginators.md#listpricingplanspaginator)
 - `client.get_paginator("list_pricing_plans_associated_with_pricing_rule")` -> [ListPricingPlansAssociatedWithPricingRulePaginator](./paginators.md#listpricingplansassociatedwithpricingrulepaginator)

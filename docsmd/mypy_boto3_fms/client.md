@@ -114,6 +114,68 @@ parent.associate_third_party_firewall(**kwargs)
 
 1. See [:material-code-braces: AssociateThirdPartyFirewallRequestRequestTypeDef](./type_defs.md#associatethirdpartyfirewallrequestrequesttypedef) 
 
+### batch\_associate\_resource
+
+Associate resources to a Firewall Manager resource set.
+
+Type annotations and code completion for `#!python boto3.client("fms").batch_associate_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.batch_associate_resource)
+
+```python title="Method definition"
+def batch_associate_resource(
+    self,
+    *,
+    ResourceSetIdentifier: str,
+    Items: Sequence[str],
+) -> BatchAssociateResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: BatchAssociateResourceResponseTypeDef](./type_defs.md#batchassociateresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchAssociateResourceRequestRequestTypeDef = {  # (1)
+    "ResourceSetIdentifier": ...,
+    "Items": ...,
+}
+
+parent.batch_associate_resource(**kwargs)
+```
+
+1. See [:material-code-braces: BatchAssociateResourceRequestRequestTypeDef](./type_defs.md#batchassociateresourcerequestrequesttypedef) 
+
+### batch\_disassociate\_resource
+
+Disassociates resources from a Firewall Manager resource set.
+
+Type annotations and code completion for `#!python boto3.client("fms").batch_disassociate_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.batch_disassociate_resource)
+
+```python title="Method definition"
+def batch_disassociate_resource(
+    self,
+    *,
+    ResourceSetIdentifier: str,
+    Items: Sequence[str],
+) -> BatchDisassociateResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: BatchDisassociateResourceResponseTypeDef](./type_defs.md#batchdisassociateresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchDisassociateResourceRequestRequestTypeDef = {  # (1)
+    "ResourceSetIdentifier": ...,
+    "Items": ...,
+}
+
+parent.batch_disassociate_resource(**kwargs)
+```
+
+1. See [:material-code-braces: BatchDisassociateResourceRequestRequestTypeDef](./type_defs.md#batchdisassociateresourcerequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -250,6 +312,35 @@ parent.delete_protocols_list(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteProtocolsListRequestRequestTypeDef](./type_defs.md#deleteprotocolslistrequestrequesttypedef) 
+
+### delete\_resource\_set
+
+Deletes the specified  ResourceSet .
+
+Type annotations and code completion for `#!python boto3.client("fms").delete_resource_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_resource_set)
+
+```python title="Method definition"
+def delete_resource_set(
+    self,
+    *,
+    Identifier: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceSetRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
+
+parent.delete_resource_set(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteResourceSetRequestRequestTypeDef](./type_defs.md#deleteresourcesetrequestrequesttypedef) 
 
 ### disassociate\_admin\_account
 
@@ -507,6 +598,35 @@ parent.get_protocols_list(**kwargs)
 
 1. See [:material-code-braces: GetProtocolsListRequestRequestTypeDef](./type_defs.md#getprotocolslistrequestrequesttypedef) 
 
+### get\_resource\_set
+
+Gets information about a specific resource set.
+
+Type annotations and code completion for `#!python boto3.client("fms").get_resource_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_resource_set)
+
+```python title="Method definition"
+def get_resource_set(
+    self,
+    *,
+    Identifier: str,
+) -> GetResourceSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetResourceSetResponseTypeDef](./type_defs.md#getresourcesetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourceSetRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
+
+parent.get_resource_set(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourceSetRequestRequestTypeDef](./type_defs.md#getresourcesetrequestrequesttypedef) 
+
 ### get\_third\_party\_firewall\_association\_status
 
 The onboarding status of a Firewall Manager admin account to third-party
@@ -636,6 +756,40 @@ parent.list_compliance_status(**kwargs)
 
 1. See [:material-code-braces: ListComplianceStatusRequestRequestTypeDef](./type_defs.md#listcompliancestatusrequestrequesttypedef) 
 
+### list\_discovered\_resources
+
+Returns an array of resources in the organization's accounts that are available
+to be associated with a resource set.
+
+Type annotations and code completion for `#!python boto3.client("fms").list_discovered_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_discovered_resources)
+
+```python title="Method definition"
+def list_discovered_resources(
+    self,
+    *,
+    MemberAccountIds: Sequence[str],
+    ResourceType: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDiscoveredResourcesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDiscoveredResourcesRequestRequestTypeDef = {  # (1)
+    "MemberAccountIds": ...,
+    "ResourceType": ...,
+}
+
+parent.list_discovered_resources(**kwargs)
+```
+
+1. See [:material-code-braces: ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef) 
+
 ### list\_member\_accounts
 
 Returns a `MemberAccounts` object that lists the member accounts in the
@@ -727,6 +881,67 @@ parent.list_protocols_lists(**kwargs)
 ```
 
 1. See [:material-code-braces: ListProtocolsListsRequestRequestTypeDef](./type_defs.md#listprotocolslistsrequestrequesttypedef) 
+
+### list\_resource\_set\_resources
+
+Returns an array of resources that are currently associated to a resource set.
+
+Type annotations and code completion for `#!python boto3.client("fms").list_resource_set_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_resource_set_resources)
+
+```python title="Method definition"
+def list_resource_set_resources(
+    self,
+    *,
+    Identifier: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListResourceSetResourcesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListResourceSetResourcesResponseTypeDef](./type_defs.md#listresourcesetresourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceSetResourcesRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
+
+parent.list_resource_set_resources(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceSetResourcesRequestRequestTypeDef](./type_defs.md#listresourcesetresourcesrequestrequesttypedef) 
+
+### list\_resource\_sets
+
+Returns an array of `ResourceSetSummary` objects.
+
+Type annotations and code completion for `#!python boto3.client("fms").list_resource_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_resource_sets)
+
+```python title="Method definition"
+def list_resource_sets(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListResourceSetsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceSetsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_resource_sets(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceSetsRequestRequestTypeDef](./type_defs.md#listresourcesetsrequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 
@@ -918,6 +1133,38 @@ parent.put_protocols_list(**kwargs)
 ```
 
 1. See [:material-code-braces: PutProtocolsListRequestRequestTypeDef](./type_defs.md#putprotocolslistrequestrequesttypedef) 
+
+### put\_resource\_set
+
+Creates the resource set.
+
+Type annotations and code completion for `#!python boto3.client("fms").put_resource_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_resource_set)
+
+```python title="Method definition"
+def put_resource_set(
+    self,
+    *,
+    ResourceSet: ResourceSetTypeDef,  # (1)
+    TagList: Sequence[TagTypeDef] = ...,  # (2)
+) -> PutResourceSetResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ResourceSetTypeDef](./type_defs.md#resourcesettypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: PutResourceSetResponseTypeDef](./type_defs.md#putresourcesetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutResourceSetRequestRequestTypeDef = {  # (1)
+    "ResourceSet": ...,
+}
+
+parent.put_resource_set(**kwargs)
+```
+
+1. See [:material-code-braces: PutResourceSetRequestRequestTypeDef](./type_defs.md#putresourcesetrequestrequesttypedef) 
 
 ### tag\_resource
 
