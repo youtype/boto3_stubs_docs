@@ -107,6 +107,7 @@ def get_value() -> CommentBodyTextTypeType:
 - [RelatedItemTypeType](./literals.md#relateditemtypetype)
 - [SearchCasesPaginatorName](./literals.md#searchcasespaginatorname)
 - [SearchRelatedItemsPaginatorName](./literals.md#searchrelateditemspaginatorname)
+- [TemplateStatusType](./literals.md#templatestatustype)
 - [ConnectCasesServiceName](./literals.md#connectcasesservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)

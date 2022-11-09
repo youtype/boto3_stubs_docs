@@ -132,6 +132,58 @@ EndpointStatusType = Literal[
     "failed",
 ]
 ```
+## EphemerisInvalidReasonType
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import EphemerisInvalidReasonType
+
+def get_value() -> EphemerisInvalidReasonType:
+    return "KMS_KEY_INVALID"
+```
+
+```python title="Definition"
+EphemerisInvalidReasonType = Literal[
+    "KMS_KEY_INVALID",
+    "METADATA_INVALID",
+    "TIME_RANGE_INVALID",
+    "TRAJECTORY_INVALID",
+    "VALIDATION_ERROR",
+]
+```
+## EphemerisSourceType
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import EphemerisSourceType
+
+def get_value() -> EphemerisSourceType:
+    return "CUSTOMER_PROVIDED"
+```
+
+```python title="Definition"
+EphemerisSourceType = Literal[
+    "CUSTOMER_PROVIDED",
+    "SPACE_TRACK",
+]
+```
+## EphemerisStatusType
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import EphemerisStatusType
+
+def get_value() -> EphemerisStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+EphemerisStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "ERROR",
+    "EXPIRED",
+    "INVALID",
+    "VALIDATING",
+]
+```
 ## FrequencyUnitsType
 
 ```python title="Usage Example"
@@ -188,6 +240,20 @@ def get_value() -> ListDataflowEndpointGroupsPaginatorName:
 ```python title="Definition"
 ListDataflowEndpointGroupsPaginatorName = Literal[
     "list_dataflow_endpoint_groups",
+]
+```
+## ListEphemeridesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import ListEphemeridesPaginatorName
+
+def get_value() -> ListEphemeridesPaginatorName:
+    return "list_ephemerides"
+```
+
+```python title="Definition"
+ListEphemeridesPaginatorName = Literal[
+    "list_ephemerides",
 ]
 ```
 ## ListGroundStationsPaginatorName
@@ -631,6 +697,7 @@ PaginatorName = Literal[
     "list_configs",
     "list_contacts",
     "list_dataflow_endpoint_groups",
+    "list_ephemerides",
     "list_ground_stations",
     "list_mission_profiles",
     "list_satellites",

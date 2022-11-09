@@ -128,6 +128,21 @@ SearchRelatedItemsPaginatorName = Literal[
     "search_related_items",
 ]
 ```
+## TemplateStatusType
+
+```python title="Usage Example"
+from mypy_boto3_connectcases.literals import TemplateStatusType
+
+def get_value() -> TemplateStatusType:
+    return "Active"
+```
+
+```python title="Definition"
+TemplateStatusType = Literal[
+    "Active",
+    "Inactive",
+]
+```
 ## ConnectCasesServiceName
 
 ```python title="Usage Example"

@@ -262,6 +262,7 @@ def get_value() -> ArchitectureTypeType:
 ```python title="Definition"
 ArchitectureTypeType = Literal[
     "arm64",
+    "arm64_mac",
     "i386",
     "x86_64",
     "x86_64_mac",
@@ -279,6 +280,7 @@ def get_value() -> ArchitectureValuesType:
 ```python title="Definition"
 ArchitectureValuesType = Literal[
     "arm64",
+    "arm64_mac",
     "i386",
     "x86_64",
     "x86_64_mac",
@@ -4522,9 +4524,13 @@ InstanceTypeType = Literal[
     "t4g.nano",
     "t4g.small",
     "t4g.xlarge",
+    "trn1.2xlarge",
+    "trn1.32xlarge",
     "u-12tb1.112xlarge",
     "u-12tb1.metal",
+    "u-18tb1.112xlarge",
     "u-18tb1.metal",
+    "u-24tb1.112xlarge",
     "u-24tb1.metal",
     "u-3tb1.56xlarge",
     "u-6tb1.112xlarge",

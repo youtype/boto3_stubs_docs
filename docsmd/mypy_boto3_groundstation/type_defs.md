@@ -336,6 +336,22 @@ class DeleteDataflowEndpointGroupRequestRequestTypeDef(TypedDict):
     dataflowEndpointGroupId: str,
 ```
 
+## DeleteEphemerisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import DeleteEphemerisRequestRequestTypeDef
+
+def get_value() -> DeleteEphemerisRequestRequestTypeDef:
+    return {
+        "ephemerisId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteEphemerisRequestRequestTypeDef(TypedDict):
+    ephemerisId: str,
+```
+
 ## DeleteMissionProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -368,6 +384,22 @@ class DescribeContactRequestRequestTypeDef(TypedDict):
     contactId: str,
 ```
 
+## DescribeEphemerisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import DescribeEphemerisRequestRequestTypeDef
+
+def get_value() -> DescribeEphemerisRequestRequestTypeDef:
+    return {
+        "ephemerisId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEphemerisRequestRequestTypeDef(TypedDict):
+    ephemerisId: str,
+```
+
 ## SecurityDetailsTypeDef
 
 ```python title="Usage Example"
@@ -388,6 +420,44 @@ class SecurityDetailsTypeDef(TypedDict):
     subnetIds: Sequence[str],
 ```
 
+## S3ObjectTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import S3ObjectTypeDef
+
+def get_value() -> S3ObjectTypeDef:
+    return {
+        "bucket": ...,
+    }
+```
+
+```python title="Definition"
+class S3ObjectTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    key: NotRequired[str],
+    version: NotRequired[str],
+```
+
+## EphemerisMetaDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import EphemerisMetaDataTypeDef
+
+def get_value() -> EphemerisMetaDataTypeDef:
+    return {
+        "source": ...,
+    }
+```
+
+```python title="Definition"
+class EphemerisMetaDataTypeDef(TypedDict):
+    source: EphemerisSourceType,  # (1)
+    ephemerisId: NotRequired[str],
+    epoch: NotRequired[datetime],
+    name: NotRequired[str],
+```
+
+1. See [:material-code-brackets: EphemerisSourceType](./literals.md#ephemerissourcetype) 
 ## FrequencyBandwidthTypeDef
 
 ```python title="Usage Example"
@@ -607,6 +677,30 @@ class ListDataflowEndpointGroupsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
+## ListEphemeridesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ListEphemeridesRequestRequestTypeDef
+
+def get_value() -> ListEphemeridesRequestRequestTypeDef:
+    return {
+        "endTime": ...,
+        "satelliteId": ...,
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListEphemeridesRequestRequestTypeDef(TypedDict):
+    endTime: Union[datetime, str],
+    satelliteId: str,
+    startTime: Union[datetime, str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    statusList: NotRequired[Sequence[EphemerisStatusType]],  # (1)
+```
+
+1. See [:material-code-brackets: EphemerisStatusType](./literals.md#ephemerisstatustype) 
 ## ListGroundStationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -678,25 +772,6 @@ class ListSatellitesRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## SatelliteListItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import SatelliteListItemTypeDef
-
-def get_value() -> SatelliteListItemTypeDef:
-    return {
-        "groundStations": ...,
-    }
-```
-
-```python title="Definition"
-class SatelliteListItemTypeDef(TypedDict):
-    groundStations: NotRequired[List[str]],
-    noradSatelliteID: NotRequired[int],
-    satelliteArn: NotRequired[str],
-    satelliteId: NotRequired[str],
-```
-
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -738,6 +813,24 @@ class ReserveContactRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
+## TimeRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import TimeRangeTypeDef
+
+def get_value() -> TimeRangeTypeDef:
+    return {
+        "endTime": ...,
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class TimeRangeTypeDef(TypedDict):
+    endTime: Union[datetime, str],
+    startTime: Union[datetime, str],
+```
+
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -772,6 +865,26 @@ def get_value() -> UntagResourceRequestRequestTypeDef:
 class UntagResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
     tagKeys: Sequence[str],
+```
+
+## UpdateEphemerisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import UpdateEphemerisRequestRequestTypeDef
+
+def get_value() -> UpdateEphemerisRequestRequestTypeDef:
+    return {
+        "enabled": ...,
+        "ephemerisId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateEphemerisRequestRequestTypeDef(TypedDict):
+    enabled: bool,
+    ephemerisId: str,
+    name: NotRequired[str],
+    priority: NotRequired[int],
 ```
 
 ## UpdateMissionProfileRequestRequestTypeDef
@@ -858,6 +971,25 @@ class DataflowEndpointGroupIdResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EphemerisIdResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import EphemerisIdResponseTypeDef
+
+def get_value() -> EphemerisIdResponseTypeDef:
+    return {
+        "ephemerisId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EphemerisIdResponseTypeDef(TypedDict):
+    ephemerisId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMinuteUsageResponseTypeDef
 
 ```python title="Usage Example"
@@ -918,31 +1050,6 @@ class GetMissionProfileResponseTypeDef(TypedDict):
     region: str,
     tags: Dict[str, str],
     trackingConfigArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetSatelliteResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import GetSatelliteResponseTypeDef
-
-def get_value() -> GetSatelliteResponseTypeDef:
-    return {
-        "groundStations": ...,
-        "noradSatelliteID": ...,
-        "satelliteArn": ...,
-        "satelliteId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSatelliteResponseTypeDef(TypedDict):
-    groundStations: List[str],
-    noradSatelliteID: int,
-    satelliteArn: str,
-    satelliteId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1080,6 +1187,115 @@ class DataflowEndpointTypeDef(TypedDict):
 
 1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
 2. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
+## EphemerisDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import EphemerisDescriptionTypeDef
+
+def get_value() -> EphemerisDescriptionTypeDef:
+    return {
+        "ephemerisData": ...,
+    }
+```
+
+```python title="Definition"
+class EphemerisDescriptionTypeDef(TypedDict):
+    ephemerisData: NotRequired[str],
+    sourceS3Object: NotRequired[S3ObjectTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
+## EphemerisItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import EphemerisItemTypeDef
+
+def get_value() -> EphemerisItemTypeDef:
+    return {
+        "creationTime": ...,
+    }
+```
+
+```python title="Definition"
+class EphemerisItemTypeDef(TypedDict):
+    creationTime: NotRequired[datetime],
+    enabled: NotRequired[bool],
+    ephemerisId: NotRequired[str],
+    name: NotRequired[str],
+    priority: NotRequired[int],
+    sourceS3Object: NotRequired[S3ObjectTypeDef],  # (1)
+    status: NotRequired[EphemerisStatusType],  # (2)
+```
+
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
+2. See [:material-code-brackets: EphemerisStatusType](./literals.md#ephemerisstatustype) 
+## OEMEphemerisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import OEMEphemerisTypeDef
+
+def get_value() -> OEMEphemerisTypeDef:
+    return {
+        "oemData": ...,
+    }
+```
+
+```python title="Definition"
+class OEMEphemerisTypeDef(TypedDict):
+    oemData: NotRequired[str],
+    s3Object: NotRequired[S3ObjectTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
+## GetSatelliteResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import GetSatelliteResponseTypeDef
+
+def get_value() -> GetSatelliteResponseTypeDef:
+    return {
+        "currentEphemeris": ...,
+        "groundStations": ...,
+        "noradSatelliteID": ...,
+        "satelliteArn": ...,
+        "satelliteId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSatelliteResponseTypeDef(TypedDict):
+    currentEphemeris: EphemerisMetaDataTypeDef,  # (1)
+    groundStations: List[str],
+    noradSatelliteID: int,
+    satelliteArn: str,
+    satelliteId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EphemerisMetaDataTypeDef](./type_defs.md#ephemerismetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SatelliteListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import SatelliteListItemTypeDef
+
+def get_value() -> SatelliteListItemTypeDef:
+    return {
+        "currentEphemeris": ...,
+    }
+```
+
+```python title="Definition"
+class SatelliteListItemTypeDef(TypedDict):
+    currentEphemeris: NotRequired[EphemerisMetaDataTypeDef],  # (1)
+    groundStations: NotRequired[List[str]],
+    noradSatelliteID: NotRequired[int],
+    satelliteArn: NotRequired[str],
+    satelliteId: NotRequired[str],
+```
+
+1. See [:material-code-braces: EphemerisMetaDataTypeDef](./type_defs.md#ephemerismetadatatypedef) 
 ## SpectrumConfigTypeDef
 
 ```python title="Usage Example"
@@ -1203,6 +1419,30 @@ class ListDataflowEndpointGroupsRequestListDataflowEndpointGroupsPaginateTypeDef
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListEphemeridesRequestListEphemeridesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ListEphemeridesRequestListEphemeridesPaginateTypeDef
+
+def get_value() -> ListEphemeridesRequestListEphemeridesPaginateTypeDef:
+    return {
+        "endTime": ...,
+        "satelliteId": ...,
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListEphemeridesRequestListEphemeridesPaginateTypeDef(TypedDict):
+    endTime: Union[datetime, str],
+    satelliteId: str,
+    startTime: Union[datetime, str],
+    statusList: NotRequired[Sequence[EphemerisStatusType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: EphemerisStatusType](./literals.md#ephemerisstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroundStationsRequestListGroundStationsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1277,28 +1517,27 @@ class ListMissionProfilesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MissionProfileListItemTypeDef](./type_defs.md#missionprofilelistitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListSatellitesResponseTypeDef
+## TLEDataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import ListSatellitesResponseTypeDef
+from mypy_boto3_groundstation.type_defs import TLEDataTypeDef
 
-def get_value() -> ListSatellitesResponseTypeDef:
+def get_value() -> TLEDataTypeDef:
     return {
-        "nextToken": ...,
-        "satellites": ...,
-        "ResponseMetadata": ...,
+        "tleLine1": ...,
+        "tleLine2": ...,
+        "validTimeRange": ...,
     }
 ```
 
 ```python title="Definition"
-class ListSatellitesResponseTypeDef(TypedDict):
-    nextToken: str,
-    satellites: List[SatelliteListItemTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class TLEDataTypeDef(TypedDict):
+    tleLine1: str,
+    tleLine2: str,
+    validTimeRange: TimeRangeTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: SatelliteListItemTypeDef](./type_defs.md#satellitelistitemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
 ## ListContactsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1340,6 +1579,69 @@ class EndpointDetailsTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataflowEndpointTypeDef](./type_defs.md#dataflowendpointtypedef) 
 2. See [:material-code-braces: SecurityDetailsTypeDef](./type_defs.md#securitydetailstypedef) 
+## EphemerisTypeDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import EphemerisTypeDescriptionTypeDef
+
+def get_value() -> EphemerisTypeDescriptionTypeDef:
+    return {
+        "oem": ...,
+    }
+```
+
+```python title="Definition"
+class EphemerisTypeDescriptionTypeDef(TypedDict):
+    oem: NotRequired[EphemerisDescriptionTypeDef],  # (1)
+    tle: NotRequired[EphemerisDescriptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EphemerisDescriptionTypeDef](./type_defs.md#ephemerisdescriptiontypedef) 
+2. See [:material-code-braces: EphemerisDescriptionTypeDef](./type_defs.md#ephemerisdescriptiontypedef) 
+## ListEphemeridesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ListEphemeridesResponseTypeDef
+
+def get_value() -> ListEphemeridesResponseTypeDef:
+    return {
+        "ephemerides": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEphemeridesResponseTypeDef(TypedDict):
+    ephemerides: List[EphemerisItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EphemerisItemTypeDef](./type_defs.md#ephemerisitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSatellitesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ListSatellitesResponseTypeDef
+
+def get_value() -> ListSatellitesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "satellites": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSatellitesResponseTypeDef(TypedDict):
+    nextToken: str,
+    satellites: List[SatelliteListItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SatelliteListItemTypeDef](./type_defs.md#satellitelistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AntennaDownlinkConfigTypeDef
 
 ```python title="Usage Example"
@@ -1401,6 +1703,25 @@ class AntennaUplinkConfigTypeDef(TypedDict):
 
 1. See [:material-code-braces: UplinkSpectrumConfigTypeDef](./type_defs.md#uplinkspectrumconfigtypedef) 
 2. See [:material-code-braces: EirpTypeDef](./type_defs.md#eirptypedef) 
+## TLEEphemerisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import TLEEphemerisTypeDef
+
+def get_value() -> TLEEphemerisTypeDef:
+    return {
+        "s3Object": ...,
+    }
+```
+
+```python title="Definition"
+class TLEEphemerisTypeDef(TypedDict):
+    s3Object: NotRequired[S3ObjectTypeDef],  # (1)
+    tleData: NotRequired[Sequence[TLEDataTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
+2. See [:material-code-braces: TLEDataTypeDef](./type_defs.md#tledatatypedef) 
 ## ConfigDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1466,6 +1787,46 @@ class GetDataflowEndpointGroupResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEphemerisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import DescribeEphemerisResponseTypeDef
+
+def get_value() -> DescribeEphemerisResponseTypeDef:
+    return {
+        "creationTime": ...,
+        "enabled": ...,
+        "ephemerisId": ...,
+        "invalidReason": ...,
+        "name": ...,
+        "priority": ...,
+        "satelliteId": ...,
+        "status": ...,
+        "suppliedData": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEphemerisResponseTypeDef(TypedDict):
+    creationTime: datetime,
+    enabled: bool,
+    ephemerisId: str,
+    invalidReason: EphemerisInvalidReasonType,  # (1)
+    name: str,
+    priority: int,
+    satelliteId: str,
+    status: EphemerisStatusType,  # (2)
+    suppliedData: EphemerisTypeDescriptionTypeDef,  # (3)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: EphemerisInvalidReasonType](./literals.md#ephemerisinvalidreasontype) 
+2. See [:material-code-brackets: EphemerisStatusType](./literals.md#ephemerisstatustype) 
+3. See [:material-code-braces: EphemerisTypeDescriptionTypeDef](./type_defs.md#ephemeristypedescriptiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigTypeDataTypeDef
 
 ```python title="Usage Example"
@@ -1495,6 +1856,25 @@ class ConfigTypeDataTypeDef(TypedDict):
 5. See [:material-code-braces: S3RecordingConfigTypeDef](./type_defs.md#s3recordingconfigtypedef) 
 6. See [:material-code-braces: TrackingConfigTypeDef](./type_defs.md#trackingconfigtypedef) 
 7. See [:material-code-braces: UplinkEchoConfigTypeDef](./type_defs.md#uplinkechoconfigtypedef) 
+## EphemerisDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import EphemerisDataTypeDef
+
+def get_value() -> EphemerisDataTypeDef:
+    return {
+        "oem": ...,
+    }
+```
+
+```python title="Definition"
+class EphemerisDataTypeDef(TypedDict):
+    oem: NotRequired[OEMEphemerisTypeDef],  # (1)
+    tle: NotRequired[TLEEphemerisTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OEMEphemerisTypeDef](./type_defs.md#oemephemeristypedef) 
+2. See [:material-code-braces: TLEEphemerisTypeDef](./type_defs.md#tleephemeristypedef) 
 ## DestinationTypeDef
 
 ```python title="Usage Example"
@@ -1612,6 +1992,31 @@ class UpdateConfigRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef) 
 2. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
+## CreateEphemerisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import CreateEphemerisRequestRequestTypeDef
+
+def get_value() -> CreateEphemerisRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "satelliteId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateEphemerisRequestRequestTypeDef(TypedDict):
+    name: str,
+    satelliteId: str,
+    enabled: NotRequired[bool],
+    ephemeris: NotRequired[EphemerisDataTypeDef],  # (1)
+    expirationTime: NotRequired[Union[datetime, str]],
+    kmsKeyArn: NotRequired[str],
+    priority: NotRequired[int],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: EphemerisDataTypeDef](./type_defs.md#ephemerisdatatypedef) 
 ## DataflowDetailTypeDef
 
 ```python title="Usage Example"

@@ -177,6 +177,44 @@ parent.create_dataflow_endpoint_group(**kwargs)
 
 1. See [:material-code-braces: CreateDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#createdataflowendpointgrouprequestrequesttypedef) 
 
+### create\_ephemeris
+
+Creates an Ephemeris with the specified `EphemerisData` .
+
+Type annotations and code completion for `#!python boto3.client("groundstation").create_ephemeris` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_ephemeris)
+
+```python title="Method definition"
+def create_ephemeris(
+    self,
+    *,
+    name: str,
+    satelliteId: str,
+    enabled: bool = ...,
+    ephemeris: EphemerisDataTypeDef = ...,  # (1)
+    expirationTime: Union[datetime, str] = ...,
+    kmsKeyArn: str = ...,
+    priority: int = ...,
+    tags: Mapping[str, str] = ...,
+) -> EphemerisIdResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: EphemerisDataTypeDef](./type_defs.md#ephemerisdatatypedef) 
+2. See [:material-code-braces: EphemerisIdResponseTypeDef](./type_defs.md#ephemerisidresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateEphemerisRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "satelliteId": ...,
+}
+
+parent.create_ephemeris(**kwargs)
+```
+
+1. See [:material-code-braces: CreateEphemerisRequestRequestTypeDef](./type_defs.md#createephemerisrequestrequesttypedef) 
+
 ### create\_mission\_profile
 
 Creates a mission profile.
@@ -276,6 +314,36 @@ parent.delete_dataflow_endpoint_group(**kwargs)
 
 1. See [:material-code-braces: DeleteDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#deletedataflowendpointgrouprequestrequesttypedef) 
 
+### delete\_ephemeris
+
+Deletes an ephemeris See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/groundstation-2019-05-23/DeleteEphemeris).
+
+Type annotations and code completion for `#!python boto3.client("groundstation").delete_ephemeris` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_ephemeris)
+
+```python title="Method definition"
+def delete_ephemeris(
+    self,
+    *,
+    ephemerisId: str,
+) -> EphemerisIdResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EphemerisIdResponseTypeDef](./type_defs.md#ephemerisidresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteEphemerisRequestRequestTypeDef = {  # (1)
+    "ephemerisId": ...,
+}
+
+parent.delete_ephemeris(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteEphemerisRequestRequestTypeDef](./type_defs.md#deleteephemerisrequestrequesttypedef) 
+
 ### delete\_mission\_profile
 
 Deletes a mission profile.
@@ -333,6 +401,35 @@ parent.describe_contact(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef) 
+
+### describe\_ephemeris
+
+Describes an existing ephemeris.
+
+Type annotations and code completion for `#!python boto3.client("groundstation").describe_ephemeris` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_ephemeris)
+
+```python title="Method definition"
+def describe_ephemeris(
+    self,
+    *,
+    ephemerisId: str,
+) -> DescribeEphemerisResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeEphemerisResponseTypeDef](./type_defs.md#describeephemerisresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEphemerisRequestRequestTypeDef = {  # (1)
+    "ephemerisId": ...,
+}
+
+parent.describe_ephemeris(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEphemerisRequestRequestTypeDef](./type_defs.md#describeephemerisrequestrequesttypedef) 
 
 ### generate\_presigned\_url
 
@@ -602,6 +699,43 @@ parent.list_dataflow_endpoint_groups(**kwargs)
 
 1. See [:material-code-braces: ListDataflowEndpointGroupsRequestRequestTypeDef](./type_defs.md#listdataflowendpointgroupsrequestrequesttypedef) 
 
+### list\_ephemerides
+
+List existing ephemerides.
+
+Type annotations and code completion for `#!python boto3.client("groundstation").list_ephemerides` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ephemerides)
+
+```python title="Method definition"
+def list_ephemerides(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    satelliteId: str,
+    startTime: Union[datetime, str],
+    maxResults: int = ...,
+    nextToken: str = ...,
+    statusList: Sequence[EphemerisStatusType] = ...,  # (1)
+) -> ListEphemeridesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: EphemerisStatusType](./literals.md#ephemerisstatustype) 
+2. See [:material-code-braces: ListEphemeridesResponseTypeDef](./type_defs.md#listephemeridesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListEphemeridesRequestRequestTypeDef = {  # (1)
+    "endTime": ...,
+    "satelliteId": ...,
+    "startTime": ...,
+}
+
+parent.list_ephemerides(**kwargs)
+```
+
+1. See [:material-code-braces: ListEphemeridesRequestRequestTypeDef](./type_defs.md#listephemeridesrequestrequesttypedef) 
+
 ### list\_ground\_stations
 
 Returns a list of ground stations.
@@ -857,6 +991,40 @@ parent.update_config(**kwargs)
 
 1. See [:material-code-braces: UpdateConfigRequestRequestTypeDef](./type_defs.md#updateconfigrequestrequesttypedef) 
 
+### update\_ephemeris
+
+Updates an existing ephemeris See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/groundstation-2019-05-23/UpdateEphemeris).
+
+Type annotations and code completion for `#!python boto3.client("groundstation").update_ephemeris` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_ephemeris)
+
+```python title="Method definition"
+def update_ephemeris(
+    self,
+    *,
+    enabled: bool,
+    ephemerisId: str,
+    name: str = ...,
+    priority: int = ...,
+) -> EphemerisIdResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EphemerisIdResponseTypeDef](./type_defs.md#ephemerisidresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateEphemerisRequestRequestTypeDef = {  # (1)
+    "enabled": ...,
+    "ephemerisId": ...,
+}
+
+parent.update_ephemeris(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateEphemerisRequestRequestTypeDef](./type_defs.md#updateephemerisrequestrequesttypedef) 
+
 ### update\_mission\_profile
 
 Updates a mission profile.
@@ -901,6 +1069,7 @@ Type annotations and code completion for `#!python boto3.client("groundstation")
 - `client.get_paginator("list_configs")` -> [ListConfigsPaginator](./paginators.md#listconfigspaginator)
 - `client.get_paginator("list_contacts")` -> [ListContactsPaginator](./paginators.md#listcontactspaginator)
 - `client.get_paginator("list_dataflow_endpoint_groups")` -> [ListDataflowEndpointGroupsPaginator](./paginators.md#listdataflowendpointgroupspaginator)
+- `client.get_paginator("list_ephemerides")` -> [ListEphemeridesPaginator](./paginators.md#listephemeridespaginator)
 - `client.get_paginator("list_ground_stations")` -> [ListGroundStationsPaginator](./paginators.md#listgroundstationspaginator)
 - `client.get_paginator("list_mission_profiles")` -> [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
 - `client.get_paginator("list_satellites")` -> [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)

@@ -39295,22 +39295,31 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-conne
 <a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a>    <span class="n">domainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a>    <span class="n">maxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-63-4" name="__codelineno-63-4" href="#__codelineno-63-4"></a>    <span class="n">nextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-63-5" name="__codelineno-63-5" href="#__codelineno-63-5"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TemplateStatusType</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
+<ol>
+<li>See <a href="../literals/#templatestatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateStatusType</a> </li>
+</ol>
 <h2 id="templatesummarytypedef">TemplateSummaryTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connectcases.type_defs</span> <span class="kn">import</span> <span class="n">TemplateSummaryTypeDef</span>
 <a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>
 <a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TemplateSummaryTypeDef</span><span class="p">:</span>
 <a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>        <span class="s2">&quot;templateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a>        <span class="s2">&quot;templateId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a>    <span class="p">}</span>
+<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a>        <span class="s2">&quot;templateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a>        <span class="s2">&quot;templateId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-64-9" name="__codelineno-64-9" href="#__codelineno-64-9"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="k">class</span> <span class="nc">TemplateSummaryTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>    <span class="n">templateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a>    <span class="n">templateId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">TemplateStatusType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a>    <span class="n">templateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a>    <span class="n">templateId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </code></pre></div>
+<ol>
+<li>See <a href="../literals/#templatestatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateStatusType</a> </li>
+</ol>
 <h2 id="paginatorconfigtypedef">PaginatorConfigTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connectcases.type_defs</span> <span class="kn">import</span> <span class="n">PaginatorConfigTypeDef</span>
 <a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>
@@ -39753,10 +39762,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-conne
 <a id="__codelineno-117-4" name="__codelineno-117-4" href="#__codelineno-117-4"></a>    <span class="n">description</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-117-5" name="__codelineno-117-5" href="#__codelineno-117-5"></a>    <span class="n">layoutConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">LayoutConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-117-6" name="__codelineno-117-6" href="#__codelineno-117-6"></a>    <span class="n">requiredFields</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">RequiredFieldTypeDef</span><span class="p">]],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-117-7" name="__codelineno-117-7" href="#__codelineno-117-7"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TemplateStatusType</span><span class="p">],</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#layoutconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> LayoutConfigurationTypeDef</a> </li>
 <li>See <a href="./#requiredfieldtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RequiredFieldTypeDef</a> </li>
+<li>See <a href="../literals/#templatestatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateStatusType</a> </li>
 </ol>
 <h2 id="gettemplateresponsetypedef">GetTemplateResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connectcases.type_defs</span> <span class="kn">import</span> <span class="n">GetTemplateResponseTypeDef</span>
@@ -39767,25 +39778,28 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-conne
 <a id="__codelineno-118-6" name="__codelineno-118-6" href="#__codelineno-118-6"></a>        <span class="s2">&quot;layoutConfiguration&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-118-7" name="__codelineno-118-7" href="#__codelineno-118-7"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-118-8" name="__codelineno-118-8" href="#__codelineno-118-8"></a>        <span class="s2">&quot;requiredFields&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-9" name="__codelineno-118-9" href="#__codelineno-118-9"></a>        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-10" name="__codelineno-118-10" href="#__codelineno-118-10"></a>        <span class="s2">&quot;templateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-11" name="__codelineno-118-11" href="#__codelineno-118-11"></a>        <span class="s2">&quot;templateId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-12" name="__codelineno-118-12" href="#__codelineno-118-12"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-13" name="__codelineno-118-13" href="#__codelineno-118-13"></a>    <span class="p">}</span>
+<a id="__codelineno-118-9" name="__codelineno-118-9" href="#__codelineno-118-9"></a>        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-10" name="__codelineno-118-10" href="#__codelineno-118-10"></a>        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-11" name="__codelineno-118-11" href="#__codelineno-118-11"></a>        <span class="s2">&quot;templateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-12" name="__codelineno-118-12" href="#__codelineno-118-12"></a>        <span class="s2">&quot;templateId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-13" name="__codelineno-118-13" href="#__codelineno-118-13"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-14" name="__codelineno-118-14" href="#__codelineno-118-14"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a><span class="k">class</span> <span class="nc">GetTemplateResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-119-2" name="__codelineno-119-2" href="#__codelineno-119-2"></a>    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-119-3" name="__codelineno-119-3" href="#__codelineno-119-3"></a>    <span class="n">layoutConfiguration</span><span class="p">:</span> <span class="n">LayoutConfigurationTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-119-4" name="__codelineno-119-4" href="#__codelineno-119-4"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-119-5" name="__codelineno-119-5" href="#__codelineno-119-5"></a>    <span class="n">requiredFields</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">RequiredFieldTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-119-6" name="__codelineno-119-6" href="#__codelineno-119-6"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-119-7" name="__codelineno-119-7" href="#__codelineno-119-7"></a>    <span class="n">templateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-119-8" name="__codelineno-119-8" href="#__codelineno-119-8"></a>    <span class="n">templateId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-119-9" name="__codelineno-119-9" href="#__codelineno-119-9"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-119-6" name="__codelineno-119-6" href="#__codelineno-119-6"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">TemplateStatusType</span><span class="p">,</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-119-7" name="__codelineno-119-7" href="#__codelineno-119-7"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-119-8" name="__codelineno-119-8" href="#__codelineno-119-8"></a>    <span class="n">templateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-119-9" name="__codelineno-119-9" href="#__codelineno-119-9"></a>    <span class="n">templateId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-119-10" name="__codelineno-119-10" href="#__codelineno-119-10"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (4)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#layoutconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> LayoutConfigurationTypeDef</a> </li>
 <li>See <a href="./#requiredfieldtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RequiredFieldTypeDef</a> </li>
+<li>See <a href="../literals/#templatestatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateStatusType</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="updatetemplaterequestrequesttypedef">UpdateTemplateRequestRequestTypeDef</h2>
@@ -39804,10 +39818,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-conne
 <a id="__codelineno-121-5" name="__codelineno-121-5" href="#__codelineno-121-5"></a>    <span class="n">layoutConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">LayoutConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-121-6" name="__codelineno-121-6" href="#__codelineno-121-6"></a>    <span class="n">name</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-121-7" name="__codelineno-121-7" href="#__codelineno-121-7"></a>    <span class="n">requiredFields</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">RequiredFieldTypeDef</span><span class="p">]],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-121-8" name="__codelineno-121-8" href="#__codelineno-121-8"></a>    <span class="n">status</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TemplateStatusType</span><span class="p">],</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#layoutconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> LayoutConfigurationTypeDef</a> </li>
 <li>See <a href="./#requiredfieldtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RequiredFieldTypeDef</a> </li>
+<li>See <a href="../literals/#templatestatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TemplateStatusType</a> </li>
 </ol>
 <h2 id="listdomainsresponsetypedef">ListDomainsResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connectcases.type_defs</span> <span class="kn">import</span> <span class="n">ListDomainsResponseTypeDef</span>

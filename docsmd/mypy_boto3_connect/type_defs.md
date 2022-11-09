@@ -5410,6 +5410,9 @@ from mypy_boto3_connect.type_defs import GetFederationTokenResponseTypeDef
 def get_value() -> GetFederationTokenResponseTypeDef:
     return {
         "Credentials": ...,
+        "SignInUrl": ...,
+        "UserArn": ...,
+        "UserId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -5417,6 +5420,9 @@ def get_value() -> GetFederationTokenResponseTypeDef:
 ```python title="Definition"
 class GetFederationTokenResponseTypeDef(TypedDict):
     Credentials: CredentialsTypeDef,  # (1)
+    SignInUrl: str,
+    UserArn: str,
+    UserId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

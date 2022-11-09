@@ -604,8 +604,10 @@ class ListTemplatesRequestRequestTypeDef(TypedDict):
     domainId: str,
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
+    status: NotRequired[Sequence[TemplateStatusType]],  # (1)
 ```
 
+1. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
 ## TemplateSummaryTypeDef
 
 ```python title="Usage Example"
@@ -614,6 +616,7 @@ from mypy_boto3_connectcases.type_defs import TemplateSummaryTypeDef
 def get_value() -> TemplateSummaryTypeDef:
     return {
         "name": ...,
+        "status": ...,
         "templateArn": ...,
         "templateId": ...,
     }
@@ -622,10 +625,12 @@ def get_value() -> TemplateSummaryTypeDef:
 ```python title="Definition"
 class TemplateSummaryTypeDef(TypedDict):
     name: str,
+    status: TemplateStatusType,  # (1)
     templateArn: str,
     templateId: str,
 ```
 
+1. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -1155,10 +1160,12 @@ class CreateTemplateRequestRequestTypeDef(TypedDict):
     description: NotRequired[str],
     layoutConfiguration: NotRequired[LayoutConfigurationTypeDef],  # (1)
     requiredFields: NotRequired[Sequence[RequiredFieldTypeDef]],  # (2)
+    status: NotRequired[TemplateStatusType],  # (3)
 ```
 
 1. See [:material-code-braces: LayoutConfigurationTypeDef](./type_defs.md#layoutconfigurationtypedef) 
 2. See [:material-code-braces: RequiredFieldTypeDef](./type_defs.md#requiredfieldtypedef) 
+3. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
 ## GetTemplateResponseTypeDef
 
 ```python title="Usage Example"
@@ -1170,6 +1177,7 @@ def get_value() -> GetTemplateResponseTypeDef:
         "layoutConfiguration": ...,
         "name": ...,
         "requiredFields": ...,
+        "status": ...,
         "tags": ...,
         "templateArn": ...,
         "templateId": ...,
@@ -1183,15 +1191,17 @@ class GetTemplateResponseTypeDef(TypedDict):
     layoutConfiguration: LayoutConfigurationTypeDef,  # (1)
     name: str,
     requiredFields: List[RequiredFieldTypeDef],  # (2)
+    status: TemplateStatusType,  # (3)
     tags: Dict[str, str],
     templateArn: str,
     templateId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-braces: LayoutConfigurationTypeDef](./type_defs.md#layoutconfigurationtypedef) 
 2. See [:material-code-braces: RequiredFieldTypeDef](./type_defs.md#requiredfieldtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1212,10 +1222,12 @@ class UpdateTemplateRequestRequestTypeDef(TypedDict):
     layoutConfiguration: NotRequired[LayoutConfigurationTypeDef],  # (1)
     name: NotRequired[str],
     requiredFields: NotRequired[Sequence[RequiredFieldTypeDef]],  # (2)
+    status: NotRequired[TemplateStatusType],  # (3)
 ```
 
 1. See [:material-code-braces: LayoutConfigurationTypeDef](./type_defs.md#layoutconfigurationtypedef) 
 2. See [:material-code-braces: RequiredFieldTypeDef](./type_defs.md#requiredfieldtypedef) 
+3. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
 ## ListDomainsResponseTypeDef
 
 ```python title="Usage Example"

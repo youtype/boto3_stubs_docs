@@ -994,6 +994,7 @@ class DashPackageTypeDef(TypedDict):
     DashManifests: Sequence[DashManifestTypeDef],  # (1)
     Encryption: NotRequired[DashEncryptionTypeDef],  # (2)
     IncludeEncoderConfigurationInSegments: NotRequired[bool],
+    IncludeIframeOnlyStream: NotRequired[bool],
     PeriodTriggers: NotRequired[Sequence[PeriodTriggersElementType]],  # (3)
     SegmentDurationSeconds: NotRequired[int],
     SegmentTemplateFormat: NotRequired[SegmentTemplateFormatType],  # (4)

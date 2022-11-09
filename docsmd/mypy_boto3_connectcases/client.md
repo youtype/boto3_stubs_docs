@@ -341,13 +341,15 @@ def create_template(
     description: str = ...,
     layoutConfiguration: LayoutConfigurationTypeDef = ...,  # (1)
     requiredFields: Sequence[RequiredFieldTypeDef] = ...,  # (2)
-) -> CreateTemplateResponseTypeDef:  # (3)
+    status: TemplateStatusType = ...,  # (3)
+) -> CreateTemplateResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: LayoutConfigurationTypeDef](./type_defs.md#layoutconfigurationtypedef) 
 2. See [:material-code-braces: RequiredFieldTypeDef](./type_defs.md#requiredfieldtypedef) 
-3. See [:material-code-braces: CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef) 
+3. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
+4. See [:material-code-braces: CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -737,11 +739,13 @@ def list_templates(
     domainId: str,
     maxResults: int = ...,
     nextToken: str = ...,
-) -> ListTemplatesResponseTypeDef:  # (1)
+    status: Sequence[TemplateStatusType] = ...,  # (1)
+) -> ListTemplatesResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef) 
+1. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
+2. See [:material-code-braces: ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1036,12 +1040,14 @@ def update_template(
     layoutConfiguration: LayoutConfigurationTypeDef = ...,  # (1)
     name: str = ...,
     requiredFields: Sequence[RequiredFieldTypeDef] = ...,  # (2)
+    status: TemplateStatusType = ...,  # (3)
 ) -> Dict[str, Any]:
     ...
 ```
 
 1. See [:material-code-braces: LayoutConfigurationTypeDef](./type_defs.md#layoutconfigurationtypedef) 
 2. See [:material-code-braces: RequiredFieldTypeDef](./type_defs.md#requiredfieldtypedef) 
+3. See [:material-code-brackets: TemplateStatusType](./literals.md#templatestatustype) 
 
 
 ```python title="Usage example with kwargs"

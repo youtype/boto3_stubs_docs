@@ -190,6 +190,71 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListDataflowEndpointGroupsRequestListDataflowEndpointGroupsPaginateTypeDef](./type_defs.md#listdataflowendpointgroupsrequestlistdataflowendpointgroupspaginatetypedef) 
+## ListEphemeridesPaginator
+
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_ephemerides")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListEphemerides)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListEphemeridesPaginator
+
+def get_list_ephemerides_paginator() -> ListEphemeridesPaginator:
+    return Session().client("groundstation").get_paginator("list_ephemerides")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.paginator import ListEphemeridesPaginator
+
+session = Session()
+
+client = Session().client("groundstation")  # (1)
+paginator: ListEphemeridesPaginator = client.get_paginator("list_ephemerides")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GroundStationClient](./client.md)
+2. paginator: [ListEphemeridesPaginator](./paginators.md#listephemeridespaginator)
+3. item: [:material-code-braces: ListEphemeridesResponseTypeDef](./type_defs.md#listephemeridesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListEphemeridesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    satelliteId: str,
+    startTime: Union[datetime, str],
+    statusList: Sequence[EphemerisStatusType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListEphemeridesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: EphemerisStatusType](./literals.md#ephemerisstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListEphemeridesResponseTypeDef](./type_defs.md#listephemeridesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListEphemeridesRequestListEphemeridesPaginateTypeDef = {  # (1)
+    "endTime": ...,
+    "satelliteId": ...,
+    "startTime": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEphemeridesRequestListEphemeridesPaginateTypeDef](./type_defs.md#listephemeridesrequestlistephemeridespaginatetypedef) 
 ## ListGroundStationsPaginator
 
 Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_ground_stations")`.
