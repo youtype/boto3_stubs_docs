@@ -141,6 +141,42 @@ class AssociatePackageRequestRequestTypeDef(TypedDict):
     DomainName: str,
 ```
 
+## AuthorizeVpcEndpointAccessRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import AuthorizeVpcEndpointAccessRequestRequestTypeDef
+
+def get_value() -> AuthorizeVpcEndpointAccessRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Account": ...,
+    }
+```
+
+```python title="Definition"
+class AuthorizeVpcEndpointAccessRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Account: str,
+```
+
+## AuthorizedPrincipalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import AuthorizedPrincipalTypeDef
+
+def get_value() -> AuthorizedPrincipalTypeDef:
+    return {
+        "PrincipalType": ...,
+    }
+```
+
+```python title="Definition"
+class AuthorizedPrincipalTypeDef(TypedDict):
+    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
+    Principal: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## ScheduledAutoTuneDetailsTypeDef
 
 ```python title="Usage Example"
@@ -592,6 +628,42 @@ class DeletePackageRequestRequestTypeDef(TypedDict):
     PackageID: str,
 ```
 
+## DeleteVpcEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import DeleteVpcEndpointRequestRequestTypeDef
+
+def get_value() -> DeleteVpcEndpointRequestRequestTypeDef:
+    return {
+        "VpcEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVpcEndpointRequestRequestTypeDef(TypedDict):
+    VpcEndpointId: str,
+```
+
+## VpcEndpointSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import VpcEndpointSummaryTypeDef
+
+def get_value() -> VpcEndpointSummaryTypeDef:
+    return {
+        "VpcEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class VpcEndpointSummaryTypeDef(TypedDict):
+    VpcEndpointId: NotRequired[str],
+    VpcEndpointOwner: NotRequired[str],
+    DomainArn: NotRequired[str],
+    Status: NotRequired[VpcEndpointStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: VpcEndpointStatusType](./literals.md#vpcendpointstatustype) 
 ## DescribeDomainAutoTunesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -784,6 +856,41 @@ class DescribeReservedElasticsearchInstancesRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## DescribeVpcEndpointsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import DescribeVpcEndpointsRequestRequestTypeDef
+
+def get_value() -> DescribeVpcEndpointsRequestRequestTypeDef:
+    return {
+        "VpcEndpointIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVpcEndpointsRequestRequestTypeDef(TypedDict):
+    VpcEndpointIds: Sequence[str],
+```
+
+## VpcEndpointErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import VpcEndpointErrorTypeDef
+
+def get_value() -> VpcEndpointErrorTypeDef:
+    return {
+        "VpcEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class VpcEndpointErrorTypeDef(TypedDict):
+    VpcEndpointId: NotRequired[str],
+    ErrorCode: NotRequired[VpcEndpointErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VpcEndpointErrorCodeType](./literals.md#vpcendpointerrorcodetype) 
 ## DissociatePackageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1115,6 +1222,56 @@ class ListTagsRequestRequestTypeDef(TypedDict):
     ARN: str,
 ```
 
+## ListVpcEndpointAccessRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import ListVpcEndpointAccessRequestRequestTypeDef
+
+def get_value() -> ListVpcEndpointAccessRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcEndpointAccessRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    NextToken: NotRequired[str],
+```
+
+## ListVpcEndpointsForDomainRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import ListVpcEndpointsForDomainRequestRequestTypeDef
+
+def get_value() -> ListVpcEndpointsForDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcEndpointsForDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    NextToken: NotRequired[str],
+```
+
+## ListVpcEndpointsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import ListVpcEndpointsRequestRequestTypeDef
+
+def get_value() -> ListVpcEndpointsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcEndpointsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
+
 ## PurchaseReservedElasticsearchInstanceOfferingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1183,6 +1340,24 @@ def get_value() -> RemoveTagsRequestRequestTypeDef:
 class RemoveTagsRequestRequestTypeDef(TypedDict):
     ARN: str,
     TagKeys: Sequence[str],
+```
+
+## RevokeVpcEndpointAccessRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import RevokeVpcEndpointAccessRequestRequestTypeDef
+
+def get_value() -> RevokeVpcEndpointAccessRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Account": ...,
+    }
+```
+
+```python title="Definition"
+class RevokeVpcEndpointAccessRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Account: str,
 ```
 
 ## SAMLIdpTypeDef
@@ -1478,6 +1653,48 @@ class ListTagsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AuthorizeVpcEndpointAccessResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import AuthorizeVpcEndpointAccessResponseTypeDef
+
+def get_value() -> AuthorizeVpcEndpointAccessResponseTypeDef:
+    return {
+        "AuthorizedPrincipal": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AuthorizeVpcEndpointAccessResponseTypeDef(TypedDict):
+    AuthorizedPrincipal: AuthorizedPrincipalTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuthorizedPrincipalTypeDef](./type_defs.md#authorizedprincipaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVpcEndpointAccessResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import ListVpcEndpointAccessResponseTypeDef
+
+def get_value() -> ListVpcEndpointAccessResponseTypeDef:
+    return {
+        "AuthorizedPrincipalList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcEndpointAccessResponseTypeDef(TypedDict):
+    AuthorizedPrincipalList: List[AuthorizedPrincipalTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AuthorizedPrincipalTypeDef](./type_defs.md#authorizedprincipaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AutoTuneDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1763,6 +1980,45 @@ class SnapshotOptionsStatusTypeDef(TypedDict):
 
 1. See [:material-code-braces: SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef) 
 2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
+## CreateVpcEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import CreateVpcEndpointRequestRequestTypeDef
+
+def get_value() -> CreateVpcEndpointRequestRequestTypeDef:
+    return {
+        "DomainArn": ...,
+        "VpcOptions": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVpcEndpointRequestRequestTypeDef(TypedDict):
+    DomainArn: str,
+    VpcOptions: VPCOptionsTypeDef,  # (1)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+## UpdateVpcEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import UpdateVpcEndpointRequestRequestTypeDef
+
+def get_value() -> UpdateVpcEndpointRequestRequestTypeDef:
+    return {
+        "VpcEndpointId": ...,
+        "VpcOptions": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVpcEndpointRequestRequestTypeDef(TypedDict):
+    VpcEndpointId: str,
+    VpcOptions: VPCOptionsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
 ## CreateOutboundCrossClusterSearchConnectionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1882,6 +2138,70 @@ class UpdatePackageRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PackageSourceTypeDef](./type_defs.md#packagesourcetypedef) 
+## DeleteVpcEndpointResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import DeleteVpcEndpointResponseTypeDef
+
+def get_value() -> DeleteVpcEndpointResponseTypeDef:
+    return {
+        "VpcEndpointSummary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVpcEndpointResponseTypeDef(TypedDict):
+    VpcEndpointSummary: VpcEndpointSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcEndpointSummaryTypeDef](./type_defs.md#vpcendpointsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVpcEndpointsForDomainResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import ListVpcEndpointsForDomainResponseTypeDef
+
+def get_value() -> ListVpcEndpointsForDomainResponseTypeDef:
+    return {
+        "VpcEndpointSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcEndpointsForDomainResponseTypeDef(TypedDict):
+    VpcEndpointSummaryList: List[VpcEndpointSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcEndpointSummaryTypeDef](./type_defs.md#vpcendpointsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVpcEndpointsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import ListVpcEndpointsResponseTypeDef
+
+def get_value() -> ListVpcEndpointsResponseTypeDef:
+    return {
+        "VpcEndpointSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListVpcEndpointsResponseTypeDef(TypedDict):
+    VpcEndpointSummaryList: List[VpcEndpointSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcEndpointSummaryTypeDef](./type_defs.md#vpcendpointsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInboundCrossClusterSearchConnectionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2154,6 +2474,29 @@ class VPCDerivedInfoStatusTypeDef(TypedDict):
 
 1. See [:material-code-braces: VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef) 
 2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
+## VpcEndpointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import VpcEndpointTypeDef
+
+def get_value() -> VpcEndpointTypeDef:
+    return {
+        "VpcEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class VpcEndpointTypeDef(TypedDict):
+    VpcEndpointId: NotRequired[str],
+    VpcEndpointOwner: NotRequired[str],
+    DomainArn: NotRequired[str],
+    VpcOptions: NotRequired[VPCDerivedInfoTypeDef],  # (1)
+    Status: NotRequired[VpcEndpointStatusType],  # (2)
+    Endpoint: NotRequired[str],
+```
+
+1. See [:material-code-braces: VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef) 
+2. See [:material-code-brackets: VpcEndpointStatusType](./literals.md#vpcendpointstatustype) 
 ## GetPackageVersionHistoryResponseTypeDef
 
 ```python title="Usage Example"
@@ -2665,6 +3008,69 @@ class ElasticsearchClusterConfigStatusTypeDef(TypedDict):
 
 1. See [:material-code-braces: ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef) 
 2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
+## CreateVpcEndpointResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import CreateVpcEndpointResponseTypeDef
+
+def get_value() -> CreateVpcEndpointResponseTypeDef:
+    return {
+        "VpcEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVpcEndpointResponseTypeDef(TypedDict):
+    VpcEndpoint: VpcEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVpcEndpointsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import DescribeVpcEndpointsResponseTypeDef
+
+def get_value() -> DescribeVpcEndpointsResponseTypeDef:
+    return {
+        "VpcEndpoints": ...,
+        "VpcEndpointErrors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVpcEndpointsResponseTypeDef(TypedDict):
+    VpcEndpoints: List[VpcEndpointTypeDef],  # (1)
+    VpcEndpointErrors: List[VpcEndpointErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef) 
+2. See [:material-code-braces: VpcEndpointErrorTypeDef](./type_defs.md#vpcendpointerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateVpcEndpointResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_es.type_defs import UpdateVpcEndpointResponseTypeDef
+
+def get_value() -> UpdateVpcEndpointResponseTypeDef:
+    return {
+        "VpcEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateVpcEndpointResponseTypeDef(TypedDict):
+    VpcEndpoint: VpcEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AcceptInboundCrossClusterSearchConnectionResponseTypeDef
 
 ```python title="Usage Example"

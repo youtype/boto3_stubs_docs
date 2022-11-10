@@ -487,6 +487,7 @@ ServiceName = Literal[
     "sagemaker-featurestore-runtime",
     "sagemaker-runtime",
     "savingsplans",
+    "scheduler",
     "schemas",
     "sdb",
     "secretsmanager",

@@ -406,6 +406,21 @@ PackageTypeType = Literal[
     "TXT-DICTIONARY",
 ]
 ```
+## PrincipalTypeType
+
+```python title="Usage Example"
+from mypy_boto3_es.literals import PrincipalTypeType
+
+def get_value() -> PrincipalTypeType:
+    return "AWS_ACCOUNT"
+```
+
+```python title="Definition"
+PrincipalTypeType = Literal[
+    "AWS_ACCOUNT",
+    "AWS_SERVICE",
+]
+```
 ## ReservedElasticsearchInstancePaymentOptionType
 
 ```python title="Usage Example"
@@ -545,6 +560,41 @@ VolumeTypeType = Literal[
     "gp3",
     "io1",
     "standard",
+]
+```
+## VpcEndpointErrorCodeType
+
+```python title="Usage Example"
+from mypy_boto3_es.literals import VpcEndpointErrorCodeType
+
+def get_value() -> VpcEndpointErrorCodeType:
+    return "ENDPOINT_NOT_FOUND"
+```
+
+```python title="Definition"
+VpcEndpointErrorCodeType = Literal[
+    "ENDPOINT_NOT_FOUND",
+    "SERVER_ERROR",
+]
+```
+## VpcEndpointStatusType
+
+```python title="Usage Example"
+from mypy_boto3_es.literals import VpcEndpointStatusType
+
+def get_value() -> VpcEndpointStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+VpcEndpointStatusType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATING",
+    "DELETE_FAILED",
+    "DELETING",
+    "UPDATE_FAILED",
+    "UPDATING",
 ]
 ```
 ## ElasticsearchServiceServiceName
@@ -840,6 +890,7 @@ ServiceName = Literal[
     "sagemaker-featurestore-runtime",
     "sagemaker-runtime",
     "savingsplans",
+    "scheduler",
     "schemas",
     "sdb",
     "secretsmanager",
@@ -956,6 +1007,7 @@ RegionName = Literal[
     "ap-southeast-3",
     "ca-central-1",
     "eu-central-1",
+    "eu-central-2",
     "eu-north-1",
     "eu-south-1",
     "eu-west-1",

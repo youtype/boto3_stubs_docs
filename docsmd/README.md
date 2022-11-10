@@ -605,6 +605,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-savingsplans](./mypy_boto3_savingsplans/README.md) for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans) service
 
+- [mypy-boto3-scheduler](./mypy_boto3_scheduler/README.md) for [EventBridgeScheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html#EventBridgeScheduler) service
+
 - [mypy-boto3-schemas](./mypy_boto3_schemas/README.md) for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas) service
 
 - [mypy-boto3-sdb](./mypy_boto3_sdb/README.md) for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB) service

@@ -188,6 +188,7 @@ AllocationStrategyType = Literal[
     "capacityOptimizedPrioritized",
     "diversified",
     "lowestPrice",
+    "priceCapacityOptimized",
 ]
 ```
 ## AllocationTypeType
@@ -6284,6 +6285,7 @@ SpotAllocationStrategyType = Literal[
     "capacity-optimized-prioritized",
     "diversified",
     "lowest-price",
+    "price-capacity-optimized",
 ]
 ```
 ## SpotInstanceInterruptionBehaviorType
@@ -7862,6 +7864,7 @@ ServiceName = Literal[
     "sagemaker-featurestore-runtime",
     "sagemaker-runtime",
     "savingsplans",
+    "scheduler",
     "schemas",
     "sdb",
     "secretsmanager",
@@ -8144,6 +8147,7 @@ RegionName = Literal[
     "ap-southeast-3",
     "ca-central-1",
     "eu-central-1",
+    "eu-central-2",
     "eu-north-1",
     "eu-south-1",
     "eu-west-1",

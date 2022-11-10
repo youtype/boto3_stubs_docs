@@ -1143,6 +1143,41 @@ class FSxWindowsFileServerAuthorizationConfigTypeDef(TypedDict):
     domain: str,
 ```
 
+## GetTaskProtectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import GetTaskProtectionRequestRequestTypeDef
+
+def get_value() -> GetTaskProtectionRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
+```
+
+```python title="Definition"
+class GetTaskProtectionRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    tasks: NotRequired[Sequence[str]],
+```
+
+## ProtectedTaskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ProtectedTaskTypeDef
+
+def get_value() -> ProtectedTaskTypeDef:
+    return {
+        "taskArn": ...,
+    }
+```
+
+```python title="Definition"
+class ProtectedTaskTypeDef(TypedDict):
+    taskArn: NotRequired[str],
+    protectionEnabled: NotRequired[bool],
+    expirationDate: NotRequired[datetime],
+```
+
 ## HostVolumePropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1662,6 +1697,27 @@ class UpdateServicePrimaryTaskSetRequestRequestTypeDef(TypedDict):
     cluster: str,
     service: str,
     primaryTaskSet: str,
+```
+
+## UpdateTaskProtectionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import UpdateTaskProtectionRequestRequestTypeDef
+
+def get_value() -> UpdateTaskProtectionRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+        "tasks": ...,
+        "protectionEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTaskProtectionRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    tasks: Sequence[str],
+    protectionEnabled: bool,
+    expiresInMinutes: NotRequired[int],
 ```
 
 ## SubmitAttachmentStateChangesRequestRequestTypeDef
@@ -2608,6 +2664,52 @@ class FSxWindowsFileServerVolumeConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FSxWindowsFileServerAuthorizationConfigTypeDef](./type_defs.md#fsxwindowsfileserverauthorizationconfigtypedef) 
+## GetTaskProtectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import GetTaskProtectionResponseTypeDef
+
+def get_value() -> GetTaskProtectionResponseTypeDef:
+    return {
+        "protectedTasks": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTaskProtectionResponseTypeDef(TypedDict):
+    protectedTasks: List[ProtectedTaskTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProtectedTaskTypeDef](./type_defs.md#protectedtasktypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTaskProtectionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import UpdateTaskProtectionResponseTypeDef
+
+def get_value() -> UpdateTaskProtectionResponseTypeDef:
+    return {
+        "protectedTasks": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTaskProtectionResponseTypeDef(TypedDict):
+    protectedTasks: List[ProtectedTaskTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProtectedTaskTypeDef](./type_defs.md#protectedtasktypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LinuxParametersTypeDef
 
 ```python title="Usage Example"

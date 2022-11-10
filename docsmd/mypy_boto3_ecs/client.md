@@ -843,6 +843,36 @@ def generate_presigned_url(
 ```
 
 
+### get\_task\_protection
+
+Retrieves the protection status of tasks in an Amazon ECS service.
+
+Type annotations and code completion for `#!python boto3.client("ecs").get_task_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.get_task_protection)
+
+```python title="Method definition"
+def get_task_protection(
+    self,
+    *,
+    cluster: str,
+    tasks: Sequence[str] = ...,
+) -> GetTaskProtectionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetTaskProtectionResponseTypeDef](./type_defs.md#gettaskprotectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTaskProtectionRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
+
+parent.get_task_protection(**kwargs)
+```
+
+1. See [:material-code-braces: GetTaskProtectionRequestRequestTypeDef](./type_defs.md#gettaskprotectionrequestrequesttypedef) 
+
 ### list\_account\_settings
 
 Lists the account settings for a specified principal.
@@ -1927,6 +1957,40 @@ parent.update_service_primary_task_set(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateServicePrimaryTaskSetRequestRequestTypeDef](./type_defs.md#updateserviceprimarytasksetrequestrequesttypedef) 
+
+### update\_task\_protection
+
+Updates the protection status of a task.
+
+Type annotations and code completion for `#!python boto3.client("ecs").update_task_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_protection)
+
+```python title="Method definition"
+def update_task_protection(
+    self,
+    *,
+    cluster: str,
+    tasks: Sequence[str],
+    protectionEnabled: bool,
+    expiresInMinutes: int = ...,
+) -> UpdateTaskProtectionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateTaskProtectionResponseTypeDef](./type_defs.md#updatetaskprotectionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateTaskProtectionRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+    "tasks": ...,
+    "protectionEnabled": ...,
+}
+
+parent.update_task_protection(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateTaskProtectionRequestRequestTypeDef](./type_defs.md#updatetaskprotectionrequestrequesttypedef) 
 
 ### update\_task\_set
 

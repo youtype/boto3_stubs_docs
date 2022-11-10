@@ -152,6 +152,38 @@ parent.associate_package(**kwargs)
 
 1. See [:material-code-braces: AssociatePackageRequestRequestTypeDef](./type_defs.md#associatepackagerequestrequesttypedef) 
 
+### authorize\_vpc\_endpoint\_access
+
+Provides access to an Amazon OpenSearch Service domain through the use of an
+interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("es").authorize_vpc_endpoint_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.authorize_vpc_endpoint_access)
+
+```python title="Method definition"
+def authorize_vpc_endpoint_access(
+    self,
+    *,
+    DomainName: str,
+    Account: str,
+) -> AuthorizeVpcEndpointAccessResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AuthorizeVpcEndpointAccessResponseTypeDef](./type_defs.md#authorizevpcendpointaccessresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AuthorizeVpcEndpointAccessRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Account": ...,
+}
+
+parent.authorize_vpc_endpoint_access(**kwargs)
+```
+
+1. See [:material-code-braces: AuthorizeVpcEndpointAccessRequestRequestTypeDef](./type_defs.md#authorizevpcendpointaccessrequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -340,6 +372,39 @@ parent.create_package(**kwargs)
 
 1. See [:material-code-braces: CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef) 
 
+### create\_vpc\_endpoint
+
+Creates an Amazon OpenSearch Service-managed VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("es").create_vpc_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_vpc_endpoint)
+
+```python title="Method definition"
+def create_vpc_endpoint(
+    self,
+    *,
+    DomainArn: str,
+    VpcOptions: VPCOptionsTypeDef,  # (1)
+    ClientToken: str = ...,
+) -> CreateVpcEndpointResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+2. See [:material-code-braces: CreateVpcEndpointResponseTypeDef](./type_defs.md#createvpcendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateVpcEndpointRequestRequestTypeDef = {  # (1)
+    "DomainArn": ...,
+    "VpcOptions": ...,
+}
+
+parent.create_vpc_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: CreateVpcEndpointRequestRequestTypeDef](./type_defs.md#createvpcendpointrequestrequesttypedef) 
+
 ### delete\_elasticsearch\_domain
 
 Permanently deletes the specified Elasticsearch domain and all of its data.
@@ -474,6 +539,35 @@ parent.delete_package(**kwargs)
 ```
 
 1. See [:material-code-braces: DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef) 
+
+### delete\_vpc\_endpoint
+
+Deletes an Amazon OpenSearch Service-managed interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("es").delete_vpc_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_vpc_endpoint)
+
+```python title="Method definition"
+def delete_vpc_endpoint(
+    self,
+    *,
+    VpcEndpointId: str,
+) -> DeleteVpcEndpointResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteVpcEndpointResponseTypeDef](./type_defs.md#deletevpcendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteVpcEndpointRequestRequestTypeDef = {  # (1)
+    "VpcEndpointId": ...,
+}
+
+parent.delete_vpc_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVpcEndpointRequestRequestTypeDef](./type_defs.md#deletevpcendpointrequestrequesttypedef) 
 
 ### describe\_domain\_auto\_tunes
 
@@ -819,6 +913,35 @@ parent.describe_reserved_elasticsearch_instances(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeReservedElasticsearchInstancesRequestRequestTypeDef](./type_defs.md#describereservedelasticsearchinstancesrequestrequesttypedef) 
+
+### describe\_vpc\_endpoints
+
+Describes one or more Amazon OpenSearch Service-managed VPC endpoints.
+
+Type annotations and code completion for `#!python boto3.client("es").describe_vpc_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_vpc_endpoints)
+
+```python title="Method definition"
+def describe_vpc_endpoints(
+    self,
+    *,
+    VpcEndpointIds: Sequence[str],
+) -> DescribeVpcEndpointsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointsResponseTypeDef](./type_defs.md#describevpcendpointsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcEndpointsRequestRequestTypeDef = {  # (1)
+    "VpcEndpointIds": ...,
+}
+
+parent.describe_vpc_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcEndpointsRequestRequestTypeDef](./type_defs.md#describevpcendpointsrequestrequesttypedef) 
 
 ### dissociate\_package
 
@@ -1180,6 +1303,98 @@ parent.list_tags(**kwargs)
 
 1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
+### list\_vpc\_endpoint\_access
+
+Retrieves information about each principal that is allowed to access a given
+Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("es").list_vpc_endpoint_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_vpc_endpoint_access)
+
+```python title="Method definition"
+def list_vpc_endpoint_access(
+    self,
+    *,
+    DomainName: str,
+    NextToken: str = ...,
+) -> ListVpcEndpointAccessResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListVpcEndpointAccessResponseTypeDef](./type_defs.md#listvpcendpointaccessresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVpcEndpointAccessRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
+
+parent.list_vpc_endpoint_access(**kwargs)
+```
+
+1. See [:material-code-braces: ListVpcEndpointAccessRequestRequestTypeDef](./type_defs.md#listvpcendpointaccessrequestrequesttypedef) 
+
+### list\_vpc\_endpoints
+
+Retrieves all Amazon OpenSearch Service-managed VPC endpoints in the current
+account and Region.
+
+Type annotations and code completion for `#!python boto3.client("es").list_vpc_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_vpc_endpoints)
+
+```python title="Method definition"
+def list_vpc_endpoints(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListVpcEndpointsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListVpcEndpointsResponseTypeDef](./type_defs.md#listvpcendpointsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVpcEndpointsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_vpc_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: ListVpcEndpointsRequestRequestTypeDef](./type_defs.md#listvpcendpointsrequestrequesttypedef) 
+
+### list\_vpc\_endpoints\_for\_domain
+
+Retrieves all Amazon OpenSearch Service-managed VPC endpoints associated with a
+particular domain.
+
+Type annotations and code completion for `#!python boto3.client("es").list_vpc_endpoints_for_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_vpc_endpoints_for_domain)
+
+```python title="Method definition"
+def list_vpc_endpoints_for_domain(
+    self,
+    *,
+    DomainName: str,
+    NextToken: str = ...,
+) -> ListVpcEndpointsForDomainResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListVpcEndpointsForDomainResponseTypeDef](./type_defs.md#listvpcendpointsfordomainresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVpcEndpointsForDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
+
+parent.list_vpc_endpoints_for_domain(**kwargs)
+```
+
+1. See [:material-code-braces: ListVpcEndpointsForDomainRequestRequestTypeDef](./type_defs.md#listvpcendpointsfordomainrequestrequesttypedef) 
+
 ### purchase\_reserved\_elasticsearch\_instance\_offering
 
 Allows you to purchase reserved Elasticsearch instances.
@@ -1272,6 +1487,37 @@ parent.remove_tags(**kwargs)
 ```
 
 1. See [:material-code-braces: RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef) 
+
+### revoke\_vpc\_endpoint\_access
+
+Revokes access to an Amazon OpenSearch Service domain that was provided through
+an interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("es").revoke_vpc_endpoint_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.revoke_vpc_endpoint_access)
+
+```python title="Method definition"
+def revoke_vpc_endpoint_access(
+    self,
+    *,
+    DomainName: str,
+    Account: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: RevokeVpcEndpointAccessRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Account": ...,
+}
+
+parent.revoke_vpc_endpoint_access(**kwargs)
+```
+
+1. See [:material-code-braces: RevokeVpcEndpointAccessRequestRequestTypeDef](./type_defs.md#revokevpcendpointaccessrequestrequesttypedef) 
 
 ### start\_elasticsearch\_service\_software\_update
 
@@ -1390,6 +1636,38 @@ parent.update_package(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdatePackageRequestRequestTypeDef](./type_defs.md#updatepackagerequestrequesttypedef) 
+
+### update\_vpc\_endpoint
+
+Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.
+
+Type annotations and code completion for `#!python boto3.client("es").update_vpc_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_vpc_endpoint)
+
+```python title="Method definition"
+def update_vpc_endpoint(
+    self,
+    *,
+    VpcEndpointId: str,
+    VpcOptions: VPCOptionsTypeDef,  # (1)
+) -> UpdateVpcEndpointResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+2. See [:material-code-braces: UpdateVpcEndpointResponseTypeDef](./type_defs.md#updatevpcendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateVpcEndpointRequestRequestTypeDef = {  # (1)
+    "VpcEndpointId": ...,
+    "VpcOptions": ...,
+}
+
+parent.update_vpc_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateVpcEndpointRequestRequestTypeDef](./type_defs.md#updatevpcendpointrequestrequesttypedef) 
 
 ### upgrade\_elasticsearch\_domain
 
