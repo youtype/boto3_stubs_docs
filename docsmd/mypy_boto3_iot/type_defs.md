@@ -3480,6 +3480,24 @@ class IndexingFilterTypeDef(TypedDict):
     namedShadowNames: NotRequired[List[str]],
 ```
 
+## IssuerCertificateIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import IssuerCertificateIdentifierTypeDef
+
+def get_value() -> IssuerCertificateIdentifierTypeDef:
+    return {
+        "issuerCertificateSubject": ...,
+    }
+```
+
+```python title="Definition"
+class IssuerCertificateIdentifierTypeDef(TypedDict):
+    issuerCertificateSubject: NotRequired[str],
+    issuerId: NotRequired[str],
+    issuerCertificateSerialNumber: NotRequired[str],
+```
+
 ## JobExecutionStatusDetailsTypeDef
 
 ```python title="Usage Example"
@@ -4387,6 +4405,24 @@ class ProvisioningTemplateSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+## ListRelatedResourcesForAuditFindingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListRelatedResourcesForAuditFindingRequestRequestTypeDef
+
+def get_value() -> ListRelatedResourcesForAuditFindingRequestRequestTypeDef:
+    return {
+        "findingId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRelatedResourcesForAuditFindingRequestRequestTypeDef(TypedDict):
+    findingId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
 ## ListRoleAliasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10966,9 +11002,12 @@ class ResourceIdentifierTypeDef(TypedDict):
     account: NotRequired[str],
     iamRoleArn: NotRequired[str],
     roleAliasArn: NotRequired[str],
+    issuerCertificateIdentifier: NotRequired[IssuerCertificateIdentifierTypeDef],  # (2)
+    deviceCertificateArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PolicyVersionIdentifierTypeDef](./type_defs.md#policyversionidentifiertypedef) 
+2. See [:material-code-braces: IssuerCertificateIdentifierTypeDef](./type_defs.md#issuercertificateidentifiertypedef) 
 ## TestInvokeAuthorizerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12790,6 +12829,28 @@ class AuditFindingTypeDef(TypedDict):
 1. See [:material-code-brackets: AuditFindingSeverityType](./literals.md#auditfindingseveritytype) 
 2. See [:material-code-braces: NonCompliantResourceTypeDef](./type_defs.md#noncompliantresourcetypedef) 
 3. See [:material-code-braces: RelatedResourceTypeDef](./type_defs.md#relatedresourcetypedef) 
+## ListRelatedResourcesForAuditFindingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ListRelatedResourcesForAuditFindingResponseTypeDef
+
+def get_value() -> ListRelatedResourcesForAuditFindingResponseTypeDef:
+    return {
+        "relatedResources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRelatedResourcesForAuditFindingResponseTypeDef(TypedDict):
+    relatedResources: List[RelatedResourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RelatedResourceTypeDef](./type_defs.md#relatedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TestAuthorizationResponseTypeDef
 
 ```python title="Usage Example"

@@ -163,6 +163,21 @@ DescribeProjectsPaginatorName = Literal[
     "describe_projects",
 ]
 ```
+## DetectLabelsFeatureNameType
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.literals import DetectLabelsFeatureNameType
+
+def get_value() -> DetectLabelsFeatureNameType:
+    return "GENERAL_LABELS"
+```
+
+```python title="Definition"
+DetectLabelsFeatureNameType = Literal[
+    "GENERAL_LABELS",
+    "IMAGE_PROPERTIES",
+]
+```
 ## EmotionNameType
 
 ```python title="Usage Example"

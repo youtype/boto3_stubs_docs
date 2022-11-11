@@ -690,6 +690,81 @@ class DescribeStreamProcessorRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
+## DetectLabelsImageQualityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectLabelsImageQualityTypeDef
+
+def get_value() -> DetectLabelsImageQualityTypeDef:
+    return {
+        "Brightness": ...,
+    }
+```
+
+```python title="Definition"
+class DetectLabelsImageQualityTypeDef(TypedDict):
+    Brightness: NotRequired[float],
+    Sharpness: NotRequired[float],
+    Contrast: NotRequired[float],
+```
+
+## DominantColorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DominantColorTypeDef
+
+def get_value() -> DominantColorTypeDef:
+    return {
+        "Red": ...,
+    }
+```
+
+```python title="Definition"
+class DominantColorTypeDef(TypedDict):
+    Red: NotRequired[int],
+    Blue: NotRequired[int],
+    Green: NotRequired[int],
+    HexCode: NotRequired[str],
+    CSSColor: NotRequired[str],
+    SimplifiedColor: NotRequired[str],
+    PixelPercent: NotRequired[float],
+```
+
+## DetectLabelsImagePropertiesSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectLabelsImagePropertiesSettingsTypeDef
+
+def get_value() -> DetectLabelsImagePropertiesSettingsTypeDef:
+    return {
+        "MaxDominantColors": ...,
+    }
+```
+
+```python title="Definition"
+class DetectLabelsImagePropertiesSettingsTypeDef(TypedDict):
+    MaxDominantColors: NotRequired[int],
+```
+
+## GeneralLabelsSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import GeneralLabelsSettingsTypeDef
+
+def get_value() -> GeneralLabelsSettingsTypeDef:
+    return {
+        "LabelInclusionFilters": ...,
+    }
+```
+
+```python title="Definition"
+class GeneralLabelsSettingsTypeDef(TypedDict):
+    LabelInclusionFilters: NotRequired[Sequence[str]],
+    LabelExclusionFilters: NotRequired[Sequence[str]],
+    LabelCategoryInclusionFilters: NotRequired[Sequence[str]],
+    LabelCategoryExclusionFilters: NotRequired[Sequence[str]],
+```
+
 ## HumanLoopActivationOutputTypeDef
 
 ```python title="Usage Example"
@@ -1211,6 +1286,38 @@ class KinesisVideoStreamTypeDef(TypedDict):
     Arn: NotRequired[str],
 ```
 
+## LabelAliasTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import LabelAliasTypeDef
+
+def get_value() -> LabelAliasTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class LabelAliasTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
+
+## LabelCategoryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import LabelCategoryTypeDef
+
+def get_value() -> LabelCategoryTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class LabelCategoryTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
+
 ## ParentTypeDef
 
 ```python title="Usage Example"
@@ -1677,24 +1784,6 @@ class FaceTypeDef(TypedDict):
     ExternalImageId: NotRequired[str],
     Confidence: NotRequired[float],
     IndexFacesModelVersion: NotRequired[str],
-```
-
-1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
-## InstanceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rekognition.type_defs import InstanceTypeDef
-
-def get_value() -> InstanceTypeDef:
-    return {
-        "BoundingBox": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceTypeDef(TypedDict):
-    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
-    Confidence: NotRequired[float],
 ```
 
 1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
@@ -2619,6 +2708,83 @@ class DescribeProjectVersionsRequestProjectVersionTrainingCompletedWaitTypeDef(T
 ```
 
 1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DetectLabelsImageBackgroundTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectLabelsImageBackgroundTypeDef
+
+def get_value() -> DetectLabelsImageBackgroundTypeDef:
+    return {
+        "Quality": ...,
+    }
+```
+
+```python title="Definition"
+class DetectLabelsImageBackgroundTypeDef(TypedDict):
+    Quality: NotRequired[DetectLabelsImageQualityTypeDef],  # (1)
+    DominantColors: NotRequired[List[DominantColorTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DetectLabelsImageQualityTypeDef](./type_defs.md#detectlabelsimagequalitytypedef) 
+2. See [:material-code-braces: DominantColorTypeDef](./type_defs.md#dominantcolortypedef) 
+## DetectLabelsImageForegroundTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectLabelsImageForegroundTypeDef
+
+def get_value() -> DetectLabelsImageForegroundTypeDef:
+    return {
+        "Quality": ...,
+    }
+```
+
+```python title="Definition"
+class DetectLabelsImageForegroundTypeDef(TypedDict):
+    Quality: NotRequired[DetectLabelsImageQualityTypeDef],  # (1)
+    DominantColors: NotRequired[List[DominantColorTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DetectLabelsImageQualityTypeDef](./type_defs.md#detectlabelsimagequalitytypedef) 
+2. See [:material-code-braces: DominantColorTypeDef](./type_defs.md#dominantcolortypedef) 
+## InstanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Confidence: NotRequired[float],
+    DominantColors: NotRequired[List[DominantColorTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: DominantColorTypeDef](./type_defs.md#dominantcolortypedef) 
+## DetectLabelsSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectLabelsSettingsTypeDef
+
+def get_value() -> DetectLabelsSettingsTypeDef:
+    return {
+        "GeneralLabels": ...,
+    }
+```
+
+```python title="Definition"
+class DetectLabelsSettingsTypeDef(TypedDict):
+    GeneralLabels: NotRequired[GeneralLabelsSettingsTypeDef],  # (1)
+    ImageProperties: NotRequired[DetectLabelsImagePropertiesSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: GeneralLabelsSettingsTypeDef](./type_defs.md#generallabelssettingstypedef) 
+2. See [:material-code-braces: DetectLabelsImagePropertiesSettingsTypeDef](./type_defs.md#detectlabelsimagepropertiessettingstypedef) 
 ## DetectModerationLabelsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3039,27 +3205,6 @@ class ListFacesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FaceTypeDef](./type_defs.md#facetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LabelTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rekognition.type_defs import LabelTypeDef
-
-def get_value() -> LabelTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class LabelTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Confidence: NotRequired[float],
-    Instances: NotRequired[List[InstanceTypeDef]],  # (1)
-    Parents: NotRequired[List[ParentTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
-2. See [:material-code-braces: ParentTypeDef](./type_defs.md#parenttypedef) 
 ## CelebrityTypeDef
 
 ```python title="Usage Example"
@@ -3217,6 +3362,54 @@ class DescribeProjectsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetectLabelsImagePropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectLabelsImagePropertiesTypeDef
+
+def get_value() -> DetectLabelsImagePropertiesTypeDef:
+    return {
+        "Quality": ...,
+    }
+```
+
+```python title="Definition"
+class DetectLabelsImagePropertiesTypeDef(TypedDict):
+    Quality: NotRequired[DetectLabelsImageQualityTypeDef],  # (1)
+    DominantColors: NotRequired[List[DominantColorTypeDef]],  # (2)
+    Foreground: NotRequired[DetectLabelsImageForegroundTypeDef],  # (3)
+    Background: NotRequired[DetectLabelsImageBackgroundTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DetectLabelsImageQualityTypeDef](./type_defs.md#detectlabelsimagequalitytypedef) 
+2. See [:material-code-braces: DominantColorTypeDef](./type_defs.md#dominantcolortypedef) 
+3. See [:material-code-braces: DetectLabelsImageForegroundTypeDef](./type_defs.md#detectlabelsimageforegroundtypedef) 
+4. See [:material-code-braces: DetectLabelsImageBackgroundTypeDef](./type_defs.md#detectlabelsimagebackgroundtypedef) 
+## LabelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import LabelTypeDef
+
+def get_value() -> LabelTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class LabelTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Confidence: NotRequired[float],
+    Instances: NotRequired[List[InstanceTypeDef]],  # (1)
+    Parents: NotRequired[List[ParentTypeDef]],  # (2)
+    Aliases: NotRequired[List[LabelAliasTypeDef]],  # (3)
+    Categories: NotRequired[List[LabelCategoryTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: ParentTypeDef](./type_defs.md#parenttypedef) 
+3. See [:material-code-braces: LabelAliasTypeDef](./type_defs.md#labelaliastypedef) 
+4. See [:material-code-braces: LabelCategoryTypeDef](./type_defs.md#labelcategorytypedef) 
 ## CelebrityDetailTypeDef
 
 ```python title="Usage Example"
@@ -3559,9 +3752,13 @@ class DetectLabelsRequestRequestTypeDef(TypedDict):
     Image: ImageTypeDef,  # (1)
     MaxLabels: NotRequired[int],
     MinConfidence: NotRequired[float],
+    Features: NotRequired[Sequence[DetectLabelsFeatureNameType]],  # (2)
+    Settings: NotRequired[DetectLabelsSettingsTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-brackets: DetectLabelsFeatureNameType](./literals.md#detectlabelsfeaturenametype) 
+3. See [:material-code-braces: DetectLabelsSettingsTypeDef](./type_defs.md#detectlabelssettingstypedef) 
 ## DetectProtectiveEquipmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4037,49 +4234,6 @@ class SearchFacesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FaceMatchTypeDef](./type_defs.md#facematchtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DetectLabelsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rekognition.type_defs import DetectLabelsResponseTypeDef
-
-def get_value() -> DetectLabelsResponseTypeDef:
-    return {
-        "Labels": ...,
-        "OrientationCorrection": ...,
-        "LabelModelVersion": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DetectLabelsResponseTypeDef(TypedDict):
-    Labels: List[LabelTypeDef],  # (1)
-    OrientationCorrection: OrientationCorrectionType,  # (2)
-    LabelModelVersion: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
-2. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## LabelDetectionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rekognition.type_defs import LabelDetectionTypeDef
-
-def get_value() -> LabelDetectionTypeDef:
-    return {
-        "Timestamp": ...,
-    }
-```
-
-```python title="Definition"
-class LabelDetectionTypeDef(TypedDict):
-    Timestamp: NotRequired[int],
-    Label: NotRequired[LabelTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
 ## RecognizeCelebritiesResponseTypeDef
 
 ```python title="Usage Example"
@@ -4159,6 +4313,52 @@ class ProtectiveEquipmentPersonTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProtectiveEquipmentBodyPartTypeDef](./type_defs.md#protectiveequipmentbodyparttypedef) 
 2. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+## DetectLabelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectLabelsResponseTypeDef
+
+def get_value() -> DetectLabelsResponseTypeDef:
+    return {
+        "Labels": ...,
+        "OrientationCorrection": ...,
+        "LabelModelVersion": ...,
+        "ImageProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetectLabelsResponseTypeDef(TypedDict):
+    Labels: List[LabelTypeDef],  # (1)
+    OrientationCorrection: OrientationCorrectionType,  # (2)
+    LabelModelVersion: str,
+    ImageProperties: DetectLabelsImagePropertiesTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
+2. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
+3. See [:material-code-braces: DetectLabelsImagePropertiesTypeDef](./type_defs.md#detectlabelsimagepropertiestypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LabelDetectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import LabelDetectionTypeDef
+
+def get_value() -> LabelDetectionTypeDef:
+    return {
+        "Timestamp": ...,
+    }
+```
+
+```python title="Definition"
+class LabelDetectionTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    Label: NotRequired[LabelTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
 ## CelebrityRecognitionTypeDef
 
 ```python title="Usage Example"
@@ -4448,6 +4648,31 @@ class CreateDatasetRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
 2. See [:material-code-braces: DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef) 
+## DetectProtectiveEquipmentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentResponseTypeDef
+
+def get_value() -> DetectProtectiveEquipmentResponseTypeDef:
+    return {
+        "ProtectiveEquipmentModelVersion": ...,
+        "Persons": ...,
+        "Summary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetectProtectiveEquipmentResponseTypeDef(TypedDict):
+    ProtectiveEquipmentModelVersion: str,
+    Persons: List[ProtectiveEquipmentPersonTypeDef],  # (1)
+    Summary: ProtectiveEquipmentSummaryTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ProtectiveEquipmentPersonTypeDef](./type_defs.md#protectiveequipmentpersontypedef) 
+2. See [:material-code-braces: ProtectiveEquipmentSummaryTypeDef](./type_defs.md#protectiveequipmentsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLabelDetectionResponseTypeDef
 
 ```python title="Usage Example"
@@ -4480,31 +4705,6 @@ class GetLabelDetectionResponseTypeDef(TypedDict):
 2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
 3. See [:material-code-braces: LabelDetectionTypeDef](./type_defs.md#labeldetectiontypedef) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DetectProtectiveEquipmentResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentResponseTypeDef
-
-def get_value() -> DetectProtectiveEquipmentResponseTypeDef:
-    return {
-        "ProtectiveEquipmentModelVersion": ...,
-        "Persons": ...,
-        "Summary": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DetectProtectiveEquipmentResponseTypeDef(TypedDict):
-    ProtectiveEquipmentModelVersion: str,
-    Persons: List[ProtectiveEquipmentPersonTypeDef],  # (1)
-    Summary: ProtectiveEquipmentSummaryTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: ProtectiveEquipmentPersonTypeDef](./type_defs.md#protectiveequipmentpersontypedef) 
-2. See [:material-code-braces: ProtectiveEquipmentSummaryTypeDef](./type_defs.md#protectiveequipmentsummarytypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCelebrityRecognitionResponseTypeDef
 
 ```python title="Usage Example"

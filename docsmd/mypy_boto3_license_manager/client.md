@@ -1312,6 +1312,39 @@ parent.list_received_grants(**kwargs)
 
 1. See [:material-code-braces: ListReceivedGrantsRequestRequestTypeDef](./type_defs.md#listreceivedgrantsrequestrequesttypedef) 
 
+### list\_received\_grants\_for\_organization
+
+Lists the grants received for all accounts in the organization.
+
+Type annotations and code completion for `#!python boto3.client("license-manager").list_received_grants_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants_for_organization)
+
+```python title="Method definition"
+def list_received_grants_for_organization(
+    self,
+    *,
+    LicenseArn: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListReceivedGrantsForOrganizationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListReceivedGrantsForOrganizationResponseTypeDef](./type_defs.md#listreceivedgrantsfororganizationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListReceivedGrantsForOrganizationRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+}
+
+parent.list_received_grants_for_organization(**kwargs)
+```
+
+1. See [:material-code-braces: ListReceivedGrantsForOrganizationRequestRequestTypeDef](./type_defs.md#listreceivedgrantsfororganizationrequestrequesttypedef) 
+
 ### list\_received\_licenses
 
 Lists received licenses.
@@ -1344,6 +1377,38 @@ parent.list_received_licenses(**kwargs)
 ```
 
 1. See [:material-code-braces: ListReceivedLicensesRequestRequestTypeDef](./type_defs.md#listreceivedlicensesrequestrequesttypedef) 
+
+### list\_received\_licenses\_for\_organization
+
+Lists the licenses received for all accounts in the organization.
+
+Type annotations and code completion for `#!python boto3.client("license-manager").list_received_licenses_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses_for_organization)
+
+```python title="Method definition"
+def list_received_licenses_for_organization(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListReceivedLicensesForOrganizationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListReceivedLicensesForOrganizationResponseTypeDef](./type_defs.md#listreceivedlicensesfororganizationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListReceivedLicensesForOrganizationRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.list_received_licenses_for_organization(**kwargs)
+```
+
+1. See [:material-code-braces: ListReceivedLicensesForOrganizationRequestRequestTypeDef](./type_defs.md#listreceivedlicensesfororganizationrequestrequesttypedef) 
 
 ### list\_resource\_inventory
 

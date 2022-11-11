@@ -612,11 +612,12 @@ PaginatorName = Literal[
 from mypy_boto3_gamesparks.literals import RegionName
 
 def get_value() -> RegionName:
-    return "us-east-1"
+    return "ap-northeast-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "ap-northeast-1",
     "us-east-1",
 ]
 ```

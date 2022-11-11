@@ -272,9 +272,42 @@ parent.list_entities(**kwargs)
 
 1. See [:material-code-braces: ListEntitiesRequestRequestTypeDef](./type_defs.md#listentitiesrequestrequesttypedef) 
 
+### list\_tags\_for\_resource
+
+Lists all tags that have been added to a resource (either an
+[entity](https://docs.aws.amazon.com/marketplace-catalog/latest/api-
+reference/welcome.html#catalog-api-entities)_ or `change set
+<https://docs.aws.amazon.com/marketplace-catalog/latest/api-
+reference/welcome.html#working-with-change-se...`.
+
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_tags_for_resource)
+
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.list_tags_for_resource(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
 ### start\_change\_set
 
-This operation allows you to request changes for your entities.
+Allows you to request changes for your entities.
 
 Type annotations and code completion for `#!python boto3.client("marketplace-catalog").start_change_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set)
@@ -287,12 +320,14 @@ def start_change_set(
     ChangeSet: Sequence[ChangeTypeDef],  # (1)
     ChangeSetName: str = ...,
     ClientRequestToken: str = ...,
-) -> StartChangeSetResponseTypeDef:  # (2)
+    ChangeSetTags: Sequence[TagTypeDef] = ...,  # (2)
+) -> StartChangeSetResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: ChangeTypeDef](./type_defs.md#changetypedef) 
-2. See [:material-code-braces: StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -305,6 +340,74 @@ parent.start_change_set(**kwargs)
 ```
 
 1. See [:material-code-braces: StartChangeSetRequestRequestTypeDef](./type_defs.md#startchangesetrequestrequesttypedef) 
+
+### tag\_resource
+
+Tags a resource (either an [entity](https://docs.aws.amazon.com/marketplace-
+catalog/latest/api-reference/welcome.html#catalog-api-entities)_ or [change
+set](https://docs.aws.amazon.com/marketplace-catalog/latest/api-
+reference/welcome.html#working-with-change-sets)_ ).
+
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.tag_resource)
+
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
+
+parent.tag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
+
+Removes a tag or list of tags from a resource (either an
+[entity](https://docs.aws.amazon.com/marketplace-catalog/latest/api-
+reference/welcome.html#catalog-api-entities)_ or [change
+set](https://docs.aws.amazon.com/marketplace-catalog/latest/api-
+reference/welcome.html#working-with-change-sets)...
+
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.untag_resource)
+
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
+
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
 
 

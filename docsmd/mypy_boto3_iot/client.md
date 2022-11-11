@@ -5255,6 +5255,37 @@ parent.list_provisioning_templates(**kwargs)
 
 1. See [:material-code-braces: ListProvisioningTemplatesRequestRequestTypeDef](./type_defs.md#listprovisioningtemplatesrequestrequesttypedef) 
 
+### list\_related\_resources\_for\_audit\_finding
+
+The related resources of an Audit finding.
+
+Type annotations and code completion for `#!python boto3.client("iot").list_related_resources_for_audit_finding` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_related_resources_for_audit_finding)
+
+```python title="Method definition"
+def list_related_resources_for_audit_finding(
+    self,
+    *,
+    findingId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListRelatedResourcesForAuditFindingResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListRelatedResourcesForAuditFindingResponseTypeDef](./type_defs.md#listrelatedresourcesforauditfindingresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRelatedResourcesForAuditFindingRequestRequestTypeDef = {  # (1)
+    "findingId": ...,
+}
+
+parent.list_related_resources_for_audit_finding(**kwargs)
+```
+
+1. See [:material-code-braces: ListRelatedResourcesForAuditFindingRequestRequestTypeDef](./type_defs.md#listrelatedresourcesforauditfindingrequestrequesttypedef) 
+
 ### list\_role\_aliases
 
 Lists the role aliases registered in your account.

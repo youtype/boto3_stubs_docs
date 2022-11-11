@@ -108,6 +108,24 @@ class ErrorDetailTypeDef(TypedDict):
     ErrorMessage: NotRequired[str],
 ```
 
+## TagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
+
 ## DescribeChangeSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -200,6 +218,40 @@ class SortTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
+
+## UntagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
+```
+
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
+
 ## CancelChangeSetResponseTypeDef
 
 ```python title="Usage Example"
@@ -291,28 +343,6 @@ class ListChangeSetsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ChangeSetSummaryListItemTypeDef](./type_defs.md#changesetsummarylistitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ChangeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_marketplace_catalog.type_defs import ChangeTypeDef
-
-def get_value() -> ChangeTypeDef:
-    return {
-        "ChangeType": ...,
-        "Entity": ...,
-        "Details": ...,
-    }
-```
-
-```python title="Definition"
-class ChangeTypeDef(TypedDict):
-    ChangeType: str,
-    Entity: EntityTypeDef,  # (1)
-    Details: str,
-    ChangeName: NotRequired[str],
-```
-
-1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
 ## ChangeSummaryTypeDef
 
 ```python title="Usage Example"
@@ -335,6 +365,71 @@ class ChangeSummaryTypeDef(TypedDict):
 
 1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
 2. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
+## ChangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.type_defs import ChangeTypeDef
+
+def get_value() -> ChangeTypeDef:
+    return {
+        "ChangeType": ...,
+        "Entity": ...,
+        "Details": ...,
+    }
+```
+
+```python title="Definition"
+class ChangeTypeDef(TypedDict):
+    ChangeType: str,
+    Entity: EntityTypeDef,  # (1)
+    Details: str,
+    EntityTags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ChangeName: NotRequired[str],
+```
+
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ListEntitiesResponseTypeDef
 
 ```python title="Usage Example"
@@ -403,27 +498,6 @@ class ListEntitiesRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
-## StartChangeSetRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetRequestRequestTypeDef
-
-def get_value() -> StartChangeSetRequestRequestTypeDef:
-    return {
-        "Catalog": ...,
-        "ChangeSet": ...,
-    }
-```
-
-```python title="Definition"
-class StartChangeSetRequestRequestTypeDef(TypedDict):
-    Catalog: str,
-    ChangeSet: Sequence[ChangeTypeDef],  # (1)
-    ChangeSetName: NotRequired[str],
-    ClientRequestToken: NotRequired[str],
-```
-
-1. See [:material-code-braces: ChangeTypeDef](./type_defs.md#changetypedef) 
 ## DescribeChangeSetResponseTypeDef
 
 ```python title="Usage Example"
@@ -462,3 +536,26 @@ class DescribeChangeSetResponseTypeDef(TypedDict):
 2. See [:material-code-brackets: FailureCodeType](./literals.md#failurecodetype) 
 3. See [:material-code-braces: ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartChangeSetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetRequestRequestTypeDef
+
+def get_value() -> StartChangeSetRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+        "ChangeSet": ...,
+    }
+```
+
+```python title="Definition"
+class StartChangeSetRequestRequestTypeDef(TypedDict):
+    Catalog: str,
+    ChangeSet: Sequence[ChangeTypeDef],  # (1)
+    ChangeSetName: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    ChangeSetTags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ChangeTypeDef](./type_defs.md#changetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

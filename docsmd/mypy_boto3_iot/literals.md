@@ -1711,6 +1711,7 @@ ResourceTypeType = Literal[
     "DEVICE_CERTIFICATE",
     "IAM_ROLE",
     "IOT_POLICY",
+    "ISSUER_CERTIFICATE",
     "ROLE_ALIAS",
 ]
 ```

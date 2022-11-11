@@ -797,12 +797,16 @@ def detect_labels(
     Image: ImageTypeDef,  # (1)
     MaxLabels: int = ...,
     MinConfidence: float = ...,
-) -> DetectLabelsResponseTypeDef:  # (2)
+    Features: Sequence[DetectLabelsFeatureNameType] = ...,  # (2)
+    Settings: DetectLabelsSettingsTypeDef = ...,  # (3)
+) -> DetectLabelsResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
-2. See [:material-code-braces: DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef) 
+2. See [:material-code-brackets: DetectLabelsFeatureNameType](./literals.md#detectlabelsfeaturenametype) 
+3. See [:material-code-braces: DetectLabelsSettingsTypeDef](./type_defs.md#detectlabelssettingstypedef) 
+4. See [:material-code-braces: DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

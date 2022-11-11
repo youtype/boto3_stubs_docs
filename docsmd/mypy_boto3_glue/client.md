@@ -2771,7 +2771,7 @@ parent.get_dev_endpoint(**kwargs)
 
 ### get\_dev\_endpoints
 
-Retrieves all the development endpoints in this AWS account.
+Retrieves all the development endpoints in this Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("glue").get_dev_endpoints` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints)

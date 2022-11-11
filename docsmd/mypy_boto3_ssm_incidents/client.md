@@ -176,11 +176,13 @@ def create_timeline_event(
     eventType: str,
     incidentRecordArn: str,
     clientToken: str = ...,
-) -> CreateTimelineEventOutputTypeDef:  # (1)
+    eventReferences: Sequence[EventReferenceTypeDef] = ...,  # (1)
+) -> CreateTimelineEventOutputTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: CreateTimelineEventOutputTypeDef](./type_defs.md#createtimelineeventoutputtypedef) 
+1. See [:material-code-braces: EventReferenceTypeDef](./type_defs.md#eventreferencetypedef) 
+2. See [:material-code-braces: CreateTimelineEventOutputTypeDef](./type_defs.md#createtimelineeventoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1017,12 +1019,14 @@ def update_timeline_event(
     incidentRecordArn: str,
     clientToken: str = ...,
     eventData: str = ...,
+    eventReferences: Sequence[EventReferenceTypeDef] = ...,  # (1)
     eventTime: Union[datetime, str] = ...,
     eventType: str = ...,
 ) -> Dict[str, Any]:
     ...
 ```
 
+1. See [:material-code-braces: EventReferenceTypeDef](./type_defs.md#eventreferencetypedef) 
 
 
 ```python title="Usage example with kwargs"

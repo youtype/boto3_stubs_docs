@@ -114,27 +114,21 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
-## CreateTimelineEventInputRequestTypeDef
+## EventReferenceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventInputRequestTypeDef
+from mypy_boto3_ssm_incidents.type_defs import EventReferenceTypeDef
 
-def get_value() -> CreateTimelineEventInputRequestTypeDef:
+def get_value() -> EventReferenceTypeDef:
     return {
-        "eventData": ...,
-        "eventTime": ...,
-        "eventType": ...,
-        "incidentRecordArn": ...,
+        "relatedItemId": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateTimelineEventInputRequestTypeDef(TypedDict):
-    eventData: str,
-    eventTime: Union[datetime, str],
-    eventType: str,
-    incidentRecordArn: str,
-    clientToken: NotRequired[str],
+class EventReferenceTypeDef(TypedDict):
+    relatedItemId: NotRequired[str],
+    resource: NotRequired[str],
 ```
 
 ## DeleteIncidentRecordInputRequestTypeDef
@@ -254,30 +248,6 @@ class DynamicSsmParameterValueTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: VariableTypeType](./literals.md#variabletypetype) 
-## EventSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import EventSummaryTypeDef
-
-def get_value() -> EventSummaryTypeDef:
-    return {
-        "eventId": ...,
-        "eventTime": ...,
-        "eventType": ...,
-        "eventUpdatedTime": ...,
-        "incidentRecordArn": ...,
-    }
-```
-
-```python title="Definition"
-class EventSummaryTypeDef(TypedDict):
-    eventId: str,
-    eventTime: datetime,
-    eventType: str,
-    eventUpdatedTime: datetime,
-    incidentRecordArn: str,
-```
-
 ## GetIncidentRecordInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -414,32 +384,6 @@ def get_value() -> GetTimelineEventInputRequestTypeDef:
 ```python title="Definition"
 class GetTimelineEventInputRequestTypeDef(TypedDict):
     eventId: str,
-    incidentRecordArn: str,
-```
-
-## TimelineEventTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import TimelineEventTypeDef
-
-def get_value() -> TimelineEventTypeDef:
-    return {
-        "eventData": ...,
-        "eventId": ...,
-        "eventTime": ...,
-        "eventType": ...,
-        "eventUpdatedTime": ...,
-        "incidentRecordArn": ...,
-    }
-```
-
-```python title="Definition"
-class TimelineEventTypeDef(TypedDict):
-    eventData: str,
-    eventId: str,
-    eventTime: datetime,
-    eventType: str,
-    eventUpdatedTime: datetime,
     incidentRecordArn: str,
 ```
 
@@ -698,28 +642,6 @@ class UpdateDeletionProtectionInputRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
 ```
 
-## UpdateTimelineEventInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import UpdateTimelineEventInputRequestTypeDef
-
-def get_value() -> UpdateTimelineEventInputRequestTypeDef:
-    return {
-        "eventId": ...,
-        "incidentRecordArn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTimelineEventInputRequestTypeDef(TypedDict):
-    eventId: str,
-    incidentRecordArn: str,
-    clientToken: NotRequired[str],
-    eventData: NotRequired[str],
-    eventTime: NotRequired[Union[datetime, str]],
-    eventType: NotRequired[str],
-```
-
 ## ConditionTypeDef
 
 ```python title="Usage Example"
@@ -895,6 +817,109 @@ class StartIncidentOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTimelineEventInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventInputRequestTypeDef
+
+def get_value() -> CreateTimelineEventInputRequestTypeDef:
+    return {
+        "eventData": ...,
+        "eventTime": ...,
+        "eventType": ...,
+        "incidentRecordArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTimelineEventInputRequestTypeDef(TypedDict):
+    eventData: str,
+    eventTime: Union[datetime, str],
+    eventType: str,
+    incidentRecordArn: str,
+    clientToken: NotRequired[str],
+    eventReferences: NotRequired[Sequence[EventReferenceTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: EventReferenceTypeDef](./type_defs.md#eventreferencetypedef) 
+## EventSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import EventSummaryTypeDef
+
+def get_value() -> EventSummaryTypeDef:
+    return {
+        "eventId": ...,
+        "eventTime": ...,
+        "eventType": ...,
+        "eventUpdatedTime": ...,
+        "incidentRecordArn": ...,
+    }
+```
+
+```python title="Definition"
+class EventSummaryTypeDef(TypedDict):
+    eventId: str,
+    eventTime: datetime,
+    eventType: str,
+    eventUpdatedTime: datetime,
+    incidentRecordArn: str,
+    eventReferences: NotRequired[List[EventReferenceTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: EventReferenceTypeDef](./type_defs.md#eventreferencetypedef) 
+## TimelineEventTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import TimelineEventTypeDef
+
+def get_value() -> TimelineEventTypeDef:
+    return {
+        "eventData": ...,
+        "eventId": ...,
+        "eventTime": ...,
+        "eventType": ...,
+        "eventUpdatedTime": ...,
+        "incidentRecordArn": ...,
+    }
+```
+
+```python title="Definition"
+class TimelineEventTypeDef(TypedDict):
+    eventData: str,
+    eventId: str,
+    eventTime: datetime,
+    eventType: str,
+    eventUpdatedTime: datetime,
+    incidentRecordArn: str,
+    eventReferences: NotRequired[List[EventReferenceTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: EventReferenceTypeDef](./type_defs.md#eventreferencetypedef) 
+## UpdateTimelineEventInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import UpdateTimelineEventInputRequestTypeDef
+
+def get_value() -> UpdateTimelineEventInputRequestTypeDef:
+    return {
+        "eventId": ...,
+        "incidentRecordArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTimelineEventInputRequestTypeDef(TypedDict):
+    eventId: str,
+    incidentRecordArn: str,
+    clientToken: NotRequired[str],
+    eventData: NotRequired[str],
+    eventReferences: NotRequired[Sequence[EventReferenceTypeDef]],  # (1)
+    eventTime: NotRequired[Union[datetime, str]],
+    eventType: NotRequired[str],
+```
+
+1. See [:material-code-braces: EventReferenceTypeDef](./type_defs.md#eventreferencetypedef) 
 ## UpdateReplicationSetActionTypeDef
 
 ```python title="Usage Example"
@@ -938,28 +963,6 @@ class SsmAutomationTypeDef(TypedDict):
 
 1. See [:material-code-braces: DynamicSsmParameterValueTypeDef](./type_defs.md#dynamicssmparametervaluetypedef) 
 2. See [:material-code-brackets: SsmTargetAccountType](./literals.md#ssmtargetaccounttype) 
-## ListTimelineEventsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsOutputTypeDef
-
-def get_value() -> ListTimelineEventsOutputTypeDef:
-    return {
-        "eventSummaries": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTimelineEventsOutputTypeDef(TypedDict):
-    eventSummaries: List[EventSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EventSummaryTypeDef](./type_defs.md#eventsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef
 
 ```python title="Usage Example"
@@ -1087,26 +1090,6 @@ class GetResourcePoliciesOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetTimelineEventOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import GetTimelineEventOutputTypeDef
-
-def get_value() -> GetTimelineEventOutputTypeDef:
-    return {
-        "event": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetTimelineEventOutputTypeDef(TypedDict):
-    event: TimelineEventTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TimelineEventTypeDef](./type_defs.md#timelineeventtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IncidentRecordSummaryTypeDef
 
@@ -1320,6 +1303,48 @@ class FilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+## ListTimelineEventsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsOutputTypeDef
+
+def get_value() -> ListTimelineEventsOutputTypeDef:
+    return {
+        "eventSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTimelineEventsOutputTypeDef(TypedDict):
+    eventSummaries: List[EventSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventSummaryTypeDef](./type_defs.md#eventsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTimelineEventOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import GetTimelineEventOutputTypeDef
+
+def get_value() -> GetTimelineEventOutputTypeDef:
+    return {
+        "event": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTimelineEventOutputTypeDef(TypedDict):
+    event: TimelineEventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TimelineEventTypeDef](./type_defs.md#timelineeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateReplicationSetInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1413,6 +1438,7 @@ def get_value() -> RelatedItemTypeDef:
 ```python title="Definition"
 class RelatedItemTypeDef(TypedDict):
     identifier: ItemIdentifierTypeDef,  # (1)
+    generatedId: NotRequired[str],
     title: NotRequired[str],
 ```
 

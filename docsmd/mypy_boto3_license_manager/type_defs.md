@@ -1812,6 +1812,26 @@ class ListLicensesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListReceivedGrantsForOrganizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager.type_defs import ListReceivedGrantsForOrganizationRequestRequestTypeDef
+
+def get_value() -> ListReceivedGrantsForOrganizationRequestRequestTypeDef:
+    return {
+        "LicenseArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListReceivedGrantsForOrganizationRequestRequestTypeDef(TypedDict):
+    LicenseArn: str,
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListReceivedGrantsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1826,6 +1846,25 @@ def get_value() -> ListReceivedGrantsRequestRequestTypeDef:
 ```python title="Definition"
 class ListReceivedGrantsRequestRequestTypeDef(TypedDict):
     GrantArns: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListReceivedLicensesForOrganizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager.type_defs import ListReceivedLicensesForOrganizationRequestRequestTypeDef
+
+def get_value() -> ListReceivedLicensesForOrganizationRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListReceivedLicensesForOrganizationRequestRequestTypeDef(TypedDict):
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
@@ -1927,6 +1966,28 @@ def get_value() -> ListDistributedGrantsResponseTypeDef:
 
 ```python title="Definition"
 class ListDistributedGrantsResponseTypeDef(TypedDict):
+    Grants: List[GrantTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GrantTypeDef](./type_defs.md#granttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReceivedGrantsForOrganizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager.type_defs import ListReceivedGrantsForOrganizationResponseTypeDef
+
+def get_value() -> ListReceivedGrantsForOrganizationResponseTypeDef:
+    return {
+        "Grants": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListReceivedGrantsForOrganizationResponseTypeDef(TypedDict):
     Grants: List[GrantTypeDef],  # (1)
     NextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
@@ -2706,6 +2767,28 @@ class ListLicenseManagerReportGeneratorsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReportGeneratorTypeDef](./type_defs.md#reportgeneratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReceivedLicensesForOrganizationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager.type_defs import ListReceivedLicensesForOrganizationResponseTypeDef
+
+def get_value() -> ListReceivedLicensesForOrganizationResponseTypeDef:
+    return {
+        "Licenses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListReceivedLicensesForOrganizationResponseTypeDef(TypedDict):
+    Licenses: List[GrantedLicenseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GrantedLicenseTypeDef](./type_defs.md#grantedlicensetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListReceivedLicensesResponseTypeDef
 
