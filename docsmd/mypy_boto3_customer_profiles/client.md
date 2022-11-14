@@ -1223,8 +1223,9 @@ parent.put_profile_object_type(**kwargs)
 
 ### search\_profiles
 
-Searches for profiles within a specific domain name using name, phone number,
-email address, account number, or a custom defined index.
+Searches for profiles within a specific domain using one or more predefined
+search keys (e.g., _fullName, _phone, _email, _account, etc.) and/or custom-
+defined search keys.
 
 Type annotations and code completion for `#!python boto3.client("customer-profiles").search_profiles` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.search_profiles)
@@ -1238,11 +1239,15 @@ def search_profiles(
     Values: Sequence[str],
     NextToken: str = ...,
     MaxResults: int = ...,
-) -> SearchProfilesResponseTypeDef:  # (1)
+    AdditionalSearchKeys: Sequence[AdditionalSearchKeyTypeDef] = ...,  # (1)
+    LogicalOperator: logicalOperatorType = ...,  # (2)
+) -> SearchProfilesResponseTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef) 
+1. See [:material-code-braces: AdditionalSearchKeyTypeDef](./type_defs.md#additionalsearchkeytypedef) 
+2. See [:material-code-brackets: logicalOperatorType](./literals.md#logicaloperatortype) 
+3. See [:material-code-braces: SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

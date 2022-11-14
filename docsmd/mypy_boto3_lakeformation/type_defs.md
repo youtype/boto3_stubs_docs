@@ -1945,6 +1945,7 @@ class DataLakeSettingsTypeDef(TypedDict):
     DataLakeAdmins: NotRequired[List[DataLakePrincipalTypeDef]],  # (1)
     CreateDatabaseDefaultPermissions: NotRequired[List[PrincipalPermissionsTypeDef]],  # (2)
     CreateTableDefaultPermissions: NotRequired[List[PrincipalPermissionsTypeDef]],  # (2)
+    Parameters: NotRequired[Dict[str, str]],
     TrustedResourceOwners: NotRequired[List[str]],
     AllowExternalDataFiltering: NotRequired[bool],
     ExternalDataFilteringAllowList: NotRequired[List[DataLakePrincipalTypeDef]],  # (1)

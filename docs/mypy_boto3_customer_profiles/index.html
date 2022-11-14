@@ -37864,6 +37864,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#triggertypetype">TriggerTypeType</a></li>
 <li><a href="literals/#workflowtypetype">WorkflowTypeType</a></li>
 <li><a href="literals/#zendeskconnectoroperatortype">ZendeskConnectorOperatorType</a></li>
+<li><a href="literals/#logicaloperatortype">logicalOperatorType</a></li>
 <li><a href="literals/#customerprofilesservicename">CustomerProfilesServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -37884,6 +37885,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <ul>
 <li><a href="type_defs/#addprofilekeyrequestrequesttypedef">AddProfileKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
+<li><a href="type_defs/#additionalsearchkeytypedef">AdditionalSearchKeyTypeDef</a></li>
 <li><a href="type_defs/#addresstypedef">AddressTypeDef</a></li>
 <li><a href="type_defs/#batchtypedef">BatchTypeDef</a></li>
 <li><a href="type_defs/#appflowintegrationworkflowattributestypedef">AppflowIntegrationWorkflowAttributesTypeDef</a></li>
@@ -37903,6 +37905,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#s3exportingconfigtypedef">S3ExportingConfigTypeDef</a></li>
 <li><a href="type_defs/#s3exportinglocationtypedef">S3ExportingLocationTypeDef</a></li>
 <li><a href="type_defs/#fieldsourceprofileidstypedef">FieldSourceProfileIdsTypeDef</a></li>
+<li><a href="type_defs/#foundbykeyvaluetypedef">FoundByKeyValueTypeDef</a></li>
 <li><a href="type_defs/#getdomainrequestrequesttypedef">GetDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getidentityresolutionjobrequestrequesttypedef">GetIdentityResolutionJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#jobstatstypedef">JobStatsTypeDef</a></li>
@@ -37937,7 +37940,6 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#s3sourcepropertiestypedef">S3SourcePropertiesTypeDef</a></li>
 <li><a href="type_defs/#salesforcesourcepropertiestypedef">SalesforceSourcePropertiesTypeDef</a></li>
 <li><a href="type_defs/#scheduledtriggerpropertiestypedef">ScheduledTriggerPropertiesTypeDef</a></li>
-<li><a href="type_defs/#searchprofilesrequestrequesttypedef">SearchProfilesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#servicenowsourcepropertiestypedef">ServiceNowSourcePropertiesTypeDef</a></li>
 <li><a href="type_defs/#zendesksourcepropertiestypedef">ZendeskSourcePropertiesTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
@@ -37959,8 +37961,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#putintegrationresponsetypedef">PutIntegrationResponseTypeDef</a></li>
 <li><a href="type_defs/#putprofileobjectresponsetypedef">PutProfileObjectResponseTypeDef</a></li>
 <li><a href="type_defs/#updateprofileresponsetypedef">UpdateProfileResponseTypeDef</a></li>
+<li><a href="type_defs/#searchprofilesrequestrequesttypedef">SearchProfilesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createprofilerequestrequesttypedef">CreateProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#profiletypedef">ProfileTypeDef</a></li>
 <li><a href="type_defs/#workflowattributestypedef">WorkflowAttributesTypeDef</a></li>
 <li><a href="type_defs/#workflowmetricstypedef">WorkflowMetricsTypeDef</a></li>
 <li><a href="type_defs/#workflowstepitemtypedef">WorkflowStepItemTypeDef</a></li>
@@ -37970,6 +37972,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#exportingconfigtypedef">ExportingConfigTypeDef</a></li>
 <li><a href="type_defs/#exportinglocationtypedef">ExportingLocationTypeDef</a></li>
 <li><a href="type_defs/#mergeprofilesrequestrequesttypedef">MergeProfilesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#profiletypedef">ProfileTypeDef</a></li>
 <li><a href="type_defs/#getmatchesresponsetypedef">GetMatchesResponseTypeDef</a></li>
 <li><a href="type_defs/#getprofileobjecttyperesponsetypedef">GetProfileObjectTypeResponseTypeDef</a></li>
 <li><a href="type_defs/#getprofileobjecttypetemplateresponsetypedef">GetProfileObjectTypeTemplateResponseTypeDef</a></li>
@@ -37986,13 +37989,13 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#triggerpropertiestypedef">TriggerPropertiesTypeDef</a></li>
 <li><a href="type_defs/#sourceconnectorpropertiestypedef">SourceConnectorPropertiesTypeDef</a></li>
 <li><a href="type_defs/#updateprofilerequestrequesttypedef">UpdateProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#searchprofilesresponsetypedef">SearchProfilesResponseTypeDef</a></li>
 <li><a href="type_defs/#getworkflowresponsetypedef">GetWorkflowResponseTypeDef</a></li>
 <li><a href="type_defs/#getworkflowstepsresponsetypedef">GetWorkflowStepsResponseTypeDef</a></li>
 <li><a href="type_defs/#matchingrequesttypedef">MatchingRequestTypeDef</a></li>
 <li><a href="type_defs/#matchingresponsetypedef">MatchingResponseTypeDef</a></li>
 <li><a href="type_defs/#getidentityresolutionjobresponsetypedef">GetIdentityResolutionJobResponseTypeDef</a></li>
 <li><a href="type_defs/#identityresolutionjobtypedef">IdentityResolutionJobTypeDef</a></li>
+<li><a href="type_defs/#searchprofilesresponsetypedef">SearchProfilesResponseTypeDef</a></li>
 <li><a href="type_defs/#triggerconfigtypedef">TriggerConfigTypeDef</a></li>
 <li><a href="type_defs/#sourceflowconfigtypedef">SourceFlowConfigTypeDef</a></li>
 <li><a href="type_defs/#createdomainrequestrequesttypedef">CreateDomainRequestRequestTypeDef</a></li>

@@ -292,6 +292,7 @@ def create_environment(
     spec: str,
     templateMajorVersion: str,
     templateName: str,
+    codebuildRoleArn: str = ...,
     componentRoleArn: str = ...,
     description: str = ...,
     environmentAccountConnectionId: str = ...,
@@ -338,6 +339,7 @@ def create_environment_account_connection(
     managementAccountId: str,
     roleArn: str,
     clientToken: str = ...,
+    codebuildRoleArn: str = ...,
     componentRoleArn: str = ...,
     tags: Sequence[TagTypeDef] = ...,  # (1)
 ) -> CreateEnvironmentAccountConnectionOutputTypeDef:  # (2)
@@ -2009,8 +2011,10 @@ parent.list_tags_for_resource(**kwargs)
 
 ### notify\_resource\_deployment\_status\_change
 
-Notify Proton of status changes to a provisioned resource when you use self-
-managed provisioning.
+Notify Proton of the following information related to a provisioned resource
+(environment, service instance, or service pipeline) * For [CodeBuild-based
+provisioning](https://docs.aws.amazon.com/proton/latest/userguide/ag-works-prov-
+methods.html#ag-works-prov-methods-codebuild)_ , provid...
 
 Type annotations and code completion for `#!python boto3.client("proton").notify_resource_deployment_status_change` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.notify_resource_deployment_status_change)
@@ -2020,22 +2024,21 @@ def notify_resource_deployment_status_change(
     self,
     *,
     resourceArn: str,
-    status: ResourceDeploymentStatusType,  # (1)
     deploymentId: str = ...,
-    outputs: Sequence[OutputTypeDef] = ...,  # (2)
+    outputs: Sequence[OutputTypeDef] = ...,  # (1)
+    status: ResourceDeploymentStatusType = ...,  # (2)
     statusMessage: str = ...,
 ) -> Dict[str, Any]:
     ...
 ```
 
-1. See [:material-code-brackets: ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype) 
-2. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+2. See [:material-code-brackets: ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: NotifyResourceDeploymentStatusChangeInputRequestTypeDef = {  # (1)
     "resourceArn": ...,
-    "status": ...,
 }
 
 parent.notify_resource_deployment_status_change(**kwargs)
@@ -2147,6 +2150,7 @@ def update_account_settings(
     self,
     *,
     deletePipelineProvisioningRepository: bool = ...,
+    pipelineCodebuildRoleArn: str = ...,
     pipelineProvisioningRepository: RepositoryBranchInputTypeDef = ...,  # (1)
     pipelineServiceRoleArn: str = ...,
 ) -> UpdateAccountSettingsOutputTypeDef:  # (2)
@@ -2217,6 +2221,7 @@ def update_environment(
     *,
     deploymentType: DeploymentUpdateTypeType,  # (1)
     name: str,
+    codebuildRoleArn: str = ...,
     componentRoleArn: str = ...,
     description: str = ...,
     environmentAccountConnectionId: str = ...,
@@ -2258,6 +2263,7 @@ def update_environment_account_connection(
     self,
     *,
     id: str,
+    codebuildRoleArn: str = ...,
     componentRoleArn: str = ...,
     roleArn: str = ...,
 ) -> UpdateEnvironmentAccountConnectionOutputTypeDef:  # (1)

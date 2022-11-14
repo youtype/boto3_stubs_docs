@@ -53,6 +53,24 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## AdditionalSearchKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_customer_profiles.type_defs import AdditionalSearchKeyTypeDef
+
+def get_value() -> AdditionalSearchKeyTypeDef:
+    return {
+        "KeyName": ...,
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class AdditionalSearchKeyTypeDef(TypedDict):
+    KeyName: str,
+    Values: Sequence[str],
+```
+
 ## AddressTypeDef
 
 ```python title="Usage Example"
@@ -445,6 +463,23 @@ class FieldSourceProfileIdsTypeDef(TypedDict):
     MailingAddress: NotRequired[str],
     BillingAddress: NotRequired[str],
     Attributes: NotRequired[Mapping[str, str]],
+```
+
+## FoundByKeyValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_customer_profiles.type_defs import FoundByKeyValueTypeDef
+
+def get_value() -> FoundByKeyValueTypeDef:
+    return {
+        "KeyName": ...,
+    }
+```
+
+```python title="Definition"
+class FoundByKeyValueTypeDef(TypedDict):
+    KeyName: NotRequired[str],
+    Values: NotRequired[List[str]],
 ```
 
 ## GetDomainRequestRequestTypeDef
@@ -1090,28 +1125,6 @@ class ScheduledTriggerPropertiesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataPullModeType](./literals.md#datapullmodetype) 
-## SearchProfilesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_customer_profiles.type_defs import SearchProfilesRequestRequestTypeDef
-
-def get_value() -> SearchProfilesRequestRequestTypeDef:
-    return {
-        "DomainName": ...,
-        "KeyName": ...,
-        "Values": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProfilesRequestRequestTypeDef(TypedDict):
-    DomainName: str,
-    KeyName: str,
-    Values: Sequence[str],
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
-```
-
 ## ServiceNowSourcePropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1551,6 +1564,32 @@ class UpdateProfileResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchProfilesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_customer_profiles.type_defs import SearchProfilesRequestRequestTypeDef
+
+def get_value() -> SearchProfilesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "KeyName": ...,
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProfilesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    KeyName: str,
+    Values: Sequence[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    AdditionalSearchKeys: NotRequired[Sequence[AdditionalSearchKeyTypeDef]],  # (1)
+    LogicalOperator: NotRequired[logicalOperatorType],  # (2)
+```
+
+1. See [:material-code-braces: AdditionalSearchKeyTypeDef](./type_defs.md#additionalsearchkeytypedef) 
+2. See [:material-code-brackets: logicalOperatorType](./literals.md#logicaloperatortype) 
 ## CreateProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1586,49 +1625,6 @@ class CreateProfileRequestRequestTypeDef(TypedDict):
     MailingAddress: NotRequired[AddressTypeDef],  # (3)
     BillingAddress: NotRequired[AddressTypeDef],  # (3)
     Attributes: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
-2. See [:material-code-brackets: GenderType](./literals.md#gendertype) 
-3. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
-4. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
-5. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
-6. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
-## ProfileTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_customer_profiles.type_defs import ProfileTypeDef
-
-def get_value() -> ProfileTypeDef:
-    return {
-        "ProfileId": ...,
-    }
-```
-
-```python title="Definition"
-class ProfileTypeDef(TypedDict):
-    ProfileId: NotRequired[str],
-    AccountNumber: NotRequired[str],
-    AdditionalInformation: NotRequired[str],
-    PartyType: NotRequired[PartyTypeType],  # (1)
-    BusinessName: NotRequired[str],
-    FirstName: NotRequired[str],
-    MiddleName: NotRequired[str],
-    LastName: NotRequired[str],
-    BirthDate: NotRequired[str],
-    Gender: NotRequired[GenderType],  # (2)
-    PhoneNumber: NotRequired[str],
-    MobilePhoneNumber: NotRequired[str],
-    HomePhoneNumber: NotRequired[str],
-    BusinessPhoneNumber: NotRequired[str],
-    EmailAddress: NotRequired[str],
-    PersonalEmailAddress: NotRequired[str],
-    BusinessEmailAddress: NotRequired[str],
-    Address: NotRequired[AddressTypeDef],  # (3)
-    ShippingAddress: NotRequired[AddressTypeDef],  # (3)
-    MailingAddress: NotRequired[AddressTypeDef],  # (3)
-    BillingAddress: NotRequired[AddressTypeDef],  # (3)
-    Attributes: NotRequired[Dict[str, str]],
 ```
 
 1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
@@ -1812,6 +1808,51 @@ class MergeProfilesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FieldSourceProfileIdsTypeDef](./type_defs.md#fieldsourceprofileidstypedef) 
+## ProfileTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_customer_profiles.type_defs import ProfileTypeDef
+
+def get_value() -> ProfileTypeDef:
+    return {
+        "ProfileId": ...,
+    }
+```
+
+```python title="Definition"
+class ProfileTypeDef(TypedDict):
+    ProfileId: NotRequired[str],
+    AccountNumber: NotRequired[str],
+    AdditionalInformation: NotRequired[str],
+    PartyType: NotRequired[PartyTypeType],  # (1)
+    BusinessName: NotRequired[str],
+    FirstName: NotRequired[str],
+    MiddleName: NotRequired[str],
+    LastName: NotRequired[str],
+    BirthDate: NotRequired[str],
+    Gender: NotRequired[GenderType],  # (2)
+    PhoneNumber: NotRequired[str],
+    MobilePhoneNumber: NotRequired[str],
+    HomePhoneNumber: NotRequired[str],
+    BusinessPhoneNumber: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    PersonalEmailAddress: NotRequired[str],
+    BusinessEmailAddress: NotRequired[str],
+    Address: NotRequired[AddressTypeDef],  # (3)
+    ShippingAddress: NotRequired[AddressTypeDef],  # (3)
+    MailingAddress: NotRequired[AddressTypeDef],  # (3)
+    BillingAddress: NotRequired[AddressTypeDef],  # (3)
+    Attributes: NotRequired[Dict[str, str]],
+    FoundByItems: NotRequired[List[FoundByKeyValueTypeDef]],  # (7)
+```
+
+1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
+2. See [:material-code-brackets: GenderType](./literals.md#gendertype) 
+3. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+4. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+5. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+6. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+7. See [:material-code-braces: FoundByKeyValueTypeDef](./type_defs.md#foundbykeyvaluetypedef) 
 ## GetMatchesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2252,28 +2293,6 @@ class UpdateProfileRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef) 
 5. See [:material-code-braces: UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef) 
 6. See [:material-code-braces: UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef) 
-## SearchProfilesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_customer_profiles.type_defs import SearchProfilesResponseTypeDef
-
-def get_value() -> SearchProfilesResponseTypeDef:
-    return {
-        "Items": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class SearchProfilesResponseTypeDef(TypedDict):
-    Items: List[ProfileTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ProfileTypeDef](./type_defs.md#profiletypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkflowResponseTypeDef
 
 ```python title="Usage Example"
@@ -2451,6 +2470,28 @@ class IdentityResolutionJobTypeDef(TypedDict):
 1. See [:material-code-brackets: IdentityResolutionJobStatusType](./literals.md#identityresolutionjobstatustype) 
 2. See [:material-code-braces: JobStatsTypeDef](./type_defs.md#jobstatstypedef) 
 3. See [:material-code-braces: ExportingLocationTypeDef](./type_defs.md#exportinglocationtypedef) 
+## SearchProfilesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_customer_profiles.type_defs import SearchProfilesResponseTypeDef
+
+def get_value() -> SearchProfilesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchProfilesResponseTypeDef(TypedDict):
+    Items: List[ProfileTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ProfileTypeDef](./type_defs.md#profiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TriggerConfigTypeDef
 
 ```python title="Usage Example"

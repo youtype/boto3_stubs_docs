@@ -543,6 +543,40 @@ parent.delete_document(**kwargs)
 
 1. See [:material-code-braces: DeleteDocumentRequestRequestTypeDef](./type_defs.md#deletedocumentrequestrequesttypedef) 
 
+### delete\_document\_version
+
+Deletes a version of an Amazon WorkDocs document.
+
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_document_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document_version)
+
+```python title="Method definition"
+def delete_document_version(
+    self,
+    *,
+    DocumentId: str,
+    VersionId: str,
+    DeletePriorVersions: bool,
+    AuthenticationToken: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteDocumentVersionRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+    "VersionId": ...,
+    "DeletePriorVersions": ...,
+}
+
+parent.delete_document_version(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteDocumentVersionRequestRequestTypeDef](./type_defs.md#deletedocumentversionrequestrequesttypedef) 
+
 ### delete\_folder
 
 Permanently deletes the specified folder and its contents.
@@ -1269,7 +1303,6 @@ Type annotations and code completion for `#!python boto3.client("workdocs").init
 def initiate_document_version_upload(
     self,
     *,
-    ParentFolderId: str,
     AuthenticationToken: str = ...,
     Id: str = ...,
     Name: str = ...,
@@ -1277,6 +1310,7 @@ def initiate_document_version_upload(
     ContentModifiedTimestamp: Union[datetime, str] = ...,
     ContentType: str = ...,
     DocumentSizeInBytes: int = ...,
+    ParentFolderId: str = ...,
 ) -> InitiateDocumentVersionUploadResponseTypeDef:  # (1)
     ...
 ```
@@ -1286,7 +1320,7 @@ def initiate_document_version_upload(
 
 ```python title="Usage example with kwargs"
 kwargs: InitiateDocumentVersionUploadRequestRequestTypeDef = {  # (1)
-    "ParentFolderId": ...,
+    "AuthenticationToken": ...,
 }
 
 parent.initiate_document_version_upload(**kwargs)
@@ -1357,6 +1391,36 @@ parent.remove_resource_permission(**kwargs)
 ```
 
 1. See [:material-code-braces: RemoveResourcePermissionRequestRequestTypeDef](./type_defs.md#removeresourcepermissionrequestrequesttypedef) 
+
+### restore\_document\_versions
+
+Recovers a deleted version of an Amazon WorkDocs document.
+
+Type annotations and code completion for `#!python boto3.client("workdocs").restore_document_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.restore_document_versions)
+
+```python title="Method definition"
+def restore_document_versions(
+    self,
+    *,
+    DocumentId: str,
+    AuthenticationToken: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RestoreDocumentVersionsRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+}
+
+parent.restore_document_versions(**kwargs)
+```
+
+1. See [:material-code-braces: RestoreDocumentVersionsRequestRequestTypeDef](./type_defs.md#restoredocumentversionsrequestrequesttypedef) 
 
 ### update\_document
 

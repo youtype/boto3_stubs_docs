@@ -420,6 +420,21 @@ ZendeskConnectorOperatorType = Literal[
     "VALIDATE_NUMERIC",
 ]
 ```
+## logicalOperatorType
+
+```python title="Usage Example"
+from mypy_boto3_customer_profiles.literals import logicalOperatorType
+
+def get_value() -> logicalOperatorType:
+    return "AND"
+```
+
+```python title="Definition"
+logicalOperatorType = Literal[
+    "AND",
+    "OR",
+]
+```
 ## CustomerProfilesServiceName
 
 ```python title="Usage Example"

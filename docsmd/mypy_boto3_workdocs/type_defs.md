@@ -395,6 +395,27 @@ class DeleteDocumentRequestRequestTypeDef(TypedDict):
     AuthenticationToken: NotRequired[str],
 ```
 
+## DeleteDocumentVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DeleteDocumentVersionRequestRequestTypeDef
+
+def get_value() -> DeleteDocumentVersionRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+        "DeletePriorVersions": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDocumentVersionRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    DeletePriorVersions: bool,
+    AuthenticationToken: NotRequired[str],
+```
+
 ## DeleteFolderContentsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -887,13 +908,12 @@ from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadRequestRe
 
 def get_value() -> InitiateDocumentVersionUploadRequestRequestTypeDef:
     return {
-        "ParentFolderId": ...,
+        "AuthenticationToken": ...,
     }
 ```
 
 ```python title="Definition"
 class InitiateDocumentVersionUploadRequestRequestTypeDef(TypedDict):
-    ParentFolderId: str,
     AuthenticationToken: NotRequired[str],
     Id: NotRequired[str],
     Name: NotRequired[str],
@@ -901,6 +921,7 @@ class InitiateDocumentVersionUploadRequestRequestTypeDef(TypedDict):
     ContentModifiedTimestamp: NotRequired[Union[datetime, str]],
     ContentType: NotRequired[str],
     DocumentSizeInBytes: NotRequired[int],
+    ParentFolderId: NotRequired[str],
 ```
 
 ## UploadMetadataTypeDef
@@ -992,6 +1013,23 @@ def get_value() -> ResourcePathComponentTypeDef:
 class ResourcePathComponentTypeDef(TypedDict):
     Id: NotRequired[str],
     Name: NotRequired[str],
+```
+
+## RestoreDocumentVersionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import RestoreDocumentVersionsRequestRequestTypeDef
+
+def get_value() -> RestoreDocumentVersionsRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreDocumentVersionsRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    AuthenticationToken: NotRequired[str],
 ```
 
 ## UpdateDocumentRequestRequestTypeDef

@@ -4151,14 +4151,13 @@ from mypy_boto3_rds.type_defs import RestoreDBInstanceFromDBSnapshotMessageReque
 def get_value() -> RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef:
     return {
         "DBInstanceIdentifier": ...,
-        "DBSnapshotIdentifier": ...,
     }
 ```
 
 ```python title="Definition"
 class RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef(TypedDict):
     DBInstanceIdentifier: str,
-    DBSnapshotIdentifier: str,
+    DBSnapshotIdentifier: NotRequired[str],
     DBInstanceClass: NotRequired[str],
     Port: NotRequired[int],
     AvailabilityZone: NotRequired[str],
@@ -4190,6 +4189,7 @@ class RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef(TypedDict):
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
+    DBClusterSnapshotIdentifier: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

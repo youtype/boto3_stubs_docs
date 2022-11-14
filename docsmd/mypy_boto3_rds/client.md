@@ -4638,7 +4638,7 @@ def restore_db_instance_from_db_snapshot(
     self,
     *,
     DBInstanceIdentifier: str,
-    DBSnapshotIdentifier: str,
+    DBSnapshotIdentifier: str = ...,
     DBInstanceClass: str = ...,
     Port: int = ...,
     AvailabilityZone: str = ...,
@@ -4670,6 +4670,7 @@ def restore_db_instance_from_db_snapshot(
     BackupTarget: str = ...,
     NetworkType: str = ...,
     StorageThroughput: int = ...,
+    DBClusterSnapshotIdentifier: str = ...,
 ) -> RestoreDBInstanceFromDBSnapshotResultTypeDef:  # (3)
     ...
 ```
@@ -4682,7 +4683,6 @@ def restore_db_instance_from_db_snapshot(
 ```python title="Usage example with kwargs"
 kwargs: RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef = {  # (1)
     "DBInstanceIdentifier": ...,
-    "DBSnapshotIdentifier": ...,
 }
 
 parent.restore_db_instance_from_db_snapshot(**kwargs)

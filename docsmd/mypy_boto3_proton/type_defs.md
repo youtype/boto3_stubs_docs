@@ -53,6 +53,7 @@ class EnvironmentAccountConnectionTypeDef(TypedDict):
     requestedAt: datetime,
     roleArn: str,
     status: EnvironmentAccountConnectionStatusType,  # (1)
+    codebuildRoleArn: NotRequired[str],
     componentRoleArn: NotRequired[str],
 ```
 
@@ -1857,6 +1858,7 @@ def get_value() -> UpdateEnvironmentAccountConnectionInputRequestTypeDef:
 ```python title="Definition"
 class UpdateEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
     id: str,
+    codebuildRoleArn: NotRequired[str],
     componentRoleArn: NotRequired[str],
     roleArn: NotRequired[str],
 ```
@@ -2139,12 +2141,13 @@ from mypy_boto3_proton.type_defs import AccountSettingsTypeDef
 
 def get_value() -> AccountSettingsTypeDef:
     return {
-        "pipelineProvisioningRepository": ...,
+        "pipelineCodebuildRoleArn": ...,
     }
 ```
 
 ```python title="Definition"
 class AccountSettingsTypeDef(TypedDict):
+    pipelineCodebuildRoleArn: NotRequired[str],
     pipelineProvisioningRepository: NotRequired[RepositoryBranchTypeDef],  # (1)
     pipelineServiceRoleArn: NotRequired[str],
 ```
@@ -2180,6 +2183,7 @@ class EnvironmentTypeDef(TypedDict):
     templateMajorVersion: str,
     templateMinorVersion: str,
     templateName: str,
+    codebuildRoleArn: NotRequired[str],
     componentRoleArn: NotRequired[str],
     deploymentStatusMessage: NotRequired[str],
     description: NotRequired[str],
@@ -2563,6 +2567,7 @@ class CreateEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
     managementAccountId: str,
     roleArn: str,
     clientToken: NotRequired[str],
+    codebuildRoleArn: NotRequired[str],
     componentRoleArn: NotRequired[str],
     tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
@@ -2728,6 +2733,7 @@ class CreateEnvironmentInputRequestTypeDef(TypedDict):
     spec: str,
     templateMajorVersion: str,
     templateName: str,
+    codebuildRoleArn: NotRequired[str],
     componentRoleArn: NotRequired[str],
     description: NotRequired[str],
     environmentAccountConnectionId: NotRequired[str],
@@ -2753,6 +2759,7 @@ def get_value() -> UpdateAccountSettingsInputRequestTypeDef:
 ```python title="Definition"
 class UpdateAccountSettingsInputRequestTypeDef(TypedDict):
     deletePipelineProvisioningRepository: NotRequired[bool],
+    pipelineCodebuildRoleArn: NotRequired[str],
     pipelineProvisioningRepository: NotRequired[RepositoryBranchInputTypeDef],  # (1)
     pipelineServiceRoleArn: NotRequired[str],
 ```
@@ -2774,6 +2781,7 @@ def get_value() -> UpdateEnvironmentInputRequestTypeDef:
 class UpdateEnvironmentInputRequestTypeDef(TypedDict):
     deploymentType: DeploymentUpdateTypeType,  # (1)
     name: str,
+    codebuildRoleArn: NotRequired[str],
     componentRoleArn: NotRequired[str],
     description: NotRequired[str],
     environmentAccountConnectionId: NotRequired[str],
@@ -3934,21 +3942,20 @@ from mypy_boto3_proton.type_defs import NotifyResourceDeploymentStatusChangeInpu
 def get_value() -> NotifyResourceDeploymentStatusChangeInputRequestTypeDef:
     return {
         "resourceArn": ...,
-        "status": ...,
     }
 ```
 
 ```python title="Definition"
 class NotifyResourceDeploymentStatusChangeInputRequestTypeDef(TypedDict):
     resourceArn: str,
-    status: ResourceDeploymentStatusType,  # (1)
     deploymentId: NotRequired[str],
-    outputs: NotRequired[Sequence[OutputTypeDef]],  # (2)
+    outputs: NotRequired[Sequence[OutputTypeDef]],  # (1)
+    status: NotRequired[ResourceDeploymentStatusType],  # (2)
     statusMessage: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype) 
-2. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+2. See [:material-code-brackets: ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype) 
 ## ListComponentProvisionedResourcesOutputTypeDef
 
 ```python title="Usage Example"

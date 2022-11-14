@@ -1913,11 +1913,14 @@ class EdgeTypeDef(TypedDict):
     SummaryStatistics: NotRequired[EdgeStatisticsTypeDef],  # (1)
     ResponseTimeHistogram: NotRequired[List[HistogramEntryTypeDef]],  # (2)
     Aliases: NotRequired[List[AliasTypeDef]],  # (3)
+    EdgeType: NotRequired[str],
+    ReceivedEventAgeHistogram: NotRequired[List[HistogramEntryTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: EdgeStatisticsTypeDef](./type_defs.md#edgestatisticstypedef) 
 2. See [:material-code-braces: HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef) 
 3. See [:material-code-braces: AliasTypeDef](./type_defs.md#aliastypedef) 
+4. See [:material-code-braces: HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef) 
 ## TimeSeriesServiceStatisticsTypeDef
 
 ```python title="Usage Example"

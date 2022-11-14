@@ -493,6 +493,7 @@ def get_value() -> SubscriptionProtocolTypeType:
 ```python title="Definition"
 SubscriptionProtocolTypeType = Literal[
     "HTTPS",
+    "SQS",
 ]
 ```
 ## SubscriptionTypeType
