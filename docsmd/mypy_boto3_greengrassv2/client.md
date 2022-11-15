@@ -258,6 +258,7 @@ def create_deployment(
     components: Mapping[str, ComponentDeploymentSpecificationTypeDef] = ...,  # (1)
     iotJobConfiguration: DeploymentIoTJobConfigurationTypeDef = ...,  # (2)
     deploymentPolicies: DeploymentPoliciesTypeDef = ...,  # (3)
+    parentTargetArn: str = ...,
     tags: Mapping[str, str] = ...,
     clientToken: str = ...,
 ) -> CreateDeploymentResponseTypeDef:  # (4)
@@ -739,6 +740,7 @@ def list_deployments(
     *,
     targetArn: str = ...,
     historyFilter: DeploymentHistoryFilterType = ...,  # (1)
+    parentTargetArn: str = ...,
     maxResults: int = ...,
     nextToken: str = ...,
 ) -> ListDeploymentsResponseTypeDef:  # (2)

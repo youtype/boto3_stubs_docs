@@ -107,6 +107,24 @@ class IpRuleItemTypeDef(TypedDict):
     ruleDesc: NotRequired[str],
 ```
 
+## CertificateBasedAuthPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import CertificateBasedAuthPropertiesTypeDef
+
+def get_value() -> CertificateBasedAuthPropertiesTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class CertificateBasedAuthPropertiesTypeDef(TypedDict):
+    Status: NotRequired[CertificateBasedAuthStatusEnumType],  # (1)
+    CertificateAuthorityArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: CertificateBasedAuthStatusEnumType](./literals.md#certificatebasedauthstatusenumtype) 
 ## ClientPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1590,6 +1608,26 @@ class WorkspacesIpGroupTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 
+## ModifyCertificateBasedAuthPropertiesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import ModifyCertificateBasedAuthPropertiesRequestRequestTypeDef
+
+def get_value() -> ModifyCertificateBasedAuthPropertiesRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyCertificateBasedAuthPropertiesRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    CertificateBasedAuthProperties: NotRequired[CertificateBasedAuthPropertiesTypeDef],  # (1)
+    PropertiesToDelete: NotRequired[Sequence[DeletableCertificateBasedAuthPropertyType]],  # (2)
+```
+
+1. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
+2. See [:material-code-brackets: DeletableCertificateBasedAuthPropertyType](./literals.md#deletablecertificatebasedauthpropertytype) 
 ## ClientPropertiesResultTypeDef
 
 ```python title="Usage Example"
@@ -2509,6 +2547,7 @@ class WorkspaceDirectoryTypeDef(TypedDict):
     Tenancy: NotRequired[TenancyType],  # (5)
     SelfservicePermissions: NotRequired[SelfservicePermissionsTypeDef],  # (6)
     SamlProperties: NotRequired[SamlPropertiesTypeDef],  # (7)
+    CertificateBasedAuthProperties: NotRequired[CertificateBasedAuthPropertiesTypeDef],  # (8)
 ```
 
 1. See [:material-code-brackets: WorkspaceDirectoryTypeType](./literals.md#workspacedirectorytypetype) 
@@ -2518,6 +2557,7 @@ class WorkspaceDirectoryTypeDef(TypedDict):
 5. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
 6. See [:material-code-braces: SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef) 
 7. See [:material-code-braces: SamlPropertiesTypeDef](./type_defs.md#samlpropertiestypedef) 
+8. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
 ## ModifyWorkspaceCreationPropertiesRequestRequestTypeDef
 
 ```python title="Usage Example"

@@ -431,6 +431,7 @@ class DeploymentTypeDef(TypedDict):
     creationTimestamp: NotRequired[datetime],
     deploymentStatus: NotRequired[DeploymentStatusType],  # (1)
     isLatestForTarget: NotRequired[bool],
+    parentTargetArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
@@ -784,6 +785,7 @@ def get_value() -> ListDeploymentsRequestRequestTypeDef:
 class ListDeploymentsRequestRequestTypeDef(TypedDict):
     targetArn: NotRequired[str],
     historyFilter: NotRequired[DeploymentHistoryFilterType],  # (1)
+    parentTargetArn: NotRequired[str],
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
 ```
@@ -1689,6 +1691,7 @@ def get_value() -> ListDeploymentsRequestListDeploymentsPaginateTypeDef:
 class ListDeploymentsRequestListDeploymentsPaginateTypeDef(TypedDict):
     targetArn: NotRequired[str],
     historyFilter: NotRequired[DeploymentHistoryFilterType],  # (1)
+    parentTargetArn: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -1940,6 +1943,7 @@ class CreateDeploymentRequestRequestTypeDef(TypedDict):
     components: NotRequired[Mapping[str, ComponentDeploymentSpecificationTypeDef]],  # (1)
     iotJobConfiguration: NotRequired[DeploymentIoTJobConfigurationTypeDef],  # (2)
     deploymentPolicies: NotRequired[DeploymentPoliciesTypeDef],  # (3)
+    parentTargetArn: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
     clientToken: NotRequired[str],
 ```
@@ -1966,6 +1970,7 @@ def get_value() -> GetDeploymentResponseTypeDef:
         "iotJobConfiguration": ...,
         "creationTimestamp": ...,
         "isLatestForTarget": ...,
+        "parentTargetArn": ...,
         "tags": ...,
         "ResponseMetadata": ...,
     }
@@ -1985,6 +1990,7 @@ class GetDeploymentResponseTypeDef(TypedDict):
     iotJobConfiguration: DeploymentIoTJobConfigurationTypeDef,  # (4)
     creationTimestamp: datetime,
     isLatestForTarget: bool,
+    parentTargetArn: str,
     tags: Dict[str, str],
     ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```

@@ -288,6 +288,7 @@ def paginate(
     *,
     targetArn: str = ...,
     historyFilter: DeploymentHistoryFilterType = ...,  # (1)
+    parentTargetArn: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[ListDeploymentsResponseTypeDef]:  # (3)
     ...

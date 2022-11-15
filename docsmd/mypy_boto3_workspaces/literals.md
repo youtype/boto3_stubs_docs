@@ -55,6 +55,21 @@ AssociationStatusType = Literal[
     "PENDING_DISASSOCIATION",
 ]
 ```
+## CertificateBasedAuthStatusEnumType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import CertificateBasedAuthStatusEnumType
+
+def get_value() -> CertificateBasedAuthStatusEnumType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+CertificateBasedAuthStatusEnumType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ClientDeviceTypeType
 
 ```python title="Usage Example"
@@ -171,6 +186,20 @@ def get_value() -> DedicatedTenancySupportResultEnumType:
 DedicatedTenancySupportResultEnumType = Literal[
     "DISABLED",
     "ENABLED",
+]
+```
+## DeletableCertificateBasedAuthPropertyType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import DeletableCertificateBasedAuthPropertyType
+
+def get_value() -> DeletableCertificateBasedAuthPropertyType:
+    return "CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN"
+```
+
+```python title="Definition"
+DeletableCertificateBasedAuthPropertyType = Literal[
+    "CERTIFICATE_BASED_AUTH_PROPERTIES_CERTIFICATE_AUTHORITY_ARN",
 ]
 ```
 ## DeletableSamlPropertyType
@@ -898,6 +927,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
+    "ssmsap",
     "sso",
     "sso-admin",
     "sso-oidc",

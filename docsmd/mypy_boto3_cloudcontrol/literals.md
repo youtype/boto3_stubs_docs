@@ -428,6 +428,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
+    "ssmsap",
     "sso",
     "sso-admin",
     "sso-oidc",

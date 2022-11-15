@@ -651,6 +651,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-ssm-incidents](./mypy_boto3_ssm_incidents/README.md) for [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents) service
 
+- [mypy-boto3-ssmsap](./mypy_boto3_ssmsap/README.md) for [SsmSap](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssmsap.html#SsmSap) service
+
 - [mypy-boto3-sso](./mypy_boto3_sso/README.md) for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO) service
 
 - [mypy-boto3-sso-admin](./mypy_boto3_sso_admin/README.md) for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin) service

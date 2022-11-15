@@ -1464,6 +1464,39 @@ parent.modify_account(**kwargs)
 
 1. See [:material-code-braces: ModifyAccountRequestRequestTypeDef](./type_defs.md#modifyaccountrequestrequesttypedef) 
 
+### modify\_certificate\_based\_auth\_properties
+
+Modifies the properties of the certificate-based authentication you want to use
+with your WorkSpaces.
+
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_certificate_based_auth_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_certificate_based_auth_properties)
+
+```python title="Method definition"
+def modify_certificate_based_auth_properties(
+    self,
+    *,
+    ResourceId: str,
+    CertificateBasedAuthProperties: CertificateBasedAuthPropertiesTypeDef = ...,  # (1)
+    PropertiesToDelete: Sequence[DeletableCertificateBasedAuthPropertyType] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: CertificateBasedAuthPropertiesTypeDef](./type_defs.md#certificatebasedauthpropertiestypedef) 
+2. See [:material-code-brackets: DeletableCertificateBasedAuthPropertyType](./literals.md#deletablecertificatebasedauthpropertytype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyCertificateBasedAuthPropertiesRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
+
+parent.modify_certificate_based_auth_properties(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyCertificateBasedAuthPropertiesRequestRequestTypeDef](./type_defs.md#modifycertificatebasedauthpropertiesrequestrequesttypedef) 
+
 ### modify\_client\_properties
 
 Modifies the properties of the specified Amazon WorkSpaces clients.
