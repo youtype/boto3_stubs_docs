@@ -33,7 +33,12 @@ try:
     do_something(client)
 except (
     client.ClientError,
+    client.InvalidPolicyRevisionIdException,
     client.InvalidRequestException,
+    client.LockoutPreventionException,
+    client.MalformedPolicyDocumentException,
+    client.PolicyCountLimitExceededException,
+    client.PolicySizeLimitExceededException,
     client.ResourceNotFoundException,
     client.RuleLimitExceededException,
     client.ThrottledException,
@@ -208,6 +213,35 @@ parent.delete_group(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
+
+### delete\_resource\_policy
+
+Deletes a resource policy from the target Amazon Web Services account.
+
+Type annotations and code completion for `#!python boto3.client("xray").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_resource_policy)
+
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    PolicyName: str,
+    PolicyRevisionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyName": ...,
+}
+
+parent.delete_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
 
 ### delete\_sampling\_rule
 
@@ -696,6 +730,35 @@ parent.get_trace_summaries(**kwargs)
 
 1. See [:material-code-braces: GetTraceSummariesRequestRequestTypeDef](./type_defs.md#gettracesummariesrequestrequesttypedef) 
 
+### list\_resource\_policies
+
+Returns the list of resource policies in the target Amazon Web Services account.
+
+Type annotations and code completion for `#!python boto3.client("xray").list_resource_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_resource_policies)
+
+```python title="Method definition"
+def list_resource_policies(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListResourcePoliciesResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListResourcePoliciesResultTypeDef](./type_defs.md#listresourcepoliciesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourcePoliciesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_resource_policies(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourcePoliciesRequestRequestTypeDef](./type_defs.md#listresourcepoliciesrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
 Returns a list of tags that are applied to the specified Amazon Web Services
@@ -757,6 +820,40 @@ parent.put_encryption_config(**kwargs)
 ```
 
 1. See [:material-code-braces: PutEncryptionConfigRequestRequestTypeDef](./type_defs.md#putencryptionconfigrequestrequesttypedef) 
+
+### put\_resource\_policy
+
+Sets the resource policy to grant one or more Amazon Web Services services and
+accounts permissions to access X-Ray.
+
+Type annotations and code completion for `#!python boto3.client("xray").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_resource_policy)
+
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    PolicyName: str,
+    PolicyDocument: str,
+    PolicyRevisionId: str = ...,
+    BypassPolicyLockoutCheck: bool = ...,
+) -> PutResourcePolicyResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: PutResourcePolicyResultTypeDef](./type_defs.md#putresourcepolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyName": ...,
+    "PolicyDocument": ...,
+}
+
+parent.put_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
 ### put\_telemetry\_records
 
@@ -957,6 +1054,8 @@ Type annotations and code completion for `#!python boto3.client("xray").get_pagi
 - `client.get_paginator("get_time_series_service_statistics")` -> [GetTimeSeriesServiceStatisticsPaginator](./paginators.md#gettimeseriesservicestatisticspaginator)
 - `client.get_paginator("get_trace_graph")` -> [GetTraceGraphPaginator](./paginators.md#gettracegraphpaginator)
 - `client.get_paginator("get_trace_summaries")` -> [GetTraceSummariesPaginator](./paginators.md#gettracesummariespaginator)
+- `client.get_paginator("list_resource_policies")` -> [ListResourcePoliciesPaginator](./paginators.md#listresourcepoliciespaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
 
 

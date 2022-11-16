@@ -62,7 +62,7 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 
 ### associate\_firewall\_policy
 
-Associates a  FirewallPolicy to a  Firewall .
+Associates a  FirewallPolicy to a  Firewall.
 
 Type annotations and code completion for `#!python boto3.client("network-firewall").associate_firewall_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.associate_firewall_policy)
@@ -317,7 +317,7 @@ parent.delete_firewall(**kwargs)
 
 ### delete\_firewall\_policy
 
-Deletes the specified  FirewallPolicy .
+Deletes the specified  FirewallPolicy.
 
 Type annotations and code completion for `#!python boto3.client("network-firewall").delete_firewall_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_firewall_policy)
@@ -375,7 +375,7 @@ parent.delete_resource_policy(**kwargs)
 
 ### delete\_rule\_group
 
-Deletes the specified  RuleGroup .
+Deletes the specified  RuleGroup.
 
 Type annotations and code completion for `#!python boto3.client("network-firewall").delete_rule_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.delete_rule_group)

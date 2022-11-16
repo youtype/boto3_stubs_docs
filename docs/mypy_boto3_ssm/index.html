@@ -38027,6 +38027,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#getopssummarypaginator">GetOpsSummaryPaginator</a></li>
 <li><a href="paginators/#getparameterhistorypaginator">GetParameterHistoryPaginator</a></li>
 <li><a href="paginators/#getparametersbypathpaginator">GetParametersByPathPaginator</a></li>
+<li><a href="paginators/#getresourcepoliciespaginator">GetResourcePoliciesPaginator</a></li>
 <li><a href="paginators/#listassociationversionspaginator">ListAssociationVersionsPaginator</a></li>
 <li><a href="paginators/#listassociationspaginator">ListAssociationsPaginator</a></li>
 <li><a href="paginators/#listcommandinvocationspaginator">ListCommandInvocationsPaginator</a></li>
@@ -38133,6 +38134,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#getopssummarypaginatorname">GetOpsSummaryPaginatorName</a></li>
 <li><a href="literals/#getparameterhistorypaginatorname">GetParameterHistoryPaginatorName</a></li>
 <li><a href="literals/#getparametersbypathpaginatorname">GetParametersByPathPaginatorName</a></li>
+<li><a href="literals/#getresourcepoliciespaginatorname">GetResourcePoliciesPaginatorName</a></li>
 <li><a href="literals/#instanceinformationfilterkeytype">InstanceInformationFilterKeyType</a></li>
 <li><a href="literals/#instancepatchstateoperatortypetype">InstancePatchStateOperatorTypeType</a></li>
 <li><a href="literals/#inventoryattributedatatypetype">InventoryAttributeDataTypeType</a></li>
@@ -38257,6 +38259,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteparametersrequestrequesttypedef">DeleteParametersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletepatchbaselinerequestrequesttypedef">DeletePatchBaselineRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteresourcedatasyncrequestrequesttypedef">DeleteResourceDataSyncRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleteresourcepolicyrequestrequesttypedef">DeleteResourcePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregistermanagedinstancerequestrequesttypedef">DeregisterManagedInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregisterpatchbaselineforpatchgrouprequestrequesttypedef">DeregisterPatchBaselineForPatchGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deregistertargetfrommaintenancewindowrequestrequesttypedef">DeregisterTargetFromMaintenanceWindowRequestRequestTypeDef</a></li>
@@ -38330,6 +38333,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getparametersrequestrequesttypedef">GetParametersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getpatchbaselineforpatchgrouprequestrequesttypedef">GetPatchBaselineForPatchGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getpatchbaselinerequestrequesttypedef">GetPatchBaselineRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresourcepoliciesrequestrequesttypedef">GetResourcePoliciesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getresourcepoliciesresponseentrytypedef">GetResourcePoliciesResponseEntryTypeDef</a></li>
 <li><a href="type_defs/#getservicesettingrequestrequesttypedef">GetServiceSettingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#servicesettingtypedef">ServiceSettingTypeDef</a></li>
 <li><a href="type_defs/#instanceaggregatedassociationoverviewtypedef">InstanceAggregatedAssociationOverviewTypeDef</a></li>
@@ -38357,6 +38362,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#opsitemidentitytypedef">OpsItemIdentityTypeDef</a></li>
 <li><a href="type_defs/#parameterinlinepolicytypedef">ParameterInlinePolicyTypeDef</a></li>
 <li><a href="type_defs/#patchfiltertypedef">PatchFilterTypeDef</a></li>
+<li><a href="type_defs/#putresourcepolicyrequestrequesttypedef">PutResourcePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#registerdefaultpatchbaselinerequestrequesttypedef">RegisterDefaultPatchBaselineRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#registerpatchbaselineforpatchgrouprequestrequesttypedef">RegisterPatchBaselineForPatchGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#removetagsfromresourcerequestrequesttypedef">RemoveTagsFromResourceRequestRequestTypeDef</a></li>
@@ -38409,6 +38415,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtagsforresourceresulttypedef">ListTagsForResourceResultTypeDef</a></li>
 <li><a href="type_defs/#putinventoryresulttypedef">PutInventoryResultTypeDef</a></li>
 <li><a href="type_defs/#putparameterresulttypedef">PutParameterResultTypeDef</a></li>
+<li><a href="type_defs/#putresourcepolicyresponsetypedef">PutResourcePolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#registerdefaultpatchbaselineresulttypedef">RegisterDefaultPatchBaselineResultTypeDef</a></li>
 <li><a href="type_defs/#registerpatchbaselineforpatchgroupresulttypedef">RegisterPatchBaselineForPatchGroupResultTypeDef</a></li>
 <li><a href="type_defs/#registertargetwithmaintenancewindowresulttypedef">RegisterTargetWithMaintenanceWindowResultTypeDef</a></li>
@@ -38471,6 +38478,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describepatchpropertiesrequestdescribepatchpropertiespaginatetypedef">DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef</a></li>
 <li><a href="type_defs/#getinventoryschemarequestgetinventoryschemapaginatetypedef">GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef</a></li>
 <li><a href="type_defs/#getparameterhistoryrequestgetparameterhistorypaginatetypedef">GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef</a></li>
+<li><a href="type_defs/#getresourcepoliciesrequestgetresourcepoliciespaginatetypedef">GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listassociationversionsrequestlistassociationversionspaginatetypedef">ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listassociationsrequestlistassociationspaginatetypedef">ListAssociationsRequestListAssociationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listcommandinvocationsrequestlistcommandinvocationspaginatetypedef">ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef</a></li>
@@ -38547,6 +38555,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getparameterresulttypedef">GetParameterResultTypeDef</a></li>
 <li><a href="type_defs/#getparametersbypathresulttypedef">GetParametersByPathResultTypeDef</a></li>
 <li><a href="type_defs/#getparametersresulttypedef">GetParametersResultTypeDef</a></li>
+<li><a href="type_defs/#getresourcepoliciesresponsetypedef">GetResourcePoliciesResponseTypeDef</a></li>
 <li><a href="type_defs/#getservicesettingresulttypedef">GetServiceSettingResultTypeDef</a></li>
 <li><a href="type_defs/#resetservicesettingresulttypedef">ResetServiceSettingResultTypeDef</a></li>
 <li><a href="type_defs/#instanceinformationtypedef">InstanceInformationTypeDef</a></li>

@@ -2029,6 +2029,65 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: GetParametersByPathRequestGetParametersByPathPaginateTypeDef](./type_defs.md#getparametersbypathrequestgetparametersbypathpaginatetypedef) 
+## GetResourcePoliciesPaginator
+
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("get_resource_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetResourcePolicies)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import GetResourcePoliciesPaginator
+
+def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
+    return Session().client("ssm").get_paginator("get_resource_policies")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm.paginator import GetResourcePoliciesPaginator
+
+session = Session()
+
+client = Session().client("ssm")  # (1)
+paginator: GetResourcePoliciesPaginator = client.get_paginator("get_resource_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SSMClient](./client.md)
+2. paginator: [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
+3. item: [:material-code-braces: GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python GetResourcePoliciesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetResourcePoliciesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef](./type_defs.md#getresourcepoliciesrequestgetresourcepoliciespaginatetypedef) 
 ## ListAssociationVersionsPaginator
 
 Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_association_versions")`.

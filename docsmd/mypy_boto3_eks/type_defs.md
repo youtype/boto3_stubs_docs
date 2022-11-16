@@ -183,24 +183,6 @@ class KubernetesNetworkConfigResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IpFamilyType](./literals.md#ipfamilytype) 
-## OutpostConfigResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_eks.type_defs import OutpostConfigResponseTypeDef
-
-def get_value() -> OutpostConfigResponseTypeDef:
-    return {
-        "outpostArns": ...,
-        "controlPlaneInstanceType": ...,
-    }
-```
-
-```python title="Definition"
-class OutpostConfigResponseTypeDef(TypedDict):
-    outpostArns: List[str],
-    controlPlaneInstanceType: str,
-```
-
 ## VpcConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -242,6 +224,38 @@ class ConnectorConfigRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ConnectorConfigProviderType](./literals.md#connectorconfigprovidertype) 
+## ControlPlanePlacementRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ControlPlanePlacementRequestTypeDef
+
+def get_value() -> ControlPlanePlacementRequestTypeDef:
+    return {
+        "groupName": ...,
+    }
+```
+
+```python title="Definition"
+class ControlPlanePlacementRequestTypeDef(TypedDict):
+    groupName: NotRequired[str],
+```
+
+## ControlPlanePlacementResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ControlPlanePlacementResponseTypeDef
+
+def get_value() -> ControlPlanePlacementResponseTypeDef:
+    return {
+        "groupName": ...,
+    }
+```
+
+```python title="Definition"
+class ControlPlanePlacementResponseTypeDef(TypedDict):
+    groupName: NotRequired[str],
+```
+
 ## CreateAddonRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -284,24 +298,6 @@ class KubernetesNetworkConfigRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IpFamilyType](./literals.md#ipfamilytype) 
-## OutpostConfigRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_eks.type_defs import OutpostConfigRequestTypeDef
-
-def get_value() -> OutpostConfigRequestTypeDef:
-    return {
-        "outpostArns": ...,
-        "controlPlaneInstanceType": ...,
-    }
-```
-
-```python title="Definition"
-class OutpostConfigRequestTypeDef(TypedDict):
-    outpostArns: Sequence[str],
-    controlPlaneInstanceType: str,
-```
-
 ## VpcConfigRequestTypeDef
 
 ```python title="Usage Example"
@@ -1269,6 +1265,46 @@ class RegisterClusterRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef) 
+## OutpostConfigRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import OutpostConfigRequestTypeDef
+
+def get_value() -> OutpostConfigRequestTypeDef:
+    return {
+        "outpostArns": ...,
+        "controlPlaneInstanceType": ...,
+    }
+```
+
+```python title="Definition"
+class OutpostConfigRequestTypeDef(TypedDict):
+    outpostArns: Sequence[str],
+    controlPlaneInstanceType: str,
+    controlPlanePlacement: NotRequired[ControlPlanePlacementRequestTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ControlPlanePlacementRequestTypeDef](./type_defs.md#controlplaneplacementrequesttypedef) 
+## OutpostConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import OutpostConfigResponseTypeDef
+
+def get_value() -> OutpostConfigResponseTypeDef:
+    return {
+        "outpostArns": ...,
+        "controlPlaneInstanceType": ...,
+    }
+```
+
+```python title="Definition"
+class OutpostConfigResponseTypeDef(TypedDict):
+    outpostArns: List[str],
+    controlPlaneInstanceType: str,
+    controlPlanePlacement: NotRequired[ControlPlanePlacementResponseTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ControlPlanePlacementResponseTypeDef](./type_defs.md#controlplaneplacementresponsetypedef) 
 ## CreateFargateProfileRequestRequestTypeDef
 
 ```python title="Usage Example"

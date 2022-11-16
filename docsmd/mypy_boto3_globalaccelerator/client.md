@@ -982,7 +982,7 @@ parent.list_accelerators(**kwargs)
 
 Lists the IP address ranges that were specified in calls to
 [ProvisionByoipCidr](https://docs.aws.amazon.com/global-
-accelerator/latest/api/ProvisionByoipCidr.html)_ , including the current state
+accelerator/latest/api/ProvisionByoipCidr.html)_, including the current state
 and a history of state changes.
 
 Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_byoip_cidrs` method.

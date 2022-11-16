@@ -2555,7 +2555,7 @@ parent.create(**kwargs)
 Deletes the password for the specified IAM user, For more information, see
 [Managing passwords for IAM
 users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_admin-
-change-user.html)_ .
+change-user.html)_.
 
 Type annotations and code completion for `#!python boto3.resource("iam").delete` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.delete)

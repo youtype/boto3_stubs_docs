@@ -495,3 +495,120 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef](./type_defs.md#gettracesummariesrequestgettracesummariespaginatetypedef) 
+## ListResourcePoliciesPaginator
+
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("list_resource_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.ListResourcePolicies)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import ListResourcePoliciesPaginator
+
+def get_list_resource_policies_paginator() -> ListResourcePoliciesPaginator:
+    return Session().client("xray").get_paginator("list_resource_policies")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import ListResourcePoliciesPaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: ListResourcePoliciesPaginator = client.get_paginator("list_resource_policies")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [ListResourcePoliciesPaginator](./paginators.md#listresourcepoliciespaginator)
+3. item: [:material-code-braces: ListResourcePoliciesResultTypeDef](./type_defs.md#listresourcepoliciesresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListResourcePoliciesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourcePoliciesResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourcePoliciesResultTypeDef](./type_defs.md#listresourcepoliciesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourcePoliciesRequestListResourcePoliciesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourcePoliciesRequestListResourcePoliciesPaginateTypeDef](./type_defs.md#listresourcepoliciesrequestlistresourcepoliciespaginatetypedef) 
+## ListTagsForResourcePaginator
+
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.ListTagsForResource)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import ListTagsForResourcePaginator
+
+def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
+    return Session().client("xray").get_paginator("list_tags_for_resource")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_xray.paginator import ListTagsForResourcePaginator
+
+session = Session()
+
+client = Session().client("xray")  # (1)
+paginator: ListTagsForResourcePaginator = client.get_paginator("list_tags_for_resource")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [XRayClient](./client.md)
+2. paginator: [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+3. item: [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceARN: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 

@@ -57,7 +57,7 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### attach\_customer\_managed\_policy\_reference\_to\_permission\_set
 
-Attaches the specified customer managed policy to the specified  PermissionSet .
+Attaches the specified customer managed policy to the specified  PermissionSet.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").attach_customer_managed_policy_reference_to_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_customer_managed_policy_reference_to_permission_set)
@@ -395,7 +395,7 @@ parent.delete_permission_set(**kwargs)
 
 ### delete\_permissions\_boundary\_from\_permission\_set
 
-Deletes the permissions boundary from a specified  PermissionSet .
+Deletes the permissions boundary from a specified  PermissionSet.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").delete_permissions_boundary_from_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permissions_boundary_from_permission_set)
@@ -580,8 +580,8 @@ parent.describe_permission_set_provisioning_status(**kwargs)
 
 ### detach\_customer\_managed\_policy\_reference\_from\_permission\_set
 
-Detaches the specified customer managed policy from the specified  PermissionSet
-.
+Detaches the specified customer managed policy from the specified
+PermissionSet.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").detach_customer_managed_policy_reference_from_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_customer_managed_policy_reference_from_permission_set)
@@ -696,7 +696,7 @@ parent.get_inline_policy_for_permission_set(**kwargs)
 
 ### get\_permissions\_boundary\_for\_permission\_set
 
-Obtains the permissions boundary for a specified  PermissionSet .
+Obtains the permissions boundary for a specified  PermissionSet.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").get_permissions_boundary_for_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_permissions_boundary_for_permission_set)
@@ -866,7 +866,7 @@ parent.list_accounts_for_provisioned_permission_set(**kwargs)
 
 ### list\_customer\_managed\_policy\_references\_in\_permission\_set
 
-Lists all customer managed policies attached to a specified  PermissionSet .
+Lists all customer managed policies attached to a specified  PermissionSet.
 
 Type annotations and code completion for `#!python boto3.client("sso-admin").list_customer_managed_policy_references_in_permission_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_customer_managed_policy_references_in_permission_set)

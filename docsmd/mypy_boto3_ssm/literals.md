@@ -1120,6 +1120,20 @@ GetParametersByPathPaginatorName = Literal[
     "get_parameters_by_path",
 ]
 ```
+## GetResourcePoliciesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ssm.literals import GetResourcePoliciesPaginatorName
+
+def get_value() -> GetResourcePoliciesPaginatorName:
+    return "get_resource_policies"
+```
+
+```python title="Definition"
+GetResourcePoliciesPaginatorName = Literal[
+    "get_resource_policies",
+]
+```
 ## InstanceInformationFilterKeyType
 
 ```python title="Usage Example"
@@ -1616,11 +1630,12 @@ OpsItemEventFilterOperatorType = Literal[
 from mypy_boto3_ssm.literals import OpsItemFilterKeyType
 
 def get_value() -> OpsItemFilterKeyType:
-    return "ActualEndTime"
+    return "AccountId"
 ```
 
 ```python title="Definition"
 OpsItemFilterKeyType = Literal[
+    "AccountId",
     "ActualEndTime",
     "ActualStartTime",
     "AutomationId",
@@ -2581,6 +2596,7 @@ PaginatorName = Literal[
     "get_ops_summary",
     "get_parameter_history",
     "get_parameters_by_path",
+    "get_resource_policies",
     "list_association_versions",
     "list_associations",
     "list_command_invocations",
@@ -2635,6 +2651,7 @@ RegionName = Literal[
     "eu-central-2",
     "eu-north-1",
     "eu-south-1",
+    "eu-south-2",
     "eu-west-1",
     "eu-west-2",
     "eu-west-3",

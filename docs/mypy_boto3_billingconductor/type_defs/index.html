@@ -39412,6 +39412,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-billi
 <a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="n">Description</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="n">Service</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    <span class="n">BillingEntity</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#pricingrulescopetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> PricingRuleScopeType</a> </li>
@@ -39679,6 +39680,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-billi
 <a id="__codelineno-63-9" name="__codelineno-63-9" href="#__codelineno-63-9"></a>    <span class="n">AssociatedPricingPlanCount</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-63-10" name="__codelineno-63-10" href="#__codelineno-63-10"></a>    <span class="n">CreationTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-63-11" name="__codelineno-63-11" href="#__codelineno-63-11"></a>    <span class="n">LastModifiedTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-63-12" name="__codelineno-63-12" href="#__codelineno-63-12"></a>    <span class="n">BillingEntity</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#pricingrulescopetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> PricingRuleScopeType</a> </li>
@@ -40146,8 +40148,9 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-billi
 <a id="__codelineno-118-11" name="__codelineno-118-11" href="#__codelineno-118-11"></a>        <span class="s2">&quot;Service&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-118-12" name="__codelineno-118-12" href="#__codelineno-118-12"></a>        <span class="s2">&quot;AssociatedPricingPlanCount&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-118-13" name="__codelineno-118-13" href="#__codelineno-118-13"></a>        <span class="s2">&quot;LastModifiedTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-14" name="__codelineno-118-14" href="#__codelineno-118-14"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-118-15" name="__codelineno-118-15" href="#__codelineno-118-15"></a>    <span class="p">}</span>
+<a id="__codelineno-118-14" name="__codelineno-118-14" href="#__codelineno-118-14"></a>        <span class="s2">&quot;BillingEntity&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-15" name="__codelineno-118-15" href="#__codelineno-118-15"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-118-16" name="__codelineno-118-16" href="#__codelineno-118-16"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a><span class="k">class</span> <span class="nc">UpdatePricingRuleOutputTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-119-2" name="__codelineno-119-2" href="#__codelineno-119-2"></a>    <span class="n">Arn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -40159,7 +40162,8 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-billi
 <a id="__codelineno-119-8" name="__codelineno-119-8" href="#__codelineno-119-8"></a>    <span class="n">Service</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-119-9" name="__codelineno-119-9" href="#__codelineno-119-9"></a>    <span class="n">AssociatedPricingPlanCount</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
 <a id="__codelineno-119-10" name="__codelineno-119-10" href="#__codelineno-119-10"></a>    <span class="n">LastModifiedTime</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-119-11" name="__codelineno-119-11" href="#__codelineno-119-11"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-119-11" name="__codelineno-119-11" href="#__codelineno-119-11"></a>    <span class="n">BillingEntity</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-119-12" name="__codelineno-119-12" href="#__codelineno-119-12"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#pricingrulescopetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> PricingRuleScopeType</a> </li>

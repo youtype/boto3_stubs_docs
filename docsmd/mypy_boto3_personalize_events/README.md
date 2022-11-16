@@ -106,11 +106,12 @@ def get_value() -> ResponseMetadataTypeDef:
 ```
 
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [EventTypeDef](./type_defs.md#eventtypedef)
+- [MetricAttributionTypeDef](./type_defs.md#metricattributiontypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
-- [PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef)
+- [EventTypeDef](./type_defs.md#eventtypedef)
 - [PutItemsRequestRequestTypeDef](./type_defs.md#putitemsrequestrequesttypedef)
 - [PutUsersRequestRequestTypeDef](./type_defs.md#putusersrequestrequesttypedef)
+- [PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef)
 

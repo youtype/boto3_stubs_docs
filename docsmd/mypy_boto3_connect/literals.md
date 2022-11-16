@@ -847,6 +847,21 @@ ListUsersPaginatorName = Literal[
     "list_users",
 ]
 ```
+## MonitorCapabilityType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import MonitorCapabilityType
+
+def get_value() -> MonitorCapabilityType:
+    return "BARGE"
+```
+
+```python title="Definition"
+MonitorCapabilityType = Literal[
+    "BARGE",
+    "SILENT_MONITOR",
+]
+```
 ## PhoneNumberCountryCodeType
 
 ```python title="Usage Example"

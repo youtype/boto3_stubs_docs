@@ -7,6 +7,22 @@
     Auto-generated documentation for [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
     type annotations stubs module [mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
+## ColumnTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import ColumnTypeType
+
+def get_value() -> ColumnTypeType:
+    return "EDGE"
+```
+
+```python title="Definition"
+ColumnTypeType = Literal[
+    "EDGE",
+    "NODE",
+    "VALUE",
+]
+```
 ## ComponentUpdateTypeType
 
 ```python title="Usage Example"
@@ -38,6 +54,20 @@ ErrorCodeType = Literal[
     "VALIDATION_ERROR",
 ]
 ```
+## GroupTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import GroupTypeType
+
+def get_value() -> GroupTypeType:
+    return "TABULAR"
+```
+
+```python title="Definition"
+GroupTypeType = Literal[
+    "TABULAR",
+]
+```
 ## InterpolationTypeType
 
 ```python title="Usage Example"
@@ -67,6 +97,21 @@ OrderByTimeType = Literal[
     "DESCENDING",
 ]
 ```
+## OrderType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import OrderType
+
+def get_value() -> OrderType:
+    return "ASCENDING"
+```
+
+```python title="Definition"
+OrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## ParentEntityUpdateTypeType
 
 ```python title="Usage Example"
@@ -78,6 +123,55 @@ def get_value() -> ParentEntityUpdateTypeType:
 
 ```python title="Definition"
 ParentEntityUpdateTypeType = Literal[
+    "DELETE",
+    "UPDATE",
+]
+```
+## PricingModeType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import PricingModeType
+
+def get_value() -> PricingModeType:
+    return "BASIC"
+```
+
+```python title="Definition"
+PricingModeType = Literal[
+    "BASIC",
+    "STANDARD",
+    "TIERED_BUNDLE",
+]
+```
+## PricingTierType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import PricingTierType
+
+def get_value() -> PricingTierType:
+    return "TIER_1"
+```
+
+```python title="Definition"
+PricingTierType = Literal[
+    "TIER_1",
+    "TIER_2",
+    "TIER_3",
+    "TIER_4",
+]
+```
+## PropertyGroupUpdateTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import PropertyGroupUpdateTypeType
+
+def get_value() -> PropertyGroupUpdateTypeType:
+    return "CREATE"
+```
+
+```python title="Definition"
+PropertyGroupUpdateTypeType = Literal[
+    "CREATE",
     "DELETE",
     "UPDATE",
 ]
@@ -150,6 +244,24 @@ TypeType = Literal[
     "MAP",
     "RELATIONSHIP",
     "STRING",
+]
+```
+## UpdateReasonType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import UpdateReasonType
+
+def get_value() -> UpdateReasonType:
+    return "DEFAULT"
+```
+
+```python title="Definition"
+UpdateReasonType = Literal[
+    "DEFAULT",
+    "ENTITY_COUNT_UPDATE",
+    "OVERWRITTEN",
+    "PRICING_MODE_UPDATE",
+    "PRICING_TIER_UPDATE",
 ]
 ```
 ## IoTTwinMakerServiceName

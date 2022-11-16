@@ -329,6 +329,29 @@ ListServiceInstanceProvisionedResourcesPaginatorName = Literal[
     "list_service_instance_provisioned_resources",
 ]
 ```
+## ListServiceInstancesFilterByType
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ListServiceInstancesFilterByType
+
+def get_value() -> ListServiceInstancesFilterByType:
+    return "createdAtAfter"
+```
+
+```python title="Definition"
+ListServiceInstancesFilterByType = Literal[
+    "createdAtAfter",
+    "createdAtBefore",
+    "deployedTemplateVersionStatus",
+    "deploymentStatus",
+    "environmentName",
+    "lastDeploymentAttemptedAtAfter",
+    "lastDeploymentAttemptedAtBefore",
+    "name",
+    "serviceName",
+    "templateName",
+]
+```
 ## ListServiceInstancesPaginatorName
 
 ```python title="Usage Example"
@@ -341,6 +364,26 @@ def get_value() -> ListServiceInstancesPaginatorName:
 ```python title="Definition"
 ListServiceInstancesPaginatorName = Literal[
     "list_service_instances",
+]
+```
+## ListServiceInstancesSortByType
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import ListServiceInstancesSortByType
+
+def get_value() -> ListServiceInstancesSortByType:
+    return "createdAt"
+```
+
+```python title="Definition"
+ListServiceInstancesSortByType = Literal[
+    "createdAt",
+    "deploymentStatus",
+    "environmentName",
+    "lastDeploymentAttemptedAt",
+    "name",
+    "serviceName",
+    "templateName",
 ]
 ```
 ## ListServicePipelineOutputsPaginatorName
@@ -646,6 +689,21 @@ def get_value() -> ServiceUpdatedWaiterName:
 ```python title="Definition"
 ServiceUpdatedWaiterName = Literal[
     "service_updated",
+]
+```
+## SortOrderType
+
+```python title="Usage Example"
+from mypy_boto3_proton.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
+```
+
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
 ]
 ```
 ## SyncTypeType

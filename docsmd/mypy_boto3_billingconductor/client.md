@@ -351,6 +351,7 @@ def create_pricing_rule(
     Description: str = ...,
     Service: str = ...,
     Tags: Mapping[str, str] = ...,
+    BillingEntity: str = ...,
 ) -> CreatePricingRuleOutputTypeDef:  # (3)
     ...
 ```

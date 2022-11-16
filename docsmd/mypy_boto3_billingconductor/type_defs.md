@@ -218,6 +218,7 @@ class CreatePricingRuleInputRequestTypeDef(TypedDict):
     Description: NotRequired[str],
     Service: NotRequired[str],
     Tags: NotRequired[Mapping[str, str]],
+    BillingEntity: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
@@ -588,6 +589,7 @@ class PricingRuleListElementTypeDef(TypedDict):
     AssociatedPricingPlanCount: NotRequired[int],
     CreationTime: NotRequired[int],
     LastModifiedTime: NotRequired[int],
+    BillingEntity: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
@@ -1149,6 +1151,7 @@ def get_value() -> UpdatePricingRuleOutputTypeDef:
         "Service": ...,
         "AssociatedPricingPlanCount": ...,
         "LastModifiedTime": ...,
+        "BillingEntity": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1164,6 +1167,7 @@ class UpdatePricingRuleOutputTypeDef(TypedDict):
     Service: str,
     AssociatedPricingPlanCount: int,
     LastModifiedTime: int,
+    BillingEntity: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 

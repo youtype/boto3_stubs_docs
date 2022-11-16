@@ -3614,6 +3614,42 @@ parent.list_users(**kwargs)
 
 1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
+### monitor\_contact
+
+Initiates silent monitoring of a contact.
+
+Type annotations and code completion for `#!python boto3.client("connect").monitor_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.monitor_contact)
+
+```python title="Method definition"
+def monitor_contact(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    UserId: str,
+    AllowedMonitorCapabilities: Sequence[MonitorCapabilityType] = ...,  # (1)
+    ClientToken: str = ...,
+) -> MonitorContactResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: MonitorCapabilityType](./literals.md#monitorcapabilitytype) 
+2. See [:material-code-braces: MonitorContactResponseTypeDef](./type_defs.md#monitorcontactresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: MonitorContactRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "UserId": ...,
+}
+
+parent.monitor_contact(**kwargs)
+```
+
+1. See [:material-code-braces: MonitorContactRequestRequestTypeDef](./type_defs.md#monitorcontactrequestrequesttypedef) 
+
 ### put\_user\_status
 
 Changes the current status of a user or agent in Amazon Connect.

@@ -31,28 +31,20 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
-## EventTypeDef
+## MetricAttributionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_personalize_events.type_defs import EventTypeDef
+from mypy_boto3_personalize_events.type_defs import MetricAttributionTypeDef
 
-def get_value() -> EventTypeDef:
+def get_value() -> MetricAttributionTypeDef:
     return {
-        "eventType": ...,
-        "sentAt": ...,
+        "eventAttributionSource": ...,
     }
 ```
 
 ```python title="Definition"
-class EventTypeDef(TypedDict):
-    eventType: str,
-    sentAt: Union[datetime, str],
-    eventId: NotRequired[str],
-    eventValue: NotRequired[float],
-    itemId: NotRequired[str],
-    properties: NotRequired[str],
-    recommendationId: NotRequired[str],
-    impression: NotRequired[Sequence[str]],
+class MetricAttributionTypeDef(TypedDict):
+    eventAttributionSource: str,
 ```
 
 ## ItemTypeDef
@@ -106,28 +98,32 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## PutEventsRequestRequestTypeDef
+## EventTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_personalize_events.type_defs import PutEventsRequestRequestTypeDef
+from mypy_boto3_personalize_events.type_defs import EventTypeDef
 
-def get_value() -> PutEventsRequestRequestTypeDef:
+def get_value() -> EventTypeDef:
     return {
-        "trackingId": ...,
-        "sessionId": ...,
-        "eventList": ...,
+        "eventType": ...,
+        "sentAt": ...,
     }
 ```
 
 ```python title="Definition"
-class PutEventsRequestRequestTypeDef(TypedDict):
-    trackingId: str,
-    sessionId: str,
-    eventList: Sequence[EventTypeDef],  # (1)
-    userId: NotRequired[str],
+class EventTypeDef(TypedDict):
+    eventType: str,
+    sentAt: Union[datetime, str],
+    eventId: NotRequired[str],
+    eventValue: NotRequired[float],
+    itemId: NotRequired[str],
+    properties: NotRequired[str],
+    recommendationId: NotRequired[str],
+    impression: NotRequired[Sequence[str]],
+    metricAttribution: NotRequired[MetricAttributionTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+1. See [:material-code-braces: MetricAttributionTypeDef](./type_defs.md#metricattributiontypedef) 
 ## PutItemsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -166,3 +162,25 @@ class PutUsersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+## PutEventsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize_events.type_defs import PutEventsRequestRequestTypeDef
+
+def get_value() -> PutEventsRequestRequestTypeDef:
+    return {
+        "trackingId": ...,
+        "sessionId": ...,
+        "eventList": ...,
+    }
+```
+
+```python title="Definition"
+class PutEventsRequestRequestTypeDef(TypedDict):
+    trackingId: str,
+    sessionId: str,
+    eventList: Sequence[EventTypeDef],  # (1)
+    userId: NotRequired[str],
+```
+
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 

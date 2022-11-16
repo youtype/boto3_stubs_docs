@@ -423,22 +423,22 @@ class NotificationTargetItemTypeDef(TypedDict):
     snsTopicArn: NotRequired[str],
 ```
 
-## ItemValueTypeDef
+## PagerDutyIncidentDetailTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import ItemValueTypeDef
+from mypy_boto3_ssm_incidents.type_defs import PagerDutyIncidentDetailTypeDef
 
-def get_value() -> ItemValueTypeDef:
+def get_value() -> PagerDutyIncidentDetailTypeDef:
     return {
-        "arn": ...,
+        "id": ...,
     }
 ```
 
 ```python title="Definition"
-class ItemValueTypeDef(TypedDict):
-    arn: NotRequired[str],
-    metricDefinition: NotRequired[str],
-    url: NotRequired[str],
+class PagerDutyIncidentDetailTypeDef(TypedDict):
+    id: str,
+    autoResolve: NotRequired[bool],
+    secretId: NotRequired[str],
 ```
 
 ## ListRelatedItemsInputRequestTypeDef
@@ -526,6 +526,22 @@ def get_value() -> ListTagsForResourceRequestRequestTypeDef:
 ```python title="Definition"
 class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
+```
+
+## PagerDutyIncidentConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import PagerDutyIncidentConfigurationTypeDef
+
+def get_value() -> PagerDutyIncidentConfigurationTypeDef:
+    return {
+        "serviceId": ...,
+    }
+```
+
+```python title="Definition"
+class PagerDutyIncidentConfigurationTypeDef(TypedDict):
+    serviceId: str,
 ```
 
 ## PutResourcePolicyInputRequestTypeDef
@@ -1211,26 +1227,26 @@ class UpdateIncidentRecordInputRequestTypeDef(TypedDict):
 1. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
 2. See [:material-code-braces: NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef) 
 3. See [:material-code-brackets: IncidentRecordStatusType](./literals.md#incidentrecordstatustype) 
-## ItemIdentifierTypeDef
+## ItemValueTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import ItemIdentifierTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ItemValueTypeDef
 
-def get_value() -> ItemIdentifierTypeDef:
+def get_value() -> ItemValueTypeDef:
     return {
-        "type": ...,
-        "value": ...,
+        "arn": ...,
     }
 ```
 
 ```python title="Definition"
-class ItemIdentifierTypeDef(TypedDict):
-    type: ItemTypeType,  # (1)
-    value: ItemValueTypeDef,  # (2)
+class ItemValueTypeDef(TypedDict):
+    arn: NotRequired[str],
+    metricDefinition: NotRequired[str],
+    pagerDutyIncidentDetail: NotRequired[PagerDutyIncidentDetailTypeDef],  # (1)
+    url: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: ItemTypeType](./literals.md#itemtypetype) 
-2. See [:material-code-braces: ItemValueTypeDef](./type_defs.md#itemvaluetypedef) 
+1. See [:material-code-braces: PagerDutyIncidentDetailTypeDef](./type_defs.md#pagerdutyincidentdetailtypedef) 
 ## ListResponsePlansOutputTypeDef
 
 ```python title="Usage Example"
@@ -1253,6 +1269,27 @@ class ListResponsePlansOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResponsePlanSummaryTypeDef](./type_defs.md#responseplansummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PagerDutyConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import PagerDutyConfigurationTypeDef
+
+def get_value() -> PagerDutyConfigurationTypeDef:
+    return {
+        "name": ...,
+        "pagerDutyIncidentConfiguration": ...,
+        "secretId": ...,
+    }
+```
+
+```python title="Definition"
+class PagerDutyConfigurationTypeDef(TypedDict):
+    name: str,
+    pagerDutyIncidentConfiguration: PagerDutyIncidentConfigurationTypeDef,  # (1)
+    secretId: str,
+```
+
+1. See [:material-code-braces: PagerDutyIncidentConfigurationTypeDef](./type_defs.md#pagerdutyincidentconfigurationtypedef) 
 ## ReplicationSetTypeDef
 
 ```python title="Usage Example"
@@ -1424,25 +1461,43 @@ class GetIncidentRecordOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: IncidentRecordTypeDef](./type_defs.md#incidentrecordtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## RelatedItemTypeDef
+## ItemIdentifierTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ssm_incidents.type_defs import RelatedItemTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ItemIdentifierTypeDef
 
-def get_value() -> RelatedItemTypeDef:
+def get_value() -> ItemIdentifierTypeDef:
     return {
-        "identifier": ...,
+        "type": ...,
+        "value": ...,
     }
 ```
 
 ```python title="Definition"
-class RelatedItemTypeDef(TypedDict):
-    identifier: ItemIdentifierTypeDef,  # (1)
-    generatedId: NotRequired[str],
-    title: NotRequired[str],
+class ItemIdentifierTypeDef(TypedDict):
+    type: ItemTypeType,  # (1)
+    value: ItemValueTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef) 
+1. See [:material-code-brackets: ItemTypeType](./literals.md#itemtypetype) 
+2. See [:material-code-braces: ItemValueTypeDef](./type_defs.md#itemvaluetypedef) 
+## IntegrationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import IntegrationTypeDef
+
+def get_value() -> IntegrationTypeDef:
+    return {
+        "pagerDutyConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class IntegrationTypeDef(TypedDict):
+    pagerDutyConfiguration: NotRequired[PagerDutyConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PagerDutyConfigurationTypeDef](./type_defs.md#pagerdutyconfigurationtypedef) 
 ## GetReplicationSetOutputTypeDef
 
 ```python title="Usage Example"
@@ -1549,6 +1604,25 @@ class ListTimelineEventsInputRequestTypeDef(TypedDict):
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 2. See [:material-code-brackets: TimelineEventSortType](./literals.md#timelineeventsorttype) 
 3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## RelatedItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import RelatedItemTypeDef
+
+def get_value() -> RelatedItemTypeDef:
+    return {
+        "identifier": ...,
+    }
+```
+
+```python title="Definition"
+class RelatedItemTypeDef(TypedDict):
+    identifier: ItemIdentifierTypeDef,  # (1)
+    generatedId: NotRequired[str],
+    title: NotRequired[str],
+```
+
+1. See [:material-code-braces: ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef) 
 ## CreateResponsePlanInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1570,12 +1644,14 @@ class CreateResponsePlanInputRequestTypeDef(TypedDict):
     clientToken: NotRequired[str],
     displayName: NotRequired[str],
     engagements: NotRequired[Sequence[str]],
+    integrations: NotRequired[Sequence[IntegrationTypeDef]],  # (4)
     tags: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-braces: IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef) 
 2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 3. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
+4. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
 ## GetResponsePlanOutputTypeDef
 
 ```python title="Usage Example"
@@ -1589,6 +1665,7 @@ def get_value() -> GetResponsePlanOutputTypeDef:
         "displayName": ...,
         "engagements": ...,
         "incidentTemplate": ...,
+        "integrations": ...,
         "name": ...,
         "ResponseMetadata": ...,
     }
@@ -1602,14 +1679,16 @@ class GetResponsePlanOutputTypeDef(TypedDict):
     displayName: str,
     engagements: List[str],
     incidentTemplate: IncidentTemplateTypeDef,  # (3)
+    integrations: List[IntegrationTypeDef],  # (4)
     name: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 2. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
 3. See [:material-code-braces: IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResponsePlanInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1635,11 +1714,13 @@ class UpdateResponsePlanInputRequestTypeDef(TypedDict):
     incidentTemplateSummary: NotRequired[str],
     incidentTemplateTags: NotRequired[Mapping[str, str]],
     incidentTemplateTitle: NotRequired[str],
+    integrations: NotRequired[Sequence[IntegrationTypeDef]],  # (4)
 ```
 
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 2. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
 3. See [:material-code-braces: NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef) 
+4. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
 ## ListRelatedItemsOutputTypeDef
 
 ```python title="Usage Example"

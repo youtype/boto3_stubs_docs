@@ -662,12 +662,14 @@ def create_user(
     Passwords: Sequence[str] = ...,
     NoPasswordRequired: bool = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
-) -> UserResponseMetadataTypeDef:  # (2)
+    AuthenticationMode: AuthenticationModeTypeDef = ...,  # (2)
+) -> UserResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef) 
+2. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
+3. See [:material-code-braces: UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2113,11 +2115,13 @@ def modify_user(
     AppendAccessString: str = ...,
     Passwords: Sequence[str] = ...,
     NoPasswordRequired: bool = ...,
-) -> UserResponseMetadataTypeDef:  # (1)
+    AuthenticationMode: AuthenticationModeTypeDef = ...,  # (1)
+) -> UserResponseMetadataTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef) 
+1. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
+2. See [:material-code-braces: UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

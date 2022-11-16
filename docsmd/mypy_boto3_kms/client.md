@@ -1515,7 +1515,7 @@ parent.sign(**kwargs)
 
 Adds or edits tags on a [customer managed
 key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-
-cmk)_ .
+cmk)_.
 
 Type annotations and code completion for `#!python boto3.client("kms").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource)

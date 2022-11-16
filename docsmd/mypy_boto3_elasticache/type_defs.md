@@ -48,6 +48,24 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## AuthenticationModeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elasticache.type_defs import AuthenticationModeTypeDef
+
+def get_value() -> AuthenticationModeTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AuthenticationModeTypeDef(TypedDict):
+    Type: NotRequired[InputAuthenticationTypeType],  # (1)
+    Passwords: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: InputAuthenticationTypeType](./literals.md#inputauthenticationtypetype) 
 ## AuthenticationTypeDef
 
 ```python title="Usage Example"
@@ -1255,26 +1273,6 @@ class ModifyUserGroupMessageRequestTypeDef(TypedDict):
     UserIdsToRemove: NotRequired[Sequence[str]],
 ```
 
-## ModifyUserMessageRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elasticache.type_defs import ModifyUserMessageRequestTypeDef
-
-def get_value() -> ModifyUserMessageRequestTypeDef:
-    return {
-        "UserId": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyUserMessageRequestTypeDef(TypedDict):
-    UserId: str,
-    AccessString: NotRequired[str],
-    AppendAccessString: NotRequired[str],
-    Passwords: NotRequired[Sequence[str]],
-    NoPasswordRequired: NotRequired[bool],
-```
-
 ## NodeGroupMemberUpdateStatusTypeDef
 
 ```python title="Usage Example"
@@ -1693,32 +1691,6 @@ class CreateUserGroupMessageRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateUserMessageRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_elasticache.type_defs import CreateUserMessageRequestTypeDef
-
-def get_value() -> CreateUserMessageRequestTypeDef:
-    return {
-        "UserId": ...,
-        "UserName": ...,
-        "Engine": ...,
-        "AccessString": ...,
-    }
-```
-
-```python title="Definition"
-class CreateUserMessageRequestTypeDef(TypedDict):
-    UserId: str,
-    UserName: str,
-    Engine: str,
-    AccessString: str,
-    Passwords: NotRequired[Sequence[str]],
-    NoPasswordRequired: NotRequired[bool],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PurchaseReservedCacheNodesOfferingMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1816,6 +1788,56 @@ class TagListMessageTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateUserMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elasticache.type_defs import CreateUserMessageRequestTypeDef
+
+def get_value() -> CreateUserMessageRequestTypeDef:
+    return {
+        "UserId": ...,
+        "UserName": ...,
+        "Engine": ...,
+        "AccessString": ...,
+    }
+```
+
+```python title="Definition"
+class CreateUserMessageRequestTypeDef(TypedDict):
+    UserId: str,
+    UserName: str,
+    Engine: str,
+    AccessString: str,
+    Passwords: NotRequired[Sequence[str]],
+    NoPasswordRequired: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    AuthenticationMode: NotRequired[AuthenticationModeTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
+## ModifyUserMessageRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elasticache.type_defs import ModifyUserMessageRequestTypeDef
+
+def get_value() -> ModifyUserMessageRequestTypeDef:
+    return {
+        "UserId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyUserMessageRequestTypeDef(TypedDict):
+    UserId: str,
+    AccessString: NotRequired[str],
+    AppendAccessString: NotRequired[str],
+    Passwords: NotRequired[Sequence[str]],
+    NoPasswordRequired: NotRequired[bool],
+    AuthenticationMode: NotRequired[AuthenticationModeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
 ## UserResponseMetadataTypeDef
 
 ```python title="Usage Example"

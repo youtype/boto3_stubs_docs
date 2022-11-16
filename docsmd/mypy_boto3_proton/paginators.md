@@ -830,19 +830,25 @@ Type annotations and code completion for `#!python ListServiceInstancesPaginator
 def paginate(
     self,
     *,
+    filters: Sequence[ListServiceInstancesFilterTypeDef] = ...,  # (1)
     serviceName: str = ...,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[ListServiceInstancesOutputTypeDef]:  # (2)
+    sortBy: ListServiceInstancesSortByType = ...,  # (2)
+    sortOrder: SortOrderType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListServiceInstancesOutputTypeDef]:  # (5)
     ...
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef) 
+1. See [:material-code-braces: ListServiceInstancesFilterTypeDef](./type_defs.md#listserviceinstancesfiltertypedef) 
+2. See [:material-code-brackets: ListServiceInstancesSortByType](./literals.md#listserviceinstancessortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: ListServiceInstancesInputListServiceInstancesPaginateTypeDef = {  # (1)
-    "serviceName": ...,
+    "filters": ...,
 }
 
 parent.paginate(**kwargs)

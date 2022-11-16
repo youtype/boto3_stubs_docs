@@ -137,15 +137,17 @@ def create_response_plan(
     clientToken: str = ...,
     displayName: str = ...,
     engagements: Sequence[str] = ...,
+    integrations: Sequence[IntegrationTypeDef] = ...,  # (4)
     tags: Mapping[str, str] = ...,
-) -> CreateResponsePlanOutputTypeDef:  # (4)
+) -> CreateResponsePlanOutputTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef) 
 2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 3. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
-4. See [:material-code-braces: CreateResponsePlanOutputTypeDef](./type_defs.md#createresponseplanoutputtypedef) 
+4. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
+5. See [:material-code-braces: CreateResponsePlanOutputTypeDef](./type_defs.md#createresponseplanoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -985,6 +987,7 @@ def update_response_plan(
     incidentTemplateSummary: str = ...,
     incidentTemplateTags: Mapping[str, str] = ...,
     incidentTemplateTitle: str = ...,
+    integrations: Sequence[IntegrationTypeDef] = ...,  # (4)
 ) -> Dict[str, Any]:
     ...
 ```
@@ -992,6 +995,7 @@ def update_response_plan(
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 2. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
 3. See [:material-code-braces: NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef) 
+4. See [:material-code-braces: IntegrationTypeDef](./type_defs.md#integrationtypedef) 
 
 
 ```python title="Usage example with kwargs"

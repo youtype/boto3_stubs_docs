@@ -164,7 +164,7 @@ def close(
 
 ### create\_ip\_set
 
-Creates an  IPSet , which you use to identify web requests that originate from
+Creates an  IPSet, which you use to identify web requests that originate from
 specific IP addresses or ranges of IP addresses.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").create_ip_set` method.
@@ -205,8 +205,8 @@ parent.create_ip_set(**kwargs)
 
 ### create\_regex\_pattern\_set
 
-Creates a  RegexPatternSet , which you reference in a
-RegexPatternSetReferenceStatement , to have WAF inspect a web request component
+Creates a  RegexPatternSet, which you reference in a
+RegexPatternSetReferenceStatement, to have WAF inspect a web request component
 for the specified patterns.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").create_regex_pattern_set` method.
@@ -371,7 +371,7 @@ parent.delete_firewall_manager_rule_groups(**kwargs)
 
 ### delete\_ip\_set
 
-Deletes the specified  IPSet .
+Deletes the specified  IPSet.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").delete_ip_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
@@ -462,7 +462,7 @@ parent.delete_permission_policy(**kwargs)
 
 ### delete\_regex\_pattern\_set
 
-Deletes the specified  RegexPatternSet .
+Deletes the specified  RegexPatternSet.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").delete_regex_pattern_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
@@ -497,7 +497,7 @@ parent.delete_regex_pattern_set(**kwargs)
 
 ### delete\_rule\_group
 
-Deletes the specified  RuleGroup .
+Deletes the specified  RuleGroup.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").delete_rule_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
@@ -532,7 +532,7 @@ parent.delete_rule_group(**kwargs)
 
 ### delete\_web\_acl
 
-Deletes the specified  WebACL .
+Deletes the specified  WebACL.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").delete_web_acl` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
@@ -683,7 +683,7 @@ def generate_presigned_url(
 
 ### get\_ip\_set
 
-Retrieves the specified  IPSet .
+Retrieves the specified  IPSet.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").get_ip_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
@@ -879,7 +879,7 @@ parent.get_rate_based_statement_managed_keys(**kwargs)
 
 ### get\_regex\_pattern\_set
 
-Retrieves the specified  RegexPatternSet .
+Retrieves the specified  RegexPatternSet.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").get_regex_pattern_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
@@ -913,7 +913,7 @@ parent.get_regex_pattern_set(**kwargs)
 
 ### get\_rule\_group
 
-Retrieves the specified  RuleGroup .
+Retrieves the specified  RuleGroup.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").get_rule_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
@@ -987,7 +987,7 @@ parent.get_sampled_requests(**kwargs)
 
 ### get\_web\_acl
 
-Retrieves the specified  WebACL .
+Retrieves the specified  WebACL.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").get_web_acl` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
@@ -1408,7 +1408,7 @@ parent.list_web_acls(**kwargs)
 
 ### put\_logging\_configuration
 
-Enables the specified  LoggingConfiguration , to start logging from a web ACL,
+Enables the specified  LoggingConfiguration, to start logging from a web ACL,
 according to the configuration provided.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").put_logging_configuration` method.
@@ -1570,7 +1570,7 @@ parent.untag_resource(**kwargs)
 
 ### update\_ip\_set
 
-Updates the specified  IPSet .
+Updates the specified  IPSet.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").update_ip_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
@@ -1649,7 +1649,7 @@ parent.update_managed_rule_set_version_expiry_date(**kwargs)
 
 ### update\_regex\_pattern\_set
 
-Updates the specified  RegexPatternSet .
+Updates the specified  RegexPatternSet.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").update_regex_pattern_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
@@ -1689,7 +1689,7 @@ parent.update_regex_pattern_set(**kwargs)
 
 ### update\_rule\_group
 
-Updates the specified  RuleGroup .
+Updates the specified  RuleGroup.
 
 Type annotations and code completion for `#!python boto3.client("wafv2").update_rule_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group)

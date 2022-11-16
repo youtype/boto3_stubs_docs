@@ -992,7 +992,7 @@ parent.describe_ecs_clusters(**kwargs)
 
 Describes [Elastic IP
 addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-
-addresses-eip.html)_ .
+addresses-eip.html)_.
 
 Type annotations and code completion for `#!python boto3.client("opsworks").describe_elastic_ips` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips)

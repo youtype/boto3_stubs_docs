@@ -1432,8 +1432,7 @@ parent.get_bucket_metrics_configuration(**kwargs)
 ### get\_bucket\_notification
 
 No longer used, see
-[GetBucketNotificationConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html)_
-.
+[GetBucketNotificationConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html)_.
 
 Type annotations and code completion for `#!python boto3.client("s3").get_bucket_notification` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification)

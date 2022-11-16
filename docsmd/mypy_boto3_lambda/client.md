@@ -425,7 +425,7 @@ parent.create_function_url_config(**kwargs)
 ### delete\_alias
 
 Deletes a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_ .
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_.
 
 Type annotations and code completion for `#!python boto3.client("lambda").delete_alias` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
@@ -765,7 +765,7 @@ def get_account_settings(
 ### get\_alias
 
 Returns details about a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_ .
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_.
 
 Type annotations and code completion for `#!python boto3.client("lambda").get_alias` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
@@ -1035,8 +1035,8 @@ parent.get_function_url_config(**kwargs)
 ### get\_layer\_version
 
 Returns information about a version of an [Lambda
-layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_
-, with a link to download the layer archive that's valid for 10 minutes.
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_,
+with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations and code completion for `#!python boto3.client("lambda").get_layer_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
@@ -1068,8 +1068,8 @@ parent.get_layer_version(**kwargs)
 ### get\_layer\_version\_by\_arn
 
 Returns information about a version of an [Lambda
-layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_
-, with a link to download the layer archive that's valid for 10 minutes.
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_,
+with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations and code completion for `#!python boto3.client("lambda").get_layer_version_by_arn` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
@@ -1620,7 +1620,7 @@ parent.list_tags(**kwargs)
 
 Returns a list of
 [versions](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
-aliases.html)_ , with the version-specific configuration of each.
+aliases.html)_, with the version-specific configuration of each.
 
 Type annotations and code completion for `#!python boto3.client("lambda").list_versions_by_function` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
@@ -1990,7 +1990,7 @@ parent.untag_resource(**kwargs)
 ### update\_alias
 
 Updates the configuration of a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_ .
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_.
 
 Type annotations and code completion for `#!python boto3.client("lambda").update_alias` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)

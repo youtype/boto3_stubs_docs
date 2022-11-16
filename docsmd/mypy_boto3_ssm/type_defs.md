@@ -858,6 +858,26 @@ class DeleteResourceDataSyncRequestRequestTypeDef(TypedDict):
     SyncType: NotRequired[str],
 ```
 
+## DeleteResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "PolicyId": ...,
+        "PolicyHash": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    PolicyId: str,
+    PolicyHash: str,
+```
+
 ## DeregisterManagedInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2115,6 +2135,7 @@ def get_value() -> GetOpsItemRequestRequestTypeDef:
 ```python title="Definition"
 class GetOpsItemRequestRequestTypeDef(TypedDict):
     OpsItemId: str,
+    OpsItemArn: NotRequired[str],
 ```
 
 ## GetOpsMetadataRequestRequestTypeDef
@@ -2281,6 +2302,42 @@ def get_value() -> GetPatchBaselineRequestRequestTypeDef:
 ```python title="Definition"
 class GetPatchBaselineRequestRequestTypeDef(TypedDict):
     BaselineId: str,
+```
+
+## GetResourcePoliciesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetResourcePoliciesRequestRequestTypeDef
+
+def get_value() -> GetResourcePoliciesRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePoliciesRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## GetResourcePoliciesResponseEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetResourcePoliciesResponseEntryTypeDef
+
+def get_value() -> GetResourcePoliciesResponseEntryTypeDef:
+    return {
+        "PolicyId": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePoliciesResponseEntryTypeDef(TypedDict):
+    PolicyId: NotRequired[str],
+    PolicyHash: NotRequired[str],
+    Policy: NotRequired[str],
 ```
 
 ## GetServiceSettingRequestRequestTypeDef
@@ -2793,6 +2850,26 @@ class PatchFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PatchFilterKeyType](./literals.md#patchfilterkeytype) 
+## PutResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Policy": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Policy: str,
+    PolicyId: NotRequired[str],
+    PolicyHash: NotRequired[str],
+```
+
 ## RegisterDefaultPatchBaselineRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3334,6 +3411,7 @@ from mypy_boto3_ssm.type_defs import CreateOpsItemResponseTypeDef
 def get_value() -> CreateOpsItemResponseTypeDef:
     return {
         "OpsItemId": ...,
+        "OpsItemArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3341,6 +3419,7 @@ def get_value() -> CreateOpsItemResponseTypeDef:
 ```python title="Definition"
 class CreateOpsItemResponseTypeDef(TypedDict):
     OpsItemId: str,
+    OpsItemArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -3939,6 +4018,27 @@ class PutParameterResultTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ParameterTierType](./literals.md#parametertiertype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResourcePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import PutResourcePolicyResponseTypeDef
+
+def get_value() -> PutResourcePolicyResponseTypeDef:
+    return {
+        "PolicyId": ...,
+        "PolicyHash": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyResponseTypeDef(TypedDict):
+    PolicyId: str,
+    PolicyHash: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterDefaultPatchBaselineResultTypeDef
 
 ```python title="Usage Example"
@@ -5023,6 +5123,7 @@ class CreateOpsItemRequestRequestTypeDef(TypedDict):
     ActualEndTime: NotRequired[Union[datetime, str]],
     PlannedStartTime: NotRequired[Union[datetime, str]],
     PlannedEndTime: NotRequired[Union[datetime, str]],
+    AccountId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef) 
@@ -5063,6 +5164,7 @@ class OpsItemTypeDef(TypedDict):
     ActualEndTime: NotRequired[datetime],
     PlannedStartTime: NotRequired[datetime],
     PlannedEndTime: NotRequired[datetime],
+    OpsItemArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef) 
@@ -5097,6 +5199,7 @@ class UpdateOpsItemRequestRequestTypeDef(TypedDict):
     ActualEndTime: NotRequired[Union[datetime, str]],
     PlannedStartTime: NotRequired[Union[datetime, str]],
     PlannedEndTime: NotRequired[Union[datetime, str]],
+    OpsItemArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef) 
@@ -5436,6 +5539,24 @@ def get_value() -> GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef:
 class GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef(TypedDict):
     Name: str,
     WithDecryption: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef
+
+def get_value() -> GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef(TypedDict):
+    ResourceArn: str,
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -7051,6 +7172,28 @@ class GetParametersResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourcePoliciesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetResourcePoliciesResponseTypeDef
+
+def get_value() -> GetResourcePoliciesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Policies": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePoliciesResponseTypeDef(TypedDict):
+    NextToken: str,
+    Policies: List[GetResourcePoliciesResponseEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GetResourcePoliciesResponseEntryTypeDef](./type_defs.md#getresourcepoliciesresponseentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceSettingResultTypeDef
 

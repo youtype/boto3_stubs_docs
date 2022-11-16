@@ -1477,24 +1477,24 @@ class ListServiceInstanceProvisionedResourcesInputRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
-## ListServiceInstancesInputRequestTypeDef
+## ListServiceInstancesFilterTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_proton.type_defs import ListServiceInstancesInputRequestTypeDef
+from mypy_boto3_proton.type_defs import ListServiceInstancesFilterTypeDef
 
-def get_value() -> ListServiceInstancesInputRequestTypeDef:
+def get_value() -> ListServiceInstancesFilterTypeDef:
     return {
-        "maxResults": ...,
+        "key": ...,
     }
 ```
 
 ```python title="Definition"
-class ListServiceInstancesInputRequestTypeDef(TypedDict):
-    maxResults: NotRequired[int],
-    nextToken: NotRequired[str],
-    serviceName: NotRequired[str],
+class ListServiceInstancesFilterTypeDef(TypedDict):
+    key: NotRequired[ListServiceInstancesFilterByType],  # (1)
+    value: NotRequired[str],
 ```
 
+1. See [:material-code-brackets: ListServiceInstancesFilterByType](./literals.md#listserviceinstancesfilterbytype) 
 ## ServiceInstanceSummaryTypeDef
 
 ```python title="Usage Example"
@@ -3721,24 +3721,6 @@ class ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisioned
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListServiceInstancesInputListServiceInstancesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_proton.type_defs import ListServiceInstancesInputListServiceInstancesPaginateTypeDef
-
-def get_value() -> ListServiceInstancesInputListServiceInstancesPaginateTypeDef:
-    return {
-        "serviceName": ...,
-    }
-```
-
-```python title="Definition"
-class ListServiceInstancesInputListServiceInstancesPaginateTypeDef(TypedDict):
-    serviceName: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -4088,6 +4070,54 @@ class ListRepositorySyncDefinitionsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: RepositorySyncDefinitionTypeDef](./type_defs.md#repositorysyncdefinitiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceInstancesInputListServiceInstancesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServiceInstancesInputListServiceInstancesPaginateTypeDef
+
+def get_value() -> ListServiceInstancesInputListServiceInstancesPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceInstancesInputListServiceInstancesPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[ListServiceInstancesFilterTypeDef]],  # (1)
+    serviceName: NotRequired[str],
+    sortBy: NotRequired[ListServiceInstancesSortByType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: ListServiceInstancesFilterTypeDef](./type_defs.md#listserviceinstancesfiltertypedef) 
+2. See [:material-code-brackets: ListServiceInstancesSortByType](./literals.md#listserviceinstancessortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListServiceInstancesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServiceInstancesInputRequestTypeDef
+
+def get_value() -> ListServiceInstancesInputRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceInstancesInputRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[ListServiceInstancesFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    serviceName: NotRequired[str],
+    sortBy: NotRequired[ListServiceInstancesSortByType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+```
+
+1. See [:material-code-braces: ListServiceInstancesFilterTypeDef](./type_defs.md#listserviceinstancesfiltertypedef) 
+2. See [:material-code-brackets: ListServiceInstancesSortByType](./literals.md#listserviceinstancessortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListServiceInstancesOutputTypeDef
 
 ```python title="Usage Example"

@@ -498,8 +498,7 @@ parent.create_invalidation(**kwargs)
 ### create\_key\_group
 
 Creates a key group that you can use with [CloudFront signed URLs and signed
-cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)_
-.
+cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)_.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").create_key_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
@@ -622,10 +621,10 @@ parent.create_origin_request_policy(**kwargs)
 ### create\_public\_key
 
 Uploads a public key to CloudFront that you can use with [signed URLs and signed
-cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)_
-, or with `field-level encryption
+cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)_,
+or with `field-level encryption
 <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-
-en...`.
+enc...`.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").create_public_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key)

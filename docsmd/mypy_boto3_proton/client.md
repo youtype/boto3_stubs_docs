@@ -1806,19 +1806,25 @@ Type annotations and code completion for `#!python boto3.client("proton").list_s
 def list_service_instances(
     self,
     *,
+    filters: Sequence[ListServiceInstancesFilterTypeDef] = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
     serviceName: str = ...,
-) -> ListServiceInstancesOutputTypeDef:  # (1)
+    sortBy: ListServiceInstancesSortByType = ...,  # (2)
+    sortOrder: SortOrderType = ...,  # (3)
+) -> ListServiceInstancesOutputTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef) 
+1. See [:material-code-braces: ListServiceInstancesFilterTypeDef](./type_defs.md#listserviceinstancesfiltertypedef) 
+2. See [:material-code-brackets: ListServiceInstancesSortByType](./literals.md#listserviceinstancessortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: ListServiceInstancesInputRequestTypeDef = {  # (1)
-    "maxResults": ...,
+    "filters": ...,
 }
 
 parent.list_service_instances(**kwargs)
@@ -2011,10 +2017,8 @@ parent.list_tags_for_resource(**kwargs)
 
 ### notify\_resource\_deployment\_status\_change
 
-Notify Proton of the following information related to a provisioned resource
-(environment, service instance, or service pipeline) * For [CodeBuild-based
-provisioning](https://docs.aws.amazon.com/proton/latest/userguide/ag-works-prov-
-methods.html#ag-works-prov-methods-codebuild)_ , provid...
+Notify Proton of status changes to a provisioned resource when you use self-
+managed provisioning.
 
 Type annotations and code completion for `#!python boto3.client("proton").notify_resource_deployment_status_change` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.notify_resource_deployment_status_change)

@@ -480,7 +480,7 @@ parent.create_login_profile(**kwargs)
 ### create\_open\_id\_connect\_provider
 
 Creates an IAM entity to describe an identity provider (IdP) that supports
-`OpenID Connect (OIDC) <http://openid.net/connect/>`__ .
+`OpenID Connect (OIDC) <http://openid.net/connect/>`__.
 
 Type annotations and code completion for `#!python boto3.client("iam").create_open_id_connect_provider` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
@@ -979,7 +979,7 @@ parent.delete_instance_profile(**kwargs)
 Deletes the password for the specified IAM user, For more information, see
 [Managing passwords for IAM
 users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_admin-
-change-user.html)_ .
+change-user.html)_.
 
 Type annotations and code completion for `#!python boto3.client("iam").delete_login_profile` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile)

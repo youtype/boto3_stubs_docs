@@ -734,6 +734,7 @@ def create_db_cluster(
     PerformanceInsightsRetentionPeriod: int = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
     NetworkType: str = ...,
+    DBSystemId: str = ...,
     SourceRegion: str = ...,
 ) -> CreateDBClusterResultTypeDef:  # (4)
     ...

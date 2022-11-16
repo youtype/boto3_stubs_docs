@@ -3309,8 +3309,7 @@ parent.create_reserved_instances_listing(**kwargs)
 
 Starts a task that restores an AMI from an Amazon S3 object that was previously
 created by using
-[CreateStoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateStoreImageTask.html)_
-.
+[CreateStoreImageTask](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateStoreImageTask.html)_.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_restore_image_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_restore_image_task)
@@ -7126,7 +7125,7 @@ parent.describe_bundle_tasks(**kwargs)
 ### describe\_byoip\_cidrs
 
 Describes the IP address ranges that were specified in calls to
-ProvisionByoipCidr .
+ProvisionByoipCidr.
 
 Type annotations and code completion for `#!python boto3.client("ec2").describe_byoip_cidrs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_byoip_cidrs)

@@ -247,6 +247,23 @@ class DeleteGroupRequestRequestTypeDef(TypedDict):
     GroupARN: NotRequired[str],
 ```
 
+## DeleteResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "PolicyName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyRevisionId: NotRequired[str],
+```
+
 ## DeleteSamplingRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -747,6 +764,41 @@ class InstanceIdDetailTypeDef(TypedDict):
     Id: NotRequired[str],
 ```
 
+## ListResourcePoliciesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import ListResourcePoliciesRequestRequestTypeDef
+
+def get_value() -> ListResourcePoliciesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcePoliciesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
+
+## ResourcePolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import ResourcePolicyTypeDef
+
+def get_value() -> ResourcePolicyTypeDef:
+    return {
+        "PolicyName": ...,
+    }
+```
+
+```python title="Definition"
+class ResourcePolicyTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    PolicyDocument: NotRequired[str],
+    PolicyRevisionId: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+```
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -782,6 +834,26 @@ class PutEncryptionConfigRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+## PutResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyDocument: str,
+    PolicyRevisionId: NotRequired[str],
+    BypassPolicyLockoutCheck: NotRequired[bool],
+```
+
 ## PutTraceSegmentsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1118,6 +1190,41 @@ def get_value() -> GetTraceGraphRequestGetTraceGraphPaginateTypeDef:
 ```python title="Definition"
 class GetTraceGraphRequestGetTraceGraphPaginateTypeDef(TypedDict):
     TraceIds: Sequence[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourcePoliciesRequestListResourcePoliciesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import ListResourcePoliciesRequestListResourcePoliciesPaginateTypeDef
+
+def get_value() -> ListResourcePoliciesRequestListResourcePoliciesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcePoliciesRequestListResourcePoliciesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
+
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceARN: str,
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -1541,6 +1648,48 @@ class InsightImpactGraphServiceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: InsightImpactGraphEdgeTypeDef](./type_defs.md#insightimpactgraphedgetypedef) 
+## ListResourcePoliciesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import ListResourcePoliciesResultTypeDef
+
+def get_value() -> ListResourcePoliciesResultTypeDef:
+    return {
+        "ResourcePolicies": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourcePoliciesResultTypeDef(TypedDict):
+    ResourcePolicies: List[ResourcePolicyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResourcePolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import PutResourcePolicyResultTypeDef
+
+def get_value() -> PutResourcePolicyResultTypeDef:
+    return {
+        "ResourcePolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyResultTypeDef(TypedDict):
+    ResourcePolicy: ResourcePolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutTraceSegmentsResultTypeDef
 
 ```python title="Usage Example"

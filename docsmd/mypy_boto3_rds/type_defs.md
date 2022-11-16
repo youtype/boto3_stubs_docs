@@ -3264,6 +3264,7 @@ class DBClusterSnapshotTypeDef(TypedDict):
     SourceDBClusterSnapshotArn: NotRequired[str],
     IAMDatabaseAuthenticationEnabled: NotRequired[bool],
     TagList: NotRequired[List[TagTypeDef]],  # (1)
+    DBSystemId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -3419,6 +3420,9 @@ class ClusterPendingModifiedValuesTypeDef(TypedDict):
     MasterUserPassword: NotRequired[str],
     IAMDatabaseAuthenticationEnabled: NotRequired[bool],
     EngineVersion: NotRequired[str],
+    BackupRetentionPeriod: NotRequired[int],
+    AllocatedStorage: NotRequired[int],
+    Iops: NotRequired[int],
 ```
 
 1. See [:material-code-braces: PendingCloudwatchLogsExportsTypeDef](./type_defs.md#pendingcloudwatchlogsexportstypedef) 
@@ -3651,6 +3655,7 @@ class CreateDBClusterMessageRequestTypeDef(TypedDict):
     PerformanceInsightsRetentionPeriod: NotRequired[int],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
     NetworkType: NotRequired[str],
+    DBSystemId: NotRequired[str],
     SourceRegion: NotRequired[str],
 ```
 
@@ -4690,6 +4695,7 @@ def get_value() -> DBEngineVersionResponseMetadataTypeDef:
         "CreateTime": ...,
         "TagList": ...,
         "SupportsBabelfish": ...,
+        "CustomDBEngineVersionManifest": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4722,6 +4728,7 @@ class DBEngineVersionResponseMetadataTypeDef(TypedDict):
     CreateTime: datetime,
     TagList: List[TagTypeDef],  # (6)
     SupportsBabelfish: bool,
+    CustomDBEngineVersionManifest: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (7)
 ```
 
@@ -4771,6 +4778,7 @@ class DBEngineVersionTypeDef(TypedDict):
     CreateTime: NotRequired[datetime],
     TagList: NotRequired[List[TagTypeDef]],  # (6)
     SupportsBabelfish: NotRequired[bool],
+    CustomDBEngineVersionManifest: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
@@ -7156,6 +7164,7 @@ class DBClusterTypeDef(TypedDict):
     PerformanceInsightsRetentionPeriod: NotRequired[int],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationInfoTypeDef],  # (12)
     NetworkType: NotRequired[str],
+    DBSystemId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DBClusterOptionGroupStatusTypeDef](./type_defs.md#dbclusteroptiongroupstatustypedef) 
@@ -8547,6 +8556,7 @@ class DBInstanceTypeDef(TypedDict):
     NetworkType: NotRequired[str],
     ActivityStreamPolicyStatus: NotRequired[ActivityStreamPolicyStatusType],  # (19)
     StorageThroughput: NotRequired[int],
+    DBSystemId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 

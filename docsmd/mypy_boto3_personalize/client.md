@@ -962,8 +962,8 @@ parent.describe_dataset(**kwargs)
 ### describe\_dataset\_export\_job
 
 Describes the dataset export job created by
-[CreateDatasetExportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetExportJob.html)_
-, including the export job status.
+[CreateDatasetExportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetExportJob.html)_,
+including the export job status.
 
 Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset_export_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
@@ -1022,8 +1022,8 @@ parent.describe_dataset_group(**kwargs)
 ### describe\_dataset\_import\_job
 
 Describes the dataset import job created by
-[CreateDatasetImportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetImportJob.html)_
-, including the import job status.
+[CreateDatasetImportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetImportJob.html)_,
+including the import job status.
 
 Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset_import_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)

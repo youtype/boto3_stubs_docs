@@ -59,11 +59,12 @@ AuthTokenUpdateStrategyTypeType = Literal[
 from mypy_boto3_elasticache.literals import AuthenticationTypeType
 
 def get_value() -> AuthenticationTypeType:
-    return "no-password"
+    return "iam"
 ```
 
 ```python title="Definition"
 AuthenticationTypeType = Literal[
+    "iam",
     "no-password",
     "password",
 ]
@@ -394,6 +395,22 @@ def get_value() -> DestinationTypeType:
 DestinationTypeType = Literal[
     "cloudwatch-logs",
     "kinesis-firehose",
+]
+```
+## InputAuthenticationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_elasticache.literals import InputAuthenticationTypeType
+
+def get_value() -> InputAuthenticationTypeType:
+    return "iam"
+```
+
+```python title="Definition"
+InputAuthenticationTypeType = Literal[
+    "iam",
+    "no-password-required",
+    "password",
 ]
 ```
 ## IpDiscoveryType
@@ -1130,6 +1147,7 @@ RegionName = Literal[
     "eu-central-2",
     "eu-north-1",
     "eu-south-1",
+    "eu-south-2",
     "eu-west-1",
     "eu-west-2",
     "eu-west-3",

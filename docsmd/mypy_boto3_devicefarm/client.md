@@ -1757,7 +1757,7 @@ parent.list_test_grid_projects(**kwargs)
 
 ### list\_test\_grid\_session\_actions
 
-Returns a list of the actions taken in a  TestGridSession .
+Returns a list of the actions taken in a  TestGridSession.
 
 Type annotations and code completion for `#!python boto3.client("devicefarm").list_test_grid_session_actions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions)
@@ -1821,7 +1821,7 @@ parent.list_test_grid_session_artifacts(**kwargs)
 
 ### list\_test\_grid\_sessions
 
-Retrieves a list of sessions for a  TestGridProject .
+Retrieves a list of sessions for a  TestGridProject.
 
 Type annotations and code completion for `#!python boto3.client("devicefarm").list_test_grid_sessions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions)

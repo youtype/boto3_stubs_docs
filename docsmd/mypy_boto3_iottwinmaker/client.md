@@ -38,6 +38,7 @@ except (
     client.ConnectorFailureException,
     client.ConnectorTimeoutException,
     client.InternalServerException,
+    client.QueryTimeoutException,
     client.ResourceNotFoundException,
     client.ServiceQuotaExceededException,
     client.ThrottlingException,
@@ -69,8 +70,8 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def batch_put_property_values(
     self,
     *,
-    entries: Sequence[PropertyValueEntryTypeDef],  # (1)
     workspaceId: str,
+    entries: Sequence[PropertyValueEntryTypeDef],  # (1)
 ) -> BatchPutPropertyValuesResponseTypeDef:  # (2)
     ...
 ```
@@ -81,8 +82,8 @@ def batch_put_property_values(
 
 ```python title="Usage example with kwargs"
 kwargs: BatchPutPropertyValuesRequestRequestTypeDef = {  # (1)
-    "entries": ...,
     "workspaceId": ...,
+    "entries": ...,
 }
 
 parent.batch_put_property_values(**kwargs)
@@ -132,27 +133,29 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def create_component_type(
     self,
     *,
-    componentTypeId: str,
     workspaceId: str,
-    description: str = ...,
-    extendsFrom: Sequence[str] = ...,
-    functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (1)
+    componentTypeId: str,
     isSingleton: bool = ...,
-    propertyDefinitions: Mapping[str, PropertyDefinitionRequestTypeDef] = ...,  # (2)
+    description: str = ...,
+    propertyDefinitions: Mapping[str, PropertyDefinitionRequestTypeDef] = ...,  # (1)
+    extendsFrom: Sequence[str] = ...,
+    functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (2)
     tags: Mapping[str, str] = ...,
-) -> CreateComponentTypeResponseTypeDef:  # (3)
+    propertyGroups: Mapping[str, PropertyGroupRequestTypeDef] = ...,  # (3)
+) -> CreateComponentTypeResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
-2. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
-3. See [:material-code-braces: CreateComponentTypeResponseTypeDef](./type_defs.md#createcomponenttyperesponsetypedef) 
+1. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
+2. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
+3. See [:material-code-braces: PropertyGroupRequestTypeDef](./type_defs.md#propertygrouprequesttypedef) 
+4. See [:material-code-braces: CreateComponentTypeResponseTypeDef](./type_defs.md#createcomponenttyperesponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: CreateComponentTypeRequestRequestTypeDef = {  # (1)
-    "componentTypeId": ...,
     "workspaceId": ...,
+    "componentTypeId": ...,
 }
 
 parent.create_component_type(**kwargs)
@@ -171,11 +174,11 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def create_entity(
     self,
     *,
-    entityName: str,
     workspaceId: str,
-    components: Mapping[str, ComponentRequestTypeDef] = ...,  # (1)
-    description: str = ...,
+    entityName: str,
     entityId: str = ...,
+    description: str = ...,
+    components: Mapping[str, ComponentRequestTypeDef] = ...,  # (1)
     parentEntityId: str = ...,
     tags: Mapping[str, str] = ...,
 ) -> CreateEntityResponseTypeDef:  # (2)
@@ -188,8 +191,8 @@ def create_entity(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateEntityRequestRequestTypeDef = {  # (1)
-    "entityName": ...,
     "workspaceId": ...,
+    "entityName": ...,
 }
 
 parent.create_entity(**kwargs)
@@ -208,11 +211,11 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def create_scene(
     self,
     *,
-    contentLocation: str,
-    sceneId: str,
     workspaceId: str,
-    capabilities: Sequence[str] = ...,
+    sceneId: str,
+    contentLocation: str,
     description: str = ...,
+    capabilities: Sequence[str] = ...,
     tags: Mapping[str, str] = ...,
 ) -> CreateSceneResponseTypeDef:  # (1)
     ...
@@ -223,9 +226,9 @@ def create_scene(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateSceneRequestRequestTypeDef = {  # (1)
-    "contentLocation": ...,
-    "sceneId": ...,
     "workspaceId": ...,
+    "sceneId": ...,
+    "contentLocation": ...,
 }
 
 parent.create_scene(**kwargs)
@@ -244,9 +247,9 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def create_workspace(
     self,
     *,
-    role: str,
-    s3Location: str,
     workspaceId: str,
+    s3Location: str,
+    role: str,
     description: str = ...,
     tags: Mapping[str, str] = ...,
 ) -> CreateWorkspaceResponseTypeDef:  # (1)
@@ -258,9 +261,9 @@ def create_workspace(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateWorkspaceRequestRequestTypeDef = {  # (1)
-    "role": ...,
-    "s3Location": ...,
     "workspaceId": ...,
+    "s3Location": ...,
+    "role": ...,
 }
 
 parent.create_workspace(**kwargs)
@@ -279,8 +282,8 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def delete_component_type(
     self,
     *,
-    componentTypeId: str,
     workspaceId: str,
+    componentTypeId: str,
 ) -> DeleteComponentTypeResponseTypeDef:  # (1)
     ...
 ```
@@ -290,8 +293,8 @@ def delete_component_type(
 
 ```python title="Usage example with kwargs"
 kwargs: DeleteComponentTypeRequestRequestTypeDef = {  # (1)
-    "componentTypeId": ...,
     "workspaceId": ...,
+    "componentTypeId": ...,
 }
 
 parent.delete_component_type(**kwargs)
@@ -310,8 +313,8 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def delete_entity(
     self,
     *,
-    entityId: str,
     workspaceId: str,
+    entityId: str,
     isRecursive: bool = ...,
 ) -> DeleteEntityResponseTypeDef:  # (1)
     ...
@@ -322,8 +325,8 @@ def delete_entity(
 
 ```python title="Usage example with kwargs"
 kwargs: DeleteEntityRequestRequestTypeDef = {  # (1)
-    "entityId": ...,
     "workspaceId": ...,
+    "entityId": ...,
 }
 
 parent.delete_entity(**kwargs)
@@ -342,8 +345,8 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def delete_scene(
     self,
     *,
-    sceneId: str,
     workspaceId: str,
+    sceneId: str,
 ) -> Dict[str, Any]:
     ...
 ```
@@ -352,8 +355,8 @@ def delete_scene(
 
 ```python title="Usage example with kwargs"
 kwargs: DeleteSceneRequestRequestTypeDef = {  # (1)
-    "sceneId": ...,
     "workspaceId": ...,
+    "sceneId": ...,
 }
 
 parent.delete_scene(**kwargs)
@@ -389,6 +392,40 @@ parent.delete_workspace(**kwargs)
 
 1. See [:material-code-braces: DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef) 
 
+### execute\_query
+
+Run queries to access information from your knowledge graph of entities within
+individual workspaces.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").execute_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.execute_query)
+
+```python title="Method definition"
+def execute_query(
+    self,
+    *,
+    workspaceId: str,
+    queryStatement: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ExecuteQueryResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExecuteQueryResponseTypeDef](./type_defs.md#executequeryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ExecuteQueryRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+    "queryStatement": ...,
+}
+
+parent.execute_query(**kwargs)
+```
+
+1. See [:material-code-braces: ExecuteQueryRequestRequestTypeDef](./type_defs.md#executequeryrequestrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -419,8 +456,8 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def get_component_type(
     self,
     *,
-    componentTypeId: str,
     workspaceId: str,
+    componentTypeId: str,
 ) -> GetComponentTypeResponseTypeDef:  # (1)
     ...
 ```
@@ -430,8 +467,8 @@ def get_component_type(
 
 ```python title="Usage example with kwargs"
 kwargs: GetComponentTypeRequestRequestTypeDef = {  # (1)
-    "componentTypeId": ...,
     "workspaceId": ...,
+    "componentTypeId": ...,
 }
 
 parent.get_component_type(**kwargs)
@@ -450,8 +487,8 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def get_entity(
     self,
     *,
-    entityId: str,
     workspaceId: str,
+    entityId: str,
 ) -> GetEntityResponseTypeDef:  # (1)
     ...
 ```
@@ -461,14 +498,30 @@ def get_entity(
 
 ```python title="Usage example with kwargs"
 kwargs: GetEntityRequestRequestTypeDef = {  # (1)
-    "entityId": ...,
     "workspaceId": ...,
+    "entityId": ...,
 }
 
 parent.get_entity(**kwargs)
 ```
 
 1. See [:material-code-braces: GetEntityRequestRequestTypeDef](./type_defs.md#getentityrequestrequesttypedef) 
+
+### get\_pricing\_plan
+
+Gets the pricing plan.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_pricing_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_pricing_plan)
+
+```python title="Method definition"
+def get_pricing_plan(
+    self,
+) -> GetPricingPlanResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetPricingPlanResponseTypeDef](./type_defs.md#getpricingplanresponsetypedef) 
 
 ### get\_property\_value
 
@@ -486,11 +539,16 @@ def get_property_value(
     componentName: str = ...,
     componentTypeId: str = ...,
     entityId: str = ...,
-) -> GetPropertyValueResponseTypeDef:  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    propertyGroupName: str = ...,
+    tabularConditions: TabularConditionsTypeDef = ...,  # (1)
+) -> GetPropertyValueResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: GetPropertyValueResponseTypeDef](./type_defs.md#getpropertyvalueresponsetypedef) 
+1. See [:material-code-braces: TabularConditionsTypeDef](./type_defs.md#tabularconditionstypedef) 
+2. See [:material-code-braces: GetPropertyValueResponseTypeDef](./type_defs.md#getpropertyvalueresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -516,34 +574,34 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def get_property_value_history(
     self,
     *,
-    selectedProperties: Sequence[str],
     workspaceId: str,
+    selectedProperties: Sequence[str],
+    entityId: str = ...,
     componentName: str = ...,
     componentTypeId: str = ...,
-    endDateTime: Union[datetime, str] = ...,
-    endTime: str = ...,
-    entityId: str = ...,
-    interpolation: InterpolationParametersTypeDef = ...,  # (1)
-    maxResults: int = ...,
-    nextToken: str = ...,
-    orderByTime: OrderByTimeType = ...,  # (2)
-    propertyFilters: Sequence[PropertyFilterTypeDef] = ...,  # (3)
+    propertyFilters: Sequence[PropertyFilterTypeDef] = ...,  # (1)
     startDateTime: Union[datetime, str] = ...,
+    endDateTime: Union[datetime, str] = ...,
+    interpolation: InterpolationParametersTypeDef = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
+    orderByTime: OrderByTimeType = ...,  # (3)
     startTime: str = ...,
+    endTime: str = ...,
 ) -> GetPropertyValueHistoryResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: InterpolationParametersTypeDef](./type_defs.md#interpolationparameterstypedef) 
-2. See [:material-code-brackets: OrderByTimeType](./literals.md#orderbytimetype) 
-3. See [:material-code-braces: PropertyFilterTypeDef](./type_defs.md#propertyfiltertypedef) 
+1. See [:material-code-braces: PropertyFilterTypeDef](./type_defs.md#propertyfiltertypedef) 
+2. See [:material-code-braces: InterpolationParametersTypeDef](./type_defs.md#interpolationparameterstypedef) 
+3. See [:material-code-brackets: OrderByTimeType](./literals.md#orderbytimetype) 
 4. See [:material-code-braces: GetPropertyValueHistoryResponseTypeDef](./type_defs.md#getpropertyvaluehistoryresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: GetPropertyValueHistoryRequestRequestTypeDef = {  # (1)
-    "selectedProperties": ...,
     "workspaceId": ...,
+    "selectedProperties": ...,
 }
 
 parent.get_property_value_history(**kwargs)
@@ -562,8 +620,8 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def get_scene(
     self,
     *,
-    sceneId: str,
     workspaceId: str,
+    sceneId: str,
 ) -> GetSceneResponseTypeDef:  # (1)
     ...
 ```
@@ -573,8 +631,8 @@ def get_scene(
 
 ```python title="Usage example with kwargs"
 kwargs: GetSceneRequestRequestTypeDef = {  # (1)
-    "sceneId": ...,
     "workspaceId": ...,
+    "sceneId": ...,
 }
 
 parent.get_scene(**kwargs)
@@ -624,8 +682,8 @@ def list_component_types(
     *,
     workspaceId: str,
     filters: Sequence[ListComponentTypesFilterTypeDef] = ...,  # (1)
-    maxResults: int = ...,
     nextToken: str = ...,
+    maxResults: int = ...,
 ) -> ListComponentTypesResponseTypeDef:  # (2)
     ...
 ```
@@ -840,26 +898,28 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def update_component_type(
     self,
     *,
-    componentTypeId: str,
     workspaceId: str,
-    description: str = ...,
-    extendsFrom: Sequence[str] = ...,
-    functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (1)
+    componentTypeId: str,
     isSingleton: bool = ...,
-    propertyDefinitions: Mapping[str, PropertyDefinitionRequestTypeDef] = ...,  # (2)
-) -> UpdateComponentTypeResponseTypeDef:  # (3)
+    description: str = ...,
+    propertyDefinitions: Mapping[str, PropertyDefinitionRequestTypeDef] = ...,  # (1)
+    extendsFrom: Sequence[str] = ...,
+    functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (2)
+    propertyGroups: Mapping[str, PropertyGroupRequestTypeDef] = ...,  # (3)
+) -> UpdateComponentTypeResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
-2. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
-3. See [:material-code-braces: UpdateComponentTypeResponseTypeDef](./type_defs.md#updatecomponenttyperesponsetypedef) 
+1. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
+2. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
+3. See [:material-code-braces: PropertyGroupRequestTypeDef](./type_defs.md#propertygrouprequesttypedef) 
+4. See [:material-code-braces: UpdateComponentTypeResponseTypeDef](./type_defs.md#updatecomponenttyperesponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: UpdateComponentTypeRequestRequestTypeDef = {  # (1)
-    "componentTypeId": ...,
     "workspaceId": ...,
+    "componentTypeId": ...,
 }
 
 parent.update_component_type(**kwargs)
@@ -878,11 +938,11 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def update_entity(
     self,
     *,
-    entityId: str,
     workspaceId: str,
-    componentUpdates: Mapping[str, ComponentUpdateRequestTypeDef] = ...,  # (1)
-    description: str = ...,
+    entityId: str,
     entityName: str = ...,
+    description: str = ...,
+    componentUpdates: Mapping[str, ComponentUpdateRequestTypeDef] = ...,  # (1)
     parentEntityUpdate: ParentEntityUpdateRequestTypeDef = ...,  # (2)
 ) -> UpdateEntityResponseTypeDef:  # (3)
     ...
@@ -895,14 +955,45 @@ def update_entity(
 
 ```python title="Usage example with kwargs"
 kwargs: UpdateEntityRequestRequestTypeDef = {  # (1)
-    "entityId": ...,
     "workspaceId": ...,
+    "entityId": ...,
 }
 
 parent.update_entity(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateEntityRequestRequestTypeDef](./type_defs.md#updateentityrequestrequesttypedef) 
+
+### update\_pricing\_plan
+
+Update the pricing plan.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").update_pricing_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_pricing_plan)
+
+```python title="Method definition"
+def update_pricing_plan(
+    self,
+    *,
+    pricingMode: PricingModeType,  # (1)
+    bundleNames: Sequence[str] = ...,
+) -> UpdatePricingPlanResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PricingModeType](./literals.md#pricingmodetype) 
+2. See [:material-code-braces: UpdatePricingPlanResponseTypeDef](./type_defs.md#updatepricingplanresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdatePricingPlanRequestRequestTypeDef = {  # (1)
+    "pricingMode": ...,
+}
+
+parent.update_pricing_plan(**kwargs)
+```
+
+1. See [:material-code-braces: UpdatePricingPlanRequestRequestTypeDef](./type_defs.md#updatepricingplanrequestrequesttypedef) 
 
 ### update\_scene
 
@@ -915,11 +1006,11 @@ Type annotations and code completion for `#!python boto3.client("iottwinmaker").
 def update_scene(
     self,
     *,
-    sceneId: str,
     workspaceId: str,
-    capabilities: Sequence[str] = ...,
+    sceneId: str,
     contentLocation: str = ...,
     description: str = ...,
+    capabilities: Sequence[str] = ...,
 ) -> UpdateSceneResponseTypeDef:  # (1)
     ...
 ```
@@ -929,8 +1020,8 @@ def update_scene(
 
 ```python title="Usage example with kwargs"
 kwargs: UpdateSceneRequestRequestTypeDef = {  # (1)
-    "sceneId": ...,
     "workspaceId": ...,
+    "sceneId": ...,
 }
 
 parent.update_scene(**kwargs)

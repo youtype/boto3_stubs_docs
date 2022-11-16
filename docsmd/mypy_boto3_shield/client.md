@@ -302,7 +302,7 @@ def create_subscription(
 
 ### delete\_protection
 
-Deletes an Shield Advanced  Protection .
+Deletes an Shield Advanced  Protection.
 
 Type annotations and code completion for `#!python boto3.client("shield").delete_protection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection)

@@ -231,11 +231,12 @@ ListResourcesAssociatedToCustomLineItemPaginatorName = Literal[
 from mypy_boto3_billingconductor.literals import PricingRuleScopeType
 
 def get_value() -> PricingRuleScopeType:
-    return "GLOBAL"
+    return "BILLING_ENTITY"
 ```
 
 ```python title="Definition"
 PricingRuleScopeType = Literal[
+    "BILLING_ENTITY",
     "GLOBAL",
     "SERVICE",
 ]

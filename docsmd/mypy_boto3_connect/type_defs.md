@@ -3028,6 +3028,29 @@ class UserSummaryTypeDef(TypedDict):
     Username: NotRequired[str],
 ```
 
+## MonitorContactRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import MonitorContactRequestRequestTypeDef
+
+def get_value() -> MonitorContactRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "UserId": ...,
+    }
+```
+
+```python title="Definition"
+class MonitorContactRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    UserId: str,
+    AllowedMonitorCapabilities: NotRequired[Sequence[MonitorCapabilityType]],  # (1)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MonitorCapabilityType](./literals.md#monitorcapabilitytype) 
 ## NumberReferenceTypeDef
 
 ```python title="Usage Example"
@@ -4765,6 +4788,27 @@ def get_value() -> ListTagsForResourceResponseTypeDef:
 ```python title="Definition"
 class ListTagsForResourceResponseTypeDef(TypedDict):
     tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## MonitorContactResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import MonitorContactResponseTypeDef
+
+def get_value() -> MonitorContactResponseTypeDef:
+    return {
+        "ContactId": ...,
+        "ContactArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class MonitorContactResponseTypeDef(TypedDict):
+    ContactId: str,
+    ContactArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 

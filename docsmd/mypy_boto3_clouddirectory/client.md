@@ -1017,7 +1017,7 @@ parent.get_directory(**kwargs)
 
 ### get\_facet
 
-Gets details of the  Facet , such as facet name, attributes,  Rule s, or
+Gets details of the  Facet, such as facet name, attributes,  Rule s, or
 `ObjectType`.
 
 Type annotations and code completion for `#!python boto3.client("clouddirectory").get_facet` method.

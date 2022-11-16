@@ -362,8 +362,7 @@ parent.enable_crl(**kwargs)
 ### enable\_profile
 
 Enables the roles in a profile to receive session credentials in
-[CreateSession](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_CreateSession.html)_
-.
+[CreateSession](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_CreateSession.html)_.
 
 Type annotations and code completion for `#!python boto3.client("rolesanywhere").enable_profile` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rolesanywhere.html#IAMRolesAnywhere.Client.enable_profile)

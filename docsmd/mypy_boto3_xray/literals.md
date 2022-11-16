@@ -178,6 +178,34 @@ InsightStateType = Literal[
     "CLOSED",
 ]
 ```
+## ListResourcePoliciesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_xray.literals import ListResourcePoliciesPaginatorName
+
+def get_value() -> ListResourcePoliciesPaginatorName:
+    return "list_resource_policies"
+```
+
+```python title="Definition"
+ListResourcePoliciesPaginatorName = Literal[
+    "list_resource_policies",
+]
+```
+## ListTagsForResourcePaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_xray.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
+```
+
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## SamplingStrategyNameType
 
 ```python title="Usage Example"
@@ -598,6 +626,8 @@ PaginatorName = Literal[
     "get_time_series_service_statistics",
     "get_trace_graph",
     "get_trace_summaries",
+    "list_resource_policies",
+    "list_tags_for_resource",
 ]
 ```
 ## RegionName
@@ -625,6 +655,7 @@ RegionName = Literal[
     "eu-central-2",
     "eu-north-1",
     "eu-south-1",
+    "eu-south-2",
     "eu-west-1",
     "eu-west-2",
     "eu-west-3",

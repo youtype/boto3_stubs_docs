@@ -315,7 +315,7 @@ parent.delete_protocols_list(**kwargs)
 
 ### delete\_resource\_set
 
-Deletes the specified  ResourceSet .
+Deletes the specified  ResourceSet.
 
 Type annotations and code completion for `#!python boto3.client("fms").delete_resource_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_resource_set)

@@ -998,7 +998,7 @@ parent.get_celebrity_info(**kwargs)
 ### get\_celebrity\_recognition
 
 Gets the celebrity recognition results for a Amazon Rekognition Video analysis
-started by  StartCelebrityRecognition .
+started by  StartCelebrityRecognition.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").get_celebrity_recognition` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
@@ -1066,7 +1066,7 @@ parent.get_content_moderation(**kwargs)
 ### get\_face\_detection
 
 Gets face detection results for a Amazon Rekognition Video analysis started by
-StartFaceDetection .
+StartFaceDetection.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").get_face_detection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
@@ -1132,7 +1132,7 @@ parent.get_face_search(**kwargs)
 ### get\_label\_detection
 
 Gets the label detection results of a Amazon Rekognition Video analysis started
-by  StartLabelDetection .
+by  StartLabelDetection.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").get_label_detection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
@@ -1166,7 +1166,7 @@ parent.get_label_detection(**kwargs)
 ### get\_person\_tracking
 
 Gets the path tracking results of a Amazon Rekognition Video analysis started by
-StartPersonTracking .
+StartPersonTracking.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").get_person_tracking` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
@@ -1200,7 +1200,7 @@ parent.get_person_tracking(**kwargs)
 ### get\_segment\_detection
 
 Gets the segment detection results of a Amazon Rekognition Video analysis
-started by  StartSegmentDetection .
+started by  StartSegmentDetection.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").get_segment_detection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
@@ -1232,7 +1232,7 @@ parent.get_segment_detection(**kwargs)
 ### get\_text\_detection
 
 Gets the text detection results of a Amazon Rekognition Video analysis started
-by  StartTextDetection .
+by  StartTextDetection.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").get_text_detection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
@@ -1460,7 +1460,7 @@ parent.list_project_policies(**kwargs)
 ### list\_stream\_processors
 
 Gets a list of stream processors that you have created with
-CreateStreamProcessor .
+CreateStreamProcessor.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").list_stream_processors` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
@@ -2038,7 +2038,7 @@ parent.stop_project_version(**kwargs)
 
 ### stop\_stream\_processor
 
-Stops a running stream processor that was created by  CreateStreamProcessor .
+Stops a running stream processor that was created by  CreateStreamProcessor.
 
 Type annotations and code completion for `#!python boto3.client("rekognition").stop_stream_processor` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)

@@ -115,6 +115,7 @@ except (
     client.ItemContentMismatchException,
     client.ItemSizeLimitExceededException,
     client.MaxDocumentSizeExceeded,
+    client.OpsItemAccessDeniedException,
     client.OpsItemAlreadyExistsException,
     client.OpsItemInvalidParameterException,
     client.OpsItemLimitExceededException,
@@ -142,6 +143,9 @@ except (
     client.ResourceDataSyncNotFoundException,
     client.ResourceInUseException,
     client.ResourceLimitExceededException,
+    client.ResourcePolicyConflictException,
+    client.ResourcePolicyInvalidParameterException,
+    client.ResourcePolicyLimitExceededException,
     client.ServiceSettingNotFound,
     client.StatusUnchanged,
     client.SubTypeCountLimitExceededException,
@@ -572,6 +576,7 @@ def create_ops_item(
     ActualEndTime: Union[datetime, str] = ...,
     PlannedStartTime: Union[datetime, str] = ...,
     PlannedEndTime: Union[datetime, str] = ...,
+    AccountId: str = ...,
 ) -> CreateOpsItemResponseTypeDef:  # (5)
     ...
 ```
@@ -1008,6 +1013,38 @@ parent.delete_resource_data_sync(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteResourceDataSyncRequestRequestTypeDef](./type_defs.md#deleteresourcedatasyncrequestrequesttypedef) 
+
+### delete\_resource\_policy
+
+Deletes a Systems Manager resource policy.
+
+Type annotations and code completion for `#!python boto3.client("ssm").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.delete_resource_policy)
+
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    ResourceArn: str,
+    PolicyId: str,
+    PolicyHash: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "PolicyId": ...,
+    "PolicyHash": ...,
+}
+
+parent.delete_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
 
 ### deregister\_managed\_instance
 
@@ -2702,6 +2739,7 @@ def get_ops_item(
     self,
     *,
     OpsItemId: str,
+    OpsItemArn: str = ...,
 ) -> GetOpsItemResponseTypeDef:  # (1)
     ...
 ```
@@ -2975,6 +3013,37 @@ parent.get_patch_baseline_for_patch_group(**kwargs)
 ```
 
 1. See [:material-code-braces: GetPatchBaselineForPatchGroupRequestRequestTypeDef](./type_defs.md#getpatchbaselineforpatchgrouprequestrequesttypedef) 
+
+### get\_resource\_policies
+
+Returns an array of the `Policy` object.
+
+Type annotations and code completion for `#!python boto3.client("ssm").get_resource_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.get_resource_policies)
+
+```python title="Method definition"
+def get_resource_policies(
+    self,
+    *,
+    ResourceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetResourcePoliciesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourcePoliciesRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.get_resource_policies(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourcePoliciesRequestRequestTypeDef](./type_defs.md#getresourcepoliciesrequestrequesttypedef) 
 
 ### get\_service\_setting
 
@@ -3722,6 +3791,39 @@ parent.put_parameter(**kwargs)
 ```
 
 1. See [:material-code-braces: PutParameterRequestRequestTypeDef](./type_defs.md#putparameterrequestrequesttypedef) 
+
+### put\_resource\_policy
+
+Creates or updates a Systems Manager resource policy.
+
+Type annotations and code completion for `#!python boto3.client("ssm").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.put_resource_policy)
+
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    ResourceArn: str,
+    Policy: str,
+    PolicyId: str = ...,
+    PolicyHash: str = ...,
+) -> PutResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Policy": ...,
+}
+
+parent.put_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
 ### register\_default\_patch\_baseline
 
@@ -4670,6 +4772,7 @@ def update_ops_item(
     ActualEndTime: Union[datetime, str] = ...,
     PlannedStartTime: Union[datetime, str] = ...,
     PlannedEndTime: Union[datetime, str] = ...,
+    OpsItemArn: str = ...,
 ) -> Dict[str, Any]:
     ...
 ```
@@ -4870,6 +4973,7 @@ Type annotations and code completion for `#!python boto3.client("ssm").get_pagin
 - `client.get_paginator("get_ops_summary")` -> [GetOpsSummaryPaginator](./paginators.md#getopssummarypaginator)
 - `client.get_paginator("get_parameter_history")` -> [GetParameterHistoryPaginator](./paginators.md#getparameterhistorypaginator)
 - `client.get_paginator("get_parameters_by_path")` -> [GetParametersByPathPaginator](./paginators.md#getparametersbypathpaginator)
+- `client.get_paginator("get_resource_policies")` -> [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
 - `client.get_paginator("list_association_versions")` -> [ListAssociationVersionsPaginator](./paginators.md#listassociationversionspaginator)
 - `client.get_paginator("list_associations")` -> [ListAssociationsPaginator](./paginators.md#listassociationspaginator)
 - `client.get_paginator("list_command_invocations")` -> [ListCommandInvocationsPaginator](./paginators.md#listcommandinvocationspaginator)

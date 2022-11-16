@@ -19,7 +19,12 @@ def get_value() -> AttributeNameType:
 ```python title="Definition"
 AttributeNameType = Literal[
     "DIAGNOSIS",
+    "FUTURE",
+    "HYPOTHETICAL",
+    "LOW_CONFIDENCE",
     "NEGATION",
+    "PAST_HISTORY",
+    "PERTAINS_TO_FAMILY",
     "SIGN",
     "SYMPTOM",
 ]
@@ -38,6 +43,9 @@ EntitySubTypeType = Literal[
     "ACUITY",
     "ADDRESS",
     "AGE",
+    "ALCOHOL_CONSUMPTION",
+    "ALLERGIES",
+    "AMOUNT",
     "BRAND_NAME",
     "CONTACT_POINT",
     "DATE",
@@ -48,6 +56,7 @@ EntitySubTypeType = Literal[
     "EMAIL",
     "FORM",
     "FREQUENCY",
+    "GENDER",
     "GENERIC_NAME",
     "ID",
     "IDENTIFIER",
@@ -57,7 +66,9 @@ EntitySubTypeType = Literal[
     "PROFESSION",
     "QUALITY",
     "QUANTITY",
+    "RACE_ETHNICITY",
     "RATE",
+    "REC_DRUG_USE",
     "ROUTE_OR_MODE",
     "STRENGTH",
     "SYSTEM_ORGAN_SITE",
@@ -71,6 +82,7 @@ EntitySubTypeType = Literal[
     "TIME_TO_PROCEDURE_NAME",
     "TIME_TO_TEST_NAME",
     "TIME_TO_TREATMENT_NAME",
+    "TOBACCO_USE",
     "TREATMENT_NAME",
     "URL",
 ]
@@ -87,6 +99,7 @@ def get_value() -> EntityTypeType:
 ```python title="Definition"
 EntityTypeType = Literal[
     "ANATOMY",
+    "BEHAVIORAL_ENVIRONMENTAL_SOCIAL",
     "MEDICAL_CONDITION",
     "MEDICATION",
     "PROTECTED_HEALTH_INFORMATION",
@@ -170,7 +183,10 @@ def get_value() -> ICD10CMTraitNameType:
 ```python title="Definition"
 ICD10CMTraitNameType = Literal[
     "DIAGNOSIS",
+    "HYPOTHETICAL",
+    "LOW_CONFIDENCE",
     "NEGATION",
+    "PERTAINS_TO_FAMILY",
     "SIGN",
     "SYMPTOM",
 ]
@@ -222,6 +238,7 @@ def get_value() -> RelationshipTypeType:
 RelationshipTypeType = Literal[
     "ACUITY",
     "ADMINISTERED_VIA",
+    "AMOUNT",
     "DIRECTION",
     "DOSAGE",
     "DURATION",
@@ -387,7 +404,12 @@ def get_value() -> SNOMEDCTTraitNameType:
 ```python title="Definition"
 SNOMEDCTTraitNameType = Literal[
     "DIAGNOSIS",
+    "FUTURE",
+    "HYPOTHETICAL",
+    "LOW_CONFIDENCE",
     "NEGATION",
+    "PAST_HISTORY",
+    "PERTAINS_TO_FAMILY",
     "SIGN",
     "SYMPTOM",
 ]
