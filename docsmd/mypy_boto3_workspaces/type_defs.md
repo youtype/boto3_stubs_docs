@@ -255,6 +255,26 @@ class CreateConnectClientAddInRequestRequestTypeDef(TypedDict):
     URL: str,
 ```
 
+## PendingCreateStandbyWorkspacesRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import PendingCreateStandbyWorkspacesRequestTypeDef
+
+def get_value() -> PendingCreateStandbyWorkspacesRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class PendingCreateStandbyWorkspacesRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    DirectoryId: NotRequired[str],
+    State: NotRequired[WorkspaceStateType],  # (1)
+    WorkspaceId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: WorkspaceStateType](./literals.md#workspacestatetype) 
 ## RootStorageTypeDef
 
 ```python title="Usage Example"
@@ -1175,6 +1195,27 @@ class RebuildRequestTypeDef(TypedDict):
     WorkspaceId: str,
 ```
 
+## RelatedWorkspacePropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import RelatedWorkspacePropertiesTypeDef
+
+def get_value() -> RelatedWorkspacePropertiesTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class RelatedWorkspacePropertiesTypeDef(TypedDict):
+    WorkspaceId: NotRequired[str],
+    Region: NotRequired[str],
+    State: NotRequired[WorkspaceStateType],  # (1)
+    Type: NotRequired[StandbyWorkspaceRelationshipTypeType],  # (2)
+```
+
+1. See [:material-code-brackets: WorkspaceStateType](./literals.md#workspacestatetype) 
+2. See [:material-code-brackets: StandbyWorkspaceRelationshipTypeType](./literals.md#standbyworkspacerelationshiptypetype) 
 ## RestoreWorkspaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1948,6 +1989,27 @@ class RegisterWorkspaceDirectoryRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## StandbyWorkspaceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import StandbyWorkspaceTypeDef
+
+def get_value() -> StandbyWorkspaceTypeDef:
+    return {
+        "PrimaryWorkspaceId": ...,
+        "DirectoryId": ...,
+    }
+```
+
+```python title="Definition"
+class StandbyWorkspaceTypeDef(TypedDict):
+    PrimaryWorkspaceId: str,
+    DirectoryId: str,
+    VolumeEncryptionKey: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateWorkspaceBundleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2001,11 +2063,15 @@ class WorkspaceBundleTypeDef(TypedDict):
     ComputeType: NotRequired[ComputeTypeTypeDef],  # (3)
     LastUpdatedTime: NotRequired[datetime],
     CreationTime: NotRequired[datetime],
+    State: NotRequired[WorkspaceBundleStateType],  # (4)
+    BundleType: NotRequired[BundleTypeType],  # (5)
 ```
 
 1. See [:material-code-braces: RootStorageTypeDef](./type_defs.md#rootstoragetypedef) 
 2. See [:material-code-braces: UserStorageTypeDef](./type_defs.md#userstoragetypedef) 
 3. See [:material-code-braces: ComputeTypeTypeDef](./type_defs.md#computetypetypedef) 
+4. See [:material-code-brackets: WorkspaceBundleStateType](./literals.md#workspacebundlestatetype) 
+5. See [:material-code-brackets: BundleTypeType](./literals.md#bundletypetype) 
 ## CreateWorkspaceImageResultTypeDef
 
 ```python title="Usage Example"
@@ -2623,39 +2689,6 @@ class WorkspaceRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## WorkspaceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_workspaces.type_defs import WorkspaceTypeDef
-
-def get_value() -> WorkspaceTypeDef:
-    return {
-        "WorkspaceId": ...,
-    }
-```
-
-```python title="Definition"
-class WorkspaceTypeDef(TypedDict):
-    WorkspaceId: NotRequired[str],
-    DirectoryId: NotRequired[str],
-    UserName: NotRequired[str],
-    IpAddress: NotRequired[str],
-    State: NotRequired[WorkspaceStateType],  # (1)
-    BundleId: NotRequired[str],
-    SubnetId: NotRequired[str],
-    ErrorMessage: NotRequired[str],
-    ErrorCode: NotRequired[str],
-    ComputerName: NotRequired[str],
-    VolumeEncryptionKey: NotRequired[str],
-    UserVolumeEncryptionEnabled: NotRequired[bool],
-    RootVolumeEncryptionEnabled: NotRequired[bool],
-    WorkspaceProperties: NotRequired[WorkspacePropertiesTypeDef],  # (2)
-    ModificationStates: NotRequired[List[ModificationStateTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: WorkspaceStateType](./literals.md#workspacestatetype) 
-2. See [:material-code-braces: WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef) 
-3. See [:material-code-braces: ModificationStateTypeDef](./type_defs.md#modificationstatetypedef) 
 ## RebootWorkspacesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2690,6 +2723,41 @@ class RebuildWorkspacesRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef) 
+## WorkspaceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import WorkspaceTypeDef
+
+def get_value() -> WorkspaceTypeDef:
+    return {
+        "WorkspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class WorkspaceTypeDef(TypedDict):
+    WorkspaceId: NotRequired[str],
+    DirectoryId: NotRequired[str],
+    UserName: NotRequired[str],
+    IpAddress: NotRequired[str],
+    State: NotRequired[WorkspaceStateType],  # (1)
+    BundleId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ComputerName: NotRequired[str],
+    VolumeEncryptionKey: NotRequired[str],
+    UserVolumeEncryptionEnabled: NotRequired[bool],
+    RootVolumeEncryptionEnabled: NotRequired[bool],
+    WorkspaceProperties: NotRequired[WorkspacePropertiesTypeDef],  # (2)
+    ModificationStates: NotRequired[List[ModificationStateTypeDef]],  # (3)
+    RelatedWorkspaces: NotRequired[List[RelatedWorkspacePropertiesTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: WorkspaceStateType](./literals.md#workspacestatetype) 
+2. See [:material-code-braces: WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef) 
+3. See [:material-code-braces: ModificationStateTypeDef](./type_defs.md#modificationstatetypedef) 
+4. See [:material-code-braces: RelatedWorkspacePropertiesTypeDef](./type_defs.md#relatedworkspacepropertiestypedef) 
 ## StartWorkspacesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2835,6 +2903,44 @@ class DescribeConnectionAliasesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConnectionAliasTypeDef](./type_defs.md#connectionaliastypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStandbyWorkspacesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import CreateStandbyWorkspacesRequestRequestTypeDef
+
+def get_value() -> CreateStandbyWorkspacesRequestRequestTypeDef:
+    return {
+        "PrimaryRegion": ...,
+        "StandbyWorkspaces": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStandbyWorkspacesRequestRequestTypeDef(TypedDict):
+    PrimaryRegion: str,
+    StandbyWorkspaces: Sequence[StandbyWorkspaceTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StandbyWorkspaceTypeDef](./type_defs.md#standbyworkspacetypedef) 
+## FailedCreateStandbyWorkspacesRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import FailedCreateStandbyWorkspacesRequestTypeDef
+
+def get_value() -> FailedCreateStandbyWorkspacesRequestTypeDef:
+    return {
+        "StandbyWorkspaceRequest": ...,
+    }
+```
+
+```python title="Definition"
+class FailedCreateStandbyWorkspacesRequestTypeDef(TypedDict):
+    StandbyWorkspaceRequest: NotRequired[StandbyWorkspaceTypeDef],  # (1)
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
+
+1. See [:material-code-braces: StandbyWorkspaceTypeDef](./type_defs.md#standbyworkspacetypedef) 
 ## CreateWorkspaceBundleResultTypeDef
 
 ```python title="Usage Example"
@@ -2979,6 +3085,29 @@ class DescribeWorkspaceImagesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: WorkspaceImageTypeDef](./type_defs.md#workspaceimagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStandbyWorkspacesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.type_defs import CreateStandbyWorkspacesResultTypeDef
+
+def get_value() -> CreateStandbyWorkspacesResultTypeDef:
+    return {
+        "FailedStandbyRequests": ...,
+        "PendingStandbyRequests": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStandbyWorkspacesResultTypeDef(TypedDict):
+    FailedStandbyRequests: List[FailedCreateStandbyWorkspacesRequestTypeDef],  # (1)
+    PendingStandbyRequests: List[PendingCreateStandbyWorkspacesRequestTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: FailedCreateStandbyWorkspacesRequestTypeDef](./type_defs.md#failedcreatestandbyworkspacesrequesttypedef) 
+2. See [:material-code-braces: PendingCreateStandbyWorkspacesRequestTypeDef](./type_defs.md#pendingcreatestandbyworkspacesrequesttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkspacesResultTypeDef
 
 ```python title="Usage Example"

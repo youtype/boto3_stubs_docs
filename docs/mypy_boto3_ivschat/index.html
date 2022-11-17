@@ -37964,7 +37964,10 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <ul>
 <li><a href="literals/#chattokencapabilitytype">ChatTokenCapabilityType</a></li>
+<li><a href="literals/#createloggingconfigurationstatetype">CreateLoggingConfigurationStateType</a></li>
 <li><a href="literals/#fallbackresulttype">FallbackResultType</a></li>
+<li><a href="literals/#loggingconfigurationstatetype">LoggingConfigurationStateType</a></li>
+<li><a href="literals/#updateloggingconfigurationstatetype">UpdateLoggingConfigurationStateType</a></li>
 <li><a href="literals/#ivschatservicename">ivschatServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -37972,22 +37975,27 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ivschat.type_defs</span> <span class="kn">import</span> <span class="n">CreateChatTokenRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ivschat.type_defs</span> <span class="kn">import</span> <span class="n">CloudWatchLogsDestinationConfigurationTypeDef</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CreateChatTokenRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CloudWatchLogsDestinationConfigurationTypeDef</span><span class="p">:</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;roomIdentifier&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        <span class="s2">&quot;userId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="p">}</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;logGroupName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#cloudwatchlogsdestinationconfigurationtypedef">CloudWatchLogsDestinationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createchattokenrequestrequesttypedef">CreateChatTokenRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#messagereviewhandlertypedef">MessageReviewHandlerTypeDef</a></li>
+<li><a href="type_defs/#deleteloggingconfigurationrequestrequesttypedef">DeleteLoggingConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemessagerequestrequesttypedef">DeleteMessageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteroomrequestrequesttypedef">DeleteRoomRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#firehosedestinationconfigurationtypedef">FirehoseDestinationConfigurationTypeDef</a></li>
+<li><a href="type_defs/#s3destinationconfigurationtypedef">S3DestinationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#disconnectuserrequestrequesttypedef">DisconnectUserRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getloggingconfigurationrequestrequesttypedef">GetLoggingConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getroomrequestrequesttypedef">GetRoomRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listloggingconfigurationsrequestrequesttypedef">ListLoggingConfigurationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listroomsrequestrequesttypedef">ListRoomsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sendeventrequestrequesttypedef">SendEventRequestRequestTypeDef</a></li>
@@ -38004,7 +38012,15 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#roomsummarytypedef">RoomSummaryTypeDef</a></li>
 <li><a href="type_defs/#updateroomrequestrequesttypedef">UpdateRoomRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateroomresponsetypedef">UpdateRoomResponseTypeDef</a></li>
+<li><a href="type_defs/#destinationconfigurationtypedef">DestinationConfigurationTypeDef</a></li>
 <li><a href="type_defs/#listroomsresponsetypedef">ListRoomsResponseTypeDef</a></li>
+<li><a href="type_defs/#createloggingconfigurationrequestrequesttypedef">CreateLoggingConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createloggingconfigurationresponsetypedef">CreateLoggingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#getloggingconfigurationresponsetypedef">GetLoggingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#loggingconfigurationsummarytypedef">LoggingConfigurationSummaryTypeDef</a></li>
+<li><a href="type_defs/#updateloggingconfigurationrequestrequesttypedef">UpdateLoggingConfigurationRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updateloggingconfigurationresponsetypedef">UpdateLoggingConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#listloggingconfigurationsresponsetypedef">ListLoggingConfigurationsResponseTypeDef</a></li>
 </ul>
 
 

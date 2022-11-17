@@ -124,14 +124,15 @@ def get_value() -> ListApplicationsPaginatorName:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_servicecatalog_appregistry.type_defs import ApplicationSummaryTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import TagQueryConfigurationTypeDef
 
-def get_value() -> ApplicationSummaryTypeDef:
+def get_value() -> TagQueryConfigurationTypeDef:
     return {
-        "id": ...,
+        "tagKey": ...,
     }
 ```
 
+- [TagQueryConfigurationTypeDef](./type_defs.md#tagqueryconfigurationtypedef)
 - [ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)
 - [ApplicationTypeDef](./type_defs.md#applicationtypedef)
 - [AssociateAttributeGroupRequestRequestTypeDef](./type_defs.md#associateattributegrouprequestrequesttypedef)
@@ -154,21 +155,23 @@ def get_value() -> ApplicationSummaryTypeDef:
 - [ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef)
 - [ListAssociatedAttributeGroupsRequestRequestTypeDef](./type_defs.md#listassociatedattributegroupsrequestrequesttypedef)
 - [ListAssociatedResourcesRequestRequestTypeDef](./type_defs.md#listassociatedresourcesrequestrequesttypedef)
-- [ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef)
 - [ListAttributeGroupsForApplicationRequestRequestTypeDef](./type_defs.md#listattributegroupsforapplicationrequestrequesttypedef)
 - [ListAttributeGroupsRequestRequestTypeDef](./type_defs.md#listattributegroupsrequestrequesttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
 - [SyncResourceRequestRequestTypeDef](./type_defs.md#syncresourcerequestrequesttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef)
 - [UpdateAttributeGroupRequestRequestTypeDef](./type_defs.md#updateattributegrouprequestrequesttypedef)
+- [AppRegistryConfigurationTypeDef](./type_defs.md#appregistryconfigurationtypedef)
 - [AssociateAttributeGroupResponseTypeDef](./type_defs.md#associateattributegroupresponsetypedef)
 - [AssociateResourceResponseTypeDef](./type_defs.md#associateresourceresponsetypedef)
 - [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef)
 - [DeleteApplicationResponseTypeDef](./type_defs.md#deleteapplicationresponsetypedef)
 - [DisassociateAttributeGroupResponseTypeDef](./type_defs.md#disassociateattributegroupresponsetypedef)
 - [DisassociateResourceResponseTypeDef](./type_defs.md#disassociateresourceresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAttributeGroupResponseTypeDef](./type_defs.md#getattributegroupresponsetypedef)
 - [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)
 - [ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef)
@@ -187,8 +190,11 @@ def get_value() -> ApplicationSummaryTypeDef:
 - [ListAssociatedResourcesRequestListAssociatedResourcesPaginateTypeDef](./type_defs.md#listassociatedresourcesrequestlistassociatedresourcespaginatetypedef)
 - [ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef](./type_defs.md#listattributegroupsforapplicationrequestlistattributegroupsforapplicationpaginatetypedef)
 - [ListAttributeGroupsRequestListAttributeGroupsPaginateTypeDef](./type_defs.md#listattributegroupsrequestlistattributegroupspaginatetypedef)
-- [ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef)
+- [ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef)
+- [GetConfigurationResponseTypeDef](./type_defs.md#getconfigurationresponsetypedef)
+- [PutConfigurationRequestRequestTypeDef](./type_defs.md#putconfigurationrequestrequesttypedef)
 - [GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef)
 - [ResourceTypeDef](./type_defs.md#resourcetypedef)
+- [ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef)
 - [GetAssociatedResourceResponseTypeDef](./type_defs.md#getassociatedresourceresponsetypedef)
 

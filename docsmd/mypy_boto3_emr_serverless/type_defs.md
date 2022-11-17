@@ -35,9 +35,11 @@ class ApplicationSummaryTypeDef(TypedDict):
     updatedAt: datetime,
     name: NotRequired[str],
     stateDetails: NotRequired[str],
+    architecture: NotRequired[ArchitectureType],  # (2)
 ```
 
 1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## AutoStartConfigTypeDef
 
 ```python title="Usage Example"
@@ -803,6 +805,7 @@ class ApplicationTypeDef(TypedDict):
     autoStartConfiguration: NotRequired[AutoStartConfigTypeDef],  # (4)
     autoStopConfiguration: NotRequired[AutoStopConfigTypeDef],  # (5)
     networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (6)
+    architecture: NotRequired[ArchitectureType],  # (7)
 ```
 
 1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
@@ -811,6 +814,7 @@ class ApplicationTypeDef(TypedDict):
 4. See [:material-code-braces: AutoStartConfigTypeDef](./type_defs.md#autostartconfigtypedef) 
 5. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 6. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+7. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## CreateApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -836,6 +840,7 @@ class CreateApplicationRequestRequestTypeDef(TypedDict):
     autoStartConfiguration: NotRequired[AutoStartConfigTypeDef],  # (3)
     autoStopConfiguration: NotRequired[AutoStopConfigTypeDef],  # (4)
     networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (5)
+    architecture: NotRequired[ArchitectureType],  # (6)
 ```
 
 1. See [:material-code-braces: InitialCapacityConfigTypeDef](./type_defs.md#initialcapacityconfigtypedef) 
@@ -843,6 +848,7 @@ class CreateApplicationRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: AutoStartConfigTypeDef](./type_defs.md#autostartconfigtypedef) 
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## UpdateApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -864,6 +870,7 @@ class UpdateApplicationRequestRequestTypeDef(TypedDict):
     autoStartConfiguration: NotRequired[AutoStartConfigTypeDef],  # (3)
     autoStopConfiguration: NotRequired[AutoStopConfigTypeDef],  # (4)
     networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (5)
+    architecture: NotRequired[ArchitectureType],  # (6)
 ```
 
 1. See [:material-code-braces: InitialCapacityConfigTypeDef](./type_defs.md#initialcapacityconfigtypedef) 
@@ -871,6 +878,7 @@ class UpdateApplicationRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: AutoStartConfigTypeDef](./type_defs.md#autostartconfigtypedef) 
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## ConfigurationOverridesTypeDef
 
 ```python title="Usage Example"

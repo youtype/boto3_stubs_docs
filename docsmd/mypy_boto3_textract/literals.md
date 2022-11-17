@@ -26,6 +26,7 @@ BlockTypeType = Literal[
     "QUERY",
     "QUERY_RESULT",
     "SELECTION_ELEMENT",
+    "SIGNATURE",
     "TABLE",
     "TITLE",
     "WORD",
@@ -75,6 +76,7 @@ def get_value() -> FeatureTypeType:
 FeatureTypeType = Literal[
     "FORMS",
     "QUERIES",
+    "SIGNATURES",
     "TABLES",
 ]
 ```

@@ -57,11 +57,12 @@ GenderType = Literal[
 from mypy_boto3_polly.literals import LanguageCodeType
 
 def get_value() -> LanguageCodeType:
-    return "arb"
+    return "ar-AE"
 ```
 
 ```python title="Definition"
 LanguageCodeType = Literal[
+    "ar-AE",
     "arb",
     "ca-ES",
     "cmn-CN",
@@ -230,6 +231,7 @@ VoiceIdType = Literal[
     "Geraint",
     "Giorgio",
     "Gwyneth",
+    "Hala",
     "Hannah",
     "Hans",
     "Hiujin",
@@ -264,6 +266,7 @@ VoiceIdType = Literal[
     "Mizuki",
     "Naja",
     "Nicole",
+    "Ola",
     "Olivia",
     "Pedro",
     "Penelope",

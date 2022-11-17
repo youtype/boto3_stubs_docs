@@ -102,6 +102,7 @@ def get_value() -> BatchGetRumMetricDefinitionsPaginatorName:
 ```
 
 - [BatchGetRumMetricDefinitionsPaginatorName](./literals.md#batchgetrummetricdefinitionspaginatorname)
+- [CustomEventsStatusType](./literals.md#customeventsstatustype)
 - [GetAppMonitorDataPaginatorName](./literals.md#getappmonitordatapaginatorname)
 - [ListAppMonitorsPaginatorName](./literals.md#listappmonitorspaginatorname)
 - [ListRumMetricsDestinationsPaginatorName](./literals.md#listrummetricsdestinationspaginatorname)
@@ -133,6 +134,7 @@ def get_value() -> AppMonitorConfigurationTypeDef:
 - [AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef)
 - [AppMonitorDetailsTypeDef](./type_defs.md#appmonitordetailstypedef)
 - [AppMonitorSummaryTypeDef](./type_defs.md#appmonitorsummarytypedef)
+- [CustomEventsTypeDef](./type_defs.md#customeventstypedef)
 - [MetricDefinitionRequestTypeDef](./type_defs.md#metricdefinitionrequesttypedef)
 - [MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

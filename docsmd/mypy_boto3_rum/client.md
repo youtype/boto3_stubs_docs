@@ -210,14 +210,16 @@ def create_app_monitor(
     Domain: str,
     Name: str,
     AppMonitorConfiguration: AppMonitorConfigurationTypeDef = ...,  # (1)
+    CustomEvents: CustomEventsTypeDef = ...,  # (2)
     CwLogEnabled: bool = ...,
     Tags: Mapping[str, str] = ...,
-) -> CreateAppMonitorResponseTypeDef:  # (2)
+) -> CreateAppMonitorResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
-2. See [:material-code-braces: CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef) 
+2. See [:material-code-braces: CustomEventsTypeDef](./type_defs.md#customeventstypedef) 
+3. See [:material-code-braces: CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -616,6 +618,7 @@ def update_app_monitor(
     *,
     Name: str,
     AppMonitorConfiguration: AppMonitorConfigurationTypeDef = ...,  # (1)
+    CustomEvents: CustomEventsTypeDef = ...,  # (2)
     CwLogEnabled: bool = ...,
     Domain: str = ...,
 ) -> Dict[str, Any]:
@@ -623,6 +626,7 @@ def update_app_monitor(
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
+2. See [:material-code-braces: CustomEventsTypeDef](./type_defs.md#customeventstypedef) 
 
 
 ```python title="Usage example with kwargs"

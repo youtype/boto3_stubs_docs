@@ -89,8 +89,8 @@ def close(
 
 ### create\_chat\_token
 
-Creates an encrypted token that is used to establish an individual WebSocket
-connection to a room.
+Creates an encrypted token that is used by a chat participant to establish an
+individual WebSocket chat connection to a room.
 
 Type annotations and code completion for `#!python boto3.client("ivschat").create_chat_token` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivschat.html#ivschat.Client.create_chat_token)
@@ -123,6 +123,39 @@ parent.create_chat_token(**kwargs)
 
 1. See [:material-code-braces: CreateChatTokenRequestRequestTypeDef](./type_defs.md#createchattokenrequestrequesttypedef) 
 
+### create\_logging\_configuration
+
+Creates a logging configuration that allows clients to store and record sent
+messages.
+
+Type annotations and code completion for `#!python boto3.client("ivschat").create_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivschat.html#ivschat.Client.create_logging_configuration)
+
+```python title="Method definition"
+def create_logging_configuration(
+    self,
+    *,
+    destinationConfiguration: DestinationConfigurationTypeDef,  # (1)
+    name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateLoggingConfigurationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef) 
+2. See [:material-code-braces: CreateLoggingConfigurationResponseTypeDef](./type_defs.md#createloggingconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "destinationConfiguration": ...,
+}
+
+parent.create_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLoggingConfigurationRequestRequestTypeDef](./type_defs.md#createloggingconfigurationrequestrequesttypedef) 
+
 ### create\_room
 
 Creates a room that allows clients to connect and pass messages.
@@ -134,6 +167,7 @@ Type annotations and code completion for `#!python boto3.client("ivschat").creat
 def create_room(
     self,
     *,
+    loggingConfigurationIdentifiers: Sequence[str] = ...,
     maximumMessageLength: int = ...,
     maximumMessageRatePerSecond: int = ...,
     messageReviewHandler: MessageReviewHandlerTypeDef = ...,  # (1)
@@ -149,13 +183,42 @@ def create_room(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateRoomRequestRequestTypeDef = {  # (1)
-    "maximumMessageLength": ...,
+    "loggingConfigurationIdentifiers": ...,
 }
 
 parent.create_room(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef) 
+
+### delete\_logging\_configuration
+
+Deletes the specified logging configuration.
+
+Type annotations and code completion for `#!python boto3.client("ivschat").delete_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivschat.html#ivschat.Client.delete_logging_configuration)
+
+```python title="Method definition"
+def delete_logging_configuration(
+    self,
+    *,
+    identifier: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "identifier": ...,
+}
+
+parent.delete_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef) 
 
 ### delete\_message
 
@@ -270,6 +333,35 @@ def generate_presigned_url(
 ```
 
 
+### get\_logging\_configuration
+
+Gets the specified logging configuration.
+
+Type annotations and code completion for `#!python boto3.client("ivschat").get_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivschat.html#ivschat.Client.get_logging_configuration)
+
+```python title="Method definition"
+def get_logging_configuration(
+    self,
+    *,
+    identifier: str,
+) -> GetLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "identifier": ...,
+}
+
+parent.get_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: GetLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getloggingconfigurationrequestrequesttypedef) 
+
 ### get\_room
 
 Gets the specified room.
@@ -299,6 +391,37 @@ parent.get_room(**kwargs)
 
 1. See [:material-code-braces: GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef) 
 
+### list\_logging\_configurations
+
+Gets summary information about all your logging configurations in the AWS region
+where the API request is processed.
+
+Type annotations and code completion for `#!python boto3.client("ivschat").list_logging_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivschat.html#ivschat.Client.list_logging_configurations)
+
+```python title="Method definition"
+def list_logging_configurations(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListLoggingConfigurationsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLoggingConfigurationsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
+
+parent.list_logging_configurations(**kwargs)
+```
+
+1. See [:material-code-braces: ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef) 
+
 ### list\_rooms
 
 Gets summary information about all your rooms in the AWS region where the API
@@ -311,6 +434,7 @@ Type annotations and code completion for `#!python boto3.client("ivschat").list_
 def list_rooms(
     self,
     *,
+    loggingConfigurationIdentifier: str = ...,
     maxResults: int = ...,
     messageReviewHandlerUri: str = ...,
     name: str = ...,
@@ -324,7 +448,7 @@ def list_rooms(
 
 ```python title="Usage example with kwargs"
 kwargs: ListRoomsRequestRequestTypeDef = {  # (1)
-    "maxResults": ...,
+    "loggingConfigurationIdentifier": ...,
 }
 
 parent.list_rooms(**kwargs)
@@ -453,6 +577,38 @@ parent.untag_resource(**kwargs)
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
+### update\_logging\_configuration
+
+Updates a specified logging configuration.
+
+Type annotations and code completion for `#!python boto3.client("ivschat").update_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivschat.html#ivschat.Client.update_logging_configuration)
+
+```python title="Method definition"
+def update_logging_configuration(
+    self,
+    *,
+    identifier: str,
+    destinationConfiguration: DestinationConfigurationTypeDef = ...,  # (1)
+    name: str = ...,
+) -> UpdateLoggingConfigurationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef) 
+2. See [:material-code-braces: UpdateLoggingConfigurationResponseTypeDef](./type_defs.md#updateloggingconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "identifier": ...,
+}
+
+parent.update_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateLoggingConfigurationRequestRequestTypeDef](./type_defs.md#updateloggingconfigurationrequestrequesttypedef) 
+
 ### update\_room
 
 Updates a room’s configuration.
@@ -465,6 +621,7 @@ def update_room(
     self,
     *,
     identifier: str,
+    loggingConfigurationIdentifiers: Sequence[str] = ...,
     maximumMessageLength: int = ...,
     maximumMessageRatePerSecond: int = ...,
     messageReviewHandler: MessageReviewHandlerTypeDef = ...,  # (1)

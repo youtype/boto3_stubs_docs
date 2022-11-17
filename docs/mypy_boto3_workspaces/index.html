@@ -38000,6 +38000,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#accesspropertyvaluetype">AccessPropertyValueType</a></li>
 <li><a href="literals/#applicationtype">ApplicationType</a></li>
 <li><a href="literals/#associationstatustype">AssociationStatusType</a></li>
+<li><a href="literals/#bundletypetype">BundleTypeType</a></li>
 <li><a href="literals/#certificatebasedauthstatusenumtype">CertificateBasedAuthStatusEnumType</a></li>
 <li><a href="literals/#clientdevicetypetype">ClientDeviceTypeType</a></li>
 <li><a href="literals/#computetype">ComputeType</a></li>
@@ -38027,8 +38028,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#reconnectenumtype">ReconnectEnumType</a></li>
 <li><a href="literals/#runningmodetype">RunningModeType</a></li>
 <li><a href="literals/#samlstatusenumtype">SamlStatusEnumType</a></li>
+<li><a href="literals/#standbyworkspacerelationshiptypetype">StandbyWorkspaceRelationshipTypeType</a></li>
 <li><a href="literals/#targetworkspacestatetype">TargetWorkspaceStateType</a></li>
 <li><a href="literals/#tenancytype">TenancyType</a></li>
+<li><a href="literals/#workspacebundlestatetype">WorkspaceBundleStateType</a></li>
 <li><a href="literals/#workspacedirectorystatetype">WorkspaceDirectoryStateType</a></li>
 <li><a href="literals/#workspacedirectorytypetype">WorkspaceDirectoryTypeType</a></li>
 <li><a href="literals/#workspaceimageingestionprocesstype">WorkspaceImageIngestionProcessType</a></li>
@@ -38064,6 +38067,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#connectionaliaspermissiontypedef">ConnectionAliasPermissionTypeDef</a></li>
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#createconnectclientaddinrequestrequesttypedef">CreateConnectClientAddInRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#pendingcreatestandbyworkspacesrequesttypedef">PendingCreateStandbyWorkspacesRequestTypeDef</a></li>
 <li><a href="type_defs/#rootstoragetypedef">RootStorageTypeDef</a></li>
 <li><a href="type_defs/#userstoragetypedef">UserStorageTypeDef</a></li>
 <li><a href="type_defs/#operatingsystemtypedef">OperatingSystemTypeDef</a></li>
@@ -38114,6 +38118,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#modifyworkspacestaterequestrequesttypedef">ModifyWorkspaceStateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#rebootrequesttypedef">RebootRequestTypeDef</a></li>
 <li><a href="type_defs/#rebuildrequesttypedef">RebuildRequestTypeDef</a></li>
+<li><a href="type_defs/#relatedworkspacepropertiestypedef">RelatedWorkspacePropertiesTypeDef</a></li>
 <li><a href="type_defs/#restoreworkspacerequestrequesttypedef">RestoreWorkspaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#revokeiprulesrequestrequesttypedef">RevokeIpRulesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startrequesttypedef">StartRequestTypeDef</a></li>
@@ -38153,6 +38158,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describetagsresulttypedef">DescribeTagsResultTypeDef</a></li>
 <li><a href="type_defs/#importworkspaceimagerequestrequesttypedef">ImportWorkspaceImageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#registerworkspacedirectoryrequestrequesttypedef">RegisterWorkspaceDirectoryRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#standbyworkspacetypedef">StandbyWorkspaceTypeDef</a></li>
 <li><a href="type_defs/#createworkspacebundlerequestrequesttypedef">CreateWorkspaceBundleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#workspacebundletypedef">WorkspaceBundleTypeDef</a></li>
 <li><a href="type_defs/#createworkspaceimageresulttypedef">CreateWorkspaceImageResultTypeDef</a></li>
@@ -38182,9 +38188,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#modifyworkspacecreationpropertiesrequestrequesttypedef">ModifyWorkspaceCreationPropertiesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#modifyworkspacepropertiesrequestrequesttypedef">ModifyWorkspacePropertiesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#workspacerequesttypedef">WorkspaceRequestTypeDef</a></li>
-<li><a href="type_defs/#workspacetypedef">WorkspaceTypeDef</a></li>
 <li><a href="type_defs/#rebootworkspacesrequestrequesttypedef">RebootWorkspacesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#rebuildworkspacesrequestrequesttypedef">RebuildWorkspacesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#workspacetypedef">WorkspaceTypeDef</a></li>
 <li><a href="type_defs/#startworkspacesrequestrequesttypedef">StartWorkspacesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopworkspacesrequestrequesttypedef">StopWorkspacesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#terminateworkspacesrequestrequesttypedef">TerminateWorkspacesRequestRequestTypeDef</a></li>
@@ -38192,6 +38198,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeipgroupsresulttypedef">DescribeIpGroupsResultTypeDef</a></li>
 <li><a href="type_defs/#describeclientpropertiesresulttypedef">DescribeClientPropertiesResultTypeDef</a></li>
 <li><a href="type_defs/#describeconnectionaliasesresulttypedef">DescribeConnectionAliasesResultTypeDef</a></li>
+<li><a href="type_defs/#createstandbyworkspacesrequestrequesttypedef">CreateStandbyWorkspacesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#failedcreatestandbyworkspacesrequesttypedef">FailedCreateStandbyWorkspacesRequestTypeDef</a></li>
 <li><a href="type_defs/#createworkspacebundleresulttypedef">CreateWorkspaceBundleResultTypeDef</a></li>
 <li><a href="type_defs/#describeworkspacebundlesresulttypedef">DescribeWorkspaceBundlesResultTypeDef</a></li>
 <li><a href="type_defs/#describeworkspacedirectoriesresulttypedef">DescribeWorkspaceDirectoriesResultTypeDef</a></li>
@@ -38199,6 +38207,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#failedcreateworkspacerequesttypedef">FailedCreateWorkspaceRequestTypeDef</a></li>
 <li><a href="type_defs/#describeworkspacesresulttypedef">DescribeWorkspacesResultTypeDef</a></li>
 <li><a href="type_defs/#describeworkspaceimagesresulttypedef">DescribeWorkspaceImagesResultTypeDef</a></li>
+<li><a href="type_defs/#createstandbyworkspacesresulttypedef">CreateStandbyWorkspacesResultTypeDef</a></li>
 <li><a href="type_defs/#createworkspacesresulttypedef">CreateWorkspacesResultTypeDef</a></li>
 </ul>
 

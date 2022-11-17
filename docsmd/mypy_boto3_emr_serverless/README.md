@@ -100,6 +100,7 @@ def get_value() -> ApplicationStateType:
 ```
 
 - [ApplicationStateType](./literals.md#applicationstatetype)
+- [ArchitectureType](./literals.md#architecturetype)
 - [JobRunStateType](./literals.md#jobrunstatetype)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 - [ListJobRunsPaginatorName](./literals.md#listjobrunspaginatorname)

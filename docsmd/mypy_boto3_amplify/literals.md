@@ -133,6 +133,7 @@ def get_value() -> PlatformType:
 ```python title="Definition"
 PlatformType = Literal[
     "WEB",
+    "WEB_COMPUTE",
     "WEB_DYNAMIC",
 ]
 ```

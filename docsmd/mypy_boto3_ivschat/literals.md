@@ -23,6 +23,20 @@ ChatTokenCapabilityType = Literal[
     "SEND_MESSAGE",
 ]
 ```
+## CreateLoggingConfigurationStateType
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.literals import CreateLoggingConfigurationStateType
+
+def get_value() -> CreateLoggingConfigurationStateType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+CreateLoggingConfigurationStateType = Literal[
+    "ACTIVE",
+]
+```
 ## FallbackResultType
 
 ```python title="Usage Example"
@@ -36,6 +50,40 @@ def get_value() -> FallbackResultType:
 FallbackResultType = Literal[
     "ALLOW",
     "DENY",
+]
+```
+## LoggingConfigurationStateType
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.literals import LoggingConfigurationStateType
+
+def get_value() -> LoggingConfigurationStateType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+LoggingConfigurationStateType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATING",
+    "DELETE_FAILED",
+    "DELETING",
+    "UPDATE_FAILED",
+    "UPDATING",
+]
+```
+## UpdateLoggingConfigurationStateType
+
+```python title="Usage Example"
+from mypy_boto3_ivschat.literals import UpdateLoggingConfigurationStateType
+
+def get_value() -> UpdateLoggingConfigurationStateType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+UpdateLoggingConfigurationStateType = Literal[
+    "ACTIVE",
 ]
 ```
 ## ivschatServiceName

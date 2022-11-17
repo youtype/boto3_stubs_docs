@@ -341,6 +341,7 @@ def create_dataset_import_job(
     roleArn: str,
     tags: Sequence[TagTypeDef] = ...,  # (2)
     importMode: ImportModeType = ...,  # (3)
+    publishAttributionMetricsToS3: bool = ...,
 ) -> CreateDatasetImportJobResponseTypeDef:  # (4)
     ...
 ```
@@ -434,6 +435,43 @@ parent.create_filter(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef) 
+
+### create\_metric\_attribution
+
+Creates a metric attribution.
+
+Type annotations and code completion for `#!python boto3.client("personalize").create_metric_attribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_metric_attribution)
+
+```python title="Method definition"
+def create_metric_attribution(
+    self,
+    *,
+    name: str,
+    datasetGroupArn: str,
+    metrics: Sequence[MetricAttributeTypeDef],  # (1)
+    metricsOutputConfig: MetricAttributionOutputTypeDef,  # (2)
+) -> CreateMetricAttributionResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: MetricAttributeTypeDef](./type_defs.md#metricattributetypedef) 
+2. See [:material-code-braces: MetricAttributionOutputTypeDef](./type_defs.md#metricattributionoutputtypedef) 
+3. See [:material-code-braces: CreateMetricAttributionResponseTypeDef](./type_defs.md#createmetricattributionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateMetricAttributionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "datasetGroupArn": ...,
+    "metrics": ...,
+    "metricsOutputConfig": ...,
+}
+
+parent.create_metric_attribution(**kwargs)
+```
+
+1. See [:material-code-braces: CreateMetricAttributionRequestRequestTypeDef](./type_defs.md#createmetricattributionrequestrequesttypedef) 
 
 ### create\_recommender
 
@@ -557,6 +595,7 @@ def create_solution_version(
     self,
     *,
     solutionArn: str,
+    name: str = ...,
     trainingMode: TrainingModeType = ...,  # (1)
     tags: Sequence[TagTypeDef] = ...,  # (2)
 ) -> CreateSolutionVersionResponseTypeDef:  # (3)
@@ -722,6 +761,35 @@ parent.delete_filter(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef) 
+
+### delete\_metric\_attribution
+
+Deletes a metric attribution.
+
+Type annotations and code completion for `#!python boto3.client("personalize").delete_metric_attribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_metric_attribution)
+
+```python title="Method definition"
+def delete_metric_attribution(
+    self,
+    *,
+    metricAttributionArn: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteMetricAttributionRequestRequestTypeDef = {  # (1)
+    "metricAttributionArn": ...,
+}
+
+parent.delete_metric_attribution(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteMetricAttributionRequestRequestTypeDef](./type_defs.md#deletemetricattributionrequestrequesttypedef) 
 
 ### delete\_recommender
 
@@ -1136,6 +1204,35 @@ parent.describe_filter(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeFilterRequestRequestTypeDef](./type_defs.md#describefilterrequestrequesttypedef) 
+
+### describe\_metric\_attribution
+
+Describes a metric attribution.
+
+Type annotations and code completion for `#!python boto3.client("personalize").describe_metric_attribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_metric_attribution)
+
+```python title="Method definition"
+def describe_metric_attribution(
+    self,
+    *,
+    metricAttributionArn: str,
+) -> DescribeMetricAttributionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeMetricAttributionResponseTypeDef](./type_defs.md#describemetricattributionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMetricAttributionRequestRequestTypeDef = {  # (1)
+    "metricAttributionArn": ...,
+}
+
+parent.describe_metric_attribution(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMetricAttributionRequestRequestTypeDef](./type_defs.md#describemetricattributionrequestrequesttypedef) 
 
 ### describe\_recipe
 
@@ -1610,6 +1707,68 @@ parent.list_filters(**kwargs)
 
 1. See [:material-code-braces: ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef) 
 
+### list\_metric\_attribution\_metrics
+
+Lists the metrics for the metric attribution.
+
+Type annotations and code completion for `#!python boto3.client("personalize").list_metric_attribution_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_metric_attribution_metrics)
+
+```python title="Method definition"
+def list_metric_attribution_metrics(
+    self,
+    *,
+    metricAttributionArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListMetricAttributionMetricsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListMetricAttributionMetricsResponseTypeDef](./type_defs.md#listmetricattributionmetricsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMetricAttributionMetricsRequestRequestTypeDef = {  # (1)
+    "metricAttributionArn": ...,
+}
+
+parent.list_metric_attribution_metrics(**kwargs)
+```
+
+1. See [:material-code-braces: ListMetricAttributionMetricsRequestRequestTypeDef](./type_defs.md#listmetricattributionmetricsrequestrequesttypedef) 
+
+### list\_metric\_attributions
+
+Lists metric attributions.
+
+Type annotations and code completion for `#!python boto3.client("personalize").list_metric_attributions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_metric_attributions)
+
+```python title="Method definition"
+def list_metric_attributions(
+    self,
+    *,
+    datasetGroupArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListMetricAttributionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListMetricAttributionsResponseTypeDef](./type_defs.md#listmetricattributionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMetricAttributionsRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
+
+parent.list_metric_attributions(**kwargs)
+```
+
+1. See [:material-code-braces: ListMetricAttributionsRequestRequestTypeDef](./type_defs.md#listmetricattributionsrequestrequesttypedef) 
+
 ### list\_recipes
 
 Returns a list of available recipes.
@@ -1981,6 +2140,40 @@ parent.update_campaign(**kwargs)
 
 1. See [:material-code-braces: UpdateCampaignRequestRequestTypeDef](./type_defs.md#updatecampaignrequestrequesttypedef) 
 
+### update\_metric\_attribution
+
+Updates a metric attribution.
+
+Type annotations and code completion for `#!python boto3.client("personalize").update_metric_attribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_metric_attribution)
+
+```python title="Method definition"
+def update_metric_attribution(
+    self,
+    *,
+    addMetrics: Sequence[MetricAttributeTypeDef] = ...,  # (1)
+    removeMetrics: Sequence[str] = ...,
+    metricsOutputConfig: MetricAttributionOutputTypeDef = ...,  # (2)
+    metricAttributionArn: str = ...,
+) -> UpdateMetricAttributionResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: MetricAttributeTypeDef](./type_defs.md#metricattributetypedef) 
+2. See [:material-code-braces: MetricAttributionOutputTypeDef](./type_defs.md#metricattributionoutputtypedef) 
+3. See [:material-code-braces: UpdateMetricAttributionResponseTypeDef](./type_defs.md#updatemetricattributionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateMetricAttributionRequestRequestTypeDef = {  # (1)
+    "addMetrics": ...,
+}
+
+parent.update_metric_attribution(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateMetricAttributionRequestRequestTypeDef](./type_defs.md#updatemetricattributionrequestrequesttypedef) 
+
 ### update\_recommender
 
 Updates the recommender to modify the recommender configuration.
@@ -2028,6 +2221,8 @@ Type annotations and code completion for `#!python boto3.client("personalize").g
 - `client.get_paginator("list_datasets")` -> [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
 - `client.get_paginator("list_event_trackers")` -> [ListEventTrackersPaginator](./paginators.md#listeventtrackerspaginator)
 - `client.get_paginator("list_filters")` -> [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+- `client.get_paginator("list_metric_attribution_metrics")` -> [ListMetricAttributionMetricsPaginator](./paginators.md#listmetricattributionmetricspaginator)
+- `client.get_paginator("list_metric_attributions")` -> [ListMetricAttributionsPaginator](./paginators.md#listmetricattributionspaginator)
 - `client.get_paginator("list_recipes")` -> [ListRecipesPaginator](./paginators.md#listrecipespaginator)
 - `client.get_paginator("list_recommenders")` -> [ListRecommendersPaginator](./paginators.md#listrecommenderspaginator)
 - `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)

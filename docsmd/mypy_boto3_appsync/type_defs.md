@@ -126,6 +126,25 @@ class ApiKeyTypeDef(TypedDict):
     deletes: NotRequired[int],
 ```
 
+## AppSyncRuntimeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import AppSyncRuntimeTypeDef
+
+def get_value() -> AppSyncRuntimeTypeDef:
+    return {
+        "name": ...,
+        "runtimeVersion": ...,
+    }
+```
+
+```python title="Definition"
+class AppSyncRuntimeTypeDef(TypedDict):
+    name: RuntimeNameType,  # (1)
+    runtimeVersion: str,
+```
+
+1. See [:material-code-brackets: RuntimeNameType](./literals.md#runtimenametype) 
 ## AssociateApiRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -200,6 +219,24 @@ def get_value() -> CachingConfigTypeDef:
 class CachingConfigTypeDef(TypedDict):
     ttl: int,
     cachingKeys: NotRequired[Sequence[str]],
+```
+
+## CodeErrorLocationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import CodeErrorLocationTypeDef
+
+def get_value() -> CodeErrorLocationTypeDef:
+    return {
+        "line": ...,
+    }
+```
+
+```python title="Definition"
+class CodeErrorLocationTypeDef(TypedDict):
+    line: NotRequired[int],
+    column: NotRequired[int],
+    span: NotRequired[int],
 ```
 
 ## CreateApiCacheRequestRequestTypeDef
@@ -1217,6 +1254,28 @@ class AdditionalAuthenticationProviderTypeDef(TypedDict):
 2. See [:material-code-braces: OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef) 
 3. See [:material-code-braces: CognitoUserPoolConfigTypeDef](./type_defs.md#cognitouserpoolconfigtypedef) 
 4. See [:material-code-braces: LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef) 
+## EvaluateCodeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import EvaluateCodeRequestRequestTypeDef
+
+def get_value() -> EvaluateCodeRequestRequestTypeDef:
+    return {
+        "runtime": ...,
+        "code": ...,
+        "context": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluateCodeRequestRequestTypeDef(TypedDict):
+    runtime: AppSyncRuntimeTypeDef,  # (1)
+    code: str,
+    context: str,
+    function: NotRequired[str],
+```
+
+1. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
 ## AssociateApiResponseTypeDef
 
 ```python title="Usage Example"
@@ -1478,6 +1537,25 @@ class AuthorizationConfigTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AuthorizationTypeType](./literals.md#authorizationtypetype) 
 2. See [:material-code-braces: AwsIamConfigTypeDef](./type_defs.md#awsiamconfigtypedef) 
+## CodeErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import CodeErrorTypeDef
+
+def get_value() -> CodeErrorTypeDef:
+    return {
+        "errorType": ...,
+    }
+```
+
+```python title="Definition"
+class CodeErrorTypeDef(TypedDict):
+    errorType: NotRequired[str],
+    value: NotRequired[str],
+    location: NotRequired[CodeErrorLocationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CodeErrorLocationTypeDef](./type_defs.md#codeerrorlocationtypedef) 
 ## CreateDomainNameResponseTypeDef
 
 ```python title="Usage Example"
@@ -1673,6 +1751,7 @@ def get_value() -> EvaluateMappingTemplateResponseTypeDef:
     return {
         "evaluationResult": ...,
         "error": ...,
+        "logs": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1681,6 +1760,7 @@ def get_value() -> EvaluateMappingTemplateResponseTypeDef:
 class EvaluateMappingTemplateResponseTypeDef(TypedDict):
     evaluationResult: str,
     error: ErrorDetailTypeDef,  # (1)
+    logs: List[str],
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -1972,6 +2052,24 @@ class HttpDataSourceConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AuthorizationConfigTypeDef](./type_defs.md#authorizationconfigtypedef) 
+## EvaluateCodeErrorDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import EvaluateCodeErrorDetailTypeDef
+
+def get_value() -> EvaluateCodeErrorDetailTypeDef:
+    return {
+        "message": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluateCodeErrorDetailTypeDef(TypedDict):
+    message: NotRequired[str],
+    codeErrors: NotRequired[List[CodeErrorTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: CodeErrorTypeDef](./type_defs.md#codeerrortypedef) 
 ## CreateFunctionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1982,7 +2080,6 @@ def get_value() -> CreateFunctionRequestRequestTypeDef:
         "apiId": ...,
         "name": ...,
         "dataSourceName": ...,
-        "functionVersion": ...,
     }
 ```
 
@@ -1991,15 +2088,18 @@ class CreateFunctionRequestRequestTypeDef(TypedDict):
     apiId: str,
     name: str,
     dataSourceName: str,
-    functionVersion: str,
     description: NotRequired[str],
     requestMappingTemplate: NotRequired[str],
     responseMappingTemplate: NotRequired[str],
+    functionVersion: NotRequired[str],
     syncConfig: NotRequired[SyncConfigTypeDef],  # (1)
     maxBatchSize: NotRequired[int],
+    runtime: NotRequired[AppSyncRuntimeTypeDef],  # (2)
+    code: NotRequired[str],
 ```
 
 1. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
+2. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
 ## CreateResolverRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2026,12 +2126,15 @@ class CreateResolverRequestRequestTypeDef(TypedDict):
     syncConfig: NotRequired[SyncConfigTypeDef],  # (3)
     cachingConfig: NotRequired[CachingConfigTypeDef],  # (4)
     maxBatchSize: NotRequired[int],
+    runtime: NotRequired[AppSyncRuntimeTypeDef],  # (5)
+    code: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ResolverKindType](./literals.md#resolverkindtype) 
 2. See [:material-code-braces: PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef) 
 3. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
 4. See [:material-code-braces: CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef) 
+5. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
 ## FunctionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2055,9 +2158,12 @@ class FunctionConfigurationTypeDef(TypedDict):
     functionVersion: NotRequired[str],
     syncConfig: NotRequired[SyncConfigTypeDef],  # (1)
     maxBatchSize: NotRequired[int],
+    runtime: NotRequired[AppSyncRuntimeTypeDef],  # (2)
+    code: NotRequired[str],
 ```
 
 1. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
+2. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
 ## ResolverTypeDef
 
 ```python title="Usage Example"
@@ -2082,12 +2188,15 @@ class ResolverTypeDef(TypedDict):
     syncConfig: NotRequired[SyncConfigTypeDef],  # (3)
     cachingConfig: NotRequired[CachingConfigTypeDef],  # (4)
     maxBatchSize: NotRequired[int],
+    runtime: NotRequired[AppSyncRuntimeTypeDef],  # (5)
+    code: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ResolverKindType](./literals.md#resolverkindtype) 
 2. See [:material-code-braces: PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef) 
 3. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
 4. See [:material-code-braces: CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef) 
+5. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
 ## UpdateFunctionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2099,7 +2208,6 @@ def get_value() -> UpdateFunctionRequestRequestTypeDef:
         "name": ...,
         "functionId": ...,
         "dataSourceName": ...,
-        "functionVersion": ...,
     }
 ```
 
@@ -2109,15 +2217,18 @@ class UpdateFunctionRequestRequestTypeDef(TypedDict):
     name: str,
     functionId: str,
     dataSourceName: str,
-    functionVersion: str,
     description: NotRequired[str],
     requestMappingTemplate: NotRequired[str],
     responseMappingTemplate: NotRequired[str],
+    functionVersion: NotRequired[str],
     syncConfig: NotRequired[SyncConfigTypeDef],  # (1)
     maxBatchSize: NotRequired[int],
+    runtime: NotRequired[AppSyncRuntimeTypeDef],  # (2)
+    code: NotRequired[str],
 ```
 
 1. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
+2. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
 ## UpdateResolverRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2144,12 +2255,15 @@ class UpdateResolverRequestRequestTypeDef(TypedDict):
     syncConfig: NotRequired[SyncConfigTypeDef],  # (3)
     cachingConfig: NotRequired[CachingConfigTypeDef],  # (4)
     maxBatchSize: NotRequired[int],
+    runtime: NotRequired[AppSyncRuntimeTypeDef],  # (5)
+    code: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ResolverKindType](./literals.md#resolverkindtype) 
 2. See [:material-code-braces: PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef) 
 3. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
 4. See [:material-code-braces: CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef) 
+5. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
 ## CreateGraphqlApiResponseTypeDef
 
 ```python title="Usage Example"
@@ -2335,6 +2449,30 @@ class UpdateDataSourceRequestRequestTypeDef(TypedDict):
 5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
 6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
 7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
+## EvaluateCodeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import EvaluateCodeResponseTypeDef
+
+def get_value() -> EvaluateCodeResponseTypeDef:
+    return {
+        "evaluationResult": ...,
+        "error": ...,
+        "logs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluateCodeResponseTypeDef(TypedDict):
+    evaluationResult: str,
+    error: EvaluateCodeErrorDetailTypeDef,  # (1)
+    logs: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EvaluateCodeErrorDetailTypeDef](./type_defs.md#evaluatecodeerrordetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFunctionResponseTypeDef
 
 ```python title="Usage Example"

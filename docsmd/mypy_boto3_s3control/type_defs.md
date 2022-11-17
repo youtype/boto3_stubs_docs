@@ -55,6 +55,54 @@ class ActivityMetricsTypeDef(TypedDict):
     IsEnabled: NotRequired[bool],
 ```
 
+## AdvancedCostOptimizationMetricsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import AdvancedCostOptimizationMetricsTypeDef
+
+def get_value() -> AdvancedCostOptimizationMetricsTypeDef:
+    return {
+        "IsEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class AdvancedCostOptimizationMetricsTypeDef(TypedDict):
+    IsEnabled: NotRequired[bool],
+```
+
+## AdvancedDataProtectionMetricsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import AdvancedDataProtectionMetricsTypeDef
+
+def get_value() -> AdvancedDataProtectionMetricsTypeDef:
+    return {
+        "IsEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class AdvancedDataProtectionMetricsTypeDef(TypedDict):
+    IsEnabled: NotRequired[bool],
+```
+
+## DetailedStatusCodesMetricsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import DetailedStatusCodesMetricsTypeDef
+
+def get_value() -> DetailedStatusCodesMetricsTypeDef:
+    return {
+        "IsEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class DetailedStatusCodesMetricsTypeDef(TypedDict):
+    IsEnabled: NotRequired[bool],
+```
+
 ## AsyncErrorDetailsTypeDef
 
 ```python title="Usage Example"
@@ -3259,10 +3307,16 @@ def get_value() -> BucketLevelTypeDef:
 class BucketLevelTypeDef(TypedDict):
     ActivityMetrics: NotRequired[ActivityMetricsTypeDef],  # (1)
     PrefixLevel: NotRequired[PrefixLevelTypeDef],  # (2)
+    AdvancedCostOptimizationMetrics: NotRequired[AdvancedCostOptimizationMetricsTypeDef],  # (3)
+    AdvancedDataProtectionMetrics: NotRequired[AdvancedDataProtectionMetricsTypeDef],  # (4)
+    DetailedStatusCodesMetrics: NotRequired[DetailedStatusCodesMetricsTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef) 
 2. See [:material-code-braces: PrefixLevelTypeDef](./type_defs.md#prefixleveltypedef) 
+3. See [:material-code-braces: AdvancedCostOptimizationMetricsTypeDef](./type_defs.md#advancedcostoptimizationmetricstypedef) 
+4. See [:material-code-braces: AdvancedDataProtectionMetricsTypeDef](./type_defs.md#advanceddataprotectionmetricstypedef) 
+5. See [:material-code-braces: DetailedStatusCodesMetricsTypeDef](./type_defs.md#detailedstatuscodesmetricstypedef) 
 ## S3AccessControlPolicyTypeDef
 
 ```python title="Usage Example"
@@ -3452,10 +3506,16 @@ def get_value() -> AccountLevelTypeDef:
 class AccountLevelTypeDef(TypedDict):
     BucketLevel: BucketLevelTypeDef,  # (2)
     ActivityMetrics: NotRequired[ActivityMetricsTypeDef],  # (1)
+    AdvancedCostOptimizationMetrics: NotRequired[AdvancedCostOptimizationMetricsTypeDef],  # (3)
+    AdvancedDataProtectionMetrics: NotRequired[AdvancedDataProtectionMetricsTypeDef],  # (4)
+    DetailedStatusCodesMetrics: NotRequired[DetailedStatusCodesMetricsTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef) 
 2. See [:material-code-braces: BucketLevelTypeDef](./type_defs.md#bucketleveltypedef) 
+3. See [:material-code-braces: AdvancedCostOptimizationMetricsTypeDef](./type_defs.md#advancedcostoptimizationmetricstypedef) 
+4. See [:material-code-braces: AdvancedDataProtectionMetricsTypeDef](./type_defs.md#advanceddataprotectionmetricstypedef) 
+5. See [:material-code-braces: DetailedStatusCodesMetricsTypeDef](./type_defs.md#detailedstatuscodesmetricstypedef) 
 ## S3SetObjectAclOperationTypeDef
 
 ```python title="Usage Example"

@@ -136,7 +136,8 @@ def create_application(
     autoStartConfiguration: AutoStartConfigTypeDef = ...,  # (3)
     autoStopConfiguration: AutoStopConfigTypeDef = ...,  # (4)
     networkConfiguration: NetworkConfigurationTypeDef = ...,  # (5)
-) -> CreateApplicationResponseTypeDef:  # (6)
+    architecture: ArchitectureType = ...,  # (6)
+) -> CreateApplicationResponseTypeDef:  # (7)
     ...
 ```
 
@@ -145,7 +146,8 @@ def create_application(
 3. See [:material-code-braces: AutoStartConfigTypeDef](./type_defs.md#autostartconfigtypedef) 
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
-6. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
+6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+7. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -568,7 +570,8 @@ def update_application(
     autoStartConfiguration: AutoStartConfigTypeDef = ...,  # (3)
     autoStopConfiguration: AutoStopConfigTypeDef = ...,  # (4)
     networkConfiguration: NetworkConfigurationTypeDef = ...,  # (5)
-) -> UpdateApplicationResponseTypeDef:  # (6)
+    architecture: ArchitectureType = ...,  # (6)
+) -> UpdateApplicationResponseTypeDef:  # (7)
     ...
 ```
 
@@ -577,7 +580,8 @@ def update_application(
 3. See [:material-code-braces: AutoStartConfigTypeDef](./type_defs.md#autostartconfigtypedef) 
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
-6. See [:material-code-braces: UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef) 
+6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+7. See [:material-code-braces: UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -21,6 +21,7 @@ def get_value() -> AggregationConfigTypeDef:
 ```python title="Definition"
 class AggregationConfigTypeDef(TypedDict):
     aggregationType: NotRequired[AggregationTypeType],  # (1)
+    targetFileSize: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
@@ -1114,6 +1115,26 @@ class RangeTypeDef(TypedDict):
     minimum: NotRequired[float],
 ```
 
+## GlueDataCatalogConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import GlueDataCatalogConfigTypeDef
+
+def get_value() -> GlueDataCatalogConfigTypeDef:
+    return {
+        "roleArn": ...,
+        "databaseName": ...,
+        "tablePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class GlueDataCatalogConfigTypeDef(TypedDict):
+    roleArn: str,
+    databaseName: str,
+    tablePrefix: str,
+```
+
 ## GoogleAnalyticsSourcePropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1248,6 +1269,25 @@ class MarketoSourcePropertiesTypeDef(TypedDict):
     object: str,
 ```
 
+## RegistrationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import RegistrationOutputTypeDef
+
+def get_value() -> RegistrationOutputTypeDef:
+    return {
+        "message": ...,
+    }
+```
+
+```python title="Definition"
+class RegistrationOutputTypeDef(TypedDict):
+    message: NotRequired[str],
+    result: NotRequired[str],
+    status: NotRequired[ExecutionStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
 ## OAuth2CustomParameterTypeDef
 
 ```python title="Usage Example"
@@ -1306,10 +1346,12 @@ def get_value() -> PrefixConfigTypeDef:
 class PrefixConfigTypeDef(TypedDict):
     prefixType: NotRequired[PrefixTypeType],  # (1)
     prefixFormat: NotRequired[PrefixFormatType],  # (2)
+    pathPrefixHierarchy: NotRequired[Sequence[PathPrefixType]],  # (3)
 ```
 
 1. See [:material-code-brackets: PrefixTypeType](./literals.md#prefixtypetype) 
 2. See [:material-code-brackets: PrefixFormatType](./literals.md#prefixformattype) 
+3. See [:material-code-brackets: PathPrefixType](./literals.md#pathprefixtype) 
 ## S3InputFormatConfigTypeDef
 
 ```python title="Usage Example"
@@ -2324,6 +2366,45 @@ class FieldTypeDetailsTypeDef(TypedDict):
 1. See [:material-code-brackets: OperatorType](./literals.md#operatortype) 
 2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
 3. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+## MetadataCatalogConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import MetadataCatalogConfigTypeDef
+
+def get_value() -> MetadataCatalogConfigTypeDef:
+    return {
+        "glueDataCatalog": ...,
+    }
+```
+
+```python title="Definition"
+class MetadataCatalogConfigTypeDef(TypedDict):
+    glueDataCatalog: NotRequired[GlueDataCatalogConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GlueDataCatalogConfigTypeDef](./type_defs.md#gluedatacatalogconfigtypedef) 
+## MetadataCatalogDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import MetadataCatalogDetailTypeDef
+
+def get_value() -> MetadataCatalogDetailTypeDef:
+    return {
+        "catalogType": ...,
+    }
+```
+
+```python title="Definition"
+class MetadataCatalogDetailTypeDef(TypedDict):
+    catalogType: NotRequired[CatalogTypeType],  # (1)
+    tableName: NotRequired[str],
+    tableRegistrationOutput: NotRequired[RegistrationOutputTypeDef],  # (2)
+    partitionRegistrationOutput: NotRequired[RegistrationOutputTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: CatalogTypeType](./literals.md#catalogtypetype) 
+2. See [:material-code-braces: RegistrationOutputTypeDef](./type_defs.md#registrationoutputtypedef) 
+3. See [:material-code-braces: RegistrationOutputTypeDef](./type_defs.md#registrationoutputtypedef) 
 ## OAuth2DefaultsTypeDef
 
 ```python title="Usage Example"
@@ -2561,6 +2642,23 @@ class ListFlowsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SupportedFieldTypeDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import SupportedFieldTypeDetailsTypeDef
+
+def get_value() -> SupportedFieldTypeDetailsTypeDef:
+    return {
+        "v1": ...,
+    }
+```
+
+```python title="Definition"
+class SupportedFieldTypeDetailsTypeDef(TypedDict):
+    v1: FieldTypeDetailsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: FieldTypeDetailsTypeDef](./type_defs.md#fieldtypedetailstypedef) 
 ## ExecutionRecordTypeDef
 
 ```python title="Usage Example"
@@ -2581,27 +2679,12 @@ class ExecutionRecordTypeDef(TypedDict):
     lastUpdatedAt: NotRequired[datetime],
     dataPullStartTime: NotRequired[datetime],
     dataPullEndTime: NotRequired[datetime],
+    metadataCatalogDetails: NotRequired[List[MetadataCatalogDetailTypeDef]],  # (3)
 ```
 
 1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
 2. See [:material-code-braces: ExecutionResultTypeDef](./type_defs.md#executionresulttypedef) 
-## SupportedFieldTypeDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appflow.type_defs import SupportedFieldTypeDetailsTypeDef
-
-def get_value() -> SupportedFieldTypeDetailsTypeDef:
-    return {
-        "v1": ...,
-    }
-```
-
-```python title="Definition"
-class SupportedFieldTypeDetailsTypeDef(TypedDict):
-    v1: FieldTypeDetailsTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: FieldTypeDetailsTypeDef](./type_defs.md#fieldtypedetailstypedef) 
+3. See [:material-code-braces: MetadataCatalogDetailTypeDef](./type_defs.md#metadatacatalogdetailtypedef) 
 ## AuthenticationConfigTypeDef
 
 ```python title="Usage Example"
@@ -2827,28 +2910,6 @@ class ConnectorProfileCredentialsTypeDef(TypedDict):
 16. See [:material-code-braces: ZendeskConnectorProfileCredentialsTypeDef](./type_defs.md#zendeskconnectorprofilecredentialstypedef) 
 17. See [:material-code-braces: SAPODataConnectorProfileCredentialsTypeDef](./type_defs.md#sapodataconnectorprofilecredentialstypedef) 
 18. See [:material-code-braces: CustomConnectorProfileCredentialsTypeDef](./type_defs.md#customconnectorprofilecredentialstypedef) 
-## DescribeFlowExecutionRecordsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsResponseTypeDef
-
-def get_value() -> DescribeFlowExecutionRecordsResponseTypeDef:
-    return {
-        "flowExecutions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeFlowExecutionRecordsResponseTypeDef(TypedDict):
-    flowExecutions: List[ExecutionRecordTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: ExecutionRecordTypeDef](./type_defs.md#executionrecordtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConnectorEntityFieldTypeDef
 
 ```python title="Usage Example"
@@ -2878,6 +2939,28 @@ class ConnectorEntityFieldTypeDef(TypedDict):
 1. See [:material-code-braces: SupportedFieldTypeDetailsTypeDef](./type_defs.md#supportedfieldtypedetailstypedef) 
 2. See [:material-code-braces: SourceFieldPropertiesTypeDef](./type_defs.md#sourcefieldpropertiestypedef) 
 3. See [:material-code-braces: DestinationFieldPropertiesTypeDef](./type_defs.md#destinationfieldpropertiestypedef) 
+## DescribeFlowExecutionRecordsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsResponseTypeDef
+
+def get_value() -> DescribeFlowExecutionRecordsResponseTypeDef:
+    return {
+        "flowExecutions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFlowExecutionRecordsResponseTypeDef(TypedDict):
+    flowExecutions: List[ExecutionRecordTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExecutionRecordTypeDef](./type_defs.md#executionrecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConnectorConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3226,12 +3309,14 @@ class CreateFlowRequestRequestTypeDef(TypedDict):
     description: NotRequired[str],
     kmsArn: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
+    metadataCatalogConfig: NotRequired[MetadataCatalogConfigTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
 2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
 3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
 4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+5. See [:material-code-braces: MetadataCatalogConfigTypeDef](./type_defs.md#metadatacatalogconfigtypedef) 
 ## DescribeFlowResponseTypeDef
 
 ```python title="Usage Example"
@@ -3255,6 +3340,9 @@ def get_value() -> DescribeFlowResponseTypeDef:
         "createdBy": ...,
         "lastUpdatedBy": ...,
         "tags": ...,
+        "metadataCatalogConfig": ...,
+        "lastRunMetadataCatalogDetails": ...,
+        "schemaVersion": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3277,7 +3365,10 @@ class DescribeFlowResponseTypeDef(TypedDict):
     createdBy: str,
     lastUpdatedBy: str,
     tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+    metadataCatalogConfig: MetadataCatalogConfigTypeDef,  # (7)
+    lastRunMetadataCatalogDetails: List[MetadataCatalogDetailTypeDef],  # (8)
+    schemaVersion: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
 ```
 
 1. See [:material-code-brackets: FlowStatusType](./literals.md#flowstatustype) 
@@ -3286,7 +3377,9 @@ class DescribeFlowResponseTypeDef(TypedDict):
 4. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
 5. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
 6. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+7. See [:material-code-braces: MetadataCatalogConfigTypeDef](./type_defs.md#metadatacatalogconfigtypedef) 
+8. See [:material-code-braces: MetadataCatalogDetailTypeDef](./type_defs.md#metadatacatalogdetailtypedef) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFlowRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3310,9 +3403,11 @@ class UpdateFlowRequestRequestTypeDef(TypedDict):
     destinationFlowConfigList: Sequence[DestinationFlowConfigTypeDef],  # (3)
     tasks: Sequence[TaskTypeDef],  # (4)
     description: NotRequired[str],
+    metadataCatalogConfig: NotRequired[MetadataCatalogConfigTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
 2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
 3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
 4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+5. See [:material-code-braces: MetadataCatalogConfigTypeDef](./type_defs.md#metadatacatalogconfigtypedef) 

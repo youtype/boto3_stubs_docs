@@ -6048,6 +6048,8 @@ class SoftwarePackageTypeDef(TypedDict):
     FilePath: NotRequired[str],
     FixedInVersion: NotRequired[str],
     Remediation: NotRequired[str],
+    SourceLayerHash: NotRequired[str],
+    SourceLayerArn: NotRequired[str],
 ```
 
 ## StandardsStatusReasonTypeDef
@@ -10183,6 +10185,8 @@ class AwsLambdaFunctionDetailsTypeDef(TypedDict):
     TracingConfig: NotRequired[AwsLambdaFunctionTracingConfigTypeDef],  # (5)
     VpcConfig: NotRequired[AwsLambdaFunctionVpcConfigTypeDef],  # (6)
     Version: NotRequired[str],
+    Architectures: NotRequired[Sequence[str]],
+    PackageType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AwsLambdaFunctionCodeTypeDef](./type_defs.md#awslambdafunctioncodetypedef) 

@@ -380,6 +380,7 @@ def create_replication_instance(
     PubliclyAccessible: bool = ...,
     DnsNameServers: str = ...,
     ResourceIdentifier: str = ...,
+    NetworkType: str = ...,
 ) -> CreateReplicationInstanceResponseTypeDef:  # (2)
     ...
 ```
@@ -1853,6 +1854,7 @@ def modify_replication_instance(
     AllowMajorVersionUpgrade: bool = ...,
     AutoMinorVersionUpgrade: bool = ...,
     ReplicationInstanceIdentifier: str = ...,
+    NetworkType: str = ...,
 ) -> ModifyReplicationInstanceResponseTypeDef:  # (1)
     ...
 ```

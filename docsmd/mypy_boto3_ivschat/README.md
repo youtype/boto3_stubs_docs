@@ -82,7 +82,10 @@ def get_value() -> ChatTokenCapabilityType:
 ```
 
 - [ChatTokenCapabilityType](./literals.md#chattokencapabilitytype)
+- [CreateLoggingConfigurationStateType](./literals.md#createloggingconfigurationstatetype)
 - [FallbackResultType](./literals.md#fallbackresulttype)
+- [LoggingConfigurationStateType](./literals.md#loggingconfigurationstatetype)
+- [UpdateLoggingConfigurationStateType](./literals.md#updateloggingconfigurationstatetype)
 - [ivschatServiceName](./literals.md#ivschatservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
@@ -96,22 +99,27 @@ def get_value() -> ChatTokenCapabilityType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_ivschat.type_defs import CreateChatTokenRequestRequestTypeDef
+from mypy_boto3_ivschat.type_defs import CloudWatchLogsDestinationConfigurationTypeDef
 
-def get_value() -> CreateChatTokenRequestRequestTypeDef:
+def get_value() -> CloudWatchLogsDestinationConfigurationTypeDef:
     return {
-        "roomIdentifier": ...,
-        "userId": ...,
+        "logGroupName": ...,
     }
 ```
 
+- [CloudWatchLogsDestinationConfigurationTypeDef](./type_defs.md#cloudwatchlogsdestinationconfigurationtypedef)
 - [CreateChatTokenRequestRequestTypeDef](./type_defs.md#createchattokenrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [MessageReviewHandlerTypeDef](./type_defs.md#messagereviewhandlertypedef)
+- [DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef)
 - [DeleteMessageRequestRequestTypeDef](./type_defs.md#deletemessagerequestrequesttypedef)
 - [DeleteRoomRequestRequestTypeDef](./type_defs.md#deleteroomrequestrequesttypedef)
+- [FirehoseDestinationConfigurationTypeDef](./type_defs.md#firehosedestinationconfigurationtypedef)
+- [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - [DisconnectUserRequestRequestTypeDef](./type_defs.md#disconnectuserrequestrequesttypedef)
+- [GetLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getloggingconfigurationrequestrequesttypedef)
 - [GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef)
+- [ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef)
 - [ListRoomsRequestRequestTypeDef](./type_defs.md#listroomsrequestrequesttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [SendEventRequestRequestTypeDef](./type_defs.md#sendeventrequestrequesttypedef)
@@ -128,5 +136,13 @@ def get_value() -> CreateChatTokenRequestRequestTypeDef:
 - [RoomSummaryTypeDef](./type_defs.md#roomsummarytypedef)
 - [UpdateRoomRequestRequestTypeDef](./type_defs.md#updateroomrequestrequesttypedef)
 - [UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef)
+- [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
 - [ListRoomsResponseTypeDef](./type_defs.md#listroomsresponsetypedef)
+- [CreateLoggingConfigurationRequestRequestTypeDef](./type_defs.md#createloggingconfigurationrequestrequesttypedef)
+- [CreateLoggingConfigurationResponseTypeDef](./type_defs.md#createloggingconfigurationresponsetypedef)
+- [GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef)
+- [LoggingConfigurationSummaryTypeDef](./type_defs.md#loggingconfigurationsummarytypedef)
+- [UpdateLoggingConfigurationRequestRequestTypeDef](./type_defs.md#updateloggingconfigurationrequestrequesttypedef)
+- [UpdateLoggingConfigurationResponseTypeDef](./type_defs.md#updateloggingconfigurationresponsetypedef)
+- [ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef)
 

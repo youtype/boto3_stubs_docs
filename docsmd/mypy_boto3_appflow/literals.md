@@ -53,6 +53,20 @@ AuthenticationTypeType = Literal[
     "OAUTH2",
 ]
 ```
+## CatalogTypeType
+
+```python title="Usage Example"
+from mypy_boto3_appflow.literals import CatalogTypeType
+
+def get_value() -> CatalogTypeType:
+    return "GLUE"
+```
+
+```python title="Definition"
+CatalogTypeType = Literal[
+    "GLUE",
+]
+```
 ## ConnectionModeType
 
 ```python title="Usage Example"
@@ -362,6 +376,7 @@ OperatorPropertiesKeysType = Literal[
     "MASK_LENGTH",
     "MASK_VALUE",
     "MATH_OPERATION_FIELDS_ORDER",
+    "ORDERED_PARTITION_KEYS_LIST",
     "SOURCE_DATA_TYPE",
     "SUBFIELD_CATEGORY_MAP",
     "TRUNCATE_LENGTH",
@@ -437,6 +452,21 @@ OperatorsType = Literal[
     "VALIDATE_NON_NULL",
     "VALIDATE_NON_ZERO",
     "VALIDATE_NUMERIC",
+]
+```
+## PathPrefixType
+
+```python title="Usage Example"
+from mypy_boto3_appflow.literals import PathPrefixType
+
+def get_value() -> PathPrefixType:
+    return "EXECUTION_ID"
+```
+
+```python title="Definition"
+PathPrefixType = Literal[
+    "EXECUTION_ID",
+    "SCHEMA_VERSION",
 ]
 ```
 ## PrefixFormatType
@@ -768,6 +798,7 @@ TaskTypeType = Literal[
     "Map_all",
     "Mask",
     "Merge",
+    "Partition",
     "Passthrough",
     "Truncate",
     "Validate",

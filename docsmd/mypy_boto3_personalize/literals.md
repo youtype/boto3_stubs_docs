@@ -179,6 +179,34 @@ ListFiltersPaginatorName = Literal[
     "list_filters",
 ]
 ```
+## ListMetricAttributionMetricsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_personalize.literals import ListMetricAttributionMetricsPaginatorName
+
+def get_value() -> ListMetricAttributionMetricsPaginatorName:
+    return "list_metric_attribution_metrics"
+```
+
+```python title="Definition"
+ListMetricAttributionMetricsPaginatorName = Literal[
+    "list_metric_attribution_metrics",
+]
+```
+## ListMetricAttributionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_personalize.literals import ListMetricAttributionsPaginatorName
+
+def get_value() -> ListMetricAttributionsPaginatorName:
+    return "list_metric_attributions"
+```
+
+```python title="Definition"
+ListMetricAttributionsPaginatorName = Literal[
+    "list_metric_attributions",
+]
+```
 ## ListRecipesPaginatorName
 
 ```python title="Usage Example"
@@ -686,6 +714,8 @@ PaginatorName = Literal[
     "list_datasets",
     "list_event_trackers",
     "list_filters",
+    "list_metric_attribution_metrics",
+    "list_metric_attributions",
     "list_recipes",
     "list_recommenders",
     "list_schemas",

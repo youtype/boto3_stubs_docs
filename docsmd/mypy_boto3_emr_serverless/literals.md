@@ -27,6 +27,21 @@ ApplicationStateType = Literal[
     "TERMINATED",
 ]
 ```
+## ArchitectureType
+
+```python title="Usage Example"
+from mypy_boto3_emr_serverless.literals import ArchitectureType
+
+def get_value() -> ArchitectureType:
+    return "ARM64"
+```
+
+```python title="Definition"
+ArchitectureType = Literal[
+    "ARM64",
+    "X86_64",
+]
+```
 ## JobRunStateType
 
 ```python title="Usage Example"

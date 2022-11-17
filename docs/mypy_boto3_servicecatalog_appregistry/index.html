@@ -38010,14 +38010,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_servicecatalog_appregistry.type_defs</span> <span class="kn">import</span> <span class="n">ApplicationSummaryTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_servicecatalog_appregistry.type_defs</span> <span class="kn">import</span> <span class="n">TagQueryConfigurationTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ApplicationSummaryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">TagQueryConfigurationTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;tagKey&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#tagqueryconfigurationtypedef">TagQueryConfigurationTypeDef</a></li>
 <li><a href="type_defs/#applicationsummarytypedef">ApplicationSummaryTypeDef</a></li>
 <li><a href="type_defs/#applicationtypedef">ApplicationTypeDef</a></li>
 <li><a href="type_defs/#associateattributegrouprequestrequesttypedef">AssociateAttributeGroupRequestRequestTypeDef</a></li>
@@ -38040,21 +38041,23 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listapplicationsrequestrequesttypedef">ListApplicationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listassociatedattributegroupsrequestrequesttypedef">ListAssociatedAttributeGroupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listassociatedresourcesrequestrequesttypedef">ListAssociatedResourcesRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#resourceinfotypedef">ResourceInfoTypeDef</a></li>
 <li><a href="type_defs/#listattributegroupsforapplicationrequestrequesttypedef">ListAttributeGroupsForApplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listattributegroupsrequestrequesttypedef">ListAttributeGroupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#resourcedetailstypedef">ResourceDetailsTypeDef</a></li>
 <li><a href="type_defs/#syncresourcerequestrequesttypedef">SyncResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateapplicationrequestrequesttypedef">UpdateApplicationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateattributegrouprequestrequesttypedef">UpdateAttributeGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#appregistryconfigurationtypedef">AppRegistryConfigurationTypeDef</a></li>
 <li><a href="type_defs/#associateattributegroupresponsetypedef">AssociateAttributeGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#associateresourceresponsetypedef">AssociateResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#createapplicationresponsetypedef">CreateApplicationResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteapplicationresponsetypedef">DeleteApplicationResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociateattributegroupresponsetypedef">DisassociateAttributeGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#disassociateresourceresponsetypedef">DisassociateResourceResponseTypeDef</a></li>
+<li><a href="type_defs/#emptyresponsemetadatatypedef">EmptyResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#getattributegroupresponsetypedef">GetAttributeGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#listapplicationsresponsetypedef">ListApplicationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listassociatedattributegroupsresponsetypedef">ListAssociatedAttributeGroupsResponseTypeDef</a></li>
@@ -38073,9 +38076,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listassociatedresourcesrequestlistassociatedresourcespaginatetypedef">ListAssociatedResourcesRequestListAssociatedResourcesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listattributegroupsforapplicationrequestlistattributegroupsforapplicationpaginatetypedef">ListAttributeGroupsForApplicationRequestListAttributeGroupsForApplicationPaginateTypeDef</a></li>
 <li><a href="type_defs/#listattributegroupsrequestlistattributegroupspaginatetypedef">ListAttributeGroupsRequestListAttributeGroupsPaginateTypeDef</a></li>
-<li><a href="type_defs/#listassociatedresourcesresponsetypedef">ListAssociatedResourcesResponseTypeDef</a></li>
+<li><a href="type_defs/#resourceinfotypedef">ResourceInfoTypeDef</a></li>
+<li><a href="type_defs/#getconfigurationresponsetypedef">GetConfigurationResponseTypeDef</a></li>
+<li><a href="type_defs/#putconfigurationrequestrequesttypedef">PutConfigurationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getapplicationresponsetypedef">GetApplicationResponseTypeDef</a></li>
 <li><a href="type_defs/#resourcetypedef">ResourceTypeDef</a></li>
+<li><a href="type_defs/#listassociatedresourcesresponsetypedef">ListAssociatedResourcesResponseTypeDef</a></li>
 <li><a href="type_defs/#getassociatedresourceresponsetypedef">GetAssociatedResourceResponseTypeDef</a></li>
 </ul>
 

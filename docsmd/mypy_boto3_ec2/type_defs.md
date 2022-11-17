@@ -32932,6 +32932,7 @@ class CreateNatGatewayRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
     ConnectivityType: NotRequired[ConnectivityTypeType],  # (2)
+    PrivateIpAddress: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 

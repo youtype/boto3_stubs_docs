@@ -55,6 +55,21 @@ AssociationStatusType = Literal[
     "PENDING_DISASSOCIATION",
 ]
 ```
+## BundleTypeType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import BundleTypeType
+
+def get_value() -> BundleTypeType:
+    return "REGULAR"
+```
+
+```python title="Definition"
+BundleTypeType = Literal[
+    "REGULAR",
+    "STANDBY",
+]
+```
 ## CertificateBasedAuthStatusEnumType
 
 ```python title="Usage Example"
@@ -467,6 +482,21 @@ SamlStatusEnumType = Literal[
     "ENABLED_WITH_DIRECTORY_LOGIN_FALLBACK",
 ]
 ```
+## StandbyWorkspaceRelationshipTypeType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import StandbyWorkspaceRelationshipTypeType
+
+def get_value() -> StandbyWorkspaceRelationshipTypeType:
+    return "PRIMARY"
+```
+
+```python title="Definition"
+StandbyWorkspaceRelationshipTypeType = Literal[
+    "PRIMARY",
+    "STANDBY",
+]
+```
 ## TargetWorkspaceStateType
 
 ```python title="Usage Example"
@@ -495,6 +525,22 @@ def get_value() -> TenancyType:
 TenancyType = Literal[
     "DEDICATED",
     "SHARED",
+]
+```
+## WorkspaceBundleStateType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import WorkspaceBundleStateType
+
+def get_value() -> WorkspaceBundleStateType:
+    return "AVAILABLE"
+```
+
+```python title="Definition"
+WorkspaceBundleStateType = Literal[
+    "AVAILABLE",
+    "ERROR",
+    "PENDING",
 ]
 ```
 ## WorkspaceDirectoryStateType

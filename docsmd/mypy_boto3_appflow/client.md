@@ -149,7 +149,8 @@ def create_flow(
     description: str = ...,
     kmsArn: str = ...,
     tags: Mapping[str, str] = ...,
-) -> CreateFlowResponseTypeDef:  # (5)
+    metadataCatalogConfig: MetadataCatalogConfigTypeDef = ...,  # (5)
+) -> CreateFlowResponseTypeDef:  # (6)
     ...
 ```
 
@@ -157,7 +158,8 @@ def create_flow(
 2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
 3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
 4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
-5. See [:material-code-braces: CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef) 
+5. See [:material-code-braces: MetadataCatalogConfigTypeDef](./type_defs.md#metadatacatalogconfigtypedef) 
+6. See [:material-code-braces: CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -801,7 +803,8 @@ def update_flow(
     destinationFlowConfigList: Sequence[DestinationFlowConfigTypeDef],  # (3)
     tasks: Sequence[TaskTypeDef],  # (4)
     description: str = ...,
-) -> UpdateFlowResponseTypeDef:  # (5)
+    metadataCatalogConfig: MetadataCatalogConfigTypeDef = ...,  # (5)
+) -> UpdateFlowResponseTypeDef:  # (6)
     ...
 ```
 
@@ -809,7 +812,8 @@ def update_flow(
 2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
 3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
 4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
-5. See [:material-code-braces: UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef) 
+5. See [:material-code-braces: MetadataCatalogConfigTypeDef](./type_defs.md#metadatacatalogconfigtypedef) 
+6. See [:material-code-braces: UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

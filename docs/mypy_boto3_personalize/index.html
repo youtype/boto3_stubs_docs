@@ -37989,6 +37989,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listdatasetspaginator">ListDatasetsPaginator</a></li>
 <li><a href="paginators/#listeventtrackerspaginator">ListEventTrackersPaginator</a></li>
 <li><a href="paginators/#listfilterspaginator">ListFiltersPaginator</a></li>
+<li><a href="paginators/#listmetricattributionmetricspaginator">ListMetricAttributionMetricsPaginator</a></li>
+<li><a href="paginators/#listmetricattributionspaginator">ListMetricAttributionsPaginator</a></li>
 <li><a href="paginators/#listrecipespaginator">ListRecipesPaginator</a></li>
 <li><a href="paginators/#listrecommenderspaginator">ListRecommendersPaginator</a></li>
 <li><a href="paginators/#listschemaspaginator">ListSchemasPaginator</a></li>
@@ -38015,6 +38017,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listdatasetspaginatorname">ListDatasetsPaginatorName</a></li>
 <li><a href="literals/#listeventtrackerspaginatorname">ListEventTrackersPaginatorName</a></li>
 <li><a href="literals/#listfilterspaginatorname">ListFiltersPaginatorName</a></li>
+<li><a href="literals/#listmetricattributionmetricspaginatorname">ListMetricAttributionMetricsPaginatorName</a></li>
+<li><a href="literals/#listmetricattributionspaginatorname">ListMetricAttributionsPaginatorName</a></li>
 <li><a href="literals/#listrecipespaginatorname">ListRecipesPaginatorName</a></li>
 <li><a href="literals/#listrecommenderspaginatorname">ListRecommendersPaginatorName</a></li>
 <li><a href="literals/#listschemaspaginatorname">ListSchemasPaginatorName</a></li>
@@ -38053,6 +38057,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#datasourcetypedef">DataSourceTypeDef</a></li>
+<li><a href="type_defs/#metricattributetypedef">MetricAttributeTypeDef</a></li>
 <li><a href="type_defs/#recommenderconfigtypedef">RecommenderConfigTypeDef</a></li>
 <li><a href="type_defs/#createschemarequestrequesttypedef">CreateSchemaRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datasetexportjobsummarytypedef">DatasetExportJobSummaryTypeDef</a></li>
@@ -38071,6 +38076,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletedatasetrequestrequesttypedef">DeleteDatasetRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteeventtrackerrequestrequesttypedef">DeleteEventTrackerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletefilterrequestrequesttypedef">DeleteFilterRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletemetricattributionrequestrequesttypedef">DeleteMetricAttributionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleterecommenderrequestrequesttypedef">DeleteRecommenderRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteschemarequestrequesttypedef">DeleteSchemaRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesolutionrequestrequesttypedef">DeleteSolutionRequestRequestTypeDef</a></li>
@@ -38088,6 +38094,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#featuretransformationtypedef">FeatureTransformationTypeDef</a></li>
 <li><a href="type_defs/#describefilterrequestrequesttypedef">DescribeFilterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#filtertypedef">FilterTypeDef</a></li>
+<li><a href="type_defs/#describemetricattributionrequestrequesttypedef">DescribeMetricAttributionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describereciperequestrequesttypedef">DescribeRecipeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#recipetypedef">RecipeTypeDef</a></li>
 <li><a href="type_defs/#describerecommenderrequestrequesttypedef">DescribeRecommenderRequestRequestTypeDef</a></li>
@@ -38110,6 +38117,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdatasetsrequestrequesttypedef">ListDatasetsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listeventtrackersrequestrequesttypedef">ListEventTrackersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listfiltersrequestrequesttypedef">ListFiltersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listmetricattributionmetricsrequestrequesttypedef">ListMetricAttributionMetricsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listmetricattributionsrequestrequesttypedef">ListMetricAttributionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#metricattributionsummarytypedef">MetricAttributionSummaryTypeDef</a></li>
 <li><a href="type_defs/#listrecipesrequestrequesttypedef">ListRecipesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#recipesummarytypedef">RecipeSummaryTypeDef</a></li>
 <li><a href="type_defs/#listrecommendersrequestrequesttypedef">ListRecommendersRequestRequestTypeDef</a></li>
@@ -38130,6 +38140,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchsegmentjobinputtypedef">BatchSegmentJobInputTypeDef</a></li>
 <li><a href="type_defs/#batchsegmentjoboutputtypedef">BatchSegmentJobOutputTypeDef</a></li>
 <li><a href="type_defs/#datasetexportjoboutputtypedef">DatasetExportJobOutputTypeDef</a></li>
+<li><a href="type_defs/#metricattributionoutputtypedef">MetricAttributionOutputTypeDef</a></li>
 <li><a href="type_defs/#campaignupdatesummarytypedef">CampaignUpdateSummaryTypeDef</a></li>
 <li><a href="type_defs/#updatecampaignrequestrequesttypedef">UpdateCampaignRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createcampaignrequestrequesttypedef">CreateCampaignRequestRequestTypeDef</a></li>
@@ -38148,6 +38159,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createdatasetresponsetypedef">CreateDatasetResponseTypeDef</a></li>
 <li><a href="type_defs/#createeventtrackerresponsetypedef">CreateEventTrackerResponseTypeDef</a></li>
 <li><a href="type_defs/#createfilterresponsetypedef">CreateFilterResponseTypeDef</a></li>
+<li><a href="type_defs/#createmetricattributionresponsetypedef">CreateMetricAttributionResponseTypeDef</a></li>
 <li><a href="type_defs/#createrecommenderresponsetypedef">CreateRecommenderResponseTypeDef</a></li>
 <li><a href="type_defs/#createschemaresponsetypedef">CreateSchemaResponseTypeDef</a></li>
 <li><a href="type_defs/#createsolutionresponsetypedef">CreateSolutionResponseTypeDef</a></li>
@@ -38161,9 +38173,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#startrecommenderresponsetypedef">StartRecommenderResponseTypeDef</a></li>
 <li><a href="type_defs/#stoprecommenderresponsetypedef">StopRecommenderResponseTypeDef</a></li>
 <li><a href="type_defs/#updatecampaignresponsetypedef">UpdateCampaignResponseTypeDef</a></li>
+<li><a href="type_defs/#updatemetricattributionresponsetypedef">UpdateMetricAttributionResponseTypeDef</a></li>
 <li><a href="type_defs/#updaterecommenderresponsetypedef">UpdateRecommenderResponseTypeDef</a></li>
 <li><a href="type_defs/#createdatasetimportjobrequestrequesttypedef">CreateDatasetImportJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datasetimportjobtypedef">DatasetImportJobTypeDef</a></li>
+<li><a href="type_defs/#listmetricattributionmetricsresponsetypedef">ListMetricAttributionMetricsResponseTypeDef</a></li>
 <li><a href="type_defs/#createrecommenderrequestrequesttypedef">CreateRecommenderRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#recommendersummarytypedef">RecommenderSummaryTypeDef</a></li>
 <li><a href="type_defs/#recommenderupdatesummarytypedef">RecommenderUpdateSummaryTypeDef</a></li>
@@ -38193,11 +38207,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdatasetsrequestlistdatasetspaginatetypedef">ListDatasetsRequestListDatasetsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listeventtrackersrequestlisteventtrackerspaginatetypedef">ListEventTrackersRequestListEventTrackersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listfiltersrequestlistfilterspaginatetypedef">ListFiltersRequestListFiltersPaginateTypeDef</a></li>
+<li><a href="type_defs/#listmetricattributionmetricsrequestlistmetricattributionmetricspaginatetypedef">ListMetricAttributionMetricsRequestListMetricAttributionMetricsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listmetricattributionsrequestlistmetricattributionspaginatetypedef">ListMetricAttributionsRequestListMetricAttributionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrecipesrequestlistrecipespaginatetypedef">ListRecipesRequestListRecipesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrecommendersrequestlistrecommenderspaginatetypedef">ListRecommendersRequestListRecommendersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listschemasrequestlistschemaspaginatetypedef">ListSchemasRequestListSchemasPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsolutionversionsrequestlistsolutionversionspaginatetypedef">ListSolutionVersionsRequestListSolutionVersionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsolutionsrequestlistsolutionspaginatetypedef">ListSolutionsRequestListSolutionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listmetricattributionsresponsetypedef">ListMetricAttributionsResponseTypeDef</a></li>
 <li><a href="type_defs/#listrecipesresponsetypedef">ListRecipesResponseTypeDef</a></li>
 <li><a href="type_defs/#listsolutionversionsresponsetypedef">ListSolutionVersionsResponseTypeDef</a></li>
 <li><a href="type_defs/#listsolutionsresponsetypedef">ListSolutionsResponseTypeDef</a></li>
@@ -38207,6 +38224,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createbatchsegmentjobrequestrequesttypedef">CreateBatchSegmentJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createdatasetexportjobrequestrequesttypedef">CreateDatasetExportJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#datasetexportjobtypedef">DatasetExportJobTypeDef</a></li>
+<li><a href="type_defs/#createmetricattributionrequestrequesttypedef">CreateMetricAttributionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#metricattributiontypedef">MetricAttributionTypeDef</a></li>
+<li><a href="type_defs/#updatemetricattributionrequestrequesttypedef">UpdateMetricAttributionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#campaigntypedef">CampaignTypeDef</a></li>
 <li><a href="type_defs/#describedatasetimportjobresponsetypedef">DescribeDatasetImportJobResponseTypeDef</a></li>
 <li><a href="type_defs/#listrecommendersresponsetypedef">ListRecommendersResponseTypeDef</a></li>
@@ -38216,6 +38236,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describebatchinferencejobresponsetypedef">DescribeBatchInferenceJobResponseTypeDef</a></li>
 <li><a href="type_defs/#describebatchsegmentjobresponsetypedef">DescribeBatchSegmentJobResponseTypeDef</a></li>
 <li><a href="type_defs/#describedatasetexportjobresponsetypedef">DescribeDatasetExportJobResponseTypeDef</a></li>
+<li><a href="type_defs/#describemetricattributionresponsetypedef">DescribeMetricAttributionResponseTypeDef</a></li>
 <li><a href="type_defs/#describecampaignresponsetypedef">DescribeCampaignResponseTypeDef</a></li>
 <li><a href="type_defs/#describerecommenderresponsetypedef">DescribeRecommenderResponseTypeDef</a></li>
 <li><a href="type_defs/#describealgorithmresponsetypedef">DescribeAlgorithmResponseTypeDef</a></li>

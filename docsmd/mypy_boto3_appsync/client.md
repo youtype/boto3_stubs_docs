@@ -285,18 +285,21 @@ def create_function(
     apiId: str,
     name: str,
     dataSourceName: str,
-    functionVersion: str,
     description: str = ...,
     requestMappingTemplate: str = ...,
     responseMappingTemplate: str = ...,
+    functionVersion: str = ...,
     syncConfig: SyncConfigTypeDef = ...,  # (1)
     maxBatchSize: int = ...,
-) -> CreateFunctionResponseTypeDef:  # (2)
+    runtime: AppSyncRuntimeTypeDef = ...,  # (2)
+    code: str = ...,
+) -> CreateFunctionResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
-2. See [:material-code-braces: CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef) 
+2. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
+3. See [:material-code-braces: CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -304,7 +307,6 @@ kwargs: CreateFunctionRequestRequestTypeDef = {  # (1)
     "apiId": ...,
     "name": ...,
     "dataSourceName": ...,
-    "functionVersion": ...,
 }
 
 parent.create_function(**kwargs)
@@ -378,7 +380,9 @@ def create_resolver(
     syncConfig: SyncConfigTypeDef = ...,  # (3)
     cachingConfig: CachingConfigTypeDef = ...,  # (4)
     maxBatchSize: int = ...,
-) -> CreateResolverResponseTypeDef:  # (5)
+    runtime: AppSyncRuntimeTypeDef = ...,  # (5)
+    code: str = ...,
+) -> CreateResolverResponseTypeDef:  # (6)
     ...
 ```
 
@@ -386,7 +390,8 @@ def create_resolver(
 2. See [:material-code-braces: PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef) 
 3. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
 4. See [:material-code-braces: CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef) 
-5. See [:material-code-braces: CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef) 
+5. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
+6. See [:material-code-braces: CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -698,6 +703,41 @@ parent.disassociate_api(**kwargs)
 ```
 
 1. See [:material-code-braces: DisassociateApiRequestRequestTypeDef](./type_defs.md#disassociateapirequestrequesttypedef) 
+
+### evaluate\_code
+
+Evaluates the given code and returns the response.
+
+Type annotations and code completion for `#!python boto3.client("appsync").evaluate_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.evaluate_code)
+
+```python title="Method definition"
+def evaluate_code(
+    self,
+    *,
+    runtime: AppSyncRuntimeTypeDef,  # (1)
+    code: str,
+    context: str,
+    function: str = ...,
+) -> EvaluateCodeResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
+2. See [:material-code-braces: EvaluateCodeResponseTypeDef](./type_defs.md#evaluatecoderesponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: EvaluateCodeRequestRequestTypeDef = {  # (1)
+    "runtime": ...,
+    "code": ...,
+    "context": ...,
+}
+
+parent.evaluate_code(**kwargs)
+```
+
+1. See [:material-code-braces: EvaluateCodeRequestRequestTypeDef](./type_defs.md#evaluatecoderequestrequesttypedef) 
 
 ### evaluate\_mapping\_template
 
@@ -1620,18 +1660,21 @@ def update_function(
     name: str,
     functionId: str,
     dataSourceName: str,
-    functionVersion: str,
     description: str = ...,
     requestMappingTemplate: str = ...,
     responseMappingTemplate: str = ...,
+    functionVersion: str = ...,
     syncConfig: SyncConfigTypeDef = ...,  # (1)
     maxBatchSize: int = ...,
-) -> UpdateFunctionResponseTypeDef:  # (2)
+    runtime: AppSyncRuntimeTypeDef = ...,  # (2)
+    code: str = ...,
+) -> UpdateFunctionResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
-2. See [:material-code-braces: UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef) 
+2. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
+3. See [:material-code-braces: UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1640,7 +1683,6 @@ kwargs: UpdateFunctionRequestRequestTypeDef = {  # (1)
     "name": ...,
     "functionId": ...,
     "dataSourceName": ...,
-    "functionVersion": ...,
 }
 
 parent.update_function(**kwargs)
@@ -1714,7 +1756,9 @@ def update_resolver(
     syncConfig: SyncConfigTypeDef = ...,  # (3)
     cachingConfig: CachingConfigTypeDef = ...,  # (4)
     maxBatchSize: int = ...,
-) -> UpdateResolverResponseTypeDef:  # (5)
+    runtime: AppSyncRuntimeTypeDef = ...,  # (5)
+    code: str = ...,
+) -> UpdateResolverResponseTypeDef:  # (6)
     ...
 ```
 
@@ -1722,7 +1766,8 @@ def update_resolver(
 2. See [:material-code-braces: PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef) 
 3. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
 4. See [:material-code-braces: CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef) 
-5. See [:material-code-braces: UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef) 
+5. See [:material-code-braces: AppSyncRuntimeTypeDef](./type_defs.md#appsyncruntimetypedef) 
+6. See [:material-code-braces: UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

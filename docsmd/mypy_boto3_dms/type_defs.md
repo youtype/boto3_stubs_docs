@@ -1490,6 +1490,10 @@ class TableStatisticsTypeDef(TypedDict):
     Deletes: NotRequired[int],
     Updates: NotRequired[int],
     Ddls: NotRequired[int],
+    AppliedInserts: NotRequired[int],
+    AppliedDeletes: NotRequired[int],
+    AppliedUpdates: NotRequired[int],
+    AppliedDdls: NotRequired[int],
     FullLoadRows: NotRequired[int],
     FullLoadCondtnlChkFailedRows: NotRequired[int],
     FullLoadErrorRows: NotRequired[int],
@@ -1566,6 +1570,7 @@ class ModifyReplicationInstanceMessageRequestTypeDef(TypedDict):
     AllowMajorVersionUpgrade: NotRequired[bool],
     AutoMinorVersionUpgrade: NotRequired[bool],
     ReplicationInstanceIdentifier: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 ## ModifyReplicationSubnetGroupMessageRequestTypeDef
@@ -1740,6 +1745,7 @@ class ReplicationPendingModifiedValuesTypeDef(TypedDict):
     AllocatedStorage: NotRequired[int],
     MultiAZ: NotRequired[bool],
     EngineVersion: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 ## VpcSecurityGroupMembershipTypeDef
@@ -2009,6 +2015,7 @@ class CreateReplicationInstanceMessageRequestTypeDef(TypedDict):
     PubliclyAccessible: NotRequired[bool],
     DnsNameServers: NotRequired[str],
     ResourceIdentifier: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -3997,6 +4004,7 @@ class ReplicationSubnetGroupTypeDef(TypedDict):
     VpcId: NotRequired[str],
     SubnetGroupStatus: NotRequired[str],
     Subnets: NotRequired[List[SubnetTypeDef]],  # (1)
+    SupportedNetworkTypes: NotRequired[List[str]],
 ```
 
 1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
@@ -4528,10 +4536,12 @@ class ReplicationInstanceTypeDef(TypedDict):
     ReplicationInstancePrivateIpAddress: NotRequired[str],
     ReplicationInstancePublicIpAddresses: NotRequired[List[str]],
     ReplicationInstancePrivateIpAddresses: NotRequired[List[str]],
+    ReplicationInstanceIpv6Addresses: NotRequired[List[str]],
     PubliclyAccessible: NotRequired[bool],
     SecondaryAvailabilityZone: NotRequired[str],
     FreeUntil: NotRequired[datetime],
     DnsNameServers: NotRequired[str],
+    NetworkType: NotRequired[str],
 ```
 
 1. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 

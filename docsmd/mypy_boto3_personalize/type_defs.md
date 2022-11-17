@@ -264,6 +264,26 @@ class DataSourceTypeDef(TypedDict):
     dataLocation: NotRequired[str],
 ```
 
+## MetricAttributeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import MetricAttributeTypeDef
+
+def get_value() -> MetricAttributeTypeDef:
+    return {
+        "eventType": ...,
+        "metricName": ...,
+        "expression": ...,
+    }
+```
+
+```python title="Definition"
+class MetricAttributeTypeDef(TypedDict):
+    eventType: str,
+    metricName: str,
+    expression: str,
+```
+
 ## RecommenderConfigTypeDef
 
 ```python title="Usage Example"
@@ -616,6 +636,22 @@ class DeleteFilterRequestRequestTypeDef(TypedDict):
     filterArn: str,
 ```
 
+## DeleteMetricAttributionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import DeleteMetricAttributionRequestRequestTypeDef
+
+def get_value() -> DeleteMetricAttributionRequestRequestTypeDef:
+    return {
+        "metricAttributionArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteMetricAttributionRequestRequestTypeDef(TypedDict):
+    metricAttributionArn: str,
+```
+
 ## DeleteRecommenderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -905,6 +941,22 @@ class FilterTypeDef(TypedDict):
     failureReason: NotRequired[str],
     filterExpression: NotRequired[str],
     status: NotRequired[str],
+```
+
+## DescribeMetricAttributionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import DescribeMetricAttributionRequestRequestTypeDef
+
+def get_value() -> DescribeMetricAttributionRequestRequestTypeDef:
+    return {
+        "metricAttributionArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMetricAttributionRequestRequestTypeDef(TypedDict):
+    metricAttributionArn: str,
 ```
 
 ## DescribeRecipeRequestRequestTypeDef
@@ -1301,6 +1353,63 @@ class ListFiltersRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
 ```
 
+## ListMetricAttributionMetricsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListMetricAttributionMetricsRequestRequestTypeDef
+
+def get_value() -> ListMetricAttributionMetricsRequestRequestTypeDef:
+    return {
+        "metricAttributionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricAttributionMetricsRequestRequestTypeDef(TypedDict):
+    metricAttributionArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## ListMetricAttributionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListMetricAttributionsRequestRequestTypeDef
+
+def get_value() -> ListMetricAttributionsRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricAttributionsRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## MetricAttributionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import MetricAttributionSummaryTypeDef
+
+def get_value() -> MetricAttributionSummaryTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class MetricAttributionSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    metricAttributionArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
+
 ## ListRecipesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1453,6 +1562,7 @@ class SolutionSummaryTypeDef(TypedDict):
     status: NotRequired[str],
     creationDateTime: NotRequired[datetime],
     lastUpdatedDateTime: NotRequired[datetime],
+    recipeArn: NotRequired[str],
 ```
 
 ## ListTagsForResourceRequestRequestTypeDef
@@ -1656,6 +1766,24 @@ class DatasetExportJobOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef) 
+## MetricAttributionOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import MetricAttributionOutputTypeDef
+
+def get_value() -> MetricAttributionOutputTypeDef:
+    return {
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class MetricAttributionOutputTypeDef(TypedDict):
+    roleArn: str,
+    s3DataDestination: NotRequired[S3DataConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef) 
 ## CampaignUpdateSummaryTypeDef
 
 ```python title="Usage Example"
@@ -1824,6 +1952,7 @@ def get_value() -> CreateSolutionVersionRequestRequestTypeDef:
 ```python title="Definition"
 class CreateSolutionVersionRequestRequestTypeDef(TypedDict):
     solutionArn: str,
+    name: NotRequired[str],
     trainingMode: NotRequired[TrainingModeType],  # (1)
     tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
@@ -2021,6 +2150,25 @@ def get_value() -> CreateFilterResponseTypeDef:
 ```python title="Definition"
 class CreateFilterResponseTypeDef(TypedDict):
     filterArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateMetricAttributionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import CreateMetricAttributionResponseTypeDef
+
+def get_value() -> CreateMetricAttributionResponseTypeDef:
+    return {
+        "metricAttributionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMetricAttributionResponseTypeDef(TypedDict):
+    metricAttributionArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2282,6 +2430,25 @@ class UpdateCampaignResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateMetricAttributionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import UpdateMetricAttributionResponseTypeDef
+
+def get_value() -> UpdateMetricAttributionResponseTypeDef:
+    return {
+        "metricAttributionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMetricAttributionResponseTypeDef(TypedDict):
+    metricAttributionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRecommenderResponseTypeDef
 
 ```python title="Usage Example"
@@ -2323,6 +2490,7 @@ class CreateDatasetImportJobRequestRequestTypeDef(TypedDict):
     roleArn: str,
     tags: NotRequired[Sequence[TagTypeDef]],  # (2)
     importMode: NotRequired[ImportModeType],  # (3)
+    publishAttributionMetricsToS3: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
@@ -2351,10 +2519,33 @@ class DatasetImportJobTypeDef(TypedDict):
     lastUpdatedDateTime: NotRequired[datetime],
     failureReason: NotRequired[str],
     importMode: NotRequired[ImportModeType],  # (2)
+    publishAttributionMetricsToS3: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 2. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
+## ListMetricAttributionMetricsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListMetricAttributionMetricsResponseTypeDef
+
+def get_value() -> ListMetricAttributionMetricsResponseTypeDef:
+    return {
+        "metrics": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricAttributionMetricsResponseTypeDef(TypedDict):
+    metrics: List[MetricAttributeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricAttributeTypeDef](./type_defs.md#metricattributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRecommenderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2940,6 +3131,42 @@ class ListFiltersRequestListFiltersPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMetricAttributionMetricsRequestListMetricAttributionMetricsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListMetricAttributionMetricsRequestListMetricAttributionMetricsPaginateTypeDef
+
+def get_value() -> ListMetricAttributionMetricsRequestListMetricAttributionMetricsPaginateTypeDef:
+    return {
+        "metricAttributionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricAttributionMetricsRequestListMetricAttributionMetricsPaginateTypeDef(TypedDict):
+    metricAttributionArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMetricAttributionsRequestListMetricAttributionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListMetricAttributionsRequestListMetricAttributionsPaginateTypeDef
+
+def get_value() -> ListMetricAttributionsRequestListMetricAttributionsPaginateTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricAttributionsRequestListMetricAttributionsPaginateTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRecipesRequestListRecipesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3032,6 +3259,28 @@ class ListSolutionsRequestListSolutionsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMetricAttributionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListMetricAttributionsResponseTypeDef
+
+def get_value() -> ListMetricAttributionsResponseTypeDef:
+    return {
+        "metricAttributions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMetricAttributionsResponseTypeDef(TypedDict):
+    metricAttributions: List[MetricAttributionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricAttributionSummaryTypeDef](./type_defs.md#metricattributionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRecipesResponseTypeDef
 
 ```python title="Usage Example"
@@ -3274,6 +3523,75 @@ class DatasetExportJobTypeDef(TypedDict):
 
 1. See [:material-code-brackets: IngestionModeType](./literals.md#ingestionmodetype) 
 2. See [:material-code-braces: DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef) 
+## CreateMetricAttributionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import CreateMetricAttributionRequestRequestTypeDef
+
+def get_value() -> CreateMetricAttributionRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "datasetGroupArn": ...,
+        "metrics": ...,
+        "metricsOutputConfig": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMetricAttributionRequestRequestTypeDef(TypedDict):
+    name: str,
+    datasetGroupArn: str,
+    metrics: Sequence[MetricAttributeTypeDef],  # (1)
+    metricsOutputConfig: MetricAttributionOutputTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricAttributeTypeDef](./type_defs.md#metricattributetypedef) 
+2. See [:material-code-braces: MetricAttributionOutputTypeDef](./type_defs.md#metricattributionoutputtypedef) 
+## MetricAttributionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import MetricAttributionTypeDef
+
+def get_value() -> MetricAttributionTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class MetricAttributionTypeDef(TypedDict):
+    name: NotRequired[str],
+    metricAttributionArn: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    metricsOutputConfig: NotRequired[MetricAttributionOutputTypeDef],  # (1)
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
+
+1. See [:material-code-braces: MetricAttributionOutputTypeDef](./type_defs.md#metricattributionoutputtypedef) 
+## UpdateMetricAttributionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import UpdateMetricAttributionRequestRequestTypeDef
+
+def get_value() -> UpdateMetricAttributionRequestRequestTypeDef:
+    return {
+        "addMetrics": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMetricAttributionRequestRequestTypeDef(TypedDict):
+    addMetrics: NotRequired[Sequence[MetricAttributeTypeDef]],  # (1)
+    removeMetrics: NotRequired[Sequence[str]],
+    metricsOutputConfig: NotRequired[MetricAttributionOutputTypeDef],  # (2)
+    metricAttributionArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: MetricAttributeTypeDef](./type_defs.md#metricattributetypedef) 
+2. See [:material-code-braces: MetricAttributionOutputTypeDef](./type_defs.md#metricattributionoutputtypedef) 
 ## CampaignTypeDef
 
 ```python title="Usage Example"
@@ -3479,6 +3797,26 @@ class DescribeDatasetExportJobResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DatasetExportJobTypeDef](./type_defs.md#datasetexportjobtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMetricAttributionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import DescribeMetricAttributionResponseTypeDef
+
+def get_value() -> DescribeMetricAttributionResponseTypeDef:
+    return {
+        "metricAttribution": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMetricAttributionResponseTypeDef(TypedDict):
+    metricAttribution: MetricAttributionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MetricAttributionTypeDef](./type_defs.md#metricattributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCampaignResponseTypeDef
 
 ```python title="Usage Example"
@@ -3627,12 +3965,13 @@ from mypy_boto3_personalize.type_defs import SolutionVersionTypeDef
 
 def get_value() -> SolutionVersionTypeDef:
     return {
-        "solutionVersionArn": ...,
+        "name": ...,
     }
 ```
 
 ```python title="Definition"
 class SolutionVersionTypeDef(TypedDict):
+    name: NotRequired[str],
     solutionVersionArn: NotRequired[str],
     solutionArn: NotRequired[str],
     performHPO: NotRequired[bool],

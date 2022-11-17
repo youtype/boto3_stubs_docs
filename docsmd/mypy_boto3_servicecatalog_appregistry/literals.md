@@ -108,6 +108,7 @@ def get_value() -> ResourceTypeType:
 ```python title="Definition"
 ResourceTypeType = Literal[
     "CFN_STACK",
+    "RESOURCE_TAG_VALUE",
 ]
 ```
 ## SyncActionType

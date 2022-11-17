@@ -2901,6 +2901,7 @@ def create_nat_gateway(
     DryRun: bool = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
     ConnectivityType: ConnectivityTypeType = ...,  # (2)
+    PrivateIpAddress: str = ...,
 ) -> CreateNatGatewayResultTypeDef:  # (3)
     ...
 ```

@@ -21,6 +21,21 @@ BatchGetRumMetricDefinitionsPaginatorName = Literal[
     "batch_get_rum_metric_definitions",
 ]
 ```
+## CustomEventsStatusType
+
+```python title="Usage Example"
+from mypy_boto3_rum.literals import CustomEventsStatusType
+
+def get_value() -> CustomEventsStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+CustomEventsStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## GetAppMonitorDataPaginatorName
 
 ```python title="Usage Example"

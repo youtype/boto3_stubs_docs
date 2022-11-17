@@ -71,6 +71,23 @@ class AppMonitorSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StateEnumType](./literals.md#stateenumtype) 
+## CustomEventsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rum.type_defs import CustomEventsTypeDef
+
+def get_value() -> CustomEventsTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class CustomEventsTypeDef(TypedDict):
+    Status: NotRequired[CustomEventsStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: CustomEventsStatusType](./literals.md#customeventsstatustype) 
 ## MetricDefinitionRequestTypeDef
 
 ```python title="Usage Example"
@@ -506,11 +523,13 @@ class CreateAppMonitorRequestRequestTypeDef(TypedDict):
     Domain: str,
     Name: str,
     AppMonitorConfiguration: NotRequired[AppMonitorConfigurationTypeDef],  # (1)
+    CustomEvents: NotRequired[CustomEventsTypeDef],  # (2)
     CwLogEnabled: NotRequired[bool],
     Tags: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
+2. See [:material-code-braces: CustomEventsTypeDef](./type_defs.md#customeventstypedef) 
 ## UpdateAppMonitorRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -526,11 +545,13 @@ def get_value() -> UpdateAppMonitorRequestRequestTypeDef:
 class UpdateAppMonitorRequestRequestTypeDef(TypedDict):
     Name: str,
     AppMonitorConfiguration: NotRequired[AppMonitorConfigurationTypeDef],  # (1)
+    CustomEvents: NotRequired[CustomEventsTypeDef],  # (2)
     CwLogEnabled: NotRequired[bool],
     Domain: NotRequired[str],
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
+2. See [:material-code-braces: CustomEventsTypeDef](./type_defs.md#customeventstypedef) 
 ## BatchCreateRumMetricDefinitionsErrorTypeDef
 
 ```python title="Usage Example"
@@ -934,18 +955,20 @@ def get_value() -> AppMonitorTypeDef:
 class AppMonitorTypeDef(TypedDict):
     AppMonitorConfiguration: NotRequired[AppMonitorConfigurationTypeDef],  # (1)
     Created: NotRequired[str],
-    DataStorage: NotRequired[DataStorageTypeDef],  # (2)
+    CustomEvents: NotRequired[CustomEventsTypeDef],  # (2)
+    DataStorage: NotRequired[DataStorageTypeDef],  # (3)
     Domain: NotRequired[str],
     Id: NotRequired[str],
     LastModified: NotRequired[str],
     Name: NotRequired[str],
-    State: NotRequired[StateEnumType],  # (3)
+    State: NotRequired[StateEnumType],  # (4)
     Tags: NotRequired[Dict[str, str]],
 ```
 
 1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
-2. See [:material-code-braces: DataStorageTypeDef](./type_defs.md#datastoragetypedef) 
-3. See [:material-code-brackets: StateEnumType](./literals.md#stateenumtype) 
+2. See [:material-code-braces: CustomEventsTypeDef](./type_defs.md#customeventstypedef) 
+3. See [:material-code-braces: DataStorageTypeDef](./type_defs.md#datastoragetypedef) 
+4. See [:material-code-brackets: StateEnumType](./literals.md#stateenumtype) 
 ## GetAppMonitorResponseTypeDef
 
 ```python title="Usage Example"

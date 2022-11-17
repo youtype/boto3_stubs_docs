@@ -537,6 +537,124 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListFiltersRequestListFiltersPaginateTypeDef](./type_defs.md#listfiltersrequestlistfilterspaginatetypedef) 
+## ListMetricAttributionMetricsPaginator
+
+Type annotations and code completion for `#!python boto3.client("personalize").get_paginator("list_metric_attribution_metrics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListMetricAttributionMetrics)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListMetricAttributionMetricsPaginator
+
+def get_list_metric_attribution_metrics_paginator() -> ListMetricAttributionMetricsPaginator:
+    return Session().client("personalize").get_paginator("list_metric_attribution_metrics")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListMetricAttributionMetricsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListMetricAttributionMetricsPaginator = client.get_paginator("list_metric_attribution_metrics")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListMetricAttributionMetricsPaginator](./paginators.md#listmetricattributionmetricspaginator)
+3. item: [:material-code-braces: ListMetricAttributionMetricsResponseTypeDef](./type_defs.md#listmetricattributionmetricsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListMetricAttributionMetricsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    metricAttributionArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMetricAttributionMetricsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMetricAttributionMetricsResponseTypeDef](./type_defs.md#listmetricattributionmetricsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMetricAttributionMetricsRequestListMetricAttributionMetricsPaginateTypeDef = {  # (1)
+    "metricAttributionArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMetricAttributionMetricsRequestListMetricAttributionMetricsPaginateTypeDef](./type_defs.md#listmetricattributionmetricsrequestlistmetricattributionmetricspaginatetypedef) 
+## ListMetricAttributionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("personalize").get_paginator("list_metric_attributions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Paginator.ListMetricAttributions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListMetricAttributionsPaginator
+
+def get_list_metric_attributions_paginator() -> ListMetricAttributionsPaginator:
+    return Session().client("personalize").get_paginator("list_metric_attributions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_personalize.paginator import ListMetricAttributionsPaginator
+
+session = Session()
+
+client = Session().client("personalize")  # (1)
+paginator: ListMetricAttributionsPaginator = client.get_paginator("list_metric_attributions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PersonalizeClient](./client.md)
+2. paginator: [ListMetricAttributionsPaginator](./paginators.md#listmetricattributionspaginator)
+3. item: [:material-code-braces: ListMetricAttributionsResponseTypeDef](./type_defs.md#listmetricattributionsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListMetricAttributionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    datasetGroupArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMetricAttributionsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMetricAttributionsResponseTypeDef](./type_defs.md#listmetricattributionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMetricAttributionsRequestListMetricAttributionsPaginateTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMetricAttributionsRequestListMetricAttributionsPaginateTypeDef](./type_defs.md#listmetricattributionsrequestlistmetricattributionspaginatetypedef) 
 ## ListRecipesPaginator
 
 Type annotations and code completion for `#!python boto3.client("personalize").get_paginator("list_recipes")`.

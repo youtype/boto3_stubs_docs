@@ -454,6 +454,22 @@ parent.get_attribute_group(**kwargs)
 
 1. See [:material-code-braces: GetAttributeGroupRequestRequestTypeDef](./type_defs.md#getattributegrouprequestrequesttypedef) 
 
+### get\_configuration
+
+Retrieves a `TagKey` configuration from an account.
+
+Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").get_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_configuration)
+
+```python title="Method definition"
+def get_configuration(
+    self,
+) -> GetConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetConfigurationResponseTypeDef](./type_defs.md#getconfigurationresponsetypedef) 
+
 ### list\_applications
 
 Retrieves a list of all of your applications.
@@ -517,7 +533,7 @@ parent.list_associated_attribute_groups(**kwargs)
 
 ### list\_associated\_resources
 
-Lists all resources that are associated with specified application.
+Lists all of the resources that are associated with the specified application.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").list_associated_resources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_resources)
@@ -636,6 +652,36 @@ parent.list_tags_for_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
+### put\_configuration
+
+Associates a `TagKey` configuration to an account.
+
+Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").put_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.put_configuration)
+
+```python title="Method definition"
+def put_configuration(
+    self,
+    *,
+    configuration: AppRegistryConfigurationTypeDef,  # (1)
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: AppRegistryConfigurationTypeDef](./type_defs.md#appregistryconfigurationtypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutConfigurationRequestRequestTypeDef = {  # (1)
+    "configuration": ...,
+}
+
+parent.put_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: PutConfigurationRequestRequestTypeDef](./type_defs.md#putconfigurationrequestrequesttypedef) 
 
 ### sync\_resource
 

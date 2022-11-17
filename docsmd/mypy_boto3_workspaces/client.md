@@ -320,6 +320,38 @@ parent.create_ip_group(**kwargs)
 
 1. See [:material-code-braces: CreateIpGroupRequestRequestTypeDef](./type_defs.md#createipgrouprequestrequesttypedef) 
 
+### create\_standby\_workspaces
+
+Creates a Standby WorkSpace in a secondary region.
+
+Type annotations and code completion for `#!python boto3.client("workspaces").create_standby_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_standby_workspaces)
+
+```python title="Method definition"
+def create_standby_workspaces(
+    self,
+    *,
+    PrimaryRegion: str,
+    StandbyWorkspaces: Sequence[StandbyWorkspaceTypeDef],  # (1)
+) -> CreateStandbyWorkspacesResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: StandbyWorkspaceTypeDef](./type_defs.md#standbyworkspacetypedef) 
+2. See [:material-code-braces: CreateStandbyWorkspacesResultTypeDef](./type_defs.md#createstandbyworkspacesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateStandbyWorkspacesRequestRequestTypeDef = {  # (1)
+    "PrimaryRegion": ...,
+    "StandbyWorkspaces": ...,
+}
+
+parent.create_standby_workspaces(**kwargs)
+```
+
+1. See [:material-code-braces: CreateStandbyWorkspacesRequestRequestTypeDef](./type_defs.md#createstandbyworkspacesrequestrequesttypedef) 
+
 ### create\_tags
 
 Creates the specified tags for the specified WorkSpaces resource.

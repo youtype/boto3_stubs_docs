@@ -341,6 +341,20 @@ ResolverKindType = Literal[
     "UNIT",
 ]
 ```
+## RuntimeNameType
+
+```python title="Usage Example"
+from mypy_boto3_appsync.literals import RuntimeNameType
+
+def get_value() -> RuntimeNameType:
+    return "APPSYNC_JS"
+```
+
+```python title="Definition"
+RuntimeNameType = Literal[
+    "APPSYNC_JS",
+]
+```
 ## SchemaStatusType
 
 ```python title="Usage Example"
