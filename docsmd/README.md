@@ -149,6 +149,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-chime-sdk-messaging](./mypy_boto3_chime_sdk_messaging/README.md) for [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging) service
 
+- [mypy-boto3-chime-sdk-voice](./mypy_boto3_chime_sdk_voice/README.md) for [ChimeSDKVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-voice.html#ChimeSDKVoice) service
+
 - [mypy-boto3-cloud9](./mypy_boto3_cloud9/README.md) for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9) service
 
 - [mypy-boto3-cloudcontrol](./mypy_boto3_cloudcontrol/README.md) for [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi) service
@@ -356,6 +358,8 @@ python -m pip uninstall -y boto3-stubs
 - [mypy-boto3-iot-data](./mypy_boto3_iot_data/README.md) for [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane) service
 
 - [mypy-boto3-iot-jobs-data](./mypy_boto3_iot_jobs_data/README.md) for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane) service
+
+- [mypy-boto3-iot-roborunner](./mypy_boto3_iot_roborunner/README.md) for [IoTRoboRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-roborunner.html#IoTRoboRunner) service
 
 - [mypy-boto3-iot1click-devices](./mypy_boto3_iot1click_devices/README.md) for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService) service
 
@@ -651,7 +655,7 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-ssm-incidents](./mypy_boto3_ssm_incidents/README.md) for [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents) service
 
-- [mypy-boto3-ssmsap](./mypy_boto3_ssmsap/README.md) for [SsmSap](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssmsap.html#SsmSap) service
+- [mypy-boto3-ssm-sap](./mypy_boto3_ssm_sap/README.md) for [SsmSap](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-sap.html#SsmSap) service
 
 - [mypy-boto3-sso](./mypy_boto3_sso/README.md) for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO) service
 

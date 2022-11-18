@@ -141,6 +141,7 @@ EncryptionAlgType = Literal[
     "AES128_CBC",
     "AES192_CBC",
     "AES256_CBC",
+    "NONE",
 ]
 ```
 ## EndpointTypeType
@@ -642,6 +643,7 @@ ServiceName = Literal[
     "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
+    "chime-sdk-voice",
     "cloud9",
     "cloudcontrol",
     "clouddirectory",
@@ -746,6 +748,7 @@ ServiceName = Literal[
     "iot",
     "iot-data",
     "iot-jobs-data",
+    "iot-roborunner",
     "iot1click-devices",
     "iot1click-projects",
     "iotanalytics",
@@ -893,7 +896,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
-    "ssmsap",
+    "ssm-sap",
     "sso",
     "sso-admin",
     "sso-oidc",

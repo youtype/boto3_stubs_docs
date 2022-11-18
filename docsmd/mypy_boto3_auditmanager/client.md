@@ -374,6 +374,7 @@ def create_assessment_report(
     name: str,
     assessmentId: str,
     description: str = ...,
+    queryStatement: str = ...,
 ) -> CreateAssessmentReportResponseTypeDef:  # (1)
     ...
 ```
@@ -1100,7 +1101,8 @@ def get_organization_admin_account(
 
 ### get\_services\_in\_scope
 
-Returns a list of the in-scope Amazon Web Services for the specified assessment.
+Returns a list of all of the Amazon Web Services that you can choose to include
+in your assessment.
 
 Type annotations and code completion for `#!python boto3.client("auditmanager").get_services_in_scope` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
@@ -1944,6 +1946,7 @@ def update_settings(
     defaultAssessmentReportsDestination: AssessmentReportsDestinationTypeDef = ...,  # (1)
     defaultProcessOwners: Sequence[RoleTypeDef] = ...,  # (2)
     kmsKey: str = ...,
+    evidenceFinderEnabled: bool = ...,
 ) -> UpdateSettingsResponseTypeDef:  # (3)
     ...
 ```

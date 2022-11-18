@@ -1729,8 +1729,10 @@ class JdbcTargetTypeDef(TypedDict):
     ConnectionName: NotRequired[str],
     Path: NotRequired[str],
     Exclusions: NotRequired[List[str]],
+    EnableAdditionalMetadata: NotRequired[List[JdbcMetadataEntryType]],  # (1)
 ```
 
+1. See [:material-code-brackets: JdbcMetadataEntryType](./literals.md#jdbcmetadataentrytype) 
 ## MongoDBTargetTypeDef
 
 ```python title="Usage Example"

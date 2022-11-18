@@ -1765,9 +1765,10 @@ def get_value() -> ProfilerConfigTypeDef:
 
 ```python title="Definition"
 class ProfilerConfigTypeDef(TypedDict):
-    S3OutputPath: str,
+    S3OutputPath: NotRequired[str],
     ProfilingIntervalInMilliseconds: NotRequired[int],
     ProfilingParameters: NotRequired[Mapping[str, str]],
+    DisableProfiler: NotRequired[bool],
 ```
 
 ## ProfilerRuleConfigurationTypeDef

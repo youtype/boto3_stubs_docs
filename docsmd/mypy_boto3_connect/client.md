@@ -818,6 +818,8 @@ def create_security_profile(
     Description: str = ...,
     Permissions: Sequence[str] = ...,
     Tags: Mapping[str, str] = ...,
+    AllowedAccessControlTags: Mapping[str, str] = ...,
+    TagRestrictedResources: Sequence[str] = ...,
 ) -> CreateSecurityProfileResponseTypeDef:  # (1)
     ...
 ```
@@ -5244,6 +5246,8 @@ def update_security_profile(
     InstanceId: str,
     Description: str = ...,
     Permissions: Sequence[str] = ...,
+    AllowedAccessControlTags: Mapping[str, str] = ...,
+    TagRestrictedResources: Sequence[str] = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```

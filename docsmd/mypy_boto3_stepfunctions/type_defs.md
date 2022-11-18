@@ -565,30 +565,6 @@ class TaskFailedEventDetailsTypeDef(TypedDict):
     cause: NotRequired[str],
 ```
 
-## TaskScheduledEventDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_stepfunctions.type_defs import TaskScheduledEventDetailsTypeDef
-
-def get_value() -> TaskScheduledEventDetailsTypeDef:
-    return {
-        "resourceType": ...,
-        "resource": ...,
-        "region": ...,
-        "parameters": ...,
-    }
-```
-
-```python title="Definition"
-class TaskScheduledEventDetailsTypeDef(TypedDict):
-    resourceType: str,
-    resource: str,
-    region: str,
-    parameters: str,
-    timeoutInSeconds: NotRequired[int],
-    heartbeatInSeconds: NotRequired[int],
-```
-
 ## TaskStartFailedEventDetailsTypeDef
 
 ```python title="Usage Example"
@@ -665,6 +641,22 @@ class TaskTimedOutEventDetailsTypeDef(TypedDict):
     resource: str,
     error: NotRequired[str],
     cause: NotRequired[str],
+```
+
+## TaskCredentialsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import TaskCredentialsTypeDef
+
+def get_value() -> TaskCredentialsTypeDef:
+    return {
+        "roleArn": ...,
+    }
+```
+
+```python title="Definition"
+class TaskCredentialsTypeDef(TypedDict):
+    roleArn: NotRequired[str],
 ```
 
 ## ListActivitiesInputRequestTypeDef
@@ -959,26 +951,6 @@ def get_value() -> ExecutionSucceededEventDetailsTypeDef:
 class ExecutionSucceededEventDetailsTypeDef(TypedDict):
     output: NotRequired[str],
     outputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
-## LambdaFunctionScheduledEventDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_stepfunctions.type_defs import LambdaFunctionScheduledEventDetailsTypeDef
-
-def get_value() -> LambdaFunctionScheduledEventDetailsTypeDef:
-    return {
-        "resource": ...,
-    }
-```
-
-```python title="Definition"
-class LambdaFunctionScheduledEventDetailsTypeDef(TypedDict):
-    resource: str,
-    input: NotRequired[str],
-    inputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
-    timeoutInSeconds: NotRequired[int],
 ```
 
 1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
@@ -1508,6 +1480,54 @@ class ListStateMachinesInputListStateMachinesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## LambdaFunctionScheduledEventDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import LambdaFunctionScheduledEventDetailsTypeDef
+
+def get_value() -> LambdaFunctionScheduledEventDetailsTypeDef:
+    return {
+        "resource": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaFunctionScheduledEventDetailsTypeDef(TypedDict):
+    resource: str,
+    input: NotRequired[str],
+    inputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+    timeoutInSeconds: NotRequired[int],
+    taskCredentials: NotRequired[TaskCredentialsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
+2. See [:material-code-braces: TaskCredentialsTypeDef](./type_defs.md#taskcredentialstypedef) 
+## TaskScheduledEventDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import TaskScheduledEventDetailsTypeDef
+
+def get_value() -> TaskScheduledEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+        "region": ...,
+        "parameters": ...,
+    }
+```
+
+```python title="Definition"
+class TaskScheduledEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    region: str,
+    parameters: str,
+    timeoutInSeconds: NotRequired[int],
+    heartbeatInSeconds: NotRequired[int],
+    taskCredentials: NotRequired[TaskCredentialsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TaskCredentialsTypeDef](./type_defs.md#taskcredentialstypedef) 
 ## ListStateMachinesOutputTypeDef
 
 ```python title="Usage Example"
@@ -1530,6 +1550,26 @@ class ListStateMachinesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: StateMachineListItemTypeDef](./type_defs.md#statemachinelistitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LoggingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import LoggingConfigurationTypeDef
+
+def get_value() -> LoggingConfigurationTypeDef:
+    return {
+        "level": ...,
+    }
+```
+
+```python title="Definition"
+class LoggingConfigurationTypeDef(TypedDict):
+    level: NotRequired[LogLevelType],  # (1)
+    includeExecutionData: NotRequired[bool],
+    destinations: NotRequired[Sequence[LogDestinationTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: LogDestinationTypeDef](./type_defs.md#logdestinationtypedef) 
 ## HistoryEventTypeDef
 
 ```python title="Usage Example"
@@ -1616,48 +1656,6 @@ class HistoryEventTypeDef(TypedDict):
 31. See [:material-code-braces: LambdaFunctionTimedOutEventDetailsTypeDef](./type_defs.md#lambdafunctiontimedouteventdetailstypedef) 
 32. See [:material-code-braces: StateEnteredEventDetailsTypeDef](./type_defs.md#stateenteredeventdetailstypedef) 
 33. See [:material-code-braces: StateExitedEventDetailsTypeDef](./type_defs.md#stateexitedeventdetailstypedef) 
-## LoggingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_stepfunctions.type_defs import LoggingConfigurationTypeDef
-
-def get_value() -> LoggingConfigurationTypeDef:
-    return {
-        "level": ...,
-    }
-```
-
-```python title="Definition"
-class LoggingConfigurationTypeDef(TypedDict):
-    level: NotRequired[LogLevelType],  # (1)
-    includeExecutionData: NotRequired[bool],
-    destinations: NotRequired[Sequence[LogDestinationTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
-2. See [:material-code-braces: LogDestinationTypeDef](./type_defs.md#logdestinationtypedef) 
-## GetExecutionHistoryOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryOutputTypeDef
-
-def get_value() -> GetExecutionHistoryOutputTypeDef:
-    return {
-        "events": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetExecutionHistoryOutputTypeDef(TypedDict):
-    events: List[HistoryEventTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: HistoryEventTypeDef](./type_defs.md#historyeventtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStateMachineInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1780,3 +1778,25 @@ class UpdateStateMachineInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
 2. See [:material-code-braces: TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef) 
+## GetExecutionHistoryOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryOutputTypeDef
+
+def get_value() -> GetExecutionHistoryOutputTypeDef:
+    return {
+        "events": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetExecutionHistoryOutputTypeDef(TypedDict):
+    events: List[HistoryEventTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: HistoryEventTypeDef](./type_defs.md#historyeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

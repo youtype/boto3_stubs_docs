@@ -161,6 +161,7 @@ def get_value() -> AggFunctionType:
 - [GetUserDefinedFunctionsPaginatorName](./literals.md#getuserdefinedfunctionspaginatorname)
 - [GlueRecordTypeType](./literals.md#gluerecordtypetype)
 - [JDBCDataTypeType](./literals.md#jdbcdatatypetype)
+- [JdbcMetadataEntryType](./literals.md#jdbcmetadataentrytype)
 - [JobBookmarksEncryptionModeType](./literals.md#jobbookmarksencryptionmodetype)
 - [JobRunStateType](./literals.md#jobrunstatetype)
 - [JoinTypeType](./literals.md#jointypetype)

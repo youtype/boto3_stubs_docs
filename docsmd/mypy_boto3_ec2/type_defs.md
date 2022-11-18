@@ -2513,6 +2513,7 @@ class CopyImageRequestRequestTypeDef(TypedDict):
     KmsKeyId: NotRequired[str],
     DestinationOutpostArn: NotRequired[str],
     DryRun: NotRequired[bool],
+    CopyImageTags: NotRequired[bool],
 ```
 
 ## CpuOptionsRequestTypeDef

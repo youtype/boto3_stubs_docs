@@ -117,6 +117,21 @@ EvaluationTypeType = Literal[
     "STATIC",
 ]
 ```
+## LastSyncStatusType
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.literals import LastSyncStatusType
+
+def get_value() -> LastSyncStatusType:
+    return "FAILED"
+```
+
+```python title="Definition"
+LastSyncStatusType = Literal[
+    "FAILED",
+    "SUCCEEDED",
+]
+```
 ## ListAcceptedPortfolioSharesPaginatorName
 
 ```python title="Usage Example"
@@ -357,6 +372,7 @@ def get_value() -> PrincipalTypeType:
 ```python title="Definition"
 PrincipalTypeType = Literal[
     "IAM",
+    "IAM_PATTERN",
 ]
 ```
 ## ProductSourceType
@@ -725,6 +741,20 @@ SortOrderType = Literal[
     "DESCENDING",
 ]
 ```
+## SourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "CODESTAR"
+```
+
+```python title="Definition"
+SourceTypeType = Literal[
+    "CODESTAR",
+]
+```
 ## StackInstanceStatusType
 
 ```python title="Usage Example"
@@ -838,6 +868,7 @@ ServiceName = Literal[
     "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
+    "chime-sdk-voice",
     "cloud9",
     "cloudcontrol",
     "clouddirectory",
@@ -942,6 +973,7 @@ ServiceName = Literal[
     "iot",
     "iot-data",
     "iot-jobs-data",
+    "iot-roborunner",
     "iot1click-devices",
     "iot1click-projects",
     "iotanalytics",
@@ -1089,7 +1121,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
-    "ssmsap",
+    "ssm-sap",
     "sso",
     "sso-admin",
     "sso-oidc",

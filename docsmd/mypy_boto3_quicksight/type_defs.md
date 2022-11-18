@@ -63,6 +63,7 @@ class AccountSettingsTypeDef(TypedDict):
     DefaultNamespace: NotRequired[str],
     NotificationEmail: NotRequired[str],
     PublicSharingEnabled: NotRequired[bool],
+    TerminationProtectionEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: EditionType](./literals.md#editiontype) 
@@ -263,6 +264,22 @@ class DashboardVisualIdTypeDef(TypedDict):
     VisualId: str,
 ```
 
+## AnonymousUserQSearchBarEmbeddingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnonymousUserQSearchBarEmbeddingConfigurationTypeDef
+
+def get_value() -> AnonymousUserQSearchBarEmbeddingConfigurationTypeDef:
+    return {
+        "InitialTopicId": ...,
+    }
+```
+
+```python title="Definition"
+class AnonymousUserQSearchBarEmbeddingConfigurationTypeDef(TypedDict):
+    InitialTopicId: str,
+```
+
 ## AthenaParametersTypeDef
 
 ```python title="Usage Example"
@@ -277,6 +294,7 @@ def get_value() -> AthenaParametersTypeDef:
 ```python title="Definition"
 class AthenaParametersTypeDef(TypedDict):
     WorkGroup: NotRequired[str],
+    RoleArn: NotRequired[str],
 ```
 
 ## AuroraParametersTypeDef
@@ -1103,6 +1121,28 @@ class DataColorPaletteTypeDef(TypedDict):
     EmptyFillColor: NotRequired[str],
 ```
 
+## DataSetSearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSetSearchFilterTypeDef
+
+def get_value() -> DataSetSearchFilterTypeDef:
+    return {
+        "Operator": ...,
+        "Name": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class DataSetSearchFilterTypeDef(TypedDict):
+    Operator: FilterOperatorType,  # (1)
+    Name: DataSetFilterAttributeType,  # (2)
+    Value: str,
+```
+
+1. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
+2. See [:material-code-brackets: DataSetFilterAttributeType](./literals.md#datasetfilterattributetype) 
 ## OutputColumnTypeDef
 
 ```python title="Usage Example"
@@ -1140,6 +1180,26 @@ class DataSourceErrorInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataSourceErrorInfoTypeType](./literals.md#datasourceerrorinfotypetype) 
+## DatabricksParametersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DatabricksParametersTypeDef
+
+def get_value() -> DatabricksParametersTypeDef:
+    return {
+        "Host": ...,
+        "Port": ...,
+        "SqlEndpointPath": ...,
+    }
+```
+
+```python title="Definition"
+class DatabricksParametersTypeDef(TypedDict):
+    Host: str,
+    Port: int,
+    SqlEndpointPath: str,
+```
+
 ## ExasolParametersTypeDef
 
 ```python title="Usage Example"
@@ -1423,6 +1483,50 @@ class TwitterParametersTypeDef(TypedDict):
     MaxRows: int,
 ```
 
+## DataSourceSearchFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSourceSearchFilterTypeDef
+
+def get_value() -> DataSourceSearchFilterTypeDef:
+    return {
+        "Operator": ...,
+        "Name": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceSearchFilterTypeDef(TypedDict):
+    Operator: FilterOperatorType,  # (1)
+    Name: DataSourceFilterAttributeType,  # (2)
+    Value: str,
+```
+
+1. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
+2. See [:material-code-brackets: DataSourceFilterAttributeType](./literals.md#datasourcefilterattributetype) 
+## DataSourceSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSourceSummaryTypeDef
+
+def get_value() -> DataSourceSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    DataSourceId: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[DataSourceTypeType],  # (1)
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
 ## DateTimeParameterTypeDef
 
 ```python title="Usage Example"
@@ -1474,6 +1578,22 @@ def get_value() -> DeleteAccountCustomizationRequestRequestTypeDef:
 class DeleteAccountCustomizationRequestRequestTypeDef(TypedDict):
     AwsAccountId: str,
     Namespace: NotRequired[str],
+```
+
+## DeleteAccountSubscriptionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteAccountSubscriptionRequestRequestTypeDef
+
+def get_value() -> DeleteAccountSubscriptionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAccountSubscriptionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
 ```
 
 ## DeleteAnalysisRequestRequestTypeDef
@@ -3563,6 +3683,7 @@ class UpdateAccountSettingsRequestRequestTypeDef(TypedDict):
     AwsAccountId: str,
     DefaultNamespace: str,
     NotificationEmail: NotRequired[str],
+    TerminationProtectionEnabled: NotRequired[bool],
 ```
 
 ## UpdateDashboardPublishedVersionRequestRequestTypeDef
@@ -4322,6 +4443,27 @@ class DeleteAccountCustomizationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteAccountSubscriptionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DeleteAccountSubscriptionResponseTypeDef
+
+def get_value() -> DeleteAccountSubscriptionResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAccountSubscriptionResponseTypeDef(TypedDict):
+    RequestId: str,
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAnalysisResponseTypeDef
 
 ```python title="Usage Example"
@@ -4817,6 +4959,7 @@ def get_value() -> GenerateEmbedUrlForAnonymousUserResponseTypeDef:
         "EmbedUrl": ...,
         "Status": ...,
         "RequestId": ...,
+        "AnonymousUserArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4826,6 +4969,7 @@ class GenerateEmbedUrlForAnonymousUserResponseTypeDef(TypedDict):
     EmbedUrl: str,
     Status: int,
     RequestId: str,
+    AnonymousUserArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -6801,6 +6945,74 @@ class ListDashboardVersionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DashboardVersionSummaryTypeDef](./type_defs.md#dashboardversionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchDataSetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDataSetsRequestRequestTypeDef
+
+def get_value() -> SearchDataSetsRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDataSetsRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[DataSetSearchFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: DataSetSearchFilterTypeDef](./type_defs.md#datasetsearchfiltertypedef) 
+## SearchDataSourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDataSourcesRequestRequestTypeDef
+
+def get_value() -> SearchDataSourcesRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDataSourcesRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[DataSourceSearchFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: DataSourceSearchFilterTypeDef](./type_defs.md#datasourcesearchfiltertypedef) 
+## SearchDataSourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDataSourcesResponseTypeDef
+
+def get_value() -> SearchDataSourcesResponseTypeDef:
+    return {
+        "DataSourceSummaries": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDataSourcesResponseTypeDef(TypedDict):
+    DataSourceSummaries: List[DataSourceSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataSourceSummaryTypeDef](./type_defs.md#datasourcesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFolderResponseTypeDef
 
 ```python title="Usage Example"
@@ -7402,6 +7614,48 @@ class SearchDashboardsRequestSearchDashboardsPaginateTypeDef(TypedDict):
 
 1. See [:material-code-braces: DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchDataSetsRequestSearchDataSetsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDataSetsRequestSearchDataSetsPaginateTypeDef
+
+def get_value() -> SearchDataSetsRequestSearchDataSetsPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDataSetsRequestSearchDataSetsPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[DataSetSearchFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DataSetSearchFilterTypeDef](./type_defs.md#datasetsearchfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## SearchDataSourcesRequestSearchDataSourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDataSourcesRequestSearchDataSourcesPaginateTypeDef
+
+def get_value() -> SearchDataSourcesRequestSearchDataSourcesPaginateTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDataSourcesRequestSearchDataSourcesPaginateTypeDef(TypedDict):
+    AwsAccountId: str,
+    Filters: Sequence[DataSourceSearchFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DataSourceSearchFilterTypeDef](./type_defs.md#datasourcesearchfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFolderMembersResponseTypeDef
 
 ```python title="Usage Example"
@@ -7747,10 +8001,12 @@ def get_value() -> AnonymousUserEmbeddingExperienceConfigurationTypeDef:
 class AnonymousUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
     Dashboard: NotRequired[AnonymousUserDashboardEmbeddingConfigurationTypeDef],  # (1)
     DashboardVisual: NotRequired[AnonymousUserDashboardVisualEmbeddingConfigurationTypeDef],  # (2)
+    QSearchBar: NotRequired[AnonymousUserQSearchBarEmbeddingConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: AnonymousUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerdashboardembeddingconfigurationtypedef) 
 2. See [:material-code-braces: AnonymousUserDashboardVisualEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerdashboardvisualembeddingconfigurationtypedef) 
+3. See [:material-code-braces: AnonymousUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerqsearchbarembeddingconfigurationtypedef) 
 ## RegisteredUserEmbeddingExperienceConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -7901,6 +8157,32 @@ class ListDataSetsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataSetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SearchDataSetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SearchDataSetsResponseTypeDef
+
+def get_value() -> SearchDataSetsResponseTypeDef:
+    return {
+        "DataSetSummaries": ...,
+        "NextToken": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SearchDataSetsResponseTypeDef(TypedDict):
+    DataSetSummaries: List[DataSetSummaryTypeDef],  # (1)
+    NextToken: str,
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataSetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DashboardTypeDef
 
 ```python title="Usage Example"
@@ -8028,6 +8310,7 @@ class DataSourceParametersTypeDef(TypedDict):
     TwitterParameters: NotRequired[TwitterParametersTypeDef],  # (20)
     AmazonOpenSearchParameters: NotRequired[AmazonOpenSearchParametersTypeDef],  # (21)
     ExasolParameters: NotRequired[ExasolParametersTypeDef],  # (22)
+    DatabricksParameters: NotRequired[DatabricksParametersTypeDef],  # (23)
 ```
 
 1. See [:material-code-braces: AmazonElasticsearchParametersTypeDef](./type_defs.md#amazonelasticsearchparameterstypedef) 
@@ -8052,6 +8335,7 @@ class DataSourceParametersTypeDef(TypedDict):
 20. See [:material-code-braces: TwitterParametersTypeDef](./type_defs.md#twitterparameterstypedef) 
 21. See [:material-code-braces: AmazonOpenSearchParametersTypeDef](./type_defs.md#amazonopensearchparameterstypedef) 
 22. See [:material-code-braces: ExasolParametersTypeDef](./type_defs.md#exasolparameterstypedef) 
+23. See [:material-code-braces: DatabricksParametersTypeDef](./type_defs.md#databricksparameterstypedef) 
 ## SheetStyleTypeDef
 
 ```python title="Usage Example"

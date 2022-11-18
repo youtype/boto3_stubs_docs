@@ -2085,6 +2085,25 @@ class UpdateConnectorProfileResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateConnectorRegistrationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import UpdateConnectorRegistrationResponseTypeDef
+
+def get_value() -> UpdateConnectorRegistrationResponseTypeDef:
+    return {
+        "connectorArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConnectorRegistrationResponseTypeDef(TypedDict):
+    connectorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFlowResponseTypeDef
 
 ```python title="Usage Example"
@@ -2620,6 +2639,25 @@ class RegisterConnectorRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype) 
 2. See [:material-code-braces: ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef) 
+## UpdateConnectorRegistrationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import UpdateConnectorRegistrationRequestRequestTypeDef
+
+def get_value() -> UpdateConnectorRegistrationRequestRequestTypeDef:
+    return {
+        "connectorLabel": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateConnectorRegistrationRequestRequestTypeDef(TypedDict):
+    connectorLabel: str,
+    description: NotRequired[str],
+    connectorProvisioningConfig: NotRequired[ConnectorProvisioningConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef) 
 ## ListFlowsResponseTypeDef
 
 ```python title="Usage Example"

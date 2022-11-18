@@ -87,6 +87,21 @@ CertificateSourceType = Literal[
     "iam",
 ]
 ```
+## ContinuousDeploymentPolicyTypeType
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.literals import ContinuousDeploymentPolicyTypeType
+
+def get_value() -> ContinuousDeploymentPolicyTypeType:
+    return "SingleHeader"
+```
+
+```python title="Definition"
+ContinuousDeploymentPolicyTypeType = Literal[
+    "SingleHeader",
+    "SingleWeight",
+]
+```
 ## DistributionDeployedWaiterName
 
 ```python title="Usage Example"
@@ -691,6 +706,7 @@ ServiceName = Literal[
     "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
+    "chime-sdk-voice",
     "cloud9",
     "cloudcontrol",
     "clouddirectory",
@@ -795,6 +811,7 @@ ServiceName = Literal[
     "iot",
     "iot-data",
     "iot-jobs-data",
+    "iot-roborunner",
     "iot1click-devices",
     "iot1click-projects",
     "iotanalytics",
@@ -942,7 +959,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
-    "ssmsap",
+    "ssm-sap",
     "sso",
     "sso-admin",
     "sso-oidc",

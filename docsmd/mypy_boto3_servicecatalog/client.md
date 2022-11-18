@@ -471,6 +471,7 @@ def create_portfolio_share(
     AccountId: str = ...,
     OrganizationNode: OrganizationNodeTypeDef = ...,  # (1)
     ShareTagOptions: bool = ...,
+    SharePrincipals: bool = ...,
 ) -> CreatePortfolioShareOutputTypeDef:  # (2)
     ...
 ```
@@ -503,7 +504,6 @@ def create_product(
     Name: str,
     Owner: str,
     ProductType: ProductTypeType,  # (1)
-    ProvisioningArtifactParameters: ProvisioningArtifactPropertiesTypeDef,  # (2)
     IdempotencyToken: str,
     AcceptLanguage: str = ...,
     Description: str = ...,
@@ -511,15 +511,18 @@ def create_product(
     SupportDescription: str = ...,
     SupportEmail: str = ...,
     SupportUrl: str = ...,
-    Tags: Sequence[TagTypeDef] = ...,  # (3)
-) -> CreateProductOutputTypeDef:  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    ProvisioningArtifactParameters: ProvisioningArtifactPropertiesTypeDef = ...,  # (3)
+    SourceConnection: SourceConnectionTypeDef = ...,  # (4)
+) -> CreateProductOutputTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: ProductTypeType](./literals.md#producttypetype) 
-2. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
+4. See [:material-code-braces: SourceConnectionTypeDef](./type_defs.md#sourceconnectiontypedef) 
+5. See [:material-code-braces: CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -527,7 +530,6 @@ kwargs: CreateProductInputRequestTypeDef = {  # (1)
     "Name": ...,
     "Owner": ...,
     "ProductType": ...,
-    "ProvisioningArtifactParameters": ...,
     "IdempotencyToken": ...,
 }
 
@@ -1493,10 +1495,12 @@ def disassociate_principal_from_portfolio(
     PortfolioId: str,
     PrincipalARN: str,
     AcceptLanguage: str = ...,
+    PrincipalType: PrincipalTypeType = ...,  # (1)
 ) -> Dict[str, Any]:
     ...
 ```
 
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 
 
 ```python title="Usage example with kwargs"
@@ -1761,9 +1765,8 @@ parent.get_provisioned_product_outputs(**kwargs)
 
 ### import\_as\_provisioned\_product
 
-Requests the import of a resource as a Amazon Web Services Service Catalog
-provisioned product that is associated to a Amazon Web Services Service Catalog
-product and provisioning artifact.
+Requests the import of a resource as an Service Catalog provisioned product that
+is associated to an Service Catalog product and provisioning artifact.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog").import_as_provisioned_product` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
@@ -2063,7 +2066,8 @@ parent.list_portfolios_for_product(**kwargs)
 
 ### list\_principals\_for\_portfolio
 
-Lists all principal ARNs associated with the specified portfolio.
+Lists all `PrincipalARN` s and corresponding `PrincipalType` s associated with
+the specified portfolio.
 
 Type annotations and code completion for `#!python boto3.client("servicecatalog").list_principals_for_portfolio` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
@@ -2733,6 +2737,7 @@ def update_portfolio_share(
     AccountId: str = ...,
     OrganizationNode: OrganizationNodeTypeDef = ...,  # (1)
     ShareTagOptions: bool = ...,
+    SharePrincipals: bool = ...,
 ) -> UpdatePortfolioShareOutputTypeDef:  # (2)
     ...
 ```
@@ -2773,12 +2778,14 @@ def update_product(
     SupportUrl: str = ...,
     AddTags: Sequence[TagTypeDef] = ...,  # (1)
     RemoveTags: Sequence[str] = ...,
-) -> UpdateProductOutputTypeDef:  # (2)
+    SourceConnection: SourceConnectionTypeDef = ...,  # (2)
+) -> UpdateProductOutputTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef) 
+2. See [:material-code-braces: SourceConnectionTypeDef](./type_defs.md#sourceconnectiontypedef) 
+3. See [:material-code-braces: UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

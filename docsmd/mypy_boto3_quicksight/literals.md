@@ -36,12 +36,18 @@ AnalysisErrorTypeType = Literal[
 from mypy_boto3_quicksight.literals import AnalysisFilterAttributeType
 
 def get_value() -> AnalysisFilterAttributeType:
-    return "QUICKSIGHT_USER"
+    return "ANALYSIS_NAME"
 ```
 
 ```python title="Definition"
 AnalysisFilterAttributeType = Literal[
+    "ANALYSIS_NAME",
+    "DIRECT_QUICKSIGHT_OWNER",
+    "DIRECT_QUICKSIGHT_SOLE_OWNER",
+    "DIRECT_QUICKSIGHT_VIEWER_OR_OWNER",
+    "QUICKSIGHT_OWNER",
     "QUICKSIGHT_USER",
+    "QUICKSIGHT_VIEWER_OR_OWNER",
 ]
 ```
 ## AssignmentStatusType
@@ -152,12 +158,18 @@ DashboardErrorTypeType = Literal[
 from mypy_boto3_quicksight.literals import DashboardFilterAttributeType
 
 def get_value() -> DashboardFilterAttributeType:
-    return "QUICKSIGHT_USER"
+    return "DASHBOARD_NAME"
 ```
 
 ```python title="Definition"
 DashboardFilterAttributeType = Literal[
+    "DASHBOARD_NAME",
+    "DIRECT_QUICKSIGHT_OWNER",
+    "DIRECT_QUICKSIGHT_SOLE_OWNER",
+    "DIRECT_QUICKSIGHT_VIEWER_OR_OWNER",
+    "QUICKSIGHT_OWNER",
     "QUICKSIGHT_USER",
+    "QUICKSIGHT_VIEWER_OR_OWNER",
 ]
 ```
 ## DashboardUIStateType
@@ -173,6 +185,25 @@ def get_value() -> DashboardUIStateType:
 DashboardUIStateType = Literal[
     "COLLAPSED",
     "EXPANDED",
+]
+```
+## DataSetFilterAttributeType
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.literals import DataSetFilterAttributeType
+
+def get_value() -> DataSetFilterAttributeType:
+    return "DATASET_NAME"
+```
+
+```python title="Definition"
+DataSetFilterAttributeType = Literal[
+    "DATASET_NAME",
+    "DIRECT_QUICKSIGHT_OWNER",
+    "DIRECT_QUICKSIGHT_SOLE_OWNER",
+    "DIRECT_QUICKSIGHT_VIEWER_OR_OWNER",
+    "QUICKSIGHT_OWNER",
+    "QUICKSIGHT_VIEWER_OR_OWNER",
 ]
 ```
 ## DataSetImportModeType
@@ -211,6 +242,23 @@ DataSourceErrorInfoTypeType = Literal[
     "UNKNOWN_HOST",
 ]
 ```
+## DataSourceFilterAttributeType
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.literals import DataSourceFilterAttributeType
+
+def get_value() -> DataSourceFilterAttributeType:
+    return "DATASOURCE_NAME"
+```
+
+```python title="Definition"
+DataSourceFilterAttributeType = Literal[
+    "DATASOURCE_NAME",
+    "DIRECT_QUICKSIGHT_OWNER",
+    "DIRECT_QUICKSIGHT_SOLE_OWNER",
+    "DIRECT_QUICKSIGHT_VIEWER_OR_OWNER",
+]
+```
 ## DataSourceTypeType
 
 ```python title="Usage Example"
@@ -229,6 +277,7 @@ DataSourceTypeType = Literal[
     "AURORA",
     "AURORA_POSTGRESQL",
     "AWS_IOT_ANALYTICS",
+    "DATABRICKS",
     "EXASOL",
     "GITHUB",
     "JIRA",
@@ -312,6 +361,7 @@ def get_value() -> FilterOperatorType:
 ```python title="Definition"
 FilterOperatorType = Literal[
     "StringEquals",
+    "StringLike",
 ]
 ```
 ## FolderFilterAttributeType
@@ -320,12 +370,18 @@ FilterOperatorType = Literal[
 from mypy_boto3_quicksight.literals import FolderFilterAttributeType
 
 def get_value() -> FolderFilterAttributeType:
-    return "PARENT_FOLDER_ARN"
+    return "DIRECT_QUICKSIGHT_OWNER"
 ```
 
 ```python title="Definition"
 FolderFilterAttributeType = Literal[
+    "DIRECT_QUICKSIGHT_OWNER",
+    "DIRECT_QUICKSIGHT_SOLE_OWNER",
+    "DIRECT_QUICKSIGHT_VIEWER_OR_OWNER",
+    "FOLDER_NAME",
     "PARENT_FOLDER_ARN",
+    "QUICKSIGHT_OWNER",
+    "QUICKSIGHT_VIEWER_OR_OWNER",
 ]
 ```
 ## FolderTypeType
@@ -888,6 +944,34 @@ SearchDashboardsPaginatorName = Literal[
     "search_dashboards",
 ]
 ```
+## SearchDataSetsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.literals import SearchDataSetsPaginatorName
+
+def get_value() -> SearchDataSetsPaginatorName:
+    return "search_data_sets"
+```
+
+```python title="Definition"
+SearchDataSetsPaginatorName = Literal[
+    "search_data_sets",
+]
+```
+## SearchDataSourcesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.literals import SearchDataSourcesPaginatorName
+
+def get_value() -> SearchDataSourcesPaginatorName:
+    return "search_data_sources"
+```
+
+```python title="Definition"
+SearchDataSourcesPaginatorName = Literal[
+    "search_data_sources",
+]
+```
 ## StatusType
 
 ```python title="Usage Example"
@@ -1048,6 +1132,7 @@ ServiceName = Literal[
     "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
+    "chime-sdk-voice",
     "cloud9",
     "cloudcontrol",
     "clouddirectory",
@@ -1152,6 +1237,7 @@ ServiceName = Literal[
     "iot",
     "iot-data",
     "iot-jobs-data",
+    "iot-roborunner",
     "iot1click-devices",
     "iot1click-projects",
     "iotanalytics",
@@ -1299,7 +1385,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
-    "ssmsap",
+    "ssm-sap",
     "sso",
     "sso-admin",
     "sso-oidc",
@@ -1379,6 +1465,8 @@ PaginatorName = Literal[
     "list_themes",
     "search_analyses",
     "search_dashboards",
+    "search_data_sets",
+    "search_data_sources",
 ]
 ```
 ## RegionName

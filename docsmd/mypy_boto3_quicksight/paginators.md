@@ -851,3 +851,127 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: SearchDashboardsRequestSearchDashboardsPaginateTypeDef](./type_defs.md#searchdashboardsrequestsearchdashboardspaginatetypedef) 
+## SearchDataSetsPaginator
+
+Type annotations and code completion for `#!python boto3.client("quicksight").get_paginator("search_data_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchDataSets)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import SearchDataSetsPaginator
+
+def get_search_data_sets_paginator() -> SearchDataSetsPaginator:
+    return Session().client("quicksight").get_paginator("search_data_sets")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import SearchDataSetsPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: SearchDataSetsPaginator = client.get_paginator("search_data_sets")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [SearchDataSetsPaginator](./paginators.md#searchdatasetspaginator)
+3. item: [:material-code-braces: SearchDataSetsResponseTypeDef](./type_defs.md#searchdatasetsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python SearchDataSetsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AwsAccountId: str,
+    Filters: Sequence[DataSetSearchFilterTypeDef],  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchDataSetsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: DataSetSearchFilterTypeDef](./type_defs.md#datasetsearchfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchDataSetsResponseTypeDef](./type_defs.md#searchdatasetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchDataSetsRequestSearchDataSetsPaginateTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchDataSetsRequestSearchDataSetsPaginateTypeDef](./type_defs.md#searchdatasetsrequestsearchdatasetspaginatetypedef) 
+## SearchDataSourcesPaginator
+
+Type annotations and code completion for `#!python boto3.client("quicksight").get_paginator("search_data_sources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Paginator.SearchDataSources)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import SearchDataSourcesPaginator
+
+def get_search_data_sources_paginator() -> SearchDataSourcesPaginator:
+    return Session().client("quicksight").get_paginator("search_data_sources")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_quicksight.paginator import SearchDataSourcesPaginator
+
+session = Session()
+
+client = Session().client("quicksight")  # (1)
+paginator: SearchDataSourcesPaginator = client.get_paginator("search_data_sources")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [QuickSightClient](./client.md)
+2. paginator: [SearchDataSourcesPaginator](./paginators.md#searchdatasourcespaginator)
+3. item: [:material-code-braces: SearchDataSourcesResponseTypeDef](./type_defs.md#searchdatasourcesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python SearchDataSourcesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AwsAccountId: str,
+    Filters: Sequence[DataSourceSearchFilterTypeDef],  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchDataSourcesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: DataSourceSearchFilterTypeDef](./type_defs.md#datasourcesearchfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchDataSourcesResponseTypeDef](./type_defs.md#searchdatasourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchDataSourcesRequestSearchDataSourcesPaginateTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchDataSourcesRequestSearchDataSourcesPaginateTypeDef](./type_defs.md#searchdatasourcesrequestsearchdatasourcespaginatetypedef) 

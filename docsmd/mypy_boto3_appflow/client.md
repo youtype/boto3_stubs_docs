@@ -571,7 +571,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### register\_connector
 
-Registers a new connector with your Amazon Web Services account.
+Registers a new custom connector with your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("appflow").register_connector` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.register_connector)
@@ -694,7 +694,7 @@ parent.tag_resource(**kwargs)
 ### unregister\_connector
 
 Unregisters the custom connector registered in your account that matches the
-connectorLabel provided in the request.
+connector label provided in the request.
 
 Type annotations and code completion for `#!python boto3.client("appflow").unregister_connector` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.unregister_connector)
@@ -785,6 +785,38 @@ parent.update_connector_profile(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateConnectorProfileRequestRequestTypeDef](./type_defs.md#updateconnectorprofilerequestrequesttypedef) 
+
+### update\_connector\_registration
+
+Updates a custom connector that you've previously registered.
+
+Type annotations and code completion for `#!python boto3.client("appflow").update_connector_registration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_registration)
+
+```python title="Method definition"
+def update_connector_registration(
+    self,
+    *,
+    connectorLabel: str,
+    description: str = ...,
+    connectorProvisioningConfig: ConnectorProvisioningConfigTypeDef = ...,  # (1)
+) -> UpdateConnectorRegistrationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef) 
+2. See [:material-code-braces: UpdateConnectorRegistrationResponseTypeDef](./type_defs.md#updateconnectorregistrationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectorRegistrationRequestRequestTypeDef = {  # (1)
+    "connectorLabel": ...,
+}
+
+parent.update_connector_registration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateConnectorRegistrationRequestRequestTypeDef](./type_defs.md#updateconnectorregistrationrequestrequesttypedef) 
 
 ### update\_flow
 

@@ -567,6 +567,7 @@ class CreateAssessmentReportRequestRequestTypeDef(TypedDict):
     name: str,
     assessmentId: str,
     description: NotRequired[str],
+    queryStatement: NotRequired[str],
 ```
 
 ## DelegationMetadataTypeDef
@@ -711,6 +712,27 @@ class DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef(TypedDict)
     evidenceFolderId: str,
 ```
 
+## EvidenceFinderEnablementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.type_defs import EvidenceFinderEnablementTypeDef
+
+def get_value() -> EvidenceFinderEnablementTypeDef:
+    return {
+        "eventDataStoreArn": ...,
+    }
+```
+
+```python title="Definition"
+class EvidenceFinderEnablementTypeDef(TypedDict):
+    eventDataStoreArn: NotRequired[str],
+    enablementStatus: NotRequired[EvidenceFinderEnablementStatusType],  # (1)
+    backfillStatus: NotRequired[EvidenceFinderBackfillStatusType],  # (2)
+    error: NotRequired[str],
+```
+
+1. See [:material-code-brackets: EvidenceFinderEnablementStatusType](./literals.md#evidencefinderenablementstatustype) 
+2. See [:material-code-brackets: EvidenceFinderBackfillStatusType](./literals.md#evidencefinderbackfillstatustype) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"
@@ -726,6 +748,7 @@ def get_value() -> ResourceTypeDef:
 class ResourceTypeDef(TypedDict):
     arn: NotRequired[str],
     value: NotRequired[str],
+    complianceCheck: NotRequired[str],
 ```
 
 ## GetAssessmentFrameworkRequestRequestTypeDef
@@ -1553,28 +1576,6 @@ class AssessmentControlTypeDef(TypedDict):
 1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
 2. See [:material-code-brackets: ControlResponseType](./literals.md#controlresponsetype) 
 3. See [:material-code-braces: ControlCommentTypeDef](./type_defs.md#controlcommenttypedef) 
-## SettingsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_auditmanager.type_defs import SettingsTypeDef
-
-def get_value() -> SettingsTypeDef:
-    return {
-        "isAwsOrgEnabled": ...,
-    }
-```
-
-```python title="Definition"
-class SettingsTypeDef(TypedDict):
-    isAwsOrgEnabled: NotRequired[bool],
-    snsTopic: NotRequired[str],
-    defaultAssessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (1)
-    defaultProcessOwners: NotRequired[List[RoleTypeDef]],  # (2)
-    kmsKey: NotRequired[str],
-```
-
-1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
-2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
 ## UpdateSettingsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1592,6 +1593,7 @@ class UpdateSettingsRequestRequestTypeDef(TypedDict):
     defaultAssessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (1)
     defaultProcessOwners: NotRequired[Sequence[RoleTypeDef]],  # (2)
     kmsKey: NotRequired[str],
+    evidenceFinderEnabled: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
@@ -2319,6 +2321,30 @@ class GetDelegationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DelegationMetadataTypeDef](./type_defs.md#delegationmetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.type_defs import SettingsTypeDef
+
+def get_value() -> SettingsTypeDef:
+    return {
+        "isAwsOrgEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class SettingsTypeDef(TypedDict):
+    isAwsOrgEnabled: NotRequired[bool],
+    snsTopic: NotRequired[str],
+    defaultAssessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (1)
+    defaultProcessOwners: NotRequired[List[RoleTypeDef]],  # (2)
+    kmsKey: NotRequired[str],
+    evidenceFinderEnablement: NotRequired[EvidenceFinderEnablementTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+3. See [:material-code-braces: EvidenceFinderEnablementTypeDef](./type_defs.md#evidencefinderenablementtypedef) 
 ## EvidenceTypeDef
 
 ```python title="Usage Example"
@@ -2606,46 +2632,6 @@ class UpdateAssessmentControlResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_auditmanager.type_defs import GetSettingsResponseTypeDef
-
-def get_value() -> GetSettingsResponseTypeDef:
-    return {
-        "settings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetSettingsResponseTypeDef(TypedDict):
-    settings: SettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateSettingsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_auditmanager.type_defs import UpdateSettingsResponseTypeDef
-
-def get_value() -> UpdateSettingsResponseTypeDef:
-    return {
-        "settings": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateSettingsResponseTypeDef(TypedDict):
-    settings: SettingsTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchCreateDelegationByAssessmentResponseTypeDef
 
 ```python title="Usage Example"
@@ -2903,6 +2889,46 @@ class UpdateAssessmentFrameworkRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef) 
+## GetSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.type_defs import GetSettingsResponseTypeDef
+
+def get_value() -> GetSettingsResponseTypeDef:
+    return {
+        "settings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSettingsResponseTypeDef(TypedDict):
+    settings: SettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.type_defs import UpdateSettingsResponseTypeDef
+
+def get_value() -> UpdateSettingsResponseTypeDef:
+    return {
+        "settings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSettingsResponseTypeDef(TypedDict):
+    settings: SettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEvidenceByEvidenceFolderResponseTypeDef
 
 ```python title="Usage Example"

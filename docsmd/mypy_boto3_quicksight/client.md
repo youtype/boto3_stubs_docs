@@ -41,6 +41,7 @@ except (
     client.InternalFailureException,
     client.InvalidNextTokenException,
     client.InvalidParameterValueException,
+    client.InvalidRequestException,
     client.LimitExceededException,
     client.PreconditionNotMetException,
     client.QuickSightUserNotFoundException,
@@ -848,6 +849,36 @@ parent.delete_account_customization(**kwargs)
 
 1. See [:material-code-braces: DeleteAccountCustomizationRequestRequestTypeDef](./type_defs.md#deleteaccountcustomizationrequestrequesttypedef) 
 
+### delete\_account\_subscription
+
+Use the `DeleteAccountSubscription` operation to delete an Amazon QuickSight
+account.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").delete_account_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_subscription)
+
+```python title="Method definition"
+def delete_account_subscription(
+    self,
+    *,
+    AwsAccountId: str,
+) -> DeleteAccountSubscriptionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteAccountSubscriptionResponseTypeDef](./type_defs.md#deleteaccountsubscriptionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteAccountSubscriptionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+}
+
+parent.delete_account_subscription(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteAccountSubscriptionRequestRequestTypeDef](./type_defs.md#deleteaccountsubscriptionrequestrequesttypedef) 
+
 ### delete\_analysis
 
 Deletes an analysis from Amazon QuickSight.
@@ -1436,7 +1467,7 @@ parent.describe_account_settings(**kwargs)
 
 ### describe\_account\_subscription
 
-Use the DescribeAccountSubscription operation to receive a description of a
+Use the DescribeAccountSubscription operation to receive a description of an
 Amazon QuickSight account's subscription.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").describe_account_subscription` method.
@@ -3271,6 +3302,76 @@ parent.search_dashboards(**kwargs)
 
 1. See [:material-code-braces: SearchDashboardsRequestRequestTypeDef](./type_defs.md#searchdashboardsrequestrequesttypedef) 
 
+### search\_data\_sets
+
+Use the `SearchDataSets` operation to search for datasets that belong to an
+account.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").search_data_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_data_sets)
+
+```python title="Method definition"
+def search_data_sets(
+    self,
+    *,
+    AwsAccountId: str,
+    Filters: Sequence[DataSetSearchFilterTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchDataSetsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataSetSearchFilterTypeDef](./type_defs.md#datasetsearchfiltertypedef) 
+2. See [:material-code-braces: SearchDataSetsResponseTypeDef](./type_defs.md#searchdatasetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchDataSetsRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Filters": ...,
+}
+
+parent.search_data_sets(**kwargs)
+```
+
+1. See [:material-code-braces: SearchDataSetsRequestRequestTypeDef](./type_defs.md#searchdatasetsrequestrequesttypedef) 
+
+### search\_data\_sources
+
+Use the `SearchDataSources` operation to search for data sources that belong to
+an account.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").search_data_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_data_sources)
+
+```python title="Method definition"
+def search_data_sources(
+    self,
+    *,
+    AwsAccountId: str,
+    Filters: Sequence[DataSourceSearchFilterTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchDataSourcesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataSourceSearchFilterTypeDef](./type_defs.md#datasourcesearchfiltertypedef) 
+2. See [:material-code-braces: SearchDataSourcesResponseTypeDef](./type_defs.md#searchdatasourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchDataSourcesRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "Filters": ...,
+}
+
+parent.search_data_sources(**kwargs)
+```
+
+1. See [:material-code-braces: SearchDataSourcesRequestRequestTypeDef](./type_defs.md#searchdatasourcesrequestrequesttypedef) 
+
 ### search\_folders
 
 Searches the subfolders in a folder.
@@ -3454,6 +3555,7 @@ def update_account_settings(
     AwsAccountId: str,
     DefaultNamespace: str,
     NotificationEmail: str = ...,
+    TerminationProtectionEnabled: bool = ...,
 ) -> UpdateAccountSettingsResponseTypeDef:  # (1)
     ...
 ```
@@ -4303,6 +4405,8 @@ Type annotations and code completion for `#!python boto3.client("quicksight").ge
 - `client.get_paginator("list_themes")` -> [ListThemesPaginator](./paginators.md#listthemespaginator)
 - `client.get_paginator("search_analyses")` -> [SearchAnalysesPaginator](./paginators.md#searchanalysespaginator)
 - `client.get_paginator("search_dashboards")` -> [SearchDashboardsPaginator](./paginators.md#searchdashboardspaginator)
+- `client.get_paginator("search_data_sets")` -> [SearchDataSetsPaginator](./paginators.md#searchdatasetspaginator)
+- `client.get_paginator("search_data_sources")` -> [SearchDataSourcesPaginator](./paginators.md#searchdatasourcespaginator)
 
 
 

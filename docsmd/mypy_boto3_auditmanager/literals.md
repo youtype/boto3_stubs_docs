@@ -169,6 +169,39 @@ DelegationStatusType = Literal[
     "UNDER_REVIEW",
 ]
 ```
+## EvidenceFinderBackfillStatusType
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.literals import EvidenceFinderBackfillStatusType
+
+def get_value() -> EvidenceFinderBackfillStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+EvidenceFinderBackfillStatusType = Literal[
+    "COMPLETED",
+    "IN_PROGRESS",
+    "NOT_STARTED",
+]
+```
+## EvidenceFinderEnablementStatusType
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.literals import EvidenceFinderEnablementStatusType
+
+def get_value() -> EvidenceFinderEnablementStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+EvidenceFinderEnablementStatusType = Literal[
+    "DISABLE_IN_PROGRESS",
+    "DISABLED",
+    "ENABLE_IN_PROGRESS",
+    "ENABLED",
+]
+```
 ## FrameworkTypeType
 
 ```python title="Usage Example"
@@ -245,6 +278,7 @@ SettingAttributeType = Literal[
     "ALL",
     "DEFAULT_ASSESSMENT_REPORTS_DESTINATION",
     "DEFAULT_PROCESS_OWNERS",
+    "EVIDENCE_FINDER_ENABLEMENT",
     "IS_AWS_ORG_ENABLED",
     "SNS_TOPIC",
 ]
@@ -415,6 +449,7 @@ ServiceName = Literal[
     "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
+    "chime-sdk-voice",
     "cloud9",
     "cloudcontrol",
     "clouddirectory",
@@ -519,6 +554,7 @@ ServiceName = Literal[
     "iot",
     "iot-data",
     "iot-jobs-data",
+    "iot-roborunner",
     "iot1click-devices",
     "iot1click-projects",
     "iotanalytics",
@@ -666,7 +702,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
-    "ssmsap",
+    "ssm-sap",
     "sso",
     "sso-admin",
     "sso-oidc",

@@ -801,6 +801,21 @@ JDBCDataTypeType = Literal[
     "VARCHAR",
 ]
 ```
+## JdbcMetadataEntryType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import JdbcMetadataEntryType
+
+def get_value() -> JdbcMetadataEntryType:
+    return "COMMENTS"
+```
+
+```python title="Definition"
+JdbcMetadataEntryType = Literal[
+    "COMMENTS",
+    "RAWTYPES",
+]
+```
 ## JobBookmarksEncryptionModeType
 
 ```python title="Usage Example"
@@ -1688,6 +1703,7 @@ ServiceName = Literal[
     "chime-sdk-media-pipelines",
     "chime-sdk-meetings",
     "chime-sdk-messaging",
+    "chime-sdk-voice",
     "cloud9",
     "cloudcontrol",
     "clouddirectory",
@@ -1792,6 +1808,7 @@ ServiceName = Literal[
     "iot",
     "iot-data",
     "iot-jobs-data",
+    "iot-roborunner",
     "iot1click-devices",
     "iot1click-projects",
     "iotanalytics",
@@ -1939,7 +1956,7 @@ ServiceName = Literal[
     "ssm",
     "ssm-contacts",
     "ssm-incidents",
-    "ssmsap",
+    "ssm-sap",
     "sso",
     "sso-admin",
     "sso-oidc",

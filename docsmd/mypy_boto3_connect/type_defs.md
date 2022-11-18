@@ -742,6 +742,8 @@ class CreateSecurityProfileRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
     Permissions: NotRequired[Sequence[str]],
     Tags: NotRequired[Mapping[str, str]],
+    AllowedAccessControlTags: NotRequired[Mapping[str, str]],
+    TagRestrictedResources: NotRequired[Sequence[str]],
 ```
 
 ## CreateTrafficDistributionGroupRequestRequestTypeDef
@@ -1435,6 +1437,8 @@ class SecurityProfileTypeDef(TypedDict):
     SecurityProfileName: NotRequired[str],
     Description: NotRequired[str],
     Tags: NotRequired[Dict[str, str]],
+    AllowedAccessControlTags: NotRequired[Dict[str, str]],
+    TagRestrictedResources: NotRequired[List[str]],
 ```
 
 ## DescribeTrafficDistributionGroupRequestRequestTypeDef
@@ -3921,6 +3925,8 @@ class UpdateSecurityProfileRequestRequestTypeDef(TypedDict):
     InstanceId: str,
     Description: NotRequired[str],
     Permissions: NotRequired[Sequence[str]],
+    AllowedAccessControlTags: NotRequired[Mapping[str, str]],
+    TagRestrictedResources: NotRequired[Sequence[str]],
 ```
 
 ## UpdateUserHierarchyGroupNameRequestRequestTypeDef

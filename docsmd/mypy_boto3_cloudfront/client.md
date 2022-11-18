@@ -115,6 +115,7 @@ except (
     client.ResourceInUse,
     client.ResponseHeadersPolicyAlreadyExists,
     client.ResponseHeadersPolicyInUse,
+    client.StagingDistributionInUse,
     client.StreamingDistributionAlreadyExists,
     client.StreamingDistributionNotDisabled,
     client.TestFunctionFailed,
@@ -249,6 +250,40 @@ def close(
 ```
 
 
+### copy\_distribution
+
+Creates a staging distribution using the configuration of the provided primary
+distribution.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").copy_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.copy_distribution)
+
+```python title="Method definition"
+def copy_distribution(
+    self,
+    *,
+    PrimaryDistributionId: str,
+    CallerReference: str,
+    Staging: bool = ...,
+    IfMatch: str = ...,
+) -> CopyDistributionResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CopyDistributionResultTypeDef](./type_defs.md#copydistributionresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CopyDistributionRequestRequestTypeDef = {  # (1)
+    "PrimaryDistributionId": ...,
+    "CallerReference": ...,
+}
+
+parent.copy_distribution(**kwargs)
+```
+
+1. See [:material-code-braces: CopyDistributionRequestRequestTypeDef](./type_defs.md#copydistributionrequestrequesttypedef) 
+
 ### create\_cache\_policy
 
 Creates a cache policy.
@@ -309,9 +344,40 @@ parent.create_cloud_front_origin_access_identity(**kwargs)
 
 1. See [:material-code-braces: CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityrequestrequesttypedef) 
 
+### create\_continuous\_deployment\_policy
+
+Creates a continuous deployment policy that distributes traffic for a custom
+domain name to two different CloudFront distributions.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_continuous_deployment_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_continuous_deployment_policy)
+
+```python title="Method definition"
+def create_continuous_deployment_policy(
+    self,
+    *,
+    ContinuousDeploymentPolicyConfig: ContinuousDeploymentPolicyConfigTypeDef,  # (1)
+) -> CreateContinuousDeploymentPolicyResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyConfigTypeDef](./type_defs.md#continuousdeploymentpolicyconfigtypedef) 
+2. See [:material-code-braces: CreateContinuousDeploymentPolicyResultTypeDef](./type_defs.md#createcontinuousdeploymentpolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateContinuousDeploymentPolicyRequestRequestTypeDef = {  # (1)
+    "ContinuousDeploymentPolicyConfig": ...,
+}
+
+parent.create_continuous_deployment_policy(**kwargs)
+```
+
+1. See [:material-code-braces: CreateContinuousDeploymentPolicyRequestRequestTypeDef](./type_defs.md#createcontinuousdeploymentpolicyrequestrequesttypedef) 
+
 ### create\_distribution
 
-Creates a new web distribution.
+Creates a CloudFront distribution.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").create_distribution` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
@@ -837,6 +903,36 @@ parent.delete_cloud_front_origin_access_identity(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#deletecloudfrontoriginaccessidentityrequestrequesttypedef) 
+
+### delete\_continuous\_deployment\_policy
+
+Deletes a continuous deployment policy.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_continuous_deployment_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_continuous_deployment_policy)
+
+```python title="Method definition"
+def delete_continuous_deployment_policy(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteContinuousDeploymentPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.delete_continuous_deployment_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteContinuousDeploymentPolicyRequestRequestTypeDef](./type_defs.md#deletecontinuousdeploymentpolicyrequestrequesttypedef) 
 
 ### delete\_distribution
 
@@ -1364,6 +1460,65 @@ parent.get_cloud_front_origin_access_identity_config(**kwargs)
 ```
 
 1. See [:material-code-braces: GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigrequestrequesttypedef) 
+
+### get\_continuous\_deployment\_policy
+
+Gets a continuous deployment policy, including metadata (the policy’s identifier
+and the date and time when the policy was last modified).
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_continuous_deployment_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_continuous_deployment_policy)
+
+```python title="Method definition"
+def get_continuous_deployment_policy(
+    self,
+    *,
+    Id: str,
+) -> GetContinuousDeploymentPolicyResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetContinuousDeploymentPolicyResultTypeDef](./type_defs.md#getcontinuousdeploymentpolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetContinuousDeploymentPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.get_continuous_deployment_policy(**kwargs)
+```
+
+1. See [:material-code-braces: GetContinuousDeploymentPolicyRequestRequestTypeDef](./type_defs.md#getcontinuousdeploymentpolicyrequestrequesttypedef) 
+
+### get\_continuous\_deployment\_policy\_config
+
+Gets configuration information about a continuous deployment policy.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_continuous_deployment_policy_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_continuous_deployment_policy_config)
+
+```python title="Method definition"
+def get_continuous_deployment_policy_config(
+    self,
+    *,
+    Id: str,
+) -> GetContinuousDeploymentPolicyConfigResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetContinuousDeploymentPolicyConfigResultTypeDef](./type_defs.md#getcontinuousdeploymentpolicyconfigresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetContinuousDeploymentPolicyConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.get_continuous_deployment_policy_config(**kwargs)
+```
+
+1. See [:material-code-braces: GetContinuousDeploymentPolicyConfigRequestRequestTypeDef](./type_defs.md#getcontinuousdeploymentpolicyconfigrequestrequesttypedef) 
 
 ### get\_distribution
 
@@ -2109,6 +2264,37 @@ parent.list_conflicting_aliases(**kwargs)
 ```
 
 1. See [:material-code-braces: ListConflictingAliasesRequestRequestTypeDef](./type_defs.md#listconflictingaliasesrequestrequesttypedef) 
+
+### list\_continuous\_deployment\_policies
+
+Gets a list of the continuous deployment policies in your Amazon Web Services
+account.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_continuous_deployment_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_continuous_deployment_policies)
+
+```python title="Method definition"
+def list_continuous_deployment_policies(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListContinuousDeploymentPoliciesResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListContinuousDeploymentPoliciesResultTypeDef](./type_defs.md#listcontinuousdeploymentpoliciesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListContinuousDeploymentPoliciesRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
+
+parent.list_continuous_deployment_policies(**kwargs)
+```
+
+1. See [:material-code-braces: ListContinuousDeploymentPoliciesRequestRequestTypeDef](./type_defs.md#listcontinuousdeploymentpoliciesrequestrequesttypedef) 
 
 ### list\_distributions
 
@@ -2898,9 +3084,42 @@ parent.update_cloud_front_origin_access_identity(**kwargs)
 
 1. See [:material-code-braces: UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityrequestrequesttypedef) 
 
+### update\_continuous\_deployment\_policy
+
+Updates a continuous deployment policy.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_continuous_deployment_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_continuous_deployment_policy)
+
+```python title="Method definition"
+def update_continuous_deployment_policy(
+    self,
+    *,
+    ContinuousDeploymentPolicyConfig: ContinuousDeploymentPolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateContinuousDeploymentPolicyResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyConfigTypeDef](./type_defs.md#continuousdeploymentpolicyconfigtypedef) 
+2. See [:material-code-braces: UpdateContinuousDeploymentPolicyResultTypeDef](./type_defs.md#updatecontinuousdeploymentpolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateContinuousDeploymentPolicyRequestRequestTypeDef = {  # (1)
+    "ContinuousDeploymentPolicyConfig": ...,
+    "Id": ...,
+}
+
+parent.update_continuous_deployment_policy(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateContinuousDeploymentPolicyRequestRequestTypeDef](./type_defs.md#updatecontinuousdeploymentpolicyrequestrequesttypedef) 
+
 ### update\_distribution
 
-Updates the configuration for a web distribution.
+Updates the configuration for a CloudFront distribution.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").update_distribution` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution)

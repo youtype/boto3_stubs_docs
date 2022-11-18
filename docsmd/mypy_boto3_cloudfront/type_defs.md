@@ -39,7 +39,7 @@ def get_value() -> AliasesTypeDef:
 ```python title="Definition"
 class AliasesTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[str]],
+    Items: NotRequired[List[str]],
 ```
 
 ## CachedMethodsTypeDef
@@ -57,7 +57,7 @@ def get_value() -> CachedMethodsTypeDef:
 ```python title="Definition"
 class CachedMethodsTypeDef(TypedDict):
     Quantity: int,
-    Items: Sequence[MethodType],  # (1)
+    Items: List[MethodType],  # (1)
 ```
 
 1. See [:material-code-brackets: MethodType](./literals.md#methodtype) 
@@ -95,7 +95,7 @@ def get_value() -> TrustedKeyGroupsTypeDef:
 class TrustedKeyGroupsTypeDef(TypedDict):
     Enabled: bool,
     Quantity: int,
-    Items: NotRequired[Sequence[str]],
+    Items: NotRequired[List[str]],
 ```
 
 ## TrustedSignersTypeDef
@@ -114,7 +114,7 @@ def get_value() -> TrustedSignersTypeDef:
 class TrustedSignersTypeDef(TypedDict):
     Enabled: bool,
     Quantity: int,
-    Items: NotRequired[Sequence[str]],
+    Items: NotRequired[List[str]],
 ```
 
 ## CookieNamesTypeDef
@@ -131,7 +131,7 @@ def get_value() -> CookieNamesTypeDef:
 ```python title="Definition"
 class CookieNamesTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[str]],
+    Items: NotRequired[List[str]],
 ```
 
 ## HeadersTypeDef
@@ -148,7 +148,7 @@ def get_value() -> HeadersTypeDef:
 ```python title="Definition"
 class HeadersTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[str]],
+    Items: NotRequired[List[str]],
 ```
 
 ## QueryStringNamesTypeDef
@@ -244,6 +244,79 @@ class ContentTypeProfileTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+## StagingDistributionDnsNamesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import StagingDistributionDnsNamesTypeDef
+
+def get_value() -> StagingDistributionDnsNamesTypeDef:
+    return {
+        "Quantity": ...,
+    }
+```
+
+```python title="Definition"
+class StagingDistributionDnsNamesTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[str]],
+```
+
+## ContinuousDeploymentSingleHeaderConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ContinuousDeploymentSingleHeaderConfigTypeDef
+
+def get_value() -> ContinuousDeploymentSingleHeaderConfigTypeDef:
+    return {
+        "Header": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class ContinuousDeploymentSingleHeaderConfigTypeDef(TypedDict):
+    Header: str,
+    Value: str,
+```
+
+## SessionStickinessConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import SessionStickinessConfigTypeDef
+
+def get_value() -> SessionStickinessConfigTypeDef:
+    return {
+        "IdleTTL": ...,
+        "MaximumTTL": ...,
+    }
+```
+
+```python title="Definition"
+class SessionStickinessConfigTypeDef(TypedDict):
+    IdleTTL: int,
+    MaximumTTL: int,
+```
+
+## CopyDistributionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import CopyDistributionRequestRequestTypeDef
+
+def get_value() -> CopyDistributionRequestRequestTypeDef:
+    return {
+        "PrimaryDistributionId": ...,
+        "CallerReference": ...,
+    }
+```
+
+```python title="Definition"
+class CopyDistributionRequestRequestTypeDef(TypedDict):
+    PrimaryDistributionId: str,
+    CallerReference: str,
+    Staging: NotRequired[bool],
+    IfMatch: NotRequired[str],
+```
+
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -314,7 +387,6 @@ from mypy_boto3_cloudfront.type_defs import OriginAccessControlConfigTypeDef
 def get_value() -> OriginAccessControlConfigTypeDef:
     return {
         "Name": ...,
-        "Description": ...,
         "SigningProtocol": ...,
         "SigningBehavior": ...,
         "OriginAccessControlOriginType": ...,
@@ -324,10 +396,10 @@ def get_value() -> OriginAccessControlConfigTypeDef:
 ```python title="Definition"
 class OriginAccessControlConfigTypeDef(TypedDict):
     Name: str,
-    Description: str,
     SigningProtocol: OriginAccessControlSigningProtocolsType,  # (1)
     SigningBehavior: OriginAccessControlSigningBehaviorsType,  # (2)
     OriginAccessControlOriginType: OriginAccessControlOriginTypesType,  # (3)
+    Description: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: OriginAccessControlSigningProtocolsType](./literals.md#originaccesscontrolsigningprotocolstype) 
@@ -406,7 +478,7 @@ def get_value() -> OriginSslProtocolsTypeDef:
 ```python title="Definition"
 class OriginSslProtocolsTypeDef(TypedDict):
     Quantity: int,
-    Items: Sequence[SslProtocolType],  # (1)
+    Items: List[SslProtocolType],  # (1)
 ```
 
 1. See [:material-code-brackets: SslProtocolType](./literals.md#sslprotocoltype) 
@@ -440,6 +512,23 @@ def get_value() -> DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef:
 
 ```python title="Definition"
 class DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IfMatch: NotRequired[str],
+```
+
+## DeleteContinuousDeploymentPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import DeleteContinuousDeploymentPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteContinuousDeploymentPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteContinuousDeploymentPolicyRequestRequestTypeDef(TypedDict):
     Id: str,
     IfMatch: NotRequired[str],
 ```
@@ -786,7 +875,7 @@ def get_value() -> QueryStringCacheKeysTypeDef:
 ```python title="Definition"
 class QueryStringCacheKeysTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[str]],
+    Items: NotRequired[List[str]],
 ```
 
 ## FunctionAssociationTypeDef
@@ -845,7 +934,7 @@ def get_value() -> GeoRestrictionTypeDef:
 class GeoRestrictionTypeDef(TypedDict):
     RestrictionType: GeoRestrictionTypeType,  # (1)
     Quantity: int,
-    Items: NotRequired[Sequence[str]],
+    Items: NotRequired[List[str]],
 ```
 
 1. See [:material-code-brackets: GeoRestrictionTypeType](./literals.md#georestrictiontypetype) 
@@ -910,6 +999,38 @@ def get_value() -> GetCloudFrontOriginAccessIdentityRequestRequestTypeDef:
 
 ```python title="Definition"
 class GetCloudFrontOriginAccessIdentityRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
+
+## GetContinuousDeploymentPolicyConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetContinuousDeploymentPolicyConfigRequestRequestTypeDef
+
+def get_value() -> GetContinuousDeploymentPolicyConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetContinuousDeploymentPolicyConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
+
+## GetContinuousDeploymentPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetContinuousDeploymentPolicyRequestRequestTypeDef
+
+def get_value() -> GetContinuousDeploymentPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetContinuousDeploymentPolicyRequestRequestTypeDef(TypedDict):
     Id: str,
 ```
 
@@ -1435,6 +1556,23 @@ class ListConflictingAliasesRequestRequestTypeDef(TypedDict):
     MaxItems: NotRequired[int],
 ```
 
+## ListContinuousDeploymentPoliciesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListContinuousDeploymentPoliciesRequestRequestTypeDef
+
+def get_value() -> ListContinuousDeploymentPoliciesRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
+```
+
+```python title="Definition"
+class ListContinuousDeploymentPoliciesRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
+
 ## ListDistributionsByCachePolicyIdRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1832,7 +1970,7 @@ def get_value() -> StatusCodesTypeDef:
 ```python title="Definition"
 class StatusCodesTypeDef(TypedDict):
     Quantity: int,
-    Items: Sequence[int],
+    Items: List[int],
 ```
 
 ## OriginGroupMemberTypeDef
@@ -2272,7 +2410,7 @@ def get_value() -> AllowedMethodsTypeDef:
 ```python title="Definition"
 class AllowedMethodsTypeDef(TypedDict):
     Quantity: int,
-    Items: Sequence[MethodType],  # (1)
+    Items: List[MethodType],  # (1)
     CachedMethods: NotRequired[CachedMethodsTypeDef],  # (2)
 ```
 
@@ -2531,6 +2669,24 @@ class ContentTypeProfilesTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef) 
+## ContinuousDeploymentSingleWeightConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ContinuousDeploymentSingleWeightConfigTypeDef
+
+def get_value() -> ContinuousDeploymentSingleWeightConfigTypeDef:
+    return {
+        "Weight": ...,
+    }
+```
+
+```python title="Definition"
+class ContinuousDeploymentSingleWeightConfigTypeDef(TypedDict):
+    Weight: float,
+    SessionStickinessConfig: NotRequired[SessionStickinessConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SessionStickinessConfigTypeDef](./type_defs.md#sessionstickinessconfigtypedef) 
 ## EmptyResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -2888,7 +3044,7 @@ def get_value() -> CustomErrorResponsesTypeDef:
 ```python title="Definition"
 class CustomErrorResponsesTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[CustomErrorResponseTypeDef]],  # (1)
+    Items: NotRequired[List[CustomErrorResponseTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: CustomErrorResponseTypeDef](./type_defs.md#customerrorresponsetypedef) 
@@ -2906,7 +3062,7 @@ def get_value() -> CustomHeadersTypeDef:
 ```python title="Definition"
 class CustomHeadersTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[OriginCustomHeaderTypeDef]],  # (1)
+    Items: NotRequired[List[OriginCustomHeaderTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: OriginCustomHeaderTypeDef](./type_defs.md#origincustomheadertypedef) 
@@ -3068,7 +3224,7 @@ def get_value() -> FunctionAssociationsTypeDef:
 ```python title="Definition"
 class FunctionAssociationsTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[FunctionAssociationTypeDef]],  # (1)
+    Items: NotRequired[List[FunctionAssociationTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: FunctionAssociationTypeDef](./type_defs.md#functionassociationtypedef) 
@@ -3262,7 +3418,7 @@ def get_value() -> LambdaFunctionAssociationsTypeDef:
 ```python title="Definition"
 class LambdaFunctionAssociationsTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[LambdaFunctionAssociationTypeDef]],  # (1)
+    Items: NotRequired[List[LambdaFunctionAssociationTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: LambdaFunctionAssociationTypeDef](./type_defs.md#lambdafunctionassociationtypedef) 
@@ -3409,7 +3565,7 @@ def get_value() -> OriginGroupMembersTypeDef:
 ```python title="Definition"
 class OriginGroupMembersTypeDef(TypedDict):
     Quantity: int,
-    Items: Sequence[OriginGroupMemberTypeDef],  # (1)
+    Items: List[OriginGroupMemberTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: OriginGroupMemberTypeDef](./type_defs.md#origingroupmembertypedef) 
@@ -3836,6 +3992,27 @@ class ContentTypeProfileConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ContentTypeProfilesTypeDef](./type_defs.md#contenttypeprofilestypedef) 
+## TrafficConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import TrafficConfigTypeDef
+
+def get_value() -> TrafficConfigTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class TrafficConfigTypeDef(TypedDict):
+    Type: ContinuousDeploymentPolicyTypeType,  # (3)
+    SingleWeightConfig: NotRequired[ContinuousDeploymentSingleWeightConfigTypeDef],  # (1)
+    SingleHeaderConfig: NotRequired[ContinuousDeploymentSingleHeaderConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentSingleWeightConfigTypeDef](./type_defs.md#continuousdeploymentsingleweightconfigtypedef) 
+2. See [:material-code-braces: ContinuousDeploymentSingleHeaderConfigTypeDef](./type_defs.md#continuousdeploymentsingleheaderconfigtypedef) 
+3. See [:material-code-brackets: ContinuousDeploymentPolicyTypeType](./literals.md#continuousdeploymentpolicytypetype) 
 ## CreateKeyGroupResultTypeDef
 
 ```python title="Usage Example"
@@ -4900,6 +5077,27 @@ class UpdateOriginRequestPolicyRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef) 
+## ContinuousDeploymentPolicyConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ContinuousDeploymentPolicyConfigTypeDef
+
+def get_value() -> ContinuousDeploymentPolicyConfigTypeDef:
+    return {
+        "StagingDistributionDnsNames": ...,
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class ContinuousDeploymentPolicyConfigTypeDef(TypedDict):
+    StagingDistributionDnsNames: StagingDistributionDnsNamesTypeDef,  # (1)
+    Enabled: bool,
+    TrafficConfig: NotRequired[TrafficConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: StagingDistributionDnsNamesTypeDef](./type_defs.md#stagingdistributiondnsnamestypedef) 
+2. See [:material-code-braces: TrafficConfigTypeDef](./type_defs.md#trafficconfigtypedef) 
 ## KeyGroupListTypeDef
 
 ```python title="Usage Example"
@@ -4936,7 +5134,7 @@ def get_value() -> OriginsTypeDef:
 ```python title="Definition"
 class OriginsTypeDef(TypedDict):
     Quantity: int,
-    Items: Sequence[OriginTypeDef],  # (1)
+    Items: List[OriginTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: OriginTypeDef](./type_defs.md#origintypedef) 
@@ -5194,7 +5392,7 @@ def get_value() -> OriginGroupsTypeDef:
 ```python title="Definition"
 class OriginGroupsTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[OriginGroupTypeDef]],  # (1)
+    Items: NotRequired[List[OriginGroupTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: OriginGroupTypeDef](./type_defs.md#origingrouptypedef) 
@@ -5373,7 +5571,7 @@ def get_value() -> CacheBehaviorsTypeDef:
 ```python title="Definition"
 class CacheBehaviorsTypeDef(TypedDict):
     Quantity: int,
-    Items: NotRequired[Sequence[CacheBehaviorTypeDef]],  # (1)
+    Items: NotRequired[List[CacheBehaviorTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef) 
@@ -5545,6 +5743,86 @@ class UpdateOriginRequestPolicyResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ContinuousDeploymentPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ContinuousDeploymentPolicyTypeDef
+
+def get_value() -> ContinuousDeploymentPolicyTypeDef:
+    return {
+        "Id": ...,
+        "LastModifiedTime": ...,
+        "ContinuousDeploymentPolicyConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ContinuousDeploymentPolicyTypeDef(TypedDict):
+    Id: str,
+    LastModifiedTime: datetime,
+    ContinuousDeploymentPolicyConfig: ContinuousDeploymentPolicyConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyConfigTypeDef](./type_defs.md#continuousdeploymentpolicyconfigtypedef) 
+## CreateContinuousDeploymentPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import CreateContinuousDeploymentPolicyRequestRequestTypeDef
+
+def get_value() -> CreateContinuousDeploymentPolicyRequestRequestTypeDef:
+    return {
+        "ContinuousDeploymentPolicyConfig": ...,
+    }
+```
+
+```python title="Definition"
+class CreateContinuousDeploymentPolicyRequestRequestTypeDef(TypedDict):
+    ContinuousDeploymentPolicyConfig: ContinuousDeploymentPolicyConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyConfigTypeDef](./type_defs.md#continuousdeploymentpolicyconfigtypedef) 
+## GetContinuousDeploymentPolicyConfigResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetContinuousDeploymentPolicyConfigResultTypeDef
+
+def get_value() -> GetContinuousDeploymentPolicyConfigResultTypeDef:
+    return {
+        "ContinuousDeploymentPolicyConfig": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetContinuousDeploymentPolicyConfigResultTypeDef(TypedDict):
+    ContinuousDeploymentPolicyConfig: ContinuousDeploymentPolicyConfigTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyConfigTypeDef](./type_defs.md#continuousdeploymentpolicyconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateContinuousDeploymentPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import UpdateContinuousDeploymentPolicyRequestRequestTypeDef
+
+def get_value() -> UpdateContinuousDeploymentPolicyRequestRequestTypeDef:
+    return {
+        "ContinuousDeploymentPolicyConfig": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateContinuousDeploymentPolicyRequestRequestTypeDef(TypedDict):
+    ContinuousDeploymentPolicyConfig: ContinuousDeploymentPolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: NotRequired[str],
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyConfigTypeDef](./type_defs.md#continuousdeploymentpolicyconfigtypedef) 
 ## ListKeyGroupsResultTypeDef
 
 ```python title="Usage Example"
@@ -6186,6 +6464,91 @@ class OriginRequestPolicyListTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: OriginRequestPolicySummaryTypeDef](./type_defs.md#originrequestpolicysummarytypedef) 
+## ContinuousDeploymentPolicySummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ContinuousDeploymentPolicySummaryTypeDef
+
+def get_value() -> ContinuousDeploymentPolicySummaryTypeDef:
+    return {
+        "ContinuousDeploymentPolicy": ...,
+    }
+```
+
+```python title="Definition"
+class ContinuousDeploymentPolicySummaryTypeDef(TypedDict):
+    ContinuousDeploymentPolicy: ContinuousDeploymentPolicyTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyTypeDef](./type_defs.md#continuousdeploymentpolicytypedef) 
+## CreateContinuousDeploymentPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import CreateContinuousDeploymentPolicyResultTypeDef
+
+def get_value() -> CreateContinuousDeploymentPolicyResultTypeDef:
+    return {
+        "ContinuousDeploymentPolicy": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateContinuousDeploymentPolicyResultTypeDef(TypedDict):
+    ContinuousDeploymentPolicy: ContinuousDeploymentPolicyTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyTypeDef](./type_defs.md#continuousdeploymentpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetContinuousDeploymentPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import GetContinuousDeploymentPolicyResultTypeDef
+
+def get_value() -> GetContinuousDeploymentPolicyResultTypeDef:
+    return {
+        "ContinuousDeploymentPolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetContinuousDeploymentPolicyResultTypeDef(TypedDict):
+    ContinuousDeploymentPolicy: ContinuousDeploymentPolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyTypeDef](./type_defs.md#continuousdeploymentpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateContinuousDeploymentPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import UpdateContinuousDeploymentPolicyResultTypeDef
+
+def get_value() -> UpdateContinuousDeploymentPolicyResultTypeDef:
+    return {
+        "ContinuousDeploymentPolicy": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateContinuousDeploymentPolicyResultTypeDef(TypedDict):
+    ContinuousDeploymentPolicy: ContinuousDeploymentPolicyTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyTypeDef](./type_defs.md#continuousdeploymentpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFieldLevelEncryptionProfileResultTypeDef
 
 ```python title="Usage Example"
@@ -6563,6 +6926,27 @@ class ListOriginRequestPoliciesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: OriginRequestPolicyListTypeDef](./type_defs.md#originrequestpolicylisttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ContinuousDeploymentPolicyListTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ContinuousDeploymentPolicyListTypeDef
+
+def get_value() -> ContinuousDeploymentPolicyListTypeDef:
+    return {
+        "MaxItems": ...,
+        "Quantity": ...,
+    }
+```
+
+```python title="Definition"
+class ContinuousDeploymentPolicyListTypeDef(TypedDict):
+    MaxItems: int,
+    Quantity: int,
+    NextMarker: NotRequired[str],
+    Items: NotRequired[List[ContinuousDeploymentPolicySummaryTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicySummaryTypeDef](./type_defs.md#continuousdeploymentpolicysummarytypedef) 
 ## ListResponseHeadersPoliciesResultTypeDef
 
 ```python title="Usage Example"
@@ -6600,6 +6984,30 @@ class CreateDistributionWithTagsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef) 
+## CopyDistributionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import CopyDistributionResultTypeDef
+
+def get_value() -> CopyDistributionResultTypeDef:
+    return {
+        "Distribution": ...,
+        "Location": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CopyDistributionResultTypeDef(TypedDict):
+    Distribution: DistributionTypeDef,  # (1)
+    Location: str,
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDistributionResultTypeDef
 
 ```python title="Usage Example"
@@ -6771,4 +7179,24 @@ class ListCachePoliciesResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CachePolicyListTypeDef](./type_defs.md#cachepolicylisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContinuousDeploymentPoliciesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ListContinuousDeploymentPoliciesResultTypeDef
+
+def get_value() -> ListContinuousDeploymentPoliciesResultTypeDef:
+    return {
+        "ContinuousDeploymentPolicyList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListContinuousDeploymentPoliciesResultTypeDef(TypedDict):
+    ContinuousDeploymentPolicyList: ContinuousDeploymentPolicyListTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ContinuousDeploymentPolicyListTypeDef](./type_defs.md#continuousdeploymentpolicylisttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

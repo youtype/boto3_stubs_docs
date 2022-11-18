@@ -1693,6 +1693,7 @@ def copy_image(
     KmsKeyId: str = ...,
     DestinationOutpostArn: str = ...,
     DryRun: bool = ...,
+    CopyImageTags: bool = ...,
 ) -> CopyImageResultTypeDef:  # (1)
     ...
 ```
