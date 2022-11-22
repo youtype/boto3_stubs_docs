@@ -449,14 +449,13 @@ from mypy_boto3_appflow.type_defs import RedshiftConnectorProfileCredentialsType
 def get_value() -> RedshiftConnectorProfileCredentialsTypeDef:
     return {
         "username": ...,
-        "password": ...,
     }
 ```
 
 ```python title="Definition"
 class RedshiftConnectorProfileCredentialsTypeDef(TypedDict):
-    username: str,
-    password: str,
+    username: NotRequired[str],
+    password: NotRequired[str],
 ```
 
 ## ServiceNowConnectorProfileCredentialsTypeDef
@@ -616,7 +615,6 @@ from mypy_boto3_appflow.type_defs import RedshiftConnectorProfilePropertiesTypeD
 
 def get_value() -> RedshiftConnectorProfilePropertiesTypeDef:
     return {
-        "databaseUrl": ...,
         "bucketName": ...,
         "roleArn": ...,
     }
@@ -624,10 +622,15 @@ def get_value() -> RedshiftConnectorProfilePropertiesTypeDef:
 
 ```python title="Definition"
 class RedshiftConnectorProfilePropertiesTypeDef(TypedDict):
-    databaseUrl: str,
     bucketName: str,
     roleArn: str,
+    databaseUrl: NotRequired[str],
     bucketPrefix: NotRequired[str],
+    dataApiRoleArn: NotRequired[str],
+    isRedshiftServerless: NotRequired[bool],
+    clusterIdentifier: NotRequired[str],
+    workgroupName: NotRequired[str],
+    databaseName: NotRequired[str],
 ```
 
 ## SalesforceConnectorProfilePropertiesTypeDef
@@ -3152,14 +3155,13 @@ from mypy_boto3_appflow.type_defs import ConnectorProfileConfigTypeDef
 def get_value() -> ConnectorProfileConfigTypeDef:
     return {
         "connectorProfileProperties": ...,
-        "connectorProfileCredentials": ...,
     }
 ```
 
 ```python title="Definition"
 class ConnectorProfileConfigTypeDef(TypedDict):
     connectorProfileProperties: ConnectorProfilePropertiesTypeDef,  # (1)
-    connectorProfileCredentials: ConnectorProfileCredentialsTypeDef,  # (2)
+    connectorProfileCredentials: NotRequired[ConnectorProfileCredentialsTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: ConnectorProfilePropertiesTypeDef](./type_defs.md#connectorprofilepropertiestypedef) 

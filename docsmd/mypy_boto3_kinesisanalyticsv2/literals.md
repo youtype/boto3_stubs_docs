@@ -213,6 +213,7 @@ def get_value() -> RuntimeEnvironmentType:
 RuntimeEnvironmentType = Literal[
     "FLINK-1_11",
     "FLINK-1_13",
+    "FLINK-1_15",
     "FLINK-1_6",
     "FLINK-1_8",
     "SQL-1_0",
