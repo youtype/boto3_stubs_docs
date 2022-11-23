@@ -21,6 +21,22 @@ ListRulesPaginatorName = Literal[
     "list_rules",
 ]
 ```
+## LockStateType
+
+```python title="Usage Example"
+from mypy_boto3_rbin.literals import LockStateType
+
+def get_value() -> LockStateType:
+    return "locked"
+```
+
+```python title="Definition"
+LockStateType = Literal[
+    "locked",
+    "pending_unlock",
+    "unlocked",
+]
+```
 ## ResourceTypeType
 
 ```python title="Usage Example"
@@ -63,6 +79,20 @@ def get_value() -> RuleStatusType:
 RuleStatusType = Literal[
     "available",
     "pending",
+]
+```
+## UnlockDelayUnitType
+
+```python title="Usage Example"
+from mypy_boto3_rbin.literals import UnlockDelayUnitType
+
+def get_value() -> UnlockDelayUnitType:
+    return "DAYS"
+```
+
+```python title="Definition"
+UnlockDelayUnitType = Literal[
+    "DAYS",
 ]
 ```
 ## RecycleBinServiceName

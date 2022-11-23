@@ -133,25 +133,28 @@ def create_workspace(
     authenticationProviders: Sequence[AuthenticationProviderTypesType],  # (2)
     permissionType: PermissionTypeType,  # (3)
     clientToken: str = ...,
+    configuration: str = ...,
     organizationRoleName: str = ...,
     stackSetName: str = ...,
     tags: Mapping[str, str] = ...,
-    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (4)
+    vpcConfiguration: VpcConfigurationTypeDef = ...,  # (4)
+    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (5)
     workspaceDescription: str = ...,
     workspaceName: str = ...,
-    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (5)
+    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (6)
     workspaceOrganizationalUnits: Sequence[str] = ...,
     workspaceRoleArn: str = ...,
-) -> CreateWorkspaceResponseTypeDef:  # (6)
+) -> CreateWorkspaceResponseTypeDef:  # (7)
     ...
 ```
 
 1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
 2. See [:material-code-brackets: AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype) 
 3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-4. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
-6. See [:material-code-braces: CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef) 
+4. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+5. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+6. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+7. See [:material-code-braces: CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -168,7 +171,7 @@ parent.create_workspace(**kwargs)
 
 ### create\_workspace\_api\_key
 
-Creates an API key for the workspace.
+Creates a Grafana API key for the workspace.
 
 Type annotations and code completion for `#!python boto3.client("grafana").create_workspace_api_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.create_workspace_api_key)
@@ -232,7 +235,7 @@ parent.delete_workspace(**kwargs)
 
 ### delete\_workspace\_api\_key
 
-Deletes an API key for a workspace.
+Deletes a Grafana API key for the workspace.
 
 Type annotations and code completion for `#!python boto3.client("grafana").delete_workspace_api_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.delete_workspace_api_key)
@@ -319,6 +322,35 @@ parent.describe_workspace_authentication(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeWorkspaceAuthenticationRequestRequestTypeDef](./type_defs.md#describeworkspaceauthenticationrequestrequesttypedef) 
+
+### describe\_workspace\_configuration
+
+Gets the current configuration string for the given workspace.
+
+Type annotations and code completion for `#!python boto3.client("grafana").describe_workspace_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.describe_workspace_configuration)
+
+```python title="Method definition"
+def describe_workspace_configuration(
+    self,
+    *,
+    workspaceId: str,
+) -> DescribeWorkspaceConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeWorkspaceConfigurationResponseTypeDef](./type_defs.md#describeworkspaceconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceConfigurationRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
+
+parent.describe_workspace_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspaceConfigurationRequestRequestTypeDef](./type_defs.md#describeworkspaceconfigurationrequestrequesttypedef) 
 
 ### disassociate\_license
 
@@ -577,22 +609,25 @@ def update_workspace(
     accountAccessType: AccountAccessTypeType = ...,  # (1)
     organizationRoleName: str = ...,
     permissionType: PermissionTypeType = ...,  # (2)
+    removeVpcConfiguration: bool = ...,
     stackSetName: str = ...,
-    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (3)
+    vpcConfiguration: VpcConfigurationTypeDef = ...,  # (3)
+    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (4)
     workspaceDescription: str = ...,
     workspaceName: str = ...,
-    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (4)
+    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (5)
     workspaceOrganizationalUnits: Sequence[str] = ...,
     workspaceRoleArn: str = ...,
-) -> UpdateWorkspaceResponseTypeDef:  # (5)
+) -> UpdateWorkspaceResponseTypeDef:  # (6)
     ...
 ```
 
 1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
 2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-3. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-4. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
-5. See [:material-code-braces: UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef) 
+3. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+4. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+6. See [:material-code-braces: UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -639,6 +674,37 @@ parent.update_workspace_authentication(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateWorkspaceAuthenticationRequestRequestTypeDef](./type_defs.md#updateworkspaceauthenticationrequestrequesttypedef) 
+
+### update\_workspace\_configuration
+
+Updates the configuration string for the given workspace See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/grafana-2020-08-18/UpdateWorkspaceConfiguration).
+
+Type annotations and code completion for `#!python boto3.client("grafana").update_workspace_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.update_workspace_configuration)
+
+```python title="Method definition"
+def update_workspace_configuration(
+    self,
+    *,
+    configuration: str,
+    workspaceId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkspaceConfigurationRequestRequestTypeDef = {  # (1)
+    "configuration": ...,
+    "workspaceId": ...,
+}
+
+parent.update_workspace_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateWorkspaceConfigurationRequestRequestTypeDef](./type_defs.md#updateworkspaceconfigurationrequestrequesttypedef) 
 
 
 

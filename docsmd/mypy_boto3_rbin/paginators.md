@@ -49,15 +49,17 @@ def paginate(
     *,
     ResourceType: ResourceTypeType,  # (1)
     ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (2)
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
-) -> _PageIterator[ListRulesResponseTypeDef]:  # (4)
+    LockState: LockStateType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListRulesResponseTypeDef]:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-4. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+3. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

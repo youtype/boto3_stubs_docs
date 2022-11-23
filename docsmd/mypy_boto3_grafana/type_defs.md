@@ -128,41 +128,24 @@ class CreateWorkspaceApiKeyRequestRequestTypeDef(TypedDict):
     workspaceId: str,
 ```
 
-## CreateWorkspaceRequestRequestTypeDef
+## VpcConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_grafana.type_defs import CreateWorkspaceRequestRequestTypeDef
+from mypy_boto3_grafana.type_defs import VpcConfigurationTypeDef
 
-def get_value() -> CreateWorkspaceRequestRequestTypeDef:
+def get_value() -> VpcConfigurationTypeDef:
     return {
-        "accountAccessType": ...,
-        "authenticationProviders": ...,
-        "permissionType": ...,
+        "securityGroupIds": ...,
+        "subnetIds": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateWorkspaceRequestRequestTypeDef(TypedDict):
-    accountAccessType: AccountAccessTypeType,  # (1)
-    authenticationProviders: Sequence[AuthenticationProviderTypesType],  # (2)
-    permissionType: PermissionTypeType,  # (3)
-    clientToken: NotRequired[str],
-    organizationRoleName: NotRequired[str],
-    stackSetName: NotRequired[str],
-    tags: NotRequired[Mapping[str, str]],
-    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (4)
-    workspaceDescription: NotRequired[str],
-    workspaceName: NotRequired[str],
-    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (5)
-    workspaceOrganizationalUnits: NotRequired[Sequence[str]],
-    workspaceRoleArn: NotRequired[str],
+class VpcConfigurationTypeDef(TypedDict):
+    securityGroupIds: List[str],
+    subnetIds: List[str],
 ```
 
-1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
-2. See [:material-code-brackets: AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype) 
-3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-4. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
 ## DeleteWorkspaceApiKeyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -210,6 +193,22 @@ def get_value() -> DescribeWorkspaceAuthenticationRequestRequestTypeDef:
 
 ```python title="Definition"
 class DescribeWorkspaceAuthenticationRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+```
+
+## DescribeWorkspaceConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import DescribeWorkspaceConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeWorkspaceConfigurationRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceConfigurationRequestRequestTypeDef(TypedDict):
     workspaceId: str,
 ```
 
@@ -410,36 +409,24 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     tagKeys: Sequence[str],
 ```
 
-## UpdateWorkspaceRequestRequestTypeDef
+## UpdateWorkspaceConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_grafana.type_defs import UpdateWorkspaceRequestRequestTypeDef
+from mypy_boto3_grafana.type_defs import UpdateWorkspaceConfigurationRequestRequestTypeDef
 
-def get_value() -> UpdateWorkspaceRequestRequestTypeDef:
+def get_value() -> UpdateWorkspaceConfigurationRequestRequestTypeDef:
     return {
+        "configuration": ...,
         "workspaceId": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateWorkspaceRequestRequestTypeDef(TypedDict):
+class UpdateWorkspaceConfigurationRequestRequestTypeDef(TypedDict):
+    configuration: str,
     workspaceId: str,
-    accountAccessType: NotRequired[AccountAccessTypeType],  # (1)
-    organizationRoleName: NotRequired[str],
-    permissionType: NotRequired[PermissionTypeType],  # (2)
-    stackSetName: NotRequired[str],
-    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (3)
-    workspaceDescription: NotRequired[str],
-    workspaceName: NotRequired[str],
-    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (4)
-    workspaceOrganizationalUnits: NotRequired[Sequence[str]],
-    workspaceRoleArn: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
-2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-3. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-4. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
 ## CreateWorkspaceApiKeyResponseTypeDef
 
 ```python title="Usage Example"
@@ -484,6 +471,25 @@ class DeleteWorkspaceApiKeyResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeWorkspaceConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import DescribeWorkspaceConfigurationResponseTypeDef
+
+def get_value() -> DescribeWorkspaceConfigurationResponseTypeDef:
+    return {
+        "configuration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeWorkspaceConfigurationResponseTypeDef(TypedDict):
+    configuration: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -503,6 +509,112 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## WorkspaceSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import WorkspaceSummaryTypeDef
+
+def get_value() -> WorkspaceSummaryTypeDef:
+    return {
+        "authentication": ...,
+        "created": ...,
+        "endpoint": ...,
+        "grafanaVersion": ...,
+        "id": ...,
+        "modified": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class WorkspaceSummaryTypeDef(TypedDict):
+    authentication: AuthenticationSummaryTypeDef,  # (1)
+    created: datetime,
+    endpoint: str,
+    grafanaVersion: str,
+    id: str,
+    modified: datetime,
+    status: WorkspaceStatusType,  # (3)
+    description: NotRequired[str],
+    name: NotRequired[str],
+    notificationDestinations: NotRequired[List[NotificationDestinationTypeType]],  # (2)
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: AuthenticationSummaryTypeDef](./type_defs.md#authenticationsummarytypedef) 
+2. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+3. See [:material-code-brackets: WorkspaceStatusType](./literals.md#workspacestatustype) 
+## CreateWorkspaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import CreateWorkspaceRequestRequestTypeDef
+
+def get_value() -> CreateWorkspaceRequestRequestTypeDef:
+    return {
+        "accountAccessType": ...,
+        "authenticationProviders": ...,
+        "permissionType": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkspaceRequestRequestTypeDef(TypedDict):
+    accountAccessType: AccountAccessTypeType,  # (1)
+    authenticationProviders: Sequence[AuthenticationProviderTypesType],  # (2)
+    permissionType: PermissionTypeType,  # (3)
+    clientToken: NotRequired[str],
+    configuration: NotRequired[str],
+    organizationRoleName: NotRequired[str],
+    stackSetName: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (4)
+    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (5)
+    workspaceDescription: NotRequired[str],
+    workspaceName: NotRequired[str],
+    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (6)
+    workspaceOrganizationalUnits: NotRequired[Sequence[str]],
+    workspaceRoleArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
+2. See [:material-code-brackets: AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype) 
+3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+4. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+5. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+6. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+## UpdateWorkspaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import UpdateWorkspaceRequestRequestTypeDef
+
+def get_value() -> UpdateWorkspaceRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateWorkspaceRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    accountAccessType: NotRequired[AccountAccessTypeType],  # (1)
+    organizationRoleName: NotRequired[str],
+    permissionType: NotRequired[PermissionTypeType],  # (2)
+    removeVpcConfiguration: NotRequired[bool],
+    stackSetName: NotRequired[str],
+    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (3)
+    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (4)
+    workspaceDescription: NotRequired[str],
+    workspaceName: NotRequired[str],
+    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (5)
+    workspaceOrganizationalUnits: NotRequired[Sequence[str]],
+    workspaceRoleArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
+2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+3. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+4. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
 ## WorkspaceDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -544,6 +656,7 @@ class WorkspaceDescriptionTypeDef(TypedDict):
     permissionType: NotRequired[PermissionTypeType],  # (6)
     stackSetName: NotRequired[str],
     tags: NotRequired[Dict[str, str]],
+    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (8)
     workspaceRoleArn: NotRequired[str],
 ```
 
@@ -554,41 +667,7 @@ class WorkspaceDescriptionTypeDef(TypedDict):
 5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
 6. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
 7. See [:material-code-brackets: WorkspaceStatusType](./literals.md#workspacestatustype) 
-## WorkspaceSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_grafana.type_defs import WorkspaceSummaryTypeDef
-
-def get_value() -> WorkspaceSummaryTypeDef:
-    return {
-        "authentication": ...,
-        "created": ...,
-        "endpoint": ...,
-        "grafanaVersion": ...,
-        "id": ...,
-        "modified": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class WorkspaceSummaryTypeDef(TypedDict):
-    authentication: AuthenticationSummaryTypeDef,  # (1)
-    created: datetime,
-    endpoint: str,
-    grafanaVersion: str,
-    id: str,
-    modified: datetime,
-    status: WorkspaceStatusType,  # (3)
-    description: NotRequired[str],
-    name: NotRequired[str],
-    notificationDestinations: NotRequired[List[NotificationDestinationTypeType]],  # (2)
-    tags: NotRequired[Dict[str, str]],
-```
-
-1. See [:material-code-braces: AuthenticationSummaryTypeDef](./type_defs.md#authenticationsummarytypedef) 
-2. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
-3. See [:material-code-brackets: WorkspaceStatusType](./literals.md#workspacestatustype) 
+8. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## ListPermissionsRequestListPermissionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -694,6 +773,28 @@ class SamlConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: AssertionAttributesTypeDef](./type_defs.md#assertionattributestypedef) 
 2. See [:material-code-braces: IdpMetadataTypeDef](./type_defs.md#idpmetadatatypedef) 
 3. See [:material-code-braces: RoleValuesTypeDef](./type_defs.md#rolevaluestypedef) 
+## ListWorkspacesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import ListWorkspacesResponseTypeDef
+
+def get_value() -> ListWorkspacesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "workspaces": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkspacesResponseTypeDef(TypedDict):
+    nextToken: str,
+    workspaces: List[WorkspaceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateLicenseResponseTypeDef
 
 ```python title="Usage Example"
@@ -813,28 +914,6 @@ class UpdateWorkspaceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListWorkspacesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_grafana.type_defs import ListWorkspacesResponseTypeDef
-
-def get_value() -> ListWorkspacesResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "workspaces": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListWorkspacesResponseTypeDef(TypedDict):
-    nextToken: str,
-    workspaces: List[WorkspaceSummaryTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPermissionsResponseTypeDef
 

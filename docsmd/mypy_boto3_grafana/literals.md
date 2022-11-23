@@ -55,6 +55,7 @@ DataSourceTypeType = Literal[
     "REDSHIFT",
     "SITEWISE",
     "TIMESTREAM",
+    "TWINMAKER",
     "XRAY",
 ]
 ```

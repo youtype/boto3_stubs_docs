@@ -33,6 +33,7 @@ try:
     do_something(client)
 except (
     client.ClientError,
+    client.ConflictException,
     client.InternalServerException,
     client.ResourceNotFoundException,
     client.ServiceQuotaExceededException,
@@ -99,7 +100,8 @@ def create_rule(
     Description: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (3)
     ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (4)
-) -> CreateRuleResponseTypeDef:  # (5)
+    LockConfiguration: LockConfigurationTypeDef = ...,  # (5)
+) -> CreateRuleResponseTypeDef:  # (6)
     ...
 ```
 
@@ -107,7 +109,8 @@ def create_rule(
 2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
-5. See [:material-code-braces: CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef) 
+5. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+6. See [:material-code-braces: CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -212,13 +215,15 @@ def list_rules(
     MaxResults: int = ...,
     NextToken: str = ...,
     ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (2)
-) -> ListRulesResponseTypeDef:  # (3)
+    LockState: LockStateType = ...,  # (3)
+) -> ListRulesResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
-3. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+3. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+4. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -260,6 +265,38 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
+### lock\_rule
+
+Locks a retention rule.
+
+Type annotations and code completion for `#!python boto3.client("rbin").lock_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.lock_rule)
+
+```python title="Method definition"
+def lock_rule(
+    self,
+    *,
+    Identifier: str,
+    LockConfiguration: LockConfigurationTypeDef,  # (1)
+) -> LockRuleResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+2. See [:material-code-braces: LockRuleResponseTypeDef](./type_defs.md#lockruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: LockRuleRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+    "LockConfiguration": ...,
+}
+
+parent.lock_rule(**kwargs)
+```
+
+1. See [:material-code-braces: LockRuleRequestRequestTypeDef](./type_defs.md#lockrulerequestrequesttypedef) 
+
 ### tag\_resource
 
 Assigns tags to the specified retention rule.
@@ -290,6 +327,35 @@ parent.tag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### unlock\_rule
+
+Unlocks a retention rule.
+
+Type annotations and code completion for `#!python boto3.client("rbin").unlock_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.unlock_rule)
+
+```python title="Method definition"
+def unlock_rule(
+    self,
+    *,
+    Identifier: str,
+) -> UnlockRuleResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UnlockRuleResponseTypeDef](./type_defs.md#unlockruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UnlockRuleRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
+
+parent.unlock_rule(**kwargs)
+```
+
+1. See [:material-code-braces: UnlockRuleRequestRequestTypeDef](./type_defs.md#unlockrulerequestrequesttypedef) 
 
 ### untag\_resource
 

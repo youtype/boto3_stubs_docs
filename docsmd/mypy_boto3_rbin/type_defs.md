@@ -151,6 +151,41 @@ class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
 ```
 
+## UnlockDelayTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import UnlockDelayTypeDef
+
+def get_value() -> UnlockDelayTypeDef:
+    return {
+        "UnlockDelayValue": ...,
+        "UnlockDelayUnit": ...,
+    }
+```
+
+```python title="Definition"
+class UnlockDelayTypeDef(TypedDict):
+    UnlockDelayValue: int,
+    UnlockDelayUnit: UnlockDelayUnitType,  # (1)
+```
+
+1. See [:material-code-brackets: UnlockDelayUnitType](./literals.md#unlockdelayunittype) 
+## UnlockRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import UnlockRuleRequestRequestTypeDef
+
+def get_value() -> UnlockRuleRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
+```
+
+```python title="Definition"
+class UnlockRuleRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -186,10 +221,12 @@ class ListRulesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
     ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (2)
+    LockState: NotRequired[LockStateType],  # (3)
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+3. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
 ## RuleSummaryTypeDef
 
 ```python title="Usage Example"
@@ -206,9 +243,11 @@ class RuleSummaryTypeDef(TypedDict):
     Identifier: NotRequired[str],
     Description: NotRequired[str],
     RetentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (1)
+    LockState: NotRequired[LockStateType],  # (2)
 ```
 
 1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
 ## UpdateRuleRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -232,31 +271,6 @@ class UpdateRuleRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
 2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
-## CreateRuleRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rbin.type_defs import CreateRuleRequestRequestTypeDef
-
-def get_value() -> CreateRuleRequestRequestTypeDef:
-    return {
-        "RetentionPeriod": ...,
-        "ResourceType": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRuleRequestRequestTypeDef(TypedDict):
-    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
-    ResourceType: ResourceTypeType,  # (2)
-    Description: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (4)
-```
-
-1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -276,75 +290,6 @@ class TagResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rbin.type_defs import CreateRuleResponseTypeDef
-
-def get_value() -> CreateRuleResponseTypeDef:
-    return {
-        "Identifier": ...,
-        "RetentionPeriod": ...,
-        "Description": ...,
-        "Tags": ...,
-        "ResourceType": ...,
-        "ResourceTags": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateRuleResponseTypeDef(TypedDict):
-    Identifier: str,
-    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
-    Description: str,
-    Tags: List[TagTypeDef],  # (2)
-    ResourceType: ResourceTypeType,  # (3)
-    ResourceTags: List[ResourceTagTypeDef],  # (4)
-    Status: RuleStatusType,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
-```
-
-1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
-5. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetRuleResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_rbin.type_defs import GetRuleResponseTypeDef
-
-def get_value() -> GetRuleResponseTypeDef:
-    return {
-        "Identifier": ...,
-        "Description": ...,
-        "ResourceType": ...,
-        "RetentionPeriod": ...,
-        "ResourceTags": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetRuleResponseTypeDef(TypedDict):
-    Identifier: str,
-    Description: str,
-    ResourceType: ResourceTypeType,  # (1)
-    RetentionPeriod: RetentionPeriodTypeDef,  # (2)
-    ResourceTags: List[ResourceTagTypeDef],  # (3)
-    Status: RuleStatusType,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
-3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
-4. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
 ```python title="Usage Example"
@@ -378,6 +323,8 @@ def get_value() -> UpdateRuleResponseTypeDef:
         "ResourceType": ...,
         "ResourceTags": ...,
         "Status": ...,
+        "LockState": ...,
+        "LockEndTime": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -390,14 +337,17 @@ class UpdateRuleResponseTypeDef(TypedDict):
     ResourceType: ResourceTypeType,  # (2)
     ResourceTags: List[ResourceTagTypeDef],  # (3)
     Status: RuleStatusType,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    LockState: LockStateType,  # (5)
+    LockEndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
 2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 4. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRulesRequestListRulesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -413,12 +363,31 @@ def get_value() -> ListRulesRequestListRulesPaginateTypeDef:
 class ListRulesRequestListRulesPaginateTypeDef(TypedDict):
     ResourceType: ResourceTypeType,  # (1)
     ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (2)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+    LockState: NotRequired[LockStateType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
-3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## LockConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import LockConfigurationTypeDef
+
+def get_value() -> LockConfigurationTypeDef:
+    return {
+        "UnlockDelay": ...,
+    }
+```
+
+```python title="Definition"
+class LockConfigurationTypeDef(TypedDict):
+    UnlockDelay: UnlockDelayTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: UnlockDelayTypeDef](./type_defs.md#unlockdelaytypedef) 
 ## ListRulesResponseTypeDef
 
 ```python title="Usage Example"
@@ -441,3 +410,212 @@ class ListRulesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import CreateRuleRequestRequestTypeDef
+
+def get_value() -> CreateRuleRequestRequestTypeDef:
+    return {
+        "RetentionPeriod": ...,
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRuleRequestRequestTypeDef(TypedDict):
+    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
+    ResourceType: ResourceTypeType,  # (2)
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (4)
+    LockConfiguration: NotRequired[LockConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+5. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+## CreateRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import CreateRuleResponseTypeDef
+
+def get_value() -> CreateRuleResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "RetentionPeriod": ...,
+        "Description": ...,
+        "Tags": ...,
+        "ResourceType": ...,
+        "ResourceTags": ...,
+        "Status": ...,
+        "LockConfiguration": ...,
+        "LockState": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRuleResponseTypeDef(TypedDict):
+    Identifier: str,
+    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
+    Description: str,
+    Tags: List[TagTypeDef],  # (2)
+    ResourceType: ResourceTypeType,  # (3)
+    ResourceTags: List[ResourceTagTypeDef],  # (4)
+    Status: RuleStatusType,  # (5)
+    LockConfiguration: LockConfigurationTypeDef,  # (6)
+    LockState: LockStateType,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+5. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
+6. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+7. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import GetRuleResponseTypeDef
+
+def get_value() -> GetRuleResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "Description": ...,
+        "ResourceType": ...,
+        "RetentionPeriod": ...,
+        "ResourceTags": ...,
+        "Status": ...,
+        "LockConfiguration": ...,
+        "LockState": ...,
+        "LockEndTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRuleResponseTypeDef(TypedDict):
+    Identifier: str,
+    Description: str,
+    ResourceType: ResourceTypeType,  # (1)
+    RetentionPeriod: RetentionPeriodTypeDef,  # (2)
+    ResourceTags: List[ResourceTagTypeDef],  # (3)
+    Status: RuleStatusType,  # (4)
+    LockConfiguration: LockConfigurationTypeDef,  # (5)
+    LockState: LockStateType,  # (6)
+    LockEndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+4. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
+5. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+6. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LockRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import LockRuleRequestRequestTypeDef
+
+def get_value() -> LockRuleRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+        "LockConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class LockRuleRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    LockConfiguration: LockConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+## LockRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import LockRuleResponseTypeDef
+
+def get_value() -> LockRuleResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "Description": ...,
+        "ResourceType": ...,
+        "RetentionPeriod": ...,
+        "ResourceTags": ...,
+        "Status": ...,
+        "LockConfiguration": ...,
+        "LockState": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class LockRuleResponseTypeDef(TypedDict):
+    Identifier: str,
+    Description: str,
+    ResourceType: ResourceTypeType,  # (1)
+    RetentionPeriod: RetentionPeriodTypeDef,  # (2)
+    ResourceTags: List[ResourceTagTypeDef],  # (3)
+    Status: RuleStatusType,  # (4)
+    LockConfiguration: LockConfigurationTypeDef,  # (5)
+    LockState: LockStateType,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+4. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
+5. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+6. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UnlockRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import UnlockRuleResponseTypeDef
+
+def get_value() -> UnlockRuleResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "Description": ...,
+        "ResourceType": ...,
+        "RetentionPeriod": ...,
+        "ResourceTags": ...,
+        "Status": ...,
+        "LockConfiguration": ...,
+        "LockState": ...,
+        "LockEndTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UnlockRuleResponseTypeDef(TypedDict):
+    Identifier: str,
+    Description: str,
+    ResourceType: ResourceTypeType,  # (1)
+    RetentionPeriod: RetentionPeriodTypeDef,  # (2)
+    ResourceTags: List[ResourceTagTypeDef],  # (3)
+    Status: RuleStatusType,  # (4)
+    LockConfiguration: LockConfigurationTypeDef,  # (5)
+    LockState: LockStateType,  # (6)
+    LockEndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+4. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
+5. See [:material-code-braces: LockConfigurationTypeDef](./type_defs.md#lockconfigurationtypedef) 
+6. See [:material-code-brackets: LockStateType](./literals.md#lockstatetype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
