@@ -161,6 +161,25 @@ class CalculatedLifecycleTypeDef(TypedDict):
     DeleteAt: NotRequired[datetime],
 ```
 
+## CancelLegalHoldInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import CancelLegalHoldInputRequestTypeDef
+
+def get_value() -> CancelLegalHoldInputRequestTypeDef:
+    return {
+        "LegalHoldId": ...,
+        "CancelDescription": ...,
+    }
+```
+
+```python title="Definition"
+class CancelLegalHoldInputRequestTypeDef(TypedDict):
+    LegalHoldId: str,
+    CancelDescription: str,
+    RetainRecordInDays: NotRequired[int],
+```
+
 ## ConditionParameterTypeDef
 
 ```python title="Usage Example"
@@ -290,6 +309,27 @@ class ReportSettingTypeDef(TypedDict):
     ReportTemplate: str,
     FrameworkArns: NotRequired[Sequence[str]],
     NumberOfFrameworks: NotRequired[int],
+    Accounts: NotRequired[Sequence[str]],
+    OrganizationUnits: NotRequired[Sequence[str]],
+    Regions: NotRequired[Sequence[str]],
+```
+
+## DateRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import DateRangeTypeDef
+
+def get_value() -> DateRangeTypeDef:
+    return {
+        "FromDate": ...,
+        "ToDate": ...,
+    }
+```
+
+```python title="Definition"
+class DateRangeTypeDef(TypedDict):
+    FromDate: Union[datetime, str],
+    ToDate: Union[datetime, str],
 ```
 
 ## DeleteBackupPlanInputRequestTypeDef
@@ -586,6 +626,24 @@ class DescribeRestoreJobInputRequestTypeDef(TypedDict):
     RestoreJobId: str,
 ```
 
+## DisassociateRecoveryPointFromParentInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import DisassociateRecoveryPointFromParentInputRequestTypeDef
+
+def get_value() -> DisassociateRecoveryPointFromParentInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "RecoveryPointArn": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateRecoveryPointFromParentInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+```
+
 ## DisassociateRecoveryPointInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -740,6 +798,22 @@ class GetBackupVaultNotificationsInputRequestTypeDef(TypedDict):
     BackupVaultName: str,
 ```
 
+## GetLegalHoldInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import GetLegalHoldInputRequestTypeDef
+
+def get_value() -> GetLegalHoldInputRequestTypeDef:
+    return {
+        "LegalHoldId": ...,
+    }
+```
+
+```python title="Definition"
+class GetLegalHoldInputRequestTypeDef(TypedDict):
+    LegalHoldId: str,
+```
+
 ## GetRecoveryPointRestoreMetadataInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -758,6 +832,29 @@ class GetRecoveryPointRestoreMetadataInputRequestTypeDef(TypedDict):
     RecoveryPointArn: str,
 ```
 
+## LegalHoldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import LegalHoldTypeDef
+
+def get_value() -> LegalHoldTypeDef:
+    return {
+        "Title": ...,
+    }
+```
+
+```python title="Definition"
+class LegalHoldTypeDef(TypedDict):
+    Title: NotRequired[str],
+    Status: NotRequired[LegalHoldStatusType],  # (1)
+    Description: NotRequired[str],
+    LegalHoldId: NotRequired[str],
+    LegalHoldArn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    CancellationDate: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: LegalHoldStatusType](./literals.md#legalholdstatustype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -800,6 +897,7 @@ class ListBackupJobsInputRequestTypeDef(TypedDict):
     ByAccountId: NotRequired[str],
     ByCompleteAfter: NotRequired[Union[datetime, str]],
     ByCompleteBefore: NotRequired[Union[datetime, str]],
+    ByParentJobId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
@@ -915,6 +1013,7 @@ class ListCopyJobsInputRequestTypeDef(TypedDict):
     ByAccountId: NotRequired[str],
     ByCompleteBefore: NotRequired[Union[datetime, str]],
     ByCompleteAfter: NotRequired[Union[datetime, str]],
+    ByParentJobId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
@@ -933,6 +1032,23 @@ def get_value() -> ListFrameworksInputRequestTypeDef:
 class ListFrameworksInputRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+```
+
+## ListLegalHoldsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListLegalHoldsInputRequestTypeDef
+
+def get_value() -> ListLegalHoldsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListLegalHoldsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## ListProtectedResourcesInputRequestTypeDef
@@ -991,6 +1107,41 @@ class ListRecoveryPointsByBackupVaultInputRequestTypeDef(TypedDict):
     ByBackupPlanId: NotRequired[str],
     ByCreatedBefore: NotRequired[Union[datetime, str]],
     ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByParentRecoveryPointArn: NotRequired[str],
+```
+
+## ListRecoveryPointsByLegalHoldInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListRecoveryPointsByLegalHoldInputRequestTypeDef
+
+def get_value() -> ListRecoveryPointsByLegalHoldInputRequestTypeDef:
+    return {
+        "LegalHoldId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecoveryPointsByLegalHoldInputRequestTypeDef(TypedDict):
+    LegalHoldId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## RecoveryPointMemberTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import RecoveryPointMemberTypeDef
+
+def get_value() -> RecoveryPointMemberTypeDef:
+    return {
+        "RecoveryPointArn": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryPointMemberTypeDef(TypedDict):
+    RecoveryPointArn: NotRequired[str],
 ```
 
 ## ListRecoveryPointsByResourceInputRequestTypeDef
@@ -1031,6 +1182,8 @@ class RecoveryPointByResourceTypeDef(TypedDict):
     EncryptionKeyArn: NotRequired[str],
     BackupSizeBytes: NotRequired[int],
     BackupVaultName: NotRequired[str],
+    IsParent: NotRequired[bool],
+    ParentRecoveryPointArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: RecoveryPointStatusType](./literals.md#recoverypointstatustype) 
@@ -1398,6 +1551,8 @@ class BackupJobTypeDef(TypedDict):
     BytesTransferred: NotRequired[int],
     BackupOptions: NotRequired[Dict[str, str]],
     BackupType: NotRequired[str],
+    ParentJobId: NotRequired[str],
+    IsParent: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
@@ -1430,10 +1585,16 @@ class CopyJobTypeDef(TypedDict):
     IamRoleArn: NotRequired[str],
     CreatedBy: NotRequired[RecoveryPointCreatorTypeDef],  # (2)
     ResourceType: NotRequired[str],
+    ParentJobId: NotRequired[str],
+    IsParent: NotRequired[bool],
+    CompositeMemberIdentifier: NotRequired[str],
+    NumberOfChildJobs: NotRequired[int],
+    ChildJobsInState: NotRequired[Dict[CopyJobStateType, int]],  # (3)
 ```
 
 1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
 2. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
+3. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
 ## CopyActionTypeDef
 
 ```python title="Usage Example"
@@ -1555,6 +1716,9 @@ class RecoveryPointByBackupVaultTypeDef(TypedDict):
     EncryptionKeyArn: NotRequired[str],
     IsEncrypted: NotRequired[bool],
     LastRestoreTime: NotRequired[datetime],
+    ParentRecoveryPointArn: NotRequired[str],
+    CompositeMemberIdentifier: NotRequired[str],
+    IsParent: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
@@ -1774,6 +1938,10 @@ def get_value() -> DescribeBackupJobOutputTypeDef:
         "StartBy": ...,
         "BackupOptions": ...,
         "BackupType": ...,
+        "ParentJobId": ...,
+        "IsParent": ...,
+        "NumberOfChildJobs": ...,
+        "ChildJobsInState": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1800,12 +1968,17 @@ class DescribeBackupJobOutputTypeDef(TypedDict):
     StartBy: datetime,
     BackupOptions: Dict[str, str],
     BackupType: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    ParentJobId: str,
+    IsParent: bool,
+    NumberOfChildJobs: int,
+    ChildJobsInState: Dict[BackupJobStateType, int],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
 2. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBackupVaultOutputTypeDef
 
 ```python title="Usage Example"
@@ -1913,6 +2086,9 @@ def get_value() -> DescribeRecoveryPointOutputTypeDef:
         "IsEncrypted": ...,
         "StorageClass": ...,
         "LastRestoreTime": ...,
+        "ParentRecoveryPointArn": ...,
+        "CompositeMemberIdentifier": ...,
+        "IsParent": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1938,6 +2114,9 @@ class DescribeRecoveryPointOutputTypeDef(TypedDict):
     IsEncrypted: bool,
     StorageClass: StorageClassType,  # (5)
     LastRestoreTime: datetime,
+    ParentRecoveryPointArn: str,
+    CompositeMemberIdentifier: str,
+    IsParent: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
@@ -2236,6 +2415,7 @@ def get_value() -> StartBackupJobOutputTypeDef:
         "BackupJobId": ...,
         "RecoveryPointArn": ...,
         "CreationDate": ...,
+        "IsParent": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2245,6 +2425,7 @@ class StartBackupJobOutputTypeDef(TypedDict):
     BackupJobId: str,
     RecoveryPointArn: str,
     CreationDate: datetime,
+    IsParent: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2258,6 +2439,7 @@ def get_value() -> StartCopyJobOutputTypeDef:
     return {
         "CopyJobId": ...,
         "CreationDate": ...,
+        "IsParent": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2266,6 +2448,7 @@ def get_value() -> StartCopyJobOutputTypeDef:
 class StartCopyJobOutputTypeDef(TypedDict):
     CopyJobId: str,
     CreationDate: datetime,
+    IsParent: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2482,6 +2665,25 @@ class UpdateReportPlanInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef) 
 2. See [:material-code-braces: ReportSettingTypeDef](./type_defs.md#reportsettingtypedef) 
+## RecoveryPointSelectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import RecoveryPointSelectionTypeDef
+
+def get_value() -> RecoveryPointSelectionTypeDef:
+    return {
+        "VaultNames": ...,
+    }
+```
+
+```python title="Definition"
+class RecoveryPointSelectionTypeDef(TypedDict):
+    VaultNames: NotRequired[Sequence[str]],
+    ResourceIdentifiers: NotRequired[Sequence[str]],
+    DateRange: NotRequired[DateRangeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DateRangeTypeDef](./type_defs.md#daterangetypedef) 
 ## ListFrameworksOutputTypeDef
 
 ```python title="Usage Example"
@@ -2503,6 +2705,28 @@ class ListFrameworksOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FrameworkTypeDef](./type_defs.md#frameworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLegalHoldsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListLegalHoldsOutputTypeDef
+
+def get_value() -> ListLegalHoldsOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "LegalHolds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLegalHoldsOutputTypeDef(TypedDict):
+    NextToken: str,
+    LegalHolds: List[LegalHoldTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LegalHoldTypeDef](./type_defs.md#legalholdtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackupJobsInputListBackupJobsPaginateTypeDef
 
@@ -2526,6 +2750,7 @@ class ListBackupJobsInputListBackupJobsPaginateTypeDef(TypedDict):
     ByAccountId: NotRequired[str],
     ByCompleteAfter: NotRequired[Union[datetime, str]],
     ByCompleteBefore: NotRequired[Union[datetime, str]],
+    ByParentJobId: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -2641,11 +2866,29 @@ class ListCopyJobsInputListCopyJobsPaginateTypeDef(TypedDict):
     ByAccountId: NotRequired[str],
     ByCompleteBefore: NotRequired[Union[datetime, str]],
     ByCompleteAfter: NotRequired[Union[datetime, str]],
+    ByParentJobId: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
 1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListLegalHoldsInputListLegalHoldsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListLegalHoldsInputListLegalHoldsPaginateTypeDef
+
+def get_value() -> ListLegalHoldsInputListLegalHoldsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListLegalHoldsInputListLegalHoldsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProtectedResourcesInputListProtectedResourcesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2682,6 +2925,25 @@ class ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginat
     ByBackupPlanId: NotRequired[str],
     ByCreatedBefore: NotRequired[Union[datetime, str]],
     ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByParentRecoveryPointArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRecoveryPointsByLegalHoldInputListRecoveryPointsByLegalHoldPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListRecoveryPointsByLegalHoldInputListRecoveryPointsByLegalHoldPaginateTypeDef
+
+def get_value() -> ListRecoveryPointsByLegalHoldInputListRecoveryPointsByLegalHoldPaginateTypeDef:
+    return {
+        "LegalHoldId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecoveryPointsByLegalHoldInputListRecoveryPointsByLegalHoldPaginateTypeDef(TypedDict):
+    LegalHoldId: str,
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -2749,6 +3011,28 @@ class ListProtectedResourcesOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ProtectedResourceTypeDef](./type_defs.md#protectedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRecoveryPointsByLegalHoldOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import ListRecoveryPointsByLegalHoldOutputTypeDef
+
+def get_value() -> ListRecoveryPointsByLegalHoldOutputTypeDef:
+    return {
+        "RecoveryPoints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecoveryPointsByLegalHoldOutputTypeDef(TypedDict):
+    RecoveryPoints: List[RecoveryPointMemberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecoveryPointMemberTypeDef](./type_defs.md#recoverypointmembertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRecoveryPointsByResourceOutputTypeDef
 
@@ -3145,6 +3429,100 @@ class ListReportPlansOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReportPlanTypeDef](./type_defs.md#reportplantypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateLegalHoldInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import CreateLegalHoldInputRequestTypeDef
+
+def get_value() -> CreateLegalHoldInputRequestTypeDef:
+    return {
+        "Title": ...,
+        "Description": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLegalHoldInputRequestTypeDef(TypedDict):
+    Title: str,
+    Description: str,
+    IdempotencyToken: NotRequired[str],
+    RecoveryPointSelection: NotRequired[RecoveryPointSelectionTypeDef],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: RecoveryPointSelectionTypeDef](./type_defs.md#recoverypointselectiontypedef) 
+## CreateLegalHoldOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import CreateLegalHoldOutputTypeDef
+
+def get_value() -> CreateLegalHoldOutputTypeDef:
+    return {
+        "Title": ...,
+        "Status": ...,
+        "Description": ...,
+        "LegalHoldId": ...,
+        "LegalHoldArn": ...,
+        "CreationDate": ...,
+        "RecoveryPointSelection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLegalHoldOutputTypeDef(TypedDict):
+    Title: str,
+    Status: LegalHoldStatusType,  # (1)
+    Description: str,
+    LegalHoldId: str,
+    LegalHoldArn: str,
+    CreationDate: datetime,
+    RecoveryPointSelection: RecoveryPointSelectionTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: LegalHoldStatusType](./literals.md#legalholdstatustype) 
+2. See [:material-code-braces: RecoveryPointSelectionTypeDef](./type_defs.md#recoverypointselectiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetLegalHoldOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup.type_defs import GetLegalHoldOutputTypeDef
+
+def get_value() -> GetLegalHoldOutputTypeDef:
+    return {
+        "Title": ...,
+        "Status": ...,
+        "Description": ...,
+        "CancelDescription": ...,
+        "LegalHoldId": ...,
+        "LegalHoldArn": ...,
+        "CreationDate": ...,
+        "CancellationDate": ...,
+        "RetainRecordUntil": ...,
+        "RecoveryPointSelection": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLegalHoldOutputTypeDef(TypedDict):
+    Title: str,
+    Status: LegalHoldStatusType,  # (1)
+    Description: str,
+    CancelDescription: str,
+    LegalHoldId: str,
+    LegalHoldArn: str,
+    CreationDate: datetime,
+    CancellationDate: datetime,
+    RetainRecordUntil: datetime,
+    RecoveryPointSelection: RecoveryPointSelectionTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: LegalHoldStatusType](./literals.md#legalholdstatustype) 
+2. See [:material-code-braces: RecoveryPointSelectionTypeDef](./type_defs.md#recoverypointselectiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeReportJobOutputTypeDef
 
 ```python title="Usage Example"

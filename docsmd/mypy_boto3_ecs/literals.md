@@ -26,6 +26,22 @@ AgentUpdateStatusType = Literal[
     "UPDATING",
 ]
 ```
+## ApplicationProtocolType
+
+```python title="Usage Example"
+from mypy_boto3_ecs.literals import ApplicationProtocolType
+
+def get_value() -> ApplicationProtocolType:
+    return "grpc"
+```
+
+```python title="Definition"
+ApplicationProtocolType = Literal[
+    "grpc",
+    "http",
+    "http2",
+]
+```
 ## AssignPublicIpType
 
 ```python title="Usage Example"
@@ -489,6 +505,20 @@ def get_value() -> ListContainerInstancesPaginatorName:
 ```python title="Definition"
 ListContainerInstancesPaginatorName = Literal[
     "list_container_instances",
+]
+```
+## ListServicesByNamespacePaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ecs.literals import ListServicesByNamespacePaginatorName
+
+def get_value() -> ListServicesByNamespacePaginatorName:
+    return "list_services_by_namespace"
+```
+
+```python title="Definition"
+ListServicesByNamespacePaginatorName = Literal[
+    "list_services_by_namespace",
 ]
 ```
 ## ListServicesPaginatorName
@@ -1002,7 +1032,10 @@ def get_value() -> TaskStopCodeType:
 ```python title="Definition"
 TaskStopCodeType = Literal[
     "EssentialContainerExited",
+    "ServiceSchedulerInitiated",
+    "SpotInterruption",
     "TaskFailedToStart",
+    "TerminationNotice",
     "UserInitiated",
 ]
 ```
@@ -1321,6 +1354,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",
@@ -1466,6 +1500,7 @@ PaginatorName = Literal[
     "list_clusters",
     "list_container_instances",
     "list_services",
+    "list_services_by_namespace",
     "list_task_definition_families",
     "list_task_definitions",
     "list_tasks",

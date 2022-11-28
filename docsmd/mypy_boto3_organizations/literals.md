@@ -95,6 +95,7 @@ CreateAccountFailureReasonType = Literal[
     "MISSING_PAYMENT_INSTRUMENT",
     "PENDING_BUSINESS_VALIDATION",
     "UNKNOWN_BUSINESS_VALIDATION",
+    "UPDATE_EXISTING_RESOURCE_POLICY_WITH_TAGS_NOT_SUPPORTED",
 ]
 ```
 ## CreateAccountStateType
@@ -747,6 +748,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

@@ -7,6 +7,119 @@
     Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
     type annotations stubs module [mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
+## ApplicationAggregatedStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ApplicationAggregatedStatusTypeDef
+
+def get_value() -> ApplicationAggregatedStatusTypeDef:
+    return {
+        "healthStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationAggregatedStatusTypeDef(TypedDict):
+    healthStatus: NotRequired[ApplicationHealthStatusType],  # (1)
+    lastUpdateDateTime: NotRequired[str],
+    progressStatus: NotRequired[ApplicationProgressStatusType],  # (2)
+    totalSourceServers: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ApplicationHealthStatusType](./literals.md#applicationhealthstatustype) 
+2. See [:material-code-brackets: ApplicationProgressStatusType](./literals.md#applicationprogressstatustype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
+## ArchiveApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ArchiveApplicationRequestRequestTypeDef
+
+def get_value() -> ArchiveApplicationRequestRequestTypeDef:
+    return {
+        "applicationID": ...,
+    }
+```
+
+```python title="Definition"
+class ArchiveApplicationRequestRequestTypeDef(TypedDict):
+    applicationID: str,
+```
+
+## ArchiveWaveRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ArchiveWaveRequestRequestTypeDef
+
+def get_value() -> ArchiveWaveRequestRequestTypeDef:
+    return {
+        "waveID": ...,
+    }
+```
+
+```python title="Definition"
+class ArchiveWaveRequestRequestTypeDef(TypedDict):
+    waveID: str,
+```
+
+## AssociateApplicationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import AssociateApplicationsRequestRequestTypeDef
+
+def get_value() -> AssociateApplicationsRequestRequestTypeDef:
+    return {
+        "applicationIDs": ...,
+        "waveID": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateApplicationsRequestRequestTypeDef(TypedDict):
+    applicationIDs: Sequence[str],
+    waveID: str,
+```
+
+## AssociateSourceServersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import AssociateSourceServersRequestRequestTypeDef
+
+def get_value() -> AssociateSourceServersRequestRequestTypeDef:
+    return {
+        "applicationID": ...,
+        "sourceServerIDs": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateSourceServersRequestRequestTypeDef(TypedDict):
+    applicationID: str,
+    sourceServerIDs: Sequence[str],
+```
+
 ## CPUTypeDef
 
 ```python title="Usage Example"
@@ -41,6 +154,59 @@ class ChangeServerLifeCycleStateSourceServerLifecycleTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChangeServerLifeCycleStateSourceServerLifecycleStateType](./literals.md#changeserverlifecyclestatesourceserverlifecyclestatetype) 
+## CreateApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## LaunchTemplateDiskConfTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LaunchTemplateDiskConfTypeDef
+
+def get_value() -> LaunchTemplateDiskConfTypeDef:
+    return {
+        "iops": ...,
+    }
+```
+
+```python title="Definition"
+class LaunchTemplateDiskConfTypeDef(TypedDict):
+    iops: NotRequired[int],
+    throughput: NotRequired[int],
+    volumeType: NotRequired[VolumeTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: VolumeTypeType](./literals.md#volumetypetype) 
+## LicensingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import LicensingTypeDef
+
+def get_value() -> LicensingTypeDef:
+    return {
+        "osByol": ...,
+    }
+```
+
+```python title="Definition"
+class LicensingTypeDef(TypedDict):
+    osByol: NotRequired[bool],
+```
+
 ## CreateReplicationConfigurationTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -82,6 +248,24 @@ class CreateReplicationConfigurationTemplateRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
 2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
 3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+## CreateWaveRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import CreateWaveRequestRequestTypeDef
+
+def get_value() -> CreateWaveRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWaveRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
 ## DataReplicationErrorTypeDef
 
 ```python title="Usage Example"
@@ -139,6 +323,22 @@ class DataReplicationInitiationStepTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DataReplicationInitiationStepNameType](./literals.md#datareplicationinitiationstepnametype) 
 2. See [:material-code-brackets: DataReplicationInitiationStepStatusType](./literals.md#datareplicationinitiationstepstatustype) 
+## DeleteApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DeleteApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationRequestRequestTypeDef:
+    return {
+        "applicationID": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteApplicationRequestRequestTypeDef(TypedDict):
+    applicationID: str,
+```
+
 ## DeleteJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -219,6 +419,22 @@ class DeleteVcenterClientRequestRequestTypeDef(TypedDict):
     vcenterClientID: str,
 ```
 
+## DeleteWaveRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DeleteWaveRequestRequestTypeDef
+
+def get_value() -> DeleteWaveRequestRequestTypeDef:
+    return {
+        "waveID": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteWaveRequestRequestTypeDef(TypedDict):
+    waveID: str,
+```
+
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -253,30 +469,6 @@ class DescribeJobLogItemsRequestRequestTypeDef(TypedDict):
     jobID: str,
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
-```
-
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
 ```
 
 ## DescribeJobsRequestFiltersTypeDef
@@ -373,12 +565,13 @@ from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestFiltersTypeDef
 
 def get_value() -> DescribeSourceServersRequestFiltersTypeDef:
     return {
-        "isArchived": ...,
+        "applicationIDs": ...,
     }
 ```
 
 ```python title="Definition"
 class DescribeSourceServersRequestFiltersTypeDef(TypedDict):
+    applicationIDs: NotRequired[Sequence[str]],
     isArchived: NotRequired[bool],
     lifeCycleStates: NotRequired[Sequence[LifeCycleStateType]],  # (1)
     replicationTypes: NotRequired[Sequence[ReplicationTypeType]],  # (2)
@@ -425,6 +618,42 @@ class VcenterClientTypeDef(TypedDict):
     tags: NotRequired[Dict[str, str]],
     vcenterClientID: NotRequired[str],
     vcenterUUID: NotRequired[str],
+```
+
+## DisassociateApplicationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DisassociateApplicationsRequestRequestTypeDef
+
+def get_value() -> DisassociateApplicationsRequestRequestTypeDef:
+    return {
+        "applicationIDs": ...,
+        "waveID": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateApplicationsRequestRequestTypeDef(TypedDict):
+    applicationIDs: Sequence[str],
+    waveID: str,
+```
+
+## DisassociateSourceServersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import DisassociateSourceServersRequestRequestTypeDef
+
+def get_value() -> DisassociateSourceServersRequestRequestTypeDef:
+    return {
+        "applicationID": ...,
+        "sourceServerIDs": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateSourceServersRequestRequestTypeDef(TypedDict):
+    applicationID: str,
+    sourceServerIDs: Sequence[str],
 ```
 
 ## DisconnectFromServiceRequestRequestTypeDef
@@ -547,22 +776,6 @@ class JobLogEventDataTypeDef(TypedDict):
     targetInstanceID: NotRequired[str],
 ```
 
-## LicensingTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import LicensingTypeDef
-
-def get_value() -> LicensingTypeDef:
-    return {
-        "osByol": ...,
-    }
-```
-
-```python title="Definition"
-class LicensingTypeDef(TypedDict):
-    osByol: NotRequired[bool],
-```
-
 ## LaunchedInstanceTypeDef
 
 ```python title="Usage Example"
@@ -680,6 +893,40 @@ class LifeCycleLastTestRevertedTypeDef(TypedDict):
     apiCallDateTime: NotRequired[str],
 ```
 
+## ListApplicationsRequestFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListApplicationsRequestFiltersTypeDef
+
+def get_value() -> ListApplicationsRequestFiltersTypeDef:
+    return {
+        "applicationIDs": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestFiltersTypeDef(TypedDict):
+    applicationIDs: NotRequired[Sequence[str]],
+    isArchived: NotRequired[bool],
+    waveIDs: NotRequired[Sequence[str]],
+```
+
+## SourceServerActionsRequestFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import SourceServerActionsRequestFiltersTypeDef
+
+def get_value() -> SourceServerActionsRequestFiltersTypeDef:
+    return {
+        "actionIDs": ...,
+    }
+```
+
+```python title="Definition"
+class SourceServerActionsRequestFiltersTypeDef(TypedDict):
+    actionIDs: NotRequired[Sequence[str]],
+```
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -694,6 +941,39 @@ def get_value() -> ListTagsForResourceRequestRequestTypeDef:
 ```python title="Definition"
 class ListTagsForResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
+```
+
+## TemplateActionsRequestFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import TemplateActionsRequestFiltersTypeDef
+
+def get_value() -> TemplateActionsRequestFiltersTypeDef:
+    return {
+        "actionIDs": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateActionsRequestFiltersTypeDef(TypedDict):
+    actionIDs: NotRequired[Sequence[str]],
+```
+
+## ListWavesRequestFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListWavesRequestFiltersTypeDef
+
+def get_value() -> ListWavesRequestFiltersTypeDef:
+    return {
+        "isArchived": ...,
+    }
+```
+
+```python title="Definition"
+class ListWavesRequestFiltersTypeDef(TypedDict):
+    isArchived: NotRequired[bool],
+    waveIDs: NotRequired[Sequence[str]],
 ```
 
 ## MarkAsArchivedRequestRequestTypeDef
@@ -746,6 +1026,61 @@ class OSTypeDef(TypedDict):
     fullString: NotRequired[str],
 ```
 
+## SsmParameterStoreParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import SsmParameterStoreParameterTypeDef
+
+def get_value() -> SsmParameterStoreParameterTypeDef:
+    return {
+        "parameterName": ...,
+        "parameterType": ...,
+    }
+```
+
+```python title="Definition"
+class SsmParameterStoreParameterTypeDef(TypedDict):
+    parameterName: str,
+    parameterType: SsmParameterStoreParameterTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: SsmParameterStoreParameterTypeType](./literals.md#ssmparameterstoreparametertypetype) 
+## RemoveSourceServerActionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import RemoveSourceServerActionRequestRequestTypeDef
+
+def get_value() -> RemoveSourceServerActionRequestRequestTypeDef:
+    return {
+        "actionID": ...,
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveSourceServerActionRequestRequestTypeDef(TypedDict):
+    actionID: str,
+    sourceServerID: str,
+```
+
+## RemoveTemplateActionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import RemoveTemplateActionRequestRequestTypeDef
+
+def get_value() -> RemoveTemplateActionRequestRequestTypeDef:
+    return {
+        "actionID": ...,
+        "launchConfigurationTemplateID": ...,
+    }
+```
+
+```python title="Definition"
+class RemoveTemplateActionRequestRequestTypeDef(TypedDict):
+    actionID: str,
+    launchConfigurationTemplateID: str,
+```
+
 ## ReplicationConfigurationReplicatedDiskTypeDef
 
 ```python title="Usage Example"
@@ -783,25 +1118,6 @@ class RetryDataReplicationRequestRequestTypeDef(TypedDict):
     sourceServerID: str,
 ```
 
-## SsmParameterStoreParameterTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import SsmParameterStoreParameterTypeDef
-
-def get_value() -> SsmParameterStoreParameterTypeDef:
-    return {
-        "parameterName": ...,
-        "parameterType": ...,
-    }
-```
-
-```python title="Definition"
-class SsmParameterStoreParameterTypeDef(TypedDict):
-    parameterName: str,
-    parameterType: SsmParameterStoreParameterTypeType,  # (1)
-```
-
-1. See [:material-code-brackets: SsmParameterStoreParameterTypeType](./literals.md#ssmparameterstoreparametertypetype) 
 ## StartCutoverRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -887,6 +1203,38 @@ class TerminateTargetInstancesRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
 ```
 
+## UnarchiveApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import UnarchiveApplicationRequestRequestTypeDef
+
+def get_value() -> UnarchiveApplicationRequestRequestTypeDef:
+    return {
+        "applicationID": ...,
+    }
+```
+
+```python title="Definition"
+class UnarchiveApplicationRequestRequestTypeDef(TypedDict):
+    applicationID: str,
+```
+
+## UnarchiveWaveRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import UnarchiveWaveRequestRequestTypeDef
+
+def get_value() -> UnarchiveWaveRequestRequestTypeDef:
+    return {
+        "waveID": ...,
+    }
+```
+
+```python title="Definition"
+class UnarchiveWaveRequestRequestTypeDef(TypedDict):
+    waveID: str,
+```
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -903,6 +1251,24 @@ def get_value() -> UntagResourceRequestRequestTypeDef:
 class UntagResourceRequestRequestTypeDef(TypedDict):
     resourceArn: str,
     tagKeys: Sequence[str],
+```
+
+## UpdateApplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import UpdateApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationRequestRequestTypeDef:
+    return {
+        "applicationID": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateApplicationRequestRequestTypeDef(TypedDict):
+    applicationID: str,
+    description: NotRequired[str],
+    name: NotRequired[str],
 ```
 
 ## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
@@ -956,6 +1322,196 @@ class UpdateSourceServerReplicationTypeRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReplicationTypeType](./literals.md#replicationtypetype) 
+## UpdateWaveRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import UpdateWaveRequestRequestTypeDef
+
+def get_value() -> UpdateWaveRequestRequestTypeDef:
+    return {
+        "waveID": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateWaveRequestRequestTypeDef(TypedDict):
+    waveID: str,
+    description: NotRequired[str],
+    name: NotRequired[str],
+```
+
+## WaveAggregatedStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import WaveAggregatedStatusTypeDef
+
+def get_value() -> WaveAggregatedStatusTypeDef:
+    return {
+        "healthStatus": ...,
+    }
+```
+
+```python title="Definition"
+class WaveAggregatedStatusTypeDef(TypedDict):
+    healthStatus: NotRequired[WaveHealthStatusType],  # (1)
+    lastUpdateDateTime: NotRequired[str],
+    progressStatus: NotRequired[WaveProgressStatusType],  # (2)
+    replicationStartedDateTime: NotRequired[str],
+    totalApplications: NotRequired[int],
+```
+
+1. See [:material-code-brackets: WaveHealthStatusType](./literals.md#wavehealthstatustype) 
+2. See [:material-code-brackets: WaveProgressStatusType](./literals.md#waveprogressstatustype) 
+## ApplicationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ApplicationTypeDef
+
+def get_value() -> ApplicationTypeDef:
+    return {
+        "applicationAggregatedStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationTypeDef(TypedDict):
+    applicationAggregatedStatus: NotRequired[ApplicationAggregatedStatusTypeDef],  # (1)
+    applicationID: NotRequired[str],
+    arn: NotRequired[str],
+    creationDateTime: NotRequired[str],
+    description: NotRequired[str],
+    isArchived: NotRequired[bool],
+    lastModifiedDateTime: NotRequired[str],
+    name: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    waveID: NotRequired[str],
+```
+
+1. See [:material-code-braces: ApplicationAggregatedStatusTypeDef](./type_defs.md#applicationaggregatedstatustypedef) 
+## ApplicationResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ApplicationResponseMetadataTypeDef
+
+def get_value() -> ApplicationResponseMetadataTypeDef:
+    return {
+        "applicationAggregatedStatus": ...,
+        "applicationID": ...,
+        "arn": ...,
+        "creationDateTime": ...,
+        "description": ...,
+        "isArchived": ...,
+        "lastModifiedDateTime": ...,
+        "name": ...,
+        "tags": ...,
+        "waveID": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationResponseMetadataTypeDef(TypedDict):
+    applicationAggregatedStatus: ApplicationAggregatedStatusTypeDef,  # (1)
+    applicationID: str,
+    arn: str,
+    creationDateTime: str,
+    description: str,
+    isArchived: bool,
+    lastModifiedDateTime: str,
+    name: str,
+    tags: Dict[str, str],
+    waveID: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationAggregatedStatusTypeDef](./type_defs.md#applicationaggregatedstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReplicationConfigurationTemplateResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
+
+def get_value() -> ReplicationConfigurationTemplateResponseMetadataTypeDef:
+    return {
+        "arn": ...,
+        "associateDefaultSecurityGroup": ...,
+        "bandwidthThrottling": ...,
+        "createPublicIP": ...,
+        "dataPlaneRouting": ...,
+        "defaultLargeStagingDiskType": ...,
+        "ebsEncryption": ...,
+        "ebsEncryptionKeyArn": ...,
+        "replicationConfigurationTemplateID": ...,
+        "replicationServerInstanceType": ...,
+        "replicationServersSecurityGroupsIDs": ...,
+        "stagingAreaSubnetId": ...,
+        "stagingAreaTags": ...,
+        "tags": ...,
+        "useDedicatedReplicationServer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReplicationConfigurationTemplateResponseMetadataTypeDef(TypedDict):
+    arn: str,
+    associateDefaultSecurityGroup: bool,
+    bandwidthThrottling: int,
+    createPublicIP: bool,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
+    ebsEncryptionKeyArn: str,
+    replicationConfigurationTemplateID: str,
+    replicationServerInstanceType: str,
+    replicationServersSecurityGroupsIDs: List[str],
+    stagingAreaSubnetId: str,
+    stagingAreaTags: Dict[str, str],
+    tags: Dict[str, str],
+    useDedicatedReplicationServer: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChangeServerLifeCycleStateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1065,92 +1621,6 @@ class DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef(TypedDi
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## EmptyResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import EmptyResponseMetadataTypeDef
-
-def get_value() -> EmptyResponseMetadataTypeDef:
-    return {
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class EmptyResponseMetadataTypeDef(TypedDict):
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ReplicationConfigurationTemplateResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import ReplicationConfigurationTemplateResponseMetadataTypeDef
-
-def get_value() -> ReplicationConfigurationTemplateResponseMetadataTypeDef:
-    return {
-        "arn": ...,
-        "associateDefaultSecurityGroup": ...,
-        "bandwidthThrottling": ...,
-        "createPublicIP": ...,
-        "dataPlaneRouting": ...,
-        "defaultLargeStagingDiskType": ...,
-        "ebsEncryption": ...,
-        "ebsEncryptionKeyArn": ...,
-        "replicationConfigurationTemplateID": ...,
-        "replicationServerInstanceType": ...,
-        "replicationServersSecurityGroupsIDs": ...,
-        "stagingAreaSubnetId": ...,
-        "stagingAreaTags": ...,
-        "tags": ...,
-        "useDedicatedReplicationServer": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ReplicationConfigurationTemplateResponseMetadataTypeDef(TypedDict):
-    arn: str,
-    associateDefaultSecurityGroup: bool,
-    bandwidthThrottling: int,
-    createPublicIP: bool,
-    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
-    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
-    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
-    ebsEncryptionKeyArn: str,
-    replicationConfigurationTemplateID: str,
-    replicationServerInstanceType: str,
-    replicationServersSecurityGroupsIDs: List[str],
-    stagingAreaSubnetId: str,
-    stagingAreaTags: Dict[str, str],
-    tags: Dict[str, str],
-    useDedicatedReplicationServer: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
-```
-
-1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
-2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
-3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeJobsRequestDescribeJobsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1333,6 +1803,162 @@ class LifeCycleLastTestTypeDef(TypedDict):
 1. See [:material-code-braces: LifeCycleLastTestFinalizedTypeDef](./type_defs.md#lifecyclelasttestfinalizedtypedef) 
 2. See [:material-code-braces: LifeCycleLastTestInitiatedTypeDef](./type_defs.md#lifecyclelasttestinitiatedtypedef) 
 3. See [:material-code-braces: LifeCycleLastTestRevertedTypeDef](./type_defs.md#lifecyclelasttestrevertedtypedef) 
+## ListApplicationsRequestListApplicationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListApplicationsRequestListApplicationsPaginateTypeDef
+
+def get_value() -> ListApplicationsRequestListApplicationsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestListApplicationsPaginateTypeDef(TypedDict):
+    filters: NotRequired[ListApplicationsRequestFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListApplicationsRequestFiltersTypeDef](./type_defs.md#listapplicationsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListApplicationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListApplicationsRequestRequestTypeDef
+
+def get_value() -> ListApplicationsRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[ListApplicationsRequestFiltersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ListApplicationsRequestFiltersTypeDef](./type_defs.md#listapplicationsrequestfilterstypedef) 
+## ListSourceServerActionsRequestListSourceServerActionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListSourceServerActionsRequestListSourceServerActionsPaginateTypeDef
+
+def get_value() -> ListSourceServerActionsRequestListSourceServerActionsPaginateTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class ListSourceServerActionsRequestListSourceServerActionsPaginateTypeDef(TypedDict):
+    sourceServerID: str,
+    filters: NotRequired[SourceServerActionsRequestFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SourceServerActionsRequestFiltersTypeDef](./type_defs.md#sourceserveractionsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSourceServerActionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListSourceServerActionsRequestRequestTypeDef
+
+def get_value() -> ListSourceServerActionsRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class ListSourceServerActionsRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+    filters: NotRequired[SourceServerActionsRequestFiltersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: SourceServerActionsRequestFiltersTypeDef](./type_defs.md#sourceserveractionsrequestfilterstypedef) 
+## ListTemplateActionsRequestListTemplateActionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListTemplateActionsRequestListTemplateActionsPaginateTypeDef
+
+def get_value() -> ListTemplateActionsRequestListTemplateActionsPaginateTypeDef:
+    return {
+        "launchConfigurationTemplateID": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateActionsRequestListTemplateActionsPaginateTypeDef(TypedDict):
+    launchConfigurationTemplateID: str,
+    filters: NotRequired[TemplateActionsRequestFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TemplateActionsRequestFiltersTypeDef](./type_defs.md#templateactionsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTemplateActionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListTemplateActionsRequestRequestTypeDef
+
+def get_value() -> ListTemplateActionsRequestRequestTypeDef:
+    return {
+        "launchConfigurationTemplateID": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateActionsRequestRequestTypeDef(TypedDict):
+    launchConfigurationTemplateID: str,
+    filters: NotRequired[TemplateActionsRequestFiltersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TemplateActionsRequestFiltersTypeDef](./type_defs.md#templateactionsrequestfilterstypedef) 
+## ListWavesRequestListWavesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListWavesRequestListWavesPaginateTypeDef
+
+def get_value() -> ListWavesRequestListWavesPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWavesRequestListWavesPaginateTypeDef(TypedDict):
+    filters: NotRequired[ListWavesRequestFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListWavesRequestFiltersTypeDef](./type_defs.md#listwavesrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListWavesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListWavesRequestRequestTypeDef
+
+def get_value() -> ListWavesRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWavesRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[ListWavesRequestFiltersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ListWavesRequestFiltersTypeDef](./type_defs.md#listwavesrequestfilterstypedef) 
 ## SourcePropertiesTypeDef
 
 ```python title="Usage Example"
@@ -1361,6 +1987,214 @@ class SourcePropertiesTypeDef(TypedDict):
 3. See [:material-code-braces: IdentificationHintsTypeDef](./type_defs.md#identificationhintstypedef) 
 4. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
 5. See [:material-code-braces: OSTypeDef](./type_defs.md#ostypedef) 
+## PutSourceServerActionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import PutSourceServerActionRequestRequestTypeDef
+
+def get_value() -> PutSourceServerActionRequestRequestTypeDef:
+    return {
+        "actionID": ...,
+        "actionName": ...,
+        "documentIdentifier": ...,
+        "order": ...,
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class PutSourceServerActionRequestRequestTypeDef(TypedDict):
+    actionID: str,
+    actionName: str,
+    documentIdentifier: str,
+    order: int,
+    sourceServerID: str,
+    active: NotRequired[bool],
+    documentVersion: NotRequired[str],
+    mustSucceedForCutover: NotRequired[bool],
+    parameters: NotRequired[Mapping[str, Sequence[SsmParameterStoreParameterTypeDef]]],  # (1)
+    timeoutSeconds: NotRequired[int],
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+## PutTemplateActionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import PutTemplateActionRequestRequestTypeDef
+
+def get_value() -> PutTemplateActionRequestRequestTypeDef:
+    return {
+        "actionID": ...,
+        "actionName": ...,
+        "documentIdentifier": ...,
+        "launchConfigurationTemplateID": ...,
+        "order": ...,
+    }
+```
+
+```python title="Definition"
+class PutTemplateActionRequestRequestTypeDef(TypedDict):
+    actionID: str,
+    actionName: str,
+    documentIdentifier: str,
+    launchConfigurationTemplateID: str,
+    order: int,
+    active: NotRequired[bool],
+    documentVersion: NotRequired[str],
+    mustSucceedForCutover: NotRequired[bool],
+    operatingSystem: NotRequired[str],
+    parameters: NotRequired[Mapping[str, Sequence[SsmParameterStoreParameterTypeDef]]],  # (1)
+    timeoutSeconds: NotRequired[int],
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+## SourceServerActionDocumentResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import SourceServerActionDocumentResponseMetadataTypeDef
+
+def get_value() -> SourceServerActionDocumentResponseMetadataTypeDef:
+    return {
+        "actionID": ...,
+        "actionName": ...,
+        "active": ...,
+        "documentIdentifier": ...,
+        "documentVersion": ...,
+        "mustSucceedForCutover": ...,
+        "order": ...,
+        "parameters": ...,
+        "timeoutSeconds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SourceServerActionDocumentResponseMetadataTypeDef(TypedDict):
+    actionID: str,
+    actionName: str,
+    active: bool,
+    documentIdentifier: str,
+    documentVersion: str,
+    mustSucceedForCutover: bool,
+    order: int,
+    parameters: Dict[str, List[SsmParameterStoreParameterTypeDef]],  # (1)
+    timeoutSeconds: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SourceServerActionDocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import SourceServerActionDocumentTypeDef
+
+def get_value() -> SourceServerActionDocumentTypeDef:
+    return {
+        "actionID": ...,
+    }
+```
+
+```python title="Definition"
+class SourceServerActionDocumentTypeDef(TypedDict):
+    actionID: NotRequired[str],
+    actionName: NotRequired[str],
+    active: NotRequired[bool],
+    documentIdentifier: NotRequired[str],
+    documentVersion: NotRequired[str],
+    mustSucceedForCutover: NotRequired[bool],
+    order: NotRequired[int],
+    parameters: NotRequired[Dict[str, List[SsmParameterStoreParameterTypeDef]]],  # (1)
+    timeoutSeconds: NotRequired[int],
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+## SsmDocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import SsmDocumentTypeDef
+
+def get_value() -> SsmDocumentTypeDef:
+    return {
+        "actionName": ...,
+        "ssmDocumentName": ...,
+    }
+```
+
+```python title="Definition"
+class SsmDocumentTypeDef(TypedDict):
+    actionName: str,
+    ssmDocumentName: str,
+    mustSucceedForCutover: NotRequired[bool],
+    parameters: NotRequired[Mapping[str, Sequence[SsmParameterStoreParameterTypeDef]]],  # (1)
+    timeoutSeconds: NotRequired[int],
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+## TemplateActionDocumentResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import TemplateActionDocumentResponseMetadataTypeDef
+
+def get_value() -> TemplateActionDocumentResponseMetadataTypeDef:
+    return {
+        "actionID": ...,
+        "actionName": ...,
+        "active": ...,
+        "documentIdentifier": ...,
+        "documentVersion": ...,
+        "mustSucceedForCutover": ...,
+        "operatingSystem": ...,
+        "order": ...,
+        "parameters": ...,
+        "timeoutSeconds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateActionDocumentResponseMetadataTypeDef(TypedDict):
+    actionID: str,
+    actionName: str,
+    active: bool,
+    documentIdentifier: str,
+    documentVersion: str,
+    mustSucceedForCutover: bool,
+    operatingSystem: str,
+    order: int,
+    parameters: Dict[str, List[SsmParameterStoreParameterTypeDef]],  # (1)
+    timeoutSeconds: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TemplateActionDocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import TemplateActionDocumentTypeDef
+
+def get_value() -> TemplateActionDocumentTypeDef:
+    return {
+        "actionID": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateActionDocumentTypeDef(TypedDict):
+    actionID: NotRequired[str],
+    actionName: NotRequired[str],
+    active: NotRequired[bool],
+    documentIdentifier: NotRequired[str],
+    documentVersion: NotRequired[str],
+    mustSucceedForCutover: NotRequired[bool],
+    operatingSystem: NotRequired[str],
+    order: NotRequired[int],
+    parameters: NotRequired[Dict[str, List[SsmParameterStoreParameterTypeDef]]],  # (1)
+    timeoutSeconds: NotRequired[int],
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
 ## ReplicationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1446,28 +2280,89 @@ class UpdateReplicationConfigurationRequestRequestTypeDef(TypedDict):
 2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
 3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
 4. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
-## SsmDocumentTypeDef
+## WaveResponseMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mgn.type_defs import SsmDocumentTypeDef
+from mypy_boto3_mgn.type_defs import WaveResponseMetadataTypeDef
 
-def get_value() -> SsmDocumentTypeDef:
+def get_value() -> WaveResponseMetadataTypeDef:
     return {
-        "actionName": ...,
-        "ssmDocumentName": ...,
+        "arn": ...,
+        "creationDateTime": ...,
+        "description": ...,
+        "isArchived": ...,
+        "lastModifiedDateTime": ...,
+        "name": ...,
+        "tags": ...,
+        "waveAggregatedStatus": ...,
+        "waveID": ...,
+        "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class SsmDocumentTypeDef(TypedDict):
-    actionName: str,
-    ssmDocumentName: str,
-    mustSucceedForCutover: NotRequired[bool],
-    parameters: NotRequired[Mapping[str, Sequence[SsmParameterStoreParameterTypeDef]]],  # (1)
-    timeoutSeconds: NotRequired[int],
+class WaveResponseMetadataTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: str,
+    description: str,
+    isArchived: bool,
+    lastModifiedDateTime: str,
+    name: str,
+    tags: Dict[str, str],
+    waveAggregatedStatus: WaveAggregatedStatusTypeDef,  # (1)
+    waveID: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+1. See [:material-code-braces: WaveAggregatedStatusTypeDef](./type_defs.md#waveaggregatedstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## WaveTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import WaveTypeDef
+
+def get_value() -> WaveTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class WaveTypeDef(TypedDict):
+    arn: NotRequired[str],
+    creationDateTime: NotRequired[str],
+    description: NotRequired[str],
+    isArchived: NotRequired[bool],
+    lastModifiedDateTime: NotRequired[str],
+    name: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    waveAggregatedStatus: NotRequired[WaveAggregatedStatusTypeDef],  # (1)
+    waveID: NotRequired[str],
+```
+
+1. See [:material-code-braces: WaveAggregatedStatusTypeDef](./type_defs.md#waveaggregatedstatustypedef) 
+## ListApplicationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListApplicationsResponseTypeDef
+
+def get_value() -> ListApplicationsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsResponseTypeDef(TypedDict):
+    items: List[ApplicationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataReplicationInfoTypeDef
 
 ```python title="Usage Example"
@@ -1541,6 +2436,28 @@ class LifeCycleTypeDef(TypedDict):
 1. See [:material-code-braces: LifeCycleLastCutoverTypeDef](./type_defs.md#lifecyclelastcutovertypedef) 
 2. See [:material-code-braces: LifeCycleLastTestTypeDef](./type_defs.md#lifecyclelasttesttypedef) 
 3. See [:material-code-brackets: LifeCycleStateType](./literals.md#lifecyclestatetype) 
+## ListSourceServerActionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListSourceServerActionsResponseTypeDef
+
+def get_value() -> ListSourceServerActionsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSourceServerActionsResponseTypeDef(TypedDict):
+    items: List[SourceServerActionDocumentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SourceServerActionDocumentTypeDef](./type_defs.md#sourceserveractiondocumenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JobPostLaunchActionsLaunchStatusTypeDef
 
 ```python title="Usage Example"
@@ -1586,6 +2503,50 @@ class PostLaunchActionsTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PostLaunchActionsDeploymentTypeType](./literals.md#postlaunchactionsdeploymenttypetype) 
 2. See [:material-code-braces: SsmDocumentTypeDef](./type_defs.md#ssmdocumenttypedef) 
+## ListTemplateActionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListTemplateActionsResponseTypeDef
+
+def get_value() -> ListTemplateActionsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTemplateActionsResponseTypeDef(TypedDict):
+    items: List[TemplateActionDocumentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TemplateActionDocumentTypeDef](./type_defs.md#templateactiondocumenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWavesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mgn.type_defs import ListWavesResponseTypeDef
+
+def get_value() -> ListWavesResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListWavesResponseTypeDef(TypedDict):
+    items: List[WaveTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: WaveTypeDef](./type_defs.md#wavetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SourceServerResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -1593,6 +2554,7 @@ from mypy_boto3_mgn.type_defs import SourceServerResponseMetadataTypeDef
 
 def get_value() -> SourceServerResponseMetadataTypeDef:
     return {
+        "applicationID": ...,
         "arn": ...,
         "dataReplicationInfo": ...,
         "isArchived": ...,
@@ -1609,6 +2571,7 @@ def get_value() -> SourceServerResponseMetadataTypeDef:
 
 ```python title="Definition"
 class SourceServerResponseMetadataTypeDef(TypedDict):
+    applicationID: str,
     arn: str,
     dataReplicationInfo: DataReplicationInfoTypeDef,  # (1)
     isArchived: bool,
@@ -1635,12 +2598,13 @@ from mypy_boto3_mgn.type_defs import SourceServerTypeDef
 
 def get_value() -> SourceServerTypeDef:
     return {
-        "arn": ...,
+        "applicationID": ...,
     }
 ```
 
 ```python title="Definition"
 class SourceServerTypeDef(TypedDict):
+    applicationID: NotRequired[str],
     arn: NotRequired[str],
     dataReplicationInfo: NotRequired[DataReplicationInfoTypeDef],  # (1)
     isArchived: NotRequired[bool],
@@ -1683,17 +2647,35 @@ from mypy_boto3_mgn.type_defs import CreateLaunchConfigurationTemplateRequestReq
 
 def get_value() -> CreateLaunchConfigurationTemplateRequestRequestTypeDef:
     return {
-        "postLaunchActions": ...,
+        "associatePublicIpAddress": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateLaunchConfigurationTemplateRequestRequestTypeDef(TypedDict):
-    postLaunchActions: NotRequired[PostLaunchActionsTypeDef],  # (1)
+    associatePublicIpAddress: NotRequired[bool],
+    bootMode: NotRequired[BootModeType],  # (1)
+    copyPrivateIp: NotRequired[bool],
+    copyTags: NotRequired[bool],
+    enableMapAutoTagging: NotRequired[bool],
+    largeVolumeConf: NotRequired[LaunchTemplateDiskConfTypeDef],  # (2)
+    launchDisposition: NotRequired[LaunchDispositionType],  # (3)
+    licensing: NotRequired[LicensingTypeDef],  # (4)
+    mapAutoTaggingMpeID: NotRequired[str],
+    postLaunchActions: NotRequired[PostLaunchActionsTypeDef],  # (5)
+    smallVolumeConf: NotRequired[LaunchTemplateDiskConfTypeDef],  # (2)
+    smallVolumeMaxSize: NotRequired[int],
     tags: NotRequired[Mapping[str, str]],
+    targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (7)
 ```
 
-1. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+3. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+4. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+5. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+6. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+7. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
 ## LaunchConfigurationTemplateResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -1702,9 +2684,22 @@ from mypy_boto3_mgn.type_defs import LaunchConfigurationTemplateResponseMetadata
 def get_value() -> LaunchConfigurationTemplateResponseMetadataTypeDef:
     return {
         "arn": ...,
+        "associatePublicIpAddress": ...,
+        "bootMode": ...,
+        "copyPrivateIp": ...,
+        "copyTags": ...,
+        "ec2LaunchTemplateID": ...,
+        "enableMapAutoTagging": ...,
+        "largeVolumeConf": ...,
         "launchConfigurationTemplateID": ...,
+        "launchDisposition": ...,
+        "licensing": ...,
+        "mapAutoTaggingMpeID": ...,
         "postLaunchActions": ...,
+        "smallVolumeConf": ...,
+        "smallVolumeMaxSize": ...,
         "tags": ...,
+        "targetInstanceTypeRightSizingMethod": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1712,14 +2707,33 @@ def get_value() -> LaunchConfigurationTemplateResponseMetadataTypeDef:
 ```python title="Definition"
 class LaunchConfigurationTemplateResponseMetadataTypeDef(TypedDict):
     arn: str,
+    associatePublicIpAddress: bool,
+    bootMode: BootModeType,  # (1)
+    copyPrivateIp: bool,
+    copyTags: bool,
+    ec2LaunchTemplateID: str,
+    enableMapAutoTagging: bool,
+    largeVolumeConf: LaunchTemplateDiskConfTypeDef,  # (2)
     launchConfigurationTemplateID: str,
-    postLaunchActions: PostLaunchActionsTypeDef,  # (1)
+    launchDisposition: LaunchDispositionType,  # (3)
+    licensing: LicensingTypeDef,  # (4)
+    mapAutoTaggingMpeID: str,
+    postLaunchActions: PostLaunchActionsTypeDef,  # (5)
+    smallVolumeConf: LaunchTemplateDiskConfTypeDef,  # (2)
+    smallVolumeMaxSize: int,
     tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    targetInstanceTypeRightSizingMethod: TargetInstanceTypeRightSizingMethodType,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
-1. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+3. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+4. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+5. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+6. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+7. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LaunchConfigurationTemplateTypeDef
 
 ```python title="Usage Example"
@@ -1735,11 +2749,30 @@ def get_value() -> LaunchConfigurationTemplateTypeDef:
 class LaunchConfigurationTemplateTypeDef(TypedDict):
     launchConfigurationTemplateID: str,
     arn: NotRequired[str],
-    postLaunchActions: NotRequired[PostLaunchActionsTypeDef],  # (1)
+    associatePublicIpAddress: NotRequired[bool],
+    bootMode: NotRequired[BootModeType],  # (1)
+    copyPrivateIp: NotRequired[bool],
+    copyTags: NotRequired[bool],
+    ec2LaunchTemplateID: NotRequired[str],
+    enableMapAutoTagging: NotRequired[bool],
+    largeVolumeConf: NotRequired[LaunchTemplateDiskConfTypeDef],  # (2)
+    launchDisposition: NotRequired[LaunchDispositionType],  # (3)
+    licensing: NotRequired[LicensingTypeDef],  # (4)
+    mapAutoTaggingMpeID: NotRequired[str],
+    postLaunchActions: NotRequired[PostLaunchActionsTypeDef],  # (5)
+    smallVolumeConf: NotRequired[LaunchTemplateDiskConfTypeDef],  # (2)
+    smallVolumeMaxSize: NotRequired[int],
     tags: NotRequired[Dict[str, str]],
+    targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (7)
 ```
 
-1. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+3. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+4. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+5. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+6. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+7. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
 ## LaunchConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1751,8 +2784,10 @@ def get_value() -> LaunchConfigurationTypeDef:
         "copyPrivateIp": ...,
         "copyTags": ...,
         "ec2LaunchTemplateID": ...,
+        "enableMapAutoTagging": ...,
         "launchDisposition": ...,
         "licensing": ...,
+        "mapAutoTaggingMpeID": ...,
         "name": ...,
         "postLaunchActions": ...,
         "sourceServerID": ...,
@@ -1767,8 +2802,10 @@ class LaunchConfigurationTypeDef(TypedDict):
     copyPrivateIp: bool,
     copyTags: bool,
     ec2LaunchTemplateID: str,
+    enableMapAutoTagging: bool,
     launchDisposition: LaunchDispositionType,  # (2)
     licensing: LicensingTypeDef,  # (3)
+    mapAutoTaggingMpeID: str,
     name: str,
     postLaunchActions: PostLaunchActionsTypeDef,  # (4)
     sourceServerID: str,
@@ -1799,8 +2836,10 @@ class UpdateLaunchConfigurationRequestRequestTypeDef(TypedDict):
     bootMode: NotRequired[BootModeType],  # (1)
     copyPrivateIp: NotRequired[bool],
     copyTags: NotRequired[bool],
+    enableMapAutoTagging: NotRequired[bool],
     launchDisposition: NotRequired[LaunchDispositionType],  # (2)
     licensing: NotRequired[LicensingTypeDef],  # (3)
+    mapAutoTaggingMpeID: NotRequired[str],
     name: NotRequired[str],
     postLaunchActions: NotRequired[PostLaunchActionsTypeDef],  # (4)
     targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (5)
@@ -1825,10 +2864,28 @@ def get_value() -> UpdateLaunchConfigurationTemplateRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateLaunchConfigurationTemplateRequestRequestTypeDef(TypedDict):
     launchConfigurationTemplateID: str,
-    postLaunchActions: NotRequired[PostLaunchActionsTypeDef],  # (1)
+    associatePublicIpAddress: NotRequired[bool],
+    bootMode: NotRequired[BootModeType],  # (1)
+    copyPrivateIp: NotRequired[bool],
+    copyTags: NotRequired[bool],
+    enableMapAutoTagging: NotRequired[bool],
+    largeVolumeConf: NotRequired[LaunchTemplateDiskConfTypeDef],  # (2)
+    launchDisposition: NotRequired[LaunchDispositionType],  # (3)
+    licensing: NotRequired[LicensingTypeDef],  # (4)
+    mapAutoTaggingMpeID: NotRequired[str],
+    postLaunchActions: NotRequired[PostLaunchActionsTypeDef],  # (5)
+    smallVolumeConf: NotRequired[LaunchTemplateDiskConfTypeDef],  # (2)
+    smallVolumeMaxSize: NotRequired[int],
+    targetInstanceTypeRightSizingMethod: NotRequired[TargetInstanceTypeRightSizingMethodType],  # (7)
 ```
 
-1. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+3. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+4. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+5. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+6. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+7. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
 ## DescribeSourceServersResponseTypeDef
 
 ```python title="Usage Example"

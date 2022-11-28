@@ -100,12 +100,13 @@ def get_describe_destinations_paginator() -> DescribeDestinationsPaginator:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName
+from mypy_boto3_logs.literals import DataProtectionStatusType
 
-def get_value() -> DescribeDestinationsPaginatorName:
-    return "describe_destinations"
+def get_value() -> DataProtectionStatusType:
+    return "ACTIVATED"
 ```
 
+- [DataProtectionStatusType](./literals.md#dataprotectionstatustype)
 - [DescribeDestinationsPaginatorName](./literals.md#describedestinationspaginatorname)
 - [DescribeExportTasksPaginatorName](./literals.md#describeexporttaskspaginatorname)
 - [DescribeLogGroupsPaginatorName](./literals.md#describeloggroupspaginatorname)
@@ -149,6 +150,7 @@ def get_value() -> AssociateKmsKeyRequestRequestTypeDef:
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [CreateLogGroupRequestRequestTypeDef](./type_defs.md#createloggrouprequestrequesttypedef)
 - [CreateLogStreamRequestRequestTypeDef](./type_defs.md#createlogstreamrequestrequesttypedef)
+- [DeleteDataProtectionPolicyRequestRequestTypeDef](./type_defs.md#deletedataprotectionpolicyrequestrequesttypedef)
 - [DeleteDestinationRequestRequestTypeDef](./type_defs.md#deletedestinationrequestrequesttypedef)
 - [DeleteLogGroupRequestRequestTypeDef](./type_defs.md#deleteloggrouprequestrequesttypedef)
 - [DeleteLogStreamRequestRequestTypeDef](./type_defs.md#deletelogstreamrequestrequesttypedef)
@@ -180,6 +182,7 @@ def get_value() -> AssociateKmsKeyRequestRequestTypeDef:
 - [FilterLogEventsRequestRequestTypeDef](./type_defs.md#filterlogeventsrequestrequesttypedef)
 - [FilteredLogEventTypeDef](./type_defs.md#filteredlogeventtypedef)
 - [SearchedLogStreamTypeDef](./type_defs.md#searchedlogstreamtypedef)
+- [GetDataProtectionPolicyRequestRequestTypeDef](./type_defs.md#getdataprotectionpolicyrequestrequesttypedef)
 - [GetLogEventsRequestRequestTypeDef](./type_defs.md#getlogeventsrequestrequesttypedef)
 - [OutputLogEventTypeDef](./type_defs.md#outputlogeventtypedef)
 - [GetLogGroupFieldsRequestRequestTypeDef](./type_defs.md#getloggroupfieldsrequestrequesttypedef)
@@ -193,6 +196,7 @@ def get_value() -> AssociateKmsKeyRequestRequestTypeDef:
 - [ListTagsLogGroupRequestRequestTypeDef](./type_defs.md#listtagsloggrouprequestrequesttypedef)
 - [MetricFilterMatchRecordTypeDef](./type_defs.md#metricfiltermatchrecordtypedef)
 - [MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)
+- [PutDataProtectionPolicyRequestRequestTypeDef](./type_defs.md#putdataprotectionpolicyrequestrequesttypedef)
 - [PutDestinationPolicyRequestRequestTypeDef](./type_defs.md#putdestinationpolicyrequestrequesttypedef)
 - [PutDestinationRequestRequestTypeDef](./type_defs.md#putdestinationrequestrequesttypedef)
 - [RejectedLogEventsInfoTypeDef](./type_defs.md#rejectedlogeventsinfotypedef)
@@ -210,9 +214,11 @@ def get_value() -> AssociateKmsKeyRequestRequestTypeDef:
 - [CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef)
 - [DeleteQueryDefinitionResponseTypeDef](./type_defs.md#deletequerydefinitionresponsetypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
+- [GetDataProtectionPolicyResponseTypeDef](./type_defs.md#getdataprotectionpolicyresponsetypedef)
 - [GetLogRecordResponseTypeDef](./type_defs.md#getlogrecordresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListTagsLogGroupResponseTypeDef](./type_defs.md#listtagsloggroupresponsetypedef)
+- [PutDataProtectionPolicyResponseTypeDef](./type_defs.md#putdataprotectionpolicyresponsetypedef)
 - [PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef)
 - [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef)
 - [StopQueryResponseTypeDef](./type_defs.md#stopqueryresponsetypedef)

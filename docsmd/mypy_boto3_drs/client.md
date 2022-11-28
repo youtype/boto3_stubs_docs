@@ -783,6 +783,36 @@ parent.retry_data_replication(**kwargs)
 
 1. See [:material-code-braces: RetryDataReplicationRequestRequestTypeDef](./type_defs.md#retrydatareplicationrequestrequesttypedef) 
 
+### reverse\_replication
+
+Start replication to origin / target region - applies only to protected
+instances that originated in EC2.
+
+Type annotations and code completion for `#!python boto3.client("drs").reverse_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.reverse_replication)
+
+```python title="Method definition"
+def reverse_replication(
+    self,
+    *,
+    recoveryInstanceID: str,
+) -> ReverseReplicationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ReverseReplicationResponseTypeDef](./type_defs.md#reversereplicationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ReverseReplicationRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceID": ...,
+}
+
+parent.reverse_replication(**kwargs)
+```
+
+1. See [:material-code-braces: ReverseReplicationRequestRequestTypeDef](./type_defs.md#reversereplicationrequestrequesttypedef) 
+
 ### start\_failback\_launch
 
 Initiates a Job for launching the machine that is being failed back to from the
@@ -846,6 +876,35 @@ parent.start_recovery(**kwargs)
 
 1. See [:material-code-braces: StartRecoveryRequestRequestTypeDef](./type_defs.md#startrecoveryrequestrequesttypedef) 
 
+### start\_replication
+
+Starts replication for a stopped Source Server.
+
+Type annotations and code completion for `#!python boto3.client("drs").start_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.start_replication)
+
+```python title="Method definition"
+def start_replication(
+    self,
+    *,
+    sourceServerID: str,
+) -> StartReplicationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartReplicationResponseTypeDef](./type_defs.md#startreplicationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartReplicationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
+
+parent.start_replication(**kwargs)
+```
+
+1. See [:material-code-braces: StartReplicationRequestRequestTypeDef](./type_defs.md#startreplicationrequestrequesttypedef) 
+
 ### stop\_failback
 
 Stops the failback process for a specified Recovery Instance.
@@ -874,6 +933,35 @@ parent.stop_failback(**kwargs)
 ```
 
 1. See [:material-code-braces: StopFailbackRequestRequestTypeDef](./type_defs.md#stopfailbackrequestrequesttypedef) 
+
+### stop\_replication
+
+Stops replication for a Source Server.
+
+Type annotations and code completion for `#!python boto3.client("drs").stop_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.stop_replication)
+
+```python title="Method definition"
+def stop_replication(
+    self,
+    *,
+    sourceServerID: str,
+) -> StopReplicationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StopReplicationResponseTypeDef](./type_defs.md#stopreplicationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopReplicationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
+
+parent.stop_replication(**kwargs)
+```
+
+1. See [:material-code-braces: StopReplicationRequestRequestTypeDef](./type_defs.md#stopreplicationrequestrequesttypedef) 
 
 ### tag\_resource
 

@@ -93,12 +93,13 @@ from `#!python boto3.client("rds").get_paginator("...")`.
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_rds.paginator import DescribeCertificatesPaginator
+from mypy_boto3_rds.paginator import DescribeBlueGreenDeploymentsPaginator
 
-def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
-    return Session().client("rds").get_paginator("describe_certificates"))
+def get_describe_blue_green_deployments_paginator() -> DescribeBlueGreenDeploymentsPaginator:
+    return Session().client("rds").get_paginator("describe_blue_green_deployments"))
 ```
 
+- [DescribeBlueGreenDeploymentsPaginator](./paginators.md#describebluegreendeploymentspaginator)
 - [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
 - [DescribeDBClusterBacktracksPaginator](./paginators.md#describedbclusterbacktrackspaginator)
 - [DescribeDBClusterEndpointsPaginator](./paginators.md#describedbclusterendpointspaginator)
@@ -198,6 +199,7 @@ def get_value() -> ActivityStreamModeType:
 - [DBSnapshotAvailableWaiterName](./literals.md#dbsnapshotavailablewaitername)
 - [DBSnapshotCompletedWaiterName](./literals.md#dbsnapshotcompletedwaitername)
 - [DBSnapshotDeletedWaiterName](./literals.md#dbsnapshotdeletedwaitername)
+- [DescribeBlueGreenDeploymentsPaginatorName](./literals.md#describebluegreendeploymentspaginatorname)
 - [DescribeCertificatesPaginatorName](./literals.md#describecertificatespaginatorname)
 - [DescribeDBClusterBacktracksPaginatorName](./literals.md#describedbclusterbacktrackspaginatorname)
 - [DescribeDBClusterEndpointsPaginatorName](./literals.md#describedbclusterendpointspaginatorname)
@@ -278,6 +280,8 @@ def get_value() -> AccountQuotaTypeDef:
 - [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - [AvailableProcessorFeatureTypeDef](./type_defs.md#availableprocessorfeaturetypedef)
 - [BacktrackDBClusterMessageRequestTypeDef](./type_defs.md#backtrackdbclustermessagerequesttypedef)
+- [BlueGreenDeploymentTaskTypeDef](./type_defs.md#bluegreendeploymenttasktypedef)
+- [SwitchoverDetailTypeDef](./type_defs.md#switchoverdetailtypedef)
 - [CancelExportTaskMessageRequestTypeDef](./type_defs.md#cancelexporttaskmessagerequesttypedef)
 - [CertificateTypeDef](./type_defs.md#certificatetypedef)
 - [CharacterSetTypeDef](./type_defs.md#charactersettypedef)
@@ -320,6 +324,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [EC2SecurityGroupTypeDef](./type_defs.md#ec2securitygrouptypedef)
 - [IPRangeTypeDef](./type_defs.md#iprangetypedef)
 - [DBSnapshotAttributeTypeDef](./type_defs.md#dbsnapshotattributetypedef)
+- [DeleteBlueGreenDeploymentRequestRequestTypeDef](./type_defs.md#deletebluegreendeploymentrequestrequesttypedef)
 - [DeleteCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#deletecustomdbengineversionmessagerequesttypedef)
 - [DeleteDBClusterEndpointMessageRequestTypeDef](./type_defs.md#deletedbclusterendpointmessagerequesttypedef)
 - [DeleteDBClusterMessageRequestTypeDef](./type_defs.md#deletedbclustermessagerequesttypedef)
@@ -393,6 +398,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [StopDBClusterMessageRequestTypeDef](./type_defs.md#stopdbclustermessagerequesttypedef)
 - [StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagerequesttypedef)
 - [StopDBInstanceMessageRequestTypeDef](./type_defs.md#stopdbinstancemessagerequesttypedef)
+- [SwitchoverBlueGreenDeploymentRequestRequestTypeDef](./type_defs.md#switchoverbluegreendeploymentrequestrequesttypedef)
 - [SwitchoverReadReplicaMessageRequestTypeDef](./type_defs.md#switchoverreadreplicamessagerequesttypedef)
 - [AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef)
 - [DBClusterBacktrackResponseMetadataTypeDef](./type_defs.md#dbclusterbacktrackresponsemetadatatypedef)
@@ -418,6 +424,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [CopyDBParameterGroupMessageRequestTypeDef](./type_defs.md#copydbparametergroupmessagerequesttypedef)
 - [CopyDBSnapshotMessageRequestTypeDef](./type_defs.md#copydbsnapshotmessagerequesttypedef)
 - [CopyOptionGroupMessageRequestTypeDef](./type_defs.md#copyoptiongroupmessagerequesttypedef)
+- [CreateBlueGreenDeploymentRequestRequestTypeDef](./type_defs.md#createbluegreendeploymentrequestrequesttypedef)
 - [CreateCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#createcustomdbengineversionmessagerequesttypedef)
 - [CreateDBClusterEndpointMessageRequestTypeDef](./type_defs.md#createdbclusterendpointmessagerequesttypedef)
 - [CreateDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createdbclusterparametergroupmessagerequesttypedef)
@@ -433,6 +440,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [PurchaseReservedDBInstancesOfferingMessageRequestTypeDef](./type_defs.md#purchasereserveddbinstancesofferingmessagerequesttypedef)
 - [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef)
 - [OrderableDBInstanceOptionTypeDef](./type_defs.md#orderabledbinstanceoptiontypedef)
+- [BlueGreenDeploymentTypeDef](./type_defs.md#bluegreendeploymenttypedef)
 - [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef)
 - [ModifyCertificatesResultTypeDef](./type_defs.md#modifycertificatesresulttypedef)
 - [ClusterPendingModifiedValuesTypeDef](./type_defs.md#clusterpendingmodifiedvaluestypedef)
@@ -480,6 +488,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [DBProxyTypeDef](./type_defs.md#dbproxytypedef)
 - [DBSecurityGroupTypeDef](./type_defs.md#dbsecuritygrouptypedef)
 - [DBSnapshotAttributesResultTypeDef](./type_defs.md#dbsnapshotattributesresulttypedef)
+- [DescribeBlueGreenDeploymentsRequestRequestTypeDef](./type_defs.md#describebluegreendeploymentsrequestrequesttypedef)
 - [DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef)
 - [DescribeDBClusterBacktracksMessageRequestTypeDef](./type_defs.md#describedbclusterbacktracksmessagerequesttypedef)
 - [DescribeDBClusterEndpointsMessageRequestTypeDef](./type_defs.md#describedbclusterendpointsmessagerequesttypedef)
@@ -515,6 +524,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [DescribeReservedDBInstancesOfferingsMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesofferingsmessagerequesttypedef)
 - [DescribeSourceRegionsMessageRequestTypeDef](./type_defs.md#describesourceregionsmessagerequesttypedef)
 - [ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef)
+- [DescribeBlueGreenDeploymentsRequestDescribeBlueGreenDeploymentsPaginateTypeDef](./type_defs.md#describebluegreendeploymentsrequestdescribebluegreendeploymentspaginatetypedef)
 - [DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef](./type_defs.md#describecertificatesmessagedescribecertificatespaginatetypedef)
 - [DescribeDBClusterBacktracksMessageDescribeDBClusterBacktracksPaginateTypeDef](./type_defs.md#describedbclusterbacktracksmessagedescribedbclusterbacktrackspaginatetypedef)
 - [DescribeDBClusterEndpointsMessageDescribeDBClusterEndpointsPaginateTypeDef](./type_defs.md#describedbclusterendpointsmessagedescribedbclusterendpointspaginatetypedef)
@@ -577,6 +587,10 @@ def get_value() -> AccountQuotaTypeDef:
 - [DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef)
 - [DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef)
 - [OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)
+- [CreateBlueGreenDeploymentResponseTypeDef](./type_defs.md#createbluegreendeploymentresponsetypedef)
+- [DeleteBlueGreenDeploymentResponseTypeDef](./type_defs.md#deletebluegreendeploymentresponsetypedef)
+- [DescribeBlueGreenDeploymentsResponseTypeDef](./type_defs.md#describebluegreendeploymentsresponsetypedef)
+- [SwitchoverBlueGreenDeploymentResponseTypeDef](./type_defs.md#switchoverbluegreendeploymentresponsetypedef)
 - [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
 - [DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef)
 - [ModifyDBProxyTargetGroupResponseTypeDef](./type_defs.md#modifydbproxytargetgroupresponsetypedef)

@@ -159,6 +159,7 @@ def get_value() -> ThroughputModeType:
 ```python title="Definition"
 ThroughputModeType = Literal[
     "bursting",
+    "elastic",
     "provisioned",
 ]
 ```
@@ -174,6 +175,7 @@ def get_value() -> TransitionToIARulesType:
 ```python title="Definition"
 TransitionToIARulesType = Literal[
     "AFTER_14_DAYS",
+    "AFTER_1_DAY",
     "AFTER_30_DAYS",
     "AFTER_60_DAYS",
     "AFTER_7_DAYS",
@@ -438,6 +440,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

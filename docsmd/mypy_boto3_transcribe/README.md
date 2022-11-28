@@ -84,6 +84,7 @@ def get_value() -> BaseModelNameType:
 - [BaseModelNameType](./literals.md#basemodelnametype)
 - [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
 - [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
+- [InputTypeType](./literals.md#inputtypetype)
 - [LanguageCodeType](./literals.md#languagecodetype)
 - [MediaFormatType](./literals.md#mediaformattype)
 - [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype)

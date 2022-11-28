@@ -99,6 +99,7 @@ def get_value() -> ListRetainedMessagesPaginatorName:
 ```
 
 - [ListRetainedMessagesPaginatorName](./literals.md#listretainedmessagespaginatorname)
+- [PayloadFormatIndicatorType](./literals.md#payloadformatindicatortype)
 - [IoTDataPlaneServiceName](./literals.md#iotdataplaneservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)

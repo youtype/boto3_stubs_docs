@@ -362,3 +362,245 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef](./type_defs.md#describevcenterclientsrequestdescribevcenterclientspaginatetypedef) 
+## ListApplicationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("mgn").get_paginator("list_applications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.ListApplications)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListApplicationsPaginator
+
+def get_list_applications_paginator() -> ListApplicationsPaginator:
+    return Session().client("mgn").get_paginator("list_applications")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListApplicationsPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: ListApplicationsPaginator = client.get_paginator("list_applications")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+3. item: [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListApplicationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: ListApplicationsRequestFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListApplicationsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ListApplicationsRequestFiltersTypeDef](./type_defs.md#listapplicationsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestListApplicationsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef) 
+## ListSourceServerActionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("mgn").get_paginator("list_source_server_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.ListSourceServerActions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListSourceServerActionsPaginator
+
+def get_list_source_server_actions_paginator() -> ListSourceServerActionsPaginator:
+    return Session().client("mgn").get_paginator("list_source_server_actions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListSourceServerActionsPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: ListSourceServerActionsPaginator = client.get_paginator("list_source_server_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [ListSourceServerActionsPaginator](./paginators.md#listsourceserveractionspaginator)
+3. item: [:material-code-braces: ListSourceServerActionsResponseTypeDef](./type_defs.md#listsourceserveractionsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSourceServerActionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    sourceServerID: str,
+    filters: SourceServerActionsRequestFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSourceServerActionsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: SourceServerActionsRequestFiltersTypeDef](./type_defs.md#sourceserveractionsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSourceServerActionsResponseTypeDef](./type_defs.md#listsourceserveractionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSourceServerActionsRequestListSourceServerActionsPaginateTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSourceServerActionsRequestListSourceServerActionsPaginateTypeDef](./type_defs.md#listsourceserveractionsrequestlistsourceserveractionspaginatetypedef) 
+## ListTemplateActionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("mgn").get_paginator("list_template_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.ListTemplateActions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListTemplateActionsPaginator
+
+def get_list_template_actions_paginator() -> ListTemplateActionsPaginator:
+    return Session().client("mgn").get_paginator("list_template_actions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListTemplateActionsPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: ListTemplateActionsPaginator = client.get_paginator("list_template_actions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [ListTemplateActionsPaginator](./paginators.md#listtemplateactionspaginator)
+3. item: [:material-code-braces: ListTemplateActionsResponseTypeDef](./type_defs.md#listtemplateactionsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListTemplateActionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    launchConfigurationTemplateID: str,
+    filters: TemplateActionsRequestFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListTemplateActionsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: TemplateActionsRequestFiltersTypeDef](./type_defs.md#templateactionsrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListTemplateActionsResponseTypeDef](./type_defs.md#listtemplateactionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTemplateActionsRequestListTemplateActionsPaginateTypeDef = {  # (1)
+    "launchConfigurationTemplateID": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTemplateActionsRequestListTemplateActionsPaginateTypeDef](./type_defs.md#listtemplateactionsrequestlisttemplateactionspaginatetypedef) 
+## ListWavesPaginator
+
+Type annotations and code completion for `#!python boto3.client("mgn").get_paginator("list_waves")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Paginator.ListWaves)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListWavesPaginator
+
+def get_list_waves_paginator() -> ListWavesPaginator:
+    return Session().client("mgn").get_paginator("list_waves")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_mgn.paginator import ListWavesPaginator
+
+session = Session()
+
+client = Session().client("mgn")  # (1)
+paginator: ListWavesPaginator = client.get_paginator("list_waves")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [mgnClient](./client.md)
+2. paginator: [ListWavesPaginator](./paginators.md#listwavespaginator)
+3. item: [:material-code-braces: ListWavesResponseTypeDef](./type_defs.md#listwavesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListWavesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: ListWavesRequestFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWavesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ListWavesRequestFiltersTypeDef](./type_defs.md#listwavesrequestfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWavesResponseTypeDef](./type_defs.md#listwavesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWavesRequestListWavesPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWavesRequestListWavesPaginateTypeDef](./type_defs.md#listwavesrequestlistwavespaginatetypedef) 

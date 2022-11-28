@@ -640,6 +640,21 @@ QueryIdentifiersEnclosingOptionType = Literal[
     "NONE",
 ]
 ```
+## QueryResultFormatType
+
+```python title="Usage Example"
+from mypy_boto3_kendra.literals import QueryResultFormatType
+
+def get_value() -> QueryResultFormatType:
+    return "TABLE"
+```
+
+```python title="Definition"
+QueryResultFormatType = Literal[
+    "TABLE",
+    "TEXT",
+]
+```
 ## QueryResultTypeType
 
 ```python title="Usage Example"
@@ -1231,6 +1246,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

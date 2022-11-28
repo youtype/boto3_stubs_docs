@@ -56,6 +56,7 @@ def paginate(
     ByAccountId: str = ...,
     ByCompleteAfter: Union[datetime, str] = ...,
     ByCompleteBefore: Union[datetime, str] = ...,
+    ByParentJobId: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[ListBackupJobsOutputTypeDef]:  # (3)
     ...
@@ -417,6 +418,7 @@ def paginate(
     ByAccountId: str = ...,
     ByCompleteBefore: Union[datetime, str] = ...,
     ByCompleteAfter: Union[datetime, str] = ...,
+    ByParentJobId: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[ListCopyJobsOutputTypeDef]:  # (3)
     ...
@@ -436,6 +438,64 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListCopyJobsInputListCopyJobsPaginateTypeDef](./type_defs.md#listcopyjobsinputlistcopyjobspaginatetypedef) 
+## ListLegalHoldsPaginator
+
+Type annotations and code completion for `#!python boto3.client("backup").get_paginator("list_legal_holds")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Paginator.ListLegalHolds)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListLegalHoldsPaginator
+
+def get_list_legal_holds_paginator() -> ListLegalHoldsPaginator:
+    return Session().client("backup").get_paginator("list_legal_holds")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListLegalHoldsPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListLegalHoldsPaginator = client.get_paginator("list_legal_holds")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListLegalHoldsPaginator](./paginators.md#listlegalholdspaginator)
+3. item: [:material-code-braces: ListLegalHoldsOutputTypeDef](./type_defs.md#listlegalholdsoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListLegalHoldsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLegalHoldsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLegalHoldsOutputTypeDef](./type_defs.md#listlegalholdsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLegalHoldsInputListLegalHoldsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLegalHoldsInputListLegalHoldsPaginateTypeDef](./type_defs.md#listlegalholdsinputlistlegalholdspaginatetypedef) 
 ## ListProtectedResourcesPaginator
 
 Type annotations and code completion for `#!python boto3.client("backup").get_paginator("list_protected_resources")`.
@@ -540,6 +600,7 @@ def paginate(
     ByBackupPlanId: str = ...,
     ByCreatedBefore: Union[datetime, str] = ...,
     ByCreatedAfter: Union[datetime, str] = ...,
+    ByParentRecoveryPointArn: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[ListRecoveryPointsByBackupVaultOutputTypeDef]:  # (2)
     ...
@@ -558,6 +619,65 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListRecoveryPointsByBackupVaultInputListRecoveryPointsByBackupVaultPaginateTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputlistrecoverypointsbybackupvaultpaginatetypedef) 
+## ListRecoveryPointsByLegalHoldPaginator
+
+Type annotations and code completion for `#!python boto3.client("backup").get_paginator("list_recovery_points_by_legal_hold")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Paginator.ListRecoveryPointsByLegalHold)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListRecoveryPointsByLegalHoldPaginator
+
+def get_list_recovery_points_by_legal_hold_paginator() -> ListRecoveryPointsByLegalHoldPaginator:
+    return Session().client("backup").get_paginator("list_recovery_points_by_legal_hold")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_backup.paginator import ListRecoveryPointsByLegalHoldPaginator
+
+session = Session()
+
+client = Session().client("backup")  # (1)
+paginator: ListRecoveryPointsByLegalHoldPaginator = client.get_paginator("list_recovery_points_by_legal_hold")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [BackupClient](./client.md)
+2. paginator: [ListRecoveryPointsByLegalHoldPaginator](./paginators.md#listrecoverypointsbylegalholdpaginator)
+3. item: [:material-code-braces: ListRecoveryPointsByLegalHoldOutputTypeDef](./type_defs.md#listrecoverypointsbylegalholdoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListRecoveryPointsByLegalHoldPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LegalHoldId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRecoveryPointsByLegalHoldOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRecoveryPointsByLegalHoldOutputTypeDef](./type_defs.md#listrecoverypointsbylegalholdoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRecoveryPointsByLegalHoldInputListRecoveryPointsByLegalHoldPaginateTypeDef = {  # (1)
+    "LegalHoldId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRecoveryPointsByLegalHoldInputListRecoveryPointsByLegalHoldPaginateTypeDef](./type_defs.md#listrecoverypointsbylegalholdinputlistrecoverypointsbylegalholdpaginatetypedef) 
 ## ListRecoveryPointsByResourcePaginator
 
 Type annotations and code completion for `#!python boto3.client("backup").get_paginator("list_recovery_points_by_resource")`.

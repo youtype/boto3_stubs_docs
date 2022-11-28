@@ -170,8 +170,15 @@ class PublishRequestRequestTypeDef(TypedDict):
     qos: NotRequired[int],
     retain: NotRequired[bool],
     payload: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    userProperties: NotRequired[str],
+    payloadFormatIndicator: NotRequired[PayloadFormatIndicatorType],  # (1)
+    contentType: NotRequired[str],
+    responseTopic: NotRequired[str],
+    correlationData: NotRequired[str],
+    messageExpiry: NotRequired[int],
 ```
 
+1. See [:material-code-brackets: PayloadFormatIndicatorType](./literals.md#payloadformatindicatortype) 
 ## UpdateThingShadowRequestRequestTypeDef
 
 ```python title="Usage Example"

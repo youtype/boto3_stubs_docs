@@ -36,6 +36,8 @@ except (
     client.AuthorizationNotFoundFault,
     client.AuthorizationQuotaExceededFault,
     client.BackupPolicyNotFoundFault,
+    client.BlueGreenDeploymentAlreadyExistsFault,
+    client.BlueGreenDeploymentNotFoundFault,
     client.CertificateNotFoundFault,
     client.ClientError,
     client.CustomAvailabilityZoneNotFoundFault,
@@ -102,6 +104,7 @@ except (
     client.InsufficientDBClusterCapacityFault,
     client.InsufficientDBInstanceCapacityFault,
     client.InsufficientStorageClusterCapacityFault,
+    client.InvalidBlueGreenDeploymentStateFault,
     client.InvalidCustomDBEngineVersionStateFault,
     client.InvalidDBClusterCapacityFault,
     client.InvalidDBClusterEndpointStateFault,
@@ -144,6 +147,8 @@ except (
     client.SNSTopicArnNotFoundFault,
     client.SharedSnapshotQuotaExceededFault,
     client.SnapshotQuotaExceededFault,
+    client.SourceClusterNotSupportedFault,
+    client.SourceDatabaseNotSupportedFault,
     client.SourceNotFoundFault,
     client.StorageQuotaExceededFault,
     client.StorageTypeNotSupportedFault,
@@ -635,6 +640,42 @@ parent.copy_option_group(**kwargs)
 ```
 
 1. See [:material-code-braces: CopyOptionGroupMessageRequestTypeDef](./type_defs.md#copyoptiongroupmessagerequesttypedef) 
+
+### create\_blue\_green\_deployment
+
+Creates a blue/green deployment.
+
+Type annotations and code completion for `#!python boto3.client("rds").create_blue_green_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_blue_green_deployment)
+
+```python title="Method definition"
+def create_blue_green_deployment(
+    self,
+    *,
+    BlueGreenDeploymentName: str,
+    Source: str,
+    TargetEngineVersion: str = ...,
+    TargetDBParameterGroupName: str = ...,
+    TargetDBClusterParameterGroupName: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateBlueGreenDeploymentResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateBlueGreenDeploymentResponseTypeDef](./type_defs.md#createbluegreendeploymentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateBlueGreenDeploymentRequestRequestTypeDef = {  # (1)
+    "BlueGreenDeploymentName": ...,
+    "Source": ...,
+}
+
+parent.create_blue_green_deployment(**kwargs)
+```
+
+1. See [:material-code-braces: CreateBlueGreenDeploymentRequestRequestTypeDef](./type_defs.md#createbluegreendeploymentrequestrequesttypedef) 
 
 ### create\_custom\_db\_engine\_version
 
@@ -1345,6 +1386,36 @@ parent.create_option_group(**kwargs)
 
 1. See [:material-code-braces: CreateOptionGroupMessageRequestTypeDef](./type_defs.md#createoptiongroupmessagerequesttypedef) 
 
+### delete\_blue\_green\_deployment
+
+Deletes a blue/green deployment.
+
+Type annotations and code completion for `#!python boto3.client("rds").delete_blue_green_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_blue_green_deployment)
+
+```python title="Method definition"
+def delete_blue_green_deployment(
+    self,
+    *,
+    BlueGreenDeploymentIdentifier: str,
+    DeleteTarget: bool = ...,
+) -> DeleteBlueGreenDeploymentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteBlueGreenDeploymentResponseTypeDef](./type_defs.md#deletebluegreendeploymentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteBlueGreenDeploymentRequestRequestTypeDef = {  # (1)
+    "BlueGreenDeploymentIdentifier": ...,
+}
+
+parent.delete_blue_green_deployment(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteBlueGreenDeploymentRequestRequestTypeDef](./type_defs.md#deletebluegreendeploymentrequestrequesttypedef) 
+
 ### delete\_custom\_db\_engine\_version
 
 Deletes a custom engine version.
@@ -1865,6 +1936,39 @@ def describe_account_attributes(
 ```
 
 1. See [:material-code-braces: AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef) 
+
+### describe\_blue\_green\_deployments
+
+Returns information about blue/green deployments.
+
+Type annotations and code completion for `#!python boto3.client("rds").describe_blue_green_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_blue_green_deployments)
+
+```python title="Method definition"
+def describe_blue_green_deployments(
+    self,
+    *,
+    BlueGreenDeploymentIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeBlueGreenDeploymentsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeBlueGreenDeploymentsResponseTypeDef](./type_defs.md#describebluegreendeploymentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBlueGreenDeploymentsRequestRequestTypeDef = {  # (1)
+    "BlueGreenDeploymentIdentifier": ...,
+}
+
+parent.describe_blue_green_deployments(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBlueGreenDeploymentsRequestRequestTypeDef](./type_defs.md#describebluegreendeploymentsrequestrequesttypedef) 
 
 ### describe\_certificates
 
@@ -5165,6 +5269,36 @@ parent.stop_db_instance_automated_backups_replication(**kwargs)
 
 1. See [:material-code-braces: StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagerequesttypedef) 
 
+### switchover\_blue\_green\_deployment
+
+Switches over a blue/green deployment.
+
+Type annotations and code completion for `#!python boto3.client("rds").switchover_blue_green_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.switchover_blue_green_deployment)
+
+```python title="Method definition"
+def switchover_blue_green_deployment(
+    self,
+    *,
+    BlueGreenDeploymentIdentifier: str,
+    SwitchoverTimeout: int = ...,
+) -> SwitchoverBlueGreenDeploymentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: SwitchoverBlueGreenDeploymentResponseTypeDef](./type_defs.md#switchoverbluegreendeploymentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SwitchoverBlueGreenDeploymentRequestRequestTypeDef = {  # (1)
+    "BlueGreenDeploymentIdentifier": ...,
+}
+
+parent.switchover_blue_green_deployment(**kwargs)
+```
+
+1. See [:material-code-braces: SwitchoverBlueGreenDeploymentRequestRequestTypeDef](./type_defs.md#switchoverbluegreendeploymentrequestrequesttypedef) 
+
 ### switchover\_read\_replica
 
 Switches over an Oracle standby database in an Oracle Data Guard environment,
@@ -5201,6 +5335,7 @@ parent.switchover_read_replica(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("rds").get_paginator` method with overloads.
 
+- `client.get_paginator("describe_blue_green_deployments")` -> [DescribeBlueGreenDeploymentsPaginator](./paginators.md#describebluegreendeploymentspaginator)
 - `client.get_paginator("describe_certificates")` -> [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
 - `client.get_paginator("describe_db_cluster_backtracks")` -> [DescribeDBClusterBacktracksPaginator](./paginators.md#describedbclusterbacktrackspaginator)
 - `client.get_paginator("describe_db_cluster_endpoints")` -> [DescribeDBClusterEndpointsPaginator](./paginators.md#describedbclusterendpointspaginator)

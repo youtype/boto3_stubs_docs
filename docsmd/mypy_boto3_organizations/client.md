@@ -73,6 +73,7 @@ except (
     client.PolicyTypeAlreadyEnabledException,
     client.PolicyTypeNotAvailableForOrganizationException,
     client.PolicyTypeNotEnabledException,
+    client.ResourcePolicyNotFoundException,
     client.RootNotFoundException,
     client.ServiceException,
     client.SourceParentNotFoundException,
@@ -524,6 +525,22 @@ parent.delete_policy(**kwargs)
 
 1. See [:material-code-braces: DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef) 
 
+### delete\_resource\_policy
+
+Deletes the resource policy from your organization.
+
+Type annotations and code completion for `#!python boto3.client("organizations").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_resource_policy)
+
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
 ### deregister\_delegated\_administrator
 
 Removes the specified member Amazon Web Services account as a delegated
@@ -748,6 +765,22 @@ parent.describe_policy(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribePolicyRequestRequestTypeDef](./type_defs.md#describepolicyrequestrequesttypedef) 
+
+### describe\_resource\_policy
+
+Retrieves information about a resource policy.
+
+Type annotations and code completion for `#!python boto3.client("organizations").describe_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_resource_policy)
+
+```python title="Method definition"
+def describe_resource_policy(
+    self,
+) -> DescribeResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef) 
 
 ### detach\_policy
 
@@ -1535,6 +1568,37 @@ parent.move_account(**kwargs)
 ```
 
 1. See [:material-code-braces: MoveAccountRequestRequestTypeDef](./type_defs.md#moveaccountrequestrequesttypedef) 
+
+### put\_resource\_policy
+
+Creates or updates a resource policy.
+
+Type annotations and code completion for `#!python boto3.client("organizations").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.put_resource_policy)
+
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    Content: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> PutResourcePolicyResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "Content": ...,
+}
+
+parent.put_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
 ### register\_delegated\_administrator
 

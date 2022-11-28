@@ -316,6 +316,65 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef) 
+## ListServicesByNamespacePaginator
+
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_services_by_namespace")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListServicesByNamespace)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListServicesByNamespacePaginator
+
+def get_list_services_by_namespace_paginator() -> ListServicesByNamespacePaginator:
+    return Session().client("ecs").get_paginator("list_services_by_namespace")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ecs.paginator import ListServicesByNamespacePaginator
+
+session = Session()
+
+client = Session().client("ecs")  # (1)
+paginator: ListServicesByNamespacePaginator = client.get_paginator("list_services_by_namespace")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ECSClient](./client.md)
+2. paginator: [ListServicesByNamespacePaginator](./paginators.md#listservicesbynamespacepaginator)
+3. item: [:material-code-braces: ListServicesByNamespaceResponseTypeDef](./type_defs.md#listservicesbynamespaceresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListServicesByNamespacePaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    namespace: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServicesByNamespaceResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServicesByNamespaceResponseTypeDef](./type_defs.md#listservicesbynamespaceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListServicesByNamespaceRequestListServicesByNamespacePaginateTypeDef = {  # (1)
+    "namespace": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicesByNamespaceRequestListServicesByNamespacePaginateTypeDef](./type_defs.md#listservicesbynamespacerequestlistservicesbynamespacepaginatetypedef) 
 ## ListTaskDefinitionFamiliesPaginator
 
 Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_task_definition_families")`.

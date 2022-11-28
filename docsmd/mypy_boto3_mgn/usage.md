@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("mgn")  # (1)
-    result = client.change_server_life_cycle_state()  # (2)
+    result = client.archive_application()  # (2)
     ```
 
     1. client: [mgnClient](./client.md)
-    2. result: [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
+    2. result: [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_mgn.client import mgnClient
-    from mypy_boto3_mgn.type_defs import SourceServerResponseMetadataTypeDef
-    from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateRequestRequestTypeDef
+    from mypy_boto3_mgn.type_defs import ApplicationResponseMetadataTypeDef
+    from mypy_boto3_mgn.type_defs import ArchiveApplicationRequestRequestTypeDef
 
 
     session = Session()
 
     client: mgnClient = session.client("mgn")
 
-    kwargs: ChangeServerLifeCycleStateRequestRequestTypeDef = {...}
-    result: SourceServerResponseMetadataTypeDef = client.change_server_life_cycle_state(**kwargs)
+    kwargs: ArchiveApplicationRequestRequestTypeDef = {...}
+    result: ApplicationResponseMetadataTypeDef = client.archive_application(**kwargs)
     ```
 
 

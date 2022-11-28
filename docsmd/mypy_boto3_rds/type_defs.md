@@ -242,6 +242,41 @@ class BacktrackDBClusterMessageRequestTypeDef(TypedDict):
     UseEarliestTimeOnPointInTimeUnavailable: NotRequired[bool],
 ```
 
+## BlueGreenDeploymentTaskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import BlueGreenDeploymentTaskTypeDef
+
+def get_value() -> BlueGreenDeploymentTaskTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class BlueGreenDeploymentTaskTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[str],
+```
+
+## SwitchoverDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import SwitchoverDetailTypeDef
+
+def get_value() -> SwitchoverDetailTypeDef:
+    return {
+        "SourceMember": ...,
+    }
+```
+
+```python title="Definition"
+class SwitchoverDetailTypeDef(TypedDict):
+    SourceMember: NotRequired[str],
+    TargetMember: NotRequired[str],
+    Status: NotRequired[str],
+```
+
 ## CancelExportTaskMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1048,6 +1083,23 @@ def get_value() -> DBSnapshotAttributeTypeDef:
 class DBSnapshotAttributeTypeDef(TypedDict):
     AttributeName: NotRequired[str],
     AttributeValues: NotRequired[List[str]],
+```
+
+## DeleteBlueGreenDeploymentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import DeleteBlueGreenDeploymentRequestRequestTypeDef
+
+def get_value() -> DeleteBlueGreenDeploymentRequestRequestTypeDef:
+    return {
+        "BlueGreenDeploymentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteBlueGreenDeploymentRequestRequestTypeDef(TypedDict):
+    BlueGreenDeploymentIdentifier: str,
+    DeleteTarget: NotRequired[bool],
 ```
 
 ## DeleteCustomDBEngineVersionMessageRequestTypeDef
@@ -2377,6 +2429,23 @@ class StopDBInstanceMessageRequestTypeDef(TypedDict):
     DBSnapshotIdentifier: NotRequired[str],
 ```
 
+## SwitchoverBlueGreenDeploymentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import SwitchoverBlueGreenDeploymentRequestRequestTypeDef
+
+def get_value() -> SwitchoverBlueGreenDeploymentRequestRequestTypeDef:
+    return {
+        "BlueGreenDeploymentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class SwitchoverBlueGreenDeploymentRequestRequestTypeDef(TypedDict):
+    BlueGreenDeploymentIdentifier: str,
+    SwitchoverTimeout: NotRequired[int],
+```
+
 ## SwitchoverReadReplicaMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -2978,6 +3047,29 @@ class CopyOptionGroupMessageRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateBlueGreenDeploymentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import CreateBlueGreenDeploymentRequestRequestTypeDef
+
+def get_value() -> CreateBlueGreenDeploymentRequestRequestTypeDef:
+    return {
+        "BlueGreenDeploymentName": ...,
+        "Source": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBlueGreenDeploymentRequestRequestTypeDef(TypedDict):
+    BlueGreenDeploymentName: str,
+    Source: str,
+    TargetEngineVersion: NotRequired[str],
+    TargetDBParameterGroupName: NotRequired[str],
+    TargetDBClusterParameterGroupName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCustomDBEngineVersionMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -3360,6 +3452,35 @@ class OrderableDBInstanceOptionTypeDef(TypedDict):
 
 1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
 2. See [:material-code-braces: AvailableProcessorFeatureTypeDef](./type_defs.md#availableprocessorfeaturetypedef) 
+## BlueGreenDeploymentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import BlueGreenDeploymentTypeDef
+
+def get_value() -> BlueGreenDeploymentTypeDef:
+    return {
+        "BlueGreenDeploymentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class BlueGreenDeploymentTypeDef(TypedDict):
+    BlueGreenDeploymentIdentifier: NotRequired[str],
+    BlueGreenDeploymentName: NotRequired[str],
+    Source: NotRequired[str],
+    Target: NotRequired[str],
+    SwitchoverDetails: NotRequired[List[SwitchoverDetailTypeDef]],  # (1)
+    Tasks: NotRequired[List[BlueGreenDeploymentTaskTypeDef]],  # (2)
+    Status: NotRequired[str],
+    StatusDetails: NotRequired[str],
+    CreateTime: NotRequired[datetime],
+    DeleteTime: NotRequired[datetime],
+    TagList: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: SwitchoverDetailTypeDef](./type_defs.md#switchoverdetailtypedef) 
+2. See [:material-code-braces: BlueGreenDeploymentTaskTypeDef](./type_defs.md#bluegreendeploymenttasktypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CertificateMessageTypeDef
 
 ```python title="Usage Example"
@@ -4932,6 +5053,26 @@ class DBSnapshotAttributesResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DBSnapshotAttributeTypeDef](./type_defs.md#dbsnapshotattributetypedef) 
+## DescribeBlueGreenDeploymentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import DescribeBlueGreenDeploymentsRequestRequestTypeDef
+
+def get_value() -> DescribeBlueGreenDeploymentsRequestRequestTypeDef:
+    return {
+        "BlueGreenDeploymentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBlueGreenDeploymentsRequestRequestTypeDef(TypedDict):
+    BlueGreenDeploymentIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    Marker: NotRequired[str],
+    MaxRecords: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeCertificatesMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -5685,6 +5826,26 @@ class ListTagsForResourceMessageRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeBlueGreenDeploymentsRequestDescribeBlueGreenDeploymentsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import DescribeBlueGreenDeploymentsRequestDescribeBlueGreenDeploymentsPaginateTypeDef
+
+def get_value() -> DescribeBlueGreenDeploymentsRequestDescribeBlueGreenDeploymentsPaginateTypeDef:
+    return {
+        "BlueGreenDeploymentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBlueGreenDeploymentsRequestDescribeBlueGreenDeploymentsPaginateTypeDef(TypedDict):
+    BlueGreenDeploymentIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -7081,6 +7242,88 @@ class OrderableDBInstanceOptionsMessageTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: OrderableDBInstanceOptionTypeDef](./type_defs.md#orderabledbinstanceoptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateBlueGreenDeploymentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import CreateBlueGreenDeploymentResponseTypeDef
+
+def get_value() -> CreateBlueGreenDeploymentResponseTypeDef:
+    return {
+        "BlueGreenDeployment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBlueGreenDeploymentResponseTypeDef(TypedDict):
+    BlueGreenDeployment: BlueGreenDeploymentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BlueGreenDeploymentTypeDef](./type_defs.md#bluegreendeploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteBlueGreenDeploymentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import DeleteBlueGreenDeploymentResponseTypeDef
+
+def get_value() -> DeleteBlueGreenDeploymentResponseTypeDef:
+    return {
+        "BlueGreenDeployment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteBlueGreenDeploymentResponseTypeDef(TypedDict):
+    BlueGreenDeployment: BlueGreenDeploymentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BlueGreenDeploymentTypeDef](./type_defs.md#bluegreendeploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBlueGreenDeploymentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import DescribeBlueGreenDeploymentsResponseTypeDef
+
+def get_value() -> DescribeBlueGreenDeploymentsResponseTypeDef:
+    return {
+        "BlueGreenDeployments": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBlueGreenDeploymentsResponseTypeDef(TypedDict):
+    BlueGreenDeployments: List[BlueGreenDeploymentTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BlueGreenDeploymentTypeDef](./type_defs.md#bluegreendeploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SwitchoverBlueGreenDeploymentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import SwitchoverBlueGreenDeploymentResponseTypeDef
+
+def get_value() -> SwitchoverBlueGreenDeploymentResponseTypeDef:
+    return {
+        "BlueGreenDeployment": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class SwitchoverBlueGreenDeploymentResponseTypeDef(TypedDict):
+    BlueGreenDeployment: BlueGreenDeploymentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BlueGreenDeploymentTypeDef](./type_defs.md#bluegreendeploymenttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBClusterTypeDef
 

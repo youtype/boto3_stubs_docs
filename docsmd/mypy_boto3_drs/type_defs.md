@@ -758,12 +758,14 @@ class RecoveryInstanceFailbackTypeDef(TypedDict):
     failbackClientLastSeenByServiceDateTime: NotRequired[str],
     failbackInitiationTime: NotRequired[str],
     failbackJobID: NotRequired[str],
+    failbackLaunchType: NotRequired[FailbackLaunchTypeType],  # (1)
     failbackToOriginalServer: NotRequired[bool],
     firstByteDateTime: NotRequired[str],
-    state: NotRequired[FailbackStateType],  # (1)
+    state: NotRequired[FailbackStateType],  # (2)
 ```
 
-1. See [:material-code-brackets: FailbackStateType](./literals.md#failbackstatetype) 
+1. See [:material-code-brackets: FailbackLaunchTypeType](./literals.md#failbacklaunchtypetype) 
+2. See [:material-code-brackets: FailbackStateType](./literals.md#failbackstatetype) 
 ## ReplicationConfigurationReplicatedDiskTypeDef
 
 ```python title="Usage Example"
@@ -801,6 +803,40 @@ def get_value() -> RetryDataReplicationRequestRequestTypeDef:
 ```python title="Definition"
 class RetryDataReplicationRequestRequestTypeDef(TypedDict):
     sourceServerID: str,
+```
+
+## ReverseReplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ReverseReplicationRequestRequestTypeDef
+
+def get_value() -> ReverseReplicationRequestRequestTypeDef:
+    return {
+        "recoveryInstanceID": ...,
+    }
+```
+
+```python title="Definition"
+class ReverseReplicationRequestRequestTypeDef(TypedDict):
+    recoveryInstanceID: str,
+```
+
+## SourceCloudPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import SourceCloudPropertiesTypeDef
+
+def get_value() -> SourceCloudPropertiesTypeDef:
+    return {
+        "originAccountID": ...,
+    }
+```
+
+```python title="Definition"
+class SourceCloudPropertiesTypeDef(TypedDict):
+    originAccountID: NotRequired[str],
+    originAvailabilityZone: NotRequired[str],
+    originRegion: NotRequired[str],
 ```
 
 ## StagingAreaTypeDef
@@ -857,6 +893,22 @@ class StartRecoveryRequestSourceServerTypeDef(TypedDict):
     recoverySnapshotID: NotRequired[str],
 ```
 
+## StartReplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StartReplicationRequestRequestTypeDef
+
+def get_value() -> StartReplicationRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class StartReplicationRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
+```
+
 ## StopFailbackRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -871,6 +923,22 @@ def get_value() -> StopFailbackRequestRequestTypeDef:
 ```python title="Definition"
 class StopFailbackRequestRequestTypeDef(TypedDict):
     recoveryInstanceID: str,
+```
+
+## StopReplicationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StopReplicationRequestRequestTypeDef
+
+def get_value() -> StopReplicationRequestRequestTypeDef:
+    return {
+        "sourceServerID": ...,
+    }
+```
+
+```python title="Definition"
+class StopReplicationRequestRequestTypeDef(TypedDict):
+    sourceServerID: str,
 ```
 
 ## TagResourceRequestRequestTypeDef
@@ -1044,6 +1112,25 @@ def get_value() -> ListTagsForResourceResponseTypeDef:
 ```python title="Definition"
 class ListTagsForResourceResponseTypeDef(TypedDict):
     tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReverseReplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import ReverseReplicationResponseTypeDef
+
+def get_value() -> ReverseReplicationResponseTypeDef:
+    return {
+        "reversedDirectionSourceServerArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ReverseReplicationResponseTypeDef(TypedDict):
+    reversedDirectionSourceServerArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2023,6 +2110,9 @@ def get_value() -> SourceServerResponseMetadataTypeDef:
         "lastLaunchResult": ...,
         "lifeCycle": ...,
         "recoveryInstanceId": ...,
+        "replicationDirection": ...,
+        "reversedDirectionSourceServerArn": ...,
+        "sourceCloudProperties": ...,
         "sourceProperties": ...,
         "sourceServerID": ...,
         "stagingArea": ...,
@@ -2038,19 +2128,24 @@ class SourceServerResponseMetadataTypeDef(TypedDict):
     lastLaunchResult: LastLaunchResultType,  # (2)
     lifeCycle: LifeCycleTypeDef,  # (3)
     recoveryInstanceId: str,
-    sourceProperties: SourcePropertiesTypeDef,  # (4)
+    replicationDirection: ReplicationDirectionType,  # (4)
+    reversedDirectionSourceServerArn: str,
+    sourceCloudProperties: SourceCloudPropertiesTypeDef,  # (5)
+    sourceProperties: SourcePropertiesTypeDef,  # (6)
     sourceServerID: str,
-    stagingArea: StagingAreaTypeDef,  # (5)
+    stagingArea: StagingAreaTypeDef,  # (7)
     tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
 1. See [:material-code-braces: DataReplicationInfoTypeDef](./type_defs.md#datareplicationinfotypedef) 
 2. See [:material-code-brackets: LastLaunchResultType](./literals.md#lastlaunchresulttype) 
 3. See [:material-code-braces: LifeCycleTypeDef](./type_defs.md#lifecycletypedef) 
-4. See [:material-code-braces: SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef) 
-5. See [:material-code-braces: StagingAreaTypeDef](./type_defs.md#stagingareatypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-brackets: ReplicationDirectionType](./literals.md#replicationdirectiontype) 
+5. See [:material-code-braces: SourceCloudPropertiesTypeDef](./type_defs.md#sourcecloudpropertiestypedef) 
+6. See [:material-code-braces: SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef) 
+7. See [:material-code-braces: StagingAreaTypeDef](./type_defs.md#stagingareatypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SourceServerTypeDef
 
 ```python title="Usage Example"
@@ -2069,17 +2164,22 @@ class SourceServerTypeDef(TypedDict):
     lastLaunchResult: NotRequired[LastLaunchResultType],  # (2)
     lifeCycle: NotRequired[LifeCycleTypeDef],  # (3)
     recoveryInstanceId: NotRequired[str],
-    sourceProperties: NotRequired[SourcePropertiesTypeDef],  # (4)
+    replicationDirection: NotRequired[ReplicationDirectionType],  # (4)
+    reversedDirectionSourceServerArn: NotRequired[str],
+    sourceCloudProperties: NotRequired[SourceCloudPropertiesTypeDef],  # (5)
+    sourceProperties: NotRequired[SourcePropertiesTypeDef],  # (6)
     sourceServerID: NotRequired[str],
-    stagingArea: NotRequired[StagingAreaTypeDef],  # (5)
+    stagingArea: NotRequired[StagingAreaTypeDef],  # (7)
     tags: NotRequired[Dict[str, str]],
 ```
 
 1. See [:material-code-braces: DataReplicationInfoTypeDef](./type_defs.md#datareplicationinfotypedef) 
 2. See [:material-code-brackets: LastLaunchResultType](./literals.md#lastlaunchresulttype) 
 3. See [:material-code-braces: LifeCycleTypeDef](./type_defs.md#lifecycletypedef) 
-4. See [:material-code-braces: SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef) 
-5. See [:material-code-braces: StagingAreaTypeDef](./type_defs.md#stagingareatypedef) 
+4. See [:material-code-brackets: ReplicationDirectionType](./literals.md#replicationdirectiontype) 
+5. See [:material-code-braces: SourceCloudPropertiesTypeDef](./type_defs.md#sourcecloudpropertiestypedef) 
+6. See [:material-code-braces: SourcePropertiesTypeDef](./type_defs.md#sourcepropertiestypedef) 
+7. See [:material-code-braces: StagingAreaTypeDef](./type_defs.md#stagingareatypedef) 
 ## RecoveryInstanceTypeDef
 
 ```python title="Usage Example"
@@ -2100,9 +2200,10 @@ class RecoveryInstanceTypeDef(TypedDict):
     failback: NotRequired[RecoveryInstanceFailbackTypeDef],  # (3)
     isDrill: NotRequired[bool],
     jobID: NotRequired[str],
+    originEnvironment: NotRequired[OriginEnvironmentType],  # (4)
     pointInTimeSnapshotDateTime: NotRequired[str],
     recoveryInstanceID: NotRequired[str],
-    recoveryInstanceProperties: NotRequired[RecoveryInstancePropertiesTypeDef],  # (4)
+    recoveryInstanceProperties: NotRequired[RecoveryInstancePropertiesTypeDef],  # (5)
     sourceServerID: NotRequired[str],
     tags: NotRequired[Dict[str, str]],
 ```
@@ -2110,7 +2211,8 @@ class RecoveryInstanceTypeDef(TypedDict):
 1. See [:material-code-braces: RecoveryInstanceDataReplicationInfoTypeDef](./type_defs.md#recoveryinstancedatareplicationinfotypedef) 
 2. See [:material-code-brackets: EC2InstanceStateType](./literals.md#ec2instancestatetype) 
 3. See [:material-code-braces: RecoveryInstanceFailbackTypeDef](./type_defs.md#recoveryinstancefailbacktypedef) 
-4. See [:material-code-braces: RecoveryInstancePropertiesTypeDef](./type_defs.md#recoveryinstancepropertiestypedef) 
+4. See [:material-code-brackets: OriginEnvironmentType](./literals.md#originenvironmenttype) 
+5. See [:material-code-braces: RecoveryInstancePropertiesTypeDef](./type_defs.md#recoveryinstancepropertiestypedef) 
 ## CreateExtendedSourceServerResponseTypeDef
 
 ```python title="Usage Example"
@@ -2148,6 +2250,46 @@ def get_value() -> DescribeSourceServersResponseTypeDef:
 class DescribeSourceServersResponseTypeDef(TypedDict):
     items: List[SourceServerTypeDef],  # (1)
     nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SourceServerTypeDef](./type_defs.md#sourceservertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartReplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StartReplicationResponseTypeDef
+
+def get_value() -> StartReplicationResponseTypeDef:
+    return {
+        "sourceServer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartReplicationResponseTypeDef(TypedDict):
+    sourceServer: SourceServerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SourceServerTypeDef](./type_defs.md#sourceservertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopReplicationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_drs.type_defs import StopReplicationResponseTypeDef
+
+def get_value() -> StopReplicationResponseTypeDef:
+    return {
+        "sourceServer": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopReplicationResponseTypeDef(TypedDict):
+    sourceServer: SourceServerTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

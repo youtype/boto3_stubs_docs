@@ -167,7 +167,10 @@ Type annotations and code completion for `#!python DescribeLogGroupsPaginator.pa
 def paginate(
     self,
     *,
+    accountIdentifiers: Sequence[str] = ...,
     logGroupNamePrefix: str = ...,
+    logGroupNamePattern: str = ...,
+    includeLinkedAccounts: bool = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[DescribeLogGroupsResponseTypeDef]:  # (2)
     ...
@@ -179,7 +182,7 @@ def paginate(
 
 ```python title="Usage example with kwargs"
 kwargs: DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef = {  # (1)
-    "logGroupNamePrefix": ...,
+    "accountIdentifiers": ...,
 }
 
 parent.paginate(**kwargs)
@@ -227,6 +230,7 @@ def paginate(
     self,
     *,
     logGroupName: str,
+    logGroupIdentifier: str = ...,
     logStreamNamePrefix: str = ...,
     orderBy: OrderByType = ...,  # (1)
     descending: bool = ...,
@@ -531,12 +535,14 @@ def paginate(
     self,
     *,
     logGroupName: str,
+    logGroupIdentifier: str = ...,
     logStreamNames: Sequence[str] = ...,
     logStreamNamePrefix: str = ...,
     startTime: int = ...,
     endTime: int = ...,
     filterPattern: str = ...,
     interleaved: bool = ...,
+    unmask: bool = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[FilterLogEventsResponseTypeDef]:  # (2)
     ...

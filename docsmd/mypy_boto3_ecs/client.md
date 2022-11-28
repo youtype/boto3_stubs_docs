@@ -44,6 +44,7 @@ except (
     client.InvalidParameterException,
     client.LimitExceededException,
     client.MissingVersionException,
+    client.NamespaceNotFoundException,
     client.NoUpdateAvailableException,
     client.PlatformTaskDefinitionIncompatibilityException,
     client.PlatformUnknownException,
@@ -154,7 +155,8 @@ def create_cluster(
     configuration: ClusterConfigurationTypeDef = ...,  # (3)
     capacityProviders: Sequence[str] = ...,
     defaultCapacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef] = ...,  # (4)
-) -> CreateClusterResponseTypeDef:  # (5)
+    serviceConnectDefaults: ClusterServiceConnectDefaultsRequestTypeDef = ...,  # (5)
+) -> CreateClusterResponseTypeDef:  # (6)
     ...
 ```
 
@@ -162,7 +164,8 @@ def create_cluster(
 2. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
 3. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
 4. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
-5. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
+5. See [:material-code-braces: ClusterServiceConnectDefaultsRequestTypeDef](./type_defs.md#clusterserviceconnectdefaultsrequesttypedef) 
+6. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -177,8 +180,7 @@ parent.create_cluster(**kwargs)
 
 ### create\_service
 
-Runs and maintains your desired number of tasks from a specified task
-definition.
+.
 
 Type annotations and code completion for `#!python boto3.client("ecs").create_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
@@ -209,7 +211,8 @@ def create_service(
     enableECSManagedTags: bool = ...,
     propagateTags: PropagateTagsType = ...,  # (12)
     enableExecuteCommand: bool = ...,
-) -> CreateServiceResponseTypeDef:  # (13)
+    serviceConnectConfiguration: ServiceConnectConfigurationTypeDef = ...,  # (13)
+) -> CreateServiceResponseTypeDef:  # (14)
     ...
 ```
 
@@ -225,7 +228,8 @@ def create_service(
 10. See [:material-code-braces: DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef) 
 11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 12. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
-13. See [:material-code-braces: CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef) 
+13. See [:material-code-braces: ServiceConnectConfigurationTypeDef](./type_defs.md#serviceconnectconfigurationtypedef) 
+14. See [:material-code-braces: CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -411,7 +415,7 @@ parent.delete_cluster(**kwargs)
 
 ### delete\_service
 
-Deletes a specified service within a cluster.
+.
 
 Type annotations and code completion for `#!python boto3.client("ecs").delete_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
@@ -632,7 +636,7 @@ parent.describe_container_instances(**kwargs)
 
 ### describe\_services
 
-Describes the specified services running in your cluster.
+.
 
 Type annotations and code completion for `#!python boto3.client("ecs").describe_services` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
@@ -1042,6 +1046,38 @@ parent.list_services(**kwargs)
 ```
 
 1. See [:material-code-braces: ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef) 
+
+### list\_services\_by\_namespace
+
+This operation lists all of the services that are associated with a Cloud Map
+namespace.
+
+Type annotations and code completion for `#!python boto3.client("ecs").list_services_by_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services_by_namespace)
+
+```python title="Method definition"
+def list_services_by_namespace(
+    self,
+    *,
+    namespace: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListServicesByNamespaceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListServicesByNamespaceResponseTypeDef](./type_defs.md#listservicesbynamespaceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListServicesByNamespaceRequestRequestTypeDef = {  # (1)
+    "namespace": ...,
+}
+
+parent.list_services_by_namespace(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicesByNamespaceRequestRequestTypeDef](./type_defs.md#listservicesbynamespacerequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 
@@ -1758,13 +1794,15 @@ def update_cluster(
     cluster: str,
     settings: Sequence[ClusterSettingTypeDef] = ...,  # (1)
     configuration: ClusterConfigurationTypeDef = ...,  # (2)
-) -> UpdateClusterResponseTypeDef:  # (3)
+    serviceConnectDefaults: ClusterServiceConnectDefaultsRequestTypeDef = ...,  # (3)
+) -> UpdateClusterResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
 2. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
-3. See [:material-code-braces: UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef) 
+3. See [:material-code-braces: ClusterServiceConnectDefaultsRequestTypeDef](./type_defs.md#clusterserviceconnectdefaultsrequesttypedef) 
+4. See [:material-code-braces: UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1874,7 +1912,7 @@ parent.update_container_instances_state(**kwargs)
 
 ### update\_service
 
-Modifies the parameters of a service.
+.
 
 Type annotations and code completion for `#!python boto3.client("ecs").update_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)
@@ -1900,7 +1938,8 @@ def update_service(
     loadBalancers: Sequence[LoadBalancerTypeDef] = ...,  # (6)
     propagateTags: PropagateTagsType = ...,  # (7)
     serviceRegistries: Sequence[ServiceRegistryTypeDef] = ...,  # (8)
-) -> UpdateServiceResponseTypeDef:  # (9)
+    serviceConnectConfiguration: ServiceConnectConfigurationTypeDef = ...,  # (9)
+) -> UpdateServiceResponseTypeDef:  # (10)
     ...
 ```
 
@@ -1912,7 +1951,8 @@ def update_service(
 6. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
 7. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
 8. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
-9. See [:material-code-braces: UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef) 
+9. See [:material-code-braces: ServiceConnectConfigurationTypeDef](./type_defs.md#serviceconnectconfigurationtypedef) 
+10. See [:material-code-braces: UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2039,6 +2079,7 @@ Type annotations and code completion for `#!python boto3.client("ecs").get_pagin
 - `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
 - `client.get_paginator("list_container_instances")` -> [ListContainerInstancesPaginator](./paginators.md#listcontainerinstancespaginator)
 - `client.get_paginator("list_services")` -> [ListServicesPaginator](./paginators.md#listservicespaginator)
+- `client.get_paginator("list_services_by_namespace")` -> [ListServicesByNamespacePaginator](./paginators.md#listservicesbynamespacepaginator)
 - `client.get_paginator("list_task_definition_families")` -> [ListTaskDefinitionFamiliesPaginator](./paginators.md#listtaskdefinitionfamiliespaginator)
 - `client.get_paginator("list_task_definitions")` -> [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
 - `client.get_paginator("list_tasks")` -> [ListTasksPaginator](./paginators.md#listtaskspaginator)

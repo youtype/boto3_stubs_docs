@@ -57,6 +57,21 @@ CallAnalyticsJobStatusType = Literal[
     "QUEUED",
 ]
 ```
+## InputTypeType
+
+```python title="Usage Example"
+from mypy_boto3_transcribe.literals import InputTypeType
+
+def get_value() -> InputTypeType:
+    return "POST_CALL"
+```
+
+```python title="Definition"
+InputTypeType = Literal[
+    "POST_CALL",
+    "REAL_TIME",
+]
+```
 ## LanguageCodeType
 
 ```python title="Usage Example"
@@ -609,6 +624,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

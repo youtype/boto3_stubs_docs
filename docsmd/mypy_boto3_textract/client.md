@@ -336,6 +336,68 @@ parent.get_expense_analysis(**kwargs)
 
 1. See [:material-code-braces: GetExpenseAnalysisRequestRequestTypeDef](./type_defs.md#getexpenseanalysisrequestrequesttypedef) 
 
+### get\_lending\_analysis
+
+Gets the results for an Amazon Textract asynchronous operation that analyzes
+text in a lending document.
+
+Type annotations and code completion for `#!python boto3.client("textract").get_lending_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_lending_analysis)
+
+```python title="Method definition"
+def get_lending_analysis(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetLendingAnalysisResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetLendingAnalysisResponseTypeDef](./type_defs.md#getlendinganalysisresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLendingAnalysisRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
+
+parent.get_lending_analysis(**kwargs)
+```
+
+1. See [:material-code-braces: GetLendingAnalysisRequestRequestTypeDef](./type_defs.md#getlendinganalysisrequestrequesttypedef) 
+
+### get\_lending\_analysis\_summary
+
+Gets summarized results for the `StartLendingAnalysis` operation, which analyzes
+text in a lending document.
+
+Type annotations and code completion for `#!python boto3.client("textract").get_lending_analysis_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_lending_analysis_summary)
+
+```python title="Method definition"
+def get_lending_analysis_summary(
+    self,
+    *,
+    JobId: str,
+) -> GetLendingAnalysisSummaryResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetLendingAnalysisSummaryResponseTypeDef](./type_defs.md#getlendinganalysissummaryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLendingAnalysisSummaryRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
+
+parent.get_lending_analysis_summary(**kwargs)
+```
+
+1. See [:material-code-braces: GetLendingAnalysisSummaryRequestRequestTypeDef](./type_defs.md#getlendinganalysissummaryrequestrequesttypedef) 
+
 ### start\_document\_analysis
 
 Starts the asynchronous analysis of an input document for relationships between
@@ -453,6 +515,43 @@ parent.start_expense_analysis(**kwargs)
 ```
 
 1. See [:material-code-braces: StartExpenseAnalysisRequestRequestTypeDef](./type_defs.md#startexpenseanalysisrequestrequesttypedef) 
+
+### start\_lending\_analysis
+
+Starts the classification and analysis of an input document.
+
+Type annotations and code completion for `#!python boto3.client("textract").start_lending_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_lending_analysis)
+
+```python title="Method definition"
+def start_lending_analysis(
+    self,
+    *,
+    DocumentLocation: DocumentLocationTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    JobTag: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    OutputConfig: OutputConfigTypeDef = ...,  # (3)
+    KMSKeyId: str = ...,
+) -> StartLendingAnalysisResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+4. See [:material-code-braces: StartLendingAnalysisResponseTypeDef](./type_defs.md#startlendinganalysisresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartLendingAnalysisRequestRequestTypeDef = {  # (1)
+    "DocumentLocation": ...,
+}
+
+parent.start_lending_analysis(**kwargs)
+```
+
+1. See [:material-code-braces: StartLendingAnalysisRequestRequestTypeDef](./type_defs.md#startlendinganalysisrequestrequesttypedef) 
 
 
 

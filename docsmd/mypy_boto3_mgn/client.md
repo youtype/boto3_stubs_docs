@@ -56,6 +56,124 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 ## Methods
 
 
+### archive\_application
+
+Archive application.
+
+Type annotations and code completion for `#!python boto3.client("mgn").archive_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.archive_application)
+
+```python title="Method definition"
+def archive_application(
+    self,
+    *,
+    applicationID: str,
+) -> ApplicationResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ArchiveApplicationRequestRequestTypeDef = {  # (1)
+    "applicationID": ...,
+}
+
+parent.archive_application(**kwargs)
+```
+
+1. See [:material-code-braces: ArchiveApplicationRequestRequestTypeDef](./type_defs.md#archiveapplicationrequestrequesttypedef) 
+
+### archive\_wave
+
+Archive wave.
+
+Type annotations and code completion for `#!python boto3.client("mgn").archive_wave` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.archive_wave)
+
+```python title="Method definition"
+def archive_wave(
+    self,
+    *,
+    waveID: str,
+) -> WaveResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: WaveResponseMetadataTypeDef](./type_defs.md#waveresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ArchiveWaveRequestRequestTypeDef = {  # (1)
+    "waveID": ...,
+}
+
+parent.archive_wave(**kwargs)
+```
+
+1. See [:material-code-braces: ArchiveWaveRequestRequestTypeDef](./type_defs.md#archivewaverequestrequesttypedef) 
+
+### associate\_applications
+
+Associate applications to wave.
+
+Type annotations and code completion for `#!python boto3.client("mgn").associate_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.associate_applications)
+
+```python title="Method definition"
+def associate_applications(
+    self,
+    *,
+    applicationIDs: Sequence[str],
+    waveID: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateApplicationsRequestRequestTypeDef = {  # (1)
+    "applicationIDs": ...,
+    "waveID": ...,
+}
+
+parent.associate_applications(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateApplicationsRequestRequestTypeDef](./type_defs.md#associateapplicationsrequestrequesttypedef) 
+
+### associate\_source\_servers
+
+Associate source servers to application.
+
+Type annotations and code completion for `#!python boto3.client("mgn").associate_source_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.associate_source_servers)
+
+```python title="Method definition"
+def associate_source_servers(
+    self,
+    *,
+    applicationID: str,
+    sourceServerIDs: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateSourceServersRequestRequestTypeDef = {  # (1)
+    "applicationID": ...,
+    "sourceServerIDs": ...,
+}
+
+parent.associate_source_servers(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateSourceServersRequestRequestTypeDef](./type_defs.md#associatesourceserversrequestrequesttypedef) 
+
 ### can\_paginate
 
 Check if an operation can be paginated.
@@ -120,9 +238,40 @@ def close(
 ```
 
 
+### create\_application
+
+Create application.
+
+Type annotations and code completion for `#!python boto3.client("mgn").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_application)
+
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ApplicationResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.create_application(**kwargs)
+```
+
+1. See [:material-code-braces: CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef) 
+
 ### create\_launch\_configuration\_template
 
-Creates a new ReplicationConfigurationTemplate.
+Creates a new Launch Configuration Template.
 
 Type annotations and code completion for `#!python boto3.client("mgn").create_launch_configuration_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_launch_configuration_template)
@@ -131,19 +280,37 @@ Type annotations and code completion for `#!python boto3.client("mgn").create_la
 def create_launch_configuration_template(
     self,
     *,
-    postLaunchActions: PostLaunchActionsTypeDef = ...,  # (1)
+    associatePublicIpAddress: bool = ...,
+    bootMode: BootModeType = ...,  # (1)
+    copyPrivateIp: bool = ...,
+    copyTags: bool = ...,
+    enableMapAutoTagging: bool = ...,
+    largeVolumeConf: LaunchTemplateDiskConfTypeDef = ...,  # (2)
+    launchDisposition: LaunchDispositionType = ...,  # (3)
+    licensing: LicensingTypeDef = ...,  # (4)
+    mapAutoTaggingMpeID: str = ...,
+    postLaunchActions: PostLaunchActionsTypeDef = ...,  # (5)
+    smallVolumeConf: LaunchTemplateDiskConfTypeDef = ...,  # (2)
+    smallVolumeMaxSize: int = ...,
     tags: Mapping[str, str] = ...,
-) -> LaunchConfigurationTemplateResponseMetadataTypeDef:  # (2)
+    targetInstanceTypeRightSizingMethod: TargetInstanceTypeRightSizingMethodType = ...,  # (7)
+) -> LaunchConfigurationTemplateResponseMetadataTypeDef:  # (8)
     ...
 ```
 
-1. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
-2. See [:material-code-braces: LaunchConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#launchconfigurationtemplateresponsemetadatatypedef) 
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+3. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+4. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+5. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+6. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+7. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
+8. See [:material-code-braces: LaunchConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#launchconfigurationtemplateresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: CreateLaunchConfigurationTemplateRequestRequestTypeDef = {  # (1)
-    "postLaunchActions": ...,
+    "associatePublicIpAddress": ...,
 }
 
 parent.create_launch_configuration_template(**kwargs)
@@ -205,6 +372,65 @@ parent.create_replication_configuration_template(**kwargs)
 
 1. See [:material-code-braces: CreateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequestrequesttypedef) 
 
+### create\_wave
+
+Create wave.
+
+Type annotations and code completion for `#!python boto3.client("mgn").create_wave` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_wave)
+
+```python title="Method definition"
+def create_wave(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> WaveResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: WaveResponseMetadataTypeDef](./type_defs.md#waveresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateWaveRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.create_wave(**kwargs)
+```
+
+1. See [:material-code-braces: CreateWaveRequestRequestTypeDef](./type_defs.md#createwaverequestrequesttypedef) 
+
+### delete\_application
+
+Delete application.
+
+Type annotations and code completion for `#!python boto3.client("mgn").delete_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_application)
+
+```python title="Method definition"
+def delete_application(
+    self,
+    *,
+    applicationID: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationRequestRequestTypeDef = {  # (1)
+    "applicationID": ...,
+}
+
+parent.delete_application(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef) 
+
 ### delete\_job
 
 Deletes a single Job by ID.
@@ -235,7 +461,7 @@ parent.delete_job(**kwargs)
 
 ### delete\_launch\_configuration\_template
 
-Creates a new ReplicationConfigurationTemplate.
+Deletes a single Launch Configuration Template by ID.
 
 Type annotations and code completion for `#!python boto3.client("mgn").delete_launch_configuration_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_launch_configuration_template)
@@ -347,6 +573,34 @@ parent.delete_vcenter_client(**kwargs)
 
 1. See [:material-code-braces: DeleteVcenterClientRequestRequestTypeDef](./type_defs.md#deletevcenterclientrequestrequesttypedef) 
 
+### delete\_wave
+
+Delete wave.
+
+Type annotations and code completion for `#!python boto3.client("mgn").delete_wave` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_wave)
+
+```python title="Method definition"
+def delete_wave(
+    self,
+    *,
+    waveID: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteWaveRequestRequestTypeDef = {  # (1)
+    "waveID": ...,
+}
+
+parent.delete_wave(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteWaveRequestRequestTypeDef](./type_defs.md#deletewaverequestrequesttypedef) 
+
 ### describe\_job\_log\_items
 
 Retrieves detailed job log items with paging.
@@ -412,7 +666,9 @@ parent.describe_jobs(**kwargs)
 
 ### describe\_launch\_configuration\_templates
 
-Creates a new ReplicationConfigurationTemplate.
+Lists all Launch Configuration Templates, filtered by Launch Configuration
+Template IDs See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/mgn-2020-02-26/DescribeLaunchConfigurationTemplates).
 
 Type annotations and code completion for `#!python boto3.client("mgn").describe_launch_configuration_templates` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_launch_configuration_templates)
@@ -533,6 +789,66 @@ parent.describe_vcenter_clients(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeVcenterClientsRequestRequestTypeDef](./type_defs.md#describevcenterclientsrequestrequesttypedef) 
+
+### disassociate\_applications
+
+Disassociate applications from wave.
+
+Type annotations and code completion for `#!python boto3.client("mgn").disassociate_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disassociate_applications)
+
+```python title="Method definition"
+def disassociate_applications(
+    self,
+    *,
+    applicationIDs: Sequence[str],
+    waveID: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateApplicationsRequestRequestTypeDef = {  # (1)
+    "applicationIDs": ...,
+    "waveID": ...,
+}
+
+parent.disassociate_applications(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateApplicationsRequestRequestTypeDef](./type_defs.md#disassociateapplicationsrequestrequesttypedef) 
+
+### disassociate\_source\_servers
+
+Disassociate source servers from application.
+
+Type annotations and code completion for `#!python boto3.client("mgn").disassociate_source_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disassociate_source_servers)
+
+```python title="Method definition"
+def disassociate_source_servers(
+    self,
+    *,
+    applicationID: str,
+    sourceServerIDs: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateSourceServersRequestRequestTypeDef = {  # (1)
+    "applicationID": ...,
+    "sourceServerIDs": ...,
+}
+
+parent.disassociate_source_servers(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateSourceServersRequestRequestTypeDef](./type_defs.md#disassociatesourceserversrequestrequesttypedef) 
 
 ### disconnect\_from\_service
 
@@ -684,6 +1000,71 @@ def initialize_service(
 ```
 
 
+### list\_applications
+
+Retrieves all applications or multiple applications by ID.
+
+Type annotations and code completion for `#!python boto3.client("mgn").list_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_applications)
+
+```python title="Method definition"
+def list_applications(
+    self,
+    *,
+    filters: ListApplicationsRequestFiltersTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListApplicationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ListApplicationsRequestFiltersTypeDef](./type_defs.md#listapplicationsrequestfilterstypedef) 
+2. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.list_applications(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef) 
+
+### list\_source\_server\_actions
+
+List source server post migration custom actions.
+
+Type annotations and code completion for `#!python boto3.client("mgn").list_source_server_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_source_server_actions)
+
+```python title="Method definition"
+def list_source_server_actions(
+    self,
+    *,
+    sourceServerID: str,
+    filters: SourceServerActionsRequestFiltersTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSourceServerActionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SourceServerActionsRequestFiltersTypeDef](./type_defs.md#sourceserveractionsrequestfilterstypedef) 
+2. See [:material-code-braces: ListSourceServerActionsResponseTypeDef](./type_defs.md#listsourceserveractionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSourceServerActionsRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
+
+parent.list_source_server_actions(**kwargs)
+```
+
+1. See [:material-code-braces: ListSourceServerActionsRequestRequestTypeDef](./type_defs.md#listsourceserveractionsrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
 List all tags for your Application Migration Service resources.
@@ -712,6 +1093,71 @@ parent.list_tags_for_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
+### list\_template\_actions
+
+List template post migration custom actions.
+
+Type annotations and code completion for `#!python boto3.client("mgn").list_template_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_template_actions)
+
+```python title="Method definition"
+def list_template_actions(
+    self,
+    *,
+    launchConfigurationTemplateID: str,
+    filters: TemplateActionsRequestFiltersTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTemplateActionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TemplateActionsRequestFiltersTypeDef](./type_defs.md#templateactionsrequestfilterstypedef) 
+2. See [:material-code-braces: ListTemplateActionsResponseTypeDef](./type_defs.md#listtemplateactionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTemplateActionsRequestRequestTypeDef = {  # (1)
+    "launchConfigurationTemplateID": ...,
+}
+
+parent.list_template_actions(**kwargs)
+```
+
+1. See [:material-code-braces: ListTemplateActionsRequestRequestTypeDef](./type_defs.md#listtemplateactionsrequestrequesttypedef) 
+
+### list\_waves
+
+Retrieves all waves or multiple waves by ID.
+
+Type annotations and code completion for `#!python boto3.client("mgn").list_waves` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_waves)
+
+```python title="Method definition"
+def list_waves(
+    self,
+    *,
+    filters: ListWavesRequestFiltersTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListWavesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ListWavesRequestFiltersTypeDef](./type_defs.md#listwavesrequestfilterstypedef) 
+2. See [:material-code-braces: ListWavesResponseTypeDef](./type_defs.md#listwavesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWavesRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.list_waves(**kwargs)
+```
+
+1. See [:material-code-braces: ListWavesRequestRequestTypeDef](./type_defs.md#listwavesrequestrequesttypedef) 
 
 ### mark\_as\_archived
 
@@ -742,6 +1188,153 @@ parent.mark_as_archived(**kwargs)
 ```
 
 1. See [:material-code-braces: MarkAsArchivedRequestRequestTypeDef](./type_defs.md#markasarchivedrequestrequesttypedef) 
+
+### put\_source\_server\_action
+
+Put source server post migration custom action.
+
+Type annotations and code completion for `#!python boto3.client("mgn").put_source_server_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.put_source_server_action)
+
+```python title="Method definition"
+def put_source_server_action(
+    self,
+    *,
+    actionID: str,
+    actionName: str,
+    documentIdentifier: str,
+    order: int,
+    sourceServerID: str,
+    active: bool = ...,
+    documentVersion: str = ...,
+    mustSucceedForCutover: bool = ...,
+    parameters: Mapping[str, Sequence[SsmParameterStoreParameterTypeDef]] = ...,  # (1)
+    timeoutSeconds: int = ...,
+) -> SourceServerActionDocumentResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+2. See [:material-code-braces: SourceServerActionDocumentResponseMetadataTypeDef](./type_defs.md#sourceserveractiondocumentresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutSourceServerActionRequestRequestTypeDef = {  # (1)
+    "actionID": ...,
+    "actionName": ...,
+    "documentIdentifier": ...,
+    "order": ...,
+    "sourceServerID": ...,
+}
+
+parent.put_source_server_action(**kwargs)
+```
+
+1. See [:material-code-braces: PutSourceServerActionRequestRequestTypeDef](./type_defs.md#putsourceserveractionrequestrequesttypedef) 
+
+### put\_template\_action
+
+Put template post migration custom action.
+
+Type annotations and code completion for `#!python boto3.client("mgn").put_template_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.put_template_action)
+
+```python title="Method definition"
+def put_template_action(
+    self,
+    *,
+    actionID: str,
+    actionName: str,
+    documentIdentifier: str,
+    launchConfigurationTemplateID: str,
+    order: int,
+    active: bool = ...,
+    documentVersion: str = ...,
+    mustSucceedForCutover: bool = ...,
+    operatingSystem: str = ...,
+    parameters: Mapping[str, Sequence[SsmParameterStoreParameterTypeDef]] = ...,  # (1)
+    timeoutSeconds: int = ...,
+) -> TemplateActionDocumentResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SsmParameterStoreParameterTypeDef](./type_defs.md#ssmparameterstoreparametertypedef) 
+2. See [:material-code-braces: TemplateActionDocumentResponseMetadataTypeDef](./type_defs.md#templateactiondocumentresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutTemplateActionRequestRequestTypeDef = {  # (1)
+    "actionID": ...,
+    "actionName": ...,
+    "documentIdentifier": ...,
+    "launchConfigurationTemplateID": ...,
+    "order": ...,
+}
+
+parent.put_template_action(**kwargs)
+```
+
+1. See [:material-code-braces: PutTemplateActionRequestRequestTypeDef](./type_defs.md#puttemplateactionrequestrequesttypedef) 
+
+### remove\_source\_server\_action
+
+Remove source server post migration custom action.
+
+Type annotations and code completion for `#!python boto3.client("mgn").remove_source_server_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.remove_source_server_action)
+
+```python title="Method definition"
+def remove_source_server_action(
+    self,
+    *,
+    actionID: str,
+    sourceServerID: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: RemoveSourceServerActionRequestRequestTypeDef = {  # (1)
+    "actionID": ...,
+    "sourceServerID": ...,
+}
+
+parent.remove_source_server_action(**kwargs)
+```
+
+1. See [:material-code-braces: RemoveSourceServerActionRequestRequestTypeDef](./type_defs.md#removesourceserveractionrequestrequesttypedef) 
+
+### remove\_template\_action
+
+Remove template post migration custom action.
+
+Type annotations and code completion for `#!python boto3.client("mgn").remove_template_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.remove_template_action)
+
+```python title="Method definition"
+def remove_template_action(
+    self,
+    *,
+    actionID: str,
+    launchConfigurationTemplateID: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: RemoveTemplateActionRequestRequestTypeDef = {  # (1)
+    "actionID": ...,
+    "launchConfigurationTemplateID": ...,
+}
+
+parent.remove_template_action(**kwargs)
+```
+
+1. See [:material-code-braces: RemoveTemplateActionRequestRequestTypeDef](./type_defs.md#removetemplateactionrequestrequesttypedef) 
 
 ### retry\_data\_replication
 
@@ -925,6 +1518,64 @@ parent.terminate_target_instances(**kwargs)
 
 1. See [:material-code-braces: TerminateTargetInstancesRequestRequestTypeDef](./type_defs.md#terminatetargetinstancesrequestrequesttypedef) 
 
+### unarchive\_application
+
+Unarchive application.
+
+Type annotations and code completion for `#!python boto3.client("mgn").unarchive_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.unarchive_application)
+
+```python title="Method definition"
+def unarchive_application(
+    self,
+    *,
+    applicationID: str,
+) -> ApplicationResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UnarchiveApplicationRequestRequestTypeDef = {  # (1)
+    "applicationID": ...,
+}
+
+parent.unarchive_application(**kwargs)
+```
+
+1. See [:material-code-braces: UnarchiveApplicationRequestRequestTypeDef](./type_defs.md#unarchiveapplicationrequestrequesttypedef) 
+
+### unarchive\_wave
+
+Unarchive wave.
+
+Type annotations and code completion for `#!python boto3.client("mgn").unarchive_wave` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.unarchive_wave)
+
+```python title="Method definition"
+def unarchive_wave(
+    self,
+    *,
+    waveID: str,
+) -> WaveResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: WaveResponseMetadataTypeDef](./type_defs.md#waveresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UnarchiveWaveRequestRequestTypeDef = {  # (1)
+    "waveID": ...,
+}
+
+parent.unarchive_wave(**kwargs)
+```
+
+1. See [:material-code-braces: UnarchiveWaveRequestRequestTypeDef](./type_defs.md#unarchivewaverequestrequesttypedef) 
+
 ### untag\_resource
 
 Deletes the specified set of tags from the specified set of Application
@@ -957,6 +1608,37 @@ parent.untag_resource(**kwargs)
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
+### update\_application
+
+Update application.
+
+Type annotations and code completion for `#!python boto3.client("mgn").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_application)
+
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    applicationID: str,
+    description: str = ...,
+    name: str = ...,
+) -> ApplicationResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationRequestRequestTypeDef = {  # (1)
+    "applicationID": ...,
+}
+
+parent.update_application(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef) 
+
 ### update\_launch\_configuration
 
 Updates multiple LaunchConfigurations by Source Server ID.
@@ -972,8 +1654,10 @@ def update_launch_configuration(
     bootMode: BootModeType = ...,  # (1)
     copyPrivateIp: bool = ...,
     copyTags: bool = ...,
+    enableMapAutoTagging: bool = ...,
     launchDisposition: LaunchDispositionType = ...,  # (2)
     licensing: LicensingTypeDef = ...,  # (3)
+    mapAutoTaggingMpeID: str = ...,
     name: str = ...,
     postLaunchActions: PostLaunchActionsTypeDef = ...,  # (4)
     targetInstanceTypeRightSizingMethod: TargetInstanceTypeRightSizingMethodType = ...,  # (5)
@@ -1001,7 +1685,7 @@ parent.update_launch_configuration(**kwargs)
 
 ### update\_launch\_configuration\_template
 
-Creates a new ReplicationConfigurationTemplate.
+Updates an existing Launch Configuration Template by ID.
 
 Type annotations and code completion for `#!python boto3.client("mgn").update_launch_configuration_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration_template)
@@ -1011,13 +1695,31 @@ def update_launch_configuration_template(
     self,
     *,
     launchConfigurationTemplateID: str,
-    postLaunchActions: PostLaunchActionsTypeDef = ...,  # (1)
-) -> LaunchConfigurationTemplateResponseMetadataTypeDef:  # (2)
+    associatePublicIpAddress: bool = ...,
+    bootMode: BootModeType = ...,  # (1)
+    copyPrivateIp: bool = ...,
+    copyTags: bool = ...,
+    enableMapAutoTagging: bool = ...,
+    largeVolumeConf: LaunchTemplateDiskConfTypeDef = ...,  # (2)
+    launchDisposition: LaunchDispositionType = ...,  # (3)
+    licensing: LicensingTypeDef = ...,  # (4)
+    mapAutoTaggingMpeID: str = ...,
+    postLaunchActions: PostLaunchActionsTypeDef = ...,  # (5)
+    smallVolumeConf: LaunchTemplateDiskConfTypeDef = ...,  # (2)
+    smallVolumeMaxSize: int = ...,
+    targetInstanceTypeRightSizingMethod: TargetInstanceTypeRightSizingMethodType = ...,  # (7)
+) -> LaunchConfigurationTemplateResponseMetadataTypeDef:  # (8)
     ...
 ```
 
-1. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
-2. See [:material-code-braces: LaunchConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#launchconfigurationtemplateresponsemetadatatypedef) 
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+3. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+4. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+5. See [:material-code-braces: PostLaunchActionsTypeDef](./type_defs.md#postlaunchactionstypedef) 
+6. See [:material-code-braces: LaunchTemplateDiskConfTypeDef](./type_defs.md#launchtemplatediskconftypedef) 
+7. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
+8. See [:material-code-braces: LaunchConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#launchconfigurationtemplateresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1155,6 +1857,37 @@ parent.update_source_server_replication_type(**kwargs)
 
 1. See [:material-code-braces: UpdateSourceServerReplicationTypeRequestRequestTypeDef](./type_defs.md#updatesourceserverreplicationtyperequestrequesttypedef) 
 
+### update\_wave
+
+Update wave.
+
+Type annotations and code completion for `#!python boto3.client("mgn").update_wave` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_wave)
+
+```python title="Method definition"
+def update_wave(
+    self,
+    *,
+    waveID: str,
+    description: str = ...,
+    name: str = ...,
+) -> WaveResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: WaveResponseMetadataTypeDef](./type_defs.md#waveresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateWaveRequestRequestTypeDef = {  # (1)
+    "waveID": ...,
+}
+
+parent.update_wave(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateWaveRequestRequestTypeDef](./type_defs.md#updatewaverequestrequesttypedef) 
+
 
 
 ### get_paginator
@@ -1167,6 +1900,10 @@ Type annotations and code completion for `#!python boto3.client("mgn").get_pagin
 - `client.get_paginator("describe_replication_configuration_templates")` -> [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - `client.get_paginator("describe_source_servers")` -> [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
 - `client.get_paginator("describe_vcenter_clients")` -> [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)
+- `client.get_paginator("list_applications")` -> [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+- `client.get_paginator("list_source_server_actions")` -> [ListSourceServerActionsPaginator](./paginators.md#listsourceserveractionspaginator)
+- `client.get_paginator("list_template_actions")` -> [ListTemplateActionsPaginator](./paginators.md#listtemplateactionspaginator)
+- `client.get_paginator("list_waves")` -> [ListWavesPaginator](./paginators.md#listwavespaginator)
 
 
 

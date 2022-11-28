@@ -24,6 +24,7 @@ BackupJobStateType = Literal[
     "CREATED",
     "EXPIRED",
     "FAILED",
+    "PARTIAL",
     "PENDING",
     "RUNNING",
 ]
@@ -86,7 +87,25 @@ CopyJobStateType = Literal[
     "COMPLETED",
     "CREATED",
     "FAILED",
+    "PARTIAL",
     "RUNNING",
+]
+```
+## LegalHoldStatusType
+
+```python title="Usage Example"
+from mypy_boto3_backup.literals import LegalHoldStatusType
+
+def get_value() -> LegalHoldStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+LegalHoldStatusType = Literal[
+    "ACTIVE",
+    "CANCELED",
+    "CANCELING",
+    "CREATING",
 ]
 ```
 ## ListBackupJobsPaginatorName
@@ -187,6 +206,20 @@ ListCopyJobsPaginatorName = Literal[
     "list_copy_jobs",
 ]
 ```
+## ListLegalHoldsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_backup.literals import ListLegalHoldsPaginatorName
+
+def get_value() -> ListLegalHoldsPaginatorName:
+    return "list_legal_holds"
+```
+
+```python title="Definition"
+ListLegalHoldsPaginatorName = Literal[
+    "list_legal_holds",
+]
+```
 ## ListProtectedResourcesPaginatorName
 
 ```python title="Usage Example"
@@ -213,6 +246,20 @@ def get_value() -> ListRecoveryPointsByBackupVaultPaginatorName:
 ```python title="Definition"
 ListRecoveryPointsByBackupVaultPaginatorName = Literal[
     "list_recovery_points_by_backup_vault",
+]
+```
+## ListRecoveryPointsByLegalHoldPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_backup.literals import ListRecoveryPointsByLegalHoldPaginatorName
+
+def get_value() -> ListRecoveryPointsByLegalHoldPaginatorName:
+    return "list_recovery_points_by_legal_hold"
+```
+
+```python title="Definition"
+ListRecoveryPointsByLegalHoldPaginatorName = Literal[
+    "list_recovery_points_by_legal_hold",
 ]
 ```
 ## ListRecoveryPointsByResourcePaginatorName
@@ -538,6 +585,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",
@@ -685,8 +733,10 @@ PaginatorName = Literal[
     "list_backup_selections",
     "list_backup_vaults",
     "list_copy_jobs",
+    "list_legal_holds",
     "list_protected_resources",
     "list_recovery_points_by_backup_vault",
+    "list_recovery_points_by_legal_hold",
     "list_recovery_points_by_resource",
     "list_restore_jobs",
 ]

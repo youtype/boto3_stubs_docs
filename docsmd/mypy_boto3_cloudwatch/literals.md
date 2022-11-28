@@ -347,6 +347,7 @@ def get_value() -> StatusCodeType:
 ```python title="Definition"
 StatusCodeType = Literal[
     "Complete",
+    "Forbidden",
     "InternalError",
     "PartialData",
 ]
@@ -595,6 +596,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

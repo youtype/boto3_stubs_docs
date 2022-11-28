@@ -126,6 +126,22 @@ class CreateLogStreamRequestRequestTypeDef(TypedDict):
     logStreamName: str,
 ```
 
+## DeleteDataProtectionPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import DeleteDataProtectionPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteDataProtectionPolicyRequestRequestTypeDef:
+    return {
+        "logGroupIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDataProtectionPolicyRequestRequestTypeDef(TypedDict):
+    logGroupIdentifier: str,
+```
+
 ## DeleteDestinationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -344,15 +360,18 @@ from mypy_boto3_logs.type_defs import DescribeLogGroupsRequestRequestTypeDef
 
 def get_value() -> DescribeLogGroupsRequestRequestTypeDef:
     return {
-        "logGroupNamePrefix": ...,
+        "accountIdentifiers": ...,
     }
 ```
 
 ```python title="Definition"
 class DescribeLogGroupsRequestRequestTypeDef(TypedDict):
+    accountIdentifiers: NotRequired[Sequence[str]],
     logGroupNamePrefix: NotRequired[str],
+    logGroupNamePattern: NotRequired[str],
     nextToken: NotRequired[str],
     limit: NotRequired[int],
+    includeLinkedAccounts: NotRequired[bool],
 ```
 
 ## LogGroupTypeDef
@@ -375,8 +394,10 @@ class LogGroupTypeDef(TypedDict):
     arn: NotRequired[str],
     storedBytes: NotRequired[int],
     kmsKeyId: NotRequired[str],
+    dataProtectionStatus: NotRequired[DataProtectionStatusType],  # (1)
 ```
 
+1. See [:material-code-brackets: DataProtectionStatusType](./literals.md#dataprotectionstatustype) 
 ## DescribeLogStreamsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -391,6 +412,7 @@ def get_value() -> DescribeLogStreamsRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeLogStreamsRequestRequestTypeDef(TypedDict):
     logGroupName: str,
+    logGroupIdentifier: NotRequired[str],
     logStreamNamePrefix: NotRequired[str],
     orderBy: NotRequired[OrderByType],  # (1)
     descending: NotRequired[bool],
@@ -664,6 +686,7 @@ def get_value() -> FilterLogEventsRequestRequestTypeDef:
 ```python title="Definition"
 class FilterLogEventsRequestRequestTypeDef(TypedDict):
     logGroupName: str,
+    logGroupIdentifier: NotRequired[str],
     logStreamNames: NotRequired[Sequence[str]],
     logStreamNamePrefix: NotRequired[str],
     startTime: NotRequired[int],
@@ -672,6 +695,7 @@ class FilterLogEventsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
     limit: NotRequired[int],
     interleaved: NotRequired[bool],
+    unmask: NotRequired[bool],
 ```
 
 ## FilteredLogEventTypeDef
@@ -711,6 +735,22 @@ class SearchedLogStreamTypeDef(TypedDict):
     searchedCompletely: NotRequired[bool],
 ```
 
+## GetDataProtectionPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import GetDataProtectionPolicyRequestRequestTypeDef
+
+def get_value() -> GetDataProtectionPolicyRequestRequestTypeDef:
+    return {
+        "logGroupIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataProtectionPolicyRequestRequestTypeDef(TypedDict):
+    logGroupIdentifier: str,
+```
+
 ## GetLogEventsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -727,11 +767,13 @@ def get_value() -> GetLogEventsRequestRequestTypeDef:
 class GetLogEventsRequestRequestTypeDef(TypedDict):
     logGroupName: str,
     logStreamName: str,
+    logGroupIdentifier: NotRequired[str],
     startTime: NotRequired[int],
     endTime: NotRequired[int],
     nextToken: NotRequired[str],
     limit: NotRequired[int],
     startFromHead: NotRequired[bool],
+    unmask: NotRequired[bool],
 ```
 
 ## OutputLogEventTypeDef
@@ -767,6 +809,7 @@ def get_value() -> GetLogGroupFieldsRequestRequestTypeDef:
 class GetLogGroupFieldsRequestRequestTypeDef(TypedDict):
     logGroupName: str,
     time: NotRequired[int],
+    logGroupIdentifier: NotRequired[str],
 ```
 
 ## LogGroupFieldTypeDef
@@ -800,6 +843,7 @@ def get_value() -> GetLogRecordRequestRequestTypeDef:
 ```python title="Definition"
 class GetLogRecordRequestRequestTypeDef(TypedDict):
     logRecordPointer: str,
+    unmask: NotRequired[bool],
 ```
 
 ## GetQueryResultsRequestRequestTypeDef
@@ -945,6 +989,24 @@ class MetricTransformationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+## PutDataProtectionPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutDataProtectionPolicyRequestRequestTypeDef
+
+def get_value() -> PutDataProtectionPolicyRequestRequestTypeDef:
+    return {
+        "logGroupIdentifier": ...,
+        "policyDocument": ...,
+    }
+```
+
+```python title="Definition"
+class PutDataProtectionPolicyRequestRequestTypeDef(TypedDict):
+    logGroupIdentifier: str,
+    policyDocument: str,
+```
+
 ## PutDestinationPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1103,6 +1165,7 @@ class StartQueryRequestRequestTypeDef(TypedDict):
     queryString: str,
     logGroupName: NotRequired[str],
     logGroupNames: NotRequired[Sequence[str]],
+    logGroupIdentifiers: NotRequired[Sequence[str]],
     limit: NotRequired[int],
 ```
 
@@ -1267,6 +1330,29 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDataProtectionPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import GetDataProtectionPolicyResponseTypeDef
+
+def get_value() -> GetDataProtectionPolicyResponseTypeDef:
+    return {
+        "logGroupIdentifier": ...,
+        "policyDocument": ...,
+        "lastUpdatedTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataProtectionPolicyResponseTypeDef(TypedDict):
+    logGroupIdentifier: str,
+    policyDocument: str,
+    lastUpdatedTime: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLogRecordResponseTypeDef
 
 ```python title="Usage Example"
@@ -1320,6 +1406,29 @@ def get_value() -> ListTagsLogGroupResponseTypeDef:
 ```python title="Definition"
 class ListTagsLogGroupResponseTypeDef(TypedDict):
     tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutDataProtectionPolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_logs.type_defs import PutDataProtectionPolicyResponseTypeDef
+
+def get_value() -> PutDataProtectionPolicyResponseTypeDef:
+    return {
+        "logGroupIdentifier": ...,
+        "policyDocument": ...,
+        "lastUpdatedTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutDataProtectionPolicyResponseTypeDef(TypedDict):
+    logGroupIdentifier: str,
+    policyDocument: str,
+    lastUpdatedTime: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1426,13 +1535,16 @@ from mypy_boto3_logs.type_defs import DescribeLogGroupsRequestDescribeLogGroupsP
 
 def get_value() -> DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef:
     return {
-        "logGroupNamePrefix": ...,
+        "accountIdentifiers": ...,
     }
 ```
 
 ```python title="Definition"
 class DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef(TypedDict):
+    accountIdentifiers: NotRequired[Sequence[str]],
     logGroupNamePrefix: NotRequired[str],
+    logGroupNamePattern: NotRequired[str],
+    includeLinkedAccounts: NotRequired[bool],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -1451,6 +1563,7 @@ def get_value() -> DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef:
 ```python title="Definition"
 class DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef(TypedDict):
     logGroupName: str,
+    logGroupIdentifier: NotRequired[str],
     logStreamNamePrefix: NotRequired[str],
     orderBy: NotRequired[OrderByType],  # (1)
     descending: NotRequired[bool],
@@ -1550,12 +1663,14 @@ def get_value() -> FilterLogEventsRequestFilterLogEventsPaginateTypeDef:
 ```python title="Definition"
 class FilterLogEventsRequestFilterLogEventsPaginateTypeDef(TypedDict):
     logGroupName: str,
+    logGroupIdentifier: NotRequired[str],
     logStreamNames: NotRequired[Sequence[str]],
     logStreamNamePrefix: NotRequired[str],
     startTime: NotRequired[int],
     endTime: NotRequired[int],
     filterPattern: NotRequired[str],
     interleaved: NotRequired[bool],
+    unmask: NotRequired[bool],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 

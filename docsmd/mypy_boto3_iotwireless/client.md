@@ -564,14 +564,16 @@ def create_wireless_device(
     ClientRequestToken: str = ...,
     LoRaWAN: LoRaWANDeviceTypeDef = ...,  # (2)
     Tags: Sequence[TagTypeDef] = ...,  # (3)
-) -> CreateWirelessDeviceResponseTypeDef:  # (4)
+    Positioning: PositioningConfigStatusType = ...,  # (4)
+) -> CreateWirelessDeviceResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
 2. See [:material-code-braces: LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CreateWirelessDeviceResponseTypeDef](./type_defs.md#createwirelessdeviceresponsetypedef) 
+4. See [:material-code-brackets: PositioningConfigStatusType](./literals.md#positioningconfigstatustype) 
+5. See [:material-code-braces: CreateWirelessDeviceResponseTypeDef](./type_defs.md#createwirelessdeviceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1524,6 +1526,43 @@ parent.get_position_configuration(**kwargs)
 
 1. See [:material-code-braces: GetPositionConfigurationRequestRequestTypeDef](./type_defs.md#getpositionconfigurationrequestrequesttypedef) 
 
+### get\_position\_estimate
+
+Get estimated position information as a payload in GeoJSON format.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").get_position_estimate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_position_estimate)
+
+```python title="Method definition"
+def get_position_estimate(
+    self,
+    *,
+    WiFiAccessPoints: Sequence[WiFiAccessPointTypeDef] = ...,  # (1)
+    CellTowers: CellTowersTypeDef = ...,  # (2)
+    Ip: IpTypeDef = ...,  # (3)
+    Gnss: GnssTypeDef = ...,  # (4)
+    Timestamp: Union[datetime, str] = ...,
+) -> GetPositionEstimateResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: WiFiAccessPointTypeDef](./type_defs.md#wifiaccesspointtypedef) 
+2. See [:material-code-braces: CellTowersTypeDef](./type_defs.md#celltowerstypedef) 
+3. See [:material-code-braces: IpTypeDef](./type_defs.md#iptypedef) 
+4. See [:material-code-braces: GnssTypeDef](./type_defs.md#gnsstypedef) 
+5. See [:material-code-braces: GetPositionEstimateResponseTypeDef](./type_defs.md#getpositionestimateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPositionEstimateRequestRequestTypeDef = {  # (1)
+    "WiFiAccessPoints": ...,
+}
+
+parent.get_position_estimate(**kwargs)
+```
+
+1. See [:material-code-braces: GetPositionEstimateRequestRequestTypeDef](./type_defs.md#getpositionestimaterequestrequesttypedef) 
+
 ### get\_resource\_event\_configuration
 
 Get the event configuration for a particular resource identifier.
@@ -1589,6 +1628,39 @@ parent.get_resource_log_level(**kwargs)
 ```
 
 1. See [:material-code-braces: GetResourceLogLevelRequestRequestTypeDef](./type_defs.md#getresourceloglevelrequestrequesttypedef) 
+
+### get\_resource\_position
+
+Get the position information for a given wireless device or a wireless gateway
+resource.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").get_resource_position` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_resource_position)
+
+```python title="Method definition"
+def get_resource_position(
+    self,
+    *,
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+) -> GetResourcePositionResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+2. See [:material-code-braces: GetResourcePositionResponseTypeDef](./type_defs.md#getresourcepositionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourcePositionRequestRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+    "ResourceType": ...,
+}
+
+parent.get_resource_position(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourcePositionRequestRequestTypeDef](./type_defs.md#getresourcepositionrequestrequesttypedef) 
 
 ### get\_service\_endpoint
 
@@ -3067,6 +3139,39 @@ parent.update_resource_event_configuration(**kwargs)
 
 1. See [:material-code-braces: UpdateResourceEventConfigurationRequestRequestTypeDef](./type_defs.md#updateresourceeventconfigurationrequestrequesttypedef) 
 
+### update\_resource\_position
+
+Update the position information of a given wireless device or a wireless gateway
+resource.
+
+Type annotations and code completion for `#!python boto3.client("iotwireless").update_resource_position` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_resource_position)
+
+```python title="Method definition"
+def update_resource_position(
+    self,
+    *,
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+    GeoJsonPayload: Union[str, bytes, IO[Any], StreamingBody] = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateResourcePositionRequestRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+    "ResourceType": ...,
+}
+
+parent.update_resource_position(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateResourcePositionRequestRequestTypeDef](./type_defs.md#updateresourcepositionrequestrequesttypedef) 
+
 ### update\_wireless\_device
 
 Updates properties of a wireless device.
@@ -3083,11 +3188,13 @@ def update_wireless_device(
     Name: str = ...,
     Description: str = ...,
     LoRaWAN: LoRaWANUpdateDeviceTypeDef = ...,  # (1)
+    Positioning: PositioningConfigStatusType = ...,  # (2)
 ) -> Dict[str, Any]:
     ...
 ```
 
 1. See [:material-code-braces: LoRaWANUpdateDeviceTypeDef](./type_defs.md#lorawanupdatedevicetypedef) 
+2. See [:material-code-brackets: PositioningConfigStatusType](./literals.md#positioningconfigstatustype) 
 
 
 ```python title="Usage example with kwargs"

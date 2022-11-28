@@ -1012,6 +1012,23 @@ class RemoveAccountFromOrganizationRequestRequestTypeDef(TypedDict):
     AccountId: str,
 ```
 
+## ResourcePolicySummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_organizations.type_defs import ResourcePolicySummaryTypeDef
+
+def get_value() -> ResourcePolicySummaryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ResourcePolicySummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1282,6 +1299,24 @@ class ListTagsForResourceResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_organizations.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "Content": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    Content: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2081,6 +2116,24 @@ class RootTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PolicyTypeSummaryTypeDef](./type_defs.md#policytypesummarytypedef) 
+## ResourcePolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_organizations.type_defs import ResourcePolicyTypeDef
+
+def get_value() -> ResourcePolicyTypeDef:
+    return {
+        "ResourcePolicySummary": ...,
+    }
+```
+
+```python title="Definition"
+class ResourcePolicyTypeDef(TypedDict):
+    ResourcePolicySummary: NotRequired[ResourcePolicySummaryTypeDef],  # (1)
+    Content: NotRequired[str],
+```
+
+1. See [:material-code-braces: ResourcePolicySummaryTypeDef](./type_defs.md#resourcepolicysummarytypedef) 
 ## AcceptHandshakeResponseTypeDef
 
 ```python title="Usage Example"
@@ -2406,4 +2459,44 @@ class ListRootsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RootTypeDef](./type_defs.md#roottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeResourcePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_organizations.type_defs import DescribeResourcePolicyResponseTypeDef
+
+def get_value() -> DescribeResourcePolicyResponseTypeDef:
+    return {
+        "ResourcePolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeResourcePolicyResponseTypeDef(TypedDict):
+    ResourcePolicy: ResourcePolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResourcePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_organizations.type_defs import PutResourcePolicyResponseTypeDef
+
+def get_value() -> PutResourcePolicyResponseTypeDef:
+    return {
+        "ResourcePolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyResponseTypeDef(TypedDict):
+    ResourcePolicy: ResourcePolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

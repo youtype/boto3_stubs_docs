@@ -7,6 +7,23 @@
     Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
     type annotations stubs module [mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
+## DataProtectionStatusType
+
+```python title="Usage Example"
+from mypy_boto3_logs.literals import DataProtectionStatusType
+
+def get_value() -> DataProtectionStatusType:
+    return "ACTIVATED"
+```
+
+```python title="Definition"
+DataProtectionStatusType = Literal[
+    "ACTIVATED",
+    "ARCHIVED",
+    "DELETED",
+    "DISABLED",
+]
+```
 ## DescribeDestinationsPaginatorName
 
 ```python title="Usage Example"
@@ -486,6 +503,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

@@ -313,6 +313,20 @@ DBSnapshotDeletedWaiterName = Literal[
     "db_snapshot_deleted",
 ]
 ```
+## DescribeBlueGreenDeploymentsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_rds.literals import DescribeBlueGreenDeploymentsPaginatorName
+
+def get_value() -> DescribeBlueGreenDeploymentsPaginatorName:
+    return "describe_blue_green_deployments"
+```
+
+```python title="Definition"
+DescribeBlueGreenDeploymentsPaginatorName = Literal[
+    "describe_blue_green_deployments",
+]
+```
 ## DescribeCertificatesPaginatorName
 
 ```python title="Usage Example"
@@ -1216,6 +1230,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",
@@ -1351,11 +1366,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_rds.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "describe_certificates"
+    return "describe_blue_green_deployments"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "describe_blue_green_deployments",
     "describe_certificates",
     "describe_db_cluster_backtracks",
     "describe_db_cluster_endpoints",

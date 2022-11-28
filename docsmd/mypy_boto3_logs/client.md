@@ -62,8 +62,7 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 
 ### associate\_kms\_key
 
-Associates the specified Key Management Service customer master key (CMK) with
-the specified log group.
+Associates the specified KMS key with the specified log group.
 
 Type annotations and code completion for `#!python boto3.client("logs").associate_kms_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
@@ -154,8 +153,8 @@ def close(
 
 ### create\_export\_task
 
-Creates an export task, which allows you to efficiently export data from a log
-group to an Amazon S3 bucket.
+Creates an export task so that you can efficiently export data from a log group
+to an Amazon S3 bucket.
 
 Type annotations and code completion for `#!python boto3.client("logs").create_export_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
@@ -252,6 +251,35 @@ parent.create_log_stream(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateLogStreamRequestRequestTypeDef](./type_defs.md#createlogstreamrequestrequesttypedef) 
+
+### delete\_data\_protection\_policy
+
+Deletes the data protection policy from the specified log group.
+
+Type annotations and code completion for `#!python boto3.client("logs").delete_data_protection_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_data_protection_policy)
+
+```python title="Method definition"
+def delete_data_protection_policy(
+    self,
+    *,
+    logGroupIdentifier: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteDataProtectionPolicyRequestRequestTypeDef = {  # (1)
+    "logGroupIdentifier": ...,
+}
+
+parent.delete_data_protection_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteDataProtectionPolicyRequestRequestTypeDef](./type_defs.md#deletedataprotectionpolicyrequestrequesttypedef) 
 
 ### delete\_destination
 
@@ -569,9 +597,12 @@ Type annotations and code completion for `#!python boto3.client("logs").describe
 def describe_log_groups(
     self,
     *,
+    accountIdentifiers: Sequence[str] = ...,
     logGroupNamePrefix: str = ...,
+    logGroupNamePattern: str = ...,
     nextToken: str = ...,
     limit: int = ...,
+    includeLinkedAccounts: bool = ...,
 ) -> DescribeLogGroupsResponseTypeDef:  # (1)
     ...
 ```
@@ -581,7 +612,7 @@ def describe_log_groups(
 
 ```python title="Usage example with kwargs"
 kwargs: DescribeLogGroupsRequestRequestTypeDef = {  # (1)
-    "logGroupNamePrefix": ...,
+    "accountIdentifiers": ...,
 }
 
 parent.describe_log_groups(**kwargs)
@@ -601,6 +632,7 @@ def describe_log_streams(
     self,
     *,
     logGroupName: str,
+    logGroupIdentifier: str = ...,
     logStreamNamePrefix: str = ...,
     orderBy: OrderByType = ...,  # (1)
     descending: bool = ...,
@@ -660,8 +692,8 @@ parent.describe_metric_filters(**kwargs)
 
 ### describe\_queries
 
-Returns a list of CloudWatch Logs Insights queries that are scheduled,
-executing, or have been executed recently in this account.
+Returns a list of CloudWatch Logs Insights queries that are scheduled, running,
+or have been run recently in this account.
 
 Type annotations and code completion for `#!python boto3.client("logs").describe_queries` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
@@ -788,8 +820,7 @@ parent.describe_subscription_filters(**kwargs)
 
 ### disassociate\_kms\_key
 
-Disassociates the associated Key Management Service customer master key (CMK)
-from the specified log group.
+Disassociates the associated KMS key from the specified log group.
 
 Type annotations and code completion for `#!python boto3.client("logs").disassociate_kms_key` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
@@ -828,6 +859,7 @@ def filter_log_events(
     self,
     *,
     logGroupName: str,
+    logGroupIdentifier: str = ...,
     logStreamNames: Sequence[str] = ...,
     logStreamNamePrefix: str = ...,
     startTime: int = ...,
@@ -836,6 +868,7 @@ def filter_log_events(
     nextToken: str = ...,
     limit: int = ...,
     interleaved: bool = ...,
+    unmask: bool = ...,
 ) -> FilterLogEventsResponseTypeDef:  # (1)
     ...
 ```
@@ -872,6 +905,35 @@ def generate_presigned_url(
 ```
 
 
+### get\_data\_protection\_policy
+
+Returns information about a log group data protection policy.
+
+Type annotations and code completion for `#!python boto3.client("logs").get_data_protection_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_data_protection_policy)
+
+```python title="Method definition"
+def get_data_protection_policy(
+    self,
+    *,
+    logGroupIdentifier: str,
+) -> GetDataProtectionPolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataProtectionPolicyResponseTypeDef](./type_defs.md#getdataprotectionpolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataProtectionPolicyRequestRequestTypeDef = {  # (1)
+    "logGroupIdentifier": ...,
+}
+
+parent.get_data_protection_policy(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataProtectionPolicyRequestRequestTypeDef](./type_defs.md#getdataprotectionpolicyrequestrequesttypedef) 
+
 ### get\_log\_events
 
 Lists log events from the specified log stream.
@@ -885,11 +947,13 @@ def get_log_events(
     *,
     logGroupName: str,
     logStreamName: str,
+    logGroupIdentifier: str = ...,
     startTime: int = ...,
     endTime: int = ...,
     nextToken: str = ...,
     limit: int = ...,
     startFromHead: bool = ...,
+    unmask: bool = ...,
 ) -> GetLogEventsResponseTypeDef:  # (1)
     ...
 ```
@@ -911,7 +975,7 @@ parent.get_log_events(**kwargs)
 ### get\_log\_group\_fields
 
 Returns a list of the fields that are included in log events in the specified
-log group, along with the percentage of log events that contain each field.
+log group.
 
 Type annotations and code completion for `#!python boto3.client("logs").get_log_group_fields` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
@@ -922,6 +986,7 @@ def get_log_group_fields(
     *,
     logGroupName: str,
     time: int = ...,
+    logGroupIdentifier: str = ...,
 ) -> GetLogGroupFieldsResponseTypeDef:  # (1)
     ...
 ```
@@ -951,6 +1016,7 @@ def get_log_record(
     self,
     *,
     logRecordPointer: str,
+    unmask: bool = ...,
 ) -> GetLogRecordResponseTypeDef:  # (1)
     ...
 ```
@@ -1054,6 +1120,37 @@ parent.list_tags_log_group(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTagsLogGroupRequestRequestTypeDef](./type_defs.md#listtagsloggrouprequestrequesttypedef) 
+
+### put\_data\_protection\_policy
+
+Creates a data protection policy for the specified log group.
+
+Type annotations and code completion for `#!python boto3.client("logs").put_data_protection_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_data_protection_policy)
+
+```python title="Method definition"
+def put_data_protection_policy(
+    self,
+    *,
+    logGroupIdentifier: str,
+    policyDocument: str,
+) -> PutDataProtectionPolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: PutDataProtectionPolicyResponseTypeDef](./type_defs.md#putdataprotectionpolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutDataProtectionPolicyRequestRequestTypeDef = {  # (1)
+    "logGroupIdentifier": ...,
+    "policyDocument": ...,
+}
+
+parent.put_data_protection_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutDataProtectionPolicyRequestRequestTypeDef](./type_defs.md#putdataprotectionpolicyrequestrequesttypedef) 
 
 ### put\_destination
 
@@ -1343,6 +1440,7 @@ def start_query(
     queryString: str,
     logGroupName: str = ...,
     logGroupNames: Sequence[str] = ...,
+    logGroupIdentifiers: Sequence[str] = ...,
     limit: int = ...,
 ) -> StartQueryResponseTypeDef:  # (1)
     ...

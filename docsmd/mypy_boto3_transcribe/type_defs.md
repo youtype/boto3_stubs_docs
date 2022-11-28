@@ -2157,9 +2157,11 @@ class CategoryPropertiesTypeDef(TypedDict):
     Rules: NotRequired[List[RuleTypeDef]],  # (1)
     CreateTime: NotRequired[datetime],
     LastUpdateTime: NotRequired[datetime],
+    InputType: NotRequired[InputTypeType],  # (2)
 ```
 
 1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-brackets: InputTypeType](./literals.md#inputtypetype) 
 ## CreateCallAnalyticsCategoryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2176,9 +2178,11 @@ def get_value() -> CreateCallAnalyticsCategoryRequestRequestTypeDef:
 class CreateCallAnalyticsCategoryRequestRequestTypeDef(TypedDict):
     CategoryName: str,
     Rules: Sequence[RuleTypeDef],  # (1)
+    InputType: NotRequired[InputTypeType],  # (2)
 ```
 
 1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-brackets: InputTypeType](./literals.md#inputtypetype) 
 ## UpdateCallAnalyticsCategoryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2195,9 +2199,11 @@ def get_value() -> UpdateCallAnalyticsCategoryRequestRequestTypeDef:
 class UpdateCallAnalyticsCategoryRequestRequestTypeDef(TypedDict):
     CategoryName: str,
     Rules: Sequence[RuleTypeDef],  # (1)
+    InputType: NotRequired[InputTypeType],  # (2)
 ```
 
 1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-brackets: InputTypeType](./literals.md#inputtypetype) 
 ## CreateCallAnalyticsCategoryResponseTypeDef
 
 ```python title="Usage Example"

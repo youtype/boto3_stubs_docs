@@ -1573,6 +1573,8 @@ class ListMetricsInputListMetricsPaginateTypeDef(TypedDict):
     MetricName: NotRequired[str],
     Dimensions: NotRequired[Sequence[DimensionFilterTypeDef]],  # (1)
     RecentlyActive: NotRequired[RecentlyActiveType],  # (2)
+    IncludeLinkedAccounts: NotRequired[bool],
+    OwningAccount: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
 ```
 
@@ -1597,6 +1599,8 @@ class ListMetricsInputRequestTypeDef(TypedDict):
     Dimensions: NotRequired[Sequence[DimensionFilterTypeDef]],  # (1)
     NextToken: NotRequired[str],
     RecentlyActive: NotRequired[RecentlyActiveType],  # (2)
+    IncludeLinkedAccounts: NotRequired[bool],
+    OwningAccount: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef) 
@@ -1849,6 +1853,7 @@ def get_value() -> ListMetricsOutputTypeDef:
     return {
         "Metrics": ...,
         "NextToken": ...,
+        "OwningAccounts": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1857,6 +1862,7 @@ def get_value() -> ListMetricsOutputTypeDef:
 class ListMetricsOutputTypeDef(TypedDict):
     Metrics: List[MetricTypeDef],  # (1)
     NextToken: str,
+    OwningAccounts: List[str],
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

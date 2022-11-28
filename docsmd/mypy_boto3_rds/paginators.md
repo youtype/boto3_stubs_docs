@@ -7,6 +7,67 @@
     Auto-generated documentation for [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
     type annotations stubs module [mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
+## DescribeBlueGreenDeploymentsPaginator
+
+Type annotations and code completion for `#!python boto3.client("rds").get_paginator("describe_blue_green_deployments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Paginator.DescribeBlueGreenDeployments)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rds.paginator import DescribeBlueGreenDeploymentsPaginator
+
+def get_describe_blue_green_deployments_paginator() -> DescribeBlueGreenDeploymentsPaginator:
+    return Session().client("rds").get_paginator("describe_blue_green_deployments")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_rds.paginator import DescribeBlueGreenDeploymentsPaginator
+
+session = Session()
+
+client = Session().client("rds")  # (1)
+paginator: DescribeBlueGreenDeploymentsPaginator = client.get_paginator("describe_blue_green_deployments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RDSClient](./client.md)
+2. paginator: [DescribeBlueGreenDeploymentsPaginator](./paginators.md#describebluegreendeploymentspaginator)
+3. item: [:material-code-braces: DescribeBlueGreenDeploymentsResponseTypeDef](./type_defs.md#describebluegreendeploymentsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeBlueGreenDeploymentsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BlueGreenDeploymentIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeBlueGreenDeploymentsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeBlueGreenDeploymentsResponseTypeDef](./type_defs.md#describebluegreendeploymentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBlueGreenDeploymentsRequestDescribeBlueGreenDeploymentsPaginateTypeDef = {  # (1)
+    "BlueGreenDeploymentIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBlueGreenDeploymentsRequestDescribeBlueGreenDeploymentsPaginateTypeDef](./type_defs.md#describebluegreendeploymentsrequestdescribebluegreendeploymentspaginatetypedef) 
 ## DescribeCertificatesPaginator
 
 Type annotations and code completion for `#!python boto3.client("rds").get_paginator("describe_certificates")`.

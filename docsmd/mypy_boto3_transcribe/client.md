@@ -97,12 +97,14 @@ def create_call_analytics_category(
     *,
     CategoryName: str,
     Rules: Sequence[RuleTypeDef],  # (1)
-) -> CreateCallAnalyticsCategoryResponseTypeDef:  # (2)
+    InputType: InputTypeType = ...,  # (2)
+) -> CreateCallAnalyticsCategoryResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
-2. See [:material-code-braces: CreateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#createcallanalyticscategoryresponsetypedef) 
+2. See [:material-code-brackets: InputTypeType](./literals.md#inputtypetype) 
+3. See [:material-code-braces: CreateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#createcallanalyticscategoryresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -467,7 +469,7 @@ parent.delete_vocabulary(**kwargs)
 
 ### delete\_vocabulary\_filter
 
-Deletes a vocabulary filter.
+Deletes a custom vocabulary filter.
 
 Type annotations and code completion for `#!python boto3.client("transcribe").delete_vocabulary_filter` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter)
@@ -1267,12 +1269,14 @@ def update_call_analytics_category(
     *,
     CategoryName: str,
     Rules: Sequence[RuleTypeDef],  # (1)
-) -> UpdateCallAnalyticsCategoryResponseTypeDef:  # (2)
+    InputType: InputTypeType = ...,  # (2)
+) -> UpdateCallAnalyticsCategoryResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
-2. See [:material-code-braces: UpdateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#updatecallanalyticscategoryresponsetypedef) 
+2. See [:material-code-brackets: InputTypeType](./literals.md#inputtypetype) 
+3. See [:material-code-braces: UpdateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#updatecallanalyticscategoryresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

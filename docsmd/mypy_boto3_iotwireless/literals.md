@@ -7,6 +7,20 @@
     Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
     type annotations stubs module [mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
+## ApplicationConfigTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import ApplicationConfigTypeType
+
+def get_value() -> ApplicationConfigTypeType:
+    return "SemtechGeolocation"
+```
+
+```python title="Definition"
+ApplicationConfigTypeType = Literal[
+    "SemtechGeolocation",
+]
+```
 ## BatteryLevelType
 
 ```python title="Usage Example"
@@ -342,6 +356,21 @@ def get_value() -> PositionSolverTypeType:
 ```python title="Definition"
 PositionSolverTypeType = Literal[
     "GNSS",
+]
+```
+## PositioningConfigStatusType
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import PositioningConfigStatusType
+
+def get_value() -> PositioningConfigStatusType:
+    return "Disabled"
+```
+
+```python title="Definition"
+PositioningConfigStatusType = Literal[
+    "Disabled",
+    "Enabled",
 ]
 ```
 ## SigningAlgType
@@ -778,6 +807,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

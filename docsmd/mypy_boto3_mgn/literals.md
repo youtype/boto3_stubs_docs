@@ -7,6 +7,38 @@
     Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
     type annotations stubs module [mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
+## ApplicationHealthStatusType
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import ApplicationHealthStatusType
+
+def get_value() -> ApplicationHealthStatusType:
+    return "ERROR"
+```
+
+```python title="Definition"
+ApplicationHealthStatusType = Literal[
+    "ERROR",
+    "HEALTHY",
+    "LAGGING",
+]
+```
+## ApplicationProgressStatusType
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import ApplicationProgressStatusType
+
+def get_value() -> ApplicationProgressStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+ApplicationProgressStatusType = Literal[
+    "COMPLETED",
+    "IN_PROGRESS",
+    "NOT_STARTED",
+]
+```
 ## BootModeType
 
 ```python title="Usage Example"
@@ -367,6 +399,62 @@ LifeCycleStateType = Literal[
     "TESTING",
 ]
 ```
+## ListApplicationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import ListApplicationsPaginatorName
+
+def get_value() -> ListApplicationsPaginatorName:
+    return "list_applications"
+```
+
+```python title="Definition"
+ListApplicationsPaginatorName = Literal[
+    "list_applications",
+]
+```
+## ListSourceServerActionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import ListSourceServerActionsPaginatorName
+
+def get_value() -> ListSourceServerActionsPaginatorName:
+    return "list_source_server_actions"
+```
+
+```python title="Definition"
+ListSourceServerActionsPaginatorName = Literal[
+    "list_source_server_actions",
+]
+```
+## ListTemplateActionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import ListTemplateActionsPaginatorName
+
+def get_value() -> ListTemplateActionsPaginatorName:
+    return "list_template_actions"
+```
+
+```python title="Definition"
+ListTemplateActionsPaginatorName = Literal[
+    "list_template_actions",
+]
+```
+## ListWavesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import ListWavesPaginatorName
+
+def get_value() -> ListWavesPaginatorName:
+    return "list_waves"
+```
+
+```python title="Definition"
+ListWavesPaginatorName = Literal[
+    "list_waves",
+]
+```
 ## PostLaunchActionExecutionStatusType
 
 ```python title="Usage Example"
@@ -396,6 +484,7 @@ def get_value() -> PostLaunchActionsDeploymentTypeType:
 PostLaunchActionsDeploymentTypeType = Literal[
     "CUTOVER_ONLY",
     "TEST_AND_CUTOVER",
+    "TEST_ONLY",
 ]
 ```
 ## ReplicationConfigurationDataPlaneRoutingType
@@ -522,6 +611,58 @@ def get_value() -> TargetInstanceTypeRightSizingMethodType:
 TargetInstanceTypeRightSizingMethodType = Literal[
     "BASIC",
     "NONE",
+]
+```
+## VolumeTypeType
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import VolumeTypeType
+
+def get_value() -> VolumeTypeType:
+    return "gp2"
+```
+
+```python title="Definition"
+VolumeTypeType = Literal[
+    "gp2",
+    "gp3",
+    "io1",
+    "io2",
+    "sc1",
+    "st1",
+    "standard",
+]
+```
+## WaveHealthStatusType
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import WaveHealthStatusType
+
+def get_value() -> WaveHealthStatusType:
+    return "ERROR"
+```
+
+```python title="Definition"
+WaveHealthStatusType = Literal[
+    "ERROR",
+    "HEALTHY",
+    "LAGGING",
+]
+```
+## WaveProgressStatusType
+
+```python title="Usage Example"
+from mypy_boto3_mgn.literals import WaveProgressStatusType
+
+def get_value() -> WaveProgressStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+WaveProgressStatusType = Literal[
+    "COMPLETED",
+    "IN_PROGRESS",
+    "NOT_STARTED",
 ]
 ```
 ## mgnServiceName
@@ -768,6 +909,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",
@@ -914,6 +1056,10 @@ PaginatorName = Literal[
     "describe_replication_configuration_templates",
     "describe_source_servers",
     "describe_vcenter_clients",
+    "list_applications",
+    "list_source_server_actions",
+    "list_template_actions",
+    "list_waves",
 ]
 ```
 ## RegionName

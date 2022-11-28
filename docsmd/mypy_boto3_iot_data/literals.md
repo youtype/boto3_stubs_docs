@@ -21,6 +21,21 @@ ListRetainedMessagesPaginatorName = Literal[
     "list_retained_messages",
 ]
 ```
+## PayloadFormatIndicatorType
+
+```python title="Usage Example"
+from mypy_boto3_iot_data.literals import PayloadFormatIndicatorType
+
+def get_value() -> PayloadFormatIndicatorType:
+    return "UNSPECIFIED_BYTES"
+```
+
+```python title="Definition"
+PayloadFormatIndicatorType = Literal[
+    "UNSPECIFIED_BYTES",
+    "UTF8_DATA",
+]
+```
 ## IoTDataPlaneServiceName
 
 ```python title="Usage Example"
@@ -265,6 +280,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

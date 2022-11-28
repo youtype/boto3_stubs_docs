@@ -944,7 +944,8 @@ def create_job(
     jobTemplateArn: str = ...,
     jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef = ...,  # (7)
     documentParameters: Mapping[str, str] = ...,
-) -> CreateJobResponseTypeDef:  # (8)
+    schedulingConfig: SchedulingConfigTypeDef = ...,  # (8)
+) -> CreateJobResponseTypeDef:  # (9)
     ...
 ```
 
@@ -955,7 +956,8 @@ def create_job(
 5. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 7. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
-8. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
+8. See [:material-code-braces: SchedulingConfigTypeDef](./type_defs.md#schedulingconfigtypedef) 
+9. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -720,6 +720,22 @@ IndexStatusType = Literal[
     "REBUILDING",
 ]
 ```
+## JobEndBehaviorType
+
+```python title="Usage Example"
+from mypy_boto3_iot.literals import JobEndBehaviorType
+
+def get_value() -> JobEndBehaviorType:
+    return "CANCEL"
+```
+
+```python title="Definition"
+JobEndBehaviorType = Literal[
+    "CANCEL",
+    "FORCE_CANCEL",
+    "STOP_ROLLOUT",
+]
+```
 ## JobExecutionFailureTypeType
 
 ```python title="Usage Example"
@@ -773,6 +789,7 @@ JobStatusType = Literal[
     "COMPLETED",
     "DELETION_IN_PROGRESS",
     "IN_PROGRESS",
+    "SCHEDULED",
 ]
 ```
 ## ListActiveViolationsPaginatorName
@@ -2151,6 +2168,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

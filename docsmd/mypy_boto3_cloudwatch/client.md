@@ -880,6 +880,8 @@ def list_metrics(
     Dimensions: Sequence[DimensionFilterTypeDef] = ...,  # (1)
     NextToken: str = ...,
     RecentlyActive: RecentlyActiveType = ...,  # (2)
+    IncludeLinkedAccounts: bool = ...,
+    OwningAccount: str = ...,
 ) -> ListMetricsOutputTypeDef:  # (3)
     ...
 ```

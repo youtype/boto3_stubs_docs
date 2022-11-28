@@ -376,6 +376,8 @@ def paginate(
     MetricName: str = ...,
     Dimensions: Sequence[DimensionFilterTypeDef] = ...,  # (1)
     RecentlyActive: RecentlyActiveType = ...,  # (2)
+    IncludeLinkedAccounts: bool = ...,
+    OwningAccount: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
 ) -> _PageIterator[ListMetricsOutputTypeDef]:  # (4)
     ...

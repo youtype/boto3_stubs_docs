@@ -1927,6 +1927,25 @@ class SuggestionHighlightTypeDef(TypedDict):
     EndOffset: NotRequired[int],
 ```
 
+## TableCellTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import TableCellTypeDef
+
+def get_value() -> TableCellTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TableCellTypeDef(TypedDict):
+    Value: NotRequired[str],
+    TopAnswer: NotRequired[bool],
+    Highlighted: NotRequired[bool],
+    Header: NotRequired[bool],
+```
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3958,6 +3977,23 @@ class SuggestionTextWithHighlightsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SuggestionHighlightTypeDef](./type_defs.md#suggestionhighlighttypedef) 
+## TableRowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import TableRowTypeDef
+
+def get_value() -> TableRowTypeDef:
+    return {
+        "Cells": ...,
+    }
+```
+
+```python title="Definition"
+class TableRowTypeDef(TypedDict):
+    Cells: NotRequired[List[TableCellTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TableCellTypeDef](./type_defs.md#tablecelltypedef) 
 ## DatabaseConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4740,6 +4776,24 @@ class SuggestionValueTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SuggestionTextWithHighlightsTypeDef](./type_defs.md#suggestiontextwithhighlightstypedef) 
+## TableExcerptTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kendra.type_defs import TableExcerptTypeDef
+
+def get_value() -> TableExcerptTypeDef:
+    return {
+        "Rows": ...,
+    }
+```
+
+```python title="Definition"
+class TableExcerptTypeDef(TypedDict):
+    Rows: NotRequired[List[TableRowTypeDef]],  # (1)
+    TotalNumberOfRows: NotRequired[int],
+```
+
+1. See [:material-code-braces: TableRowTypeDef](./type_defs.md#tablerowtypedef) 
 ## SalesforceConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4938,22 +4992,26 @@ def get_value() -> QueryResultItemTypeDef:
 class QueryResultItemTypeDef(TypedDict):
     Id: NotRequired[str],
     Type: NotRequired[QueryResultTypeType],  # (1)
-    AdditionalAttributes: NotRequired[List[AdditionalResultAttributeTypeDef]],  # (2)
+    Format: NotRequired[QueryResultFormatType],  # (2)
+    AdditionalAttributes: NotRequired[List[AdditionalResultAttributeTypeDef]],  # (3)
     DocumentId: NotRequired[str],
-    DocumentTitle: NotRequired[TextWithHighlightsTypeDef],  # (3)
-    DocumentExcerpt: NotRequired[TextWithHighlightsTypeDef],  # (3)
+    DocumentTitle: NotRequired[TextWithHighlightsTypeDef],  # (4)
+    DocumentExcerpt: NotRequired[TextWithHighlightsTypeDef],  # (4)
     DocumentURI: NotRequired[str],
-    DocumentAttributes: NotRequired[List[DocumentAttributeTypeDef]],  # (5)
-    ScoreAttributes: NotRequired[ScoreAttributesTypeDef],  # (6)
+    DocumentAttributes: NotRequired[List[DocumentAttributeTypeDef]],  # (6)
+    ScoreAttributes: NotRequired[ScoreAttributesTypeDef],  # (7)
     FeedbackToken: NotRequired[str],
+    TableExcerpt: NotRequired[TableExcerptTypeDef],  # (8)
 ```
 
 1. See [:material-code-brackets: QueryResultTypeType](./literals.md#queryresulttypetype) 
-2. See [:material-code-braces: AdditionalResultAttributeTypeDef](./type_defs.md#additionalresultattributetypedef) 
-3. See [:material-code-braces: TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef) 
+2. See [:material-code-brackets: QueryResultFormatType](./literals.md#queryresultformattype) 
+3. See [:material-code-braces: AdditionalResultAttributeTypeDef](./type_defs.md#additionalresultattributetypedef) 
 4. See [:material-code-braces: TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef) 
-5. See [:material-code-braces: DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef) 
-6. See [:material-code-braces: ScoreAttributesTypeDef](./type_defs.md#scoreattributestypedef) 
+5. See [:material-code-braces: TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef) 
+6. See [:material-code-braces: DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef) 
+7. See [:material-code-braces: ScoreAttributesTypeDef](./type_defs.md#scoreattributestypedef) 
+8. See [:material-code-braces: TableExcerptTypeDef](./type_defs.md#tableexcerpttypedef) 
 ## GetQuerySuggestionsResponseTypeDef
 
 ```python title="Usage Example"

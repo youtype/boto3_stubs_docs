@@ -60,6 +60,25 @@ class AccuracyTypeDef(TypedDict):
     VerticalAccuracy: NotRequired[float],
 ```
 
+## ApplicationConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import ApplicationConfigTypeDef
+
+def get_value() -> ApplicationConfigTypeDef:
+    return {
+        "FPort": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationConfigTypeDef(TypedDict):
+    FPort: NotRequired[int],
+    Type: NotRequired[ApplicationConfigTypeType],  # (1)
+    DestinationName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ApplicationConfigTypeType](./literals.md#applicationconfigtypetype) 
 ## SidewalkAccountInfoTypeDef
 
 ```python title="Usage Example"
@@ -258,6 +277,44 @@ def get_value() -> CancelMulticastGroupSessionRequestRequestTypeDef:
 ```python title="Definition"
 class CancelMulticastGroupSessionRequestRequestTypeDef(TypedDict):
     Id: str,
+```
+
+## CdmaLocalIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import CdmaLocalIdTypeDef
+
+def get_value() -> CdmaLocalIdTypeDef:
+    return {
+        "PnOffset": ...,
+        "CdmaChannel": ...,
+    }
+```
+
+```python title="Definition"
+class CdmaLocalIdTypeDef(TypedDict):
+    PnOffset: int,
+    CdmaChannel: int,
+```
+
+## CdmaNmrObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import CdmaNmrObjTypeDef
+
+def get_value() -> CdmaNmrObjTypeDef:
+    return {
+        "PnOffset": ...,
+        "CdmaChannel": ...,
+    }
+```
+
+```python title="Definition"
+class CdmaNmrObjTypeDef(TypedDict):
+    PnOffset: int,
+    CdmaChannel: int,
+    PilotPower: NotRequired[int],
+    BaseStationId: NotRequired[int],
 ```
 
 ## CertificateListTypeDef
@@ -1076,6 +1133,61 @@ class GetPositionConfigurationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+## GnssTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GnssTypeDef
+
+def get_value() -> GnssTypeDef:
+    return {
+        "Payload": ...,
+    }
+```
+
+```python title="Definition"
+class GnssTypeDef(TypedDict):
+    Payload: str,
+    CaptureTime: NotRequired[float],
+    CaptureTimeAccuracy: NotRequired[float],
+    AssistPosition: NotRequired[Sequence[float]],
+    AssistAltitude: NotRequired[float],
+    Use2DSolver: NotRequired[bool],
+```
+
+## IpTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import IpTypeDef
+
+def get_value() -> IpTypeDef:
+    return {
+        "IpAddress": ...,
+    }
+```
+
+```python title="Definition"
+class IpTypeDef(TypedDict):
+    IpAddress: str,
+```
+
+## WiFiAccessPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import WiFiAccessPointTypeDef
+
+def get_value() -> WiFiAccessPointTypeDef:
+    return {
+        "MacAddress": ...,
+        "Rss": ...,
+    }
+```
+
+```python title="Definition"
+class WiFiAccessPointTypeDef(TypedDict):
+    MacAddress: str,
+    Rss: int,
+```
+
 ## GetPositionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1134,6 +1246,25 @@ class GetResourceLogLevelRequestRequestTypeDef(TypedDict):
     ResourceType: str,
 ```
 
+## GetResourcePositionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GetResourcePositionRequestRequestTypeDef
+
+def get_value() -> GetResourcePositionRequestRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePositionRequestRequestTypeDef(TypedDict):
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
 ## GetServiceEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1355,6 +1486,42 @@ def get_value() -> GetWirelessGatewayTaskRequestRequestTypeDef:
 ```python title="Definition"
 class GetWirelessGatewayTaskRequestRequestTypeDef(TypedDict):
     Id: str,
+```
+
+## GlobalIdentityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GlobalIdentityTypeDef
+
+def get_value() -> GlobalIdentityTypeDef:
+    return {
+        "Lac": ...,
+        "GeranCid": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalIdentityTypeDef(TypedDict):
+    Lac: int,
+    GeranCid: int,
+```
+
+## GsmLocalIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GsmLocalIdTypeDef
+
+def get_value() -> GsmLocalIdTypeDef:
+    return {
+        "Bsic": ...,
+        "Bcch": ...,
+    }
+```
+
+```python title="Definition"
+class GsmLocalIdTypeDef(TypedDict):
+    Bsic: int,
+    Bcch: int,
 ```
 
 ## LoRaWANJoinEventNotificationConfigurationsTypeDef
@@ -1883,6 +2050,46 @@ class UpdateAbpV1_1TypeDef(TypedDict):
     FCntStart: NotRequired[int],
 ```
 
+## LteLocalIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import LteLocalIdTypeDef
+
+def get_value() -> LteLocalIdTypeDef:
+    return {
+        "Pci": ...,
+        "Earfcn": ...,
+    }
+```
+
+```python title="Definition"
+class LteLocalIdTypeDef(TypedDict):
+    Pci: int,
+    Earfcn: int,
+```
+
+## LteNmrObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import LteNmrObjTypeDef
+
+def get_value() -> LteNmrObjTypeDef:
+    return {
+        "Pci": ...,
+        "Earfcn": ...,
+        "EutranCid": ...,
+    }
+```
+
+```python title="Definition"
+class LteNmrObjTypeDef(TypedDict):
+    Pci: int,
+    Earfcn: int,
+    EutranCid: int,
+    Rsrp: NotRequired[int],
+    Rsrq: NotRequired[float],
+```
+
 ## SemtechGnssConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2000,6 +2207,45 @@ class SidewalkUpdateAccountTypeDef(TypedDict):
     AppServerPrivateKey: NotRequired[str],
 ```
 
+## TdscdmaLocalIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import TdscdmaLocalIdTypeDef
+
+def get_value() -> TdscdmaLocalIdTypeDef:
+    return {
+        "Uarfcn": ...,
+        "CellParams": ...,
+    }
+```
+
+```python title="Definition"
+class TdscdmaLocalIdTypeDef(TypedDict):
+    Uarfcn: int,
+    CellParams: int,
+```
+
+## TdscdmaNmrObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import TdscdmaNmrObjTypeDef
+
+def get_value() -> TdscdmaNmrObjTypeDef:
+    return {
+        "Uarfcn": ...,
+        "CellParams": ...,
+    }
+```
+
+```python title="Definition"
+class TdscdmaNmrObjTypeDef(TypedDict):
+    Uarfcn: int,
+    CellParams: int,
+    UtranCid: NotRequired[int],
+    Rscp: NotRequired[int],
+    PathLoss: NotRequired[int],
+```
+
 ## TestWirelessDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2076,6 +2322,26 @@ class UpdatePositionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
+## UpdateResourcePositionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import UpdateResourcePositionRequestRequestTypeDef
+
+def get_value() -> UpdateResourcePositionRequestRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResourcePositionRequestRequestTypeDef(TypedDict):
+    ResourceIdentifier: str,
+    ResourceType: PositionResourceTypeType,  # (1)
+    GeoJsonPayload: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+```
+
+1. See [:material-code-brackets: PositionResourceTypeType](./literals.md#positionresourcetypetype) 
 ## UpdateWirelessGatewayRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2094,6 +2360,46 @@ class UpdateWirelessGatewayRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
     JoinEuiFilters: NotRequired[Sequence[Sequence[str]]],
     NetIdFilters: NotRequired[Sequence[str]],
+```
+
+## WcdmaLocalIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import WcdmaLocalIdTypeDef
+
+def get_value() -> WcdmaLocalIdTypeDef:
+    return {
+        "Uarfcndl": ...,
+        "Psc": ...,
+    }
+```
+
+```python title="Definition"
+class WcdmaLocalIdTypeDef(TypedDict):
+    Uarfcndl: int,
+    Psc: int,
+```
+
+## WcdmaNmrObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import WcdmaNmrObjTypeDef
+
+def get_value() -> WcdmaNmrObjTypeDef:
+    return {
+        "Uarfcndl": ...,
+        "Psc": ...,
+        "UtranCid": ...,
+    }
+```
+
+```python title="Definition"
+class WcdmaNmrObjTypeDef(TypedDict):
+    Uarfcndl: int,
+    Psc: int,
+    UtranCid: int,
+    Rscp: NotRequired[int],
+    PathLoss: NotRequired[int],
 ```
 
 ## WirelessDeviceEventLogOptionTypeDef
@@ -2560,6 +2866,25 @@ class GetDestinationResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPositionEstimateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GetPositionEstimateResponseTypeDef
+
+def get_value() -> GetPositionEstimateResponseTypeDef:
+    return {
+        "GeoJsonPayload": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPositionEstimateResponseTypeDef(TypedDict):
+    GeoJsonPayload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPositionResponseTypeDef
 
 ```python title="Usage Example"
@@ -2612,6 +2937,25 @@ class GetResourceLogLevelResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourcePositionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GetResourcePositionResponseTypeDef
+
+def get_value() -> GetResourcePositionResponseTypeDef:
+    return {
+        "GeoJsonPayload": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePositionResponseTypeDef(TypedDict):
+    GeoJsonPayload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceEndpointResponseTypeDef
 
 ```python title="Usage Example"
@@ -2808,6 +3152,34 @@ class LoRaWANGatewayTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BeaconingTypeDef](./type_defs.md#beaconingtypedef) 
+## CdmaObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import CdmaObjTypeDef
+
+def get_value() -> CdmaObjTypeDef:
+    return {
+        "SystemId": ...,
+        "NetworkId": ...,
+        "BaseStationId": ...,
+    }
+```
+
+```python title="Definition"
+class CdmaObjTypeDef(TypedDict):
+    SystemId: int,
+    NetworkId: int,
+    BaseStationId: int,
+    RegistrationZone: NotRequired[int],
+    CdmaLocalId: NotRequired[CdmaLocalIdTypeDef],  # (1)
+    PilotPower: NotRequired[int],
+    BaseLat: NotRequired[float],
+    BaseLng: NotRequired[float],
+    CdmaNmr: NotRequired[Sequence[CdmaNmrObjTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: CdmaLocalIdTypeDef](./type_defs.md#cdmalocalidtypedef) 
+2. See [:material-code-braces: CdmaNmrObjTypeDef](./type_defs.md#cdmanmrobjtypedef) 
 ## SidewalkDeviceTypeDef
 
 ```python title="Usage Example"
@@ -3287,9 +3659,11 @@ class FPortsTypeDef(TypedDict):
     Multicast: NotRequired[int],
     ClockSync: NotRequired[int],
     Positioning: NotRequired[PositioningTypeDef],  # (1)
+    Applications: NotRequired[Sequence[ApplicationConfigTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: PositioningTypeDef](./type_defs.md#positioningtypedef) 
+2. See [:material-code-braces: ApplicationConfigTypeDef](./type_defs.md#applicationconfigtypedef) 
 ## UpdateFPortsTypeDef
 
 ```python title="Usage Example"
@@ -3304,9 +3678,11 @@ def get_value() -> UpdateFPortsTypeDef:
 ```python title="Definition"
 class UpdateFPortsTypeDef(TypedDict):
     Positioning: NotRequired[PositioningTypeDef],  # (1)
+    Applications: NotRequired[Sequence[ApplicationConfigTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: PositioningTypeDef](./type_defs.md#positioningtypedef) 
+2. See [:material-code-braces: ApplicationConfigTypeDef](./type_defs.md#applicationconfigtypedef) 
 ## ListFuotaTasksResponseTypeDef
 
 ```python title="Usage Example"
@@ -3529,6 +3905,27 @@ class GetServiceProfileResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoRaWANGetServiceProfileInfoTypeDef](./type_defs.md#lorawangetserviceprofileinfotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GsmNmrObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GsmNmrObjTypeDef
+
+def get_value() -> GsmNmrObjTypeDef:
+    return {
+        "Bsic": ...,
+        "Bcch": ...,
+    }
+```
+
+```python title="Definition"
+class GsmNmrObjTypeDef(TypedDict):
+    Bsic: int,
+    Bcch: int,
+    RxLevel: NotRequired[int],
+    GlobalIdentity: NotRequired[GlobalIdentityTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GlobalIdentityTypeDef](./type_defs.md#globalidentitytypedef) 
 ## JoinEventConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3767,6 +4164,35 @@ class StartFuotaTaskRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LoRaWANStartFuotaTaskTypeDef](./type_defs.md#lorawanstartfuotatasktypedef) 
+## LteObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import LteObjTypeDef
+
+def get_value() -> LteObjTypeDef:
+    return {
+        "Mcc": ...,
+        "Mnc": ...,
+        "EutranCid": ...,
+    }
+```
+
+```python title="Definition"
+class LteObjTypeDef(TypedDict):
+    Mcc: int,
+    Mnc: int,
+    EutranCid: int,
+    Tac: NotRequired[int],
+    LteLocalId: NotRequired[LteLocalIdTypeDef],  # (1)
+    LteTimingAdvance: NotRequired[int],
+    Rsrp: NotRequired[int],
+    Rsrq: NotRequired[float],
+    NrCapable: NotRequired[bool],
+    LteNmr: NotRequired[Sequence[LteNmrObjTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: LteLocalIdTypeDef](./type_defs.md#ltelocalidtypedef) 
+2. See [:material-code-braces: LteNmrObjTypeDef](./type_defs.md#ltenmrobjtypedef) 
 ## PositionSolverConfigurationsTypeDef
 
 ```python title="Usage Example"
@@ -3823,6 +4249,61 @@ class UpdatePartnerAccountRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: SidewalkUpdateAccountTypeDef](./type_defs.md#sidewalkupdateaccounttypedef) 
 2. See [:material-code-brackets: PartnerTypeType](./literals.md#partnertypetype) 
+## TdscdmaObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import TdscdmaObjTypeDef
+
+def get_value() -> TdscdmaObjTypeDef:
+    return {
+        "Mcc": ...,
+        "Mnc": ...,
+        "UtranCid": ...,
+    }
+```
+
+```python title="Definition"
+class TdscdmaObjTypeDef(TypedDict):
+    Mcc: int,
+    Mnc: int,
+    UtranCid: int,
+    Lac: NotRequired[int],
+    TdscdmaLocalId: NotRequired[TdscdmaLocalIdTypeDef],  # (1)
+    TdscdmaTimingAdvance: NotRequired[int],
+    Rscp: NotRequired[int],
+    PathLoss: NotRequired[int],
+    TdscdmaNmr: NotRequired[Sequence[TdscdmaNmrObjTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: TdscdmaLocalIdTypeDef](./type_defs.md#tdscdmalocalidtypedef) 
+2. See [:material-code-braces: TdscdmaNmrObjTypeDef](./type_defs.md#tdscdmanmrobjtypedef) 
+## WcdmaObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import WcdmaObjTypeDef
+
+def get_value() -> WcdmaObjTypeDef:
+    return {
+        "Mcc": ...,
+        "Mnc": ...,
+        "UtranCid": ...,
+    }
+```
+
+```python title="Definition"
+class WcdmaObjTypeDef(TypedDict):
+    Mcc: int,
+    Mnc: int,
+    UtranCid: int,
+    Lac: NotRequired[int],
+    WcdmaLocalId: NotRequired[WcdmaLocalIdTypeDef],  # (1)
+    Rscp: NotRequired[int],
+    PathLoss: NotRequired[int],
+    WcdmaNmr: NotRequired[Sequence[WcdmaNmrObjTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: WcdmaLocalIdTypeDef](./type_defs.md#wcdmalocalidtypedef) 
+2. See [:material-code-braces: WcdmaNmrObjTypeDef](./type_defs.md#wcdmanmrobjtypedef) 
 ## WirelessDeviceLogOptionTypeDef
 
 ```python title="Usage Example"
@@ -4042,6 +4523,34 @@ class LoRaWANSendDataToDeviceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ParticipatingGatewaysTypeDef](./type_defs.md#participatinggatewaystypedef) 
+## GsmObjTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GsmObjTypeDef
+
+def get_value() -> GsmObjTypeDef:
+    return {
+        "Mcc": ...,
+        "Mnc": ...,
+        "Lac": ...,
+        "GeranCid": ...,
+    }
+```
+
+```python title="Definition"
+class GsmObjTypeDef(TypedDict):
+    Mcc: int,
+    Mnc: int,
+    Lac: int,
+    GeranCid: int,
+    GsmLocalId: NotRequired[GsmLocalIdTypeDef],  # (1)
+    GsmTimingAdvance: NotRequired[int],
+    RxLevel: NotRequired[int],
+    GsmNmr: NotRequired[Sequence[GsmNmrObjTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: GsmLocalIdTypeDef](./type_defs.md#gsmlocalidtypedef) 
+2. See [:material-code-braces: GsmNmrObjTypeDef](./type_defs.md#gsmnmrobjtypedef) 
 ## EventNotificationItemConfigurationsTypeDef
 
 ```python title="Usage Example"
@@ -4470,11 +4979,13 @@ class CreateWirelessDeviceRequestRequestTypeDef(TypedDict):
     ClientRequestToken: NotRequired[str],
     LoRaWAN: NotRequired[LoRaWANDeviceTypeDef],  # (2)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    Positioning: NotRequired[PositioningConfigStatusType],  # (4)
 ```
 
 1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
 2. See [:material-code-braces: LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-brackets: PositioningConfigStatusType](./literals.md#positioningconfigstatustype) 
 ## GetWirelessDeviceResponseTypeDef
 
 ```python title="Usage Example"
@@ -4492,6 +5003,7 @@ def get_value() -> GetWirelessDeviceResponseTypeDef:
         "ThingArn": ...,
         "LoRaWAN": ...,
         "Sidewalk": ...,
+        "Positioning": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4508,13 +5020,15 @@ class GetWirelessDeviceResponseTypeDef(TypedDict):
     ThingArn: str,
     LoRaWAN: LoRaWANDeviceTypeDef,  # (2)
     Sidewalk: SidewalkDeviceTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    Positioning: PositioningConfigStatusType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
 2. See [:material-code-braces: LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef) 
 3. See [:material-code-braces: SidewalkDeviceTypeDef](./type_defs.md#sidewalkdevicetypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-brackets: PositioningConfigStatusType](./literals.md#positioningconfigstatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWirelessDeviceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4533,9 +5047,11 @@ class UpdateWirelessDeviceRequestRequestTypeDef(TypedDict):
     Name: NotRequired[str],
     Description: NotRequired[str],
     LoRaWAN: NotRequired[LoRaWANUpdateDeviceTypeDef],  # (1)
+    Positioning: NotRequired[PositioningConfigStatusType],  # (2)
 ```
 
 1. See [:material-code-braces: LoRaWANUpdateDeviceTypeDef](./type_defs.md#lorawanupdatedevicetypedef) 
+2. See [:material-code-brackets: PositioningConfigStatusType](./literals.md#positioningconfigstatustype) 
 ## DownlinkQueueMessageTypeDef
 
 ```python title="Usage Example"
@@ -4575,6 +5091,31 @@ class WirelessMetadataTypeDef(TypedDict):
 
 1. See [:material-code-braces: LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef) 
 2. See [:material-code-braces: SidewalkSendDataToDeviceTypeDef](./type_defs.md#sidewalksenddatatodevicetypedef) 
+## CellTowersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import CellTowersTypeDef
+
+def get_value() -> CellTowersTypeDef:
+    return {
+        "Gsm": ...,
+    }
+```
+
+```python title="Definition"
+class CellTowersTypeDef(TypedDict):
+    Gsm: NotRequired[Sequence[GsmObjTypeDef]],  # (1)
+    Wcdma: NotRequired[Sequence[WcdmaObjTypeDef]],  # (2)
+    Tdscdma: NotRequired[Sequence[TdscdmaObjTypeDef]],  # (3)
+    Lte: NotRequired[Sequence[LteObjTypeDef]],  # (4)
+    Cdma: NotRequired[Sequence[CdmaObjTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: GsmObjTypeDef](./type_defs.md#gsmobjtypedef) 
+2. See [:material-code-braces: WcdmaObjTypeDef](./type_defs.md#wcdmaobjtypedef) 
+3. See [:material-code-braces: TdscdmaObjTypeDef](./type_defs.md#tdscdmaobjtypedef) 
+4. See [:material-code-braces: LteObjTypeDef](./type_defs.md#lteobjtypedef) 
+5. See [:material-code-braces: CdmaObjTypeDef](./type_defs.md#cdmaobjtypedef) 
 ## EventConfigurationItemTypeDef
 
 ```python title="Usage Example"
@@ -4733,6 +5274,30 @@ class SendDataToWirelessDeviceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef) 
+## GetPositionEstimateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotwireless.type_defs import GetPositionEstimateRequestRequestTypeDef
+
+def get_value() -> GetPositionEstimateRequestRequestTypeDef:
+    return {
+        "WiFiAccessPoints": ...,
+    }
+```
+
+```python title="Definition"
+class GetPositionEstimateRequestRequestTypeDef(TypedDict):
+    WiFiAccessPoints: NotRequired[Sequence[WiFiAccessPointTypeDef]],  # (1)
+    CellTowers: NotRequired[CellTowersTypeDef],  # (2)
+    Ip: NotRequired[IpTypeDef],  # (3)
+    Gnss: NotRequired[GnssTypeDef],  # (4)
+    Timestamp: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-braces: WiFiAccessPointTypeDef](./type_defs.md#wifiaccesspointtypedef) 
+2. See [:material-code-braces: CellTowersTypeDef](./type_defs.md#celltowerstypedef) 
+3. See [:material-code-braces: IpTypeDef](./type_defs.md#iptypedef) 
+4. See [:material-code-braces: GnssTypeDef](./type_defs.md#gnsstypedef) 
 ## ListEventConfigurationsResponseTypeDef
 
 ```python title="Usage Example"

@@ -273,11 +273,18 @@ def publish(
     qos: int = ...,
     retain: bool = ...,
     payload: Union[str, bytes, IO[Any], StreamingBody] = ...,
-) -> EmptyResponseMetadataTypeDef:  # (1)
+    userProperties: str = ...,
+    payloadFormatIndicator: PayloadFormatIndicatorType = ...,  # (1)
+    contentType: str = ...,
+    responseTopic: str = ...,
+    correlationData: str = ...,
+    messageExpiry: int = ...,
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+1. See [:material-code-brackets: PayloadFormatIndicatorType](./literals.md#payloadformatindicatortype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

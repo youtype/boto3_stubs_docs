@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("rds")  # (1)
 
-    paginator = client.get_paginator("describe_certificates")  # (2)
+    paginator = client.get_paginator("describe_blue_green_deployments")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [RDSClient](./client.md)
-    2. paginator: [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
-    3. item: [:material-code-braces: CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef) 
+    2. paginator: [DescribeBlueGreenDeploymentsPaginator](./paginators.md#describebluegreendeploymentspaginator)
+    3. item: [:material-code-braces: DescribeBlueGreenDeploymentsResponseTypeDef](./type_defs.md#describebluegreendeploymentsresponsetypedef) 
 
 
 
@@ -106,16 +106,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_rds.client import RDSClient
-    from mypy_boto3_rds.paginator import DescribeCertificatesPaginator
-    from mypy_boto3_rds.type_defs import CertificateMessageTypeDef
+    from mypy_boto3_rds.paginator import DescribeBlueGreenDeploymentsPaginator
+    from mypy_boto3_rds.type_defs import DescribeBlueGreenDeploymentsResponseTypeDef
 
 
     session = Session()
     client: RDSClient = session.client("rds")
 
-    paginator: DescribeCertificatesPaginator = client.get_paginator("describe_certificates")
+    paginator: DescribeBlueGreenDeploymentsPaginator = client.get_paginator("describe_blue_green_deployments")
     for item in paginator.paginate(...):
-        item: CertificateMessageTypeDef
+        item: DescribeBlueGreenDeploymentsResponseTypeDef
         print(item)
     ```
 

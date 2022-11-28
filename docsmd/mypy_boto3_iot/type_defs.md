@@ -307,25 +307,6 @@ class OpenSearchActionTypeDef(TypedDict):
     id: str,
 ```
 
-## RepublishActionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import RepublishActionTypeDef
-
-def get_value() -> RepublishActionTypeDef:
-    return {
-        "roleArn": ...,
-        "topic": ...,
-    }
-```
-
-```python title="Definition"
-class RepublishActionTypeDef(TypedDict):
-    roleArn: str,
-    topic: str,
-    qos: NotRequired[int],
-```
-
 ## S3ActionTypeDef
 
 ```python title="Usage Example"
@@ -1467,6 +1448,25 @@ class PresignedUrlConfigTypeDef(TypedDict):
     expiresInSec: NotRequired[int],
 ```
 
+## SchedulingConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SchedulingConfigTypeDef
+
+def get_value() -> SchedulingConfigTypeDef:
+    return {
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class SchedulingConfigTypeDef(TypedDict):
+    startTime: NotRequired[str],
+    endTime: NotRequired[str],
+    endBehavior: NotRequired[JobEndBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: JobEndBehaviorType](./literals.md#jobendbehaviortype) 
 ## TimeoutConfigTypeDef
 
 ```python title="Usage Example"
@@ -5072,6 +5072,24 @@ class MqttContextTypeDef(TypedDict):
     username: NotRequired[str],
     password: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
     clientId: NotRequired[str],
+```
+
+## UserPropertyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import UserPropertyTypeDef
+
+def get_value() -> UserPropertyTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
+```
+
+```python title="Definition"
+class UserPropertyTypeDef(TypedDict):
+    key: str,
+    value: str,
 ```
 
 ## PolicyVersionIdentifierTypeDef
@@ -10981,6 +10999,28 @@ class MitigationActionParamsTypeDef(TypedDict):
 4. See [:material-code-braces: ReplaceDefaultPolicyVersionParamsTypeDef](./type_defs.md#replacedefaultpolicyversionparamstypedef) 
 5. See [:material-code-braces: EnableIoTLoggingParamsTypeDef](./type_defs.md#enableiotloggingparamstypedef) 
 6. See [:material-code-braces: PublishFindingToSnsParamsTypeDef](./type_defs.md#publishfindingtosnsparamstypedef) 
+## MqttHeadersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MqttHeadersTypeDef
+
+def get_value() -> MqttHeadersTypeDef:
+    return {
+        "payloadFormatIndicator": ...,
+    }
+```
+
+```python title="Definition"
+class MqttHeadersTypeDef(TypedDict):
+    payloadFormatIndicator: NotRequired[str],
+    contentType: NotRequired[str],
+    responseTopic: NotRequired[str],
+    correlationData: NotRequired[str],
+    messageExpiry: NotRequired[str],
+    userProperties: NotRequired[Sequence[UserPropertyTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: UserPropertyTypeDef](./type_defs.md#userpropertytypedef) 
 ## ResourceIdentifierTypeDef
 
 ```python title="Usage Example"
@@ -11864,6 +11904,27 @@ class UpdateMitigationActionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
+## RepublishActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import RepublishActionTypeDef
+
+def get_value() -> RepublishActionTypeDef:
+    return {
+        "roleArn": ...,
+        "topic": ...,
+    }
+```
+
+```python title="Definition"
+class RepublishActionTypeDef(TypedDict):
+    roleArn: str,
+    topic: str,
+    qos: NotRequired[int],
+    headers: NotRequired[MqttHeadersTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MqttHeadersTypeDef](./type_defs.md#mqttheaderstypedef) 
 ## AuditSuppressionTypeDef
 
 ```python title="Usage Example"
@@ -12534,6 +12595,7 @@ class CreateJobRequestRequestTypeDef(TypedDict):
     jobTemplateArn: NotRequired[str],
     jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (7)
     documentParameters: NotRequired[Mapping[str, str]],
+    schedulingConfig: NotRequired[SchedulingConfigTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
@@ -12543,6 +12605,7 @@ class CreateJobRequestRequestTypeDef(TypedDict):
 5. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 7. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+8. See [:material-code-braces: SchedulingConfigTypeDef](./type_defs.md#schedulingconfigtypedef) 
 ## CreateJobTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -12655,6 +12718,7 @@ class JobTypeDef(TypedDict):
     jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (8)
     documentParameters: NotRequired[Dict[str, str]],
     isConcurrent: NotRequired[bool],
+    schedulingConfig: NotRequired[SchedulingConfigTypeDef],  # (9)
 ```
 
 1. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
@@ -12665,6 +12729,7 @@ class JobTypeDef(TypedDict):
 6. See [:material-code-braces: JobProcessDetailsTypeDef](./type_defs.md#jobprocessdetailstypedef) 
 7. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 8. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+9. See [:material-code-braces: SchedulingConfigTypeDef](./type_defs.md#schedulingconfigtypedef) 
 ## UpdateJobRequestRequestTypeDef
 
 ```python title="Usage Example"

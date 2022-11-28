@@ -138,6 +138,55 @@ class BoundingBoxTypeDef(TypedDict):
     Top: NotRequired[float],
 ```
 
+## DetectedSignatureTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import DetectedSignatureTypeDef
+
+def get_value() -> DetectedSignatureTypeDef:
+    return {
+        "Page": ...,
+    }
+```
+
+```python title="Definition"
+class DetectedSignatureTypeDef(TypedDict):
+    Page: NotRequired[int],
+```
+
+## SplitDocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import SplitDocumentTypeDef
+
+def get_value() -> SplitDocumentTypeDef:
+    return {
+        "Index": ...,
+    }
+```
+
+```python title="Definition"
+class SplitDocumentTypeDef(TypedDict):
+    Index: NotRequired[int],
+    Pages: NotRequired[List[int]],
+```
+
+## UndetectedSignatureTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import UndetectedSignatureTypeDef
+
+def get_value() -> UndetectedSignatureTypeDef:
+    return {
+        "Page": ...,
+    }
+```
+
+```python title="Definition"
+class UndetectedSignatureTypeDef(TypedDict):
+    Page: NotRequired[int],
+```
+
 ## S3ObjectTypeDef
 
 ```python title="Usage Example"
@@ -295,6 +344,40 @@ class GetExpenseAnalysisRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## GetLendingAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import GetLendingAnalysisRequestRequestTypeDef
+
+def get_value() -> GetLendingAnalysisRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
+```
+
+```python title="Definition"
+class GetLendingAnalysisRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## GetLendingAnalysisSummaryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import GetLendingAnalysisSummaryRequestRequestTypeDef
+
+def get_value() -> GetLendingAnalysisSummaryRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
+```
+
+```python title="Definition"
+class GetLendingAnalysisSummaryRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
+
 ## HumanLoopDataAttributesTypeDef
 
 ```python title="Usage Example"
@@ -345,6 +428,23 @@ def get_value() -> OutputConfigTypeDef:
 class OutputConfigTypeDef(TypedDict):
     S3Bucket: str,
     S3Prefix: NotRequired[str],
+```
+
+## PredictionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import PredictionTypeDef
+
+def get_value() -> PredictionTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class PredictionTypeDef(TypedDict):
+    Value: NotRequired[str],
+    Confidence: NotRequired[float],
 ```
 
 ## StartDocumentAnalysisResponseTypeDef
@@ -404,6 +504,25 @@ class StartExpenseAnalysisResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartLendingAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import StartLendingAnalysisResponseTypeDef
+
+def get_value() -> StartLendingAnalysisResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartLendingAnalysisResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AnalyzeIDDetectionsTypeDef
 
 ```python title="Usage Example"
@@ -440,6 +559,28 @@ class QueriesConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: QueryTypeDef](./type_defs.md#querytypedef) 
+## DocumentGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import DocumentGroupTypeDef
+
+def get_value() -> DocumentGroupTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentGroupTypeDef(TypedDict):
+    Type: NotRequired[str],
+    SplitDocuments: NotRequired[List[SplitDocumentTypeDef]],  # (1)
+    DetectedSignatures: NotRequired[List[DetectedSignatureTypeDef]],  # (2)
+    UndetectedSignatures: NotRequired[List[UndetectedSignatureTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: SplitDocumentTypeDef](./type_defs.md#splitdocumenttypedef) 
+2. See [:material-code-braces: DetectedSignatureTypeDef](./type_defs.md#detectedsignaturetypedef) 
+3. See [:material-code-braces: UndetectedSignatureTypeDef](./type_defs.md#undetectedsignaturetypedef) 
 ## DocumentLocationTypeDef
 
 ```python title="Usage Example"
@@ -514,6 +655,26 @@ class HumanLoopConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef) 
+## PageClassificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import PageClassificationTypeDef
+
+def get_value() -> PageClassificationTypeDef:
+    return {
+        "PageType": ...,
+        "PageNumber": ...,
+    }
+```
+
+```python title="Definition"
+class PageClassificationTypeDef(TypedDict):
+    PageType: List[PredictionTypeDef],  # (1)
+    PageNumber: List[PredictionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PredictionTypeDef](./type_defs.md#predictiontypedef) 
+2. See [:material-code-braces: PredictionTypeDef](./type_defs.md#predictiontypedef) 
 ## IdentityDocumentFieldTypeDef
 
 ```python title="Usage Example"
@@ -533,6 +694,24 @@ class IdentityDocumentFieldTypeDef(TypedDict):
 
 1. See [:material-code-braces: AnalyzeIDDetectionsTypeDef](./type_defs.md#analyzeiddetectionstypedef) 
 2. See [:material-code-braces: AnalyzeIDDetectionsTypeDef](./type_defs.md#analyzeiddetectionstypedef) 
+## LendingSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import LendingSummaryTypeDef
+
+def get_value() -> LendingSummaryTypeDef:
+    return {
+        "DocumentGroups": ...,
+    }
+```
+
+```python title="Definition"
+class LendingSummaryTypeDef(TypedDict):
+    DocumentGroups: NotRequired[List[DocumentGroupTypeDef]],  # (1)
+    UndetectedDocumentTypes: NotRequired[List[str]],
+```
+
+1. See [:material-code-braces: DocumentGroupTypeDef](./type_defs.md#documentgrouptypedef) 
 ## StartDocumentAnalysisRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -599,6 +778,30 @@ def get_value() -> StartExpenseAnalysisRequestRequestTypeDef:
 
 ```python title="Definition"
 class StartExpenseAnalysisRequestRequestTypeDef(TypedDict):
+    DocumentLocation: DocumentLocationTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+    JobTag: NotRequired[str],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    OutputConfig: NotRequired[OutputConfigTypeDef],  # (3)
+    KMSKeyId: NotRequired[str],
+```
+
+1. See [:material-code-braces: DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+## StartLendingAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import StartLendingAnalysisRequestRequestTypeDef
+
+def get_value() -> StartLendingAnalysisRequestRequestTypeDef:
+    return {
+        "DocumentLocation": ...,
+    }
+```
+
+```python title="Definition"
+class StartLendingAnalysisRequestRequestTypeDef(TypedDict):
     DocumentLocation: DocumentLocationTypeDef,  # (1)
     ClientRequestToken: NotRequired[str],
     JobTag: NotRequired[str],
@@ -717,6 +920,45 @@ class ExpenseDetectionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GeometryTypeDef](./type_defs.md#geometrytypedef) 
+## LendingDetectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import LendingDetectionTypeDef
+
+def get_value() -> LendingDetectionTypeDef:
+    return {
+        "Text": ...,
+    }
+```
+
+```python title="Definition"
+class LendingDetectionTypeDef(TypedDict):
+    Text: NotRequired[str],
+    SelectionStatus: NotRequired[SelectionStatusType],  # (1)
+    Geometry: NotRequired[GeometryTypeDef],  # (2)
+    Confidence: NotRequired[float],
+```
+
+1. See [:material-code-brackets: SelectionStatusType](./literals.md#selectionstatustype) 
+2. See [:material-code-braces: GeometryTypeDef](./type_defs.md#geometrytypedef) 
+## SignatureDetectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import SignatureDetectionTypeDef
+
+def get_value() -> SignatureDetectionTypeDef:
+    return {
+        "Confidence": ...,
+    }
+```
+
+```python title="Definition"
+class SignatureDetectionTypeDef(TypedDict):
+    Confidence: NotRequired[float],
+    Geometry: NotRequired[GeometryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GeometryTypeDef](./type_defs.md#geometrytypedef) 
 ## AnalyzeDocumentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -741,6 +983,39 @@ class AnalyzeDocumentRequestRequestTypeDef(TypedDict):
 2. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
 3. See [:material-code-braces: HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef) 
 4. See [:material-code-braces: QueriesConfigTypeDef](./type_defs.md#queriesconfigtypedef) 
+## GetLendingAnalysisSummaryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import GetLendingAnalysisSummaryResponseTypeDef
+
+def get_value() -> GetLendingAnalysisSummaryResponseTypeDef:
+    return {
+        "DocumentMetadata": ...,
+        "JobStatus": ...,
+        "Summary": ...,
+        "Warnings": ...,
+        "StatusMessage": ...,
+        "AnalyzeLendingModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLendingAnalysisSummaryResponseTypeDef(TypedDict):
+    DocumentMetadata: DocumentMetadataTypeDef,  # (1)
+    JobStatus: JobStatusType,  # (2)
+    Summary: LendingSummaryTypeDef,  # (3)
+    Warnings: List[WarningTypeDef],  # (4)
+    StatusMessage: str,
+    AnalyzeLendingModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-braces: LendingSummaryTypeDef](./type_defs.md#lendingsummarytypedef) 
+4. See [:material-code-braces: WarningTypeDef](./type_defs.md#warningtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AnalyzeDocumentResponseTypeDef
 
 ```python title="Usage Example"
@@ -910,6 +1185,26 @@ class ExpenseFieldTypeDef(TypedDict):
 3. See [:material-code-braces: ExpenseDetectionTypeDef](./type_defs.md#expensedetectiontypedef) 
 4. See [:material-code-braces: ExpenseCurrencyTypeDef](./type_defs.md#expensecurrencytypedef) 
 5. See [:material-code-braces: ExpenseGroupPropertyTypeDef](./type_defs.md#expensegrouppropertytypedef) 
+## LendingFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import LendingFieldTypeDef
+
+def get_value() -> LendingFieldTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class LendingFieldTypeDef(TypedDict):
+    Type: NotRequired[str],
+    KeyDetection: NotRequired[LendingDetectionTypeDef],  # (1)
+    ValueDetections: NotRequired[List[LendingDetectionTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: LendingDetectionTypeDef](./type_defs.md#lendingdetectiontypedef) 
+2. See [:material-code-braces: LendingDetectionTypeDef](./type_defs.md#lendingdetectiontypedef) 
 ## AnalyzeIDResponseTypeDef
 
 ```python title="Usage Example"
@@ -952,6 +1247,25 @@ class LineItemFieldsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ExpenseFieldTypeDef](./type_defs.md#expensefieldtypedef) 
+## LendingDocumentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import LendingDocumentTypeDef
+
+def get_value() -> LendingDocumentTypeDef:
+    return {
+        "LendingFields": ...,
+    }
+```
+
+```python title="Definition"
+class LendingDocumentTypeDef(TypedDict):
+    LendingFields: NotRequired[List[LendingFieldTypeDef]],  # (1)
+    SignatureDetections: NotRequired[List[SignatureDetectionTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: LendingFieldTypeDef](./type_defs.md#lendingfieldtypedef) 
+2. See [:material-code-braces: SignatureDetectionTypeDef](./type_defs.md#signaturedetectiontypedef) 
 ## LineItemGroupTypeDef
 
 ```python title="Usage Example"
@@ -1015,6 +1329,27 @@ class AnalyzeExpenseResponseTypeDef(TypedDict):
 1. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
 2. See [:material-code-braces: ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExtractionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import ExtractionTypeDef
+
+def get_value() -> ExtractionTypeDef:
+    return {
+        "LendingDocument": ...,
+    }
+```
+
+```python title="Definition"
+class ExtractionTypeDef(TypedDict):
+    LendingDocument: NotRequired[LendingDocumentTypeDef],  # (1)
+    ExpenseDocument: NotRequired[ExpenseDocumentTypeDef],  # (2)
+    IdentityDocument: NotRequired[IdentityDocumentTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: LendingDocumentTypeDef](./type_defs.md#lendingdocumenttypedef) 
+2. See [:material-code-braces: ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef) 
+3. See [:material-code-braces: IdentityDocumentTypeDef](./type_defs.md#identitydocumenttypedef) 
 ## GetExpenseAnalysisResponseTypeDef
 
 ```python title="Usage Example"
@@ -1048,5 +1383,60 @@ class GetExpenseAnalysisResponseTypeDef(TypedDict):
 1. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
 2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 3. See [:material-code-braces: ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef) 
+4. See [:material-code-braces: WarningTypeDef](./type_defs.md#warningtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LendingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import LendingResultTypeDef
+
+def get_value() -> LendingResultTypeDef:
+    return {
+        "Page": ...,
+    }
+```
+
+```python title="Definition"
+class LendingResultTypeDef(TypedDict):
+    Page: NotRequired[int],
+    PageClassification: NotRequired[PageClassificationTypeDef],  # (1)
+    Extractions: NotRequired[List[ExtractionTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: PageClassificationTypeDef](./type_defs.md#pageclassificationtypedef) 
+2. See [:material-code-braces: ExtractionTypeDef](./type_defs.md#extractiontypedef) 
+## GetLendingAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_textract.type_defs import GetLendingAnalysisResponseTypeDef
+
+def get_value() -> GetLendingAnalysisResponseTypeDef:
+    return {
+        "DocumentMetadata": ...,
+        "JobStatus": ...,
+        "NextToken": ...,
+        "Results": ...,
+        "Warnings": ...,
+        "StatusMessage": ...,
+        "AnalyzeLendingModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetLendingAnalysisResponseTypeDef(TypedDict):
+    DocumentMetadata: DocumentMetadataTypeDef,  # (1)
+    JobStatus: JobStatusType,  # (2)
+    NextToken: str,
+    Results: List[LendingResultTypeDef],  # (3)
+    Warnings: List[WarningTypeDef],  # (4)
+    StatusMessage: str,
+    AnalyzeLendingModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-braces: LendingResultTypeDef](./type_defs.md#lendingresulttypedef) 
 4. See [:material-code-braces: WarningTypeDef](./type_defs.md#warningtypedef) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

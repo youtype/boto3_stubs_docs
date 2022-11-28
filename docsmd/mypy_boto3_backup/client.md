@@ -74,6 +74,37 @@ def can_paginate(
 ```
 
 
+### cancel\_legal\_hold
+
+This action removes the specified legal hold on a recovery point.
+
+Type annotations and code completion for `#!python boto3.client("backup").cancel_legal_hold` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.cancel_legal_hold)
+
+```python title="Method definition"
+def cancel_legal_hold(
+    self,
+    *,
+    LegalHoldId: str,
+    CancelDescription: str,
+    RetainRecordInDays: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: CancelLegalHoldInputRequestTypeDef = {  # (1)
+    "LegalHoldId": ...,
+    "CancelDescription": ...,
+}
+
+parent.cancel_legal_hold(**kwargs)
+```
+
+1. See [:material-code-braces: CancelLegalHoldInputRequestTypeDef](./type_defs.md#cancellegalholdinputrequesttypedef) 
+
 ### close
 
 Closes underlying endpoint connections.
@@ -220,6 +251,41 @@ parent.create_framework(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateFrameworkInputRequestTypeDef](./type_defs.md#createframeworkinputrequesttypedef) 
+
+### create\_legal\_hold
+
+This action creates a legal hold on a recovery point (backup).
+
+Type annotations and code completion for `#!python boto3.client("backup").create_legal_hold` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_legal_hold)
+
+```python title="Method definition"
+def create_legal_hold(
+    self,
+    *,
+    Title: str,
+    Description: str,
+    IdempotencyToken: str = ...,
+    RecoveryPointSelection: RecoveryPointSelectionTypeDef = ...,  # (1)
+    Tags: Mapping[str, str] = ...,
+) -> CreateLegalHoldOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RecoveryPointSelectionTypeDef](./type_defs.md#recoverypointselectiontypedef) 
+2. See [:material-code-braces: CreateLegalHoldOutputTypeDef](./type_defs.md#createlegalholdoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLegalHoldInputRequestTypeDef = {  # (1)
+    "Title": ...,
+    "Description": ...,
+}
+
+parent.create_legal_hold(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLegalHoldInputRequestTypeDef](./type_defs.md#createlegalholdinputrequesttypedef) 
 
 ### create\_report\_plan
 
@@ -858,6 +924,38 @@ parent.disassociate_recovery_point(**kwargs)
 
 1. See [:material-code-braces: DisassociateRecoveryPointInputRequestTypeDef](./type_defs.md#disassociaterecoverypointinputrequesttypedef) 
 
+### disassociate\_recovery\_point\_from\_parent
+
+This action to a specific child (nested) recovery point removes the relationship
+between the specified recovery point and its parent (composite) recovery point.
+
+Type annotations and code completion for `#!python boto3.client("backup").disassociate_recovery_point_from_parent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point_from_parent)
+
+```python title="Method definition"
+def disassociate_recovery_point_from_parent(
+    self,
+    *,
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateRecoveryPointFromParentInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "RecoveryPointArn": ...,
+}
+
+parent.disassociate_recovery_point_from_parent(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateRecoveryPointFromParentInputRequestTypeDef](./type_defs.md#disassociaterecoverypointfromparentinputrequesttypedef) 
+
 ### export\_backup\_plan\_template
 
 Returns the backup plan that is specified by the plan ID as a backup template.
@@ -1084,6 +1182,35 @@ parent.get_backup_vault_notifications(**kwargs)
 
 1. See [:material-code-braces: GetBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#getbackupvaultnotificationsinputrequesttypedef) 
 
+### get\_legal\_hold
+
+This action returns details for a specified legal hold.
+
+Type annotations and code completion for `#!python boto3.client("backup").get_legal_hold` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_legal_hold)
+
+```python title="Method definition"
+def get_legal_hold(
+    self,
+    *,
+    LegalHoldId: str,
+) -> GetLegalHoldOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetLegalHoldOutputTypeDef](./type_defs.md#getlegalholdoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLegalHoldInputRequestTypeDef = {  # (1)
+    "LegalHoldId": ...,
+}
+
+parent.get_legal_hold(**kwargs)
+```
+
+1. See [:material-code-braces: GetLegalHoldInputRequestTypeDef](./type_defs.md#getlegalholdinputrequesttypedef) 
+
 ### get\_recovery\_point\_restore\_metadata
 
 Returns a set of metadata key-value pairs that were used to create the backup.
@@ -1154,6 +1281,7 @@ def list_backup_jobs(
     ByAccountId: str = ...,
     ByCompleteAfter: Union[datetime, str] = ...,
     ByCompleteBefore: Union[datetime, str] = ...,
+    ByParentJobId: str = ...,
 ) -> ListBackupJobsOutputTypeDef:  # (2)
     ...
 ```
@@ -1352,6 +1480,7 @@ def list_copy_jobs(
     ByAccountId: str = ...,
     ByCompleteBefore: Union[datetime, str] = ...,
     ByCompleteAfter: Union[datetime, str] = ...,
+    ByParentJobId: str = ...,
 ) -> ListCopyJobsOutputTypeDef:  # (2)
     ...
 ```
@@ -1400,6 +1529,36 @@ parent.list_frameworks(**kwargs)
 ```
 
 1. See [:material-code-braces: ListFrameworksInputRequestTypeDef](./type_defs.md#listframeworksinputrequesttypedef) 
+
+### list\_legal\_holds
+
+This action returns metadata about active and previous legal holds.
+
+Type annotations and code completion for `#!python boto3.client("backup").list_legal_holds` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_legal_holds)
+
+```python title="Method definition"
+def list_legal_holds(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLegalHoldsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListLegalHoldsOutputTypeDef](./type_defs.md#listlegalholdsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLegalHoldsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_legal_holds(**kwargs)
+```
+
+1. See [:material-code-braces: ListLegalHoldsInputRequestTypeDef](./type_defs.md#listlegalholdsinputrequesttypedef) 
 
 ### list\_protected\_resources
 
@@ -1452,6 +1611,7 @@ def list_recovery_points_by_backup_vault(
     ByBackupPlanId: str = ...,
     ByCreatedBefore: Union[datetime, str] = ...,
     ByCreatedAfter: Union[datetime, str] = ...,
+    ByParentRecoveryPointArn: str = ...,
 ) -> ListRecoveryPointsByBackupVaultOutputTypeDef:  # (1)
     ...
 ```
@@ -1468,6 +1628,38 @@ parent.list_recovery_points_by_backup_vault(**kwargs)
 ```
 
 1. See [:material-code-braces: ListRecoveryPointsByBackupVaultInputRequestTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputrequesttypedef) 
+
+### list\_recovery\_points\_by\_legal\_hold
+
+This action returns recovery point ARNs (Amazon Resource Names) of the specified
+legal hold.
+
+Type annotations and code completion for `#!python boto3.client("backup").list_recovery_points_by_legal_hold` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_legal_hold)
+
+```python title="Method definition"
+def list_recovery_points_by_legal_hold(
+    self,
+    *,
+    LegalHoldId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRecoveryPointsByLegalHoldOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListRecoveryPointsByLegalHoldOutputTypeDef](./type_defs.md#listrecoverypointsbylegalholdoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRecoveryPointsByLegalHoldInputRequestTypeDef = {  # (1)
+    "LegalHoldId": ...,
+}
+
+parent.list_recovery_points_by_legal_hold(**kwargs)
+```
+
+1. See [:material-code-braces: ListRecoveryPointsByLegalHoldInputRequestTypeDef](./type_defs.md#listrecoverypointsbylegalholdinputrequesttypedef) 
 
 ### list\_recovery\_points\_by\_resource
 
@@ -2178,8 +2370,10 @@ Type annotations and code completion for `#!python boto3.client("backup").get_pa
 - `client.get_paginator("list_backup_selections")` -> [ListBackupSelectionsPaginator](./paginators.md#listbackupselectionspaginator)
 - `client.get_paginator("list_backup_vaults")` -> [ListBackupVaultsPaginator](./paginators.md#listbackupvaultspaginator)
 - `client.get_paginator("list_copy_jobs")` -> [ListCopyJobsPaginator](./paginators.md#listcopyjobspaginator)
+- `client.get_paginator("list_legal_holds")` -> [ListLegalHoldsPaginator](./paginators.md#listlegalholdspaginator)
 - `client.get_paginator("list_protected_resources")` -> [ListProtectedResourcesPaginator](./paginators.md#listprotectedresourcespaginator)
 - `client.get_paginator("list_recovery_points_by_backup_vault")` -> [ListRecoveryPointsByBackupVaultPaginator](./paginators.md#listrecoverypointsbybackupvaultpaginator)
+- `client.get_paginator("list_recovery_points_by_legal_hold")` -> [ListRecoveryPointsByLegalHoldPaginator](./paginators.md#listrecoverypointsbylegalholdpaginator)
 - `client.get_paginator("list_recovery_points_by_resource")` -> [ListRecoveryPointsByResourcePaginator](./paginators.md#listrecoverypointsbyresourcepaginator)
 - `client.get_paginator("list_restore_jobs")` -> [ListRestoreJobsPaginator](./paginators.md#listrestorejobspaginator)
 

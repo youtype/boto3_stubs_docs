@@ -219,6 +219,21 @@ ExtensionStatusType = Literal[
     "NOT_EXTENDED",
 ]
 ```
+## FailbackLaunchTypeType
+
+```python title="Usage Example"
+from mypy_boto3_drs.literals import FailbackLaunchTypeType
+
+def get_value() -> FailbackLaunchTypeType:
+    return "DRILL"
+```
+
+```python title="Definition"
+FailbackLaunchTypeType = Literal[
+    "DRILL",
+    "RECOVERY",
+]
+```
 ## FailbackReplicationErrorType
 
 ```python title="Usage Example"
@@ -232,12 +247,24 @@ def get_value() -> FailbackReplicationErrorType:
 FailbackReplicationErrorType = Literal[
     "AGENT_NOT_SEEN",
     "FAILBACK_CLIENT_NOT_SEEN",
+    "FAILED_GETTING_REPLICATION_STATE",
+    "FAILED_TO_ATTACH_STAGING_DISKS",
+    "FAILED_TO_AUTHENTICATE_WITH_SERVICE",
+    "FAILED_TO_BOOT_REPLICATION_SERVER",
     "FAILED_TO_CONFIGURE_REPLICATION_SOFTWARE",
+    "FAILED_TO_CONNECT_AGENT_TO_REPLICATION_SERVER",
+    "FAILED_TO_CREATE_SECURITY_GROUP",
+    "FAILED_TO_CREATE_STAGING_DISKS",
+    "FAILED_TO_DOWNLOAD_REPLICATION_SOFTWARE",
     "FAILED_TO_DOWNLOAD_REPLICATION_SOFTWARE_TO_FAILBACK_CLIENT",
     "FAILED_TO_ESTABLISH_AGENT_REPLICATOR_SOFTWARE_COMMUNICATION",
     "FAILED_TO_ESTABLISH_RECOVERY_INSTANCE_COMMUNICATION",
+    "FAILED_TO_LAUNCH_REPLICATION_SERVER",
     "FAILED_TO_PAIR_AGENT_WITH_REPLICATION_SOFTWARE",
+    "FAILED_TO_PAIR_REPLICATION_SERVER_WITH_AGENT",
+    "FAILED_TO_START_DATA_TRANSFER",
     "NOT_CONVERGING",
+    "SNAPSHOTS_FAILURE",
     "UNSTABLE_NETWORK",
 ]
 ```
@@ -255,6 +282,8 @@ FailbackStateType = Literal[
     "FAILBACK_COMPLETED",
     "FAILBACK_ERROR",
     "FAILBACK_IN_PROGRESS",
+    "FAILBACK_LAUNCH_STATE_NOT_AVAILABLE",
+    "FAILBACK_NOT_READY_FOR_LAUNCH",
     "FAILBACK_NOT_STARTED",
     "FAILBACK_READY_FOR_LAUNCH",
 ]
@@ -433,6 +462,21 @@ ListStagingAccountsPaginatorName = Literal[
     "list_staging_accounts",
 ]
 ```
+## OriginEnvironmentType
+
+```python title="Usage Example"
+from mypy_boto3_drs.literals import OriginEnvironmentType
+
+def get_value() -> OriginEnvironmentType:
+    return "AWS"
+```
+
+```python title="Definition"
+OriginEnvironmentType = Literal[
+    "AWS",
+    "ON_PREMISES",
+]
+```
 ## PITPolicyRuleUnitsType
 
 ```python title="Usage Example"
@@ -455,18 +499,29 @@ PITPolicyRuleUnitsType = Literal[
 from mypy_boto3_drs.literals import RecoveryInstanceDataReplicationInitiationStepNameType
 
 def get_value() -> RecoveryInstanceDataReplicationInitiationStepNameType:
-    return "COMPLETE_VOLUME_MAPPING"
+    return "ATTACH_STAGING_DISKS"
 ```
 
 ```python title="Definition"
 RecoveryInstanceDataReplicationInitiationStepNameType = Literal[
+    "ATTACH_STAGING_DISKS",
+    "AUTHENTICATE_WITH_SERVICE",
+    "BOOT_REPLICATION_SERVER",
     "COMPLETE_VOLUME_MAPPING",
     "CONFIGURE_REPLICATION_SOFTWARE",
+    "CONNECT_AGENT_TO_REPLICATION_SERVER",
+    "CREATE_SECURITY_GROUP",
+    "CREATE_STAGING_DISKS",
+    "DOWNLOAD_REPLICATION_SOFTWARE",
     "DOWNLOAD_REPLICATION_SOFTWARE_TO_FAILBACK_CLIENT",
     "ESTABLISH_AGENT_REPLICATOR_SOFTWARE_COMMUNICATION",
     "ESTABLISH_RECOVERY_INSTANCE_COMMUNICATION",
+    "LAUNCH_REPLICATION_SERVER",
     "LINK_FAILBACK_CLIENT_WITH_RECOVERY_INSTANCE",
     "PAIR_AGENT_WITH_REPLICATION_SOFTWARE",
+    "PAIR_REPLICATION_SERVER_WITH_AGENT",
+    "START_DATA_TRANSFER",
+    "WAIT",
 ]
 ```
 ## RecoveryInstanceDataReplicationInitiationStepStatusType
@@ -504,7 +559,9 @@ RecoveryInstanceDataReplicationStateType = Literal[
     "DISCONNECTED",
     "INITIAL_SYNC",
     "INITIATING",
+    "NOT_STARTED",
     "PAUSED",
+    "REPLICATION_STATE_NOT_AVAILABLE",
     "RESCAN",
     "STALLED",
     "STOPPED",
@@ -590,6 +647,21 @@ ReplicationConfigurationReplicatedDiskStagingDiskTypeType = Literal[
     "SC1",
     "ST1",
     "STANDARD",
+]
+```
+## ReplicationDirectionType
+
+```python title="Usage Example"
+from mypy_boto3_drs.literals import ReplicationDirectionType
+
+def get_value() -> ReplicationDirectionType:
+    return "FAILBACK"
+```
+
+```python title="Definition"
+ReplicationDirectionType = Literal[
+    "FAILBACK",
+    "FAILOVER",
 ]
 ```
 ## TargetInstanceTypeRightSizingMethodType
@@ -851,6 +923,7 @@ ServiceName = Literal[
     "network-firewall",
     "networkmanager",
     "nimble",
+    "oam",
     "opensearch",
     "opsworks",
     "opsworkscm",

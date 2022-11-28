@@ -507,6 +507,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-nimble](./mypy_boto3_nimble/README.md) for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio) service
 
+- [mypy-boto3-oam](./mypy_boto3_oam/README.md) for [CloudWatchObservabilityAccessManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/oam.html#CloudWatchObservabilityAccessManager) service
+
 - [mypy-boto3-opensearch](./mypy_boto3_opensearch/README.md) for [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService) service
 
 - [mypy-boto3-opsworks](./mypy_boto3_opsworks/README.md) for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks) service
