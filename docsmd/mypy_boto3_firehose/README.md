@@ -75,12 +75,13 @@ def get_client() -> FirehoseClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_firehose.literals import AmazonopensearchserviceIndexRotationPeriodType
+from mypy_boto3_firehose.literals import AmazonOpenSearchServerlessS3BackupModeType
 
-def get_value() -> AmazonopensearchserviceIndexRotationPeriodType:
-    return "NoRotation"
+def get_value() -> AmazonOpenSearchServerlessS3BackupModeType:
+    return "AllDocuments"
 ```
 
+- [AmazonOpenSearchServerlessS3BackupModeType](./literals.md#amazonopensearchserverlesss3backupmodetype)
 - [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
 - [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
 - [CompressionFormatType](./literals.md#compressionformattype)
@@ -117,19 +118,21 @@ def get_value() -> AmazonopensearchserviceIndexRotationPeriodType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef
+from mypy_boto3_firehose.type_defs import AmazonOpenSearchServerlessBufferingHintsTypeDef
 
-def get_value() -> AmazonopensearchserviceBufferingHintsTypeDef:
+def get_value() -> AmazonOpenSearchServerlessBufferingHintsTypeDef:
     return {
         "IntervalInSeconds": ...,
     }
 ```
 
-- [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
-- [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
+- [AmazonOpenSearchServerlessBufferingHintsTypeDef](./type_defs.md#amazonopensearchserverlessbufferinghintstypedef)
+- [AmazonOpenSearchServerlessRetryOptionsTypeDef](./type_defs.md#amazonopensearchserverlessretryoptionstypedef)
 - [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 - [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
+- [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
 - [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
 - [CopyCommandTypeDef](./type_defs.md#copycommandtypedef)
 - [DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef)
@@ -187,6 +190,9 @@ def get_value() -> AmazonopensearchserviceBufferingHintsTypeDef:
 - [OutputFormatConfigurationTypeDef](./type_defs.md#outputformatconfigurationtypedef)
 - [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
 - [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
+- [AmazonOpenSearchServerlessDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchserverlessdestinationconfigurationtypedef)
+- [AmazonOpenSearchServerlessDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchserverlessdestinationdescriptiontypedef)
+- [AmazonOpenSearchServerlessDestinationUpdateTypeDef](./type_defs.md#amazonopensearchserverlessdestinationupdatetypedef)
 - [AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef)
 - [AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef)
 - [AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef)

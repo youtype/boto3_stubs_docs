@@ -7,6 +7,21 @@
     Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
     type annotations stubs module [mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
+## AmazonOpenSearchServerlessS3BackupModeType
+
+```python title="Usage Example"
+from mypy_boto3_firehose.literals import AmazonOpenSearchServerlessS3BackupModeType
+
+def get_value() -> AmazonOpenSearchServerlessS3BackupModeType:
+    return "AllDocuments"
+```
+
+```python title="Definition"
+AmazonOpenSearchServerlessS3BackupModeType = Literal[
+    "AllDocuments",
+    "FailedDocumentsOnly",
+]
+```
 ## AmazonopensearchserviceIndexRotationPeriodType
 
 ```python title="Usage Example"
@@ -637,7 +652,9 @@ ServiceName = Literal[
     "networkmanager",
     "nimble",
     "oam",
+    "omics",
     "opensearch",
+    "opensearchserverless",
     "opsworks",
     "opsworkscm",
     "organizations",
@@ -693,6 +710,7 @@ ServiceName = Literal[
     "sdb",
     "secretsmanager",
     "securityhub",
+    "securitylake",
     "serverlessrepo",
     "service-quotas",
     "servicecatalog",
@@ -702,6 +720,7 @@ ServiceName = Literal[
     "sesv2",
     "shield",
     "signer",
+    "simspaceweaver",
     "sms",
     "sms-voice",
     "snow-device-management",

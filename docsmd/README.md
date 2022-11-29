@@ -511,7 +511,11 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-oam](./mypy_boto3_oam/README.md) for [CloudWatchObservabilityAccessManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/oam.html#CloudWatchObservabilityAccessManager) service
 
+- [mypy-boto3-omics](./mypy_boto3_omics/README.md) for [Omics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/omics.html#Omics) service
+
 - [mypy-boto3-opensearch](./mypy_boto3_opensearch/README.md) for [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService) service
+
+- [mypy-boto3-opensearchserverless](./mypy_boto3_opensearchserverless/README.md) for [OpenSearchServiceServerless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearchserverless.html#OpenSearchServiceServerless) service
 
 - [mypy-boto3-opsworks](./mypy_boto3_opsworks/README.md) for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks) service
 
@@ -623,6 +627,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-securityhub](./mypy_boto3_securityhub/README.md) for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub) service
 
+- [mypy-boto3-securitylake](./mypy_boto3_securitylake/README.md) for [SecurityLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake) service
+
 - [mypy-boto3-serverlessrepo](./mypy_boto3_serverlessrepo/README.md) for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository) service
 
 - [mypy-boto3-service-quotas](./mypy_boto3_service_quotas/README.md) for [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas) service
@@ -640,6 +646,8 @@ python -m pip uninstall -y boto3-stubs
 - [mypy-boto3-shield](./mypy_boto3_shield/README.md) for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield) service
 
 - [mypy-boto3-signer](./mypy_boto3_signer/README.md) for [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer) service
+
+- [mypy-boto3-simspaceweaver](./mypy_boto3_simspaceweaver/README.md) for [SimSpaceWeaver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/simspaceweaver.html#SimSpaceWeaver) service
 
 - [mypy-boto3-sms](./mypy_boto3_sms/README.md) for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS) service
 

@@ -2388,6 +2388,76 @@ DescribeTrunkInterfaceAssociationsPaginatorName = Literal[
     "describe_trunk_interface_associations",
 ]
 ```
+## DescribeVerifiedAccessEndpointsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeVerifiedAccessEndpointsPaginatorName
+
+def get_value() -> DescribeVerifiedAccessEndpointsPaginatorName:
+    return "describe_verified_access_endpoints"
+```
+
+```python title="Definition"
+DescribeVerifiedAccessEndpointsPaginatorName = Literal[
+    "describe_verified_access_endpoints",
+]
+```
+## DescribeVerifiedAccessGroupsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeVerifiedAccessGroupsPaginatorName
+
+def get_value() -> DescribeVerifiedAccessGroupsPaginatorName:
+    return "describe_verified_access_groups"
+```
+
+```python title="Definition"
+DescribeVerifiedAccessGroupsPaginatorName = Literal[
+    "describe_verified_access_groups",
+]
+```
+## DescribeVerifiedAccessInstanceLoggingConfigurationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeVerifiedAccessInstanceLoggingConfigurationsPaginatorName
+
+def get_value() -> DescribeVerifiedAccessInstanceLoggingConfigurationsPaginatorName:
+    return "describe_verified_access_instance_logging_configurations"
+```
+
+```python title="Definition"
+DescribeVerifiedAccessInstanceLoggingConfigurationsPaginatorName = Literal[
+    "describe_verified_access_instance_logging_configurations",
+]
+```
+## DescribeVerifiedAccessInstancesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeVerifiedAccessInstancesPaginatorName
+
+def get_value() -> DescribeVerifiedAccessInstancesPaginatorName:
+    return "describe_verified_access_instances"
+```
+
+```python title="Definition"
+DescribeVerifiedAccessInstancesPaginatorName = Literal[
+    "describe_verified_access_instances",
+]
+```
+## DescribeVerifiedAccessTrustProvidersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeVerifiedAccessTrustProvidersPaginatorName
+
+def get_value() -> DescribeVerifiedAccessTrustProvidersPaginatorName:
+    return "describe_verified_access_trust_providers"
+```
+
+```python title="Definition"
+DescribeVerifiedAccessTrustProvidersPaginatorName = Literal[
+    "describe_verified_access_trust_providers",
+]
+```
 ## DescribeVolumeStatusPaginatorName
 
 ```python title="Usage Example"
@@ -2569,6 +2639,21 @@ def get_value() -> DestinationFileFormatType:
 DestinationFileFormatType = Literal[
     "parquet",
     "plain-text",
+]
+```
+## DeviceTrustProviderTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DeviceTrustProviderTypeType
+
+def get_value() -> DeviceTrustProviderTypeType:
+    return "crowdstrike"
+```
+
+```python title="Definition"
+DeviceTrustProviderTypeType = Literal[
+    "crowdstrike",
+    "jamf",
 ]
 ```
 ## DeviceTypeType
@@ -4223,6 +4308,7 @@ InstanceTypeType = Literal[
     "h1.8xlarge",
     "hi1.4xlarge",
     "hpc6a.48xlarge",
+    "hpc6id.32xlarge",
     "hs1.8xlarge",
     "i2.2xlarge",
     "i2.4xlarge",
@@ -6070,6 +6156,11 @@ ResourceTypeType = Literal[
     "transit-gateway-policy-table",
     "transit-gateway-route-table",
     "transit-gateway-route-table-announcement",
+    "verified-access-endpoint",
+    "verified-access-group",
+    "verified-access-instance",
+    "verified-access-policy",
+    "verified-access-trust-provider",
     "volume",
     "vpc",
     "vpc-endpoint",
@@ -7124,6 +7215,21 @@ TransportProtocolType = Literal[
     "udp",
 ]
 ```
+## TrustProviderTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import TrustProviderTypeType
+
+def get_value() -> TrustProviderTypeType:
+    return "device"
+```
+
+```python title="Definition"
+TrustProviderTypeType = Literal[
+    "device",
+    "user",
+]
+```
 ## TunnelInsideIpVersionType
 
 ```python title="Usage Example"
@@ -7186,6 +7292,98 @@ def get_value() -> UsageClassTypeType:
 UsageClassTypeType = Literal[
     "on-demand",
     "spot",
+]
+```
+## UserTrustProviderTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import UserTrustProviderTypeType
+
+def get_value() -> UserTrustProviderTypeType:
+    return "iam-identity-center"
+```
+
+```python title="Definition"
+UserTrustProviderTypeType = Literal[
+    "iam-identity-center",
+    "oidc",
+]
+```
+## VerifiedAccessEndpointAttachmentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import VerifiedAccessEndpointAttachmentTypeType
+
+def get_value() -> VerifiedAccessEndpointAttachmentTypeType:
+    return "vpc"
+```
+
+```python title="Definition"
+VerifiedAccessEndpointAttachmentTypeType = Literal[
+    "vpc",
+]
+```
+## VerifiedAccessEndpointProtocolType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import VerifiedAccessEndpointProtocolType
+
+def get_value() -> VerifiedAccessEndpointProtocolType:
+    return "http"
+```
+
+```python title="Definition"
+VerifiedAccessEndpointProtocolType = Literal[
+    "http",
+    "https",
+]
+```
+## VerifiedAccessEndpointStatusCodeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import VerifiedAccessEndpointStatusCodeType
+
+def get_value() -> VerifiedAccessEndpointStatusCodeType:
+    return "active"
+```
+
+```python title="Definition"
+VerifiedAccessEndpointStatusCodeType = Literal[
+    "active",
+    "deleted",
+    "deleting",
+    "pending",
+    "updating",
+]
+```
+## VerifiedAccessEndpointTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import VerifiedAccessEndpointTypeType
+
+def get_value() -> VerifiedAccessEndpointTypeType:
+    return "load-balancer"
+```
+
+```python title="Definition"
+VerifiedAccessEndpointTypeType = Literal[
+    "load-balancer",
+    "network-interface",
+]
+```
+## VerifiedAccessLogDeliveryStatusCodeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import VerifiedAccessLogDeliveryStatusCodeType
+
+def get_value() -> VerifiedAccessLogDeliveryStatusCodeType:
+    return "failed"
+```
+
+```python title="Definition"
+VerifiedAccessLogDeliveryStatusCodeType = Literal[
+    "failed",
+    "success",
 ]
 ```
 ## VirtualizationTypeType
@@ -7892,7 +8090,9 @@ ServiceName = Literal[
     "networkmanager",
     "nimble",
     "oam",
+    "omics",
     "opensearch",
+    "opensearchserverless",
     "opsworks",
     "opsworkscm",
     "organizations",
@@ -7948,6 +8148,7 @@ ServiceName = Literal[
     "sdb",
     "secretsmanager",
     "securityhub",
+    "securitylake",
     "serverlessrepo",
     "service-quotas",
     "servicecatalog",
@@ -7957,6 +8158,7 @@ ServiceName = Literal[
     "sesv2",
     "shield",
     "signer",
+    "simspaceweaver",
     "sms",
     "sms-voice",
     "snow-device-management",
@@ -8124,6 +8326,11 @@ PaginatorName = Literal[
     "describe_transit_gateway_vpc_attachments",
     "describe_transit_gateways",
     "describe_trunk_interface_associations",
+    "describe_verified_access_endpoints",
+    "describe_verified_access_groups",
+    "describe_verified_access_instance_logging_configurations",
+    "describe_verified_access_instances",
+    "describe_verified_access_trust_providers",
     "describe_volume_status",
     "describe_volumes",
     "describe_volumes_modifications",

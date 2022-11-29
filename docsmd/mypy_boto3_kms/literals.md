@@ -44,6 +44,14 @@ ConnectionErrorCodeTypeType = Literal[
     "USER_LOCKED_OUT",
     "USER_LOGGED_IN",
     "USER_NOT_FOUND",
+    "XKS_PROXY_ACCESS_DENIED",
+    "XKS_PROXY_INVALID_CONFIGURATION",
+    "XKS_PROXY_INVALID_RESPONSE",
+    "XKS_PROXY_INVALID_TLS_CONFIGURATION",
+    "XKS_PROXY_NOT_REACHABLE",
+    "XKS_PROXY_TIMED_OUT",
+    "XKS_VPC_ENDPOINT_SERVICE_INVALID_CONFIGURATION",
+    "XKS_VPC_ENDPOINT_SERVICE_NOT_FOUND",
 ]
 ```
 ## ConnectionStateTypeType
@@ -62,6 +70,21 @@ ConnectionStateTypeType = Literal[
     "DISCONNECTED",
     "DISCONNECTING",
     "FAILED",
+]
+```
+## CustomKeyStoreTypeType
+
+```python title="Usage Example"
+from mypy_boto3_kms.literals import CustomKeyStoreTypeType
+
+def get_value() -> CustomKeyStoreTypeType:
+    return "AWS_CLOUDHSM"
+```
+
+```python title="Definition"
+CustomKeyStoreTypeType = Literal[
+    "AWS_CLOUDHSM",
+    "EXTERNAL_KEY_STORE",
 ]
 ```
 ## CustomerMasterKeySpecType
@@ -424,6 +447,7 @@ OriginTypeType = Literal[
     "AWS_CLOUDHSM",
     "AWS_KMS",
     "EXTERNAL",
+    "EXTERNAL_KEY_STORE",
 ]
 ```
 ## SigningAlgorithmSpecType
@@ -461,6 +485,21 @@ def get_value() -> WrappingKeySpecType:
 ```python title="Definition"
 WrappingKeySpecType = Literal[
     "RSA_2048",
+]
+```
+## XksProxyConnectivityTypeType
+
+```python title="Usage Example"
+from mypy_boto3_kms.literals import XksProxyConnectivityTypeType
+
+def get_value() -> XksProxyConnectivityTypeType:
+    return "PUBLIC_ENDPOINT"
+```
+
+```python title="Definition"
+XksProxyConnectivityTypeType = Literal[
+    "PUBLIC_ENDPOINT",
+    "VPC_ENDPOINT_SERVICE",
 ]
 ```
 ## KMSServiceName
@@ -709,7 +748,9 @@ ServiceName = Literal[
     "networkmanager",
     "nimble",
     "oam",
+    "omics",
     "opensearch",
+    "opensearchserverless",
     "opsworks",
     "opsworkscm",
     "organizations",
@@ -765,6 +806,7 @@ ServiceName = Literal[
     "sdb",
     "secretsmanager",
     "securityhub",
+    "securitylake",
     "serverlessrepo",
     "service-quotas",
     "servicecatalog",
@@ -774,6 +816,7 @@ ServiceName = Literal[
     "sesv2",
     "shield",
     "signer",
+    "simspaceweaver",
     "sms",
     "sms-voice",
     "snow-device-management",

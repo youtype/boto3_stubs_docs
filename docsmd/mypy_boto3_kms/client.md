@@ -67,6 +67,18 @@ except (
     client.NotFoundException,
     client.TagException,
     client.UnsupportedOperationException,
+    client.XksKeyAlreadyInUseException,
+    client.XksKeyInvalidConfigurationException,
+    client.XksKeyNotFoundException,
+    client.XksProxyIncorrectAuthenticationCredentialException,
+    client.XksProxyInvalidConfigurationException,
+    client.XksProxyInvalidResponseException,
+    client.XksProxyUriEndpointInUseException,
+    client.XksProxyUriInUseException,
+    client.XksProxyUriUnreachableException,
+    client.XksProxyVpcEndpointServiceInUseException,
+    client.XksProxyVpcEndpointServiceInvalidConfigurationException,
+    client.XksProxyVpcEndpointServiceNotFoundException,
 ) as e:
     print(e)
 ```
@@ -146,7 +158,7 @@ def close(
 
 Connects or reconnects a [custom key
 store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
-overview.html)_ to its associated CloudHSM cluster.
+overview.html)_ to its backing key store.
 
 Type annotations and code completion for `#!python boto3.client("kms").connect_custom_key_store` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store)
@@ -207,9 +219,7 @@ parent.create_alias(**kwargs)
 
 Creates a [custom key
 store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
-overview.html)_ that is associated with an [CloudHSM
-cluster](https://docs.aws.amazon.com/cloudhsm/latest/userguide/clusters.html)_
-that you own and manage.
+overview.html)_ backed by a key store that you own and manage.
 
 Type annotations and code completion for `#!python boto3.client("kms").create_custom_key_store` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_custom_key_store)
@@ -222,11 +232,20 @@ def create_custom_key_store(
     CloudHsmClusterId: str = ...,
     TrustAnchorCertificate: str = ...,
     KeyStorePassword: str = ...,
-) -> CreateCustomKeyStoreResponseTypeDef:  # (1)
+    CustomKeyStoreType: CustomKeyStoreTypeType = ...,  # (1)
+    XksProxyUriEndpoint: str = ...,
+    XksProxyUriPath: str = ...,
+    XksProxyVpcEndpointServiceName: str = ...,
+    XksProxyAuthenticationCredential: XksProxyAuthenticationCredentialTypeTypeDef = ...,  # (2)
+    XksProxyConnectivity: XksProxyConnectivityTypeType = ...,  # (3)
+) -> CreateCustomKeyStoreResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: CreateCustomKeyStoreResponseTypeDef](./type_defs.md#createcustomkeystoreresponsetypedef) 
+1. See [:material-code-brackets: CustomKeyStoreTypeType](./literals.md#customkeystoretypetype) 
+2. See [:material-code-braces: XksProxyAuthenticationCredentialTypeTypeDef](./type_defs.md#xksproxyauthenticationcredentialtypetypedef) 
+3. See [:material-code-brackets: XksProxyConnectivityTypeType](./literals.md#xksproxyconnectivitytypetype) 
+4. See [:material-code-braces: CreateCustomKeyStoreResponseTypeDef](./type_defs.md#createcustomkeystoreresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -301,6 +320,7 @@ def create_key(
     BypassPolicyLockoutSafetyCheck: bool = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (5)
     MultiRegion: bool = ...,
+    XksKeyId: str = ...,
 ) -> CreateKeyResponseTypeDef:  # (6)
     ...
 ```
@@ -576,7 +596,7 @@ parent.disable_key_rotation(**kwargs)
 
 Disconnects the [custom key
 store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-
-overview.html)_ from its associated CloudHSM cluster.
+overview.html)_ from its backing key store.
 
 Type annotations and code completion for `#!python boto3.client("kms").disconnect_custom_key_store` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store)
@@ -1624,10 +1644,17 @@ def update_custom_key_store(
     NewCustomKeyStoreName: str = ...,
     KeyStorePassword: str = ...,
     CloudHsmClusterId: str = ...,
+    XksProxyUriEndpoint: str = ...,
+    XksProxyUriPath: str = ...,
+    XksProxyVpcEndpointServiceName: str = ...,
+    XksProxyAuthenticationCredential: XksProxyAuthenticationCredentialTypeTypeDef = ...,  # (1)
+    XksProxyConnectivity: XksProxyConnectivityTypeType = ...,  # (2)
 ) -> Dict[str, Any]:
     ...
 ```
 
+1. See [:material-code-braces: XksProxyAuthenticationCredentialTypeTypeDef](./type_defs.md#xksproxyauthenticationcredentialtypetypedef) 
+2. See [:material-code-brackets: XksProxyConnectivityTypeType](./literals.md#xksproxyconnectivitytypetype) 
 
 
 ```python title="Usage example with kwargs"

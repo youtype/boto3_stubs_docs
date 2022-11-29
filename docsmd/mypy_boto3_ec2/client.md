@@ -1055,6 +1055,40 @@ parent.attach_network_interface(**kwargs)
 
 1. See [:material-code-braces: AttachNetworkInterfaceRequestRequestTypeDef](./type_defs.md#attachnetworkinterfacerequestrequesttypedef) 
 
+### attach\_verified\_access\_trust\_provider
+
+A trust provider is a third-party entity that creates, maintains, and manages
+identity information for users and devices.
+
+Type annotations and code completion for `#!python boto3.client("ec2").attach_verified_access_trust_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_verified_access_trust_provider)
+
+```python title="Method definition"
+def attach_verified_access_trust_provider(
+    self,
+    *,
+    VerifiedAccessInstanceId: str,
+    VerifiedAccessTrustProviderId: str,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> AttachVerifiedAccessTrustProviderResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AttachVerifiedAccessTrustProviderResultTypeDef](./type_defs.md#attachverifiedaccesstrustproviderresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AttachVerifiedAccessTrustProviderRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceId": ...,
+    "VerifiedAccessTrustProviderId": ...,
+}
+
+parent.attach_verified_access_trust_provider(**kwargs)
+```
+
+1. See [:material-code-braces: AttachVerifiedAccessTrustProviderRequestRequestTypeDef](./type_defs.md#attachverifiedaccesstrustproviderrequestrequesttypedef) 
+
 ### attach\_volume
 
 Attaches an EBS volume to a running or stopped instance and exposes it to the
@@ -4254,6 +4288,177 @@ parent.create_transit_gateway_vpc_attachment(**kwargs)
 
 1. See [:material-code-braces: CreateTransitGatewayVpcAttachmentRequestRequestTypeDef](./type_defs.md#createtransitgatewayvpcattachmentrequestrequesttypedef) 
 
+### create\_verified\_access\_endpoint
+
+An Amazon Web Services Verified Access endpoint is where you define your
+application along with an optional endpoint-level access policy.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_verified_access_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_verified_access_endpoint)
+
+```python title="Method definition"
+def create_verified_access_endpoint(
+    self,
+    *,
+    VerifiedAccessGroupId: str,
+    EndpointType: VerifiedAccessEndpointTypeType,  # (1)
+    AttachmentType: VerifiedAccessEndpointAttachmentTypeType,  # (2)
+    DomainCertificateArn: str,
+    ApplicationDomain: str,
+    EndpointDomainPrefix: str,
+    SecurityGroupIds: Sequence[str] = ...,
+    LoadBalancerOptions: CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef = ...,  # (3)
+    NetworkInterfaceOptions: CreateVerifiedAccessEndpointEniOptionsTypeDef = ...,  # (4)
+    Description: str = ...,
+    PolicyDocument: str = ...,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (5)
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> CreateVerifiedAccessEndpointResultTypeDef:  # (6)
+    ...
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointTypeType](./literals.md#verifiedaccessendpointtypetype) 
+2. See [:material-code-brackets: VerifiedAccessEndpointAttachmentTypeType](./literals.md#verifiedaccessendpointattachmenttypetype) 
+3. See [:material-code-braces: CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef](./type_defs.md#createverifiedaccessendpointloadbalanceroptionstypedef) 
+4. See [:material-code-braces: CreateVerifiedAccessEndpointEniOptionsTypeDef](./type_defs.md#createverifiedaccessendpointenioptionstypedef) 
+5. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+6. See [:material-code-braces: CreateVerifiedAccessEndpointResultTypeDef](./type_defs.md#createverifiedaccessendpointresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateVerifiedAccessEndpointRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessGroupId": ...,
+    "EndpointType": ...,
+    "AttachmentType": ...,
+    "DomainCertificateArn": ...,
+    "ApplicationDomain": ...,
+    "EndpointDomainPrefix": ...,
+}
+
+parent.create_verified_access_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: CreateVerifiedAccessEndpointRequestRequestTypeDef](./type_defs.md#createverifiedaccessendpointrequestrequesttypedef) 
+
+### create\_verified\_access\_group
+
+An Amazon Web Services Verified Access group is a collection of Amazon Web
+Services Verified Access endpoints who's associated applications have similar
+security requirements.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_verified_access_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_verified_access_group)
+
+```python title="Method definition"
+def create_verified_access_group(
+    self,
+    *,
+    VerifiedAccessInstanceId: str,
+    Description: str = ...,
+    PolicyDocument: str = ...,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> CreateVerifiedAccessGroupResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+2. See [:material-code-braces: CreateVerifiedAccessGroupResultTypeDef](./type_defs.md#createverifiedaccessgroupresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateVerifiedAccessGroupRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceId": ...,
+}
+
+parent.create_verified_access_group(**kwargs)
+```
+
+1. See [:material-code-braces: CreateVerifiedAccessGroupRequestRequestTypeDef](./type_defs.md#createverifiedaccessgrouprequestrequesttypedef) 
+
+### create\_verified\_access\_instance
+
+An Amazon Web Services Verified Access instance is a regional entity that
+evaluates application requests and grants access only when your security
+requirements are met.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_verified_access_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_verified_access_instance)
+
+```python title="Method definition"
+def create_verified_access_instance(
+    self,
+    *,
+    Description: str = ...,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> CreateVerifiedAccessInstanceResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+2. See [:material-code-braces: CreateVerifiedAccessInstanceResultTypeDef](./type_defs.md#createverifiedaccessinstanceresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateVerifiedAccessInstanceRequestRequestTypeDef = {  # (1)
+    "Description": ...,
+}
+
+parent.create_verified_access_instance(**kwargs)
+```
+
+1. See [:material-code-braces: CreateVerifiedAccessInstanceRequestRequestTypeDef](./type_defs.md#createverifiedaccessinstancerequestrequesttypedef) 
+
+### create\_verified\_access\_trust\_provider
+
+A trust provider is a third-party entity that creates, maintains, and manages
+identity information for users and devices.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_verified_access_trust_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_verified_access_trust_provider)
+
+```python title="Method definition"
+def create_verified_access_trust_provider(
+    self,
+    *,
+    TrustProviderType: TrustProviderTypeType,  # (1)
+    PolicyReferenceName: str,
+    UserTrustProviderType: UserTrustProviderTypeType = ...,  # (2)
+    DeviceTrustProviderType: DeviceTrustProviderTypeType = ...,  # (3)
+    OidcOptions: CreateVerifiedAccessTrustProviderOidcOptionsTypeDef = ...,  # (4)
+    DeviceOptions: CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef = ...,  # (5)
+    Description: str = ...,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (6)
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> CreateVerifiedAccessTrustProviderResultTypeDef:  # (7)
+    ...
+```
+
+1. See [:material-code-brackets: TrustProviderTypeType](./literals.md#trustprovidertypetype) 
+2. See [:material-code-brackets: UserTrustProviderTypeType](./literals.md#usertrustprovidertypetype) 
+3. See [:material-code-brackets: DeviceTrustProviderTypeType](./literals.md#devicetrustprovidertypetype) 
+4. See [:material-code-braces: CreateVerifiedAccessTrustProviderOidcOptionsTypeDef](./type_defs.md#createverifiedaccesstrustprovideroidcoptionstypedef) 
+5. See [:material-code-braces: CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef](./type_defs.md#createverifiedaccesstrustproviderdeviceoptionstypedef) 
+6. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+7. See [:material-code-braces: CreateVerifiedAccessTrustProviderResultTypeDef](./type_defs.md#createverifiedaccesstrustproviderresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateVerifiedAccessTrustProviderRequestRequestTypeDef = {  # (1)
+    "TrustProviderType": ...,
+    "PolicyReferenceName": ...,
+}
+
+parent.create_verified_access_trust_provider(**kwargs)
+```
+
+1. See [:material-code-braces: CreateVerifiedAccessTrustProviderRequestRequestTypeDef](./type_defs.md#createverifiedaccesstrustproviderrequestrequesttypedef) 
+
 ### create\_volume
 
 Creates an EBS volume that can be attached to an instance in the same
@@ -6402,6 +6607,130 @@ parent.delete_transit_gateway_vpc_attachment(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteTransitGatewayVpcAttachmentRequestRequestTypeDef](./type_defs.md#deletetransitgatewayvpcattachmentrequestrequesttypedef) 
+
+### delete\_verified\_access\_endpoint
+
+Delete an Amazon Web Services Verified Access endpoint.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_verified_access_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_verified_access_endpoint)
+
+```python title="Method definition"
+def delete_verified_access_endpoint(
+    self,
+    *,
+    VerifiedAccessEndpointId: str,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> DeleteVerifiedAccessEndpointResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessEndpointResultTypeDef](./type_defs.md#deleteverifiedaccessendpointresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteVerifiedAccessEndpointRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessEndpointId": ...,
+}
+
+parent.delete_verified_access_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessEndpointRequestRequestTypeDef](./type_defs.md#deleteverifiedaccessendpointrequestrequesttypedef) 
+
+### delete\_verified\_access\_group
+
+Delete an Amazon Web Services Verified Access group.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_verified_access_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_verified_access_group)
+
+```python title="Method definition"
+def delete_verified_access_group(
+    self,
+    *,
+    VerifiedAccessGroupId: str,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> DeleteVerifiedAccessGroupResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessGroupResultTypeDef](./type_defs.md#deleteverifiedaccessgroupresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteVerifiedAccessGroupRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessGroupId": ...,
+}
+
+parent.delete_verified_access_group(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessGroupRequestRequestTypeDef](./type_defs.md#deleteverifiedaccessgrouprequestrequesttypedef) 
+
+### delete\_verified\_access\_instance
+
+Delete an Amazon Web Services Verified Access instance.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_verified_access_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_verified_access_instance)
+
+```python title="Method definition"
+def delete_verified_access_instance(
+    self,
+    *,
+    VerifiedAccessInstanceId: str,
+    DryRun: bool = ...,
+    ClientToken: str = ...,
+) -> DeleteVerifiedAccessInstanceResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessInstanceResultTypeDef](./type_defs.md#deleteverifiedaccessinstanceresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteVerifiedAccessInstanceRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceId": ...,
+}
+
+parent.delete_verified_access_instance(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessInstanceRequestRequestTypeDef](./type_defs.md#deleteverifiedaccessinstancerequestrequesttypedef) 
+
+### delete\_verified\_access\_trust\_provider
+
+Delete an Amazon Web Services Verified Access trust provider.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_verified_access_trust_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_verified_access_trust_provider)
+
+```python title="Method definition"
+def delete_verified_access_trust_provider(
+    self,
+    *,
+    VerifiedAccessTrustProviderId: str,
+    DryRun: bool = ...,
+    ClientToken: str = ...,
+) -> DeleteVerifiedAccessTrustProviderResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessTrustProviderResultTypeDef](./type_defs.md#deleteverifiedaccesstrustproviderresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteVerifiedAccessTrustProviderRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessTrustProviderId": ...,
+}
+
+parent.delete_verified_access_trust_provider(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVerifiedAccessTrustProviderRequestRequestTypeDef](./type_defs.md#deleteverifiedaccesstrustproviderrequestrequesttypedef) 
 
 ### delete\_volume
 
@@ -10979,6 +11308,180 @@ parent.describe_trunk_interface_associations(**kwargs)
 
 1. See [:material-code-braces: DescribeTrunkInterfaceAssociationsRequestRequestTypeDef](./type_defs.md#describetrunkinterfaceassociationsrequestrequesttypedef) 
 
+### describe\_verified\_access\_endpoints
+
+Describe Amazon Web Services Verified Access endpoints.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_verified_access_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_verified_access_endpoints)
+
+```python title="Method definition"
+def describe_verified_access_endpoints(
+    self,
+    *,
+    VerifiedAccessEndpointIds: Sequence[str] = ...,
+    VerifiedAccessInstanceId: str = ...,
+    VerifiedAccessGroupId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> DescribeVerifiedAccessEndpointsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeVerifiedAccessEndpointsResultTypeDef](./type_defs.md#describeverifiedaccessendpointsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessEndpointsRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessEndpointIds": ...,
+}
+
+parent.describe_verified_access_endpoints(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessEndpointsRequestRequestTypeDef](./type_defs.md#describeverifiedaccessendpointsrequestrequesttypedef) 
+
+### describe\_verified\_access\_groups
+
+Describe details of existing Verified Access groups.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_verified_access_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_verified_access_groups)
+
+```python title="Method definition"
+def describe_verified_access_groups(
+    self,
+    *,
+    VerifiedAccessGroupIds: Sequence[str] = ...,
+    VerifiedAccessInstanceId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> DescribeVerifiedAccessGroupsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeVerifiedAccessGroupsResultTypeDef](./type_defs.md#describeverifiedaccessgroupsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessGroupsRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessGroupIds": ...,
+}
+
+parent.describe_verified_access_groups(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessGroupsRequestRequestTypeDef](./type_defs.md#describeverifiedaccessgroupsrequestrequesttypedef) 
+
+### describe\_verified\_access\_instance\_logging\_configurations
+
+Describes the current logging configuration for the Amazon Web Services Verified
+Access instances.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_verified_access_instance_logging_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_verified_access_instance_logging_configurations)
+
+```python title="Method definition"
+def describe_verified_access_instance_logging_configurations(
+    self,
+    *,
+    VerifiedAccessInstanceIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef](./type_defs.md#describeverifiedaccessinstanceloggingconfigurationsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessInstanceLoggingConfigurationsRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceIds": ...,
+}
+
+parent.describe_verified_access_instance_logging_configurations(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessInstanceLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#describeverifiedaccessinstanceloggingconfigurationsrequestrequesttypedef) 
+
+### describe\_verified\_access\_instances
+
+Describe Verified Access instances.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_verified_access_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_verified_access_instances)
+
+```python title="Method definition"
+def describe_verified_access_instances(
+    self,
+    *,
+    VerifiedAccessInstanceIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> DescribeVerifiedAccessInstancesResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeVerifiedAccessInstancesResultTypeDef](./type_defs.md#describeverifiedaccessinstancesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessInstancesRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceIds": ...,
+}
+
+parent.describe_verified_access_instances(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessInstancesRequestRequestTypeDef](./type_defs.md#describeverifiedaccessinstancesrequestrequesttypedef) 
+
+### describe\_verified\_access\_trust\_providers
+
+Describe details of existing Verified Access trust providers.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_verified_access_trust_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_verified_access_trust_providers)
+
+```python title="Method definition"
+def describe_verified_access_trust_providers(
+    self,
+    *,
+    VerifiedAccessTrustProviderIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> DescribeVerifiedAccessTrustProvidersResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeVerifiedAccessTrustProvidersResultTypeDef](./type_defs.md#describeverifiedaccesstrustprovidersresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessTrustProvidersRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessTrustProviderIds": ...,
+}
+
+parent.describe_verified_access_trust_providers(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessTrustProvidersRequestRequestTypeDef](./type_defs.md#describeverifiedaccesstrustprovidersrequestrequesttypedef) 
+
 ### describe\_volume\_attribute
 
 Describes the specified attribute of the specified volume.
@@ -11645,6 +12148,39 @@ parent.detach_network_interface(**kwargs)
 ```
 
 1. See [:material-code-braces: DetachNetworkInterfaceRequestRequestTypeDef](./type_defs.md#detachnetworkinterfacerequestrequesttypedef) 
+
+### detach\_verified\_access\_trust\_provider
+
+Detach a trust provider from an Amazon Web Services Verified Access instance.
+
+Type annotations and code completion for `#!python boto3.client("ec2").detach_verified_access_trust_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_verified_access_trust_provider)
+
+```python title="Method definition"
+def detach_verified_access_trust_provider(
+    self,
+    *,
+    VerifiedAccessInstanceId: str,
+    VerifiedAccessTrustProviderId: str,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> DetachVerifiedAccessTrustProviderResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DetachVerifiedAccessTrustProviderResultTypeDef](./type_defs.md#detachverifiedaccesstrustproviderresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DetachVerifiedAccessTrustProviderRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceId": ...,
+    "VerifiedAccessTrustProviderId": ...,
+}
+
+parent.detach_verified_access_trust_provider(**kwargs)
+```
+
+1. See [:material-code-braces: DetachVerifiedAccessTrustProviderRequestRequestTypeDef](./type_defs.md#detachverifiedaccesstrustproviderrequestrequesttypedef) 
 
 ### detach\_volume
 
@@ -14260,6 +14796,66 @@ parent.get_transit_gateway_route_table_propagations(**kwargs)
 
 1. See [:material-code-braces: GetTransitGatewayRouteTablePropagationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsrequestrequesttypedef) 
 
+### get\_verified\_access\_endpoint\_policy
+
+Get the Verified Access policy associated with the endpoint.
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_verified_access_endpoint_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_verified_access_endpoint_policy)
+
+```python title="Method definition"
+def get_verified_access_endpoint_policy(
+    self,
+    *,
+    VerifiedAccessEndpointId: str,
+    DryRun: bool = ...,
+) -> GetVerifiedAccessEndpointPolicyResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetVerifiedAccessEndpointPolicyResultTypeDef](./type_defs.md#getverifiedaccessendpointpolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetVerifiedAccessEndpointPolicyRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessEndpointId": ...,
+}
+
+parent.get_verified_access_endpoint_policy(**kwargs)
+```
+
+1. See [:material-code-braces: GetVerifiedAccessEndpointPolicyRequestRequestTypeDef](./type_defs.md#getverifiedaccessendpointpolicyrequestrequesttypedef) 
+
+### get\_verified\_access\_group\_policy
+
+Shows the contents of the Verified Access policy associated with the group.
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_verified_access_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_verified_access_group_policy)
+
+```python title="Method definition"
+def get_verified_access_group_policy(
+    self,
+    *,
+    VerifiedAccessGroupId: str,
+    DryRun: bool = ...,
+) -> GetVerifiedAccessGroupPolicyResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetVerifiedAccessGroupPolicyResultTypeDef](./type_defs.md#getverifiedaccessgrouppolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetVerifiedAccessGroupPolicyRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessGroupId": ...,
+}
+
+parent.get_verified_access_group_policy(**kwargs)
+```
+
+1. See [:material-code-braces: GetVerifiedAccessGroupPolicyRequestRequestTypeDef](./type_defs.md#getverifiedaccessgrouppolicyrequestrequesttypedef) 
+
 ### get\_vpn\_connection\_device\_sample\_configuration
 
 Download an Amazon Web Services-provided sample configuration file to be used
@@ -16152,6 +16748,246 @@ parent.modify_transit_gateway_vpc_attachment(**kwargs)
 ```
 
 1. See [:material-code-braces: ModifyTransitGatewayVpcAttachmentRequestRequestTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentrequestrequesttypedef) 
+
+### modify\_verified\_access\_endpoint
+
+Modifies the configuration of an Amazon Web Services Verified Access endpoint.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_verified_access_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_verified_access_endpoint)
+
+```python title="Method definition"
+def modify_verified_access_endpoint(
+    self,
+    *,
+    VerifiedAccessEndpointId: str,
+    VerifiedAccessGroupId: str = ...,
+    LoadBalancerOptions: ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef = ...,  # (1)
+    NetworkInterfaceOptions: ModifyVerifiedAccessEndpointEniOptionsTypeDef = ...,  # (2)
+    Description: str = ...,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> ModifyVerifiedAccessEndpointResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef](./type_defs.md#modifyverifiedaccessendpointloadbalanceroptionstypedef) 
+2. See [:material-code-braces: ModifyVerifiedAccessEndpointEniOptionsTypeDef](./type_defs.md#modifyverifiedaccessendpointenioptionstypedef) 
+3. See [:material-code-braces: ModifyVerifiedAccessEndpointResultTypeDef](./type_defs.md#modifyverifiedaccessendpointresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyVerifiedAccessEndpointRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessEndpointId": ...,
+}
+
+parent.modify_verified_access_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessEndpointRequestRequestTypeDef](./type_defs.md#modifyverifiedaccessendpointrequestrequesttypedef) 
+
+### modify\_verified\_access\_endpoint\_policy
+
+Modifies the specified Verified Access endpoint policy.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_verified_access_endpoint_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_verified_access_endpoint_policy)
+
+```python title="Method definition"
+def modify_verified_access_endpoint_policy(
+    self,
+    *,
+    VerifiedAccessEndpointId: str,
+    PolicyEnabled: bool,
+    PolicyDocument: str = ...,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> ModifyVerifiedAccessEndpointPolicyResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessEndpointPolicyResultTypeDef](./type_defs.md#modifyverifiedaccessendpointpolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyVerifiedAccessEndpointPolicyRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessEndpointId": ...,
+    "PolicyEnabled": ...,
+}
+
+parent.modify_verified_access_endpoint_policy(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessEndpointPolicyRequestRequestTypeDef](./type_defs.md#modifyverifiedaccessendpointpolicyrequestrequesttypedef) 
+
+### modify\_verified\_access\_group
+
+Modifies the specified Verified Access group configuration.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_verified_access_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_verified_access_group)
+
+```python title="Method definition"
+def modify_verified_access_group(
+    self,
+    *,
+    VerifiedAccessGroupId: str,
+    VerifiedAccessInstanceId: str = ...,
+    Description: str = ...,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> ModifyVerifiedAccessGroupResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessGroupResultTypeDef](./type_defs.md#modifyverifiedaccessgroupresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyVerifiedAccessGroupRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessGroupId": ...,
+}
+
+parent.modify_verified_access_group(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessGroupRequestRequestTypeDef](./type_defs.md#modifyverifiedaccessgrouprequestrequesttypedef) 
+
+### modify\_verified\_access\_group\_policy
+
+Modifies the specified Verified Access group policy.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_verified_access_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_verified_access_group_policy)
+
+```python title="Method definition"
+def modify_verified_access_group_policy(
+    self,
+    *,
+    VerifiedAccessGroupId: str,
+    PolicyEnabled: bool,
+    PolicyDocument: str = ...,
+    ClientToken: str = ...,
+    DryRun: bool = ...,
+) -> ModifyVerifiedAccessGroupPolicyResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessGroupPolicyResultTypeDef](./type_defs.md#modifyverifiedaccessgrouppolicyresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyVerifiedAccessGroupPolicyRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessGroupId": ...,
+    "PolicyEnabled": ...,
+}
+
+parent.modify_verified_access_group_policy(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessGroupPolicyRequestRequestTypeDef](./type_defs.md#modifyverifiedaccessgrouppolicyrequestrequesttypedef) 
+
+### modify\_verified\_access\_instance
+
+Modifies the configuration of the specified Verified Access instance.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_verified_access_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_verified_access_instance)
+
+```python title="Method definition"
+def modify_verified_access_instance(
+    self,
+    *,
+    VerifiedAccessInstanceId: str,
+    Description: str = ...,
+    DryRun: bool = ...,
+    ClientToken: str = ...,
+) -> ModifyVerifiedAccessInstanceResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessInstanceResultTypeDef](./type_defs.md#modifyverifiedaccessinstanceresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyVerifiedAccessInstanceRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceId": ...,
+}
+
+parent.modify_verified_access_instance(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessInstanceRequestRequestTypeDef](./type_defs.md#modifyverifiedaccessinstancerequestrequesttypedef) 
+
+### modify\_verified\_access\_instance\_logging\_configuration
+
+Modifies the logging configuration for the specified Amazon Web Services
+Verified Access instance.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_verified_access_instance_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_verified_access_instance_logging_configuration)
+
+```python title="Method definition"
+def modify_verified_access_instance_logging_configuration(
+    self,
+    *,
+    VerifiedAccessInstanceId: str,
+    AccessLogs: VerifiedAccessLogOptionsTypeDef,  # (1)
+    DryRun: bool = ...,
+    ClientToken: str = ...,
+) -> ModifyVerifiedAccessInstanceLoggingConfigurationResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: VerifiedAccessLogOptionsTypeDef](./type_defs.md#verifiedaccesslogoptionstypedef) 
+2. See [:material-code-braces: ModifyVerifiedAccessInstanceLoggingConfigurationResultTypeDef](./type_defs.md#modifyverifiedaccessinstanceloggingconfigurationresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyVerifiedAccessInstanceLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessInstanceId": ...,
+    "AccessLogs": ...,
+}
+
+parent.modify_verified_access_instance_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessInstanceLoggingConfigurationRequestRequestTypeDef](./type_defs.md#modifyverifiedaccessinstanceloggingconfigurationrequestrequesttypedef) 
+
+### modify\_verified\_access\_trust\_provider
+
+Modifies the configuration of the specified Amazon Web Services Verified Access
+trust provider.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_verified_access_trust_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_verified_access_trust_provider)
+
+```python title="Method definition"
+def modify_verified_access_trust_provider(
+    self,
+    *,
+    VerifiedAccessTrustProviderId: str,
+    OidcOptions: ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef = ...,  # (1)
+    Description: str = ...,
+    DryRun: bool = ...,
+    ClientToken: str = ...,
+) -> ModifyVerifiedAccessTrustProviderResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef](./type_defs.md#modifyverifiedaccesstrustprovideroidcoptionstypedef) 
+2. See [:material-code-braces: ModifyVerifiedAccessTrustProviderResultTypeDef](./type_defs.md#modifyverifiedaccesstrustproviderresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyVerifiedAccessTrustProviderRequestRequestTypeDef = {  # (1)
+    "VerifiedAccessTrustProviderId": ...,
+}
+
+parent.modify_verified_access_trust_provider(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessTrustProviderRequestRequestTypeDef](./type_defs.md#modifyverifiedaccesstrustproviderrequestrequesttypedef) 
 
 ### modify\_volume
 
@@ -18988,6 +19824,11 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_pagin
 - `client.get_paginator("describe_transit_gateway_vpc_attachments")` -> [DescribeTransitGatewayVpcAttachmentsPaginator](./paginators.md#describetransitgatewayvpcattachmentspaginator)
 - `client.get_paginator("describe_transit_gateways")` -> [DescribeTransitGatewaysPaginator](./paginators.md#describetransitgatewayspaginator)
 - `client.get_paginator("describe_trunk_interface_associations")` -> [DescribeTrunkInterfaceAssociationsPaginator](./paginators.md#describetrunkinterfaceassociationspaginator)
+- `client.get_paginator("describe_verified_access_endpoints")` -> [DescribeVerifiedAccessEndpointsPaginator](./paginators.md#describeverifiedaccessendpointspaginator)
+- `client.get_paginator("describe_verified_access_groups")` -> [DescribeVerifiedAccessGroupsPaginator](./paginators.md#describeverifiedaccessgroupspaginator)
+- `client.get_paginator("describe_verified_access_instance_logging_configurations")` -> [DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator](./paginators.md#describeverifiedaccessinstanceloggingconfigurationspaginator)
+- `client.get_paginator("describe_verified_access_instances")` -> [DescribeVerifiedAccessInstancesPaginator](./paginators.md#describeverifiedaccessinstancespaginator)
+- `client.get_paginator("describe_verified_access_trust_providers")` -> [DescribeVerifiedAccessTrustProvidersPaginator](./paginators.md#describeverifiedaccesstrustproviderspaginator)
 - `client.get_paginator("describe_volume_status")` -> [DescribeVolumeStatusPaginator](./paginators.md#describevolumestatuspaginator)
 - `client.get_paginator("describe_volumes")` -> [DescribeVolumesPaginator](./paginators.md#describevolumespaginator)
 - `client.get_paginator("describe_volumes_modifications")` -> [DescribeVolumesModificationsPaginator](./paginators.md#describevolumesmodificationspaginator)

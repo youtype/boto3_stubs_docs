@@ -109,7 +109,8 @@ def create_delivery_stream(
     SplunkDestinationConfiguration: SplunkDestinationConfigurationTypeDef = ...,  # (9)
     HttpEndpointDestinationConfiguration: HttpEndpointDestinationConfigurationTypeDef = ...,  # (10)
     Tags: Sequence[TagTypeDef] = ...,  # (11)
-) -> CreateDeliveryStreamOutputTypeDef:  # (12)
+    AmazonOpenSearchServerlessDestinationConfiguration: AmazonOpenSearchServerlessDestinationConfigurationTypeDef = ...,  # (12)
+) -> CreateDeliveryStreamOutputTypeDef:  # (13)
     ...
 ```
 
@@ -124,7 +125,8 @@ def create_delivery_stream(
 9. See [:material-code-braces: SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef) 
 10. See [:material-code-braces: HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef) 
 11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-12. See [:material-code-braces: CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef) 
+12. See [:material-code-braces: AmazonOpenSearchServerlessDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchserverlessdestinationconfigurationtypedef) 
+13. See [:material-code-braces: CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -485,6 +487,7 @@ def update_destination(
     AmazonopensearchserviceDestinationUpdate: AmazonopensearchserviceDestinationUpdateTypeDef = ...,  # (5)
     SplunkDestinationUpdate: SplunkDestinationUpdateTypeDef = ...,  # (6)
     HttpEndpointDestinationUpdate: HttpEndpointDestinationUpdateTypeDef = ...,  # (7)
+    AmazonOpenSearchServerlessDestinationUpdate: AmazonOpenSearchServerlessDestinationUpdateTypeDef = ...,  # (8)
 ) -> Dict[str, Any]:
     ...
 ```
@@ -496,6 +499,7 @@ def update_destination(
 5. See [:material-code-braces: AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef) 
 6. See [:material-code-braces: SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef) 
 7. See [:material-code-braces: HttpEndpointDestinationUpdateTypeDef](./type_defs.md#httpendpointdestinationupdatetypedef) 
+8. See [:material-code-braces: AmazonOpenSearchServerlessDestinationUpdateTypeDef](./type_defs.md#amazonopensearchserverlessdestinationupdatetypedef) 
 
 
 ```python title="Usage example with kwargs"

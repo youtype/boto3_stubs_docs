@@ -1240,6 +1240,26 @@ class AttachInternetGatewayRequestVpcAttachInternetGatewayTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## AttachVerifiedAccessTrustProviderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AttachVerifiedAccessTrustProviderRequestRequestTypeDef
+
+def get_value() -> AttachVerifiedAccessTrustProviderRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+        "VerifiedAccessTrustProviderId": ...,
+    }
+```
+
+```python title="Definition"
+class AttachVerifiedAccessTrustProviderRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceId: str,
+    VerifiedAccessTrustProviderId: str,
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
 ## AttachVolumeRequestInstanceAttachVolumeTypeDef
 
 ```python title="Usage Example"
@@ -3223,6 +3243,83 @@ class CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef(TypedDict):
 1. See [:material-code-brackets: DnsSupportValueType](./literals.md#dnssupportvaluetype) 
 2. See [:material-code-brackets: Ipv6SupportValueType](./literals.md#ipv6supportvaluetype) 
 3. See [:material-code-brackets: ApplianceModeSupportValueType](./literals.md#appliancemodesupportvaluetype) 
+## CreateVerifiedAccessEndpointEniOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessEndpointEniOptionsTypeDef
+
+def get_value() -> CreateVerifiedAccessEndpointEniOptionsTypeDef:
+    return {
+        "NetworkInterfaceId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessEndpointEniOptionsTypeDef(TypedDict):
+    NetworkInterfaceId: NotRequired[str],
+    Protocol: NotRequired[VerifiedAccessEndpointProtocolType],  # (1)
+    Port: NotRequired[int],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointProtocolType](./literals.md#verifiedaccessendpointprotocoltype) 
+## CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef
+
+def get_value() -> CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef:
+    return {
+        "Protocol": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef(TypedDict):
+    Protocol: NotRequired[VerifiedAccessEndpointProtocolType],  # (1)
+    Port: NotRequired[int],
+    LoadBalancerArn: NotRequired[str],
+    SubnetIds: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointProtocolType](./literals.md#verifiedaccessendpointprotocoltype) 
+## CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef
+
+def get_value() -> CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef:
+    return {
+        "TenantId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef(TypedDict):
+    TenantId: NotRequired[str],
+```
+
+## CreateVerifiedAccessTrustProviderOidcOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessTrustProviderOidcOptionsTypeDef
+
+def get_value() -> CreateVerifiedAccessTrustProviderOidcOptionsTypeDef:
+    return {
+        "Issuer": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessTrustProviderOidcOptionsTypeDef(TypedDict):
+    Issuer: NotRequired[str],
+    AuthorizationEndpoint: NotRequired[str],
+    TokenEndpoint: NotRequired[str],
+    UserInfoEndpoint: NotRequired[str],
+    ClientId: NotRequired[str],
+    ClientSecret: NotRequired[str],
+    Scope: NotRequired[str],
+```
+
 ## CreateVolumePermissionTypeDef
 
 ```python title="Usage Example"
@@ -4742,6 +4839,78 @@ def get_value() -> DeleteTransitGatewayVpcAttachmentRequestRequestTypeDef:
 class DeleteTransitGatewayVpcAttachmentRequestRequestTypeDef(TypedDict):
     TransitGatewayAttachmentId: str,
     DryRun: NotRequired[bool],
+```
+
+## DeleteVerifiedAccessEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessEndpointRequestRequestTypeDef
+
+def get_value() -> DeleteVerifiedAccessEndpointRequestRequestTypeDef:
+    return {
+        "VerifiedAccessEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessEndpointRequestRequestTypeDef(TypedDict):
+    VerifiedAccessEndpointId: str,
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+## DeleteVerifiedAccessGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessGroupRequestRequestTypeDef
+
+def get_value() -> DeleteVerifiedAccessGroupRequestRequestTypeDef:
+    return {
+        "VerifiedAccessGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessGroupRequestRequestTypeDef(TypedDict):
+    VerifiedAccessGroupId: str,
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+## DeleteVerifiedAccessInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessInstanceRequestRequestTypeDef
+
+def get_value() -> DeleteVerifiedAccessInstanceRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessInstanceRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceId: str,
+    DryRun: NotRequired[bool],
+    ClientToken: NotRequired[str],
+```
+
+## DeleteVerifiedAccessTrustProviderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessTrustProviderRequestRequestTypeDef
+
+def get_value() -> DeleteVerifiedAccessTrustProviderRequestRequestTypeDef:
+    return {
+        "VerifiedAccessTrustProviderId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessTrustProviderRequestRequestTypeDef(TypedDict):
+    VerifiedAccessTrustProviderId: str,
+    DryRun: NotRequired[bool],
+    ClientToken: NotRequired[str],
 ```
 
 ## DeleteVolumeRequestRequestTypeDef
@@ -6338,6 +6507,26 @@ class DetachNetworkInterfaceRequestRequestTypeDef(TypedDict):
     Force: NotRequired[bool],
 ```
 
+## DetachVerifiedAccessTrustProviderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DetachVerifiedAccessTrustProviderRequestRequestTypeDef
+
+def get_value() -> DetachVerifiedAccessTrustProviderRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+        "VerifiedAccessTrustProviderId": ...,
+    }
+```
+
+```python title="Definition"
+class DetachVerifiedAccessTrustProviderRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceId: str,
+    VerifiedAccessTrustProviderId: str,
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
 ## DetachVolumeRequestInstanceDetachVolumeTypeDef
 
 ```python title="Usage Example"
@@ -6413,6 +6602,22 @@ class DetachVpnGatewayRequestRequestTypeDef(TypedDict):
     VpcId: str,
     VpnGatewayId: str,
     DryRun: NotRequired[bool],
+```
+
+## DeviceOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeviceOptionsTypeDef
+
+def get_value() -> DeviceOptionsTypeDef:
+    return {
+        "TenantId": ...,
+    }
+```
+
+```python title="Definition"
+class DeviceOptionsTypeDef(TypedDict):
+    TenantId: NotRequired[str],
 ```
 
 ## DisableAddressTransferRequestRequestTypeDef
@@ -8687,6 +8892,40 @@ class TransitGatewayRouteTablePropagationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype) 
 2. See [:material-code-brackets: TransitGatewayPropagationStateType](./literals.md#transitgatewaypropagationstatetype) 
+## GetVerifiedAccessEndpointPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetVerifiedAccessEndpointPolicyRequestRequestTypeDef
+
+def get_value() -> GetVerifiedAccessEndpointPolicyRequestRequestTypeDef:
+    return {
+        "VerifiedAccessEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class GetVerifiedAccessEndpointPolicyRequestRequestTypeDef(TypedDict):
+    VerifiedAccessEndpointId: str,
+    DryRun: NotRequired[bool],
+```
+
+## GetVerifiedAccessGroupPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetVerifiedAccessGroupPolicyRequestRequestTypeDef
+
+def get_value() -> GetVerifiedAccessGroupPolicyRequestRequestTypeDef:
+    return {
+        "VerifiedAccessGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class GetVerifiedAccessGroupPolicyRequestRequestTypeDef(TypedDict):
+    VerifiedAccessGroupId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## GetVpnConnectionDeviceSampleConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11153,6 +11392,140 @@ class ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef(TypedDict):
 1. See [:material-code-brackets: DnsSupportValueType](./literals.md#dnssupportvaluetype) 
 2. See [:material-code-brackets: Ipv6SupportValueType](./literals.md#ipv6supportvaluetype) 
 3. See [:material-code-brackets: ApplianceModeSupportValueType](./literals.md#appliancemodesupportvaluetype) 
+## ModifyVerifiedAccessEndpointEniOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessEndpointEniOptionsTypeDef
+
+def get_value() -> ModifyVerifiedAccessEndpointEniOptionsTypeDef:
+    return {
+        "Protocol": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessEndpointEniOptionsTypeDef(TypedDict):
+    Protocol: NotRequired[VerifiedAccessEndpointProtocolType],  # (1)
+    Port: NotRequired[int],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointProtocolType](./literals.md#verifiedaccessendpointprotocoltype) 
+## ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef
+
+def get_value() -> ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef:
+    return {
+        "SubnetIds": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef(TypedDict):
+    SubnetIds: NotRequired[Sequence[str]],
+    Protocol: NotRequired[VerifiedAccessEndpointProtocolType],  # (1)
+    Port: NotRequired[int],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointProtocolType](./literals.md#verifiedaccessendpointprotocoltype) 
+## ModifyVerifiedAccessEndpointPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessEndpointPolicyRequestRequestTypeDef
+
+def get_value() -> ModifyVerifiedAccessEndpointPolicyRequestRequestTypeDef:
+    return {
+        "VerifiedAccessEndpointId": ...,
+        "PolicyEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessEndpointPolicyRequestRequestTypeDef(TypedDict):
+    VerifiedAccessEndpointId: str,
+    PolicyEnabled: bool,
+    PolicyDocument: NotRequired[str],
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+## ModifyVerifiedAccessGroupPolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessGroupPolicyRequestRequestTypeDef
+
+def get_value() -> ModifyVerifiedAccessGroupPolicyRequestRequestTypeDef:
+    return {
+        "VerifiedAccessGroupId": ...,
+        "PolicyEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessGroupPolicyRequestRequestTypeDef(TypedDict):
+    VerifiedAccessGroupId: str,
+    PolicyEnabled: bool,
+    PolicyDocument: NotRequired[str],
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+## ModifyVerifiedAccessGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessGroupRequestRequestTypeDef
+
+def get_value() -> ModifyVerifiedAccessGroupRequestRequestTypeDef:
+    return {
+        "VerifiedAccessGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessGroupRequestRequestTypeDef(TypedDict):
+    VerifiedAccessGroupId: str,
+    VerifiedAccessInstanceId: NotRequired[str],
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+## ModifyVerifiedAccessInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessInstanceRequestRequestTypeDef
+
+def get_value() -> ModifyVerifiedAccessInstanceRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessInstanceRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceId: str,
+    Description: NotRequired[str],
+    DryRun: NotRequired[bool],
+    ClientToken: NotRequired[str],
+```
+
+## ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef
+
+def get_value() -> ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef:
+    return {
+        "Scope": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef(TypedDict):
+    Scope: NotRequired[str],
+```
+
 ## ModifyVolumeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11674,6 +12047,28 @@ class NetworkInterfacePermissionStateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: NetworkInterfacePermissionStateCodeType](./literals.md#networkinterfacepermissionstatecodetype) 
+## OidcOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import OidcOptionsTypeDef
+
+def get_value() -> OidcOptionsTypeDef:
+    return {
+        "Issuer": ...,
+    }
+```
+
+```python title="Definition"
+class OidcOptionsTypeDef(TypedDict):
+    Issuer: NotRequired[str],
+    AuthorizationEndpoint: NotRequired[str],
+    TokenEndpoint: NotRequired[str],
+    UserInfoEndpoint: NotRequired[str],
+    ClientId: NotRequired[str],
+    ClientSecret: NotRequired[str],
+    Scope: NotRequired[str],
+```
+
 ## PacketHeaderStatementRequestTypeDef
 
 ```python title="Usage Example"
@@ -14332,6 +14727,157 @@ class ValidationErrorTypeDef(TypedDict):
     Message: NotRequired[str],
 ```
 
+## VerifiedAccessEndpointEniOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessEndpointEniOptionsTypeDef
+
+def get_value() -> VerifiedAccessEndpointEniOptionsTypeDef:
+    return {
+        "NetworkInterfaceId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessEndpointEniOptionsTypeDef(TypedDict):
+    NetworkInterfaceId: NotRequired[str],
+    Protocol: NotRequired[VerifiedAccessEndpointProtocolType],  # (1)
+    Port: NotRequired[int],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointProtocolType](./literals.md#verifiedaccessendpointprotocoltype) 
+## VerifiedAccessEndpointLoadBalancerOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessEndpointLoadBalancerOptionsTypeDef
+
+def get_value() -> VerifiedAccessEndpointLoadBalancerOptionsTypeDef:
+    return {
+        "Protocol": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessEndpointLoadBalancerOptionsTypeDef(TypedDict):
+    Protocol: NotRequired[VerifiedAccessEndpointProtocolType],  # (1)
+    Port: NotRequired[int],
+    LoadBalancerArn: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointProtocolType](./literals.md#verifiedaccessendpointprotocoltype) 
+## VerifiedAccessEndpointStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessEndpointStatusTypeDef
+
+def get_value() -> VerifiedAccessEndpointStatusTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessEndpointStatusTypeDef(TypedDict):
+    Code: NotRequired[VerifiedAccessEndpointStatusCodeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointStatusCodeType](./literals.md#verifiedaccessendpointstatuscodetype) 
+## VerifiedAccessTrustProviderCondensedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessTrustProviderCondensedTypeDef
+
+def get_value() -> VerifiedAccessTrustProviderCondensedTypeDef:
+    return {
+        "VerifiedAccessTrustProviderId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessTrustProviderCondensedTypeDef(TypedDict):
+    VerifiedAccessTrustProviderId: NotRequired[str],
+    Description: NotRequired[str],
+    TrustProviderType: NotRequired[TrustProviderTypeType],  # (1)
+    UserTrustProviderType: NotRequired[UserTrustProviderTypeType],  # (2)
+    DeviceTrustProviderType: NotRequired[DeviceTrustProviderTypeType],  # (3)
+```
+
+1. See [:material-code-brackets: TrustProviderTypeType](./literals.md#trustprovidertypetype) 
+2. See [:material-code-brackets: UserTrustProviderTypeType](./literals.md#usertrustprovidertypetype) 
+3. See [:material-code-brackets: DeviceTrustProviderTypeType](./literals.md#devicetrustprovidertypetype) 
+## VerifiedAccessLogCloudWatchLogsDestinationOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogCloudWatchLogsDestinationOptionsTypeDef
+
+def get_value() -> VerifiedAccessLogCloudWatchLogsDestinationOptionsTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogCloudWatchLogsDestinationOptionsTypeDef(TypedDict):
+    Enabled: bool,
+    LogGroup: NotRequired[str],
+```
+
+## VerifiedAccessLogDeliveryStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogDeliveryStatusTypeDef
+
+def get_value() -> VerifiedAccessLogDeliveryStatusTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogDeliveryStatusTypeDef(TypedDict):
+    Code: NotRequired[VerifiedAccessLogDeliveryStatusCodeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VerifiedAccessLogDeliveryStatusCodeType](./literals.md#verifiedaccesslogdeliverystatuscodetype) 
+## VerifiedAccessLogKinesisDataFirehoseDestinationOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogKinesisDataFirehoseDestinationOptionsTypeDef
+
+def get_value() -> VerifiedAccessLogKinesisDataFirehoseDestinationOptionsTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogKinesisDataFirehoseDestinationOptionsTypeDef(TypedDict):
+    Enabled: bool,
+    DeliveryStream: NotRequired[str],
+```
+
+## VerifiedAccessLogS3DestinationOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogS3DestinationOptionsTypeDef
+
+def get_value() -> VerifiedAccessLogS3DestinationOptionsTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogS3DestinationOptionsTypeDef(TypedDict):
+    Enabled: bool,
+    BucketName: NotRequired[str],
+    Prefix: NotRequired[str],
+    BucketOwner: NotRequired[str],
+```
+
 ## VgwTelemetryTypeDef
 
 ```python title="Usage Example"
@@ -15946,6 +16492,48 @@ class GetSerialConsoleAccessStatusResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVerifiedAccessEndpointPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetVerifiedAccessEndpointPolicyResultTypeDef
+
+def get_value() -> GetVerifiedAccessEndpointPolicyResultTypeDef:
+    return {
+        "PolicyEnabled": ...,
+        "PolicyDocument": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVerifiedAccessEndpointPolicyResultTypeDef(TypedDict):
+    PolicyEnabled: bool,
+    PolicyDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVerifiedAccessGroupPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetVerifiedAccessGroupPolicyResultTypeDef
+
+def get_value() -> GetVerifiedAccessGroupPolicyResultTypeDef:
+    return {
+        "PolicyEnabled": ...,
+        "PolicyDocument": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVerifiedAccessGroupPolicyResultTypeDef(TypedDict):
+    PolicyEnabled: bool,
+    PolicyDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVpnConnectionDeviceSampleConfigurationResultTypeDef
 
 ```python title="Usage Example"
@@ -16367,6 +16955,48 @@ def get_value() -> ModifySpotFleetRequestResponseTypeDef:
 ```python title="Definition"
 class ModifySpotFleetRequestResponseTypeDef(TypedDict):
     Return: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVerifiedAccessEndpointPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessEndpointPolicyResultTypeDef
+
+def get_value() -> ModifyVerifiedAccessEndpointPolicyResultTypeDef:
+    return {
+        "PolicyEnabled": ...,
+        "PolicyDocument": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessEndpointPolicyResultTypeDef(TypedDict):
+    PolicyEnabled: bool,
+    PolicyDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVerifiedAccessGroupPolicyResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessGroupPolicyResultTypeDef
+
+def get_value() -> ModifyVerifiedAccessGroupPolicyResultTypeDef:
+    return {
+        "PolicyEnabled": ...,
+        "PolicyDocument": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessGroupPolicyResultTypeDef(TypedDict):
+    PolicyEnabled: bool,
+    PolicyDocument: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -18606,6 +19236,31 @@ class TrunkInterfaceAssociationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InterfaceProtocolTypeType](./literals.md#interfaceprotocoltypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## VerifiedAccessGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessGroupTypeDef
+
+def get_value() -> VerifiedAccessGroupTypeDef:
+    return {
+        "VerifiedAccessGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessGroupTypeDef(TypedDict):
+    VerifiedAccessGroupId: NotRequired[str],
+    VerifiedAccessInstanceId: NotRequired[str],
+    Description: NotRequired[str],
+    Owner: NotRequired[str],
+    VerifiedAccessGroupArn: NotRequired[str],
+    CreationTime: NotRequired[str],
+    LastUpdatedTime: NotRequired[str],
+    DeletionTime: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## VpcClassicLinkTypeDef
 
 ```python title="Usage Example"
@@ -25193,6 +25848,222 @@ class DescribeTrunkInterfaceAssociationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeVerifiedAccessEndpointsRequestDescribeVerifiedAccessEndpointsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessEndpointsRequestDescribeVerifiedAccessEndpointsPaginateTypeDef
+
+def get_value() -> DescribeVerifiedAccessEndpointsRequestDescribeVerifiedAccessEndpointsPaginateTypeDef:
+    return {
+        "VerifiedAccessEndpointIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessEndpointsRequestDescribeVerifiedAccessEndpointsPaginateTypeDef(TypedDict):
+    VerifiedAccessEndpointIds: NotRequired[Sequence[str]],
+    VerifiedAccessInstanceId: NotRequired[str],
+    VerifiedAccessGroupId: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeVerifiedAccessEndpointsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessEndpointsRequestRequestTypeDef
+
+def get_value() -> DescribeVerifiedAccessEndpointsRequestRequestTypeDef:
+    return {
+        "VerifiedAccessEndpointIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessEndpointsRequestRequestTypeDef(TypedDict):
+    VerifiedAccessEndpointIds: NotRequired[Sequence[str]],
+    VerifiedAccessInstanceId: NotRequired[str],
+    VerifiedAccessGroupId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeVerifiedAccessGroupsRequestDescribeVerifiedAccessGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessGroupsRequestDescribeVerifiedAccessGroupsPaginateTypeDef
+
+def get_value() -> DescribeVerifiedAccessGroupsRequestDescribeVerifiedAccessGroupsPaginateTypeDef:
+    return {
+        "VerifiedAccessGroupIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessGroupsRequestDescribeVerifiedAccessGroupsPaginateTypeDef(TypedDict):
+    VerifiedAccessGroupIds: NotRequired[Sequence[str]],
+    VerifiedAccessInstanceId: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeVerifiedAccessGroupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessGroupsRequestRequestTypeDef
+
+def get_value() -> DescribeVerifiedAccessGroupsRequestRequestTypeDef:
+    return {
+        "VerifiedAccessGroupIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessGroupsRequestRequestTypeDef(TypedDict):
+    VerifiedAccessGroupIds: NotRequired[Sequence[str]],
+    VerifiedAccessInstanceId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeVerifiedAccessInstanceLoggingConfigurationsRequestDescribeVerifiedAccessInstanceLoggingConfigurationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessInstanceLoggingConfigurationsRequestDescribeVerifiedAccessInstanceLoggingConfigurationsPaginateTypeDef
+
+def get_value() -> DescribeVerifiedAccessInstanceLoggingConfigurationsRequestDescribeVerifiedAccessInstanceLoggingConfigurationsPaginateTypeDef:
+    return {
+        "VerifiedAccessInstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessInstanceLoggingConfigurationsRequestDescribeVerifiedAccessInstanceLoggingConfigurationsPaginateTypeDef(TypedDict):
+    VerifiedAccessInstanceIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeVerifiedAccessInstanceLoggingConfigurationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessInstanceLoggingConfigurationsRequestRequestTypeDef
+
+def get_value() -> DescribeVerifiedAccessInstanceLoggingConfigurationsRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessInstanceLoggingConfigurationsRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceIds: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeVerifiedAccessInstancesRequestDescribeVerifiedAccessInstancesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessInstancesRequestDescribeVerifiedAccessInstancesPaginateTypeDef
+
+def get_value() -> DescribeVerifiedAccessInstancesRequestDescribeVerifiedAccessInstancesPaginateTypeDef:
+    return {
+        "VerifiedAccessInstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessInstancesRequestDescribeVerifiedAccessInstancesPaginateTypeDef(TypedDict):
+    VerifiedAccessInstanceIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeVerifiedAccessInstancesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessInstancesRequestRequestTypeDef
+
+def get_value() -> DescribeVerifiedAccessInstancesRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessInstancesRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceIds: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeVerifiedAccessTrustProvidersRequestDescribeVerifiedAccessTrustProvidersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessTrustProvidersRequestDescribeVerifiedAccessTrustProvidersPaginateTypeDef
+
+def get_value() -> DescribeVerifiedAccessTrustProvidersRequestDescribeVerifiedAccessTrustProvidersPaginateTypeDef:
+    return {
+        "VerifiedAccessTrustProviderIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessTrustProvidersRequestDescribeVerifiedAccessTrustProvidersPaginateTypeDef(TypedDict):
+    VerifiedAccessTrustProviderIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeVerifiedAccessTrustProvidersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessTrustProvidersRequestRequestTypeDef
+
+def get_value() -> DescribeVerifiedAccessTrustProvidersRequestRequestTypeDef:
+    return {
+        "VerifiedAccessTrustProviderIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessTrustProvidersRequestRequestTypeDef(TypedDict):
+    VerifiedAccessTrustProviderIds: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeVolumeStatusRequestDescribeVolumeStatusPaginateTypeDef
 
 ```python title="Usage Example"
@@ -29779,6 +30650,51 @@ class ModifyTransitGatewayVpcAttachmentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentrequestoptionstypedef) 
+## ModifyVerifiedAccessEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessEndpointRequestRequestTypeDef
+
+def get_value() -> ModifyVerifiedAccessEndpointRequestRequestTypeDef:
+    return {
+        "VerifiedAccessEndpointId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessEndpointRequestRequestTypeDef(TypedDict):
+    VerifiedAccessEndpointId: str,
+    VerifiedAccessGroupId: NotRequired[str],
+    LoadBalancerOptions: NotRequired[ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef],  # (1)
+    NetworkInterfaceOptions: NotRequired[ModifyVerifiedAccessEndpointEniOptionsTypeDef],  # (2)
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessEndpointLoadBalancerOptionsTypeDef](./type_defs.md#modifyverifiedaccessendpointloadbalanceroptionstypedef) 
+2. See [:material-code-braces: ModifyVerifiedAccessEndpointEniOptionsTypeDef](./type_defs.md#modifyverifiedaccessendpointenioptionstypedef) 
+## ModifyVerifiedAccessTrustProviderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessTrustProviderRequestRequestTypeDef
+
+def get_value() -> ModifyVerifiedAccessTrustProviderRequestRequestTypeDef:
+    return {
+        "VerifiedAccessTrustProviderId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessTrustProviderRequestRequestTypeDef(TypedDict):
+    VerifiedAccessTrustProviderId: str,
+    OidcOptions: NotRequired[ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef],  # (1)
+    Description: NotRequired[str],
+    DryRun: NotRequired[bool],
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ModifyVerifiedAccessTrustProviderOidcOptionsTypeDef](./type_defs.md#modifyverifiedaccesstrustprovideroidcoptionstypedef) 
 ## ModifyVpcPeeringConnectionOptionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -29929,6 +30845,38 @@ class NetworkInterfacePermissionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InterfacePermissionTypeType](./literals.md#interfacepermissiontypetype) 
 2. See [:material-code-braces: NetworkInterfacePermissionStateTypeDef](./type_defs.md#networkinterfacepermissionstatetypedef) 
+## VerifiedAccessTrustProviderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessTrustProviderTypeDef
+
+def get_value() -> VerifiedAccessTrustProviderTypeDef:
+    return {
+        "VerifiedAccessTrustProviderId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessTrustProviderTypeDef(TypedDict):
+    VerifiedAccessTrustProviderId: NotRequired[str],
+    Description: NotRequired[str],
+    TrustProviderType: NotRequired[TrustProviderTypeType],  # (1)
+    UserTrustProviderType: NotRequired[UserTrustProviderTypeType],  # (2)
+    DeviceTrustProviderType: NotRequired[DeviceTrustProviderTypeType],  # (3)
+    OidcOptions: NotRequired[OidcOptionsTypeDef],  # (4)
+    DeviceOptions: NotRequired[DeviceOptionsTypeDef],  # (5)
+    PolicyReferenceName: NotRequired[str],
+    CreationTime: NotRequired[str],
+    LastUpdatedTime: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
+```
+
+1. See [:material-code-brackets: TrustProviderTypeType](./literals.md#trustprovidertypetype) 
+2. See [:material-code-brackets: UserTrustProviderTypeType](./literals.md#usertrustprovidertypetype) 
+3. See [:material-code-brackets: DeviceTrustProviderTypeType](./literals.md#devicetrustprovidertypetype) 
+4. See [:material-code-braces: OidcOptionsTypeDef](./type_defs.md#oidcoptionstypedef) 
+5. See [:material-code-braces: DeviceOptionsTypeDef](./type_defs.md#deviceoptionstypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PathStatementRequestTypeDef
 
 ```python title="Usage Example"
@@ -31096,6 +32044,148 @@ class ValidationWarningTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ValidationErrorTypeDef](./type_defs.md#validationerrortypedef) 
+## VerifiedAccessEndpointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessEndpointTypeDef
+
+def get_value() -> VerifiedAccessEndpointTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessEndpointTypeDef(TypedDict):
+    VerifiedAccessInstanceId: NotRequired[str],
+    VerifiedAccessGroupId: NotRequired[str],
+    VerifiedAccessEndpointId: NotRequired[str],
+    ApplicationDomain: NotRequired[str],
+    EndpointType: NotRequired[VerifiedAccessEndpointTypeType],  # (1)
+    AttachmentType: NotRequired[VerifiedAccessEndpointAttachmentTypeType],  # (2)
+    DomainCertificateArn: NotRequired[str],
+    EndpointDomain: NotRequired[str],
+    DeviceValidationDomain: NotRequired[str],
+    SecurityGroupIds: NotRequired[List[str]],
+    LoadBalancerOptions: NotRequired[VerifiedAccessEndpointLoadBalancerOptionsTypeDef],  # (3)
+    NetworkInterfaceOptions: NotRequired[VerifiedAccessEndpointEniOptionsTypeDef],  # (4)
+    Status: NotRequired[VerifiedAccessEndpointStatusTypeDef],  # (5)
+    Description: NotRequired[str],
+    CreationTime: NotRequired[str],
+    LastUpdatedTime: NotRequired[str],
+    DeletionTime: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointTypeType](./literals.md#verifiedaccessendpointtypetype) 
+2. See [:material-code-brackets: VerifiedAccessEndpointAttachmentTypeType](./literals.md#verifiedaccessendpointattachmenttypetype) 
+3. See [:material-code-braces: VerifiedAccessEndpointLoadBalancerOptionsTypeDef](./type_defs.md#verifiedaccessendpointloadbalanceroptionstypedef) 
+4. See [:material-code-braces: VerifiedAccessEndpointEniOptionsTypeDef](./type_defs.md#verifiedaccessendpointenioptionstypedef) 
+5. See [:material-code-braces: VerifiedAccessEndpointStatusTypeDef](./type_defs.md#verifiedaccessendpointstatustypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## VerifiedAccessInstanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessInstanceTypeDef
+
+def get_value() -> VerifiedAccessInstanceTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessInstanceTypeDef(TypedDict):
+    VerifiedAccessInstanceId: NotRequired[str],
+    Description: NotRequired[str],
+    VerifiedAccessTrustProviders: NotRequired[List[VerifiedAccessTrustProviderCondensedTypeDef]],  # (1)
+    CreationTime: NotRequired[str],
+    LastUpdatedTime: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessTrustProviderCondensedTypeDef](./type_defs.md#verifiedaccesstrustprovidercondensedtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## VerifiedAccessLogCloudWatchLogsDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogCloudWatchLogsDestinationTypeDef
+
+def get_value() -> VerifiedAccessLogCloudWatchLogsDestinationTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogCloudWatchLogsDestinationTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    DeliveryStatus: NotRequired[VerifiedAccessLogDeliveryStatusTypeDef],  # (1)
+    LogGroup: NotRequired[str],
+```
+
+1. See [:material-code-braces: VerifiedAccessLogDeliveryStatusTypeDef](./type_defs.md#verifiedaccesslogdeliverystatustypedef) 
+## VerifiedAccessLogKinesisDataFirehoseDestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogKinesisDataFirehoseDestinationTypeDef
+
+def get_value() -> VerifiedAccessLogKinesisDataFirehoseDestinationTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogKinesisDataFirehoseDestinationTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    DeliveryStatus: NotRequired[VerifiedAccessLogDeliveryStatusTypeDef],  # (1)
+    DeliveryStream: NotRequired[str],
+```
+
+1. See [:material-code-braces: VerifiedAccessLogDeliveryStatusTypeDef](./type_defs.md#verifiedaccesslogdeliverystatustypedef) 
+## VerifiedAccessLogS3DestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogS3DestinationTypeDef
+
+def get_value() -> VerifiedAccessLogS3DestinationTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogS3DestinationTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    DeliveryStatus: NotRequired[VerifiedAccessLogDeliveryStatusTypeDef],  # (1)
+    BucketName: NotRequired[str],
+    Prefix: NotRequired[str],
+    BucketOwner: NotRequired[str],
+```
+
+1. See [:material-code-braces: VerifiedAccessLogDeliveryStatusTypeDef](./type_defs.md#verifiedaccesslogdeliverystatustypedef) 
+## VerifiedAccessLogOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogOptionsTypeDef
+
+def get_value() -> VerifiedAccessLogOptionsTypeDef:
+    return {
+        "S3": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogOptionsTypeDef(TypedDict):
+    S3: NotRequired[VerifiedAccessLogS3DestinationOptionsTypeDef],  # (1)
+    CloudWatchLogs: NotRequired[VerifiedAccessLogCloudWatchLogsDestinationOptionsTypeDef],  # (2)
+    KinesisDataFirehose: NotRequired[VerifiedAccessLogKinesisDataFirehoseDestinationOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: VerifiedAccessLogS3DestinationOptionsTypeDef](./type_defs.md#verifiedaccesslogs3destinationoptionstypedef) 
+2. See [:material-code-braces: VerifiedAccessLogCloudWatchLogsDestinationOptionsTypeDef](./type_defs.md#verifiedaccesslogcloudwatchlogsdestinationoptionstypedef) 
+3. See [:material-code-braces: VerifiedAccessLogKinesisDataFirehoseDestinationOptionsTypeDef](./type_defs.md#verifiedaccesslogkinesisdatafirehosedestinationoptionstypedef) 
 ## VolumeResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -34031,6 +35121,119 @@ class CreateTransitGatewayVpcAttachmentRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#createtransitgatewayvpcattachmentrequestoptionstypedef) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateVerifiedAccessEndpointRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessEndpointRequestRequestTypeDef
+
+def get_value() -> CreateVerifiedAccessEndpointRequestRequestTypeDef:
+    return {
+        "VerifiedAccessGroupId": ...,
+        "EndpointType": ...,
+        "AttachmentType": ...,
+        "DomainCertificateArn": ...,
+        "ApplicationDomain": ...,
+        "EndpointDomainPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessEndpointRequestRequestTypeDef(TypedDict):
+    VerifiedAccessGroupId: str,
+    EndpointType: VerifiedAccessEndpointTypeType,  # (1)
+    AttachmentType: VerifiedAccessEndpointAttachmentTypeType,  # (2)
+    DomainCertificateArn: str,
+    ApplicationDomain: str,
+    EndpointDomainPrefix: str,
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    LoadBalancerOptions: NotRequired[CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef],  # (3)
+    NetworkInterfaceOptions: NotRequired[CreateVerifiedAccessEndpointEniOptionsTypeDef],  # (4)
+    Description: NotRequired[str],
+    PolicyDocument: NotRequired[str],
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (5)
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: VerifiedAccessEndpointTypeType](./literals.md#verifiedaccessendpointtypetype) 
+2. See [:material-code-brackets: VerifiedAccessEndpointAttachmentTypeType](./literals.md#verifiedaccessendpointattachmenttypetype) 
+3. See [:material-code-braces: CreateVerifiedAccessEndpointLoadBalancerOptionsTypeDef](./type_defs.md#createverifiedaccessendpointloadbalanceroptionstypedef) 
+4. See [:material-code-braces: CreateVerifiedAccessEndpointEniOptionsTypeDef](./type_defs.md#createverifiedaccessendpointenioptionstypedef) 
+5. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateVerifiedAccessGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessGroupRequestRequestTypeDef
+
+def get_value() -> CreateVerifiedAccessGroupRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessGroupRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceId: str,
+    Description: NotRequired[str],
+    PolicyDocument: NotRequired[str],
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateVerifiedAccessInstanceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessInstanceRequestRequestTypeDef
+
+def get_value() -> CreateVerifiedAccessInstanceRequestRequestTypeDef:
+    return {
+        "Description": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessInstanceRequestRequestTypeDef(TypedDict):
+    Description: NotRequired[str],
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateVerifiedAccessTrustProviderRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessTrustProviderRequestRequestTypeDef
+
+def get_value() -> CreateVerifiedAccessTrustProviderRequestRequestTypeDef:
+    return {
+        "TrustProviderType": ...,
+        "PolicyReferenceName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessTrustProviderRequestRequestTypeDef(TypedDict):
+    TrustProviderType: TrustProviderTypeType,  # (1)
+    PolicyReferenceName: str,
+    UserTrustProviderType: NotRequired[UserTrustProviderTypeType],  # (2)
+    DeviceTrustProviderType: NotRequired[DeviceTrustProviderTypeType],  # (3)
+    OidcOptions: NotRequired[CreateVerifiedAccessTrustProviderOidcOptionsTypeDef],  # (4)
+    DeviceOptions: NotRequired[CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef],  # (5)
+    Description: NotRequired[str],
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (6)
+    ClientToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: TrustProviderTypeType](./literals.md#trustprovidertypetype) 
+2. See [:material-code-brackets: UserTrustProviderTypeType](./literals.md#usertrustprovidertypetype) 
+3. See [:material-code-brackets: DeviceTrustProviderTypeType](./literals.md#devicetrustprovidertypetype) 
+4. See [:material-code-braces: CreateVerifiedAccessTrustProviderOidcOptionsTypeDef](./type_defs.md#createverifiedaccesstrustprovideroidcoptionstypedef) 
+5. See [:material-code-braces: CreateVerifiedAccessTrustProviderDeviceOptionsTypeDef](./type_defs.md#createverifiedaccesstrustproviderdeviceoptionstypedef) 
+6. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## CreateVolumeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -34792,6 +35995,88 @@ class DescribeTrunkInterfaceAssociationsResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TrunkInterfaceAssociationTypeDef](./type_defs.md#trunkinterfaceassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVerifiedAccessGroupResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessGroupResultTypeDef
+
+def get_value() -> CreateVerifiedAccessGroupResultTypeDef:
+    return {
+        "VerifiedAccessGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessGroupResultTypeDef(TypedDict):
+    VerifiedAccessGroup: VerifiedAccessGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessGroupTypeDef](./type_defs.md#verifiedaccessgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteVerifiedAccessGroupResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessGroupResultTypeDef
+
+def get_value() -> DeleteVerifiedAccessGroupResultTypeDef:
+    return {
+        "VerifiedAccessGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessGroupResultTypeDef(TypedDict):
+    VerifiedAccessGroup: VerifiedAccessGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessGroupTypeDef](./type_defs.md#verifiedaccessgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVerifiedAccessGroupsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessGroupsResultTypeDef
+
+def get_value() -> DescribeVerifiedAccessGroupsResultTypeDef:
+    return {
+        "VerifiedAccessGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessGroupsResultTypeDef(TypedDict):
+    VerifiedAccessGroups: List[VerifiedAccessGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessGroupTypeDef](./type_defs.md#verifiedaccessgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVerifiedAccessGroupResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessGroupResultTypeDef
+
+def get_value() -> ModifyVerifiedAccessGroupResultTypeDef:
+    return {
+        "VerifiedAccessGroup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessGroupResultTypeDef(TypedDict):
+    VerifiedAccessGroup: VerifiedAccessGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessGroupTypeDef](./type_defs.md#verifiedaccessgrouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVpcClassicLinkResultTypeDef
 
@@ -38675,6 +39960,88 @@ class DescribeNetworkInterfacePermissionsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkInterfacePermissionTypeDef](./type_defs.md#networkinterfacepermissiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVerifiedAccessTrustProviderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessTrustProviderResultTypeDef
+
+def get_value() -> CreateVerifiedAccessTrustProviderResultTypeDef:
+    return {
+        "VerifiedAccessTrustProvider": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessTrustProviderResultTypeDef(TypedDict):
+    VerifiedAccessTrustProvider: VerifiedAccessTrustProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessTrustProviderTypeDef](./type_defs.md#verifiedaccesstrustprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteVerifiedAccessTrustProviderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessTrustProviderResultTypeDef
+
+def get_value() -> DeleteVerifiedAccessTrustProviderResultTypeDef:
+    return {
+        "VerifiedAccessTrustProvider": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessTrustProviderResultTypeDef(TypedDict):
+    VerifiedAccessTrustProvider: VerifiedAccessTrustProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessTrustProviderTypeDef](./type_defs.md#verifiedaccesstrustprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVerifiedAccessTrustProvidersResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessTrustProvidersResultTypeDef
+
+def get_value() -> DescribeVerifiedAccessTrustProvidersResultTypeDef:
+    return {
+        "VerifiedAccessTrustProviders": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessTrustProvidersResultTypeDef(TypedDict):
+    VerifiedAccessTrustProviders: List[VerifiedAccessTrustProviderTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessTrustProviderTypeDef](./type_defs.md#verifiedaccesstrustprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVerifiedAccessTrustProviderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessTrustProviderResultTypeDef
+
+def get_value() -> ModifyVerifiedAccessTrustProviderResultTypeDef:
+    return {
+        "VerifiedAccessTrustProvider": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessTrustProviderResultTypeDef(TypedDict):
+    VerifiedAccessTrustProvider: VerifiedAccessTrustProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessTrustProviderTypeDef](./type_defs.md#verifiedaccesstrustprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AccessScopePathRequestTypeDef
 
 ```python title="Usage Example"
@@ -40563,6 +41930,258 @@ class CreateLaunchTemplateResultTypeDef(TypedDict):
 1. See [:material-code-braces: LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef) 
 2. See [:material-code-braces: ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVerifiedAccessEndpointResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessEndpointResultTypeDef
+
+def get_value() -> CreateVerifiedAccessEndpointResultTypeDef:
+    return {
+        "VerifiedAccessEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessEndpointResultTypeDef(TypedDict):
+    VerifiedAccessEndpoint: VerifiedAccessEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessEndpointTypeDef](./type_defs.md#verifiedaccessendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteVerifiedAccessEndpointResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessEndpointResultTypeDef
+
+def get_value() -> DeleteVerifiedAccessEndpointResultTypeDef:
+    return {
+        "VerifiedAccessEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessEndpointResultTypeDef(TypedDict):
+    VerifiedAccessEndpoint: VerifiedAccessEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessEndpointTypeDef](./type_defs.md#verifiedaccessendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVerifiedAccessEndpointsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessEndpointsResultTypeDef
+
+def get_value() -> DescribeVerifiedAccessEndpointsResultTypeDef:
+    return {
+        "VerifiedAccessEndpoints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessEndpointsResultTypeDef(TypedDict):
+    VerifiedAccessEndpoints: List[VerifiedAccessEndpointTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessEndpointTypeDef](./type_defs.md#verifiedaccessendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVerifiedAccessEndpointResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessEndpointResultTypeDef
+
+def get_value() -> ModifyVerifiedAccessEndpointResultTypeDef:
+    return {
+        "VerifiedAccessEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessEndpointResultTypeDef(TypedDict):
+    VerifiedAccessEndpoint: VerifiedAccessEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessEndpointTypeDef](./type_defs.md#verifiedaccessendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AttachVerifiedAccessTrustProviderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AttachVerifiedAccessTrustProviderResultTypeDef
+
+def get_value() -> AttachVerifiedAccessTrustProviderResultTypeDef:
+    return {
+        "VerifiedAccessTrustProvider": ...,
+        "VerifiedAccessInstance": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AttachVerifiedAccessTrustProviderResultTypeDef(TypedDict):
+    VerifiedAccessTrustProvider: VerifiedAccessTrustProviderTypeDef,  # (1)
+    VerifiedAccessInstance: VerifiedAccessInstanceTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: VerifiedAccessTrustProviderTypeDef](./type_defs.md#verifiedaccesstrustprovidertypedef) 
+2. See [:material-code-braces: VerifiedAccessInstanceTypeDef](./type_defs.md#verifiedaccessinstancetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateVerifiedAccessInstanceResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateVerifiedAccessInstanceResultTypeDef
+
+def get_value() -> CreateVerifiedAccessInstanceResultTypeDef:
+    return {
+        "VerifiedAccessInstance": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateVerifiedAccessInstanceResultTypeDef(TypedDict):
+    VerifiedAccessInstance: VerifiedAccessInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessInstanceTypeDef](./type_defs.md#verifiedaccessinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteVerifiedAccessInstanceResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteVerifiedAccessInstanceResultTypeDef
+
+def get_value() -> DeleteVerifiedAccessInstanceResultTypeDef:
+    return {
+        "VerifiedAccessInstance": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteVerifiedAccessInstanceResultTypeDef(TypedDict):
+    VerifiedAccessInstance: VerifiedAccessInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessInstanceTypeDef](./type_defs.md#verifiedaccessinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVerifiedAccessInstancesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessInstancesResultTypeDef
+
+def get_value() -> DescribeVerifiedAccessInstancesResultTypeDef:
+    return {
+        "VerifiedAccessInstances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessInstancesResultTypeDef(TypedDict):
+    VerifiedAccessInstances: List[VerifiedAccessInstanceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessInstanceTypeDef](./type_defs.md#verifiedaccessinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DetachVerifiedAccessTrustProviderResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DetachVerifiedAccessTrustProviderResultTypeDef
+
+def get_value() -> DetachVerifiedAccessTrustProviderResultTypeDef:
+    return {
+        "VerifiedAccessTrustProvider": ...,
+        "VerifiedAccessInstance": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetachVerifiedAccessTrustProviderResultTypeDef(TypedDict):
+    VerifiedAccessTrustProvider: VerifiedAccessTrustProviderTypeDef,  # (1)
+    VerifiedAccessInstance: VerifiedAccessInstanceTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: VerifiedAccessTrustProviderTypeDef](./type_defs.md#verifiedaccesstrustprovidertypedef) 
+2. See [:material-code-braces: VerifiedAccessInstanceTypeDef](./type_defs.md#verifiedaccessinstancetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVerifiedAccessInstanceResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessInstanceResultTypeDef
+
+def get_value() -> ModifyVerifiedAccessInstanceResultTypeDef:
+    return {
+        "VerifiedAccessInstance": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessInstanceResultTypeDef(TypedDict):
+    VerifiedAccessInstance: VerifiedAccessInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessInstanceTypeDef](./type_defs.md#verifiedaccessinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VerifiedAccessLogsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessLogsTypeDef
+
+def get_value() -> VerifiedAccessLogsTypeDef:
+    return {
+        "S3": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessLogsTypeDef(TypedDict):
+    S3: NotRequired[VerifiedAccessLogS3DestinationTypeDef],  # (1)
+    CloudWatchLogs: NotRequired[VerifiedAccessLogCloudWatchLogsDestinationTypeDef],  # (2)
+    KinesisDataFirehose: NotRequired[VerifiedAccessLogKinesisDataFirehoseDestinationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: VerifiedAccessLogS3DestinationTypeDef](./type_defs.md#verifiedaccesslogs3destinationtypedef) 
+2. See [:material-code-braces: VerifiedAccessLogCloudWatchLogsDestinationTypeDef](./type_defs.md#verifiedaccesslogcloudwatchlogsdestinationtypedef) 
+3. See [:material-code-braces: VerifiedAccessLogKinesisDataFirehoseDestinationTypeDef](./type_defs.md#verifiedaccesslogkinesisdatafirehosedestinationtypedef) 
+## ModifyVerifiedAccessInstanceLoggingConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessInstanceLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> ModifyVerifiedAccessInstanceLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+        "AccessLogs": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessInstanceLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    VerifiedAccessInstanceId: str,
+    AccessLogs: VerifiedAccessLogOptionsTypeDef,  # (1)
+    DryRun: NotRequired[bool],
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: VerifiedAccessLogOptionsTypeDef](./type_defs.md#verifiedaccesslogoptionstypedef) 
 ## DescribeVolumesResultTypeDef
 
 ```python title="Usage Example"
@@ -42198,6 +43817,24 @@ class GetTransitGatewayPolicyTableEntriesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: TransitGatewayPolicyTableEntryTypeDef](./type_defs.md#transitgatewaypolicytableentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VerifiedAccessInstanceLoggingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import VerifiedAccessInstanceLoggingConfigurationTypeDef
+
+def get_value() -> VerifiedAccessInstanceLoggingConfigurationTypeDef:
+    return {
+        "VerifiedAccessInstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class VerifiedAccessInstanceLoggingConfigurationTypeDef(TypedDict):
+    VerifiedAccessInstanceId: NotRequired[str],
+    AccessLogs: NotRequired[VerifiedAccessLogsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: VerifiedAccessLogsTypeDef](./type_defs.md#verifiedaccesslogstypedef) 
 ## DescribeVolumeStatusResultTypeDef
 
 ```python title="Usage Example"
@@ -42996,6 +44633,48 @@ class GetNetworkInsightsAccessScopeContentResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NetworkInsightsAccessScopeContentTypeDef](./type_defs.md#networkinsightsaccessscopecontenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef
+
+def get_value() -> DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef:
+    return {
+        "LoggingConfigurations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef(TypedDict):
+    LoggingConfigurations: List[VerifiedAccessInstanceLoggingConfigurationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessInstanceLoggingConfigurationTypeDef](./type_defs.md#verifiedaccessinstanceloggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyVerifiedAccessInstanceLoggingConfigurationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyVerifiedAccessInstanceLoggingConfigurationResultTypeDef
+
+def get_value() -> ModifyVerifiedAccessInstanceLoggingConfigurationResultTypeDef:
+    return {
+        "LoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyVerifiedAccessInstanceLoggingConfigurationResultTypeDef(TypedDict):
+    LoggingConfiguration: VerifiedAccessInstanceLoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VerifiedAccessInstanceLoggingConfigurationTypeDef](./type_defs.md#verifiedaccessinstanceloggingconfigurationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetNetworkInsightsAccessScopeAnalysisFindingsResultTypeDef
 

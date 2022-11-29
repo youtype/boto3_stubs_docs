@@ -5736,6 +5736,319 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeTrunkInterfaceAssociationsRequestDescribeTrunkInterfaceAssociationsPaginateTypeDef](./type_defs.md#describetrunkinterfaceassociationsrequestdescribetrunkinterfaceassociationspaginatetypedef) 
+## DescribeVerifiedAccessEndpointsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_verified_access_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVerifiedAccessEndpoints)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessEndpointsPaginator
+
+def get_describe_verified_access_endpoints_paginator() -> DescribeVerifiedAccessEndpointsPaginator:
+    return Session().client("ec2").get_paginator("describe_verified_access_endpoints")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessEndpointsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVerifiedAccessEndpointsPaginator = client.get_paginator("describe_verified_access_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVerifiedAccessEndpointsPaginator](./paginators.md#describeverifiedaccessendpointspaginator)
+3. item: [:material-code-braces: DescribeVerifiedAccessEndpointsResultTypeDef](./type_defs.md#describeverifiedaccessendpointsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeVerifiedAccessEndpointsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VerifiedAccessEndpointIds: Sequence[str] = ...,
+    VerifiedAccessInstanceId: str = ...,
+    VerifiedAccessGroupId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVerifiedAccessEndpointsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVerifiedAccessEndpointsResultTypeDef](./type_defs.md#describeverifiedaccessendpointsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessEndpointsRequestDescribeVerifiedAccessEndpointsPaginateTypeDef = {  # (1)
+    "VerifiedAccessEndpointIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessEndpointsRequestDescribeVerifiedAccessEndpointsPaginateTypeDef](./type_defs.md#describeverifiedaccessendpointsrequestdescribeverifiedaccessendpointspaginatetypedef) 
+## DescribeVerifiedAccessGroupsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_verified_access_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVerifiedAccessGroups)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessGroupsPaginator
+
+def get_describe_verified_access_groups_paginator() -> DescribeVerifiedAccessGroupsPaginator:
+    return Session().client("ec2").get_paginator("describe_verified_access_groups")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessGroupsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVerifiedAccessGroupsPaginator = client.get_paginator("describe_verified_access_groups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVerifiedAccessGroupsPaginator](./paginators.md#describeverifiedaccessgroupspaginator)
+3. item: [:material-code-braces: DescribeVerifiedAccessGroupsResultTypeDef](./type_defs.md#describeverifiedaccessgroupsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeVerifiedAccessGroupsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VerifiedAccessGroupIds: Sequence[str] = ...,
+    VerifiedAccessInstanceId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVerifiedAccessGroupsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVerifiedAccessGroupsResultTypeDef](./type_defs.md#describeverifiedaccessgroupsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessGroupsRequestDescribeVerifiedAccessGroupsPaginateTypeDef = {  # (1)
+    "VerifiedAccessGroupIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessGroupsRequestDescribeVerifiedAccessGroupsPaginateTypeDef](./type_defs.md#describeverifiedaccessgroupsrequestdescribeverifiedaccessgroupspaginatetypedef) 
+## DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_verified_access_instance_logging_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVerifiedAccessInstanceLoggingConfigurations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator
+
+def get_describe_verified_access_instance_logging_configurations_paginator() -> DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator:
+    return Session().client("ec2").get_paginator("describe_verified_access_instance_logging_configurations")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator = client.get_paginator("describe_verified_access_instance_logging_configurations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator](./paginators.md#describeverifiedaccessinstanceloggingconfigurationspaginator)
+3. item: [:material-code-braces: DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef](./type_defs.md#describeverifiedaccessinstanceloggingconfigurationsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeVerifiedAccessInstanceLoggingConfigurationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VerifiedAccessInstanceIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVerifiedAccessInstanceLoggingConfigurationsResultTypeDef](./type_defs.md#describeverifiedaccessinstanceloggingconfigurationsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessInstanceLoggingConfigurationsRequestDescribeVerifiedAccessInstanceLoggingConfigurationsPaginateTypeDef = {  # (1)
+    "VerifiedAccessInstanceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessInstanceLoggingConfigurationsRequestDescribeVerifiedAccessInstanceLoggingConfigurationsPaginateTypeDef](./type_defs.md#describeverifiedaccessinstanceloggingconfigurationsrequestdescribeverifiedaccessinstanceloggingconfigurationspaginatetypedef) 
+## DescribeVerifiedAccessInstancesPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_verified_access_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVerifiedAccessInstances)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessInstancesPaginator
+
+def get_describe_verified_access_instances_paginator() -> DescribeVerifiedAccessInstancesPaginator:
+    return Session().client("ec2").get_paginator("describe_verified_access_instances")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessInstancesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVerifiedAccessInstancesPaginator = client.get_paginator("describe_verified_access_instances")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVerifiedAccessInstancesPaginator](./paginators.md#describeverifiedaccessinstancespaginator)
+3. item: [:material-code-braces: DescribeVerifiedAccessInstancesResultTypeDef](./type_defs.md#describeverifiedaccessinstancesresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeVerifiedAccessInstancesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VerifiedAccessInstanceIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVerifiedAccessInstancesResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVerifiedAccessInstancesResultTypeDef](./type_defs.md#describeverifiedaccessinstancesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessInstancesRequestDescribeVerifiedAccessInstancesPaginateTypeDef = {  # (1)
+    "VerifiedAccessInstanceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessInstancesRequestDescribeVerifiedAccessInstancesPaginateTypeDef](./type_defs.md#describeverifiedaccessinstancesrequestdescribeverifiedaccessinstancespaginatetypedef) 
+## DescribeVerifiedAccessTrustProvidersPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_verified_access_trust_providers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeVerifiedAccessTrustProviders)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessTrustProvidersPaginator
+
+def get_describe_verified_access_trust_providers_paginator() -> DescribeVerifiedAccessTrustProvidersPaginator:
+    return Session().client("ec2").get_paginator("describe_verified_access_trust_providers")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeVerifiedAccessTrustProvidersPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeVerifiedAccessTrustProvidersPaginator = client.get_paginator("describe_verified_access_trust_providers")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeVerifiedAccessTrustProvidersPaginator](./paginators.md#describeverifiedaccesstrustproviderspaginator)
+3. item: [:material-code-braces: DescribeVerifiedAccessTrustProvidersResultTypeDef](./type_defs.md#describeverifiedaccesstrustprovidersresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeVerifiedAccessTrustProvidersPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VerifiedAccessTrustProviderIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeVerifiedAccessTrustProvidersResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeVerifiedAccessTrustProvidersResultTypeDef](./type_defs.md#describeverifiedaccesstrustprovidersresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVerifiedAccessTrustProvidersRequestDescribeVerifiedAccessTrustProvidersPaginateTypeDef = {  # (1)
+    "VerifiedAccessTrustProviderIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVerifiedAccessTrustProvidersRequestDescribeVerifiedAccessTrustProvidersPaginateTypeDef](./type_defs.md#describeverifiedaccesstrustprovidersrequestdescribeverifiedaccesstrustproviderspaginatetypedef) 
 ## DescribeVolumeStatusPaginator
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_volume_status")`.

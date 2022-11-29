@@ -7,36 +7,36 @@
     Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
     type annotations stubs module [mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
-## AmazonopensearchserviceBufferingHintsTypeDef
+## AmazonOpenSearchServerlessBufferingHintsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef
+from mypy_boto3_firehose.type_defs import AmazonOpenSearchServerlessBufferingHintsTypeDef
 
-def get_value() -> AmazonopensearchserviceBufferingHintsTypeDef:
+def get_value() -> AmazonOpenSearchServerlessBufferingHintsTypeDef:
     return {
         "IntervalInSeconds": ...,
     }
 ```
 
 ```python title="Definition"
-class AmazonopensearchserviceBufferingHintsTypeDef(TypedDict):
+class AmazonOpenSearchServerlessBufferingHintsTypeDef(TypedDict):
     IntervalInSeconds: NotRequired[int],
     SizeInMBs: NotRequired[int],
 ```
 
-## AmazonopensearchserviceRetryOptionsTypeDef
+## AmazonOpenSearchServerlessRetryOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_firehose.type_defs import AmazonopensearchserviceRetryOptionsTypeDef
+from mypy_boto3_firehose.type_defs import AmazonOpenSearchServerlessRetryOptionsTypeDef
 
-def get_value() -> AmazonopensearchserviceRetryOptionsTypeDef:
+def get_value() -> AmazonOpenSearchServerlessRetryOptionsTypeDef:
     return {
         "DurationInSeconds": ...,
     }
 ```
 
 ```python title="Definition"
-class AmazonopensearchserviceRetryOptionsTypeDef(TypedDict):
+class AmazonOpenSearchServerlessRetryOptionsTypeDef(TypedDict):
     DurationInSeconds: NotRequired[int],
 ```
 
@@ -98,6 +98,39 @@ class VpcConfigurationDescriptionTypeDef(TypedDict):
     RoleARN: str,
     SecurityGroupIds: List[str],
     VpcId: str,
+```
+
+## AmazonopensearchserviceBufferingHintsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef
+
+def get_value() -> AmazonopensearchserviceBufferingHintsTypeDef:
+    return {
+        "IntervalInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class AmazonopensearchserviceBufferingHintsTypeDef(TypedDict):
+    IntervalInSeconds: NotRequired[int],
+    SizeInMBs: NotRequired[int],
+```
+
+## AmazonopensearchserviceRetryOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceRetryOptionsTypeDef
+
+def get_value() -> AmazonopensearchserviceRetryOptionsTypeDef:
+    return {
+        "DurationInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class AmazonopensearchserviceRetryOptionsTypeDef(TypedDict):
+    DurationInSeconds: NotRequired[int],
 ```
 
 ## BufferingHintsTypeDef
@@ -1190,6 +1223,100 @@ class DataFormatConversionConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: SchemaConfigurationTypeDef](./type_defs.md#schemaconfigurationtypedef) 
 2. See [:material-code-braces: InputFormatConfigurationTypeDef](./type_defs.md#inputformatconfigurationtypedef) 
 3. See [:material-code-braces: OutputFormatConfigurationTypeDef](./type_defs.md#outputformatconfigurationtypedef) 
+## AmazonOpenSearchServerlessDestinationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_firehose.type_defs import AmazonOpenSearchServerlessDestinationConfigurationTypeDef
+
+def get_value() -> AmazonOpenSearchServerlessDestinationConfigurationTypeDef:
+    return {
+        "RoleARN": ...,
+        "IndexName": ...,
+        "S3Configuration": ...,
+    }
+```
+
+```python title="Definition"
+class AmazonOpenSearchServerlessDestinationConfigurationTypeDef(TypedDict):
+    RoleARN: str,
+    IndexName: str,
+    S3Configuration: S3DestinationConfigurationTypeDef,  # (4)
+    CollectionEndpoint: NotRequired[str],
+    BufferingHints: NotRequired[AmazonOpenSearchServerlessBufferingHintsTypeDef],  # (1)
+    RetryOptions: NotRequired[AmazonOpenSearchServerlessRetryOptionsTypeDef],  # (2)
+    S3BackupMode: NotRequired[AmazonOpenSearchServerlessS3BackupModeType],  # (3)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (6)
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: AmazonOpenSearchServerlessBufferingHintsTypeDef](./type_defs.md#amazonopensearchserverlessbufferinghintstypedef) 
+2. See [:material-code-braces: AmazonOpenSearchServerlessRetryOptionsTypeDef](./type_defs.md#amazonopensearchserverlessretryoptionstypedef) 
+3. See [:material-code-brackets: AmazonOpenSearchServerlessS3BackupModeType](./literals.md#amazonopensearchserverlesss3backupmodetype) 
+4. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+7. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+## AmazonOpenSearchServerlessDestinationDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_firehose.type_defs import AmazonOpenSearchServerlessDestinationDescriptionTypeDef
+
+def get_value() -> AmazonOpenSearchServerlessDestinationDescriptionTypeDef:
+    return {
+        "RoleARN": ...,
+    }
+```
+
+```python title="Definition"
+class AmazonOpenSearchServerlessDestinationDescriptionTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    CollectionEndpoint: NotRequired[str],
+    IndexName: NotRequired[str],
+    BufferingHints: NotRequired[AmazonOpenSearchServerlessBufferingHintsTypeDef],  # (1)
+    RetryOptions: NotRequired[AmazonOpenSearchServerlessRetryOptionsTypeDef],  # (2)
+    S3BackupMode: NotRequired[AmazonOpenSearchServerlessS3BackupModeType],  # (3)
+    S3DestinationDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (6)
+    VpcConfigurationDescription: NotRequired[VpcConfigurationDescriptionTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: AmazonOpenSearchServerlessBufferingHintsTypeDef](./type_defs.md#amazonopensearchserverlessbufferinghintstypedef) 
+2. See [:material-code-braces: AmazonOpenSearchServerlessRetryOptionsTypeDef](./type_defs.md#amazonopensearchserverlessretryoptionstypedef) 
+3. See [:material-code-brackets: AmazonOpenSearchServerlessS3BackupModeType](./literals.md#amazonopensearchserverlesss3backupmodetype) 
+4. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+7. See [:material-code-braces: VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef) 
+## AmazonOpenSearchServerlessDestinationUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_firehose.type_defs import AmazonOpenSearchServerlessDestinationUpdateTypeDef
+
+def get_value() -> AmazonOpenSearchServerlessDestinationUpdateTypeDef:
+    return {
+        "RoleARN": ...,
+    }
+```
+
+```python title="Definition"
+class AmazonOpenSearchServerlessDestinationUpdateTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    CollectionEndpoint: NotRequired[str],
+    IndexName: NotRequired[str],
+    BufferingHints: NotRequired[AmazonOpenSearchServerlessBufferingHintsTypeDef],  # (1)
+    RetryOptions: NotRequired[AmazonOpenSearchServerlessRetryOptionsTypeDef],  # (2)
+    S3Update: NotRequired[S3DestinationUpdateTypeDef],  # (3)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (4)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: AmazonOpenSearchServerlessBufferingHintsTypeDef](./type_defs.md#amazonopensearchserverlessbufferinghintstypedef) 
+2. See [:material-code-braces: AmazonOpenSearchServerlessRetryOptionsTypeDef](./type_defs.md#amazonopensearchserverlessretryoptionstypedef) 
+3. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+4. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+5. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## AmazonopensearchserviceDestinationConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1840,6 +1967,7 @@ class CreateDeliveryStreamInputRequestTypeDef(TypedDict):
     SplunkDestinationConfiguration: NotRequired[SplunkDestinationConfigurationTypeDef],  # (9)
     HttpEndpointDestinationConfiguration: NotRequired[HttpEndpointDestinationConfigurationTypeDef],  # (10)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (11)
+    AmazonOpenSearchServerlessDestinationConfiguration: NotRequired[AmazonOpenSearchServerlessDestinationConfigurationTypeDef],  # (12)
 ```
 
 1. See [:material-code-brackets: DeliveryStreamTypeType](./literals.md#deliverystreamtypetype) 
@@ -1853,6 +1981,7 @@ class CreateDeliveryStreamInputRequestTypeDef(TypedDict):
 9. See [:material-code-braces: SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef) 
 10. See [:material-code-braces: HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef) 
 11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+12. See [:material-code-braces: AmazonOpenSearchServerlessDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchserverlessdestinationconfigurationtypedef) 
 ## DestinationDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -1874,6 +2003,7 @@ class DestinationDescriptionTypeDef(TypedDict):
     AmazonopensearchserviceDestinationDescription: NotRequired[AmazonopensearchserviceDestinationDescriptionTypeDef],  # (5)
     SplunkDestinationDescription: NotRequired[SplunkDestinationDescriptionTypeDef],  # (6)
     HttpEndpointDestinationDescription: NotRequired[HttpEndpointDestinationDescriptionTypeDef],  # (7)
+    AmazonOpenSearchServerlessDestinationDescription: NotRequired[AmazonOpenSearchServerlessDestinationDescriptionTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
@@ -1883,6 +2013,7 @@ class DestinationDescriptionTypeDef(TypedDict):
 5. See [:material-code-braces: AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef) 
 6. See [:material-code-braces: SplunkDestinationDescriptionTypeDef](./type_defs.md#splunkdestinationdescriptiontypedef) 
 7. See [:material-code-braces: HttpEndpointDestinationDescriptionTypeDef](./type_defs.md#httpendpointdestinationdescriptiontypedef) 
+8. See [:material-code-braces: AmazonOpenSearchServerlessDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchserverlessdestinationdescriptiontypedef) 
 ## UpdateDestinationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1908,6 +2039,7 @@ class UpdateDestinationInputRequestTypeDef(TypedDict):
     AmazonopensearchserviceDestinationUpdate: NotRequired[AmazonopensearchserviceDestinationUpdateTypeDef],  # (5)
     SplunkDestinationUpdate: NotRequired[SplunkDestinationUpdateTypeDef],  # (6)
     HttpEndpointDestinationUpdate: NotRequired[HttpEndpointDestinationUpdateTypeDef],  # (7)
+    AmazonOpenSearchServerlessDestinationUpdate: NotRequired[AmazonOpenSearchServerlessDestinationUpdateTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
@@ -1917,6 +2049,7 @@ class UpdateDestinationInputRequestTypeDef(TypedDict):
 5. See [:material-code-braces: AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef) 
 6. See [:material-code-braces: SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef) 
 7. See [:material-code-braces: HttpEndpointDestinationUpdateTypeDef](./type_defs.md#httpendpointdestinationupdatetypedef) 
+8. See [:material-code-braces: AmazonOpenSearchServerlessDestinationUpdateTypeDef](./type_defs.md#amazonopensearchserverlessdestinationupdatetypedef) 
 ## DeliveryStreamDescriptionTypeDef
 
 ```python title="Usage Example"

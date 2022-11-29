@@ -101,23 +101,22 @@ class CreateAliasRequestRequestTypeDef(TypedDict):
     TargetKeyId: str,
 ```
 
-## CreateCustomKeyStoreRequestRequestTypeDef
+## XksProxyAuthenticationCredentialTypeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CreateCustomKeyStoreRequestRequestTypeDef
+from mypy_boto3_kms.type_defs import XksProxyAuthenticationCredentialTypeTypeDef
 
-def get_value() -> CreateCustomKeyStoreRequestRequestTypeDef:
+def get_value() -> XksProxyAuthenticationCredentialTypeTypeDef:
     return {
-        "CustomKeyStoreName": ...,
+        "AccessKeyId": ...,
+        "RawSecretAccessKey": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateCustomKeyStoreRequestRequestTypeDef(TypedDict):
-    CustomKeyStoreName: str,
-    CloudHsmClusterId: NotRequired[str],
-    TrustAnchorCertificate: NotRequired[str],
-    KeyStorePassword: NotRequired[str],
+class XksProxyAuthenticationCredentialTypeTypeDef(TypedDict):
+    AccessKeyId: str,
+    RawSecretAccessKey: str,
 ```
 
 ## GrantConstraintsTypeDef
@@ -155,30 +154,27 @@ class TagTypeDef(TypedDict):
     TagValue: str,
 ```
 
-## CustomKeyStoresListEntryTypeDef
+## XksProxyConfigurationTypeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import CustomKeyStoresListEntryTypeDef
+from mypy_boto3_kms.type_defs import XksProxyConfigurationTypeTypeDef
 
-def get_value() -> CustomKeyStoresListEntryTypeDef:
+def get_value() -> XksProxyConfigurationTypeTypeDef:
     return {
-        "CustomKeyStoreId": ...,
+        "Connectivity": ...,
     }
 ```
 
 ```python title="Definition"
-class CustomKeyStoresListEntryTypeDef(TypedDict):
-    CustomKeyStoreId: NotRequired[str],
-    CustomKeyStoreName: NotRequired[str],
-    CloudHsmClusterId: NotRequired[str],
-    TrustAnchorCertificate: NotRequired[str],
-    ConnectionState: NotRequired[ConnectionStateTypeType],  # (1)
-    ConnectionErrorCode: NotRequired[ConnectionErrorCodeTypeType],  # (2)
-    CreationDate: NotRequired[datetime],
+class XksProxyConfigurationTypeTypeDef(TypedDict):
+    Connectivity: NotRequired[XksProxyConnectivityTypeType],  # (1)
+    AccessKeyId: NotRequired[str],
+    UriEndpoint: NotRequired[str],
+    UriPath: NotRequired[str],
+    VpcEndpointServiceName: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: ConnectionStateTypeType](./literals.md#connectionstatetypetype) 
-2. See [:material-code-brackets: ConnectionErrorCodeTypeType](./literals.md#connectionerrorcodetypetype) 
+1. See [:material-code-brackets: XksProxyConnectivityTypeType](./literals.md#xksproxyconnectivitytypetype) 
 ## DecryptRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -640,6 +636,22 @@ class KeyListEntryTypeDef(TypedDict):
     KeyArn: NotRequired[str],
 ```
 
+## XksKeyConfigurationTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import XksKeyConfigurationTypeTypeDef
+
+def get_value() -> XksKeyConfigurationTypeTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class XksKeyConfigurationTypeTypeDef(TypedDict):
+    Id: NotRequired[str],
+```
+
 ## ListAliasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -924,25 +936,6 @@ def get_value() -> UpdateAliasRequestRequestTypeDef:
 class UpdateAliasRequestRequestTypeDef(TypedDict):
     AliasName: str,
     TargetKeyId: str,
-```
-
-## UpdateCustomKeyStoreRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kms.type_defs import UpdateCustomKeyStoreRequestRequestTypeDef
-
-def get_value() -> UpdateCustomKeyStoreRequestRequestTypeDef:
-    return {
-        "CustomKeyStoreId": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateCustomKeyStoreRequestRequestTypeDef(TypedDict):
-    CustomKeyStoreId: str,
-    NewCustomKeyStoreName: NotRequired[str],
-    KeyStorePassword: NotRequired[str],
-    CloudHsmClusterId: NotRequired[str],
 ```
 
 ## UpdateKeyDescriptionRequestRequestTypeDef
@@ -1569,6 +1562,60 @@ class VerifyResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateCustomKeyStoreRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import CreateCustomKeyStoreRequestRequestTypeDef
+
+def get_value() -> CreateCustomKeyStoreRequestRequestTypeDef:
+    return {
+        "CustomKeyStoreName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateCustomKeyStoreRequestRequestTypeDef(TypedDict):
+    CustomKeyStoreName: str,
+    CloudHsmClusterId: NotRequired[str],
+    TrustAnchorCertificate: NotRequired[str],
+    KeyStorePassword: NotRequired[str],
+    CustomKeyStoreType: NotRequired[CustomKeyStoreTypeType],  # (1)
+    XksProxyUriEndpoint: NotRequired[str],
+    XksProxyUriPath: NotRequired[str],
+    XksProxyVpcEndpointServiceName: NotRequired[str],
+    XksProxyAuthenticationCredential: NotRequired[XksProxyAuthenticationCredentialTypeTypeDef],  # (2)
+    XksProxyConnectivity: NotRequired[XksProxyConnectivityTypeType],  # (3)
+```
+
+1. See [:material-code-brackets: CustomKeyStoreTypeType](./literals.md#customkeystoretypetype) 
+2. See [:material-code-braces: XksProxyAuthenticationCredentialTypeTypeDef](./type_defs.md#xksproxyauthenticationcredentialtypetypedef) 
+3. See [:material-code-brackets: XksProxyConnectivityTypeType](./literals.md#xksproxyconnectivitytypetype) 
+## UpdateCustomKeyStoreRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import UpdateCustomKeyStoreRequestRequestTypeDef
+
+def get_value() -> UpdateCustomKeyStoreRequestRequestTypeDef:
+    return {
+        "CustomKeyStoreId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateCustomKeyStoreRequestRequestTypeDef(TypedDict):
+    CustomKeyStoreId: str,
+    NewCustomKeyStoreName: NotRequired[str],
+    KeyStorePassword: NotRequired[str],
+    CloudHsmClusterId: NotRequired[str],
+    XksProxyUriEndpoint: NotRequired[str],
+    XksProxyUriPath: NotRequired[str],
+    XksProxyVpcEndpointServiceName: NotRequired[str],
+    XksProxyAuthenticationCredential: NotRequired[XksProxyAuthenticationCredentialTypeTypeDef],  # (1)
+    XksProxyConnectivity: NotRequired[XksProxyConnectivityTypeType],  # (2)
+```
+
+1. See [:material-code-braces: XksProxyAuthenticationCredentialTypeTypeDef](./type_defs.md#xksproxyauthenticationcredentialtypetypedef) 
+2. See [:material-code-brackets: XksProxyConnectivityTypeType](./literals.md#xksproxyconnectivitytypetype) 
 ## CreateGrantRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1644,6 +1691,7 @@ class CreateKeyRequestRequestTypeDef(TypedDict):
     BypassPolicyLockoutSafetyCheck: NotRequired[bool],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
     MultiRegion: NotRequired[bool],
+    XksKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
@@ -1717,30 +1765,34 @@ class TagResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## DescribeCustomKeyStoresResponseTypeDef
+## CustomKeyStoresListEntryTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_kms.type_defs import DescribeCustomKeyStoresResponseTypeDef
+from mypy_boto3_kms.type_defs import CustomKeyStoresListEntryTypeDef
 
-def get_value() -> DescribeCustomKeyStoresResponseTypeDef:
+def get_value() -> CustomKeyStoresListEntryTypeDef:
     return {
-        "CustomKeyStores": ...,
-        "NextMarker": ...,
-        "Truncated": ...,
-        "ResponseMetadata": ...,
+        "CustomKeyStoreId": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeCustomKeyStoresResponseTypeDef(TypedDict):
-    CustomKeyStores: List[CustomKeyStoresListEntryTypeDef],  # (1)
-    NextMarker: str,
-    Truncated: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class CustomKeyStoresListEntryTypeDef(TypedDict):
+    CustomKeyStoreId: NotRequired[str],
+    CustomKeyStoreName: NotRequired[str],
+    CloudHsmClusterId: NotRequired[str],
+    TrustAnchorCertificate: NotRequired[str],
+    ConnectionState: NotRequired[ConnectionStateTypeType],  # (1)
+    ConnectionErrorCode: NotRequired[ConnectionErrorCodeTypeType],  # (2)
+    CreationDate: NotRequired[datetime],
+    CustomKeyStoreType: NotRequired[CustomKeyStoreTypeType],  # (3)
+    XksProxyConfiguration: NotRequired[XksProxyConfigurationTypeTypeDef],  # (4)
 ```
 
-1. See [:material-code-braces: CustomKeyStoresListEntryTypeDef](./type_defs.md#customkeystoreslistentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ConnectionStateTypeType](./literals.md#connectionstatetypetype) 
+2. See [:material-code-brackets: ConnectionErrorCodeTypeType](./literals.md#connectionerrorcodetypetype) 
+3. See [:material-code-brackets: CustomKeyStoreTypeType](./literals.md#customkeystoretypetype) 
+4. See [:material-code-braces: XksProxyConfigurationTypeTypeDef](./type_defs.md#xksproxyconfigurationtypetypedef) 
 ## DescribeCustomKeyStoresRequestDescribeCustomKeyStoresPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1938,6 +1990,30 @@ class ListGrantsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: GrantListEntryTypeDef](./type_defs.md#grantlistentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCustomKeyStoresResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kms.type_defs import DescribeCustomKeyStoresResponseTypeDef
+
+def get_value() -> DescribeCustomKeyStoresResponseTypeDef:
+    return {
+        "CustomKeyStores": ...,
+        "NextMarker": ...,
+        "Truncated": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCustomKeyStoresResponseTypeDef(TypedDict):
+    CustomKeyStores: List[CustomKeyStoresListEntryTypeDef],  # (1)
+    NextMarker: str,
+    Truncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CustomKeyStoresListEntryTypeDef](./type_defs.md#customkeystoreslistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## KeyMetadataTypeDef
 
 ```python title="Usage Example"
@@ -1974,6 +2050,7 @@ class KeyMetadataTypeDef(TypedDict):
     MultiRegionConfiguration: NotRequired[MultiRegionConfigurationTypeDef],  # (10)
     PendingDeletionWindowInDays: NotRequired[int],
     MacAlgorithms: NotRequired[List[MacAlgorithmSpecType]],  # (11)
+    XksKeyConfiguration: NotRequired[XksKeyConfigurationTypeTypeDef],  # (12)
 ```
 
 1. See [:material-code-brackets: KeyUsageTypeType](./literals.md#keyusagetypetype) 
@@ -1987,6 +2064,7 @@ class KeyMetadataTypeDef(TypedDict):
 9. See [:material-code-brackets: SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype) 
 10. See [:material-code-braces: MultiRegionConfigurationTypeDef](./type_defs.md#multiregionconfigurationtypedef) 
 11. See [:material-code-brackets: MacAlgorithmSpecType](./literals.md#macalgorithmspectype) 
+12. See [:material-code-braces: XksKeyConfigurationTypeTypeDef](./type_defs.md#xkskeyconfigurationtypetypedef) 
 ## CreateKeyResponseTypeDef
 
 ```python title="Usage Example"
