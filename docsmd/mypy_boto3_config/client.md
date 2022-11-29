@@ -34,6 +34,7 @@ try:
 except (
     client.ClientError,
     client.ConformancePackTemplateValidationException,
+    client.IdempotentParameterMismatch,
     client.InsufficientDeliveryPolicyException,
     client.InsufficientPermissionsException,
     client.InvalidConfigurationRecorderNameException,
@@ -884,11 +885,13 @@ def describe_config_rules(
     *,
     ConfigRuleNames: Sequence[str] = ...,
     NextToken: str = ...,
-) -> DescribeConfigRulesResponseTypeDef:  # (1)
+    Filters: DescribeConfigRulesFiltersTypeDef = ...,  # (1)
+) -> DescribeConfigRulesResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef) 
+1. See [:material-code-braces: DescribeConfigRulesFiltersTypeDef](./type_defs.md#describeconfigrulesfilterstypedef) 
+2. See [:material-code-braces: DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1701,10 +1704,11 @@ Type annotations and code completion for `#!python boto3.client("config").get_co
 def get_compliance_details_by_resource(
     self,
     *,
-    ResourceType: str,
-    ResourceId: str,
+    ResourceType: str = ...,
+    ResourceId: str = ...,
     ComplianceTypes: Sequence[ComplianceTypeType] = ...,  # (1)
     NextToken: str = ...,
+    ResourceEvaluationId: str = ...,
 ) -> GetComplianceDetailsByResourceResponseTypeDef:  # (2)
     ...
 ```
@@ -1716,7 +1720,6 @@ def get_compliance_details_by_resource(
 ```python title="Usage example with kwargs"
 kwargs: GetComplianceDetailsByResourceRequestRequestTypeDef = {  # (1)
     "ResourceType": ...,
-    "ResourceId": ...,
 }
 
 parent.get_compliance_details_by_resource(**kwargs)
@@ -2036,6 +2039,36 @@ parent.get_resource_config_history(**kwargs)
 
 1. See [:material-code-braces: GetResourceConfigHistoryRequestRequestTypeDef](./type_defs.md#getresourceconfighistoryrequestrequesttypedef) 
 
+### get\_resource\_evaluation\_summary
+
+Returns a summary of resource evaluation for the specified resource evaluation
+ID from the proactive rules that were run.
+
+Type annotations and code completion for `#!python boto3.client("config").get_resource_evaluation_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_evaluation_summary)
+
+```python title="Method definition"
+def get_resource_evaluation_summary(
+    self,
+    *,
+    ResourceEvaluationId: str,
+) -> GetResourceEvaluationSummaryResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetResourceEvaluationSummaryResponseTypeDef](./type_defs.md#getresourceevaluationsummaryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourceEvaluationSummaryRequestRequestTypeDef = {  # (1)
+    "ResourceEvaluationId": ...,
+}
+
+parent.get_resource_evaluation_summary(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourceEvaluationSummaryRequestRequestTypeDef](./type_defs.md#getresourceevaluationsummaryrequestrequesttypedef) 
+
 ### get\_stored\_query
 
 Returns the details of a specific stored query.
@@ -2173,6 +2206,38 @@ parent.list_discovered_resources(**kwargs)
 ```
 
 1. See [:material-code-braces: ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef) 
+
+### list\_resource\_evaluations
+
+Returns a list of proactive resource evaluations.
+
+Type annotations and code completion for `#!python boto3.client("config").list_resource_evaluations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_resource_evaluations)
+
+```python title="Method definition"
+def list_resource_evaluations(
+    self,
+    *,
+    Filters: ResourceEvaluationFiltersTypeDef = ...,  # (1)
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListResourceEvaluationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ResourceEvaluationFiltersTypeDef](./type_defs.md#resourceevaluationfilterstypedef) 
+2. See [:material-code-braces: ListResourceEvaluationsResponseTypeDef](./type_defs.md#listresourceevaluationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceEvaluationsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.list_resource_evaluations(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceEvaluationsRequestRequestTypeDef](./type_defs.md#listresourceevaluationsrequestrequesttypedef) 
 
 ### list\_stored\_queries
 
@@ -2894,6 +2959,44 @@ parent.start_remediation_execution(**kwargs)
 
 1. See [:material-code-braces: StartRemediationExecutionRequestRequestTypeDef](./type_defs.md#startremediationexecutionrequestrequesttypedef) 
 
+### start\_resource\_evaluation
+
+Runs an on-demand evaluation for the specified resource to determine whether the
+resource details will comply with configured Config rules.
+
+Type annotations and code completion for `#!python boto3.client("config").start_resource_evaluation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_resource_evaluation)
+
+```python title="Method definition"
+def start_resource_evaluation(
+    self,
+    *,
+    ResourceDetails: ResourceDetailsTypeDef,  # (1)
+    EvaluationMode: EvaluationModeType,  # (2)
+    EvaluationContext: EvaluationContextTypeDef = ...,  # (3)
+    EvaluationTimeout: int = ...,
+    ClientToken: str = ...,
+) -> StartResourceEvaluationResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+2. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
+3. See [:material-code-braces: EvaluationContextTypeDef](./type_defs.md#evaluationcontexttypedef) 
+4. See [:material-code-braces: StartResourceEvaluationResponseTypeDef](./type_defs.md#startresourceevaluationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartResourceEvaluationRequestRequestTypeDef = {  # (1)
+    "ResourceDetails": ...,
+    "EvaluationMode": ...,
+}
+
+parent.start_resource_evaluation(**kwargs)
+```
+
+1. See [:material-code-braces: StartResourceEvaluationRequestRequestTypeDef](./type_defs.md#startresourceevaluationrequestrequesttypedef) 
+
 ### stop\_configuration\_recorder
 
 Stops recording configurations of the Amazon Web Services resources you have
@@ -3020,6 +3123,7 @@ Type annotations and code completion for `#!python boto3.client("config").get_pa
 - `client.get_paginator("get_resource_config_history")` -> [GetResourceConfigHistoryPaginator](./paginators.md#getresourceconfighistorypaginator)
 - `client.get_paginator("list_aggregate_discovered_resources")` -> [ListAggregateDiscoveredResourcesPaginator](./paginators.md#listaggregatediscoveredresourcespaginator)
 - `client.get_paginator("list_discovered_resources")` -> [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
+- `client.get_paginator("list_resource_evaluations")` -> [ListResourceEvaluationsPaginator](./paginators.md#listresourceevaluationspaginator)
 - `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - `client.get_paginator("select_aggregate_resource_config")` -> [SelectAggregateResourceConfigPaginator](./paginators.md#selectaggregateresourceconfigpaginator)
 - `client.get_paginator("select_resource_config")` -> [SelectResourceConfigPaginator](./paginators.md#selectresourceconfigpaginator)

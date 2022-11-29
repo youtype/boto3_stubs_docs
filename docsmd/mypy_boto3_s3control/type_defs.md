@@ -908,6 +908,42 @@ class GetMultiRegionAccessPointRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
+## GetMultiRegionAccessPointRoutesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointRoutesRequestRequestTypeDef
+
+def get_value() -> GetMultiRegionAccessPointRoutesRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Mrap": ...,
+    }
+```
+
+```python title="Definition"
+class GetMultiRegionAccessPointRoutesRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Mrap: str,
+```
+
+## MultiRegionAccessPointRouteTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import MultiRegionAccessPointRouteTypeDef
+
+def get_value() -> MultiRegionAccessPointRouteTypeDef:
+    return {
+        "TrafficDialPercentage": ...,
+    }
+```
+
+```python title="Definition"
+class MultiRegionAccessPointRouteTypeDef(TypedDict):
+    TrafficDialPercentage: int,
+    Bucket: NotRequired[str],
+    Region: NotRequired[str],
+```
+
 ## GetPublicAccessBlockRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2453,6 +2489,49 @@ class GetMultiRegionAccessPointPolicyStatusResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMultiRegionAccessPointRoutesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import GetMultiRegionAccessPointRoutesResultTypeDef
+
+def get_value() -> GetMultiRegionAccessPointRoutesResultTypeDef:
+    return {
+        "Mrap": ...,
+        "Routes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMultiRegionAccessPointRoutesResultTypeDef(TypedDict):
+    Mrap: str,
+    Routes: List[MultiRegionAccessPointRouteTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MultiRegionAccessPointRouteTypeDef](./type_defs.md#multiregionaccesspointroutetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SubmitMultiRegionAccessPointRoutesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3control.type_defs import SubmitMultiRegionAccessPointRoutesRequestRequestTypeDef
+
+def get_value() -> SubmitMultiRegionAccessPointRoutesRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Mrap": ...,
+        "RouteUpdates": ...,
+    }
+```
+
+```python title="Definition"
+class SubmitMultiRegionAccessPointRoutesRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Mrap: str,
+    RouteUpdates: Sequence[MultiRegionAccessPointRouteTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: MultiRegionAccessPointRouteTypeDef](./type_defs.md#multiregionaccesspointroutetypedef) 
 ## GetStorageLensConfigurationTaggingResultTypeDef
 
 ```python title="Usage Example"

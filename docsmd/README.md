@@ -115,6 +115,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-appsync](./mypy_boto3_appsync/README.md) for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync) service
 
+- [mypy-boto3-arc-zonal-shift](./mypy_boto3_arc_zonal_shift/README.md) for [ARCZonalShift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/arc-zonal-shift.html#ARCZonalShift) service
+
 - [mypy-boto3-athena](./mypy_boto3_athena/README.md) for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena) service
 
 - [mypy-boto3-auditmanager](./mypy_boto3_auditmanager/README.md) for [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager) service

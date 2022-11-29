@@ -51,6 +51,7 @@ def get_value() -> AggregationResourceTypeType:
 AggregationResourceTypeType = Literal[
     "AWS_EC2_INSTANCE",
     "AWS_ECR_CONTAINER_IMAGE",
+    "AWS_LAMBDA_FUNCTION",
 ]
 ```
 ## AggregationTypeType
@@ -68,8 +69,10 @@ AggregationTypeType = Literal[
     "AMI",
     "AWS_EC2_INSTANCE",
     "AWS_ECR_CONTAINER",
+    "AWS_LAMBDA_FUNCTION",
     "FINDING_TYPE",
     "IMAGE_LAYER",
+    "LAMBDA_LAYER",
     "PACKAGE",
     "REPOSITORY",
     "TITLE",
@@ -90,6 +93,21 @@ AmiSortByType = Literal[
     "ALL",
     "CRITICAL",
     "HIGH",
+]
+```
+## ArchitectureType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import ArchitectureType
+
+def get_value() -> ArchitectureType:
+    return "ARM64"
+```
+
+```python title="Definition"
+ArchitectureType = Literal[
+    "ARM64",
+    "X86_64",
 ]
 ```
 ## AwsEcrContainerSortByType
@@ -136,6 +154,7 @@ CoverageResourceTypeType = Literal[
     "AWS_EC2_INSTANCE",
     "AWS_ECR_CONTAINER_IMAGE",
     "AWS_ECR_REPOSITORY",
+    "AWS_LAMBDA_FUNCTION",
 ]
 ```
 ## CoverageStringComparisonType
@@ -290,6 +309,21 @@ ErrorCodeType = Literal[
     "SUSPEND_IN_PROGRESS",
 ]
 ```
+## ExploitAvailableType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import ExploitAvailableType
+
+def get_value() -> ExploitAvailableType:
+    return "NO"
+```
+
+```python title="Definition"
+ExploitAvailableType = Literal[
+    "NO",
+    "YES",
+]
+```
 ## ExternalReportStatusType
 
 ```python title="Usage Example"
@@ -428,6 +462,7 @@ def get_value() -> FreeTrialTypeType:
 FreeTrialTypeType = Literal[
     "EC2",
     "ECR",
+    "LAMBDA",
 ]
 ```
 ## GroupKeyType
@@ -459,6 +494,38 @@ def get_value() -> ImageLayerSortByType:
 
 ```python title="Definition"
 ImageLayerSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
+## LambdaFunctionSortByType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import LambdaFunctionSortByType
+
+def get_value() -> LambdaFunctionSortByType:
+    return "ALL"
+```
+
+```python title="Definition"
+LambdaFunctionSortByType = Literal[
+    "ALL",
+    "CRITICAL",
+    "HIGH",
+]
+```
+## LambdaLayerSortByType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import LambdaLayerSortByType
+
+def get_value() -> LambdaLayerSortByType:
+    return "ALL"
+```
+
+```python title="Definition"
+LambdaLayerSortByType = Literal[
     "ALL",
     "CRITICAL",
     "HIGH",
@@ -681,6 +748,21 @@ PackageSortByType = Literal[
     "HIGH",
 ]
 ```
+## PackageTypeType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import PackageTypeType
+
+def get_value() -> PackageTypeType:
+    return "IMAGE"
+```
+
+```python title="Definition"
+PackageTypeType = Literal[
+    "IMAGE",
+    "ZIP",
+]
+```
 ## RelationshipStatusType
 
 ```python title="Usage Example"
@@ -770,6 +852,7 @@ def get_value() -> ResourceScanTypeType:
 ResourceScanTypeType = Literal[
     "EC2",
     "ECR",
+    "LAMBDA",
 ]
 ```
 ## ResourceTypeType
@@ -786,6 +869,31 @@ ResourceTypeType = Literal[
     "AWS_EC2_INSTANCE",
     "AWS_ECR_CONTAINER_IMAGE",
     "AWS_ECR_REPOSITORY",
+    "AWS_LAMBDA_FUNCTION",
+]
+```
+## RuntimeType
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.literals import RuntimeType
+
+def get_value() -> RuntimeType:
+    return "JAVA_11"
+```
+
+```python title="Definition"
+RuntimeType = Literal[
+    "JAVA_11",
+    "JAVA_8",
+    "JAVA_8_AL2",
+    "NODEJS",
+    "NODEJS_12_X",
+    "NODEJS_14_X",
+    "NODEJS_16_X",
+    "PYTHON_3_7",
+    "PYTHON_3_8",
+    "PYTHON_3_9",
+    "UNSUPPORTED",
 ]
 ```
 ## ScanStatusCodeType
@@ -816,6 +924,7 @@ def get_value() -> ScanStatusReasonType:
 ScanStatusReasonType = Literal[
     "ACCESS_DENIED",
     "EC2_INSTANCE_STOPPED",
+    "EXCLUDED_BY_TAG",
     "IMAGE_SIZE_EXCEEDED",
     "INTERNAL_ERROR",
     "NO_INVENTORY",
@@ -830,6 +939,7 @@ ScanStatusReasonType = Literal[
     "SUCCESSFUL",
     "UNMANAGED_EC2_INSTANCE",
     "UNSUPPORTED_OS",
+    "UNSUPPORTED_RUNTIME",
 ]
 ```
 ## ScanTypeType
@@ -860,6 +970,7 @@ def get_value() -> ServiceType:
 ServiceType = Literal[
     "EC2",
     "ECR",
+    "LAMBDA",
 ]
 ```
 ## SeverityType
@@ -990,6 +1101,7 @@ UsageTypeType = Literal[
     "EC2_INSTANCE_HOURS",
     "ECR_INITIAL_SCAN",
     "ECR_RESCAN",
+    "LAMBDA_FUNCTION_HOURS",
 ]
 ```
 ## Inspector2ServiceName
@@ -1040,6 +1152,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",

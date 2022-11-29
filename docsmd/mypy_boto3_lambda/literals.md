@@ -202,20 +202,31 @@ InvocationTypeType = Literal[
 from mypy_boto3_lambda.literals import LastUpdateStatusReasonCodeType
 
 def get_value() -> LastUpdateStatusReasonCodeType:
-    return "EniLimitExceeded"
+    return "DisabledKMSKey"
 ```
 
 ```python title="Definition"
 LastUpdateStatusReasonCodeType = Literal[
+    "DisabledKMSKey",
+    "EFSIOError",
+    "EFSMountConnectivityError",
+    "EFSMountFailure",
+    "EFSMountTimeout",
     "EniLimitExceeded",
+    "FunctionError",
     "ImageAccessDenied",
     "ImageDeleted",
     "InsufficientRolePermissions",
     "InternalError",
     "InvalidConfiguration",
     "InvalidImage",
+    "InvalidRuntime",
     "InvalidSecurityGroup",
+    "InvalidStateKMSKey",
     "InvalidSubnet",
+    "InvalidZipFileException",
+    "KMSKeyAccessDenied",
+    "KMSKeyNotFound",
     "SubnetOutOfIPAddresses",
 ]
 ```
@@ -435,6 +446,20 @@ ProvisionedConcurrencyStatusEnumType = Literal[
     "READY",
 ]
 ```
+## PublishedVersionActiveWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_lambda.literals import PublishedVersionActiveWaiterName
+
+def get_value() -> PublishedVersionActiveWaiterName:
+    return "published_version_active"
+```
+
+```python title="Definition"
+PublishedVersionActiveWaiterName = Literal[
+    "published_version_active",
+]
+```
 ## RuntimeType
 
 ```python title="Usage Example"
@@ -476,6 +501,36 @@ RuntimeType = Literal[
     "ruby2.7",
 ]
 ```
+## SnapStartApplyOnType
+
+```python title="Usage Example"
+from mypy_boto3_lambda.literals import SnapStartApplyOnType
+
+def get_value() -> SnapStartApplyOnType:
+    return "None"
+```
+
+```python title="Definition"
+SnapStartApplyOnType = Literal[
+    "None",
+    "PublishedVersions",
+]
+```
+## SnapStartOptimizationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_lambda.literals import SnapStartOptimizationStatusType
+
+def get_value() -> SnapStartOptimizationStatusType:
+    return "Off"
+```
+
+```python title="Definition"
+SnapStartOptimizationStatusType = Literal[
+    "Off",
+    "On",
+]
+```
 ## SourceAccessTypeType
 
 ```python title="Usage Example"
@@ -509,7 +564,13 @@ def get_value() -> StateReasonCodeType:
 ```python title="Definition"
 StateReasonCodeType = Literal[
     "Creating",
+    "DisabledKMSKey",
+    "EFSIOError",
+    "EFSMountConnectivityError",
+    "EFSMountFailure",
+    "EFSMountTimeout",
     "EniLimitExceeded",
+    "FunctionError",
     "Idle",
     "ImageAccessDenied",
     "ImageDeleted",
@@ -517,8 +578,13 @@ StateReasonCodeType = Literal[
     "InternalError",
     "InvalidConfiguration",
     "InvalidImage",
+    "InvalidRuntime",
     "InvalidSecurityGroup",
+    "InvalidStateKMSKey",
     "InvalidSubnet",
+    "InvalidZipFileException",
+    "KMSKeyAccessDenied",
+    "KMSKeyNotFound",
     "Restoring",
     "SubnetOutOfIPAddresses",
 ]
@@ -603,6 +669,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",
@@ -969,6 +1036,7 @@ WaiterName = Literal[
     "function_exists",
     "function_updated",
     "function_updated_v2",
+    "published_version_active",
 ]
 ```
 ## RegionName

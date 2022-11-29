@@ -381,6 +381,23 @@ class ImageConfigTypeDef(TypedDict):
     WorkingDirectory: NotRequired[str],
 ```
 
+## SnapStartTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import SnapStartTypeDef
+
+def get_value() -> SnapStartTypeDef:
+    return {
+        "ApplyOn": ...,
+    }
+```
+
+```python title="Definition"
+class SnapStartTypeDef(TypedDict):
+    ApplyOn: NotRequired[SnapStartApplyOnType],  # (1)
+```
+
+1. See [:material-code-brackets: SnapStartApplyOnType](./literals.md#snapstartapplyontype) 
 ## TracingConfigTypeDef
 
 ```python title="Usage Example"
@@ -687,6 +704,25 @@ class LayerTypeDef(TypedDict):
     SigningJobArn: NotRequired[str],
 ```
 
+## SnapStartResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import SnapStartResponseTypeDef
+
+def get_value() -> SnapStartResponseTypeDef:
+    return {
+        "ApplyOn": ...,
+    }
+```
+
+```python title="Definition"
+class SnapStartResponseTypeDef(TypedDict):
+    ApplyOn: NotRequired[SnapStartApplyOnType],  # (1)
+    OptimizationStatus: NotRequired[SnapStartOptimizationStatusType],  # (2)
+```
+
+1. See [:material-code-brackets: SnapStartApplyOnType](./literals.md#snapstartapplyontype) 
+2. See [:material-code-brackets: SnapStartOptimizationStatusType](./literals.md#snapstartoptimizationstatustype) 
 ## TracingConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -2252,6 +2288,7 @@ class CreateFunctionRequestRequestTypeDef(TypedDict):
     CodeSigningConfigArn: NotRequired[str],
     Architectures: NotRequired[Sequence[ArchitectureType]],  # (10)
     EphemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (11)
+    SnapStart: NotRequired[SnapStartTypeDef],  # (12)
 ```
 
 1. See [:material-code-braces: FunctionCodeTypeDef](./type_defs.md#functioncodetypedef) 
@@ -2265,6 +2302,7 @@ class CreateFunctionRequestRequestTypeDef(TypedDict):
 9. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
 10. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+12. See [:material-code-braces: SnapStartTypeDef](./type_defs.md#snapstarttypedef) 
 ## UpdateFunctionConfigurationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2295,6 +2333,7 @@ class UpdateFunctionConfigurationRequestRequestTypeDef(TypedDict):
     FileSystemConfigs: NotRequired[Sequence[FileSystemConfigTypeDef]],  # (6)
     ImageConfig: NotRequired[ImageConfigTypeDef],  # (7)
     EphemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (8)
+    SnapStart: NotRequired[SnapStartTypeDef],  # (9)
 ```
 
 1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
@@ -2305,6 +2344,7 @@ class UpdateFunctionConfigurationRequestRequestTypeDef(TypedDict):
 6. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
 7. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
 8. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+9. See [:material-code-braces: SnapStartTypeDef](./type_defs.md#snapstarttypedef) 
 ## DestinationConfigTypeDef
 
 ```python title="Usage Example"
@@ -2391,6 +2431,25 @@ def get_value() -> GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef:
 
 ```python title="Definition"
 class GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetFunctionConfigurationRequestPublishedVersionActiveWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionConfigurationRequestPublishedVersionActiveWaitTypeDef
+
+def get_value() -> GetFunctionConfigurationRequestPublishedVersionActiveWaitTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetFunctionConfigurationRequestPublishedVersionActiveWaitTypeDef(TypedDict):
     FunctionName: str,
     Qualifier: NotRequired[str],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
@@ -3302,6 +3361,7 @@ def get_value() -> FunctionConfigurationResponseMetadataTypeDef:
         "SigningJobArn": ...,
         "Architectures": ...,
         "EphemeralStorage": ...,
+        "SnapStart": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3341,7 +3401,8 @@ class FunctionConfigurationResponseMetadataTypeDef(TypedDict):
     SigningJobArn: str,
     Architectures: List[ArchitectureType],  # (14)
     EphemeralStorage: EphemeralStorageTypeDef,  # (15)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (16)
+    SnapStart: SnapStartResponseTypeDef,  # (16)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (17)
 ```
 
 1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
@@ -3359,7 +3420,8 @@ class FunctionConfigurationResponseMetadataTypeDef(TypedDict):
 13. See [:material-code-braces: ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef) 
 14. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 15. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
-16. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+16. See [:material-code-braces: SnapStartResponseTypeDef](./type_defs.md#snapstartresponsetypedef) 
+17. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FunctionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3406,6 +3468,7 @@ class FunctionConfigurationTypeDef(TypedDict):
     SigningJobArn: NotRequired[str],
     Architectures: NotRequired[List[ArchitectureType]],  # (14)
     EphemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (15)
+    SnapStart: NotRequired[SnapStartResponseTypeDef],  # (16)
 ```
 
 1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
@@ -3423,6 +3486,7 @@ class FunctionConfigurationTypeDef(TypedDict):
 13. See [:material-code-braces: ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef) 
 14. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 15. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+16. See [:material-code-braces: SnapStartResponseTypeDef](./type_defs.md#snapstartresponsetypedef) 
 ## ListLayersResponseTypeDef
 
 ```python title="Usage Example"

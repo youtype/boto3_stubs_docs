@@ -219,6 +219,7 @@ ExportableInstanceFieldType = Literal[
     "CurrentVCpus",
     "EffectiveRecommendationPreferencesCpuVendorArchitectures",
     "EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics",
+    "EffectiveRecommendationPreferencesExternalMetricsSource",
     "EffectiveRecommendationPreferencesInferredWorkloadTypes",
     "Finding",
     "FindingReasonCodes",
@@ -339,6 +340,23 @@ ExportableVolumeFieldType = Literal[
     "UtilizationMetricsVolumeWriteBytesPerSecondMaximum",
     "UtilizationMetricsVolumeWriteOpsPerSecondMaximum",
     "VolumeArn",
+]
+```
+## ExternalMetricsSourceType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ExternalMetricsSourceType
+
+def get_value() -> ExternalMetricsSourceType:
+    return "Datadog"
+```
+
+```python title="Definition"
+ExternalMetricsSourceType = Literal[
+    "Datadog",
+    "Dynatrace",
+    "Instana",
+    "NewRelic",
 ]
 ```
 ## FileFormatType
@@ -697,6 +715,7 @@ def get_value() -> RecommendationPreferenceNameType:
 ```python title="Definition"
 RecommendationPreferenceNameType = Literal[
     "EnhancedInfrastructureMetrics",
+    "ExternalMetricsPreference",
     "InferredWorkloadTypes",
 ]
 ```
@@ -816,6 +835,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",

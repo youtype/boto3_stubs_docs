@@ -437,6 +437,21 @@ DescribeRetentionConfigurationsPaginatorName = Literal[
     "describe_retention_configurations",
 ]
 ```
+## EvaluationModeType
+
+```python title="Usage Example"
+from mypy_boto3_config.literals import EvaluationModeType
+
+def get_value() -> EvaluationModeType:
+    return "DETECTIVE"
+```
+
+```python title="Definition"
+EvaluationModeType = Literal[
+    "DETECTIVE",
+    "PROACTIVE",
+]
+```
 ## EventSourceType
 
 ```python title="Usage Example"
@@ -575,6 +590,20 @@ def get_value() -> ListDiscoveredResourcesPaginatorName:
 ```python title="Definition"
 ListDiscoveredResourcesPaginatorName = Literal[
     "list_discovered_resources",
+]
+```
+## ListResourceEvaluationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_config.literals import ListResourceEvaluationsPaginatorName
+
+def get_value() -> ListResourceEvaluationsPaginatorName:
+    return "list_resource_evaluations"
+```
+
+```python title="Definition"
+ListResourceEvaluationsPaginatorName = Literal[
+    "list_resource_evaluations",
 ]
 ```
 ## ListTagsForResourcePaginatorName
@@ -824,6 +853,20 @@ RemediationTargetTypeType = Literal[
     "SSM_DOCUMENT",
 ]
 ```
+## ResourceConfigurationSchemaTypeType
+
+```python title="Usage Example"
+from mypy_boto3_config.literals import ResourceConfigurationSchemaTypeType
+
+def get_value() -> ResourceConfigurationSchemaTypeType:
+    return "CFN_RESOURCE_SCHEMA"
+```
+
+```python title="Definition"
+ResourceConfigurationSchemaTypeType = Literal[
+    "CFN_RESOURCE_SCHEMA",
+]
+```
 ## ResourceCountGroupKeyType
 
 ```python title="Usage Example"
@@ -838,6 +881,22 @@ ResourceCountGroupKeyType = Literal[
     "ACCOUNT_ID",
     "AWS_REGION",
     "RESOURCE_TYPE",
+]
+```
+## ResourceEvaluationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_config.literals import ResourceEvaluationStatusType
+
+def get_value() -> ResourceEvaluationStatusType:
+    return "FAILED"
+```
+
+```python title="Definition"
+ResourceEvaluationStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "SUCCEEDED",
 ]
 ```
 ## ResourceTypeType
@@ -1136,6 +1195,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",
@@ -1500,6 +1560,7 @@ PaginatorName = Literal[
     "get_resource_config_history",
     "list_aggregate_discovered_resources",
     "list_discovered_resources",
+    "list_resource_evaluations",
     "list_tags_for_resource",
     "select_aggregate_resource_config",
     "select_resource_config",

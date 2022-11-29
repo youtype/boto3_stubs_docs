@@ -310,8 +310,7 @@ parent.delete_filter(**kwargs)
 ### describe\_organization\_configuration
 
 Describe Amazon Inspector configuration settings for an Amazon Web Services
-organization See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/inspector2-2020-06-08/DescribeOrganizationConfiguration).
+organization.
 
 Type annotations and code completion for `#!python boto3.client("inspector2").describe_organization_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.describe_organization_configuration)

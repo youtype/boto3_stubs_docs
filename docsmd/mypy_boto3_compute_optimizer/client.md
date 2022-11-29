@@ -673,6 +673,7 @@ def put_recommendation_preferences(
     scope: ScopeTypeDef = ...,  # (2)
     enhancedInfrastructureMetrics: EnhancedInfrastructureMetricsType = ...,  # (3)
     inferredWorkloadTypes: InferredWorkloadTypesPreferenceType = ...,  # (4)
+    externalMetricsPreference: ExternalMetricsPreferenceTypeDef = ...,  # (5)
 ) -> Dict[str, Any]:
     ...
 ```
@@ -681,6 +682,7 @@ def put_recommendation_preferences(
 2. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
 3. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
 4. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
+5. See [:material-code-braces: ExternalMetricsPreferenceTypeDef](./type_defs.md#externalmetricspreferencetypedef) 
 
 
 ```python title="Usage example with kwargs"

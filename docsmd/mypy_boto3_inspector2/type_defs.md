@@ -87,10 +87,12 @@ def get_value() -> ResourceStatusTypeDef:
 class ResourceStatusTypeDef(TypedDict):
     ec2: StatusType,  # (1)
     ecr: StatusType,  # (1)
+    lambda: NotRequired[StatusType],  # (1)
 ```
 
 1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## FindingTypeAggregationTypeDef
 
 ```python title="Usage Example"
@@ -189,6 +191,7 @@ def get_value() -> AutoEnableTypeDef:
 class AutoEnableTypeDef(TypedDict):
     ec2: bool,
     ecr: bool,
+    lambda: NotRequired[bool],
 ```
 
 ## AwsEc2InstanceDetailsTypeDef
@@ -239,6 +242,24 @@ class AwsEcrContainerImageDetailsTypeDef(TypedDict):
     imageTags: NotRequired[List[str]],
     platform: NotRequired[str],
     pushedAt: NotRequired[datetime],
+```
+
+## LambdaVpcConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import LambdaVpcConfigTypeDef
+
+def get_value() -> LambdaVpcConfigTypeDef:
+    return {
+        "securityGroupIds": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaVpcConfigTypeDef(TypedDict):
+    securityGroupIds: NotRequired[List[str]],
+    subnetIds: NotRequired[List[str]],
+    vpcId: NotRequired[str],
 ```
 
 ## BatchGetAccountStatusRequestRequestTypeDef
@@ -711,6 +732,22 @@ class EnableRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceScanTypeType](./literals.md#resourcescantypetype) 
+## ExploitabilityDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ExploitabilityDetailsTypeDef
+
+def get_value() -> ExploitabilityDetailsTypeDef:
+    return {
+        "lastKnownExploitAt": ...,
+    }
+```
+
+```python title="Definition"
+class ExploitabilityDetailsTypeDef(TypedDict):
+    lastKnownExploitAt: NotRequired[datetime],
+```
+
 ## NumberFilterTypeDef
 
 ```python title="Usage Example"
@@ -821,6 +858,26 @@ class MemberTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
+## LambdaFunctionMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import LambdaFunctionMetadataTypeDef
+
+def get_value() -> LambdaFunctionMetadataTypeDef:
+    return {
+        "functionName": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaFunctionMetadataTypeDef(TypedDict):
+    functionName: NotRequired[str],
+    functionTags: NotRequired[Dict[str, str]],
+    layers: NotRequired[List[str]],
+    runtime: NotRequired[RuntimeType],  # (1)
+```
+
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -1046,6 +1103,7 @@ class VulnerablePackageTypeDef(TypedDict):
     packageManager: NotRequired[PackageManagerType],  # (1)
     release: NotRequired[str],
     remediation: NotRequired[str],
+    sourceLambdaLayerArn: NotRequired[str],
     sourceLayerHash: NotRequired[str],
 ```
 
@@ -1250,6 +1308,53 @@ class ImageLayerAggregationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
+## LambdaFunctionAggregationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import LambdaFunctionAggregationResponseTypeDef
+
+def get_value() -> LambdaFunctionAggregationResponseTypeDef:
+    return {
+        "resourceId": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaFunctionAggregationResponseTypeDef(TypedDict):
+    resourceId: str,
+    accountId: NotRequired[str],
+    functionName: NotRequired[str],
+    lambdaTags: NotRequired[Dict[str, str]],
+    lastModifiedAt: NotRequired[datetime],
+    runtime: NotRequired[str],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
+## LambdaLayerAggregationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import LambdaLayerAggregationResponseTypeDef
+
+def get_value() -> LambdaLayerAggregationResponseTypeDef:
+    return {
+        "accountId": ...,
+        "functionName": ...,
+        "layerArn": ...,
+        "resourceId": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaLayerAggregationResponseTypeDef(TypedDict):
+    accountId: str,
+    functionName: str,
+    layerArn: str,
+    resourceId: str,
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## PackageAggregationResponseTypeDef
 
 ```python title="Usage Example"
@@ -1325,10 +1430,12 @@ def get_value() -> ResourceStateTypeDef:
 class ResourceStateTypeDef(TypedDict):
     ec2: StateTypeDef,  # (1)
     ecr: StateTypeDef,  # (1)
+    lambda: NotRequired[StateTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: StateTypeDef](./type_defs.md#statetypedef) 
 2. See [:material-code-braces: StateTypeDef](./type_defs.md#statetypedef) 
+3. See [:material-code-braces: StateTypeDef](./type_defs.md#statetypedef) 
 ## AccountTypeDef
 
 ```python title="Usage Example"
@@ -1450,6 +1557,31 @@ class ImageLayerAggregationTypeDef(TypedDict):
 2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 4. See [:material-code-brackets: ImageLayerSortByType](./literals.md#imagelayersortbytype) 
+5. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## LambdaLayerAggregationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import LambdaLayerAggregationTypeDef
+
+def get_value() -> LambdaLayerAggregationTypeDef:
+    return {
+        "functionNames": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaLayerAggregationTypeDef(TypedDict):
+    functionNames: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    layerArns: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    resourceIds: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[LambdaLayerSortByType],  # (4)
+    sortOrder: NotRequired[SortOrderType],  # (5)
+```
+
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+4. See [:material-code-brackets: LambdaLayerSortByType](./literals.md#lambdalayersortbytype) 
 5. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## PackageAggregationTypeDef
 
@@ -1767,25 +1899,39 @@ class UpdateOrganizationConfigurationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AutoEnableTypeDef](./type_defs.md#autoenabletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResourceDetailsTypeDef
+## AwsLambdaFunctionDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_inspector2.type_defs import ResourceDetailsTypeDef
+from mypy_boto3_inspector2.type_defs import AwsLambdaFunctionDetailsTypeDef
 
-def get_value() -> ResourceDetailsTypeDef:
+def get_value() -> AwsLambdaFunctionDetailsTypeDef:
     return {
-        "awsEc2Instance": ...,
+        "codeSha256": ...,
+        "executionRoleArn": ...,
+        "functionName": ...,
+        "runtime": ...,
+        "version": ...,
     }
 ```
 
 ```python title="Definition"
-class ResourceDetailsTypeDef(TypedDict):
-    awsEc2Instance: NotRequired[AwsEc2InstanceDetailsTypeDef],  # (1)
-    awsEcrContainerImage: NotRequired[AwsEcrContainerImageDetailsTypeDef],  # (2)
+class AwsLambdaFunctionDetailsTypeDef(TypedDict):
+    codeSha256: str,
+    executionRoleArn: str,
+    functionName: str,
+    runtime: RuntimeType,  # (3)
+    version: str,
+    architectures: NotRequired[List[ArchitectureType]],  # (1)
+    lastModifiedAt: NotRequired[datetime],
+    layers: NotRequired[List[str]],
+    packageType: NotRequired[PackageTypeType],  # (2)
+    vpcConfig: NotRequired[LambdaVpcConfigTypeDef],  # (4)
 ```
 
-1. See [:material-code-braces: AwsEc2InstanceDetailsTypeDef](./type_defs.md#awsec2instancedetailstypedef) 
-2. See [:material-code-braces: AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef) 
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+2. See [:material-code-brackets: PackageTypeType](./literals.md#packagetypetype) 
+3. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+4. See [:material-code-braces: LambdaVpcConfigTypeDef](./type_defs.md#lambdavpcconfigtypedef) 
 ## ListCoverageStatisticsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1827,6 +1973,9 @@ class CoverageFilterCriteriaTypeDef(TypedDict):
     ec2InstanceTags: NotRequired[Sequence[CoverageMapFilterTypeDef]],  # (2)
     ecrImageTags: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
     ecrRepositoryName: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    lambdaFunctionName: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    lambdaFunctionRuntime: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    lambdaFunctionTags: NotRequired[Sequence[CoverageMapFilterTypeDef]],  # (2)
     resourceId: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
     resourceType: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
     scanStatusCode: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
@@ -1840,9 +1989,12 @@ class CoverageFilterCriteriaTypeDef(TypedDict):
 4. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
 5. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
 6. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
-7. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+7. See [:material-code-braces: CoverageMapFilterTypeDef](./type_defs.md#coveragemapfiltertypedef) 
 8. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
 9. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+10. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+11. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+12. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
 ## CvssScoreDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1937,6 +2089,33 @@ class Ec2InstanceAggregationTypeDef(TypedDict):
 4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 5. See [:material-code-brackets: Ec2InstanceSortByType](./literals.md#ec2instancesortbytype) 
 6. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## LambdaFunctionAggregationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import LambdaFunctionAggregationTypeDef
+
+def get_value() -> LambdaFunctionAggregationTypeDef:
+    return {
+        "functionNames": ...,
+    }
+```
+
+```python title="Definition"
+class LambdaFunctionAggregationTypeDef(TypedDict):
+    functionNames: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    functionTags: NotRequired[Sequence[MapFilterTypeDef]],  # (2)
+    resourceIds: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    runtimes: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[LambdaFunctionSortByType],  # (5)
+    sortOrder: NotRequired[SortOrderType],  # (6)
+```
+
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: MapFilterTypeDef](./type_defs.md#mapfiltertypedef) 
+3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+5. See [:material-code-brackets: LambdaFunctionSortByType](./literals.md#lambdafunctionsortbytype) 
+6. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## EcrConfigurationStateTypeDef
 
 ```python title="Usage Example"
@@ -1971,27 +2150,6 @@ class UpdateConfigurationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EcrConfigurationTypeDef](./type_defs.md#ecrconfigurationtypedef) 
-## ResourceScanMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_inspector2.type_defs import ResourceScanMetadataTypeDef
-
-def get_value() -> ResourceScanMetadataTypeDef:
-    return {
-        "ec2": ...,
-    }
-```
-
-```python title="Definition"
-class ResourceScanMetadataTypeDef(TypedDict):
-    ec2: NotRequired[Ec2MetadataTypeDef],  # (1)
-    ecrImage: NotRequired[EcrContainerImageMetadataTypeDef],  # (2)
-    ecrRepository: NotRequired[EcrRepositoryMetadataTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: Ec2MetadataTypeDef](./type_defs.md#ec2metadatatypedef) 
-2. See [:material-code-braces: EcrContainerImageMetadataTypeDef](./type_defs.md#ecrcontainerimagemetadatatypedef) 
-3. See [:material-code-braces: EcrRepositoryMetadataTypeDef](./type_defs.md#ecrrepositorymetadatatypedef) 
 ## PackageFilterTypeDef
 
 ```python title="Usage Example"
@@ -2009,6 +2167,7 @@ class PackageFilterTypeDef(TypedDict):
     epoch: NotRequired[NumberFilterTypeDef],  # (2)
     name: NotRequired[StringFilterTypeDef],  # (1)
     release: NotRequired[StringFilterTypeDef],  # (1)
+    sourceLambdaLayerArn: NotRequired[StringFilterTypeDef],  # (1)
     sourceLayerHash: NotRequired[StringFilterTypeDef],  # (1)
     version: NotRequired[StringFilterTypeDef],  # (1)
 ```
@@ -2019,6 +2178,7 @@ class PackageFilterTypeDef(TypedDict):
 4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 5. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 6. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+7. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 ## FreeTrialAccountInfoTypeDef
 
 ```python title="Usage Example"
@@ -2080,6 +2240,29 @@ class ListMembersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResourceScanMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ResourceScanMetadataTypeDef
+
+def get_value() -> ResourceScanMetadataTypeDef:
+    return {
+        "ec2": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceScanMetadataTypeDef(TypedDict):
+    ec2: NotRequired[Ec2MetadataTypeDef],  # (1)
+    ecrImage: NotRequired[EcrContainerImageMetadataTypeDef],  # (2)
+    ecrRepository: NotRequired[EcrRepositoryMetadataTypeDef],  # (3)
+    lambdaFunction: NotRequired[LambdaFunctionMetadataTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: Ec2MetadataTypeDef](./type_defs.md#ec2metadatatypedef) 
+2. See [:material-code-braces: EcrContainerImageMetadataTypeDef](./type_defs.md#ecrcontainerimagemetadatatypedef) 
+3. See [:material-code-braces: EcrRepositoryMetadataTypeDef](./type_defs.md#ecrrepositorymetadatatypedef) 
+4. See [:material-code-braces: LambdaFunctionMetadataTypeDef](./type_defs.md#lambdafunctionmetadatatypedef) 
 ## ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2293,9 +2476,11 @@ class AggregationResponseTypeDef(TypedDict):
     ec2InstanceAggregation: NotRequired[Ec2InstanceAggregationResponseTypeDef],  # (4)
     findingTypeAggregation: NotRequired[FindingTypeAggregationResponseTypeDef],  # (5)
     imageLayerAggregation: NotRequired[ImageLayerAggregationResponseTypeDef],  # (6)
-    packageAggregation: NotRequired[PackageAggregationResponseTypeDef],  # (7)
-    repositoryAggregation: NotRequired[RepositoryAggregationResponseTypeDef],  # (8)
-    titleAggregation: NotRequired[TitleAggregationResponseTypeDef],  # (9)
+    lambdaFunctionAggregation: NotRequired[LambdaFunctionAggregationResponseTypeDef],  # (7)
+    lambdaLayerAggregation: NotRequired[LambdaLayerAggregationResponseTypeDef],  # (8)
+    packageAggregation: NotRequired[PackageAggregationResponseTypeDef],  # (9)
+    repositoryAggregation: NotRequired[RepositoryAggregationResponseTypeDef],  # (10)
+    titleAggregation: NotRequired[TitleAggregationResponseTypeDef],  # (11)
 ```
 
 1. See [:material-code-braces: AccountAggregationResponseTypeDef](./type_defs.md#accountaggregationresponsetypedef) 
@@ -2304,9 +2489,11 @@ class AggregationResponseTypeDef(TypedDict):
 4. See [:material-code-braces: Ec2InstanceAggregationResponseTypeDef](./type_defs.md#ec2instanceaggregationresponsetypedef) 
 5. See [:material-code-braces: FindingTypeAggregationResponseTypeDef](./type_defs.md#findingtypeaggregationresponsetypedef) 
 6. See [:material-code-braces: ImageLayerAggregationResponseTypeDef](./type_defs.md#imagelayeraggregationresponsetypedef) 
-7. See [:material-code-braces: PackageAggregationResponseTypeDef](./type_defs.md#packageaggregationresponsetypedef) 
-8. See [:material-code-braces: RepositoryAggregationResponseTypeDef](./type_defs.md#repositoryaggregationresponsetypedef) 
-9. See [:material-code-braces: TitleAggregationResponseTypeDef](./type_defs.md#titleaggregationresponsetypedef) 
+7. See [:material-code-braces: LambdaFunctionAggregationResponseTypeDef](./type_defs.md#lambdafunctionaggregationresponsetypedef) 
+8. See [:material-code-braces: LambdaLayerAggregationResponseTypeDef](./type_defs.md#lambdalayeraggregationresponsetypedef) 
+9. See [:material-code-braces: PackageAggregationResponseTypeDef](./type_defs.md#packageaggregationresponsetypedef) 
+10. See [:material-code-braces: RepositoryAggregationResponseTypeDef](./type_defs.md#repositoryaggregationresponsetypedef) 
+11. See [:material-code-braces: TitleAggregationResponseTypeDef](./type_defs.md#titleaggregationresponsetypedef) 
 ## AccountStateTypeDef
 
 ```python title="Usage Example"
@@ -2375,30 +2562,27 @@ class EnableResponseTypeDef(TypedDict):
 1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
 2. See [:material-code-braces: FailedAccountTypeDef](./type_defs.md#failedaccounttypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ResourceTypeDef
+## ResourceDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_inspector2.type_defs import ResourceTypeDef
+from mypy_boto3_inspector2.type_defs import ResourceDetailsTypeDef
 
-def get_value() -> ResourceTypeDef:
+def get_value() -> ResourceDetailsTypeDef:
     return {
-        "id": ...,
-        "type": ...,
+        "awsEc2Instance": ...,
     }
 ```
 
 ```python title="Definition"
-class ResourceTypeDef(TypedDict):
-    id: str,
-    type: ResourceTypeType,  # (2)
-    details: NotRequired[ResourceDetailsTypeDef],  # (1)
-    partition: NotRequired[str],
-    region: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
+class ResourceDetailsTypeDef(TypedDict):
+    awsEc2Instance: NotRequired[AwsEc2InstanceDetailsTypeDef],  # (1)
+    awsEcrContainerImage: NotRequired[AwsEcrContainerImageDetailsTypeDef],  # (2)
+    awsLambdaFunction: NotRequired[AwsLambdaFunctionDetailsTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
-2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+1. See [:material-code-braces: AwsEc2InstanceDetailsTypeDef](./type_defs.md#awsec2instancedetailstypedef) 
+2. See [:material-code-braces: AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef) 
+3. See [:material-code-braces: AwsLambdaFunctionDetailsTypeDef](./type_defs.md#awslambdafunctiondetailstypedef) 
 ## ListCoverageRequestListCoveragePaginateTypeDef
 
 ```python title="Usage Example"
@@ -2514,9 +2698,11 @@ class AggregationRequestTypeDef(TypedDict):
     ec2InstanceAggregation: NotRequired[Ec2InstanceAggregationTypeDef],  # (4)
     findingTypeAggregation: NotRequired[FindingTypeAggregationTypeDef],  # (5)
     imageLayerAggregation: NotRequired[ImageLayerAggregationTypeDef],  # (6)
-    packageAggregation: NotRequired[PackageAggregationTypeDef],  # (7)
-    repositoryAggregation: NotRequired[RepositoryAggregationTypeDef],  # (8)
-    titleAggregation: NotRequired[TitleAggregationTypeDef],  # (9)
+    lambdaFunctionAggregation: NotRequired[LambdaFunctionAggregationTypeDef],  # (7)
+    lambdaLayerAggregation: NotRequired[LambdaLayerAggregationTypeDef],  # (8)
+    packageAggregation: NotRequired[PackageAggregationTypeDef],  # (9)
+    repositoryAggregation: NotRequired[RepositoryAggregationTypeDef],  # (10)
+    titleAggregation: NotRequired[TitleAggregationTypeDef],  # (11)
 ```
 
 1. See [:material-code-braces: AccountAggregationTypeDef](./type_defs.md#accountaggregationtypedef) 
@@ -2525,9 +2711,11 @@ class AggregationRequestTypeDef(TypedDict):
 4. See [:material-code-braces: Ec2InstanceAggregationTypeDef](./type_defs.md#ec2instanceaggregationtypedef) 
 5. See [:material-code-braces: FindingTypeAggregationTypeDef](./type_defs.md#findingtypeaggregationtypedef) 
 6. See [:material-code-braces: ImageLayerAggregationTypeDef](./type_defs.md#imagelayeraggregationtypedef) 
-7. See [:material-code-braces: PackageAggregationTypeDef](./type_defs.md#packageaggregationtypedef) 
-8. See [:material-code-braces: RepositoryAggregationTypeDef](./type_defs.md#repositoryaggregationtypedef) 
-9. See [:material-code-braces: TitleAggregationTypeDef](./type_defs.md#titleaggregationtypedef) 
+7. See [:material-code-braces: LambdaFunctionAggregationTypeDef](./type_defs.md#lambdafunctionaggregationtypedef) 
+8. See [:material-code-braces: LambdaLayerAggregationTypeDef](./type_defs.md#lambdalayeraggregationtypedef) 
+9. See [:material-code-braces: PackageAggregationTypeDef](./type_defs.md#packageaggregationtypedef) 
+10. See [:material-code-braces: RepositoryAggregationTypeDef](./type_defs.md#repositoryaggregationtypedef) 
+11. See [:material-code-braces: TitleAggregationTypeDef](./type_defs.md#titleaggregationtypedef) 
 ## GetConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -2548,6 +2736,120 @@ class GetConfigurationResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EcrConfigurationStateTypeDef](./type_defs.md#ecrconfigurationstatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FilterCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import FilterCriteriaTypeDef
+
+def get_value() -> FilterCriteriaTypeDef:
+    return {
+        "awsAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class FilterCriteriaTypeDef(TypedDict):
+    awsAccountId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    componentId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    componentType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ec2InstanceImageId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ec2InstanceSubnetId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ec2InstanceVpcId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageArchitecture: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageHash: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImagePushedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    ecrImageRegistry: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageRepositoryName: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageTags: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    exploitAvailable: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    findingArn: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    findingStatus: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    findingType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    firstObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    fixAvailable: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    inspectorScore: NotRequired[Sequence[NumberFilterTypeDef]],  # (19)
+    lambdaFunctionExecutionRoleArn: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    lambdaFunctionLastModifiedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    lambdaFunctionLayers: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    lambdaFunctionName: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    lambdaFunctionRuntime: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    lastObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    networkProtocol: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    portRange: NotRequired[Sequence[PortRangeFilterTypeDef]],  # (27)
+    relatedVulnerabilities: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    resourceId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    resourceTags: NotRequired[Sequence[MapFilterTypeDef]],  # (30)
+    resourceType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    severity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    title: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    updatedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    vendorSeverity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    vulnerabilityId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    vulnerabilitySource: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    vulnerablePackages: NotRequired[Sequence[PackageFilterTypeDef]],  # (38)
+```
+
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+5. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+6. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+7. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+8. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+9. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+10. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+11. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+12. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+13. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+14. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+15. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+16. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+17. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+18. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+19. See [:material-code-braces: NumberFilterTypeDef](./type_defs.md#numberfiltertypedef) 
+20. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+21. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+22. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+23. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+24. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+25. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+26. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+27. See [:material-code-braces: PortRangeFilterTypeDef](./type_defs.md#portrangefiltertypedef) 
+28. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+29. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+30. See [:material-code-braces: MapFilterTypeDef](./type_defs.md#mapfiltertypedef) 
+31. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+32. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+33. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+34. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+35. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+36. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+37. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+38. See [:material-code-braces: PackageFilterTypeDef](./type_defs.md#packagefiltertypedef) 
+## BatchGetFreeTrialInfoResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import BatchGetFreeTrialInfoResponseTypeDef
+
+def get_value() -> BatchGetFreeTrialInfoResponseTypeDef:
+    return {
+        "accounts": ...,
+        "failedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetFreeTrialInfoResponseTypeDef(TypedDict):
+    accounts: List[FreeTrialAccountInfoTypeDef],  # (1)
+    failedAccounts: List[FreeTrialInfoErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: FreeTrialAccountInfoTypeDef](./type_defs.md#freetrialaccountinfotypedef) 
+2. See [:material-code-braces: FreeTrialInfoErrorTypeDef](./type_defs.md#freetrialinfoerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CoveredResourceTypeDef
 
 ```python title="Usage Example"
@@ -2576,108 +2878,6 @@ class CoveredResourceTypeDef(TypedDict):
 2. See [:material-code-brackets: CoverageResourceTypeType](./literals.md#coverageresourcetypetype) 
 3. See [:material-code-braces: ScanStatusTypeDef](./type_defs.md#scanstatustypedef) 
 4. See [:material-code-brackets: ScanTypeType](./literals.md#scantypetype) 
-## FilterCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_inspector2.type_defs import FilterCriteriaTypeDef
-
-def get_value() -> FilterCriteriaTypeDef:
-    return {
-        "awsAccountId": ...,
-    }
-```
-
-```python title="Definition"
-class FilterCriteriaTypeDef(TypedDict):
-    awsAccountId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    componentId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    componentType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ec2InstanceImageId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ec2InstanceSubnetId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ec2InstanceVpcId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ecrImageArchitecture: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ecrImageHash: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ecrImagePushedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
-    ecrImageRegistry: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ecrImageRepositoryName: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    ecrImageTags: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    findingArn: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    findingStatus: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    findingType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    firstObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
-    fixAvailable: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    inspectorScore: NotRequired[Sequence[NumberFilterTypeDef]],  # (18)
-    lastObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
-    networkProtocol: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    portRange: NotRequired[Sequence[PortRangeFilterTypeDef]],  # (21)
-    relatedVulnerabilities: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    resourceId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    resourceTags: NotRequired[Sequence[MapFilterTypeDef]],  # (24)
-    resourceType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    severity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    title: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    updatedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
-    vendorSeverity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    vulnerabilityId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    vulnerabilitySource: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
-    vulnerablePackages: NotRequired[Sequence[PackageFilterTypeDef]],  # (32)
-```
-
-1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-5. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-6. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-7. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-8. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-9. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
-10. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-11. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-12. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-13. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-14. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-15. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-16. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
-17. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-18. See [:material-code-braces: NumberFilterTypeDef](./type_defs.md#numberfiltertypedef) 
-19. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
-20. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-21. See [:material-code-braces: PortRangeFilterTypeDef](./type_defs.md#portrangefiltertypedef) 
-22. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-23. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-24. See [:material-code-braces: MapFilterTypeDef](./type_defs.md#mapfiltertypedef) 
-25. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-26. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-27. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-28. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
-29. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-30. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-31. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
-32. See [:material-code-braces: PackageFilterTypeDef](./type_defs.md#packagefiltertypedef) 
-## BatchGetFreeTrialInfoResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_inspector2.type_defs import BatchGetFreeTrialInfoResponseTypeDef
-
-def get_value() -> BatchGetFreeTrialInfoResponseTypeDef:
-    return {
-        "accounts": ...,
-        "failedAccounts": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchGetFreeTrialInfoResponseTypeDef(TypedDict):
-    accounts: List[FreeTrialAccountInfoTypeDef],  # (1)
-    failedAccounts: List[FreeTrialInfoErrorTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: FreeTrialAccountInfoTypeDef](./type_defs.md#freetrialaccountinfotypedef) 
-2. See [:material-code-braces: FreeTrialInfoErrorTypeDef](./type_defs.md#freetrialinfoerrortypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NetworkReachabilityDetailsTypeDef
 
 ```python title="Usage Example"
@@ -2771,6 +2971,30 @@ class BatchGetAccountStatusResponseTypeDef(TypedDict):
 1. See [:material-code-braces: AccountStateTypeDef](./type_defs.md#accountstatetypedef) 
 2. See [:material-code-braces: FailedAccountTypeDef](./type_defs.md#failedaccounttypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "id": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    id: str,
+    type: ResourceTypeType,  # (2)
+    details: NotRequired[ResourceDetailsTypeDef],  # (1)
+    partition: NotRequired[str],
+    region: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2817,28 +3041,6 @@ class ListFindingAggregationsRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
 2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 3. See [:material-code-braces: AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef) 
-## ListCoverageResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_inspector2.type_defs import ListCoverageResponseTypeDef
-
-def get_value() -> ListCoverageResponseTypeDef:
-    return {
-        "coveredResources": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListCoverageResponseTypeDef(TypedDict):
-    coveredResources: List[CoveredResourceTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: CoveredResourceTypeDef](./type_defs.md#coveredresourcetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFilterRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3017,6 +3219,28 @@ class UpdateFilterRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
 2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+## ListCoverageResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListCoverageResponseTypeDef
+
+def get_value() -> ListCoverageResponseTypeDef:
+    return {
+        "coveredResources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoverageResponseTypeDef(TypedDict):
+    coveredResources: List[CoveredResourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CoveredResourceTypeDef](./type_defs.md#coveredresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FindingTypeDef
 
 ```python title="Usage Example"
@@ -3044,29 +3268,33 @@ class FindingTypeDef(TypedDict):
     findingArn: str,
     firstObservedAt: datetime,
     lastObservedAt: datetime,
-    remediation: RemediationTypeDef,  # (5)
-    resources: List[ResourceTypeDef],  # (6)
-    severity: SeverityType,  # (7)
-    status: FindingStatusType,  # (8)
-    type: FindingTypeType,  # (9)
-    fixAvailable: NotRequired[FixAvailableType],  # (1)
+    remediation: RemediationTypeDef,  # (7)
+    resources: List[ResourceTypeDef],  # (8)
+    severity: SeverityType,  # (9)
+    status: FindingStatusType,  # (10)
+    type: FindingTypeType,  # (11)
+    exploitAvailable: NotRequired[ExploitAvailableType],  # (1)
+    exploitabilityDetails: NotRequired[ExploitabilityDetailsTypeDef],  # (2)
+    fixAvailable: NotRequired[FixAvailableType],  # (3)
     inspectorScore: NotRequired[float],
-    inspectorScoreDetails: NotRequired[InspectorScoreDetailsTypeDef],  # (2)
-    networkReachabilityDetails: NotRequired[NetworkReachabilityDetailsTypeDef],  # (3)
-    packageVulnerabilityDetails: NotRequired[PackageVulnerabilityDetailsTypeDef],  # (4)
+    inspectorScoreDetails: NotRequired[InspectorScoreDetailsTypeDef],  # (4)
+    networkReachabilityDetails: NotRequired[NetworkReachabilityDetailsTypeDef],  # (5)
+    packageVulnerabilityDetails: NotRequired[PackageVulnerabilityDetailsTypeDef],  # (6)
     title: NotRequired[str],
     updatedAt: NotRequired[datetime],
 ```
 
-1. See [:material-code-brackets: FixAvailableType](./literals.md#fixavailabletype) 
-2. See [:material-code-braces: InspectorScoreDetailsTypeDef](./type_defs.md#inspectorscoredetailstypedef) 
-3. See [:material-code-braces: NetworkReachabilityDetailsTypeDef](./type_defs.md#networkreachabilitydetailstypedef) 
-4. See [:material-code-braces: PackageVulnerabilityDetailsTypeDef](./type_defs.md#packagevulnerabilitydetailstypedef) 
-5. See [:material-code-braces: RemediationTypeDef](./type_defs.md#remediationtypedef) 
-6. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
-7. See [:material-code-brackets: SeverityType](./literals.md#severitytype) 
-8. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
-9. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
+1. See [:material-code-brackets: ExploitAvailableType](./literals.md#exploitavailabletype) 
+2. See [:material-code-braces: ExploitabilityDetailsTypeDef](./type_defs.md#exploitabilitydetailstypedef) 
+3. See [:material-code-brackets: FixAvailableType](./literals.md#fixavailabletype) 
+4. See [:material-code-braces: InspectorScoreDetailsTypeDef](./type_defs.md#inspectorscoredetailstypedef) 
+5. See [:material-code-braces: NetworkReachabilityDetailsTypeDef](./type_defs.md#networkreachabilitydetailstypedef) 
+6. See [:material-code-braces: PackageVulnerabilityDetailsTypeDef](./type_defs.md#packagevulnerabilitydetailstypedef) 
+7. See [:material-code-braces: RemediationTypeDef](./type_defs.md#remediationtypedef) 
+8. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+9. See [:material-code-brackets: SeverityType](./literals.md#severitytype) 
+10. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+11. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
 ## ListFiltersResponseTypeDef
 
 ```python title="Usage Example"

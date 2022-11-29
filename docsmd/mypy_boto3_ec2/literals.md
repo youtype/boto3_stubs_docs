@@ -1128,6 +1128,20 @@ DescribeAddressesAttributePaginatorName = Literal[
     "describe_addresses_attribute",
 ]
 ```
+## DescribeAwsNetworkPerformanceMetricSubscriptionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeAwsNetworkPerformanceMetricSubscriptionsPaginatorName
+
+def get_value() -> DescribeAwsNetworkPerformanceMetricSubscriptionsPaginatorName:
+    return "describe_aws_network_performance_metric_subscriptions"
+```
+
+```python title="Definition"
+DescribeAwsNetworkPerformanceMetricSubscriptionsPaginatorName = Literal[
+    "describe_aws_network_performance_metric_subscriptions",
+]
+```
 ## DescribeByoipCidrsPaginatorName
 
 ```python title="Usage Example"
@@ -3235,6 +3249,20 @@ GetAssociatedIpv6PoolCidrsPaginatorName = Literal[
     "get_associated_ipv6_pool_cidrs",
 ]
 ```
+## GetAwsNetworkPerformanceDataPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import GetAwsNetworkPerformanceDataPaginatorName
+
+def get_value() -> GetAwsNetworkPerformanceDataPaginatorName:
+    return "get_aws_network_performance_data"
+```
+
+```python title="Definition"
+GetAwsNetworkPerformanceDataPaginatorName = Literal[
+    "get_aws_network_performance_data",
+]
+```
 ## GetGroupsForCapacityReservationPaginatorName
 
 ```python title="Usage Example"
@@ -5257,6 +5285,20 @@ MembershipTypeType = Literal[
     "static",
 ]
 ```
+## MetricTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import MetricTypeType
+
+def get_value() -> MetricTypeType:
+    return "aggregate-latency"
+```
+
+```python title="Definition"
+MetricTypeType = Literal[
+    "aggregate-latency",
+]
+```
 ## ModifyAvailabilityZoneOptInStatusType
 
 ```python title="Usage Example"
@@ -5600,6 +5642,25 @@ PaymentOptionType = Literal[
     "AllUpfront",
     "NoUpfront",
     "PartialUpfront",
+]
+```
+## PeriodTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import PeriodTypeType
+
+def get_value() -> PeriodTypeType:
+    return "fifteen-minutes"
+```
+
+```python title="Definition"
+PeriodTypeType = Literal[
+    "fifteen-minutes",
+    "five-minutes",
+    "one-day",
+    "one-hour",
+    "one-week",
+    "three-hours",
 ]
 ```
 ## PermissionGroupType
@@ -6400,6 +6461,20 @@ def get_value() -> StaticSourcesSupportValueType:
 StaticSourcesSupportValueType = Literal[
     "disable",
     "enable",
+]
+```
+## StatisticTypeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import StatisticTypeType
+
+def get_value() -> StatisticTypeType:
+    return "p50"
+```
+
+```python title="Definition"
+StatisticTypeType = Literal[
+    "p50",
 ]
 ```
 ## StatusNameType
@@ -7619,6 +7694,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",
@@ -7958,6 +8034,7 @@ def get_value() -> PaginatorName:
 PaginatorName = Literal[
     "describe_address_transfers",
     "describe_addresses_attribute",
+    "describe_aws_network_performance_metric_subscriptions",
     "describe_byoip_cidrs",
     "describe_capacity_reservation_fleets",
     "describe_capacity_reservations",
@@ -8060,6 +8137,7 @@ PaginatorName = Literal[
     "describe_vpc_peering_connections",
     "describe_vpcs",
     "get_associated_ipv6_pool_cidrs",
+    "get_aws_network_performance_data",
     "get_groups_for_capacity_reservation",
     "get_instance_types_from_instance_requirements",
     "get_ipam_address_history",

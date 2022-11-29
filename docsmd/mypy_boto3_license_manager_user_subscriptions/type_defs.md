@@ -65,6 +65,24 @@ class FilterTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
+## SettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager_user_subscriptions.type_defs import SettingsTypeDef
+
+def get_value() -> SettingsTypeDef:
+    return {
+        "SecurityGroupId": ...,
+        "Subnets": ...,
+    }
+```
+
+```python title="Definition"
+class SettingsTypeDef(TypedDict):
+    SecurityGroupId: str,
+    Subnets: List[str],
+```
+
 ## InstanceSummaryTypeDef
 
 ```python title="Usage Example"
@@ -120,6 +138,25 @@ def get_value() -> ListIdentityProvidersRequestRequestTypeDef:
 class ListIdentityProvidersRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+```
+
+## UpdateSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager_user_subscriptions.type_defs import UpdateSettingsTypeDef
+
+def get_value() -> UpdateSettingsTypeDef:
+    return {
+        "AddSubnets": ...,
+        "RemoveSubnets": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSettingsTypeDef(TypedDict):
+    AddSubnets: Sequence[str],
+    RemoveSubnets: Sequence[str],
+    SecurityGroupId: NotRequired[str],
 ```
 
 ## IdentityProviderTypeDef
@@ -288,6 +325,7 @@ def get_value() -> IdentityProviderSummaryTypeDef:
     return {
         "IdentityProvider": ...,
         "Product": ...,
+        "Settings": ...,
         "Status": ...,
     }
 ```
@@ -296,11 +334,13 @@ def get_value() -> IdentityProviderSummaryTypeDef:
 class IdentityProviderSummaryTypeDef(TypedDict):
     IdentityProvider: IdentityProviderTypeDef,  # (1)
     Product: str,
+    Settings: SettingsTypeDef,  # (2)
     Status: str,
     FailureMessage: NotRequired[str],
 ```
 
 1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
+2. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
 ## InstanceUserSummaryTypeDef
 
 ```python title="Usage Example"
@@ -463,9 +503,11 @@ def get_value() -> RegisterIdentityProviderRequestRequestTypeDef:
 class RegisterIdentityProviderRequestRequestTypeDef(TypedDict):
     IdentityProvider: IdentityProviderTypeDef,  # (1)
     Product: str,
+    Settings: NotRequired[SettingsTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
+2. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
 ## StartProductSubscriptionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -510,6 +552,28 @@ class StopProductSubscriptionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
+## UpdateIdentityProviderSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager_user_subscriptions.type_defs import UpdateIdentityProviderSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateIdentityProviderSettingsRequestRequestTypeDef:
+    return {
+        "IdentityProvider": ...,
+        "Product": ...,
+        "UpdateSettings": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIdentityProviderSettingsRequestRequestTypeDef(TypedDict):
+    IdentityProvider: IdentityProviderTypeDef,  # (1)
+    Product: str,
+    UpdateSettings: UpdateSettingsTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
+2. See [:material-code-braces: UpdateSettingsTypeDef](./type_defs.md#updatesettingstypedef) 
 ## DeregisterIdentityProviderResponseTypeDef
 
 ```python title="Usage Example"
@@ -566,6 +630,26 @@ def get_value() -> RegisterIdentityProviderResponseTypeDef:
 
 ```python title="Definition"
 class RegisterIdentityProviderResponseTypeDef(TypedDict):
+    IdentityProviderSummary: IdentityProviderSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IdentityProviderSummaryTypeDef](./type_defs.md#identityprovidersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateIdentityProviderSettingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_license_manager_user_subscriptions.type_defs import UpdateIdentityProviderSettingsResponseTypeDef
+
+def get_value() -> UpdateIdentityProviderSettingsResponseTypeDef:
+    return {
+        "IdentityProviderSummary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateIdentityProviderSettingsResponseTypeDef(TypedDict):
     IdentityProviderSummary: IdentityProviderSummaryTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```

@@ -59,6 +59,21 @@ AllowsUnencryptedObjectUploadsType = Literal[
     "UNKNOWN",
 ]
 ```
+## AutomatedDiscoveryStatusType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import AutomatedDiscoveryStatusType
+
+def get_value() -> AutomatedDiscoveryStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+AutomatedDiscoveryStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## AvailabilityCodeType
 
 ```python title="Usage Example"
@@ -86,6 +101,22 @@ def get_value() -> BucketMetadataErrorCodeType:
 ```python title="Definition"
 BucketMetadataErrorCodeType = Literal[
     "ACCESS_DENIED",
+]
+```
+## ClassificationScopeUpdateOperationType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import ClassificationScopeUpdateOperationType
+
+def get_value() -> ClassificationScopeUpdateOperationType:
+    return "ADD"
+```
+
+```python title="Definition"
+ClassificationScopeUpdateOperationType = Literal[
+    "ADD",
+    "REMOVE",
+    "REPLACE",
 ]
 ```
 ## CurrencyType
@@ -116,6 +147,21 @@ DataIdentifierSeverityType = Literal[
     "HIGH",
     "LOW",
     "MEDIUM",
+]
+```
+## DataIdentifierTypeType
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import DataIdentifierTypeType
+
+def get_value() -> DataIdentifierTypeType:
+    return "CUSTOM"
+```
+
+```python title="Definition"
+DataIdentifierTypeType = Literal[
+    "CUSTOM",
+    "MANAGED",
 ]
 ```
 ## DayOfWeekType
@@ -445,6 +491,20 @@ LastRunErrorStatusCodeType = Literal[
     "NONE",
 ]
 ```
+## ListAllowListsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import ListAllowListsPaginatorName
+
+def get_value() -> ListAllowListsPaginatorName:
+    return "list_allow_lists"
+```
+
+```python title="Definition"
+ListAllowListsPaginatorName = Literal[
+    "list_allow_lists",
+]
+```
 ## ListClassificationJobsPaginatorName
 
 ```python title="Usage Example"
@@ -457,6 +517,20 @@ def get_value() -> ListClassificationJobsPaginatorName:
 ```python title="Definition"
 ListClassificationJobsPaginatorName = Literal[
     "list_classification_jobs",
+]
+```
+## ListClassificationScopesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import ListClassificationScopesPaginatorName
+
+def get_value() -> ListClassificationScopesPaginatorName:
+    return "list_classification_scopes"
+```
+
+```python title="Definition"
+ListClassificationScopesPaginatorName = Literal[
+    "list_classification_scopes",
 ]
 ```
 ## ListCustomDataIdentifiersPaginatorName
@@ -549,6 +623,20 @@ ListJobsSortAttributeNameType = Literal[
     "name",
 ]
 ```
+## ListManagedDataIdentifiersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import ListManagedDataIdentifiersPaginatorName
+
+def get_value() -> ListManagedDataIdentifiersPaginatorName:
+    return "list_managed_data_identifiers"
+```
+
+```python title="Definition"
+ListManagedDataIdentifiersPaginatorName = Literal[
+    "list_managed_data_identifiers",
+]
+```
 ## ListMembersPaginatorName
 
 ```python title="Usage Example"
@@ -575,6 +663,48 @@ def get_value() -> ListOrganizationAdminAccountsPaginatorName:
 ```python title="Definition"
 ListOrganizationAdminAccountsPaginatorName = Literal[
     "list_organization_admin_accounts",
+]
+```
+## ListResourceProfileArtifactsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import ListResourceProfileArtifactsPaginatorName
+
+def get_value() -> ListResourceProfileArtifactsPaginatorName:
+    return "list_resource_profile_artifacts"
+```
+
+```python title="Definition"
+ListResourceProfileArtifactsPaginatorName = Literal[
+    "list_resource_profile_artifacts",
+]
+```
+## ListResourceProfileDetectionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import ListResourceProfileDetectionsPaginatorName
+
+def get_value() -> ListResourceProfileDetectionsPaginatorName:
+    return "list_resource_profile_detections"
+```
+
+```python title="Definition"
+ListResourceProfileDetectionsPaginatorName = Literal[
+    "list_resource_profile_detections",
+]
+```
+## ListSensitivityInspectionTemplatesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import ListSensitivityInspectionTemplatesPaginatorName
+
+def get_value() -> ListSensitivityInspectionTemplatesPaginatorName:
+    return "list_sensitivity_inspection_templates"
+```
+
+```python title="Definition"
+ListSensitivityInspectionTemplatesPaginatorName = Literal[
+    "list_sensitivity_inspection_templates",
 ]
 ```
 ## MacieStatusType
@@ -630,11 +760,12 @@ OrderByType = Literal[
 from mypy_boto3_macie2.literals import OriginTypeType
 
 def get_value() -> OriginTypeType:
-    return "SENSITIVE_DATA_DISCOVERY_JOB"
+    return "AUTOMATED_SENSITIVE_DATA_DISCOVERY"
 ```
 
 ```python title="Definition"
 OriginTypeType = Literal[
+    "AUTOMATED_SENSITIVE_DATA_DISCOVERY",
     "SENSITIVE_DATA_DISCOVERY_JOB",
 ]
 ```
@@ -996,11 +1127,13 @@ UsageStatisticsSortKeyType = Literal[
 from mypy_boto3_macie2.literals import UsageTypeType
 
 def get_value() -> UsageTypeType:
-    return "DATA_INVENTORY_EVALUATION"
+    return "AUTOMATED_OBJECT_MONITORING"
 ```
 
 ```python title="Definition"
 UsageTypeType = Literal[
+    "AUTOMATED_OBJECT_MONITORING",
+    "AUTOMATED_SENSITIVE_DATA_DISCOVERY",
     "DATA_INVENTORY_EVALUATION",
     "SENSITIVE_DATA_DISCOVERY",
 ]
@@ -1072,6 +1205,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",
@@ -1411,13 +1545,19 @@ def get_value() -> PaginatorName:
 PaginatorName = Literal[
     "describe_buckets",
     "get_usage_statistics",
+    "list_allow_lists",
     "list_classification_jobs",
+    "list_classification_scopes",
     "list_custom_data_identifiers",
     "list_findings",
     "list_findings_filters",
     "list_invitations",
+    "list_managed_data_identifiers",
     "list_members",
     "list_organization_admin_accounts",
+    "list_resource_profile_artifacts",
+    "list_resource_profile_detections",
+    "list_sensitivity_inspection_templates",
     "search_resources",
 ]
 ```

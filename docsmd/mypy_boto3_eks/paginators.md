@@ -49,6 +49,9 @@ def paginate(
     *,
     kubernetesVersion: str = ...,
     addonName: str = ...,
+    types: Sequence[str] = ...,
+    publishers: Sequence[str] = ...,
+    owners: Sequence[str] = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[DescribeAddonVersionsResponseTypeDef]:  # (2)
     ...

@@ -3962,11 +3962,13 @@ def attach(
     InstanceId: str,
     DryRun: bool = ...,
     NetworkCardIndex: int = ...,
-) -> AttachNetworkInterfaceResultTypeDef:  # (1)
+    EnaSrdSpecification: EnaSrdSpecificationTypeDef = ...,  # (1)
+) -> AttachNetworkInterfaceResultTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: AttachNetworkInterfaceResultTypeDef](./type_defs.md#attachnetworkinterfaceresulttypedef) 
+1. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
+2. See [:material-code-braces: AttachNetworkInterfaceResultTypeDef](./type_defs.md#attachnetworkinterfaceresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4147,6 +4149,7 @@ def modify_attribute(
     DryRun: bool = ...,
     Groups: Sequence[str] = ...,
     SourceDestCheck: AttributeBooleanValueTypeDef = ...,  # (3)
+    EnaSrdSpecification: EnaSrdSpecificationTypeDef = ...,  # (4)
 ) -> None:
     ...
 ```
@@ -4154,6 +4157,7 @@ def modify_attribute(
 1. See [:material-code-braces: NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef) 
 2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+4. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
 
 
 ```python title="Usage example with kwargs"

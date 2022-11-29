@@ -2776,6 +2776,31 @@ class NullCheckBoxListTypeDef(TypedDict):
     IsNegOne: NotRequired[bool],
 ```
 
+## TransformConfigParameterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import TransformConfigParameterTypeDef
+
+def get_value() -> TransformConfigParameterTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class TransformConfigParameterTypeDef(TypedDict):
+    Name: str,
+    Type: ParamTypeType,  # (1)
+    ValidationRule: NotRequired[str],
+    ValidationMessage: NotRequired[str],
+    Value: NotRequired[List[str]],
+    ListType: NotRequired[ParamTypeType],  # (1)
+    IsOptional: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: ParamTypeType](./literals.md#paramtypetype) 
+2. See [:material-code-brackets: ParamTypeType](./literals.md#paramtypetype) 
 ## EdgeTypeDef
 
 ```python title="Usage Example"
@@ -8094,6 +8119,33 @@ class S3GlueParquetTargetTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ParquetCompressionTypeType](./literals.md#parquetcompressiontypetype) 
 2. See [:material-code-braces: DirectSchemaChangePolicyTypeDef](./type_defs.md#directschemachangepolicytypedef) 
+## DynamicTransformTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DynamicTransformTypeDef
+
+def get_value() -> DynamicTransformTypeDef:
+    return {
+        "Name": ...,
+        "TransformName": ...,
+        "Inputs": ...,
+        "FunctionName": ...,
+        "Path": ...,
+    }
+```
+
+```python title="Definition"
+class DynamicTransformTypeDef(TypedDict):
+    Name: str,
+    TransformName: str,
+    Inputs: List[str],
+    FunctionName: str,
+    Path: str,
+    Parameters: NotRequired[List[TransformConfigParameterTypeDef]],  # (1)
+    Version: NotRequired[str],
+```
+
+1. See [:material-code-braces: TransformConfigParameterTypeDef](./type_defs.md#transformconfigparametertypedef) 
 ## EncryptionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -11510,6 +11562,7 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
     MySQLCatalogTarget: NotRequired[MySQLCatalogTargetTypeDef],  # (48)
     OracleSQLCatalogTarget: NotRequired[OracleSQLCatalogTargetTypeDef],  # (49)
     PostgreSQLCatalogTarget: NotRequired[PostgreSQLCatalogTargetTypeDef],  # (50)
+    DynamicTransform: NotRequired[DynamicTransformTypeDef],  # (51)
 ```
 
 1. See [:material-code-braces: AthenaConnectorSourceTypeDef](./type_defs.md#athenaconnectorsourcetypedef) 
@@ -11562,6 +11615,7 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
 48. See [:material-code-braces: MySQLCatalogTargetTypeDef](./type_defs.md#mysqlcatalogtargettypedef) 
 49. See [:material-code-braces: OracleSQLCatalogTargetTypeDef](./type_defs.md#oraclesqlcatalogtargettypedef) 
 50. See [:material-code-braces: PostgreSQLCatalogTargetTypeDef](./type_defs.md#postgresqlcatalogtargettypedef) 
+51. See [:material-code-braces: DynamicTransformTypeDef](./type_defs.md#dynamictransformtypedef) 
 ## GetMLTaskRunsResponseTypeDef
 
 ```python title="Usage Example"

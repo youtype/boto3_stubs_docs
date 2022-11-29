@@ -129,6 +129,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeAddressesAttributeRequestDescribeAddressesAttributePaginateTypeDef](./type_defs.md#describeaddressesattributerequestdescribeaddressesattributepaginatetypedef) 
+## DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_aws_network_performance_metric_subscriptions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeAwsNetworkPerformanceMetricSubscriptions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator
+
+def get_describe_aws_network_performance_metric_subscriptions_paginator() -> DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator:
+    return Session().client("ec2").get_paginator("describe_aws_network_performance_metric_subscriptions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator = client.get_paginator("describe_aws_network_performance_metric_subscriptions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator](./paginators.md#describeawsnetworkperformancemetricsubscriptionspaginator)
+3. item: [:material-code-braces: DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef](./type_defs.md#describeawsnetworkperformancemetricsubscriptionsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef](./type_defs.md#describeawsnetworkperformancemetricsubscriptionsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAwsNetworkPerformanceMetricSubscriptionsRequestDescribeAwsNetworkPerformanceMetricSubscriptionsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAwsNetworkPerformanceMetricSubscriptionsRequestDescribeAwsNetworkPerformanceMetricSubscriptionsPaginateTypeDef](./type_defs.md#describeawsnetworkperformancemetricsubscriptionsrequestdescribeawsnetworkperformancemetricsubscriptionspaginatetypedef) 
 ## DescribeByoipCidrsPaginator
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_byoip_cidrs")`.
@@ -6475,6 +6536,69 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: GetAssociatedIpv6PoolCidrsRequestGetAssociatedIpv6PoolCidrsPaginateTypeDef](./type_defs.md#getassociatedipv6poolcidrsrequestgetassociatedipv6poolcidrspaginatetypedef) 
+## GetAwsNetworkPerformanceDataPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_aws_network_performance_data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetAwsNetworkPerformanceData)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetAwsNetworkPerformanceDataPaginator
+
+def get_get_aws_network_performance_data_paginator() -> GetAwsNetworkPerformanceDataPaginator:
+    return Session().client("ec2").get_paginator("get_aws_network_performance_data")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetAwsNetworkPerformanceDataPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetAwsNetworkPerformanceDataPaginator = client.get_paginator("get_aws_network_performance_data")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetAwsNetworkPerformanceDataPaginator](./paginators.md#getawsnetworkperformancedatapaginator)
+3. item: [:material-code-braces: GetAwsNetworkPerformanceDataResultTypeDef](./type_defs.md#getawsnetworkperformancedataresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python GetAwsNetworkPerformanceDataPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DataQueries: Sequence[DataQueryTypeDef] = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetAwsNetworkPerformanceDataResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: DataQueryTypeDef](./type_defs.md#dataquerytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetAwsNetworkPerformanceDataResultTypeDef](./type_defs.md#getawsnetworkperformancedataresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetAwsNetworkPerformanceDataRequestGetAwsNetworkPerformanceDataPaginateTypeDef = {  # (1)
+    "DataQueries": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetAwsNetworkPerformanceDataRequestGetAwsNetworkPerformanceDataPaginateTypeDef](./type_defs.md#getawsnetworkperformancedatarequestgetawsnetworkperformancedatapaginatetypedef) 
 ## GetGroupsForCapacityReservationPaginator
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")`.

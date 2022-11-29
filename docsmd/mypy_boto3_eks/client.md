@@ -533,6 +533,9 @@ def describe_addon_versions(
     maxResults: int = ...,
     nextToken: str = ...,
     addonName: str = ...,
+    types: Sequence[str] = ...,
+    publishers: Sequence[str] = ...,
+    owners: Sequence[str] = ...,
 ) -> DescribeAddonVersionsResponseTypeDef:  # (1)
     ...
 ```

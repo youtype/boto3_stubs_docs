@@ -511,6 +511,25 @@ class BucketSortCriteriaTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
+## SensitivityAggregationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import SensitivityAggregationsTypeDef
+
+def get_value() -> SensitivityAggregationsTypeDef:
+    return {
+        "classifiableSizeInBytes": ...,
+    }
+```
+
+```python title="Definition"
+class SensitivityAggregationsTypeDef(TypedDict):
+    classifiableSizeInBytes: NotRequired[int],
+    publiclyAccessibleCount: NotRequired[int],
+    totalCount: NotRequired[int],
+    totalSizeInBytes: NotRequired[int],
+```
+
 ## CellTypeDef
 
 ```python title="Usage Example"
@@ -564,6 +583,23 @@ def get_value() -> ClassificationResultStatusTypeDef:
 class ClassificationResultStatusTypeDef(TypedDict):
     code: NotRequired[str],
     reason: NotRequired[str],
+```
+
+## ClassificationScopeSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ClassificationScopeSummaryTypeDef
+
+def get_value() -> ClassificationScopeSummaryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class ClassificationScopeSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
 ```
 
 ## SeverityLevelTypeDef
@@ -900,6 +936,28 @@ class DetectedDataDetailsTypeDef(TypedDict):
     value: str,
 ```
 
+## DetectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import DetectionTypeDef
+
+def get_value() -> DetectionTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class DetectionTypeDef(TypedDict):
+    arn: NotRequired[str],
+    count: NotRequired[int],
+    id: NotRequired[str],
+    name: NotRequired[str],
+    suppressed: NotRequired[bool],
+    type: NotRequired[DataIdentifierTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: DataIdentifierTypeType](./literals.md#dataidentifiertypetype) 
 ## DisableOrganizationAdminAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1095,6 +1153,22 @@ class GetBucketStatisticsRequestRequestTypeDef(TypedDict):
     accountId: NotRequired[str],
 ```
 
+## GetClassificationScopeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetClassificationScopeRequestRequestTypeDef
+
+def get_value() -> GetClassificationScopeRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetClassificationScopeRequestRequestTypeDef(TypedDict):
+    id: str,
+```
+
 ## GetCustomDataIdentifierRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1196,6 +1270,46 @@ class GetMemberRequestRequestTypeDef(TypedDict):
     id: str,
 ```
 
+## GetResourceProfileRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetResourceProfileRequestRequestTypeDef
+
+def get_value() -> GetResourceProfileRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceProfileRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
+
+## ResourceStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ResourceStatisticsTypeDef
+
+def get_value() -> ResourceStatisticsTypeDef:
+    return {
+        "totalBytesClassified": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceStatisticsTypeDef(TypedDict):
+    totalBytesClassified: NotRequired[int],
+    totalDetections: NotRequired[int],
+    totalDetectionsSuppressed: NotRequired[int],
+    totalItemsClassified: NotRequired[int],
+    totalItemsSensitive: NotRequired[int],
+    totalItemsSkipped: NotRequired[int],
+    totalItemsSkippedInvalidEncryption: NotRequired[int],
+    totalItemsSkippedInvalidKms: NotRequired[int],
+    totalItemsSkippedPermissionDenied: NotRequired[int],
+```
+
 ## RevealConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1261,6 +1375,56 @@ def get_value() -> GetSensitiveDataOccurrencesRequestRequestTypeDef:
 ```python title="Definition"
 class GetSensitiveDataOccurrencesRequestRequestTypeDef(TypedDict):
     findingId: str,
+```
+
+## GetSensitivityInspectionTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetSensitivityInspectionTemplateRequestRequestTypeDef
+
+def get_value() -> GetSensitivityInspectionTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class GetSensitivityInspectionTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+```
+
+## SensitivityInspectionTemplateExcludesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import SensitivityInspectionTemplateExcludesTypeDef
+
+def get_value() -> SensitivityInspectionTemplateExcludesTypeDef:
+    return {
+        "managedDataIdentifierIds": ...,
+    }
+```
+
+```python title="Definition"
+class SensitivityInspectionTemplateExcludesTypeDef(TypedDict):
+    managedDataIdentifierIds: NotRequired[List[str]],
+```
+
+## SensitivityInspectionTemplateIncludesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import SensitivityInspectionTemplateIncludesTypeDef
+
+def get_value() -> SensitivityInspectionTemplateIncludesTypeDef:
+    return {
+        "allowListIds": ...,
+    }
+```
+
+```python title="Definition"
+class SensitivityInspectionTemplateIncludesTypeDef(TypedDict):
+    allowListIds: NotRequired[List[str]],
+    customDataIdentifierIds: NotRequired[List[str]],
+    managedDataIdentifierIds: NotRequired[List[str]],
 ```
 
 ## UsageStatisticsFilterTypeDef
@@ -1533,6 +1697,23 @@ class ListJobsSortCriteriaTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ListJobsSortAttributeNameType](./literals.md#listjobssortattributenametype) 
 2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
+## ListClassificationScopesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListClassificationScopesRequestRequestTypeDef
+
+def get_value() -> ListClassificationScopesRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ListClassificationScopesRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+```
+
 ## ListCustomDataIdentifiersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1698,6 +1879,94 @@ class ListOrganizationAdminAccountsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
 ```
 
+## ListResourceProfileArtifactsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListResourceProfileArtifactsRequestRequestTypeDef
+
+def get_value() -> ListResourceProfileArtifactsRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceProfileArtifactsRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    nextToken: NotRequired[str],
+```
+
+## ResourceProfileArtifactTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ResourceProfileArtifactTypeDef
+
+def get_value() -> ResourceProfileArtifactTypeDef:
+    return {
+        "arn": ...,
+        "classificationResultStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceProfileArtifactTypeDef(TypedDict):
+    arn: str,
+    classificationResultStatus: str,
+    sensitive: NotRequired[bool],
+```
+
+## ListResourceProfileDetectionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListResourceProfileDetectionsRequestRequestTypeDef
+
+def get_value() -> ListResourceProfileDetectionsRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceProfileDetectionsRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListSensitivityInspectionTemplatesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListSensitivityInspectionTemplatesRequestRequestTypeDef
+
+def get_value() -> ListSensitivityInspectionTemplatesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListSensitivityInspectionTemplatesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## SensitivityInspectionTemplatesEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import SensitivityInspectionTemplatesEntryTypeDef
+
+def get_value() -> SensitivityInspectionTemplatesEntryTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class SensitivityInspectionTemplatesEntryTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
+```
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1784,6 +2053,41 @@ class ServerSideEncryptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+## S3ClassificationScopeExclusionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import S3ClassificationScopeExclusionTypeDef
+
+def get_value() -> S3ClassificationScopeExclusionTypeDef:
+    return {
+        "bucketNames": ...,
+    }
+```
+
+```python title="Definition"
+class S3ClassificationScopeExclusionTypeDef(TypedDict):
+    bucketNames: List[str],
+```
+
+## S3ClassificationScopeExclusionUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import S3ClassificationScopeExclusionUpdateTypeDef
+
+def get_value() -> S3ClassificationScopeExclusionUpdateTypeDef:
+    return {
+        "bucketNames": ...,
+        "operation": ...,
+    }
+```
+
+```python title="Definition"
+class S3ClassificationScopeExclusionUpdateTypeDef(TypedDict):
+    bucketNames: Sequence[str],
+    operation: ClassificationScopeUpdateOperationType,  # (1)
+```
+
+1. See [:material-code-brackets: ClassificationScopeUpdateOperationType](./literals.md#classificationscopeupdateoperationtype) 
 ## SearchResourcesSimpleCriterionTypeDef
 
 ```python title="Usage Example"
@@ -1896,6 +2200,24 @@ class SessionIssuerTypeDef(TypedDict):
     userName: NotRequired[str],
 ```
 
+## SuppressDataIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import SuppressDataIdentifierTypeDef
+
+def get_value() -> SuppressDataIdentifierTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class SuppressDataIdentifierTypeDef(TypedDict):
+    id: NotRequired[str],
+    type: NotRequired[DataIdentifierTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: DataIdentifierTypeType](./literals.md#dataidentifiertypetype) 
 ## TagCriterionPairForJobTypeDef
 
 ```python title="Usage Example"
@@ -1987,6 +2309,23 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     tagKeys: Sequence[str],
 ```
 
+## UpdateAutomatedDiscoveryConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateAutomatedDiscoveryConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateAutomatedDiscoveryConfigurationRequestRequestTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAutomatedDiscoveryConfigurationRequestRequestTypeDef(TypedDict):
+    status: AutomatedDiscoveryStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: AutomatedDiscoveryStatusType](./literals.md#automateddiscoverystatustype) 
 ## UpdateClassificationJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2058,6 +2397,23 @@ def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
     autoEnable: bool,
+```
+
+## UpdateResourceProfileRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateResourceProfileRequestRequestTypeDef
+
+def get_value() -> UpdateResourceProfileRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResourceProfileRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    sensitivityScoreOverride: NotRequired[int],
 ```
 
 ## UserIdentityRootTypeDef
@@ -2294,6 +2650,36 @@ class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAutomatedDiscoveryConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetAutomatedDiscoveryConfigurationResponseTypeDef
+
+def get_value() -> GetAutomatedDiscoveryConfigurationResponseTypeDef:
+    return {
+        "classificationScopeId": ...,
+        "disabledAt": ...,
+        "firstEnabledAt": ...,
+        "lastUpdatedAt": ...,
+        "sensitivityInspectionTemplateId": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAutomatedDiscoveryConfigurationResponseTypeDef(TypedDict):
+    classificationScopeId: str,
+    disabledAt: datetime,
+    firstEnabledAt: datetime,
+    lastUpdatedAt: datetime,
+    sensitivityInspectionTemplateId: str,
+    status: AutomatedDiscoveryStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: AutomatedDiscoveryStatusType](./literals.md#automateddiscoverystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInvitationsCountResponseTypeDef
 
 ```python title="Usage Example"
@@ -2567,55 +2953,6 @@ class BucketLevelPermissionsTypeDef(TypedDict):
 1. See [:material-code-braces: AccessControlListTypeDef](./type_defs.md#accesscontrollisttypedef) 
 2. See [:material-code-braces: BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef) 
 3. See [:material-code-braces: BucketPolicyTypeDef](./type_defs.md#bucketpolicytypedef) 
-## GetBucketStatisticsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_macie2.type_defs import GetBucketStatisticsResponseTypeDef
-
-def get_value() -> GetBucketStatisticsResponseTypeDef:
-    return {
-        "bucketCount": ...,
-        "bucketCountByEffectivePermission": ...,
-        "bucketCountByEncryptionType": ...,
-        "bucketCountByObjectEncryptionRequirement": ...,
-        "bucketCountBySharedAccessType": ...,
-        "classifiableObjectCount": ...,
-        "classifiableSizeInBytes": ...,
-        "lastUpdated": ...,
-        "objectCount": ...,
-        "sizeInBytes": ...,
-        "sizeInBytesCompressed": ...,
-        "unclassifiableObjectCount": ...,
-        "unclassifiableObjectSizeInBytes": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBucketStatisticsResponseTypeDef(TypedDict):
-    bucketCount: int,
-    bucketCountByEffectivePermission: BucketCountByEffectivePermissionTypeDef,  # (1)
-    bucketCountByEncryptionType: BucketCountByEncryptionTypeTypeDef,  # (2)
-    bucketCountByObjectEncryptionRequirement: BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef,  # (3)
-    bucketCountBySharedAccessType: BucketCountBySharedAccessTypeTypeDef,  # (4)
-    classifiableObjectCount: int,
-    classifiableSizeInBytes: int,
-    lastUpdated: datetime,
-    objectCount: int,
-    sizeInBytes: int,
-    sizeInBytesCompressed: int,
-    unclassifiableObjectCount: ObjectLevelStatisticsTypeDef,  # (5)
-    unclassifiableObjectSizeInBytes: ObjectLevelStatisticsTypeDef,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
-```
-
-1. See [:material-code-braces: BucketCountByEffectivePermissionTypeDef](./type_defs.md#bucketcountbyeffectivepermissiontypedef) 
-2. See [:material-code-braces: BucketCountByEncryptionTypeTypeDef](./type_defs.md#bucketcountbyencryptiontypetypedef) 
-3. See [:material-code-braces: BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef](./type_defs.md#bucketcountpolicyallowsunencryptedobjectuploadstypedef) 
-4. See [:material-code-braces: BucketCountBySharedAccessTypeTypeDef](./type_defs.md#bucketcountbysharedaccesstypetypedef) 
-5. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
-6. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MatchingBucketTypeDef
 
 ```python title="Usage Example"
@@ -2636,8 +2973,10 @@ class MatchingBucketTypeDef(TypedDict):
     errorCode: NotRequired[BucketMetadataErrorCodeType],  # (1)
     errorMessage: NotRequired[str],
     jobDetails: NotRequired[JobDetailsTypeDef],  # (2)
+    lastAutomatedDiscoveryTime: NotRequired[datetime],
     objectCount: NotRequired[int],
     objectCountByEncryptionType: NotRequired[ObjectCountByEncryptionTypeTypeDef],  # (3)
+    sensitivityScore: NotRequired[int],
     sizeInBytes: NotRequired[int],
     sizeInBytesCompressed: NotRequired[int],
     unclassifiableObjectCount: NotRequired[ObjectLevelStatisticsTypeDef],  # (4)
@@ -2670,6 +3009,29 @@ class DescribeBucketsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef) 
 2. See [:material-code-braces: BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef) 
+## BucketStatisticsBySensitivityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import BucketStatisticsBySensitivityTypeDef
+
+def get_value() -> BucketStatisticsBySensitivityTypeDef:
+    return {
+        "classificationError": ...,
+    }
+```
+
+```python title="Definition"
+class BucketStatisticsBySensitivityTypeDef(TypedDict):
+    classificationError: NotRequired[SensitivityAggregationsTypeDef],  # (1)
+    notClassified: NotRequired[SensitivityAggregationsTypeDef],  # (1)
+    notSensitive: NotRequired[SensitivityAggregationsTypeDef],  # (1)
+    sensitive: NotRequired[SensitivityAggregationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SensitivityAggregationsTypeDef](./type_defs.md#sensitivityaggregationstypedef) 
+2. See [:material-code-braces: SensitivityAggregationsTypeDef](./type_defs.md#sensitivityaggregationstypedef) 
+3. See [:material-code-braces: SensitivityAggregationsTypeDef](./type_defs.md#sensitivityaggregationstypedef) 
+4. See [:material-code-braces: SensitivityAggregationsTypeDef](./type_defs.md#sensitivityaggregationstypedef) 
 ## ClassificationExportConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2687,6 +3049,28 @@ class ClassificationExportConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
+## ListClassificationScopesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListClassificationScopesResponseTypeDef
+
+def get_value() -> ListClassificationScopesResponseTypeDef:
+    return {
+        "classificationScopes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListClassificationScopesResponseTypeDef(TypedDict):
+    classificationScopes: List[ClassificationScopeSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ClassificationScopeSummaryTypeDef](./type_defs.md#classificationscopesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomDataIdentifierRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2875,6 +3259,41 @@ class DescribeBucketsRequestDescribeBucketsPaginateTypeDef(TypedDict):
 1. See [:material-code-braces: BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef) 
 2. See [:material-code-braces: BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAllowListsRequestListAllowListsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListAllowListsRequestListAllowListsPaginateTypeDef
+
+def get_value() -> ListAllowListsRequestListAllowListsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListAllowListsRequestListAllowListsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListClassificationScopesRequestListClassificationScopesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListClassificationScopesRequestListClassificationScopesPaginateTypeDef
+
+def get_value() -> ListClassificationScopesRequestListClassificationScopesPaginateTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ListClassificationScopesRequestListClassificationScopesPaginateTypeDef(TypedDict):
+    name: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2926,6 +3345,23 @@ class ListInvitationsRequestListInvitationsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListManagedDataIdentifiersRequestListManagedDataIdentifiersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListManagedDataIdentifiersRequestListManagedDataIdentifiersPaginateTypeDef
+
+def get_value() -> ListManagedDataIdentifiersRequestListManagedDataIdentifiersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListManagedDataIdentifiersRequestListManagedDataIdentifiersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMembersRequestListMembersPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2961,6 +3397,59 @@ class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateT
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourceProfileArtifactsRequestListResourceProfileArtifactsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListResourceProfileArtifactsRequestListResourceProfileArtifactsPaginateTypeDef
+
+def get_value() -> ListResourceProfileArtifactsRequestListResourceProfileArtifactsPaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceProfileArtifactsRequestListResourceProfileArtifactsPaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourceProfileDetectionsRequestListResourceProfileDetectionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListResourceProfileDetectionsRequestListResourceProfileDetectionsPaginateTypeDef
+
+def get_value() -> ListResourceProfileDetectionsRequestListResourceProfileDetectionsPaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceProfileDetectionsRequestListResourceProfileDetectionsPaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSensitivityInspectionTemplatesRequestListSensitivityInspectionTemplatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListSensitivityInspectionTemplatesRequestListSensitivityInspectionTemplatesPaginateTypeDef
+
+def get_value() -> ListSensitivityInspectionTemplatesRequestListSensitivityInspectionTemplatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSensitivityInspectionTemplatesRequestListSensitivityInspectionTemplatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetSensitiveDataOccurrencesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2986,6 +3475,28 @@ class GetSensitiveDataOccurrencesResponseTypeDef(TypedDict):
 1. See [:material-code-braces: DetectedDataDetailsTypeDef](./type_defs.md#detecteddatadetailstypedef) 
 2. See [:material-code-brackets: RevealRequestStatusType](./literals.md#revealrequeststatustype) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceProfileDetectionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListResourceProfileDetectionsResponseTypeDef
+
+def get_value() -> ListResourceProfileDetectionsResponseTypeDef:
+    return {
+        "detections": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceProfileDetectionsResponseTypeDef(TypedDict):
+    detections: List[DetectionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DetectionTypeDef](./type_defs.md#detectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFindingsFiltersResponseTypeDef
 
 ```python title="Usage Example"
@@ -3146,6 +3657,32 @@ class GetFindingsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+## GetResourceProfileResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetResourceProfileResponseTypeDef
+
+def get_value() -> GetResourceProfileResponseTypeDef:
+    return {
+        "profileUpdatedAt": ...,
+        "sensitivityScore": ...,
+        "sensitivityScoreOverridden": ...,
+        "statistics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceProfileResponseTypeDef(TypedDict):
+    profileUpdatedAt: datetime,
+    sensitivityScore: int,
+    sensitivityScoreOverridden: bool,
+    statistics: ResourceStatisticsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceStatisticsTypeDef](./type_defs.md#resourcestatisticstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRevealConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -3221,6 +3758,56 @@ class GetSensitiveDataOccurrencesRequestFindingRevealedWaitTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetSensitivityInspectionTemplateResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetSensitivityInspectionTemplateResponseTypeDef
+
+def get_value() -> GetSensitivityInspectionTemplateResponseTypeDef:
+    return {
+        "description": ...,
+        "excludes": ...,
+        "includes": ...,
+        "name": ...,
+        "sensitivityInspectionTemplateId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSensitivityInspectionTemplateResponseTypeDef(TypedDict):
+    description: str,
+    excludes: SensitivityInspectionTemplateExcludesTypeDef,  # (1)
+    includes: SensitivityInspectionTemplateIncludesTypeDef,  # (2)
+    name: str,
+    sensitivityInspectionTemplateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: SensitivityInspectionTemplateExcludesTypeDef](./type_defs.md#sensitivityinspectiontemplateexcludestypedef) 
+2. See [:material-code-braces: SensitivityInspectionTemplateIncludesTypeDef](./type_defs.md#sensitivityinspectiontemplateincludestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSensitivityInspectionTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateSensitivityInspectionTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateSensitivityInspectionTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSensitivityInspectionTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+    description: NotRequired[str],
+    excludes: NotRequired[SensitivityInspectionTemplateExcludesTypeDef],  # (1)
+    includes: NotRequired[SensitivityInspectionTemplateIncludesTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SensitivityInspectionTemplateExcludesTypeDef](./type_defs.md#sensitivityinspectiontemplateexcludestypedef) 
+2. See [:material-code-braces: SensitivityInspectionTemplateIncludesTypeDef](./type_defs.md#sensitivityinspectiontemplateincludestypedef) 
 ## GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3397,6 +3984,50 @@ class ListMembersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceProfileArtifactsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListResourceProfileArtifactsResponseTypeDef
+
+def get_value() -> ListResourceProfileArtifactsResponseTypeDef:
+    return {
+        "artifacts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceProfileArtifactsResponseTypeDef(TypedDict):
+    artifacts: List[ResourceProfileArtifactTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceProfileArtifactTypeDef](./type_defs.md#resourceprofileartifacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSensitivityInspectionTemplatesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListSensitivityInspectionTemplatesResponseTypeDef
+
+def get_value() -> ListSensitivityInspectionTemplatesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "sensitivityInspectionTemplates": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSensitivityInspectionTemplatesResponseTypeDef(TypedDict):
+    nextToken: str,
+    sensitivityInspectionTemplates: List[SensitivityInspectionTemplatesEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SensitivityInspectionTemplatesEntryTypeDef](./type_defs.md#sensitivityinspectiontemplatesentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PageTypeDef
 
 ```python title="Usage Example"
@@ -3447,6 +4078,40 @@ class S3ObjectTypeDef(TypedDict):
 1. See [:material-code-braces: ServerSideEncryptionTypeDef](./type_defs.md#serversideencryptiontypedef) 
 2. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
 3. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
+## S3ClassificationScopeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import S3ClassificationScopeTypeDef
+
+def get_value() -> S3ClassificationScopeTypeDef:
+    return {
+        "excludes": ...,
+    }
+```
+
+```python title="Definition"
+class S3ClassificationScopeTypeDef(TypedDict):
+    excludes: S3ClassificationScopeExclusionTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: S3ClassificationScopeExclusionTypeDef](./type_defs.md#s3classificationscopeexclusiontypedef) 
+## S3ClassificationScopeUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import S3ClassificationScopeUpdateTypeDef
+
+def get_value() -> S3ClassificationScopeUpdateTypeDef:
+    return {
+        "excludes": ...,
+    }
+```
+
+```python title="Definition"
+class S3ClassificationScopeUpdateTypeDef(TypedDict):
+    excludes: S3ClassificationScopeExclusionUpdateTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: S3ClassificationScopeExclusionUpdateTypeDef](./type_defs.md#s3classificationscopeexclusionupdatetypedef) 
 ## SearchResourcesTagCriterionTypeDef
 
 ```python title="Usage Example"
@@ -3507,6 +4172,24 @@ class SessionContextTypeDef(TypedDict):
 
 1. See [:material-code-braces: SessionContextAttributesTypeDef](./type_defs.md#sessioncontextattributestypedef) 
 2. See [:material-code-braces: SessionIssuerTypeDef](./type_defs.md#sessionissuertypedef) 
+## UpdateResourceProfileDetectionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateResourceProfileDetectionsRequestRequestTypeDef
+
+def get_value() -> UpdateResourceProfileDetectionsRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateResourceProfileDetectionsRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    suppressDataIdentifiers: NotRequired[Sequence[SuppressDataIdentifierTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SuppressDataIdentifierTypeDef](./type_defs.md#suppressdataidentifiertypedef) 
 ## TagCriterionForJobTypeDef
 
 ```python title="Usage Example"
@@ -3666,6 +4349,58 @@ class MatchingResourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MatchingBucketTypeDef](./type_defs.md#matchingbuckettypedef) 
+## GetBucketStatisticsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetBucketStatisticsResponseTypeDef
+
+def get_value() -> GetBucketStatisticsResponseTypeDef:
+    return {
+        "bucketCount": ...,
+        "bucketCountByEffectivePermission": ...,
+        "bucketCountByEncryptionType": ...,
+        "bucketCountByObjectEncryptionRequirement": ...,
+        "bucketCountBySharedAccessType": ...,
+        "bucketStatisticsBySensitivity": ...,
+        "classifiableObjectCount": ...,
+        "classifiableSizeInBytes": ...,
+        "lastUpdated": ...,
+        "objectCount": ...,
+        "sizeInBytes": ...,
+        "sizeInBytesCompressed": ...,
+        "unclassifiableObjectCount": ...,
+        "unclassifiableObjectSizeInBytes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBucketStatisticsResponseTypeDef(TypedDict):
+    bucketCount: int,
+    bucketCountByEffectivePermission: BucketCountByEffectivePermissionTypeDef,  # (1)
+    bucketCountByEncryptionType: BucketCountByEncryptionTypeTypeDef,  # (2)
+    bucketCountByObjectEncryptionRequirement: BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef,  # (3)
+    bucketCountBySharedAccessType: BucketCountBySharedAccessTypeTypeDef,  # (4)
+    bucketStatisticsBySensitivity: BucketStatisticsBySensitivityTypeDef,  # (5)
+    classifiableObjectCount: int,
+    classifiableSizeInBytes: int,
+    lastUpdated: datetime,
+    objectCount: int,
+    sizeInBytes: int,
+    sizeInBytesCompressed: int,
+    unclassifiableObjectCount: ObjectLevelStatisticsTypeDef,  # (6)
+    unclassifiableObjectSizeInBytes: ObjectLevelStatisticsTypeDef,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-braces: BucketCountByEffectivePermissionTypeDef](./type_defs.md#bucketcountbyeffectivepermissiontypedef) 
+2. See [:material-code-braces: BucketCountByEncryptionTypeTypeDef](./type_defs.md#bucketcountbyencryptiontypetypedef) 
+3. See [:material-code-braces: BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef](./type_defs.md#bucketcountpolicyallowsunencryptedobjectuploadstypedef) 
+4. See [:material-code-braces: BucketCountBySharedAccessTypeTypeDef](./type_defs.md#bucketcountbysharedaccesstypetypedef) 
+5. See [:material-code-braces: BucketStatisticsBySensitivityTypeDef](./type_defs.md#bucketstatisticsbysensitivitytypedef) 
+6. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
+7. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetClassificationExportConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -3863,11 +4598,11 @@ def get_value() -> UpdateFindingsFilterRequestRequestTypeDef:
 class UpdateFindingsFilterRequestRequestTypeDef(TypedDict):
     id: str,
     action: NotRequired[FindingsFilterActionType],  # (1)
+    clientToken: NotRequired[str],
     description: NotRequired[str],
     findingCriteria: NotRequired[FindingCriteriaTypeDef],  # (2)
     name: NotRequired[str],
     position: NotRequired[int],
-    clientToken: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: FindingsFilterActionType](./literals.md#findingsfilteractiontype) 
@@ -3939,6 +4674,48 @@ class OccurrencesTypeDef(TypedDict):
 3. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
 4. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
 5. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+## GetClassificationScopeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetClassificationScopeResponseTypeDef
+
+def get_value() -> GetClassificationScopeResponseTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "s3": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetClassificationScopeResponseTypeDef(TypedDict):
+    id: str,
+    name: str,
+    s3: S3ClassificationScopeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: S3ClassificationScopeTypeDef](./type_defs.md#s3classificationscopetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateClassificationScopeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import UpdateClassificationScopeRequestRequestTypeDef
+
+def get_value() -> UpdateClassificationScopeRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateClassificationScopeRequestRequestTypeDef(TypedDict):
+    id: str,
+    s3: NotRequired[S3ClassificationScopeUpdateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: S3ClassificationScopeUpdateTypeDef](./type_defs.md#s3classificationscopeupdatetypedef) 
 ## SearchResourcesCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -3972,6 +4749,7 @@ def get_value() -> UsageRecordTypeDef:
 ```python title="Definition"
 class UsageRecordTypeDef(TypedDict):
     accountId: NotRequired[str],
+    automatedDiscoveryFreeTrialStartDate: NotRequired[datetime],
     freeTrialStartDate: NotRequired[datetime],
     usage: NotRequired[List[UsageByAccountTypeDef]],  # (1)
 ```
@@ -4265,12 +5043,14 @@ class BucketMetadataTypeDef(TypedDict):
     errorCode: NotRequired[BucketMetadataErrorCodeType],  # (2)
     errorMessage: NotRequired[str],
     jobDetails: NotRequired[JobDetailsTypeDef],  # (3)
+    lastAutomatedDiscoveryTime: NotRequired[datetime],
     lastUpdated: NotRequired[datetime],
     objectCount: NotRequired[int],
     objectCountByEncryptionType: NotRequired[ObjectCountByEncryptionTypeTypeDef],  # (4)
     publicAccess: NotRequired[BucketPublicAccessTypeDef],  # (5)
     region: NotRequired[str],
     replicationDetails: NotRequired[ReplicationDetailsTypeDef],  # (6)
+    sensitivityScore: NotRequired[int],
     serverSideEncryption: NotRequired[BucketServerSideEncryptionTypeDef],  # (7)
     sharedAccess: NotRequired[SharedAccessType],  # (8)
     sizeInBytes: NotRequired[int],
@@ -4569,29 +5349,29 @@ from mypy_boto3_macie2.type_defs import JobSummaryTypeDef
 
 def get_value() -> JobSummaryTypeDef:
     return {
-        "bucketDefinitions": ...,
+        "bucketCriteria": ...,
     }
 ```
 
 ```python title="Definition"
 class JobSummaryTypeDef(TypedDict):
-    bucketDefinitions: NotRequired[List[S3BucketDefinitionForJobTypeDef]],  # (1)
+    bucketCriteria: NotRequired[S3BucketCriteriaForJobTypeDef],  # (1)
+    bucketDefinitions: NotRequired[List[S3BucketDefinitionForJobTypeDef]],  # (2)
     createdAt: NotRequired[datetime],
     jobId: NotRequired[str],
-    jobStatus: NotRequired[JobStatusType],  # (2)
-    jobType: NotRequired[JobTypeType],  # (3)
-    lastRunErrorStatus: NotRequired[LastRunErrorStatusTypeDef],  # (4)
+    jobStatus: NotRequired[JobStatusType],  # (3)
+    jobType: NotRequired[JobTypeType],  # (4)
+    lastRunErrorStatus: NotRequired[LastRunErrorStatusTypeDef],  # (5)
     name: NotRequired[str],
-    userPausedDetails: NotRequired[UserPausedDetailsTypeDef],  # (5)
-    bucketCriteria: NotRequired[S3BucketCriteriaForJobTypeDef],  # (6)
+    userPausedDetails: NotRequired[UserPausedDetailsTypeDef],  # (6)
 ```
 
-1. See [:material-code-braces: S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef) 
-2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
-3. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
-4. See [:material-code-braces: LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef) 
-5. See [:material-code-braces: UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef) 
-6. See [:material-code-braces: S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef) 
+1. See [:material-code-braces: S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef) 
+2. See [:material-code-braces: S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef) 
+3. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+4. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+5. See [:material-code-braces: LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef) 
+6. See [:material-code-braces: UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef) 
 ## S3JobDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -4599,20 +5379,20 @@ from mypy_boto3_macie2.type_defs import S3JobDefinitionTypeDef
 
 def get_value() -> S3JobDefinitionTypeDef:
     return {
-        "bucketDefinitions": ...,
+        "bucketCriteria": ...,
     }
 ```
 
 ```python title="Definition"
 class S3JobDefinitionTypeDef(TypedDict):
-    bucketDefinitions: NotRequired[Sequence[S3BucketDefinitionForJobTypeDef]],  # (1)
-    scoping: NotRequired[ScopingTypeDef],  # (2)
-    bucketCriteria: NotRequired[S3BucketCriteriaForJobTypeDef],  # (3)
+    bucketCriteria: NotRequired[S3BucketCriteriaForJobTypeDef],  # (1)
+    bucketDefinitions: NotRequired[Sequence[S3BucketDefinitionForJobTypeDef]],  # (2)
+    scoping: NotRequired[ScopingTypeDef],  # (3)
 ```
 
-1. See [:material-code-braces: S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef) 
-2. See [:material-code-braces: ScopingTypeDef](./type_defs.md#scopingtypedef) 
-3. See [:material-code-braces: S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef) 
+1. See [:material-code-braces: S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef) 
+2. See [:material-code-braces: S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef) 
+3. See [:material-code-braces: ScopingTypeDef](./type_defs.md#scopingtypedef) 
 ## ClassificationDetailsTypeDef
 
 ```python title="Usage Example"

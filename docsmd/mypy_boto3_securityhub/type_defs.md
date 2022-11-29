@@ -5305,25 +5305,6 @@ class DescribeStandardsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
-## StandardTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import StandardTypeDef
-
-def get_value() -> StandardTypeDef:
-    return {
-        "StandardsArn": ...,
-    }
-```
-
-```python title="Definition"
-class StandardTypeDef(TypedDict):
-    StandardsArn: NotRequired[str],
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    EnabledByDefault: NotRequired[bool],
-```
-
 ## DisableImportFindingsForProductRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6050,6 +6031,23 @@ class SoftwarePackageTypeDef(TypedDict):
     Remediation: NotRequired[str],
     SourceLayerHash: NotRequired[str],
     SourceLayerArn: NotRequired[str],
+```
+
+## StandardsManagedByTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsManagedByTypeDef
+
+def get_value() -> StandardsManagedByTypeDef:
+    return {
+        "Company": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsManagedByTypeDef(TypedDict):
+    Company: NotRequired[str],
+    Product: NotRequired[str],
 ```
 
 ## StandardsStatusReasonTypeDef
@@ -9003,28 +9001,6 @@ class DescribeStandardsControlsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StandardsControlTypeDef](./type_defs.md#standardscontroltypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeStandardsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_securityhub.type_defs import DescribeStandardsResponseTypeDef
-
-def get_value() -> DescribeStandardsResponseTypeDef:
-    return {
-        "Standards": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeStandardsResponseTypeDef(TypedDict):
-    Standards: List[StandardTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StandardTypeDef](./type_defs.md#standardtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ThreatTypeDef
 
 ```python title="Usage Example"
@@ -9366,6 +9342,27 @@ class RuleGroupVariablesTypeDef(TypedDict):
 
 1. See [:material-code-braces: RuleGroupVariablesIpSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesipsetsdetailstypedef) 
 2. See [:material-code-braces: RuleGroupVariablesPortSetsDetailsTypeDef](./type_defs.md#rulegroupvariablesportsetsdetailstypedef) 
+## StandardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardTypeDef
+
+def get_value() -> StandardTypeDef:
+    return {
+        "StandardsArn": ...,
+    }
+```
+
+```python title="Definition"
+class StandardTypeDef(TypedDict):
+    StandardsArn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    EnabledByDefault: NotRequired[bool],
+    StandardsManagedBy: NotRequired[StandardsManagedByTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StandardsManagedByTypeDef](./type_defs.md#standardsmanagedbytypedef) 
 ## StandardsSubscriptionTypeDef
 
 ```python title="Usage Example"
@@ -10813,6 +10810,28 @@ class RuleGroupSourceStatelessRuleDefinitionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RuleGroupSourceStatelessRuleMatchAttributesTypeDef](./type_defs.md#rulegroupsourcestatelessrulematchattributestypedef) 
+## DescribeStandardsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import DescribeStandardsResponseTypeDef
+
+def get_value() -> DescribeStandardsResponseTypeDef:
+    return {
+        "Standards": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStandardsResponseTypeDef(TypedDict):
+    Standards: List[StandardTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StandardTypeDef](./type_defs.md#standardtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDisableStandardsResponseTypeDef
 
 ```python title="Usage Example"

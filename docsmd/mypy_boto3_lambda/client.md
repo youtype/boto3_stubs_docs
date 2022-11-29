@@ -64,6 +64,9 @@ except (
     client.ResourceNotFoundException,
     client.ResourceNotReadyException,
     client.ServiceException,
+    client.SnapStartException,
+    client.SnapStartNotReadyException,
+    client.SnapStartTimeoutException,
     client.SubnetIPAddressLimitReachedException,
     client.TooManyRequestsException,
     client.UnsupportedMediaTypeException,
@@ -124,8 +127,8 @@ parent.add_layer_version_permission(**kwargs)
 
 ### add\_permission
 
-Grants an Amazon Web Services service, account, or organization permission to
-use a function.
+Grants an Amazon Web Service, Amazon Web Services account, or Amazon Web
+Services organization permission to use a function.
 
 Type annotations and code completion for `#!python boto3.client("lambda").add_permission` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
@@ -357,7 +360,8 @@ def create_function(
     CodeSigningConfigArn: str = ...,
     Architectures: Sequence[ArchitectureType] = ...,  # (10)
     EphemeralStorage: EphemeralStorageTypeDef = ...,  # (11)
-) -> FunctionConfigurationResponseMetadataTypeDef:  # (12)
+    SnapStart: SnapStartTypeDef = ...,  # (12)
+) -> FunctionConfigurationResponseMetadataTypeDef:  # (13)
     ...
 ```
 
@@ -372,7 +376,8 @@ def create_function(
 9. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
 10. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
-12. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
+12. See [:material-code-braces: SnapStartTypeDef](./type_defs.md#snapstarttypedef) 
+13. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1891,8 +1896,8 @@ parent.remove_layer_version_permission(**kwargs)
 
 ### remove\_permission
 
-Revokes function-use permission from an Amazon Web Services service or another
-account.
+Revokes function-use permission from an Amazon Web Service or another Amazon Web
+Services account.
 
 Type annotations and code completion for `#!python boto3.client("lambda").remove_permission` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
@@ -2171,7 +2176,8 @@ def update_function_configuration(
     FileSystemConfigs: Sequence[FileSystemConfigTypeDef] = ...,  # (6)
     ImageConfig: ImageConfigTypeDef = ...,  # (7)
     EphemeralStorage: EphemeralStorageTypeDef = ...,  # (8)
-) -> FunctionConfigurationResponseMetadataTypeDef:  # (9)
+    SnapStart: SnapStartTypeDef = ...,  # (9)
+) -> FunctionConfigurationResponseMetadataTypeDef:  # (10)
     ...
 ```
 
@@ -2183,7 +2189,8 @@ def update_function_configuration(
 6. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
 7. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
 8. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
-9. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
+9. See [:material-code-braces: SnapStartTypeDef](./type_defs.md#snapstarttypedef) 
+10. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2295,4 +2302,5 @@ Type annotations and code completion for `#!python boto3.client("lambda").get_wa
 - `client.get_waiter("function_exists")` -> [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
 - `client.get_waiter("function_updated")` -> [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
 - `client.get_waiter("function_updated_v2")` -> [FunctionUpdatedV2Waiter](./waiters.md#functionupdatedv2waiter)
+- `client.get_waiter("published_version_active")` -> [PublishedVersionActiveWaiter](./waiters.md#publishedversionactivewaiter)
 

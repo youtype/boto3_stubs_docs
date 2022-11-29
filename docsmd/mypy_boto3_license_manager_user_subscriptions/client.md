@@ -354,12 +354,14 @@ def register_identity_provider(
     *,
     IdentityProvider: IdentityProviderTypeDef,  # (1)
     Product: str,
-) -> RegisterIdentityProviderResponseTypeDef:  # (2)
+    Settings: SettingsTypeDef = ...,  # (2)
+) -> RegisterIdentityProviderResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
-2. See [:material-code-braces: RegisterIdentityProviderResponseTypeDef](./type_defs.md#registeridentityproviderresponsetypedef) 
+2. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+3. See [:material-code-braces: RegisterIdentityProviderResponseTypeDef](./type_defs.md#registeridentityproviderresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -442,6 +444,42 @@ parent.stop_product_subscription(**kwargs)
 ```
 
 1. See [:material-code-braces: StopProductSubscriptionRequestRequestTypeDef](./type_defs.md#stopproductsubscriptionrequestrequesttypedef) 
+
+### update\_identity\_provider\_settings
+
+Updates additional product configuration settings for the registered identity
+provider.
+
+Type annotations and code completion for `#!python boto3.client("license-manager-user-subscriptions").update_identity_provider_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager-user-subscriptions.html#LicenseManagerUserSubscriptions.Client.update_identity_provider_settings)
+
+```python title="Method definition"
+def update_identity_provider_settings(
+    self,
+    *,
+    IdentityProvider: IdentityProviderTypeDef,  # (1)
+    Product: str,
+    UpdateSettings: UpdateSettingsTypeDef,  # (2)
+) -> UpdateIdentityProviderSettingsResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef) 
+2. See [:material-code-braces: UpdateSettingsTypeDef](./type_defs.md#updatesettingstypedef) 
+3. See [:material-code-braces: UpdateIdentityProviderSettingsResponseTypeDef](./type_defs.md#updateidentityprovidersettingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateIdentityProviderSettingsRequestRequestTypeDef = {  # (1)
+    "IdentityProvider": ...,
+    "Product": ...,
+    "UpdateSettings": ...,
+}
+
+parent.update_identity_provider_settings(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateIdentityProviderSettingsRequestRequestTypeDef](./type_defs.md#updateidentityprovidersettingsrequestrequesttypedef) 
 
 
 

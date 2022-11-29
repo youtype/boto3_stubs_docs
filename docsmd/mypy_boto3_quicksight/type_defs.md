@@ -101,6 +101,24 @@ class AdHocFilteringOptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## ColumnIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnIdentifierTypeDef
+
+def get_value() -> ColumnIdentifierTypeDef:
+    return {
+        "DataSetIdentifier": ...,
+        "ColumnName": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnIdentifierTypeDef(TypedDict):
+    DataSetIdentifier: str,
+    ColumnName: str,
+```
+
 ## AmazonElasticsearchParametersTypeDef
 
 ```python title="Usage Example"
@@ -133,24 +151,60 @@ class AmazonOpenSearchParametersTypeDef(TypedDict):
     Domain: str,
 ```
 
-## AnalysisErrorTypeDef
+## CalculatedFieldTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import AnalysisErrorTypeDef
+from mypy_boto3_quicksight.type_defs import CalculatedFieldTypeDef
 
-def get_value() -> AnalysisErrorTypeDef:
+def get_value() -> CalculatedFieldTypeDef:
     return {
-        "Type": ...,
+        "DataSetIdentifier": ...,
+        "Name": ...,
+        "Expression": ...,
     }
 ```
 
 ```python title="Definition"
-class AnalysisErrorTypeDef(TypedDict):
-    Type: NotRequired[AnalysisErrorTypeType],  # (1)
-    Message: NotRequired[str],
+class CalculatedFieldTypeDef(TypedDict):
+    DataSetIdentifier: str,
+    Name: str,
+    Expression: str,
 ```
 
-1. See [:material-code-brackets: AnalysisErrorTypeType](./literals.md#analysiserrortypetype) 
+## DataSetIdentifierDeclarationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataSetIdentifierDeclarationTypeDef
+
+def get_value() -> DataSetIdentifierDeclarationTypeDef:
+    return {
+        "Identifier": ...,
+        "DataSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class DataSetIdentifierDeclarationTypeDef(TypedDict):
+    Identifier: str,
+    DataSetArn: str,
+```
+
+## EntityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import EntityTypeDef
+
+def get_value() -> EntityTypeDef:
+    return {
+        "Path": ...,
+    }
+```
+
+```python title="Definition"
+class EntityTypeDef(TypedDict):
+    Path: NotRequired[str],
+```
+
 ## AnalysisSearchFilterTypeDef
 
 ```python title="Usage Example"
@@ -228,6 +282,24 @@ class SheetTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
+## AnchorDateConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnchorDateConfigurationTypeDef
+
+def get_value() -> AnchorDateConfigurationTypeDef:
+    return {
+        "AnchorOption": ...,
+    }
+```
+
+```python title="Definition"
+class AnchorDateConfigurationTypeDef(TypedDict):
+    AnchorOption: NotRequired[AnchorOptionType],  # (1)
+    ParameterName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AnchorOptionType](./literals.md#anchoroptiontype) 
 ## AnonymousUserDashboardEmbeddingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -280,6 +352,58 @@ class AnonymousUserQSearchBarEmbeddingConfigurationTypeDef(TypedDict):
     InitialTopicId: str,
 ```
 
+## ArcAxisDisplayRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ArcAxisDisplayRangeTypeDef
+
+def get_value() -> ArcAxisDisplayRangeTypeDef:
+    return {
+        "Min": ...,
+    }
+```
+
+```python title="Definition"
+class ArcAxisDisplayRangeTypeDef(TypedDict):
+    Min: NotRequired[float],
+    Max: NotRequired[float],
+```
+
+## ArcConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ArcConfigurationTypeDef
+
+def get_value() -> ArcConfigurationTypeDef:
+    return {
+        "ArcAngle": ...,
+    }
+```
+
+```python title="Definition"
+class ArcConfigurationTypeDef(TypedDict):
+    ArcAngle: NotRequired[float],
+    ArcThickness: NotRequired[ArcThicknessOptionsType],  # (1)
+```
+
+1. See [:material-code-brackets: ArcThicknessOptionsType](./literals.md#arcthicknessoptionstype) 
+## ArcOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ArcOptionsTypeDef
+
+def get_value() -> ArcOptionsTypeDef:
+    return {
+        "ArcThickness": ...,
+    }
+```
+
+```python title="Definition"
+class ArcOptionsTypeDef(TypedDict):
+    ArcThickness: NotRequired[ArcThicknessType],  # (1)
+```
+
+1. See [:material-code-brackets: ArcThicknessType](./literals.md#arcthicknesstype) 
 ## AthenaParametersTypeDef
 
 ```python title="Usage Example"
@@ -353,6 +477,124 @@ class AwsIotAnalyticsParametersTypeDef(TypedDict):
     DataSetName: str,
 ```
 
+## DateAxisOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateAxisOptionsTypeDef
+
+def get_value() -> DateAxisOptionsTypeDef:
+    return {
+        "MissingDateVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class DateAxisOptionsTypeDef(TypedDict):
+    MissingDateVisibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## AxisDisplayMinMaxRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisDisplayMinMaxRangeTypeDef
+
+def get_value() -> AxisDisplayMinMaxRangeTypeDef:
+    return {
+        "Minimum": ...,
+    }
+```
+
+```python title="Definition"
+class AxisDisplayMinMaxRangeTypeDef(TypedDict):
+    Minimum: NotRequired[float],
+    Maximum: NotRequired[float],
+```
+
+## AxisLinearScaleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisLinearScaleTypeDef
+
+def get_value() -> AxisLinearScaleTypeDef:
+    return {
+        "StepCount": ...,
+    }
+```
+
+```python title="Definition"
+class AxisLinearScaleTypeDef(TypedDict):
+    StepCount: NotRequired[int],
+    StepSize: NotRequired[float],
+```
+
+## AxisLogarithmicScaleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisLogarithmicScaleTypeDef
+
+def get_value() -> AxisLogarithmicScaleTypeDef:
+    return {
+        "Base": ...,
+    }
+```
+
+```python title="Definition"
+class AxisLogarithmicScaleTypeDef(TypedDict):
+    Base: NotRequired[float],
+```
+
+## ItemsLimitConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ItemsLimitConfigurationTypeDef
+
+def get_value() -> ItemsLimitConfigurationTypeDef:
+    return {
+        "ItemsLimit": ...,
+    }
+```
+
+```python title="Definition"
+class ItemsLimitConfigurationTypeDef(TypedDict):
+    ItemsLimit: NotRequired[int],
+    OtherCategories: NotRequired[OtherCategoriesType],  # (1)
+```
+
+1. See [:material-code-brackets: OtherCategoriesType](./literals.md#othercategoriestype) 
+## BinCountOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BinCountOptionsTypeDef
+
+def get_value() -> BinCountOptionsTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class BinCountOptionsTypeDef(TypedDict):
+    Value: NotRequired[int],
+```
+
+## BinWidthOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BinWidthOptionsTypeDef
+
+def get_value() -> BinWidthOptionsTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class BinWidthOptionsTypeDef(TypedDict):
+    Value: NotRequired[float],
+    BinCountLimit: NotRequired[int],
+```
+
 ## BorderStyleTypeDef
 
 ```python title="Usage Example"
@@ -367,6 +609,41 @@ def get_value() -> BorderStyleTypeDef:
 ```python title="Definition"
 class BorderStyleTypeDef(TypedDict):
     Show: NotRequired[bool],
+```
+
+## BoxPlotStyleOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BoxPlotStyleOptionsTypeDef
+
+def get_value() -> BoxPlotStyleOptionsTypeDef:
+    return {
+        "FillStyle": ...,
+    }
+```
+
+```python title="Definition"
+class BoxPlotStyleOptionsTypeDef(TypedDict):
+    FillStyle: NotRequired[BoxPlotFillStyleType],  # (1)
+```
+
+1. See [:material-code-brackets: BoxPlotFillStyleType](./literals.md#boxplotfillstyletype) 
+## PaginationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PaginationConfigurationTypeDef
+
+def get_value() -> PaginationConfigurationTypeDef:
+    return {
+        "PageSize": ...,
+        "PageNumber": ...,
+    }
+```
+
+```python title="Definition"
+class PaginationConfigurationTypeDef(TypedDict):
+    PageSize: int,
+    PageNumber: int,
 ```
 
 ## CalculatedColumnTypeDef
@@ -386,6 +663,24 @@ def get_value() -> CalculatedColumnTypeDef:
 class CalculatedColumnTypeDef(TypedDict):
     ColumnName: str,
     ColumnId: str,
+    Expression: str,
+```
+
+## CalculatedMeasureFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CalculatedMeasureFieldTypeDef
+
+def get_value() -> CalculatedMeasureFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Expression": ...,
+    }
+```
+
+```python title="Definition"
+class CalculatedMeasureFieldTypeDef(TypedDict):
+    FieldId: str,
     Expression: str,
 ```
 
@@ -453,6 +748,106 @@ class CastColumnTypeOperationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ColumnDataTypeType](./literals.md#columndatatypetype) 
+## CustomFilterConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomFilterConfigurationTypeDef
+
+def get_value() -> CustomFilterConfigurationTypeDef:
+    return {
+        "MatchOperator": ...,
+        "NullOption": ...,
+    }
+```
+
+```python title="Definition"
+class CustomFilterConfigurationTypeDef(TypedDict):
+    MatchOperator: CategoryFilterMatchOperatorType,  # (1)
+    NullOption: FilterNullOptionType,  # (3)
+    CategoryValue: NotRequired[str],
+    SelectAllOptions: NotRequired[CategoryFilterSelectAllOptionsType],  # (2)
+    ParameterName: NotRequired[str],
+```
+
+1. See [:material-code-brackets: CategoryFilterMatchOperatorType](./literals.md#categoryfiltermatchoperatortype) 
+2. See [:material-code-brackets: CategoryFilterSelectAllOptionsType](./literals.md#categoryfilterselectalloptionstype) 
+3. See [:material-code-brackets: FilterNullOptionType](./literals.md#filternulloptiontype) 
+## CustomFilterListConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomFilterListConfigurationTypeDef
+
+def get_value() -> CustomFilterListConfigurationTypeDef:
+    return {
+        "MatchOperator": ...,
+        "NullOption": ...,
+    }
+```
+
+```python title="Definition"
+class CustomFilterListConfigurationTypeDef(TypedDict):
+    MatchOperator: CategoryFilterMatchOperatorType,  # (1)
+    NullOption: FilterNullOptionType,  # (3)
+    CategoryValues: NotRequired[Sequence[str]],
+    SelectAllOptions: NotRequired[CategoryFilterSelectAllOptionsType],  # (2)
+```
+
+1. See [:material-code-brackets: CategoryFilterMatchOperatorType](./literals.md#categoryfiltermatchoperatortype) 
+2. See [:material-code-brackets: CategoryFilterSelectAllOptionsType](./literals.md#categoryfilterselectalloptionstype) 
+3. See [:material-code-brackets: FilterNullOptionType](./literals.md#filternulloptiontype) 
+## FilterListConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterListConfigurationTypeDef
+
+def get_value() -> FilterListConfigurationTypeDef:
+    return {
+        "MatchOperator": ...,
+    }
+```
+
+```python title="Definition"
+class FilterListConfigurationTypeDef(TypedDict):
+    MatchOperator: CategoryFilterMatchOperatorType,  # (1)
+    CategoryValues: NotRequired[Sequence[str]],
+    SelectAllOptions: NotRequired[CategoryFilterSelectAllOptionsType],  # (2)
+```
+
+1. See [:material-code-brackets: CategoryFilterMatchOperatorType](./literals.md#categoryfiltermatchoperatortype) 
+2. See [:material-code-brackets: CategoryFilterSelectAllOptionsType](./literals.md#categoryfilterselectalloptionstype) 
+## SimpleClusterMarkerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SimpleClusterMarkerTypeDef
+
+def get_value() -> SimpleClusterMarkerTypeDef:
+    return {
+        "Color": ...,
+    }
+```
+
+```python title="Definition"
+class SimpleClusterMarkerTypeDef(TypedDict):
+    Color: NotRequired[str],
+```
+
+## DataColorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataColorTypeDef
+
+def get_value() -> DataColorTypeDef:
+    return {
+        "Color": ...,
+    }
+```
+
+```python title="Definition"
+class DataColorTypeDef(TypedDict):
+    Color: NotRequired[str],
+    DataValue: NotRequired[float],
+```
+
 ## ColumnDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -540,6 +935,76 @@ class ColumnSchemaTypeDef(TypedDict):
     GeographicRole: NotRequired[str],
 ```
 
+## ConditionalFormattingSolidColorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingSolidColorTypeDef
+
+def get_value() -> ConditionalFormattingSolidColorTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingSolidColorTypeDef(TypedDict):
+    Expression: str,
+    Color: NotRequired[str],
+```
+
+## ConditionalFormattingCustomIconOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingCustomIconOptionsTypeDef
+
+def get_value() -> ConditionalFormattingCustomIconOptionsTypeDef:
+    return {
+        "Icon": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingCustomIconOptionsTypeDef(TypedDict):
+    Icon: NotRequired[IconType],  # (1)
+    UnicodeIcon: NotRequired[str],
+```
+
+1. See [:material-code-brackets: IconType](./literals.md#icontype) 
+## ConditionalFormattingIconDisplayConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingIconDisplayConfigurationTypeDef
+
+def get_value() -> ConditionalFormattingIconDisplayConfigurationTypeDef:
+    return {
+        "IconDisplayOption": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingIconDisplayConfigurationTypeDef(TypedDict):
+    IconDisplayOption: NotRequired[ConditionalFormattingIconDisplayOptionType],  # (1)
+```
+
+1. See [:material-code-brackets: ConditionalFormattingIconDisplayOptionType](./literals.md#conditionalformattingicondisplayoptiontype) 
+## ConditionalFormattingIconSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingIconSetTypeDef
+
+def get_value() -> ConditionalFormattingIconSetTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingIconSetTypeDef(TypedDict):
+    Expression: str,
+    IconSetType: NotRequired[ConditionalFormattingIconSetTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: ConditionalFormattingIconSetTypeType](./literals.md#conditionalformattingiconsettypetype) 
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -968,6 +1433,163 @@ class ThemeAliasTypeDef(TypedDict):
     ThemeVersionNumber: NotRequired[int],
 ```
 
+## DecimalPlacesConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DecimalPlacesConfigurationTypeDef
+
+def get_value() -> DecimalPlacesConfigurationTypeDef:
+    return {
+        "DecimalPlaces": ...,
+    }
+```
+
+```python title="Definition"
+class DecimalPlacesConfigurationTypeDef(TypedDict):
+    DecimalPlaces: int,
+```
+
+## NegativeValueConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NegativeValueConfigurationTypeDef
+
+def get_value() -> NegativeValueConfigurationTypeDef:
+    return {
+        "DisplayMode": ...,
+    }
+```
+
+```python title="Definition"
+class NegativeValueConfigurationTypeDef(TypedDict):
+    DisplayMode: NegativeValueDisplayModeType,  # (1)
+```
+
+1. See [:material-code-brackets: NegativeValueDisplayModeType](./literals.md#negativevaluedisplaymodetype) 
+## NullValueFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NullValueFormatConfigurationTypeDef
+
+def get_value() -> NullValueFormatConfigurationTypeDef:
+    return {
+        "NullString": ...,
+    }
+```
+
+```python title="Definition"
+class NullValueFormatConfigurationTypeDef(TypedDict):
+    NullString: str,
+```
+
+## FilterOperationSelectedFieldsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterOperationSelectedFieldsConfigurationTypeDef
+
+def get_value() -> FilterOperationSelectedFieldsConfigurationTypeDef:
+    return {
+        "SelectedFields": ...,
+    }
+```
+
+```python title="Definition"
+class FilterOperationSelectedFieldsConfigurationTypeDef(TypedDict):
+    SelectedFields: NotRequired[Sequence[str]],
+    SelectedFieldOptions: NotRequired[SelectedFieldOptionsType],  # (1)
+```
+
+1. See [:material-code-brackets: SelectedFieldOptionsType](./literals.md#selectedfieldoptionstype) 
+## LocalNavigationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LocalNavigationConfigurationTypeDef
+
+def get_value() -> LocalNavigationConfigurationTypeDef:
+    return {
+        "TargetSheetId": ...,
+    }
+```
+
+```python title="Definition"
+class LocalNavigationConfigurationTypeDef(TypedDict):
+    TargetSheetId: str,
+```
+
+## CustomActionURLOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomActionURLOperationTypeDef
+
+def get_value() -> CustomActionURLOperationTypeDef:
+    return {
+        "URLTemplate": ...,
+        "URLTarget": ...,
+    }
+```
+
+```python title="Definition"
+class CustomActionURLOperationTypeDef(TypedDict):
+    URLTemplate: str,
+    URLTarget: URLTargetConfigurationType,  # (1)
+```
+
+1. See [:material-code-brackets: URLTargetConfigurationType](./literals.md#urltargetconfigurationtype) 
+## CustomContentConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomContentConfigurationTypeDef
+
+def get_value() -> CustomContentConfigurationTypeDef:
+    return {
+        "ContentUrl": ...,
+    }
+```
+
+```python title="Definition"
+class CustomContentConfigurationTypeDef(TypedDict):
+    ContentUrl: NotRequired[str],
+    ContentType: NotRequired[CustomContentTypeType],  # (1)
+    ImageScaling: NotRequired[CustomContentImageScalingConfigurationType],  # (2)
+```
+
+1. See [:material-code-brackets: CustomContentTypeType](./literals.md#customcontenttypetype) 
+2. See [:material-code-brackets: CustomContentImageScalingConfigurationType](./literals.md#customcontentimagescalingconfigurationtype) 
+## CustomNarrativeOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomNarrativeOptionsTypeDef
+
+def get_value() -> CustomNarrativeOptionsTypeDef:
+    return {
+        "Narrative": ...,
+    }
+```
+
+```python title="Definition"
+class CustomNarrativeOptionsTypeDef(TypedDict):
+    Narrative: str,
+```
+
+## CustomParameterValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomParameterValuesTypeDef
+
+def get_value() -> CustomParameterValuesTypeDef:
+    return {
+        "StringValues": ...,
+    }
+```
+
+```python title="Definition"
+class CustomParameterValuesTypeDef(TypedDict):
+    StringValues: NotRequired[Sequence[str]],
+    IntegerValues: NotRequired[Sequence[int]],
+    DecimalValues: NotRequired[Sequence[float]],
+    DateTimeValues: NotRequired[Sequence[Union[datetime, str]]],
+```
+
 ## InputColumnTypeDef
 
 ```python title="Usage Example"
@@ -987,24 +1609,6 @@ class InputColumnTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: InputColumnDataTypeType](./literals.md#inputcolumndatatypetype) 
-## DashboardErrorTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardErrorTypeDef
-
-def get_value() -> DashboardErrorTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class DashboardErrorTypeDef(TypedDict):
-    Type: NotRequired[DashboardErrorTypeType],  # (1)
-    Message: NotRequired[str],
-```
-
-1. See [:material-code-brackets: DashboardErrorTypeType](./literals.md#dashboarderrortypetype) 
 ## ExportToCSVOptionTypeDef
 
 ```python title="Usage Example"
@@ -1103,6 +1707,23 @@ class DashboardVersionSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+## ExportHiddenFieldsOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ExportHiddenFieldsOptionTypeDef
+
+def get_value() -> ExportHiddenFieldsOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ExportHiddenFieldsOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
 ## DataColorPaletteTypeDef
 
 ```python title="Usage Example"
@@ -1119,6 +1740,112 @@ class DataColorPaletteTypeDef(TypedDict):
     Colors: NotRequired[Sequence[str]],
     MinMaxGradient: NotRequired[Sequence[str]],
     EmptyFillColor: NotRequired[str],
+```
+
+## DataPathLabelTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataPathLabelTypeTypeDef
+
+def get_value() -> DataPathLabelTypeTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class DataPathLabelTypeTypeDef(TypedDict):
+    FieldId: NotRequired[str],
+    FieldValue: NotRequired[str],
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## FieldLabelTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FieldLabelTypeTypeDef
+
+def get_value() -> FieldLabelTypeTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class FieldLabelTypeTypeDef(TypedDict):
+    FieldId: NotRequired[str],
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## MaximumLabelTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import MaximumLabelTypeTypeDef
+
+def get_value() -> MaximumLabelTypeTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class MaximumLabelTypeTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## MinimumLabelTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import MinimumLabelTypeTypeDef
+
+def get_value() -> MinimumLabelTypeTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class MinimumLabelTypeTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## RangeEndsLabelTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RangeEndsLabelTypeTypeDef
+
+def get_value() -> RangeEndsLabelTypeTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class RangeEndsLabelTypeTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## DataPathValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataPathValueTypeDef
+
+def get_value() -> DataPathValueTypeDef:
+    return {
+        "FieldId": ...,
+        "FieldValue": ...,
+    }
+```
+
+```python title="Definition"
+class DataPathValueTypeDef(TypedDict):
+    FieldId: str,
+    FieldValue: str,
 ```
 
 ## DataSetSearchFilterTypeDef
@@ -1527,6 +2254,41 @@ class DataSourceSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+## RollingDateConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RollingDateConfigurationTypeDef
+
+def get_value() -> RollingDateConfigurationTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
+
+```python title="Definition"
+class RollingDateConfigurationTypeDef(TypedDict):
+    Expression: str,
+    DataSetIdentifier: NotRequired[str],
+```
+
+## DateTimeValueWhenUnsetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateTimeValueWhenUnsetConfigurationTypeDef
+
+def get_value() -> DateTimeValueWhenUnsetConfigurationTypeDef:
+    return {
+        "ValueWhenUnsetOption": ...,
+    }
+```
+
+```python title="Definition"
+class DateTimeValueWhenUnsetConfigurationTypeDef(TypedDict):
+    ValueWhenUnsetOption: NotRequired[ValueWhenUnsetOptionType],  # (1)
+    CustomValue: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-brackets: ValueWhenUnsetOptionType](./literals.md#valuewhenunsetoptiontype) 
 ## DateTimeParameterTypeDef
 
 ```python title="Usage Example"
@@ -1545,6 +2307,24 @@ class DateTimeParameterTypeDef(TypedDict):
     Values: Sequence[Union[datetime, str]],
 ```
 
+## DecimalValueWhenUnsetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DecimalValueWhenUnsetConfigurationTypeDef
+
+def get_value() -> DecimalValueWhenUnsetConfigurationTypeDef:
+    return {
+        "ValueWhenUnsetOption": ...,
+    }
+```
+
+```python title="Definition"
+class DecimalValueWhenUnsetConfigurationTypeDef(TypedDict):
+    ValueWhenUnsetOption: NotRequired[ValueWhenUnsetOptionType],  # (1)
+    CustomValue: NotRequired[float],
+```
+
+1. See [:material-code-brackets: ValueWhenUnsetOptionType](./literals.md#valuewhenunsetoptiontype) 
 ## DecimalParameterTypeDef
 
 ```python title="Usage Example"
@@ -1960,6 +2740,24 @@ class DescribeAccountSubscriptionRequestRequestTypeDef(TypedDict):
     AwsAccountId: str,
 ```
 
+## DescribeAnalysisDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisDefinitionRequestRequestTypeDef
+
+def get_value() -> DescribeAnalysisDefinitionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnalysisDefinitionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+```
+
 ## DescribeAnalysisPermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1994,6 +2792,26 @@ def get_value() -> DescribeAnalysisRequestRequestTypeDef:
 class DescribeAnalysisRequestRequestTypeDef(TypedDict):
     AwsAccountId: str,
     AnalysisId: str,
+```
+
+## DescribeDashboardDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDashboardDefinitionRequestRequestTypeDef
+
+def get_value() -> DescribeDashboardDefinitionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDashboardDefinitionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: NotRequired[int],
+    AliasName: NotRequired[str],
 ```
 
 ## DescribeDashboardPermissionsRequestRequestTypeDef
@@ -2341,6 +3159,26 @@ class DescribeTemplateAliasRequestRequestTypeDef(TypedDict):
     AliasName: str,
 ```
 
+## DescribeTemplateDefinitionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeTemplateDefinitionRequestRequestTypeDef
+
+def get_value() -> DescribeTemplateDefinitionRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTemplateDefinitionRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    VersionNumber: NotRequired[int],
+    AliasName: NotRequired[str],
+```
+
 ## DescribeTemplatePermissionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2485,6 +3323,40 @@ class UserTypeDef(TypedDict):
 
 1. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
 2. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+## DonutCenterOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DonutCenterOptionsTypeDef
+
+def get_value() -> DonutCenterOptionsTypeDef:
+    return {
+        "LabelVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class DonutCenterOptionsTypeDef(TypedDict):
+    LabelVisibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## ListControlSelectAllOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListControlSelectAllOptionsTypeDef
+
+def get_value() -> ListControlSelectAllOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class ListControlSelectAllOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 ## ErrorInfoTypeDef
 
 ```python title="Usage Example"
@@ -2503,6 +3375,116 @@ class ErrorInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IngestionErrorTypeType](./literals.md#ingestionerrortypetype) 
+## ExcludePeriodConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ExcludePeriodConfigurationTypeDef
+
+def get_value() -> ExcludePeriodConfigurationTypeDef:
+    return {
+        "Amount": ...,
+        "Granularity": ...,
+    }
+```
+
+```python title="Definition"
+class ExcludePeriodConfigurationTypeDef(TypedDict):
+    Amount: int,
+    Granularity: TimeGranularityType,  # (1)
+    Status: NotRequired[WidgetStatusType],  # (2)
+```
+
+1. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+2. See [:material-code-brackets: WidgetStatusType](./literals.md#widgetstatustype) 
+## FieldSortTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FieldSortTypeDef
+
+def get_value() -> FieldSortTypeDef:
+    return {
+        "FieldId": ...,
+        "Direction": ...,
+    }
+```
+
+```python title="Definition"
+class FieldSortTypeDef(TypedDict):
+    FieldId: str,
+    Direction: SortDirectionType,  # (1)
+```
+
+1. See [:material-code-brackets: SortDirectionType](./literals.md#sortdirectiontype) 
+## FieldTooltipItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FieldTooltipItemTypeDef
+
+def get_value() -> FieldTooltipItemTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class FieldTooltipItemTypeDef(TypedDict):
+    FieldId: str,
+    Label: NotRequired[str],
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## GeospatialMapStyleOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialMapStyleOptionsTypeDef
+
+def get_value() -> GeospatialMapStyleOptionsTypeDef:
+    return {
+        "BaseMapStyle": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialMapStyleOptionsTypeDef(TypedDict):
+    BaseMapStyle: NotRequired[BaseMapStyleTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: BaseMapStyleTypeType](./literals.md#basemapstyletypetype) 
+## FilterSelectableValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterSelectableValuesTypeDef
+
+def get_value() -> FilterSelectableValuesTypeDef:
+    return {
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class FilterSelectableValuesTypeDef(TypedDict):
+    Values: NotRequired[Sequence[str]],
+```
+
+## SameSheetTargetVisualConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SameSheetTargetVisualConfigurationTypeDef
+
+def get_value() -> SameSheetTargetVisualConfigurationTypeDef:
+    return {
+        "TargetVisuals": ...,
+    }
+```
+
+```python title="Definition"
+class SameSheetTargetVisualConfigurationTypeDef(TypedDict):
+    TargetVisuals: NotRequired[Sequence[str]],
+    TargetVisualOptions: NotRequired[TargetVisualOptionsType],  # (1)
+```
+
+1. See [:material-code-brackets: TargetVisualOptionsType](./literals.md#targetvisualoptionstype) 
 ## FilterOperationTypeDef
 
 ```python title="Usage Example"
@@ -2561,6 +3543,184 @@ class FolderSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FolderTypeType](./literals.md#foldertypetype) 
+## FontSizeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FontSizeTypeDef
+
+def get_value() -> FontSizeTypeDef:
+    return {
+        "Relative": ...,
+    }
+```
+
+```python title="Definition"
+class FontSizeTypeDef(TypedDict):
+    Relative: NotRequired[RelativeFontSizeType],  # (1)
+```
+
+1. See [:material-code-brackets: RelativeFontSizeType](./literals.md#relativefontsizetype) 
+## FontWeightTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FontWeightTypeDef
+
+def get_value() -> FontWeightTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class FontWeightTypeDef(TypedDict):
+    Name: NotRequired[FontWeightNameType],  # (1)
+```
+
+1. See [:material-code-brackets: FontWeightNameType](./literals.md#fontweightnametype) 
+## FontTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FontTypeDef
+
+def get_value() -> FontTypeDef:
+    return {
+        "FontFamily": ...,
+    }
+```
+
+```python title="Definition"
+class FontTypeDef(TypedDict):
+    FontFamily: NotRequired[str],
+```
+
+## TimeBasedForecastPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TimeBasedForecastPropertiesTypeDef
+
+def get_value() -> TimeBasedForecastPropertiesTypeDef:
+    return {
+        "PeriodsForward": ...,
+    }
+```
+
+```python title="Definition"
+class TimeBasedForecastPropertiesTypeDef(TypedDict):
+    PeriodsForward: NotRequired[int],
+    PeriodsBackward: NotRequired[int],
+    UpperBoundary: NotRequired[float],
+    LowerBoundary: NotRequired[float],
+    PredictionInterval: NotRequired[int],
+    Seasonality: NotRequired[int],
+```
+
+## WhatIfPointScenarioTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WhatIfPointScenarioTypeDef
+
+def get_value() -> WhatIfPointScenarioTypeDef:
+    return {
+        "Date": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class WhatIfPointScenarioTypeDef(TypedDict):
+    Date: Union[datetime, str],
+    Value: float,
+```
+
+## WhatIfRangeScenarioTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WhatIfRangeScenarioTypeDef
+
+def get_value() -> WhatIfRangeScenarioTypeDef:
+    return {
+        "StartDate": ...,
+        "EndDate": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class WhatIfRangeScenarioTypeDef(TypedDict):
+    StartDate: Union[datetime, str],
+    EndDate: Union[datetime, str],
+    Value: float,
+```
+
+## FreeFormLayoutScreenCanvasSizeOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FreeFormLayoutScreenCanvasSizeOptionsTypeDef
+
+def get_value() -> FreeFormLayoutScreenCanvasSizeOptionsTypeDef:
+    return {
+        "OptimizedViewPortWidth": ...,
+    }
+```
+
+```python title="Definition"
+class FreeFormLayoutScreenCanvasSizeOptionsTypeDef(TypedDict):
+    OptimizedViewPortWidth: str,
+```
+
+## FreeFormLayoutElementBackgroundStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FreeFormLayoutElementBackgroundStyleTypeDef
+
+def get_value() -> FreeFormLayoutElementBackgroundStyleTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class FreeFormLayoutElementBackgroundStyleTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    Color: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## FreeFormLayoutElementBorderStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FreeFormLayoutElementBorderStyleTypeDef
+
+def get_value() -> FreeFormLayoutElementBorderStyleTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class FreeFormLayoutElementBorderStyleTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    Color: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## LoadingAnimationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LoadingAnimationTypeDef
+
+def get_value() -> LoadingAnimationTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class LoadingAnimationTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 ## SessionTagTypeDef
 
 ```python title="Usage Example"
@@ -2577,6 +3737,28 @@ def get_value() -> SessionTagTypeDef:
 class SessionTagTypeDef(TypedDict):
     Key: str,
     Value: str,
+```
+
+## GeospatialCoordinateBoundsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialCoordinateBoundsTypeDef
+
+def get_value() -> GeospatialCoordinateBoundsTypeDef:
+    return {
+        "North": ...,
+        "South": ...,
+        "West": ...,
+        "East": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialCoordinateBoundsTypeDef(TypedDict):
+    North: float,
+    South: float,
+    West: float,
+    East: float,
 ```
 
 ## GetDashboardEmbedUrlRequestRequestTypeDef
@@ -2626,6 +3808,86 @@ class GetSessionEmbedUrlRequestRequestTypeDef(TypedDict):
     UserArn: NotRequired[str],
 ```
 
+## TableBorderOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableBorderOptionsTypeDef
+
+def get_value() -> TableBorderOptionsTypeDef:
+    return {
+        "Color": ...,
+    }
+```
+
+```python title="Definition"
+class TableBorderOptionsTypeDef(TypedDict):
+    Color: NotRequired[str],
+    Thickness: NotRequired[int],
+    Style: NotRequired[TableBorderStyleType],  # (1)
+```
+
+1. See [:material-code-brackets: TableBorderStyleType](./literals.md#tableborderstyletype) 
+## GradientStopTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GradientStopTypeDef
+
+def get_value() -> GradientStopTypeDef:
+    return {
+        "GradientOffset": ...,
+    }
+```
+
+```python title="Definition"
+class GradientStopTypeDef(TypedDict):
+    GradientOffset: float,
+    DataValue: NotRequired[float],
+    Color: NotRequired[str],
+```
+
+## GridLayoutScreenCanvasSizeOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GridLayoutScreenCanvasSizeOptionsTypeDef
+
+def get_value() -> GridLayoutScreenCanvasSizeOptionsTypeDef:
+    return {
+        "ResizeOption": ...,
+    }
+```
+
+```python title="Definition"
+class GridLayoutScreenCanvasSizeOptionsTypeDef(TypedDict):
+    ResizeOption: ResizeOptionType,  # (1)
+    OptimizedViewPortWidth: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ResizeOptionType](./literals.md#resizeoptiontype) 
+## GridLayoutElementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GridLayoutElementTypeDef
+
+def get_value() -> GridLayoutElementTypeDef:
+    return {
+        "ElementId": ...,
+        "ElementType": ...,
+        "ColumnSpan": ...,
+        "RowSpan": ...,
+    }
+```
+
+```python title="Definition"
+class GridLayoutElementTypeDef(TypedDict):
+    ElementId: str,
+    ElementType: LayoutElementTypeType,  # (1)
+    ColumnSpan: int,
+    RowSpan: int,
+    ColumnIndex: NotRequired[int],
+    RowIndex: NotRequired[int],
+```
+
+1. See [:material-code-brackets: LayoutElementTypeType](./literals.md#layoutelementtypetype) 
 ## GroupSearchFilterTypeDef
 
 ```python title="Usage Example"
@@ -2718,6 +3980,24 @@ class RowInfoTypeDef(TypedDict):
     TotalRowsInDataset: NotRequired[int],
 ```
 
+## IntegerValueWhenUnsetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import IntegerValueWhenUnsetConfigurationTypeDef
+
+def get_value() -> IntegerValueWhenUnsetConfigurationTypeDef:
+    return {
+        "ValueWhenUnsetOption": ...,
+    }
+```
+
+```python title="Definition"
+class IntegerValueWhenUnsetConfigurationTypeDef(TypedDict):
+    ValueWhenUnsetOption: NotRequired[ValueWhenUnsetOptionType],  # (1)
+    CustomValue: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ValueWhenUnsetOptionType](./literals.md#valuewhenunsetoptiontype) 
 ## IntegerParameterTypeDef
 
 ```python title="Usage Example"
@@ -2752,6 +4032,117 @@ class JoinKeyPropertiesTypeDef(TypedDict):
     UniqueKey: NotRequired[bool],
 ```
 
+## ProgressBarOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ProgressBarOptionsTypeDef
+
+def get_value() -> ProgressBarOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class ProgressBarOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## SecondaryValueOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SecondaryValueOptionsTypeDef
+
+def get_value() -> SecondaryValueOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class SecondaryValueOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## TrendArrowOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TrendArrowOptionsTypeDef
+
+def get_value() -> TrendArrowOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class TrendArrowOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## LineChartLineStyleSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartLineStyleSettingsTypeDef
+
+def get_value() -> LineChartLineStyleSettingsTypeDef:
+    return {
+        "LineVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartLineStyleSettingsTypeDef(TypedDict):
+    LineVisibility: NotRequired[VisibilityType],  # (1)
+    LineInterpolation: NotRequired[LineInterpolationType],  # (2)
+    LineStyle: NotRequired[LineChartLineStyleType],  # (3)
+    LineWidth: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: LineInterpolationType](./literals.md#lineinterpolationtype) 
+3. See [:material-code-brackets: LineChartLineStyleType](./literals.md#linechartlinestyletype) 
+## LineChartMarkerStyleSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartMarkerStyleSettingsTypeDef
+
+def get_value() -> LineChartMarkerStyleSettingsTypeDef:
+    return {
+        "MarkerVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartMarkerStyleSettingsTypeDef(TypedDict):
+    MarkerVisibility: NotRequired[VisibilityType],  # (1)
+    MarkerShape: NotRequired[LineChartMarkerShapeType],  # (2)
+    MarkerSize: NotRequired[str],
+    MarkerColor: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: LineChartMarkerShapeType](./literals.md#linechartmarkershapetype) 
+## MissingDataConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import MissingDataConfigurationTypeDef
+
+def get_value() -> MissingDataConfigurationTypeDef:
+    return {
+        "TreatmentOption": ...,
+    }
+```
+
+```python title="Definition"
+class MissingDataConfigurationTypeDef(TypedDict):
+    TreatmentOption: NotRequired[MissingDataTreatmentOptionType],  # (1)
+```
+
+1. See [:material-code-brackets: MissingDataTreatmentOptionType](./literals.md#missingdatatreatmentoptiontype) 
 ## PaginatorConfigTypeDef
 
 ```python title="Usage Example"
@@ -2788,6 +4179,23 @@ class ListAnalysesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListControlSearchOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListControlSearchOptionsTypeDef
+
+def get_value() -> ListControlSearchOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class ListControlSearchOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 ## ListDashboardVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3301,6 +4709,23 @@ class ListUsersRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## LongFormatTextTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LongFormatTextTypeDef
+
+def get_value() -> LongFormatTextTypeDef:
+    return {
+        "PlainText": ...,
+    }
+```
+
+```python title="Definition"
+class LongFormatTextTypeDef(TypedDict):
+    PlainText: NotRequired[str],
+    RichText: NotRequired[str],
+```
+
 ## ManifestFileLocationTypeDef
 
 ```python title="Usage Example"
@@ -3353,6 +4778,58 @@ class NamespaceErrorTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: NamespaceErrorTypeType](./literals.md#namespaceerrortypetype) 
+## NumericRangeFilterValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericRangeFilterValueTypeDef
+
+def get_value() -> NumericRangeFilterValueTypeDef:
+    return {
+        "StaticValue": ...,
+    }
+```
+
+```python title="Definition"
+class NumericRangeFilterValueTypeDef(TypedDict):
+    StaticValue: NotRequired[float],
+    Parameter: NotRequired[str],
+```
+
+## ThousandSeparatorOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ThousandSeparatorOptionsTypeDef
+
+def get_value() -> ThousandSeparatorOptionsTypeDef:
+    return {
+        "Symbol": ...,
+    }
+```
+
+```python title="Definition"
+class ThousandSeparatorOptionsTypeDef(TypedDict):
+    Symbol: NotRequired[NumericSeparatorSymbolType],  # (1)
+    Visibility: NotRequired[VisibilityType],  # (2)
+```
+
+1. See [:material-code-brackets: NumericSeparatorSymbolType](./literals.md#numericseparatorsymboltype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## PercentileAggregationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PercentileAggregationTypeDef
+
+def get_value() -> PercentileAggregationTypeDef:
+    return {
+        "PercentileValue": ...,
+    }
+```
+
+```python title="Definition"
+class PercentileAggregationTypeDef(TypedDict):
+    PercentileValue: NotRequired[float],
+```
+
 ## StringParameterTypeDef
 
 ```python title="Usage Example"
@@ -3371,6 +4848,112 @@ class StringParameterTypeDef(TypedDict):
     Values: Sequence[str],
 ```
 
+## PercentVisibleRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PercentVisibleRangeTypeDef
+
+def get_value() -> PercentVisibleRangeTypeDef:
+    return {
+        "From": ...,
+    }
+```
+
+```python title="Definition"
+class PercentVisibleRangeTypeDef(TypedDict):
+    From: NotRequired[float],
+    To: NotRequired[float],
+```
+
+## PivotTableConditionalFormattingScopeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableConditionalFormattingScopeTypeDef
+
+def get_value() -> PivotTableConditionalFormattingScopeTypeDef:
+    return {
+        "Role": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableConditionalFormattingScopeTypeDef(TypedDict):
+    Role: NotRequired[PivotTableConditionalFormattingScopeRoleType],  # (1)
+```
+
+1. See [:material-code-brackets: PivotTableConditionalFormattingScopeRoleType](./literals.md#pivottableconditionalformattingscoperoletype) 
+## PivotTablePaginatedReportOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTablePaginatedReportOptionsTypeDef
+
+def get_value() -> PivotTablePaginatedReportOptionsTypeDef:
+    return {
+        "VerticalOverflowVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTablePaginatedReportOptionsTypeDef(TypedDict):
+    VerticalOverflowVisibility: NotRequired[VisibilityType],  # (1)
+    OverflowColumnHeaderVisibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## PivotTableFieldOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableFieldOptionTypeDef
+
+def get_value() -> PivotTableFieldOptionTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableFieldOptionTypeDef(TypedDict):
+    FieldId: str,
+    CustomLabel: NotRequired[str],
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## PivotTableFieldSubtotalOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableFieldSubtotalOptionsTypeDef
+
+def get_value() -> PivotTableFieldSubtotalOptionsTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableFieldSubtotalOptionsTypeDef(TypedDict):
+    FieldId: NotRequired[str],
+```
+
+## RowAlternateColorOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RowAlternateColorOptionsTypeDef
+
+def get_value() -> RowAlternateColorOptionsTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class RowAlternateColorOptionsTypeDef(TypedDict):
+    Status: NotRequired[WidgetStatusType],  # (1)
+    RowAlternateColors: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: WidgetStatusType](./literals.md#widgetstatustype) 
 ## ProjectOperationTypeDef
 
 ```python title="Usage Example"
@@ -3387,6 +4970,56 @@ class ProjectOperationTypeDef(TypedDict):
     ProjectedColumns: Sequence[str],
 ```
 
+## ReferenceLineCustomLabelConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineCustomLabelConfigurationTypeDef
+
+def get_value() -> ReferenceLineCustomLabelConfigurationTypeDef:
+    return {
+        "CustomLabel": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineCustomLabelConfigurationTypeDef(TypedDict):
+    CustomLabel: str,
+```
+
+## ReferenceLineStaticDataConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineStaticDataConfigurationTypeDef
+
+def get_value() -> ReferenceLineStaticDataConfigurationTypeDef:
+    return {
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineStaticDataConfigurationTypeDef(TypedDict):
+    Value: float,
+```
+
+## ReferenceLineStyleConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineStyleConfigurationTypeDef
+
+def get_value() -> ReferenceLineStyleConfigurationTypeDef:
+    return {
+        "Pattern": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineStyleConfigurationTypeDef(TypedDict):
+    Pattern: NotRequired[ReferenceLinePatternTypeType],  # (1)
+    Color: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ReferenceLinePatternTypeType](./literals.md#referencelinepatterntypetype) 
 ## RegisterUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3546,24 +5179,184 @@ class UploadSettingsTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FileFormatType](./literals.md#fileformattype) 
 2. See [:material-code-brackets: TextQualifierType](./literals.md#textqualifiertype) 
-## TemplateErrorTypeDef
+## SectionAfterPageBreakTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import TemplateErrorTypeDef
+from mypy_boto3_quicksight.type_defs import SectionAfterPageBreakTypeDef
 
-def get_value() -> TemplateErrorTypeDef:
+def get_value() -> SectionAfterPageBreakTypeDef:
     return {
-        "Type": ...,
+        "Status": ...,
     }
 ```
 
 ```python title="Definition"
-class TemplateErrorTypeDef(TypedDict):
-    Type: NotRequired[TemplateErrorTypeType],  # (1)
-    Message: NotRequired[str],
+class SectionAfterPageBreakTypeDef(TypedDict):
+    Status: NotRequired[SectionPageBreakStatusType],  # (1)
 ```
 
-1. See [:material-code-brackets: TemplateErrorTypeType](./literals.md#templateerrortypetype) 
+1. See [:material-code-brackets: SectionPageBreakStatusType](./literals.md#sectionpagebreakstatustype) 
+## SpacingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SpacingTypeDef
+
+def get_value() -> SpacingTypeDef:
+    return {
+        "Top": ...,
+    }
+```
+
+```python title="Definition"
+class SpacingTypeDef(TypedDict):
+    Top: NotRequired[str],
+    Bottom: NotRequired[str],
+    Left: NotRequired[str],
+    Right: NotRequired[str],
+```
+
+## SheetVisualScopingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetVisualScopingConfigurationTypeDef
+
+def get_value() -> SheetVisualScopingConfigurationTypeDef:
+    return {
+        "SheetId": ...,
+        "Scope": ...,
+    }
+```
+
+```python title="Definition"
+class SheetVisualScopingConfigurationTypeDef(TypedDict):
+    SheetId: str,
+    Scope: FilterVisualScopeType,  # (1)
+    VisualIds: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: FilterVisualScopeType](./literals.md#filtervisualscopetype) 
+## SheetTextBoxTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetTextBoxTypeDef
+
+def get_value() -> SheetTextBoxTypeDef:
+    return {
+        "SheetTextBoxId": ...,
+    }
+```
+
+```python title="Definition"
+class SheetTextBoxTypeDef(TypedDict):
+    SheetTextBoxId: str,
+    Content: NotRequired[str],
+```
+
+## SheetElementConfigurationOverridesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetElementConfigurationOverridesTypeDef
+
+def get_value() -> SheetElementConfigurationOverridesTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class SheetElementConfigurationOverridesTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## ShortFormatTextTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ShortFormatTextTypeDef
+
+def get_value() -> ShortFormatTextTypeDef:
+    return {
+        "PlainText": ...,
+    }
+```
+
+```python title="Definition"
+class ShortFormatTextTypeDef(TypedDict):
+    PlainText: NotRequired[str],
+    RichText: NotRequired[str],
+```
+
+## StringValueWhenUnsetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import StringValueWhenUnsetConfigurationTypeDef
+
+def get_value() -> StringValueWhenUnsetConfigurationTypeDef:
+    return {
+        "ValueWhenUnsetOption": ...,
+    }
+```
+
+```python title="Definition"
+class StringValueWhenUnsetConfigurationTypeDef(TypedDict):
+    ValueWhenUnsetOption: NotRequired[ValueWhenUnsetOptionType],  # (1)
+    CustomValue: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ValueWhenUnsetOptionType](./literals.md#valuewhenunsetoptiontype) 
+## TableCellImageSizingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableCellImageSizingConfigurationTypeDef
+
+def get_value() -> TableCellImageSizingConfigurationTypeDef:
+    return {
+        "TableCellImageScalingConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class TableCellImageSizingConfigurationTypeDef(TypedDict):
+    TableCellImageScalingConfiguration: NotRequired[TableCellImageScalingConfigurationType],  # (1)
+```
+
+1. See [:material-code-brackets: TableCellImageScalingConfigurationType](./literals.md#tablecellimagescalingconfigurationtype) 
+## TablePaginatedReportOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TablePaginatedReportOptionsTypeDef
+
+def get_value() -> TablePaginatedReportOptionsTypeDef:
+    return {
+        "VerticalOverflowVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class TablePaginatedReportOptionsTypeDef(TypedDict):
+    VerticalOverflowVisibility: NotRequired[VisibilityType],  # (1)
+    OverflowColumnHeaderVisibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## TableFieldCustomIconContentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldCustomIconContentTypeDef
+
+def get_value() -> TableFieldCustomIconContentTypeDef:
+    return {
+        "Icon": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldCustomIconContentTypeDef(TypedDict):
+    Icon: NotRequired[TableFieldIconSetTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: TableFieldIconSetTypeType](./literals.md#tablefieldiconsettypetype) 
 ## TemplateSourceTemplateTypeDef
 
 ```python title="Usage Example"
@@ -3580,6 +5373,23 @@ class TemplateSourceTemplateTypeDef(TypedDict):
     Arn: str,
 ```
 
+## TextControlPlaceholderOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TextControlPlaceholderOptionsTypeDef
+
+def get_value() -> TextControlPlaceholderOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class TextControlPlaceholderOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 ## UIColorPaletteTypeDef
 
 ```python title="Usage Example"
@@ -3880,6 +5690,48 @@ class UpdateUserRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: UserRoleType](./literals.md#userroletype) 
+## WaterfallChartOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WaterfallChartOptionsTypeDef
+
+def get_value() -> WaterfallChartOptionsTypeDef:
+    return {
+        "TotalBarLabel": ...,
+    }
+```
+
+```python title="Definition"
+class WaterfallChartOptionsTypeDef(TypedDict):
+    TotalBarLabel: NotRequired[str],
+```
+
+## WordCloudOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WordCloudOptionsTypeDef
+
+def get_value() -> WordCloudOptionsTypeDef:
+    return {
+        "WordOrientation": ...,
+    }
+```
+
+```python title="Definition"
+class WordCloudOptionsTypeDef(TypedDict):
+    WordOrientation: NotRequired[WordCloudWordOrientationType],  # (1)
+    WordScaling: NotRequired[WordCloudWordScalingType],  # (2)
+    CloudLayout: NotRequired[WordCloudCloudLayoutType],  # (3)
+    WordCasing: NotRequired[WordCloudWordCasingType],  # (4)
+    WordPadding: NotRequired[WordCloudWordPaddingType],  # (5)
+    MaximumStringLength: NotRequired[int],
+```
+
+1. See [:material-code-brackets: WordCloudWordOrientationType](./literals.md#wordcloudwordorientationtype) 
+2. See [:material-code-brackets: WordCloudWordScalingType](./literals.md#wordcloudwordscalingtype) 
+3. See [:material-code-brackets: WordCloudCloudLayoutType](./literals.md#wordcloudcloudlayouttype) 
+4. See [:material-code-brackets: WordCloudWordCasingType](./literals.md#wordcloudwordcasingtype) 
+5. See [:material-code-brackets: WordCloudWordPaddingType](./literals.md#wordcloudwordpaddingtype) 
 ## UpdateAccountCustomizationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3900,6 +5752,246 @@ class UpdateAccountCustomizationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef) 
+## AxisLabelReferenceOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisLabelReferenceOptionsTypeDef
+
+def get_value() -> AxisLabelReferenceOptionsTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class AxisLabelReferenceOptionsTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+## CascadingControlSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CascadingControlSourceTypeDef
+
+def get_value() -> CascadingControlSourceTypeDef:
+    return {
+        "SourceSheetControlId": ...,
+    }
+```
+
+```python title="Definition"
+class CascadingControlSourceTypeDef(TypedDict):
+    SourceSheetControlId: NotRequired[str],
+    ColumnToMatch: NotRequired[ColumnIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+## CategoryDrillDownFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CategoryDrillDownFilterTypeDef
+
+def get_value() -> CategoryDrillDownFilterTypeDef:
+    return {
+        "Column": ...,
+        "CategoryValues": ...,
+    }
+```
+
+```python title="Definition"
+class CategoryDrillDownFilterTypeDef(TypedDict):
+    Column: ColumnIdentifierTypeDef,  # (1)
+    CategoryValues: Sequence[str],
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+## ContributionAnalysisDefaultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ContributionAnalysisDefaultTypeDef
+
+def get_value() -> ContributionAnalysisDefaultTypeDef:
+    return {
+        "MeasureFieldId": ...,
+        "ContributorDimensions": ...,
+    }
+```
+
+```python title="Definition"
+class ContributionAnalysisDefaultTypeDef(TypedDict):
+    MeasureFieldId: str,
+    ContributorDimensions: Sequence[ColumnIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+## DynamicDefaultValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DynamicDefaultValueTypeDef
+
+def get_value() -> DynamicDefaultValueTypeDef:
+    return {
+        "DefaultValueColumn": ...,
+    }
+```
+
+```python title="Definition"
+class DynamicDefaultValueTypeDef(TypedDict):
+    DefaultValueColumn: ColumnIdentifierTypeDef,  # (1)
+    UserNameColumn: NotRequired[ColumnIdentifierTypeDef],  # (1)
+    GroupNameColumn: NotRequired[ColumnIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+3. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+## NumericEqualityDrillDownFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericEqualityDrillDownFilterTypeDef
+
+def get_value() -> NumericEqualityDrillDownFilterTypeDef:
+    return {
+        "Column": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class NumericEqualityDrillDownFilterTypeDef(TypedDict):
+    Column: ColumnIdentifierTypeDef,  # (1)
+    Value: float,
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+## ParameterSelectableValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterSelectableValuesTypeDef
+
+def get_value() -> ParameterSelectableValuesTypeDef:
+    return {
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterSelectableValuesTypeDef(TypedDict):
+    Values: NotRequired[Sequence[str]],
+    LinkToDataSetColumn: NotRequired[ColumnIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+## TimeEqualityFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TimeEqualityFilterTypeDef
+
+def get_value() -> TimeEqualityFilterTypeDef:
+    return {
+        "FilterId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class TimeEqualityFilterTypeDef(TypedDict):
+    FilterId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    Value: NotRequired[Union[datetime, str]],
+    ParameterName: NotRequired[str],
+    TimeGranularity: NotRequired[TimeGranularityType],  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+## TimeRangeDrillDownFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TimeRangeDrillDownFilterTypeDef
+
+def get_value() -> TimeRangeDrillDownFilterTypeDef:
+    return {
+        "Column": ...,
+        "RangeMinimum": ...,
+        "RangeMaximum": ...,
+        "TimeGranularity": ...,
+    }
+```
+
+```python title="Definition"
+class TimeRangeDrillDownFilterTypeDef(TypedDict):
+    Column: ColumnIdentifierTypeDef,  # (1)
+    RangeMinimum: Union[datetime, str],
+    RangeMaximum: Union[datetime, str],
+    TimeGranularity: TimeGranularityType,  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+## AnalysisErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnalysisErrorTypeDef
+
+def get_value() -> AnalysisErrorTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AnalysisErrorTypeDef(TypedDict):
+    Type: NotRequired[AnalysisErrorTypeType],  # (1)
+    Message: NotRequired[str],
+    ViolatedEntities: NotRequired[List[EntityTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: AnalysisErrorTypeType](./literals.md#analysiserrortypetype) 
+2. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+## DashboardErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardErrorTypeDef
+
+def get_value() -> DashboardErrorTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardErrorTypeDef(TypedDict):
+    Type: NotRequired[DashboardErrorTypeType],  # (1)
+    Message: NotRequired[str],
+    ViolatedEntities: NotRequired[List[EntityTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: DashboardErrorTypeType](./literals.md#dashboarderrortypetype) 
+2. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+## TemplateErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateErrorTypeDef
+
+def get_value() -> TemplateErrorTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateErrorTypeDef(TypedDict):
+    Type: NotRequired[TemplateErrorTypeType],  # (1)
+    Message: NotRequired[str],
+    ViolatedEntities: NotRequired[List[EntityTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: TemplateErrorTypeType](./literals.md#templateerrortypetype) 
+2. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
 ## SearchAnalysesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3978,34 +6070,6 @@ class TemplateSourceAnalysisTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef) 
-## AnalysisTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import AnalysisTypeDef
-
-def get_value() -> AnalysisTypeDef:
-    return {
-        "AnalysisId": ...,
-    }
-```
-
-```python title="Definition"
-class AnalysisTypeDef(TypedDict):
-    AnalysisId: NotRequired[str],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    Status: NotRequired[ResourceStatusType],  # (1)
-    Errors: NotRequired[List[AnalysisErrorTypeDef]],  # (2)
-    DataSetArns: NotRequired[List[str]],
-    ThemeArn: NotRequired[str],
-    CreatedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
-    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-2. See [:material-code-braces: AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef) 
-3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
 ## AnonymousUserDashboardVisualEmbeddingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -4040,6 +6104,83 @@ class RegisteredUserDashboardVisualEmbeddingConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DashboardVisualIdTypeDef](./type_defs.md#dashboardvisualidtypedef) 
+## ArcAxisConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ArcAxisConfigurationTypeDef
+
+def get_value() -> ArcAxisConfigurationTypeDef:
+    return {
+        "Range": ...,
+    }
+```
+
+```python title="Definition"
+class ArcAxisConfigurationTypeDef(TypedDict):
+    Range: NotRequired[ArcAxisDisplayRangeTypeDef],  # (1)
+    ReserveRange: NotRequired[int],
+```
+
+1. See [:material-code-braces: ArcAxisDisplayRangeTypeDef](./type_defs.md#arcaxisdisplayrangetypedef) 
+## AxisDisplayRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisDisplayRangeTypeDef
+
+def get_value() -> AxisDisplayRangeTypeDef:
+    return {
+        "MinMax": ...,
+    }
+```
+
+```python title="Definition"
+class AxisDisplayRangeTypeDef(TypedDict):
+    MinMax: NotRequired[AxisDisplayMinMaxRangeTypeDef],  # (1)
+    DataDriven: NotRequired[Mapping[str, Any]],
+```
+
+1. See [:material-code-braces: AxisDisplayMinMaxRangeTypeDef](./type_defs.md#axisdisplayminmaxrangetypedef) 
+## AxisScaleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisScaleTypeDef
+
+def get_value() -> AxisScaleTypeDef:
+    return {
+        "Linear": ...,
+    }
+```
+
+```python title="Definition"
+class AxisScaleTypeDef(TypedDict):
+    Linear: NotRequired[AxisLinearScaleTypeDef],  # (1)
+    Logarithmic: NotRequired[AxisLogarithmicScaleTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AxisLinearScaleTypeDef](./type_defs.md#axislinearscaletypedef) 
+2. See [:material-code-braces: AxisLogarithmicScaleTypeDef](./type_defs.md#axislogarithmicscaletypedef) 
+## HistogramBinOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HistogramBinOptionsTypeDef
+
+def get_value() -> HistogramBinOptionsTypeDef:
+    return {
+        "SelectedBinType": ...,
+    }
+```
+
+```python title="Definition"
+class HistogramBinOptionsTypeDef(TypedDict):
+    SelectedBinType: NotRequired[HistogramBinTypeType],  # (1)
+    BinCount: NotRequired[BinCountOptionsTypeDef],  # (2)
+    BinWidth: NotRequired[BinWidthOptionsTypeDef],  # (3)
+    StartValue: NotRequired[float],
+```
+
+1. See [:material-code-brackets: HistogramBinTypeType](./literals.md#histogrambintypetype) 
+2. See [:material-code-braces: BinCountOptionsTypeDef](./type_defs.md#bincountoptionstypedef) 
+3. See [:material-code-braces: BinWidthOptionsTypeDef](./type_defs.md#binwidthoptionstypedef) 
 ## TileStyleTypeDef
 
 ```python title="Usage Example"
@@ -4057,6 +6198,27 @@ class TileStyleTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BorderStyleTypeDef](./type_defs.md#borderstyletypedef) 
+## BoxPlotOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BoxPlotOptionsTypeDef
+
+def get_value() -> BoxPlotOptionsTypeDef:
+    return {
+        "StyleOptions": ...,
+    }
+```
+
+```python title="Definition"
+class BoxPlotOptionsTypeDef(TypedDict):
+    StyleOptions: NotRequired[BoxPlotStyleOptionsTypeDef],  # (1)
+    OutlierVisibility: NotRequired[VisibilityType],  # (2)
+    AllDataPointsVisibility: NotRequired[VisibilityType],  # (2)
+```
+
+1. See [:material-code-braces: BoxPlotStyleOptionsTypeDef](./type_defs.md#boxplotstyleoptionstypedef) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 ## CreateColumnsOperationTypeDef
 
 ```python title="Usage Example"
@@ -5590,6 +7752,66 @@ class UpdateThemeResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CategoryFilterConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CategoryFilterConfigurationTypeDef
+
+def get_value() -> CategoryFilterConfigurationTypeDef:
+    return {
+        "FilterListConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class CategoryFilterConfigurationTypeDef(TypedDict):
+    FilterListConfiguration: NotRequired[FilterListConfigurationTypeDef],  # (1)
+    CustomFilterListConfiguration: NotRequired[CustomFilterListConfigurationTypeDef],  # (2)
+    CustomFilterConfiguration: NotRequired[CustomFilterConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterListConfigurationTypeDef](./type_defs.md#filterlistconfigurationtypedef) 
+2. See [:material-code-braces: CustomFilterListConfigurationTypeDef](./type_defs.md#customfilterlistconfigurationtypedef) 
+3. See [:material-code-braces: CustomFilterConfigurationTypeDef](./type_defs.md#customfilterconfigurationtypedef) 
+## ClusterMarkerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ClusterMarkerTypeDef
+
+def get_value() -> ClusterMarkerTypeDef:
+    return {
+        "SimpleClusterMarker": ...,
+    }
+```
+
+```python title="Definition"
+class ClusterMarkerTypeDef(TypedDict):
+    SimpleClusterMarker: NotRequired[SimpleClusterMarkerTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SimpleClusterMarkerTypeDef](./type_defs.md#simpleclustermarkertypedef) 
+## ColorScaleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColorScaleTypeDef
+
+def get_value() -> ColorScaleTypeDef:
+    return {
+        "Colors": ...,
+        "ColorFillType": ...,
+    }
+```
+
+```python title="Definition"
+class ColorScaleTypeDef(TypedDict):
+    Colors: Sequence[DataColorTypeDef],  # (1)
+    ColorFillType: ColorFillTypeType,  # (2)
+    NullValueColor: NotRequired[DataColorTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DataColorTypeDef](./type_defs.md#datacolortypedef) 
+2. See [:material-code-brackets: ColorFillTypeType](./literals.md#colorfilltypetype) 
+3. See [:material-code-braces: DataColorTypeDef](./type_defs.md#datacolortypedef) 
 ## ColumnTagTypeDef
 
 ```python title="Usage Example"
@@ -5623,7 +7845,7 @@ def get_value() -> ColumnGroupSchemaTypeDef:
 ```python title="Definition"
 class ColumnGroupSchemaTypeDef(TypedDict):
     Name: NotRequired[str],
-    ColumnGroupColumnSchemaList: NotRequired[List[ColumnGroupColumnSchemaTypeDef]],  # (1)
+    ColumnGroupColumnSchemaList: NotRequired[Sequence[ColumnGroupColumnSchemaTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: ColumnGroupColumnSchemaTypeDef](./type_defs.md#columngroupcolumnschematypedef) 
@@ -5657,10 +7879,32 @@ def get_value() -> DataSetSchemaTypeDef:
 
 ```python title="Definition"
 class DataSetSchemaTypeDef(TypedDict):
-    ColumnSchemaList: NotRequired[List[ColumnSchemaTypeDef]],  # (1)
+    ColumnSchemaList: NotRequired[Sequence[ColumnSchemaTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: ColumnSchemaTypeDef](./type_defs.md#columnschematypedef) 
+## ConditionalFormattingCustomIconConditionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingCustomIconConditionTypeDef
+
+def get_value() -> ConditionalFormattingCustomIconConditionTypeDef:
+    return {
+        "Expression": ...,
+        "IconOptions": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingCustomIconConditionTypeDef(TypedDict):
+    Expression: str,
+    IconOptions: ConditionalFormattingCustomIconOptionsTypeDef,  # (1)
+    Color: NotRequired[str],
+    DisplayConfiguration: NotRequired[ConditionalFormattingIconDisplayConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConditionalFormattingCustomIconOptionsTypeDef](./type_defs.md#conditionalformattingcustomiconoptionstypedef) 
+2. See [:material-code-braces: ConditionalFormattingIconDisplayConfigurationTypeDef](./type_defs.md#conditionalformattingicondisplayconfigurationtypedef) 
 ## CreateAccountCustomizationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6752,6 +8996,41 @@ class UpdateThemeAliasResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ThemeAliasTypeDef](./type_defs.md#themealiastypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CustomActionNavigationOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomActionNavigationOperationTypeDef
+
+def get_value() -> CustomActionNavigationOperationTypeDef:
+    return {
+        "LocalNavigationConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class CustomActionNavigationOperationTypeDef(TypedDict):
+    LocalNavigationConfiguration: NotRequired[LocalNavigationConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LocalNavigationConfigurationTypeDef](./type_defs.md#localnavigationconfigurationtypedef) 
+## CustomValuesConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomValuesConfigurationTypeDef
+
+def get_value() -> CustomValuesConfigurationTypeDef:
+    return {
+        "CustomValues": ...,
+    }
+```
+
+```python title="Definition"
+class CustomValuesConfigurationTypeDef(TypedDict):
+    CustomValues: CustomParameterValuesTypeDef,  # (1)
+    IncludeNullValue: NotRequired[bool],
+```
+
+1. See [:material-code-braces: CustomParameterValuesTypeDef](./type_defs.md#customparametervaluestypedef) 
 ## CustomSqlTypeDef
 
 ```python title="Usage Example"
@@ -6797,55 +9076,6 @@ class RelationalTableTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
-## DashboardVersionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardVersionTypeDef
-
-def get_value() -> DashboardVersionTypeDef:
-    return {
-        "CreatedTime": ...,
-    }
-```
-
-```python title="Definition"
-class DashboardVersionTypeDef(TypedDict):
-    CreatedTime: NotRequired[datetime],
-    Errors: NotRequired[List[DashboardErrorTypeDef]],  # (1)
-    VersionNumber: NotRequired[int],
-    Status: NotRequired[ResourceStatusType],  # (2)
-    Arn: NotRequired[str],
-    SourceEntityArn: NotRequired[str],
-    DataSetArns: NotRequired[List[str]],
-    Description: NotRequired[str],
-    ThemeArn: NotRequired[str],
-    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
-```
-
-1. See [:material-code-braces: DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef) 
-2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
-3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
-## DashboardPublishOptionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardPublishOptionsTypeDef
-
-def get_value() -> DashboardPublishOptionsTypeDef:
-    return {
-        "AdHocFilteringOption": ...,
-    }
-```
-
-```python title="Definition"
-class DashboardPublishOptionsTypeDef(TypedDict):
-    AdHocFilteringOption: NotRequired[AdHocFilteringOptionTypeDef],  # (1)
-    ExportToCSVOption: NotRequired[ExportToCSVOptionTypeDef],  # (2)
-    SheetControlsOption: NotRequired[SheetControlsOptionTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: AdHocFilteringOptionTypeDef](./type_defs.md#adhocfilteringoptiontypedef) 
-2. See [:material-code-braces: ExportToCSVOptionTypeDef](./type_defs.md#exporttocsvoptiontypedef) 
-3. See [:material-code-braces: SheetControlsOptionTypeDef](./type_defs.md#sheetcontrolsoptiontypedef) 
 ## SearchDashboardsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6945,6 +9175,107 @@ class ListDashboardVersionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DashboardVersionSummaryTypeDef](./type_defs.md#dashboardversionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DashboardVisualPublishOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardVisualPublishOptionsTypeDef
+
+def get_value() -> DashboardVisualPublishOptionsTypeDef:
+    return {
+        "ExportHiddenFieldsOption": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardVisualPublishOptionsTypeDef(TypedDict):
+    ExportHiddenFieldsOption: NotRequired[ExportHiddenFieldsOptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ExportHiddenFieldsOptionTypeDef](./type_defs.md#exporthiddenfieldsoptiontypedef) 
+## DataLabelTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataLabelTypeTypeDef
+
+def get_value() -> DataLabelTypeTypeDef:
+    return {
+        "FieldLabelType": ...,
+    }
+```
+
+```python title="Definition"
+class DataLabelTypeTypeDef(TypedDict):
+    FieldLabelType: NotRequired[FieldLabelTypeTypeDef],  # (1)
+    DataPathLabelType: NotRequired[DataPathLabelTypeTypeDef],  # (2)
+    RangeEndsLabelType: NotRequired[RangeEndsLabelTypeTypeDef],  # (3)
+    MinimumLabelType: NotRequired[MinimumLabelTypeTypeDef],  # (4)
+    MaximumLabelType: NotRequired[MaximumLabelTypeTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: FieldLabelTypeTypeDef](./type_defs.md#fieldlabeltypetypedef) 
+2. See [:material-code-braces: DataPathLabelTypeTypeDef](./type_defs.md#datapathlabeltypetypedef) 
+3. See [:material-code-braces: RangeEndsLabelTypeTypeDef](./type_defs.md#rangeendslabeltypetypedef) 
+4. See [:material-code-braces: MinimumLabelTypeTypeDef](./type_defs.md#minimumlabeltypetypedef) 
+5. See [:material-code-braces: MaximumLabelTypeTypeDef](./type_defs.md#maximumlabeltypetypedef) 
+## DataPathColorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataPathColorTypeDef
+
+def get_value() -> DataPathColorTypeDef:
+    return {
+        "Element": ...,
+        "Color": ...,
+    }
+```
+
+```python title="Definition"
+class DataPathColorTypeDef(TypedDict):
+    Element: DataPathValueTypeDef,  # (1)
+    Color: str,
+    TimeGranularity: NotRequired[TimeGranularityType],  # (2)
+```
+
+1. See [:material-code-braces: DataPathValueTypeDef](./type_defs.md#datapathvaluetypedef) 
+2. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+## DataPathSortTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataPathSortTypeDef
+
+def get_value() -> DataPathSortTypeDef:
+    return {
+        "Direction": ...,
+        "SortPaths": ...,
+    }
+```
+
+```python title="Definition"
+class DataPathSortTypeDef(TypedDict):
+    Direction: SortDirectionType,  # (1)
+    SortPaths: Sequence[DataPathValueTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SortDirectionType](./literals.md#sortdirectiontype) 
+2. See [:material-code-braces: DataPathValueTypeDef](./type_defs.md#datapathvaluetypedef) 
+## PivotTableDataPathOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableDataPathOptionTypeDef
+
+def get_value() -> PivotTableDataPathOptionTypeDef:
+    return {
+        "DataPathList": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableDataPathOptionTypeDef(TypedDict):
+    DataPathList: Sequence[DataPathValueTypeDef],  # (1)
+    Width: NotRequired[str],
+```
+
+1. See [:material-code-braces: DataPathValueTypeDef](./type_defs.md#datapathvaluetypedef) 
 ## SearchDataSetsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7013,6 +9344,25 @@ class SearchDataSourcesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataSourceSummaryTypeDef](./type_defs.md#datasourcesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TimeRangeFilterValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TimeRangeFilterValueTypeDef
+
+def get_value() -> TimeRangeFilterValueTypeDef:
+    return {
+        "StaticValue": ...,
+    }
+```
+
+```python title="Definition"
+class TimeRangeFilterValueTypeDef(TypedDict):
+    StaticValue: NotRequired[Union[datetime, str]],
+    RollingDate: NotRequired[RollingDateConfigurationTypeDef],  # (1)
+    Parameter: NotRequired[str],
+```
+
+1. See [:material-code-braces: RollingDateConfigurationTypeDef](./type_defs.md#rollingdateconfigurationtypedef) 
 ## DescribeFolderResponseTypeDef
 
 ```python title="Usage Example"
@@ -7161,6 +9511,79 @@ class UpdateUserResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DonutOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DonutOptionsTypeDef
+
+def get_value() -> DonutOptionsTypeDef:
+    return {
+        "ArcOptions": ...,
+    }
+```
+
+```python title="Definition"
+class DonutOptionsTypeDef(TypedDict):
+    ArcOptions: NotRequired[ArcOptionsTypeDef],  # (1)
+    DonutCenterOptions: NotRequired[DonutCenterOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ArcOptionsTypeDef](./type_defs.md#arcoptionstypedef) 
+2. See [:material-code-braces: DonutCenterOptionsTypeDef](./type_defs.md#donutcenteroptionstypedef) 
+## RelativeDatesFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RelativeDatesFilterTypeDef
+
+def get_value() -> RelativeDatesFilterTypeDef:
+    return {
+        "FilterId": ...,
+        "Column": ...,
+        "AnchorDateConfiguration": ...,
+        "TimeGranularity": ...,
+        "RelativeDateType": ...,
+        "NullOption": ...,
+    }
+```
+
+```python title="Definition"
+class RelativeDatesFilterTypeDef(TypedDict):
+    FilterId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    AnchorDateConfiguration: AnchorDateConfigurationTypeDef,  # (2)
+    TimeGranularity: TimeGranularityType,  # (3)
+    RelativeDateType: RelativeDateTypeType,  # (5)
+    NullOption: FilterNullOptionType,  # (6)
+    MinimumGranularity: NotRequired[TimeGranularityType],  # (3)
+    RelativeDateValue: NotRequired[int],
+    ParameterName: NotRequired[str],
+    ExcludePeriodConfiguration: NotRequired[ExcludePeriodConfigurationTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: AnchorDateConfigurationTypeDef](./type_defs.md#anchordateconfigurationtypedef) 
+3. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+4. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+5. See [:material-code-brackets: RelativeDateTypeType](./literals.md#relativedatetypetype) 
+6. See [:material-code-brackets: FilterNullOptionType](./literals.md#filternulloptiontype) 
+7. See [:material-code-braces: ExcludePeriodConfigurationTypeDef](./type_defs.md#excludeperiodconfigurationtypedef) 
+## FilterOperationTargetVisualsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterOperationTargetVisualsConfigurationTypeDef
+
+def get_value() -> FilterOperationTargetVisualsConfigurationTypeDef:
+    return {
+        "SameSheetTargetVisualConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class FilterOperationTargetVisualsConfigurationTypeDef(TypedDict):
+    SameSheetTargetVisualConfiguration: NotRequired[SameSheetTargetVisualConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SameSheetTargetVisualConfigurationTypeDef](./type_defs.md#samesheettargetvisualconfigurationtypedef) 
 ## SearchFoldersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7234,6 +9657,163 @@ class SearchFoldersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## FontConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FontConfigurationTypeDef
+
+def get_value() -> FontConfigurationTypeDef:
+    return {
+        "FontSize": ...,
+    }
+```
+
+```python title="Definition"
+class FontConfigurationTypeDef(TypedDict):
+    FontSize: NotRequired[FontSizeTypeDef],  # (1)
+    FontDecoration: NotRequired[FontDecorationType],  # (2)
+    FontColor: NotRequired[str],
+    FontWeight: NotRequired[FontWeightTypeDef],  # (3)
+    FontStyle: NotRequired[FontStyleType],  # (4)
+```
+
+1. See [:material-code-braces: FontSizeTypeDef](./type_defs.md#fontsizetypedef) 
+2. See [:material-code-brackets: FontDecorationType](./literals.md#fontdecorationtype) 
+3. See [:material-code-braces: FontWeightTypeDef](./type_defs.md#fontweighttypedef) 
+4. See [:material-code-brackets: FontStyleType](./literals.md#fontstyletype) 
+## TypographyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TypographyTypeDef
+
+def get_value() -> TypographyTypeDef:
+    return {
+        "FontFamilies": ...,
+    }
+```
+
+```python title="Definition"
+class TypographyTypeDef(TypedDict):
+    FontFamilies: NotRequired[Sequence[FontTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FontTypeDef](./type_defs.md#fonttypedef) 
+## ForecastScenarioTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ForecastScenarioTypeDef
+
+def get_value() -> ForecastScenarioTypeDef:
+    return {
+        "WhatIfPointScenario": ...,
+    }
+```
+
+```python title="Definition"
+class ForecastScenarioTypeDef(TypedDict):
+    WhatIfPointScenario: NotRequired[WhatIfPointScenarioTypeDef],  # (1)
+    WhatIfRangeScenario: NotRequired[WhatIfRangeScenarioTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: WhatIfPointScenarioTypeDef](./type_defs.md#whatifpointscenariotypedef) 
+2. See [:material-code-braces: WhatIfRangeScenarioTypeDef](./type_defs.md#whatifrangescenariotypedef) 
+## FreeFormLayoutCanvasSizeOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FreeFormLayoutCanvasSizeOptionsTypeDef
+
+def get_value() -> FreeFormLayoutCanvasSizeOptionsTypeDef:
+    return {
+        "ScreenCanvasSizeOptions": ...,
+    }
+```
+
+```python title="Definition"
+class FreeFormLayoutCanvasSizeOptionsTypeDef(TypedDict):
+    ScreenCanvasSizeOptions: NotRequired[FreeFormLayoutScreenCanvasSizeOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FreeFormLayoutScreenCanvasSizeOptionsTypeDef](./type_defs.md#freeformlayoutscreencanvassizeoptionstypedef) 
+## GeospatialWindowOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialWindowOptionsTypeDef
+
+def get_value() -> GeospatialWindowOptionsTypeDef:
+    return {
+        "Bounds": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialWindowOptionsTypeDef(TypedDict):
+    Bounds: NotRequired[GeospatialCoordinateBoundsTypeDef],  # (1)
+    MapZoomMode: NotRequired[MapZoomModeType],  # (2)
+```
+
+1. See [:material-code-braces: GeospatialCoordinateBoundsTypeDef](./type_defs.md#geospatialcoordinateboundstypedef) 
+2. See [:material-code-brackets: MapZoomModeType](./literals.md#mapzoommodetype) 
+## TableSideBorderOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableSideBorderOptionsTypeDef
+
+def get_value() -> TableSideBorderOptionsTypeDef:
+    return {
+        "InnerVertical": ...,
+    }
+```
+
+```python title="Definition"
+class TableSideBorderOptionsTypeDef(TypedDict):
+    InnerVertical: NotRequired[TableBorderOptionsTypeDef],  # (1)
+    InnerHorizontal: NotRequired[TableBorderOptionsTypeDef],  # (1)
+    Left: NotRequired[TableBorderOptionsTypeDef],  # (1)
+    Right: NotRequired[TableBorderOptionsTypeDef],  # (1)
+    Top: NotRequired[TableBorderOptionsTypeDef],  # (1)
+    Bottom: NotRequired[TableBorderOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TableBorderOptionsTypeDef](./type_defs.md#tableborderoptionstypedef) 
+2. See [:material-code-braces: TableBorderOptionsTypeDef](./type_defs.md#tableborderoptionstypedef) 
+3. See [:material-code-braces: TableBorderOptionsTypeDef](./type_defs.md#tableborderoptionstypedef) 
+4. See [:material-code-braces: TableBorderOptionsTypeDef](./type_defs.md#tableborderoptionstypedef) 
+5. See [:material-code-braces: TableBorderOptionsTypeDef](./type_defs.md#tableborderoptionstypedef) 
+6. See [:material-code-braces: TableBorderOptionsTypeDef](./type_defs.md#tableborderoptionstypedef) 
+## GradientColorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GradientColorTypeDef
+
+def get_value() -> GradientColorTypeDef:
+    return {
+        "Stops": ...,
+    }
+```
+
+```python title="Definition"
+class GradientColorTypeDef(TypedDict):
+    Stops: NotRequired[Sequence[GradientStopTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: GradientStopTypeDef](./type_defs.md#gradientstoptypedef) 
+## GridLayoutCanvasSizeOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GridLayoutCanvasSizeOptionsTypeDef
+
+def get_value() -> GridLayoutCanvasSizeOptionsTypeDef:
+    return {
+        "ScreenCanvasSizeOptions": ...,
+    }
+```
+
+```python title="Definition"
+class GridLayoutCanvasSizeOptionsTypeDef(TypedDict):
+    ScreenCanvasSizeOptions: NotRequired[GridLayoutScreenCanvasSizeOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GridLayoutScreenCanvasSizeOptionsTypeDef](./type_defs.md#gridlayoutscreencanvassizeoptionstypedef) 
 ## SearchGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7344,6 +9924,46 @@ class JoinInstructionTypeDef(TypedDict):
 1. See [:material-code-braces: JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef) 
 2. See [:material-code-braces: JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef) 
 3. See [:material-code-brackets: JoinTypeType](./literals.md#jointypetype) 
+## LineChartDefaultSeriesSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartDefaultSeriesSettingsTypeDef
+
+def get_value() -> LineChartDefaultSeriesSettingsTypeDef:
+    return {
+        "AxisBinding": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartDefaultSeriesSettingsTypeDef(TypedDict):
+    AxisBinding: NotRequired[AxisBindingType],  # (1)
+    LineStyleSettings: NotRequired[LineChartLineStyleSettingsTypeDef],  # (2)
+    MarkerStyleSettings: NotRequired[LineChartMarkerStyleSettingsTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: AxisBindingType](./literals.md#axisbindingtype) 
+2. See [:material-code-braces: LineChartLineStyleSettingsTypeDef](./type_defs.md#linechartlinestylesettingstypedef) 
+3. See [:material-code-braces: LineChartMarkerStyleSettingsTypeDef](./type_defs.md#linechartmarkerstylesettingstypedef) 
+## LineChartSeriesSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartSeriesSettingsTypeDef
+
+def get_value() -> LineChartSeriesSettingsTypeDef:
+    return {
+        "LineStyleSettings": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartSeriesSettingsTypeDef(TypedDict):
+    LineStyleSettings: NotRequired[LineChartLineStyleSettingsTypeDef],  # (1)
+    MarkerStyleSettings: NotRequired[LineChartMarkerStyleSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: LineChartLineStyleSettingsTypeDef](./type_defs.md#linechartlinestylesettingstypedef) 
+2. See [:material-code-braces: LineChartMarkerStyleSettingsTypeDef](./type_defs.md#linechartmarkerstylesettingstypedef) 
 ## ListAnalysesRequestListAnalysesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -7786,6 +10406,25 @@ class ListThemesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ThemeSummaryTypeDef](./type_defs.md#themesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VisualSubtitleLabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualSubtitleLabelOptionsTypeDef
+
+def get_value() -> VisualSubtitleLabelOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class VisualSubtitleLabelOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    FormatText: NotRequired[LongFormatTextTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: LongFormatTextTypeDef](./type_defs.md#longformattexttypedef) 
 ## S3ParametersTypeDef
 
 ```python title="Usage Example"
@@ -7846,6 +10485,44 @@ class NamespaceInfoV2TypeDef(TypedDict):
 1. See [:material-code-brackets: NamespaceStatusType](./literals.md#namespacestatustype) 
 2. See [:material-code-brackets: IdentityStoreType](./literals.md#identitystoretype) 
 3. See [:material-code-braces: NamespaceErrorTypeDef](./type_defs.md#namespaceerrortypedef) 
+## NumericSeparatorConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericSeparatorConfigurationTypeDef
+
+def get_value() -> NumericSeparatorConfigurationTypeDef:
+    return {
+        "DecimalSeparator": ...,
+    }
+```
+
+```python title="Definition"
+class NumericSeparatorConfigurationTypeDef(TypedDict):
+    DecimalSeparator: NotRequired[NumericSeparatorSymbolType],  # (1)
+    ThousandsSeparator: NotRequired[ThousandSeparatorOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: NumericSeparatorSymbolType](./literals.md#numericseparatorsymboltype) 
+2. See [:material-code-braces: ThousandSeparatorOptionsTypeDef](./type_defs.md#thousandseparatoroptionstypedef) 
+## NumericalAggregationFunctionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericalAggregationFunctionTypeDef
+
+def get_value() -> NumericalAggregationFunctionTypeDef:
+    return {
+        "SimpleNumericalAggregation": ...,
+    }
+```
+
+```python title="Definition"
+class NumericalAggregationFunctionTypeDef(TypedDict):
+    SimpleNumericalAggregation: NotRequired[SimpleNumericalAggregationFunctionType],  # (1)
+    PercentileAggregation: NotRequired[PercentileAggregationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SimpleNumericalAggregationFunctionType](./literals.md#simplenumericalaggregationfunctiontype) 
+2. See [:material-code-braces: PercentileAggregationTypeDef](./type_defs.md#percentileaggregationtypedef) 
 ## ParametersTypeDef
 
 ```python title="Usage Example"
@@ -7869,6 +10546,23 @@ class ParametersTypeDef(TypedDict):
 2. See [:material-code-braces: IntegerParameterTypeDef](./type_defs.md#integerparametertypedef) 
 3. See [:material-code-braces: DecimalParameterTypeDef](./type_defs.md#decimalparametertypedef) 
 4. See [:material-code-braces: DateTimeParameterTypeDef](./type_defs.md#datetimeparametertypedef) 
+## VisibleRangeOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisibleRangeOptionsTypeDef
+
+def get_value() -> VisibleRangeOptionsTypeDef:
+    return {
+        "PercentRange": ...,
+    }
+```
+
+```python title="Definition"
+class VisibleRangeOptionsTypeDef(TypedDict):
+    PercentRange: NotRequired[PercentVisibleRangeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PercentVisibleRangeTypeDef](./type_defs.md#percentvisiblerangetypedef) 
 ## RowLevelPermissionTagConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -7909,6 +10603,302 @@ class S3SourceTypeDef(TypedDict):
 
 1. See [:material-code-braces: UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef) 
 2. See [:material-code-braces: InputColumnTypeDef](./type_defs.md#inputcolumntypedef) 
+## SectionPageBreakConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SectionPageBreakConfigurationTypeDef
+
+def get_value() -> SectionPageBreakConfigurationTypeDef:
+    return {
+        "After": ...,
+    }
+```
+
+```python title="Definition"
+class SectionPageBreakConfigurationTypeDef(TypedDict):
+    After: NotRequired[SectionAfterPageBreakTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SectionAfterPageBreakTypeDef](./type_defs.md#sectionafterpagebreaktypedef) 
+## SectionBasedLayoutPaperCanvasSizeOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SectionBasedLayoutPaperCanvasSizeOptionsTypeDef
+
+def get_value() -> SectionBasedLayoutPaperCanvasSizeOptionsTypeDef:
+    return {
+        "PaperSize": ...,
+    }
+```
+
+```python title="Definition"
+class SectionBasedLayoutPaperCanvasSizeOptionsTypeDef(TypedDict):
+    PaperSize: NotRequired[PaperSizeType],  # (1)
+    PaperOrientation: NotRequired[PaperOrientationType],  # (2)
+    PaperMargin: NotRequired[SpacingTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: PaperSizeType](./literals.md#papersizetype) 
+2. See [:material-code-brackets: PaperOrientationType](./literals.md#paperorientationtype) 
+3. See [:material-code-braces: SpacingTypeDef](./type_defs.md#spacingtypedef) 
+## SectionStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SectionStyleTypeDef
+
+def get_value() -> SectionStyleTypeDef:
+    return {
+        "Height": ...,
+    }
+```
+
+```python title="Definition"
+class SectionStyleTypeDef(TypedDict):
+    Height: NotRequired[str],
+    Padding: NotRequired[SpacingTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SpacingTypeDef](./type_defs.md#spacingtypedef) 
+## SelectedSheetsFilterScopeConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SelectedSheetsFilterScopeConfigurationTypeDef
+
+def get_value() -> SelectedSheetsFilterScopeConfigurationTypeDef:
+    return {
+        "SheetVisualScopingConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class SelectedSheetsFilterScopeConfigurationTypeDef(TypedDict):
+    SheetVisualScopingConfigurations: NotRequired[Sequence[SheetVisualScopingConfigurationTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: SheetVisualScopingConfigurationTypeDef](./type_defs.md#sheetvisualscopingconfigurationtypedef) 
+## SheetElementRenderingRuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetElementRenderingRuleTypeDef
+
+def get_value() -> SheetElementRenderingRuleTypeDef:
+    return {
+        "Expression": ...,
+        "ConfigurationOverrides": ...,
+    }
+```
+
+```python title="Definition"
+class SheetElementRenderingRuleTypeDef(TypedDict):
+    Expression: str,
+    ConfigurationOverrides: SheetElementConfigurationOverridesTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: SheetElementConfigurationOverridesTypeDef](./type_defs.md#sheetelementconfigurationoverridestypedef) 
+## VisualTitleLabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualTitleLabelOptionsTypeDef
+
+def get_value() -> VisualTitleLabelOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class VisualTitleLabelOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    FormatText: NotRequired[ShortFormatTextTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: ShortFormatTextTypeDef](./type_defs.md#shortformattexttypedef) 
+## TableFieldImageConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldImageConfigurationTypeDef
+
+def get_value() -> TableFieldImageConfigurationTypeDef:
+    return {
+        "SizingOptions": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldImageConfigurationTypeDef(TypedDict):
+    SizingOptions: NotRequired[TableCellImageSizingConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TableCellImageSizingConfigurationTypeDef](./type_defs.md#tablecellimagesizingconfigurationtypedef) 
+## CascadingControlConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CascadingControlConfigurationTypeDef
+
+def get_value() -> CascadingControlConfigurationTypeDef:
+    return {
+        "SourceControls": ...,
+    }
+```
+
+```python title="Definition"
+class CascadingControlConfigurationTypeDef(TypedDict):
+    SourceControls: NotRequired[Sequence[CascadingControlSourceTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: CascadingControlSourceTypeDef](./type_defs.md#cascadingcontrolsourcetypedef) 
+## DateTimeDefaultValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateTimeDefaultValuesTypeDef
+
+def get_value() -> DateTimeDefaultValuesTypeDef:
+    return {
+        "DynamicValue": ...,
+    }
+```
+
+```python title="Definition"
+class DateTimeDefaultValuesTypeDef(TypedDict):
+    DynamicValue: NotRequired[DynamicDefaultValueTypeDef],  # (1)
+    StaticValues: NotRequired[Sequence[Union[datetime, str]]],
+    RollingDate: NotRequired[RollingDateConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DynamicDefaultValueTypeDef](./type_defs.md#dynamicdefaultvaluetypedef) 
+2. See [:material-code-braces: RollingDateConfigurationTypeDef](./type_defs.md#rollingdateconfigurationtypedef) 
+## DecimalDefaultValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DecimalDefaultValuesTypeDef
+
+def get_value() -> DecimalDefaultValuesTypeDef:
+    return {
+        "DynamicValue": ...,
+    }
+```
+
+```python title="Definition"
+class DecimalDefaultValuesTypeDef(TypedDict):
+    DynamicValue: NotRequired[DynamicDefaultValueTypeDef],  # (1)
+    StaticValues: NotRequired[Sequence[float]],
+```
+
+1. See [:material-code-braces: DynamicDefaultValueTypeDef](./type_defs.md#dynamicdefaultvaluetypedef) 
+## IntegerDefaultValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import IntegerDefaultValuesTypeDef
+
+def get_value() -> IntegerDefaultValuesTypeDef:
+    return {
+        "DynamicValue": ...,
+    }
+```
+
+```python title="Definition"
+class IntegerDefaultValuesTypeDef(TypedDict):
+    DynamicValue: NotRequired[DynamicDefaultValueTypeDef],  # (1)
+    StaticValues: NotRequired[Sequence[int]],
+```
+
+1. See [:material-code-braces: DynamicDefaultValueTypeDef](./type_defs.md#dynamicdefaultvaluetypedef) 
+## StringDefaultValuesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import StringDefaultValuesTypeDef
+
+def get_value() -> StringDefaultValuesTypeDef:
+    return {
+        "DynamicValue": ...,
+    }
+```
+
+```python title="Definition"
+class StringDefaultValuesTypeDef(TypedDict):
+    DynamicValue: NotRequired[DynamicDefaultValueTypeDef],  # (1)
+    StaticValues: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: DynamicDefaultValueTypeDef](./type_defs.md#dynamicdefaultvaluetypedef) 
+## DrillDownFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DrillDownFilterTypeDef
+
+def get_value() -> DrillDownFilterTypeDef:
+    return {
+        "NumericEqualityFilter": ...,
+    }
+```
+
+```python title="Definition"
+class DrillDownFilterTypeDef(TypedDict):
+    NumericEqualityFilter: NotRequired[NumericEqualityDrillDownFilterTypeDef],  # (1)
+    CategoryFilter: NotRequired[CategoryDrillDownFilterTypeDef],  # (2)
+    TimeRangeFilter: NotRequired[TimeRangeDrillDownFilterTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: NumericEqualityDrillDownFilterTypeDef](./type_defs.md#numericequalitydrilldownfiltertypedef) 
+2. See [:material-code-braces: CategoryDrillDownFilterTypeDef](./type_defs.md#categorydrilldownfiltertypedef) 
+3. See [:material-code-braces: TimeRangeDrillDownFilterTypeDef](./type_defs.md#timerangedrilldownfiltertypedef) 
+## AnalysisTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnalysisTypeDef
+
+def get_value() -> AnalysisTypeDef:
+    return {
+        "AnalysisId": ...,
+    }
+```
+
+```python title="Definition"
+class AnalysisTypeDef(TypedDict):
+    AnalysisId: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[ResourceStatusType],  # (1)
+    Errors: NotRequired[List[AnalysisErrorTypeDef]],  # (2)
+    DataSetArns: NotRequired[List[str]],
+    ThemeArn: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef) 
+3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
+## DashboardVersionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardVersionTypeDef
+
+def get_value() -> DashboardVersionTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardVersionTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    Errors: NotRequired[List[DashboardErrorTypeDef]],  # (1)
+    VersionNumber: NotRequired[int],
+    Status: NotRequired[ResourceStatusType],  # (2)
+    Arn: NotRequired[str],
+    SourceEntityArn: NotRequired[str],
+    DataSetArns: NotRequired[List[str]],
+    Description: NotRequired[str],
+    ThemeArn: NotRequired[str],
+    Sheets: NotRequired[List[SheetTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
 ## AnalysisSourceEntityTypeDef
 
 ```python title="Usage Example"
@@ -7962,30 +10952,6 @@ class TemplateSourceEntityTypeDef(TypedDict):
 
 1. See [:material-code-braces: TemplateSourceAnalysisTypeDef](./type_defs.md#templatesourceanalysistypedef) 
 2. See [:material-code-braces: TemplateSourceTemplateTypeDef](./type_defs.md#templatesourcetemplatetypedef) 
-## DescribeAnalysisResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisResponseTypeDef
-
-def get_value() -> DescribeAnalysisResponseTypeDef:
-    return {
-        "Analysis": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeAnalysisResponseTypeDef(TypedDict):
-    Analysis: AnalysisTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AnalysisTypeDef](./type_defs.md#analysistypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AnonymousUserEmbeddingExperienceConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -8030,6 +10996,63 @@ class RegisteredUserEmbeddingExperienceConfigurationTypeDef(TypedDict):
 2. See [:material-code-braces: RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef) 
 3. See [:material-code-braces: RegisteredUserQSearchBarEmbeddingConfigurationTypeDef](./type_defs.md#registereduserqsearchbarembeddingconfigurationtypedef) 
 4. See [:material-code-braces: RegisteredUserDashboardVisualEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardvisualembeddingconfigurationtypedef) 
+## NumericAxisOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericAxisOptionsTypeDef
+
+def get_value() -> NumericAxisOptionsTypeDef:
+    return {
+        "Scale": ...,
+    }
+```
+
+```python title="Definition"
+class NumericAxisOptionsTypeDef(TypedDict):
+    Scale: NotRequired[AxisScaleTypeDef],  # (1)
+    Range: NotRequired[AxisDisplayRangeTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AxisScaleTypeDef](./type_defs.md#axisscaletypedef) 
+2. See [:material-code-braces: AxisDisplayRangeTypeDef](./type_defs.md#axisdisplayrangetypedef) 
+## CategoryFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CategoryFilterTypeDef
+
+def get_value() -> CategoryFilterTypeDef:
+    return {
+        "FilterId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class CategoryFilterTypeDef(TypedDict):
+    FilterId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    Configuration: NotRequired[CategoryFilterConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: CategoryFilterConfigurationTypeDef](./type_defs.md#categoryfilterconfigurationtypedef) 
+## ClusterMarkerConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ClusterMarkerConfigurationTypeDef
+
+def get_value() -> ClusterMarkerConfigurationTypeDef:
+    return {
+        "ClusterMarker": ...,
+    }
+```
+
+```python title="Definition"
+class ClusterMarkerConfigurationTypeDef(TypedDict):
+    ClusterMarker: NotRequired[ClusterMarkerTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ClusterMarkerTypeDef](./type_defs.md#clustermarkertypedef) 
 ## TagColumnOperationTypeDef
 
 ```python title="Usage Example"
@@ -8064,11 +11087,30 @@ def get_value() -> DataSetConfigurationTypeDef:
 class DataSetConfigurationTypeDef(TypedDict):
     Placeholder: NotRequired[str],
     DataSetSchema: NotRequired[DataSetSchemaTypeDef],  # (1)
-    ColumnGroupSchemaList: NotRequired[List[ColumnGroupSchemaTypeDef]],  # (2)
+    ColumnGroupSchemaList: NotRequired[Sequence[ColumnGroupSchemaTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: DataSetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
 2. See [:material-code-braces: ColumnGroupSchemaTypeDef](./type_defs.md#columngroupschematypedef) 
+## ConditionalFormattingIconTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingIconTypeDef
+
+def get_value() -> ConditionalFormattingIconTypeDef:
+    return {
+        "IconSet": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingIconTypeDef(TypedDict):
+    IconSet: NotRequired[ConditionalFormattingIconSetTypeDef],  # (1)
+    CustomCondition: NotRequired[ConditionalFormattingCustomIconConditionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConditionalFormattingIconSetTypeDef](./type_defs.md#conditionalformattingiconsettypedef) 
+2. See [:material-code-braces: ConditionalFormattingCustomIconConditionTypeDef](./type_defs.md#conditionalformattingcustomiconconditiontypedef) 
 ## DescribeDashboardPermissionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -8183,29 +11225,388 @@ class SearchDataSetsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataSetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DashboardTypeDef
+## DestinationParameterValueConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DashboardTypeDef
+from mypy_boto3_quicksight.type_defs import DestinationParameterValueConfigurationTypeDef
 
-def get_value() -> DashboardTypeDef:
+def get_value() -> DestinationParameterValueConfigurationTypeDef:
     return {
-        "DashboardId": ...,
+        "CustomValuesConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
-class DashboardTypeDef(TypedDict):
-    DashboardId: NotRequired[str],
-    Arn: NotRequired[str],
-    Name: NotRequired[str],
-    Version: NotRequired[DashboardVersionTypeDef],  # (1)
-    CreatedTime: NotRequired[datetime],
-    LastPublishedTime: NotRequired[datetime],
-    LastUpdatedTime: NotRequired[datetime],
+class DestinationParameterValueConfigurationTypeDef(TypedDict):
+    CustomValuesConfiguration: NotRequired[CustomValuesConfigurationTypeDef],  # (1)
+    SelectAllValueOptions: NotRequired[SelectAllValueOptionsType],  # (2)
+    SourceParameterName: NotRequired[str],
+    SourceField: NotRequired[str],
 ```
 
-1. See [:material-code-braces: DashboardVersionTypeDef](./type_defs.md#dashboardversiontypedef) 
+1. See [:material-code-braces: CustomValuesConfigurationTypeDef](./type_defs.md#customvaluesconfigurationtypedef) 
+2. See [:material-code-brackets: SelectAllValueOptionsType](./literals.md#selectallvalueoptionstype) 
+## DashboardPublishOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardPublishOptionsTypeDef
+
+def get_value() -> DashboardPublishOptionsTypeDef:
+    return {
+        "AdHocFilteringOption": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardPublishOptionsTypeDef(TypedDict):
+    AdHocFilteringOption: NotRequired[AdHocFilteringOptionTypeDef],  # (1)
+    ExportToCSVOption: NotRequired[ExportToCSVOptionTypeDef],  # (2)
+    SheetControlsOption: NotRequired[SheetControlsOptionTypeDef],  # (3)
+    VisualPublishOptions: NotRequired[DashboardVisualPublishOptionsTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: AdHocFilteringOptionTypeDef](./type_defs.md#adhocfilteringoptiontypedef) 
+2. See [:material-code-braces: ExportToCSVOptionTypeDef](./type_defs.md#exporttocsvoptiontypedef) 
+3. See [:material-code-braces: SheetControlsOptionTypeDef](./type_defs.md#sheetcontrolsoptiontypedef) 
+4. See [:material-code-braces: DashboardVisualPublishOptionsTypeDef](./type_defs.md#dashboardvisualpublishoptionstypedef) 
+## VisualPaletteTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualPaletteTypeDef
+
+def get_value() -> VisualPaletteTypeDef:
+    return {
+        "ChartColor": ...,
+    }
+```
+
+```python title="Definition"
+class VisualPaletteTypeDef(TypedDict):
+    ChartColor: NotRequired[str],
+    ColorMap: NotRequired[Sequence[DataPathColorTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DataPathColorTypeDef](./type_defs.md#datapathcolortypedef) 
+## PivotTableFieldOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableFieldOptionsTypeDef
+
+def get_value() -> PivotTableFieldOptionsTypeDef:
+    return {
+        "SelectedFieldOptions": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableFieldOptionsTypeDef(TypedDict):
+    SelectedFieldOptions: NotRequired[Sequence[PivotTableFieldOptionTypeDef]],  # (1)
+    DataPathOptions: NotRequired[Sequence[PivotTableDataPathOptionTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: PivotTableFieldOptionTypeDef](./type_defs.md#pivottablefieldoptiontypedef) 
+2. See [:material-code-braces: PivotTableDataPathOptionTypeDef](./type_defs.md#pivottabledatapathoptiontypedef) 
+## TimeRangeFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TimeRangeFilterTypeDef
+
+def get_value() -> TimeRangeFilterTypeDef:
+    return {
+        "FilterId": ...,
+        "Column": ...,
+        "NullOption": ...,
+    }
+```
+
+```python title="Definition"
+class TimeRangeFilterTypeDef(TypedDict):
+    FilterId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    NullOption: FilterNullOptionType,  # (4)
+    IncludeMinimum: NotRequired[bool],
+    IncludeMaximum: NotRequired[bool],
+    RangeMinimumValue: NotRequired[TimeRangeFilterValueTypeDef],  # (2)
+    RangeMaximumValue: NotRequired[TimeRangeFilterValueTypeDef],  # (2)
+    ExcludePeriodConfiguration: NotRequired[ExcludePeriodConfigurationTypeDef],  # (5)
+    TimeGranularity: NotRequired[TimeGranularityType],  # (6)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: TimeRangeFilterValueTypeDef](./type_defs.md#timerangefiltervaluetypedef) 
+3. See [:material-code-braces: TimeRangeFilterValueTypeDef](./type_defs.md#timerangefiltervaluetypedef) 
+4. See [:material-code-brackets: FilterNullOptionType](./literals.md#filternulloptiontype) 
+5. See [:material-code-braces: ExcludePeriodConfigurationTypeDef](./type_defs.md#excludeperiodconfigurationtypedef) 
+6. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+## CustomActionFilterOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomActionFilterOperationTypeDef
+
+def get_value() -> CustomActionFilterOperationTypeDef:
+    return {
+        "SelectedFieldsConfiguration": ...,
+        "TargetVisualsConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class CustomActionFilterOperationTypeDef(TypedDict):
+    SelectedFieldsConfiguration: FilterOperationSelectedFieldsConfigurationTypeDef,  # (1)
+    TargetVisualsConfiguration: FilterOperationTargetVisualsConfigurationTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FilterOperationSelectedFieldsConfigurationTypeDef](./type_defs.md#filteroperationselectedfieldsconfigurationtypedef) 
+2. See [:material-code-braces: FilterOperationTargetVisualsConfigurationTypeDef](./type_defs.md#filteroperationtargetvisualsconfigurationtypedef) 
+## AxisLabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisLabelOptionsTypeDef
+
+def get_value() -> AxisLabelOptionsTypeDef:
+    return {
+        "FontConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class AxisLabelOptionsTypeDef(TypedDict):
+    FontConfiguration: NotRequired[FontConfigurationTypeDef],  # (1)
+    CustomLabel: NotRequired[str],
+    ApplyTo: NotRequired[AxisLabelReferenceOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+2. See [:material-code-braces: AxisLabelReferenceOptionsTypeDef](./type_defs.md#axislabelreferenceoptionstypedef) 
+## DataLabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataLabelOptionsTypeDef
+
+def get_value() -> DataLabelOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class DataLabelOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    CategoryLabelVisibility: NotRequired[VisibilityType],  # (1)
+    MeasureLabelVisibility: NotRequired[VisibilityType],  # (1)
+    DataLabelTypes: NotRequired[Sequence[DataLabelTypeTypeDef]],  # (4)
+    Position: NotRequired[DataLabelPositionType],  # (5)
+    LabelContent: NotRequired[DataLabelContentType],  # (6)
+    LabelFontConfiguration: NotRequired[FontConfigurationTypeDef],  # (7)
+    LabelColor: NotRequired[str],
+    Overlap: NotRequired[DataLabelOverlapType],  # (8)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+4. See [:material-code-braces: DataLabelTypeTypeDef](./type_defs.md#datalabeltypetypedef) 
+5. See [:material-code-brackets: DataLabelPositionType](./literals.md#datalabelpositiontype) 
+6. See [:material-code-brackets: DataLabelContentType](./literals.md#datalabelcontenttype) 
+7. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+8. See [:material-code-brackets: DataLabelOverlapType](./literals.md#datalabeloverlaptype) 
+## FunnelChartDataLabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FunnelChartDataLabelOptionsTypeDef
+
+def get_value() -> FunnelChartDataLabelOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class FunnelChartDataLabelOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    CategoryLabelVisibility: NotRequired[VisibilityType],  # (1)
+    MeasureLabelVisibility: NotRequired[VisibilityType],  # (1)
+    Position: NotRequired[DataLabelPositionType],  # (4)
+    LabelFontConfiguration: NotRequired[FontConfigurationTypeDef],  # (5)
+    LabelColor: NotRequired[str],
+    MeasureDataLabelStyle: NotRequired[FunnelChartMeasureDataLabelStyleType],  # (6)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+4. See [:material-code-brackets: DataLabelPositionType](./literals.md#datalabelpositiontype) 
+5. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+6. See [:material-code-brackets: FunnelChartMeasureDataLabelStyleType](./literals.md#funnelchartmeasuredatalabelstyletype) 
+## LabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LabelOptionsTypeDef
+
+def get_value() -> LabelOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class LabelOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    FontConfiguration: NotRequired[FontConfigurationTypeDef],  # (2)
+    CustomLabel: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+## PanelTitleOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PanelTitleOptionsTypeDef
+
+def get_value() -> PanelTitleOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class PanelTitleOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    FontConfiguration: NotRequired[FontConfigurationTypeDef],  # (2)
+    HorizontalTextAlignment: NotRequired[HorizontalTextAlignmentType],  # (3)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+3. See [:material-code-brackets: HorizontalTextAlignmentType](./literals.md#horizontaltextalignmenttype) 
+## TableFieldCustomTextContentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldCustomTextContentTypeDef
+
+def get_value() -> TableFieldCustomTextContentTypeDef:
+    return {
+        "FontConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldCustomTextContentTypeDef(TypedDict):
+    FontConfiguration: FontConfigurationTypeDef,  # (1)
+    Value: NotRequired[str],
+```
+
+1. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+## ForecastConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ForecastConfigurationTypeDef
+
+def get_value() -> ForecastConfigurationTypeDef:
+    return {
+        "ForecastProperties": ...,
+    }
+```
+
+```python title="Definition"
+class ForecastConfigurationTypeDef(TypedDict):
+    ForecastProperties: NotRequired[TimeBasedForecastPropertiesTypeDef],  # (1)
+    Scenario: NotRequired[ForecastScenarioTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TimeBasedForecastPropertiesTypeDef](./type_defs.md#timebasedforecastpropertiestypedef) 
+2. See [:material-code-braces: ForecastScenarioTypeDef](./type_defs.md#forecastscenariotypedef) 
+## DefaultFreeFormLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DefaultFreeFormLayoutConfigurationTypeDef
+
+def get_value() -> DefaultFreeFormLayoutConfigurationTypeDef:
+    return {
+        "CanvasSizeOptions": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultFreeFormLayoutConfigurationTypeDef(TypedDict):
+    CanvasSizeOptions: FreeFormLayoutCanvasSizeOptionsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: FreeFormLayoutCanvasSizeOptionsTypeDef](./type_defs.md#freeformlayoutcanvassizeoptionstypedef) 
+## GlobalTableBorderOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GlobalTableBorderOptionsTypeDef
+
+def get_value() -> GlobalTableBorderOptionsTypeDef:
+    return {
+        "UniformBorder": ...,
+    }
+```
+
+```python title="Definition"
+class GlobalTableBorderOptionsTypeDef(TypedDict):
+    UniformBorder: NotRequired[TableBorderOptionsTypeDef],  # (1)
+    SideSpecificBorder: NotRequired[TableSideBorderOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TableBorderOptionsTypeDef](./type_defs.md#tableborderoptionstypedef) 
+2. See [:material-code-braces: TableSideBorderOptionsTypeDef](./type_defs.md#tablesideborderoptionstypedef) 
+## ConditionalFormattingGradientColorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingGradientColorTypeDef
+
+def get_value() -> ConditionalFormattingGradientColorTypeDef:
+    return {
+        "Expression": ...,
+        "Color": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingGradientColorTypeDef(TypedDict):
+    Expression: str,
+    Color: GradientColorTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: GradientColorTypeDef](./type_defs.md#gradientcolortypedef) 
+## DefaultGridLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DefaultGridLayoutConfigurationTypeDef
+
+def get_value() -> DefaultGridLayoutConfigurationTypeDef:
+    return {
+        "CanvasSizeOptions": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultGridLayoutConfigurationTypeDef(TypedDict):
+    CanvasSizeOptions: GridLayoutCanvasSizeOptionsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: GridLayoutCanvasSizeOptionsTypeDef](./type_defs.md#gridlayoutcanvassizeoptionstypedef) 
+## GridLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GridLayoutConfigurationTypeDef
+
+def get_value() -> GridLayoutConfigurationTypeDef:
+    return {
+        "Elements": ...,
+    }
+```
+
+```python title="Definition"
+class GridLayoutConfigurationTypeDef(TypedDict):
+    Elements: Sequence[GridLayoutElementTypeDef],  # (1)
+    CanvasSizeOptions: NotRequired[GridLayoutCanvasSizeOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: GridLayoutElementTypeDef](./type_defs.md#gridlayoutelementtypedef) 
+2. See [:material-code-braces: GridLayoutCanvasSizeOptionsTypeDef](./type_defs.md#gridlayoutcanvassizeoptionstypedef) 
 ## DescribeIngestionResponseTypeDef
 
 ```python title="Usage Example"
@@ -8275,6 +11676,49 @@ class LogicalTableSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: JoinInstructionTypeDef](./type_defs.md#joininstructiontypedef) 
+## DataFieldSeriesItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataFieldSeriesItemTypeDef
+
+def get_value() -> DataFieldSeriesItemTypeDef:
+    return {
+        "FieldId": ...,
+        "AxisBinding": ...,
+    }
+```
+
+```python title="Definition"
+class DataFieldSeriesItemTypeDef(TypedDict):
+    FieldId: str,
+    AxisBinding: AxisBindingType,  # (1)
+    FieldValue: NotRequired[str],
+    Settings: NotRequired[LineChartSeriesSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AxisBindingType](./literals.md#axisbindingtype) 
+2. See [:material-code-braces: LineChartSeriesSettingsTypeDef](./type_defs.md#linechartseriessettingstypedef) 
+## FieldSeriesItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FieldSeriesItemTypeDef
+
+def get_value() -> FieldSeriesItemTypeDef:
+    return {
+        "FieldId": ...,
+        "AxisBinding": ...,
+    }
+```
+
+```python title="Definition"
+class FieldSeriesItemTypeDef(TypedDict):
+    FieldId: str,
+    AxisBinding: AxisBindingType,  # (1)
+    Settings: NotRequired[LineChartSeriesSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AxisBindingType](./literals.md#axisbindingtype) 
+2. See [:material-code-braces: LineChartSeriesSettingsTypeDef](./type_defs.md#linechartseriessettingstypedef) 
 ## DataSourceParametersTypeDef
 
 ```python title="Usage Example"
@@ -8405,6 +11849,126 @@ class ListNamespacesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: NamespaceInfoV2TypeDef](./type_defs.md#namespaceinfov2typedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CurrencyDisplayFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CurrencyDisplayFormatConfigurationTypeDef
+
+def get_value() -> CurrencyDisplayFormatConfigurationTypeDef:
+    return {
+        "Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class CurrencyDisplayFormatConfigurationTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Suffix: NotRequired[str],
+    SeparatorConfiguration: NotRequired[NumericSeparatorConfigurationTypeDef],  # (1)
+    Symbol: NotRequired[str],
+    DecimalPlacesConfiguration: NotRequired[DecimalPlacesConfigurationTypeDef],  # (2)
+    NumberScale: NotRequired[NumberScaleType],  # (3)
+    NegativeValueConfiguration: NotRequired[NegativeValueConfigurationTypeDef],  # (4)
+    NullValueFormatConfiguration: NotRequired[NullValueFormatConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: NumericSeparatorConfigurationTypeDef](./type_defs.md#numericseparatorconfigurationtypedef) 
+2. See [:material-code-braces: DecimalPlacesConfigurationTypeDef](./type_defs.md#decimalplacesconfigurationtypedef) 
+3. See [:material-code-brackets: NumberScaleType](./literals.md#numberscaletype) 
+4. See [:material-code-braces: NegativeValueConfigurationTypeDef](./type_defs.md#negativevalueconfigurationtypedef) 
+5. See [:material-code-braces: NullValueFormatConfigurationTypeDef](./type_defs.md#nullvalueformatconfigurationtypedef) 
+## NumberDisplayFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumberDisplayFormatConfigurationTypeDef
+
+def get_value() -> NumberDisplayFormatConfigurationTypeDef:
+    return {
+        "Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class NumberDisplayFormatConfigurationTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Suffix: NotRequired[str],
+    SeparatorConfiguration: NotRequired[NumericSeparatorConfigurationTypeDef],  # (1)
+    DecimalPlacesConfiguration: NotRequired[DecimalPlacesConfigurationTypeDef],  # (2)
+    NumberScale: NotRequired[NumberScaleType],  # (3)
+    NegativeValueConfiguration: NotRequired[NegativeValueConfigurationTypeDef],  # (4)
+    NullValueFormatConfiguration: NotRequired[NullValueFormatConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: NumericSeparatorConfigurationTypeDef](./type_defs.md#numericseparatorconfigurationtypedef) 
+2. See [:material-code-braces: DecimalPlacesConfigurationTypeDef](./type_defs.md#decimalplacesconfigurationtypedef) 
+3. See [:material-code-brackets: NumberScaleType](./literals.md#numberscaletype) 
+4. See [:material-code-braces: NegativeValueConfigurationTypeDef](./type_defs.md#negativevalueconfigurationtypedef) 
+5. See [:material-code-braces: NullValueFormatConfigurationTypeDef](./type_defs.md#nullvalueformatconfigurationtypedef) 
+## PercentageDisplayFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PercentageDisplayFormatConfigurationTypeDef
+
+def get_value() -> PercentageDisplayFormatConfigurationTypeDef:
+    return {
+        "Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class PercentageDisplayFormatConfigurationTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Suffix: NotRequired[str],
+    SeparatorConfiguration: NotRequired[NumericSeparatorConfigurationTypeDef],  # (1)
+    DecimalPlacesConfiguration: NotRequired[DecimalPlacesConfigurationTypeDef],  # (2)
+    NegativeValueConfiguration: NotRequired[NegativeValueConfigurationTypeDef],  # (3)
+    NullValueFormatConfiguration: NotRequired[NullValueFormatConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: NumericSeparatorConfigurationTypeDef](./type_defs.md#numericseparatorconfigurationtypedef) 
+2. See [:material-code-braces: DecimalPlacesConfigurationTypeDef](./type_defs.md#decimalplacesconfigurationtypedef) 
+3. See [:material-code-braces: NegativeValueConfigurationTypeDef](./type_defs.md#negativevalueconfigurationtypedef) 
+4. See [:material-code-braces: NullValueFormatConfigurationTypeDef](./type_defs.md#nullvalueformatconfigurationtypedef) 
+## AggregationFunctionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AggregationFunctionTypeDef
+
+def get_value() -> AggregationFunctionTypeDef:
+    return {
+        "NumericalAggregationFunction": ...,
+    }
+```
+
+```python title="Definition"
+class AggregationFunctionTypeDef(TypedDict):
+    NumericalAggregationFunction: NotRequired[NumericalAggregationFunctionTypeDef],  # (1)
+    CategoricalAggregationFunction: NotRequired[CategoricalAggregationFunctionType],  # (2)
+    DateAggregationFunction: NotRequired[DateAggregationFunctionType],  # (3)
+```
+
+1. See [:material-code-braces: NumericalAggregationFunctionTypeDef](./type_defs.md#numericalaggregationfunctiontypedef) 
+2. See [:material-code-brackets: CategoricalAggregationFunctionType](./literals.md#categoricalaggregationfunctiontype) 
+3. See [:material-code-brackets: DateAggregationFunctionType](./literals.md#dateaggregationfunctiontype) 
+## ScrollBarOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ScrollBarOptionsTypeDef
+
+def get_value() -> ScrollBarOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class ScrollBarOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    VisibleRange: NotRequired[VisibleRangeOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: VisibleRangeOptionsTypeDef](./type_defs.md#visiblerangeoptionstypedef) 
 ## PhysicalTableTypeDef
 
 ```python title="Usage Example"
@@ -8426,174 +11990,277 @@ class PhysicalTableTypeDef(TypedDict):
 1. See [:material-code-braces: RelationalTableTypeDef](./type_defs.md#relationaltabletypedef) 
 2. See [:material-code-braces: CustomSqlTypeDef](./type_defs.md#customsqltypedef) 
 3. See [:material-code-braces: S3SourceTypeDef](./type_defs.md#s3sourcetypedef) 
-## CreateAnalysisRequestRequestTypeDef
+## SectionBasedLayoutCanvasSizeOptionsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateAnalysisRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import SectionBasedLayoutCanvasSizeOptionsTypeDef
 
-def get_value() -> CreateAnalysisRequestRequestTypeDef:
+def get_value() -> SectionBasedLayoutCanvasSizeOptionsTypeDef:
     return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
+        "PaperCanvasSizeOptions": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateAnalysisRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-    Name: str,
-    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (3)
-    ThemeArn: NotRequired[str],
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+class SectionBasedLayoutCanvasSizeOptionsTypeDef(TypedDict):
+    PaperCanvasSizeOptions: NotRequired[SectionBasedLayoutPaperCanvasSizeOptionsTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## UpdateAnalysisRequestRequestTypeDef
+1. See [:material-code-braces: SectionBasedLayoutPaperCanvasSizeOptionsTypeDef](./type_defs.md#sectionbasedlayoutpapercanvassizeoptionstypedef) 
+## FilterScopeConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateAnalysisRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import FilterScopeConfigurationTypeDef
 
-def get_value() -> UpdateAnalysisRequestRequestTypeDef:
+def get_value() -> FilterScopeConfigurationTypeDef:
     return {
-        "AwsAccountId": ...,
-        "AnalysisId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
+        "SelectedSheets": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateAnalysisRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    AnalysisId: str,
-    Name: str,
-    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    ThemeArn: NotRequired[str],
+class FilterScopeConfigurationTypeDef(TypedDict):
+    SelectedSheets: NotRequired[SelectedSheetsFilterScopeConfigurationTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-## CreateDashboardRequestRequestTypeDef
+1. See [:material-code-braces: SelectedSheetsFilterScopeConfigurationTypeDef](./type_defs.md#selectedsheetsfilterscopeconfigurationtypedef) 
+## FreeFormLayoutElementTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateDashboardRequestRequestTypeDef
+from mypy_boto3_quicksight.type_defs import FreeFormLayoutElementTypeDef
 
-def get_value() -> CreateDashboardRequestRequestTypeDef:
+def get_value() -> FreeFormLayoutElementTypeDef:
     return {
-        "AwsAccountId": ...,
+        "ElementId": ...,
+        "ElementType": ...,
+        "XAxisLocation": ...,
+        "YAxisLocation": ...,
+        "Width": ...,
+        "Height": ...,
+    }
+```
+
+```python title="Definition"
+class FreeFormLayoutElementTypeDef(TypedDict):
+    ElementId: str,
+    ElementType: LayoutElementTypeType,  # (1)
+    XAxisLocation: str,
+    YAxisLocation: str,
+    Width: str,
+    Height: str,
+    Visibility: NotRequired[VisibilityType],  # (2)
+    RenderingRules: NotRequired[Sequence[SheetElementRenderingRuleTypeDef]],  # (3)
+    BorderStyle: NotRequired[FreeFormLayoutElementBorderStyleTypeDef],  # (4)
+    SelectedBorderStyle: NotRequired[FreeFormLayoutElementBorderStyleTypeDef],  # (4)
+    BackgroundStyle: NotRequired[FreeFormLayoutElementBackgroundStyleTypeDef],  # (6)
+    LoadingAnimation: NotRequired[LoadingAnimationTypeDef],  # (7)
+```
+
+1. See [:material-code-brackets: LayoutElementTypeType](./literals.md#layoutelementtypetype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-braces: SheetElementRenderingRuleTypeDef](./type_defs.md#sheetelementrenderingruletypedef) 
+4. See [:material-code-braces: FreeFormLayoutElementBorderStyleTypeDef](./type_defs.md#freeformlayoutelementborderstyletypedef) 
+5. See [:material-code-braces: FreeFormLayoutElementBorderStyleTypeDef](./type_defs.md#freeformlayoutelementborderstyletypedef) 
+6. See [:material-code-braces: FreeFormLayoutElementBackgroundStyleTypeDef](./type_defs.md#freeformlayoutelementbackgroundstyletypedef) 
+7. See [:material-code-braces: LoadingAnimationTypeDef](./type_defs.md#loadinganimationtypedef) 
+## DateTimeParameterDeclarationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateTimeParameterDeclarationTypeDef
+
+def get_value() -> DateTimeParameterDeclarationTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DateTimeParameterDeclarationTypeDef(TypedDict):
+    Name: str,
+    DefaultValues: NotRequired[DateTimeDefaultValuesTypeDef],  # (1)
+    TimeGranularity: NotRequired[TimeGranularityType],  # (2)
+    ValueWhenUnset: NotRequired[DateTimeValueWhenUnsetConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DateTimeDefaultValuesTypeDef](./type_defs.md#datetimedefaultvaluestypedef) 
+2. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+3. See [:material-code-braces: DateTimeValueWhenUnsetConfigurationTypeDef](./type_defs.md#datetimevaluewhenunsetconfigurationtypedef) 
+## DecimalParameterDeclarationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DecimalParameterDeclarationTypeDef
+
+def get_value() -> DecimalParameterDeclarationTypeDef:
+    return {
+        "ParameterValueType": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DecimalParameterDeclarationTypeDef(TypedDict):
+    ParameterValueType: ParameterValueTypeType,  # (1)
+    Name: str,
+    DefaultValues: NotRequired[DecimalDefaultValuesTypeDef],  # (2)
+    ValueWhenUnset: NotRequired[DecimalValueWhenUnsetConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ParameterValueTypeType](./literals.md#parametervaluetypetype) 
+2. See [:material-code-braces: DecimalDefaultValuesTypeDef](./type_defs.md#decimaldefaultvaluestypedef) 
+3. See [:material-code-braces: DecimalValueWhenUnsetConfigurationTypeDef](./type_defs.md#decimalvaluewhenunsetconfigurationtypedef) 
+## IntegerParameterDeclarationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import IntegerParameterDeclarationTypeDef
+
+def get_value() -> IntegerParameterDeclarationTypeDef:
+    return {
+        "ParameterValueType": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class IntegerParameterDeclarationTypeDef(TypedDict):
+    ParameterValueType: ParameterValueTypeType,  # (1)
+    Name: str,
+    DefaultValues: NotRequired[IntegerDefaultValuesTypeDef],  # (2)
+    ValueWhenUnset: NotRequired[IntegerValueWhenUnsetConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ParameterValueTypeType](./literals.md#parametervaluetypetype) 
+2. See [:material-code-braces: IntegerDefaultValuesTypeDef](./type_defs.md#integerdefaultvaluestypedef) 
+3. See [:material-code-braces: IntegerValueWhenUnsetConfigurationTypeDef](./type_defs.md#integervaluewhenunsetconfigurationtypedef) 
+## StringParameterDeclarationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import StringParameterDeclarationTypeDef
+
+def get_value() -> StringParameterDeclarationTypeDef:
+    return {
+        "ParameterValueType": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StringParameterDeclarationTypeDef(TypedDict):
+    ParameterValueType: ParameterValueTypeType,  # (1)
+    Name: str,
+    DefaultValues: NotRequired[StringDefaultValuesTypeDef],  # (2)
+    ValueWhenUnset: NotRequired[StringValueWhenUnsetConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ParameterValueTypeType](./literals.md#parametervaluetypetype) 
+2. See [:material-code-braces: StringDefaultValuesTypeDef](./type_defs.md#stringdefaultvaluestypedef) 
+3. See [:material-code-braces: StringValueWhenUnsetConfigurationTypeDef](./type_defs.md#stringvaluewhenunsetconfigurationtypedef) 
+## DateTimeHierarchyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateTimeHierarchyTypeDef
+
+def get_value() -> DateTimeHierarchyTypeDef:
+    return {
+        "HierarchyId": ...,
+    }
+```
+
+```python title="Definition"
+class DateTimeHierarchyTypeDef(TypedDict):
+    HierarchyId: str,
+    DrillDownFilters: NotRequired[Sequence[DrillDownFilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DrillDownFilterTypeDef](./type_defs.md#drilldownfiltertypedef) 
+## ExplicitHierarchyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ExplicitHierarchyTypeDef
+
+def get_value() -> ExplicitHierarchyTypeDef:
+    return {
+        "HierarchyId": ...,
+        "Columns": ...,
+    }
+```
+
+```python title="Definition"
+class ExplicitHierarchyTypeDef(TypedDict):
+    HierarchyId: str,
+    Columns: Sequence[ColumnIdentifierTypeDef],  # (1)
+    DrillDownFilters: NotRequired[Sequence[DrillDownFilterTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: DrillDownFilterTypeDef](./type_defs.md#drilldownfiltertypedef) 
+## PredefinedHierarchyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PredefinedHierarchyTypeDef
+
+def get_value() -> PredefinedHierarchyTypeDef:
+    return {
+        "HierarchyId": ...,
+        "Columns": ...,
+    }
+```
+
+```python title="Definition"
+class PredefinedHierarchyTypeDef(TypedDict):
+    HierarchyId: str,
+    Columns: Sequence[ColumnIdentifierTypeDef],  # (1)
+    DrillDownFilters: NotRequired[Sequence[DrillDownFilterTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: DrillDownFilterTypeDef](./type_defs.md#drilldownfiltertypedef) 
+## DescribeAnalysisResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisResponseTypeDef
+
+def get_value() -> DescribeAnalysisResponseTypeDef:
+    return {
+        "Analysis": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnalysisResponseTypeDef(TypedDict):
+    Analysis: AnalysisTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AnalysisTypeDef](./type_defs.md#analysistypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DashboardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardTypeDef
+
+def get_value() -> DashboardTypeDef:
+    return {
         "DashboardId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateDashboardRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    Name: str,
-    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (3)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
-    VersionDescription: NotRequired[str],
-    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (5)
-    ThemeArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
-## UpdateDashboardRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateDashboardRequestRequestTypeDef
-
-def get_value() -> UpdateDashboardRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "DashboardId": ...,
-        "Name": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateDashboardRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    DashboardId: str,
-    Name: str,
-    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
-    Parameters: NotRequired[ParametersTypeDef],  # (2)
-    VersionDescription: NotRequired[str],
-    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (3)
-    ThemeArn: NotRequired[str],
-```
-
-1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
-## CreateTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import CreateTemplateRequestRequestTypeDef
-
-def get_value() -> CreateTemplateRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTemplateRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
+class DashboardTypeDef(TypedDict):
+    DashboardId: NotRequired[str],
+    Arn: NotRequired[str],
     Name: NotRequired[str],
-    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
-    VersionDescription: NotRequired[str],
+    Version: NotRequired[DashboardVersionTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
+    LastPublishedTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
-2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## UpdateTemplateRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import UpdateTemplateRequestRequestTypeDef
-
-def get_value() -> UpdateTemplateRequestRequestTypeDef:
-    return {
-        "AwsAccountId": ...,
-        "TemplateId": ...,
-        "SourceEntity": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateTemplateRequestRequestTypeDef(TypedDict):
-    AwsAccountId: str,
-    TemplateId: str,
-    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
-    VersionDescription: NotRequired[str],
-    Name: NotRequired[str],
-```
-
-1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
+1. See [:material-code-braces: DashboardVersionTypeDef](./type_defs.md#dashboardversiontypedef) 
 ## GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8644,6 +12311,44 @@ class GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef) 
+## AxisDataOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisDataOptionsTypeDef
+
+def get_value() -> AxisDataOptionsTypeDef:
+    return {
+        "NumericAxisOptions": ...,
+    }
+```
+
+```python title="Definition"
+class AxisDataOptionsTypeDef(TypedDict):
+    NumericAxisOptions: NotRequired[NumericAxisOptionsTypeDef],  # (1)
+    DateAxisOptions: NotRequired[DateAxisOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: NumericAxisOptionsTypeDef](./type_defs.md#numericaxisoptionstypedef) 
+2. See [:material-code-braces: DateAxisOptionsTypeDef](./type_defs.md#dateaxisoptionstypedef) 
+## GeospatialPointStyleOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialPointStyleOptionsTypeDef
+
+def get_value() -> GeospatialPointStyleOptionsTypeDef:
+    return {
+        "SelectedPointStyle": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialPointStyleOptionsTypeDef(TypedDict):
+    SelectedPointStyle: NotRequired[GeospatialSelectedPointStyleType],  # (1)
+    ClusterMarkerConfiguration: NotRequired[ClusterMarkerConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: GeospatialSelectedPointStyleType](./literals.md#geospatialselectedpointstyletype) 
+2. See [:material-code-braces: ClusterMarkerConfigurationTypeDef](./type_defs.md#clustermarkerconfigurationtypedef) 
 ## TransformOperationTypeDef
 
 ```python title="Usage Example"
@@ -8701,30 +12406,369 @@ class TemplateVersionTypeDef(TypedDict):
 2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
 3. See [:material-code-braces: DataSetConfigurationTypeDef](./type_defs.md#datasetconfigurationtypedef) 
 4. See [:material-code-braces: SheetTypeDef](./type_defs.md#sheettypedef) 
-## DescribeDashboardResponseTypeDef
+## SetParameterValueConfigurationTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_quicksight.type_defs import DescribeDashboardResponseTypeDef
+from mypy_boto3_quicksight.type_defs import SetParameterValueConfigurationTypeDef
 
-def get_value() -> DescribeDashboardResponseTypeDef:
+def get_value() -> SetParameterValueConfigurationTypeDef:
     return {
-        "Dashboard": ...,
-        "Status": ...,
-        "RequestId": ...,
-        "ResponseMetadata": ...,
+        "DestinationParameterName": ...,
+        "Value": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeDashboardResponseTypeDef(TypedDict):
-    Dashboard: DashboardTypeDef,  # (1)
-    Status: int,
-    RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class SetParameterValueConfigurationTypeDef(TypedDict):
+    DestinationParameterName: str,
+    Value: DestinationParameterValueConfigurationTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: DashboardTypeDef](./type_defs.md#dashboardtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: DestinationParameterValueConfigurationTypeDef](./type_defs.md#destinationparametervalueconfigurationtypedef) 
+## ChartAxisLabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ChartAxisLabelOptionsTypeDef
+
+def get_value() -> ChartAxisLabelOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class ChartAxisLabelOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    SortIconVisibility: NotRequired[VisibilityType],  # (1)
+    AxisLabelOptions: NotRequired[Sequence[AxisLabelOptionsTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-braces: AxisLabelOptionsTypeDef](./type_defs.md#axislabeloptionstypedef) 
+## AxisTickLabelOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisTickLabelOptionsTypeDef
+
+def get_value() -> AxisTickLabelOptionsTypeDef:
+    return {
+        "LabelOptions": ...,
+    }
+```
+
+```python title="Definition"
+class AxisTickLabelOptionsTypeDef(TypedDict):
+    LabelOptions: NotRequired[LabelOptionsTypeDef],  # (1)
+    RotationAngle: NotRequired[float],
+```
+
+1. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+## DateTimePickerControlDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateTimePickerControlDisplayOptionsTypeDef
+
+def get_value() -> DateTimePickerControlDisplayOptionsTypeDef:
+    return {
+        "TitleOptions": ...,
+    }
+```
+
+```python title="Definition"
+class DateTimePickerControlDisplayOptionsTypeDef(TypedDict):
+    TitleOptions: NotRequired[LabelOptionsTypeDef],  # (1)
+    DateTimeFormat: NotRequired[str],
+```
+
+1. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+## DropDownControlDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DropDownControlDisplayOptionsTypeDef
+
+def get_value() -> DropDownControlDisplayOptionsTypeDef:
+    return {
+        "SelectAllOptions": ...,
+    }
+```
+
+```python title="Definition"
+class DropDownControlDisplayOptionsTypeDef(TypedDict):
+    SelectAllOptions: NotRequired[ListControlSelectAllOptionsTypeDef],  # (1)
+    TitleOptions: NotRequired[LabelOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListControlSelectAllOptionsTypeDef](./type_defs.md#listcontrolselectalloptionstypedef) 
+2. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+## LegendOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LegendOptionsTypeDef
+
+def get_value() -> LegendOptionsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class LegendOptionsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    Title: NotRequired[LabelOptionsTypeDef],  # (2)
+    Position: NotRequired[LegendPositionType],  # (3)
+    Width: NotRequired[str],
+    Height: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+3. See [:material-code-brackets: LegendPositionType](./literals.md#legendpositiontype) 
+## ListControlDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ListControlDisplayOptionsTypeDef
+
+def get_value() -> ListControlDisplayOptionsTypeDef:
+    return {
+        "SearchOptions": ...,
+    }
+```
+
+```python title="Definition"
+class ListControlDisplayOptionsTypeDef(TypedDict):
+    SearchOptions: NotRequired[ListControlSearchOptionsTypeDef],  # (1)
+    SelectAllOptions: NotRequired[ListControlSelectAllOptionsTypeDef],  # (2)
+    TitleOptions: NotRequired[LabelOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ListControlSearchOptionsTypeDef](./type_defs.md#listcontrolsearchoptionstypedef) 
+2. See [:material-code-braces: ListControlSelectAllOptionsTypeDef](./type_defs.md#listcontrolselectalloptionstypedef) 
+3. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+## RelativeDateTimeControlDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RelativeDateTimeControlDisplayOptionsTypeDef
+
+def get_value() -> RelativeDateTimeControlDisplayOptionsTypeDef:
+    return {
+        "TitleOptions": ...,
+    }
+```
+
+```python title="Definition"
+class RelativeDateTimeControlDisplayOptionsTypeDef(TypedDict):
+    TitleOptions: NotRequired[LabelOptionsTypeDef],  # (1)
+    DateTimeFormat: NotRequired[str],
+```
+
+1. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+## SliderControlDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SliderControlDisplayOptionsTypeDef
+
+def get_value() -> SliderControlDisplayOptionsTypeDef:
+    return {
+        "TitleOptions": ...,
+    }
+```
+
+```python title="Definition"
+class SliderControlDisplayOptionsTypeDef(TypedDict):
+    TitleOptions: NotRequired[LabelOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+## TextAreaControlDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TextAreaControlDisplayOptionsTypeDef
+
+def get_value() -> TextAreaControlDisplayOptionsTypeDef:
+    return {
+        "TitleOptions": ...,
+    }
+```
+
+```python title="Definition"
+class TextAreaControlDisplayOptionsTypeDef(TypedDict):
+    TitleOptions: NotRequired[LabelOptionsTypeDef],  # (1)
+    PlaceholderOptions: NotRequired[TextControlPlaceholderOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+2. See [:material-code-braces: TextControlPlaceholderOptionsTypeDef](./type_defs.md#textcontrolplaceholderoptionstypedef) 
+## TextFieldControlDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TextFieldControlDisplayOptionsTypeDef
+
+def get_value() -> TextFieldControlDisplayOptionsTypeDef:
+    return {
+        "TitleOptions": ...,
+    }
+```
+
+```python title="Definition"
+class TextFieldControlDisplayOptionsTypeDef(TypedDict):
+    TitleOptions: NotRequired[LabelOptionsTypeDef],  # (1)
+    PlaceholderOptions: NotRequired[TextControlPlaceholderOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+2. See [:material-code-braces: TextControlPlaceholderOptionsTypeDef](./type_defs.md#textcontrolplaceholderoptionstypedef) 
+## PanelConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PanelConfigurationTypeDef
+
+def get_value() -> PanelConfigurationTypeDef:
+    return {
+        "Title": ...,
+    }
+```
+
+```python title="Definition"
+class PanelConfigurationTypeDef(TypedDict):
+    Title: NotRequired[PanelTitleOptionsTypeDef],  # (1)
+    BorderVisibility: NotRequired[VisibilityType],  # (2)
+    BorderThickness: NotRequired[str],
+    BorderStyle: NotRequired[PanelBorderStyleType],  # (3)
+    BorderColor: NotRequired[str],
+    GutterVisibility: NotRequired[VisibilityType],  # (2)
+    GutterSpacing: NotRequired[str],
+    BackgroundVisibility: NotRequired[VisibilityType],  # (2)
+    BackgroundColor: NotRequired[str],
+```
+
+1. See [:material-code-braces: PanelTitleOptionsTypeDef](./type_defs.md#paneltitleoptionstypedef) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-brackets: PanelBorderStyleType](./literals.md#panelborderstyletype) 
+4. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+5. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+## TableFieldLinkContentConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldLinkContentConfigurationTypeDef
+
+def get_value() -> TableFieldLinkContentConfigurationTypeDef:
+    return {
+        "CustomTextContent": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldLinkContentConfigurationTypeDef(TypedDict):
+    CustomTextContent: NotRequired[TableFieldCustomTextContentTypeDef],  # (1)
+    CustomIconContent: NotRequired[TableFieldCustomIconContentTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TableFieldCustomTextContentTypeDef](./type_defs.md#tablefieldcustomtextcontenttypedef) 
+2. See [:material-code-braces: TableFieldCustomIconContentTypeDef](./type_defs.md#tablefieldcustomiconcontenttypedef) 
+## TableCellStyleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableCellStyleTypeDef
+
+def get_value() -> TableCellStyleTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class TableCellStyleTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    FontConfiguration: NotRequired[FontConfigurationTypeDef],  # (2)
+    TextWrap: NotRequired[TextWrapType],  # (3)
+    HorizontalTextAlignment: NotRequired[HorizontalTextAlignmentType],  # (4)
+    VerticalTextAlignment: NotRequired[VerticalTextAlignmentType],  # (5)
+    BackgroundColor: NotRequired[str],
+    Height: NotRequired[int],
+    Border: NotRequired[GlobalTableBorderOptionsTypeDef],  # (6)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+3. See [:material-code-brackets: TextWrapType](./literals.md#textwraptype) 
+4. See [:material-code-brackets: HorizontalTextAlignmentType](./literals.md#horizontaltextalignmenttype) 
+5. See [:material-code-brackets: VerticalTextAlignmentType](./literals.md#verticaltextalignmenttype) 
+6. See [:material-code-braces: GlobalTableBorderOptionsTypeDef](./type_defs.md#globaltableborderoptionstypedef) 
+## ConditionalFormattingColorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ConditionalFormattingColorTypeDef
+
+def get_value() -> ConditionalFormattingColorTypeDef:
+    return {
+        "Solid": ...,
+    }
+```
+
+```python title="Definition"
+class ConditionalFormattingColorTypeDef(TypedDict):
+    Solid: NotRequired[ConditionalFormattingSolidColorTypeDef],  # (1)
+    Gradient: NotRequired[ConditionalFormattingGradientColorTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConditionalFormattingSolidColorTypeDef](./type_defs.md#conditionalformattingsolidcolortypedef) 
+2. See [:material-code-braces: ConditionalFormattingGradientColorTypeDef](./type_defs.md#conditionalformattinggradientcolortypedef) 
+## DefaultInteractiveLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DefaultInteractiveLayoutConfigurationTypeDef
+
+def get_value() -> DefaultInteractiveLayoutConfigurationTypeDef:
+    return {
+        "Grid": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultInteractiveLayoutConfigurationTypeDef(TypedDict):
+    Grid: NotRequired[DefaultGridLayoutConfigurationTypeDef],  # (1)
+    FreeForm: NotRequired[DefaultFreeFormLayoutConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DefaultGridLayoutConfigurationTypeDef](./type_defs.md#defaultgridlayoutconfigurationtypedef) 
+2. See [:material-code-braces: DefaultFreeFormLayoutConfigurationTypeDef](./type_defs.md#defaultfreeformlayoutconfigurationtypedef) 
+## SheetControlLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetControlLayoutConfigurationTypeDef
+
+def get_value() -> SheetControlLayoutConfigurationTypeDef:
+    return {
+        "GridLayout": ...,
+    }
+```
+
+```python title="Definition"
+class SheetControlLayoutConfigurationTypeDef(TypedDict):
+    GridLayout: NotRequired[GridLayoutConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GridLayoutConfigurationTypeDef](./type_defs.md#gridlayoutconfigurationtypedef) 
+## SeriesItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SeriesItemTypeDef
+
+def get_value() -> SeriesItemTypeDef:
+    return {
+        "FieldSeriesItem": ...,
+    }
+```
+
+```python title="Definition"
+class SeriesItemTypeDef(TypedDict):
+    FieldSeriesItem: NotRequired[FieldSeriesItemTypeDef],  # (1)
+    DataFieldSeriesItem: NotRequired[DataFieldSeriesItemTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSeriesItemTypeDef](./type_defs.md#fieldseriesitemtypedef) 
+2. See [:material-code-braces: DataFieldSeriesItemTypeDef](./type_defs.md#datafieldseriesitemtypedef) 
 ## CredentialPairTypeDef
 
 ```python title="Usage Example"
@@ -8796,11 +12840,327 @@ class ThemeConfigurationTypeDef(TypedDict):
     DataColorPalette: NotRequired[DataColorPaletteTypeDef],  # (1)
     UIColorPalette: NotRequired[UIColorPaletteTypeDef],  # (2)
     Sheet: NotRequired[SheetStyleTypeDef],  # (3)
+    Typography: NotRequired[TypographyTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: DataColorPaletteTypeDef](./type_defs.md#datacolorpalettetypedef) 
 2. See [:material-code-braces: UIColorPaletteTypeDef](./type_defs.md#uicolorpalettetypedef) 
 3. See [:material-code-braces: SheetStyleTypeDef](./type_defs.md#sheetstyletypedef) 
+4. See [:material-code-braces: TypographyTypeDef](./type_defs.md#typographytypedef) 
+## ComparisonFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComparisonFormatConfigurationTypeDef
+
+def get_value() -> ComparisonFormatConfigurationTypeDef:
+    return {
+        "NumberDisplayFormatConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ComparisonFormatConfigurationTypeDef(TypedDict):
+    NumberDisplayFormatConfiguration: NotRequired[NumberDisplayFormatConfigurationTypeDef],  # (1)
+    PercentageDisplayFormatConfiguration: NotRequired[PercentageDisplayFormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: NumberDisplayFormatConfigurationTypeDef](./type_defs.md#numberdisplayformatconfigurationtypedef) 
+2. See [:material-code-braces: PercentageDisplayFormatConfigurationTypeDef](./type_defs.md#percentagedisplayformatconfigurationtypedef) 
+## NumericFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericFormatConfigurationTypeDef
+
+def get_value() -> NumericFormatConfigurationTypeDef:
+    return {
+        "NumberDisplayFormatConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class NumericFormatConfigurationTypeDef(TypedDict):
+    NumberDisplayFormatConfiguration: NotRequired[NumberDisplayFormatConfigurationTypeDef],  # (1)
+    CurrencyDisplayFormatConfiguration: NotRequired[CurrencyDisplayFormatConfigurationTypeDef],  # (2)
+    PercentageDisplayFormatConfiguration: NotRequired[PercentageDisplayFormatConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: NumberDisplayFormatConfigurationTypeDef](./type_defs.md#numberdisplayformatconfigurationtypedef) 
+2. See [:material-code-braces: CurrencyDisplayFormatConfigurationTypeDef](./type_defs.md#currencydisplayformatconfigurationtypedef) 
+3. See [:material-code-braces: PercentageDisplayFormatConfigurationTypeDef](./type_defs.md#percentagedisplayformatconfigurationtypedef) 
+## AggregationSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AggregationSortConfigurationTypeDef
+
+def get_value() -> AggregationSortConfigurationTypeDef:
+    return {
+        "Column": ...,
+        "SortDirection": ...,
+        "AggregationFunction": ...,
+    }
+```
+
+```python title="Definition"
+class AggregationSortConfigurationTypeDef(TypedDict):
+    Column: ColumnIdentifierTypeDef,  # (1)
+    SortDirection: SortDirectionType,  # (2)
+    AggregationFunction: AggregationFunctionTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: SortDirectionType](./literals.md#sortdirectiontype) 
+3. See [:material-code-braces: AggregationFunctionTypeDef](./type_defs.md#aggregationfunctiontypedef) 
+## ColumnSortTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnSortTypeDef
+
+def get_value() -> ColumnSortTypeDef:
+    return {
+        "SortBy": ...,
+        "Direction": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnSortTypeDef(TypedDict):
+    SortBy: ColumnIdentifierTypeDef,  # (1)
+    Direction: SortDirectionType,  # (2)
+    AggregationFunction: NotRequired[AggregationFunctionTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: SortDirectionType](./literals.md#sortdirectiontype) 
+3. See [:material-code-braces: AggregationFunctionTypeDef](./type_defs.md#aggregationfunctiontypedef) 
+## ColumnTooltipItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnTooltipItemTypeDef
+
+def get_value() -> ColumnTooltipItemTypeDef:
+    return {
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnTooltipItemTypeDef(TypedDict):
+    Column: ColumnIdentifierTypeDef,  # (1)
+    Label: NotRequired[str],
+    Visibility: NotRequired[VisibilityType],  # (2)
+    Aggregation: NotRequired[AggregationFunctionTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-braces: AggregationFunctionTypeDef](./type_defs.md#aggregationfunctiontypedef) 
+## NumericEqualityFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericEqualityFilterTypeDef
+
+def get_value() -> NumericEqualityFilterTypeDef:
+    return {
+        "FilterId": ...,
+        "Column": ...,
+        "MatchOperator": ...,
+        "NullOption": ...,
+    }
+```
+
+```python title="Definition"
+class NumericEqualityFilterTypeDef(TypedDict):
+    FilterId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    MatchOperator: NumericEqualityMatchOperatorType,  # (3)
+    NullOption: FilterNullOptionType,  # (5)
+    Value: NotRequired[float],
+    SelectAllOptions: NotRequired[NumericFilterSelectAllOptionsType],  # (2)
+    AggregationFunction: NotRequired[AggregationFunctionTypeDef],  # (4)
+    ParameterName: NotRequired[str],
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: NumericFilterSelectAllOptionsType](./literals.md#numericfilterselectalloptionstype) 
+3. See [:material-code-brackets: NumericEqualityMatchOperatorType](./literals.md#numericequalitymatchoperatortype) 
+4. See [:material-code-braces: AggregationFunctionTypeDef](./type_defs.md#aggregationfunctiontypedef) 
+5. See [:material-code-brackets: FilterNullOptionType](./literals.md#filternulloptiontype) 
+## NumericRangeFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericRangeFilterTypeDef
+
+def get_value() -> NumericRangeFilterTypeDef:
+    return {
+        "FilterId": ...,
+        "Column": ...,
+        "NullOption": ...,
+    }
+```
+
+```python title="Definition"
+class NumericRangeFilterTypeDef(TypedDict):
+    FilterId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    NullOption: FilterNullOptionType,  # (6)
+    IncludeMinimum: NotRequired[bool],
+    IncludeMaximum: NotRequired[bool],
+    RangeMinimum: NotRequired[NumericRangeFilterValueTypeDef],  # (2)
+    RangeMaximum: NotRequired[NumericRangeFilterValueTypeDef],  # (2)
+    SelectAllOptions: NotRequired[NumericFilterSelectAllOptionsType],  # (4)
+    AggregationFunction: NotRequired[AggregationFunctionTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: NumericRangeFilterValueTypeDef](./type_defs.md#numericrangefiltervaluetypedef) 
+3. See [:material-code-braces: NumericRangeFilterValueTypeDef](./type_defs.md#numericrangefiltervaluetypedef) 
+4. See [:material-code-brackets: NumericFilterSelectAllOptionsType](./literals.md#numericfilterselectalloptionstype) 
+5. See [:material-code-braces: AggregationFunctionTypeDef](./type_defs.md#aggregationfunctiontypedef) 
+6. See [:material-code-brackets: FilterNullOptionType](./literals.md#filternulloptiontype) 
+## ReferenceLineDynamicDataConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineDynamicDataConfigurationTypeDef
+
+def get_value() -> ReferenceLineDynamicDataConfigurationTypeDef:
+    return {
+        "Column": ...,
+        "MeasureAggregationFunction": ...,
+        "Calculation": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineDynamicDataConfigurationTypeDef(TypedDict):
+    Column: ColumnIdentifierTypeDef,  # (1)
+    MeasureAggregationFunction: AggregationFunctionTypeDef,  # (2)
+    Calculation: NumericalAggregationFunctionTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: AggregationFunctionTypeDef](./type_defs.md#aggregationfunctiontypedef) 
+3. See [:material-code-braces: NumericalAggregationFunctionTypeDef](./type_defs.md#numericalaggregationfunctiontypedef) 
+## DefaultSectionBasedLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DefaultSectionBasedLayoutConfigurationTypeDef
+
+def get_value() -> DefaultSectionBasedLayoutConfigurationTypeDef:
+    return {
+        "CanvasSizeOptions": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultSectionBasedLayoutConfigurationTypeDef(TypedDict):
+    CanvasSizeOptions: SectionBasedLayoutCanvasSizeOptionsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: SectionBasedLayoutCanvasSizeOptionsTypeDef](./type_defs.md#sectionbasedlayoutcanvassizeoptionstypedef) 
+## FreeFormLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FreeFormLayoutConfigurationTypeDef
+
+def get_value() -> FreeFormLayoutConfigurationTypeDef:
+    return {
+        "Elements": ...,
+    }
+```
+
+```python title="Definition"
+class FreeFormLayoutConfigurationTypeDef(TypedDict):
+    Elements: Sequence[FreeFormLayoutElementTypeDef],  # (1)
+    CanvasSizeOptions: NotRequired[FreeFormLayoutCanvasSizeOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FreeFormLayoutElementTypeDef](./type_defs.md#freeformlayoutelementtypedef) 
+2. See [:material-code-braces: FreeFormLayoutCanvasSizeOptionsTypeDef](./type_defs.md#freeformlayoutcanvassizeoptionstypedef) 
+## FreeFormSectionLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FreeFormSectionLayoutConfigurationTypeDef
+
+def get_value() -> FreeFormSectionLayoutConfigurationTypeDef:
+    return {
+        "Elements": ...,
+    }
+```
+
+```python title="Definition"
+class FreeFormSectionLayoutConfigurationTypeDef(TypedDict):
+    Elements: Sequence[FreeFormLayoutElementTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FreeFormLayoutElementTypeDef](./type_defs.md#freeformlayoutelementtypedef) 
+## ParameterDeclarationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterDeclarationTypeDef
+
+def get_value() -> ParameterDeclarationTypeDef:
+    return {
+        "StringParameterDeclaration": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterDeclarationTypeDef(TypedDict):
+    StringParameterDeclaration: NotRequired[StringParameterDeclarationTypeDef],  # (1)
+    DecimalParameterDeclaration: NotRequired[DecimalParameterDeclarationTypeDef],  # (2)
+    IntegerParameterDeclaration: NotRequired[IntegerParameterDeclarationTypeDef],  # (3)
+    DateTimeParameterDeclaration: NotRequired[DateTimeParameterDeclarationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: StringParameterDeclarationTypeDef](./type_defs.md#stringparameterdeclarationtypedef) 
+2. See [:material-code-braces: DecimalParameterDeclarationTypeDef](./type_defs.md#decimalparameterdeclarationtypedef) 
+3. See [:material-code-braces: IntegerParameterDeclarationTypeDef](./type_defs.md#integerparameterdeclarationtypedef) 
+4. See [:material-code-braces: DateTimeParameterDeclarationTypeDef](./type_defs.md#datetimeparameterdeclarationtypedef) 
+## ColumnHierarchyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnHierarchyTypeDef
+
+def get_value() -> ColumnHierarchyTypeDef:
+    return {
+        "ExplicitHierarchy": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnHierarchyTypeDef(TypedDict):
+    ExplicitHierarchy: NotRequired[ExplicitHierarchyTypeDef],  # (1)
+    DateTimeHierarchy: NotRequired[DateTimeHierarchyTypeDef],  # (2)
+    PredefinedHierarchy: NotRequired[PredefinedHierarchyTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ExplicitHierarchyTypeDef](./type_defs.md#explicithierarchytypedef) 
+2. See [:material-code-braces: DateTimeHierarchyTypeDef](./type_defs.md#datetimehierarchytypedef) 
+3. See [:material-code-braces: PredefinedHierarchyTypeDef](./type_defs.md#predefinedhierarchytypedef) 
+## DescribeDashboardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDashboardResponseTypeDef
+
+def get_value() -> DescribeDashboardResponseTypeDef:
+    return {
+        "Dashboard": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDashboardResponseTypeDef(TypedDict):
+    Dashboard: DashboardTypeDef,  # (1)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DashboardTypeDef](./type_defs.md#dashboardtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogicalTableTypeDef
 
 ```python title="Usage Example"
@@ -8844,6 +13204,698 @@ class TemplateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TemplateVersionTypeDef](./type_defs.md#templateversiontypedef) 
+## CustomActionSetParametersOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomActionSetParametersOperationTypeDef
+
+def get_value() -> CustomActionSetParametersOperationTypeDef:
+    return {
+        "ParameterValueConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class CustomActionSetParametersOperationTypeDef(TypedDict):
+    ParameterValueConfigurations: Sequence[SetParameterValueConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SetParameterValueConfigurationTypeDef](./type_defs.md#setparametervalueconfigurationtypedef) 
+## AxisDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AxisDisplayOptionsTypeDef
+
+def get_value() -> AxisDisplayOptionsTypeDef:
+    return {
+        "TickLabelOptions": ...,
+    }
+```
+
+```python title="Definition"
+class AxisDisplayOptionsTypeDef(TypedDict):
+    TickLabelOptions: NotRequired[AxisTickLabelOptionsTypeDef],  # (1)
+    AxisLineVisibility: NotRequired[VisibilityType],  # (2)
+    GridLineVisibility: NotRequired[VisibilityType],  # (2)
+    DataOptions: NotRequired[AxisDataOptionsTypeDef],  # (4)
+    ScrollbarOptions: NotRequired[ScrollBarOptionsTypeDef],  # (5)
+    AxisOffset: NotRequired[str],
+```
+
+1. See [:material-code-braces: AxisTickLabelOptionsTypeDef](./type_defs.md#axisticklabeloptionstypedef) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+4. See [:material-code-braces: AxisDataOptionsTypeDef](./type_defs.md#axisdataoptionstypedef) 
+5. See [:material-code-braces: ScrollBarOptionsTypeDef](./type_defs.md#scrollbaroptionstypedef) 
+## FilterDateTimePickerControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterDateTimePickerControlTypeDef
+
+def get_value() -> FilterDateTimePickerControlTypeDef:
+    return {
+        "FilterControlId": ...,
+        "Title": ...,
+        "SourceFilterId": ...,
+    }
+```
+
+```python title="Definition"
+class FilterDateTimePickerControlTypeDef(TypedDict):
+    FilterControlId: str,
+    Title: str,
+    SourceFilterId: str,
+    DisplayOptions: NotRequired[DateTimePickerControlDisplayOptionsTypeDef],  # (1)
+    Type: NotRequired[SheetControlDateTimePickerTypeType],  # (2)
+```
+
+1. See [:material-code-braces: DateTimePickerControlDisplayOptionsTypeDef](./type_defs.md#datetimepickercontroldisplayoptionstypedef) 
+2. See [:material-code-brackets: SheetControlDateTimePickerTypeType](./literals.md#sheetcontroldatetimepickertypetype) 
+## ParameterDateTimePickerControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterDateTimePickerControlTypeDef
+
+def get_value() -> ParameterDateTimePickerControlTypeDef:
+    return {
+        "ParameterControlId": ...,
+        "Title": ...,
+        "SourceParameterName": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterDateTimePickerControlTypeDef(TypedDict):
+    ParameterControlId: str,
+    Title: str,
+    SourceParameterName: str,
+    DisplayOptions: NotRequired[DateTimePickerControlDisplayOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DateTimePickerControlDisplayOptionsTypeDef](./type_defs.md#datetimepickercontroldisplayoptionstypedef) 
+## FilterDropDownControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterDropDownControlTypeDef
+
+def get_value() -> FilterDropDownControlTypeDef:
+    return {
+        "FilterControlId": ...,
+        "Title": ...,
+        "SourceFilterId": ...,
+    }
+```
+
+```python title="Definition"
+class FilterDropDownControlTypeDef(TypedDict):
+    FilterControlId: str,
+    Title: str,
+    SourceFilterId: str,
+    DisplayOptions: NotRequired[DropDownControlDisplayOptionsTypeDef],  # (1)
+    Type: NotRequired[SheetControlListTypeType],  # (2)
+    SelectableValues: NotRequired[FilterSelectableValuesTypeDef],  # (3)
+    CascadingControlConfiguration: NotRequired[CascadingControlConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DropDownControlDisplayOptionsTypeDef](./type_defs.md#dropdowncontroldisplayoptionstypedef) 
+2. See [:material-code-brackets: SheetControlListTypeType](./literals.md#sheetcontrollisttypetype) 
+3. See [:material-code-braces: FilterSelectableValuesTypeDef](./type_defs.md#filterselectablevaluestypedef) 
+4. See [:material-code-braces: CascadingControlConfigurationTypeDef](./type_defs.md#cascadingcontrolconfigurationtypedef) 
+## ParameterDropDownControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterDropDownControlTypeDef
+
+def get_value() -> ParameterDropDownControlTypeDef:
+    return {
+        "ParameterControlId": ...,
+        "Title": ...,
+        "SourceParameterName": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterDropDownControlTypeDef(TypedDict):
+    ParameterControlId: str,
+    Title: str,
+    SourceParameterName: str,
+    DisplayOptions: NotRequired[DropDownControlDisplayOptionsTypeDef],  # (1)
+    Type: NotRequired[SheetControlListTypeType],  # (2)
+    SelectableValues: NotRequired[ParameterSelectableValuesTypeDef],  # (3)
+    CascadingControlConfiguration: NotRequired[CascadingControlConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DropDownControlDisplayOptionsTypeDef](./type_defs.md#dropdowncontroldisplayoptionstypedef) 
+2. See [:material-code-brackets: SheetControlListTypeType](./literals.md#sheetcontrollisttypetype) 
+3. See [:material-code-braces: ParameterSelectableValuesTypeDef](./type_defs.md#parameterselectablevaluestypedef) 
+4. See [:material-code-braces: CascadingControlConfigurationTypeDef](./type_defs.md#cascadingcontrolconfigurationtypedef) 
+## FilterListControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterListControlTypeDef
+
+def get_value() -> FilterListControlTypeDef:
+    return {
+        "FilterControlId": ...,
+        "Title": ...,
+        "SourceFilterId": ...,
+    }
+```
+
+```python title="Definition"
+class FilterListControlTypeDef(TypedDict):
+    FilterControlId: str,
+    Title: str,
+    SourceFilterId: str,
+    DisplayOptions: NotRequired[ListControlDisplayOptionsTypeDef],  # (1)
+    Type: NotRequired[SheetControlListTypeType],  # (2)
+    SelectableValues: NotRequired[FilterSelectableValuesTypeDef],  # (3)
+    CascadingControlConfiguration: NotRequired[CascadingControlConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: ListControlDisplayOptionsTypeDef](./type_defs.md#listcontroldisplayoptionstypedef) 
+2. See [:material-code-brackets: SheetControlListTypeType](./literals.md#sheetcontrollisttypetype) 
+3. See [:material-code-braces: FilterSelectableValuesTypeDef](./type_defs.md#filterselectablevaluestypedef) 
+4. See [:material-code-braces: CascadingControlConfigurationTypeDef](./type_defs.md#cascadingcontrolconfigurationtypedef) 
+## ParameterListControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterListControlTypeDef
+
+def get_value() -> ParameterListControlTypeDef:
+    return {
+        "ParameterControlId": ...,
+        "Title": ...,
+        "SourceParameterName": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterListControlTypeDef(TypedDict):
+    ParameterControlId: str,
+    Title: str,
+    SourceParameterName: str,
+    DisplayOptions: NotRequired[ListControlDisplayOptionsTypeDef],  # (1)
+    Type: NotRequired[SheetControlListTypeType],  # (2)
+    SelectableValues: NotRequired[ParameterSelectableValuesTypeDef],  # (3)
+    CascadingControlConfiguration: NotRequired[CascadingControlConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: ListControlDisplayOptionsTypeDef](./type_defs.md#listcontroldisplayoptionstypedef) 
+2. See [:material-code-brackets: SheetControlListTypeType](./literals.md#sheetcontrollisttypetype) 
+3. See [:material-code-braces: ParameterSelectableValuesTypeDef](./type_defs.md#parameterselectablevaluestypedef) 
+4. See [:material-code-braces: CascadingControlConfigurationTypeDef](./type_defs.md#cascadingcontrolconfigurationtypedef) 
+## FilterRelativeDateTimeControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterRelativeDateTimeControlTypeDef
+
+def get_value() -> FilterRelativeDateTimeControlTypeDef:
+    return {
+        "FilterControlId": ...,
+        "Title": ...,
+        "SourceFilterId": ...,
+    }
+```
+
+```python title="Definition"
+class FilterRelativeDateTimeControlTypeDef(TypedDict):
+    FilterControlId: str,
+    Title: str,
+    SourceFilterId: str,
+    DisplayOptions: NotRequired[RelativeDateTimeControlDisplayOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RelativeDateTimeControlDisplayOptionsTypeDef](./type_defs.md#relativedatetimecontroldisplayoptionstypedef) 
+## FilterSliderControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterSliderControlTypeDef
+
+def get_value() -> FilterSliderControlTypeDef:
+    return {
+        "FilterControlId": ...,
+        "Title": ...,
+        "SourceFilterId": ...,
+        "MaximumValue": ...,
+        "MinimumValue": ...,
+        "StepSize": ...,
+    }
+```
+
+```python title="Definition"
+class FilterSliderControlTypeDef(TypedDict):
+    FilterControlId: str,
+    Title: str,
+    SourceFilterId: str,
+    MaximumValue: float,
+    MinimumValue: float,
+    StepSize: float,
+    DisplayOptions: NotRequired[SliderControlDisplayOptionsTypeDef],  # (1)
+    Type: NotRequired[SheetControlSliderTypeType],  # (2)
+```
+
+1. See [:material-code-braces: SliderControlDisplayOptionsTypeDef](./type_defs.md#slidercontroldisplayoptionstypedef) 
+2. See [:material-code-brackets: SheetControlSliderTypeType](./literals.md#sheetcontrolslidertypetype) 
+## ParameterSliderControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterSliderControlTypeDef
+
+def get_value() -> ParameterSliderControlTypeDef:
+    return {
+        "ParameterControlId": ...,
+        "Title": ...,
+        "SourceParameterName": ...,
+        "MaximumValue": ...,
+        "MinimumValue": ...,
+        "StepSize": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterSliderControlTypeDef(TypedDict):
+    ParameterControlId: str,
+    Title: str,
+    SourceParameterName: str,
+    MaximumValue: float,
+    MinimumValue: float,
+    StepSize: float,
+    DisplayOptions: NotRequired[SliderControlDisplayOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SliderControlDisplayOptionsTypeDef](./type_defs.md#slidercontroldisplayoptionstypedef) 
+## FilterTextAreaControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterTextAreaControlTypeDef
+
+def get_value() -> FilterTextAreaControlTypeDef:
+    return {
+        "FilterControlId": ...,
+        "Title": ...,
+        "SourceFilterId": ...,
+    }
+```
+
+```python title="Definition"
+class FilterTextAreaControlTypeDef(TypedDict):
+    FilterControlId: str,
+    Title: str,
+    SourceFilterId: str,
+    Delimiter: NotRequired[str],
+    DisplayOptions: NotRequired[TextAreaControlDisplayOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TextAreaControlDisplayOptionsTypeDef](./type_defs.md#textareacontroldisplayoptionstypedef) 
+## ParameterTextAreaControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterTextAreaControlTypeDef
+
+def get_value() -> ParameterTextAreaControlTypeDef:
+    return {
+        "ParameterControlId": ...,
+        "Title": ...,
+        "SourceParameterName": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterTextAreaControlTypeDef(TypedDict):
+    ParameterControlId: str,
+    Title: str,
+    SourceParameterName: str,
+    Delimiter: NotRequired[str],
+    DisplayOptions: NotRequired[TextAreaControlDisplayOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TextAreaControlDisplayOptionsTypeDef](./type_defs.md#textareacontroldisplayoptionstypedef) 
+## FilterTextFieldControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterTextFieldControlTypeDef
+
+def get_value() -> FilterTextFieldControlTypeDef:
+    return {
+        "FilterControlId": ...,
+        "Title": ...,
+        "SourceFilterId": ...,
+    }
+```
+
+```python title="Definition"
+class FilterTextFieldControlTypeDef(TypedDict):
+    FilterControlId: str,
+    Title: str,
+    SourceFilterId: str,
+    DisplayOptions: NotRequired[TextFieldControlDisplayOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TextFieldControlDisplayOptionsTypeDef](./type_defs.md#textfieldcontroldisplayoptionstypedef) 
+## ParameterTextFieldControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterTextFieldControlTypeDef
+
+def get_value() -> ParameterTextFieldControlTypeDef:
+    return {
+        "ParameterControlId": ...,
+        "Title": ...,
+        "SourceParameterName": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterTextFieldControlTypeDef(TypedDict):
+    ParameterControlId: str,
+    Title: str,
+    SourceParameterName: str,
+    DisplayOptions: NotRequired[TextFieldControlDisplayOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TextFieldControlDisplayOptionsTypeDef](./type_defs.md#textfieldcontroldisplayoptionstypedef) 
+## SmallMultiplesOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SmallMultiplesOptionsTypeDef
+
+def get_value() -> SmallMultiplesOptionsTypeDef:
+    return {
+        "MaxVisibleRows": ...,
+    }
+```
+
+```python title="Definition"
+class SmallMultiplesOptionsTypeDef(TypedDict):
+    MaxVisibleRows: NotRequired[int],
+    MaxVisibleColumns: NotRequired[int],
+    PanelConfiguration: NotRequired[PanelConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PanelConfigurationTypeDef](./type_defs.md#panelconfigurationtypedef) 
+## TableFieldLinkConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldLinkConfigurationTypeDef
+
+def get_value() -> TableFieldLinkConfigurationTypeDef:
+    return {
+        "Target": ...,
+        "Content": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldLinkConfigurationTypeDef(TypedDict):
+    Target: URLTargetConfigurationType,  # (1)
+    Content: TableFieldLinkContentConfigurationTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: URLTargetConfigurationType](./literals.md#urltargetconfigurationtype) 
+2. See [:material-code-braces: TableFieldLinkContentConfigurationTypeDef](./type_defs.md#tablefieldlinkcontentconfigurationtypedef) 
+## PivotTableOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableOptionsTypeDef
+
+def get_value() -> PivotTableOptionsTypeDef:
+    return {
+        "MetricPlacement": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableOptionsTypeDef(TypedDict):
+    MetricPlacement: NotRequired[PivotTableMetricPlacementType],  # (1)
+    SingleMetricVisibility: NotRequired[VisibilityType],  # (2)
+    ColumnNamesVisibility: NotRequired[VisibilityType],  # (2)
+    ToggleButtonsVisibility: NotRequired[VisibilityType],  # (2)
+    ColumnHeaderStyle: NotRequired[TableCellStyleTypeDef],  # (5)
+    RowHeaderStyle: NotRequired[TableCellStyleTypeDef],  # (5)
+    CellStyle: NotRequired[TableCellStyleTypeDef],  # (5)
+    RowFieldNamesStyle: NotRequired[TableCellStyleTypeDef],  # (5)
+    RowAlternateColorOptions: NotRequired[RowAlternateColorOptionsTypeDef],  # (9)
+```
+
+1. See [:material-code-brackets: PivotTableMetricPlacementType](./literals.md#pivottablemetricplacementtype) 
+2. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+3. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+4. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+5. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+6. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+7. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+8. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+9. See [:material-code-braces: RowAlternateColorOptionsTypeDef](./type_defs.md#rowalternatecoloroptionstypedef) 
+## PivotTotalOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTotalOptionsTypeDef
+
+def get_value() -> PivotTotalOptionsTypeDef:
+    return {
+        "TotalsVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTotalOptionsTypeDef(TypedDict):
+    TotalsVisibility: NotRequired[VisibilityType],  # (1)
+    Placement: NotRequired[TableTotalsPlacementType],  # (2)
+    ScrollStatus: NotRequired[TableTotalsScrollStatusType],  # (3)
+    CustomLabel: NotRequired[str],
+    TotalCellStyle: NotRequired[TableCellStyleTypeDef],  # (4)
+    ValueCellStyle: NotRequired[TableCellStyleTypeDef],  # (4)
+    MetricHeaderCellStyle: NotRequired[TableCellStyleTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: TableTotalsPlacementType](./literals.md#tabletotalsplacementtype) 
+3. See [:material-code-brackets: TableTotalsScrollStatusType](./literals.md#tabletotalsscrollstatustype) 
+4. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+5. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+6. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+## SubtotalOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SubtotalOptionsTypeDef
+
+def get_value() -> SubtotalOptionsTypeDef:
+    return {
+        "TotalsVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class SubtotalOptionsTypeDef(TypedDict):
+    TotalsVisibility: NotRequired[VisibilityType],  # (1)
+    CustomLabel: NotRequired[str],
+    FieldLevel: NotRequired[PivotTableSubtotalLevelType],  # (2)
+    FieldLevelOptions: NotRequired[Sequence[PivotTableFieldSubtotalOptionsTypeDef]],  # (3)
+    TotalCellStyle: NotRequired[TableCellStyleTypeDef],  # (4)
+    ValueCellStyle: NotRequired[TableCellStyleTypeDef],  # (4)
+    MetricHeaderCellStyle: NotRequired[TableCellStyleTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: PivotTableSubtotalLevelType](./literals.md#pivottablesubtotalleveltype) 
+3. See [:material-code-braces: PivotTableFieldSubtotalOptionsTypeDef](./type_defs.md#pivottablefieldsubtotaloptionstypedef) 
+4. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+5. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+6. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+## TableOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableOptionsTypeDef
+
+def get_value() -> TableOptionsTypeDef:
+    return {
+        "Orientation": ...,
+    }
+```
+
+```python title="Definition"
+class TableOptionsTypeDef(TypedDict):
+    Orientation: NotRequired[TableOrientationType],  # (1)
+    HeaderStyle: NotRequired[TableCellStyleTypeDef],  # (2)
+    CellStyle: NotRequired[TableCellStyleTypeDef],  # (2)
+    RowAlternateColorOptions: NotRequired[RowAlternateColorOptionsTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: TableOrientationType](./literals.md#tableorientationtype) 
+2. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+3. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+4. See [:material-code-braces: RowAlternateColorOptionsTypeDef](./type_defs.md#rowalternatecoloroptionstypedef) 
+## TotalOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TotalOptionsTypeDef
+
+def get_value() -> TotalOptionsTypeDef:
+    return {
+        "TotalsVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class TotalOptionsTypeDef(TypedDict):
+    TotalsVisibility: NotRequired[VisibilityType],  # (1)
+    Placement: NotRequired[TableTotalsPlacementType],  # (2)
+    ScrollStatus: NotRequired[TableTotalsScrollStatusType],  # (3)
+    CustomLabel: NotRequired[str],
+    TotalCellStyle: NotRequired[TableCellStyleTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: TableTotalsPlacementType](./literals.md#tabletotalsplacementtype) 
+3. See [:material-code-brackets: TableTotalsScrollStatusType](./literals.md#tabletotalsscrollstatustype) 
+4. See [:material-code-braces: TableCellStyleTypeDef](./type_defs.md#tablecellstyletypedef) 
+## GaugeChartArcConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartArcConditionalFormattingTypeDef
+
+def get_value() -> GaugeChartArcConditionalFormattingTypeDef:
+    return {
+        "ForegroundColor": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartArcConditionalFormattingTypeDef(TypedDict):
+    ForegroundColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+## GaugeChartPrimaryValueConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartPrimaryValueConditionalFormattingTypeDef
+
+def get_value() -> GaugeChartPrimaryValueConditionalFormattingTypeDef:
+    return {
+        "TextColor": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartPrimaryValueConditionalFormattingTypeDef(TypedDict):
+    TextColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+    Icon: NotRequired[ConditionalFormattingIconTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+2. See [:material-code-braces: ConditionalFormattingIconTypeDef](./type_defs.md#conditionalformattingicontypedef) 
+## KPIPrimaryValueConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIPrimaryValueConditionalFormattingTypeDef
+
+def get_value() -> KPIPrimaryValueConditionalFormattingTypeDef:
+    return {
+        "TextColor": ...,
+    }
+```
+
+```python title="Definition"
+class KPIPrimaryValueConditionalFormattingTypeDef(TypedDict):
+    TextColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+    Icon: NotRequired[ConditionalFormattingIconTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+2. See [:material-code-braces: ConditionalFormattingIconTypeDef](./type_defs.md#conditionalformattingicontypedef) 
+## KPIProgressBarConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIProgressBarConditionalFormattingTypeDef
+
+def get_value() -> KPIProgressBarConditionalFormattingTypeDef:
+    return {
+        "ForegroundColor": ...,
+    }
+```
+
+```python title="Definition"
+class KPIProgressBarConditionalFormattingTypeDef(TypedDict):
+    ForegroundColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+## ShapeConditionalFormatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ShapeConditionalFormatTypeDef
+
+def get_value() -> ShapeConditionalFormatTypeDef:
+    return {
+        "BackgroundColor": ...,
+    }
+```
+
+```python title="Definition"
+class ShapeConditionalFormatTypeDef(TypedDict):
+    BackgroundColor: ConditionalFormattingColorTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+## TableRowConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableRowConditionalFormattingTypeDef
+
+def get_value() -> TableRowConditionalFormattingTypeDef:
+    return {
+        "BackgroundColor": ...,
+    }
+```
+
+```python title="Definition"
+class TableRowConditionalFormattingTypeDef(TypedDict):
+    BackgroundColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+    TextColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+2. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+## TextConditionalFormatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TextConditionalFormatTypeDef
+
+def get_value() -> TextConditionalFormatTypeDef:
+    return {
+        "BackgroundColor": ...,
+    }
+```
+
+```python title="Definition"
+class TextConditionalFormatTypeDef(TypedDict):
+    BackgroundColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+    TextColor: NotRequired[ConditionalFormattingColorTypeDef],  # (1)
+    Icon: NotRequired[ConditionalFormattingIconTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+2. See [:material-code-braces: ConditionalFormattingColorTypeDef](./type_defs.md#conditionalformattingcolortypedef) 
+3. See [:material-code-braces: ConditionalFormattingIconTypeDef](./type_defs.md#conditionalformattingicontypedef) 
+## SheetControlLayoutTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetControlLayoutTypeDef
+
+def get_value() -> SheetControlLayoutTypeDef:
+    return {
+        "Configuration": ...,
+    }
+```
+
+```python title="Definition"
+class SheetControlLayoutTypeDef(TypedDict):
+    Configuration: SheetControlLayoutConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: SheetControlLayoutConfigurationTypeDef](./type_defs.md#sheetcontrollayoutconfigurationtypedef) 
 ## DataSourceCredentialsTypeDef
 
 ```python title="Usage Example"
@@ -8993,6 +14045,240 @@ class UpdateThemeRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef) 
+## ComparisonConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComparisonConfigurationTypeDef
+
+def get_value() -> ComparisonConfigurationTypeDef:
+    return {
+        "ComparisonMethod": ...,
+    }
+```
+
+```python title="Definition"
+class ComparisonConfigurationTypeDef(TypedDict):
+    ComparisonMethod: NotRequired[ComparisonMethodType],  # (1)
+    ComparisonFormat: NotRequired[ComparisonFormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ComparisonMethodType](./literals.md#comparisonmethodtype) 
+2. See [:material-code-braces: ComparisonFormatConfigurationTypeDef](./type_defs.md#comparisonformatconfigurationtypedef) 
+## DateTimeFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateTimeFormatConfigurationTypeDef
+
+def get_value() -> DateTimeFormatConfigurationTypeDef:
+    return {
+        "DateTimeFormat": ...,
+    }
+```
+
+```python title="Definition"
+class DateTimeFormatConfigurationTypeDef(TypedDict):
+    DateTimeFormat: NotRequired[str],
+    NullValueFormatConfiguration: NotRequired[NullValueFormatConfigurationTypeDef],  # (1)
+    NumericFormatConfiguration: NotRequired[NumericFormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: NullValueFormatConfigurationTypeDef](./type_defs.md#nullvalueformatconfigurationtypedef) 
+2. See [:material-code-braces: NumericFormatConfigurationTypeDef](./type_defs.md#numericformatconfigurationtypedef) 
+## NumberFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumberFormatConfigurationTypeDef
+
+def get_value() -> NumberFormatConfigurationTypeDef:
+    return {
+        "FormatConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class NumberFormatConfigurationTypeDef(TypedDict):
+    FormatConfiguration: NotRequired[NumericFormatConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: NumericFormatConfigurationTypeDef](./type_defs.md#numericformatconfigurationtypedef) 
+## ReferenceLineValueLabelConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineValueLabelConfigurationTypeDef
+
+def get_value() -> ReferenceLineValueLabelConfigurationTypeDef:
+    return {
+        "RelativePosition": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineValueLabelConfigurationTypeDef(TypedDict):
+    RelativePosition: NotRequired[ReferenceLineValueLabelRelativePositionType],  # (1)
+    FormatConfiguration: NotRequired[NumericFormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ReferenceLineValueLabelRelativePositionType](./literals.md#referencelinevaluelabelrelativepositiontype) 
+2. See [:material-code-braces: NumericFormatConfigurationTypeDef](./type_defs.md#numericformatconfigurationtypedef) 
+## StringFormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import StringFormatConfigurationTypeDef
+
+def get_value() -> StringFormatConfigurationTypeDef:
+    return {
+        "NullValueFormatConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class StringFormatConfigurationTypeDef(TypedDict):
+    NullValueFormatConfiguration: NotRequired[NullValueFormatConfigurationTypeDef],  # (1)
+    NumericFormatConfiguration: NotRequired[NumericFormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: NullValueFormatConfigurationTypeDef](./type_defs.md#nullvalueformatconfigurationtypedef) 
+2. See [:material-code-braces: NumericFormatConfigurationTypeDef](./type_defs.md#numericformatconfigurationtypedef) 
+## TopBottomFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TopBottomFilterTypeDef
+
+def get_value() -> TopBottomFilterTypeDef:
+    return {
+        "FilterId": ...,
+        "Column": ...,
+        "AggregationSortConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class TopBottomFilterTypeDef(TypedDict):
+    FilterId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    AggregationSortConfigurations: Sequence[AggregationSortConfigurationTypeDef],  # (2)
+    Limit: NotRequired[int],
+    TimeGranularity: NotRequired[TimeGranularityType],  # (3)
+    ParameterName: NotRequired[str],
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: AggregationSortConfigurationTypeDef](./type_defs.md#aggregationsortconfigurationtypedef) 
+3. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+## FieldSortOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FieldSortOptionsTypeDef
+
+def get_value() -> FieldSortOptionsTypeDef:
+    return {
+        "FieldSort": ...,
+    }
+```
+
+```python title="Definition"
+class FieldSortOptionsTypeDef(TypedDict):
+    FieldSort: NotRequired[FieldSortTypeDef],  # (1)
+    ColumnSort: NotRequired[ColumnSortTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortTypeDef](./type_defs.md#fieldsorttypedef) 
+2. See [:material-code-braces: ColumnSortTypeDef](./type_defs.md#columnsorttypedef) 
+## PivotTableSortByTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableSortByTypeDef
+
+def get_value() -> PivotTableSortByTypeDef:
+    return {
+        "Field": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableSortByTypeDef(TypedDict):
+    Field: NotRequired[FieldSortTypeDef],  # (1)
+    Column: NotRequired[ColumnSortTypeDef],  # (2)
+    DataPath: NotRequired[DataPathSortTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FieldSortTypeDef](./type_defs.md#fieldsorttypedef) 
+2. See [:material-code-braces: ColumnSortTypeDef](./type_defs.md#columnsorttypedef) 
+3. See [:material-code-braces: DataPathSortTypeDef](./type_defs.md#datapathsorttypedef) 
+## TooltipItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TooltipItemTypeDef
+
+def get_value() -> TooltipItemTypeDef:
+    return {
+        "FieldTooltipItem": ...,
+    }
+```
+
+```python title="Definition"
+class TooltipItemTypeDef(TypedDict):
+    FieldTooltipItem: NotRequired[FieldTooltipItemTypeDef],  # (1)
+    ColumnTooltipItem: NotRequired[ColumnTooltipItemTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldTooltipItemTypeDef](./type_defs.md#fieldtooltipitemtypedef) 
+2. See [:material-code-braces: ColumnTooltipItemTypeDef](./type_defs.md#columntooltipitemtypedef) 
+## ReferenceLineDataConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineDataConfigurationTypeDef
+
+def get_value() -> ReferenceLineDataConfigurationTypeDef:
+    return {
+        "StaticConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineDataConfigurationTypeDef(TypedDict):
+    StaticConfiguration: NotRequired[ReferenceLineStaticDataConfigurationTypeDef],  # (1)
+    DynamicConfiguration: NotRequired[ReferenceLineDynamicDataConfigurationTypeDef],  # (2)
+    AxisBinding: NotRequired[AxisBindingType],  # (3)
+```
+
+1. See [:material-code-braces: ReferenceLineStaticDataConfigurationTypeDef](./type_defs.md#referencelinestaticdataconfigurationtypedef) 
+2. See [:material-code-braces: ReferenceLineDynamicDataConfigurationTypeDef](./type_defs.md#referencelinedynamicdataconfigurationtypedef) 
+3. See [:material-code-brackets: AxisBindingType](./literals.md#axisbindingtype) 
+## DefaultPaginatedLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DefaultPaginatedLayoutConfigurationTypeDef
+
+def get_value() -> DefaultPaginatedLayoutConfigurationTypeDef:
+    return {
+        "SectionBased": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultPaginatedLayoutConfigurationTypeDef(TypedDict):
+    SectionBased: NotRequired[DefaultSectionBasedLayoutConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DefaultSectionBasedLayoutConfigurationTypeDef](./type_defs.md#defaultsectionbasedlayoutconfigurationtypedef) 
+## SectionLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SectionLayoutConfigurationTypeDef
+
+def get_value() -> SectionLayoutConfigurationTypeDef:
+    return {
+        "FreeFormLayout": ...,
+    }
+```
+
+```python title="Definition"
+class SectionLayoutConfigurationTypeDef(TypedDict):
+    FreeFormLayout: FreeFormSectionLayoutConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: FreeFormSectionLayoutConfigurationTypeDef](./type_defs.md#freeformsectionlayoutconfigurationtypedef) 
 ## CreateDataSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9142,6 +14428,240 @@ class DescribeTemplateResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VisualCustomActionOperationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualCustomActionOperationTypeDef
+
+def get_value() -> VisualCustomActionOperationTypeDef:
+    return {
+        "FilterOperation": ...,
+    }
+```
+
+```python title="Definition"
+class VisualCustomActionOperationTypeDef(TypedDict):
+    FilterOperation: NotRequired[CustomActionFilterOperationTypeDef],  # (1)
+    NavigationOperation: NotRequired[CustomActionNavigationOperationTypeDef],  # (2)
+    URLOperation: NotRequired[CustomActionURLOperationTypeDef],  # (3)
+    SetParametersOperation: NotRequired[CustomActionSetParametersOperationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: CustomActionFilterOperationTypeDef](./type_defs.md#customactionfilteroperationtypedef) 
+2. See [:material-code-braces: CustomActionNavigationOperationTypeDef](./type_defs.md#customactionnavigationoperationtypedef) 
+3. See [:material-code-braces: CustomActionURLOperationTypeDef](./type_defs.md#customactionurloperationtypedef) 
+4. See [:material-code-braces: CustomActionSetParametersOperationTypeDef](./type_defs.md#customactionsetparametersoperationtypedef) 
+## LineSeriesAxisDisplayOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineSeriesAxisDisplayOptionsTypeDef
+
+def get_value() -> LineSeriesAxisDisplayOptionsTypeDef:
+    return {
+        "AxisOptions": ...,
+    }
+```
+
+```python title="Definition"
+class LineSeriesAxisDisplayOptionsTypeDef(TypedDict):
+    AxisOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (1)
+    MissingDataConfigurations: NotRequired[Sequence[MissingDataConfigurationTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+2. See [:material-code-braces: MissingDataConfigurationTypeDef](./type_defs.md#missingdataconfigurationtypedef) 
+## FilterControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterControlTypeDef
+
+def get_value() -> FilterControlTypeDef:
+    return {
+        "DateTimePicker": ...,
+    }
+```
+
+```python title="Definition"
+class FilterControlTypeDef(TypedDict):
+    DateTimePicker: NotRequired[FilterDateTimePickerControlTypeDef],  # (1)
+    List: NotRequired[FilterListControlTypeDef],  # (2)
+    Dropdown: NotRequired[FilterDropDownControlTypeDef],  # (3)
+    TextField: NotRequired[FilterTextFieldControlTypeDef],  # (4)
+    TextArea: NotRequired[FilterTextAreaControlTypeDef],  # (5)
+    Slider: NotRequired[FilterSliderControlTypeDef],  # (6)
+    RelativeDateTime: NotRequired[FilterRelativeDateTimeControlTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: FilterDateTimePickerControlTypeDef](./type_defs.md#filterdatetimepickercontroltypedef) 
+2. See [:material-code-braces: FilterListControlTypeDef](./type_defs.md#filterlistcontroltypedef) 
+3. See [:material-code-braces: FilterDropDownControlTypeDef](./type_defs.md#filterdropdowncontroltypedef) 
+4. See [:material-code-braces: FilterTextFieldControlTypeDef](./type_defs.md#filtertextfieldcontroltypedef) 
+5. See [:material-code-braces: FilterTextAreaControlTypeDef](./type_defs.md#filtertextareacontroltypedef) 
+6. See [:material-code-braces: FilterSliderControlTypeDef](./type_defs.md#filterslidercontroltypedef) 
+7. See [:material-code-braces: FilterRelativeDateTimeControlTypeDef](./type_defs.md#filterrelativedatetimecontroltypedef) 
+## ParameterControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ParameterControlTypeDef
+
+def get_value() -> ParameterControlTypeDef:
+    return {
+        "DateTimePicker": ...,
+    }
+```
+
+```python title="Definition"
+class ParameterControlTypeDef(TypedDict):
+    DateTimePicker: NotRequired[ParameterDateTimePickerControlTypeDef],  # (1)
+    List: NotRequired[ParameterListControlTypeDef],  # (2)
+    Dropdown: NotRequired[ParameterDropDownControlTypeDef],  # (3)
+    TextField: NotRequired[ParameterTextFieldControlTypeDef],  # (4)
+    TextArea: NotRequired[ParameterTextAreaControlTypeDef],  # (5)
+    Slider: NotRequired[ParameterSliderControlTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: ParameterDateTimePickerControlTypeDef](./type_defs.md#parameterdatetimepickercontroltypedef) 
+2. See [:material-code-braces: ParameterListControlTypeDef](./type_defs.md#parameterlistcontroltypedef) 
+3. See [:material-code-braces: ParameterDropDownControlTypeDef](./type_defs.md#parameterdropdowncontroltypedef) 
+4. See [:material-code-braces: ParameterTextFieldControlTypeDef](./type_defs.md#parametertextfieldcontroltypedef) 
+5. See [:material-code-braces: ParameterTextAreaControlTypeDef](./type_defs.md#parametertextareacontroltypedef) 
+6. See [:material-code-braces: ParameterSliderControlTypeDef](./type_defs.md#parameterslidercontroltypedef) 
+## TableFieldURLConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldURLConfigurationTypeDef
+
+def get_value() -> TableFieldURLConfigurationTypeDef:
+    return {
+        "LinkConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldURLConfigurationTypeDef(TypedDict):
+    LinkConfiguration: NotRequired[TableFieldLinkConfigurationTypeDef],  # (1)
+    ImageConfiguration: NotRequired[TableFieldImageConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TableFieldLinkConfigurationTypeDef](./type_defs.md#tablefieldlinkconfigurationtypedef) 
+2. See [:material-code-braces: TableFieldImageConfigurationTypeDef](./type_defs.md#tablefieldimageconfigurationtypedef) 
+## PivotTableTotalOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableTotalOptionsTypeDef
+
+def get_value() -> PivotTableTotalOptionsTypeDef:
+    return {
+        "RowSubtotalOptions": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableTotalOptionsTypeDef(TypedDict):
+    RowSubtotalOptions: NotRequired[SubtotalOptionsTypeDef],  # (1)
+    ColumnSubtotalOptions: NotRequired[SubtotalOptionsTypeDef],  # (1)
+    RowTotalOptions: NotRequired[PivotTotalOptionsTypeDef],  # (3)
+    ColumnTotalOptions: NotRequired[PivotTotalOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: SubtotalOptionsTypeDef](./type_defs.md#subtotaloptionstypedef) 
+2. See [:material-code-braces: SubtotalOptionsTypeDef](./type_defs.md#subtotaloptionstypedef) 
+3. See [:material-code-braces: PivotTotalOptionsTypeDef](./type_defs.md#pivottotaloptionstypedef) 
+4. See [:material-code-braces: PivotTotalOptionsTypeDef](./type_defs.md#pivottotaloptionstypedef) 
+## GaugeChartConditionalFormattingOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartConditionalFormattingOptionTypeDef
+
+def get_value() -> GaugeChartConditionalFormattingOptionTypeDef:
+    return {
+        "PrimaryValue": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartConditionalFormattingOptionTypeDef(TypedDict):
+    PrimaryValue: NotRequired[GaugeChartPrimaryValueConditionalFormattingTypeDef],  # (1)
+    Arc: NotRequired[GaugeChartArcConditionalFormattingTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: GaugeChartPrimaryValueConditionalFormattingTypeDef](./type_defs.md#gaugechartprimaryvalueconditionalformattingtypedef) 
+2. See [:material-code-braces: GaugeChartArcConditionalFormattingTypeDef](./type_defs.md#gaugechartarcconditionalformattingtypedef) 
+## KPIConditionalFormattingOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIConditionalFormattingOptionTypeDef
+
+def get_value() -> KPIConditionalFormattingOptionTypeDef:
+    return {
+        "PrimaryValue": ...,
+    }
+```
+
+```python title="Definition"
+class KPIConditionalFormattingOptionTypeDef(TypedDict):
+    PrimaryValue: NotRequired[KPIPrimaryValueConditionalFormattingTypeDef],  # (1)
+    ProgressBar: NotRequired[KPIProgressBarConditionalFormattingTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: KPIPrimaryValueConditionalFormattingTypeDef](./type_defs.md#kpiprimaryvalueconditionalformattingtypedef) 
+2. See [:material-code-braces: KPIProgressBarConditionalFormattingTypeDef](./type_defs.md#kpiprogressbarconditionalformattingtypedef) 
+## FilledMapShapeConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapShapeConditionalFormattingTypeDef
+
+def get_value() -> FilledMapShapeConditionalFormattingTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapShapeConditionalFormattingTypeDef(TypedDict):
+    FieldId: str,
+    Format: NotRequired[ShapeConditionalFormatTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ShapeConditionalFormatTypeDef](./type_defs.md#shapeconditionalformattypedef) 
+## PivotTableCellConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableCellConditionalFormattingTypeDef
+
+def get_value() -> PivotTableCellConditionalFormattingTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableCellConditionalFormattingTypeDef(TypedDict):
+    FieldId: str,
+    TextFormat: NotRequired[TextConditionalFormatTypeDef],  # (1)
+    Scope: NotRequired[PivotTableConditionalFormattingScopeTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TextConditionalFormatTypeDef](./type_defs.md#textconditionalformattypedef) 
+2. See [:material-code-braces: PivotTableConditionalFormattingScopeTypeDef](./type_defs.md#pivottableconditionalformattingscopetypedef) 
+## TableCellConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableCellConditionalFormattingTypeDef
+
+def get_value() -> TableCellConditionalFormattingTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class TableCellConditionalFormattingTypeDef(TypedDict):
+    FieldId: str,
+    TextFormat: NotRequired[TextConditionalFormatTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TextConditionalFormatTypeDef](./type_defs.md#textconditionalformattypedef) 
 ## CreateDataSourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9229,6 +14749,662 @@ class ThemeTypeDef(TypedDict):
 
 1. See [:material-code-braces: ThemeVersionTypeDef](./type_defs.md#themeversiontypedef) 
 2. See [:material-code-brackets: ThemeTypeType](./literals.md#themetypetype) 
+## GaugeChartOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartOptionsTypeDef
+
+def get_value() -> GaugeChartOptionsTypeDef:
+    return {
+        "PrimaryValueDisplayType": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartOptionsTypeDef(TypedDict):
+    PrimaryValueDisplayType: NotRequired[PrimaryValueDisplayTypeType],  # (1)
+    Comparison: NotRequired[ComparisonConfigurationTypeDef],  # (2)
+    ArcAxis: NotRequired[ArcAxisConfigurationTypeDef],  # (3)
+    Arc: NotRequired[ArcConfigurationTypeDef],  # (4)
+    PrimaryValueFontConfiguration: NotRequired[FontConfigurationTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: PrimaryValueDisplayTypeType](./literals.md#primaryvaluedisplaytypetype) 
+2. See [:material-code-braces: ComparisonConfigurationTypeDef](./type_defs.md#comparisonconfigurationtypedef) 
+3. See [:material-code-braces: ArcAxisConfigurationTypeDef](./type_defs.md#arcaxisconfigurationtypedef) 
+4. See [:material-code-braces: ArcConfigurationTypeDef](./type_defs.md#arcconfigurationtypedef) 
+5. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+## KPIOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIOptionsTypeDef
+
+def get_value() -> KPIOptionsTypeDef:
+    return {
+        "ProgressBar": ...,
+    }
+```
+
+```python title="Definition"
+class KPIOptionsTypeDef(TypedDict):
+    ProgressBar: NotRequired[ProgressBarOptionsTypeDef],  # (1)
+    TrendArrows: NotRequired[TrendArrowOptionsTypeDef],  # (2)
+    SecondaryValue: NotRequired[SecondaryValueOptionsTypeDef],  # (3)
+    Comparison: NotRequired[ComparisonConfigurationTypeDef],  # (4)
+    PrimaryValueDisplayType: NotRequired[PrimaryValueDisplayTypeType],  # (5)
+    PrimaryValueFontConfiguration: NotRequired[FontConfigurationTypeDef],  # (6)
+    SecondaryValueFontConfiguration: NotRequired[FontConfigurationTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: ProgressBarOptionsTypeDef](./type_defs.md#progressbaroptionstypedef) 
+2. See [:material-code-braces: TrendArrowOptionsTypeDef](./type_defs.md#trendarrowoptionstypedef) 
+3. See [:material-code-braces: SecondaryValueOptionsTypeDef](./type_defs.md#secondaryvalueoptionstypedef) 
+4. See [:material-code-braces: ComparisonConfigurationTypeDef](./type_defs.md#comparisonconfigurationtypedef) 
+5. See [:material-code-brackets: PrimaryValueDisplayTypeType](./literals.md#primaryvaluedisplaytypetype) 
+6. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+7. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+## DateDimensionFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateDimensionFieldTypeDef
+
+def get_value() -> DateDimensionFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class DateDimensionFieldTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    DateGranularity: NotRequired[TimeGranularityType],  # (2)
+    HierarchyId: NotRequired[str],
+    FormatConfiguration: NotRequired[DateTimeFormatConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+3. See [:material-code-braces: DateTimeFormatConfigurationTypeDef](./type_defs.md#datetimeformatconfigurationtypedef) 
+## DateMeasureFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DateMeasureFieldTypeDef
+
+def get_value() -> DateMeasureFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class DateMeasureFieldTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    AggregationFunction: NotRequired[DateAggregationFunctionType],  # (2)
+    FormatConfiguration: NotRequired[DateTimeFormatConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: DateAggregationFunctionType](./literals.md#dateaggregationfunctiontype) 
+3. See [:material-code-braces: DateTimeFormatConfigurationTypeDef](./type_defs.md#datetimeformatconfigurationtypedef) 
+## NumericalDimensionFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericalDimensionFieldTypeDef
+
+def get_value() -> NumericalDimensionFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class NumericalDimensionFieldTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    HierarchyId: NotRequired[str],
+    FormatConfiguration: NotRequired[NumberFormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: NumberFormatConfigurationTypeDef](./type_defs.md#numberformatconfigurationtypedef) 
+## NumericalMeasureFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import NumericalMeasureFieldTypeDef
+
+def get_value() -> NumericalMeasureFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class NumericalMeasureFieldTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    AggregationFunction: NotRequired[NumericalAggregationFunctionTypeDef],  # (2)
+    FormatConfiguration: NotRequired[NumberFormatConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: NumericalAggregationFunctionTypeDef](./type_defs.md#numericalaggregationfunctiontypedef) 
+3. See [:material-code-braces: NumberFormatConfigurationTypeDef](./type_defs.md#numberformatconfigurationtypedef) 
+## ReferenceLineLabelConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineLabelConfigurationTypeDef
+
+def get_value() -> ReferenceLineLabelConfigurationTypeDef:
+    return {
+        "ValueLabelConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineLabelConfigurationTypeDef(TypedDict):
+    ValueLabelConfiguration: NotRequired[ReferenceLineValueLabelConfigurationTypeDef],  # (1)
+    CustomLabelConfiguration: NotRequired[ReferenceLineCustomLabelConfigurationTypeDef],  # (2)
+    FontConfiguration: NotRequired[FontConfigurationTypeDef],  # (3)
+    FontColor: NotRequired[str],
+    HorizontalPosition: NotRequired[ReferenceLineLabelHorizontalPositionType],  # (4)
+    VerticalPosition: NotRequired[ReferenceLineLabelVerticalPositionType],  # (5)
+```
+
+1. See [:material-code-braces: ReferenceLineValueLabelConfigurationTypeDef](./type_defs.md#referencelinevaluelabelconfigurationtypedef) 
+2. See [:material-code-braces: ReferenceLineCustomLabelConfigurationTypeDef](./type_defs.md#referencelinecustomlabelconfigurationtypedef) 
+3. See [:material-code-braces: FontConfigurationTypeDef](./type_defs.md#fontconfigurationtypedef) 
+4. See [:material-code-brackets: ReferenceLineLabelHorizontalPositionType](./literals.md#referencelinelabelhorizontalpositiontype) 
+5. See [:material-code-brackets: ReferenceLineLabelVerticalPositionType](./literals.md#referencelinelabelverticalpositiontype) 
+## CategoricalDimensionFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CategoricalDimensionFieldTypeDef
+
+def get_value() -> CategoricalDimensionFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class CategoricalDimensionFieldTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    HierarchyId: NotRequired[str],
+    FormatConfiguration: NotRequired[StringFormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: StringFormatConfigurationTypeDef](./type_defs.md#stringformatconfigurationtypedef) 
+## CategoricalMeasureFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CategoricalMeasureFieldTypeDef
+
+def get_value() -> CategoricalMeasureFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class CategoricalMeasureFieldTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    AggregationFunction: NotRequired[CategoricalAggregationFunctionType],  # (2)
+    FormatConfiguration: NotRequired[StringFormatConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-brackets: CategoricalAggregationFunctionType](./literals.md#categoricalaggregationfunctiontype) 
+3. See [:material-code-braces: StringFormatConfigurationTypeDef](./type_defs.md#stringformatconfigurationtypedef) 
+## FormatConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FormatConfigurationTypeDef
+
+def get_value() -> FormatConfigurationTypeDef:
+    return {
+        "StringFormatConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class FormatConfigurationTypeDef(TypedDict):
+    StringFormatConfiguration: NotRequired[StringFormatConfigurationTypeDef],  # (1)
+    NumberFormatConfiguration: NotRequired[NumberFormatConfigurationTypeDef],  # (2)
+    DateTimeFormatConfiguration: NotRequired[DateTimeFormatConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: StringFormatConfigurationTypeDef](./type_defs.md#stringformatconfigurationtypedef) 
+2. See [:material-code-braces: NumberFormatConfigurationTypeDef](./type_defs.md#numberformatconfigurationtypedef) 
+3. See [:material-code-braces: DateTimeFormatConfigurationTypeDef](./type_defs.md#datetimeformatconfigurationtypedef) 
+## FilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "CategoryFilter": ...,
+    }
+```
+
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    CategoryFilter: NotRequired[CategoryFilterTypeDef],  # (1)
+    NumericRangeFilter: NotRequired[NumericRangeFilterTypeDef],  # (2)
+    NumericEqualityFilter: NotRequired[NumericEqualityFilterTypeDef],  # (3)
+    TimeEqualityFilter: NotRequired[TimeEqualityFilterTypeDef],  # (4)
+    TimeRangeFilter: NotRequired[TimeRangeFilterTypeDef],  # (5)
+    RelativeDatesFilter: NotRequired[RelativeDatesFilterTypeDef],  # (6)
+    TopBottomFilter: NotRequired[TopBottomFilterTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: CategoryFilterTypeDef](./type_defs.md#categoryfiltertypedef) 
+2. See [:material-code-braces: NumericRangeFilterTypeDef](./type_defs.md#numericrangefiltertypedef) 
+3. See [:material-code-braces: NumericEqualityFilterTypeDef](./type_defs.md#numericequalityfiltertypedef) 
+4. See [:material-code-braces: TimeEqualityFilterTypeDef](./type_defs.md#timeequalityfiltertypedef) 
+5. See [:material-code-braces: TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef) 
+6. See [:material-code-braces: RelativeDatesFilterTypeDef](./type_defs.md#relativedatesfiltertypedef) 
+7. See [:material-code-braces: TopBottomFilterTypeDef](./type_defs.md#topbottomfiltertypedef) 
+## BarChartSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BarChartSortConfigurationTypeDef
+
+def get_value() -> BarChartSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class BarChartSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    CategoryItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    ColorSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    ColorItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    SmallMultiplesSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    SmallMultiplesLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+3. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+4. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+5. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+6. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## BoxPlotSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BoxPlotSortConfigurationTypeDef
+
+def get_value() -> BoxPlotSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class BoxPlotSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    PaginationConfiguration: NotRequired[PaginationConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: PaginationConfigurationTypeDef](./type_defs.md#paginationconfigurationtypedef) 
+## ComboChartSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComboChartSortConfigurationTypeDef
+
+def get_value() -> ComboChartSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class ComboChartSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    CategoryItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    ColorSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    ColorItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+3. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+4. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## FilledMapSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapSortConfigurationTypeDef
+
+def get_value() -> FilledMapSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+## FunnelChartSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FunnelChartSortConfigurationTypeDef
+
+def get_value() -> FunnelChartSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class FunnelChartSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    CategoryItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## HeatMapSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HeatMapSortConfigurationTypeDef
+
+def get_value() -> HeatMapSortConfigurationTypeDef:
+    return {
+        "HeatMapRowSort": ...,
+    }
+```
+
+```python title="Definition"
+class HeatMapSortConfigurationTypeDef(TypedDict):
+    HeatMapRowSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    HeatMapColumnSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    HeatMapRowItemsLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (3)
+    HeatMapColumnItemsLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+3. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+4. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## KPISortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPISortConfigurationTypeDef
+
+def get_value() -> KPISortConfigurationTypeDef:
+    return {
+        "TrendGroupSort": ...,
+    }
+```
+
+```python title="Definition"
+class KPISortConfigurationTypeDef(TypedDict):
+    TrendGroupSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+## LineChartSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartSortConfigurationTypeDef
+
+def get_value() -> LineChartSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    CategoryItemsLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    ColorItemsLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    SmallMultiplesSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    SmallMultiplesLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+3. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+4. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+5. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## PieChartSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PieChartSortConfigurationTypeDef
+
+def get_value() -> PieChartSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class PieChartSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    CategoryItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    SmallMultiplesSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    SmallMultiplesLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+3. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+4. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## SankeyDiagramSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SankeyDiagramSortConfigurationTypeDef
+
+def get_value() -> SankeyDiagramSortConfigurationTypeDef:
+    return {
+        "WeightSort": ...,
+    }
+```
+
+```python title="Definition"
+class SankeyDiagramSortConfigurationTypeDef(TypedDict):
+    WeightSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    SourceItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    DestinationItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+3. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## TableSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableSortConfigurationTypeDef
+
+def get_value() -> TableSortConfigurationTypeDef:
+    return {
+        "RowSort": ...,
+    }
+```
+
+```python title="Definition"
+class TableSortConfigurationTypeDef(TypedDict):
+    RowSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    PaginationConfiguration: NotRequired[PaginationConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: PaginationConfigurationTypeDef](./type_defs.md#paginationconfigurationtypedef) 
+## TreeMapSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TreeMapSortConfigurationTypeDef
+
+def get_value() -> TreeMapSortConfigurationTypeDef:
+    return {
+        "TreeMapSort": ...,
+    }
+```
+
+```python title="Definition"
+class TreeMapSortConfigurationTypeDef(TypedDict):
+    TreeMapSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    TreeMapGroupItemsLimitConfiguration: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## WaterfallChartSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WaterfallChartSortConfigurationTypeDef
+
+def get_value() -> WaterfallChartSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class WaterfallChartSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    BreakdownItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## WordCloudSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WordCloudSortConfigurationTypeDef
+
+def get_value() -> WordCloudSortConfigurationTypeDef:
+    return {
+        "CategoryItemsLimit": ...,
+    }
+```
+
+```python title="Definition"
+class WordCloudSortConfigurationTypeDef(TypedDict):
+    CategoryItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (1)
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+2. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+## PivotFieldSortOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotFieldSortOptionsTypeDef
+
+def get_value() -> PivotFieldSortOptionsTypeDef:
+    return {
+        "FieldId": ...,
+        "SortBy": ...,
+    }
+```
+
+```python title="Definition"
+class PivotFieldSortOptionsTypeDef(TypedDict):
+    FieldId: str,
+    SortBy: PivotTableSortByTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: PivotTableSortByTypeDef](./type_defs.md#pivottablesortbytypedef) 
+## FieldBasedTooltipTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FieldBasedTooltipTypeDef
+
+def get_value() -> FieldBasedTooltipTypeDef:
+    return {
+        "AggregationVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class FieldBasedTooltipTypeDef(TypedDict):
+    AggregationVisibility: NotRequired[VisibilityType],  # (1)
+    TooltipTitleType: NotRequired[TooltipTitleTypeType],  # (2)
+    TooltipFields: NotRequired[Sequence[TooltipItemTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: TooltipTitleTypeType](./literals.md#tooltiptitletypetype) 
+3. See [:material-code-braces: TooltipItemTypeDef](./type_defs.md#tooltipitemtypedef) 
+## DefaultNewSheetConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DefaultNewSheetConfigurationTypeDef
+
+def get_value() -> DefaultNewSheetConfigurationTypeDef:
+    return {
+        "InteractiveLayoutConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultNewSheetConfigurationTypeDef(TypedDict):
+    InteractiveLayoutConfiguration: NotRequired[DefaultInteractiveLayoutConfigurationTypeDef],  # (1)
+    PaginatedLayoutConfiguration: NotRequired[DefaultPaginatedLayoutConfigurationTypeDef],  # (2)
+    SheetContentType: NotRequired[SheetContentTypeType],  # (3)
+```
+
+1. See [:material-code-braces: DefaultInteractiveLayoutConfigurationTypeDef](./type_defs.md#defaultinteractivelayoutconfigurationtypedef) 
+2. See [:material-code-braces: DefaultPaginatedLayoutConfigurationTypeDef](./type_defs.md#defaultpaginatedlayoutconfigurationtypedef) 
+3. See [:material-code-brackets: SheetContentTypeType](./literals.md#sheetcontenttypetype) 
+## BodySectionContentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BodySectionContentTypeDef
+
+def get_value() -> BodySectionContentTypeDef:
+    return {
+        "Layout": ...,
+    }
+```
+
+```python title="Definition"
+class BodySectionContentTypeDef(TypedDict):
+    Layout: NotRequired[SectionLayoutConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SectionLayoutConfigurationTypeDef](./type_defs.md#sectionlayoutconfigurationtypedef) 
+## HeaderFooterSectionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HeaderFooterSectionConfigurationTypeDef
+
+def get_value() -> HeaderFooterSectionConfigurationTypeDef:
+    return {
+        "SectionId": ...,
+        "Layout": ...,
+    }
+```
+
+```python title="Definition"
+class HeaderFooterSectionConfigurationTypeDef(TypedDict):
+    SectionId: str,
+    Layout: SectionLayoutConfigurationTypeDef,  # (1)
+    Style: NotRequired[SectionStyleTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SectionLayoutConfigurationTypeDef](./type_defs.md#sectionlayoutconfigurationtypedef) 
+2. See [:material-code-braces: SectionStyleTypeDef](./type_defs.md#sectionstyletypedef) 
 ## DescribeDataSetResponseTypeDef
 
 ```python title="Usage Example"
@@ -9253,6 +15429,141 @@ class DescribeDataSetResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataSetTypeDef](./type_defs.md#datasettypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VisualCustomActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualCustomActionTypeDef
+
+def get_value() -> VisualCustomActionTypeDef:
+    return {
+        "CustomActionId": ...,
+        "Name": ...,
+        "Trigger": ...,
+        "ActionOperations": ...,
+    }
+```
+
+```python title="Definition"
+class VisualCustomActionTypeDef(TypedDict):
+    CustomActionId: str,
+    Name: str,
+    Trigger: VisualCustomActionTriggerType,  # (2)
+    ActionOperations: Sequence[VisualCustomActionOperationTypeDef],  # (3)
+    Status: NotRequired[WidgetStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: WidgetStatusType](./literals.md#widgetstatustype) 
+2. See [:material-code-brackets: VisualCustomActionTriggerType](./literals.md#visualcustomactiontriggertype) 
+3. See [:material-code-braces: VisualCustomActionOperationTypeDef](./type_defs.md#visualcustomactionoperationtypedef) 
+## TableFieldOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldOptionTypeDef
+
+def get_value() -> TableFieldOptionTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldOptionTypeDef(TypedDict):
+    FieldId: str,
+    Width: NotRequired[str],
+    CustomLabel: NotRequired[str],
+    Visibility: NotRequired[VisibilityType],  # (1)
+    URLStyling: NotRequired[TableFieldURLConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-braces: TableFieldURLConfigurationTypeDef](./type_defs.md#tablefieldurlconfigurationtypedef) 
+## GaugeChartConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartConditionalFormattingTypeDef
+
+def get_value() -> GaugeChartConditionalFormattingTypeDef:
+    return {
+        "ConditionalFormattingOptions": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartConditionalFormattingTypeDef(TypedDict):
+    ConditionalFormattingOptions: NotRequired[Sequence[GaugeChartConditionalFormattingOptionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: GaugeChartConditionalFormattingOptionTypeDef](./type_defs.md#gaugechartconditionalformattingoptiontypedef) 
+## KPIConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIConditionalFormattingTypeDef
+
+def get_value() -> KPIConditionalFormattingTypeDef:
+    return {
+        "ConditionalFormattingOptions": ...,
+    }
+```
+
+```python title="Definition"
+class KPIConditionalFormattingTypeDef(TypedDict):
+    ConditionalFormattingOptions: NotRequired[Sequence[KPIConditionalFormattingOptionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: KPIConditionalFormattingOptionTypeDef](./type_defs.md#kpiconditionalformattingoptiontypedef) 
+## FilledMapConditionalFormattingOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapConditionalFormattingOptionTypeDef
+
+def get_value() -> FilledMapConditionalFormattingOptionTypeDef:
+    return {
+        "Shape": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapConditionalFormattingOptionTypeDef(TypedDict):
+    Shape: FilledMapShapeConditionalFormattingTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: FilledMapShapeConditionalFormattingTypeDef](./type_defs.md#filledmapshapeconditionalformattingtypedef) 
+## PivotTableConditionalFormattingOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableConditionalFormattingOptionTypeDef
+
+def get_value() -> PivotTableConditionalFormattingOptionTypeDef:
+    return {
+        "Cell": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableConditionalFormattingOptionTypeDef(TypedDict):
+    Cell: NotRequired[PivotTableCellConditionalFormattingTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PivotTableCellConditionalFormattingTypeDef](./type_defs.md#pivottablecellconditionalformattingtypedef) 
+## TableConditionalFormattingOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableConditionalFormattingOptionTypeDef
+
+def get_value() -> TableConditionalFormattingOptionTypeDef:
+    return {
+        "Cell": ...,
+    }
+```
+
+```python title="Definition"
+class TableConditionalFormattingOptionTypeDef(TypedDict):
+    Cell: NotRequired[TableCellConditionalFormattingTypeDef],  # (1)
+    Row: NotRequired[TableRowConditionalFormattingTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TableCellConditionalFormattingTypeDef](./type_defs.md#tablecellconditionalformattingtypedef) 
+2. See [:material-code-braces: TableRowConditionalFormattingTypeDef](./type_defs.md#tablerowconditionalformattingtypedef) 
 ## DescribeThemeResponseTypeDef
 
 ```python title="Usage Example"
@@ -9277,3 +15588,3013 @@ class DescribeThemeResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ThemeTypeDef](./type_defs.md#themetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReferenceLineTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ReferenceLineTypeDef
+
+def get_value() -> ReferenceLineTypeDef:
+    return {
+        "DataConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ReferenceLineTypeDef(TypedDict):
+    DataConfiguration: ReferenceLineDataConfigurationTypeDef,  # (2)
+    Status: NotRequired[WidgetStatusType],  # (1)
+    StyleConfiguration: NotRequired[ReferenceLineStyleConfigurationTypeDef],  # (3)
+    LabelConfiguration: NotRequired[ReferenceLineLabelConfigurationTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: WidgetStatusType](./literals.md#widgetstatustype) 
+2. See [:material-code-braces: ReferenceLineDataConfigurationTypeDef](./type_defs.md#referencelinedataconfigurationtypedef) 
+3. See [:material-code-braces: ReferenceLineStyleConfigurationTypeDef](./type_defs.md#referencelinestyleconfigurationtypedef) 
+4. See [:material-code-braces: ReferenceLineLabelConfigurationTypeDef](./type_defs.md#referencelinelabelconfigurationtypedef) 
+## DimensionFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DimensionFieldTypeDef
+
+def get_value() -> DimensionFieldTypeDef:
+    return {
+        "NumericalDimensionField": ...,
+    }
+```
+
+```python title="Definition"
+class DimensionFieldTypeDef(TypedDict):
+    NumericalDimensionField: NotRequired[NumericalDimensionFieldTypeDef],  # (1)
+    CategoricalDimensionField: NotRequired[CategoricalDimensionFieldTypeDef],  # (2)
+    DateDimensionField: NotRequired[DateDimensionFieldTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: NumericalDimensionFieldTypeDef](./type_defs.md#numericaldimensionfieldtypedef) 
+2. See [:material-code-braces: CategoricalDimensionFieldTypeDef](./type_defs.md#categoricaldimensionfieldtypedef) 
+3. See [:material-code-braces: DateDimensionFieldTypeDef](./type_defs.md#datedimensionfieldtypedef) 
+## MeasureFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import MeasureFieldTypeDef
+
+def get_value() -> MeasureFieldTypeDef:
+    return {
+        "NumericalMeasureField": ...,
+    }
+```
+
+```python title="Definition"
+class MeasureFieldTypeDef(TypedDict):
+    NumericalMeasureField: NotRequired[NumericalMeasureFieldTypeDef],  # (1)
+    CategoricalMeasureField: NotRequired[CategoricalMeasureFieldTypeDef],  # (2)
+    DateMeasureField: NotRequired[DateMeasureFieldTypeDef],  # (3)
+    CalculatedMeasureField: NotRequired[CalculatedMeasureFieldTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: NumericalMeasureFieldTypeDef](./type_defs.md#numericalmeasurefieldtypedef) 
+2. See [:material-code-braces: CategoricalMeasureFieldTypeDef](./type_defs.md#categoricalmeasurefieldtypedef) 
+3. See [:material-code-braces: DateMeasureFieldTypeDef](./type_defs.md#datemeasurefieldtypedef) 
+4. See [:material-code-braces: CalculatedMeasureFieldTypeDef](./type_defs.md#calculatedmeasurefieldtypedef) 
+## ColumnConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ColumnConfigurationTypeDef
+
+def get_value() -> ColumnConfigurationTypeDef:
+    return {
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class ColumnConfigurationTypeDef(TypedDict):
+    Column: ColumnIdentifierTypeDef,  # (1)
+    FormatConfiguration: NotRequired[FormatConfigurationTypeDef],  # (2)
+    Role: NotRequired[ColumnRoleType],  # (3)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: FormatConfigurationTypeDef](./type_defs.md#formatconfigurationtypedef) 
+3. See [:material-code-brackets: ColumnRoleType](./literals.md#columnroletype) 
+## UnaggregatedFieldTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UnaggregatedFieldTypeDef
+
+def get_value() -> UnaggregatedFieldTypeDef:
+    return {
+        "FieldId": ...,
+        "Column": ...,
+    }
+```
+
+```python title="Definition"
+class UnaggregatedFieldTypeDef(TypedDict):
+    FieldId: str,
+    Column: ColumnIdentifierTypeDef,  # (1)
+    FormatConfiguration: NotRequired[FormatConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
+2. See [:material-code-braces: FormatConfigurationTypeDef](./type_defs.md#formatconfigurationtypedef) 
+## FilterGroupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilterGroupTypeDef
+
+def get_value() -> FilterGroupTypeDef:
+    return {
+        "FilterGroupId": ...,
+        "Filters": ...,
+        "ScopeConfiguration": ...,
+        "CrossDataset": ...,
+    }
+```
+
+```python title="Definition"
+class FilterGroupTypeDef(TypedDict):
+    FilterGroupId: str,
+    Filters: Sequence[FilterTypeDef],  # (1)
+    ScopeConfiguration: FilterScopeConfigurationTypeDef,  # (2)
+    CrossDataset: CrossDatasetTypesType,  # (4)
+    Status: NotRequired[WidgetStatusType],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: FilterScopeConfigurationTypeDef](./type_defs.md#filterscopeconfigurationtypedef) 
+3. See [:material-code-brackets: WidgetStatusType](./literals.md#widgetstatustype) 
+4. See [:material-code-brackets: CrossDatasetTypesType](./literals.md#crossdatasettypestype) 
+## PivotTableSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableSortConfigurationTypeDef
+
+def get_value() -> PivotTableSortConfigurationTypeDef:
+    return {
+        "FieldSortOptions": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableSortConfigurationTypeDef(TypedDict):
+    FieldSortOptions: NotRequired[Sequence[PivotFieldSortOptionsTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PivotFieldSortOptionsTypeDef](./type_defs.md#pivotfieldsortoptionstypedef) 
+## TooltipOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TooltipOptionsTypeDef
+
+def get_value() -> TooltipOptionsTypeDef:
+    return {
+        "TooltipVisibility": ...,
+    }
+```
+
+```python title="Definition"
+class TooltipOptionsTypeDef(TypedDict):
+    TooltipVisibility: NotRequired[VisibilityType],  # (1)
+    SelectedTooltipType: NotRequired[SelectedTooltipTypeType],  # (2)
+    FieldBasedTooltip: NotRequired[FieldBasedTooltipTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: SelectedTooltipTypeType](./literals.md#selectedtooltiptypetype) 
+3. See [:material-code-braces: FieldBasedTooltipTypeDef](./type_defs.md#fieldbasedtooltiptypedef) 
+## AnalysisDefaultsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnalysisDefaultsTypeDef
+
+def get_value() -> AnalysisDefaultsTypeDef:
+    return {
+        "DefaultNewSheetConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class AnalysisDefaultsTypeDef(TypedDict):
+    DefaultNewSheetConfiguration: DefaultNewSheetConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: DefaultNewSheetConfigurationTypeDef](./type_defs.md#defaultnewsheetconfigurationtypedef) 
+## BodySectionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BodySectionConfigurationTypeDef
+
+def get_value() -> BodySectionConfigurationTypeDef:
+    return {
+        "SectionId": ...,
+        "Content": ...,
+    }
+```
+
+```python title="Definition"
+class BodySectionConfigurationTypeDef(TypedDict):
+    SectionId: str,
+    Content: BodySectionContentTypeDef,  # (1)
+    Style: NotRequired[SectionStyleTypeDef],  # (2)
+    PageBreakConfiguration: NotRequired[SectionPageBreakConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: BodySectionContentTypeDef](./type_defs.md#bodysectioncontenttypedef) 
+2. See [:material-code-braces: SectionStyleTypeDef](./type_defs.md#sectionstyletypedef) 
+3. See [:material-code-braces: SectionPageBreakConfigurationTypeDef](./type_defs.md#sectionpagebreakconfigurationtypedef) 
+## CustomContentVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CustomContentVisualTypeDef
+
+def get_value() -> CustomContentVisualTypeDef:
+    return {
+        "VisualId": ...,
+        "DataSetIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class CustomContentVisualTypeDef(TypedDict):
+    VisualId: str,
+    DataSetIdentifier: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[CustomContentConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: CustomContentConfigurationTypeDef](./type_defs.md#customcontentconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## EmptyVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import EmptyVisualTypeDef
+
+def get_value() -> EmptyVisualTypeDef:
+    return {
+        "VisualId": ...,
+        "DataSetIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyVisualTypeDef(TypedDict):
+    VisualId: str,
+    DataSetIdentifier: str,
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## TableFieldOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldOptionsTypeDef
+
+def get_value() -> TableFieldOptionsTypeDef:
+    return {
+        "SelectedFieldOptions": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldOptionsTypeDef(TypedDict):
+    SelectedFieldOptions: NotRequired[Sequence[TableFieldOptionTypeDef]],  # (1)
+    Order: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: TableFieldOptionTypeDef](./type_defs.md#tablefieldoptiontypedef) 
+## FilledMapConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapConditionalFormattingTypeDef
+
+def get_value() -> FilledMapConditionalFormattingTypeDef:
+    return {
+        "ConditionalFormattingOptions": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapConditionalFormattingTypeDef(TypedDict):
+    ConditionalFormattingOptions: Sequence[FilledMapConditionalFormattingOptionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FilledMapConditionalFormattingOptionTypeDef](./type_defs.md#filledmapconditionalformattingoptiontypedef) 
+## PivotTableConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableConditionalFormattingTypeDef
+
+def get_value() -> PivotTableConditionalFormattingTypeDef:
+    return {
+        "ConditionalFormattingOptions": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableConditionalFormattingTypeDef(TypedDict):
+    ConditionalFormattingOptions: NotRequired[Sequence[PivotTableConditionalFormattingOptionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: PivotTableConditionalFormattingOptionTypeDef](./type_defs.md#pivottableconditionalformattingoptiontypedef) 
+## TableConditionalFormattingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableConditionalFormattingTypeDef
+
+def get_value() -> TableConditionalFormattingTypeDef:
+    return {
+        "ConditionalFormattingOptions": ...,
+    }
+```
+
+```python title="Definition"
+class TableConditionalFormattingTypeDef(TypedDict):
+    ConditionalFormattingOptions: NotRequired[Sequence[TableConditionalFormattingOptionTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TableConditionalFormattingOptionTypeDef](./type_defs.md#tableconditionalformattingoptiontypedef) 
+## UniqueValuesComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UniqueValuesComputationTypeDef
+
+def get_value() -> UniqueValuesComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class UniqueValuesComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Category: DimensionFieldTypeDef,  # (1)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+## BarChartAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BarChartAggregatedFieldWellsTypeDef
+
+def get_value() -> BarChartAggregatedFieldWellsTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class BarChartAggregatedFieldWellsTypeDef(TypedDict):
+    Category: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+    Colors: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    SmallMultiples: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+4. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+## BoxPlotAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BoxPlotAggregatedFieldWellsTypeDef
+
+def get_value() -> BoxPlotAggregatedFieldWellsTypeDef:
+    return {
+        "GroupBy": ...,
+    }
+```
+
+```python title="Definition"
+class BoxPlotAggregatedFieldWellsTypeDef(TypedDict):
+    GroupBy: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## ComboChartAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComboChartAggregatedFieldWellsTypeDef
+
+def get_value() -> ComboChartAggregatedFieldWellsTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class ComboChartAggregatedFieldWellsTypeDef(TypedDict):
+    Category: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    BarValues: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+    Colors: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    LineValues: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+4. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## FilledMapAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapAggregatedFieldWellsTypeDef
+
+def get_value() -> FilledMapAggregatedFieldWellsTypeDef:
+    return {
+        "Geospatial": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapAggregatedFieldWellsTypeDef(TypedDict):
+    Geospatial: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## ForecastComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ForecastComputationTypeDef
+
+def get_value() -> ForecastComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Time": ...,
+    }
+```
+
+```python title="Definition"
+class ForecastComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Time: DimensionFieldTypeDef,  # (1)
+    Name: NotRequired[str],
+    Value: NotRequired[MeasureFieldTypeDef],  # (2)
+    PeriodsForward: NotRequired[int],
+    PeriodsBackward: NotRequired[int],
+    UpperBoundary: NotRequired[float],
+    LowerBoundary: NotRequired[float],
+    PredictionInterval: NotRequired[int],
+    Seasonality: NotRequired[ForecastComputationSeasonalityType],  # (3)
+    CustomSeasonalityValue: NotRequired[int],
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-brackets: ForecastComputationSeasonalityType](./literals.md#forecastcomputationseasonalitytype) 
+## FunnelChartAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FunnelChartAggregatedFieldWellsTypeDef
+
+def get_value() -> FunnelChartAggregatedFieldWellsTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class FunnelChartAggregatedFieldWellsTypeDef(TypedDict):
+    Category: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## GaugeChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartFieldWellsTypeDef
+
+def get_value() -> GaugeChartFieldWellsTypeDef:
+    return {
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartFieldWellsTypeDef(TypedDict):
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+    TargetValues: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## GeospatialMapAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialMapAggregatedFieldWellsTypeDef
+
+def get_value() -> GeospatialMapAggregatedFieldWellsTypeDef:
+    return {
+        "Geospatial": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialMapAggregatedFieldWellsTypeDef(TypedDict):
+    Geospatial: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+    Colors: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+## GrowthRateComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GrowthRateComputationTypeDef
+
+def get_value() -> GrowthRateComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Time": ...,
+    }
+```
+
+```python title="Definition"
+class GrowthRateComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Time: DimensionFieldTypeDef,  # (1)
+    Name: NotRequired[str],
+    Value: NotRequired[MeasureFieldTypeDef],  # (2)
+    PeriodSize: NotRequired[int],
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## HeatMapAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HeatMapAggregatedFieldWellsTypeDef
+
+def get_value() -> HeatMapAggregatedFieldWellsTypeDef:
+    return {
+        "Rows": ...,
+    }
+```
+
+```python title="Definition"
+class HeatMapAggregatedFieldWellsTypeDef(TypedDict):
+    Rows: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Columns: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## HistogramAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HistogramAggregatedFieldWellsTypeDef
+
+def get_value() -> HistogramAggregatedFieldWellsTypeDef:
+    return {
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class HistogramAggregatedFieldWellsTypeDef(TypedDict):
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## KPIFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIFieldWellsTypeDef
+
+def get_value() -> KPIFieldWellsTypeDef:
+    return {
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class KPIFieldWellsTypeDef(TypedDict):
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+    TargetValues: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+    TrendGroups: NotRequired[Sequence[DimensionFieldTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+## LineChartAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartAggregatedFieldWellsTypeDef
+
+def get_value() -> LineChartAggregatedFieldWellsTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartAggregatedFieldWellsTypeDef(TypedDict):
+    Category: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+    Colors: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    SmallMultiples: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+4. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+## MaximumMinimumComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import MaximumMinimumComputationTypeDef
+
+def get_value() -> MaximumMinimumComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Time": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class MaximumMinimumComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Time: DimensionFieldTypeDef,  # (1)
+    Type: MaximumMinimumComputationTypeType,  # (3)
+    Name: NotRequired[str],
+    Value: NotRequired[MeasureFieldTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-brackets: MaximumMinimumComputationTypeType](./literals.md#maximumminimumcomputationtypetype) 
+## MetricComparisonComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import MetricComparisonComputationTypeDef
+
+def get_value() -> MetricComparisonComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Time": ...,
+        "FromValue": ...,
+        "TargetValue": ...,
+    }
+```
+
+```python title="Definition"
+class MetricComparisonComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Time: DimensionFieldTypeDef,  # (1)
+    FromValue: MeasureFieldTypeDef,  # (2)
+    TargetValue: MeasureFieldTypeDef,  # (2)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## PeriodOverPeriodComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PeriodOverPeriodComputationTypeDef
+
+def get_value() -> PeriodOverPeriodComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Time": ...,
+    }
+```
+
+```python title="Definition"
+class PeriodOverPeriodComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Time: DimensionFieldTypeDef,  # (1)
+    Name: NotRequired[str],
+    Value: NotRequired[MeasureFieldTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## PeriodToDateComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PeriodToDateComputationTypeDef
+
+def get_value() -> PeriodToDateComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Time": ...,
+    }
+```
+
+```python title="Definition"
+class PeriodToDateComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Time: DimensionFieldTypeDef,  # (1)
+    Name: NotRequired[str],
+    Value: NotRequired[MeasureFieldTypeDef],  # (2)
+    PeriodTimeGranularity: NotRequired[TimeGranularityType],  # (3)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-brackets: TimeGranularityType](./literals.md#timegranularitytype) 
+## PieChartAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PieChartAggregatedFieldWellsTypeDef
+
+def get_value() -> PieChartAggregatedFieldWellsTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class PieChartAggregatedFieldWellsTypeDef(TypedDict):
+    Category: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+    SmallMultiples: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+## PivotTableAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableAggregatedFieldWellsTypeDef
+
+def get_value() -> PivotTableAggregatedFieldWellsTypeDef:
+    return {
+        "Rows": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableAggregatedFieldWellsTypeDef(TypedDict):
+    Rows: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Columns: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## SankeyDiagramAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SankeyDiagramAggregatedFieldWellsTypeDef
+
+def get_value() -> SankeyDiagramAggregatedFieldWellsTypeDef:
+    return {
+        "Source": ...,
+    }
+```
+
+```python title="Definition"
+class SankeyDiagramAggregatedFieldWellsTypeDef(TypedDict):
+    Source: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Destination: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Weight: NotRequired[Sequence[MeasureFieldTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## ScatterPlotCategoricallyAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ScatterPlotCategoricallyAggregatedFieldWellsTypeDef
+
+def get_value() -> ScatterPlotCategoricallyAggregatedFieldWellsTypeDef:
+    return {
+        "XAxis": ...,
+    }
+```
+
+```python title="Definition"
+class ScatterPlotCategoricallyAggregatedFieldWellsTypeDef(TypedDict):
+    XAxis: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+    YAxis: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+    Category: NotRequired[Sequence[DimensionFieldTypeDef]],  # (3)
+    Size: NotRequired[Sequence[MeasureFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+4. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## ScatterPlotUnaggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ScatterPlotUnaggregatedFieldWellsTypeDef
+
+def get_value() -> ScatterPlotUnaggregatedFieldWellsTypeDef:
+    return {
+        "XAxis": ...,
+    }
+```
+
+```python title="Definition"
+class ScatterPlotUnaggregatedFieldWellsTypeDef(TypedDict):
+    XAxis: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    YAxis: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Size: NotRequired[Sequence[MeasureFieldTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## TableAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableAggregatedFieldWellsTypeDef
+
+def get_value() -> TableAggregatedFieldWellsTypeDef:
+    return {
+        "GroupBy": ...,
+    }
+```
+
+```python title="Definition"
+class TableAggregatedFieldWellsTypeDef(TypedDict):
+    GroupBy: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## TopBottomMoversComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TopBottomMoversComputationTypeDef
+
+def get_value() -> TopBottomMoversComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Time": ...,
+        "Category": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class TopBottomMoversComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Time: DimensionFieldTypeDef,  # (1)
+    Category: DimensionFieldTypeDef,  # (1)
+    Type: TopBottomComputationTypeType,  # (5)
+    Name: NotRequired[str],
+    Value: NotRequired[MeasureFieldTypeDef],  # (3)
+    MoverSize: NotRequired[int],
+    SortOrder: NotRequired[TopBottomSortOrderType],  # (4)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+4. See [:material-code-brackets: TopBottomSortOrderType](./literals.md#topbottomsortordertype) 
+5. See [:material-code-brackets: TopBottomComputationTypeType](./literals.md#topbottomcomputationtypetype) 
+## TopBottomRankedComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TopBottomRankedComputationTypeDef
+
+def get_value() -> TopBottomRankedComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Category": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class TopBottomRankedComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Category: DimensionFieldTypeDef,  # (1)
+    Type: TopBottomComputationTypeType,  # (3)
+    Name: NotRequired[str],
+    Value: NotRequired[MeasureFieldTypeDef],  # (2)
+    ResultSize: NotRequired[int],
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-brackets: TopBottomComputationTypeType](./literals.md#topbottomcomputationtypetype) 
+## TotalAggregationComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TotalAggregationComputationTypeDef
+
+def get_value() -> TotalAggregationComputationTypeDef:
+    return {
+        "ComputationId": ...,
+        "Value": ...,
+    }
+```
+
+```python title="Definition"
+class TotalAggregationComputationTypeDef(TypedDict):
+    ComputationId: str,
+    Value: MeasureFieldTypeDef,  # (1)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## TreeMapAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TreeMapAggregatedFieldWellsTypeDef
+
+def get_value() -> TreeMapAggregatedFieldWellsTypeDef:
+    return {
+        "Groups": ...,
+    }
+```
+
+```python title="Definition"
+class TreeMapAggregatedFieldWellsTypeDef(TypedDict):
+    Groups: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Sizes: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+    Colors: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## WaterfallChartAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WaterfallChartAggregatedFieldWellsTypeDef
+
+def get_value() -> WaterfallChartAggregatedFieldWellsTypeDef:
+    return {
+        "Categories": ...,
+    }
+```
+
+```python title="Definition"
+class WaterfallChartAggregatedFieldWellsTypeDef(TypedDict):
+    Categories: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+    Breakdowns: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+3. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+## WordCloudAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WordCloudAggregatedFieldWellsTypeDef
+
+def get_value() -> WordCloudAggregatedFieldWellsTypeDef:
+    return {
+        "GroupBy": ...,
+    }
+```
+
+```python title="Definition"
+class WordCloudAggregatedFieldWellsTypeDef(TypedDict):
+    GroupBy: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Size: NotRequired[Sequence[MeasureFieldTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## TableUnaggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableUnaggregatedFieldWellsTypeDef
+
+def get_value() -> TableUnaggregatedFieldWellsTypeDef:
+    return {
+        "Values": ...,
+    }
+```
+
+```python title="Definition"
+class TableUnaggregatedFieldWellsTypeDef(TypedDict):
+    Values: NotRequired[Sequence[UnaggregatedFieldTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: UnaggregatedFieldTypeDef](./type_defs.md#unaggregatedfieldtypedef) 
+## SectionBasedLayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SectionBasedLayoutConfigurationTypeDef
+
+def get_value() -> SectionBasedLayoutConfigurationTypeDef:
+    return {
+        "HeaderSections": ...,
+        "BodySections": ...,
+        "FooterSections": ...,
+        "CanvasSizeOptions": ...,
+    }
+```
+
+```python title="Definition"
+class SectionBasedLayoutConfigurationTypeDef(TypedDict):
+    HeaderSections: Sequence[HeaderFooterSectionConfigurationTypeDef],  # (1)
+    BodySections: Sequence[BodySectionConfigurationTypeDef],  # (2)
+    FooterSections: Sequence[HeaderFooterSectionConfigurationTypeDef],  # (1)
+    CanvasSizeOptions: SectionBasedLayoutCanvasSizeOptionsTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: HeaderFooterSectionConfigurationTypeDef](./type_defs.md#headerfootersectionconfigurationtypedef) 
+2. See [:material-code-braces: BodySectionConfigurationTypeDef](./type_defs.md#bodysectionconfigurationtypedef) 
+3. See [:material-code-braces: HeaderFooterSectionConfigurationTypeDef](./type_defs.md#headerfootersectionconfigurationtypedef) 
+4. See [:material-code-braces: SectionBasedLayoutCanvasSizeOptionsTypeDef](./type_defs.md#sectionbasedlayoutcanvassizeoptionstypedef) 
+## BarChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BarChartFieldWellsTypeDef
+
+def get_value() -> BarChartFieldWellsTypeDef:
+    return {
+        "BarChartAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class BarChartFieldWellsTypeDef(TypedDict):
+    BarChartAggregatedFieldWells: NotRequired[BarChartAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BarChartAggregatedFieldWellsTypeDef](./type_defs.md#barchartaggregatedfieldwellstypedef) 
+## BoxPlotFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BoxPlotFieldWellsTypeDef
+
+def get_value() -> BoxPlotFieldWellsTypeDef:
+    return {
+        "BoxPlotAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class BoxPlotFieldWellsTypeDef(TypedDict):
+    BoxPlotAggregatedFieldWells: NotRequired[BoxPlotAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: BoxPlotAggregatedFieldWellsTypeDef](./type_defs.md#boxplotaggregatedfieldwellstypedef) 
+## ComboChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComboChartFieldWellsTypeDef
+
+def get_value() -> ComboChartFieldWellsTypeDef:
+    return {
+        "ComboChartAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class ComboChartFieldWellsTypeDef(TypedDict):
+    ComboChartAggregatedFieldWells: NotRequired[ComboChartAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ComboChartAggregatedFieldWellsTypeDef](./type_defs.md#combochartaggregatedfieldwellstypedef) 
+## FilledMapFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapFieldWellsTypeDef
+
+def get_value() -> FilledMapFieldWellsTypeDef:
+    return {
+        "FilledMapAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapFieldWellsTypeDef(TypedDict):
+    FilledMapAggregatedFieldWells: NotRequired[FilledMapAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FilledMapAggregatedFieldWellsTypeDef](./type_defs.md#filledmapaggregatedfieldwellstypedef) 
+## FunnelChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FunnelChartFieldWellsTypeDef
+
+def get_value() -> FunnelChartFieldWellsTypeDef:
+    return {
+        "FunnelChartAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class FunnelChartFieldWellsTypeDef(TypedDict):
+    FunnelChartAggregatedFieldWells: NotRequired[FunnelChartAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: FunnelChartAggregatedFieldWellsTypeDef](./type_defs.md#funnelchartaggregatedfieldwellstypedef) 
+## GaugeChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartConfigurationTypeDef
+
+def get_value() -> GaugeChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[GaugeChartFieldWellsTypeDef],  # (1)
+    GaugeChartOptions: NotRequired[GaugeChartOptionsTypeDef],  # (2)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (3)
+    TooltipOptions: NotRequired[TooltipOptionsTypeDef],  # (4)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: GaugeChartFieldWellsTypeDef](./type_defs.md#gaugechartfieldwellstypedef) 
+2. See [:material-code-braces: GaugeChartOptionsTypeDef](./type_defs.md#gaugechartoptionstypedef) 
+3. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+4. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+5. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## GeospatialMapFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialMapFieldWellsTypeDef
+
+def get_value() -> GeospatialMapFieldWellsTypeDef:
+    return {
+        "GeospatialMapAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialMapFieldWellsTypeDef(TypedDict):
+    GeospatialMapAggregatedFieldWells: NotRequired[GeospatialMapAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GeospatialMapAggregatedFieldWellsTypeDef](./type_defs.md#geospatialmapaggregatedfieldwellstypedef) 
+## HeatMapFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HeatMapFieldWellsTypeDef
+
+def get_value() -> HeatMapFieldWellsTypeDef:
+    return {
+        "HeatMapAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class HeatMapFieldWellsTypeDef(TypedDict):
+    HeatMapAggregatedFieldWells: NotRequired[HeatMapAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: HeatMapAggregatedFieldWellsTypeDef](./type_defs.md#heatmapaggregatedfieldwellstypedef) 
+## HistogramFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HistogramFieldWellsTypeDef
+
+def get_value() -> HistogramFieldWellsTypeDef:
+    return {
+        "HistogramAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class HistogramFieldWellsTypeDef(TypedDict):
+    HistogramAggregatedFieldWells: NotRequired[HistogramAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: HistogramAggregatedFieldWellsTypeDef](./type_defs.md#histogramaggregatedfieldwellstypedef) 
+## KPIConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIConfigurationTypeDef
+
+def get_value() -> KPIConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class KPIConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[KPIFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[KPISortConfigurationTypeDef],  # (2)
+    KPIOptions: NotRequired[KPIOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: KPIFieldWellsTypeDef](./type_defs.md#kpifieldwellstypedef) 
+2. See [:material-code-braces: KPISortConfigurationTypeDef](./type_defs.md#kpisortconfigurationtypedef) 
+3. See [:material-code-braces: KPIOptionsTypeDef](./type_defs.md#kpioptionstypedef) 
+## LineChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartFieldWellsTypeDef
+
+def get_value() -> LineChartFieldWellsTypeDef:
+    return {
+        "LineChartAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartFieldWellsTypeDef(TypedDict):
+    LineChartAggregatedFieldWells: NotRequired[LineChartAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LineChartAggregatedFieldWellsTypeDef](./type_defs.md#linechartaggregatedfieldwellstypedef) 
+## PieChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PieChartFieldWellsTypeDef
+
+def get_value() -> PieChartFieldWellsTypeDef:
+    return {
+        "PieChartAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class PieChartFieldWellsTypeDef(TypedDict):
+    PieChartAggregatedFieldWells: NotRequired[PieChartAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PieChartAggregatedFieldWellsTypeDef](./type_defs.md#piechartaggregatedfieldwellstypedef) 
+## PivotTableFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableFieldWellsTypeDef
+
+def get_value() -> PivotTableFieldWellsTypeDef:
+    return {
+        "PivotTableAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableFieldWellsTypeDef(TypedDict):
+    PivotTableAggregatedFieldWells: NotRequired[PivotTableAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PivotTableAggregatedFieldWellsTypeDef](./type_defs.md#pivottableaggregatedfieldwellstypedef) 
+## SankeyDiagramFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SankeyDiagramFieldWellsTypeDef
+
+def get_value() -> SankeyDiagramFieldWellsTypeDef:
+    return {
+        "SankeyDiagramAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class SankeyDiagramFieldWellsTypeDef(TypedDict):
+    SankeyDiagramAggregatedFieldWells: NotRequired[SankeyDiagramAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SankeyDiagramAggregatedFieldWellsTypeDef](./type_defs.md#sankeydiagramaggregatedfieldwellstypedef) 
+## ScatterPlotFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ScatterPlotFieldWellsTypeDef
+
+def get_value() -> ScatterPlotFieldWellsTypeDef:
+    return {
+        "ScatterPlotCategoricallyAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class ScatterPlotFieldWellsTypeDef(TypedDict):
+    ScatterPlotCategoricallyAggregatedFieldWells: NotRequired[ScatterPlotCategoricallyAggregatedFieldWellsTypeDef],  # (1)
+    ScatterPlotUnaggregatedFieldWells: NotRequired[ScatterPlotUnaggregatedFieldWellsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ScatterPlotCategoricallyAggregatedFieldWellsTypeDef](./type_defs.md#scatterplotcategoricallyaggregatedfieldwellstypedef) 
+2. See [:material-code-braces: ScatterPlotUnaggregatedFieldWellsTypeDef](./type_defs.md#scatterplotunaggregatedfieldwellstypedef) 
+## ComputationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComputationTypeDef
+
+def get_value() -> ComputationTypeDef:
+    return {
+        "TopBottomRanked": ...,
+    }
+```
+
+```python title="Definition"
+class ComputationTypeDef(TypedDict):
+    TopBottomRanked: NotRequired[TopBottomRankedComputationTypeDef],  # (1)
+    TopBottomMovers: NotRequired[TopBottomMoversComputationTypeDef],  # (2)
+    TotalAggregation: NotRequired[TotalAggregationComputationTypeDef],  # (3)
+    MaximumMinimum: NotRequired[MaximumMinimumComputationTypeDef],  # (4)
+    MetricComparison: NotRequired[MetricComparisonComputationTypeDef],  # (5)
+    PeriodOverPeriod: NotRequired[PeriodOverPeriodComputationTypeDef],  # (6)
+    PeriodToDate: NotRequired[PeriodToDateComputationTypeDef],  # (7)
+    GrowthRate: NotRequired[GrowthRateComputationTypeDef],  # (8)
+    UniqueValues: NotRequired[UniqueValuesComputationTypeDef],  # (9)
+    Forecast: NotRequired[ForecastComputationTypeDef],  # (10)
+```
+
+1. See [:material-code-braces: TopBottomRankedComputationTypeDef](./type_defs.md#topbottomrankedcomputationtypedef) 
+2. See [:material-code-braces: TopBottomMoversComputationTypeDef](./type_defs.md#topbottommoverscomputationtypedef) 
+3. See [:material-code-braces: TotalAggregationComputationTypeDef](./type_defs.md#totalaggregationcomputationtypedef) 
+4. See [:material-code-braces: MaximumMinimumComputationTypeDef](./type_defs.md#maximumminimumcomputationtypedef) 
+5. See [:material-code-braces: MetricComparisonComputationTypeDef](./type_defs.md#metriccomparisoncomputationtypedef) 
+6. See [:material-code-braces: PeriodOverPeriodComputationTypeDef](./type_defs.md#periodoverperiodcomputationtypedef) 
+7. See [:material-code-braces: PeriodToDateComputationTypeDef](./type_defs.md#periodtodatecomputationtypedef) 
+8. See [:material-code-braces: GrowthRateComputationTypeDef](./type_defs.md#growthratecomputationtypedef) 
+9. See [:material-code-braces: UniqueValuesComputationTypeDef](./type_defs.md#uniquevaluescomputationtypedef) 
+10. See [:material-code-braces: ForecastComputationTypeDef](./type_defs.md#forecastcomputationtypedef) 
+## TreeMapFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TreeMapFieldWellsTypeDef
+
+def get_value() -> TreeMapFieldWellsTypeDef:
+    return {
+        "TreeMapAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class TreeMapFieldWellsTypeDef(TypedDict):
+    TreeMapAggregatedFieldWells: NotRequired[TreeMapAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TreeMapAggregatedFieldWellsTypeDef](./type_defs.md#treemapaggregatedfieldwellstypedef) 
+## WaterfallChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WaterfallChartFieldWellsTypeDef
+
+def get_value() -> WaterfallChartFieldWellsTypeDef:
+    return {
+        "WaterfallChartAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class WaterfallChartFieldWellsTypeDef(TypedDict):
+    WaterfallChartAggregatedFieldWells: NotRequired[WaterfallChartAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaterfallChartAggregatedFieldWellsTypeDef](./type_defs.md#waterfallchartaggregatedfieldwellstypedef) 
+## WordCloudFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WordCloudFieldWellsTypeDef
+
+def get_value() -> WordCloudFieldWellsTypeDef:
+    return {
+        "WordCloudAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class WordCloudFieldWellsTypeDef(TypedDict):
+    WordCloudAggregatedFieldWells: NotRequired[WordCloudAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WordCloudAggregatedFieldWellsTypeDef](./type_defs.md#wordcloudaggregatedfieldwellstypedef) 
+## TableFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableFieldWellsTypeDef
+
+def get_value() -> TableFieldWellsTypeDef:
+    return {
+        "TableAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class TableFieldWellsTypeDef(TypedDict):
+    TableAggregatedFieldWells: NotRequired[TableAggregatedFieldWellsTypeDef],  # (1)
+    TableUnaggregatedFieldWells: NotRequired[TableUnaggregatedFieldWellsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TableAggregatedFieldWellsTypeDef](./type_defs.md#tableaggregatedfieldwellstypedef) 
+2. See [:material-code-braces: TableUnaggregatedFieldWellsTypeDef](./type_defs.md#tableunaggregatedfieldwellstypedef) 
+## LayoutConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LayoutConfigurationTypeDef
+
+def get_value() -> LayoutConfigurationTypeDef:
+    return {
+        "GridLayout": ...,
+    }
+```
+
+```python title="Definition"
+class LayoutConfigurationTypeDef(TypedDict):
+    GridLayout: NotRequired[GridLayoutConfigurationTypeDef],  # (1)
+    FreeFormLayout: NotRequired[FreeFormLayoutConfigurationTypeDef],  # (2)
+    SectionBasedLayout: NotRequired[SectionBasedLayoutConfigurationTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: GridLayoutConfigurationTypeDef](./type_defs.md#gridlayoutconfigurationtypedef) 
+2. See [:material-code-braces: FreeFormLayoutConfigurationTypeDef](./type_defs.md#freeformlayoutconfigurationtypedef) 
+3. See [:material-code-braces: SectionBasedLayoutConfigurationTypeDef](./type_defs.md#sectionbasedlayoutconfigurationtypedef) 
+## BarChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BarChartConfigurationTypeDef
+
+def get_value() -> BarChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class BarChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[BarChartFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[BarChartSortConfigurationTypeDef],  # (2)
+    Orientation: NotRequired[BarChartOrientationType],  # (3)
+    BarsArrangement: NotRequired[BarsArrangementType],  # (4)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (5)
+    SmallMultiplesOptions: NotRequired[SmallMultiplesOptionsTypeDef],  # (6)
+    CategoryAxis: NotRequired[AxisDisplayOptionsTypeDef],  # (7)
+    CategoryLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (8)
+    ValueAxis: NotRequired[AxisDisplayOptionsTypeDef],  # (7)
+    ValueLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (8)
+    ColorLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (8)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (12)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (13)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (14)
+    ReferenceLines: NotRequired[Sequence[ReferenceLineTypeDef]],  # (15)
+    ContributionAnalysisDefaults: NotRequired[Sequence[ContributionAnalysisDefaultTypeDef]],  # (16)
+```
+
+1. See [:material-code-braces: BarChartFieldWellsTypeDef](./type_defs.md#barchartfieldwellstypedef) 
+2. See [:material-code-braces: BarChartSortConfigurationTypeDef](./type_defs.md#barchartsortconfigurationtypedef) 
+3. See [:material-code-brackets: BarChartOrientationType](./literals.md#barchartorientationtype) 
+4. See [:material-code-brackets: BarsArrangementType](./literals.md#barsarrangementtype) 
+5. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+6. See [:material-code-braces: SmallMultiplesOptionsTypeDef](./type_defs.md#smallmultiplesoptionstypedef) 
+7. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+8. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+9. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+10. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+11. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+12. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+13. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+14. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+15. See [:material-code-braces: ReferenceLineTypeDef](./type_defs.md#referencelinetypedef) 
+16. See [:material-code-braces: ContributionAnalysisDefaultTypeDef](./type_defs.md#contributionanalysisdefaulttypedef) 
+## BoxPlotChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BoxPlotChartConfigurationTypeDef
+
+def get_value() -> BoxPlotChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class BoxPlotChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[BoxPlotFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[BoxPlotSortConfigurationTypeDef],  # (2)
+    BoxPlotOptions: NotRequired[BoxPlotOptionsTypeDef],  # (3)
+    CategoryAxis: NotRequired[AxisDisplayOptionsTypeDef],  # (4)
+    CategoryLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    PrimaryYAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (4)
+    PrimaryYAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (8)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (9)
+    ReferenceLines: NotRequired[Sequence[ReferenceLineTypeDef]],  # (10)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (11)
+```
+
+1. See [:material-code-braces: BoxPlotFieldWellsTypeDef](./type_defs.md#boxplotfieldwellstypedef) 
+2. See [:material-code-braces: BoxPlotSortConfigurationTypeDef](./type_defs.md#boxplotsortconfigurationtypedef) 
+3. See [:material-code-braces: BoxPlotOptionsTypeDef](./type_defs.md#boxplotoptionstypedef) 
+4. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+5. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+6. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+7. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+8. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+9. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+10. See [:material-code-braces: ReferenceLineTypeDef](./type_defs.md#referencelinetypedef) 
+11. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## ComboChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComboChartConfigurationTypeDef
+
+def get_value() -> ComboChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class ComboChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[ComboChartFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[ComboChartSortConfigurationTypeDef],  # (2)
+    BarsArrangement: NotRequired[BarsArrangementType],  # (3)
+    CategoryAxis: NotRequired[AxisDisplayOptionsTypeDef],  # (4)
+    CategoryLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    PrimaryYAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (4)
+    PrimaryYAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    SecondaryYAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (4)
+    SecondaryYAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    ColorLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (11)
+    BarDataLabels: NotRequired[DataLabelOptionsTypeDef],  # (12)
+    LineDataLabels: NotRequired[DataLabelOptionsTypeDef],  # (12)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (14)
+    ReferenceLines: NotRequired[Sequence[ReferenceLineTypeDef]],  # (15)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (16)
+```
+
+1. See [:material-code-braces: ComboChartFieldWellsTypeDef](./type_defs.md#combochartfieldwellstypedef) 
+2. See [:material-code-braces: ComboChartSortConfigurationTypeDef](./type_defs.md#combochartsortconfigurationtypedef) 
+3. See [:material-code-brackets: BarsArrangementType](./literals.md#barsarrangementtype) 
+4. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+5. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+6. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+7. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+8. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+9. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+10. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+11. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+12. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+13. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+14. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+15. See [:material-code-braces: ReferenceLineTypeDef](./type_defs.md#referencelinetypedef) 
+16. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## FilledMapConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapConfigurationTypeDef
+
+def get_value() -> FilledMapConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[FilledMapFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[FilledMapSortConfigurationTypeDef],  # (2)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (3)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (4)
+    WindowOptions: NotRequired[GeospatialWindowOptionsTypeDef],  # (5)
+    MapStyleOptions: NotRequired[GeospatialMapStyleOptionsTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: FilledMapFieldWellsTypeDef](./type_defs.md#filledmapfieldwellstypedef) 
+2. See [:material-code-braces: FilledMapSortConfigurationTypeDef](./type_defs.md#filledmapsortconfigurationtypedef) 
+3. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+4. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+5. See [:material-code-braces: GeospatialWindowOptionsTypeDef](./type_defs.md#geospatialwindowoptionstypedef) 
+6. See [:material-code-braces: GeospatialMapStyleOptionsTypeDef](./type_defs.md#geospatialmapstyleoptionstypedef) 
+## FunnelChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FunnelChartConfigurationTypeDef
+
+def get_value() -> FunnelChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class FunnelChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[FunnelChartFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[FunnelChartSortConfigurationTypeDef],  # (2)
+    CategoryLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    ValueLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (5)
+    DataLabelOptions: NotRequired[FunnelChartDataLabelOptionsTypeDef],  # (6)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: FunnelChartFieldWellsTypeDef](./type_defs.md#funnelchartfieldwellstypedef) 
+2. See [:material-code-braces: FunnelChartSortConfigurationTypeDef](./type_defs.md#funnelchartsortconfigurationtypedef) 
+3. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+4. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+5. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+6. See [:material-code-braces: FunnelChartDataLabelOptionsTypeDef](./type_defs.md#funnelchartdatalabeloptionstypedef) 
+7. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## GaugeChartVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GaugeChartVisualTypeDef
+
+def get_value() -> GaugeChartVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class GaugeChartVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[GaugeChartConfigurationTypeDef],  # (3)
+    ConditionalFormatting: NotRequired[GaugeChartConditionalFormattingTypeDef],  # (4)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: GaugeChartConfigurationTypeDef](./type_defs.md#gaugechartconfigurationtypedef) 
+4. See [:material-code-braces: GaugeChartConditionalFormattingTypeDef](./type_defs.md#gaugechartconditionalformattingtypedef) 
+5. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## GeospatialMapConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialMapConfigurationTypeDef
+
+def get_value() -> GeospatialMapConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialMapConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[GeospatialMapFieldWellsTypeDef],  # (1)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (2)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (3)
+    WindowOptions: NotRequired[GeospatialWindowOptionsTypeDef],  # (4)
+    MapStyleOptions: NotRequired[GeospatialMapStyleOptionsTypeDef],  # (5)
+    PointStyleOptions: NotRequired[GeospatialPointStyleOptionsTypeDef],  # (6)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: GeospatialMapFieldWellsTypeDef](./type_defs.md#geospatialmapfieldwellstypedef) 
+2. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+3. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+4. See [:material-code-braces: GeospatialWindowOptionsTypeDef](./type_defs.md#geospatialwindowoptionstypedef) 
+5. See [:material-code-braces: GeospatialMapStyleOptionsTypeDef](./type_defs.md#geospatialmapstyleoptionstypedef) 
+6. See [:material-code-braces: GeospatialPointStyleOptionsTypeDef](./type_defs.md#geospatialpointstyleoptionstypedef) 
+7. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## HeatMapConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HeatMapConfigurationTypeDef
+
+def get_value() -> HeatMapConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class HeatMapConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[HeatMapFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[HeatMapSortConfigurationTypeDef],  # (2)
+    RowLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    ColumnLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    ColorScale: NotRequired[ColorScaleTypeDef],  # (5)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (6)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (7)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (8)
+```
+
+1. See [:material-code-braces: HeatMapFieldWellsTypeDef](./type_defs.md#heatmapfieldwellstypedef) 
+2. See [:material-code-braces: HeatMapSortConfigurationTypeDef](./type_defs.md#heatmapsortconfigurationtypedef) 
+3. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+4. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+5. See [:material-code-braces: ColorScaleTypeDef](./type_defs.md#colorscaletypedef) 
+6. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+7. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+8. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+## HistogramConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HistogramConfigurationTypeDef
+
+def get_value() -> HistogramConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class HistogramConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[HistogramFieldWellsTypeDef],  # (1)
+    XAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (2)
+    XAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    YAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (2)
+    BinOptions: NotRequired[HistogramBinOptionsTypeDef],  # (5)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (6)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (7)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (8)
+```
+
+1. See [:material-code-braces: HistogramFieldWellsTypeDef](./type_defs.md#histogramfieldwellstypedef) 
+2. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+3. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+4. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+5. See [:material-code-braces: HistogramBinOptionsTypeDef](./type_defs.md#histogrambinoptionstypedef) 
+6. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+7. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+8. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## KPIVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import KPIVisualTypeDef
+
+def get_value() -> KPIVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class KPIVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[KPIConfigurationTypeDef],  # (3)
+    ConditionalFormatting: NotRequired[KPIConditionalFormattingTypeDef],  # (4)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (5)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: KPIConfigurationTypeDef](./type_defs.md#kpiconfigurationtypedef) 
+4. See [:material-code-braces: KPIConditionalFormattingTypeDef](./type_defs.md#kpiconditionalformattingtypedef) 
+5. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+6. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## LineChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartConfigurationTypeDef
+
+def get_value() -> LineChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[LineChartFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[LineChartSortConfigurationTypeDef],  # (2)
+    ForecastConfigurations: NotRequired[Sequence[ForecastConfigurationTypeDef]],  # (3)
+    Type: NotRequired[LineChartTypeType],  # (4)
+    SmallMultiplesOptions: NotRequired[SmallMultiplesOptionsTypeDef],  # (5)
+    XAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (6)
+    XAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (7)
+    PrimaryYAxisDisplayOptions: NotRequired[LineSeriesAxisDisplayOptionsTypeDef],  # (8)
+    PrimaryYAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (7)
+    SecondaryYAxisDisplayOptions: NotRequired[LineSeriesAxisDisplayOptionsTypeDef],  # (8)
+    SecondaryYAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (7)
+    DefaultSeriesSettings: NotRequired[LineChartDefaultSeriesSettingsTypeDef],  # (12)
+    Series: NotRequired[Sequence[SeriesItemTypeDef]],  # (13)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (14)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (15)
+    ReferenceLines: NotRequired[Sequence[ReferenceLineTypeDef]],  # (16)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (17)
+    ContributionAnalysisDefaults: NotRequired[Sequence[ContributionAnalysisDefaultTypeDef]],  # (18)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (19)
+```
+
+1. See [:material-code-braces: LineChartFieldWellsTypeDef](./type_defs.md#linechartfieldwellstypedef) 
+2. See [:material-code-braces: LineChartSortConfigurationTypeDef](./type_defs.md#linechartsortconfigurationtypedef) 
+3. See [:material-code-braces: ForecastConfigurationTypeDef](./type_defs.md#forecastconfigurationtypedef) 
+4. See [:material-code-brackets: LineChartTypeType](./literals.md#linecharttypetype) 
+5. See [:material-code-braces: SmallMultiplesOptionsTypeDef](./type_defs.md#smallmultiplesoptionstypedef) 
+6. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+7. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+8. See [:material-code-braces: LineSeriesAxisDisplayOptionsTypeDef](./type_defs.md#lineseriesaxisdisplayoptionstypedef) 
+9. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+10. See [:material-code-braces: LineSeriesAxisDisplayOptionsTypeDef](./type_defs.md#lineseriesaxisdisplayoptionstypedef) 
+11. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+12. See [:material-code-braces: LineChartDefaultSeriesSettingsTypeDef](./type_defs.md#linechartdefaultseriessettingstypedef) 
+13. See [:material-code-braces: SeriesItemTypeDef](./type_defs.md#seriesitemtypedef) 
+14. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+15. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+16. See [:material-code-braces: ReferenceLineTypeDef](./type_defs.md#referencelinetypedef) 
+17. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+18. See [:material-code-braces: ContributionAnalysisDefaultTypeDef](./type_defs.md#contributionanalysisdefaulttypedef) 
+19. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## PieChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PieChartConfigurationTypeDef
+
+def get_value() -> PieChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class PieChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[PieChartFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[PieChartSortConfigurationTypeDef],  # (2)
+    DonutOptions: NotRequired[DonutOptionsTypeDef],  # (3)
+    SmallMultiplesOptions: NotRequired[SmallMultiplesOptionsTypeDef],  # (4)
+    CategoryLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    ValueLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (5)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (7)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (8)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (9)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (10)
+    ContributionAnalysisDefaults: NotRequired[Sequence[ContributionAnalysisDefaultTypeDef]],  # (11)
+```
+
+1. See [:material-code-braces: PieChartFieldWellsTypeDef](./type_defs.md#piechartfieldwellstypedef) 
+2. See [:material-code-braces: PieChartSortConfigurationTypeDef](./type_defs.md#piechartsortconfigurationtypedef) 
+3. See [:material-code-braces: DonutOptionsTypeDef](./type_defs.md#donutoptionstypedef) 
+4. See [:material-code-braces: SmallMultiplesOptionsTypeDef](./type_defs.md#smallmultiplesoptionstypedef) 
+5. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+6. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+7. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+8. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+9. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+10. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+11. See [:material-code-braces: ContributionAnalysisDefaultTypeDef](./type_defs.md#contributionanalysisdefaulttypedef) 
+## PivotTableConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableConfigurationTypeDef
+
+def get_value() -> PivotTableConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[PivotTableFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[PivotTableSortConfigurationTypeDef],  # (2)
+    TableOptions: NotRequired[PivotTableOptionsTypeDef],  # (3)
+    TotalOptions: NotRequired[PivotTableTotalOptionsTypeDef],  # (4)
+    FieldOptions: NotRequired[PivotTableFieldOptionsTypeDef],  # (5)
+    PaginatedReportOptions: NotRequired[PivotTablePaginatedReportOptionsTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: PivotTableFieldWellsTypeDef](./type_defs.md#pivottablefieldwellstypedef) 
+2. See [:material-code-braces: PivotTableSortConfigurationTypeDef](./type_defs.md#pivottablesortconfigurationtypedef) 
+3. See [:material-code-braces: PivotTableOptionsTypeDef](./type_defs.md#pivottableoptionstypedef) 
+4. See [:material-code-braces: PivotTableTotalOptionsTypeDef](./type_defs.md#pivottabletotaloptionstypedef) 
+5. See [:material-code-braces: PivotTableFieldOptionsTypeDef](./type_defs.md#pivottablefieldoptionstypedef) 
+6. See [:material-code-braces: PivotTablePaginatedReportOptionsTypeDef](./type_defs.md#pivottablepaginatedreportoptionstypedef) 
+## SankeyDiagramChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SankeyDiagramChartConfigurationTypeDef
+
+def get_value() -> SankeyDiagramChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class SankeyDiagramChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[SankeyDiagramFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[SankeyDiagramSortConfigurationTypeDef],  # (2)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: SankeyDiagramFieldWellsTypeDef](./type_defs.md#sankeydiagramfieldwellstypedef) 
+2. See [:material-code-braces: SankeyDiagramSortConfigurationTypeDef](./type_defs.md#sankeydiagramsortconfigurationtypedef) 
+3. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+## ScatterPlotConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ScatterPlotConfigurationTypeDef
+
+def get_value() -> ScatterPlotConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class ScatterPlotConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[ScatterPlotFieldWellsTypeDef],  # (1)
+    XAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (2)
+    XAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (3)
+    YAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (2)
+    YAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (3)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (6)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (7)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (8)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (9)
+```
+
+1. See [:material-code-braces: ScatterPlotFieldWellsTypeDef](./type_defs.md#scatterplotfieldwellstypedef) 
+2. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+3. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+4. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+5. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+6. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+7. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+8. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+9. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## InsightConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import InsightConfigurationTypeDef
+
+def get_value() -> InsightConfigurationTypeDef:
+    return {
+        "Computations": ...,
+    }
+```
+
+```python title="Definition"
+class InsightConfigurationTypeDef(TypedDict):
+    Computations: NotRequired[Sequence[ComputationTypeDef]],  # (1)
+    CustomNarrative: NotRequired[CustomNarrativeOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ComputationTypeDef](./type_defs.md#computationtypedef) 
+2. See [:material-code-braces: CustomNarrativeOptionsTypeDef](./type_defs.md#customnarrativeoptionstypedef) 
+## TreeMapConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TreeMapConfigurationTypeDef
+
+def get_value() -> TreeMapConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class TreeMapConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[TreeMapFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[TreeMapSortConfigurationTypeDef],  # (2)
+    GroupLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    SizeLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    ColorLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    ColorScale: NotRequired[ColorScaleTypeDef],  # (6)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (7)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (8)
+    Tooltip: NotRequired[TooltipOptionsTypeDef],  # (9)
+```
+
+1. See [:material-code-braces: TreeMapFieldWellsTypeDef](./type_defs.md#treemapfieldwellstypedef) 
+2. See [:material-code-braces: TreeMapSortConfigurationTypeDef](./type_defs.md#treemapsortconfigurationtypedef) 
+3. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+4. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+5. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+6. See [:material-code-braces: ColorScaleTypeDef](./type_defs.md#colorscaletypedef) 
+7. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+8. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+9. See [:material-code-braces: TooltipOptionsTypeDef](./type_defs.md#tooltipoptionstypedef) 
+## WaterfallChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WaterfallChartConfigurationTypeDef
+
+def get_value() -> WaterfallChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class WaterfallChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[WaterfallChartFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[WaterfallChartSortConfigurationTypeDef],  # (2)
+    WaterfallChartOptions: NotRequired[WaterfallChartOptionsTypeDef],  # (3)
+    CategoryAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (4)
+    CategoryAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (5)
+    PrimaryYAxisLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (4)
+    PrimaryYAxisDisplayOptions: NotRequired[AxisDisplayOptionsTypeDef],  # (5)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (8)
+    DataLabels: NotRequired[DataLabelOptionsTypeDef],  # (9)
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (10)
+```
+
+1. See [:material-code-braces: WaterfallChartFieldWellsTypeDef](./type_defs.md#waterfallchartfieldwellstypedef) 
+2. See [:material-code-braces: WaterfallChartSortConfigurationTypeDef](./type_defs.md#waterfallchartsortconfigurationtypedef) 
+3. See [:material-code-braces: WaterfallChartOptionsTypeDef](./type_defs.md#waterfallchartoptionstypedef) 
+4. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+5. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+6. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+7. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+8. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
+9. See [:material-code-braces: DataLabelOptionsTypeDef](./type_defs.md#datalabeloptionstypedef) 
+10. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+## WordCloudChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WordCloudChartConfigurationTypeDef
+
+def get_value() -> WordCloudChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class WordCloudChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[WordCloudFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[WordCloudSortConfigurationTypeDef],  # (2)
+    CategoryLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (3)
+    WordCloudOptions: NotRequired[WordCloudOptionsTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: WordCloudFieldWellsTypeDef](./type_defs.md#wordcloudfieldwellstypedef) 
+2. See [:material-code-braces: WordCloudSortConfigurationTypeDef](./type_defs.md#wordcloudsortconfigurationtypedef) 
+3. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+4. See [:material-code-braces: WordCloudOptionsTypeDef](./type_defs.md#wordcloudoptionstypedef) 
+## TableConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableConfigurationTypeDef
+
+def get_value() -> TableConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class TableConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[TableFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[TableSortConfigurationTypeDef],  # (2)
+    TableOptions: NotRequired[TableOptionsTypeDef],  # (3)
+    TotalOptions: NotRequired[TotalOptionsTypeDef],  # (4)
+    FieldOptions: NotRequired[TableFieldOptionsTypeDef],  # (5)
+    PaginatedReportOptions: NotRequired[TablePaginatedReportOptionsTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: TableFieldWellsTypeDef](./type_defs.md#tablefieldwellstypedef) 
+2. See [:material-code-braces: TableSortConfigurationTypeDef](./type_defs.md#tablesortconfigurationtypedef) 
+3. See [:material-code-braces: TableOptionsTypeDef](./type_defs.md#tableoptionstypedef) 
+4. See [:material-code-braces: TotalOptionsTypeDef](./type_defs.md#totaloptionstypedef) 
+5. See [:material-code-braces: TableFieldOptionsTypeDef](./type_defs.md#tablefieldoptionstypedef) 
+6. See [:material-code-braces: TablePaginatedReportOptionsTypeDef](./type_defs.md#tablepaginatedreportoptionstypedef) 
+## LayoutTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LayoutTypeDef
+
+def get_value() -> LayoutTypeDef:
+    return {
+        "Configuration": ...,
+    }
+```
+
+```python title="Definition"
+class LayoutTypeDef(TypedDict):
+    Configuration: LayoutConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: LayoutConfigurationTypeDef](./type_defs.md#layoutconfigurationtypedef) 
+## BarChartVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BarChartVisualTypeDef
+
+def get_value() -> BarChartVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class BarChartVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[BarChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: BarChartConfigurationTypeDef](./type_defs.md#barchartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## BoxPlotVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import BoxPlotVisualTypeDef
+
+def get_value() -> BoxPlotVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class BoxPlotVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[BoxPlotChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: BoxPlotChartConfigurationTypeDef](./type_defs.md#boxplotchartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## ComboChartVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ComboChartVisualTypeDef
+
+def get_value() -> ComboChartVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class ComboChartVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[ComboChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: ComboChartConfigurationTypeDef](./type_defs.md#combochartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## FilledMapVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FilledMapVisualTypeDef
+
+def get_value() -> FilledMapVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class FilledMapVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[FilledMapConfigurationTypeDef],  # (3)
+    ConditionalFormatting: NotRequired[FilledMapConditionalFormattingTypeDef],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (6)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: FilledMapConfigurationTypeDef](./type_defs.md#filledmapconfigurationtypedef) 
+4. See [:material-code-braces: FilledMapConditionalFormattingTypeDef](./type_defs.md#filledmapconditionalformattingtypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+6. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## FunnelChartVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import FunnelChartVisualTypeDef
+
+def get_value() -> FunnelChartVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class FunnelChartVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[FunnelChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: FunnelChartConfigurationTypeDef](./type_defs.md#funnelchartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## GeospatialMapVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import GeospatialMapVisualTypeDef
+
+def get_value() -> GeospatialMapVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class GeospatialMapVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[GeospatialMapConfigurationTypeDef],  # (3)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (4)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: GeospatialMapConfigurationTypeDef](./type_defs.md#geospatialmapconfigurationtypedef) 
+4. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+5. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## HeatMapVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HeatMapVisualTypeDef
+
+def get_value() -> HeatMapVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class HeatMapVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[HeatMapConfigurationTypeDef],  # (3)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (4)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: HeatMapConfigurationTypeDef](./type_defs.md#heatmapconfigurationtypedef) 
+4. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+5. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## HistogramVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import HistogramVisualTypeDef
+
+def get_value() -> HistogramVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class HistogramVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[HistogramConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: HistogramConfigurationTypeDef](./type_defs.md#histogramconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## LineChartVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import LineChartVisualTypeDef
+
+def get_value() -> LineChartVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class LineChartVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[LineChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: LineChartConfigurationTypeDef](./type_defs.md#linechartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## PieChartVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PieChartVisualTypeDef
+
+def get_value() -> PieChartVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class PieChartVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[PieChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: PieChartConfigurationTypeDef](./type_defs.md#piechartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## PivotTableVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import PivotTableVisualTypeDef
+
+def get_value() -> PivotTableVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class PivotTableVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[PivotTableConfigurationTypeDef],  # (3)
+    ConditionalFormatting: NotRequired[PivotTableConditionalFormattingTypeDef],  # (4)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: PivotTableConfigurationTypeDef](./type_defs.md#pivottableconfigurationtypedef) 
+4. See [:material-code-braces: PivotTableConditionalFormattingTypeDef](./type_defs.md#pivottableconditionalformattingtypedef) 
+5. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## SankeyDiagramVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SankeyDiagramVisualTypeDef
+
+def get_value() -> SankeyDiagramVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class SankeyDiagramVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[SankeyDiagramChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: SankeyDiagramChartConfigurationTypeDef](./type_defs.md#sankeydiagramchartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## ScatterPlotVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ScatterPlotVisualTypeDef
+
+def get_value() -> ScatterPlotVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class ScatterPlotVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[ScatterPlotConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: ScatterPlotConfigurationTypeDef](./type_defs.md#scatterplotconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## InsightVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import InsightVisualTypeDef
+
+def get_value() -> InsightVisualTypeDef:
+    return {
+        "VisualId": ...,
+        "DataSetIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class InsightVisualTypeDef(TypedDict):
+    VisualId: str,
+    DataSetIdentifier: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    InsightConfiguration: NotRequired[InsightConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: InsightConfigurationTypeDef](./type_defs.md#insightconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## TreeMapVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TreeMapVisualTypeDef
+
+def get_value() -> TreeMapVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class TreeMapVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[TreeMapConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: TreeMapConfigurationTypeDef](./type_defs.md#treemapconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## WaterfallVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WaterfallVisualTypeDef
+
+def get_value() -> WaterfallVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class WaterfallVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[WaterfallChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: WaterfallChartConfigurationTypeDef](./type_defs.md#waterfallchartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## WordCloudVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import WordCloudVisualTypeDef
+
+def get_value() -> WordCloudVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class WordCloudVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[WordCloudChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: WordCloudChartConfigurationTypeDef](./type_defs.md#wordcloudchartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
+## TableVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableVisualTypeDef
+
+def get_value() -> TableVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class TableVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[TableConfigurationTypeDef],  # (3)
+    ConditionalFormatting: NotRequired[TableConditionalFormattingTypeDef],  # (4)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: TableConfigurationTypeDef](./type_defs.md#tableconfigurationtypedef) 
+4. See [:material-code-braces: TableConditionalFormattingTypeDef](./type_defs.md#tableconditionalformattingtypedef) 
+5. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## VisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualTypeDef
+
+def get_value() -> VisualTypeDef:
+    return {
+        "TableVisual": ...,
+    }
+```
+
+```python title="Definition"
+class VisualTypeDef(TypedDict):
+    TableVisual: NotRequired[TableVisualTypeDef],  # (1)
+    PivotTableVisual: NotRequired[PivotTableVisualTypeDef],  # (2)
+    BarChartVisual: NotRequired[BarChartVisualTypeDef],  # (3)
+    KPIVisual: NotRequired[KPIVisualTypeDef],  # (4)
+    PieChartVisual: NotRequired[PieChartVisualTypeDef],  # (5)
+    GaugeChartVisual: NotRequired[GaugeChartVisualTypeDef],  # (6)
+    LineChartVisual: NotRequired[LineChartVisualTypeDef],  # (7)
+    HeatMapVisual: NotRequired[HeatMapVisualTypeDef],  # (8)
+    TreeMapVisual: NotRequired[TreeMapVisualTypeDef],  # (9)
+    GeospatialMapVisual: NotRequired[GeospatialMapVisualTypeDef],  # (10)
+    FilledMapVisual: NotRequired[FilledMapVisualTypeDef],  # (11)
+    FunnelChartVisual: NotRequired[FunnelChartVisualTypeDef],  # (12)
+    ScatterPlotVisual: NotRequired[ScatterPlotVisualTypeDef],  # (13)
+    ComboChartVisual: NotRequired[ComboChartVisualTypeDef],  # (14)
+    BoxPlotVisual: NotRequired[BoxPlotVisualTypeDef],  # (15)
+    WaterfallVisual: NotRequired[WaterfallVisualTypeDef],  # (16)
+    HistogramVisual: NotRequired[HistogramVisualTypeDef],  # (17)
+    WordCloudVisual: NotRequired[WordCloudVisualTypeDef],  # (18)
+    InsightVisual: NotRequired[InsightVisualTypeDef],  # (19)
+    SankeyDiagramVisual: NotRequired[SankeyDiagramVisualTypeDef],  # (20)
+    CustomContentVisual: NotRequired[CustomContentVisualTypeDef],  # (21)
+    EmptyVisual: NotRequired[EmptyVisualTypeDef],  # (22)
+```
+
+1. See [:material-code-braces: TableVisualTypeDef](./type_defs.md#tablevisualtypedef) 
+2. See [:material-code-braces: PivotTableVisualTypeDef](./type_defs.md#pivottablevisualtypedef) 
+3. See [:material-code-braces: BarChartVisualTypeDef](./type_defs.md#barchartvisualtypedef) 
+4. See [:material-code-braces: KPIVisualTypeDef](./type_defs.md#kpivisualtypedef) 
+5. See [:material-code-braces: PieChartVisualTypeDef](./type_defs.md#piechartvisualtypedef) 
+6. See [:material-code-braces: GaugeChartVisualTypeDef](./type_defs.md#gaugechartvisualtypedef) 
+7. See [:material-code-braces: LineChartVisualTypeDef](./type_defs.md#linechartvisualtypedef) 
+8. See [:material-code-braces: HeatMapVisualTypeDef](./type_defs.md#heatmapvisualtypedef) 
+9. See [:material-code-braces: TreeMapVisualTypeDef](./type_defs.md#treemapvisualtypedef) 
+10. See [:material-code-braces: GeospatialMapVisualTypeDef](./type_defs.md#geospatialmapvisualtypedef) 
+11. See [:material-code-braces: FilledMapVisualTypeDef](./type_defs.md#filledmapvisualtypedef) 
+12. See [:material-code-braces: FunnelChartVisualTypeDef](./type_defs.md#funnelchartvisualtypedef) 
+13. See [:material-code-braces: ScatterPlotVisualTypeDef](./type_defs.md#scatterplotvisualtypedef) 
+14. See [:material-code-braces: ComboChartVisualTypeDef](./type_defs.md#combochartvisualtypedef) 
+15. See [:material-code-braces: BoxPlotVisualTypeDef](./type_defs.md#boxplotvisualtypedef) 
+16. See [:material-code-braces: WaterfallVisualTypeDef](./type_defs.md#waterfallvisualtypedef) 
+17. See [:material-code-braces: HistogramVisualTypeDef](./type_defs.md#histogramvisualtypedef) 
+18. See [:material-code-braces: WordCloudVisualTypeDef](./type_defs.md#wordcloudvisualtypedef) 
+19. See [:material-code-braces: InsightVisualTypeDef](./type_defs.md#insightvisualtypedef) 
+20. See [:material-code-braces: SankeyDiagramVisualTypeDef](./type_defs.md#sankeydiagramvisualtypedef) 
+21. See [:material-code-braces: CustomContentVisualTypeDef](./type_defs.md#customcontentvisualtypedef) 
+22. See [:material-code-braces: EmptyVisualTypeDef](./type_defs.md#emptyvisualtypedef) 
+## SheetDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetDefinitionTypeDef
+
+def get_value() -> SheetDefinitionTypeDef:
+    return {
+        "SheetId": ...,
+    }
+```
+
+```python title="Definition"
+class SheetDefinitionTypeDef(TypedDict):
+    SheetId: str,
+    Title: NotRequired[str],
+    Description: NotRequired[str],
+    Name: NotRequired[str],
+    ParameterControls: NotRequired[Sequence[ParameterControlTypeDef]],  # (1)
+    FilterControls: NotRequired[Sequence[FilterControlTypeDef]],  # (2)
+    Visuals: NotRequired[Sequence[VisualTypeDef]],  # (3)
+    TextBoxes: NotRequired[Sequence[SheetTextBoxTypeDef]],  # (4)
+    Layouts: NotRequired[Sequence[LayoutTypeDef]],  # (5)
+    SheetControlLayouts: NotRequired[Sequence[SheetControlLayoutTypeDef]],  # (6)
+    ContentType: NotRequired[SheetContentTypeType],  # (7)
+```
+
+1. See [:material-code-braces: ParameterControlTypeDef](./type_defs.md#parametercontroltypedef) 
+2. See [:material-code-braces: FilterControlTypeDef](./type_defs.md#filtercontroltypedef) 
+3. See [:material-code-braces: VisualTypeDef](./type_defs.md#visualtypedef) 
+4. See [:material-code-braces: SheetTextBoxTypeDef](./type_defs.md#sheettextboxtypedef) 
+5. See [:material-code-braces: LayoutTypeDef](./type_defs.md#layouttypedef) 
+6. See [:material-code-braces: SheetControlLayoutTypeDef](./type_defs.md#sheetcontrollayouttypedef) 
+7. See [:material-code-brackets: SheetContentTypeType](./literals.md#sheetcontenttypetype) 
+## AnalysisDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import AnalysisDefinitionTypeDef
+
+def get_value() -> AnalysisDefinitionTypeDef:
+    return {
+        "DataSetIdentifierDeclarations": ...,
+    }
+```
+
+```python title="Definition"
+class AnalysisDefinitionTypeDef(TypedDict):
+    DataSetIdentifierDeclarations: Sequence[DataSetIdentifierDeclarationTypeDef],  # (1)
+    Sheets: NotRequired[Sequence[SheetDefinitionTypeDef]],  # (2)
+    CalculatedFields: NotRequired[Sequence[CalculatedFieldTypeDef]],  # (3)
+    ParameterDeclarations: NotRequired[Sequence[ParameterDeclarationTypeDef]],  # (4)
+    FilterGroups: NotRequired[Sequence[FilterGroupTypeDef]],  # (5)
+    ColumnConfigurations: NotRequired[Sequence[ColumnConfigurationTypeDef]],  # (6)
+    AnalysisDefaults: NotRequired[AnalysisDefaultsTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: DataSetIdentifierDeclarationTypeDef](./type_defs.md#datasetidentifierdeclarationtypedef) 
+2. See [:material-code-braces: SheetDefinitionTypeDef](./type_defs.md#sheetdefinitiontypedef) 
+3. See [:material-code-braces: CalculatedFieldTypeDef](./type_defs.md#calculatedfieldtypedef) 
+4. See [:material-code-braces: ParameterDeclarationTypeDef](./type_defs.md#parameterdeclarationtypedef) 
+5. See [:material-code-braces: FilterGroupTypeDef](./type_defs.md#filtergrouptypedef) 
+6. See [:material-code-braces: ColumnConfigurationTypeDef](./type_defs.md#columnconfigurationtypedef) 
+7. See [:material-code-braces: AnalysisDefaultsTypeDef](./type_defs.md#analysisdefaultstypedef) 
+## DashboardVersionDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DashboardVersionDefinitionTypeDef
+
+def get_value() -> DashboardVersionDefinitionTypeDef:
+    return {
+        "DataSetIdentifierDeclarations": ...,
+    }
+```
+
+```python title="Definition"
+class DashboardVersionDefinitionTypeDef(TypedDict):
+    DataSetIdentifierDeclarations: Sequence[DataSetIdentifierDeclarationTypeDef],  # (1)
+    Sheets: NotRequired[Sequence[SheetDefinitionTypeDef]],  # (2)
+    CalculatedFields: NotRequired[Sequence[CalculatedFieldTypeDef]],  # (3)
+    ParameterDeclarations: NotRequired[Sequence[ParameterDeclarationTypeDef]],  # (4)
+    FilterGroups: NotRequired[Sequence[FilterGroupTypeDef]],  # (5)
+    ColumnConfigurations: NotRequired[Sequence[ColumnConfigurationTypeDef]],  # (6)
+    AnalysisDefaults: NotRequired[AnalysisDefaultsTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: DataSetIdentifierDeclarationTypeDef](./type_defs.md#datasetidentifierdeclarationtypedef) 
+2. See [:material-code-braces: SheetDefinitionTypeDef](./type_defs.md#sheetdefinitiontypedef) 
+3. See [:material-code-braces: CalculatedFieldTypeDef](./type_defs.md#calculatedfieldtypedef) 
+4. See [:material-code-braces: ParameterDeclarationTypeDef](./type_defs.md#parameterdeclarationtypedef) 
+5. See [:material-code-braces: FilterGroupTypeDef](./type_defs.md#filtergrouptypedef) 
+6. See [:material-code-braces: ColumnConfigurationTypeDef](./type_defs.md#columnconfigurationtypedef) 
+7. See [:material-code-braces: AnalysisDefaultsTypeDef](./type_defs.md#analysisdefaultstypedef) 
+## TemplateVersionDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TemplateVersionDefinitionTypeDef
+
+def get_value() -> TemplateVersionDefinitionTypeDef:
+    return {
+        "DataSetConfigurations": ...,
+    }
+```
+
+```python title="Definition"
+class TemplateVersionDefinitionTypeDef(TypedDict):
+    DataSetConfigurations: Sequence[DataSetConfigurationTypeDef],  # (1)
+    Sheets: NotRequired[Sequence[SheetDefinitionTypeDef]],  # (2)
+    CalculatedFields: NotRequired[Sequence[CalculatedFieldTypeDef]],  # (3)
+    ParameterDeclarations: NotRequired[Sequence[ParameterDeclarationTypeDef]],  # (4)
+    FilterGroups: NotRequired[Sequence[FilterGroupTypeDef]],  # (5)
+    ColumnConfigurations: NotRequired[Sequence[ColumnConfigurationTypeDef]],  # (6)
+    AnalysisDefaults: NotRequired[AnalysisDefaultsTypeDef],  # (7)
+```
+
+1. See [:material-code-braces: DataSetConfigurationTypeDef](./type_defs.md#datasetconfigurationtypedef) 
+2. See [:material-code-braces: SheetDefinitionTypeDef](./type_defs.md#sheetdefinitiontypedef) 
+3. See [:material-code-braces: CalculatedFieldTypeDef](./type_defs.md#calculatedfieldtypedef) 
+4. See [:material-code-braces: ParameterDeclarationTypeDef](./type_defs.md#parameterdeclarationtypedef) 
+5. See [:material-code-braces: FilterGroupTypeDef](./type_defs.md#filtergrouptypedef) 
+6. See [:material-code-braces: ColumnConfigurationTypeDef](./type_defs.md#columnconfigurationtypedef) 
+7. See [:material-code-braces: AnalysisDefaultsTypeDef](./type_defs.md#analysisdefaultstypedef) 
+## CreateAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateAnalysisRequestRequestTypeDef
+
+def get_value() -> CreateAnalysisRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAnalysisRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+    Name: str,
+    Parameters: NotRequired[ParametersTypeDef],  # (1)
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
+    SourceEntity: NotRequired[AnalysisSourceEntityTypeDef],  # (3)
+    ThemeArn: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    Definition: NotRequired[AnalysisDefinitionTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: AnalysisDefinitionTypeDef](./type_defs.md#analysisdefinitiontypedef) 
+## DescribeAnalysisDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisDefinitionResponseTypeDef
+
+def get_value() -> DescribeAnalysisDefinitionResponseTypeDef:
+    return {
+        "AnalysisId": ...,
+        "Name": ...,
+        "Errors": ...,
+        "ResourceStatus": ...,
+        "ThemeArn": ...,
+        "Definition": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAnalysisDefinitionResponseTypeDef(TypedDict):
+    AnalysisId: str,
+    Name: str,
+    Errors: List[AnalysisErrorTypeDef],  # (1)
+    ResourceStatus: ResourceStatusType,  # (2)
+    ThemeArn: str,
+    Definition: AnalysisDefinitionTypeDef,  # (3)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: AnalysisDefinitionTypeDef](./type_defs.md#analysisdefinitiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAnalysisRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateAnalysisRequestRequestTypeDef
+
+def get_value() -> UpdateAnalysisRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "AnalysisId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAnalysisRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    AnalysisId: str,
+    Name: str,
+    Parameters: NotRequired[ParametersTypeDef],  # (1)
+    SourceEntity: NotRequired[AnalysisSourceEntityTypeDef],  # (2)
+    ThemeArn: NotRequired[str],
+    Definition: NotRequired[AnalysisDefinitionTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+2. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
+3. See [:material-code-braces: AnalysisDefinitionTypeDef](./type_defs.md#analysisdefinitiontypedef) 
+## CreateDashboardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateDashboardRequestRequestTypeDef
+
+def get_value() -> CreateDashboardRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDashboardRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    Name: str,
+    Parameters: NotRequired[ParametersTypeDef],  # (1)
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (2)
+    SourceEntity: NotRequired[DashboardSourceEntityTypeDef],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    VersionDescription: NotRequired[str],
+    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (5)
+    ThemeArn: NotRequired[str],
+    Definition: NotRequired[DashboardVersionDefinitionTypeDef],  # (6)
+```
+
+1. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
+6. See [:material-code-braces: DashboardVersionDefinitionTypeDef](./type_defs.md#dashboardversiondefinitiontypedef) 
+## DescribeDashboardDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeDashboardDefinitionResponseTypeDef
+
+def get_value() -> DescribeDashboardDefinitionResponseTypeDef:
+    return {
+        "DashboardId": ...,
+        "Errors": ...,
+        "Name": ...,
+        "ResourceStatus": ...,
+        "ThemeArn": ...,
+        "Definition": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDashboardDefinitionResponseTypeDef(TypedDict):
+    DashboardId: str,
+    Errors: List[DashboardErrorTypeDef],  # (1)
+    Name: str,
+    ResourceStatus: ResourceStatusType,  # (2)
+    ThemeArn: str,
+    Definition: DashboardVersionDefinitionTypeDef,  # (3)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: DashboardVersionDefinitionTypeDef](./type_defs.md#dashboardversiondefinitiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDashboardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateDashboardRequestRequestTypeDef
+
+def get_value() -> UpdateDashboardRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "DashboardId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDashboardRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    DashboardId: str,
+    Name: str,
+    SourceEntity: NotRequired[DashboardSourceEntityTypeDef],  # (1)
+    Parameters: NotRequired[ParametersTypeDef],  # (2)
+    VersionDescription: NotRequired[str],
+    DashboardPublishOptions: NotRequired[DashboardPublishOptionsTypeDef],  # (3)
+    ThemeArn: NotRequired[str],
+    Definition: NotRequired[DashboardVersionDefinitionTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
+2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+3. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
+4. See [:material-code-braces: DashboardVersionDefinitionTypeDef](./type_defs.md#dashboardversiondefinitiontypedef) 
+## CreateTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import CreateTemplateRequestRequestTypeDef
+
+def get_value() -> CreateTemplateRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTemplateRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    Name: NotRequired[str],
+    Permissions: NotRequired[Sequence[ResourcePermissionTypeDef]],  # (1)
+    SourceEntity: NotRequired[TemplateSourceEntityTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    VersionDescription: NotRequired[str],
+    Definition: NotRequired[TemplateVersionDefinitionTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: TemplateVersionDefinitionTypeDef](./type_defs.md#templateversiondefinitiontypedef) 
+## DescribeTemplateDefinitionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DescribeTemplateDefinitionResponseTypeDef
+
+def get_value() -> DescribeTemplateDefinitionResponseTypeDef:
+    return {
+        "Name": ...,
+        "TemplateId": ...,
+        "Errors": ...,
+        "ResourceStatus": ...,
+        "ThemeArn": ...,
+        "Definition": ...,
+        "Status": ...,
+        "RequestId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTemplateDefinitionResponseTypeDef(TypedDict):
+    Name: str,
+    TemplateId: str,
+    Errors: List[TemplateErrorTypeDef],  # (1)
+    ResourceStatus: ResourceStatusType,  # (2)
+    ThemeArn: str,
+    Definition: TemplateVersionDefinitionTypeDef,  # (3)
+    Status: int,
+    RequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: TemplateErrorTypeDef](./type_defs.md#templateerrortypedef) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: TemplateVersionDefinitionTypeDef](./type_defs.md#templateversiondefinitiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateTemplateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import UpdateTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateTemplateRequestRequestTypeDef:
+    return {
+        "AwsAccountId": ...,
+        "TemplateId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTemplateRequestRequestTypeDef(TypedDict):
+    AwsAccountId: str,
+    TemplateId: str,
+    SourceEntity: NotRequired[TemplateSourceEntityTypeDef],  # (1)
+    VersionDescription: NotRequired[str],
+    Name: NotRequired[str],
+    Definition: NotRequired[TemplateVersionDefinitionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
+2. See [:material-code-braces: TemplateVersionDefinitionTypeDef](./type_defs.md#templateversiondefinitiontypedef) 

@@ -1005,6 +1005,26 @@ NodeTypeType = Literal[
     "TRIGGER",
 ]
 ```
+## ParamTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import ParamTypeType
+
+def get_value() -> ParamTypeType:
+    return "bool"
+```
+
+```python title="Definition"
+ParamTypeType = Literal[
+    "bool",
+    "complex",
+    "float",
+    "int",
+    "list",
+    "null",
+    "str",
+]
+```
 ## ParquetCompressionTypeType
 
 ```python title="Usage Example"
@@ -1686,6 +1706,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",

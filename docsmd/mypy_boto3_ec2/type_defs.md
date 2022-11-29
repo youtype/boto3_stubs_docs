@@ -1240,48 +1240,6 @@ class AttachInternetGatewayRequestVpcAttachInternetGatewayTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
-## AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef
-
-def get_value() -> AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef:
-    return {
-        "DeviceIndex": ...,
-        "InstanceId": ...,
-    }
-```
-
-```python title="Definition"
-class AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef(TypedDict):
-    DeviceIndex: int,
-    InstanceId: str,
-    DryRun: NotRequired[bool],
-    NetworkCardIndex: NotRequired[int],
-```
-
-## AttachNetworkInterfaceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceRequestRequestTypeDef
-
-def get_value() -> AttachNetworkInterfaceRequestRequestTypeDef:
-    return {
-        "DeviceIndex": ...,
-        "InstanceId": ...,
-        "NetworkInterfaceId": ...,
-    }
-```
-
-```python title="Definition"
-class AttachNetworkInterfaceRequestRequestTypeDef(TypedDict):
-    DeviceIndex: int,
-    InstanceId: str,
-    NetworkInterfaceId: str,
-    DryRun: NotRequired[bool],
-    NetworkCardIndex: NotRequired[int],
-```
-
 ## AttachVolumeRequestInstanceAttachVolumeTypeDef
 
 ```python title="Usage Example"
@@ -1378,6 +1336,22 @@ class VpcAttachmentTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 
+## AttachmentEnaSrdUdpSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AttachmentEnaSrdUdpSpecificationTypeDef
+
+def get_value() -> AttachmentEnaSrdUdpSpecificationTypeDef:
+    return {
+        "EnaSrdUdpEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class AttachmentEnaSrdUdpSpecificationTypeDef(TypedDict):
+    EnaSrdUdpEnabled: NotRequired[bool],
+```
+
 ## AttributeBooleanValueTypeDef
 
 ```python title="Usage Example"
@@ -3356,6 +3330,49 @@ class CreditSpecificationTypeDef(TypedDict):
     CpuCredits: NotRequired[str],
 ```
 
+## DataQueryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DataQueryTypeDef
+
+def get_value() -> DataQueryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DataQueryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Source: NotRequired[str],
+    Destination: NotRequired[str],
+    Metric: NotRequired[MetricTypeType],  # (1)
+    Statistic: NotRequired[StatisticTypeType],  # (2)
+    Period: NotRequired[PeriodTypeType],  # (3)
+```
+
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+2. See [:material-code-brackets: StatisticTypeType](./literals.md#statistictypetype) 
+3. See [:material-code-brackets: PeriodTypeType](./literals.md#periodtypetype) 
+## MetricPointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import MetricPointTypeDef
+
+def get_value() -> MetricPointTypeDef:
+    return {
+        "StartDate": ...,
+    }
+```
+
+```python title="Definition"
+class MetricPointTypeDef(TypedDict):
+    StartDate: NotRequired[datetime],
+    EndDate: NotRequired[datetime],
+    Value: NotRequired[float],
+    Status: NotRequired[str],
+```
+
 ## DeleteCarrierGatewayRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5251,6 +5268,29 @@ class IdFormatTypeDef(TypedDict):
     UseLongIds: NotRequired[bool],
 ```
 
+## SubscriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import SubscriptionTypeDef
+
+def get_value() -> SubscriptionTypeDef:
+    return {
+        "Source": ...,
+    }
+```
+
+```python title="Definition"
+class SubscriptionTypeDef(TypedDict):
+    Source: NotRequired[str],
+    Destination: NotRequired[str],
+    Metric: NotRequired[MetricTypeType],  # (1)
+    Statistic: NotRequired[StatisticTypeType],  # (2)
+    Period: NotRequired[PeriodTypeType],  # (3)
+```
+
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+2. See [:material-code-brackets: StatisticTypeType](./literals.md#statistictypetype) 
+3. See [:material-code-brackets: PeriodTypeType](./literals.md#periodtypetype) 
 ## WaiterConfigTypeDef
 
 ```python title="Usage Example"
@@ -5648,30 +5688,6 @@ class DescribeNetworkInterfaceAttributeRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: NetworkInterfaceAttributeType](./literals.md#networkinterfaceattributetype) 
-## NetworkInterfaceAttachmentTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import NetworkInterfaceAttachmentTypeDef
-
-def get_value() -> NetworkInterfaceAttachmentTypeDef:
-    return {
-        "AttachTime": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInterfaceAttachmentTypeDef(TypedDict):
-    AttachTime: NotRequired[datetime],
-    AttachmentId: NotRequired[str],
-    DeleteOnTermination: NotRequired[bool],
-    DeviceIndex: NotRequired[int],
-    NetworkCardIndex: NotRequired[int],
-    InstanceId: NotRequired[str],
-    InstanceOwnerId: NotRequired[str],
-    Status: NotRequired[AttachmentStatusType],  # (1)
-```
-
-1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 
 ## PrefixListTypeDef
 
 ```python title="Usage Example"
@@ -6416,6 +6432,28 @@ class DisableAddressTransferRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## DisableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef
+
+def get_value() -> DisableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef:
+    return {
+        "Source": ...,
+    }
+```
+
+```python title="Definition"
+class DisableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef(TypedDict):
+    Source: NotRequired[str],
+    Destination: NotRequired[str],
+    Metric: NotRequired[MetricTypeType],  # (1)
+    Statistic: NotRequired[StatisticTypeType],  # (2)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+2. See [:material-code-brackets: StatisticTypeType](./literals.md#statistictypetype) 
 ## DisableEbsEncryptionByDefaultRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7276,6 +7314,22 @@ class ElasticInferenceAcceleratorTypeDef(TypedDict):
     Count: NotRequired[int],
 ```
 
+## EnaSrdUdpSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnaSrdUdpSpecificationTypeDef
+
+def get_value() -> EnaSrdUdpSpecificationTypeDef:
+    return {
+        "EnaSrdUdpEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class EnaSrdUdpSpecificationTypeDef(TypedDict):
+    EnaSrdUdpEnabled: NotRequired[bool],
+```
+
 ## EnableAddressTransferRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7295,6 +7349,28 @@ class EnableAddressTransferRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## EnableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef
+
+def get_value() -> EnableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef:
+    return {
+        "Source": ...,
+    }
+```
+
+```python title="Definition"
+class EnableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef(TypedDict):
+    Source: NotRequired[str],
+    Destination: NotRequired[str],
+    Metric: NotRequired[MetricTypeType],  # (1)
+    Statistic: NotRequired[StatisticTypeType],  # (2)
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+2. See [:material-code-brackets: StatisticTypeType](./literals.md#statistictypetype) 
 ## EnableEbsEncryptionByDefaultRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7441,6 +7517,22 @@ def get_value() -> EnableIpamOrganizationAdminAccountRequestRequestTypeDef:
 ```python title="Definition"
 class EnableIpamOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
     DelegatedAdminAccountId: str,
+    DryRun: NotRequired[bool],
+```
+
+## EnableReachabilityAnalyzerOrganizationSharingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnableReachabilityAnalyzerOrganizationSharingRequestRequestTypeDef
+
+def get_value() -> EnableReachabilityAnalyzerOrganizationSharingRequestRequestTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class EnableReachabilityAnalyzerOrganizationSharingRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
@@ -15271,6 +15363,25 @@ class DisableAddressTransferResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: AddressTransferTypeDef](./type_defs.md#addresstransfertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisableAwsNetworkPerformanceMetricSubscriptionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisableAwsNetworkPerformanceMetricSubscriptionResultTypeDef
+
+def get_value() -> DisableAwsNetworkPerformanceMetricSubscriptionResultTypeDef:
+    return {
+        "Output": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisableAwsNetworkPerformanceMetricSubscriptionResultTypeDef(TypedDict):
+    Output: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisableEbsEncryptionByDefaultResultTypeDef
 
 ```python title="Usage Example"
@@ -15462,6 +15573,25 @@ class EnableAddressTransferResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: AddressTransferTypeDef](./type_defs.md#addresstransfertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EnableAwsNetworkPerformanceMetricSubscriptionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnableAwsNetworkPerformanceMetricSubscriptionResultTypeDef
+
+def get_value() -> EnableAwsNetworkPerformanceMetricSubscriptionResultTypeDef:
+    return {
+        "Output": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EnableAwsNetworkPerformanceMetricSubscriptionResultTypeDef(TypedDict):
+    Output: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnableEbsEncryptionByDefaultResultTypeDef
 
 ```python title="Usage Example"
@@ -15515,6 +15645,25 @@ def get_value() -> EnableIpamOrganizationAdminAccountResultTypeDef:
 ```python title="Definition"
 class EnableIpamOrganizationAdminAccountResultTypeDef(TypedDict):
     Success: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EnableReachabilityAnalyzerOrganizationSharingResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnableReachabilityAnalyzerOrganizationSharingResultTypeDef
+
+def get_value() -> EnableReachabilityAnalyzerOrganizationSharingResultTypeDef:
+    return {
+        "ReturnValue": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EnableReachabilityAnalyzerOrganizationSharingResultTypeDef(TypedDict):
+    ReturnValue: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -16390,40 +16539,6 @@ class NetworkInterfaceAssociationResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NetworkInterfaceAttachmentResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import NetworkInterfaceAttachmentResponseMetadataTypeDef
-
-def get_value() -> NetworkInterfaceAttachmentResponseMetadataTypeDef:
-    return {
-        "AttachTime": ...,
-        "AttachmentId": ...,
-        "DeleteOnTermination": ...,
-        "DeviceIndex": ...,
-        "NetworkCardIndex": ...,
-        "InstanceId": ...,
-        "InstanceOwnerId": ...,
-        "Status": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInterfaceAttachmentResponseMetadataTypeDef(TypedDict):
-    AttachTime: datetime,
-    AttachmentId: str,
-    DeleteOnTermination: bool,
-    DeviceIndex: int,
-    NetworkCardIndex: int,
-    InstanceId: str,
-    InstanceOwnerId: str,
-    Status: AttachmentStatusType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PlacementResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -18067,6 +18182,8 @@ class NetworkInsightsPathTypeDef(TypedDict):
     CreatedDate: NotRequired[datetime],
     Source: NotRequired[str],
     Destination: NotRequired[str],
+    SourceArn: NotRequired[str],
+    DestinationArn: NotRequired[str],
     SourceIp: NotRequired[str],
     DestinationIp: NotRequired[str],
     Protocol: NotRequired[ProtocolType],  # (1)
@@ -19118,6 +19235,24 @@ class VpnGatewayTypeDef(TypedDict):
 2. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
 3. See [:material-code-braces: VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## AttachmentEnaSrdSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AttachmentEnaSrdSpecificationTypeDef
+
+def get_value() -> AttachmentEnaSrdSpecificationTypeDef:
+    return {
+        "EnaSrdEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class AttachmentEnaSrdSpecificationTypeDef(TypedDict):
+    EnaSrdEnabled: NotRequired[bool],
+    EnaSrdUdpSpecification: NotRequired[AttachmentEnaSrdUdpSpecificationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AttachmentEnaSrdUdpSpecificationTypeDef](./type_defs.md#attachmentenasrdudpspecificationtypedef) 
 ## DescribeVpcAttributeResultTypeDef
 
 ```python title="Usage Example"
@@ -20676,6 +20811,54 @@ class ModifyVpcEndpointRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
 2. See [:material-code-braces: DnsOptionsSpecificationTypeDef](./type_defs.md#dnsoptionsspecificationtypedef) 
+## GetAwsNetworkPerformanceDataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetAwsNetworkPerformanceDataRequestRequestTypeDef
+
+def get_value() -> GetAwsNetworkPerformanceDataRequestRequestTypeDef:
+    return {
+        "DataQueries": ...,
+    }
+```
+
+```python title="Definition"
+class GetAwsNetworkPerformanceDataRequestRequestTypeDef(TypedDict):
+    DataQueries: NotRequired[Sequence[DataQueryTypeDef]],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: DataQueryTypeDef](./type_defs.md#dataquerytypedef) 
+## DataResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DataResponseTypeDef
+
+def get_value() -> DataResponseTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DataResponseTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Source: NotRequired[str],
+    Destination: NotRequired[str],
+    Metric: NotRequired[MetricTypeType],  # (1)
+    Statistic: NotRequired[StatisticTypeType],  # (2)
+    Period: NotRequired[PeriodTypeType],  # (3)
+    MetricPoints: NotRequired[List[MetricPointTypeDef]],  # (4)
+```
+
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+2. See [:material-code-brackets: StatisticTypeType](./literals.md#statistictypetype) 
+3. See [:material-code-brackets: PeriodTypeType](./literals.md#periodtypetype) 
+4. See [:material-code-braces: MetricPointTypeDef](./type_defs.md#metricpointtypedef) 
 ## DeleteFleetErrorItemTypeDef
 
 ```python title="Usage Example"
@@ -21041,6 +21224,28 @@ class GetAssociatedIpv6PoolCidrsRequestGetAssociatedIpv6PoolCidrsPaginateTypeDef
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetAwsNetworkPerformanceDataRequestGetAwsNetworkPerformanceDataPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetAwsNetworkPerformanceDataRequestGetAwsNetworkPerformanceDataPaginateTypeDef
+
+def get_value() -> GetAwsNetworkPerformanceDataRequestGetAwsNetworkPerformanceDataPaginateTypeDef:
+    return {
+        "DataQueries": ...,
+    }
+```
+
+```python title="Definition"
+class GetAwsNetworkPerformanceDataRequestGetAwsNetworkPerformanceDataPaginateTypeDef(TypedDict):
+    DataQueries: NotRequired[Sequence[DataQueryTypeDef]],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DataQueryTypeDef](./type_defs.md#dataquerytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetGroupsForCapacityReservationRequestGetGroupsForCapacityReservationPaginateTypeDef
 
 ```python title="Usage Example"
@@ -21216,6 +21421,46 @@ class DescribeAvailabilityZonesRequestRequestTypeDef(TypedDict):
     ZoneNames: NotRequired[Sequence[str]],
     ZoneIds: NotRequired[Sequence[str]],
     AllAvailabilityZones: NotRequired[bool],
+    DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeAwsNetworkPerformanceMetricSubscriptionsRequestDescribeAwsNetworkPerformanceMetricSubscriptionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeAwsNetworkPerformanceMetricSubscriptionsRequestDescribeAwsNetworkPerformanceMetricSubscriptionsPaginateTypeDef
+
+def get_value() -> DescribeAwsNetworkPerformanceMetricSubscriptionsRequestDescribeAwsNetworkPerformanceMetricSubscriptionsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAwsNetworkPerformanceMetricSubscriptionsRequestDescribeAwsNetworkPerformanceMetricSubscriptionsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeAwsNetworkPerformanceMetricSubscriptionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeAwsNetworkPerformanceMetricSubscriptionsRequestRequestTypeDef
+
+def get_value() -> DescribeAwsNetworkPerformanceMetricSubscriptionsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAwsNetworkPerformanceMetricSubscriptionsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     DryRun: NotRequired[bool],
 ```
 
@@ -26148,6 +26393,28 @@ class PrincipalIdFormatTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: IdFormatTypeDef](./type_defs.md#idformattypedef) 
+## DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef
+
+def get_value() -> DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Subscriptions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef(TypedDict):
+    NextToken: str,
+    Subscriptions: List[SubscriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SubscriptionTypeDef](./type_defs.md#subscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBundleTasksRequestBundleTaskCompleteWaitTypeDef
 
 ```python title="Usage Example"
@@ -27123,37 +27390,6 @@ class DescribeMovingAddressesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: MovingAddressStatusTypeDef](./type_defs.md#movingaddressstatustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeNetworkInterfaceAttributeResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeNetworkInterfaceAttributeResultTypeDef
-
-def get_value() -> DescribeNetworkInterfaceAttributeResultTypeDef:
-    return {
-        "Attachment": ...,
-        "Description": ...,
-        "Groups": ...,
-        "NetworkInterfaceId": ...,
-        "SourceDestCheck": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNetworkInterfaceAttributeResultTypeDef(TypedDict):
-    Attachment: NetworkInterfaceAttachmentTypeDef,  # (1)
-    Description: AttributeValueTypeDef,  # (2)
-    Groups: List[GroupIdentifierTypeDef],  # (3)
-    NetworkInterfaceId: str,
-    SourceDestCheck: AttributeBooleanValueTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
-```
-
-1. See [:material-code-braces: NetworkInterfaceAttachmentTypeDef](./type_defs.md#networkinterfaceattachmenttypedef) 
-2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
-3. See [:material-code-braces: GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef) 
-4. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePrefixListsResultTypeDef
 
 ```python title="Usage Example"
@@ -27870,6 +28106,24 @@ class ElasticGpusTypeDef(TypedDict):
 1. See [:material-code-braces: ElasticGpuHealthTypeDef](./type_defs.md#elasticgpuhealthtypedef) 
 2. See [:material-code-brackets: ElasticGpuStateType](./literals.md#elasticgpustatetype) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## EnaSrdSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import EnaSrdSpecificationTypeDef
+
+def get_value() -> EnaSrdSpecificationTypeDef:
+    return {
+        "EnaSrdEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class EnaSrdSpecificationTypeDef(TypedDict):
+    EnaSrdEnabled: NotRequired[bool],
+    EnaSrdUdpSpecification: NotRequired[EnaSrdUdpSpecificationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EnaSrdUdpSpecificationTypeDef](./type_defs.md#enasrdudpspecificationtypedef) 
 ## EnableFastLaunchRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -29446,53 +29700,6 @@ class ModifyManagedPrefixListRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef) 
 2. See [:material-code-braces: RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef) 
-## ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef
-
-def get_value() -> ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef:
-    return {
-        "Attachment": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef(TypedDict):
-    Attachment: NotRequired[NetworkInterfaceAttachmentChangesTypeDef],  # (1)
-    Description: NotRequired[AttributeValueTypeDef],  # (2)
-    DryRun: NotRequired[bool],
-    Groups: NotRequired[Sequence[str]],
-    SourceDestCheck: NotRequired[AttributeBooleanValueTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef) 
-2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
-3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
-## ModifyNetworkInterfaceAttributeRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import ModifyNetworkInterfaceAttributeRequestRequestTypeDef
-
-def get_value() -> ModifyNetworkInterfaceAttributeRequestRequestTypeDef:
-    return {
-        "NetworkInterfaceId": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyNetworkInterfaceAttributeRequestRequestTypeDef(TypedDict):
-    NetworkInterfaceId: str,
-    Attachment: NotRequired[NetworkInterfaceAttachmentChangesTypeDef],  # (1)
-    Description: NotRequired[AttributeValueTypeDef],  # (2)
-    DryRun: NotRequired[bool],
-    Groups: NotRequired[Sequence[str]],
-    SourceDestCheck: NotRequired[AttributeBooleanValueTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef) 
-2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
-3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
 ## ModifyReservedInstancesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -29673,6 +29880,7 @@ class NetworkInfoTypeDef(TypedDict):
     EfaSupported: NotRequired[bool],
     EfaInfo: NotRequired[EfaInfoTypeDef],  # (3)
     EncryptionInTransitSupported: NotRequired[bool],
+    EnaSrdSupported: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: NetworkCardInfoTypeDef](./type_defs.md#networkcardinfotypedef) 
@@ -34240,6 +34448,7 @@ def get_value() -> StartNetworkInsightsAnalysisRequestRequestTypeDef:
 class StartNetworkInsightsAnalysisRequestRequestTypeDef(TypedDict):
     NetworkInsightsPathId: str,
     ClientToken: str,
+    AdditionalAccounts: NotRequired[Sequence[str]],
     FilterInArns: NotRequired[Sequence[str]],
     DryRun: NotRequired[bool],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
@@ -34815,6 +35024,69 @@ class DescribeVpnGatewaysResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: VpnGatewayTypeDef](./type_defs.md#vpngatewaytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## NetworkInterfaceAttachmentResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import NetworkInterfaceAttachmentResponseMetadataTypeDef
+
+def get_value() -> NetworkInterfaceAttachmentResponseMetadataTypeDef:
+    return {
+        "AttachTime": ...,
+        "AttachmentId": ...,
+        "DeleteOnTermination": ...,
+        "DeviceIndex": ...,
+        "NetworkCardIndex": ...,
+        "InstanceId": ...,
+        "InstanceOwnerId": ...,
+        "Status": ...,
+        "EnaSrdSpecification": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInterfaceAttachmentResponseMetadataTypeDef(TypedDict):
+    AttachTime: datetime,
+    AttachmentId: str,
+    DeleteOnTermination: bool,
+    DeviceIndex: int,
+    NetworkCardIndex: int,
+    InstanceId: str,
+    InstanceOwnerId: str,
+    Status: AttachmentStatusType,  # (1)
+    EnaSrdSpecification: AttachmentEnaSrdSpecificationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 
+2. See [:material-code-braces: AttachmentEnaSrdSpecificationTypeDef](./type_defs.md#attachmentenasrdspecificationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## NetworkInterfaceAttachmentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import NetworkInterfaceAttachmentTypeDef
+
+def get_value() -> NetworkInterfaceAttachmentTypeDef:
+    return {
+        "AttachTime": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInterfaceAttachmentTypeDef(TypedDict):
+    AttachTime: NotRequired[datetime],
+    AttachmentId: NotRequired[str],
+    DeleteOnTermination: NotRequired[bool],
+    DeviceIndex: NotRequired[int],
+    NetworkCardIndex: NotRequired[int],
+    InstanceId: NotRequired[str],
+    InstanceOwnerId: NotRequired[str],
+    Status: NotRequired[AttachmentStatusType],  # (1)
+    EnaSrdSpecification: NotRequired[AttachmentEnaSrdSpecificationTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 
+2. See [:material-code-braces: AttachmentEnaSrdSpecificationTypeDef](./type_defs.md#attachmentenasrdspecificationtypedef) 
 ## DhcpOptionsTypeDef
 
 ```python title="Usage Example"
@@ -35740,6 +36012,28 @@ class ModifySnapshotAttributeRequestSnapshotModifyAttributeTypeDef(TypedDict):
 1. See [:material-code-brackets: SnapshotAttributeNameType](./literals.md#snapshotattributenametype) 
 2. See [:material-code-braces: CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef) 
 3. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+## GetAwsNetworkPerformanceDataResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetAwsNetworkPerformanceDataResultTypeDef
+
+def get_value() -> GetAwsNetworkPerformanceDataResultTypeDef:
+    return {
+        "DataResponses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAwsNetworkPerformanceDataResultTypeDef(TypedDict):
+    DataResponses: List[DataResponseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataResponseTypeDef](./type_defs.md#dataresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFleetsResultTypeDef
 
 ```python title="Usage Example"
@@ -36202,6 +36496,103 @@ class DescribeElasticGpusResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ElasticGpusTypeDef](./type_defs.md#elasticgpustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef
+
+def get_value() -> AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef:
+    return {
+        "DeviceIndex": ...,
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class AttachNetworkInterfaceRequestNetworkInterfaceAttachTypeDef(TypedDict):
+    DeviceIndex: int,
+    InstanceId: str,
+    DryRun: NotRequired[bool],
+    NetworkCardIndex: NotRequired[int],
+    EnaSrdSpecification: NotRequired[EnaSrdSpecificationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
+## AttachNetworkInterfaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceRequestRequestTypeDef
+
+def get_value() -> AttachNetworkInterfaceRequestRequestTypeDef:
+    return {
+        "DeviceIndex": ...,
+        "InstanceId": ...,
+        "NetworkInterfaceId": ...,
+    }
+```
+
+```python title="Definition"
+class AttachNetworkInterfaceRequestRequestTypeDef(TypedDict):
+    DeviceIndex: int,
+    InstanceId: str,
+    NetworkInterfaceId: str,
+    DryRun: NotRequired[bool],
+    NetworkCardIndex: NotRequired[int],
+    EnaSrdSpecification: NotRequired[EnaSrdSpecificationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
+## ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef
+
+def get_value() -> ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef:
+    return {
+        "Attachment": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyNetworkInterfaceAttributeRequestNetworkInterfaceModifyAttributeTypeDef(TypedDict):
+    Attachment: NotRequired[NetworkInterfaceAttachmentChangesTypeDef],  # (1)
+    Description: NotRequired[AttributeValueTypeDef],  # (2)
+    DryRun: NotRequired[bool],
+    Groups: NotRequired[Sequence[str]],
+    SourceDestCheck: NotRequired[AttributeBooleanValueTypeDef],  # (3)
+    EnaSrdSpecification: NotRequired[EnaSrdSpecificationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+4. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
+## ModifyNetworkInterfaceAttributeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyNetworkInterfaceAttributeRequestRequestTypeDef
+
+def get_value() -> ModifyNetworkInterfaceAttributeRequestRequestTypeDef:
+    return {
+        "NetworkInterfaceId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyNetworkInterfaceAttributeRequestRequestTypeDef(TypedDict):
+    NetworkInterfaceId: str,
+    Attachment: NotRequired[NetworkInterfaceAttachmentChangesTypeDef],  # (1)
+    Description: NotRequired[AttributeValueTypeDef],  # (2)
+    DryRun: NotRequired[bool],
+    Groups: NotRequired[Sequence[str]],
+    SourceDestCheck: NotRequired[AttributeBooleanValueTypeDef],  # (3)
+    EnaSrdSpecification: NotRequired[EnaSrdSpecificationTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+4. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
 ## EnableFastSnapshotRestoreErrorItemTypeDef
 
 ```python title="Usage Example"
@@ -38242,57 +38633,6 @@ class DescribeNatGatewaysResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: NatGatewayTypeDef](./type_defs.md#natgatewaytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## NetworkInterfaceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import NetworkInterfaceTypeDef
-
-def get_value() -> NetworkInterfaceTypeDef:
-    return {
-        "Association": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkInterfaceTypeDef(TypedDict):
-    Association: NotRequired[NetworkInterfaceAssociationTypeDef],  # (1)
-    Attachment: NotRequired[NetworkInterfaceAttachmentTypeDef],  # (2)
-    AvailabilityZone: NotRequired[str],
-    Description: NotRequired[str],
-    Groups: NotRequired[List[GroupIdentifierTypeDef]],  # (3)
-    InterfaceType: NotRequired[NetworkInterfaceTypeType],  # (4)
-    Ipv6Addresses: NotRequired[List[NetworkInterfaceIpv6AddressTypeDef]],  # (5)
-    MacAddress: NotRequired[str],
-    NetworkInterfaceId: NotRequired[str],
-    OutpostArn: NotRequired[str],
-    OwnerId: NotRequired[str],
-    PrivateDnsName: NotRequired[str],
-    PrivateIpAddress: NotRequired[str],
-    PrivateIpAddresses: NotRequired[List[NetworkInterfacePrivateIpAddressTypeDef]],  # (6)
-    Ipv4Prefixes: NotRequired[List[Ipv4PrefixSpecificationTypeDef]],  # (7)
-    Ipv6Prefixes: NotRequired[List[Ipv6PrefixSpecificationTypeDef]],  # (8)
-    RequesterId: NotRequired[str],
-    RequesterManaged: NotRequired[bool],
-    SourceDestCheck: NotRequired[bool],
-    Status: NotRequired[NetworkInterfaceStatusType],  # (9)
-    SubnetId: NotRequired[str],
-    TagSet: NotRequired[List[TagTypeDef]],  # (10)
-    VpcId: NotRequired[str],
-    DenyAllIgwTraffic: NotRequired[bool],
-    Ipv6Native: NotRequired[bool],
-    Ipv6Address: NotRequired[str],
-```
-
-1. See [:material-code-braces: NetworkInterfaceAssociationTypeDef](./type_defs.md#networkinterfaceassociationtypedef) 
-2. See [:material-code-braces: NetworkInterfaceAttachmentTypeDef](./type_defs.md#networkinterfaceattachmenttypedef) 
-3. See [:material-code-braces: GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef) 
-4. See [:material-code-brackets: NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype) 
-5. See [:material-code-braces: NetworkInterfaceIpv6AddressTypeDef](./type_defs.md#networkinterfaceipv6addresstypedef) 
-6. See [:material-code-braces: NetworkInterfacePrivateIpAddressTypeDef](./type_defs.md#networkinterfaceprivateipaddresstypedef) 
-7. See [:material-code-braces: Ipv4PrefixSpecificationTypeDef](./type_defs.md#ipv4prefixspecificationtypedef) 
-8. See [:material-code-braces: Ipv6PrefixSpecificationTypeDef](./type_defs.md#ipv6prefixspecificationtypedef) 
-9. See [:material-code-brackets: NetworkInterfaceStatusType](./literals.md#networkinterfacestatustype) 
-10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateNetworkInterfacePermissionResultTypeDef
 
 ```python title="Usage Example"
@@ -40568,6 +40908,88 @@ class DescribeRouteTablesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: RouteTableTypeDef](./type_defs.md#routetabletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNetworkInterfaceAttributeResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfaceAttributeResultTypeDef
+
+def get_value() -> DescribeNetworkInterfaceAttributeResultTypeDef:
+    return {
+        "Attachment": ...,
+        "Description": ...,
+        "Groups": ...,
+        "NetworkInterfaceId": ...,
+        "SourceDestCheck": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNetworkInterfaceAttributeResultTypeDef(TypedDict):
+    Attachment: NetworkInterfaceAttachmentTypeDef,  # (1)
+    Description: AttributeValueTypeDef,  # (2)
+    Groups: List[GroupIdentifierTypeDef],  # (3)
+    NetworkInterfaceId: str,
+    SourceDestCheck: AttributeBooleanValueTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: NetworkInterfaceAttachmentTypeDef](./type_defs.md#networkinterfaceattachmenttypedef) 
+2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+3. See [:material-code-braces: GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef) 
+4. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## NetworkInterfaceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "Association": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    Association: NotRequired[NetworkInterfaceAssociationTypeDef],  # (1)
+    Attachment: NotRequired[NetworkInterfaceAttachmentTypeDef],  # (2)
+    AvailabilityZone: NotRequired[str],
+    Description: NotRequired[str],
+    Groups: NotRequired[List[GroupIdentifierTypeDef]],  # (3)
+    InterfaceType: NotRequired[NetworkInterfaceTypeType],  # (4)
+    Ipv6Addresses: NotRequired[List[NetworkInterfaceIpv6AddressTypeDef]],  # (5)
+    MacAddress: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
+    OutpostArn: NotRequired[str],
+    OwnerId: NotRequired[str],
+    PrivateDnsName: NotRequired[str],
+    PrivateIpAddress: NotRequired[str],
+    PrivateIpAddresses: NotRequired[List[NetworkInterfacePrivateIpAddressTypeDef]],  # (6)
+    Ipv4Prefixes: NotRequired[List[Ipv4PrefixSpecificationTypeDef]],  # (7)
+    Ipv6Prefixes: NotRequired[List[Ipv6PrefixSpecificationTypeDef]],  # (8)
+    RequesterId: NotRequired[str],
+    RequesterManaged: NotRequired[bool],
+    SourceDestCheck: NotRequired[bool],
+    Status: NotRequired[NetworkInterfaceStatusType],  # (9)
+    SubnetId: NotRequired[str],
+    TagSet: NotRequired[List[TagTypeDef]],  # (10)
+    VpcId: NotRequired[str],
+    DenyAllIgwTraffic: NotRequired[bool],
+    Ipv6Native: NotRequired[bool],
+    Ipv6Address: NotRequired[str],
+```
+
+1. See [:material-code-braces: NetworkInterfaceAssociationTypeDef](./type_defs.md#networkinterfaceassociationtypedef) 
+2. See [:material-code-braces: NetworkInterfaceAttachmentTypeDef](./type_defs.md#networkinterfaceattachmenttypedef) 
+3. See [:material-code-braces: GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef) 
+4. See [:material-code-brackets: NetworkInterfaceTypeType](./literals.md#networkinterfacetypetype) 
+5. See [:material-code-braces: NetworkInterfaceIpv6AddressTypeDef](./type_defs.md#networkinterfaceipv6addresstypedef) 
+6. See [:material-code-braces: NetworkInterfacePrivateIpAddressTypeDef](./type_defs.md#networkinterfaceprivateipaddresstypedef) 
+7. See [:material-code-braces: Ipv4PrefixSpecificationTypeDef](./type_defs.md#ipv4prefixspecificationtypedef) 
+8. See [:material-code-braces: Ipv6PrefixSpecificationTypeDef](./type_defs.md#ipv6prefixspecificationtypedef) 
+9. See [:material-code-brackets: NetworkInterfaceStatusType](./literals.md#networkinterfacestatustype) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDhcpOptionsResultTypeDef
 
 ```python title="Usage Example"
@@ -41399,50 +41821,6 @@ class DescribeReservedInstancesModificationsResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReservedInstancesModificationTypeDef](./type_defs.md#reservedinstancesmodificationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateNetworkInterfaceResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceResultTypeDef
-
-def get_value() -> CreateNetworkInterfaceResultTypeDef:
-    return {
-        "NetworkInterface": ...,
-        "ClientToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateNetworkInterfaceResultTypeDef(TypedDict):
-    NetworkInterface: NetworkInterfaceTypeDef,  # (1)
-    ClientToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeNetworkInterfacesResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacesResultTypeDef
-
-def get_value() -> DescribeNetworkInterfacesResultTypeDef:
-    return {
-        "NetworkInterfaces": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeNetworkInterfacesResultTypeDef(TypedDict):
-    NetworkInterfaces: List[NetworkInterfaceTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateNetworkInsightsAccessScopeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -42002,6 +42380,7 @@ class NetworkInsightsAnalysisTypeDef(TypedDict):
     NetworkInsightsAnalysisId: NotRequired[str],
     NetworkInsightsAnalysisArn: NotRequired[str],
     NetworkInsightsPathId: NotRequired[str],
+    AdditionalAccounts: NotRequired[List[str]],
     FilterInArns: NotRequired[List[str]],
     StartDate: NotRequired[datetime],
     Status: NotRequired[AnalysisStatusType],  # (1)
@@ -42012,6 +42391,7 @@ class NetworkInsightsAnalysisTypeDef(TypedDict):
     ReturnPathComponents: NotRequired[List[PathComponentTypeDef]],  # (2)
     Explanations: NotRequired[List[ExplanationTypeDef]],  # (4)
     AlternatePathHints: NotRequired[List[AlternatePathHintTypeDef]],  # (5)
+    SuggestedAccounts: NotRequired[List[str]],
     Tags: NotRequired[List[TagTypeDef]],  # (6)
 ```
 
@@ -42021,6 +42401,50 @@ class NetworkInsightsAnalysisTypeDef(TypedDict):
 4. See [:material-code-braces: ExplanationTypeDef](./type_defs.md#explanationtypedef) 
 5. See [:material-code-braces: AlternatePathHintTypeDef](./type_defs.md#alternatepathhinttypedef) 
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateNetworkInterfaceResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceResultTypeDef
+
+def get_value() -> CreateNetworkInterfaceResultTypeDef:
+    return {
+        "NetworkInterface": ...,
+        "ClientToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNetworkInterfaceResultTypeDef(TypedDict):
+    NetworkInterface: NetworkInterfaceTypeDef,  # (1)
+    ClientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNetworkInterfacesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacesResultTypeDef
+
+def get_value() -> DescribeNetworkInterfacesResultTypeDef:
+    return {
+        "NetworkInterfaces": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNetworkInterfacesResultTypeDef(TypedDict):
+    NetworkInterfaces: List[NetworkInterfaceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVpnConnectionRequestRequestTypeDef
 
 ```python title="Usage Example"

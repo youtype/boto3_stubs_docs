@@ -26,6 +26,23 @@ class AddonIssueTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AddonIssueCodeType](./literals.md#addonissuecodetype) 
+## MarketplaceInformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import MarketplaceInformationTypeDef
+
+def get_value() -> MarketplaceInformationTypeDef:
+    return {
+        "productId": ...,
+    }
+```
+
+```python title="Definition"
+class MarketplaceInformationTypeDef(TypedDict):
+    productId: NotRequired[str],
+    productUrl: NotRequired[str],
+```
+
 ## CompatibilityTypeDef
 
 ```python title="Usage Example"
@@ -581,6 +598,9 @@ class DescribeAddonVersionsRequestRequestTypeDef(TypedDict):
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
     addonName: NotRequired[str],
+    types: NotRequired[Sequence[str]],
+    publishers: NotRequired[Sequence[str]],
+    owners: NotRequired[Sequence[str]],
 ```
 
 ## DescribeClusterRequestRequestTypeDef
@@ -1061,6 +1081,7 @@ class AddonVersionInfoTypeDef(TypedDict):
     addonVersion: NotRequired[str],
     architecture: NotRequired[List[str]],
     compatibilities: NotRequired[List[CompatibilityTypeDef]],  # (1)
+    requiresConfiguration: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: CompatibilityTypeDef](./type_defs.md#compatibilitytypedef) 
@@ -1613,6 +1634,9 @@ def get_value() -> DescribeAddonVersionsRequestDescribeAddonVersionsPaginateType
 class DescribeAddonVersionsRequestDescribeAddonVersionsPaginateTypeDef(TypedDict):
     kubernetesVersion: NotRequired[str],
     addonName: NotRequired[str],
+    types: NotRequired[Sequence[str]],
+    publishers: NotRequired[Sequence[str]],
+    owners: NotRequired[Sequence[str]],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -1922,10 +1946,14 @@ class AddonTypeDef(TypedDict):
     modifiedAt: NotRequired[datetime],
     serviceAccountRoleArn: NotRequired[str],
     tags: NotRequired[Dict[str, str]],
+    publisher: NotRequired[str],
+    owner: NotRequired[str],
+    marketplaceInformation: NotRequired[MarketplaceInformationTypeDef],  # (3)
 ```
 
 1. See [:material-code-brackets: AddonStatusType](./literals.md#addonstatustype) 
 2. See [:material-code-braces: AddonHealthTypeDef](./type_defs.md#addonhealthtypedef) 
+3. See [:material-code-braces: MarketplaceInformationTypeDef](./type_defs.md#marketplaceinformationtypedef) 
 ## AddonInfoTypeDef
 
 ```python title="Usage Example"
@@ -1942,9 +1970,13 @@ class AddonInfoTypeDef(TypedDict):
     addonName: NotRequired[str],
     type: NotRequired[str],
     addonVersions: NotRequired[List[AddonVersionInfoTypeDef]],  # (1)
+    publisher: NotRequired[str],
+    owner: NotRequired[str],
+    marketplaceInformation: NotRequired[MarketplaceInformationTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: AddonVersionInfoTypeDef](./type_defs.md#addonversioninfotypedef) 
+2. See [:material-code-braces: MarketplaceInformationTypeDef](./type_defs.md#marketplaceinformationtypedef) 
 ## CreateFargateProfileResponseTypeDef
 
 ```python title="Usage Example"

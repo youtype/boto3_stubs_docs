@@ -1034,11 +1034,13 @@ def attach_network_interface(
     NetworkInterfaceId: str,
     DryRun: bool = ...,
     NetworkCardIndex: int = ...,
-) -> AttachNetworkInterfaceResultTypeDef:  # (1)
+    EnaSrdSpecification: EnaSrdSpecificationTypeDef = ...,  # (1)
+) -> AttachNetworkInterfaceResultTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: AttachNetworkInterfaceResultTypeDef](./type_defs.md#attachnetworkinterfaceresulttypedef) 
+1. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
+2. See [:material-code-braces: AttachNetworkInterfaceResultTypeDef](./type_defs.md#attachnetworkinterfaceresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -7092,6 +7094,39 @@ parent.describe_availability_zones(**kwargs)
 
 1. See [:material-code-braces: DescribeAvailabilityZonesRequestRequestTypeDef](./type_defs.md#describeavailabilityzonesrequestrequesttypedef) 
 
+### describe\_aws\_network\_performance\_metric\_subscriptions
+
+Describes the curent Infrastructure Performance metric subscriptions.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_aws_network_performance_metric_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_aws_network_performance_metric_subscriptions)
+
+```python title="Method definition"
+def describe_aws_network_performance_metric_subscriptions(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+) -> DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeAwsNetworkPerformanceMetricSubscriptionsResultTypeDef](./type_defs.md#describeawsnetworkperformancemetricsubscriptionsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAwsNetworkPerformanceMetricSubscriptionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.describe_aws_network_performance_metric_subscriptions(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAwsNetworkPerformanceMetricSubscriptionsRequestRequestTypeDef](./type_defs.md#describeawsnetworkperformancemetricsubscriptionsrequestrequesttypedef) 
+
 ### describe\_bundle\_tasks
 
 Describes the specified bundle tasks or all of your bundle tasks.
@@ -11706,6 +11741,41 @@ parent.disable_address_transfer(**kwargs)
 
 1. See [:material-code-braces: DisableAddressTransferRequestRequestTypeDef](./type_defs.md#disableaddresstransferrequestrequesttypedef) 
 
+### disable\_aws\_network\_performance\_metric\_subscription
+
+Disables Infrastructure Performance metric subscriptions.
+
+Type annotations and code completion for `#!python boto3.client("ec2").disable_aws_network_performance_metric_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_aws_network_performance_metric_subscription)
+
+```python title="Method definition"
+def disable_aws_network_performance_metric_subscription(
+    self,
+    *,
+    Source: str = ...,
+    Destination: str = ...,
+    Metric: MetricTypeType = ...,  # (1)
+    Statistic: StatisticTypeType = ...,  # (2)
+    DryRun: bool = ...,
+) -> DisableAwsNetworkPerformanceMetricSubscriptionResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+2. See [:material-code-brackets: StatisticTypeType](./literals.md#statistictypetype) 
+3. See [:material-code-braces: DisableAwsNetworkPerformanceMetricSubscriptionResultTypeDef](./type_defs.md#disableawsnetworkperformancemetricsubscriptionresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef = {  # (1)
+    "Source": ...,
+}
+
+parent.disable_aws_network_performance_metric_subscription(**kwargs)
+```
+
+1. See [:material-code-braces: DisableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef](./type_defs.md#disableawsnetworkperformancemetricsubscriptionrequestrequesttypedef) 
+
 ### disable\_ebs\_encryption\_by\_default
 
 Disables EBS encryption by default for your account in the current Region.
@@ -12418,6 +12488,41 @@ parent.enable_address_transfer(**kwargs)
 
 1. See [:material-code-braces: EnableAddressTransferRequestRequestTypeDef](./type_defs.md#enableaddresstransferrequestrequesttypedef) 
 
+### enable\_aws\_network\_performance\_metric\_subscription
+
+Enables Infrastructure Performance subscriptions.
+
+Type annotations and code completion for `#!python boto3.client("ec2").enable_aws_network_performance_metric_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_aws_network_performance_metric_subscription)
+
+```python title="Method definition"
+def enable_aws_network_performance_metric_subscription(
+    self,
+    *,
+    Source: str = ...,
+    Destination: str = ...,
+    Metric: MetricTypeType = ...,  # (1)
+    Statistic: StatisticTypeType = ...,  # (2)
+    DryRun: bool = ...,
+) -> EnableAwsNetworkPerformanceMetricSubscriptionResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+2. See [:material-code-brackets: StatisticTypeType](./literals.md#statistictypetype) 
+3. See [:material-code-braces: EnableAwsNetworkPerformanceMetricSubscriptionResultTypeDef](./type_defs.md#enableawsnetworkperformancemetricsubscriptionresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: EnableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef = {  # (1)
+    "Source": ...,
+}
+
+parent.enable_aws_network_performance_metric_subscription(**kwargs)
+```
+
+1. See [:material-code-braces: EnableAwsNetworkPerformanceMetricSubscriptionRequestRequestTypeDef](./type_defs.md#enableawsnetworkperformancemetricsubscriptionrequestrequesttypedef) 
+
 ### enable\_ebs\_encryption\_by\_default
 
 Enables EBS encryption by default for your account in the current Region.
@@ -12578,6 +12683,36 @@ parent.enable_ipam_organization_admin_account(**kwargs)
 ```
 
 1. See [:material-code-braces: EnableIpamOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableipamorganizationadminaccountrequestrequesttypedef) 
+
+### enable\_reachability\_analyzer\_organization\_sharing
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableReachabilityAnalyzerOrganizationSharing).
+
+Type annotations and code completion for `#!python boto3.client("ec2").enable_reachability_analyzer_organization_sharing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_reachability_analyzer_organization_sharing)
+
+```python title="Method definition"
+def enable_reachability_analyzer_organization_sharing(
+    self,
+    *,
+    DryRun: bool = ...,
+) -> EnableReachabilityAnalyzerOrganizationSharingResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EnableReachabilityAnalyzerOrganizationSharingResultTypeDef](./type_defs.md#enablereachabilityanalyzerorganizationsharingresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: EnableReachabilityAnalyzerOrganizationSharingRequestRequestTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.enable_reachability_analyzer_organization_sharing(**kwargs)
+```
+
+1. See [:material-code-braces: EnableReachabilityAnalyzerOrganizationSharingRequestRequestTypeDef](./type_defs.md#enablereachabilityanalyzerorganizationsharingrequestrequesttypedef) 
 
 ### enable\_serial\_console\_access
 
@@ -12984,6 +13119,41 @@ parent.get_associated_ipv6_pool_cidrs(**kwargs)
 ```
 
 1. See [:material-code-braces: GetAssociatedIpv6PoolCidrsRequestRequestTypeDef](./type_defs.md#getassociatedipv6poolcidrsrequestrequesttypedef) 
+
+### get\_aws\_network\_performance\_data
+
+Gets network performance data.
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_aws_network_performance_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_aws_network_performance_data)
+
+```python title="Method definition"
+def get_aws_network_performance_data(
+    self,
+    *,
+    DataQueries: Sequence[DataQueryTypeDef] = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    DryRun: bool = ...,
+) -> GetAwsNetworkPerformanceDataResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataQueryTypeDef](./type_defs.md#dataquerytypedef) 
+2. See [:material-code-braces: GetAwsNetworkPerformanceDataResultTypeDef](./type_defs.md#getawsnetworkperformancedataresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetAwsNetworkPerformanceDataRequestRequestTypeDef = {  # (1)
+    "DataQueries": ...,
+}
+
+parent.get_aws_network_performance_data(**kwargs)
+```
+
+1. See [:material-code-braces: GetAwsNetworkPerformanceDataRequestRequestTypeDef](./type_defs.md#getawsnetworkperformancedatarequestrequesttypedef) 
 
 ### get\_capacity\_reservation\_usage
 
@@ -15488,14 +15658,16 @@ def modify_network_interface_attribute(
     DryRun: bool = ...,
     Groups: Sequence[str] = ...,
     SourceDestCheck: AttributeBooleanValueTypeDef = ...,  # (3)
-) -> EmptyResponseMetadataTypeDef:  # (4)
+    EnaSrdSpecification: EnaSrdSpecificationTypeDef = ...,  # (4)
+) -> EmptyResponseMetadataTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef) 
 2. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 3. See [:material-code-braces: AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef) 
-4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+4. See [:material-code-braces: EnaSrdSpecificationTypeDef](./type_defs.md#enasrdspecificationtypedef) 
+5. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -18376,6 +18548,7 @@ def start_network_insights_analysis(
     *,
     NetworkInsightsPathId: str,
     ClientToken: str,
+    AdditionalAccounts: Sequence[str] = ...,
     FilterInArns: Sequence[str] = ...,
     DryRun: bool = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
@@ -18725,6 +18898,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_pagin
 
 - `client.get_paginator("describe_address_transfers")` -> [DescribeAddressTransfersPaginator](./paginators.md#describeaddresstransferspaginator)
 - `client.get_paginator("describe_addresses_attribute")` -> [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
+- `client.get_paginator("describe_aws_network_performance_metric_subscriptions")` -> [DescribeAwsNetworkPerformanceMetricSubscriptionsPaginator](./paginators.md#describeawsnetworkperformancemetricsubscriptionspaginator)
 - `client.get_paginator("describe_byoip_cidrs")` -> [DescribeByoipCidrsPaginator](./paginators.md#describebyoipcidrspaginator)
 - `client.get_paginator("describe_capacity_reservation_fleets")` -> [DescribeCapacityReservationFleetsPaginator](./paginators.md#describecapacityreservationfleetspaginator)
 - `client.get_paginator("describe_capacity_reservations")` -> [DescribeCapacityReservationsPaginator](./paginators.md#describecapacityreservationspaginator)
@@ -18827,6 +19001,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_pagin
 - `client.get_paginator("describe_vpc_peering_connections")` -> [DescribeVpcPeeringConnectionsPaginator](./paginators.md#describevpcpeeringconnectionspaginator)
 - `client.get_paginator("describe_vpcs")` -> [DescribeVpcsPaginator](./paginators.md#describevpcspaginator)
 - `client.get_paginator("get_associated_ipv6_pool_cidrs")` -> [GetAssociatedIpv6PoolCidrsPaginator](./paginators.md#getassociatedipv6poolcidrspaginator)
+- `client.get_paginator("get_aws_network_performance_data")` -> [GetAwsNetworkPerformanceDataPaginator](./paginators.md#getawsnetworkperformancedatapaginator)
 - `client.get_paginator("get_groups_for_capacity_reservation")` -> [GetGroupsForCapacityReservationPaginator](./paginators.md#getgroupsforcapacityreservationpaginator)
 - `client.get_paginator("get_instance_types_from_instance_requirements")` -> [GetInstanceTypesFromInstanceRequirementsPaginator](./paginators.md#getinstancetypesfrominstancerequirementspaginator)
 - `client.get_paginator("get_ipam_address_history")` -> [GetIpamAddressHistoryPaginator](./paginators.md#getipamaddresshistorypaginator)

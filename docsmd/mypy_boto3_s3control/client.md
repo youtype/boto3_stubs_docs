@@ -1274,6 +1274,38 @@ parent.get_multi_region_access_point_policy_status(**kwargs)
 
 1. See [:material-code-braces: GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusrequestrequesttypedef) 
 
+### get\_multi\_region\_access\_point\_routes
+
+Returns the routing configuration for a Multi-Region Access Point, indicating
+which Regions are active or passive.
+
+Type annotations and code completion for `#!python boto3.client("s3control").get_multi_region_access_point_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point_routes)
+
+```python title="Method definition"
+def get_multi_region_access_point_routes(
+    self,
+    *,
+    AccountId: str,
+    Mrap: str,
+) -> GetMultiRegionAccessPointRoutesResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetMultiRegionAccessPointRoutesResultTypeDef](./type_defs.md#getmultiregionaccesspointroutesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetMultiRegionAccessPointRoutesRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Mrap": ...,
+}
+
+parent.get_multi_region_access_point_routes(**kwargs)
+```
+
+1. See [:material-code-braces: GetMultiRegionAccessPointRoutesRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointroutesrequestrequesttypedef) 
+
 ### get\_public\_access\_block
 
 Retrieves the `PublicAccessBlock` configuration for an Amazon Web Services
@@ -1965,6 +1997,39 @@ parent.put_storage_lens_configuration_tagging(**kwargs)
 ```
 
 1. See [:material-code-braces: PutStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#putstoragelensconfigurationtaggingrequestrequesttypedef) 
+
+### submit\_multi\_region\_access\_point\_routes
+
+Submits an updated route configuration for a Multi-Region Access Point.
+
+Type annotations and code completion for `#!python boto3.client("s3control").submit_multi_region_access_point_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.submit_multi_region_access_point_routes)
+
+```python title="Method definition"
+def submit_multi_region_access_point_routes(
+    self,
+    *,
+    AccountId: str,
+    Mrap: str,
+    RouteUpdates: Sequence[MultiRegionAccessPointRouteTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: MultiRegionAccessPointRouteTypeDef](./type_defs.md#multiregionaccesspointroutetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SubmitMultiRegionAccessPointRoutesRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Mrap": ...,
+    "RouteUpdates": ...,
+}
+
+parent.submit_multi_region_access_point_routes(**kwargs)
+```
+
+1. See [:material-code-braces: SubmitMultiRegionAccessPointRoutesRequestRequestTypeDef](./type_defs.md#submitmultiregionaccesspointroutesrequestrequesttypedef) 
 
 ### update\_job\_priority
 

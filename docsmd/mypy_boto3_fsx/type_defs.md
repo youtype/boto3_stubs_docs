@@ -1325,6 +1325,7 @@ def get_value() -> RestoreVolumeFromSnapshotResponseTypeDef:
     return {
         "VolumeId": ...,
         "Lifecycle": ...,
+        "AdministrativeActions": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1333,11 +1334,13 @@ def get_value() -> RestoreVolumeFromSnapshotResponseTypeDef:
 class RestoreVolumeFromSnapshotResponseTypeDef(TypedDict):
     VolumeId: str,
     Lifecycle: VolumeLifecycleType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    AdministrativeActions: List[AdministrativeActionTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-brackets: VolumeLifecycleType](./literals.md#volumelifecycletype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: AdministrativeActionTypeDef](./type_defs.md#administrativeactiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFileSystemResponseTypeDef
 
 ```python title="Usage Example"
@@ -1831,6 +1834,8 @@ class UpdateFileSystemOntapConfigurationTypeDef(TypedDict):
     WeeklyMaintenanceStartTime: NotRequired[str],
     DiskIopsConfiguration: NotRequired[DiskIopsConfigurationTypeDef],  # (1)
     ThroughputCapacity: NotRequired[int],
+    AddRouteTableIds: NotRequired[Sequence[str]],
+    RemoveRouteTableIds: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-braces: DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef) 
@@ -1911,25 +1916,27 @@ from mypy_boto3_fsx.type_defs import CreateOntapVolumeConfigurationTypeDef
 
 def get_value() -> CreateOntapVolumeConfigurationTypeDef:
     return {
-        "JunctionPath": ...,
         "SizeInMegabytes": ...,
-        "StorageEfficiencyEnabled": ...,
         "StorageVirtualMachineId": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateOntapVolumeConfigurationTypeDef(TypedDict):
-    JunctionPath: str,
     SizeInMegabytes: int,
-    StorageEfficiencyEnabled: bool,
     StorageVirtualMachineId: str,
+    JunctionPath: NotRequired[str],
     SecurityStyle: NotRequired[SecurityStyleType],  # (1)
+    StorageEfficiencyEnabled: NotRequired[bool],
     TieringPolicy: NotRequired[TieringPolicyTypeDef],  # (2)
+    OntapVolumeType: NotRequired[InputOntapVolumeTypeType],  # (3)
+    SnapshotPolicy: NotRequired[str],
+    CopyTagsToBackups: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: SecurityStyleType](./literals.md#securitystyletype) 
 2. See [:material-code-braces: TieringPolicyTypeDef](./type_defs.md#tieringpolicytypedef) 
+3. See [:material-code-brackets: InputOntapVolumeTypeType](./literals.md#inputontapvolumetypetype) 
 ## OntapVolumeConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1953,6 +1960,8 @@ class OntapVolumeConfigurationTypeDef(TypedDict):
     TieringPolicy: NotRequired[TieringPolicyTypeDef],  # (3)
     UUID: NotRequired[str],
     OntapVolumeType: NotRequired[OntapVolumeTypeType],  # (4)
+    SnapshotPolicy: NotRequired[str],
+    CopyTagsToBackups: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: FlexCacheEndpointTypeType](./literals.md#flexcacheendpointtypetype) 
@@ -1977,6 +1986,8 @@ class UpdateOntapVolumeConfigurationTypeDef(TypedDict):
     SizeInMegabytes: NotRequired[int],
     StorageEfficiencyEnabled: NotRequired[bool],
     TieringPolicy: NotRequired[TieringPolicyTypeDef],  # (2)
+    SnapshotPolicy: NotRequired[str],
+    CopyTagsToBackups: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: SecurityStyleType](./literals.md#securitystyletype) 
@@ -3082,6 +3093,9 @@ class OpenZFSVolumeConfigurationTypeDef(TypedDict):
     ReadOnly: NotRequired[bool],
     NfsExports: NotRequired[List[OpenZFSNfsExportTypeDef]],  # (3)
     UserAndGroupQuotas: NotRequired[List[OpenZFSUserOrGroupQuotaTypeDef]],  # (4)
+    RestoreToSnapshot: NotRequired[str],
+    DeleteIntermediateSnaphots: NotRequired[bool],
+    DeleteClonedVolumes: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype) 
@@ -3180,20 +3194,18 @@ class StorageVirtualMachineTypeDef(TypedDict):
     Name: NotRequired[str],
     ResourceARN: NotRequired[str],
     StorageVirtualMachineId: NotRequired[str],
-    Subtype: NotRequired[StorageVirtualMachineSubtypeType],  # (4)
     UUID: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (5)
-    LifecycleTransitionReason: NotRequired[LifecycleTransitionReasonTypeDef],  # (6)
-    RootVolumeSecurityStyle: NotRequired[StorageVirtualMachineRootVolumeSecurityStyleType],  # (7)
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+    LifecycleTransitionReason: NotRequired[LifecycleTransitionReasonTypeDef],  # (5)
+    RootVolumeSecurityStyle: NotRequired[StorageVirtualMachineRootVolumeSecurityStyleType],  # (6)
 ```
 
 1. See [:material-code-braces: SvmActiveDirectoryConfigurationTypeDef](./type_defs.md#svmactivedirectoryconfigurationtypedef) 
 2. See [:material-code-braces: SvmEndpointsTypeDef](./type_defs.md#svmendpointstypedef) 
 3. See [:material-code-brackets: StorageVirtualMachineLifecycleType](./literals.md#storagevirtualmachinelifecycletype) 
-4. See [:material-code-brackets: StorageVirtualMachineSubtypeType](./literals.md#storagevirtualmachinesubtypetype) 
-5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-6. See [:material-code-braces: LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef) 
-7. See [:material-code-brackets: StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef) 
+6. See [:material-code-brackets: StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype) 
 ## CreateDataRepositoryAssociationResponseTypeDef
 
 ```python title="Usage Example"

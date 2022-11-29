@@ -186,6 +186,7 @@ def get_value() -> AddonIssueTypeDef:
 ```
 
 - [AddonIssueTypeDef](./type_defs.md#addonissuetypedef)
+- [MarketplaceInformationTypeDef](./type_defs.md#marketplaceinformationtypedef)
 - [CompatibilityTypeDef](./type_defs.md#compatibilitytypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef)

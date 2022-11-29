@@ -24,6 +24,7 @@ AdministrativeActionTypeType = Literal[
     "RELEASE_NFS_V3_LOCKS",
     "SNAPSHOT_UPDATE",
     "STORAGE_OPTIMIZATION",
+    "VOLUME_RESTORE",
     "VOLUME_UPDATE",
 ]
 ```
@@ -449,6 +450,21 @@ FlexCacheEndpointTypeType = Literal[
     "ORIGIN",
 ]
 ```
+## InputOntapVolumeTypeType
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import InputOntapVolumeTypeType
+
+def get_value() -> InputOntapVolumeTypeType:
+    return "DP"
+```
+
+```python title="Definition"
+InputOntapVolumeTypeType = Literal[
+    "DP",
+    "RW",
+]
+```
 ## ListTagsForResourcePaginatorName
 
 ```python title="Usage Example"
@@ -585,6 +601,7 @@ def get_value() -> OpenZFSDeploymentTypeType:
 ```python title="Definition"
 OpenZFSDeploymentTypeType = Literal[
     "SINGLE_AZ_1",
+    "SINGLE_AZ_2",
 ]
 ```
 ## OpenZFSQuotaTypeType
@@ -790,23 +807,6 @@ StorageVirtualMachineRootVolumeSecurityStyleType = Literal[
     "UNIX",
 ]
 ```
-## StorageVirtualMachineSubtypeType
-
-```python title="Usage Example"
-from mypy_boto3_fsx.literals import StorageVirtualMachineSubtypeType
-
-def get_value() -> StorageVirtualMachineSubtypeType:
-    return "DEFAULT"
-```
-
-```python title="Definition"
-StorageVirtualMachineSubtypeType = Literal[
-    "DEFAULT",
-    "DP_DESTINATION",
-    "SYNC_DESTINATION",
-    "SYNC_SOURCE",
-]
-```
 ## TieringPolicyNameType
 
 ```python title="Usage Example"
@@ -955,6 +955,7 @@ ServiceName = Literal[
     "apprunner",
     "appstream",
     "appsync",
+    "arc-zonal-shift",
     "athena",
     "auditmanager",
     "autoscaling",

@@ -578,7 +578,7 @@ parent.delete_member(**kwargs)
 ### describe\_buckets
 
 Retrieves (queries) statistical data and other information about one or more S3
-buckets that Amazon Macie monitors and analyzes.
+buckets that Amazon Macie monitors and analyzes for an account.
 
 Type annotations and code completion for `#!python boto3.client("macie2").describe_buckets` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets)
@@ -888,10 +888,27 @@ parent.get_allow_list(**kwargs)
 
 1. See [:material-code-braces: GetAllowListRequestRequestTypeDef](./type_defs.md#getallowlistrequestrequesttypedef) 
 
+### get\_automated\_discovery\_configuration
+
+Retrieves the configuration settings and status of automated sensitive data
+discovery for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_automated_discovery_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_automated_discovery_configuration)
+
+```python title="Method definition"
+def get_automated_discovery_configuration(
+    self,
+) -> GetAutomatedDiscoveryConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetAutomatedDiscoveryConfigurationResponseTypeDef](./type_defs.md#getautomateddiscoveryconfigurationresponsetypedef) 
+
 ### get\_bucket\_statistics
 
-Retrieves (queries) aggregated statistical data about S3 buckets that Amazon
-Macie monitors and analyzes.
+Retrieves (queries) aggregated statistical data about all the S3 buckets that
+Amazon Macie monitors and analyzes for an account.
 
 Type annotations and code completion for `#!python boto3.client("macie2").get_bucket_statistics` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_bucket_statistics)
@@ -933,6 +950,35 @@ def get_classification_export_configuration(
 ```
 
 1. See [:material-code-braces: GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef) 
+
+### get\_classification\_scope
+
+Retrieves the classification scope settings for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_classification_scope` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_scope)
+
+```python title="Method definition"
+def get_classification_scope(
+    self,
+    *,
+    id: str,
+) -> GetClassificationScopeResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetClassificationScopeResponseTypeDef](./type_defs.md#getclassificationscoperesponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetClassificationScopeRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.get_classification_scope(**kwargs)
+```
+
+1. See [:material-code-braces: GetClassificationScopeRequestRequestTypeDef](./type_defs.md#getclassificationscoperequestrequesttypedef) 
 
 ### get\_custom\_data\_identifier
 
@@ -1093,8 +1139,7 @@ def get_invitations_count(
 
 ### get\_macie\_session
 
-Retrieves the current status and configuration settings for an Amazon Macie
-account.
+Retrieves the status and configuration settings for an Amazon Macie account.
 
 Type annotations and code completion for `#!python boto3.client("macie2").get_macie_session` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session)
@@ -1154,6 +1199,36 @@ parent.get_member(**kwargs)
 ```
 
 1. See [:material-code-braces: GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef) 
+
+### get\_resource\_profile
+
+Retrieves (queries) sensitive data discovery statistics and the sensitivity
+score for an S3 bucket.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_resource_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_resource_profile)
+
+```python title="Method definition"
+def get_resource_profile(
+    self,
+    *,
+    resourceArn: str,
+) -> GetResourceProfileResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetResourceProfileResponseTypeDef](./type_defs.md#getresourceprofileresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourceProfileRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.get_resource_profile(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourceProfileRequestRequestTypeDef](./type_defs.md#getresourceprofilerequestrequesttypedef) 
 
 ### get\_reveal\_configuration
 
@@ -1229,6 +1304,35 @@ parent.get_sensitive_data_occurrences_availability(**kwargs)
 ```
 
 1. See [:material-code-braces: GetSensitiveDataOccurrencesAvailabilityRequestRequestTypeDef](./type_defs.md#getsensitivedataoccurrencesavailabilityrequestrequesttypedef) 
+
+### get\_sensitivity\_inspection\_template
+
+Retrieves the settings for the sensitivity inspection template for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").get_sensitivity_inspection_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_sensitivity_inspection_template)
+
+```python title="Method definition"
+def get_sensitivity_inspection_template(
+    self,
+    *,
+    id: str,
+) -> GetSensitivityInspectionTemplateResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetSensitivityInspectionTemplateResponseTypeDef](./type_defs.md#getsensitivityinspectiontemplateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSensitivityInspectionTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.get_sensitivity_inspection_template(**kwargs)
+```
+
+1. See [:material-code-braces: GetSensitivityInspectionTemplateRequestRequestTypeDef](./type_defs.md#getsensitivityinspectiontemplaterequestrequesttypedef) 
 
 ### get\_usage\_statistics
 
@@ -1358,6 +1462,36 @@ parent.list_classification_jobs(**kwargs)
 ```
 
 1. See [:material-code-braces: ListClassificationJobsRequestRequestTypeDef](./type_defs.md#listclassificationjobsrequestrequesttypedef) 
+
+### list\_classification\_scopes
+
+Retrieves a subset of information about the classification scope for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").list_classification_scopes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_scopes)
+
+```python title="Method definition"
+def list_classification_scopes(
+    self,
+    *,
+    name: str = ...,
+    nextToken: str = ...,
+) -> ListClassificationScopesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListClassificationScopesResponseTypeDef](./type_defs.md#listclassificationscopesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListClassificationScopesRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.list_classification_scopes(**kwargs)
+```
+
+1. See [:material-code-braces: ListClassificationScopesRequestRequestTypeDef](./type_defs.md#listclassificationscopesrequestrequesttypedef) 
 
 ### list\_custom\_data\_identifiers
 
@@ -1577,6 +1711,100 @@ parent.list_organization_admin_accounts(**kwargs)
 ```
 
 1. See [:material-code-braces: ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef) 
+
+### list\_resource\_profile\_artifacts
+
+Retrieves information about objects that were selected from an S3 bucket for
+automated sensitive data discovery.
+
+Type annotations and code completion for `#!python boto3.client("macie2").list_resource_profile_artifacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_resource_profile_artifacts)
+
+```python title="Method definition"
+def list_resource_profile_artifacts(
+    self,
+    *,
+    resourceArn: str,
+    nextToken: str = ...,
+) -> ListResourceProfileArtifactsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListResourceProfileArtifactsResponseTypeDef](./type_defs.md#listresourceprofileartifactsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceProfileArtifactsRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.list_resource_profile_artifacts(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceProfileArtifactsRequestRequestTypeDef](./type_defs.md#listresourceprofileartifactsrequestrequesttypedef) 
+
+### list\_resource\_profile\_detections
+
+Retrieves information about the types and amount of sensitive data that Amazon
+Macie found in an S3 bucket.
+
+Type annotations and code completion for `#!python boto3.client("macie2").list_resource_profile_detections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_resource_profile_detections)
+
+```python title="Method definition"
+def list_resource_profile_detections(
+    self,
+    *,
+    resourceArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListResourceProfileDetectionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListResourceProfileDetectionsResponseTypeDef](./type_defs.md#listresourceprofiledetectionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceProfileDetectionsRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.list_resource_profile_detections(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceProfileDetectionsRequestRequestTypeDef](./type_defs.md#listresourceprofiledetectionsrequestrequesttypedef) 
+
+### list\_sensitivity\_inspection\_templates
+
+Retrieves a subset of information about the sensitivity inspection template for
+an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").list_sensitivity_inspection_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_sensitivity_inspection_templates)
+
+```python title="Method definition"
+def list_sensitivity_inspection_templates(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSensitivityInspectionTemplatesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSensitivityInspectionTemplatesResponseTypeDef](./type_defs.md#listsensitivityinspectiontemplatesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSensitivityInspectionTemplatesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
+
+parent.list_sensitivity_inspection_templates(**kwargs)
+```
+
+1. See [:material-code-braces: ListSensitivityInspectionTemplatesRequestRequestTypeDef](./type_defs.md#listsensitivityinspectiontemplatesrequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 
@@ -1834,6 +2062,35 @@ parent.update_allow_list(**kwargs)
 
 1. See [:material-code-braces: UpdateAllowListRequestRequestTypeDef](./type_defs.md#updateallowlistrequestrequesttypedef) 
 
+### update\_automated\_discovery\_configuration
+
+Enables or disables automated sensitive data discovery for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").update_automated_discovery_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_automated_discovery_configuration)
+
+```python title="Method definition"
+def update_automated_discovery_configuration(
+    self,
+    *,
+    status: AutomatedDiscoveryStatusType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: AutomatedDiscoveryStatusType](./literals.md#automateddiscoverystatustype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateAutomatedDiscoveryConfigurationRequestRequestTypeDef = {  # (1)
+    "status": ...,
+}
+
+parent.update_automated_discovery_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAutomatedDiscoveryConfigurationRequestRequestTypeDef](./type_defs.md#updateautomateddiscoveryconfigurationrequestrequesttypedef) 
+
 ### update\_classification\_job
 
 Changes the status of a classification job.
@@ -1865,6 +2122,36 @@ parent.update_classification_job(**kwargs)
 
 1. See [:material-code-braces: UpdateClassificationJobRequestRequestTypeDef](./type_defs.md#updateclassificationjobrequestrequesttypedef) 
 
+### update\_classification\_scope
+
+Updates the classification scope settings for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").update_classification_scope` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_classification_scope)
+
+```python title="Method definition"
+def update_classification_scope(
+    self,
+    *,
+    id: str,
+    s3: S3ClassificationScopeUpdateTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: S3ClassificationScopeUpdateTypeDef](./type_defs.md#s3classificationscopeupdatetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateClassificationScopeRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.update_classification_scope(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateClassificationScopeRequestRequestTypeDef](./type_defs.md#updateclassificationscoperequestrequesttypedef) 
+
 ### update\_findings\_filter
 
 Updates the criteria and other settings for a findings filter.
@@ -1878,11 +2165,11 @@ def update_findings_filter(
     *,
     id: str,
     action: FindingsFilterActionType = ...,  # (1)
+    clientToken: str = ...,
     description: str = ...,
     findingCriteria: FindingCriteriaTypeDef = ...,  # (2)
     name: str = ...,
     position: int = ...,
-    clientToken: str = ...,
 ) -> UpdateFindingsFilterResponseTypeDef:  # (3)
     ...
 ```
@@ -1995,6 +2282,65 @@ parent.update_organization_configuration(**kwargs)
 
 1. See [:material-code-braces: UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef) 
 
+### update\_resource\_profile
+
+Updates the sensitivity score for an S3 bucket.
+
+Type annotations and code completion for `#!python boto3.client("macie2").update_resource_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_resource_profile)
+
+```python title="Method definition"
+def update_resource_profile(
+    self,
+    *,
+    resourceArn: str,
+    sensitivityScoreOverride: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceProfileRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.update_resource_profile(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateResourceProfileRequestRequestTypeDef](./type_defs.md#updateresourceprofilerequestrequesttypedef) 
+
+### update\_resource\_profile\_detections
+
+Updates the sensitivity scoring settings for an S3 bucket.
+
+Type annotations and code completion for `#!python boto3.client("macie2").update_resource_profile_detections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_resource_profile_detections)
+
+```python title="Method definition"
+def update_resource_profile_detections(
+    self,
+    *,
+    resourceArn: str,
+    suppressDataIdentifiers: Sequence[SuppressDataIdentifierTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: SuppressDataIdentifierTypeDef](./type_defs.md#suppressdataidentifiertypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceProfileDetectionsRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.update_resource_profile_detections(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateResourceProfileDetectionsRequestRequestTypeDef](./type_defs.md#updateresourceprofiledetectionsrequestrequesttypedef) 
+
 ### update\_reveal\_configuration
 
 Updates the status and configuration settings for retrieving occurrences of
@@ -2026,6 +2372,39 @@ parent.update_reveal_configuration(**kwargs)
 
 1. See [:material-code-braces: UpdateRevealConfigurationRequestRequestTypeDef](./type_defs.md#updaterevealconfigurationrequestrequesttypedef) 
 
+### update\_sensitivity\_inspection\_template
+
+Updates the settings for the sensitivity inspection template for an account.
+
+Type annotations and code completion for `#!python boto3.client("macie2").update_sensitivity_inspection_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_sensitivity_inspection_template)
+
+```python title="Method definition"
+def update_sensitivity_inspection_template(
+    self,
+    *,
+    id: str,
+    description: str = ...,
+    excludes: SensitivityInspectionTemplateExcludesTypeDef = ...,  # (1)
+    includes: SensitivityInspectionTemplateIncludesTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: SensitivityInspectionTemplateExcludesTypeDef](./type_defs.md#sensitivityinspectiontemplateexcludestypedef) 
+2. See [:material-code-braces: SensitivityInspectionTemplateIncludesTypeDef](./type_defs.md#sensitivityinspectiontemplateincludestypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateSensitivityInspectionTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.update_sensitivity_inspection_template(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSensitivityInspectionTemplateRequestRequestTypeDef](./type_defs.md#updatesensitivityinspectiontemplaterequestrequesttypedef) 
+
 
 
 ### get_paginator
@@ -2034,13 +2413,19 @@ Type annotations and code completion for `#!python boto3.client("macie2").get_pa
 
 - `client.get_paginator("describe_buckets")` -> [DescribeBucketsPaginator](./paginators.md#describebucketspaginator)
 - `client.get_paginator("get_usage_statistics")` -> [GetUsageStatisticsPaginator](./paginators.md#getusagestatisticspaginator)
+- `client.get_paginator("list_allow_lists")` -> [ListAllowListsPaginator](./paginators.md#listallowlistspaginator)
 - `client.get_paginator("list_classification_jobs")` -> [ListClassificationJobsPaginator](./paginators.md#listclassificationjobspaginator)
+- `client.get_paginator("list_classification_scopes")` -> [ListClassificationScopesPaginator](./paginators.md#listclassificationscopespaginator)
 - `client.get_paginator("list_custom_data_identifiers")` -> [ListCustomDataIdentifiersPaginator](./paginators.md#listcustomdataidentifierspaginator)
 - `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
 - `client.get_paginator("list_findings_filters")` -> [ListFindingsFiltersPaginator](./paginators.md#listfindingsfilterspaginator)
 - `client.get_paginator("list_invitations")` -> [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+- `client.get_paginator("list_managed_data_identifiers")` -> [ListManagedDataIdentifiersPaginator](./paginators.md#listmanageddataidentifierspaginator)
 - `client.get_paginator("list_members")` -> [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - `client.get_paginator("list_organization_admin_accounts")` -> [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+- `client.get_paginator("list_resource_profile_artifacts")` -> [ListResourceProfileArtifactsPaginator](./paginators.md#listresourceprofileartifactspaginator)
+- `client.get_paginator("list_resource_profile_detections")` -> [ListResourceProfileDetectionsPaginator](./paginators.md#listresourceprofiledetectionspaginator)
+- `client.get_paginator("list_sensitivity_inspection_templates")` -> [ListSensitivityInspectionTemplatesPaginator](./paginators.md#listsensitivityinspectiontemplatespaginator)
 - `client.get_paginator("search_resources")` -> [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
 
 

@@ -410,13 +410,15 @@ def paginate(
     self,
     *,
     ConfigRuleNames: Sequence[str] = ...,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[DescribeConfigRulesResponseTypeDef]:  # (2)
+    Filters: DescribeConfigRulesFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeConfigRulesResponseTypeDef]:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef) 
+1. See [:material-code-braces: DescribeConfigRulesFiltersTypeDef](./type_defs.md#describeconfigrulesfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1248,9 +1250,10 @@ Type annotations and code completion for `#!python GetComplianceDetailsByResourc
 def paginate(
     self,
     *,
-    ResourceType: str,
-    ResourceId: str,
+    ResourceType: str = ...,
+    ResourceId: str = ...,
     ComplianceTypes: Sequence[ComplianceTypeType] = ...,  # (1)
+    ResourceEvaluationId: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[GetComplianceDetailsByResourceResponseTypeDef]:  # (3)
     ...
@@ -1264,7 +1267,6 @@ def paginate(
 ```python title="Usage example with kwargs"
 kwargs: GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef = {  # (1)
     "ResourceType": ...,
-    "ResourceId": ...,
 }
 
 parent.paginate(**kwargs)
@@ -1645,6 +1647,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef](./type_defs.md#listdiscoveredresourcesrequestlistdiscoveredresourcespaginatetypedef) 
+## ListResourceEvaluationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("list_resource_evaluations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListResourceEvaluations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import ListResourceEvaluationsPaginator
+
+def get_list_resource_evaluations_paginator() -> ListResourceEvaluationsPaginator:
+    return Session().client("config").get_paginator("list_resource_evaluations")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_config.paginator import ListResourceEvaluationsPaginator
+
+session = Session()
+
+client = Session().client("config")  # (1)
+paginator: ListResourceEvaluationsPaginator = client.get_paginator("list_resource_evaluations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ConfigServiceClient](./client.md)
+2. paginator: [ListResourceEvaluationsPaginator](./paginators.md#listresourceevaluationspaginator)
+3. item: [:material-code-braces: ListResourceEvaluationsResponseTypeDef](./type_defs.md#listresourceevaluationsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListResourceEvaluationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: ResourceEvaluationFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListResourceEvaluationsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ResourceEvaluationFiltersTypeDef](./type_defs.md#resourceevaluationfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListResourceEvaluationsResponseTypeDef](./type_defs.md#listresourceevaluationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceEvaluationsRequestListResourceEvaluationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceEvaluationsRequestListResourceEvaluationsPaginateTypeDef](./type_defs.md#listresourceevaluationsrequestlistresourceevaluationspaginatetypedef) 
 ## ListTagsForResourcePaginator
 
 Type annotations and code completion for `#!python boto3.client("config").get_paginator("list_tags_for_resource")`.

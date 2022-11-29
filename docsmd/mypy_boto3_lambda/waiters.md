@@ -252,3 +252,52 @@ parent.wait(**kwargs)
 ```
 
 1. See [:material-code-braces: GetFunctionRequestFunctionUpdatedV2WaitTypeDef](./type_defs.md#getfunctionrequestfunctionupdatedv2waittypedef) 
+## PublishedVersionActiveWaiter
+
+Type annotations and code completion for `#!python boto3.client("lambda").get_waiter("published_version_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.PublishedVersionActive)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_lambda.waiter import PublishedVersionActiveWaiter
+
+
+session = Session()
+
+client = session.client("lambda")  # (1)
+waiter: PublishedVersionActiveWaiter = client.get_waiter("published_version_active")  # (2)
+await waiter.wait()
+```
+
+1. client: [LambdaClient](./client.md)
+2. waiter: [PublishedVersionActiveWaiter](./waiters.md#publishedversionactivewaiter)
+
+
+### wait
+
+Type annotations and code completion for `#!python PublishedVersionActiveWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFunctionConfigurationRequestPublishedVersionActiveWaitTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetFunctionConfigurationRequestPublishedVersionActiveWaitTypeDef](./type_defs.md#getfunctionconfigurationrequestpublishedversionactivewaittypedef) 

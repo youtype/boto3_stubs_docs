@@ -346,6 +346,23 @@ class ConfigRuleEvaluationStatusTypeDef(TypedDict):
     LastDebugLogDeliveryTime: NotRequired[datetime],
 ```
 
+## EvaluationModeConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import EvaluationModeConfigurationTypeDef
+
+def get_value() -> EvaluationModeConfigurationTypeDef:
+    return {
+        "Mode": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluationModeConfigurationTypeDef(TypedDict):
+    Mode: NotRequired[EvaluationModeType],  # (1)
+```
+
+1. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
 ## ScopeTypeDef
 
 ```python title="Usage Example"
@@ -1033,23 +1050,23 @@ class DescribeConfigRuleEvaluationStatusRequestRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
 ```
 
-## DescribeConfigRulesRequestRequestTypeDef
+## DescribeConfigRulesFiltersTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_config.type_defs import DescribeConfigRulesRequestRequestTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigRulesFiltersTypeDef
 
-def get_value() -> DescribeConfigRulesRequestRequestTypeDef:
+def get_value() -> DescribeConfigRulesFiltersTypeDef:
     return {
-        "ConfigRuleNames": ...,
+        "EvaluationMode": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeConfigRulesRequestRequestTypeDef(TypedDict):
-    ConfigRuleNames: NotRequired[Sequence[str]],
-    NextToken: NotRequired[str],
+class DescribeConfigRulesFiltersTypeDef(TypedDict):
+    EvaluationMode: NotRequired[EvaluationModeType],  # (1)
 ```
 
+1. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
 ## DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1411,6 +1428,22 @@ class RetentionConfigurationTypeDef(TypedDict):
     RetentionPeriodInDays: int,
 ```
 
+## EvaluationContextTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import EvaluationContextTypeDef
+
+def get_value() -> EvaluationContextTypeDef:
+    return {
+        "EvaluationContextIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluationContextTypeDef(TypedDict):
+    EvaluationContextIdentifier: NotRequired[str],
+```
+
 ## EvaluationResultQualifierTypeDef
 
 ```python title="Usage Example"
@@ -1427,8 +1460,28 @@ class EvaluationResultQualifierTypeDef(TypedDict):
     ConfigRuleName: NotRequired[str],
     ResourceType: NotRequired[str],
     ResourceId: NotRequired[str],
+    EvaluationMode: NotRequired[EvaluationModeType],  # (1)
 ```
 
+1. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
+## EvaluationStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import EvaluationStatusTypeDef
+
+def get_value() -> EvaluationStatusTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluationStatusTypeDef(TypedDict):
+    Status: ResourceEvaluationStatusType,  # (1)
+    FailureReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ResourceEvaluationStatusType](./literals.md#resourceevaluationstatustype) 
 ## EvaluationTypeDef
 
 ```python title="Usage Example"
@@ -1601,16 +1654,16 @@ from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceRequestReq
 def get_value() -> GetComplianceDetailsByResourceRequestRequestTypeDef:
     return {
         "ResourceType": ...,
-        "ResourceId": ...,
     }
 ```
 
 ```python title="Definition"
 class GetComplianceDetailsByResourceRequestRequestTypeDef(TypedDict):
-    ResourceType: str,
-    ResourceId: str,
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
     ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
     NextToken: NotRequired[str],
+    ResourceEvaluationId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
@@ -1825,6 +1878,44 @@ class GetResourceConfigHistoryRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 2. See [:material-code-brackets: ChronologicalOrderType](./literals.md#chronologicalordertype) 
+## GetResourceEvaluationSummaryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetResourceEvaluationSummaryRequestRequestTypeDef
+
+def get_value() -> GetResourceEvaluationSummaryRequestRequestTypeDef:
+    return {
+        "ResourceEvaluationId": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceEvaluationSummaryRequestRequestTypeDef(TypedDict):
+    ResourceEvaluationId: str,
+```
+
+## ResourceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ResourceDetailsTypeDef
+
+def get_value() -> ResourceDetailsTypeDef:
+    return {
+        "ResourceId": ...,
+        "ResourceType": ...,
+        "ResourceConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceDetailsTypeDef(TypedDict):
+    ResourceId: str,
+    ResourceType: str,
+    ResourceConfiguration: str,
+    ResourceConfigurationSchemaType: NotRequired[ResourceConfigurationSchemaTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: ResourceConfigurationSchemaTypeType](./literals.md#resourceconfigurationschematypetype) 
 ## GetStoredQueryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1922,6 +2013,25 @@ class ResourceIdentifierTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+## ResourceEvaluationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ResourceEvaluationTypeDef
+
+def get_value() -> ResourceEvaluationTypeDef:
+    return {
+        "ResourceEvaluationId": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceEvaluationTypeDef(TypedDict):
+    ResourceEvaluationId: NotRequired[str],
+    EvaluationMode: NotRequired[EvaluationModeType],  # (1)
+    EvaluationStartTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
 ## ListStoredQueriesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2194,6 +2304,23 @@ def get_value() -> StaticValueTypeDef:
 ```python title="Definition"
 class StaticValueTypeDef(TypedDict):
     Values: List[str],
+```
+
+## TimeWindowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import TimeWindowTypeDef
+
+def get_value() -> TimeWindowTypeDef:
+    return {
+        "StartTime": ...,
+    }
+```
+
+```python title="Definition"
+class TimeWindowTypeDef(TypedDict):
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
 ```
 
 ## SelectAggregateResourceConfigRequestRequestTypeDef
@@ -2695,6 +2822,25 @@ def get_value() -> PutStoredQueryResponseTypeDef:
 ```python title="Definition"
 class PutStoredQueryResponseTypeDef(TypedDict):
     QueryArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartResourceEvaluationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import StartResourceEvaluationResponseTypeDef
+
+def get_value() -> StartResourceEvaluationResponseTypeDef:
+    return {
+        "ResourceEvaluationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartResourceEvaluationResponseTypeDef(TypedDict):
+    ResourceEvaluationId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -3493,24 +3639,6 @@ class DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatu
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_config.type_defs import DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef
-
-def get_value() -> DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef:
-    return {
-        "ConfigRuleNames": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef(TypedDict):
-    ConfigRuleNames: NotRequired[Sequence[str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3766,15 +3894,15 @@ from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceRequestGet
 def get_value() -> GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef:
     return {
         "ResourceType": ...,
-        "ResourceId": ...,
     }
 ```
 
 ```python title="Definition"
 class GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef(TypedDict):
-    ResourceType: str,
-    ResourceId: str,
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
     ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    ResourceEvaluationId: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -3902,6 +4030,45 @@ class SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef
+
+def get_value() -> DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    Filters: NotRequired[DescribeConfigRulesFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DescribeConfigRulesFiltersTypeDef](./type_defs.md#describeconfigrulesfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeConfigRulesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConfigRulesRequestRequestTypeDef
+
+def get_value() -> DescribeConfigRulesRequestRequestTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigRulesRequestRequestTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[DescribeConfigRulesFiltersTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DescribeConfigRulesFiltersTypeDef](./type_defs.md#describeconfigrulesfilterstypedef) 
 ## DescribeOrganizationConfigRuleStatusesResponseTypeDef
 
 ```python title="Usage Example"
@@ -4065,6 +4232,7 @@ def get_value() -> EvaluationResultIdentifierTypeDef:
 class EvaluationResultIdentifierTypeDef(TypedDict):
     EvaluationResultQualifier: NotRequired[EvaluationResultQualifierTypeDef],  # (1)
     OrderingTimestamp: NotRequired[datetime],
+    ResourceEvaluationId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: EvaluationResultQualifierTypeDef](./type_defs.md#evaluationresultqualifiertypedef) 
@@ -4356,6 +4524,66 @@ class GetOrganizationConformancePackDetailedStatusResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: OrganizationConformancePackDetailedStatusTypeDef](./type_defs.md#organizationconformancepackdetailedstatustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourceEvaluationSummaryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetResourceEvaluationSummaryResponseTypeDef
+
+def get_value() -> GetResourceEvaluationSummaryResponseTypeDef:
+    return {
+        "ResourceEvaluationId": ...,
+        "EvaluationMode": ...,
+        "EvaluationStatus": ...,
+        "EvaluationStartTimestamp": ...,
+        "Compliance": ...,
+        "EvaluationContext": ...,
+        "ResourceDetails": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceEvaluationSummaryResponseTypeDef(TypedDict):
+    ResourceEvaluationId: str,
+    EvaluationMode: EvaluationModeType,  # (1)
+    EvaluationStatus: EvaluationStatusTypeDef,  # (2)
+    EvaluationStartTimestamp: datetime,
+    Compliance: ComplianceTypeType,  # (3)
+    EvaluationContext: EvaluationContextTypeDef,  # (4)
+    ResourceDetails: ResourceDetailsTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
+2. See [:material-code-braces: EvaluationStatusTypeDef](./type_defs.md#evaluationstatustypedef) 
+3. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+4. See [:material-code-braces: EvaluationContextTypeDef](./type_defs.md#evaluationcontexttypedef) 
+5. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartResourceEvaluationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import StartResourceEvaluationRequestRequestTypeDef
+
+def get_value() -> StartResourceEvaluationRequestRequestTypeDef:
+    return {
+        "ResourceDetails": ...,
+        "EvaluationMode": ...,
+    }
+```
+
+```python title="Definition"
+class StartResourceEvaluationRequestRequestTypeDef(TypedDict):
+    ResourceDetails: ResourceDetailsTypeDef,  # (1)
+    EvaluationMode: EvaluationModeType,  # (2)
+    EvaluationContext: NotRequired[EvaluationContextTypeDef],  # (3)
+    EvaluationTimeout: NotRequired[int],
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+2. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
+3. See [:material-code-braces: EvaluationContextTypeDef](./type_defs.md#evaluationcontexttypedef) 
 ## GetStoredQueryResponseTypeDef
 
 ```python title="Usage Example"
@@ -4443,6 +4671,28 @@ class ListDiscoveredResourcesResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceEvaluationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListResourceEvaluationsResponseTypeDef
+
+def get_value() -> ListResourceEvaluationsResponseTypeDef:
+    return {
+        "ResourceEvaluations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceEvaluationsResponseTypeDef(TypedDict):
+    ResourceEvaluations: List[ResourceEvaluationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceEvaluationTypeDef](./type_defs.md#resourceevaluationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStoredQueriesResponseTypeDef
 
@@ -4659,6 +4909,26 @@ class RemediationParameterValueTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourceValueTypeDef](./type_defs.md#resourcevaluetypedef) 
 2. See [:material-code-braces: StaticValueTypeDef](./type_defs.md#staticvaluetypedef) 
+## ResourceEvaluationFiltersTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ResourceEvaluationFiltersTypeDef
+
+def get_value() -> ResourceEvaluationFiltersTypeDef:
+    return {
+        "EvaluationMode": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceEvaluationFiltersTypeDef(TypedDict):
+    EvaluationMode: NotRequired[EvaluationModeType],  # (1)
+    TimeWindow: NotRequired[TimeWindowTypeDef],  # (2)
+    EvaluationContextIdentifier: NotRequired[str],
+```
+
+1. See [:material-code-brackets: EvaluationModeType](./literals.md#evaluationmodetype) 
+2. See [:material-code-braces: TimeWindowTypeDef](./type_defs.md#timewindowtypedef) 
 ## SourceTypeDef
 
 ```python title="Usage Example"
@@ -5298,6 +5568,44 @@ class RemediationConfigurationTypeDef(TypedDict):
 1. See [:material-code-brackets: RemediationTargetTypeType](./literals.md#remediationtargettypetype) 
 2. See [:material-code-braces: RemediationParameterValueTypeDef](./type_defs.md#remediationparametervaluetypedef) 
 3. See [:material-code-braces: ExecutionControlsTypeDef](./type_defs.md#executioncontrolstypedef) 
+## ListResourceEvaluationsRequestListResourceEvaluationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListResourceEvaluationsRequestListResourceEvaluationsPaginateTypeDef
+
+def get_value() -> ListResourceEvaluationsRequestListResourceEvaluationsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceEvaluationsRequestListResourceEvaluationsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[ResourceEvaluationFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ResourceEvaluationFiltersTypeDef](./type_defs.md#resourceevaluationfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListResourceEvaluationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListResourceEvaluationsRequestRequestTypeDef
+
+def get_value() -> ListResourceEvaluationsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceEvaluationsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[ResourceEvaluationFiltersTypeDef],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ResourceEvaluationFiltersTypeDef](./type_defs.md#resourceevaluationfilterstypedef) 
 ## ConfigRuleTypeDef
 
 ```python title="Usage Example"
@@ -5321,12 +5629,14 @@ class ConfigRuleTypeDef(TypedDict):
     MaximumExecutionFrequency: NotRequired[MaximumExecutionFrequencyType],  # (3)
     ConfigRuleState: NotRequired[ConfigRuleStateType],  # (4)
     CreatedBy: NotRequired[str],
+    EvaluationModes: NotRequired[List[EvaluationModeConfigurationTypeDef]],  # (5)
 ```
 
 1. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
 2. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
 3. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
 4. See [:material-code-brackets: ConfigRuleStateType](./literals.md#configrulestatetype) 
+5. See [:material-code-braces: EvaluationModeConfigurationTypeDef](./type_defs.md#evaluationmodeconfigurationtypedef) 
 ## GetAggregateConfigRuleComplianceSummaryResponseTypeDef
 
 ```python title="Usage Example"

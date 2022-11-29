@@ -230,20 +230,22 @@ def create_analysis(
     AwsAccountId: str,
     AnalysisId: str,
     Name: str,
-    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
-    Parameters: ParametersTypeDef = ...,  # (2)
-    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (3)
+    Parameters: ParametersTypeDef = ...,  # (1)
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (2)
+    SourceEntity: AnalysisSourceEntityTypeDef = ...,  # (3)
     ThemeArn: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (4)
-) -> CreateAnalysisResponseTypeDef:  # (5)
+    Definition: AnalysisDefinitionTypeDef = ...,  # (5)
+) -> CreateAnalysisResponseTypeDef:  # (6)
     ...
 ```
 
-1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+1. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef) 
+5. See [:material-code-braces: AnalysisDefinitionTypeDef](./type_defs.md#analysisdefinitiontypedef) 
+6. See [:material-code-braces: CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -251,7 +253,6 @@ kwargs: CreateAnalysisRequestRequestTypeDef = {  # (1)
     "AwsAccountId": ...,
     "AnalysisId": ...,
     "Name": ...,
-    "SourceEntity": ...,
 }
 
 parent.create_analysis(**kwargs)
@@ -273,23 +274,25 @@ def create_dashboard(
     AwsAccountId: str,
     DashboardId: str,
     Name: str,
-    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
-    Parameters: ParametersTypeDef = ...,  # (2)
-    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (3)
+    Parameters: ParametersTypeDef = ...,  # (1)
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (2)
+    SourceEntity: DashboardSourceEntityTypeDef = ...,  # (3)
     Tags: Sequence[TagTypeDef] = ...,  # (4)
     VersionDescription: str = ...,
     DashboardPublishOptions: DashboardPublishOptionsTypeDef = ...,  # (5)
     ThemeArn: str = ...,
-) -> CreateDashboardResponseTypeDef:  # (6)
+    Definition: DashboardVersionDefinitionTypeDef = ...,  # (6)
+) -> CreateDashboardResponseTypeDef:  # (7)
     ...
 ```
 
-1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+1. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+3. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 5. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
-6. See [:material-code-braces: CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef) 
+6. See [:material-code-braces: DashboardVersionDefinitionTypeDef](./type_defs.md#dashboardversiondefinitiontypedef) 
+7. See [:material-code-braces: CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -297,7 +300,6 @@ kwargs: CreateDashboardRequestRequestTypeDef = {  # (1)
     "AwsAccountId": ...,
     "DashboardId": ...,
     "Name": ...,
-    "SourceEntity": ...,
 }
 
 parent.create_dashboard(**kwargs)
@@ -678,26 +680,27 @@ def create_template(
     *,
     AwsAccountId: str,
     TemplateId: str,
-    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
     Name: str = ...,
-    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (2)
+    Permissions: Sequence[ResourcePermissionTypeDef] = ...,  # (1)
+    SourceEntity: TemplateSourceEntityTypeDef = ...,  # (2)
     Tags: Sequence[TagTypeDef] = ...,  # (3)
     VersionDescription: str = ...,
-) -> CreateTemplateResponseTypeDef:  # (4)
+    Definition: TemplateVersionDefinitionTypeDef = ...,  # (4)
+) -> CreateTemplateResponseTypeDef:  # (5)
     ...
 ```
 
-1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
-2. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+1. See [:material-code-braces: ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef) 
+2. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-4. See [:material-code-braces: CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef) 
+4. See [:material-code-braces: TemplateVersionDefinitionTypeDef](./type_defs.md#templateversiondefinitiontypedef) 
+5. See [:material-code-braces: CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: CreateTemplateRequestRequestTypeDef = {  # (1)
     "AwsAccountId": ...,
     "TemplateId": ...,
-    "SourceEntity": ...,
 }
 
 parent.create_template(**kwargs)
@@ -1526,6 +1529,37 @@ parent.describe_analysis(**kwargs)
 
 1. See [:material-code-braces: DescribeAnalysisRequestRequestTypeDef](./type_defs.md#describeanalysisrequestrequesttypedef) 
 
+### describe\_analysis\_definition
+
+.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_analysis_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_definition)
+
+```python title="Method definition"
+def describe_analysis_definition(
+    self,
+    *,
+    AwsAccountId: str,
+    AnalysisId: str,
+) -> DescribeAnalysisDefinitionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeAnalysisDefinitionResponseTypeDef](./type_defs.md#describeanalysisdefinitionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAnalysisDefinitionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "AnalysisId": ...,
+}
+
+parent.describe_analysis_definition(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAnalysisDefinitionRequestRequestTypeDef](./type_defs.md#describeanalysisdefinitionrequestrequesttypedef) 
+
 ### describe\_analysis\_permissions
 
 Provides the read and write permissions for an analysis.
@@ -1589,6 +1623,39 @@ parent.describe_dashboard(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeDashboardRequestRequestTypeDef](./type_defs.md#describedashboardrequestrequesttypedef) 
+
+### describe\_dashboard\_definition
+
+.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_dashboard_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_definition)
+
+```python title="Method definition"
+def describe_dashboard_definition(
+    self,
+    *,
+    AwsAccountId: str,
+    DashboardId: str,
+    VersionNumber: int = ...,
+    AliasName: str = ...,
+) -> DescribeDashboardDefinitionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeDashboardDefinitionResponseTypeDef](./type_defs.md#describedashboarddefinitionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDashboardDefinitionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "DashboardId": ...,
+}
+
+parent.describe_dashboard_definition(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDashboardDefinitionRequestRequestTypeDef](./type_defs.md#describedashboarddefinitionrequestrequesttypedef) 
 
 ### describe\_dashboard\_permissions
 
@@ -2099,6 +2166,39 @@ parent.describe_template_alias(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeTemplateAliasRequestRequestTypeDef](./type_defs.md#describetemplatealiasrequestrequesttypedef) 
+
+### describe\_template\_definition
+
+.
+
+Type annotations and code completion for `#!python boto3.client("quicksight").describe_template_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_definition)
+
+```python title="Method definition"
+def describe_template_definition(
+    self,
+    *,
+    AwsAccountId: str,
+    TemplateId: str,
+    VersionNumber: int = ...,
+    AliasName: str = ...,
+) -> DescribeTemplateDefinitionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeTemplateDefinitionResponseTypeDef](./type_defs.md#describetemplatedefinitionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTemplateDefinitionRequestRequestTypeDef = {  # (1)
+    "AwsAccountId": ...,
+    "TemplateId": ...,
+}
+
+parent.describe_template_definition(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTemplateDefinitionRequestRequestTypeDef](./type_defs.md#describetemplatedefinitionrequestrequesttypedef) 
 
 ### describe\_template\_permissions
 
@@ -3589,16 +3689,18 @@ def update_analysis(
     AwsAccountId: str,
     AnalysisId: str,
     Name: str,
-    SourceEntity: AnalysisSourceEntityTypeDef,  # (1)
-    Parameters: ParametersTypeDef = ...,  # (2)
+    Parameters: ParametersTypeDef = ...,  # (1)
+    SourceEntity: AnalysisSourceEntityTypeDef = ...,  # (2)
     ThemeArn: str = ...,
-) -> UpdateAnalysisResponseTypeDef:  # (3)
+    Definition: AnalysisDefinitionTypeDef = ...,  # (3)
+) -> UpdateAnalysisResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
-2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
-3. See [:material-code-braces: UpdateAnalysisResponseTypeDef](./type_defs.md#updateanalysisresponsetypedef) 
+1. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+2. See [:material-code-braces: AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef) 
+3. See [:material-code-braces: AnalysisDefinitionTypeDef](./type_defs.md#analysisdefinitiontypedef) 
+4. See [:material-code-braces: UpdateAnalysisResponseTypeDef](./type_defs.md#updateanalysisresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3606,7 +3708,6 @@ kwargs: UpdateAnalysisRequestRequestTypeDef = {  # (1)
     "AwsAccountId": ...,
     "AnalysisId": ...,
     "Name": ...,
-    "SourceEntity": ...,
 }
 
 parent.update_analysis(**kwargs)
@@ -3663,19 +3764,21 @@ def update_dashboard(
     AwsAccountId: str,
     DashboardId: str,
     Name: str,
-    SourceEntity: DashboardSourceEntityTypeDef,  # (1)
+    SourceEntity: DashboardSourceEntityTypeDef = ...,  # (1)
     Parameters: ParametersTypeDef = ...,  # (2)
     VersionDescription: str = ...,
     DashboardPublishOptions: DashboardPublishOptionsTypeDef = ...,  # (3)
     ThemeArn: str = ...,
-) -> UpdateDashboardResponseTypeDef:  # (4)
+    Definition: DashboardVersionDefinitionTypeDef = ...,  # (4)
+) -> UpdateDashboardResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: DashboardSourceEntityTypeDef](./type_defs.md#dashboardsourceentitytypedef) 
 2. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
 3. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
-4. See [:material-code-braces: UpdateDashboardResponseTypeDef](./type_defs.md#updatedashboardresponsetypedef) 
+4. See [:material-code-braces: DashboardVersionDefinitionTypeDef](./type_defs.md#dashboardversiondefinitiontypedef) 
+5. See [:material-code-braces: UpdateDashboardResponseTypeDef](./type_defs.md#updatedashboardresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3683,7 +3786,6 @@ kwargs: UpdateDashboardRequestRequestTypeDef = {  # (1)
     "AwsAccountId": ...,
     "DashboardId": ...,
     "Name": ...,
-    "SourceEntity": ...,
 }
 
 parent.update_dashboard(**kwargs)
@@ -4142,22 +4244,23 @@ def update_template(
     *,
     AwsAccountId: str,
     TemplateId: str,
-    SourceEntity: TemplateSourceEntityTypeDef,  # (1)
+    SourceEntity: TemplateSourceEntityTypeDef = ...,  # (1)
     VersionDescription: str = ...,
     Name: str = ...,
-) -> UpdateTemplateResponseTypeDef:  # (2)
+    Definition: TemplateVersionDefinitionTypeDef = ...,  # (2)
+) -> UpdateTemplateResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: TemplateSourceEntityTypeDef](./type_defs.md#templatesourceentitytypedef) 
-2. See [:material-code-braces: UpdateTemplateResponseTypeDef](./type_defs.md#updatetemplateresponsetypedef) 
+2. See [:material-code-braces: TemplateVersionDefinitionTypeDef](./type_defs.md#templateversiondefinitiontypedef) 
+3. See [:material-code-braces: UpdateTemplateResponseTypeDef](./type_defs.md#updatetemplateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: UpdateTemplateRequestRequestTypeDef = {  # (1)
     "AwsAccountId": ...,
     "TemplateId": ...,
-    "SourceEntity": ...,
 }
 
 parent.update_template(**kwargs)

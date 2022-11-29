@@ -133,6 +133,7 @@ def get_function_active_waiter() -> FunctionActiveWaiter:
 - [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
 - [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
 - [FunctionUpdatedV2Waiter](./waiters.md#functionupdatedv2waiter)
+- [PublishedVersionActiveWaiter](./waiters.md#publishedversionactivewaiter)
 
 
 
@@ -180,7 +181,10 @@ def get_value() -> ArchitectureType:
 - [LogTypeType](./literals.md#logtypetype)
 - [PackageTypeType](./literals.md#packagetypetype)
 - [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
+- [PublishedVersionActiveWaiterName](./literals.md#publishedversionactivewaitername)
 - [RuntimeType](./literals.md#runtimetype)
+- [SnapStartApplyOnType](./literals.md#snapstartapplyontype)
+- [SnapStartOptimizationStatusType](./literals.md#snapstartoptimizationstatustype)
 - [SourceAccessTypeType](./literals.md#sourceaccesstypetype)
 - [StateReasonCodeType](./literals.md#statereasoncodetype)
 - [StateType](./literals.md#statetype)
@@ -228,6 +232,7 @@ def get_value() -> AccountLimitTypeDef:
 - [FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)
 - [FunctionCodeTypeDef](./type_defs.md#functioncodetypedef)
 - [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
+- [SnapStartTypeDef](./type_defs.md#snapstarttypedef)
 - [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
 - [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - [DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef)
@@ -246,6 +251,7 @@ def get_value() -> AccountLimitTypeDef:
 - [FilterTypeDef](./type_defs.md#filtertypedef)
 - [FunctionCodeLocationTypeDef](./type_defs.md#functioncodelocationtypedef)
 - [LayerTypeDef](./type_defs.md#layertypedef)
+- [SnapStartResponseTypeDef](./type_defs.md#snapstartresponsetypedef)
 - [TracingConfigResponseTypeDef](./type_defs.md#tracingconfigresponsetypedef)
 - [VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
 - [GetAliasRequestRequestTypeDef](./type_defs.md#getaliasrequestrequesttypedef)
@@ -328,6 +334,7 @@ def get_value() -> AccountLimitTypeDef:
 - [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
 - [GetFunctionConfigurationRequestFunctionActiveWaitTypeDef](./type_defs.md#getfunctionconfigurationrequestfunctionactivewaittypedef)
 - [GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef](./type_defs.md#getfunctionconfigurationrequestfunctionupdatedwaittypedef)
+- [GetFunctionConfigurationRequestPublishedVersionActiveWaitTypeDef](./type_defs.md#getfunctionconfigurationrequestpublishedversionactivewaittypedef)
 - [GetFunctionRequestFunctionActiveV2WaitTypeDef](./type_defs.md#getfunctionrequestfunctionactivev2waittypedef)
 - [GetFunctionRequestFunctionExistsWaitTypeDef](./type_defs.md#getfunctionrequestfunctionexistswaittypedef)
 - [GetFunctionRequestFunctionUpdatedV2WaitTypeDef](./type_defs.md#getfunctionrequestfunctionupdatedv2waittypedef)

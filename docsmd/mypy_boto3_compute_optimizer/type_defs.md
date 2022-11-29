@@ -66,27 +66,6 @@ class UtilizationMetricTypeDef(TypedDict):
 
 1. See [:material-code-brackets: MetricNameType](./literals.md#metricnametype) 
 2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
-## EffectiveRecommendationPreferencesTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_compute_optimizer.type_defs import EffectiveRecommendationPreferencesTypeDef
-
-def get_value() -> EffectiveRecommendationPreferencesTypeDef:
-    return {
-        "cpuVendorArchitectures": ...,
-    }
-```
-
-```python title="Definition"
-class EffectiveRecommendationPreferencesTypeDef(TypedDict):
-    cpuVendorArchitectures: NotRequired[List[CpuVendorArchitectureType]],  # (1)
-    enhancedInfrastructureMetrics: NotRequired[EnhancedInfrastructureMetricsType],  # (2)
-    inferredWorkloadTypes: NotRequired[InferredWorkloadTypesPreferenceType],  # (3)
-```
-
-1. See [:material-code-brackets: CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype) 
-2. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
-3. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
 ## CurrentPerformanceRiskRatingsTypeDef
 
 ```python title="Usage Example"
@@ -204,6 +183,23 @@ class EBSUtilizationMetricTypeDef(TypedDict):
 
 1. See [:material-code-brackets: EBSMetricNameType](./literals.md#ebsmetricnametype) 
 2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
+## ExternalMetricsPreferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ExternalMetricsPreferenceTypeDef
+
+def get_value() -> ExternalMetricsPreferenceTypeDef:
+    return {
+        "source": ...,
+    }
+```
+
+```python title="Definition"
+class ExternalMetricsPreferenceTypeDef(TypedDict):
+    source: NotRequired[ExternalMetricsSourceType],  # (1)
+```
+
+1. See [:material-code-brackets: ExternalMetricsSourceType](./literals.md#externalmetricssourcetype) 
 ## EnrollmentFilterTypeDef
 
 ```python title="Usage Example"
@@ -557,52 +553,6 @@ class GetRecommendationPreferencesRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 2. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
-## PutRecommendationPreferencesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_compute_optimizer.type_defs import PutRecommendationPreferencesRequestRequestTypeDef
-
-def get_value() -> PutRecommendationPreferencesRequestRequestTypeDef:
-    return {
-        "resourceType": ...,
-    }
-```
-
-```python title="Definition"
-class PutRecommendationPreferencesRequestRequestTypeDef(TypedDict):
-    resourceType: ResourceTypeType,  # (1)
-    scope: NotRequired[ScopeTypeDef],  # (2)
-    enhancedInfrastructureMetrics: NotRequired[EnhancedInfrastructureMetricsType],  # (3)
-    inferredWorkloadTypes: NotRequired[InferredWorkloadTypesPreferenceType],  # (4)
-```
-
-1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-2. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
-3. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
-4. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
-## RecommendationPreferencesDetailTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_compute_optimizer.type_defs import RecommendationPreferencesDetailTypeDef
-
-def get_value() -> RecommendationPreferencesDetailTypeDef:
-    return {
-        "scope": ...,
-    }
-```
-
-```python title="Definition"
-class RecommendationPreferencesDetailTypeDef(TypedDict):
-    scope: NotRequired[ScopeTypeDef],  # (1)
-    resourceType: NotRequired[ResourceTypeType],  # (2)
-    enhancedInfrastructureMetrics: NotRequired[EnhancedInfrastructureMetricsType],  # (3)
-    inferredWorkloadTypes: NotRequired[InferredWorkloadTypesPreferenceType],  # (4)
-```
-
-1. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
-2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
-3. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
-4. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
 ## DescribeRecommendationExportJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -623,26 +573,6 @@ class DescribeRecommendationExportJobsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: JobFilterTypeDef](./type_defs.md#jobfiltertypedef) 
-## GetEffectiveRecommendationPreferencesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_compute_optimizer.type_defs import GetEffectiveRecommendationPreferencesResponseTypeDef
-
-def get_value() -> GetEffectiveRecommendationPreferencesResponseTypeDef:
-    return {
-        "enhancedInfrastructureMetrics": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetEffectiveRecommendationPreferencesResponseTypeDef(TypedDict):
-    enhancedInfrastructureMetrics: EnhancedInfrastructureMetricsType,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEnrollmentStatusResponseTypeDef
 
 ```python title="Usage Example"
@@ -736,6 +666,102 @@ class GetEBSVolumeRecommendationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef) 
+## EffectiveRecommendationPreferencesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import EffectiveRecommendationPreferencesTypeDef
+
+def get_value() -> EffectiveRecommendationPreferencesTypeDef:
+    return {
+        "cpuVendorArchitectures": ...,
+    }
+```
+
+```python title="Definition"
+class EffectiveRecommendationPreferencesTypeDef(TypedDict):
+    cpuVendorArchitectures: NotRequired[List[CpuVendorArchitectureType]],  # (1)
+    enhancedInfrastructureMetrics: NotRequired[EnhancedInfrastructureMetricsType],  # (2)
+    inferredWorkloadTypes: NotRequired[InferredWorkloadTypesPreferenceType],  # (3)
+    externalMetricsPreference: NotRequired[ExternalMetricsPreferenceTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype) 
+2. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
+3. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
+4. See [:material-code-braces: ExternalMetricsPreferenceTypeDef](./type_defs.md#externalmetricspreferencetypedef) 
+## GetEffectiveRecommendationPreferencesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetEffectiveRecommendationPreferencesResponseTypeDef
+
+def get_value() -> GetEffectiveRecommendationPreferencesResponseTypeDef:
+    return {
+        "enhancedInfrastructureMetrics": ...,
+        "externalMetricsPreference": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetEffectiveRecommendationPreferencesResponseTypeDef(TypedDict):
+    enhancedInfrastructureMetrics: EnhancedInfrastructureMetricsType,  # (1)
+    externalMetricsPreference: ExternalMetricsPreferenceTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
+2. See [:material-code-braces: ExternalMetricsPreferenceTypeDef](./type_defs.md#externalmetricspreferencetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutRecommendationPreferencesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import PutRecommendationPreferencesRequestRequestTypeDef
+
+def get_value() -> PutRecommendationPreferencesRequestRequestTypeDef:
+    return {
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class PutRecommendationPreferencesRequestRequestTypeDef(TypedDict):
+    resourceType: ResourceTypeType,  # (1)
+    scope: NotRequired[ScopeTypeDef],  # (2)
+    enhancedInfrastructureMetrics: NotRequired[EnhancedInfrastructureMetricsType],  # (3)
+    inferredWorkloadTypes: NotRequired[InferredWorkloadTypesPreferenceType],  # (4)
+    externalMetricsPreference: NotRequired[ExternalMetricsPreferenceTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+3. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
+4. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
+5. See [:material-code-braces: ExternalMetricsPreferenceTypeDef](./type_defs.md#externalmetricspreferencetypedef) 
+## RecommendationPreferencesDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import RecommendationPreferencesDetailTypeDef
+
+def get_value() -> RecommendationPreferencesDetailTypeDef:
+    return {
+        "scope": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationPreferencesDetailTypeDef(TypedDict):
+    scope: NotRequired[ScopeTypeDef],  # (1)
+    resourceType: NotRequired[ResourceTypeType],  # (2)
+    enhancedInfrastructureMetrics: NotRequired[EnhancedInfrastructureMetricsType],  # (3)
+    inferredWorkloadTypes: NotRequired[InferredWorkloadTypesPreferenceType],  # (4)
+    externalMetricsPreference: NotRequired[ExternalMetricsPreferenceTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
+4. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
+5. See [:material-code-braces: ExternalMetricsPreferenceTypeDef](./type_defs.md#externalmetricspreferencetypedef) 
 ## GetEnrollmentStatusesForOrganizationRequestRequestTypeDef
 
 ```python title="Usage Example"
