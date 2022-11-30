@@ -1758,6 +1758,7 @@ class AccessPointTypeDef(TypedDict):
     VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (2)
     AccessPointArn: NotRequired[str],
     Alias: NotRequired[str],
+    BucketAccountId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: NetworkOriginType](./literals.md#networkorigintype) 
@@ -2143,6 +2144,7 @@ class CreateAccessPointRequestRequestTypeDef(TypedDict):
     Bucket: str,
     VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
     PublicAccessBlockConfiguration: NotRequired[PublicAccessBlockConfigurationTypeDef],  # (2)
+    BucketAccountId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
@@ -2187,6 +2189,7 @@ def get_value() -> GetAccessPointResultTypeDef:
         "Alias": ...,
         "AccessPointArn": ...,
         "Endpoints": ...,
+        "BucketAccountId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2202,6 +2205,7 @@ class GetAccessPointResultTypeDef(TypedDict):
     Alias: str,
     AccessPointArn: str,
     Endpoints: Dict[str, str],
+    BucketAccountId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 

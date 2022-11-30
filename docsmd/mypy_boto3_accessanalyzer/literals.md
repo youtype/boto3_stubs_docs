@@ -103,6 +103,7 @@ FindingSourceTypeType = Literal[
     "BUCKET_ACL",
     "POLICY",
     "S3_ACCESS_POINT",
+    "S3_ACCESS_POINT_ACCOUNT",
 ]
 ```
 ## FindingStatusType
@@ -572,6 +573,7 @@ ServiceName = Literal[
     "dlm",
     "dms",
     "docdb",
+    "docdb-elastic",
     "drs",
     "ds",
     "dynamodb",
@@ -753,6 +755,7 @@ ServiceName = Literal[
     "sagemaker-a2i-runtime",
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
+    "sagemaker-geospatial",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",

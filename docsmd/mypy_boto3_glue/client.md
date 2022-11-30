@@ -333,6 +333,35 @@ parent.batch_get_custom_entity_types(**kwargs)
 
 1. See [:material-code-braces: BatchGetCustomEntityTypesRequestRequestTypeDef](./type_defs.md#batchgetcustomentitytypesrequestrequesttypedef) 
 
+### batch\_get\_data\_quality\_result
+
+Retrieves a list of data quality results for the specified result IDs.
+
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_data_quality_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_data_quality_result)
+
+```python title="Method definition"
+def batch_get_data_quality_result(
+    self,
+    *,
+    ResultIds: Sequence[str],
+) -> BatchGetDataQualityResultResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: BatchGetDataQualityResultResponseTypeDef](./type_defs.md#batchgetdataqualityresultresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetDataQualityResultRequestRequestTypeDef = {  # (1)
+    "ResultIds": ...,
+}
+
+parent.batch_get_data_quality_result(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetDataQualityResultRequestRequestTypeDef](./type_defs.md#batchgetdataqualityresultrequestrequesttypedef) 
+
 ### batch\_get\_dev\_endpoints
 
 Returns a list of resource metadata for a given list of development endpoint
@@ -567,6 +596,62 @@ def can_paginate(
     ...
 ```
 
+
+### cancel\_data\_quality\_rule\_recommendation\_run
+
+Cancels the specified recommendation run that was being used to generate rules.
+
+Type annotations and code completion for `#!python boto3.client("glue").cancel_data_quality_rule_recommendation_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_data_quality_rule_recommendation_run)
+
+```python title="Method definition"
+def cancel_data_quality_rule_recommendation_run(
+    self,
+    *,
+    RunId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: CancelDataQualityRuleRecommendationRunRequestRequestTypeDef = {  # (1)
+    "RunId": ...,
+}
+
+parent.cancel_data_quality_rule_recommendation_run(**kwargs)
+```
+
+1. See [:material-code-braces: CancelDataQualityRuleRecommendationRunRequestRequestTypeDef](./type_defs.md#canceldataqualityrulerecommendationrunrequestrequesttypedef) 
+
+### cancel\_data\_quality\_ruleset\_evaluation\_run
+
+Cancels a run where a ruleset is being evaluated against a data source.
+
+Type annotations and code completion for `#!python boto3.client("glue").cancel_data_quality_ruleset_evaluation_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_data_quality_ruleset_evaluation_run)
+
+```python title="Method definition"
+def cancel_data_quality_ruleset_evaluation_run(
+    self,
+    *,
+    RunId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: CancelDataQualityRulesetEvaluationRunRequestRequestTypeDef = {  # (1)
+    "RunId": ...,
+}
+
+parent.cancel_data_quality_ruleset_evaluation_run(**kwargs)
+```
+
+1. See [:material-code-braces: CancelDataQualityRulesetEvaluationRunRequestRequestTypeDef](./type_defs.md#canceldataqualityrulesetevaluationrunrequestrequesttypedef) 
 
 ### cancel\_ml\_task\_run
 
@@ -858,6 +943,43 @@ parent.create_custom_entity_type(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateCustomEntityTypeRequestRequestTypeDef](./type_defs.md#createcustomentitytyperequestrequesttypedef) 
+
+### create\_data\_quality\_ruleset
+
+Creates a data quality ruleset with DQDL rules applied to a specified Glue
+table.
+
+Type annotations and code completion for `#!python boto3.client("glue").create_data_quality_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_data_quality_ruleset)
+
+```python title="Method definition"
+def create_data_quality_ruleset(
+    self,
+    *,
+    Name: str,
+    Ruleset: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+    TargetTable: DataQualityTargetTableTypeDef = ...,  # (1)
+    ClientToken: str = ...,
+) -> CreateDataQualityRulesetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataQualityTargetTableTypeDef](./type_defs.md#dataqualitytargettabletypedef) 
+2. See [:material-code-braces: CreateDataQualityRulesetResponseTypeDef](./type_defs.md#createdataqualityrulesetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateDataQualityRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Ruleset": ...,
+}
+
+parent.create_data_quality_ruleset(**kwargs)
+```
+
+1. See [:material-code-braces: CreateDataQualityRulesetRequestRequestTypeDef](./type_defs.md#createdataqualityrulesetrequestrequesttypedef) 
 
 ### create\_database
 
@@ -1650,6 +1772,34 @@ parent.delete_custom_entity_type(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteCustomEntityTypeRequestRequestTypeDef](./type_defs.md#deletecustomentitytyperequestrequesttypedef) 
+
+### delete\_data\_quality\_ruleset
+
+Deletes a data quality ruleset.
+
+Type annotations and code completion for `#!python boto3.client("glue").delete_data_quality_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_data_quality_ruleset)
+
+```python title="Method definition"
+def delete_data_quality_ruleset(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteDataQualityRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.delete_data_quality_ruleset(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteDataQualityRulesetRequestRequestTypeDef](./type_defs.md#deletedataqualityrulesetrequestrequesttypedef) 
 
 ### delete\_database
 
@@ -2647,6 +2797,122 @@ parent.get_data_catalog_encryption_settings(**kwargs)
 ```
 
 1. See [:material-code-braces: GetDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#getdatacatalogencryptionsettingsrequestrequesttypedef) 
+
+### get\_data\_quality\_result
+
+Retrieves the result of a data quality rule evaluation.
+
+Type annotations and code completion for `#!python boto3.client("glue").get_data_quality_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_quality_result)
+
+```python title="Method definition"
+def get_data_quality_result(
+    self,
+    *,
+    ResultId: str,
+) -> GetDataQualityResultResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataQualityResultResponseTypeDef](./type_defs.md#getdataqualityresultresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataQualityResultRequestRequestTypeDef = {  # (1)
+    "ResultId": ...,
+}
+
+parent.get_data_quality_result(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataQualityResultRequestRequestTypeDef](./type_defs.md#getdataqualityresultrequestrequesttypedef) 
+
+### get\_data\_quality\_rule\_recommendation\_run
+
+Gets the specified recommendation run that was used to generate rules.
+
+Type annotations and code completion for `#!python boto3.client("glue").get_data_quality_rule_recommendation_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_quality_rule_recommendation_run)
+
+```python title="Method definition"
+def get_data_quality_rule_recommendation_run(
+    self,
+    *,
+    RunId: str,
+) -> GetDataQualityRuleRecommendationRunResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataQualityRuleRecommendationRunResponseTypeDef](./type_defs.md#getdataqualityrulerecommendationrunresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataQualityRuleRecommendationRunRequestRequestTypeDef = {  # (1)
+    "RunId": ...,
+}
+
+parent.get_data_quality_rule_recommendation_run(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataQualityRuleRecommendationRunRequestRequestTypeDef](./type_defs.md#getdataqualityrulerecommendationrunrequestrequesttypedef) 
+
+### get\_data\_quality\_ruleset
+
+Returns an existing ruleset by identifier or name.
+
+Type annotations and code completion for `#!python boto3.client("glue").get_data_quality_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_quality_ruleset)
+
+```python title="Method definition"
+def get_data_quality_ruleset(
+    self,
+    *,
+    Name: str,
+) -> GetDataQualityRulesetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataQualityRulesetResponseTypeDef](./type_defs.md#getdataqualityrulesetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataQualityRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.get_data_quality_ruleset(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataQualityRulesetRequestRequestTypeDef](./type_defs.md#getdataqualityrulesetrequestrequesttypedef) 
+
+### get\_data\_quality\_ruleset\_evaluation\_run
+
+Retrieves a specific run where a ruleset is evaluated against a data source.
+
+Type annotations and code completion for `#!python boto3.client("glue").get_data_quality_ruleset_evaluation_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_quality_ruleset_evaluation_run)
+
+```python title="Method definition"
+def get_data_quality_ruleset_evaluation_run(
+    self,
+    *,
+    RunId: str,
+) -> GetDataQualityRulesetEvaluationRunResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetDataQualityRulesetEvaluationRunResponseTypeDef](./type_defs.md#getdataqualityrulesetevaluationrunresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDataQualityRulesetEvaluationRunRequestRequestTypeDef = {  # (1)
+    "RunId": ...,
+}
+
+parent.get_data_quality_ruleset_evaluation_run(**kwargs)
+```
+
+1. See [:material-code-braces: GetDataQualityRulesetEvaluationRunRequestRequestTypeDef](./type_defs.md#getdataqualityrulesetevaluationrunrequestrequesttypedef) 
 
 ### get\_database
 
@@ -4303,6 +4569,136 @@ parent.list_custom_entity_types(**kwargs)
 
 1. See [:material-code-braces: ListCustomEntityTypesRequestRequestTypeDef](./type_defs.md#listcustomentitytypesrequestrequesttypedef) 
 
+### list\_data\_quality\_results
+
+Returns all data quality execution results for your account.
+
+Type annotations and code completion for `#!python boto3.client("glue").list_data_quality_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_data_quality_results)
+
+```python title="Method definition"
+def list_data_quality_results(
+    self,
+    *,
+    Filter: DataQualityResultFilterCriteriaTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataQualityResultsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataQualityResultFilterCriteriaTypeDef](./type_defs.md#dataqualityresultfiltercriteriatypedef) 
+2. See [:material-code-braces: ListDataQualityResultsResponseTypeDef](./type_defs.md#listdataqualityresultsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDataQualityResultsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.list_data_quality_results(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataQualityResultsRequestRequestTypeDef](./type_defs.md#listdataqualityresultsrequestrequesttypedef) 
+
+### list\_data\_quality\_rule\_recommendation\_runs
+
+Lists the recommendation runs meeting the filter criteria.
+
+Type annotations and code completion for `#!python boto3.client("glue").list_data_quality_rule_recommendation_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_data_quality_rule_recommendation_runs)
+
+```python title="Method definition"
+def list_data_quality_rule_recommendation_runs(
+    self,
+    *,
+    Filter: DataQualityRuleRecommendationRunFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataQualityRuleRecommendationRunsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataQualityRuleRecommendationRunFilterTypeDef](./type_defs.md#dataqualityrulerecommendationrunfiltertypedef) 
+2. See [:material-code-braces: ListDataQualityRuleRecommendationRunsResponseTypeDef](./type_defs.md#listdataqualityrulerecommendationrunsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDataQualityRuleRecommendationRunsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.list_data_quality_rule_recommendation_runs(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataQualityRuleRecommendationRunsRequestRequestTypeDef](./type_defs.md#listdataqualityrulerecommendationrunsrequestrequesttypedef) 
+
+### list\_data\_quality\_ruleset\_evaluation\_runs
+
+Lists all the runs meeting the filter criteria, where a ruleset is evaluated
+against a data source.
+
+Type annotations and code completion for `#!python boto3.client("glue").list_data_quality_ruleset_evaluation_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_data_quality_ruleset_evaluation_runs)
+
+```python title="Method definition"
+def list_data_quality_ruleset_evaluation_runs(
+    self,
+    *,
+    Filter: DataQualityRulesetEvaluationRunFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataQualityRulesetEvaluationRunsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataQualityRulesetEvaluationRunFilterTypeDef](./type_defs.md#dataqualityrulesetevaluationrunfiltertypedef) 
+2. See [:material-code-braces: ListDataQualityRulesetEvaluationRunsResponseTypeDef](./type_defs.md#listdataqualityrulesetevaluationrunsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDataQualityRulesetEvaluationRunsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.list_data_quality_ruleset_evaluation_runs(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataQualityRulesetEvaluationRunsRequestRequestTypeDef](./type_defs.md#listdataqualityrulesetevaluationrunsrequestrequesttypedef) 
+
+### list\_data\_quality\_rulesets
+
+Returns a paginated list of rulesets for the specified list of Glue tables.
+
+Type annotations and code completion for `#!python boto3.client("glue").list_data_quality_rulesets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_data_quality_rulesets)
+
+```python title="Method definition"
+def list_data_quality_rulesets(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filter: DataQualityRulesetFilterCriteriaTypeDef = ...,  # (1)
+    Tags: Mapping[str, str] = ...,
+) -> ListDataQualityRulesetsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataQualityRulesetFilterCriteriaTypeDef](./type_defs.md#dataqualityrulesetfiltercriteriatypedef) 
+2. See [:material-code-braces: ListDataQualityRulesetsResponseTypeDef](./type_defs.md#listdataqualityrulesetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDataQualityRulesetsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_data_quality_rulesets(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataQualityRulesetsRequestRequestTypeDef](./type_defs.md#listdataqualityrulesetsrequestrequesttypedef) 
+
 ### list\_dev\_endpoints
 
 Retrieves the names of all `DevEndpoint` resources in this Amazon Web Services
@@ -5087,6 +5483,83 @@ parent.start_crawler_schedule(**kwargs)
 
 1. See [:material-code-braces: StartCrawlerScheduleRequestRequestTypeDef](./type_defs.md#startcrawlerschedulerequestrequesttypedef) 
 
+### start\_data\_quality\_rule\_recommendation\_run
+
+Starts a recommendation run that is used to generate rules when you don't know
+what rules to write.
+
+Type annotations and code completion for `#!python boto3.client("glue").start_data_quality_rule_recommendation_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_data_quality_rule_recommendation_run)
+
+```python title="Method definition"
+def start_data_quality_rule_recommendation_run(
+    self,
+    *,
+    DataSource: DataSourceTypeDef,  # (1)
+    Role: str,
+    NumberOfWorkers: int = ...,
+    Timeout: int = ...,
+    CreatedRulesetName: str = ...,
+    ClientToken: str = ...,
+) -> StartDataQualityRuleRecommendationRunResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: StartDataQualityRuleRecommendationRunResponseTypeDef](./type_defs.md#startdataqualityrulerecommendationrunresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartDataQualityRuleRecommendationRunRequestRequestTypeDef = {  # (1)
+    "DataSource": ...,
+    "Role": ...,
+}
+
+parent.start_data_quality_rule_recommendation_run(**kwargs)
+```
+
+1. See [:material-code-braces: StartDataQualityRuleRecommendationRunRequestRequestTypeDef](./type_defs.md#startdataqualityrulerecommendationrunrequestrequesttypedef) 
+
+### start\_data\_quality\_ruleset\_evaluation\_run
+
+Once you have a ruleset definition (either recommended or your own), you call
+this operation to evaluate the ruleset against a data source (Glue table).
+
+Type annotations and code completion for `#!python boto3.client("glue").start_data_quality_ruleset_evaluation_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_data_quality_ruleset_evaluation_run)
+
+```python title="Method definition"
+def start_data_quality_ruleset_evaluation_run(
+    self,
+    *,
+    DataSource: DataSourceTypeDef,  # (1)
+    Role: str,
+    RulesetNames: Sequence[str],
+    NumberOfWorkers: int = ...,
+    Timeout: int = ...,
+    ClientToken: str = ...,
+    AdditionalRunOptions: DataQualityEvaluationRunAdditionalRunOptionsTypeDef = ...,  # (2)
+) -> StartDataQualityRulesetEvaluationRunResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: DataQualityEvaluationRunAdditionalRunOptionsTypeDef](./type_defs.md#dataqualityevaluationrunadditionalrunoptionstypedef) 
+3. See [:material-code-braces: StartDataQualityRulesetEvaluationRunResponseTypeDef](./type_defs.md#startdataqualityrulesetevaluationrunresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartDataQualityRulesetEvaluationRunRequestRequestTypeDef = {  # (1)
+    "DataSource": ...,
+    "Role": ...,
+    "RulesetNames": ...,
+}
+
+parent.start_data_quality_ruleset_evaluation_run(**kwargs)
+```
+
+1. See [:material-code-braces: StartDataQualityRulesetEvaluationRunRequestRequestTypeDef](./type_defs.md#startdataqualityrulesetevaluationrunrequestrequesttypedef) 
+
 ### start\_export\_labels\_task\_run
 
 Begins an asynchronous task to export all labeled data for a particular
@@ -5766,6 +6239,38 @@ parent.update_crawler_schedule(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateCrawlerScheduleRequestRequestTypeDef](./type_defs.md#updatecrawlerschedulerequestrequesttypedef) 
+
+### update\_data\_quality\_ruleset
+
+Updates the specified data quality ruleset.
+
+Type annotations and code completion for `#!python boto3.client("glue").update_data_quality_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_data_quality_ruleset)
+
+```python title="Method definition"
+def update_data_quality_ruleset(
+    self,
+    *,
+    Name: str,
+    UpdatedName: str = ...,
+    Description: str = ...,
+    Ruleset: str = ...,
+) -> UpdateDataQualityRulesetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateDataQualityRulesetResponseTypeDef](./type_defs.md#updatedataqualityrulesetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateDataQualityRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.update_data_quality_ruleset(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateDataQualityRulesetRequestRequestTypeDef](./type_defs.md#updatedataqualityrulesetrequestrequesttypedef) 
 
 ### update\_database
 

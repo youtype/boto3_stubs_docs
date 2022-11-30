@@ -1327,6 +1327,92 @@ FrameworkType = Literal[
     "XGBOOST",
 ]
 ```
+## HubContentSortByType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import HubContentSortByType
+
+def get_value() -> HubContentSortByType:
+    return "CreationTime"
+```
+
+```python title="Definition"
+HubContentSortByType = Literal[
+    "CreationTime",
+    "HubContentName",
+    "HubContentStatus",
+]
+```
+## HubContentStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import HubContentStatusType
+
+def get_value() -> HubContentStatusType:
+    return "Available"
+```
+
+```python title="Definition"
+HubContentStatusType = Literal[
+    "Available",
+    "DeleteFailed",
+    "Deleting",
+    "ImportFailed",
+    "Importing",
+]
+```
+## HubContentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import HubContentTypeType
+
+def get_value() -> HubContentTypeType:
+    return "Model"
+```
+
+```python title="Definition"
+HubContentTypeType = Literal[
+    "Model",
+    "Notebook",
+]
+```
+## HubSortByType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import HubSortByType
+
+def get_value() -> HubSortByType:
+    return "AccountIdOwner"
+```
+
+```python title="Definition"
+HubSortByType = Literal[
+    "AccountIdOwner",
+    "CreationTime",
+    "HubName",
+    "HubStatus",
+]
+```
+## HubStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import HubStatusType
+
+def get_value() -> HubStatusType:
+    return "CreateFailed"
+```
+
+```python title="Definition"
+HubStatusType = Literal[
+    "CreateFailed",
+    "Creating",
+    "DeleteFailed",
+    "Deleting",
+    "InService",
+    "UpdateFailed",
+    "Updating",
+]
+```
 ## HumanTaskUiStatusType
 
 ```python title="Usage Example"
@@ -1637,6 +1723,56 @@ def get_value() -> InferenceExecutionModeType:
 InferenceExecutionModeType = Literal[
     "Direct",
     "Serial",
+]
+```
+## InferenceExperimentStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import InferenceExperimentStatusType
+
+def get_value() -> InferenceExperimentStatusType:
+    return "Cancelled"
+```
+
+```python title="Definition"
+InferenceExperimentStatusType = Literal[
+    "Cancelled",
+    "Completed",
+    "Created",
+    "Creating",
+    "Running",
+    "Starting",
+    "Stopping",
+    "Updating",
+]
+```
+## InferenceExperimentStopDesiredStateType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import InferenceExperimentStopDesiredStateType
+
+def get_value() -> InferenceExperimentStopDesiredStateType:
+    return "Cancelled"
+```
+
+```python title="Definition"
+InferenceExperimentStopDesiredStateType = Literal[
+    "Cancelled",
+    "Completed",
+]
+```
+## InferenceExperimentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import InferenceExperimentTypeType
+
+def get_value() -> InferenceExperimentTypeType:
+    return "ShadowMode"
+```
+
+```python title="Definition"
+InferenceExperimentTypeType = Literal[
+    "ShadowMode",
 ]
 ```
 ## InputModeType
@@ -2234,6 +2370,20 @@ ListImagesPaginatorName = Literal[
     "list_images",
 ]
 ```
+## ListInferenceExperimentsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListInferenceExperimentsPaginatorName
+
+def get_value() -> ListInferenceExperimentsPaginatorName:
+    return "list_inference_experiments"
+```
+
+```python title="Definition"
+ListInferenceExperimentsPaginatorName = Literal[
+    "list_inference_experiments",
+]
+```
 ## ListInferenceRecommendationsJobStepsPaginatorName
 
 ```python title="Usage Example"
@@ -2348,6 +2498,48 @@ ListModelBiasJobDefinitionsPaginatorName = Literal[
     "list_model_bias_job_definitions",
 ]
 ```
+## ListModelCardExportJobsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListModelCardExportJobsPaginatorName
+
+def get_value() -> ListModelCardExportJobsPaginatorName:
+    return "list_model_card_export_jobs"
+```
+
+```python title="Definition"
+ListModelCardExportJobsPaginatorName = Literal[
+    "list_model_card_export_jobs",
+]
+```
+## ListModelCardVersionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListModelCardVersionsPaginatorName
+
+def get_value() -> ListModelCardVersionsPaginatorName:
+    return "list_model_card_versions"
+```
+
+```python title="Definition"
+ListModelCardVersionsPaginatorName = Literal[
+    "list_model_card_versions",
+]
+```
+## ListModelCardsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListModelCardsPaginatorName
+
+def get_value() -> ListModelCardsPaginatorName:
+    return "list_model_cards"
+```
+
+```python title="Definition"
+ListModelCardsPaginatorName = Literal[
+    "list_model_cards",
+]
+```
 ## ListModelExplainabilityJobDefinitionsPaginatorName
 
 ```python title="Usage Example"
@@ -2430,6 +2622,34 @@ def get_value() -> ListModelsPaginatorName:
 ```python title="Definition"
 ListModelsPaginatorName = Literal[
     "list_models",
+]
+```
+## ListMonitoringAlertHistoryPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListMonitoringAlertHistoryPaginatorName
+
+def get_value() -> ListMonitoringAlertHistoryPaginatorName:
+    return "list_monitoring_alert_history"
+```
+
+```python title="Definition"
+ListMonitoringAlertHistoryPaginatorName = Literal[
+    "list_monitoring_alert_history",
+]
+```
+## ListMonitoringAlertsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListMonitoringAlertsPaginatorName
+
+def get_value() -> ListMonitoringAlertsPaginatorName:
+    return "list_monitoring_alerts"
+```
+
+```python title="Definition"
+ListMonitoringAlertsPaginatorName = Literal[
+    "list_monitoring_alerts",
 ]
 ```
 ## ListMonitoringExecutionsPaginatorName
@@ -2556,6 +2776,20 @@ def get_value() -> ListProcessingJobsPaginatorName:
 ```python title="Definition"
 ListProcessingJobsPaginatorName = Literal[
     "list_processing_jobs",
+]
+```
+## ListSpacesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListSpacesPaginatorName
+
+def get_value() -> ListSpacesPaginatorName:
+    return "list_spaces"
+```
+
+```python title="Definition"
+ListSpacesPaginatorName = Literal[
+    "list_spaces",
 ]
 ```
 ## ListStageDevicesPaginatorName
@@ -2803,6 +3037,147 @@ ModelCacheSettingType = Literal[
     "Enabled",
 ]
 ```
+## ModelCardExportJobSortByType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardExportJobSortByType
+
+def get_value() -> ModelCardExportJobSortByType:
+    return "CreationTime"
+```
+
+```python title="Definition"
+ModelCardExportJobSortByType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
+## ModelCardExportJobSortOrderType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardExportJobSortOrderType
+
+def get_value() -> ModelCardExportJobSortOrderType:
+    return "Ascending"
+```
+
+```python title="Definition"
+ModelCardExportJobSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
+## ModelCardExportJobStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardExportJobStatusType
+
+def get_value() -> ModelCardExportJobStatusType:
+    return "Completed"
+```
+
+```python title="Definition"
+ModelCardExportJobStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+]
+```
+## ModelCardProcessingStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardProcessingStatusType
+
+def get_value() -> ModelCardProcessingStatusType:
+    return "ContentDeleted"
+```
+
+```python title="Definition"
+ModelCardProcessingStatusType = Literal[
+    "ContentDeleted",
+    "DeleteCompleted",
+    "DeleteFailed",
+    "DeleteInProgress",
+    "DeletePending",
+    "ExportJobsDeleted",
+]
+```
+## ModelCardSortByType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardSortByType
+
+def get_value() -> ModelCardSortByType:
+    return "CreationTime"
+```
+
+```python title="Definition"
+ModelCardSortByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
+## ModelCardSortOrderType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardSortOrderType
+
+def get_value() -> ModelCardSortOrderType:
+    return "Ascending"
+```
+
+```python title="Definition"
+ModelCardSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
+## ModelCardStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardStatusType
+
+def get_value() -> ModelCardStatusType:
+    return "Approved"
+```
+
+```python title="Definition"
+ModelCardStatusType = Literal[
+    "Approved",
+    "Archived",
+    "Draft",
+    "PendingReview",
+]
+```
+## ModelCardVersionSortByType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelCardVersionSortByType
+
+def get_value() -> ModelCardVersionSortByType:
+    return "Version"
+```
+
+```python title="Definition"
+ModelCardVersionSortByType = Literal[
+    "Version",
+]
+```
+## ModelInfrastructureTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelInfrastructureTypeType
+
+def get_value() -> ModelInfrastructureTypeType:
+    return "RealTimeInference"
+```
+
+```python title="Definition"
+ModelInfrastructureTypeType = Literal[
+    "RealTimeInference",
+]
+```
 ## ModelMetadataFilterTypeType
 
 ```python title="Usage Example"
@@ -2916,6 +3291,70 @@ def get_value() -> ModelSortKeyType:
 ModelSortKeyType = Literal[
     "CreationTime",
     "Name",
+]
+```
+## ModelVariantActionType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelVariantActionType
+
+def get_value() -> ModelVariantActionType:
+    return "Promote"
+```
+
+```python title="Definition"
+ModelVariantActionType = Literal[
+    "Promote",
+    "Remove",
+    "Retain",
+]
+```
+## ModelVariantStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ModelVariantStatusType
+
+def get_value() -> ModelVariantStatusType:
+    return "Creating"
+```
+
+```python title="Definition"
+ModelVariantStatusType = Literal[
+    "Creating",
+    "Deleted",
+    "Deleting",
+    "InService",
+    "Updating",
+]
+```
+## MonitoringAlertHistorySortKeyType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import MonitoringAlertHistorySortKeyType
+
+def get_value() -> MonitoringAlertHistorySortKeyType:
+    return "CreationTime"
+```
+
+```python title="Definition"
+MonitoringAlertHistorySortKeyType = Literal[
+    "CreationTime",
+    "Status",
+]
+```
+## MonitoringAlertStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import MonitoringAlertStatusType
+
+def get_value() -> MonitoringAlertStatusType:
+    return "InAlert"
+```
+
+```python title="Definition"
+MonitoringAlertStatusType = Literal[
+    "InAlert",
+    "OK",
 ]
 ```
 ## MonitoringExecutionSortKeyType
@@ -3854,6 +4293,8 @@ ResourceTypeType = Literal[
     "FeatureGroup",
     "FeatureMetadata",
     "HyperParameterTuningJob",
+    "Model",
+    "ModelCard",
     "ModelPackage",
     "ModelPackageGroup",
     "Pipeline",
@@ -4125,6 +4566,22 @@ SortExperimentsByType = Literal[
     "Name",
 ]
 ```
+## SortInferenceExperimentsByType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import SortInferenceExperimentsByType
+
+def get_value() -> SortInferenceExperimentsByType:
+    return "CreationTime"
+```
+
+```python title="Definition"
+SortInferenceExperimentsByType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## SortLineageGroupsByType
 
 ```python title="Usage Example"
@@ -4215,6 +4672,41 @@ SortTrialsByType = Literal[
     "Name",
 ]
 ```
+## SpaceSortKeyType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import SpaceSortKeyType
+
+def get_value() -> SpaceSortKeyType:
+    return "CreationTime"
+```
+
+```python title="Definition"
+SpaceSortKeyType = Literal[
+    "CreationTime",
+    "LastModifiedTime",
+]
+```
+## SpaceStatusType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import SpaceStatusType
+
+def get_value() -> SpaceStatusType:
+    return "Delete_Failed"
+```
+
+```python title="Definition"
+SpaceStatusType = Literal[
+    "Delete_Failed",
+    "Deleting",
+    "Failed",
+    "InService",
+    "Pending",
+    "Update_Failed",
+    "Updating",
+]
+```
 ## SplitTypeType
 
 ```python title="Usage Example"
@@ -4301,6 +4793,21 @@ StudioLifecycleConfigSortKeyType = Literal[
     "CreationTime",
     "LastModifiedTime",
     "Name",
+]
+```
+## TableFormatType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import TableFormatType
+
+def get_value() -> TableFormatType:
+    return "Glue"
+```
+
+```python title="Definition"
+TableFormatType = Literal[
+    "Glue",
+    "Iceberg",
 ]
 ```
 ## TargetDeviceType
@@ -4885,6 +5392,7 @@ ServiceName = Literal[
     "dlm",
     "dms",
     "docdb",
+    "docdb-elastic",
     "drs",
     "ds",
     "dynamodb",
@@ -5066,6 +5574,7 @@ ServiceName = Literal[
     "sagemaker-a2i-runtime",
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
+    "sagemaker-geospatial",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",
@@ -5185,18 +5694,24 @@ PaginatorName = Literal[
     "list_hyper_parameter_tuning_jobs",
     "list_image_versions",
     "list_images",
+    "list_inference_experiments",
     "list_inference_recommendations_job_steps",
     "list_inference_recommendations_jobs",
     "list_labeling_jobs",
     "list_labeling_jobs_for_workteam",
     "list_lineage_groups",
     "list_model_bias_job_definitions",
+    "list_model_card_export_jobs",
+    "list_model_card_versions",
+    "list_model_cards",
     "list_model_explainability_job_definitions",
     "list_model_metadata",
     "list_model_package_groups",
     "list_model_packages",
     "list_model_quality_job_definitions",
     "list_models",
+    "list_monitoring_alert_history",
+    "list_monitoring_alerts",
     "list_monitoring_executions",
     "list_monitoring_schedules",
     "list_notebook_instance_lifecycle_configs",
@@ -5206,6 +5721,7 @@ PaginatorName = Literal[
     "list_pipeline_parameters_for_execution",
     "list_pipelines",
     "list_processing_jobs",
+    "list_spaces",
     "list_stage_devices",
     "list_studio_lifecycle_configs",
     "list_subscribed_workteams",

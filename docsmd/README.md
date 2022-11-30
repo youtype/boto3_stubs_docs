@@ -251,6 +251,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-docdb](./mypy_boto3_docdb/README.md) for [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB) service
 
+- [mypy-boto3-docdb-elastic](./mypy_boto3_docdb_elastic/README.md) for [DocDBElastic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb-elastic.html#DocDBElastic) service
+
 - [mypy-boto3-drs](./mypy_boto3_drs/README.md) for [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs) service
 
 - [mypy-boto3-ds](./mypy_boto3_ds/README.md) for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService) service
@@ -612,6 +614,8 @@ python -m pip uninstall -y boto3-stubs
 - [mypy-boto3-sagemaker-edge](./mypy_boto3_sagemaker_edge/README.md) for [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager) service
 
 - [mypy-boto3-sagemaker-featurestore-runtime](./mypy_boto3_sagemaker_featurestore_runtime/README.md) for [SageMakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime) service
+
+- [mypy-boto3-sagemaker-geospatial](./mypy_boto3_sagemaker_geospatial/README.md) for [SageMakergeospatialcapabilities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-geospatial.html#SageMakergeospatialcapabilities) service
 
 - [mypy-boto3-sagemaker-runtime](./mypy_boto3_sagemaker_runtime/README.md) for [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime) service
 

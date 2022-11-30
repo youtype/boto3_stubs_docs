@@ -7,6 +7,27 @@
     Auto-generated documentation for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
     type annotations stubs module [mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
+## CalculationExecutionStateType
+
+```python title="Usage Example"
+from mypy_boto3_athena.literals import CalculationExecutionStateType
+
+def get_value() -> CalculationExecutionStateType:
+    return "CANCELED"
+```
+
+```python title="Definition"
+CalculationExecutionStateType = Literal[
+    "CANCELED",
+    "CANCELING",
+    "COMPLETED",
+    "CREATED",
+    "CREATING",
+    "FAILED",
+    "QUEUED",
+    "RUNNING",
+]
+```
 ## ColumnNullableType
 
 ```python title="Usage Example"
@@ -53,6 +74,41 @@ EncryptionOptionType = Literal[
     "CSE_KMS",
     "SSE_KMS",
     "SSE_S3",
+]
+```
+## ExecutorStateType
+
+```python title="Usage Example"
+from mypy_boto3_athena.literals import ExecutorStateType
+
+def get_value() -> ExecutorStateType:
+    return "CREATED"
+```
+
+```python title="Definition"
+ExecutorStateType = Literal[
+    "CREATED",
+    "CREATING",
+    "FAILED",
+    "REGISTERED",
+    "TERMINATED",
+    "TERMINATING",
+]
+```
+## ExecutorTypeType
+
+```python title="Usage Example"
+from mypy_boto3_athena.literals import ExecutorTypeType
+
+def get_value() -> ExecutorTypeType:
+    return "COORDINATOR"
+```
+
+```python title="Definition"
+ExecutorTypeType = Literal[
+    "COORDINATOR",
+    "GATEWAY",
+    "WORKER",
 ]
 ```
 ## GetQueryResultsPaginatorName
@@ -153,6 +209,20 @@ ListTagsForResourcePaginatorName = Literal[
     "list_tags_for_resource",
 ]
 ```
+## NotebookTypeType
+
+```python title="Usage Example"
+from mypy_boto3_athena.literals import NotebookTypeType
+
+def get_value() -> NotebookTypeType:
+    return "IPYNB"
+```
+
+```python title="Definition"
+NotebookTypeType = Literal[
+    "IPYNB",
+]
+```
 ## QueryExecutionStateType
 
 ```python title="Usage Example"
@@ -183,6 +253,27 @@ def get_value() -> S3AclOptionType:
 ```python title="Definition"
 S3AclOptionType = Literal[
     "BUCKET_OWNER_FULL_CONTROL",
+]
+```
+## SessionStateType
+
+```python title="Usage Example"
+from mypy_boto3_athena.literals import SessionStateType
+
+def get_value() -> SessionStateType:
+    return "BUSY"
+```
+
+```python title="Definition"
+SessionStateType = Literal[
+    "BUSY",
+    "CREATED",
+    "CREATING",
+    "DEGRADED",
+    "FAILED",
+    "IDLE",
+    "TERMINATED",
+    "TERMINATING",
 ]
 ```
 ## StatementTypeType
@@ -332,6 +423,7 @@ ServiceName = Literal[
     "dlm",
     "dms",
     "docdb",
+    "docdb-elastic",
     "drs",
     "ds",
     "dynamodb",
@@ -513,6 +605,7 @@ ServiceName = Literal[
     "sagemaker-a2i-runtime",
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
+    "sagemaker-geospatial",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",

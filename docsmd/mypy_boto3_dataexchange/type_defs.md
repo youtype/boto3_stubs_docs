@@ -67,6 +67,26 @@ class RedshiftDataShareAssetTypeDef(TypedDict):
     Arn: str,
 ```
 
+## S3DataAccessAssetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import S3DataAccessAssetTypeDef
+
+def get_value() -> S3DataAccessAssetTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class S3DataAccessAssetTypeDef(TypedDict):
+    Bucket: str,
+    KeyPrefixes: NotRequired[List[str]],
+    Keys: NotRequired[List[str]],
+    S3AccessPointAlias: NotRequired[str],
+    S3AccessPointArn: NotRequired[str],
+```
+
 ## S3SnapshotAssetTypeDef
 
 ```python title="Usage Example"
@@ -230,6 +250,42 @@ class CreateRevisionRequestRequestTypeDef(TypedDict):
     DataSetId: str,
     Comment: NotRequired[str],
     Tags: NotRequired[Mapping[str, str]],
+```
+
+## S3DataAccessAssetSourceEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import S3DataAccessAssetSourceEntryTypeDef
+
+def get_value() -> S3DataAccessAssetSourceEntryTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class S3DataAccessAssetSourceEntryTypeDef(TypedDict):
+    Bucket: str,
+    KeyPrefixes: NotRequired[Sequence[str]],
+    Keys: NotRequired[Sequence[str]],
+```
+
+## LFTagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import LFTagTypeDef
+
+def get_value() -> LFTagTypeDef:
+    return {
+        "TagKey": ...,
+        "TagValues": ...,
+    }
+```
+
+```python title="Definition"
+class LFTagTypeDef(TypedDict):
+    TagKey: str,
+    TagValues: Sequence[str],
 ```
 
 ## DeleteAssetRequestRequestTypeDef
@@ -922,27 +978,6 @@ class UpdateRevisionRequestRequestTypeDef(TypedDict):
     Finalized: NotRequired[bool],
 ```
 
-## AssetDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import AssetDetailsTypeDef
-
-def get_value() -> AssetDetailsTypeDef:
-    return {
-        "S3SnapshotAsset": ...,
-    }
-```
-
-```python title="Definition"
-class AssetDetailsTypeDef(TypedDict):
-    S3SnapshotAsset: NotRequired[S3SnapshotAssetTypeDef],  # (1)
-    RedshiftDataShareAsset: NotRequired[RedshiftDataShareAssetTypeDef],  # (2)
-    ApiGatewayApiAsset: NotRequired[ApiGatewayApiAssetTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: S3SnapshotAssetTypeDef](./type_defs.md#s3snapshotassettypedef) 
-2. See [:material-code-braces: RedshiftDataShareAssetTypeDef](./type_defs.md#redshiftdatashareassettypedef) 
-3. See [:material-code-braces: ApiGatewayApiAssetTypeDef](./type_defs.md#apigatewayapiassettypedef) 
 ## ImportAssetsFromS3RequestDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1426,6 +1461,122 @@ class UpdateRevisionResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateS3DataAccessFromS3BucketRequestDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import CreateS3DataAccessFromS3BucketRequestDetailsTypeDef
+
+def get_value() -> CreateS3DataAccessFromS3BucketRequestDetailsTypeDef:
+    return {
+        "AssetSource": ...,
+        "DataSetId": ...,
+        "RevisionId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateS3DataAccessFromS3BucketRequestDetailsTypeDef(TypedDict):
+    AssetSource: S3DataAccessAssetSourceEntryTypeDef,  # (1)
+    DataSetId: str,
+    RevisionId: str,
+```
+
+1. See [:material-code-braces: S3DataAccessAssetSourceEntryTypeDef](./type_defs.md#s3dataaccessassetsourceentrytypedef) 
+## CreateS3DataAccessFromS3BucketResponseDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import CreateS3DataAccessFromS3BucketResponseDetailsTypeDef
+
+def get_value() -> CreateS3DataAccessFromS3BucketResponseDetailsTypeDef:
+    return {
+        "AssetSource": ...,
+        "DataSetId": ...,
+        "RevisionId": ...,
+    }
+```
+
+```python title="Definition"
+class CreateS3DataAccessFromS3BucketResponseDetailsTypeDef(TypedDict):
+    AssetSource: S3DataAccessAssetSourceEntryTypeDef,  # (1)
+    DataSetId: str,
+    RevisionId: str,
+```
+
+1. See [:material-code-braces: S3DataAccessAssetSourceEntryTypeDef](./type_defs.md#s3dataaccessassetsourceentrytypedef) 
+## DatabaseLFTagPolicyAndPermissionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import DatabaseLFTagPolicyAndPermissionsTypeDef
+
+def get_value() -> DatabaseLFTagPolicyAndPermissionsTypeDef:
+    return {
+        "Expression": ...,
+        "Permissions": ...,
+    }
+```
+
+```python title="Definition"
+class DatabaseLFTagPolicyAndPermissionsTypeDef(TypedDict):
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    Permissions: Sequence[DatabaseLFTagPolicyPermissionType],  # (2)
+```
+
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+2. See [:material-code-brackets: DatabaseLFTagPolicyPermissionType](./literals.md#databaselftagpolicypermissiontype) 
+## DatabaseLFTagPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import DatabaseLFTagPolicyTypeDef
+
+def get_value() -> DatabaseLFTagPolicyTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
+
+```python title="Definition"
+class DatabaseLFTagPolicyTypeDef(TypedDict):
+    Expression: List[LFTagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+## TableLFTagPolicyAndPermissionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import TableLFTagPolicyAndPermissionsTypeDef
+
+def get_value() -> TableLFTagPolicyAndPermissionsTypeDef:
+    return {
+        "Expression": ...,
+        "Permissions": ...,
+    }
+```
+
+```python title="Definition"
+class TableLFTagPolicyAndPermissionsTypeDef(TypedDict):
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    Permissions: Sequence[TableTagPolicyLFPermissionType],  # (2)
+```
+
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+2. See [:material-code-brackets: TableTagPolicyLFPermissionType](./literals.md#tabletagpolicylfpermissiontype) 
+## TableLFTagPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import TableLFTagPolicyTypeDef
+
+def get_value() -> TableLFTagPolicyTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
+
+```python title="Definition"
+class TableLFTagPolicyTypeDef(TypedDict):
+    Expression: List[LFTagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
 ## DetailsTypeDef
 
 ```python title="Usage Example"
@@ -1662,119 +1813,6 @@ class ListDataSetRevisionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: RevisionEntryTypeDef](./type_defs.md#revisionentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AssetEntryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import AssetEntryTypeDef
-
-def get_value() -> AssetEntryTypeDef:
-    return {
-        "Arn": ...,
-        "AssetDetails": ...,
-        "AssetType": ...,
-        "CreatedAt": ...,
-        "DataSetId": ...,
-        "Id": ...,
-        "Name": ...,
-        "RevisionId": ...,
-        "UpdatedAt": ...,
-    }
-```
-
-```python title="Definition"
-class AssetEntryTypeDef(TypedDict):
-    Arn: str,
-    AssetDetails: AssetDetailsTypeDef,  # (1)
-    AssetType: AssetTypeType,  # (2)
-    CreatedAt: datetime,
-    DataSetId: str,
-    Id: str,
-    Name: str,
-    RevisionId: str,
-    UpdatedAt: datetime,
-    SourceId: NotRequired[str],
-```
-
-1. See [:material-code-braces: AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef) 
-2. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
-## GetAssetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import GetAssetResponseTypeDef
-
-def get_value() -> GetAssetResponseTypeDef:
-    return {
-        "Arn": ...,
-        "AssetDetails": ...,
-        "AssetType": ...,
-        "CreatedAt": ...,
-        "DataSetId": ...,
-        "Id": ...,
-        "Name": ...,
-        "RevisionId": ...,
-        "SourceId": ...,
-        "UpdatedAt": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetAssetResponseTypeDef(TypedDict):
-    Arn: str,
-    AssetDetails: AssetDetailsTypeDef,  # (1)
-    AssetType: AssetTypeType,  # (2)
-    CreatedAt: datetime,
-    DataSetId: str,
-    Id: str,
-    Name: str,
-    RevisionId: str,
-    SourceId: str,
-    UpdatedAt: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef) 
-2. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateAssetResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import UpdateAssetResponseTypeDef
-
-def get_value() -> UpdateAssetResponseTypeDef:
-    return {
-        "Arn": ...,
-        "AssetDetails": ...,
-        "AssetType": ...,
-        "CreatedAt": ...,
-        "DataSetId": ...,
-        "Id": ...,
-        "Name": ...,
-        "RevisionId": ...,
-        "SourceId": ...,
-        "UpdatedAt": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateAssetResponseTypeDef(TypedDict):
-    Arn: str,
-    AssetDetails: AssetDetailsTypeDef,  # (1)
-    AssetType: AssetTypeType,  # (2)
-    CreatedAt: datetime,
-    DataSetId: str,
-    Id: str,
-    Name: str,
-    RevisionId: str,
-    SourceId: str,
-    UpdatedAt: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef) 
-2. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ActionTypeDef
 
 ```python title="Usage Example"
@@ -1814,6 +1852,77 @@ class ListDataSetsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataSetEntryTypeDef](./type_defs.md#datasetentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportAssetsFromLakeFormationTagPolicyRequestDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import ImportAssetsFromLakeFormationTagPolicyRequestDetailsTypeDef
+
+def get_value() -> ImportAssetsFromLakeFormationTagPolicyRequestDetailsTypeDef:
+    return {
+        "CatalogId": ...,
+        "RoleArn": ...,
+        "DataSetId": ...,
+        "RevisionId": ...,
+    }
+```
+
+```python title="Definition"
+class ImportAssetsFromLakeFormationTagPolicyRequestDetailsTypeDef(TypedDict):
+    CatalogId: str,
+    RoleArn: str,
+    DataSetId: str,
+    RevisionId: str,
+    Database: NotRequired[DatabaseLFTagPolicyAndPermissionsTypeDef],  # (1)
+    Table: NotRequired[TableLFTagPolicyAndPermissionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DatabaseLFTagPolicyAndPermissionsTypeDef](./type_defs.md#databaselftagpolicyandpermissionstypedef) 
+2. See [:material-code-braces: TableLFTagPolicyAndPermissionsTypeDef](./type_defs.md#tablelftagpolicyandpermissionstypedef) 
+## ImportAssetsFromLakeFormationTagPolicyResponseDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import ImportAssetsFromLakeFormationTagPolicyResponseDetailsTypeDef
+
+def get_value() -> ImportAssetsFromLakeFormationTagPolicyResponseDetailsTypeDef:
+    return {
+        "CatalogId": ...,
+        "RoleArn": ...,
+        "DataSetId": ...,
+        "RevisionId": ...,
+    }
+```
+
+```python title="Definition"
+class ImportAssetsFromLakeFormationTagPolicyResponseDetailsTypeDef(TypedDict):
+    CatalogId: str,
+    RoleArn: str,
+    DataSetId: str,
+    RevisionId: str,
+    Database: NotRequired[DatabaseLFTagPolicyAndPermissionsTypeDef],  # (1)
+    Table: NotRequired[TableLFTagPolicyAndPermissionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DatabaseLFTagPolicyAndPermissionsTypeDef](./type_defs.md#databaselftagpolicyandpermissionstypedef) 
+2. See [:material-code-braces: TableLFTagPolicyAndPermissionsTypeDef](./type_defs.md#tablelftagpolicyandpermissionstypedef) 
+## LFResourceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import LFResourceDetailsTypeDef
+
+def get_value() -> LFResourceDetailsTypeDef:
+    return {
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class LFResourceDetailsTypeDef(TypedDict):
+    Database: NotRequired[DatabaseLFTagPolicyTypeDef],  # (1)
+    Table: NotRequired[TableLFTagPolicyTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DatabaseLFTagPolicyTypeDef](./type_defs.md#databaselftagpolicytypedef) 
+2. See [:material-code-braces: TableLFTagPolicyTypeDef](./type_defs.md#tablelftagpolicytypedef) 
 ## JobErrorTypeDef
 
 ```python title="Usage Example"
@@ -1841,86 +1950,6 @@ class JobErrorTypeDef(TypedDict):
 2. See [:material-code-braces: DetailsTypeDef](./type_defs.md#detailstypedef) 
 3. See [:material-code-brackets: JobErrorLimitNameType](./literals.md#joberrorlimitnametype) 
 4. See [:material-code-brackets: JobErrorResourceTypesType](./literals.md#joberrorresourcetypestype) 
-## RequestDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import RequestDetailsTypeDef
-
-def get_value() -> RequestDetailsTypeDef:
-    return {
-        "ExportAssetToSignedUrl": ...,
-    }
-```
-
-```python title="Definition"
-class RequestDetailsTypeDef(TypedDict):
-    ExportAssetToSignedUrl: NotRequired[ExportAssetToSignedUrlRequestDetailsTypeDef],  # (1)
-    ExportAssetsToS3: NotRequired[ExportAssetsToS3RequestDetailsTypeDef],  # (2)
-    ExportRevisionsToS3: NotRequired[ExportRevisionsToS3RequestDetailsTypeDef],  # (3)
-    ImportAssetFromSignedUrl: NotRequired[ImportAssetFromSignedUrlRequestDetailsTypeDef],  # (4)
-    ImportAssetsFromS3: NotRequired[ImportAssetsFromS3RequestDetailsTypeDef],  # (5)
-    ImportAssetsFromRedshiftDataShares: NotRequired[ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef],  # (6)
-    ImportAssetFromApiGatewayApi: NotRequired[ImportAssetFromApiGatewayApiRequestDetailsTypeDef],  # (7)
-```
-
-1. See [:material-code-braces: ExportAssetToSignedUrlRequestDetailsTypeDef](./type_defs.md#exportassettosignedurlrequestdetailstypedef) 
-2. See [:material-code-braces: ExportAssetsToS3RequestDetailsTypeDef](./type_defs.md#exportassetstos3requestdetailstypedef) 
-3. See [:material-code-braces: ExportRevisionsToS3RequestDetailsTypeDef](./type_defs.md#exportrevisionstos3requestdetailstypedef) 
-4. See [:material-code-braces: ImportAssetFromSignedUrlRequestDetailsTypeDef](./type_defs.md#importassetfromsignedurlrequestdetailstypedef) 
-5. See [:material-code-braces: ImportAssetsFromS3RequestDetailsTypeDef](./type_defs.md#importassetsfroms3requestdetailstypedef) 
-6. See [:material-code-braces: ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesrequestdetailstypedef) 
-7. See [:material-code-braces: ImportAssetFromApiGatewayApiRequestDetailsTypeDef](./type_defs.md#importassetfromapigatewayapirequestdetailstypedef) 
-## ResponseDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import ResponseDetailsTypeDef
-
-def get_value() -> ResponseDetailsTypeDef:
-    return {
-        "ExportAssetToSignedUrl": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseDetailsTypeDef(TypedDict):
-    ExportAssetToSignedUrl: NotRequired[ExportAssetToSignedUrlResponseDetailsTypeDef],  # (1)
-    ExportAssetsToS3: NotRequired[ExportAssetsToS3ResponseDetailsTypeDef],  # (2)
-    ExportRevisionsToS3: NotRequired[ExportRevisionsToS3ResponseDetailsTypeDef],  # (3)
-    ImportAssetFromSignedUrl: NotRequired[ImportAssetFromSignedUrlResponseDetailsTypeDef],  # (4)
-    ImportAssetsFromS3: NotRequired[ImportAssetsFromS3ResponseDetailsTypeDef],  # (5)
-    ImportAssetsFromRedshiftDataShares: NotRequired[ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef],  # (6)
-    ImportAssetFromApiGatewayApi: NotRequired[ImportAssetFromApiGatewayApiResponseDetailsTypeDef],  # (7)
-```
-
-1. See [:material-code-braces: ExportAssetToSignedUrlResponseDetailsTypeDef](./type_defs.md#exportassettosignedurlresponsedetailstypedef) 
-2. See [:material-code-braces: ExportAssetsToS3ResponseDetailsTypeDef](./type_defs.md#exportassetstos3responsedetailstypedef) 
-3. See [:material-code-braces: ExportRevisionsToS3ResponseDetailsTypeDef](./type_defs.md#exportrevisionstos3responsedetailstypedef) 
-4. See [:material-code-braces: ImportAssetFromSignedUrlResponseDetailsTypeDef](./type_defs.md#importassetfromsignedurlresponsedetailstypedef) 
-5. See [:material-code-braces: ImportAssetsFromS3ResponseDetailsTypeDef](./type_defs.md#importassetsfroms3responsedetailstypedef) 
-6. See [:material-code-braces: ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesresponsedetailstypedef) 
-7. See [:material-code-braces: ImportAssetFromApiGatewayApiResponseDetailsTypeDef](./type_defs.md#importassetfromapigatewayapiresponsedetailstypedef) 
-## ListRevisionAssetsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import ListRevisionAssetsResponseTypeDef
-
-def get_value() -> ListRevisionAssetsResponseTypeDef:
-    return {
-        "Assets": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListRevisionAssetsResponseTypeDef(TypedDict):
-    Assets: List[AssetEntryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: AssetEntryTypeDef](./type_defs.md#assetentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEventActionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2080,6 +2109,116 @@ class UpdateEventActionResponseTypeDef(TypedDict):
 1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 2. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RequestDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import RequestDetailsTypeDef
+
+def get_value() -> RequestDetailsTypeDef:
+    return {
+        "ExportAssetToSignedUrl": ...,
+    }
+```
+
+```python title="Definition"
+class RequestDetailsTypeDef(TypedDict):
+    ExportAssetToSignedUrl: NotRequired[ExportAssetToSignedUrlRequestDetailsTypeDef],  # (1)
+    ExportAssetsToS3: NotRequired[ExportAssetsToS3RequestDetailsTypeDef],  # (2)
+    ExportRevisionsToS3: NotRequired[ExportRevisionsToS3RequestDetailsTypeDef],  # (3)
+    ImportAssetFromSignedUrl: NotRequired[ImportAssetFromSignedUrlRequestDetailsTypeDef],  # (4)
+    ImportAssetsFromS3: NotRequired[ImportAssetsFromS3RequestDetailsTypeDef],  # (5)
+    ImportAssetsFromRedshiftDataShares: NotRequired[ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef],  # (6)
+    ImportAssetFromApiGatewayApi: NotRequired[ImportAssetFromApiGatewayApiRequestDetailsTypeDef],  # (7)
+    CreateS3DataAccessFromS3Bucket: NotRequired[CreateS3DataAccessFromS3BucketRequestDetailsTypeDef],  # (8)
+    ImportAssetsFromLakeFormationTagPolicy: NotRequired[ImportAssetsFromLakeFormationTagPolicyRequestDetailsTypeDef],  # (9)
+```
+
+1. See [:material-code-braces: ExportAssetToSignedUrlRequestDetailsTypeDef](./type_defs.md#exportassettosignedurlrequestdetailstypedef) 
+2. See [:material-code-braces: ExportAssetsToS3RequestDetailsTypeDef](./type_defs.md#exportassetstos3requestdetailstypedef) 
+3. See [:material-code-braces: ExportRevisionsToS3RequestDetailsTypeDef](./type_defs.md#exportrevisionstos3requestdetailstypedef) 
+4. See [:material-code-braces: ImportAssetFromSignedUrlRequestDetailsTypeDef](./type_defs.md#importassetfromsignedurlrequestdetailstypedef) 
+5. See [:material-code-braces: ImportAssetsFromS3RequestDetailsTypeDef](./type_defs.md#importassetsfroms3requestdetailstypedef) 
+6. See [:material-code-braces: ImportAssetsFromRedshiftDataSharesRequestDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesrequestdetailstypedef) 
+7. See [:material-code-braces: ImportAssetFromApiGatewayApiRequestDetailsTypeDef](./type_defs.md#importassetfromapigatewayapirequestdetailstypedef) 
+8. See [:material-code-braces: CreateS3DataAccessFromS3BucketRequestDetailsTypeDef](./type_defs.md#creates3dataaccessfroms3bucketrequestdetailstypedef) 
+9. See [:material-code-braces: ImportAssetsFromLakeFormationTagPolicyRequestDetailsTypeDef](./type_defs.md#importassetsfromlakeformationtagpolicyrequestdetailstypedef) 
+## ResponseDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import ResponseDetailsTypeDef
+
+def get_value() -> ResponseDetailsTypeDef:
+    return {
+        "ExportAssetToSignedUrl": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseDetailsTypeDef(TypedDict):
+    ExportAssetToSignedUrl: NotRequired[ExportAssetToSignedUrlResponseDetailsTypeDef],  # (1)
+    ExportAssetsToS3: NotRequired[ExportAssetsToS3ResponseDetailsTypeDef],  # (2)
+    ExportRevisionsToS3: NotRequired[ExportRevisionsToS3ResponseDetailsTypeDef],  # (3)
+    ImportAssetFromSignedUrl: NotRequired[ImportAssetFromSignedUrlResponseDetailsTypeDef],  # (4)
+    ImportAssetsFromS3: NotRequired[ImportAssetsFromS3ResponseDetailsTypeDef],  # (5)
+    ImportAssetsFromRedshiftDataShares: NotRequired[ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef],  # (6)
+    ImportAssetFromApiGatewayApi: NotRequired[ImportAssetFromApiGatewayApiResponseDetailsTypeDef],  # (7)
+    CreateS3DataAccessFromS3Bucket: NotRequired[CreateS3DataAccessFromS3BucketResponseDetailsTypeDef],  # (8)
+    ImportAssetsFromLakeFormationTagPolicy: NotRequired[ImportAssetsFromLakeFormationTagPolicyResponseDetailsTypeDef],  # (9)
+```
+
+1. See [:material-code-braces: ExportAssetToSignedUrlResponseDetailsTypeDef](./type_defs.md#exportassettosignedurlresponsedetailstypedef) 
+2. See [:material-code-braces: ExportAssetsToS3ResponseDetailsTypeDef](./type_defs.md#exportassetstos3responsedetailstypedef) 
+3. See [:material-code-braces: ExportRevisionsToS3ResponseDetailsTypeDef](./type_defs.md#exportrevisionstos3responsedetailstypedef) 
+4. See [:material-code-braces: ImportAssetFromSignedUrlResponseDetailsTypeDef](./type_defs.md#importassetfromsignedurlresponsedetailstypedef) 
+5. See [:material-code-braces: ImportAssetsFromS3ResponseDetailsTypeDef](./type_defs.md#importassetsfroms3responsedetailstypedef) 
+6. See [:material-code-braces: ImportAssetsFromRedshiftDataSharesResponseDetailsTypeDef](./type_defs.md#importassetsfromredshiftdatasharesresponsedetailstypedef) 
+7. See [:material-code-braces: ImportAssetFromApiGatewayApiResponseDetailsTypeDef](./type_defs.md#importassetfromapigatewayapiresponsedetailstypedef) 
+8. See [:material-code-braces: CreateS3DataAccessFromS3BucketResponseDetailsTypeDef](./type_defs.md#creates3dataaccessfroms3bucketresponsedetailstypedef) 
+9. See [:material-code-braces: ImportAssetsFromLakeFormationTagPolicyResponseDetailsTypeDef](./type_defs.md#importassetsfromlakeformationtagpolicyresponsedetailstypedef) 
+## LFTagPolicyDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import LFTagPolicyDetailsTypeDef
+
+def get_value() -> LFTagPolicyDetailsTypeDef:
+    return {
+        "CatalogId": ...,
+        "ResourceType": ...,
+        "ResourceDetails": ...,
+    }
+```
+
+```python title="Definition"
+class LFTagPolicyDetailsTypeDef(TypedDict):
+    CatalogId: str,
+    ResourceType: LFResourceTypeType,  # (1)
+    ResourceDetails: LFResourceDetailsTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: LFResourceTypeType](./literals.md#lfresourcetypetype) 
+2. See [:material-code-braces: LFResourceDetailsTypeDef](./type_defs.md#lfresourcedetailstypedef) 
+## ListEventActionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import ListEventActionsResponseTypeDef
+
+def get_value() -> ListEventActionsResponseTypeDef:
+    return {
+        "EventActions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListEventActionsResponseTypeDef(TypedDict):
+    EventActions: List[EventActionEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EventActionEntryTypeDef](./type_defs.md#eventactionentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2207,28 +2346,23 @@ class JobEntryTypeDef(TypedDict):
 2. See [:material-code-braces: JobErrorTypeDef](./type_defs.md#joberrortypedef) 
 3. See [:material-code-brackets: StateType](./literals.md#statetype) 
 4. See [:material-code-brackets: TypeType](./literals.md#typetype) 
-## ListEventActionsResponseTypeDef
+## LakeFormationDataPermissionDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_dataexchange.type_defs import ListEventActionsResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import LakeFormationDataPermissionDetailsTypeDef
 
-def get_value() -> ListEventActionsResponseTypeDef:
+def get_value() -> LakeFormationDataPermissionDetailsTypeDef:
     return {
-        "EventActions": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "LFTagPolicy": ...,
     }
 ```
 
 ```python title="Definition"
-class ListEventActionsResponseTypeDef(TypedDict):
-    EventActions: List[EventActionEntryTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class LakeFormationDataPermissionDetailsTypeDef(TypedDict):
+    LFTagPolicy: NotRequired[LFTagPolicyDetailsTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: EventActionEntryTypeDef](./type_defs.md#eventactionentrytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: LFTagPolicyDetailsTypeDef](./type_defs.md#lftagpolicydetailstypedef) 
 ## ListJobsResponseTypeDef
 
 ```python title="Usage Example"
@@ -2250,4 +2384,188 @@ class ListJobsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: JobEntryTypeDef](./type_defs.md#jobentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## LakeFormationDataPermissionAssetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import LakeFormationDataPermissionAssetTypeDef
+
+def get_value() -> LakeFormationDataPermissionAssetTypeDef:
+    return {
+        "LakeFormationDataPermissionDetails": ...,
+        "LakeFormationDataPermissionType": ...,
+        "Permissions": ...,
+    }
+```
+
+```python title="Definition"
+class LakeFormationDataPermissionAssetTypeDef(TypedDict):
+    LakeFormationDataPermissionDetails: LakeFormationDataPermissionDetailsTypeDef,  # (1)
+    LakeFormationDataPermissionType: LakeFormationDataPermissionTypeType,  # (2)
+    Permissions: List[LFPermissionType],  # (3)
+    RoleArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: LakeFormationDataPermissionDetailsTypeDef](./type_defs.md#lakeformationdatapermissiondetailstypedef) 
+2. See [:material-code-brackets: LakeFormationDataPermissionTypeType](./literals.md#lakeformationdatapermissiontypetype) 
+3. See [:material-code-brackets: LFPermissionType](./literals.md#lfpermissiontype) 
+## AssetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import AssetDetailsTypeDef
+
+def get_value() -> AssetDetailsTypeDef:
+    return {
+        "S3SnapshotAsset": ...,
+    }
+```
+
+```python title="Definition"
+class AssetDetailsTypeDef(TypedDict):
+    S3SnapshotAsset: NotRequired[S3SnapshotAssetTypeDef],  # (1)
+    RedshiftDataShareAsset: NotRequired[RedshiftDataShareAssetTypeDef],  # (2)
+    ApiGatewayApiAsset: NotRequired[ApiGatewayApiAssetTypeDef],  # (3)
+    S3DataAccessAsset: NotRequired[S3DataAccessAssetTypeDef],  # (4)
+    LakeFormationDataPermissionAsset: NotRequired[LakeFormationDataPermissionAssetTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: S3SnapshotAssetTypeDef](./type_defs.md#s3snapshotassettypedef) 
+2. See [:material-code-braces: RedshiftDataShareAssetTypeDef](./type_defs.md#redshiftdatashareassettypedef) 
+3. See [:material-code-braces: ApiGatewayApiAssetTypeDef](./type_defs.md#apigatewayapiassettypedef) 
+4. See [:material-code-braces: S3DataAccessAssetTypeDef](./type_defs.md#s3dataaccessassettypedef) 
+5. See [:material-code-braces: LakeFormationDataPermissionAssetTypeDef](./type_defs.md#lakeformationdatapermissionassettypedef) 
+## AssetEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import AssetEntryTypeDef
+
+def get_value() -> AssetEntryTypeDef:
+    return {
+        "Arn": ...,
+        "AssetDetails": ...,
+        "AssetType": ...,
+        "CreatedAt": ...,
+        "DataSetId": ...,
+        "Id": ...,
+        "Name": ...,
+        "RevisionId": ...,
+        "UpdatedAt": ...,
+    }
+```
+
+```python title="Definition"
+class AssetEntryTypeDef(TypedDict):
+    Arn: str,
+    AssetDetails: AssetDetailsTypeDef,  # (1)
+    AssetType: AssetTypeType,  # (2)
+    CreatedAt: datetime,
+    DataSetId: str,
+    Id: str,
+    Name: str,
+    RevisionId: str,
+    UpdatedAt: datetime,
+    SourceId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef) 
+2. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
+## GetAssetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import GetAssetResponseTypeDef
+
+def get_value() -> GetAssetResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AssetDetails": ...,
+        "AssetType": ...,
+        "CreatedAt": ...,
+        "DataSetId": ...,
+        "Id": ...,
+        "Name": ...,
+        "RevisionId": ...,
+        "SourceId": ...,
+        "UpdatedAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAssetResponseTypeDef(TypedDict):
+    Arn: str,
+    AssetDetails: AssetDetailsTypeDef,  # (1)
+    AssetType: AssetTypeType,  # (2)
+    CreatedAt: datetime,
+    DataSetId: str,
+    Id: str,
+    Name: str,
+    RevisionId: str,
+    SourceId: str,
+    UpdatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef) 
+2. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAssetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import UpdateAssetResponseTypeDef
+
+def get_value() -> UpdateAssetResponseTypeDef:
+    return {
+        "Arn": ...,
+        "AssetDetails": ...,
+        "AssetType": ...,
+        "CreatedAt": ...,
+        "DataSetId": ...,
+        "Id": ...,
+        "Name": ...,
+        "RevisionId": ...,
+        "SourceId": ...,
+        "UpdatedAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAssetResponseTypeDef(TypedDict):
+    Arn: str,
+    AssetDetails: AssetDetailsTypeDef,  # (1)
+    AssetType: AssetTypeType,  # (2)
+    CreatedAt: datetime,
+    DataSetId: str,
+    Id: str,
+    Name: str,
+    RevisionId: str,
+    SourceId: str,
+    UpdatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AssetDetailsTypeDef](./type_defs.md#assetdetailstypedef) 
+2. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRevisionAssetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.type_defs import ListRevisionAssetsResponseTypeDef
+
+def get_value() -> ListRevisionAssetsResponseTypeDef:
+    return {
+        "Assets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRevisionAssetsResponseTypeDef(TypedDict):
+    Assets: List[AssetEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AssetEntryTypeDef](./type_defs.md#assetentrytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

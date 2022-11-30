@@ -392,6 +392,7 @@ def get_value() -> FindingSourceDetailTypeDef:
 ```python title="Definition"
 class FindingSourceDetailTypeDef(TypedDict):
     accessPointArn: NotRequired[str],
+    accessPointAccount: NotRequired[str],
 ```
 
 ## GeneratedPolicyTypeDef

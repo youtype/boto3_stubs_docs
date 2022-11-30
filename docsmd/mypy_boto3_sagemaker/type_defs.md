@@ -218,6 +218,7 @@ class AppDetailsTypeDef(TypedDict):
     AppName: NotRequired[str],
     Status: NotRequired[AppStatusType],  # (2)
     CreationTime: NotRequired[datetime],
+    SpaceName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
@@ -521,6 +522,22 @@ class AutoMLJobObjectiveTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AutoMLMetricEnumType](./literals.md#automlmetricenumtype) 
+## AutoMLJobStepMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import AutoMLJobStepMetadataTypeDef
+
+def get_value() -> AutoMLJobStepMetadataTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class AutoMLJobStepMetadataTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
+
 ## AutoMLPartialFailureReasonTypeDef
 
 ```python title="Usage Example"
@@ -1003,6 +1020,22 @@ class GitConfigTypeDef(TypedDict):
     SecretArn: NotRequired[str],
 ```
 
+## CodeRepositoryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CodeRepositoryTypeDef
+
+def get_value() -> CodeRepositoryTypeDef:
+    return {
+        "RepositoryUrl": ...,
+    }
+```
+
+```python title="Definition"
+class CodeRepositoryTypeDef(TypedDict):
+    RepositoryUrl: str,
+```
+
 ## CognitoConfigTypeDef
 
 ```python title="Usage Example"
@@ -1424,6 +1457,22 @@ class HumanLoopRequestSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AwsManagedHumanLoopRequestSourceType](./literals.md#awsmanagedhumanlooprequestsourcetype) 
+## HubS3StorageConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HubS3StorageConfigTypeDef
+
+def get_value() -> HubS3StorageConfigTypeDef:
+    return {
+        "S3OutputPath": ...,
+    }
+```
+
+```python title="Definition"
+class HubS3StorageConfigTypeDef(TypedDict):
+    S3OutputPath: NotRequired[str],
+```
+
 ## UiTemplateTypeDef
 
 ```python title="Usage Example"
@@ -1458,6 +1507,23 @@ class CreateImageVersionRequestRequestTypeDef(TypedDict):
     BaseImage: str,
     ClientToken: str,
     ImageName: str,
+```
+
+## InferenceExperimentScheduleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import InferenceExperimentScheduleTypeDef
+
+def get_value() -> InferenceExperimentScheduleTypeDef:
+    return {
+        "StartTime": ...,
+    }
+```
+
+```python title="Definition"
+class InferenceExperimentScheduleTypeDef(TypedDict):
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
 ```
 
 ## LabelingJobOutputConfigTypeDef
@@ -1512,6 +1578,38 @@ class ModelBiasAppSpecificationTypeDef(TypedDict):
     ImageUri: str,
     ConfigUri: str,
     Environment: NotRequired[Mapping[str, str]],
+```
+
+## ModelCardExportOutputConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardExportOutputConfigTypeDef
+
+def get_value() -> ModelCardExportOutputConfigTypeDef:
+    return {
+        "S3OutputPath": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardExportOutputConfigTypeDef(TypedDict):
+    S3OutputPath: str,
+```
+
+## ModelCardSecurityConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardSecurityConfigTypeDef
+
+def get_value() -> ModelCardSecurityConfigTypeDef:
+    return {
+        "KmsKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardSecurityConfigTypeDef(TypedDict):
+    KmsKeyId: NotRequired[str],
 ```
 
 ## ModelExplainabilityAppSpecificationTypeDef
@@ -1658,6 +1756,7 @@ class CreatePresignedDomainUrlRequestRequestTypeDef(TypedDict):
     UserProfileName: str,
     SessionExpirationDurationInSeconds: NotRequired[int],
     ExpiresInSeconds: NotRequired[int],
+    SpaceName: NotRequired[str],
 ```
 
 ## CreatePresignedNotebookInstanceUrlInputRequestTypeDef
@@ -1693,6 +1792,7 @@ class ExperimentConfigTypeDef(TypedDict):
     ExperimentName: NotRequired[str],
     TrialName: NotRequired[str],
     TrialComponentDisplayName: NotRequired[str],
+    RunName: NotRequired[str],
 ```
 
 ## ProcessingStoppingConditionTypeDef
@@ -2316,7 +2416,6 @@ from mypy_boto3_sagemaker.type_defs import DeleteAppRequestRequestTypeDef
 def get_value() -> DeleteAppRequestRequestTypeDef:
     return {
         "DomainId": ...,
-        "UserProfileName": ...,
         "AppType": ...,
         "AppName": ...,
     }
@@ -2325,9 +2424,10 @@ def get_value() -> DeleteAppRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteAppRequestRequestTypeDef(TypedDict):
     DomainId: str,
-    UserProfileName: str,
     AppType: AppTypeType,  # (1)
     AppName: str,
+    UserProfileName: NotRequired[str],
+    SpaceName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
@@ -2544,6 +2644,45 @@ class DeleteFlowDefinitionRequestRequestTypeDef(TypedDict):
     FlowDefinitionName: str,
 ```
 
+## DeleteHubContentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteHubContentRequestRequestTypeDef
+
+def get_value() -> DeleteHubContentRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+        "HubContentType": ...,
+        "HubContentName": ...,
+        "HubContentVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteHubContentRequestRequestTypeDef(TypedDict):
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    HubContentName: str,
+    HubContentVersion: str,
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+## DeleteHubRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteHubRequestRequestTypeDef
+
+def get_value() -> DeleteHubRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteHubRequestRequestTypeDef(TypedDict):
+    HubName: str,
+```
+
 ## DeleteHumanTaskUiRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2594,6 +2733,22 @@ class DeleteImageVersionRequestRequestTypeDef(TypedDict):
     Version: int,
 ```
 
+## DeleteInferenceExperimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteInferenceExperimentRequestRequestTypeDef
+
+def get_value() -> DeleteInferenceExperimentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInferenceExperimentRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
 ## DeleteModelBiasJobDefinitionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2608,6 +2763,22 @@ def get_value() -> DeleteModelBiasJobDefinitionRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteModelBiasJobDefinitionRequestRequestTypeDef(TypedDict):
     JobDefinitionName: str,
+```
+
+## DeleteModelCardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteModelCardRequestRequestTypeDef
+
+def get_value() -> DeleteModelCardRequestRequestTypeDef:
+    return {
+        "ModelCardName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteModelCardRequestRequestTypeDef(TypedDict):
+    ModelCardName: str,
 ```
 
 ## DeleteModelExplainabilityJobDefinitionRequestRequestTypeDef
@@ -2786,6 +2957,24 @@ def get_value() -> DeleteProjectInputRequestTypeDef:
 ```python title="Definition"
 class DeleteProjectInputRequestTypeDef(TypedDict):
     ProjectName: str,
+```
+
+## DeleteSpaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteSpaceRequestRequestTypeDef
+
+def get_value() -> DeleteSpaceRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SpaceName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteSpaceRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SpaceName: str,
 ```
 
 ## DeleteStudioLifecycleConfigRequestRequestTypeDef
@@ -3058,7 +3247,6 @@ from mypy_boto3_sagemaker.type_defs import DescribeAppRequestRequestTypeDef
 def get_value() -> DescribeAppRequestRequestTypeDef:
     return {
         "DomainId": ...,
-        "UserProfileName": ...,
         "AppType": ...,
         "AppName": ...,
     }
@@ -3067,9 +3255,10 @@ def get_value() -> DescribeAppRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeAppRequestRequestTypeDef(TypedDict):
     DomainId: str,
-    UserProfileName: str,
     AppType: AppTypeType,  # (1)
     AppName: str,
+    UserProfileName: NotRequired[str],
+    SpaceName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
@@ -3529,6 +3718,61 @@ class DescribeFlowDefinitionRequestRequestTypeDef(TypedDict):
     FlowDefinitionName: str,
 ```
 
+## DescribeHubContentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeHubContentRequestRequestTypeDef
+
+def get_value() -> DescribeHubContentRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+        "HubContentType": ...,
+        "HubContentName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHubContentRequestRequestTypeDef(TypedDict):
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    HubContentName: str,
+    HubContentVersion: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+## HubContentDependencyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HubContentDependencyTypeDef
+
+def get_value() -> HubContentDependencyTypeDef:
+    return {
+        "DependencyOriginPath": ...,
+    }
+```
+
+```python title="Definition"
+class HubContentDependencyTypeDef(TypedDict):
+    DependencyOriginPath: NotRequired[str],
+    DependencyCopyPath: NotRequired[str],
+```
+
+## DescribeHubRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeHubRequestRequestTypeDef
+
+def get_value() -> DescribeHubRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHubRequestRequestTypeDef(TypedDict):
+    HubName: str,
+```
+
 ## DescribeHumanTaskUiRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3649,6 +3893,42 @@ class DescribeImageVersionRequestRequestTypeDef(TypedDict):
     Version: NotRequired[int],
 ```
 
+## DescribeInferenceExperimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeInferenceExperimentRequestRequestTypeDef
+
+def get_value() -> DescribeInferenceExperimentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInferenceExperimentRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## EndpointMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import EndpointMetadataTypeDef
+
+def get_value() -> EndpointMetadataTypeDef:
+    return {
+        "EndpointName": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointMetadataTypeDef(TypedDict):
+    EndpointName: str,
+    EndpointConfigName: NotRequired[str],
+    EndpointStatus: NotRequired[EndpointStatusType],  # (1)
+    FailureReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
 ## DescribeInferenceRecommendationsJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3748,6 +4028,55 @@ def get_value() -> DescribeModelBiasJobDefinitionRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeModelBiasJobDefinitionRequestRequestTypeDef(TypedDict):
     JobDefinitionName: str,
+```
+
+## DescribeModelCardExportJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelCardExportJobRequestRequestTypeDef
+
+def get_value() -> DescribeModelCardExportJobRequestRequestTypeDef:
+    return {
+        "ModelCardExportJobArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelCardExportJobRequestRequestTypeDef(TypedDict):
+    ModelCardExportJobArn: str,
+```
+
+## ModelCardExportArtifactsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardExportArtifactsTypeDef
+
+def get_value() -> ModelCardExportArtifactsTypeDef:
+    return {
+        "S3ExportArtifacts": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardExportArtifactsTypeDef(TypedDict):
+    S3ExportArtifacts: str,
+```
+
+## DescribeModelCardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelCardRequestRequestTypeDef
+
+def get_value() -> DescribeModelCardRequestRequestTypeDef:
+    return {
+        "ModelCardName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelCardRequestRequestTypeDef(TypedDict):
+    ModelCardName: str,
+    ModelCardVersion: NotRequired[int],
 ```
 
 ## DescribeModelExplainabilityJobDefinitionRequestRequestTypeDef
@@ -4021,6 +4350,24 @@ def get_value() -> ServiceCatalogProvisionedProductDetailsTypeDef:
 class ServiceCatalogProvisionedProductDetailsTypeDef(TypedDict):
     ProvisionedProductId: NotRequired[str],
     ProvisionedProductStatusMessage: NotRequired[str],
+```
+
+## DescribeSpaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeSpaceRequestRequestTypeDef
+
+def get_value() -> DescribeSpaceRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SpaceName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSpaceRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SpaceName: str,
 ```
 
 ## DescribeStudioLifecycleConfigRequestRequestTypeDef
@@ -4925,6 +5272,67 @@ class GitConfigForUpdateTypeDef(TypedDict):
     SecretArn: NotRequired[str],
 ```
 
+## HubContentInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HubContentInfoTypeDef
+
+def get_value() -> HubContentInfoTypeDef:
+    return {
+        "HubContentName": ...,
+        "HubContentArn": ...,
+        "HubContentVersion": ...,
+        "HubContentType": ...,
+        "DocumentSchemaVersion": ...,
+        "HubContentStatus": ...,
+        "CreationTime": ...,
+    }
+```
+
+```python title="Definition"
+class HubContentInfoTypeDef(TypedDict):
+    HubContentName: str,
+    HubContentArn: str,
+    HubContentVersion: str,
+    HubContentType: HubContentTypeType,  # (1)
+    DocumentSchemaVersion: str,
+    HubContentStatus: HubContentStatusType,  # (2)
+    CreationTime: datetime,
+    HubContentDisplayName: NotRequired[str],
+    HubContentDescription: NotRequired[str],
+    HubContentSearchKeywords: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-brackets: HubContentStatusType](./literals.md#hubcontentstatustype) 
+## HubInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HubInfoTypeDef
+
+def get_value() -> HubInfoTypeDef:
+    return {
+        "HubName": ...,
+        "HubArn": ...,
+        "HubStatus": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+    }
+```
+
+```python title="Definition"
+class HubInfoTypeDef(TypedDict):
+    HubName: str,
+    HubArn: str,
+    HubStatus: HubStatusType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    HubDisplayName: NotRequired[str],
+    HubDescription: NotRequired[str],
+    HubSearchKeywords: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: HubStatusType](./literals.md#hubstatustype) 
 ## HumanLoopActivationConditionsConfigTypeDef
 
 ```python title="Usage Example"
@@ -5489,6 +5897,7 @@ class ListAppsRequestRequestTypeDef(TypedDict):
     SortBy: NotRequired[AppSortKeyType],  # (2)
     DomainIdEquals: NotRequired[str],
     UserProfileNameEquals: NotRequired[str],
+    SpaceNameEquals: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
@@ -5969,6 +6378,92 @@ class ListFlowDefinitionsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListHubContentVersionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListHubContentVersionsRequestRequestTypeDef
+
+def get_value() -> ListHubContentVersionsRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+        "HubContentType": ...,
+        "HubContentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListHubContentVersionsRequestRequestTypeDef(TypedDict):
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    HubContentName: str,
+    MinVersion: NotRequired[str],
+    MaxSchemaVersion: NotRequired[str],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    SortBy: NotRequired[HubContentSortByType],  # (2)
+    SortOrder: NotRequired[SortOrderType],  # (3)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-brackets: HubContentSortByType](./literals.md#hubcontentsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListHubContentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListHubContentsRequestRequestTypeDef
+
+def get_value() -> ListHubContentsRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+        "HubContentType": ...,
+    }
+```
+
+```python title="Definition"
+class ListHubContentsRequestRequestTypeDef(TypedDict):
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    NameContains: NotRequired[str],
+    MaxSchemaVersion: NotRequired[str],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    SortBy: NotRequired[HubContentSortByType],  # (2)
+    SortOrder: NotRequired[SortOrderType],  # (3)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-brackets: HubContentSortByType](./literals.md#hubcontentsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListHubsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListHubsRequestRequestTypeDef
+
+def get_value() -> ListHubsRequestRequestTypeDef:
+    return {
+        "NameContains": ...,
+    }
+```
+
+```python title="Definition"
+class ListHubsRequestRequestTypeDef(TypedDict):
+    NameContains: NotRequired[str],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    LastModifiedTimeBefore: NotRequired[Union[datetime, str]],
+    LastModifiedTimeAfter: NotRequired[Union[datetime, str]],
+    SortBy: NotRequired[HubSortByType],  # (1)
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: HubSortByType](./literals.md#hubsortbytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListHumanTaskUisRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6070,6 +6565,36 @@ class ListImagesRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ImageSortByType](./literals.md#imagesortbytype) 
 2. See [:material-code-brackets: ImageSortOrderType](./literals.md#imagesortordertype) 
+## ListInferenceExperimentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListInferenceExperimentsRequestRequestTypeDef
+
+def get_value() -> ListInferenceExperimentsRequestRequestTypeDef:
+    return {
+        "NameContains": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceExperimentsRequestRequestTypeDef(TypedDict):
+    NameContains: NotRequired[str],
+    Type: NotRequired[InferenceExperimentTypeType],  # (1)
+    StatusEquals: NotRequired[InferenceExperimentStatusType],  # (2)
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    LastModifiedTimeAfter: NotRequired[Union[datetime, str]],
+    LastModifiedTimeBefore: NotRequired[Union[datetime, str]],
+    SortBy: NotRequired[SortInferenceExperimentsByType],  # (3)
+    SortOrder: NotRequired[SortOrderType],  # (4)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-brackets: InferenceExperimentStatusType](./literals.md#inferenceexperimentstatustype) 
+3. See [:material-code-brackets: SortInferenceExperimentsByType](./literals.md#sortinferenceexperimentsbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListInferenceRecommendationsJobStepsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6221,6 +6746,165 @@ class ListModelBiasJobDefinitionsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: MonitoringJobDefinitionSortKeyType](./literals.md#monitoringjobdefinitionsortkeytype) 
 2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListModelCardExportJobsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardExportJobsRequestRequestTypeDef
+
+def get_value() -> ListModelCardExportJobsRequestRequestTypeDef:
+    return {
+        "ModelCardName": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardExportJobsRequestRequestTypeDef(TypedDict):
+    ModelCardName: str,
+    ModelCardVersion: NotRequired[int],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    ModelCardExportJobNameContains: NotRequired[str],
+    StatusEquals: NotRequired[ModelCardExportJobStatusType],  # (1)
+    SortBy: NotRequired[ModelCardExportJobSortByType],  # (2)
+    SortOrder: NotRequired[ModelCardExportJobSortOrderType],  # (3)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ModelCardExportJobStatusType](./literals.md#modelcardexportjobstatustype) 
+2. See [:material-code-brackets: ModelCardExportJobSortByType](./literals.md#modelcardexportjobsortbytype) 
+3. See [:material-code-brackets: ModelCardExportJobSortOrderType](./literals.md#modelcardexportjobsortordertype) 
+## ModelCardExportJobSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardExportJobSummaryTypeDef
+
+def get_value() -> ModelCardExportJobSummaryTypeDef:
+    return {
+        "ModelCardExportJobName": ...,
+        "ModelCardExportJobArn": ...,
+        "Status": ...,
+        "ModelCardName": ...,
+        "ModelCardVersion": ...,
+        "CreatedAt": ...,
+        "LastModifiedAt": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardExportJobSummaryTypeDef(TypedDict):
+    ModelCardExportJobName: str,
+    ModelCardExportJobArn: str,
+    Status: ModelCardExportJobStatusType,  # (1)
+    ModelCardName: str,
+    ModelCardVersion: int,
+    CreatedAt: datetime,
+    LastModifiedAt: datetime,
+```
+
+1. See [:material-code-brackets: ModelCardExportJobStatusType](./literals.md#modelcardexportjobstatustype) 
+## ListModelCardVersionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardVersionsRequestRequestTypeDef
+
+def get_value() -> ListModelCardVersionsRequestRequestTypeDef:
+    return {
+        "ModelCardName": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardVersionsRequestRequestTypeDef(TypedDict):
+    ModelCardName: str,
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    MaxResults: NotRequired[int],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    NextToken: NotRequired[str],
+    SortBy: NotRequired[ModelCardVersionSortByType],  # (2)
+    SortOrder: NotRequired[ModelCardSortOrderType],  # (3)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardVersionSortByType](./literals.md#modelcardversionsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+## ModelCardVersionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardVersionSummaryTypeDef
+
+def get_value() -> ModelCardVersionSummaryTypeDef:
+    return {
+        "ModelCardName": ...,
+        "ModelCardArn": ...,
+        "ModelCardStatus": ...,
+        "ModelCardVersion": ...,
+        "CreationTime": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardVersionSummaryTypeDef(TypedDict):
+    ModelCardName: str,
+    ModelCardArn: str,
+    ModelCardStatus: ModelCardStatusType,  # (1)
+    ModelCardVersion: int,
+    CreationTime: datetime,
+    LastModifiedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+## ListModelCardsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardsRequestRequestTypeDef
+
+def get_value() -> ListModelCardsRequestRequestTypeDef:
+    return {
+        "CreationTimeAfter": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardsRequestRequestTypeDef(TypedDict):
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    MaxResults: NotRequired[int],
+    NameContains: NotRequired[str],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    NextToken: NotRequired[str],
+    SortBy: NotRequired[ModelCardSortByType],  # (2)
+    SortOrder: NotRequired[ModelCardSortOrderType],  # (3)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardSortByType](./literals.md#modelcardsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+## ModelCardSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardSummaryTypeDef
+
+def get_value() -> ModelCardSummaryTypeDef:
+    return {
+        "ModelCardName": ...,
+        "ModelCardArn": ...,
+        "ModelCardStatus": ...,
+        "CreationTime": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardSummaryTypeDef(TypedDict):
+    ModelCardName: str,
+    ModelCardArn: str,
+    ModelCardStatus: ModelCardStatusType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
 ## ListModelExplainabilityJobDefinitionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6442,6 +7126,74 @@ class ModelSummaryTypeDef(TypedDict):
     ModelName: str,
     ModelArn: str,
     CreationTime: datetime,
+```
+
+## ListMonitoringAlertHistoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListMonitoringAlertHistoryRequestRequestTypeDef
+
+def get_value() -> ListMonitoringAlertHistoryRequestRequestTypeDef:
+    return {
+        "MonitoringScheduleName": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoringAlertHistoryRequestRequestTypeDef(TypedDict):
+    MonitoringScheduleName: NotRequired[str],
+    MonitoringAlertName: NotRequired[str],
+    SortBy: NotRequired[MonitoringAlertHistorySortKeyType],  # (1)
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    StatusEquals: NotRequired[MonitoringAlertStatusType],  # (3)
+```
+
+1. See [:material-code-brackets: MonitoringAlertHistorySortKeyType](./literals.md#monitoringalerthistorysortkeytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: MonitoringAlertStatusType](./literals.md#monitoringalertstatustype) 
+## MonitoringAlertHistorySummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringAlertHistorySummaryTypeDef
+
+def get_value() -> MonitoringAlertHistorySummaryTypeDef:
+    return {
+        "MonitoringScheduleName": ...,
+        "MonitoringAlertName": ...,
+        "CreationTime": ...,
+        "AlertStatus": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringAlertHistorySummaryTypeDef(TypedDict):
+    MonitoringScheduleName: str,
+    MonitoringAlertName: str,
+    CreationTime: datetime,
+    AlertStatus: MonitoringAlertStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: MonitoringAlertStatusType](./literals.md#monitoringalertstatustype) 
+## ListMonitoringAlertsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListMonitoringAlertsRequestRequestTypeDef
+
+def get_value() -> ListMonitoringAlertsRequestRequestTypeDef:
+    return {
+        "MonitoringScheduleName": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoringAlertsRequestRequestTypeDef(TypedDict):
+    MonitoringScheduleName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 ## ListMonitoringExecutionsRequestRequestTypeDef
@@ -6898,6 +7650,50 @@ class ProjectSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
+## ListSpacesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListSpacesRequestRequestTypeDef
+
+def get_value() -> ListSpacesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListSpacesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SortOrder: NotRequired[SortOrderType],  # (1)
+    SortBy: NotRequired[SpaceSortKeyType],  # (2)
+    DomainIdEquals: NotRequired[str],
+    SpaceNameContains: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-brackets: SpaceSortKeyType](./literals.md#spacesortkeytype) 
+## SpaceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import SpaceDetailsTypeDef
+
+def get_value() -> SpaceDetailsTypeDef:
+    return {
+        "DomainId": ...,
+    }
+```
+
+```python title="Definition"
+class SpaceDetailsTypeDef(TypedDict):
+    DomainId: NotRequired[str],
+    SpaceName: NotRequired[str],
+    Status: NotRequired[SpaceStatusType],  # (1)
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: SpaceStatusType](./literals.md#spacestatustype) 
 ## ListStageDevicesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7283,6 +8079,66 @@ class MonitoringGroundTruthS3InputTypeDef(TypedDict):
     S3Uri: NotRequired[str],
 ```
 
+## ModelDashboardEndpointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelDashboardEndpointTypeDef
+
+def get_value() -> ModelDashboardEndpointTypeDef:
+    return {
+        "EndpointName": ...,
+        "EndpointArn": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "EndpointStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ModelDashboardEndpointTypeDef(TypedDict):
+    EndpointName: str,
+    EndpointArn: str,
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    EndpointStatus: EndpointStatusType,  # (1)
+```
+
+1. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
+## ModelDashboardIndicatorActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelDashboardIndicatorActionTypeDef
+
+def get_value() -> ModelDashboardIndicatorActionTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class ModelDashboardIndicatorActionTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+```
+
+## RealTimeInferenceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RealTimeInferenceConfigTypeDef
+
+def get_value() -> RealTimeInferenceConfigTypeDef:
+    return {
+        "InstanceType": ...,
+        "InstanceCount": ...,
+    }
+```
+
+```python title="Definition"
+class RealTimeInferenceConfigTypeDef(TypedDict):
+    InstanceType: InstanceTypeType,  # (1)
+    InstanceCount: int,
+```
+
+1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
 ## ModelInputTypeDef
 
 ```python title="Usage Example"
@@ -8129,6 +8985,24 @@ class SendPipelineExecutionStepFailureRequestRequestTypeDef(TypedDict):
     ClientRequestToken: NotRequired[str],
 ```
 
+## ShadowModelVariantConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ShadowModelVariantConfigTypeDef
+
+def get_value() -> ShadowModelVariantConfigTypeDef:
+    return {
+        "ShadowModelVariantName": ...,
+        "SamplingPercentage": ...,
+    }
+```
+
+```python title="Definition"
+class ShadowModelVariantConfigTypeDef(TypedDict):
+    ShadowModelVariantName: str,
+    SamplingPercentage: int,
+```
+
 ## SharingSettingsTypeDef
 
 ```python title="Usage Example"
@@ -8181,6 +9055,22 @@ def get_value() -> StartEdgeDeploymentStageRequestRequestTypeDef:
 class StartEdgeDeploymentStageRequestRequestTypeDef(TypedDict):
     EdgeDeploymentPlanName: str,
     StageName: str,
+```
+
+## StartInferenceExperimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import StartInferenceExperimentRequestRequestTypeDef
+
+def get_value() -> StartInferenceExperimentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class StartInferenceExperimentRequestRequestTypeDef(TypedDict):
+    Name: str,
 ```
 
 ## StartMonitoringScheduleRequestRequestTypeDef
@@ -8540,6 +9430,25 @@ class UpdateExperimentRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
+## UpdateHubRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateHubRequestRequestTypeDef
+
+def get_value() -> UpdateHubRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateHubRequestRequestTypeDef(TypedDict):
+    HubName: str,
+    HubDescription: NotRequired[str],
+    HubDisplayName: NotRequired[str],
+    HubSearchKeywords: NotRequired[Sequence[str]],
+```
+
 ## UpdateImageRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8558,6 +9467,47 @@ class UpdateImageRequestRequestTypeDef(TypedDict):
     Description: NotRequired[str],
     DisplayName: NotRequired[str],
     RoleArn: NotRequired[str],
+```
+
+## UpdateModelCardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateModelCardRequestRequestTypeDef
+
+def get_value() -> UpdateModelCardRequestRequestTypeDef:
+    return {
+        "ModelCardName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateModelCardRequestRequestTypeDef(TypedDict):
+    ModelCardName: str,
+    Content: NotRequired[str],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+## UpdateMonitoringAlertRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateMonitoringAlertRequestRequestTypeDef
+
+def get_value() -> UpdateMonitoringAlertRequestRequestTypeDef:
+    return {
+        "MonitoringScheduleName": ...,
+        "MonitoringAlertName": ...,
+        "DatapointsToAlert": ...,
+        "EvaluationPeriod": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMonitoringAlertRequestRequestTypeDef(TypedDict):
+    MonitoringScheduleName: str,
+    MonitoringAlertName: str,
+    DatapointsToAlert: int,
+    EvaluationPeriod: int,
 ```
 
 ## UpdateTrialRequestRequestTypeDef
@@ -8989,6 +9939,25 @@ class CreateFlowDefinitionResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateHubResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateHubResponseTypeDef
+
+def get_value() -> CreateHubResponseTypeDef:
+    return {
+        "HubArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateHubResponseTypeDef(TypedDict):
+    HubArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHumanTaskUiResponseTypeDef
 
 ```python title="Usage Example"
@@ -9065,6 +10034,25 @@ class CreateImageVersionResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateInferenceExperimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateInferenceExperimentResponseTypeDef
+
+def get_value() -> CreateInferenceExperimentResponseTypeDef:
+    return {
+        "InferenceExperimentArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateInferenceExperimentResponseTypeDef(TypedDict):
+    InferenceExperimentArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInferenceRecommendationsJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -9118,6 +10106,44 @@ def get_value() -> CreateModelBiasJobDefinitionResponseTypeDef:
 ```python title="Definition"
 class CreateModelBiasJobDefinitionResponseTypeDef(TypedDict):
     JobDefinitionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateModelCardExportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateModelCardExportJobResponseTypeDef
+
+def get_value() -> CreateModelCardExportJobResponseTypeDef:
+    return {
+        "ModelCardExportJobArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelCardExportJobResponseTypeDef(TypedDict):
+    ModelCardExportJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateModelCardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateModelCardResponseTypeDef
+
+def get_value() -> CreateModelCardResponseTypeDef:
+    return {
+        "ModelCardArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelCardResponseTypeDef(TypedDict):
+    ModelCardArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -9371,6 +10397,25 @@ class CreateProjectOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSpaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateSpaceResponseTypeDef
+
+def get_value() -> CreateSpaceResponseTypeDef:
+    return {
+        "SpaceArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSpaceResponseTypeDef(TypedDict):
+    SpaceArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStudioLifecycleConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -9616,6 +10661,25 @@ def get_value() -> DeleteExperimentResponseTypeDef:
 ```python title="Definition"
 class DeleteExperimentResponseTypeDef(TypedDict):
     ExperimentArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteInferenceExperimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DeleteInferenceExperimentResponseTypeDef
+
+def get_value() -> DeleteInferenceExperimentResponseTypeDef:
+    return {
+        "InferenceExperimentArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteInferenceExperimentResponseTypeDef(TypedDict):
+    InferenceExperimentArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -9917,6 +10981,27 @@ class GetSagemakerServicecatalogPortfolioStatusOutputTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SagemakerServicecatalogStatusType](./literals.md#sagemakerservicecatalogstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportHubContentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ImportHubContentResponseTypeDef
+
+def get_value() -> ImportHubContentResponseTypeDef:
+    return {
+        "HubArn": ...,
+        "HubContentArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportHubContentResponseTypeDef(TypedDict):
+    HubArn: str,
+    HubContentArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutModelPackageGroupPolicyOutputTypeDef
 
 ```python title="Usage Example"
@@ -9993,6 +11078,25 @@ class SendPipelineExecutionStepSuccessResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartInferenceExperimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import StartInferenceExperimentResponseTypeDef
+
+def get_value() -> StartInferenceExperimentResponseTypeDef:
+    return {
+        "InferenceExperimentArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartInferenceExperimentResponseTypeDef(TypedDict):
+    InferenceExperimentArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartPipelineExecutionResponseTypeDef
 
 ```python title="Usage Example"
@@ -10008,6 +11112,25 @@ def get_value() -> StartPipelineExecutionResponseTypeDef:
 ```python title="Definition"
 class StartPipelineExecutionResponseTypeDef(TypedDict):
     PipelineExecutionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopInferenceExperimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import StopInferenceExperimentResponseTypeDef
+
+def get_value() -> StopInferenceExperimentResponseTypeDef:
+    return {
+        "InferenceExperimentArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopInferenceExperimentResponseTypeDef(TypedDict):
+    InferenceExperimentArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -10221,6 +11344,25 @@ class UpdateFeatureGroupResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateHubResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateHubResponseTypeDef
+
+def get_value() -> UpdateHubResponseTypeDef:
+    return {
+        "HubArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateHubResponseTypeDef(TypedDict):
+    HubArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateImageResponseTypeDef
 
 ```python title="Usage Example"
@@ -10240,6 +11382,44 @@ class UpdateImageResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateInferenceExperimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateInferenceExperimentResponseTypeDef
+
+def get_value() -> UpdateInferenceExperimentResponseTypeDef:
+    return {
+        "InferenceExperimentArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateInferenceExperimentResponseTypeDef(TypedDict):
+    InferenceExperimentArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateModelCardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateModelCardResponseTypeDef
+
+def get_value() -> UpdateModelCardResponseTypeDef:
+    return {
+        "ModelCardArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateModelCardResponseTypeDef(TypedDict):
+    ModelCardArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateModelPackageOutputTypeDef
 
 ```python title="Usage Example"
@@ -10255,6 +11435,27 @@ def get_value() -> UpdateModelPackageOutputTypeDef:
 ```python title="Definition"
 class UpdateModelPackageOutputTypeDef(TypedDict):
     ModelPackageArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateMonitoringAlertResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateMonitoringAlertResponseTypeDef
+
+def get_value() -> UpdateMonitoringAlertResponseTypeDef:
+    return {
+        "MonitoringScheduleArn": ...,
+        "MonitoringAlertName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMonitoringAlertResponseTypeDef(TypedDict):
+    MonitoringScheduleArn: str,
+    MonitoringAlertName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -10331,6 +11532,25 @@ def get_value() -> UpdateProjectOutputTypeDef:
 ```python title="Definition"
 class UpdateProjectOutputTypeDef(TypedDict):
     ProjectArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSpaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateSpaceResponseTypeDef
+
+def get_value() -> UpdateSpaceResponseTypeDef:
+    return {
+        "SpaceArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSpaceResponseTypeDef(TypedDict):
+    SpaceArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -10533,6 +11753,38 @@ class CreateStudioLifecycleConfigRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ImportHubContentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ImportHubContentRequestRequestTypeDef
+
+def get_value() -> ImportHubContentRequestRequestTypeDef:
+    return {
+        "HubContentName": ...,
+        "HubContentType": ...,
+        "DocumentSchemaVersion": ...,
+        "HubName": ...,
+        "HubContentDocument": ...,
+    }
+```
+
+```python title="Definition"
+class ImportHubContentRequestRequestTypeDef(TypedDict):
+    HubContentName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    DocumentSchemaVersion: str,
+    HubName: str,
+    HubContentDocument: str,
+    HubContentVersion: NotRequired[str],
+    HubContentDisplayName: NotRequired[str],
+    HubContentDescription: NotRequired[str],
+    HubContentMarkdown: NotRequired[str],
+    HubContentSearchKeywords: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ListTagsOutputTypeDef
 
@@ -11209,6 +12461,25 @@ class TrafficRoutingConfigTypeDef(TypedDict):
 1. See [:material-code-brackets: TrafficRoutingConfigTypeType](./literals.md#trafficroutingconfigtypetype) 
 2. See [:material-code-braces: CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef) 
 3. See [:material-code-braces: CapacitySizeTypeDef](./type_defs.md#capacitysizetypedef) 
+## InferenceExperimentDataStorageConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import InferenceExperimentDataStorageConfigTypeDef
+
+def get_value() -> InferenceExperimentDataStorageConfigTypeDef:
+    return {
+        "Destination": ...,
+    }
+```
+
+```python title="Definition"
+class InferenceExperimentDataStorageConfigTypeDef(TypedDict):
+    Destination: str,
+    KmsKey: NotRequired[str],
+    ContentType: NotRequired[CaptureContentTypeHeaderTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CaptureContentTypeHeaderTypeDef](./type_defs.md#capturecontenttypeheadertypedef) 
 ## DataCaptureConfigTypeDef
 
 ```python title="Usage Example"
@@ -11585,7 +12856,6 @@ from mypy_boto3_sagemaker.type_defs import CreateAppRequestRequestTypeDef
 def get_value() -> CreateAppRequestRequestTypeDef:
     return {
         "DomainId": ...,
-        "UserProfileName": ...,
         "AppType": ...,
         "AppName": ...,
     }
@@ -11594,11 +12864,12 @@ def get_value() -> CreateAppRequestRequestTypeDef:
 ```python title="Definition"
 class CreateAppRequestRequestTypeDef(TypedDict):
     DomainId: str,
-    UserProfileName: str,
     AppType: AppTypeType,  # (1)
     AppName: str,
+    UserProfileName: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
     ResourceSpec: NotRequired[ResourceSpecTypeDef],  # (3)
+    SpaceName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
@@ -11622,6 +12893,7 @@ def get_value() -> DescribeAppResponseTypeDef:
         "CreationTime": ...,
         "FailureReason": ...,
         "ResourceSpec": ...,
+        "SpaceName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -11639,6 +12911,7 @@ class DescribeAppResponseTypeDef(TypedDict):
     CreationTime: datetime,
     FailureReason: str,
     ResourceSpec: ResourceSpecTypeDef,  # (3)
+    SpaceName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
@@ -11661,9 +12934,11 @@ def get_value() -> JupyterServerAppSettingsTypeDef:
 class JupyterServerAppSettingsTypeDef(TypedDict):
     DefaultResourceSpec: NotRequired[ResourceSpecTypeDef],  # (1)
     LifecycleConfigArns: NotRequired[Sequence[str]],
+    CodeRepositories: NotRequired[Sequence[CodeRepositoryTypeDef]],  # (2)
 ```
 
 1. See [:material-code-braces: ResourceSpecTypeDef](./type_defs.md#resourcespectypedef) 
+2. See [:material-code-braces: CodeRepositoryTypeDef](./type_defs.md#coderepositorytypedef) 
 ## RStudioServerProDomainSettingsForUpdateTypeDef
 
 ```python title="Usage Example"
@@ -11847,6 +13122,69 @@ class UpdateFeatureGroupRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef) 
+## CreateHubRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateHubRequestRequestTypeDef
+
+def get_value() -> CreateHubRequestRequestTypeDef:
+    return {
+        "HubName": ...,
+        "HubDescription": ...,
+    }
+```
+
+```python title="Definition"
+class CreateHubRequestRequestTypeDef(TypedDict):
+    HubName: str,
+    HubDescription: str,
+    HubDisplayName: NotRequired[str],
+    HubSearchKeywords: NotRequired[Sequence[str]],
+    S3StorageConfig: NotRequired[HubS3StorageConfigTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: HubS3StorageConfigTypeDef](./type_defs.md#hubs3storageconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeHubResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeHubResponseTypeDef
+
+def get_value() -> DescribeHubResponseTypeDef:
+    return {
+        "HubName": ...,
+        "HubArn": ...,
+        "HubDisplayName": ...,
+        "HubDescription": ...,
+        "HubSearchKeywords": ...,
+        "S3StorageConfig": ...,
+        "HubStatus": ...,
+        "FailureReason": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHubResponseTypeDef(TypedDict):
+    HubName: str,
+    HubArn: str,
+    HubDisplayName: str,
+    HubDescription: str,
+    HubSearchKeywords: List[str],
+    S3StorageConfig: HubS3StorageConfigTypeDef,  # (1)
+    HubStatus: HubStatusType,  # (2)
+    FailureReason: str,
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: HubS3StorageConfigTypeDef](./type_defs.md#hubs3storageconfigtypedef) 
+2. See [:material-code-brackets: HubStatusType](./literals.md#hubstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHumanTaskUiRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11868,6 +13206,194 @@ class CreateHumanTaskUiRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: UiTemplateTypeDef](./type_defs.md#uitemplatetypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## InferenceExperimentSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import InferenceExperimentSummaryTypeDef
+
+def get_value() -> InferenceExperimentSummaryTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+    }
+```
+
+```python title="Definition"
+class InferenceExperimentSummaryTypeDef(TypedDict):
+    Name: str,
+    Type: InferenceExperimentTypeType,  # (1)
+    Status: InferenceExperimentStatusType,  # (3)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    Schedule: NotRequired[InferenceExperimentScheduleTypeDef],  # (2)
+    StatusReason: NotRequired[str],
+    Description: NotRequired[str],
+    CompletionTime: NotRequired[datetime],
+    RoleArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-braces: InferenceExperimentScheduleTypeDef](./type_defs.md#inferenceexperimentscheduletypedef) 
+3. See [:material-code-brackets: InferenceExperimentStatusType](./literals.md#inferenceexperimentstatustype) 
+## CreateModelCardExportJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateModelCardExportJobRequestRequestTypeDef
+
+def get_value() -> CreateModelCardExportJobRequestRequestTypeDef:
+    return {
+        "ModelCardName": ...,
+        "ModelCardExportJobName": ...,
+        "OutputConfig": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelCardExportJobRequestRequestTypeDef(TypedDict):
+    ModelCardName: str,
+    ModelCardExportJobName: str,
+    OutputConfig: ModelCardExportOutputConfigTypeDef,  # (1)
+    ModelCardVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: ModelCardExportOutputConfigTypeDef](./type_defs.md#modelcardexportoutputconfigtypedef) 
+## CreateModelCardRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateModelCardRequestRequestTypeDef
+
+def get_value() -> CreateModelCardRequestRequestTypeDef:
+    return {
+        "ModelCardName": ...,
+        "Content": ...,
+        "ModelCardStatus": ...,
+    }
+```
+
+```python title="Definition"
+class CreateModelCardRequestRequestTypeDef(TypedDict):
+    ModelCardName: str,
+    Content: str,
+    ModelCardStatus: ModelCardStatusType,  # (1)
+    SecurityConfig: NotRequired[ModelCardSecurityConfigTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeModelCardResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelCardResponseTypeDef
+
+def get_value() -> DescribeModelCardResponseTypeDef:
+    return {
+        "ModelCardArn": ...,
+        "ModelCardName": ...,
+        "ModelCardVersion": ...,
+        "Content": ...,
+        "ModelCardStatus": ...,
+        "SecurityConfig": ...,
+        "CreationTime": ...,
+        "CreatedBy": ...,
+        "LastModifiedTime": ...,
+        "LastModifiedBy": ...,
+        "ModelCardProcessingStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelCardResponseTypeDef(TypedDict):
+    ModelCardArn: str,
+    ModelCardName: str,
+    ModelCardVersion: int,
+    Content: str,
+    ModelCardStatus: ModelCardStatusType,  # (1)
+    SecurityConfig: ModelCardSecurityConfigTypeDef,  # (2)
+    CreationTime: datetime,
+    CreatedBy: UserContextTypeDef,  # (3)
+    LastModifiedTime: datetime,
+    LastModifiedBy: UserContextTypeDef,  # (3)
+    ModelCardProcessingStatus: ModelCardProcessingStatusType,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-brackets: ModelCardProcessingStatusType](./literals.md#modelcardprocessingstatustype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModelCardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelCardTypeDef
+
+def get_value() -> ModelCardTypeDef:
+    return {
+        "ModelCardArn": ...,
+    }
+```
+
+```python title="Definition"
+class ModelCardTypeDef(TypedDict):
+    ModelCardArn: NotRequired[str],
+    ModelCardName: NotRequired[str],
+    ModelCardVersion: NotRequired[int],
+    Content: NotRequired[str],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    SecurityConfig: NotRequired[ModelCardSecurityConfigTypeDef],  # (2)
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    ModelId: NotRequired[str],
+    RiskRating: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ModelDashboardModelCardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelDashboardModelCardTypeDef
+
+def get_value() -> ModelDashboardModelCardTypeDef:
+    return {
+        "ModelCardArn": ...,
+    }
+```
+
+```python title="Definition"
+class ModelDashboardModelCardTypeDef(TypedDict):
+    ModelCardArn: NotRequired[str],
+    ModelCardName: NotRequired[str],
+    ModelCardVersion: NotRequired[int],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    SecurityConfig: NotRequired[ModelCardSecurityConfigTypeDef],  # (2)
+    CreationTime: NotRequired[datetime],
+    CreatedBy: NotRequired[UserContextTypeDef],  # (3)
+    LastModifiedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[UserContextTypeDef],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    ModelId: NotRequired[str],
+    RiskRating: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+4. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateNotebookInstanceInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -13121,6 +14647,58 @@ class UpdateFeatureMetadataRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FeatureParameterTypeDef](./type_defs.md#featureparametertypedef) 
+## DescribeHubContentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeHubContentResponseTypeDef
+
+def get_value() -> DescribeHubContentResponseTypeDef:
+    return {
+        "HubContentName": ...,
+        "HubContentArn": ...,
+        "HubContentVersion": ...,
+        "HubContentType": ...,
+        "DocumentSchemaVersion": ...,
+        "HubName": ...,
+        "HubArn": ...,
+        "HubContentDisplayName": ...,
+        "HubContentDescription": ...,
+        "HubContentMarkdown": ...,
+        "HubContentDocument": ...,
+        "HubContentSearchKeywords": ...,
+        "HubContentDependencies": ...,
+        "HubContentStatus": ...,
+        "FailureReason": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHubContentResponseTypeDef(TypedDict):
+    HubContentName: str,
+    HubContentArn: str,
+    HubContentVersion: str,
+    HubContentType: HubContentTypeType,  # (1)
+    DocumentSchemaVersion: str,
+    HubName: str,
+    HubArn: str,
+    HubContentDisplayName: str,
+    HubContentDescription: str,
+    HubContentMarkdown: str,
+    HubContentDocument: str,
+    HubContentSearchKeywords: List[str],
+    HubContentDependencies: List[HubContentDependencyTypeDef],  # (2)
+    HubContentStatus: HubContentStatusType,  # (3)
+    FailureReason: str,
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-braces: HubContentDependencyTypeDef](./type_defs.md#hubcontentdependencytypedef) 
+3. See [:material-code-brackets: HubContentStatusType](./literals.md#hubcontentstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHumanTaskUiResponseTypeDef
 
 ```python title="Usage Example"
@@ -13150,6 +14728,46 @@ class DescribeHumanTaskUiResponseTypeDef(TypedDict):
 1. See [:material-code-brackets: HumanTaskUiStatusType](./literals.md#humantaskuistatustype) 
 2. See [:material-code-braces: UiTemplateInfoTypeDef](./type_defs.md#uitemplateinfotypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeModelCardExportJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeModelCardExportJobResponseTypeDef
+
+def get_value() -> DescribeModelCardExportJobResponseTypeDef:
+    return {
+        "ModelCardExportJobName": ...,
+        "ModelCardExportJobArn": ...,
+        "Status": ...,
+        "ModelCardName": ...,
+        "ModelCardVersion": ...,
+        "OutputConfig": ...,
+        "CreatedAt": ...,
+        "LastModifiedAt": ...,
+        "FailureReason": ...,
+        "ExportArtifacts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeModelCardExportJobResponseTypeDef(TypedDict):
+    ModelCardExportJobName: str,
+    ModelCardExportJobArn: str,
+    Status: ModelCardExportJobStatusType,  # (1)
+    ModelCardName: str,
+    ModelCardVersion: int,
+    OutputConfig: ModelCardExportOutputConfigTypeDef,  # (2)
+    CreatedAt: datetime,
+    LastModifiedAt: datetime,
+    FailureReason: str,
+    ExportArtifacts: ModelCardExportArtifactsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: ModelCardExportJobStatusType](./literals.md#modelcardexportjobstatustype) 
+2. See [:material-code-braces: ModelCardExportOutputConfigTypeDef](./type_defs.md#modelcardexportoutputconfigtypedef) 
+3. See [:material-code-braces: ModelCardExportArtifactsTypeDef](./type_defs.md#modelcardexportartifactstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMonitoringExecutionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -13311,6 +14929,7 @@ def get_value() -> DescribeTrialComponentResponseTypeDef:
         "MetadataProperties": ...,
         "Metrics": ...,
         "LineageGroupArn": ...,
+        "Sources": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -13334,7 +14953,8 @@ class DescribeTrialComponentResponseTypeDef(TypedDict):
     MetadataProperties: MetadataPropertiesTypeDef,  # (8)
     Metrics: List[TrialComponentMetricSummaryTypeDef],  # (9)
     LineageGroupArn: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+    Sources: List[TrialComponentSourceTypeDef],  # (10)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (11)
 ```
 
 1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
@@ -13346,7 +14966,8 @@ class DescribeTrialComponentResponseTypeDef(TypedDict):
 7. See [:material-code-braces: TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef) 
 8. See [:material-code-braces: MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef) 
 9. See [:material-code-braces: TrialComponentMetricSummaryTypeDef](./type_defs.md#trialcomponentmetricsummarytypedef) 
-10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+10. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
+11. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TrialComponentSimpleSummaryTypeDef
 
 ```python title="Usage Example"
@@ -13929,6 +15550,72 @@ class UpdateCodeRepositoryInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GitConfigForUpdateTypeDef](./type_defs.md#gitconfigforupdatetypedef) 
+## ListHubContentVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListHubContentVersionsResponseTypeDef
+
+def get_value() -> ListHubContentVersionsResponseTypeDef:
+    return {
+        "HubContentSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListHubContentVersionsResponseTypeDef(TypedDict):
+    HubContentSummaries: List[HubContentInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: HubContentInfoTypeDef](./type_defs.md#hubcontentinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHubContentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListHubContentsResponseTypeDef
+
+def get_value() -> ListHubContentsResponseTypeDef:
+    return {
+        "HubContentSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListHubContentsResponseTypeDef(TypedDict):
+    HubContentSummaries: List[HubContentInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: HubContentInfoTypeDef](./type_defs.md#hubcontentinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHubsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListHubsResponseTypeDef
+
+def get_value() -> ListHubsResponseTypeDef:
+    return {
+        "HubSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListHubsResponseTypeDef(TypedDict):
+    HubSummaries: List[HubInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: HubInfoTypeDef](./type_defs.md#hubinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HumanLoopActivationConfigTypeDef
 
 ```python title="Usage Example"
@@ -14391,6 +16078,7 @@ class ListAppsRequestListAppsPaginateTypeDef(TypedDict):
     SortBy: NotRequired[AppSortKeyType],  # (2)
     DomainIdEquals: NotRequired[str],
     UserProfileNameEquals: NotRequired[str],
+    SpaceNameEquals: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
 ```
 
@@ -14952,6 +16640,36 @@ class ListImagesRequestListImagesPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: ImageSortByType](./literals.md#imagesortbytype) 
 2. See [:material-code-brackets: ImageSortOrderType](./literals.md#imagesortordertype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListInferenceExperimentsRequestListInferenceExperimentsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListInferenceExperimentsRequestListInferenceExperimentsPaginateTypeDef
+
+def get_value() -> ListInferenceExperimentsRequestListInferenceExperimentsPaginateTypeDef:
+    return {
+        "NameContains": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceExperimentsRequestListInferenceExperimentsPaginateTypeDef(TypedDict):
+    NameContains: NotRequired[str],
+    Type: NotRequired[InferenceExperimentTypeType],  # (1)
+    StatusEquals: NotRequired[InferenceExperimentStatusType],  # (2)
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    LastModifiedTimeAfter: NotRequired[Union[datetime, str]],
+    LastModifiedTimeBefore: NotRequired[Union[datetime, str]],
+    SortBy: NotRequired[SortInferenceExperimentsByType],  # (3)
+    SortOrder: NotRequired[SortOrderType],  # (4)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-brackets: InferenceExperimentStatusType](./literals.md#inferenceexperimentstatustype) 
+3. See [:material-code-brackets: SortInferenceExperimentsByType](./literals.md#sortinferenceexperimentsbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInferenceRecommendationsJobStepsRequestListInferenceRecommendationsJobStepsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -15103,6 +16821,86 @@ class ListModelBiasJobDefinitionsRequestListModelBiasJobDefinitionsPaginateTypeD
 1. See [:material-code-brackets: MonitoringJobDefinitionSortKeyType](./literals.md#monitoringjobdefinitionsortkeytype) 
 2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListModelCardExportJobsRequestListModelCardExportJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardExportJobsRequestListModelCardExportJobsPaginateTypeDef
+
+def get_value() -> ListModelCardExportJobsRequestListModelCardExportJobsPaginateTypeDef:
+    return {
+        "ModelCardName": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardExportJobsRequestListModelCardExportJobsPaginateTypeDef(TypedDict):
+    ModelCardName: str,
+    ModelCardVersion: NotRequired[int],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    ModelCardExportJobNameContains: NotRequired[str],
+    StatusEquals: NotRequired[ModelCardExportJobStatusType],  # (1)
+    SortBy: NotRequired[ModelCardExportJobSortByType],  # (2)
+    SortOrder: NotRequired[ModelCardExportJobSortOrderType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ModelCardExportJobStatusType](./literals.md#modelcardexportjobstatustype) 
+2. See [:material-code-brackets: ModelCardExportJobSortByType](./literals.md#modelcardexportjobsortbytype) 
+3. See [:material-code-brackets: ModelCardExportJobSortOrderType](./literals.md#modelcardexportjobsortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListModelCardVersionsRequestListModelCardVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardVersionsRequestListModelCardVersionsPaginateTypeDef
+
+def get_value() -> ListModelCardVersionsRequestListModelCardVersionsPaginateTypeDef:
+    return {
+        "ModelCardName": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardVersionsRequestListModelCardVersionsPaginateTypeDef(TypedDict):
+    ModelCardName: str,
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    SortBy: NotRequired[ModelCardVersionSortByType],  # (2)
+    SortOrder: NotRequired[ModelCardSortOrderType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardVersionSortByType](./literals.md#modelcardversionsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListModelCardsRequestListModelCardsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardsRequestListModelCardsPaginateTypeDef
+
+def get_value() -> ListModelCardsRequestListModelCardsPaginateTypeDef:
+    return {
+        "CreationTimeAfter": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardsRequestListModelCardsPaginateTypeDef(TypedDict):
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    NameContains: NotRequired[str],
+    ModelCardStatus: NotRequired[ModelCardStatusType],  # (1)
+    SortBy: NotRequired[ModelCardSortByType],  # (2)
+    SortOrder: NotRequired[ModelCardSortOrderType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardSortByType](./literals.md#modelcardsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListModelExplainabilityJobDefinitionsRequestListModelExplainabilityJobDefinitionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -15230,6 +17028,51 @@ class ListModelsInputListModelsPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: ModelSortKeyType](./literals.md#modelsortkeytype) 
 2. See [:material-code-brackets: OrderKeyType](./literals.md#orderkeytype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMonitoringAlertHistoryRequestListMonitoringAlertHistoryPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListMonitoringAlertHistoryRequestListMonitoringAlertHistoryPaginateTypeDef
+
+def get_value() -> ListMonitoringAlertHistoryRequestListMonitoringAlertHistoryPaginateTypeDef:
+    return {
+        "MonitoringScheduleName": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoringAlertHistoryRequestListMonitoringAlertHistoryPaginateTypeDef(TypedDict):
+    MonitoringScheduleName: NotRequired[str],
+    MonitoringAlertName: NotRequired[str],
+    SortBy: NotRequired[MonitoringAlertHistorySortKeyType],  # (1)
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    StatusEquals: NotRequired[MonitoringAlertStatusType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: MonitoringAlertHistorySortKeyType](./literals.md#monitoringalerthistorysortkeytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: MonitoringAlertStatusType](./literals.md#monitoringalertstatustype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMonitoringAlertsRequestListMonitoringAlertsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListMonitoringAlertsRequestListMonitoringAlertsPaginateTypeDef
+
+def get_value() -> ListMonitoringAlertsRequestListMonitoringAlertsPaginateTypeDef:
+    return {
+        "MonitoringScheduleName": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoringAlertsRequestListMonitoringAlertsPaginateTypeDef(TypedDict):
+    MonitoringScheduleName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMonitoringExecutionsRequestListMonitoringExecutionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -15467,6 +17310,29 @@ class ListProcessingJobsRequestListProcessingJobsPaginateTypeDef(TypedDict):
 2. See [:material-code-brackets: SortByType](./literals.md#sortbytype) 
 3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSpacesRequestListSpacesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListSpacesRequestListSpacesPaginateTypeDef
+
+def get_value() -> ListSpacesRequestListSpacesPaginateTypeDef:
+    return {
+        "SortOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListSpacesRequestListSpacesPaginateTypeDef(TypedDict):
+    SortOrder: NotRequired[SortOrderType],  # (1)
+    SortBy: NotRequired[SpaceSortKeyType],  # (2)
+    DomainIdEquals: NotRequired[str],
+    SpaceNameContains: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-brackets: SpaceSortKeyType](./literals.md#spacesortkeytype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStageDevicesRequestListStageDevicesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -15864,6 +17730,72 @@ class ListModelQualityJobDefinitionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: MonitoringJobDefinitionSummaryTypeDef](./type_defs.md#monitoringjobdefinitionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListModelCardExportJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardExportJobsResponseTypeDef
+
+def get_value() -> ListModelCardExportJobsResponseTypeDef:
+    return {
+        "ModelCardExportJobSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardExportJobsResponseTypeDef(TypedDict):
+    ModelCardExportJobSummaries: List[ModelCardExportJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ModelCardExportJobSummaryTypeDef](./type_defs.md#modelcardexportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListModelCardVersionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardVersionsResponseTypeDef
+
+def get_value() -> ListModelCardVersionsResponseTypeDef:
+    return {
+        "ModelCardVersionSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardVersionsResponseTypeDef(TypedDict):
+    ModelCardVersionSummaryList: List[ModelCardVersionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ModelCardVersionSummaryTypeDef](./type_defs.md#modelcardversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListModelCardsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListModelCardsResponseTypeDef
+
+def get_value() -> ListModelCardsResponseTypeDef:
+    return {
+        "ModelCardSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelCardsResponseTypeDef(TypedDict):
+    ModelCardSummaries: List[ModelCardSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ModelCardSummaryTypeDef](./type_defs.md#modelcardsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListModelMetadataResponseTypeDef
 
 ```python title="Usage Example"
@@ -15951,6 +17883,28 @@ class ListModelsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ModelSummaryTypeDef](./type_defs.md#modelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMonitoringAlertHistoryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListMonitoringAlertHistoryResponseTypeDef
+
+def get_value() -> ListMonitoringAlertHistoryResponseTypeDef:
+    return {
+        "MonitoringAlertHistory": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoringAlertHistoryResponseTypeDef(TypedDict):
+    MonitoringAlertHistory: List[MonitoringAlertHistorySummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MonitoringAlertHistorySummaryTypeDef](./type_defs.md#monitoringalerthistorysummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMonitoringSchedulesResponseTypeDef
 
@@ -16186,6 +18140,28 @@ class ListProjectsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSpacesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListSpacesResponseTypeDef
+
+def get_value() -> ListSpacesResponseTypeDef:
+    return {
+        "Spaces": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSpacesResponseTypeDef(TypedDict):
+    Spaces: List[SpaceDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SpaceDetailsTypeDef](./type_defs.md#spacedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStudioLifecycleConfigsResponseTypeDef
 
 ```python title="Usage Example"
@@ -16271,6 +18247,43 @@ class MemberDefinitionTypeDef(TypedDict):
 
 1. See [:material-code-braces: CognitoMemberDefinitionTypeDef](./type_defs.md#cognitomemberdefinitiontypedef) 
 2. See [:material-code-braces: OidcMemberDefinitionTypeDef](./type_defs.md#oidcmemberdefinitiontypedef) 
+## MonitoringAlertActionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringAlertActionsTypeDef
+
+def get_value() -> MonitoringAlertActionsTypeDef:
+    return {
+        "ModelDashboardIndicator": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringAlertActionsTypeDef(TypedDict):
+    ModelDashboardIndicator: NotRequired[ModelDashboardIndicatorActionTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ModelDashboardIndicatorActionTypeDef](./type_defs.md#modeldashboardindicatoractiontypedef) 
+## ModelInfrastructureConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelInfrastructureConfigTypeDef
+
+def get_value() -> ModelInfrastructureConfigTypeDef:
+    return {
+        "InfrastructureType": ...,
+        "RealTimeInferenceConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ModelInfrastructureConfigTypeDef(TypedDict):
+    InfrastructureType: ModelInfrastructureTypeType,  # (1)
+    RealTimeInferenceConfig: RealTimeInferenceConfigTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: ModelInfrastructureTypeType](./literals.md#modelinfrastructuretypetype) 
+2. See [:material-code-braces: RealTimeInferenceConfigTypeDef](./type_defs.md#realtimeinferenceconfigtypedef) 
 ## ModelPackageContainerDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -16421,10 +18434,12 @@ class OfflineStoreConfigTypeDef(TypedDict):
     S3StorageConfig: S3StorageConfigTypeDef,  # (1)
     DisableGlueTableCreation: NotRequired[bool],
     DataCatalogConfig: NotRequired[DataCatalogConfigTypeDef],  # (2)
+    TableFormat: NotRequired[TableFormatType],  # (3)
 ```
 
 1. See [:material-code-braces: S3StorageConfigTypeDef](./type_defs.md#s3storageconfigtypedef) 
 2. See [:material-code-braces: DataCatalogConfigTypeDef](./type_defs.md#datacatalogconfigtypedef) 
+3. See [:material-code-brackets: TableFormatType](./literals.md#tableformattype) 
 ## OnlineStoreConfigTypeDef
 
 ```python title="Usage Example"
@@ -16841,6 +18856,25 @@ class UpdateTrainingJobRequestRequestTypeDef(TypedDict):
 1. See [:material-code-braces: ProfilerConfigForUpdateTypeDef](./type_defs.md#profilerconfigforupdatetypedef) 
 2. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
 3. See [:material-code-braces: ResourceConfigForUpdateTypeDef](./type_defs.md#resourceconfigforupdatetypedef) 
+## ShadowModeConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ShadowModeConfigTypeDef
+
+def get_value() -> ShadowModeConfigTypeDef:
+    return {
+        "SourceModelVariantName": ...,
+        "ShadowModelVariants": ...,
+    }
+```
+
+```python title="Definition"
+class ShadowModeConfigTypeDef(TypedDict):
+    SourceModelVariantName: str,
+    ShadowModelVariants: Sequence[ShadowModelVariantConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ShadowModelVariantConfigTypeDef](./type_defs.md#shadowmodelvariantconfigtypedef) 
 ## SourceAlgorithmSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -17217,6 +19251,7 @@ class PipelineExecutionStepMetadataTypeDef(TypedDict):
     ClarifyCheck: NotRequired[ClarifyCheckStepMetadataTypeDef],  # (11)
     EMR: NotRequired[EMRStepMetadataTypeDef],  # (12)
     Fail: NotRequired[FailStepMetadataTypeDef],  # (13)
+    AutoMLJob: NotRequired[AutoMLJobStepMetadataTypeDef],  # (14)
 ```
 
 1. See [:material-code-braces: TrainingJobStepMetadataTypeDef](./type_defs.md#trainingjobstepmetadatatypedef) 
@@ -17232,6 +19267,7 @@ class PipelineExecutionStepMetadataTypeDef(TypedDict):
 11. See [:material-code-braces: ClarifyCheckStepMetadataTypeDef](./type_defs.md#clarifycheckstepmetadatatypedef) 
 12. See [:material-code-braces: EMRStepMetadataTypeDef](./type_defs.md#emrstepmetadatatypedef) 
 13. See [:material-code-braces: FailStepMetadataTypeDef](./type_defs.md#failstepmetadatatypedef) 
+14. See [:material-code-braces: AutoMLJobStepMetadataTypeDef](./type_defs.md#automljobstepmetadatatypedef) 
 ## AutoMLCandidateTypeDef
 
 ```python title="Usage Example"
@@ -17411,6 +19447,68 @@ class DomainSettingsTypeDef(TypedDict):
 
 1. See [:material-code-braces: RStudioServerProDomainSettingsTypeDef](./type_defs.md#rstudioserverprodomainsettingstypedef) 
 2. See [:material-code-brackets: ExecutionRoleIdentityConfigType](./literals.md#executionroleidentityconfigtype) 
+## ListInferenceExperimentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListInferenceExperimentsResponseTypeDef
+
+def get_value() -> ListInferenceExperimentsResponseTypeDef:
+    return {
+        "InferenceExperiments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListInferenceExperimentsResponseTypeDef(TypedDict):
+    InferenceExperiments: List[InferenceExperimentSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: InferenceExperimentSummaryTypeDef](./type_defs.md#inferenceexperimentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DefaultSpaceSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DefaultSpaceSettingsTypeDef
+
+def get_value() -> DefaultSpaceSettingsTypeDef:
+    return {
+        "ExecutionRole": ...,
+    }
+```
+
+```python title="Definition"
+class DefaultSpaceSettingsTypeDef(TypedDict):
+    ExecutionRole: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    JupyterServerAppSettings: NotRequired[JupyterServerAppSettingsTypeDef],  # (1)
+    KernelGatewayAppSettings: NotRequired[KernelGatewayAppSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: JupyterServerAppSettingsTypeDef](./type_defs.md#jupyterserverappsettingstypedef) 
+2. See [:material-code-braces: KernelGatewayAppSettingsTypeDef](./type_defs.md#kernelgatewayappsettingstypedef) 
+## SpaceSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import SpaceSettingsTypeDef
+
+def get_value() -> SpaceSettingsTypeDef:
+    return {
+        "JupyterServerAppSettings": ...,
+    }
+```
+
+```python title="Definition"
+class SpaceSettingsTypeDef(TypedDict):
+    JupyterServerAppSettings: NotRequired[JupyterServerAppSettingsTypeDef],  # (1)
+    KernelGatewayAppSettings: NotRequired[KernelGatewayAppSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: JupyterServerAppSettingsTypeDef](./type_defs.md#jupyterserverappsettingstypedef) 
+2. See [:material-code-braces: KernelGatewayAppSettingsTypeDef](./type_defs.md#kernelgatewayappsettingstypedef) 
 ## UserSettingsTypeDef
 
 ```python title="Usage Example"
@@ -18163,6 +20261,81 @@ class WorkteamTypeDef(TypedDict):
 
 1. See [:material-code-braces: MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef) 
 2. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+## MonitoringAlertSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import MonitoringAlertSummaryTypeDef
+
+def get_value() -> MonitoringAlertSummaryTypeDef:
+    return {
+        "MonitoringAlertName": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "AlertStatus": ...,
+        "DatapointsToAlert": ...,
+        "EvaluationPeriod": ...,
+        "Actions": ...,
+    }
+```
+
+```python title="Definition"
+class MonitoringAlertSummaryTypeDef(TypedDict):
+    MonitoringAlertName: str,
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    AlertStatus: MonitoringAlertStatusType,  # (1)
+    DatapointsToAlert: int,
+    EvaluationPeriod: int,
+    Actions: MonitoringAlertActionsTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: MonitoringAlertStatusType](./literals.md#monitoringalertstatustype) 
+2. See [:material-code-braces: MonitoringAlertActionsTypeDef](./type_defs.md#monitoringalertactionstypedef) 
+## ModelVariantConfigSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelVariantConfigSummaryTypeDef
+
+def get_value() -> ModelVariantConfigSummaryTypeDef:
+    return {
+        "ModelName": ...,
+        "VariantName": ...,
+        "InfrastructureConfig": ...,
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class ModelVariantConfigSummaryTypeDef(TypedDict):
+    ModelName: str,
+    VariantName: str,
+    InfrastructureConfig: ModelInfrastructureConfigTypeDef,  # (1)
+    Status: ModelVariantStatusType,  # (2)
+```
+
+1. See [:material-code-braces: ModelInfrastructureConfigTypeDef](./type_defs.md#modelinfrastructureconfigtypedef) 
+2. See [:material-code-brackets: ModelVariantStatusType](./literals.md#modelvariantstatustype) 
+## ModelVariantConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelVariantConfigTypeDef
+
+def get_value() -> ModelVariantConfigTypeDef:
+    return {
+        "ModelName": ...,
+        "VariantName": ...,
+        "InfrastructureConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ModelVariantConfigTypeDef(TypedDict):
+    ModelName: str,
+    VariantName: str,
+    InfrastructureConfig: ModelInfrastructureConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ModelInfrastructureConfigTypeDef](./type_defs.md#modelinfrastructureconfigtypedef) 
 ## AdditionalInferenceSpecificationDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -18532,9 +20705,11 @@ class PendingDeploymentSummaryTypeDef(TypedDict):
     EndpointConfigName: str,
     ProductionVariants: NotRequired[List[PendingProductionVariantSummaryTypeDef]],  # (1)
     StartTime: NotRequired[datetime],
+    ShadowProductionVariants: NotRequired[List[PendingProductionVariantSummaryTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: PendingProductionVariantSummaryTypeDef](./type_defs.md#pendingproductionvariantsummarytypedef) 
+2. See [:material-code-braces: PendingProductionVariantSummaryTypeDef](./type_defs.md#pendingproductionvariantsummarytypedef) 
 ## ProcessingOutputConfigTypeDef
 
 ```python title="Usage Example"
@@ -19085,6 +21260,85 @@ class ExplainerConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ClarifyExplainerConfigTypeDef](./type_defs.md#clarifyexplainerconfigtypedef) 
+## CreateSpaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateSpaceRequestRequestTypeDef
+
+def get_value() -> CreateSpaceRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SpaceName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSpaceRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SpaceName: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    SpaceSettings: NotRequired[SpaceSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: SpaceSettingsTypeDef](./type_defs.md#spacesettingstypedef) 
+## DescribeSpaceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeSpaceResponseTypeDef
+
+def get_value() -> DescribeSpaceResponseTypeDef:
+    return {
+        "DomainId": ...,
+        "SpaceArn": ...,
+        "SpaceName": ...,
+        "HomeEfsFileSystemUid": ...,
+        "Status": ...,
+        "LastModifiedTime": ...,
+        "CreationTime": ...,
+        "FailureReason": ...,
+        "SpaceSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSpaceResponseTypeDef(TypedDict):
+    DomainId: str,
+    SpaceArn: str,
+    SpaceName: str,
+    HomeEfsFileSystemUid: str,
+    Status: SpaceStatusType,  # (1)
+    LastModifiedTime: datetime,
+    CreationTime: datetime,
+    FailureReason: str,
+    SpaceSettings: SpaceSettingsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: SpaceStatusType](./literals.md#spacestatustype) 
+2. See [:material-code-braces: SpaceSettingsTypeDef](./type_defs.md#spacesettingstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSpaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateSpaceRequestRequestTypeDef
+
+def get_value() -> UpdateSpaceRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SpaceName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSpaceRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SpaceName: str,
+    SpaceSettings: NotRequired[SpaceSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: SpaceSettingsTypeDef](./type_defs.md#spacesettingstypedef) 
 ## CreateDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -19113,6 +21367,7 @@ class CreateDomainRequestRequestTypeDef(TypedDict):
     KmsKeyId: NotRequired[str],
     AppSecurityGroupManagement: NotRequired[AppSecurityGroupManagementType],  # (5)
     DomainSettings: NotRequired[DomainSettingsTypeDef],  # (6)
+    DefaultSpaceSettings: NotRequired[DefaultSpaceSettingsTypeDef],  # (7)
 ```
 
 1. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
@@ -19121,6 +21376,7 @@ class CreateDomainRequestRequestTypeDef(TypedDict):
 4. See [:material-code-brackets: AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype) 
 5. See [:material-code-brackets: AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype) 
 6. See [:material-code-braces: DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef) 
+7. See [:material-code-braces: DefaultSpaceSettingsTypeDef](./type_defs.md#defaultspacesettingstypedef) 
 ## CreateUserProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -19172,6 +21428,7 @@ def get_value() -> DescribeDomainResponseTypeDef:
         "DomainSettings": ...,
         "AppSecurityGroupManagement": ...,
         "SecurityGroupIdForDomainBoundary": ...,
+        "DefaultSpaceSettings": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -19198,7 +21455,8 @@ class DescribeDomainResponseTypeDef(TypedDict):
     DomainSettings: DomainSettingsTypeDef,  # (5)
     AppSecurityGroupManagement: AppSecurityGroupManagementType,  # (6)
     SecurityGroupIdForDomainBoundary: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+    DefaultSpaceSettings: DefaultSpaceSettingsTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
 1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
@@ -19207,7 +21465,8 @@ class DescribeDomainResponseTypeDef(TypedDict):
 4. See [:material-code-brackets: AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype) 
 5. See [:material-code-braces: DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef) 
 6. See [:material-code-brackets: AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+7. See [:material-code-braces: DefaultSpaceSettingsTypeDef](./type_defs.md#defaultspacesettingstypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserProfileResponseTypeDef
 
 ```python title="Usage Example"
@@ -19265,10 +21524,12 @@ class UpdateDomainRequestRequestTypeDef(TypedDict):
     DomainId: str,
     DefaultUserSettings: NotRequired[UserSettingsTypeDef],  # (1)
     DomainSettingsForUpdate: NotRequired[DomainSettingsForUpdateTypeDef],  # (2)
+    DefaultSpaceSettings: NotRequired[DefaultSpaceSettingsTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
 2. See [:material-code-braces: DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef) 
+3. See [:material-code-braces: DefaultSpaceSettingsTypeDef](./type_defs.md#defaultspacesettingstypedef) 
 ## UpdateUserProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -19707,6 +21968,36 @@ class DescribeModelOutputTypeDef(TypedDict):
 3. See [:material-code-braces: InferenceExecutionConfigTypeDef](./type_defs.md#inferenceexecutionconfigtypedef) 
 4. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelTypeDef
+
+def get_value() -> ModelTypeDef:
+    return {
+        "ModelName": ...,
+    }
+```
+
+```python title="Definition"
+class ModelTypeDef(TypedDict):
+    ModelName: NotRequired[str],
+    PrimaryContainer: NotRequired[ContainerDefinitionTypeDef],  # (1)
+    Containers: NotRequired[List[ContainerDefinitionTypeDef]],  # (2)
+    InferenceExecutionConfig: NotRequired[InferenceExecutionConfigTypeDef],  # (3)
+    ExecutionRoleArn: NotRequired[str],
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (4)
+    CreationTime: NotRequired[datetime],
+    ModelArn: NotRequired[str],
+    EnableNetworkIsolation: NotRequired[bool],
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef) 
+2. See [:material-code-braces: ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef) 
+3. See [:material-code-braces: InferenceExecutionConfigTypeDef](./type_defs.md#inferenceexecutionconfigtypedef) 
+4. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TrainingSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -19859,6 +22150,170 @@ class UpdateWorkteamResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: WorkteamTypeDef](./type_defs.md#workteamtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMonitoringAlertsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListMonitoringAlertsResponseTypeDef
+
+def get_value() -> ListMonitoringAlertsResponseTypeDef:
+    return {
+        "MonitoringAlertSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMonitoringAlertsResponseTypeDef(TypedDict):
+    MonitoringAlertSummaries: List[MonitoringAlertSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MonitoringAlertSummaryTypeDef](./type_defs.md#monitoringalertsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInferenceExperimentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeInferenceExperimentResponseTypeDef
+
+def get_value() -> DescribeInferenceExperimentResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "Type": ...,
+        "Schedule": ...,
+        "Status": ...,
+        "StatusReason": ...,
+        "Description": ...,
+        "CreationTime": ...,
+        "CompletionTime": ...,
+        "LastModifiedTime": ...,
+        "RoleArn": ...,
+        "EndpointMetadata": ...,
+        "ModelVariants": ...,
+        "DataStorageConfig": ...,
+        "ShadowModeConfig": ...,
+        "KmsKey": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInferenceExperimentResponseTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    Type: InferenceExperimentTypeType,  # (1)
+    Schedule: InferenceExperimentScheduleTypeDef,  # (2)
+    Status: InferenceExperimentStatusType,  # (3)
+    StatusReason: str,
+    Description: str,
+    CreationTime: datetime,
+    CompletionTime: datetime,
+    LastModifiedTime: datetime,
+    RoleArn: str,
+    EndpointMetadata: EndpointMetadataTypeDef,  # (4)
+    ModelVariants: List[ModelVariantConfigSummaryTypeDef],  # (5)
+    DataStorageConfig: InferenceExperimentDataStorageConfigTypeDef,  # (6)
+    ShadowModeConfig: ShadowModeConfigTypeDef,  # (7)
+    KmsKey: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-braces: InferenceExperimentScheduleTypeDef](./type_defs.md#inferenceexperimentscheduletypedef) 
+3. See [:material-code-brackets: InferenceExperimentStatusType](./literals.md#inferenceexperimentstatustype) 
+4. See [:material-code-braces: EndpointMetadataTypeDef](./type_defs.md#endpointmetadatatypedef) 
+5. See [:material-code-braces: ModelVariantConfigSummaryTypeDef](./type_defs.md#modelvariantconfigsummarytypedef) 
+6. See [:material-code-braces: InferenceExperimentDataStorageConfigTypeDef](./type_defs.md#inferenceexperimentdatastorageconfigtypedef) 
+7. See [:material-code-braces: ShadowModeConfigTypeDef](./type_defs.md#shadowmodeconfigtypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateInferenceExperimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateInferenceExperimentRequestRequestTypeDef
+
+def get_value() -> CreateInferenceExperimentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+        "RoleArn": ...,
+        "EndpointName": ...,
+        "ModelVariants": ...,
+        "ShadowModeConfig": ...,
+    }
+```
+
+```python title="Definition"
+class CreateInferenceExperimentRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Type: InferenceExperimentTypeType,  # (1)
+    RoleArn: str,
+    EndpointName: str,
+    ModelVariants: Sequence[ModelVariantConfigTypeDef],  # (2)
+    ShadowModeConfig: ShadowModeConfigTypeDef,  # (3)
+    Schedule: NotRequired[InferenceExperimentScheduleTypeDef],  # (4)
+    Description: NotRequired[str],
+    DataStorageConfig: NotRequired[InferenceExperimentDataStorageConfigTypeDef],  # (5)
+    KmsKey: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-braces: ModelVariantConfigTypeDef](./type_defs.md#modelvariantconfigtypedef) 
+3. See [:material-code-braces: ShadowModeConfigTypeDef](./type_defs.md#shadowmodeconfigtypedef) 
+4. See [:material-code-braces: InferenceExperimentScheduleTypeDef](./type_defs.md#inferenceexperimentscheduletypedef) 
+5. See [:material-code-braces: InferenceExperimentDataStorageConfigTypeDef](./type_defs.md#inferenceexperimentdatastorageconfigtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## StopInferenceExperimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import StopInferenceExperimentRequestRequestTypeDef
+
+def get_value() -> StopInferenceExperimentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ModelVariantActions": ...,
+    }
+```
+
+```python title="Definition"
+class StopInferenceExperimentRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ModelVariantActions: Mapping[str, ModelVariantActionType],  # (1)
+    DesiredModelVariants: NotRequired[Sequence[ModelVariantConfigTypeDef]],  # (2)
+    DesiredState: NotRequired[InferenceExperimentStopDesiredStateType],  # (3)
+    Reason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ModelVariantActionType](./literals.md#modelvariantactiontype) 
+2. See [:material-code-braces: ModelVariantConfigTypeDef](./type_defs.md#modelvariantconfigtypedef) 
+3. See [:material-code-brackets: InferenceExperimentStopDesiredStateType](./literals.md#inferenceexperimentstopdesiredstatetype) 
+## UpdateInferenceExperimentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateInferenceExperimentRequestRequestTypeDef
+
+def get_value() -> UpdateInferenceExperimentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateInferenceExperimentRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Schedule: NotRequired[InferenceExperimentScheduleTypeDef],  # (1)
+    Description: NotRequired[str],
+    ModelVariants: NotRequired[Sequence[ModelVariantConfigTypeDef]],  # (2)
+    DataStorageConfig: NotRequired[InferenceExperimentDataStorageConfigTypeDef],  # (3)
+    ShadowModeConfig: NotRequired[ShadowModeConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: InferenceExperimentScheduleTypeDef](./type_defs.md#inferenceexperimentscheduletypedef) 
+2. See [:material-code-braces: ModelVariantConfigTypeDef](./type_defs.md#modelvariantconfigtypedef) 
+3. See [:material-code-braces: InferenceExperimentDataStorageConfigTypeDef](./type_defs.md#inferenceexperimentdatastorageconfigtypedef) 
+4. See [:material-code-braces: ShadowModeConfigTypeDef](./type_defs.md#shadowmodeconfigtypedef) 
 ## UpdateModelPackageInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -20685,6 +23140,7 @@ class CreateEndpointConfigInputRequestTypeDef(TypedDict):
     KmsKeyId: NotRequired[str],
     AsyncInferenceConfig: NotRequired[AsyncInferenceConfigTypeDef],  # (4)
     ExplainerConfig: NotRequired[ExplainerConfigTypeDef],  # (5)
+    ShadowProductionVariants: NotRequired[Sequence[ProductionVariantTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
@@ -20692,6 +23148,7 @@ class CreateEndpointConfigInputRequestTypeDef(TypedDict):
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 4. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
 5. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
+6. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
 ## DescribeEndpointConfigOutputTypeDef
 
 ```python title="Usage Example"
@@ -20707,6 +23164,7 @@ def get_value() -> DescribeEndpointConfigOutputTypeDef:
         "CreationTime": ...,
         "AsyncInferenceConfig": ...,
         "ExplainerConfig": ...,
+        "ShadowProductionVariants": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -20721,14 +23179,16 @@ class DescribeEndpointConfigOutputTypeDef(TypedDict):
     CreationTime: datetime,
     AsyncInferenceConfig: AsyncInferenceConfigTypeDef,  # (3)
     ExplainerConfig: ExplainerConfigTypeDef,  # (4)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    ShadowProductionVariants: List[ProductionVariantTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
 2. See [:material-code-braces: DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef) 
 3. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
 4. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEndpointOutputTypeDef
 
 ```python title="Usage Example"
@@ -20749,6 +23209,7 @@ def get_value() -> DescribeEndpointOutputTypeDef:
         "AsyncInferenceConfig": ...,
         "PendingDeploymentSummary": ...,
         "ExplainerConfig": ...,
+        "ShadowProductionVariants": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -20768,7 +23229,8 @@ class DescribeEndpointOutputTypeDef(TypedDict):
     AsyncInferenceConfig: AsyncInferenceConfigTypeDef,  # (5)
     PendingDeploymentSummary: PendingDeploymentSummaryTypeDef,  # (6)
     ExplainerConfig: ExplainerConfigTypeDef,  # (7)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+    ShadowProductionVariants: List[ProductionVariantSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
 ```
 
 1. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
@@ -20778,7 +23240,8 @@ class DescribeEndpointOutputTypeDef(TypedDict):
 5. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
 6. See [:material-code-braces: PendingDeploymentSummaryTypeDef](./type_defs.md#pendingdeploymentsummarytypedef) 
 7. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
-8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+8. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHyperParameterTuningJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -21496,6 +23959,7 @@ class TrialComponentTypeDef(TypedDict):
     LineageGroupArn: NotRequired[str],
     Tags: NotRequired[List[TagTypeDef]],  # (11)
     Parents: NotRequired[List[ParentTypeDef]],  # (12)
+    RunName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TrialComponentSourceTypeDef](./type_defs.md#trialcomponentsourcetypedef) 
@@ -21572,6 +24036,37 @@ class DescribeMonitoringScheduleResponseTypeDef(TypedDict):
 3. See [:material-code-braces: MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef) 
 4. See [:material-code-braces: MonitoringExecutionSummaryTypeDef](./type_defs.md#monitoringexecutionsummarytypedef) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModelDashboardMonitoringScheduleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelDashboardMonitoringScheduleTypeDef
+
+def get_value() -> ModelDashboardMonitoringScheduleTypeDef:
+    return {
+        "MonitoringScheduleArn": ...,
+    }
+```
+
+```python title="Definition"
+class ModelDashboardMonitoringScheduleTypeDef(TypedDict):
+    MonitoringScheduleArn: NotRequired[str],
+    MonitoringScheduleName: NotRequired[str],
+    MonitoringScheduleStatus: NotRequired[ScheduleStatusType],  # (1)
+    MonitoringType: NotRequired[MonitoringTypeType],  # (2)
+    FailureReason: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    MonitoringScheduleConfig: NotRequired[MonitoringScheduleConfigTypeDef],  # (3)
+    EndpointName: NotRequired[str],
+    MonitoringAlertSummaries: NotRequired[List[MonitoringAlertSummaryTypeDef]],  # (4)
+    LastMonitoringExecutionSummary: NotRequired[MonitoringExecutionSummaryTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: ScheduleStatusType](./literals.md#schedulestatustype) 
+2. See [:material-code-brackets: MonitoringTypeType](./literals.md#monitoringtypetype) 
+3. See [:material-code-braces: MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef) 
+4. See [:material-code-braces: MonitoringAlertSummaryTypeDef](./type_defs.md#monitoringalertsummarytypedef) 
+5. See [:material-code-braces: MonitoringExecutionSummaryTypeDef](./type_defs.md#monitoringexecutionsummarytypedef) 
 ## MonitoringScheduleTypeDef
 
 ```python title="Usage Example"
@@ -21868,6 +24363,31 @@ class ModelPackageTypeDef(TypedDict):
 11. See [:material-code-braces: AdditionalInferenceSpecificationDefinitionTypeDef](./type_defs.md#additionalinferencespecificationdefinitiontypedef) 
 12. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 13. See [:material-code-braces: DriftCheckBaselinesTypeDef](./type_defs.md#driftcheckbaselinestypedef) 
+## ModelDashboardModelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ModelDashboardModelTypeDef
+
+def get_value() -> ModelDashboardModelTypeDef:
+    return {
+        "Model": ...,
+    }
+```
+
+```python title="Definition"
+class ModelDashboardModelTypeDef(TypedDict):
+    Model: NotRequired[ModelTypeDef],  # (1)
+    Endpoints: NotRequired[List[ModelDashboardEndpointTypeDef]],  # (2)
+    LastBatchTransformJob: NotRequired[TransformJobTypeDef],  # (3)
+    MonitoringSchedules: NotRequired[List[ModelDashboardMonitoringScheduleTypeDef]],  # (4)
+    ModelCard: NotRequired[ModelDashboardModelCardTypeDef],  # (5)
+```
+
+1. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 
+2. See [:material-code-braces: ModelDashboardEndpointTypeDef](./type_defs.md#modeldashboardendpointtypedef) 
+3. See [:material-code-braces: TransformJobTypeDef](./type_defs.md#transformjobtypedef) 
+4. See [:material-code-braces: ModelDashboardMonitoringScheduleTypeDef](./type_defs.md#modeldashboardmonitoringscheduletypedef) 
+5. See [:material-code-braces: ModelDashboardModelCardTypeDef](./type_defs.md#modeldashboardmodelcardtypedef) 
 ## EndpointTypeDef
 
 ```python title="Usage Example"
@@ -21897,6 +24417,7 @@ class EndpointTypeDef(TypedDict):
     FailureReason: NotRequired[str],
     MonitoringSchedules: NotRequired[List[MonitoringScheduleTypeDef]],  # (4)
     Tags: NotRequired[List[TagTypeDef]],  # (5)
+    ShadowProductionVariants: NotRequired[List[ProductionVariantSummaryTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
@@ -21904,6 +24425,7 @@ class EndpointTypeDef(TypedDict):
 3. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
 4. See [:material-code-braces: MonitoringScheduleTypeDef](./type_defs.md#monitoringscheduletypedef) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: ProductionVariantSummaryTypeDef](./type_defs.md#productionvariantsummarytypedef) 
 ## SearchRecordTypeDef
 
 ```python title="Usage Example"
@@ -21930,6 +24452,8 @@ class SearchRecordTypeDef(TypedDict):
     Project: NotRequired[ProjectTypeDef],  # (11)
     FeatureMetadata: NotRequired[FeatureMetadataTypeDef],  # (12)
     HyperParameterTuningJob: NotRequired[HyperParameterTuningJobSearchEntityTypeDef],  # (13)
+    Model: NotRequired[ModelDashboardModelTypeDef],  # (14)
+    ModelCard: NotRequired[ModelCardTypeDef],  # (15)
 ```
 
 1. See [:material-code-braces: TrainingJobTypeDef](./type_defs.md#trainingjobtypedef) 
@@ -21945,6 +24469,8 @@ class SearchRecordTypeDef(TypedDict):
 11. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
 12. See [:material-code-braces: FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef) 
 13. See [:material-code-braces: HyperParameterTuningJobSearchEntityTypeDef](./type_defs.md#hyperparametertuningjobsearchentitytypedef) 
+14. See [:material-code-braces: ModelDashboardModelTypeDef](./type_defs.md#modeldashboardmodeltypedef) 
+15. See [:material-code-braces: ModelCardTypeDef](./type_defs.md#modelcardtypedef) 
 ## SearchResponseTypeDef
 
 ```python title="Usage Example"

@@ -37,6 +37,7 @@ except (
     client.InvalidRequestException,
     client.MetadataException,
     client.ResourceNotFoundException,
+    client.SessionAlreadyExistsException,
     client.TooManyRequestsException,
 ) as e:
     print(e)
@@ -247,6 +248,38 @@ parent.create_named_query(**kwargs)
 
 1. See [:material-code-braces: CreateNamedQueryInputRequestTypeDef](./type_defs.md#createnamedqueryinputrequesttypedef) 
 
+### create\_notebook
+
+Creates an empty `ipynb` file in the specified Apache Spark enabled workgroup.
+
+Type annotations and code completion for `#!python boto3.client("athena").create_notebook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_notebook)
+
+```python title="Method definition"
+def create_notebook(
+    self,
+    *,
+    WorkGroup: str,
+    Name: str,
+    ClientRequestToken: str = ...,
+) -> CreateNotebookOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateNotebookOutputTypeDef](./type_defs.md#createnotebookoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateNotebookInputRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+    "Name": ...,
+}
+
+parent.create_notebook(**kwargs)
+```
+
+1. See [:material-code-braces: CreateNotebookInputRequestTypeDef](./type_defs.md#createnotebookinputrequesttypedef) 
+
 ### create\_prepared\_statement
 
 Creates a prepared statement for use with SQL queries in Athena.
@@ -279,6 +312,35 @@ parent.create_prepared_statement(**kwargs)
 ```
 
 1. See [:material-code-braces: CreatePreparedStatementInputRequestTypeDef](./type_defs.md#createpreparedstatementinputrequesttypedef) 
+
+### create\_presigned\_notebook\_url
+
+Gets an authentication token and the URL at which the notebook can be accessed.
+
+Type annotations and code completion for `#!python boto3.client("athena").create_presigned_notebook_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_presigned_notebook_url)
+
+```python title="Method definition"
+def create_presigned_notebook_url(
+    self,
+    *,
+    SessionId: str,
+) -> CreatePresignedNotebookUrlResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreatePresignedNotebookUrlResponseTypeDef](./type_defs.md#createpresignednotebookurlresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreatePresignedNotebookUrlRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
+
+parent.create_presigned_notebook_url(**kwargs)
+```
+
+1. See [:material-code-braces: CreatePresignedNotebookUrlRequestRequestTypeDef](./type_defs.md#createpresignednotebookurlrequestrequesttypedef) 
 
 ### create\_work\_group
 
@@ -370,6 +432,34 @@ parent.delete_named_query(**kwargs)
 
 1. See [:material-code-braces: DeleteNamedQueryInputRequestTypeDef](./type_defs.md#deletenamedqueryinputrequesttypedef) 
 
+### delete\_notebook
+
+Deletes the specified notebook.
+
+Type annotations and code completion for `#!python boto3.client("athena").delete_notebook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_notebook)
+
+```python title="Method definition"
+def delete_notebook(
+    self,
+    *,
+    NotebookId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteNotebookInputRequestTypeDef = {  # (1)
+    "NotebookId": ...,
+}
+
+parent.delete_notebook(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteNotebookInputRequestTypeDef](./type_defs.md#deletenotebookinputrequesttypedef) 
+
 ### delete\_prepared\_statement
 
 Deletes the prepared statement with the specified name from the specified
@@ -430,6 +520,35 @@ parent.delete_work_group(**kwargs)
 
 1. See [:material-code-braces: DeleteWorkGroupInputRequestTypeDef](./type_defs.md#deleteworkgroupinputrequesttypedef) 
 
+### export\_notebook
+
+Exports the specified notebook and its metadata.
+
+Type annotations and code completion for `#!python boto3.client("athena").export_notebook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.export_notebook)
+
+```python title="Method definition"
+def export_notebook(
+    self,
+    *,
+    NotebookId: str,
+) -> ExportNotebookOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ExportNotebookOutputTypeDef](./type_defs.md#exportnotebookoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ExportNotebookInputRequestTypeDef = {  # (1)
+    "NotebookId": ...,
+}
+
+parent.export_notebook(**kwargs)
+```
+
+1. See [:material-code-braces: ExportNotebookInputRequestTypeDef](./type_defs.md#exportnotebookinputrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -448,6 +567,94 @@ def generate_presigned_url(
     ...
 ```
 
+
+### get\_calculation\_execution
+
+Describes a previously submitted calculation execution.
+
+Type annotations and code completion for `#!python boto3.client("athena").get_calculation_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_calculation_execution)
+
+```python title="Method definition"
+def get_calculation_execution(
+    self,
+    *,
+    CalculationExecutionId: str,
+) -> GetCalculationExecutionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetCalculationExecutionResponseTypeDef](./type_defs.md#getcalculationexecutionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCalculationExecutionRequestRequestTypeDef = {  # (1)
+    "CalculationExecutionId": ...,
+}
+
+parent.get_calculation_execution(**kwargs)
+```
+
+1. See [:material-code-braces: GetCalculationExecutionRequestRequestTypeDef](./type_defs.md#getcalculationexecutionrequestrequesttypedef) 
+
+### get\_calculation\_execution\_code
+
+Retrieves a pre-signed URL to a copy of the code that was executed for the
+calculation.
+
+Type annotations and code completion for `#!python boto3.client("athena").get_calculation_execution_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_calculation_execution_code)
+
+```python title="Method definition"
+def get_calculation_execution_code(
+    self,
+    *,
+    CalculationExecutionId: str,
+) -> GetCalculationExecutionCodeResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetCalculationExecutionCodeResponseTypeDef](./type_defs.md#getcalculationexecutioncoderesponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCalculationExecutionCodeRequestRequestTypeDef = {  # (1)
+    "CalculationExecutionId": ...,
+}
+
+parent.get_calculation_execution_code(**kwargs)
+```
+
+1. See [:material-code-braces: GetCalculationExecutionCodeRequestRequestTypeDef](./type_defs.md#getcalculationexecutioncoderequestrequesttypedef) 
+
+### get\_calculation\_execution\_status
+
+Gets the status of a current calculation.
+
+Type annotations and code completion for `#!python boto3.client("athena").get_calculation_execution_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_calculation_execution_status)
+
+```python title="Method definition"
+def get_calculation_execution_status(
+    self,
+    *,
+    CalculationExecutionId: str,
+) -> GetCalculationExecutionStatusResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetCalculationExecutionStatusResponseTypeDef](./type_defs.md#getcalculationexecutionstatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCalculationExecutionStatusRequestRequestTypeDef = {  # (1)
+    "CalculationExecutionId": ...,
+}
+
+parent.get_calculation_execution_status(**kwargs)
+```
+
+1. See [:material-code-braces: GetCalculationExecutionStatusRequestRequestTypeDef](./type_defs.md#getcalculationexecutionstatusrequestrequesttypedef) 
 
 ### get\_data\_catalog
 
@@ -537,6 +744,35 @@ parent.get_named_query(**kwargs)
 ```
 
 1. See [:material-code-braces: GetNamedQueryInputRequestTypeDef](./type_defs.md#getnamedqueryinputrequesttypedef) 
+
+### get\_notebook\_metadata
+
+Retrieves notebook metadata for the specified notebook ID.
+
+Type annotations and code completion for `#!python boto3.client("athena").get_notebook_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_notebook_metadata)
+
+```python title="Method definition"
+def get_notebook_metadata(
+    self,
+    *,
+    NotebookId: str,
+) -> GetNotebookMetadataOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetNotebookMetadataOutputTypeDef](./type_defs.md#getnotebookmetadataoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetNotebookMetadataInputRequestTypeDef = {  # (1)
+    "NotebookId": ...,
+}
+
+parent.get_notebook_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: GetNotebookMetadataInputRequestTypeDef](./type_defs.md#getnotebookmetadatainputrequesttypedef) 
 
 ### get\_prepared\_statement
 
@@ -662,6 +898,65 @@ parent.get_query_runtime_statistics(**kwargs)
 
 1. See [:material-code-braces: GetQueryRuntimeStatisticsInputRequestTypeDef](./type_defs.md#getqueryruntimestatisticsinputrequesttypedef) 
 
+### get\_session
+
+Gets the full details of a previously created session, including the session
+status and configuration.
+
+Type annotations and code completion for `#!python boto3.client("athena").get_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_session)
+
+```python title="Method definition"
+def get_session(
+    self,
+    *,
+    SessionId: str,
+) -> GetSessionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSessionRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
+
+parent.get_session(**kwargs)
+```
+
+1. See [:material-code-braces: GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef) 
+
+### get\_session\_status
+
+Gets the current status of a session.
+
+Type annotations and code completion for `#!python boto3.client("athena").get_session_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_session_status)
+
+```python title="Method definition"
+def get_session_status(
+    self,
+    *,
+    SessionId: str,
+) -> GetSessionStatusResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetSessionStatusResponseTypeDef](./type_defs.md#getsessionstatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSessionStatusRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
+
+parent.get_session_status(**kwargs)
+```
+
+1. See [:material-code-braces: GetSessionStatusRequestRequestTypeDef](./type_defs.md#getsessionstatusrequestrequesttypedef) 
+
 ### get\_table\_metadata
 
 Returns table metadata for the specified catalog, database, and table.
@@ -723,6 +1018,108 @@ parent.get_work_group(**kwargs)
 ```
 
 1. See [:material-code-braces: GetWorkGroupInputRequestTypeDef](./type_defs.md#getworkgroupinputrequesttypedef) 
+
+### import\_notebook
+
+Imports a single `ipynb` file to a Spark enabled workgroup.
+
+Type annotations and code completion for `#!python boto3.client("athena").import_notebook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.import_notebook)
+
+```python title="Method definition"
+def import_notebook(
+    self,
+    *,
+    WorkGroup: str,
+    Name: str,
+    Payload: str,
+    Type: NotebookTypeType,  # (1)
+    ClientRequestToken: str = ...,
+) -> ImportNotebookOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: NotebookTypeType](./literals.md#notebooktypetype) 
+2. See [:material-code-braces: ImportNotebookOutputTypeDef](./type_defs.md#importnotebookoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ImportNotebookInputRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+    "Name": ...,
+    "Payload": ...,
+    "Type": ...,
+}
+
+parent.import_notebook(**kwargs)
+```
+
+1. See [:material-code-braces: ImportNotebookInputRequestTypeDef](./type_defs.md#importnotebookinputrequesttypedef) 
+
+### list\_application\_dpu\_sizes
+
+Returns the supported DPU sizes for the supported application runtimes (for
+example, `Jupyter 1.0` ).
+
+Type annotations and code completion for `#!python boto3.client("athena").list_application_dpu_sizes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_application_dpu_sizes)
+
+```python title="Method definition"
+def list_application_dpu_sizes(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListApplicationDPUSizesOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListApplicationDPUSizesOutputTypeDef](./type_defs.md#listapplicationdpusizesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationDPUSizesInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
+
+parent.list_application_dpu_sizes(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationDPUSizesInputRequestTypeDef](./type_defs.md#listapplicationdpusizesinputrequesttypedef) 
+
+### list\_calculation\_executions
+
+Lists the calculations that have been submitted to a session in descending
+order.
+
+Type annotations and code completion for `#!python boto3.client("athena").list_calculation_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_calculation_executions)
+
+```python title="Method definition"
+def list_calculation_executions(
+    self,
+    *,
+    SessionId: str,
+    StateFilter: CalculationExecutionStateType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCalculationExecutionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: CalculationExecutionStateType](./literals.md#calculationexecutionstatetype) 
+2. See [:material-code-braces: ListCalculationExecutionsResponseTypeDef](./type_defs.md#listcalculationexecutionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCalculationExecutionsRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
+
+parent.list_calculation_executions(**kwargs)
+```
+
+1. See [:material-code-braces: ListCalculationExecutionsRequestRequestTypeDef](./type_defs.md#listcalculationexecutionsrequestrequesttypedef) 
 
 ### list\_data\_catalogs
 
@@ -816,6 +1213,39 @@ parent.list_engine_versions(**kwargs)
 
 1. See [:material-code-braces: ListEngineVersionsInputRequestTypeDef](./type_defs.md#listengineversionsinputrequesttypedef) 
 
+### list\_executors
+
+Lists, in descending order, the executors that have been submitted to a session.
+
+Type annotations and code completion for `#!python boto3.client("athena").list_executors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_executors)
+
+```python title="Method definition"
+def list_executors(
+    self,
+    *,
+    SessionId: str,
+    ExecutorStateFilter: ExecutorStateType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListExecutorsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ExecutorStateType](./literals.md#executorstatetype) 
+2. See [:material-code-braces: ListExecutorsResponseTypeDef](./type_defs.md#listexecutorsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListExecutorsRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
+
+parent.list_executors(**kwargs)
+```
+
+1. See [:material-code-braces: ListExecutorsRequestRequestTypeDef](./type_defs.md#listexecutorsrequestrequesttypedef) 
+
 ### list\_named\_queries
 
 Provides a list of available query IDs only for queries saved in the specified
@@ -847,6 +1277,71 @@ parent.list_named_queries(**kwargs)
 ```
 
 1. See [:material-code-braces: ListNamedQueriesInputRequestTypeDef](./type_defs.md#listnamedqueriesinputrequesttypedef) 
+
+### list\_notebook\_metadata
+
+Displays the notebook files for the specified workgroup in paginated format.
+
+Type annotations and code completion for `#!python boto3.client("athena").list_notebook_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_notebook_metadata)
+
+```python title="Method definition"
+def list_notebook_metadata(
+    self,
+    *,
+    WorkGroup: str,
+    Filters: FilterDefinitionTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListNotebookMetadataOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterDefinitionTypeDef](./type_defs.md#filterdefinitiontypedef) 
+2. See [:material-code-braces: ListNotebookMetadataOutputTypeDef](./type_defs.md#listnotebookmetadataoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListNotebookMetadataInputRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
+
+parent.list_notebook_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: ListNotebookMetadataInputRequestTypeDef](./type_defs.md#listnotebookmetadatainputrequesttypedef) 
+
+### list\_notebook\_sessions
+
+Lists, in descending order, the sessions that have been created in a notebook
+that are in an active state like `CREATING` , `CREATED` , `IDLE` or `BUSY`.
+
+Type annotations and code completion for `#!python boto3.client("athena").list_notebook_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_notebook_sessions)
+
+```python title="Method definition"
+def list_notebook_sessions(
+    self,
+    *,
+    NotebookId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListNotebookSessionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListNotebookSessionsResponseTypeDef](./type_defs.md#listnotebooksessionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListNotebookSessionsRequestRequestTypeDef = {  # (1)
+    "NotebookId": ...,
+}
+
+parent.list_notebook_sessions(**kwargs)
+```
+
+1. See [:material-code-braces: ListNotebookSessionsRequestRequestTypeDef](./type_defs.md#listnotebooksessionsrequestrequesttypedef) 
 
 ### list\_prepared\_statements
 
@@ -910,6 +1405,40 @@ parent.list_query_executions(**kwargs)
 ```
 
 1. See [:material-code-braces: ListQueryExecutionsInputRequestTypeDef](./type_defs.md#listqueryexecutionsinputrequesttypedef) 
+
+### list\_sessions
+
+Lists the sessions in a workgroup that are in an active state like `CREATING` ,
+`CREATED` , `IDLE` , or `BUSY`.
+
+Type annotations and code completion for `#!python boto3.client("athena").list_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_sessions)
+
+```python title="Method definition"
+def list_sessions(
+    self,
+    *,
+    WorkGroup: str,
+    StateFilter: SessionStateType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSessionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+2. See [:material-code-braces: ListSessionsResponseTypeDef](./type_defs.md#listsessionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSessionsRequestRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
+
+parent.list_sessions(**kwargs)
+```
+
+1. See [:material-code-braces: ListSessionsRequestRequestTypeDef](./type_defs.md#listsessionsrequestrequesttypedef) 
 
 ### list\_table\_metadata
 
@@ -1006,6 +1535,40 @@ parent.list_work_groups(**kwargs)
 
 1. See [:material-code-braces: ListWorkGroupsInputRequestTypeDef](./type_defs.md#listworkgroupsinputrequesttypedef) 
 
+### start\_calculation\_execution
+
+Submits calculations for execution within a session.
+
+Type annotations and code completion for `#!python boto3.client("athena").start_calculation_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_calculation_execution)
+
+```python title="Method definition"
+def start_calculation_execution(
+    self,
+    *,
+    SessionId: str,
+    Description: str = ...,
+    CalculationConfiguration: CalculationConfigurationTypeDef = ...,  # (1)
+    CodeBlock: str = ...,
+    ClientRequestToken: str = ...,
+) -> StartCalculationExecutionResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: CalculationConfigurationTypeDef](./type_defs.md#calculationconfigurationtypedef) 
+2. See [:material-code-braces: StartCalculationExecutionResponseTypeDef](./type_defs.md#startcalculationexecutionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartCalculationExecutionRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
+
+parent.start_calculation_execution(**kwargs)
+```
+
+1. See [:material-code-braces: StartCalculationExecutionRequestRequestTypeDef](./type_defs.md#startcalculationexecutionrequestrequesttypedef) 
+
 ### start\_query\_execution
 
 Runs the SQL query statements contained in the `Query`.
@@ -1043,6 +1606,71 @@ parent.start_query_execution(**kwargs)
 ```
 
 1. See [:material-code-braces: StartQueryExecutionInputRequestTypeDef](./type_defs.md#startqueryexecutioninputrequesttypedef) 
+
+### start\_session
+
+Creates a session for running calculations within a workgroup.
+
+Type annotations and code completion for `#!python boto3.client("athena").start_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_session)
+
+```python title="Method definition"
+def start_session(
+    self,
+    *,
+    WorkGroup: str,
+    EngineConfiguration: EngineConfigurationTypeDef,  # (1)
+    Description: str = ...,
+    NotebookVersion: str = ...,
+    SessionIdleTimeoutInMinutes: int = ...,
+    ClientRequestToken: str = ...,
+) -> StartSessionResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: EngineConfigurationTypeDef](./type_defs.md#engineconfigurationtypedef) 
+2. See [:material-code-braces: StartSessionResponseTypeDef](./type_defs.md#startsessionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartSessionRequestRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+    "EngineConfiguration": ...,
+}
+
+parent.start_session(**kwargs)
+```
+
+1. See [:material-code-braces: StartSessionRequestRequestTypeDef](./type_defs.md#startsessionrequestrequesttypedef) 
+
+### stop\_calculation\_execution
+
+Requests the cancellation of a calculation.
+
+Type annotations and code completion for `#!python boto3.client("athena").stop_calculation_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_calculation_execution)
+
+```python title="Method definition"
+def stop_calculation_execution(
+    self,
+    *,
+    CalculationExecutionId: str,
+) -> StopCalculationExecutionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StopCalculationExecutionResponseTypeDef](./type_defs.md#stopcalculationexecutionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopCalculationExecutionRequestRequestTypeDef = {  # (1)
+    "CalculationExecutionId": ...,
+}
+
+parent.stop_calculation_execution(**kwargs)
+```
+
+1. See [:material-code-braces: StopCalculationExecutionRequestRequestTypeDef](./type_defs.md#stopcalculationexecutionrequestrequesttypedef) 
 
 ### stop\_query\_execution
 
@@ -1102,6 +1730,35 @@ parent.tag_resource(**kwargs)
 ```
 
 1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
+
+### terminate\_session
+
+Terminates an active session.
+
+Type annotations and code completion for `#!python boto3.client("athena").terminate_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.terminate_session)
+
+```python title="Method definition"
+def terminate_session(
+    self,
+    *,
+    SessionId: str,
+) -> TerminateSessionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: TerminateSessionResponseTypeDef](./type_defs.md#terminatesessionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TerminateSessionRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
+
+parent.terminate_session(**kwargs)
+```
+
+1. See [:material-code-braces: TerminateSessionRequestRequestTypeDef](./type_defs.md#terminatesessionrequestrequesttypedef) 
 
 ### untag\_resource
 
@@ -1198,6 +1855,70 @@ parent.update_named_query(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateNamedQueryInputRequestTypeDef](./type_defs.md#updatenamedqueryinputrequesttypedef) 
+
+### update\_notebook
+
+Updates the contents of a Spark notebook.
+
+Type annotations and code completion for `#!python boto3.client("athena").update_notebook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_notebook)
+
+```python title="Method definition"
+def update_notebook(
+    self,
+    *,
+    NotebookId: str,
+    Payload: str = ...,
+    Type: NotebookTypeType = ...,  # (1)
+    SessionId: str = ...,
+    ClientRequestToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: NotebookTypeType](./literals.md#notebooktypetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateNotebookInputRequestTypeDef = {  # (1)
+    "NotebookId": ...,
+}
+
+parent.update_notebook(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateNotebookInputRequestTypeDef](./type_defs.md#updatenotebookinputrequesttypedef) 
+
+### update\_notebook\_metadata
+
+Updates the metadata for a notebook.
+
+Type annotations and code completion for `#!python boto3.client("athena").update_notebook_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_notebook_metadata)
+
+```python title="Method definition"
+def update_notebook_metadata(
+    self,
+    *,
+    NotebookId: str,
+    Name: str,
+    ClientRequestToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateNotebookMetadataInputRequestTypeDef = {  # (1)
+    "NotebookId": ...,
+    "Name": ...,
+}
+
+parent.update_notebook_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateNotebookMetadataInputRequestTypeDef](./type_defs.md#updatenotebookmetadatainputrequesttypedef) 
 
 ### update\_prepared\_statement
 

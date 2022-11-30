@@ -19,7 +19,9 @@ def get_value() -> AssetTypeType:
 ```python title="Definition"
 AssetTypeType = Literal[
     "API_GATEWAY_API",
+    "LAKE_FORMATION_DATA_PERMISSION",
     "REDSHIFT_DATA_SHARE",
+    "S3_DATA_ACCESS",
     "S3_SNAPSHOT",
 ]
 ```
@@ -43,20 +45,36 @@ CodeType = Literal[
     "VALIDATION_EXCEPTION",
 ]
 ```
+## DatabaseLFTagPolicyPermissionType
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.literals import DatabaseLFTagPolicyPermissionType
+
+def get_value() -> DatabaseLFTagPolicyPermissionType:
+    return "DESCRIBE"
+```
+
+```python title="Definition"
+DatabaseLFTagPolicyPermissionType = Literal[
+    "DESCRIBE",
+]
+```
 ## JobErrorLimitNameType
 
 ```python title="Usage Example"
 from mypy_boto3_dataexchange.literals import JobErrorLimitNameType
 
 def get_value() -> JobErrorLimitNameType:
-    return "Amazon Redshift datashare assets per revision"
+    return "AWS Lake Formation data permission assets per revision"
 ```
 
 ```python title="Definition"
 JobErrorLimitNameType = Literal[
     "Amazon Redshift datashare assets per revision",
+    "Amazon S3 data access assets per revision",
     "Asset size in GB",
     "Assets per revision",
+    "AWS Lake Formation data permission assets per revision",
 ]
 ```
 ## JobErrorResourceTypesType
@@ -73,6 +91,50 @@ JobErrorResourceTypesType = Literal[
     "ASSET",
     "DATA_SET",
     "REVISION",
+]
+```
+## LFPermissionType
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.literals import LFPermissionType
+
+def get_value() -> LFPermissionType:
+    return "DESCRIBE"
+```
+
+```python title="Definition"
+LFPermissionType = Literal[
+    "DESCRIBE",
+    "SELECT",
+]
+```
+## LFResourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.literals import LFResourceTypeType
+
+def get_value() -> LFResourceTypeType:
+    return "DATABASE"
+```
+
+```python title="Definition"
+LFResourceTypeType = Literal[
+    "DATABASE",
+    "TABLE",
+]
+```
+## LakeFormationDataPermissionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.literals import LakeFormationDataPermissionTypeType
+
+def get_value() -> LakeFormationDataPermissionTypeType:
+    return "LFTagPolicy"
+```
+
+```python title="Definition"
+LakeFormationDataPermissionTypeType = Literal[
+    "LFTagPolicy",
 ]
 ```
 ## ListDataSetRevisionsPaginatorName
@@ -208,22 +270,39 @@ StateType = Literal[
     "WAITING",
 ]
 ```
+## TableTagPolicyLFPermissionType
+
+```python title="Usage Example"
+from mypy_boto3_dataexchange.literals import TableTagPolicyLFPermissionType
+
+def get_value() -> TableTagPolicyLFPermissionType:
+    return "DESCRIBE"
+```
+
+```python title="Definition"
+TableTagPolicyLFPermissionType = Literal[
+    "DESCRIBE",
+    "SELECT",
+]
+```
 ## TypeType
 
 ```python title="Usage Example"
 from mypy_boto3_dataexchange.literals import TypeType
 
 def get_value() -> TypeType:
-    return "EXPORT_ASSETS_TO_S3"
+    return "CREATE_S3_DATA_ACCESS_FROM_S3_BUCKET"
 ```
 
 ```python title="Definition"
 TypeType = Literal[
+    "CREATE_S3_DATA_ACCESS_FROM_S3_BUCKET",
     "EXPORT_ASSET_TO_SIGNED_URL",
     "EXPORT_ASSETS_TO_S3",
     "EXPORT_REVISIONS_TO_S3",
     "IMPORT_ASSET_FROM_API_GATEWAY_API",
     "IMPORT_ASSET_FROM_SIGNED_URL",
+    "IMPORT_ASSETS_FROM_LAKE_FORMATION_TAG_POLICY",
     "IMPORT_ASSETS_FROM_REDSHIFT_DATA_SHARES",
     "IMPORT_ASSETS_FROM_S3",
 ]
@@ -344,6 +423,7 @@ ServiceName = Literal[
     "dlm",
     "dms",
     "docdb",
+    "docdb-elastic",
     "drs",
     "ds",
     "dynamodb",
@@ -525,6 +605,7 @@ ServiceName = Literal[
     "sagemaker-a2i-runtime",
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
+    "sagemaker-geospatial",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",

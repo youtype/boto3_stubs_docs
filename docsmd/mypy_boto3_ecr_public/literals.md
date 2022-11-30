@@ -245,6 +245,7 @@ ServiceName = Literal[
     "dlm",
     "dms",
     "docdb",
+    "docdb-elastic",
     "drs",
     "ds",
     "dynamodb",
@@ -426,6 +427,7 @@ ServiceName = Literal[
     "sagemaker-a2i-runtime",
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
+    "sagemaker-geospatial",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",
@@ -523,5 +525,20 @@ PaginatorName = Literal[
     "describe_images",
     "describe_registries",
     "describe_repositories",
+]
+```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_ecr_public.literals import RegionName
+
+def get_value() -> RegionName:
+    return "us-east-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "us-east-1",
+    "us-west-2",
 ]
 ```

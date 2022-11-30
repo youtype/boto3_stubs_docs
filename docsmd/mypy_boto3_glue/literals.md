@@ -337,6 +337,36 @@ CsvHeaderOptionType = Literal[
     "UNKNOWN",
 ]
 ```
+## DQStopJobOnFailureTimingType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import DQStopJobOnFailureTimingType
+
+def get_value() -> DQStopJobOnFailureTimingType:
+    return "AfterDataLoad"
+```
+
+```python title="Definition"
+DQStopJobOnFailureTimingType = Literal[
+    "AfterDataLoad",
+    "Immediate",
+]
+```
+## DQTransformOutputType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import DQTransformOutputType
+
+def get_value() -> DQTransformOutputType:
+    return "EvaluationResults"
+```
+
+```python title="Definition"
+DQTransformOutputType = Literal[
+    "EvaluationResults",
+    "PrimaryInput",
+]
+```
 ## DataFormatType
 
 ```python title="Usage Example"
@@ -351,6 +381,22 @@ DataFormatType = Literal[
     "AVRO",
     "JSON",
     "PROTOBUF",
+]
+```
+## DataQualityRuleResultStatusType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import DataQualityRuleResultStatusType
+
+def get_value() -> DataQualityRuleResultStatusType:
+    return "ERROR"
+```
+
+```python title="Definition"
+DataQualityRuleResultStatusType = Literal[
+    "ERROR",
+    "FAIL",
+    "PASS",
 ]
 ```
 ## DeleteBehaviorType
@@ -1774,6 +1820,7 @@ ServiceName = Literal[
     "dlm",
     "dms",
     "docdb",
+    "docdb-elastic",
     "drs",
     "ds",
     "dynamodb",
@@ -1955,6 +2002,7 @@ ServiceName = Literal[
     "sagemaker-a2i-runtime",
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
+    "sagemaker-geospatial",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",

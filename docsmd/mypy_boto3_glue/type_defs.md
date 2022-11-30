@@ -287,6 +287,22 @@ class CustomEntityTypeTypeDef(TypedDict):
     ContextWords: NotRequired[List[str]],
 ```
 
+## BatchGetDataQualityResultRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import BatchGetDataQualityResultRequestRequestTypeDef
+
+def get_value() -> BatchGetDataQualityResultRequestRequestTypeDef:
+    return {
+        "ResultIds": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetDataQualityResultRequestRequestTypeDef(TypedDict):
+    ResultIds: Sequence[str],
+```
+
 ## BatchGetDevEndpointsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -529,6 +545,38 @@ class BooleanColumnStatisticsDataTypeDef(TypedDict):
     NumberOfTrues: int,
     NumberOfFalses: int,
     NumberOfNulls: int,
+```
+
+## CancelDataQualityRuleRecommendationRunRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CancelDataQualityRuleRecommendationRunRequestRequestTypeDef
+
+def get_value() -> CancelDataQualityRuleRecommendationRunRequestRequestTypeDef:
+    return {
+        "RunId": ...,
+    }
+```
+
+```python title="Definition"
+class CancelDataQualityRuleRecommendationRunRequestRequestTypeDef(TypedDict):
+    RunId: str,
+```
+
+## CancelDataQualityRulesetEvaluationRunRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CancelDataQualityRulesetEvaluationRunRequestRequestTypeDef
+
+def get_value() -> CancelDataQualityRulesetEvaluationRunRequestRequestTypeDef:
+    return {
+        "RunId": ...,
+    }
+```
+
+```python title="Definition"
+class CancelDataQualityRulesetEvaluationRunRequestRequestTypeDef(TypedDict):
+    RunId: str,
 ```
 
 ## CancelMLTaskRunRequestRequestTypeDef
@@ -2024,6 +2072,24 @@ class CreateCustomEntityTypeRequestRequestTypeDef(TypedDict):
     ContextWords: NotRequired[Sequence[str]],
 ```
 
+## DataQualityTargetTableTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityTargetTableTypeDef
+
+def get_value() -> DataQualityTargetTableTypeDef:
+    return {
+        "TableName": ...,
+        "DatabaseName": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityTargetTableTypeDef(TypedDict):
+    TableName: str,
+    DatabaseName: str,
+```
+
 ## CreateDevEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2133,6 +2199,7 @@ class GlueTableTypeDef(TypedDict):
     TableName: str,
     CatalogId: NotRequired[str],
     ConnectionName: NotRequired[str],
+    AdditionalOptions: NotRequired[Dict[str, str]],
 ```
 
 ## PartitionIndexTypeDef
@@ -2242,6 +2309,42 @@ class CreateWorkflowRequestRequestTypeDef(TypedDict):
     MaxConcurrentRuns: NotRequired[int],
 ```
 
+## DQResultsPublishingOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DQResultsPublishingOptionsTypeDef
+
+def get_value() -> DQResultsPublishingOptionsTypeDef:
+    return {
+        "EvaluationContext": ...,
+    }
+```
+
+```python title="Definition"
+class DQResultsPublishingOptionsTypeDef(TypedDict):
+    EvaluationContext: NotRequired[str],
+    ResultsS3Prefix: NotRequired[str],
+    CloudWatchMetricsEnabled: NotRequired[bool],
+    ResultsPublishingEnabled: NotRequired[bool],
+```
+
+## DQStopJobOnFailureOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DQStopJobOnFailureOptionsTypeDef
+
+def get_value() -> DQStopJobOnFailureOptionsTypeDef:
+    return {
+        "StopJobOnFailureTiming": ...,
+    }
+```
+
+```python title="Definition"
+class DQStopJobOnFailureOptionsTypeDef(TypedDict):
+    StopJobOnFailureTiming: NotRequired[DQStopJobOnFailureTimingType],  # (1)
+```
+
+1. See [:material-code-brackets: DQStopJobOnFailureTimingType](./literals.md#dqstopjobonfailuretimingtype) 
 ## EncryptionAtRestTypeDef
 
 ```python title="Usage Example"
@@ -2276,6 +2379,43 @@ class DataLakePrincipalTypeDef(TypedDict):
     DataLakePrincipalIdentifier: NotRequired[str],
 ```
 
+## DataQualityEvaluationRunAdditionalRunOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityEvaluationRunAdditionalRunOptionsTypeDef
+
+def get_value() -> DataQualityEvaluationRunAdditionalRunOptionsTypeDef:
+    return {
+        "CloudWatchMetricsEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityEvaluationRunAdditionalRunOptionsTypeDef(TypedDict):
+    CloudWatchMetricsEnabled: NotRequired[bool],
+    ResultsS3Prefix: NotRequired[str],
+```
+
+## DataQualityRuleResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityRuleResultTypeDef
+
+def get_value() -> DataQualityRuleResultTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityRuleResultTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    EvaluationMessage: NotRequired[str],
+    Result: NotRequired[DataQualityRuleResultStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: DataQualityRuleResultStatusType](./literals.md#dataqualityruleresultstatustype) 
 ## DatabaseIdentifierTypeDef
 
 ```python title="Usage Example"
@@ -2451,6 +2591,22 @@ def get_value() -> DeleteCustomEntityTypeRequestRequestTypeDef:
 
 ```python title="Definition"
 class DeleteCustomEntityTypeRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
+
+## DeleteDataQualityRulesetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DeleteDataQualityRulesetRequestRequestTypeDef
+
+def get_value() -> DeleteDataQualityRulesetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDataQualityRulesetRequestRequestTypeDef(TypedDict):
     Name: str,
 ```
 
@@ -3225,6 +3381,70 @@ def get_value() -> GetDataCatalogEncryptionSettingsRequestRequestTypeDef:
 ```python title="Definition"
 class GetDataCatalogEncryptionSettingsRequestRequestTypeDef(TypedDict):
     CatalogId: NotRequired[str],
+```
+
+## GetDataQualityResultRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityResultRequestRequestTypeDef
+
+def get_value() -> GetDataQualityResultRequestRequestTypeDef:
+    return {
+        "ResultId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityResultRequestRequestTypeDef(TypedDict):
+    ResultId: str,
+```
+
+## GetDataQualityRuleRecommendationRunRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityRuleRecommendationRunRequestRequestTypeDef
+
+def get_value() -> GetDataQualityRuleRecommendationRunRequestRequestTypeDef:
+    return {
+        "RunId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityRuleRecommendationRunRequestRequestTypeDef(TypedDict):
+    RunId: str,
+```
+
+## GetDataQualityRulesetEvaluationRunRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityRulesetEvaluationRunRequestRequestTypeDef
+
+def get_value() -> GetDataQualityRulesetEvaluationRunRequestRequestTypeDef:
+    return {
+        "RunId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityRulesetEvaluationRunRequestRequestTypeDef(TypedDict):
+    RunId: str,
+```
+
+## GetDataQualityRulesetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityRulesetRequestRequestTypeDef
+
+def get_value() -> GetDataQualityRulesetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityRulesetRequestRequestTypeDef(TypedDict):
+    Name: str,
 ```
 
 ## GetDatabaseRequestRequestTypeDef
@@ -5179,6 +5399,25 @@ class UpdateCrawlerScheduleRequestRequestTypeDef(TypedDict):
     Schedule: NotRequired[str],
 ```
 
+## UpdateDataQualityRulesetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import UpdateDataQualityRulesetRequestRequestTypeDef
+
+def get_value() -> UpdateDataQualityRulesetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataQualityRulesetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    UpdatedName: NotRequired[str],
+    Description: NotRequired[str],
+    Ruleset: NotRequired[str],
+```
+
 ## UpdateJobFromSourceControlRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5540,6 +5779,25 @@ def get_value() -> CreateCustomEntityTypeResponseTypeDef:
 
 ```python title="Definition"
 class CreateCustomEntityTypeResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDataQualityRulesetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CreateDataQualityRulesetResponseTypeDef
+
+def get_value() -> CreateDataQualityRulesetResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDataQualityRulesetResponseTypeDef(TypedDict):
     Name: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
@@ -6553,6 +6811,44 @@ class StartBlueprintRunResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartDataQualityRuleRecommendationRunResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import StartDataQualityRuleRecommendationRunResponseTypeDef
+
+def get_value() -> StartDataQualityRuleRecommendationRunResponseTypeDef:
+    return {
+        "RunId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartDataQualityRuleRecommendationRunResponseTypeDef(TypedDict):
+    RunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartDataQualityRulesetEvaluationRunResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import StartDataQualityRulesetEvaluationRunResponseTypeDef
+
+def get_value() -> StartDataQualityRulesetEvaluationRunResponseTypeDef:
+    return {
+        "RunId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartDataQualityRulesetEvaluationRunResponseTypeDef(TypedDict):
+    RunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartExportLabelsTaskRunResponseTypeDef
 
 ```python title="Usage Example"
@@ -6739,6 +7035,29 @@ def get_value() -> UpdateBlueprintResponseTypeDef:
 ```python title="Definition"
 class UpdateBlueprintResponseTypeDef(TypedDict):
     Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDataQualityRulesetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import UpdateDataQualityRulesetResponseTypeDef
+
+def get_value() -> UpdateDataQualityRulesetResponseTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "Ruleset": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataQualityRulesetResponseTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    Ruleset: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -7649,6 +7968,124 @@ class CreateClassifierRequestRequestTypeDef(TypedDict):
 2. See [:material-code-braces: CreateXMLClassifierRequestTypeDef](./type_defs.md#createxmlclassifierrequesttypedef) 
 3. See [:material-code-braces: CreateJsonClassifierRequestTypeDef](./type_defs.md#createjsonclassifierrequesttypedef) 
 4. See [:material-code-braces: CreateCsvClassifierRequestTypeDef](./type_defs.md#createcsvclassifierrequesttypedef) 
+## CreateDataQualityRulesetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CreateDataQualityRulesetRequestRequestTypeDef
+
+def get_value() -> CreateDataQualityRulesetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Ruleset": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDataQualityRulesetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Ruleset: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    TargetTable: NotRequired[DataQualityTargetTableTypeDef],  # (1)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: DataQualityTargetTableTypeDef](./type_defs.md#dataqualitytargettabletypedef) 
+## DataQualityRulesetFilterCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityRulesetFilterCriteriaTypeDef
+
+def get_value() -> DataQualityRulesetFilterCriteriaTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityRulesetFilterCriteriaTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedBefore: NotRequired[Union[datetime, str]],
+    CreatedAfter: NotRequired[Union[datetime, str]],
+    LastModifiedBefore: NotRequired[Union[datetime, str]],
+    LastModifiedAfter: NotRequired[Union[datetime, str]],
+    TargetTable: NotRequired[DataQualityTargetTableTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DataQualityTargetTableTypeDef](./type_defs.md#dataqualitytargettabletypedef) 
+## DataQualityRulesetListDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityRulesetListDetailsTypeDef
+
+def get_value() -> DataQualityRulesetListDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityRulesetListDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedOn: NotRequired[datetime],
+    LastModifiedOn: NotRequired[datetime],
+    TargetTable: NotRequired[DataQualityTargetTableTypeDef],  # (1)
+    RecommendationRunId: NotRequired[str],
+    RuleCount: NotRequired[int],
+```
+
+1. See [:material-code-braces: DataQualityTargetTableTypeDef](./type_defs.md#dataqualitytargettabletypedef) 
+## GetDataQualityRulesetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityRulesetResponseTypeDef
+
+def get_value() -> GetDataQualityRulesetResponseTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "Ruleset": ...,
+        "TargetTable": ...,
+        "CreatedOn": ...,
+        "LastModifiedOn": ...,
+        "RecommendationRunId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityRulesetResponseTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    Ruleset: str,
+    TargetTable: DataQualityTargetTableTypeDef,  # (1)
+    CreatedOn: datetime,
+    LastModifiedOn: datetime,
+    RecommendationRunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataQualityTargetTableTypeDef](./type_defs.md#dataqualitytargettabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DataSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataSourceTypeDef
+
+def get_value() -> DataSourceTypeDef:
+    return {
+        "GlueTable": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceTypeDef(TypedDict):
+    GlueTable: GlueTableTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: GlueTableTypeDef](./type_defs.md#gluetabletypedef) 
 ## CreatePartitionIndexRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7835,6 +8272,32 @@ class SessionTypeDef(TypedDict):
 1. See [:material-code-brackets: SessionStatusType](./literals.md#sessionstatustype) 
 2. See [:material-code-braces: SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef) 
 3. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
+## EvaluateDataQualityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import EvaluateDataQualityTypeDef
+
+def get_value() -> EvaluateDataQualityTypeDef:
+    return {
+        "Name": ...,
+        "Inputs": ...,
+        "Ruleset": ...,
+    }
+```
+
+```python title="Definition"
+class EvaluateDataQualityTypeDef(TypedDict):
+    Name: str,
+    Inputs: List[str],
+    Ruleset: str,
+    Output: NotRequired[DQTransformOutputType],  # (1)
+    PublishingOptions: NotRequired[DQResultsPublishingOptionsTypeDef],  # (2)
+    StopJobOnFailureOptions: NotRequired[DQStopJobOnFailureOptionsTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: DQTransformOutputType](./literals.md#dqtransformoutputtype) 
+2. See [:material-code-braces: DQResultsPublishingOptionsTypeDef](./type_defs.md#dqresultspublishingoptionstypedef) 
+3. See [:material-code-braces: DQStopJobOnFailureOptionsTypeDef](./type_defs.md#dqstopjobonfailureoptionstypedef) 
 ## DataCatalogEncryptionSettingsTypeDef
 
 ```python title="Usage Example"
@@ -9958,6 +10421,381 @@ class UpdateCrawlerRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef) 
 4. See [:material-code-braces: LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef) 
 5. See [:material-code-braces: LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef) 
+## ListDataQualityRulesetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityRulesetsRequestRequestTypeDef
+
+def get_value() -> ListDataQualityRulesetsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityRulesetsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filter: NotRequired[DataQualityRulesetFilterCriteriaTypeDef],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: DataQualityRulesetFilterCriteriaTypeDef](./type_defs.md#dataqualityrulesetfiltercriteriatypedef) 
+## ListDataQualityRulesetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityRulesetsResponseTypeDef
+
+def get_value() -> ListDataQualityRulesetsResponseTypeDef:
+    return {
+        "Rulesets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityRulesetsResponseTypeDef(TypedDict):
+    Rulesets: List[DataQualityRulesetListDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataQualityRulesetListDetailsTypeDef](./type_defs.md#dataqualityrulesetlistdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DataQualityResultDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityResultDescriptionTypeDef
+
+def get_value() -> DataQualityResultDescriptionTypeDef:
+    return {
+        "ResultId": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityResultDescriptionTypeDef(TypedDict):
+    ResultId: NotRequired[str],
+    DataSource: NotRequired[DataSourceTypeDef],  # (1)
+    JobName: NotRequired[str],
+    JobRunId: NotRequired[str],
+    StartedOn: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+## DataQualityResultFilterCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityResultFilterCriteriaTypeDef
+
+def get_value() -> DataQualityResultFilterCriteriaTypeDef:
+    return {
+        "DataSource": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityResultFilterCriteriaTypeDef(TypedDict):
+    DataSource: NotRequired[DataSourceTypeDef],  # (1)
+    JobName: NotRequired[str],
+    JobRunId: NotRequired[str],
+    StartedAfter: NotRequired[Union[datetime, str]],
+    StartedBefore: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+## DataQualityResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityResultTypeDef
+
+def get_value() -> DataQualityResultTypeDef:
+    return {
+        "ResultId": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityResultTypeDef(TypedDict):
+    ResultId: NotRequired[str],
+    Score: NotRequired[float],
+    DataSource: NotRequired[DataSourceTypeDef],  # (1)
+    RulesetName: NotRequired[str],
+    EvaluationContext: NotRequired[str],
+    StartedOn: NotRequired[datetime],
+    CompletedOn: NotRequired[datetime],
+    JobName: NotRequired[str],
+    JobRunId: NotRequired[str],
+    RulesetEvaluationRunId: NotRequired[str],
+    RuleResults: NotRequired[List[DataQualityRuleResultTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: DataQualityRuleResultTypeDef](./type_defs.md#dataqualityruleresulttypedef) 
+## DataQualityRuleRecommendationRunDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityRuleRecommendationRunDescriptionTypeDef
+
+def get_value() -> DataQualityRuleRecommendationRunDescriptionTypeDef:
+    return {
+        "RunId": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityRuleRecommendationRunDescriptionTypeDef(TypedDict):
+    RunId: NotRequired[str],
+    Status: NotRequired[TaskStatusTypeType],  # (1)
+    StartedOn: NotRequired[datetime],
+    DataSource: NotRequired[DataSourceTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
+2. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+## DataQualityRuleRecommendationRunFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityRuleRecommendationRunFilterTypeDef
+
+def get_value() -> DataQualityRuleRecommendationRunFilterTypeDef:
+    return {
+        "DataSource": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityRuleRecommendationRunFilterTypeDef(TypedDict):
+    DataSource: DataSourceTypeDef,  # (1)
+    StartedBefore: NotRequired[Union[datetime, str]],
+    StartedAfter: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+## DataQualityRulesetEvaluationRunDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityRulesetEvaluationRunDescriptionTypeDef
+
+def get_value() -> DataQualityRulesetEvaluationRunDescriptionTypeDef:
+    return {
+        "RunId": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityRulesetEvaluationRunDescriptionTypeDef(TypedDict):
+    RunId: NotRequired[str],
+    Status: NotRequired[TaskStatusTypeType],  # (1)
+    StartedOn: NotRequired[datetime],
+    DataSource: NotRequired[DataSourceTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
+2. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+## DataQualityRulesetEvaluationRunFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DataQualityRulesetEvaluationRunFilterTypeDef
+
+def get_value() -> DataQualityRulesetEvaluationRunFilterTypeDef:
+    return {
+        "DataSource": ...,
+    }
+```
+
+```python title="Definition"
+class DataQualityRulesetEvaluationRunFilterTypeDef(TypedDict):
+    DataSource: DataSourceTypeDef,  # (1)
+    StartedBefore: NotRequired[Union[datetime, str]],
+    StartedAfter: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+## GetDataQualityResultResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityResultResponseTypeDef
+
+def get_value() -> GetDataQualityResultResponseTypeDef:
+    return {
+        "ResultId": ...,
+        "Score": ...,
+        "DataSource": ...,
+        "RulesetName": ...,
+        "EvaluationContext": ...,
+        "StartedOn": ...,
+        "CompletedOn": ...,
+        "JobName": ...,
+        "JobRunId": ...,
+        "RulesetEvaluationRunId": ...,
+        "RuleResults": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityResultResponseTypeDef(TypedDict):
+    ResultId: str,
+    Score: float,
+    DataSource: DataSourceTypeDef,  # (1)
+    RulesetName: str,
+    EvaluationContext: str,
+    StartedOn: datetime,
+    CompletedOn: datetime,
+    JobName: str,
+    JobRunId: str,
+    RulesetEvaluationRunId: str,
+    RuleResults: List[DataQualityRuleResultTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: DataQualityRuleResultTypeDef](./type_defs.md#dataqualityruleresulttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDataQualityRuleRecommendationRunResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityRuleRecommendationRunResponseTypeDef
+
+def get_value() -> GetDataQualityRuleRecommendationRunResponseTypeDef:
+    return {
+        "RunId": ...,
+        "DataSource": ...,
+        "Role": ...,
+        "NumberOfWorkers": ...,
+        "Timeout": ...,
+        "Status": ...,
+        "ErrorString": ...,
+        "StartedOn": ...,
+        "LastModifiedOn": ...,
+        "CompletedOn": ...,
+        "ExecutionTime": ...,
+        "RecommendedRuleset": ...,
+        "CreatedRulesetName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityRuleRecommendationRunResponseTypeDef(TypedDict):
+    RunId: str,
+    DataSource: DataSourceTypeDef,  # (1)
+    Role: str,
+    NumberOfWorkers: int,
+    Timeout: int,
+    Status: TaskStatusTypeType,  # (2)
+    ErrorString: str,
+    StartedOn: datetime,
+    LastModifiedOn: datetime,
+    CompletedOn: datetime,
+    ExecutionTime: int,
+    RecommendedRuleset: str,
+    CreatedRulesetName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDataQualityRulesetEvaluationRunResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDataQualityRulesetEvaluationRunResponseTypeDef
+
+def get_value() -> GetDataQualityRulesetEvaluationRunResponseTypeDef:
+    return {
+        "RunId": ...,
+        "DataSource": ...,
+        "Role": ...,
+        "NumberOfWorkers": ...,
+        "Timeout": ...,
+        "AdditionalRunOptions": ...,
+        "Status": ...,
+        "ErrorString": ...,
+        "StartedOn": ...,
+        "LastModifiedOn": ...,
+        "CompletedOn": ...,
+        "ExecutionTime": ...,
+        "RulesetNames": ...,
+        "ResultIds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataQualityRulesetEvaluationRunResponseTypeDef(TypedDict):
+    RunId: str,
+    DataSource: DataSourceTypeDef,  # (1)
+    Role: str,
+    NumberOfWorkers: int,
+    Timeout: int,
+    AdditionalRunOptions: DataQualityEvaluationRunAdditionalRunOptionsTypeDef,  # (2)
+    Status: TaskStatusTypeType,  # (3)
+    ErrorString: str,
+    StartedOn: datetime,
+    LastModifiedOn: datetime,
+    CompletedOn: datetime,
+    ExecutionTime: int,
+    RulesetNames: List[str],
+    ResultIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: DataQualityEvaluationRunAdditionalRunOptionsTypeDef](./type_defs.md#dataqualityevaluationrunadditionalrunoptionstypedef) 
+3. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartDataQualityRuleRecommendationRunRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import StartDataQualityRuleRecommendationRunRequestRequestTypeDef
+
+def get_value() -> StartDataQualityRuleRecommendationRunRequestRequestTypeDef:
+    return {
+        "DataSource": ...,
+        "Role": ...,
+    }
+```
+
+```python title="Definition"
+class StartDataQualityRuleRecommendationRunRequestRequestTypeDef(TypedDict):
+    DataSource: DataSourceTypeDef,  # (1)
+    Role: str,
+    NumberOfWorkers: NotRequired[int],
+    Timeout: NotRequired[int],
+    CreatedRulesetName: NotRequired[str],
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+## StartDataQualityRulesetEvaluationRunRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import StartDataQualityRulesetEvaluationRunRequestRequestTypeDef
+
+def get_value() -> StartDataQualityRulesetEvaluationRunRequestRequestTypeDef:
+    return {
+        "DataSource": ...,
+        "Role": ...,
+        "RulesetNames": ...,
+    }
+```
+
+```python title="Definition"
+class StartDataQualityRulesetEvaluationRunRequestRequestTypeDef(TypedDict):
+    DataSource: DataSourceTypeDef,  # (1)
+    Role: str,
+    RulesetNames: Sequence[str],
+    NumberOfWorkers: NotRequired[int],
+    Timeout: NotRequired[int],
+    ClientToken: NotRequired[str],
+    AdditionalRunOptions: NotRequired[DataQualityEvaluationRunAdditionalRunOptionsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: DataQualityEvaluationRunAdditionalRunOptionsTypeDef](./type_defs.md#dataqualityevaluationrunadditionalrunoptionstypedef) 
 ## CreateSessionResponseTypeDef
 
 ```python title="Usage Example"
@@ -11238,6 +12076,151 @@ class GetCrawlersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: CrawlerTypeDef](./type_defs.md#crawlertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDataQualityResultsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityResultsResponseTypeDef
+
+def get_value() -> ListDataQualityResultsResponseTypeDef:
+    return {
+        "Results": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityResultsResponseTypeDef(TypedDict):
+    Results: List[DataQualityResultDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataQualityResultDescriptionTypeDef](./type_defs.md#dataqualityresultdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDataQualityResultsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityResultsRequestRequestTypeDef
+
+def get_value() -> ListDataQualityResultsRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityResultsRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[DataQualityResultFilterCriteriaTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: DataQualityResultFilterCriteriaTypeDef](./type_defs.md#dataqualityresultfiltercriteriatypedef) 
+## BatchGetDataQualityResultResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import BatchGetDataQualityResultResponseTypeDef
+
+def get_value() -> BatchGetDataQualityResultResponseTypeDef:
+    return {
+        "Results": ...,
+        "ResultsNotFound": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetDataQualityResultResponseTypeDef(TypedDict):
+    Results: List[DataQualityResultTypeDef],  # (1)
+    ResultsNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataQualityResultTypeDef](./type_defs.md#dataqualityresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDataQualityRuleRecommendationRunsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityRuleRecommendationRunsResponseTypeDef
+
+def get_value() -> ListDataQualityRuleRecommendationRunsResponseTypeDef:
+    return {
+        "Runs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityRuleRecommendationRunsResponseTypeDef(TypedDict):
+    Runs: List[DataQualityRuleRecommendationRunDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataQualityRuleRecommendationRunDescriptionTypeDef](./type_defs.md#dataqualityrulerecommendationrundescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDataQualityRuleRecommendationRunsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityRuleRecommendationRunsRequestRequestTypeDef
+
+def get_value() -> ListDataQualityRuleRecommendationRunsRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityRuleRecommendationRunsRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[DataQualityRuleRecommendationRunFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: DataQualityRuleRecommendationRunFilterTypeDef](./type_defs.md#dataqualityrulerecommendationrunfiltertypedef) 
+## ListDataQualityRulesetEvaluationRunsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityRulesetEvaluationRunsResponseTypeDef
+
+def get_value() -> ListDataQualityRulesetEvaluationRunsResponseTypeDef:
+    return {
+        "Runs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityRulesetEvaluationRunsResponseTypeDef(TypedDict):
+    Runs: List[DataQualityRulesetEvaluationRunDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DataQualityRulesetEvaluationRunDescriptionTypeDef](./type_defs.md#dataqualityrulesetevaluationrundescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDataQualityRulesetEvaluationRunsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListDataQualityRulesetEvaluationRunsRequestRequestTypeDef
+
+def get_value() -> ListDataQualityRulesetEvaluationRunsRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataQualityRulesetEvaluationRunsRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[DataQualityRulesetEvaluationRunFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: DataQualityRulesetEvaluationRunFilterTypeDef](./type_defs.md#dataqualityrulesetevaluationrunfiltertypedef) 
 ## CreateDatabaseRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11563,6 +12546,7 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
     OracleSQLCatalogTarget: NotRequired[OracleSQLCatalogTargetTypeDef],  # (49)
     PostgreSQLCatalogTarget: NotRequired[PostgreSQLCatalogTargetTypeDef],  # (50)
     DynamicTransform: NotRequired[DynamicTransformTypeDef],  # (51)
+    EvaluateDataQuality: NotRequired[EvaluateDataQualityTypeDef],  # (52)
 ```
 
 1. See [:material-code-braces: AthenaConnectorSourceTypeDef](./type_defs.md#athenaconnectorsourcetypedef) 
@@ -11616,6 +12600,7 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
 49. See [:material-code-braces: OracleSQLCatalogTargetTypeDef](./type_defs.md#oraclesqlcatalogtargettypedef) 
 50. See [:material-code-braces: PostgreSQLCatalogTargetTypeDef](./type_defs.md#postgresqlcatalogtargettypedef) 
 51. See [:material-code-braces: DynamicTransformTypeDef](./type_defs.md#dynamictransformtypedef) 
+52. See [:material-code-braces: EvaluateDataQualityTypeDef](./type_defs.md#evaluatedataqualitytypedef) 
 ## GetMLTaskRunsResponseTypeDef
 
 ```python title="Usage Example"

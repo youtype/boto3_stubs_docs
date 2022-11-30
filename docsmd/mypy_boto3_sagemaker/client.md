@@ -305,11 +305,12 @@ def create_app(
     self,
     *,
     DomainId: str,
-    UserProfileName: str,
     AppType: AppTypeType,  # (1)
     AppName: str,
+    UserProfileName: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
     ResourceSpec: ResourceSpecTypeDef = ...,  # (3)
+    SpaceName: str = ...,
 ) -> CreateAppResponseTypeDef:  # (4)
     ...
 ```
@@ -323,7 +324,6 @@ def create_app(
 ```python title="Usage example with kwargs"
 kwargs: CreateAppRequestRequestTypeDef = {  # (1)
     "DomainId": ...,
-    "UserProfileName": ...,
     "AppType": ...,
     "AppName": ...,
 }
@@ -678,7 +678,8 @@ def create_domain(
     KmsKeyId: str = ...,
     AppSecurityGroupManagement: AppSecurityGroupManagementType = ...,  # (5)
     DomainSettings: DomainSettingsTypeDef = ...,  # (6)
-) -> CreateDomainResponseTypeDef:  # (7)
+    DefaultSpaceSettings: DefaultSpaceSettingsTypeDef = ...,  # (7)
+) -> CreateDomainResponseTypeDef:  # (8)
     ...
 ```
 
@@ -688,7 +689,8 @@ def create_domain(
 4. See [:material-code-brackets: AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype) 
 5. See [:material-code-brackets: AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype) 
 6. See [:material-code-braces: DomainSettingsTypeDef](./type_defs.md#domainsettingstypedef) 
-7. See [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
+7. See [:material-code-braces: DefaultSpaceSettingsTypeDef](./type_defs.md#defaultspacesettingstypedef) 
+8. See [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -871,7 +873,8 @@ def create_endpoint_config(
     KmsKeyId: str = ...,
     AsyncInferenceConfig: AsyncInferenceConfigTypeDef = ...,  # (4)
     ExplainerConfig: ExplainerConfigTypeDef = ...,  # (5)
-) -> CreateEndpointConfigOutputTypeDef:  # (6)
+    ShadowProductionVariants: Sequence[ProductionVariantTypeDef] = ...,  # (1)
+) -> CreateEndpointConfigOutputTypeDef:  # (7)
     ...
 ```
 
@@ -880,7 +883,8 @@ def create_endpoint_config(
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 4. See [:material-code-braces: AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef) 
 5. See [:material-code-braces: ExplainerConfigTypeDef](./type_defs.md#explainerconfigtypedef) 
-6. See [:material-code-braces: CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef) 
+6. See [:material-code-braces: ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef) 
+7. See [:material-code-braces: CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1013,6 +1017,43 @@ parent.create_flow_definition(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateFlowDefinitionRequestRequestTypeDef](./type_defs.md#createflowdefinitionrequestrequesttypedef) 
+
+### create\_hub
+
+Create a hub.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").create_hub` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_hub)
+
+```python title="Method definition"
+def create_hub(
+    self,
+    *,
+    HubName: str,
+    HubDescription: str,
+    HubDisplayName: str = ...,
+    HubSearchKeywords: Sequence[str] = ...,
+    S3StorageConfig: HubS3StorageConfigTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateHubResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: HubS3StorageConfigTypeDef](./type_defs.md#hubs3storageconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateHubResponseTypeDef](./type_defs.md#createhubresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateHubRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+    "HubDescription": ...,
+}
+
+parent.create_hub(**kwargs)
+```
+
+1. See [:material-code-braces: CreateHubRequestRequestTypeDef](./type_defs.md#createhubrequestrequesttypedef) 
 
 ### create\_human\_task\_ui
 
@@ -1155,6 +1196,57 @@ parent.create_image_version(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateImageVersionRequestRequestTypeDef](./type_defs.md#createimageversionrequestrequesttypedef) 
+
+### create\_inference\_experiment
+
+Creates an inference experiment using the configurations specified in the
+request.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").create_inference_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_inference_experiment)
+
+```python title="Method definition"
+def create_inference_experiment(
+    self,
+    *,
+    Name: str,
+    Type: InferenceExperimentTypeType,  # (1)
+    RoleArn: str,
+    EndpointName: str,
+    ModelVariants: Sequence[ModelVariantConfigTypeDef],  # (2)
+    ShadowModeConfig: ShadowModeConfigTypeDef,  # (3)
+    Schedule: InferenceExperimentScheduleTypeDef = ...,  # (4)
+    Description: str = ...,
+    DataStorageConfig: InferenceExperimentDataStorageConfigTypeDef = ...,  # (5)
+    KmsKey: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (6)
+) -> CreateInferenceExperimentResponseTypeDef:  # (7)
+    ...
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-braces: ModelVariantConfigTypeDef](./type_defs.md#modelvariantconfigtypedef) 
+3. See [:material-code-braces: ShadowModeConfigTypeDef](./type_defs.md#shadowmodeconfigtypedef) 
+4. See [:material-code-braces: InferenceExperimentScheduleTypeDef](./type_defs.md#inferenceexperimentscheduletypedef) 
+5. See [:material-code-braces: InferenceExperimentDataStorageConfigTypeDef](./type_defs.md#inferenceexperimentdatastorageconfigtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: CreateInferenceExperimentResponseTypeDef](./type_defs.md#createinferenceexperimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateInferenceExperimentRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Type": ...,
+    "RoleArn": ...,
+    "EndpointName": ...,
+    "ModelVariants": ...,
+    "ShadowModeConfig": ...,
+}
+
+parent.create_inference_experiment(**kwargs)
+```
+
+1. See [:material-code-braces: CreateInferenceExperimentRequestRequestTypeDef](./type_defs.md#createinferenceexperimentrequestrequesttypedef) 
 
 ### create\_inference\_recommendations\_job
 
@@ -1341,6 +1433,79 @@ parent.create_model_bias_job_definition(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateModelBiasJobDefinitionRequestRequestTypeDef](./type_defs.md#createmodelbiasjobdefinitionrequestrequesttypedef) 
+
+### create\_model\_card
+
+Creates an Amazon SageMaker Model Card.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").create_model_card` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_card)
+
+```python title="Method definition"
+def create_model_card(
+    self,
+    *,
+    ModelCardName: str,
+    Content: str,
+    ModelCardStatus: ModelCardStatusType,  # (1)
+    SecurityConfig: ModelCardSecurityConfigTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateModelCardResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: ModelCardSecurityConfigTypeDef](./type_defs.md#modelcardsecurityconfigtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateModelCardResponseTypeDef](./type_defs.md#createmodelcardresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateModelCardRequestRequestTypeDef = {  # (1)
+    "ModelCardName": ...,
+    "Content": ...,
+    "ModelCardStatus": ...,
+}
+
+parent.create_model_card(**kwargs)
+```
+
+1. See [:material-code-braces: CreateModelCardRequestRequestTypeDef](./type_defs.md#createmodelcardrequestrequesttypedef) 
+
+### create\_model\_card\_export\_job
+
+Creates an Amazon SageMaker Model Card export job.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").create_model_card_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_card_export_job)
+
+```python title="Method definition"
+def create_model_card_export_job(
+    self,
+    *,
+    ModelCardName: str,
+    ModelCardExportJobName: str,
+    OutputConfig: ModelCardExportOutputConfigTypeDef,  # (1)
+    ModelCardVersion: int = ...,
+) -> CreateModelCardExportJobResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ModelCardExportOutputConfigTypeDef](./type_defs.md#modelcardexportoutputconfigtypedef) 
+2. See [:material-code-braces: CreateModelCardExportJobResponseTypeDef](./type_defs.md#createmodelcardexportjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateModelCardExportJobRequestRequestTypeDef = {  # (1)
+    "ModelCardName": ...,
+    "ModelCardExportJobName": ...,
+    "OutputConfig": ...,
+}
+
+parent.create_model_card_export_job(**kwargs)
+```
+
+1. See [:material-code-braces: CreateModelCardExportJobRequestRequestTypeDef](./type_defs.md#createmodelcardexportjobrequestrequesttypedef) 
 
 ### create\_model\_explainability\_job\_definition
 
@@ -1711,6 +1876,7 @@ def create_presigned_domain_url(
     UserProfileName: str,
     SessionExpirationDurationInSeconds: int = ...,
     ExpiresInSeconds: int = ...,
+    SpaceName: str = ...,
 ) -> CreatePresignedDomainUrlResponseTypeDef:  # (1)
     ...
 ```
@@ -1845,6 +2011,41 @@ parent.create_project(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateProjectInputRequestTypeDef](./type_defs.md#createprojectinputrequesttypedef) 
+
+### create\_space
+
+Creates a space used for real time collaboration in a Domain.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").create_space` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_space)
+
+```python title="Method definition"
+def create_space(
+    self,
+    *,
+    DomainId: str,
+    SpaceName: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    SpaceSettings: SpaceSettingsTypeDef = ...,  # (2)
+) -> CreateSpaceResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: SpaceSettingsTypeDef](./type_defs.md#spacesettingstypedef) 
+3. See [:material-code-braces: CreateSpaceResponseTypeDef](./type_defs.md#createspaceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateSpaceRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SpaceName": ...,
+}
+
+parent.create_space(**kwargs)
+```
+
+1. See [:material-code-braces: CreateSpaceRequestRequestTypeDef](./type_defs.md#createspacerequestrequesttypedef) 
 
 ### create\_studio\_lifecycle\_config
 
@@ -2272,9 +2473,10 @@ def delete_app(
     self,
     *,
     DomainId: str,
-    UserProfileName: str,
     AppType: AppTypeType,  # (1)
     AppName: str,
+    UserProfileName: str = ...,
+    SpaceName: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
@@ -2286,7 +2488,6 @@ def delete_app(
 ```python title="Usage example with kwargs"
 kwargs: DeleteAppRequestRequestTypeDef = {  # (1)
     "DomainId": ...,
-    "UserProfileName": ...,
     "AppType": ...,
     "AppName": ...,
 }
@@ -2741,6 +2942,71 @@ parent.delete_flow_definition(**kwargs)
 
 1. See [:material-code-braces: DeleteFlowDefinitionRequestRequestTypeDef](./type_defs.md#deleteflowdefinitionrequestrequesttypedef) 
 
+### delete\_hub
+
+Delete a hub.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").delete_hub` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_hub)
+
+```python title="Method definition"
+def delete_hub(
+    self,
+    *,
+    HubName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteHubRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+}
+
+parent.delete_hub(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteHubRequestRequestTypeDef](./type_defs.md#deletehubrequestrequesttypedef) 
+
+### delete\_hub\_content
+
+Delete the contents of a hub.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").delete_hub_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_hub_content)
+
+```python title="Method definition"
+def delete_hub_content(
+    self,
+    *,
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    HubContentName: str,
+    HubContentVersion: str,
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteHubContentRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+    "HubContentType": ...,
+    "HubContentName": ...,
+    "HubContentVersion": ...,
+}
+
+parent.delete_hub_content(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteHubContentRequestRequestTypeDef](./type_defs.md#deletehubcontentrequestrequesttypedef) 
+
 ### delete\_human\_task\_ui
 
 Use this operation to delete a human task user interface (worker task template).
@@ -2827,6 +3093,35 @@ parent.delete_image_version(**kwargs)
 
 1. See [:material-code-braces: DeleteImageVersionRequestRequestTypeDef](./type_defs.md#deleteimageversionrequestrequesttypedef) 
 
+### delete\_inference\_experiment
+
+Deletes an inference experiment.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").delete_inference_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_inference_experiment)
+
+```python title="Method definition"
+def delete_inference_experiment(
+    self,
+    *,
+    Name: str,
+) -> DeleteInferenceExperimentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteInferenceExperimentResponseTypeDef](./type_defs.md#deleteinferenceexperimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteInferenceExperimentRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.delete_inference_experiment(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteInferenceExperimentRequestRequestTypeDef](./type_defs.md#deleteinferenceexperimentrequestrequesttypedef) 
+
 ### delete\_model
 
 Deletes a model.
@@ -2884,6 +3179,35 @@ parent.delete_model_bias_job_definition(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteModelBiasJobDefinitionRequestRequestTypeDef](./type_defs.md#deletemodelbiasjobdefinitionrequestrequesttypedef) 
+
+### delete\_model\_card
+
+Deletes an Amazon SageMaker Model Card.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").delete_model_card` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_card)
+
+```python title="Method definition"
+def delete_model_card(
+    self,
+    *,
+    ModelCardName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteModelCardRequestRequestTypeDef = {  # (1)
+    "ModelCardName": ...,
+}
+
+parent.delete_model_card(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteModelCardRequestRequestTypeDef](./type_defs.md#deletemodelcardrequestrequesttypedef) 
 
 ### delete\_model\_explainability\_job\_definition
 
@@ -3176,6 +3500,37 @@ parent.delete_project(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteProjectInputRequestTypeDef](./type_defs.md#deleteprojectinputrequesttypedef) 
+
+### delete\_space
+
+Used to delete a space.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").delete_space` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_space)
+
+```python title="Method definition"
+def delete_space(
+    self,
+    *,
+    DomainId: str,
+    SpaceName: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteSpaceRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SpaceName": ...,
+}
+
+parent.delete_space(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteSpaceRequestRequestTypeDef](./type_defs.md#deletespacerequestrequesttypedef) 
 
 ### delete\_studio\_lifecycle\_config
 
@@ -3483,9 +3838,10 @@ def describe_app(
     self,
     *,
     DomainId: str,
-    UserProfileName: str,
     AppType: AppTypeType,  # (1)
     AppName: str,
+    UserProfileName: str = ...,
+    SpaceName: str = ...,
 ) -> DescribeAppResponseTypeDef:  # (2)
     ...
 ```
@@ -3497,7 +3853,6 @@ def describe_app(
 ```python title="Usage example with kwargs"
 kwargs: DescribeAppRequestRequestTypeDef = {  # (1)
     "DomainId": ...,
-    "UserProfileName": ...,
     "AppType": ...,
     "AppName": ...,
 }
@@ -4037,6 +4392,70 @@ parent.describe_flow_definition(**kwargs)
 
 1. See [:material-code-braces: DescribeFlowDefinitionRequestRequestTypeDef](./type_defs.md#describeflowdefinitionrequestrequesttypedef) 
 
+### describe\_hub
+
+Describe a hub.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_hub` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_hub)
+
+```python title="Method definition"
+def describe_hub(
+    self,
+    *,
+    HubName: str,
+) -> DescribeHubResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeHubResponseTypeDef](./type_defs.md#describehubresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHubRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+}
+
+parent.describe_hub(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHubRequestRequestTypeDef](./type_defs.md#describehubrequestrequesttypedef) 
+
+### describe\_hub\_content
+
+Describe the content of a hub.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_hub_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_hub_content)
+
+```python title="Method definition"
+def describe_hub_content(
+    self,
+    *,
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    HubContentName: str,
+    HubContentVersion: str = ...,
+) -> DescribeHubContentResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-braces: DescribeHubContentResponseTypeDef](./type_defs.md#describehubcontentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHubContentRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+    "HubContentType": ...,
+    "HubContentName": ...,
+}
+
+parent.describe_hub_content(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHubContentRequestRequestTypeDef](./type_defs.md#describehubcontentrequestrequesttypedef) 
+
 ### describe\_human\_task\_ui
 
 Returns information about the requested human task user interface (worker task
@@ -4154,6 +4573,35 @@ parent.describe_image_version(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeImageVersionRequestRequestTypeDef](./type_defs.md#describeimageversionrequestrequesttypedef) 
+
+### describe\_inference\_experiment
+
+Returns details about an inference experiment.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_inference_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_inference_experiment)
+
+```python title="Method definition"
+def describe_inference_experiment(
+    self,
+    *,
+    Name: str,
+) -> DescribeInferenceExperimentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeInferenceExperimentResponseTypeDef](./type_defs.md#describeinferenceexperimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInferenceExperimentRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.describe_inference_experiment(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInferenceExperimentRequestRequestTypeDef](./type_defs.md#describeinferenceexperimentrequestrequesttypedef) 
 
 ### describe\_inference\_recommendations\_job
 
@@ -4299,6 +4747,66 @@ parent.describe_model_bias_job_definition(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeModelBiasJobDefinitionRequestRequestTypeDef](./type_defs.md#describemodelbiasjobdefinitionrequestrequesttypedef) 
+
+### describe\_model\_card
+
+Describes the content, creation time, and security configuration of an Amazon
+SageMaker Model Card.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_model_card` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_card)
+
+```python title="Method definition"
+def describe_model_card(
+    self,
+    *,
+    ModelCardName: str,
+    ModelCardVersion: int = ...,
+) -> DescribeModelCardResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeModelCardResponseTypeDef](./type_defs.md#describemodelcardresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeModelCardRequestRequestTypeDef = {  # (1)
+    "ModelCardName": ...,
+}
+
+parent.describe_model_card(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeModelCardRequestRequestTypeDef](./type_defs.md#describemodelcardrequestrequesttypedef) 
+
+### describe\_model\_card\_export\_job
+
+Describes an Amazon SageMaker Model Card export job.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_model_card_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_card_export_job)
+
+```python title="Method definition"
+def describe_model_card_export_job(
+    self,
+    *,
+    ModelCardExportJobArn: str,
+) -> DescribeModelCardExportJobResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeModelCardExportJobResponseTypeDef](./type_defs.md#describemodelcardexportjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeModelCardExportJobRequestRequestTypeDef = {  # (1)
+    "ModelCardExportJobArn": ...,
+}
+
+parent.describe_model_card_export_job(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeModelCardExportJobRequestRequestTypeDef](./type_defs.md#describemodelcardexportjobrequestrequesttypedef) 
 
 ### describe\_model\_explainability\_job\_definition
 
@@ -4648,6 +5156,37 @@ parent.describe_project(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeProjectInputRequestTypeDef](./type_defs.md#describeprojectinputrequesttypedef) 
+
+### describe\_space
+
+Describes the space.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").describe_space` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_space)
+
+```python title="Method definition"
+def describe_space(
+    self,
+    *,
+    DomainId: str,
+    SpaceName: str,
+) -> DescribeSpaceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeSpaceResponseTypeDef](./type_defs.md#describespaceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSpaceRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SpaceName": ...,
+}
+
+parent.describe_space(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSpaceRequestRequestTypeDef](./type_defs.md#describespacerequestrequesttypedef) 
 
 ### describe\_studio\_lifecycle\_config
 
@@ -5130,6 +5669,51 @@ parent.get_search_suggestions(**kwargs)
 
 1. See [:material-code-braces: GetSearchSuggestionsRequestRequestTypeDef](./type_defs.md#getsearchsuggestionsrequestrequesttypedef) 
 
+### import\_hub\_content
+
+Import hub content.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").import_hub_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.import_hub_content)
+
+```python title="Method definition"
+def import_hub_content(
+    self,
+    *,
+    HubContentName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    DocumentSchemaVersion: str,
+    HubName: str,
+    HubContentDocument: str,
+    HubContentVersion: str = ...,
+    HubContentDisplayName: str = ...,
+    HubContentDescription: str = ...,
+    HubContentMarkdown: str = ...,
+    HubContentSearchKeywords: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> ImportHubContentResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ImportHubContentResponseTypeDef](./type_defs.md#importhubcontentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ImportHubContentRequestRequestTypeDef = {  # (1)
+    "HubContentName": ...,
+    "HubContentType": ...,
+    "DocumentSchemaVersion": ...,
+    "HubName": ...,
+    "HubContentDocument": ...,
+}
+
+parent.import_hub_content(**kwargs)
+```
+
+1. See [:material-code-braces: ImportHubContentRequestRequestTypeDef](./type_defs.md#importhubcontentrequestrequesttypedef) 
+
 ### list\_actions
 
 Lists the actions in your account and their properties.
@@ -5261,6 +5845,7 @@ def list_apps(
     SortBy: AppSortKeyType = ...,  # (2)
     DomainIdEquals: str = ...,
     UserProfileNameEquals: str = ...,
+    SpaceNameEquals: str = ...,
 ) -> ListAppsResponseTypeDef:  # (3)
     ...
 ```
@@ -5968,6 +6553,131 @@ parent.list_flow_definitions(**kwargs)
 
 1. See [:material-code-braces: ListFlowDefinitionsRequestRequestTypeDef](./type_defs.md#listflowdefinitionsrequestrequesttypedef) 
 
+### list\_hub\_content\_versions
+
+List hub content versions.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_hub_content_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hub_content_versions)
+
+```python title="Method definition"
+def list_hub_content_versions(
+    self,
+    *,
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    HubContentName: str,
+    MinVersion: str = ...,
+    MaxSchemaVersion: str = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    SortBy: HubContentSortByType = ...,  # (2)
+    SortOrder: SortOrderType = ...,  # (3)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListHubContentVersionsResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-brackets: HubContentSortByType](./literals.md#hubcontentsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: ListHubContentVersionsResponseTypeDef](./type_defs.md#listhubcontentversionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListHubContentVersionsRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+    "HubContentType": ...,
+    "HubContentName": ...,
+}
+
+parent.list_hub_content_versions(**kwargs)
+```
+
+1. See [:material-code-braces: ListHubContentVersionsRequestRequestTypeDef](./type_defs.md#listhubcontentversionsrequestrequesttypedef) 
+
+### list\_hub\_contents
+
+List the contents of a hub.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_hub_contents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hub_contents)
+
+```python title="Method definition"
+def list_hub_contents(
+    self,
+    *,
+    HubName: str,
+    HubContentType: HubContentTypeType,  # (1)
+    NameContains: str = ...,
+    MaxSchemaVersion: str = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    SortBy: HubContentSortByType = ...,  # (2)
+    SortOrder: SortOrderType = ...,  # (3)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListHubContentsResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: HubContentTypeType](./literals.md#hubcontenttypetype) 
+2. See [:material-code-brackets: HubContentSortByType](./literals.md#hubcontentsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: ListHubContentsResponseTypeDef](./type_defs.md#listhubcontentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListHubContentsRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+    "HubContentType": ...,
+}
+
+parent.list_hub_contents(**kwargs)
+```
+
+1. See [:material-code-braces: ListHubContentsRequestRequestTypeDef](./type_defs.md#listhubcontentsrequestrequesttypedef) 
+
+### list\_hubs
+
+List all existing hubs.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_hubs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hubs)
+
+```python title="Method definition"
+def list_hubs(
+    self,
+    *,
+    NameContains: str = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    LastModifiedTimeBefore: Union[datetime, str] = ...,
+    LastModifiedTimeAfter: Union[datetime, str] = ...,
+    SortBy: HubSortByType = ...,  # (1)
+    SortOrder: SortOrderType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListHubsResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: HubSortByType](./literals.md#hubsortbytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: ListHubsResponseTypeDef](./type_defs.md#listhubsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListHubsRequestRequestTypeDef = {  # (1)
+    "NameContains": ...,
+}
+
+parent.list_hubs(**kwargs)
+```
+
+1. See [:material-code-braces: ListHubsRequestRequestTypeDef](./type_defs.md#listhubsrequestrequesttypedef) 
+
 ### list\_human\_task\_uis
 
 Returns information about the human task user interfaces in your account.
@@ -6121,6 +6831,49 @@ parent.list_images(**kwargs)
 ```
 
 1. See [:material-code-braces: ListImagesRequestRequestTypeDef](./type_defs.md#listimagesrequestrequesttypedef) 
+
+### list\_inference\_experiments
+
+Returns the list of all inference experiments.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_inference_experiments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_inference_experiments)
+
+```python title="Method definition"
+def list_inference_experiments(
+    self,
+    *,
+    NameContains: str = ...,
+    Type: InferenceExperimentTypeType = ...,  # (1)
+    StatusEquals: InferenceExperimentStatusType = ...,  # (2)
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    LastModifiedTimeAfter: Union[datetime, str] = ...,
+    LastModifiedTimeBefore: Union[datetime, str] = ...,
+    SortBy: SortInferenceExperimentsByType = ...,  # (3)
+    SortOrder: SortOrderType = ...,  # (4)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListInferenceExperimentsResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-brackets: InferenceExperimentStatusType](./literals.md#inferenceexperimentstatustype) 
+3. See [:material-code-brackets: SortInferenceExperimentsByType](./literals.md#sortinferenceexperimentsbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: ListInferenceExperimentsResponseTypeDef](./type_defs.md#listinferenceexperimentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListInferenceExperimentsRequestRequestTypeDef = {  # (1)
+    "NameContains": ...,
+}
+
+parent.list_inference_experiments(**kwargs)
+```
+
+1. See [:material-code-braces: ListInferenceExperimentsRequestRequestTypeDef](./type_defs.md#listinferenceexperimentsrequestrequesttypedef) 
 
 ### list\_inference\_recommendations\_job\_steps
 
@@ -6351,6 +7104,125 @@ parent.list_model_bias_job_definitions(**kwargs)
 
 1. See [:material-code-braces: ListModelBiasJobDefinitionsRequestRequestTypeDef](./type_defs.md#listmodelbiasjobdefinitionsrequestrequesttypedef) 
 
+### list\_model\_card\_export\_jobs
+
+List the export jobs for the Amazon SageMaker Model Card.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_model_card_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_card_export_jobs)
+
+```python title="Method definition"
+def list_model_card_export_jobs(
+    self,
+    *,
+    ModelCardName: str,
+    ModelCardVersion: int = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    ModelCardExportJobNameContains: str = ...,
+    StatusEquals: ModelCardExportJobStatusType = ...,  # (1)
+    SortBy: ModelCardExportJobSortByType = ...,  # (2)
+    SortOrder: ModelCardExportJobSortOrderType = ...,  # (3)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListModelCardExportJobsResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardExportJobStatusType](./literals.md#modelcardexportjobstatustype) 
+2. See [:material-code-brackets: ModelCardExportJobSortByType](./literals.md#modelcardexportjobsortbytype) 
+3. See [:material-code-brackets: ModelCardExportJobSortOrderType](./literals.md#modelcardexportjobsortordertype) 
+4. See [:material-code-braces: ListModelCardExportJobsResponseTypeDef](./type_defs.md#listmodelcardexportjobsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListModelCardExportJobsRequestRequestTypeDef = {  # (1)
+    "ModelCardName": ...,
+}
+
+parent.list_model_card_export_jobs(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelCardExportJobsRequestRequestTypeDef](./type_defs.md#listmodelcardexportjobsrequestrequesttypedef) 
+
+### list\_model\_card\_versions
+
+List existing versions of an Amazon SageMaker Model Card.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_model_card_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_card_versions)
+
+```python title="Method definition"
+def list_model_card_versions(
+    self,
+    *,
+    ModelCardName: str,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    MaxResults: int = ...,
+    ModelCardStatus: ModelCardStatusType = ...,  # (1)
+    NextToken: str = ...,
+    SortBy: ModelCardVersionSortByType = ...,  # (2)
+    SortOrder: ModelCardSortOrderType = ...,  # (3)
+) -> ListModelCardVersionsResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardVersionSortByType](./literals.md#modelcardversionsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+4. See [:material-code-braces: ListModelCardVersionsResponseTypeDef](./type_defs.md#listmodelcardversionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListModelCardVersionsRequestRequestTypeDef = {  # (1)
+    "ModelCardName": ...,
+}
+
+parent.list_model_card_versions(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelCardVersionsRequestRequestTypeDef](./type_defs.md#listmodelcardversionsrequestrequesttypedef) 
+
+### list\_model\_cards
+
+List existing model cards.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_model_cards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_cards)
+
+```python title="Method definition"
+def list_model_cards(
+    self,
+    *,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    MaxResults: int = ...,
+    NameContains: str = ...,
+    ModelCardStatus: ModelCardStatusType = ...,  # (1)
+    NextToken: str = ...,
+    SortBy: ModelCardSortByType = ...,  # (2)
+    SortOrder: ModelCardSortOrderType = ...,  # (3)
+) -> ListModelCardsResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardSortByType](./literals.md#modelcardsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+4. See [:material-code-braces: ListModelCardsResponseTypeDef](./type_defs.md#listmodelcardsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListModelCardsRequestRequestTypeDef = {  # (1)
+    "CreationTimeAfter": ...,
+}
+
+parent.list_model_cards(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelCardsRequestRequestTypeDef](./type_defs.md#listmodelcardsrequestrequesttypedef) 
+
 ### list\_model\_explainability\_job\_definitions
 
 Lists model explainability job definitions that satisfy various filters.
@@ -6575,6 +7447,77 @@ parent.list_models(**kwargs)
 ```
 
 1. See [:material-code-braces: ListModelsInputRequestTypeDef](./type_defs.md#listmodelsinputrequesttypedef) 
+
+### list\_monitoring\_alert\_history
+
+Gets a list of past alerts in a model monitoring schedule.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_monitoring_alert_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_alert_history)
+
+```python title="Method definition"
+def list_monitoring_alert_history(
+    self,
+    *,
+    MonitoringScheduleName: str = ...,
+    MonitoringAlertName: str = ...,
+    SortBy: MonitoringAlertHistorySortKeyType = ...,  # (1)
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    StatusEquals: MonitoringAlertStatusType = ...,  # (3)
+) -> ListMonitoringAlertHistoryResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: MonitoringAlertHistorySortKeyType](./literals.md#monitoringalerthistorysortkeytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: MonitoringAlertStatusType](./literals.md#monitoringalertstatustype) 
+4. See [:material-code-braces: ListMonitoringAlertHistoryResponseTypeDef](./type_defs.md#listmonitoringalerthistoryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMonitoringAlertHistoryRequestRequestTypeDef = {  # (1)
+    "MonitoringScheduleName": ...,
+}
+
+parent.list_monitoring_alert_history(**kwargs)
+```
+
+1. See [:material-code-braces: ListMonitoringAlertHistoryRequestRequestTypeDef](./type_defs.md#listmonitoringalerthistoryrequestrequesttypedef) 
+
+### list\_monitoring\_alerts
+
+Gets the alerts for a single monitoring schedule.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_monitoring_alerts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_alerts)
+
+```python title="Method definition"
+def list_monitoring_alerts(
+    self,
+    *,
+    MonitoringScheduleName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMonitoringAlertsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListMonitoringAlertsResponseTypeDef](./type_defs.md#listmonitoringalertsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMonitoringAlertsRequestRequestTypeDef = {  # (1)
+    "MonitoringScheduleName": ...,
+}
+
+parent.list_monitoring_alerts(**kwargs)
+```
+
+1. See [:material-code-braces: ListMonitoringAlertsRequestRequestTypeDef](./type_defs.md#listmonitoringalertsrequestrequesttypedef) 
 
 ### list\_monitoring\_executions
 
@@ -6968,6 +7911,42 @@ parent.list_projects(**kwargs)
 ```
 
 1. See [:material-code-braces: ListProjectsInputRequestTypeDef](./type_defs.md#listprojectsinputrequesttypedef) 
+
+### list\_spaces
+
+Lists spaces.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_spaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_spaces)
+
+```python title="Method definition"
+def list_spaces(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SortOrder: SortOrderType = ...,  # (1)
+    SortBy: SpaceSortKeyType = ...,  # (2)
+    DomainIdEquals: str = ...,
+    SpaceNameContains: str = ...,
+) -> ListSpacesResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-brackets: SpaceSortKeyType](./literals.md#spacesortkeytype) 
+3. See [:material-code-braces: ListSpacesResponseTypeDef](./type_defs.md#listspacesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSpacesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_spaces(**kwargs)
+```
+
+1. See [:material-code-braces: ListSpacesRequestRequestTypeDef](./type_defs.md#listspacesrequestrequesttypedef) 
 
 ### list\_stage\_devices
 
@@ -7718,6 +8697,35 @@ parent.start_edge_deployment_stage(**kwargs)
 
 1. See [:material-code-braces: StartEdgeDeploymentStageRequestRequestTypeDef](./type_defs.md#startedgedeploymentstagerequestrequesttypedef) 
 
+### start\_inference\_experiment
+
+Starts an inference experiment.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").start_inference_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_inference_experiment)
+
+```python title="Method definition"
+def start_inference_experiment(
+    self,
+    *,
+    Name: str,
+) -> StartInferenceExperimentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartInferenceExperimentResponseTypeDef](./type_defs.md#startinferenceexperimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartInferenceExperimentRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.start_inference_experiment(**kwargs)
+```
+
+1. See [:material-code-braces: StartInferenceExperimentRequestRequestTypeDef](./type_defs.md#startinferenceexperimentrequestrequesttypedef) 
+
 ### start\_monitoring\_schedule
 
 Starts a previously stopped monitoring schedule.
@@ -7961,6 +8969,43 @@ parent.stop_hyper_parameter_tuning_job(**kwargs)
 ```
 
 1. See [:material-code-braces: StopHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#stophyperparametertuningjobrequestrequesttypedef) 
+
+### stop\_inference\_experiment
+
+Stops an inference experiment.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").stop_inference_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_inference_experiment)
+
+```python title="Method definition"
+def stop_inference_experiment(
+    self,
+    *,
+    Name: str,
+    ModelVariantActions: Mapping[str, ModelVariantActionType],  # (1)
+    DesiredModelVariants: Sequence[ModelVariantConfigTypeDef] = ...,  # (2)
+    DesiredState: InferenceExperimentStopDesiredStateType = ...,  # (3)
+    Reason: str = ...,
+) -> StopInferenceExperimentResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ModelVariantActionType](./literals.md#modelvariantactiontype) 
+2. See [:material-code-braces: ModelVariantConfigTypeDef](./type_defs.md#modelvariantconfigtypedef) 
+3. See [:material-code-brackets: InferenceExperimentStopDesiredStateType](./literals.md#inferenceexperimentstopdesiredstatetype) 
+4. See [:material-code-braces: StopInferenceExperimentResponseTypeDef](./type_defs.md#stopinferenceexperimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopInferenceExperimentRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ModelVariantActions": ...,
+}
+
+parent.stop_inference_experiment(**kwargs)
+```
+
+1. See [:material-code-braces: StopInferenceExperimentRequestRequestTypeDef](./type_defs.md#stopinferenceexperimentrequestrequesttypedef) 
 
 ### stop\_inference\_recommendations\_job
 
@@ -8437,13 +9482,15 @@ def update_domain(
     DomainId: str,
     DefaultUserSettings: UserSettingsTypeDef = ...,  # (1)
     DomainSettingsForUpdate: DomainSettingsForUpdateTypeDef = ...,  # (2)
-) -> UpdateDomainResponseTypeDef:  # (3)
+    DefaultSpaceSettings: DefaultSpaceSettingsTypeDef = ...,  # (3)
+) -> UpdateDomainResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
 2. See [:material-code-braces: DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef) 
-3. See [:material-code-braces: UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef) 
+3. See [:material-code-braces: DefaultSpaceSettingsTypeDef](./type_defs.md#defaultspacesettingstypedef) 
+4. See [:material-code-braces: UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -8625,6 +9672,38 @@ parent.update_feature_metadata(**kwargs)
 
 1. See [:material-code-braces: UpdateFeatureMetadataRequestRequestTypeDef](./type_defs.md#updatefeaturemetadatarequestrequesttypedef) 
 
+### update\_hub
+
+Update a hub.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_hub` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_hub)
+
+```python title="Method definition"
+def update_hub(
+    self,
+    *,
+    HubName: str,
+    HubDescription: str = ...,
+    HubDisplayName: str = ...,
+    HubSearchKeywords: Sequence[str] = ...,
+) -> UpdateHubResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateHubResponseTypeDef](./type_defs.md#updatehubresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateHubRequestRequestTypeDef = {  # (1)
+    "HubName": ...,
+}
+
+parent.update_hub(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateHubRequestRequestTypeDef](./type_defs.md#updatehubrequestrequesttypedef) 
+
 ### update\_image
 
 Updates the properties of a SageMaker image.
@@ -8657,6 +9736,76 @@ parent.update_image(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateImageRequestRequestTypeDef](./type_defs.md#updateimagerequestrequesttypedef) 
+
+### update\_inference\_experiment
+
+Updates an inference experiment that you created.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_inference_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_inference_experiment)
+
+```python title="Method definition"
+def update_inference_experiment(
+    self,
+    *,
+    Name: str,
+    Schedule: InferenceExperimentScheduleTypeDef = ...,  # (1)
+    Description: str = ...,
+    ModelVariants: Sequence[ModelVariantConfigTypeDef] = ...,  # (2)
+    DataStorageConfig: InferenceExperimentDataStorageConfigTypeDef = ...,  # (3)
+    ShadowModeConfig: ShadowModeConfigTypeDef = ...,  # (4)
+) -> UpdateInferenceExperimentResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: InferenceExperimentScheduleTypeDef](./type_defs.md#inferenceexperimentscheduletypedef) 
+2. See [:material-code-braces: ModelVariantConfigTypeDef](./type_defs.md#modelvariantconfigtypedef) 
+3. See [:material-code-braces: InferenceExperimentDataStorageConfigTypeDef](./type_defs.md#inferenceexperimentdatastorageconfigtypedef) 
+4. See [:material-code-braces: ShadowModeConfigTypeDef](./type_defs.md#shadowmodeconfigtypedef) 
+5. See [:material-code-braces: UpdateInferenceExperimentResponseTypeDef](./type_defs.md#updateinferenceexperimentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateInferenceExperimentRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.update_inference_experiment(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateInferenceExperimentRequestRequestTypeDef](./type_defs.md#updateinferenceexperimentrequestrequesttypedef) 
+
+### update\_model\_card
+
+Update an Amazon SageMaker Model Card.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_model_card` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_model_card)
+
+```python title="Method definition"
+def update_model_card(
+    self,
+    *,
+    ModelCardName: str,
+    Content: str = ...,
+    ModelCardStatus: ModelCardStatusType = ...,  # (1)
+) -> UpdateModelCardResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-braces: UpdateModelCardResponseTypeDef](./type_defs.md#updatemodelcardresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateModelCardRequestRequestTypeDef = {  # (1)
+    "ModelCardName": ...,
+}
+
+parent.update_model_card(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateModelCardRequestRequestTypeDef](./type_defs.md#updatemodelcardrequestrequesttypedef) 
 
 ### update\_model\_package
 
@@ -8693,6 +9842,41 @@ parent.update_model_package(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateModelPackageInputRequestTypeDef](./type_defs.md#updatemodelpackageinputrequesttypedef) 
+
+### update\_monitoring\_alert
+
+Update the parameters of a model monitor alert.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_monitoring_alert` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_monitoring_alert)
+
+```python title="Method definition"
+def update_monitoring_alert(
+    self,
+    *,
+    MonitoringScheduleName: str,
+    MonitoringAlertName: str,
+    DatapointsToAlert: int,
+    EvaluationPeriod: int,
+) -> UpdateMonitoringAlertResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateMonitoringAlertResponseTypeDef](./type_defs.md#updatemonitoringalertresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateMonitoringAlertRequestRequestTypeDef = {  # (1)
+    "MonitoringScheduleName": ...,
+    "MonitoringAlertName": ...,
+    "DatapointsToAlert": ...,
+    "EvaluationPeriod": ...,
+}
+
+parent.update_monitoring_alert(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateMonitoringAlertRequestRequestTypeDef](./type_defs.md#updatemonitoringalertrequestrequesttypedef) 
 
 ### update\_monitoring\_schedule
 
@@ -8908,6 +10092,39 @@ parent.update_project(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateProjectInputRequestTypeDef](./type_defs.md#updateprojectinputrequesttypedef) 
+
+### update\_space
+
+Updates the settings of a space.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_space` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_space)
+
+```python title="Method definition"
+def update_space(
+    self,
+    *,
+    DomainId: str,
+    SpaceName: str,
+    SpaceSettings: SpaceSettingsTypeDef = ...,  # (1)
+) -> UpdateSpaceResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SpaceSettingsTypeDef](./type_defs.md#spacesettingstypedef) 
+2. See [:material-code-braces: UpdateSpaceResponseTypeDef](./type_defs.md#updatespaceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateSpaceRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SpaceName": ...,
+}
+
+parent.update_space(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSpaceRequestRequestTypeDef](./type_defs.md#updatespacerequestrequesttypedef) 
 
 ### update\_training\_job
 
@@ -9152,18 +10369,24 @@ Type annotations and code completion for `#!python boto3.client("sagemaker").get
 - `client.get_paginator("list_hyper_parameter_tuning_jobs")` -> [ListHyperParameterTuningJobsPaginator](./paginators.md#listhyperparametertuningjobspaginator)
 - `client.get_paginator("list_image_versions")` -> [ListImageVersionsPaginator](./paginators.md#listimageversionspaginator)
 - `client.get_paginator("list_images")` -> [ListImagesPaginator](./paginators.md#listimagespaginator)
+- `client.get_paginator("list_inference_experiments")` -> [ListInferenceExperimentsPaginator](./paginators.md#listinferenceexperimentspaginator)
 - `client.get_paginator("list_inference_recommendations_job_steps")` -> [ListInferenceRecommendationsJobStepsPaginator](./paginators.md#listinferencerecommendationsjobstepspaginator)
 - `client.get_paginator("list_inference_recommendations_jobs")` -> [ListInferenceRecommendationsJobsPaginator](./paginators.md#listinferencerecommendationsjobspaginator)
 - `client.get_paginator("list_labeling_jobs")` -> [ListLabelingJobsPaginator](./paginators.md#listlabelingjobspaginator)
 - `client.get_paginator("list_labeling_jobs_for_workteam")` -> [ListLabelingJobsForWorkteamPaginator](./paginators.md#listlabelingjobsforworkteampaginator)
 - `client.get_paginator("list_lineage_groups")` -> [ListLineageGroupsPaginator](./paginators.md#listlineagegroupspaginator)
 - `client.get_paginator("list_model_bias_job_definitions")` -> [ListModelBiasJobDefinitionsPaginator](./paginators.md#listmodelbiasjobdefinitionspaginator)
+- `client.get_paginator("list_model_card_export_jobs")` -> [ListModelCardExportJobsPaginator](./paginators.md#listmodelcardexportjobspaginator)
+- `client.get_paginator("list_model_card_versions")` -> [ListModelCardVersionsPaginator](./paginators.md#listmodelcardversionspaginator)
+- `client.get_paginator("list_model_cards")` -> [ListModelCardsPaginator](./paginators.md#listmodelcardspaginator)
 - `client.get_paginator("list_model_explainability_job_definitions")` -> [ListModelExplainabilityJobDefinitionsPaginator](./paginators.md#listmodelexplainabilityjobdefinitionspaginator)
 - `client.get_paginator("list_model_metadata")` -> [ListModelMetadataPaginator](./paginators.md#listmodelmetadatapaginator)
 - `client.get_paginator("list_model_package_groups")` -> [ListModelPackageGroupsPaginator](./paginators.md#listmodelpackagegroupspaginator)
 - `client.get_paginator("list_model_packages")` -> [ListModelPackagesPaginator](./paginators.md#listmodelpackagespaginator)
 - `client.get_paginator("list_model_quality_job_definitions")` -> [ListModelQualityJobDefinitionsPaginator](./paginators.md#listmodelqualityjobdefinitionspaginator)
 - `client.get_paginator("list_models")` -> [ListModelsPaginator](./paginators.md#listmodelspaginator)
+- `client.get_paginator("list_monitoring_alert_history")` -> [ListMonitoringAlertHistoryPaginator](./paginators.md#listmonitoringalerthistorypaginator)
+- `client.get_paginator("list_monitoring_alerts")` -> [ListMonitoringAlertsPaginator](./paginators.md#listmonitoringalertspaginator)
 - `client.get_paginator("list_monitoring_executions")` -> [ListMonitoringExecutionsPaginator](./paginators.md#listmonitoringexecutionspaginator)
 - `client.get_paginator("list_monitoring_schedules")` -> [ListMonitoringSchedulesPaginator](./paginators.md#listmonitoringschedulespaginator)
 - `client.get_paginator("list_notebook_instance_lifecycle_configs")` -> [ListNotebookInstanceLifecycleConfigsPaginator](./paginators.md#listnotebookinstancelifecycleconfigspaginator)
@@ -9173,6 +10396,7 @@ Type annotations and code completion for `#!python boto3.client("sagemaker").get
 - `client.get_paginator("list_pipeline_parameters_for_execution")` -> [ListPipelineParametersForExecutionPaginator](./paginators.md#listpipelineparametersforexecutionpaginator)
 - `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - `client.get_paginator("list_processing_jobs")` -> [ListProcessingJobsPaginator](./paginators.md#listprocessingjobspaginator)
+- `client.get_paginator("list_spaces")` -> [ListSpacesPaginator](./paginators.md#listspacespaginator)
 - `client.get_paginator("list_stage_devices")` -> [ListStageDevicesPaginator](./paginators.md#liststagedevicespaginator)
 - `client.get_paginator("list_studio_lifecycle_configs")` -> [ListStudioLifecycleConfigsPaginator](./paginators.md#liststudiolifecycleconfigspaginator)
 - `client.get_paginator("list_subscribed_workteams")` -> [ListSubscribedWorkteamsPaginator](./paginators.md#listsubscribedworkteamspaginator)

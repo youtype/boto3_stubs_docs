@@ -249,6 +249,7 @@ def paginate(
     SortBy: AppSortKeyType = ...,  # (2)
     DomainIdEquals: str = ...,
     UserProfileNameEquals: str = ...,
+    SpaceNameEquals: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
 ) -> _PageIterator[ListAppsResponseTypeDef]:  # (4)
     ...
@@ -1726,6 +1727,77 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListImagesRequestListImagesPaginateTypeDef](./type_defs.md#listimagesrequestlistimagespaginatetypedef) 
+## ListInferenceExperimentsPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_inference_experiments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListInferenceExperiments)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListInferenceExperimentsPaginator
+
+def get_list_inference_experiments_paginator() -> ListInferenceExperimentsPaginator:
+    return Session().client("sagemaker").get_paginator("list_inference_experiments")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListInferenceExperimentsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListInferenceExperimentsPaginator = client.get_paginator("list_inference_experiments")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListInferenceExperimentsPaginator](./paginators.md#listinferenceexperimentspaginator)
+3. item: [:material-code-braces: ListInferenceExperimentsResponseTypeDef](./type_defs.md#listinferenceexperimentsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListInferenceExperimentsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    NameContains: str = ...,
+    Type: InferenceExperimentTypeType = ...,  # (1)
+    StatusEquals: InferenceExperimentStatusType = ...,  # (2)
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    LastModifiedTimeAfter: Union[datetime, str] = ...,
+    LastModifiedTimeBefore: Union[datetime, str] = ...,
+    SortBy: SortInferenceExperimentsByType = ...,  # (3)
+    SortOrder: SortOrderType = ...,  # (4)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (5)
+) -> _PageIterator[ListInferenceExperimentsResponseTypeDef]:  # (6)
+    ...
+```
+
+1. See [:material-code-brackets: InferenceExperimentTypeType](./literals.md#inferenceexperimenttypetype) 
+2. See [:material-code-brackets: InferenceExperimentStatusType](./literals.md#inferenceexperimentstatustype) 
+3. See [:material-code-brackets: SortInferenceExperimentsByType](./literals.md#sortinferenceexperimentsbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+6. See [:material-code-braces: ListInferenceExperimentsResponseTypeDef](./type_defs.md#listinferenceexperimentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListInferenceExperimentsRequestListInferenceExperimentsPaginateTypeDef = {  # (1)
+    "NameContains": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInferenceExperimentsRequestListInferenceExperimentsPaginateTypeDef](./type_defs.md#listinferenceexperimentsrequestlistinferenceexperimentspaginatetypedef) 
 ## ListInferenceRecommendationsJobStepsPaginator
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_inference_recommendations_job_steps")`.
@@ -2123,6 +2195,209 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListModelBiasJobDefinitionsRequestListModelBiasJobDefinitionsPaginateTypeDef](./type_defs.md#listmodelbiasjobdefinitionsrequestlistmodelbiasjobdefinitionspaginatetypedef) 
+## ListModelCardExportJobsPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_model_card_export_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelCardExportJobs)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelCardExportJobsPaginator
+
+def get_list_model_card_export_jobs_paginator() -> ListModelCardExportJobsPaginator:
+    return Session().client("sagemaker").get_paginator("list_model_card_export_jobs")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelCardExportJobsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelCardExportJobsPaginator = client.get_paginator("list_model_card_export_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelCardExportJobsPaginator](./paginators.md#listmodelcardexportjobspaginator)
+3. item: [:material-code-braces: ListModelCardExportJobsResponseTypeDef](./type_defs.md#listmodelcardexportjobsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListModelCardExportJobsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ModelCardName: str,
+    ModelCardVersion: int = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    ModelCardExportJobNameContains: str = ...,
+    StatusEquals: ModelCardExportJobStatusType = ...,  # (1)
+    SortBy: ModelCardExportJobSortByType = ...,  # (2)
+    SortOrder: ModelCardExportJobSortOrderType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListModelCardExportJobsResponseTypeDef]:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardExportJobStatusType](./literals.md#modelcardexportjobstatustype) 
+2. See [:material-code-brackets: ModelCardExportJobSortByType](./literals.md#modelcardexportjobsortbytype) 
+3. See [:material-code-brackets: ModelCardExportJobSortOrderType](./literals.md#modelcardexportjobsortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListModelCardExportJobsResponseTypeDef](./type_defs.md#listmodelcardexportjobsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListModelCardExportJobsRequestListModelCardExportJobsPaginateTypeDef = {  # (1)
+    "ModelCardName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelCardExportJobsRequestListModelCardExportJobsPaginateTypeDef](./type_defs.md#listmodelcardexportjobsrequestlistmodelcardexportjobspaginatetypedef) 
+## ListModelCardVersionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_model_card_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelCardVersions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelCardVersionsPaginator
+
+def get_list_model_card_versions_paginator() -> ListModelCardVersionsPaginator:
+    return Session().client("sagemaker").get_paginator("list_model_card_versions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelCardVersionsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelCardVersionsPaginator = client.get_paginator("list_model_card_versions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelCardVersionsPaginator](./paginators.md#listmodelcardversionspaginator)
+3. item: [:material-code-braces: ListModelCardVersionsResponseTypeDef](./type_defs.md#listmodelcardversionsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListModelCardVersionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ModelCardName: str,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    ModelCardStatus: ModelCardStatusType = ...,  # (1)
+    SortBy: ModelCardVersionSortByType = ...,  # (2)
+    SortOrder: ModelCardSortOrderType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListModelCardVersionsResponseTypeDef]:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardVersionSortByType](./literals.md#modelcardversionsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListModelCardVersionsResponseTypeDef](./type_defs.md#listmodelcardversionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListModelCardVersionsRequestListModelCardVersionsPaginateTypeDef = {  # (1)
+    "ModelCardName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelCardVersionsRequestListModelCardVersionsPaginateTypeDef](./type_defs.md#listmodelcardversionsrequestlistmodelcardversionspaginatetypedef) 
+## ListModelCardsPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_model_cards")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListModelCards)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelCardsPaginator
+
+def get_list_model_cards_paginator() -> ListModelCardsPaginator:
+    return Session().client("sagemaker").get_paginator("list_model_cards")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListModelCardsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListModelCardsPaginator = client.get_paginator("list_model_cards")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListModelCardsPaginator](./paginators.md#listmodelcardspaginator)
+3. item: [:material-code-braces: ListModelCardsResponseTypeDef](./type_defs.md#listmodelcardsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListModelCardsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    NameContains: str = ...,
+    ModelCardStatus: ModelCardStatusType = ...,  # (1)
+    SortBy: ModelCardSortByType = ...,  # (2)
+    SortOrder: ModelCardSortOrderType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListModelCardsResponseTypeDef]:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: ModelCardStatusType](./literals.md#modelcardstatustype) 
+2. See [:material-code-brackets: ModelCardSortByType](./literals.md#modelcardsortbytype) 
+3. See [:material-code-brackets: ModelCardSortOrderType](./literals.md#modelcardsortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListModelCardsResponseTypeDef](./type_defs.md#listmodelcardsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListModelCardsRequestListModelCardsPaginateTypeDef = {  # (1)
+    "CreationTimeAfter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelCardsRequestListModelCardsPaginateTypeDef](./type_defs.md#listmodelcardsrequestlistmodelcardspaginatetypedef) 
 ## ListModelExplainabilityJobDefinitionsPaginator
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_model_explainability_job_definitions")`.
@@ -2515,6 +2790,133 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListModelsInputListModelsPaginateTypeDef](./type_defs.md#listmodelsinputlistmodelspaginatetypedef) 
+## ListMonitoringAlertHistoryPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_monitoring_alert_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringAlertHistory)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListMonitoringAlertHistoryPaginator
+
+def get_list_monitoring_alert_history_paginator() -> ListMonitoringAlertHistoryPaginator:
+    return Session().client("sagemaker").get_paginator("list_monitoring_alert_history")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListMonitoringAlertHistoryPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListMonitoringAlertHistoryPaginator = client.get_paginator("list_monitoring_alert_history")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListMonitoringAlertHistoryPaginator](./paginators.md#listmonitoringalerthistorypaginator)
+3. item: [:material-code-braces: ListMonitoringAlertHistoryResponseTypeDef](./type_defs.md#listmonitoringalerthistoryresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListMonitoringAlertHistoryPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    MonitoringScheduleName: str = ...,
+    MonitoringAlertName: str = ...,
+    SortBy: MonitoringAlertHistorySortKeyType = ...,  # (1)
+    SortOrder: SortOrderType = ...,  # (2)
+    CreationTimeBefore: Union[datetime, str] = ...,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    StatusEquals: MonitoringAlertStatusType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListMonitoringAlertHistoryResponseTypeDef]:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: MonitoringAlertHistorySortKeyType](./literals.md#monitoringalerthistorysortkeytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: MonitoringAlertStatusType](./literals.md#monitoringalertstatustype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListMonitoringAlertHistoryResponseTypeDef](./type_defs.md#listmonitoringalerthistoryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMonitoringAlertHistoryRequestListMonitoringAlertHistoryPaginateTypeDef = {  # (1)
+    "MonitoringScheduleName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMonitoringAlertHistoryRequestListMonitoringAlertHistoryPaginateTypeDef](./type_defs.md#listmonitoringalerthistoryrequestlistmonitoringalerthistorypaginatetypedef) 
+## ListMonitoringAlertsPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_monitoring_alerts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListMonitoringAlerts)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListMonitoringAlertsPaginator
+
+def get_list_monitoring_alerts_paginator() -> ListMonitoringAlertsPaginator:
+    return Session().client("sagemaker").get_paginator("list_monitoring_alerts")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListMonitoringAlertsPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListMonitoringAlertsPaginator = client.get_paginator("list_monitoring_alerts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListMonitoringAlertsPaginator](./paginators.md#listmonitoringalertspaginator)
+3. item: [:material-code-braces: ListMonitoringAlertsResponseTypeDef](./type_defs.md#listmonitoringalertsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListMonitoringAlertsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    MonitoringScheduleName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMonitoringAlertsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMonitoringAlertsResponseTypeDef](./type_defs.md#listmonitoringalertsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMonitoringAlertsRequestListMonitoringAlertsPaginateTypeDef = {  # (1)
+    "MonitoringScheduleName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMonitoringAlertsRequestListMonitoringAlertsPaginateTypeDef](./type_defs.md#listmonitoringalertsrequestlistmonitoringalertspaginatetypedef) 
 ## ListMonitoringExecutionsPaginator
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_monitoring_executions")`.
@@ -3121,6 +3523,70 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListProcessingJobsRequestListProcessingJobsPaginateTypeDef](./type_defs.md#listprocessingjobsrequestlistprocessingjobspaginatetypedef) 
+## ListSpacesPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_spaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListSpaces)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListSpacesPaginator
+
+def get_list_spaces_paginator() -> ListSpacesPaginator:
+    return Session().client("sagemaker").get_paginator("list_spaces")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListSpacesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListSpacesPaginator = client.get_paginator("list_spaces")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListSpacesPaginator](./paginators.md#listspacespaginator)
+3. item: [:material-code-braces: ListSpacesResponseTypeDef](./type_defs.md#listspacesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSpacesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SortOrder: SortOrderType = ...,  # (1)
+    SortBy: SpaceSortKeyType = ...,  # (2)
+    DomainIdEquals: str = ...,
+    SpaceNameContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListSpacesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-brackets: SpaceSortKeyType](./literals.md#spacesortkeytype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListSpacesResponseTypeDef](./type_defs.md#listspacesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSpacesRequestListSpacesPaginateTypeDef = {  # (1)
+    "SortOrder": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSpacesRequestListSpacesPaginateTypeDef](./type_defs.md#listspacesrequestlistspacespaginatetypedef) 
 ## ListStageDevicesPaginator
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_stage_devices")`.

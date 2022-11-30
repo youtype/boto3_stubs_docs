@@ -107,6 +107,7 @@ def create_access_point(
     Bucket: str,
     VpcConfiguration: VpcConfigurationTypeDef = ...,  # (1)
     PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef = ...,  # (2)
+    BucketAccountId: str = ...,
 ) -> CreateAccessPointResultTypeDef:  # (3)
     ...
 ```
@@ -1400,8 +1401,8 @@ parent.get_storage_lens_configuration_tagging(**kwargs)
 
 ### list\_access\_points
 
-Returns a list of the access points currently associated with the specified
-bucket.
+Returns a list of the access points owned by the current account associated with
+the specified bucket.
 
 Type annotations and code completion for `#!python boto3.client("s3control").list_access_points` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points)

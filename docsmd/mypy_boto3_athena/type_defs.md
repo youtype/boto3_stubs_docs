@@ -24,6 +24,23 @@ class AclConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: S3AclOptionType](./literals.md#s3acloptiontype) 
+## ApplicationDPUSizesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ApplicationDPUSizesTypeDef
+
+def get_value() -> ApplicationDPUSizesTypeDef:
+    return {
+        "ApplicationRuntimeId": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationDPUSizesTypeDef(TypedDict):
+    ApplicationRuntimeId: NotRequired[str],
+    SupportedDPUSizes: NotRequired[List[int]],
+```
+
 ## AthenaErrorTypeDef
 
 ```python title="Usage Example"
@@ -214,6 +231,78 @@ class UnprocessedQueryExecutionIdTypeDef(TypedDict):
     ErrorMessage: NotRequired[str],
 ```
 
+## CalculationConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CalculationConfigurationTypeDef
+
+def get_value() -> CalculationConfigurationTypeDef:
+    return {
+        "CodeBlock": ...,
+    }
+```
+
+```python title="Definition"
+class CalculationConfigurationTypeDef(TypedDict):
+    CodeBlock: NotRequired[str],
+```
+
+## CalculationResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CalculationResultTypeDef
+
+def get_value() -> CalculationResultTypeDef:
+    return {
+        "StdOutS3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class CalculationResultTypeDef(TypedDict):
+    StdOutS3Uri: NotRequired[str],
+    StdErrorS3Uri: NotRequired[str],
+    ResultS3Uri: NotRequired[str],
+    ResultType: NotRequired[str],
+```
+
+## CalculationStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CalculationStatisticsTypeDef
+
+def get_value() -> CalculationStatisticsTypeDef:
+    return {
+        "DpuExecutionInMillis": ...,
+    }
+```
+
+```python title="Definition"
+class CalculationStatisticsTypeDef(TypedDict):
+    DpuExecutionInMillis: NotRequired[int],
+    Progress: NotRequired[str],
+```
+
+## CalculationStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CalculationStatusTypeDef
+
+def get_value() -> CalculationStatusTypeDef:
+    return {
+        "SubmissionDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class CalculationStatusTypeDef(TypedDict):
+    SubmissionDateTime: NotRequired[datetime],
+    CompletionDateTime: NotRequired[datetime],
+    State: NotRequired[CalculationExecutionStateType],  # (1)
+    StateChangeReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: CalculationExecutionStateType](./literals.md#calculationexecutionstatetype) 
 ## ColumnInfoTypeDef
 
 ```python title="Usage Example"
@@ -299,6 +388,25 @@ class CreateNamedQueryInputRequestTypeDef(TypedDict):
     WorkGroup: NotRequired[str],
 ```
 
+## CreateNotebookInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CreateNotebookInputRequestTypeDef
+
+def get_value() -> CreateNotebookInputRequestTypeDef:
+    return {
+        "WorkGroup": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNotebookInputRequestTypeDef(TypedDict):
+    WorkGroup: str,
+    Name: str,
+    ClientRequestToken: NotRequired[str],
+```
+
 ## CreatePreparedStatementInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -318,6 +426,38 @@ class CreatePreparedStatementInputRequestTypeDef(TypedDict):
     WorkGroup: str,
     QueryStatement: str,
     Description: NotRequired[str],
+```
+
+## CreatePresignedNotebookUrlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CreatePresignedNotebookUrlRequestRequestTypeDef
+
+def get_value() -> CreatePresignedNotebookUrlRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePresignedNotebookUrlRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+```
+
+## CustomerContentEncryptionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CustomerContentEncryptionConfigurationTypeDef
+
+def get_value() -> CustomerContentEncryptionConfigurationTypeDef:
+    return {
+        "KmsKey": ...,
+    }
+```
+
+```python title="Definition"
+class CustomerContentEncryptionConfigurationTypeDef(TypedDict):
+    KmsKey: str,
 ```
 
 ## DataCatalogSummaryTypeDef
@@ -425,6 +565,22 @@ class DeleteNamedQueryInputRequestTypeDef(TypedDict):
     NamedQueryId: str,
 ```
 
+## DeleteNotebookInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import DeleteNotebookInputRequestTypeDef
+
+def get_value() -> DeleteNotebookInputRequestTypeDef:
+    return {
+        "NotebookId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteNotebookInputRequestTypeDef(TypedDict):
+    NotebookId: str,
+```
+
 ## DeletePreparedStatementInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -478,6 +634,25 @@ class EncryptionConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EncryptionOptionType](./literals.md#encryptionoptiontype) 
+## EngineConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import EngineConfigurationTypeDef
+
+def get_value() -> EngineConfigurationTypeDef:
+    return {
+        "MaxConcurrentDpus": ...,
+    }
+```
+
+```python title="Definition"
+class EngineConfigurationTypeDef(TypedDict):
+    MaxConcurrentDpus: int,
+    CoordinatorDpuSize: NotRequired[int],
+    DefaultExecutorDpuSize: NotRequired[int],
+    AdditionalConfigs: NotRequired[Dict[str, str]],
+```
+
 ## EngineVersionTypeDef
 
 ```python title="Usage Example"
@@ -493,6 +668,131 @@ def get_value() -> EngineVersionTypeDef:
 class EngineVersionTypeDef(TypedDict):
     SelectedEngineVersion: NotRequired[str],
     EffectiveEngineVersion: NotRequired[str],
+```
+
+## ExecutorsSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ExecutorsSummaryTypeDef
+
+def get_value() -> ExecutorsSummaryTypeDef:
+    return {
+        "ExecutorId": ...,
+    }
+```
+
+```python title="Definition"
+class ExecutorsSummaryTypeDef(TypedDict):
+    ExecutorId: str,
+    ExecutorType: NotRequired[ExecutorTypeType],  # (1)
+    StartDateTime: NotRequired[int],
+    TerminationDateTime: NotRequired[int],
+    ExecutorState: NotRequired[ExecutorStateType],  # (2)
+    ExecutorSize: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ExecutorTypeType](./literals.md#executortypetype) 
+2. See [:material-code-brackets: ExecutorStateType](./literals.md#executorstatetype) 
+## ExportNotebookInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ExportNotebookInputRequestTypeDef
+
+def get_value() -> ExportNotebookInputRequestTypeDef:
+    return {
+        "NotebookId": ...,
+    }
+```
+
+```python title="Definition"
+class ExportNotebookInputRequestTypeDef(TypedDict):
+    NotebookId: str,
+```
+
+## NotebookMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import NotebookMetadataTypeDef
+
+def get_value() -> NotebookMetadataTypeDef:
+    return {
+        "NotebookId": ...,
+    }
+```
+
+```python title="Definition"
+class NotebookMetadataTypeDef(TypedDict):
+    NotebookId: NotRequired[str],
+    Name: NotRequired[str],
+    WorkGroup: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    Type: NotRequired[NotebookTypeType],  # (1)
+    LastModifiedTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: NotebookTypeType](./literals.md#notebooktypetype) 
+## FilterDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import FilterDefinitionTypeDef
+
+def get_value() -> FilterDefinitionTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class FilterDefinitionTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
+
+## GetCalculationExecutionCodeRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetCalculationExecutionCodeRequestRequestTypeDef
+
+def get_value() -> GetCalculationExecutionCodeRequestRequestTypeDef:
+    return {
+        "CalculationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCalculationExecutionCodeRequestRequestTypeDef(TypedDict):
+    CalculationExecutionId: str,
+```
+
+## GetCalculationExecutionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetCalculationExecutionRequestRequestTypeDef
+
+def get_value() -> GetCalculationExecutionRequestRequestTypeDef:
+    return {
+        "CalculationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCalculationExecutionRequestRequestTypeDef(TypedDict):
+    CalculationExecutionId: str,
+```
+
+## GetCalculationExecutionStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetCalculationExecutionStatusRequestRequestTypeDef
+
+def get_value() -> GetCalculationExecutionStatusRequestRequestTypeDef:
+    return {
+        "CalculationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCalculationExecutionStatusRequestRequestTypeDef(TypedDict):
+    CalculationExecutionId: str,
 ```
 
 ## GetDataCatalogInputRequestTypeDef
@@ -543,6 +843,22 @@ def get_value() -> GetNamedQueryInputRequestTypeDef:
 ```python title="Definition"
 class GetNamedQueryInputRequestTypeDef(TypedDict):
     NamedQueryId: str,
+```
+
+## GetNotebookMetadataInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetNotebookMetadataInputRequestTypeDef
+
+def get_value() -> GetNotebookMetadataInputRequestTypeDef:
+    return {
+        "NotebookId": ...,
+    }
+```
+
+```python title="Definition"
+class GetNotebookMetadataInputRequestTypeDef(TypedDict):
+    NotebookId: str,
 ```
 
 ## GetPreparedStatementInputRequestTypeDef
@@ -631,6 +947,76 @@ class GetQueryRuntimeStatisticsInputRequestTypeDef(TypedDict):
     QueryExecutionId: str,
 ```
 
+## GetSessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetSessionRequestRequestTypeDef
+
+def get_value() -> GetSessionRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetSessionRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+```
+
+## SessionStatisticsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import SessionStatisticsTypeDef
+
+def get_value() -> SessionStatisticsTypeDef:
+    return {
+        "DpuExecutionInMillis": ...,
+    }
+```
+
+```python title="Definition"
+class SessionStatisticsTypeDef(TypedDict):
+    DpuExecutionInMillis: NotRequired[int],
+```
+
+## SessionStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import SessionStatusTypeDef
+
+def get_value() -> SessionStatusTypeDef:
+    return {
+        "StartDateTime": ...,
+    }
+```
+
+```python title="Definition"
+class SessionStatusTypeDef(TypedDict):
+    StartDateTime: NotRequired[datetime],
+    LastModifiedDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+    IdleSinceDateTime: NotRequired[datetime],
+    State: NotRequired[SessionStateType],  # (1)
+    StateChangeReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+## GetSessionStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetSessionStatusRequestRequestTypeDef
+
+def get_value() -> GetSessionStatusRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class GetSessionStatusRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+```
+
 ## GetTableMetadataInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -667,6 +1053,67 @@ class GetWorkGroupInputRequestTypeDef(TypedDict):
     WorkGroup: str,
 ```
 
+## ImportNotebookInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ImportNotebookInputRequestTypeDef
+
+def get_value() -> ImportNotebookInputRequestTypeDef:
+    return {
+        "WorkGroup": ...,
+        "Name": ...,
+        "Payload": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class ImportNotebookInputRequestTypeDef(TypedDict):
+    WorkGroup: str,
+    Name: str,
+    Payload: str,
+    Type: NotebookTypeType,  # (1)
+    ClientRequestToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: NotebookTypeType](./literals.md#notebooktypetype) 
+## ListApplicationDPUSizesInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListApplicationDPUSizesInputRequestTypeDef
+
+def get_value() -> ListApplicationDPUSizesInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationDPUSizesInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ListCalculationExecutionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListCalculationExecutionsRequestRequestTypeDef
+
+def get_value() -> ListCalculationExecutionsRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCalculationExecutionsRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+    StateFilter: NotRequired[CalculationExecutionStateType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: CalculationExecutionStateType](./literals.md#calculationexecutionstatetype) 
 ## ListDataCatalogsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -719,6 +1166,26 @@ class ListEngineVersionsInputRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListExecutorsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListExecutorsRequestRequestTypeDef
+
+def get_value() -> ListExecutorsRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutorsRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+    ExecutorStateFilter: NotRequired[ExecutorStateType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ExecutorStateType](./literals.md#executorstatetype) 
 ## ListNamedQueriesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -735,6 +1202,41 @@ class ListNamedQueriesInputRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
     WorkGroup: NotRequired[str],
+```
+
+## ListNotebookSessionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListNotebookSessionsRequestRequestTypeDef
+
+def get_value() -> ListNotebookSessionsRequestRequestTypeDef:
+    return {
+        "NotebookId": ...,
+    }
+```
+
+```python title="Definition"
+class ListNotebookSessionsRequestRequestTypeDef(TypedDict):
+    NotebookId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## NotebookSessionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import NotebookSessionSummaryTypeDef
+
+def get_value() -> NotebookSessionSummaryTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class NotebookSessionSummaryTypeDef(TypedDict):
+    SessionId: NotRequired[str],
+    CreationTime: NotRequired[datetime],
 ```
 
 ## ListPreparedStatementsInputRequestTypeDef
@@ -790,6 +1292,26 @@ class ListQueryExecutionsInputRequestTypeDef(TypedDict):
     WorkGroup: NotRequired[str],
 ```
 
+## ListSessionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListSessionsRequestRequestTypeDef
+
+def get_value() -> ListSessionsRequestRequestTypeDef:
+    return {
+        "WorkGroup": ...,
+    }
+```
+
+```python title="Definition"
+class ListSessionsRequestRequestTypeDef(TypedDict):
+    WorkGroup: str,
+    StateFilter: NotRequired[SessionStateType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
 ## ListTableMetadataInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -981,6 +1503,22 @@ class ResultReuseByAgeConfigurationTypeDef(TypedDict):
     MaxAgeInMinutes: NotRequired[int],
 ```
 
+## StopCalculationExecutionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import StopCalculationExecutionRequestRequestTypeDef
+
+def get_value() -> StopCalculationExecutionRequestRequestTypeDef:
+    return {
+        "CalculationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class StopCalculationExecutionRequestRequestTypeDef(TypedDict):
+    CalculationExecutionId: str,
+```
+
 ## StopQueryExecutionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -995,6 +1533,22 @@ def get_value() -> StopQueryExecutionInputRequestTypeDef:
 ```python title="Definition"
 class StopQueryExecutionInputRequestTypeDef(TypedDict):
     QueryExecutionId: str,
+```
+
+## TerminateSessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import TerminateSessionRequestRequestTypeDef
+
+def get_value() -> TerminateSessionRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateSessionRequestRequestTypeDef(TypedDict):
+    SessionId: str,
 ```
 
 ## UntagResourceInputRequestTypeDef
@@ -1055,6 +1609,46 @@ class UpdateNamedQueryInputRequestTypeDef(TypedDict):
     Name: str,
     QueryString: str,
     Description: NotRequired[str],
+```
+
+## UpdateNotebookInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import UpdateNotebookInputRequestTypeDef
+
+def get_value() -> UpdateNotebookInputRequestTypeDef:
+    return {
+        "NotebookId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateNotebookInputRequestTypeDef(TypedDict):
+    NotebookId: str,
+    Payload: NotRequired[str],
+    Type: NotRequired[NotebookTypeType],  # (1)
+    SessionId: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: NotebookTypeType](./literals.md#notebooktypetype) 
+## UpdateNotebookMetadataInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import UpdateNotebookMetadataInputRequestTypeDef
+
+def get_value() -> UpdateNotebookMetadataInputRequestTypeDef:
+    return {
+        "NotebookId": ...,
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateNotebookMetadataInputRequestTypeDef(TypedDict):
+    NotebookId: str,
+    Name: str,
+    ClientRequestToken: NotRequired[str],
 ```
 
 ## UpdatePreparedStatementInputRequestTypeDef
@@ -1119,6 +1713,67 @@ class CreateNamedQueryOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateNotebookOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CreateNotebookOutputTypeDef
+
+def get_value() -> CreateNotebookOutputTypeDef:
+    return {
+        "NotebookId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNotebookOutputTypeDef(TypedDict):
+    NotebookId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePresignedNotebookUrlResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CreatePresignedNotebookUrlResponseTypeDef
+
+def get_value() -> CreatePresignedNotebookUrlResponseTypeDef:
+    return {
+        "NotebookUrl": ...,
+        "AuthToken": ...,
+        "AuthTokenExpirationTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePresignedNotebookUrlResponseTypeDef(TypedDict):
+    NotebookUrl: str,
+    AuthToken: str,
+    AuthTokenExpirationTime: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCalculationExecutionCodeResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetCalculationExecutionCodeResponseTypeDef
+
+def get_value() -> GetCalculationExecutionCodeResponseTypeDef:
+    return {
+        "CodeBlock": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCalculationExecutionCodeResponseTypeDef(TypedDict):
+    CodeBlock: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetNamedQueryOutputTypeDef
 
 ```python title="Usage Example"
@@ -1138,6 +1793,47 @@ class GetNamedQueryOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NamedQueryTypeDef](./type_defs.md#namedquerytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ImportNotebookOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ImportNotebookOutputTypeDef
+
+def get_value() -> ImportNotebookOutputTypeDef:
+    return {
+        "NotebookId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportNotebookOutputTypeDef(TypedDict):
+    NotebookId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationDPUSizesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListApplicationDPUSizesOutputTypeDef
+
+def get_value() -> ListApplicationDPUSizesOutputTypeDef:
+    return {
+        "ApplicationDPUSizes": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationDPUSizesOutputTypeDef(TypedDict):
+    ApplicationDPUSizes: List[ApplicationDPUSizesTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApplicationDPUSizesTypeDef](./type_defs.md#applicationdpusizestypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNamedQueriesOutputTypeDef
 
@@ -1181,6 +1877,28 @@ class ListQueryExecutionsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartCalculationExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import StartCalculationExecutionResponseTypeDef
+
+def get_value() -> StartCalculationExecutionResponseTypeDef:
+    return {
+        "CalculationExecutionId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartCalculationExecutionResponseTypeDef(TypedDict):
+    CalculationExecutionId: str,
+    State: CalculationExecutionStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: CalculationExecutionStateType](./literals.md#calculationexecutionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartQueryExecutionOutputTypeDef
 
 ```python title="Usage Example"
@@ -1200,6 +1918,68 @@ class StartQueryExecutionOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import StartSessionResponseTypeDef
+
+def get_value() -> StartSessionResponseTypeDef:
+    return {
+        "SessionId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartSessionResponseTypeDef(TypedDict):
+    SessionId: str,
+    State: SessionStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopCalculationExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import StopCalculationExecutionResponseTypeDef
+
+def get_value() -> StopCalculationExecutionResponseTypeDef:
+    return {
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopCalculationExecutionResponseTypeDef(TypedDict):
+    State: CalculationExecutionStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: CalculationExecutionStateType](./literals.md#calculationexecutionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TerminateSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import TerminateSessionResponseTypeDef
+
+def get_value() -> TerminateSessionResponseTypeDef:
+    return {
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class TerminateSessionResponseTypeDef(TypedDict):
+    State: SessionStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetNamedQueryOutputTypeDef
 
 ```python title="Usage Example"
@@ -1265,6 +2045,103 @@ class BatchGetPreparedStatementOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: PreparedStatementTypeDef](./type_defs.md#preparedstatementtypedef) 
 2. See [:material-code-braces: UnprocessedPreparedStatementNameTypeDef](./type_defs.md#unprocessedpreparedstatementnametypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartCalculationExecutionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import StartCalculationExecutionRequestRequestTypeDef
+
+def get_value() -> StartCalculationExecutionRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class StartCalculationExecutionRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+    Description: NotRequired[str],
+    CalculationConfiguration: NotRequired[CalculationConfigurationTypeDef],  # (1)
+    CodeBlock: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: CalculationConfigurationTypeDef](./type_defs.md#calculationconfigurationtypedef) 
+## CalculationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import CalculationSummaryTypeDef
+
+def get_value() -> CalculationSummaryTypeDef:
+    return {
+        "CalculationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class CalculationSummaryTypeDef(TypedDict):
+    CalculationExecutionId: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[CalculationStatusTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CalculationStatusTypeDef](./type_defs.md#calculationstatustypedef) 
+## GetCalculationExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetCalculationExecutionResponseTypeDef
+
+def get_value() -> GetCalculationExecutionResponseTypeDef:
+    return {
+        "CalculationExecutionId": ...,
+        "SessionId": ...,
+        "Description": ...,
+        "WorkingDirectory": ...,
+        "Status": ...,
+        "Statistics": ...,
+        "Result": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCalculationExecutionResponseTypeDef(TypedDict):
+    CalculationExecutionId: str,
+    SessionId: str,
+    Description: str,
+    WorkingDirectory: str,
+    Status: CalculationStatusTypeDef,  # (1)
+    Statistics: CalculationStatisticsTypeDef,  # (2)
+    Result: CalculationResultTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: CalculationStatusTypeDef](./type_defs.md#calculationstatustypedef) 
+2. See [:material-code-braces: CalculationStatisticsTypeDef](./type_defs.md#calculationstatisticstypedef) 
+3. See [:material-code-braces: CalculationResultTypeDef](./type_defs.md#calculationresulttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCalculationExecutionStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetCalculationExecutionStatusResponseTypeDef
+
+def get_value() -> GetCalculationExecutionStatusResponseTypeDef:
+    return {
+        "Status": ...,
+        "Statistics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCalculationExecutionStatusResponseTypeDef(TypedDict):
+    Status: CalculationStatusTypeDef,  # (1)
+    Statistics: CalculationStatisticsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: CalculationStatusTypeDef](./type_defs.md#calculationstatustypedef) 
+2. See [:material-code-braces: CalculationStatisticsTypeDef](./type_defs.md#calculationstatisticstypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResultSetMetadataTypeDef
 
@@ -1518,6 +2395,49 @@ class ResultConfigurationUpdatesTypeDef(TypedDict):
 
 1. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
 2. See [:material-code-braces: AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef) 
+## SessionConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import SessionConfigurationTypeDef
+
+def get_value() -> SessionConfigurationTypeDef:
+    return {
+        "ExecutionRole": ...,
+    }
+```
+
+```python title="Definition"
+class SessionConfigurationTypeDef(TypedDict):
+    ExecutionRole: NotRequired[str],
+    WorkingDirectory: NotRequired[str],
+    IdleTimeoutSeconds: NotRequired[int],
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+## StartSessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import StartSessionRequestRequestTypeDef
+
+def get_value() -> StartSessionRequestRequestTypeDef:
+    return {
+        "WorkGroup": ...,
+        "EngineConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class StartSessionRequestRequestTypeDef(TypedDict):
+    WorkGroup: str,
+    EngineConfiguration: EngineConfigurationTypeDef,  # (1)
+    Description: NotRequired[str],
+    NotebookVersion: NotRequired[str],
+    SessionIdleTimeoutInMinutes: NotRequired[int],
+    ClientRequestToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: EngineConfigurationTypeDef](./type_defs.md#engineconfigurationtypedef) 
 ## ListEngineVersionsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1562,6 +2482,114 @@ class WorkGroupSummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: WorkGroupStateType](./literals.md#workgroupstatetype) 
 2. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
+## ListExecutorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListExecutorsResponseTypeDef
+
+def get_value() -> ListExecutorsResponseTypeDef:
+    return {
+        "SessionId": ...,
+        "NextToken": ...,
+        "ExecutorsSummary": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutorsResponseTypeDef(TypedDict):
+    SessionId: str,
+    NextToken: str,
+    ExecutorsSummary: List[ExecutorsSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ExecutorsSummaryTypeDef](./type_defs.md#executorssummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExportNotebookOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ExportNotebookOutputTypeDef
+
+def get_value() -> ExportNotebookOutputTypeDef:
+    return {
+        "NotebookMetadata": ...,
+        "Payload": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExportNotebookOutputTypeDef(TypedDict):
+    NotebookMetadata: NotebookMetadataTypeDef,  # (1)
+    Payload: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NotebookMetadataTypeDef](./type_defs.md#notebookmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetNotebookMetadataOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetNotebookMetadataOutputTypeDef
+
+def get_value() -> GetNotebookMetadataOutputTypeDef:
+    return {
+        "NotebookMetadata": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetNotebookMetadataOutputTypeDef(TypedDict):
+    NotebookMetadata: NotebookMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NotebookMetadataTypeDef](./type_defs.md#notebookmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNotebookMetadataOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListNotebookMetadataOutputTypeDef
+
+def get_value() -> ListNotebookMetadataOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "NotebookMetadataList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListNotebookMetadataOutputTypeDef(TypedDict):
+    NextToken: str,
+    NotebookMetadataList: List[NotebookMetadataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NotebookMetadataTypeDef](./type_defs.md#notebookmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNotebookMetadataInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListNotebookMetadataInputRequestTypeDef
+
+def get_value() -> ListNotebookMetadataInputRequestTypeDef:
+    return {
+        "WorkGroup": ...,
+    }
+```
+
+```python title="Definition"
+class ListNotebookMetadataInputRequestTypeDef(TypedDict):
+    WorkGroup: str,
+    Filters: NotRequired[FilterDefinitionTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterDefinitionTypeDef](./type_defs.md#filterdefinitiontypedef) 
 ## GetQueryResultsInputGetQueryResultsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1690,6 +2718,72 @@ class ListTagsForResourceInputListTagsForResourcePaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetSessionStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetSessionStatusResponseTypeDef
+
+def get_value() -> GetSessionStatusResponseTypeDef:
+    return {
+        "SessionId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSessionStatusResponseTypeDef(TypedDict):
+    SessionId: str,
+    Status: SessionStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SessionStatusTypeDef](./type_defs.md#sessionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SessionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import SessionSummaryTypeDef
+
+def get_value() -> SessionSummaryTypeDef:
+    return {
+        "SessionId": ...,
+    }
+```
+
+```python title="Definition"
+class SessionSummaryTypeDef(TypedDict):
+    SessionId: NotRequired[str],
+    Description: NotRequired[str],
+    EngineVersion: NotRequired[EngineVersionTypeDef],  # (1)
+    NotebookVersion: NotRequired[str],
+    Status: NotRequired[SessionStatusTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
+2. See [:material-code-braces: SessionStatusTypeDef](./type_defs.md#sessionstatustypedef) 
+## ListNotebookSessionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListNotebookSessionsResponseTypeDef
+
+def get_value() -> ListNotebookSessionsResponseTypeDef:
+    return {
+        "NotebookSessionsList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListNotebookSessionsResponseTypeDef(TypedDict):
+    NotebookSessionsList: List[NotebookSessionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NotebookSessionSummaryTypeDef](./type_defs.md#notebooksessionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPreparedStatementsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1774,6 +2868,28 @@ class ResultReuseConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResultReuseByAgeConfigurationTypeDef](./type_defs.md#resultreusebyageconfigurationtypedef) 
+## ListCalculationExecutionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListCalculationExecutionsResponseTypeDef
+
+def get_value() -> ListCalculationExecutionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Calculations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCalculationExecutionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Calculations: List[CalculationSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CalculationSummaryTypeDef](./type_defs.md#calculationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTableMetadataOutputTypeDef
 
 ```python title="Usage Example"
@@ -1854,10 +2970,14 @@ class WorkGroupConfigurationTypeDef(TypedDict):
     BytesScannedCutoffPerQuery: NotRequired[int],
     RequesterPaysEnabled: NotRequired[bool],
     EngineVersion: NotRequired[EngineVersionTypeDef],  # (2)
+    AdditionalConfiguration: NotRequired[str],
+    ExecutionRole: NotRequired[str],
+    CustomerContentEncryptionConfiguration: NotRequired[CustomerContentEncryptionConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef) 
 2. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
+3. See [:material-code-braces: CustomerContentEncryptionConfigurationTypeDef](./type_defs.md#customercontentencryptionconfigurationtypedef) 
 ## WorkGroupConfigurationUpdatesTypeDef
 
 ```python title="Usage Example"
@@ -1878,10 +2998,54 @@ class WorkGroupConfigurationUpdatesTypeDef(TypedDict):
     RemoveBytesScannedCutoffPerQuery: NotRequired[bool],
     RequesterPaysEnabled: NotRequired[bool],
     EngineVersion: NotRequired[EngineVersionTypeDef],  # (2)
+    RemoveCustomerContentEncryptionConfiguration: NotRequired[bool],
+    AdditionalConfiguration: NotRequired[str],
+    ExecutionRole: NotRequired[str],
+    CustomerContentEncryptionConfiguration: NotRequired[CustomerContentEncryptionConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: ResultConfigurationUpdatesTypeDef](./type_defs.md#resultconfigurationupdatestypedef) 
 2. See [:material-code-braces: EngineVersionTypeDef](./type_defs.md#engineversiontypedef) 
+3. See [:material-code-braces: CustomerContentEncryptionConfigurationTypeDef](./type_defs.md#customercontentencryptionconfigurationtypedef) 
+## GetSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import GetSessionResponseTypeDef
+
+def get_value() -> GetSessionResponseTypeDef:
+    return {
+        "SessionId": ...,
+        "Description": ...,
+        "WorkGroup": ...,
+        "EngineVersion": ...,
+        "EngineConfiguration": ...,
+        "NotebookVersion": ...,
+        "SessionConfiguration": ...,
+        "Status": ...,
+        "Statistics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSessionResponseTypeDef(TypedDict):
+    SessionId: str,
+    Description: str,
+    WorkGroup: str,
+    EngineVersion: str,
+    EngineConfiguration: EngineConfigurationTypeDef,  # (1)
+    NotebookVersion: str,
+    SessionConfiguration: SessionConfigurationTypeDef,  # (2)
+    Status: SessionStatusTypeDef,  # (3)
+    Statistics: SessionStatisticsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: EngineConfigurationTypeDef](./type_defs.md#engineconfigurationtypedef) 
+2. See [:material-code-braces: SessionConfigurationTypeDef](./type_defs.md#sessionconfigurationtypedef) 
+3. See [:material-code-braces: SessionStatusTypeDef](./type_defs.md#sessionstatustypedef) 
+4. See [:material-code-braces: SessionStatisticsTypeDef](./type_defs.md#sessionstatisticstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWorkGroupsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1903,6 +3067,28 @@ class ListWorkGroupsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WorkGroupSummaryTypeDef](./type_defs.md#workgroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSessionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_athena.type_defs import ListSessionsResponseTypeDef
+
+def get_value() -> ListSessionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Sessions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSessionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Sessions: List[SessionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SessionSummaryTypeDef](./type_defs.md#sessionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueryRuntimeStatisticsOutputTypeDef
 
