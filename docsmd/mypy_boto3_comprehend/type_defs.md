@@ -106,27 +106,6 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
-## EntityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import EntityTypeDef
-
-def get_value() -> EntityTypeDef:
-    return {
-        "Score": ...,
-    }
-```
-
-```python title="Definition"
-class EntityTypeDef(TypedDict):
-    Score: NotRequired[float],
-    Type: NotRequired[EntityTypeType],  # (1)
-    Text: NotRequired[str],
-    BeginOffset: NotRequired[int],
-    EndOffset: NotRequired[int],
-```
-
-1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
 ## BatchDetectEntitiesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -260,6 +239,61 @@ class BatchDetectTargetedSentimentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+## ChildBlockTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ChildBlockTypeDef
+
+def get_value() -> ChildBlockTypeDef:
+    return {
+        "ChildBlockId": ...,
+    }
+```
+
+```python title="Definition"
+class ChildBlockTypeDef(TypedDict):
+    ChildBlockId: NotRequired[str],
+    BeginOffset: NotRequired[int],
+    EndOffset: NotRequired[int],
+```
+
+## RelationshipsListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import RelationshipsListItemTypeDef
+
+def get_value() -> RelationshipsListItemTypeDef:
+    return {
+        "Ids": ...,
+    }
+```
+
+```python title="Definition"
+class RelationshipsListItemTypeDef(TypedDict):
+    Ids: NotRequired[List[str]],
+    Type: NotRequired[RelationshipTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: RelationshipTypeType](./literals.md#relationshiptypetype) 
+## BoundingBoxTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BoundingBoxTypeDef
+
+def get_value() -> BoundingBoxTypeDef:
+    return {
+        "Height": ...,
+    }
+```
+
+```python title="Definition"
+class BoundingBoxTypeDef(TypedDict):
+    Height: NotRequired[float],
+    Left: NotRequired[float],
+    Top: NotRequired[float],
+    Width: NotRequired[float],
+```
+
 ## ClassifierEvaluationMetricsTypeDef
 
 ```python title="Usage Example"
@@ -283,24 +317,27 @@ class ClassifierEvaluationMetricsTypeDef(TypedDict):
     HammingLoss: NotRequired[float],
 ```
 
-## ClassifyDocumentRequestRequestTypeDef
+## DocumentReaderConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import ClassifyDocumentRequestRequestTypeDef
+from mypy_boto3_comprehend.type_defs import DocumentReaderConfigTypeDef
 
-def get_value() -> ClassifyDocumentRequestRequestTypeDef:
+def get_value() -> DocumentReaderConfigTypeDef:
     return {
-        "Text": ...,
-        "EndpointArn": ...,
+        "DocumentReadAction": ...,
     }
 ```
 
 ```python title="Definition"
-class ClassifyDocumentRequestRequestTypeDef(TypedDict):
-    Text: str,
-    EndpointArn: str,
+class DocumentReaderConfigTypeDef(TypedDict):
+    DocumentReadAction: DocumentReadActionType,  # (1)
+    DocumentReadMode: NotRequired[DocumentReadModeType],  # (2)
+    FeatureTypes: NotRequired[Sequence[DocumentReadFeatureTypesType]],  # (3)
 ```
 
+1. See [:material-code-brackets: DocumentReadActionType](./literals.md#documentreadactiontype) 
+2. See [:material-code-brackets: DocumentReadModeType](./literals.md#documentreadmodetype) 
+3. See [:material-code-brackets: DocumentReadFeatureTypesType](./literals.md#documentreadfeaturetypestype) 
 ## DocumentClassTypeDef
 
 ```python title="Usage Example"
@@ -316,6 +353,7 @@ def get_value() -> DocumentClassTypeDef:
 class DocumentClassTypeDef(TypedDict):
     Name: NotRequired[str],
     Score: NotRequired[float],
+    Page: NotRequired[int],
 ```
 
 ## DocumentLabelTypeDef
@@ -333,8 +371,46 @@ def get_value() -> DocumentLabelTypeDef:
 class DocumentLabelTypeDef(TypedDict):
     Name: NotRequired[str],
     Score: NotRequired[float],
+    Page: NotRequired[int],
 ```
 
+## DocumentTypeListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DocumentTypeListItemTypeDef
+
+def get_value() -> DocumentTypeListItemTypeDef:
+    return {
+        "Page": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentTypeListItemTypeDef(TypedDict):
+    Page: NotRequired[int],
+    Type: NotRequired[DocumentTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: DocumentTypeType](./literals.md#documenttypetype) 
+## ErrorsListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ErrorsListItemTypeDef
+
+def get_value() -> ErrorsListItemTypeDef:
+    return {
+        "Page": ...,
+    }
+```
+
+```python title="Definition"
+class ErrorsListItemTypeDef(TypedDict):
+    Page: NotRequired[int],
+    ErrorCode: NotRequired[PageBasedErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PageBasedErrorCodeType](./literals.md#pagebasederrorcodetype) 
 ## ContainsPiiEntitiesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -740,25 +816,6 @@ class DetectDominantLanguageRequestRequestTypeDef(TypedDict):
     Text: str,
 ```
 
-## DetectEntitiesRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import DetectEntitiesRequestRequestTypeDef
-
-def get_value() -> DetectEntitiesRequestRequestTypeDef:
-    return {
-        "Text": ...,
-    }
-```
-
-```python title="Definition"
-class DetectEntitiesRequestRequestTypeDef(TypedDict):
-    Text: str,
-    LanguageCode: NotRequired[LanguageCodeType],  # (1)
-    EndpointArn: NotRequired[str],
-```
-
-1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## DetectKeyPhrasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -952,27 +1009,23 @@ class DocumentClassifierSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
-## DocumentReaderConfigTypeDef
+## ExtractedCharactersListItemTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import DocumentReaderConfigTypeDef
+from mypy_boto3_comprehend.type_defs import ExtractedCharactersListItemTypeDef
 
-def get_value() -> DocumentReaderConfigTypeDef:
+def get_value() -> ExtractedCharactersListItemTypeDef:
     return {
-        "DocumentReadAction": ...,
+        "Page": ...,
     }
 ```
 
 ```python title="Definition"
-class DocumentReaderConfigTypeDef(TypedDict):
-    DocumentReadAction: DocumentReadActionType,  # (1)
-    DocumentReadMode: NotRequired[DocumentReadModeType],  # (2)
-    FeatureTypes: NotRequired[List[DocumentReadFeatureTypesType]],  # (3)
+class ExtractedCharactersListItemTypeDef(TypedDict):
+    Page: NotRequired[int],
+    Count: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: DocumentReadActionType](./literals.md#documentreadactiontype) 
-2. See [:material-code-brackets: DocumentReadModeType](./literals.md#documentreadmodetype) 
-3. See [:material-code-brackets: DocumentReadFeatureTypesType](./literals.md#documentreadfeaturetypestype) 
 ## DominantLanguageDetectionJobFilterTypeDef
 
 ```python title="Usage Example"
@@ -1198,6 +1251,23 @@ class EventsDetectionJobFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+## PointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import PointTypeDef
+
+def get_value() -> PointTypeDef:
+    return {
+        "X": ...,
+    }
+```
+
+```python title="Definition"
+class PointTypeDef(TypedDict):
+    X: NotRequired[float],
+    Y: NotRequired[float],
+```
+
 ## KeyPhrasesDetectionJobFilterTypeDef
 
 ```python title="Usage Example"
@@ -2171,44 +2241,6 @@ class StopTargetedSentimentDetectionJobResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchDetectEntitiesItemResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesItemResultTypeDef
-
-def get_value() -> BatchDetectEntitiesItemResultTypeDef:
-    return {
-        "Index": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDetectEntitiesItemResultTypeDef(TypedDict):
-    Index: NotRequired[int],
-    Entities: NotRequired[List[EntityTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
-## DetectEntitiesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import DetectEntitiesResponseTypeDef
-
-def get_value() -> DetectEntitiesResponseTypeDef:
-    return {
-        "Entities": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DetectEntitiesResponseTypeDef(TypedDict):
-    Entities: List[EntityTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDetectKeyPhrasesItemResultTypeDef
 
 ```python title="Usage Example"
@@ -2309,6 +2341,26 @@ class MentionSentimentTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SentimentTypeType](./literals.md#sentimenttypetype) 
 2. See [:material-code-braces: SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef) 
+## BlockReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BlockReferenceTypeDef
+
+def get_value() -> BlockReferenceTypeDef:
+    return {
+        "BlockId": ...,
+    }
+```
+
+```python title="Definition"
+class BlockReferenceTypeDef(TypedDict):
+    BlockId: NotRequired[str],
+    BeginOffset: NotRequired[int],
+    EndOffset: NotRequired[int],
+    ChildBlocks: NotRequired[List[ChildBlockTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ChildBlockTypeDef](./type_defs.md#childblocktypedef) 
 ## ClassifierMetadataTypeDef
 
 ```python title="Usage Example"
@@ -2329,29 +2381,68 @@ class ClassifierMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ClassifierEvaluationMetricsTypeDef](./type_defs.md#classifierevaluationmetricstypedef) 
-## ClassifyDocumentResponseTypeDef
+## ClassifyDocumentRequestRequestTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import ClassifyDocumentResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ClassifyDocumentRequestRequestTypeDef
 
-def get_value() -> ClassifyDocumentResponseTypeDef:
+def get_value() -> ClassifyDocumentRequestRequestTypeDef:
     return {
-        "Classes": ...,
-        "Labels": ...,
-        "ResponseMetadata": ...,
+        "EndpointArn": ...,
     }
 ```
 
 ```python title="Definition"
-class ClassifyDocumentResponseTypeDef(TypedDict):
-    Classes: List[DocumentClassTypeDef],  # (1)
-    Labels: List[DocumentLabelTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+class ClassifyDocumentRequestRequestTypeDef(TypedDict):
+    EndpointArn: str,
+    Text: NotRequired[str],
+    Bytes: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    DocumentReaderConfig: NotRequired[DocumentReaderConfigTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: DocumentClassTypeDef](./type_defs.md#documentclasstypedef) 
-2. See [:material-code-braces: DocumentLabelTypeDef](./type_defs.md#documentlabeltypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef) 
+## DetectEntitiesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DetectEntitiesRequestRequestTypeDef
+
+def get_value() -> DetectEntitiesRequestRequestTypeDef:
+    return {
+        "Text": ...,
+    }
+```
+
+```python title="Definition"
+class DetectEntitiesRequestRequestTypeDef(TypedDict):
+    Text: NotRequired[str],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    EndpointArn: NotRequired[str],
+    Bytes: NotRequired[Union[str, bytes, IO[Any], StreamingBody]],
+    DocumentReaderConfig: NotRequired[DocumentReaderConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef) 
+## InputDataConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import InputDataConfigTypeDef
+
+def get_value() -> InputDataConfigTypeDef:
+    return {
+        "S3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class InputDataConfigTypeDef(TypedDict):
+    S3Uri: str,
+    InputFormat: NotRequired[InputFormatType],  # (1)
+    DocumentReaderConfig: NotRequired[DocumentReaderConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
+2. See [:material-code-braces: DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef) 
 ## ContainsPiiEntitiesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2581,26 +2672,24 @@ class ListDocumentClassifierSummariesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DocumentClassifierSummaryTypeDef](./type_defs.md#documentclassifiersummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## InputDataConfigTypeDef
+## DocumentMetadataTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import InputDataConfigTypeDef
+from mypy_boto3_comprehend.type_defs import DocumentMetadataTypeDef
 
-def get_value() -> InputDataConfigTypeDef:
+def get_value() -> DocumentMetadataTypeDef:
     return {
-        "S3Uri": ...,
+        "Pages": ...,
     }
 ```
 
 ```python title="Definition"
-class InputDataConfigTypeDef(TypedDict):
-    S3Uri: str,
-    InputFormat: NotRequired[InputFormatType],  # (1)
-    DocumentReaderConfig: NotRequired[DocumentReaderConfigTypeDef],  # (2)
+class DocumentMetadataTypeDef(TypedDict):
+    Pages: NotRequired[int],
+    ExtractedCharacters: NotRequired[List[ExtractedCharactersListItemTypeDef]],  # (1)
 ```
 
-1. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
-2. See [:material-code-braces: DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef) 
+1. See [:material-code-braces: ExtractedCharactersListItemTypeDef](./type_defs.md#extractedcharacterslistitemtypedef) 
 ## ListDominantLanguageDetectionJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2764,6 +2853,25 @@ class ListEventsDetectionJobsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EventsDetectionJobFilterTypeDef](./type_defs.md#eventsdetectionjobfiltertypedef) 
+## GeometryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import GeometryTypeDef
+
+def get_value() -> GeometryTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
+```
+
+```python title="Definition"
+class GeometryTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Polygon: NotRequired[List[PointTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: PointTypeDef](./type_defs.md#pointtypedef) 
 ## ListKeyPhrasesDetectionJobsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2840,6 +2948,25 @@ class ListDominantLanguageDetectionJobsRequestListDominantLanguageDetectionJobsP
 
 1. See [:material-code-braces: DominantLanguageDetectionJobFilterTypeDef](./type_defs.md#dominantlanguagedetectionjobfiltertypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListEndpointsRequestListEndpointsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListEndpointsRequestListEndpointsPaginateTypeDef
+
+def get_value() -> ListEndpointsRequestListEndpointsPaginateTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListEndpointsRequestListEndpointsPaginateTypeDef(TypedDict):
+    Filter: NotRequired[EndpointFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EndpointFilterTypeDef](./type_defs.md#endpointfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEntitiesDetectionJobsRequestListEntitiesDetectionJobsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2896,6 +3023,25 @@ class ListKeyPhrasesDetectionJobsRequestListKeyPhrasesDetectionJobsPaginateTypeD
 ```
 
 1. See [:material-code-braces: KeyPhrasesDetectionJobFilterTypeDef](./type_defs.md#keyphrasesdetectionjobfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPiiEntitiesDetectionJobsRequestListPiiEntitiesDetectionJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListPiiEntitiesDetectionJobsRequestListPiiEntitiesDetectionJobsPaginateTypeDef
+
+def get_value() -> ListPiiEntitiesDetectionJobsRequestListPiiEntitiesDetectionJobsPaginateTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListPiiEntitiesDetectionJobsRequestListPiiEntitiesDetectionJobsPaginateTypeDef(TypedDict):
+    Filter: NotRequired[PiiEntitiesDetectionJobFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: PiiEntitiesDetectionJobFilterTypeDef](./type_defs.md#piientitiesdetectionjobfiltertypedef) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPiiEntitiesDetectionJobsRequestRequestTypeDef
 
@@ -3092,29 +3238,6 @@ class BatchDetectDominantLanguageResponseTypeDef(TypedDict):
 1. See [:material-code-braces: BatchDetectDominantLanguageItemResultTypeDef](./type_defs.md#batchdetectdominantlanguageitemresulttypedef) 
 2. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## BatchDetectEntitiesResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesResponseTypeDef
-
-def get_value() -> BatchDetectEntitiesResponseTypeDef:
-    return {
-        "ResultList": ...,
-        "ErrorList": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class BatchDetectEntitiesResponseTypeDef(TypedDict):
-    ResultList: List[BatchDetectEntitiesItemResultTypeDef],  # (1)
-    ErrorList: List[BatchItemErrorTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: BatchDetectEntitiesItemResultTypeDef](./type_defs.md#batchdetectentitiesitemresulttypedef) 
-2. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDetectKeyPhrasesResponseTypeDef
 
 ```python title="Usage Example"
@@ -3185,6 +3308,29 @@ class TargetedSentimentMentionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: TargetedSentimentEntityTypeType](./literals.md#targetedsentimententitytypetype) 
 2. See [:material-code-braces: MentionSentimentTypeDef](./type_defs.md#mentionsentimenttypedef) 
+## EntityTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import EntityTypeDef
+
+def get_value() -> EntityTypeDef:
+    return {
+        "Score": ...,
+    }
+```
+
+```python title="Definition"
+class EntityTypeDef(TypedDict):
+    Score: NotRequired[float],
+    Type: NotRequired[EntityTypeType],  # (1)
+    Text: NotRequired[str],
+    BeginOffset: NotRequired[int],
+    EndOffset: NotRequired[int],
+    BlockReferences: NotRequired[List[BlockReferenceTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-braces: BlockReferenceTypeDef](./type_defs.md#blockreferencetypedef) 
 ## DocumentClassifierPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -3802,6 +3948,38 @@ class TopicsDetectionJobPropertiesTypeDef(TypedDict):
 2. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
 3. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
 4. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## ClassifyDocumentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ClassifyDocumentResponseTypeDef
+
+def get_value() -> ClassifyDocumentResponseTypeDef:
+    return {
+        "Classes": ...,
+        "Labels": ...,
+        "DocumentMetadata": ...,
+        "DocumentType": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ClassifyDocumentResponseTypeDef(TypedDict):
+    Classes: List[DocumentClassTypeDef],  # (1)
+    Labels: List[DocumentLabelTypeDef],  # (2)
+    DocumentMetadata: DocumentMetadataTypeDef,  # (3)
+    DocumentType: List[DocumentTypeListItemTypeDef],  # (4)
+    Errors: List[ErrorsListItemTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: DocumentClassTypeDef](./type_defs.md#documentclasstypedef) 
+2. See [:material-code-braces: DocumentLabelTypeDef](./type_defs.md#documentlabeltypedef) 
+3. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+4. See [:material-code-braces: DocumentTypeListItemTypeDef](./type_defs.md#documenttypelistitemtypedef) 
+5. See [:material-code-braces: ErrorsListItemTypeDef](./type_defs.md#errorslistitemtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEntityRecognizerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3856,6 +4034,30 @@ class EntityRecognizerMetadataTypeDef(TypedDict):
 
 1. See [:material-code-braces: EntityRecognizerEvaluationMetricsTypeDef](./type_defs.md#entityrecognizerevaluationmetricstypedef) 
 2. See [:material-code-braces: EntityRecognizerMetadataEntityTypesListItemTypeDef](./type_defs.md#entityrecognizermetadataentitytypeslistitemtypedef) 
+## BlockTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BlockTypeDef
+
+def get_value() -> BlockTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class BlockTypeDef(TypedDict):
+    Id: NotRequired[str],
+    BlockType: NotRequired[BlockTypeType],  # (1)
+    Text: NotRequired[str],
+    Page: NotRequired[int],
+    Geometry: NotRequired[GeometryTypeDef],  # (2)
+    Relationships: NotRequired[List[RelationshipsListItemTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: BlockTypeType](./literals.md#blocktypetype) 
+2. See [:material-code-braces: GeometryTypeDef](./type_defs.md#geometrytypedef) 
+3. See [:material-code-braces: RelationshipsListItemTypeDef](./type_defs.md#relationshipslistitemtypedef) 
 ## BatchDetectSyntaxItemResultTypeDef
 
 ```python title="Usage Example"
@@ -3912,6 +4114,24 @@ class TargetedSentimentEntityTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TargetedSentimentMentionTypeDef](./type_defs.md#targetedsentimentmentiontypedef) 
+## BatchDetectEntitiesItemResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesItemResultTypeDef
+
+def get_value() -> BatchDetectEntitiesItemResultTypeDef:
+    return {
+        "Index": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDetectEntitiesItemResultTypeDef(TypedDict):
+    Index: NotRequired[int],
+    Entities: NotRequired[List[EntityTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
 ## DescribeDocumentClassifierResponseTypeDef
 
 ```python title="Usage Example"
@@ -4368,6 +4588,38 @@ class EntityRecognizerPropertiesTypeDef(TypedDict):
 3. See [:material-code-braces: EntityRecognizerInputDataConfigTypeDef](./type_defs.md#entityrecognizerinputdataconfigtypedef) 
 4. See [:material-code-braces: EntityRecognizerMetadataTypeDef](./type_defs.md#entityrecognizermetadatatypedef) 
 5. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## DetectEntitiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DetectEntitiesResponseTypeDef
+
+def get_value() -> DetectEntitiesResponseTypeDef:
+    return {
+        "Entities": ...,
+        "DocumentMetadata": ...,
+        "DocumentType": ...,
+        "Blocks": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DetectEntitiesResponseTypeDef(TypedDict):
+    Entities: List[EntityTypeDef],  # (1)
+    DocumentMetadata: DocumentMetadataTypeDef,  # (2)
+    DocumentType: List[DocumentTypeListItemTypeDef],  # (3)
+    Blocks: List[BlockTypeDef],  # (4)
+    Errors: List[ErrorsListItemTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+2. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+3. See [:material-code-braces: DocumentTypeListItemTypeDef](./type_defs.md#documenttypelistitemtypedef) 
+4. See [:material-code-braces: BlockTypeDef](./type_defs.md#blocktypedef) 
+5. See [:material-code-braces: ErrorsListItemTypeDef](./type_defs.md#errorslistitemtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDetectSyntaxResponseTypeDef
 
 ```python title="Usage Example"
@@ -4429,6 +4681,29 @@ class DetectTargetedSentimentResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TargetedSentimentEntityTypeDef](./type_defs.md#targetedsentimententitytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchDetectEntitiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesResponseTypeDef
+
+def get_value() -> BatchDetectEntitiesResponseTypeDef:
+    return {
+        "ResultList": ...,
+        "ErrorList": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchDetectEntitiesResponseTypeDef(TypedDict):
+    ResultList: List[BatchDetectEntitiesItemResultTypeDef],  # (1)
+    ErrorList: List[BatchItemErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: BatchDetectEntitiesItemResultTypeDef](./type_defs.md#batchdetectentitiesitemresulttypedef) 
+2. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEntityRecognizerResponseTypeDef
 
 ```python title="Usage Example"

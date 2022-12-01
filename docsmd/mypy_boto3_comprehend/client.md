@@ -285,18 +285,20 @@ Type annotations and code completion for `#!python boto3.client("comprehend").cl
 def classify_document(
     self,
     *,
-    Text: str,
     EndpointArn: str,
-) -> ClassifyDocumentResponseTypeDef:  # (1)
+    Text: str = ...,
+    Bytes: Union[str, bytes, IO[Any], StreamingBody] = ...,
+    DocumentReaderConfig: DocumentReaderConfigTypeDef = ...,  # (1)
+) -> ClassifyDocumentResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ClassifyDocumentResponseTypeDef](./type_defs.md#classifydocumentresponsetypedef) 
+1. See [:material-code-braces: DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef) 
+2. See [:material-code-braces: ClassifyDocumentResponseTypeDef](./type_defs.md#classifydocumentresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: ClassifyDocumentRequestRequestTypeDef = {  # (1)
-    "Text": ...,
     "EndpointArn": ...,
 }
 
@@ -1014,7 +1016,7 @@ parent.detect_dominant_language(**kwargs)
 
 ### detect\_entities
 
-Inspects text for named entities, and returns information about them.
+Detects named entities in input text when you use the pre-trained model.
 
 Type annotations and code completion for `#!python boto3.client("comprehend").detect_entities` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_entities)
@@ -1023,15 +1025,18 @@ Type annotations and code completion for `#!python boto3.client("comprehend").de
 def detect_entities(
     self,
     *,
-    Text: str,
+    Text: str = ...,
     LanguageCode: LanguageCodeType = ...,  # (1)
     EndpointArn: str = ...,
-) -> DetectEntitiesResponseTypeDef:  # (2)
+    Bytes: Union[str, bytes, IO[Any], StreamingBody] = ...,
+    DocumentReaderConfig: DocumentReaderConfigTypeDef = ...,  # (2)
+) -> DetectEntitiesResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
-2. See [:material-code-braces: DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef) 
+2. See [:material-code-braces: DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef) 
+3. See [:material-code-braces: DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2533,9 +2538,11 @@ Type annotations and code completion for `#!python boto3.client("comprehend").ge
 - `client.get_paginator("list_document_classification_jobs")` -> [ListDocumentClassificationJobsPaginator](./paginators.md#listdocumentclassificationjobspaginator)
 - `client.get_paginator("list_document_classifiers")` -> [ListDocumentClassifiersPaginator](./paginators.md#listdocumentclassifierspaginator)
 - `client.get_paginator("list_dominant_language_detection_jobs")` -> [ListDominantLanguageDetectionJobsPaginator](./paginators.md#listdominantlanguagedetectionjobspaginator)
+- `client.get_paginator("list_endpoints")` -> [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
 - `client.get_paginator("list_entities_detection_jobs")` -> [ListEntitiesDetectionJobsPaginator](./paginators.md#listentitiesdetectionjobspaginator)
 - `client.get_paginator("list_entity_recognizers")` -> [ListEntityRecognizersPaginator](./paginators.md#listentityrecognizerspaginator)
 - `client.get_paginator("list_key_phrases_detection_jobs")` -> [ListKeyPhrasesDetectionJobsPaginator](./paginators.md#listkeyphrasesdetectionjobspaginator)
+- `client.get_paginator("list_pii_entities_detection_jobs")` -> [ListPiiEntitiesDetectionJobsPaginator](./paginators.md#listpiientitiesdetectionjobspaginator)
 - `client.get_paginator("list_sentiment_detection_jobs")` -> [ListSentimentDetectionJobsPaginator](./paginators.md#listsentimentdetectionjobspaginator)
 - `client.get_paginator("list_topics_detection_jobs")` -> [ListTopicsDetectionJobsPaginator](./paginators.md#listtopicsdetectionjobspaginator)
 

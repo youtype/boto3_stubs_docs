@@ -166,8 +166,9 @@ Type annotations and code completion for `#!python ListExecutionsPaginator.pagin
 def paginate(
     self,
     *,
-    stateMachineArn: str,
+    stateMachineArn: str = ...,
     statusFilter: ExecutionStatusType = ...,  # (1)
+    mapRunArn: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[ListExecutionsOutputTypeDef]:  # (3)
     ...
@@ -187,6 +188,65 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListExecutionsInputListExecutionsPaginateTypeDef](./type_defs.md#listexecutionsinputlistexecutionspaginatetypedef) 
+## ListMapRunsPaginator
+
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_paginator("list_map_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListMapRuns)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_stepfunctions.paginator import ListMapRunsPaginator
+
+def get_list_map_runs_paginator() -> ListMapRunsPaginator:
+    return Session().client("stepfunctions").get_paginator("list_map_runs")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_stepfunctions.paginator import ListMapRunsPaginator
+
+session = Session()
+
+client = Session().client("stepfunctions")  # (1)
+paginator: ListMapRunsPaginator = client.get_paginator("list_map_runs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SFNClient](./client.md)
+2. paginator: [ListMapRunsPaginator](./paginators.md#listmaprunspaginator)
+3. item: [:material-code-braces: ListMapRunsOutputTypeDef](./type_defs.md#listmaprunsoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListMapRunsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    executionArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMapRunsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMapRunsOutputTypeDef](./type_defs.md#listmaprunsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMapRunsInputListMapRunsPaginateTypeDef = {  # (1)
+    "executionArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMapRunsInputListMapRunsPaginateTypeDef](./type_defs.md#listmaprunsinputlistmaprunspaginatetypedef) 
 ## ListStateMachinesPaginator
 
 Type annotations and code completion for `#!python boto3.client("stepfunctions").get_paginator("list_state_machines")`.

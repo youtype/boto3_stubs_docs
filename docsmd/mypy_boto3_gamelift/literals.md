@@ -101,6 +101,37 @@ ComparisonOperatorTypeType = Literal[
     "LessThanThreshold",
 ]
 ```
+## ComputeStatusType
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.literals import ComputeStatusType
+
+def get_value() -> ComputeStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+ComputeStatusType = Literal[
+    "ACTIVE",
+    "PENDING",
+    "TERMINATING",
+]
+```
+## ComputeTypeType
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.literals import ComputeTypeType
+
+def get_value() -> ComputeTypeType:
+    return "ANYWHERE"
+```
+
+```python title="Definition"
+ComputeTypeType = Literal[
+    "ANYWHERE",
+    "EC2",
+]
+```
 ## DescribeFleetAttributesPaginatorName
 
 ```python title="Usage Example"
@@ -447,6 +478,7 @@ EventCodeType = Literal[
     "GAME_SESSION_ACTIVATION_TIMEOUT",
     "GENERIC_EVENT",
     "INSTANCE_INTERRUPTED",
+    "INSTANCE_RECYCLED",
     "SERVER_PROCESS_CRASHED",
     "SERVER_PROCESS_FORCE_TERMINATED",
     "SERVER_PROCESS_INVALID_PATH",
@@ -488,6 +520,7 @@ FleetStatusType = Literal[
     "DOWNLOADING",
     "ERROR",
     "NEW",
+    "NOT_FOUND",
     "TERMINATED",
     "VALIDATING",
 ]
@@ -856,6 +889,20 @@ ListBuildsPaginatorName = Literal[
     "list_builds",
 ]
 ```
+## ListComputePaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.literals import ListComputePaginatorName
+
+def get_value() -> ListComputePaginatorName:
+    return "list_compute"
+```
+
+```python title="Definition"
+ListComputePaginatorName = Literal[
+    "list_compute",
+]
+```
 ## ListFleetsPaginatorName
 
 ```python title="Usage Example"
@@ -898,6 +945,20 @@ ListGameServersPaginatorName = Literal[
     "list_game_servers",
 ]
 ```
+## ListLocationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.literals import ListLocationsPaginatorName
+
+def get_value() -> ListLocationsPaginatorName:
+    return "list_locations"
+```
+
+```python title="Definition"
+ListLocationsPaginatorName = Literal[
+    "list_locations",
+]
+```
 ## ListScriptsPaginatorName
 
 ```python title="Usage Example"
@@ -910,6 +971,21 @@ def get_value() -> ListScriptsPaginatorName:
 ```python title="Definition"
 ListScriptsPaginatorName = Literal[
     "list_scripts",
+]
+```
+## LocationFilterType
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.literals import LocationFilterType
+
+def get_value() -> LocationFilterType:
+    return "AWS"
+```
+
+```python title="Definition"
+LocationFilterType = Literal[
+    "AWS",
+    "CUSTOM",
 ]
 ```
 ## LocationUpdateStatusType
@@ -963,6 +1039,7 @@ MetricNameType = Literal[
     "ActiveInstances",
     "AvailableGameSessions",
     "AvailablePlayerSessions",
+    "ConcurrentActivatableGameSessions",
     "CurrentPlayerSessions",
     "IdleInstances",
     "PercentAvailableGameSessions",
@@ -1226,6 +1303,7 @@ ServiceName = Literal[
     "cloudwatch",
     "codeartifact",
     "codebuild",
+    "codecatalyst",
     "codecommit",
     "codedeploy",
     "codeguru-reviewer",
@@ -1409,6 +1487,7 @@ ServiceName = Literal[
     "pinpoint-email",
     "pinpoint-sms-voice",
     "pinpoint-sms-voice-v2",
+    "pipes",
     "polly",
     "pricing",
     "privatenetworks",
@@ -1553,9 +1632,11 @@ PaginatorName = Literal[
     "describe_scaling_policies",
     "list_aliases",
     "list_builds",
+    "list_compute",
     "list_fleets",
     "list_game_server_groups",
     "list_game_servers",
+    "list_locations",
     "list_scripts",
     "search_game_sessions",
 ]

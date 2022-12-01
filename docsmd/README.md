@@ -179,6 +179,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-codebuild](./mypy_boto3_codebuild/README.md) for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild) service
 
+- [mypy-boto3-codecatalyst](./mypy_boto3_codecatalyst/README.md) for [CodeCatalyst](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst.html#CodeCatalyst) service
+
 - [mypy-boto3-codecommit](./mypy_boto3_codecommit/README.md) for [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit) service
 
 - [mypy-boto3-codedeploy](./mypy_boto3_codedeploy/README.md) for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy) service
@@ -544,6 +546,8 @@ python -m pip uninstall -y boto3-stubs
 - [mypy-boto3-pinpoint-sms-voice](./mypy_boto3_pinpoint_sms_voice/README.md) for [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice) service
 
 - [mypy-boto3-pinpoint-sms-voice-v2](./mypy_boto3_pinpoint_sms_voice_v2/README.md) for [PinpointSMSVoiceV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice-v2.html#PinpointSMSVoiceV2) service
+
+- [mypy-boto3-pipes](./mypy_boto3_pipes/README.md) for [EventBridgePipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pipes.html#EventBridgePipes) service
 
 - [mypy-boto3-polly](./mypy_boto3_polly/README.md) for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly) service
 

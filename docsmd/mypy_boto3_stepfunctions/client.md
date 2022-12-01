@@ -57,6 +57,7 @@ except (
     client.TaskDoesNotExist,
     client.TaskTimedOut,
     client.TooManyTags,
+    client.ValidationException,
 ) as e:
     print(e)
 ```
@@ -262,7 +263,9 @@ parent.describe_activity(**kwargs)
 
 ### describe\_execution
 
-Describes an execution.
+Provides all information about a state machine execution, such as the state
+machine associated with the execution, the execution input and output, and
+relevant execution metadata.
 
 Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_execution` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
@@ -289,9 +292,39 @@ parent.describe_execution(**kwargs)
 
 1. See [:material-code-braces: DescribeExecutionInputRequestTypeDef](./type_defs.md#describeexecutioninputrequesttypedef) 
 
+### describe\_map\_run
+
+Provides information about a Map Run's configuration, progress, and results.
+
+Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_map_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_map_run)
+
+```python title="Method definition"
+def describe_map_run(
+    self,
+    *,
+    mapRunArn: str,
+) -> DescribeMapRunOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeMapRunOutputTypeDef](./type_defs.md#describemaprunoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMapRunInputRequestTypeDef = {  # (1)
+    "mapRunArn": ...,
+}
+
+parent.describe_map_run(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMapRunInputRequestTypeDef](./type_defs.md#describemapruninputrequesttypedef) 
+
 ### describe\_state\_machine
 
-Describes a state machine.
+Provides information about a state machine's definition, its IAM role Amazon
+Resource Name (ARN), and configuration.
 
 Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_state_machine` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
@@ -320,7 +353,8 @@ parent.describe_state_machine(**kwargs)
 
 ### describe\_state\_machine\_for\_execution
 
-Describes the state machine associated with a specific execution.
+Provides information about a state machine's definition, its execution role ARN,
+and configuration.
 
 Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_state_machine_for_execution` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
@@ -462,7 +496,7 @@ parent.list_activities(**kwargs)
 
 ### list\_executions
 
-Lists the executions of a state machine that meet the filtering criteria.
+Lists all executions of a state machine or a Map Run.
 
 Type annotations and code completion for `#!python boto3.client("stepfunctions").list_executions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
@@ -471,10 +505,11 @@ Type annotations and code completion for `#!python boto3.client("stepfunctions")
 def list_executions(
     self,
     *,
-    stateMachineArn: str,
+    stateMachineArn: str = ...,
     statusFilter: ExecutionStatusType = ...,  # (1)
     maxResults: int = ...,
     nextToken: str = ...,
+    mapRunArn: str = ...,
 ) -> ListExecutionsOutputTypeDef:  # (2)
     ...
 ```
@@ -492,6 +527,37 @@ parent.list_executions(**kwargs)
 ```
 
 1. See [:material-code-braces: ListExecutionsInputRequestTypeDef](./type_defs.md#listexecutionsinputrequesttypedef) 
+
+### list\_map\_runs
+
+Lists all Map Runs that were started by a given state machine execution.
+
+Type annotations and code completion for `#!python boto3.client("stepfunctions").list_map_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_map_runs)
+
+```python title="Method definition"
+def list_map_runs(
+    self,
+    *,
+    executionArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListMapRunsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListMapRunsOutputTypeDef](./type_defs.md#listmaprunsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMapRunsInputRequestTypeDef = {  # (1)
+    "executionArn": ...,
+}
+
+parent.list_map_runs(**kwargs)
+```
+
+1. See [:material-code-braces: ListMapRunsInputRequestTypeDef](./type_defs.md#listmaprunsinputrequesttypedef) 
 
 ### list\_state\_machines
 
@@ -806,6 +872,38 @@ parent.untag_resource(**kwargs)
 
 1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
+### update\_map\_run
+
+Updates an in-progress Map Run's configuration to include changes to the
+settings that control maximum concurrency and Map Run failure.
+
+Type annotations and code completion for `#!python boto3.client("stepfunctions").update_map_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_map_run)
+
+```python title="Method definition"
+def update_map_run(
+    self,
+    *,
+    mapRunArn: str,
+    maxConcurrency: int = ...,
+    toleratedFailurePercentage: float = ...,
+    toleratedFailureCount: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateMapRunInputRequestTypeDef = {  # (1)
+    "mapRunArn": ...,
+}
+
+parent.update_map_run(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateMapRunInputRequestTypeDef](./type_defs.md#updatemapruninputrequesttypedef) 
+
 ### update\_state\_machine
 
 Updates an existing state machine by modifying its `definition` , `roleArn` , or
@@ -851,6 +949,7 @@ Type annotations and code completion for `#!python boto3.client("stepfunctions")
 - `client.get_paginator("get_execution_history")` -> [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
 - `client.get_paginator("list_activities")` -> [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
 - `client.get_paginator("list_executions")` -> [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- `client.get_paginator("list_map_runs")` -> [ListMapRunsPaginator](./paginators.md#listmaprunspaginator)
 - `client.get_paginator("list_state_machines")` -> [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
 
 

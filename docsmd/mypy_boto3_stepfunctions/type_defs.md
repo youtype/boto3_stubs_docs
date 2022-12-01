@@ -280,6 +280,82 @@ class DescribeExecutionInputRequestTypeDef(TypedDict):
     executionArn: str,
 ```
 
+## DescribeMapRunInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import DescribeMapRunInputRequestTypeDef
+
+def get_value() -> DescribeMapRunInputRequestTypeDef:
+    return {
+        "mapRunArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMapRunInputRequestTypeDef(TypedDict):
+    mapRunArn: str,
+```
+
+## MapRunExecutionCountsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import MapRunExecutionCountsTypeDef
+
+def get_value() -> MapRunExecutionCountsTypeDef:
+    return {
+        "pending": ...,
+        "running": ...,
+        "succeeded": ...,
+        "failed": ...,
+        "timedOut": ...,
+        "aborted": ...,
+        "total": ...,
+        "resultsWritten": ...,
+    }
+```
+
+```python title="Definition"
+class MapRunExecutionCountsTypeDef(TypedDict):
+    pending: int,
+    running: int,
+    succeeded: int,
+    failed: int,
+    timedOut: int,
+    aborted: int,
+    total: int,
+    resultsWritten: int,
+```
+
+## MapRunItemCountsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import MapRunItemCountsTypeDef
+
+def get_value() -> MapRunItemCountsTypeDef:
+    return {
+        "pending": ...,
+        "running": ...,
+        "succeeded": ...,
+        "failed": ...,
+        "timedOut": ...,
+        "aborted": ...,
+        "total": ...,
+        "resultsWritten": ...,
+    }
+```
+
+```python title="Definition"
+class MapRunItemCountsTypeDef(TypedDict):
+    pending: int,
+    running: int,
+    succeeded: int,
+    failed: int,
+    timedOut: int,
+    aborted: int,
+    total: int,
+    resultsWritten: int,
+```
+
 ## DescribeStateMachineForExecutionInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -369,6 +445,8 @@ class ExecutionListItemTypeDef(TypedDict):
     status: ExecutionStatusType,  # (1)
     startDate: datetime,
     stopDate: NotRequired[datetime],
+    mapRunArn: NotRequired[str],
+    itemCount: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
@@ -527,6 +605,39 @@ def get_value() -> MapIterationEventDetailsTypeDef:
 class MapIterationEventDetailsTypeDef(TypedDict):
     name: NotRequired[str],
     index: NotRequired[int],
+```
+
+## MapRunFailedEventDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import MapRunFailedEventDetailsTypeDef
+
+def get_value() -> MapRunFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
+```
+
+```python title="Definition"
+class MapRunFailedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
+
+## MapRunStartedEventDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import MapRunStartedEventDetailsTypeDef
+
+def get_value() -> MapRunStartedEventDetailsTypeDef:
+    return {
+        "mapRunArn": ...,
+    }
+```
+
+```python title="Definition"
+class MapRunStartedEventDetailsTypeDef(TypedDict):
+    mapRunArn: NotRequired[str],
 ```
 
 ## MapStateStartedEventDetailsTypeDef
@@ -689,13 +800,55 @@ def get_value() -> ListExecutionsInputRequestTypeDef:
 
 ```python title="Definition"
 class ListExecutionsInputRequestTypeDef(TypedDict):
-    stateMachineArn: str,
+    stateMachineArn: NotRequired[str],
     statusFilter: NotRequired[ExecutionStatusType],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    mapRunArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+## ListMapRunsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import ListMapRunsInputRequestTypeDef
+
+def get_value() -> ListMapRunsInputRequestTypeDef:
+    return {
+        "executionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListMapRunsInputRequestTypeDef(TypedDict):
+    executionArn: str,
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+## MapRunListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import MapRunListItemTypeDef
+
+def get_value() -> MapRunListItemTypeDef:
+    return {
+        "executionArn": ...,
+        "mapRunArn": ...,
+        "stateMachineArn": ...,
+        "startDate": ...,
+    }
+```
+
+```python title="Definition"
+class MapRunListItemTypeDef(TypedDict):
+    executionArn: str,
+    mapRunArn: str,
+    stateMachineArn: str,
+    startDate: datetime,
+    stopDate: NotRequired[datetime],
+```
+
 ## ListStateMachinesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -876,6 +1029,25 @@ def get_value() -> UntagResourceInputRequestTypeDef:
 class UntagResourceInputRequestTypeDef(TypedDict):
     resourceArn: str,
     tagKeys: Sequence[str],
+```
+
+## UpdateMapRunInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import UpdateMapRunInputRequestTypeDef
+
+def get_value() -> UpdateMapRunInputRequestTypeDef:
+    return {
+        "mapRunArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMapRunInputRequestTypeDef(TypedDict):
+    mapRunArn: str,
+    maxConcurrency: NotRequired[int],
+    toleratedFailurePercentage: NotRequired[float],
+    toleratedFailureCount: NotRequired[int],
 ```
 
 ## ActivityScheduledEventDetailsTypeDef
@@ -1189,6 +1361,9 @@ def get_value() -> DescribeExecutionOutputTypeDef:
         "output": ...,
         "outputDetails": ...,
         "traceHeader": ...,
+        "mapRunArn": ...,
+        "error": ...,
+        "cause": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1206,6 +1381,9 @@ class DescribeExecutionOutputTypeDef(TypedDict):
     output: str,
     outputDetails: CloudWatchEventsExecutionDataDetailsTypeDef,  # (2)
     traceHeader: str,
+    mapRunArn: str,
+    error: str,
+    cause: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
@@ -1384,6 +1562,46 @@ class UpdateStateMachineOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMapRunOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import DescribeMapRunOutputTypeDef
+
+def get_value() -> DescribeMapRunOutputTypeDef:
+    return {
+        "mapRunArn": ...,
+        "executionArn": ...,
+        "status": ...,
+        "startDate": ...,
+        "stopDate": ...,
+        "maxConcurrency": ...,
+        "toleratedFailurePercentage": ...,
+        "toleratedFailureCount": ...,
+        "itemCounts": ...,
+        "executionCounts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMapRunOutputTypeDef(TypedDict):
+    mapRunArn: str,
+    executionArn: str,
+    status: MapRunStatusType,  # (1)
+    startDate: datetime,
+    stopDate: datetime,
+    maxConcurrency: int,
+    toleratedFailurePercentage: float,
+    toleratedFailureCount: int,
+    itemCounts: MapRunItemCountsTypeDef,  # (2)
+    executionCounts: MapRunExecutionCountsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: MapRunStatusType](./literals.md#maprunstatustype) 
+2. See [:material-code-braces: MapRunItemCountsTypeDef](./type_defs.md#maprunitemcountstypedef) 
+3. See [:material-code-braces: MapRunExecutionCountsTypeDef](./type_defs.md#maprunexecutioncountstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExecutionsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1456,13 +1674,32 @@ def get_value() -> ListExecutionsInputListExecutionsPaginateTypeDef:
 
 ```python title="Definition"
 class ListExecutionsInputListExecutionsPaginateTypeDef(TypedDict):
-    stateMachineArn: str,
+    stateMachineArn: NotRequired[str],
     statusFilter: NotRequired[ExecutionStatusType],  # (1)
+    mapRunArn: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
 1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListMapRunsInputListMapRunsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import ListMapRunsInputListMapRunsPaginateTypeDef
+
+def get_value() -> ListMapRunsInputListMapRunsPaginateTypeDef:
+    return {
+        "executionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListMapRunsInputListMapRunsPaginateTypeDef(TypedDict):
+    executionArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStateMachinesInputListStateMachinesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1528,6 +1765,28 @@ class TaskScheduledEventDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TaskCredentialsTypeDef](./type_defs.md#taskcredentialstypedef) 
+## ListMapRunsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import ListMapRunsOutputTypeDef
+
+def get_value() -> ListMapRunsOutputTypeDef:
+    return {
+        "mapRuns": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListMapRunsOutputTypeDef(TypedDict):
+    mapRuns: List[MapRunListItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MapRunListItemTypeDef](./type_defs.md#maprunlistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStateMachinesOutputTypeDef
 
 ```python title="Usage Example"
@@ -1621,6 +1880,8 @@ class HistoryEventTypeDef(TypedDict):
     lambdaFunctionTimedOutEventDetails: NotRequired[LambdaFunctionTimedOutEventDetailsTypeDef],  # (31)
     stateEnteredEventDetails: NotRequired[StateEnteredEventDetailsTypeDef],  # (32)
     stateExitedEventDetails: NotRequired[StateExitedEventDetailsTypeDef],  # (33)
+    mapRunStartedEventDetails: NotRequired[MapRunStartedEventDetailsTypeDef],  # (34)
+    mapRunFailedEventDetails: NotRequired[MapRunFailedEventDetailsTypeDef],  # (35)
 ```
 
 1. See [:material-code-brackets: HistoryEventTypeType](./literals.md#historyeventtypetype) 
@@ -1656,6 +1917,8 @@ class HistoryEventTypeDef(TypedDict):
 31. See [:material-code-braces: LambdaFunctionTimedOutEventDetailsTypeDef](./type_defs.md#lambdafunctiontimedouteventdetailstypedef) 
 32. See [:material-code-braces: StateEnteredEventDetailsTypeDef](./type_defs.md#stateenteredeventdetailstypedef) 
 33. See [:material-code-braces: StateExitedEventDetailsTypeDef](./type_defs.md#stateexitedeventdetailstypedef) 
+34. See [:material-code-braces: MapRunStartedEventDetailsTypeDef](./type_defs.md#maprunstartedeventdetailstypedef) 
+35. See [:material-code-braces: MapRunFailedEventDetailsTypeDef](./type_defs.md#maprunfailedeventdetailstypedef) 
 ## CreateStateMachineInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1698,6 +1961,8 @@ def get_value() -> DescribeStateMachineForExecutionOutputTypeDef:
         "updateDate": ...,
         "loggingConfiguration": ...,
         "tracingConfiguration": ...,
+        "mapRunArn": ...,
+        "label": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1711,6 +1976,8 @@ class DescribeStateMachineForExecutionOutputTypeDef(TypedDict):
     updateDate: datetime,
     loggingConfiguration: LoggingConfigurationTypeDef,  # (1)
     tracingConfiguration: TracingConfigurationTypeDef,  # (2)
+    mapRunArn: str,
+    label: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
@@ -1733,6 +2000,7 @@ def get_value() -> DescribeStateMachineOutputTypeDef:
         "creationDate": ...,
         "loggingConfiguration": ...,
         "tracingConfiguration": ...,
+        "label": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1748,6 +2016,7 @@ class DescribeStateMachineOutputTypeDef(TypedDict):
     creationDate: datetime,
     loggingConfiguration: LoggingConfigurationTypeDef,  # (3)
     tracingConfiguration: TracingConfigurationTypeDef,  # (4)
+    label: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 

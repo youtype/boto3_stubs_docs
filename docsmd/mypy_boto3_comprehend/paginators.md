@@ -187,6 +187,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListDominantLanguageDetectionJobsRequestListDominantLanguageDetectionJobsPaginateTypeDef](./type_defs.md#listdominantlanguagedetectionjobsrequestlistdominantlanguagedetectionjobspaginatetypedef) 
+## ListEndpointsPaginator
+
+Type annotations and code completion for `#!python boto3.client("comprehend").get_paginator("list_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListEndpoints)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListEndpointsPaginator
+
+def get_list_endpoints_paginator() -> ListEndpointsPaginator:
+    return Session().client("comprehend").get_paginator("list_endpoints")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListEndpointsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListEndpointsPaginator = client.get_paginator("list_endpoints")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+3. item: [:material-code-braces: ListEndpointsResponseTypeDef](./type_defs.md#listendpointsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListEndpointsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filter: EndpointFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListEndpointsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: EndpointFilterTypeDef](./type_defs.md#endpointfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListEndpointsResponseTypeDef](./type_defs.md#listendpointsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListEndpointsRequestListEndpointsPaginateTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEndpointsRequestListEndpointsPaginateTypeDef](./type_defs.md#listendpointsrequestlistendpointspaginatetypedef) 
 ## ListEntitiesDetectionJobsPaginator
 
 Type annotations and code completion for `#!python boto3.client("comprehend").get_paginator("list_entities_detection_jobs")`.
@@ -367,6 +427,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListKeyPhrasesDetectionJobsRequestListKeyPhrasesDetectionJobsPaginateTypeDef](./type_defs.md#listkeyphrasesdetectionjobsrequestlistkeyphrasesdetectionjobspaginatetypedef) 
+## ListPiiEntitiesDetectionJobsPaginator
+
+Type annotations and code completion for `#!python boto3.client("comprehend").get_paginator("list_pii_entities_detection_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Paginator.ListPiiEntitiesDetectionJobs)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListPiiEntitiesDetectionJobsPaginator
+
+def get_list_pii_entities_detection_jobs_paginator() -> ListPiiEntitiesDetectionJobsPaginator:
+    return Session().client("comprehend").get_paginator("list_pii_entities_detection_jobs")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_comprehend.paginator import ListPiiEntitiesDetectionJobsPaginator
+
+session = Session()
+
+client = Session().client("comprehend")  # (1)
+paginator: ListPiiEntitiesDetectionJobsPaginator = client.get_paginator("list_pii_entities_detection_jobs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [ComprehendClient](./client.md)
+2. paginator: [ListPiiEntitiesDetectionJobsPaginator](./paginators.md#listpiientitiesdetectionjobspaginator)
+3. item: [:material-code-braces: ListPiiEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listpiientitiesdetectionjobsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListPiiEntitiesDetectionJobsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filter: PiiEntitiesDetectionJobFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPiiEntitiesDetectionJobsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: PiiEntitiesDetectionJobFilterTypeDef](./type_defs.md#piientitiesdetectionjobfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPiiEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listpiientitiesdetectionjobsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPiiEntitiesDetectionJobsRequestListPiiEntitiesDetectionJobsPaginateTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPiiEntitiesDetectionJobsRequestListPiiEntitiesDetectionJobsPaginateTypeDef](./type_defs.md#listpiientitiesdetectionjobsrequestlistpiientitiesdetectionjobspaginatetypedef) 
 ## ListSentimentDetectionJobsPaginator
 
 Type annotations and code completion for `#!python boto3.client("comprehend").get_paginator("list_sentiment_detection_jobs")`.

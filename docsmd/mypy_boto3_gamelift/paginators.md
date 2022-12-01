@@ -915,6 +915,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListBuildsInputListBuildsPaginateTypeDef](./type_defs.md#listbuildsinputlistbuildspaginatetypedef) 
+## ListComputePaginator
+
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_compute")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListCompute)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListComputePaginator
+
+def get_list_compute_paginator() -> ListComputePaginator:
+    return Session().client("gamelift").get_paginator("list_compute")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListComputePaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListComputePaginator = client.get_paginator("list_compute")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListComputePaginator](./paginators.md#listcomputepaginator)
+3. item: [:material-code-braces: ListComputeOutputTypeDef](./type_defs.md#listcomputeoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListComputePaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetId: str,
+    Location: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListComputeOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListComputeOutputTypeDef](./type_defs.md#listcomputeoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListComputeInputListComputePaginateTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListComputeInputListComputePaginateTypeDef](./type_defs.md#listcomputeinputlistcomputepaginatetypedef) 
 ## ListFleetsPaginator
 
 Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_fleets")`.
@@ -1094,6 +1154,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListGameServersInputListGameServersPaginateTypeDef](./type_defs.md#listgameserversinputlistgameserverspaginatetypedef) 
+## ListLocationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_locations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListLocations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListLocationsPaginator
+
+def get_list_locations_paginator() -> ListLocationsPaginator:
+    return Session().client("gamelift").get_paginator("list_locations")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_gamelift.paginator import ListLocationsPaginator
+
+session = Session()
+
+client = Session().client("gamelift")  # (1)
+paginator: ListLocationsPaginator = client.get_paginator("list_locations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [GameLiftClient](./client.md)
+2. paginator: [ListLocationsPaginator](./paginators.md#listlocationspaginator)
+3. item: [:material-code-braces: ListLocationsOutputTypeDef](./type_defs.md#listlocationsoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListLocationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[LocationFilterType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListLocationsOutputTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: LocationFilterType](./literals.md#locationfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListLocationsOutputTypeDef](./type_defs.md#listlocationsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLocationsInputListLocationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLocationsInputListLocationsPaginateTypeDef](./type_defs.md#listlocationsinputlistlocationspaginatetypedef) 
 ## ListScriptsPaginator
 
 Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_scripts")`.

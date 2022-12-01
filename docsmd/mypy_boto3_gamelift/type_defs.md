@@ -47,6 +47,22 @@ class RoutingStrategyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: RoutingStrategyTypeType](./literals.md#routingstrategytypetype) 
+## AnywhereConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import AnywhereConfigurationTypeDef
+
+def get_value() -> AnywhereConfigurationTypeDef:
+    return {
+        "Cost": ...,
+    }
+```
+
+```python title="Definition"
+class AnywhereConfigurationTypeDef(TypedDict):
+    Cost: str,
+```
+
 ## AttributeValueTypeDef
 
 ```python title="Usage Example"
@@ -105,6 +121,7 @@ class BuildTypeDef(TypedDict):
     SizeOnDisk: NotRequired[int],
     OperatingSystem: NotRequired[OperatingSystemType],  # (2)
     CreationTime: NotRequired[datetime],
+    ServerSdkVersion: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: BuildStatusType](./literals.md#buildstatustype) 
@@ -196,6 +213,36 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## ComputeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import ComputeTypeDef
+
+def get_value() -> ComputeTypeDef:
+    return {
+        "FleetId": ...,
+    }
+```
+
+```python title="Definition"
+class ComputeTypeDef(TypedDict):
+    FleetId: NotRequired[str],
+    FleetArn: NotRequired[str],
+    ComputeName: NotRequired[str],
+    ComputeArn: NotRequired[str],
+    IpAddress: NotRequired[str],
+    DnsName: NotRequired[str],
+    ComputeStatus: NotRequired[ComputeStatusType],  # (1)
+    Location: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    OperatingSystem: NotRequired[OperatingSystemType],  # (2)
+    Type: NotRequired[EC2InstanceTypeType],  # (3)
+    GameLiftServiceSdkEndpoint: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ComputeStatusType](./literals.md#computestatustype) 
+2. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+3. See [:material-code-brackets: EC2InstanceTypeType](./literals.md#ec2instancetypetype) 
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -269,7 +316,7 @@ def get_value() -> LocationConfigurationTypeDef:
 
 ```python title="Definition"
 class LocationConfigurationTypeDef(TypedDict):
-    Location: NotRequired[str],
+    Location: str,
 ```
 
 ## ResourceCreationLimitPolicyTypeDef
@@ -428,6 +475,23 @@ class PriorityConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PriorityTypeType](./literals.md#prioritytypetype) 
+## LocationModelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import LocationModelTypeDef
+
+def get_value() -> LocationModelTypeDef:
+    return {
+        "LocationName": ...,
+    }
+```
+
+```python title="Definition"
+class LocationModelTypeDef(TypedDict):
+    LocationName: NotRequired[str],
+    LocationArn: NotRequired[str],
+```
+
 ## MatchmakingRuleSetTypeDef
 
 ```python title="Usage Example"
@@ -671,6 +735,22 @@ class DeleteGameSessionQueueInputRequestTypeDef(TypedDict):
     Name: str,
 ```
 
+## DeleteLocationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import DeleteLocationInputRequestTypeDef
+
+def get_value() -> DeleteLocationInputRequestTypeDef:
+    return {
+        "LocationName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteLocationInputRequestTypeDef(TypedDict):
+    LocationName: str,
+```
+
 ## DeleteMatchmakingConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -773,6 +853,24 @@ class DeleteVpcPeeringConnectionInputRequestTypeDef(TypedDict):
     VpcPeeringConnectionId: str,
 ```
 
+## DeregisterComputeInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import DeregisterComputeInputRequestTypeDef
+
+def get_value() -> DeregisterComputeInputRequestTypeDef:
+    return {
+        "FleetId": ...,
+        "ComputeName": ...,
+    }
+```
+
+```python title="Definition"
+class DeregisterComputeInputRequestTypeDef(TypedDict):
+    FleetId: str,
+    ComputeName: str,
+```
+
 ## DeregisterGameServerInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -821,6 +919,24 @@ def get_value() -> DescribeBuildInputRequestTypeDef:
 ```python title="Definition"
 class DescribeBuildInputRequestTypeDef(TypedDict):
     BuildId: str,
+```
+
+## DescribeComputeInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import DescribeComputeInputRequestTypeDef
+
+def get_value() -> DescribeComputeInputRequestTypeDef:
+    return {
+        "FleetId": ...,
+        "ComputeName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeComputeInputRequestTypeDef(TypedDict):
+    FleetId: str,
+    ComputeName: str,
 ```
 
 ## DescribeEC2InstanceLimitsInputRequestTypeDef
@@ -1518,6 +1634,42 @@ class PlayerLatencyTypeDef(TypedDict):
     LatencyInMilliseconds: NotRequired[float],
 ```
 
+## GetComputeAccessInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import GetComputeAccessInputRequestTypeDef
+
+def get_value() -> GetComputeAccessInputRequestTypeDef:
+    return {
+        "FleetId": ...,
+        "ComputeName": ...,
+    }
+```
+
+```python title="Definition"
+class GetComputeAccessInputRequestTypeDef(TypedDict):
+    FleetId: str,
+    ComputeName: str,
+```
+
+## GetComputeAuthTokenInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import GetComputeAuthTokenInputRequestTypeDef
+
+def get_value() -> GetComputeAuthTokenInputRequestTypeDef:
+    return {
+        "FleetId": ...,
+        "ComputeName": ...,
+    }
+```
+
+```python title="Definition"
+class GetComputeAuthTokenInputRequestTypeDef(TypedDict):
+    FleetId: str,
+    ComputeName: str,
+```
+
 ## GetGameSessionLogUrlInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1608,6 +1760,25 @@ class ListBuildsInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BuildStatusType](./literals.md#buildstatustype) 
+## ListComputeInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import ListComputeInputRequestTypeDef
+
+def get_value() -> ListComputeInputRequestTypeDef:
+    return {
+        "FleetId": ...,
+    }
+```
+
+```python title="Definition"
+class ListComputeInputRequestTypeDef(TypedDict):
+    FleetId: str,
+    Location: NotRequired[str],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
 ## ListFleetsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1664,6 +1835,25 @@ class ListGameServersInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListLocationsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import ListLocationsInputRequestTypeDef
+
+def get_value() -> ListLocationsInputRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListLocationsInputRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[LocationFilterType]],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: LocationFilterType](./literals.md#locationfiltertype) 
 ## ListScriptsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1711,6 +1901,28 @@ def get_value() -> TargetConfigurationTypeDef:
 ```python title="Definition"
 class TargetConfigurationTypeDef(TypedDict):
     TargetValue: float,
+```
+
+## RegisterComputeInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import RegisterComputeInputRequestTypeDef
+
+def get_value() -> RegisterComputeInputRequestTypeDef:
+    return {
+        "FleetId": ...,
+        "ComputeName": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterComputeInputRequestTypeDef(TypedDict):
+    FleetId: str,
+    ComputeName: str,
+    CertificatePath: NotRequired[str],
+    DnsName: NotRequired[str],
+    IpAddress: NotRequired[str],
+    Location: NotRequired[str],
 ```
 
 ## RegisterGameServerInputRequestTypeDef
@@ -2192,6 +2404,63 @@ class EmptyResponseMetadataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComputeAccessOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import GetComputeAccessOutputTypeDef
+
+def get_value() -> GetComputeAccessOutputTypeDef:
+    return {
+        "FleetId": ...,
+        "FleetArn": ...,
+        "ComputeName": ...,
+        "ComputeArn": ...,
+        "Credentials": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetComputeAccessOutputTypeDef(TypedDict):
+    FleetId: str,
+    FleetArn: str,
+    ComputeName: str,
+    ComputeArn: str,
+    Credentials: AwsCredentialsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AwsCredentialsTypeDef](./type_defs.md#awscredentialstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComputeAuthTokenOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import GetComputeAuthTokenOutputTypeDef
+
+def get_value() -> GetComputeAuthTokenOutputTypeDef:
+    return {
+        "FleetId": ...,
+        "FleetArn": ...,
+        "ComputeName": ...,
+        "ComputeArn": ...,
+        "AuthToken": ...,
+        "ExpirationTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetComputeAuthTokenOutputTypeDef(TypedDict):
+    FleetId: str,
+    FleetArn: str,
+    ComputeName: str,
+    ComputeArn: str,
+    AuthToken: str,
+    ExpirationTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGameSessionLogUrlOutputTypeDef
 
 ```python title="Usage Example"
@@ -2406,6 +2675,7 @@ from mypy_boto3_gamelift.type_defs import UpdateFleetAttributesOutputTypeDef
 def get_value() -> UpdateFleetAttributesOutputTypeDef:
     return {
         "FleetId": ...,
+        "FleetArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2413,6 +2683,7 @@ def get_value() -> UpdateFleetAttributesOutputTypeDef:
 ```python title="Definition"
 class UpdateFleetAttributesOutputTypeDef(TypedDict):
     FleetId: str,
+    FleetArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2448,6 +2719,7 @@ from mypy_boto3_gamelift.type_defs import UpdateFleetPortSettingsOutputTypeDef
 def get_value() -> UpdateFleetPortSettingsOutputTypeDef:
     return {
         "FleetId": ...,
+        "FleetArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2455,6 +2727,7 @@ def get_value() -> UpdateFleetPortSettingsOutputTypeDef:
 ```python title="Definition"
 class UpdateFleetPortSettingsOutputTypeDef(TypedDict):
     FleetId: str,
+    FleetArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2498,6 +2771,68 @@ class ValidateMatchmakingRuleSetOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeComputeOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import DescribeComputeOutputTypeDef
+
+def get_value() -> DescribeComputeOutputTypeDef:
+    return {
+        "Compute": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeComputeOutputTypeDef(TypedDict):
+    Compute: ComputeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComputeTypeDef](./type_defs.md#computetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComputeOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import ListComputeOutputTypeDef
+
+def get_value() -> ListComputeOutputTypeDef:
+    return {
+        "ComputeList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListComputeOutputTypeDef(TypedDict):
+    ComputeList: List[ComputeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComputeTypeDef](./type_defs.md#computetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterComputeOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import RegisterComputeOutputTypeDef
+
+def get_value() -> RegisterComputeOutputTypeDef:
+    return {
+        "Compute": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterComputeOutputTypeDef(TypedDict):
+    Compute: ComputeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ComputeTypeDef](./type_defs.md#computetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAliasInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2520,6 +2855,24 @@ class CreateAliasInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateLocationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import CreateLocationInputRequestTypeDef
+
+def get_value() -> CreateLocationInputRequestTypeDef:
+    return {
+        "LocationName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocationInputRequestTypeDef(TypedDict):
+    LocationName: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateMatchmakingRuleSetInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2597,6 +2950,7 @@ class CreateBuildInputRequestTypeDef(TypedDict):
     StorageLocation: NotRequired[S3LocationTypeDef],  # (1)
     OperatingSystem: NotRequired[OperatingSystemType],  # (2)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    ServerSdkVersion: NotRequired[str],
 ```
 
 1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
@@ -2821,6 +3175,8 @@ class FleetAttributesTypeDef(TypedDict):
     StoppedActions: NotRequired[List[FleetActionType]],  # (7)
     InstanceRoleArn: NotRequired[str],
     CertificateConfiguration: NotRequired[CertificateConfigurationTypeDef],  # (8)
+    ComputeType: NotRequired[ComputeTypeType],  # (9)
+    AnywhereConfiguration: NotRequired[AnywhereConfigurationTypeDef],  # (10)
 ```
 
 1. See [:material-code-brackets: FleetTypeType](./literals.md#fleettypetype) 
@@ -2831,6 +3187,8 @@ class FleetAttributesTypeDef(TypedDict):
 6. See [:material-code-braces: ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef) 
 7. See [:material-code-brackets: FleetActionType](./literals.md#fleetactiontype) 
 8. See [:material-code-braces: CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef) 
+9. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
+10. See [:material-code-braces: AnywhereConfigurationTypeDef](./type_defs.md#anywhereconfigurationtypedef) 
 ## UpdateFleetAttributesInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -2850,10 +3208,12 @@ class UpdateFleetAttributesInputRequestTypeDef(TypedDict):
     NewGameSessionProtectionPolicy: NotRequired[ProtectionPolicyType],  # (1)
     ResourceCreationLimitPolicy: NotRequired[ResourceCreationLimitPolicyTypeDef],  # (2)
     MetricGroups: NotRequired[Sequence[str]],
+    AnywhereConfiguration: NotRequired[AnywhereConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-brackets: ProtectionPolicyType](./literals.md#protectionpolicytype) 
 2. See [:material-code-braces: ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef) 
+3. See [:material-code-braces: AnywhereConfigurationTypeDef](./type_defs.md#anywhereconfigurationtypedef) 
 ## CreateFleetLocationsOutputTypeDef
 
 ```python title="Usage Example"
@@ -3230,6 +3590,48 @@ class UpdateGameSessionQueueInputRequestTypeDef(TypedDict):
 2. See [:material-code-braces: GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef) 
 3. See [:material-code-braces: FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef) 
 4. See [:material-code-braces: PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef) 
+## CreateLocationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import CreateLocationOutputTypeDef
+
+def get_value() -> CreateLocationOutputTypeDef:
+    return {
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateLocationOutputTypeDef(TypedDict):
+    Location: LocationModelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocationModelTypeDef](./type_defs.md#locationmodeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLocationsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import ListLocationsOutputTypeDef
+
+def get_value() -> ListLocationsOutputTypeDef:
+    return {
+        "Locations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLocationsOutputTypeDef(TypedDict):
+    Locations: List[LocationModelTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LocationModelTypeDef](./type_defs.md#locationmodeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMatchmakingRuleSetOutputTypeDef
 
 ```python title="Usage Example"
@@ -3687,6 +4089,25 @@ class ListBuildsInputListBuildsPaginateTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BuildStatusType](./literals.md#buildstatustype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListComputeInputListComputePaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import ListComputeInputListComputePaginateTypeDef
+
+def get_value() -> ListComputeInputListComputePaginateTypeDef:
+    return {
+        "FleetId": ...,
+    }
+```
+
+```python title="Definition"
+class ListComputeInputListComputePaginateTypeDef(TypedDict):
+    FleetId: str,
+    Location: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFleetsInputListFleetsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -3742,6 +4163,25 @@ class ListGameServersInputListGameServersPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListLocationsInputListLocationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_gamelift.type_defs import ListLocationsInputListLocationsPaginateTypeDef
+
+def get_value() -> ListLocationsInputListLocationsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListLocationsInputListLocationsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[LocationFilterType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LocationFilterType](./literals.md#locationfiltertype) 
 2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListScriptsInputListScriptsPaginateTypeDef
 
@@ -5011,20 +5451,19 @@ from mypy_boto3_gamelift.type_defs import CreateFleetInputRequestTypeDef
 def get_value() -> CreateFleetInputRequestTypeDef:
     return {
         "Name": ...,
-        "EC2InstanceType": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateFleetInputRequestTypeDef(TypedDict):
     Name: str,
-    EC2InstanceType: EC2InstanceTypeType,  # (1)
     Description: NotRequired[str],
     BuildId: NotRequired[str],
     ScriptId: NotRequired[str],
     ServerLaunchPath: NotRequired[str],
     ServerLaunchParameters: NotRequired[str],
     LogPaths: NotRequired[Sequence[str]],
+    EC2InstanceType: NotRequired[EC2InstanceTypeType],  # (1)
     EC2InboundPermissions: NotRequired[Sequence[IpPermissionTypeDef]],  # (2)
     NewGameSessionProtectionPolicy: NotRequired[ProtectionPolicyType],  # (3)
     RuntimeConfiguration: NotRequired[RuntimeConfigurationTypeDef],  # (4)
@@ -5037,6 +5476,8 @@ class CreateFleetInputRequestTypeDef(TypedDict):
     CertificateConfiguration: NotRequired[CertificateConfigurationTypeDef],  # (7)
     Locations: NotRequired[Sequence[LocationConfigurationTypeDef]],  # (8)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (9)
+    ComputeType: NotRequired[ComputeTypeType],  # (10)
+    AnywhereConfiguration: NotRequired[AnywhereConfigurationTypeDef],  # (11)
 ```
 
 1. See [:material-code-brackets: EC2InstanceTypeType](./literals.md#ec2instancetypetype) 
@@ -5048,6 +5489,8 @@ class CreateFleetInputRequestTypeDef(TypedDict):
 7. See [:material-code-braces: CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef) 
 8. See [:material-code-braces: LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef) 
 9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+10. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
+11. See [:material-code-braces: AnywhereConfigurationTypeDef](./type_defs.md#anywhereconfigurationtypedef) 
 ## DescribeRuntimeConfigurationOutputTypeDef
 
 ```python title="Usage Example"

@@ -22,6 +22,21 @@ AugmentedManifestsDocumentTypeFormatType = Literal[
     "SEMI_STRUCTURED_DOCUMENT",
 ]
 ```
+## BlockTypeType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import BlockTypeType
+
+def get_value() -> BlockTypeType:
+    return "LINE"
+```
+
+```python title="Definition"
+BlockTypeType = Literal[
+    "LINE",
+    "WORD",
+]
+```
 ## DocumentClassifierDataFormatType
 
 ```python title="Usage Example"
@@ -95,6 +110,26 @@ def get_value() -> DocumentReadModeType:
 DocumentReadModeType = Literal[
     "FORCE_DOCUMENT_READ_ACTION",
     "SERVICE_DEFAULT",
+]
+```
+## DocumentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import DocumentTypeType
+
+def get_value() -> DocumentTypeType:
+    return "IMAGE"
+```
+
+```python title="Definition"
+DocumentTypeType = Literal[
+    "IMAGE",
+    "MS_WORD",
+    "NATIVE_PDF",
+    "PLAIN_TEXT",
+    "SCANNED_PDF",
+    "TEXTRACT_ANALYZE_DOCUMENT_JSON",
+    "TEXTRACT_DETECT_DOCUMENT_TEXT_JSON",
 ]
 ```
 ## EndpointStatusType
@@ -253,6 +288,20 @@ ListDominantLanguageDetectionJobsPaginatorName = Literal[
     "list_dominant_language_detection_jobs",
 ]
 ```
+## ListEndpointsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import ListEndpointsPaginatorName
+
+def get_value() -> ListEndpointsPaginatorName:
+    return "list_endpoints"
+```
+
+```python title="Definition"
+ListEndpointsPaginatorName = Literal[
+    "list_endpoints",
+]
+```
 ## ListEntitiesDetectionJobsPaginatorName
 
 ```python title="Usage Example"
@@ -293,6 +342,20 @@ def get_value() -> ListKeyPhrasesDetectionJobsPaginatorName:
 ```python title="Definition"
 ListKeyPhrasesDetectionJobsPaginatorName = Literal[
     "list_key_phrases_detection_jobs",
+]
+```
+## ListPiiEntitiesDetectionJobsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import ListPiiEntitiesDetectionJobsPaginatorName
+
+def get_value() -> ListPiiEntitiesDetectionJobsPaginatorName:
+    return "list_pii_entities_detection_jobs"
+```
+
+```python title="Definition"
+ListPiiEntitiesDetectionJobsPaginatorName = Literal[
+    "list_pii_entities_detection_jobs",
 ]
 ```
 ## ListSentimentDetectionJobsPaginatorName
@@ -341,6 +404,24 @@ ModelStatusType = Literal[
     "SUBMITTED",
     "TRAINED",
     "TRAINING",
+]
+```
+## PageBasedErrorCodeType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import PageBasedErrorCodeType
+
+def get_value() -> PageBasedErrorCodeType:
+    return "INTERNAL_SERVER_ERROR"
+```
+
+```python title="Definition"
+PageBasedErrorCodeType = Literal[
+    "INTERNAL_SERVER_ERROR",
+    "PAGE_CHARACTERS_EXCEEDED",
+    "PAGE_SIZE_EXCEEDED",
+    "TEXTRACT_BAD_PAGE",
+    "TEXTRACT_PROVISIONED_THROUGHPUT_EXCEEDED",
 ]
 ```
 ## PartOfSpeechTagTypeType
@@ -452,6 +533,20 @@ PiiEntityTypeType = Literal[
     "US_INDIVIDUAL_TAX_IDENTIFICATION_NUMBER",
     "USERNAME",
     "VEHICLE_IDENTIFICATION_NUMBER",
+]
+```
+## RelationshipTypeType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import RelationshipTypeType
+
+def get_value() -> RelationshipTypeType:
+    return "CHILD"
+```
+
+```python title="Definition"
+RelationshipTypeType = Literal[
+    "CHILD",
 ]
 ```
 ## SentimentTypeType
@@ -615,6 +710,7 @@ ServiceName = Literal[
     "cloudwatch",
     "codeartifact",
     "codebuild",
+    "codecatalyst",
     "codecommit",
     "codedeploy",
     "codeguru-reviewer",
@@ -798,6 +894,7 @@ ServiceName = Literal[
     "pinpoint-email",
     "pinpoint-sms-voice",
     "pinpoint-sms-voice-v2",
+    "pipes",
     "polly",
     "pricing",
     "privatenetworks",
@@ -930,9 +1027,11 @@ PaginatorName = Literal[
     "list_document_classification_jobs",
     "list_document_classifiers",
     "list_dominant_language_detection_jobs",
+    "list_endpoints",
     "list_entities_detection_jobs",
     "list_entity_recognizers",
     "list_key_phrases_detection_jobs",
+    "list_pii_entities_detection_jobs",
     "list_sentiment_detection_jobs",
     "list_topics_detection_jobs",
 ]

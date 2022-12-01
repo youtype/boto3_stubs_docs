@@ -211,6 +211,7 @@ def create_build(
     StorageLocation: S3LocationTypeDef = ...,  # (1)
     OperatingSystem: OperatingSystemType = ...,  # (2)
     Tags: Sequence[TagTypeDef] = ...,  # (3)
+    ServerSdkVersion: str = ...,
 ) -> CreateBuildOutputTypeDef:  # (4)
     ...
 ```
@@ -244,13 +245,13 @@ def create_fleet(
     self,
     *,
     Name: str,
-    EC2InstanceType: EC2InstanceTypeType,  # (1)
     Description: str = ...,
     BuildId: str = ...,
     ScriptId: str = ...,
     ServerLaunchPath: str = ...,
     ServerLaunchParameters: str = ...,
     LogPaths: Sequence[str] = ...,
+    EC2InstanceType: EC2InstanceTypeType = ...,  # (1)
     EC2InboundPermissions: Sequence[IpPermissionTypeDef] = ...,  # (2)
     NewGameSessionProtectionPolicy: ProtectionPolicyType = ...,  # (3)
     RuntimeConfiguration: RuntimeConfigurationTypeDef = ...,  # (4)
@@ -263,7 +264,9 @@ def create_fleet(
     CertificateConfiguration: CertificateConfigurationTypeDef = ...,  # (7)
     Locations: Sequence[LocationConfigurationTypeDef] = ...,  # (8)
     Tags: Sequence[TagTypeDef] = ...,  # (9)
-) -> CreateFleetOutputTypeDef:  # (10)
+    ComputeType: ComputeTypeType = ...,  # (10)
+    AnywhereConfiguration: AnywhereConfigurationTypeDef = ...,  # (11)
+) -> CreateFleetOutputTypeDef:  # (12)
     ...
 ```
 
@@ -276,13 +279,14 @@ def create_fleet(
 7. See [:material-code-braces: CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef) 
 8. See [:material-code-braces: LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef) 
 9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-10. See [:material-code-braces: CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef) 
+10. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
+11. See [:material-code-braces: AnywhereConfigurationTypeDef](./type_defs.md#anywhereconfigurationtypedef) 
+12. See [:material-code-braces: CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: CreateFleetInputRequestTypeDef = {  # (1)
     "Name": ...,
-    "EC2InstanceType": ...,
 }
 
 parent.create_fleet(**kwargs)
@@ -455,6 +459,37 @@ parent.create_game_session_queue(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateGameSessionQueueInputRequestTypeDef](./type_defs.md#creategamesessionqueueinputrequesttypedef) 
+
+### create\_location
+
+Creates a custom location for use in an Anywhere fleet.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").create_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_location)
+
+```python title="Method definition"
+def create_location(
+    self,
+    *,
+    LocationName: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateLocationOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateLocationOutputTypeDef](./type_defs.md#createlocationoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateLocationInputRequestTypeDef = {  # (1)
+    "LocationName": ...,
+}
+
+parent.create_location(**kwargs)
+```
+
+1. See [:material-code-braces: CreateLocationInputRequestTypeDef](./type_defs.md#createlocationinputrequesttypedef) 
 
 ### create\_matchmaking\_configuration
 
@@ -883,6 +918,34 @@ parent.delete_game_session_queue(**kwargs)
 
 1. See [:material-code-braces: DeleteGameSessionQueueInputRequestTypeDef](./type_defs.md#deletegamesessionqueueinputrequesttypedef) 
 
+### delete\_location
+
+Deletes a custom location.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_location)
+
+```python title="Method definition"
+def delete_location(
+    self,
+    *,
+    LocationName: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteLocationInputRequestTypeDef = {  # (1)
+    "LocationName": ...,
+}
+
+parent.delete_location(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLocationInputRequestTypeDef](./type_defs.md#deletelocationinputrequesttypedef) 
+
 ### delete\_matchmaking\_configuration
 
 Permanently removes a FlexMatch matchmaking configuration.
@@ -1059,6 +1122,36 @@ parent.delete_vpc_peering_connection(**kwargs)
 
 1. See [:material-code-braces: DeleteVpcPeeringConnectionInputRequestTypeDef](./type_defs.md#deletevpcpeeringconnectioninputrequesttypedef) 
 
+### deregister\_compute
+
+Removes a compute resource from the specified fleet.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").deregister_compute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_compute)
+
+```python title="Method definition"
+def deregister_compute(
+    self,
+    *,
+    FleetId: str,
+    ComputeName: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeregisterComputeInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "ComputeName": ...,
+}
+
+parent.deregister_compute(**kwargs)
+```
+
+1. See [:material-code-braces: DeregisterComputeInputRequestTypeDef](./type_defs.md#deregistercomputeinputrequesttypedef) 
+
 ### deregister\_game\_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
@@ -1148,6 +1241,37 @@ parent.describe_build(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeBuildInputRequestTypeDef](./type_defs.md#describebuildinputrequesttypedef) 
+
+### describe\_compute
+
+Retrieves properties for a compute resource.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_compute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_compute)
+
+```python title="Method definition"
+def describe_compute(
+    self,
+    *,
+    FleetId: str,
+    ComputeName: str,
+) -> DescribeComputeOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeComputeOutputTypeDef](./type_defs.md#describecomputeoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeComputeInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "ComputeName": ...,
+}
+
+parent.describe_compute(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeComputeInputRequestTypeDef](./type_defs.md#describecomputeinputrequesttypedef) 
 
 ### describe\_ec2\_instance\_limits
 
@@ -1979,6 +2103,68 @@ def generate_presigned_url(
 ```
 
 
+### get\_compute\_access
+
+Requests remote access to a fleet instance.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").get_compute_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_compute_access)
+
+```python title="Method definition"
+def get_compute_access(
+    self,
+    *,
+    FleetId: str,
+    ComputeName: str,
+) -> GetComputeAccessOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetComputeAccessOutputTypeDef](./type_defs.md#getcomputeaccessoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetComputeAccessInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "ComputeName": ...,
+}
+
+parent.get_compute_access(**kwargs)
+```
+
+1. See [:material-code-braces: GetComputeAccessInputRequestTypeDef](./type_defs.md#getcomputeaccessinputrequesttypedef) 
+
+### get\_compute\_auth\_token
+
+Requests an authorization token from GameLift.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").get_compute_auth_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_compute_auth_token)
+
+```python title="Method definition"
+def get_compute_auth_token(
+    self,
+    *,
+    FleetId: str,
+    ComputeName: str,
+) -> GetComputeAuthTokenOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetComputeAuthTokenOutputTypeDef](./type_defs.md#getcomputeauthtokenoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetComputeAuthTokenInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "ComputeName": ...,
+}
+
+parent.get_compute_auth_token(**kwargs)
+```
+
+1. See [:material-code-braces: GetComputeAuthTokenInputRequestTypeDef](./type_defs.md#getcomputeauthtokeninputrequesttypedef) 
+
 ### get\_game\_session\_log\_url
 
 Retrieves the location of stored game session logs for a specified game session.
@@ -2105,6 +2291,39 @@ parent.list_builds(**kwargs)
 
 1. See [:material-code-braces: ListBuildsInputRequestTypeDef](./type_defs.md#listbuildsinputrequesttypedef) 
 
+### list\_compute
+
+Retrieves all compute resources registered to a fleet in your Amazon Web
+Services account.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").list_compute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_compute)
+
+```python title="Method definition"
+def list_compute(
+    self,
+    *,
+    FleetId: str,
+    Location: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListComputeOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListComputeOutputTypeDef](./type_defs.md#listcomputeoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListComputeInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.list_compute(**kwargs)
+```
+
+1. See [:material-code-braces: ListComputeInputRequestTypeDef](./type_defs.md#listcomputeinputrequesttypedef) 
+
 ### list\_fleets
 
 Retrieves a collection of fleet resources in an Amazon Web Services Region.
@@ -2139,9 +2358,7 @@ parent.list_fleets(**kwargs)
 
 ### list\_game\_server\_groups
 
-**This operation is used with the GameLift FleetIQ solution and game server
-groups.** Retrieves information on all game servers groups that exist in the
-current Amazon Web Services account for the selected Region.
+Lists a game server groups.
 
 Type annotations and code completion for `#!python boto3.client("gamelift").list_game_server_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups)
@@ -2203,6 +2420,38 @@ parent.list_game_servers(**kwargs)
 ```
 
 1. See [:material-code-braces: ListGameServersInputRequestTypeDef](./type_defs.md#listgameserversinputrequesttypedef) 
+
+### list\_locations
+
+Lists all custom and Amazon Web Services locations.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").list_locations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_locations)
+
+```python title="Method definition"
+def list_locations(
+    self,
+    *,
+    Filters: Sequence[LocationFilterType] = ...,  # (1)
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListLocationsOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: LocationFilterType](./literals.md#locationfiltertype) 
+2. See [:material-code-braces: ListLocationsOutputTypeDef](./type_defs.md#listlocationsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLocationsInputRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.list_locations(**kwargs)
+```
+
+1. See [:material-code-braces: ListLocationsInputRequestTypeDef](./type_defs.md#listlocationsinputrequesttypedef) 
 
 ### list\_scripts
 
@@ -2308,6 +2557,41 @@ parent.put_scaling_policy(**kwargs)
 ```
 
 1. See [:material-code-braces: PutScalingPolicyInputRequestTypeDef](./type_defs.md#putscalingpolicyinputrequesttypedef) 
+
+### register\_compute
+
+Registers your compute resources in a fleet you previously created.
+
+Type annotations and code completion for `#!python boto3.client("gamelift").register_compute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_compute)
+
+```python title="Method definition"
+def register_compute(
+    self,
+    *,
+    FleetId: str,
+    ComputeName: str,
+    CertificatePath: str = ...,
+    DnsName: str = ...,
+    IpAddress: str = ...,
+    Location: str = ...,
+) -> RegisterComputeOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: RegisterComputeOutputTypeDef](./type_defs.md#registercomputeoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RegisterComputeInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "ComputeName": ...,
+}
+
+parent.register_compute(**kwargs)
+```
+
+1. See [:material-code-braces: RegisterComputeInputRequestTypeDef](./type_defs.md#registercomputeinputrequesttypedef) 
 
 ### register\_game\_server
 
@@ -2478,7 +2762,7 @@ parent.search_game_sessions(**kwargs)
 ### start\_fleet\_actions
 
 Resumes certain types of activity on fleet instances that were suspended with
-StopFleetActions.
+[StopFleetActions](https://docs.aws.amazon.com/gamelift/latest/apireference/API_StopFleetActions.html)_.
 
 Type annotations and code completion for `#!python boto3.client("gamelift").start_fleet_actions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions)
@@ -2511,8 +2795,7 @@ parent.start_fleet_actions(**kwargs)
 
 ### start\_game\_session\_placement
 
-Places a request for a new game session in a queue (see  CreateGameSessionQueue
-).
+Places a request for a new game session in a queue.
 
 Type annotations and code completion for `#!python boto3.client("gamelift").start_game_session_placement` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement)
@@ -2887,13 +3170,15 @@ def update_fleet_attributes(
     NewGameSessionProtectionPolicy: ProtectionPolicyType = ...,  # (1)
     ResourceCreationLimitPolicy: ResourceCreationLimitPolicyTypeDef = ...,  # (2)
     MetricGroups: Sequence[str] = ...,
-) -> UpdateFleetAttributesOutputTypeDef:  # (3)
+    AnywhereConfiguration: AnywhereConfigurationTypeDef = ...,  # (3)
+) -> UpdateFleetAttributesOutputTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: ProtectionPolicyType](./literals.md#protectionpolicytype) 
 2. See [:material-code-braces: ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef) 
-3. See [:material-code-braces: UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef) 
+3. See [:material-code-braces: AnywhereConfigurationTypeDef](./type_defs.md#anywhereconfigurationtypedef) 
+4. See [:material-code-braces: UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3286,9 +3571,11 @@ Type annotations and code completion for `#!python boto3.client("gamelift").get_
 - `client.get_paginator("describe_scaling_policies")` -> [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
 - `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
 - `client.get_paginator("list_builds")` -> [ListBuildsPaginator](./paginators.md#listbuildspaginator)
+- `client.get_paginator("list_compute")` -> [ListComputePaginator](./paginators.md#listcomputepaginator)
 - `client.get_paginator("list_fleets")` -> [ListFleetsPaginator](./paginators.md#listfleetspaginator)
 - `client.get_paginator("list_game_server_groups")` -> [ListGameServerGroupsPaginator](./paginators.md#listgameservergroupspaginator)
 - `client.get_paginator("list_game_servers")` -> [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
+- `client.get_paginator("list_locations")` -> [ListLocationsPaginator](./paginators.md#listlocationspaginator)
 - `client.get_paginator("list_scripts")` -> [ListScriptsPaginator](./paginators.md#listscriptspaginator)
 - `client.get_paginator("search_game_sessions")` -> [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
 

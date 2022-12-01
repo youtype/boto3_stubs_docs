@@ -75,6 +75,10 @@ HistoryEventTypeType = Literal[
     "MapIterationFailed",
     "MapIterationStarted",
     "MapIterationSucceeded",
+    "MapRunAborted",
+    "MapRunFailed",
+    "MapRunStarted",
+    "MapRunSucceeded",
     "MapStateAborted",
     "MapStateEntered",
     "MapStateExited",
@@ -135,6 +139,20 @@ ListExecutionsPaginatorName = Literal[
     "list_executions",
 ]
 ```
+## ListMapRunsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.literals import ListMapRunsPaginatorName
+
+def get_value() -> ListMapRunsPaginatorName:
+    return "list_map_runs"
+```
+
+```python title="Definition"
+ListMapRunsPaginatorName = Literal[
+    "list_map_runs",
+]
+```
 ## ListStateMachinesPaginatorName
 
 ```python title="Usage Example"
@@ -164,6 +182,23 @@ LogLevelType = Literal[
     "ERROR",
     "FATAL",
     "OFF",
+]
+```
+## MapRunStatusType
+
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.literals import MapRunStatusType
+
+def get_value() -> MapRunStatusType:
+    return "ABORTED"
+```
+
+```python title="Definition"
+MapRunStatusType = Literal[
+    "ABORTED",
+    "FAILED",
+    "RUNNING",
+    "SUCCEEDED",
 ]
 ```
 ## StateMachineStatusType
@@ -292,6 +327,7 @@ ServiceName = Literal[
     "cloudwatch",
     "codeartifact",
     "codebuild",
+    "codecatalyst",
     "codecommit",
     "codedeploy",
     "codeguru-reviewer",
@@ -475,6 +511,7 @@ ServiceName = Literal[
     "pinpoint-email",
     "pinpoint-sms-voice",
     "pinpoint-sms-voice-v2",
+    "pipes",
     "polly",
     "pricing",
     "privatenetworks",
@@ -607,6 +644,7 @@ PaginatorName = Literal[
     "get_execution_history",
     "list_activities",
     "list_executions",
+    "list_map_runs",
     "list_state_machines",
 ]
 ```
