@@ -63,6 +63,20 @@ ListSnapshotsPaginatorName = Literal[
     "list_snapshots",
 ]
 ```
+## ListTableRestoreStatusPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.literals import ListTableRestoreStatusPaginatorName
+
+def get_value() -> ListTableRestoreStatusPaginatorName:
+    return "list_table_restore_status"
+```
+
+```python title="Definition"
+ListTableRestoreStatusPaginatorName = Literal[
+    "list_table_restore_status",
+]
+```
 ## ListUsageLimitsPaginatorName
 
 ```python title="Usage Example"
@@ -604,6 +618,7 @@ PaginatorName = Literal[
     "list_namespaces",
     "list_recovery_points",
     "list_snapshots",
+    "list_table_restore_status",
     "list_usage_limits",
     "list_workgroups",
 ]

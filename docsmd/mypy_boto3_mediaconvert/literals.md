@@ -1122,6 +1122,21 @@ CmafManifestDurationFormatType = Literal[
     "INTEGER",
 ]
 ```
+## CmafMpdManifestBandwidthTypeType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import CmafMpdManifestBandwidthTypeType
+
+def get_value() -> CmafMpdManifestBandwidthTypeType:
+    return "AVERAGE"
+```
+
+```python title="Definition"
+CmafMpdManifestBandwidthTypeType = Literal[
+    "AVERAGE",
+    "MAX",
+]
+```
 ## CmafMpdProfileType
 
 ```python title="Usage Example"
@@ -1210,6 +1225,21 @@ def get_value() -> CmafTargetDurationCompatibilityModeType:
 CmafTargetDurationCompatibilityModeType = Literal[
     "LEGACY",
     "SPEC_COMPLIANT",
+]
+```
+## CmafVideoCompositionOffsetsType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import CmafVideoCompositionOffsetsType
+
+def get_value() -> CmafVideoCompositionOffsetsType:
+    return "SIGNED"
+```
+
+```python title="Definition"
+CmafVideoCompositionOffsetsType = Literal[
+    "SIGNED",
+    "UNSIGNED",
 ]
 ```
 ## CmafWriteDASHManifestType
@@ -1333,6 +1363,21 @@ CmfcKlvMetadataType = Literal[
     "PASSTHROUGH",
 ]
 ```
+## CmfcManifestMetadataSignalingType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import CmfcManifestMetadataSignalingType
+
+def get_value() -> CmfcManifestMetadataSignalingType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+CmfcManifestMetadataSignalingType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CmfcScte35EsamType
 
 ```python title="Usage Example"
@@ -1361,6 +1406,21 @@ def get_value() -> CmfcScte35SourceType:
 CmfcScte35SourceType = Literal[
     "NONE",
     "PASSTHROUGH",
+]
+```
+## CmfcTimedMetadataBoxVersionType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import CmfcTimedMetadataBoxVersionType
+
+def get_value() -> CmfcTimedMetadataBoxVersionType:
+    return "VERSION_0"
+```
+
+```python title="Definition"
+CmfcTimedMetadataBoxVersionType = Literal[
+    "VERSION_0",
+    "VERSION_1",
 ]
 ```
 ## CmfcTimedMetadataType
@@ -1563,6 +1623,21 @@ DashIsoIntervalCadenceType = Literal[
     "FOLLOW_IFRAME",
 ]
 ```
+## DashIsoMpdManifestBandwidthTypeType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import DashIsoMpdManifestBandwidthTypeType
+
+def get_value() -> DashIsoMpdManifestBandwidthTypeType:
+    return "AVERAGE"
+```
+
+```python title="Definition"
+DashIsoMpdManifestBandwidthTypeType = Literal[
+    "AVERAGE",
+    "MAX",
+]
+```
 ## DashIsoMpdProfileType
 
 ```python title="Usage Example"
@@ -1636,6 +1711,21 @@ def get_value() -> DashIsoSegmentLengthControlType:
 DashIsoSegmentLengthControlType = Literal[
     "EXACT",
     "GOP_MULTIPLE",
+]
+```
+## DashIsoVideoCompositionOffsetsType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import DashIsoVideoCompositionOffsetsType
+
+def get_value() -> DashIsoVideoCompositionOffsetsType:
+    return "SIGNED"
+```
+
+```python title="Definition"
+DashIsoVideoCompositionOffsetsType = Literal[
+    "SIGNED",
+    "UNSIGNED",
 ]
 ```
 ## DashIsoWriteSegmentTimelineInRepresentationType
@@ -4699,6 +4789,21 @@ MpdKlvMetadataType = Literal[
     "PASSTHROUGH",
 ]
 ```
+## MpdManifestMetadataSignalingType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import MpdManifestMetadataSignalingType
+
+def get_value() -> MpdManifestMetadataSignalingType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+MpdManifestMetadataSignalingType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## MpdScte35EsamType
 
 ```python title="Usage Example"
@@ -4727,6 +4832,21 @@ def get_value() -> MpdScte35SourceType:
 MpdScte35SourceType = Literal[
     "NONE",
     "PASSTHROUGH",
+]
+```
+## MpdTimedMetadataBoxVersionType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import MpdTimedMetadataBoxVersionType
+
+def get_value() -> MpdTimedMetadataBoxVersionType:
+    return "VERSION_0"
+```
+
+```python title="Definition"
+MpdTimedMetadataBoxVersionType = Literal[
+    "VERSION_0",
+    "VERSION_1",
 ]
 ```
 ## MpdTimedMetadataType

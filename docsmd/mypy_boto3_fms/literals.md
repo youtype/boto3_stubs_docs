@@ -336,11 +336,12 @@ ThirdPartyFirewallAssociationStatusType = Literal[
 from mypy_boto3_fms.literals import ThirdPartyFirewallType
 
 def get_value() -> ThirdPartyFirewallType:
-    return "PALO_ALTO_NETWORKS_CLOUD_NGFW"
+    return "FORTIGATE_CLOUD_NATIVE_FIREWALL"
 ```
 
 ```python title="Definition"
 ThirdPartyFirewallType = Literal[
+    "FORTIGATE_CLOUD_NATIVE_FIREWALL",
     "PALO_ALTO_NETWORKS_CLOUD_NGFW",
 ]
 ```

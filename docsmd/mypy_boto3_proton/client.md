@@ -337,10 +337,10 @@ def create_environment_account_connection(
     *,
     environmentName: str,
     managementAccountId: str,
-    roleArn: str,
     clientToken: str = ...,
     codebuildRoleArn: str = ...,
     componentRoleArn: str = ...,
+    roleArn: str = ...,
     tags: Sequence[TagTypeDef] = ...,  # (1)
 ) -> CreateEnvironmentAccountConnectionOutputTypeDef:  # (2)
     ...
@@ -354,7 +354,6 @@ def create_environment_account_connection(
 kwargs: CreateEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
     "environmentName": ...,
     "managementAccountId": ...,
-    "roleArn": ...,
 }
 
 parent.create_environment_account_connection(**kwargs)

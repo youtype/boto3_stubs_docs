@@ -39386,6 +39386,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listnamespacespaginator">ListNamespacesPaginator</a></li>
 <li><a href="paginators/#listrecoverypointspaginator">ListRecoveryPointsPaginator</a></li>
 <li><a href="paginators/#listsnapshotspaginator">ListSnapshotsPaginator</a></li>
+<li><a href="paginators/#listtablerestorestatuspaginator">ListTableRestoreStatusPaginator</a></li>
 <li><a href="paginators/#listusagelimitspaginator">ListUsageLimitsPaginator</a></li>
 <li><a href="paginators/#listworkgroupspaginator">ListWorkgroupsPaginator</a></li>
 </ul>
@@ -39401,6 +39402,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listnamespacespaginatorname">ListNamespacesPaginatorName</a></li>
 <li><a href="literals/#listrecoverypointspaginatorname">ListRecoveryPointsPaginatorName</a></li>
 <li><a href="literals/#listsnapshotspaginatorname">ListSnapshotsPaginatorName</a></li>
+<li><a href="literals/#listtablerestorestatuspaginatorname">ListTableRestoreStatusPaginatorName</a></li>
 <li><a href="literals/#listusagelimitspaginatorname">ListUsageLimitsPaginatorName</a></li>
 <li><a href="literals/#listworkgroupspaginatorname">ListWorkgroupsPaginatorName</a></li>
 <li><a href="literals/#logexporttype">LogExportType</a></li>
@@ -39427,13 +39429,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#configparametertypedef">ConfigParameterTypeDef</a></li>
-<li><a href="type_defs/#convertrecoverypointtosnapshotrequestrequesttypedef">ConvertRecoveryPointToSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#snapshottypedef">SnapshotTypeDef</a></li>
 <li><a href="type_defs/#createendpointaccessrequestrequesttypedef">CreateEndpointAccessRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#tagtypedef">TagTypeDef</a></li>
 <li><a href="type_defs/#namespacetypedef">NamespaceTypeDef</a></li>
-<li><a href="type_defs/#createsnapshotrequestrequesttypedef">CreateSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createusagelimitrequestrequesttypedef">CreateUsageLimitRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usagelimittypedef">UsageLimitTypeDef</a></li>
 <li><a href="type_defs/#deleteendpointaccessrequestrequesttypedef">DeleteEndpointAccessRequestRequestTypeDef</a></li>
@@ -39451,6 +39451,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getresourcepolicyrequestrequesttypedef">GetResourcePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#resourcepolicytypedef">ResourcePolicyTypeDef</a></li>
 <li><a href="type_defs/#getsnapshotrequestrequesttypedef">GetSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#gettablerestorestatusrequestrequesttypedef">GetTableRestoreStatusRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tablerestorestatustypedef">TableRestoreStatusTypeDef</a></li>
 <li><a href="type_defs/#getusagelimitrequestrequesttypedef">GetUsageLimitRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getworkgrouprequestrequesttypedef">GetWorkgroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
@@ -39458,6 +39460,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listnamespacesrequestrequesttypedef">ListNamespacesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listrecoverypointsrequestrequesttypedef">ListRecoveryPointsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listsnapshotsrequestrequesttypedef">ListSnapshotsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listtablerestorestatusrequestrequesttypedef">ListTableRestoreStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listusagelimitsrequestrequesttypedef">ListUsageLimitsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listworkgroupsrequestrequesttypedef">ListWorkgroupsRequestRequestTypeDef</a></li>
@@ -39465,23 +39468,26 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#putresourcepolicyrequestrequesttypedef">PutResourcePolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#restorefromrecoverypointrequestrequesttypedef">RestoreFromRecoveryPointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#restorefromsnapshotrequestrequesttypedef">RestoreFromSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#restoretablefromsnapshotrequestrequesttypedef">RestoreTableFromSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateendpointaccessrequestrequesttypedef">UpdateEndpointAccessRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatenamespacerequestrequesttypedef">UpdateNamespaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatesnapshotrequestrequesttypedef">UpdateSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateusagelimitrequestrequesttypedef">UpdateUsageLimitRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateworkgrouprequestrequesttypedef">UpdateWorkgroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#convertrecoverypointtosnapshotrequestrequesttypedef">ConvertRecoveryPointToSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createnamespacerequestrequesttypedef">CreateNamespaceRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createsnapshotrequestrequesttypedef">CreateSnapshotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createworkgrouprequestrequesttypedef">CreateWorkgroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcredentialsresponsetypedef">GetCredentialsResponseTypeDef</a></li>
+<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#convertrecoverypointtosnapshotresponsetypedef">ConvertRecoveryPointToSnapshotResponseTypeDef</a></li>
 <li><a href="type_defs/#createsnapshotresponsetypedef">CreateSnapshotResponseTypeDef</a></li>
 <li><a href="type_defs/#deletesnapshotresponsetypedef">DeleteSnapshotResponseTypeDef</a></li>
 <li><a href="type_defs/#getsnapshotresponsetypedef">GetSnapshotResponseTypeDef</a></li>
 <li><a href="type_defs/#listsnapshotsresponsetypedef">ListSnapshotsResponseTypeDef</a></li>
 <li><a href="type_defs/#updatesnapshotresponsetypedef">UpdateSnapshotResponseTypeDef</a></li>
-<li><a href="type_defs/#createnamespacerequestrequesttypedef">CreateNamespaceRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createworkgrouprequestrequesttypedef">CreateWorkgroupRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
-<li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createnamespaceresponsetypedef">CreateNamespaceResponseTypeDef</a></li>
 <li><a href="type_defs/#deletenamespaceresponsetypedef">DeleteNamespaceResponseTypeDef</a></li>
 <li><a href="type_defs/#getnamespaceresponsetypedef">GetNamespaceResponseTypeDef</a></li>
@@ -39498,10 +39504,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listrecoverypointsresponsetypedef">ListRecoveryPointsResponseTypeDef</a></li>
 <li><a href="type_defs/#getresourcepolicyresponsetypedef">GetResourcePolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#putresourcepolicyresponsetypedef">PutResourcePolicyResponseTypeDef</a></li>
+<li><a href="type_defs/#gettablerestorestatusresponsetypedef">GetTableRestoreStatusResponseTypeDef</a></li>
+<li><a href="type_defs/#listtablerestorestatusresponsetypedef">ListTableRestoreStatusResponseTypeDef</a></li>
+<li><a href="type_defs/#restoretablefromsnapshotresponsetypedef">RestoreTableFromSnapshotResponseTypeDef</a></li>
 <li><a href="type_defs/#listendpointaccessrequestlistendpointaccesspaginatetypedef">ListEndpointAccessRequestListEndpointAccessPaginateTypeDef</a></li>
 <li><a href="type_defs/#listnamespacesrequestlistnamespacespaginatetypedef">ListNamespacesRequestListNamespacesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listrecoverypointsrequestlistrecoverypointspaginatetypedef">ListRecoveryPointsRequestListRecoveryPointsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsnapshotsrequestlistsnapshotspaginatetypedef">ListSnapshotsRequestListSnapshotsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listtablerestorestatusrequestlisttablerestorestatuspaginatetypedef">ListTableRestoreStatusRequestListTableRestoreStatusPaginateTypeDef</a></li>
 <li><a href="type_defs/#listusagelimitsrequestlistusagelimitspaginatetypedef">ListUsageLimitsRequestListUsageLimitsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listworkgroupsrequestlistworkgroupspaginatetypedef">ListWorkgroupsRequestListWorkgroupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#vpcendpointtypedef">VpcEndpointTypeDef</a></li>

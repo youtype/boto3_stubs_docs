@@ -103,11 +103,13 @@ def convert_recovery_point_to_snapshot(
     recoveryPointId: str,
     snapshotName: str,
     retentionPeriod: int = ...,
-) -> ConvertRecoveryPointToSnapshotResponseTypeDef:  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> ConvertRecoveryPointToSnapshotResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ConvertRecoveryPointToSnapshotResponseTypeDef](./type_defs.md#convertrecoverypointtosnapshotresponsetypedef) 
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ConvertRecoveryPointToSnapshotResponseTypeDef](./type_defs.md#convertrecoverypointtosnapshotresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -208,11 +210,13 @@ def create_snapshot(
     namespaceName: str,
     snapshotName: str,
     retentionPeriod: int = ...,
-) -> CreateSnapshotResponseTypeDef:  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSnapshotResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef) 
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -280,6 +284,7 @@ def create_workgroup(
     baseCapacity: int = ...,
     configParameters: Sequence[ConfigParameterTypeDef] = ...,  # (1)
     enhancedVpcRouting: bool = ...,
+    port: int = ...,
     publiclyAccessible: bool = ...,
     securityGroupIds: Sequence[str] = ...,
     subnetIds: Sequence[str] = ...,
@@ -677,6 +682,35 @@ parent.get_snapshot(**kwargs)
 
 1. See [:material-code-braces: GetSnapshotRequestRequestTypeDef](./type_defs.md#getsnapshotrequestrequesttypedef) 
 
+### get\_table\_restore\_status
+
+Returns information about a `TableRestoreStatus` object.
+
+Type annotations and code completion for `#!python boto3.client("redshift-serverless").get_table_restore_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-serverless.html#RedshiftServerless.Client.get_table_restore_status)
+
+```python title="Method definition"
+def get_table_restore_status(
+    self,
+    *,
+    tableRestoreRequestId: str,
+) -> GetTableRestoreStatusResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetTableRestoreStatusResponseTypeDef](./type_defs.md#gettablerestorestatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTableRestoreStatusRequestRequestTypeDef = {  # (1)
+    "tableRestoreRequestId": ...,
+}
+
+parent.get_table_restore_status(**kwargs)
+```
+
+1. See [:material-code-braces: GetTableRestoreStatusRequestRequestTypeDef](./type_defs.md#gettablerestorestatusrequestrequesttypedef) 
+
 ### get\_usage\_limit
 
 Returns information about a usage limit.
@@ -810,6 +844,7 @@ def list_recovery_points(
     *,
     endTime: Union[datetime, str] = ...,
     maxResults: int = ...,
+    namespaceArn: str = ...,
     namespaceName: str = ...,
     nextToken: str = ...,
     startTime: Union[datetime, str] = ...,
@@ -864,6 +899,38 @@ parent.list_snapshots(**kwargs)
 ```
 
 1. See [:material-code-braces: ListSnapshotsRequestRequestTypeDef](./type_defs.md#listsnapshotsrequestrequesttypedef) 
+
+### list\_table\_restore\_status
+
+Returns information about an array of `TableRestoreStatus` objects.
+
+Type annotations and code completion for `#!python boto3.client("redshift-serverless").list_table_restore_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-serverless.html#RedshiftServerless.Client.list_table_restore_status)
+
+```python title="Method definition"
+def list_table_restore_status(
+    self,
+    *,
+    maxResults: int = ...,
+    namespaceName: str = ...,
+    nextToken: str = ...,
+    workgroupName: str = ...,
+) -> ListTableRestoreStatusResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTableRestoreStatusResponseTypeDef](./type_defs.md#listtablerestorestatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTableRestoreStatusRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
+
+parent.list_table_restore_status(**kwargs)
+```
+
+1. See [:material-code-braces: ListTableRestoreStatusRequestRequestTypeDef](./type_defs.md#listtablerestorestatusrequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 
@@ -1054,6 +1121,49 @@ parent.restore_from_snapshot(**kwargs)
 ```
 
 1. See [:material-code-braces: RestoreFromSnapshotRequestRequestTypeDef](./type_defs.md#restorefromsnapshotrequestrequesttypedef) 
+
+### restore\_table\_from\_snapshot
+
+Restores a table from a snapshot to your Amazon Redshift Serverless instance.
+
+Type annotations and code completion for `#!python boto3.client("redshift-serverless").restore_table_from_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-serverless.html#RedshiftServerless.Client.restore_table_from_snapshot)
+
+```python title="Method definition"
+def restore_table_from_snapshot(
+    self,
+    *,
+    namespaceName: str,
+    newTableName: str,
+    snapshotName: str,
+    sourceDatabaseName: str,
+    sourceTableName: str,
+    workgroupName: str,
+    activateCaseSensitiveIdentifier: bool = ...,
+    sourceSchemaName: str = ...,
+    targetDatabaseName: str = ...,
+    targetSchemaName: str = ...,
+) -> RestoreTableFromSnapshotResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: RestoreTableFromSnapshotResponseTypeDef](./type_defs.md#restoretablefromsnapshotresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RestoreTableFromSnapshotRequestRequestTypeDef = {  # (1)
+    "namespaceName": ...,
+    "newTableName": ...,
+    "snapshotName": ...,
+    "sourceDatabaseName": ...,
+    "sourceTableName": ...,
+    "workgroupName": ...,
+}
+
+parent.restore_table_from_snapshot(**kwargs)
+```
+
+1. See [:material-code-braces: RestoreTableFromSnapshotRequestRequestTypeDef](./type_defs.md#restoretablefromsnapshotrequestrequesttypedef) 
 
 ### tag\_resource
 
@@ -1259,6 +1369,7 @@ def update_workgroup(
     baseCapacity: int = ...,
     configParameters: Sequence[ConfigParameterTypeDef] = ...,  # (1)
     enhancedVpcRouting: bool = ...,
+    port: int = ...,
     publiclyAccessible: bool = ...,
     securityGroupIds: Sequence[str] = ...,
     subnetIds: Sequence[str] = ...,
@@ -1290,6 +1401,7 @@ Type annotations and code completion for `#!python boto3.client("redshift-server
 - `client.get_paginator("list_namespaces")` -> [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
 - `client.get_paginator("list_recovery_points")` -> [ListRecoveryPointsPaginator](./paginators.md#listrecoverypointspaginator)
 - `client.get_paginator("list_snapshots")` -> [ListSnapshotsPaginator](./paginators.md#listsnapshotspaginator)
+- `client.get_paginator("list_table_restore_status")` -> [ListTableRestoreStatusPaginator](./paginators.md#listtablerestorestatuspaginator)
 - `client.get_paginator("list_usage_limits")` -> [ListUsageLimitsPaginator](./paginators.md#listusagelimitspaginator)
 - `client.get_paginator("list_workgroups")` -> [ListWorkgroupsPaginator](./paginators.md#listworkgroupspaginator)
 

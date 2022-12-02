@@ -166,6 +166,7 @@ def paginate(
     self,
     *,
     endTime: Union[datetime, str] = ...,
+    namespaceArn: str = ...,
     namespaceName: str = ...,
     startTime: Union[datetime, str] = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
@@ -249,6 +250,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListSnapshotsRequestListSnapshotsPaginateTypeDef](./type_defs.md#listsnapshotsrequestlistsnapshotspaginatetypedef) 
+## ListTableRestoreStatusPaginator
+
+Type annotations and code completion for `#!python boto3.client("redshift-serverless").get_paginator("list_table_restore_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-serverless.html#RedshiftServerless.Paginator.ListTableRestoreStatus)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListTableRestoreStatusPaginator
+
+def get_list_table_restore_status_paginator() -> ListTableRestoreStatusPaginator:
+    return Session().client("redshift-serverless").get_paginator("list_table_restore_status")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_redshift_serverless.paginator import ListTableRestoreStatusPaginator
+
+session = Session()
+
+client = Session().client("redshift-serverless")  # (1)
+paginator: ListTableRestoreStatusPaginator = client.get_paginator("list_table_restore_status")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [RedshiftServerlessClient](./client.md)
+2. paginator: [ListTableRestoreStatusPaginator](./paginators.md#listtablerestorestatuspaginator)
+3. item: [:material-code-braces: ListTableRestoreStatusResponseTypeDef](./type_defs.md#listtablerestorestatusresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListTableRestoreStatusPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    namespaceName: str = ...,
+    workgroupName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTableRestoreStatusResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTableRestoreStatusResponseTypeDef](./type_defs.md#listtablerestorestatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTableRestoreStatusRequestListTableRestoreStatusPaginateTypeDef = {  # (1)
+    "namespaceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTableRestoreStatusRequestListTableRestoreStatusPaginateTypeDef](./type_defs.md#listtablerestorestatusrequestlisttablerestorestatuspaginatetypedef) 
 ## ListUsageLimitsPaginator
 
 Type annotations and code completion for `#!python boto3.client("redshift-serverless").get_paginator("list_usage_limits")`.

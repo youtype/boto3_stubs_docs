@@ -2557,7 +2557,6 @@ def get_value() -> CreateEnvironmentAccountConnectionInputRequestTypeDef:
     return {
         "environmentName": ...,
         "managementAccountId": ...,
-        "roleArn": ...,
     }
 ```
 
@@ -2565,10 +2564,10 @@ def get_value() -> CreateEnvironmentAccountConnectionInputRequestTypeDef:
 class CreateEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
     environmentName: str,
     managementAccountId: str,
-    roleArn: str,
     clientToken: NotRequired[str],
     codebuildRoleArn: NotRequired[str],
     componentRoleArn: NotRequired[str],
+    roleArn: NotRequired[str],
     tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
 

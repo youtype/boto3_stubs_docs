@@ -24,23 +24,22 @@ class ConfigParameterTypeDef(TypedDict):
     parameterValue: NotRequired[str],
 ```
 
-## ConvertRecoveryPointToSnapshotRequestRequestTypeDef
+## TagTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_redshift_serverless.type_defs import ConvertRecoveryPointToSnapshotRequestRequestTypeDef
+from mypy_boto3_redshift_serverless.type_defs import TagTypeDef
 
-def get_value() -> ConvertRecoveryPointToSnapshotRequestRequestTypeDef:
+def get_value() -> TagTypeDef:
     return {
-        "recoveryPointId": ...,
-        "snapshotName": ...,
+        "key": ...,
+        "value": ...,
     }
 ```
 
 ```python title="Definition"
-class ConvertRecoveryPointToSnapshotRequestRequestTypeDef(TypedDict):
-    recoveryPointId: str,
-    snapshotName: str,
-    retentionPeriod: NotRequired[int],
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
 ```
 
 ## ResponseMetadataTypeDef
@@ -124,24 +123,6 @@ class CreateEndpointAccessRequestRequestTypeDef(TypedDict):
     vpcSecurityGroupIds: NotRequired[Sequence[str]],
 ```
 
-## TagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_serverless.type_defs import TagTypeDef
-
-def get_value() -> TagTypeDef:
-    return {
-        "key": ...,
-        "value": ...,
-    }
-```
-
-```python title="Definition"
-class TagTypeDef(TypedDict):
-    key: str,
-    value: str,
-```
-
 ## NamespaceTypeDef
 
 ```python title="Usage Example"
@@ -170,25 +151,6 @@ class NamespaceTypeDef(TypedDict):
 
 1. See [:material-code-brackets: LogExportType](./literals.md#logexporttype) 
 2. See [:material-code-brackets: NamespaceStatusType](./literals.md#namespacestatustype) 
-## CreateSnapshotRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_serverless.type_defs import CreateSnapshotRequestRequestTypeDef
-
-def get_value() -> CreateSnapshotRequestRequestTypeDef:
-    return {
-        "namespaceName": ...,
-        "snapshotName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateSnapshotRequestRequestTypeDef(TypedDict):
-    namespaceName: str,
-    snapshotName: str,
-    retentionPeriod: NotRequired[int],
-```
-
 ## CreateUsageLimitRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -427,12 +389,13 @@ from mypy_boto3_redshift_serverless.type_defs import RecoveryPointTypeDef
 
 def get_value() -> RecoveryPointTypeDef:
     return {
-        "namespaceName": ...,
+        "namespaceArn": ...,
     }
 ```
 
 ```python title="Definition"
 class RecoveryPointTypeDef(TypedDict):
+    namespaceArn: NotRequired[str],
     namespaceName: NotRequired[str],
     recoveryPointCreateTime: NotRequired[datetime],
     recoveryPointId: NotRequired[str],
@@ -489,6 +452,52 @@ class GetSnapshotRequestRequestTypeDef(TypedDict):
     ownerAccount: NotRequired[str],
     snapshotArn: NotRequired[str],
     snapshotName: NotRequired[str],
+```
+
+## GetTableRestoreStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import GetTableRestoreStatusRequestRequestTypeDef
+
+def get_value() -> GetTableRestoreStatusRequestRequestTypeDef:
+    return {
+        "tableRestoreRequestId": ...,
+    }
+```
+
+```python title="Definition"
+class GetTableRestoreStatusRequestRequestTypeDef(TypedDict):
+    tableRestoreRequestId: str,
+```
+
+## TableRestoreStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import TableRestoreStatusTypeDef
+
+def get_value() -> TableRestoreStatusTypeDef:
+    return {
+        "message": ...,
+    }
+```
+
+```python title="Definition"
+class TableRestoreStatusTypeDef(TypedDict):
+    message: NotRequired[str],
+    namespaceName: NotRequired[str],
+    newTableName: NotRequired[str],
+    progressInMegaBytes: NotRequired[int],
+    requestTime: NotRequired[datetime],
+    snapshotName: NotRequired[str],
+    sourceDatabaseName: NotRequired[str],
+    sourceSchemaName: NotRequired[str],
+    sourceTableName: NotRequired[str],
+    status: NotRequired[str],
+    tableRestoreRequestId: NotRequired[str],
+    targetDatabaseName: NotRequired[str],
+    targetSchemaName: NotRequired[str],
+    totalDataInMegaBytes: NotRequired[int],
+    workgroupName: NotRequired[str],
 ```
 
 ## GetUsageLimitRequestRequestTypeDef
@@ -592,6 +601,7 @@ def get_value() -> ListRecoveryPointsRequestRequestTypeDef:
 class ListRecoveryPointsRequestRequestTypeDef(TypedDict):
     endTime: NotRequired[Union[datetime, str]],
     maxResults: NotRequired[int],
+    namespaceArn: NotRequired[str],
     namespaceName: NotRequired[str],
     nextToken: NotRequired[str],
     startTime: NotRequired[Union[datetime, str]],
@@ -617,6 +627,25 @@ class ListSnapshotsRequestRequestTypeDef(TypedDict):
     nextToken: NotRequired[str],
     ownerAccount: NotRequired[str],
     startTime: NotRequired[Union[datetime, str]],
+```
+
+## ListTableRestoreStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import ListTableRestoreStatusRequestRequestTypeDef
+
+def get_value() -> ListTableRestoreStatusRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
+```
+
+```python title="Definition"
+class ListTableRestoreStatusRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    namespaceName: NotRequired[str],
+    nextToken: NotRequired[str],
+    workgroupName: NotRequired[str],
 ```
 
 ## ListTagsForResourceRequestRequestTypeDef
@@ -750,6 +779,36 @@ class RestoreFromSnapshotRequestRequestTypeDef(TypedDict):
     snapshotName: NotRequired[str],
 ```
 
+## RestoreTableFromSnapshotRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import RestoreTableFromSnapshotRequestRequestTypeDef
+
+def get_value() -> RestoreTableFromSnapshotRequestRequestTypeDef:
+    return {
+        "namespaceName": ...,
+        "newTableName": ...,
+        "snapshotName": ...,
+        "sourceDatabaseName": ...,
+        "sourceTableName": ...,
+        "workgroupName": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreTableFromSnapshotRequestRequestTypeDef(TypedDict):
+    namespaceName: str,
+    newTableName: str,
+    snapshotName: str,
+    sourceDatabaseName: str,
+    sourceTableName: str,
+    workgroupName: str,
+    activateCaseSensitiveIdentifier: NotRequired[bool],
+    sourceSchemaName: NotRequired[str],
+    targetDatabaseName: NotRequired[str],
+    targetSchemaName: NotRequired[str],
+```
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -861,12 +920,128 @@ class UpdateWorkgroupRequestRequestTypeDef(TypedDict):
     baseCapacity: NotRequired[int],
     configParameters: NotRequired[Sequence[ConfigParameterTypeDef]],  # (1)
     enhancedVpcRouting: NotRequired[bool],
+    port: NotRequired[int],
     publiclyAccessible: NotRequired[bool],
     securityGroupIds: NotRequired[Sequence[str]],
     subnetIds: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-braces: ConfigParameterTypeDef](./type_defs.md#configparametertypedef) 
+## ConvertRecoveryPointToSnapshotRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import ConvertRecoveryPointToSnapshotRequestRequestTypeDef
+
+def get_value() -> ConvertRecoveryPointToSnapshotRequestRequestTypeDef:
+    return {
+        "recoveryPointId": ...,
+        "snapshotName": ...,
+    }
+```
+
+```python title="Definition"
+class ConvertRecoveryPointToSnapshotRequestRequestTypeDef(TypedDict):
+    recoveryPointId: str,
+    snapshotName: str,
+    retentionPeriod: NotRequired[int],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateNamespaceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import CreateNamespaceRequestRequestTypeDef
+
+def get_value() -> CreateNamespaceRequestRequestTypeDef:
+    return {
+        "namespaceName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateNamespaceRequestRequestTypeDef(TypedDict):
+    namespaceName: str,
+    adminUserPassword: NotRequired[str],
+    adminUsername: NotRequired[str],
+    dbName: NotRequired[str],
+    defaultIamRoleArn: NotRequired[str],
+    iamRoles: NotRequired[Sequence[str]],
+    kmsKeyId: NotRequired[str],
+    logExports: NotRequired[Sequence[LogExportType]],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: LogExportType](./literals.md#logexporttype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateSnapshotRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import CreateSnapshotRequestRequestTypeDef
+
+def get_value() -> CreateSnapshotRequestRequestTypeDef:
+    return {
+        "namespaceName": ...,
+        "snapshotName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSnapshotRequestRequestTypeDef(TypedDict):
+    namespaceName: str,
+    snapshotName: str,
+    retentionPeriod: NotRequired[int],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateWorkgroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import CreateWorkgroupRequestRequestTypeDef
+
+def get_value() -> CreateWorkgroupRequestRequestTypeDef:
+    return {
+        "namespaceName": ...,
+        "workgroupName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateWorkgroupRequestRequestTypeDef(TypedDict):
+    namespaceName: str,
+    workgroupName: str,
+    baseCapacity: NotRequired[int],
+    configParameters: NotRequired[Sequence[ConfigParameterTypeDef]],  # (1)
+    enhancedVpcRouting: NotRequired[bool],
+    port: NotRequired[int],
+    publiclyAccessible: NotRequired[bool],
+    securityGroupIds: NotRequired[Sequence[str]],
+    subnetIds: NotRequired[Sequence[str]],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: ConfigParameterTypeDef](./type_defs.md#configparametertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## TagResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
+```
+
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## GetCredentialsResponseTypeDef
 
 ```python title="Usage Example"
@@ -892,6 +1067,26 @@ class GetCredentialsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConvertRecoveryPointToSnapshotResponseTypeDef
 
 ```python title="Usage Example"
@@ -1014,98 +1209,6 @@ class UpdateSnapshotResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateNamespaceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_serverless.type_defs import CreateNamespaceRequestRequestTypeDef
-
-def get_value() -> CreateNamespaceRequestRequestTypeDef:
-    return {
-        "namespaceName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateNamespaceRequestRequestTypeDef(TypedDict):
-    namespaceName: str,
-    adminUserPassword: NotRequired[str],
-    adminUsername: NotRequired[str],
-    dbName: NotRequired[str],
-    defaultIamRoleArn: NotRequired[str],
-    iamRoles: NotRequired[Sequence[str]],
-    kmsKeyId: NotRequired[str],
-    logExports: NotRequired[Sequence[LogExportType]],  # (1)
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-brackets: LogExportType](./literals.md#logexporttype) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CreateWorkgroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_serverless.type_defs import CreateWorkgroupRequestRequestTypeDef
-
-def get_value() -> CreateWorkgroupRequestRequestTypeDef:
-    return {
-        "namespaceName": ...,
-        "workgroupName": ...,
-    }
-```
-
-```python title="Definition"
-class CreateWorkgroupRequestRequestTypeDef(TypedDict):
-    namespaceName: str,
-    workgroupName: str,
-    baseCapacity: NotRequired[int],
-    configParameters: NotRequired[Sequence[ConfigParameterTypeDef]],  # (1)
-    enhancedVpcRouting: NotRequired[bool],
-    publiclyAccessible: NotRequired[bool],
-    securityGroupIds: NotRequired[Sequence[str]],
-    subnetIds: NotRequired[Sequence[str]],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
-```
-
-1. See [:material-code-braces: ConfigParameterTypeDef](./type_defs.md#configparametertypedef) 
-2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_serverless.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## TagResourceRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_redshift_serverless.type_defs import TagResourceRequestRequestTypeDef
-
-def get_value() -> TagResourceRequestRequestTypeDef:
-    return {
-        "resourceArn": ...,
-        "tags": ...,
-    }
-```
-
-```python title="Definition"
-class TagResourceRequestRequestTypeDef(TypedDict):
-    resourceArn: str,
-    tags: Sequence[TagTypeDef],  # (1)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateNamespaceResponseTypeDef
 
 ```python title="Usage Example"
@@ -1438,6 +1541,68 @@ class PutResourcePolicyResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTableRestoreStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import GetTableRestoreStatusResponseTypeDef
+
+def get_value() -> GetTableRestoreStatusResponseTypeDef:
+    return {
+        "tableRestoreStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetTableRestoreStatusResponseTypeDef(TypedDict):
+    tableRestoreStatus: TableRestoreStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTableRestoreStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import ListTableRestoreStatusResponseTypeDef
+
+def get_value() -> ListTableRestoreStatusResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "tableRestoreStatuses": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTableRestoreStatusResponseTypeDef(TypedDict):
+    nextToken: str,
+    tableRestoreStatuses: List[TableRestoreStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RestoreTableFromSnapshotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import RestoreTableFromSnapshotResponseTypeDef
+
+def get_value() -> RestoreTableFromSnapshotResponseTypeDef:
+    return {
+        "tableRestoreStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RestoreTableFromSnapshotResponseTypeDef(TypedDict):
+    tableRestoreStatus: TableRestoreStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEndpointAccessRequestListEndpointAccessPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1488,6 +1653,7 @@ def get_value() -> ListRecoveryPointsRequestListRecoveryPointsPaginateTypeDef:
 ```python title="Definition"
 class ListRecoveryPointsRequestListRecoveryPointsPaginateTypeDef(TypedDict):
     endTime: NotRequired[Union[datetime, str]],
+    namespaceArn: NotRequired[str],
     namespaceName: NotRequired[str],
     startTime: NotRequired[Union[datetime, str]],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
@@ -1512,6 +1678,25 @@ class ListSnapshotsRequestListSnapshotsPaginateTypeDef(TypedDict):
     namespaceName: NotRequired[str],
     ownerAccount: NotRequired[str],
     startTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListTableRestoreStatusRequestListTableRestoreStatusPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift_serverless.type_defs import ListTableRestoreStatusRequestListTableRestoreStatusPaginateTypeDef
+
+def get_value() -> ListTableRestoreStatusRequestListTableRestoreStatusPaginateTypeDef:
+    return {
+        "namespaceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListTableRestoreStatusRequestListTableRestoreStatusPaginateTypeDef(TypedDict):
+    namespaceName: NotRequired[str],
+    workgroupName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -1739,6 +1924,7 @@ class WorkgroupTypeDef(TypedDict):
     endpoint: NotRequired[EndpointTypeDef],  # (2)
     enhancedVpcRouting: NotRequired[bool],
     namespaceName: NotRequired[str],
+    port: NotRequired[int],
     publiclyAccessible: NotRequired[bool],
     securityGroupIds: NotRequired[List[str]],
     status: NotRequired[WorkgroupStatusType],  # (3)
