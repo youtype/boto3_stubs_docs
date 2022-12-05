@@ -277,6 +277,22 @@ FindingReasonCodeType = Literal[
     "NETWORK_PPS_UNDER_PROVISIONED",
 ]
 ```
+## GenerationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_ce.literals import GenerationStatusType
+
+def get_value() -> GenerationStatusType:
+    return "FAILED"
+```
+
+```python title="Definition"
+GenerationStatusType = Literal[
+    "FAILED",
+    "PROCESSING",
+    "SUCCEEDED",
+]
+```
 ## GranularityType
 
 ```python title="Usage Example"

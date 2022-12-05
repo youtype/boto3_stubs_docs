@@ -156,7 +156,8 @@ def close(
 
 ### configure\_agent
 
-.
+Used by profiler agents to report their current state and to receive remote
+configuration updates.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").configure_agent` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
@@ -188,7 +189,7 @@ parent.configure_agent(**kwargs)
 
 ### create\_profiling\_group
 
-.
+Creates a profiling group.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").create_profiling_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
@@ -252,7 +253,10 @@ parent.delete_profiling_group(**kwargs)
 
 ### describe\_profiling\_group
 
-.
+Returns a
+[ProfilingGroupDescription](https://docs.aws.amazon.com/codeguru/latest/profiler-
+api/API_ProfilingGroupDescription.html)_ object that contains information about
+the requested profiling group.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").describe_profiling_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
@@ -300,7 +304,10 @@ def generate_presigned_url(
 
 ### get\_findings\_report\_account\_summary
 
-.
+Returns a list of
+[FindingsReportSummary](https://docs.aws.amazon.com/codeguru/latest/profiler-
+api/API_FindingsReportSummary.html)_ objects that contain analysis results for
+all profiling groups in your AWS account.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_findings_report_account_summary` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
@@ -423,7 +430,10 @@ parent.get_profile(**kwargs)
 
 ### get\_recommendations
 
-.
+Returns a list of
+[Recommendation](https://docs.aws.amazon.com/codeguru/latest/profiler-
+api/API_Recommendation.html)_ objects that contain recommendations for a
+profiling group for a given time period.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_recommendations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
@@ -534,7 +544,7 @@ parent.list_profile_times(**kwargs)
 
 ### list\_profiling\_groups
 
-.
+Returns a list of profiling groups.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").list_profiling_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
@@ -594,7 +604,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### post\_agent\_profile
 
-.
+Submits profiling data to an aggregated profile of a profiling group.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").post_agent_profile` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
@@ -694,7 +704,8 @@ parent.remove_notification_channel(**kwargs)
 
 ### remove\_permission
 
-.
+Removes permissions from a profiling group's resource-based policy that are
+provided using an action group.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").remove_permission` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
@@ -728,7 +739,8 @@ parent.remove_permission(**kwargs)
 
 ### submit\_feedback
 
-.
+Sends feedback to CodeGuru Profiler about whether the anomaly detected by the
+analysis is useful or not.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").submit_feedback` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
@@ -822,7 +834,7 @@ parent.untag_resource(**kwargs)
 
 ### update\_profiling\_group
 
-.
+Updates a profiling group.
 
 Type annotations and code completion for `#!python boto3.client("codeguruprofiler").update_profiling_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)

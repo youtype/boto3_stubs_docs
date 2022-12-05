@@ -2033,7 +2033,7 @@ parent.get_open_id_connect_provider(**kwargs)
 ### get\_organizations\_access\_report
 
 Retrieves the service last accessed data report for Organizations that was
-previously generated using the `  GenerateOrganizationsAccessReport ` operation.
+previously generated using the `GenerateOrganizationsAccessReport` operation.
 
 Type annotations and code completion for `#!python boto3.client("iam").get_organizations_access_report` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report)

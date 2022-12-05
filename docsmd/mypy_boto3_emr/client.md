@@ -547,7 +547,9 @@ parent.describe_notebook_execution(**kwargs)
 
 ### describe\_release\_label
 
-.
+Provides EMR release label details, such as releases available the region where
+the API request is run, and the available applications for a specific EMR
+release label.
 
 Type annotations and code completion for `#!python boto3.client("emr").describe_release_label` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_release_label)

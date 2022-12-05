@@ -633,7 +633,8 @@ parent.notify_migration_task_state(**kwargs)
 
 ### put\_resource\_attributes
 
-.
+Provides identifying details of the resource being migrated so that it can be
+associated in the Application Discovery Service repository.
 
 Type annotations and code completion for `#!python boto3.client("mgh").put_resource_attributes` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)

@@ -418,7 +418,7 @@ parent.get_instance(**kwargs)
 
 ### get\_instances\_health\_status
 
-Gets the current health status (`Healthy` , `Unhealthy` , or `Unknown` ) of one
+Gets the current health status ( `Healthy` , `Unhealthy` , or `Unknown` ) of one
 or more instances that are associated with a specified service.
 
 Type annotations and code completion for `#!python boto3.client("servicediscovery").get_instances_health_status` method.

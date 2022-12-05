@@ -177,7 +177,7 @@ parent.create_certificate_authority_audit_report(**kwargs)
 ### create\_permission
 
 Grants one or more permissions on a private CA to the Certificate Manager (ACM)
-service principal (`acm.amazonaws.com` ).
+service principal ( `acm.amazonaws.com` ).
 
 Type annotations and code completion for `#!python boto3.client("acm-pca").create_permission` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission)

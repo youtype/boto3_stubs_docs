@@ -7425,7 +7425,7 @@ parent.describe_availability_zones(**kwargs)
 
 ### describe\_aws\_network\_performance\_metric\_subscriptions
 
-Describes the curent Infrastructure Performance metric subscriptions.
+Describes the current Infrastructure Performance metric subscriptions.
 
 Type annotations and code completion for `#!python boto3.client("ec2").describe_aws_network_performance_metric_subscriptions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_aws_network_performance_metric_subscriptions)
@@ -13222,8 +13222,8 @@ parent.enable_ipam_organization_admin_account(**kwargs)
 
 ### enable\_reachability\_analyzer\_organization\_sharing
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/ec2-2016-11-15/EnableReachabilityAnalyzerOrganizationSharing).
+Establishes a trust relationship between Reachability Analyzer and
+Organizations.
 
 Type annotations and code completion for `#!python boto3.client("ec2").enable_reachability_analyzer_organization_sharing` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_reachability_analyzer_organization_sharing)

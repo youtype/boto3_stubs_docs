@@ -520,8 +520,8 @@ parent.admin_initiate_auth(**kwargs)
 
 ### admin\_link\_provider\_for\_user
 
-Links an existing user account in a user pool (`DestinationUser` ) to an
-identity from an external IdP (`SourceUser` ) based on a specified attribute
+Links an existing user account in a user pool ( `DestinationUser` ) to an
+identity from an external IdP ( `SourceUser` ) based on a specified attribute
 name and value from the external IdP.
 
 Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_link_provider_for_user` method.

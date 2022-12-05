@@ -75,7 +75,8 @@ def handle_error(exc: Exceptions.AccessDeniedFault) -> None:
 
 ### add\_tags\_to\_resource
 
-.
+Adds metadata tags to an DMS resource, including replication instance, endpoint,
+security group, and migration task.
 
 Type annotations and code completion for `#!python boto3.client("dms").add_tags_to_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
@@ -200,7 +201,7 @@ def close(
 
 ### create\_endpoint
 
-.
+Creates an endpoint using the provided settings.
 
 Type annotations and code completion for `#!python boto3.client("dms").create_endpoint` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
@@ -437,7 +438,7 @@ parent.create_replication_subnet_group(**kwargs)
 
 ### create\_replication\_task
 
-.
+Creates a replication task using the specified parameters.
 
 Type annotations and code completion for `#!python boto3.client("dms").create_replication_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
@@ -545,7 +546,7 @@ parent.delete_connection(**kwargs)
 
 ### delete\_endpoint
 
-.
+Deletes the specified endpoint.
 
 Type annotations and code completion for `#!python boto3.client("dms").delete_endpoint` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
@@ -718,7 +719,7 @@ parent.delete_replication_subnet_group(**kwargs)
 
 ### delete\_replication\_task
 
-.
+Deletes the specified replication task.
 
 Type annotations and code completion for `#!python boto3.client("dms").delete_replication_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
@@ -958,7 +959,7 @@ parent.describe_endpoint_types(**kwargs)
 
 ### describe\_endpoints
 
-.
+Returns information about the endpoints for your account in the current region.
 
 Type annotations and code completion for `#!python boto3.client("dms").describe_endpoints` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
@@ -990,7 +991,8 @@ parent.describe_endpoints(**kwargs)
 
 ### describe\_event\_categories
 
-.
+Lists categories for all event source types, or, if specified, for a specified
+source type.
 
 Type annotations and code completion for `#!python boto3.client("dms").describe_event_categories` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
@@ -1540,7 +1542,8 @@ parent.describe_replication_task_individual_assessments(**kwargs)
 
 ### describe\_replication\_tasks
 
-.
+Returns information about replication tasks for your account in the current
+region.
 
 Type annotations and code completion for `#!python boto3.client("dms").describe_replication_tasks` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
@@ -1690,7 +1693,8 @@ parent.import_certificate(**kwargs)
 
 ### list\_tags\_for\_resource
 
-.
+Lists all metadata tags attached to an DMS resource, including replication
+instance, endpoint, security group, and migration task.
 
 Type annotations and code completion for `#!python boto3.client("dms").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
@@ -1720,7 +1724,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### modify\_endpoint
 
-.
+Modifies the specified endpoint.
 
 Type annotations and code completion for `#!python boto3.client("dms").modify_endpoint` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
@@ -1906,7 +1910,7 @@ parent.modify_replication_subnet_group(**kwargs)
 
 ### modify\_replication\_task
 
-.
+Modifies the specified replication task.
 
 Type annotations and code completion for `#!python boto3.client("dms").modify_replication_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
@@ -1944,7 +1948,8 @@ parent.modify_replication_task(**kwargs)
 
 ### move\_replication\_task
 
-.
+Moves a replication task from its current replication instance to a different
+target replication instance using the specified parameters.
 
 Type annotations and code completion for `#!python boto3.client("dms").move_replication_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
@@ -2071,7 +2076,8 @@ parent.reload_tables(**kwargs)
 
 ### remove\_tags\_from\_resource
 
-.
+Removes metadata tags from an DMS resource, including replication instance,
+endpoint, security group, and migration task.
 
 Type annotations and code completion for `#!python boto3.client("dms").remove_tags_from_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
@@ -2118,7 +2124,7 @@ def run_fleet_advisor_lsa_analysis(
 
 ### start\_replication\_task
 
-.
+Starts the replication task.
 
 Type annotations and code completion for `#!python boto3.client("dms").start_replication_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
@@ -2153,7 +2159,8 @@ parent.start_replication_task(**kwargs)
 
 ### start\_replication\_task\_assessment
 
-.
+Starts the replication task assessment for unsupported data types in the source
+database.
 
 Type annotations and code completion for `#!python boto3.client("dms").start_replication_task_assessment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
@@ -2223,7 +2230,7 @@ parent.start_replication_task_assessment_run(**kwargs)
 
 ### stop\_replication\_task
 
-.
+Stops the replication task.
 
 Type annotations and code completion for `#!python boto3.client("dms").stop_replication_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)

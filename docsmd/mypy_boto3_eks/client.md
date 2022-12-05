@@ -161,7 +161,7 @@ def close(
 
 ### create\_addon
 
-.
+Creates an Amazon EKS add-on.
 
 Type annotations and code completion for `#!python boto3.client("eks").create_addon` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_addon)
@@ -281,7 +281,7 @@ parent.create_fargate_profile(**kwargs)
 
 ### create\_nodegroup
 
-.
+Creates a managed node group for an Amazon EKS cluster.
 
 Type annotations and code completion for `#!python boto3.client("eks").create_nodegroup` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_nodegroup)
@@ -337,7 +337,7 @@ parent.create_nodegroup(**kwargs)
 
 ### delete\_addon
 
-.
+Delete an Amazon EKS add-on.
 
 Type annotations and code completion for `#!python boto3.client("eks").delete_addon` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_addon)
@@ -489,7 +489,7 @@ parent.deregister_cluster(**kwargs)
 
 ### describe\_addon
 
-.
+Describes an Amazon EKS add-on.
 
 Type annotations and code completion for `#!python boto3.client("eks").describe_addon` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon)
@@ -520,7 +520,7 @@ parent.describe_addon(**kwargs)
 
 ### describe\_addon\_versions
 
-.
+Describes the versions for an add-on.
 
 Type annotations and code completion for `#!python boto3.client("eks").describe_addon_versions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_versions)
@@ -678,7 +678,8 @@ parent.describe_nodegroup(**kwargs)
 
 ### describe\_update
 
-.
+Returns descriptive information about an update against your Amazon EKS cluster
+or associated managed node group or Amazon EKS add-on.
 
 Type annotations and code completion for `#!python boto3.client("eks").describe_update` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_update)
@@ -1078,7 +1079,7 @@ parent.untag_resource(**kwargs)
 
 ### update\_addon
 
-.
+Updates an Amazon EKS add-on.
 
 Type annotations and code completion for `#!python boto3.client("eks").update_addon` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_addon)

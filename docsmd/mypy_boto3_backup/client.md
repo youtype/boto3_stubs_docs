@@ -154,7 +154,8 @@ parent.create_backup_plan(**kwargs)
 
 ### create\_backup\_selection
 
-.
+Creates a JSON document that specifies a set of resources to assign to a backup
+plan.
 
 Type annotations and code completion for `#!python boto3.client("backup").create_backup_selection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection)
@@ -1094,7 +1095,8 @@ parent.get_backup_plan_from_template(**kwargs)
 
 ### get\_backup\_selection
 
-.
+Returns selection metadata and a document in JSON format that specifies a list
+of resources that are associated with a backup plan.
 
 Type annotations and code completion for `#!python boto3.client("backup").get_backup_selection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection)

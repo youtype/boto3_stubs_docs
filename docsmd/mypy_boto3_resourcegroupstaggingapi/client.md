@@ -288,7 +288,7 @@ parent.start_report_creation(**kwargs)
 
 ### tag\_resources
 
-.
+Applies one or more tags to the specified resources.
 
 Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").tag_resources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
@@ -319,7 +319,7 @@ parent.tag_resources(**kwargs)
 
 ### untag\_resources
 
-.
+Removes the specified tags from the specified resources.
 
 Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").untag_resources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)

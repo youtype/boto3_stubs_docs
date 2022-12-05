@@ -1116,8 +1116,8 @@ parent.detect_pii_entities(**kwargs)
 
 ### detect\_sentiment
 
-Inspects text and returns an inference of the prevailing sentiment (`POSITIVE` ,
-`NEUTRAL` , `MIXED` , or `NEGATIVE` ).
+Inspects text and returns an inference of the prevailing sentiment ( `POSITIVE`
+, `NEUTRAL` , `MIXED` , or `NEGATIVE` ).
 
 Type annotations and code completion for `#!python boto3.client("comprehend").detect_sentiment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.detect_sentiment)

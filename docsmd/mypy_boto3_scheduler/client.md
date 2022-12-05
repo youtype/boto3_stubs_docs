@@ -87,7 +87,7 @@ def close(
 
 ### create\_schedule
 
-.
+Creates the specified schedule.
 
 Type annotations and code completion for `#!python boto3.client("scheduler").create_schedule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html#EventBridgeScheduler.Client.create_schedule)
@@ -243,7 +243,7 @@ def generate_presigned_url(
 
 ### get\_schedule
 
-.
+Retrieves the specified schedule.
 
 Type annotations and code completion for `#!python boto3.client("scheduler").get_schedule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html#EventBridgeScheduler.Client.get_schedule)
@@ -459,7 +459,7 @@ parent.untag_resource(**kwargs)
 
 ### update\_schedule
 
-.
+Updates the specified schedule.
 
 Type annotations and code completion for `#!python boto3.client("scheduler").update_schedule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/scheduler.html#EventBridgeScheduler.Client.update_schedule)

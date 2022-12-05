@@ -346,7 +346,7 @@ parent.list_resources(**kwargs)
 
 ### update\_resource
 
-.
+Updates the specified property values in the resource.
 
 Type annotations and code completion for `#!python boto3.client("cloudcontrol").update_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.update_resource)

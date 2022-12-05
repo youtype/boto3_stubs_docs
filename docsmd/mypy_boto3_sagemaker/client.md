@@ -406,7 +406,7 @@ parent.create_artifact(**kwargs)
 
 ### create\_auto\_ml\_job
 
-.
+Creates an Autopilot job.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_auto_ml_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job)
@@ -488,7 +488,7 @@ parent.create_code_repository(**kwargs)
 
 ### create\_compilation\_job
 
-.
+Starts a model compilation job.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_compilation_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_compilation_job)
@@ -822,7 +822,7 @@ parent.create_edge_packaging_job(**kwargs)
 
 ### create\_endpoint
 
-.
+Creates an endpoint using the endpoint configuration specified in the request.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_endpoint` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint)
@@ -857,7 +857,8 @@ parent.create_endpoint(**kwargs)
 
 ### create\_endpoint\_config
 
-.
+Creates an endpoint configuration that SageMaker hosting services uses to deploy
+models.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_endpoint_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint_config)
@@ -1294,7 +1295,7 @@ parent.create_inference_recommendations_job(**kwargs)
 
 ### create\_labeling\_job
 
-.
+Creates a job that uses workers to label the data objects in your input dataset.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_labeling_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_labeling_job)
@@ -3922,7 +3923,7 @@ parent.describe_artifact(**kwargs)
 
 ### describe\_auto\_ml\_job
 
-.
+Returns information about an Amazon SageMaker AutoML job.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").describe_auto_ml_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_auto_ml_job)
@@ -3980,7 +3981,7 @@ parent.describe_code_repository(**kwargs)
 
 ### describe\_compilation\_job
 
-.
+Returns information about a model compilation job.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").describe_compilation_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_compilation_job)
@@ -4217,7 +4218,7 @@ parent.describe_edge_packaging_job(**kwargs)
 
 ### describe\_endpoint
 
-.
+Returns the description of an endpoint.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").describe_endpoint` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint)
@@ -4246,7 +4247,8 @@ parent.describe_endpoint(**kwargs)
 
 ### describe\_endpoint\_config
 
-.
+Returns the description of an endpoint configuration created using the
+`CreateEndpointConfig` API.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").describe_endpoint_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint_config)
@@ -5396,8 +5398,8 @@ parent.describe_user_profile(**kwargs)
 ### describe\_workforce
 
 Lists private workforce information, including workforce name, Amazon Resource
-Name (ARN), and, if applicable, allowed IP address ranges
-([CIDRs](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)_ ).
+Name (ARN), and, if applicable, allowed IP address ranges (
+[CIDRs](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html)_ ).
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").describe_workforce` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workforce)
@@ -5988,7 +5990,7 @@ parent.list_auto_ml_jobs(**kwargs)
 
 ### list\_candidates\_for\_auto\_ml\_job
 
-.
+List the candidates created for the job.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").list_candidates_for_auto_ml_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job)

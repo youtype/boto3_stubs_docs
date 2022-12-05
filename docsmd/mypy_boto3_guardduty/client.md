@@ -294,7 +294,8 @@ parent.create_ip_set(**kwargs)
 
 ### create\_members
 
-.
+Creates member accounts of the current Amazon Web Services account by specifying
+a list of Amazon Web Services account IDs.
 
 Type annotations and code completion for `#!python boto3.client("guardduty").create_members` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members)
@@ -1557,7 +1558,8 @@ parent.list_ip_sets(**kwargs)
 
 ### list\_members
 
-.
+Lists details about all member accounts for the current GuardDuty administrator
+account.
 
 Type annotations and code completion for `#!python boto3.client("guardduty").list_members` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)

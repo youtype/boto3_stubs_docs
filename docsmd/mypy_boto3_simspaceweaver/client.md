@@ -181,7 +181,7 @@ parent.describe_app(**kwargs)
 
 ### describe\_simulation
 
-.
+Returns the current state of the given simulation.
 
 Type annotations and code completion for `#!python boto3.client("simspaceweaver").describe_simulation` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/simspaceweaver.html#SimSpaceWeaver.Client.describe_simulation)
@@ -386,7 +386,7 @@ parent.start_clock(**kwargs)
 
 ### start\_simulation
 
-.
+Starts a simulation with the given name and schema.
 
 Type annotations and code completion for `#!python boto3.client("simspaceweaver").start_simulation` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/simspaceweaver.html#SimSpaceWeaver.Client.start_simulation)

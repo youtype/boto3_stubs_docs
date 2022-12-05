@@ -2337,7 +2337,8 @@ parent.put_aggregation_authorization(**kwargs)
 
 ### put\_config\_rule
 
-.
+Adds or updates an Config rule to evaluate if your Amazon Web Services resources
+comply with your desired configurations.
 
 Type annotations and code completion for `#!python boto3.client("config").put_config_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
@@ -2436,7 +2437,7 @@ parent.put_configuration_recorder(**kwargs)
 
 ### put\_conformance\_pack
 
-.
+Creates or updates a conformance pack.
 
 Type annotations and code completion for `#!python boto3.client("config").put_conformance_pack` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
@@ -2567,7 +2568,8 @@ parent.put_external_evaluation(**kwargs)
 
 ### put\_organization\_config\_rule
 
-.
+Adds or updates an Config rule for your entire organization to evaluate if your
+Amazon Web Services resources comply with your desired configurations.
 
 Type annotations and code completion for `#!python boto3.client("config").put_organization_config_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
@@ -2603,7 +2605,8 @@ parent.put_organization_config_rule(**kwargs)
 
 ### put\_organization\_conformance\_pack
 
-.
+Deploys conformance packs across member accounts in an Amazon Web Services
+Organization.
 
 Type annotations and code completion for `#!python boto3.client("config").put_organization_conformance_pack` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
@@ -2804,7 +2807,10 @@ parent.put_stored_query(**kwargs)
 
 ### select\_aggregate\_resource\_config
 
-.
+Accepts a structured query language (SQL) SELECT command and an aggregator to
+query configuration state of Amazon Web Services resources across multiple
+accounts and regions, performs the corresponding search, and returns resource
+configurations matching the properties.
 
 Type annotations and code completion for `#!python boto3.client("config").select_aggregate_resource_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
@@ -2838,7 +2844,9 @@ parent.select_aggregate_resource_config(**kwargs)
 
 ### select\_resource\_config
 
-.
+Accepts a structured query language (SQL) `SELECT` command, performs the
+corresponding search, and returns resource configurations matching the
+properties.
 
 Type annotations and code completion for `#!python boto3.client("config").select_resource_config` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config)

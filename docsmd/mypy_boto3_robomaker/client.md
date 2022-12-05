@@ -1765,7 +1765,7 @@ parent.tag_resource(**kwargs)
 
 ### untag\_resource
 
-.
+Removes the specified tags from the specified AWS RoboMaker resource.
 
 Type annotations and code completion for `#!python boto3.client("robomaker").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource)

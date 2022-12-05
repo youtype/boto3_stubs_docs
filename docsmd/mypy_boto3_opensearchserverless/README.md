@@ -90,6 +90,7 @@ def get_value() -> AccessPolicyTypeType:
 - [OpenSearchServiceServerlessServiceName](./literals.md#opensearchserviceserverlessservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

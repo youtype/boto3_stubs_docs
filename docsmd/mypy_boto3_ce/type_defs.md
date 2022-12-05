@@ -639,6 +639,27 @@ class ElastiCacheInstanceDetailsTypeDef(TypedDict):
     SizeFlexEligible: NotRequired[bool],
 ```
 
+## GenerationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import GenerationSummaryTypeDef
+
+def get_value() -> GenerationSummaryTypeDef:
+    return {
+        "RecommendationId": ...,
+    }
+```
+
+```python title="Definition"
+class GenerationSummaryTypeDef(TypedDict):
+    RecommendationId: NotRequired[str],
+    GenerationStatus: NotRequired[GenerationStatusType],  # (1)
+    GenerationStartedTime: NotRequired[str],
+    GenerationCompletionTime: NotRequired[str],
+    EstimatedCompletionTime: NotRequired[str],
+```
+
+1. See [:material-code-brackets: GenerationStatusType](./literals.md#generationstatustype) 
 ## TotalImpactFilterTypeDef
 
 ```python title="Usage Example"
@@ -990,6 +1011,26 @@ class ListCostCategoryDefinitionsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListSavingsPlansPurchaseRecommendationGenerationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import ListSavingsPlansPurchaseRecommendationGenerationRequestRequestTypeDef
+
+def get_value() -> ListSavingsPlansPurchaseRecommendationGenerationRequestRequestTypeDef:
+    return {
+        "GenerationStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ListSavingsPlansPurchaseRecommendationGenerationRequestRequestTypeDef(TypedDict):
+    GenerationStatus: NotRequired[GenerationStatusType],  # (1)
+    RecommendationIds: NotRequired[Sequence[str]],
+    PageSize: NotRequired[int],
+    NextPageToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: GenerationStatusType](./literals.md#generationstatustype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1744,6 +1785,29 @@ class ProvideAnomalyFeedbackResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartSavingsPlansPurchaseRecommendationGenerationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import StartSavingsPlansPurchaseRecommendationGenerationResponseTypeDef
+
+def get_value() -> StartSavingsPlansPurchaseRecommendationGenerationResponseTypeDef:
+    return {
+        "RecommendationId": ...,
+        "GenerationStartedTime": ...,
+        "EstimatedCompletionTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartSavingsPlansPurchaseRecommendationGenerationResponseTypeDef(TypedDict):
+    RecommendationId: str,
+    GenerationStartedTime: str,
+    EstimatedCompletionTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAnomalyMonitorResponseTypeDef
 
 ```python title="Usage Example"
@@ -1914,6 +1978,28 @@ class ServiceSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EC2SpecificationTypeDef](./type_defs.md#ec2specificationtypedef) 
+## ListSavingsPlansPurchaseRecommendationGenerationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ce.type_defs import ListSavingsPlansPurchaseRecommendationGenerationResponseTypeDef
+
+def get_value() -> ListSavingsPlansPurchaseRecommendationGenerationResponseTypeDef:
+    return {
+        "GenerationSummaryList": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSavingsPlansPurchaseRecommendationGenerationResponseTypeDef(TypedDict):
+    GenerationSummaryList: List[GenerationSummaryTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: GenerationSummaryTypeDef](./type_defs.md#generationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAnomaliesRequestRequestTypeDef
 
 ```python title="Usage Example"

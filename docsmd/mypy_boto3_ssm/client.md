@@ -1601,7 +1601,7 @@ parent.describe_instance_information(**kwargs)
 
 ### describe\_instance\_patch\_states
 
-.
+Retrieves the high-level patch state of one or more managed nodes.
 
 Type annotations and code completion for `#!python boto3.client("ssm").describe_instance_patch_states` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states)
@@ -1632,7 +1632,8 @@ parent.describe_instance_patch_states(**kwargs)
 
 ### describe\_instance\_patch\_states\_for\_patch\_group
 
-.
+Retrieves the high-level patch state for the managed nodes in the specified
+patch group.
 
 Type annotations and code completion for `#!python boto3.client("ssm").describe_instance_patch_states_for_patch_group` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.describe_instance_patch_states_for_patch_group)

@@ -1278,7 +1278,7 @@ parent.create_db_subnet_group(**kwargs)
 
 ### create\_event\_subscription
 
-.
+Creates an RDS event notification subscription.
 
 Type annotations and code completion for `#!python boto3.client("rds").create_event_subscription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_event_subscription)
@@ -2651,7 +2651,7 @@ parent.describe_db_snapshot_attributes(**kwargs)
 
 ### describe\_db\_snapshots
 
-.
+Returns information about DB snapshots.
 
 Type annotations and code completion for `#!python boto3.client("rds").describe_db_snapshots` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshots)
@@ -2790,7 +2790,8 @@ parent.describe_engine_default_parameters(**kwargs)
 
 ### describe\_event\_categories
 
-.
+Displays a list of categories for all event source types, or, if specified, for
+a specified source type.
 
 Type annotations and code completion for `#!python boto3.client("rds").describe_event_categories` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories)
@@ -3313,7 +3314,7 @@ parent.failover_db_cluster(**kwargs)
 
 ### failover\_global\_cluster
 
-Initiates the failover process for an Aurora global database ( GlobalCluster ).
+Initiates the failover process for an Aurora global database (  GlobalCluster ).
 
 Type annotations and code completion for `#!python boto3.client("rds").failover_global_cluster` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster)

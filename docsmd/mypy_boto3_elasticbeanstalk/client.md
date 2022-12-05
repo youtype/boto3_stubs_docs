@@ -331,7 +331,8 @@ parent.create_application_version(**kwargs)
 
 ### create\_configuration\_template
 
-.
+Creates an AWS Elastic Beanstalk configuration template, associated with a
+specific Elastic Beanstalk application.
 
 Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").create_configuration_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)

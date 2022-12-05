@@ -400,7 +400,8 @@ parent.list_secret_version_ids(**kwargs)
 
 ### list\_secrets
 
-.
+Lists the secrets that are stored by Secrets Manager in the Amazon Web Services
+account, not including secrets that are marked for deletion.
 
 Type annotations and code completion for `#!python boto3.client("secretsmanager").list_secrets` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.list_secrets)

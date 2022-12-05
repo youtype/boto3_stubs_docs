@@ -1940,7 +1940,7 @@ parent.restore_from_snapshot(**kwargs)
 
 ### share\_directory
 
-Shares a specified directory (`DirectoryId` ) in your Amazon Web Services
+Shares a specified directory ( `DirectoryId` ) in your Amazon Web Services
 account (directory owner) with another Amazon Web Services account (directory
 consumer).
 

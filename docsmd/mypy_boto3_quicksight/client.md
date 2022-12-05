@@ -1531,7 +1531,7 @@ parent.describe_analysis(**kwargs)
 
 ### describe\_analysis\_definition
 
-.
+Provides a detailed description of the definition of an analysis.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").describe_analysis_definition` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_definition)
@@ -1626,7 +1626,7 @@ parent.describe_dashboard(**kwargs)
 
 ### describe\_dashboard\_definition
 
-.
+Provides a detailed description of the definition of a dashboard.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").describe_dashboard_definition` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_definition)
@@ -2169,7 +2169,7 @@ parent.describe_template_alias(**kwargs)
 
 ### describe\_template\_definition
 
-.
+Provides a detailed description of the definition of a template.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").describe_template_definition` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_definition)
@@ -2696,7 +2696,7 @@ parent.list_data_sources(**kwargs)
 
 ### list\_folder\_members
 
-List all assets (`DASHBOARD` , `ANALYSIS` , and `DATASET` ) in a folder.
+List all assets ( `DASHBOARD` , `ANALYSIS` , and `DATASET` ) in a folder.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").list_folder_members` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folder_members)
@@ -3259,7 +3259,8 @@ parent.list_users(**kwargs)
 
 ### register\_user
 
-.
+Creates an Amazon QuickSight user, whose identity is associated with the
+Identity and Access Management (IAM) identity or role specified in the request.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").register_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user)

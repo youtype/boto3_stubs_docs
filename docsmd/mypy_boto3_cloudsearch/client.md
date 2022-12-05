@@ -180,7 +180,7 @@ parent.define_analysis_scheme(**kwargs)
 
 ### define\_expression
 
-Configures an ` Expression` for the search domain.
+Configures an `Expression` for the search domain.
 
 Type annotations and code completion for `#!python boto3.client("cloudsearch").define_expression` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
@@ -212,7 +212,7 @@ parent.define_expression(**kwargs)
 
 ### define\_index\_field
 
-Configures an ` IndexField` for the search domain.
+Configures an `IndexField` for the search domain.
 
 Type annotations and code completion for `#!python boto3.client("cloudsearch").define_index_field` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
@@ -336,7 +336,7 @@ parent.delete_domain(**kwargs)
 
 ### delete\_expression
 
-Removes an ` Expression` from the search domain.
+Removes an `Expression` from the search domain.
 
 Type annotations and code completion for `#!python boto3.client("cloudsearch").delete_expression` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
@@ -367,7 +367,7 @@ parent.delete_expression(**kwargs)
 
 ### delete\_index\_field
 
-Removes an ` IndexField` from the search domain.
+Removes an `IndexField` from the search domain.
 
 Type annotations and code completion for `#!python boto3.client("cloudsearch").delete_index_field` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)

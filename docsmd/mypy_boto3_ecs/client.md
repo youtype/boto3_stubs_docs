@@ -180,7 +180,8 @@ parent.create_cluster(**kwargs)
 
 ### create\_service
 
-.
+Runs and maintains your desired number of tasks from a specified task
+definition.
 
 Type annotations and code completion for `#!python boto3.client("ecs").create_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
@@ -415,7 +416,7 @@ parent.delete_cluster(**kwargs)
 
 ### delete\_service
 
-.
+Deletes a specified service within a cluster.
 
 Type annotations and code completion for `#!python boto3.client("ecs").delete_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
@@ -636,7 +637,7 @@ parent.describe_container_instances(**kwargs)
 
 ### describe\_services
 
-.
+Describes the specified services running in your cluster.
 
 Type annotations and code completion for `#!python boto3.client("ecs").describe_services` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
@@ -1912,7 +1913,7 @@ parent.update_container_instances_state(**kwargs)
 
 ### update\_service
 
-.
+Modifies the parameters of a service.
 
 Type annotations and code completion for `#!python boto3.client("ecs").update_service` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)

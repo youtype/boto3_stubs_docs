@@ -1554,7 +1554,7 @@ parent.create_thing_type(**kwargs)
 
 ### create\_topic\_rule
 
-.
+Creates a rule.
 
 Type annotations and code completion for `#!python boto3.client("iot").create_topic_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule)
@@ -4034,7 +4034,7 @@ parent.get_statistics(**kwargs)
 
 ### get\_topic\_rule
 
-.
+Gets information about the rule.
 
 Type annotations and code completion for `#!python boto3.client("iot").get_topic_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule)
@@ -6222,7 +6222,7 @@ parent.remove_thing_from_thing_group(**kwargs)
 
 ### replace\_topic\_rule
 
-.
+Replaces the rule.
 
 Type annotations and code completion for `#!python boto3.client("iot").replace_topic_rule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.replace_topic_rule)

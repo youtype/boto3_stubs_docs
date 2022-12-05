@@ -113,7 +113,7 @@ def close(
 
 ### create\_compute\_environment
 
-.
+Creates an Batch compute environment.
 
 Type annotations and code completion for `#!python boto3.client("batch").create_compute_environment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
@@ -431,7 +431,7 @@ parent.describe_job_queues(**kwargs)
 
 ### describe\_jobs
 
-.
+Describes a list of Batch jobs.
 
 Type annotations and code completion for `#!python boto3.client("batch").describe_jobs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)

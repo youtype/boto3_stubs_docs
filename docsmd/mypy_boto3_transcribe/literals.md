@@ -28,16 +28,18 @@ BaseModelNameType = Literal[
 from mypy_boto3_transcribe.literals import CLMLanguageCodeType
 
 def get_value() -> CLMLanguageCodeType:
-    return "en-AU"
+    return "de-DE"
 ```
 
 ```python title="Definition"
 CLMLanguageCodeType = Literal[
+    "de-DE",
     "en-AU",
     "en-GB",
     "en-US",
     "es-US",
     "hi-IN",
+    "ja-JP",
 ]
 ```
 ## CallAnalyticsJobStatusType

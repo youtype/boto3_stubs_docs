@@ -165,7 +165,7 @@ parent.StackResourceSummary(**kwargs)
 
 ### CloudFormationServiceResource.create\_stack method
 
-.
+Creates a stack as specified in the template.
 
 Type annotations and code completion for `#!python boto3.resource("cloudformation").create_stack` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.create_stack)
@@ -505,7 +505,7 @@ def reload(
 
 #### Stack.update method
 
-.
+Updates a stack as specified in the template.
 
 Type annotations and code completion for `#!python boto3.resource("cloudformation").update` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.update)

@@ -238,7 +238,8 @@ parent.continue_update_rollback(**kwargs)
 
 ### create\_change\_set
 
-.
+Creates a list of changes that will be applied to a stack so that you can review
+the changes before executing them.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").create_change_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
@@ -290,7 +291,7 @@ parent.create_change_set(**kwargs)
 
 ### create\_stack
 
-.
+Creates a stack as specified in the template.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").create_stack` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
@@ -340,7 +341,8 @@ parent.create_stack(**kwargs)
 
 ### create\_stack\_instances
 
-.
+Creates stack instances for the specified accounts, within the specified Amazon
+Web Services Regions.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").create_stack_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
@@ -381,7 +383,7 @@ parent.create_stack_instances(**kwargs)
 
 ### create\_stack\_set
 
-.
+Creates a stack set.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").create_stack_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
@@ -659,7 +661,8 @@ parent.describe_account_limits(**kwargs)
 
 ### describe\_change\_set
 
-.
+Returns the inputs for the change set and a list of changes that CloudFormation
+will make if you execute the change set.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").describe_change_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
@@ -812,7 +815,8 @@ parent.describe_stack_events(**kwargs)
 
 ### describe\_stack\_instance
 
-.
+Returns the stack instance that's associated with the specified stack set,
+Amazon Web Services account, and Region.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_instance` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
@@ -944,7 +948,7 @@ parent.describe_stack_resources(**kwargs)
 
 ### describe\_stack\_set
 
-.
+Returns the description of the specified stack set.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
@@ -1008,7 +1012,8 @@ parent.describe_stack_set_operation(**kwargs)
 
 ### describe\_stacks
 
-.
+Returns the description for the specified stack; if no stack name was specified,
+then it returns the description for all the stacks created.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stacks` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
@@ -1202,7 +1207,7 @@ parent.detect_stack_set_drift(**kwargs)
 
 ### estimate\_template\_cost
 
-.
+Returns the estimated monthly cost of a template.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").estimate_template_cost` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
@@ -1447,7 +1452,8 @@ parent.list_change_sets(**kwargs)
 
 ### list\_exports
 
-.
+Lists all exported output values in the account and Region in which you call
+this action.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").list_exports` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
@@ -1476,7 +1482,7 @@ parent.list_exports(**kwargs)
 
 ### list\_imports
 
-.
+Lists all stacks that are importing an exported output value.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").list_imports` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
@@ -2198,7 +2204,7 @@ parent.test_type(**kwargs)
 
 ### update\_stack
 
-.
+Updates a stack as specified in the template.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").update_stack` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
@@ -2247,7 +2253,8 @@ parent.update_stack(**kwargs)
 
 ### update\_stack\_instances
 
-.
+Updates the parameter values for stack instances for the specified accounts,
+within the specified Amazon Web Services Regions.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").update_stack_instances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
@@ -2288,7 +2295,8 @@ parent.update_stack_instances(**kwargs)
 
 ### update\_stack\_set
 
-.
+Updates the stack set, and associated stack instances in the specified accounts
+and Amazon Web Services Regions.
 
 Type annotations and code completion for `#!python boto3.client("cloudformation").update_stack_set` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)

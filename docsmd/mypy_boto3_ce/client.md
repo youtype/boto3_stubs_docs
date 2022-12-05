@@ -35,6 +35,7 @@ except (
     client.BillExpirationException,
     client.ClientError,
     client.DataUnavailableException,
+    client.GenerationExistsException,
     client.InvalidNextTokenException,
     client.LimitExceededException,
     client.RequestChangedException,
@@ -92,7 +93,8 @@ def close(
 
 ### create\_anomaly\_monitor
 
-.
+Creates a new cost anomaly detection monitor with the requested type and monitor
+specification.
 
 Type annotations and code completion for `#!python boto3.client("ce").create_anomaly_monitor` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor)
@@ -124,7 +126,7 @@ parent.create_anomaly_monitor(**kwargs)
 
 ### create\_anomaly\_subscription
 
-.
+Adds a subscription to a cost anomaly detection monitor.
 
 Type annotations and code completion for `#!python boto3.client("ce").create_anomaly_subscription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
@@ -156,7 +158,7 @@ parent.create_anomaly_subscription(**kwargs)
 
 ### create\_cost\_category\_definition
 
-.
+Creates a new Cost Category with the requested name and rules.
 
 Type annotations and code completion for `#!python boto3.client("ce").create_cost_category_definition` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition)
@@ -839,8 +841,7 @@ parent.get_savings_plans_coverage(**kwargs)
 
 ### get\_savings\_plans\_purchase\_recommendation
 
-Retrieves your request parameters, Savings Plan Recommendations Summary and
-Details.
+Retrieves the Savings Plans recommendations for your account.
 
 Type annotations and code completion for `#!python boto3.client("ce").get_savings_plans_purchase_recommendation` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation)
@@ -1104,9 +1105,44 @@ parent.list_cost_category_definitions(**kwargs)
 
 1. See [:material-code-braces: ListCostCategoryDefinitionsRequestRequestTypeDef](./type_defs.md#listcostcategorydefinitionsrequestrequesttypedef) 
 
+### list\_savings\_plans\_purchase\_recommendation\_generation
+
+Retrieves a list of your historical recommendation generations within the past
+30 days.
+
+Type annotations and code completion for `#!python boto3.client("ce").list_savings_plans_purchase_recommendation_generation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_savings_plans_purchase_recommendation_generation)
+
+```python title="Method definition"
+def list_savings_plans_purchase_recommendation_generation(
+    self,
+    *,
+    GenerationStatus: GenerationStatusType = ...,  # (1)
+    RecommendationIds: Sequence[str] = ...,
+    PageSize: int = ...,
+    NextPageToken: str = ...,
+) -> ListSavingsPlansPurchaseRecommendationGenerationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: GenerationStatusType](./literals.md#generationstatustype) 
+2. See [:material-code-braces: ListSavingsPlansPurchaseRecommendationGenerationResponseTypeDef](./type_defs.md#listsavingsplanspurchaserecommendationgenerationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSavingsPlansPurchaseRecommendationGenerationRequestRequestTypeDef = {  # (1)
+    "GenerationStatus": ...,
+}
+
+parent.list_savings_plans_purchase_recommendation_generation(**kwargs)
+```
+
+1. See [:material-code-braces: ListSavingsPlansPurchaseRecommendationGenerationRequestRequestTypeDef](./type_defs.md#listsavingsplanspurchaserecommendationgenerationrequestrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
-.
+Returns a list of resource tags associated with the resource specified by the
+Amazon Resource Name (ARN).
 
 Type annotations and code completion for `#!python boto3.client("ce").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_tags_for_resource)
@@ -1165,9 +1201,25 @@ parent.provide_anomaly_feedback(**kwargs)
 
 1. See [:material-code-braces: ProvideAnomalyFeedbackRequestRequestTypeDef](./type_defs.md#provideanomalyfeedbackrequestrequesttypedef) 
 
+### start\_savings\_plans\_purchase\_recommendation\_generation
+
+Requests a Savings Plans recommendation generation.
+
+Type annotations and code completion for `#!python boto3.client("ce").start_savings_plans_purchase_recommendation_generation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.start_savings_plans_purchase_recommendation_generation)
+
+```python title="Method definition"
+def start_savings_plans_purchase_recommendation_generation(
+    self,
+) -> StartSavingsPlansPurchaseRecommendationGenerationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartSavingsPlansPurchaseRecommendationGenerationResponseTypeDef](./type_defs.md#startsavingsplanspurchaserecommendationgenerationresponsetypedef) 
+
 ### tag\_resource
 
-.
+An API operation for adding one or more tags (key-value pairs) to a resource.
 
 Type annotations and code completion for `#!python boto3.client("ce").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.tag_resource)

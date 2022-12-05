@@ -147,7 +147,9 @@ parent.invoke_endpoint(**kwargs)
 
 ### invoke\_endpoint\_async
 
-.
+After you deploy a model into production using Amazon SageMaker hosting
+services, your client applications use this API to get inferences from the model
+hosted at the specified endpoint in an asynchronous manner.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker-runtime").invoke_endpoint_async` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint_async)
