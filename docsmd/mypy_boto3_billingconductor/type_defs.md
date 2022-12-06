@@ -174,6 +174,22 @@ class ComputationPreferenceTypeDef(TypedDict):
     PricingPlanArn: str,
 ```
 
+## CreateFreeTierConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import CreateFreeTierConfigTypeDef
+
+def get_value() -> CreateFreeTierConfigTypeDef:
+    return {
+        "Activated": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFreeTierConfigTypeDef(TypedDict):
+    Activated: bool,
+```
+
 ## CreatePricingPlanInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -194,35 +210,6 @@ class CreatePricingPlanInputRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
 ```
 
-## CreatePricingRuleInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_billingconductor.type_defs import CreatePricingRuleInputRequestTypeDef
-
-def get_value() -> CreatePricingRuleInputRequestTypeDef:
-    return {
-        "Name": ...,
-        "Scope": ...,
-        "Type": ...,
-        "ModifierPercentage": ...,
-    }
-```
-
-```python title="Definition"
-class CreatePricingRuleInputRequestTypeDef(TypedDict):
-    Name: str,
-    Scope: PricingRuleScopeType,  # (1)
-    Type: PricingRuleTypeType,  # (2)
-    ModifierPercentage: float,
-    ClientToken: NotRequired[str],
-    Description: NotRequired[str],
-    Service: NotRequired[str],
-    Tags: NotRequired[Mapping[str, str]],
-    BillingEntity: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
-2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
 ## CustomLineItemFlatChargeDetailsTypeDef
 
 ```python title="Usage Example"
@@ -338,6 +325,22 @@ def get_value() -> DisassociatePricingRulesInputRequestTypeDef:
 class DisassociatePricingRulesInputRequestTypeDef(TypedDict):
     Arn: str,
     PricingRuleArns: Sequence[str],
+```
+
+## FreeTierConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import FreeTierConfigTypeDef
+
+def get_value() -> FreeTierConfigTypeDef:
+    return {
+        "Activated": ...,
+    }
+```
+
+```python title="Definition"
+class FreeTierConfigTypeDef(TypedDict):
+    Activated: bool,
 ```
 
 ## ListAccountAssociationsFilterTypeDef
@@ -566,34 +569,6 @@ class ListPricingRulesFilterTypeDef(TypedDict):
     Arns: NotRequired[Sequence[str]],
 ```
 
-## PricingRuleListElementTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_billingconductor.type_defs import PricingRuleListElementTypeDef
-
-def get_value() -> PricingRuleListElementTypeDef:
-    return {
-        "Name": ...,
-    }
-```
-
-```python title="Definition"
-class PricingRuleListElementTypeDef(TypedDict):
-    Name: NotRequired[str],
-    Arn: NotRequired[str],
-    Description: NotRequired[str],
-    Scope: NotRequired[PricingRuleScopeType],  # (1)
-    Type: NotRequired[PricingRuleTypeType],  # (2)
-    ModifierPercentage: NotRequired[float],
-    Service: NotRequired[str],
-    AssociatedPricingPlanCount: NotRequired[int],
-    CreationTime: NotRequired[int],
-    LastModifiedTime: NotRequired[int],
-    BillingEntity: NotRequired[str],
-```
-
-1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
-2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
 ## ListResourcesAssociatedToCustomLineItemFilterTypeDef
 
 ```python title="Usage Example"
@@ -714,6 +689,22 @@ class UpdateCustomLineItemPercentageChargeDetailsTypeDef(TypedDict):
     PercentageValue: float,
 ```
 
+## UpdateFreeTierConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import UpdateFreeTierConfigTypeDef
+
+def get_value() -> UpdateFreeTierConfigTypeDef:
+    return {
+        "Activated": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFreeTierConfigTypeDef(TypedDict):
+    Activated: bool,
+```
+
 ## UpdatePricingPlanInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -732,27 +723,6 @@ class UpdatePricingPlanInputRequestTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
-## UpdatePricingRuleInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_billingconductor.type_defs import UpdatePricingRuleInputRequestTypeDef
-
-def get_value() -> UpdatePricingRuleInputRequestTypeDef:
-    return {
-        "Arn": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePricingRuleInputRequestTypeDef(TypedDict):
-    Arn: str,
-    Name: NotRequired[str],
-    Description: NotRequired[str],
-    Type: NotRequired[PricingRuleTypeType],  # (1)
-    ModifierPercentage: NotRequired[float],
-```
-
-1. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
 ## AssociateAccountsOutputTypeDef
 
 ```python title="Usage Example"
@@ -1135,45 +1105,6 @@ class UpdatePricingPlanOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdatePricingRuleOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_billingconductor.type_defs import UpdatePricingRuleOutputTypeDef
-
-def get_value() -> UpdatePricingRuleOutputTypeDef:
-    return {
-        "Arn": ...,
-        "Name": ...,
-        "Description": ...,
-        "Scope": ...,
-        "Type": ...,
-        "ModifierPercentage": ...,
-        "Service": ...,
-        "AssociatedPricingPlanCount": ...,
-        "LastModifiedTime": ...,
-        "BillingEntity": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdatePricingRuleOutputTypeDef(TypedDict):
-    Arn: str,
-    Name: str,
-    Description: str,
-    Scope: PricingRuleScopeType,  # (1)
-    Type: PricingRuleTypeType,  # (2)
-    ModifierPercentage: float,
-    Service: str,
-    AssociatedPricingPlanCount: int,
-    LastModifiedTime: int,
-    BillingEntity: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
-2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateResourceResponseElementTypeDef
 
 ```python title="Usage Example"
@@ -1365,6 +1296,23 @@ class UpdateBillingGroupInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: BillingGroupStatusType](./literals.md#billinggroupstatustype) 
 2. See [:material-code-braces: ComputationPreferenceTypeDef](./type_defs.md#computationpreferencetypedef) 
+## CreateTieringInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import CreateTieringInputTypeDef
+
+def get_value() -> CreateTieringInputTypeDef:
+    return {
+        "FreeTier": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTieringInputTypeDef(TypedDict):
+    FreeTier: CreateFreeTierConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: CreateFreeTierConfigTypeDef](./type_defs.md#createfreetierconfigtypedef) 
 ## CustomLineItemChargeDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1386,6 +1334,23 @@ class CustomLineItemChargeDetailsTypeDef(TypedDict):
 1. See [:material-code-braces: CustomLineItemFlatChargeDetailsTypeDef](./type_defs.md#customlineitemflatchargedetailstypedef) 
 2. See [:material-code-braces: CustomLineItemPercentageChargeDetailsTypeDef](./type_defs.md#customlineitempercentagechargedetailstypedef) 
 3. See [:material-code-brackets: CustomLineItemTypeType](./literals.md#customlineitemtypetype) 
+## TieringTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import TieringTypeDef
+
+def get_value() -> TieringTypeDef:
+    return {
+        "FreeTier": ...,
+    }
+```
+
+```python title="Definition"
+class TieringTypeDef(TypedDict):
+    FreeTier: FreeTierConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: FreeTierConfigTypeDef](./type_defs.md#freetierconfigtypedef) 
 ## ListAccountAssociationsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1725,30 +1690,6 @@ class ListPricingRulesInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ListPricingRulesFilterTypeDef](./type_defs.md#listpricingrulesfiltertypedef) 
-## ListPricingRulesOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_billingconductor.type_defs import ListPricingRulesOutputTypeDef
-
-def get_value() -> ListPricingRulesOutputTypeDef:
-    return {
-        "BillingPeriod": ...,
-        "PricingRules": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListPricingRulesOutputTypeDef(TypedDict):
-    BillingPeriod: str,
-    PricingRules: List[PricingRuleListElementTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: PricingRuleListElementTypeDef](./type_defs.md#pricingrulelistelementtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourcesAssociatedToCustomLineItemInputListResourcesAssociatedToCustomLineItemPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1834,6 +1775,23 @@ class UpdateCustomLineItemChargeDetailsTypeDef(TypedDict):
 
 1. See [:material-code-braces: UpdateCustomLineItemFlatChargeDetailsTypeDef](./type_defs.md#updatecustomlineitemflatchargedetailstypedef) 
 2. See [:material-code-braces: UpdateCustomLineItemPercentageChargeDetailsTypeDef](./type_defs.md#updatecustomlineitempercentagechargedetailstypedef) 
+## UpdateTieringInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import UpdateTieringInputTypeDef
+
+def get_value() -> UpdateTieringInputTypeDef:
+    return {
+        "FreeTier": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateTieringInputTypeDef(TypedDict):
+    FreeTier: UpdateFreeTierConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: UpdateFreeTierConfigTypeDef](./type_defs.md#updatefreetierconfigtypedef) 
 ## BatchAssociateResourcesToCustomLineItemOutputTypeDef
 
 ```python title="Usage Example"
@@ -1902,6 +1860,36 @@ class ListBillingGroupsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: BillingGroupListElementTypeDef](./type_defs.md#billinggrouplistelementtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreatePricingRuleInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import CreatePricingRuleInputRequestTypeDef
+
+def get_value() -> CreatePricingRuleInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "Scope": ...,
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class CreatePricingRuleInputRequestTypeDef(TypedDict):
+    Name: str,
+    Scope: PricingRuleScopeType,  # (1)
+    Type: PricingRuleTypeType,  # (2)
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    ModifierPercentage: NotRequired[float],
+    Service: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    BillingEntity: NotRequired[str],
+    Tiering: NotRequired[CreateTieringInputTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
+2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
+3. See [:material-code-braces: CreateTieringInputTypeDef](./type_defs.md#createtieringinputtypedef) 
 ## CreateCustomLineItemInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1929,6 +1917,36 @@ class CreateCustomLineItemInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: CustomLineItemChargeDetailsTypeDef](./type_defs.md#customlineitemchargedetailstypedef) 
 2. See [:material-code-braces: CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef) 
+## PricingRuleListElementTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import PricingRuleListElementTypeDef
+
+def get_value() -> PricingRuleListElementTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class PricingRuleListElementTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Description: NotRequired[str],
+    Scope: NotRequired[PricingRuleScopeType],  # (1)
+    Type: NotRequired[PricingRuleTypeType],  # (2)
+    ModifierPercentage: NotRequired[float],
+    Service: NotRequired[str],
+    AssociatedPricingPlanCount: NotRequired[int],
+    CreationTime: NotRequired[int],
+    LastModifiedTime: NotRequired[int],
+    BillingEntity: NotRequired[str],
+    Tiering: NotRequired[TieringTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
+2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
+3. See [:material-code-braces: TieringTypeDef](./type_defs.md#tieringtypedef) 
 ## CustomLineItemListElementTypeDef
 
 ```python title="Usage Example"
@@ -2078,6 +2096,95 @@ class UpdateCustomLineItemInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: UpdateCustomLineItemChargeDetailsTypeDef](./type_defs.md#updatecustomlineitemchargedetailstypedef) 
 2. See [:material-code-braces: CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef) 
+## UpdatePricingRuleInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import UpdatePricingRuleInputRequestTypeDef
+
+def get_value() -> UpdatePricingRuleInputRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePricingRuleInputRequestTypeDef(TypedDict):
+    Arn: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[PricingRuleTypeType],  # (1)
+    ModifierPercentage: NotRequired[float],
+    Tiering: NotRequired[UpdateTieringInputTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
+2. See [:material-code-braces: UpdateTieringInputTypeDef](./type_defs.md#updatetieringinputtypedef) 
+## UpdatePricingRuleOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import UpdatePricingRuleOutputTypeDef
+
+def get_value() -> UpdatePricingRuleOutputTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "Description": ...,
+        "Scope": ...,
+        "Type": ...,
+        "ModifierPercentage": ...,
+        "Service": ...,
+        "AssociatedPricingPlanCount": ...,
+        "LastModifiedTime": ...,
+        "BillingEntity": ...,
+        "Tiering": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdatePricingRuleOutputTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    Description: str,
+    Scope: PricingRuleScopeType,  # (1)
+    Type: PricingRuleTypeType,  # (2)
+    ModifierPercentage: float,
+    Service: str,
+    AssociatedPricingPlanCount: int,
+    LastModifiedTime: int,
+    BillingEntity: str,
+    Tiering: UpdateTieringInputTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
+2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
+3. See [:material-code-braces: UpdateTieringInputTypeDef](./type_defs.md#updatetieringinputtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPricingRulesOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_billingconductor.type_defs import ListPricingRulesOutputTypeDef
+
+def get_value() -> ListPricingRulesOutputTypeDef:
+    return {
+        "BillingPeriod": ...,
+        "PricingRules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPricingRulesOutputTypeDef(TypedDict):
+    BillingPeriod: str,
+    PricingRules: List[PricingRuleListElementTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PricingRuleListElementTypeDef](./type_defs.md#pricingrulelistelementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCustomLineItemsOutputTypeDef
 
 ```python title="Usage Example"

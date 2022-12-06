@@ -100,6 +100,7 @@ def get_get_metric_data_paginator() -> GetMetricDataPaginator:
 - [ListQuickConnectsPaginator](./paginators.md#listquickconnectspaginator)
 - [ListRoutingProfileQueuesPaginator](./paginators.md#listroutingprofilequeuespaginator)
 - [ListRoutingProfilesPaginator](./paginators.md#listroutingprofilespaginator)
+- [ListRulesPaginator](./paginators.md#listrulespaginator)
 - [ListSecurityKeysPaginator](./paginators.md#listsecuritykeyspaginator)
 - [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
 - [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
@@ -128,12 +129,13 @@ def get_get_metric_data_paginator() -> GetMetricDataPaginator:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_connect.literals import AgentStatusStateType
+from mypy_boto3_connect.literals import ActionTypeType
 
-def get_value() -> AgentStatusStateType:
-    return "DISABLED"
+def get_value() -> ActionTypeType:
+    return "ASSIGN_CONTACT_CATEGORY"
 ```
 
+- [ActionTypeType](./literals.md#actiontypetype)
 - [AgentStatusStateType](./literals.md#agentstatusstatetype)
 - [AgentStatusTypeType](./literals.md#agentstatustypetype)
 - [ChannelType](./literals.md#channeltype)
@@ -147,6 +149,7 @@ def get_value() -> AgentStatusStateType:
 - [CurrentMetricNameType](./literals.md#currentmetricnametype)
 - [DirectoryTypeType](./literals.md#directorytypetype)
 - [EncryptionTypeType](./literals.md#encryptiontypetype)
+- [EventSourceNameType](./literals.md#eventsourcenametype)
 - [GetMetricDataPaginatorName](./literals.md#getmetricdatapaginatorname)
 - [GroupingType](./literals.md#groupingtype)
 - [HierarchyGroupMatchTypeType](./literals.md#hierarchygroupmatchtypetype)
@@ -179,6 +182,7 @@ def get_value() -> AgentStatusStateType:
 - [ListQuickConnectsPaginatorName](./literals.md#listquickconnectspaginatorname)
 - [ListRoutingProfileQueuesPaginatorName](./literals.md#listroutingprofilequeuespaginatorname)
 - [ListRoutingProfilesPaginatorName](./literals.md#listroutingprofilespaginatorname)
+- [ListRulesPaginatorName](./literals.md#listrulespaginatorname)
 - [ListSecurityKeysPaginatorName](./literals.md#listsecuritykeyspaginatorname)
 - [ListSecurityProfilePermissionsPaginatorName](./literals.md#listsecurityprofilepermissionspaginatorname)
 - [ListSecurityProfilesPaginatorName](./literals.md#listsecurityprofilespaginatorname)
@@ -188,6 +192,8 @@ def get_value() -> AgentStatusStateType:
 - [ListUserHierarchyGroupsPaginatorName](./literals.md#listuserhierarchygroupspaginatorname)
 - [ListUsersPaginatorName](./literals.md#listuserspaginatorname)
 - [MonitorCapabilityType](./literals.md#monitorcapabilitytype)
+- [NotificationContentTypeType](./literals.md#notificationcontenttypetype)
+- [NotificationDeliveryTypeType](./literals.md#notificationdeliverytypetype)
 - [PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)
 - [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
 - [PhoneNumberWorkflowStatusType](./literals.md#phonenumberworkflowstatustype)
@@ -197,6 +203,7 @@ def get_value() -> AgentStatusStateType:
 - [QuickConnectTypeType](./literals.md#quickconnecttypetype)
 - [ReferenceStatusType](./literals.md#referencestatustype)
 - [ReferenceTypeType](./literals.md#referencetypetype)
+- [RulePublishStatusType](./literals.md#rulepublishstatustype)
 - [SearchAvailablePhoneNumbersPaginatorName](./literals.md#searchavailablephonenumberspaginatorname)
 - [SearchQueuesPaginatorName](./literals.md#searchqueuespaginatorname)
 - [SearchRoutingProfilesPaginatorName](./literals.md#searchroutingprofilespaginatorname)
@@ -231,14 +238,15 @@ def get_value() -> AgentStatusStateType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_connect.type_defs import QueueReferenceTypeDef
+from mypy_boto3_connect.type_defs import ActionSummaryTypeDef
 
-def get_value() -> QueueReferenceTypeDef:
+def get_value() -> ActionSummaryTypeDef:
     return {
-        "Id": ...,
+        "ActionType": ...,
     }
 ```
 
+- [ActionSummaryTypeDef](./type_defs.md#actionsummarytypedef)
 - [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)
 - [AgentInfoTypeDef](./type_defs.md#agentinfotypedef)
 - [AgentStatusReferenceTypeDef](./type_defs.md#agentstatusreferencetypedef)
@@ -275,6 +283,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [CreateIntegrationAssociationRequestRequestTypeDef](./type_defs.md#createintegrationassociationrequestrequesttypedef)
 - [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
 - [MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)
+- [RuleTriggerEventSourceTypeDef](./type_defs.md#ruletriggereventsourcetypedef)
 - [CreateSecurityProfileRequestRequestTypeDef](./type_defs.md#createsecurityprofilerequestrequesttypedef)
 - [CreateTrafficDistributionGroupRequestRequestTypeDef](./type_defs.md#createtrafficdistributiongrouprequestrequesttypedef)
 - [CreateUseCaseRequestRequestTypeDef](./type_defs.md#createusecaserequestrequesttypedef)
@@ -292,6 +301,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [DeleteInstanceRequestRequestTypeDef](./type_defs.md#deleteinstancerequestrequesttypedef)
 - [DeleteIntegrationAssociationRequestRequestTypeDef](./type_defs.md#deleteintegrationassociationrequestrequesttypedef)
 - [DeleteQuickConnectRequestRequestTypeDef](./type_defs.md#deletequickconnectrequestrequesttypedef)
+- [DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef)
 - [DeleteSecurityProfileRequestRequestTypeDef](./type_defs.md#deletesecurityprofilerequestrequesttypedef)
 - [DeleteTaskTemplateRequestRequestTypeDef](./type_defs.md#deletetasktemplaterequestrequesttypedef)
 - [DeleteTrafficDistributionGroupRequestRequestTypeDef](./type_defs.md#deletetrafficdistributiongrouprequestrequesttypedef)
@@ -311,6 +321,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [DescribeQueueRequestRequestTypeDef](./type_defs.md#describequeuerequestrequesttypedef)
 - [DescribeQuickConnectRequestRequestTypeDef](./type_defs.md#describequickconnectrequestrequesttypedef)
 - [DescribeRoutingProfileRequestRequestTypeDef](./type_defs.md#describeroutingprofilerequestrequesttypedef)
+- [DescribeRuleRequestRequestTypeDef](./type_defs.md#describerulerequestrequesttypedef)
 - [DescribeSecurityProfileRequestRequestTypeDef](./type_defs.md#describesecurityprofilerequestrequesttypedef)
 - [SecurityProfileTypeDef](./type_defs.md#securityprofiletypedef)
 - [DescribeTrafficDistributionGroupRequestRequestTypeDef](./type_defs.md#describetrafficdistributiongrouprequestrequesttypedef)
@@ -332,6 +343,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [DistributionTypeDef](./type_defs.md#distributiontypedef)
 - [EmailReferenceTypeDef](./type_defs.md#emailreferencetypedef)
 - [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- [EventBridgeActionDefinitionTypeDef](./type_defs.md#eventbridgeactiondefinitiontypedef)
 - [FiltersTypeDef](./type_defs.md#filterstypedef)
 - [GetContactAttributesRequestRequestTypeDef](./type_defs.md#getcontactattributesrequestrequesttypedef)
 - [GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef)
@@ -381,6 +393,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [RoutingProfileQueueConfigSummaryTypeDef](./type_defs.md#routingprofilequeueconfigsummarytypedef)
 - [ListRoutingProfilesRequestRequestTypeDef](./type_defs.md#listroutingprofilesrequestrequesttypedef)
 - [RoutingProfileSummaryTypeDef](./type_defs.md#routingprofilesummarytypedef)
+- [ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef)
 - [ListSecurityKeysRequestRequestTypeDef](./type_defs.md#listsecuritykeysrequestrequesttypedef)
 - [SecurityKeyTypeDef](./type_defs.md#securitykeytypedef)
 - [ListSecurityProfilePermissionsRequestRequestTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestrequesttypedef)
@@ -397,6 +410,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [UserSummaryTypeDef](./type_defs.md#usersummarytypedef)
 - [MonitorContactRequestRequestTypeDef](./type_defs.md#monitorcontactrequestrequesttypedef)
+- [NotificationRecipientTypeTypeDef](./type_defs.md#notificationrecipienttypetypedef)
 - [NumberReferenceTypeDef](./type_defs.md#numberreferencetypedef)
 - [ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef)
 - [PhoneNumberQuickConnectConfigTypeDef](./type_defs.md#phonenumberquickconnectconfigtypedef)
@@ -447,6 +461,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [UpdateUserSecurityProfilesRequestRequestTypeDef](./type_defs.md#updateusersecurityprofilesrequestrequesttypedef)
 - [UserReferenceTypeDef](./type_defs.md#userreferencetypedef)
 - [UserIdentityInfoLiteTypeDef](./type_defs.md#useridentityinfolitetypedef)
+- [RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)
 - [AgentContactReferenceTypeDef](./type_defs.md#agentcontactreferencetypedef)
 - [DimensionsTypeDef](./type_defs.md#dimensionstypedef)
 - [StartOutboundVoiceContactRequestRequestTypeDef](./type_defs.md#startoutboundvoicecontactrequestrequesttypedef)
@@ -466,6 +481,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef)
 - [CreateQuickConnectResponseTypeDef](./type_defs.md#createquickconnectresponsetypedef)
 - [CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef)
+- [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef)
 - [CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef)
 - [CreateTaskTemplateResponseTypeDef](./type_defs.md#createtasktemplateresponsetypedef)
 - [CreateTrafficDistributionGroupResponseTypeDef](./type_defs.md#createtrafficdistributiongroupresponsetypedef)
@@ -546,6 +562,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [ListQuickConnectsRequestListQuickConnectsPaginateTypeDef](./type_defs.md#listquickconnectsrequestlistquickconnectspaginatetypedef)
 - [ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef](./type_defs.md#listroutingprofilequeuesrequestlistroutingprofilequeuespaginatetypedef)
 - [ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef](./type_defs.md#listroutingprofilesrequestlistroutingprofilespaginatetypedef)
+- [ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef)
 - [ListSecurityKeysRequestListSecurityKeysPaginateTypeDef](./type_defs.md#listsecuritykeysrequestlistsecuritykeyspaginatetypedef)
 - [ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestlistsecurityprofilepermissionspaginatetypedef)
 - [ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef](./type_defs.md#listsecurityprofilesrequestlistsecurityprofilespaginatetypedef)
@@ -586,6 +603,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [ListTrafficDistributionGroupsResponseTypeDef](./type_defs.md#listtrafficdistributiongroupsresponsetypedef)
 - [ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
+- [SendNotificationActionDefinitionTypeDef](./type_defs.md#sendnotificationactiondefinitiontypedef)
 - [StartChatContactRequestRequestTypeDef](./type_defs.md#startchatcontactrequestrequesttypedef)
 - [QueueSearchCriteriaTypeDef](./type_defs.md#queuesearchcriteriatypedef)
 - [RoutingProfileSearchCriteriaTypeDef](./type_defs.md#routingprofilesearchcriteriatypedef)
@@ -594,11 +612,13 @@ def get_value() -> QueueReferenceTypeDef:
 - [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
 - [ReferenceSummaryTypeDef](./type_defs.md#referencesummarytypedef)
 - [StartTaskContactRequestRequestTypeDef](./type_defs.md#starttaskcontactrequestrequesttypedef)
+- [TaskActionDefinitionTypeDef](./type_defs.md#taskactiondefinitiontypedef)
 - [UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef)
 - [SearchSecurityProfilesResponseTypeDef](./type_defs.md#searchsecurityprofilesresponsetypedef)
 - [SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef)
 - [StartContactRecordingRequestRequestTypeDef](./type_defs.md#startcontactrecordingrequestrequesttypedef)
 - [UserSearchSummaryTypeDef](./type_defs.md#usersearchsummarytypedef)
+- [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)
 - [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef)
 - [DescribePhoneNumberResponseTypeDef](./type_defs.md#describephonenumberresponsetypedef)
 - [GetCurrentUserDataRequestRequestTypeDef](./type_defs.md#getcurrentuserdatarequestrequesttypedef)
@@ -636,6 +656,7 @@ def get_value() -> QueueReferenceTypeDef:
 - [QuickConnectTypeDef](./type_defs.md#quickconnecttypedef)
 - [UpdateQuickConnectConfigRequestRequestTypeDef](./type_defs.md#updatequickconnectconfigrequestrequesttypedef)
 - [ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef)
+- [RuleActionTypeDef](./type_defs.md#ruleactiontypedef)
 - [SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef)
 - [SearchQueuesRequestRequestTypeDef](./type_defs.md#searchqueuesrequestrequesttypedef)
 - [SearchQueuesRequestSearchQueuesPaginateTypeDef](./type_defs.md#searchqueuesrequestsearchqueuespaginatetypedef)
@@ -659,5 +680,9 @@ def get_value() -> QueueReferenceTypeDef:
 - [UpdateTaskTemplateRequestRequestTypeDef](./type_defs.md#updatetasktemplaterequestrequesttypedef)
 - [UpdateTaskTemplateResponseTypeDef](./type_defs.md#updatetasktemplateresponsetypedef)
 - [DescribeQuickConnectResponseTypeDef](./type_defs.md#describequickconnectresponsetypedef)
+- [CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef)
+- [RuleTypeDef](./type_defs.md#ruletypedef)
+- [UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef)
 - [GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef)
+- [DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef)
 

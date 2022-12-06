@@ -802,6 +802,49 @@ parent.create_routing_profile(**kwargs)
 
 1. See [:material-code-braces: CreateRoutingProfileRequestRequestTypeDef](./type_defs.md#createroutingprofilerequestrequesttypedef) 
 
+### create\_rule
+
+Creates a rule for the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").create_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_rule)
+
+```python title="Method definition"
+def create_rule(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    TriggerEventSource: RuleTriggerEventSourceTypeDef,  # (1)
+    Function: str,
+    Actions: Sequence[RuleActionTypeDef],  # (2)
+    PublishStatus: RulePublishStatusType,  # (3)
+    ClientToken: str = ...,
+) -> CreateRuleResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: RuleTriggerEventSourceTypeDef](./type_defs.md#ruletriggereventsourcetypedef) 
+2. See [:material-code-braces: RuleActionTypeDef](./type_defs.md#ruleactiontypedef) 
+3. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+4. See [:material-code-braces: CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateRuleRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "TriggerEventSource": ...,
+    "Function": ...,
+    "Actions": ...,
+    "PublishStatus": ...,
+}
+
+parent.create_rule(**kwargs)
+```
+
+1. See [:material-code-braces: CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef) 
+
 ### create\_security\_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1249,6 +1292,37 @@ parent.delete_quick_connect(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteQuickConnectRequestRequestTypeDef](./type_defs.md#deletequickconnectrequestrequesttypedef) 
+
+### delete\_rule
+
+Deletes a rule for the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").delete_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_rule)
+
+```python title="Method definition"
+def delete_rule(
+    self,
+    *,
+    InstanceId: str,
+    RuleId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RuleId": ...,
+}
+
+parent.delete_rule(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef) 
 
 ### delete\_security\_profile
 
@@ -1837,6 +1911,37 @@ parent.describe_routing_profile(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeRoutingProfileRequestRequestTypeDef](./type_defs.md#describeroutingprofilerequestrequesttypedef) 
+
+### describe\_rule
+
+Describes a rule for the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").describe_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_rule)
+
+```python title="Method definition"
+def describe_rule(
+    self,
+    *,
+    InstanceId: str,
+    RuleId: str,
+) -> DescribeRuleResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRuleRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RuleId": ...,
+}
+
+parent.describe_rule(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRuleRequestRequestTypeDef](./type_defs.md#describerulerequestrequesttypedef) 
 
 ### describe\_security\_profile
 
@@ -3328,6 +3433,41 @@ parent.list_routing_profiles(**kwargs)
 ```
 
 1. See [:material-code-braces: ListRoutingProfilesRequestRequestTypeDef](./type_defs.md#listroutingprofilesrequestrequesttypedef) 
+
+### list\_rules
+
+List all rules for the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_rules)
+
+```python title="Method definition"
+def list_rules(
+    self,
+    *,
+    InstanceId: str,
+    PublishStatus: RulePublishStatusType = ...,  # (1)
+    EventSourceName: EventSourceNameType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRulesResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+2. See [:material-code-brackets: EventSourceNameType](./literals.md#eventsourcenametype) 
+3. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.list_rules(**kwargs)
+```
+
+1. See [:material-code-braces: ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef) 
 
 ### list\_security\_keys
 
@@ -5231,6 +5371,47 @@ parent.update_routing_profile_queues(**kwargs)
 
 1. See [:material-code-braces: UpdateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#updateroutingprofilequeuesrequestrequesttypedef) 
 
+### update\_rule
+
+Updates a rule for the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_rule)
+
+```python title="Method definition"
+def update_rule(
+    self,
+    *,
+    RuleId: str,
+    InstanceId: str,
+    Name: str,
+    Function: str,
+    Actions: Sequence[RuleActionTypeDef],  # (1)
+    PublishStatus: RulePublishStatusType,  # (2)
+) -> EmptyResponseMetadataTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: RuleActionTypeDef](./type_defs.md#ruleactiontypedef) 
+2. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRuleRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+    "InstanceId": ...,
+    "Name": ...,
+    "Function": ...,
+    "Actions": ...,
+    "PublishStatus": ...,
+}
+
+parent.update_rule(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef) 
+
 ### update\_security\_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -5600,6 +5781,7 @@ Type annotations and code completion for `#!python boto3.client("connect").get_p
 - `client.get_paginator("list_quick_connects")` -> [ListQuickConnectsPaginator](./paginators.md#listquickconnectspaginator)
 - `client.get_paginator("list_routing_profile_queues")` -> [ListRoutingProfileQueuesPaginator](./paginators.md#listroutingprofilequeuespaginator)
 - `client.get_paginator("list_routing_profiles")` -> [ListRoutingProfilesPaginator](./paginators.md#listroutingprofilespaginator)
+- `client.get_paginator("list_rules")` -> [ListRulesPaginator](./paginators.md#listrulespaginator)
 - `client.get_paginator("list_security_keys")` -> [ListSecurityKeysPaginator](./paginators.md#listsecuritykeyspaginator)
 - `client.get_paginator("list_security_profile_permissions")` -> [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
 - `client.get_paginator("list_security_profiles")` -> [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)

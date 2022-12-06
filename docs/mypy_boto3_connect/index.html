@@ -39405,6 +39405,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listquickconnectspaginator">ListQuickConnectsPaginator</a></li>
 <li><a href="paginators/#listroutingprofilequeuespaginator">ListRoutingProfileQueuesPaginator</a></li>
 <li><a href="paginators/#listroutingprofilespaginator">ListRoutingProfilesPaginator</a></li>
+<li><a href="paginators/#listrulespaginator">ListRulesPaginator</a></li>
 <li><a href="paginators/#listsecuritykeyspaginator">ListSecurityKeysPaginator</a></li>
 <li><a href="paginators/#listsecurityprofilepermissionspaginator">ListSecurityProfilePermissionsPaginator</a></li>
 <li><a href="paginators/#listsecurityprofilespaginator">ListSecurityProfilesPaginator</a></li>
@@ -39422,12 +39423,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connect.literals</span> <span class="kn">import</span> <span class="n">AgentStatusStateType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connect.literals</span> <span class="kn">import</span> <span class="n">ActionTypeType</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AgentStatusStateType</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;DISABLED&quot;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ActionTypeType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;ASSIGN_CONTACT_CATEGORY&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#actiontypetype">ActionTypeType</a></li>
 <li><a href="literals/#agentstatusstatetype">AgentStatusStateType</a></li>
 <li><a href="literals/#agentstatustypetype">AgentStatusTypeType</a></li>
 <li><a href="literals/#channeltype">ChannelType</a></li>
@@ -39441,6 +39443,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#currentmetricnametype">CurrentMetricNameType</a></li>
 <li><a href="literals/#directorytypetype">DirectoryTypeType</a></li>
 <li><a href="literals/#encryptiontypetype">EncryptionTypeType</a></li>
+<li><a href="literals/#eventsourcenametype">EventSourceNameType</a></li>
 <li><a href="literals/#getmetricdatapaginatorname">GetMetricDataPaginatorName</a></li>
 <li><a href="literals/#groupingtype">GroupingType</a></li>
 <li><a href="literals/#hierarchygroupmatchtypetype">HierarchyGroupMatchTypeType</a></li>
@@ -39473,6 +39476,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listquickconnectspaginatorname">ListQuickConnectsPaginatorName</a></li>
 <li><a href="literals/#listroutingprofilequeuespaginatorname">ListRoutingProfileQueuesPaginatorName</a></li>
 <li><a href="literals/#listroutingprofilespaginatorname">ListRoutingProfilesPaginatorName</a></li>
+<li><a href="literals/#listrulespaginatorname">ListRulesPaginatorName</a></li>
 <li><a href="literals/#listsecuritykeyspaginatorname">ListSecurityKeysPaginatorName</a></li>
 <li><a href="literals/#listsecurityprofilepermissionspaginatorname">ListSecurityProfilePermissionsPaginatorName</a></li>
 <li><a href="literals/#listsecurityprofilespaginatorname">ListSecurityProfilesPaginatorName</a></li>
@@ -39482,6 +39486,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listuserhierarchygroupspaginatorname">ListUserHierarchyGroupsPaginatorName</a></li>
 <li><a href="literals/#listuserspaginatorname">ListUsersPaginatorName</a></li>
 <li><a href="literals/#monitorcapabilitytype">MonitorCapabilityType</a></li>
+<li><a href="literals/#notificationcontenttypetype">NotificationContentTypeType</a></li>
+<li><a href="literals/#notificationdeliverytypetype">NotificationDeliveryTypeType</a></li>
 <li><a href="literals/#phonenumbercountrycodetype">PhoneNumberCountryCodeType</a></li>
 <li><a href="literals/#phonenumbertypetype">PhoneNumberTypeType</a></li>
 <li><a href="literals/#phonenumberworkflowstatustype">PhoneNumberWorkflowStatusType</a></li>
@@ -39491,6 +39497,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#quickconnecttypetype">QuickConnectTypeType</a></li>
 <li><a href="literals/#referencestatustype">ReferenceStatusType</a></li>
 <li><a href="literals/#referencetypetype">ReferenceTypeType</a></li>
+<li><a href="literals/#rulepublishstatustype">RulePublishStatusType</a></li>
 <li><a href="literals/#searchavailablephonenumberspaginatorname">SearchAvailablePhoneNumbersPaginatorName</a></li>
 <li><a href="literals/#searchqueuespaginatorname">SearchQueuesPaginatorName</a></li>
 <li><a href="literals/#searchroutingprofilespaginatorname">SearchRoutingProfilesPaginatorName</a></li>
@@ -39519,14 +39526,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connect.type_defs</span> <span class="kn">import</span> <span class="n">QueueReferenceTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_connect.type_defs</span> <span class="kn">import</span> <span class="n">ActionSummaryTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">QueueReferenceTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ActionSummaryTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Id&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ActionType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#actionsummarytypedef">ActionSummaryTypeDef</a></li>
 <li><a href="type_defs/#queuereferencetypedef">QueueReferenceTypeDef</a></li>
 <li><a href="type_defs/#agentinfotypedef">AgentInfoTypeDef</a></li>
 <li><a href="type_defs/#agentstatusreferencetypedef">AgentStatusReferenceTypeDef</a></li>
@@ -39563,6 +39571,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createintegrationassociationrequestrequesttypedef">CreateIntegrationAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#outboundcallerconfigtypedef">OutboundCallerConfigTypeDef</a></li>
 <li><a href="type_defs/#mediaconcurrencytypedef">MediaConcurrencyTypeDef</a></li>
+<li><a href="type_defs/#ruletriggereventsourcetypedef">RuleTriggerEventSourceTypeDef</a></li>
 <li><a href="type_defs/#createsecurityprofilerequestrequesttypedef">CreateSecurityProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createtrafficdistributiongrouprequestrequesttypedef">CreateTrafficDistributionGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createusecaserequestrequesttypedef">CreateUseCaseRequestRequestTypeDef</a></li>
@@ -39580,6 +39589,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteinstancerequestrequesttypedef">DeleteInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteintegrationassociationrequestrequesttypedef">DeleteIntegrationAssociationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletequickconnectrequestrequesttypedef">DeleteQuickConnectRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deleterulerequestrequesttypedef">DeleteRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesecurityprofilerequestrequesttypedef">DeleteSecurityProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetasktemplaterequestrequesttypedef">DeleteTaskTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetrafficdistributiongrouprequestrequesttypedef">DeleteTrafficDistributionGroupRequestRequestTypeDef</a></li>
@@ -39599,6 +39609,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describequeuerequestrequesttypedef">DescribeQueueRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describequickconnectrequestrequesttypedef">DescribeQuickConnectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeroutingprofilerequestrequesttypedef">DescribeRoutingProfileRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describerulerequestrequesttypedef">DescribeRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describesecurityprofilerequestrequesttypedef">DescribeSecurityProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#securityprofiletypedef">SecurityProfileTypeDef</a></li>
 <li><a href="type_defs/#describetrafficdistributiongrouprequestrequesttypedef">DescribeTrafficDistributionGroupRequestRequestTypeDef</a></li>
@@ -39620,6 +39631,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#distributiontypedef">DistributionTypeDef</a></li>
 <li><a href="type_defs/#emailreferencetypedef">EmailReferenceTypeDef</a></li>
 <li><a href="type_defs/#encryptionconfigtypedef">EncryptionConfigTypeDef</a></li>
+<li><a href="type_defs/#eventbridgeactiondefinitiontypedef">EventBridgeActionDefinitionTypeDef</a></li>
 <li><a href="type_defs/#filterstypedef">FiltersTypeDef</a></li>
 <li><a href="type_defs/#getcontactattributesrequestrequesttypedef">GetContactAttributesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getfederationtokenrequestrequesttypedef">GetFederationTokenRequestRequestTypeDef</a></li>
@@ -39669,6 +39681,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#routingprofilequeueconfigsummarytypedef">RoutingProfileQueueConfigSummaryTypeDef</a></li>
 <li><a href="type_defs/#listroutingprofilesrequestrequesttypedef">ListRoutingProfilesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#routingprofilesummarytypedef">RoutingProfileSummaryTypeDef</a></li>
+<li><a href="type_defs/#listrulesrequestrequesttypedef">ListRulesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listsecuritykeysrequestrequesttypedef">ListSecurityKeysRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#securitykeytypedef">SecurityKeyTypeDef</a></li>
 <li><a href="type_defs/#listsecurityprofilepermissionsrequestrequesttypedef">ListSecurityProfilePermissionsRequestRequestTypeDef</a></li>
@@ -39685,6 +39698,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listusersrequestrequesttypedef">ListUsersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usersummarytypedef">UserSummaryTypeDef</a></li>
 <li><a href="type_defs/#monitorcontactrequestrequesttypedef">MonitorContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#notificationrecipienttypetypedef">NotificationRecipientTypeTypeDef</a></li>
 <li><a href="type_defs/#numberreferencetypedef">NumberReferenceTypeDef</a></li>
 <li><a href="type_defs/#participantdetailstypedef">ParticipantDetailsTypeDef</a></li>
 <li><a href="type_defs/#phonenumberquickconnectconfigtypedef">PhoneNumberQuickConnectConfigTypeDef</a></li>
@@ -39735,6 +39749,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updateusersecurityprofilesrequestrequesttypedef">UpdateUserSecurityProfilesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#userreferencetypedef">UserReferenceTypeDef</a></li>
 <li><a href="type_defs/#useridentityinfolitetypedef">UserIdentityInfoLiteTypeDef</a></li>
+<li><a href="type_defs/#rulesummarytypedef">RuleSummaryTypeDef</a></li>
 <li><a href="type_defs/#agentcontactreferencetypedef">AgentContactReferenceTypeDef</a></li>
 <li><a href="type_defs/#dimensionstypedef">DimensionsTypeDef</a></li>
 <li><a href="type_defs/#startoutboundvoicecontactrequestrequesttypedef">StartOutboundVoiceContactRequestRequestTypeDef</a></li>
@@ -39754,6 +39769,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createqueueresponsetypedef">CreateQueueResponseTypeDef</a></li>
 <li><a href="type_defs/#createquickconnectresponsetypedef">CreateQuickConnectResponseTypeDef</a></li>
 <li><a href="type_defs/#createroutingprofileresponsetypedef">CreateRoutingProfileResponseTypeDef</a></li>
+<li><a href="type_defs/#createruleresponsetypedef">CreateRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#createsecurityprofileresponsetypedef">CreateSecurityProfileResponseTypeDef</a></li>
 <li><a href="type_defs/#createtasktemplateresponsetypedef">CreateTaskTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#createtrafficdistributiongroupresponsetypedef">CreateTrafficDistributionGroupResponseTypeDef</a></li>
@@ -39834,6 +39850,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listquickconnectsrequestlistquickconnectspaginatetypedef">ListQuickConnectsRequestListQuickConnectsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listroutingprofilequeuesrequestlistroutingprofilequeuespaginatetypedef">ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listroutingprofilesrequestlistroutingprofilespaginatetypedef">ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listrulesrequestlistrulespaginatetypedef">ListRulesRequestListRulesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsecuritykeysrequestlistsecuritykeyspaginatetypedef">ListSecurityKeysRequestListSecurityKeysPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsecurityprofilepermissionsrequestlistsecurityprofilepermissionspaginatetypedef">ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listsecurityprofilesrequestlistsecurityprofilespaginatetypedef">ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef</a></li>
@@ -39874,6 +39891,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtrafficdistributiongroupsresponsetypedef">ListTrafficDistributionGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#listusecasesresponsetypedef">ListUseCasesResponseTypeDef</a></li>
 <li><a href="type_defs/#listusersresponsetypedef">ListUsersResponseTypeDef</a></li>
+<li><a href="type_defs/#sendnotificationactiondefinitiontypedef">SendNotificationActionDefinitionTypeDef</a></li>
 <li><a href="type_defs/#startchatcontactrequestrequesttypedef">StartChatContactRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#queuesearchcriteriatypedef">QueueSearchCriteriaTypeDef</a></li>
 <li><a href="type_defs/#routingprofilesearchcriteriatypedef">RoutingProfileSearchCriteriaTypeDef</a></li>
@@ -39882,11 +39900,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#quickconnectconfigtypedef">QuickConnectConfigTypeDef</a></li>
 <li><a href="type_defs/#referencesummarytypedef">ReferenceSummaryTypeDef</a></li>
 <li><a href="type_defs/#starttaskcontactrequestrequesttypedef">StartTaskContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#taskactiondefinitiontypedef">TaskActionDefinitionTypeDef</a></li>
 <li><a href="type_defs/#updatecontactrequestrequesttypedef">UpdateContactRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#searchsecurityprofilesresponsetypedef">SearchSecurityProfilesResponseTypeDef</a></li>
 <li><a href="type_defs/#searchvocabulariesresponsetypedef">SearchVocabulariesResponseTypeDef</a></li>
 <li><a href="type_defs/#startcontactrecordingrequestrequesttypedef">StartContactRecordingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#usersearchsummarytypedef">UserSearchSummaryTypeDef</a></li>
+<li><a href="type_defs/#listrulesresponsetypedef">ListRulesResponseTypeDef</a></li>
 <li><a href="type_defs/#listbotsresponsetypedef">ListBotsResponseTypeDef</a></li>
 <li><a href="type_defs/#describephonenumberresponsetypedef">DescribePhoneNumberResponseTypeDef</a></li>
 <li><a href="type_defs/#getcurrentuserdatarequestrequesttypedef">GetCurrentUserDataRequestRequestTypeDef</a></li>
@@ -39924,6 +39944,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#quickconnecttypedef">QuickConnectTypeDef</a></li>
 <li><a href="type_defs/#updatequickconnectconfigrequestrequesttypedef">UpdateQuickConnectConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcontactreferencesresponsetypedef">ListContactReferencesResponseTypeDef</a></li>
+<li><a href="type_defs/#ruleactiontypedef">RuleActionTypeDef</a></li>
 <li><a href="type_defs/#searchusersresponsetypedef">SearchUsersResponseTypeDef</a></li>
 <li><a href="type_defs/#searchqueuesrequestrequesttypedef">SearchQueuesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#searchqueuesrequestsearchqueuespaginatetypedef">SearchQueuesRequestSearchQueuesPaginateTypeDef</a></li>
@@ -39947,7 +39968,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatetasktemplaterequestrequesttypedef">UpdateTaskTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatetasktemplateresponsetypedef">UpdateTaskTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#describequickconnectresponsetypedef">DescribeQuickConnectResponseTypeDef</a></li>
+<li><a href="type_defs/#createrulerequestrequesttypedef">CreateRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
+<li><a href="type_defs/#updaterulerequestrequesttypedef">UpdateRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmetricdataresponsetypedef">GetMetricDataResponseTypeDef</a></li>
+<li><a href="type_defs/#describeruleresponsetypedef">DescribeRuleResponseTypeDef</a></li>
 </ul>
 
 

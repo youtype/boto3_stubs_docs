@@ -7,6 +7,23 @@
     Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
     type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
+## ActionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import ActionTypeType
+
+def get_value() -> ActionTypeType:
+    return "ASSIGN_CONTACT_CATEGORY"
+```
+
+```python title="Definition"
+ActionTypeType = Literal[
+    "ASSIGN_CONTACT_CATEGORY",
+    "CREATE_TASK",
+    "GENERATE_EVENTBRIDGE_EVENT",
+    "SEND_NOTIFICATION",
+]
+```
 ## AgentStatusStateType
 
 ```python title="Usage Example"
@@ -230,6 +247,25 @@ def get_value() -> EncryptionTypeType:
 ```python title="Definition"
 EncryptionTypeType = Literal[
     "KMS",
+]
+```
+## EventSourceNameType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import EventSourceNameType
+
+def get_value() -> EventSourceNameType:
+    return "OnPostCallAnalysisAvailable"
+```
+
+```python title="Definition"
+EventSourceNameType = Literal[
+    "OnPostCallAnalysisAvailable",
+    "OnPostChatAnalysisAvailable",
+    "OnRealTimeCallAnalysisAvailable",
+    "OnSalesforceCaseCreate",
+    "OnZendeskTicketCreate",
+    "OnZendeskTicketStatusUpdate",
 ]
 ```
 ## GetMetricDataPaginatorName
@@ -735,6 +771,20 @@ ListRoutingProfilesPaginatorName = Literal[
     "list_routing_profiles",
 ]
 ```
+## ListRulesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import ListRulesPaginatorName
+
+def get_value() -> ListRulesPaginatorName:
+    return "list_rules"
+```
+
+```python title="Definition"
+ListRulesPaginatorName = Literal[
+    "list_rules",
+]
+```
 ## ListSecurityKeysPaginatorName
 
 ```python title="Usage Example"
@@ -860,6 +910,34 @@ def get_value() -> MonitorCapabilityType:
 MonitorCapabilityType = Literal[
     "BARGE",
     "SILENT_MONITOR",
+]
+```
+## NotificationContentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import NotificationContentTypeType
+
+def get_value() -> NotificationContentTypeType:
+    return "PLAIN_TEXT"
+```
+
+```python title="Definition"
+NotificationContentTypeType = Literal[
+    "PLAIN_TEXT",
+]
+```
+## NotificationDeliveryTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import NotificationDeliveryTypeType
+
+def get_value() -> NotificationDeliveryTypeType:
+    return "EMAIL"
+```
+
+```python title="Definition"
+NotificationDeliveryTypeType = Literal[
+    "EMAIL",
 ]
 ```
 ## PhoneNumberCountryCodeType
@@ -1236,6 +1314,21 @@ ReferenceTypeType = Literal[
     "NUMBER",
     "STRING",
     "URL",
+]
+```
+## RulePublishStatusType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import RulePublishStatusType
+
+def get_value() -> RulePublishStatusType:
+    return "DRAFT"
+```
+
+```python title="Definition"
+RulePublishStatusType = Literal[
+    "DRAFT",
+    "PUBLISHED",
 ]
 ```
 ## SearchAvailablePhoneNumbersPaginatorName
@@ -1989,6 +2082,7 @@ PaginatorName = Literal[
     "list_quick_connects",
     "list_routing_profile_queues",
     "list_routing_profiles",
+    "list_rules",
     "list_security_keys",
     "list_security_profile_permissions",
     "list_security_profiles",

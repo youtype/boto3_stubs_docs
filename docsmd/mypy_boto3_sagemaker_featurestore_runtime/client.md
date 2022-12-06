@@ -128,11 +128,13 @@ def delete_record(
     FeatureGroupName: str,
     RecordIdentifierValueAsString: str,
     EventTime: str,
-) -> EmptyResponseMetadataTypeDef:  # (1)
+    TargetStores: Sequence[TargetStoreType] = ...,  # (1)
+) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+1. See [:material-code-brackets: TargetStoreType](./literals.md#targetstoretype) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -211,12 +213,14 @@ def put_record(
     *,
     FeatureGroupName: str,
     Record: Sequence[FeatureValueTypeDef],  # (1)
-) -> EmptyResponseMetadataTypeDef:  # (2)
+    TargetStores: Sequence[TargetStoreType] = ...,  # (2)
+) -> EmptyResponseMetadataTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: FeatureValueTypeDef](./type_defs.md#featurevaluetypedef) 
-2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+2. See [:material-code-brackets: TargetStoreType](./literals.md#targetstoretype) 
+3. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

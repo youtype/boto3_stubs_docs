@@ -7,6 +7,23 @@
     Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
     type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
+## ActionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ActionSummaryTypeDef
+
+def get_value() -> ActionSummaryTypeDef:
+    return {
+        "ActionType": ...,
+    }
+```
+
+```python title="Definition"
+class ActionSummaryTypeDef(TypedDict):
+    ActionType: ActionTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
 ## QueueReferenceTypeDef
 
 ```python title="Usage Example"
@@ -723,6 +740,24 @@ class MediaConcurrencyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
+## RuleTriggerEventSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RuleTriggerEventSourceTypeDef
+
+def get_value() -> RuleTriggerEventSourceTypeDef:
+    return {
+        "EventSourceName": ...,
+    }
+```
+
+```python title="Definition"
+class RuleTriggerEventSourceTypeDef(TypedDict):
+    EventSourceName: EventSourceNameType,  # (1)
+    IntegrationAssociationId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: EventSourceNameType](./literals.md#eventsourcenametype) 
 ## CreateSecurityProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1056,6 +1091,24 @@ def get_value() -> DeleteQuickConnectRequestRequestTypeDef:
 class DeleteQuickConnectRequestRequestTypeDef(TypedDict):
     InstanceId: str,
     QuickConnectId: str,
+```
+
+## DeleteRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DeleteRuleRequestRequestTypeDef
+
+def get_value() -> DeleteRuleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RuleId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteRuleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RuleId: str,
 ```
 
 ## DeleteSecurityProfileRequestRequestTypeDef
@@ -1398,6 +1451,24 @@ def get_value() -> DescribeRoutingProfileRequestRequestTypeDef:
 class DescribeRoutingProfileRequestRequestTypeDef(TypedDict):
     InstanceId: str,
     RoutingProfileId: str,
+```
+
+## DescribeRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DescribeRuleRequestRequestTypeDef
+
+def get_value() -> DescribeRuleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RuleId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRuleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RuleId: str,
 ```
 
 ## DescribeSecurityProfileRequestRequestTypeDef
@@ -1807,6 +1878,22 @@ class EncryptionConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+## EventBridgeActionDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import EventBridgeActionDefinitionTypeDef
+
+def get_value() -> EventBridgeActionDefinitionTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class EventBridgeActionDefinitionTypeDef(TypedDict):
+    Name: str,
+```
+
 ## FiltersTypeDef
 
 ```python title="Usage Example"
@@ -2748,6 +2835,28 @@ class RoutingProfileSummaryTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
+## ListRulesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListRulesRequestRequestTypeDef
+
+def get_value() -> ListRulesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRulesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    PublishStatus: NotRequired[RulePublishStatusType],  # (1)
+    EventSourceName: NotRequired[EventSourceNameType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+2. See [:material-code-brackets: EventSourceNameType](./literals.md#eventsourcenametype) 
 ## ListSecurityKeysRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3055,6 +3164,23 @@ class MonitorContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MonitorCapabilityType](./literals.md#monitorcapabilitytype) 
+## NotificationRecipientTypeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import NotificationRecipientTypeTypeDef
+
+def get_value() -> NotificationRecipientTypeTypeDef:
+    return {
+        "UserTags": ...,
+    }
+```
+
+```python title="Definition"
+class NotificationRecipientTypeTypeDef(TypedDict):
+    UserTags: NotRequired[Mapping[str, str]],
+    UserIds: NotRequired[Sequence[str]],
+```
+
 ## NumberReferenceTypeDef
 
 ```python title="Usage Example"
@@ -4042,6 +4168,39 @@ class UserIdentityInfoLiteTypeDef(TypedDict):
     LastName: NotRequired[str],
 ```
 
+## RuleSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RuleSummaryTypeDef
+
+def get_value() -> RuleSummaryTypeDef:
+    return {
+        "Name": ...,
+        "RuleId": ...,
+        "RuleArn": ...,
+        "EventSourceName": ...,
+        "PublishStatus": ...,
+        "ActionSummaries": ...,
+        "CreatedTime": ...,
+        "LastUpdatedTime": ...,
+    }
+```
+
+```python title="Definition"
+class RuleSummaryTypeDef(TypedDict):
+    Name: str,
+    RuleId: str,
+    RuleArn: str,
+    EventSourceName: EventSourceNameType,  # (1)
+    PublishStatus: RulePublishStatusType,  # (2)
+    ActionSummaries: List[ActionSummaryTypeDef],  # (3)
+    CreatedTime: datetime,
+    LastUpdatedTime: datetime,
+```
+
+1. See [:material-code-brackets: EventSourceNameType](./literals.md#eventsourcenametype) 
+2. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+3. See [:material-code-braces: ActionSummaryTypeDef](./type_defs.md#actionsummarytypedef) 
 ## AgentContactReferenceTypeDef
 
 ```python title="Usage Example"
@@ -4438,6 +4597,27 @@ def get_value() -> CreateRoutingProfileResponseTypeDef:
 class CreateRoutingProfileResponseTypeDef(TypedDict):
     RoutingProfileArn: str,
     RoutingProfileId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import CreateRuleResponseTypeDef
+
+def get_value() -> CreateRuleResponseTypeDef:
+    return {
+        "RuleArn": ...,
+        "RuleId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRuleResponseTypeDef(TypedDict):
+    RuleArn: str,
+    RuleId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -6137,6 +6317,28 @@ class ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRulesRequestListRulesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListRulesRequestListRulesPaginateTypeDef
+
+def get_value() -> ListRulesRequestListRulesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRulesRequestListRulesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PublishStatus: NotRequired[RulePublishStatusType],  # (1)
+    EventSourceName: NotRequired[EventSourceNameType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+2. See [:material-code-brackets: EventSourceNameType](./literals.md#eventsourcenametype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSecurityKeysRequestListSecurityKeysPaginateTypeDef
 
 ```python title="Usage Example"
@@ -6996,6 +7198,32 @@ class ListUsersResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SendNotificationActionDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SendNotificationActionDefinitionTypeDef
+
+def get_value() -> SendNotificationActionDefinitionTypeDef:
+    return {
+        "DeliveryMethod": ...,
+        "Content": ...,
+        "ContentType": ...,
+        "Recipient": ...,
+    }
+```
+
+```python title="Definition"
+class SendNotificationActionDefinitionTypeDef(TypedDict):
+    DeliveryMethod: NotificationDeliveryTypeType,  # (1)
+    Content: str,
+    ContentType: NotificationContentTypeType,  # (2)
+    Recipient: NotificationRecipientTypeTypeDef,  # (3)
+    Subject: NotRequired[str],
+```
+
+1. See [:material-code-brackets: NotificationDeliveryTypeType](./literals.md#notificationdeliverytypetype) 
+2. See [:material-code-brackets: NotificationContentTypeType](./literals.md#notificationcontenttypetype) 
+3. See [:material-code-braces: NotificationRecipientTypeTypeDef](./type_defs.md#notificationrecipienttypetypedef) 
 ## StartChatContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7189,6 +7417,27 @@ class StartTaskContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
+## TaskActionDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import TaskActionDefinitionTypeDef
+
+def get_value() -> TaskActionDefinitionTypeDef:
+    return {
+        "Name": ...,
+        "ContactFlowId": ...,
+    }
+```
+
+```python title="Definition"
+class TaskActionDefinitionTypeDef(TypedDict):
+    Name: str,
+    ContactFlowId: str,
+    Description: NotRequired[str],
+    References: NotRequired[Mapping[str, ReferenceTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
 ## UpdateContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7307,6 +7556,28 @@ class UserSearchSummaryTypeDef(TypedDict):
 
 1. See [:material-code-braces: UserIdentityInfoLiteTypeDef](./type_defs.md#useridentityinfolitetypedef) 
 2. See [:material-code-braces: UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) 
+## ListRulesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListRulesResponseTypeDef
+
+def get_value() -> ListRulesResponseTypeDef:
+    return {
+        "RuleSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRulesResponseTypeDef(TypedDict):
+    RuleSummaryList: List[RuleSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBotsResponseTypeDef
 
 ```python title="Usage Example"
@@ -8110,6 +8381,30 @@ class ListContactReferencesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReferenceSummaryTypeDef](./type_defs.md#referencesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RuleActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RuleActionTypeDef
+
+def get_value() -> RuleActionTypeDef:
+    return {
+        "ActionType": ...,
+    }
+```
+
+```python title="Definition"
+class RuleActionTypeDef(TypedDict):
+    ActionType: ActionTypeType,  # (1)
+    TaskAction: NotRequired[TaskActionDefinitionTypeDef],  # (2)
+    EventBridgeAction: NotRequired[EventBridgeActionDefinitionTypeDef],  # (3)
+    AssignContactCategoryAction: NotRequired[Mapping[str, Any]],
+    SendNotificationAction: NotRequired[SendNotificationActionDefinitionTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-braces: TaskActionDefinitionTypeDef](./type_defs.md#taskactiondefinitiontypedef) 
+3. See [:material-code-braces: EventBridgeActionDefinitionTypeDef](./type_defs.md#eventbridgeactiondefinitiontypedef) 
+4. See [:material-code-braces: SendNotificationActionDefinitionTypeDef](./type_defs.md#sendnotificationactiondefinitiontypedef) 
 ## SearchUsersResponseTypeDef
 
 ```python title="Usage Example"
@@ -8674,6 +8969,102 @@ class DescribeQuickConnectResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: QuickConnectTypeDef](./type_defs.md#quickconnecttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import CreateRuleRequestRequestTypeDef
+
+def get_value() -> CreateRuleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "TriggerEventSource": ...,
+        "Function": ...,
+        "Actions": ...,
+        "PublishStatus": ...,
+    }
+```
+
+```python title="Definition"
+class CreateRuleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    TriggerEventSource: RuleTriggerEventSourceTypeDef,  # (1)
+    Function: str,
+    Actions: Sequence[RuleActionTypeDef],  # (2)
+    PublishStatus: RulePublishStatusType,  # (3)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: RuleTriggerEventSourceTypeDef](./type_defs.md#ruletriggereventsourcetypedef) 
+2. See [:material-code-braces: RuleActionTypeDef](./type_defs.md#ruleactiontypedef) 
+3. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+## RuleTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RuleTypeDef
+
+def get_value() -> RuleTypeDef:
+    return {
+        "Name": ...,
+        "RuleId": ...,
+        "RuleArn": ...,
+        "TriggerEventSource": ...,
+        "Function": ...,
+        "Actions": ...,
+        "PublishStatus": ...,
+        "CreatedTime": ...,
+        "LastUpdatedTime": ...,
+        "LastUpdatedBy": ...,
+    }
+```
+
+```python title="Definition"
+class RuleTypeDef(TypedDict):
+    Name: str,
+    RuleId: str,
+    RuleArn: str,
+    TriggerEventSource: RuleTriggerEventSourceTypeDef,  # (1)
+    Function: str,
+    Actions: List[RuleActionTypeDef],  # (2)
+    PublishStatus: RulePublishStatusType,  # (3)
+    CreatedTime: datetime,
+    LastUpdatedTime: datetime,
+    LastUpdatedBy: str,
+    Tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-braces: RuleTriggerEventSourceTypeDef](./type_defs.md#ruletriggereventsourcetypedef) 
+2. See [:material-code-braces: RuleActionTypeDef](./type_defs.md#ruleactiontypedef) 
+3. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
+## UpdateRuleRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UpdateRuleRequestRequestTypeDef
+
+def get_value() -> UpdateRuleRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+        "InstanceId": ...,
+        "Name": ...,
+        "Function": ...,
+        "Actions": ...,
+        "PublishStatus": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateRuleRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+    InstanceId: str,
+    Name: str,
+    Function: str,
+    Actions: Sequence[RuleActionTypeDef],  # (1)
+    PublishStatus: RulePublishStatusType,  # (2)
+```
+
+1. See [:material-code-braces: RuleActionTypeDef](./type_defs.md#ruleactiontypedef) 
+2. See [:material-code-brackets: RulePublishStatusType](./literals.md#rulepublishstatustype) 
 ## GetMetricDataResponseTypeDef
 
 ```python title="Usage Example"
@@ -8695,4 +9086,24 @@ class GetMetricDataResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: HistoricalMetricResultTypeDef](./type_defs.md#historicalmetricresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRuleResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DescribeRuleResponseTypeDef
+
+def get_value() -> DescribeRuleResponseTypeDef:
+    return {
+        "Rule": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRuleResponseTypeDef(TypedDict):
+    Rule: RuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -887,11 +887,12 @@ ReplicaModeType = Literal[
 from mypy_boto3_rds.literals import SourceTypeType
 
 def get_value() -> SourceTypeType:
-    return "custom-engine-version"
+    return "blue-green-deployment"
 ```
 
 ```python title="Definition"
 SourceTypeType = Literal[
+    "blue-green-deployment",
     "custom-engine-version",
     "db-cluster",
     "db-cluster-snapshot",

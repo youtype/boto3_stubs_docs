@@ -108,8 +108,10 @@ class DeleteRecordRequestRequestTypeDef(TypedDict):
     FeatureGroupName: str,
     RecordIdentifierValueAsString: str,
     EventTime: str,
+    TargetStores: NotRequired[Sequence[TargetStoreType]],  # (1)
 ```
 
+1. See [:material-code-brackets: TargetStoreType](./literals.md#targetstoretype) 
 ## GetRecordRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -220,9 +222,11 @@ def get_value() -> PutRecordRequestRequestTypeDef:
 class PutRecordRequestRequestTypeDef(TypedDict):
     FeatureGroupName: str,
     Record: Sequence[FeatureValueTypeDef],  # (1)
+    TargetStores: NotRequired[Sequence[TargetStoreType]],  # (2)
 ```
 
 1. See [:material-code-braces: FeatureValueTypeDef](./type_defs.md#featurevaluetypedef) 
+2. See [:material-code-brackets: TargetStoreType](./literals.md#targetstoretype) 
 ## BatchGetRecordResponseTypeDef
 
 ```python title="Usage Example"

@@ -39444,7 +39444,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-sagem
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="n">FeatureGroupName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="n">RecordIdentifierValueAsString</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="n">EventTime</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="n">TargetStores</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TargetStoreType</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
+<ol>
+<li>See <a href="../literals/#targetstoretype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TargetStoreType</a> </li>
+</ol>
 <h2 id="getrecordrequestrequesttypedef">GetRecordRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sagemaker_featurestore_runtime.type_defs</span> <span class="kn">import</span> <span class="n">GetRecordRequestRequestTypeDef</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
@@ -39534,9 +39538,11 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-sagem
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">class</span> <span class="nc">PutRecordRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="n">FeatureGroupName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="n">Record</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">FeatureValueTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="n">TargetStores</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TargetStoreType</span><span class="p">]],</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#featurevaluetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> FeatureValueTypeDef</a> </li>
+<li>See <a href="../literals/#targetstoretype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> TargetStoreType</a> </li>
 </ol>
 <h2 id="batchgetrecordresponsetypedef">BatchGetRecordResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_sagemaker_featurestore_runtime.type_defs</span> <span class="kn">import</span> <span class="n">BatchGetRecordResponseTypeDef</span>

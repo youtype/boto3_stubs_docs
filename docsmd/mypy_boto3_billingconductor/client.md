@@ -346,19 +346,21 @@ def create_pricing_rule(
     Name: str,
     Scope: PricingRuleScopeType,  # (1)
     Type: PricingRuleTypeType,  # (2)
-    ModifierPercentage: float,
     ClientToken: str = ...,
     Description: str = ...,
+    ModifierPercentage: float = ...,
     Service: str = ...,
     Tags: Mapping[str, str] = ...,
     BillingEntity: str = ...,
-) -> CreatePricingRuleOutputTypeDef:  # (3)
+    Tiering: CreateTieringInputTypeDef = ...,  # (3)
+) -> CreatePricingRuleOutputTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
 2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
-3. See [:material-code-braces: CreatePricingRuleOutputTypeDef](./type_defs.md#createpricingruleoutputtypedef) 
+3. See [:material-code-braces: CreateTieringInputTypeDef](./type_defs.md#createtieringinputtypedef) 
+4. See [:material-code-braces: CreatePricingRuleOutputTypeDef](./type_defs.md#createpricingruleoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -366,7 +368,6 @@ kwargs: CreatePricingRuleInputRequestTypeDef = {  # (1)
     "Name": ...,
     "Scope": ...,
     "Type": ...,
-    "ModifierPercentage": ...,
 }
 
 parent.create_pricing_rule(**kwargs)
@@ -1115,12 +1116,14 @@ def update_pricing_rule(
     Description: str = ...,
     Type: PricingRuleTypeType = ...,  # (1)
     ModifierPercentage: float = ...,
-) -> UpdatePricingRuleOutputTypeDef:  # (2)
+    Tiering: UpdateTieringInputTypeDef = ...,  # (2)
+) -> UpdatePricingRuleOutputTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
-2. See [:material-code-braces: UpdatePricingRuleOutputTypeDef](./type_defs.md#updatepricingruleoutputtypedef) 
+2. See [:material-code-braces: UpdateTieringInputTypeDef](./type_defs.md#updatetieringinputtypedef) 
+3. See [:material-code-braces: UpdatePricingRuleOutputTypeDef](./type_defs.md#updatepricingruleoutputtypedef) 
 
 
 ```python title="Usage example with kwargs"

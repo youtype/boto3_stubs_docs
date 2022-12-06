@@ -75,12 +75,13 @@ def get_client() -> SageMakerFeatureStoreRuntimeClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_sagemaker_featurestore_runtime.literals import SageMakerFeatureStoreRuntimeServiceName
+from mypy_boto3_sagemaker_featurestore_runtime.literals import TargetStoreType
 
-def get_value() -> SageMakerFeatureStoreRuntimeServiceName:
-    return "sagemaker-featurestore-runtime"
+def get_value() -> TargetStoreType:
+    return "OfflineStore"
 ```
 
+- [TargetStoreType](./literals.md#targetstoretype)
 - [SageMakerFeatureStoreRuntimeServiceName](./literals.md#sagemakerfeaturestoreruntimeservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)

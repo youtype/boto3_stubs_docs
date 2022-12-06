@@ -254,6 +254,7 @@ def get_value() -> PricingRuleTypeType:
 PricingRuleTypeType = Literal[
     "DISCOUNT",
     "MARKUP",
+    "TIERING",
 ]
 ```
 ## BillingConductorServiceName

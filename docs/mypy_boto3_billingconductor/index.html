@@ -39442,8 +39442,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#customlineitembillingperiodrangetypedef">CustomLineItemBillingPeriodRangeTypeDef</a></li>
 <li><a href="type_defs/#billinggroupcostreportelementtypedef">BillingGroupCostReportElementTypeDef</a></li>
 <li><a href="type_defs/#computationpreferencetypedef">ComputationPreferenceTypeDef</a></li>
+<li><a href="type_defs/#createfreetierconfigtypedef">CreateFreeTierConfigTypeDef</a></li>
 <li><a href="type_defs/#createpricingplaninputrequesttypedef">CreatePricingPlanInputRequestTypeDef</a></li>
-<li><a href="type_defs/#createpricingruleinputrequesttypedef">CreatePricingRuleInputRequestTypeDef</a></li>
 <li><a href="type_defs/#customlineitemflatchargedetailstypedef">CustomLineItemFlatChargeDetailsTypeDef</a></li>
 <li><a href="type_defs/#customlineitempercentagechargedetailstypedef">CustomLineItemPercentageChargeDetailsTypeDef</a></li>
 <li><a href="type_defs/#deletebillinggroupinputrequesttypedef">DeleteBillingGroupInputRequestTypeDef</a></li>
@@ -39451,6 +39451,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletepricingruleinputrequesttypedef">DeletePricingRuleInputRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociateaccountsinputrequesttypedef">DisassociateAccountsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#disassociatepricingrulesinputrequesttypedef">DisassociatePricingRulesInputRequestTypeDef</a></li>
+<li><a href="type_defs/#freetierconfigtypedef">FreeTierConfigTypeDef</a></li>
 <li><a href="type_defs/#listaccountassociationsfiltertypedef">ListAccountAssociationsFilterTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listbillinggroupcostreportsfiltertypedef">ListBillingGroupCostReportsFilterTypeDef</a></li>
@@ -39464,7 +39465,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#pricingplanlistelementtypedef">PricingPlanListElementTypeDef</a></li>
 <li><a href="type_defs/#listpricingrulesassociatedtopricingplaninputrequesttypedef">ListPricingRulesAssociatedToPricingPlanInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listpricingrulesfiltertypedef">ListPricingRulesFilterTypeDef</a></li>
-<li><a href="type_defs/#pricingrulelistelementtypedef">PricingRuleListElementTypeDef</a></li>
 <li><a href="type_defs/#listresourcesassociatedtocustomlineitemfiltertypedef">ListResourcesAssociatedToCustomLineItemFilterTypeDef</a></li>
 <li><a href="type_defs/#listresourcesassociatedtocustomlineitemresponseelementtypedef">ListResourcesAssociatedToCustomLineItemResponseElementTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
@@ -39472,8 +39472,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecustomlineitemflatchargedetailstypedef">UpdateCustomLineItemFlatChargeDetailsTypeDef</a></li>
 <li><a href="type_defs/#updatecustomlineitempercentagechargedetailstypedef">UpdateCustomLineItemPercentageChargeDetailsTypeDef</a></li>
+<li><a href="type_defs/#updatefreetierconfigtypedef">UpdateFreeTierConfigTypeDef</a></li>
 <li><a href="type_defs/#updatepricingplaninputrequesttypedef">UpdatePricingPlanInputRequestTypeDef</a></li>
-<li><a href="type_defs/#updatepricingruleinputrequesttypedef">UpdatePricingRuleInputRequestTypeDef</a></li>
 <li><a href="type_defs/#associateaccountsoutputtypedef">AssociateAccountsOutputTypeDef</a></li>
 <li><a href="type_defs/#associatepricingrulesoutputtypedef">AssociatePricingRulesOutputTypeDef</a></li>
 <li><a href="type_defs/#createbillinggroupoutputtypedef">CreateBillingGroupOutputTypeDef</a></li>
@@ -39492,7 +39492,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#updatebillinggroupoutputtypedef">UpdateBillingGroupOutputTypeDef</a></li>
 <li><a href="type_defs/#updatepricingplanoutputtypedef">UpdatePricingPlanOutputTypeDef</a></li>
-<li><a href="type_defs/#updatepricingruleoutputtypedef">UpdatePricingRuleOutputTypeDef</a></li>
 <li><a href="type_defs/#associateresourceresponseelementtypedef">AssociateResourceResponseElementTypeDef</a></li>
 <li><a href="type_defs/#disassociateresourceresponseelementtypedef">DisassociateResourceResponseElementTypeDef</a></li>
 <li><a href="type_defs/#batchassociateresourcestocustomlineiteminputrequesttypedef">BatchAssociateResourcesToCustomLineItemInputRequestTypeDef</a></li>
@@ -39502,7 +39501,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#billinggrouplistelementtypedef">BillingGroupListElementTypeDef</a></li>
 <li><a href="type_defs/#createbillinggroupinputrequesttypedef">CreateBillingGroupInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updatebillinggroupinputrequesttypedef">UpdateBillingGroupInputRequestTypeDef</a></li>
+<li><a href="type_defs/#createtieringinputtypedef">CreateTieringInputTypeDef</a></li>
 <li><a href="type_defs/#customlineitemchargedetailstypedef">CustomLineItemChargeDetailsTypeDef</a></li>
+<li><a href="type_defs/#tieringtypedef">TieringTypeDef</a></li>
 <li><a href="type_defs/#listaccountassociationsinputrequesttypedef">ListAccountAssociationsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listaccountassociationsinputlistaccountassociationspaginatetypedef">ListAccountAssociationsInputListAccountAssociationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpricingplansassociatedwithpricingruleinputlistpricingplansassociatedwithpricingrulepaginatetypedef">ListPricingPlansAssociatedWithPricingRuleInputListPricingPlansAssociatedWithPricingRulePaginateTypeDef</a></li>
@@ -39520,21 +39521,26 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listpricingplansoutputtypedef">ListPricingPlansOutputTypeDef</a></li>
 <li><a href="type_defs/#listpricingrulesinputlistpricingrulespaginatetypedef">ListPricingRulesInputListPricingRulesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listpricingrulesinputrequesttypedef">ListPricingRulesInputRequestTypeDef</a></li>
-<li><a href="type_defs/#listpricingrulesoutputtypedef">ListPricingRulesOutputTypeDef</a></li>
 <li><a href="type_defs/#listresourcesassociatedtocustomlineiteminputlistresourcesassociatedtocustomlineitempaginatetypedef">ListResourcesAssociatedToCustomLineItemInputListResourcesAssociatedToCustomLineItemPaginateTypeDef</a></li>
 <li><a href="type_defs/#listresourcesassociatedtocustomlineiteminputrequesttypedef">ListResourcesAssociatedToCustomLineItemInputRequestTypeDef</a></li>
 <li><a href="type_defs/#listresourcesassociatedtocustomlineitemoutputtypedef">ListResourcesAssociatedToCustomLineItemOutputTypeDef</a></li>
 <li><a href="type_defs/#updatecustomlineitemchargedetailstypedef">UpdateCustomLineItemChargeDetailsTypeDef</a></li>
+<li><a href="type_defs/#updatetieringinputtypedef">UpdateTieringInputTypeDef</a></li>
 <li><a href="type_defs/#batchassociateresourcestocustomlineitemoutputtypedef">BatchAssociateResourcesToCustomLineItemOutputTypeDef</a></li>
 <li><a href="type_defs/#batchdisassociateresourcesfromcustomlineitemoutputtypedef">BatchDisassociateResourcesFromCustomLineItemOutputTypeDef</a></li>
 <li><a href="type_defs/#listbillinggroupsoutputtypedef">ListBillingGroupsOutputTypeDef</a></li>
+<li><a href="type_defs/#createpricingruleinputrequesttypedef">CreatePricingRuleInputRequestTypeDef</a></li>
 <li><a href="type_defs/#createcustomlineiteminputrequesttypedef">CreateCustomLineItemInputRequestTypeDef</a></li>
+<li><a href="type_defs/#pricingrulelistelementtypedef">PricingRuleListElementTypeDef</a></li>
 <li><a href="type_defs/#customlineitemlistelementtypedef">CustomLineItemListElementTypeDef</a></li>
 <li><a href="type_defs/#customlineitemversionlistelementtypedef">CustomLineItemVersionListElementTypeDef</a></li>
 <li><a href="type_defs/#updatecustomlineitemoutputtypedef">UpdateCustomLineItemOutputTypeDef</a></li>
 <li><a href="type_defs/#listcustomlineitemversionsinputlistcustomlineitemversionspaginatetypedef">ListCustomLineItemVersionsInputListCustomLineItemVersionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listcustomlineitemversionsinputrequesttypedef">ListCustomLineItemVersionsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updatecustomlineiteminputrequesttypedef">UpdateCustomLineItemInputRequestTypeDef</a></li>
+<li><a href="type_defs/#updatepricingruleinputrequesttypedef">UpdatePricingRuleInputRequestTypeDef</a></li>
+<li><a href="type_defs/#updatepricingruleoutputtypedef">UpdatePricingRuleOutputTypeDef</a></li>
+<li><a href="type_defs/#listpricingrulesoutputtypedef">ListPricingRulesOutputTypeDef</a></li>
 <li><a href="type_defs/#listcustomlineitemsoutputtypedef">ListCustomLineItemsOutputTypeDef</a></li>
 <li><a href="type_defs/#listcustomlineitemversionsoutputtypedef">ListCustomLineItemVersionsOutputTypeDef</a></li>
 </ul>

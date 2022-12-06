@@ -7,6 +7,21 @@
     Auto-generated documentation for [SageMakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime)
     type annotations stubs module [mypy-boto3-sagemaker-featurestore-runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
 
+## TargetStoreType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker_featurestore_runtime.literals import TargetStoreType
+
+def get_value() -> TargetStoreType:
+    return "OfflineStore"
+```
+
+```python title="Definition"
+TargetStoreType = Literal[
+    "OfflineStore",
+    "OnlineStore",
+]
+```
 ## SageMakerFeatureStoreRuntimeServiceName
 
 ```python title="Usage Example"
