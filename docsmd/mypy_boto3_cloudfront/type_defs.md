@@ -2395,6 +2395,24 @@ class TestFunctionRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
+## UpdateDistributionWithStagingConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import UpdateDistributionWithStagingConfigRequestRequestTypeDef
+
+def get_value() -> UpdateDistributionWithStagingConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDistributionWithStagingConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+    StagingDistributionId: NotRequired[str],
+    IfMatch: NotRequired[str],
+```
+
 ## AllowedMethodsTypeDef
 
 ```python title="Usage Example"
@@ -6279,6 +6297,8 @@ class DistributionConfigTypeDef(TypedDict):
     WebACLId: NotRequired[str],
     HttpVersion: NotRequired[HttpVersionType],  # (11)
     IsIPV6Enabled: NotRequired[bool],
+    ContinuousDeploymentPolicyId: NotRequired[str],
+    Staging: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: AliasesTypeDef](./type_defs.md#aliasestypedef) 
@@ -6317,6 +6337,7 @@ def get_value() -> DistributionSummaryTypeDef:
         "WebACLId": ...,
         "HttpVersion": ...,
         "IsIPV6Enabled": ...,
+        "Staging": ...,
     }
 ```
 
@@ -6340,6 +6361,7 @@ class DistributionSummaryTypeDef(TypedDict):
     WebACLId: str,
     HttpVersion: HttpVersionType,  # (10)
     IsIPV6Enabled: bool,
+    Staging: bool,
     OriginGroups: NotRequired[OriginGroupsTypeDef],  # (3)
     AliasICPRecordals: NotRequired[List[AliasICPRecordalTypeDef]],  # (11)
 ```
@@ -7093,6 +7115,28 @@ def get_value() -> UpdateDistributionResultTypeDef:
 
 ```python title="Definition"
 class UpdateDistributionResultTypeDef(TypedDict):
+    Distribution: DistributionTypeDef,  # (1)
+    ETag: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateDistributionWithStagingConfigResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import UpdateDistributionWithStagingConfigResultTypeDef
+
+def get_value() -> UpdateDistributionWithStagingConfigResultTypeDef:
+    return {
+        "Distribution": ...,
+        "ETag": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDistributionWithStagingConfigResultTypeDef(TypedDict):
     Distribution: DistributionTypeDef,  # (1)
     ETag: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)

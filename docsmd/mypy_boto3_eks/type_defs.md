@@ -294,6 +294,7 @@ class CreateAddonRequestRequestTypeDef(TypedDict):
     resolveConflicts: NotRequired[ResolveConflictsType],  # (1)
     clientRequestToken: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
+    configurationValues: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ResolveConflictsType](./literals.md#resolveconflictstype) 
@@ -526,6 +527,24 @@ def get_value() -> DeregisterClusterRequestRequestTypeDef:
 ```python title="Definition"
 class DeregisterClusterRequestRequestTypeDef(TypedDict):
     name: str,
+```
+
+## DescribeAddonConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeAddonConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeAddonConfigurationRequestRequestTypeDef:
+    return {
+        "addonName": ...,
+        "addonVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddonConfigurationRequestRequestTypeDef(TypedDict):
+    addonName: str,
+    addonVersion: str,
 ```
 
 ## WaiterConfigTypeDef
@@ -991,6 +1010,7 @@ class UpdateAddonRequestRequestTypeDef(TypedDict):
     serviceAccountRoleArn: NotRequired[str],
     resolveConflicts: NotRequired[ResolveConflictsType],  # (1)
     clientRequestToken: NotRequired[str],
+    configurationValues: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ResolveConflictsType](./literals.md#resolveconflictstype) 
@@ -1085,6 +1105,29 @@ class AddonVersionInfoTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CompatibilityTypeDef](./type_defs.md#compatibilitytypedef) 
+## DescribeAddonConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeAddonConfigurationResponseTypeDef
+
+def get_value() -> DescribeAddonConfigurationResponseTypeDef:
+    return {
+        "addonName": ...,
+        "addonVersion": ...,
+        "configurationSchema": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddonConfigurationResponseTypeDef(TypedDict):
+    addonName: str,
+    addonVersion: str,
+    configurationSchema: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAddonsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1949,6 +1992,7 @@ class AddonTypeDef(TypedDict):
     publisher: NotRequired[str],
     owner: NotRequired[str],
     marketplaceInformation: NotRequired[MarketplaceInformationTypeDef],  # (3)
+    configurationValues: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AddonStatusType](./literals.md#addonstatustype) 

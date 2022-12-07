@@ -177,6 +177,7 @@ def create_addon(
     resolveConflicts: ResolveConflictsType = ...,  # (1)
     clientRequestToken: str = ...,
     tags: Mapping[str, str] = ...,
+    configurationValues: str = ...,
 ) -> CreateAddonResponseTypeDef:  # (2)
     ...
 ```
@@ -517,6 +518,37 @@ parent.describe_addon(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeAddonRequestRequestTypeDef](./type_defs.md#describeaddonrequestrequesttypedef) 
+
+### describe\_addon\_configuration
+
+Returns configuration options.
+
+Type annotations and code completion for `#!python boto3.client("eks").describe_addon_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_configuration)
+
+```python title="Method definition"
+def describe_addon_configuration(
+    self,
+    *,
+    addonName: str,
+    addonVersion: str,
+) -> DescribeAddonConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeAddonConfigurationResponseTypeDef](./type_defs.md#describeaddonconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAddonConfigurationRequestRequestTypeDef = {  # (1)
+    "addonName": ...,
+    "addonVersion": ...,
+}
+
+parent.describe_addon_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAddonConfigurationRequestRequestTypeDef](./type_defs.md#describeaddonconfigurationrequestrequesttypedef) 
 
 ### describe\_addon\_versions
 
@@ -1094,6 +1126,7 @@ def update_addon(
     serviceAccountRoleArn: str = ...,
     resolveConflicts: ResolveConflictsType = ...,  # (1)
     clientRequestToken: str = ...,
+    configurationValues: str = ...,
 ) -> UpdateAddonResponseTypeDef:  # (2)
     ...
 ```

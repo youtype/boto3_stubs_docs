@@ -124,6 +124,7 @@ class RootCauseTypeDef(TypedDict):
     Region: NotRequired[str],
     LinkedAccount: NotRequired[str],
     UsageType: NotRequired[str],
+    LinkedAccountName: NotRequired[str],
 ```
 
 ## CostAllocationTagStatusEntryTypeDef

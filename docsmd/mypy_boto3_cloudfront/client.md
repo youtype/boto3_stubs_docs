@@ -41,6 +41,8 @@ except (
     client.ClientError,
     client.CloudFrontOriginAccessIdentityAlreadyExists,
     client.CloudFrontOriginAccessIdentityInUse,
+    client.ContinuousDeploymentPolicyAlreadyExists,
+    client.ContinuousDeploymentPolicyInUse,
     client.DistributionAlreadyExists,
     client.DistributionNotDisabled,
     client.FieldLevelEncryptionConfigAlreadyExists,
@@ -87,6 +89,7 @@ except (
     client.MonitoringSubscriptionAlreadyExists,
     client.NoSuchCachePolicy,
     client.NoSuchCloudFrontOriginAccessIdentity,
+    client.NoSuchContinuousDeploymentPolicy,
     client.NoSuchDistribution,
     client.NoSuchFieldLevelEncryptionConfig,
     client.NoSuchFieldLevelEncryptionProfile,
@@ -124,6 +127,7 @@ except (
     client.TooManyCachePolicies,
     client.TooManyCertificates,
     client.TooManyCloudFrontOriginAccessIdentities,
+    client.TooManyContinuousDeploymentPolicies,
     client.TooManyCookieNamesInWhiteList,
     client.TooManyCookiesInCachePolicy,
     client.TooManyCookiesInOriginRequestPolicy,
@@ -3149,6 +3153,38 @@ parent.update_distribution(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateDistributionRequestRequestTypeDef](./type_defs.md#updatedistributionrequestrequesttypedef) 
+
+### update\_distribution\_with\_staging\_config
+
+Copies the staging distribution's configuration to its corresponding primary
+distribution.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_distribution_with_staging_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution_with_staging_config)
+
+```python title="Method definition"
+def update_distribution_with_staging_config(
+    self,
+    *,
+    Id: str,
+    StagingDistributionId: str = ...,
+    IfMatch: str = ...,
+) -> UpdateDistributionWithStagingConfigResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UpdateDistributionWithStagingConfigResultTypeDef](./type_defs.md#updatedistributionwithstagingconfigresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateDistributionWithStagingConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.update_distribution_with_staging_config(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateDistributionWithStagingConfigRequestRequestTypeDef](./type_defs.md#updatedistributionwithstagingconfigrequestrequesttypedef) 
 
 ### update\_field\_level\_encryption\_config
 
