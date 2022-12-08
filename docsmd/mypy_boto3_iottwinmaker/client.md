@@ -142,6 +142,7 @@ def create_component_type(
     functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (2)
     tags: Mapping[str, str] = ...,
     propertyGroups: Mapping[str, PropertyGroupRequestTypeDef] = ...,  # (3)
+    componentTypeName: str = ...,
 ) -> CreateComponentTypeResponseTypeDef:  # (4)
     ...
 ```
@@ -235,6 +236,40 @@ parent.create_scene(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateSceneRequestRequestTypeDef](./type_defs.md#createscenerequestrequesttypedef) 
+
+### create\_sync\_job
+
+This action creates a SyncJob.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").create_sync_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_sync_job)
+
+```python title="Method definition"
+def create_sync_job(
+    self,
+    *,
+    workspaceId: str,
+    syncSource: str,
+    syncRole: str,
+    tags: Mapping[str, str] = ...,
+) -> CreateSyncJobResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateSyncJobResponseTypeDef](./type_defs.md#createsyncjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateSyncJobRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+    "syncSource": ...,
+    "syncRole": ...,
+}
+
+parent.create_sync_job(**kwargs)
+```
+
+1. See [:material-code-braces: CreateSyncJobRequestRequestTypeDef](./type_defs.md#createsyncjobrequestrequesttypedef) 
 
 ### create\_workspace
 
@@ -363,6 +398,37 @@ parent.delete_scene(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteSceneRequestRequestTypeDef](./type_defs.md#deletescenerequestrequesttypedef) 
+
+### delete\_sync\_job
+
+Delete the SyncJob.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").delete_sync_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_sync_job)
+
+```python title="Method definition"
+def delete_sync_job(
+    self,
+    *,
+    workspaceId: str,
+    syncSource: str,
+) -> DeleteSyncJobResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteSyncJobResponseTypeDef](./type_defs.md#deletesyncjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteSyncJobRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+    "syncSource": ...,
+}
+
+parent.delete_sync_job(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteSyncJobRequestRequestTypeDef](./type_defs.md#deletesyncjobrequestrequesttypedef) 
 
 ### delete\_workspace
 
@@ -640,6 +706,36 @@ parent.get_scene(**kwargs)
 
 1. See [:material-code-braces: GetSceneRequestRequestTypeDef](./type_defs.md#getscenerequestrequesttypedef) 
 
+### get\_sync\_job
+
+Gets the SyncJob.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_sync_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_sync_job)
+
+```python title="Method definition"
+def get_sync_job(
+    self,
+    *,
+    syncSource: str,
+    workspaceId: str = ...,
+) -> GetSyncJobResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetSyncJobResponseTypeDef](./type_defs.md#getsyncjobresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSyncJobRequestRequestTypeDef = {  # (1)
+    "syncSource": ...,
+}
+
+parent.get_sync_job(**kwargs)
+```
+
+1. See [:material-code-braces: GetSyncJobRequestRequestTypeDef](./type_defs.md#getsyncjobrequestrequesttypedef) 
+
 ### get\_workspace
 
 Retrieves information about a workspace.
@@ -765,6 +861,72 @@ parent.list_scenes(**kwargs)
 ```
 
 1. See [:material-code-braces: ListScenesRequestRequestTypeDef](./type_defs.md#listscenesrequestrequesttypedef) 
+
+### list\_sync\_jobs
+
+List all SyncJobs.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").list_sync_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_sync_jobs)
+
+```python title="Method definition"
+def list_sync_jobs(
+    self,
+    *,
+    workspaceId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSyncJobsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSyncJobsResponseTypeDef](./type_defs.md#listsyncjobsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSyncJobsRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
+
+parent.list_sync_jobs(**kwargs)
+```
+
+1. See [:material-code-braces: ListSyncJobsRequestRequestTypeDef](./type_defs.md#listsyncjobsrequestrequesttypedef) 
+
+### list\_sync\_resources
+
+Lists the sync resources.
+
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").list_sync_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_sync_resources)
+
+```python title="Method definition"
+def list_sync_resources(
+    self,
+    *,
+    workspaceId: str,
+    syncSource: str,
+    filters: Sequence[SyncResourceFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSyncResourcesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SyncResourceFilterTypeDef](./type_defs.md#syncresourcefiltertypedef) 
+2. See [:material-code-braces: ListSyncResourcesResponseTypeDef](./type_defs.md#listsyncresourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSyncResourcesRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+    "syncSource": ...,
+}
+
+parent.list_sync_resources(**kwargs)
+```
+
+1. See [:material-code-braces: ListSyncResourcesRequestRequestTypeDef](./type_defs.md#listsyncresourcesrequestrequesttypedef) 
 
 ### list\_tags\_for\_resource
 
@@ -906,6 +1068,7 @@ def update_component_type(
     extendsFrom: Sequence[str] = ...,
     functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (2)
     propertyGroups: Mapping[str, PropertyGroupRequestTypeDef] = ...,  # (3)
+    componentTypeName: str = ...,
 ) -> UpdateComponentTypeResponseTypeDef:  # (4)
     ...
 ```

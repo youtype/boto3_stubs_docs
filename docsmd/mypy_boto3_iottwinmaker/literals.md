@@ -51,6 +51,9 @@ def get_value() -> ErrorCodeType:
 ```python title="Definition"
 ErrorCodeType = Literal[
     "INTERNAL_FAILURE",
+    "SYNC_CREATING_ERROR",
+    "SYNC_INITIALIZING_ERROR",
+    "SYNC_PROCESSING_ERROR",
     "VALIDATION_ERROR",
 ]
 ```
@@ -223,6 +226,57 @@ StateType = Literal[
     "DELETING",
     "ERROR",
     "UPDATING",
+]
+```
+## SyncJobStateType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import SyncJobStateType
+
+def get_value() -> SyncJobStateType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+SyncJobStateType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "ERROR",
+    "INITIALIZING",
+]
+```
+## SyncResourceStateType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import SyncResourceStateType
+
+def get_value() -> SyncResourceStateType:
+    return "DELETED"
+```
+
+```python title="Definition"
+SyncResourceStateType = Literal[
+    "DELETED",
+    "ERROR",
+    "IN_SYNC",
+    "INITIALIZING",
+    "PROCESSING",
+]
+```
+## SyncResourceTypeType
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.literals import SyncResourceTypeType
+
+def get_value() -> SyncResourceTypeType:
+    return "COMPONENT_TYPE"
+```
+
+```python title="Definition"
+SyncResourceTypeType = Literal[
+    "COMPONENT_TYPE",
+    "ENTITY",
 ]
 ```
 ## TypeType

@@ -39379,6 +39379,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#propertyupdatetypetype">PropertyUpdateTypeType</a></li>
 <li><a href="literals/#scopetype">ScopeType</a></li>
 <li><a href="literals/#statetype">StateType</a></li>
+<li><a href="literals/#syncjobstatetype">SyncJobStateType</a></li>
+<li><a href="literals/#syncresourcestatetype">SyncResourceStateType</a></li>
+<li><a href="literals/#syncresourcetypetype">SyncResourceTypeType</a></li>
 <li><a href="literals/#typetype">TypeType</a></li>
 <li><a href="literals/#updatereasontype">UpdateReasonType</a></li>
 <li><a href="literals/#iottwinmakerservicename">IoTTwinMakerServiceName</a></li>
@@ -39408,6 +39411,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#propertydefinitionrequesttypedef">PropertyDefinitionRequestTypeDef</a></li>
 <li><a href="type_defs/#propertygrouprequesttypedef">PropertyGroupRequestTypeDef</a></li>
 <li><a href="type_defs/#createscenerequestrequesttypedef">CreateSceneRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createsyncjobrequestrequesttypedef">CreateSyncJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createworkspacerequestrequesttypedef">CreateWorkspaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#lambdafunctiontypedef">LambdaFunctionTypeDef</a></li>
 <li><a href="type_defs/#relationshiptypedef">RelationshipTypeDef</a></li>
@@ -39415,6 +39419,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#deletecomponenttyperequestrequesttypedef">DeleteComponentTypeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteentityrequestrequesttypedef">DeleteEntityRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletescenerequestrequesttypedef">DeleteSceneRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletesyncjobrequestrequesttypedef">DeleteSyncJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteworkspacerequestrequesttypedef">DeleteWorkspaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#entitypropertyreferencetypedef">EntityPropertyReferenceTypeDef</a></li>
 <li><a href="type_defs/#errordetailstypedef">ErrorDetailsTypeDef</a></li>
@@ -39427,11 +39432,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#interpolationparameterstypedef">InterpolationParametersTypeDef</a></li>
 <li><a href="type_defs/#propertyfiltertypedef">PropertyFilterTypeDef</a></li>
 <li><a href="type_defs/#getscenerequestrequesttypedef">GetSceneRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getsyncjobrequestrequesttypedef">GetSyncJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getworkspacerequestrequesttypedef">GetWorkspaceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcomponenttypesfiltertypedef">ListComponentTypesFilterTypeDef</a></li>
 <li><a href="type_defs/#listentitiesfiltertypedef">ListEntitiesFilterTypeDef</a></li>
 <li><a href="type_defs/#listscenesrequestrequesttypedef">ListScenesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#scenesummarytypedef">SceneSummaryTypeDef</a></li>
+<li><a href="type_defs/#listsyncjobsrequestrequesttypedef">ListSyncJobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#syncresourcefiltertypedef">SyncResourceFilterTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listworkspacesrequestrequesttypedef">ListWorkspacesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#workspacesummarytypedef">WorkspaceSummaryTypeDef</a></li>
@@ -39446,9 +39454,11 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#createcomponenttyperesponsetypedef">CreateComponentTypeResponseTypeDef</a></li>
 <li><a href="type_defs/#createentityresponsetypedef">CreateEntityResponseTypeDef</a></li>
 <li><a href="type_defs/#createsceneresponsetypedef">CreateSceneResponseTypeDef</a></li>
+<li><a href="type_defs/#createsyncjobresponsetypedef">CreateSyncJobResponseTypeDef</a></li>
 <li><a href="type_defs/#createworkspaceresponsetypedef">CreateWorkspaceResponseTypeDef</a></li>
 <li><a href="type_defs/#deletecomponenttyperesponsetypedef">DeleteComponentTypeResponseTypeDef</a></li>
 <li><a href="type_defs/#deleteentityresponsetypedef">DeleteEntityResponseTypeDef</a></li>
+<li><a href="type_defs/#deletesyncjobresponsetypedef">DeleteSyncJobResponseTypeDef</a></li>
 <li><a href="type_defs/#getsceneresponsetypedef">GetSceneResponseTypeDef</a></li>
 <li><a href="type_defs/#getworkspaceresponsetypedef">GetWorkspaceResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
@@ -39463,12 +39473,15 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#datavaluetypedef">DataValueTypeDef</a></li>
 <li><a href="type_defs/#propertylatestvaluetypedef">PropertyLatestValueTypeDef</a></li>
 <li><a href="type_defs/#statustypedef">StatusTypeDef</a></li>
+<li><a href="type_defs/#syncjobstatustypedef">SyncJobStatusTypeDef</a></li>
+<li><a href="type_defs/#syncresourcestatustypedef">SyncResourceStatusTypeDef</a></li>
 <li><a href="type_defs/#executequeryresponsetypedef">ExecuteQueryResponseTypeDef</a></li>
 <li><a href="type_defs/#propertyresponsetypedef">PropertyResponseTypeDef</a></li>
 <li><a href="type_defs/#getpropertyvaluehistoryrequestrequesttypedef">GetPropertyValueHistoryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcomponenttypesrequestrequesttypedef">ListComponentTypesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listentitiesrequestrequesttypedef">ListEntitiesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listscenesresponsetypedef">ListScenesResponseTypeDef</a></li>
+<li><a href="type_defs/#listsyncresourcesrequestrequesttypedef">ListSyncResourcesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listworkspacesresponsetypedef">ListWorkspacesResponseTypeDef</a></li>
 <li><a href="type_defs/#tabularconditionstypedef">TabularConditionsTypeDef</a></li>
 <li><a href="type_defs/#propertyvalueentrytypedef">PropertyValueEntryTypeDef</a></li>
@@ -39482,6 +39495,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getpropertyvalueresponsetypedef">GetPropertyValueResponseTypeDef</a></li>
 <li><a href="type_defs/#componenttypesummarytypedef">ComponentTypeSummaryTypeDef</a></li>
 <li><a href="type_defs/#entitysummarytypedef">EntitySummaryTypeDef</a></li>
+<li><a href="type_defs/#getsyncjobresponsetypedef">GetSyncJobResponseTypeDef</a></li>
+<li><a href="type_defs/#syncjobsummarytypedef">SyncJobSummaryTypeDef</a></li>
+<li><a href="type_defs/#syncresourcesummarytypedef">SyncResourceSummaryTypeDef</a></li>
 <li><a href="type_defs/#componentresponsetypedef">ComponentResponseTypeDef</a></li>
 <li><a href="type_defs/#getpropertyvaluerequestrequesttypedef">GetPropertyValueRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#batchputpropertyerrortypedef">BatchPutPropertyErrorTypeDef</a></li>
@@ -39494,6 +39510,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getcomponenttyperesponsetypedef">GetComponentTypeResponseTypeDef</a></li>
 <li><a href="type_defs/#listcomponenttypesresponsetypedef">ListComponentTypesResponseTypeDef</a></li>
 <li><a href="type_defs/#listentitiesresponsetypedef">ListEntitiesResponseTypeDef</a></li>
+<li><a href="type_defs/#listsyncjobsresponsetypedef">ListSyncJobsResponseTypeDef</a></li>
+<li><a href="type_defs/#listsyncresourcesresponsetypedef">ListSyncResourcesResponseTypeDef</a></li>
 <li><a href="type_defs/#getentityresponsetypedef">GetEntityResponseTypeDef</a></li>
 <li><a href="type_defs/#batchputpropertyerrorentrytypedef">BatchPutPropertyErrorEntryTypeDef</a></li>
 <li><a href="type_defs/#batchputpropertyvaluesresponsetypedef">BatchPutPropertyValuesResponseTypeDef</a></li>

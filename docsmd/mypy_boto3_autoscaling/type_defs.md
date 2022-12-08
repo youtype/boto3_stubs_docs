@@ -183,6 +183,22 @@ class AttachLoadBalancersTypeRequestTypeDef(TypedDict):
     LoadBalancerNames: Sequence[str],
 ```
 
+## TrafficSourceIdentifierTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import TrafficSourceIdentifierTypeDef
+
+def get_value() -> TrafficSourceIdentifierTypeDef:
+    return {
+        "Identifier": ...,
+    }
+```
+
+```python title="Definition"
+class TrafficSourceIdentifierTypeDef(TypedDict):
+    Identifier: NotRequired[str],
+```
+
 ## FilterTypeDef
 
 ```python title="Usage Example"
@@ -921,6 +937,43 @@ class DescribeScheduledActionsTypeRequestTypeDef(TypedDict):
     EndTime: NotRequired[Union[datetime, str]],
     NextToken: NotRequired[str],
     MaxRecords: NotRequired[int],
+```
+
+## DescribeTrafficSourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeTrafficSourcesRequestRequestTypeDef
+
+def get_value() -> DescribeTrafficSourcesRequestRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+        "TrafficSourceType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrafficSourcesRequestRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    TrafficSourceType: str,
+    NextToken: NotRequired[str],
+    MaxRecords: NotRequired[int],
+```
+
+## TrafficSourceStateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import TrafficSourceStateTypeDef
+
+def get_value() -> TrafficSourceStateTypeDef:
+    return {
+        "TrafficSource": ...,
+    }
+```
+
+```python title="Definition"
+class TrafficSourceStateTypeDef(TypedDict):
+    TrafficSource: NotRequired[str],
+    State: NotRequired[str],
 ```
 
 ## DescribeWarmPoolTypeRequestTypeDef
@@ -1933,6 +1986,44 @@ class PolicyARNTypeTypeDef(TypedDict):
 
 1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AttachTrafficSourcesTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import AttachTrafficSourcesTypeRequestTypeDef
+
+def get_value() -> AttachTrafficSourcesTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+        "TrafficSources": ...,
+    }
+```
+
+```python title="Definition"
+class AttachTrafficSourcesTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    TrafficSources: Sequence[TrafficSourceIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TrafficSourceIdentifierTypeDef](./type_defs.md#trafficsourceidentifiertypedef) 
+## DetachTrafficSourcesTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DetachTrafficSourcesTypeRequestTypeDef
+
+def get_value() -> DetachTrafficSourcesTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+        "TrafficSources": ...,
+    }
+```
+
+```python title="Definition"
+class DetachTrafficSourcesTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: str,
+    TrafficSources: Sequence[TrafficSourceIdentifierTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TrafficSourceIdentifierTypeDef](./type_defs.md#trafficsourceidentifiertypedef) 
 ## AutoScalingGroupNamesTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -2358,30 +2449,6 @@ class DeleteTagsTypeRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## CustomizedMetricSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import CustomizedMetricSpecificationTypeDef
-
-def get_value() -> CustomizedMetricSpecificationTypeDef:
-    return {
-        "MetricName": ...,
-        "Namespace": ...,
-        "Statistic": ...,
-    }
-```
-
-```python title="Definition"
-class CustomizedMetricSpecificationTypeDef(TypedDict):
-    MetricName: str,
-    Namespace: str,
-    Statistic: MetricStatisticType,  # (2)
-    Dimensions: NotRequired[List[MetricDimensionTypeDef]],  # (1)
-    Unit: NotRequired[str],
-```
-
-1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
-2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
 ## MetricTypeDef
 
 ```python title="Usage Example"
@@ -2510,6 +2577,28 @@ class DescribeNotificationConfigurationsAnswerTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTrafficSourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import DescribeTrafficSourcesResponseTypeDef
+
+def get_value() -> DescribeTrafficSourcesResponseTypeDef:
+    return {
+        "TrafficSources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrafficSourcesResponseTypeDef(TypedDict):
+    TrafficSources: List[TrafficSourceStateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TrafficSourceStateTypeDef](./type_defs.md#trafficsourcestatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceRefreshProgressDetailsTypeDef
 
@@ -2774,27 +2863,6 @@ class LaunchConfigurationTypeDef(TypedDict):
 1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 2. See [:material-code-braces: InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef) 
 3. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
-## TargetTrackingConfigurationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_autoscaling.type_defs import TargetTrackingConfigurationTypeDef
-
-def get_value() -> TargetTrackingConfigurationTypeDef:
-    return {
-        "TargetValue": ...,
-    }
-```
-
-```python title="Definition"
-class TargetTrackingConfigurationTypeDef(TypedDict):
-    TargetValue: float,
-    PredefinedMetricSpecification: NotRequired[PredefinedMetricSpecificationTypeDef],  # (1)
-    CustomizedMetricSpecification: NotRequired[CustomizedMetricSpecificationTypeDef],  # (2)
-    DisableScaleIn: NotRequired[bool],
-```
-
-1. See [:material-code-braces: PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef) 
-2. See [:material-code-braces: CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef) 
 ## MetricStatTypeDef
 
 ```python title="Usage Example"
@@ -2809,6 +2877,26 @@ def get_value() -> MetricStatTypeDef:
 
 ```python title="Definition"
 class MetricStatTypeDef(TypedDict):
+    Metric: MetricTypeDef,  # (1)
+    Stat: str,
+    Unit: NotRequired[str],
+```
+
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+## TargetTrackingMetricStatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import TargetTrackingMetricStatTypeDef
+
+def get_value() -> TargetTrackingMetricStatTypeDef:
+    return {
+        "Metric": ...,
+        "Stat": ...,
+    }
+```
+
+```python title="Definition"
+class TargetTrackingMetricStatTypeDef(TypedDict):
     Metric: MetricTypeDef,  # (1)
     Stat: str,
     Unit: NotRequired[str],
@@ -2904,6 +2992,27 @@ class MetricDataQueryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MetricStatTypeDef](./type_defs.md#metricstattypedef) 
+## TargetTrackingMetricDataQueryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import TargetTrackingMetricDataQueryTypeDef
+
+def get_value() -> TargetTrackingMetricDataQueryTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class TargetTrackingMetricDataQueryTypeDef(TypedDict):
+    Id: str,
+    Expression: NotRequired[str],
+    MetricStat: NotRequired[TargetTrackingMetricStatTypeDef],  # (1)
+    Label: NotRequired[str],
+    ReturnData: NotRequired[bool],
+```
+
+1. See [:material-code-braces: TargetTrackingMetricStatTypeDef](./type_defs.md#targettrackingmetricstattypedef) 
 ## LaunchTemplateTypeDef
 
 ```python title="Usage Example"
@@ -2974,6 +3083,30 @@ class PredictiveScalingCustomizedScalingMetricTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+## CustomizedMetricSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import CustomizedMetricSpecificationTypeDef
+
+def get_value() -> CustomizedMetricSpecificationTypeDef:
+    return {
+        "MetricName": ...,
+    }
+```
+
+```python title="Definition"
+class CustomizedMetricSpecificationTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Namespace: NotRequired[str],
+    Dimensions: NotRequired[List[MetricDimensionTypeDef]],  # (1)
+    Statistic: NotRequired[MetricStatisticType],  # (2)
+    Unit: NotRequired[str],
+    Metrics: NotRequired[List[TargetTrackingMetricDataQueryTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
+2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
+3. See [:material-code-braces: TargetTrackingMetricDataQueryTypeDef](./type_defs.md#targettrackingmetricdataquerytypedef) 
 ## MixedInstancesPolicyTypeDef
 
 ```python title="Usage Example"
@@ -3021,6 +3154,27 @@ class PredictiveScalingMetricSpecificationTypeDef(TypedDict):
 4. See [:material-code-braces: PredictiveScalingCustomizedScalingMetricTypeDef](./type_defs.md#predictivescalingcustomizedscalingmetrictypedef) 
 5. See [:material-code-braces: PredictiveScalingCustomizedLoadMetricTypeDef](./type_defs.md#predictivescalingcustomizedloadmetrictypedef) 
 6. See [:material-code-braces: PredictiveScalingCustomizedCapacityMetricTypeDef](./type_defs.md#predictivescalingcustomizedcapacitymetrictypedef) 
+## TargetTrackingConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import TargetTrackingConfigurationTypeDef
+
+def get_value() -> TargetTrackingConfigurationTypeDef:
+    return {
+        "TargetValue": ...,
+    }
+```
+
+```python title="Definition"
+class TargetTrackingConfigurationTypeDef(TypedDict):
+    TargetValue: float,
+    PredefinedMetricSpecification: NotRequired[PredefinedMetricSpecificationTypeDef],  # (1)
+    CustomizedMetricSpecification: NotRequired[CustomizedMetricSpecificationTypeDef],  # (2)
+    DisableScaleIn: NotRequired[bool],
+```
+
+1. See [:material-code-braces: PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef) 
+2. See [:material-code-braces: CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef) 
 ## AutoScalingGroupTypeDef
 
 ```python title="Usage Example"
@@ -3074,6 +3228,7 @@ class AutoScalingGroupTypeDef(TypedDict):
     Context: NotRequired[str],
     DesiredCapacityType: NotRequired[str],
     DefaultInstanceWarmup: NotRequired[int],
+    TrafficSources: NotRequired[List[TrafficSourceIdentifierTypeDef]],  # (8)
 ```
 
 1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
@@ -3083,6 +3238,7 @@ class AutoScalingGroupTypeDef(TypedDict):
 5. See [:material-code-braces: EnabledMetricTypeDef](./type_defs.md#enabledmetrictypedef) 
 6. See [:material-code-braces: TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef) 
 7. See [:material-code-braces: WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef) 
+8. See [:material-code-braces: TrafficSourceIdentifierTypeDef](./type_defs.md#trafficsourceidentifiertypedef) 
 ## CreateAutoScalingGroupTypeRequestTypeDef
 
 ```python title="Usage Example"
@@ -3124,12 +3280,14 @@ class CreateAutoScalingGroupTypeRequestTypeDef(TypedDict):
     Context: NotRequired[str],
     DesiredCapacityType: NotRequired[str],
     DefaultInstanceWarmup: NotRequired[int],
+    TrafficSources: NotRequired[Sequence[TrafficSourceIdentifierTypeDef]],  # (5)
 ```
 
 1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
 2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
 3. See [:material-code-braces: LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: TrafficSourceIdentifierTypeDef](./type_defs.md#trafficsourceidentifiertypedef) 
 ## DesiredConfigurationTypeDef
 
 ```python title="Usage Example"

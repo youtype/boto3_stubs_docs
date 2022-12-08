@@ -25,6 +25,23 @@ class AntipatternSeveritySummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: SeverityType](./literals.md#severitytype) 
+## AppUnitErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import AppUnitErrorTypeDef
+
+def get_value() -> AppUnitErrorTypeDef:
+    return {
+        "appUnitErrorCategory": ...,
+    }
+```
+
+```python title="Definition"
+class AppUnitErrorTypeDef(TypedDict):
+    appUnitErrorCategory: NotRequired[AppUnitErrorCategoryType],  # (1)
+```
+
+1. See [:material-code-brackets: AppUnitErrorCategoryType](./literals.md#appuniterrorcategorytype) 
 ## DatabaseConfigDetailTypeDef
 
 ```python title="Usage Example"
@@ -72,10 +89,29 @@ def get_value() -> SourceCodeRepositoryTypeDef:
 ```python title="Definition"
 class SourceCodeRepositoryTypeDef(TypedDict):
     branch: NotRequired[str],
+    projectName: NotRequired[str],
     repository: NotRequired[str],
     versionControlType: NotRequired[str],
 ```
 
+## ApplicationComponentStatusSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import ApplicationComponentStatusSummaryTypeDef
+
+def get_value() -> ApplicationComponentStatusSummaryTypeDef:
+    return {
+        "count": ...,
+    }
+```
+
+```python title="Definition"
+class ApplicationComponentStatusSummaryTypeDef(TypedDict):
+    count: NotRequired[int],
+    srcCodeOrDbAnalysisStatus: NotRequired[SrcCodeOrDbAnalysisStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: SrcCodeOrDbAnalysisStatusType](./literals.md#srccodeordbanalysisstatustype) 
 ## ApplicationComponentSummaryTypeDef
 
 ```python title="Usage Example"
@@ -94,6 +130,24 @@ class ApplicationComponentSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
+## ServerStatusSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import ServerStatusSummaryTypeDef
+
+def get_value() -> ServerStatusSummaryTypeDef:
+    return {
+        "count": ...,
+    }
+```
+
+```python title="Definition"
+class ServerStatusSummaryTypeDef(TypedDict):
+    count: NotRequired[int],
+    runTimeAssessmentStatus: NotRequired[RunTimeAssessmentStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: RunTimeAssessmentStatusType](./literals.md#runtimeassessmentstatustype) 
 ## ServerSummaryTypeDef
 
 ```python title="Usage Example"
@@ -130,6 +184,27 @@ class StrategySummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StrategyType](./literals.md#strategytype) 
+## AssessmentTargetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import AssessmentTargetTypeDef
+
+def get_value() -> AssessmentTargetTypeDef:
+    return {
+        "condition": ...,
+        "name": ...,
+        "values": ...,
+    }
+```
+
+```python title="Definition"
+class AssessmentTargetTypeDef(TypedDict):
+    condition: ConditionType,  # (1)
+    name: str,
+    values: List[str],
+```
+
+1. See [:material-code-brackets: ConditionType](./literals.md#conditiontype) 
 ## AssociatedApplicationTypeDef
 
 ```python title="Usage Example"
@@ -183,29 +258,96 @@ class BusinessGoalsTypeDef(TypedDict):
     speedOfMigration: NotRequired[int],
 ```
 
-## CollectorTypeDef
+## IPAddressBasedRemoteInfoTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_migrationhubstrategy.type_defs import CollectorTypeDef
+from mypy_boto3_migrationhubstrategy.type_defs import IPAddressBasedRemoteInfoTypeDef
 
-def get_value() -> CollectorTypeDef:
+def get_value() -> IPAddressBasedRemoteInfoTypeDef:
     return {
-        "collectorHealth": ...,
+        "authType": ...,
     }
 ```
 
 ```python title="Definition"
-class CollectorTypeDef(TypedDict):
-    collectorHealth: NotRequired[CollectorHealthType],  # (1)
-    collectorId: NotRequired[str],
-    collectorVersion: NotRequired[str],
-    hostName: NotRequired[str],
-    ipAddress: NotRequired[str],
-    lastActivityTimeStamp: NotRequired[str],
-    registeredTimeStamp: NotRequired[str],
+class IPAddressBasedRemoteInfoTypeDef(TypedDict):
+    authType: NotRequired[AuthTypeType],  # (1)
+    ipAddressConfigurationTimeStamp: NotRequired[str],
+    osType: NotRequired[OSTypeType],  # (2)
 ```
 
-1. See [:material-code-brackets: CollectorHealthType](./literals.md#collectorhealthtype) 
+1. See [:material-code-brackets: AuthTypeType](./literals.md#authtypetype) 
+2. See [:material-code-brackets: OSTypeType](./literals.md#ostypetype) 
+## PipelineInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import PipelineInfoTypeDef
+
+def get_value() -> PipelineInfoTypeDef:
+    return {
+        "pipelineConfigurationTimeStamp": ...,
+    }
+```
+
+```python title="Definition"
+class PipelineInfoTypeDef(TypedDict):
+    pipelineConfigurationTimeStamp: NotRequired[str],
+    pipelineType: NotRequired[PipelineTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: PipelineTypeType](./literals.md#pipelinetypetype) 
+## RemoteSourceCodeAnalysisServerInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import RemoteSourceCodeAnalysisServerInfoTypeDef
+
+def get_value() -> RemoteSourceCodeAnalysisServerInfoTypeDef:
+    return {
+        "remoteSourceCodeAnalysisServerConfigurationTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class RemoteSourceCodeAnalysisServerInfoTypeDef(TypedDict):
+    remoteSourceCodeAnalysisServerConfigurationTimestamp: NotRequired[str],
+```
+
+## VcenterBasedRemoteInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import VcenterBasedRemoteInfoTypeDef
+
+def get_value() -> VcenterBasedRemoteInfoTypeDef:
+    return {
+        "osType": ...,
+    }
+```
+
+```python title="Definition"
+class VcenterBasedRemoteInfoTypeDef(TypedDict):
+    osType: NotRequired[OSTypeType],  # (1)
+    vcenterConfigurationTimeStamp: NotRequired[str],
+```
+
+1. See [:material-code-brackets: OSTypeType](./literals.md#ostypetype) 
+## VersionControlInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import VersionControlInfoTypeDef
+
+def get_value() -> VersionControlInfoTypeDef:
+    return {
+        "versionControlConfigurationTimeStamp": ...,
+    }
+```
+
+```python title="Definition"
+class VersionControlInfoTypeDef(TypedDict):
+    versionControlConfigurationTimeStamp: NotRequired[str],
+    versionControlType: NotRequired[VersionControlTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: VersionControlTypeType](./literals.md#versioncontroltypetype) 
 ## DataCollectionDetailsTypeDef
 
 ```python title="Usage Example"
@@ -225,6 +367,7 @@ class DataCollectionDetailsTypeDef(TypedDict):
     servers: NotRequired[int],
     startTime: NotRequired[datetime],
     status: NotRequired[AssessmentStatusType],  # (1)
+    statusMessage: NotRequired[str],
     success: NotRequired[int],
 ```
 
@@ -630,6 +773,23 @@ class TransformationToolTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TransformationToolNameType](./literals.md#transformationtoolnametype) 
+## ServerErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import ServerErrorTypeDef
+
+def get_value() -> ServerErrorTypeDef:
+    return {
+        "serverErrorCategory": ...,
+    }
+```
+
+```python title="Definition"
+class ServerErrorTypeDef(TypedDict):
+    serverErrorCategory: NotRequired[ServerErrorCategoryType],  # (1)
+```
+
+1. See [:material-code-brackets: ServerErrorCategoryType](./literals.md#servererrorcategorytype) 
 ## SourceCodeTypeDef
 
 ```python title="Usage Example"
@@ -644,28 +804,12 @@ def get_value() -> SourceCodeTypeDef:
 ```python title="Definition"
 class SourceCodeTypeDef(TypedDict):
     location: NotRequired[str],
+    projectName: NotRequired[str],
     sourceVersion: NotRequired[str],
     versionControl: NotRequired[VersionControlType],  # (1)
 ```
 
 1. See [:material-code-brackets: VersionControlType](./literals.md#versioncontroltype) 
-## StartAssessmentRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_migrationhubstrategy.type_defs import StartAssessmentRequestRequestTypeDef
-
-def get_value() -> StartAssessmentRequestRequestTypeDef:
-    return {
-        "s3bucketForAnalysisData": ...,
-    }
-```
-
-```python title="Definition"
-class StartAssessmentRequestRequestTypeDef(TypedDict):
-    s3bucketForAnalysisData: NotRequired[str],
-    s3bucketForReportData: NotRequired[str],
-```
-
 ## StopAssessmentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -722,19 +866,42 @@ class AssessmentSummaryTypeDef(TypedDict):
     antipatternReportStatusMessage: NotRequired[str],
     lastAnalyzedTimestamp: NotRequired[datetime],
     listAntipatternSeveritySummary: NotRequired[List[AntipatternSeveritySummaryTypeDef]],  # (3)
-    listApplicationComponentStrategySummary: NotRequired[List[StrategySummaryTypeDef]],  # (4)
-    listApplicationComponentSummary: NotRequired[List[ApplicationComponentSummaryTypeDef]],  # (5)
-    listServerStrategySummary: NotRequired[List[StrategySummaryTypeDef]],  # (4)
-    listServerSummary: NotRequired[List[ServerSummaryTypeDef]],  # (7)
+    listApplicationComponentStatusSummary: NotRequired[List[ApplicationComponentStatusSummaryTypeDef]],  # (4)
+    listApplicationComponentStrategySummary: NotRequired[List[StrategySummaryTypeDef]],  # (5)
+    listApplicationComponentSummary: NotRequired[List[ApplicationComponentSummaryTypeDef]],  # (6)
+    listServerStatusSummary: NotRequired[List[ServerStatusSummaryTypeDef]],  # (7)
+    listServerStrategySummary: NotRequired[List[StrategySummaryTypeDef]],  # (5)
+    listServerSummary: NotRequired[List[ServerSummaryTypeDef]],  # (9)
 ```
 
 1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 2. See [:material-code-brackets: AntipatternReportStatusType](./literals.md#antipatternreportstatustype) 
 3. See [:material-code-braces: AntipatternSeveritySummaryTypeDef](./type_defs.md#antipatternseveritysummarytypedef) 
-4. See [:material-code-braces: StrategySummaryTypeDef](./type_defs.md#strategysummarytypedef) 
-5. See [:material-code-braces: ApplicationComponentSummaryTypeDef](./type_defs.md#applicationcomponentsummarytypedef) 
-6. See [:material-code-braces: StrategySummaryTypeDef](./type_defs.md#strategysummarytypedef) 
-7. See [:material-code-braces: ServerSummaryTypeDef](./type_defs.md#serversummarytypedef) 
+4. See [:material-code-braces: ApplicationComponentStatusSummaryTypeDef](./type_defs.md#applicationcomponentstatussummarytypedef) 
+5. See [:material-code-braces: StrategySummaryTypeDef](./type_defs.md#strategysummarytypedef) 
+6. See [:material-code-braces: ApplicationComponentSummaryTypeDef](./type_defs.md#applicationcomponentsummarytypedef) 
+7. See [:material-code-braces: ServerStatusSummaryTypeDef](./type_defs.md#serverstatussummarytypedef) 
+8. See [:material-code-braces: StrategySummaryTypeDef](./type_defs.md#strategysummarytypedef) 
+9. See [:material-code-braces: ServerSummaryTypeDef](./type_defs.md#serversummarytypedef) 
+## StartAssessmentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import StartAssessmentRequestRequestTypeDef
+
+def get_value() -> StartAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentTargets": ...,
+    }
+```
+
+```python title="Definition"
+class StartAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentTargets: NotRequired[Sequence[AssessmentTargetTypeDef]],  # (1)
+    s3bucketForAnalysisData: NotRequired[str],
+    s3bucketForReportData: NotRequired[str],
+```
+
+1. See [:material-code-braces: AssessmentTargetTypeDef](./type_defs.md#assessmenttargettypedef) 
 ## PrioritizeBusinessGoalsTypeDef
 
 ```python title="Usage Example"
@@ -752,6 +919,31 @@ class PrioritizeBusinessGoalsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: BusinessGoalsTypeDef](./type_defs.md#businessgoalstypedef) 
+## ConfigurationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import ConfigurationSummaryTypeDef
+
+def get_value() -> ConfigurationSummaryTypeDef:
+    return {
+        "ipAddressBasedRemoteInfoList": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigurationSummaryTypeDef(TypedDict):
+    ipAddressBasedRemoteInfoList: NotRequired[List[IPAddressBasedRemoteInfoTypeDef]],  # (1)
+    pipelineInfoList: NotRequired[List[PipelineInfoTypeDef]],  # (2)
+    remoteSourceCodeAnalysisServerInfo: NotRequired[RemoteSourceCodeAnalysisServerInfoTypeDef],  # (3)
+    vcenterBasedRemoteInfoList: NotRequired[List[VcenterBasedRemoteInfoTypeDef]],  # (4)
+    versionControlInfoList: NotRequired[List[VersionControlInfoTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: IPAddressBasedRemoteInfoTypeDef](./type_defs.md#ipaddressbasedremoteinfotypedef) 
+2. See [:material-code-braces: PipelineInfoTypeDef](./type_defs.md#pipelineinfotypedef) 
+3. See [:material-code-braces: RemoteSourceCodeAnalysisServerInfoTypeDef](./type_defs.md#remotesourcecodeanalysisserverinfotypedef) 
+4. See [:material-code-braces: VcenterBasedRemoteInfoTypeDef](./type_defs.md#vcenterbasedremoteinfotypedef) 
+5. See [:material-code-braces: VersionControlInfoTypeDef](./type_defs.md#versioncontrolinfotypedef) 
 ## DatabaseMigrationPreferenceTypeDef
 
 ```python title="Usage Example"
@@ -780,6 +972,7 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetAssessmentResponseTypeD
 
 def get_value() -> GetAssessmentResponseTypeDef:
     return {
+        "assessmentTargets": ...,
         "dataCollectionDetails": ...,
         "id": ...,
         "ResponseMetadata": ...,
@@ -788,13 +981,15 @@ def get_value() -> GetAssessmentResponseTypeDef:
 
 ```python title="Definition"
 class GetAssessmentResponseTypeDef(TypedDict):
-    dataCollectionDetails: DataCollectionDetailsTypeDef,  # (1)
+    assessmentTargets: List[AssessmentTargetTypeDef],  # (1)
+    dataCollectionDetails: DataCollectionDetailsTypeDef,  # (2)
     id: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
-1. See [:material-code-braces: DataCollectionDetailsTypeDef](./type_defs.md#datacollectiondetailstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: AssessmentTargetTypeDef](./type_defs.md#assessmenttargettypedef) 
+2. See [:material-code-braces: DataCollectionDetailsTypeDef](./type_defs.md#datacollectiondetailstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetImportFileTaskResponseTypeDef
 
 ```python title="Usage Example"
@@ -835,28 +1030,25 @@ class GetImportFileTaskResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ImportFileTaskStatusType](./literals.md#importfiletaskstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListCollectorsResponseTypeDef
+## GetLatestAssessmentIdResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_migrationhubstrategy.type_defs import ListCollectorsResponseTypeDef
+from mypy_boto3_migrationhubstrategy.type_defs import GetLatestAssessmentIdResponseTypeDef
 
-def get_value() -> ListCollectorsResponseTypeDef:
+def get_value() -> GetLatestAssessmentIdResponseTypeDef:
     return {
-        "Collectors": ...,
-        "nextToken": ...,
+        "id": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class ListCollectorsResponseTypeDef(TypedDict):
-    Collectors: List[CollectorTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class GetLatestAssessmentIdResponseTypeDef(TypedDict):
+    id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-braces: CollectorTypeDef](./type_defs.md#collectortypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartAssessmentResponseTypeDef
 
 ```python title="Usage Example"
@@ -1227,15 +1419,18 @@ def get_value() -> UpdateApplicationComponentConfigRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateApplicationComponentConfigRequestRequestTypeDef(TypedDict):
     applicationComponentId: str,
-    inclusionStatus: NotRequired[InclusionStatusType],  # (1)
+    appType: NotRequired[AppTypeType],  # (1)
+    configureOnly: NotRequired[bool],
+    inclusionStatus: NotRequired[InclusionStatusType],  # (2)
     secretsManagerKey: NotRequired[str],
-    sourceCodeList: NotRequired[Sequence[SourceCodeTypeDef]],  # (2)
-    strategyOption: NotRequired[StrategyOptionTypeDef],  # (3)
+    sourceCodeList: NotRequired[Sequence[SourceCodeTypeDef]],  # (3)
+    strategyOption: NotRequired[StrategyOptionTypeDef],  # (4)
 ```
 
-1. See [:material-code-brackets: InclusionStatusType](./literals.md#inclusionstatustype) 
-2. See [:material-code-braces: SourceCodeTypeDef](./type_defs.md#sourcecodetypedef) 
-3. See [:material-code-braces: StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef) 
+1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
+2. See [:material-code-brackets: InclusionStatusType](./literals.md#inclusionstatustype) 
+3. See [:material-code-braces: SourceCodeTypeDef](./type_defs.md#sourcecodetypedef) 
+4. See [:material-code-braces: StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef) 
 ## UpdateServerConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1274,6 +1469,31 @@ class GetPortfolioSummaryResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssessmentSummaryTypeDef](./type_defs.md#assessmentsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CollectorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import CollectorTypeDef
+
+def get_value() -> CollectorTypeDef:
+    return {
+        "collectorHealth": ...,
+    }
+```
+
+```python title="Definition"
+class CollectorTypeDef(TypedDict):
+    collectorHealth: NotRequired[CollectorHealthType],  # (1)
+    collectorId: NotRequired[str],
+    collectorVersion: NotRequired[str],
+    configurationSummary: NotRequired[ConfigurationSummaryTypeDef],  # (2)
+    hostName: NotRequired[str],
+    ipAddress: NotRequired[str],
+    lastActivityTimeStamp: NotRequired[str],
+    registeredTimeStamp: NotRequired[str],
+```
+
+1. See [:material-code-brackets: CollectorHealthType](./literals.md#collectorhealthtype) 
+2. See [:material-code-braces: ConfigurationSummaryTypeDef](./type_defs.md#configurationsummarytypedef) 
 ## DatabasePreferencesTypeDef
 
 ```python title="Usage Example"
@@ -1328,19 +1548,22 @@ class ApplicationComponentDetailTypeDef(TypedDict):
     antipatternReportStatus: NotRequired[AntipatternReportStatusType],  # (3)
     antipatternReportStatusMessage: NotRequired[str],
     appType: NotRequired[AppTypeType],  # (4)
+    appUnitError: NotRequired[AppUnitErrorTypeDef],  # (5)
     associatedServerId: NotRequired[str],
-    databaseConfigDetail: NotRequired[DatabaseConfigDetailTypeDef],  # (5)
+    databaseConfigDetail: NotRequired[DatabaseConfigDetailTypeDef],  # (6)
     id: NotRequired[str],
-    inclusionStatus: NotRequired[InclusionStatusType],  # (6)
+    inclusionStatus: NotRequired[InclusionStatusType],  # (7)
     lastAnalyzedTimestamp: NotRequired[datetime],
-    listAntipatternSeveritySummary: NotRequired[List[AntipatternSeveritySummaryTypeDef]],  # (7)
+    listAntipatternSeveritySummary: NotRequired[List[AntipatternSeveritySummaryTypeDef]],  # (8)
     moreServerAssociationExists: NotRequired[bool],
     name: NotRequired[str],
     osDriver: NotRequired[str],
     osVersion: NotRequired[str],
-    recommendationSet: NotRequired[RecommendationSetTypeDef],  # (8)
-    resourceSubType: NotRequired[ResourceSubTypeType],  # (9)
-    sourceCodeRepositories: NotRequired[List[SourceCodeRepositoryTypeDef]],  # (10)
+    recommendationSet: NotRequired[RecommendationSetTypeDef],  # (9)
+    resourceSubType: NotRequired[ResourceSubTypeType],  # (10)
+    runtimeStatus: NotRequired[RuntimeAnalysisStatusType],  # (11)
+    runtimeStatusMessage: NotRequired[str],
+    sourceCodeRepositories: NotRequired[List[SourceCodeRepositoryTypeDef]],  # (12)
     statusMessage: NotRequired[str],
 ```
 
@@ -1348,12 +1571,14 @@ class ApplicationComponentDetailTypeDef(TypedDict):
 2. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 3. See [:material-code-brackets: AntipatternReportStatusType](./literals.md#antipatternreportstatustype) 
 4. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
-5. See [:material-code-braces: DatabaseConfigDetailTypeDef](./type_defs.md#databaseconfigdetailtypedef) 
-6. See [:material-code-brackets: InclusionStatusType](./literals.md#inclusionstatustype) 
-7. See [:material-code-braces: AntipatternSeveritySummaryTypeDef](./type_defs.md#antipatternseveritysummarytypedef) 
-8. See [:material-code-braces: RecommendationSetTypeDef](./type_defs.md#recommendationsettypedef) 
-9. See [:material-code-brackets: ResourceSubTypeType](./literals.md#resourcesubtypetype) 
-10. See [:material-code-braces: SourceCodeRepositoryTypeDef](./type_defs.md#sourcecoderepositorytypedef) 
+5. See [:material-code-braces: AppUnitErrorTypeDef](./type_defs.md#appuniterrortypedef) 
+6. See [:material-code-braces: DatabaseConfigDetailTypeDef](./type_defs.md#databaseconfigdetailtypedef) 
+7. See [:material-code-brackets: InclusionStatusType](./literals.md#inclusionstatustype) 
+8. See [:material-code-braces: AntipatternSeveritySummaryTypeDef](./type_defs.md#antipatternseveritysummarytypedef) 
+9. See [:material-code-braces: RecommendationSetTypeDef](./type_defs.md#recommendationsettypedef) 
+10. See [:material-code-brackets: ResourceSubTypeType](./literals.md#resourcesubtypetype) 
+11. See [:material-code-brackets: RuntimeAnalysisStatusType](./literals.md#runtimeanalysisstatustype) 
+12. See [:material-code-braces: SourceCodeRepositoryTypeDef](./type_defs.md#sourcecoderepositorytypedef) 
 ## ApplicationComponentStrategyTypeDef
 
 ```python title="Usage Example"
@@ -1397,9 +1622,10 @@ class ServerDetailTypeDef(TypedDict):
     listAntipatternSeveritySummary: NotRequired[List[AntipatternSeveritySummaryTypeDef]],  # (5)
     name: NotRequired[str],
     recommendationSet: NotRequired[RecommendationSetTypeDef],  # (6)
+    serverError: NotRequired[ServerErrorTypeDef],  # (7)
     serverType: NotRequired[str],
     statusMessage: NotRequired[str],
-    systemInfo: NotRequired[SystemInfoTypeDef],  # (7)
+    systemInfo: NotRequired[SystemInfoTypeDef],  # (8)
 ```
 
 1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
@@ -1408,7 +1634,8 @@ class ServerDetailTypeDef(TypedDict):
 4. See [:material-code-brackets: RunTimeAssessmentStatusType](./literals.md#runtimeassessmentstatustype) 
 5. See [:material-code-braces: AntipatternSeveritySummaryTypeDef](./type_defs.md#antipatternseveritysummarytypedef) 
 6. See [:material-code-braces: RecommendationSetTypeDef](./type_defs.md#recommendationsettypedef) 
-7. See [:material-code-braces: SystemInfoTypeDef](./type_defs.md#systeminfotypedef) 
+7. See [:material-code-braces: ServerErrorTypeDef](./type_defs.md#servererrortypedef) 
+8. See [:material-code-braces: SystemInfoTypeDef](./type_defs.md#systeminfotypedef) 
 ## ServerStrategyTypeDef
 
 ```python title="Usage Example"
@@ -1430,6 +1657,28 @@ class ServerStrategyTypeDef(TypedDict):
 
 1. See [:material-code-braces: RecommendationSetTypeDef](./type_defs.md#recommendationsettypedef) 
 2. See [:material-code-brackets: StrategyRecommendationType](./literals.md#strategyrecommendationtype) 
+## ListCollectorsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.type_defs import ListCollectorsResponseTypeDef
+
+def get_value() -> ListCollectorsResponseTypeDef:
+    return {
+        "Collectors": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListCollectorsResponseTypeDef(TypedDict):
+    Collectors: List[CollectorTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CollectorTypeDef](./type_defs.md#collectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPortfolioPreferencesResponseTypeDef
 
 ```python title="Usage Example"
@@ -1437,6 +1686,7 @@ from mypy_boto3_migrationhubstrategy.type_defs import GetPortfolioPreferencesRes
 
 def get_value() -> GetPortfolioPreferencesResponseTypeDef:
     return {
+        "applicationMode": ...,
         "applicationPreferences": ...,
         "databasePreferences": ...,
         "prioritizeBusinessGoals": ...,
@@ -1446,16 +1696,18 @@ def get_value() -> GetPortfolioPreferencesResponseTypeDef:
 
 ```python title="Definition"
 class GetPortfolioPreferencesResponseTypeDef(TypedDict):
-    applicationPreferences: ApplicationPreferencesTypeDef,  # (1)
-    databasePreferences: DatabasePreferencesTypeDef,  # (2)
-    prioritizeBusinessGoals: PrioritizeBusinessGoalsTypeDef,  # (3)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    applicationMode: ApplicationModeType,  # (1)
+    applicationPreferences: ApplicationPreferencesTypeDef,  # (2)
+    databasePreferences: DatabasePreferencesTypeDef,  # (3)
+    prioritizeBusinessGoals: PrioritizeBusinessGoalsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
-1. See [:material-code-braces: ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef) 
-2. See [:material-code-braces: DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef) 
-3. See [:material-code-braces: PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ApplicationModeType](./literals.md#applicationmodetype) 
+2. See [:material-code-braces: ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef) 
+3. See [:material-code-braces: DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef) 
+4. See [:material-code-braces: PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutPortfolioPreferencesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1463,20 +1715,22 @@ from mypy_boto3_migrationhubstrategy.type_defs import PutPortfolioPreferencesReq
 
 def get_value() -> PutPortfolioPreferencesRequestRequestTypeDef:
     return {
-        "applicationPreferences": ...,
+        "applicationMode": ...,
     }
 ```
 
 ```python title="Definition"
 class PutPortfolioPreferencesRequestRequestTypeDef(TypedDict):
-    applicationPreferences: NotRequired[ApplicationPreferencesTypeDef],  # (1)
-    databasePreferences: NotRequired[DatabasePreferencesTypeDef],  # (2)
-    prioritizeBusinessGoals: NotRequired[PrioritizeBusinessGoalsTypeDef],  # (3)
+    applicationMode: NotRequired[ApplicationModeType],  # (1)
+    applicationPreferences: NotRequired[ApplicationPreferencesTypeDef],  # (2)
+    databasePreferences: NotRequired[DatabasePreferencesTypeDef],  # (3)
+    prioritizeBusinessGoals: NotRequired[PrioritizeBusinessGoalsTypeDef],  # (4)
 ```
 
-1. See [:material-code-braces: ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef) 
-2. See [:material-code-braces: DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef) 
-3. See [:material-code-braces: PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef) 
+1. See [:material-code-brackets: ApplicationModeType](./literals.md#applicationmodetype) 
+2. See [:material-code-braces: ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef) 
+3. See [:material-code-braces: DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef) 
+4. See [:material-code-braces: PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef) 
 ## GetApplicationComponentDetailsResponseTypeDef
 
 ```python title="Usage Example"

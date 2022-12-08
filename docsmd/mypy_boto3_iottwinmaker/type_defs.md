@@ -128,6 +128,7 @@ class PropertyDefinitionRequestTypeDef(TypedDict):
     isTimeSeries: NotRequired[bool],
     defaultValue: NotRequired[DataValueTypeDef],  # (2)
     configuration: NotRequired[Mapping[str, str]],
+    displayName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DataTypeTypeDef](./type_defs.md#datatypetypedef) 
@@ -170,6 +171,27 @@ class CreateSceneRequestRequestTypeDef(TypedDict):
     contentLocation: str,
     description: NotRequired[str],
     capabilities: NotRequired[Sequence[str]],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+## CreateSyncJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import CreateSyncJobRequestRequestTypeDef
+
+def get_value() -> CreateSyncJobRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+        "syncSource": ...,
+        "syncRole": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSyncJobRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    syncSource: str,
+    syncRole: str,
     tags: NotRequired[Mapping[str, str]],
 ```
 
@@ -298,6 +320,24 @@ def get_value() -> DeleteSceneRequestRequestTypeDef:
 class DeleteSceneRequestRequestTypeDef(TypedDict):
     workspaceId: str,
     sceneId: str,
+```
+
+## DeleteSyncJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import DeleteSyncJobRequestRequestTypeDef
+
+def get_value() -> DeleteSyncJobRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+        "syncSource": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteSyncJobRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    syncSource: str,
 ```
 
 ## DeleteWorkspaceRequestRequestTypeDef
@@ -437,6 +477,7 @@ class PropertyDefinitionResponseTypeDef(TypedDict):
     isInherited: bool,
     defaultValue: NotRequired[DataValueTypeDef],  # (2)
     configuration: NotRequired[Dict[str, str]],
+    displayName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DataTypeTypeDef](./type_defs.md#datatypetypedef) 
@@ -535,6 +576,23 @@ class GetSceneRequestRequestTypeDef(TypedDict):
     sceneId: str,
 ```
 
+## GetSyncJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import GetSyncJobRequestRequestTypeDef
+
+def get_value() -> GetSyncJobRequestRequestTypeDef:
+    return {
+        "syncSource": ...,
+    }
+```
+
+```python title="Definition"
+class GetSyncJobRequestRequestTypeDef(TypedDict):
+    syncSource: str,
+    workspaceId: NotRequired[str],
+```
+
 ## GetWorkspaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -630,6 +688,45 @@ class SceneSummaryTypeDef(TypedDict):
     description: NotRequired[str],
 ```
 
+## ListSyncJobsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import ListSyncJobsRequestRequestTypeDef
+
+def get_value() -> ListSyncJobsRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSyncJobsRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## SyncResourceFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import SyncResourceFilterTypeDef
+
+def get_value() -> SyncResourceFilterTypeDef:
+    return {
+        "state": ...,
+    }
+```
+
+```python title="Definition"
+class SyncResourceFilterTypeDef(TypedDict):
+    state: NotRequired[SyncResourceStateType],  # (1)
+    resourceType: NotRequired[SyncResourceTypeType],  # (2)
+    resourceId: NotRequired[str],
+    externalId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: SyncResourceStateType](./literals.md#syncresourcestatetype) 
+2. See [:material-code-brackets: SyncResourceTypeType](./literals.md#syncresourcetypetype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -907,6 +1004,30 @@ class CreateSceneResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateSyncJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import CreateSyncJobResponseTypeDef
+
+def get_value() -> CreateSyncJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "state": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateSyncJobResponseTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    state: SyncJobStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: SyncJobStateType](./literals.md#syncjobstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkspaceResponseTypeDef
 
 ```python title="Usage Example"
@@ -967,6 +1088,26 @@ class DeleteEntityResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: StateType](./literals.md#statetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteSyncJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import DeleteSyncJobResponseTypeDef
+
+def get_value() -> DeleteSyncJobResponseTypeDef:
+    return {
+        "state": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteSyncJobResponseTypeDef(TypedDict):
+    state: SyncJobStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: SyncJobStateType](./literals.md#syncjobstatetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSceneResponseTypeDef
 
@@ -1294,6 +1435,44 @@ class StatusTypeDef(TypedDict):
 
 1. See [:material-code-brackets: StateType](./literals.md#statetype) 
 2. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
+## SyncJobStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import SyncJobStatusTypeDef
+
+def get_value() -> SyncJobStatusTypeDef:
+    return {
+        "state": ...,
+    }
+```
+
+```python title="Definition"
+class SyncJobStatusTypeDef(TypedDict):
+    state: NotRequired[SyncJobStateType],  # (1)
+    error: NotRequired[ErrorDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SyncJobStateType](./literals.md#syncjobstatetype) 
+2. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
+## SyncResourceStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import SyncResourceStatusTypeDef
+
+def get_value() -> SyncResourceStatusTypeDef:
+    return {
+        "state": ...,
+    }
+```
+
+```python title="Definition"
+class SyncResourceStatusTypeDef(TypedDict):
+    state: NotRequired[SyncResourceStateType],  # (1)
+    error: NotRequired[ErrorDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SyncResourceStateType](./literals.md#syncresourcestatetype) 
+2. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
 ## ExecuteQueryResponseTypeDef
 
 ```python title="Usage Example"
@@ -1433,6 +1612,28 @@ class ListScenesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: SceneSummaryTypeDef](./type_defs.md#scenesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSyncResourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import ListSyncResourcesRequestRequestTypeDef
+
+def get_value() -> ListSyncResourcesRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+        "syncSource": ...,
+    }
+```
+
+```python title="Definition"
+class ListSyncResourcesRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    syncSource: str,
+    filters: NotRequired[Sequence[SyncResourceFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: SyncResourceFilterTypeDef](./type_defs.md#syncresourcefiltertypedef) 
 ## ListWorkspacesResponseTypeDef
 
 ```python title="Usage Example"
@@ -1690,6 +1891,7 @@ class ComponentTypeSummaryTypeDef(TypedDict):
     updateDateTime: datetime,
     description: NotRequired[str],
     status: NotRequired[StatusTypeDef],  # (1)
+    componentTypeName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
@@ -1723,6 +1925,82 @@ class EntitySummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
+## GetSyncJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import GetSyncJobResponseTypeDef
+
+def get_value() -> GetSyncJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "workspaceId": ...,
+        "syncSource": ...,
+        "syncRole": ...,
+        "status": ...,
+        "creationDateTime": ...,
+        "updateDateTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetSyncJobResponseTypeDef(TypedDict):
+    arn: str,
+    workspaceId: str,
+    syncSource: str,
+    syncRole: str,
+    status: SyncJobStatusTypeDef,  # (1)
+    creationDateTime: datetime,
+    updateDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SyncJobStatusTypeDef](./type_defs.md#syncjobstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## SyncJobSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import SyncJobSummaryTypeDef
+
+def get_value() -> SyncJobSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class SyncJobSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    workspaceId: NotRequired[str],
+    syncSource: NotRequired[str],
+    status: NotRequired[SyncJobStatusTypeDef],  # (1)
+    creationDateTime: NotRequired[datetime],
+    updateDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: SyncJobStatusTypeDef](./type_defs.md#syncjobstatustypedef) 
+## SyncResourceSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import SyncResourceSummaryTypeDef
+
+def get_value() -> SyncResourceSummaryTypeDef:
+    return {
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class SyncResourceSummaryTypeDef(TypedDict):
+    resourceType: NotRequired[SyncResourceTypeType],  # (1)
+    externalId: NotRequired[str],
+    resourceId: NotRequired[str],
+    status: NotRequired[SyncResourceStatusTypeDef],  # (2)
+    updateDateTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: SyncResourceTypeType](./literals.md#syncresourcetypetype) 
+2. See [:material-code-braces: SyncResourceStatusTypeDef](./type_defs.md#syncresourcestatustypedef) 
 ## ComponentResponseTypeDef
 
 ```python title="Usage Example"
@@ -1743,6 +2021,7 @@ class ComponentResponseTypeDef(TypedDict):
     definedIn: NotRequired[str],
     properties: NotRequired[Dict[str, PropertyResponseTypeDef]],  # (2)
     propertyGroups: NotRequired[Dict[str, ComponentPropertyGroupResponseTypeDef]],  # (3)
+    syncSource: NotRequired[str],
 ```
 
 1. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
@@ -1907,6 +2186,7 @@ class CreateComponentTypeRequestRequestTypeDef(TypedDict):
     functions: NotRequired[Mapping[str, FunctionRequestTypeDef]],  # (2)
     tags: NotRequired[Mapping[str, str]],
     propertyGroups: NotRequired[Mapping[str, PropertyGroupRequestTypeDef]],  # (3)
+    componentTypeName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
@@ -1934,6 +2214,7 @@ class UpdateComponentTypeRequestRequestTypeDef(TypedDict):
     extendsFrom: NotRequired[Sequence[str]],
     functions: NotRequired[Mapping[str, FunctionRequestTypeDef]],  # (2)
     propertyGroups: NotRequired[Mapping[str, PropertyGroupRequestTypeDef]],  # (3)
+    componentTypeName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
@@ -1960,6 +2241,8 @@ def get_value() -> GetComponentTypeResponseTypeDef:
         "isSchemaInitialized": ...,
         "status": ...,
         "propertyGroups": ...,
+        "syncSource": ...,
+        "componentTypeName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1980,6 +2263,8 @@ class GetComponentTypeResponseTypeDef(TypedDict):
     isSchemaInitialized: bool,
     status: StatusTypeDef,  # (3)
     propertyGroups: Dict[str, PropertyGroupResponseTypeDef],  # (4)
+    syncSource: str,
+    componentTypeName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
@@ -2036,6 +2321,50 @@ class ListEntitiesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSyncJobsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import ListSyncJobsResponseTypeDef
+
+def get_value() -> ListSyncJobsResponseTypeDef:
+    return {
+        "syncJobSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSyncJobsResponseTypeDef(TypedDict):
+    syncJobSummaries: List[SyncJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SyncJobSummaryTypeDef](./type_defs.md#syncjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSyncResourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iottwinmaker.type_defs import ListSyncResourcesResponseTypeDef
+
+def get_value() -> ListSyncResourcesResponseTypeDef:
+    return {
+        "syncResources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSyncResourcesResponseTypeDef(TypedDict):
+    syncResources: List[SyncResourceSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SyncResourceSummaryTypeDef](./type_defs.md#syncresourcesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEntityResponseTypeDef
 
 ```python title="Usage Example"
@@ -2054,6 +2383,7 @@ def get_value() -> GetEntityResponseTypeDef:
         "hasChildEntities": ...,
         "creationDateTime": ...,
         "updateDateTime": ...,
+        "syncSource": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2071,6 +2401,7 @@ class GetEntityResponseTypeDef(TypedDict):
     hasChildEntities: bool,
     creationDateTime: datetime,
     updateDateTime: datetime,
+    syncSource: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 

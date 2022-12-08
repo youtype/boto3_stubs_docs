@@ -147,6 +147,38 @@ parent.attach_load_balancers(**kwargs)
 
 1. See [:material-code-braces: AttachLoadBalancersTypeRequestTypeDef](./type_defs.md#attachloadbalancerstyperequesttypedef) 
 
+### attach\_traffic\_sources
+
+**Reserved for use with Amazon VPC Lattice, which is in preview and subject to
+change.
+
+Type annotations and code completion for `#!python boto3.client("autoscaling").attach_traffic_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_traffic_sources)
+
+```python title="Method definition"
+def attach_traffic_sources(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    TrafficSources: Sequence[TrafficSourceIdentifierTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TrafficSourceIdentifierTypeDef](./type_defs.md#trafficsourceidentifiertypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AttachTrafficSourcesTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "TrafficSources": ...,
+}
+
+parent.attach_traffic_sources(**kwargs)
+```
+
+1. See [:material-code-braces: AttachTrafficSourcesTypeRequestTypeDef](./type_defs.md#attachtrafficsourcestyperequesttypedef) 
+
 ### batch\_delete\_scheduled\_action
 
 Deletes one or more scheduled actions for the specified Auto Scaling group.
@@ -345,7 +377,8 @@ def create_auto_scaling_group(
     Context: str = ...,
     DesiredCapacityType: str = ...,
     DefaultInstanceWarmup: int = ...,
-) -> EmptyResponseMetadataTypeDef:  # (5)
+    TrafficSources: Sequence[TrafficSourceIdentifierTypeDef] = ...,  # (5)
+) -> EmptyResponseMetadataTypeDef:  # (6)
     ...
 ```
 
@@ -353,7 +386,8 @@ def create_auto_scaling_group(
 2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
 3. See [:material-code-braces: LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+5. See [:material-code-braces: TrafficSourceIdentifierTypeDef](./type_defs.md#trafficsourceidentifiertypedef) 
+6. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1188,6 +1222,40 @@ def describe_termination_policy_types(
 
 1. See [:material-code-braces: DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef) 
 
+### describe\_traffic\_sources
+
+**Reserved for use with Amazon VPC Lattice, which is in preview and subject to
+change.
+
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_traffic_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_traffic_sources)
+
+```python title="Method definition"
+def describe_traffic_sources(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    TrafficSourceType: str,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeTrafficSourcesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeTrafficSourcesResponseTypeDef](./type_defs.md#describetrafficsourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTrafficSourcesRequestRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "TrafficSourceType": ...,
+}
+
+parent.describe_traffic_sources(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTrafficSourcesRequestRequestTypeDef](./type_defs.md#describetrafficsourcesrequestrequesttypedef) 
+
 ### describe\_warm\_pool
 
 Gets information about a warm pool and its instances.
@@ -1311,6 +1379,38 @@ parent.detach_load_balancers(**kwargs)
 ```
 
 1. See [:material-code-braces: DetachLoadBalancersTypeRequestTypeDef](./type_defs.md#detachloadbalancerstyperequesttypedef) 
+
+### detach\_traffic\_sources
+
+**Reserved for use with Amazon VPC Lattice, which is in preview and subject to
+change.
+
+Type annotations and code completion for `#!python boto3.client("autoscaling").detach_traffic_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_traffic_sources)
+
+```python title="Method definition"
+def detach_traffic_sources(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    TrafficSources: Sequence[TrafficSourceIdentifierTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TrafficSourceIdentifierTypeDef](./type_defs.md#trafficsourceidentifiertypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DetachTrafficSourcesTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "TrafficSources": ...,
+}
+
+parent.detach_traffic_sources(**kwargs)
+```
+
+1. See [:material-code-braces: DetachTrafficSourcesTypeRequestTypeDef](./type_defs.md#detachtrafficsourcestyperequesttypedef) 
 
 ### disable\_metrics\_collection
 

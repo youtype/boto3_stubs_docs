@@ -28,6 +28,9 @@ python -m pip install 'boto3-stubs[essential]'
 # or install annotations for services you use
 python -m pip install 'boto3-stubs[acm,apigateway]'
 
+# or install annotations in sync with boto3 version
+python -m pip install 'boto3-stubs[boto3]'
+
 
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations

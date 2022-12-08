@@ -35,6 +35,7 @@ except (
     client.AccessDeniedException,
     client.ClientError,
     client.ConflictException,
+    client.DependencyException,
     client.InternalServerException,
     client.ResourceNotFoundException,
     client.ServiceLinkedRoleLockClientException,
@@ -222,6 +223,22 @@ parent.get_import_file_task(**kwargs)
 ```
 
 1. See [:material-code-braces: GetImportFileTaskRequestRequestTypeDef](./type_defs.md#getimportfiletaskrequestrequesttypedef) 
+
+### get\_latest\_assessment\_id
+
+Retrieve the latest ID of a specific assessment task.
+
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_latest_assessment_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client.get_latest_assessment_id)
+
+```python title="Method definition"
+def get_latest_assessment_id(
+    self,
+) -> GetLatestAssessmentIdResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetLatestAssessmentIdResponseTypeDef](./type_defs.md#getlatestassessmentidresponsetypedef) 
 
 ### get\_portfolio\_preferences
 
@@ -490,21 +507,23 @@ Type annotations and code completion for `#!python boto3.client("migrationhubstr
 def put_portfolio_preferences(
     self,
     *,
-    applicationPreferences: ApplicationPreferencesTypeDef = ...,  # (1)
-    databasePreferences: DatabasePreferencesTypeDef = ...,  # (2)
-    prioritizeBusinessGoals: PrioritizeBusinessGoalsTypeDef = ...,  # (3)
+    applicationMode: ApplicationModeType = ...,  # (1)
+    applicationPreferences: ApplicationPreferencesTypeDef = ...,  # (2)
+    databasePreferences: DatabasePreferencesTypeDef = ...,  # (3)
+    prioritizeBusinessGoals: PrioritizeBusinessGoalsTypeDef = ...,  # (4)
 ) -> Dict[str, Any]:
     ...
 ```
 
-1. See [:material-code-braces: ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef) 
-2. See [:material-code-braces: DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef) 
-3. See [:material-code-braces: PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef) 
+1. See [:material-code-brackets: ApplicationModeType](./literals.md#applicationmodetype) 
+2. See [:material-code-braces: ApplicationPreferencesTypeDef](./type_defs.md#applicationpreferencestypedef) 
+3. See [:material-code-braces: DatabasePreferencesTypeDef](./type_defs.md#databasepreferencestypedef) 
+4. See [:material-code-braces: PrioritizeBusinessGoalsTypeDef](./type_defs.md#prioritizebusinessgoalstypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: PutPortfolioPreferencesRequestRequestTypeDef = {  # (1)
-    "applicationPreferences": ...,
+    "applicationMode": ...,
 }
 
 parent.put_portfolio_preferences(**kwargs)
@@ -523,18 +542,20 @@ Type annotations and code completion for `#!python boto3.client("migrationhubstr
 def start_assessment(
     self,
     *,
+    assessmentTargets: Sequence[AssessmentTargetTypeDef] = ...,  # (1)
     s3bucketForAnalysisData: str = ...,
     s3bucketForReportData: str = ...,
-) -> StartAssessmentResponseTypeDef:  # (1)
+) -> StartAssessmentResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: StartAssessmentResponseTypeDef](./type_defs.md#startassessmentresponsetypedef) 
+1. See [:material-code-braces: AssessmentTargetTypeDef](./type_defs.md#assessmenttargettypedef) 
+2. See [:material-code-braces: StartAssessmentResponseTypeDef](./type_defs.md#startassessmentresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
 kwargs: StartAssessmentRequestRequestTypeDef = {  # (1)
-    "s3bucketForAnalysisData": ...,
+    "assessmentTargets": ...,
 }
 
 parent.start_assessment(**kwargs)
@@ -652,17 +673,20 @@ def update_application_component_config(
     self,
     *,
     applicationComponentId: str,
-    inclusionStatus: InclusionStatusType = ...,  # (1)
+    appType: AppTypeType = ...,  # (1)
+    configureOnly: bool = ...,
+    inclusionStatus: InclusionStatusType = ...,  # (2)
     secretsManagerKey: str = ...,
-    sourceCodeList: Sequence[SourceCodeTypeDef] = ...,  # (2)
-    strategyOption: StrategyOptionTypeDef = ...,  # (3)
+    sourceCodeList: Sequence[SourceCodeTypeDef] = ...,  # (3)
+    strategyOption: StrategyOptionTypeDef = ...,  # (4)
 ) -> Dict[str, Any]:
     ...
 ```
 
-1. See [:material-code-brackets: InclusionStatusType](./literals.md#inclusionstatustype) 
-2. See [:material-code-braces: SourceCodeTypeDef](./type_defs.md#sourcecodetypedef) 
-3. See [:material-code-braces: StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef) 
+1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
+2. See [:material-code-brackets: InclusionStatusType](./literals.md#inclusionstatustype) 
+3. See [:material-code-braces: SourceCodeTypeDef](./type_defs.md#sourcecodetypedef) 
+4. See [:material-code-braces: StrategyOptionTypeDef](./type_defs.md#strategyoptiontypedef) 
 
 
 ```python title="Usage example with kwargs"

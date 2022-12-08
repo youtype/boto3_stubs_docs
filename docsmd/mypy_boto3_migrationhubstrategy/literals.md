@@ -29,17 +29,51 @@ AntipatternReportStatusType = Literal[
 from mypy_boto3_migrationhubstrategy.literals import AppTypeType
 
 def get_value() -> AppTypeType:
-    return "DotNetFramework"
+    return "Cassandra"
 ```
 
 ```python title="Definition"
 AppTypeType = Literal[
+    "Cassandra",
+    "DB2",
+    "Dotnet",
+    "DotnetCore",
     "DotNetFramework",
+    "IBM WebSphere",
     "IIS",
     "Java",
+    "JBoss",
+    "Maria DB",
+    "Mongo DB",
+    "MySQL",
     "Oracle",
+    "Oracle WebLogic",
     "Other",
+    "PostgreSQLServer",
+    "Spring",
     "SQLServer",
+    "Sybase",
+    "Tomcat",
+    "Unknown",
+    "Visual Basic",
+]
+```
+## AppUnitErrorCategoryType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import AppUnitErrorCategoryType
+
+def get_value() -> AppUnitErrorCategoryType:
+    return "CONNECTIVITY_ERROR"
+```
+
+```python title="Definition"
+AppUnitErrorCategoryType = Literal[
+    "CONNECTIVITY_ERROR",
+    "CREDENTIAL_ERROR",
+    "OTHER_ERROR",
+    "PERMISSION_ERROR",
+    "UNSUPPORTED_ERROR",
 ]
 ```
 ## ApplicationComponentCriteriaType
@@ -48,17 +82,35 @@ AppTypeType = Literal[
 from mypy_boto3_migrationhubstrategy.literals import ApplicationComponentCriteriaType
 
 def get_value() -> ApplicationComponentCriteriaType:
-    return "APP_NAME"
+    return "ANALYSIS_STATUS"
 ```
 
 ```python title="Definition"
 ApplicationComponentCriteriaType = Literal[
+    "ANALYSIS_STATUS",
     "APP_NAME",
     "APP_TYPE",
     "DESTINATION",
+    "ERROR_CATEGORY",
     "NOT_DEFINED",
     "SERVER_ID",
     "STRATEGY",
+]
+```
+## ApplicationModeType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import ApplicationModeType
+
+def get_value() -> ApplicationModeType:
+    return "ALL"
+```
+
+```python title="Definition"
+ApplicationModeType = Literal[
+    "ALL",
+    "KNOWN",
+    "UNKNOWN",
 ]
 ```
 ## AssessmentStatusType
@@ -76,6 +128,22 @@ AssessmentStatusType = Literal[
     "FAILED",
     "IN_PROGRESS",
     "STOPPED",
+]
+```
+## AuthTypeType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import AuthTypeType
+
+def get_value() -> AuthTypeType:
+    return "CERT"
+```
+
+```python title="Definition"
+AuthTypeType = Literal[
+    "CERT",
+    "NTLM",
+    "SSH",
 ]
 ```
 ## AwsManagedTargetDestinationType
@@ -107,6 +175,23 @@ def get_value() -> CollectorHealthType:
 CollectorHealthType = Literal[
     "COLLECTOR_HEALTHY",
     "COLLECTOR_UNHEALTHY",
+]
+```
+## ConditionType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import ConditionType
+
+def get_value() -> ConditionType:
+    return "CONTAINS"
+```
+
+```python title="Definition"
+ConditionType = Literal[
+    "CONTAINS",
+    "EQUALS",
+    "NOT_CONTAINS",
+    "NOT_EQUALS",
 ]
 ```
 ## DataSourceTypeType
@@ -346,6 +431,20 @@ OutputFormatType = Literal[
     "Json",
 ]
 ```
+## PipelineTypeType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import PipelineTypeType
+
+def get_value() -> PipelineTypeType:
+    return "AZURE_DEVOPS"
+```
+
+```python title="Definition"
+PipelineTypeType = Literal[
+    "AZURE_DEVOPS",
+]
+```
 ## RecommendationReportStatusType
 
 ```python title="Usage Example"
@@ -398,6 +497,23 @@ RunTimeAssessmentStatusType = Literal[
     "dataCollectionTaskToBeScheduled",
 ]
 ```
+## RuntimeAnalysisStatusType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import RuntimeAnalysisStatusType
+
+def get_value() -> RuntimeAnalysisStatusType:
+    return "ANALYSIS_FAILED"
+```
+
+```python title="Definition"
+RuntimeAnalysisStatusType = Literal[
+    "ANALYSIS_FAILED",
+    "ANALYSIS_STARTED",
+    "ANALYSIS_SUCCESS",
+    "ANALYSIS_TO_BE_SCHEDULED",
+]
+```
 ## SelfManageTargetDestinationType
 
 ```python title="Usage Example"
@@ -421,16 +537,36 @@ SelfManageTargetDestinationType = Literal[
 from mypy_boto3_migrationhubstrategy.literals import ServerCriteriaType
 
 def get_value() -> ServerCriteriaType:
-    return "DESTINATION"
+    return "ANALYSIS_STATUS"
 ```
 
 ```python title="Definition"
 ServerCriteriaType = Literal[
+    "ANALYSIS_STATUS",
     "DESTINATION",
+    "ERROR_CATEGORY",
     "NOT_DEFINED",
     "OS_NAME",
     "SERVER_ID",
     "STRATEGY",
+]
+```
+## ServerErrorCategoryType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import ServerErrorCategoryType
+
+def get_value() -> ServerErrorCategoryType:
+    return "ARCHITECTURE_ERROR"
+```
+
+```python title="Definition"
+ServerErrorCategoryType = Literal[
+    "ARCHITECTURE_ERROR",
+    "CONNECTIVITY_ERROR",
+    "CREDENTIAL_ERROR",
+    "OTHER_ERROR",
+    "PERMISSION_ERROR",
 ]
 ```
 ## ServerOsTypeType
@@ -494,9 +630,12 @@ def get_value() -> SrcCodeOrDbAnalysisStatusType:
 ```python title="Definition"
 SrcCodeOrDbAnalysisStatusType = Literal[
     "ANALYSIS_FAILED",
+    "ANALYSIS_PARTIAL_SUCCESS",
     "ANALYSIS_STARTED",
     "ANALYSIS_SUCCESS",
     "ANALYSIS_TO_BE_SCHEDULED",
+    "CONFIGURED",
+    "UNCONFIGURED",
 ]
 ```
 ## StrategyRecommendationType
@@ -511,6 +650,7 @@ def get_value() -> StrategyRecommendationType:
 ```python title="Definition"
 StrategyRecommendationType = Literal[
     "notRecommended",
+    "potential",
     "recommended",
     "viableOption",
 ]
@@ -581,6 +721,7 @@ TargetDestinationType = Literal[
     "Aurora PostgreSQL",
     "AWS Elastic BeanStalk",
     "AWS Fargate",
+    "Babelfish for Aurora PostgreSQL",
     "None specified",
 ]
 ```
@@ -613,11 +754,28 @@ TransformationToolNameType = Literal[
 from mypy_boto3_migrationhubstrategy.literals import VersionControlType
 
 def get_value() -> VersionControlType:
-    return "GITHUB"
+    return "AZURE_DEVOPS_GIT"
 ```
 
 ```python title="Definition"
 VersionControlType = Literal[
+    "AZURE_DEVOPS_GIT",
+    "GITHUB",
+    "GITHUB_ENTERPRISE",
+]
+```
+## VersionControlTypeType
+
+```python title="Usage Example"
+from mypy_boto3_migrationhubstrategy.literals import VersionControlTypeType
+
+def get_value() -> VersionControlTypeType:
+    return "AZURE_DEVOPS_GIT"
+```
+
+```python title="Definition"
+VersionControlTypeType = Literal[
+    "AZURE_DEVOPS_GIT",
     "GITHUB",
     "GITHUB_ENTERPRISE",
 ]
