@@ -452,12 +452,13 @@ from mypy_boto3_mediapackage_vod.type_defs import PackagingGroupTypeDef
 
 def get_value() -> PackagingGroupTypeDef:
     return {
-        "Arn": ...,
+        "ApproximateAssetCount": ...,
     }
 ```
 
 ```python title="Definition"
 class PackagingGroupTypeDef(TypedDict):
+    ApproximateAssetCount: NotRequired[int],
     Arn: NotRequired[str],
     Authorization: NotRequired[AuthorizationTypeDef],  # (1)
     DomainName: NotRequired[str],
@@ -537,6 +538,7 @@ from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingGroupResponse
 
 def get_value() -> DescribePackagingGroupResponseTypeDef:
     return {
+        "ApproximateAssetCount": ...,
         "Arn": ...,
         "Authorization": ...,
         "DomainName": ...,
@@ -549,6 +551,7 @@ def get_value() -> DescribePackagingGroupResponseTypeDef:
 
 ```python title="Definition"
 class DescribePackagingGroupResponseTypeDef(TypedDict):
+    ApproximateAssetCount: int,
     Arn: str,
     Authorization: AuthorizationTypeDef,  # (1)
     DomainName: str,
@@ -626,6 +629,7 @@ from mypy_boto3_mediapackage_vod.type_defs import UpdatePackagingGroupResponseTy
 
 def get_value() -> UpdatePackagingGroupResponseTypeDef:
     return {
+        "ApproximateAssetCount": ...,
         "Arn": ...,
         "Authorization": ...,
         "DomainName": ...,
@@ -638,6 +642,7 @@ def get_value() -> UpdatePackagingGroupResponseTypeDef:
 
 ```python title="Definition"
 class UpdatePackagingGroupResponseTypeDef(TypedDict):
+    ApproximateAssetCount: int,
     Arn: str,
     Authorization: AuthorizationTypeDef,  # (1)
     DomainName: str,

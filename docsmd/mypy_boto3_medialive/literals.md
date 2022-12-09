@@ -2552,6 +2552,7 @@ def get_value() -> InputDeviceTypeType:
 ```python title="Definition"
 InputDeviceTypeType = Literal[
     "HD",
+    "UHD",
 ]
 ```
 ## InputFilterType

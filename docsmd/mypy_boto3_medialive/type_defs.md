@@ -1378,6 +1378,7 @@ class InputDeviceHdSettingsTypeDef(TypedDict):
     MaxBitrate: NotRequired[int],
     ScanType: NotRequired[InputDeviceScanTypeType],  # (4)
     Width: NotRequired[int],
+    LatencyMs: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: InputDeviceActiveInputType](./literals.md#inputdeviceactiveinputtype) 
@@ -1426,6 +1427,7 @@ class InputDeviceUhdSettingsTypeDef(TypedDict):
     MaxBitrate: NotRequired[int],
     ScanType: NotRequired[InputDeviceScanTypeType],  # (4)
     Width: NotRequired[int],
+    LatencyMs: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: InputDeviceActiveInputType](./literals.md#inputdeviceactiveinputtype) 
@@ -2175,6 +2177,7 @@ def get_value() -> InputDeviceConfigurableSettingsTypeDef:
 class InputDeviceConfigurableSettingsTypeDef(TypedDict):
     ConfiguredInput: NotRequired[InputDeviceConfiguredInputType],  # (1)
     MaxBitrate: NotRequired[int],
+    LatencyMs: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: InputDeviceConfiguredInputType](./literals.md#inputdeviceconfiguredinputtype) 
