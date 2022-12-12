@@ -1625,6 +1625,8 @@ class CreateProfileRequestRequestTypeDef(TypedDict):
     MailingAddress: NotRequired[AddressTypeDef],  # (3)
     BillingAddress: NotRequired[AddressTypeDef],  # (3)
     Attributes: NotRequired[Mapping[str, str]],
+    PartyTypeString: NotRequired[str],
+    GenderString: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
@@ -2285,6 +2287,8 @@ class UpdateProfileRequestRequestTypeDef(TypedDict):
     MailingAddress: NotRequired[UpdateAddressTypeDef],  # (3)
     BillingAddress: NotRequired[UpdateAddressTypeDef],  # (3)
     Attributes: NotRequired[Mapping[str, str]],
+    PartyTypeString: NotRequired[str],
+    GenderString: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 

@@ -262,6 +262,35 @@ KnownGenderTypeType = Literal[
     "Unlisted",
 ]
 ```
+## LabelDetectionAggregateByType
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.literals import LabelDetectionAggregateByType
+
+def get_value() -> LabelDetectionAggregateByType:
+    return "SEGMENTS"
+```
+
+```python title="Definition"
+LabelDetectionAggregateByType = Literal[
+    "SEGMENTS",
+    "TIMESTAMPS",
+]
+```
+## LabelDetectionFeatureNameType
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.literals import LabelDetectionFeatureNameType
+
+def get_value() -> LabelDetectionFeatureNameType:
+    return "GENERAL_LABELS"
+```
+
+```python title="Definition"
+LabelDetectionFeatureNameType = Literal[
+    "GENERAL_LABELS",
+]
+```
 ## LabelDetectionSortByType
 
 ```python title="Usage Example"
@@ -975,6 +1004,7 @@ ServiceName = Literal[
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
     "sagemaker-geospatial",
+    "sagemaker-metrics",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",

@@ -138,6 +138,41 @@ class DeleteStreamInputRequestTypeDef(TypedDict):
     CurrentVersion: NotRequired[str],
 ```
 
+## LocalSizeConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import LocalSizeConfigTypeDef
+
+def get_value() -> LocalSizeConfigTypeDef:
+    return {
+        "MaxLocalMediaSizeInMB": ...,
+    }
+```
+
+```python title="Definition"
+class LocalSizeConfigTypeDef(TypedDict):
+    MaxLocalMediaSizeInMB: NotRequired[int],
+    StrategyOnFullSize: NotRequired[StrategyOnFullSizeType],  # (1)
+```
+
+1. See [:material-code-brackets: StrategyOnFullSizeType](./literals.md#strategyonfullsizetype) 
+## DescribeEdgeConfigurationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeEdgeConfigurationInputRequestTypeDef
+
+def get_value() -> DescribeEdgeConfigurationInputRequestTypeDef:
+    return {
+        "StreamName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEdgeConfigurationInputRequestTypeDef(TypedDict):
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+```
+
 ## DescribeImageGenerationConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -376,6 +411,25 @@ class ListTagsForStreamInputRequestTypeDef(TypedDict):
     StreamName: NotRequired[str],
 ```
 
+## MediaSourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import MediaSourceConfigTypeDef
+
+def get_value() -> MediaSourceConfigTypeDef:
+    return {
+        "MediaUriSecretArn": ...,
+        "MediaUriType": ...,
+    }
+```
+
+```python title="Definition"
+class MediaSourceConfigTypeDef(TypedDict):
+    MediaUriSecretArn: str,
+    MediaUriType: MediaUriTypeType,  # (1)
+```
+
+1. See [:material-code-brackets: MediaUriTypeType](./literals.md#mediauritypetype) 
 ## NotificationDestinationConfigTypeDef
 
 ```python title="Usage Example"
@@ -390,6 +444,24 @@ def get_value() -> NotificationDestinationConfigTypeDef:
 ```python title="Definition"
 class NotificationDestinationConfigTypeDef(TypedDict):
     Uri: str,
+```
+
+## ScheduleConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ScheduleConfigTypeDef
+
+def get_value() -> ScheduleConfigTypeDef:
+    return {
+        "ScheduleExpression": ...,
+        "DurationInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class ScheduleConfigTypeDef(TypedDict):
+    ScheduleExpression: str,
+    DurationInSeconds: int,
 ```
 
 ## TagStreamInputRequestTypeDef
@@ -693,6 +765,25 @@ class ListTagsForStreamOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeletionConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DeletionConfigTypeDef
+
+def get_value() -> DeletionConfigTypeDef:
+    return {
+        "EdgeRetentionInHours": ...,
+    }
+```
+
+```python title="Definition"
+class DeletionConfigTypeDef(TypedDict):
+    EdgeRetentionInHours: NotRequired[int],
+    LocalSizeConfig: NotRequired[LocalSizeConfigTypeDef],  # (1)
+    DeleteAfterUpload: NotRequired[bool],
+```
+
+1. See [:material-code-braces: LocalSizeConfigTypeDef](./type_defs.md#localsizeconfigtypedef) 
 ## DescribeStreamOutputTypeDef
 
 ```python title="Usage Example"
@@ -882,6 +973,42 @@ class NotificationConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ConfigurationStatusType](./literals.md#configurationstatustype) 
 2. See [:material-code-braces: NotificationDestinationConfigTypeDef](./type_defs.md#notificationdestinationconfigtypedef) 
+## RecorderConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import RecorderConfigTypeDef
+
+def get_value() -> RecorderConfigTypeDef:
+    return {
+        "MediaSourceConfig": ...,
+    }
+```
+
+```python title="Definition"
+class RecorderConfigTypeDef(TypedDict):
+    MediaSourceConfig: MediaSourceConfigTypeDef,  # (1)
+    ScheduleConfig: NotRequired[ScheduleConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: MediaSourceConfigTypeDef](./type_defs.md#mediasourceconfigtypedef) 
+2. See [:material-code-braces: ScheduleConfigTypeDef](./type_defs.md#scheduleconfigtypedef) 
+## UploaderConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import UploaderConfigTypeDef
+
+def get_value() -> UploaderConfigTypeDef:
+    return {
+        "ScheduleConfig": ...,
+    }
+```
+
+```python title="Definition"
+class UploaderConfigTypeDef(TypedDict):
+    ScheduleConfig: ScheduleConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ScheduleConfigTypeDef](./type_defs.md#scheduleconfigtypedef) 
 ## DescribeSignalingChannelOutputTypeDef
 
 ```python title="Usage Example"
@@ -1002,3 +1129,111 @@ class UpdateNotificationConfigurationInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+## EdgeConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import EdgeConfigTypeDef
+
+def get_value() -> EdgeConfigTypeDef:
+    return {
+        "HubDeviceArn": ...,
+        "RecorderConfig": ...,
+    }
+```
+
+```python title="Definition"
+class EdgeConfigTypeDef(TypedDict):
+    HubDeviceArn: str,
+    RecorderConfig: RecorderConfigTypeDef,  # (1)
+    UploaderConfig: NotRequired[UploaderConfigTypeDef],  # (2)
+    DeletionConfig: NotRequired[DeletionConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: RecorderConfigTypeDef](./type_defs.md#recorderconfigtypedef) 
+2. See [:material-code-braces: UploaderConfigTypeDef](./type_defs.md#uploaderconfigtypedef) 
+3. See [:material-code-braces: DeletionConfigTypeDef](./type_defs.md#deletionconfigtypedef) 
+## DescribeEdgeConfigurationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeEdgeConfigurationOutputTypeDef
+
+def get_value() -> DescribeEdgeConfigurationOutputTypeDef:
+    return {
+        "StreamName": ...,
+        "StreamARN": ...,
+        "CreationTime": ...,
+        "LastUpdatedTime": ...,
+        "SyncStatus": ...,
+        "FailedStatusDetails": ...,
+        "EdgeConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEdgeConfigurationOutputTypeDef(TypedDict):
+    StreamName: str,
+    StreamARN: str,
+    CreationTime: datetime,
+    LastUpdatedTime: datetime,
+    SyncStatus: SyncStatusType,  # (1)
+    FailedStatusDetails: str,
+    EdgeConfig: EdgeConfigTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: SyncStatusType](./literals.md#syncstatustype) 
+2. See [:material-code-braces: EdgeConfigTypeDef](./type_defs.md#edgeconfigtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartEdgeConfigurationUpdateInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import StartEdgeConfigurationUpdateInputRequestTypeDef
+
+def get_value() -> StartEdgeConfigurationUpdateInputRequestTypeDef:
+    return {
+        "EdgeConfig": ...,
+    }
+```
+
+```python title="Definition"
+class StartEdgeConfigurationUpdateInputRequestTypeDef(TypedDict):
+    EdgeConfig: EdgeConfigTypeDef,  # (1)
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+```
+
+1. See [:material-code-braces: EdgeConfigTypeDef](./type_defs.md#edgeconfigtypedef) 
+## StartEdgeConfigurationUpdateOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import StartEdgeConfigurationUpdateOutputTypeDef
+
+def get_value() -> StartEdgeConfigurationUpdateOutputTypeDef:
+    return {
+        "StreamName": ...,
+        "StreamARN": ...,
+        "CreationTime": ...,
+        "LastUpdatedTime": ...,
+        "SyncStatus": ...,
+        "FailedStatusDetails": ...,
+        "EdgeConfig": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartEdgeConfigurationUpdateOutputTypeDef(TypedDict):
+    StreamName: str,
+    StreamARN: str,
+    CreationTime: datetime,
+    LastUpdatedTime: datetime,
+    SyncStatus: SyncStatusType,  # (1)
+    FailedStatusDetails: str,
+    EdgeConfig: EdgeConfigTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: SyncStatusType](./literals.md#syncstatustype) 
+2. See [:material-code-braces: EdgeConfigTypeDef](./type_defs.md#edgeconfigtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

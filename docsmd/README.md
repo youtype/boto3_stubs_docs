@@ -624,6 +624,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-sagemaker-geospatial](./mypy_boto3_sagemaker_geospatial/README.md) for [SageMakergeospatialcapabilities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-geospatial.html#SageMakergeospatialcapabilities) service
 
+- [mypy-boto3-sagemaker-metrics](./mypy_boto3_sagemaker_metrics/README.md) for [SageMakerMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-metrics.html#SageMakerMetrics) service
+
 - [mypy-boto3-sagemaker-runtime](./mypy_boto3_sagemaker_runtime/README.md) for [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime) service
 
 - [mypy-boto3-savingsplans](./mypy_boto3_savingsplans/README.md) for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans) service

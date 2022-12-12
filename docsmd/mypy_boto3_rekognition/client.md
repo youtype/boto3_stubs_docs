@@ -1145,12 +1145,14 @@ def get_label_detection(
     MaxResults: int = ...,
     NextToken: str = ...,
     SortBy: LabelDetectionSortByType = ...,  # (1)
-) -> GetLabelDetectionResponseTypeDef:  # (2)
+    AggregateBy: LabelDetectionAggregateByType = ...,  # (2)
+) -> GetLabelDetectionResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-brackets: LabelDetectionSortByType](./literals.md#labeldetectionsortbytype) 
-2. See [:material-code-braces: GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef) 
+2. See [:material-code-brackets: LabelDetectionAggregateByType](./literals.md#labeldetectionaggregatebytype) 
+3. See [:material-code-braces: GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1814,13 +1816,17 @@ def start_label_detection(
     MinConfidence: float = ...,
     NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
     JobTag: str = ...,
-) -> StartLabelDetectionResponseTypeDef:  # (3)
+    Features: Sequence[LabelDetectionFeatureNameType] = ...,  # (3)
+    Settings: LabelDetectionSettingsTypeDef = ...,  # (4)
+) -> StartLabelDetectionResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
 2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
-3. See [:material-code-braces: StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef) 
+3. See [:material-code-brackets: LabelDetectionFeatureNameType](./literals.md#labeldetectionfeaturenametype) 
+4. See [:material-code-braces: LabelDetectionSettingsTypeDef](./type_defs.md#labeldetectionsettingstypedef) 
+5. See [:material-code-braces: StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

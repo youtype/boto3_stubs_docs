@@ -1125,9 +1125,11 @@ class GetLabelDetectionRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
     SortBy: NotRequired[LabelDetectionSortByType],  # (1)
+    AggregateBy: NotRequired[LabelDetectionAggregateByType],  # (2)
 ```
 
 1. See [:material-code-brackets: LabelDetectionSortByType](./literals.md#labeldetectionsortbytype) 
+2. See [:material-code-brackets: LabelDetectionAggregateByType](./literals.md#labeldetectionaggregatebytype) 
 ## GetPersonTrackingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2785,6 +2787,23 @@ class DetectLabelsSettingsTypeDef(TypedDict):
 
 1. See [:material-code-braces: GeneralLabelsSettingsTypeDef](./type_defs.md#generallabelssettingstypedef) 
 2. See [:material-code-braces: DetectLabelsImagePropertiesSettingsTypeDef](./type_defs.md#detectlabelsimagepropertiessettingstypedef) 
+## LabelDetectionSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import LabelDetectionSettingsTypeDef
+
+def get_value() -> LabelDetectionSettingsTypeDef:
+    return {
+        "GeneralLabels": ...,
+    }
+```
+
+```python title="Definition"
+class LabelDetectionSettingsTypeDef(TypedDict):
+    GeneralLabels: NotRequired[GeneralLabelsSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: GeneralLabelsSettingsTypeDef](./type_defs.md#generallabelssettingstypedef) 
 ## DetectModerationLabelsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3969,10 +3988,14 @@ class StartLabelDetectionRequestRequestTypeDef(TypedDict):
     MinConfidence: NotRequired[float],
     NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
     JobTag: NotRequired[str],
+    Features: NotRequired[Sequence[LabelDetectionFeatureNameType]],  # (3)
+    Settings: NotRequired[LabelDetectionSettingsTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
 2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-brackets: LabelDetectionFeatureNameType](./literals.md#labeldetectionfeaturenametype) 
+4. See [:material-code-braces: LabelDetectionSettingsTypeDef](./type_defs.md#labeldetectionsettingstypedef) 
 ## StartPersonTrackingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4356,6 +4379,9 @@ def get_value() -> LabelDetectionTypeDef:
 class LabelDetectionTypeDef(TypedDict):
     Timestamp: NotRequired[int],
     Label: NotRequired[LabelTypeDef],  # (1)
+    StartTimestampMillis: NotRequired[int],
+    EndTimestampMillis: NotRequired[int],
+    DurationMillis: NotRequired[int],
 ```
 
 1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 

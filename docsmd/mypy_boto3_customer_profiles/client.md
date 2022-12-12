@@ -230,6 +230,8 @@ def create_profile(
     MailingAddress: AddressTypeDef = ...,  # (3)
     BillingAddress: AddressTypeDef = ...,  # (3)
     Attributes: Mapping[str, str] = ...,
+    PartyTypeString: str = ...,
+    GenderString: str = ...,
 ) -> CreateProfileResponseTypeDef:  # (7)
     ...
 ```
@@ -1394,6 +1396,8 @@ def update_profile(
     MailingAddress: UpdateAddressTypeDef = ...,  # (3)
     BillingAddress: UpdateAddressTypeDef = ...,  # (3)
     Attributes: Mapping[str, str] = ...,
+    PartyTypeString: str = ...,
+    GenderString: str = ...,
 ) -> UpdateProfileResponseTypeDef:  # (7)
     ...
 ```

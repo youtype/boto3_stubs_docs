@@ -586,6 +586,7 @@ def copy_db_snapshot(
     PreSignedUrl: str = ...,
     OptionGroupName: str = ...,
     TargetCustomAvailabilityZone: str = ...,
+    CopyOptionGroup: bool = ...,
     SourceRegion: str = ...,
 ) -> CopyDBSnapshotResultTypeDef:  # (2)
     ...

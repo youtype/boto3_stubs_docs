@@ -3021,6 +3021,7 @@ class CopyDBSnapshotMessageRequestTypeDef(TypedDict):
     PreSignedUrl: NotRequired[str],
     OptionGroupName: NotRequired[str],
     TargetCustomAvailabilityZone: NotRequired[str],
+    CopyOptionGroup: NotRequired[bool],
     SourceRegion: NotRequired[str],
 ```
 
@@ -8147,6 +8148,7 @@ class OptionGroupOptionTypeDef(TypedDict):
     SupportsOptionVersionDowngrade: NotRequired[bool],
     OptionGroupOptionSettings: NotRequired[List[OptionGroupOptionSettingTypeDef]],  # (1)
     OptionGroupOptionVersions: NotRequired[List[OptionVersionTypeDef]],  # (2)
+    CopyableCrossAccount: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: OptionGroupOptionSettingTypeDef](./type_defs.md#optiongroupoptionsettingtypedef) 
@@ -8192,6 +8194,9 @@ class OptionGroupTypeDef(TypedDict):
     AllowsVpcAndNonVpcInstanceMemberships: NotRequired[bool],
     VpcId: NotRequired[str],
     OptionGroupArn: NotRequired[str],
+    SourceOptionGroup: NotRequired[str],
+    SourceAccountId: NotRequired[str],
+    CopyTimestamp: NotRequired[datetime],
 ```
 
 1. See [:material-code-braces: OptionTypeDef](./type_defs.md#optiontypedef) 

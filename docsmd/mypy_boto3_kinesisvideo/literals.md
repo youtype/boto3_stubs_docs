@@ -174,6 +174,21 @@ ListStreamsPaginatorName = Literal[
     "list_streams",
 ]
 ```
+## MediaUriTypeType
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.literals import MediaUriTypeType
+
+def get_value() -> MediaUriTypeType:
+    return "FILE_URI"
+```
+
+```python title="Definition"
+MediaUriTypeType = Literal[
+    "FILE_URI",
+    "RTSP_URI",
+]
+```
 ## StatusType
 
 ```python title="Usage Example"
@@ -189,6 +204,40 @@ StatusType = Literal[
     "CREATING",
     "DELETING",
     "UPDATING",
+]
+```
+## StrategyOnFullSizeType
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.literals import StrategyOnFullSizeType
+
+def get_value() -> StrategyOnFullSizeType:
+    return "DELETE_OLDEST_MEDIA"
+```
+
+```python title="Definition"
+StrategyOnFullSizeType = Literal[
+    "DELETE_OLDEST_MEDIA",
+    "DENY_NEW_MEDIA",
+]
+```
+## SyncStatusType
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.literals import SyncStatusType
+
+def get_value() -> SyncStatusType:
+    return "ACKNOWLEDGED"
+```
+
+```python title="Definition"
+SyncStatusType = Literal[
+    "ACKNOWLEDGED",
+    "DELETE_FAILED",
+    "DELETING",
+    "IN_SYNC",
+    "SYNC_FAILED",
+    "SYNCING",
 ]
 ```
 ## UpdateDataRetentionOperationType
@@ -507,6 +556,7 @@ ServiceName = Literal[
     "sagemaker-edge",
     "sagemaker-featurestore-runtime",
     "sagemaker-geospatial",
+    "sagemaker-metrics",
     "sagemaker-runtime",
     "savingsplans",
     "scheduler",

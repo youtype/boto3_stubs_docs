@@ -29271,6 +29271,7 @@ class FpgaImageTypeDef(TypedDict):
     Tags: NotRequired[List[TagTypeDef]],  # (4)
     Public: NotRequired[bool],
     DataRetentionSupport: NotRequired[bool],
+    InstanceTypes: NotRequired[List[str]],
 ```
 
 1. See [:material-code-braces: PciIdTypeDef](./type_defs.md#pciidtypedef) 

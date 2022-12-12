@@ -45,6 +45,7 @@ except (
     client.NotAuthorizedException,
     client.ResourceInUseException,
     client.ResourceNotFoundException,
+    client.StreamEdgeConfigurationNotFoundException,
     client.TagsPerResourceExceededLimitException,
     client.VersionMismatchException,
 ) as e:
@@ -219,6 +220,37 @@ parent.delete_stream(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef) 
+
+### describe\_edge\_configuration
+
+Describes a stream’s edge configuration that was set using the
+`StartEdgeConfigurationUpdate` API.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").describe_edge_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_edge_configuration)
+
+```python title="Method definition"
+def describe_edge_configuration(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> DescribeEdgeConfigurationOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeEdgeConfigurationOutputTypeDef](./type_defs.md#describeedgeconfigurationoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEdgeConfigurationInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.describe_edge_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEdgeConfigurationInputRequestTypeDef](./type_defs.md#describeedgeconfigurationinputrequesttypedef) 
 
 ### describe\_image\_generation\_configuration
 
@@ -547,6 +579,38 @@ parent.list_tags_for_stream(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef) 
+
+### start\_edge\_configuration\_update
+
+An asynchronous API that updates a stream’s existing edge configuration.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").start_edge_configuration_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.start_edge_configuration_update)
+
+```python title="Method definition"
+def start_edge_configuration_update(
+    self,
+    *,
+    EdgeConfig: EdgeConfigTypeDef,  # (1)
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> StartEdgeConfigurationUpdateOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: EdgeConfigTypeDef](./type_defs.md#edgeconfigtypedef) 
+2. See [:material-code-braces: StartEdgeConfigurationUpdateOutputTypeDef](./type_defs.md#startedgeconfigurationupdateoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartEdgeConfigurationUpdateInputRequestTypeDef = {  # (1)
+    "EdgeConfig": ...,
+}
+
+parent.start_edge_configuration_update(**kwargs)
+```
+
+1. See [:material-code-braces: StartEdgeConfigurationUpdateInputRequestTypeDef](./type_defs.md#startedgeconfigurationupdateinputrequesttypedef) 
 
 ### tag\_resource
 
