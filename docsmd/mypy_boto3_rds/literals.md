@@ -115,6 +115,23 @@ AutomationModeType = Literal[
     "full",
 ]
 ```
+## ClientPasswordAuthTypeType
+
+```python title="Usage Example"
+from mypy_boto3_rds.literals import ClientPasswordAuthTypeType
+
+def get_value() -> ClientPasswordAuthTypeType:
+    return "MYSQL_NATIVE_PASSWORD"
+```
+
+```python title="Definition"
+ClientPasswordAuthTypeType = Literal[
+    "MYSQL_NATIVE_PASSWORD",
+    "POSTGRES_MD5",
+    "POSTGRES_SCRAM_SHA_256",
+    "SQL_SERVER_AUTHENTICATION",
+]
+```
 ## CustomEngineVersionStatusType
 
 ```python title="Usage Example"

@@ -567,10 +567,12 @@ class UserAuthConfigTypeDef(TypedDict):
     AuthScheme: NotRequired[AuthSchemeType],  # (1)
     SecretArn: NotRequired[str],
     IAMAuth: NotRequired[IAMAuthModeType],  # (2)
+    ClientPasswordAuthType: NotRequired[ClientPasswordAuthTypeType],  # (3)
 ```
 
 1. See [:material-code-brackets: AuthSchemeType](./literals.md#authschemetype) 
 2. See [:material-code-brackets: IAMAuthModeType](./literals.md#iamauthmodetype) 
+3. See [:material-code-brackets: ClientPasswordAuthTypeType](./literals.md#clientpasswordauthtypetype) 
 ## CreateGlobalClusterMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1028,10 +1030,12 @@ class UserAuthConfigInfoTypeDef(TypedDict):
     AuthScheme: NotRequired[AuthSchemeType],  # (1)
     SecretArn: NotRequired[str],
     IAMAuth: NotRequired[IAMAuthModeType],  # (2)
+    ClientPasswordAuthType: NotRequired[ClientPasswordAuthTypeType],  # (3)
 ```
 
 1. See [:material-code-brackets: AuthSchemeType](./literals.md#authschemetype) 
 2. See [:material-code-brackets: IAMAuthModeType](./literals.md#iamauthmodetype) 
+3. See [:material-code-brackets: ClientPasswordAuthTypeType](./literals.md#clientpasswordauthtypetype) 
 ## EC2SecurityGroupTypeDef
 
 ```python title="Usage Example"

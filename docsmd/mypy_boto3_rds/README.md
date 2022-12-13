@@ -186,6 +186,7 @@ def get_value() -> ActivityStreamModeType:
 - [AuditPolicyStateType](./literals.md#auditpolicystatetype)
 - [AuthSchemeType](./literals.md#authschemetype)
 - [AutomationModeType](./literals.md#automationmodetype)
+- [ClientPasswordAuthTypeType](./literals.md#clientpasswordauthtypetype)
 - [CustomEngineVersionStatusType](./literals.md#customengineversionstatustype)
 - [DBClusterAvailableWaiterName](./literals.md#dbclusteravailablewaitername)
 - [DBClusterDeletedWaiterName](./literals.md#dbclusterdeletedwaitername)
