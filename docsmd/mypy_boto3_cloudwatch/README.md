@@ -186,6 +186,7 @@ def get_value() -> ActionsSuppressedByType:
 - [DescribeAlarmHistoryPaginatorName](./literals.md#describealarmhistorypaginatorname)
 - [DescribeAlarmsPaginatorName](./literals.md#describealarmspaginatorname)
 - [DescribeAnomalyDetectorsPaginatorName](./literals.md#describeanomalydetectorspaginatorname)
+- [EvaluationStateType](./literals.md#evaluationstatetype)
 - [GetMetricDataPaginatorName](./literals.md#getmetricdatapaginatorname)
 - [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - [ListDashboardsPaginatorName](./literals.md#listdashboardspaginatorname)

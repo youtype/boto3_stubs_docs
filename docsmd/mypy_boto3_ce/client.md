@@ -126,7 +126,7 @@ parent.create_anomaly_monitor(**kwargs)
 
 ### create\_anomaly\_subscription
 
-Adds a subscription to a cost anomaly detection monitor.
+Adds an alert subscription to a cost anomaly detection monitor.
 
 Type annotations and code completion for `#!python boto3.client("ce").create_anomaly_subscription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
@@ -1325,13 +1325,15 @@ def update_anomaly_subscription(
     MonitorArnList: Sequence[str] = ...,
     Subscribers: Sequence[SubscriberTypeDef] = ...,  # (2)
     SubscriptionName: str = ...,
-) -> UpdateAnomalySubscriptionResponseTypeDef:  # (3)
+    ThresholdExpression: ExpressionTypeDef = ...,  # (3)
+) -> UpdateAnomalySubscriptionResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype) 
 2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
-3. See [:material-code-braces: UpdateAnomalySubscriptionResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponsetypedef) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: UpdateAnomalySubscriptionResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

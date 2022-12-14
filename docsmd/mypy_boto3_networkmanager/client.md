@@ -2485,7 +2485,7 @@ parent.restore_core_network_policy_version(**kwargs)
 
 ### start\_organization\_service\_access\_update
 
-Enables for the Network Manager service for an Amazon Web Services Organization.
+Enables the Network Manager service for an Amazon Web Services Organization.
 
 Type annotations and code completion for `#!python boto3.client("networkmanager").start_organization_service_access_update` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.start_organization_service_access_update)

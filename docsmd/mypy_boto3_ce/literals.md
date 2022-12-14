@@ -216,6 +216,8 @@ def get_value() -> DimensionType:
 DimensionType = Literal[
     "AGREEMENT_END_DATE_TIME_AFTER",
     "AGREEMENT_END_DATE_TIME_BEFORE",
+    "ANOMALY_TOTAL_IMPACT_ABSOLUTE",
+    "ANOMALY_TOTAL_IMPACT_PERCENTAGE",
     "AZ",
     "BILLING_ENTITY",
     "CACHE_ENGINE",
@@ -358,6 +360,7 @@ MatchOptionType = Literal[
     "CONTAINS",
     "ENDS_WITH",
     "EQUALS",
+    "GREATER_THAN_OR_EQUAL",
     "STARTS_WITH",
 ]
 ```

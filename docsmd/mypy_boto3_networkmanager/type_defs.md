@@ -522,6 +522,7 @@ def get_value() -> VpcOptionsTypeDef:
 ```python title="Definition"
 class VpcOptionsTypeDef(TypedDict):
     Ipv6Support: NotRequired[bool],
+    ApplianceModeSupport: NotRequired[bool],
 ```
 
 ## DeleteAttachmentRequestRequestTypeDef

@@ -105,6 +105,9 @@ def get_value() -> ImpactTypeDef:
 class ImpactTypeDef(TypedDict):
     MaxImpact: float,
     TotalImpact: NotRequired[float],
+    TotalActualSpend: NotRequired[float],
+    TotalExpectedSpend: NotRequired[float],
+    TotalImpactPercentage: NotRequired[float],
 ```
 
 ## RootCauseTypeDef
@@ -1281,7 +1284,6 @@ def get_value() -> AnomalySubscriptionTypeDef:
     return {
         "MonitorArnList": ...,
         "Subscribers": ...,
-        "Threshold": ...,
         "Frequency": ...,
         "SubscriptionName": ...,
     }
@@ -1291,15 +1293,17 @@ def get_value() -> AnomalySubscriptionTypeDef:
 class AnomalySubscriptionTypeDef(TypedDict):
     MonitorArnList: Sequence[str],
     Subscribers: Sequence[SubscriberTypeDef],  # (1)
-    Threshold: float,
     Frequency: AnomalySubscriptionFrequencyType,  # (2)
     SubscriptionName: str,
     SubscriptionArn: NotRequired[str],
     AccountId: NotRequired[str],
+    Threshold: NotRequired[float],
+    ThresholdExpression: NotRequired[ExpressionTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 2. See [:material-code-brackets: AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
 ## UpdateAnomalySubscriptionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1319,10 +1323,12 @@ class UpdateAnomalySubscriptionRequestRequestTypeDef(TypedDict):
     MonitorArnList: NotRequired[Sequence[str]],
     Subscribers: NotRequired[Sequence[SubscriberTypeDef]],  # (2)
     SubscriptionName: NotRequired[str],
+    ThresholdExpression: NotRequired[ExpressionTypeDef],  # (3)
 ```
 
 1. See [:material-code-brackets: AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype) 
 2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
 ## AnomalyTypeDef
 
 ```python title="Usage Example"

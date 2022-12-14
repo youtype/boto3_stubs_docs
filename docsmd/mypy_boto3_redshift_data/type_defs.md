@@ -23,6 +23,7 @@ def get_value() -> BatchExecuteStatementInputRequestTypeDef:
 class BatchExecuteStatementInputRequestTypeDef(TypedDict):
     Database: str,
     Sqls: Sequence[str],
+    ClientToken: NotRequired[str],
     ClusterIdentifier: NotRequired[str],
     DbUser: NotRequired[str],
     SecretArn: NotRequired[str],
@@ -514,6 +515,7 @@ def get_value() -> ExecuteStatementInputRequestTypeDef:
 class ExecuteStatementInputRequestTypeDef(TypedDict):
     Database: str,
     Sql: str,
+    ClientToken: NotRequired[str],
     ClusterIdentifier: NotRequired[str],
     DbUser: NotRequired[str],
     Parameters: NotRequired[Sequence[SqlParameterTypeDef]],  # (1)

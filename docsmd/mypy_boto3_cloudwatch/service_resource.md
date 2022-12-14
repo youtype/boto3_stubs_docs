@@ -184,6 +184,8 @@ def get_resource() -> Alarm:
 - `evaluate_low_sample_count_percentile`: `str`
 - `metrics`: `List`[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)]
 - `threshold_metric_id`: `str`
+- `evaluation_state`: `Literal['PARTIAL_DATA']` (see [EvaluationStateType](./literals.md#evaluationstatetype))
+- `state_transitioned_timestamp`: `datetime`
 - `name`: `str`
 - `metric`: [Metric](#metric)
 
@@ -481,7 +483,7 @@ def load(
 #### Metric.put\_alarm method
 
 Creates or updates an alarm and associates it with the specified metric, metric
-math expression, or anomaly detection model.
+math expression, anomaly detection model, or Metrics Insights query.
 
 Type annotations and code completion for `#!python boto3.resource("cloudwatch").put_alarm` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_alarm)

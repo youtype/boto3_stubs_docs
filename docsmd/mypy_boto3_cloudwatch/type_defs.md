@@ -2196,6 +2196,8 @@ class MetricAlarmTypeDef(TypedDict):
     EvaluateLowSampleCountPercentile: NotRequired[str],
     Metrics: NotRequired[List[MetricDataQueryTypeDef]],  # (6)
     ThresholdMetricId: NotRequired[str],
+    EvaluationState: NotRequired[EvaluationStateType],  # (7)
+    StateTransitionedTimestamp: NotRequired[datetime],
 ```
 
 1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
@@ -2204,6 +2206,7 @@ class MetricAlarmTypeDef(TypedDict):
 4. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
 5. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 6. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+7. See [:material-code-brackets: EvaluationStateType](./literals.md#evaluationstatetype) 
 ## MetricMathAnomalyDetectorTypeDef
 
 ```python title="Usage Example"

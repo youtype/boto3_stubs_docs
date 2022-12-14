@@ -69,6 +69,7 @@ def batch_execute_statement(
     *,
     Database: str,
     Sqls: Sequence[str],
+    ClientToken: str = ...,
     ClusterIdentifier: str = ...,
     DbUser: str = ...,
     SecretArn: str = ...,
@@ -235,6 +236,7 @@ def execute_statement(
     *,
     Database: str,
     Sql: str,
+    ClientToken: str = ...,
     ClusterIdentifier: str = ...,
     DbUser: str = ...,
     Parameters: Sequence[SqlParameterTypeDef] = ...,  # (1)

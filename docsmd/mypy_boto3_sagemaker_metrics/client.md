@@ -50,8 +50,7 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 
 ### batch\_put\_metrics
 
-Used to ingest training metrics into SageMaker which can be visualized in
-SageMaker Studio and retrieved with the `GetMetrics` API.
+Used to ingest training metrics into SageMaker.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker-metrics").batch_put_metrics` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-metrics.html#SageMakerMetrics.Client.batch_put_metrics)

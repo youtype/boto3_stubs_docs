@@ -1108,7 +1108,7 @@ parent.put_managed_insight_rules(**kwargs)
 ### put\_metric\_alarm
 
 Creates or updates an alarm and associates it with the specified metric, metric
-math expression, or anomaly detection model.
+math expression, anomaly detection model, or Metrics Insights query.
 
 Type annotations and code completion for `#!python boto3.client("cloudwatch").put_metric_alarm` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_alarm)

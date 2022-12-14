@@ -159,6 +159,20 @@ DescribeAnomalyDetectorsPaginatorName = Literal[
     "describe_anomaly_detectors",
 ]
 ```
+## EvaluationStateType
+
+```python title="Usage Example"
+from mypy_boto3_cloudwatch.literals import EvaluationStateType
+
+def get_value() -> EvaluationStateType:
+    return "PARTIAL_DATA"
+```
+
+```python title="Definition"
+EvaluationStateType = Literal[
+    "PARTIAL_DATA",
+]
+```
 ## GetMetricDataPaginatorName
 
 ```python title="Usage Example"
