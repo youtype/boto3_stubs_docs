@@ -1105,6 +1105,7 @@ class CreateApplicationRequestRequestTypeDef(TypedDict):
     name: str,
     clientToken: NotRequired[str],
     description: NotRequired[str],
+    kmsKeyId: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
 ```
 
@@ -1624,6 +1625,7 @@ def get_value() -> GetApplicationResponseTypeDef:
         "description": ...,
         "engineType": ...,
         "environmentId": ...,
+        "kmsKeyId": ...,
         "lastStartTime": ...,
         "latestVersion": ...,
         "listenerArns": ...,
@@ -1648,6 +1650,7 @@ class GetApplicationResponseTypeDef(TypedDict):
     description: str,
     engineType: EngineTypeType,  # (2)
     environmentId: str,
+    kmsKeyId: str,
     lastStartTime: datetime,
     latestVersion: ApplicationVersionSummaryTypeDef,  # (3)
     listenerArns: List[str],
@@ -1991,6 +1994,7 @@ class CreateEnvironmentRequestRequestTypeDef(TypedDict):
     description: NotRequired[str],
     engineVersion: NotRequired[str],
     highAvailabilityConfig: NotRequired[HighAvailabilityConfigTypeDef],  # (2)
+    kmsKeyId: NotRequired[str],
     preferredMaintenanceWindow: NotRequired[str],
     publiclyAccessible: NotRequired[bool],
     securityGroupIds: NotRequired[Sequence[str]],
@@ -2018,6 +2022,7 @@ def get_value() -> GetEnvironmentResponseTypeDef:
         "environmentId": ...,
         "highAvailabilityConfig": ...,
         "instanceType": ...,
+        "kmsKeyId": ...,
         "loadBalancerArn": ...,
         "name": ...,
         "pendingMaintenance": ...,
@@ -2045,6 +2050,7 @@ class GetEnvironmentResponseTypeDef(TypedDict):
     environmentId: str,
     highAvailabilityConfig: HighAvailabilityConfigTypeDef,  # (2)
     instanceType: str,
+    kmsKeyId: str,
     loadBalancerArn: str,
     name: str,
     pendingMaintenance: PendingMaintenanceTypeDef,  # (3)

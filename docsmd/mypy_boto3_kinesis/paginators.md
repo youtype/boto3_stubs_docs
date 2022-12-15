@@ -47,7 +47,8 @@ Type annotations and code completion for `#!python DescribeStreamPaginator.pagin
 def paginate(
     self,
     *,
-    StreamName: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[DescribeStreamOutputTypeDef]:  # (2)
     ...
@@ -110,6 +111,7 @@ def paginate(
     ExclusiveStartShardId: str = ...,
     StreamCreationTimestamp: Union[datetime, str] = ...,
     ShardFilter: ShardFilterTypeDef = ...,  # (1)
+    StreamARN: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[ListShardsOutputTypeDef]:  # (3)
     ...
@@ -229,6 +231,7 @@ Type annotations and code completion for `#!python ListStreamsPaginator.paginate
 def paginate(
     self,
     *,
+    ExclusiveStartStreamName: str = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
 ) -> _PageIterator[ListStreamsOutputTypeDef]:  # (2)
     ...
@@ -240,7 +243,7 @@ def paginate(
 
 ```python title="Usage example with kwargs"
 kwargs: ListStreamsInputListStreamsPaginateTypeDef = {  # (1)
-    "PaginationConfig": ...,
+    "ExclusiveStartStreamName": ...,
 }
 
 parent.paginate(**kwargs)

@@ -80,6 +80,24 @@ ListVirtualMachinesPaginatorName = Literal[
     "list_virtual_machines",
 ]
 ```
+## SyncMetadataStatusType
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.literals import SyncMetadataStatusType
+
+def get_value() -> SyncMetadataStatusType:
+    return "CREATED"
+```
+
+```python title="Definition"
+SyncMetadataStatusType = Literal[
+    "CREATED",
+    "FAILED",
+    "PARTIALLY_FAILED",
+    "RUNNING",
+    "SUCCEEDED",
+]
+```
 ## BackupGatewayServiceName
 
 ```python title="Usage Example"

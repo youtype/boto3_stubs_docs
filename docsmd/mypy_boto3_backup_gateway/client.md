@@ -258,6 +258,35 @@ def generate_presigned_url(
 ```
 
 
+### get\_bandwidth\_rate\_limit\_schedule
+
+Retrieves the bandwidth rate limit schedule for a specified gateway.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").get_bandwidth_rate_limit_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.get_bandwidth_rate_limit_schedule)
+
+```python title="Method definition"
+def get_bandwidth_rate_limit_schedule(
+    self,
+    *,
+    GatewayArn: str,
+) -> GetBandwidthRateLimitScheduleOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#getbandwidthratelimitscheduleoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetBandwidthRateLimitScheduleInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
+
+parent.get_bandwidth_rate_limit_schedule(**kwargs)
+```
+
+1. See [:material-code-braces: GetBandwidthRateLimitScheduleInputRequestTypeDef](./type_defs.md#getbandwidthratelimitscheduleinputrequesttypedef) 
+
 ### get\_gateway
 
 By providing the ARN (Amazon Resource Name), this API returns the gateway.
@@ -286,6 +315,65 @@ parent.get_gateway(**kwargs)
 ```
 
 1. See [:material-code-braces: GetGatewayInputRequestTypeDef](./type_defs.md#getgatewayinputrequesttypedef) 
+
+### get\_hypervisor
+
+This action requests information about the specified hypervisor to which the
+gateway will connect.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").get_hypervisor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.get_hypervisor)
+
+```python title="Method definition"
+def get_hypervisor(
+    self,
+    *,
+    HypervisorArn: str,
+) -> GetHypervisorOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetHypervisorOutputTypeDef](./type_defs.md#gethypervisoroutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetHypervisorInputRequestTypeDef = {  # (1)
+    "HypervisorArn": ...,
+}
+
+parent.get_hypervisor(**kwargs)
+```
+
+1. See [:material-code-braces: GetHypervisorInputRequestTypeDef](./type_defs.md#gethypervisorinputrequesttypedef) 
+
+### get\_hypervisor\_property\_mappings
+
+This action retrieves the property mappings for the specified hypervisor.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").get_hypervisor_property_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.get_hypervisor_property_mappings)
+
+```python title="Method definition"
+def get_hypervisor_property_mappings(
+    self,
+    *,
+    HypervisorArn: str,
+) -> GetHypervisorPropertyMappingsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetHypervisorPropertyMappingsOutputTypeDef](./type_defs.md#gethypervisorpropertymappingsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetHypervisorPropertyMappingsInputRequestTypeDef = {  # (1)
+    "HypervisorArn": ...,
+}
+
+parent.get_hypervisor_property_mappings(**kwargs)
+```
+
+1. See [:material-code-braces: GetHypervisorPropertyMappingsInputRequestTypeDef](./type_defs.md#gethypervisorpropertymappingsinputrequesttypedef) 
 
 ### get\_virtual\_machine
 
@@ -475,6 +563,72 @@ parent.list_virtual_machines(**kwargs)
 
 1. See [:material-code-braces: ListVirtualMachinesInputRequestTypeDef](./type_defs.md#listvirtualmachinesinputrequesttypedef) 
 
+### put\_bandwidth\_rate\_limit\_schedule
+
+This action sets the bandwidth rate limit schedule for a specified gateway.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").put_bandwidth_rate_limit_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.put_bandwidth_rate_limit_schedule)
+
+```python title="Method definition"
+def put_bandwidth_rate_limit_schedule(
+    self,
+    *,
+    BandwidthRateLimitIntervals: Sequence[BandwidthRateLimitIntervalTypeDef],  # (1)
+    GatewayArn: str,
+) -> PutBandwidthRateLimitScheduleOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef) 
+2. See [:material-code-braces: PutBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#putbandwidthratelimitscheduleoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutBandwidthRateLimitScheduleInputRequestTypeDef = {  # (1)
+    "BandwidthRateLimitIntervals": ...,
+    "GatewayArn": ...,
+}
+
+parent.put_bandwidth_rate_limit_schedule(**kwargs)
+```
+
+1. See [:material-code-braces: PutBandwidthRateLimitScheduleInputRequestTypeDef](./type_defs.md#putbandwidthratelimitscheduleinputrequesttypedef) 
+
+### put\_hypervisor\_property\_mappings
+
+This action sets the property mappings for the specified hypervisor.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").put_hypervisor_property_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.put_hypervisor_property_mappings)
+
+```python title="Method definition"
+def put_hypervisor_property_mappings(
+    self,
+    *,
+    HypervisorArn: str,
+    IamRoleArn: str,
+    VmwareToAwsTagMappings: Sequence[VmwareToAwsTagMappingTypeDef],  # (1)
+) -> PutHypervisorPropertyMappingsOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: VmwareToAwsTagMappingTypeDef](./type_defs.md#vmwaretoawstagmappingtypedef) 
+2. See [:material-code-braces: PutHypervisorPropertyMappingsOutputTypeDef](./type_defs.md#puthypervisorpropertymappingsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutHypervisorPropertyMappingsInputRequestTypeDef = {  # (1)
+    "HypervisorArn": ...,
+    "IamRoleArn": ...,
+    "VmwareToAwsTagMappings": ...,
+}
+
+parent.put_hypervisor_property_mappings(**kwargs)
+```
+
+1. See [:material-code-braces: PutHypervisorPropertyMappingsInputRequestTypeDef](./type_defs.md#puthypervisorpropertymappingsinputrequesttypedef) 
+
 ### put\_maintenance\_start\_time
 
 Set the maintenance start time for a gateway.
@@ -509,6 +663,36 @@ parent.put_maintenance_start_time(**kwargs)
 ```
 
 1. See [:material-code-braces: PutMaintenanceStartTimeInputRequestTypeDef](./type_defs.md#putmaintenancestarttimeinputrequesttypedef) 
+
+### start\_virtual\_machines\_metadata\_sync
+
+This action sends a request to sync metadata across the specified virtual
+machines.
+
+Type annotations and code completion for `#!python boto3.client("backup-gateway").start_virtual_machines_metadata_sync` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.start_virtual_machines_metadata_sync)
+
+```python title="Method definition"
+def start_virtual_machines_metadata_sync(
+    self,
+    *,
+    HypervisorArn: str,
+) -> StartVirtualMachinesMetadataSyncOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartVirtualMachinesMetadataSyncOutputTypeDef](./type_defs.md#startvirtualmachinesmetadatasyncoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartVirtualMachinesMetadataSyncInputRequestTypeDef = {  # (1)
+    "HypervisorArn": ...,
+}
+
+parent.start_virtual_machines_metadata_sync(**kwargs)
+```
+
+1. See [:material-code-braces: StartVirtualMachinesMetadataSyncInputRequestTypeDef](./type_defs.md#startvirtualmachinesmetadatasyncinputrequesttypedef) 
 
 ### tag\_resource
 
@@ -678,6 +862,7 @@ def update_hypervisor(
     *,
     HypervisorArn: str,
     Host: str = ...,
+    LogGroupArn: str = ...,
     Name: str = ...,
     Password: str = ...,
     Username: str = ...,

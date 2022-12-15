@@ -1277,6 +1277,491 @@ class AwsEc2InstanceNetworkInterfacesDetailsTypeDef(TypedDict):
     NetworkInterfaceId: NotRequired[str],
 ```
 
+## AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetailsTypeDef:
+    return {
+        "DeleteOnTermination": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetailsTypeDef(TypedDict):
+    DeleteOnTermination: NotRequired[bool],
+    Encrypted: NotRequired[bool],
+    Iops: NotRequired[int],
+    KmsKeyId: NotRequired[str],
+    SnapshotId: NotRequired[str],
+    Throughput: NotRequired[int],
+    VolumeSize: NotRequired[int],
+    VolumeType: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetailsTypeDef:
+    return {
+        "CapacityReservationId": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetailsTypeDef(TypedDict):
+    CapacityReservationId: NotRequired[str],
+    CapacityReservationResourceGroupArn: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataCpuOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataCpuOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataCpuOptionsDetailsTypeDef:
+    return {
+        "CoreCount": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataCpuOptionsDetailsTypeDef(TypedDict):
+    CoreCount: NotRequired[int],
+    ThreadsPerCore: NotRequired[int],
+```
+
+## AwsEc2LaunchTemplateDataCreditSpecificationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataCreditSpecificationDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataCreditSpecificationDetailsTypeDef:
+    return {
+        "CpuCredits": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataCreditSpecificationDetailsTypeDef(TypedDict):
+    CpuCredits: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetailsTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetailsTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetailsTypeDef:
+    return {
+        "Count": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetailsTypeDef(TypedDict):
+    Count: NotRequired[int],
+    Type: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataEnclaveOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataEnclaveOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataEnclaveOptionsDetailsTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataEnclaveOptionsDetailsTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+```
+
+## AwsEc2LaunchTemplateDataHibernationOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataHibernationOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataHibernationOptionsDetailsTypeDef:
+    return {
+        "Configured": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataHibernationOptionsDetailsTypeDef(TypedDict):
+    Configured: NotRequired[bool],
+```
+
+## AwsEc2LaunchTemplateDataIamInstanceProfileDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataIamInstanceProfileDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataIamInstanceProfileDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataIamInstanceProfileDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataLicenseSetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataLicenseSetDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataLicenseSetDetailsTypeDef:
+    return {
+        "LicenseConfigurationArn": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataLicenseSetDetailsTypeDef(TypedDict):
+    LicenseConfigurationArn: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataMaintenanceOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataMaintenanceOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataMaintenanceOptionsDetailsTypeDef:
+    return {
+        "AutoRecovery": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataMaintenanceOptionsDetailsTypeDef(TypedDict):
+    AutoRecovery: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataMetadataOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataMetadataOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataMetadataOptionsDetailsTypeDef:
+    return {
+        "HttpEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataMetadataOptionsDetailsTypeDef(TypedDict):
+    HttpEndpoint: NotRequired[str],
+    HttpProtocolIpv6: NotRequired[str],
+    HttpTokens: NotRequired[str],
+    HttpPutResponseHopLimit: NotRequired[int],
+    InstanceMetadataTags: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataMonitoringDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataMonitoringDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataMonitoringDetailsTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataMonitoringDetailsTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+```
+
+## AwsEc2LaunchTemplateDataPlacementDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataPlacementDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataPlacementDetailsTypeDef:
+    return {
+        "Affinity": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataPlacementDetailsTypeDef(TypedDict):
+    Affinity: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    GroupName: NotRequired[str],
+    HostId: NotRequired[str],
+    HostResourceGroupArn: NotRequired[str],
+    PartitionNumber: NotRequired[int],
+    SpreadDomain: NotRequired[str],
+    Tenancy: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetailsTypeDef:
+    return {
+        "EnableResourceNameDnsAAAARecord": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetailsTypeDef(TypedDict):
+    EnableResourceNameDnsAAAARecord: NotRequired[bool],
+    EnableResourceNameDnsARecord: NotRequired[bool],
+    HostnameType: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetailsTypeDef:
+    return {
+        "BlockDurationMinutes": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetailsTypeDef(TypedDict):
+    BlockDurationMinutes: NotRequired[int],
+    InstanceInterruptionBehavior: NotRequired[str],
+    MaxPrice: NotRequired[str],
+    SpotInstanceType: NotRequired[str],
+    ValidUntil: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorCountDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorCountDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorCountDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorCountDetailsTypeDef(TypedDict):
+    Max: NotRequired[int],
+    Min: NotRequired[int],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetailsTypeDef(TypedDict):
+    Max: NotRequired[int],
+    Min: NotRequired[int],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsBaselineEbsBandwidthMbpsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsBaselineEbsBandwidthMbpsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsBaselineEbsBandwidthMbpsDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsBaselineEbsBandwidthMbpsDetailsTypeDef(TypedDict):
+    Max: NotRequired[int],
+    Min: NotRequired[int],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetailsTypeDef(TypedDict):
+    Max: NotRequired[float],
+    Min: NotRequired[float],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetailsTypeDef(TypedDict):
+    Max: NotRequired[int],
+    Min: NotRequired[int],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetailsTypeDef(TypedDict):
+    Max: NotRequired[int],
+    Min: NotRequired[int],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsTotalLocalStorageGBDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsTotalLocalStorageGBDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsTotalLocalStorageGBDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsTotalLocalStorageGBDetailsTypeDef(TypedDict):
+    Max: NotRequired[float],
+    Min: NotRequired[float],
+```
+
+## AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetailsTypeDef:
+    return {
+        "Max": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetailsTypeDef(TypedDict):
+    Max: NotRequired[int],
+    Min: NotRequired[int],
+```
+
+## AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetailsTypeDef:
+    return {
+        "Ipv4Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetailsTypeDef(TypedDict):
+    Ipv4Prefix: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetailsTypeDef:
+    return {
+        "Ipv6Address": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetailsTypeDef(TypedDict):
+    Ipv6Address: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetailsTypeDef:
+    return {
+        "Ipv6Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetailsTypeDef(TypedDict):
+    Ipv6Prefix: NotRequired[str],
+```
+
+## AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetailsTypeDef:
+    return {
+        "Primary": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetailsTypeDef(TypedDict):
+    Primary: NotRequired[bool],
+    PrivateIpAddress: NotRequired[str],
+```
+
 ## AwsEc2NetworkAclAssociationTypeDef
 
 ```python title="Usage Example"
@@ -4205,6 +4690,22 @@ class AwsS3ObjectDetailsTypeDef(TypedDict):
     SSEKMSKeyId: NotRequired[str],
 ```
 
+## AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetailsTypeDef
+
+def get_value() -> AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetailsTypeDef:
+    return {
+        "MinimumInstanceMetadataServiceVersion": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetailsTypeDef(TypedDict):
+    MinimumInstanceMetadataServiceVersion: NotRequired[str],
+```
+
 ## AwsSecretsManagerSecretRotationRulesTypeDef
 
 ```python title="Usage Example"
@@ -4759,6 +5260,57 @@ def get_value() -> WafOverrideActionTypeDef:
 ```python title="Definition"
 class WafOverrideActionTypeDef(TypedDict):
     Type: NotRequired[str],
+```
+
+## AwsWafv2CustomHttpHeaderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2CustomHttpHeaderTypeDef
+
+def get_value() -> AwsWafv2CustomHttpHeaderTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2CustomHttpHeaderTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
+
+## AwsWafv2VisibilityConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2VisibilityConfigDetailsTypeDef
+
+def get_value() -> AwsWafv2VisibilityConfigDetailsTypeDef:
+    return {
+        "CloudWatchMetricsEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2VisibilityConfigDetailsTypeDef(TypedDict):
+    CloudWatchMetricsEnabled: NotRequired[bool],
+    MetricName: NotRequired[str],
+    SampledRequestsEnabled: NotRequired[bool],
+```
+
+## AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetailsTypeDef
+
+def get_value() -> AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetailsTypeDef:
+    return {
+        "ImmunityTime": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetailsTypeDef(TypedDict):
+    ImmunityTime: NotRequired[int],
 ```
 
 ## AwsXrayEncryptionConfigDetailsTypeDef
@@ -6807,6 +7359,144 @@ class AwsEc2InstanceDetailsTypeDef(TypedDict):
 
 1. See [:material-code-braces: AwsEc2InstanceNetworkInterfacesDetailsTypeDef](./type_defs.md#awsec2instancenetworkinterfacesdetailstypedef) 
 2. See [:material-code-braces: AwsEc2InstanceMetadataOptionsTypeDef](./type_defs.md#awsec2instancemetadataoptionstypedef) 
+## AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetailsTypeDef:
+    return {
+        "DeviceName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetailsTypeDef(TypedDict):
+    DeviceName: NotRequired[str],
+    Ebs: NotRequired[AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetailsTypeDef],  # (1)
+    NoDevice: NotRequired[str],
+    VirtualName: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEc2LaunchTemplateDataBlockDeviceMappingSetEbsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatablockdevicemappingsetebsdetailstypedef) 
+## AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetailsTypeDef:
+    return {
+        "CapacityReservationPreference": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetailsTypeDef(TypedDict):
+    CapacityReservationPreference: NotRequired[str],
+    CapacityReservationTarget: NotRequired[AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsEc2LaunchTemplateDataCapacityReservationSpecificationCapacityReservationTargetDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatacapacityreservationspecificationcapacityreservationtargetdetailstypedef) 
+## AwsEc2LaunchTemplateDataInstanceMarketOptionsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceMarketOptionsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceMarketOptionsDetailsTypeDef:
+    return {
+        "MarketType": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceMarketOptionsDetailsTypeDef(TypedDict):
+    MarketType: NotRequired[str],
+    SpotOptions: NotRequired[AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancemarketoptionsspotoptionsdetailstypedef) 
+## AwsEc2LaunchTemplateDataInstanceRequirementsDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataInstanceRequirementsDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataInstanceRequirementsDetailsTypeDef:
+    return {
+        "AcceleratorCount": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataInstanceRequirementsDetailsTypeDef(TypedDict):
+    AcceleratorCount: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorCountDetailsTypeDef],  # (1)
+    AcceleratorManufacturers: NotRequired[Sequence[str]],
+    AcceleratorNames: NotRequired[Sequence[str]],
+    AcceleratorTotalMemoryMiB: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetailsTypeDef],  # (2)
+    AcceleratorTypes: NotRequired[Sequence[str]],
+    BareMetal: NotRequired[str],
+    BaselineEbsBandwidthMbps: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsBaselineEbsBandwidthMbpsDetailsTypeDef],  # (3)
+    BurstablePerformance: NotRequired[str],
+    CpuManufacturers: NotRequired[Sequence[str]],
+    ExcludedInstanceTypes: NotRequired[Sequence[str]],
+    InstanceGenerations: NotRequired[Sequence[str]],
+    LocalStorage: NotRequired[str],
+    LocalStorageTypes: NotRequired[Sequence[str]],
+    MemoryGiBPerVCpu: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetailsTypeDef],  # (4)
+    MemoryMiB: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetailsTypeDef],  # (5)
+    NetworkInterfaceCount: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetailsTypeDef],  # (6)
+    OnDemandMaxPricePercentageOverLowestPrice: NotRequired[int],
+    RequireHibernateSupport: NotRequired[bool],
+    SpotMaxPricePercentageOverLowestPrice: NotRequired[int],
+    TotalLocalStorageGB: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsTotalLocalStorageGBDetailsTypeDef],  # (7)
+    VCpuCount: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetailsTypeDef],  # (8)
+```
+
+1. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorCountDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsacceleratorcountdetailstypedef) 
+2. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsacceleratortotalmemorymibdetailstypedef) 
+3. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsBaselineEbsBandwidthMbpsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsbaselineebsbandwidthmbpsdetailstypedef) 
+4. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsMemoryGiBPerVCpuDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsmemorygibpervcpudetailstypedef) 
+5. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsmemorymibdetailstypedef) 
+6. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsNetworkInterfaceCountDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsnetworkinterfacecountdetailstypedef) 
+7. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsTotalLocalStorageGBDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementstotallocalstoragegbdetailstypedef) 
+8. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsvcpucountdetailstypedef) 
+## AwsEc2LaunchTemplateDataNetworkInterfaceSetDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataNetworkInterfaceSetDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataNetworkInterfaceSetDetailsTypeDef:
+    return {
+        "AssociateCarrierIpAddress": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataNetworkInterfaceSetDetailsTypeDef(TypedDict):
+    AssociateCarrierIpAddress: NotRequired[bool],
+    AssociatePublicIpAddress: NotRequired[bool],
+    DeleteOnTermination: NotRequired[bool],
+    Description: NotRequired[str],
+    DeviceIndex: NotRequired[int],
+    Groups: NotRequired[Sequence[str]],
+    InterfaceType: NotRequired[str],
+    Ipv4PrefixCount: NotRequired[int],
+    Ipv4Prefixes: NotRequired[Sequence[AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetailsTypeDef]],  # (1)
+    Ipv6AddressCount: NotRequired[int],
+    Ipv6Addresses: NotRequired[Sequence[AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetailsTypeDef]],  # (2)
+    Ipv6PrefixCount: NotRequired[int],
+    Ipv6Prefixes: NotRequired[Sequence[AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetailsTypeDef]],  # (3)
+    NetworkCardIndex: NotRequired[int],
+    NetworkInterfaceId: NotRequired[str],
+    PrivateIpAddress: NotRequired[str],
+    PrivateIpAddresses: NotRequired[Sequence[AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetailsTypeDef]],  # (4)
+    SecondaryPrivateIpAddressCount: NotRequired[int],
+    SubnetId: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv4PrefixesDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatanetworkinterfacesetipv4prefixesdetailstypedef) 
+2. See [:material-code-braces: AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6AddressesDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatanetworkinterfacesetipv6addressesdetailstypedef) 
+3. See [:material-code-braces: AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatanetworkinterfacesetipv6prefixesdetailstypedef) 
+4. See [:material-code-braces: AwsEc2LaunchTemplateDataNetworkInterfaceSetPrivateIpAddressesDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatanetworkinterfacesetprivateipaddressesdetailstypedef) 
 ## AwsEc2NetworkAclEntryTypeDef
 
 ```python title="Usage Example"
@@ -7951,6 +8641,42 @@ class AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef(TypedDict):
 
 1. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleconditiontypedef) 
 2. See [:material-code-braces: AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleredirecttypedef) 
+## AwsSageMakerNotebookInstanceDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsSageMakerNotebookInstanceDetailsTypeDef
+
+def get_value() -> AwsSageMakerNotebookInstanceDetailsTypeDef:
+    return {
+        "AcceleratorTypes": ...,
+    }
+```
+
+```python title="Definition"
+class AwsSageMakerNotebookInstanceDetailsTypeDef(TypedDict):
+    AcceleratorTypes: NotRequired[Sequence[str]],
+    AdditionalCodeRepositories: NotRequired[Sequence[str]],
+    DefaultCodeRepository: NotRequired[str],
+    DirectInternetAccess: NotRequired[str],
+    FailureReason: NotRequired[str],
+    InstanceMetadataServiceConfiguration: NotRequired[AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetailsTypeDef],  # (1)
+    InstanceType: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
+    NotebookInstanceArn: NotRequired[str],
+    NotebookInstanceLifecycleConfigName: NotRequired[str],
+    NotebookInstanceName: NotRequired[str],
+    NotebookInstanceStatus: NotRequired[str],
+    PlatformIdentifier: NotRequired[str],
+    RoleArn: NotRequired[str],
+    RootAccess: NotRequired[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    SubnetId: NotRequired[str],
+    Url: NotRequired[str],
+    VolumeSizeInGB: NotRequired[int],
+```
+
+1. See [:material-code-braces: AwsSageMakerNotebookInstanceMetadataServiceConfigurationDetailsTypeDef](./type_defs.md#awssagemakernotebookinstancemetadataserviceconfigurationdetailstypedef) 
 ## AwsSecretsManagerSecretDetailsTypeDef
 
 ```python title="Usage Example"
@@ -8210,6 +8936,59 @@ class AwsWafWebAclRuleTypeDef(TypedDict):
 1. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
 2. See [:material-code-braces: WafExcludedRuleTypeDef](./type_defs.md#wafexcludedruletypedef) 
 3. See [:material-code-braces: WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef) 
+## AwsWafv2CustomRequestHandlingDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2CustomRequestHandlingDetailsTypeDef
+
+def get_value() -> AwsWafv2CustomRequestHandlingDetailsTypeDef:
+    return {
+        "InsertHeaders": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2CustomRequestHandlingDetailsTypeDef(TypedDict):
+    InsertHeaders: NotRequired[Sequence[AwsWafv2CustomHttpHeaderTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafv2CustomHttpHeaderTypeDef](./type_defs.md#awswafv2customhttpheadertypedef) 
+## AwsWafv2CustomResponseDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2CustomResponseDetailsTypeDef
+
+def get_value() -> AwsWafv2CustomResponseDetailsTypeDef:
+    return {
+        "CustomResponseBodyKey": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2CustomResponseDetailsTypeDef(TypedDict):
+    CustomResponseBodyKey: NotRequired[str],
+    ResponseCode: NotRequired[int],
+    ResponseHeaders: NotRequired[Sequence[AwsWafv2CustomHttpHeaderTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafv2CustomHttpHeaderTypeDef](./type_defs.md#awswafv2customhttpheadertypedef) 
+## AwsWafv2WebAclCaptchaConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2WebAclCaptchaConfigDetailsTypeDef
+
+def get_value() -> AwsWafv2WebAclCaptchaConfigDetailsTypeDef:
+    return {
+        "ImmunityTimeProperty": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2WebAclCaptchaConfigDetailsTypeDef(TypedDict):
+    ImmunityTimeProperty: NotRequired[AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetailsTypeDef](./type_defs.md#awswafv2webaclcaptchaconfigimmunitytimepropertydetailstypedef) 
 ## CreateActionTargetResponseTypeDef
 
 ```python title="Usage Example"
@@ -9695,6 +10474,69 @@ class AwsDynamoDbTableReplicaTypeDef(TypedDict):
 
 1. See [:material-code-braces: AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablereplicaglobalsecondaryindextypedef) 
 2. See [:material-code-braces: AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef) 
+## AwsEc2LaunchTemplateDataDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDataDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDataDetailsTypeDef:
+    return {
+        "BlockDeviceMappingSet": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDataDetailsTypeDef(TypedDict):
+    BlockDeviceMappingSet: NotRequired[Sequence[AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetailsTypeDef]],  # (1)
+    CapacityReservationSpecification: NotRequired[AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetailsTypeDef],  # (2)
+    CpuOptions: NotRequired[AwsEc2LaunchTemplateDataCpuOptionsDetailsTypeDef],  # (3)
+    CreditSpecification: NotRequired[AwsEc2LaunchTemplateDataCreditSpecificationDetailsTypeDef],  # (4)
+    DisableApiStop: NotRequired[bool],
+    DisableApiTermination: NotRequired[bool],
+    EbsOptimized: NotRequired[bool],
+    ElasticGpuSpecificationSet: NotRequired[Sequence[AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetailsTypeDef]],  # (5)
+    ElasticInferenceAcceleratorSet: NotRequired[Sequence[AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetailsTypeDef]],  # (6)
+    EnclaveOptions: NotRequired[AwsEc2LaunchTemplateDataEnclaveOptionsDetailsTypeDef],  # (7)
+    HibernationOptions: NotRequired[AwsEc2LaunchTemplateDataHibernationOptionsDetailsTypeDef],  # (8)
+    IamInstanceProfile: NotRequired[AwsEc2LaunchTemplateDataIamInstanceProfileDetailsTypeDef],  # (9)
+    ImageId: NotRequired[str],
+    InstanceInitiatedShutdownBehavior: NotRequired[str],
+    InstanceMarketOptions: NotRequired[AwsEc2LaunchTemplateDataInstanceMarketOptionsDetailsTypeDef],  # (10)
+    InstanceRequirements: NotRequired[AwsEc2LaunchTemplateDataInstanceRequirementsDetailsTypeDef],  # (11)
+    InstanceType: NotRequired[str],
+    KernelId: NotRequired[str],
+    KeyName: NotRequired[str],
+    LicenseSet: NotRequired[Sequence[AwsEc2LaunchTemplateDataLicenseSetDetailsTypeDef]],  # (12)
+    MaintenanceOptions: NotRequired[AwsEc2LaunchTemplateDataMaintenanceOptionsDetailsTypeDef],  # (13)
+    MetadataOptions: NotRequired[AwsEc2LaunchTemplateDataMetadataOptionsDetailsTypeDef],  # (14)
+    Monitoring: NotRequired[AwsEc2LaunchTemplateDataMonitoringDetailsTypeDef],  # (15)
+    NetworkInterfaceSet: NotRequired[Sequence[AwsEc2LaunchTemplateDataNetworkInterfaceSetDetailsTypeDef]],  # (16)
+    Placement: NotRequired[AwsEc2LaunchTemplateDataPlacementDetailsTypeDef],  # (17)
+    PrivateDnsNameOptions: NotRequired[AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetailsTypeDef],  # (18)
+    RamDiskId: NotRequired[str],
+    SecurityGroupIdSet: NotRequired[Sequence[str]],
+    SecurityGroupSet: NotRequired[Sequence[str]],
+    UserData: NotRequired[str],
+```
+
+1. See [:material-code-braces: AwsEc2LaunchTemplateDataBlockDeviceMappingSetDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatablockdevicemappingsetdetailstypedef) 
+2. See [:material-code-braces: AwsEc2LaunchTemplateDataCapacityReservationSpecificationDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatacapacityreservationspecificationdetailstypedef) 
+3. See [:material-code-braces: AwsEc2LaunchTemplateDataCpuOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatacpuoptionsdetailstypedef) 
+4. See [:material-code-braces: AwsEc2LaunchTemplateDataCreditSpecificationDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatacreditspecificationdetailstypedef) 
+5. See [:material-code-braces: AwsEc2LaunchTemplateDataElasticGpuSpecificationSetDetailsTypeDef](./type_defs.md#awsec2launchtemplatedataelasticgpuspecificationsetdetailstypedef) 
+6. See [:material-code-braces: AwsEc2LaunchTemplateDataElasticInferenceAcceleratorSetDetailsTypeDef](./type_defs.md#awsec2launchtemplatedataelasticinferenceacceleratorsetdetailstypedef) 
+7. See [:material-code-braces: AwsEc2LaunchTemplateDataEnclaveOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedataenclaveoptionsdetailstypedef) 
+8. See [:material-code-braces: AwsEc2LaunchTemplateDataHibernationOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatahibernationoptionsdetailstypedef) 
+9. See [:material-code-braces: AwsEc2LaunchTemplateDataIamInstanceProfileDetailsTypeDef](./type_defs.md#awsec2launchtemplatedataiaminstanceprofiledetailstypedef) 
+10. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceMarketOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancemarketoptionsdetailstypedef) 
+11. See [:material-code-braces: AwsEc2LaunchTemplateDataInstanceRequirementsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatainstancerequirementsdetailstypedef) 
+12. See [:material-code-braces: AwsEc2LaunchTemplateDataLicenseSetDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatalicensesetdetailstypedef) 
+13. See [:material-code-braces: AwsEc2LaunchTemplateDataMaintenanceOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatamaintenanceoptionsdetailstypedef) 
+14. See [:material-code-braces: AwsEc2LaunchTemplateDataMetadataOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatametadataoptionsdetailstypedef) 
+15. See [:material-code-braces: AwsEc2LaunchTemplateDataMonitoringDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatamonitoringdetailstypedef) 
+16. See [:material-code-braces: AwsEc2LaunchTemplateDataNetworkInterfaceSetDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatanetworkinterfacesetdetailstypedef) 
+17. See [:material-code-braces: AwsEc2LaunchTemplateDataPlacementDetailsTypeDef](./type_defs.md#awsec2launchtemplatedataplacementdetailstypedef) 
+18. See [:material-code-braces: AwsEc2LaunchTemplateDataPrivateDnsNameOptionsDetailsTypeDef](./type_defs.md#awsec2launchtemplatedataprivatednsnameoptionsdetailstypedef) 
 ## AwsEc2NetworkAclDetailsTypeDef
 
 ```python title="Usage Example"
@@ -10522,6 +11364,74 @@ class AwsWafWebAclDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsWafWebAclRuleTypeDef](./type_defs.md#awswafwebaclruletypedef) 
+## AwsWafv2ActionAllowDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2ActionAllowDetailsTypeDef
+
+def get_value() -> AwsWafv2ActionAllowDetailsTypeDef:
+    return {
+        "CustomRequestHandling": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2ActionAllowDetailsTypeDef(TypedDict):
+    CustomRequestHandling: NotRequired[AwsWafv2CustomRequestHandlingDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafv2CustomRequestHandlingDetailsTypeDef](./type_defs.md#awswafv2customrequesthandlingdetailstypedef) 
+## AwsWafv2RulesActionCaptchaDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2RulesActionCaptchaDetailsTypeDef
+
+def get_value() -> AwsWafv2RulesActionCaptchaDetailsTypeDef:
+    return {
+        "CustomRequestHandling": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2RulesActionCaptchaDetailsTypeDef(TypedDict):
+    CustomRequestHandling: NotRequired[AwsWafv2CustomRequestHandlingDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafv2CustomRequestHandlingDetailsTypeDef](./type_defs.md#awswafv2customrequesthandlingdetailstypedef) 
+## AwsWafv2RulesActionCountDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2RulesActionCountDetailsTypeDef
+
+def get_value() -> AwsWafv2RulesActionCountDetailsTypeDef:
+    return {
+        "CustomRequestHandling": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2RulesActionCountDetailsTypeDef(TypedDict):
+    CustomRequestHandling: NotRequired[AwsWafv2CustomRequestHandlingDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafv2CustomRequestHandlingDetailsTypeDef](./type_defs.md#awswafv2customrequesthandlingdetailstypedef) 
+## AwsWafv2ActionBlockDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2ActionBlockDetailsTypeDef
+
+def get_value() -> AwsWafv2ActionBlockDetailsTypeDef:
+    return {
+        "CustomResponse": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2ActionBlockDetailsTypeDef(TypedDict):
+    CustomResponse: NotRequired[AwsWafv2CustomResponseDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: AwsWafv2CustomResponseDetailsTypeDef](./type_defs.md#awswafv2customresponsedetailstypedef) 
 ## AwsSecurityFindingFiltersTypeDef
 
 ```python title="Usage Example"
@@ -11097,6 +12007,27 @@ class AwsDynamoDbTableDetailsTypeDef(TypedDict):
 8. See [:material-code-braces: AwsDynamoDbTableRestoreSummaryTypeDef](./type_defs.md#awsdynamodbtablerestoresummarytypedef) 
 9. See [:material-code-braces: AwsDynamoDbTableSseDescriptionTypeDef](./type_defs.md#awsdynamodbtablessedescriptiontypedef) 
 10. See [:material-code-braces: AwsDynamoDbTableStreamSpecificationTypeDef](./type_defs.md#awsdynamodbtablestreamspecificationtypedef) 
+## AwsEc2LaunchTemplateDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsEc2LaunchTemplateDetailsTypeDef
+
+def get_value() -> AwsEc2LaunchTemplateDetailsTypeDef:
+    return {
+        "LaunchTemplateName": ...,
+    }
+```
+
+```python title="Definition"
+class AwsEc2LaunchTemplateDetailsTypeDef(TypedDict):
+    LaunchTemplateName: NotRequired[str],
+    Id: NotRequired[str],
+    LaunchTemplateData: NotRequired[AwsEc2LaunchTemplateDataDetailsTypeDef],  # (1)
+    DefaultVersionNumber: NotRequired[int],
+    LatestVersionNumber: NotRequired[int],
+```
+
+1. See [:material-code-braces: AwsEc2LaunchTemplateDataDetailsTypeDef](./type_defs.md#awsec2launchtemplatedatadetailstypedef) 
 ## AwsEcsClusterDetailsTypeDef
 
 ```python title="Usage Example"
@@ -11279,6 +12210,48 @@ class AwsS3BucketNotificationConfigurationDetailTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsS3BucketNotificationConfigurationFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurationfiltertypedef) 
+## AwsWafv2RulesActionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2RulesActionDetailsTypeDef
+
+def get_value() -> AwsWafv2RulesActionDetailsTypeDef:
+    return {
+        "Allow": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2RulesActionDetailsTypeDef(TypedDict):
+    Allow: NotRequired[AwsWafv2ActionAllowDetailsTypeDef],  # (1)
+    Block: NotRequired[AwsWafv2ActionBlockDetailsTypeDef],  # (2)
+    Captcha: NotRequired[AwsWafv2RulesActionCaptchaDetailsTypeDef],  # (3)
+    Count: NotRequired[AwsWafv2RulesActionCountDetailsTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: AwsWafv2ActionAllowDetailsTypeDef](./type_defs.md#awswafv2actionallowdetailstypedef) 
+2. See [:material-code-braces: AwsWafv2ActionBlockDetailsTypeDef](./type_defs.md#awswafv2actionblockdetailstypedef) 
+3. See [:material-code-braces: AwsWafv2RulesActionCaptchaDetailsTypeDef](./type_defs.md#awswafv2rulesactioncaptchadetailstypedef) 
+4. See [:material-code-braces: AwsWafv2RulesActionCountDetailsTypeDef](./type_defs.md#awswafv2rulesactioncountdetailstypedef) 
+## AwsWafv2WebAclActionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2WebAclActionDetailsTypeDef
+
+def get_value() -> AwsWafv2WebAclActionDetailsTypeDef:
+    return {
+        "Allow": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2WebAclActionDetailsTypeDef(TypedDict):
+    Allow: NotRequired[AwsWafv2ActionAllowDetailsTypeDef],  # (1)
+    Block: NotRequired[AwsWafv2ActionBlockDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsWafv2ActionAllowDetailsTypeDef](./type_defs.md#awswafv2actionallowdetailstypedef) 
+2. See [:material-code-braces: AwsWafv2ActionBlockDetailsTypeDef](./type_defs.md#awswafv2actionblockdetailstypedef) 
 ## CreateInsightRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11644,6 +12617,28 @@ class AwsS3BucketNotificationConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsS3BucketNotificationConfigurationDetailTypeDef](./type_defs.md#awss3bucketnotificationconfigurationdetailtypedef) 
+## AwsWafv2RulesDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2RulesDetailsTypeDef
+
+def get_value() -> AwsWafv2RulesDetailsTypeDef:
+    return {
+        "Action": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2RulesDetailsTypeDef(TypedDict):
+    Action: NotRequired[AwsWafv2RulesActionDetailsTypeDef],  # (1)
+    Name: NotRequired[str],
+    OverrideAction: NotRequired[str],
+    Priority: NotRequired[int],
+    VisibilityConfig: NotRequired[AwsWafv2VisibilityConfigDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsWafv2RulesActionDetailsTypeDef](./type_defs.md#awswafv2rulesactiondetailstypedef) 
+2. See [:material-code-braces: AwsWafv2VisibilityConfigDetailsTypeDef](./type_defs.md#awswafv2visibilityconfigdetailstypedef) 
 ## GetInsightsResponseTypeDef
 
 ```python title="Usage Example"
@@ -11762,6 +12757,60 @@ class AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesdetailstypedef) 
+## AwsWafv2RuleGroupDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2RuleGroupDetailsTypeDef
+
+def get_value() -> AwsWafv2RuleGroupDetailsTypeDef:
+    return {
+        "Capacity": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2RuleGroupDetailsTypeDef(TypedDict):
+    Capacity: NotRequired[int],
+    Description: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Rules: NotRequired[Sequence[AwsWafv2RulesDetailsTypeDef]],  # (1)
+    Scope: NotRequired[str],
+    VisibilityConfig: NotRequired[AwsWafv2VisibilityConfigDetailsTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AwsWafv2RulesDetailsTypeDef](./type_defs.md#awswafv2rulesdetailstypedef) 
+2. See [:material-code-braces: AwsWafv2VisibilityConfigDetailsTypeDef](./type_defs.md#awswafv2visibilityconfigdetailstypedef) 
+## AwsWafv2WebAclDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AwsWafv2WebAclDetailsTypeDef
+
+def get_value() -> AwsWafv2WebAclDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsWafv2WebAclDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    ManagedbyFirewallManager: NotRequired[bool],
+    Id: NotRequired[str],
+    Capacity: NotRequired[int],
+    CaptchaConfig: NotRequired[AwsWafv2WebAclCaptchaConfigDetailsTypeDef],  # (1)
+    DefaultAction: NotRequired[AwsWafv2WebAclActionDetailsTypeDef],  # (2)
+    Description: NotRequired[str],
+    Rules: NotRequired[Sequence[AwsWafv2RulesDetailsTypeDef]],  # (3)
+    VisibilityConfig: NotRequired[AwsWafv2VisibilityConfigDetailsTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: AwsWafv2WebAclCaptchaConfigDetailsTypeDef](./type_defs.md#awswafv2webaclcaptchaconfigdetailstypedef) 
+2. See [:material-code-braces: AwsWafv2WebAclActionDetailsTypeDef](./type_defs.md#awswafv2webaclactiondetailstypedef) 
+3. See [:material-code-braces: AwsWafv2RulesDetailsTypeDef](./type_defs.md#awswafv2rulesdetailstypedef) 
+4. See [:material-code-braces: AwsWafv2VisibilityConfigDetailsTypeDef](./type_defs.md#awswafv2visibilityconfigdetailstypedef) 
 ## ClassificationResultTypeDef
 
 ```python title="Usage Example"
@@ -12015,6 +13064,10 @@ class ResourceDetailsTypeDef(TypedDict):
     AwsBackupBackupVault: NotRequired[AwsBackupBackupVaultDetailsTypeDef],  # (76)
     AwsBackupBackupPlan: NotRequired[AwsBackupBackupPlanDetailsTypeDef],  # (77)
     AwsBackupRecoveryPoint: NotRequired[AwsBackupRecoveryPointDetailsTypeDef],  # (78)
+    AwsEc2LaunchTemplate: NotRequired[AwsEc2LaunchTemplateDetailsTypeDef],  # (79)
+    AwsSageMakerNotebookInstance: NotRequired[AwsSageMakerNotebookInstanceDetailsTypeDef],  # (80)
+    AwsWafv2WebAcl: NotRequired[AwsWafv2WebAclDetailsTypeDef],  # (81)
+    AwsWafv2RuleGroup: NotRequired[AwsWafv2RuleGroupDetailsTypeDef],  # (82)
 ```
 
 1. See [:material-code-braces: AwsAutoScalingAutoScalingGroupDetailsTypeDef](./type_defs.md#awsautoscalingautoscalinggroupdetailstypedef) 
@@ -12095,6 +13148,10 @@ class ResourceDetailsTypeDef(TypedDict):
 76. See [:material-code-braces: AwsBackupBackupVaultDetailsTypeDef](./type_defs.md#awsbackupbackupvaultdetailstypedef) 
 77. See [:material-code-braces: AwsBackupBackupPlanDetailsTypeDef](./type_defs.md#awsbackupbackupplandetailstypedef) 
 78. See [:material-code-braces: AwsBackupRecoveryPointDetailsTypeDef](./type_defs.md#awsbackuprecoverypointdetailstypedef) 
+79. See [:material-code-braces: AwsEc2LaunchTemplateDetailsTypeDef](./type_defs.md#awsec2launchtemplatedetailstypedef) 
+80. See [:material-code-braces: AwsSageMakerNotebookInstanceDetailsTypeDef](./type_defs.md#awssagemakernotebookinstancedetailstypedef) 
+81. See [:material-code-braces: AwsWafv2WebAclDetailsTypeDef](./type_defs.md#awswafv2webacldetailstypedef) 
+82. See [:material-code-braces: AwsWafv2RuleGroupDetailsTypeDef](./type_defs.md#awswafv2rulegroupdetailstypedef) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"

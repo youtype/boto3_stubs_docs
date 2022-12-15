@@ -1741,6 +1741,7 @@ class DeltaTargetTypeDef(TypedDict):
     DeltaTables: NotRequired[List[str]],
     ConnectionName: NotRequired[str],
     WriteManifest: NotRequired[bool],
+    CreateNativeDeltaTable: NotRequired[bool],
 ```
 
 ## DynamoDBTargetTypeDef

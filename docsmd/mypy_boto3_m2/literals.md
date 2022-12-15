@@ -37,6 +37,7 @@ ApplicationLifecycleType = Literal[
     "Created",
     "Creating",
     "Deleting",
+    "Deleting From Environment",
     "Failed",
     "Ready",
     "Running",
@@ -161,6 +162,7 @@ EnvironmentLifecycleType = Literal[
     "Creating",
     "Deleting",
     "Failed",
+    "Updating",
 ]
 ```
 ## ListApplicationVersionsPaginatorName

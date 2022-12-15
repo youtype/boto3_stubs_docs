@@ -8893,6 +8893,24 @@ class RecommendationJobResourceLimitTypeDef(TypedDict):
     MaxParallelOfTests: NotRequired[int],
 ```
 
+## RecommendationJobVpcConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import RecommendationJobVpcConfigTypeDef
+
+def get_value() -> RecommendationJobVpcConfigTypeDef:
+    return {
+        "SecurityGroupIds": ...,
+        "Subnets": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationJobVpcConfigTypeDef(TypedDict):
+    SecurityGroupIds: Sequence[str],
+    Subnets: Sequence[str],
+```
+
 ## RenderableTaskTypeDef
 
 ```python title="Usage Example"
@@ -21236,6 +21254,7 @@ class RecommendationJobInputConfigTypeDef(TypedDict):
     VolumeKmsKeyId: NotRequired[str],
     ContainerConfig: NotRequired[RecommendationJobContainerConfigTypeDef],  # (4)
     Endpoints: NotRequired[Sequence[EndpointInfoTypeDef]],  # (5)
+    VpcConfig: NotRequired[RecommendationJobVpcConfigTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: TrafficPatternTypeDef](./type_defs.md#trafficpatterntypedef) 
@@ -21243,6 +21262,7 @@ class RecommendationJobInputConfigTypeDef(TypedDict):
 3. See [:material-code-braces: EndpointInputConfigurationTypeDef](./type_defs.md#endpointinputconfigurationtypedef) 
 4. See [:material-code-braces: RecommendationJobContainerConfigTypeDef](./type_defs.md#recommendationjobcontainerconfigtypedef) 
 5. See [:material-code-braces: EndpointInfoTypeDef](./type_defs.md#endpointinfotypedef) 
+6. See [:material-code-braces: RecommendationJobVpcConfigTypeDef](./type_defs.md#recommendationjobvpcconfigtypedef) 
 ## ExplainerConfigTypeDef
 
 ```python title="Usage Example"

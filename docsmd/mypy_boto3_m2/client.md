@@ -132,6 +132,7 @@ def create_application(
     name: str,
     clientToken: str = ...,
     description: str = ...,
+    kmsKeyId: str = ...,
     tags: Mapping[str, str] = ...,
 ) -> CreateApplicationResponseTypeDef:  # (3)
     ...
@@ -189,7 +190,8 @@ parent.create_data_set_import_task(**kwargs)
 
 ### create\_deployment
 
-Creates and starts a deployment to deploy an application into an environment.
+Creates and starts a deployment to deploy an application into a runtime
+environment.
 
 Type annotations and code completion for `#!python boto3.client("m2").create_deployment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/m2.html#MainframeModernization.Client.create_deployment)
@@ -239,6 +241,7 @@ def create_environment(
     description: str = ...,
     engineVersion: str = ...,
     highAvailabilityConfig: HighAvailabilityConfigTypeDef = ...,  # (2)
+    kmsKeyId: str = ...,
     preferredMaintenanceWindow: str = ...,
     publiclyAccessible: bool = ...,
     securityGroupIds: Sequence[str] = ...,
@@ -297,8 +300,8 @@ parent.delete_application(**kwargs)
 
 ### delete\_application\_from\_environment
 
-Deletes a specific application from a specified environment where it has been
-previously deployed.
+Deletes a specific application from the specific runtime environment where it
+was previously deployed.
 
 Type annotations and code completion for `#!python boto3.client("m2").delete_application_from_environment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/m2.html#MainframeModernization.Client.delete_application_from_environment)
@@ -328,7 +331,7 @@ parent.delete_application_from_environment(**kwargs)
 
 ### delete\_environment
 
-Deletes a specific environment.
+Deletes a specific runtime environment.
 
 Type annotations and code completion for `#!python boto3.client("m2").delete_environment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/m2.html#MainframeModernization.Client.delete_environment)
@@ -1096,7 +1099,7 @@ parent.update_application(**kwargs)
 
 ### update\_environment
 
-Updates the configuration details for a specific environment.
+Updates the configuration details for a specific runtime environment.
 
 Type annotations and code completion for `#!python boto3.client("m2").update_environment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/m2.html#MainframeModernization.Client.update_environment)

@@ -317,6 +317,7 @@ class PortMappingTypeDef(TypedDict):
     protocol: NotRequired[TransportProtocolType],  # (1)
     name: NotRequired[str],
     appProtocol: NotRequired[ApplicationProtocolType],  # (2)
+    containerPortRange: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TransportProtocolType](./literals.md#transportprotocoltype) 
@@ -506,6 +507,8 @@ class NetworkBindingTypeDef(TypedDict):
     containerPort: NotRequired[int],
     hostPort: NotRequired[int],
     protocol: NotRequired[TransportProtocolType],  # (1)
+    containerPortRange: NotRequired[str],
+    hostPortRange: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: TransportProtocolType](./literals.md#transportprotocoltype) 

@@ -26,6 +26,10 @@ AMITypesType = Literal[
     "BOTTLEROCKET_x86_64",
     "BOTTLEROCKET_x86_64_NVIDIA",
     "CUSTOM",
+    "WINDOWS_CORE_2019_x86_64",
+    "WINDOWS_CORE_2022_x86_64",
+    "WINDOWS_FULL_2019_x86_64",
+    "WINDOWS_FULL_2022_x86_64",
 ]
 ```
 ## AddonActiveWaiterName

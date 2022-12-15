@@ -152,7 +152,6 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef
 
 def get_value() -> AddTagsToStreamInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "Tags": ...,
     }
 ```
@@ -206,6 +205,7 @@ def get_value() -> AddTagsToStreamInputRequestTypeDef:
 - [UpdateShardCountInputRequestTypeDef](./type_defs.md#updateshardcountinputrequesttypedef)
 - [ChildShardTypeDef](./type_defs.md#childshardtypedef)
 - [CreateStreamInputRequestTypeDef](./type_defs.md#createstreaminputrequesttypedef)
+- [StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef)
 - [UpdateStreamModeInputRequestTypeDef](./type_defs.md#updatestreammodeinputrequesttypedef)
 - [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef)
 - [DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef)
@@ -213,7 +213,6 @@ def get_value() -> AddTagsToStreamInputRequestTypeDef:
 - [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef)
 - [GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef)
 - [ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)
-- [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)
 - [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef)
 - [RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef)
 - [UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef)
@@ -232,6 +231,7 @@ def get_value() -> AddTagsToStreamInputRequestTypeDef:
 - [SubscribeToShardInputRequestTypeDef](./type_defs.md#subscribetoshardinputrequesttypedef)
 - [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef)
 - [SubscribeToShardEventTypeDef](./type_defs.md#subscribetoshardeventtypedef)
+- [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)
 - [DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef)
 - [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef)
 - [StreamDescriptionTypeDef](./type_defs.md#streamdescriptiontypedef)

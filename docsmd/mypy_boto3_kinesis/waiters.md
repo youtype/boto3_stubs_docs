@@ -37,9 +37,10 @@ Type annotations and code completion for `#!python StreamExistsWaiter.wait` meth
 def wait(
     self,
     *,
-    StreamName: str,
+    StreamName: str = ...,
     Limit: int = ...,
     ExclusiveStartShardId: str = ...,
+    StreamARN: str = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...
@@ -87,9 +88,10 @@ Type annotations and code completion for `#!python StreamNotExistsWaiter.wait` m
 def wait(
     self,
     *,
-    StreamName: str,
+    StreamName: str = ...,
     Limit: int = ...,
     ExclusiveStartShardId: str = ...,
+    StreamARN: str = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...

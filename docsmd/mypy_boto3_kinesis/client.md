@@ -32,6 +32,7 @@ client = boto3.client("kinesis")
 try:
     do_something(client)
 except (
+    client.AccessDeniedException,
     client.ClientError,
     client.ExpiredIteratorException,
     client.ExpiredNextTokenException,
@@ -55,7 +56,7 @@ except (
 ```python title="Type checking example"
 from mypy_boto3_kinesis.client import Exceptions
 
-def handle_error(exc: Exceptions.ClientError) -> None:
+def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
@@ -74,8 +75,9 @@ Type annotations and code completion for `#!python boto3.client("kinesis").add_t
 def add_tags_to_stream(
     self,
     *,
-    StreamName: str,
     Tags: Mapping[str, str],
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -85,7 +87,6 @@ def add_tags_to_stream(
 
 ```python title="Usage example with kwargs"
 kwargs: AddTagsToStreamInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "Tags": ...,
 }
 
@@ -169,8 +170,9 @@ Type annotations and code completion for `#!python boto3.client("kinesis").decre
 def decrease_stream_retention_period(
     self,
     *,
-    StreamName: str,
     RetentionPeriodHours: int,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -180,7 +182,6 @@ def decrease_stream_retention_period(
 
 ```python title="Usage example with kwargs"
 kwargs: DecreaseStreamRetentionPeriodInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "RetentionPeriodHours": ...,
 }
 
@@ -200,8 +201,9 @@ Type annotations and code completion for `#!python boto3.client("kinesis").delet
 def delete_stream(
     self,
     *,
-    StreamName: str,
+    StreamName: str = ...,
     EnforceConsumerDeletion: bool = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -277,9 +279,10 @@ Type annotations and code completion for `#!python boto3.client("kinesis").descr
 def describe_stream(
     self,
     *,
-    StreamName: str,
+    StreamName: str = ...,
     Limit: int = ...,
     ExclusiveStartShardId: str = ...,
+    StreamARN: str = ...,
 ) -> DescribeStreamOutputTypeDef:  # (1)
     ...
 ```
@@ -341,7 +344,8 @@ Type annotations and code completion for `#!python boto3.client("kinesis").descr
 def describe_stream_summary(
     self,
     *,
-    StreamName: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> DescribeStreamSummaryOutputTypeDef:  # (1)
     ...
 ```
@@ -370,8 +374,9 @@ Type annotations and code completion for `#!python boto3.client("kinesis").disab
 def disable_enhanced_monitoring(
     self,
     *,
-    StreamName: str,
     ShardLevelMetrics: Sequence[MetricsNameType],  # (1)
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EnhancedMonitoringOutputTypeDef:  # (2)
     ...
 ```
@@ -382,7 +387,6 @@ def disable_enhanced_monitoring(
 
 ```python title="Usage example with kwargs"
 kwargs: DisableEnhancedMonitoringInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "ShardLevelMetrics": ...,
 }
 
@@ -402,8 +406,9 @@ Type annotations and code completion for `#!python boto3.client("kinesis").enabl
 def enable_enhanced_monitoring(
     self,
     *,
-    StreamName: str,
     ShardLevelMetrics: Sequence[MetricsNameType],  # (1)
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EnhancedMonitoringOutputTypeDef:  # (2)
     ...
 ```
@@ -414,7 +419,6 @@ def enable_enhanced_monitoring(
 
 ```python title="Usage example with kwargs"
 kwargs: EnableEnhancedMonitoringInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "ShardLevelMetrics": ...,
 }
 
@@ -455,6 +459,7 @@ def get_records(
     *,
     ShardIterator: str,
     Limit: int = ...,
+    StreamARN: str = ...,
 ) -> GetRecordsOutputTypeDef:  # (1)
     ...
 ```
@@ -483,11 +488,12 @@ Type annotations and code completion for `#!python boto3.client("kinesis").get_s
 def get_shard_iterator(
     self,
     *,
-    StreamName: str,
     ShardId: str,
     ShardIteratorType: ShardIteratorTypeType,  # (1)
+    StreamName: str = ...,
     StartingSequenceNumber: str = ...,
     Timestamp: Union[datetime, str] = ...,
+    StreamARN: str = ...,
 ) -> GetShardIteratorOutputTypeDef:  # (2)
     ...
 ```
@@ -498,7 +504,6 @@ def get_shard_iterator(
 
 ```python title="Usage example with kwargs"
 kwargs: GetShardIteratorInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "ShardId": ...,
     "ShardIteratorType": ...,
 }
@@ -520,8 +525,9 @@ Type annotations and code completion for `#!python boto3.client("kinesis").incre
 def increase_stream_retention_period(
     self,
     *,
-    StreamName: str,
     RetentionPeriodHours: int,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -531,7 +537,6 @@ def increase_stream_retention_period(
 
 ```python title="Usage example with kwargs"
 kwargs: IncreaseStreamRetentionPeriodInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "RetentionPeriodHours": ...,
 }
 
@@ -557,6 +562,7 @@ def list_shards(
     MaxResults: int = ...,
     StreamCreationTimestamp: Union[datetime, str] = ...,
     ShardFilter: ShardFilterTypeDef = ...,  # (1)
+    StreamARN: str = ...,
 ) -> ListShardsOutputTypeDef:  # (2)
     ...
 ```
@@ -621,6 +627,7 @@ def list_streams(
     *,
     Limit: int = ...,
     ExclusiveStartStreamName: str = ...,
+    NextToken: str = ...,
 ) -> ListStreamsOutputTypeDef:  # (1)
     ...
 ```
@@ -649,9 +656,10 @@ Type annotations and code completion for `#!python boto3.client("kinesis").list_
 def list_tags_for_stream(
     self,
     *,
-    StreamName: str,
+    StreamName: str = ...,
     ExclusiveStartTagKey: str = ...,
     Limit: int = ...,
+    StreamARN: str = ...,
 ) -> ListTagsForStreamOutputTypeDef:  # (1)
     ...
 ```
@@ -681,9 +689,10 @@ Type annotations and code completion for `#!python boto3.client("kinesis").merge
 def merge_shards(
     self,
     *,
-    StreamName: str,
     ShardToMerge: str,
     AdjacentShardToMerge: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -693,7 +702,6 @@ def merge_shards(
 
 ```python title="Usage example with kwargs"
 kwargs: MergeShardsInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "ShardToMerge": ...,
     "AdjacentShardToMerge": ...,
 }
@@ -714,11 +722,12 @@ Type annotations and code completion for `#!python boto3.client("kinesis").put_r
 def put_record(
     self,
     *,
-    StreamName: str,
     Data: Union[str, bytes, IO[Any], StreamingBody],
     PartitionKey: str,
+    StreamName: str = ...,
     ExplicitHashKey: str = ...,
     SequenceNumberForOrdering: str = ...,
+    StreamARN: str = ...,
 ) -> PutRecordOutputTypeDef:  # (1)
     ...
 ```
@@ -728,7 +737,6 @@ def put_record(
 
 ```python title="Usage example with kwargs"
 kwargs: PutRecordInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "Data": ...,
     "PartitionKey": ...,
 }
@@ -751,7 +759,8 @@ def put_records(
     self,
     *,
     Records: Sequence[PutRecordsRequestEntryTypeDef],  # (1)
-    StreamName: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> PutRecordsOutputTypeDef:  # (2)
     ...
 ```
@@ -763,7 +772,6 @@ def put_records(
 ```python title="Usage example with kwargs"
 kwargs: PutRecordsInputRequestTypeDef = {  # (1)
     "Records": ...,
-    "StreamName": ...,
 }
 
 parent.put_records(**kwargs)
@@ -813,8 +821,9 @@ Type annotations and code completion for `#!python boto3.client("kinesis").remov
 def remove_tags_from_stream(
     self,
     *,
-    StreamName: str,
     TagKeys: Sequence[str],
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -824,7 +833,6 @@ def remove_tags_from_stream(
 
 ```python title="Usage example with kwargs"
 kwargs: RemoveTagsFromStreamInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "TagKeys": ...,
 }
 
@@ -845,9 +853,10 @@ Type annotations and code completion for `#!python boto3.client("kinesis").split
 def split_shard(
     self,
     *,
-    StreamName: str,
     ShardToSplit: str,
     NewStartingHashKey: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (1)
     ...
 ```
@@ -857,7 +866,6 @@ def split_shard(
 
 ```python title="Usage example with kwargs"
 kwargs: SplitShardInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "ShardToSplit": ...,
     "NewStartingHashKey": ...,
 }
@@ -879,9 +887,10 @@ Type annotations and code completion for `#!python boto3.client("kinesis").start
 def start_stream_encryption(
     self,
     *,
-    StreamName: str,
     EncryptionType: EncryptionTypeType,  # (1)
     KeyId: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
@@ -892,7 +901,6 @@ def start_stream_encryption(
 
 ```python title="Usage example with kwargs"
 kwargs: StartStreamEncryptionInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "EncryptionType": ...,
     "KeyId": ...,
 }
@@ -913,9 +921,10 @@ Type annotations and code completion for `#!python boto3.client("kinesis").stop_
 def stop_stream_encryption(
     self,
     *,
-    StreamName: str,
     EncryptionType: EncryptionTypeType,  # (1)
     KeyId: str,
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> EmptyResponseMetadataTypeDef:  # (2)
     ...
 ```
@@ -926,7 +935,6 @@ def stop_stream_encryption(
 
 ```python title="Usage example with kwargs"
 kwargs: StopStreamEncryptionInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "EncryptionType": ...,
     "KeyId": ...,
 }
@@ -984,9 +992,10 @@ Type annotations and code completion for `#!python boto3.client("kinesis").updat
 def update_shard_count(
     self,
     *,
-    StreamName: str,
     TargetShardCount: int,
     ScalingType: ScalingTypeType,  # (1)
+    StreamName: str = ...,
+    StreamARN: str = ...,
 ) -> UpdateShardCountOutputTypeDef:  # (2)
     ...
 ```
@@ -997,7 +1006,6 @@ def update_shard_count(
 
 ```python title="Usage example with kwargs"
 kwargs: UpdateShardCountInputRequestTypeDef = {  # (1)
-    "StreamName": ...,
     "TargetShardCount": ...,
     "ScalingType": ...,
 }

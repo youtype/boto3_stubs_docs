@@ -971,6 +971,7 @@ def get_value() -> ActionSourceTypeDef:
 - [RecommendationJobCompiledOutputConfigTypeDef](./type_defs.md#recommendationjobcompiledoutputconfigtypedef)
 - [RecommendationJobPayloadConfigTypeDef](./type_defs.md#recommendationjobpayloadconfigtypedef)
 - [RecommendationJobResourceLimitTypeDef](./type_defs.md#recommendationjobresourcelimittypedef)
+- [RecommendationJobVpcConfigTypeDef](./type_defs.md#recommendationjobvpcconfigtypedef)
 - [RenderableTaskTypeDef](./type_defs.md#renderabletasktypedef)
 - [RenderingErrorTypeDef](./type_defs.md#renderingerrortypedef)
 - [ResourceConfigForUpdateTypeDef](./type_defs.md#resourceconfigforupdatetypedef)

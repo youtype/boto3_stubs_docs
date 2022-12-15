@@ -14,15 +14,15 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef
 
 def get_value() -> AddTagsToStreamInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "Tags": ...,
     }
 ```
 
 ```python title="Definition"
 class AddTagsToStreamInputRequestTypeDef(TypedDict):
-    StreamName: str,
     Tags: Mapping[str, str],
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## HashKeyRangeTypeDef
@@ -115,15 +115,15 @@ from mypy_boto3_kinesis.type_defs import DecreaseStreamRetentionPeriodInputReque
 
 def get_value() -> DecreaseStreamRetentionPeriodInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "RetentionPeriodHours": ...,
     }
 ```
 
 ```python title="Definition"
 class DecreaseStreamRetentionPeriodInputRequestTypeDef(TypedDict):
-    StreamName: str,
     RetentionPeriodHours: int,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## DeleteStreamInputRequestTypeDef
@@ -139,8 +139,9 @@ def get_value() -> DeleteStreamInputRequestTypeDef:
 
 ```python title="Definition"
 class DeleteStreamInputRequestTypeDef(TypedDict):
-    StreamName: str,
+    StreamName: NotRequired[str],
     EnforceConsumerDeletion: NotRequired[bool],
+    StreamARN: NotRequired[str],
 ```
 
 ## DeregisterStreamConsumerInputRequestTypeDef
@@ -234,9 +235,10 @@ def get_value() -> DescribeStreamInputRequestTypeDef:
 
 ```python title="Definition"
 class DescribeStreamInputRequestTypeDef(TypedDict):
-    StreamName: str,
+    StreamName: NotRequired[str],
     Limit: NotRequired[int],
     ExclusiveStartShardId: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## WaiterConfigTypeDef
@@ -269,7 +271,8 @@ def get_value() -> DescribeStreamSummaryInputRequestTypeDef:
 
 ```python title="Definition"
 class DescribeStreamSummaryInputRequestTypeDef(TypedDict):
-    StreamName: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## DisableEnhancedMonitoringInputRequestTypeDef
@@ -279,15 +282,15 @@ from mypy_boto3_kinesis.type_defs import DisableEnhancedMonitoringInputRequestTy
 
 def get_value() -> DisableEnhancedMonitoringInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "ShardLevelMetrics": ...,
     }
 ```
 
 ```python title="Definition"
 class DisableEnhancedMonitoringInputRequestTypeDef(TypedDict):
-    StreamName: str,
     ShardLevelMetrics: Sequence[MetricsNameType],  # (1)
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: MetricsNameType](./literals.md#metricsnametype) 
@@ -298,15 +301,15 @@ from mypy_boto3_kinesis.type_defs import EnableEnhancedMonitoringInputRequestTyp
 
 def get_value() -> EnableEnhancedMonitoringInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "ShardLevelMetrics": ...,
     }
 ```
 
 ```python title="Definition"
 class EnableEnhancedMonitoringInputRequestTypeDef(TypedDict):
-    StreamName: str,
     ShardLevelMetrics: Sequence[MetricsNameType],  # (1)
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: MetricsNameType](./literals.md#metricsnametype) 
@@ -342,6 +345,7 @@ def get_value() -> GetRecordsInputRequestTypeDef:
 class GetRecordsInputRequestTypeDef(TypedDict):
     ShardIterator: str,
     Limit: NotRequired[int],
+    StreamARN: NotRequired[str],
 ```
 
 ## RecordTypeDef
@@ -374,7 +378,6 @@ from mypy_boto3_kinesis.type_defs import GetShardIteratorInputRequestTypeDef
 
 def get_value() -> GetShardIteratorInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "ShardId": ...,
         "ShardIteratorType": ...,
     }
@@ -382,11 +385,12 @@ def get_value() -> GetShardIteratorInputRequestTypeDef:
 
 ```python title="Definition"
 class GetShardIteratorInputRequestTypeDef(TypedDict):
-    StreamName: str,
     ShardId: str,
     ShardIteratorType: ShardIteratorTypeType,  # (1)
+    StreamName: NotRequired[str],
     StartingSequenceNumber: NotRequired[str],
     Timestamp: NotRequired[Union[datetime, str]],
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ShardIteratorTypeType](./literals.md#sharditeratortypetype) 
@@ -397,15 +401,15 @@ from mypy_boto3_kinesis.type_defs import IncreaseStreamRetentionPeriodInputReque
 
 def get_value() -> IncreaseStreamRetentionPeriodInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "RetentionPeriodHours": ...,
     }
 ```
 
 ```python title="Definition"
 class IncreaseStreamRetentionPeriodInputRequestTypeDef(TypedDict):
-    StreamName: str,
     RetentionPeriodHours: int,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## InternalFailureExceptionTypeDef
@@ -573,6 +577,7 @@ def get_value() -> ListStreamsInputRequestTypeDef:
 class ListStreamsInputRequestTypeDef(TypedDict):
     Limit: NotRequired[int],
     ExclusiveStartStreamName: NotRequired[str],
+    NextToken: NotRequired[str],
 ```
 
 ## ListTagsForStreamInputRequestTypeDef
@@ -588,9 +593,10 @@ def get_value() -> ListTagsForStreamInputRequestTypeDef:
 
 ```python title="Definition"
 class ListTagsForStreamInputRequestTypeDef(TypedDict):
-    StreamName: str,
+    StreamName: NotRequired[str],
     ExclusiveStartTagKey: NotRequired[str],
     Limit: NotRequired[int],
+    StreamARN: NotRequired[str],
 ```
 
 ## TagTypeDef
@@ -617,7 +623,6 @@ from mypy_boto3_kinesis.type_defs import MergeShardsInputRequestTypeDef
 
 def get_value() -> MergeShardsInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "ShardToMerge": ...,
         "AdjacentShardToMerge": ...,
     }
@@ -625,9 +630,10 @@ def get_value() -> MergeShardsInputRequestTypeDef:
 
 ```python title="Definition"
 class MergeShardsInputRequestTypeDef(TypedDict):
-    StreamName: str,
     ShardToMerge: str,
     AdjacentShardToMerge: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## PutRecordInputRequestTypeDef
@@ -637,7 +643,6 @@ from mypy_boto3_kinesis.type_defs import PutRecordInputRequestTypeDef
 
 def get_value() -> PutRecordInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "Data": ...,
         "PartitionKey": ...,
     }
@@ -645,11 +650,12 @@ def get_value() -> PutRecordInputRequestTypeDef:
 
 ```python title="Definition"
 class PutRecordInputRequestTypeDef(TypedDict):
-    StreamName: str,
     Data: Union[str, bytes, IO[Any], StreamingBody],
     PartitionKey: str,
+    StreamName: NotRequired[str],
     ExplicitHashKey: NotRequired[str],
     SequenceNumberForOrdering: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## PutRecordsRequestEntryTypeDef
@@ -715,15 +721,15 @@ from mypy_boto3_kinesis.type_defs import RemoveTagsFromStreamInputRequestTypeDef
 
 def get_value() -> RemoveTagsFromStreamInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "TagKeys": ...,
     }
 ```
 
 ```python title="Definition"
 class RemoveTagsFromStreamInputRequestTypeDef(TypedDict):
-    StreamName: str,
     TagKeys: Sequence[str],
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## ResourceInUseExceptionTypeDef
@@ -782,7 +788,6 @@ from mypy_boto3_kinesis.type_defs import SplitShardInputRequestTypeDef
 
 def get_value() -> SplitShardInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "ShardToSplit": ...,
         "NewStartingHashKey": ...,
     }
@@ -790,9 +795,10 @@ def get_value() -> SplitShardInputRequestTypeDef:
 
 ```python title="Definition"
 class SplitShardInputRequestTypeDef(TypedDict):
-    StreamName: str,
     ShardToSplit: str,
     NewStartingHashKey: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 ## StartStreamEncryptionInputRequestTypeDef
@@ -802,7 +808,6 @@ from mypy_boto3_kinesis.type_defs import StartStreamEncryptionInputRequestTypeDe
 
 def get_value() -> StartStreamEncryptionInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "EncryptionType": ...,
         "KeyId": ...,
     }
@@ -810,9 +815,10 @@ def get_value() -> StartStreamEncryptionInputRequestTypeDef:
 
 ```python title="Definition"
 class StartStreamEncryptionInputRequestTypeDef(TypedDict):
-    StreamName: str,
     EncryptionType: EncryptionTypeType,  # (1)
     KeyId: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
@@ -842,7 +848,6 @@ from mypy_boto3_kinesis.type_defs import StopStreamEncryptionInputRequestTypeDef
 
 def get_value() -> StopStreamEncryptionInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "EncryptionType": ...,
         "KeyId": ...,
     }
@@ -850,9 +855,10 @@ def get_value() -> StopStreamEncryptionInputRequestTypeDef:
 
 ```python title="Definition"
 class StopStreamEncryptionInputRequestTypeDef(TypedDict):
-    StreamName: str,
     EncryptionType: EncryptionTypeType,  # (1)
     KeyId: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
@@ -863,7 +869,6 @@ from mypy_boto3_kinesis.type_defs import UpdateShardCountInputRequestTypeDef
 
 def get_value() -> UpdateShardCountInputRequestTypeDef:
     return {
-        "StreamName": ...,
         "TargetShardCount": ...,
         "ScalingType": ...,
     }
@@ -871,9 +876,10 @@ def get_value() -> UpdateShardCountInputRequestTypeDef:
 
 ```python title="Definition"
 class UpdateShardCountInputRequestTypeDef(TypedDict):
-    StreamName: str,
     TargetShardCount: int,
     ScalingType: ScalingTypeType,  # (1)
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ScalingTypeType](./literals.md#scalingtypetype) 
@@ -917,6 +923,30 @@ class CreateStreamInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef) 
+## StreamSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesis.type_defs import StreamSummaryTypeDef
+
+def get_value() -> StreamSummaryTypeDef:
+    return {
+        "StreamName": ...,
+        "StreamARN": ...,
+        "StreamStatus": ...,
+    }
+```
+
+```python title="Definition"
+class StreamSummaryTypeDef(TypedDict):
+    StreamName: str,
+    StreamARN: str,
+    StreamStatus: StreamStatusType,  # (1)
+    StreamModeDetails: NotRequired[StreamModeDetailsTypeDef],  # (2)
+    StreamCreationTimestamp: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: StreamStatusType](./literals.md#streamstatustype) 
+2. See [:material-code-braces: StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef) 
 ## UpdateStreamModeInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -1008,6 +1038,7 @@ def get_value() -> EnhancedMonitoringOutputTypeDef:
         "StreamName": ...,
         "CurrentShardLevelMetrics": ...,
         "DesiredShardLevelMetrics": ...,
+        "StreamARN": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1017,6 +1048,7 @@ class EnhancedMonitoringOutputTypeDef(TypedDict):
     StreamName: str,
     CurrentShardLevelMetrics: List[MetricsNameType],  # (1)
     DesiredShardLevelMetrics: List[MetricsNameType],  # (1)
+    StreamARN: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
@@ -1064,27 +1096,6 @@ class ListStreamConsumersOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConsumerTypeDef](./type_defs.md#consumertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStreamsOutputTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesis.type_defs import ListStreamsOutputTypeDef
-
-def get_value() -> ListStreamsOutputTypeDef:
-    return {
-        "StreamNames": ...,
-        "HasMoreStreams": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListStreamsOutputTypeDef(TypedDict):
-    StreamNames: List[str],
-    HasMoreStreams: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRecordOutputTypeDef
 
 ```python title="Usage Example"
@@ -1139,6 +1150,7 @@ def get_value() -> UpdateShardCountOutputTypeDef:
         "StreamName": ...,
         "CurrentShardCount": ...,
         "TargetShardCount": ...,
+        "StreamARN": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1148,6 +1160,7 @@ class UpdateShardCountOutputTypeDef(TypedDict):
     StreamName: str,
     CurrentShardCount: int,
     TargetShardCount: int,
+    StreamARN: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1165,7 +1178,8 @@ def get_value() -> DescribeStreamInputDescribeStreamPaginateTypeDef:
 
 ```python title="Definition"
 class DescribeStreamInputDescribeStreamPaginateTypeDef(TypedDict):
-    StreamName: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -1196,12 +1210,13 @@ from mypy_boto3_kinesis.type_defs import ListStreamsInputListStreamsPaginateType
 
 def get_value() -> ListStreamsInputListStreamsPaginateTypeDef:
     return {
-        "PaginationConfig": ...,
+        "ExclusiveStartStreamName": ...,
     }
 ```
 
 ```python title="Definition"
 class ListStreamsInputListStreamsPaginateTypeDef(TypedDict):
+    ExclusiveStartStreamName: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
 ```
 
@@ -1219,9 +1234,10 @@ def get_value() -> DescribeStreamInputStreamExistsWaitTypeDef:
 
 ```python title="Definition"
 class DescribeStreamInputStreamExistsWaitTypeDef(TypedDict):
-    StreamName: str,
+    StreamName: NotRequired[str],
     Limit: NotRequired[int],
     ExclusiveStartShardId: NotRequired[str],
+    StreamARN: NotRequired[str],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -1239,9 +1255,10 @@ def get_value() -> DescribeStreamInputStreamNotExistsWaitTypeDef:
 
 ```python title="Definition"
 class DescribeStreamInputStreamNotExistsWaitTypeDef(TypedDict):
-    StreamName: str,
+    StreamName: NotRequired[str],
     Limit: NotRequired[int],
     ExclusiveStartShardId: NotRequired[str],
+    StreamARN: NotRequired[str],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -1299,6 +1316,7 @@ class ListShardsInputListShardsPaginateTypeDef(TypedDict):
     ExclusiveStartShardId: NotRequired[str],
     StreamCreationTimestamp: NotRequired[Union[datetime, str]],
     ShardFilter: NotRequired[ShardFilterTypeDef],  # (1)
+    StreamARN: NotRequired[str],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -1323,6 +1341,7 @@ class ListShardsInputRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     StreamCreationTimestamp: NotRequired[Union[datetime, str]],
     ShardFilter: NotRequired[ShardFilterTypeDef],  # (1)
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ShardFilterTypeDef](./type_defs.md#shardfiltertypedef) 
@@ -1356,14 +1375,14 @@ from mypy_boto3_kinesis.type_defs import PutRecordsInputRequestTypeDef
 def get_value() -> PutRecordsInputRequestTypeDef:
     return {
         "Records": ...,
-        "StreamName": ...,
     }
 ```
 
 ```python title="Definition"
 class PutRecordsInputRequestTypeDef(TypedDict):
     Records: Sequence[PutRecordsRequestEntryTypeDef],  # (1)
-    StreamName: str,
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
 ```
 
 1. See [:material-code-braces: PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef) 
@@ -1487,6 +1506,32 @@ class SubscribeToShardEventTypeDef(TypedDict):
 
 1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
 2. See [:material-code-braces: ChildShardTypeDef](./type_defs.md#childshardtypedef) 
+## ListStreamsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesis.type_defs import ListStreamsOutputTypeDef
+
+def get_value() -> ListStreamsOutputTypeDef:
+    return {
+        "StreamNames": ...,
+        "HasMoreStreams": ...,
+        "NextToken": ...,
+        "StreamSummaries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamsOutputTypeDef(TypedDict):
+    StreamNames: List[str],
+    HasMoreStreams: bool,
+    NextToken: str,
+    StreamSummaries: List[StreamSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamSummaryTypeDef](./type_defs.md#streamsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStreamSummaryOutputTypeDef
 
 ```python title="Usage Example"

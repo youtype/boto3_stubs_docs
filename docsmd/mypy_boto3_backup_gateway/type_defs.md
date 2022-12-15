@@ -49,6 +49,31 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## BandwidthRateLimitIntervalTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import BandwidthRateLimitIntervalTypeDef
+
+def get_value() -> BandwidthRateLimitIntervalTypeDef:
+    return {
+        "DaysOfWeek": ...,
+        "EndHourOfDay": ...,
+        "EndMinuteOfHour": ...,
+        "StartHourOfDay": ...,
+        "StartMinuteOfHour": ...,
+    }
+```
+
+```python title="Definition"
+class BandwidthRateLimitIntervalTypeDef(TypedDict):
+    DaysOfWeek: List[int],
+    EndHourOfDay: int,
+    EndMinuteOfHour: int,
+    StartHourOfDay: int,
+    StartMinuteOfHour: int,
+    AverageUploadRateLimitInBitsPerSec: NotRequired[int],
+```
+
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -156,6 +181,22 @@ class GatewayTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
+## GetBandwidthRateLimitScheduleInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetBandwidthRateLimitScheduleInputRequestTypeDef
+
+def get_value() -> GetBandwidthRateLimitScheduleInputRequestTypeDef:
+    return {
+        "GatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetBandwidthRateLimitScheduleInputRequestTypeDef(TypedDict):
+    GatewayArn: str,
+```
+
 ## GetGatewayInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -172,6 +213,86 @@ class GetGatewayInputRequestTypeDef(TypedDict):
     GatewayArn: str,
 ```
 
+## GetHypervisorInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetHypervisorInputRequestTypeDef
+
+def get_value() -> GetHypervisorInputRequestTypeDef:
+    return {
+        "HypervisorArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetHypervisorInputRequestTypeDef(TypedDict):
+    HypervisorArn: str,
+```
+
+## HypervisorDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import HypervisorDetailsTypeDef
+
+def get_value() -> HypervisorDetailsTypeDef:
+    return {
+        "Host": ...,
+    }
+```
+
+```python title="Definition"
+class HypervisorDetailsTypeDef(TypedDict):
+    Host: NotRequired[str],
+    HypervisorArn: NotRequired[str],
+    KmsKeyArn: NotRequired[str],
+    LastSuccessfulMetadataSyncTime: NotRequired[datetime],
+    LatestMetadataSyncStatus: NotRequired[SyncMetadataStatusType],  # (1)
+    LatestMetadataSyncStatusMessage: NotRequired[str],
+    LogGroupArn: NotRequired[str],
+    Name: NotRequired[str],
+    State: NotRequired[HypervisorStateType],  # (2)
+```
+
+1. See [:material-code-brackets: SyncMetadataStatusType](./literals.md#syncmetadatastatustype) 
+2. See [:material-code-brackets: HypervisorStateType](./literals.md#hypervisorstatetype) 
+## GetHypervisorPropertyMappingsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetHypervisorPropertyMappingsInputRequestTypeDef
+
+def get_value() -> GetHypervisorPropertyMappingsInputRequestTypeDef:
+    return {
+        "HypervisorArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetHypervisorPropertyMappingsInputRequestTypeDef(TypedDict):
+    HypervisorArn: str,
+```
+
+## VmwareToAwsTagMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import VmwareToAwsTagMappingTypeDef
+
+def get_value() -> VmwareToAwsTagMappingTypeDef:
+    return {
+        "AwsTagKey": ...,
+        "AwsTagValue": ...,
+        "VmwareCategory": ...,
+        "VmwareTagName": ...,
+    }
+```
+
+```python title="Definition"
+class VmwareToAwsTagMappingTypeDef(TypedDict):
+    AwsTagKey: str,
+    AwsTagValue: str,
+    VmwareCategory: str,
+    VmwareTagName: str,
+```
+
 ## GetVirtualMachineInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -186,27 +307,6 @@ def get_value() -> GetVirtualMachineInputRequestTypeDef:
 ```python title="Definition"
 class GetVirtualMachineInputRequestTypeDef(TypedDict):
     ResourceArn: str,
-```
-
-## VirtualMachineDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import VirtualMachineDetailsTypeDef
-
-def get_value() -> VirtualMachineDetailsTypeDef:
-    return {
-        "HostName": ...,
-    }
-```
-
-```python title="Definition"
-class VirtualMachineDetailsTypeDef(TypedDict):
-    HostName: NotRequired[str],
-    HypervisorId: NotRequired[str],
-    LastBackupDate: NotRequired[datetime],
-    Name: NotRequired[str],
-    Path: NotRequired[str],
-    ResourceArn: NotRequired[str],
 ```
 
 ## HypervisorTypeDef
@@ -359,6 +459,22 @@ class PutMaintenanceStartTimeInputRequestTypeDef(TypedDict):
     DayOfWeek: NotRequired[int],
 ```
 
+## StartVirtualMachinesMetadataSyncInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import StartVirtualMachinesMetadataSyncInputRequestTypeDef
+
+def get_value() -> StartVirtualMachinesMetadataSyncInputRequestTypeDef:
+    return {
+        "HypervisorArn": ...,
+    }
+```
+
+```python title="Definition"
+class StartVirtualMachinesMetadataSyncInputRequestTypeDef(TypedDict):
+    HypervisorArn: str,
+```
+
 ## TestHypervisorConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -445,9 +561,28 @@ def get_value() -> UpdateHypervisorInputRequestTypeDef:
 class UpdateHypervisorInputRequestTypeDef(TypedDict):
     HypervisorArn: str,
     Host: NotRequired[str],
+    LogGroupArn: NotRequired[str],
     Name: NotRequired[str],
     Password: NotRequired[str],
     Username: NotRequired[str],
+```
+
+## VmwareTagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import VmwareTagTypeDef
+
+def get_value() -> VmwareTagTypeDef:
+    return {
+        "VmwareCategory": ...,
+    }
+```
+
+```python title="Definition"
+class VmwareTagTypeDef(TypedDict):
+    VmwareCategory: NotRequired[str],
+    VmwareTagDescription: NotRequired[str],
+    VmwareTagName: NotRequired[str],
 ```
 
 ## AssociateGatewayToServerOutputTypeDef
@@ -564,6 +699,44 @@ class ImportHypervisorConfigurationOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutBandwidthRateLimitScheduleOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import PutBandwidthRateLimitScheduleOutputTypeDef
+
+def get_value() -> PutBandwidthRateLimitScheduleOutputTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutBandwidthRateLimitScheduleOutputTypeDef(TypedDict):
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutHypervisorPropertyMappingsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import PutHypervisorPropertyMappingsOutputTypeDef
+
+def get_value() -> PutHypervisorPropertyMappingsOutputTypeDef:
+    return {
+        "HypervisorArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutHypervisorPropertyMappingsOutputTypeDef(TypedDict):
+    HypervisorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutMaintenanceStartTimeOutputTypeDef
 
 ```python title="Usage Example"
@@ -579,6 +752,25 @@ def get_value() -> PutMaintenanceStartTimeOutputTypeDef:
 ```python title="Definition"
 class PutMaintenanceStartTimeOutputTypeDef(TypedDict):
     GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartVirtualMachinesMetadataSyncOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import StartVirtualMachinesMetadataSyncOutputTypeDef
+
+def get_value() -> StartVirtualMachinesMetadataSyncOutputTypeDef:
+    return {
+        "HypervisorArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartVirtualMachinesMetadataSyncOutputTypeDef(TypedDict):
+    HypervisorArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -678,6 +870,47 @@ class UpdateHypervisorOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetBandwidthRateLimitScheduleOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetBandwidthRateLimitScheduleOutputTypeDef
+
+def get_value() -> GetBandwidthRateLimitScheduleOutputTypeDef:
+    return {
+        "BandwidthRateLimitIntervals": ...,
+        "GatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBandwidthRateLimitScheduleOutputTypeDef(TypedDict):
+    BandwidthRateLimitIntervals: List[BandwidthRateLimitIntervalTypeDef],  # (1)
+    GatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutBandwidthRateLimitScheduleInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import PutBandwidthRateLimitScheduleInputRequestTypeDef
+
+def get_value() -> PutBandwidthRateLimitScheduleInputRequestTypeDef:
+    return {
+        "BandwidthRateLimitIntervals": ...,
+        "GatewayArn": ...,
+    }
+```
+
+```python title="Definition"
+class PutBandwidthRateLimitScheduleInputRequestTypeDef(TypedDict):
+    BandwidthRateLimitIntervals: Sequence[BandwidthRateLimitIntervalTypeDef],  # (1)
+    GatewayArn: str,
+```
+
+1. See [:material-code-braces: BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef) 
 ## CreateGatewayInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -812,26 +1045,71 @@ class ListGatewaysOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: GatewayTypeDef](./type_defs.md#gatewaytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetVirtualMachineOutputTypeDef
+## GetHypervisorOutputTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_backup_gateway.type_defs import GetVirtualMachineOutputTypeDef
+from mypy_boto3_backup_gateway.type_defs import GetHypervisorOutputTypeDef
 
-def get_value() -> GetVirtualMachineOutputTypeDef:
+def get_value() -> GetHypervisorOutputTypeDef:
     return {
-        "VirtualMachine": ...,
+        "Hypervisor": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class GetVirtualMachineOutputTypeDef(TypedDict):
-    VirtualMachine: VirtualMachineDetailsTypeDef,  # (1)
+class GetHypervisorOutputTypeDef(TypedDict):
+    Hypervisor: HypervisorDetailsTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: VirtualMachineDetailsTypeDef](./type_defs.md#virtualmachinedetailstypedef) 
+1. See [:material-code-braces: HypervisorDetailsTypeDef](./type_defs.md#hypervisordetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetHypervisorPropertyMappingsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetHypervisorPropertyMappingsOutputTypeDef
+
+def get_value() -> GetHypervisorPropertyMappingsOutputTypeDef:
+    return {
+        "HypervisorArn": ...,
+        "IamRoleArn": ...,
+        "VmwareToAwsTagMappings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetHypervisorPropertyMappingsOutputTypeDef(TypedDict):
+    HypervisorArn: str,
+    IamRoleArn: str,
+    VmwareToAwsTagMappings: List[VmwareToAwsTagMappingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VmwareToAwsTagMappingTypeDef](./type_defs.md#vmwaretoawstagmappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutHypervisorPropertyMappingsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import PutHypervisorPropertyMappingsInputRequestTypeDef
+
+def get_value() -> PutHypervisorPropertyMappingsInputRequestTypeDef:
+    return {
+        "HypervisorArn": ...,
+        "IamRoleArn": ...,
+        "VmwareToAwsTagMappings": ...,
+    }
+```
+
+```python title="Definition"
+class PutHypervisorPropertyMappingsInputRequestTypeDef(TypedDict):
+    HypervisorArn: str,
+    IamRoleArn: str,
+    VmwareToAwsTagMappings: Sequence[VmwareToAwsTagMappingTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: VmwareToAwsTagMappingTypeDef](./type_defs.md#vmwaretoawstagmappingtypedef) 
 ## ListHypervisorsOutputTypeDef
 
 ```python title="Usage Example"
@@ -928,6 +1206,29 @@ class ListVirtualMachinesOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: VirtualMachineTypeDef](./type_defs.md#virtualmachinetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## VirtualMachineDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import VirtualMachineDetailsTypeDef
+
+def get_value() -> VirtualMachineDetailsTypeDef:
+    return {
+        "HostName": ...,
+    }
+```
+
+```python title="Definition"
+class VirtualMachineDetailsTypeDef(TypedDict):
+    HostName: NotRequired[str],
+    HypervisorId: NotRequired[str],
+    LastBackupDate: NotRequired[datetime],
+    Name: NotRequired[str],
+    Path: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    VmwareTags: NotRequired[List[VmwareTagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: VmwareTagTypeDef](./type_defs.md#vmwaretagtypedef) 
 ## GetGatewayOutputTypeDef
 
 ```python title="Usage Example"
@@ -947,4 +1248,24 @@ class GetGatewayOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GatewayDetailsTypeDef](./type_defs.md#gatewaydetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetVirtualMachineOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_backup_gateway.type_defs import GetVirtualMachineOutputTypeDef
+
+def get_value() -> GetVirtualMachineOutputTypeDef:
+    return {
+        "VirtualMachine": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetVirtualMachineOutputTypeDef(TypedDict):
+    VirtualMachine: VirtualMachineDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: VirtualMachineDetailsTypeDef](./type_defs.md#virtualmachinedetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
