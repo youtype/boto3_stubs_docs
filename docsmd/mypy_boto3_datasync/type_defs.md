@@ -1746,11 +1746,13 @@ class StartTaskExecutionRequestRequestTypeDef(TypedDict):
     OverrideOptions: NotRequired[OptionsTypeDef],  # (1)
     Includes: NotRequired[Sequence[FilterRuleTypeDef]],  # (2)
     Excludes: NotRequired[Sequence[FilterRuleTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagListEntryTypeDef]],  # (4)
 ```
 
 1. See [:material-code-braces: OptionsTypeDef](./type_defs.md#optionstypedef) 
 2. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
 3. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
+4. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
 ## UpdateTaskExecutionRequestRequestTypeDef
 
 ```python title="Usage Example"

@@ -1203,6 +1203,8 @@ class ListConnectorEntitiesRequestRequestTypeDef(TypedDict):
     connectorType: NotRequired[ConnectorTypeType],  # (1)
     entitiesPath: NotRequired[str],
     apiVersion: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
@@ -1951,6 +1953,7 @@ from mypy_boto3_appflow.type_defs import ListConnectorEntitiesResponseTypeDef
 def get_value() -> ListConnectorEntitiesResponseTypeDef:
     return {
         "connectorEntityMap": ...,
+        "nextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1958,6 +1961,7 @@ def get_value() -> ListConnectorEntitiesResponseTypeDef:
 ```python title="Definition"
 class ListConnectorEntitiesResponseTypeDef(TypedDict):
     connectorEntityMap: Dict[str, List[ConnectorEntityTypeDef]],  # (1)
+    nextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

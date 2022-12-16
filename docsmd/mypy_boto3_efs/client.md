@@ -949,7 +949,7 @@ parent.put_file_system_policy(**kwargs)
 
 ### put\_lifecycle\_configuration
 
-Use this action to manage EFS lifecycle management and intelligent tiering.
+Use this action to manage EFS lifecycle management and EFS Intelligent-Tiering.
 
 Type annotations and code completion for `#!python boto3.client("efs").put_lifecycle_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)

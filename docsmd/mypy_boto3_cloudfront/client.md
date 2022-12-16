@@ -1301,7 +1301,7 @@ parent.delete_streaming_distribution(**kwargs)
 ### describe\_function
 
 Gets configuration information and metadata about a CloudFront function, but not
-the function’s code.
+the function's code.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").describe_function` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function)
@@ -1351,7 +1351,7 @@ def generate_presigned_url(
 
 ### get\_cache\_policy
 
-Gets a cache policy, including the following metadata * The policy’s identifier.
+Gets a cache policy, including the following metadata * The policy's identifier.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").get_cache_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
@@ -1467,7 +1467,7 @@ parent.get_cloud_front_origin_access_identity_config(**kwargs)
 
 ### get\_continuous\_deployment\_policy
 
-Gets a continuous deployment policy, including metadata (the policy’s identifier
+Gets a continuous deployment policy, including metadata (the policy's identifier
 and the date and time when the policy was last modified).
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").get_continuous_deployment_policy` method.
@@ -1909,7 +1909,7 @@ parent.get_origin_access_control_config(**kwargs)
 
 ### get\_origin\_request\_policy
 
-Gets an origin request policy, including the following metadata * The policy’s
+Gets an origin request policy, including the following metadata * The policy's
 identifier.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").get_origin_request_policy` method.
@@ -2056,7 +2056,7 @@ parent.get_realtime_log_config(**kwargs)
 
 ### get\_response\_headers\_policy
 
-Gets a response headers policy, including metadata (the policy’s identifier and
+Gets a response headers policy, including metadata (the policy's identifier and
 the date and time when the policy was last modified).
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").get_response_headers_policy` method.
@@ -2333,7 +2333,7 @@ parent.list_distributions(**kwargs)
 ### list\_distributions\_by\_cache\_policy\_id
 
 Gets a list of distribution IDs for distributions that have a cache behavior
-that’s associated with the specified cache policy.
+that's associated with the specified cache policy.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
@@ -2397,7 +2397,7 @@ parent.list_distributions_by_key_group(**kwargs)
 ### list\_distributions\_by\_origin\_request\_policy\_id
 
 Gets a list of distribution IDs for distributions that have a cache behavior
-that’s associated with the specified origin request policy.
+that's associated with the specified origin request policy.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_origin_request_policy_id` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
@@ -2428,7 +2428,7 @@ parent.list_distributions_by_origin_request_policy_id(**kwargs)
 
 ### list\_distributions\_by\_realtime\_log\_config
 
-Gets a list of distributions that have a cache behavior that’s associated with
+Gets a list of distributions that have a cache behavior that's associated with
 the specified real-time log configuration.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
@@ -2462,7 +2462,7 @@ parent.list_distributions_by_realtime_log_config(**kwargs)
 ### list\_distributions\_by\_response\_headers\_policy\_id
 
 Gets a list of distribution IDs for distributions that have a cache behavior
-that’s associated with the specified response headers policy.
+that's associated with the specified response headers policy.
 
 Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_response_headers_policy_id` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_response_headers_policy_id)

@@ -20065,6 +20065,7 @@ class HyperParameterTuningJobConfigTypeDef(TypedDict):
     ParameterRanges: NotRequired[ParameterRangesTypeDef],  # (5)
     TrainingJobEarlyStoppingType: NotRequired[TrainingJobEarlyStoppingTypeType],  # (6)
     TuningJobCompletionCriteria: NotRequired[TuningJobCompletionCriteriaTypeDef],  # (7)
+    RandomSeed: NotRequired[int],
 ```
 
 1. See [:material-code-brackets: HyperParameterTuningJobStrategyTypeType](./literals.md#hyperparametertuningjobstrategytypetype) 

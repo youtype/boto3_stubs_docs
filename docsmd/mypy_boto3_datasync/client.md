@@ -645,7 +645,7 @@ parent.delete_location(**kwargs)
 
 ### delete\_task
 
-Deletes a task.
+Deletes an DataSync task.
 
 Type annotations and code completion for `#!python boto3.client("datasync").delete_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task)
@@ -1138,7 +1138,7 @@ parent.list_locations(**kwargs)
 
 ### list\_tags\_for\_resource
 
-Returns all the tags associated with a specified resource.
+Returns all the tags associated with an Amazon Web Services resource.
 
 Type annotations and code completion for `#!python boto3.client("datasync").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
@@ -1232,7 +1232,7 @@ parent.list_tasks(**kwargs)
 
 ### start\_task\_execution
 
-Starts a specific invocation of a task.
+Starts an DataSync task.
 
 Type annotations and code completion for `#!python boto3.client("datasync").start_task_execution` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution)
@@ -1245,14 +1245,16 @@ def start_task_execution(
     OverrideOptions: OptionsTypeDef = ...,  # (1)
     Includes: Sequence[FilterRuleTypeDef] = ...,  # (2)
     Excludes: Sequence[FilterRuleTypeDef] = ...,  # (2)
-) -> StartTaskExecutionResponseTypeDef:  # (4)
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (4)
+) -> StartTaskExecutionResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: OptionsTypeDef](./type_defs.md#optionstypedef) 
 2. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
 3. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
-4. See [:material-code-braces: StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef) 
+4. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+5. See [:material-code-braces: StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1267,7 +1269,7 @@ parent.start_task_execution(**kwargs)
 
 ### tag\_resource
 
-Applies a key-value pair to an Amazon Web Services resource.
+Applies a *tag* to an Amazon Web Services resource.
 
 Type annotations and code completion for `#!python boto3.client("datasync").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource)
@@ -1298,7 +1300,7 @@ parent.tag_resource(**kwargs)
 
 ### untag\_resource
 
-Removes a tag from an Amazon Web Services resource.
+Removes tags from an Amazon Web Services resource.
 
 Type annotations and code completion for `#!python boto3.client("datasync").untag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource)

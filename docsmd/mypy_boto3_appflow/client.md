@@ -461,6 +461,8 @@ def list_connector_entities(
     connectorType: ConnectorTypeType = ...,  # (1)
     entitiesPath: str = ...,
     apiVersion: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
 ) -> ListConnectorEntitiesResponseTypeDef:  # (2)
     ...
 ```
