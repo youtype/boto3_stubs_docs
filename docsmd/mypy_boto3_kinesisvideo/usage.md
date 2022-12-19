@@ -43,14 +43,14 @@ type checking and code completion should work out of the box.
     session = Session()
     client = session.client("kinesisvideo")  # (1)
 
-    paginator = client.get_paginator("list_signaling_channels")  # (2)
+    paginator = client.get_paginator("describe_mapped_resource_configuration")  # (2)
     for item in paginator.paginate(...):
         print(item)  # (3)
     ```
 
     1. client: [KinesisVideoClient](./client.md)
-    2. paginator: [ListSignalingChannelsPaginator](./paginators.md#listsignalingchannelspaginator)
-    3. item: [:material-code-braces: ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef) 
+    2. paginator: [DescribeMappedResourceConfigurationPaginator](./paginators.md#describemappedresourceconfigurationpaginator)
+    3. item: [:material-code-braces: DescribeMappedResourceConfigurationOutputTypeDef](./type_defs.md#describemappedresourceconfigurationoutputtypedef) 
 
 
 
@@ -90,16 +90,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_kinesisvideo.client import KinesisVideoClient
-    from mypy_boto3_kinesisvideo.paginator import ListSignalingChannelsPaginator
-    from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsOutputTypeDef
+    from mypy_boto3_kinesisvideo.paginator import DescribeMappedResourceConfigurationPaginator
+    from mypy_boto3_kinesisvideo.type_defs import DescribeMappedResourceConfigurationOutputTypeDef
 
 
     session = Session()
     client: KinesisVideoClient = session.client("kinesisvideo")
 
-    paginator: ListSignalingChannelsPaginator = client.get_paginator("list_signaling_channels")
+    paginator: DescribeMappedResourceConfigurationPaginator = client.get_paginator("describe_mapped_resource_configuration")
     for item in paginator.paginate(...):
-        item: ListSignalingChannelsOutputTypeDef
+        item: DescribeMappedResourceConfigurationOutputTypeDef
         print(item)
     ```
 

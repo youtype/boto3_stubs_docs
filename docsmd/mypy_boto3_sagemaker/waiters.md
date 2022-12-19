@@ -279,6 +279,7 @@ def wait(
     *,
     ImageName: str,
     Version: int = ...,
+    Alias: str = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...
@@ -328,6 +329,7 @@ def wait(
     *,
     ImageName: str,
     Version: int = ...,
+    Alias: str = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
 ) -> None:
     ...

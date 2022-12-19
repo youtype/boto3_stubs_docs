@@ -71,12 +71,13 @@ from `#!python boto3.client("kinesisvideo").get_paginator("...")`.
 ```python title="Usage example"
 from boto3.session import Session
 
-from mypy_boto3_kinesisvideo.paginator import ListSignalingChannelsPaginator
+from mypy_boto3_kinesisvideo.paginator import DescribeMappedResourceConfigurationPaginator
 
-def get_list_signaling_channels_paginator() -> ListSignalingChannelsPaginator:
-    return Session().client("kinesisvideo").get_paginator("list_signaling_channels"))
+def get_describe_mapped_resource_configuration_paginator() -> DescribeMappedResourceConfigurationPaginator:
+    return Session().client("kinesisvideo").get_paginator("describe_mapped_resource_configuration"))
 ```
 
+- [DescribeMappedResourceConfigurationPaginator](./paginators.md#describemappedresourceconfigurationpaginator)
 - [ListSignalingChannelsPaginator](./paginators.md#listsignalingchannelspaginator)
 - [ListStreamsPaginator](./paginators.md#liststreamspaginator)
 
@@ -105,11 +106,13 @@ def get_value() -> APINameType:
 - [ChannelTypeType](./literals.md#channeltypetype)
 - [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - [ConfigurationStatusType](./literals.md#configurationstatustype)
+- [DescribeMappedResourceConfigurationPaginatorName](./literals.md#describemappedresourceconfigurationpaginatorname)
 - [FormatConfigKeyType](./literals.md#formatconfigkeytype)
 - [FormatType](./literals.md#formattype)
 - [ImageSelectorTypeType](./literals.md#imageselectortypetype)
 - [ListSignalingChannelsPaginatorName](./literals.md#listsignalingchannelspaginatorname)
 - [ListStreamsPaginatorName](./literals.md#liststreamspaginatorname)
+- [MediaStorageConfigurationStatusType](./literals.md#mediastorageconfigurationstatustype)
 - [MediaUriTypeType](./literals.md#mediauritypetype)
 - [StatusType](./literals.md#statustype)
 - [StrategyOnFullSizeType](./literals.md#strategyonfullsizetype)
@@ -147,6 +150,11 @@ def get_value() -> SingleMasterConfigurationTypeDef:
 - [LocalSizeConfigTypeDef](./type_defs.md#localsizeconfigtypedef)
 - [DescribeEdgeConfigurationInputRequestTypeDef](./type_defs.md#describeedgeconfigurationinputrequesttypedef)
 - [DescribeImageGenerationConfigurationInputRequestTypeDef](./type_defs.md#describeimagegenerationconfigurationinputrequesttypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [DescribeMappedResourceConfigurationInputRequestTypeDef](./type_defs.md#describemappedresourceconfigurationinputrequesttypedef)
+- [MappedResourceConfigurationListItemTypeDef](./type_defs.md#mappedresourceconfigurationlistitemtypedef)
+- [DescribeMediaStorageConfigurationInputRequestTypeDef](./type_defs.md#describemediastorageconfigurationinputrequesttypedef)
+- [MediaStorageConfigurationTypeDef](./type_defs.md#mediastorageconfigurationtypedef)
 - [DescribeNotificationConfigurationInputRequestTypeDef](./type_defs.md#describenotificationconfigurationinputrequesttypedef)
 - [DescribeSignalingChannelInputRequestTypeDef](./type_defs.md#describesignalingchannelinputrequesttypedef)
 - [DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef)
@@ -155,7 +163,6 @@ def get_value() -> SingleMasterConfigurationTypeDef:
 - [SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef)
 - [ResourceEndpointListItemTypeDef](./type_defs.md#resourceendpointlistitemtypedef)
 - [ImageGenerationDestinationConfigTypeDef](./type_defs.md#imagegenerationdestinationconfigtypedef)
-- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
 - [ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef)
@@ -178,12 +185,16 @@ def get_value() -> SingleMasterConfigurationTypeDef:
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
 - [ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef)
 - [DeletionConfigTypeDef](./type_defs.md#deletionconfigtypedef)
+- [DescribeMappedResourceConfigurationInputDescribeMappedResourceConfigurationPaginateTypeDef](./type_defs.md#describemappedresourceconfigurationinputdescribemappedresourceconfigurationpaginatetypedef)
+- [ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef](./type_defs.md#listsignalingchannelsinputlistsignalingchannelspaginatetypedef)
+- [DescribeMappedResourceConfigurationOutputTypeDef](./type_defs.md#describemappedresourceconfigurationoutputtypedef)
+- [DescribeMediaStorageConfigurationOutputTypeDef](./type_defs.md#describemediastorageconfigurationoutputtypedef)
+- [UpdateMediaStorageConfigurationInputRequestTypeDef](./type_defs.md#updatemediastorageconfigurationinputrequesttypedef)
 - [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef)
 - [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)
 - [GetSignalingChannelEndpointInputRequestTypeDef](./type_defs.md#getsignalingchannelendpointinputrequesttypedef)
 - [GetSignalingChannelEndpointOutputTypeDef](./type_defs.md#getsignalingchannelendpointoutputtypedef)
 - [ImageGenerationConfigurationTypeDef](./type_defs.md#imagegenerationconfigurationtypedef)
-- [ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef](./type_defs.md#listsignalingchannelsinputlistsignalingchannelspaginatetypedef)
 - [ListStreamsInputListStreamsPaginateTypeDef](./type_defs.md#liststreamsinputliststreamspaginatetypedef)
 - [ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef)
 - [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)

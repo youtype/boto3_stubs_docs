@@ -791,6 +791,26 @@ class DeleteTaskSetRequestRequestTypeDef(TypedDict):
     force: NotRequired[bool],
 ```
 
+## DeploymentAlarmsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import DeploymentAlarmsTypeDef
+
+def get_value() -> DeploymentAlarmsTypeDef:
+    return {
+        "alarmNames": ...,
+        "enable": ...,
+        "rollback": ...,
+    }
+```
+
+```python title="Definition"
+class DeploymentAlarmsTypeDef(TypedDict):
+    alarmNames: Sequence[str],
+    enable: bool,
+    rollback: bool,
+```
+
 ## DeploymentCircuitBreakerTypeDef
 
 ```python title="Usage Example"
@@ -2597,9 +2617,11 @@ class DeploymentConfigurationTypeDef(TypedDict):
     deploymentCircuitBreaker: NotRequired[DeploymentCircuitBreakerTypeDef],  # (1)
     maximumPercent: NotRequired[int],
     minimumHealthyPercent: NotRequired[int],
+    alarms: NotRequired[DeploymentAlarmsTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: DeploymentCircuitBreakerTypeDef](./type_defs.md#deploymentcircuitbreakertypedef) 
+2. See [:material-code-braces: DeploymentAlarmsTypeDef](./type_defs.md#deploymentalarmstypedef) 
 ## DescribeServicesRequestServicesInactiveWaitTypeDef
 
 ```python title="Usage Example"

@@ -1619,14 +1619,16 @@ from mypy_boto3_athena.type_defs import UpdateNotebookInputRequestTypeDef
 def get_value() -> UpdateNotebookInputRequestTypeDef:
     return {
         "NotebookId": ...,
+        "Payload": ...,
+        "Type": ...,
     }
 ```
 
 ```python title="Definition"
 class UpdateNotebookInputRequestTypeDef(TypedDict):
     NotebookId: str,
-    Payload: NotRequired[str],
-    Type: NotRequired[NotebookTypeType],  # (1)
+    Payload: str,
+    Type: NotebookTypeType,  # (1)
     SessionId: NotRequired[str],
     ClientRequestToken: NotRequired[str],
 ```

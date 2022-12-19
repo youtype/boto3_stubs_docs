@@ -1036,6 +1036,7 @@ def create_db_instance_read_replica(
     CustomIamInstanceProfile: str = ...,
     NetworkType: str = ...,
     StorageThroughput: int = ...,
+    EnableCustomerOwnedIp: bool = ...,
     SourceRegion: str = ...,
 ) -> CreateDBInstanceReadReplicaResultTypeDef:  # (4)
     ...

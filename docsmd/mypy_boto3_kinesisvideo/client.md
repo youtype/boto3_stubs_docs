@@ -282,6 +282,68 @@ parent.describe_image_generation_configuration(**kwargs)
 
 1. See [:material-code-braces: DescribeImageGenerationConfigurationInputRequestTypeDef](./type_defs.md#describeimagegenerationconfigurationinputrequesttypedef) 
 
+### describe\_mapped\_resource\_configuration
+
+Returns the most current information about the stream.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").describe_mapped_resource_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_mapped_resource_configuration)
+
+```python title="Method definition"
+def describe_mapped_resource_configuration(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeMappedResourceConfigurationOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeMappedResourceConfigurationOutputTypeDef](./type_defs.md#describemappedresourceconfigurationoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMappedResourceConfigurationInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.describe_mapped_resource_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMappedResourceConfigurationInputRequestTypeDef](./type_defs.md#describemappedresourceconfigurationinputrequesttypedef) 
+
+### describe\_media\_storage\_configuration
+
+Returns the most current information about the channel.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").describe_media_storage_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_media_storage_configuration)
+
+```python title="Method definition"
+def describe_media_storage_configuration(
+    self,
+    *,
+    ChannelName: str = ...,
+    ChannelARN: str = ...,
+) -> DescribeMediaStorageConfigurationOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeMediaStorageConfigurationOutputTypeDef](./type_defs.md#describemediastorageconfigurationoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMediaStorageConfigurationInputRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
+
+parent.describe_media_storage_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMediaStorageConfigurationInputRequestTypeDef](./type_defs.md#describemediastorageconfigurationinputrequesttypedef) 
+
 ### describe\_notification\_configuration
 
 Gets the `NotificationConfiguration` for a given Kinesis video stream.
@@ -800,6 +862,37 @@ parent.update_image_generation_configuration(**kwargs)
 
 1. See [:material-code-braces: UpdateImageGenerationConfigurationInputRequestTypeDef](./type_defs.md#updateimagegenerationconfigurationinputrequesttypedef) 
 
+### update\_media\_storage\_configuration
+
+Associates a `SignalingChannel` to a stream to store the media.
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").update_media_storage_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_media_storage_configuration)
+
+```python title="Method definition"
+def update_media_storage_configuration(
+    self,
+    *,
+    ChannelARN: str,
+    MediaStorageConfiguration: MediaStorageConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: MediaStorageConfigurationTypeDef](./type_defs.md#mediastorageconfigurationtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateMediaStorageConfigurationInputRequestTypeDef = {  # (1)
+    "ChannelARN": ...,
+    "MediaStorageConfiguration": ...,
+}
+
+parent.update_media_storage_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateMediaStorageConfigurationInputRequestTypeDef](./type_defs.md#updatemediastorageconfigurationinputrequesttypedef) 
+
 ### update\_notification\_configuration
 
 Updates the notification information for a stream.
@@ -901,6 +994,7 @@ parent.update_stream(**kwargs)
 
 Type annotations and code completion for `#!python boto3.client("kinesisvideo").get_paginator` method with overloads.
 
+- `client.get_paginator("describe_mapped_resource_configuration")` -> [DescribeMappedResourceConfigurationPaginator](./paginators.md#describemappedresourceconfigurationpaginator)
 - `client.get_paginator("list_signaling_channels")` -> [ListSignalingChannelsPaginator](./paginators.md#listsignalingchannelspaginator)
 - `client.get_paginator("list_streams")` -> [ListStreamsPaginator](./paginators.md#liststreamspaginator)
 

@@ -40,6 +40,7 @@ def get_value() -> ChannelProtocolType:
 ```python title="Definition"
 ChannelProtocolType = Literal[
     "HTTPS",
+    "WEBRTC",
     "WSS",
 ]
 ```
@@ -100,6 +101,20 @@ def get_value() -> ConfigurationStatusType:
 ConfigurationStatusType = Literal[
     "DISABLED",
     "ENABLED",
+]
+```
+## DescribeMappedResourceConfigurationPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.literals import DescribeMappedResourceConfigurationPaginatorName
+
+def get_value() -> DescribeMappedResourceConfigurationPaginatorName:
+    return "describe_mapped_resource_configuration"
+```
+
+```python title="Definition"
+DescribeMappedResourceConfigurationPaginatorName = Literal[
+    "describe_mapped_resource_configuration",
 ]
 ```
 ## FormatConfigKeyType
@@ -172,6 +187,21 @@ def get_value() -> ListStreamsPaginatorName:
 ```python title="Definition"
 ListStreamsPaginatorName = Literal[
     "list_streams",
+]
+```
+## MediaStorageConfigurationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.literals import MediaStorageConfigurationStatusType
+
+def get_value() -> MediaStorageConfigurationStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+MediaStorageConfigurationStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
 ]
 ```
 ## MediaUriTypeType
@@ -452,6 +482,7 @@ ServiceName = Literal[
     "kinesis-video-archived-media",
     "kinesis-video-media",
     "kinesis-video-signaling",
+    "kinesis-video-webrtc-storage",
     "kinesisanalytics",
     "kinesisanalyticsv2",
     "kinesisvideo",
@@ -645,11 +676,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_kinesisvideo.literals import PaginatorName
 
 def get_value() -> PaginatorName:
-    return "list_signaling_channels"
+    return "describe_mapped_resource_configuration"
 ```
 
 ```python title="Definition"
 PaginatorName = Literal[
+    "describe_mapped_resource_configuration",
     "list_signaling_channels",
     "list_streams",
 ]

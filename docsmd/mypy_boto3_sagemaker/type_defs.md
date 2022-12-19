@@ -1507,8 +1507,19 @@ class CreateImageVersionRequestRequestTypeDef(TypedDict):
     BaseImage: str,
     ClientToken: str,
     ImageName: str,
+    Aliases: NotRequired[Sequence[str]],
+    VendorGuidance: NotRequired[VendorGuidanceType],  # (1)
+    JobType: NotRequired[JobTypeType],  # (2)
+    MLFramework: NotRequired[str],
+    ProgrammingLang: NotRequired[str],
+    Processor: NotRequired[ProcessorType],  # (3)
+    Horovod: NotRequired[bool],
+    ReleaseNotes: NotRequired[str],
 ```
 
+1. See [:material-code-brackets: VendorGuidanceType](./literals.md#vendorguidancetype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: ProcessorType](./literals.md#processortype) 
 ## InferenceExperimentScheduleTypeDef
 
 ```python title="Usage Example"
@@ -2723,14 +2734,14 @@ from mypy_boto3_sagemaker.type_defs import DeleteImageVersionRequestRequestTypeD
 def get_value() -> DeleteImageVersionRequestRequestTypeDef:
     return {
         "ImageName": ...,
-        "Version": ...,
     }
 ```
 
 ```python title="Definition"
 class DeleteImageVersionRequestRequestTypeDef(TypedDict):
     ImageName: str,
-    Version: int,
+    Version: NotRequired[int],
+    Alias: NotRequired[str],
 ```
 
 ## DeleteInferenceExperimentRequestRequestTypeDef
@@ -3891,6 +3902,7 @@ def get_value() -> DescribeImageVersionRequestRequestTypeDef:
 class DescribeImageVersionRequestRequestTypeDef(TypedDict):
     ImageName: str,
     Version: NotRequired[int],
+    Alias: NotRequired[str],
 ```
 
 ## DescribeInferenceExperimentRequestRequestTypeDef
@@ -5852,6 +5864,26 @@ class ListAlgorithmsInputRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AlgorithmSortByType](./literals.md#algorithmsortbytype) 
 2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+## ListAliasesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListAliasesRequestRequestTypeDef
+
+def get_value() -> ListAliasesRequestRequestTypeDef:
+    return {
+        "ImageName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesRequestRequestTypeDef(TypedDict):
+    ImageName: str,
+    Alias: NotRequired[str],
+    Version: NotRequired[int],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
 ## ListAppImageConfigsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9487,6 +9519,36 @@ class UpdateImageRequestRequestTypeDef(TypedDict):
     RoleArn: NotRequired[str],
 ```
 
+## UpdateImageVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateImageVersionRequestRequestTypeDef
+
+def get_value() -> UpdateImageVersionRequestRequestTypeDef:
+    return {
+        "ImageName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateImageVersionRequestRequestTypeDef(TypedDict):
+    ImageName: str,
+    Alias: NotRequired[str],
+    Version: NotRequired[int],
+    AliasesToAdd: NotRequired[Sequence[str]],
+    AliasesToDelete: NotRequired[Sequence[str]],
+    VendorGuidance: NotRequired[VendorGuidanceType],  # (1)
+    JobType: NotRequired[JobTypeType],  # (2)
+    MLFramework: NotRequired[str],
+    ProgrammingLang: NotRequired[str],
+    Processor: NotRequired[ProcessorType],  # (3)
+    Horovod: NotRequired[bool],
+    ReleaseNotes: NotRequired[str],
+```
+
+1. See [:material-code-brackets: VendorGuidanceType](./literals.md#vendorguidancetype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: ProcessorType](./literals.md#processortype) 
 ## UpdateModelCardRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10830,6 +10892,13 @@ def get_value() -> DescribeImageVersionResponseTypeDef:
         "ImageVersionStatus": ...,
         "LastModifiedTime": ...,
         "Version": ...,
+        "VendorGuidance": ...,
+        "JobType": ...,
+        "MLFramework": ...,
+        "ProgrammingLang": ...,
+        "Processor": ...,
+        "Horovod": ...,
+        "ReleaseNotes": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -10845,11 +10914,21 @@ class DescribeImageVersionResponseTypeDef(TypedDict):
     ImageVersionStatus: ImageVersionStatusType,  # (1)
     LastModifiedTime: datetime,
     Version: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    VendorGuidance: VendorGuidanceType,  # (2)
+    JobType: JobTypeType,  # (3)
+    MLFramework: str,
+    ProgrammingLang: str,
+    Processor: ProcessorType,  # (4)
+    Horovod: bool,
+    ReleaseNotes: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-brackets: ImageVersionStatusType](./literals.md#imageversionstatustype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-brackets: VendorGuidanceType](./literals.md#vendorguidancetype) 
+3. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+4. See [:material-code-brackets: ProcessorType](./literals.md#processortype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePipelineDefinitionForExecutionResponseTypeDef
 
 ```python title="Usage Example"
@@ -11016,6 +11095,27 @@ def get_value() -> ImportHubContentResponseTypeDef:
 class ImportHubContentResponseTypeDef(TypedDict):
     HubArn: str,
     HubContentArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAliasesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListAliasesResponseTypeDef
+
+def get_value() -> ListAliasesResponseTypeDef:
+    return {
+        "SageMakerImageVersionAliases": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesResponseTypeDef(TypedDict):
+    SageMakerImageVersionAliases: List[str],
+    NextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -11396,6 +11496,25 @@ def get_value() -> UpdateImageResponseTypeDef:
 ```python title="Definition"
 class UpdateImageResponseTypeDef(TypedDict):
     ImageArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateImageVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import UpdateImageVersionResponseTypeDef
+
+def get_value() -> UpdateImageVersionResponseTypeDef:
+    return {
+        "ImageVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateImageVersionResponseTypeDef(TypedDict):
+    ImageVersionArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -14339,6 +14458,7 @@ def get_value() -> DescribeImageVersionRequestImageVersionCreatedWaitTypeDef:
 class DescribeImageVersionRequestImageVersionCreatedWaitTypeDef(TypedDict):
     ImageName: str,
     Version: NotRequired[int],
+    Alias: NotRequired[str],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -14358,6 +14478,7 @@ def get_value() -> DescribeImageVersionRequestImageVersionDeletedWaitTypeDef:
 class DescribeImageVersionRequestImageVersionDeletedWaitTypeDef(TypedDict):
     ImageName: str,
     Version: NotRequired[int],
+    Alias: NotRequired[str],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
 ```
 
@@ -16053,6 +16174,26 @@ class ListAlgorithmsInputListAlgorithmsPaginateTypeDef(TypedDict):
 1. See [:material-code-brackets: AlgorithmSortByType](./literals.md#algorithmsortbytype) 
 2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAliasesRequestListAliasesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ListAliasesRequestListAliasesPaginateTypeDef
+
+def get_value() -> ListAliasesRequestListAliasesPaginateTypeDef:
+    return {
+        "ImageName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesRequestListAliasesPaginateTypeDef(TypedDict):
+    ImageName: str,
+    Alias: NotRequired[str],
+    Version: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAppImageConfigsRequestListAppImageConfigsPaginateTypeDef
 
 ```python title="Usage Example"

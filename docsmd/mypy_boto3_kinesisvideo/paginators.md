@@ -7,6 +7,66 @@
     Auto-generated documentation for [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
     type annotations stubs module [mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
+## DescribeMappedResourceConfigurationPaginator
+
+Type annotations and code completion for `#!python boto3.client("kinesisvideo").get_paginator("describe_mapped_resource_configuration")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Paginator.DescribeMappedResourceConfiguration)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesisvideo.paginator import DescribeMappedResourceConfigurationPaginator
+
+def get_describe_mapped_resource_configuration_paginator() -> DescribeMappedResourceConfigurationPaginator:
+    return Session().client("kinesisvideo").get_paginator("describe_mapped_resource_configuration")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_kinesisvideo.paginator import DescribeMappedResourceConfigurationPaginator
+
+session = Session()
+
+client = Session().client("kinesisvideo")  # (1)
+paginator: DescribeMappedResourceConfigurationPaginator = client.get_paginator("describe_mapped_resource_configuration")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [KinesisVideoClient](./client.md)
+2. paginator: [DescribeMappedResourceConfigurationPaginator](./paginators.md#describemappedresourceconfigurationpaginator)
+3. item: [:material-code-braces: DescribeMappedResourceConfigurationOutputTypeDef](./type_defs.md#describemappedresourceconfigurationoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeMappedResourceConfigurationPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeMappedResourceConfigurationOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeMappedResourceConfigurationOutputTypeDef](./type_defs.md#describemappedresourceconfigurationoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMappedResourceConfigurationInputDescribeMappedResourceConfigurationPaginateTypeDef = {  # (1)
+    "StreamName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMappedResourceConfigurationInputDescribeMappedResourceConfigurationPaginateTypeDef](./type_defs.md#describemappedresourceconfigurationinputdescribemappedresourceconfigurationpaginatetypedef) 
 ## ListSignalingChannelsPaginator
 
 Type annotations and code completion for `#!python boto3.client("kinesisvideo").get_paginator("list_signaling_channels")`.

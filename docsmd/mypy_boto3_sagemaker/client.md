@@ -1179,11 +1179,22 @@ def create_image_version(
     BaseImage: str,
     ClientToken: str,
     ImageName: str,
-) -> CreateImageVersionResponseTypeDef:  # (1)
+    Aliases: Sequence[str] = ...,
+    VendorGuidance: VendorGuidanceType = ...,  # (1)
+    JobType: JobTypeType = ...,  # (2)
+    MLFramework: str = ...,
+    ProgrammingLang: str = ...,
+    Processor: ProcessorType = ...,  # (3)
+    Horovod: bool = ...,
+    ReleaseNotes: str = ...,
+) -> CreateImageVersionResponseTypeDef:  # (4)
     ...
 ```
 
-1. See [:material-code-braces: CreateImageVersionResponseTypeDef](./type_defs.md#createimageversionresponsetypedef) 
+1. See [:material-code-brackets: VendorGuidanceType](./literals.md#vendorguidancetype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: ProcessorType](./literals.md#processortype) 
+4. See [:material-code-braces: CreateImageVersionResponseTypeDef](./type_defs.md#createimageversionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -3076,7 +3087,8 @@ def delete_image_version(
     self,
     *,
     ImageName: str,
-    Version: int,
+    Version: int = ...,
+    Alias: str = ...,
 ) -> Dict[str, Any]:
     ...
 ```
@@ -3086,7 +3098,6 @@ def delete_image_version(
 ```python title="Usage example with kwargs"
 kwargs: DeleteImageVersionRequestRequestTypeDef = {  # (1)
     "ImageName": ...,
-    "Version": ...,
 }
 
 parent.delete_image_version(**kwargs)
@@ -4559,6 +4570,7 @@ def describe_image_version(
     *,
     ImageName: str,
     Version: int = ...,
+    Alias: str = ...,
 ) -> DescribeImageVersionResponseTypeDef:  # (1)
     ...
 ```
@@ -5790,6 +5802,39 @@ parent.list_algorithms(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAlgorithmsInputRequestTypeDef](./type_defs.md#listalgorithmsinputrequesttypedef) 
+
+### list\_aliases
+
+Lists the aliases of a specified image or image version.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").list_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_aliases)
+
+```python title="Method definition"
+def list_aliases(
+    self,
+    *,
+    ImageName: str,
+    Alias: str = ...,
+    Version: int = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAliasesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAliasesRequestRequestTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.list_aliases(**kwargs)
+```
+
+1. See [:material-code-braces: ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef) 
 
 ### list\_app\_image\_configs
 
@@ -9739,6 +9784,49 @@ parent.update_image(**kwargs)
 
 1. See [:material-code-braces: UpdateImageRequestRequestTypeDef](./type_defs.md#updateimagerequestrequesttypedef) 
 
+### update\_image\_version
+
+Updates the properties of a SageMaker image version.
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").update_image_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_image_version)
+
+```python title="Method definition"
+def update_image_version(
+    self,
+    *,
+    ImageName: str,
+    Alias: str = ...,
+    Version: int = ...,
+    AliasesToAdd: Sequence[str] = ...,
+    AliasesToDelete: Sequence[str] = ...,
+    VendorGuidance: VendorGuidanceType = ...,  # (1)
+    JobType: JobTypeType = ...,  # (2)
+    MLFramework: str = ...,
+    ProgrammingLang: str = ...,
+    Processor: ProcessorType = ...,  # (3)
+    Horovod: bool = ...,
+    ReleaseNotes: str = ...,
+) -> UpdateImageVersionResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: VendorGuidanceType](./literals.md#vendorguidancetype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: ProcessorType](./literals.md#processortype) 
+4. See [:material-code-braces: UpdateImageVersionResponseTypeDef](./type_defs.md#updateimageversionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateImageVersionRequestRequestTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.update_image_version(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateImageVersionRequestRequestTypeDef](./type_defs.md#updateimageversionrequestrequesttypedef) 
+
 ### update\_inference\_experiment
 
 Updates an inference experiment that you created.
@@ -10347,6 +10435,7 @@ Type annotations and code completion for `#!python boto3.client("sagemaker").get
 
 - `client.get_paginator("list_actions")` -> [ListActionsPaginator](./paginators.md#listactionspaginator)
 - `client.get_paginator("list_algorithms")` -> [ListAlgorithmsPaginator](./paginators.md#listalgorithmspaginator)
+- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
 - `client.get_paginator("list_app_image_configs")` -> [ListAppImageConfigsPaginator](./paginators.md#listappimageconfigspaginator)
 - `client.get_paginator("list_apps")` -> [ListAppsPaginator](./paginators.md#listappspaginator)
 - `client.get_paginator("list_artifacts")` -> [ListArtifactsPaginator](./paginators.md#listartifactspaginator)

@@ -138,6 +138,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListAlgorithmsInputListAlgorithmsPaginateTypeDef](./type_defs.md#listalgorithmsinputlistalgorithmspaginatetypedef) 
+## ListAliasesPaginator
+
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_aliases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListAliases)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListAliasesPaginator
+
+def get_list_aliases_paginator() -> ListAliasesPaginator:
+    return Session().client("sagemaker").get_paginator("list_aliases")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sagemaker.paginator import ListAliasesPaginator
+
+session = Session()
+
+client = Session().client("sagemaker")  # (1)
+paginator: ListAliasesPaginator = client.get_paginator("list_aliases")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SageMakerClient](./client.md)
+2. paginator: [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+3. item: [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListAliasesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ImageName: str,
+    Alias: str = ...,
+    Version: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAliasesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAliasesRequestListAliasesPaginateTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAliasesRequestListAliasesPaginateTypeDef](./type_defs.md#listaliasesrequestlistaliasespaginatetypedef) 
 ## ListAppImageConfigsPaginator
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").get_paginator("list_app_image_configs")`.

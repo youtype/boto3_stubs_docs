@@ -204,6 +204,7 @@ ServiceName = Literal[
     "kinesis-video-archived-media",
     "kinesis-video-media",
     "kinesis-video-signaling",
+    "kinesis-video-webrtc-storage",
     "kinesisanalytics",
     "kinesisanalyticsv2",
     "kinesisvideo",
@@ -397,11 +398,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_sso_oidc.literals import RegionName
 
 def get_value() -> RegionName:
-    return "ap-east-1"
+    return "af-south-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "af-south-1",
     "ap-east-1",
     "ap-northeast-1",
     "ap-northeast-2",
@@ -409,6 +411,7 @@ RegionName = Literal[
     "ap-south-1",
     "ap-southeast-1",
     "ap-southeast-2",
+    "ap-southeast-3",
     "ca-central-1",
     "eu-central-1",
     "eu-north-1",
@@ -420,6 +423,7 @@ RegionName = Literal[
     "sa-east-1",
     "us-east-1",
     "us-east-2",
+    "us-west-1",
     "us-west-2",
 ]
 ```

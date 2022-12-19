@@ -416,6 +416,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-kinesis-video-signaling](./mypy_boto3_kinesis_video_signaling/README.md) for [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels) service
 
+- [mypy-boto3-kinesis-video-webrtc-storage](./mypy_boto3_kinesis_video_webrtc_storage/README.md) for [KinesisVideoWebRTCStorage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-webrtc-storage.html#KinesisVideoWebRTCStorage) service
+
 - [mypy-boto3-kinesisanalytics](./mypy_boto3_kinesisanalytics/README.md) for [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics) service
 
 - [mypy-boto3-kinesisanalyticsv2](./mypy_boto3_kinesisanalyticsv2/README.md) for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2) service

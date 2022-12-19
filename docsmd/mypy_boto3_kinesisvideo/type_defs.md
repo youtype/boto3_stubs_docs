@@ -190,6 +190,95 @@ class DescribeImageGenerationConfigurationInputRequestTypeDef(TypedDict):
     StreamARN: NotRequired[str],
 ```
 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
+## DescribeMappedResourceConfigurationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeMappedResourceConfigurationInputRequestTypeDef
+
+def get_value() -> DescribeMappedResourceConfigurationInputRequestTypeDef:
+    return {
+        "StreamName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMappedResourceConfigurationInputRequestTypeDef(TypedDict):
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## MappedResourceConfigurationListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import MappedResourceConfigurationListItemTypeDef
+
+def get_value() -> MappedResourceConfigurationListItemTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class MappedResourceConfigurationListItemTypeDef(TypedDict):
+    Type: NotRequired[str],
+    ARN: NotRequired[str],
+```
+
+## DescribeMediaStorageConfigurationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeMediaStorageConfigurationInputRequestTypeDef
+
+def get_value() -> DescribeMediaStorageConfigurationInputRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMediaStorageConfigurationInputRequestTypeDef(TypedDict):
+    ChannelName: NotRequired[str],
+    ChannelARN: NotRequired[str],
+```
+
+## MediaStorageConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import MediaStorageConfigurationTypeDef
+
+def get_value() -> MediaStorageConfigurationTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class MediaStorageConfigurationTypeDef(TypedDict):
+    Status: MediaStorageConfigurationStatusType,  # (1)
+    StreamARN: NotRequired[str],
+```
+
+1. See [:material-code-brackets: MediaStorageConfigurationStatusType](./literals.md#mediastorageconfigurationstatustype) 
 ## DescribeNotificationConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -338,24 +427,6 @@ def get_value() -> ImageGenerationDestinationConfigTypeDef:
 class ImageGenerationDestinationConfigTypeDef(TypedDict):
     Uri: str,
     DestinationRegion: str,
-```
-
-## PaginatorConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import PaginatorConfigTypeDef
-
-def get_value() -> PaginatorConfigTypeDef:
-    return {
-        "MaxItems": ...,
-    }
-```
-
-```python title="Definition"
-class PaginatorConfigTypeDef(TypedDict):
-    MaxItems: NotRequired[int],
-    PageSize: NotRequired[int],
-    StartingToken: NotRequired[str],
 ```
 
 ## StreamNameConditionTypeDef
@@ -784,6 +855,105 @@ class DeletionConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: LocalSizeConfigTypeDef](./type_defs.md#localsizeconfigtypedef) 
+## DescribeMappedResourceConfigurationInputDescribeMappedResourceConfigurationPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeMappedResourceConfigurationInputDescribeMappedResourceConfigurationPaginateTypeDef
+
+def get_value() -> DescribeMappedResourceConfigurationInputDescribeMappedResourceConfigurationPaginateTypeDef:
+    return {
+        "StreamName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMappedResourceConfigurationInputDescribeMappedResourceConfigurationPaginateTypeDef(TypedDict):
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef
+
+def get_value() -> ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef:
+    return {
+        "ChannelNameCondition": ...,
+    }
+```
+
+```python title="Definition"
+class ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef(TypedDict):
+    ChannelNameCondition: NotRequired[ChannelNameConditionTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeMappedResourceConfigurationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeMappedResourceConfigurationOutputTypeDef
+
+def get_value() -> DescribeMappedResourceConfigurationOutputTypeDef:
+    return {
+        "MappedResourceConfigurationList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMappedResourceConfigurationOutputTypeDef(TypedDict):
+    MappedResourceConfigurationList: List[MappedResourceConfigurationListItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MappedResourceConfigurationListItemTypeDef](./type_defs.md#mappedresourceconfigurationlistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMediaStorageConfigurationOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import DescribeMediaStorageConfigurationOutputTypeDef
+
+def get_value() -> DescribeMediaStorageConfigurationOutputTypeDef:
+    return {
+        "MediaStorageConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMediaStorageConfigurationOutputTypeDef(TypedDict):
+    MediaStorageConfiguration: MediaStorageConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: MediaStorageConfigurationTypeDef](./type_defs.md#mediastorageconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateMediaStorageConfigurationInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_kinesisvideo.type_defs import UpdateMediaStorageConfigurationInputRequestTypeDef
+
+def get_value() -> UpdateMediaStorageConfigurationInputRequestTypeDef:
+    return {
+        "ChannelARN": ...,
+        "MediaStorageConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMediaStorageConfigurationInputRequestTypeDef(TypedDict):
+    ChannelARN: str,
+    MediaStorageConfiguration: MediaStorageConfigurationTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: MediaStorageConfigurationTypeDef](./type_defs.md#mediastorageconfigurationtypedef) 
 ## DescribeStreamOutputTypeDef
 
 ```python title="Usage Example"
@@ -896,25 +1066,6 @@ class ImageGenerationConfigurationTypeDef(TypedDict):
 3. See [:material-code-braces: ImageGenerationDestinationConfigTypeDef](./type_defs.md#imagegenerationdestinationconfigtypedef) 
 4. See [:material-code-brackets: FormatType](./literals.md#formattype) 
 5. See [:material-code-brackets: FormatConfigKeyType](./literals.md#formatconfigkeytype) 
-## ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef
-
-def get_value() -> ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef:
-    return {
-        "ChannelNameCondition": ...,
-    }
-```
-
-```python title="Definition"
-class ListSignalingChannelsInputListSignalingChannelsPaginateTypeDef(TypedDict):
-    ChannelNameCondition: NotRequired[ChannelNameConditionTypeDef],  # (1)
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStreamsInputListStreamsPaginateTypeDef
 
 ```python title="Usage Example"

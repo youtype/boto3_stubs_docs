@@ -263,6 +263,7 @@ def get_value() -> AttachmentStateChangeTypeDef:
 - [DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef)
 - [DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef)
 - [DeleteTaskSetRequestRequestTypeDef](./type_defs.md#deletetasksetrequestrequesttypedef)
+- [DeploymentAlarmsTypeDef](./type_defs.md#deploymentalarmstypedef)
 - [DeploymentCircuitBreakerTypeDef](./type_defs.md#deploymentcircuitbreakertypedef)
 - [ServiceConnectServiceResourceTypeDef](./type_defs.md#serviceconnectserviceresourcetypedef)
 - [DeregisterContainerInstanceRequestRequestTypeDef](./type_defs.md#deregistercontainerinstancerequestrequesttypedef)

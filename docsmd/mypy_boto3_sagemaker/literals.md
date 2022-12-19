@@ -1872,6 +1872,22 @@ InstanceTypeType = Literal[
     "ml.t3.xlarge",
 ]
 ```
+## JobTypeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import JobTypeType
+
+def get_value() -> JobTypeType:
+    return "INFERENCE"
+```
+
+```python title="Definition"
+JobTypeType = Literal[
+    "INFERENCE",
+    "NOTEBOOK_KERNEL",
+    "TRAINING",
+]
+```
 ## JoinSourceType
 
 ```python title="Usage Example"
@@ -1965,6 +1981,20 @@ def get_value() -> ListAlgorithmsPaginatorName:
 ```python title="Definition"
 ListAlgorithmsPaginatorName = Literal[
     "list_algorithms",
+]
+```
+## ListAliasesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ListAliasesPaginatorName
+
+def get_value() -> ListAliasesPaginatorName:
+    return "list_aliases"
+```
+
+```python title="Definition"
+ListAliasesPaginatorName = Literal[
+    "list_aliases",
 ]
 ```
 ## ListAppImageConfigsPaginatorName
@@ -3894,6 +3924,21 @@ ProcessingS3UploadModeType = Literal[
     "EndOfJob",
 ]
 ```
+## ProcessorType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import ProcessorType
+
+def get_value() -> ProcessorType:
+    return "CPU"
+```
+
+```python title="Definition"
+ProcessorType = Literal[
+    "CPU",
+    "GPU",
+]
+```
 ## ProductionVariantAcceleratorTypeType
 
 ```python title="Usage Example"
@@ -5241,6 +5286,23 @@ VariantStatusType = Literal[
     "Updating",
 ]
 ```
+## VendorGuidanceType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import VendorGuidanceType
+
+def get_value() -> VendorGuidanceType:
+    return "ARCHIVED"
+```
+
+```python title="Definition"
+VendorGuidanceType = Literal[
+    "ARCHIVED",
+    "NOT_PROVIDED",
+    "STABLE",
+    "TO_BE_ARCHIVED",
+]
+```
 ## WarmPoolResourceStatusType
 
 ```python title="Usage Example"
@@ -5473,6 +5535,7 @@ ServiceName = Literal[
     "kinesis-video-archived-media",
     "kinesis-video-media",
     "kinesis-video-signaling",
+    "kinesis-video-webrtc-storage",
     "kinesisanalytics",
     "kinesisanalyticsv2",
     "kinesisvideo",
@@ -5673,6 +5736,7 @@ def get_value() -> PaginatorName:
 PaginatorName = Literal[
     "list_actions",
     "list_algorithms",
+    "list_aliases",
     "list_app_image_configs",
     "list_apps",
     "list_artifacts",

@@ -1868,8 +1868,8 @@ def update_notebook(
     self,
     *,
     NotebookId: str,
-    Payload: str = ...,
-    Type: NotebookTypeType = ...,  # (1)
+    Payload: str,
+    Type: NotebookTypeType,  # (1)
     SessionId: str = ...,
     ClientRequestToken: str = ...,
 ) -> Dict[str, Any]:
@@ -1882,6 +1882,8 @@ def update_notebook(
 ```python title="Usage example with kwargs"
 kwargs: UpdateNotebookInputRequestTypeDef = {  # (1)
     "NotebookId": ...,
+    "Payload": ...,
+    "Type": ...,
 }
 
 parent.update_notebook(**kwargs)

@@ -4113,6 +4113,7 @@ class CreateDBInstanceReadReplicaMessageRequestTypeDef(TypedDict):
     CustomIamInstanceProfile: NotRequired[str],
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
+    EnableCustomerOwnedIp: NotRequired[bool],
     SourceRegion: NotRequired[str],
 ```
 
