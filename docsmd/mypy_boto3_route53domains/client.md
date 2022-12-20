@@ -33,6 +33,7 @@ try:
     do_something(client)
 except (
     client.ClientError,
+    client.DnssecLimitExceeded,
     client.DomainLimitExceeded,
     client.DuplicateRequest,
     client.InvalidInput,
@@ -85,6 +86,39 @@ parent.accept_domain_transfer_from_another_aws_account(**kwargs)
 ```
 
 1. See [:material-code-braces: AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef](./type_defs.md#acceptdomaintransferfromanotherawsaccountrequestrequesttypedef) 
+
+### associate\_delegation\_signer\_to\_domain
+
+Creates a delegation signer (DS) record in the registry zone for this domain
+name.
+
+Type annotations and code completion for `#!python boto3.client("route53domains").associate_delegation_signer_to_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.associate_delegation_signer_to_domain)
+
+```python title="Method definition"
+def associate_delegation_signer_to_domain(
+    self,
+    *,
+    DomainName: str,
+    SigningAttributes: DnssecSigningAttributesTypeDef,  # (1)
+) -> AssociateDelegationSignerToDomainResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DnssecSigningAttributesTypeDef](./type_defs.md#dnssecsigningattributestypedef) 
+2. See [:material-code-braces: AssociateDelegationSignerToDomainResponseTypeDef](./type_defs.md#associatedelegationsignertodomainresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateDelegationSignerToDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "SigningAttributes": ...,
+}
+
+parent.associate_delegation_signer_to_domain(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateDelegationSignerToDomainRequestRequestTypeDef](./type_defs.md#associatedelegationsignertodomainrequestrequesttypedef) 
 
 ### can\_paginate
 
@@ -324,6 +358,38 @@ parent.disable_domain_transfer_lock(**kwargs)
 ```
 
 1. See [:material-code-braces: DisableDomainTransferLockRequestRequestTypeDef](./type_defs.md#disabledomaintransferlockrequestrequesttypedef) 
+
+### disassociate\_delegation\_signer\_from\_domain
+
+Deletes a delegation signer (DS) record in the registry zone for this domain
+name.
+
+Type annotations and code completion for `#!python boto3.client("route53domains").disassociate_delegation_signer_from_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disassociate_delegation_signer_from_domain)
+
+```python title="Method definition"
+def disassociate_delegation_signer_from_domain(
+    self,
+    *,
+    DomainName: str,
+    Id: str,
+) -> DisassociateDelegationSignerFromDomainResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DisassociateDelegationSignerFromDomainResponseTypeDef](./type_defs.md#disassociatedelegationsignerfromdomainresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateDelegationSignerFromDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Id": ...,
+}
+
+parent.disassociate_delegation_signer_from_domain(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateDelegationSignerFromDomainRequestRequestTypeDef](./type_defs.md#disassociatedelegationsignerfromdomainrequestrequesttypedef) 
 
 ### enable\_domain\_auto\_renew
 
@@ -577,11 +643,19 @@ def list_operations(
     SubmittedSince: Union[datetime, str] = ...,
     Marker: str = ...,
     MaxItems: int = ...,
-) -> ListOperationsResponseTypeDef:  # (1)
+    Status: Sequence[OperationStatusType] = ...,  # (1)
+    Type: Sequence[OperationTypeType] = ...,  # (2)
+    SortBy: ListOperationsSortAttributeNameType = ...,  # (3)
+    SortOrder: SortOrderType = ...,  # (4)
+) -> ListOperationsResponseTypeDef:  # (5)
     ...
 ```
 
-1. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+3. See [:material-code-brackets: ListOperationsSortAttributeNameType](./literals.md#listoperationssortattributenametype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -657,6 +731,37 @@ parent.list_tags_for_domain(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTagsForDomainRequestRequestTypeDef](./type_defs.md#listtagsfordomainrequestrequesttypedef) 
+
+### push\_domain
+
+Moves a domain from Amazon Web Services to another registrar.
+
+Type annotations and code completion for `#!python boto3.client("route53domains").push_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.push_domain)
+
+```python title="Method definition"
+def push_domain(
+    self,
+    *,
+    DomainName: str,
+    Target: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PushDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Target": ...,
+}
+
+parent.push_domain(**kwargs)
+```
+
+1. See [:material-code-braces: PushDomainRequestRequestTypeDef](./type_defs.md#pushdomainrequestrequesttypedef) 
 
 ### register\_domain
 
@@ -797,9 +902,38 @@ parent.resend_contact_reachability_email(**kwargs)
 
 1. See [:material-code-braces: ResendContactReachabilityEmailRequestRequestTypeDef](./type_defs.md#resendcontactreachabilityemailrequestrequesttypedef) 
 
+### resend\_operation\_authorization
+
+Resend the form of authorization email for this operation.
+
+Type annotations and code completion for `#!python boto3.client("route53domains").resend_operation_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.resend_operation_authorization)
+
+```python title="Method definition"
+def resend_operation_authorization(
+    self,
+    *,
+    OperationId: str,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ResendOperationAuthorizationRequestRequestTypeDef = {  # (1)
+    "OperationId": ...,
+}
+
+parent.resend_operation_authorization(**kwargs)
+```
+
+1. See [:material-code-braces: ResendOperationAuthorizationRequestRequestTypeDef](./type_defs.md#resendoperationauthorizationrequestrequesttypedef) 
+
 ### retrieve\_domain\_auth\_code
 
-This operation returns the AuthCode for the domain.
+This operation returns the authorization code for the domain.
 
 Type annotations and code completion for `#!python boto3.client("route53domains").retrieve_domain_auth_code` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.retrieve_domain_auth_code)
@@ -921,14 +1055,16 @@ def update_domain_contact(
     AdminContact: ContactDetailTypeDef = ...,  # (1)
     RegistrantContact: ContactDetailTypeDef = ...,  # (1)
     TechContact: ContactDetailTypeDef = ...,  # (1)
-) -> UpdateDomainContactResponseTypeDef:  # (4)
+    Consent: ConsentTypeDef = ...,  # (4)
+) -> UpdateDomainContactResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 2. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 3. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
-4. See [:material-code-braces: UpdateDomainContactResponseTypeDef](./type_defs.md#updatedomaincontactresponsetypedef) 
+4. See [:material-code-braces: ConsentTypeDef](./type_defs.md#consenttypedef) 
+5. See [:material-code-braces: UpdateDomainContactResponseTypeDef](./type_defs.md#updatedomaincontactresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

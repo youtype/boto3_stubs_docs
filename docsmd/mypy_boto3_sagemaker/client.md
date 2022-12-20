@@ -901,7 +901,7 @@ parent.create_endpoint_config(**kwargs)
 
 ### create\_experiment
 
-Creates an SageMaker *experiment*.
+Creates a SageMaker *experiment*.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_experiment` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_experiment)

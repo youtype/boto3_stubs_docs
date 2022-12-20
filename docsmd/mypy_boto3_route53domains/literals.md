@@ -323,6 +323,7 @@ def get_value() -> ExtraParamNameType:
 ExtraParamNameType = Literal[
     "AU_ID_NUMBER",
     "AU_ID_TYPE",
+    "AU_PRIORITY_TOKEN",
     "BIRTH_CITY",
     "BIRTH_COUNTRY",
     "BIRTH_DATE_IN_YYYY_MM_DD",
@@ -394,6 +395,20 @@ def get_value() -> ListOperationsPaginatorName:
 ```python title="Definition"
 ListOperationsPaginatorName = Literal[
     "list_operations",
+]
+```
+## ListOperationsSortAttributeNameType
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.literals import ListOperationsSortAttributeNameType
+
+def get_value() -> ListOperationsSortAttributeNameType:
+    return "SubmittedDate"
+```
+
+```python title="Definition"
+ListOperationsSortAttributeNameType = Literal[
+    "SubmittedDate",
 ]
 ```
 ## ListPricesPaginatorName
@@ -506,18 +521,39 @@ SortOrderType = Literal[
     "DESC",
 ]
 ```
+## StatusFlagType
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.literals import StatusFlagType
+
+def get_value() -> StatusFlagType:
+    return "PENDING_ACCEPTANCE"
+```
+
+```python title="Definition"
+StatusFlagType = Literal[
+    "PENDING_ACCEPTANCE",
+    "PENDING_AUTHORIZATION",
+    "PENDING_CUSTOMER_ACTION",
+    "PENDING_PAYMENT_VERIFICATION",
+    "PENDING_SUPPORT_CASE",
+]
+```
 ## TransferableType
 
 ```python title="Usage Example"
 from mypy_boto3_route53domains.literals import TransferableType
 
 def get_value() -> TransferableType:
-    return "DONT_KNOW"
+    return "DOMAIN_IN_ANOTHER_ACCOUNT"
 ```
 
 ```python title="Definition"
 TransferableType = Literal[
+    "DOMAIN_IN_ANOTHER_ACCOUNT",
+    "DOMAIN_IN_OWN_ACCOUNT",
     "DONT_KNOW",
+    "PREMIUM_DOMAIN",
     "TRANSFERABLE",
     "UNTRANSFERABLE",
 ]

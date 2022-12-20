@@ -1464,6 +1464,20 @@ DescribeIamInstanceProfileAssociationsPaginatorName = Literal[
     "describe_iam_instance_profile_associations",
 ]
 ```
+## DescribeImagesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeImagesPaginatorName
+
+def get_value() -> DescribeImagesPaginatorName:
+    return "describe_images"
+```
+
+```python title="Definition"
+DescribeImagesPaginatorName = Literal[
+    "describe_images",
+]
+```
 ## DescribeImportImageTasksPaginatorName
 
 ```python title="Usage Example"
@@ -8267,6 +8281,7 @@ PaginatorName = Literal[
     "describe_host_reservations",
     "describe_hosts",
     "describe_iam_instance_profile_associations",
+    "describe_images",
     "describe_import_image_tasks",
     "describe_import_snapshot_tasks",
     "describe_instance_credit_specifications",

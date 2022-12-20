@@ -2408,6 +2408,8 @@ class JobDetailTypeDef(TypedDict):
     platformCapabilities: NotRequired[List[PlatformCapabilityType]],  # (10)
     eksProperties: NotRequired[EksPropertiesDetailTypeDef],  # (11)
     eksAttempts: NotRequired[List[EksAttemptDetailTypeDef]],  # (12)
+    isCancelled: NotRequired[bool],
+    isTerminated: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 

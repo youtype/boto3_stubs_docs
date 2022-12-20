@@ -49,6 +49,24 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
+## DnssecSigningAttributesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import DnssecSigningAttributesTypeDef
+
+def get_value() -> DnssecSigningAttributesTypeDef:
+    return {
+        "Algorithm": ...,
+    }
+```
+
+```python title="Definition"
+class DnssecSigningAttributesTypeDef(TypedDict):
+    Algorithm: NotRequired[int],
+    Flags: NotRequired[int],
+    PublicKey: NotRequired[str],
+```
+
 ## BillingRecordTypeDef
 
 ```python title="Usage Example"
@@ -137,6 +155,24 @@ class DomainTransferabilityTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: TransferableType](./literals.md#transferabletype) 
+## ConsentTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import ConsentTypeDef
+
+def get_value() -> ConsentTypeDef:
+    return {
+        "MaxPrice": ...,
+        "Currency": ...,
+    }
+```
+
+```python title="Definition"
+class ConsentTypeDef(TypedDict):
+    MaxPrice: float,
+    Currency: str,
+```
+
 ## ExtraParamTypeDef
 
 ```python title="Usage Example"
@@ -222,6 +258,46 @@ class DisableDomainTransferLockRequestRequestTypeDef(TypedDict):
     DomainName: str,
 ```
 
+## DisassociateDelegationSignerFromDomainRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import DisassociateDelegationSignerFromDomainRequestRequestTypeDef
+
+def get_value() -> DisassociateDelegationSignerFromDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateDelegationSignerFromDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Id: str,
+```
+
+## DnssecKeyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import DnssecKeyTypeDef
+
+def get_value() -> DnssecKeyTypeDef:
+    return {
+        "Algorithm": ...,
+    }
+```
+
+```python title="Definition"
+class DnssecKeyTypeDef(TypedDict):
+    Algorithm: NotRequired[int],
+    Flags: NotRequired[int],
+    PublicKey: NotRequired[str],
+    DigestType: NotRequired[int],
+    Digest: NotRequired[str],
+    KeyTag: NotRequired[int],
+    Id: NotRequired[str],
+```
+
 ## PriceWithCurrencyTypeDef
 
 ```python title="Usage Example"
@@ -270,7 +346,7 @@ def get_value() -> DomainSummaryTypeDef:
 
 ```python title="Definition"
 class DomainSummaryTypeDef(TypedDict):
-    DomainName: str,
+    DomainName: NotRequired[str],
     AutoRenew: NotRequired[bool],
     TransferLock: NotRequired[bool],
     Expiry: NotRequired[datetime],
@@ -469,8 +545,16 @@ class ListOperationsRequestRequestTypeDef(TypedDict):
     SubmittedSince: NotRequired[Union[datetime, str]],
     Marker: NotRequired[str],
     MaxItems: NotRequired[int],
+    Status: NotRequired[Sequence[OperationStatusType]],  # (1)
+    Type: NotRequired[Sequence[OperationTypeType]],  # (2)
+    SortBy: NotRequired[ListOperationsSortAttributeNameType],  # (3)
+    SortOrder: NotRequired[SortOrderType],  # (4)
 ```
 
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+3. See [:material-code-brackets: ListOperationsSortAttributeNameType](./literals.md#listoperationssortattributenametype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## OperationSummaryTypeDef
 
 ```python title="Usage Example"
@@ -479,22 +563,24 @@ from mypy_boto3_route53domains.type_defs import OperationSummaryTypeDef
 def get_value() -> OperationSummaryTypeDef:
     return {
         "OperationId": ...,
-        "Status": ...,
-        "Type": ...,
-        "SubmittedDate": ...,
     }
 ```
 
 ```python title="Definition"
 class OperationSummaryTypeDef(TypedDict):
-    OperationId: str,
-    Status: OperationStatusType,  # (1)
-    Type: OperationTypeType,  # (2)
-    SubmittedDate: datetime,
+    OperationId: NotRequired[str],
+    Status: NotRequired[OperationStatusType],  # (1)
+    Type: NotRequired[OperationTypeType],  # (2)
+    SubmittedDate: NotRequired[datetime],
+    DomainName: NotRequired[str],
+    Message: NotRequired[str],
+    StatusFlag: NotRequired[StatusFlagType],  # (3)
+    LastUpdatedDate: NotRequired[datetime],
 ```
 
 1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
 2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+3. See [:material-code-brackets: StatusFlagType](./literals.md#statusflagtype) 
 ## ListPricesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -546,6 +632,24 @@ class TagTypeDef(TypedDict):
     Value: NotRequired[str],
 ```
 
+## PushDomainRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import PushDomainRequestRequestTypeDef
+
+def get_value() -> PushDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Target": ...,
+    }
+```
+
+```python title="Definition"
+class PushDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Target: str,
+```
+
 ## RejectDomainTransferFromAnotherAwsAccountRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -595,6 +699,22 @@ def get_value() -> ResendContactReachabilityEmailRequestRequestTypeDef:
 ```python title="Definition"
 class ResendContactReachabilityEmailRequestRequestTypeDef(TypedDict):
     domainName: NotRequired[str],
+```
+
+## ResendOperationAuthorizationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import ResendOperationAuthorizationRequestRequestTypeDef
+
+def get_value() -> ResendOperationAuthorizationRequestRequestTypeDef:
+    return {
+        "OperationId": ...,
+    }
+```
+
+```python title="Definition"
+class ResendOperationAuthorizationRequestRequestTypeDef(TypedDict):
+    OperationId: str,
 ```
 
 ## RetrieveDomainAuthCodeRequestRequestTypeDef
@@ -688,6 +808,25 @@ class AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateDelegationSignerToDomainResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import AssociateDelegationSignerToDomainResponseTypeDef
+
+def get_value() -> AssociateDelegationSignerToDomainResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateDelegationSignerToDomainResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelDomainTransferToAnotherAwsAccountResponseTypeDef
 
 ```python title="Usage Example"
@@ -765,6 +904,42 @@ class DisableDomainTransferLockResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateDelegationSignerFromDomainResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import DisassociateDelegationSignerFromDomainResponseTypeDef
+
+def get_value() -> DisassociateDelegationSignerFromDomainResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateDelegationSignerFromDomainResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnableDomainTransferLockResponseTypeDef
 
 ```python title="Usage Example"
@@ -819,6 +994,8 @@ def get_value() -> GetOperationDetailResponseTypeDef:
         "DomainName": ...,
         "Type": ...,
         "SubmittedDate": ...,
+        "LastUpdatedDate": ...,
+        "StatusFlag": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -831,12 +1008,15 @@ class GetOperationDetailResponseTypeDef(TypedDict):
     DomainName: str,
     Type: OperationTypeType,  # (2)
     SubmittedDate: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    LastUpdatedDate: datetime,
+    StatusFlag: StatusFlagType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
 2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-brackets: StatusFlagType](./literals.md#statusflagtype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterDomainResponseTypeDef
 
 ```python title="Usage Example"
@@ -1033,6 +1213,25 @@ class UpdateDomainNameserversResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateDelegationSignerToDomainRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import AssociateDelegationSignerToDomainRequestRequestTypeDef
+
+def get_value() -> AssociateDelegationSignerToDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "SigningAttributes": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateDelegationSignerToDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    SigningAttributes: DnssecSigningAttributesTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: DnssecSigningAttributesTypeDef](./type_defs.md#dnssecsigningattributestypedef) 
 ## ViewBillingResponseTypeDef
 
 ```python title="Usage Example"
@@ -1209,10 +1408,18 @@ def get_value() -> ListOperationsRequestListOperationsPaginateTypeDef:
 ```python title="Definition"
 class ListOperationsRequestListOperationsPaginateTypeDef(TypedDict):
     SubmittedSince: NotRequired[Union[datetime, str]],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    Status: NotRequired[Sequence[OperationStatusType]],  # (1)
+    Type: NotRequired[Sequence[OperationTypeType]],  # (2)
+    SortBy: NotRequired[ListOperationsSortAttributeNameType],  # (3)
+    SortOrder: NotRequired[SortOrderType],  # (4)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+3. See [:material-code-brackets: ListOperationsSortAttributeNameType](./literals.md#listoperationssortattributenametype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPricesRequestListPricesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1380,6 +1587,7 @@ def get_value() -> GetDomainDetailResponseTypeDef:
         "Reseller": ...,
         "DnsSec": ...,
         "StatusList": ...,
+        "DnssecKeys": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1407,14 +1615,16 @@ class GetDomainDetailResponseTypeDef(TypedDict):
     Reseller: str,
     DnsSec: str,
     StatusList: List[str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+    DnssecKeys: List[DnssecKeyTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-braces: NameserverTypeDef](./type_defs.md#nameservertypedef) 
 2. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 3. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 4. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
-5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+5. See [:material-code-braces: DnssecKeyTypeDef](./type_defs.md#dnsseckeytypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1499,11 +1709,13 @@ class UpdateDomainContactRequestRequestTypeDef(TypedDict):
     AdminContact: NotRequired[ContactDetailTypeDef],  # (1)
     RegistrantContact: NotRequired[ContactDetailTypeDef],  # (1)
     TechContact: NotRequired[ContactDetailTypeDef],  # (1)
+    Consent: NotRequired[ConsentTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 2. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 3. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+4. See [:material-code-braces: ConsentTypeDef](./type_defs.md#consenttypedef) 
 ## ListPricesResponseTypeDef
 
 ```python title="Usage Example"

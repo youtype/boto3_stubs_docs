@@ -110,13 +110,21 @@ def paginate(
     self,
     *,
     SubmittedSince: Union[datetime, str] = ...,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[ListOperationsResponseTypeDef]:  # (2)
+    Status: Sequence[OperationStatusType] = ...,  # (1)
+    Type: Sequence[OperationTypeType] = ...,  # (2)
+    SortBy: ListOperationsSortAttributeNameType = ...,  # (3)
+    SortOrder: SortOrderType = ...,  # (4)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (5)
+) -> _PageIterator[ListOperationsResponseTypeDef]:  # (6)
     ...
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+3. See [:material-code-brackets: ListOperationsSortAttributeNameType](./literals.md#listoperationssortattributenametype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+6. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

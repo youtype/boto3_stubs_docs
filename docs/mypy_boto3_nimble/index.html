@@ -39609,6 +39609,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listlaunchprofilememberspaginator">ListLaunchProfileMembersPaginator</a></li>
 <li><a href="paginators/#listlaunchprofilespaginator">ListLaunchProfilesPaginator</a></li>
 <li><a href="paginators/#liststreamingimagespaginator">ListStreamingImagesPaginator</a></li>
+<li><a href="paginators/#liststreamingsessionbackupspaginator">ListStreamingSessionBackupsPaginator</a></li>
 <li><a href="paginators/#liststreamingsessionspaginator">ListStreamingSessionsPaginator</a></li>
 <li><a href="paginators/#liststudiocomponentspaginator">ListStudioComponentsPaginator</a></li>
 <li><a href="paginators/#liststudiomemberspaginator">ListStudioMembersPaginator</a></li>
@@ -39640,12 +39641,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_nimble.literals</span> <span class="kn">import</span> <span class="n">LaunchProfileDeletedWaiterName</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_nimble.literals</span> <span class="kn">import</span> <span class="n">AutomaticTerminationModeType</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">LaunchProfileDeletedWaiterName</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="s2">&quot;launch_profile_deleted&quot;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AutomaticTerminationModeType</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="s2">&quot;ACTIVATED&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#automaticterminationmodetype">AutomaticTerminationModeType</a></li>
 <li><a href="literals/#launchprofiledeletedwaitername">LaunchProfileDeletedWaiterName</a></li>
 <li><a href="literals/#launchprofilepersonatype">LaunchProfilePersonaType</a></li>
 <li><a href="literals/#launchprofileplatformtype">LaunchProfilePlatformType</a></li>
@@ -39660,10 +39662,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listlaunchprofilememberspaginatorname">ListLaunchProfileMembersPaginatorName</a></li>
 <li><a href="literals/#listlaunchprofilespaginatorname">ListLaunchProfilesPaginatorName</a></li>
 <li><a href="literals/#liststreamingimagespaginatorname">ListStreamingImagesPaginatorName</a></li>
+<li><a href="literals/#liststreamingsessionbackupspaginatorname">ListStreamingSessionBackupsPaginatorName</a></li>
 <li><a href="literals/#liststreamingsessionspaginatorname">ListStreamingSessionsPaginatorName</a></li>
 <li><a href="literals/#liststudiocomponentspaginatorname">ListStudioComponentsPaginatorName</a></li>
 <li><a href="literals/#liststudiomemberspaginatorname">ListStudioMembersPaginatorName</a></li>
 <li><a href="literals/#liststudiospaginatorname">ListStudiosPaginatorName</a></li>
+<li><a href="literals/#sessionbackupmodetype">SessionBackupModeType</a></li>
+<li><a href="literals/#sessionpersistencemodetype">SessionPersistenceModeType</a></li>
 <li><a href="literals/#streamingclipboardmodetype">StreamingClipboardModeType</a></li>
 <li><a href="literals/#streamingimagedeletedwaitername">StreamingImageDeletedWaiterName</a></li>
 <li><a href="literals/#streamingimageencryptionconfigurationkeytypetype">StreamingImageEncryptionConfigurationKeyTypeType</a></li>
@@ -39693,6 +39698,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#studioreadywaitername">StudioReadyWaiterName</a></li>
 <li><a href="literals/#studiostatetype">StudioStateType</a></li>
 <li><a href="literals/#studiostatuscodetype">StudioStatusCodeType</a></li>
+<li><a href="literals/#volumeretentionmodetype">VolumeRetentionModeType</a></li>
 <li><a href="literals/#nimblestudioservicename">NimbleStudioServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -39717,7 +39723,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#computefarmconfigurationtypedef">ComputeFarmConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createstreamingimagerequestrequesttypedef">CreateStreamingImageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createstreamingsessionrequestrequesttypedef">CreateStreamingSessionRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#streamingsessiontypedef">StreamingSessionTypeDef</a></li>
 <li><a href="type_defs/#createstreamingsessionstreamrequestrequesttypedef">CreateStreamingSessionStreamRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#streamingsessionstreamtypedef">StreamingSessionStreamTypeDef</a></li>
 <li><a href="type_defs/#scriptparameterkeyvaluetypedef">ScriptParameterKeyValueTypeDef</a></li>
@@ -39740,6 +39745,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#getlaunchprofilerequestrequesttypedef">GetLaunchProfileRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getstreamingimagerequestrequesttypedef">GetStreamingImageRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getstreamingsessionbackuprequestrequesttypedef">GetStreamingSessionBackupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#streamingsessionbackuptypedef">StreamingSessionBackupTypeDef</a></li>
 <li><a href="type_defs/#getstreamingsessionrequestrequesttypedef">GetStreamingSessionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getstreamingsessionstreamrequestrequesttypedef">GetStreamingSessionStreamRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getstudiocomponentrequestrequesttypedef">GetStudioComponentRequestRequestTypeDef</a></li>
@@ -39755,6 +39762,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listlaunchprofilemembersrequestrequesttypedef">ListLaunchProfileMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listlaunchprofilesrequestrequesttypedef">ListLaunchProfilesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#liststreamingimagesrequestrequesttypedef">ListStreamingImagesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#liststreamingsessionbackupsrequestrequesttypedef">ListStreamingSessionBackupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#liststreamingsessionsrequestrequesttypedef">ListStreamingSessionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#liststudiocomponentsrequestrequesttypedef">ListStudioComponentsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#liststudiomembersrequestrequesttypedef">ListStudioMembersRequestRequestTypeDef</a></li>
@@ -39766,6 +39774,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#startstreamingsessionrequestrequesttypedef">StartStreamingSessionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startstudiossoconfigurationrepairrequestrequesttypedef">StartStudioSSOConfigurationRepairRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopstreamingsessionrequestrequesttypedef">StopStreamingSessionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#streamconfigurationsessionbackuptypedef">StreamConfigurationSessionBackupTypeDef</a></li>
+<li><a href="type_defs/#volumeconfigurationtypedef">VolumeConfigurationTypeDef</a></li>
 <li><a href="type_defs/#streamingsessionstorageroottypedef">StreamingSessionStorageRootTypeDef</a></li>
 <li><a href="type_defs/#streamingimageencryptionconfigurationtypedef">StreamingImageEncryptionConfigurationTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
@@ -39778,12 +39788,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#activedirectoryconfigurationtypedef">ActiveDirectoryConfigurationTypeDef</a></li>
 <li><a href="type_defs/#launchprofileinitializationactivedirectorytypedef">LaunchProfileInitializationActiveDirectoryTypeDef</a></li>
-<li><a href="type_defs/#createstreamingsessionresponsetypedef">CreateStreamingSessionResponseTypeDef</a></li>
-<li><a href="type_defs/#deletestreamingsessionresponsetypedef">DeleteStreamingSessionResponseTypeDef</a></li>
-<li><a href="type_defs/#getstreamingsessionresponsetypedef">GetStreamingSessionResponseTypeDef</a></li>
-<li><a href="type_defs/#liststreamingsessionsresponsetypedef">ListStreamingSessionsResponseTypeDef</a></li>
-<li><a href="type_defs/#startstreamingsessionresponsetypedef">StartStreamingSessionResponseTypeDef</a></li>
-<li><a href="type_defs/#stopstreamingsessionresponsetypedef">StopStreamingSessionResponseTypeDef</a></li>
 <li><a href="type_defs/#createstreamingsessionstreamresponsetypedef">CreateStreamingSessionStreamResponseTypeDef</a></li>
 <li><a href="type_defs/#getstreamingsessionstreamresponsetypedef">GetStreamingSessionStreamResponseTypeDef</a></li>
 <li><a href="type_defs/#createstudiorequestrequesttypedef">CreateStudioRequestRequestTypeDef</a></li>
@@ -39805,6 +39809,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getstudiocomponentrequeststudiocomponentreadywaittypedef">GetStudioComponentRequestStudioComponentReadyWaitTypeDef</a></li>
 <li><a href="type_defs/#getstudiorequeststudiodeletedwaittypedef">GetStudioRequestStudioDeletedWaitTypeDef</a></li>
 <li><a href="type_defs/#getstudiorequeststudioreadywaittypedef">GetStudioRequestStudioReadyWaitTypeDef</a></li>
+<li><a href="type_defs/#getstreamingsessionbackupresponsetypedef">GetStreamingSessionBackupResponseTypeDef</a></li>
+<li><a href="type_defs/#liststreamingsessionbackupsresponsetypedef">ListStreamingSessionBackupsResponseTypeDef</a></li>
 <li><a href="type_defs/#getstudiomemberresponsetypedef">GetStudioMemberResponseTypeDef</a></li>
 <li><a href="type_defs/#liststudiomembersresponsetypedef">ListStudioMembersResponseTypeDef</a></li>
 <li><a href="type_defs/#listeulaacceptancesrequestlisteulaacceptancespaginatetypedef">ListEulaAcceptancesRequestListEulaAcceptancesPaginateTypeDef</a></li>
@@ -39812,12 +39818,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listlaunchprofilemembersrequestlistlaunchprofilememberspaginatetypedef">ListLaunchProfileMembersRequestListLaunchProfileMembersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listlaunchprofilesrequestlistlaunchprofilespaginatetypedef">ListLaunchProfilesRequestListLaunchProfilesPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststreamingimagesrequestliststreamingimagespaginatetypedef">ListStreamingImagesRequestListStreamingImagesPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststreamingsessionbackupsrequestliststreamingsessionbackupspaginatetypedef">ListStreamingSessionBackupsRequestListStreamingSessionBackupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststreamingsessionsrequestliststreamingsessionspaginatetypedef">ListStreamingSessionsRequestListStreamingSessionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststudiocomponentsrequestliststudiocomponentspaginatetypedef">ListStudioComponentsRequestListStudioComponentsPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststudiomembersrequestliststudiomemberspaginatetypedef">ListStudioMembersRequestListStudioMembersPaginateTypeDef</a></li>
 <li><a href="type_defs/#liststudiosrequestliststudiospaginatetypedef">ListStudiosRequestListStudiosPaginateTypeDef</a></li>
 <li><a href="type_defs/#putlaunchprofilemembersrequestrequesttypedef">PutLaunchProfileMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putstudiomembersrequestrequesttypedef">PutStudioMembersRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#streamingsessiontypedef">StreamingSessionTypeDef</a></li>
 <li><a href="type_defs/#streamconfigurationsessionstoragetypedef">StreamConfigurationSessionStorageTypeDef</a></li>
 <li><a href="type_defs/#streamingimagetypedef">StreamingImageTypeDef</a></li>
 <li><a href="type_defs/#studiocomponentconfigurationtypedef">StudioComponentConfigurationTypeDef</a></li>
@@ -39828,6 +39836,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#liststudiosresponsetypedef">ListStudiosResponseTypeDef</a></li>
 <li><a href="type_defs/#startstudiossoconfigurationrepairresponsetypedef">StartStudioSSOConfigurationRepairResponseTypeDef</a></li>
 <li><a href="type_defs/#updatestudioresponsetypedef">UpdateStudioResponseTypeDef</a></li>
+<li><a href="type_defs/#createstreamingsessionresponsetypedef">CreateStreamingSessionResponseTypeDef</a></li>
+<li><a href="type_defs/#deletestreamingsessionresponsetypedef">DeleteStreamingSessionResponseTypeDef</a></li>
+<li><a href="type_defs/#getstreamingsessionresponsetypedef">GetStreamingSessionResponseTypeDef</a></li>
+<li><a href="type_defs/#liststreamingsessionsresponsetypedef">ListStreamingSessionsResponseTypeDef</a></li>
+<li><a href="type_defs/#startstreamingsessionresponsetypedef">StartStreamingSessionResponseTypeDef</a></li>
+<li><a href="type_defs/#stopstreamingsessionresponsetypedef">StopStreamingSessionResponseTypeDef</a></li>
 <li><a href="type_defs/#streamconfigurationcreatetypedef">StreamConfigurationCreateTypeDef</a></li>
 <li><a href="type_defs/#streamconfigurationtypedef">StreamConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createstreamingimageresponsetypedef">CreateStreamingImageResponseTypeDef</a></li>

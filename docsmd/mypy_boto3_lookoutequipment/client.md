@@ -795,11 +795,13 @@ def list_inference_schedulers(
     MaxResults: int = ...,
     InferenceSchedulerNameBeginsWith: str = ...,
     ModelName: str = ...,
-) -> ListInferenceSchedulersResponseTypeDef:  # (1)
+    Status: InferenceSchedulerStatusType = ...,  # (1)
+) -> ListInferenceSchedulersResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef) 
+1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
+2. See [:material-code-braces: ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

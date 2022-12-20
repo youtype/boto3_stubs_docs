@@ -759,8 +759,10 @@ class ListInferenceSchedulersRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     InferenceSchedulerNameBeginsWith: NotRequired[str],
     ModelName: NotRequired[str],
+    Status: NotRequired[InferenceSchedulerStatusType],  # (1)
 ```
 
+1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
 ## ListLabelGroupsRequestRequestTypeDef
 
 ```python title="Usage Example"

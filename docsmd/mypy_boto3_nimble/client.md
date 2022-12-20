@@ -207,10 +207,10 @@ Type annotations and code completion for `#!python boto3.client("nimble").create
 def create_streaming_session(
     self,
     *,
+    launchProfileId: str,
     studioId: str,
     clientToken: str = ...,
     ec2InstanceType: StreamingInstanceTypeType = ...,  # (1)
-    launchProfileId: str = ...,
     ownedBy: str = ...,
     streamingImageId: str = ...,
     tags: Mapping[str, str] = ...,
@@ -224,6 +224,7 @@ def create_streaming_session(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateStreamingSessionRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
     "studioId": ...,
 }
 
@@ -267,7 +268,7 @@ parent.create_streaming_session_stream(**kwargs)
 
 ### create\_studio
 
-Create a new Studio.
+Create a new studio.
 
 Type annotations and code completion for `#!python boto3.client("nimble").create_studio` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
@@ -595,7 +596,7 @@ def generate_presigned_url(
 
 ### get\_eula
 
-Get Eula.
+Get EULA.
 
 Type annotations and code completion for `#!python boto3.client("nimble").get_eula` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
@@ -817,6 +818,37 @@ parent.get_streaming_session(**kwargs)
 
 1. See [:material-code-braces: GetStreamingSessionRequestRequestTypeDef](./type_defs.md#getstreamingsessionrequestrequesttypedef) 
 
+### get\_streaming\_session\_backup
+
+Gets `StreamingSessionBackup` resource.
+
+Type annotations and code completion for `#!python boto3.client("nimble").get_streaming_session_backup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_backup)
+
+```python title="Method definition"
+def get_streaming_session_backup(
+    self,
+    *,
+    backupId: str,
+    studioId: str,
+) -> GetStreamingSessionBackupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetStreamingSessionBackupResponseTypeDef](./type_defs.md#getstreamingsessionbackupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingSessionBackupRequestRequestTypeDef = {  # (1)
+    "backupId": ...,
+    "studioId": ...,
+}
+
+parent.get_streaming_session_backup(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingSessionBackupRequestRequestTypeDef](./type_defs.md#getstreamingsessionbackuprequestrequesttypedef) 
+
 ### get\_streaming\_session\_stream
 
 Gets a StreamingSessionStream for a streaming session.
@@ -852,7 +884,7 @@ parent.get_streaming_session_stream(**kwargs)
 
 ### get\_studio
 
-Get a Studio resource.
+Get a studio resource.
 
 Type annotations and code completion for `#!python boto3.client("nimble").get_studio` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
@@ -943,7 +975,7 @@ parent.get_studio_member(**kwargs)
 
 ### list\_eula\_acceptances
 
-List Eula Acceptances.
+List EULA acceptances.
 
 Type annotations and code completion for `#!python boto3.client("nimble").list_eula_acceptances` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
@@ -974,7 +1006,7 @@ parent.list_eula_acceptances(**kwargs)
 
 ### list\_eulas
 
-List Eulas.
+List EULAs.
 
 Type annotations and code completion for `#!python boto3.client("nimble").list_eulas` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
@@ -1100,6 +1132,37 @@ parent.list_streaming_images(**kwargs)
 
 1. See [:material-code-braces: ListStreamingImagesRequestRequestTypeDef](./type_defs.md#liststreamingimagesrequestrequesttypedef) 
 
+### list\_streaming\_session\_backups
+
+Lists the backups of a streaming session in a studio.
+
+Type annotations and code completion for `#!python boto3.client("nimble").list_streaming_session_backups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_session_backups)
+
+```python title="Method definition"
+def list_streaming_session_backups(
+    self,
+    *,
+    studioId: str,
+    nextToken: str = ...,
+    ownedBy: str = ...,
+) -> ListStreamingSessionBackupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListStreamingSessionBackupsResponseTypeDef](./type_defs.md#liststreamingsessionbackupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStreamingSessionBackupsRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.list_streaming_session_backups(**kwargs)
+```
+
+1. See [:material-code-braces: ListStreamingSessionBackupsRequestRequestTypeDef](./type_defs.md#liststreamingsessionbackupsrequestrequesttypedef) 
+
 ### list\_streaming\_sessions
 
 Lists the streaming sessions in a studio.
@@ -1135,7 +1198,7 @@ parent.list_streaming_sessions(**kwargs)
 
 ### list\_studio\_components
 
-Lists the StudioComponents in a studio.
+Lists the `StudioComponents` in a studio.
 
 Type annotations and code completion for `#!python boto3.client("nimble").list_studio_components` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
@@ -1201,7 +1264,7 @@ parent.list_studio_members(**kwargs)
 
 ### list\_studios
 
-List studios in your Amazon Web Services account in the requested Amazon Web
+List studios in your Amazon Web Services accounts in the requested Amazon Web
 Services Region.
 
 Type annotations and code completion for `#!python boto3.client("nimble").list_studios` method.
@@ -1330,7 +1393,7 @@ parent.put_studio_members(**kwargs)
 
 ### start\_streaming\_session
 
-Transitions sessions from the STOPPED state into the READY state.
+Transitions sessions from the `STOPPED` state into the `READY` state.
 
 Type annotations and code completion for `#!python boto3.client("nimble").start_streaming_session` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_streaming_session)
@@ -1341,6 +1404,7 @@ def start_streaming_session(
     *,
     sessionId: str,
     studioId: str,
+    backupId: str = ...,
     clientToken: str = ...,
 ) -> StartStreamingSessionResponseTypeDef:  # (1)
     ...
@@ -1392,7 +1456,7 @@ parent.start_studio_sso_configuration_repair(**kwargs)
 
 ### stop\_streaming\_session
 
-Transitions sessions from the READY state into the STOPPED state.
+Transitions sessions from the `READY` state into the `STOPPED` state.
 
 Type annotations and code completion for `#!python boto3.client("nimble").stop_streaming_session` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.stop_streaming_session)
@@ -1404,11 +1468,13 @@ def stop_streaming_session(
     sessionId: str,
     studioId: str,
     clientToken: str = ...,
-) -> StopStreamingSessionResponseTypeDef:  # (1)
+    volumeRetentionMode: VolumeRetentionModeType = ...,  # (1)
+) -> StopStreamingSessionResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef) 
+1. See [:material-code-brackets: VolumeRetentionModeType](./literals.md#volumeretentionmodetype) 
+2. See [:material-code-braces: StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1681,6 +1747,7 @@ Type annotations and code completion for `#!python boto3.client("nimble").get_pa
 - `client.get_paginator("list_launch_profile_members")` -> [ListLaunchProfileMembersPaginator](./paginators.md#listlaunchprofilememberspaginator)
 - `client.get_paginator("list_launch_profiles")` -> [ListLaunchProfilesPaginator](./paginators.md#listlaunchprofilespaginator)
 - `client.get_paginator("list_streaming_images")` -> [ListStreamingImagesPaginator](./paginators.md#liststreamingimagespaginator)
+- `client.get_paginator("list_streaming_session_backups")` -> [ListStreamingSessionBackupsPaginator](./paginators.md#liststreamingsessionbackupspaginator)
 - `client.get_paginator("list_streaming_sessions")` -> [ListStreamingSessionsPaginator](./paginators.md#liststreamingsessionspaginator)
 - `client.get_paginator("list_studio_components")` -> [ListStudioComponentsPaginator](./paginators.md#liststudiocomponentspaginator)
 - `client.get_paginator("list_studio_members")` -> [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)

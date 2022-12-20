@@ -116,10 +116,12 @@ LanguageCodeType = Literal[
     "pt-BR",
     "pt-PT",
     "ru-RU",
+    "sv-SE",
     "ta-IN",
     "te-IN",
     "th-TH",
     "tr-TR",
+    "vi-VN",
     "zh-CN",
     "zh-TW",
 ]

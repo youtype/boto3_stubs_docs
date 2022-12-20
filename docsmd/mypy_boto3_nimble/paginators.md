@@ -309,6 +309,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListStreamingImagesRequestListStreamingImagesPaginateTypeDef](./type_defs.md#liststreamingimagesrequestliststreamingimagespaginatetypedef) 
+## ListStreamingSessionBackupsPaginator
+
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_streaming_session_backups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Paginator.ListStreamingSessionBackups)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListStreamingSessionBackupsPaginator
+
+def get_list_streaming_session_backups_paginator() -> ListStreamingSessionBackupsPaginator:
+    return Session().client("nimble").get_paginator("list_streaming_session_backups")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_nimble.paginator import ListStreamingSessionBackupsPaginator
+
+session = Session()
+
+client = Session().client("nimble")  # (1)
+paginator: ListStreamingSessionBackupsPaginator = client.get_paginator("list_streaming_session_backups")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [NimbleStudioClient](./client.md)
+2. paginator: [ListStreamingSessionBackupsPaginator](./paginators.md#liststreamingsessionbackupspaginator)
+3. item: [:material-code-braces: ListStreamingSessionBackupsResponseTypeDef](./type_defs.md#liststreamingsessionbackupsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListStreamingSessionBackupsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    studioId: str,
+    ownedBy: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStreamingSessionBackupsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStreamingSessionBackupsResponseTypeDef](./type_defs.md#liststreamingsessionbackupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStreamingSessionBackupsRequestListStreamingSessionBackupsPaginateTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStreamingSessionBackupsRequestListStreamingSessionBackupsPaginateTypeDef](./type_defs.md#liststreamingsessionbackupsrequestliststreamingsessionbackupspaginatetypedef) 
 ## ListStreamingSessionsPaginator
 
 Type annotations and code completion for `#!python boto3.client("nimble").get_paginator("list_streaming_sessions")`.

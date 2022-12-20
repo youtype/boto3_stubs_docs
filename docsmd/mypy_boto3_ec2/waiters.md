@@ -392,6 +392,8 @@ def wait(
     Owners: Sequence[str] = ...,
     IncludeDeprecated: bool = ...,
     DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
 ) -> None:
     ...
@@ -446,6 +448,8 @@ def wait(
     Owners: Sequence[str] = ...,
     IncludeDeprecated: bool = ...,
     DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
     WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
 ) -> None:
     ...

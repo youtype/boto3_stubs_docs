@@ -280,6 +280,23 @@ class AudioNormalizationSettingsTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AudioNormalizationAlgorithmType](./literals.md#audionormalizationalgorithmtype) 
 2. See [:material-code-brackets: AudioNormalizationAlgorithmControlType](./literals.md#audionormalizationalgorithmcontroltype) 
+## AudioDolbyEDecodeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import AudioDolbyEDecodeTypeDef
+
+def get_value() -> AudioDolbyEDecodeTypeDef:
+    return {
+        "ProgramSelection": ...,
+    }
+```
+
+```python title="Definition"
+class AudioDolbyEDecodeTypeDef(TypedDict):
+    ProgramSelection: DolbyEProgramSelectionType,  # (1)
+```
+
+1. See [:material-code-brackets: DolbyEProgramSelectionType](./literals.md#dolbyeprogramselectiontype) 
 ## AudioHlsRenditionSelectionTypeDef
 
 ```python title="Usage Example"
@@ -1885,24 +1902,27 @@ class FrameCaptureOutputSettingsTypeDef(TypedDict):
     NameModifier: NotRequired[str],
 ```
 
-## FrameCaptureSettingsTypeDef
+## TimecodeBurninSettingsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_medialive.type_defs import FrameCaptureSettingsTypeDef
+from mypy_boto3_medialive.type_defs import TimecodeBurninSettingsTypeDef
 
-def get_value() -> FrameCaptureSettingsTypeDef:
+def get_value() -> TimecodeBurninSettingsTypeDef:
     return {
-        "CaptureInterval": ...,
+        "FontSize": ...,
+        "Position": ...,
     }
 ```
 
 ```python title="Definition"
-class FrameCaptureSettingsTypeDef(TypedDict):
-    CaptureInterval: NotRequired[int],
-    CaptureIntervalUnits: NotRequired[FrameCaptureIntervalUnitType],  # (1)
+class TimecodeBurninSettingsTypeDef(TypedDict):
+    FontSize: TimecodeBurninFontSizeType,  # (1)
+    Position: TimecodeBurninPositionType,  # (2)
+    Prefix: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: FrameCaptureIntervalUnitType](./literals.md#framecaptureintervalunittype) 
+1. See [:material-code-brackets: TimecodeBurninFontSizeType](./literals.md#timecodeburninfontsizetype) 
+2. See [:material-code-brackets: TimecodeBurninPositionType](./literals.md#timecodeburninpositiontype) 
 ## H264ColorSpaceSettingsTypeDef
 
 ```python title="Usage Example"
@@ -3399,9 +3419,11 @@ def get_value() -> AudioTrackSelectionTypeDef:
 ```python title="Definition"
 class AudioTrackSelectionTypeDef(TypedDict):
     Tracks: Sequence[AudioTrackTypeDef],  # (1)
+    DolbyEDecode: NotRequired[AudioDolbyEDecodeTypeDef],  # (2)
 ```
 
 1. See [:material-code-braces: AudioTrackTypeDef](./type_defs.md#audiotracktypedef) 
+2. See [:material-code-braces: AudioDolbyEDecodeTypeDef](./type_defs.md#audiodolbyedecodetypedef) 
 ## AvailSettingsTypeDef
 
 ```python title="Usage Example"
@@ -4674,6 +4696,26 @@ class FrameCaptureCdnSettingsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FrameCaptureS3SettingsTypeDef](./type_defs.md#framecaptures3settingstypedef) 
+## FrameCaptureSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_medialive.type_defs import FrameCaptureSettingsTypeDef
+
+def get_value() -> FrameCaptureSettingsTypeDef:
+    return {
+        "CaptureInterval": ...,
+    }
+```
+
+```python title="Definition"
+class FrameCaptureSettingsTypeDef(TypedDict):
+    CaptureInterval: NotRequired[int],
+    CaptureIntervalUnits: NotRequired[FrameCaptureIntervalUnitType],  # (1)
+    TimecodeBurninSettings: NotRequired[TimecodeBurninSettingsTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: FrameCaptureIntervalUnitType](./literals.md#framecaptureintervalunittype) 
+2. See [:material-code-braces: TimecodeBurninSettingsTypeDef](./type_defs.md#timecodeburninsettingstypedef) 
 ## H264FilterSettingsTypeDef
 
 ```python title="Usage Example"
@@ -5622,6 +5664,7 @@ class H264SettingsTypeDef(TypedDict):
     Syntax: NotRequired[H264SyntaxType],  # (23)
     TemporalAq: NotRequired[H264TemporalAqType],  # (24)
     TimecodeInsertion: NotRequired[H264TimecodeInsertionBehaviorType],  # (25)
+    TimecodeBurninSettings: NotRequired[TimecodeBurninSettingsTypeDef],  # (26)
 ```
 
 1. See [:material-code-brackets: H264AdaptiveQuantizationType](./literals.md#h264adaptivequantizationtype) 
@@ -5649,6 +5692,7 @@ class H264SettingsTypeDef(TypedDict):
 23. See [:material-code-brackets: H264SyntaxType](./literals.md#h264syntaxtype) 
 24. See [:material-code-brackets: H264TemporalAqType](./literals.md#h264temporalaqtype) 
 25. See [:material-code-brackets: H264TimecodeInsertionBehaviorType](./literals.md#h264timecodeinsertionbehaviortype) 
+26. See [:material-code-braces: TimecodeBurninSettingsTypeDef](./type_defs.md#timecodeburninsettingstypedef) 
 ## Mpeg2SettingsTypeDef
 
 ```python title="Usage Example"
@@ -5679,6 +5723,7 @@ class Mpeg2SettingsTypeDef(TypedDict):
     ScanType: NotRequired[Mpeg2ScanTypeType],  # (9)
     SubgopLength: NotRequired[Mpeg2SubGopLengthType],  # (10)
     TimecodeInsertion: NotRequired[Mpeg2TimecodeInsertionBehaviorType],  # (11)
+    TimecodeBurninSettings: NotRequired[TimecodeBurninSettingsTypeDef],  # (12)
 ```
 
 1. See [:material-code-brackets: Mpeg2AdaptiveQuantizationType](./literals.md#mpeg2adaptivequantizationtype) 
@@ -5692,6 +5737,7 @@ class Mpeg2SettingsTypeDef(TypedDict):
 9. See [:material-code-brackets: Mpeg2ScanTypeType](./literals.md#mpeg2scantypetype) 
 10. See [:material-code-brackets: Mpeg2SubGopLengthType](./literals.md#mpeg2subgoplengthtype) 
 11. See [:material-code-brackets: Mpeg2TimecodeInsertionBehaviorType](./literals.md#mpeg2timecodeinsertionbehaviortype) 
+12. See [:material-code-braces: TimecodeBurninSettingsTypeDef](./type_defs.md#timecodeburninsettingstypedef) 
 ## H265SettingsTypeDef
 
 ```python title="Usage Example"
@@ -5735,6 +5781,7 @@ class H265SettingsTypeDef(TypedDict):
     Slices: NotRequired[int],
     Tier: NotRequired[H265TierType],  # (16)
     TimecodeInsertion: NotRequired[H265TimecodeInsertionBehaviorType],  # (17)
+    TimecodeBurninSettings: NotRequired[TimecodeBurninSettingsTypeDef],  # (18)
 ```
 
 1. See [:material-code-brackets: H265AdaptiveQuantizationType](./literals.md#h265adaptivequantizationtype) 
@@ -5754,6 +5801,7 @@ class H265SettingsTypeDef(TypedDict):
 15. See [:material-code-brackets: H265SceneChangeDetectType](./literals.md#h265scenechangedetecttype) 
 16. See [:material-code-brackets: H265TierType](./literals.md#h265tiertype) 
 17. See [:material-code-brackets: H265TimecodeInsertionBehaviorType](./literals.md#h265timecodeinsertionbehaviortype) 
+18. See [:material-code-braces: TimecodeBurninSettingsTypeDef](./type_defs.md#timecodeburninsettingstypedef) 
 ## InputPrepareScheduleActionSettingsTypeDef
 
 ```python title="Usage Example"

@@ -23140,6 +23140,30 @@ class DescribeIamInstanceProfileAssociationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeImagesRequestDescribeImagesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeImagesRequestDescribeImagesPaginateTypeDef
+
+def get_value() -> DescribeImagesRequestDescribeImagesPaginateTypeDef:
+    return {
+        "ExecutableUsers": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImagesRequestDescribeImagesPaginateTypeDef(TypedDict):
+    ExecutableUsers: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    ImageIds: NotRequired[Sequence[str]],
+    Owners: NotRequired[Sequence[str]],
+    IncludeDeprecated: NotRequired[bool],
+    DryRun: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeImagesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -23159,6 +23183,8 @@ class DescribeImagesRequestRequestTypeDef(TypedDict):
     Owners: NotRequired[Sequence[str]],
     IncludeDeprecated: NotRequired[bool],
     DryRun: NotRequired[bool],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
@@ -27444,6 +27470,8 @@ class DescribeImagesRequestImageAvailableWaitTypeDef(TypedDict):
     Owners: NotRequired[Sequence[str]],
     IncludeDeprecated: NotRequired[bool],
     DryRun: NotRequired[bool],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
 ```
 
@@ -27468,6 +27496,8 @@ class DescribeImagesRequestImageExistsWaitTypeDef(TypedDict):
     Owners: NotRequired[Sequence[str]],
     IncludeDeprecated: NotRequired[bool],
     DryRun: NotRequired[bool],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
     WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
 ```
 
@@ -42682,6 +42712,7 @@ from mypy_boto3_ec2.type_defs import DescribeImagesResultTypeDef
 def get_value() -> DescribeImagesResultTypeDef:
     return {
         "Images": ...,
+        "NextToken": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -42689,6 +42720,7 @@ def get_value() -> DescribeImagesResultTypeDef:
 ```python title="Definition"
 class DescribeImagesResultTypeDef(TypedDict):
     Images: List[ImageTypeDef],  # (1)
+    NextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

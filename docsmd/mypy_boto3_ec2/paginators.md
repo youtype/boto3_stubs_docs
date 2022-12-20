@@ -1612,6 +1612,71 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeIamInstanceProfileAssociationsRequestDescribeIamInstanceProfileAssociationsPaginateTypeDef](./type_defs.md#describeiaminstanceprofileassociationsrequestdescribeiaminstanceprofileassociationspaginatetypedef) 
+## DescribeImagesPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_images")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeImages)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeImagesPaginator
+
+def get_describe_images_paginator() -> DescribeImagesPaginator:
+    return Session().client("ec2").get_paginator("describe_images")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeImagesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeImagesPaginator = client.get_paginator("describe_images")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+3. item: [:material-code-braces: DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeImagesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ExecutableUsers: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ImageIds: Sequence[str] = ...,
+    Owners: Sequence[str] = ...,
+    IncludeDeprecated: bool = ...,
+    DryRun: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeImagesResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImagesRequestDescribeImagesPaginateTypeDef = {  # (1)
+    "ExecutableUsers": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImagesRequestDescribeImagesPaginateTypeDef](./type_defs.md#describeimagesrequestdescribeimagespaginatetypedef) 
 ## DescribeImportImageTasksPaginator
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_import_image_tasks")`.

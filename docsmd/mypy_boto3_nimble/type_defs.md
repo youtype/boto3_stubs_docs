@@ -133,59 +133,23 @@ from mypy_boto3_nimble.type_defs import CreateStreamingSessionRequestRequestType
 
 def get_value() -> CreateStreamingSessionRequestRequestTypeDef:
     return {
+        "launchProfileId": ...,
         "studioId": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateStreamingSessionRequestRequestTypeDef(TypedDict):
+    launchProfileId: str,
     studioId: str,
     clientToken: NotRequired[str],
     ec2InstanceType: NotRequired[StreamingInstanceTypeType],  # (1)
-    launchProfileId: NotRequired[str],
     ownedBy: NotRequired[str],
     streamingImageId: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-brackets: StreamingInstanceTypeType](./literals.md#streaminginstancetypetype) 
-## StreamingSessionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_nimble.type_defs import StreamingSessionTypeDef
-
-def get_value() -> StreamingSessionTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class StreamingSessionTypeDef(TypedDict):
-    arn: NotRequired[str],
-    createdAt: NotRequired[datetime],
-    createdBy: NotRequired[str],
-    ec2InstanceType: NotRequired[str],
-    launchProfileId: NotRequired[str],
-    ownedBy: NotRequired[str],
-    sessionId: NotRequired[str],
-    startedAt: NotRequired[datetime],
-    startedBy: NotRequired[str],
-    state: NotRequired[StreamingSessionStateType],  # (1)
-    statusCode: NotRequired[StreamingSessionStatusCodeType],  # (2)
-    statusMessage: NotRequired[str],
-    stopAt: NotRequired[datetime],
-    stoppedAt: NotRequired[datetime],
-    stoppedBy: NotRequired[str],
-    streamingImageId: NotRequired[str],
-    tags: NotRequired[Dict[str, str]],
-    terminateAt: NotRequired[datetime],
-    updatedAt: NotRequired[datetime],
-    updatedBy: NotRequired[str],
-```
-
-1. See [:material-code-brackets: StreamingSessionStateType](./literals.md#streamingsessionstatetype) 
-2. See [:material-code-brackets: StreamingSessionStatusCodeType](./literals.md#streamingsessionstatuscodetype) 
 ## CreateStreamingSessionStreamRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -617,6 +581,51 @@ class GetStreamingImageRequestRequestTypeDef(TypedDict):
     studioId: str,
 ```
 
+## GetStreamingSessionBackupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import GetStreamingSessionBackupRequestRequestTypeDef
+
+def get_value() -> GetStreamingSessionBackupRequestRequestTypeDef:
+    return {
+        "backupId": ...,
+        "studioId": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamingSessionBackupRequestRequestTypeDef(TypedDict):
+    backupId: str,
+    studioId: str,
+```
+
+## StreamingSessionBackupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import StreamingSessionBackupTypeDef
+
+def get_value() -> StreamingSessionBackupTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class StreamingSessionBackupTypeDef(TypedDict):
+    arn: NotRequired[str],
+    backupId: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    launchProfileId: NotRequired[str],
+    ownedBy: NotRequired[str],
+    sessionId: NotRequired[str],
+    state: NotRequired[StreamingSessionStateType],  # (1)
+    statusCode: NotRequired[StreamingSessionStatusCodeType],  # (2)
+    statusMessage: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
+
+1. See [:material-code-brackets: StreamingSessionStateType](./literals.md#streamingsessionstatetype) 
+2. See [:material-code-brackets: StreamingSessionStatusCodeType](./literals.md#streamingsessionstatuscodetype) 
 ## GetStreamingSessionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -900,6 +909,24 @@ class ListStreamingImagesRequestRequestTypeDef(TypedDict):
     owner: NotRequired[str],
 ```
 
+## ListStreamingSessionBackupsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import ListStreamingSessionBackupsRequestRequestTypeDef
+
+def get_value() -> ListStreamingSessionBackupsRequestRequestTypeDef:
+    return {
+        "studioId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamingSessionBackupsRequestRequestTypeDef(TypedDict):
+    studioId: str,
+    nextToken: NotRequired[str],
+    ownedBy: NotRequired[str],
+```
+
 ## ListStreamingSessionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1066,6 +1093,7 @@ def get_value() -> StartStreamingSessionRequestRequestTypeDef:
 class StartStreamingSessionRequestRequestTypeDef(TypedDict):
     sessionId: str,
     studioId: str,
+    backupId: NotRequired[str],
     clientToken: NotRequired[str],
 ```
 
@@ -1103,6 +1131,44 @@ class StopStreamingSessionRequestRequestTypeDef(TypedDict):
     sessionId: str,
     studioId: str,
     clientToken: NotRequired[str],
+    volumeRetentionMode: NotRequired[VolumeRetentionModeType],  # (1)
+```
+
+1. See [:material-code-brackets: VolumeRetentionModeType](./literals.md#volumeretentionmodetype) 
+## StreamConfigurationSessionBackupTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import StreamConfigurationSessionBackupTypeDef
+
+def get_value() -> StreamConfigurationSessionBackupTypeDef:
+    return {
+        "maxBackupsToRetain": ...,
+    }
+```
+
+```python title="Definition"
+class StreamConfigurationSessionBackupTypeDef(TypedDict):
+    maxBackupsToRetain: NotRequired[int],
+    mode: NotRequired[SessionBackupModeType],  # (1)
+```
+
+1. See [:material-code-brackets: SessionBackupModeType](./literals.md#sessionbackupmodetype) 
+## VolumeConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import VolumeConfigurationTypeDef
+
+def get_value() -> VolumeConfigurationTypeDef:
+    return {
+        "iops": ...,
+    }
+```
+
+```python title="Definition"
+class VolumeConfigurationTypeDef(TypedDict):
+    iops: NotRequired[int],
+    size: NotRequired[int],
+    throughput: NotRequired[int],
 ```
 
 ## StreamingSessionStorageRootTypeDef
@@ -1343,128 +1409,6 @@ class LaunchProfileInitializationActiveDirectoryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ActiveDirectoryComputerAttributeTypeDef](./type_defs.md#activedirectorycomputerattributetypedef) 
-## CreateStreamingSessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_nimble.type_defs import CreateStreamingSessionResponseTypeDef
-
-def get_value() -> CreateStreamingSessionResponseTypeDef:
-    return {
-        "session": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateStreamingSessionResponseTypeDef(TypedDict):
-    session: StreamingSessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteStreamingSessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_nimble.type_defs import DeleteStreamingSessionResponseTypeDef
-
-def get_value() -> DeleteStreamingSessionResponseTypeDef:
-    return {
-        "session": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteStreamingSessionResponseTypeDef(TypedDict):
-    session: StreamingSessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetStreamingSessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_nimble.type_defs import GetStreamingSessionResponseTypeDef
-
-def get_value() -> GetStreamingSessionResponseTypeDef:
-    return {
-        "session": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetStreamingSessionResponseTypeDef(TypedDict):
-    session: StreamingSessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListStreamingSessionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_nimble.type_defs import ListStreamingSessionsResponseTypeDef
-
-def get_value() -> ListStreamingSessionsResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "sessions": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListStreamingSessionsResponseTypeDef(TypedDict):
-    nextToken: str,
-    sessions: List[StreamingSessionTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StartStreamingSessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_nimble.type_defs import StartStreamingSessionResponseTypeDef
-
-def get_value() -> StartStreamingSessionResponseTypeDef:
-    return {
-        "session": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StartStreamingSessionResponseTypeDef(TypedDict):
-    session: StreamingSessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## StopStreamingSessionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_nimble.type_defs import StopStreamingSessionResponseTypeDef
-
-def get_value() -> StopStreamingSessionResponseTypeDef:
-    return {
-        "session": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class StopStreamingSessionResponseTypeDef(TypedDict):
-    session: StreamingSessionTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStreamingSessionStreamResponseTypeDef
 
 ```python title="Usage Example"
@@ -1907,6 +1851,48 @@ class GetStudioRequestStudioReadyWaitTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetStreamingSessionBackupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import GetStreamingSessionBackupResponseTypeDef
+
+def get_value() -> GetStreamingSessionBackupResponseTypeDef:
+    return {
+        "streamingSessionBackup": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamingSessionBackupResponseTypeDef(TypedDict):
+    streamingSessionBackup: StreamingSessionBackupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionBackupTypeDef](./type_defs.md#streamingsessionbackuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStreamingSessionBackupsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import ListStreamingSessionBackupsResponseTypeDef
+
+def get_value() -> ListStreamingSessionBackupsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "streamingSessionBackups": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamingSessionBackupsResponseTypeDef(TypedDict):
+    nextToken: str,
+    streamingSessionBackups: List[StreamingSessionBackupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionBackupTypeDef](./type_defs.md#streamingsessionbackuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStudioMemberResponseTypeDef
 
 ```python title="Usage Example"
@@ -2046,6 +2032,25 @@ class ListStreamingImagesRequestListStreamingImagesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListStreamingSessionBackupsRequestListStreamingSessionBackupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import ListStreamingSessionBackupsRequestListStreamingSessionBackupsPaginateTypeDef
+
+def get_value() -> ListStreamingSessionBackupsRequestListStreamingSessionBackupsPaginateTypeDef:
+    return {
+        "studioId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamingSessionBackupsRequestListStreamingSessionBackupsPaginateTypeDef(TypedDict):
+    studioId: str,
+    ownedBy: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStreamingSessionsRequestListStreamingSessionsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2170,6 +2175,55 @@ class PutStudioMembersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NewStudioMemberTypeDef](./type_defs.md#newstudiomembertypedef) 
+## StreamingSessionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import StreamingSessionTypeDef
+
+def get_value() -> StreamingSessionTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class StreamingSessionTypeDef(TypedDict):
+    arn: NotRequired[str],
+    automaticTerminationMode: NotRequired[AutomaticTerminationModeType],  # (1)
+    backupMode: NotRequired[SessionBackupModeType],  # (2)
+    createdAt: NotRequired[datetime],
+    createdBy: NotRequired[str],
+    ec2InstanceType: NotRequired[str],
+    launchProfileId: NotRequired[str],
+    maxBackupsToRetain: NotRequired[int],
+    ownedBy: NotRequired[str],
+    sessionId: NotRequired[str],
+    sessionPersistenceMode: NotRequired[SessionPersistenceModeType],  # (3)
+    startedAt: NotRequired[datetime],
+    startedBy: NotRequired[str],
+    startedFromBackupId: NotRequired[str],
+    state: NotRequired[StreamingSessionStateType],  # (4)
+    statusCode: NotRequired[StreamingSessionStatusCodeType],  # (5)
+    statusMessage: NotRequired[str],
+    stopAt: NotRequired[datetime],
+    stoppedAt: NotRequired[datetime],
+    stoppedBy: NotRequired[str],
+    streamingImageId: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    terminateAt: NotRequired[datetime],
+    updatedAt: NotRequired[datetime],
+    updatedBy: NotRequired[str],
+    volumeConfiguration: NotRequired[VolumeConfigurationTypeDef],  # (6)
+    volumeRetentionMode: NotRequired[VolumeRetentionModeType],  # (7)
+```
+
+1. See [:material-code-brackets: AutomaticTerminationModeType](./literals.md#automaticterminationmodetype) 
+2. See [:material-code-brackets: SessionBackupModeType](./literals.md#sessionbackupmodetype) 
+3. See [:material-code-brackets: SessionPersistenceModeType](./literals.md#sessionpersistencemodetype) 
+4. See [:material-code-brackets: StreamingSessionStateType](./literals.md#streamingsessionstatetype) 
+5. See [:material-code-brackets: StreamingSessionStatusCodeType](./literals.md#streamingsessionstatuscodetype) 
+6. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
+7. See [:material-code-brackets: VolumeRetentionModeType](./literals.md#volumeretentionmodetype) 
 ## StreamConfigurationSessionStorageTypeDef
 
 ```python title="Usage Example"
@@ -2393,6 +2447,128 @@ class UpdateStudioResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: StudioTypeDef](./type_defs.md#studiotypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateStreamingSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import CreateStreamingSessionResponseTypeDef
+
+def get_value() -> CreateStreamingSessionResponseTypeDef:
+    return {
+        "session": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateStreamingSessionResponseTypeDef(TypedDict):
+    session: StreamingSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteStreamingSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import DeleteStreamingSessionResponseTypeDef
+
+def get_value() -> DeleteStreamingSessionResponseTypeDef:
+    return {
+        "session": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteStreamingSessionResponseTypeDef(TypedDict):
+    session: StreamingSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetStreamingSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import GetStreamingSessionResponseTypeDef
+
+def get_value() -> GetStreamingSessionResponseTypeDef:
+    return {
+        "session": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetStreamingSessionResponseTypeDef(TypedDict):
+    session: StreamingSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStreamingSessionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import ListStreamingSessionsResponseTypeDef
+
+def get_value() -> ListStreamingSessionsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "sessions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamingSessionsResponseTypeDef(TypedDict):
+    nextToken: str,
+    sessions: List[StreamingSessionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartStreamingSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import StartStreamingSessionResponseTypeDef
+
+def get_value() -> StartStreamingSessionResponseTypeDef:
+    return {
+        "session": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartStreamingSessionResponseTypeDef(TypedDict):
+    session: StreamingSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopStreamingSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_nimble.type_defs import StopStreamingSessionResponseTypeDef
+
+def get_value() -> StopStreamingSessionResponseTypeDef:
+    return {
+        "session": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopStreamingSessionResponseTypeDef(TypedDict):
+    session: StreamingSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StreamConfigurationCreateTypeDef
 
 ```python title="Usage Example"
@@ -2408,17 +2584,25 @@ def get_value() -> StreamConfigurationCreateTypeDef:
 
 ```python title="Definition"
 class StreamConfigurationCreateTypeDef(TypedDict):
-    clipboardMode: StreamingClipboardModeType,  # (1)
-    ec2InstanceTypes: Sequence[StreamingInstanceTypeType],  # (2)
+    clipboardMode: StreamingClipboardModeType,  # (2)
+    ec2InstanceTypes: Sequence[StreamingInstanceTypeType],  # (3)
     streamingImageIds: Sequence[str],
+    automaticTerminationMode: NotRequired[AutomaticTerminationModeType],  # (1)
     maxSessionLengthInMinutes: NotRequired[int],
     maxStoppedSessionLengthInMinutes: NotRequired[int],
-    sessionStorage: NotRequired[StreamConfigurationSessionStorageTypeDef],  # (3)
+    sessionBackup: NotRequired[StreamConfigurationSessionBackupTypeDef],  # (4)
+    sessionPersistenceMode: NotRequired[SessionPersistenceModeType],  # (5)
+    sessionStorage: NotRequired[StreamConfigurationSessionStorageTypeDef],  # (6)
+    volumeConfiguration: NotRequired[VolumeConfigurationTypeDef],  # (7)
 ```
 
-1. See [:material-code-brackets: StreamingClipboardModeType](./literals.md#streamingclipboardmodetype) 
-2. See [:material-code-brackets: StreamingInstanceTypeType](./literals.md#streaminginstancetypetype) 
-3. See [:material-code-braces: StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef) 
+1. See [:material-code-brackets: AutomaticTerminationModeType](./literals.md#automaticterminationmodetype) 
+2. See [:material-code-brackets: StreamingClipboardModeType](./literals.md#streamingclipboardmodetype) 
+3. See [:material-code-brackets: StreamingInstanceTypeType](./literals.md#streaminginstancetypetype) 
+4. See [:material-code-braces: StreamConfigurationSessionBackupTypeDef](./type_defs.md#streamconfigurationsessionbackuptypedef) 
+5. See [:material-code-brackets: SessionPersistenceModeType](./literals.md#sessionpersistencemodetype) 
+6. See [:material-code-braces: StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef) 
+7. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
 ## StreamConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -2434,17 +2618,25 @@ def get_value() -> StreamConfigurationTypeDef:
 
 ```python title="Definition"
 class StreamConfigurationTypeDef(TypedDict):
-    clipboardMode: StreamingClipboardModeType,  # (1)
-    ec2InstanceTypes: List[StreamingInstanceTypeType],  # (2)
+    clipboardMode: StreamingClipboardModeType,  # (2)
+    ec2InstanceTypes: List[StreamingInstanceTypeType],  # (3)
     streamingImageIds: List[str],
+    automaticTerminationMode: NotRequired[AutomaticTerminationModeType],  # (1)
     maxSessionLengthInMinutes: NotRequired[int],
     maxStoppedSessionLengthInMinutes: NotRequired[int],
-    sessionStorage: NotRequired[StreamConfigurationSessionStorageTypeDef],  # (3)
+    sessionBackup: NotRequired[StreamConfigurationSessionBackupTypeDef],  # (4)
+    sessionPersistenceMode: NotRequired[SessionPersistenceModeType],  # (5)
+    sessionStorage: NotRequired[StreamConfigurationSessionStorageTypeDef],  # (6)
+    volumeConfiguration: NotRequired[VolumeConfigurationTypeDef],  # (7)
 ```
 
-1. See [:material-code-brackets: StreamingClipboardModeType](./literals.md#streamingclipboardmodetype) 
-2. See [:material-code-brackets: StreamingInstanceTypeType](./literals.md#streaminginstancetypetype) 
-3. See [:material-code-braces: StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef) 
+1. See [:material-code-brackets: AutomaticTerminationModeType](./literals.md#automaticterminationmodetype) 
+2. See [:material-code-brackets: StreamingClipboardModeType](./literals.md#streamingclipboardmodetype) 
+3. See [:material-code-brackets: StreamingInstanceTypeType](./literals.md#streaminginstancetypetype) 
+4. See [:material-code-braces: StreamConfigurationSessionBackupTypeDef](./type_defs.md#streamconfigurationsessionbackuptypedef) 
+5. See [:material-code-brackets: SessionPersistenceModeType](./literals.md#sessionpersistencemodetype) 
+6. See [:material-code-braces: StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef) 
+7. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
 ## CreateStreamingImageResponseTypeDef
 
 ```python title="Usage Example"

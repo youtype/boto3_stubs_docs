@@ -414,9 +414,17 @@ def get_value() -> AutoMLMetricEnumType:
 AutoMLMetricEnumType = Literal[
     "Accuracy",
     "AUC",
+    "BalancedAccuracy",
     "F1",
     "F1macro",
+    "MAE",
     "MSE",
+    "Precision",
+    "PrecisionMacro",
+    "R2",
+    "Recall",
+    "RecallMacro",
+    "RMSE",
 ]
 ```
 ## AutoMLMetricExtendedEnumType

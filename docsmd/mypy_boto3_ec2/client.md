@@ -8612,6 +8612,8 @@ def describe_images(
     Owners: Sequence[str] = ...,
     IncludeDeprecated: bool = ...,
     DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
 ) -> DescribeImagesResultTypeDef:  # (2)
     ...
 ```
@@ -19758,6 +19760,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_pagin
 - `client.get_paginator("describe_host_reservations")` -> [DescribeHostReservationsPaginator](./paginators.md#describehostreservationspaginator)
 - `client.get_paginator("describe_hosts")` -> [DescribeHostsPaginator](./paginators.md#describehostspaginator)
 - `client.get_paginator("describe_iam_instance_profile_associations")` -> [DescribeIamInstanceProfileAssociationsPaginator](./paginators.md#describeiaminstanceprofileassociationspaginator)
+- `client.get_paginator("describe_images")` -> [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
 - `client.get_paginator("describe_import_image_tasks")` -> [DescribeImportImageTasksPaginator](./paginators.md#describeimportimagetaskspaginator)
 - `client.get_paginator("describe_import_snapshot_tasks")` -> [DescribeImportSnapshotTasksPaginator](./paginators.md#describeimportsnapshottaskspaginator)
 - `client.get_paginator("describe_instance_credit_specifications")` -> [DescribeInstanceCreditSpecificationsPaginator](./paginators.md#describeinstancecreditspecificationspaginator)

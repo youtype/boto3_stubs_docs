@@ -7,6 +7,21 @@
     Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
     type annotations stubs module [mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
+## AutomaticTerminationModeType
+
+```python title="Usage Example"
+from mypy_boto3_nimble.literals import AutomaticTerminationModeType
+
+def get_value() -> AutomaticTerminationModeType:
+    return "ACTIVATED"
+```
+
+```python title="Definition"
+AutomaticTerminationModeType = Literal[
+    "ACTIVATED",
+    "DEACTIVATED",
+]
+```
 ## LaunchProfileDeletedWaiterName
 
 ```python title="Usage Example"
@@ -240,6 +255,20 @@ ListStreamingImagesPaginatorName = Literal[
     "list_streaming_images",
 ]
 ```
+## ListStreamingSessionBackupsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_nimble.literals import ListStreamingSessionBackupsPaginatorName
+
+def get_value() -> ListStreamingSessionBackupsPaginatorName:
+    return "list_streaming_session_backups"
+```
+
+```python title="Definition"
+ListStreamingSessionBackupsPaginatorName = Literal[
+    "list_streaming_session_backups",
+]
+```
 ## ListStreamingSessionsPaginatorName
 
 ```python title="Usage Example"
@@ -294,6 +323,36 @@ def get_value() -> ListStudiosPaginatorName:
 ```python title="Definition"
 ListStudiosPaginatorName = Literal[
     "list_studios",
+]
+```
+## SessionBackupModeType
+
+```python title="Usage Example"
+from mypy_boto3_nimble.literals import SessionBackupModeType
+
+def get_value() -> SessionBackupModeType:
+    return "AUTOMATIC"
+```
+
+```python title="Definition"
+SessionBackupModeType = Literal[
+    "AUTOMATIC",
+    "DEACTIVATED",
+]
+```
+## SessionPersistenceModeType
+
+```python title="Usage Example"
+from mypy_boto3_nimble.literals import SessionPersistenceModeType
+
+def get_value() -> SessionPersistenceModeType:
+    return "ACTIVATED"
+```
+
+```python title="Definition"
+SessionPersistenceModeType = Literal[
+    "ACTIVATED",
+    "DEACTIVATED",
 ]
 ```
 ## StreamingClipboardModeType
@@ -796,6 +855,7 @@ StudioStatusCodeType = Literal[
     "AWS_SSO_CONFIGURATION_REPAIR_IN_PROGRESS",
     "AWS_SSO_CONFIGURATION_REPAIRED",
     "AWS_SSO_NOT_ENABLED",
+    "AWS_STS_REGION_DISABLED",
     "ENCRYPTION_KEY_ACCESS_DENIED",
     "ENCRYPTION_KEY_NOT_FOUND",
     "INTERNAL_ERROR",
@@ -810,6 +870,21 @@ StudioStatusCodeType = Literal[
     "STUDIO_WITH_LAUNCH_PROFILES_NOT_DELETED",
     "STUDIO_WITH_STREAMING_IMAGES_NOT_DELETED",
     "STUDIO_WITH_STUDIO_COMPONENTS_NOT_DELETED",
+]
+```
+## VolumeRetentionModeType
+
+```python title="Usage Example"
+from mypy_boto3_nimble.literals import VolumeRetentionModeType
+
+def get_value() -> VolumeRetentionModeType:
+    return "DELETE"
+```
+
+```python title="Definition"
+VolumeRetentionModeType = Literal[
+    "DELETE",
+    "RETAIN",
 ]
 ```
 ## NimbleStudioServiceName
@@ -1213,6 +1288,7 @@ PaginatorName = Literal[
     "list_launch_profile_members",
     "list_launch_profiles",
     "list_streaming_images",
+    "list_streaming_session_backups",
     "list_streaming_sessions",
     "list_studio_components",
     "list_studio_members",

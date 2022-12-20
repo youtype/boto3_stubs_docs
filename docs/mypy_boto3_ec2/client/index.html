@@ -54662,8 +54662,10 @@ the images available to you.</p>
 <a id="__codelineno-507-7" name="__codelineno-507-7" href="#__codelineno-507-7"></a>    <span class="n">Owners</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-507-8" name="__codelineno-507-8" href="#__codelineno-507-8"></a>    <span class="n">IncludeDeprecated</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-507-9" name="__codelineno-507-9" href="#__codelineno-507-9"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-507-10" name="__codelineno-507-10" href="#__codelineno-507-10"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DescribeImagesResultTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-507-11" name="__codelineno-507-11" href="#__codelineno-507-11"></a>    <span class="o">...</span>
+<a id="__codelineno-507-10" name="__codelineno-507-10" href="#__codelineno-507-10"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-507-11" name="__codelineno-507-11" href="#__codelineno-507-11"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-507-12" name="__codelineno-507-12" href="#__codelineno-507-12"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DescribeImagesResultTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-507-13" name="__codelineno-507-13" href="#__codelineno-507-13"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#filtertypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> FilterTypeDef</a> </li>
@@ -63849,6 +63851,7 @@ prefixes from a network interface.</p>
 <li><code>client.get_paginator("describe_host_reservations")</code> -&gt; <a href="../paginators/#describehostreservationspaginator">DescribeHostReservationsPaginator</a></li>
 <li><code>client.get_paginator("describe_hosts")</code> -&gt; <a href="../paginators/#describehostspaginator">DescribeHostsPaginator</a></li>
 <li><code>client.get_paginator("describe_iam_instance_profile_associations")</code> -&gt; <a href="../paginators/#describeiaminstanceprofileassociationspaginator">DescribeIamInstanceProfileAssociationsPaginator</a></li>
+<li><code>client.get_paginator("describe_images")</code> -&gt; <a href="../paginators/#describeimagespaginator">DescribeImagesPaginator</a></li>
 <li><code>client.get_paginator("describe_import_image_tasks")</code> -&gt; <a href="../paginators/#describeimportimagetaskspaginator">DescribeImportImageTasksPaginator</a></li>
 <li><code>client.get_paginator("describe_import_snapshot_tasks")</code> -&gt; <a href="../paginators/#describeimportsnapshottaskspaginator">DescribeImportSnapshotTasksPaginator</a></li>
 <li><code>client.get_paginator("describe_instance_credit_specifications")</code> -&gt; <a href="../paginators/#describeinstancecreditspecificationspaginator">DescribeInstanceCreditSpecificationsPaginator</a></li>

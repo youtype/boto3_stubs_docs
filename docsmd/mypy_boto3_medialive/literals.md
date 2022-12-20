@@ -701,6 +701,28 @@ DeviceUpdateStatusType = Literal[
     "UPDATING",
 ]
 ```
+## DolbyEProgramSelectionType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import DolbyEProgramSelectionType
+
+def get_value() -> DolbyEProgramSelectionType:
+    return "ALL_CHANNELS"
+```
+
+```python title="Definition"
+DolbyEProgramSelectionType = Literal[
+    "ALL_CHANNELS",
+    "PROGRAM_1",
+    "PROGRAM_2",
+    "PROGRAM_3",
+    "PROGRAM_4",
+    "PROGRAM_5",
+    "PROGRAM_6",
+    "PROGRAM_7",
+    "PROGRAM_8",
+]
+```
 ## DvbSdtOutputSdtType
 
 ```python title="Usage Example"
@@ -4298,6 +4320,45 @@ TemporalFilterStrengthType = Literal[
     "STRENGTH_7",
     "STRENGTH_8",
     "STRENGTH_9",
+]
+```
+## TimecodeBurninFontSizeType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import TimecodeBurninFontSizeType
+
+def get_value() -> TimecodeBurninFontSizeType:
+    return "EXTRA_SMALL_10"
+```
+
+```python title="Definition"
+TimecodeBurninFontSizeType = Literal[
+    "EXTRA_SMALL_10",
+    "LARGE_48",
+    "MEDIUM_32",
+    "SMALL_16",
+]
+```
+## TimecodeBurninPositionType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import TimecodeBurninPositionType
+
+def get_value() -> TimecodeBurninPositionType:
+    return "BOTTOM_CENTER"
+```
+
+```python title="Definition"
+TimecodeBurninPositionType = Literal[
+    "BOTTOM_CENTER",
+    "BOTTOM_LEFT",
+    "BOTTOM_RIGHT",
+    "MIDDLE_CENTER",
+    "MIDDLE_LEFT",
+    "MIDDLE_RIGHT",
+    "TOP_CENTER",
+    "TOP_LEFT",
+    "TOP_RIGHT",
 ]
 ```
 ## TimecodeConfigSourceType
