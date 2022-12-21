@@ -415,6 +415,7 @@ ServiceName = Literal[
     "lexv2-models",
     "lexv2-runtime",
     "license-manager",
+    "license-manager-linux-subscriptions",
     "license-manager-user-subscriptions",
     "lightsail",
     "location",
@@ -605,5 +606,19 @@ PaginatorName = Literal[
     "list_applications",
     "list_components",
     "list_databases",
+]
+```
+## RegionName
+
+```python title="Usage Example"
+from mypy_boto3_ssm_sap.literals import RegionName
+
+def get_value() -> RegionName:
+    return "us-east-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "us-east-1",
 ]
 ```

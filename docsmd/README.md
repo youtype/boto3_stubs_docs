@@ -440,6 +440,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-license-manager](./mypy_boto3_license_manager/README.md) for [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager) service
 
+- [mypy-boto3-license-manager-linux-subscriptions](./mypy_boto3_license_manager_linux_subscriptions/README.md) for [LicenseManagerLinuxSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager-linux-subscriptions.html#LicenseManagerLinuxSubscriptions) service
+
 - [mypy-boto3-license-manager-user-subscriptions](./mypy_boto3_license_manager_user_subscriptions/README.md) for [LicenseManagerUserSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager-user-subscriptions.html#LicenseManagerUserSubscriptions) service
 
 - [mypy-boto3-lightsail](./mypy_boto3_lightsail/README.md) for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail) service

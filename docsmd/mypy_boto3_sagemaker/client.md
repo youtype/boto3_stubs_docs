@@ -9530,14 +9530,16 @@ def update_domain(
     DefaultUserSettings: UserSettingsTypeDef = ...,  # (1)
     DomainSettingsForUpdate: DomainSettingsForUpdateTypeDef = ...,  # (2)
     DefaultSpaceSettings: DefaultSpaceSettingsTypeDef = ...,  # (3)
-) -> UpdateDomainResponseTypeDef:  # (4)
+    AppSecurityGroupManagement: AppSecurityGroupManagementType = ...,  # (4)
+) -> UpdateDomainResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
 2. See [:material-code-braces: DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef) 
 3. See [:material-code-braces: DefaultSpaceSettingsTypeDef](./type_defs.md#defaultspacesettingstypedef) 
-4. See [:material-code-braces: UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef) 
+4. See [:material-code-brackets: AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype) 
+5. See [:material-code-braces: UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

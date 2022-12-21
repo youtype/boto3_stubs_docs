@@ -983,8 +983,10 @@ def get_value() -> StorageClassType:
 StorageClassType = Literal[
     "DEEP_ARCHIVE",
     "GLACIER",
+    "GLACIER_IR",
     "INTELLIGENT_TIERING",
     "ONEZONE_IA",
+    "OUTPOSTS",
     "REDUCED_REDUNDANCY",
     "STANDARD",
     "STANDARD_IA",
@@ -1366,6 +1368,7 @@ ServiceName = Literal[
     "lexv2-models",
     "lexv2-runtime",
     "license-manager",
+    "license-manager-linux-subscriptions",
     "license-manager-user-subscriptions",
     "lightsail",
     "location",

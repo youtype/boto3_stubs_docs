@@ -3085,6 +3085,30 @@ class CopyStepDetailsTypeDef(TypedDict):
 
 1. See [:material-code-braces: InputFileLocationTypeDef](./type_defs.md#inputfilelocationtypedef) 
 2. See [:material-code-brackets: OverwriteExistingType](./literals.md#overwriteexistingtype) 
+## DecryptStepDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_transfer.type_defs import DecryptStepDetailsTypeDef
+
+def get_value() -> DecryptStepDetailsTypeDef:
+    return {
+        "Type": ...,
+        "DestinationFileLocation": ...,
+    }
+```
+
+```python title="Definition"
+class DecryptStepDetailsTypeDef(TypedDict):
+    Type: EncryptionTypeType,  # (1)
+    DestinationFileLocation: InputFileLocationTypeDef,  # (3)
+    Name: NotRequired[str],
+    SourceFileLocation: NotRequired[str],
+    OverwriteExisting: NotRequired[OverwriteExistingType],  # (2)
+```
+
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+2. See [:material-code-brackets: OverwriteExistingType](./literals.md#overwriteexistingtype) 
+3. See [:material-code-braces: InputFileLocationTypeDef](./type_defs.md#inputfilelocationtypedef) 
 ## ListedExecutionTypeDef
 
 ```python title="Usage Example"
@@ -3271,6 +3295,7 @@ class WorkflowStepTypeDef(TypedDict):
     CustomStepDetails: NotRequired[CustomStepDetailsTypeDef],  # (3)
     DeleteStepDetails: NotRequired[DeleteStepDetailsTypeDef],  # (4)
     TagStepDetails: NotRequired[TagStepDetailsTypeDef],  # (5)
+    DecryptStepDetails: NotRequired[DecryptStepDetailsTypeDef],  # (6)
 ```
 
 1. See [:material-code-brackets: WorkflowStepTypeType](./literals.md#workflowsteptypetype) 
@@ -3278,6 +3303,7 @@ class WorkflowStepTypeDef(TypedDict):
 3. See [:material-code-braces: CustomStepDetailsTypeDef](./type_defs.md#customstepdetailstypedef) 
 4. See [:material-code-braces: DeleteStepDetailsTypeDef](./type_defs.md#deletestepdetailstypedef) 
 5. See [:material-code-braces: TagStepDetailsTypeDef](./type_defs.md#tagstepdetailstypedef) 
+6. See [:material-code-braces: DecryptStepDetailsTypeDef](./type_defs.md#decryptstepdetailstypedef) 
 ## ListExecutionsResponseTypeDef
 
 ```python title="Usage Example"

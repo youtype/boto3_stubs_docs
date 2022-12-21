@@ -144,6 +144,20 @@ EncryptionAlgType = Literal[
     "NONE",
 ]
 ```
+## EncryptionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import EncryptionTypeType
+
+def get_value() -> EncryptionTypeType:
+    return "PGP"
+```
+
+```python title="Definition"
+EncryptionTypeType = Literal[
+    "PGP",
+]
+```
 ## EndpointTypeType
 
 ```python title="Usage Example"
@@ -574,6 +588,7 @@ def get_value() -> WorkflowStepTypeType:
 WorkflowStepTypeType = Literal[
     "COPY",
     "CUSTOM",
+    "DECRYPT",
     "DELETE",
     "TAG",
 ]
@@ -787,6 +802,7 @@ ServiceName = Literal[
     "lexv2-models",
     "lexv2-runtime",
     "license-manager",
+    "license-manager-linux-subscriptions",
     "license-manager-user-subscriptions",
     "lightsail",
     "location",

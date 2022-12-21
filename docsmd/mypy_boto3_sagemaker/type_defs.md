@@ -13091,6 +13091,8 @@ def get_value() -> RStudioServerProDomainSettingsForUpdateTypeDef:
 class RStudioServerProDomainSettingsForUpdateTypeDef(TypedDict):
     DomainExecutionRoleArn: str,
     DefaultResourceSpec: NotRequired[ResourceSpecTypeDef],  # (1)
+    RStudioConnectUrl: NotRequired[str],
+    RStudioPackageManagerUrl: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ResourceSpecTypeDef](./type_defs.md#resourcespectypedef) 
@@ -19582,6 +19584,7 @@ def get_value() -> DomainSettingsForUpdateTypeDef:
 class DomainSettingsForUpdateTypeDef(TypedDict):
     RStudioServerProDomainSettingsForUpdate: NotRequired[RStudioServerProDomainSettingsForUpdateTypeDef],  # (1)
     ExecutionRoleIdentityConfig: NotRequired[ExecutionRoleIdentityConfigType],  # (2)
+    SecurityGroupIds: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-braces: RStudioServerProDomainSettingsForUpdateTypeDef](./type_defs.md#rstudioserverprodomainsettingsforupdatetypedef) 
@@ -21687,11 +21690,13 @@ class UpdateDomainRequestRequestTypeDef(TypedDict):
     DefaultUserSettings: NotRequired[UserSettingsTypeDef],  # (1)
     DomainSettingsForUpdate: NotRequired[DomainSettingsForUpdateTypeDef],  # (2)
     DefaultSpaceSettings: NotRequired[DefaultSpaceSettingsTypeDef],  # (3)
+    AppSecurityGroupManagement: NotRequired[AppSecurityGroupManagementType],  # (4)
 ```
 
 1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
 2. See [:material-code-braces: DomainSettingsForUpdateTypeDef](./type_defs.md#domainsettingsforupdatetypedef) 
 3. See [:material-code-braces: DefaultSpaceSettingsTypeDef](./type_defs.md#defaultspacesettingstypedef) 
+4. See [:material-code-brackets: AppSecurityGroupManagementType](./literals.md#appsecuritygroupmanagementtype) 
 ## UpdateUserProfileRequestRequestTypeDef
 
 ```python title="Usage Example"
