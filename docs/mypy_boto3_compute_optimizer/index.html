@@ -8388,6 +8388,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -8432,6 +8439,20 @@
     <li class="md-nav__item">
       <a href="literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -39613,6 +39634,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -39683,23 +39711,49 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ComputeOptimizerClient</span><span class="p">:</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;compute-optimizer&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="literals">Literals</h2>
-<p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_compute_optimizer.literals</span> <span class="kn">import</span> <span class="n">CpuVendorArchitectureType</span>
+<h2 id="paginators">Paginators</h2>
+<p>Type annotations and code completion for <a href="paginators/">paginators</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;compute-optimizer&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CpuVendorArchitectureType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;AWS_ARM64&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_compute_optimizer.paginator</span> <span class="kn">import</span> <span class="n">DescribeRecommendationExportJobsPaginator</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_describe_recommendation_export_jobs_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeRecommendationExportJobsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;compute-optimizer&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_recommendation_export_jobs&quot;</span><span class="p">))</span>
 </code></pre></div>
 <ul>
+<li><a href="paginators/#describerecommendationexportjobspaginator">DescribeRecommendationExportJobsPaginator</a></li>
+<li><a href="paginators/#getenrollmentstatusesfororganizationpaginator">GetEnrollmentStatusesForOrganizationPaginator</a></li>
+<li><a href="paginators/#getlambdafunctionrecommendationspaginator">GetLambdaFunctionRecommendationsPaginator</a></li>
+<li><a href="paginators/#getrecommendationpreferencespaginator">GetRecommendationPreferencesPaginator</a></li>
+<li><a href="paginators/#getrecommendationsummariespaginator">GetRecommendationSummariesPaginator</a></li>
+</ul>
+<h2 id="literals">Literals</h2>
+<p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_compute_optimizer.literals</span> <span class="kn">import</span> <span class="n">AutoScalingConfigurationType</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AutoScalingConfigurationType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;TargetTrackingScalingCpu&quot;</span>
+</code></pre></div>
+<ul>
+<li><a href="literals/#autoscalingconfigurationtype">AutoScalingConfigurationType</a></li>
 <li><a href="literals/#cpuvendorarchitecturetype">CpuVendorArchitectureType</a></li>
 <li><a href="literals/#currencytype">CurrencyType</a></li>
 <li><a href="literals/#currentperformancerisktype">CurrentPerformanceRiskType</a></li>
+<li><a href="literals/#describerecommendationexportjobspaginatorname">DescribeRecommendationExportJobsPaginatorName</a></li>
 <li><a href="literals/#ebsfilternametype">EBSFilterNameType</a></li>
 <li><a href="literals/#ebsfindingtype">EBSFindingType</a></li>
 <li><a href="literals/#ebsmetricnametype">EBSMetricNameType</a></li>
+<li><a href="literals/#ecsservicelaunchtypetype">ECSServiceLaunchTypeType</a></li>
+<li><a href="literals/#ecsservicemetricnametype">ECSServiceMetricNameType</a></li>
+<li><a href="literals/#ecsservicemetricstatistictype">ECSServiceMetricStatisticType</a></li>
+<li><a href="literals/#ecsservicerecommendationfilternametype">ECSServiceRecommendationFilterNameType</a></li>
+<li><a href="literals/#ecsservicerecommendationfindingreasoncodetype">ECSServiceRecommendationFindingReasonCodeType</a></li>
+<li><a href="literals/#ecsservicerecommendationfindingtype">ECSServiceRecommendationFindingType</a></li>
 <li><a href="literals/#enhancedinfrastructuremetricstype">EnhancedInfrastructureMetricsType</a></li>
 <li><a href="literals/#enrollmentfilternametype">EnrollmentFilterNameType</a></li>
 <li><a href="literals/#exportableautoscalinggroupfieldtype">ExportableAutoScalingGroupFieldType</a></li>
+<li><a href="literals/#exportableecsservicefieldtype">ExportableECSServiceFieldType</a></li>
 <li><a href="literals/#exportableinstancefieldtype">ExportableInstanceFieldType</a></li>
 <li><a href="literals/#exportablelambdafunctionfieldtype">ExportableLambdaFunctionFieldType</a></li>
 <li><a href="literals/#exportablevolumefieldtype">ExportableVolumeFieldType</a></li>
@@ -39708,6 +39762,10 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#filternametype">FilterNameType</a></li>
 <li><a href="literals/#findingreasoncodetype">FindingReasonCodeType</a></li>
 <li><a href="literals/#findingtype">FindingType</a></li>
+<li><a href="literals/#getenrollmentstatusesfororganizationpaginatorname">GetEnrollmentStatusesForOrganizationPaginatorName</a></li>
+<li><a href="literals/#getlambdafunctionrecommendationspaginatorname">GetLambdaFunctionRecommendationsPaginatorName</a></li>
+<li><a href="literals/#getrecommendationpreferencespaginatorname">GetRecommendationPreferencesPaginatorName</a></li>
+<li><a href="literals/#getrecommendationsummariespaginatorname">GetRecommendationSummariesPaginatorName</a></li>
 <li><a href="literals/#inferredworkloadtypetype">InferredWorkloadTypeType</a></li>
 <li><a href="literals/#inferredworkloadtypespreferencetype">InferredWorkloadTypesPreferenceType</a></li>
 <li><a href="literals/#instancerecommendationfindingreasoncodetype">InstanceRecommendationFindingReasonCodeType</a></li>
@@ -39732,27 +39790,34 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#computeoptimizerservicename">ComputeOptimizerServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
+<li><a href="literals/#paginatorname">PaginatorName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_compute_optimizer.type_defs</span> <span class="kn">import</span> <span class="n">AccountEnrollmentStatusTypeDef</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccountEnrollmentStatusTypeDef</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;accountId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_compute_optimizer.type_defs</span> <span class="kn">import</span> <span class="n">AccountEnrollmentStatusTypeDef</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccountEnrollmentStatusTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;accountId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#accountenrollmentstatustypedef">AccountEnrollmentStatusTypeDef</a></li>
 <li><a href="type_defs/#autoscalinggroupconfigurationtypedef">AutoScalingGroupConfigurationTypeDef</a></li>
 <li><a href="type_defs/#utilizationmetrictypedef">UtilizationMetricTypeDef</a></li>
+<li><a href="type_defs/#memorysizeconfigurationtypedef">MemorySizeConfigurationTypeDef</a></li>
 <li><a href="type_defs/#currentperformanceriskratingstypedef">CurrentPerformanceRiskRatingsTypeDef</a></li>
 <li><a href="type_defs/#scopetypedef">ScopeTypeDef</a></li>
 <li><a href="type_defs/#jobfiltertypedef">JobFilterTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#ebsfiltertypedef">EBSFilterTypeDef</a></li>
 <li><a href="type_defs/#ebsutilizationmetrictypedef">EBSUtilizationMetricTypeDef</a></li>
+<li><a href="type_defs/#ecsserviceprojectedmetrictypedef">ECSServiceProjectedMetricTypeDef</a></li>
+<li><a href="type_defs/#ecsserviceprojectedutilizationmetrictypedef">ECSServiceProjectedUtilizationMetricTypeDef</a></li>
+<li><a href="type_defs/#ecsservicerecommendationfiltertypedef">ECSServiceRecommendationFilterTypeDef</a></li>
+<li><a href="type_defs/#ecsserviceutilizationmetrictypedef">ECSServiceUtilizationMetricTypeDef</a></li>
 <li><a href="type_defs/#externalmetricspreferencetypedef">ExternalMetricsPreferenceTypeDef</a></li>
 <li><a href="type_defs/#enrollmentfiltertypedef">EnrollmentFilterTypeDef</a></li>
 <li><a href="type_defs/#estimatedmonthlysavingstypedef">EstimatedMonthlySavingsTypeDef</a></li>
@@ -39762,6 +39827,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#s3destinationtypedef">S3DestinationTypeDef</a></li>
 <li><a href="type_defs/#lambdafunctionrecommendationfiltertypedef">LambdaFunctionRecommendationFilterTypeDef</a></li>
 <li><a href="type_defs/#getrecommendationerrortypedef">GetRecommendationErrorTypeDef</a></li>
+<li><a href="type_defs/#getecsservicerecommendationprojectedmetricsrequestrequesttypedef">GetECSServiceRecommendationProjectedMetricsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#geteffectiverecommendationpreferencesrequestrequesttypedef">GetEffectiveRecommendationPreferencesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getrecommendationsummariesrequestrequesttypedef">GetRecommendationSummariesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#recommendationsourcetypedef">RecommendationSourceTypeDef</a></li>
@@ -39771,17 +39837,25 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#reasoncodesummarytypedef">ReasonCodeSummaryTypeDef</a></li>
 <li><a href="type_defs/#updateenrollmentstatusrequestrequesttypedef">UpdateEnrollmentStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#volumeconfigurationtypedef">VolumeConfigurationTypeDef</a></li>
+<li><a href="type_defs/#containerconfigurationtypedef">ContainerConfigurationTypeDef</a></li>
+<li><a href="type_defs/#containerrecommendationtypedef">ContainerRecommendationTypeDef</a></li>
 <li><a href="type_defs/#deleterecommendationpreferencesrequestrequesttypedef">DeleteRecommendationPreferencesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getrecommendationpreferencesrequestrequesttypedef">GetRecommendationPreferencesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describerecommendationexportjobsrequestrequesttypedef">DescribeRecommendationExportJobsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describerecommendationexportjobsrequestdescriberecommendationexportjobspaginatetypedef">DescribeRecommendationExportJobsRequestDescribeRecommendationExportJobsPaginateTypeDef</a></li>
+<li><a href="type_defs/#getrecommendationpreferencesrequestgetrecommendationpreferencespaginatetypedef">GetRecommendationPreferencesRequestGetRecommendationPreferencesPaginateTypeDef</a></li>
+<li><a href="type_defs/#getrecommendationsummariesrequestgetrecommendationsummariespaginatetypedef">GetRecommendationSummariesRequestGetRecommendationSummariesPaginateTypeDef</a></li>
 <li><a href="type_defs/#getenrollmentstatusresponsetypedef">GetEnrollmentStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#getenrollmentstatusesfororganizationresponsetypedef">GetEnrollmentStatusesForOrganizationResponseTypeDef</a></li>
 <li><a href="type_defs/#updateenrollmentstatusresponsetypedef">UpdateEnrollmentStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#getebsvolumerecommendationsrequestrequesttypedef">GetEBSVolumeRecommendationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#ecsservicerecommendedoptionprojectedmetrictypedef">ECSServiceRecommendedOptionProjectedMetricTypeDef</a></li>
+<li><a href="type_defs/#getecsservicerecommendationsrequestrequesttypedef">GetECSServiceRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#effectiverecommendationpreferencestypedef">EffectiveRecommendationPreferencesTypeDef</a></li>
 <li><a href="type_defs/#geteffectiverecommendationpreferencesresponsetypedef">GetEffectiveRecommendationPreferencesResponseTypeDef</a></li>
 <li><a href="type_defs/#putrecommendationpreferencesrequestrequesttypedef">PutRecommendationPreferencesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#recommendationpreferencesdetailtypedef">RecommendationPreferencesDetailTypeDef</a></li>
+<li><a href="type_defs/#getenrollmentstatusesfororganizationrequestgetenrollmentstatusesfororganizationpaginatetypedef">GetEnrollmentStatusesForOrganizationRequestGetEnrollmentStatusesForOrganizationPaginateTypeDef</a></li>
 <li><a href="type_defs/#getenrollmentstatusesfororganizationrequestrequesttypedef">GetEnrollmentStatusesForOrganizationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#savingsopportunitytypedef">SavingsOpportunityTypeDef</a></li>
 <li><a href="type_defs/#getautoscalinggrouprecommendationsrequestrequesttypedef">GetAutoScalingGroupRecommendationsRequestRequestTypeDef</a></li>
@@ -39790,17 +39864,23 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#exportautoscalinggrouprecommendationsrequestrequesttypedef">ExportAutoScalingGroupRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportebsvolumerecommendationsrequestrequesttypedef">ExportEBSVolumeRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportec2instancerecommendationsrequestrequesttypedef">ExportEC2InstanceRecommendationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#exportecsservicerecommendationsrequestrequesttypedef">ExportECSServiceRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportautoscalinggrouprecommendationsresponsetypedef">ExportAutoScalingGroupRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#exportdestinationtypedef">ExportDestinationTypeDef</a></li>
 <li><a href="type_defs/#exportebsvolumerecommendationsresponsetypedef">ExportEBSVolumeRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#exportec2instancerecommendationsresponsetypedef">ExportEC2InstanceRecommendationsResponseTypeDef</a></li>
+<li><a href="type_defs/#exportecsservicerecommendationsresponsetypedef">ExportECSServiceRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#exportlambdafunctionrecommendationsresponsetypedef">ExportLambdaFunctionRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#exportlambdafunctionrecommendationsrequestrequesttypedef">ExportLambdaFunctionRecommendationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getlambdafunctionrecommendationsrequestgetlambdafunctionrecommendationspaginatetypedef">GetLambdaFunctionRecommendationsRequestGetLambdaFunctionRecommendationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getlambdafunctionrecommendationsrequestrequesttypedef">GetLambdaFunctionRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#recommendedoptionprojectedmetrictypedef">RecommendedOptionProjectedMetricTypeDef</a></li>
 <li><a href="type_defs/#summarytypedef">SummaryTypeDef</a></li>
+<li><a href="type_defs/#serviceconfigurationtypedef">ServiceConfigurationTypeDef</a></li>
+<li><a href="type_defs/#getecsservicerecommendationprojectedmetricsresponsetypedef">GetECSServiceRecommendationProjectedMetricsResponseTypeDef</a></li>
 <li><a href="type_defs/#getrecommendationpreferencesresponsetypedef">GetRecommendationPreferencesResponseTypeDef</a></li>
 <li><a href="type_defs/#autoscalinggrouprecommendationoptiontypedef">AutoScalingGroupRecommendationOptionTypeDef</a></li>
+<li><a href="type_defs/#ecsservicerecommendationoptiontypedef">ECSServiceRecommendationOptionTypeDef</a></li>
 <li><a href="type_defs/#instancerecommendationoptiontypedef">InstanceRecommendationOptionTypeDef</a></li>
 <li><a href="type_defs/#lambdafunctionmemoryrecommendationoptiontypedef">LambdaFunctionMemoryRecommendationOptionTypeDef</a></li>
 <li><a href="type_defs/#volumerecommendationoptiontypedef">VolumeRecommendationOptionTypeDef</a></li>
@@ -39808,12 +39888,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getec2recommendationprojectedmetricsresponsetypedef">GetEC2RecommendationProjectedMetricsResponseTypeDef</a></li>
 <li><a href="type_defs/#recommendationsummarytypedef">RecommendationSummaryTypeDef</a></li>
 <li><a href="type_defs/#autoscalinggrouprecommendationtypedef">AutoScalingGroupRecommendationTypeDef</a></li>
+<li><a href="type_defs/#ecsservicerecommendationtypedef">ECSServiceRecommendationTypeDef</a></li>
 <li><a href="type_defs/#instancerecommendationtypedef">InstanceRecommendationTypeDef</a></li>
 <li><a href="type_defs/#lambdafunctionrecommendationtypedef">LambdaFunctionRecommendationTypeDef</a></li>
 <li><a href="type_defs/#volumerecommendationtypedef">VolumeRecommendationTypeDef</a></li>
 <li><a href="type_defs/#describerecommendationexportjobsresponsetypedef">DescribeRecommendationExportJobsResponseTypeDef</a></li>
 <li><a href="type_defs/#getrecommendationsummariesresponsetypedef">GetRecommendationSummariesResponseTypeDef</a></li>
 <li><a href="type_defs/#getautoscalinggrouprecommendationsresponsetypedef">GetAutoScalingGroupRecommendationsResponseTypeDef</a></li>
+<li><a href="type_defs/#getecsservicerecommendationsresponsetypedef">GetECSServiceRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#getec2instancerecommendationsresponsetypedef">GetEC2InstanceRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#getlambdafunctionrecommendationsresponsetypedef">GetLambdaFunctionRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#getebsvolumerecommendationsresponsetypedef">GetEBSVolumeRecommendationsResponseTypeDef</a></li>

@@ -8346,6 +8346,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../mypy_boto3_compute_optimizer/paginators/" class="md-nav__link">
+        Paginators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../mypy_boto3_compute_optimizer/type_defs/" class="md-nav__link">
         Typed dictionaries
       </a>
@@ -39814,6 +39828,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#monitorcapabilitytype">MonitorCapabilityType</a></li>
 <li><a href="literals/#notificationcontenttypetype">NotificationContentTypeType</a></li>
 <li><a href="literals/#notificationdeliverytypetype">NotificationDeliveryTypeType</a></li>
+<li><a href="literals/#participanttimeractiontype">ParticipantTimerActionType</a></li>
+<li><a href="literals/#participanttimertypetype">ParticipantTimerTypeType</a></li>
 <li><a href="literals/#phonenumbercountrycodetype">PhoneNumberCountryCodeType</a></li>
 <li><a href="literals/#phonenumbertypetype">PhoneNumberTypeType</a></li>
 <li><a href="literals/#phonenumberworkflowstatustype">PhoneNumberWorkflowStatusType</a></li>
@@ -39837,6 +39853,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#stringcomparisontypetype">StringComparisonTypeType</a></li>
 <li><a href="literals/#tasktemplatefieldtypetype">TaskTemplateFieldTypeType</a></li>
 <li><a href="literals/#tasktemplatestatustype">TaskTemplateStatusType</a></li>
+<li><a href="literals/#timereligibleparticipantrolestype">TimerEligibleParticipantRolesType</a></li>
 <li><a href="literals/#trafficdistributiongroupstatustype">TrafficDistributionGroupStatusType</a></li>
 <li><a href="literals/#traffictypetype">TrafficTypeType</a></li>
 <li><a href="literals/#unittype">UnitType</a></li>
@@ -40027,6 +40044,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#notificationrecipienttypetypedef">NotificationRecipientTypeTypeDef</a></li>
 <li><a href="type_defs/#numberreferencetypedef">NumberReferenceTypeDef</a></li>
 <li><a href="type_defs/#participantdetailstypedef">ParticipantDetailsTypeDef</a></li>
+<li><a href="type_defs/#participanttimervaluetypedef">ParticipantTimerValueTypeDef</a></li>
 <li><a href="type_defs/#phonenumberquickconnectconfigtypedef">PhoneNumberQuickConnectConfigTypeDef</a></li>
 <li><a href="type_defs/#putuserstatusrequestrequesttypedef">PutUserStatusRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#queuequickconnectconfigtypedef">QueueQuickConnectConfigTypeDef</a></li>
@@ -40219,6 +40237,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listusersresponsetypedef">ListUsersResponseTypeDef</a></li>
 <li><a href="type_defs/#sendnotificationactiondefinitiontypedef">SendNotificationActionDefinitionTypeDef</a></li>
 <li><a href="type_defs/#startchatcontactrequestrequesttypedef">StartChatContactRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#participanttimerconfigurationtypedef">ParticipantTimerConfigurationTypeDef</a></li>
 <li><a href="type_defs/#queuesearchcriteriatypedef">QueueSearchCriteriaTypeDef</a></li>
 <li><a href="type_defs/#routingprofilesearchcriteriatypedef">RoutingProfileSearchCriteriaTypeDef</a></li>
 <li><a href="type_defs/#securityprofilesearchcriteriatypedef">SecurityProfileSearchCriteriaTypeDef</a></li>
@@ -40266,6 +40285,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeinstanceresponsetypedef">DescribeInstanceResponseTypeDef</a></li>
 <li><a href="type_defs/#tasktemplateconstraintstypedef">TaskTemplateConstraintsTypeDef</a></li>
 <li><a href="type_defs/#tasktemplatedefaultstypedef">TaskTemplateDefaultsTypeDef</a></li>
+<li><a href="type_defs/#chatparticipantroleconfigtypedef">ChatParticipantRoleConfigTypeDef</a></li>
 <li><a href="type_defs/#createquickconnectrequestrequesttypedef">CreateQuickConnectRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#quickconnecttypedef">QuickConnectTypeDef</a></li>
 <li><a href="type_defs/#updatequickconnectconfigrequestrequesttypedef">UpdateQuickConnectConfigRequestRequestTypeDef</a></li>
@@ -40293,11 +40313,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#gettasktemplateresponsetypedef">GetTaskTemplateResponseTypeDef</a></li>
 <li><a href="type_defs/#updatetasktemplaterequestrequesttypedef">UpdateTaskTemplateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatetasktemplateresponsetypedef">UpdateTaskTemplateResponseTypeDef</a></li>
+<li><a href="type_defs/#updateparticipantroleconfigchannelinfotypedef">UpdateParticipantRoleConfigChannelInfoTypeDef</a></li>
 <li><a href="type_defs/#describequickconnectresponsetypedef">DescribeQuickConnectResponseTypeDef</a></li>
 <li><a href="type_defs/#createrulerequestrequesttypedef">CreateRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>
 <li><a href="type_defs/#updaterulerequestrequesttypedef">UpdateRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getmetricdataresponsetypedef">GetMetricDataResponseTypeDef</a></li>
+<li><a href="type_defs/#updateparticipantroleconfigrequestrequesttypedef">UpdateParticipantRoleConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeruleresponsetypedef">DescribeRuleResponseTypeDef</a></li>
 </ul>
 

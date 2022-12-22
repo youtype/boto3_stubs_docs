@@ -777,6 +777,8 @@ def create_db_cluster(
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
     NetworkType: str = ...,
     DBSystemId: str = ...,
+    ManageMasterUserPassword: bool = ...,
+    MasterUserSecretKmsKeyId: str = ...,
     SourceRegion: str = ...,
 ) -> CreateDBClusterResultTypeDef:  # (4)
     ...
@@ -968,6 +970,8 @@ def create_db_instance(
     BackupTarget: str = ...,
     NetworkType: str = ...,
     StorageThroughput: int = ...,
+    ManageMasterUserPassword: bool = ...,
+    MasterUserSecretKmsKeyId: str = ...,
 ) -> CreateDBInstanceResultTypeDef:  # (3)
     ...
 ```
@@ -3604,6 +3608,9 @@ def modify_db_cluster(
     PerformanceInsightsRetentionPeriod: int = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (3)
     NetworkType: str = ...,
+    ManageMasterUserPassword: bool = ...,
+    RotateMasterUserPassword: bool = ...,
+    MasterUserSecretKmsKeyId: str = ...,
 ) -> ModifyDBClusterResultTypeDef:  # (4)
     ...
 ```
@@ -3782,6 +3789,9 @@ def modify_db_instance(
     ResumeFullAutomationModeMinutes: int = ...,
     NetworkType: str = ...,
     StorageThroughput: int = ...,
+    ManageMasterUserPassword: bool = ...,
+    RotateMasterUserPassword: bool = ...,
+    MasterUserSecretKmsKeyId: str = ...,
 ) -> ModifyDBInstanceResultTypeDef:  # (5)
     ...
 ```
@@ -4558,7 +4568,6 @@ def restore_db_cluster_from_s3(
     DBClusterIdentifier: str,
     Engine: str,
     MasterUsername: str,
-    MasterUserPassword: str,
     SourceEngine: str,
     SourceEngineVersion: str,
     S3BucketName: str,
@@ -4572,6 +4581,7 @@ def restore_db_cluster_from_s3(
     DBSubnetGroupName: str = ...,
     EngineVersion: str = ...,
     Port: int = ...,
+    MasterUserPassword: str = ...,
     OptionGroupName: str = ...,
     PreferredBackupWindow: str = ...,
     PreferredMaintenanceWindow: str = ...,
@@ -4588,6 +4598,8 @@ def restore_db_cluster_from_s3(
     DomainIAMRoleName: str = ...,
     ServerlessV2ScalingConfiguration: ServerlessV2ScalingConfigurationTypeDef = ...,  # (2)
     NetworkType: str = ...,
+    ManageMasterUserPassword: bool = ...,
+    MasterUserSecretKmsKeyId: str = ...,
 ) -> RestoreDBClusterFromS3ResultTypeDef:  # (3)
     ...
 ```
@@ -4602,7 +4614,6 @@ kwargs: RestoreDBClusterFromS3MessageRequestTypeDef = {  # (1)
     "DBClusterIdentifier": ...,
     "Engine": ...,
     "MasterUsername": ...,
-    "MasterUserPassword": ...,
     "SourceEngine": ...,
     "SourceEngineVersion": ...,
     "S3BucketName": ...,
@@ -4856,6 +4867,8 @@ def restore_db_instance_from_s3(
     MaxAllocatedStorage: int = ...,
     NetworkType: str = ...,
     StorageThroughput: int = ...,
+    ManageMasterUserPassword: bool = ...,
+    MasterUserSecretKmsKeyId: str = ...,
 ) -> RestoreDBInstanceFromS3ResultTypeDef:  # (3)
     ...
 ```

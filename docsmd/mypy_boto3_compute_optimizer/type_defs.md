@@ -66,6 +66,23 @@ class UtilizationMetricTypeDef(TypedDict):
 
 1. See [:material-code-brackets: MetricNameType](./literals.md#metricnametype) 
 2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
+## MemorySizeConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import MemorySizeConfigurationTypeDef
+
+def get_value() -> MemorySizeConfigurationTypeDef:
+    return {
+        "memory": ...,
+    }
+```
+
+```python title="Definition"
+class MemorySizeConfigurationTypeDef(TypedDict):
+    memory: NotRequired[int],
+    memoryReservation: NotRequired[int],
+```
+
 ## CurrentPerformanceRiskRatingsTypeDef
 
 ```python title="Usage Example"
@@ -121,6 +138,24 @@ class JobFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobFilterNameType](./literals.md#jobfilternametype) 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -183,6 +218,85 @@ class EBSUtilizationMetricTypeDef(TypedDict):
 
 1. See [:material-code-brackets: EBSMetricNameType](./literals.md#ebsmetricnametype) 
 2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
+## ECSServiceProjectedMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ECSServiceProjectedMetricTypeDef
+
+def get_value() -> ECSServiceProjectedMetricTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ECSServiceProjectedMetricTypeDef(TypedDict):
+    name: NotRequired[ECSServiceMetricNameType],  # (1)
+    timestamps: NotRequired[List[datetime]],
+    upperBoundValues: NotRequired[List[float]],
+    lowerBoundValues: NotRequired[List[float]],
+```
+
+1. See [:material-code-brackets: ECSServiceMetricNameType](./literals.md#ecsservicemetricnametype) 
+## ECSServiceProjectedUtilizationMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ECSServiceProjectedUtilizationMetricTypeDef
+
+def get_value() -> ECSServiceProjectedUtilizationMetricTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ECSServiceProjectedUtilizationMetricTypeDef(TypedDict):
+    name: NotRequired[ECSServiceMetricNameType],  # (1)
+    statistic: NotRequired[ECSServiceMetricStatisticType],  # (2)
+    lowerBoundValue: NotRequired[float],
+    upperBoundValue: NotRequired[float],
+```
+
+1. See [:material-code-brackets: ECSServiceMetricNameType](./literals.md#ecsservicemetricnametype) 
+2. See [:material-code-brackets: ECSServiceMetricStatisticType](./literals.md#ecsservicemetricstatistictype) 
+## ECSServiceRecommendationFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ECSServiceRecommendationFilterTypeDef
+
+def get_value() -> ECSServiceRecommendationFilterTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ECSServiceRecommendationFilterTypeDef(TypedDict):
+    name: NotRequired[ECSServiceRecommendationFilterNameType],  # (1)
+    values: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: ECSServiceRecommendationFilterNameType](./literals.md#ecsservicerecommendationfilternametype) 
+## ECSServiceUtilizationMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ECSServiceUtilizationMetricTypeDef
+
+def get_value() -> ECSServiceUtilizationMetricTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ECSServiceUtilizationMetricTypeDef(TypedDict):
+    name: NotRequired[ECSServiceMetricNameType],  # (1)
+    statistic: NotRequired[ECSServiceMetricStatisticType],  # (2)
+    value: NotRequired[float],
+```
+
+1. See [:material-code-brackets: ECSServiceMetricNameType](./literals.md#ecsservicemetricnametype) 
+2. See [:material-code-brackets: ECSServiceMetricStatisticType](./literals.md#ecsservicemetricstatistictype) 
 ## ExternalMetricsPreferenceTypeDef
 
 ```python title="Usage Example"
@@ -342,6 +456,31 @@ class GetRecommendationErrorTypeDef(TypedDict):
     message: NotRequired[str],
 ```
 
+## GetECSServiceRecommendationProjectedMetricsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetECSServiceRecommendationProjectedMetricsRequestRequestTypeDef
+
+def get_value() -> GetECSServiceRecommendationProjectedMetricsRequestRequestTypeDef:
+    return {
+        "serviceArn": ...,
+        "stat": ...,
+        "period": ...,
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetECSServiceRecommendationProjectedMetricsRequestRequestTypeDef(TypedDict):
+    serviceArn: str,
+    stat: MetricStatisticType,  # (1)
+    period: int,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+```
+
+1. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
 ## GetEffectiveRecommendationPreferencesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -510,6 +649,44 @@ class VolumeConfigurationTypeDef(TypedDict):
     volumeBurstThroughput: NotRequired[int],
 ```
 
+## ContainerConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ContainerConfigurationTypeDef
+
+def get_value() -> ContainerConfigurationTypeDef:
+    return {
+        "containerName": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerConfigurationTypeDef(TypedDict):
+    containerName: NotRequired[str],
+    memorySizeConfiguration: NotRequired[MemorySizeConfigurationTypeDef],  # (1)
+    cpu: NotRequired[int],
+```
+
+1. See [:material-code-braces: MemorySizeConfigurationTypeDef](./type_defs.md#memorysizeconfigurationtypedef) 
+## ContainerRecommendationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ContainerRecommendationTypeDef
+
+def get_value() -> ContainerRecommendationTypeDef:
+    return {
+        "containerName": ...,
+    }
+```
+
+```python title="Definition"
+class ContainerRecommendationTypeDef(TypedDict):
+    containerName: NotRequired[str],
+    memorySizeConfiguration: NotRequired[MemorySizeConfigurationTypeDef],  # (1)
+    cpu: NotRequired[int],
+```
+
+1. See [:material-code-braces: MemorySizeConfigurationTypeDef](./type_defs.md#memorysizeconfigurationtypedef) 
 ## DeleteRecommendationPreferencesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -573,6 +750,65 @@ class DescribeRecommendationExportJobsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: JobFilterTypeDef](./type_defs.md#jobfiltertypedef) 
+## DescribeRecommendationExportJobsRequestDescribeRecommendationExportJobsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsRequestDescribeRecommendationExportJobsPaginateTypeDef
+
+def get_value() -> DescribeRecommendationExportJobsRequestDescribeRecommendationExportJobsPaginateTypeDef:
+    return {
+        "jobIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecommendationExportJobsRequestDescribeRecommendationExportJobsPaginateTypeDef(TypedDict):
+    jobIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[JobFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: JobFilterTypeDef](./type_defs.md#jobfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetRecommendationPreferencesRequestGetRecommendationPreferencesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetRecommendationPreferencesRequestGetRecommendationPreferencesPaginateTypeDef
+
+def get_value() -> GetRecommendationPreferencesRequestGetRecommendationPreferencesPaginateTypeDef:
+    return {
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class GetRecommendationPreferencesRequestGetRecommendationPreferencesPaginateTypeDef(TypedDict):
+    resourceType: ResourceTypeType,  # (1)
+    scope: NotRequired[ScopeTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetRecommendationSummariesRequestGetRecommendationSummariesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetRecommendationSummariesRequestGetRecommendationSummariesPaginateTypeDef
+
+def get_value() -> GetRecommendationSummariesRequestGetRecommendationSummariesPaginateTypeDef:
+    return {
+        "accountIds": ...,
+    }
+```
+
+```python title="Definition"
+class GetRecommendationSummariesRequestGetRecommendationSummariesPaginateTypeDef(TypedDict):
+    accountIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetEnrollmentStatusResponseTypeDef
 
 ```python title="Usage Example"
@@ -666,6 +902,46 @@ class GetEBSVolumeRecommendationsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef) 
+## ECSServiceRecommendedOptionProjectedMetricTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ECSServiceRecommendedOptionProjectedMetricTypeDef
+
+def get_value() -> ECSServiceRecommendedOptionProjectedMetricTypeDef:
+    return {
+        "recommendedCpuUnits": ...,
+    }
+```
+
+```python title="Definition"
+class ECSServiceRecommendedOptionProjectedMetricTypeDef(TypedDict):
+    recommendedCpuUnits: NotRequired[int],
+    recommendedMemorySize: NotRequired[int],
+    projectedMetrics: NotRequired[List[ECSServiceProjectedMetricTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ECSServiceProjectedMetricTypeDef](./type_defs.md#ecsserviceprojectedmetrictypedef) 
+## GetECSServiceRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetECSServiceRecommendationsRequestRequestTypeDef
+
+def get_value() -> GetECSServiceRecommendationsRequestRequestTypeDef:
+    return {
+        "serviceArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetECSServiceRecommendationsRequestRequestTypeDef(TypedDict):
+    serviceArns: NotRequired[Sequence[str]],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[ECSServiceRecommendationFilterTypeDef]],  # (1)
+    accountIds: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-braces: ECSServiceRecommendationFilterTypeDef](./type_defs.md#ecsservicerecommendationfiltertypedef) 
 ## EffectiveRecommendationPreferencesTypeDef
 
 ```python title="Usage Example"
@@ -762,6 +1038,25 @@ class RecommendationPreferencesDetailTypeDef(TypedDict):
 3. See [:material-code-brackets: EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype) 
 4. See [:material-code-brackets: InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype) 
 5. See [:material-code-braces: ExternalMetricsPreferenceTypeDef](./type_defs.md#externalmetricspreferencetypedef) 
+## GetEnrollmentStatusesForOrganizationRequestGetEnrollmentStatusesForOrganizationPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusesForOrganizationRequestGetEnrollmentStatusesForOrganizationPaginateTypeDef
+
+def get_value() -> GetEnrollmentStatusesForOrganizationRequestGetEnrollmentStatusesForOrganizationPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class GetEnrollmentStatusesForOrganizationRequestGetEnrollmentStatusesForOrganizationPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[EnrollmentFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetEnrollmentStatusesForOrganizationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -951,6 +1246,31 @@ class ExportEC2InstanceRecommendationsRequestRequestTypeDef(TypedDict):
 3. See [:material-code-brackets: ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype) 
 4. See [:material-code-brackets: FileFormatType](./literals.md#fileformattype) 
 5. See [:material-code-braces: RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef) 
+## ExportECSServiceRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ExportECSServiceRecommendationsRequestRequestTypeDef
+
+def get_value() -> ExportECSServiceRecommendationsRequestRequestTypeDef:
+    return {
+        "s3DestinationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ExportECSServiceRecommendationsRequestRequestTypeDef(TypedDict):
+    s3DestinationConfig: S3DestinationConfigTypeDef,  # (1)
+    accountIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[ECSServiceRecommendationFilterTypeDef]],  # (2)
+    fieldsToExport: NotRequired[Sequence[ExportableECSServiceFieldType]],  # (3)
+    fileFormat: NotRequired[FileFormatType],  # (4)
+    includeMemberAccounts: NotRequired[bool],
+```
+
+1. See [:material-code-braces: S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef) 
+2. See [:material-code-braces: ECSServiceRecommendationFilterTypeDef](./type_defs.md#ecsservicerecommendationfiltertypedef) 
+3. See [:material-code-brackets: ExportableECSServiceFieldType](./literals.md#exportableecsservicefieldtype) 
+4. See [:material-code-brackets: FileFormatType](./literals.md#fileformattype) 
 ## ExportAutoScalingGroupRecommendationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1034,6 +1354,28 @@ class ExportEC2InstanceRecommendationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExportECSServiceRecommendationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ExportECSServiceRecommendationsResponseTypeDef
+
+def get_value() -> ExportECSServiceRecommendationsResponseTypeDef:
+    return {
+        "jobId": ...,
+        "s3Destination": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ExportECSServiceRecommendationsResponseTypeDef(TypedDict):
+    jobId: str,
+    s3Destination: S3DestinationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportLambdaFunctionRecommendationsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1081,6 +1423,27 @@ class ExportLambdaFunctionRecommendationsRequestRequestTypeDef(TypedDict):
 2. See [:material-code-braces: LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef) 
 3. See [:material-code-brackets: ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype) 
 4. See [:material-code-brackets: FileFormatType](./literals.md#fileformattype) 
+## GetLambdaFunctionRecommendationsRequestGetLambdaFunctionRecommendationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetLambdaFunctionRecommendationsRequestGetLambdaFunctionRecommendationsPaginateTypeDef
+
+def get_value() -> GetLambdaFunctionRecommendationsRequestGetLambdaFunctionRecommendationsPaginateTypeDef:
+    return {
+        "functionArns": ...,
+    }
+```
+
+```python title="Definition"
+class GetLambdaFunctionRecommendationsRequestGetLambdaFunctionRecommendationsPaginateTypeDef(TypedDict):
+    functionArns: NotRequired[Sequence[str]],
+    accountIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[LambdaFunctionRecommendationFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetLambdaFunctionRecommendationsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1141,6 +1504,48 @@ class SummaryTypeDef(TypedDict):
 
 1. See [:material-code-brackets: FindingType](./literals.md#findingtype) 
 2. See [:material-code-braces: ReasonCodeSummaryTypeDef](./type_defs.md#reasoncodesummarytypedef) 
+## ServiceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ServiceConfigurationTypeDef
+
+def get_value() -> ServiceConfigurationTypeDef:
+    return {
+        "memory": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceConfigurationTypeDef(TypedDict):
+    memory: NotRequired[int],
+    cpu: NotRequired[int],
+    containerConfigurations: NotRequired[List[ContainerConfigurationTypeDef]],  # (1)
+    autoScalingConfiguration: NotRequired[AutoScalingConfigurationType],  # (2)
+    taskDefinitionArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: ContainerConfigurationTypeDef](./type_defs.md#containerconfigurationtypedef) 
+2. See [:material-code-brackets: AutoScalingConfigurationType](./literals.md#autoscalingconfigurationtype) 
+## GetECSServiceRecommendationProjectedMetricsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetECSServiceRecommendationProjectedMetricsResponseTypeDef
+
+def get_value() -> GetECSServiceRecommendationProjectedMetricsResponseTypeDef:
+    return {
+        "recommendedOptionProjectedMetrics": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetECSServiceRecommendationProjectedMetricsResponseTypeDef(TypedDict):
+    recommendedOptionProjectedMetrics: List[ECSServiceRecommendedOptionProjectedMetricTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ECSServiceRecommendedOptionProjectedMetricTypeDef](./type_defs.md#ecsservicerecommendedoptionprojectedmetrictypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRecommendationPreferencesResponseTypeDef
 
 ```python title="Usage Example"
@@ -1188,6 +1593,29 @@ class AutoScalingGroupRecommendationOptionTypeDef(TypedDict):
 2. See [:material-code-braces: UtilizationMetricTypeDef](./type_defs.md#utilizationmetrictypedef) 
 3. See [:material-code-braces: SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef) 
 4. See [:material-code-brackets: MigrationEffortType](./literals.md#migrationefforttype) 
+## ECSServiceRecommendationOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ECSServiceRecommendationOptionTypeDef
+
+def get_value() -> ECSServiceRecommendationOptionTypeDef:
+    return {
+        "memory": ...,
+    }
+```
+
+```python title="Definition"
+class ECSServiceRecommendationOptionTypeDef(TypedDict):
+    memory: NotRequired[int],
+    cpu: NotRequired[int],
+    savingsOpportunity: NotRequired[SavingsOpportunityTypeDef],  # (1)
+    projectedUtilizationMetrics: NotRequired[List[ECSServiceProjectedUtilizationMetricTypeDef]],  # (2)
+    containerRecommendations: NotRequired[List[ContainerRecommendationTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef) 
+2. See [:material-code-braces: ECSServiceProjectedUtilizationMetricTypeDef](./type_defs.md#ecsserviceprojectedutilizationmetrictypedef) 
+3. See [:material-code-braces: ContainerRecommendationTypeDef](./type_defs.md#containerrecommendationtypedef) 
 ## InstanceRecommendationOptionTypeDef
 
 ```python title="Usage Example"
@@ -1359,6 +1787,39 @@ class AutoScalingGroupRecommendationTypeDef(TypedDict):
 5. See [:material-code-brackets: CurrentPerformanceRiskType](./literals.md#currentperformancerisktype) 
 6. See [:material-code-braces: EffectiveRecommendationPreferencesTypeDef](./type_defs.md#effectiverecommendationpreferencestypedef) 
 7. See [:material-code-brackets: InferredWorkloadTypeType](./literals.md#inferredworkloadtypetype) 
+## ECSServiceRecommendationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import ECSServiceRecommendationTypeDef
+
+def get_value() -> ECSServiceRecommendationTypeDef:
+    return {
+        "serviceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ECSServiceRecommendationTypeDef(TypedDict):
+    serviceArn: NotRequired[str],
+    accountId: NotRequired[str],
+    currentServiceConfiguration: NotRequired[ServiceConfigurationTypeDef],  # (1)
+    utilizationMetrics: NotRequired[List[ECSServiceUtilizationMetricTypeDef]],  # (2)
+    lookbackPeriodInDays: NotRequired[float],
+    launchType: NotRequired[ECSServiceLaunchTypeType],  # (3)
+    lastRefreshTimestamp: NotRequired[datetime],
+    finding: NotRequired[ECSServiceRecommendationFindingType],  # (4)
+    findingReasonCodes: NotRequired[List[ECSServiceRecommendationFindingReasonCodeType]],  # (5)
+    serviceRecommendationOptions: NotRequired[List[ECSServiceRecommendationOptionTypeDef]],  # (6)
+    currentPerformanceRisk: NotRequired[CurrentPerformanceRiskType],  # (7)
+```
+
+1. See [:material-code-braces: ServiceConfigurationTypeDef](./type_defs.md#serviceconfigurationtypedef) 
+2. See [:material-code-braces: ECSServiceUtilizationMetricTypeDef](./type_defs.md#ecsserviceutilizationmetrictypedef) 
+3. See [:material-code-brackets: ECSServiceLaunchTypeType](./literals.md#ecsservicelaunchtypetype) 
+4. See [:material-code-brackets: ECSServiceRecommendationFindingType](./literals.md#ecsservicerecommendationfindingtype) 
+5. See [:material-code-brackets: ECSServiceRecommendationFindingReasonCodeType](./literals.md#ecsservicerecommendationfindingreasoncodetype) 
+6. See [:material-code-braces: ECSServiceRecommendationOptionTypeDef](./type_defs.md#ecsservicerecommendationoptiontypedef) 
+7. See [:material-code-brackets: CurrentPerformanceRiskType](./literals.md#currentperformancerisktype) 
 ## InstanceRecommendationTypeDef
 
 ```python title="Usage Example"
@@ -1524,6 +1985,31 @@ class GetAutoScalingGroupRecommendationsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AutoScalingGroupRecommendationTypeDef](./type_defs.md#autoscalinggrouprecommendationtypedef) 
+2. See [:material-code-braces: GetRecommendationErrorTypeDef](./type_defs.md#getrecommendationerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetECSServiceRecommendationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.type_defs import GetECSServiceRecommendationsResponseTypeDef
+
+def get_value() -> GetECSServiceRecommendationsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "ecsServiceRecommendations": ...,
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetECSServiceRecommendationsResponseTypeDef(TypedDict):
+    nextToken: str,
+    ecsServiceRecommendations: List[ECSServiceRecommendationTypeDef],  # (1)
+    errors: List[GetRecommendationErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: ECSServiceRecommendationTypeDef](./type_defs.md#ecsservicerecommendationtypedef) 
 2. See [:material-code-braces: GetRecommendationErrorTypeDef](./type_defs.md#getrecommendationerrortypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEC2InstanceRecommendationsResponseTypeDef

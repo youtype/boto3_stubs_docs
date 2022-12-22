@@ -7,6 +7,21 @@
     Auto-generated documentation for [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
     type annotations stubs module [mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
+## AutoScalingConfigurationType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import AutoScalingConfigurationType
+
+def get_value() -> AutoScalingConfigurationType:
+    return "TargetTrackingScalingCpu"
+```
+
+```python title="Definition"
+AutoScalingConfigurationType = Literal[
+    "TargetTrackingScalingCpu",
+    "TargetTrackingScalingMemory",
+]
+```
 ## CpuVendorArchitectureType
 
 ```python title="Usage Example"
@@ -54,6 +69,20 @@ CurrentPerformanceRiskType = Literal[
     "VeryLow",
 ]
 ```
+## DescribeRecommendationExportJobsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import DescribeRecommendationExportJobsPaginatorName
+
+def get_value() -> DescribeRecommendationExportJobsPaginatorName:
+    return "describe_recommendation_export_jobs"
+```
+
+```python title="Definition"
+DescribeRecommendationExportJobsPaginatorName = Literal[
+    "describe_recommendation_export_jobs",
+]
+```
 ## EBSFilterNameType
 
 ```python title="Usage Example"
@@ -98,6 +127,99 @@ EBSMetricNameType = Literal[
     "VolumeReadOpsPerSecond",
     "VolumeWriteBytesPerSecond",
     "VolumeWriteOpsPerSecond",
+]
+```
+## ECSServiceLaunchTypeType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ECSServiceLaunchTypeType
+
+def get_value() -> ECSServiceLaunchTypeType:
+    return "EC2"
+```
+
+```python title="Definition"
+ECSServiceLaunchTypeType = Literal[
+    "EC2",
+    "Fargate",
+]
+```
+## ECSServiceMetricNameType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ECSServiceMetricNameType
+
+def get_value() -> ECSServiceMetricNameType:
+    return "Cpu"
+```
+
+```python title="Definition"
+ECSServiceMetricNameType = Literal[
+    "Cpu",
+    "Memory",
+]
+```
+## ECSServiceMetricStatisticType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ECSServiceMetricStatisticType
+
+def get_value() -> ECSServiceMetricStatisticType:
+    return "Average"
+```
+
+```python title="Definition"
+ECSServiceMetricStatisticType = Literal[
+    "Average",
+    "Maximum",
+]
+```
+## ECSServiceRecommendationFilterNameType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ECSServiceRecommendationFilterNameType
+
+def get_value() -> ECSServiceRecommendationFilterNameType:
+    return "Finding"
+```
+
+```python title="Definition"
+ECSServiceRecommendationFilterNameType = Literal[
+    "Finding",
+    "FindingReasonCode",
+]
+```
+## ECSServiceRecommendationFindingReasonCodeType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ECSServiceRecommendationFindingReasonCodeType
+
+def get_value() -> ECSServiceRecommendationFindingReasonCodeType:
+    return "CPUOverprovisioned"
+```
+
+```python title="Definition"
+ECSServiceRecommendationFindingReasonCodeType = Literal[
+    "CPUOverprovisioned",
+    "CPUUnderprovisioned",
+    "MemoryOverprovisioned",
+    "MemoryUnderprovisioned",
+]
+```
+## ECSServiceRecommendationFindingType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ECSServiceRecommendationFindingType
+
+def get_value() -> ECSServiceRecommendationFindingType:
+    return "Optimized"
+```
+
+```python title="Definition"
+ECSServiceRecommendationFindingType = Literal[
+    "Optimized",
+    "Overprovisioned",
+    "Underprovisioned",
 ]
 ```
 ## EnhancedInfrastructureMetricsType
@@ -194,6 +316,42 @@ ExportableAutoScalingGroupFieldType = Literal[
     "UtilizationMetricsNetworkOutBytesPerSecondMaximum",
     "UtilizationMetricsNetworkPacketsInPerSecondMaximum",
     "UtilizationMetricsNetworkPacketsOutPerSecondMaximum",
+]
+```
+## ExportableECSServiceFieldType
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import ExportableECSServiceFieldType
+
+def get_value() -> ExportableECSServiceFieldType:
+    return "AccountId"
+```
+
+```python title="Definition"
+ExportableECSServiceFieldType = Literal[
+    "AccountId",
+    "CurrentPerformanceRisk",
+    "CurrentServiceConfigurationAutoScalingConfiguration",
+    "CurrentServiceConfigurationCpu",
+    "CurrentServiceConfigurationMemory",
+    "CurrentServiceConfigurationTaskDefinitionArn",
+    "CurrentServiceContainerConfigurations",
+    "Finding",
+    "FindingReasonCodes",
+    "LastRefreshTimestamp",
+    "LaunchType",
+    "LookbackPeriodInDays",
+    "RecommendationOptionsContainerRecommendations",
+    "RecommendationOptionsCpu",
+    "RecommendationOptionsEstimatedMonthlySavingsCurrency",
+    "RecommendationOptionsEstimatedMonthlySavingsValue",
+    "RecommendationOptionsMemory",
+    "RecommendationOptionsProjectedUtilizationMetricsCpuMaximum",
+    "RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum",
+    "RecommendationOptionsSavingsOpportunityPercentage",
+    "ServiceArn",
+    "UtilizationMetricsCpuMaximum",
+    "UtilizationMetricsMemoryMaximum",
 ]
 ```
 ## ExportableInstanceFieldType
@@ -419,6 +577,62 @@ FindingType = Literal[
     "Optimized",
     "Overprovisioned",
     "Underprovisioned",
+]
+```
+## GetEnrollmentStatusesForOrganizationPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import GetEnrollmentStatusesForOrganizationPaginatorName
+
+def get_value() -> GetEnrollmentStatusesForOrganizationPaginatorName:
+    return "get_enrollment_statuses_for_organization"
+```
+
+```python title="Definition"
+GetEnrollmentStatusesForOrganizationPaginatorName = Literal[
+    "get_enrollment_statuses_for_organization",
+]
+```
+## GetLambdaFunctionRecommendationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import GetLambdaFunctionRecommendationsPaginatorName
+
+def get_value() -> GetLambdaFunctionRecommendationsPaginatorName:
+    return "get_lambda_function_recommendations"
+```
+
+```python title="Definition"
+GetLambdaFunctionRecommendationsPaginatorName = Literal[
+    "get_lambda_function_recommendations",
+]
+```
+## GetRecommendationPreferencesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import GetRecommendationPreferencesPaginatorName
+
+def get_value() -> GetRecommendationPreferencesPaginatorName:
+    return "get_recommendation_preferences"
+```
+
+```python title="Definition"
+GetRecommendationPreferencesPaginatorName = Literal[
+    "get_recommendation_preferences",
+]
+```
+## GetRecommendationSummariesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import GetRecommendationSummariesPaginatorName
+
+def get_value() -> GetRecommendationSummariesPaginatorName:
+    return "get_recommendation_summaries"
+```
+
+```python title="Definition"
+GetRecommendationSummariesPaginatorName = Literal[
+    "get_recommendation_summaries",
 ]
 ```
 ## InferredWorkloadTypeType
@@ -733,6 +947,7 @@ RecommendationSourceTypeType = Literal[
     "AutoScalingGroup",
     "EbsVolume",
     "Ec2Instance",
+    "EcsService",
     "LambdaFunction",
 ]
 ```
@@ -750,6 +965,7 @@ ResourceTypeType = Literal[
     "AutoScalingGroup",
     "EbsVolume",
     "Ec2Instance",
+    "EcsService",
     "LambdaFunction",
     "NotApplicable",
 ]
@@ -1171,6 +1387,24 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_recommendation_export_jobs"
+```
+
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_recommendation_export_jobs",
+    "get_enrollment_statuses_for_organization",
+    "get_lambda_function_recommendations",
+    "get_recommendation_preferences",
+    "get_recommendation_summaries",
 ]
 ```
 ## RegionName

@@ -107,7 +107,6 @@ def get_value() -> ResponseMetadataTypeDef:
 ```
 
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [JoinStorageSessionAsViewerInputRequestTypeDef](./type_defs.md#joinstoragesessionasviewerinputrequesttypedef)
 - [JoinStorageSessionInputRequestTypeDef](./type_defs.md#joinstoragesessioninputrequesttypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 

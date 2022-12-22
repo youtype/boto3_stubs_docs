@@ -34,6 +34,24 @@ type checking and code completion should work out of the box.
 
 
 
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("compute-optimizer")  # (1)
+
+    paginator = client.get_paginator("describe_recommendation_export_jobs")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ComputeOptimizerClient](./client.md)
+    2. paginator: [DescribeRecommendationExportJobsPaginator](./paginators.md#describerecommendationexportjobspaginator)
+    3. item: [:material-code-braces: DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef) 
+
 
 
 
@@ -65,6 +83,25 @@ However, these type annotations can be helpful in your functions and methods.
     ```
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
+    from mypy_boto3_compute_optimizer.paginator import DescribeRecommendationExportJobsPaginator
+    from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsResponseTypeDef
+
+
+    session = Session()
+    client: ComputeOptimizerClient = session.client("compute-optimizer")
+
+    paginator: DescribeRecommendationExportJobsPaginator = client.get_paginator("describe_recommendation_export_jobs")
+    for item in paginator.paginate(...):
+        item: DescribeRecommendationExportJobsResponseTypeDef
+        print(item)
+    ```
 
 
 

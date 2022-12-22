@@ -94,7 +94,7 @@ Type annotations and code completion for `#!python boto3.client("iotdeviceadviso
 def create_suite_definition(
     self,
     *,
-    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef = ...,  # (1)
+    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef,  # (1)
     tags: Mapping[str, str] = ...,
 ) -> CreateSuiteDefinitionResponseTypeDef:  # (2)
     ...
@@ -387,8 +387,8 @@ def start_suite_run(
     self,
     *,
     suiteDefinitionId: str,
+    suiteRunConfiguration: SuiteRunConfigurationTypeDef,  # (1)
     suiteDefinitionVersion: str = ...,
-    suiteRunConfiguration: SuiteRunConfigurationTypeDef = ...,  # (1)
     tags: Mapping[str, str] = ...,
 ) -> StartSuiteRunResponseTypeDef:  # (2)
     ...
@@ -401,6 +401,7 @@ def start_suite_run(
 ```python title="Usage example with kwargs"
 kwargs: StartSuiteRunRequestRequestTypeDef = {  # (1)
     "suiteDefinitionId": ...,
+    "suiteRunConfiguration": ...,
 }
 
 parent.start_suite_run(**kwargs)
@@ -510,7 +511,7 @@ def update_suite_definition(
     self,
     *,
     suiteDefinitionId: str,
-    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef = ...,  # (1)
+    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef,  # (1)
 ) -> UpdateSuiteDefinitionResponseTypeDef:  # (2)
     ...
 ```
@@ -522,6 +523,7 @@ def update_suite_definition(
 ```python title="Usage example with kwargs"
 kwargs: UpdateSuiteDefinitionRequestRequestTypeDef = {  # (1)
     "suiteDefinitionId": ...,
+    "suiteDefinitionConfiguration": ...,
 }
 
 parent.update_suite_definition(**kwargs)

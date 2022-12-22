@@ -380,6 +380,7 @@ def get_value() -> StartSuiteRunResponseTypeDef:
         "suiteRunId": ...,
         "suiteRunArn": ...,
         "createdAt": ...,
+        "endpoint": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -389,6 +390,7 @@ class StartSuiteRunResponseTypeDef(TypedDict):
     suiteRunId: str,
     suiteRunArn: str,
     createdAt: datetime,
+    endpoint: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -430,17 +432,19 @@ from mypy_boto3_iotdeviceadvisor.type_defs import SuiteDefinitionConfigurationTy
 def get_value() -> SuiteDefinitionConfigurationTypeDef:
     return {
         "suiteDefinitionName": ...,
+        "rootGroup": ...,
+        "devicePermissionRoleArn": ...,
     }
 ```
 
 ```python title="Definition"
 class SuiteDefinitionConfigurationTypeDef(TypedDict):
-    suiteDefinitionName: NotRequired[str],
+    suiteDefinitionName: str,
+    rootGroup: str,
+    devicePermissionRoleArn: str,
     devices: NotRequired[Sequence[DeviceUnderTestTypeDef]],  # (1)
     intendedForQualification: NotRequired[bool],
     isLongDurationTest: NotRequired[bool],
-    rootGroup: NotRequired[str],
-    devicePermissionRoleArn: NotRequired[str],
     protocol: NotRequired[ProtocolType],  # (2)
 ```
 
@@ -483,7 +487,7 @@ def get_value() -> SuiteRunConfigurationTypeDef:
 
 ```python title="Definition"
 class SuiteRunConfigurationTypeDef(TypedDict):
-    primaryDevice: NotRequired[DeviceUnderTestTypeDef],  # (1)
+    primaryDevice: DeviceUnderTestTypeDef,  # (1)
     selectedTestList: NotRequired[List[str]],
     parallelRun: NotRequired[bool],
 ```
@@ -551,7 +555,7 @@ def get_value() -> CreateSuiteDefinitionRequestRequestTypeDef:
 
 ```python title="Definition"
 class CreateSuiteDefinitionRequestRequestTypeDef(TypedDict):
-    suiteDefinitionConfiguration: NotRequired[SuiteDefinitionConfigurationTypeDef],  # (1)
+    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef,  # (1)
     tags: NotRequired[Mapping[str, str]],
 ```
 
@@ -598,13 +602,14 @@ from mypy_boto3_iotdeviceadvisor.type_defs import UpdateSuiteDefinitionRequestRe
 def get_value() -> UpdateSuiteDefinitionRequestRequestTypeDef:
     return {
         "suiteDefinitionId": ...,
+        "suiteDefinitionConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
 class UpdateSuiteDefinitionRequestRequestTypeDef(TypedDict):
     suiteDefinitionId: str,
-    suiteDefinitionConfiguration: NotRequired[SuiteDefinitionConfigurationTypeDef],  # (1)
+    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef,  # (1)
 ```
 
 1. See [:material-code-braces: SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef) 
@@ -638,14 +643,15 @@ from mypy_boto3_iotdeviceadvisor.type_defs import StartSuiteRunRequestRequestTyp
 def get_value() -> StartSuiteRunRequestRequestTypeDef:
     return {
         "suiteDefinitionId": ...,
+        "suiteRunConfiguration": ...,
     }
 ```
 
 ```python title="Definition"
 class StartSuiteRunRequestRequestTypeDef(TypedDict):
     suiteDefinitionId: str,
+    suiteRunConfiguration: SuiteRunConfigurationTypeDef,  # (1)
     suiteDefinitionVersion: NotRequired[str],
-    suiteRunConfiguration: NotRequired[SuiteRunConfigurationTypeDef],  # (1)
     tags: NotRequired[Mapping[str, str]],
 ```
 

@@ -4969,6 +4969,40 @@ parent.update_instance_storage_config(**kwargs)
 
 1. See [:material-code-braces: UpdateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#updateinstancestorageconfigrequestrequesttypedef) 
 
+### update\_participant\_role\_config
+
+Updates timeouts for when human chat participants are to be considered idle, and
+when agents are automatically disconnected from a chat due to idleness.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_participant_role_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_participant_role_config)
+
+```python title="Method definition"
+def update_participant_role_config(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    ChannelConfiguration: UpdateParticipantRoleConfigChannelInfoTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: UpdateParticipantRoleConfigChannelInfoTypeDef](./type_defs.md#updateparticipantroleconfigchannelinfotypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateParticipantRoleConfigRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "ChannelConfiguration": ...,
+}
+
+parent.update_participant_role_config(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateParticipantRoleConfigRequestRequestTypeDef](./type_defs.md#updateparticipantroleconfigrequestrequesttypedef) 
+
 ### update\_phone\_number
 
 Updates your claimed phone number from its current Amazon Connect instance or

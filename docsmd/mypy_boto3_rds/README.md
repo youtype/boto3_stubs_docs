@@ -307,6 +307,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [DBClusterRoleTypeDef](./type_defs.md#dbclusterroletypedef)
 - [DBClusterSnapshotAttributeTypeDef](./type_defs.md#dbclustersnapshotattributetypedef)
 - [DomainMembershipTypeDef](./type_defs.md#domainmembershiptypedef)
+- [MasterUserSecretTypeDef](./type_defs.md#masterusersecrettypedef)
 - [ScalingConfigurationInfoTypeDef](./type_defs.md#scalingconfigurationinfotypedef)
 - [ServerlessV2ScalingConfigurationInfoTypeDef](./type_defs.md#serverlessv2scalingconfigurationinfotypedef)
 - [VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)

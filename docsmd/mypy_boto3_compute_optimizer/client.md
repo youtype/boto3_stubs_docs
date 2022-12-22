@@ -273,6 +273,44 @@ parent.export_ec2_instance_recommendations(**kwargs)
 
 1. See [:material-code-braces: ExportEC2InstanceRecommendationsRequestRequestTypeDef](./type_defs.md#exportec2instancerecommendationsrequestrequesttypedef) 
 
+### export\_ecs\_service\_recommendations
+
+Exports optimization recommendations for Amazon ECS services on Fargate.
+
+Type annotations and code completion for `#!python boto3.client("compute-optimizer").export_ecs_service_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ecs_service_recommendations)
+
+```python title="Method definition"
+def export_ecs_service_recommendations(
+    self,
+    *,
+    s3DestinationConfig: S3DestinationConfigTypeDef,  # (1)
+    accountIds: Sequence[str] = ...,
+    filters: Sequence[ECSServiceRecommendationFilterTypeDef] = ...,  # (2)
+    fieldsToExport: Sequence[ExportableECSServiceFieldType] = ...,  # (3)
+    fileFormat: FileFormatType = ...,  # (4)
+    includeMemberAccounts: bool = ...,
+) -> ExportECSServiceRecommendationsResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef) 
+2. See [:material-code-braces: ECSServiceRecommendationFilterTypeDef](./type_defs.md#ecsservicerecommendationfiltertypedef) 
+3. See [:material-code-brackets: ExportableECSServiceFieldType](./literals.md#exportableecsservicefieldtype) 
+4. See [:material-code-brackets: FileFormatType](./literals.md#fileformattype) 
+5. See [:material-code-braces: ExportECSServiceRecommendationsResponseTypeDef](./type_defs.md#exportecsservicerecommendationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ExportECSServiceRecommendationsRequestRequestTypeDef = {  # (1)
+    "s3DestinationConfig": ...,
+}
+
+parent.export_ecs_service_recommendations(**kwargs)
+```
+
+1. See [:material-code-braces: ExportECSServiceRecommendationsRequestRequestTypeDef](./type_defs.md#exportecsservicerecommendationsrequestrequesttypedef) 
+
 ### export\_lambda\_function\_recommendations
 
 Exports optimization recommendations for Lambda functions.
@@ -476,6 +514,78 @@ parent.get_ec2_recommendation_projected_metrics(**kwargs)
 ```
 
 1. See [:material-code-braces: GetEC2RecommendationProjectedMetricsRequestRequestTypeDef](./type_defs.md#getec2recommendationprojectedmetricsrequestrequesttypedef) 
+
+### get\_ecs\_service\_recommendation\_projected\_metrics
+
+Returns the projected metrics of Amazon ECS service recommendations.
+
+Type annotations and code completion for `#!python boto3.client("compute-optimizer").get_ecs_service_recommendation_projected_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ecs_service_recommendation_projected_metrics)
+
+```python title="Method definition"
+def get_ecs_service_recommendation_projected_metrics(
+    self,
+    *,
+    serviceArn: str,
+    stat: MetricStatisticType,  # (1)
+    period: int,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+) -> GetECSServiceRecommendationProjectedMetricsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
+2. See [:material-code-braces: GetECSServiceRecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getecsservicerecommendationprojectedmetricsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetECSServiceRecommendationProjectedMetricsRequestRequestTypeDef = {  # (1)
+    "serviceArn": ...,
+    "stat": ...,
+    "period": ...,
+    "startTime": ...,
+    "endTime": ...,
+}
+
+parent.get_ecs_service_recommendation_projected_metrics(**kwargs)
+```
+
+1. See [:material-code-braces: GetECSServiceRecommendationProjectedMetricsRequestRequestTypeDef](./type_defs.md#getecsservicerecommendationprojectedmetricsrequestrequesttypedef) 
+
+### get\_ecs\_service\_recommendations
+
+Returns Amazon ECS service recommendations.
+
+Type annotations and code completion for `#!python boto3.client("compute-optimizer").get_ecs_service_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ecs_service_recommendations)
+
+```python title="Method definition"
+def get_ecs_service_recommendations(
+    self,
+    *,
+    serviceArns: Sequence[str] = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[ECSServiceRecommendationFilterTypeDef] = ...,  # (1)
+    accountIds: Sequence[str] = ...,
+) -> GetECSServiceRecommendationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ECSServiceRecommendationFilterTypeDef](./type_defs.md#ecsservicerecommendationfiltertypedef) 
+2. See [:material-code-braces: GetECSServiceRecommendationsResponseTypeDef](./type_defs.md#getecsservicerecommendationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetECSServiceRecommendationsRequestRequestTypeDef = {  # (1)
+    "serviceArns": ...,
+}
+
+parent.get_ecs_service_recommendations(**kwargs)
+```
+
+1. See [:material-code-braces: GetECSServiceRecommendationsRequestRequestTypeDef](./type_defs.md#getecsservicerecommendationsrequestrequesttypedef) 
 
 ### get\_effective\_recommendation\_preferences
 
@@ -727,6 +837,17 @@ parent.update_enrollment_status(**kwargs)
 
 1. See [:material-code-braces: UpdateEnrollmentStatusRequestRequestTypeDef](./type_defs.md#updateenrollmentstatusrequestrequesttypedef) 
 
+
+
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("compute-optimizer").get_paginator` method with overloads.
+
+- `client.get_paginator("describe_recommendation_export_jobs")` -> [DescribeRecommendationExportJobsPaginator](./paginators.md#describerecommendationexportjobspaginator)
+- `client.get_paginator("get_enrollment_statuses_for_organization")` -> [GetEnrollmentStatusesForOrganizationPaginator](./paginators.md#getenrollmentstatusesfororganizationpaginator)
+- `client.get_paginator("get_lambda_function_recommendations")` -> [GetLambdaFunctionRecommendationsPaginator](./paginators.md#getlambdafunctionrecommendationspaginator)
+- `client.get_paginator("get_recommendation_preferences")` -> [GetRecommendationPreferencesPaginator](./paginators.md#getrecommendationpreferencespaginator)
+- `client.get_paginator("get_recommendation_summaries")` -> [GetRecommendationSummariesPaginator](./paginators.md#getrecommendationsummariespaginator)
 
 
 

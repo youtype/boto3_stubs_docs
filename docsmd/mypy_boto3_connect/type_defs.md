@@ -3214,6 +3214,24 @@ class ParticipantDetailsTypeDef(TypedDict):
     DisplayName: str,
 ```
 
+## ParticipantTimerValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ParticipantTimerValueTypeDef
+
+def get_value() -> ParticipantTimerValueTypeDef:
+    return {
+        "ParticipantTimerAction": ...,
+    }
+```
+
+```python title="Definition"
+class ParticipantTimerValueTypeDef(TypedDict):
+    ParticipantTimerAction: NotRequired[ParticipantTimerActionType],  # (1)
+    ParticipantTimerDurationInMinutes: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ParticipantTimerActionType](./literals.md#participanttimeractiontype) 
 ## PhoneNumberQuickConnectConfigTypeDef
 
 ```python title="Usage Example"
@@ -7251,6 +7269,29 @@ class StartChatContactRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef) 
 2. See [:material-code-braces: ChatMessageTypeDef](./type_defs.md#chatmessagetypedef) 
+## ParticipantTimerConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ParticipantTimerConfigurationTypeDef
+
+def get_value() -> ParticipantTimerConfigurationTypeDef:
+    return {
+        "ParticipantRole": ...,
+        "TimerType": ...,
+        "TimerValue": ...,
+    }
+```
+
+```python title="Definition"
+class ParticipantTimerConfigurationTypeDef(TypedDict):
+    ParticipantRole: TimerEligibleParticipantRolesType,  # (1)
+    TimerType: ParticipantTimerTypeType,  # (2)
+    TimerValue: ParticipantTimerValueTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: TimerEligibleParticipantRolesType](./literals.md#timereligibleparticipantrolestype) 
+2. See [:material-code-brackets: ParticipantTimerTypeType](./literals.md#participanttimertypetype) 
+3. See [:material-code-braces: ParticipantTimerValueTypeDef](./type_defs.md#participanttimervaluetypedef) 
 ## QueueSearchCriteriaTypeDef
 
 ```python title="Usage Example"
@@ -8293,6 +8334,23 @@ class TaskTemplateDefaultsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TaskTemplateDefaultFieldValueTypeDef](./type_defs.md#tasktemplatedefaultfieldvaluetypedef) 
+## ChatParticipantRoleConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ChatParticipantRoleConfigTypeDef
+
+def get_value() -> ChatParticipantRoleConfigTypeDef:
+    return {
+        "ParticipantTimerConfigList": ...,
+    }
+```
+
+```python title="Definition"
+class ChatParticipantRoleConfigTypeDef(TypedDict):
+    ParticipantTimerConfigList: Sequence[ParticipantTimerConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ParticipantTimerConfigurationTypeDef](./type_defs.md#participanttimerconfigurationtypedef) 
 ## CreateQuickConnectRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -8949,6 +9007,23 @@ class UpdateTaskTemplateResponseTypeDef(TypedDict):
 3. See [:material-code-braces: TaskTemplateFieldTypeDef](./type_defs.md#tasktemplatefieldtypedef) 
 4. See [:material-code-brackets: TaskTemplateStatusType](./literals.md#tasktemplatestatustype) 
 5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateParticipantRoleConfigChannelInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UpdateParticipantRoleConfigChannelInfoTypeDef
+
+def get_value() -> UpdateParticipantRoleConfigChannelInfoTypeDef:
+    return {
+        "Chat": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateParticipantRoleConfigChannelInfoTypeDef(TypedDict):
+    Chat: NotRequired[ChatParticipantRoleConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ChatParticipantRoleConfigTypeDef](./type_defs.md#chatparticipantroleconfigtypedef) 
 ## DescribeQuickConnectResponseTypeDef
 
 ```python title="Usage Example"
@@ -9087,6 +9162,27 @@ class GetMetricDataResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: HistoricalMetricResultTypeDef](./type_defs.md#historicalmetricresulttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateParticipantRoleConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import UpdateParticipantRoleConfigRequestRequestTypeDef
+
+def get_value() -> UpdateParticipantRoleConfigRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "ChannelConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateParticipantRoleConfigRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    ChannelConfiguration: UpdateParticipantRoleConfigChannelInfoTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: UpdateParticipantRoleConfigChannelInfoTypeDef](./type_defs.md#updateparticipantroleconfigchannelinfotypedef) 
 ## DescribeRuleResponseTypeDef
 
 ```python title="Usage Example"

@@ -2273,13 +2273,12 @@ def get_value() -> GetTemplateOutputTypeDef:
 
 ```python title="Definition"
 class GetTemplateOutputTypeDef(TypedDict):
-    TemplateBody: str,
-    StagesAvailable: List[TemplateStageType],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    TemplateBody: Dict[str, Any],
+    StagesAvailable: List[TemplateStageType],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
-1. See [:material-code-brackets: TemplateStageType](./literals.md#templatestagetype) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportStacksToStackSetOutputTypeDef
 
 ```python title="Usage Example"

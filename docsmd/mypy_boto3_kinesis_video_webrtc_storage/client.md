@@ -132,38 +132,6 @@ parent.join_storage_session(**kwargs)
 
 1. See [:material-code-braces: JoinStorageSessionInputRequestTypeDef](./type_defs.md#joinstoragesessioninputrequesttypedef) 
 
-### join\_storage\_session\_as\_viewer
-
-Join the ongoing one way-video and/or multi-way audio WebRTC session as a viewer
-for an input channel.
-
-Type annotations and code completion for `#!python boto3.client("kinesis-video-webrtc-storage").join_storage_session_as_viewer` method.
-[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-webrtc-storage.html#KinesisVideoWebRTCStorage.Client.join_storage_session_as_viewer)
-
-```python title="Method definition"
-def join_storage_session_as_viewer(
-    self,
-    *,
-    channelArn: str,
-    clientId: str,
-) -> EmptyResponseMetadataTypeDef:  # (1)
-    ...
-```
-
-1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
-
-
-```python title="Usage example with kwargs"
-kwargs: JoinStorageSessionAsViewerInputRequestTypeDef = {  # (1)
-    "channelArn": ...,
-    "clientId": ...,
-}
-
-parent.join_storage_session_as_viewer(**kwargs)
-```
-
-1. See [:material-code-braces: JoinStorageSessionAsViewerInputRequestTypeDef](./type_defs.md#joinstoragesessionasviewerinputrequesttypedef) 
-
 
 
 

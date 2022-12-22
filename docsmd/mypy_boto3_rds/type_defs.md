@@ -758,6 +758,24 @@ class DomainMembershipTypeDef(TypedDict):
     IAMRoleName: NotRequired[str],
 ```
 
+## MasterUserSecretTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import MasterUserSecretTypeDef
+
+def get_value() -> MasterUserSecretTypeDef:
+    return {
+        "SecretArn": ...,
+    }
+```
+
+```python title="Definition"
+class MasterUserSecretTypeDef(TypedDict):
+    SecretArn: NotRequired[str],
+    SecretStatus: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+```
+
 ## ScalingConfigurationInfoTypeDef
 
 ```python title="Usage Example"
@@ -3782,6 +3800,8 @@ class CreateDBClusterMessageRequestTypeDef(TypedDict):
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
     NetworkType: NotRequired[str],
     DBSystemId: NotRequired[str],
+    ManageMasterUserPassword: NotRequired[bool],
+    MasterUserSecretKmsKeyId: NotRequired[str],
     SourceRegion: NotRequired[str],
 ```
 
@@ -3837,6 +3857,9 @@ class ModifyDBClusterMessageRequestTypeDef(TypedDict):
     PerformanceInsightsRetentionPeriod: NotRequired[int],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (3)
     NetworkType: NotRequired[str],
+    ManageMasterUserPassword: NotRequired[bool],
+    RotateMasterUserPassword: NotRequired[bool],
+    MasterUserSecretKmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
@@ -3852,7 +3875,6 @@ def get_value() -> RestoreDBClusterFromS3MessageRequestTypeDef:
         "DBClusterIdentifier": ...,
         "Engine": ...,
         "MasterUsername": ...,
-        "MasterUserPassword": ...,
         "SourceEngine": ...,
         "SourceEngineVersion": ...,
         "S3BucketName": ...,
@@ -3865,7 +3887,6 @@ class RestoreDBClusterFromS3MessageRequestTypeDef(TypedDict):
     DBClusterIdentifier: str,
     Engine: str,
     MasterUsername: str,
-    MasterUserPassword: str,
     SourceEngine: str,
     SourceEngineVersion: str,
     S3BucketName: str,
@@ -3879,6 +3900,7 @@ class RestoreDBClusterFromS3MessageRequestTypeDef(TypedDict):
     DBSubnetGroupName: NotRequired[str],
     EngineVersion: NotRequired[str],
     Port: NotRequired[int],
+    MasterUserPassword: NotRequired[str],
     OptionGroupName: NotRequired[str],
     PreferredBackupWindow: NotRequired[str],
     PreferredMaintenanceWindow: NotRequired[str],
@@ -3895,6 +3917,8 @@ class RestoreDBClusterFromS3MessageRequestTypeDef(TypedDict):
     DomainIAMRoleName: NotRequired[str],
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationTypeDef],  # (2)
     NetworkType: NotRequired[str],
+    ManageMasterUserPassword: NotRequired[bool],
+    MasterUserSecretKmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -4060,6 +4084,8 @@ class CreateDBInstanceMessageRequestTypeDef(TypedDict):
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
+    ManageMasterUserPassword: NotRequired[bool],
+    MasterUserSecretKmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -4232,6 +4258,9 @@ class ModifyDBInstanceMessageRequestTypeDef(TypedDict):
     ResumeFullAutomationModeMinutes: NotRequired[int],
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
+    ManageMasterUserPassword: NotRequired[bool],
+    RotateMasterUserPassword: NotRequired[bool],
+    MasterUserSecretKmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
@@ -4391,6 +4420,8 @@ class RestoreDBInstanceFromS3MessageRequestTypeDef(TypedDict):
     MaxAllocatedStorage: NotRequired[int],
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
+    ManageMasterUserPassword: NotRequired[bool],
+    MasterUserSecretKmsKeyId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -7414,6 +7445,7 @@ class DBClusterTypeDef(TypedDict):
     ServerlessV2ScalingConfiguration: NotRequired[ServerlessV2ScalingConfigurationInfoTypeDef],  # (12)
     NetworkType: NotRequired[str],
     DBSystemId: NotRequired[str],
+    MasterUserSecret: NotRequired[MasterUserSecretTypeDef],  # (13)
 ```
 
 1. See [:material-code-braces: DBClusterOptionGroupStatusTypeDef](./type_defs.md#dbclusteroptiongroupstatustypedef) 
@@ -7428,6 +7460,7 @@ class DBClusterTypeDef(TypedDict):
 10. See [:material-code-brackets: WriteForwardingStatusType](./literals.md#writeforwardingstatustype) 
 11. See [:material-code-braces: ClusterPendingModifiedValuesTypeDef](./type_defs.md#clusterpendingmodifiedvaluestypedef) 
 12. See [:material-code-braces: ServerlessV2ScalingConfigurationInfoTypeDef](./type_defs.md#serverlessv2scalingconfigurationinfotypedef) 
+13. See [:material-code-braces: MasterUserSecretTypeDef](./type_defs.md#masterusersecrettypedef) 
 ## DescribeDBProxyTargetGroupsResponseTypeDef
 
 ```python title="Usage Example"
@@ -8810,6 +8843,7 @@ class DBInstanceTypeDef(TypedDict):
     ActivityStreamPolicyStatus: NotRequired[ActivityStreamPolicyStatusType],  # (19)
     StorageThroughput: NotRequired[int],
     DBSystemId: NotRequired[str],
+    MasterUserSecret: NotRequired[MasterUserSecretTypeDef],  # (20)
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
@@ -8831,6 +8865,7 @@ class DBInstanceTypeDef(TypedDict):
 17. See [:material-code-brackets: ActivityStreamModeType](./literals.md#activitystreammodetype) 
 18. See [:material-code-brackets: AutomationModeType](./literals.md#automationmodetype) 
 19. See [:material-code-brackets: ActivityStreamPolicyStatusType](./literals.md#activitystreampolicystatustype) 
+20. See [:material-code-braces: MasterUserSecretTypeDef](./type_defs.md#masterusersecrettypedef) 
 ## DBSubnetGroupMessageTypeDef
 
 ```python title="Usage Example"

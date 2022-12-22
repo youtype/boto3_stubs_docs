@@ -940,6 +940,35 @@ NotificationDeliveryTypeType = Literal[
     "EMAIL",
 ]
 ```
+## ParticipantTimerActionType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import ParticipantTimerActionType
+
+def get_value() -> ParticipantTimerActionType:
+    return "Unset"
+```
+
+```python title="Definition"
+ParticipantTimerActionType = Literal[
+    "Unset",
+]
+```
+## ParticipantTimerTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import ParticipantTimerTypeType
+
+def get_value() -> ParticipantTimerTypeType:
+    return "DISCONNECT_NONCUSTOMER"
+```
+
+```python title="Definition"
+ParticipantTimerTypeType = Literal[
+    "DISCONNECT_NONCUSTOMER",
+    "IDLE",
+]
+```
 ## PhoneNumberCountryCodeType
 
 ```python title="Usage Example"
@@ -1531,6 +1560,21 @@ def get_value() -> TaskTemplateStatusType:
 TaskTemplateStatusType = Literal[
     "ACTIVE",
     "INACTIVE",
+]
+```
+## TimerEligibleParticipantRolesType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import TimerEligibleParticipantRolesType
+
+def get_value() -> TimerEligibleParticipantRolesType:
+    return "AGENT"
+```
+
+```python title="Definition"
+TimerEligibleParticipantRolesType = Literal[
+    "AGENT",
+    "CUSTOMER",
 ]
 ```
 ## TrafficDistributionGroupStatusType

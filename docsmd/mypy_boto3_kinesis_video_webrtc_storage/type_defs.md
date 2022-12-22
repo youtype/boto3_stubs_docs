@@ -31,24 +31,6 @@ class ResponseMetadataTypeDef(TypedDict):
     RetryAttempts: int,
 ```
 
-## JoinStorageSessionAsViewerInputRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_kinesis_video_webrtc_storage.type_defs import JoinStorageSessionAsViewerInputRequestTypeDef
-
-def get_value() -> JoinStorageSessionAsViewerInputRequestTypeDef:
-    return {
-        "channelArn": ...,
-        "clientId": ...,
-    }
-```
-
-```python title="Definition"
-class JoinStorageSessionAsViewerInputRequestTypeDef(TypedDict):
-    channelArn: str,
-    clientId: str,
-```
-
 ## JoinStorageSessionInputRequestTypeDef
 
 ```python title="Usage Example"

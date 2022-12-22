@@ -8346,6 +8346,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../mypy_boto3_compute_optimizer/paginators/" class="md-nav__link">
+        Paginators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../mypy_boto3_compute_optimizer/type_defs/" class="md-nav__link">
         Typed dictionaries
       </a>
@@ -42287,9 +42301,11 @@ instance).</p>
 <a id="__codelineno-35-48" name="__codelineno-35-48" href="#__codelineno-35-48"></a>    <span class="n">ServerlessV2ScalingConfiguration</span><span class="p">:</span> <span class="n">ServerlessV2ScalingConfigurationTypeDef</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (3)</span>
 <a id="__codelineno-35-49" name="__codelineno-35-49" href="#__codelineno-35-49"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-35-50" name="__codelineno-35-50" href="#__codelineno-35-50"></a>    <span class="n">DBSystemId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-35-51" name="__codelineno-35-51" href="#__codelineno-35-51"></a>    <span class="n">SourceRegion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-35-52" name="__codelineno-35-52" href="#__codelineno-35-52"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBClusterResultTypeDef</span><span class="p">:</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-35-53" name="__codelineno-35-53" href="#__codelineno-35-53"></a>    <span class="o">...</span>
+<a id="__codelineno-35-51" name="__codelineno-35-51" href="#__codelineno-35-51"></a>    <span class="n">ManageMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-35-52" name="__codelineno-35-52" href="#__codelineno-35-52"></a>    <span class="n">MasterUserSecretKmsKeyId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-35-53" name="__codelineno-35-53" href="#__codelineno-35-53"></a>    <span class="n">SourceRegion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-35-54" name="__codelineno-35-54" href="#__codelineno-35-54"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBClusterResultTypeDef</span><span class="p">:</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-35-55" name="__codelineno-35-55" href="#__codelineno-35-55"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
@@ -42454,8 +42470,10 @@ cluster.</p>
 <a id="__codelineno-43-53" name="__codelineno-43-53" href="#__codelineno-43-53"></a>    <span class="n">BackupTarget</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-43-54" name="__codelineno-43-54" href="#__codelineno-43-54"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-43-55" name="__codelineno-43-55" href="#__codelineno-43-55"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-43-56" name="__codelineno-43-56" href="#__codelineno-43-56"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-43-57" name="__codelineno-43-57" href="#__codelineno-43-57"></a>    <span class="o">...</span>
+<a id="__codelineno-43-56" name="__codelineno-43-56" href="#__codelineno-43-56"></a>    <span class="n">ManageMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-43-57" name="__codelineno-43-57" href="#__codelineno-43-57"></a>    <span class="n">MasterUserSecretKmsKeyId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-43-58" name="__codelineno-43-58" href="#__codelineno-43-58"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-43-59" name="__codelineno-43-59" href="#__codelineno-43-59"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
@@ -44620,8 +44638,11 @@ override.</p>
 <a id="__codelineno-197-37" name="__codelineno-197-37" href="#__codelineno-197-37"></a>    <span class="n">PerformanceInsightsRetentionPeriod</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-197-38" name="__codelineno-197-38" href="#__codelineno-197-38"></a>    <span class="n">ServerlessV2ScalingConfiguration</span><span class="p">:</span> <span class="n">ServerlessV2ScalingConfigurationTypeDef</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (3)</span>
 <a id="__codelineno-197-39" name="__codelineno-197-39" href="#__codelineno-197-39"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-197-40" name="__codelineno-197-40" href="#__codelineno-197-40"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModifyDBClusterResultTypeDef</span><span class="p">:</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-197-41" name="__codelineno-197-41" href="#__codelineno-197-41"></a>    <span class="o">...</span>
+<a id="__codelineno-197-40" name="__codelineno-197-40" href="#__codelineno-197-40"></a>    <span class="n">ManageMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-197-41" name="__codelineno-197-41" href="#__codelineno-197-41"></a>    <span class="n">RotateMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-197-42" name="__codelineno-197-42" href="#__codelineno-197-42"></a>    <span class="n">MasterUserSecretKmsKeyId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-197-43" name="__codelineno-197-43" href="#__codelineno-197-43"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModifyDBClusterResultTypeDef</span><span class="p">:</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-197-44" name="__codelineno-197-44" href="#__codelineno-197-44"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#cloudwatchlogsexportconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CloudwatchLogsExportConfigurationTypeDef</a> </li>
@@ -44774,8 +44795,11 @@ manual DB cluster snapshot.</p>
 <a id="__codelineno-205-50" name="__codelineno-205-50" href="#__codelineno-205-50"></a>    <span class="n">ResumeFullAutomationModeMinutes</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-205-51" name="__codelineno-205-51" href="#__codelineno-205-51"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-205-52" name="__codelineno-205-52" href="#__codelineno-205-52"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-205-53" name="__codelineno-205-53" href="#__codelineno-205-53"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModifyDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (5)</span>
-<a id="__codelineno-205-54" name="__codelineno-205-54" href="#__codelineno-205-54"></a>    <span class="o">...</span>
+<a id="__codelineno-205-53" name="__codelineno-205-53" href="#__codelineno-205-53"></a>    <span class="n">ManageMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-205-54" name="__codelineno-205-54" href="#__codelineno-205-54"></a>    <span class="n">RotateMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-205-55" name="__codelineno-205-55" href="#__codelineno-205-55"></a>    <span class="n">MasterUserSecretKmsKeyId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-205-56" name="__codelineno-205-56" href="#__codelineno-205-56"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ModifyDBInstanceResultTypeDef</span><span class="p">:</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-205-57" name="__codelineno-205-57" href="#__codelineno-205-57"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#cloudwatchlogsexportconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CloudwatchLogsExportConfigurationTypeDef</a> </li>
@@ -45406,20 +45430,20 @@ bucket.</p>
 <a id="__codelineno-253-4" name="__codelineno-253-4" href="#__codelineno-253-4"></a>    <span class="n">DBClusterIdentifier</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-253-5" name="__codelineno-253-5" href="#__codelineno-253-5"></a>    <span class="n">Engine</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-253-6" name="__codelineno-253-6" href="#__codelineno-253-6"></a>    <span class="n">MasterUsername</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-253-7" name="__codelineno-253-7" href="#__codelineno-253-7"></a>    <span class="n">MasterUserPassword</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-253-8" name="__codelineno-253-8" href="#__codelineno-253-8"></a>    <span class="n">SourceEngine</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-253-9" name="__codelineno-253-9" href="#__codelineno-253-9"></a>    <span class="n">SourceEngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-253-10" name="__codelineno-253-10" href="#__codelineno-253-10"></a>    <span class="n">S3BucketName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-253-11" name="__codelineno-253-11" href="#__codelineno-253-11"></a>    <span class="n">S3IngestionRoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-253-12" name="__codelineno-253-12" href="#__codelineno-253-12"></a>    <span class="n">AvailabilityZones</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-13" name="__codelineno-253-13" href="#__codelineno-253-13"></a>    <span class="n">BackupRetentionPeriod</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-14" name="__codelineno-253-14" href="#__codelineno-253-14"></a>    <span class="n">CharacterSetName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-15" name="__codelineno-253-15" href="#__codelineno-253-15"></a>    <span class="n">DatabaseName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-16" name="__codelineno-253-16" href="#__codelineno-253-16"></a>    <span class="n">DBClusterParameterGroupName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-17" name="__codelineno-253-17" href="#__codelineno-253-17"></a>    <span class="n">VpcSecurityGroupIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-18" name="__codelineno-253-18" href="#__codelineno-253-18"></a>    <span class="n">DBSubnetGroupName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-19" name="__codelineno-253-19" href="#__codelineno-253-19"></a>    <span class="n">EngineVersion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-20" name="__codelineno-253-20" href="#__codelineno-253-20"></a>    <span class="n">Port</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-7" name="__codelineno-253-7" href="#__codelineno-253-7"></a>    <span class="n">SourceEngine</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-253-8" name="__codelineno-253-8" href="#__codelineno-253-8"></a>    <span class="n">SourceEngineVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-253-9" name="__codelineno-253-9" href="#__codelineno-253-9"></a>    <span class="n">S3BucketName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-253-10" name="__codelineno-253-10" href="#__codelineno-253-10"></a>    <span class="n">S3IngestionRoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-253-11" name="__codelineno-253-11" href="#__codelineno-253-11"></a>    <span class="n">AvailabilityZones</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-12" name="__codelineno-253-12" href="#__codelineno-253-12"></a>    <span class="n">BackupRetentionPeriod</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-13" name="__codelineno-253-13" href="#__codelineno-253-13"></a>    <span class="n">CharacterSetName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-14" name="__codelineno-253-14" href="#__codelineno-253-14"></a>    <span class="n">DatabaseName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-15" name="__codelineno-253-15" href="#__codelineno-253-15"></a>    <span class="n">DBClusterParameterGroupName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-16" name="__codelineno-253-16" href="#__codelineno-253-16"></a>    <span class="n">VpcSecurityGroupIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-17" name="__codelineno-253-17" href="#__codelineno-253-17"></a>    <span class="n">DBSubnetGroupName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-18" name="__codelineno-253-18" href="#__codelineno-253-18"></a>    <span class="n">EngineVersion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-19" name="__codelineno-253-19" href="#__codelineno-253-19"></a>    <span class="n">Port</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-20" name="__codelineno-253-20" href="#__codelineno-253-20"></a>    <span class="n">MasterUserPassword</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-253-21" name="__codelineno-253-21" href="#__codelineno-253-21"></a>    <span class="n">OptionGroupName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-253-22" name="__codelineno-253-22" href="#__codelineno-253-22"></a>    <span class="n">PreferredBackupWindow</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-253-23" name="__codelineno-253-23" href="#__codelineno-253-23"></a>    <span class="n">PreferredMaintenanceWindow</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
@@ -45436,8 +45460,10 @@ bucket.</p>
 <a id="__codelineno-253-34" name="__codelineno-253-34" href="#__codelineno-253-34"></a>    <span class="n">DomainIAMRoleName</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-253-35" name="__codelineno-253-35" href="#__codelineno-253-35"></a>    <span class="n">ServerlessV2ScalingConfiguration</span><span class="p">:</span> <span class="n">ServerlessV2ScalingConfigurationTypeDef</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (2)</span>
 <a id="__codelineno-253-36" name="__codelineno-253-36" href="#__codelineno-253-36"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-253-37" name="__codelineno-253-37" href="#__codelineno-253-37"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBClusterFromS3ResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-253-38" name="__codelineno-253-38" href="#__codelineno-253-38"></a>    <span class="o">...</span>
+<a id="__codelineno-253-37" name="__codelineno-253-37" href="#__codelineno-253-37"></a>    <span class="n">ManageMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-38" name="__codelineno-253-38" href="#__codelineno-253-38"></a>    <span class="n">MasterUserSecretKmsKeyId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-253-39" name="__codelineno-253-39" href="#__codelineno-253-39"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBClusterFromS3ResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-253-40" name="__codelineno-253-40" href="#__codelineno-253-40"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
@@ -45448,14 +45474,13 @@ bucket.</p>
 <a id="__codelineno-254-2" name="__codelineno-254-2" href="#__codelineno-254-2"></a>    <span class="s2">&quot;DBClusterIdentifier&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-254-3" name="__codelineno-254-3" href="#__codelineno-254-3"></a>    <span class="s2">&quot;Engine&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-254-4" name="__codelineno-254-4" href="#__codelineno-254-4"></a>    <span class="s2">&quot;MasterUsername&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-254-5" name="__codelineno-254-5" href="#__codelineno-254-5"></a>    <span class="s2">&quot;MasterUserPassword&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-254-6" name="__codelineno-254-6" href="#__codelineno-254-6"></a>    <span class="s2">&quot;SourceEngine&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-254-7" name="__codelineno-254-7" href="#__codelineno-254-7"></a>    <span class="s2">&quot;SourceEngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-254-8" name="__codelineno-254-8" href="#__codelineno-254-8"></a>    <span class="s2">&quot;S3BucketName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-254-9" name="__codelineno-254-9" href="#__codelineno-254-9"></a>    <span class="s2">&quot;S3IngestionRoleArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-254-10" name="__codelineno-254-10" href="#__codelineno-254-10"></a><span class="p">}</span>
-<a id="__codelineno-254-11" name="__codelineno-254-11" href="#__codelineno-254-11"></a>
-<a id="__codelineno-254-12" name="__codelineno-254-12" href="#__codelineno-254-12"></a><span class="n">parent</span><span class="o">.</span><span class="n">restore_db_cluster_from_s3</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-254-5" name="__codelineno-254-5" href="#__codelineno-254-5"></a>    <span class="s2">&quot;SourceEngine&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-254-6" name="__codelineno-254-6" href="#__codelineno-254-6"></a>    <span class="s2">&quot;SourceEngineVersion&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-254-7" name="__codelineno-254-7" href="#__codelineno-254-7"></a>    <span class="s2">&quot;S3BucketName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-254-8" name="__codelineno-254-8" href="#__codelineno-254-8"></a>    <span class="s2">&quot;S3IngestionRoleArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-254-9" name="__codelineno-254-9" href="#__codelineno-254-9"></a><span class="p">}</span>
+<a id="__codelineno-254-10" name="__codelineno-254-10" href="#__codelineno-254-10"></a>
+<a id="__codelineno-254-11" name="__codelineno-254-11" href="#__codelineno-254-11"></a><span class="n">parent</span><span class="o">.</span><span class="n">restore_db_cluster_from_s3</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#restoredbclusterfroms3messagerequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RestoreDBClusterFromS3MessageRequestTypeDef</a> </li>
@@ -45680,8 +45705,10 @@ databases by using backup files.</p>
 <a id="__codelineno-261-47" name="__codelineno-261-47" href="#__codelineno-261-47"></a>    <span class="n">MaxAllocatedStorage</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-261-48" name="__codelineno-261-48" href="#__codelineno-261-48"></a>    <span class="n">NetworkType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-261-49" name="__codelineno-261-49" href="#__codelineno-261-49"></a>    <span class="n">StorageThroughput</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-261-50" name="__codelineno-261-50" href="#__codelineno-261-50"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceFromS3ResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-261-51" name="__codelineno-261-51" href="#__codelineno-261-51"></a>    <span class="o">...</span>
+<a id="__codelineno-261-50" name="__codelineno-261-50" href="#__codelineno-261-50"></a>    <span class="n">ManageMasterUserPassword</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-261-51" name="__codelineno-261-51" href="#__codelineno-261-51"></a>    <span class="n">MasterUserSecretKmsKeyId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-261-52" name="__codelineno-261-52" href="#__codelineno-261-52"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RestoreDBInstanceFromS3ResultTypeDef</span><span class="p">:</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-261-53" name="__codelineno-261-53" href="#__codelineno-261-53"></a>    <span class="o">...</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#tagtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TagTypeDef</a> </li>
