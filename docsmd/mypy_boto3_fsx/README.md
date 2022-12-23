@@ -152,6 +152,7 @@ def get_value() -> AdministrativeActionTypeType:
 - [StorageVirtualMachineFilterNameType](./literals.md#storagevirtualmachinefilternametype)
 - [StorageVirtualMachineLifecycleType](./literals.md#storagevirtualmachinelifecycletype)
 - [StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype)
+- [StorageVirtualMachineSubtypeType](./literals.md#storagevirtualmachinesubtypetype)
 - [TieringPolicyNameType](./literals.md#tieringpolicynametype)
 - [VolumeFilterNameType](./literals.md#volumefilternametype)
 - [VolumeLifecycleType](./literals.md#volumelifecycletype)

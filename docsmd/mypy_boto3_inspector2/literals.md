@@ -878,11 +878,12 @@ ResourceTypeType = Literal[
 from mypy_boto3_inspector2.literals import RuntimeType
 
 def get_value() -> RuntimeType:
-    return "JAVA_11"
+    return "GO_1_X"
 ```
 
 ```python title="Definition"
 RuntimeType = Literal[
+    "GO_1_X",
     "JAVA_11",
     "JAVA_8",
     "JAVA_8_AL2",
@@ -890,6 +891,7 @@ RuntimeType = Literal[
     "NODEJS_12_X",
     "NODEJS_14_X",
     "NODEJS_16_X",
+    "NODEJS_18_X",
     "PYTHON_3_7",
     "PYTHON_3_8",
     "PYTHON_3_9",

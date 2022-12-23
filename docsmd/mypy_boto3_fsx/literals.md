@@ -807,6 +807,23 @@ StorageVirtualMachineRootVolumeSecurityStyleType = Literal[
     "UNIX",
 ]
 ```
+## StorageVirtualMachineSubtypeType
+
+```python title="Usage Example"
+from mypy_boto3_fsx.literals import StorageVirtualMachineSubtypeType
+
+def get_value() -> StorageVirtualMachineSubtypeType:
+    return "DEFAULT"
+```
+
+```python title="Definition"
+StorageVirtualMachineSubtypeType = Literal[
+    "DEFAULT",
+    "DP_DESTINATION",
+    "SYNC_DESTINATION",
+    "SYNC_SOURCE",
+]
+```
 ## TieringPolicyNameType
 
 ```python title="Usage Example"

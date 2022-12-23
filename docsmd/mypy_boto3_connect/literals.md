@@ -295,6 +295,7 @@ def get_value() -> GroupingType:
 GroupingType = Literal[
     "CHANNEL",
     "QUEUE",
+    "ROUTING_PROFILE",
 ]
 ```
 ## HierarchyGroupMatchTypeType
@@ -1456,6 +1457,21 @@ def get_value() -> SearchableQueueTypeType:
 ```python title="Definition"
 SearchableQueueTypeType = Literal[
     "STANDARD",
+]
+```
+## SortOrderType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
+```
+
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
 ]
 ```
 ## SourceTypeType

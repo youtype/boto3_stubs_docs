@@ -129,8 +129,8 @@ Type annotations and code completion for `#!python boto3.client("connectparticip
 def create_participant_connection(
     self,
     *,
-    Type: Sequence[ConnectionTypeType],  # (1)
     ParticipantToken: str,
+    Type: Sequence[ConnectionTypeType] = ...,  # (1)
     ConnectParticipant: bool = ...,
 ) -> CreateParticipantConnectionResponseTypeDef:  # (2)
     ...
@@ -142,7 +142,6 @@ def create_participant_connection(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateParticipantConnectionRequestRequestTypeDef = {  # (1)
-    "Type": ...,
     "ParticipantToken": ...,
 }
 

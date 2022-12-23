@@ -2517,14 +2517,16 @@ def get_current_metric_data(
     Groupings: Sequence[GroupingType] = ...,  # (3)
     NextToken: str = ...,
     MaxResults: int = ...,
-) -> GetCurrentMetricDataResponseTypeDef:  # (4)
+    SortCriteria: Sequence[CurrentMetricSortCriteriaTypeDef] = ...,  # (4)
+) -> GetCurrentMetricDataResponseTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
 2. See [:material-code-braces: CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef) 
 3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
-4. See [:material-code-braces: GetCurrentMetricDataResponseTypeDef](./type_defs.md#getcurrentmetricdataresponsetypedef) 
+4. See [:material-code-braces: CurrentMetricSortCriteriaTypeDef](./type_defs.md#currentmetricsortcriteriatypedef) 
+5. See [:material-code-braces: GetCurrentMetricDataResponseTypeDef](./type_defs.md#getcurrentmetricdataresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

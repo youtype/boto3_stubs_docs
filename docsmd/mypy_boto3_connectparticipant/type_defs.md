@@ -71,15 +71,14 @@ from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionR
 
 def get_value() -> CreateParticipantConnectionRequestRequestTypeDef:
     return {
-        "Type": ...,
         "ParticipantToken": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateParticipantConnectionRequestRequestTypeDef(TypedDict):
-    Type: Sequence[ConnectionTypeType],  # (1)
     ParticipantToken: str,
+    Type: NotRequired[Sequence[ConnectionTypeType]],  # (1)
     ConnectParticipant: NotRequired[bool],
 ```
 
@@ -178,6 +177,24 @@ class StartPositionTypeDef(TypedDict):
     MostRecent: NotRequired[int],
 ```
 
+## ReceiptTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.type_defs import ReceiptTypeDef
+
+def get_value() -> ReceiptTypeDef:
+    return {
+        "DeliveredTimestamp": ...,
+    }
+```
+
+```python title="Definition"
+class ReceiptTypeDef(TypedDict):
+    DeliveredTimestamp: NotRequired[str],
+    ReadTimestamp: NotRequired[str],
+    RecipientParticipantId: NotRequired[str],
+```
+
 ## SendEventRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -261,33 +278,6 @@ class UploadMetadataTypeDef(TypedDict):
     HeadersToInclude: NotRequired[Dict[str, str]],
 ```
 
-## ItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connectparticipant.type_defs import ItemTypeDef
-
-def get_value() -> ItemTypeDef:
-    return {
-        "AbsoluteTime": ...,
-    }
-```
-
-```python title="Definition"
-class ItemTypeDef(TypedDict):
-    AbsoluteTime: NotRequired[str],
-    Content: NotRequired[str],
-    ContentType: NotRequired[str],
-    Id: NotRequired[str],
-    Type: NotRequired[ChatItemTypeType],  # (1)
-    ParticipantId: NotRequired[str],
-    DisplayName: NotRequired[str],
-    ParticipantRole: NotRequired[ParticipantRoleType],  # (2)
-    Attachments: NotRequired[List[AttachmentItemTypeDef]],  # (3)
-```
-
-1. See [:material-code-brackets: ChatItemTypeType](./literals.md#chatitemtypetype) 
-2. See [:material-code-brackets: ParticipantRoleType](./literals.md#participantroletype) 
-3. See [:material-code-braces: AttachmentItemTypeDef](./type_defs.md#attachmentitemtypedef) 
 ## GetAttachmentResponseTypeDef
 
 ```python title="Usage Example"
@@ -399,6 +389,24 @@ class GetTranscriptRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: ScanDirectionType](./literals.md#scandirectiontype) 
 2. See [:material-code-brackets: SortKeyType](./literals.md#sortkeytype) 
 3. See [:material-code-braces: StartPositionTypeDef](./type_defs.md#startpositiontypedef) 
+## MessageMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.type_defs import MessageMetadataTypeDef
+
+def get_value() -> MessageMetadataTypeDef:
+    return {
+        "MessageId": ...,
+    }
+```
+
+```python title="Definition"
+class MessageMetadataTypeDef(TypedDict):
+    MessageId: NotRequired[str],
+    Receipts: NotRequired[List[ReceiptTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ReceiptTypeDef](./type_defs.md#receipttypedef) 
 ## StartAttachmentUploadResponseTypeDef
 
 ```python title="Usage Example"
@@ -421,6 +429,35 @@ class StartAttachmentUploadResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectparticipant.type_defs import ItemTypeDef
+
+def get_value() -> ItemTypeDef:
+    return {
+        "AbsoluteTime": ...,
+    }
+```
+
+```python title="Definition"
+class ItemTypeDef(TypedDict):
+    AbsoluteTime: NotRequired[str],
+    Content: NotRequired[str],
+    ContentType: NotRequired[str],
+    Id: NotRequired[str],
+    Type: NotRequired[ChatItemTypeType],  # (1)
+    ParticipantId: NotRequired[str],
+    DisplayName: NotRequired[str],
+    ParticipantRole: NotRequired[ParticipantRoleType],  # (2)
+    Attachments: NotRequired[List[AttachmentItemTypeDef]],  # (3)
+    MessageMetadata: NotRequired[MessageMetadataTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ChatItemTypeType](./literals.md#chatitemtypetype) 
+2. See [:material-code-brackets: ParticipantRoleType](./literals.md#participantroletype) 
+3. See [:material-code-braces: AttachmentItemTypeDef](./type_defs.md#attachmentitemtypedef) 
+4. See [:material-code-braces: MessageMetadataTypeDef](./type_defs.md#messagemetadatatypedef) 
 ## GetTranscriptResponseTypeDef
 
 ```python title="Usage Example"

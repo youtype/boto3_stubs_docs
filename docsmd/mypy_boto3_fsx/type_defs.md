@@ -3194,18 +3194,20 @@ class StorageVirtualMachineTypeDef(TypedDict):
     Name: NotRequired[str],
     ResourceARN: NotRequired[str],
     StorageVirtualMachineId: NotRequired[str],
+    Subtype: NotRequired[StorageVirtualMachineSubtypeType],  # (4)
     UUID: NotRequired[str],
-    Tags: NotRequired[List[TagTypeDef]],  # (4)
-    LifecycleTransitionReason: NotRequired[LifecycleTransitionReasonTypeDef],  # (5)
-    RootVolumeSecurityStyle: NotRequired[StorageVirtualMachineRootVolumeSecurityStyleType],  # (6)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    LifecycleTransitionReason: NotRequired[LifecycleTransitionReasonTypeDef],  # (6)
+    RootVolumeSecurityStyle: NotRequired[StorageVirtualMachineRootVolumeSecurityStyleType],  # (7)
 ```
 
 1. See [:material-code-braces: SvmActiveDirectoryConfigurationTypeDef](./type_defs.md#svmactivedirectoryconfigurationtypedef) 
 2. See [:material-code-braces: SvmEndpointsTypeDef](./type_defs.md#svmendpointstypedef) 
 3. See [:material-code-brackets: StorageVirtualMachineLifecycleType](./literals.md#storagevirtualmachinelifecycletype) 
-4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-5. See [:material-code-braces: LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef) 
-6. See [:material-code-brackets: StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype) 
+4. See [:material-code-brackets: StorageVirtualMachineSubtypeType](./literals.md#storagevirtualmachinesubtypetype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef) 
+7. See [:material-code-brackets: StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype) 
 ## CreateDataRepositoryAssociationResponseTypeDef
 
 ```python title="Usage Example"

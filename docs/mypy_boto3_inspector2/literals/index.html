@@ -41176,21 +41176,23 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-inspe
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_inspector2.literals</span> <span class="kn">import</span> <span class="n">RuntimeType</span>
 <a id="__codelineno-106-2" name="__codelineno-106-2" href="#__codelineno-106-2"></a>
 <a id="__codelineno-106-3" name="__codelineno-106-3" href="#__codelineno-106-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RuntimeType</span><span class="p">:</span>
-<a id="__codelineno-106-4" name="__codelineno-106-4" href="#__codelineno-106-4"></a>    <span class="k">return</span> <span class="s2">&quot;JAVA_11&quot;</span>
+<a id="__codelineno-106-4" name="__codelineno-106-4" href="#__codelineno-106-4"></a>    <span class="k">return</span> <span class="s2">&quot;GO_1_X&quot;</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a><span class="n">RuntimeType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-107-2" name="__codelineno-107-2" href="#__codelineno-107-2"></a>    <span class="s2">&quot;JAVA_11&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-3" name="__codelineno-107-3" href="#__codelineno-107-3"></a>    <span class="s2">&quot;JAVA_8&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-4" name="__codelineno-107-4" href="#__codelineno-107-4"></a>    <span class="s2">&quot;JAVA_8_AL2&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-5" name="__codelineno-107-5" href="#__codelineno-107-5"></a>    <span class="s2">&quot;NODEJS&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-6" name="__codelineno-107-6" href="#__codelineno-107-6"></a>    <span class="s2">&quot;NODEJS_12_X&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-7" name="__codelineno-107-7" href="#__codelineno-107-7"></a>    <span class="s2">&quot;NODEJS_14_X&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-8" name="__codelineno-107-8" href="#__codelineno-107-8"></a>    <span class="s2">&quot;NODEJS_16_X&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-9" name="__codelineno-107-9" href="#__codelineno-107-9"></a>    <span class="s2">&quot;PYTHON_3_7&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-10" name="__codelineno-107-10" href="#__codelineno-107-10"></a>    <span class="s2">&quot;PYTHON_3_8&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-11" name="__codelineno-107-11" href="#__codelineno-107-11"></a>    <span class="s2">&quot;PYTHON_3_9&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-12" name="__codelineno-107-12" href="#__codelineno-107-12"></a>    <span class="s2">&quot;UNSUPPORTED&quot;</span><span class="p">,</span>
-<a id="__codelineno-107-13" name="__codelineno-107-13" href="#__codelineno-107-13"></a><span class="p">]</span>
+<a id="__codelineno-107-2" name="__codelineno-107-2" href="#__codelineno-107-2"></a>    <span class="s2">&quot;GO_1_X&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-3" name="__codelineno-107-3" href="#__codelineno-107-3"></a>    <span class="s2">&quot;JAVA_11&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-4" name="__codelineno-107-4" href="#__codelineno-107-4"></a>    <span class="s2">&quot;JAVA_8&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-5" name="__codelineno-107-5" href="#__codelineno-107-5"></a>    <span class="s2">&quot;JAVA_8_AL2&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-6" name="__codelineno-107-6" href="#__codelineno-107-6"></a>    <span class="s2">&quot;NODEJS&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-7" name="__codelineno-107-7" href="#__codelineno-107-7"></a>    <span class="s2">&quot;NODEJS_12_X&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-8" name="__codelineno-107-8" href="#__codelineno-107-8"></a>    <span class="s2">&quot;NODEJS_14_X&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-9" name="__codelineno-107-9" href="#__codelineno-107-9"></a>    <span class="s2">&quot;NODEJS_16_X&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-10" name="__codelineno-107-10" href="#__codelineno-107-10"></a>    <span class="s2">&quot;NODEJS_18_X&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-11" name="__codelineno-107-11" href="#__codelineno-107-11"></a>    <span class="s2">&quot;PYTHON_3_7&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-12" name="__codelineno-107-12" href="#__codelineno-107-12"></a>    <span class="s2">&quot;PYTHON_3_8&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-13" name="__codelineno-107-13" href="#__codelineno-107-13"></a>    <span class="s2">&quot;PYTHON_3_9&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-14" name="__codelineno-107-14" href="#__codelineno-107-14"></a>    <span class="s2">&quot;UNSUPPORTED&quot;</span><span class="p">,</span>
+<a id="__codelineno-107-15" name="__codelineno-107-15" href="#__codelineno-107-15"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="scanstatuscodetype">ScanStatusCodeType</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_inspector2.literals</span> <span class="kn">import</span> <span class="n">ScanStatusCodeType</span>

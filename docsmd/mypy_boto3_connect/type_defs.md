@@ -73,6 +73,7 @@ def get_value() -> AgentStatusReferenceTypeDef:
 class AgentStatusReferenceTypeDef(TypedDict):
     StatusStartTimestamp: NotRequired[datetime],
     StatusArn: NotRequired[str],
+    StatusName: NotRequired[str],
 ```
 
 ## AgentStatusSummaryTypeDef
@@ -947,6 +948,25 @@ class CurrentMetricTypeDef(TypedDict):
 
 1. See [:material-code-brackets: CurrentMetricNameType](./literals.md#currentmetricnametype) 
 2. See [:material-code-brackets: UnitType](./literals.md#unittype) 
+## CurrentMetricSortCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import CurrentMetricSortCriteriaTypeDef
+
+def get_value() -> CurrentMetricSortCriteriaTypeDef:
+    return {
+        "SortByMetric": ...,
+    }
+```
+
+```python title="Definition"
+class CurrentMetricSortCriteriaTypeDef(TypedDict):
+    SortByMetric: NotRequired[CurrentMetricNameType],  # (1)
+    SortOrder: NotRequired[SortOrderType],  # (2)
+```
+
+1. See [:material-code-brackets: CurrentMetricNameType](./literals.md#currentmetricnametype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## DateReferenceTypeDef
 
 ```python title="Usage Example"
@@ -1652,6 +1672,23 @@ class VocabularyTypeDef(TypedDict):
 
 1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+## RoutingProfileReferenceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import RoutingProfileReferenceTypeDef
+
+def get_value() -> RoutingProfileReferenceTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class RoutingProfileReferenceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
+
 ## DisassociateApprovedOriginRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1909,6 +1946,7 @@ def get_value() -> FiltersTypeDef:
 class FiltersTypeDef(TypedDict):
     Queues: NotRequired[Sequence[str]],
     Channels: NotRequired[Sequence[ChannelType]],  # (1)
+    RoutingProfiles: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
@@ -3434,23 +3472,6 @@ class ResumeContactRecordingRequestRequestTypeDef(TypedDict):
     InitialContactId: str,
 ```
 
-## RoutingProfileReferenceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import RoutingProfileReferenceTypeDef
-
-def get_value() -> RoutingProfileReferenceTypeDef:
-    return {
-        "Id": ...,
-    }
-```
-
-```python title="Definition"
-class RoutingProfileReferenceTypeDef(TypedDict):
-    Id: NotRequired[str],
-    Arn: NotRequired[str],
-```
-
 ## SearchAvailablePhoneNumbersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4245,25 +4266,6 @@ class AgentContactReferenceTypeDef(TypedDict):
 2. See [:material-code-brackets: ContactInitiationMethodType](./literals.md#contactinitiationmethodtype) 
 3. See [:material-code-brackets: ContactStateType](./literals.md#contactstatetype) 
 4. See [:material-code-braces: QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef) 
-## DimensionsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import DimensionsTypeDef
-
-def get_value() -> DimensionsTypeDef:
-    return {
-        "Queue": ...,
-    }
-```
-
-```python title="Definition"
-class DimensionsTypeDef(TypedDict):
-    Queue: NotRequired[QueueReferenceTypeDef],  # (1)
-    Channel: NotRequired[ChannelType],  # (2)
-```
-
-1. See [:material-code-braces: QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef) 
-2. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## StartOutboundVoiceContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5289,6 +5291,9 @@ def get_value() -> UserDataFiltersTypeDef:
 class UserDataFiltersTypeDef(TypedDict):
     Queues: NotRequired[Sequence[str]],
     ContactFilter: NotRequired[ContactFilterTypeDef],  # (1)
+    RoutingProfiles: NotRequired[Sequence[str]],
+    Agents: NotRequired[Sequence[str]],
+    UserHierarchyGroups: NotRequired[Sequence[str]],
 ```
 
 1. See [:material-code-braces: ContactFilterTypeDef](./type_defs.md#contactfiltertypedef) 
@@ -5776,6 +5781,27 @@ class DescribeVocabularyResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: VocabularyTypeDef](./type_defs.md#vocabularytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DimensionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import DimensionsTypeDef
+
+def get_value() -> DimensionsTypeDef:
+    return {
+        "Queue": ...,
+    }
+```
+
+```python title="Definition"
+class DimensionsTypeDef(TypedDict):
+    Queue: NotRequired[QueueReferenceTypeDef],  # (1)
+    Channel: NotRequired[ChannelType],  # (2)
+    RoutingProfile: NotRequired[RoutingProfileReferenceTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef) 
+2. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
+3. See [:material-code-braces: RoutingProfileReferenceTypeDef](./type_defs.md#routingprofilereferencetypedef) 
 ## DisassociateRoutingProfileQueuesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5897,11 +5923,13 @@ class GetCurrentMetricDataRequestRequestTypeDef(TypedDict):
     Groupings: NotRequired[Sequence[GroupingType]],  # (3)
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
+    SortCriteria: NotRequired[Sequence[CurrentMetricSortCriteriaTypeDef]],  # (4)
 ```
 
 1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
 2. See [:material-code-braces: CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef) 
 3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
+4. See [:material-code-braces: CurrentMetricSortCriteriaTypeDef](./type_defs.md#currentmetricsortcriteriatypedef) 
 ## ListAgentStatusRequestListAgentStatusesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -8056,6 +8084,7 @@ class UserDataTypeDef(TypedDict):
     MaxSlotsByChannel: NotRequired[Dict[ChannelType, int]],  # (5)
     ActiveSlotsByChannel: NotRequired[Dict[ChannelType, int]],  # (5)
     Contacts: NotRequired[List[AgentContactReferenceTypeDef]],  # (8)
+    NextStatus: NotRequired[str],
 ```
 
 1. See [:material-code-braces: UserReferenceTypeDef](./type_defs.md#userreferencetypedef) 
@@ -8673,6 +8702,7 @@ def get_value() -> GetCurrentMetricDataResponseTypeDef:
         "NextToken": ...,
         "MetricResults": ...,
         "DataSnapshotTime": ...,
+        "ApproximateTotalCount": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -8682,6 +8712,7 @@ class GetCurrentMetricDataResponseTypeDef(TypedDict):
     NextToken: str,
     MetricResults: List[CurrentMetricResultTypeDef],  # (1)
     DataSnapshotTime: datetime,
+    ApproximateTotalCount: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -8784,6 +8815,7 @@ def get_value() -> GetCurrentUserDataResponseTypeDef:
     return {
         "NextToken": ...,
         "UserDataList": ...,
+        "ApproximateTotalCount": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -8792,6 +8824,7 @@ def get_value() -> GetCurrentUserDataResponseTypeDef:
 class GetCurrentUserDataResponseTypeDef(TypedDict):
     NextToken: str,
     UserDataList: List[UserDataTypeDef],  # (1)
+    ApproximateTotalCount: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

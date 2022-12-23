@@ -32,6 +32,7 @@ client = boto3.client("detective")
 try:
     do_something(client)
 except (
+    client.AccessDeniedException,
     client.ClientError,
     client.ConflictException,
     client.InternalServerException,
@@ -46,7 +47,7 @@ except (
 ```python title="Type checking example"
 from mypy_boto3_detective.client import Exceptions
 
-def handle_error(exc: Exceptions.ClientError) -> None:
+def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
