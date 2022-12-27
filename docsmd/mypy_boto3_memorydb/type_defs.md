@@ -335,6 +335,24 @@ class DeleteUserRequestRequestTypeDef(TypedDict):
     UserName: str,
 ```
 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
 ## DescribeACLsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -510,6 +528,49 @@ class ParameterTypeDef(TypedDict):
     MinimumEngineVersion: NotRequired[str],
 ```
 
+## DescribeReservedNodesOfferingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeReservedNodesOfferingsRequestRequestTypeDef
+
+def get_value() -> DescribeReservedNodesOfferingsRequestRequestTypeDef:
+    return {
+        "ReservedNodesOfferingId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodesOfferingsRequestRequestTypeDef(TypedDict):
+    ReservedNodesOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    Duration: NotRequired[str],
+    OfferingType: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## DescribeReservedNodesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeReservedNodesRequestRequestTypeDef
+
+def get_value() -> DescribeReservedNodesRequestRequestTypeDef:
+    return {
+        "ReservationId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodesRequestRequestTypeDef(TypedDict):
+    ReservationId: NotRequired[str],
+    ReservedNodesOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    Duration: NotRequired[str],
+    OfferingType: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
 ## DescribeServiceUpdatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -678,6 +739,23 @@ def get_value() -> ParameterNameValueTypeDef:
 class ParameterNameValueTypeDef(TypedDict):
     ParameterName: NotRequired[str],
     ParameterValue: NotRequired[str],
+```
+
+## RecurringChargeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import RecurringChargeTypeDef
+
+def get_value() -> RecurringChargeTypeDef:
+    return {
+        "RecurringChargeAmount": ...,
+    }
+```
+
+```python title="Definition"
+class RecurringChargeTypeDef(TypedDict):
+    RecurringChargeAmount: NotRequired[float],
+    RecurringChargeFrequency: NotRequired[str],
 ```
 
 ## ReplicaConfigurationRequestTypeDef
@@ -1147,6 +1225,26 @@ class ListTagsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PurchaseReservedNodesOfferingRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import PurchaseReservedNodesOfferingRequestRequestTypeDef
+
+def get_value() -> PurchaseReservedNodesOfferingRequestRequestTypeDef:
+    return {
+        "ReservedNodesOfferingId": ...,
+    }
+```
+
+```python title="Definition"
+class PurchaseReservedNodesOfferingRequestRequestTypeDef(TypedDict):
+    ReservedNodesOfferingId: str,
+    ReservationId: NotRequired[str],
+    NodeCount: NotRequired[int],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1308,6 +1406,225 @@ class UpdateParameterGroupResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeACLsRequestDescribeACLsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeACLsRequestDescribeACLsPaginateTypeDef
+
+def get_value() -> DescribeACLsRequestDescribeACLsPaginateTypeDef:
+    return {
+        "ACLName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeACLsRequestDescribeACLsPaginateTypeDef(TypedDict):
+    ACLName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeClustersRequestDescribeClustersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeClustersRequestDescribeClustersPaginateTypeDef
+
+def get_value() -> DescribeClustersRequestDescribeClustersPaginateTypeDef:
+    return {
+        "ClusterName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClustersRequestDescribeClustersPaginateTypeDef(TypedDict):
+    ClusterName: NotRequired[str],
+    ShowShardDetails: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeEngineVersionsRequestDescribeEngineVersionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeEngineVersionsRequestDescribeEngineVersionsPaginateTypeDef
+
+def get_value() -> DescribeEngineVersionsRequestDescribeEngineVersionsPaginateTypeDef:
+    return {
+        "EngineVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEngineVersionsRequestDescribeEngineVersionsPaginateTypeDef(TypedDict):
+    EngineVersion: NotRequired[str],
+    ParameterGroupFamily: NotRequired[str],
+    DefaultOnly: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeEventsRequestDescribeEventsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeEventsRequestDescribeEventsPaginateTypeDef
+
+def get_value() -> DescribeEventsRequestDescribeEventsPaginateTypeDef:
+    return {
+        "SourceName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsRequestDescribeEventsPaginateTypeDef(TypedDict):
+    SourceName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef
+
+def get_value() -> DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeParametersRequestDescribeParametersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeParametersRequestDescribeParametersPaginateTypeDef
+
+def get_value() -> DescribeParametersRequestDescribeParametersPaginateTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeParametersRequestDescribeParametersPaginateTypeDef(TypedDict):
+    ParameterGroupName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeReservedNodesOfferingsRequestDescribeReservedNodesOfferingsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeReservedNodesOfferingsRequestDescribeReservedNodesOfferingsPaginateTypeDef
+
+def get_value() -> DescribeReservedNodesOfferingsRequestDescribeReservedNodesOfferingsPaginateTypeDef:
+    return {
+        "ReservedNodesOfferingId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodesOfferingsRequestDescribeReservedNodesOfferingsPaginateTypeDef(TypedDict):
+    ReservedNodesOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    Duration: NotRequired[str],
+    OfferingType: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeReservedNodesRequestDescribeReservedNodesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeReservedNodesRequestDescribeReservedNodesPaginateTypeDef
+
+def get_value() -> DescribeReservedNodesRequestDescribeReservedNodesPaginateTypeDef:
+    return {
+        "ReservationId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodesRequestDescribeReservedNodesPaginateTypeDef(TypedDict):
+    ReservationId: NotRequired[str],
+    ReservedNodesOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    Duration: NotRequired[str],
+    OfferingType: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeServiceUpdatesRequestDescribeServiceUpdatesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeServiceUpdatesRequestDescribeServiceUpdatesPaginateTypeDef
+
+def get_value() -> DescribeServiceUpdatesRequestDescribeServiceUpdatesPaginateTypeDef:
+    return {
+        "ServiceUpdateName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeServiceUpdatesRequestDescribeServiceUpdatesPaginateTypeDef(TypedDict):
+    ServiceUpdateName: NotRequired[str],
+    ClusterNames: NotRequired[Sequence[str]],
+    Status: NotRequired[Sequence[ServiceUpdateStatusType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ServiceUpdateStatusType](./literals.md#serviceupdatestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef
+
+def get_value() -> DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef:
+    return {
+        "ClusterName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef(TypedDict):
+    ClusterName: NotRequired[str],
+    SnapshotName: NotRequired[str],
+    Source: NotRequired[str],
+    ShowDetail: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef
+
+def get_value() -> DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef:
+    return {
+        "SubnetGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef(TypedDict):
+    SubnetGroupName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEngineVersionsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1396,6 +1713,26 @@ class DescribeServiceUpdatesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ServiceUpdateTypeDef](./type_defs.md#serviceupdatetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeUsersRequestDescribeUsersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeUsersRequestDescribeUsersPaginateTypeDef
+
+def get_value() -> DescribeUsersRequestDescribeUsersPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUsersRequestDescribeUsersPaginateTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeUsersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1435,6 +1772,55 @@ class UpdateParameterGroupRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef) 
+## ReservedNodeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import ReservedNodeTypeDef
+
+def get_value() -> ReservedNodeTypeDef:
+    return {
+        "ReservationId": ...,
+    }
+```
+
+```python title="Definition"
+class ReservedNodeTypeDef(TypedDict):
+    ReservationId: NotRequired[str],
+    ReservedNodesOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    Duration: NotRequired[int],
+    FixedPrice: NotRequired[float],
+    NodeCount: NotRequired[int],
+    OfferingType: NotRequired[str],
+    State: NotRequired[str],
+    RecurringCharges: NotRequired[List[RecurringChargeTypeDef]],  # (1)
+    ARN: NotRequired[str],
+```
+
+1. See [:material-code-braces: RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef) 
+## ReservedNodesOfferingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import ReservedNodesOfferingTypeDef
+
+def get_value() -> ReservedNodesOfferingTypeDef:
+    return {
+        "ReservedNodesOfferingId": ...,
+    }
+```
+
+```python title="Definition"
+class ReservedNodesOfferingTypeDef(TypedDict):
+    ReservedNodesOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    Duration: NotRequired[int],
+    FixedPrice: NotRequired[float],
+    OfferingType: NotRequired[str],
+    RecurringCharges: NotRequired[List[RecurringChargeTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef) 
 ## ReshardingStatusTypeDef
 
 ```python title="Usage Example"
@@ -1709,6 +2095,70 @@ class ShardTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: NodeTypeDef](./type_defs.md#nodetypedef) 
+## DescribeReservedNodesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeReservedNodesResponseTypeDef
+
+def get_value() -> DescribeReservedNodesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ReservedNodes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodesResponseTypeDef(TypedDict):
+    NextToken: str,
+    ReservedNodes: List[ReservedNodeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ReservedNodeTypeDef](./type_defs.md#reservednodetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PurchaseReservedNodesOfferingResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import PurchaseReservedNodesOfferingResponseTypeDef
+
+def get_value() -> PurchaseReservedNodesOfferingResponseTypeDef:
+    return {
+        "ReservedNode": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PurchaseReservedNodesOfferingResponseTypeDef(TypedDict):
+    ReservedNode: ReservedNodeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ReservedNodeTypeDef](./type_defs.md#reservednodetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeReservedNodesOfferingsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.type_defs import DescribeReservedNodesOfferingsResponseTypeDef
+
+def get_value() -> DescribeReservedNodesOfferingsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ReservedNodesOfferings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodesOfferingsResponseTypeDef(TypedDict):
+    NextToken: str,
+    ReservedNodesOfferings: List[ReservedNodesOfferingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ReservedNodesOfferingTypeDef](./type_defs.md#reservednodesofferingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterPendingUpdatesTypeDef
 
 ```python title="Usage Example"

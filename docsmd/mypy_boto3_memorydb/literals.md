@@ -52,6 +52,174 @@ DataTieringStatusType = Literal[
     "true",
 ]
 ```
+## DescribeACLsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeACLsPaginatorName
+
+def get_value() -> DescribeACLsPaginatorName:
+    return "describe_acls"
+```
+
+```python title="Definition"
+DescribeACLsPaginatorName = Literal[
+    "describe_acls",
+]
+```
+## DescribeClustersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeClustersPaginatorName
+
+def get_value() -> DescribeClustersPaginatorName:
+    return "describe_clusters"
+```
+
+```python title="Definition"
+DescribeClustersPaginatorName = Literal[
+    "describe_clusters",
+]
+```
+## DescribeEngineVersionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeEngineVersionsPaginatorName
+
+def get_value() -> DescribeEngineVersionsPaginatorName:
+    return "describe_engine_versions"
+```
+
+```python title="Definition"
+DescribeEngineVersionsPaginatorName = Literal[
+    "describe_engine_versions",
+]
+```
+## DescribeEventsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeEventsPaginatorName
+
+def get_value() -> DescribeEventsPaginatorName:
+    return "describe_events"
+```
+
+```python title="Definition"
+DescribeEventsPaginatorName = Literal[
+    "describe_events",
+]
+```
+## DescribeParameterGroupsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeParameterGroupsPaginatorName
+
+def get_value() -> DescribeParameterGroupsPaginatorName:
+    return "describe_parameter_groups"
+```
+
+```python title="Definition"
+DescribeParameterGroupsPaginatorName = Literal[
+    "describe_parameter_groups",
+]
+```
+## DescribeParametersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeParametersPaginatorName
+
+def get_value() -> DescribeParametersPaginatorName:
+    return "describe_parameters"
+```
+
+```python title="Definition"
+DescribeParametersPaginatorName = Literal[
+    "describe_parameters",
+]
+```
+## DescribeReservedNodesOfferingsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeReservedNodesOfferingsPaginatorName
+
+def get_value() -> DescribeReservedNodesOfferingsPaginatorName:
+    return "describe_reserved_nodes_offerings"
+```
+
+```python title="Definition"
+DescribeReservedNodesOfferingsPaginatorName = Literal[
+    "describe_reserved_nodes_offerings",
+]
+```
+## DescribeReservedNodesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeReservedNodesPaginatorName
+
+def get_value() -> DescribeReservedNodesPaginatorName:
+    return "describe_reserved_nodes"
+```
+
+```python title="Definition"
+DescribeReservedNodesPaginatorName = Literal[
+    "describe_reserved_nodes",
+]
+```
+## DescribeServiceUpdatesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeServiceUpdatesPaginatorName
+
+def get_value() -> DescribeServiceUpdatesPaginatorName:
+    return "describe_service_updates"
+```
+
+```python title="Definition"
+DescribeServiceUpdatesPaginatorName = Literal[
+    "describe_service_updates",
+]
+```
+## DescribeSnapshotsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeSnapshotsPaginatorName
+
+def get_value() -> DescribeSnapshotsPaginatorName:
+    return "describe_snapshots"
+```
+
+```python title="Definition"
+DescribeSnapshotsPaginatorName = Literal[
+    "describe_snapshots",
+]
+```
+## DescribeSubnetGroupsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeSubnetGroupsPaginatorName
+
+def get_value() -> DescribeSubnetGroupsPaginatorName:
+    return "describe_subnet_groups"
+```
+
+```python title="Definition"
+DescribeSubnetGroupsPaginatorName = Literal[
+    "describe_subnet_groups",
+]
+```
+## DescribeUsersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import DescribeUsersPaginatorName
+
+def get_value() -> DescribeUsersPaginatorName:
+    return "describe_users"
+```
+
+```python title="Definition"
+DescribeUsersPaginatorName = Literal[
+    "describe_users",
+]
+```
 ## InputAuthenticationTypeType
 
 ```python title="Usage Example"
@@ -500,6 +668,31 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_memorydb.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_acls"
+```
+
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_acls",
+    "describe_clusters",
+    "describe_engine_versions",
+    "describe_events",
+    "describe_parameter_groups",
+    "describe_parameters",
+    "describe_reserved_nodes",
+    "describe_reserved_nodes_offerings",
+    "describe_service_updates",
+    "describe_snapshots",
+    "describe_subnet_groups",
+    "describe_users",
 ]
 ```
 ## RegionName

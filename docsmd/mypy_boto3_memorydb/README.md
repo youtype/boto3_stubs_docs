@@ -63,6 +63,34 @@ def get_client() -> MemoryDBClient:
 ```
 
 
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("memorydb").get_paginator("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_memorydb.paginator import DescribeACLsPaginator
+
+def get_describe_acls_paginator() -> DescribeACLsPaginator:
+    return Session().client("memorydb").get_paginator("describe_acls"))
+```
+
+- [DescribeACLsPaginator](./paginators.md#describeaclspaginator)
+- [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+- [DescribeEngineVersionsPaginator](./paginators.md#describeengineversionspaginator)
+- [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- [DescribeParameterGroupsPaginator](./paginators.md#describeparametergroupspaginator)
+- [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
+- [DescribeReservedNodesPaginator](./paginators.md#describereservednodespaginator)
+- [DescribeReservedNodesOfferingsPaginator](./paginators.md#describereservednodesofferingspaginator)
+- [DescribeServiceUpdatesPaginator](./paginators.md#describeserviceupdatespaginator)
+- [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
+- [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
+- [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+
+
 
 
 
@@ -84,6 +112,18 @@ def get_value() -> AZStatusType:
 - [AZStatusType](./literals.md#azstatustype)
 - [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - [DataTieringStatusType](./literals.md#datatieringstatustype)
+- [DescribeACLsPaginatorName](./literals.md#describeaclspaginatorname)
+- [DescribeClustersPaginatorName](./literals.md#describeclusterspaginatorname)
+- [DescribeEngineVersionsPaginatorName](./literals.md#describeengineversionspaginatorname)
+- [DescribeEventsPaginatorName](./literals.md#describeeventspaginatorname)
+- [DescribeParameterGroupsPaginatorName](./literals.md#describeparametergroupspaginatorname)
+- [DescribeParametersPaginatorName](./literals.md#describeparameterspaginatorname)
+- [DescribeReservedNodesOfferingsPaginatorName](./literals.md#describereservednodesofferingspaginatorname)
+- [DescribeReservedNodesPaginatorName](./literals.md#describereservednodespaginatorname)
+- [DescribeServiceUpdatesPaginatorName](./literals.md#describeserviceupdatespaginatorname)
+- [DescribeSnapshotsPaginatorName](./literals.md#describesnapshotspaginatorname)
+- [DescribeSubnetGroupsPaginatorName](./literals.md#describesubnetgroupspaginatorname)
+- [DescribeUsersPaginatorName](./literals.md#describeuserspaginatorname)
 - [InputAuthenticationTypeType](./literals.md#inputauthenticationtypetype)
 - [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
 - [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype)
@@ -91,6 +131,7 @@ def get_value() -> AZStatusType:
 - [MemoryDBServiceName](./literals.md#memorydbservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
 - [RegionName](./literals.md#regionname)
 
 
@@ -128,6 +169,7 @@ def get_value() -> ACLPendingChangesTypeDef:
 - [DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef)
 - [DeleteSubnetGroupRequestRequestTypeDef](./type_defs.md#deletesubnetgrouprequestrequesttypedef)
 - [DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [DescribeACLsRequestRequestTypeDef](./type_defs.md#describeaclsrequestrequesttypedef)
 - [DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef)
 - [DescribeEngineVersionsRequestRequestTypeDef](./type_defs.md#describeengineversionsrequestrequesttypedef)
@@ -137,6 +179,8 @@ def get_value() -> ACLPendingChangesTypeDef:
 - [DescribeParameterGroupsRequestRequestTypeDef](./type_defs.md#describeparametergroupsrequestrequesttypedef)
 - [DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef)
 - [ParameterTypeDef](./type_defs.md#parametertypedef)
+- [DescribeReservedNodesOfferingsRequestRequestTypeDef](./type_defs.md#describereservednodesofferingsrequestrequesttypedef)
+- [DescribeReservedNodesRequestRequestTypeDef](./type_defs.md#describereservednodesrequestrequesttypedef)
 - [DescribeServiceUpdatesRequestRequestTypeDef](./type_defs.md#describeserviceupdatesrequestrequesttypedef)
 - [ServiceUpdateTypeDef](./type_defs.md#serviceupdatetypedef)
 - [DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef)
@@ -146,6 +190,7 @@ def get_value() -> ACLPendingChangesTypeDef:
 - [ListAllowedNodeTypeUpdatesRequestRequestTypeDef](./type_defs.md#listallowednodetypeupdatesrequestrequesttypedef)
 - [ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef)
 - [ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)
+- [RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)
 - [ReplicaConfigurationRequestTypeDef](./type_defs.md#replicaconfigurationrequesttypedef)
 - [ResetParameterGroupRequestRequestTypeDef](./type_defs.md#resetparametergrouprequestrequesttypedef)
 - [SlotMigrationTypeDef](./type_defs.md#slotmigrationtypedef)
@@ -169,6 +214,7 @@ def get_value() -> ACLPendingChangesTypeDef:
 - [CreateSubnetGroupRequestRequestTypeDef](./type_defs.md#createsubnetgrouprequestrequesttypedef)
 - [CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef)
 - [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)
+- [PurchaseReservedNodesOfferingRequestRequestTypeDef](./type_defs.md#purchasereservednodesofferingrequestrequesttypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef)
 - [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef)
@@ -177,12 +223,26 @@ def get_value() -> ACLPendingChangesTypeDef:
 - [DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef)
 - [ResetParameterGroupResponseTypeDef](./type_defs.md#resetparametergroupresponsetypedef)
 - [UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef)
+- [DescribeACLsRequestDescribeACLsPaginateTypeDef](./type_defs.md#describeaclsrequestdescribeaclspaginatetypedef)
+- [DescribeClustersRequestDescribeClustersPaginateTypeDef](./type_defs.md#describeclustersrequestdescribeclusterspaginatetypedef)
+- [DescribeEngineVersionsRequestDescribeEngineVersionsPaginateTypeDef](./type_defs.md#describeengineversionsrequestdescribeengineversionspaginatetypedef)
+- [DescribeEventsRequestDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsrequestdescribeeventspaginatetypedef)
+- [DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef](./type_defs.md#describeparametergroupsrequestdescribeparametergroupspaginatetypedef)
+- [DescribeParametersRequestDescribeParametersPaginateTypeDef](./type_defs.md#describeparametersrequestdescribeparameterspaginatetypedef)
+- [DescribeReservedNodesOfferingsRequestDescribeReservedNodesOfferingsPaginateTypeDef](./type_defs.md#describereservednodesofferingsrequestdescribereservednodesofferingspaginatetypedef)
+- [DescribeReservedNodesRequestDescribeReservedNodesPaginateTypeDef](./type_defs.md#describereservednodesrequestdescribereservednodespaginatetypedef)
+- [DescribeServiceUpdatesRequestDescribeServiceUpdatesPaginateTypeDef](./type_defs.md#describeserviceupdatesrequestdescribeserviceupdatespaginatetypedef)
+- [DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef](./type_defs.md#describesnapshotsrequestdescribesnapshotspaginatetypedef)
+- [DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef](./type_defs.md#describesubnetgroupsrequestdescribesubnetgroupspaginatetypedef)
 - [DescribeEngineVersionsResponseTypeDef](./type_defs.md#describeengineversionsresponsetypedef)
 - [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)
 - [DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef)
 - [DescribeServiceUpdatesResponseTypeDef](./type_defs.md#describeserviceupdatesresponsetypedef)
+- [DescribeUsersRequestDescribeUsersPaginateTypeDef](./type_defs.md#describeusersrequestdescribeuserspaginatetypedef)
 - [DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef)
 - [UpdateParameterGroupRequestRequestTypeDef](./type_defs.md#updateparametergrouprequestrequesttypedef)
+- [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)
+- [ReservedNodesOfferingTypeDef](./type_defs.md#reservednodesofferingtypedef)
 - [ReshardingStatusTypeDef](./type_defs.md#reshardingstatustypedef)
 - [UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef)
 - [ShardDetailTypeDef](./type_defs.md#sharddetailtypedef)
@@ -196,6 +256,9 @@ def get_value() -> ACLPendingChangesTypeDef:
 - [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef)
 - [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
 - [ShardTypeDef](./type_defs.md#shardtypedef)
+- [DescribeReservedNodesResponseTypeDef](./type_defs.md#describereservednodesresponsetypedef)
+- [PurchaseReservedNodesOfferingResponseTypeDef](./type_defs.md#purchasereservednodesofferingresponsetypedef)
+- [DescribeReservedNodesOfferingsResponseTypeDef](./type_defs.md#describereservednodesofferingsresponsetypedef)
 - [ClusterPendingUpdatesTypeDef](./type_defs.md#clusterpendingupdatestypedef)
 - [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
 - [CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef)

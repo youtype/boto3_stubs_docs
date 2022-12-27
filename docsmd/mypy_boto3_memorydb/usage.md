@@ -34,6 +34,24 @@ type checking and code completion should work out of the box.
 
 
 
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("memorydb")  # (1)
+
+    paginator = client.get_paginator("describe_acls")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MemoryDBClient](./client.md)
+    2. paginator: [DescribeACLsPaginator](./paginators.md#describeaclspaginator)
+    3. item: [:material-code-braces: DescribeACLsResponseTypeDef](./type_defs.md#describeaclsresponsetypedef) 
+
 
 
 
@@ -65,6 +83,25 @@ However, these type annotations can be helpful in your functions and methods.
     ```
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_memorydb.client import MemoryDBClient
+    from mypy_boto3_memorydb.paginator import DescribeACLsPaginator
+    from mypy_boto3_memorydb.type_defs import DescribeACLsResponseTypeDef
+
+
+    session = Session()
+    client: MemoryDBClient = session.client("memorydb")
+
+    paginator: DescribeACLsPaginator = client.get_paginator("describe_acls")
+    for item in paginator.paginate(...):
+        item: DescribeACLsResponseTypeDef
+        print(item)
+    ```
 
 
 

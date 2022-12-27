@@ -62,6 +62,10 @@ except (
     client.ParameterGroupAlreadyExistsFault,
     client.ParameterGroupNotFoundFault,
     client.ParameterGroupQuotaExceededFault,
+    client.ReservedNodeAlreadyExistsFault,
+    client.ReservedNodeNotFoundFault,
+    client.ReservedNodeQuotaExceededFault,
+    client.ReservedNodesOfferingNotFoundFault,
     client.ServiceLinkedRoleNotFoundFault,
     client.ServiceUpdateNotFoundFault,
     client.ShardNotFoundFault,
@@ -788,6 +792,76 @@ parent.describe_parameters(**kwargs)
 
 1. See [:material-code-braces: DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef) 
 
+### describe\_reserved\_nodes
+
+Returns information about reserved nodes for this account, or about a specified
+reserved node.
+
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_reserved_nodes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_reserved_nodes)
+
+```python title="Method definition"
+def describe_reserved_nodes(
+    self,
+    *,
+    ReservationId: str = ...,
+    ReservedNodesOfferingId: str = ...,
+    NodeType: str = ...,
+    Duration: str = ...,
+    OfferingType: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeReservedNodesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeReservedNodesResponseTypeDef](./type_defs.md#describereservednodesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedNodesRequestRequestTypeDef = {  # (1)
+    "ReservationId": ...,
+}
+
+parent.describe_reserved_nodes(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedNodesRequestRequestTypeDef](./type_defs.md#describereservednodesrequestrequesttypedef) 
+
+### describe\_reserved\_nodes\_offerings
+
+Lists available reserved node offerings.
+
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_reserved_nodes_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_reserved_nodes_offerings)
+
+```python title="Method definition"
+def describe_reserved_nodes_offerings(
+    self,
+    *,
+    ReservedNodesOfferingId: str = ...,
+    NodeType: str = ...,
+    Duration: str = ...,
+    OfferingType: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeReservedNodesOfferingsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeReservedNodesOfferingsResponseTypeDef](./type_defs.md#describereservednodesofferingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedNodesOfferingsRequestRequestTypeDef = {  # (1)
+    "ReservedNodesOfferingId": ...,
+}
+
+parent.describe_reserved_nodes_offerings(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedNodesOfferingsRequestRequestTypeDef](./type_defs.md#describereservednodesofferingsrequestrequesttypedef) 
+
 ### describe\_service\_updates
 
 Returns details of the service updates See also: [AWS API
@@ -1029,6 +1103,39 @@ parent.list_tags(**kwargs)
 ```
 
 1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
+
+### purchase\_reserved\_nodes\_offering
+
+Allows you to purchase a reserved node offering.
+
+Type annotations and code completion for `#!python boto3.client("memorydb").purchase_reserved_nodes_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.purchase_reserved_nodes_offering)
+
+```python title="Method definition"
+def purchase_reserved_nodes_offering(
+    self,
+    *,
+    ReservedNodesOfferingId: str,
+    ReservationId: str = ...,
+    NodeCount: int = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> PurchaseReservedNodesOfferingResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PurchaseReservedNodesOfferingResponseTypeDef](./type_defs.md#purchasereservednodesofferingresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PurchaseReservedNodesOfferingRequestRequestTypeDef = {  # (1)
+    "ReservedNodesOfferingId": ...,
+}
+
+parent.purchase_reserved_nodes_offering(**kwargs)
+```
+
+1. See [:material-code-braces: PurchaseReservedNodesOfferingRequestRequestTypeDef](./type_defs.md#purchasereservednodesofferingrequestrequesttypedef) 
 
 ### reset\_parameter\_group
 
@@ -1296,6 +1403,24 @@ parent.update_user(**kwargs)
 
 1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
 
+
+
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("memorydb").get_paginator` method with overloads.
+
+- `client.get_paginator("describe_acls")` -> [DescribeACLsPaginator](./paginators.md#describeaclspaginator)
+- `client.get_paginator("describe_clusters")` -> [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+- `client.get_paginator("describe_engine_versions")` -> [DescribeEngineVersionsPaginator](./paginators.md#describeengineversionspaginator)
+- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_parameter_groups")` -> [DescribeParameterGroupsPaginator](./paginators.md#describeparametergroupspaginator)
+- `client.get_paginator("describe_parameters")` -> [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
+- `client.get_paginator("describe_reserved_nodes")` -> [DescribeReservedNodesPaginator](./paginators.md#describereservednodespaginator)
+- `client.get_paginator("describe_reserved_nodes_offerings")` -> [DescribeReservedNodesOfferingsPaginator](./paginators.md#describereservednodesofferingspaginator)
+- `client.get_paginator("describe_service_updates")` -> [DescribeServiceUpdatesPaginator](./paginators.md#describeserviceupdatespaginator)
+- `client.get_paginator("describe_snapshots")` -> [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
+- `client.get_paginator("describe_subnet_groups")` -> [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
+- `client.get_paginator("describe_users")` -> [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
 
 
 

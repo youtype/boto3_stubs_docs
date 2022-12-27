@@ -24678,6 +24678,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -24722,6 +24729,20 @@
     <li class="md-nav__item">
       <a href="literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -39627,6 +39648,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -39697,17 +39725,53 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">MemoryDBClient</span><span class="p">:</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;memorydb&quot;</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="paginators">Paginators</h2>
+<p>Type annotations and code completion for <a href="paginators/">paginators</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;memorydb&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_memorydb.paginator</span> <span class="kn">import</span> <span class="n">DescribeACLsPaginator</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_describe_acls_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeACLsPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;memorydb&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;describe_acls&quot;</span><span class="p">))</span>
+</code></pre></div>
+<ul>
+<li><a href="paginators/#describeaclspaginator">DescribeACLsPaginator</a></li>
+<li><a href="paginators/#describeclusterspaginator">DescribeClustersPaginator</a></li>
+<li><a href="paginators/#describeengineversionspaginator">DescribeEngineVersionsPaginator</a></li>
+<li><a href="paginators/#describeeventspaginator">DescribeEventsPaginator</a></li>
+<li><a href="paginators/#describeparametergroupspaginator">DescribeParameterGroupsPaginator</a></li>
+<li><a href="paginators/#describeparameterspaginator">DescribeParametersPaginator</a></li>
+<li><a href="paginators/#describereservednodespaginator">DescribeReservedNodesPaginator</a></li>
+<li><a href="paginators/#describereservednodesofferingspaginator">DescribeReservedNodesOfferingsPaginator</a></li>
+<li><a href="paginators/#describeserviceupdatespaginator">DescribeServiceUpdatesPaginator</a></li>
+<li><a href="paginators/#describesnapshotspaginator">DescribeSnapshotsPaginator</a></li>
+<li><a href="paginators/#describesubnetgroupspaginator">DescribeSubnetGroupsPaginator</a></li>
+<li><a href="paginators/#describeuserspaginator">DescribeUsersPaginator</a></li>
+</ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_memorydb.literals</span> <span class="kn">import</span> <span class="n">AZStatusType</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AZStatusType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;multiaz&quot;</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_memorydb.literals</span> <span class="kn">import</span> <span class="n">AZStatusType</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AZStatusType</span><span class="p">:</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;multiaz&quot;</span>
 </code></pre></div>
 <ul>
 <li><a href="literals/#azstatustype">AZStatusType</a></li>
 <li><a href="literals/#authenticationtypetype">AuthenticationTypeType</a></li>
 <li><a href="literals/#datatieringstatustype">DataTieringStatusType</a></li>
+<li><a href="literals/#describeaclspaginatorname">DescribeACLsPaginatorName</a></li>
+<li><a href="literals/#describeclusterspaginatorname">DescribeClustersPaginatorName</a></li>
+<li><a href="literals/#describeengineversionspaginatorname">DescribeEngineVersionsPaginatorName</a></li>
+<li><a href="literals/#describeeventspaginatorname">DescribeEventsPaginatorName</a></li>
+<li><a href="literals/#describeparametergroupspaginatorname">DescribeParameterGroupsPaginatorName</a></li>
+<li><a href="literals/#describeparameterspaginatorname">DescribeParametersPaginatorName</a></li>
+<li><a href="literals/#describereservednodesofferingspaginatorname">DescribeReservedNodesOfferingsPaginatorName</a></li>
+<li><a href="literals/#describereservednodespaginatorname">DescribeReservedNodesPaginatorName</a></li>
+<li><a href="literals/#describeserviceupdatespaginatorname">DescribeServiceUpdatesPaginatorName</a></li>
+<li><a href="literals/#describesnapshotspaginatorname">DescribeSnapshotsPaginatorName</a></li>
+<li><a href="literals/#describesubnetgroupspaginatorname">DescribeSubnetGroupsPaginatorName</a></li>
+<li><a href="literals/#describeuserspaginatorname">DescribeUsersPaginatorName</a></li>
 <li><a href="literals/#inputauthenticationtypetype">InputAuthenticationTypeType</a></li>
 <li><a href="literals/#serviceupdatestatustype">ServiceUpdateStatusType</a></li>
 <li><a href="literals/#serviceupdatetypetype">ServiceUpdateTypeType</a></li>
@@ -39715,16 +39779,17 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#memorydbservicename">MemoryDBServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
+<li><a href="literals/#paginatorname">PaginatorName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_memorydb.type_defs</span> <span class="kn">import</span> <span class="n">ACLPendingChangesTypeDef</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ACLPendingChangesTypeDef</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>        <span class="s2">&quot;UserNamesToRemove&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_memorydb.type_defs</span> <span class="kn">import</span> <span class="n">ACLPendingChangesTypeDef</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ACLPendingChangesTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;UserNamesToRemove&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#aclpendingchangestypedef">ACLPendingChangesTypeDef</a></li>
@@ -39746,6 +39811,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#deletesnapshotrequestrequesttypedef">DeleteSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletesubnetgrouprequestrequesttypedef">DeleteSubnetGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteuserrequestrequesttypedef">DeleteUserRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#describeaclsrequestrequesttypedef">DescribeACLsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeclustersrequestrequesttypedef">DescribeClustersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeengineversionsrequestrequesttypedef">DescribeEngineVersionsRequestRequestTypeDef</a></li>
@@ -39755,6 +39821,8 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#describeparametergroupsrequestrequesttypedef">DescribeParameterGroupsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeparametersrequestrequesttypedef">DescribeParametersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#parametertypedef">ParameterTypeDef</a></li>
+<li><a href="type_defs/#describereservednodesofferingsrequestrequesttypedef">DescribeReservedNodesOfferingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describereservednodesrequestrequesttypedef">DescribeReservedNodesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeserviceupdatesrequestrequesttypedef">DescribeServiceUpdatesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#serviceupdatetypedef">ServiceUpdateTypeDef</a></li>
 <li><a href="type_defs/#describesnapshotsrequestrequesttypedef">DescribeSnapshotsRequestRequestTypeDef</a></li>
@@ -39764,6 +39832,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listallowednodetypeupdatesrequestrequesttypedef">ListAllowedNodeTypeUpdatesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsrequestrequesttypedef">ListTagsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#parameternamevaluetypedef">ParameterNameValueTypeDef</a></li>
+<li><a href="type_defs/#recurringchargetypedef">RecurringChargeTypeDef</a></li>
 <li><a href="type_defs/#replicaconfigurationrequesttypedef">ReplicaConfigurationRequestTypeDef</a></li>
 <li><a href="type_defs/#resetparametergrouprequestrequesttypedef">ResetParameterGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#slotmigrationtypedef">SlotMigrationTypeDef</a></li>
@@ -39787,6 +39856,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#createsubnetgrouprequestrequesttypedef">CreateSubnetGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createuserrequestrequesttypedef">CreateUserRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsresponsetypedef">ListTagsResponseTypeDef</a></li>
+<li><a href="type_defs/#purchasereservednodesofferingrequestrequesttypedef">PurchaseReservedNodesOfferingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#tagresourceresponsetypedef">TagResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#untagresourceresponsetypedef">UntagResourceResponseTypeDef</a></li>
@@ -39795,12 +39865,26 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#describeparametergroupsresponsetypedef">DescribeParameterGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#resetparametergroupresponsetypedef">ResetParameterGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#updateparametergroupresponsetypedef">UpdateParameterGroupResponseTypeDef</a></li>
+<li><a href="type_defs/#describeaclsrequestdescribeaclspaginatetypedef">DescribeACLsRequestDescribeACLsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeclustersrequestdescribeclusterspaginatetypedef">DescribeClustersRequestDescribeClustersPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeengineversionsrequestdescribeengineversionspaginatetypedef">DescribeEngineVersionsRequestDescribeEngineVersionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeeventsrequestdescribeeventspaginatetypedef">DescribeEventsRequestDescribeEventsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeparametergroupsrequestdescribeparametergroupspaginatetypedef">DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeparametersrequestdescribeparameterspaginatetypedef">DescribeParametersRequestDescribeParametersPaginateTypeDef</a></li>
+<li><a href="type_defs/#describereservednodesofferingsrequestdescribereservednodesofferingspaginatetypedef">DescribeReservedNodesOfferingsRequestDescribeReservedNodesOfferingsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describereservednodesrequestdescribereservednodespaginatetypedef">DescribeReservedNodesRequestDescribeReservedNodesPaginateTypeDef</a></li>
+<li><a href="type_defs/#describeserviceupdatesrequestdescribeserviceupdatespaginatetypedef">DescribeServiceUpdatesRequestDescribeServiceUpdatesPaginateTypeDef</a></li>
+<li><a href="type_defs/#describesnapshotsrequestdescribesnapshotspaginatetypedef">DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef</a></li>
+<li><a href="type_defs/#describesubnetgroupsrequestdescribesubnetgroupspaginatetypedef">DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeengineversionsresponsetypedef">DescribeEngineVersionsResponseTypeDef</a></li>
 <li><a href="type_defs/#describeeventsresponsetypedef">DescribeEventsResponseTypeDef</a></li>
 <li><a href="type_defs/#describeparametersresponsetypedef">DescribeParametersResponseTypeDef</a></li>
 <li><a href="type_defs/#describeserviceupdatesresponsetypedef">DescribeServiceUpdatesResponseTypeDef</a></li>
+<li><a href="type_defs/#describeusersrequestdescribeuserspaginatetypedef">DescribeUsersRequestDescribeUsersPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeusersrequestrequesttypedef">DescribeUsersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateparametergrouprequestrequesttypedef">UpdateParameterGroupRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#reservednodetypedef">ReservedNodeTypeDef</a></li>
+<li><a href="type_defs/#reservednodesofferingtypedef">ReservedNodesOfferingTypeDef</a></li>
 <li><a href="type_defs/#reshardingstatustypedef">ReshardingStatusTypeDef</a></li>
 <li><a href="type_defs/#updateclusterrequestrequesttypedef">UpdateClusterRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#sharddetailtypedef">ShardDetailTypeDef</a></li>
@@ -39814,6 +39898,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#updateuserresponsetypedef">UpdateUserResponseTypeDef</a></li>
 <li><a href="type_defs/#subnetgrouptypedef">SubnetGroupTypeDef</a></li>
 <li><a href="type_defs/#shardtypedef">ShardTypeDef</a></li>
+<li><a href="type_defs/#describereservednodesresponsetypedef">DescribeReservedNodesResponseTypeDef</a></li>
+<li><a href="type_defs/#purchasereservednodesofferingresponsetypedef">PurchaseReservedNodesOfferingResponseTypeDef</a></li>
+<li><a href="type_defs/#describereservednodesofferingsresponsetypedef">DescribeReservedNodesOfferingsResponseTypeDef</a></li>
 <li><a href="type_defs/#clusterpendingupdatestypedef">ClusterPendingUpdatesTypeDef</a></li>
 <li><a href="type_defs/#clusterconfigurationtypedef">ClusterConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createsubnetgroupresponsetypedef">CreateSubnetGroupResponseTypeDef</a></li>
