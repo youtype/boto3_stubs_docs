@@ -98,6 +98,7 @@ class AttachmentTypeDef(TypedDict):
     SubnetId: NotRequired[str],
     EndpointId: NotRequired[str],
     Status: NotRequired[AttachmentStatusType],  # (1)
+    StatusMessage: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 

@@ -595,6 +595,23 @@ class CreateGlobalClusterMessageRequestTypeDef(TypedDict):
     StorageEncrypted: NotRequired[bool],
 ```
 
+## CustomDBEngineVersionAMITypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import CustomDBEngineVersionAMITypeDef
+
+def get_value() -> CustomDBEngineVersionAMITypeDef:
+    return {
+        "ImageId": ...,
+    }
+```
+
+```python title="Definition"
+class CustomDBEngineVersionAMITypeDef(TypedDict):
+    ImageId: NotRequired[str],
+    Status: NotRequired[str],
+```
+
 ## DBClusterBacktrackTypeDef
 
 ```python title="Usage Example"
@@ -3102,9 +3119,6 @@ def get_value() -> CreateCustomDBEngineVersionMessageRequestTypeDef:
     return {
         "Engine": ...,
         "EngineVersion": ...,
-        "DatabaseInstallationFilesS3BucketName": ...,
-        "KMSKeyId": ...,
-        "Manifest": ...,
     }
 ```
 
@@ -3112,11 +3126,12 @@ def get_value() -> CreateCustomDBEngineVersionMessageRequestTypeDef:
 class CreateCustomDBEngineVersionMessageRequestTypeDef(TypedDict):
     Engine: str,
     EngineVersion: str,
-    DatabaseInstallationFilesS3BucketName: str,
-    KMSKeyId: str,
-    Manifest: str,
+    DatabaseInstallationFilesS3BucketName: NotRequired[str],
     DatabaseInstallationFilesS3Prefix: NotRequired[str],
+    ImageId: NotRequired[str],
+    KMSKeyId: NotRequired[str],
     Description: NotRequired[str],
+    Manifest: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
 
@@ -4833,6 +4848,8 @@ def get_value() -> DBEngineVersionResponseMetadataTypeDef:
         "DBEngineDescription": ...,
         "DBEngineVersionDescription": ...,
         "DefaultCharacterSet": ...,
+        "Image": ...,
+        "DBEngineMediaType": ...,
         "SupportedCharacterSets": ...,
         "SupportedNcharCharacterSets": ...,
         "ValidUpgradeTarget": ...,
@@ -4866,10 +4883,12 @@ class DBEngineVersionResponseMetadataTypeDef(TypedDict):
     DBEngineDescription: str,
     DBEngineVersionDescription: str,
     DefaultCharacterSet: CharacterSetTypeDef,  # (1)
-    SupportedCharacterSets: List[CharacterSetTypeDef],  # (2)
-    SupportedNcharCharacterSets: List[CharacterSetTypeDef],  # (2)
-    ValidUpgradeTarget: List[UpgradeTargetTypeDef],  # (4)
-    SupportedTimezones: List[TimezoneTypeDef],  # (5)
+    Image: CustomDBEngineVersionAMITypeDef,  # (2)
+    DBEngineMediaType: str,
+    SupportedCharacterSets: List[CharacterSetTypeDef],  # (3)
+    SupportedNcharCharacterSets: List[CharacterSetTypeDef],  # (3)
+    ValidUpgradeTarget: List[UpgradeTargetTypeDef],  # (5)
+    SupportedTimezones: List[TimezoneTypeDef],  # (6)
     ExportableLogTypes: List[str],
     SupportsLogExportsToCloudwatchLogs: bool,
     SupportsReadReplica: bool,
@@ -4884,19 +4903,20 @@ class DBEngineVersionResponseMetadataTypeDef(TypedDict):
     DBEngineVersionArn: str,
     KMSKeyId: str,
     CreateTime: datetime,
-    TagList: List[TagTypeDef],  # (6)
+    TagList: List[TagTypeDef],  # (7)
     SupportsBabelfish: bool,
     CustomDBEngineVersionManifest: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
 1. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
-2. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
+2. See [:material-code-braces: CustomDBEngineVersionAMITypeDef](./type_defs.md#customdbengineversionamitypedef) 
 3. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
-4. See [:material-code-braces: UpgradeTargetTypeDef](./type_defs.md#upgradetargettypedef) 
-5. See [:material-code-braces: TimezoneTypeDef](./type_defs.md#timezonetypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
+5. See [:material-code-braces: UpgradeTargetTypeDef](./type_defs.md#upgradetargettypedef) 
+6. See [:material-code-braces: TimezoneTypeDef](./type_defs.md#timezonetypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBEngineVersionTypeDef
 
 ```python title="Usage Example"
@@ -4916,10 +4936,12 @@ class DBEngineVersionTypeDef(TypedDict):
     DBEngineDescription: NotRequired[str],
     DBEngineVersionDescription: NotRequired[str],
     DefaultCharacterSet: NotRequired[CharacterSetTypeDef],  # (1)
-    SupportedCharacterSets: NotRequired[List[CharacterSetTypeDef]],  # (2)
-    SupportedNcharCharacterSets: NotRequired[List[CharacterSetTypeDef]],  # (2)
-    ValidUpgradeTarget: NotRequired[List[UpgradeTargetTypeDef]],  # (4)
-    SupportedTimezones: NotRequired[List[TimezoneTypeDef]],  # (5)
+    Image: NotRequired[CustomDBEngineVersionAMITypeDef],  # (2)
+    DBEngineMediaType: NotRequired[str],
+    SupportedCharacterSets: NotRequired[List[CharacterSetTypeDef]],  # (3)
+    SupportedNcharCharacterSets: NotRequired[List[CharacterSetTypeDef]],  # (3)
+    ValidUpgradeTarget: NotRequired[List[UpgradeTargetTypeDef]],  # (5)
+    SupportedTimezones: NotRequired[List[TimezoneTypeDef]],  # (6)
     ExportableLogTypes: NotRequired[List[str]],
     SupportsLogExportsToCloudwatchLogs: NotRequired[bool],
     SupportsReadReplica: NotRequired[bool],
@@ -4934,17 +4956,18 @@ class DBEngineVersionTypeDef(TypedDict):
     DBEngineVersionArn: NotRequired[str],
     KMSKeyId: NotRequired[str],
     CreateTime: NotRequired[datetime],
-    TagList: NotRequired[List[TagTypeDef]],  # (6)
+    TagList: NotRequired[List[TagTypeDef]],  # (7)
     SupportsBabelfish: NotRequired[bool],
     CustomDBEngineVersionManifest: NotRequired[str],
 ```
 
 1. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
-2. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
+2. See [:material-code-braces: CustomDBEngineVersionAMITypeDef](./type_defs.md#customdbengineversionamitypedef) 
 3. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
-4. See [:material-code-braces: UpgradeTargetTypeDef](./type_defs.md#upgradetargettypedef) 
-5. See [:material-code-braces: TimezoneTypeDef](./type_defs.md#timezonetypedef) 
-6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
+5. See [:material-code-braces: UpgradeTargetTypeDef](./type_defs.md#upgradetargettypedef) 
+6. See [:material-code-braces: TimezoneTypeDef](./type_defs.md#timezonetypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## DBInstanceAutomatedBackupTypeDef
 
 ```python title="Usage Example"

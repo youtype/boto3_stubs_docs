@@ -34,6 +34,24 @@ type checking and code completion should work out of the box.
 
 
 
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("route53-recovery-control-config")  # (1)
+
+    paginator = client.get_paginator("list_associated_route53_health_checks")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [Route53RecoveryControlConfigClient](./client.md)
+    2. paginator: [ListAssociatedRoute53HealthChecksPaginator](./paginators.md#listassociatedroute53healthcheckspaginator)
+    3. item: [:material-code-braces: ListAssociatedRoute53HealthChecksResponseTypeDef](./type_defs.md#listassociatedroute53healthchecksresponsetypedef) 
+
 
 
 === "Waiters"
@@ -81,6 +99,25 @@ However, these type annotations can be helpful in your functions and methods.
     ```
 
 
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_route53_recovery_control_config.client import Route53RecoveryControlConfigClient
+    from mypy_boto3_route53_recovery_control_config.paginator import ListAssociatedRoute53HealthChecksPaginator
+    from mypy_boto3_route53_recovery_control_config.type_defs import ListAssociatedRoute53HealthChecksResponseTypeDef
+
+
+    session = Session()
+    client: Route53RecoveryControlConfigClient = session.client("route53-recovery-control-config")
+
+    paginator: ListAssociatedRoute53HealthChecksPaginator = client.get_paginator("list_associated_route53_health_checks")
+    for item in paginator.paginate(...):
+        item: ListAssociatedRoute53HealthChecksResponseTypeDef
+        print(item)
+    ```
 
 
 

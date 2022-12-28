@@ -3835,6 +3835,7 @@ class CreateReplicationGroupMessageRequestTypeDef(TypedDict):
     DataTieringEnabled: NotRequired[bool],
     NetworkType: NotRequired[NetworkTypeType],  # (4)
     IpDiscovery: NotRequired[IpDiscoveryType],  # (5)
+    TransitEncryptionMode: NotRequired[TransitEncryptionModeType],  # (6)
 ```
 
 1. See [:material-code-braces: NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef) 
@@ -3842,6 +3843,7 @@ class CreateReplicationGroupMessageRequestTypeDef(TypedDict):
 3. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
 4. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
 5. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+6. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
 ## ModifyCacheClusterMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -3921,11 +3923,14 @@ class ModifyReplicationGroupMessageRequestTypeDef(TypedDict):
     RemoveUserGroups: NotRequired[bool],
     LogDeliveryConfigurations: NotRequired[Sequence[LogDeliveryConfigurationRequestTypeDef]],  # (2)
     IpDiscovery: NotRequired[IpDiscoveryType],  # (3)
+    TransitEncryptionEnabled: NotRequired[bool],
+    TransitEncryptionMode: NotRequired[TransitEncryptionModeType],  # (4)
 ```
 
 1. See [:material-code-brackets: AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype) 
 2. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
 3. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+4. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
 ## PendingModifiedValuesTypeDef
 
 ```python title="Usage Example"
@@ -3945,10 +3950,13 @@ class PendingModifiedValuesTypeDef(TypedDict):
     CacheNodeType: NotRequired[str],
     AuthTokenStatus: NotRequired[AuthTokenUpdateStatusType],  # (1)
     LogDeliveryConfigurations: NotRequired[List[PendingLogDeliveryConfigurationTypeDef]],  # (2)
+    TransitEncryptionEnabled: NotRequired[bool],
+    TransitEncryptionMode: NotRequired[TransitEncryptionModeType],  # (3)
 ```
 
 1. See [:material-code-brackets: AuthTokenUpdateStatusType](./literals.md#authtokenupdatestatustype) 
 2. See [:material-code-braces: PendingLogDeliveryConfigurationTypeDef](./type_defs.md#pendinglogdeliveryconfigurationtypedef) 
+3. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
 ## ReplicationGroupPendingModifiedValuesTypeDef
 
 ```python title="Usage Example"
@@ -3968,6 +3976,8 @@ class ReplicationGroupPendingModifiedValuesTypeDef(TypedDict):
     AuthTokenStatus: NotRequired[AuthTokenUpdateStatusType],  # (3)
     UserGroups: NotRequired[UserGroupsUpdateStatusTypeDef],  # (4)
     LogDeliveryConfigurations: NotRequired[List[PendingLogDeliveryConfigurationTypeDef]],  # (5)
+    TransitEncryptionEnabled: NotRequired[bool],
+    TransitEncryptionMode: NotRequired[TransitEncryptionModeType],  # (6)
 ```
 
 1. See [:material-code-brackets: PendingAutomaticFailoverStatusType](./literals.md#pendingautomaticfailoverstatustype) 
@@ -3975,6 +3985,7 @@ class ReplicationGroupPendingModifiedValuesTypeDef(TypedDict):
 3. See [:material-code-brackets: AuthTokenUpdateStatusType](./literals.md#authtokenupdatestatustype) 
 4. See [:material-code-braces: UserGroupsUpdateStatusTypeDef](./type_defs.md#usergroupsupdatestatustypedef) 
 5. See [:material-code-braces: PendingLogDeliveryConfigurationTypeDef](./type_defs.md#pendinglogdeliveryconfigurationtypedef) 
+6. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
 ## UpdateActionsMessageTypeDef
 
 ```python title="Usage Example"
@@ -4104,6 +4115,7 @@ class CacheClusterTypeDef(TypedDict):
     LogDeliveryConfigurations: NotRequired[List[LogDeliveryConfigurationTypeDef]],  # (8)
     NetworkType: NotRequired[NetworkTypeType],  # (9)
     IpDiscovery: NotRequired[IpDiscoveryType],  # (10)
+    TransitEncryptionMode: NotRequired[TransitEncryptionModeType],  # (11)
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
@@ -4116,6 +4128,7 @@ class CacheClusterTypeDef(TypedDict):
 8. See [:material-code-braces: LogDeliveryConfigurationTypeDef](./type_defs.md#logdeliveryconfigurationtypedef) 
 9. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
 10. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+11. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
 ## ReplicationGroupTypeDef
 
 ```python title="Usage Example"
@@ -4158,6 +4171,7 @@ class ReplicationGroupTypeDef(TypedDict):
     AutoMinorVersionUpgrade: NotRequired[bool],
     NetworkType: NotRequired[NetworkTypeType],  # (9)
     IpDiscovery: NotRequired[IpDiscoveryType],  # (10)
+    TransitEncryptionMode: NotRequired[TransitEncryptionModeType],  # (11)
 ```
 
 1. See [:material-code-braces: GlobalReplicationGroupInfoTypeDef](./type_defs.md#globalreplicationgroupinfotypedef) 
@@ -4170,6 +4184,7 @@ class ReplicationGroupTypeDef(TypedDict):
 8. See [:material-code-brackets: DataTieringStatusType](./literals.md#datatieringstatustype) 
 9. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
 10. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
+11. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
 ## CacheClusterMessageTypeDef
 
 ```python title="Usage Example"

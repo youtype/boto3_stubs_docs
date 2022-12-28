@@ -354,6 +354,24 @@ class GatingRuleUpdateTypeDef(TypedDict):
     WaitPeriodMs: int,
 ```
 
+## PaginatorConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
+```
+
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
+
 ## ListAssociatedRoute53HealthChecksRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -997,6 +1015,95 @@ class UpdateSafetyRuleRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: AssertionRuleUpdateTypeDef](./type_defs.md#assertionruleupdatetypedef) 
 2. See [:material-code-braces: GatingRuleUpdateTypeDef](./type_defs.md#gatingruleupdatetypedef) 
+## ListAssociatedRoute53HealthChecksRequestListAssociatedRoute53HealthChecksPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListAssociatedRoute53HealthChecksRequestListAssociatedRoute53HealthChecksPaginateTypeDef
+
+def get_value() -> ListAssociatedRoute53HealthChecksRequestListAssociatedRoute53HealthChecksPaginateTypeDef:
+    return {
+        "RoutingControlArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedRoute53HealthChecksRequestListAssociatedRoute53HealthChecksPaginateTypeDef(TypedDict):
+    RoutingControlArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListClustersRequestListClustersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListClustersRequestListClustersPaginateTypeDef
+
+def get_value() -> ListClustersRequestListClustersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListClustersRequestListClustersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListControlPanelsRequestListControlPanelsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListControlPanelsRequestListControlPanelsPaginateTypeDef
+
+def get_value() -> ListControlPanelsRequestListControlPanelsPaginateTypeDef:
+    return {
+        "ClusterArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListControlPanelsRequestListControlPanelsPaginateTypeDef(TypedDict):
+    ClusterArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListRoutingControlsRequestListRoutingControlsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListRoutingControlsRequestListRoutingControlsPaginateTypeDef
+
+def get_value() -> ListRoutingControlsRequestListRoutingControlsPaginateTypeDef:
+    return {
+        "ControlPanelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutingControlsRequestListRoutingControlsPaginateTypeDef(TypedDict):
+    ControlPanelArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSafetyRulesRequestListSafetyRulesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.type_defs import ListSafetyRulesRequestListSafetyRulesPaginateTypeDef
+
+def get_value() -> ListSafetyRulesRequestListSafetyRulesPaginateTypeDef:
+    return {
+        "ControlPanelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSafetyRulesRequestListSafetyRulesPaginateTypeDef(TypedDict):
+    ControlPanelArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## CreateSafetyRuleResponseTypeDef
 
 ```python title="Usage Example"

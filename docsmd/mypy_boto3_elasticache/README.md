@@ -179,6 +179,7 @@ def get_value() -> AZModeType:
 - [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype)
 - [SlaMetType](./literals.md#slamettype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [TransitEncryptionModeType](./literals.md#transitencryptionmodetype)
 - [UpdateActionStatusType](./literals.md#updateactionstatustype)
 - [ElastiCacheServiceName](./literals.md#elasticacheservicename)
 - [ServiceName](./literals.md#servicename)

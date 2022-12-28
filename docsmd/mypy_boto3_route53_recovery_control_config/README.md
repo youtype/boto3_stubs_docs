@@ -63,6 +63,27 @@ def get_client() -> Route53RecoveryControlConfigClient:
 ```
 
 
+## Paginators
+
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("route53-recovery-control-config").get_paginator("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_route53_recovery_control_config.paginator import ListAssociatedRoute53HealthChecksPaginator
+
+def get_list_associated_route53_health_checks_paginator() -> ListAssociatedRoute53HealthChecksPaginator:
+    return Session().client("route53-recovery-control-config").get_paginator("list_associated_route53_health_checks"))
+```
+
+- [ListAssociatedRoute53HealthChecksPaginator](./paginators.md#listassociatedroute53healthcheckspaginator)
+- [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- [ListControlPanelsPaginator](./paginators.md#listcontrolpanelspaginator)
+- [ListRoutingControlsPaginator](./paginators.md#listroutingcontrolspaginator)
+- [ListSafetyRulesPaginator](./paginators.md#listsafetyrulespaginator)
+
+
 
 
 ## Waiters
@@ -107,6 +128,11 @@ def get_value() -> ClusterCreatedWaiterName:
 - [ClusterDeletedWaiterName](./literals.md#clusterdeletedwaitername)
 - [ControlPanelCreatedWaiterName](./literals.md#controlpanelcreatedwaitername)
 - [ControlPanelDeletedWaiterName](./literals.md#controlpaneldeletedwaitername)
+- [ListAssociatedRoute53HealthChecksPaginatorName](./literals.md#listassociatedroute53healthcheckspaginatorname)
+- [ListClustersPaginatorName](./literals.md#listclusterspaginatorname)
+- [ListControlPanelsPaginatorName](./literals.md#listcontrolpanelspaginatorname)
+- [ListRoutingControlsPaginatorName](./literals.md#listroutingcontrolspaginatorname)
+- [ListSafetyRulesPaginatorName](./literals.md#listsafetyrulespaginatorname)
 - [RoutingControlCreatedWaiterName](./literals.md#routingcontrolcreatedwaitername)
 - [RoutingControlDeletedWaiterName](./literals.md#routingcontroldeletedwaitername)
 - [RuleTypeType](./literals.md#ruletypetype)
@@ -114,6 +140,7 @@ def get_value() -> ClusterCreatedWaiterName:
 - [Route53RecoveryControlConfigServiceName](./literals.md#route53recoverycontrolconfigservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 
 
@@ -153,6 +180,7 @@ def get_value() -> RuleConfigTypeDef:
 - [DescribeRoutingControlRequestRequestTypeDef](./type_defs.md#describeroutingcontrolrequestrequesttypedef)
 - [DescribeSafetyRuleRequestRequestTypeDef](./type_defs.md#describesafetyrulerequestrequesttypedef)
 - [GatingRuleUpdateTypeDef](./type_defs.md#gatingruleupdatetypedef)
+- [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListAssociatedRoute53HealthChecksRequestRequestTypeDef](./type_defs.md#listassociatedroute53healthchecksrequestrequesttypedef)
 - [ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef)
 - [ListControlPanelsRequestRequestTypeDef](./type_defs.md#listcontrolpanelsrequestrequesttypedef)
@@ -185,6 +213,11 @@ def get_value() -> RuleConfigTypeDef:
 - [DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef](./type_defs.md#describeroutingcontrolrequestroutingcontrolcreatedwaittypedef)
 - [DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef](./type_defs.md#describeroutingcontrolrequestroutingcontroldeletedwaittypedef)
 - [UpdateSafetyRuleRequestRequestTypeDef](./type_defs.md#updatesafetyrulerequestrequesttypedef)
+- [ListAssociatedRoute53HealthChecksRequestListAssociatedRoute53HealthChecksPaginateTypeDef](./type_defs.md#listassociatedroute53healthchecksrequestlistassociatedroute53healthcheckspaginatetypedef)
+- [ListClustersRequestListClustersPaginateTypeDef](./type_defs.md#listclustersrequestlistclusterspaginatetypedef)
+- [ListControlPanelsRequestListControlPanelsPaginateTypeDef](./type_defs.md#listcontrolpanelsrequestlistcontrolpanelspaginatetypedef)
+- [ListRoutingControlsRequestListRoutingControlsPaginateTypeDef](./type_defs.md#listroutingcontrolsrequestlistroutingcontrolspaginatetypedef)
+- [ListSafetyRulesRequestListSafetyRulesPaginateTypeDef](./type_defs.md#listsafetyrulesrequestlistsafetyrulespaginatetypedef)
 - [CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef)
 - [DescribeSafetyRuleResponseTypeDef](./type_defs.md#describesafetyruleresponsetypedef)
 - [RuleTypeDef](./type_defs.md#ruletypedef)

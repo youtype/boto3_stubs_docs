@@ -63,6 +63,76 @@ ControlPanelDeletedWaiterName = Literal[
     "control_panel_deleted",
 ]
 ```
+## ListAssociatedRoute53HealthChecksPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.literals import ListAssociatedRoute53HealthChecksPaginatorName
+
+def get_value() -> ListAssociatedRoute53HealthChecksPaginatorName:
+    return "list_associated_route53_health_checks"
+```
+
+```python title="Definition"
+ListAssociatedRoute53HealthChecksPaginatorName = Literal[
+    "list_associated_route53_health_checks",
+]
+```
+## ListClustersPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.literals import ListClustersPaginatorName
+
+def get_value() -> ListClustersPaginatorName:
+    return "list_clusters"
+```
+
+```python title="Definition"
+ListClustersPaginatorName = Literal[
+    "list_clusters",
+]
+```
+## ListControlPanelsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.literals import ListControlPanelsPaginatorName
+
+def get_value() -> ListControlPanelsPaginatorName:
+    return "list_control_panels"
+```
+
+```python title="Definition"
+ListControlPanelsPaginatorName = Literal[
+    "list_control_panels",
+]
+```
+## ListRoutingControlsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.literals import ListRoutingControlsPaginatorName
+
+def get_value() -> ListRoutingControlsPaginatorName:
+    return "list_routing_controls"
+```
+
+```python title="Definition"
+ListRoutingControlsPaginatorName = Literal[
+    "list_routing_controls",
+]
+```
+## ListSafetyRulesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.literals import ListSafetyRulesPaginatorName
+
+def get_value() -> ListSafetyRulesPaginatorName:
+    return "list_safety_rules"
+```
+
+```python title="Definition"
+ListSafetyRulesPaginatorName = Literal[
+    "list_safety_rules",
+]
+```
 ## RoutingControlCreatedWaiterName
 
 ```python title="Usage Example"
@@ -507,6 +577,24 @@ ResourceServiceName = Literal[
     "s3",
     "sns",
     "sqs",
+]
+```
+## PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_route53_recovery_control_config.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_associated_route53_health_checks"
+```
+
+```python title="Definition"
+PaginatorName = Literal[
+    "list_associated_route53_health_checks",
+    "list_clusters",
+    "list_control_panels",
+    "list_routing_controls",
+    "list_safety_rules",
 ]
 ```
 ## WaiterName

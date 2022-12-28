@@ -682,6 +682,21 @@ SourceTypeType = Literal[
     "user-group",
 ]
 ```
+## TransitEncryptionModeType
+
+```python title="Usage Example"
+from mypy_boto3_elasticache.literals import TransitEncryptionModeType
+
+def get_value() -> TransitEncryptionModeType:
+    return "preferred"
+```
+
+```python title="Definition"
+TransitEncryptionModeType = Literal[
+    "preferred",
+    "required",
+]
+```
 ## UpdateActionStatusType
 
 ```python title="Usage Example"

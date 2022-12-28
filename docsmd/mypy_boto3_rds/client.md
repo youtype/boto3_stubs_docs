@@ -91,6 +91,7 @@ except (
     client.DBSubnetQuotaExceededFault,
     client.DBUpgradeDependencyFailureFault,
     client.DomainNotFoundFault,
+    client.Ec2ImagePropertiesNotSupportedFault,
     client.EventSubscriptionQuotaExceededFault,
     client.ExportTaskAlreadyExistsFault,
     client.ExportTaskNotFoundFault,
@@ -691,11 +692,12 @@ def create_custom_db_engine_version(
     *,
     Engine: str,
     EngineVersion: str,
-    DatabaseInstallationFilesS3BucketName: str,
-    KMSKeyId: str,
-    Manifest: str,
+    DatabaseInstallationFilesS3BucketName: str = ...,
     DatabaseInstallationFilesS3Prefix: str = ...,
+    ImageId: str = ...,
+    KMSKeyId: str = ...,
     Description: str = ...,
+    Manifest: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
 ) -> DBEngineVersionResponseMetadataTypeDef:  # (2)
     ...
@@ -709,9 +711,6 @@ def create_custom_db_engine_version(
 kwargs: CreateCustomDBEngineVersionMessageRequestTypeDef = {  # (1)
     "Engine": ...,
     "EngineVersion": ...,
-    "DatabaseInstallationFilesS3BucketName": ...,
-    "KMSKeyId": ...,
-    "Manifest": ...,
 }
 
 parent.create_custom_db_engine_version(**kwargs)

@@ -299,6 +299,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [DBProxyEndpointTypeDef](./type_defs.md#dbproxyendpointtypedef)
 - [UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)
 - [CreateGlobalClusterMessageRequestTypeDef](./type_defs.md#createglobalclustermessagerequesttypedef)
+- [CustomDBEngineVersionAMITypeDef](./type_defs.md#customdbengineversionamitypedef)
 - [DBClusterBacktrackTypeDef](./type_defs.md#dbclusterbacktracktypedef)
 - [DBClusterEndpointTypeDef](./type_defs.md#dbclusterendpointtypedef)
 - [DBClusterMemberTypeDef](./type_defs.md#dbclustermembertypedef)

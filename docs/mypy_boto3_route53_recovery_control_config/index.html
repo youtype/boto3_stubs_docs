@@ -31348,6 +31348,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#waiters" class="md-nav__link">
     Waiters
   </a>
@@ -31399,6 +31406,20 @@
     <li class="md-nav__item">
       <a href="literals/" class="md-nav__link">
         Literals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="paginators/" class="md-nav__link">
+        Paginators
       </a>
     </li>
   
@@ -39648,6 +39669,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#paginators" class="md-nav__link">
+    Paginators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#waiters" class="md-nav__link">
     Waiters
   </a>
@@ -39725,15 +39753,32 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">def</span> <span class="nf">get_client</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Route53RecoveryControlConfigClient</span><span class="p">:</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="paginators">Paginators</h2>
+<p>Type annotations and code completion for <a href="paginators/">paginators</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53_recovery_control_config.paginator</span> <span class="kn">import</span> <span class="n">ListAssociatedRoute53HealthChecksPaginator</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_list_associated_route53_health_checks_paginator</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ListAssociatedRoute53HealthChecksPaginator</span><span class="p">:</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_paginator</span><span class="p">(</span><span class="s2">&quot;list_associated_route53_health_checks&quot;</span><span class="p">))</span>
+</code></pre></div>
+<ul>
+<li><a href="paginators/#listassociatedroute53healthcheckspaginator">ListAssociatedRoute53HealthChecksPaginator</a></li>
+<li><a href="paginators/#listclusterspaginator">ListClustersPaginator</a></li>
+<li><a href="paginators/#listcontrolpanelspaginator">ListControlPanelsPaginator</a></li>
+<li><a href="paginators/#listroutingcontrolspaginator">ListRoutingControlsPaginator</a></li>
+<li><a href="paginators/#listsafetyrulespaginator">ListSafetyRulesPaginator</a></li>
+</ul>
 <h2 id="waiters">Waiters</h2>
 <p>Type annotations and code completion for <a href="waiters/">waiters</a>
 from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53_recovery_control_config.waiter</span> <span class="kn">import</span> <span class="n">ClusterCreatedWaiter</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">def</span> <span class="nf">get_cluster_created_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ClusterCreatedWaiter</span><span class="p">:</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;cluster_created&quot;</span><span class="p">)</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53_recovery_control_config.waiter</span> <span class="kn">import</span> <span class="n">ClusterCreatedWaiter</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">def</span> <span class="nf">get_cluster_created_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ClusterCreatedWaiter</span><span class="p">:</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;route53-recovery-control-config&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;cluster_created&quot;</span><span class="p">)</span>
 </code></pre></div>
 <ul>
 <li><a href="waiters/#clustercreatedwaiter">ClusterCreatedWaiter</a></li>
@@ -39745,16 +39790,21 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53_recovery_control_config.literals</span> <span class="kn">import</span> <span class="n">ClusterCreatedWaiterName</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ClusterCreatedWaiterName</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;cluster_created&quot;</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53_recovery_control_config.literals</span> <span class="kn">import</span> <span class="n">ClusterCreatedWaiterName</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ClusterCreatedWaiterName</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="s2">&quot;cluster_created&quot;</span>
 </code></pre></div>
 <ul>
 <li><a href="literals/#clustercreatedwaitername">ClusterCreatedWaiterName</a></li>
 <li><a href="literals/#clusterdeletedwaitername">ClusterDeletedWaiterName</a></li>
 <li><a href="literals/#controlpanelcreatedwaitername">ControlPanelCreatedWaiterName</a></li>
 <li><a href="literals/#controlpaneldeletedwaitername">ControlPanelDeletedWaiterName</a></li>
+<li><a href="literals/#listassociatedroute53healthcheckspaginatorname">ListAssociatedRoute53HealthChecksPaginatorName</a></li>
+<li><a href="literals/#listclusterspaginatorname">ListClustersPaginatorName</a></li>
+<li><a href="literals/#listcontrolpanelspaginatorname">ListControlPanelsPaginatorName</a></li>
+<li><a href="literals/#listroutingcontrolspaginatorname">ListRoutingControlsPaginatorName</a></li>
+<li><a href="literals/#listsafetyrulespaginatorname">ListSafetyRulesPaginatorName</a></li>
 <li><a href="literals/#routingcontrolcreatedwaitername">RoutingControlCreatedWaiterName</a></li>
 <li><a href="literals/#routingcontroldeletedwaitername">RoutingControlDeletedWaiterName</a></li>
 <li><a href="literals/#ruletypetype">RuleTypeType</a></li>
@@ -39762,18 +39812,19 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#route53recoverycontrolconfigservicename">Route53RecoveryControlConfigServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
+<li><a href="literals/#paginatorname">PaginatorName</a></li>
 <li><a href="literals/#waitername">WaiterName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53_recovery_control_config.type_defs</span> <span class="kn">import</span> <span class="n">RuleConfigTypeDef</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RuleConfigTypeDef</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Inverted&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;Threshold&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_route53_recovery_control_config.type_defs</span> <span class="kn">import</span> <span class="n">RuleConfigTypeDef</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RuleConfigTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;Inverted&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="s2">&quot;Threshold&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>        <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#ruleconfigtypedef">RuleConfigTypeDef</a></li>
@@ -39795,6 +39846,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeroutingcontrolrequestrequesttypedef">DescribeRoutingControlRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describesafetyrulerequestrequesttypedef">DescribeSafetyRuleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#gatingruleupdatetypedef">GatingRuleUpdateTypeDef</a></li>
+<li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#listassociatedroute53healthchecksrequestrequesttypedef">ListAssociatedRoute53HealthChecksRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listclustersrequestrequesttypedef">ListClustersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listcontrolpanelsrequestrequesttypedef">ListControlPanelsRequestRequestTypeDef</a></li>
@@ -39827,6 +39879,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeroutingcontrolrequestroutingcontrolcreatedwaittypedef">DescribeRoutingControlRequestRoutingControlCreatedWaitTypeDef</a></li>
 <li><a href="type_defs/#describeroutingcontrolrequestroutingcontroldeletedwaittypedef">DescribeRoutingControlRequestRoutingControlDeletedWaitTypeDef</a></li>
 <li><a href="type_defs/#updatesafetyrulerequestrequesttypedef">UpdateSafetyRuleRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listassociatedroute53healthchecksrequestlistassociatedroute53healthcheckspaginatetypedef">ListAssociatedRoute53HealthChecksRequestListAssociatedRoute53HealthChecksPaginateTypeDef</a></li>
+<li><a href="type_defs/#listclustersrequestlistclusterspaginatetypedef">ListClustersRequestListClustersPaginateTypeDef</a></li>
+<li><a href="type_defs/#listcontrolpanelsrequestlistcontrolpanelspaginatetypedef">ListControlPanelsRequestListControlPanelsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listroutingcontrolsrequestlistroutingcontrolspaginatetypedef">ListRoutingControlsRequestListRoutingControlsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listsafetyrulesrequestlistsafetyrulespaginatetypedef">ListSafetyRulesRequestListSafetyRulesPaginateTypeDef</a></li>
 <li><a href="type_defs/#createsafetyruleresponsetypedef">CreateSafetyRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#describesafetyruleresponsetypedef">DescribeSafetyRuleResponseTypeDef</a></li>
 <li><a href="type_defs/#ruletypedef">RuleTypeDef</a></li>

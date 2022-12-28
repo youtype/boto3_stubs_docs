@@ -586,7 +586,8 @@ def create_replication_group(
     DataTieringEnabled: bool = ...,
     NetworkType: NetworkTypeType = ...,  # (4)
     IpDiscovery: IpDiscoveryType = ...,  # (5)
-) -> CreateReplicationGroupResultTypeDef:  # (6)
+    TransitEncryptionMode: TransitEncryptionModeType = ...,  # (6)
+) -> CreateReplicationGroupResultTypeDef:  # (7)
     ...
 ```
 
@@ -595,7 +596,8 @@ def create_replication_group(
 3. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
 4. See [:material-code-brackets: NetworkTypeType](./literals.md#networktypetype) 
 5. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
-6. See [:material-code-braces: CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef) 
+6. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
+7. See [:material-code-braces: CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2041,14 +2043,17 @@ def modify_replication_group(
     RemoveUserGroups: bool = ...,
     LogDeliveryConfigurations: Sequence[LogDeliveryConfigurationRequestTypeDef] = ...,  # (2)
     IpDiscovery: IpDiscoveryType = ...,  # (3)
-) -> ModifyReplicationGroupResultTypeDef:  # (4)
+    TransitEncryptionEnabled: bool = ...,
+    TransitEncryptionMode: TransitEncryptionModeType = ...,  # (4)
+) -> ModifyReplicationGroupResultTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype) 
 2. See [:material-code-braces: LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef) 
 3. See [:material-code-brackets: IpDiscoveryType](./literals.md#ipdiscoverytype) 
-4. See [:material-code-braces: ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef) 
+4. See [:material-code-brackets: TransitEncryptionModeType](./literals.md#transitencryptionmodetype) 
+5. See [:material-code-braces: ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

@@ -805,6 +805,17 @@ parent.update_safety_rule(**kwargs)
 
 
 
+### get_paginator
+
+Type annotations and code completion for `#!python boto3.client("route53-recovery-control-config").get_paginator` method with overloads.
+
+- `client.get_paginator("list_associated_route53_health_checks")` -> [ListAssociatedRoute53HealthChecksPaginator](./paginators.md#listassociatedroute53healthcheckspaginator)
+- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_control_panels")` -> [ListControlPanelsPaginator](./paginators.md#listcontrolpanelspaginator)
+- `client.get_paginator("list_routing_controls")` -> [ListRoutingControlsPaginator](./paginators.md#listroutingcontrolspaginator)
+- `client.get_paginator("list_safety_rules")` -> [ListSafetyRulesPaginator](./paginators.md#listsafetyrulespaginator)
+
+
 
 
 ### get_waiter
