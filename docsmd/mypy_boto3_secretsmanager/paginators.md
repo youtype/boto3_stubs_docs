@@ -47,6 +47,7 @@ Type annotations and code completion for `#!python ListSecretsPaginator.paginate
 def paginate(
     self,
     *,
+    IncludePlannedDeletion: bool = ...,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     SortOrder: SortOrderTypeType = ...,  # (2)
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
@@ -62,7 +63,7 @@ def paginate(
 
 ```python title="Usage example with kwargs"
 kwargs: ListSecretsRequestListSecretsPaginateTypeDef = {  # (1)
-    "Filters": ...,
+    "IncludePlannedDeletion": ...,
 }
 
 parent.paginate(**kwargs)

@@ -410,6 +410,7 @@ Type annotations and code completion for `#!python boto3.client("secretsmanager"
 def list_secrets(
     self,
     *,
+    IncludePlannedDeletion: bool = ...,
     MaxResults: int = ...,
     NextToken: str = ...,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
@@ -425,7 +426,7 @@ def list_secrets(
 
 ```python title="Usage example with kwargs"
 kwargs: ListSecretsRequestRequestTypeDef = {  # (1)
-    "MaxResults": ...,
+    "IncludePlannedDeletion": ...,
 }
 
 parent.list_secrets(**kwargs)

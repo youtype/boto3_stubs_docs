@@ -21,6 +21,7 @@ FilterNameStringTypeType = Literal[
     "all",
     "description",
     "name",
+    "owning-service",
     "primary-region",
     "tag-key",
     "tag-value",

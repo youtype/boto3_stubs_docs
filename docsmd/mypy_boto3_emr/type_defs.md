@@ -430,6 +430,23 @@ class CreateStudioSessionMappingInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+## UsernamePasswordTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import UsernamePasswordTypeDef
+
+def get_value() -> UsernamePasswordTypeDef:
+    return {
+        "Username": ...,
+    }
+```
+
+```python title="Definition"
+class UsernamePasswordTypeDef(TypedDict):
+    Username: NotRequired[str],
+    Password: NotRequired[str],
+```
+
 ## DeleteSecurityConfigurationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -741,6 +758,24 @@ def get_value() -> GetAutoTerminationPolicyInputRequestTypeDef:
 ```python title="Definition"
 class GetAutoTerminationPolicyInputRequestTypeDef(TypedDict):
     ClusterId: str,
+```
+
+## GetClusterSessionCredentialsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import GetClusterSessionCredentialsInputRequestTypeDef
+
+def get_value() -> GetClusterSessionCredentialsInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "ExecutionRoleArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetClusterSessionCredentialsInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    ExecutionRoleArn: str,
 ```
 
 ## GetManagedScalingPolicyInputRequestTypeDef
@@ -2223,6 +2258,23 @@ class ManagedScalingPolicyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ComputeLimitsTypeDef](./type_defs.md#computelimitstypedef) 
+## CredentialsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import CredentialsTypeDef
+
+def get_value() -> CredentialsTypeDef:
+    return {
+        "UsernamePassword": ...,
+    }
+```
+
+```python title="Definition"
+class CredentialsTypeDef(TypedDict):
+    UsernamePassword: NotRequired[UsernamePasswordTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UsernamePasswordTypeDef](./type_defs.md#usernamepasswordtypedef) 
 ## DescribeClusterInputClusterRunningWaitTypeDef
 
 ```python title="Usage Example"
@@ -3150,6 +3202,28 @@ class PutManagedScalingPolicyInputRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef) 
+## GetClusterSessionCredentialsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import GetClusterSessionCredentialsOutputTypeDef
+
+def get_value() -> GetClusterSessionCredentialsOutputTypeDef:
+    return {
+        "Credentials": ...,
+        "ExpiresAt": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetClusterSessionCredentialsOutputTypeDef(TypedDict):
+    Credentials: CredentialsTypeDef,  # (1)
+    ExpiresAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EbsConfigurationTypeDef
 
 ```python title="Usage Example"

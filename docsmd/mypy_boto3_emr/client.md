@@ -734,6 +734,39 @@ def get_block_public_access_configuration(
 
 1. See [:material-code-braces: GetBlockPublicAccessConfigurationOutputTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputtypedef) 
 
+### get\_cluster\_session\_credentials
+
+Provides Temporary, basic HTTP credentials that are associated with a given
+runtime IAM role and used by a cluster with fine-grained access control
+activated.
+
+Type annotations and code completion for `#!python boto3.client("emr").get_cluster_session_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_cluster_session_credentials)
+
+```python title="Method definition"
+def get_cluster_session_credentials(
+    self,
+    *,
+    ClusterId: str,
+    ExecutionRoleArn: str,
+) -> GetClusterSessionCredentialsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetClusterSessionCredentialsOutputTypeDef](./type_defs.md#getclustersessioncredentialsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetClusterSessionCredentialsInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "ExecutionRoleArn": ...,
+}
+
+parent.get_cluster_session_credentials(**kwargs)
+```
+
+1. See [:material-code-braces: GetClusterSessionCredentialsInputRequestTypeDef](./type_defs.md#getclustersessioncredentialsinputrequesttypedef) 
+
 ### get\_managed\_scaling\_policy
 
 Fetches the attached managed scaling policy for an Amazon EMR cluster.

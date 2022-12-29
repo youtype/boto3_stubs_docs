@@ -947,6 +947,7 @@ def get_value() -> DescribeSecretResponseTypeDef:
         "LastChangedDate": ...,
         "LastAccessedDate": ...,
         "DeletedDate": ...,
+        "NextRotationDate": ...,
         "Tags": ...,
         "VersionIdsToStages": ...,
         "OwningService": ...,
@@ -970,6 +971,7 @@ class DescribeSecretResponseTypeDef(TypedDict):
     LastChangedDate: datetime,
     LastAccessedDate: datetime,
     DeletedDate: datetime,
+    NextRotationDate: datetime,
     Tags: List[TagTypeDef],  # (2)
     VersionIdsToStages: Dict[str, List[str]],
     OwningService: str,
@@ -1028,6 +1030,7 @@ class SecretListEntryTypeDef(TypedDict):
     LastChangedDate: NotRequired[datetime],
     LastAccessedDate: NotRequired[datetime],
     DeletedDate: NotRequired[datetime],
+    NextRotationDate: NotRequired[datetime],
     Tags: NotRequired[List[TagTypeDef]],  # (2)
     SecretVersionsToStages: NotRequired[Dict[str, List[str]]],
     OwningService: NotRequired[str],
@@ -1044,12 +1047,13 @@ from mypy_boto3_secretsmanager.type_defs import ListSecretsRequestRequestTypeDef
 
 def get_value() -> ListSecretsRequestRequestTypeDef:
     return {
-        "MaxResults": ...,
+        "IncludePlannedDeletion": ...,
     }
 ```
 
 ```python title="Definition"
 class ListSecretsRequestRequestTypeDef(TypedDict):
+    IncludePlannedDeletion: NotRequired[bool],
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
@@ -1091,12 +1095,13 @@ from mypy_boto3_secretsmanager.type_defs import ListSecretsRequestListSecretsPag
 
 def get_value() -> ListSecretsRequestListSecretsPaginateTypeDef:
     return {
-        "Filters": ...,
+        "IncludePlannedDeletion": ...,
     }
 ```
 
 ```python title="Definition"
 class ListSecretsRequestListSecretsPaginateTypeDef(TypedDict):
+    IncludePlannedDeletion: NotRequired[bool],
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     SortOrder: NotRequired[SortOrderTypeType],  # (2)
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
