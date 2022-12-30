@@ -2262,6 +2262,22 @@ class ResponseHeadersPolicyReferrerPolicyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReferrerPolicyListType](./literals.md#referrerpolicylisttype) 
+## ResponseHeadersPolicyRemoveHeaderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyRemoveHeaderTypeDef
+
+def get_value() -> ResponseHeadersPolicyRemoveHeaderTypeDef:
+    return {
+        "Header": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseHeadersPolicyRemoveHeaderTypeDef(TypedDict):
+    Header: str,
+```
+
 ## ResponseHeadersPolicyStrictTransportSecurityTypeDef
 
 ```python title="Usage Example"
@@ -3674,6 +3690,24 @@ class ResponseHeadersPolicyCustomHeadersConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseHeadersPolicyCustomHeaderTypeDef](./type_defs.md#responseheaderspolicycustomheadertypedef) 
+## ResponseHeadersPolicyRemoveHeadersConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudfront.type_defs import ResponseHeadersPolicyRemoveHeadersConfigTypeDef
+
+def get_value() -> ResponseHeadersPolicyRemoveHeadersConfigTypeDef:
+    return {
+        "Quantity": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseHeadersPolicyRemoveHeadersConfigTypeDef(TypedDict):
+    Quantity: int,
+    Items: NotRequired[Sequence[ResponseHeadersPolicyRemoveHeaderTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ResponseHeadersPolicyRemoveHeaderTypeDef](./type_defs.md#responseheaderspolicyremoveheadertypedef) 
 ## ResponseHeadersPolicySecurityHeadersConfigTypeDef
 
 ```python title="Usage Example"
@@ -4759,12 +4793,14 @@ class ResponseHeadersPolicyConfigTypeDef(TypedDict):
     SecurityHeadersConfig: NotRequired[ResponseHeadersPolicySecurityHeadersConfigTypeDef],  # (2)
     ServerTimingHeadersConfig: NotRequired[ResponseHeadersPolicyServerTimingHeadersConfigTypeDef],  # (3)
     CustomHeadersConfig: NotRequired[ResponseHeadersPolicyCustomHeadersConfigTypeDef],  # (4)
+    RemoveHeadersConfig: NotRequired[ResponseHeadersPolicyRemoveHeadersConfigTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: ResponseHeadersPolicyCorsConfigTypeDef](./type_defs.md#responseheaderspolicycorsconfigtypedef) 
 2. See [:material-code-braces: ResponseHeadersPolicySecurityHeadersConfigTypeDef](./type_defs.md#responseheaderspolicysecurityheadersconfigtypedef) 
 3. See [:material-code-braces: ResponseHeadersPolicyServerTimingHeadersConfigTypeDef](./type_defs.md#responseheaderspolicyservertimingheadersconfigtypedef) 
 4. See [:material-code-braces: ResponseHeadersPolicyCustomHeadersConfigTypeDef](./type_defs.md#responseheaderspolicycustomheadersconfigtypedef) 
+5. See [:material-code-braces: ResponseHeadersPolicyRemoveHeadersConfigTypeDef](./type_defs.md#responseheaderspolicyremoveheadersconfigtypedef) 
 ## StreamingDistributionListTypeDef
 
 ```python title="Usage Example"

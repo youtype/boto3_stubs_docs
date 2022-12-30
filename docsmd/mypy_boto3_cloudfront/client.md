@@ -169,6 +169,7 @@ except (
     client.TooManyQueryStringsInCachePolicy,
     client.TooManyQueryStringsInOriginRequestPolicy,
     client.TooManyRealtimeLogConfigs,
+    client.TooManyRemoveHeadersInResponseHeadersPolicy,
     client.TooManyResponseHeadersPolicies,
     client.TooManyStreamingDistributionCNAMEs,
     client.TooManyStreamingDistributions,
