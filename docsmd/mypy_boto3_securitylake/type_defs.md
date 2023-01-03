@@ -852,14 +852,15 @@ from mypy_boto3_securitylake.type_defs import UpdateSubscriberRequestRequestType
 def get_value() -> UpdateSubscriberRequestRequestTypeDef:
     return {
         "id": ...,
+        "sourceTypes": ...,
     }
 ```
 
 ```python title="Definition"
 class UpdateSubscriberRequestRequestTypeDef(TypedDict):
     id: str,
+    sourceTypes: Sequence[SourceTypeTypeDef],  # (1)
     externalId: NotRequired[str],
-    sourceTypes: NotRequired[Sequence[SourceTypeTypeDef]],  # (1)
     subscriberDescription: NotRequired[str],
     subscriberName: NotRequired[str],
 ```

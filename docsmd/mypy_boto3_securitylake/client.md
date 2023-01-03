@@ -96,7 +96,7 @@ def close(
 
 ### create\_aws\_log\_source
 
-Adds a natively-supported Amazon Web Services service as a Security Lake source.
+Adds a natively supported Amazon Web Service as an Amazon Security Lake source.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").create_aws_log_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.create_aws_log_source)
@@ -129,8 +129,8 @@ parent.create_aws_log_source(**kwargs)
 
 ### create\_custom\_log\_source
 
-Adds a third-party custom source in Amazon Security Lake, from the Region where
-you want to create a custom source.
+Adds a third-party custom source in Amazon Security Lake, from the Amazon Web
+Services Region where you want to create a custom source.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").create_custom_log_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.create_custom_log_source)
@@ -200,8 +200,8 @@ parent.create_datalake(**kwargs)
 
 ### create\_datalake\_auto\_enable
 
-Automatically enable Security Lake in the specified Regions to begin ingesting
-security data.
+Automatically enables Amazon Security Lake for new member accounts in your
+organization.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").create_datalake_auto_enable` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.create_datalake_auto_enable)
@@ -230,7 +230,8 @@ parent.create_datalake_auto_enable(**kwargs)
 
 ### create\_datalake\_delegated\_admin
 
-Designates the Security Lake administrator account for the organization.
+Designates the Amazon Security Lake delegated administrator account for the
+organization.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").create_datalake_delegated_admin` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.create_datalake_delegated_admin)
@@ -258,7 +259,8 @@ parent.create_datalake_delegated_admin(**kwargs)
 
 ### create\_datalake\_exceptions\_subscription
 
-Creates the specified notification subscription in Security Lake.
+Creates the specified notification subscription in Amazon Security Lake for the
+organization you specify.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").create_datalake_exceptions_subscription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.create_datalake_exceptions_subscription)
@@ -290,7 +292,7 @@ parent.create_datalake_exceptions_subscription(**kwargs)
 ### create\_subscriber
 
 Creates a subscription permission for accounts that are already enabled in
-Security Lake.
+Amazon Security Lake.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").create_subscriber` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.create_subscriber)
@@ -329,7 +331,8 @@ parent.create_subscriber(**kwargs)
 
 ### create\_subscription\_notification\_configuration
 
-Creates the specified notification subscription in Security Lake.
+Notifies the subscriber when new data is written to the data lake for the
+sources that the subscriber consumes in Security Lake.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").create_subscription_notification_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.create_subscription_notification_configuration)
@@ -365,8 +368,8 @@ parent.create_subscription_notification_configuration(**kwargs)
 
 ### delete\_aws\_log\_source
 
-Removes a natively-supported Amazon Web Services service as a Amazon Security
-Lake source.
+Removes a natively supported Amazon Web Service as an Amazon Security Lake
+source.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_aws_log_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_aws_log_source)
@@ -399,7 +402,7 @@ parent.delete_aws_log_source(**kwargs)
 
 ### delete\_custom\_log\_source
 
-Removes a custom log source from Security Lake.
+Removes a custom log source from Amazon Security Lake.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_custom_log_source` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_custom_log_source)
@@ -429,7 +432,7 @@ parent.delete_custom_log_source(**kwargs)
 ### delete\_datalake
 
 When you delete Amazon Security Lake from your account, Security Lake is
-disabled in all Regions.
+disabled in all Amazon Web Services Regions.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_datalake` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_datalake)
@@ -444,8 +447,7 @@ def delete_datalake(
 
 ### delete\_datalake\_auto\_enable
 
-Automatically delete Security Lake in the specified Regions to stop ingesting
-security data.
+Automatically deletes Amazon Security Lake to stop collecting security data.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_datalake_auto_enable` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_datalake_auto_enable)
@@ -474,7 +476,8 @@ parent.delete_datalake_auto_enable(**kwargs)
 
 ### delete\_datalake\_delegated\_admin
 
-Deletes the Security Lake administrator account for the organization.
+Deletes the Amazon Security Lake delegated administrator account for the
+organization.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_datalake_delegated_admin` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_datalake_delegated_admin)
@@ -502,7 +505,8 @@ parent.delete_datalake_delegated_admin(**kwargs)
 
 ### delete\_datalake\_exceptions\_subscription
 
-Deletes the specified notification subscription in Security Lake.
+Deletes the specified notification subscription in Amazon Security Lake for the
+organization you specify.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_datalake_exceptions_subscription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_datalake_exceptions_subscription)
@@ -518,7 +522,8 @@ def delete_datalake_exceptions_subscription(
 
 ### delete\_subscriber
 
-Deletes the specified subscription permissions to Security Lake.
+Deletes the subscription permission for accounts that are already enabled in
+Amazon Security Lake.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_subscriber` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_subscriber)
@@ -546,7 +551,8 @@ parent.delete_subscriber(**kwargs)
 
 ### delete\_subscription\_notification\_configuration
 
-Deletes the specified notification subscription in Security Lake.
+Deletes the specified notification subscription in Amazon Security Lake for the
+organization you specify.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").delete_subscription_notification_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.delete_subscription_notification_configuration)
@@ -593,7 +599,8 @@ def generate_presigned_url(
 
 ### get\_datalake
 
-Retrieve the Security Lake configuration object for the specified account ID.
+Retrieves the Amazon Security Lake configuration object for the specified Amazon
+Web Services account ID.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").get_datalake` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.get_datalake)
@@ -610,7 +617,7 @@ def get_datalake(
 ### get\_datalake\_auto\_enable
 
 Retrieves the configuration that will be automatically set up for accounts added
-to the organization after the organization has on boarded to Amazon Security
+to the organization after the organization has onboarded to Amazon Security
 Lake.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").get_datalake_auto_enable` method.
@@ -661,7 +668,9 @@ def get_datalake_exceptions_subscription(
 
 ### get\_datalake\_status
 
-Retrieve the Security Lake configuration object for the specified account ID.
+Retrieves a snapshot of the current Region, including whether Amazon Security
+Lake is enabled for those accounts and which sources Security Lake is collecting
+data from.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").get_datalake_status` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.get_datalake_status)
@@ -692,7 +701,7 @@ parent.get_datalake_status(**kwargs)
 
 ### get\_subscriber
 
-Retrieves subscription information for the specified subscription ID.
+Retrieves the subscription information for the specified subscription ID.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").get_subscriber` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.get_subscriber)
@@ -721,7 +730,7 @@ parent.get_subscriber(**kwargs)
 
 ### list\_datalake\_exceptions
 
-List the Amazon Security Lake exceptions that you can use to find the source of
+Lists the Amazon Security Lake exceptions that you can use to find the source of
 problems and fix them.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").list_datalake_exceptions` method.
@@ -754,7 +763,7 @@ parent.list_datalake_exceptions(**kwargs)
 
 ### list\_log\_sources
 
-Lists the log sources in the current region.
+Retrieves the log sources in the current Amazon Web Services Region.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").list_log_sources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.list_log_sources)
@@ -789,7 +798,7 @@ parent.list_log_sources(**kwargs)
 
 ### list\_subscribers
 
-List all subscribers for the specific Security Lake account ID.
+List all subscribers for the specific Amazon Security Lake account ID.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").list_subscribers` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.list_subscribers)
@@ -819,8 +828,7 @@ parent.list_subscribers(**kwargs)
 
 ### update\_datalake
 
-Amazon Security Lake allows you to specify where to store your security data and
-for how long.
+Specifies where to store your security data and for how long.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").update_datalake` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.update_datalake)
@@ -878,7 +886,8 @@ parent.update_datalake_exceptions_expiry(**kwargs)
 
 ### update\_datalake\_exceptions\_subscription
 
-Update the subscription notification for exception notification.
+Updates the specified notification subscription in Amazon Security Lake for the
+organization you specify.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").update_datalake_exceptions_subscription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.update_datalake_exceptions_subscription)
@@ -909,7 +918,7 @@ parent.update_datalake_exceptions_subscription(**kwargs)
 
 ### update\_subscriber
 
-Update the subscription permission for the given Security Lake account ID.
+Updates an existing subscription for the given Amazon Security Lake account ID.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").update_subscriber` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securitylake.html#SecurityLake.Client.update_subscriber)
@@ -919,8 +928,8 @@ def update_subscriber(
     self,
     *,
     id: str,
+    sourceTypes: Sequence[SourceTypeTypeDef],  # (1)
     externalId: str = ...,
-    sourceTypes: Sequence[SourceTypeTypeDef] = ...,  # (1)
     subscriberDescription: str = ...,
     subscriberName: str = ...,
 ) -> UpdateSubscriberResponseTypeDef:  # (2)
@@ -934,6 +943,7 @@ def update_subscriber(
 ```python title="Usage example with kwargs"
 kwargs: UpdateSubscriberRequestRequestTypeDef = {  # (1)
     "id": ...,
+    "sourceTypes": ...,
 }
 
 parent.update_subscriber(**kwargs)
@@ -943,7 +953,7 @@ parent.update_subscriber(**kwargs)
 
 ### update\_subscription\_notification\_configuration
 
-Create a new subscription notification or add the existing subscription
+Creates a new subscription notification or adds the existing subscription
 notification setting for the specified subscription ID.
 
 Type annotations and code completion for `#!python boto3.client("securitylake").update_subscription_notification_configuration` method.
