@@ -247,6 +247,7 @@ def describe_scaling_activities(
     ScalableDimension: ScalableDimensionType = ...,  # (2)
     MaxResults: int = ...,
     NextToken: str = ...,
+    IncludeNotScaledActivities: bool = ...,
 ) -> DescribeScalingActivitiesResponseTypeDef:  # (3)
     ...
 ```
@@ -448,7 +449,7 @@ parent.put_scheduled_action(**kwargs)
 
 ### register\_scalable\_target
 
-Registers or updates a scalable target.
+Registers or updates a scalable target, the resource that you want to scale.
 
 Type annotations and code completion for `#!python boto3.client("application-autoscaling").register_scalable_target` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)

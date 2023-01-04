@@ -15,7 +15,7 @@
         <link rel="next" href="../usage/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.1">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3bd4f189.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f56500e0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
@@ -2276,13 +2276,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scalingactivitytypedef" class="md-nav__link">
-    ScalingActivityTypeDef
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#describescalingpoliciesrequestrequesttypedef" class="md-nav__link">
     DescribeScalingPoliciesRequestRequestTypeDef
   </a>
@@ -2292,6 +2285,13 @@
         <li class="md-nav__item">
   <a href="#describescheduledactionsrequestrequesttypedef" class="md-nav__link">
     DescribeScheduledActionsRequestRequestTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notscaledreasontypedef" class="md-nav__link">
+    NotScaledReasonTypeDef
   </a>
   
 </li>
@@ -2367,8 +2367,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#describescalingactivitiesresponsetypedef" class="md-nav__link">
-    DescribeScalingActivitiesResponseTypeDef
+  <a href="#scalingactivitytypedef" class="md-nav__link">
+    ScalingActivityTypeDef
   </a>
   
 </li>
@@ -2411,6 +2411,13 @@
         <li class="md-nav__item">
   <a href="#targettrackingscalingpolicyconfigurationtypedef" class="md-nav__link">
     TargetTrackingScalingPolicyConfigurationTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#describescalingactivitiesresponsetypedef" class="md-nav__link">
+    DescribeScalingActivitiesResponseTypeDef
   </a>
   
 </li>
@@ -39847,13 +39854,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#scalingactivitytypedef" class="md-nav__link">
-    ScalingActivityTypeDef
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#describescalingpoliciesrequestrequesttypedef" class="md-nav__link">
     DescribeScalingPoliciesRequestRequestTypeDef
   </a>
@@ -39863,6 +39863,13 @@
         <li class="md-nav__item">
   <a href="#describescheduledactionsrequestrequesttypedef" class="md-nav__link">
     DescribeScheduledActionsRequestRequestTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notscaledreasontypedef" class="md-nav__link">
+    NotScaledReasonTypeDef
   </a>
   
 </li>
@@ -39938,8 +39945,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#describescalingactivitiesresponsetypedef" class="md-nav__link">
-    DescribeScalingActivitiesResponseTypeDef
+  <a href="#scalingactivitytypedef" class="md-nav__link">
+    ScalingActivityTypeDef
   </a>
   
 </li>
@@ -39982,6 +39989,13 @@
         <li class="md-nav__item">
   <a href="#targettrackingscalingpolicyconfigurationtypedef" class="md-nav__link">
     TargetTrackingScalingPolicyConfigurationTypeDef
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#describescalingactivitiesresponsetypedef" class="md-nav__link">
+    DescribeScalingActivitiesResponseTypeDef
   </a>
   
 </li>
@@ -40197,55 +40211,43 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appli
 <a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ScalableDimensionType</span><span class="p">],</span>  <span class="c1"># (2)</span>
 <a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>    <span class="n">IncludeNotScaledActivities</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
 <li>See <a href="../literals/#scalabledimensiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalableDimensionType</a> </li>
-</ol>
-<h2 id="scalingactivitytypedef">ScalingActivityTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">ScalingActivityTypeDef</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ScalingActivityTypeDef</span><span class="p">:</span>
-<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>        <span class="s2">&quot;ActivityId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>        <span class="s2">&quot;ScalableDimension&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>        <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>        <span class="s2">&quot;Cause&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>        <span class="s2">&quot;StartTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>        <span class="s2">&quot;StatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>    <span class="p">}</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">class</span> <span class="nc">ScalingActivityTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="n">ActivityId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">ScalableDimensionType</span><span class="p">,</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="n">Description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="n">Cause</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    <span class="n">StartTime</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
-<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>    <span class="n">StatusCode</span><span class="p">:</span> <span class="n">ScalingActivityStatusCodeType</span><span class="p">,</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>    <span class="n">EndTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">datetime</span><span class="p">],</span>
-<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>    <span class="n">StatusMessage</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>    <span class="n">Details</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-</code></pre></div>
-<ol>
-<li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
-<li>See <a href="../literals/#scalabledimensiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalableDimensionType</a> </li>
-<li>See <a href="../literals/#scalingactivitystatuscodetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalingActivityStatusCodeType</a> </li>
 </ol>
 <h2 id="describescalingpoliciesrequestrequesttypedef">DescribeScalingPoliciesRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalingPoliciesRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalingPoliciesRequestRequestTypeDef</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalingPoliciesRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">class</span> <span class="nc">DescribeScalingPoliciesRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="n">PolicyNames</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ScalableDimensionType</span><span class="p">],</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+</code></pre></div>
+<ol>
+<li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
+<li>See <a href="../literals/#scalabledimensiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalableDimensionType</a> </li>
+</ol>
+<h2 id="describescheduledactionsrequestrequesttypedef">DescribeScheduledActionsRequestRequestTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScheduledActionsRequestRequestTypeDef</span>
 <a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalingPoliciesRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScheduledActionsRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">class</span> <span class="nc">DescribeScalingPoliciesRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">class</span> <span class="nc">DescribeScheduledActionsRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="n">PolicyNames</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="n">ScheduledActionNames</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
 <a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ScalableDimensionType</span><span class="p">],</span>  <span class="c1"># (2)</span>
 <a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
@@ -40255,26 +40257,20 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appli
 <li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
 <li>See <a href="../literals/#scalabledimensiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalableDimensionType</a> </li>
 </ol>
-<h2 id="describescheduledactionsrequestrequesttypedef">DescribeScheduledActionsRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScheduledActionsRequestRequestTypeDef</span>
+<h2 id="notscaledreasontypedef">NotScaledReasonTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">NotScaledReasonTypeDef</span>
 <a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScheduledActionsRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">NotScaledReasonTypeDef</span><span class="p">:</span>
 <a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>        <span class="s2">&quot;Code&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">class</span> <span class="nc">DescribeScheduledActionsRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="n">ScheduledActionNames</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
-<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ScalableDimensionType</span><span class="p">],</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
-<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">class</span> <span class="nc">NotScaledReasonTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="n">Code</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="n">MaxCapacity</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="n">MinCapacity</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="n">CurrentCapacity</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 </code></pre></div>
-<ol>
-<li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
-<li>See <a href="../literals/#scalabledimensiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalableDimensionType</a> </li>
-</ol>
 <h2 id="predefinedmetricspecificationtypedef">PredefinedMetricSpecificationTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">PredefinedMetricSpecificationTypeDef</span>
 <a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>
@@ -40380,7 +40376,8 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appli
 <a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ScalableDimensionType</span><span class="p">],</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>    <span class="n">IncludeNotScaledActivities</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (3)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
@@ -40446,24 +40443,40 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appli
 <li>See <a href="./#alarmtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> AlarmTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
-<h2 id="describescalingactivitiesresponsetypedef">DescribeScalingActivitiesResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalingActivitiesResponseTypeDef</span>
+<h2 id="scalingactivitytypedef">ScalingActivityTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">ScalingActivityTypeDef</span>
 <a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>
-<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalingActivitiesResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ScalingActivityTypeDef</span><span class="p">:</span>
 <a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>        <span class="s2">&quot;ScalingActivities&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>    <span class="p">}</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>        <span class="s2">&quot;ActivityId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>        <span class="s2">&quot;ScalableDimension&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a>        <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a>        <span class="s2">&quot;Cause&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a>        <span class="s2">&quot;StartTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a>        <span class="s2">&quot;StatusCode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="k">class</span> <span class="nc">DescribeScalingActivitiesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>    <span class="n">ScalingActivities</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScalingActivityTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="k">class</span> <span class="nc">ScalingActivityTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>    <span class="n">ActivityId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">ScalableDimensionType</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>    <span class="n">Description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>    <span class="n">Cause</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>    <span class="n">StartTime</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>    <span class="n">StatusCode</span><span class="p">:</span> <span class="n">ScalingActivityStatusCodeType</span><span class="p">,</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>    <span class="n">EndTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">datetime</span><span class="p">],</span>
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>    <span class="n">StatusMessage</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>    <span class="n">Details</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a>    <span class="n">NotScaledReasons</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">NotScaledReasonTypeDef</span><span class="p">]],</span>  <span class="c1"># (4)</span>
 </code></pre></div>
 <ol>
-<li>See <a href="./#scalingactivitytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ScalingActivityTypeDef</a> </li>
-<li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
+<li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
+<li>See <a href="../literals/#scalabledimensiontype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalableDimensionType</a> </li>
+<li>See <a href="../literals/#scalingactivitystatuscodetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ScalingActivityStatusCodeType</a> </li>
+<li>See <a href="./#notscaledreasontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> NotScaledReasonTypeDef</a> </li>
 </ol>
 <h2 id="putscheduledactionrequestrequesttypedef">PutScheduledActionRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">PutScheduledActionRequestRequestTypeDef</span>
@@ -40616,63 +40629,82 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appli
 <li>See <a href="./#predefinedmetricspecificationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> PredefinedMetricSpecificationTypeDef</a> </li>
 <li>See <a href="./#customizedmetricspecificationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CustomizedMetricSpecificationTypeDef</a> </li>
 </ol>
-<h2 id="describescheduledactionsresponsetypedef">DescribeScheduledActionsResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScheduledActionsResponseTypeDef</span>
+<h2 id="describescalingactivitiesresponsetypedef">DescribeScalingActivitiesResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalingActivitiesResponseTypeDef</span>
 <a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>
-<a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScheduledActionsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalingActivitiesResponseTypeDef</span><span class="p">:</span>
 <a id="__codelineno-58-4" name="__codelineno-58-4" href="#__codelineno-58-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-58-5" name="__codelineno-58-5" href="#__codelineno-58-5"></a>        <span class="s2">&quot;ScheduledActions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-58-5" name="__codelineno-58-5" href="#__codelineno-58-5"></a>        <span class="s2">&quot;ScalingActivities&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-58-6" name="__codelineno-58-6" href="#__codelineno-58-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-58-7" name="__codelineno-58-7" href="#__codelineno-58-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-58-8" name="__codelineno-58-8" href="#__codelineno-58-8"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="k">class</span> <span class="nc">DescribeScheduledActionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>    <span class="n">ScheduledActions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScheduledActionTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="k">class</span> <span class="nc">DescribeScalingActivitiesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>    <span class="n">ScalingActivities</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScalingActivityTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-59-4" name="__codelineno-59-4" href="#__codelineno-59-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+</code></pre></div>
+<ol>
+<li>See <a href="./#scalingactivitytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ScalingActivityTypeDef</a> </li>
+<li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
+</ol>
+<h2 id="describescheduledactionsresponsetypedef">DescribeScheduledActionsResponseTypeDef</h2>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScheduledActionsResponseTypeDef</span>
+<a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>
+<a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScheduledActionsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-60-4" name="__codelineno-60-4" href="#__codelineno-60-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-60-5" name="__codelineno-60-5" href="#__codelineno-60-5"></a>        <span class="s2">&quot;ScheduledActions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-60-6" name="__codelineno-60-6" href="#__codelineno-60-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-60-7" name="__codelineno-60-7" href="#__codelineno-60-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-60-8" name="__codelineno-60-8" href="#__codelineno-60-8"></a>    <span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="k">class</span> <span class="nc">DescribeScheduledActionsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>    <span class="n">ScheduledActions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScheduledActionTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-61-3" name="__codelineno-61-3" href="#__codelineno-61-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-61-4" name="__codelineno-61-4" href="#__codelineno-61-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#scheduledactiontypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ScheduledActionTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="describescalabletargetsresponsetypedef">DescribeScalableTargetsResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalableTargetsResponseTypeDef</span>
-<a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a>
-<a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalableTargetsResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-60-4" name="__codelineno-60-4" href="#__codelineno-60-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-60-5" name="__codelineno-60-5" href="#__codelineno-60-5"></a>        <span class="s2">&quot;ScalableTargets&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-60-6" name="__codelineno-60-6" href="#__codelineno-60-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-60-7" name="__codelineno-60-7" href="#__codelineno-60-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-60-8" name="__codelineno-60-8" href="#__codelineno-60-8"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalableTargetsResponseTypeDef</span>
+<a id="__codelineno-62-2" name="__codelineno-62-2" href="#__codelineno-62-2"></a>
+<a id="__codelineno-62-3" name="__codelineno-62-3" href="#__codelineno-62-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalableTargetsResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-62-4" name="__codelineno-62-4" href="#__codelineno-62-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-62-5" name="__codelineno-62-5" href="#__codelineno-62-5"></a>        <span class="s2">&quot;ScalableTargets&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-62-6" name="__codelineno-62-6" href="#__codelineno-62-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-62-7" name="__codelineno-62-7" href="#__codelineno-62-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-62-8" name="__codelineno-62-8" href="#__codelineno-62-8"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="k">class</span> <span class="nc">DescribeScalableTargetsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-61-2" name="__codelineno-61-2" href="#__codelineno-61-2"></a>    <span class="n">ScalableTargets</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScalableTargetTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-61-3" name="__codelineno-61-3" href="#__codelineno-61-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-61-4" name="__codelineno-61-4" href="#__codelineno-61-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="k">class</span> <span class="nc">DescribeScalableTargetsResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a>    <span class="n">ScalableTargets</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScalableTargetTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-63-4" name="__codelineno-63-4" href="#__codelineno-63-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#scalabletargettypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ScalableTargetTypeDef</a> </li>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
 </ol>
 <h2 id="putscalingpolicyrequestrequesttypedef">PutScalingPolicyRequestRequestTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">PutScalingPolicyRequestRequestTypeDef</span>
-<a id="__codelineno-62-2" name="__codelineno-62-2" href="#__codelineno-62-2"></a>
-<a id="__codelineno-62-3" name="__codelineno-62-3" href="#__codelineno-62-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">PutScalingPolicyRequestRequestTypeDef</span><span class="p">:</span>
-<a id="__codelineno-62-4" name="__codelineno-62-4" href="#__codelineno-62-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-62-5" name="__codelineno-62-5" href="#__codelineno-62-5"></a>        <span class="s2">&quot;PolicyName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-62-6" name="__codelineno-62-6" href="#__codelineno-62-6"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-62-7" name="__codelineno-62-7" href="#__codelineno-62-7"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-62-8" name="__codelineno-62-8" href="#__codelineno-62-8"></a>        <span class="s2">&quot;ScalableDimension&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-62-9" name="__codelineno-62-9" href="#__codelineno-62-9"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">PutScalingPolicyRequestRequestTypeDef</span>
+<a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>
+<a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">PutScalingPolicyRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a>        <span class="s2">&quot;PolicyName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a>        <span class="s2">&quot;ScalableDimension&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-64-9" name="__codelineno-64-9" href="#__codelineno-64-9"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="k">class</span> <span class="nc">PutScalingPolicyRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-63-2" name="__codelineno-63-2" href="#__codelineno-63-2"></a>    <span class="n">PolicyName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-63-3" name="__codelineno-63-3" href="#__codelineno-63-3"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-63-4" name="__codelineno-63-4" href="#__codelineno-63-4"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-63-5" name="__codelineno-63-5" href="#__codelineno-63-5"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">ScalableDimensionType</span><span class="p">,</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-63-6" name="__codelineno-63-6" href="#__codelineno-63-6"></a>    <span class="n">PolicyType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PolicyTypeType</span><span class="p">],</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-63-7" name="__codelineno-63-7" href="#__codelineno-63-7"></a>    <span class="n">StepScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">StepScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-63-8" name="__codelineno-63-8" href="#__codelineno-63-8"></a>    <span class="n">TargetTrackingScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TargetTrackingScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (5)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="k">class</span> <span class="nc">PutScalingPolicyRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a>    <span class="n">PolicyName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">ScalableDimensionType</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a>    <span class="n">PolicyType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PolicyTypeType</span><span class="p">],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a>    <span class="n">StepScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">StepScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-65-8" name="__codelineno-65-8" href="#__codelineno-65-8"></a>    <span class="n">TargetTrackingScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TargetTrackingScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (5)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
@@ -40682,30 +40714,30 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appli
 <li>See <a href="./#targettrackingscalingpolicyconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> TargetTrackingScalingPolicyConfigurationTypeDef</a> </li>
 </ol>
 <h2 id="scalingpolicytypedef">ScalingPolicyTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">ScalingPolicyTypeDef</span>
-<a id="__codelineno-64-2" name="__codelineno-64-2" href="#__codelineno-64-2"></a>
-<a id="__codelineno-64-3" name="__codelineno-64-3" href="#__codelineno-64-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ScalingPolicyTypeDef</span><span class="p">:</span>
-<a id="__codelineno-64-4" name="__codelineno-64-4" href="#__codelineno-64-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-64-5" name="__codelineno-64-5" href="#__codelineno-64-5"></a>        <span class="s2">&quot;PolicyARN&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-6" name="__codelineno-64-6" href="#__codelineno-64-6"></a>        <span class="s2">&quot;PolicyName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-7" name="__codelineno-64-7" href="#__codelineno-64-7"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-8" name="__codelineno-64-8" href="#__codelineno-64-8"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-9" name="__codelineno-64-9" href="#__codelineno-64-9"></a>        <span class="s2">&quot;ScalableDimension&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-10" name="__codelineno-64-10" href="#__codelineno-64-10"></a>        <span class="s2">&quot;PolicyType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-11" name="__codelineno-64-11" href="#__codelineno-64-11"></a>        <span class="s2">&quot;CreationTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-64-12" name="__codelineno-64-12" href="#__codelineno-64-12"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">ScalingPolicyTypeDef</span>
+<a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>
+<a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ScalingPolicyTypeDef</span><span class="p">:</span>
+<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-66-5" name="__codelineno-66-5" href="#__codelineno-66-5"></a>        <span class="s2">&quot;PolicyARN&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-66-6" name="__codelineno-66-6" href="#__codelineno-66-6"></a>        <span class="s2">&quot;PolicyName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-66-7" name="__codelineno-66-7" href="#__codelineno-66-7"></a>        <span class="s2">&quot;ServiceNamespace&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-66-8" name="__codelineno-66-8" href="#__codelineno-66-8"></a>        <span class="s2">&quot;ResourceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-66-9" name="__codelineno-66-9" href="#__codelineno-66-9"></a>        <span class="s2">&quot;ScalableDimension&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-66-10" name="__codelineno-66-10" href="#__codelineno-66-10"></a>        <span class="s2">&quot;PolicyType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-66-11" name="__codelineno-66-11" href="#__codelineno-66-11"></a>        <span class="s2">&quot;CreationTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-66-12" name="__codelineno-66-12" href="#__codelineno-66-12"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="k">class</span> <span class="nc">ScalingPolicyTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-65-2" name="__codelineno-65-2" href="#__codelineno-65-2"></a>    <span class="n">PolicyARN</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-65-3" name="__codelineno-65-3" href="#__codelineno-65-3"></a>    <span class="n">PolicyName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-65-4" name="__codelineno-65-4" href="#__codelineno-65-4"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-65-5" name="__codelineno-65-5" href="#__codelineno-65-5"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-65-6" name="__codelineno-65-6" href="#__codelineno-65-6"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">ScalableDimensionType</span><span class="p">,</span>  <span class="c1"># (2)</span>
-<a id="__codelineno-65-7" name="__codelineno-65-7" href="#__codelineno-65-7"></a>    <span class="n">PolicyType</span><span class="p">:</span> <span class="n">PolicyTypeType</span><span class="p">,</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-65-8" name="__codelineno-65-8" href="#__codelineno-65-8"></a>    <span class="n">CreationTime</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
-<a id="__codelineno-65-9" name="__codelineno-65-9" href="#__codelineno-65-9"></a>    <span class="n">StepScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">StepScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-65-10" name="__codelineno-65-10" href="#__codelineno-65-10"></a>    <span class="n">TargetTrackingScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TargetTrackingScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (5)</span>
-<a id="__codelineno-65-11" name="__codelineno-65-11" href="#__codelineno-65-11"></a>    <span class="n">Alarms</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">AlarmTypeDef</span><span class="p">]],</span>  <span class="c1"># (6)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="k">class</span> <span class="nc">ScalingPolicyTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a>    <span class="n">PolicyARN</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a>    <span class="n">PolicyName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-67-4" name="__codelineno-67-4" href="#__codelineno-67-4"></a>    <span class="n">ServiceNamespace</span><span class="p">:</span> <span class="n">ServiceNamespaceType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-67-5" name="__codelineno-67-5" href="#__codelineno-67-5"></a>    <span class="n">ResourceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-67-6" name="__codelineno-67-6" href="#__codelineno-67-6"></a>    <span class="n">ScalableDimension</span><span class="p">:</span> <span class="n">ScalableDimensionType</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<a id="__codelineno-67-7" name="__codelineno-67-7" href="#__codelineno-67-7"></a>    <span class="n">PolicyType</span><span class="p">:</span> <span class="n">PolicyTypeType</span><span class="p">,</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-67-8" name="__codelineno-67-8" href="#__codelineno-67-8"></a>    <span class="n">CreationTime</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
+<a id="__codelineno-67-9" name="__codelineno-67-9" href="#__codelineno-67-9"></a>    <span class="n">StepScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">StepScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-67-10" name="__codelineno-67-10" href="#__codelineno-67-10"></a>    <span class="n">TargetTrackingScalingPolicyConfiguration</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">TargetTrackingScalingPolicyConfigurationTypeDef</span><span class="p">],</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-67-11" name="__codelineno-67-11" href="#__codelineno-67-11"></a>    <span class="n">Alarms</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">AlarmTypeDef</span><span class="p">]],</span>  <span class="c1"># (6)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#servicenamespacetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ServiceNamespaceType</a> </li>
@@ -40716,19 +40748,19 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appli
 <li>See <a href="./#alarmtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> AlarmTypeDef</a> </li>
 </ol>
 <h2 id="describescalingpoliciesresponsetypedef">DescribeScalingPoliciesResponseTypeDef</h2>
-<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalingPoliciesResponseTypeDef</span>
-<a id="__codelineno-66-2" name="__codelineno-66-2" href="#__codelineno-66-2"></a>
-<a id="__codelineno-66-3" name="__codelineno-66-3" href="#__codelineno-66-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalingPoliciesResponseTypeDef</span><span class="p">:</span>
-<a id="__codelineno-66-4" name="__codelineno-66-4" href="#__codelineno-66-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-66-5" name="__codelineno-66-5" href="#__codelineno-66-5"></a>        <span class="s2">&quot;ScalingPolicies&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-66-6" name="__codelineno-66-6" href="#__codelineno-66-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-66-7" name="__codelineno-66-7" href="#__codelineno-66-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-66-8" name="__codelineno-66-8" href="#__codelineno-66-8"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_application_autoscaling.type_defs</span> <span class="kn">import</span> <span class="n">DescribeScalingPoliciesResponseTypeDef</span>
+<a id="__codelineno-68-2" name="__codelineno-68-2" href="#__codelineno-68-2"></a>
+<a id="__codelineno-68-3" name="__codelineno-68-3" href="#__codelineno-68-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DescribeScalingPoliciesResponseTypeDef</span><span class="p">:</span>
+<a id="__codelineno-68-4" name="__codelineno-68-4" href="#__codelineno-68-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-68-5" name="__codelineno-68-5" href="#__codelineno-68-5"></a>        <span class="s2">&quot;ScalingPolicies&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-68-6" name="__codelineno-68-6" href="#__codelineno-68-6"></a>        <span class="s2">&quot;NextToken&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-68-7" name="__codelineno-68-7" href="#__codelineno-68-7"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-68-8" name="__codelineno-68-8" href="#__codelineno-68-8"></a>    <span class="p">}</span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="k">class</span> <span class="nc">DescribeScalingPoliciesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-67-2" name="__codelineno-67-2" href="#__codelineno-67-2"></a>    <span class="n">ScalingPolicies</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScalingPolicyTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-67-3" name="__codelineno-67-3" href="#__codelineno-67-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-67-4" name="__codelineno-67-4" href="#__codelineno-67-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
+<div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-69-1" name="__codelineno-69-1" href="#__codelineno-69-1"></a><span class="k">class</span> <span class="nc">DescribeScalingPoliciesResponseTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
+<a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a>    <span class="n">ScalingPolicies</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ScalingPolicyTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-69-3" name="__codelineno-69-3" href="#__codelineno-69-3"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-69-4" name="__codelineno-69-4" href="#__codelineno-69-4"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (2)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#scalingpolicytypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ScalingPolicyTypeDef</a> </li>

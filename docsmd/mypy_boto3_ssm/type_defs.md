@@ -620,6 +620,8 @@ def get_value() -> DocumentRequiresTypeDef:
 class DocumentRequiresTypeDef(TypedDict):
     Name: str,
     Version: NotRequired[str],
+    RequireType: NotRequired[str],
+    VersionName: NotRequired[str],
 ```
 
 ## OpsItemDataValueTypeDef

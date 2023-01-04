@@ -195,46 +195,11 @@ class DescribeScalingActivitiesRequestRequestTypeDef(TypedDict):
     ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+    IncludeNotScaledActivities: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
 2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
-## ScalingActivityTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_application_autoscaling.type_defs import ScalingActivityTypeDef
-
-def get_value() -> ScalingActivityTypeDef:
-    return {
-        "ActivityId": ...,
-        "ServiceNamespace": ...,
-        "ResourceId": ...,
-        "ScalableDimension": ...,
-        "Description": ...,
-        "Cause": ...,
-        "StartTime": ...,
-        "StatusCode": ...,
-    }
-```
-
-```python title="Definition"
-class ScalingActivityTypeDef(TypedDict):
-    ActivityId: str,
-    ServiceNamespace: ServiceNamespaceType,  # (1)
-    ResourceId: str,
-    ScalableDimension: ScalableDimensionType,  # (2)
-    Description: str,
-    Cause: str,
-    StartTime: datetime,
-    StatusCode: ScalingActivityStatusCodeType,  # (3)
-    EndTime: NotRequired[datetime],
-    StatusMessage: NotRequired[str],
-    Details: NotRequired[str],
-```
-
-1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
-2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
-3. See [:material-code-brackets: ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype) 
 ## DescribeScalingPoliciesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -281,6 +246,25 @@ class DescribeScheduledActionsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
 2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+## NotScaledReasonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_autoscaling.type_defs import NotScaledReasonTypeDef
+
+def get_value() -> NotScaledReasonTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class NotScaledReasonTypeDef(TypedDict):
+    Code: str,
+    MaxCapacity: NotRequired[int],
+    MinCapacity: NotRequired[int],
+    CurrentCapacity: NotRequired[int],
+```
+
 ## PredefinedMetricSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -414,6 +398,7 @@ class DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef(T
     ServiceNamespace: ServiceNamespaceType,  # (1)
     ResourceId: NotRequired[str],
     ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    IncludeNotScaledActivities: NotRequired[bool],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
 ```
 
@@ -488,28 +473,44 @@ class PutScalingPolicyResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeScalingActivitiesResponseTypeDef
+## ScalingActivityTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesResponseTypeDef
+from mypy_boto3_application_autoscaling.type_defs import ScalingActivityTypeDef
 
-def get_value() -> DescribeScalingActivitiesResponseTypeDef:
+def get_value() -> ScalingActivityTypeDef:
     return {
-        "ScalingActivities": ...,
-        "NextToken": ...,
-        "ResponseMetadata": ...,
+        "ActivityId": ...,
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+        "Description": ...,
+        "Cause": ...,
+        "StartTime": ...,
+        "StatusCode": ...,
     }
 ```
 
 ```python title="Definition"
-class DescribeScalingActivitiesResponseTypeDef(TypedDict):
-    ScalingActivities: List[ScalingActivityTypeDef],  # (1)
-    NextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+class ScalingActivityTypeDef(TypedDict):
+    ActivityId: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    Description: str,
+    Cause: str,
+    StartTime: datetime,
+    StatusCode: ScalingActivityStatusCodeType,  # (3)
+    EndTime: NotRequired[datetime],
+    StatusMessage: NotRequired[str],
+    Details: NotRequired[str],
+    NotScaledReasons: NotRequired[List[NotScaledReasonTypeDef]],  # (4)
 ```
 
-1. See [:material-code-braces: ScalingActivityTypeDef](./type_defs.md#scalingactivitytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-brackets: ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype) 
+4. See [:material-code-braces: NotScaledReasonTypeDef](./type_defs.md#notscaledreasontypedef) 
 ## PutScheduledActionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -679,6 +680,28 @@ class TargetTrackingScalingPolicyConfigurationTypeDef(TypedDict):
 
 1. See [:material-code-braces: PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef) 
 2. See [:material-code-braces: CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef) 
+## DescribeScalingActivitiesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesResponseTypeDef
+
+def get_value() -> DescribeScalingActivitiesResponseTypeDef:
+    return {
+        "ScalingActivities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScalingActivitiesResponseTypeDef(TypedDict):
+    ScalingActivities: List[ScalingActivityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ScalingActivityTypeDef](./type_defs.md#scalingactivitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeScheduledActionsResponseTypeDef
 
 ```python title="Usage Example"

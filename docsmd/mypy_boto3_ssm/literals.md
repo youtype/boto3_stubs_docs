@@ -1001,6 +1001,7 @@ DocumentTypeType = Literal[
     "Policy",
     "ProblemAnalysis",
     "ProblemAnalysisTemplate",
+    "QuickSetup",
     "Session",
 ]
 ```

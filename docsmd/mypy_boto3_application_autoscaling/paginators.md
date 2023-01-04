@@ -113,6 +113,7 @@ def paginate(
     ServiceNamespace: ServiceNamespaceType,  # (1)
     ResourceId: str = ...,
     ScalableDimension: ScalableDimensionType = ...,  # (2)
+    IncludeNotScaledActivities: bool = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
 ) -> _PageIterator[DescribeScalingActivitiesResponseTypeDef]:  # (4)
     ...
