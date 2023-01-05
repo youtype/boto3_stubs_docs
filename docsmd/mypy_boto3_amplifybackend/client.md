@@ -604,7 +604,7 @@ parent.get_backend_api(**kwargs)
 
 ### get\_backend\_api\_models
 
-Generates a model schema for existing backend API resource.
+Gets a model introspection schema for an existing backend API resource.
 
 Type annotations and code completion for `#!python boto3.client("amplifybackend").get_backend_api_models` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)

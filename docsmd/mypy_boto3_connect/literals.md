@@ -165,7 +165,9 @@ def get_value() -> ContactInitiationMethodType:
 ContactInitiationMethodType = Literal[
     "API",
     "CALLBACK",
+    "DISCONNECT",
     "INBOUND",
+    "MONITOR",
     "OUTBOUND",
     "QUEUE_TRANSFER",
     "TRANSFER",

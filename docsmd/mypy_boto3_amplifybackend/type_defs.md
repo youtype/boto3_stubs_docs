@@ -1220,6 +1220,7 @@ def get_value() -> GetBackendAPIModelsResponseTypeDef:
     return {
         "Models": ...,
         "Status": ...,
+        "ModelIntrospectionSchema": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1228,6 +1229,7 @@ def get_value() -> GetBackendAPIModelsResponseTypeDef:
 class GetBackendAPIModelsResponseTypeDef(TypedDict):
     Models: str,
     Status: StatusType,  # (1)
+    ModelIntrospectionSchema: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

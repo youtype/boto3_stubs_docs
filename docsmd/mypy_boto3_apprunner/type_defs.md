@@ -167,6 +167,7 @@ class CodeConfigurationValuesTypeDef(TypedDict):
     StartCommand: NotRequired[str],
     Port: NotRequired[str],
     RuntimeEnvironmentVariables: NotRequired[Mapping[str, str]],
+    RuntimeEnvironmentSecrets: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
@@ -627,6 +628,7 @@ class ImageConfigurationTypeDef(TypedDict):
     RuntimeEnvironmentVariables: NotRequired[Mapping[str, str]],
     StartCommand: NotRequired[str],
     Port: NotRequired[str],
+    RuntimeEnvironmentSecrets: NotRequired[Mapping[str, str]],
 ```
 
 ## IngressConfigurationTypeDef

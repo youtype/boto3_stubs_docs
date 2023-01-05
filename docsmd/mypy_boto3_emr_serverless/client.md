@@ -137,7 +137,9 @@ def create_application(
     autoStopConfiguration: AutoStopConfigTypeDef = ...,  # (4)
     networkConfiguration: NetworkConfigurationTypeDef = ...,  # (5)
     architecture: ArchitectureType = ...,  # (6)
-) -> CreateApplicationResponseTypeDef:  # (7)
+    imageConfiguration: ImageConfigurationInputTypeDef = ...,  # (7)
+    workerTypeSpecifications: Mapping[str, WorkerTypeSpecificationInputTypeDef] = ...,  # (8)
+) -> CreateApplicationResponseTypeDef:  # (9)
     ...
 ```
 
@@ -147,7 +149,9 @@ def create_application(
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
-7. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
+7. See [:material-code-braces: ImageConfigurationInputTypeDef](./type_defs.md#imageconfigurationinputtypedef) 
+8. See [:material-code-braces: WorkerTypeSpecificationInputTypeDef](./type_defs.md#workertypespecificationinputtypedef) 
+9. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -571,7 +575,9 @@ def update_application(
     autoStopConfiguration: AutoStopConfigTypeDef = ...,  # (4)
     networkConfiguration: NetworkConfigurationTypeDef = ...,  # (5)
     architecture: ArchitectureType = ...,  # (6)
-) -> UpdateApplicationResponseTypeDef:  # (7)
+    imageConfiguration: ImageConfigurationInputTypeDef = ...,  # (7)
+    workerTypeSpecifications: Mapping[str, WorkerTypeSpecificationInputTypeDef] = ...,  # (8)
+) -> UpdateApplicationResponseTypeDef:  # (9)
     ...
 ```
 
@@ -581,7 +587,9 @@ def update_application(
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
-7. See [:material-code-braces: UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef) 
+7. See [:material-code-braces: ImageConfigurationInputTypeDef](./type_defs.md#imageconfigurationinputtypedef) 
+8. See [:material-code-braces: WorkerTypeSpecificationInputTypeDef](./type_defs.md#workertypespecificationinputtypedef) 
+9. See [:material-code-braces: UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

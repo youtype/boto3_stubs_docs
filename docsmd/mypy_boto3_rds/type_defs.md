@@ -293,6 +293,23 @@ class CancelExportTaskMessageRequestTypeDef(TypedDict):
     ExportTaskIdentifier: str,
 ```
 
+## CertificateDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rds.type_defs import CertificateDetailsTypeDef
+
+def get_value() -> CertificateDetailsTypeDef:
+    return {
+        "CAIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class CertificateDetailsTypeDef(TypedDict):
+    CAIdentifier: NotRequired[str],
+    ValidTill: NotRequired[datetime],
+```
+
 ## CertificateTypeDef
 
 ```python title="Usage Example"
@@ -4101,6 +4118,7 @@ class CreateDBInstanceMessageRequestTypeDef(TypedDict):
     StorageThroughput: NotRequired[int],
     ManageMasterUserPassword: NotRequired[bool],
     MasterUserSecretKmsKeyId: NotRequired[str],
+    CACertificateIdentifier: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -4871,6 +4889,8 @@ def get_value() -> DBEngineVersionResponseMetadataTypeDef:
         "TagList": ...,
         "SupportsBabelfish": ...,
         "CustomDBEngineVersionManifest": ...,
+        "SupportsCertificateRotationWithoutRestart": ...,
+        "SupportedCACertificateIdentifiers": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -4906,6 +4926,8 @@ class DBEngineVersionResponseMetadataTypeDef(TypedDict):
     TagList: List[TagTypeDef],  # (7)
     SupportsBabelfish: bool,
     CustomDBEngineVersionManifest: str,
+    SupportsCertificateRotationWithoutRestart: bool,
+    SupportedCACertificateIdentifiers: List[str],
     ResponseMetadata: ResponseMetadataTypeDef,  # (8)
 ```
 
@@ -4959,6 +4981,8 @@ class DBEngineVersionTypeDef(TypedDict):
     TagList: NotRequired[List[TagTypeDef]],  # (7)
     SupportsBabelfish: NotRequired[bool],
     CustomDBEngineVersionManifest: NotRequired[str],
+    SupportsCertificateRotationWithoutRestart: NotRequired[bool],
+    SupportedCACertificateIdentifiers: NotRequired[List[str]],
 ```
 
 1. See [:material-code-braces: CharacterSetTypeDef](./type_defs.md#charactersettypedef) 
@@ -8867,6 +8891,7 @@ class DBInstanceTypeDef(TypedDict):
     StorageThroughput: NotRequired[int],
     DBSystemId: NotRequired[str],
     MasterUserSecret: NotRequired[MasterUserSecretTypeDef],  # (20)
+    CertificateDetails: NotRequired[CertificateDetailsTypeDef],  # (21)
 ```
 
 1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
@@ -8889,6 +8914,7 @@ class DBInstanceTypeDef(TypedDict):
 18. See [:material-code-brackets: AutomationModeType](./literals.md#automationmodetype) 
 19. See [:material-code-brackets: ActivityStreamPolicyStatusType](./literals.md#activitystreampolicystatustype) 
 20. See [:material-code-braces: MasterUserSecretTypeDef](./type_defs.md#masterusersecrettypedef) 
+21. See [:material-code-braces: CertificateDetailsTypeDef](./type_defs.md#certificatedetailstypedef) 
 ## DBSubnetGroupMessageTypeDef
 
 ```python title="Usage Example"

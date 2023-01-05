@@ -73,6 +73,23 @@ class AutoStopConfigTypeDef(TypedDict):
     idleTimeoutMinutes: NotRequired[int],
 ```
 
+## ImageConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_serverless.type_defs import ImageConfigurationTypeDef
+
+def get_value() -> ImageConfigurationTypeDef:
+    return {
+        "imageUri": ...,
+    }
+```
+
+```python title="Definition"
+class ImageConfigurationTypeDef(TypedDict):
+    imageUri: str,
+    resolvedImageDigest: NotRequired[str],
+```
+
 ## MaximumAllowedResourcesTypeDef
 
 ```python title="Usage Example"
@@ -170,6 +187,22 @@ class ConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+## ImageConfigurationInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_serverless.type_defs import ImageConfigurationInputTypeDef
+
+def get_value() -> ImageConfigurationInputTypeDef:
+    return {
+        "imageUri": ...,
+    }
+```
+
+```python title="Definition"
+class ImageConfigurationInputTypeDef(TypedDict):
+    imageUri: NotRequired[str],
+```
+
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -525,6 +558,23 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     tagKeys: Sequence[str],
 ```
 
+## WorkerTypeSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_serverless.type_defs import WorkerTypeSpecificationTypeDef
+
+def get_value() -> WorkerTypeSpecificationTypeDef:
+    return {
+        "imageConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class WorkerTypeSpecificationTypeDef(TypedDict):
+    imageConfiguration: NotRequired[ImageConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ImageConfigurationTypeDef](./type_defs.md#imageconfigurationtypedef) 
 ## CancelJobRunResponseTypeDef
 
 ```python title="Usage Example"
@@ -652,6 +702,23 @@ class StartJobRunResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## WorkerTypeSpecificationInputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_serverless.type_defs import WorkerTypeSpecificationInputTypeDef
+
+def get_value() -> WorkerTypeSpecificationInputTypeDef:
+    return {
+        "imageConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class WorkerTypeSpecificationInputTypeDef(TypedDict):
+    imageConfiguration: NotRequired[ImageConfigurationInputTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ImageConfigurationInputTypeDef](./type_defs.md#imageconfigurationinputtypedef) 
 ## InitialCapacityConfigTypeDef
 
 ```python title="Usage Example"
@@ -806,6 +873,8 @@ class ApplicationTypeDef(TypedDict):
     autoStopConfiguration: NotRequired[AutoStopConfigTypeDef],  # (5)
     networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (6)
     architecture: NotRequired[ArchitectureType],  # (7)
+    imageConfiguration: NotRequired[ImageConfigurationTypeDef],  # (8)
+    workerTypeSpecifications: NotRequired[Dict[str, WorkerTypeSpecificationTypeDef]],  # (9)
 ```
 
 1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
@@ -815,6 +884,8 @@ class ApplicationTypeDef(TypedDict):
 5. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 6. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 7. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+8. See [:material-code-braces: ImageConfigurationTypeDef](./type_defs.md#imageconfigurationtypedef) 
+9. See [:material-code-braces: WorkerTypeSpecificationTypeDef](./type_defs.md#workertypespecificationtypedef) 
 ## CreateApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -841,6 +912,8 @@ class CreateApplicationRequestRequestTypeDef(TypedDict):
     autoStopConfiguration: NotRequired[AutoStopConfigTypeDef],  # (4)
     networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (5)
     architecture: NotRequired[ArchitectureType],  # (6)
+    imageConfiguration: NotRequired[ImageConfigurationInputTypeDef],  # (7)
+    workerTypeSpecifications: NotRequired[Mapping[str, WorkerTypeSpecificationInputTypeDef]],  # (8)
 ```
 
 1. See [:material-code-braces: InitialCapacityConfigTypeDef](./type_defs.md#initialcapacityconfigtypedef) 
@@ -849,6 +922,8 @@ class CreateApplicationRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+7. See [:material-code-braces: ImageConfigurationInputTypeDef](./type_defs.md#imageconfigurationinputtypedef) 
+8. See [:material-code-braces: WorkerTypeSpecificationInputTypeDef](./type_defs.md#workertypespecificationinputtypedef) 
 ## UpdateApplicationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -871,6 +946,8 @@ class UpdateApplicationRequestRequestTypeDef(TypedDict):
     autoStopConfiguration: NotRequired[AutoStopConfigTypeDef],  # (4)
     networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (5)
     architecture: NotRequired[ArchitectureType],  # (6)
+    imageConfiguration: NotRequired[ImageConfigurationInputTypeDef],  # (7)
+    workerTypeSpecifications: NotRequired[Mapping[str, WorkerTypeSpecificationInputTypeDef]],  # (8)
 ```
 
 1. See [:material-code-braces: InitialCapacityConfigTypeDef](./type_defs.md#initialcapacityconfigtypedef) 
@@ -879,6 +956,8 @@ class UpdateApplicationRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: AutoStopConfigTypeDef](./type_defs.md#autostopconfigtypedef) 
 5. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 6. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+7. See [:material-code-braces: ImageConfigurationInputTypeDef](./type_defs.md#imageconfigurationinputtypedef) 
+8. See [:material-code-braces: WorkerTypeSpecificationInputTypeDef](./type_defs.md#workertypespecificationinputtypedef) 
 ## ConfigurationOverridesTypeDef
 
 ```python title="Usage Example"

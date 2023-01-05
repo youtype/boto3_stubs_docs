@@ -971,6 +971,7 @@ def create_db_instance(
     StorageThroughput: int = ...,
     ManageMasterUserPassword: bool = ...,
     MasterUserSecretKmsKeyId: str = ...,
+    CACertificateIdentifier: str = ...,
 ) -> CreateDBInstanceResultTypeDef:  # (3)
     ...
 ```

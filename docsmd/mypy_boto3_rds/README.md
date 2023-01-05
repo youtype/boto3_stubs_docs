@@ -284,6 +284,7 @@ def get_value() -> AccountQuotaTypeDef:
 - [BlueGreenDeploymentTaskTypeDef](./type_defs.md#bluegreendeploymenttasktypedef)
 - [SwitchoverDetailTypeDef](./type_defs.md#switchoverdetailtypedef)
 - [CancelExportTaskMessageRequestTypeDef](./type_defs.md#cancelexporttaskmessagerequesttypedef)
+- [CertificateDetailsTypeDef](./type_defs.md#certificatedetailstypedef)
 - [CertificateTypeDef](./type_defs.md#certificatetypedef)
 - [CharacterSetTypeDef](./type_defs.md#charactersettypedef)
 - [ClientGenerateDbAuthTokenRequestTypeDef](./type_defs.md#clientgeneratedbauthtokenrequesttypedef)
