@@ -169,6 +169,21 @@ DelegationStatusType = Literal[
     "UNDER_REVIEW",
 ]
 ```
+## DeleteResourcesType
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.literals import DeleteResourcesType
+
+def get_value() -> DeleteResourcesType:
+    return "ALL"
+```
+
+```python title="Definition"
+DeleteResourcesType = Literal[
+    "ALL",
+    "DEFAULT",
+]
+```
 ## EvidenceFinderBackfillStatusType
 
 ```python title="Usage Example"
@@ -278,6 +293,7 @@ SettingAttributeType = Literal[
     "ALL",
     "DEFAULT_ASSESSMENT_REPORTS_DESTINATION",
     "DEFAULT_PROCESS_OWNERS",
+    "DEREGISTRATION_POLICY",
     "EVIDENCE_FINDER_ENABLEMENT",
     "IS_AWS_ORG_ENABLED",
     "SNS_TOPIC",

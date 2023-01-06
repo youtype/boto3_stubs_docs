@@ -56,7 +56,7 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### associate\_assessment\_report\_evidence\_folder
 
-Associates an evidence folder to an assessment report in a Audit Manager
+Associates an evidence folder to an assessment report in an Audit Manager
 assessment.
 
 Type annotations and code completion for `#!python boto3.client("auditmanager").associate_assessment_report_evidence_folder` method.
@@ -1004,7 +1004,7 @@ parent.get_evidence_folders_by_assessment(**kwargs)
 ### get\_evidence\_folders\_by\_assessment\_control
 
 Returns a list of evidence folders that are associated with a specified control
-of an assessment in Audit Manager.
+in an Audit Manager assessment.
 
 Type annotations and code completion for `#!python boto3.client("auditmanager").get_evidence_folders_by_assessment_control` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
@@ -1947,13 +1947,15 @@ def update_settings(
     defaultProcessOwners: Sequence[RoleTypeDef] = ...,  # (2)
     kmsKey: str = ...,
     evidenceFinderEnabled: bool = ...,
-) -> UpdateSettingsResponseTypeDef:  # (3)
+    deregistrationPolicy: DeregistrationPolicyTypeDef = ...,  # (3)
+) -> UpdateSettingsResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
 2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
-3. See [:material-code-braces: UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef) 
+3. See [:material-code-braces: DeregistrationPolicyTypeDef](./type_defs.md#deregistrationpolicytypedef) 
+4. See [:material-code-braces: UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

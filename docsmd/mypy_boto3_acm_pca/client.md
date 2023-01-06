@@ -335,8 +335,8 @@ parent.describe_certificate_authority(**kwargs)
 ### describe\_certificate\_authority\_audit\_report
 
 Lists information about a specific audit report created by calling the
-[CreateCertificateAuthorityAuditReport](https://docs.aws.amazon.com/acm-
-pca/latest/APIReference/API_CreateCertificateAuthorityAuditReport.html)_ action.
+[CreateCertificateAuthorityAuditReport](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthorityAuditReport.html)_
+action.
 
 Type annotations and code completion for `#!python boto3.client("acm-pca").describe_certificate_authority_audit_report` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
@@ -507,7 +507,7 @@ parent.get_policy(**kwargs)
 
 ### import\_certificate\_authority\_certificate
 
-Imports a signed private CA certificate into ACM Private CA.
+Imports a signed private CA certificate into Amazon Web Services Private CA.
 
 Type annotations and code completion for `#!python boto3.client("acm-pca").import_certificate_authority_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
@@ -584,8 +584,8 @@ parent.issue_certificate(**kwargs)
 ### list\_certificate\_authorities
 
 Lists the private certificate authorities that you created by using the
-[CreateCertificateAuthority](https://docs.aws.amazon.com/acm-
-pca/latest/APIReference/API_CreateCertificateAuthority.html)_ action.
+[CreateCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthority.html)_
+action.
 
 Type annotations and code completion for `#!python boto3.client("acm-pca").list_certificate_authorities` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
@@ -741,7 +741,7 @@ parent.restore_certificate_authority(**kwargs)
 
 ### revoke\_certificate
 
-Revokes a certificate that was issued inside ACM Private CA.
+Revokes a certificate that was issued inside Amazon Web Services Private CA.
 
 Type annotations and code completion for `#!python boto3.client("acm-pca").revoke_certificate` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)

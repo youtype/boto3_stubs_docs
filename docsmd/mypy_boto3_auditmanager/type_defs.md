@@ -694,6 +694,23 @@ class DeregisterOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
     adminAccountId: NotRequired[str],
 ```
 
+## DeregistrationPolicyTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.type_defs import DeregistrationPolicyTypeDef
+
+def get_value() -> DeregistrationPolicyTypeDef:
+    return {
+        "deleteResources": ...,
+    }
+```
+
+```python title="Definition"
+class DeregistrationPolicyTypeDef(TypedDict):
+    deleteResources: NotRequired[DeleteResourcesType],  # (1)
+```
+
+1. See [:material-code-brackets: DeleteResourcesType](./literals.md#deleteresourcestype) 
 ## DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1576,28 +1593,6 @@ class AssessmentControlTypeDef(TypedDict):
 1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
 2. See [:material-code-brackets: ControlResponseType](./literals.md#controlresponsetype) 
 3. See [:material-code-braces: ControlCommentTypeDef](./type_defs.md#controlcommenttypedef) 
-## UpdateSettingsRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_auditmanager.type_defs import UpdateSettingsRequestRequestTypeDef
-
-def get_value() -> UpdateSettingsRequestRequestTypeDef:
-    return {
-        "snsTopic": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateSettingsRequestRequestTypeDef(TypedDict):
-    snsTopic: NotRequired[str],
-    defaultAssessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (1)
-    defaultProcessOwners: NotRequired[Sequence[RoleTypeDef]],  # (2)
-    kmsKey: NotRequired[str],
-    evidenceFinderEnabled: NotRequired[bool],
-```
-
-1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
-2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
 ## BatchAssociateAssessmentReportEvidenceResponseTypeDef
 
 ```python title="Usage Example"
@@ -2321,6 +2316,30 @@ class GetDelegationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DelegationMetadataTypeDef](./type_defs.md#delegationmetadatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateSettingsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_auditmanager.type_defs import UpdateSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateSettingsRequestRequestTypeDef:
+    return {
+        "snsTopic": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateSettingsRequestRequestTypeDef(TypedDict):
+    snsTopic: NotRequired[str],
+    defaultAssessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (1)
+    defaultProcessOwners: NotRequired[Sequence[RoleTypeDef]],  # (2)
+    kmsKey: NotRequired[str],
+    evidenceFinderEnabled: NotRequired[bool],
+    deregistrationPolicy: NotRequired[DeregistrationPolicyTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+3. See [:material-code-braces: DeregistrationPolicyTypeDef](./type_defs.md#deregistrationpolicytypedef) 
 ## SettingsTypeDef
 
 ```python title="Usage Example"
@@ -2340,11 +2359,13 @@ class SettingsTypeDef(TypedDict):
     defaultProcessOwners: NotRequired[List[RoleTypeDef]],  # (2)
     kmsKey: NotRequired[str],
     evidenceFinderEnablement: NotRequired[EvidenceFinderEnablementTypeDef],  # (3)
+    deregistrationPolicy: NotRequired[DeregistrationPolicyTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
 2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
 3. See [:material-code-braces: EvidenceFinderEnablementTypeDef](./type_defs.md#evidencefinderenablementtypedef) 
+4. See [:material-code-braces: DeregistrationPolicyTypeDef](./type_defs.md#deregistrationpolicytypedef) 
 ## EvidenceTypeDef
 
 ```python title="Usage Example"
