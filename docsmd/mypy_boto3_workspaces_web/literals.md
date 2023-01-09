@@ -7,6 +7,21 @@
     Auto-generated documentation for [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
     type annotations stubs module [mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
 
+## AuthenticationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_workspaces_web.literals import AuthenticationTypeType
+
+def get_value() -> AuthenticationTypeType:
+    return "IAM_Identity_Center"
+```
+
+```python title="Definition"
+AuthenticationTypeType = Literal[
+    "IAM_Identity_Center",
+    "Standard",
+]
+```
 ## BrowserTypeType
 
 ```python title="Usage Example"
@@ -277,6 +292,7 @@ ServiceName = Literal[
     "kafka",
     "kafkaconnect",
     "kendra",
+    "kendra-ranking",
     "keyspaces",
     "kinesis",
     "kinesis-video-archived-media",

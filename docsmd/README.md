@@ -406,6 +406,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-kendra](./mypy_boto3_kendra/README.md) for [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra) service
 
+- [mypy-boto3-kendra-ranking](./mypy_boto3_kendra_ranking/README.md) for [KendraRanking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra-ranking.html#KendraRanking) service
+
 - [mypy-boto3-keyspaces](./mypy_boto3_keyspaces/README.md) for [Keyspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces) service
 
 - [mypy-boto3-kinesis](./mypy_boto3_kinesis/README.md) for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis) service

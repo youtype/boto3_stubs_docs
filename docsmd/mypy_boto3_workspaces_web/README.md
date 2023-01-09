@@ -75,12 +75,13 @@ def get_client() -> WorkSpacesWebClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_workspaces_web.literals import BrowserTypeType
+from mypy_boto3_workspaces_web.literals import AuthenticationTypeType
 
-def get_value() -> BrowserTypeType:
-    return "Chrome"
+def get_value() -> AuthenticationTypeType:
+    return "IAM_Identity_Center"
 ```
 
+- [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - [BrowserTypeType](./literals.md#browsertypetype)
 - [EnabledTypeType](./literals.md#enabledtypetype)
 - [IdentityProviderTypeType](./literals.md#identityprovidertypetype)

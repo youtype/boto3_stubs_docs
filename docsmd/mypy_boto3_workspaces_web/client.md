@@ -361,16 +361,18 @@ def create_portal(
     self,
     *,
     additionalEncryptionContext: Mapping[str, str] = ...,
+    authenticationType: AuthenticationTypeType = ...,  # (1)
     clientToken: str = ...,
     customerManagedKey: str = ...,
     displayName: str = ...,
-    tags: Sequence[TagTypeDef] = ...,  # (1)
-) -> CreatePortalResponseTypeDef:  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreatePortalResponseTypeDef:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef) 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1556,12 +1558,14 @@ def update_portal(
     self,
     *,
     portalArn: str,
+    authenticationType: AuthenticationTypeType = ...,  # (1)
     displayName: str = ...,
-) -> UpdatePortalResponseTypeDef:  # (1)
+) -> UpdatePortalResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef) 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

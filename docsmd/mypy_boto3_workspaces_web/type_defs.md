@@ -541,30 +541,32 @@ from mypy_boto3_workspaces_web.type_defs import PortalTypeDef
 
 def get_value() -> PortalTypeDef:
     return {
-        "browserSettingsArn": ...,
+        "authenticationType": ...,
     }
 ```
 
 ```python title="Definition"
 class PortalTypeDef(TypedDict):
+    authenticationType: NotRequired[AuthenticationTypeType],  # (1)
     browserSettingsArn: NotRequired[str],
-    browserType: NotRequired[BrowserTypeType],  # (1)
+    browserType: NotRequired[BrowserTypeType],  # (2)
     creationDate: NotRequired[datetime],
     displayName: NotRequired[str],
     networkSettingsArn: NotRequired[str],
     portalArn: NotRequired[str],
     portalEndpoint: NotRequired[str],
-    portalStatus: NotRequired[PortalStatusType],  # (2)
-    rendererType: NotRequired[RendererTypeType],  # (3)
+    portalStatus: NotRequired[PortalStatusType],  # (3)
+    rendererType: NotRequired[RendererTypeType],  # (4)
     statusReason: NotRequired[str],
     trustStoreArn: NotRequired[str],
     userAccessLoggingSettingsArn: NotRequired[str],
     userSettingsArn: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: BrowserTypeType](./literals.md#browsertypetype) 
-2. See [:material-code-brackets: PortalStatusType](./literals.md#portalstatustype) 
-3. See [:material-code-brackets: RendererTypeType](./literals.md#renderertypetype) 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-brackets: BrowserTypeType](./literals.md#browsertypetype) 
+3. See [:material-code-brackets: PortalStatusType](./literals.md#portalstatustype) 
+4. See [:material-code-brackets: RendererTypeType](./literals.md#renderertypetype) 
 ## GetPortalServiceProviderMetadataRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -823,29 +825,31 @@ from mypy_boto3_workspaces_web.type_defs import PortalSummaryTypeDef
 
 def get_value() -> PortalSummaryTypeDef:
     return {
-        "browserSettingsArn": ...,
+        "authenticationType": ...,
     }
 ```
 
 ```python title="Definition"
 class PortalSummaryTypeDef(TypedDict):
+    authenticationType: NotRequired[AuthenticationTypeType],  # (1)
     browserSettingsArn: NotRequired[str],
-    browserType: NotRequired[BrowserTypeType],  # (1)
+    browserType: NotRequired[BrowserTypeType],  # (2)
     creationDate: NotRequired[datetime],
     displayName: NotRequired[str],
     networkSettingsArn: NotRequired[str],
     portalArn: NotRequired[str],
     portalEndpoint: NotRequired[str],
-    portalStatus: NotRequired[PortalStatusType],  # (2)
-    rendererType: NotRequired[RendererTypeType],  # (3)
+    portalStatus: NotRequired[PortalStatusType],  # (3)
+    rendererType: NotRequired[RendererTypeType],  # (4)
     trustStoreArn: NotRequired[str],
     userAccessLoggingSettingsArn: NotRequired[str],
     userSettingsArn: NotRequired[str],
 ```
 
-1. See [:material-code-brackets: BrowserTypeType](./literals.md#browsertypetype) 
-2. See [:material-code-brackets: PortalStatusType](./literals.md#portalstatustype) 
-3. See [:material-code-brackets: RendererTypeType](./literals.md#renderertypetype) 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-brackets: BrowserTypeType](./literals.md#browsertypetype) 
+3. See [:material-code-brackets: PortalStatusType](./literals.md#portalstatustype) 
+4. See [:material-code-brackets: RendererTypeType](./literals.md#renderertypetype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1083,9 +1087,11 @@ def get_value() -> UpdatePortalRequestRequestTypeDef:
 ```python title="Definition"
 class UpdatePortalRequestRequestTypeDef(TypedDict):
     portalArn: str,
+    authenticationType: NotRequired[AuthenticationTypeType],  # (1)
     displayName: NotRequired[str],
 ```
 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
 ## UpdateTrustStoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1598,13 +1604,15 @@ def get_value() -> CreatePortalRequestRequestTypeDef:
 ```python title="Definition"
 class CreatePortalRequestRequestTypeDef(TypedDict):
     additionalEncryptionContext: NotRequired[Mapping[str, str]],
+    authenticationType: NotRequired[AuthenticationTypeType],  # (1)
     clientToken: NotRequired[str],
     customerManagedKey: NotRequired[str],
     displayName: NotRequired[str],
-    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
 ```
 
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTrustStoreRequestRequestTypeDef
 
 ```python title="Usage Example"

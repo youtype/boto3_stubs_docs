@@ -49,6 +49,7 @@ except (
     client.ReferencedImagesNotFoundException,
     client.RegistryNotFoundException,
     client.RepositoryAlreadyExistsException,
+    client.RepositoryCatalogDataNotFoundException,
     client.RepositoryNotEmptyException,
     client.RepositoryNotFoundException,
     client.RepositoryPolicyNotFoundException,
@@ -73,8 +74,8 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 
 ### batch\_check\_layer\_availability
 
-Checks the availability of one or more image layers within a repository in a
-public registry.
+Checks the availability of one or more image layers that are within a repository
+in a public registry.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").batch_check_layer_availability` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_check_layer_availability)
@@ -106,7 +107,8 @@ parent.batch_check_layer_availability(**kwargs)
 
 ### batch\_delete\_image
 
-Deletes a list of specified images within a repository in a public registry.
+Deletes a list of specified images that are within a repository in a public
+registry.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").batch_delete_image` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.batch_delete_image)
@@ -170,7 +172,7 @@ def close(
 
 ### complete\_layer\_upload
 
-Informs Amazon ECR that the image layer upload has completed for a specified
+Informs Amazon ECR that the image layer upload is complete for a specified
 public registry, repository name, and upload ID.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").complete_layer_upload` method.
@@ -269,7 +271,7 @@ parent.delete_repository(**kwargs)
 
 ### delete\_repository\_policy
 
-Deletes the repository policy associated with the specified repository.
+Deletes the repository policy that's associated with the specified repository.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").delete_repository_policy` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.delete_repository_policy)
@@ -331,7 +333,8 @@ parent.describe_image_tags(**kwargs)
 
 ### describe\_images
 
-Returns metadata about the images in a repository in a public registry.
+Returns metadata that's related to the images in a repository in a public
+registry.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").describe_images` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_images)
@@ -395,7 +398,7 @@ parent.describe_registries(**kwargs)
 
 ### describe\_repositories
 
-Describes repositories in a public registry.
+Describes repositories that are in a public registry.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").describe_repositories` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.describe_repositories)
@@ -597,7 +600,8 @@ parent.list_tags_for_resource(**kwargs)
 
 ### put\_image
 
-Creates or updates the image manifest and tags associated with an image.
+Creates or updates the image manifest and tags that are associated with an
+image.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").put_image` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_image)
@@ -632,7 +636,7 @@ parent.put_image(**kwargs)
 
 ### put\_registry\_catalog\_data
 
-Create or updates the catalog data for a public registry.
+Create or update the catalog data for a public registry.
 
 Type annotations and code completion for `#!python boto3.client("ecr-public").put_registry_catalog_data` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Client.put_registry_catalog_data)
