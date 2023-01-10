@@ -1041,6 +1041,7 @@ def create_db_instance_read_replica(
     NetworkType: str = ...,
     StorageThroughput: int = ...,
     EnableCustomerOwnedIp: bool = ...,
+    AllocatedStorage: int = ...,
     SourceRegion: str = ...,
 ) -> CreateDBInstanceReadReplicaResultTypeDef:  # (4)
     ...
@@ -4790,6 +4791,7 @@ def restore_db_instance_from_db_snapshot(
     NetworkType: str = ...,
     StorageThroughput: int = ...,
     DBClusterSnapshotIdentifier: str = ...,
+    AllocatedStorage: int = ...,
 ) -> RestoreDBInstanceFromDBSnapshotResultTypeDef:  # (3)
     ...
 ```
@@ -4943,6 +4945,7 @@ def restore_db_instance_to_point_in_time(
     BackupTarget: str = ...,
     NetworkType: str = ...,
     StorageThroughput: int = ...,
+    AllocatedStorage: int = ...,
 ) -> RestoreDBInstanceToPointInTimeResultTypeDef:  # (3)
     ...
 ```

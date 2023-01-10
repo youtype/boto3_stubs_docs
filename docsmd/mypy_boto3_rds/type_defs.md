@@ -4173,6 +4173,7 @@ class CreateDBInstanceReadReplicaMessageRequestTypeDef(TypedDict):
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
     EnableCustomerOwnedIp: NotRequired[bool],
+    AllocatedStorage: NotRequired[int],
     SourceRegion: NotRequired[str],
 ```
 
@@ -4384,6 +4385,7 @@ class RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef(TypedDict):
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
     DBClusterSnapshotIdentifier: NotRequired[str],
+    AllocatedStorage: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -4510,6 +4512,7 @@ class RestoreDBInstanceToPointInTimeMessageRequestTypeDef(TypedDict):
     BackupTarget: NotRequired[str],
     NetworkType: NotRequired[str],
     StorageThroughput: NotRequired[int],
+    AllocatedStorage: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

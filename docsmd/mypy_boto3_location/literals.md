@@ -254,12 +254,14 @@ RouteMatrixErrorCodeType = Literal[
 from mypy_boto3_location.literals import TravelModeType
 
 def get_value() -> TravelModeType:
-    return "Car"
+    return "Bicycle"
 ```
 
 ```python title="Definition"
 TravelModeType = Literal[
+    "Bicycle",
     "Car",
+    "Motorcycle",
     "Truck",
     "Walking",
 ]

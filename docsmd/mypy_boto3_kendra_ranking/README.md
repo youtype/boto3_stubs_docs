@@ -85,6 +85,7 @@ def get_value() -> RescoreExecutionPlanStatusType:
 - [KendraRankingServiceName](./literals.md#kendrarankingservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
 
 

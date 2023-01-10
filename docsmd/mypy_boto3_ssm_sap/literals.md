@@ -615,11 +615,12 @@ PaginatorName = Literal[
 from mypy_boto3_ssm_sap.literals import RegionName
 
 def get_value() -> RegionName:
-    return "us-east-1"
+    return "ap-southeast-2"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "ap-southeast-2",
     "us-east-1",
 ]
 ```
