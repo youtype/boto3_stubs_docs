@@ -185,16 +185,23 @@ ConfluenceVersionType = Literal[
 from mypy_boto3_kendra.literals import ContentTypeType
 
 def get_value() -> ContentTypeType:
-    return "HTML"
+    return "CSV"
 ```
 
 ```python title="Definition"
 ContentTypeType = Literal[
+    "CSV",
     "HTML",
+    "JSON",
+    "MD",
+    "MS_EXCEL",
     "MS_WORD",
     "PDF",
     "PLAIN_TEXT",
     "PPT",
+    "RTF",
+    "XML",
+    "XSLT",
 ]
 ```
 ## DataSourceStatusType
