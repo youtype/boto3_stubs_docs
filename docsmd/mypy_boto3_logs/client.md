@@ -631,7 +631,7 @@ Type annotations and code completion for `#!python boto3.client("logs").describe
 def describe_log_streams(
     self,
     *,
-    logGroupName: str,
+    logGroupName: str = ...,
     logGroupIdentifier: str = ...,
     logStreamNamePrefix: str = ...,
     orderBy: OrderByType = ...,  # (1)
@@ -858,7 +858,7 @@ Type annotations and code completion for `#!python boto3.client("logs").filter_l
 def filter_log_events(
     self,
     *,
-    logGroupName: str,
+    logGroupName: str = ...,
     logGroupIdentifier: str = ...,
     logStreamNames: Sequence[str] = ...,
     logStreamNamePrefix: str = ...,
@@ -945,8 +945,8 @@ Type annotations and code completion for `#!python boto3.client("logs").get_log_
 def get_log_events(
     self,
     *,
-    logGroupName: str,
     logStreamName: str,
+    logGroupName: str = ...,
     logGroupIdentifier: str = ...,
     startTime: int = ...,
     endTime: int = ...,
@@ -963,7 +963,6 @@ def get_log_events(
 
 ```python title="Usage example with kwargs"
 kwargs: GetLogEventsRequestRequestTypeDef = {  # (1)
-    "logGroupName": ...,
     "logStreamName": ...,
 }
 
@@ -984,7 +983,7 @@ Type annotations and code completion for `#!python boto3.client("logs").get_log_
 def get_log_group_fields(
     self,
     *,
-    logGroupName: str,
+    logGroupName: str = ...,
     time: int = ...,
     logGroupIdentifier: str = ...,
 ) -> GetLogGroupFieldsResponseTypeDef:  # (1)

@@ -1743,6 +1743,22 @@ DashIsoWriteSegmentTimelineInRepresentationType = Literal[
     "ENABLED",
 ]
 ```
+## DashManifestStyleType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import DashManifestStyleType
+
+def get_value() -> DashManifestStyleType:
+    return "BASIC"
+```
+
+```python title="Definition"
+DashManifestStyleType = Literal[
+    "BASIC",
+    "COMPACT",
+    "DISTINCT",
+]
+```
 ## DecryptionModeType
 
 ```python title="Usage Example"
@@ -5738,11 +5754,12 @@ S3ServerSideEncryptionTypeType = Literal[
 from mypy_boto3_mediaconvert.literals import SampleRangeConversionType
 
 def get_value() -> SampleRangeConversionType:
-    return "LIMITED_RANGE_SQUEEZE"
+    return "LIMITED_RANGE_CLIP"
 ```
 
 ```python title="Definition"
 SampleRangeConversionType = Literal[
+    "LIMITED_RANGE_CLIP",
     "LIMITED_RANGE_SQUEEZE",
     "NONE",
 ]
@@ -6701,6 +6718,7 @@ ServiceName = Literal[
     "chime-sdk-meetings",
     "chime-sdk-messaging",
     "chime-sdk-voice",
+    "cleanrooms",
     "cloud9",
     "cloudcontrol",
     "clouddirectory",

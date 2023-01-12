@@ -383,6 +383,7 @@ class AudioNormalizationSettingsTypeDef(TypedDict):
     LoudnessLogging: NotRequired[AudioNormalizationLoudnessLoggingType],  # (3)
     PeakCalculation: NotRequired[AudioNormalizationPeakCalculationType],  # (4)
     TargetLkfs: NotRequired[float],
+    TruePeakLimiterThreshold: NotRequired[float],
 ```
 
 1. See [:material-code-brackets: AudioNormalizationAlgorithmType](./literals.md#audionormalizationalgorithmtype) 
@@ -885,6 +886,25 @@ def get_value() -> OutputChannelMappingTypeDef:
 class OutputChannelMappingTypeDef(TypedDict):
     InputChannels: NotRequired[Sequence[int]],
     InputChannelsFineTune: NotRequired[Sequence[float]],
+```
+
+## ClipLimitsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import ClipLimitsTypeDef
+
+def get_value() -> ClipLimitsTypeDef:
+    return {
+        "MaximumRGBTolerance": ...,
+    }
+```
+
+```python title="Definition"
+class ClipLimitsTypeDef(TypedDict):
+    MaximumRGBTolerance: NotRequired[int],
+    MaximumYUV: NotRequired[int],
+    MinimumRGBTolerance: NotRequired[int],
+    MinimumYUV: NotRequired[int],
 ```
 
 ## CmafAdditionalManifestTypeDef
@@ -3026,18 +3046,20 @@ def get_value() -> ColorCorrectorTypeDef:
 ```python title="Definition"
 class ColorCorrectorTypeDef(TypedDict):
     Brightness: NotRequired[int],
-    ColorSpaceConversion: NotRequired[ColorSpaceConversionType],  # (1)
+    ClipLimits: NotRequired[ClipLimitsTypeDef],  # (1)
+    ColorSpaceConversion: NotRequired[ColorSpaceConversionType],  # (2)
     Contrast: NotRequired[int],
-    Hdr10Metadata: NotRequired[Hdr10MetadataTypeDef],  # (2)
+    Hdr10Metadata: NotRequired[Hdr10MetadataTypeDef],  # (3)
     Hue: NotRequired[int],
-    SampleRangeConversion: NotRequired[SampleRangeConversionType],  # (3)
+    SampleRangeConversion: NotRequired[SampleRangeConversionType],  # (4)
     Saturation: NotRequired[int],
     SdrReferenceWhiteLevel: NotRequired[int],
 ```
 
-1. See [:material-code-brackets: ColorSpaceConversionType](./literals.md#colorspaceconversiontype) 
-2. See [:material-code-braces: Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef) 
-3. See [:material-code-brackets: SampleRangeConversionType](./literals.md#samplerangeconversiontype) 
+1. See [:material-code-braces: ClipLimitsTypeDef](./type_defs.md#cliplimitstypedef) 
+2. See [:material-code-brackets: ColorSpaceConversionType](./literals.md#colorspaceconversiontype) 
+3. See [:material-code-braces: Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef) 
+4. See [:material-code-brackets: SampleRangeConversionType](./literals.md#samplerangeconversiontype) 
 ## VideoSelectorTypeDef
 
 ```python title="Usage Example"
@@ -4365,50 +4387,52 @@ class CmafGroupSettingsTypeDef(TypedDict):
     BaseUrl: NotRequired[str],
     ClientCache: NotRequired[CmafClientCacheType],  # (2)
     CodecSpecification: NotRequired[CmafCodecSpecificationType],  # (3)
+    DashManifestStyle: NotRequired[DashManifestStyleType],  # (4)
     Destination: NotRequired[str],
-    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (4)
-    Encryption: NotRequired[CmafEncryptionSettingsTypeDef],  # (5)
+    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (5)
+    Encryption: NotRequired[CmafEncryptionSettingsTypeDef],  # (6)
     FragmentLength: NotRequired[int],
-    ImageBasedTrickPlay: NotRequired[CmafImageBasedTrickPlayType],  # (6)
-    ImageBasedTrickPlaySettings: NotRequired[CmafImageBasedTrickPlaySettingsTypeDef],  # (7)
-    ManifestCompression: NotRequired[CmafManifestCompressionType],  # (8)
-    ManifestDurationFormat: NotRequired[CmafManifestDurationFormatType],  # (9)
+    ImageBasedTrickPlay: NotRequired[CmafImageBasedTrickPlayType],  # (7)
+    ImageBasedTrickPlaySettings: NotRequired[CmafImageBasedTrickPlaySettingsTypeDef],  # (8)
+    ManifestCompression: NotRequired[CmafManifestCompressionType],  # (9)
+    ManifestDurationFormat: NotRequired[CmafManifestDurationFormatType],  # (10)
     MinBufferTime: NotRequired[int],
     MinFinalSegmentLength: NotRequired[float],
-    MpdManifestBandwidthType: NotRequired[CmafMpdManifestBandwidthTypeType],  # (10)
-    MpdProfile: NotRequired[CmafMpdProfileType],  # (11)
-    PtsOffsetHandlingForBFrames: NotRequired[CmafPtsOffsetHandlingForBFramesType],  # (12)
-    SegmentControl: NotRequired[CmafSegmentControlType],  # (13)
+    MpdManifestBandwidthType: NotRequired[CmafMpdManifestBandwidthTypeType],  # (11)
+    MpdProfile: NotRequired[CmafMpdProfileType],  # (12)
+    PtsOffsetHandlingForBFrames: NotRequired[CmafPtsOffsetHandlingForBFramesType],  # (13)
+    SegmentControl: NotRequired[CmafSegmentControlType],  # (14)
     SegmentLength: NotRequired[int],
-    SegmentLengthControl: NotRequired[CmafSegmentLengthControlType],  # (14)
-    StreamInfResolution: NotRequired[CmafStreamInfResolutionType],  # (15)
-    TargetDurationCompatibilityMode: NotRequired[CmafTargetDurationCompatibilityModeType],  # (16)
-    VideoCompositionOffsets: NotRequired[CmafVideoCompositionOffsetsType],  # (17)
-    WriteDashManifest: NotRequired[CmafWriteDASHManifestType],  # (18)
-    WriteHlsManifest: NotRequired[CmafWriteHLSManifestType],  # (19)
-    WriteSegmentTimelineInRepresentation: NotRequired[CmafWriteSegmentTimelineInRepresentationType],  # (20)
+    SegmentLengthControl: NotRequired[CmafSegmentLengthControlType],  # (15)
+    StreamInfResolution: NotRequired[CmafStreamInfResolutionType],  # (16)
+    TargetDurationCompatibilityMode: NotRequired[CmafTargetDurationCompatibilityModeType],  # (17)
+    VideoCompositionOffsets: NotRequired[CmafVideoCompositionOffsetsType],  # (18)
+    WriteDashManifest: NotRequired[CmafWriteDASHManifestType],  # (19)
+    WriteHlsManifest: NotRequired[CmafWriteHLSManifestType],  # (20)
+    WriteSegmentTimelineInRepresentation: NotRequired[CmafWriteSegmentTimelineInRepresentationType],  # (21)
 ```
 
 1. See [:material-code-braces: CmafAdditionalManifestTypeDef](./type_defs.md#cmafadditionalmanifesttypedef) 
 2. See [:material-code-brackets: CmafClientCacheType](./literals.md#cmafclientcachetype) 
 3. See [:material-code-brackets: CmafCodecSpecificationType](./literals.md#cmafcodecspecificationtype) 
-4. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
-5. See [:material-code-braces: CmafEncryptionSettingsTypeDef](./type_defs.md#cmafencryptionsettingstypedef) 
-6. See [:material-code-brackets: CmafImageBasedTrickPlayType](./literals.md#cmafimagebasedtrickplaytype) 
-7. See [:material-code-braces: CmafImageBasedTrickPlaySettingsTypeDef](./type_defs.md#cmafimagebasedtrickplaysettingstypedef) 
-8. See [:material-code-brackets: CmafManifestCompressionType](./literals.md#cmafmanifestcompressiontype) 
-9. See [:material-code-brackets: CmafManifestDurationFormatType](./literals.md#cmafmanifestdurationformattype) 
-10. See [:material-code-brackets: CmafMpdManifestBandwidthTypeType](./literals.md#cmafmpdmanifestbandwidthtypetype) 
-11. See [:material-code-brackets: CmafMpdProfileType](./literals.md#cmafmpdprofiletype) 
-12. See [:material-code-brackets: CmafPtsOffsetHandlingForBFramesType](./literals.md#cmafptsoffsethandlingforbframestype) 
-13. See [:material-code-brackets: CmafSegmentControlType](./literals.md#cmafsegmentcontroltype) 
-14. See [:material-code-brackets: CmafSegmentLengthControlType](./literals.md#cmafsegmentlengthcontroltype) 
-15. See [:material-code-brackets: CmafStreamInfResolutionType](./literals.md#cmafstreaminfresolutiontype) 
-16. See [:material-code-brackets: CmafTargetDurationCompatibilityModeType](./literals.md#cmaftargetdurationcompatibilitymodetype) 
-17. See [:material-code-brackets: CmafVideoCompositionOffsetsType](./literals.md#cmafvideocompositionoffsetstype) 
-18. See [:material-code-brackets: CmafWriteDASHManifestType](./literals.md#cmafwritedashmanifesttype) 
-19. See [:material-code-brackets: CmafWriteHLSManifestType](./literals.md#cmafwritehlsmanifesttype) 
-20. See [:material-code-brackets: CmafWriteSegmentTimelineInRepresentationType](./literals.md#cmafwritesegmenttimelineinrepresentationtype) 
+4. See [:material-code-brackets: DashManifestStyleType](./literals.md#dashmanifeststyletype) 
+5. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
+6. See [:material-code-braces: CmafEncryptionSettingsTypeDef](./type_defs.md#cmafencryptionsettingstypedef) 
+7. See [:material-code-brackets: CmafImageBasedTrickPlayType](./literals.md#cmafimagebasedtrickplaytype) 
+8. See [:material-code-braces: CmafImageBasedTrickPlaySettingsTypeDef](./type_defs.md#cmafimagebasedtrickplaysettingstypedef) 
+9. See [:material-code-brackets: CmafManifestCompressionType](./literals.md#cmafmanifestcompressiontype) 
+10. See [:material-code-brackets: CmafManifestDurationFormatType](./literals.md#cmafmanifestdurationformattype) 
+11. See [:material-code-brackets: CmafMpdManifestBandwidthTypeType](./literals.md#cmafmpdmanifestbandwidthtypetype) 
+12. See [:material-code-brackets: CmafMpdProfileType](./literals.md#cmafmpdprofiletype) 
+13. See [:material-code-brackets: CmafPtsOffsetHandlingForBFramesType](./literals.md#cmafptsoffsethandlingforbframestype) 
+14. See [:material-code-brackets: CmafSegmentControlType](./literals.md#cmafsegmentcontroltype) 
+15. See [:material-code-brackets: CmafSegmentLengthControlType](./literals.md#cmafsegmentlengthcontroltype) 
+16. See [:material-code-brackets: CmafStreamInfResolutionType](./literals.md#cmafstreaminfresolutiontype) 
+17. See [:material-code-brackets: CmafTargetDurationCompatibilityModeType](./literals.md#cmaftargetdurationcompatibilitymodetype) 
+18. See [:material-code-brackets: CmafVideoCompositionOffsetsType](./literals.md#cmafvideocompositionoffsetstype) 
+19. See [:material-code-brackets: CmafWriteDASHManifestType](./literals.md#cmafwritedashmanifesttype) 
+20. See [:material-code-brackets: CmafWriteHLSManifestType](./literals.md#cmafwritehlsmanifesttype) 
+21. See [:material-code-brackets: CmafWriteSegmentTimelineInRepresentationType](./literals.md#cmafwritesegmenttimelineinrepresentationtype) 
 ## DashIsoGroupSettingsTypeDef
 
 ```python title="Usage Example"
@@ -4425,39 +4449,41 @@ class DashIsoGroupSettingsTypeDef(TypedDict):
     AdditionalManifests: NotRequired[Sequence[DashAdditionalManifestTypeDef]],  # (1)
     AudioChannelConfigSchemeIdUri: NotRequired[DashIsoGroupAudioChannelConfigSchemeIdUriType],  # (2)
     BaseUrl: NotRequired[str],
+    DashManifestStyle: NotRequired[DashManifestStyleType],  # (3)
     Destination: NotRequired[str],
-    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (3)
-    Encryption: NotRequired[DashIsoEncryptionSettingsTypeDef],  # (4)
+    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (4)
+    Encryption: NotRequired[DashIsoEncryptionSettingsTypeDef],  # (5)
     FragmentLength: NotRequired[int],
-    HbbtvCompliance: NotRequired[DashIsoHbbtvComplianceType],  # (5)
-    ImageBasedTrickPlay: NotRequired[DashIsoImageBasedTrickPlayType],  # (6)
-    ImageBasedTrickPlaySettings: NotRequired[DashIsoImageBasedTrickPlaySettingsTypeDef],  # (7)
+    HbbtvCompliance: NotRequired[DashIsoHbbtvComplianceType],  # (6)
+    ImageBasedTrickPlay: NotRequired[DashIsoImageBasedTrickPlayType],  # (7)
+    ImageBasedTrickPlaySettings: NotRequired[DashIsoImageBasedTrickPlaySettingsTypeDef],  # (8)
     MinBufferTime: NotRequired[int],
     MinFinalSegmentLength: NotRequired[float],
-    MpdManifestBandwidthType: NotRequired[DashIsoMpdManifestBandwidthTypeType],  # (8)
-    MpdProfile: NotRequired[DashIsoMpdProfileType],  # (9)
-    PtsOffsetHandlingForBFrames: NotRequired[DashIsoPtsOffsetHandlingForBFramesType],  # (10)
-    SegmentControl: NotRequired[DashIsoSegmentControlType],  # (11)
+    MpdManifestBandwidthType: NotRequired[DashIsoMpdManifestBandwidthTypeType],  # (9)
+    MpdProfile: NotRequired[DashIsoMpdProfileType],  # (10)
+    PtsOffsetHandlingForBFrames: NotRequired[DashIsoPtsOffsetHandlingForBFramesType],  # (11)
+    SegmentControl: NotRequired[DashIsoSegmentControlType],  # (12)
     SegmentLength: NotRequired[int],
-    SegmentLengthControl: NotRequired[DashIsoSegmentLengthControlType],  # (12)
-    VideoCompositionOffsets: NotRequired[DashIsoVideoCompositionOffsetsType],  # (13)
-    WriteSegmentTimelineInRepresentation: NotRequired[DashIsoWriteSegmentTimelineInRepresentationType],  # (14)
+    SegmentLengthControl: NotRequired[DashIsoSegmentLengthControlType],  # (13)
+    VideoCompositionOffsets: NotRequired[DashIsoVideoCompositionOffsetsType],  # (14)
+    WriteSegmentTimelineInRepresentation: NotRequired[DashIsoWriteSegmentTimelineInRepresentationType],  # (15)
 ```
 
 1. See [:material-code-braces: DashAdditionalManifestTypeDef](./type_defs.md#dashadditionalmanifesttypedef) 
 2. See [:material-code-brackets: DashIsoGroupAudioChannelConfigSchemeIdUriType](./literals.md#dashisogroupaudiochannelconfigschemeiduritype) 
-3. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
-4. See [:material-code-braces: DashIsoEncryptionSettingsTypeDef](./type_defs.md#dashisoencryptionsettingstypedef) 
-5. See [:material-code-brackets: DashIsoHbbtvComplianceType](./literals.md#dashisohbbtvcompliancetype) 
-6. See [:material-code-brackets: DashIsoImageBasedTrickPlayType](./literals.md#dashisoimagebasedtrickplaytype) 
-7. See [:material-code-braces: DashIsoImageBasedTrickPlaySettingsTypeDef](./type_defs.md#dashisoimagebasedtrickplaysettingstypedef) 
-8. See [:material-code-brackets: DashIsoMpdManifestBandwidthTypeType](./literals.md#dashisompdmanifestbandwidthtypetype) 
-9. See [:material-code-brackets: DashIsoMpdProfileType](./literals.md#dashisompdprofiletype) 
-10. See [:material-code-brackets: DashIsoPtsOffsetHandlingForBFramesType](./literals.md#dashisoptsoffsethandlingforbframestype) 
-11. See [:material-code-brackets: DashIsoSegmentControlType](./literals.md#dashisosegmentcontroltype) 
-12. See [:material-code-brackets: DashIsoSegmentLengthControlType](./literals.md#dashisosegmentlengthcontroltype) 
-13. See [:material-code-brackets: DashIsoVideoCompositionOffsetsType](./literals.md#dashisovideocompositionoffsetstype) 
-14. See [:material-code-brackets: DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype) 
+3. See [:material-code-brackets: DashManifestStyleType](./literals.md#dashmanifeststyletype) 
+4. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
+5. See [:material-code-braces: DashIsoEncryptionSettingsTypeDef](./type_defs.md#dashisoencryptionsettingstypedef) 
+6. See [:material-code-brackets: DashIsoHbbtvComplianceType](./literals.md#dashisohbbtvcompliancetype) 
+7. See [:material-code-brackets: DashIsoImageBasedTrickPlayType](./literals.md#dashisoimagebasedtrickplaytype) 
+8. See [:material-code-braces: DashIsoImageBasedTrickPlaySettingsTypeDef](./type_defs.md#dashisoimagebasedtrickplaysettingstypedef) 
+9. See [:material-code-brackets: DashIsoMpdManifestBandwidthTypeType](./literals.md#dashisompdmanifestbandwidthtypetype) 
+10. See [:material-code-brackets: DashIsoMpdProfileType](./literals.md#dashisompdprofiletype) 
+11. See [:material-code-brackets: DashIsoPtsOffsetHandlingForBFramesType](./literals.md#dashisoptsoffsethandlingforbframestype) 
+12. See [:material-code-brackets: DashIsoSegmentControlType](./literals.md#dashisosegmentcontroltype) 
+13. See [:material-code-brackets: DashIsoSegmentLengthControlType](./literals.md#dashisosegmentlengthcontroltype) 
+14. See [:material-code-brackets: DashIsoVideoCompositionOffsetsType](./literals.md#dashisovideocompositionoffsetstype) 
+15. See [:material-code-brackets: DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype) 
 ## FileGroupSettingsTypeDef
 
 ```python title="Usage Example"

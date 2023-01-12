@@ -411,7 +411,7 @@ def get_value() -> DescribeLogStreamsRequestRequestTypeDef:
 
 ```python title="Definition"
 class DescribeLogStreamsRequestRequestTypeDef(TypedDict):
-    logGroupName: str,
+    logGroupName: NotRequired[str],
     logGroupIdentifier: NotRequired[str],
     logStreamNamePrefix: NotRequired[str],
     orderBy: NotRequired[OrderByType],  # (1)
@@ -685,7 +685,7 @@ def get_value() -> FilterLogEventsRequestRequestTypeDef:
 
 ```python title="Definition"
 class FilterLogEventsRequestRequestTypeDef(TypedDict):
-    logGroupName: str,
+    logGroupName: NotRequired[str],
     logGroupIdentifier: NotRequired[str],
     logStreamNames: NotRequired[Sequence[str]],
     logStreamNamePrefix: NotRequired[str],
@@ -758,15 +758,14 @@ from mypy_boto3_logs.type_defs import GetLogEventsRequestRequestTypeDef
 
 def get_value() -> GetLogEventsRequestRequestTypeDef:
     return {
-        "logGroupName": ...,
         "logStreamName": ...,
     }
 ```
 
 ```python title="Definition"
 class GetLogEventsRequestRequestTypeDef(TypedDict):
-    logGroupName: str,
     logStreamName: str,
+    logGroupName: NotRequired[str],
     logGroupIdentifier: NotRequired[str],
     startTime: NotRequired[int],
     endTime: NotRequired[int],
@@ -807,7 +806,7 @@ def get_value() -> GetLogGroupFieldsRequestRequestTypeDef:
 
 ```python title="Definition"
 class GetLogGroupFieldsRequestRequestTypeDef(TypedDict):
-    logGroupName: str,
+    logGroupName: NotRequired[str],
     time: NotRequired[int],
     logGroupIdentifier: NotRequired[str],
 ```
@@ -1562,7 +1561,7 @@ def get_value() -> DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef:
 
 ```python title="Definition"
 class DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef(TypedDict):
-    logGroupName: str,
+    logGroupName: NotRequired[str],
     logGroupIdentifier: NotRequired[str],
     logStreamNamePrefix: NotRequired[str],
     orderBy: NotRequired[OrderByType],  # (1)
@@ -1662,7 +1661,7 @@ def get_value() -> FilterLogEventsRequestFilterLogEventsPaginateTypeDef:
 
 ```python title="Definition"
 class FilterLogEventsRequestFilterLogEventsPaginateTypeDef(TypedDict):
-    logGroupName: str,
+    logGroupName: NotRequired[str],
     logGroupIdentifier: NotRequired[str],
     logStreamNames: NotRequired[Sequence[str]],
     logStreamNamePrefix: NotRequired[str],

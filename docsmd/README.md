@@ -156,6 +156,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-chime-sdk-voice](./mypy_boto3_chime_sdk_voice/README.md) for [ChimeSDKVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-voice.html#ChimeSDKVoice) service
 
+- [mypy-boto3-cleanrooms](./mypy_boto3_cleanrooms/README.md) for [CleanRoomsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cleanrooms.html#CleanRoomsService) service
+
 - [mypy-boto3-cloud9](./mypy_boto3_cloud9/README.md) for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9) service
 
 - [mypy-boto3-cloudcontrol](./mypy_boto3_cloudcontrol/README.md) for [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi) service

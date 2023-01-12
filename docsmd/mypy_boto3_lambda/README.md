@@ -223,6 +223,7 @@ def get_value() -> AccountLimitTypeDef:
 - [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 - [ConcurrencyTypeDef](./type_defs.md#concurrencytypedef)
 - [CorsTypeDef](./type_defs.md#corstypedef)
+- [ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef)
 - [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
 - [SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef)
 - [SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)

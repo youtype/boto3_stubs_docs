@@ -229,7 +229,7 @@ Type annotations and code completion for `#!python DescribeLogStreamsPaginator.p
 def paginate(
     self,
     *,
-    logGroupName: str,
+    logGroupName: str = ...,
     logGroupIdentifier: str = ...,
     logStreamNamePrefix: str = ...,
     orderBy: OrderByType = ...,  # (1)
@@ -534,7 +534,7 @@ Type annotations and code completion for `#!python FilterLogEventsPaginator.pagi
 def paginate(
     self,
     *,
-    logGroupName: str,
+    logGroupName: str = ...,
     logGroupIdentifier: str = ...,
     logStreamNames: Sequence[str] = ...,
     logStreamNamePrefix: str = ...,
