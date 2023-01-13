@@ -276,6 +276,7 @@ def get_value() -> PowerDrawKvaType:
 PowerDrawKvaType = Literal[
     "POWER_10_KVA",
     "POWER_15_KVA",
+    "POWER_30_KVA",
     "POWER_5_KVA",
 ]
 ```

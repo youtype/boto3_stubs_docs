@@ -207,8 +207,7 @@ parent.accept_transit_gateway_vpc_attachment(**kwargs)
 
 ### accept\_vpc\_endpoint\_connections
 
-Accepts one or more interface VPC endpoint connection requests to your VPC
-endpoint service.
+Accepts connection requests to your VPC endpoint service.
 
 Type annotations and code completion for `#!python boto3.client("ec2").accept_vpc_endpoint_connections` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_endpoint_connections)
@@ -3631,7 +3630,7 @@ parent.create_store_image_task(**kwargs)
 
 ### create\_subnet
 
-Creates a subnet in a specified VPC.
+Creates a subnet in the specified VPC.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_subnet` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_subnet)
@@ -4505,7 +4504,7 @@ parent.create_volume(**kwargs)
 
 ### create\_vpc
 
-Creates a VPC with the specified IPv4 CIDR block.
+Creates a VPC with the specified CIDR blocks.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_vpc` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc)
@@ -4630,7 +4629,7 @@ parent.create_vpc_endpoint_connection_notification(**kwargs)
 ### create\_vpc\_endpoint\_service\_configuration
 
 Creates a VPC endpoint service to which service consumers (Amazon Web Services
-accounts, IAM users, and IAM roles) can connect.
+accounts, users, and IAM roles) can connect.
 
 Type annotations and code completion for `#!python boto3.client("ec2").create_vpc_endpoint_service_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_service_configuration)
@@ -6794,7 +6793,7 @@ parent.delete_vpc(**kwargs)
 
 ### delete\_vpc\_endpoint\_connection\_notifications
 
-Deletes one or more VPC endpoint connection notifications.
+Deletes the specified VPC endpoint connection notifications.
 
 Type annotations and code completion for `#!python boto3.client("ec2").delete_vpc_endpoint_connection_notifications` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_connection_notifications)
@@ -6824,7 +6823,7 @@ parent.delete_vpc_endpoint_connection_notifications(**kwargs)
 
 ### delete\_vpc\_endpoint\_service\_configurations
 
-Deletes one or more VPC endpoint service configurations in your account.
+Deletes the specified VPC endpoint service configurations.
 
 Type annotations and code completion for `#!python boto3.client("ec2").delete_vpc_endpoint_service_configurations` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_service_configurations)
@@ -6854,7 +6853,7 @@ parent.delete_vpc_endpoint_service_configurations(**kwargs)
 
 ### delete\_vpc\_endpoints
 
-Deletes one or more specified VPC endpoints.
+Deletes the specified VPC endpoints.
 
 Type annotations and code completion for `#!python boto3.client("ec2").delete_vpc_endpoints` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoints)
@@ -11891,7 +11890,7 @@ parent.describe_vpc_endpoint_services(**kwargs)
 
 ### describe\_vpc\_endpoints
 
-Describes one or more of your VPC endpoints.
+Describes your VPC endpoints.
 
 Type annotations and code completion for `#!python boto3.client("ec2").describe_vpc_endpoints` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoints)
@@ -18055,8 +18054,7 @@ parent.reject_transit_gateway_vpc_attachment(**kwargs)
 
 ### reject\_vpc\_endpoint\_connections
 
-Rejects one or more VPC endpoint connection requests to your VPC endpoint
-service.
+Rejects VPC endpoint connection requests to your VPC endpoint service.
 
 Type annotations and code completion for `#!python boto3.client("ec2").reject_vpc_endpoint_connections` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_endpoint_connections)

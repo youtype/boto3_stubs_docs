@@ -102,6 +102,8 @@ def get_value() -> GroupConfigurationStatusType:
 
 - [GroupConfigurationStatusType](./literals.md#groupconfigurationstatustype)
 - [GroupFilterNameType](./literals.md#groupfilternametype)
+- [GroupLifecycleEventsDesiredStatusType](./literals.md#grouplifecycleeventsdesiredstatustype)
+- [GroupLifecycleEventsStatusType](./literals.md#grouplifecycleeventsstatustype)
 - [ListGroupResourcesPaginatorName](./literals.md#listgroupresourcespaginatorname)
 - [ListGroupsPaginatorName](./literals.md#listgroupspaginatorname)
 - [QueryErrorCodeType](./literals.md#queryerrorcodetype)
@@ -123,15 +125,15 @@ def get_value() -> GroupConfigurationStatusType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_resource_groups.type_defs import ResourceQueryTypeDef
+from mypy_boto3_resource_groups.type_defs import AccountSettingsTypeDef
 
-def get_value() -> ResourceQueryTypeDef:
+def get_value() -> AccountSettingsTypeDef:
     return {
-        "Type": ...,
-        "Query": ...,
+        "GroupLifecycleEventsDesiredStatus": ...,
     }
 ```
 
+- [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
 - [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
 - [GroupTypeDef](./type_defs.md#grouptypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -154,15 +156,18 @@ def get_value() -> ResourceQueryTypeDef:
 - [TagInputRequestTypeDef](./type_defs.md#taginputrequesttypedef)
 - [UngroupResourcesInputRequestTypeDef](./type_defs.md#ungroupresourcesinputrequesttypedef)
 - [UntagInputRequestTypeDef](./type_defs.md#untaginputrequesttypedef)
+- [UpdateAccountSettingsInputRequestTypeDef](./type_defs.md#updateaccountsettingsinputrequesttypedef)
 - [UpdateGroupInputRequestTypeDef](./type_defs.md#updategroupinputrequesttypedef)
 - [GroupQueryTypeDef](./type_defs.md#groupquerytypedef)
 - [SearchResourcesInputRequestTypeDef](./type_defs.md#searchresourcesinputrequesttypedef)
 - [UpdateGroupQueryInputRequestTypeDef](./type_defs.md#updategroupqueryinputrequesttypedef)
 - [DeleteGroupOutputTypeDef](./type_defs.md#deletegroupoutputtypedef)
+- [GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef)
 - [GetGroupOutputTypeDef](./type_defs.md#getgroupoutputtypedef)
 - [GetTagsOutputTypeDef](./type_defs.md#gettagsoutputtypedef)
 - [TagOutputTypeDef](./type_defs.md#tagoutputtypedef)
 - [UntagOutputTypeDef](./type_defs.md#untagoutputtypedef)
+- [UpdateAccountSettingsOutputTypeDef](./type_defs.md#updateaccountsettingsoutputtypedef)
 - [UpdateGroupOutputTypeDef](./type_defs.md#updategroupoutputtypedef)
 - [GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)
 - [ListGroupsInputRequestTypeDef](./type_defs.md#listgroupsinputrequesttypedef)

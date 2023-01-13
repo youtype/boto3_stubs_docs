@@ -1122,11 +1122,10 @@ def delete_contact_flow(
     *,
     InstanceId: str,
     ContactFlowId: str,
-) -> EmptyResponseMetadataTypeDef:  # (1)
+) -> Dict[str, Any]:
     ...
 ```
 
-1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4679,11 +4678,10 @@ def update_contact_flow_content(
     InstanceId: str,
     ContactFlowId: str,
     Content: str,
-) -> EmptyResponseMetadataTypeDef:  # (1)
+) -> Dict[str, Any]:
     ...
 ```
 
-1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4714,12 +4712,11 @@ def update_contact_flow_metadata(
     Name: str = ...,
     Description: str = ...,
     ContactFlowState: ContactFlowStateType = ...,  # (1)
-) -> EmptyResponseMetadataTypeDef:  # (2)
+) -> Dict[str, Any]:
     ...
 ```
 
 1. See [:material-code-brackets: ContactFlowStateType](./literals.md#contactflowstatetype) 
-2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -4814,11 +4811,10 @@ def update_contact_flow_name(
     ContactFlowId: str,
     Name: str = ...,
     Description: str = ...,
-) -> EmptyResponseMetadataTypeDef:  # (1)
+) -> Dict[str, Any]:
     ...
 ```
 
-1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

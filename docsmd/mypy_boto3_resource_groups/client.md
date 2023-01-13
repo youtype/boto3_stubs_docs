@@ -170,6 +170,22 @@ def generate_presigned_url(
 ```
 
 
+### get\_account\_settings
+
+Retrieves the current status of optional features in Resource Groups.
+
+Type annotations and code completion for `#!python boto3.client("resource-groups").get_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_account_settings)
+
+```python title="Method definition"
+def get_account_settings(
+    self,
+) -> GetAccountSettingsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef) 
+
 ### get\_group
 
 Returns information about a specified resource group.
@@ -202,7 +218,8 @@ parent.get_group(**kwargs)
 
 ### get\_group\_configuration
 
-Returns the service configuration associated with the specified resource group.
+Retrieves the service configuration associated with the specified resource
+group.
 
 Type annotations and code completion for `#!python boto3.client("resource-groups").get_group_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.get_group_configuration)
@@ -357,7 +374,7 @@ parent.list_group_resources(**kwargs)
 
 ### list\_groups
 
-Returns a list of existing resource groups in your account.
+Returns a list of existing Resource Groups in your account.
 
 Type annotations and code completion for `#!python boto3.client("resource-groups").list_groups` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.list_groups)
@@ -419,7 +436,8 @@ parent.put_group_configuration(**kwargs)
 
 ### search\_resources
 
-Returns a list of AWS resource identifiers that matches the specified query.
+Returns a list of Amazon Web Services resource identifiers that matches the
+specified query.
 
 Type annotations and code completion for `#!python boto3.client("resource-groups").search_resources` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.search_resources)
@@ -541,6 +559,36 @@ parent.untag(**kwargs)
 ```
 
 1. See [:material-code-braces: UntagInputRequestTypeDef](./type_defs.md#untaginputrequesttypedef) 
+
+### update\_account\_settings
+
+Turns on or turns off optional features in Resource Groups.
+
+Type annotations and code completion for `#!python boto3.client("resource-groups").update_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client.update_account_settings)
+
+```python title="Method definition"
+def update_account_settings(
+    self,
+    *,
+    GroupLifecycleEventsDesiredStatus: GroupLifecycleEventsDesiredStatusType = ...,  # (1)
+) -> UpdateAccountSettingsOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: GroupLifecycleEventsDesiredStatusType](./literals.md#grouplifecycleeventsdesiredstatustype) 
+2. See [:material-code-braces: UpdateAccountSettingsOutputTypeDef](./type_defs.md#updateaccountsettingsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountSettingsInputRequestTypeDef = {  # (1)
+    "GroupLifecycleEventsDesiredStatus": ...,
+}
+
+parent.update_account_settings(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAccountSettingsInputRequestTypeDef](./type_defs.md#updateaccountsettingsinputrequesttypedef) 
 
 ### update\_group
 

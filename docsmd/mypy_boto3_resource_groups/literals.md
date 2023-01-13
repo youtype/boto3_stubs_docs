@@ -38,6 +38,38 @@ GroupFilterNameType = Literal[
     "resource-type",
 ]
 ```
+## GroupLifecycleEventsDesiredStatusType
+
+```python title="Usage Example"
+from mypy_boto3_resource_groups.literals import GroupLifecycleEventsDesiredStatusType
+
+def get_value() -> GroupLifecycleEventsDesiredStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+GroupLifecycleEventsDesiredStatusType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
+## GroupLifecycleEventsStatusType
+
+```python title="Usage Example"
+from mypy_boto3_resource_groups.literals import GroupLifecycleEventsStatusType
+
+def get_value() -> GroupLifecycleEventsStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+GroupLifecycleEventsStatusType = Literal[
+    "ACTIVE",
+    "ERROR",
+    "IN_PROGRESS",
+    "INACTIVE",
+]
+```
 ## ListGroupResourcesPaginatorName
 
 ```python title="Usage Example"
@@ -79,6 +111,7 @@ def get_value() -> QueryErrorCodeType:
 QueryErrorCodeType = Literal[
     "CLOUDFORMATION_STACK_INACTIVE",
     "CLOUDFORMATION_STACK_NOT_EXISTING",
+    "CLOUDFORMATION_STACK_UNASSUMABLE_ROLE",
 ]
 ```
 ## QueryTypeType

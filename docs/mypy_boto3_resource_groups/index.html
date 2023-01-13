@@ -40326,6 +40326,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <ul>
 <li><a href="literals/#groupconfigurationstatustype">GroupConfigurationStatusType</a></li>
 <li><a href="literals/#groupfilternametype">GroupFilterNameType</a></li>
+<li><a href="literals/#grouplifecycleeventsdesiredstatustype">GroupLifecycleEventsDesiredStatusType</a></li>
+<li><a href="literals/#grouplifecycleeventsstatustype">GroupLifecycleEventsStatusType</a></li>
 <li><a href="literals/#listgroupresourcespaginatorname">ListGroupResourcesPaginatorName</a></li>
 <li><a href="literals/#listgroupspaginatorname">ListGroupsPaginatorName</a></li>
 <li><a href="literals/#queryerrorcodetype">QueryErrorCodeType</a></li>
@@ -40341,15 +40343,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_resource_groups.type_defs</span> <span class="kn">import</span> <span class="n">ResourceQueryTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_resource_groups.type_defs</span> <span class="kn">import</span> <span class="n">AccountSettingsTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ResourceQueryTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AccountSettingsTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;Query&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;GroupLifecycleEventsDesiredStatus&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#accountsettingstypedef">AccountSettingsTypeDef</a></li>
 <li><a href="type_defs/#resourcequerytypedef">ResourceQueryTypeDef</a></li>
 <li><a href="type_defs/#grouptypedef">GroupTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
@@ -40372,15 +40374,18 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#taginputrequesttypedef">TagInputRequestTypeDef</a></li>
 <li><a href="type_defs/#ungroupresourcesinputrequesttypedef">UngroupResourcesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#untaginputrequesttypedef">UntagInputRequestTypeDef</a></li>
+<li><a href="type_defs/#updateaccountsettingsinputrequesttypedef">UpdateAccountSettingsInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updategroupinputrequesttypedef">UpdateGroupInputRequestTypeDef</a></li>
 <li><a href="type_defs/#groupquerytypedef">GroupQueryTypeDef</a></li>
 <li><a href="type_defs/#searchresourcesinputrequesttypedef">SearchResourcesInputRequestTypeDef</a></li>
 <li><a href="type_defs/#updategroupqueryinputrequesttypedef">UpdateGroupQueryInputRequestTypeDef</a></li>
 <li><a href="type_defs/#deletegroupoutputtypedef">DeleteGroupOutputTypeDef</a></li>
+<li><a href="type_defs/#getaccountsettingsoutputtypedef">GetAccountSettingsOutputTypeDef</a></li>
 <li><a href="type_defs/#getgroupoutputtypedef">GetGroupOutputTypeDef</a></li>
 <li><a href="type_defs/#gettagsoutputtypedef">GetTagsOutputTypeDef</a></li>
 <li><a href="type_defs/#tagoutputtypedef">TagOutputTypeDef</a></li>
 <li><a href="type_defs/#untagoutputtypedef">UntagOutputTypeDef</a></li>
+<li><a href="type_defs/#updateaccountsettingsoutputtypedef">UpdateAccountSettingsOutputTypeDef</a></li>
 <li><a href="type_defs/#updategroupoutputtypedef">UpdateGroupOutputTypeDef</a></li>
 <li><a href="type_defs/#groupconfigurationitemtypedef">GroupConfigurationItemTypeDef</a></li>
 <li><a href="type_defs/#listgroupsinputrequesttypedef">ListGroupsInputRequestTypeDef</a></li>

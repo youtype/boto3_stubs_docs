@@ -7,6 +7,26 @@
     Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
     type annotations stubs module [mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
+## AccountSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resource_groups.type_defs import AccountSettingsTypeDef
+
+def get_value() -> AccountSettingsTypeDef:
+    return {
+        "GroupLifecycleEventsDesiredStatus": ...,
+    }
+```
+
+```python title="Definition"
+class AccountSettingsTypeDef(TypedDict):
+    GroupLifecycleEventsDesiredStatus: NotRequired[GroupLifecycleEventsDesiredStatusType],  # (1)
+    GroupLifecycleEventsStatus: NotRequired[GroupLifecycleEventsStatusType],  # (2)
+    GroupLifecycleEventsStatusMessage: NotRequired[str],
+```
+
+1. See [:material-code-brackets: GroupLifecycleEventsDesiredStatusType](./literals.md#grouplifecycleeventsdesiredstatustype) 
+2. See [:material-code-brackets: GroupLifecycleEventsStatusType](./literals.md#grouplifecycleeventsstatustype) 
 ## ResourceQueryTypeDef
 
 ```python title="Usage Example"
@@ -400,6 +420,23 @@ class UntagInputRequestTypeDef(TypedDict):
     Keys: Sequence[str],
 ```
 
+## UpdateAccountSettingsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resource_groups.type_defs import UpdateAccountSettingsInputRequestTypeDef
+
+def get_value() -> UpdateAccountSettingsInputRequestTypeDef:
+    return {
+        "GroupLifecycleEventsDesiredStatus": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccountSettingsInputRequestTypeDef(TypedDict):
+    GroupLifecycleEventsDesiredStatus: NotRequired[GroupLifecycleEventsDesiredStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: GroupLifecycleEventsDesiredStatusType](./literals.md#grouplifecycleeventsdesiredstatustype) 
 ## UpdateGroupInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -495,6 +532,26 @@ class DeleteGroupOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccountSettingsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resource_groups.type_defs import GetAccountSettingsOutputTypeDef
+
+def get_value() -> GetAccountSettingsOutputTypeDef:
+    return {
+        "AccountSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccountSettingsOutputTypeDef(TypedDict):
+    AccountSettings: AccountSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGroupOutputTypeDef
 
 ```python title="Usage Example"
@@ -578,6 +635,26 @@ class UntagOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAccountSettingsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resource_groups.type_defs import UpdateAccountSettingsOutputTypeDef
+
+def get_value() -> UpdateAccountSettingsOutputTypeDef:
+    return {
+        "AccountSettings": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAccountSettingsOutputTypeDef(TypedDict):
+    AccountSettings: AccountSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGroupOutputTypeDef
 
 ```python title="Usage Example"

@@ -1301,7 +1301,7 @@ parent.create_snapshot(**kwargs)
 
 ### EC2ServiceResource.create\_subnet method
 
-Creates a subnet in a specified VPC.
+Creates a subnet in the specified VPC.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").create_subnet` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_subnet)
@@ -1413,7 +1413,7 @@ parent.create_volume(**kwargs)
 
 ### EC2ServiceResource.create\_vpc method
 
-Creates a VPC with the specified IPv4 CIDR block.
+Creates a VPC with the specified CIDR blocks.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").create_vpc` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource.create_vpc)
@@ -6760,7 +6760,7 @@ parent.create_security_group(**kwargs)
 
 #### Vpc.create\_subnet method
 
-Creates a subnet in a specified VPC.
+Creates a subnet in the specified VPC.
 
 Type annotations and code completion for `#!python boto3.resource("ec2").create_subnet` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Vpc.create_subnet)
