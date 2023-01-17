@@ -1101,7 +1101,8 @@ parent.list_component_build_versions(**kwargs)
 
 ### list\_components
 
-Returns the list of component build versions for the specified semantic version.
+Returns the list of components that can be filtered by name, or by using the
+listed `filters` to streamline results.
 
 Type annotations and code completion for `#!python boto3.client("imagebuilder").list_components` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_components)

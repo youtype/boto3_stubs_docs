@@ -15,7 +15,7 @@
         <link rel="next" href="../usage/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.4">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.9c788c91.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
@@ -159,7 +159,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -42754,11 +42754,13 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
 <a id="__codelineno-87-8" name="__codelineno-87-8" href="#__codelineno-87-8"></a>    <span class="n">owner</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-87-9" name="__codelineno-87-9" href="#__codelineno-87-9"></a>    <span class="n">dateCreated</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-87-10" name="__codelineno-87-10" href="#__codelineno-87-10"></a>    <span class="n">buildType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">BuildTypeType</span><span class="p">],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-87-11" name="__codelineno-87-11" href="#__codelineno-87-11"></a>    <span class="n">imageSource</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ImageSourceType</span><span class="p">],</span>  <span class="c1"># (4)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#imagetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ImageTypeType</a> </li>
 <li>See <a href="../literals/#platformtype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> PlatformType</a> </li>
 <li>See <a href="../literals/#buildtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BuildTypeType</a> </li>
+<li>See <a href="../literals/#imagesourcetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ImageSourceType</a> </li>
 </ol>
 <h2 id="importcomponentrequestrequesttypedef">ImportComponentRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_imagebuilder.type_defs</span> <span class="kn">import</span> <span class="n">ImportComponentRequestRequestTypeDef</span>
@@ -43631,6 +43633,8 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
 <a id="__codelineno-185-11" name="__codelineno-185-11" href="#__codelineno-185-11"></a>    <span class="n">changeDescription</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-185-12" name="__codelineno-185-12" href="#__codelineno-185-12"></a>    <span class="n">dateCreated</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-185-13" name="__codelineno-185-13" href="#__codelineno-185-13"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-185-14" name="__codelineno-185-14" href="#__codelineno-185-14"></a>    <span class="n">publisher</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-185-15" name="__codelineno-185-15" href="#__codelineno-185-15"></a>    <span class="n">obfuscate</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#platformtype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> PlatformType</a> </li>
@@ -43662,6 +43666,8 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
 <a id="__codelineno-187-15" name="__codelineno-187-15" href="#__codelineno-187-15"></a>    <span class="n">encrypted</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 <a id="__codelineno-187-16" name="__codelineno-187-16" href="#__codelineno-187-16"></a>    <span class="n">dateCreated</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-187-17" name="__codelineno-187-17" href="#__codelineno-187-17"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-187-18" name="__codelineno-187-18" href="#__codelineno-187-18"></a>    <span class="n">publisher</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-187-19" name="__codelineno-187-19" href="#__codelineno-187-19"></a>    <span class="n">obfuscate</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#componenttypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ComponentTypeType</a> </li>
@@ -44456,6 +44462,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
 <a id="__codelineno-261-11" name="__codelineno-261-11" href="#__codelineno-261-11"></a>    <span class="n">outputResources</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">OutputResourcesTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
 <a id="__codelineno-261-12" name="__codelineno-261-12" href="#__codelineno-261-12"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
 <a id="__codelineno-261-13" name="__codelineno-261-13" href="#__codelineno-261-13"></a>    <span class="n">buildType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">BuildTypeType</span><span class="p">],</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-261-14" name="__codelineno-261-14" href="#__codelineno-261-14"></a>    <span class="n">imageSource</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ImageSourceType</span><span class="p">],</span>  <span class="c1"># (6)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#imagetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ImageTypeType</a> </li>
@@ -44463,6 +44470,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
 <li>See <a href="./#imagestatetypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ImageStateTypeDef</a> </li>
 <li>See <a href="./#outputresourcestypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> OutputResourcesTypeDef</a> </li>
 <li>See <a href="../literals/#buildtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BuildTypeType</a> </li>
+<li>See <a href="../literals/#imagesourcetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ImageSourceType</a> </li>
 </ol>
 <h2 id="getimagereciperesponsetypedef">GetImageRecipeResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-262-1" name="__codelineno-262-1" href="#__codelineno-262-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_imagebuilder.type_defs</span> <span class="kn">import</span> <span class="n">GetImageRecipeResponseTypeDef</span>
@@ -44743,6 +44751,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
 <a id="__codelineno-285-18" name="__codelineno-285-18" href="#__codelineno-285-18"></a>    <span class="n">outputResources</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">OutputResourcesTypeDef</span><span class="p">],</span>  <span class="c1"># (9)</span>
 <a id="__codelineno-285-19" name="__codelineno-285-19" href="#__codelineno-285-19"></a>    <span class="n">tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
 <a id="__codelineno-285-20" name="__codelineno-285-20" href="#__codelineno-285-20"></a>    <span class="n">buildType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">BuildTypeType</span><span class="p">],</span>  <span class="c1"># (10)</span>
+<a id="__codelineno-285-21" name="__codelineno-285-21" href="#__codelineno-285-21"></a>    <span class="n">imageSource</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">ImageSourceType</span><span class="p">],</span>  <span class="c1"># (11)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#imagetypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ImageTypeType</a> </li>
@@ -44755,6 +44764,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
 <li>See <a href="./#imagetestsconfigurationtypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ImageTestsConfigurationTypeDef</a> </li>
 <li>See <a href="./#outputresourcestypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> OutputResourcesTypeDef</a> </li>
 <li>See <a href="../literals/#buildtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BuildTypeType</a> </li>
+<li>See <a href="../literals/#imagesourcetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> ImageSourceType</a> </li>
 </ol>
 <h2 id="getimageresponsetypedef">GetImageResponseTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-286-1" name="__codelineno-286-1" href="#__codelineno-286-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_imagebuilder.type_defs</span> <span class="kn">import</span> <span class="n">GetImageResponseTypeDef</span>
@@ -44815,7 +44825,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-image
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ba449ae6.min.js"></script>
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
       
     
   </body>

@@ -106,6 +106,7 @@ def get_value() -> AttachmentStatusType:
 - [EncryptionTypeType](./literals.md#encryptiontypetype)
 - [FirewallStatusValueType](./literals.md#firewallstatusvaluetype)
 - [GeneratedRulesTypeType](./literals.md#generatedrulestypetype)
+- [IPAddressTypeType](./literals.md#ipaddresstypetype)
 - [ListFirewallPoliciesPaginatorName](./literals.md#listfirewallpoliciespaginatorname)
 - [ListFirewallsPaginatorName](./literals.md#listfirewallspaginatorname)
 - [ListRuleGroupsPaginatorName](./literals.md#listrulegroupspaginatorname)

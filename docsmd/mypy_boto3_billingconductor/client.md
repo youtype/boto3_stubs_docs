@@ -353,6 +353,8 @@ def create_pricing_rule(
     Tags: Mapping[str, str] = ...,
     BillingEntity: str = ...,
     Tiering: CreateTieringInputTypeDef = ...,  # (3)
+    UsageType: str = ...,
+    Operation: str = ...,
 ) -> CreatePricingRuleOutputTypeDef:  # (4)
     ...
 ```

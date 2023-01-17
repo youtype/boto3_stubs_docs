@@ -1885,6 +1885,8 @@ class CreatePricingRuleInputRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
     BillingEntity: NotRequired[str],
     Tiering: NotRequired[CreateTieringInputTypeDef],  # (3)
+    UsageType: NotRequired[str],
+    Operation: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
@@ -2137,6 +2139,8 @@ def get_value() -> UpdatePricingRuleOutputTypeDef:
         "LastModifiedTime": ...,
         "BillingEntity": ...,
         "Tiering": ...,
+        "UsageType": ...,
+        "Operation": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2154,6 +2158,8 @@ class UpdatePricingRuleOutputTypeDef(TypedDict):
     LastModifiedTime: int,
     BillingEntity: str,
     Tiering: UpdateTieringInputTypeDef,  # (3)
+    UsageType: str,
+    Operation: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 

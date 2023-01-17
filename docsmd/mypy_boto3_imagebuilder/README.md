@@ -89,6 +89,7 @@ def get_value() -> BuildTypeType:
 - [ContainerTypeType](./literals.md#containertypetype)
 - [DiskImageFormatType](./literals.md#diskimageformattype)
 - [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
+- [ImageSourceType](./literals.md#imagesourcetype)
 - [ImageStatusType](./literals.md#imagestatustype)
 - [ImageTypeType](./literals.md#imagetypetype)
 - [OwnershipType](./literals.md#ownershiptype)

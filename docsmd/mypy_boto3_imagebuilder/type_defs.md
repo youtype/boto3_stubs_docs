@@ -815,11 +815,13 @@ class ImageVersionTypeDef(TypedDict):
     owner: NotRequired[str],
     dateCreated: NotRequired[str],
     buildType: NotRequired[BuildTypeType],  # (3)
+    imageSource: NotRequired[ImageSourceType],  # (4)
 ```
 
 1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
 2. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
 3. See [:material-code-brackets: BuildTypeType](./literals.md#buildtypetype) 
+4. See [:material-code-brackets: ImageSourceType](./literals.md#imagesourcetype) 
 ## ImportComponentRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1863,6 +1865,8 @@ class ComponentSummaryTypeDef(TypedDict):
     changeDescription: NotRequired[str],
     dateCreated: NotRequired[str],
     tags: NotRequired[Dict[str, str]],
+    publisher: NotRequired[str],
+    obfuscate: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
@@ -1897,6 +1901,8 @@ class ComponentTypeDef(TypedDict):
     encrypted: NotRequired[bool],
     dateCreated: NotRequired[str],
     tags: NotRequired[Dict[str, str]],
+    publisher: NotRequired[str],
+    obfuscate: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
@@ -2802,6 +2808,7 @@ class ImageSummaryTypeDef(TypedDict):
     outputResources: NotRequired[OutputResourcesTypeDef],  # (4)
     tags: NotRequired[Dict[str, str]],
     buildType: NotRequired[BuildTypeType],  # (5)
+    imageSource: NotRequired[ImageSourceType],  # (6)
 ```
 
 1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
@@ -2809,6 +2816,7 @@ class ImageSummaryTypeDef(TypedDict):
 3. See [:material-code-braces: ImageStateTypeDef](./type_defs.md#imagestatetypedef) 
 4. See [:material-code-braces: OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef) 
 5. See [:material-code-brackets: BuildTypeType](./literals.md#buildtypetype) 
+6. See [:material-code-brackets: ImageSourceType](./literals.md#imagesourcetype) 
 ## GetImageRecipeResponseTypeDef
 
 ```python title="Usage Example"
@@ -3125,6 +3133,7 @@ class ImageTypeDef(TypedDict):
     outputResources: NotRequired[OutputResourcesTypeDef],  # (9)
     tags: NotRequired[Dict[str, str]],
     buildType: NotRequired[BuildTypeType],  # (10)
+    imageSource: NotRequired[ImageSourceType],  # (11)
 ```
 
 1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
@@ -3137,6 +3146,7 @@ class ImageTypeDef(TypedDict):
 8. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
 9. See [:material-code-braces: OutputResourcesTypeDef](./type_defs.md#outputresourcestypedef) 
 10. See [:material-code-brackets: BuildTypeType](./literals.md#buildtypetype) 
+11. See [:material-code-brackets: ImageSourceType](./literals.md#imagesourcetype) 
 ## GetImageResponseTypeDef
 
 ```python title="Usage Example"

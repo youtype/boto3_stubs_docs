@@ -130,6 +130,23 @@ EbsVolumeTypeType = Literal[
     "standard",
 ]
 ```
+## ImageSourceType
+
+```python title="Usage Example"
+from mypy_boto3_imagebuilder.literals import ImageSourceType
+
+def get_value() -> ImageSourceType:
+    return "AMAZON_MANAGED"
+```
+
+```python title="Definition"
+ImageSourceType = Literal[
+    "AMAZON_MANAGED",
+    "AWS_MARKETPLACE",
+    "CUSTOM",
+    "IMPORTED",
+]
+```
 ## ImageStatusType
 
 ```python title="Usage Example"
@@ -183,6 +200,7 @@ OwnershipType = Literal[
     "Amazon",
     "Self",
     "Shared",
+    "ThirdParty",
 ]
 ```
 ## PipelineExecutionStartConditionType

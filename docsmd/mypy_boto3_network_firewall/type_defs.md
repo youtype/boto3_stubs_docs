@@ -80,8 +80,10 @@ def get_value() -> SubnetMappingTypeDef:
 ```python title="Definition"
 class SubnetMappingTypeDef(TypedDict):
     SubnetId: str,
+    IPAddressType: NotRequired[IPAddressTypeType],  # (1)
 ```
 
+1. See [:material-code-brackets: IPAddressTypeType](./literals.md#ipaddresstypetype) 
 ## AttachmentTypeDef
 
 ```python title="Usage Example"

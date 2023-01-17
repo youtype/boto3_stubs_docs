@@ -86,6 +86,21 @@ GeneratedRulesTypeType = Literal[
     "DENYLIST",
 ]
 ```
+## IPAddressTypeType
+
+```python title="Usage Example"
+from mypy_boto3_network_firewall.literals import IPAddressTypeType
+
+def get_value() -> IPAddressTypeType:
+    return "DUALSTACK"
+```
+
+```python title="Definition"
+IPAddressTypeType = Literal[
+    "DUALSTACK",
+    "IPV4",
+]
+```
 ## ListFirewallPoliciesPaginatorName
 
 ```python title="Usage Example"
