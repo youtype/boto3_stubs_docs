@@ -1215,6 +1215,7 @@ def put_metric_stream(
     ExcludeFilters: Sequence[MetricStreamFilterTypeDef] = ...,  # (2)
     Tags: Sequence[TagTypeDef] = ...,  # (4)
     StatisticsConfigurations: Sequence[MetricStreamStatisticsConfigurationTypeDef] = ...,  # (5)
+    IncludeLinkedAccountsMetrics: bool = ...,
 ) -> PutMetricStreamOutputTypeDef:  # (6)
     ...
 ```

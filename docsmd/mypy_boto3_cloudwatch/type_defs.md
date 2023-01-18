@@ -2023,6 +2023,7 @@ def get_value() -> GetMetricStreamOutputTypeDef:
         "LastUpdateDate": ...,
         "OutputFormat": ...,
         "StatisticsConfigurations": ...,
+        "IncludeLinkedAccountsMetrics": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2040,6 +2041,7 @@ class GetMetricStreamOutputTypeDef(TypedDict):
     LastUpdateDate: datetime,
     OutputFormat: MetricStreamOutputFormatType,  # (3)
     StatisticsConfigurations: List[MetricStreamStatisticsConfigurationTypeDef],  # (4)
+    IncludeLinkedAccountsMetrics: bool,
     ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
@@ -2072,6 +2074,7 @@ class PutMetricStreamInputRequestTypeDef(TypedDict):
     ExcludeFilters: NotRequired[Sequence[MetricStreamFilterTypeDef]],  # (2)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
     StatisticsConfigurations: NotRequired[Sequence[MetricStreamStatisticsConfigurationTypeDef]],  # (5)
+    IncludeLinkedAccountsMetrics: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype) 
