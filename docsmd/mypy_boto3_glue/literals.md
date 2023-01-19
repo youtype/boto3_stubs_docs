@@ -795,6 +795,23 @@ GlueRecordTypeType = Literal[
     "TIMESTAMP",
 ]
 ```
+## HudiTargetCompressionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import HudiTargetCompressionTypeType
+
+def get_value() -> HudiTargetCompressionTypeType:
+    return "gzip"
+```
+
+```python title="Definition"
+HudiTargetCompressionTypeType = Literal[
+    "gzip",
+    "lzo",
+    "snappy",
+    "uncompressed",
+]
+```
 ## JDBCDataTypeType
 
 ```python title="Usage Example"
@@ -1479,6 +1496,7 @@ def get_value() -> TargetFormatType:
 TargetFormatType = Literal[
     "avro",
     "csv",
+    "hudi",
     "json",
     "orc",
     "parquet",

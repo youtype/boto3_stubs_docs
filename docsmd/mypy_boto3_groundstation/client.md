@@ -158,6 +158,8 @@ def create_dataflow_endpoint_group(
     self,
     *,
     endpointDetails: Sequence[EndpointDetailsTypeDef],  # (1)
+    contactPostPassDurationSeconds: int = ...,
+    contactPrePassDurationSeconds: int = ...,
     tags: Mapping[str, str] = ...,
 ) -> DataflowEndpointGroupIdResponseTypeDef:  # (2)
     ...
@@ -1075,4 +1077,11 @@ Type annotations and code completion for `#!python boto3.client("groundstation")
 - `client.get_paginator("list_satellites")` -> [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)
 
 
+
+
+### get_waiter
+
+Type annotations and code completion for `#!python boto3.client("groundstation").get_waiter` method with overloads.
+
+- `client.get_waiter("contact_scheduled")` -> [ContactScheduledWaiter](./waiters.md#contactscheduledwaiter)
 

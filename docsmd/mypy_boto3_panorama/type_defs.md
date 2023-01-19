@@ -418,6 +418,7 @@ def get_value() -> OTAJobConfigTypeDef:
 ```python title="Definition"
 class OTAJobConfigTypeDef(TypedDict):
     ImageVersion: str,
+    AllowMajorVersionUpdate: NotRequired[bool],
 ```
 
 ## DeviceJobTypeDef

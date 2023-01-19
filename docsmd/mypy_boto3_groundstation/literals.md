@@ -58,6 +58,20 @@ ConfigCapabilityTypeType = Literal[
     "uplink-echo",
 ]
 ```
+## ContactScheduledWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import ContactScheduledWaiterName
+
+def get_value() -> ContactScheduledWaiterName:
+    return "contact_scheduled"
+```
+
+```python title="Definition"
+ContactScheduledWaiterName = Literal[
+    "contact_scheduled",
+]
+```
 ## ContactStatusType
 
 ```python title="Usage Example"
@@ -720,6 +734,20 @@ PaginatorName = Literal[
     "list_ground_stations",
     "list_mission_profiles",
     "list_satellites",
+]
+```
+## WaiterName
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "contact_scheduled"
+```
+
+```python title="Definition"
+WaiterName = Literal[
+    "contact_scheduled",
 ]
 ```
 ## RegionName

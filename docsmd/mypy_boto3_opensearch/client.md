@@ -705,6 +705,38 @@ parent.describe_domains(**kwargs)
 
 1. See [:material-code-braces: DescribeDomainsRequestRequestTypeDef](./type_defs.md#describedomainsrequestrequesttypedef) 
 
+### describe\_dry\_run\_progress
+
+Describes the progress of a pre-update dry run analysis on an Amazon OpenSearch
+Service domain.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_dry_run_progress` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_dry_run_progress)
+
+```python title="Method definition"
+def describe_dry_run_progress(
+    self,
+    *,
+    DomainName: str,
+    DryRunId: str = ...,
+    LoadDryRunConfig: bool = ...,
+) -> DescribeDryRunProgressResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeDryRunProgressResponseTypeDef](./type_defs.md#describedryrunprogressresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDryRunProgressRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
+
+parent.describe_dry_run_progress(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDryRunProgressRequestRequestTypeDef](./type_defs.md#describedryrunprogressrequestrequesttypedef) 
+
 ### describe\_inbound\_connections
 
 Lists all the inbound cross-cluster search connections for a destination
@@ -1563,7 +1595,8 @@ def update_domain_config(
     AdvancedSecurityOptions: AdvancedSecurityOptionsInputTypeDef = ...,  # (10)
     AutoTuneOptions: AutoTuneOptionsTypeDef = ...,  # (11)
     DryRun: bool = ...,
-) -> UpdateDomainConfigResponseTypeDef:  # (12)
+    DryRunMode: DryRunModeType = ...,  # (12)
+) -> UpdateDomainConfigResponseTypeDef:  # (13)
     ...
 ```
 
@@ -1578,7 +1611,8 @@ def update_domain_config(
 9. See [:material-code-braces: NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef) 
 10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
 11. See [:material-code-braces: AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef) 
-12. See [:material-code-braces: UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef) 
+12. See [:material-code-brackets: DryRunModeType](./literals.md#dryrunmodetype) 
+13. See [:material-code-braces: UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

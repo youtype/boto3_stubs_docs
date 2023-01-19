@@ -3270,6 +3270,24 @@ class ParticipantTimerValueTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ParticipantTimerActionType](./literals.md#participanttimeractiontype) 
+## PersistentChatTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import PersistentChatTypeDef
+
+def get_value() -> PersistentChatTypeDef:
+    return {
+        "RehydrationType": ...,
+    }
+```
+
+```python title="Definition"
+class PersistentChatTypeDef(TypedDict):
+    RehydrationType: NotRequired[RehydrationTypeType],  # (1)
+    SourceContactId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: RehydrationTypeType](./literals.md#rehydrationtypetype) 
 ## PhoneNumberQuickConnectConfigTypeDef
 
 ```python title="Usage Example"
@@ -5050,6 +5068,7 @@ def get_value() -> StartChatContactResponseTypeDef:
         "ContactId": ...,
         "ParticipantId": ...,
         "ParticipantToken": ...,
+        "ContinuedFromContactId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -5059,6 +5078,7 @@ class StartChatContactResponseTypeDef(TypedDict):
     ContactId: str,
     ParticipantId: str,
     ParticipantToken: str,
+    ContinuedFromContactId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -5408,6 +5428,7 @@ class ContactTypeDef(TypedDict):
     DisconnectTimestamp: NotRequired[datetime],
     LastUpdateTimestamp: NotRequired[datetime],
     ScheduledTimestamp: NotRequired[datetime],
+    RelatedContactId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ContactInitiationMethodType](./literals.md#contactinitiationmethodtype) 
@@ -7270,33 +7291,6 @@ class SendNotificationActionDefinitionTypeDef(TypedDict):
 1. See [:material-code-brackets: NotificationDeliveryTypeType](./literals.md#notificationdeliverytypetype) 
 2. See [:material-code-brackets: NotificationContentTypeType](./literals.md#notificationcontenttypetype) 
 3. See [:material-code-braces: NotificationRecipientTypeTypeDef](./type_defs.md#notificationrecipienttypetypedef) 
-## StartChatContactRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_connect.type_defs import StartChatContactRequestRequestTypeDef
-
-def get_value() -> StartChatContactRequestRequestTypeDef:
-    return {
-        "InstanceId": ...,
-        "ContactFlowId": ...,
-        "ParticipantDetails": ...,
-    }
-```
-
-```python title="Definition"
-class StartChatContactRequestRequestTypeDef(TypedDict):
-    InstanceId: str,
-    ContactFlowId: str,
-    ParticipantDetails: ParticipantDetailsTypeDef,  # (1)
-    Attributes: NotRequired[Mapping[str, str]],
-    InitialMessage: NotRequired[ChatMessageTypeDef],  # (2)
-    ClientToken: NotRequired[str],
-    ChatDurationInMinutes: NotRequired[int],
-    SupportedMessagingContentTypes: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-braces: ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef) 
-2. See [:material-code-braces: ChatMessageTypeDef](./type_defs.md#chatmessagetypedef) 
 ## ParticipantTimerConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -7320,6 +7314,35 @@ class ParticipantTimerConfigurationTypeDef(TypedDict):
 1. See [:material-code-brackets: TimerEligibleParticipantRolesType](./literals.md#timereligibleparticipantrolestype) 
 2. See [:material-code-brackets: ParticipantTimerTypeType](./literals.md#participanttimertypetype) 
 3. See [:material-code-braces: ParticipantTimerValueTypeDef](./type_defs.md#participanttimervaluetypedef) 
+## StartChatContactRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import StartChatContactRequestRequestTypeDef
+
+def get_value() -> StartChatContactRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+        "ParticipantDetails": ...,
+    }
+```
+
+```python title="Definition"
+class StartChatContactRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+    ParticipantDetails: ParticipantDetailsTypeDef,  # (1)
+    Attributes: NotRequired[Mapping[str, str]],
+    InitialMessage: NotRequired[ChatMessageTypeDef],  # (2)
+    ClientToken: NotRequired[str],
+    ChatDurationInMinutes: NotRequired[int],
+    SupportedMessagingContentTypes: NotRequired[Sequence[str]],
+    PersistentChat: NotRequired[PersistentChatTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef) 
+2. See [:material-code-braces: ChatMessageTypeDef](./type_defs.md#chatmessagetypedef) 
+3. See [:material-code-braces: PersistentChatTypeDef](./type_defs.md#persistentchattypedef) 
 ## QueueSearchCriteriaTypeDef
 
 ```python title="Usage Example"

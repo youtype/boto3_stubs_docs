@@ -368,6 +368,23 @@ class DeleteMissionProfileRequestRequestTypeDef(TypedDict):
     missionProfileId: str,
 ```
 
+## WaiterConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
+```
+
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
+
 ## DescribeContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1187,6 +1204,24 @@ class DataflowEndpointTypeDef(TypedDict):
 
 1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
 2. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
+## DescribeContactRequestContactScheduledWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import DescribeContactRequestContactScheduledWaitTypeDef
+
+def get_value() -> DescribeContactRequestContactScheduledWaitTypeDef:
+    return {
+        "contactId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeContactRequestContactScheduledWaitTypeDef(TypedDict):
+    contactId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## EphemerisDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -1757,6 +1792,8 @@ def get_value() -> CreateDataflowEndpointGroupRequestRequestTypeDef:
 ```python title="Definition"
 class CreateDataflowEndpointGroupRequestRequestTypeDef(TypedDict):
     endpointDetails: Sequence[EndpointDetailsTypeDef],  # (1)
+    contactPostPassDurationSeconds: NotRequired[int],
+    contactPrePassDurationSeconds: NotRequired[int],
     tags: NotRequired[Mapping[str, str]],
 ```
 
@@ -1768,6 +1805,8 @@ from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupResponseT
 
 def get_value() -> GetDataflowEndpointGroupResponseTypeDef:
     return {
+        "contactPostPassDurationSeconds": ...,
+        "contactPrePassDurationSeconds": ...,
         "dataflowEndpointGroupArn": ...,
         "dataflowEndpointGroupId": ...,
         "endpointsDetails": ...,
@@ -1778,6 +1817,8 @@ def get_value() -> GetDataflowEndpointGroupResponseTypeDef:
 
 ```python title="Definition"
 class GetDataflowEndpointGroupResponseTypeDef(TypedDict):
+    contactPostPassDurationSeconds: int,
+    contactPrePassDurationSeconds: int,
     dataflowEndpointGroupArn: str,
     dataflowEndpointGroupId: str,
     endpointsDetails: List[EndpointDetailsTypeDef],  # (1)

@@ -23781,6 +23781,7 @@ class DescribeLaunchTemplateVersionsRequestDescribeLaunchTemplateVersionsPaginat
     MinVersion: NotRequired[str],
     MaxVersion: NotRequired[str],
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    ResolveAlias: NotRequired[bool],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
@@ -23808,6 +23809,7 @@ class DescribeLaunchTemplateVersionsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
     MaxResults: NotRequired[int],
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    ResolveAlias: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
@@ -43404,6 +43406,7 @@ class CreateLaunchTemplateVersionRequestRequestTypeDef(TypedDict):
     LaunchTemplateName: NotRequired[str],
     SourceVersion: NotRequired[str],
     VersionDescription: NotRequired[str],
+    ResolveAlias: NotRequired[bool],
 ```
 
 1. See [:material-code-braces: RequestLaunchTemplateDataTypeDef](./type_defs.md#requestlaunchtemplatedatatypedef) 

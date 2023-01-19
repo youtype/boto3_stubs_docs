@@ -1348,6 +1348,21 @@ ReferenceTypeType = Literal[
     "URL",
 ]
 ```
+## RehydrationTypeType
+
+```python title="Usage Example"
+from mypy_boto3_connect.literals import RehydrationTypeType
+
+def get_value() -> RehydrationTypeType:
+    return "ENTIRE_PAST_SESSION"
+```
+
+```python title="Definition"
+RehydrationTypeType = Literal[
+    "ENTIRE_PAST_SESSION",
+    "FROM_SEGMENT",
+]
+```
 ## RulePublishStatusType
 
 ```python title="Usage Example"

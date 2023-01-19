@@ -367,6 +367,7 @@ class ConnectorOperatorTypeDef(TypedDict):
     Zendesk: NotRequired[ZendeskConnectorOperatorType],  # (14)
     SAPOData: NotRequired[SAPODataConnectorOperatorType],  # (15)
     CustomConnector: NotRequired[OperatorType],  # (16)
+    Pardot: NotRequired[PardotConnectorOperatorType],  # (17)
 ```
 
 1. See [:material-code-brackets: AmplitudeConnectorOperatorType](./literals.md#amplitudeconnectoroperatortype) 
@@ -385,6 +386,7 @@ class ConnectorOperatorTypeDef(TypedDict):
 14. See [:material-code-brackets: ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype) 
 15. See [:material-code-brackets: SAPODataConnectorOperatorType](./literals.md#sapodataconnectoroperatortype) 
 16. See [:material-code-brackets: OperatorType](./literals.md#operatortype) 
+17. See [:material-code-brackets: PardotConnectorOperatorType](./literals.md#pardotconnectoroperatortype) 
 ## DatadogConnectorProfileCredentialsTypeDef
 
 ```python title="Usage Example"
@@ -606,6 +608,24 @@ def get_value() -> MarketoConnectorProfilePropertiesTypeDef:
 ```python title="Definition"
 class MarketoConnectorProfilePropertiesTypeDef(TypedDict):
     instanceUrl: str,
+```
+
+## PardotConnectorProfilePropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import PardotConnectorProfilePropertiesTypeDef
+
+def get_value() -> PardotConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
+```
+
+```python title="Definition"
+class PardotConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: NotRequired[str],
+    isSandboxEnvironment: NotRequired[bool],
+    businessUnitId: NotRequired[str],
 ```
 
 ## RedshiftConnectorProfilePropertiesTypeDef
@@ -1336,6 +1356,22 @@ class OAuthPropertiesTypeDef(TypedDict):
     oAuthScopes: Sequence[str],
 ```
 
+## PardotSourcePropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import PardotSourcePropertiesTypeDef
+
+def get_value() -> PardotSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
+```
+
+```python title="Definition"
+class PardotSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
+
 ## PrefixConfigTypeDef
 
 ```python title="Usage Example"
@@ -1688,6 +1724,7 @@ class ConnectorMetadataTypeDef(TypedDict):
     CustomerProfiles: NotRequired[Dict[str, Any]],
     Honeycode: NotRequired[HoneycodeMetadataTypeDef],  # (6)
     SAPOData: NotRequired[Dict[str, Any]],
+    Pardot: NotRequired[Dict[str, Any]],
 ```
 
 1. See [:material-code-braces: GoogleAnalyticsMetadataTypeDef](./type_defs.md#googleanalyticsmetadatatypedef) 
@@ -1798,6 +1835,26 @@ class OAuthCredentialsTypeDef(TypedDict):
     accessToken: NotRequired[str],
     refreshToken: NotRequired[str],
     oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
+## PardotConnectorProfileCredentialsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appflow.type_defs import PardotConnectorProfileCredentialsTypeDef
+
+def get_value() -> PardotConnectorProfileCredentialsTypeDef:
+    return {
+        "accessToken": ...,
+    }
+```
+
+```python title="Definition"
+class PardotConnectorProfileCredentialsTypeDef(TypedDict):
+    accessToken: NotRequired[str],
+    refreshToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+    clientCredentialsArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
@@ -2784,6 +2841,7 @@ class ConnectorProfilePropertiesTypeDef(TypedDict):
     Zendesk: NotRequired[ZendeskConnectorProfilePropertiesTypeDef],  # (11)
     SAPOData: NotRequired[SAPODataConnectorProfilePropertiesTypeDef],  # (12)
     CustomConnector: NotRequired[CustomConnectorProfilePropertiesTypeDef],  # (13)
+    Pardot: NotRequired[PardotConnectorProfilePropertiesTypeDef],  # (14)
 ```
 
 1. See [:material-code-braces: DatadogConnectorProfilePropertiesTypeDef](./type_defs.md#datadogconnectorprofilepropertiestypedef) 
@@ -2799,6 +2857,7 @@ class ConnectorProfilePropertiesTypeDef(TypedDict):
 11. See [:material-code-braces: ZendeskConnectorProfilePropertiesTypeDef](./type_defs.md#zendeskconnectorprofilepropertiestypedef) 
 12. See [:material-code-braces: SAPODataConnectorProfilePropertiesTypeDef](./type_defs.md#sapodataconnectorprofilepropertiestypedef) 
 13. See [:material-code-braces: CustomConnectorProfilePropertiesTypeDef](./type_defs.md#customconnectorprofilepropertiestypedef) 
+14. See [:material-code-braces: PardotConnectorProfilePropertiesTypeDef](./type_defs.md#pardotconnectorprofilepropertiestypedef) 
 ## S3DestinationPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -2867,6 +2926,7 @@ class SourceConnectorPropertiesTypeDef(TypedDict):
     Zendesk: NotRequired[ZendeskSourcePropertiesTypeDef],  # (14)
     SAPOData: NotRequired[SAPODataSourcePropertiesTypeDef],  # (15)
     CustomConnector: NotRequired[CustomConnectorSourcePropertiesTypeDef],  # (16)
+    Pardot: NotRequired[PardotSourcePropertiesTypeDef],  # (17)
 ```
 
 1. See [:material-code-braces: AmplitudeSourcePropertiesTypeDef](./type_defs.md#amplitudesourcepropertiestypedef) 
@@ -2885,6 +2945,7 @@ class SourceConnectorPropertiesTypeDef(TypedDict):
 14. See [:material-code-braces: ZendeskSourcePropertiesTypeDef](./type_defs.md#zendesksourcepropertiestypedef) 
 15. See [:material-code-braces: SAPODataSourcePropertiesTypeDef](./type_defs.md#sapodatasourcepropertiestypedef) 
 16. See [:material-code-braces: CustomConnectorSourcePropertiesTypeDef](./type_defs.md#customconnectorsourcepropertiestypedef) 
+17. See [:material-code-braces: PardotSourcePropertiesTypeDef](./type_defs.md#pardotsourcepropertiestypedef) 
 ## TriggerConfigTypeDef
 
 ```python title="Usage Example"
@@ -2935,6 +2996,7 @@ class ConnectorProfileCredentialsTypeDef(TypedDict):
     Zendesk: NotRequired[ZendeskConnectorProfileCredentialsTypeDef],  # (16)
     SAPOData: NotRequired[SAPODataConnectorProfileCredentialsTypeDef],  # (17)
     CustomConnector: NotRequired[CustomConnectorProfileCredentialsTypeDef],  # (18)
+    Pardot: NotRequired[PardotConnectorProfileCredentialsTypeDef],  # (19)
 ```
 
 1. See [:material-code-braces: AmplitudeConnectorProfileCredentialsTypeDef](./type_defs.md#amplitudeconnectorprofilecredentialstypedef) 
@@ -2955,6 +3017,7 @@ class ConnectorProfileCredentialsTypeDef(TypedDict):
 16. See [:material-code-braces: ZendeskConnectorProfileCredentialsTypeDef](./type_defs.md#zendeskconnectorprofilecredentialstypedef) 
 17. See [:material-code-braces: SAPODataConnectorProfileCredentialsTypeDef](./type_defs.md#sapodataconnectorprofilecredentialstypedef) 
 18. See [:material-code-braces: CustomConnectorProfileCredentialsTypeDef](./type_defs.md#customconnectorprofilecredentialstypedef) 
+19. See [:material-code-braces: PardotConnectorProfileCredentialsTypeDef](./type_defs.md#pardotconnectorprofilecredentialstypedef) 
 ## ConnectorEntityFieldTypeDef
 
 ```python title="Usage Example"

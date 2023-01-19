@@ -118,6 +118,7 @@ ConnectorTypeType = Literal[
     "Infornexus",
     "LookoutMetrics",
     "Marketo",
+    "Pardot",
     "Redshift",
     "S3",
     "Salesforce",
@@ -446,6 +447,33 @@ OperatorsType = Literal[
     "MULTIPLICATION",
     "NO_OP",
     "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
+## PardotConnectorOperatorType
+
+```python title="Usage Example"
+from mypy_boto3_appflow.literals import PardotConnectorOperatorType
+
+def get_value() -> PardotConnectorOperatorType:
+    return "ADDITION"
+```
+
+```python title="Definition"
+PardotConnectorOperatorType = Literal[
+    "ADDITION",
+    "DIVISION",
+    "EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
     "PROJECTION",
     "SUBTRACTION",
     "VALIDATE_NON_NEGATIVE",

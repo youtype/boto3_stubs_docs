@@ -4614,6 +4614,7 @@ class M2tsSettingsTypeDef(TypedDict):
     TimedMetadataPid: NotRequired[str],
     TransportStreamId: NotRequired[int],
     VideoPid: NotRequired[str],
+    Scte35PrerollPullupMilliseconds: NotRequired[float],
 ```
 
 1. See [:material-code-brackets: M2tsAbsentInputAudioBehaviorType](./literals.md#m2tsabsentinputaudiobehaviortype) 

@@ -763,6 +763,41 @@ class DescribeDomainsRequestRequestTypeDef(TypedDict):
     DomainNames: Sequence[str],
 ```
 
+## DescribeDryRunProgressRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import DescribeDryRunProgressRequestRequestTypeDef
+
+def get_value() -> DescribeDryRunProgressRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDryRunProgressRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    DryRunId: NotRequired[str],
+    LoadDryRunConfig: NotRequired[bool],
+```
+
+## DryRunResultsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import DryRunResultsTypeDef
+
+def get_value() -> DryRunResultsTypeDef:
+    return {
+        "DeploymentType": ...,
+    }
+```
+
+```python title="Definition"
+class DryRunResultsTypeDef(TypedDict):
+    DeploymentType: NotRequired[str],
+    Message: NotRequired[str],
+```
+
 ## FilterTypeDef
 
 ```python title="Usage Example"
@@ -961,20 +996,20 @@ class VPCDerivedInfoTypeDef(TypedDict):
     SecurityGroupIds: NotRequired[List[str]],
 ```
 
-## DryRunResultsTypeDef
+## ValidationFailureTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_opensearch.type_defs import DryRunResultsTypeDef
+from mypy_boto3_opensearch.type_defs import ValidationFailureTypeDef
 
-def get_value() -> DryRunResultsTypeDef:
+def get_value() -> ValidationFailureTypeDef:
     return {
-        "DeploymentType": ...,
+        "Code": ...,
     }
 ```
 
 ```python title="Definition"
-class DryRunResultsTypeDef(TypedDict):
-    DeploymentType: NotRequired[str],
+class ValidationFailureTypeDef(TypedDict):
+    Code: NotRequired[str],
     Message: NotRequired[str],
 ```
 
@@ -2337,6 +2372,30 @@ class VpcEndpointTypeDef(TypedDict):
 
 1. See [:material-code-braces: VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef) 
 2. See [:material-code-brackets: VpcEndpointStatusType](./literals.md#vpcendpointstatustype) 
+## DryRunProgressStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import DryRunProgressStatusTypeDef
+
+def get_value() -> DryRunProgressStatusTypeDef:
+    return {
+        "DryRunId": ...,
+        "DryRunStatus": ...,
+        "CreationDate": ...,
+        "UpdateDate": ...,
+    }
+```
+
+```python title="Definition"
+class DryRunProgressStatusTypeDef(TypedDict):
+    DryRunId: str,
+    DryRunStatus: str,
+    CreationDate: str,
+    UpdateDate: str,
+    ValidationFailures: NotRequired[List[ValidationFailureTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: ValidationFailureTypeDef](./type_defs.md#validationfailuretypedef) 
 ## GetPackageVersionHistoryResponseTypeDef
 
 ```python title="Usage Example"
@@ -3333,6 +3392,7 @@ class UpdateDomainConfigRequestRequestTypeDef(TypedDict):
     AdvancedSecurityOptions: NotRequired[AdvancedSecurityOptionsInputTypeDef],  # (10)
     AutoTuneOptions: NotRequired[AutoTuneOptionsTypeDef],  # (11)
     DryRun: NotRequired[bool],
+    DryRunMode: NotRequired[DryRunModeType],  # (12)
 ```
 
 1. See [:material-code-braces: ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef) 
@@ -3346,6 +3406,7 @@ class UpdateDomainConfigRequestRequestTypeDef(TypedDict):
 9. See [:material-code-braces: NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef) 
 10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
 11. See [:material-code-braces: AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef) 
+12. See [:material-code-brackets: DryRunModeType](./literals.md#dryrunmodetype) 
 ## AdvancedSecurityOptionsStatusTypeDef
 
 ```python title="Usage Example"
@@ -3567,6 +3628,32 @@ class DescribeDomainsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DomainStatusTypeDef](./type_defs.md#domainstatustypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDryRunProgressResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import DescribeDryRunProgressResponseTypeDef
+
+def get_value() -> DescribeDryRunProgressResponseTypeDef:
+    return {
+        "DryRunProgressStatus": ...,
+        "DryRunConfig": ...,
+        "DryRunResults": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDryRunProgressResponseTypeDef(TypedDict):
+    DryRunProgressStatus: DryRunProgressStatusTypeDef,  # (1)
+    DryRunConfig: DomainStatusTypeDef,  # (2)
+    DryRunResults: DryRunResultsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: DryRunProgressStatusTypeDef](./type_defs.md#dryrunprogressstatustypedef) 
+2. See [:material-code-braces: DomainStatusTypeDef](./type_defs.md#domainstatustypedef) 
+3. See [:material-code-braces: DryRunResultsTypeDef](./type_defs.md#dryrunresultstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDomainConfigResponseTypeDef
 
 ```python title="Usage Example"
@@ -3596,6 +3683,7 @@ def get_value() -> UpdateDomainConfigResponseTypeDef:
     return {
         "DomainConfig": ...,
         "DryRunResults": ...,
+        "DryRunProgressStatus": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3604,9 +3692,11 @@ def get_value() -> UpdateDomainConfigResponseTypeDef:
 class UpdateDomainConfigResponseTypeDef(TypedDict):
     DomainConfig: DomainConfigTypeDef,  # (1)
     DryRunResults: DryRunResultsTypeDef,  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    DryRunProgressStatus: DryRunProgressStatusTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-braces: DomainConfigTypeDef](./type_defs.md#domainconfigtypedef) 
 2. See [:material-code-braces: DryRunResultsTypeDef](./type_defs.md#dryrunresultstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-braces: DryRunProgressStatusTypeDef](./type_defs.md#dryrunprogressstatustypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

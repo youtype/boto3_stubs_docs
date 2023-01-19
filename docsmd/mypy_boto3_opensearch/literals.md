@@ -110,6 +110,21 @@ DomainPackageStatusType = Literal[
     "DISSOCIATION_FAILED",
 ]
 ```
+## DryRunModeType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import DryRunModeType
+
+def get_value() -> DryRunModeType:
+    return "Basic"
+```
+
+```python title="Definition"
+DryRunModeType = Literal[
+    "Basic",
+    "Verbose",
+]
+```
 ## EngineTypeType
 
 ```python title="Usage Example"

@@ -7677,6 +7677,33 @@ class S3CatalogTargetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CatalogSchemaChangePolicyTypeDef](./type_defs.md#catalogschemachangepolicytypedef) 
+## S3HudiCatalogTargetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3HudiCatalogTargetTypeDef
+
+def get_value() -> S3HudiCatalogTargetTypeDef:
+    return {
+        "Name": ...,
+        "Inputs": ...,
+        "Table": ...,
+        "Database": ...,
+        "AdditionalOptions": ...,
+    }
+```
+
+```python title="Definition"
+class S3HudiCatalogTargetTypeDef(TypedDict):
+    Name: str,
+    Inputs: List[str],
+    Table: str,
+    Database: str,
+    AdditionalOptions: Dict[str, str],
+    PartitionKeys: NotRequired[List[List[str]]],
+    SchemaChangePolicy: NotRequired[CatalogSchemaChangePolicyTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CatalogSchemaChangePolicyTypeDef](./type_defs.md#catalogschemachangepolicytypedef) 
 ## ClassifierTypeDef
 
 ```python title="Usage Example"
@@ -8583,6 +8610,37 @@ class S3GlueParquetTargetTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ParquetCompressionTypeType](./literals.md#parquetcompressiontypetype) 
 2. See [:material-code-braces: DirectSchemaChangePolicyTypeDef](./type_defs.md#directschemachangepolicytypedef) 
+## S3HudiDirectTargetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3HudiDirectTargetTypeDef
+
+def get_value() -> S3HudiDirectTargetTypeDef:
+    return {
+        "Name": ...,
+        "Inputs": ...,
+        "Path": ...,
+        "Compression": ...,
+        "Format": ...,
+        "AdditionalOptions": ...,
+    }
+```
+
+```python title="Definition"
+class S3HudiDirectTargetTypeDef(TypedDict):
+    Name: str,
+    Inputs: List[str],
+    Path: str,
+    Compression: HudiTargetCompressionTypeType,  # (1)
+    Format: TargetFormatType,  # (2)
+    AdditionalOptions: Dict[str, str],
+    PartitionKeys: NotRequired[List[List[str]]],
+    SchemaChangePolicy: NotRequired[DirectSchemaChangePolicyTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: HudiTargetCompressionTypeType](./literals.md#huditargetcompressiontypetype) 
+2. See [:material-code-brackets: TargetFormatType](./literals.md#targetformattype) 
+3. See [:material-code-braces: DirectSchemaChangePolicyTypeDef](./type_defs.md#directschemachangepolicytypedef) 
 ## DynamicTransformTypeDef
 
 ```python title="Usage Example"
@@ -11214,6 +11272,29 @@ class AthenaConnectorSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
+## CatalogHudiSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CatalogHudiSourceTypeDef
+
+def get_value() -> CatalogHudiSourceTypeDef:
+    return {
+        "Name": ...,
+        "Database": ...,
+        "Table": ...,
+    }
+```
+
+```python title="Definition"
+class CatalogHudiSourceTypeDef(TypedDict):
+    Name: str,
+    Database: str,
+    Table: str,
+    AdditionalHudiOptions: NotRequired[Dict[str, str]],
+    OutputSchemas: NotRequired[List[GlueSchemaTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
 ## CustomCodeTypeDef
 
 ```python title="Usage Example"
@@ -11295,6 +11376,29 @@ class JDBCConnectorTargetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
+## S3CatalogHudiSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3CatalogHudiSourceTypeDef
+
+def get_value() -> S3CatalogHudiSourceTypeDef:
+    return {
+        "Name": ...,
+        "Database": ...,
+        "Table": ...,
+    }
+```
+
+```python title="Definition"
+class S3CatalogHudiSourceTypeDef(TypedDict):
+    Name: str,
+    Database: str,
+    Table: str,
+    AdditionalHudiOptions: NotRequired[Dict[str, str]],
+    OutputSchemas: NotRequired[List[GlueSchemaTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
 ## S3CsvSourceTypeDef
 
 ```python title="Usage Example"
@@ -11337,6 +11441,29 @@ class S3CsvSourceTypeDef(TypedDict):
 3. See [:material-code-brackets: SeparatorType](./literals.md#separatortype) 
 4. See [:material-code-brackets: QuoteCharType](./literals.md#quotechartype) 
 5. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
+## S3HudiSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3HudiSourceTypeDef
+
+def get_value() -> S3HudiSourceTypeDef:
+    return {
+        "Name": ...,
+        "Paths": ...,
+    }
+```
+
+```python title="Definition"
+class S3HudiSourceTypeDef(TypedDict):
+    Name: str,
+    Paths: List[str],
+    AdditionalHudiOptions: NotRequired[Dict[str, str]],
+    AdditionalOptions: NotRequired[S3DirectSourceAdditionalOptionsTypeDef],  # (1)
+    OutputSchemas: NotRequired[List[GlueSchemaTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: S3DirectSourceAdditionalOptionsTypeDef](./type_defs.md#s3directsourceadditionaloptionstypedef) 
+2. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
 ## S3JsonSourceTypeDef
 
 ```python title="Usage Example"
@@ -12548,6 +12675,11 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
     PostgreSQLCatalogTarget: NotRequired[PostgreSQLCatalogTargetTypeDef],  # (50)
     DynamicTransform: NotRequired[DynamicTransformTypeDef],  # (51)
     EvaluateDataQuality: NotRequired[EvaluateDataQualityTypeDef],  # (52)
+    S3CatalogHudiSource: NotRequired[S3CatalogHudiSourceTypeDef],  # (53)
+    CatalogHudiSource: NotRequired[CatalogHudiSourceTypeDef],  # (54)
+    S3HudiSource: NotRequired[S3HudiSourceTypeDef],  # (55)
+    S3HudiCatalogTarget: NotRequired[S3HudiCatalogTargetTypeDef],  # (56)
+    S3HudiDirectTarget: NotRequired[S3HudiDirectTargetTypeDef],  # (57)
 ```
 
 1. See [:material-code-braces: AthenaConnectorSourceTypeDef](./type_defs.md#athenaconnectorsourcetypedef) 
@@ -12602,6 +12734,11 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
 50. See [:material-code-braces: PostgreSQLCatalogTargetTypeDef](./type_defs.md#postgresqlcatalogtargettypedef) 
 51. See [:material-code-braces: DynamicTransformTypeDef](./type_defs.md#dynamictransformtypedef) 
 52. See [:material-code-braces: EvaluateDataQualityTypeDef](./type_defs.md#evaluatedataqualitytypedef) 
+53. See [:material-code-braces: S3CatalogHudiSourceTypeDef](./type_defs.md#s3cataloghudisourcetypedef) 
+54. See [:material-code-braces: CatalogHudiSourceTypeDef](./type_defs.md#cataloghudisourcetypedef) 
+55. See [:material-code-braces: S3HudiSourceTypeDef](./type_defs.md#s3hudisourcetypedef) 
+56. See [:material-code-braces: S3HudiCatalogTargetTypeDef](./type_defs.md#s3hudicatalogtargettypedef) 
+57. See [:material-code-braces: S3HudiDirectTargetTypeDef](./type_defs.md#s3hudidirecttargettypedef) 
 ## GetMLTaskRunsResponseTypeDef
 
 ```python title="Usage Example"

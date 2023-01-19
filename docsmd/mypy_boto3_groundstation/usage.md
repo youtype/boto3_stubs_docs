@@ -54,6 +54,22 @@ type checking and code completion should work out of the box.
 
 
 
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("groundstation")  # (1)
+
+    waiter = client.get_waiter("contact_scheduled")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [GroundStationClient](./client.md)
+    2. waiter: [ContactScheduledWaiter](./waiters.md#contactscheduledwaiter)
+
 
 ### Explicit type annotations
 
@@ -104,5 +120,20 @@ However, these type annotations can be helpful in your functions and methods.
     ```
 
 
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_groundstation.client import GroundStationClient
+    from mypy_boto3_groundstation.waiter import ContactScheduledWaiter
+
+    session = Session()
+    client: GroundStationClient = session.client("groundstation")
+
+    waiter: ContactScheduledWaiter = client.get_waiter("contact_scheduled")
+    waiter.wait()
+    ```
 
 

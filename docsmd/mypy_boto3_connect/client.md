@@ -4159,13 +4159,15 @@ def start_chat_contact(
     ClientToken: str = ...,
     ChatDurationInMinutes: int = ...,
     SupportedMessagingContentTypes: Sequence[str] = ...,
-) -> StartChatContactResponseTypeDef:  # (3)
+    PersistentChat: PersistentChatTypeDef = ...,  # (3)
+) -> StartChatContactResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef) 
 2. See [:material-code-braces: ChatMessageTypeDef](./type_defs.md#chatmessagetypedef) 
-3. See [:material-code-braces: StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef) 
+3. See [:material-code-braces: PersistentChatTypeDef](./type_defs.md#persistentchattypedef) 
+4. See [:material-code-braces: StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

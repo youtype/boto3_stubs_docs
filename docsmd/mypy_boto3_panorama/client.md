@@ -126,7 +126,7 @@ parent.create_application_instance(**kwargs)
 
 ### create\_job\_for\_devices
 
-Creates a job to run on one or more devices.
+Creates a job to run on a device.
 
 Type annotations and code completion for `#!python boto3.client("panorama").create_job_for_devices` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_job_for_devices)

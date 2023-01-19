@@ -2533,6 +2533,7 @@ def paginate(
     MinVersion: str = ...,
     MaxVersion: str = ...,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ResolveAlias: bool = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
 ) -> _PageIterator[DescribeLaunchTemplateVersionsResultTypeDef]:  # (3)
     ...

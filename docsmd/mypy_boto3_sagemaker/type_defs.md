@@ -21929,6 +21929,7 @@ class HyperParameterTrainingJobDefinitionTypeDef(TypedDict):
     CheckpointConfig: NotRequired[CheckpointConfigTypeDef],  # (9)
     RetryStrategy: NotRequired[RetryStrategyTypeDef],  # (10)
     HyperParameterTuningResourceConfig: NotRequired[HyperParameterTuningResourceConfigTypeDef],  # (11)
+    Environment: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-braces: HyperParameterTuningJobObjectiveTypeDef](./type_defs.md#hyperparametertuningjobobjectivetypedef) 

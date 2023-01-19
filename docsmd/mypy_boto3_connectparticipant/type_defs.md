@@ -452,6 +452,8 @@ class ItemTypeDef(TypedDict):
     ParticipantRole: NotRequired[ParticipantRoleType],  # (2)
     Attachments: NotRequired[List[AttachmentItemTypeDef]],  # (3)
     MessageMetadata: NotRequired[MessageMetadataTypeDef],  # (4)
+    RelatedContactId: NotRequired[str],
+    ContactId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: ChatItemTypeType](./literals.md#chatitemtypetype) 

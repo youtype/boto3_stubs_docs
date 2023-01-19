@@ -88,6 +88,23 @@ def get_list_configs_paginator() -> ListConfigsPaginator:
 
 
 
+## Waiters
+
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("groundstation").get_waiter("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_groundstation.waiter import ContactScheduledWaiter
+
+def get_contact_scheduled_waiter() -> ContactScheduledWaiter:
+    return Session().client("groundstation").get_waiter("contact_scheduled")
+```
+
+- [ContactScheduledWaiter](./waiters.md#contactscheduledwaiter)
+
+
 
 
 
@@ -107,6 +124,7 @@ def get_value() -> AngleUnitsType:
 - [AngleUnitsType](./literals.md#angleunitstype)
 - [BandwidthUnitsType](./literals.md#bandwidthunitstype)
 - [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
+- [ContactScheduledWaiterName](./literals.md#contactscheduledwaitername)
 - [ContactStatusType](./literals.md#contactstatustype)
 - [CriticalityType](./literals.md#criticalitytype)
 - [EirpUnitsType](./literals.md#eirpunitstype)
@@ -127,6 +145,7 @@ def get_value() -> AngleUnitsType:
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 - [RegionName](./literals.md#regionname)
 
 
@@ -165,6 +184,7 @@ def get_value() -> AntennaDemodDecodeDetailsTypeDef:
 - [DeleteDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#deletedataflowendpointgrouprequestrequesttypedef)
 - [DeleteEphemerisRequestRequestTypeDef](./type_defs.md#deleteephemerisrequestrequesttypedef)
 - [DeleteMissionProfileRequestRequestTypeDef](./type_defs.md#deletemissionprofilerequestrequesttypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef)
 - [DescribeEphemerisRequestRequestTypeDef](./type_defs.md#describeephemerisrequestrequesttypedef)
 - [SecurityDetailsTypeDef](./type_defs.md#securitydetailstypedef)
@@ -206,6 +226,7 @@ def get_value() -> AntennaDemodDecodeDetailsTypeDef:
 - [ContactDataTypeDef](./type_defs.md#contactdatatypedef)
 - [ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)
 - [DataflowEndpointTypeDef](./type_defs.md#dataflowendpointtypedef)
+- [DescribeContactRequestContactScheduledWaitTypeDef](./type_defs.md#describecontactrequestcontactscheduledwaittypedef)
 - [EphemerisDescriptionTypeDef](./type_defs.md#ephemerisdescriptiontypedef)
 - [EphemerisItemTypeDef](./type_defs.md#ephemerisitemtypedef)
 - [OEMEphemerisTypeDef](./type_defs.md#oemephemeristypedef)

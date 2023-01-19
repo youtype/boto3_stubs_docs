@@ -2727,6 +2727,7 @@ def create_launch_template_version(
     LaunchTemplateName: str = ...,
     SourceVersion: str = ...,
     VersionDescription: str = ...,
+    ResolveAlias: bool = ...,
 ) -> CreateLaunchTemplateVersionResultTypeDef:  # (2)
     ...
 ```
@@ -9195,6 +9196,7 @@ def describe_launch_template_versions(
     NextToken: str = ...,
     MaxResults: int = ...,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ResolveAlias: bool = ...,
 ) -> DescribeLaunchTemplateVersionsResultTypeDef:  # (2)
     ...
 ```

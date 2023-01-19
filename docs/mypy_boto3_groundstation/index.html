@@ -15,7 +15,7 @@
         <link rel="next" href="client/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
@@ -16376,6 +16376,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#waiters" class="md-nav__link">
+    Waiters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -16462,6 +16469,20 @@
     <li class="md-nav__item">
       <a href="usage/" class="md-nav__link">
         Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="waiters/" class="md-nav__link">
+        Waiters
       </a>
     </li>
   
@@ -40230,6 +40251,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#waiters" class="md-nav__link">
+    Waiters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#literals" class="md-nav__link">
     Literals
   </a>
@@ -40320,17 +40348,31 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listmissionprofilespaginator">ListMissionProfilesPaginator</a></li>
 <li><a href="paginators/#listsatellitespaginator">ListSatellitesPaginator</a></li>
 </ul>
+<h2 id="waiters">Waiters</h2>
+<p>Type annotations and code completion for <a href="waiters/">waiters</a>
+from <code class="highlight"><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;groundstation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">)</span></code>.</p>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">boto3.session</span> <span class="kn">import</span> <span class="n">Session</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kn">from</span> <span class="nn">mypy_boto3_groundstation.waiter</span> <span class="kn">import</span> <span class="n">ContactScheduledWaiter</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">def</span> <span class="nf">get_contact_scheduled_waiter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ContactScheduledWaiter</span><span class="p">:</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">return</span> <span class="n">Session</span><span class="p">()</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s2">&quot;groundstation&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">get_waiter</span><span class="p">(</span><span class="s2">&quot;contact_scheduled&quot;</span><span class="p">)</span>
+</code></pre></div>
+<ul>
+<li><a href="waiters/#contactscheduledwaiter">ContactScheduledWaiter</a></li>
+</ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_groundstation.literals</span> <span class="kn">import</span> <span class="n">AngleUnitsType</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AngleUnitsType</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="k">return</span> <span class="s2">&quot;DEGREE_ANGLE&quot;</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_groundstation.literals</span> <span class="kn">import</span> <span class="n">AngleUnitsType</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AngleUnitsType</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="s2">&quot;DEGREE_ANGLE&quot;</span>
 </code></pre></div>
 <ul>
 <li><a href="literals/#angleunitstype">AngleUnitsType</a></li>
 <li><a href="literals/#bandwidthunitstype">BandwidthUnitsType</a></li>
 <li><a href="literals/#configcapabilitytypetype">ConfigCapabilityTypeType</a></li>
+<li><a href="literals/#contactscheduledwaitername">ContactScheduledWaiterName</a></li>
 <li><a href="literals/#contactstatustype">ContactStatusType</a></li>
 <li><a href="literals/#criticalitytype">CriticalityType</a></li>
 <li><a href="literals/#eirpunitstype">EirpUnitsType</a></li>
@@ -40351,16 +40393,17 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
 <li><a href="literals/#paginatorname">PaginatorName</a></li>
+<li><a href="literals/#waitername">WaiterName</a></li>
 <li><a href="literals/#regionname">RegionName</a></li>
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_groundstation.type_defs</span> <span class="kn">import</span> <span class="n">AntennaDemodDecodeDetailsTypeDef</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AntennaDemodDecodeDetailsTypeDef</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;outputNode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_groundstation.type_defs</span> <span class="kn">import</span> <span class="n">AntennaDemodDecodeDetailsTypeDef</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AntennaDemodDecodeDetailsTypeDef</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        <span class="s2">&quot;outputNode&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><a href="type_defs/#antennademoddecodedetailstypedef">AntennaDemodDecodeDetailsTypeDef</a></li>
@@ -40383,6 +40426,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deletedataflowendpointgrouprequestrequesttypedef">DeleteDataflowEndpointGroupRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteephemerisrequestrequesttypedef">DeleteEphemerisRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemissionprofilerequestrequesttypedef">DeleteMissionProfileRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#describecontactrequestrequesttypedef">DescribeContactRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeephemerisrequestrequesttypedef">DescribeEphemerisRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#securitydetailstypedef">SecurityDetailsTypeDef</a></li>
@@ -40424,6 +40468,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#contactdatatypedef">ContactDataTypeDef</a></li>
 <li><a href="type_defs/#listdataflowendpointgroupsresponsetypedef">ListDataflowEndpointGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#dataflowendpointtypedef">DataflowEndpointTypeDef</a></li>
+<li><a href="type_defs/#describecontactrequestcontactscheduledwaittypedef">DescribeContactRequestContactScheduledWaitTypeDef</a></li>
 <li><a href="type_defs/#ephemerisdescriptiontypedef">EphemerisDescriptionTypeDef</a></li>
 <li><a href="type_defs/#ephemerisitemtypedef">EphemerisItemTypeDef</a></li>
 <li><a href="type_defs/#oemephemeristypedef">OEMEphemerisTypeDef</a></li>
