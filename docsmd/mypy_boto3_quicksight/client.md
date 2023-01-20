@@ -3259,8 +3259,8 @@ parent.list_users(**kwargs)
 
 ### register\_user
 
-Creates an Amazon QuickSight user, whose identity is associated with the
-Identity and Access Management (IAM) identity or role specified in the request.
+Creates an Amazon QuickSight user whose identity is associated with the Identity
+and Access Management (IAM) identity or role specified in the request.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").register_user` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user)

@@ -1724,6 +1724,24 @@ class ExportHiddenFieldsOptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## DataBarsOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataBarsOptionsTypeDef
+
+def get_value() -> DataBarsOptionsTypeDef:
+    return {
+        "FieldId": ...,
+    }
+```
+
+```python title="Definition"
+class DataBarsOptionsTypeDef(TypedDict):
+    FieldId: str,
+    PositiveColor: NotRequired[str],
+    NegativeColor: NotRequired[str],
+```
+
 ## DataColorPaletteTypeDef
 
 ```python title="Usage Example"
@@ -9192,6 +9210,23 @@ class DashboardVisualPublishOptionsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ExportHiddenFieldsOptionTypeDef](./type_defs.md#exporthiddenfieldsoptiontypedef) 
+## TableInlineVisualizationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import TableInlineVisualizationTypeDef
+
+def get_value() -> TableInlineVisualizationTypeDef:
+    return {
+        "DataBars": ...,
+    }
+```
+
+```python title="Definition"
+class TableInlineVisualizationTypeDef(TypedDict):
+    DataBars: NotRequired[DataBarsOptionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: DataBarsOptionsTypeDef](./type_defs.md#databarsoptionstypedef) 
 ## DataLabelTypeTypeDef
 
 ```python title="Usage Example"
@@ -17646,6 +17681,7 @@ class TableConfigurationTypeDef(TypedDict):
     TotalOptions: NotRequired[TotalOptionsTypeDef],  # (4)
     FieldOptions: NotRequired[TableFieldOptionsTypeDef],  # (5)
     PaginatedReportOptions: NotRequired[TablePaginatedReportOptionsTypeDef],  # (6)
+    TableInlineVisualizations: NotRequired[Sequence[TableInlineVisualizationTypeDef]],  # (7)
 ```
 
 1. See [:material-code-braces: TableFieldWellsTypeDef](./type_defs.md#tablefieldwellstypedef) 
@@ -17654,6 +17690,7 @@ class TableConfigurationTypeDef(TypedDict):
 4. See [:material-code-braces: TotalOptionsTypeDef](./type_defs.md#totaloptionstypedef) 
 5. See [:material-code-braces: TableFieldOptionsTypeDef](./type_defs.md#tablefieldoptionstypedef) 
 6. See [:material-code-braces: TablePaginatedReportOptionsTypeDef](./type_defs.md#tablepaginatedreportoptionstypedef) 
+7. See [:material-code-braces: TableInlineVisualizationTypeDef](./type_defs.md#tableinlinevisualizationtypedef) 
 ## LayoutTypeDef
 
 ```python title="Usage Example"
