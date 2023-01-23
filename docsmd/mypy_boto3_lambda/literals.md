@@ -621,6 +621,22 @@ TracingModeType = Literal[
     "PassThrough",
 ]
 ```
+## UpdateRuntimeOnType
+
+```python title="Usage Example"
+from mypy_boto3_lambda.literals import UpdateRuntimeOnType
+
+def get_value() -> UpdateRuntimeOnType:
+    return "Auto"
+```
+
+```python title="Definition"
+UpdateRuntimeOnType = Literal[
+    "Auto",
+    "FunctionUpdate",
+    "Manual",
+]
+```
 ## LambdaServiceName
 
 ```python title="Usage Example"
@@ -1073,6 +1089,7 @@ RegionName = Literal[
     "ap-southeast-1",
     "ap-southeast-2",
     "ap-southeast-3",
+    "ap-southeast-4",
     "ca-central-1",
     "eu-central-1",
     "eu-central-2",

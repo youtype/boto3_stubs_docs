@@ -4087,6 +4087,7 @@ ProductionVariantInstanceTypeType = Literal[
     "ml.p3.2xlarge",
     "ml.p3.8xlarge",
     "ml.p4d.24xlarge",
+    "ml.p4de.24xlarge",
     "ml.r5.12xlarge",
     "ml.r5.24xlarge",
     "ml.r5.2xlarge",

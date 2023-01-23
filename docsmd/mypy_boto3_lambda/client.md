@@ -202,7 +202,7 @@ def close(
 
 ### create\_alias
 
-Creates an [alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
+Creates an [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-
 aliases.html)_ for a Lambda function version.
 
 Type annotations and code completion for `#!python boto3.client("lambda").create_alias` method.
@@ -432,7 +432,8 @@ parent.create_function_url_config(**kwargs)
 ### delete\_alias
 
 Deletes a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_.
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-
+aliases.html)_.
 
 Type annotations and code completion for `#!python boto3.client("lambda").delete_alias` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
@@ -772,7 +773,8 @@ def get_account_settings(
 ### get\_alias
 
 Returns details about a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_.
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-
+aliases.html)_.
 
 Type annotations and code completion for `#!python boto3.client("lambda").get_alias` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
@@ -1199,6 +1201,36 @@ parent.get_provisioned_concurrency_config(**kwargs)
 
 1. See [:material-code-braces: GetProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#getprovisionedconcurrencyconfigrequestrequesttypedef) 
 
+### get\_runtime\_management\_config
+
+Retrieves the runtime management configuration for a function's version.
+
+Type annotations and code completion for `#!python boto3.client("lambda").get_runtime_management_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_runtime_management_config)
+
+```python title="Method definition"
+def get_runtime_management_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> GetRuntimeManagementConfigResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetRuntimeManagementConfigResponseTypeDef](./type_defs.md#getruntimemanagementconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetRuntimeManagementConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.get_runtime_management_config(**kwargs)
+```
+
+1. See [:material-code-braces: GetRuntimeManagementConfigRequestRequestTypeDef](./type_defs.md#getruntimemanagementconfigrequestrequesttypedef) 
+
 ### invoke
 
 Invokes a Lambda function.
@@ -1269,8 +1301,8 @@ parent.invoke_async(**kwargs)
 ### list\_aliases
 
 Returns a list of
-[aliases](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_
-for a Lambda function.
+[aliases](https://docs.aws.amazon.com/lambda/latest/dg/configuration-
+aliases.html)_ for a Lambda function.
 
 Type annotations and code completion for `#!python boto3.client("lambda").list_aliases` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
@@ -1861,6 +1893,40 @@ parent.put_provisioned_concurrency_config(**kwargs)
 
 1. See [:material-code-braces: PutProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#putprovisionedconcurrencyconfigrequestrequesttypedef) 
 
+### put\_runtime\_management\_config
+
+Sets the runtime management configuration for a function's version.
+
+Type annotations and code completion for `#!python boto3.client("lambda").put_runtime_management_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_runtime_management_config)
+
+```python title="Method definition"
+def put_runtime_management_config(
+    self,
+    *,
+    FunctionName: str,
+    UpdateRuntimeOn: UpdateRuntimeOnType,  # (1)
+    Qualifier: str = ...,
+    RuntimeVersionArn: str = ...,
+) -> PutRuntimeManagementConfigResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: UpdateRuntimeOnType](./literals.md#updateruntimeontype) 
+2. See [:material-code-braces: PutRuntimeManagementConfigResponseTypeDef](./type_defs.md#putruntimemanagementconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutRuntimeManagementConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "UpdateRuntimeOn": ...,
+}
+
+parent.put_runtime_management_config(**kwargs)
+```
+
+1. See [:material-code-braces: PutRuntimeManagementConfigRequestRequestTypeDef](./type_defs.md#putruntimemanagementconfigrequestrequesttypedef) 
+
 ### remove\_layer\_version\_permission
 
 Removes a statement from the permissions policy for a version of an [Lambda
@@ -1997,7 +2063,8 @@ parent.untag_resource(**kwargs)
 ### update\_alias
 
 Updates the configuration of a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_.
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-
+aliases.html)_.
 
 Type annotations and code completion for `#!python boto3.client("lambda").update_alias` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)

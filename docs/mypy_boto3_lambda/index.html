@@ -40443,6 +40443,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#statereasoncodetype">StateReasonCodeType</a></li>
 <li><a href="literals/#statetype">StateType</a></li>
 <li><a href="literals/#tracingmodetype">TracingModeType</a></li>
+<li><a href="literals/#updateruntimeontype">UpdateRuntimeOnType</a></li>
 <li><a href="literals/#lambdaservicename">LambdaServiceName</a></li>
 <li><a href="literals/#servicename">ServiceName</a></li>
 <li><a href="literals/#resourceservicename">ResourceServiceName</a></li>
@@ -40519,6 +40520,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#layerversioncontentoutputtypedef">LayerVersionContentOutputTypeDef</a></li>
 <li><a href="type_defs/#getpolicyrequestrequesttypedef">GetPolicyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getprovisionedconcurrencyconfigrequestrequesttypedef">GetProvisionedConcurrencyConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getruntimemanagementconfigrequestrequesttypedef">GetRuntimeManagementConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#imageconfigerrortypedef">ImageConfigErrorTypeDef</a></li>
 <li><a href="type_defs/#invocationrequestrequesttypedef">InvocationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#invokeasyncrequestrequesttypedef">InvokeAsyncRequestRequestTypeDef</a></li>
@@ -40542,8 +40544,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#putfunctioncodesigningconfigrequestrequesttypedef">PutFunctionCodeSigningConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putfunctionconcurrencyrequestrequesttypedef">PutFunctionConcurrencyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#putprovisionedconcurrencyconfigrequestrequesttypedef">PutProvisionedConcurrencyConfigRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#putruntimemanagementconfigrequestrequesttypedef">PutRuntimeManagementConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#removelayerversionpermissionrequestrequesttypedef">RemoveLayerVersionPermissionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#removepermissionrequestrequesttypedef">RemovePermissionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#runtimeversionerrortypedef">RuntimeVersionErrorTypeDef</a></li>
 <li><a href="type_defs/#tagresourcerequestrequesttypedef">TagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#untagresourcerequestrequesttypedef">UntagResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatefunctioncoderequestrequesttypedef">UpdateFunctionCodeRequestRequestTypeDef</a></li>
@@ -40557,12 +40561,14 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getlayerversionpolicyresponsetypedef">GetLayerVersionPolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getpolicyresponsetypedef">GetPolicyResponseTypeDef</a></li>
 <li><a href="type_defs/#getprovisionedconcurrencyconfigresponsetypedef">GetProvisionedConcurrencyConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#getruntimemanagementconfigresponsetypedef">GetRuntimeManagementConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#invocationresponsetypedef">InvocationResponseTypeDef</a></li>
 <li><a href="type_defs/#invokeasyncresponsetypedef">InvokeAsyncResponseTypeDef</a></li>
 <li><a href="type_defs/#listfunctionsbycodesigningconfigresponsetypedef">ListFunctionsByCodeSigningConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#listtagsresponsetypedef">ListTagsResponseTypeDef</a></li>
 <li><a href="type_defs/#putfunctioncodesigningconfigresponsetypedef">PutFunctionCodeSigningConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#putprovisionedconcurrencyconfigresponsetypedef">PutProvisionedConcurrencyConfigResponseTypeDef</a></li>
+<li><a href="type_defs/#putruntimemanagementconfigresponsetypedef">PutRuntimeManagementConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#aliasconfigurationresponsemetadatatypedef">AliasConfigurationResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#aliasconfigurationtypedef">AliasConfigurationTypeDef</a></li>
 <li><a href="type_defs/#createaliasrequestrequesttypedef">CreateAliasRequestRequestTypeDef</a></li>
@@ -40605,6 +40611,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listprovisionedconcurrencyconfigsrequestlistprovisionedconcurrencyconfigspaginatetypedef">ListProvisionedConcurrencyConfigsRequestListProvisionedConcurrencyConfigsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listversionsbyfunctionrequestlistversionsbyfunctionpaginatetypedef">ListVersionsByFunctionRequestListVersionsByFunctionPaginateTypeDef</a></li>
 <li><a href="type_defs/#listprovisionedconcurrencyconfigsresponsetypedef">ListProvisionedConcurrencyConfigsResponseTypeDef</a></li>
+<li><a href="type_defs/#runtimeversionconfigtypedef">RuntimeVersionConfigTypeDef</a></li>
 <li><a href="type_defs/#listaliasesresponsetypedef">ListAliasesResponseTypeDef</a></li>
 <li><a href="type_defs/#createcodesigningconfigresponsetypedef">CreateCodeSigningConfigResponseTypeDef</a></li>
 <li><a href="type_defs/#getcodesigningconfigresponsetypedef">GetCodeSigningConfigResponseTypeDef</a></li>
@@ -40619,9 +40626,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#eventsourcemappingconfigurationresponsemetadatatypedef">EventSourceMappingConfigurationResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#eventsourcemappingconfigurationtypedef">EventSourceMappingConfigurationTypeDef</a></li>
 <li><a href="type_defs/#updateeventsourcemappingrequestrequesttypedef">UpdateEventSourceMappingRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listlayersresponsetypedef">ListLayersResponseTypeDef</a></li>
 <li><a href="type_defs/#functionconfigurationresponsemetadatatypedef">FunctionConfigurationResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#functionconfigurationtypedef">FunctionConfigurationTypeDef</a></li>
-<li><a href="type_defs/#listlayersresponsetypedef">ListLayersResponseTypeDef</a></li>
 <li><a href="type_defs/#listfunctioneventinvokeconfigsresponsetypedef">ListFunctionEventInvokeConfigsResponseTypeDef</a></li>
 <li><a href="type_defs/#listeventsourcemappingsresponsetypedef">ListEventSourceMappingsResponseTypeDef</a></li>
 <li><a href="type_defs/#getfunctionresponsetypedef">GetFunctionResponseTypeDef</a></li>

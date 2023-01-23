@@ -1048,6 +1048,23 @@ class GetProvisionedConcurrencyConfigRequestRequestTypeDef(TypedDict):
     Qualifier: str,
 ```
 
+## GetRuntimeManagementConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetRuntimeManagementConfigRequestRequestTypeDef
+
+def get_value() -> GetRuntimeManagementConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetRuntimeManagementConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
+
 ## ImageConfigErrorTypeDef
 
 ```python title="Usage Example"
@@ -1489,6 +1506,27 @@ class PutProvisionedConcurrencyConfigRequestRequestTypeDef(TypedDict):
     ProvisionedConcurrentExecutions: int,
 ```
 
+## PutRuntimeManagementConfigRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import PutRuntimeManagementConfigRequestRequestTypeDef
+
+def get_value() -> PutRuntimeManagementConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "UpdateRuntimeOn": ...,
+    }
+```
+
+```python title="Definition"
+class PutRuntimeManagementConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    UpdateRuntimeOn: UpdateRuntimeOnType,  # (1)
+    Qualifier: NotRequired[str],
+    RuntimeVersionArn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: UpdateRuntimeOnType](./literals.md#updateruntimeontype) 
 ## RemoveLayerVersionPermissionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1528,6 +1566,23 @@ class RemovePermissionRequestRequestTypeDef(TypedDict):
     StatementId: str,
     Qualifier: NotRequired[str],
     RevisionId: NotRequired[str],
+```
+
+## RuntimeVersionErrorTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import RuntimeVersionErrorTypeDef
+
+def get_value() -> RuntimeVersionErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class RuntimeVersionErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    Message: NotRequired[str],
 ```
 
 ## TagResourceRequestRequestTypeDef
@@ -1803,6 +1858,28 @@ class GetProvisionedConcurrencyConfigResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRuntimeManagementConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetRuntimeManagementConfigResponseTypeDef
+
+def get_value() -> GetRuntimeManagementConfigResponseTypeDef:
+    return {
+        "UpdateRuntimeOn": ...,
+        "RuntimeVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRuntimeManagementConfigResponseTypeDef(TypedDict):
+    UpdateRuntimeOn: UpdateRuntimeOnType,  # (1)
+    RuntimeVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: UpdateRuntimeOnType](./literals.md#updateruntimeontype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InvocationResponseTypeDef
 
 ```python title="Usage Example"
@@ -1939,6 +2016,30 @@ class PutProvisionedConcurrencyConfigResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutRuntimeManagementConfigResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import PutRuntimeManagementConfigResponseTypeDef
+
+def get_value() -> PutRuntimeManagementConfigResponseTypeDef:
+    return {
+        "UpdateRuntimeOn": ...,
+        "FunctionArn": ...,
+        "RuntimeVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutRuntimeManagementConfigResponseTypeDef(TypedDict):
+    UpdateRuntimeOn: UpdateRuntimeOnType,  # (1)
+    FunctionArn: str,
+    RuntimeVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: UpdateRuntimeOnType](./literals.md#updateruntimeontype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AliasConfigurationResponseMetadataTypeDef
 
@@ -2920,6 +3021,24 @@ class ListProvisionedConcurrencyConfigsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ProvisionedConcurrencyConfigListItemTypeDef](./type_defs.md#provisionedconcurrencyconfiglistitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RuntimeVersionConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import RuntimeVersionConfigTypeDef
+
+def get_value() -> RuntimeVersionConfigTypeDef:
+    return {
+        "RuntimeVersionArn": ...,
+    }
+```
+
+```python title="Definition"
+class RuntimeVersionConfigTypeDef(TypedDict):
+    RuntimeVersionArn: NotRequired[str],
+    Error: NotRequired[RuntimeVersionErrorTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RuntimeVersionErrorTypeDef](./type_defs.md#runtimeversionerrortypedef) 
 ## ListAliasesResponseTypeDef
 
 ```python title="Usage Example"
@@ -3346,6 +3465,28 @@ class UpdateEventSourceMappingRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
 4. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
 5. See [:material-code-braces: ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef) 
+## ListLayersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListLayersResponseTypeDef
+
+def get_value() -> ListLayersResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "Layers": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListLayersResponseTypeDef(TypedDict):
+    NextMarker: str,
+    Layers: List[LayersListItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LayersListItemTypeDef](./type_defs.md#layerslistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FunctionConfigurationResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -3387,6 +3528,7 @@ def get_value() -> FunctionConfigurationResponseMetadataTypeDef:
         "Architectures": ...,
         "EphemeralStorage": ...,
         "SnapStart": ...,
+        "RuntimeVersionConfig": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3427,7 +3569,8 @@ class FunctionConfigurationResponseMetadataTypeDef(TypedDict):
     Architectures: List[ArchitectureType],  # (14)
     EphemeralStorage: EphemeralStorageTypeDef,  # (15)
     SnapStart: SnapStartResponseTypeDef,  # (16)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (17)
+    RuntimeVersionConfig: RuntimeVersionConfigTypeDef,  # (17)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (18)
 ```
 
 1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
@@ -3446,7 +3589,8 @@ class FunctionConfigurationResponseMetadataTypeDef(TypedDict):
 14. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 15. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 16. See [:material-code-braces: SnapStartResponseTypeDef](./type_defs.md#snapstartresponsetypedef) 
-17. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+17. See [:material-code-braces: RuntimeVersionConfigTypeDef](./type_defs.md#runtimeversionconfigtypedef) 
+18. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FunctionConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3494,6 +3638,7 @@ class FunctionConfigurationTypeDef(TypedDict):
     Architectures: NotRequired[List[ArchitectureType]],  # (14)
     EphemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (15)
     SnapStart: NotRequired[SnapStartResponseTypeDef],  # (16)
+    RuntimeVersionConfig: NotRequired[RuntimeVersionConfigTypeDef],  # (17)
 ```
 
 1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
@@ -3512,28 +3657,7 @@ class FunctionConfigurationTypeDef(TypedDict):
 14. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 15. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 16. See [:material-code-braces: SnapStartResponseTypeDef](./type_defs.md#snapstartresponsetypedef) 
-## ListLayersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lambda.type_defs import ListLayersResponseTypeDef
-
-def get_value() -> ListLayersResponseTypeDef:
-    return {
-        "NextMarker": ...,
-        "Layers": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListLayersResponseTypeDef(TypedDict):
-    NextMarker: str,
-    Layers: List[LayersListItemTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: LayersListItemTypeDef](./type_defs.md#layerslistitemtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+17. See [:material-code-braces: RuntimeVersionConfigTypeDef](./type_defs.md#runtimeversionconfigtypedef) 
 ## ListFunctionEventInvokeConfigsResponseTypeDef
 
 ```python title="Usage Example"
