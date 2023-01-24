@@ -184,3 +184,64 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListDatabasesInputListDatabasesPaginateTypeDef](./type_defs.md#listdatabasesinputlistdatabasespaginatetypedef) 
+## ListOperationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ssm-sap").get_paginator("list_operations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-sap.html#SsmSap.Paginator.ListOperations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_sap.paginator import ListOperationsPaginator
+
+def get_list_operations_paginator() -> ListOperationsPaginator:
+    return Session().client("ssm-sap").get_paginator("list_operations")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ssm_sap.paginator import ListOperationsPaginator
+
+session = Session()
+
+client = Session().client("ssm-sap")  # (1)
+paginator: ListOperationsPaginator = client.get_paginator("list_operations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SsmSapClient](./client.md)
+2. paginator: [ListOperationsPaginator](./paginators.md#listoperationspaginator)
+3. item: [:material-code-braces: ListOperationsOutputTypeDef](./type_defs.md#listoperationsoutputtypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListOperationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApplicationId: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListOperationsOutputTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListOperationsOutputTypeDef](./type_defs.md#listoperationsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListOperationsInputListOperationsPaginateTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOperationsInputListOperationsPaginateTypeDef](./type_defs.md#listoperationsinputlistoperationspaginatetypedef) 

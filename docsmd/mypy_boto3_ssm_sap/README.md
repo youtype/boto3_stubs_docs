@@ -80,6 +80,7 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
 - [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+- [ListOperationsPaginator](./paginators.md#listoperationspaginator)
 
 
 
@@ -107,10 +108,12 @@ def get_value() -> ApplicationStatusType:
 - [CredentialTypeType](./literals.md#credentialtypetype)
 - [DatabaseStatusType](./literals.md#databasestatustype)
 - [DatabaseTypeType](./literals.md#databasetypetype)
+- [FilterOperatorType](./literals.md#filteroperatortype)
 - [HostRoleType](./literals.md#hostroletype)
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 - [ListComponentsPaginatorName](./literals.md#listcomponentspaginatorname)
 - [ListDatabasesPaginatorName](./literals.md#listdatabasespaginatorname)
+- [ListOperationsPaginatorName](./literals.md#listoperationspaginatorname)
 - [OperationStatusType](./literals.md#operationstatustype)
 - [PermissionActionTypeType](./literals.md#permissionactiontypetype)
 - [SsmSapServiceName](./literals.md#ssmsapservicename)
@@ -146,6 +149,7 @@ def get_value() -> ApplicationCredentialTypeDef:
 - [DeleteResourcePermissionInputRequestTypeDef](./type_defs.md#deleteresourcepermissioninputrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [DeregisterApplicationInputRequestTypeDef](./type_defs.md#deregisterapplicationinputrequesttypedef)
+- [FilterTypeDef](./type_defs.md#filtertypedef)
 - [GetApplicationInputRequestTypeDef](./type_defs.md#getapplicationinputrequesttypedef)
 - [GetComponentInputRequestTypeDef](./type_defs.md#getcomponentinputrequesttypedef)
 - [GetDatabaseInputRequestTypeDef](./type_defs.md#getdatabaseinputrequesttypedef)
@@ -174,10 +178,13 @@ def get_value() -> ApplicationCredentialTypeDef:
 - [PutResourcePermissionOutputTypeDef](./type_defs.md#putresourcepermissionoutputtypedef)
 - [RegisterApplicationOutputTypeDef](./type_defs.md#registerapplicationoutputtypedef)
 - [UpdateApplicationSettingsOutputTypeDef](./type_defs.md#updateapplicationsettingsoutputtypedef)
+- [ListOperationsInputRequestTypeDef](./type_defs.md#listoperationsinputrequesttypedef)
 - [GetOperationOutputTypeDef](./type_defs.md#getoperationoutputtypedef)
+- [ListOperationsOutputTypeDef](./type_defs.md#listoperationsoutputtypedef)
 - [ListApplicationsInputListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsinputlistapplicationspaginatetypedef)
 - [ListComponentsInputListComponentsPaginateTypeDef](./type_defs.md#listcomponentsinputlistcomponentspaginatetypedef)
 - [ListDatabasesInputListDatabasesPaginateTypeDef](./type_defs.md#listdatabasesinputlistdatabasespaginatetypedef)
+- [ListOperationsInputListOperationsPaginateTypeDef](./type_defs.md#listoperationsinputlistoperationspaginatetypedef)
 - [GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef)
 - [GetComponentOutputTypeDef](./type_defs.md#getcomponentoutputtypedef)
 

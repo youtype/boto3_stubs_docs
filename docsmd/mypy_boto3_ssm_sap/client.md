@@ -175,6 +175,7 @@ def get_application(
     *,
     ApplicationId: str = ...,
     ApplicationArn: str = ...,
+    AppRegistryArn: str = ...,
 ) -> GetApplicationOutputTypeDef:  # (1)
     ...
 ```
@@ -411,6 +412,39 @@ parent.list_databases(**kwargs)
 
 1. See [:material-code-braces: ListDatabasesInputRequestTypeDef](./type_defs.md#listdatabasesinputrequesttypedef) 
 
+### list\_operations
+
+Lists the operations performed by AWS Systems Manager for SAP.
+
+Type annotations and code completion for `#!python boto3.client("ssm-sap").list_operations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-sap.html#SsmSap.Client.list_operations)
+
+```python title="Method definition"
+def list_operations(
+    self,
+    *,
+    ApplicationId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListOperationsOutputTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListOperationsOutputTypeDef](./type_defs.md#listoperationsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListOperationsInputRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
+
+parent.list_operations(**kwargs)
+```
+
+1. See [:material-code-braces: ListOperationsInputRequestTypeDef](./type_defs.md#listoperationsinputrequesttypedef) 
+
 ### list\_tags\_for\_resource
 
 Lists all tags on an SAP HANA application and/or database registered with AWS
@@ -577,8 +611,8 @@ parent.untag_resource(**kwargs)
 
 ### update\_application\_settings
 
-See also: [AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/ssm-
-sap-2018-05-10/UpdateApplicationSettings).
+Updates the settings of an application registered with AWS Systems Manager for
+SAP.
 
 Type annotations and code completion for `#!python boto3.client("ssm-sap").update_application_settings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-sap.html#SsmSap.Client.update_application_settings)
@@ -618,6 +652,7 @@ Type annotations and code completion for `#!python boto3.client("ssm-sap").get_p
 - `client.get_paginator("list_applications")` -> [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
 - `client.get_paginator("list_components")` -> [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - `client.get_paginator("list_databases")` -> [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+- `client.get_paginator("list_operations")` -> [ListOperationsPaginator](./paginators.md#listoperationspaginator)
 
 
 

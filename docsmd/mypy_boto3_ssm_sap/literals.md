@@ -117,6 +117,22 @@ DatabaseTypeType = Literal[
     "TENANT",
 ]
 ```
+## FilterOperatorType
+
+```python title="Usage Example"
+from mypy_boto3_ssm_sap.literals import FilterOperatorType
+
+def get_value() -> FilterOperatorType:
+    return "Equals"
+```
+
+```python title="Definition"
+FilterOperatorType = Literal[
+    "Equals",
+    "GreaterThanOrEquals",
+    "LessThanOrEquals",
+]
+```
 ## HostRoleType
 
 ```python title="Usage Example"
@@ -174,6 +190,20 @@ def get_value() -> ListDatabasesPaginatorName:
 ```python title="Definition"
 ListDatabasesPaginatorName = Literal[
     "list_databases",
+]
+```
+## ListOperationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ssm_sap.literals import ListOperationsPaginatorName
+
+def get_value() -> ListOperationsPaginatorName:
+    return "list_operations"
+```
+
+```python title="Definition"
+ListOperationsPaginatorName = Literal[
+    "list_operations",
 ]
 ```
 ## OperationStatusType
@@ -608,6 +638,7 @@ PaginatorName = Literal[
     "list_applications",
     "list_components",
     "list_databases",
+    "list_operations",
 ]
 ```
 ## RegionName

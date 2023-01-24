@@ -194,6 +194,27 @@ class DeregisterApplicationInputRequestTypeDef(TypedDict):
     ApplicationId: str,
 ```
 
+## FilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_sap.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+        "Operator": ...,
+    }
+```
+
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    Operator: FilterOperatorType,  # (1)
+```
+
+1. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
 ## GetApplicationInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -209,6 +230,7 @@ def get_value() -> GetApplicationInputRequestTypeDef:
 class GetApplicationInputRequestTypeDef(TypedDict):
     ApplicationId: NotRequired[str],
     ApplicationArn: NotRequired[str],
+    AppRegistryArn: NotRequired[str],
 ```
 
 ## GetComponentInputRequestTypeDef
@@ -763,6 +785,26 @@ class UpdateApplicationSettingsOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOperationsInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_sap.type_defs import ListOperationsInputRequestTypeDef
+
+def get_value() -> ListOperationsInputRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListOperationsInputRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## GetOperationOutputTypeDef
 
 ```python title="Usage Example"
@@ -778,6 +820,28 @@ def get_value() -> GetOperationOutputTypeDef:
 ```python title="Definition"
 class GetOperationOutputTypeDef(TypedDict):
     Operation: OperationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OperationTypeDef](./type_defs.md#operationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOperationsOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_sap.type_defs import ListOperationsOutputTypeDef
+
+def get_value() -> ListOperationsOutputTypeDef:
+    return {
+        "Operations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOperationsOutputTypeDef(TypedDict):
+    Operations: List[OperationTypeDef],  # (1)
+    NextToken: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -837,6 +901,26 @@ class ListDatabasesInputListDatabasesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOperationsInputListOperationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_sap.type_defs import ListOperationsInputListOperationsPaginateTypeDef
+
+def get_value() -> ListOperationsInputListOperationsPaginateTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListOperationsInputListOperationsPaginateTypeDef(TypedDict):
+    ApplicationId: str,
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDatabaseOutputTypeDef
 
 ```python title="Usage Example"
