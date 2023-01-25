@@ -3822,6 +3822,23 @@ class DeleteIpamRequestRequestTypeDef(TypedDict):
     Cascade: NotRequired[bool],
 ```
 
+## DeleteIpamResourceDiscoveryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteIpamResourceDiscoveryRequestRequestTypeDef
+
+def get_value() -> DeleteIpamResourceDiscoveryRequestRequestTypeDef:
+    return {
+        "IpamResourceDiscoveryId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteIpamResourceDiscoveryRequestRequestTypeDef(TypedDict):
+    IpamResourceDiscoveryId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## DeleteIpamScopeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -7022,6 +7039,23 @@ class DisassociateIamInstanceProfileRequestRequestTypeDef(TypedDict):
     AssociationId: str,
 ```
 
+## DisassociateIpamResourceDiscoveryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisassociateIpamResourceDiscoveryRequestRequestTypeDef
+
+def get_value() -> DisassociateIpamResourceDiscoveryRequestRequestTypeDef:
+    return {
+        "IpamResourceDiscoveryAssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateIpamResourceDiscoveryRequestRequestTypeDef(TypedDict):
+    IpamResourceDiscoveryAssociationId: str,
+    DryRun: NotRequired[bool],
+```
+
 ## DisassociateRouteTableRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -10006,6 +10040,41 @@ class IpamCidrAuthorizationContextTypeDef(TypedDict):
     Signature: NotRequired[str],
 ```
 
+## IpamDiscoveryFailureReasonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import IpamDiscoveryFailureReasonTypeDef
+
+def get_value() -> IpamDiscoveryFailureReasonTypeDef:
+    return {
+        "Code": ...,
+    }
+```
+
+```python title="Definition"
+class IpamDiscoveryFailureReasonTypeDef(TypedDict):
+    Code: NotRequired[IpamDiscoveryFailureCodeType],  # (1)
+    Message: NotRequired[str],
+```
+
+1. See [:material-code-brackets: IpamDiscoveryFailureCodeType](./literals.md#ipamdiscoveryfailurecodetype) 
+## IpamResourceTagTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import IpamResourceTagTypeDef
+
+def get_value() -> IpamResourceTagTypeDef:
+    return {
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class IpamResourceTagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
+
 ## IpamOperatingRegionTypeDef
 
 ```python title="Usage Example"
@@ -10040,23 +10109,6 @@ class IpamPoolCidrFailureReasonTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: IpamPoolCidrFailureCodeType](./literals.md#ipampoolcidrfailurecodetype) 
-## IpamResourceTagTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import IpamResourceTagTypeDef
-
-def get_value() -> IpamResourceTagTypeDef:
-    return {
-        "Key": ...,
-    }
-```
-
-```python title="Definition"
-class IpamResourceTagTypeDef(TypedDict):
-    Key: NotRequired[str],
-    Value: NotRequired[str],
-```
-
 ## Ipv4PrefixSpecificationResponseTypeDef
 
 ```python title="Usage Example"
@@ -18460,6 +18512,35 @@ class InstanceEventWindowDisassociationRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## IpamResourceDiscoveryAssociationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import IpamResourceDiscoveryAssociationTypeDef
+
+def get_value() -> IpamResourceDiscoveryAssociationTypeDef:
+    return {
+        "OwnerId": ...,
+    }
+```
+
+```python title="Definition"
+class IpamResourceDiscoveryAssociationTypeDef(TypedDict):
+    OwnerId: NotRequired[str],
+    IpamResourceDiscoveryAssociationId: NotRequired[str],
+    IpamResourceDiscoveryAssociationArn: NotRequired[str],
+    IpamResourceDiscoveryId: NotRequired[str],
+    IpamId: NotRequired[str],
+    IpamArn: NotRequired[str],
+    IpamRegion: NotRequired[str],
+    IsDefault: NotRequired[bool],
+    ResourceDiscoveryStatus: NotRequired[IpamAssociatedResourceDiscoveryStatusType],  # (1)
+    State: NotRequired[IpamResourceDiscoveryAssociationStateType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-brackets: IpamAssociatedResourceDiscoveryStatusType](./literals.md#ipamassociatedresourcediscoverystatustype) 
+2. See [:material-code-brackets: IpamResourceDiscoveryAssociationStateType](./literals.md#ipamresourcediscoveryassociationstatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## IpamScopeTypeDef
 
 ```python title="Usage Example"
@@ -23614,6 +23695,90 @@ class DescribeIpamPoolsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeIpamResourceDiscoveriesRequestDescribeIpamResourceDiscoveriesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeIpamResourceDiscoveriesRequestDescribeIpamResourceDiscoveriesPaginateTypeDef
+
+def get_value() -> DescribeIpamResourceDiscoveriesRequestDescribeIpamResourceDiscoveriesPaginateTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpamResourceDiscoveriesRequestDescribeIpamResourceDiscoveriesPaginateTypeDef(TypedDict):
+    DryRun: NotRequired[bool],
+    IpamResourceDiscoveryIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeIpamResourceDiscoveriesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeIpamResourceDiscoveriesRequestRequestTypeDef
+
+def get_value() -> DescribeIpamResourceDiscoveriesRequestRequestTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpamResourceDiscoveriesRequestRequestTypeDef(TypedDict):
+    DryRun: NotRequired[bool],
+    IpamResourceDiscoveryIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeIpamResourceDiscoveryAssociationsRequestDescribeIpamResourceDiscoveryAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeIpamResourceDiscoveryAssociationsRequestDescribeIpamResourceDiscoveryAssociationsPaginateTypeDef
+
+def get_value() -> DescribeIpamResourceDiscoveryAssociationsRequestDescribeIpamResourceDiscoveryAssociationsPaginateTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpamResourceDiscoveryAssociationsRequestDescribeIpamResourceDiscoveryAssociationsPaginateTypeDef(TypedDict):
+    DryRun: NotRequired[bool],
+    IpamResourceDiscoveryAssociationIds: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeIpamResourceDiscoveryAssociationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeIpamResourceDiscoveryAssociationsRequestRequestTypeDef
+
+def get_value() -> DescribeIpamResourceDiscoveryAssociationsRequestRequestTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpamResourceDiscoveryAssociationsRequestRequestTypeDef(TypedDict):
+    DryRun: NotRequired[bool],
+    IpamResourceDiscoveryAssociationIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeIpamScopesRequestDescribeIpamScopesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -26668,6 +26833,98 @@ class GetCoipPoolUsageRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
     DryRun: NotRequired[bool],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## GetIpamDiscoveredAccountsRequestGetIpamDiscoveredAccountsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetIpamDiscoveredAccountsRequestGetIpamDiscoveredAccountsPaginateTypeDef
+
+def get_value() -> GetIpamDiscoveredAccountsRequestGetIpamDiscoveredAccountsPaginateTypeDef:
+    return {
+        "IpamResourceDiscoveryId": ...,
+        "DiscoveryRegion": ...,
+    }
+```
+
+```python title="Definition"
+class GetIpamDiscoveredAccountsRequestGetIpamDiscoveredAccountsPaginateTypeDef(TypedDict):
+    IpamResourceDiscoveryId: str,
+    DiscoveryRegion: str,
+    DryRun: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetIpamDiscoveredAccountsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetIpamDiscoveredAccountsRequestRequestTypeDef
+
+def get_value() -> GetIpamDiscoveredAccountsRequestRequestTypeDef:
+    return {
+        "IpamResourceDiscoveryId": ...,
+        "DiscoveryRegion": ...,
+    }
+```
+
+```python title="Definition"
+class GetIpamDiscoveredAccountsRequestRequestTypeDef(TypedDict):
+    IpamResourceDiscoveryId: str,
+    DiscoveryRegion: str,
+    DryRun: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## GetIpamDiscoveredResourceCidrsRequestGetIpamDiscoveredResourceCidrsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetIpamDiscoveredResourceCidrsRequestGetIpamDiscoveredResourceCidrsPaginateTypeDef
+
+def get_value() -> GetIpamDiscoveredResourceCidrsRequestGetIpamDiscoveredResourceCidrsPaginateTypeDef:
+    return {
+        "IpamResourceDiscoveryId": ...,
+        "ResourceRegion": ...,
+    }
+```
+
+```python title="Definition"
+class GetIpamDiscoveredResourceCidrsRequestGetIpamDiscoveredResourceCidrsPaginateTypeDef(TypedDict):
+    IpamResourceDiscoveryId: str,
+    ResourceRegion: str,
+    DryRun: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## GetIpamDiscoveredResourceCidrsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetIpamDiscoveredResourceCidrsRequestRequestTypeDef
+
+def get_value() -> GetIpamDiscoveredResourceCidrsRequestRequestTypeDef:
+    return {
+        "IpamResourceDiscoveryId": ...,
+        "ResourceRegion": ...,
+    }
+```
+
+```python title="Definition"
+class GetIpamDiscoveredResourceCidrsRequestRequestTypeDef(TypedDict):
+    IpamResourceDiscoveryId: str,
+    ResourceRegion: str,
+    DryRun: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
@@ -30250,58 +30507,59 @@ class ProvisionIpamPoolCidrRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     Cidr: NotRequired[str],
     CidrAuthorizationContext: NotRequired[IpamCidrAuthorizationContextTypeDef],  # (1)
+    NetmaskLength: NotRequired[int],
+    ClientToken: NotRequired[str],
 ```
 
 1. See [:material-code-braces: IpamCidrAuthorizationContextTypeDef](./type_defs.md#ipamcidrauthorizationcontexttypedef) 
-## IpamTypeDef
+## IpamDiscoveredAccountTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import IpamTypeDef
+from mypy_boto3_ec2.type_defs import IpamDiscoveredAccountTypeDef
 
-def get_value() -> IpamTypeDef:
+def get_value() -> IpamDiscoveredAccountTypeDef:
     return {
-        "OwnerId": ...,
+        "AccountId": ...,
     }
 ```
 
 ```python title="Definition"
-class IpamTypeDef(TypedDict):
-    OwnerId: NotRequired[str],
-    IpamId: NotRequired[str],
-    IpamArn: NotRequired[str],
-    IpamRegion: NotRequired[str],
-    PublicDefaultScopeId: NotRequired[str],
-    PrivateDefaultScopeId: NotRequired[str],
-    ScopeCount: NotRequired[int],
-    Description: NotRequired[str],
-    OperatingRegions: NotRequired[List[IpamOperatingRegionTypeDef]],  # (1)
-    State: NotRequired[IpamStateType],  # (2)
-    Tags: NotRequired[List[TagTypeDef]],  # (3)
+class IpamDiscoveredAccountTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    DiscoveryRegion: NotRequired[str],
+    FailureReason: NotRequired[IpamDiscoveryFailureReasonTypeDef],  # (1)
+    LastAttemptedDiscoveryTime: NotRequired[datetime],
+    LastSuccessfulDiscoveryTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-braces: IpamOperatingRegionTypeDef](./type_defs.md#ipamoperatingregiontypedef) 
-2. See [:material-code-brackets: IpamStateType](./literals.md#ipamstatetype) 
-3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-## IpamPoolCidrTypeDef
+1. See [:material-code-braces: IpamDiscoveryFailureReasonTypeDef](./type_defs.md#ipamdiscoveryfailurereasontypedef) 
+## IpamDiscoveredResourceCidrTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import IpamPoolCidrTypeDef
+from mypy_boto3_ec2.type_defs import IpamDiscoveredResourceCidrTypeDef
 
-def get_value() -> IpamPoolCidrTypeDef:
+def get_value() -> IpamDiscoveredResourceCidrTypeDef:
     return {
-        "Cidr": ...,
+        "IpamResourceDiscoveryId": ...,
     }
 ```
 
 ```python title="Definition"
-class IpamPoolCidrTypeDef(TypedDict):
-    Cidr: NotRequired[str],
-    State: NotRequired[IpamPoolCidrStateType],  # (1)
-    FailureReason: NotRequired[IpamPoolCidrFailureReasonTypeDef],  # (2)
+class IpamDiscoveredResourceCidrTypeDef(TypedDict):
+    IpamResourceDiscoveryId: NotRequired[str],
+    ResourceRegion: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ResourceOwnerId: NotRequired[str],
+    ResourceCidr: NotRequired[str],
+    ResourceType: NotRequired[IpamResourceTypeType],  # (1)
+    ResourceTags: NotRequired[List[IpamResourceTagTypeDef]],  # (2)
+    IpUsage: NotRequired[float],
+    VpcId: NotRequired[str],
+    SampleTime: NotRequired[datetime],
 ```
 
-1. See [:material-code-brackets: IpamPoolCidrStateType](./literals.md#ipampoolcidrstatetype) 
-2. See [:material-code-braces: IpamPoolCidrFailureReasonTypeDef](./type_defs.md#ipampoolcidrfailurereasontypedef) 
+1. See [:material-code-brackets: IpamResourceTypeType](./literals.md#ipamresourcetypetype) 
+2. See [:material-code-braces: IpamResourceTagTypeDef](./type_defs.md#ipamresourcetagtypedef) 
 ## IpamPoolTypeDef
 
 ```python title="Usage Example"
@@ -30337,6 +30595,7 @@ class IpamPoolTypeDef(TypedDict):
     AllocationResourceTags: NotRequired[List[IpamResourceTagTypeDef]],  # (4)
     Tags: NotRequired[List[TagTypeDef]],  # (5)
     AwsService: NotRequired[IpamPoolAwsServiceType],  # (6)
+    PublicIpSource: NotRequired[IpamPoolPublicIpSourceType],  # (7)
 ```
 
 1. See [:material-code-brackets: IpamScopeTypeType](./literals.md#ipamscopetypetype) 
@@ -30345,6 +30604,7 @@ class IpamPoolTypeDef(TypedDict):
 4. See [:material-code-braces: IpamResourceTagTypeDef](./type_defs.md#ipamresourcetagtypedef) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 6. See [:material-code-brackets: IpamPoolAwsServiceType](./literals.md#ipampoolawsservicetype) 
+7. See [:material-code-brackets: IpamPoolPublicIpSourceType](./literals.md#ipampoolpublicipsourcetype) 
 ## IpamResourceCidrTypeDef
 
 ```python title="Usage Example"
@@ -30380,6 +30640,87 @@ class IpamResourceCidrTypeDef(TypedDict):
 3. See [:material-code-brackets: IpamComplianceStatusType](./literals.md#ipamcompliancestatustype) 
 4. See [:material-code-brackets: IpamManagementStateType](./literals.md#ipammanagementstatetype) 
 5. See [:material-code-brackets: IpamOverlapStatusType](./literals.md#ipamoverlapstatustype) 
+## IpamResourceDiscoveryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import IpamResourceDiscoveryTypeDef
+
+def get_value() -> IpamResourceDiscoveryTypeDef:
+    return {
+        "OwnerId": ...,
+    }
+```
+
+```python title="Definition"
+class IpamResourceDiscoveryTypeDef(TypedDict):
+    OwnerId: NotRequired[str],
+    IpamResourceDiscoveryId: NotRequired[str],
+    IpamResourceDiscoveryArn: NotRequired[str],
+    IpamResourceDiscoveryRegion: NotRequired[str],
+    Description: NotRequired[str],
+    OperatingRegions: NotRequired[List[IpamOperatingRegionTypeDef]],  # (1)
+    IsDefault: NotRequired[bool],
+    State: NotRequired[IpamResourceDiscoveryStateType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: IpamOperatingRegionTypeDef](./type_defs.md#ipamoperatingregiontypedef) 
+2. See [:material-code-brackets: IpamResourceDiscoveryStateType](./literals.md#ipamresourcediscoverystatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## IpamTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import IpamTypeDef
+
+def get_value() -> IpamTypeDef:
+    return {
+        "OwnerId": ...,
+    }
+```
+
+```python title="Definition"
+class IpamTypeDef(TypedDict):
+    OwnerId: NotRequired[str],
+    IpamId: NotRequired[str],
+    IpamArn: NotRequired[str],
+    IpamRegion: NotRequired[str],
+    PublicDefaultScopeId: NotRequired[str],
+    PrivateDefaultScopeId: NotRequired[str],
+    ScopeCount: NotRequired[int],
+    Description: NotRequired[str],
+    OperatingRegions: NotRequired[List[IpamOperatingRegionTypeDef]],  # (1)
+    State: NotRequired[IpamStateType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+    DefaultResourceDiscoveryId: NotRequired[str],
+    DefaultResourceDiscoveryAssociationId: NotRequired[str],
+    ResourceDiscoveryAssociationCount: NotRequired[int],
+```
+
+1. See [:material-code-braces: IpamOperatingRegionTypeDef](./type_defs.md#ipamoperatingregiontypedef) 
+2. See [:material-code-brackets: IpamStateType](./literals.md#ipamstatetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## IpamPoolCidrTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import IpamPoolCidrTypeDef
+
+def get_value() -> IpamPoolCidrTypeDef:
+    return {
+        "Cidr": ...,
+    }
+```
+
+```python title="Definition"
+class IpamPoolCidrTypeDef(TypedDict):
+    Cidr: NotRequired[str],
+    State: NotRequired[IpamPoolCidrStateType],  # (1)
+    FailureReason: NotRequired[IpamPoolCidrFailureReasonTypeDef],  # (2)
+    IpamPoolCidrId: NotRequired[str],
+    NetmaskLength: NotRequired[int],
+```
+
+1. See [:material-code-brackets: IpamPoolCidrStateType](./literals.md#ipampoolcidrstatetype) 
+2. See [:material-code-braces: IpamPoolCidrFailureReasonTypeDef](./type_defs.md#ipampoolcidrfailurereasontypedef) 
 ## Ipv6PoolTypeDef
 
 ```python title="Usage Example"
@@ -30572,6 +30913,28 @@ def get_value() -> ModifyIpamRequestRequestTypeDef:
 ```python title="Definition"
 class ModifyIpamRequestRequestTypeDef(TypedDict):
     IpamId: str,
+    DryRun: NotRequired[bool],
+    Description: NotRequired[str],
+    AddOperatingRegions: NotRequired[Sequence[AddIpamOperatingRegionTypeDef]],  # (1)
+    RemoveOperatingRegions: NotRequired[Sequence[RemoveIpamOperatingRegionTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef) 
+2. See [:material-code-braces: RemoveIpamOperatingRegionTypeDef](./type_defs.md#removeipamoperatingregiontypedef) 
+## ModifyIpamResourceDiscoveryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyIpamResourceDiscoveryRequestRequestTypeDef
+
+def get_value() -> ModifyIpamResourceDiscoveryRequestRequestTypeDef:
+    return {
+        "IpamResourceDiscoveryId": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyIpamResourceDiscoveryRequestRequestTypeDef(TypedDict):
+    IpamResourceDiscoveryId: str,
     DryRun: NotRequired[bool],
     Description: NotRequired[str],
     AddOperatingRegions: NotRequired[Sequence[AddIpamOperatingRegionTypeDef]],  # (1)
@@ -32801,6 +33164,68 @@ class DisassociateInstanceEventWindowRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: InstanceEventWindowDisassociationRequestTypeDef](./type_defs.md#instanceeventwindowdisassociationrequesttypedef) 
+## AssociateIpamResourceDiscoveryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssociateIpamResourceDiscoveryResultTypeDef
+
+def get_value() -> AssociateIpamResourceDiscoveryResultTypeDef:
+    return {
+        "IpamResourceDiscoveryAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateIpamResourceDiscoveryResultTypeDef(TypedDict):
+    IpamResourceDiscoveryAssociation: IpamResourceDiscoveryAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceDiscoveryAssociationTypeDef](./type_defs.md#ipamresourcediscoveryassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIpamResourceDiscoveryAssociationsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeIpamResourceDiscoveryAssociationsResultTypeDef
+
+def get_value() -> DescribeIpamResourceDiscoveryAssociationsResultTypeDef:
+    return {
+        "IpamResourceDiscoveryAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpamResourceDiscoveryAssociationsResultTypeDef(TypedDict):
+    IpamResourceDiscoveryAssociations: List[IpamResourceDiscoveryAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceDiscoveryAssociationTypeDef](./type_defs.md#ipamresourcediscoveryassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateIpamResourceDiscoveryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisassociateIpamResourceDiscoveryResultTypeDef
+
+def get_value() -> DisassociateIpamResourceDiscoveryResultTypeDef:
+    return {
+        "IpamResourceDiscoveryAssociation": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateIpamResourceDiscoveryResultTypeDef(TypedDict):
+    IpamResourceDiscoveryAssociation: IpamResourceDiscoveryAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceDiscoveryAssociationTypeDef](./type_defs.md#ipamresourcediscoveryassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIpamScopeResultTypeDef
 
 ```python title="Usage Example"
@@ -33645,6 +34070,28 @@ class AllocateHostsRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 3. See [:material-code-brackets: HostRecoveryType](./literals.md#hostrecoverytype) 
+## AssociateIpamResourceDiscoveryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssociateIpamResourceDiscoveryRequestRequestTypeDef
+
+def get_value() -> AssociateIpamResourceDiscoveryRequestRequestTypeDef:
+    return {
+        "IpamId": ...,
+        "IpamResourceDiscoveryId": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateIpamResourceDiscoveryRequestRequestTypeDef(TypedDict):
+    IpamId: str,
+    IpamResourceDiscoveryId: str,
+    DryRun: NotRequired[bool],
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 ## CopySnapshotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -34061,12 +34508,14 @@ class CreateIpamPoolRequestRequestTypeDef(TypedDict):
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (3)
     ClientToken: NotRequired[str],
     AwsService: NotRequired[IpamPoolAwsServiceType],  # (4)
+    PublicIpSource: NotRequired[IpamPoolPublicIpSourceType],  # (5)
 ```
 
 1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
 2. See [:material-code-braces: RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef) 
 3. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 4. See [:material-code-brackets: IpamPoolAwsServiceType](./literals.md#ipampoolawsservicetype) 
+5. See [:material-code-brackets: IpamPoolPublicIpSourceType](./literals.md#ipampoolpublicipsourcetype) 
 ## CreateIpamRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -34080,6 +34529,28 @@ def get_value() -> CreateIpamRequestRequestTypeDef:
 
 ```python title="Definition"
 class CreateIpamRequestRequestTypeDef(TypedDict):
+    DryRun: NotRequired[bool],
+    Description: NotRequired[str],
+    OperatingRegions: NotRequired[Sequence[AddIpamOperatingRegionTypeDef]],  # (1)
+    TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
+    ClientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef) 
+2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+## CreateIpamResourceDiscoveryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateIpamResourceDiscoveryRequestRequestTypeDef
+
+def get_value() -> CreateIpamResourceDiscoveryRequestRequestTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class CreateIpamResourceDiscoveryRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     Description: NotRequired[str],
     OperatingRegions: NotRequired[Sequence[AddIpamOperatingRegionTypeDef]],  # (1)
@@ -39429,6 +39900,256 @@ class StaleSecurityGroupTypeDef(TypedDict):
 
 1. See [:material-code-braces: StaleIpPermissionTypeDef](./type_defs.md#staleippermissiontypedef) 
 2. See [:material-code-braces: StaleIpPermissionTypeDef](./type_defs.md#staleippermissiontypedef) 
+## GetIpamDiscoveredAccountsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetIpamDiscoveredAccountsResultTypeDef
+
+def get_value() -> GetIpamDiscoveredAccountsResultTypeDef:
+    return {
+        "IpamDiscoveredAccounts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIpamDiscoveredAccountsResultTypeDef(TypedDict):
+    IpamDiscoveredAccounts: List[IpamDiscoveredAccountTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamDiscoveredAccountTypeDef](./type_defs.md#ipamdiscoveredaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetIpamDiscoveredResourceCidrsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetIpamDiscoveredResourceCidrsResultTypeDef
+
+def get_value() -> GetIpamDiscoveredResourceCidrsResultTypeDef:
+    return {
+        "IpamDiscoveredResourceCidrs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIpamDiscoveredResourceCidrsResultTypeDef(TypedDict):
+    IpamDiscoveredResourceCidrs: List[IpamDiscoveredResourceCidrTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamDiscoveredResourceCidrTypeDef](./type_defs.md#ipamdiscoveredresourcecidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateIpamPoolResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateIpamPoolResultTypeDef
+
+def get_value() -> CreateIpamPoolResultTypeDef:
+    return {
+        "IpamPool": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateIpamPoolResultTypeDef(TypedDict):
+    IpamPool: IpamPoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteIpamPoolResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteIpamPoolResultTypeDef
+
+def get_value() -> DeleteIpamPoolResultTypeDef:
+    return {
+        "IpamPool": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteIpamPoolResultTypeDef(TypedDict):
+    IpamPool: IpamPoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIpamPoolsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeIpamPoolsResultTypeDef
+
+def get_value() -> DescribeIpamPoolsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "IpamPools": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpamPoolsResultTypeDef(TypedDict):
+    NextToken: str,
+    IpamPools: List[IpamPoolTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyIpamPoolResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyIpamPoolResultTypeDef
+
+def get_value() -> ModifyIpamPoolResultTypeDef:
+    return {
+        "IpamPool": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyIpamPoolResultTypeDef(TypedDict):
+    IpamPool: IpamPoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetIpamResourceCidrsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import GetIpamResourceCidrsResultTypeDef
+
+def get_value() -> GetIpamResourceCidrsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "IpamResourceCidrs": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetIpamResourceCidrsResultTypeDef(TypedDict):
+    NextToken: str,
+    IpamResourceCidrs: List[IpamResourceCidrTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceCidrTypeDef](./type_defs.md#ipamresourcecidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyIpamResourceCidrResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyIpamResourceCidrResultTypeDef
+
+def get_value() -> ModifyIpamResourceCidrResultTypeDef:
+    return {
+        "IpamResourceCidr": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyIpamResourceCidrResultTypeDef(TypedDict):
+    IpamResourceCidr: IpamResourceCidrTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceCidrTypeDef](./type_defs.md#ipamresourcecidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateIpamResourceDiscoveryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import CreateIpamResourceDiscoveryResultTypeDef
+
+def get_value() -> CreateIpamResourceDiscoveryResultTypeDef:
+    return {
+        "IpamResourceDiscovery": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateIpamResourceDiscoveryResultTypeDef(TypedDict):
+    IpamResourceDiscovery: IpamResourceDiscoveryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceDiscoveryTypeDef](./type_defs.md#ipamresourcediscoverytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteIpamResourceDiscoveryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DeleteIpamResourceDiscoveryResultTypeDef
+
+def get_value() -> DeleteIpamResourceDiscoveryResultTypeDef:
+    return {
+        "IpamResourceDiscovery": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteIpamResourceDiscoveryResultTypeDef(TypedDict):
+    IpamResourceDiscovery: IpamResourceDiscoveryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceDiscoveryTypeDef](./type_defs.md#ipamresourcediscoverytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeIpamResourceDiscoveriesResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeIpamResourceDiscoveriesResultTypeDef
+
+def get_value() -> DescribeIpamResourceDiscoveriesResultTypeDef:
+    return {
+        "IpamResourceDiscoveries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeIpamResourceDiscoveriesResultTypeDef(TypedDict):
+    IpamResourceDiscoveries: List[IpamResourceDiscoveryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceDiscoveryTypeDef](./type_defs.md#ipamresourcediscoverytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ModifyIpamResourceDiscoveryResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import ModifyIpamResourceDiscoveryResultTypeDef
+
+def get_value() -> ModifyIpamResourceDiscoveryResultTypeDef:
+    return {
+        "IpamResourceDiscovery": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyIpamResourceDiscoveryResultTypeDef(TypedDict):
+    IpamResourceDiscovery: IpamResourceDiscoveryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: IpamResourceDiscoveryTypeDef](./type_defs.md#ipamresourcediscoverytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIpamResultTypeDef
 
 ```python title="Usage Example"
@@ -39572,130 +40293,6 @@ class ProvisionIpamPoolCidrResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: IpamPoolCidrTypeDef](./type_defs.md#ipampoolcidrtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## CreateIpamPoolResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import CreateIpamPoolResultTypeDef
-
-def get_value() -> CreateIpamPoolResultTypeDef:
-    return {
-        "IpamPool": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateIpamPoolResultTypeDef(TypedDict):
-    IpamPool: IpamPoolTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DeleteIpamPoolResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DeleteIpamPoolResultTypeDef
-
-def get_value() -> DeleteIpamPoolResultTypeDef:
-    return {
-        "IpamPool": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DeleteIpamPoolResultTypeDef(TypedDict):
-    IpamPool: IpamPoolTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeIpamPoolsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import DescribeIpamPoolsResultTypeDef
-
-def get_value() -> DescribeIpamPoolsResultTypeDef:
-    return {
-        "NextToken": ...,
-        "IpamPools": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeIpamPoolsResultTypeDef(TypedDict):
-    NextToken: str,
-    IpamPools: List[IpamPoolTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModifyIpamPoolResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import ModifyIpamPoolResultTypeDef
-
-def get_value() -> ModifyIpamPoolResultTypeDef:
-    return {
-        "IpamPool": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyIpamPoolResultTypeDef(TypedDict):
-    IpamPool: IpamPoolTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IpamPoolTypeDef](./type_defs.md#ipampooltypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetIpamResourceCidrsResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import GetIpamResourceCidrsResultTypeDef
-
-def get_value() -> GetIpamResourceCidrsResultTypeDef:
-    return {
-        "NextToken": ...,
-        "IpamResourceCidrs": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetIpamResourceCidrsResultTypeDef(TypedDict):
-    NextToken: str,
-    IpamResourceCidrs: List[IpamResourceCidrTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IpamResourceCidrTypeDef](./type_defs.md#ipamresourcecidrtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ModifyIpamResourceCidrResultTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import ModifyIpamResourceCidrResultTypeDef
-
-def get_value() -> ModifyIpamResourceCidrResultTypeDef:
-    return {
-        "IpamResourceCidr": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ModifyIpamResourceCidrResultTypeDef(TypedDict):
-    IpamResourceCidr: IpamResourceCidrTypeDef,  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: IpamResourceCidrTypeDef](./type_defs.md#ipamresourcecidrtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIpv6PoolsResultTypeDef
 

@@ -119,34 +119,6 @@ class ScriptBatchJobDefinitionTypeDef(TypedDict):
     scriptName: str,
 ```
 
-## BatchJobExecutionSummaryTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_m2.type_defs import BatchJobExecutionSummaryTypeDef
-
-def get_value() -> BatchJobExecutionSummaryTypeDef:
-    return {
-        "applicationId": ...,
-        "executionId": ...,
-        "startTime": ...,
-        "status": ...,
-    }
-```
-
-```python title="Definition"
-class BatchJobExecutionSummaryTypeDef(TypedDict):
-    applicationId: str,
-    executionId: str,
-    startTime: datetime,
-    status: BatchJobExecutionStatusType,  # (2)
-    endTime: NotRequired[datetime],
-    jobId: NotRequired[str],
-    jobName: NotRequired[str],
-    jobType: NotRequired[BatchJobTypeType],  # (1)
-```
-
-1. See [:material-code-brackets: BatchJobTypeType](./literals.md#batchjobtypetype) 
-2. See [:material-code-brackets: BatchJobExecutionStatusType](./literals.md#batchjobexecutionstatustype) 
 ## FileBatchJobIdentifierTypeDef
 
 ```python title="Usage Example"
@@ -1244,45 +1216,6 @@ class GetApplicationVersionResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ApplicationVersionLifecycleType](./literals.md#applicationversionlifecycletype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetBatchJobExecutionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_m2.type_defs import GetBatchJobExecutionResponseTypeDef
-
-def get_value() -> GetBatchJobExecutionResponseTypeDef:
-    return {
-        "applicationId": ...,
-        "endTime": ...,
-        "executionId": ...,
-        "jobId": ...,
-        "jobName": ...,
-        "jobType": ...,
-        "jobUser": ...,
-        "startTime": ...,
-        "status": ...,
-        "statusReason": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetBatchJobExecutionResponseTypeDef(TypedDict):
-    applicationId: str,
-    endTime: datetime,
-    executionId: str,
-    jobId: str,
-    jobName: str,
-    jobType: BatchJobTypeType,  # (1)
-    jobUser: str,
-    startTime: datetime,
-    status: BatchJobExecutionStatusType,  # (2)
-    statusReason: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: BatchJobTypeType](./literals.md#batchjobtypetype) 
-2. See [:material-code-brackets: BatchJobExecutionStatusType](./literals.md#batchjobexecutionstatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeploymentResponseTypeDef
 
 ```python title="Usage Example"
@@ -1358,28 +1291,6 @@ class ListApplicationsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListBatchJobExecutionsResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_m2.type_defs import ListBatchJobExecutionsResponseTypeDef
-
-def get_value() -> ListBatchJobExecutionsResponseTypeDef:
-    return {
-        "batchJobExecutions": ...,
-        "nextToken": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListBatchJobExecutionsResponseTypeDef(TypedDict):
-    batchJobExecutions: List[BatchJobExecutionSummaryTypeDef],  # (1)
-    nextToken: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: BatchJobExecutionSummaryTypeDef](./type_defs.md#batchjobexecutionsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1930,6 +1841,81 @@ class ListBatchJobDefinitionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BatchJobDefinitionTypeDef](./type_defs.md#batchjobdefinitiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchJobExecutionSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_m2.type_defs import BatchJobExecutionSummaryTypeDef
+
+def get_value() -> BatchJobExecutionSummaryTypeDef:
+    return {
+        "applicationId": ...,
+        "executionId": ...,
+        "startTime": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class BatchJobExecutionSummaryTypeDef(TypedDict):
+    applicationId: str,
+    executionId: str,
+    startTime: datetime,
+    status: BatchJobExecutionStatusType,  # (3)
+    batchJobIdentifier: NotRequired[BatchJobIdentifierTypeDef],  # (1)
+    endTime: NotRequired[datetime],
+    jobId: NotRequired[str],
+    jobName: NotRequired[str],
+    jobType: NotRequired[BatchJobTypeType],  # (2)
+    returnCode: NotRequired[str],
+```
+
+1. See [:material-code-braces: BatchJobIdentifierTypeDef](./type_defs.md#batchjobidentifiertypedef) 
+2. See [:material-code-brackets: BatchJobTypeType](./literals.md#batchjobtypetype) 
+3. See [:material-code-brackets: BatchJobExecutionStatusType](./literals.md#batchjobexecutionstatustype) 
+## GetBatchJobExecutionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_m2.type_defs import GetBatchJobExecutionResponseTypeDef
+
+def get_value() -> GetBatchJobExecutionResponseTypeDef:
+    return {
+        "applicationId": ...,
+        "batchJobIdentifier": ...,
+        "endTime": ...,
+        "executionId": ...,
+        "jobId": ...,
+        "jobName": ...,
+        "jobType": ...,
+        "jobUser": ...,
+        "returnCode": ...,
+        "startTime": ...,
+        "status": ...,
+        "statusReason": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetBatchJobExecutionResponseTypeDef(TypedDict):
+    applicationId: str,
+    batchJobIdentifier: BatchJobIdentifierTypeDef,  # (1)
+    endTime: datetime,
+    executionId: str,
+    jobId: str,
+    jobName: str,
+    jobType: BatchJobTypeType,  # (2)
+    jobUser: str,
+    returnCode: str,
+    startTime: datetime,
+    status: BatchJobExecutionStatusType,  # (3)
+    statusReason: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: BatchJobIdentifierTypeDef](./type_defs.md#batchjobidentifiertypedef) 
+2. See [:material-code-brackets: BatchJobTypeType](./literals.md#batchjobtypetype) 
+3. See [:material-code-brackets: BatchJobExecutionStatusType](./literals.md#batchjobexecutionstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartBatchJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2110,6 +2096,28 @@ class DatasetDetailOrgAttributesTypeDef(TypedDict):
 
 1. See [:material-code-braces: GdgDetailAttributesTypeDef](./type_defs.md#gdgdetailattributestypedef) 
 2. See [:material-code-braces: VsamDetailAttributesTypeDef](./type_defs.md#vsamdetailattributestypedef) 
+## ListBatchJobExecutionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_m2.type_defs import ListBatchJobExecutionsResponseTypeDef
+
+def get_value() -> ListBatchJobExecutionsResponseTypeDef:
+    return {
+        "batchJobExecutions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBatchJobExecutionsResponseTypeDef(TypedDict):
+    batchJobExecutions: List[BatchJobExecutionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchJobExecutionSummaryTypeDef](./type_defs.md#batchjobexecutionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataSetTypeDef
 
 ```python title="Usage Example"

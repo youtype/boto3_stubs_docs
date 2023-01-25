@@ -714,6 +714,41 @@ parent.associate_instance_event_window(**kwargs)
 
 1. See [:material-code-braces: AssociateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#associateinstanceeventwindowrequestrequesttypedef) 
 
+### associate\_ipam\_resource\_discovery
+
+Associates an IPAM resource discovery with an Amazon VPC IPAM.
+
+Type annotations and code completion for `#!python boto3.client("ec2").associate_ipam_resource_discovery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_ipam_resource_discovery)
+
+```python title="Method definition"
+def associate_ipam_resource_discovery(
+    self,
+    *,
+    IpamId: str,
+    IpamResourceDiscoveryId: str,
+    DryRun: bool = ...,
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
+    ClientToken: str = ...,
+) -> AssociateIpamResourceDiscoveryResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+2. See [:material-code-braces: AssociateIpamResourceDiscoveryResultTypeDef](./type_defs.md#associateipamresourcediscoveryresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateIpamResourceDiscoveryRequestRequestTypeDef = {  # (1)
+    "IpamId": ...,
+    "IpamResourceDiscoveryId": ...,
+}
+
+parent.associate_ipam_resource_discovery(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateIpamResourceDiscoveryRequestRequestTypeDef](./type_defs.md#associateipamresourcediscoveryrequestrequesttypedef) 
+
 ### associate\_route\_table
 
 Associates a subnet in your VPC or an internet gateway or virtual private
@@ -2579,7 +2614,8 @@ def create_ipam_pool(
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (3)
     ClientToken: str = ...,
     AwsService: IpamPoolAwsServiceType = ...,  # (4)
-) -> CreateIpamPoolResultTypeDef:  # (5)
+    PublicIpSource: IpamPoolPublicIpSourceType = ...,  # (5)
+) -> CreateIpamPoolResultTypeDef:  # (6)
     ...
 ```
 
@@ -2587,7 +2623,8 @@ def create_ipam_pool(
 2. See [:material-code-braces: RequestIpamResourceTagTypeDef](./type_defs.md#requestipamresourcetagtypedef) 
 3. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 4. See [:material-code-brackets: IpamPoolAwsServiceType](./literals.md#ipampoolawsservicetype) 
-5. See [:material-code-braces: CreateIpamPoolResultTypeDef](./type_defs.md#createipampoolresulttypedef) 
+5. See [:material-code-brackets: IpamPoolPublicIpSourceType](./literals.md#ipampoolpublicipsourcetype) 
+6. See [:material-code-braces: CreateIpamPoolResultTypeDef](./type_defs.md#createipampoolresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2600,6 +2637,41 @@ parent.create_ipam_pool(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateIpamPoolRequestRequestTypeDef](./type_defs.md#createipampoolrequestrequesttypedef) 
+
+### create\_ipam\_resource\_discovery
+
+Creates an IPAM resource discovery.
+
+Type annotations and code completion for `#!python boto3.client("ec2").create_ipam_resource_discovery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_ipam_resource_discovery)
+
+```python title="Method definition"
+def create_ipam_resource_discovery(
+    self,
+    *,
+    DryRun: bool = ...,
+    Description: str = ...,
+    OperatingRegions: Sequence[AddIpamOperatingRegionTypeDef] = ...,  # (1)
+    TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
+    ClientToken: str = ...,
+) -> CreateIpamResourceDiscoveryResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef) 
+2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
+3. See [:material-code-braces: CreateIpamResourceDiscoveryResultTypeDef](./type_defs.md#createipamresourcediscoveryresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateIpamResourceDiscoveryRequestRequestTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.create_ipam_resource_discovery(**kwargs)
+```
+
+1. See [:material-code-braces: CreateIpamResourceDiscoveryRequestRequestTypeDef](./type_defs.md#createipamresourcediscoveryrequestrequesttypedef) 
 
 ### create\_ipam\_scope
 
@@ -5265,6 +5337,36 @@ parent.delete_ipam_pool(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteIpamPoolRequestRequestTypeDef](./type_defs.md#deleteipampoolrequestrequesttypedef) 
+
+### delete\_ipam\_resource\_discovery
+
+Deletes an IPAM resource discovery.
+
+Type annotations and code completion for `#!python boto3.client("ec2").delete_ipam_resource_discovery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_ipam_resource_discovery)
+
+```python title="Method definition"
+def delete_ipam_resource_discovery(
+    self,
+    *,
+    IpamResourceDiscoveryId: str,
+    DryRun: bool = ...,
+) -> DeleteIpamResourceDiscoveryResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteIpamResourceDiscoveryResultTypeDef](./type_defs.md#deleteipamresourcediscoveryresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteIpamResourceDiscoveryRequestRequestTypeDef = {  # (1)
+    "IpamResourceDiscoveryId": ...,
+}
+
+parent.delete_ipam_resource_discovery(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteIpamResourceDiscoveryRequestRequestTypeDef](./type_defs.md#deleteipamresourcediscoveryrequestrequesttypedef) 
 
 ### delete\_ipam\_scope
 
@@ -9040,6 +9142,74 @@ parent.describe_ipam_pools(**kwargs)
 
 1. See [:material-code-braces: DescribeIpamPoolsRequestRequestTypeDef](./type_defs.md#describeipampoolsrequestrequesttypedef) 
 
+### describe\_ipam\_resource\_discoveries
+
+Describes IPAM resource discoveries.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_ipam_resource_discoveries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipam_resource_discoveries)
+
+```python title="Method definition"
+def describe_ipam_resource_discoveries(
+    self,
+    *,
+    DryRun: bool = ...,
+    IpamResourceDiscoveryIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> DescribeIpamResourceDiscoveriesResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeIpamResourceDiscoveriesResultTypeDef](./type_defs.md#describeipamresourcediscoveriesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpamResourceDiscoveriesRequestRequestTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.describe_ipam_resource_discoveries(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpamResourceDiscoveriesRequestRequestTypeDef](./type_defs.md#describeipamresourcediscoveriesrequestrequesttypedef) 
+
+### describe\_ipam\_resource\_discovery\_associations
+
+Describes resource discovery association with an Amazon VPC IPAM.
+
+Type annotations and code completion for `#!python boto3.client("ec2").describe_ipam_resource_discovery_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipam_resource_discovery_associations)
+
+```python title="Method definition"
+def describe_ipam_resource_discovery_associations(
+    self,
+    *,
+    DryRun: bool = ...,
+    IpamResourceDiscoveryAssociationIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> DescribeIpamResourceDiscoveryAssociationsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeIpamResourceDiscoveryAssociationsResultTypeDef](./type_defs.md#describeipamresourcediscoveryassociationsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpamResourceDiscoveryAssociationsRequestRequestTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.describe_ipam_resource_discovery_associations(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpamResourceDiscoveryAssociationsRequestRequestTypeDef](./type_defs.md#describeipamresourcediscoveryassociationsrequestrequesttypedef) 
+
 ### describe\_ipam\_scopes
 
 Get information about your IPAM scopes.
@@ -12780,6 +12950,36 @@ parent.disassociate_instance_event_window(**kwargs)
 
 1. See [:material-code-braces: DisassociateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#disassociateinstanceeventwindowrequestrequesttypedef) 
 
+### disassociate\_ipam\_resource\_discovery
+
+Disassociates a resource discovery from an Amazon VPC IPAM.
+
+Type annotations and code completion for `#!python boto3.client("ec2").disassociate_ipam_resource_discovery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_ipam_resource_discovery)
+
+```python title="Method definition"
+def disassociate_ipam_resource_discovery(
+    self,
+    *,
+    IpamResourceDiscoveryAssociationId: str,
+    DryRun: bool = ...,
+) -> DisassociateIpamResourceDiscoveryResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DisassociateIpamResourceDiscoveryResultTypeDef](./type_defs.md#disassociateipamresourcediscoveryresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateIpamResourceDiscoveryRequestRequestTypeDef = {  # (1)
+    "IpamResourceDiscoveryAssociationId": ...,
+}
+
+parent.disassociate_ipam_resource_discovery(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateIpamResourceDiscoveryRequestRequestTypeDef](./type_defs.md#disassociateipamresourcediscoveryrequestrequesttypedef) 
+
 ### disassociate\_route\_table
 
 Disassociates a subnet or gateway from a route table.
@@ -14121,6 +14321,78 @@ parent.get_ipam_address_history(**kwargs)
 
 1. See [:material-code-braces: GetIpamAddressHistoryRequestRequestTypeDef](./type_defs.md#getipamaddresshistoryrequestrequesttypedef) 
 
+### get\_ipam\_discovered\_accounts
+
+Gets IPAM discovered accounts.
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_ipam_discovered_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ipam_discovered_accounts)
+
+```python title="Method definition"
+def get_ipam_discovered_accounts(
+    self,
+    *,
+    IpamResourceDiscoveryId: str,
+    DiscoveryRegion: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetIpamDiscoveredAccountsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: GetIpamDiscoveredAccountsResultTypeDef](./type_defs.md#getipamdiscoveredaccountsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamDiscoveredAccountsRequestRequestTypeDef = {  # (1)
+    "IpamResourceDiscoveryId": ...,
+    "DiscoveryRegion": ...,
+}
+
+parent.get_ipam_discovered_accounts(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamDiscoveredAccountsRequestRequestTypeDef](./type_defs.md#getipamdiscoveredaccountsrequestrequesttypedef) 
+
+### get\_ipam\_discovered\_resource\_cidrs
+
+Returns the resource CIDRs that are monitored as part of a resource discovery.
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_ipam_discovered_resource_cidrs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ipam_discovered_resource_cidrs)
+
+```python title="Method definition"
+def get_ipam_discovered_resource_cidrs(
+    self,
+    *,
+    IpamResourceDiscoveryId: str,
+    ResourceRegion: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetIpamDiscoveredResourceCidrsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: GetIpamDiscoveredResourceCidrsResultTypeDef](./type_defs.md#getipamdiscoveredresourcecidrsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamDiscoveredResourceCidrsRequestRequestTypeDef = {  # (1)
+    "IpamResourceDiscoveryId": ...,
+    "ResourceRegion": ...,
+}
+
+parent.get_ipam_discovered_resource_cidrs(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamDiscoveredResourceCidrsRequestRequestTypeDef](./type_defs.md#getipamdiscoveredresourcecidrsrequestrequesttypedef) 
+
 ### get\_ipam\_pool\_allocations
 
 Get a list of all the CIDR allocations in an IPAM pool.
@@ -14192,7 +14464,7 @@ parent.get_ipam_pool_cidrs(**kwargs)
 
 ### get\_ipam\_resource\_cidrs
 
-Get information about the resources in a scope.
+Returns resource CIDRs managed by IPAM in a given scope.
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_ipam_resource_cidrs` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ipam_resource_cidrs)
@@ -16105,6 +16377,41 @@ parent.modify_ipam_resource_cidr(**kwargs)
 
 1. See [:material-code-braces: ModifyIpamResourceCidrRequestRequestTypeDef](./type_defs.md#modifyipamresourcecidrrequestrequesttypedef) 
 
+### modify\_ipam\_resource\_discovery
+
+Modifies a resource discovery.
+
+Type annotations and code completion for `#!python boto3.client("ec2").modify_ipam_resource_discovery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ipam_resource_discovery)
+
+```python title="Method definition"
+def modify_ipam_resource_discovery(
+    self,
+    *,
+    IpamResourceDiscoveryId: str,
+    DryRun: bool = ...,
+    Description: str = ...,
+    AddOperatingRegions: Sequence[AddIpamOperatingRegionTypeDef] = ...,  # (1)
+    RemoveOperatingRegions: Sequence[RemoveIpamOperatingRegionTypeDef] = ...,  # (2)
+) -> ModifyIpamResourceDiscoveryResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: AddIpamOperatingRegionTypeDef](./type_defs.md#addipamoperatingregiontypedef) 
+2. See [:material-code-braces: RemoveIpamOperatingRegionTypeDef](./type_defs.md#removeipamoperatingregiontypedef) 
+3. See [:material-code-braces: ModifyIpamResourceDiscoveryResultTypeDef](./type_defs.md#modifyipamresourcediscoveryresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyIpamResourceDiscoveryRequestRequestTypeDef = {  # (1)
+    "IpamResourceDiscoveryId": ...,
+}
+
+parent.modify_ipam_resource_discovery(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyIpamResourceDiscoveryRequestRequestTypeDef](./type_defs.md#modifyipamresourcediscoveryrequestrequesttypedef) 
+
 ### modify\_ipam\_scope
 
 Modify an IPAM scope.
@@ -17541,7 +17848,7 @@ parent.move_address_to_vpc(**kwargs)
 
 ### move\_byoip\_cidr\_to\_ipam
 
-Move an BYOIP IPv4 CIDR to IPAM from a public IPv4 pool.
+Move a BYOIPv4 CIDR to IPAM from a public IPv4 pool.
 
 Type annotations and code completion for `#!python boto3.client("ec2").move_byoip_cidr_to_ipam` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.move_byoip_cidr_to_ipam)
@@ -17627,6 +17934,8 @@ def provision_ipam_pool_cidr(
     DryRun: bool = ...,
     Cidr: str = ...,
     CidrAuthorizationContext: IpamCidrAuthorizationContextTypeDef = ...,  # (1)
+    NetmaskLength: int = ...,
+    ClientToken: str = ...,
 ) -> ProvisionIpamPoolCidrResultTypeDef:  # (2)
     ...
 ```
@@ -19771,6 +20080,8 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_pagin
 - `client.get_paginator("describe_instances")` -> [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
 - `client.get_paginator("describe_internet_gateways")` -> [DescribeInternetGatewaysPaginator](./paginators.md#describeinternetgatewayspaginator)
 - `client.get_paginator("describe_ipam_pools")` -> [DescribeIpamPoolsPaginator](./paginators.md#describeipampoolspaginator)
+- `client.get_paginator("describe_ipam_resource_discoveries")` -> [DescribeIpamResourceDiscoveriesPaginator](./paginators.md#describeipamresourcediscoveriespaginator)
+- `client.get_paginator("describe_ipam_resource_discovery_associations")` -> [DescribeIpamResourceDiscoveryAssociationsPaginator](./paginators.md#describeipamresourcediscoveryassociationspaginator)
 - `client.get_paginator("describe_ipam_scopes")` -> [DescribeIpamScopesPaginator](./paginators.md#describeipamscopespaginator)
 - `client.get_paginator("describe_ipams")` -> [DescribeIpamsPaginator](./paginators.md#describeipamspaginator)
 - `client.get_paginator("describe_ipv6_pools")` -> [DescribeIpv6PoolsPaginator](./paginators.md#describeipv6poolspaginator)
@@ -19849,6 +20160,8 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_pagin
 - `client.get_paginator("get_groups_for_capacity_reservation")` -> [GetGroupsForCapacityReservationPaginator](./paginators.md#getgroupsforcapacityreservationpaginator)
 - `client.get_paginator("get_instance_types_from_instance_requirements")` -> [GetInstanceTypesFromInstanceRequirementsPaginator](./paginators.md#getinstancetypesfrominstancerequirementspaginator)
 - `client.get_paginator("get_ipam_address_history")` -> [GetIpamAddressHistoryPaginator](./paginators.md#getipamaddresshistorypaginator)
+- `client.get_paginator("get_ipam_discovered_accounts")` -> [GetIpamDiscoveredAccountsPaginator](./paginators.md#getipamdiscoveredaccountspaginator)
+- `client.get_paginator("get_ipam_discovered_resource_cidrs")` -> [GetIpamDiscoveredResourceCidrsPaginator](./paginators.md#getipamdiscoveredresourcecidrspaginator)
 - `client.get_paginator("get_ipam_pool_allocations")` -> [GetIpamPoolAllocationsPaginator](./paginators.md#getipampoolallocationspaginator)
 - `client.get_paginator("get_ipam_pool_cidrs")` -> [GetIpamPoolCidrsPaginator](./paginators.md#getipampoolcidrspaginator)
 - `client.get_paginator("get_ipam_resource_cidrs")` -> [GetIpamResourceCidrsPaginator](./paginators.md#getipamresourcecidrspaginator)

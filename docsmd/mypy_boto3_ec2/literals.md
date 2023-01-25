@@ -1618,6 +1618,34 @@ DescribeIpamPoolsPaginatorName = Literal[
     "describe_ipam_pools",
 ]
 ```
+## DescribeIpamResourceDiscoveriesPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeIpamResourceDiscoveriesPaginatorName
+
+def get_value() -> DescribeIpamResourceDiscoveriesPaginatorName:
+    return "describe_ipam_resource_discoveries"
+```
+
+```python title="Definition"
+DescribeIpamResourceDiscoveriesPaginatorName = Literal[
+    "describe_ipam_resource_discoveries",
+]
+```
+## DescribeIpamResourceDiscoveryAssociationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import DescribeIpamResourceDiscoveryAssociationsPaginatorName
+
+def get_value() -> DescribeIpamResourceDiscoveryAssociationsPaginatorName:
+    return "describe_ipam_resource_discovery_associations"
+```
+
+```python title="Definition"
+DescribeIpamResourceDiscoveryAssociationsPaginatorName = Literal[
+    "describe_ipam_resource_discovery_associations",
+]
+```
 ## DescribeIpamScopesPaginatorName
 
 ```python title="Usage Example"
@@ -3404,6 +3432,34 @@ GetIpamAddressHistoryPaginatorName = Literal[
     "get_ipam_address_history",
 ]
 ```
+## GetIpamDiscoveredAccountsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import GetIpamDiscoveredAccountsPaginatorName
+
+def get_value() -> GetIpamDiscoveredAccountsPaginatorName:
+    return "get_ipam_discovered_accounts"
+```
+
+```python title="Definition"
+GetIpamDiscoveredAccountsPaginatorName = Literal[
+    "get_ipam_discovered_accounts",
+]
+```
+## GetIpamDiscoveredResourceCidrsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import GetIpamDiscoveredResourceCidrsPaginatorName
+
+def get_value() -> GetIpamDiscoveredResourceCidrsPaginatorName:
+    return "get_ipam_discovered_resource_cidrs"
+```
+
+```python title="Definition"
+GetIpamDiscoveredResourceCidrsPaginatorName = Literal[
+    "get_ipam_discovered_resource_cidrs",
+]
+```
 ## GetIpamPoolAllocationsPaginatorName
 
 ```python title="Usage Example"
@@ -4837,6 +4893,21 @@ IpamAddressHistoryResourceTypeType = Literal[
     "vpc",
 ]
 ```
+## IpamAssociatedResourceDiscoveryStatusType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import IpamAssociatedResourceDiscoveryStatusType
+
+def get_value() -> IpamAssociatedResourceDiscoveryStatusType:
+    return "active"
+```
+
+```python title="Definition"
+IpamAssociatedResourceDiscoveryStatusType = Literal[
+    "active",
+    "not-found",
+]
+```
 ## IpamComplianceStatusType
 
 ```python title="Usage Example"
@@ -4852,6 +4923,22 @@ IpamComplianceStatusType = Literal[
     "ignored",
     "noncompliant",
     "unmanaged",
+]
+```
+## IpamDiscoveryFailureCodeType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import IpamDiscoveryFailureCodeType
+
+def get_value() -> IpamDiscoveryFailureCodeType:
+    return "assume-role-failure"
+```
+
+```python title="Definition"
+IpamDiscoveryFailureCodeType = Literal[
+    "assume-role-failure",
+    "throttling-failure",
+    "unauthorized-failure",
 ]
 ```
 ## IpamManagementStateType
@@ -4929,6 +5016,7 @@ def get_value() -> IpamPoolCidrFailureCodeType:
 ```python title="Definition"
 IpamPoolCidrFailureCodeType = Literal[
     "cidr-not-available",
+    "limit-exceeded",
 ]
 ```
 ## IpamPoolCidrStateType
@@ -4952,6 +5040,21 @@ IpamPoolCidrStateType = Literal[
     "provisioned",
 ]
 ```
+## IpamPoolPublicIpSourceType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import IpamPoolPublicIpSourceType
+
+def get_value() -> IpamPoolPublicIpSourceType:
+    return "amazon"
+```
+
+```python title="Definition"
+IpamPoolPublicIpSourceType = Literal[
+    "amazon",
+    "byoip",
+]
+```
 ## IpamPoolStateType
 
 ```python title="Usage Example"
@@ -4963,6 +5066,53 @@ def get_value() -> IpamPoolStateType:
 
 ```python title="Definition"
 IpamPoolStateType = Literal[
+    "create-complete",
+    "create-failed",
+    "create-in-progress",
+    "delete-complete",
+    "delete-failed",
+    "delete-in-progress",
+    "isolate-complete",
+    "isolate-in-progress",
+    "modify-complete",
+    "modify-failed",
+    "modify-in-progress",
+    "restore-in-progress",
+]
+```
+## IpamResourceDiscoveryAssociationStateType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import IpamResourceDiscoveryAssociationStateType
+
+def get_value() -> IpamResourceDiscoveryAssociationStateType:
+    return "associate-complete"
+```
+
+```python title="Definition"
+IpamResourceDiscoveryAssociationStateType = Literal[
+    "associate-complete",
+    "associate-failed",
+    "associate-in-progress",
+    "disassociate-complete",
+    "disassociate-failed",
+    "disassociate-in-progress",
+    "isolate-complete",
+    "isolate-in-progress",
+    "restore-in-progress",
+]
+```
+## IpamResourceDiscoveryStateType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import IpamResourceDiscoveryStateType
+
+def get_value() -> IpamResourceDiscoveryStateType:
+    return "create-complete"
+```
+
+```python title="Definition"
+IpamResourceDiscoveryStateType = Literal[
     "create-complete",
     "create-failed",
     "create-in-progress",
@@ -6174,6 +6324,8 @@ ResourceTypeType = Literal[
     "internet-gateway",
     "ipam",
     "ipam-pool",
+    "ipam-resource-discovery",
+    "ipam-resource-discovery-association",
     "ipam-scope",
     "ipv4pool-ec2",
     "ipv6pool-ec2",
@@ -8340,6 +8492,8 @@ PaginatorName = Literal[
     "describe_instances",
     "describe_internet_gateways",
     "describe_ipam_pools",
+    "describe_ipam_resource_discoveries",
+    "describe_ipam_resource_discovery_associations",
     "describe_ipam_scopes",
     "describe_ipams",
     "describe_ipv6_pools",
@@ -8418,6 +8572,8 @@ PaginatorName = Literal[
     "get_groups_for_capacity_reservation",
     "get_instance_types_from_instance_requirements",
     "get_ipam_address_history",
+    "get_ipam_discovered_accounts",
+    "get_ipam_discovered_resource_cidrs",
     "get_ipam_pool_allocations",
     "get_ipam_pool_cidrs",
     "get_ipam_resource_cidrs",

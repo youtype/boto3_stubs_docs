@@ -59,7 +59,7 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 ### assume\_role
 
 Returns a set of temporary security credentials that you can use to access
-Amazon Web Services resources that you might not normally have access to.
+Amazon Web Services resources.
 
 Type annotations and code completion for `#!python boto3.client("sts").assume_role` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)

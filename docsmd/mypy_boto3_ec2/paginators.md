@@ -2300,6 +2300,130 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeIpamPoolsRequestDescribeIpamPoolsPaginateTypeDef](./type_defs.md#describeipampoolsrequestdescribeipampoolspaginatetypedef) 
+## DescribeIpamResourceDiscoveriesPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_ipam_resource_discoveries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamResourceDiscoveries)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpamResourceDiscoveriesPaginator
+
+def get_describe_ipam_resource_discoveries_paginator() -> DescribeIpamResourceDiscoveriesPaginator:
+    return Session().client("ec2").get_paginator("describe_ipam_resource_discoveries")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpamResourceDiscoveriesPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeIpamResourceDiscoveriesPaginator = client.get_paginator("describe_ipam_resource_discoveries")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeIpamResourceDiscoveriesPaginator](./paginators.md#describeipamresourcediscoveriespaginator)
+3. item: [:material-code-braces: DescribeIpamResourceDiscoveriesResultTypeDef](./type_defs.md#describeipamresourcediscoveriesresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeIpamResourceDiscoveriesPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    IpamResourceDiscoveryIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeIpamResourceDiscoveriesResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeIpamResourceDiscoveriesResultTypeDef](./type_defs.md#describeipamresourcediscoveriesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpamResourceDiscoveriesRequestDescribeIpamResourceDiscoveriesPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpamResourceDiscoveriesRequestDescribeIpamResourceDiscoveriesPaginateTypeDef](./type_defs.md#describeipamresourcediscoveriesrequestdescribeipamresourcediscoveriespaginatetypedef) 
+## DescribeIpamResourceDiscoveryAssociationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_ipam_resource_discovery_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeIpamResourceDiscoveryAssociations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpamResourceDiscoveryAssociationsPaginator
+
+def get_describe_ipam_resource_discovery_associations_paginator() -> DescribeIpamResourceDiscoveryAssociationsPaginator:
+    return Session().client("ec2").get_paginator("describe_ipam_resource_discovery_associations")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import DescribeIpamResourceDiscoveryAssociationsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: DescribeIpamResourceDiscoveryAssociationsPaginator = client.get_paginator("describe_ipam_resource_discovery_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [DescribeIpamResourceDiscoveryAssociationsPaginator](./paginators.md#describeipamresourcediscoveryassociationspaginator)
+3. item: [:material-code-braces: DescribeIpamResourceDiscoveryAssociationsResultTypeDef](./type_defs.md#describeipamresourcediscoveryassociationsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python DescribeIpamResourceDiscoveryAssociationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DryRun: bool = ...,
+    IpamResourceDiscoveryAssociationIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeIpamResourceDiscoveryAssociationsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeIpamResourceDiscoveryAssociationsResultTypeDef](./type_defs.md#describeipamresourcediscoveryassociationsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpamResourceDiscoveryAssociationsRequestDescribeIpamResourceDiscoveryAssociationsPaginateTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpamResourceDiscoveryAssociationsRequestDescribeIpamResourceDiscoveryAssociationsPaginateTypeDef](./type_defs.md#describeipamresourcediscoveryassociationsrequestdescribeipamresourcediscoveryassociationspaginatetypedef) 
 ## DescribeIpamScopesPaginator
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("describe_ipam_scopes")`.
@@ -7170,6 +7294,134 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: GetIpamAddressHistoryRequestGetIpamAddressHistoryPaginateTypeDef](./type_defs.md#getipamaddresshistoryrequestgetipamaddresshistorypaginatetypedef) 
+## GetIpamDiscoveredAccountsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_ipam_discovered_accounts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamDiscoveredAccounts)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamDiscoveredAccountsPaginator
+
+def get_get_ipam_discovered_accounts_paginator() -> GetIpamDiscoveredAccountsPaginator:
+    return Session().client("ec2").get_paginator("get_ipam_discovered_accounts")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamDiscoveredAccountsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetIpamDiscoveredAccountsPaginator = client.get_paginator("get_ipam_discovered_accounts")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetIpamDiscoveredAccountsPaginator](./paginators.md#getipamdiscoveredaccountspaginator)
+3. item: [:material-code-braces: GetIpamDiscoveredAccountsResultTypeDef](./type_defs.md#getipamdiscoveredaccountsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python GetIpamDiscoveredAccountsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    IpamResourceDiscoveryId: str,
+    DiscoveryRegion: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetIpamDiscoveredAccountsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetIpamDiscoveredAccountsResultTypeDef](./type_defs.md#getipamdiscoveredaccountsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamDiscoveredAccountsRequestGetIpamDiscoveredAccountsPaginateTypeDef = {  # (1)
+    "IpamResourceDiscoveryId": ...,
+    "DiscoveryRegion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamDiscoveredAccountsRequestGetIpamDiscoveredAccountsPaginateTypeDef](./type_defs.md#getipamdiscoveredaccountsrequestgetipamdiscoveredaccountspaginatetypedef) 
+## GetIpamDiscoveredResourceCidrsPaginator
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_ipam_discovered_resource_cidrs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetIpamDiscoveredResourceCidrs)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamDiscoveredResourceCidrsPaginator
+
+def get_get_ipam_discovered_resource_cidrs_paginator() -> GetIpamDiscoveredResourceCidrsPaginator:
+    return Session().client("ec2").get_paginator("get_ipam_discovered_resource_cidrs")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.paginator import GetIpamDiscoveredResourceCidrsPaginator
+
+session = Session()
+
+client = Session().client("ec2")  # (1)
+paginator: GetIpamDiscoveredResourceCidrsPaginator = client.get_paginator("get_ipam_discovered_resource_cidrs")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [EC2Client](./client.md)
+2. paginator: [GetIpamDiscoveredResourceCidrsPaginator](./paginators.md#getipamdiscoveredresourcecidrspaginator)
+3. item: [:material-code-braces: GetIpamDiscoveredResourceCidrsResultTypeDef](./type_defs.md#getipamdiscoveredresourcecidrsresulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python GetIpamDiscoveredResourceCidrsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    IpamResourceDiscoveryId: str,
+    ResourceRegion: str,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetIpamDiscoveredResourceCidrsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetIpamDiscoveredResourceCidrsResultTypeDef](./type_defs.md#getipamdiscoveredresourcecidrsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetIpamDiscoveredResourceCidrsRequestGetIpamDiscoveredResourceCidrsPaginateTypeDef = {  # (1)
+    "IpamResourceDiscoveryId": ...,
+    "ResourceRegion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIpamDiscoveredResourceCidrsRequestGetIpamDiscoveredResourceCidrsPaginateTypeDef](./type_defs.md#getipamdiscoveredresourcecidrsrequestgetipamdiscoveredresourcecidrspaginatetypedef) 
 ## GetIpamPoolAllocationsPaginator
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_paginator("get_ipam_pool_allocations")`.

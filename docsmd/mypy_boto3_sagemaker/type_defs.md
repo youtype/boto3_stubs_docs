@@ -5596,6 +5596,8 @@ class RecommendationMetricsTypeDef(TypedDict):
     CostPerInference: float,
     MaxInvocations: int,
     ModelLatency: int,
+    CpuUtilization: NotRequired[float],
+    MemoryUtilization: NotRequired[float],
 ```
 
 ## InferenceRecommendationsJobTypeDef
@@ -15575,6 +15577,7 @@ def get_value() -> ModelConfigurationTypeDef:
 class ModelConfigurationTypeDef(TypedDict):
     InferenceSpecificationName: NotRequired[str],
     EnvironmentParameters: NotRequired[List[EnvironmentParameterTypeDef]],  # (1)
+    CompilationJobName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: EnvironmentParameterTypeDef](./type_defs.md#environmentparametertypedef) 
@@ -18948,6 +18951,7 @@ class RecommendationJobContainerConfigTypeDef(TypedDict):
     PayloadConfig: NotRequired[RecommendationJobPayloadConfigTypeDef],  # (1)
     NearestModelName: NotRequired[str],
     SupportedInstanceTypes: NotRequired[Sequence[str]],
+    DataInputConfig: NotRequired[str],
 ```
 
 1. See [:material-code-braces: RecommendationJobPayloadConfigTypeDef](./type_defs.md#recommendationjobpayloadconfigtypedef) 
@@ -20042,6 +20046,7 @@ class InferenceRecommendationTypeDef(TypedDict):
     Metrics: RecommendationMetricsTypeDef,  # (1)
     EndpointConfiguration: EndpointOutputConfigurationTypeDef,  # (2)
     ModelConfiguration: ModelConfigurationTypeDef,  # (3)
+    RecommendationId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: RecommendationMetricsTypeDef](./type_defs.md#recommendationmetricstypedef) 
@@ -21391,7 +21396,7 @@ def get_value() -> RecommendationJobInputConfigTypeDef:
 
 ```python title="Definition"
 class RecommendationJobInputConfigTypeDef(TypedDict):
-    ModelPackageVersionArn: str,
+    ModelPackageVersionArn: NotRequired[str],
     JobDurationInSeconds: NotRequired[int],
     TrafficPattern: NotRequired[TrafficPatternTypeDef],  # (1)
     ResourceLimit: NotRequired[RecommendationJobResourceLimitTypeDef],  # (2)
@@ -21400,6 +21405,7 @@ class RecommendationJobInputConfigTypeDef(TypedDict):
     ContainerConfig: NotRequired[RecommendationJobContainerConfigTypeDef],  # (4)
     Endpoints: NotRequired[Sequence[EndpointInfoTypeDef]],  # (5)
     VpcConfig: NotRequired[RecommendationJobVpcConfigTypeDef],  # (6)
+    ModelName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TrafficPatternTypeDef](./type_defs.md#trafficpatterntypedef) 
