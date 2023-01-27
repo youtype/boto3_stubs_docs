@@ -40739,6 +40739,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#trainingjobearlystoppingtypetype">TrainingJobEarlyStoppingTypeType</a></li>
 <li><a href="literals/#trainingjobsortbyoptionstype">TrainingJobSortByOptionsType</a></li>
 <li><a href="literals/#trainingjobstatustype">TrainingJobStatusType</a></li>
+<li><a href="literals/#trainingrepositoryaccessmodetype">TrainingRepositoryAccessModeType</a></li>
 <li><a href="literals/#transforminstancetypetype">TransformInstanceTypeType</a></li>
 <li><a href="literals/#transformjobcompletedorstoppedwaitername">TransformJobCompletedOrStoppedWaiterName</a></li>
 <li><a href="literals/#transformjobstatustype">TransformJobStatusType</a></li>
@@ -41245,6 +41246,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#stopprocessingjobrequestrequesttypedef">StopProcessingJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stoptrainingjobrequestrequesttypedef">StopTrainingJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stoptransformjobrequestrequesttypedef">StopTransformJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#trainingrepositoryauthconfigtypedef">TrainingRepositoryAuthConfigTypeDef</a></li>
 <li><a href="type_defs/#transforms3datasourcetypedef">TransformS3DataSourceTypeDef</a></li>
 <li><a href="type_defs/#updateactionrequestrequesttypedef">UpdateActionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateartifactrequestrequesttypedef">UpdateArtifactRequestRequestTypeDef</a></li>
@@ -41375,7 +41377,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#importhubcontentrequestrequesttypedef">ImportHubContentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listtagsoutputtypedef">ListTagsOutputTypeDef</a></li>
 <li><a href="type_defs/#autorollbackconfigtypedef">AutoRollbackConfigTypeDef</a></li>
-<li><a href="type_defs/#algorithmspecificationtypedef">AlgorithmSpecificationTypeDef</a></li>
 <li><a href="type_defs/#hyperparameteralgorithmspecificationtypedef">HyperParameterAlgorithmSpecificationTypeDef</a></li>
 <li><a href="type_defs/#algorithmstatusdetailstypedef">AlgorithmStatusDetailsTypeDef</a></li>
 <li><a href="type_defs/#listalgorithmsoutputtypedef">ListAlgorithmsOutputTypeDef</a></li>
@@ -41669,6 +41670,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatetrainingjobrequestrequesttypedef">UpdateTrainingJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#shadowmodeconfigtypedef">ShadowModeConfigTypeDef</a></li>
 <li><a href="type_defs/#sourcealgorithmspecificationtypedef">SourceAlgorithmSpecificationTypeDef</a></li>
+<li><a href="type_defs/#trainingimageconfigtypedef">TrainingImageConfigTypeDef</a></li>
 <li><a href="type_defs/#transformdatasourcetypedef">TransformDataSourceTypeDef</a></li>
 <li><a href="type_defs/#workforcetypedef">WorkforceTypeDef</a></li>
 <li><a href="type_defs/#listactionsresponsetypedef">ListActionsResponseTypeDef</a></li>
@@ -41749,6 +41751,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updateprojectinputrequesttypedef">UpdateProjectInputRequestTypeDef</a></li>
 <li><a href="type_defs/#humanloopconfigtypedef">HumanLoopConfigTypeDef</a></li>
 <li><a href="type_defs/#humantaskconfigtypedef">HumanTaskConfigTypeDef</a></li>
+<li><a href="type_defs/#algorithmspecificationtypedef">AlgorithmSpecificationTypeDef</a></li>
 <li><a href="type_defs/#transforminputtypedef">TransformInputTypeDef</a></li>
 <li><a href="type_defs/#describeworkforceresponsetypedef">DescribeWorkforceResponseTypeDef</a></li>
 <li><a href="type_defs/#listworkforcesresponsetypedef">ListWorkforcesResponseTypeDef</a></li>
@@ -41770,11 +41773,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeuserprofileresponsetypedef">DescribeUserProfileResponseTypeDef</a></li>
 <li><a href="type_defs/#updatedomainrequestrequesttypedef">UpdateDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateuserprofilerequestrequesttypedef">UpdateUserProfileRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createtrainingjobrequestrequesttypedef">CreateTrainingJobRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#describetrainingjobresponsetypedef">DescribeTrainingJobResponseTypeDef</a></li>
 <li><a href="type_defs/#hyperparametertrainingjobdefinitiontypedef">HyperParameterTrainingJobDefinitionTypeDef</a></li>
 <li><a href="type_defs/#trainingjobdefinitiontypedef">TrainingJobDefinitionTypeDef</a></li>
-<li><a href="type_defs/#trainingjobtypedef">TrainingJobTypeDef</a></li>
 <li><a href="type_defs/#inferencerecommendationsjobsteptypedef">InferenceRecommendationsJobStepTypeDef</a></li>
 <li><a href="type_defs/#createmodelinputrequesttypedef">CreateModelInputRequestTypeDef</a></li>
 <li><a href="type_defs/#describemodeloutputtypedef">DescribeModelOutputTypeDef</a></li>
@@ -41804,6 +41804,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describeflowdefinitionresponsetypedef">DescribeFlowDefinitionResponseTypeDef</a></li>
 <li><a href="type_defs/#createlabelingjobrequestrequesttypedef">CreateLabelingJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describelabelingjobresponsetypedef">DescribeLabelingJobResponseTypeDef</a></li>
+<li><a href="type_defs/#createtrainingjobrequestrequesttypedef">CreateTrainingJobRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describetrainingjobresponsetypedef">DescribeTrainingJobResponseTypeDef</a></li>
+<li><a href="type_defs/#trainingjobtypedef">TrainingJobTypeDef</a></li>
 <li><a href="type_defs/#createtransformjobrequestrequesttypedef">CreateTransformJobRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describetransformjobresponsetypedef">DescribeTransformJobResponseTypeDef</a></li>
 <li><a href="type_defs/#transformjobdefinitiontypedef">TransformJobDefinitionTypeDef</a></li>

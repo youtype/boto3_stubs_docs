@@ -5131,6 +5131,21 @@ TrainingJobStatusType = Literal[
     "Stopping",
 ]
 ```
+## TrainingRepositoryAccessModeType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import TrainingRepositoryAccessModeType
+
+def get_value() -> TrainingRepositoryAccessModeType:
+    return "Platform"
+```
+
+```python title="Definition"
+TrainingRepositoryAccessModeType = Literal[
+    "Platform",
+    "Vpc",
+]
+```
 ## TransformInstanceTypeType
 
 ```python title="Usage Example"

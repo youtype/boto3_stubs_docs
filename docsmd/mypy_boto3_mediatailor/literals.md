@@ -149,6 +149,20 @@ ListVodSourcesPaginatorName = Literal[
     "list_vod_sources",
 ]
 ```
+## LogTypeType
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.literals import LogTypeType
+
+def get_value() -> LogTypeType:
+    return "AS_RUN"
+```
+
+```python title="Definition"
+LogTypeType = Literal[
+    "AS_RUN",
+]
+```
 ## MessageTypeType
 
 ```python title="Usage Example"

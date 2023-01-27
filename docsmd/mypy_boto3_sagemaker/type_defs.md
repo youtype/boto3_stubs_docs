@@ -9369,6 +9369,22 @@ class StopTransformJobRequestRequestTypeDef(TypedDict):
     TransformJobName: str,
 ```
 
+## TrainingRepositoryAuthConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrainingRepositoryAuthConfigTypeDef
+
+def get_value() -> TrainingRepositoryAuthConfigTypeDef:
+    return {
+        "TrainingRepositoryCredentialsProviderArn": ...,
+    }
+```
+
+```python title="Definition"
+class TrainingRepositoryAuthConfigTypeDef(TypedDict):
+    TrainingRepositoryCredentialsProviderArn: str,
+```
+
 ## TransformS3DataSourceTypeDef
 
 ```python title="Usage Example"
@@ -11964,30 +11980,6 @@ class AutoRollbackConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
-## AlgorithmSpecificationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import AlgorithmSpecificationTypeDef
-
-def get_value() -> AlgorithmSpecificationTypeDef:
-    return {
-        "TrainingInputMode": ...,
-    }
-```
-
-```python title="Definition"
-class AlgorithmSpecificationTypeDef(TypedDict):
-    TrainingInputMode: TrainingInputModeType,  # (1)
-    TrainingImage: NotRequired[str],
-    AlgorithmName: NotRequired[str],
-    MetricDefinitions: NotRequired[Sequence[MetricDefinitionTypeDef]],  # (2)
-    EnableSageMakerMetricsTimeSeries: NotRequired[bool],
-    ContainerEntrypoint: NotRequired[Sequence[str]],
-    ContainerArguments: NotRequired[Sequence[str]],
-```
-
-1. See [:material-code-brackets: TrainingInputModeType](./literals.md#traininginputmodetype) 
-2. See [:material-code-braces: MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef) 
 ## HyperParameterAlgorithmSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -19057,6 +19049,25 @@ class SourceAlgorithmSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SourceAlgorithmTypeDef](./type_defs.md#sourcealgorithmtypedef) 
+## TrainingImageConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrainingImageConfigTypeDef
+
+def get_value() -> TrainingImageConfigTypeDef:
+    return {
+        "TrainingRepositoryAccessMode": ...,
+    }
+```
+
+```python title="Definition"
+class TrainingImageConfigTypeDef(TypedDict):
+    TrainingRepositoryAccessMode: TrainingRepositoryAccessModeType,  # (1)
+    TrainingRepositoryAuthConfig: NotRequired[TrainingRepositoryAuthConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TrainingRepositoryAccessModeType](./literals.md#trainingrepositoryaccessmodetype) 
+2. See [:material-code-braces: TrainingRepositoryAuthConfigTypeDef](./type_defs.md#trainingrepositoryauthconfigtypedef) 
 ## TransformDataSourceTypeDef
 
 ```python title="Usage Example"
@@ -21101,6 +21112,32 @@ class HumanTaskConfigTypeDef(TypedDict):
 1. See [:material-code-braces: UiConfigTypeDef](./type_defs.md#uiconfigtypedef) 
 2. See [:material-code-braces: AnnotationConsolidationConfigTypeDef](./type_defs.md#annotationconsolidationconfigtypedef) 
 3. See [:material-code-braces: PublicWorkforceTaskPriceTypeDef](./type_defs.md#publicworkforcetaskpricetypedef) 
+## AlgorithmSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import AlgorithmSpecificationTypeDef
+
+def get_value() -> AlgorithmSpecificationTypeDef:
+    return {
+        "TrainingInputMode": ...,
+    }
+```
+
+```python title="Definition"
+class AlgorithmSpecificationTypeDef(TypedDict):
+    TrainingInputMode: TrainingInputModeType,  # (1)
+    TrainingImage: NotRequired[str],
+    AlgorithmName: NotRequired[str],
+    MetricDefinitions: NotRequired[Sequence[MetricDefinitionTypeDef]],  # (2)
+    EnableSageMakerMetricsTimeSeries: NotRequired[bool],
+    ContainerEntrypoint: NotRequired[Sequence[str]],
+    ContainerArguments: NotRequired[Sequence[str]],
+    TrainingImageConfig: NotRequired[TrainingImageConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: TrainingInputModeType](./literals.md#traininginputmodetype) 
+2. See [:material-code-braces: MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef) 
+3. See [:material-code-braces: TrainingImageConfigTypeDef](./type_defs.md#trainingimageconfigtypedef) 
 ## TransformInputTypeDef
 
 ```python title="Usage Example"
@@ -21723,185 +21760,6 @@ class UpdateUserProfileRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
-## CreateTrainingJobRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import CreateTrainingJobRequestRequestTypeDef
-
-def get_value() -> CreateTrainingJobRequestRequestTypeDef:
-    return {
-        "TrainingJobName": ...,
-        "AlgorithmSpecification": ...,
-        "RoleArn": ...,
-        "OutputDataConfig": ...,
-        "ResourceConfig": ...,
-        "StoppingCondition": ...,
-    }
-```
-
-```python title="Definition"
-class CreateTrainingJobRequestRequestTypeDef(TypedDict):
-    TrainingJobName: str,
-    AlgorithmSpecification: AlgorithmSpecificationTypeDef,  # (1)
-    RoleArn: str,
-    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
-    ResourceConfig: ResourceConfigTypeDef,  # (3)
-    StoppingCondition: StoppingConditionTypeDef,  # (4)
-    HyperParameters: NotRequired[Mapping[str, str]],
-    InputDataConfig: NotRequired[Sequence[ChannelTypeDef]],  # (5)
-    VpcConfig: NotRequired[VpcConfigTypeDef],  # (6)
-    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
-    EnableNetworkIsolation: NotRequired[bool],
-    EnableInterContainerTrafficEncryption: NotRequired[bool],
-    EnableManagedSpotTraining: NotRequired[bool],
-    CheckpointConfig: NotRequired[CheckpointConfigTypeDef],  # (8)
-    DebugHookConfig: NotRequired[DebugHookConfigTypeDef],  # (9)
-    DebugRuleConfigurations: NotRequired[Sequence[DebugRuleConfigurationTypeDef]],  # (10)
-    TensorBoardOutputConfig: NotRequired[TensorBoardOutputConfigTypeDef],  # (11)
-    ExperimentConfig: NotRequired[ExperimentConfigTypeDef],  # (12)
-    ProfilerConfig: NotRequired[ProfilerConfigTypeDef],  # (13)
-    ProfilerRuleConfigurations: NotRequired[Sequence[ProfilerRuleConfigurationTypeDef]],  # (14)
-    Environment: NotRequired[Mapping[str, str]],
-    RetryStrategy: NotRequired[RetryStrategyTypeDef],  # (15)
-```
-
-1. See [:material-code-braces: AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef) 
-2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
-3. See [:material-code-braces: ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef) 
-4. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
-5. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-6. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
-7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-8. See [:material-code-braces: CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef) 
-9. See [:material-code-braces: DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef) 
-10. See [:material-code-braces: DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef) 
-11. See [:material-code-braces: TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef) 
-12. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
-13. See [:material-code-braces: ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef) 
-14. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
-15. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
-## DescribeTrainingJobResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import DescribeTrainingJobResponseTypeDef
-
-def get_value() -> DescribeTrainingJobResponseTypeDef:
-    return {
-        "TrainingJobName": ...,
-        "TrainingJobArn": ...,
-        "TuningJobArn": ...,
-        "LabelingJobArn": ...,
-        "AutoMLJobArn": ...,
-        "ModelArtifacts": ...,
-        "TrainingJobStatus": ...,
-        "SecondaryStatus": ...,
-        "FailureReason": ...,
-        "HyperParameters": ...,
-        "AlgorithmSpecification": ...,
-        "RoleArn": ...,
-        "InputDataConfig": ...,
-        "OutputDataConfig": ...,
-        "ResourceConfig": ...,
-        "VpcConfig": ...,
-        "StoppingCondition": ...,
-        "CreationTime": ...,
-        "TrainingStartTime": ...,
-        "TrainingEndTime": ...,
-        "LastModifiedTime": ...,
-        "SecondaryStatusTransitions": ...,
-        "FinalMetricDataList": ...,
-        "EnableNetworkIsolation": ...,
-        "EnableInterContainerTrafficEncryption": ...,
-        "EnableManagedSpotTraining": ...,
-        "CheckpointConfig": ...,
-        "TrainingTimeInSeconds": ...,
-        "BillableTimeInSeconds": ...,
-        "DebugHookConfig": ...,
-        "ExperimentConfig": ...,
-        "DebugRuleConfigurations": ...,
-        "TensorBoardOutputConfig": ...,
-        "DebugRuleEvaluationStatuses": ...,
-        "ProfilerConfig": ...,
-        "ProfilerRuleConfigurations": ...,
-        "ProfilerRuleEvaluationStatuses": ...,
-        "ProfilingStatus": ...,
-        "RetryStrategy": ...,
-        "Environment": ...,
-        "WarmPoolStatus": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeTrainingJobResponseTypeDef(TypedDict):
-    TrainingJobName: str,
-    TrainingJobArn: str,
-    TuningJobArn: str,
-    LabelingJobArn: str,
-    AutoMLJobArn: str,
-    ModelArtifacts: ModelArtifactsTypeDef,  # (1)
-    TrainingJobStatus: TrainingJobStatusType,  # (2)
-    SecondaryStatus: SecondaryStatusType,  # (3)
-    FailureReason: str,
-    HyperParameters: Dict[str, str],
-    AlgorithmSpecification: AlgorithmSpecificationTypeDef,  # (4)
-    RoleArn: str,
-    InputDataConfig: List[ChannelTypeDef],  # (5)
-    OutputDataConfig: OutputDataConfigTypeDef,  # (6)
-    ResourceConfig: ResourceConfigTypeDef,  # (7)
-    VpcConfig: VpcConfigTypeDef,  # (8)
-    StoppingCondition: StoppingConditionTypeDef,  # (9)
-    CreationTime: datetime,
-    TrainingStartTime: datetime,
-    TrainingEndTime: datetime,
-    LastModifiedTime: datetime,
-    SecondaryStatusTransitions: List[SecondaryStatusTransitionTypeDef],  # (10)
-    FinalMetricDataList: List[MetricDataTypeDef],  # (11)
-    EnableNetworkIsolation: bool,
-    EnableInterContainerTrafficEncryption: bool,
-    EnableManagedSpotTraining: bool,
-    CheckpointConfig: CheckpointConfigTypeDef,  # (12)
-    TrainingTimeInSeconds: int,
-    BillableTimeInSeconds: int,
-    DebugHookConfig: DebugHookConfigTypeDef,  # (13)
-    ExperimentConfig: ExperimentConfigTypeDef,  # (14)
-    DebugRuleConfigurations: List[DebugRuleConfigurationTypeDef],  # (15)
-    TensorBoardOutputConfig: TensorBoardOutputConfigTypeDef,  # (16)
-    DebugRuleEvaluationStatuses: List[DebugRuleEvaluationStatusTypeDef],  # (17)
-    ProfilerConfig: ProfilerConfigTypeDef,  # (18)
-    ProfilerRuleConfigurations: List[ProfilerRuleConfigurationTypeDef],  # (19)
-    ProfilerRuleEvaluationStatuses: List[ProfilerRuleEvaluationStatusTypeDef],  # (20)
-    ProfilingStatus: ProfilingStatusType,  # (21)
-    RetryStrategy: RetryStrategyTypeDef,  # (22)
-    Environment: Dict[str, str],
-    WarmPoolStatus: WarmPoolStatusTypeDef,  # (23)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (24)
-```
-
-1. See [:material-code-braces: ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef) 
-2. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
-3. See [:material-code-brackets: SecondaryStatusType](./literals.md#secondarystatustype) 
-4. See [:material-code-braces: AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef) 
-5. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-6. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
-7. See [:material-code-braces: ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef) 
-8. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
-9. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
-10. See [:material-code-braces: SecondaryStatusTransitionTypeDef](./type_defs.md#secondarystatustransitiontypedef) 
-11. See [:material-code-braces: MetricDataTypeDef](./type_defs.md#metricdatatypedef) 
-12. See [:material-code-braces: CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef) 
-13. See [:material-code-braces: DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef) 
-14. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
-15. See [:material-code-braces: DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef) 
-16. See [:material-code-braces: TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef) 
-17. See [:material-code-braces: DebugRuleEvaluationStatusTypeDef](./type_defs.md#debugruleevaluationstatustypedef) 
-18. See [:material-code-braces: ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef) 
-19. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
-20. See [:material-code-braces: ProfilerRuleEvaluationStatusTypeDef](./type_defs.md#profilerruleevaluationstatustypedef) 
-21. See [:material-code-brackets: ProfilingStatusType](./literals.md#profilingstatustype) 
-22. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
-23. See [:material-code-braces: WarmPoolStatusTypeDef](./type_defs.md#warmpoolstatustypedef) 
-24. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HyperParameterTrainingJobDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -21979,77 +21837,6 @@ class TrainingJobDefinitionTypeDef(TypedDict):
 3. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
 4. See [:material-code-braces: ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef) 
 5. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
-## TrainingJobTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import TrainingJobTypeDef
-
-def get_value() -> TrainingJobTypeDef:
-    return {
-        "TrainingJobName": ...,
-    }
-```
-
-```python title="Definition"
-class TrainingJobTypeDef(TypedDict):
-    TrainingJobName: NotRequired[str],
-    TrainingJobArn: NotRequired[str],
-    TuningJobArn: NotRequired[str],
-    LabelingJobArn: NotRequired[str],
-    AutoMLJobArn: NotRequired[str],
-    ModelArtifacts: NotRequired[ModelArtifactsTypeDef],  # (1)
-    TrainingJobStatus: NotRequired[TrainingJobStatusType],  # (2)
-    SecondaryStatus: NotRequired[SecondaryStatusType],  # (3)
-    FailureReason: NotRequired[str],
-    HyperParameters: NotRequired[Dict[str, str]],
-    AlgorithmSpecification: NotRequired[AlgorithmSpecificationTypeDef],  # (4)
-    RoleArn: NotRequired[str],
-    InputDataConfig: NotRequired[List[ChannelTypeDef]],  # (5)
-    OutputDataConfig: NotRequired[OutputDataConfigTypeDef],  # (6)
-    ResourceConfig: NotRequired[ResourceConfigTypeDef],  # (7)
-    VpcConfig: NotRequired[VpcConfigTypeDef],  # (8)
-    StoppingCondition: NotRequired[StoppingConditionTypeDef],  # (9)
-    CreationTime: NotRequired[datetime],
-    TrainingStartTime: NotRequired[datetime],
-    TrainingEndTime: NotRequired[datetime],
-    LastModifiedTime: NotRequired[datetime],
-    SecondaryStatusTransitions: NotRequired[List[SecondaryStatusTransitionTypeDef]],  # (10)
-    FinalMetricDataList: NotRequired[List[MetricDataTypeDef]],  # (11)
-    EnableNetworkIsolation: NotRequired[bool],
-    EnableInterContainerTrafficEncryption: NotRequired[bool],
-    EnableManagedSpotTraining: NotRequired[bool],
-    CheckpointConfig: NotRequired[CheckpointConfigTypeDef],  # (12)
-    TrainingTimeInSeconds: NotRequired[int],
-    BillableTimeInSeconds: NotRequired[int],
-    DebugHookConfig: NotRequired[DebugHookConfigTypeDef],  # (13)
-    ExperimentConfig: NotRequired[ExperimentConfigTypeDef],  # (14)
-    DebugRuleConfigurations: NotRequired[List[DebugRuleConfigurationTypeDef]],  # (15)
-    TensorBoardOutputConfig: NotRequired[TensorBoardOutputConfigTypeDef],  # (16)
-    DebugRuleEvaluationStatuses: NotRequired[List[DebugRuleEvaluationStatusTypeDef]],  # (17)
-    Environment: NotRequired[Dict[str, str]],
-    RetryStrategy: NotRequired[RetryStrategyTypeDef],  # (18)
-    Tags: NotRequired[List[TagTypeDef]],  # (19)
-```
-
-1. See [:material-code-braces: ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef) 
-2. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
-3. See [:material-code-brackets: SecondaryStatusType](./literals.md#secondarystatustype) 
-4. See [:material-code-braces: AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef) 
-5. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
-6. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
-7. See [:material-code-braces: ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef) 
-8. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
-9. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
-10. See [:material-code-braces: SecondaryStatusTransitionTypeDef](./type_defs.md#secondarystatustransitiontypedef) 
-11. See [:material-code-braces: MetricDataTypeDef](./type_defs.md#metricdatatypedef) 
-12. See [:material-code-braces: CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef) 
-13. See [:material-code-braces: DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef) 
-14. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
-15. See [:material-code-braces: DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef) 
-16. See [:material-code-braces: TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef) 
-17. See [:material-code-braces: DebugRuleEvaluationStatusTypeDef](./type_defs.md#debugruleevaluationstatustypedef) 
-18. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
-19. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## InferenceRecommendationsJobStepTypeDef
 
 ```python title="Usage Example"
@@ -22960,6 +22747,256 @@ class DescribeLabelingJobResponseTypeDef(TypedDict):
 8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 9. See [:material-code-braces: LabelingJobOutputTypeDef](./type_defs.md#labelingjoboutputtypedef) 
 10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateTrainingJobRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import CreateTrainingJobRequestRequestTypeDef
+
+def get_value() -> CreateTrainingJobRequestRequestTypeDef:
+    return {
+        "TrainingJobName": ...,
+        "AlgorithmSpecification": ...,
+        "RoleArn": ...,
+        "OutputDataConfig": ...,
+        "ResourceConfig": ...,
+        "StoppingCondition": ...,
+    }
+```
+
+```python title="Definition"
+class CreateTrainingJobRequestRequestTypeDef(TypedDict):
+    TrainingJobName: str,
+    AlgorithmSpecification: AlgorithmSpecificationTypeDef,  # (1)
+    RoleArn: str,
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    ResourceConfig: ResourceConfigTypeDef,  # (3)
+    StoppingCondition: StoppingConditionTypeDef,  # (4)
+    HyperParameters: NotRequired[Mapping[str, str]],
+    InputDataConfig: NotRequired[Sequence[ChannelTypeDef]],  # (5)
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (6)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
+    EnableNetworkIsolation: NotRequired[bool],
+    EnableInterContainerTrafficEncryption: NotRequired[bool],
+    EnableManagedSpotTraining: NotRequired[bool],
+    CheckpointConfig: NotRequired[CheckpointConfigTypeDef],  # (8)
+    DebugHookConfig: NotRequired[DebugHookConfigTypeDef],  # (9)
+    DebugRuleConfigurations: NotRequired[Sequence[DebugRuleConfigurationTypeDef]],  # (10)
+    TensorBoardOutputConfig: NotRequired[TensorBoardOutputConfigTypeDef],  # (11)
+    ExperimentConfig: NotRequired[ExperimentConfigTypeDef],  # (12)
+    ProfilerConfig: NotRequired[ProfilerConfigTypeDef],  # (13)
+    ProfilerRuleConfigurations: NotRequired[Sequence[ProfilerRuleConfigurationTypeDef]],  # (14)
+    Environment: NotRequired[Mapping[str, str]],
+    RetryStrategy: NotRequired[RetryStrategyTypeDef],  # (15)
+```
+
+1. See [:material-code-braces: AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef) 
+4. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
+5. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+6. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-braces: CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef) 
+9. See [:material-code-braces: DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef) 
+10. See [:material-code-braces: DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef) 
+11. See [:material-code-braces: TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef) 
+12. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
+13. See [:material-code-braces: ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef) 
+14. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
+15. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
+## DescribeTrainingJobResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import DescribeTrainingJobResponseTypeDef
+
+def get_value() -> DescribeTrainingJobResponseTypeDef:
+    return {
+        "TrainingJobName": ...,
+        "TrainingJobArn": ...,
+        "TuningJobArn": ...,
+        "LabelingJobArn": ...,
+        "AutoMLJobArn": ...,
+        "ModelArtifacts": ...,
+        "TrainingJobStatus": ...,
+        "SecondaryStatus": ...,
+        "FailureReason": ...,
+        "HyperParameters": ...,
+        "AlgorithmSpecification": ...,
+        "RoleArn": ...,
+        "InputDataConfig": ...,
+        "OutputDataConfig": ...,
+        "ResourceConfig": ...,
+        "VpcConfig": ...,
+        "StoppingCondition": ...,
+        "CreationTime": ...,
+        "TrainingStartTime": ...,
+        "TrainingEndTime": ...,
+        "LastModifiedTime": ...,
+        "SecondaryStatusTransitions": ...,
+        "FinalMetricDataList": ...,
+        "EnableNetworkIsolation": ...,
+        "EnableInterContainerTrafficEncryption": ...,
+        "EnableManagedSpotTraining": ...,
+        "CheckpointConfig": ...,
+        "TrainingTimeInSeconds": ...,
+        "BillableTimeInSeconds": ...,
+        "DebugHookConfig": ...,
+        "ExperimentConfig": ...,
+        "DebugRuleConfigurations": ...,
+        "TensorBoardOutputConfig": ...,
+        "DebugRuleEvaluationStatuses": ...,
+        "ProfilerConfig": ...,
+        "ProfilerRuleConfigurations": ...,
+        "ProfilerRuleEvaluationStatuses": ...,
+        "ProfilingStatus": ...,
+        "RetryStrategy": ...,
+        "Environment": ...,
+        "WarmPoolStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTrainingJobResponseTypeDef(TypedDict):
+    TrainingJobName: str,
+    TrainingJobArn: str,
+    TuningJobArn: str,
+    LabelingJobArn: str,
+    AutoMLJobArn: str,
+    ModelArtifacts: ModelArtifactsTypeDef,  # (1)
+    TrainingJobStatus: TrainingJobStatusType,  # (2)
+    SecondaryStatus: SecondaryStatusType,  # (3)
+    FailureReason: str,
+    HyperParameters: Dict[str, str],
+    AlgorithmSpecification: AlgorithmSpecificationTypeDef,  # (4)
+    RoleArn: str,
+    InputDataConfig: List[ChannelTypeDef],  # (5)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (6)
+    ResourceConfig: ResourceConfigTypeDef,  # (7)
+    VpcConfig: VpcConfigTypeDef,  # (8)
+    StoppingCondition: StoppingConditionTypeDef,  # (9)
+    CreationTime: datetime,
+    TrainingStartTime: datetime,
+    TrainingEndTime: datetime,
+    LastModifiedTime: datetime,
+    SecondaryStatusTransitions: List[SecondaryStatusTransitionTypeDef],  # (10)
+    FinalMetricDataList: List[MetricDataTypeDef],  # (11)
+    EnableNetworkIsolation: bool,
+    EnableInterContainerTrafficEncryption: bool,
+    EnableManagedSpotTraining: bool,
+    CheckpointConfig: CheckpointConfigTypeDef,  # (12)
+    TrainingTimeInSeconds: int,
+    BillableTimeInSeconds: int,
+    DebugHookConfig: DebugHookConfigTypeDef,  # (13)
+    ExperimentConfig: ExperimentConfigTypeDef,  # (14)
+    DebugRuleConfigurations: List[DebugRuleConfigurationTypeDef],  # (15)
+    TensorBoardOutputConfig: TensorBoardOutputConfigTypeDef,  # (16)
+    DebugRuleEvaluationStatuses: List[DebugRuleEvaluationStatusTypeDef],  # (17)
+    ProfilerConfig: ProfilerConfigTypeDef,  # (18)
+    ProfilerRuleConfigurations: List[ProfilerRuleConfigurationTypeDef],  # (19)
+    ProfilerRuleEvaluationStatuses: List[ProfilerRuleEvaluationStatusTypeDef],  # (20)
+    ProfilingStatus: ProfilingStatusType,  # (21)
+    RetryStrategy: RetryStrategyTypeDef,  # (22)
+    Environment: Dict[str, str],
+    WarmPoolStatus: WarmPoolStatusTypeDef,  # (23)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (24)
+```
+
+1. See [:material-code-braces: ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef) 
+2. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
+3. See [:material-code-brackets: SecondaryStatusType](./literals.md#secondarystatustype) 
+4. See [:material-code-braces: AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef) 
+5. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+6. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+7. See [:material-code-braces: ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef) 
+8. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+9. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
+10. See [:material-code-braces: SecondaryStatusTransitionTypeDef](./type_defs.md#secondarystatustransitiontypedef) 
+11. See [:material-code-braces: MetricDataTypeDef](./type_defs.md#metricdatatypedef) 
+12. See [:material-code-braces: CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef) 
+13. See [:material-code-braces: DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef) 
+14. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
+15. See [:material-code-braces: DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef) 
+16. See [:material-code-braces: TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef) 
+17. See [:material-code-braces: DebugRuleEvaluationStatusTypeDef](./type_defs.md#debugruleevaluationstatustypedef) 
+18. See [:material-code-braces: ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef) 
+19. See [:material-code-braces: ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef) 
+20. See [:material-code-braces: ProfilerRuleEvaluationStatusTypeDef](./type_defs.md#profilerruleevaluationstatustypedef) 
+21. See [:material-code-brackets: ProfilingStatusType](./literals.md#profilingstatustype) 
+22. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
+23. See [:material-code-braces: WarmPoolStatusTypeDef](./type_defs.md#warmpoolstatustypedef) 
+24. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TrainingJobTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TrainingJobTypeDef
+
+def get_value() -> TrainingJobTypeDef:
+    return {
+        "TrainingJobName": ...,
+    }
+```
+
+```python title="Definition"
+class TrainingJobTypeDef(TypedDict):
+    TrainingJobName: NotRequired[str],
+    TrainingJobArn: NotRequired[str],
+    TuningJobArn: NotRequired[str],
+    LabelingJobArn: NotRequired[str],
+    AutoMLJobArn: NotRequired[str],
+    ModelArtifacts: NotRequired[ModelArtifactsTypeDef],  # (1)
+    TrainingJobStatus: NotRequired[TrainingJobStatusType],  # (2)
+    SecondaryStatus: NotRequired[SecondaryStatusType],  # (3)
+    FailureReason: NotRequired[str],
+    HyperParameters: NotRequired[Dict[str, str]],
+    AlgorithmSpecification: NotRequired[AlgorithmSpecificationTypeDef],  # (4)
+    RoleArn: NotRequired[str],
+    InputDataConfig: NotRequired[List[ChannelTypeDef]],  # (5)
+    OutputDataConfig: NotRequired[OutputDataConfigTypeDef],  # (6)
+    ResourceConfig: NotRequired[ResourceConfigTypeDef],  # (7)
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (8)
+    StoppingCondition: NotRequired[StoppingConditionTypeDef],  # (9)
+    CreationTime: NotRequired[datetime],
+    TrainingStartTime: NotRequired[datetime],
+    TrainingEndTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    SecondaryStatusTransitions: NotRequired[List[SecondaryStatusTransitionTypeDef]],  # (10)
+    FinalMetricDataList: NotRequired[List[MetricDataTypeDef]],  # (11)
+    EnableNetworkIsolation: NotRequired[bool],
+    EnableInterContainerTrafficEncryption: NotRequired[bool],
+    EnableManagedSpotTraining: NotRequired[bool],
+    CheckpointConfig: NotRequired[CheckpointConfigTypeDef],  # (12)
+    TrainingTimeInSeconds: NotRequired[int],
+    BillableTimeInSeconds: NotRequired[int],
+    DebugHookConfig: NotRequired[DebugHookConfigTypeDef],  # (13)
+    ExperimentConfig: NotRequired[ExperimentConfigTypeDef],  # (14)
+    DebugRuleConfigurations: NotRequired[List[DebugRuleConfigurationTypeDef]],  # (15)
+    TensorBoardOutputConfig: NotRequired[TensorBoardOutputConfigTypeDef],  # (16)
+    DebugRuleEvaluationStatuses: NotRequired[List[DebugRuleEvaluationStatusTypeDef]],  # (17)
+    Environment: NotRequired[Dict[str, str]],
+    RetryStrategy: NotRequired[RetryStrategyTypeDef],  # (18)
+    Tags: NotRequired[List[TagTypeDef]],  # (19)
+```
+
+1. See [:material-code-braces: ModelArtifactsTypeDef](./type_defs.md#modelartifactstypedef) 
+2. See [:material-code-brackets: TrainingJobStatusType](./literals.md#trainingjobstatustype) 
+3. See [:material-code-brackets: SecondaryStatusType](./literals.md#secondarystatustype) 
+4. See [:material-code-braces: AlgorithmSpecificationTypeDef](./type_defs.md#algorithmspecificationtypedef) 
+5. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+6. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+7. See [:material-code-braces: ResourceConfigTypeDef](./type_defs.md#resourceconfigtypedef) 
+8. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+9. See [:material-code-braces: StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef) 
+10. See [:material-code-braces: SecondaryStatusTransitionTypeDef](./type_defs.md#secondarystatustransitiontypedef) 
+11. See [:material-code-braces: MetricDataTypeDef](./type_defs.md#metricdatatypedef) 
+12. See [:material-code-braces: CheckpointConfigTypeDef](./type_defs.md#checkpointconfigtypedef) 
+13. See [:material-code-braces: DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef) 
+14. See [:material-code-braces: ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef) 
+15. See [:material-code-braces: DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef) 
+16. See [:material-code-braces: TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef) 
+17. See [:material-code-braces: DebugRuleEvaluationStatusTypeDef](./type_defs.md#debugruleevaluationstatustypedef) 
+18. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
+19. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTransformJobRequestRequestTypeDef
 
 ```python title="Usage Example"

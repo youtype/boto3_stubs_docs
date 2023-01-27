@@ -172,24 +172,42 @@ class CdnConfigurationTypeDef(TypedDict):
     ContentSegmentUrlPrefix: NotRequired[str],
 ```
 
-## ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+## LogConfigurationForChannelTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+from mypy_boto3_mediatailor.type_defs import LogConfigurationForChannelTypeDef
 
-def get_value() -> ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef:
+def get_value() -> LogConfigurationForChannelTypeDef:
     return {
-        "PercentEnabled": ...,
-        "PlaybackConfigurationName": ...,
+        "LogTypes": ...,
     }
 ```
 
 ```python title="Definition"
-class ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef(TypedDict):
-    PercentEnabled: int,
-    PlaybackConfigurationName: str,
+class LogConfigurationForChannelTypeDef(TypedDict):
+    LogTypes: NotRequired[List[LogTypeType]],  # (1)
 ```
 
+1. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
+## ConfigureLogsForChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ConfigureLogsForChannelRequestRequestTypeDef
+
+def get_value() -> ConfigureLogsForChannelRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "LogTypes": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigureLogsForChannelRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    LogTypes: Sequence[LogTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -212,6 +230,24 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
+```
+
+## ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+
+def get_value() -> ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef:
+    return {
+        "PercentEnabled": ...,
+        "PlaybackConfigurationName": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef(TypedDict):
+    PercentEnabled: int,
+    PlaybackConfigurationName: str,
 ```
 
 ## HttpPackageConfigurationTypeDef
@@ -1077,6 +1113,28 @@ class PrefetchConsumptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AvailMatchingCriteriaTypeDef](./type_defs.md#availmatchingcriteriatypedef) 
+## ConfigureLogsForChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ConfigureLogsForChannelResponseTypeDef
+
+def get_value() -> ConfigureLogsForChannelResponseTypeDef:
+    return {
+        "ChannelName": ...,
+        "LogTypes": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigureLogsForChannelResponseTypeDef(TypedDict):
+    ChannelName: str,
+    LogTypes: List[LogTypeType],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigureLogsForPlaybackConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -2375,6 +2433,7 @@ def get_value() -> ChannelTypeDef:
         "Arn": ...,
         "ChannelName": ...,
         "ChannelState": ...,
+        "LogConfiguration": ...,
         "Outputs": ...,
         "PlaybackMode": ...,
         "Tier": ...,
@@ -2386,7 +2445,8 @@ class ChannelTypeDef(TypedDict):
     Arn: str,
     ChannelName: str,
     ChannelState: str,
-    Outputs: List[ResponseOutputItemTypeDef],  # (2)
+    LogConfiguration: LogConfigurationForChannelTypeDef,  # (2)
+    Outputs: List[ResponseOutputItemTypeDef],  # (3)
     PlaybackMode: str,
     Tier: str,
     CreationTime: NotRequired[datetime],
@@ -2396,7 +2456,8 @@ class ChannelTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
-2. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
+2. See [:material-code-braces: LogConfigurationForChannelTypeDef](./type_defs.md#logconfigurationforchanneltypedef) 
+3. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
 ## CreateChannelResponseTypeDef
 
 ```python title="Usage Example"
@@ -2450,6 +2511,7 @@ def get_value() -> DescribeChannelResponseTypeDef:
         "CreationTime": ...,
         "FillerSlate": ...,
         "LastModifiedTime": ...,
+        "LogConfiguration": ...,
         "Outputs": ...,
         "PlaybackMode": ...,
         "Tags": ...,
@@ -2466,17 +2528,19 @@ class DescribeChannelResponseTypeDef(TypedDict):
     CreationTime: datetime,
     FillerSlate: SlateSourceTypeDef,  # (2)
     LastModifiedTime: datetime,
-    Outputs: List[ResponseOutputItemTypeDef],  # (3)
+    LogConfiguration: LogConfigurationForChannelTypeDef,  # (3)
+    Outputs: List[ResponseOutputItemTypeDef],  # (4)
     PlaybackMode: str,
     Tags: Dict[str, str],
     Tier: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
 2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
-3. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-braces: LogConfigurationForChannelTypeDef](./type_defs.md#logconfigurationforchanneltypedef) 
+4. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChannelResponseTypeDef
 
 ```python title="Usage Example"

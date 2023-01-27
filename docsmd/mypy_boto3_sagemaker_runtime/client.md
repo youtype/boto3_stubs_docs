@@ -165,6 +165,7 @@ def invoke_endpoint_async(
     CustomAttributes: str = ...,
     InferenceId: str = ...,
     RequestTTLSeconds: int = ...,
+    InvocationTimeoutSeconds: int = ...,
 ) -> InvokeEndpointAsyncOutputTypeDef:  # (1)
     ...
 ```

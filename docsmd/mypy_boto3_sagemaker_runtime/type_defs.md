@@ -28,6 +28,7 @@ class InvokeEndpointAsyncInputRequestTypeDef(TypedDict):
     CustomAttributes: NotRequired[str],
     InferenceId: NotRequired[str],
     RequestTTLSeconds: NotRequired[int],
+    InvocationTimeoutSeconds: NotRequired[int],
 ```
 
 ## ResponseMetadataTypeDef

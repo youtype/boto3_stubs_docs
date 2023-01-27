@@ -1321,11 +1321,13 @@ class OrderTypeDef(TypedDict):
     PaymentOption: NotRequired[PaymentOptionType],  # (3)
     OrderSubmissionDate: NotRequired[datetime],
     OrderFulfilledDate: NotRequired[datetime],
+    PaymentTerm: NotRequired[PaymentTermType],  # (4)
 ```
 
 1. See [:material-code-brackets: OrderStatusType](./literals.md#orderstatustype) 
 2. See [:material-code-braces: LineItemTypeDef](./type_defs.md#lineitemtypedef) 
 3. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+4. See [:material-code-brackets: PaymentTermType](./literals.md#paymenttermtype) 
 ## CreateOrderOutputTypeDef
 
 ```python title="Usage Example"

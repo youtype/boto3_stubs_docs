@@ -80,6 +80,38 @@ def close(
 ```
 
 
+### configure\_logs\_for\_channel
+
+Configures Amazon CloudWatch log settings for a channel.
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").configure_logs_for_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.configure_logs_for_channel)
+
+```python title="Method definition"
+def configure_logs_for_channel(
+    self,
+    *,
+    ChannelName: str,
+    LogTypes: Sequence[LogTypeType],  # (1)
+) -> ConfigureLogsForChannelResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
+2. See [:material-code-braces: ConfigureLogsForChannelResponseTypeDef](./type_defs.md#configurelogsforchannelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ConfigureLogsForChannelRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "LogTypes": ...,
+}
+
+parent.configure_logs_for_channel(**kwargs)
+```
+
+1. See [:material-code-braces: ConfigureLogsForChannelRequestRequestTypeDef](./type_defs.md#configurelogsforchannelrequestrequesttypedef) 
+
 ### configure\_logs\_for\_playback\_configuration
 
 Amazon CloudWatch log settings for a playback configuration.

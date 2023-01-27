@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("mediatailor")  # (1)
-    result = client.configure_logs_for_playback_configuration()  # (2)
+    result = client.configure_logs_for_channel()  # (2)
     ```
 
     1. client: [MediaTailorClient](./client.md)
-    2. result: [:material-code-braces: ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef) 
+    2. result: [:material-code-braces: ConfigureLogsForChannelResponseTypeDef](./type_defs.md#configurelogsforchannelresponsetypedef) 
 
 
 
@@ -70,16 +70,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_mediatailor.client import MediaTailorClient
-    from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationResponseTypeDef
-    from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+    from mypy_boto3_mediatailor.type_defs import ConfigureLogsForChannelResponseTypeDef
+    from mypy_boto3_mediatailor.type_defs import ConfigureLogsForChannelRequestRequestTypeDef
 
 
     session = Session()
 
     client: MediaTailorClient = session.client("mediatailor")
 
-    kwargs: ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef = {...}
-    result: ConfigureLogsForPlaybackConfigurationResponseTypeDef = client.configure_logs_for_playback_configuration(**kwargs)
+    kwargs: ConfigureLogsForChannelRequestRequestTypeDef = {...}
+    result: ConfigureLogsForChannelResponseTypeDef = client.configure_logs_for_channel(**kwargs)
     ```
 
 
