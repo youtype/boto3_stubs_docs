@@ -2785,18 +2785,18 @@ from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteRequestRequestTypeDe
 
 def get_value() -> CreateLocalGatewayRouteRequestRequestTypeDef:
     return {
-        "DestinationCidrBlock": ...,
         "LocalGatewayRouteTableId": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateLocalGatewayRouteRequestRequestTypeDef(TypedDict):
-    DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
+    DestinationCidrBlock: NotRequired[str],
     LocalGatewayVirtualInterfaceGroupId: NotRequired[str],
     DryRun: NotRequired[bool],
     NetworkInterfaceId: NotRequired[str],
+    DestinationPrefixListId: NotRequired[str],
 ```
 
 ## LocalGatewayRouteTypeDef
@@ -2822,6 +2822,7 @@ class LocalGatewayRouteTypeDef(TypedDict):
     SubnetId: NotRequired[str],
     CoipPoolId: NotRequired[str],
     NetworkInterfaceId: NotRequired[str],
+    DestinationPrefixListId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LocalGatewayRouteTypeType](./literals.md#localgatewayroutetypetype) 
@@ -3023,7 +3024,7 @@ def get_value() -> InstanceSpecificationTypeDef:
 
 ```python title="Definition"
 class InstanceSpecificationTypeDef(TypedDict):
-    InstanceId: NotRequired[str],
+    InstanceId: str,
     ExcludeBootVolume: NotRequired[bool],
     ExcludeDataVolumeIds: NotRequired[Sequence[str]],
 ```
@@ -3988,16 +3989,16 @@ from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteRequestRequestTypeDe
 
 def get_value() -> DeleteLocalGatewayRouteRequestRequestTypeDef:
     return {
-        "DestinationCidrBlock": ...,
         "LocalGatewayRouteTableId": ...,
     }
 ```
 
 ```python title="Definition"
 class DeleteLocalGatewayRouteRequestRequestTypeDef(TypedDict):
-    DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
+    DestinationCidrBlock: NotRequired[str],
     DryRun: NotRequired[bool],
+    DestinationPrefixListId: NotRequired[str],
 ```
 
 ## DeleteLocalGatewayRouteTableRequestRequestTypeDef
@@ -11217,18 +11218,18 @@ from mypy_boto3_ec2.type_defs import ModifyLocalGatewayRouteRequestRequestTypeDe
 
 def get_value() -> ModifyLocalGatewayRouteRequestRequestTypeDef:
     return {
-        "DestinationCidrBlock": ...,
         "LocalGatewayRouteTableId": ...,
     }
 ```
 
 ```python title="Definition"
 class ModifyLocalGatewayRouteRequestRequestTypeDef(TypedDict):
-    DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
+    DestinationCidrBlock: NotRequired[str],
     LocalGatewayVirtualInterfaceGroupId: NotRequired[str],
     NetworkInterfaceId: NotRequired[str],
     DryRun: NotRequired[bool],
+    DestinationPrefixListId: NotRequired[str],
 ```
 
 ## RemovePrefixListEntryTypeDef

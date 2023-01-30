@@ -2829,11 +2829,12 @@ Type annotations and code completion for `#!python boto3.client("ec2").create_lo
 def create_local_gateway_route(
     self,
     *,
-    DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
+    DestinationCidrBlock: str = ...,
     LocalGatewayVirtualInterfaceGroupId: str = ...,
     DryRun: bool = ...,
     NetworkInterfaceId: str = ...,
+    DestinationPrefixListId: str = ...,
 ) -> CreateLocalGatewayRouteResultTypeDef:  # (1)
     ...
 ```
@@ -2843,7 +2844,6 @@ def create_local_gateway_route(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateLocalGatewayRouteRequestRequestTypeDef = {  # (1)
-    "DestinationCidrBlock": ...,
     "LocalGatewayRouteTableId": ...,
 }
 
@@ -5503,9 +5503,10 @@ Type annotations and code completion for `#!python boto3.client("ec2").delete_lo
 def delete_local_gateway_route(
     self,
     *,
-    DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
+    DestinationCidrBlock: str = ...,
     DryRun: bool = ...,
+    DestinationPrefixListId: str = ...,
 ) -> DeleteLocalGatewayRouteResultTypeDef:  # (1)
     ...
 ```
@@ -5515,7 +5516,6 @@ def delete_local_gateway_route(
 
 ```python title="Usage example with kwargs"
 kwargs: DeleteLocalGatewayRouteRequestRequestTypeDef = {  # (1)
-    "DestinationCidrBlock": ...,
     "LocalGatewayRouteTableId": ...,
 }
 
@@ -16487,11 +16487,12 @@ Type annotations and code completion for `#!python boto3.client("ec2").modify_lo
 def modify_local_gateway_route(
     self,
     *,
-    DestinationCidrBlock: str,
     LocalGatewayRouteTableId: str,
+    DestinationCidrBlock: str = ...,
     LocalGatewayVirtualInterfaceGroupId: str = ...,
     NetworkInterfaceId: str = ...,
     DryRun: bool = ...,
+    DestinationPrefixListId: str = ...,
 ) -> ModifyLocalGatewayRouteResultTypeDef:  # (1)
     ...
 ```
@@ -16501,7 +16502,6 @@ def modify_local_gateway_route(
 
 ```python title="Usage example with kwargs"
 kwargs: ModifyLocalGatewayRouteRequestRequestTypeDef = {  # (1)
-    "DestinationCidrBlock": ...,
     "LocalGatewayRouteTableId": ...,
 }
 

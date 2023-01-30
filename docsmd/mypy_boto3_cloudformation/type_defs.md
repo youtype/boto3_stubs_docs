@@ -3953,6 +3953,7 @@ class StackSetTypeDef(TypedDict):
     PermissionModel: NotRequired[PermissionModelsType],  # (7)
     OrganizationalUnitIds: NotRequired[List[str]],
     ManagedExecution: NotRequired[ManagedExecutionTypeDef],  # (8)
+    Regions: NotRequired[List[str]],
 ```
 
 1. See [:material-code-brackets: StackSetStatusType](./literals.md#stacksetstatustype) 
