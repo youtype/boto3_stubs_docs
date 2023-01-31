@@ -104,6 +104,25 @@ class ChannelTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
+## DestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "Type": ...,
+        "Location": ...,
+    }
+```
+
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    Type: DestinationTypeType,  # (1)
+    Location: str,
+```
+
+1. See [:material-code-brackets: DestinationTypeType](./literals.md#destinationtypetype) 
 ## DataResourceTypeDef
 
 ```python title="Usage Example"
@@ -121,6 +140,22 @@ class DataResourceTypeDef(TypedDict):
     Values: NotRequired[List[str]],
 ```
 
+## DeleteChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import DeleteChannelRequestRequestTypeDef
+
+def get_value() -> DeleteChannelRequestRequestTypeDef:
+    return {
+        "Channel": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteChannelRequestRequestTypeDef(TypedDict):
+    Channel: str,
+```
+
 ## DeleteEventDataStoreRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -135,6 +170,22 @@ def get_value() -> DeleteEventDataStoreRequestRequestTypeDef:
 ```python title="Definition"
 class DeleteEventDataStoreRequestRequestTypeDef(TypedDict):
     EventDataStore: str,
+```
+
+## DeleteResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
 ```
 
 ## DeleteTrailRequestRequestTypeDef
@@ -254,25 +305,6 @@ class TrailTypeDef(TypedDict):
     IsOrganizationTrail: NotRequired[bool],
 ```
 
-## DestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_cloudtrail.type_defs import DestinationTypeDef
-
-def get_value() -> DestinationTypeDef:
-    return {
-        "Type": ...,
-        "Location": ...,
-    }
-```
-
-```python title="Definition"
-class DestinationTypeDef(TypedDict):
-    Type: DestinationTypeType,  # (1)
-    Location: str,
-```
-
-1. See [:material-code-brackets: DestinationTypeType](./literals.md#destinationtypetype) 
 ## ResourceTypeDef
 
 ```python title="Usage Example"
@@ -304,6 +336,26 @@ def get_value() -> GetChannelRequestRequestTypeDef:
 ```python title="Definition"
 class GetChannelRequestRequestTypeDef(TypedDict):
     Channel: str,
+```
+
+## IngestionStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import IngestionStatusTypeDef
+
+def get_value() -> IngestionStatusTypeDef:
+    return {
+        "LatestIngestionSuccessTime": ...,
+    }
+```
+
+```python title="Definition"
+class IngestionStatusTypeDef(TypedDict):
+    LatestIngestionSuccessTime: NotRequired[datetime],
+    LatestIngestionSuccessEventID: NotRequired[str],
+    LatestIngestionErrorCode: NotRequired[str],
+    LatestIngestionAttemptTime: NotRequired[datetime],
+    LatestIngestionAttemptEventID: NotRequired[str],
 ```
 
 ## GetEventDataStoreRequestRequestTypeDef
@@ -442,6 +494,22 @@ class QueryStatisticsTypeDef(TypedDict):
     ResultsCount: NotRequired[int],
     TotalResultsCount: NotRequired[int],
     BytesScanned: NotRequired[int],
+```
+
+## GetResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import GetResourcePolicyRequestRequestTypeDef
+
+def get_value() -> GetResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
 ```
 
 ## GetTrailRequestRequestTypeDef
@@ -776,6 +844,24 @@ class LookupAttributeTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LookupAttributeKeyType](./literals.md#lookupattributekeytype) 
+## PutResourcePolicyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "ResourcePolicy": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    ResourcePolicy: str,
+```
+
 ## RegisterOrganizationDelegatedAdminRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1067,6 +1153,27 @@ class CreateTrailResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourcePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import GetResourcePolicyResponseTypeDef
+
+def get_value() -> GetResourcePolicyResponseTypeDef:
+    return {
+        "ResourceArn": ...,
+        "ResourcePolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePolicyResponseTypeDef(TypedDict):
+    ResourceArn: str,
+    ResourcePolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrailStatusResponseTypeDef
 
 ```python title="Usage Example"
@@ -1114,6 +1221,27 @@ class GetTrailStatusResponseTypeDef(TypedDict):
     LatestDeliveryAttemptSucceeded: str,
     TimeLoggingStarted: str,
     TimeLoggingStopped: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## PutResourcePolicyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import PutResourcePolicyResponseTypeDef
+
+def get_value() -> PutResourcePolicyResponseTypeDef:
+    return {
+        "ResourceArn": ...,
+        "ResourcePolicy": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class PutResourcePolicyResponseTypeDef(TypedDict):
+    ResourceArn: str,
+    ResourcePolicy: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1201,6 +1329,103 @@ class ListChannelsResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import CreateChannelRequestRequestTypeDef
+
+def get_value() -> CreateChannelRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Source": ...,
+        "Destinations": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Source: str,
+    Destinations: Sequence[DestinationTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import CreateChannelResponseTypeDef
+
+def get_value() -> CreateChannelResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Name": ...,
+        "Source": ...,
+        "Destinations": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateChannelResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Name: str,
+    Source: str,
+    Destinations: List[DestinationTypeDef],  # (1)
+    Tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateChannelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import UpdateChannelRequestRequestTypeDef
+
+def get_value() -> UpdateChannelRequestRequestTypeDef:
+    return {
+        "Channel": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateChannelRequestRequestTypeDef(TypedDict):
+    Channel: str,
+    Destinations: NotRequired[Sequence[DestinationTypeDef]],  # (1)
+    Name: NotRequired[str],
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+## UpdateChannelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import UpdateChannelResponseTypeDef
+
+def get_value() -> UpdateChannelResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Name": ...,
+        "Source": ...,
+        "Destinations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateChannelResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Name: str,
+    Source: str,
+    Destinations: List[DestinationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventSelectorTypeDef
 
@@ -2220,6 +2445,7 @@ def get_value() -> GetChannelResponseTypeDef:
         "Source": ...,
         "SourceConfig": ...,
         "Destinations": ...,
+        "IngestionStatus": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2231,9 +2457,11 @@ class GetChannelResponseTypeDef(TypedDict):
     Source: str,
     SourceConfig: SourceConfigTypeDef,  # (1)
     Destinations: List[DestinationTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    IngestionStatus: IngestionStatusTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
 2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-braces: IngestionStatusTypeDef](./type_defs.md#ingestionstatustypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

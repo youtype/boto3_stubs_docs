@@ -295,6 +295,44 @@ parent.delete_domain_permissions_policy(**kwargs)
 
 1. See [:material-code-braces: DeleteDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deletedomainpermissionspolicyrequestrequesttypedef) 
 
+### delete\_package
+
+Deletes a package and all associated package versions.
+
+Type annotations and code completion for `#!python boto3.client("codeartifact").delete_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Client.delete_package)
+
+```python title="Method definition"
+def delete_package(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+) -> DeletePackageResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: DeletePackageResultTypeDef](./type_defs.md#deletepackageresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeletePackageRequestRequestTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+}
+
+parent.delete_package(**kwargs)
+```
+
+1. See [:material-code-braces: DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef) 
+
 ### delete\_package\_versions
 
 Deletes one or more versions of a package.

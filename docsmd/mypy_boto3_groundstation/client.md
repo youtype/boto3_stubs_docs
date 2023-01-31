@@ -234,12 +234,15 @@ def create_mission_profile(
     trackingConfigArn: str,
     contactPostPassDurationSeconds: int = ...,
     contactPrePassDurationSeconds: int = ...,
+    streamsKmsKey: KmsKeyTypeDef = ...,  # (1)
+    streamsKmsRole: str = ...,
     tags: Mapping[str, str] = ...,
-) -> MissionProfileIdResponseTypeDef:  # (1)
+) -> MissionProfileIdResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef) 
+1. See [:material-code-braces: KmsKeyTypeDef](./type_defs.md#kmskeytypedef) 
+2. See [:material-code-braces: MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -451,6 +454,35 @@ def generate_presigned_url(
     ...
 ```
 
+
+### get\_agent\_configuration
+
+Gets the latest configuration information for a registered agent.
+
+Type annotations and code completion for `#!python boto3.client("groundstation").get_agent_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_agent_configuration)
+
+```python title="Method definition"
+def get_agent_configuration(
+    self,
+    *,
+    agentId: str,
+) -> GetAgentConfigurationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetAgentConfigurationResponseTypeDef](./type_defs.md#getagentconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetAgentConfigurationRequestRequestTypeDef = {  # (1)
+    "agentId": ...,
+}
+
+parent.get_agent_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: GetAgentConfigurationRequestRequestTypeDef](./type_defs.md#getagentconfigurationrequestrequesttypedef) 
 
 ### get\_config
 
@@ -858,6 +890,39 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
+### register\_agent
+
+Registers a new agent with AWS Groundstation.
+
+Type annotations and code completion for `#!python boto3.client("groundstation").register_agent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.register_agent)
+
+```python title="Method definition"
+def register_agent(
+    self,
+    *,
+    agentDetails: AgentDetailsTypeDef,  # (1)
+    discoveryData: DiscoveryDataTypeDef,  # (2)
+) -> RegisterAgentResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: AgentDetailsTypeDef](./type_defs.md#agentdetailstypedef) 
+2. See [:material-code-braces: DiscoveryDataTypeDef](./type_defs.md#discoverydatatypedef) 
+3. See [:material-code-braces: RegisterAgentResponseTypeDef](./type_defs.md#registeragentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RegisterAgentRequestRequestTypeDef = {  # (1)
+    "agentDetails": ...,
+    "discoveryData": ...,
+}
+
+parent.register_agent(**kwargs)
+```
+
+1. See [:material-code-braces: RegisterAgentRequestRequestTypeDef](./type_defs.md#registeragentrequestrequesttypedef) 
+
 ### reserve\_contact
 
 Reserves a contact using specified parameters.
@@ -956,6 +1021,43 @@ parent.untag_resource(**kwargs)
 
 1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
+### update\_agent\_status
+
+Update the status of the agent.
+
+Type annotations and code completion for `#!python boto3.client("groundstation").update_agent_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_agent_status)
+
+```python title="Method definition"
+def update_agent_status(
+    self,
+    *,
+    agentId: str,
+    aggregateStatus: AggregateStatusTypeDef,  # (1)
+    componentStatuses: Sequence[ComponentStatusDataTypeDef],  # (2)
+    taskId: str,
+) -> UpdateAgentStatusResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: AggregateStatusTypeDef](./type_defs.md#aggregatestatustypedef) 
+2. See [:material-code-braces: ComponentStatusDataTypeDef](./type_defs.md#componentstatusdatatypedef) 
+3. See [:material-code-braces: UpdateAgentStatusResponseTypeDef](./type_defs.md#updateagentstatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateAgentStatusRequestRequestTypeDef = {  # (1)
+    "agentId": ...,
+    "aggregateStatus": ...,
+    "componentStatuses": ...,
+    "taskId": ...,
+}
+
+parent.update_agent_status(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAgentStatusRequestRequestTypeDef](./type_defs.md#updateagentstatusrequestrequesttypedef) 
+
 ### update\_config
 
 Updates the `Config` used when scheduling contacts.
@@ -1044,12 +1146,15 @@ def update_mission_profile(
     dataflowEdges: Sequence[Sequence[str]] = ...,
     minimumViableContactDurationSeconds: int = ...,
     name: str = ...,
+    streamsKmsKey: KmsKeyTypeDef = ...,  # (1)
+    streamsKmsRole: str = ...,
     trackingConfigArn: str = ...,
-) -> MissionProfileIdResponseTypeDef:  # (1)
+) -> MissionProfileIdResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef) 
+1. See [:material-code-braces: KmsKeyTypeDef](./type_defs.md#kmskeytypedef) 
+2. See [:material-code-braces: MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

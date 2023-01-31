@@ -250,6 +250,31 @@ class DeleteDomainRequestRequestTypeDef(TypedDict):
     domainOwner: NotRequired[str],
 ```
 
+## DeletePackageRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import DeletePackageRequestRequestTypeDef
+
+def get_value() -> DeletePackageRequestRequestTypeDef:
+    return {
+        "domain": ...,
+        "repository": ...,
+        "format": ...,
+        "package": ...,
+    }
+```
+
+```python title="Definition"
+class DeletePackageRequestRequestTypeDef(TypedDict):
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    domainOwner: NotRequired[str],
+    namespace: NotRequired[str],
+```
+
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
 ## DeletePackageVersionsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2189,6 +2214,26 @@ class DescribePackageResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PackageDescriptionTypeDef](./type_defs.md#packagedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeletePackageResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codeartifact.type_defs import DeletePackageResultTypeDef
+
+def get_value() -> DeletePackageResultTypeDef:
+    return {
+        "deletedPackage": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeletePackageResultTypeDef(TypedDict):
+    deletedPackage: PackageSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PackageSummaryTypeDef](./type_defs.md#packagesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPackagesResultTypeDef
 

@@ -184,6 +184,7 @@ def get_value() -> AcceptAdministratorInvitationRequestRequestTypeDef:
 - [DnsRequestActionTypeDef](./type_defs.md#dnsrequestactiontypedef)
 - [AdjustmentTypeDef](./type_defs.md#adjustmenttypedef)
 - [AdminAccountTypeDef](./type_defs.md#adminaccounttypedef)
+- [AssociatedStandardTypeDef](./type_defs.md#associatedstandardtypedef)
 - [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - [AwsApiCallActionDomainDetailsTypeDef](./type_defs.md#awsapicallactiondomaindetailstypedef)
 - [AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef)

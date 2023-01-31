@@ -252,6 +252,22 @@ class AdminAccountTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AdminStatusType](./literals.md#adminstatustype) 
+## AssociatedStandardTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import AssociatedStandardTypeDef
+
+def get_value() -> AssociatedStandardTypeDef:
+    return {
+        "StandardsId": ...,
+    }
+```
+
+```python title="Definition"
+class AssociatedStandardTypeDef(TypedDict):
+    StandardsId: NotRequired[str],
+```
+
 ## AvailabilityZoneTypeDef
 
 ```python title="Usage Example"
@@ -9397,10 +9413,13 @@ class ComplianceTypeDef(TypedDict):
     Status: NotRequired[ComplianceStatusType],  # (1)
     RelatedRequirements: NotRequired[Sequence[str]],
     StatusReasons: NotRequired[Sequence[StatusReasonTypeDef]],  # (2)
+    SecurityControlId: NotRequired[str],
+    AssociatedStandards: NotRequired[Sequence[AssociatedStandardTypeDef]],  # (3)
 ```
 
 1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
 2. See [:material-code-braces: StatusReasonTypeDef](./type_defs.md#statusreasontypedef) 
+3. See [:material-code-braces: AssociatedStandardTypeDef](./type_defs.md#associatedstandardtypedef) 
 ## ContainerDetailsTypeDef
 
 ```python title="Usage Example"
@@ -11540,6 +11559,8 @@ class AwsSecurityFindingFiltersTypeDef(TypedDict):
     FindingProviderFieldsSeverityOriginal: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     FindingProviderFieldsTypes: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
     Sample: NotRequired[Sequence[BooleanFilterTypeDef]],  # (95)
+    ComplianceSecurityControlId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ComplianceAssociatedStandardsId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
 ```
 
 1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
@@ -11637,6 +11658,8 @@ class AwsSecurityFindingFiltersTypeDef(TypedDict):
 93. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 94. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 95. See [:material-code-braces: BooleanFilterTypeDef](./type_defs.md#booleanfiltertypedef) 
+96. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+97. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 ## GetInsightResultsResponseTypeDef
 
 ```python title="Usage Example"

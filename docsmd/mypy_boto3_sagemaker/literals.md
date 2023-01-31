@@ -812,6 +812,21 @@ CompilationJobStatusType = Literal[
     "STOPPING",
 ]
 ```
+## CompleteOnConvergenceType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import CompleteOnConvergenceType
+
+def get_value() -> CompleteOnConvergenceType:
+    return "Disabled"
+```
+
+```python title="Definition"
+CompleteOnConvergenceType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## CompressionTypeType
 
 ```python title="Usage Example"
@@ -5440,6 +5455,7 @@ ServiceName = Literal[
     "cloudsearch",
     "cloudsearchdomain",
     "cloudtrail",
+    "cloudtrail-data",
     "cloudwatch",
     "codeartifact",
     "codebuild",

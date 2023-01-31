@@ -316,13 +316,15 @@ def create_outbound_connection(
     LocalDomainInfo: DomainInformationContainerTypeDef,  # (1)
     RemoteDomainInfo: DomainInformationContainerTypeDef,  # (1)
     ConnectionAlias: str,
-) -> CreateOutboundConnectionResponseTypeDef:  # (3)
+    ConnectionMode: ConnectionModeType = ...,  # (3)
+) -> CreateOutboundConnectionResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 2. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
-3. See [:material-code-braces: CreateOutboundConnectionResponseTypeDef](./type_defs.md#createoutboundconnectionresponsetypedef) 
+3. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+4. See [:material-code-braces: CreateOutboundConnectionResponseTypeDef](./type_defs.md#createoutboundconnectionresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

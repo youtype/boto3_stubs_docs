@@ -7,6 +7,43 @@
     Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
     type annotations stubs module [mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
+## ComponentVersionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ComponentVersionTypeDef
+
+def get_value() -> ComponentVersionTypeDef:
+    return {
+        "componentType": ...,
+        "versions": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentVersionTypeDef(TypedDict):
+    componentType: ComponentTypeType,  # (1)
+    versions: Sequence[str],
+```
+
+1. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
+## AggregateStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import AggregateStatusTypeDef
+
+def get_value() -> AggregateStatusTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class AggregateStatusTypeDef(TypedDict):
+    status: AgentStatusType,  # (1)
+    signatureMap: NotRequired[Mapping[str, bool]],
+```
+
+1. See [:material-code-brackets: AgentStatusType](./literals.md#agentstatustype) 
 ## AntennaDemodDecodeDetailsTypeDef
 
 ```python title="Usage Example"
@@ -90,6 +127,33 @@ class CancelContactRequestRequestTypeDef(TypedDict):
     contactId: str,
 ```
 
+## ComponentStatusDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ComponentStatusDataTypeDef
+
+def get_value() -> ComponentStatusDataTypeDef:
+    return {
+        "capabilityArn": ...,
+        "componentType": ...,
+        "dataflowId": ...,
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class ComponentStatusDataTypeDef(TypedDict):
+    capabilityArn: str,
+    componentType: ComponentTypeType,  # (1)
+    dataflowId: str,
+    status: AgentStatusType,  # (2)
+    bytesReceived: NotRequired[int],
+    bytesSent: NotRequired[int],
+    packetsDropped: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
+2. See [:material-code-brackets: AgentStatusType](./literals.md#agentstatustype) 
 ## S3RecordingDetailsTypeDef
 
 ```python title="Usage Example"
@@ -222,6 +286,24 @@ class UplinkEchoConfigTypeDef(TypedDict):
     enabled: bool,
 ```
 
+## SocketAddressTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import SocketAddressTypeDef
+
+def get_value() -> SocketAddressTypeDef:
+    return {
+        "name": ...,
+        "port": ...,
+    }
+```
+
+```python title="Definition"
+class SocketAddressTypeDef(TypedDict):
+    name: str,
+    port: int,
+```
+
 ## ElevationTypeDef
 
 ```python title="Usage Example"
@@ -241,29 +323,21 @@ class ElevationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AngleUnitsType](./literals.md#angleunitstype) 
-## CreateMissionProfileRequestRequestTypeDef
+## KmsKeyTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import CreateMissionProfileRequestRequestTypeDef
+from mypy_boto3_groundstation.type_defs import KmsKeyTypeDef
 
-def get_value() -> CreateMissionProfileRequestRequestTypeDef:
+def get_value() -> KmsKeyTypeDef:
     return {
-        "dataflowEdges": ...,
-        "minimumViableContactDurationSeconds": ...,
-        "name": ...,
-        "trackingConfigArn": ...,
+        "kmsAliasArn": ...,
     }
 ```
 
 ```python title="Definition"
-class CreateMissionProfileRequestRequestTypeDef(TypedDict):
-    dataflowEdges: Sequence[Sequence[str]],
-    minimumViableContactDurationSeconds: int,
-    name: str,
-    trackingConfigArn: str,
-    contactPostPassDurationSeconds: NotRequired[int],
-    contactPrePassDurationSeconds: NotRequired[int],
-    tags: NotRequired[Mapping[str, str]],
+class KmsKeyTypeDef(TypedDict):
+    kmsAliasArn: NotRequired[str],
+    kmsKeyArn: NotRequired[str],
 ```
 
 ## DataflowEndpointListItemTypeDef
@@ -281,24 +355,6 @@ def get_value() -> DataflowEndpointListItemTypeDef:
 class DataflowEndpointListItemTypeDef(TypedDict):
     dataflowEndpointGroupArn: NotRequired[str],
     dataflowEndpointGroupId: NotRequired[str],
-```
-
-## SocketAddressTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import SocketAddressTypeDef
-
-def get_value() -> SocketAddressTypeDef:
-    return {
-        "name": ...,
-        "port": ...,
-    }
-```
-
-```python title="Definition"
-class SocketAddressTypeDef(TypedDict):
-    name: str,
-    port: int,
 ```
 
 ## DeleteConfigRequestRequestTypeDef
@@ -417,6 +473,26 @@ class DescribeEphemerisRequestRequestTypeDef(TypedDict):
     ephemerisId: str,
 ```
 
+## DiscoveryDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import DiscoveryDataTypeDef
+
+def get_value() -> DiscoveryDataTypeDef:
+    return {
+        "capabilityArns": ...,
+        "privateIpAddresses": ...,
+        "publicIpAddresses": ...,
+    }
+```
+
+```python title="Definition"
+class DiscoveryDataTypeDef(TypedDict):
+    capabilityArns: Sequence[str],
+    privateIpAddresses: Sequence[str],
+    publicIpAddresses: Sequence[str],
+```
+
 ## SecurityDetailsTypeDef
 
 ```python title="Usage Example"
@@ -513,6 +589,22 @@ class FrequencyTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: FrequencyUnitsType](./literals.md#frequencyunitstype) 
+## GetAgentConfigurationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import GetAgentConfigurationRequestRequestTypeDef
+
+def get_value() -> GetAgentConfigurationRequestRequestTypeDef:
+    return {
+        "agentId": ...,
+    }
+```
+
+```python title="Definition"
+class GetAgentConfigurationRequestRequestTypeDef(TypedDict):
+    agentId: str,
+```
+
 ## GetConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -614,6 +706,24 @@ class GroundStationDataTypeDef(TypedDict):
     groundStationId: NotRequired[str],
     groundStationName: NotRequired[str],
     region: NotRequired[str],
+```
+
+## IntegerRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import IntegerRangeTypeDef
+
+def get_value() -> IntegerRangeTypeDef:
+    return {
+        "maximum": ...,
+        "minimum": ...,
+    }
+```
+
+```python title="Definition"
+class IntegerRangeTypeDef(TypedDict):
+    maximum: int,
+    minimum: int,
 ```
 
 ## PaginatorConfigTypeDef
@@ -904,28 +1014,55 @@ class UpdateEphemerisRequestRequestTypeDef(TypedDict):
     priority: NotRequired[int],
 ```
 
-## UpdateMissionProfileRequestRequestTypeDef
+## AgentDetailsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import UpdateMissionProfileRequestRequestTypeDef
+from mypy_boto3_groundstation.type_defs import AgentDetailsTypeDef
 
-def get_value() -> UpdateMissionProfileRequestRequestTypeDef:
+def get_value() -> AgentDetailsTypeDef:
     return {
-        "missionProfileId": ...,
+        "agentVersion": ...,
+        "componentVersions": ...,
+        "instanceId": ...,
+        "instanceType": ...,
+        "reservedCpuCores": ...,
     }
 ```
 
 ```python title="Definition"
-class UpdateMissionProfileRequestRequestTypeDef(TypedDict):
-    missionProfileId: str,
-    contactPostPassDurationSeconds: NotRequired[int],
-    contactPrePassDurationSeconds: NotRequired[int],
-    dataflowEdges: NotRequired[Sequence[Sequence[str]]],
-    minimumViableContactDurationSeconds: NotRequired[int],
-    name: NotRequired[str],
-    trackingConfigArn: NotRequired[str],
+class AgentDetailsTypeDef(TypedDict):
+    agentVersion: str,
+    componentVersions: Sequence[ComponentVersionTypeDef],  # (1)
+    instanceId: str,
+    instanceType: str,
+    reservedCpuCores: Sequence[int],
 ```
 
+1. See [:material-code-braces: ComponentVersionTypeDef](./type_defs.md#componentversiontypedef) 
+## UpdateAgentStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import UpdateAgentStatusRequestRequestTypeDef
+
+def get_value() -> UpdateAgentStatusRequestRequestTypeDef:
+    return {
+        "agentId": ...,
+        "aggregateStatus": ...,
+        "componentStatuses": ...,
+        "taskId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAgentStatusRequestRequestTypeDef(TypedDict):
+    agentId: str,
+    aggregateStatus: AggregateStatusTypeDef,  # (1)
+    componentStatuses: Sequence[ComponentStatusDataTypeDef],  # (2)
+    taskId: str,
+```
+
+1. See [:material-code-braces: AggregateStatusTypeDef](./type_defs.md#aggregatestatustypedef) 
+2. See [:material-code-braces: ComponentStatusDataTypeDef](./type_defs.md#componentstatusdatatypedef) 
 ## ConfigIdResponseTypeDef
 
 ```python title="Usage Example"
@@ -1007,6 +1144,27 @@ class EphemerisIdResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAgentConfigurationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import GetAgentConfigurationResponseTypeDef
+
+def get_value() -> GetAgentConfigurationResponseTypeDef:
+    return {
+        "agentId": ...,
+        "taskingDocument": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetAgentConfigurationResponseTypeDef(TypedDict):
+    agentId: str,
+    taskingDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMinuteUsageResponseTypeDef
 
 ```python title="Usage Example"
@@ -1030,43 +1188,6 @@ class GetMinuteUsageResponseTypeDef(TypedDict):
     totalReservedMinuteAllocation: int,
     totalScheduledMinutes: int,
     upcomingMinutesScheduled: int,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetMissionProfileResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import GetMissionProfileResponseTypeDef
-
-def get_value() -> GetMissionProfileResponseTypeDef:
-    return {
-        "contactPostPassDurationSeconds": ...,
-        "contactPrePassDurationSeconds": ...,
-        "dataflowEdges": ...,
-        "minimumViableContactDurationSeconds": ...,
-        "missionProfileArn": ...,
-        "missionProfileId": ...,
-        "name": ...,
-        "region": ...,
-        "tags": ...,
-        "trackingConfigArn": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetMissionProfileResponseTypeDef(TypedDict):
-    contactPostPassDurationSeconds: int,
-    contactPrePassDurationSeconds: int,
-    dataflowEdges: List[List[str]],
-    minimumViableContactDurationSeconds: int,
-    missionProfileArn: str,
-    missionProfileId: str,
-    name: str,
-    region: str,
-    tags: Dict[str, str],
-    trackingConfigArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1109,6 +1230,44 @@ class MissionProfileIdResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RegisterAgentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import RegisterAgentResponseTypeDef
+
+def get_value() -> RegisterAgentResponseTypeDef:
+    return {
+        "agentId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterAgentResponseTypeDef(TypedDict):
+    agentId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAgentStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import UpdateAgentStatusResponseTypeDef
+
+def get_value() -> UpdateAgentStatusResponseTypeDef:
+    return {
+        "agentId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAgentStatusResponseTypeDef(TypedDict):
+    agentId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListConfigsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1131,6 +1290,45 @@ class ListConfigsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConfigListItemTypeDef](./type_defs.md#configlistitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ConnectionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ConnectionDetailsTypeDef
+
+def get_value() -> ConnectionDetailsTypeDef:
+    return {
+        "socketAddress": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectionDetailsTypeDef(TypedDict):
+    socketAddress: SocketAddressTypeDef,  # (1)
+    mtu: NotRequired[int],
+```
+
+1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
+## DataflowEndpointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import DataflowEndpointTypeDef
+
+def get_value() -> DataflowEndpointTypeDef:
+    return {
+        "address": ...,
+    }
+```
+
+```python title="Definition"
+class DataflowEndpointTypeDef(TypedDict):
+    address: NotRequired[SocketAddressTypeDef],  # (1)
+    mtu: NotRequired[int],
+    name: NotRequired[str],
+    status: NotRequired[EndpointStatusType],  # (2)
+```
+
+1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
+2. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
 ## ContactDataTypeDef
 
 ```python title="Usage Example"
@@ -1161,6 +1359,101 @@ class ContactDataTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ContactStatusType](./literals.md#contactstatustype) 
 2. See [:material-code-braces: ElevationTypeDef](./type_defs.md#elevationtypedef) 
+## CreateMissionProfileRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import CreateMissionProfileRequestRequestTypeDef
+
+def get_value() -> CreateMissionProfileRequestRequestTypeDef:
+    return {
+        "dataflowEdges": ...,
+        "minimumViableContactDurationSeconds": ...,
+        "name": ...,
+        "trackingConfigArn": ...,
+    }
+```
+
+```python title="Definition"
+class CreateMissionProfileRequestRequestTypeDef(TypedDict):
+    dataflowEdges: Sequence[Sequence[str]],
+    minimumViableContactDurationSeconds: int,
+    name: str,
+    trackingConfigArn: str,
+    contactPostPassDurationSeconds: NotRequired[int],
+    contactPrePassDurationSeconds: NotRequired[int],
+    streamsKmsKey: NotRequired[KmsKeyTypeDef],  # (1)
+    streamsKmsRole: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: KmsKeyTypeDef](./type_defs.md#kmskeytypedef) 
+## GetMissionProfileResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import GetMissionProfileResponseTypeDef
+
+def get_value() -> GetMissionProfileResponseTypeDef:
+    return {
+        "contactPostPassDurationSeconds": ...,
+        "contactPrePassDurationSeconds": ...,
+        "dataflowEdges": ...,
+        "minimumViableContactDurationSeconds": ...,
+        "missionProfileArn": ...,
+        "missionProfileId": ...,
+        "name": ...,
+        "region": ...,
+        "streamsKmsKey": ...,
+        "streamsKmsRole": ...,
+        "tags": ...,
+        "trackingConfigArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetMissionProfileResponseTypeDef(TypedDict):
+    contactPostPassDurationSeconds: int,
+    contactPrePassDurationSeconds: int,
+    dataflowEdges: List[List[str]],
+    minimumViableContactDurationSeconds: int,
+    missionProfileArn: str,
+    missionProfileId: str,
+    name: str,
+    region: str,
+    streamsKmsKey: KmsKeyTypeDef,  # (1)
+    streamsKmsRole: str,
+    tags: Dict[str, str],
+    trackingConfigArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: KmsKeyTypeDef](./type_defs.md#kmskeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateMissionProfileRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import UpdateMissionProfileRequestRequestTypeDef
+
+def get_value() -> UpdateMissionProfileRequestRequestTypeDef:
+    return {
+        "missionProfileId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateMissionProfileRequestRequestTypeDef(TypedDict):
+    missionProfileId: str,
+    contactPostPassDurationSeconds: NotRequired[int],
+    contactPrePassDurationSeconds: NotRequired[int],
+    dataflowEdges: NotRequired[Sequence[Sequence[str]]],
+    minimumViableContactDurationSeconds: NotRequired[int],
+    name: NotRequired[str],
+    streamsKmsKey: NotRequired[KmsKeyTypeDef],  # (1)
+    streamsKmsRole: NotRequired[str],
+    trackingConfigArn: NotRequired[str],
+```
+
+1. See [:material-code-braces: KmsKeyTypeDef](./type_defs.md#kmskeytypedef) 
 ## ListDataflowEndpointGroupsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1183,27 +1476,6 @@ class ListDataflowEndpointGroupsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DataflowEndpointListItemTypeDef](./type_defs.md#dataflowendpointlistitemtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DataflowEndpointTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import DataflowEndpointTypeDef
-
-def get_value() -> DataflowEndpointTypeDef:
-    return {
-        "address": ...,
-    }
-```
-
-```python title="Definition"
-class DataflowEndpointTypeDef(TypedDict):
-    address: NotRequired[SocketAddressTypeDef],  # (1)
-    mtu: NotRequired[int],
-    name: NotRequired[str],
-    status: NotRequired[EndpointStatusType],  # (2)
-```
-
-1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
-2. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
 ## DescribeContactRequestContactScheduledWaitTypeDef
 
 ```python title="Usage Example"
@@ -1394,6 +1666,25 @@ class ListGroundStationsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: GroundStationDataTypeDef](./type_defs.md#groundstationdatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RangedSocketAddressTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import RangedSocketAddressTypeDef
+
+def get_value() -> RangedSocketAddressTypeDef:
+    return {
+        "name": ...,
+        "portRange": ...,
+    }
+```
+
+```python title="Definition"
+class RangedSocketAddressTypeDef(TypedDict):
+    name: str,
+    portRange: IntegerRangeTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: IntegerRangeTypeDef](./type_defs.md#integerrangetypedef) 
 ## ListConfigsRequestListConfigsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1573,6 +1864,26 @@ class TLEDataTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+## RegisterAgentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import RegisterAgentRequestRequestTypeDef
+
+def get_value() -> RegisterAgentRequestRequestTypeDef:
+    return {
+        "agentDetails": ...,
+        "discoveryData": ...,
+    }
+```
+
+```python title="Definition"
+class RegisterAgentRequestRequestTypeDef(TypedDict):
+    agentDetails: AgentDetailsTypeDef,  # (1)
+    discoveryData: DiscoveryDataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AgentDetailsTypeDef](./type_defs.md#agentdetailstypedef) 
+2. See [:material-code-braces: DiscoveryDataTypeDef](./type_defs.md#discoverydatatypedef) 
 ## ListContactsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1595,25 +1906,6 @@ class ListContactsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ContactDataTypeDef](./type_defs.md#contactdatatypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## EndpointDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import EndpointDetailsTypeDef
-
-def get_value() -> EndpointDetailsTypeDef:
-    return {
-        "endpoint": ...,
-    }
-```
-
-```python title="Definition"
-class EndpointDetailsTypeDef(TypedDict):
-    endpoint: NotRequired[DataflowEndpointTypeDef],  # (1)
-    securityDetails: NotRequired[SecurityDetailsTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: DataflowEndpointTypeDef](./type_defs.md#dataflowendpointtypedef) 
-2. See [:material-code-braces: SecurityDetailsTypeDef](./type_defs.md#securitydetailstypedef) 
 ## EphemerisTypeDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -1738,6 +2030,24 @@ class AntennaUplinkConfigTypeDef(TypedDict):
 
 1. See [:material-code-braces: UplinkSpectrumConfigTypeDef](./type_defs.md#uplinkspectrumconfigtypedef) 
 2. See [:material-code-braces: EirpTypeDef](./type_defs.md#eirptypedef) 
+## RangedConnectionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import RangedConnectionDetailsTypeDef
+
+def get_value() -> RangedConnectionDetailsTypeDef:
+    return {
+        "socketAddress": ...,
+    }
+```
+
+```python title="Definition"
+class RangedConnectionDetailsTypeDef(TypedDict):
+    socketAddress: RangedSocketAddressTypeDef,  # (1)
+    mtu: NotRequired[int],
+```
+
+1. See [:material-code-braces: RangedSocketAddressTypeDef](./type_defs.md#rangedsocketaddresstypedef) 
 ## TLEEphemerisTypeDef
 
 ```python title="Usage Example"
@@ -1757,77 +2067,6 @@ class TLEEphemerisTypeDef(TypedDict):
 
 1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 2. See [:material-code-braces: TLEDataTypeDef](./type_defs.md#tledatatypedef) 
-## ConfigDetailsTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import ConfigDetailsTypeDef
-
-def get_value() -> ConfigDetailsTypeDef:
-    return {
-        "antennaDemodDecodeDetails": ...,
-    }
-```
-
-```python title="Definition"
-class ConfigDetailsTypeDef(TypedDict):
-    antennaDemodDecodeDetails: NotRequired[AntennaDemodDecodeDetailsTypeDef],  # (1)
-    endpointDetails: NotRequired[EndpointDetailsTypeDef],  # (2)
-    s3RecordingDetails: NotRequired[S3RecordingDetailsTypeDef],  # (3)
-```
-
-1. See [:material-code-braces: AntennaDemodDecodeDetailsTypeDef](./type_defs.md#antennademoddecodedetailstypedef) 
-2. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
-3. See [:material-code-braces: S3RecordingDetailsTypeDef](./type_defs.md#s3recordingdetailstypedef) 
-## CreateDataflowEndpointGroupRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import CreateDataflowEndpointGroupRequestRequestTypeDef
-
-def get_value() -> CreateDataflowEndpointGroupRequestRequestTypeDef:
-    return {
-        "endpointDetails": ...,
-    }
-```
-
-```python title="Definition"
-class CreateDataflowEndpointGroupRequestRequestTypeDef(TypedDict):
-    endpointDetails: Sequence[EndpointDetailsTypeDef],  # (1)
-    contactPostPassDurationSeconds: NotRequired[int],
-    contactPrePassDurationSeconds: NotRequired[int],
-    tags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
-## GetDataflowEndpointGroupResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupResponseTypeDef
-
-def get_value() -> GetDataflowEndpointGroupResponseTypeDef:
-    return {
-        "contactPostPassDurationSeconds": ...,
-        "contactPrePassDurationSeconds": ...,
-        "dataflowEndpointGroupArn": ...,
-        "dataflowEndpointGroupId": ...,
-        "endpointsDetails": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetDataflowEndpointGroupResponseTypeDef(TypedDict):
-    contactPostPassDurationSeconds: int,
-    contactPrePassDurationSeconds: int,
-    dataflowEndpointGroupArn: str,
-    dataflowEndpointGroupId: str,
-    endpointsDetails: List[EndpointDetailsTypeDef],  # (1)
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEphemerisResponseTypeDef
 
 ```python title="Usage Example"
@@ -1897,6 +2136,32 @@ class ConfigTypeDataTypeDef(TypedDict):
 5. See [:material-code-braces: S3RecordingConfigTypeDef](./type_defs.md#s3recordingconfigtypedef) 
 6. See [:material-code-braces: TrackingConfigTypeDef](./type_defs.md#trackingconfigtypedef) 
 7. See [:material-code-braces: UplinkEchoConfigTypeDef](./type_defs.md#uplinkechoconfigtypedef) 
+## AwsGroundStationAgentEndpointTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import AwsGroundStationAgentEndpointTypeDef
+
+def get_value() -> AwsGroundStationAgentEndpointTypeDef:
+    return {
+        "egressAddress": ...,
+        "ingressAddress": ...,
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class AwsGroundStationAgentEndpointTypeDef(TypedDict):
+    egressAddress: ConnectionDetailsTypeDef,  # (3)
+    ingressAddress: RangedConnectionDetailsTypeDef,  # (4)
+    name: str,
+    agentStatus: NotRequired[AgentStatusType],  # (1)
+    auditResults: NotRequired[AuditResultsType],  # (2)
+```
+
+1. See [:material-code-brackets: AgentStatusType](./literals.md#agentstatustype) 
+2. See [:material-code-brackets: AuditResultsType](./literals.md#auditresultstype) 
+3. See [:material-code-braces: ConnectionDetailsTypeDef](./type_defs.md#connectiondetailstypedef) 
+4. See [:material-code-braces: RangedConnectionDetailsTypeDef](./type_defs.md#rangedconnectiondetailstypedef) 
 ## EphemerisDataTypeDef
 
 ```python title="Usage Example"
@@ -1916,48 +2181,6 @@ class EphemerisDataTypeDef(TypedDict):
 
 1. See [:material-code-braces: OEMEphemerisTypeDef](./type_defs.md#oemephemeristypedef) 
 2. See [:material-code-braces: TLEEphemerisTypeDef](./type_defs.md#tleephemeristypedef) 
-## DestinationTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import DestinationTypeDef
-
-def get_value() -> DestinationTypeDef:
-    return {
-        "configDetails": ...,
-    }
-```
-
-```python title="Definition"
-class DestinationTypeDef(TypedDict):
-    configDetails: NotRequired[ConfigDetailsTypeDef],  # (1)
-    configId: NotRequired[str],
-    configType: NotRequired[ConfigCapabilityTypeType],  # (2)
-    dataflowDestinationRegion: NotRequired[str],
-```
-
-1. See [:material-code-braces: ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef) 
-2. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
-## SourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_groundstation.type_defs import SourceTypeDef
-
-def get_value() -> SourceTypeDef:
-    return {
-        "configDetails": ...,
-    }
-```
-
-```python title="Definition"
-class SourceTypeDef(TypedDict):
-    configDetails: NotRequired[ConfigDetailsTypeDef],  # (1)
-    configId: NotRequired[str],
-    configType: NotRequired[ConfigCapabilityTypeType],  # (2)
-    dataflowSourceRegion: NotRequired[str],
-```
-
-1. See [:material-code-braces: ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef) 
-2. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
 ## CreateConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2033,6 +2256,27 @@ class UpdateConfigRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef) 
 2. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
+## EndpointDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import EndpointDetailsTypeDef
+
+def get_value() -> EndpointDetailsTypeDef:
+    return {
+        "awsGroundStationAgentEndpoint": ...,
+    }
+```
+
+```python title="Definition"
+class EndpointDetailsTypeDef(TypedDict):
+    awsGroundStationAgentEndpoint: NotRequired[AwsGroundStationAgentEndpointTypeDef],  # (1)
+    endpoint: NotRequired[DataflowEndpointTypeDef],  # (2)
+    securityDetails: NotRequired[SecurityDetailsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AwsGroundStationAgentEndpointTypeDef](./type_defs.md#awsgroundstationagentendpointtypedef) 
+2. See [:material-code-braces: DataflowEndpointTypeDef](./type_defs.md#dataflowendpointtypedef) 
+3. See [:material-code-braces: SecurityDetailsTypeDef](./type_defs.md#securitydetailstypedef) 
 ## CreateEphemerisRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2058,6 +2302,119 @@ class CreateEphemerisRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EphemerisDataTypeDef](./type_defs.md#ephemerisdatatypedef) 
+## ConfigDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import ConfigDetailsTypeDef
+
+def get_value() -> ConfigDetailsTypeDef:
+    return {
+        "antennaDemodDecodeDetails": ...,
+    }
+```
+
+```python title="Definition"
+class ConfigDetailsTypeDef(TypedDict):
+    antennaDemodDecodeDetails: NotRequired[AntennaDemodDecodeDetailsTypeDef],  # (1)
+    endpointDetails: NotRequired[EndpointDetailsTypeDef],  # (2)
+    s3RecordingDetails: NotRequired[S3RecordingDetailsTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: AntennaDemodDecodeDetailsTypeDef](./type_defs.md#antennademoddecodedetailstypedef) 
+2. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
+3. See [:material-code-braces: S3RecordingDetailsTypeDef](./type_defs.md#s3recordingdetailstypedef) 
+## CreateDataflowEndpointGroupRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import CreateDataflowEndpointGroupRequestRequestTypeDef
+
+def get_value() -> CreateDataflowEndpointGroupRequestRequestTypeDef:
+    return {
+        "endpointDetails": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDataflowEndpointGroupRequestRequestTypeDef(TypedDict):
+    endpointDetails: Sequence[EndpointDetailsTypeDef],  # (1)
+    contactPostPassDurationSeconds: NotRequired[int],
+    contactPrePassDurationSeconds: NotRequired[int],
+    tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
+## GetDataflowEndpointGroupResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupResponseTypeDef
+
+def get_value() -> GetDataflowEndpointGroupResponseTypeDef:
+    return {
+        "contactPostPassDurationSeconds": ...,
+        "contactPrePassDurationSeconds": ...,
+        "dataflowEndpointGroupArn": ...,
+        "dataflowEndpointGroupId": ...,
+        "endpointsDetails": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetDataflowEndpointGroupResponseTypeDef(TypedDict):
+    contactPostPassDurationSeconds: int,
+    contactPrePassDurationSeconds: int,
+    dataflowEndpointGroupArn: str,
+    dataflowEndpointGroupId: str,
+    endpointsDetails: List[EndpointDetailsTypeDef],  # (1)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DestinationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "configDetails": ...,
+    }
+```
+
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    configDetails: NotRequired[ConfigDetailsTypeDef],  # (1)
+    configId: NotRequired[str],
+    configType: NotRequired[ConfigCapabilityTypeType],  # (2)
+    dataflowDestinationRegion: NotRequired[str],
+```
+
+1. See [:material-code-braces: ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef) 
+2. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
+## SourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.type_defs import SourceTypeDef
+
+def get_value() -> SourceTypeDef:
+    return {
+        "configDetails": ...,
+    }
+```
+
+```python title="Definition"
+class SourceTypeDef(TypedDict):
+    configDetails: NotRequired[ConfigDetailsTypeDef],  # (1)
+    configId: NotRequired[str],
+    configType: NotRequired[ConfigCapabilityTypeType],  # (2)
+    dataflowSourceRegion: NotRequired[str],
+```
+
+1. See [:material-code-braces: ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef) 
+2. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
 ## DataflowDetailTypeDef
 
 ```python title="Usage Example"

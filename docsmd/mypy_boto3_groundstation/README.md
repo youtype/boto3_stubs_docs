@@ -115,14 +115,17 @@ def get_contact_scheduled_waiter() -> ContactScheduledWaiter:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_groundstation.literals import AngleUnitsType
+from mypy_boto3_groundstation.literals import AgentStatusType
 
-def get_value() -> AngleUnitsType:
-    return "DEGREE_ANGLE"
+def get_value() -> AgentStatusType:
+    return "ACTIVE"
 ```
 
+- [AgentStatusType](./literals.md#agentstatustype)
 - [AngleUnitsType](./literals.md#angleunitstype)
+- [AuditResultsType](./literals.md#auditresultstype)
 - [BandwidthUnitsType](./literals.md#bandwidthunitstype)
+- [ComponentTypeType](./literals.md#componenttypetype)
 - [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - [ContactScheduledWaiterName](./literals.md#contactscheduledwaitername)
 - [ContactStatusType](./literals.md#contactstatustype)
@@ -156,19 +159,23 @@ def get_value() -> AngleUnitsType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_groundstation.type_defs import AntennaDemodDecodeDetailsTypeDef
+from mypy_boto3_groundstation.type_defs import ComponentVersionTypeDef
 
-def get_value() -> AntennaDemodDecodeDetailsTypeDef:
+def get_value() -> ComponentVersionTypeDef:
     return {
-        "outputNode": ...,
+        "componentType": ...,
+        "versions": ...,
     }
 ```
 
+- [ComponentVersionTypeDef](./type_defs.md#componentversiontypedef)
+- [AggregateStatusTypeDef](./type_defs.md#aggregatestatustypedef)
 - [AntennaDemodDecodeDetailsTypeDef](./type_defs.md#antennademoddecodedetailstypedef)
 - [DecodeConfigTypeDef](./type_defs.md#decodeconfigtypedef)
 - [DemodulationConfigTypeDef](./type_defs.md#demodulationconfigtypedef)
 - [EirpTypeDef](./type_defs.md#eirptypedef)
 - [CancelContactRequestRequestTypeDef](./type_defs.md#cancelcontactrequestrequesttypedef)
+- [ComponentStatusDataTypeDef](./type_defs.md#componentstatusdatatypedef)
 - [S3RecordingDetailsTypeDef](./type_defs.md#s3recordingdetailstypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ConfigListItemTypeDef](./type_defs.md#configlistitemtypedef)
@@ -176,10 +183,10 @@ def get_value() -> AntennaDemodDecodeDetailsTypeDef:
 - [S3RecordingConfigTypeDef](./type_defs.md#s3recordingconfigtypedef)
 - [TrackingConfigTypeDef](./type_defs.md#trackingconfigtypedef)
 - [UplinkEchoConfigTypeDef](./type_defs.md#uplinkechoconfigtypedef)
-- [ElevationTypeDef](./type_defs.md#elevationtypedef)
-- [CreateMissionProfileRequestRequestTypeDef](./type_defs.md#createmissionprofilerequestrequesttypedef)
-- [DataflowEndpointListItemTypeDef](./type_defs.md#dataflowendpointlistitemtypedef)
 - [SocketAddressTypeDef](./type_defs.md#socketaddresstypedef)
+- [ElevationTypeDef](./type_defs.md#elevationtypedef)
+- [KmsKeyTypeDef](./type_defs.md#kmskeytypedef)
+- [DataflowEndpointListItemTypeDef](./type_defs.md#dataflowendpointlistitemtypedef)
 - [DeleteConfigRequestRequestTypeDef](./type_defs.md#deleteconfigrequestrequesttypedef)
 - [DeleteDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#deletedataflowendpointgrouprequestrequesttypedef)
 - [DeleteEphemerisRequestRequestTypeDef](./type_defs.md#deleteephemerisrequestrequesttypedef)
@@ -187,17 +194,20 @@ def get_value() -> AntennaDemodDecodeDetailsTypeDef:
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef)
 - [DescribeEphemerisRequestRequestTypeDef](./type_defs.md#describeephemerisrequestrequesttypedef)
+- [DiscoveryDataTypeDef](./type_defs.md#discoverydatatypedef)
 - [SecurityDetailsTypeDef](./type_defs.md#securitydetailstypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 - [EphemerisMetaDataTypeDef](./type_defs.md#ephemerismetadatatypedef)
 - [FrequencyBandwidthTypeDef](./type_defs.md#frequencybandwidthtypedef)
 - [FrequencyTypeDef](./type_defs.md#frequencytypedef)
+- [GetAgentConfigurationRequestRequestTypeDef](./type_defs.md#getagentconfigurationrequestrequesttypedef)
 - [GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef)
 - [GetDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#getdataflowendpointgrouprequestrequesttypedef)
 - [GetMinuteUsageRequestRequestTypeDef](./type_defs.md#getminuteusagerequestrequesttypedef)
 - [GetMissionProfileRequestRequestTypeDef](./type_defs.md#getmissionprofilerequestrequesttypedef)
 - [GetSatelliteRequestRequestTypeDef](./type_defs.md#getsatelliterequestrequesttypedef)
 - [GroundStationDataTypeDef](./type_defs.md#groundstationdatatypedef)
+- [IntegerRangeTypeDef](./type_defs.md#integerrangetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListConfigsRequestRequestTypeDef](./type_defs.md#listconfigsrequestrequesttypedef)
 - [ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef)
@@ -213,19 +223,26 @@ def get_value() -> AntennaDemodDecodeDetailsTypeDef:
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateEphemerisRequestRequestTypeDef](./type_defs.md#updateephemerisrequestrequesttypedef)
-- [UpdateMissionProfileRequestRequestTypeDef](./type_defs.md#updatemissionprofilerequestrequesttypedef)
+- [AgentDetailsTypeDef](./type_defs.md#agentdetailstypedef)
+- [UpdateAgentStatusRequestRequestTypeDef](./type_defs.md#updateagentstatusrequestrequesttypedef)
 - [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef)
 - [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef)
 - [DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef)
 - [EphemerisIdResponseTypeDef](./type_defs.md#ephemerisidresponsetypedef)
+- [GetAgentConfigurationResponseTypeDef](./type_defs.md#getagentconfigurationresponsetypedef)
 - [GetMinuteUsageResponseTypeDef](./type_defs.md#getminuteusageresponsetypedef)
-- [GetMissionProfileResponseTypeDef](./type_defs.md#getmissionprofileresponsetypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef)
+- [RegisterAgentResponseTypeDef](./type_defs.md#registeragentresponsetypedef)
+- [UpdateAgentStatusResponseTypeDef](./type_defs.md#updateagentstatusresponsetypedef)
 - [ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef)
-- [ContactDataTypeDef](./type_defs.md#contactdatatypedef)
-- [ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)
+- [ConnectionDetailsTypeDef](./type_defs.md#connectiondetailstypedef)
 - [DataflowEndpointTypeDef](./type_defs.md#dataflowendpointtypedef)
+- [ContactDataTypeDef](./type_defs.md#contactdatatypedef)
+- [CreateMissionProfileRequestRequestTypeDef](./type_defs.md#createmissionprofilerequestrequesttypedef)
+- [GetMissionProfileResponseTypeDef](./type_defs.md#getmissionprofileresponsetypedef)
+- [UpdateMissionProfileRequestRequestTypeDef](./type_defs.md#updatemissionprofilerequestrequesttypedef)
+- [ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)
 - [DescribeContactRequestContactScheduledWaitTypeDef](./type_defs.md#describecontactrequestcontactscheduledwaittypedef)
 - [EphemerisDescriptionTypeDef](./type_defs.md#ephemerisdescriptiontypedef)
 - [EphemerisItemTypeDef](./type_defs.md#ephemerisitemtypedef)
@@ -235,6 +252,7 @@ def get_value() -> AntennaDemodDecodeDetailsTypeDef:
 - [SpectrumConfigTypeDef](./type_defs.md#spectrumconfigtypedef)
 - [UplinkSpectrumConfigTypeDef](./type_defs.md#uplinkspectrumconfigtypedef)
 - [ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef)
+- [RangedSocketAddressTypeDef](./type_defs.md#rangedsocketaddresstypedef)
 - [ListConfigsRequestListConfigsPaginateTypeDef](./type_defs.md#listconfigsrequestlistconfigspaginatetypedef)
 - [ListContactsRequestListContactsPaginateTypeDef](./type_defs.md#listcontactsrequestlistcontactspaginatetypedef)
 - [ListDataflowEndpointGroupsRequestListDataflowEndpointGroupsPaginateTypeDef](./type_defs.md#listdataflowendpointgroupsrequestlistdataflowendpointgroupspaginatetypedef)
@@ -244,27 +262,30 @@ def get_value() -> AntennaDemodDecodeDetailsTypeDef:
 - [ListSatellitesRequestListSatellitesPaginateTypeDef](./type_defs.md#listsatellitesrequestlistsatellitespaginatetypedef)
 - [ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef)
 - [TLEDataTypeDef](./type_defs.md#tledatatypedef)
+- [RegisterAgentRequestRequestTypeDef](./type_defs.md#registeragentrequestrequesttypedef)
 - [ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef)
-- [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
 - [EphemerisTypeDescriptionTypeDef](./type_defs.md#ephemeristypedescriptiontypedef)
 - [ListEphemeridesResponseTypeDef](./type_defs.md#listephemeridesresponsetypedef)
 - [ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef)
 - [AntennaDownlinkConfigTypeDef](./type_defs.md#antennadownlinkconfigtypedef)
 - [AntennaDownlinkDemodDecodeConfigTypeDef](./type_defs.md#antennadownlinkdemoddecodeconfigtypedef)
 - [AntennaUplinkConfigTypeDef](./type_defs.md#antennauplinkconfigtypedef)
+- [RangedConnectionDetailsTypeDef](./type_defs.md#rangedconnectiondetailstypedef)
 - [TLEEphemerisTypeDef](./type_defs.md#tleephemeristypedef)
-- [ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef)
-- [CreateDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#createdataflowendpointgrouprequestrequesttypedef)
-- [GetDataflowEndpointGroupResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponsetypedef)
 - [DescribeEphemerisResponseTypeDef](./type_defs.md#describeephemerisresponsetypedef)
 - [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
+- [AwsGroundStationAgentEndpointTypeDef](./type_defs.md#awsgroundstationagentendpointtypedef)
 - [EphemerisDataTypeDef](./type_defs.md#ephemerisdatatypedef)
-- [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- [SourceTypeDef](./type_defs.md#sourcetypedef)
 - [CreateConfigRequestRequestTypeDef](./type_defs.md#createconfigrequestrequesttypedef)
 - [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef)
 - [UpdateConfigRequestRequestTypeDef](./type_defs.md#updateconfigrequestrequesttypedef)
+- [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
 - [CreateEphemerisRequestRequestTypeDef](./type_defs.md#createephemerisrequestrequesttypedef)
+- [ConfigDetailsTypeDef](./type_defs.md#configdetailstypedef)
+- [CreateDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#createdataflowendpointgrouprequestrequesttypedef)
+- [GetDataflowEndpointGroupResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponsetypedef)
+- [DestinationTypeDef](./type_defs.md#destinationtypedef)
+- [SourceTypeDef](./type_defs.md#sourcetypedef)
 - [DataflowDetailTypeDef](./type_defs.md#dataflowdetailtypedef)
 - [DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef)
 

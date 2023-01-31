@@ -420,6 +420,22 @@ class CompatibleVersionsMapTypeDef(TypedDict):
     TargetVersions: NotRequired[List[str]],
 ```
 
+## ConnectionPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import ConnectionPropertiesTypeDef
+
+def get_value() -> ConnectionPropertiesTypeDef:
+    return {
+        "Endpoint": ...,
+    }
+```
+
+```python title="Definition"
+class ConnectionPropertiesTypeDef(TypedDict):
+    Endpoint: NotRequired[str],
+```
+
 ## DomainEndpointOptionsTypeDef
 
 ```python title="Usage Example"
@@ -2619,10 +2635,12 @@ class CreateOutboundConnectionRequestRequestTypeDef(TypedDict):
     LocalDomainInfo: DomainInformationContainerTypeDef,  # (1)
     RemoteDomainInfo: DomainInformationContainerTypeDef,  # (1)
     ConnectionAlias: str,
+    ConnectionMode: NotRequired[ConnectionModeType],  # (3)
 ```
 
 1. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 2. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
+3. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
 ## CreateOutboundConnectionResponseTypeDef
 
 ```python title="Usage Example"
@@ -2635,6 +2653,8 @@ def get_value() -> CreateOutboundConnectionResponseTypeDef:
         "ConnectionAlias": ...,
         "ConnectionStatus": ...,
         "ConnectionId": ...,
+        "ConnectionMode": ...,
+        "ConnectionProperties": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2646,13 +2666,17 @@ class CreateOutboundConnectionResponseTypeDef(TypedDict):
     ConnectionAlias: str,
     ConnectionStatus: OutboundConnectionStatusTypeDef,  # (3)
     ConnectionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    ConnectionMode: ConnectionModeType,  # (4)
+    ConnectionProperties: ConnectionPropertiesTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
 1. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 2. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 3. See [:material-code-braces: OutboundConnectionStatusTypeDef](./type_defs.md#outboundconnectionstatustypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+5. See [:material-code-braces: ConnectionPropertiesTypeDef](./type_defs.md#connectionpropertiestypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InboundConnectionTypeDef
 
 ```python title="Usage Example"
@@ -2670,11 +2694,13 @@ class InboundConnectionTypeDef(TypedDict):
     RemoteDomainInfo: NotRequired[DomainInformationContainerTypeDef],  # (1)
     ConnectionId: NotRequired[str],
     ConnectionStatus: NotRequired[InboundConnectionStatusTypeDef],  # (3)
+    ConnectionMode: NotRequired[ConnectionModeType],  # (4)
 ```
 
 1. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 2. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 3. See [:material-code-braces: InboundConnectionStatusTypeDef](./type_defs.md#inboundconnectionstatustypedef) 
+4. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
 ## OutboundConnectionTypeDef
 
 ```python title="Usage Example"
@@ -2693,11 +2719,15 @@ class OutboundConnectionTypeDef(TypedDict):
     ConnectionId: NotRequired[str],
     ConnectionAlias: NotRequired[str],
     ConnectionStatus: NotRequired[OutboundConnectionStatusTypeDef],  # (3)
+    ConnectionMode: NotRequired[ConnectionModeType],  # (4)
+    ConnectionProperties: NotRequired[ConnectionPropertiesTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 2. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
 3. See [:material-code-braces: OutboundConnectionStatusTypeDef](./type_defs.md#outboundconnectionstatustypedef) 
+4. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+5. See [:material-code-braces: ConnectionPropertiesTypeDef](./type_defs.md#connectionpropertiestypedef) 
 ## AutoTuneTypeDef
 
 ```python title="Usage Example"

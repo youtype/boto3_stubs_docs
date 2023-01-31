@@ -38,6 +38,9 @@ except (
     client.AccountRegisteredException,
     client.CannotDelegateManagementAccountException,
     client.ChannelARNInvalidException,
+    client.ChannelAlreadyExistsException,
+    client.ChannelExistsForEDSException,
+    client.ChannelMaxLimitExceededException,
     client.ChannelNotFoundException,
     client.ClientError,
     client.CloudTrailARNInvalidException,
@@ -81,6 +84,7 @@ except (
     client.InvalidS3BucketNameException,
     client.InvalidS3PrefixException,
     client.InvalidSnsTopicNameException,
+    client.InvalidSourceException,
     client.InvalidTagParameterException,
     client.InvalidTimeRangeException,
     client.InvalidTokenException,
@@ -97,7 +101,10 @@ except (
     client.OrganizationNotInAllFeaturesModeException,
     client.OrganizationsNotInUseException,
     client.QueryIdNotFoundException,
+    client.ResourceARNNotValidException,
     client.ResourceNotFoundException,
+    client.ResourcePolicyNotFoundException,
+    client.ResourcePolicyNotValidException,
     client.ResourceTypeNotSupportedException,
     client.S3BucketDoesNotExistException,
     client.TagsLimitExceededException,
@@ -122,7 +129,8 @@ def handle_error(exc: Exceptions.AccountHasOngoingImportException) -> None:
 
 ### add\_tags
 
-Adds one or more tags to a trail or event data store, up to a limit of 50.
+Adds one or more tags to a trail, event data store, or channel, up to a limit of
+50.
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").add_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
@@ -213,6 +221,43 @@ def close(
 ```
 
 
+### create\_channel
+
+Creates a channel for CloudTrail to ingest events from a partner or external
+source.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").create_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_channel)
+
+```python title="Method definition"
+def create_channel(
+    self,
+    *,
+    Name: str,
+    Source: str,
+    Destinations: Sequence[DestinationTypeDef],  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateChannelResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateChannelRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Source": ...,
+    "Destinations": ...,
+}
+
+parent.create_channel(**kwargs)
+```
+
+1. See [:material-code-braces: CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef) 
+
 ### create\_event\_data\_store
 
 Creates a new event data store.
@@ -294,6 +339,34 @@ parent.create_trail(**kwargs)
 
 1. See [:material-code-braces: CreateTrailRequestRequestTypeDef](./type_defs.md#createtrailrequestrequesttypedef) 
 
+### delete\_channel
+
+Deletes a channel.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").delete_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_channel)
+
+```python title="Method definition"
+def delete_channel(
+    self,
+    *,
+    Channel: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelRequestRequestTypeDef = {  # (1)
+    "Channel": ...,
+}
+
+parent.delete_channel(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef) 
+
 ### delete\_event\_data\_store
 
 Disables the event data store specified by `EventDataStore` , which accepts an
@@ -322,6 +395,34 @@ parent.delete_event_data_store(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteEventDataStoreRequestRequestTypeDef](./type_defs.md#deleteeventdatastorerequestrequesttypedef) 
+
+### delete\_resource\_policy
+
+Deletes the resource-based policy attached to the CloudTrail channel.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_resource_policy)
+
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.delete_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
 
 ### delete\_trail
 
@@ -641,6 +742,36 @@ parent.get_query_results(**kwargs)
 
 1. See [:material-code-braces: GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef) 
 
+### get\_resource\_policy
+
+Retrieves the JSON text of the resource-based policy document attached to the
+CloudTrail channel.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_resource_policy)
+
+```python title="Method definition"
+def get_resource_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.get_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef) 
+
 ### get\_trail
 
 Returns settings information for a specified trail.
@@ -894,7 +1025,8 @@ parent.list_queries(**kwargs)
 
 ### list\_tags
 
-Lists the tags for the trail or event data store in the current region.
+Lists the tags for the trail, event data store, or channel in the current
+region.
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").list_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
@@ -1057,6 +1189,38 @@ parent.put_insight_selectors(**kwargs)
 
 1. See [:material-code-braces: PutInsightSelectorsRequestRequestTypeDef](./type_defs.md#putinsightselectorsrequestrequesttypedef) 
 
+### put\_resource\_policy
+
+Attaches a resource-based permission policy to a CloudTrail channel that is used
+for an integration with an event source outside of Amazon Web Services.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_resource_policy)
+
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    ResourceArn: str,
+    ResourcePolicy: str,
+) -> PutResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "ResourcePolicy": ...,
+}
+
+parent.put_resource_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
+
 ### register\_organization\_delegated\_admin
 
 Registers an organization’s member account as the CloudTrail delegated
@@ -1088,7 +1252,7 @@ parent.register_organization_delegated_admin(**kwargs)
 
 ### remove\_tags
 
-Removes the specified tags from a trail or event data store.
+Removes the specified tags from a trail, event data store, or channel.
 
 Type annotations and code completion for `#!python boto3.client("cloudtrail").remove_tags` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
@@ -1298,6 +1462,38 @@ parent.stop_logging(**kwargs)
 ```
 
 1. See [:material-code-braces: StopLoggingRequestRequestTypeDef](./type_defs.md#stoploggingrequestrequesttypedef) 
+
+### update\_channel
+
+Updates a channel specified by a required channel ARN or UUID.
+
+Type annotations and code completion for `#!python boto3.client("cloudtrail").update_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_channel)
+
+```python title="Method definition"
+def update_channel(
+    self,
+    *,
+    Channel: str,
+    Destinations: Sequence[DestinationTypeDef] = ...,  # (1)
+    Name: str = ...,
+) -> UpdateChannelResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelRequestRequestTypeDef = {  # (1)
+    "Channel": ...,
+}
+
+parent.update_channel(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef) 
 
 ### update\_event\_data\_store
 

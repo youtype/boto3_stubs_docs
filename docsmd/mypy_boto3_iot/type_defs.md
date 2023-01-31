@@ -86,6 +86,7 @@ def get_value() -> CloudwatchLogsActionTypeDef:
 class CloudwatchLogsActionTypeDef(TypedDict):
     roleArn: str,
     logGroupName: str,
+    batchMode: NotRequired[bool],
 ```
 
 ## CloudwatchMetricActionTypeDef

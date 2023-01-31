@@ -161,6 +161,7 @@ def get_value() -> DataSourceTypeType:
 DataSourceTypeType = Literal[
     "AMAZON_DYNAMODB",
     "AMAZON_ELASTICSEARCH",
+    "AMAZON_EVENTBRIDGE",
     "AMAZON_OPENSEARCH_SERVICE",
     "AWS_LAMBDA",
     "HTTP",
@@ -467,6 +468,7 @@ ServiceName = Literal[
     "cloudsearch",
     "cloudsearchdomain",
     "cloudtrail",
+    "cloudtrail-data",
     "cloudwatch",
     "codeartifact",
     "codebuild",

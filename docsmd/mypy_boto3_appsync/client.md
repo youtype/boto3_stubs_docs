@@ -213,7 +213,8 @@ def create_data_source(
     openSearchServiceConfig: OpenSearchServiceDataSourceConfigTypeDef = ...,  # (5)
     httpConfig: HttpDataSourceConfigTypeDef = ...,  # (6)
     relationalDatabaseConfig: RelationalDatabaseDataSourceConfigTypeDef = ...,  # (7)
-) -> CreateDataSourceResponseTypeDef:  # (8)
+    eventBridgeConfig: EventBridgeDataSourceConfigTypeDef = ...,  # (8)
+) -> CreateDataSourceResponseTypeDef:  # (9)
     ...
 ```
 
@@ -224,7 +225,8 @@ def create_data_source(
 5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
 6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
 7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
-8. See [:material-code-braces: CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef) 
+8. See [:material-code-braces: EventBridgeDataSourceConfigTypeDef](./type_defs.md#eventbridgedatasourceconfigtypedef) 
+9. See [:material-code-braces: CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1589,7 +1591,8 @@ def update_data_source(
     openSearchServiceConfig: OpenSearchServiceDataSourceConfigTypeDef = ...,  # (5)
     httpConfig: HttpDataSourceConfigTypeDef = ...,  # (6)
     relationalDatabaseConfig: RelationalDatabaseDataSourceConfigTypeDef = ...,  # (7)
-) -> UpdateDataSourceResponseTypeDef:  # (8)
+    eventBridgeConfig: EventBridgeDataSourceConfigTypeDef = ...,  # (8)
+) -> UpdateDataSourceResponseTypeDef:  # (9)
     ...
 ```
 
@@ -1600,7 +1603,8 @@ def update_data_source(
 5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
 6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
 7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
-8. See [:material-code-braces: UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef) 
+8. See [:material-code-braces: EventBridgeDataSourceConfigTypeDef](./type_defs.md#eventbridgedatasourceconfigtypedef) 
+9. See [:material-code-braces: UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

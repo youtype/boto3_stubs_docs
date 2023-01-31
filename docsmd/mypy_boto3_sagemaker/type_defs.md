@@ -641,6 +641,22 @@ class BatchDescribeModelPackageInputRequestTypeDef(TypedDict):
     ModelPackageArnList: Sequence[str],
 ```
 
+## BestObjectiveNotImprovingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import BestObjectiveNotImprovingTypeDef
+
+def get_value() -> BestObjectiveNotImprovingTypeDef:
+    return {
+        "MaxNumberOfTrainingJobsNotImproving": ...,
+    }
+```
+
+```python title="Definition"
+class BestObjectiveNotImprovingTypeDef(TypedDict):
+    MaxNumberOfTrainingJobsNotImproving: NotRequired[int],
+```
+
 ## MetricsSourceTypeDef
 
 ```python title="Usage Example"
@@ -1217,6 +1233,23 @@ class ContinuousParameterRangeTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: HyperParameterScalingTypeType](./literals.md#hyperparameterscalingtypetype) 
+## ConvergenceDetectedTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import ConvergenceDetectedTypeDef
+
+def get_value() -> ConvergenceDetectedTypeDef:
+    return {
+        "CompleteOnConvergence": ...,
+    }
+```
+
+```python title="Definition"
+class ConvergenceDetectedTypeDef(TypedDict):
+    CompleteOnConvergence: NotRequired[CompleteOnConvergenceType],  # (1)
+```
+
+1. See [:material-code-brackets: CompleteOnConvergenceType](./literals.md#completeonconvergencetype) 
 ## MetadataPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -3833,6 +3866,39 @@ class DescribeHyperParameterTuningJobRequestRequestTypeDef(TypedDict):
     HyperParameterTuningJobName: str,
 ```
 
+## HyperParameterTuningJobCompletionDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobCompletionDetailsTypeDef
+
+def get_value() -> HyperParameterTuningJobCompletionDetailsTypeDef:
+    return {
+        "NumberOfTrainingJobsObjectiveNotImproving": ...,
+    }
+```
+
+```python title="Definition"
+class HyperParameterTuningJobCompletionDetailsTypeDef(TypedDict):
+    NumberOfTrainingJobsObjectiveNotImproving: NotRequired[int],
+    ConvergenceDetectedTime: NotRequired[datetime],
+```
+
+## HyperParameterTuningJobConsumedResourcesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import HyperParameterTuningJobConsumedResourcesTypeDef
+
+def get_value() -> HyperParameterTuningJobConsumedResourcesTypeDef:
+    return {
+        "RuntimeInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class HyperParameterTuningJobConsumedResourcesTypeDef(TypedDict):
+    RuntimeInSeconds: NotRequired[int],
+```
+
 ## ObjectiveStatusCountersTypeDef
 
 ```python title="Usage Example"
@@ -5453,22 +5519,7 @@ def get_value() -> ResourceLimitsTypeDef:
 class ResourceLimitsTypeDef(TypedDict):
     MaxParallelTrainingJobs: int,
     MaxNumberOfTrainingJobs: NotRequired[int],
-```
-
-## TuningJobCompletionCriteriaTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import TuningJobCompletionCriteriaTypeDef
-
-def get_value() -> TuningJobCompletionCriteriaTypeDef:
-    return {
-        "TargetObjectiveMetricValue": ...,
-    }
-```
-
-```python title="Definition"
-class TuningJobCompletionCriteriaTypeDef(TypedDict):
-    TargetObjectiveMetricValue: float,
+    MaxRuntimeInSeconds: NotRequired[int],
 ```
 
 ## HyperbandStrategyConfigTypeDef
@@ -12879,6 +12930,26 @@ class DescribeContextResponseTypeDef(TypedDict):
 2. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
 3. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
 4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TuningJobCompletionCriteriaTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import TuningJobCompletionCriteriaTypeDef
+
+def get_value() -> TuningJobCompletionCriteriaTypeDef:
+    return {
+        "TargetObjectiveMetricValue": ...,
+    }
+```
+
+```python title="Definition"
+class TuningJobCompletionCriteriaTypeDef(TypedDict):
+    TargetObjectiveMetricValue: NotRequired[float],
+    BestObjectiveNotImproving: NotRequired[BestObjectiveNotImprovingTypeDef],  # (1)
+    ConvergenceDetected: NotRequired[ConvergenceDetectedTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: BestObjectiveNotImprovingTypeDef](./type_defs.md#bestobjectivenotimprovingtypedef) 
+2. See [:material-code-braces: ConvergenceDetectedTypeDef](./type_defs.md#convergencedetectedtypedef) 
 ## CreateActionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -23502,6 +23573,8 @@ def get_value() -> DescribeHyperParameterTuningJobResponseTypeDef:
         "OverallBestTrainingJob": ...,
         "WarmStartConfig": ...,
         "FailureReason": ...,
+        "TuningJobCompletionDetails": ...,
+        "ConsumedResources": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -23523,7 +23596,9 @@ class DescribeHyperParameterTuningJobResponseTypeDef(TypedDict):
     OverallBestTrainingJob: HyperParameterTrainingJobSummaryTypeDef,  # (7)
     WarmStartConfig: HyperParameterTuningJobWarmStartConfigTypeDef,  # (9)
     FailureReason: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+    TuningJobCompletionDetails: HyperParameterTuningJobCompletionDetailsTypeDef,  # (10)
+    ConsumedResources: HyperParameterTuningJobConsumedResourcesTypeDef,  # (11)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
 ```
 
 1. See [:material-code-braces: HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef) 
@@ -23535,7 +23610,9 @@ class DescribeHyperParameterTuningJobResponseTypeDef(TypedDict):
 7. See [:material-code-braces: HyperParameterTrainingJobSummaryTypeDef](./type_defs.md#hyperparametertrainingjobsummarytypedef) 
 8. See [:material-code-braces: HyperParameterTrainingJobSummaryTypeDef](./type_defs.md#hyperparametertrainingjobsummarytypedef) 
 9. See [:material-code-braces: HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef) 
-10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+10. See [:material-code-braces: HyperParameterTuningJobCompletionDetailsTypeDef](./type_defs.md#hyperparametertuningjobcompletiondetailstypedef) 
+11. See [:material-code-braces: HyperParameterTuningJobConsumedResourcesTypeDef](./type_defs.md#hyperparametertuningjobconsumedresourcestypedef) 
+12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HyperParameterTuningJobSearchEntityTypeDef
 
 ```python title="Usage Example"
@@ -23565,6 +23642,8 @@ class HyperParameterTuningJobSearchEntityTypeDef(TypedDict):
     WarmStartConfig: NotRequired[HyperParameterTuningJobWarmStartConfigTypeDef],  # (9)
     FailureReason: NotRequired[str],
     Tags: NotRequired[List[TagTypeDef]],  # (10)
+    TuningJobCompletionDetails: NotRequired[HyperParameterTuningJobCompletionDetailsTypeDef],  # (11)
+    ConsumedResources: NotRequired[HyperParameterTuningJobConsumedResourcesTypeDef],  # (12)
 ```
 
 1. See [:material-code-braces: HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef) 
@@ -23577,6 +23656,8 @@ class HyperParameterTuningJobSearchEntityTypeDef(TypedDict):
 8. See [:material-code-braces: HyperParameterTrainingJobSummaryTypeDef](./type_defs.md#hyperparametertrainingjobsummarytypedef) 
 9. See [:material-code-braces: HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef) 
 10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+11. See [:material-code-braces: HyperParameterTuningJobCompletionDetailsTypeDef](./type_defs.md#hyperparametertuningjobcompletiondetailstypedef) 
+12. See [:material-code-braces: HyperParameterTuningJobConsumedResourcesTypeDef](./type_defs.md#hyperparametertuningjobconsumedresourcestypedef) 
 ## ListInferenceRecommendationsJobStepsResponseTypeDef
 
 ```python title="Usage Example"

@@ -301,6 +301,22 @@ class ElasticsearchDataSourceConfigTypeDef(TypedDict):
     awsRegion: str,
 ```
 
+## EventBridgeDataSourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_appsync.type_defs import EventBridgeDataSourceConfigTypeDef
+
+def get_value() -> EventBridgeDataSourceConfigTypeDef:
+    return {
+        "eventBusArn": ...,
+    }
+```
+
+```python title="Definition"
+class EventBridgeDataSourceConfigTypeDef(TypedDict):
+    eventBusArn: str,
+```
+
 ## LambdaDataSourceConfigTypeDef
 
 ```python title="Usage Example"
@@ -2372,6 +2388,7 @@ class CreateDataSourceRequestRequestTypeDef(TypedDict):
     openSearchServiceConfig: NotRequired[OpenSearchServiceDataSourceConfigTypeDef],  # (5)
     httpConfig: NotRequired[HttpDataSourceConfigTypeDef],  # (6)
     relationalDatabaseConfig: NotRequired[RelationalDatabaseDataSourceConfigTypeDef],  # (7)
+    eventBridgeConfig: NotRequired[EventBridgeDataSourceConfigTypeDef],  # (8)
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
@@ -2381,6 +2398,7 @@ class CreateDataSourceRequestRequestTypeDef(TypedDict):
 5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
 6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
 7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
+8. See [:material-code-braces: EventBridgeDataSourceConfigTypeDef](./type_defs.md#eventbridgedatasourceconfigtypedef) 
 ## DataSourceTypeDef
 
 ```python title="Usage Example"
@@ -2405,6 +2423,7 @@ class DataSourceTypeDef(TypedDict):
     openSearchServiceConfig: NotRequired[OpenSearchServiceDataSourceConfigTypeDef],  # (5)
     httpConfig: NotRequired[HttpDataSourceConfigTypeDef],  # (6)
     relationalDatabaseConfig: NotRequired[RelationalDatabaseDataSourceConfigTypeDef],  # (7)
+    eventBridgeConfig: NotRequired[EventBridgeDataSourceConfigTypeDef],  # (8)
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
@@ -2414,6 +2433,7 @@ class DataSourceTypeDef(TypedDict):
 5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
 6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
 7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
+8. See [:material-code-braces: EventBridgeDataSourceConfigTypeDef](./type_defs.md#eventbridgedatasourceconfigtypedef) 
 ## UpdateDataSourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2440,6 +2460,7 @@ class UpdateDataSourceRequestRequestTypeDef(TypedDict):
     openSearchServiceConfig: NotRequired[OpenSearchServiceDataSourceConfigTypeDef],  # (5)
     httpConfig: NotRequired[HttpDataSourceConfigTypeDef],  # (6)
     relationalDatabaseConfig: NotRequired[RelationalDatabaseDataSourceConfigTypeDef],  # (7)
+    eventBridgeConfig: NotRequired[EventBridgeDataSourceConfigTypeDef],  # (8)
 ```
 
 1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
@@ -2449,6 +2470,7 @@ class UpdateDataSourceRequestRequestTypeDef(TypedDict):
 5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
 6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
 7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
+8. See [:material-code-braces: EventBridgeDataSourceConfigTypeDef](./type_defs.md#eventbridgedatasourceconfigtypedef) 
 ## EvaluateCodeResponseTypeDef
 
 ```python title="Usage Example"

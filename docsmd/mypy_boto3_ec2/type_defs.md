@@ -659,6 +659,49 @@ class Ipv4PrefixSpecificationTypeDef(TypedDict):
     Ipv4Prefix: NotRequired[str],
 ```
 
+## AssignPrivateNatGatewayAddressRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssignPrivateNatGatewayAddressRequestRequestTypeDef
+
+def get_value() -> AssignPrivateNatGatewayAddressRequestRequestTypeDef:
+    return {
+        "NatGatewayId": ...,
+    }
+```
+
+```python title="Definition"
+class AssignPrivateNatGatewayAddressRequestRequestTypeDef(TypedDict):
+    NatGatewayId: str,
+    PrivateIpAddresses: NotRequired[Sequence[str]],
+    PrivateIpAddressCount: NotRequired[int],
+    DryRun: NotRequired[bool],
+```
+
+## NatGatewayAddressTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import NatGatewayAddressTypeDef
+
+def get_value() -> NatGatewayAddressTypeDef:
+    return {
+        "AllocationId": ...,
+    }
+```
+
+```python title="Definition"
+class NatGatewayAddressTypeDef(TypedDict):
+    AllocationId: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
+    PrivateIp: NotRequired[str],
+    PublicIp: NotRequired[str],
+    AssociationId: NotRequired[str],
+    IsPrimary: NotRequired[bool],
+    FailureMessage: NotRequired[str],
+    Status: NotRequired[NatGatewayAddressStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: NatGatewayAddressStatusType](./literals.md#natgatewayaddressstatustype) 
 ## AssociateAddressRequestClassicAddressAssociateTypeDef
 
 ```python title="Usage Example"
@@ -847,6 +890,26 @@ def get_value() -> IamInstanceProfileSpecificationTypeDef:
 class IamInstanceProfileSpecificationTypeDef(TypedDict):
     Arn: NotRequired[str],
     Name: NotRequired[str],
+```
+
+## AssociateNatGatewayAddressRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssociateNatGatewayAddressRequestRequestTypeDef
+
+def get_value() -> AssociateNatGatewayAddressRequestRequestTypeDef:
+    return {
+        "NatGatewayId": ...,
+        "AllocationIds": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateNatGatewayAddressRequestRequestTypeDef(TypedDict):
+    NatGatewayId: str,
+    AllocationIds: Sequence[str],
+    PrivateIpAddresses: NotRequired[Sequence[str]],
+    DryRun: NotRequired[bool],
 ```
 
 ## AssociateRouteTableRequestRequestTypeDef
@@ -7057,6 +7120,26 @@ class DisassociateIpamResourceDiscoveryRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
+## DisassociateNatGatewayAddressRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisassociateNatGatewayAddressRequestRequestTypeDef
+
+def get_value() -> DisassociateNatGatewayAddressRequestRequestTypeDef:
+    return {
+        "NatGatewayId": ...,
+        "AssociationIds": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateNatGatewayAddressRequestRequestTypeDef(TypedDict):
+    NatGatewayId: str,
+    AssociationIds: Sequence[str],
+    MaxDrainDurationSeconds: NotRequired[int],
+    DryRun: NotRequired[bool],
+```
+
 ## DisassociateRouteTableRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -11969,25 +12052,6 @@ class MoveByoipCidrToIpamRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
 ```
 
-## NatGatewayAddressTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ec2.type_defs import NatGatewayAddressTypeDef
-
-def get_value() -> NatGatewayAddressTypeDef:
-    return {
-        "AllocationId": ...,
-    }
-```
-
-```python title="Definition"
-class NatGatewayAddressTypeDef(TypedDict):
-    AllocationId: NotRequired[str],
-    NetworkInterfaceId: NotRequired[str],
-    PrivateIp: NotRequired[str],
-    PublicIp: NotRequired[str],
-```
-
 ## ProvisionedBandwidthTypeDef
 
 ```python title="Usage Example"
@@ -14693,6 +14757,26 @@ class UnassignPrivateIpAddressesRequestRequestTypeDef(TypedDict):
     NetworkInterfaceId: str,
     PrivateIpAddresses: NotRequired[Sequence[str]],
     Ipv4Prefixes: NotRequired[Sequence[str]],
+```
+
+## UnassignPrivateNatGatewayAddressRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import UnassignPrivateNatGatewayAddressRequestRequestTypeDef
+
+def get_value() -> UnassignPrivateNatGatewayAddressRequestRequestTypeDef:
+    return {
+        "NatGatewayId": ...,
+        "PrivateIpAddresses": ...,
+    }
+```
+
+```python title="Definition"
+class UnassignPrivateNatGatewayAddressRequestRequestTypeDef(TypedDict):
+    NatGatewayId: str,
+    PrivateIpAddresses: Sequence[str],
+    MaxDrainDurationSeconds: NotRequired[int],
+    DryRun: NotRequired[bool],
 ```
 
 ## UnmonitorInstancesRequestInstanceUnmonitorTypeDef
@@ -19617,6 +19701,94 @@ class AssignPrivateIpAddressesResultTypeDef(TypedDict):
 1. See [:material-code-braces: AssignedPrivateIpAddressTypeDef](./type_defs.md#assignedprivateipaddresstypedef) 
 2. See [:material-code-braces: Ipv4PrefixSpecificationTypeDef](./type_defs.md#ipv4prefixspecificationtypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssignPrivateNatGatewayAddressResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssignPrivateNatGatewayAddressResultTypeDef
+
+def get_value() -> AssignPrivateNatGatewayAddressResultTypeDef:
+    return {
+        "NatGatewayId": ...,
+        "NatGatewayAddresses": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssignPrivateNatGatewayAddressResultTypeDef(TypedDict):
+    NatGatewayId: str,
+    NatGatewayAddresses: List[NatGatewayAddressTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NatGatewayAddressTypeDef](./type_defs.md#natgatewayaddresstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AssociateNatGatewayAddressResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import AssociateNatGatewayAddressResultTypeDef
+
+def get_value() -> AssociateNatGatewayAddressResultTypeDef:
+    return {
+        "NatGatewayId": ...,
+        "NatGatewayAddresses": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AssociateNatGatewayAddressResultTypeDef(TypedDict):
+    NatGatewayId: str,
+    NatGatewayAddresses: List[NatGatewayAddressTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NatGatewayAddressTypeDef](./type_defs.md#natgatewayaddresstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DisassociateNatGatewayAddressResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DisassociateNatGatewayAddressResultTypeDef
+
+def get_value() -> DisassociateNatGatewayAddressResultTypeDef:
+    return {
+        "NatGatewayId": ...,
+        "NatGatewayAddresses": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DisassociateNatGatewayAddressResultTypeDef(TypedDict):
+    NatGatewayId: str,
+    NatGatewayAddresses: List[NatGatewayAddressTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NatGatewayAddressTypeDef](./type_defs.md#natgatewayaddresstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UnassignPrivateNatGatewayAddressResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import UnassignPrivateNatGatewayAddressResultTypeDef
+
+def get_value() -> UnassignPrivateNatGatewayAddressResultTypeDef:
+    return {
+        "NatGatewayId": ...,
+        "NatGatewayAddresses": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UnassignPrivateNatGatewayAddressResultTypeDef(TypedDict):
+    NatGatewayId: str,
+    NatGatewayAddresses: List[NatGatewayAddressTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: NatGatewayAddressTypeDef](./type_defs.md#natgatewayaddresstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateClientVpnTargetNetworkResultTypeDef
 
 ```python title="Usage Example"
@@ -34737,6 +34909,9 @@ class CreateNatGatewayRequestRequestTypeDef(TypedDict):
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
     ConnectivityType: NotRequired[ConnectivityTypeType],  # (2)
     PrivateIpAddress: NotRequired[str],
+    SecondaryAllocationIds: NotRequired[Sequence[str]],
+    SecondaryPrivateIpAddresses: NotRequired[Sequence[str]],
+    SecondaryPrivateIpAddressCount: NotRequired[int],
 ```
 
 1. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 

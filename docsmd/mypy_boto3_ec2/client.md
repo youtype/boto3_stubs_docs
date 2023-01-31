@@ -515,6 +515,38 @@ parent.assign_private_ip_addresses(**kwargs)
 
 1. See [:material-code-braces: AssignPrivateIpAddressesRequestRequestTypeDef](./type_defs.md#assignprivateipaddressesrequestrequesttypedef) 
 
+### assign\_private\_nat\_gateway\_address
+
+Assigns one or more private IPv4 addresses to a private NAT gateway.
+
+Type annotations and code completion for `#!python boto3.client("ec2").assign_private_nat_gateway_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_private_nat_gateway_address)
+
+```python title="Method definition"
+def assign_private_nat_gateway_address(
+    self,
+    *,
+    NatGatewayId: str,
+    PrivateIpAddresses: Sequence[str] = ...,
+    PrivateIpAddressCount: int = ...,
+    DryRun: bool = ...,
+) -> AssignPrivateNatGatewayAddressResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AssignPrivateNatGatewayAddressResultTypeDef](./type_defs.md#assignprivatenatgatewayaddressresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssignPrivateNatGatewayAddressRequestRequestTypeDef = {  # (1)
+    "NatGatewayId": ...,
+}
+
+parent.assign_private_nat_gateway_address(**kwargs)
+```
+
+1. See [:material-code-braces: AssignPrivateNatGatewayAddressRequestRequestTypeDef](./type_defs.md#assignprivatenatgatewayaddressrequestrequesttypedef) 
+
 ### associate\_address
 
 Associates an Elastic IP address, or carrier IP address (for instances that are
@@ -748,6 +780,40 @@ parent.associate_ipam_resource_discovery(**kwargs)
 ```
 
 1. See [:material-code-braces: AssociateIpamResourceDiscoveryRequestRequestTypeDef](./type_defs.md#associateipamresourcediscoveryrequestrequesttypedef) 
+
+### associate\_nat\_gateway\_address
+
+Associates Elastic IP addresses (EIPs) and private IPv4 addresses with a public
+NAT gateway.
+
+Type annotations and code completion for `#!python boto3.client("ec2").associate_nat_gateway_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_nat_gateway_address)
+
+```python title="Method definition"
+def associate_nat_gateway_address(
+    self,
+    *,
+    NatGatewayId: str,
+    AllocationIds: Sequence[str],
+    PrivateIpAddresses: Sequence[str] = ...,
+    DryRun: bool = ...,
+) -> AssociateNatGatewayAddressResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: AssociateNatGatewayAddressResultTypeDef](./type_defs.md#associatenatgatewayaddressresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateNatGatewayAddressRequestRequestTypeDef = {  # (1)
+    "NatGatewayId": ...,
+    "AllocationIds": ...,
+}
+
+parent.associate_nat_gateway_address(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateNatGatewayAddressRequestRequestTypeDef](./type_defs.md#associatenatgatewayaddressrequestrequesttypedef) 
 
 ### associate\_route\_table
 
@@ -3011,6 +3077,9 @@ def create_nat_gateway(
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
     ConnectivityType: ConnectivityTypeType = ...,  # (2)
     PrivateIpAddress: str = ...,
+    SecondaryAllocationIds: Sequence[str] = ...,
+    SecondaryPrivateIpAddresses: Sequence[str] = ...,
+    SecondaryPrivateIpAddressCount: int = ...,
 ) -> CreateNatGatewayResultTypeDef:  # (3)
     ...
 ```
@@ -12980,6 +13049,39 @@ parent.disassociate_ipam_resource_discovery(**kwargs)
 
 1. See [:material-code-braces: DisassociateIpamResourceDiscoveryRequestRequestTypeDef](./type_defs.md#disassociateipamresourcediscoveryrequestrequesttypedef) 
 
+### disassociate\_nat\_gateway\_address
+
+Disassociates secondary Elastic IP addresses (EIPs) from a public NAT gateway.
+
+Type annotations and code completion for `#!python boto3.client("ec2").disassociate_nat_gateway_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_nat_gateway_address)
+
+```python title="Method definition"
+def disassociate_nat_gateway_address(
+    self,
+    *,
+    NatGatewayId: str,
+    AssociationIds: Sequence[str],
+    MaxDrainDurationSeconds: int = ...,
+    DryRun: bool = ...,
+) -> DisassociateNatGatewayAddressResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DisassociateNatGatewayAddressResultTypeDef](./type_defs.md#disassociatenatgatewayaddressresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateNatGatewayAddressRequestRequestTypeDef = {  # (1)
+    "NatGatewayId": ...,
+    "AssociationIds": ...,
+}
+
+parent.disassociate_nat_gateway_address(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateNatGatewayAddressRequestRequestTypeDef](./type_defs.md#disassociatenatgatewayaddressrequestrequesttypedef) 
+
 ### disassociate\_route\_table
 
 Disassociates a subnet or gateway from a route table.
@@ -19906,6 +20008,40 @@ parent.unassign_private_ip_addresses(**kwargs)
 ```
 
 1. See [:material-code-braces: UnassignPrivateIpAddressesRequestRequestTypeDef](./type_defs.md#unassignprivateipaddressesrequestrequesttypedef) 
+
+### unassign\_private\_nat\_gateway\_address
+
+Unassigns secondary private NAT gateway IPv4 addresses from a private NAT
+gateway.
+
+Type annotations and code completion for `#!python boto3.client("ec2").unassign_private_nat_gateway_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_private_nat_gateway_address)
+
+```python title="Method definition"
+def unassign_private_nat_gateway_address(
+    self,
+    *,
+    NatGatewayId: str,
+    PrivateIpAddresses: Sequence[str],
+    MaxDrainDurationSeconds: int = ...,
+    DryRun: bool = ...,
+) -> UnassignPrivateNatGatewayAddressResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UnassignPrivateNatGatewayAddressResultTypeDef](./type_defs.md#unassignprivatenatgatewayaddressresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UnassignPrivateNatGatewayAddressRequestRequestTypeDef = {  # (1)
+    "NatGatewayId": ...,
+    "PrivateIpAddresses": ...,
+}
+
+parent.unassign_private_nat_gateway_address(**kwargs)
+```
+
+1. See [:material-code-braces: UnassignPrivateNatGatewayAddressRequestRequestTypeDef](./type_defs.md#unassignprivatenatgatewayaddressrequestrequesttypedef) 
 
 ### unmonitor\_instances
 

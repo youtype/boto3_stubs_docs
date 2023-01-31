@@ -7,6 +7,23 @@
     Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
     type annotations stubs module [mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
+## AgentStatusType
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import AgentStatusType
+
+def get_value() -> AgentStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+AgentStatusType = Literal[
+    "ACTIVE",
+    "FAILED",
+    "INACTIVE",
+    "SUCCESS",
+]
+```
 ## AngleUnitsType
 
 ```python title="Usage Example"
@@ -20,6 +37,21 @@ def get_value() -> AngleUnitsType:
 AngleUnitsType = Literal[
     "DEGREE_ANGLE",
     "RADIAN",
+]
+```
+## AuditResultsType
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import AuditResultsType
+
+def get_value() -> AuditResultsType:
+    return "HEALTHY"
+```
+
+```python title="Definition"
+AuditResultsType = Literal[
+    "HEALTHY",
+    "UNHEALTHY",
 ]
 ```
 ## BandwidthUnitsType
@@ -36,6 +68,22 @@ BandwidthUnitsType = Literal[
     "GHz",
     "kHz",
     "MHz",
+]
+```
+## ComponentTypeType
+
+```python title="Usage Example"
+from mypy_boto3_groundstation.literals import ComponentTypeType
+
+def get_value() -> ComponentTypeType:
+    return "DIGITIZER"
+```
+
+```python title="Definition"
+ComponentTypeType = Literal[
+    "DIGITIZER",
+    "LAMINAR_FLOW",
+    "PRISM",
 ]
 ```
 ## ConfigCapabilityTypeType
@@ -406,6 +454,7 @@ ServiceName = Literal[
     "cloudsearch",
     "cloudsearchdomain",
     "cloudtrail",
+    "cloudtrail-data",
     "cloudwatch",
     "codeartifact",
     "codebuild",

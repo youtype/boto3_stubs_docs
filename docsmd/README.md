@@ -178,6 +178,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-cloudtrail](./mypy_boto3_cloudtrail/README.md) for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail) service
 
+- [mypy-boto3-cloudtrail-data](./mypy_boto3_cloudtrail_data/README.md) for [CloudTrailDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail-data.html#CloudTrailDataService) service
+
 - [mypy-boto3-cloudwatch](./mypy_boto3_cloudwatch/README.md) for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch) service
 
 - [mypy-boto3-codeartifact](./mypy_boto3_codeartifact/README.md) for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact) service

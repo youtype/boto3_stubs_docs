@@ -58,6 +58,21 @@ AutoTuneTypeType = Literal[
     "SCHEDULED_ACTION",
 ]
 ```
+## ConnectionModeType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import ConnectionModeType
+
+def get_value() -> ConnectionModeType:
+    return "DIRECT"
+```
+
+```python title="Definition"
+ConnectionModeType = Literal[
+    "DIRECT",
+    "VPC_ENDPOINT",
+]
+```
 ## DeploymentStatusType
 
 ```python title="Usage Example"
@@ -662,6 +677,7 @@ ServiceName = Literal[
     "cloudsearch",
     "cloudsearchdomain",
     "cloudtrail",
+    "cloudtrail-data",
     "cloudwatch",
     "codeartifact",
     "codebuild",

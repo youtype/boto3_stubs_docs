@@ -153,6 +153,7 @@ def get_value() -> AssetSummaryTypeDef:
 - [DeleteDomainPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deletedomainpermissionspolicyrequestrequesttypedef)
 - [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
 - [DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef)
+- [DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef)
 - [DeletePackageVersionsRequestRequestTypeDef](./type_defs.md#deletepackageversionsrequestrequesttypedef)
 - [DeleteRepositoryPermissionsPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypermissionspolicyrequestrequesttypedef)
 - [DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef)
@@ -240,5 +241,6 @@ def get_value() -> AssetSummaryTypeDef:
 - [DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef)
 - [ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef)
 - [DescribePackageResultTypeDef](./type_defs.md#describepackageresulttypedef)
+- [DeletePackageResultTypeDef](./type_defs.md#deletepackageresulttypedef)
 - [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef)
 

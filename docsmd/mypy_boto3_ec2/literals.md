@@ -5656,6 +5656,25 @@ MulticastSupportValueType = Literal[
     "enable",
 ]
 ```
+## NatGatewayAddressStatusType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import NatGatewayAddressStatusType
+
+def get_value() -> NatGatewayAddressStatusType:
+    return "assigning"
+```
+
+```python title="Definition"
+NatGatewayAddressStatusType = Literal[
+    "assigning",
+    "associating",
+    "disassociating",
+    "failed",
+    "succeeded",
+    "unassigning",
+]
+```
 ## NatGatewayAvailableWaiterName
 
 ```python title="Usage Example"
@@ -8134,6 +8153,7 @@ ServiceName = Literal[
     "cloudsearch",
     "cloudsearchdomain",
     "cloudtrail",
+    "cloudtrail-data",
     "cloudwatch",
     "codeartifact",
     "codebuild",
