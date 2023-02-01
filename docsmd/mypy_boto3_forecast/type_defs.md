@@ -3104,10 +3104,12 @@ class CreateDatasetImportJobRequestRequestTypeDef(TypedDict):
     GeolocationFormat: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
     Format: NotRequired[str],
+    ImportMode: NotRequired[ImportModeType],  # (3)
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
 ## DatasetImportJobSummaryTypeDef
 
 ```python title="Usage Example"
@@ -3128,9 +3130,11 @@ class DatasetImportJobSummaryTypeDef(TypedDict):
     Message: NotRequired[str],
     CreationTime: NotRequired[datetime],
     LastModificationTime: NotRequired[datetime],
+    ImportMode: NotRequired[ImportModeType],  # (2)
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
 ## DescribeDatasetImportJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -3154,6 +3158,7 @@ def get_value() -> DescribeDatasetImportJobResponseTypeDef:
         "CreationTime": ...,
         "LastModificationTime": ...,
         "Format": ...,
+        "ImportMode": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3176,12 +3181,14 @@ class DescribeDatasetImportJobResponseTypeDef(TypedDict):
     CreationTime: datetime,
     LastModificationTime: datetime,
     Format: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+    ImportMode: ImportModeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 2. See [:material-code-braces: StatisticsTypeDef](./type_defs.md#statisticstypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+3. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPredictorsResponseTypeDef
 
 ```python title="Usage Example"

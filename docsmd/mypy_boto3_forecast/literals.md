@@ -157,6 +157,21 @@ FilterConditionStringType = Literal[
     "IS_NOT",
 ]
 ```
+## ImportModeType
+
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import ImportModeType
+
+def get_value() -> ImportModeType:
+    return "FULL"
+```
+
+```python title="Definition"
+ImportModeType = Literal[
+    "FULL",
+    "INCREMENTAL",
+]
+```
 ## ListDatasetGroupsPaginatorName
 
 ```python title="Usage Example"

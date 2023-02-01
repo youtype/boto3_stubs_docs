@@ -1404,6 +1404,42 @@ parent.update_live_source(**kwargs)
 
 1. See [:material-code-braces: UpdateLiveSourceRequestRequestTypeDef](./type_defs.md#updatelivesourcerequestrequesttypedef) 
 
+### update\_program
+
+Updates a program within a channel.
+
+Type annotations and code completion for `#!python boto3.client("mediatailor").update_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_program)
+
+```python title="Method definition"
+def update_program(
+    self,
+    *,
+    ChannelName: str,
+    ProgramName: str,
+    ScheduleConfiguration: UpdateProgramScheduleConfigurationTypeDef,  # (1)
+    AdBreaks: Sequence[AdBreakTypeDef] = ...,  # (2)
+) -> UpdateProgramResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: UpdateProgramScheduleConfigurationTypeDef](./type_defs.md#updateprogramscheduleconfigurationtypedef) 
+2. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+3. See [:material-code-braces: UpdateProgramResponseTypeDef](./type_defs.md#updateprogramresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateProgramRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "ProgramName": ...,
+    "ScheduleConfiguration": ...,
+}
+
+parent.update_program(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateProgramRequestRequestTypeDef](./type_defs.md#updateprogramrequestrequesttypedef) 
+
 ### update\_source\_location
 
 Updates a source location.

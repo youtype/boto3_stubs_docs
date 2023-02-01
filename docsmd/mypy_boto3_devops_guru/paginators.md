@@ -291,14 +291,16 @@ def paginate(
     InsightId: str,
     StartTimeRange: StartTimeRangeTypeDef = ...,  # (1)
     AccountId: str = ...,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
-) -> _PageIterator[ListAnomaliesForInsightResponseTypeDef]:  # (3)
+    Filters: ListAnomaliesForInsightFiltersTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListAnomaliesForInsightResponseTypeDef]:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-3. See [:material-code-braces: ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef) 
+2. See [:material-code-braces: ListAnomaliesForInsightFiltersTypeDef](./type_defs.md#listanomaliesforinsightfilterstypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

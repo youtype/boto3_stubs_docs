@@ -230,13 +230,15 @@ def create_dataset_import_job(
     GeolocationFormat: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
     Format: str = ...,
-) -> CreateDatasetImportJobResponseTypeDef:  # (3)
+    ImportMode: ImportModeType = ...,  # (3)
+) -> CreateDatasetImportJobResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-3. See [:material-code-braces: CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef) 
+3. See [:material-code-brackets: ImportModeType](./literals.md#importmodetype) 
+4. See [:material-code-braces: CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

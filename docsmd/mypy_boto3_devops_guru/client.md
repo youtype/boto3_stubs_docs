@@ -547,12 +547,14 @@ def list_anomalies_for_insight(
     MaxResults: int = ...,
     NextToken: str = ...,
     AccountId: str = ...,
-) -> ListAnomaliesForInsightResponseTypeDef:  # (2)
+    Filters: ListAnomaliesForInsightFiltersTypeDef = ...,  # (2)
+) -> ListAnomaliesForInsightResponseTypeDef:  # (3)
     ...
 ```
 
 1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
-2. See [:material-code-braces: ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef) 
+2. See [:material-code-braces: ListAnomaliesForInsightFiltersTypeDef](./type_defs.md#listanomaliesforinsightfilterstypedef) 
+3. See [:material-code-braces: ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

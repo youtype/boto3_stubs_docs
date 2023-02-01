@@ -588,6 +588,23 @@ class InsightTimeRangeTypeDef(TypedDict):
     EndTime: NotRequired[datetime],
 ```
 
+## ServiceCollectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ServiceCollectionTypeDef
+
+def get_value() -> ServiceCollectionTypeDef:
+    return {
+        "ServiceNames": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceCollectionTypeDef(TypedDict):
+    ServiceNames: NotRequired[Sequence[ServiceNameType]],  # (1)
+```
+
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
 ## StartTimeRangeTypeDef
 
 ```python title="Usage Example"
@@ -890,23 +907,6 @@ class PredictionTimeRangeTypeDef(TypedDict):
     EndTime: NotRequired[datetime],
 ```
 
-## ServiceCollectionTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_devops_guru.type_defs import ServiceCollectionTypeDef
-
-def get_value() -> ServiceCollectionTypeDef:
-    return {
-        "ServiceNames": ...,
-    }
-```
-
-```python title="Definition"
-class ServiceCollectionTypeDef(TypedDict):
-    ServiceNames: NotRequired[List[ServiceNameType]],  # (1)
-```
-
-1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
 ## RecommendationRelatedAnomalyResourceTypeDef
 
 ```python title="Usage Example"
@@ -1478,48 +1478,23 @@ class ListInsightsClosedStatusFilterTypeDef(TypedDict):
 
 1. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
 2. See [:material-code-braces: EndTimeRangeTypeDef](./type_defs.md#endtimerangetypedef) 
-## ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef
+## ListAnomaliesForInsightFiltersTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef
+from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightFiltersTypeDef
 
-def get_value() -> ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef:
+def get_value() -> ListAnomaliesForInsightFiltersTypeDef:
     return {
-        "InsightId": ...,
+        "ServiceCollection": ...,
     }
 ```
 
 ```python title="Definition"
-class ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef(TypedDict):
-    InsightId: str,
-    StartTimeRange: NotRequired[StartTimeRangeTypeDef],  # (1)
-    AccountId: NotRequired[str],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+class ListAnomaliesForInsightFiltersTypeDef(TypedDict):
+    ServiceCollection: NotRequired[ServiceCollectionTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
-2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-## ListAnomaliesForInsightRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestRequestTypeDef
-
-def get_value() -> ListAnomaliesForInsightRequestRequestTypeDef:
-    return {
-        "InsightId": ...,
-    }
-```
-
-```python title="Definition"
-class ListAnomaliesForInsightRequestRequestTypeDef(TypedDict):
-    InsightId: str,
-    StartTimeRange: NotRequired[StartTimeRangeTypeDef],  # (1)
-    MaxResults: NotRequired[int],
-    NextToken: NotRequired[str],
-    AccountId: NotRequired[str],
-```
-
-1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+1. See [:material-code-braces: ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef) 
 ## ListInsightsAnyStatusFilterTypeDef
 
 ```python title="Usage Example"
@@ -1896,6 +1871,52 @@ class StartCostEstimationRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef) 
+## ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef
+
+def get_value() -> ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef:
+    return {
+        "InsightId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef(TypedDict):
+    InsightId: str,
+    StartTimeRange: NotRequired[StartTimeRangeTypeDef],  # (1)
+    AccountId: NotRequired[str],
+    Filters: NotRequired[ListAnomaliesForInsightFiltersTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-braces: ListAnomaliesForInsightFiltersTypeDef](./type_defs.md#listanomaliesforinsightfilterstypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListAnomaliesForInsightRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestRequestTypeDef
+
+def get_value() -> ListAnomaliesForInsightRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnomaliesForInsightRequestRequestTypeDef(TypedDict):
+    InsightId: str,
+    StartTimeRange: NotRequired[StartTimeRangeTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    AccountId: NotRequired[str],
+    Filters: NotRequired[ListAnomaliesForInsightFiltersTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-braces: ListAnomaliesForInsightFiltersTypeDef](./type_defs.md#listanomaliesforinsightfilterstypedef) 
 ## ListInsightsStatusFilterTypeDef
 
 ```python title="Usage Example"

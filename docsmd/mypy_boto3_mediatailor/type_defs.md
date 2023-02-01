@@ -189,6 +189,22 @@ class LogConfigurationForChannelTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
+## ClipRangeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ClipRangeTypeDef
+
+def get_value() -> ClipRangeTypeDef:
+    return {
+        "EndOffsetMillis": ...,
+    }
+```
+
+```python title="Definition"
+class ClipRangeTypeDef(TypedDict):
+    EndOffsetMillis: int,
+```
+
 ## ConfigureLogsForChannelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1058,6 +1074,23 @@ class UntagResourceRequestRequestTypeDef(TypedDict):
     TagKeys: Sequence[str],
 ```
 
+## UpdateProgramTransitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import UpdateProgramTransitionTypeDef
+
+def get_value() -> UpdateProgramTransitionTypeDef:
+    return {
+        "DurationMillis": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProgramTransitionTypeDef(TypedDict):
+    DurationMillis: NotRequired[int],
+    ScheduledStartTimeMillis: NotRequired[int],
+```
+
 ## AccessConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1795,10 +1828,12 @@ def get_value() -> ScheduleConfigurationTypeDef:
 
 ```python title="Definition"
 class ScheduleConfigurationTypeDef(TypedDict):
-    Transition: TransitionTypeDef,  # (1)
+    Transition: TransitionTypeDef,  # (2)
+    ClipRange: NotRequired[ClipRangeTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
+1. See [:material-code-braces: ClipRangeTypeDef](./type_defs.md#cliprangetypedef) 
+2. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
 ## TimeSignalMessageTypeDef
 
 ```python title="Usage Example"
@@ -1816,6 +1851,25 @@ class TimeSignalMessageTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: SegmentationDescriptorTypeDef](./type_defs.md#segmentationdescriptortypedef) 
+## UpdateProgramScheduleConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import UpdateProgramScheduleConfigurationTypeDef
+
+def get_value() -> UpdateProgramScheduleConfigurationTypeDef:
+    return {
+        "ClipRange": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProgramScheduleConfigurationTypeDef(TypedDict):
+    ClipRange: NotRequired[ClipRangeTypeDef],  # (1)
+    Transition: NotRequired[UpdateProgramTransitionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ClipRangeTypeDef](./type_defs.md#cliprangetypedef) 
+2. See [:material-code-braces: UpdateProgramTransitionTypeDef](./type_defs.md#updateprogramtransitiontypedef) 
 ## CreateSourceLocationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2752,7 +2806,9 @@ def get_value() -> CreateProgramResponseTypeDef:
         "AdBreaks": ...,
         "Arn": ...,
         "ChannelName": ...,
+        "ClipRange": ...,
         "CreationTime": ...,
+        "DurationMillis": ...,
         "LiveSourceName": ...,
         "ProgramName": ...,
         "ScheduledStartTime": ...,
@@ -2767,17 +2823,20 @@ class CreateProgramResponseTypeDef(TypedDict):
     AdBreaks: List[AdBreakTypeDef],  # (1)
     Arn: str,
     ChannelName: str,
+    ClipRange: ClipRangeTypeDef,  # (2)
     CreationTime: datetime,
+    DurationMillis: int,
     LiveSourceName: str,
     ProgramName: str,
     ScheduledStartTime: datetime,
     SourceLocationName: str,
     VodSourceName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: ClipRangeTypeDef](./type_defs.md#cliprangetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProgramResponseTypeDef
 
 ```python title="Usage Example"
@@ -2788,7 +2847,9 @@ def get_value() -> DescribeProgramResponseTypeDef:
         "AdBreaks": ...,
         "Arn": ...,
         "ChannelName": ...,
+        "ClipRange": ...,
         "CreationTime": ...,
+        "DurationMillis": ...,
         "LiveSourceName": ...,
         "ProgramName": ...,
         "ScheduledStartTime": ...,
@@ -2803,14 +2864,81 @@ class DescribeProgramResponseTypeDef(TypedDict):
     AdBreaks: List[AdBreakTypeDef],  # (1)
     Arn: str,
     ChannelName: str,
+    ClipRange: ClipRangeTypeDef,  # (2)
     CreationTime: datetime,
+    DurationMillis: int,
     LiveSourceName: str,
     ProgramName: str,
     ScheduledStartTime: datetime,
     SourceLocationName: str,
     VodSourceName: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 
 1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+2. See [:material-code-braces: ClipRangeTypeDef](./type_defs.md#cliprangetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateProgramRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import UpdateProgramRequestRequestTypeDef
+
+def get_value() -> UpdateProgramRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "ProgramName": ...,
+        "ScheduleConfiguration": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProgramRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    ProgramName: str,
+    ScheduleConfiguration: UpdateProgramScheduleConfigurationTypeDef,  # (1)
+    AdBreaks: NotRequired[Sequence[AdBreakTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: UpdateProgramScheduleConfigurationTypeDef](./type_defs.md#updateprogramscheduleconfigurationtypedef) 
+2. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+## UpdateProgramResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import UpdateProgramResponseTypeDef
+
+def get_value() -> UpdateProgramResponseTypeDef:
+    return {
+        "AdBreaks": ...,
+        "Arn": ...,
+        "ChannelName": ...,
+        "ClipRange": ...,
+        "CreationTime": ...,
+        "DurationMillis": ...,
+        "LiveSourceName": ...,
+        "ProgramName": ...,
+        "ScheduledStartTime": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateProgramResponseTypeDef(TypedDict):
+    AdBreaks: List[AdBreakTypeDef],  # (1)
+    Arn: str,
+    ChannelName: str,
+    ClipRange: ClipRangeTypeDef,  # (2)
+    CreationTime: datetime,
+    DurationMillis: int,
+    LiveSourceName: str,
+    ProgramName: str,
+    ScheduledStartTime: datetime,
+    SourceLocationName: str,
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+2. See [:material-code-braces: ClipRangeTypeDef](./type_defs.md#cliprangetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

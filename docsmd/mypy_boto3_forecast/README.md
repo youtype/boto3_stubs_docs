@@ -120,6 +120,7 @@ def get_value() -> AttributeTypeType:
 - [EvaluationTypeType](./literals.md#evaluationtypetype)
 - [FeaturizationMethodNameType](./literals.md#featurizationmethodnametype)
 - [FilterConditionStringType](./literals.md#filterconditionstringtype)
+- [ImportModeType](./literals.md#importmodetype)
 - [ListDatasetGroupsPaginatorName](./literals.md#listdatasetgroupspaginatorname)
 - [ListDatasetImportJobsPaginatorName](./literals.md#listdatasetimportjobspaginatorname)
 - [ListDatasetsPaginatorName](./literals.md#listdatasetspaginatorname)
