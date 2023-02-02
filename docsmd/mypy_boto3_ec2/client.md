@@ -248,8 +248,8 @@ Type annotations and code completion for `#!python boto3.client("ec2").accept_vp
 def accept_vpc_peering_connection(
     self,
     *,
+    VpcPeeringConnectionId: str,
     DryRun: bool = ...,
-    VpcPeeringConnectionId: str = ...,
 ) -> AcceptVpcPeeringConnectionResultTypeDef:  # (1)
     ...
 ```
@@ -259,7 +259,7 @@ def accept_vpc_peering_connection(
 
 ```python title="Usage example with kwargs"
 kwargs: AcceptVpcPeeringConnectionRequestRequestTypeDef = {  # (1)
-    "DryRun": ...,
+    "VpcPeeringConnectionId": ...,
 }
 
 parent.accept_vpc_peering_connection(**kwargs)
@@ -661,8 +661,8 @@ Type annotations and code completion for `#!python boto3.client("ec2").associate
 def associate_enclave_certificate_iam_role(
     self,
     *,
-    CertificateArn: str = ...,
-    RoleArn: str = ...,
+    CertificateArn: str,
+    RoleArn: str,
     DryRun: bool = ...,
 ) -> AssociateEnclaveCertificateIamRoleResultTypeDef:  # (1)
     ...
@@ -674,6 +674,7 @@ def associate_enclave_certificate_iam_role(
 ```python title="Usage example with kwargs"
 kwargs: AssociateEnclaveCertificateIamRoleRequestRequestTypeDef = {  # (1)
     "CertificateArn": ...,
+    "RoleArn": ...,
 }
 
 parent.associate_enclave_certificate_iam_role(**kwargs)
@@ -891,9 +892,9 @@ Type annotations and code completion for `#!python boto3.client("ec2").associate
 def associate_transit_gateway_multicast_domain(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
-    TransitGatewayAttachmentId: str = ...,
-    SubnetIds: Sequence[str] = ...,
+    TransitGatewayMulticastDomainId: str,
+    TransitGatewayAttachmentId: str,
+    SubnetIds: Sequence[str],
     DryRun: bool = ...,
 ) -> AssociateTransitGatewayMulticastDomainResultTypeDef:  # (1)
     ...
@@ -905,6 +906,8 @@ def associate_transit_gateway_multicast_domain(
 ```python title="Usage example with kwargs"
 kwargs: AssociateTransitGatewayMulticastDomainRequestRequestTypeDef = {  # (1)
     "TransitGatewayMulticastDomainId": ...,
+    "TransitGatewayAttachmentId": ...,
+    "SubnetIds": ...,
 }
 
 parent.associate_transit_gateway_multicast_domain(**kwargs)
@@ -4818,10 +4821,10 @@ Type annotations and code completion for `#!python boto3.client("ec2").create_vp
 def create_vpc_peering_connection(
     self,
     *,
+    VpcId: str,
     DryRun: bool = ...,
     PeerOwnerId: str = ...,
     PeerVpcId: str = ...,
-    VpcId: str = ...,
     PeerRegion: str = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
 ) -> CreateVpcPeeringConnectionResultTypeDef:  # (2)
@@ -4834,7 +4837,7 @@ def create_vpc_peering_connection(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateVpcPeeringConnectionRequestRequestTypeDef = {  # (1)
-    "DryRun": ...,
+    "VpcId": ...,
 }
 
 parent.create_vpc_peering_connection(**kwargs)
@@ -12937,8 +12940,8 @@ Type annotations and code completion for `#!python boto3.client("ec2").disassoci
 def disassociate_enclave_certificate_iam_role(
     self,
     *,
-    CertificateArn: str = ...,
-    RoleArn: str = ...,
+    CertificateArn: str,
+    RoleArn: str,
     DryRun: bool = ...,
 ) -> DisassociateEnclaveCertificateIamRoleResultTypeDef:  # (1)
     ...
@@ -12950,6 +12953,7 @@ def disassociate_enclave_certificate_iam_role(
 ```python title="Usage example with kwargs"
 kwargs: DisassociateEnclaveCertificateIamRoleRequestRequestTypeDef = {  # (1)
     "CertificateArn": ...,
+    "RoleArn": ...,
 }
 
 parent.disassociate_enclave_certificate_iam_role(**kwargs)
@@ -13152,9 +13156,9 @@ Type annotations and code completion for `#!python boto3.client("ec2").disassoci
 def disassociate_transit_gateway_multicast_domain(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
-    TransitGatewayAttachmentId: str = ...,
-    SubnetIds: Sequence[str] = ...,
+    TransitGatewayMulticastDomainId: str,
+    TransitGatewayAttachmentId: str,
+    SubnetIds: Sequence[str],
     DryRun: bool = ...,
 ) -> DisassociateTransitGatewayMulticastDomainResultTypeDef:  # (1)
     ...
@@ -13166,6 +13170,8 @@ def disassociate_transit_gateway_multicast_domain(
 ```python title="Usage example with kwargs"
 kwargs: DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef = {  # (1)
     "TransitGatewayMulticastDomainId": ...,
+    "TransitGatewayAttachmentId": ...,
+    "SubnetIds": ...,
 }
 
 parent.disassociate_transit_gateway_multicast_domain(**kwargs)
@@ -13909,7 +13915,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_assoc
 def get_associated_enclave_certificate_iam_roles(
     self,
     *,
-    CertificateArn: str = ...,
+    CertificateArn: str,
     DryRun: bool = ...,
 ) -> GetAssociatedEnclaveCertificateIamRolesResultTypeDef:  # (1)
     ...
@@ -14977,7 +14983,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_trans
 def get_transit_gateway_multicast_domain_associations(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
+    TransitGatewayMulticastDomainId: str,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     MaxResults: int = ...,
     NextToken: str = ...,
@@ -16699,8 +16705,8 @@ Type annotations and code completion for `#!python boto3.client("ec2").modify_pr
 def modify_private_dns_name_options(
     self,
     *,
+    InstanceId: str,
     DryRun: bool = ...,
-    InstanceId: str = ...,
     PrivateDnsHostnameType: HostnameTypeType = ...,  # (1)
     EnableResourceNameDnsARecord: bool = ...,
     EnableResourceNameDnsAAAARecord: bool = ...,
@@ -16714,7 +16720,7 @@ def modify_private_dns_name_options(
 
 ```python title="Usage example with kwargs"
 kwargs: ModifyPrivateDnsNameOptionsRequestRequestTypeDef = {  # (1)
-    "DryRun": ...,
+    "InstanceId": ...,
 }
 
 parent.modify_private_dns_name_options(**kwargs)
@@ -18318,9 +18324,9 @@ Type annotations and code completion for `#!python boto3.client("ec2").register_
 def register_transit_gateway_multicast_group_members(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
+    TransitGatewayMulticastDomainId: str,
+    NetworkInterfaceIds: Sequence[str],
     GroupIpAddress: str = ...,
-    NetworkInterfaceIds: Sequence[str] = ...,
     DryRun: bool = ...,
 ) -> RegisterTransitGatewayMulticastGroupMembersResultTypeDef:  # (1)
     ...
@@ -18332,6 +18338,7 @@ def register_transit_gateway_multicast_group_members(
 ```python title="Usage example with kwargs"
 kwargs: RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef = {  # (1)
     "TransitGatewayMulticastDomainId": ...,
+    "NetworkInterfaceIds": ...,
 }
 
 parent.register_transit_gateway_multicast_group_members(**kwargs)
@@ -18351,9 +18358,9 @@ Type annotations and code completion for `#!python boto3.client("ec2").register_
 def register_transit_gateway_multicast_group_sources(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
+    TransitGatewayMulticastDomainId: str,
+    NetworkInterfaceIds: Sequence[str],
     GroupIpAddress: str = ...,
-    NetworkInterfaceIds: Sequence[str] = ...,
     DryRun: bool = ...,
 ) -> RegisterTransitGatewayMulticastGroupSourcesResultTypeDef:  # (1)
     ...
@@ -18365,6 +18372,7 @@ def register_transit_gateway_multicast_group_sources(
 ```python title="Usage example with kwargs"
 kwargs: RegisterTransitGatewayMulticastGroupSourcesRequestRequestTypeDef = {  # (1)
     "TransitGatewayMulticastDomainId": ...,
+    "NetworkInterfaceIds": ...,
 }
 
 parent.register_transit_gateway_multicast_group_sources(**kwargs)
@@ -19630,7 +19638,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").search_tr
 def search_transit_gateway_multicast_groups(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
+    TransitGatewayMulticastDomainId: str,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     MaxResults: int = ...,
     NextToken: str = ...,

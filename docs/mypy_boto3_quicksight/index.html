@@ -15,7 +15,7 @@
         <link rel="next" href="client/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
     
     
       
@@ -40562,6 +40562,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#pivottablemetricplacementtype">PivotTableMetricPlacementType</a></li>
 <li><a href="literals/#pivottablesubtotalleveltype">PivotTableSubtotalLevelType</a></li>
 <li><a href="literals/#primaryvaluedisplaytypetype">PrimaryValueDisplayTypeType</a></li>
+<li><a href="literals/#radarchartshapetype">RadarChartShapeType</a></li>
 <li><a href="literals/#referencelinelabelhorizontalpositiontype">ReferenceLineLabelHorizontalPositionType</a></li>
 <li><a href="literals/#referencelinelabelverticalpositiontype">ReferenceLineLabelVerticalPositionType</a></li>
 <li><a href="literals/#referencelinepatterntypetype">ReferenceLinePatternTypeType</a></li>
@@ -40717,8 +40718,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#customnarrativeoptionstypedef">CustomNarrativeOptionsTypeDef</a></li>
 <li><a href="type_defs/#customparametervaluestypedef">CustomParameterValuesTypeDef</a></li>
 <li><a href="type_defs/#inputcolumntypedef">InputColumnTypeDef</a></li>
+<li><a href="type_defs/#datapointdrillupdownoptiontypedef">DataPointDrillUpDownOptionTypeDef</a></li>
+<li><a href="type_defs/#datapointmenulabeloptiontypedef">DataPointMenuLabelOptionTypeDef</a></li>
+<li><a href="type_defs/#datapointtooltipoptiontypedef">DataPointTooltipOptionTypeDef</a></li>
 <li><a href="type_defs/#exporttocsvoptiontypedef">ExportToCSVOptionTypeDef</a></li>
+<li><a href="type_defs/#exportwithhiddenfieldsoptiontypedef">ExportWithHiddenFieldsOptionTypeDef</a></li>
 <li><a href="type_defs/#sheetcontrolsoptiontypedef">SheetControlsOptionTypeDef</a></li>
+<li><a href="type_defs/#sheetlayoutelementmaximizationoptiontypedef">SheetLayoutElementMaximizationOptionTypeDef</a></li>
+<li><a href="type_defs/#visualaxissortoptiontypedef">VisualAxisSortOptionTypeDef</a></li>
+<li><a href="type_defs/#visualmenuoptiontypedef">VisualMenuOptionTypeDef</a></li>
 <li><a href="type_defs/#dashboardsearchfiltertypedef">DashboardSearchFilterTypeDef</a></li>
 <li><a href="type_defs/#dashboardsummarytypedef">DashboardSummaryTypeDef</a></li>
 <li><a href="type_defs/#dashboardversionsummarytypedef">DashboardVersionSummaryTypeDef</a></li>
@@ -40896,6 +40904,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#pivottablefieldsubtotaloptionstypedef">PivotTableFieldSubtotalOptionsTypeDef</a></li>
 <li><a href="type_defs/#rowalternatecoloroptionstypedef">RowAlternateColorOptionsTypeDef</a></li>
 <li><a href="type_defs/#projectoperationtypedef">ProjectOperationTypeDef</a></li>
+<li><a href="type_defs/#radarchartareastylesettingstypedef">RadarChartAreaStyleSettingsTypeDef</a></li>
 <li><a href="type_defs/#referencelinecustomlabelconfigurationtypedef">ReferenceLineCustomLabelConfigurationTypeDef</a></li>
 <li><a href="type_defs/#referencelinestaticdataconfigurationtypedef">ReferenceLineStaticDataConfigurationTypeDef</a></li>
 <li><a href="type_defs/#referencelinestyleconfigurationtypedef">ReferenceLineStyleConfigurationTypeDef</a></li>
@@ -41145,6 +41154,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#numericalaggregationfunctiontypedef">NumericalAggregationFunctionTypeDef</a></li>
 <li><a href="type_defs/#parameterstypedef">ParametersTypeDef</a></li>
 <li><a href="type_defs/#visiblerangeoptionstypedef">VisibleRangeOptionsTypeDef</a></li>
+<li><a href="type_defs/#radarchartseriessettingstypedef">RadarChartSeriesSettingsTypeDef</a></li>
 <li><a href="type_defs/#rowlevelpermissiontagconfigurationtypedef">RowLevelPermissionTagConfigurationTypeDef</a></li>
 <li><a href="type_defs/#s3sourcetypedef">S3SourceTypeDef</a></li>
 <li><a href="type_defs/#sectionpagebreakconfigurationtypedef">SectionPageBreakConfigurationTypeDef</a></li>
@@ -41351,6 +41361,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#kpisortconfigurationtypedef">KPISortConfigurationTypeDef</a></li>
 <li><a href="type_defs/#linechartsortconfigurationtypedef">LineChartSortConfigurationTypeDef</a></li>
 <li><a href="type_defs/#piechartsortconfigurationtypedef">PieChartSortConfigurationTypeDef</a></li>
+<li><a href="type_defs/#radarchartsortconfigurationtypedef">RadarChartSortConfigurationTypeDef</a></li>
 <li><a href="type_defs/#sankeydiagramsortconfigurationtypedef">SankeyDiagramSortConfigurationTypeDef</a></li>
 <li><a href="type_defs/#tablesortconfigurationtypedef">TableSortConfigurationTypeDef</a></li>
 <li><a href="type_defs/#treemapsortconfigurationtypedef">TreeMapSortConfigurationTypeDef</a></li>
@@ -41406,6 +41417,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#periodtodatecomputationtypedef">PeriodToDateComputationTypeDef</a></li>
 <li><a href="type_defs/#piechartaggregatedfieldwellstypedef">PieChartAggregatedFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#pivottableaggregatedfieldwellstypedef">PivotTableAggregatedFieldWellsTypeDef</a></li>
+<li><a href="type_defs/#radarchartaggregatedfieldwellstypedef">RadarChartAggregatedFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#sankeydiagramaggregatedfieldwellstypedef">SankeyDiagramAggregatedFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#scatterplotcategoricallyaggregatedfieldwellstypedef">ScatterPlotCategoricallyAggregatedFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#scatterplotunaggregatedfieldwellstypedef">ScatterPlotUnaggregatedFieldWellsTypeDef</a></li>
@@ -41431,6 +41443,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#linechartfieldwellstypedef">LineChartFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#piechartfieldwellstypedef">PieChartFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#pivottablefieldwellstypedef">PivotTableFieldWellsTypeDef</a></li>
+<li><a href="type_defs/#radarchartfieldwellstypedef">RadarChartFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#sankeydiagramfieldwellstypedef">SankeyDiagramFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#scatterplotfieldwellstypedef">ScatterPlotFieldWellsTypeDef</a></li>
 <li><a href="type_defs/#computationtypedef">ComputationTypeDef</a></li>
@@ -41452,6 +41465,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#linechartconfigurationtypedef">LineChartConfigurationTypeDef</a></li>
 <li><a href="type_defs/#piechartconfigurationtypedef">PieChartConfigurationTypeDef</a></li>
 <li><a href="type_defs/#pivottableconfigurationtypedef">PivotTableConfigurationTypeDef</a></li>
+<li><a href="type_defs/#radarchartconfigurationtypedef">RadarChartConfigurationTypeDef</a></li>
 <li><a href="type_defs/#sankeydiagramchartconfigurationtypedef">SankeyDiagramChartConfigurationTypeDef</a></li>
 <li><a href="type_defs/#scatterplotconfigurationtypedef">ScatterPlotConfigurationTypeDef</a></li>
 <li><a href="type_defs/#insightconfigurationtypedef">InsightConfigurationTypeDef</a></li>
@@ -41471,6 +41485,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#linechartvisualtypedef">LineChartVisualTypeDef</a></li>
 <li><a href="type_defs/#piechartvisualtypedef">PieChartVisualTypeDef</a></li>
 <li><a href="type_defs/#pivottablevisualtypedef">PivotTableVisualTypeDef</a></li>
+<li><a href="type_defs/#radarchartvisualtypedef">RadarChartVisualTypeDef</a></li>
 <li><a href="type_defs/#sankeydiagramvisualtypedef">SankeyDiagramVisualTypeDef</a></li>
 <li><a href="type_defs/#scatterplotvisualtypedef">ScatterPlotVisualTypeDef</a></li>
 <li><a href="type_defs/#insightvisualtypedef">InsightVisualTypeDef</a></li>
@@ -41533,7 +41548,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a00a7c5e.min.js"></script>
+      <script src="../assets/javascripts/bundle.6df46069.min.js"></script>
       
     
   </body>

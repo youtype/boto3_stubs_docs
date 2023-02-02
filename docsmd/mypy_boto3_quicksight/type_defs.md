@@ -1609,6 +1609,57 @@ class InputColumnTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: InputColumnDataTypeType](./literals.md#inputcolumndatatypetype) 
+## DataPointDrillUpDownOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataPointDrillUpDownOptionTypeDef
+
+def get_value() -> DataPointDrillUpDownOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class DataPointDrillUpDownOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## DataPointMenuLabelOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataPointMenuLabelOptionTypeDef
+
+def get_value() -> DataPointMenuLabelOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class DataPointMenuLabelOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## DataPointTooltipOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import DataPointTooltipOptionTypeDef
+
+def get_value() -> DataPointTooltipOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class DataPointTooltipOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
 ## ExportToCSVOptionTypeDef
 
 ```python title="Usage Example"
@@ -1622,6 +1673,23 @@ def get_value() -> ExportToCSVOptionTypeDef:
 
 ```python title="Definition"
 class ExportToCSVOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## ExportWithHiddenFieldsOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import ExportWithHiddenFieldsOptionTypeDef
+
+def get_value() -> ExportWithHiddenFieldsOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ExportWithHiddenFieldsOptionTypeDef(TypedDict):
     AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
 ```
 
@@ -1643,6 +1711,57 @@ class SheetControlsOptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DashboardUIStateType](./literals.md#dashboarduistatetype) 
+## SheetLayoutElementMaximizationOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import SheetLayoutElementMaximizationOptionTypeDef
+
+def get_value() -> SheetLayoutElementMaximizationOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class SheetLayoutElementMaximizationOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## VisualAxisSortOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualAxisSortOptionTypeDef
+
+def get_value() -> VisualAxisSortOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class VisualAxisSortOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
+## VisualMenuOptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import VisualMenuOptionTypeDef
+
+def get_value() -> VisualMenuOptionTypeDef:
+    return {
+        "AvailabilityStatus": ...,
+    }
+```
+
+```python title="Definition"
+class VisualMenuOptionTypeDef(TypedDict):
+    AvailabilityStatus: NotRequired[DashboardBehaviorType],  # (1)
+```
+
+1. See [:material-code-brackets: DashboardBehaviorType](./literals.md#dashboardbehaviortype) 
 ## DashboardSearchFilterTypeDef
 
 ```python title="Usage Example"
@@ -4988,6 +5107,23 @@ class ProjectOperationTypeDef(TypedDict):
     ProjectedColumns: Sequence[str],
 ```
 
+## RadarChartAreaStyleSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RadarChartAreaStyleSettingsTypeDef
+
+def get_value() -> RadarChartAreaStyleSettingsTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class RadarChartAreaStyleSettingsTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
 ## ReferenceLineCustomLabelConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -10598,6 +10734,23 @@ class VisibleRangeOptionsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PercentVisibleRangeTypeDef](./type_defs.md#percentvisiblerangetypedef) 
+## RadarChartSeriesSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RadarChartSeriesSettingsTypeDef
+
+def get_value() -> RadarChartSeriesSettingsTypeDef:
+    return {
+        "AreaStyleSettings": ...,
+    }
+```
+
+```python title="Definition"
+class RadarChartSeriesSettingsTypeDef(TypedDict):
+    AreaStyleSettings: NotRequired[RadarChartAreaStyleSettingsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RadarChartAreaStyleSettingsTypeDef](./type_defs.md#radarchartareastylesettingstypedef) 
 ## RowLevelPermissionTagConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -11059,6 +11212,7 @@ def get_value() -> CategoryFilterTypeDef:
     return {
         "FilterId": ...,
         "Column": ...,
+        "Configuration": ...,
     }
 ```
 
@@ -11066,7 +11220,7 @@ def get_value() -> CategoryFilterTypeDef:
 class CategoryFilterTypeDef(TypedDict):
     FilterId: str,
     Column: ColumnIdentifierTypeDef,  # (1)
-    Configuration: NotRequired[CategoryFilterConfigurationTypeDef],  # (2)
+    Configuration: CategoryFilterConfigurationTypeDef,  # (2)
 ```
 
 1. See [:material-code-braces: ColumnIdentifierTypeDef](./type_defs.md#columnidentifiertypedef) 
@@ -11298,12 +11452,26 @@ class DashboardPublishOptionsTypeDef(TypedDict):
     ExportToCSVOption: NotRequired[ExportToCSVOptionTypeDef],  # (2)
     SheetControlsOption: NotRequired[SheetControlsOptionTypeDef],  # (3)
     VisualPublishOptions: NotRequired[DashboardVisualPublishOptionsTypeDef],  # (4)
+    SheetLayoutElementMaximizationOption: NotRequired[SheetLayoutElementMaximizationOptionTypeDef],  # (5)
+    VisualMenuOption: NotRequired[VisualMenuOptionTypeDef],  # (6)
+    VisualAxisSortOption: NotRequired[VisualAxisSortOptionTypeDef],  # (7)
+    ExportWithHiddenFieldsOption: NotRequired[ExportWithHiddenFieldsOptionTypeDef],  # (8)
+    DataPointDrillUpDownOption: NotRequired[DataPointDrillUpDownOptionTypeDef],  # (9)
+    DataPointMenuLabelOption: NotRequired[DataPointMenuLabelOptionTypeDef],  # (10)
+    DataPointTooltipOption: NotRequired[DataPointTooltipOptionTypeDef],  # (11)
 ```
 
 1. See [:material-code-braces: AdHocFilteringOptionTypeDef](./type_defs.md#adhocfilteringoptiontypedef) 
 2. See [:material-code-braces: ExportToCSVOptionTypeDef](./type_defs.md#exporttocsvoptiontypedef) 
 3. See [:material-code-braces: SheetControlsOptionTypeDef](./type_defs.md#sheetcontrolsoptiontypedef) 
 4. See [:material-code-braces: DashboardVisualPublishOptionsTypeDef](./type_defs.md#dashboardvisualpublishoptionstypedef) 
+5. See [:material-code-braces: SheetLayoutElementMaximizationOptionTypeDef](./type_defs.md#sheetlayoutelementmaximizationoptiontypedef) 
+6. See [:material-code-braces: VisualMenuOptionTypeDef](./type_defs.md#visualmenuoptiontypedef) 
+7. See [:material-code-braces: VisualAxisSortOptionTypeDef](./type_defs.md#visualaxissortoptiontypedef) 
+8. See [:material-code-braces: ExportWithHiddenFieldsOptionTypeDef](./type_defs.md#exportwithhiddenfieldsoptiontypedef) 
+9. See [:material-code-braces: DataPointDrillUpDownOptionTypeDef](./type_defs.md#datapointdrillupdownoptiontypedef) 
+10. See [:material-code-braces: DataPointMenuLabelOptionTypeDef](./type_defs.md#datapointmenulabeloptiontypedef) 
+11. See [:material-code-braces: DataPointTooltipOptionTypeDef](./type_defs.md#datapointtooltipoptiontypedef) 
 ## VisualPaletteTypeDef
 
 ```python title="Usage Example"
@@ -15244,6 +15412,29 @@ class PieChartSortConfigurationTypeDef(TypedDict):
 2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
 3. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
 4. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+## RadarChartSortConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RadarChartSortConfigurationTypeDef
+
+def get_value() -> RadarChartSortConfigurationTypeDef:
+    return {
+        "CategorySort": ...,
+    }
+```
+
+```python title="Definition"
+class RadarChartSortConfigurationTypeDef(TypedDict):
+    CategorySort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    CategoryItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+    ColorSort: NotRequired[Sequence[FieldSortOptionsTypeDef]],  # (1)
+    ColorItemsLimit: NotRequired[ItemsLimitConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+2. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
+3. See [:material-code-braces: FieldSortOptionsTypeDef](./type_defs.md#fieldsortoptionstypedef) 
+4. See [:material-code-braces: ItemsLimitConfigurationTypeDef](./type_defs.md#itemslimitconfigurationtypedef) 
 ## SankeyDiagramSortConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -16389,6 +16580,27 @@ class PivotTableAggregatedFieldWellsTypeDef(TypedDict):
 1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
 2. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
 3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
+## RadarChartAggregatedFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RadarChartAggregatedFieldWellsTypeDef
+
+def get_value() -> RadarChartAggregatedFieldWellsTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class RadarChartAggregatedFieldWellsTypeDef(TypedDict):
+    Category: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Color: NotRequired[Sequence[DimensionFieldTypeDef]],  # (1)
+    Values: NotRequired[Sequence[MeasureFieldTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+2. See [:material-code-braces: DimensionFieldTypeDef](./type_defs.md#dimensionfieldtypedef) 
+3. See [:material-code-braces: MeasureFieldTypeDef](./type_defs.md#measurefieldtypedef) 
 ## SankeyDiagramAggregatedFieldWellsTypeDef
 
 ```python title="Usage Example"
@@ -16887,6 +17099,23 @@ class PivotTableFieldWellsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PivotTableAggregatedFieldWellsTypeDef](./type_defs.md#pivottableaggregatedfieldwellstypedef) 
+## RadarChartFieldWellsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RadarChartFieldWellsTypeDef
+
+def get_value() -> RadarChartFieldWellsTypeDef:
+    return {
+        "RadarChartAggregatedFieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class RadarChartFieldWellsTypeDef(TypedDict):
+    RadarChartAggregatedFieldWells: NotRequired[RadarChartAggregatedFieldWellsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RadarChartAggregatedFieldWellsTypeDef](./type_defs.md#radarchartaggregatedfieldwellstypedef) 
 ## SankeyDiagramFieldWellsTypeDef
 
 ```python title="Usage Example"
@@ -17498,6 +17727,46 @@ class PivotTableConfigurationTypeDef(TypedDict):
 4. See [:material-code-braces: PivotTableTotalOptionsTypeDef](./type_defs.md#pivottabletotaloptionstypedef) 
 5. See [:material-code-braces: PivotTableFieldOptionsTypeDef](./type_defs.md#pivottablefieldoptionstypedef) 
 6. See [:material-code-braces: PivotTablePaginatedReportOptionsTypeDef](./type_defs.md#pivottablepaginatedreportoptionstypedef) 
+## RadarChartConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RadarChartConfigurationTypeDef
+
+def get_value() -> RadarChartConfigurationTypeDef:
+    return {
+        "FieldWells": ...,
+    }
+```
+
+```python title="Definition"
+class RadarChartConfigurationTypeDef(TypedDict):
+    FieldWells: NotRequired[RadarChartFieldWellsTypeDef],  # (1)
+    SortConfiguration: NotRequired[RadarChartSortConfigurationTypeDef],  # (2)
+    Shape: NotRequired[RadarChartShapeType],  # (3)
+    BaseSeriesSettings: NotRequired[RadarChartSeriesSettingsTypeDef],  # (4)
+    StartAngle: NotRequired[float],
+    VisualPalette: NotRequired[VisualPaletteTypeDef],  # (5)
+    AlternateBandColorsVisibility: NotRequired[VisibilityType],  # (6)
+    AlternateBandEvenColor: NotRequired[str],
+    AlternateBandOddColor: NotRequired[str],
+    CategoryAxis: NotRequired[AxisDisplayOptionsTypeDef],  # (7)
+    CategoryLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (8)
+    ColorAxis: NotRequired[AxisDisplayOptionsTypeDef],  # (7)
+    ColorLabelOptions: NotRequired[ChartAxisLabelOptionsTypeDef],  # (8)
+    Legend: NotRequired[LegendOptionsTypeDef],  # (11)
+```
+
+1. See [:material-code-braces: RadarChartFieldWellsTypeDef](./type_defs.md#radarchartfieldwellstypedef) 
+2. See [:material-code-braces: RadarChartSortConfigurationTypeDef](./type_defs.md#radarchartsortconfigurationtypedef) 
+3. See [:material-code-brackets: RadarChartShapeType](./literals.md#radarchartshapetype) 
+4. See [:material-code-braces: RadarChartSeriesSettingsTypeDef](./type_defs.md#radarchartseriessettingstypedef) 
+5. See [:material-code-braces: VisualPaletteTypeDef](./type_defs.md#visualpalettetypedef) 
+6. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+7. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+8. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+9. See [:material-code-braces: AxisDisplayOptionsTypeDef](./type_defs.md#axisdisplayoptionstypedef) 
+10. See [:material-code-braces: ChartAxisLabelOptionsTypeDef](./type_defs.md#chartaxislabeloptionstypedef) 
+11. See [:material-code-braces: LegendOptionsTypeDef](./type_defs.md#legendoptionstypedef) 
 ## SankeyDiagramChartConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -17994,6 +18263,32 @@ class PivotTableVisualTypeDef(TypedDict):
 3. See [:material-code-braces: PivotTableConfigurationTypeDef](./type_defs.md#pivottableconfigurationtypedef) 
 4. See [:material-code-braces: PivotTableConditionalFormattingTypeDef](./type_defs.md#pivottableconditionalformattingtypedef) 
 5. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+## RadarChartVisualTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.type_defs import RadarChartVisualTypeDef
+
+def get_value() -> RadarChartVisualTypeDef:
+    return {
+        "VisualId": ...,
+    }
+```
+
+```python title="Definition"
+class RadarChartVisualTypeDef(TypedDict):
+    VisualId: str,
+    Title: NotRequired[VisualTitleLabelOptionsTypeDef],  # (1)
+    Subtitle: NotRequired[VisualSubtitleLabelOptionsTypeDef],  # (2)
+    ChartConfiguration: NotRequired[RadarChartConfigurationTypeDef],  # (3)
+    Actions: NotRequired[Sequence[VisualCustomActionTypeDef]],  # (4)
+    ColumnHierarchies: NotRequired[Sequence[ColumnHierarchyTypeDef]],  # (5)
+```
+
+1. See [:material-code-braces: VisualTitleLabelOptionsTypeDef](./type_defs.md#visualtitlelabeloptionstypedef) 
+2. See [:material-code-braces: VisualSubtitleLabelOptionsTypeDef](./type_defs.md#visualsubtitlelabeloptionstypedef) 
+3. See [:material-code-braces: RadarChartConfigurationTypeDef](./type_defs.md#radarchartconfigurationtypedef) 
+4. See [:material-code-braces: VisualCustomActionTypeDef](./type_defs.md#visualcustomactiontypedef) 
+5. See [:material-code-braces: ColumnHierarchyTypeDef](./type_defs.md#columnhierarchytypedef) 
 ## SankeyDiagramVisualTypeDef
 
 ```python title="Usage Example"
@@ -18209,6 +18504,7 @@ class VisualTypeDef(TypedDict):
     SankeyDiagramVisual: NotRequired[SankeyDiagramVisualTypeDef],  # (20)
     CustomContentVisual: NotRequired[CustomContentVisualTypeDef],  # (21)
     EmptyVisual: NotRequired[EmptyVisualTypeDef],  # (22)
+    RadarChartVisual: NotRequired[RadarChartVisualTypeDef],  # (23)
 ```
 
 1. See [:material-code-braces: TableVisualTypeDef](./type_defs.md#tablevisualtypedef) 
@@ -18233,6 +18529,7 @@ class VisualTypeDef(TypedDict):
 20. See [:material-code-braces: SankeyDiagramVisualTypeDef](./type_defs.md#sankeydiagramvisualtypedef) 
 21. See [:material-code-braces: CustomContentVisualTypeDef](./type_defs.md#customcontentvisualtypedef) 
 22. See [:material-code-braces: EmptyVisualTypeDef](./type_defs.md#emptyvisualtypedef) 
+23. See [:material-code-braces: RadarChartVisualTypeDef](./type_defs.md#radarchartvisualtypedef) 
 ## SheetDefinitionTypeDef
 
 ```python title="Usage Example"
@@ -18496,6 +18793,7 @@ def get_value() -> DescribeDashboardDefinitionResponseTypeDef:
         "Definition": ...,
         "Status": ...,
         "RequestId": ...,
+        "DashboardPublishOptions": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -18510,13 +18808,15 @@ class DescribeDashboardDefinitionResponseTypeDef(TypedDict):
     Definition: DashboardVersionDefinitionTypeDef,  # (3)
     Status: int,
     RequestId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    DashboardPublishOptions: DashboardPublishOptionsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: DashboardErrorTypeDef](./type_defs.md#dashboarderrortypedef) 
 2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
 3. See [:material-code-braces: DashboardVersionDefinitionTypeDef](./type_defs.md#dashboardversiondefinitiontypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDashboardRequestRequestTypeDef
 
 ```python title="Usage Example"

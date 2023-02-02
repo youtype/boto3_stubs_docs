@@ -1464,10 +1464,10 @@ Type annotations and code completion for `#!python boto3.resource("ec2").create_
 def create_vpc_peering_connection(
     self,
     *,
+    VpcId: str,
     DryRun: bool = ...,
     PeerOwnerId: str = ...,
     PeerVpcId: str = ...,
-    VpcId: str = ...,
     PeerRegion: str = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (1)
 ) -> VpcPeeringConnection:
@@ -1479,7 +1479,7 @@ def create_vpc_peering_connection(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateVpcPeeringConnectionRequestServiceResourceCreateVpcPeeringConnectionTypeDef = {  # (1)
-    "DryRun": ...,
+    "VpcId": ...,
 }
 
 parent.create_vpc_peering_connection(**kwargs)

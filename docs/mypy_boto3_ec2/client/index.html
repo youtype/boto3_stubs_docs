@@ -15,7 +15,7 @@
         <link rel="next" href="../literals/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
     
     
       
@@ -48805,8 +48805,8 @@ GetReservedInstancesExchangeQuote call.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">def</span> <span class="nf">accept_vpc_peering_connection</span><span class="p">(</span>
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="n">VpcPeeringConnectionId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="n">VpcPeeringConnectionId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AcceptVpcPeeringConnectionResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="o">...</span>
 </code></pre></div>
@@ -48814,7 +48814,7 @@ GetReservedInstancesExchangeQuote call.</p>
 <li>See <a href="../type_defs/#acceptvpcpeeringconnectionresulttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> AcceptVpcPeeringConnectionResultTypeDef</a> </li>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">AcceptVpcPeeringConnectionRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="s2">&quot;DryRun&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="s2">&quot;VpcPeeringConnectionId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">}</span>
 <a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
 <a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">accept_vpc_peering_connection</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -49146,8 +49146,8 @@ Manager (ACM) certificate.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="k">def</span> <span class="nf">associate_enclave_certificate_iam_role</span><span class="p">(</span>
 <a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AssociateEnclaveCertificateIamRoleResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a>    <span class="o">...</span>
@@ -49157,9 +49157,10 @@ Manager (ACM) certificate.</p>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">AssociateEnclaveCertificateIamRoleRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>    <span class="s2">&quot;CertificateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="p">}</span>
-<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>
-<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">associate_enclave_certificate_iam_role</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>    <span class="s2">&quot;RoleArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="p">}</span>
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a><span class="n">parent</span><span class="o">.</span><span class="n">associate_enclave_certificate_iam_role</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#associateenclavecertificateiamrolerequestrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> AssociateEnclaveCertificateIamRoleRequestRequestTypeDef</a> </li>
@@ -49334,9 +49335,9 @@ specified transit gateway multicast domain.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="k">def</span> <span class="nf">associate_transit_gateway_multicast_domain</span><span class="p">(</span>
 <a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-53-6" name="__codelineno-53-6" href="#__codelineno-53-6"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-53-6" name="__codelineno-53-6" href="#__codelineno-53-6"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-53-7" name="__codelineno-53-7" href="#__codelineno-53-7"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-53-8" name="__codelineno-53-8" href="#__codelineno-53-8"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AssociateTransitGatewayMulticastDomainResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-53-9" name="__codelineno-53-9" href="#__codelineno-53-9"></a>    <span class="o">...</span>
@@ -49346,9 +49347,11 @@ specified transit gateway multicast domain.</p>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">AssociateTransitGatewayMulticastDomainRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>    <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a><span class="p">}</span>
-<a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a>
-<a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">associate_transit_gateway_multicast_domain</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-54-3" name="__codelineno-54-3" href="#__codelineno-54-3"></a>    <span class="s2">&quot;TransitGatewayAttachmentId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-54-4" name="__codelineno-54-4" href="#__codelineno-54-4"></a>    <span class="s2">&quot;SubnetIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-54-5" name="__codelineno-54-5" href="#__codelineno-54-5"></a><span class="p">}</span>
+<a id="__codelineno-54-6" name="__codelineno-54-6" href="#__codelineno-54-6"></a>
+<a id="__codelineno-54-7" name="__codelineno-54-7" href="#__codelineno-54-7"></a><span class="n">parent</span><span class="o">.</span><span class="n">associate_transit_gateway_multicast_domain</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#associatetransitgatewaymulticastdomainrequestrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> AssociateTransitGatewayMulticastDomainRequestRequestTypeDef</a> </li>
@@ -52611,10 +52614,10 @@ and an accepter VPC with which to create the connection.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-267-1" name="__codelineno-267-1" href="#__codelineno-267-1"></a><span class="k">def</span> <span class="nf">create_vpc_peering_connection</span><span class="p">(</span>
 <a id="__codelineno-267-2" name="__codelineno-267-2" href="#__codelineno-267-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-267-3" name="__codelineno-267-3" href="#__codelineno-267-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-267-4" name="__codelineno-267-4" href="#__codelineno-267-4"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-267-5" name="__codelineno-267-5" href="#__codelineno-267-5"></a>    <span class="n">PeerOwnerId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-267-6" name="__codelineno-267-6" href="#__codelineno-267-6"></a>    <span class="n">PeerVpcId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-267-7" name="__codelineno-267-7" href="#__codelineno-267-7"></a>    <span class="n">VpcId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-267-4" name="__codelineno-267-4" href="#__codelineno-267-4"></a>    <span class="n">VpcId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-267-5" name="__codelineno-267-5" href="#__codelineno-267-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-267-6" name="__codelineno-267-6" href="#__codelineno-267-6"></a>    <span class="n">PeerOwnerId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-267-7" name="__codelineno-267-7" href="#__codelineno-267-7"></a>    <span class="n">PeerVpcId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-267-8" name="__codelineno-267-8" href="#__codelineno-267-8"></a>    <span class="n">PeerRegion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-267-9" name="__codelineno-267-9" href="#__codelineno-267-9"></a>    <span class="n">TagSpecifications</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">TagSpecificationTypeDef</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-267-10" name="__codelineno-267-10" href="#__codelineno-267-10"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CreateVpcPeeringConnectionResultTypeDef</span><span class="p">:</span>  <span class="c1"># (2)</span>
@@ -52625,7 +52628,7 @@ and an accepter VPC with which to create the connection.</p>
 <li>See <a href="../type_defs/#createvpcpeeringconnectionresulttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CreateVpcPeeringConnectionResultTypeDef</a> </li>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-268-1" name="__codelineno-268-1" href="#__codelineno-268-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">CreateVpcPeeringConnectionRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-268-2" name="__codelineno-268-2" href="#__codelineno-268-2"></a>    <span class="s2">&quot;DryRun&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-268-2" name="__codelineno-268-2" href="#__codelineno-268-2"></a>    <span class="s2">&quot;VpcId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-268-3" name="__codelineno-268-3" href="#__codelineno-268-3"></a><span class="p">}</span>
 <a id="__codelineno-268-4" name="__codelineno-268-4" href="#__codelineno-268-4"></a>
 <a id="__codelineno-268-5" name="__codelineno-268-5" href="#__codelineno-268-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">create_vpc_peering_connection</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -59240,8 +59243,8 @@ associated with.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-763-1" name="__codelineno-763-1" href="#__codelineno-763-1"></a><span class="k">def</span> <span class="nf">disassociate_enclave_certificate_iam_role</span><span class="p">(</span>
 <a id="__codelineno-763-2" name="__codelineno-763-2" href="#__codelineno-763-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-763-3" name="__codelineno-763-3" href="#__codelineno-763-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-763-4" name="__codelineno-763-4" href="#__codelineno-763-4"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-763-5" name="__codelineno-763-5" href="#__codelineno-763-5"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-763-4" name="__codelineno-763-4" href="#__codelineno-763-4"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-763-5" name="__codelineno-763-5" href="#__codelineno-763-5"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-763-6" name="__codelineno-763-6" href="#__codelineno-763-6"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-763-7" name="__codelineno-763-7" href="#__codelineno-763-7"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DisassociateEnclaveCertificateIamRoleResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-763-8" name="__codelineno-763-8" href="#__codelineno-763-8"></a>    <span class="o">...</span>
@@ -59251,9 +59254,10 @@ associated with.</p>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-764-1" name="__codelineno-764-1" href="#__codelineno-764-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">DisassociateEnclaveCertificateIamRoleRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-764-2" name="__codelineno-764-2" href="#__codelineno-764-2"></a>    <span class="s2">&quot;CertificateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-764-3" name="__codelineno-764-3" href="#__codelineno-764-3"></a><span class="p">}</span>
-<a id="__codelineno-764-4" name="__codelineno-764-4" href="#__codelineno-764-4"></a>
-<a id="__codelineno-764-5" name="__codelineno-764-5" href="#__codelineno-764-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">disassociate_enclave_certificate_iam_role</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-764-3" name="__codelineno-764-3" href="#__codelineno-764-3"></a>    <span class="s2">&quot;RoleArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-764-4" name="__codelineno-764-4" href="#__codelineno-764-4"></a><span class="p">}</span>
+<a id="__codelineno-764-5" name="__codelineno-764-5" href="#__codelineno-764-5"></a>
+<a id="__codelineno-764-6" name="__codelineno-764-6" href="#__codelineno-764-6"></a><span class="n">parent</span><span class="o">.</span><span class="n">disassociate_enclave_certificate_iam_role</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#disassociateenclavecertificateiamrolerequestrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> DisassociateEnclaveCertificateIamRoleRequestRequestTypeDef</a> </li>
@@ -59413,9 +59417,9 @@ associated with.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-777-1" name="__codelineno-777-1" href="#__codelineno-777-1"></a><span class="k">def</span> <span class="nf">disassociate_transit_gateway_multicast_domain</span><span class="p">(</span>
 <a id="__codelineno-777-2" name="__codelineno-777-2" href="#__codelineno-777-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-777-3" name="__codelineno-777-3" href="#__codelineno-777-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-777-4" name="__codelineno-777-4" href="#__codelineno-777-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-777-5" name="__codelineno-777-5" href="#__codelineno-777-5"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-777-6" name="__codelineno-777-6" href="#__codelineno-777-6"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-777-4" name="__codelineno-777-4" href="#__codelineno-777-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-777-5" name="__codelineno-777-5" href="#__codelineno-777-5"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-777-6" name="__codelineno-777-6" href="#__codelineno-777-6"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-777-7" name="__codelineno-777-7" href="#__codelineno-777-7"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-777-8" name="__codelineno-777-8" href="#__codelineno-777-8"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DisassociateTransitGatewayMulticastDomainResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-777-9" name="__codelineno-777-9" href="#__codelineno-777-9"></a>    <span class="o">...</span>
@@ -59425,9 +59429,11 @@ associated with.</p>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-778-1" name="__codelineno-778-1" href="#__codelineno-778-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-778-2" name="__codelineno-778-2" href="#__codelineno-778-2"></a>    <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-778-3" name="__codelineno-778-3" href="#__codelineno-778-3"></a><span class="p">}</span>
-<a id="__codelineno-778-4" name="__codelineno-778-4" href="#__codelineno-778-4"></a>
-<a id="__codelineno-778-5" name="__codelineno-778-5" href="#__codelineno-778-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">disassociate_transit_gateway_multicast_domain</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-778-3" name="__codelineno-778-3" href="#__codelineno-778-3"></a>    <span class="s2">&quot;TransitGatewayAttachmentId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-778-4" name="__codelineno-778-4" href="#__codelineno-778-4"></a>    <span class="s2">&quot;SubnetIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-778-5" name="__codelineno-778-5" href="#__codelineno-778-5"></a><span class="p">}</span>
+<a id="__codelineno-778-6" name="__codelineno-778-6" href="#__codelineno-778-6"></a>
+<a id="__codelineno-778-7" name="__codelineno-778-7" href="#__codelineno-778-7"></a><span class="n">parent</span><span class="o">.</span><span class="n">disassociate_transit_gateway_multicast_domain</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#disassociatetransitgatewaymulticastdomainrequestrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef</a> </li>
@@ -60026,7 +60032,7 @@ certificate.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-824-1" name="__codelineno-824-1" href="#__codelineno-824-1"></a><span class="k">def</span> <span class="nf">get_associated_enclave_certificate_iam_roles</span><span class="p">(</span>
 <a id="__codelineno-824-2" name="__codelineno-824-2" href="#__codelineno-824-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-824-3" name="__codelineno-824-3" href="#__codelineno-824-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-824-4" name="__codelineno-824-4" href="#__codelineno-824-4"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-824-4" name="__codelineno-824-4" href="#__codelineno-824-4"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-824-5" name="__codelineno-824-5" href="#__codelineno-824-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-824-6" name="__codelineno-824-6" href="#__codelineno-824-6"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">GetAssociatedEnclaveCertificateIamRolesResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-824-7" name="__codelineno-824-7" href="#__codelineno-824-7"></a>    <span class="o">...</span>
@@ -60902,7 +60908,7 @@ domain.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-888-1" name="__codelineno-888-1" href="#__codelineno-888-1"></a><span class="k">def</span> <span class="nf">get_transit_gateway_multicast_domain_associations</span><span class="p">(</span>
 <a id="__codelineno-888-2" name="__codelineno-888-2" href="#__codelineno-888-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-888-3" name="__codelineno-888-3" href="#__codelineno-888-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-888-4" name="__codelineno-888-4" href="#__codelineno-888-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-888-4" name="__codelineno-888-4" href="#__codelineno-888-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-888-5" name="__codelineno-888-5" href="#__codelineno-888-5"></a>    <span class="n">Filters</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-888-6" name="__codelineno-888-6" href="#__codelineno-888-6"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-888-7" name="__codelineno-888-7" href="#__codelineno-888-7"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
@@ -62336,8 +62342,8 @@ recovery or set the recovery behavior to default.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-984-1" name="__codelineno-984-1" href="#__codelineno-984-1"></a><span class="k">def</span> <span class="nf">modify_private_dns_name_options</span><span class="p">(</span>
 <a id="__codelineno-984-2" name="__codelineno-984-2" href="#__codelineno-984-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-984-3" name="__codelineno-984-3" href="#__codelineno-984-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-984-4" name="__codelineno-984-4" href="#__codelineno-984-4"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-984-5" name="__codelineno-984-5" href="#__codelineno-984-5"></a>    <span class="n">InstanceId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-984-4" name="__codelineno-984-4" href="#__codelineno-984-4"></a>    <span class="n">InstanceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-984-5" name="__codelineno-984-5" href="#__codelineno-984-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-984-6" name="__codelineno-984-6" href="#__codelineno-984-6"></a>    <span class="n">PrivateDnsHostnameType</span><span class="p">:</span> <span class="n">HostnameTypeType</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-984-7" name="__codelineno-984-7" href="#__codelineno-984-7"></a>    <span class="n">EnableResourceNameDnsARecord</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-984-8" name="__codelineno-984-8" href="#__codelineno-984-8"></a>    <span class="n">EnableResourceNameDnsAAAARecord</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
@@ -62349,7 +62355,7 @@ recovery or set the recovery behavior to default.</p>
 <li>See <a href="../type_defs/#modifyprivatednsnameoptionsresulttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ModifyPrivateDnsNameOptionsResultTypeDef</a> </li>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-985-1" name="__codelineno-985-1" href="#__codelineno-985-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">ModifyPrivateDnsNameOptionsRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-985-2" name="__codelineno-985-2" href="#__codelineno-985-2"></a>    <span class="s2">&quot;DryRun&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-985-2" name="__codelineno-985-2" href="#__codelineno-985-2"></a>    <span class="s2">&quot;InstanceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-985-3" name="__codelineno-985-3" href="#__codelineno-985-3"></a><span class="p">}</span>
 <a id="__codelineno-985-4" name="__codelineno-985-4" href="#__codelineno-985-4"></a>
 <a id="__codelineno-985-5" name="__codelineno-985-5" href="#__codelineno-985-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">modify_private_dns_name_options</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -63679,9 +63685,9 @@ resources.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-1076-1" name="__codelineno-1076-1" href="#__codelineno-1076-1"></a><span class="k">def</span> <span class="nf">register_transit_gateway_multicast_group_members</span><span class="p">(</span>
 <a id="__codelineno-1076-2" name="__codelineno-1076-2" href="#__codelineno-1076-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-1076-3" name="__codelineno-1076-3" href="#__codelineno-1076-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-1076-4" name="__codelineno-1076-4" href="#__codelineno-1076-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1076-5" name="__codelineno-1076-5" href="#__codelineno-1076-5"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1076-6" name="__codelineno-1076-6" href="#__codelineno-1076-6"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1076-4" name="__codelineno-1076-4" href="#__codelineno-1076-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-1076-5" name="__codelineno-1076-5" href="#__codelineno-1076-5"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-1076-6" name="__codelineno-1076-6" href="#__codelineno-1076-6"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-1076-7" name="__codelineno-1076-7" href="#__codelineno-1076-7"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-1076-8" name="__codelineno-1076-8" href="#__codelineno-1076-8"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterTransitGatewayMulticastGroupMembersResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-1076-9" name="__codelineno-1076-9" href="#__codelineno-1076-9"></a>    <span class="o">...</span>
@@ -63691,9 +63697,10 @@ resources.</p>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-1077-1" name="__codelineno-1077-1" href="#__codelineno-1077-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-1077-2" name="__codelineno-1077-2" href="#__codelineno-1077-2"></a>    <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1077-3" name="__codelineno-1077-3" href="#__codelineno-1077-3"></a><span class="p">}</span>
-<a id="__codelineno-1077-4" name="__codelineno-1077-4" href="#__codelineno-1077-4"></a>
-<a id="__codelineno-1077-5" name="__codelineno-1077-5" href="#__codelineno-1077-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">register_transit_gateway_multicast_group_members</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-1077-3" name="__codelineno-1077-3" href="#__codelineno-1077-3"></a>    <span class="s2">&quot;NetworkInterfaceIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1077-4" name="__codelineno-1077-4" href="#__codelineno-1077-4"></a><span class="p">}</span>
+<a id="__codelineno-1077-5" name="__codelineno-1077-5" href="#__codelineno-1077-5"></a>
+<a id="__codelineno-1077-6" name="__codelineno-1077-6" href="#__codelineno-1077-6"></a><span class="n">parent</span><span class="o">.</span><span class="n">register_transit_gateway_multicast_group_members</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#registertransitgatewaymulticastgroupmembersrequestrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef</a> </li>
@@ -63706,9 +63713,9 @@ multicast group.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-1078-1" name="__codelineno-1078-1" href="#__codelineno-1078-1"></a><span class="k">def</span> <span class="nf">register_transit_gateway_multicast_group_sources</span><span class="p">(</span>
 <a id="__codelineno-1078-2" name="__codelineno-1078-2" href="#__codelineno-1078-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-1078-3" name="__codelineno-1078-3" href="#__codelineno-1078-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-1078-4" name="__codelineno-1078-4" href="#__codelineno-1078-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1078-5" name="__codelineno-1078-5" href="#__codelineno-1078-5"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1078-6" name="__codelineno-1078-6" href="#__codelineno-1078-6"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1078-4" name="__codelineno-1078-4" href="#__codelineno-1078-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-1078-5" name="__codelineno-1078-5" href="#__codelineno-1078-5"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-1078-6" name="__codelineno-1078-6" href="#__codelineno-1078-6"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-1078-7" name="__codelineno-1078-7" href="#__codelineno-1078-7"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-1078-8" name="__codelineno-1078-8" href="#__codelineno-1078-8"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RegisterTransitGatewayMulticastGroupSourcesResultTypeDef</span><span class="p">:</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-1078-9" name="__codelineno-1078-9" href="#__codelineno-1078-9"></a>    <span class="o">...</span>
@@ -63718,9 +63725,10 @@ multicast group.</p>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-1079-1" name="__codelineno-1079-1" href="#__codelineno-1079-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">RegisterTransitGatewayMulticastGroupSourcesRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-1079-2" name="__codelineno-1079-2" href="#__codelineno-1079-2"></a>    <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1079-3" name="__codelineno-1079-3" href="#__codelineno-1079-3"></a><span class="p">}</span>
-<a id="__codelineno-1079-4" name="__codelineno-1079-4" href="#__codelineno-1079-4"></a>
-<a id="__codelineno-1079-5" name="__codelineno-1079-5" href="#__codelineno-1079-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">register_transit_gateway_multicast_group_sources</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-1079-3" name="__codelineno-1079-3" href="#__codelineno-1079-3"></a>    <span class="s2">&quot;NetworkInterfaceIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1079-4" name="__codelineno-1079-4" href="#__codelineno-1079-4"></a><span class="p">}</span>
+<a id="__codelineno-1079-5" name="__codelineno-1079-5" href="#__codelineno-1079-5"></a>
+<a id="__codelineno-1079-6" name="__codelineno-1079-6" href="#__codelineno-1079-6"></a><span class="n">parent</span><span class="o">.</span><span class="n">register_transit_gateway_multicast_group_sources</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#registertransitgatewaymulticastgroupsourcesrequestrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RegisterTransitGatewayMulticastGroupSourcesRequestRequestTypeDef</a> </li>
@@ -64768,7 +64776,7 @@ membership information.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-1150-1" name="__codelineno-1150-1" href="#__codelineno-1150-1"></a><span class="k">def</span> <span class="nf">search_transit_gateway_multicast_groups</span><span class="p">(</span>
 <a id="__codelineno-1150-2" name="__codelineno-1150-2" href="#__codelineno-1150-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-1150-3" name="__codelineno-1150-3" href="#__codelineno-1150-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-1150-4" name="__codelineno-1150-4" href="#__codelineno-1150-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1150-4" name="__codelineno-1150-4" href="#__codelineno-1150-4"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-1150-5" name="__codelineno-1150-5" href="#__codelineno-1150-5"></a>    <span class="n">Filters</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-1150-6" name="__codelineno-1150-6" href="#__codelineno-1150-6"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-1150-7" name="__codelineno-1150-7" href="#__codelineno-1150-7"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
@@ -65430,7 +65438,7 @@ gateway.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a00a7c5e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
       
     
   </body>

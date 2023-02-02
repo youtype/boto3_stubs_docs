@@ -262,7 +262,8 @@ parent.create_analysis(**kwargs)
 
 ### create\_dashboard
 
-Creates a dashboard from a template.
+Creates a dashboard from either a template or directly with a
+`DashboardDefinition`.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").create_dashboard` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_dashboard)
@@ -669,7 +670,8 @@ parent.create_namespace(**kwargs)
 
 ### create\_template
 
-Creates a template from an existing Amazon QuickSight analysis or template.
+Creates a template either from a `TemplateDefinition` or from an existing Amazon
+QuickSight analysis or template.
 
 Type annotations and code completion for `#!python boto3.client("quicksight").create_template` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template)

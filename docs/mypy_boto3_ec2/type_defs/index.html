@@ -15,7 +15,7 @@
         <link rel="next" href="../usage/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
     
     
       
@@ -70587,12 +70587,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>
 <a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AcceptVpcPeeringConnectionRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>        <span class="s2">&quot;DryRun&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>        <span class="s2">&quot;VpcPeeringConnectionId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">class</span> <span class="nc">AcceptVpcPeeringConnectionRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="n">VpcPeeringConnectionId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="n">VpcPeeringConnectionId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="acceptvpcpeeringconnectionrequestvpcpeeringconnectionaccepttypedef">AcceptVpcPeeringConnectionRequestVpcPeeringConnectionAcceptTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_ec2.type_defs</span> <span class="kn">import</span> <span class="n">AcceptVpcPeeringConnectionRequestVpcPeeringConnectionAcceptTypeDef</span>
@@ -71077,11 +71077,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-90-3" name="__codelineno-90-3" href="#__codelineno-90-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AssociateEnclaveCertificateIamRoleRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-90-4" name="__codelineno-90-4" href="#__codelineno-90-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-90-5" name="__codelineno-90-5" href="#__codelineno-90-5"></a>        <span class="s2">&quot;CertificateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-90-6" name="__codelineno-90-6" href="#__codelineno-90-6"></a>    <span class="p">}</span>
+<a id="__codelineno-90-6" name="__codelineno-90-6" href="#__codelineno-90-6"></a>        <span class="s2">&quot;RoleArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-90-7" name="__codelineno-90-7" href="#__codelineno-90-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a><span class="k">class</span> <span class="nc">AssociateEnclaveCertificateIamRoleRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-91-2" name="__codelineno-91-2" href="#__codelineno-91-2"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-91-3" name="__codelineno-91-3" href="#__codelineno-91-3"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-91-2" name="__codelineno-91-2" href="#__codelineno-91-2"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-91-3" name="__codelineno-91-3" href="#__codelineno-91-3"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-91-4" name="__codelineno-91-4" href="#__codelineno-91-4"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="iaminstanceprofilespecificationtypedef">IamInstanceProfileSpecificationTypeDef</h2>
@@ -71172,12 +71173,14 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-104-3" name="__codelineno-104-3" href="#__codelineno-104-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AssociateTransitGatewayMulticastDomainRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-104-4" name="__codelineno-104-4" href="#__codelineno-104-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-104-5" name="__codelineno-104-5" href="#__codelineno-104-5"></a>        <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-104-6" name="__codelineno-104-6" href="#__codelineno-104-6"></a>    <span class="p">}</span>
+<a id="__codelineno-104-6" name="__codelineno-104-6" href="#__codelineno-104-6"></a>        <span class="s2">&quot;TransitGatewayAttachmentId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-104-7" name="__codelineno-104-7" href="#__codelineno-104-7"></a>        <span class="s2">&quot;SubnetIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-104-8" name="__codelineno-104-8" href="#__codelineno-104-8"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a><span class="k">class</span> <span class="nc">AssociateTransitGatewayMulticastDomainRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-105-2" name="__codelineno-105-2" href="#__codelineno-105-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-105-3" name="__codelineno-105-3" href="#__codelineno-105-3"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-105-4" name="__codelineno-105-4" href="#__codelineno-105-4"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-105-2" name="__codelineno-105-2" href="#__codelineno-105-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-105-3" name="__codelineno-105-3" href="#__codelineno-105-3"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-105-4" name="__codelineno-105-4" href="#__codelineno-105-4"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-105-5" name="__codelineno-105-5" href="#__codelineno-105-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="associatetransitgatewaypolicytablerequestrequesttypedef">AssociateTransitGatewayPolicyTableRequestRequestTypeDef</h2>
@@ -75749,11 +75752,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-766-3" name="__codelineno-766-3" href="#__codelineno-766-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DisassociateEnclaveCertificateIamRoleRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-766-4" name="__codelineno-766-4" href="#__codelineno-766-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-766-5" name="__codelineno-766-5" href="#__codelineno-766-5"></a>        <span class="s2">&quot;CertificateArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-766-6" name="__codelineno-766-6" href="#__codelineno-766-6"></a>    <span class="p">}</span>
+<a id="__codelineno-766-6" name="__codelineno-766-6" href="#__codelineno-766-6"></a>        <span class="s2">&quot;RoleArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-766-7" name="__codelineno-766-7" href="#__codelineno-766-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-767-1" name="__codelineno-767-1" href="#__codelineno-767-1"></a><span class="k">class</span> <span class="nc">DisassociateEnclaveCertificateIamRoleRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-767-2" name="__codelineno-767-2" href="#__codelineno-767-2"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-767-3" name="__codelineno-767-3" href="#__codelineno-767-3"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-767-2" name="__codelineno-767-2" href="#__codelineno-767-2"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-767-3" name="__codelineno-767-3" href="#__codelineno-767-3"></a>    <span class="n">RoleArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-767-4" name="__codelineno-767-4" href="#__codelineno-767-4"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="disassociateiaminstanceprofilerequestrequesttypedef">DisassociateIamInstanceProfileRequestRequestTypeDef</h2>
@@ -75846,12 +75850,14 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-782-3" name="__codelineno-782-3" href="#__codelineno-782-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-782-4" name="__codelineno-782-4" href="#__codelineno-782-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-782-5" name="__codelineno-782-5" href="#__codelineno-782-5"></a>        <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-782-6" name="__codelineno-782-6" href="#__codelineno-782-6"></a>    <span class="p">}</span>
+<a id="__codelineno-782-6" name="__codelineno-782-6" href="#__codelineno-782-6"></a>        <span class="s2">&quot;TransitGatewayAttachmentId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-782-7" name="__codelineno-782-7" href="#__codelineno-782-7"></a>        <span class="s2">&quot;SubnetIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-782-8" name="__codelineno-782-8" href="#__codelineno-782-8"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-783-1" name="__codelineno-783-1" href="#__codelineno-783-1"></a><span class="k">class</span> <span class="nc">DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-783-2" name="__codelineno-783-2" href="#__codelineno-783-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-783-3" name="__codelineno-783-3" href="#__codelineno-783-3"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-783-4" name="__codelineno-783-4" href="#__codelineno-783-4"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-783-2" name="__codelineno-783-2" href="#__codelineno-783-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-783-3" name="__codelineno-783-3" href="#__codelineno-783-3"></a>    <span class="n">TransitGatewayAttachmentId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-783-4" name="__codelineno-783-4" href="#__codelineno-783-4"></a>    <span class="n">SubnetIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-783-5" name="__codelineno-783-5" href="#__codelineno-783-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="disassociatetransitgatewaypolicytablerequestrequesttypedef">DisassociateTransitGatewayPolicyTableRequestRequestTypeDef</h2>
@@ -76732,7 +76738,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-912-6" name="__codelineno-912-6" href="#__codelineno-912-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-913-1" name="__codelineno-913-1" href="#__codelineno-913-1"></a><span class="k">class</span> <span class="nc">GetAssociatedEnclaveCertificateIamRolesRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-913-2" name="__codelineno-913-2" href="#__codelineno-913-2"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-913-2" name="__codelineno-913-2" href="#__codelineno-913-2"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-913-3" name="__codelineno-913-3" href="#__codelineno-913-3"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="getassociatedipv6poolcidrsrequestrequesttypedef">GetAssociatedIpv6PoolCidrsRequestRequestTypeDef</h2>
@@ -77498,7 +77504,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-1026-6" name="__codelineno-1026-6" href="#__codelineno-1026-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-1027-1" name="__codelineno-1027-1" href="#__codelineno-1027-1"></a><span class="k">class</span> <span class="nc">InstanceCreditSpecificationRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-1027-2" name="__codelineno-1027-2" href="#__codelineno-1027-2"></a>    <span class="n">InstanceId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-1027-2" name="__codelineno-1027-2" href="#__codelineno-1027-2"></a>    <span class="n">InstanceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-1027-3" name="__codelineno-1027-3" href="#__codelineno-1027-3"></a>    <span class="n">CpuCredits</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="instanceeventwindowtimerangetypedef">InstanceEventWindowTimeRangeTypeDef</h2>
@@ -78983,12 +78989,12 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-1234-2" name="__codelineno-1234-2" href="#__codelineno-1234-2"></a>
 <a id="__codelineno-1234-3" name="__codelineno-1234-3" href="#__codelineno-1234-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ModifyPrivateDnsNameOptionsRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-1234-4" name="__codelineno-1234-4" href="#__codelineno-1234-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-1234-5" name="__codelineno-1234-5" href="#__codelineno-1234-5"></a>        <span class="s2">&quot;DryRun&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1234-5" name="__codelineno-1234-5" href="#__codelineno-1234-5"></a>        <span class="s2">&quot;InstanceId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-1234-6" name="__codelineno-1234-6" href="#__codelineno-1234-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-1235-1" name="__codelineno-1235-1" href="#__codelineno-1235-1"></a><span class="k">class</span> <span class="nc">ModifyPrivateDnsNameOptionsRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-1235-2" name="__codelineno-1235-2" href="#__codelineno-1235-2"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
-<a id="__codelineno-1235-3" name="__codelineno-1235-3" href="#__codelineno-1235-3"></a>    <span class="n">InstanceId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-1235-2" name="__codelineno-1235-2" href="#__codelineno-1235-2"></a>    <span class="n">InstanceId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-1235-3" name="__codelineno-1235-3" href="#__codelineno-1235-3"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 <a id="__codelineno-1235-4" name="__codelineno-1235-4" href="#__codelineno-1235-4"></a>    <span class="n">PrivateDnsHostnameType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">HostnameTypeType</span><span class="p">],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-1235-5" name="__codelineno-1235-5" href="#__codelineno-1235-5"></a>    <span class="n">EnableResourceNameDnsARecord</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 <a id="__codelineno-1235-6" name="__codelineno-1235-6" href="#__codelineno-1235-6"></a>    <span class="n">EnableResourceNameDnsAAAARecord</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
@@ -80012,12 +80018,13 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-1376-3" name="__codelineno-1376-3" href="#__codelineno-1376-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-1376-4" name="__codelineno-1376-4" href="#__codelineno-1376-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-1376-5" name="__codelineno-1376-5" href="#__codelineno-1376-5"></a>        <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1376-6" name="__codelineno-1376-6" href="#__codelineno-1376-6"></a>    <span class="p">}</span>
+<a id="__codelineno-1376-6" name="__codelineno-1376-6" href="#__codelineno-1376-6"></a>        <span class="s2">&quot;NetworkInterfaceIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1376-7" name="__codelineno-1376-7" href="#__codelineno-1376-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-1377-1" name="__codelineno-1377-1" href="#__codelineno-1377-1"></a><span class="k">class</span> <span class="nc">RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-1377-2" name="__codelineno-1377-2" href="#__codelineno-1377-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-1377-3" name="__codelineno-1377-3" href="#__codelineno-1377-3"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-1377-4" name="__codelineno-1377-4" href="#__codelineno-1377-4"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-1377-2" name="__codelineno-1377-2" href="#__codelineno-1377-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-1377-3" name="__codelineno-1377-3" href="#__codelineno-1377-3"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-1377-4" name="__codelineno-1377-4" href="#__codelineno-1377-4"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-1377-5" name="__codelineno-1377-5" href="#__codelineno-1377-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="transitgatewaymulticastregisteredgroupmemberstypedef">TransitGatewayMulticastRegisteredGroupMembersTypeDef</h2>
@@ -80039,12 +80046,13 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-1380-3" name="__codelineno-1380-3" href="#__codelineno-1380-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">RegisterTransitGatewayMulticastGroupSourcesRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-1380-4" name="__codelineno-1380-4" href="#__codelineno-1380-4"></a>    <span class="k">return</span> <span class="p">{</span>
 <a id="__codelineno-1380-5" name="__codelineno-1380-5" href="#__codelineno-1380-5"></a>        <span class="s2">&quot;TransitGatewayMulticastDomainId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-1380-6" name="__codelineno-1380-6" href="#__codelineno-1380-6"></a>    <span class="p">}</span>
+<a id="__codelineno-1380-6" name="__codelineno-1380-6" href="#__codelineno-1380-6"></a>        <span class="s2">&quot;NetworkInterfaceIds&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-1380-7" name="__codelineno-1380-7" href="#__codelineno-1380-7"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-1381-1" name="__codelineno-1381-1" href="#__codelineno-1381-1"></a><span class="k">class</span> <span class="nc">RegisterTransitGatewayMulticastGroupSourcesRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-1381-2" name="__codelineno-1381-2" href="#__codelineno-1381-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-1381-3" name="__codelineno-1381-3" href="#__codelineno-1381-3"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-1381-4" name="__codelineno-1381-4" href="#__codelineno-1381-4"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-1381-2" name="__codelineno-1381-2" href="#__codelineno-1381-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-1381-3" name="__codelineno-1381-3" href="#__codelineno-1381-3"></a>    <span class="n">NetworkInterfaceIds</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-1381-4" name="__codelineno-1381-4" href="#__codelineno-1381-4"></a>    <span class="n">GroupIpAddress</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-1381-5" name="__codelineno-1381-5" href="#__codelineno-1381-5"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="transitgatewaymulticastregisteredgroupsourcestypedef">TransitGatewayMulticastRegisteredGroupSourcesTypeDef</h2>
@@ -92341,7 +92349,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-2774-6" name="__codelineno-2774-6" href="#__codelineno-2774-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-2775-1" name="__codelineno-2775-1" href="#__codelineno-2775-1"></a><span class="k">class</span> <span class="nc">GetTransitGatewayMulticastDomainAssociationsRequestGetTransitGatewayMulticastDomainAssociationsPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-2775-2" name="__codelineno-2775-2" href="#__codelineno-2775-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-2775-2" name="__codelineno-2775-2" href="#__codelineno-2775-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-2775-3" name="__codelineno-2775-3" href="#__codelineno-2775-3"></a>    <span class="n">Filters</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-2775-4" name="__codelineno-2775-4" href="#__codelineno-2775-4"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 <a id="__codelineno-2775-5" name="__codelineno-2775-5" href="#__codelineno-2775-5"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
@@ -92359,7 +92367,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-2776-6" name="__codelineno-2776-6" href="#__codelineno-2776-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-2777-1" name="__codelineno-2777-1" href="#__codelineno-2777-1"></a><span class="k">class</span> <span class="nc">GetTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-2777-2" name="__codelineno-2777-2" href="#__codelineno-2777-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-2777-2" name="__codelineno-2777-2" href="#__codelineno-2777-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-2777-3" name="__codelineno-2777-3" href="#__codelineno-2777-3"></a>    <span class="n">Filters</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-2777-4" name="__codelineno-2777-4" href="#__codelineno-2777-4"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-2777-5" name="__codelineno-2777-5" href="#__codelineno-2777-5"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
@@ -92575,7 +92583,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-2800-6" name="__codelineno-2800-6" href="#__codelineno-2800-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-2801-1" name="__codelineno-2801-1" href="#__codelineno-2801-1"></a><span class="k">class</span> <span class="nc">SearchTransitGatewayMulticastGroupsRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-2801-2" name="__codelineno-2801-2" href="#__codelineno-2801-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-2801-2" name="__codelineno-2801-2" href="#__codelineno-2801-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-2801-3" name="__codelineno-2801-3" href="#__codelineno-2801-3"></a>    <span class="n">Filters</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-2801-4" name="__codelineno-2801-4" href="#__codelineno-2801-4"></a>    <span class="n">MaxResults</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-2801-5" name="__codelineno-2801-5" href="#__codelineno-2801-5"></a>    <span class="n">NextToken</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
@@ -92593,7 +92601,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-2802-6" name="__codelineno-2802-6" href="#__codelineno-2802-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-2803-1" name="__codelineno-2803-1" href="#__codelineno-2803-1"></a><span class="k">class</span> <span class="nc">SearchTransitGatewayMulticastGroupsRequestSearchTransitGatewayMulticastGroupsPaginateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-2803-2" name="__codelineno-2803-2" href="#__codelineno-2803-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-2803-2" name="__codelineno-2803-2" href="#__codelineno-2803-2"></a>    <span class="n">TransitGatewayMulticastDomainId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-2803-3" name="__codelineno-2803-3" href="#__codelineno-2803-3"></a>    <span class="n">Filters</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">FilterTypeDef</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 <a id="__codelineno-2803-4" name="__codelineno-2803-4" href="#__codelineno-2803-4"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 <a id="__codelineno-2803-5" name="__codelineno-2803-5" href="#__codelineno-2803-5"></a>    <span class="n">PaginationConfig</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">PaginatorConfigTypeDef</span><span class="p">],</span>  <span class="c1"># (2)</span>
@@ -96432,7 +96440,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-3172-6" name="__codelineno-3172-6" href="#__codelineno-3172-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-3173-1" name="__codelineno-3173-1" href="#__codelineno-3173-1"></a><span class="k">class</span> <span class="nc">SecurityGroupRuleUpdateTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-3173-2" name="__codelineno-3173-2" href="#__codelineno-3173-2"></a>    <span class="n">SecurityGroupRuleId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-3173-2" name="__codelineno-3173-2" href="#__codelineno-3173-2"></a>    <span class="n">SecurityGroupRuleId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-3173-3" name="__codelineno-3173-3" href="#__codelineno-3173-3"></a>    <span class="n">SecurityGroupRule</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">SecurityGroupRuleRequestTypeDef</span><span class="p">],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
@@ -99943,14 +99951,14 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-3520-2" name="__codelineno-3520-2" href="#__codelineno-3520-2"></a>
 <a id="__codelineno-3520-3" name="__codelineno-3520-3" href="#__codelineno-3520-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CreateVpcPeeringConnectionRequestRequestTypeDef</span><span class="p">:</span>
 <a id="__codelineno-3520-4" name="__codelineno-3520-4" href="#__codelineno-3520-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-3520-5" name="__codelineno-3520-5" href="#__codelineno-3520-5"></a>        <span class="s2">&quot;DryRun&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-3520-5" name="__codelineno-3520-5" href="#__codelineno-3520-5"></a>        <span class="s2">&quot;VpcId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-3520-6" name="__codelineno-3520-6" href="#__codelineno-3520-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-3521-1" name="__codelineno-3521-1" href="#__codelineno-3521-1"></a><span class="k">class</span> <span class="nc">CreateVpcPeeringConnectionRequestRequestTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-3521-2" name="__codelineno-3521-2" href="#__codelineno-3521-2"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
-<a id="__codelineno-3521-3" name="__codelineno-3521-3" href="#__codelineno-3521-3"></a>    <span class="n">PeerOwnerId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-3521-4" name="__codelineno-3521-4" href="#__codelineno-3521-4"></a>    <span class="n">PeerVpcId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-3521-5" name="__codelineno-3521-5" href="#__codelineno-3521-5"></a>    <span class="n">VpcId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-3521-2" name="__codelineno-3521-2" href="#__codelineno-3521-2"></a>    <span class="n">VpcId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-3521-3" name="__codelineno-3521-3" href="#__codelineno-3521-3"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-3521-4" name="__codelineno-3521-4" href="#__codelineno-3521-4"></a>    <span class="n">PeerOwnerId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-3521-5" name="__codelineno-3521-5" href="#__codelineno-3521-5"></a>    <span class="n">PeerVpcId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-3521-6" name="__codelineno-3521-6" href="#__codelineno-3521-6"></a>    <span class="n">PeerRegion</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-3521-7" name="__codelineno-3521-7" href="#__codelineno-3521-7"></a>    <span class="n">TagSpecifications</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TagSpecificationTypeDef</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
@@ -99962,14 +99970,14 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
 <a id="__codelineno-3522-2" name="__codelineno-3522-2" href="#__codelineno-3522-2"></a>
 <a id="__codelineno-3522-3" name="__codelineno-3522-3" href="#__codelineno-3522-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">CreateVpcPeeringConnectionRequestServiceResourceCreateVpcPeeringConnectionTypeDef</span><span class="p">:</span>
 <a id="__codelineno-3522-4" name="__codelineno-3522-4" href="#__codelineno-3522-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-3522-5" name="__codelineno-3522-5" href="#__codelineno-3522-5"></a>        <span class="s2">&quot;DryRun&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-3522-5" name="__codelineno-3522-5" href="#__codelineno-3522-5"></a>        <span class="s2">&quot;VpcId&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-3522-6" name="__codelineno-3522-6" href="#__codelineno-3522-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-3523-1" name="__codelineno-3523-1" href="#__codelineno-3523-1"></a><span class="k">class</span> <span class="nc">CreateVpcPeeringConnectionRequestServiceResourceCreateVpcPeeringConnectionTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<a id="__codelineno-3523-2" name="__codelineno-3523-2" href="#__codelineno-3523-2"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
-<a id="__codelineno-3523-3" name="__codelineno-3523-3" href="#__codelineno-3523-3"></a>    <span class="n">PeerOwnerId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-3523-4" name="__codelineno-3523-4" href="#__codelineno-3523-4"></a>    <span class="n">PeerVpcId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
-<a id="__codelineno-3523-5" name="__codelineno-3523-5" href="#__codelineno-3523-5"></a>    <span class="n">VpcId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-3523-2" name="__codelineno-3523-2" href="#__codelineno-3523-2"></a>    <span class="n">VpcId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-3523-3" name="__codelineno-3523-3" href="#__codelineno-3523-3"></a>    <span class="n">DryRun</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-3523-4" name="__codelineno-3523-4" href="#__codelineno-3523-4"></a>    <span class="n">PeerOwnerId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-3523-5" name="__codelineno-3523-5" href="#__codelineno-3523-5"></a>    <span class="n">PeerVpcId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-3523-6" name="__codelineno-3523-6" href="#__codelineno-3523-6"></a>    <span class="n">PeerRegion</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-3523-7" name="__codelineno-3523-7" href="#__codelineno-3523-7"></a>    <span class="n">TagSpecifications</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="n">TagSpecificationTypeDef</span><span class="p">]],</span>  <span class="c1"># (1)</span>
 </code></pre></div>
@@ -108614,7 +108622,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-ec2/"
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a00a7c5e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
       
     
   </body>

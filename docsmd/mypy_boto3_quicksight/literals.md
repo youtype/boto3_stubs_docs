@@ -1805,6 +1805,21 @@ PrimaryValueDisplayTypeType = Literal[
     "HIDDEN",
 ]
 ```
+## RadarChartShapeType
+
+```python title="Usage Example"
+from mypy_boto3_quicksight.literals import RadarChartShapeType
+
+def get_value() -> RadarChartShapeType:
+    return "CIRCLE"
+```
+
+```python title="Definition"
+RadarChartShapeType = Literal[
+    "CIRCLE",
+    "POLYGON",
+]
+```
 ## ReferenceLineLabelHorizontalPositionType
 
 ```python title="Usage Example"

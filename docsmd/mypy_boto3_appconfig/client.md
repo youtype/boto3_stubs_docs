@@ -271,7 +271,7 @@ parent.create_extension(**kwargs)
 
 ### create\_extension\_association
 
-When you create an extension or configure an Amazon Web Services-authored
+When you create an extension or configure an Amazon Web Services authored
 extension, you associate the extension with an AppConfig application,
 environment, or configuration profile.
 
@@ -605,7 +605,7 @@ parent.get_application(**kwargs)
 
 ### get\_configuration
 
-Retrieves the latest deployed configuration.
+(Deprecated) Retrieves the latest deployed configuration.
 
 Type annotations and code completion for `#!python boto3.client("appconfig").get_configuration` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration)
@@ -1046,7 +1046,7 @@ parent.list_extension_associations(**kwargs)
 
 ### list\_extensions
 
-Lists all custom and Amazon Web Services-authored AppConfig extensions in the
+Lists all custom and Amazon Web Services authored AppConfig extensions in the
 account.
 
 Type annotations and code completion for `#!python boto3.client("appconfig").list_extensions` method.
@@ -1157,6 +1157,7 @@ def start_deployment(
     ConfigurationVersion: str,
     Description: str = ...,
     Tags: Mapping[str, str] = ...,
+    KmsKeyIdentifier: str = ...,
 ) -> DeploymentTypeDef:  # (1)
     ...
 ```

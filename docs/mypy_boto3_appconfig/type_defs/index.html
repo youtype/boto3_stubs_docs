@@ -15,7 +15,7 @@
         <link rel="next" href="../usage/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.10">
     
     
       
@@ -41983,6 +41983,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appco
 <a id="__codelineno-87-6" name="__codelineno-87-6" href="#__codelineno-87-6"></a>    <span class="n">ConfigurationVersion</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-87-7" name="__codelineno-87-7" href="#__codelineno-87-7"></a>    <span class="n">Description</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-87-8" name="__codelineno-87-8" href="#__codelineno-87-8"></a>    <span class="n">Tags</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]],</span>
+<a id="__codelineno-87-9" name="__codelineno-87-9" href="#__codelineno-87-9"></a>    <span class="n">KmsKeyIdentifier</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="stopdeploymentrequestrequesttypedef">StopDeploymentRequestRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_appconfig.type_defs</span> <span class="kn">import</span> <span class="n">StopDeploymentRequestRequestTypeDef</span>
@@ -42645,8 +42646,10 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appco
 <a id="__codelineno-152-21" name="__codelineno-152-21" href="#__codelineno-152-21"></a>        <span class="s2">&quot;StartedAt&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-152-22" name="__codelineno-152-22" href="#__codelineno-152-22"></a>        <span class="s2">&quot;CompletedAt&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-152-23" name="__codelineno-152-23" href="#__codelineno-152-23"></a>        <span class="s2">&quot;AppliedExtensions&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-152-24" name="__codelineno-152-24" href="#__codelineno-152-24"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-152-25" name="__codelineno-152-25" href="#__codelineno-152-25"></a>    <span class="p">}</span>
+<a id="__codelineno-152-24" name="__codelineno-152-24" href="#__codelineno-152-24"></a>        <span class="s2">&quot;KmsKeyArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-152-25" name="__codelineno-152-25" href="#__codelineno-152-25"></a>        <span class="s2">&quot;KmsKeyIdentifier&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-152-26" name="__codelineno-152-26" href="#__codelineno-152-26"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-152-27" name="__codelineno-152-27" href="#__codelineno-152-27"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a><span class="k">class</span> <span class="nc">DeploymentTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-153-2" name="__codelineno-153-2" href="#__codelineno-153-2"></a>    <span class="n">ApplicationId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -42668,7 +42671,9 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appco
 <a id="__codelineno-153-18" name="__codelineno-153-18" href="#__codelineno-153-18"></a>    <span class="n">StartedAt</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
 <a id="__codelineno-153-19" name="__codelineno-153-19" href="#__codelineno-153-19"></a>    <span class="n">CompletedAt</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
 <a id="__codelineno-153-20" name="__codelineno-153-20" href="#__codelineno-153-20"></a>    <span class="n">AppliedExtensions</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">AppliedExtensionTypeDef</span><span class="p">],</span>  <span class="c1"># (4)</span>
-<a id="__codelineno-153-21" name="__codelineno-153-21" href="#__codelineno-153-21"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (5)</span>
+<a id="__codelineno-153-21" name="__codelineno-153-21" href="#__codelineno-153-21"></a>    <span class="n">KmsKeyArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-153-22" name="__codelineno-153-22" href="#__codelineno-153-22"></a>    <span class="n">KmsKeyIdentifier</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-153-23" name="__codelineno-153-23" href="#__codelineno-153-23"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (5)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#growthtypetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> GrowthTypeType</a> </li>
@@ -42736,7 +42741,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-appco
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a00a7c5e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
       
     
   </body>

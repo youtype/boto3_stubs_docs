@@ -7906,7 +7906,7 @@ Type annotations and code completion for `#!python GetTransitGatewayMulticastDom
 def paginate(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
+    TransitGatewayMulticastDomainId: str,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     DryRun: bool = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
@@ -8457,7 +8457,7 @@ Type annotations and code completion for `#!python SearchTransitGatewayMulticast
 def paginate(
     self,
     *,
-    TransitGatewayMulticastDomainId: str = ...,
+    TransitGatewayMulticastDomainId: str,
     Filters: Sequence[FilterTypeDef] = ...,  # (1)
     DryRun: bool = ...,
     PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)

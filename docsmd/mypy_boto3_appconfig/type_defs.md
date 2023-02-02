@@ -859,6 +859,7 @@ class StartDeploymentRequestRequestTypeDef(TypedDict):
     ConfigurationVersion: str,
     Description: NotRequired[str],
     Tags: NotRequired[Mapping[str, str]],
+    KmsKeyIdentifier: NotRequired[str],
 ```
 
 ## StopDeploymentRequestRequestTypeDef
@@ -1632,6 +1633,8 @@ def get_value() -> DeploymentTypeDef:
         "StartedAt": ...,
         "CompletedAt": ...,
         "AppliedExtensions": ...,
+        "KmsKeyArn": ...,
+        "KmsKeyIdentifier": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1657,6 +1660,8 @@ class DeploymentTypeDef(TypedDict):
     StartedAt: datetime,
     CompletedAt: datetime,
     AppliedExtensions: List[AppliedExtensionTypeDef],  # (4)
+    KmsKeyArn: str,
+    KmsKeyIdentifier: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 

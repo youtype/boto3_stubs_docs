@@ -217,14 +217,14 @@ from mypy_boto3_ec2.type_defs import AcceptVpcPeeringConnectionRequestRequestTyp
 
 def get_value() -> AcceptVpcPeeringConnectionRequestRequestTypeDef:
     return {
-        "DryRun": ...,
+        "VpcPeeringConnectionId": ...,
     }
 ```
 
 ```python title="Definition"
 class AcceptVpcPeeringConnectionRequestRequestTypeDef(TypedDict):
+    VpcPeeringConnectionId: str,
     DryRun: NotRequired[bool],
-    VpcPeeringConnectionId: NotRequired[str],
 ```
 
 ## AcceptVpcPeeringConnectionRequestVpcPeeringConnectionAcceptTypeDef
@@ -865,13 +865,14 @@ from mypy_boto3_ec2.type_defs import AssociateEnclaveCertificateIamRoleRequestRe
 def get_value() -> AssociateEnclaveCertificateIamRoleRequestRequestTypeDef:
     return {
         "CertificateArn": ...,
+        "RoleArn": ...,
     }
 ```
 
 ```python title="Definition"
 class AssociateEnclaveCertificateIamRoleRequestRequestTypeDef(TypedDict):
-    CertificateArn: NotRequired[str],
-    RoleArn: NotRequired[str],
+    CertificateArn: str,
+    RoleArn: str,
     DryRun: NotRequired[bool],
 ```
 
@@ -993,14 +994,16 @@ from mypy_boto3_ec2.type_defs import AssociateTransitGatewayMulticastDomainReque
 def get_value() -> AssociateTransitGatewayMulticastDomainRequestRequestTypeDef:
     return {
         "TransitGatewayMulticastDomainId": ...,
+        "TransitGatewayAttachmentId": ...,
+        "SubnetIds": ...,
     }
 ```
 
 ```python title="Definition"
 class AssociateTransitGatewayMulticastDomainRequestRequestTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
-    TransitGatewayAttachmentId: NotRequired[str],
-    SubnetIds: NotRequired[Sequence[str]],
+    TransitGatewayMulticastDomainId: str,
+    TransitGatewayAttachmentId: str,
+    SubnetIds: Sequence[str],
     DryRun: NotRequired[bool],
 ```
 
@@ -7077,13 +7080,14 @@ from mypy_boto3_ec2.type_defs import DisassociateEnclaveCertificateIamRoleReques
 def get_value() -> DisassociateEnclaveCertificateIamRoleRequestRequestTypeDef:
     return {
         "CertificateArn": ...,
+        "RoleArn": ...,
     }
 ```
 
 ```python title="Definition"
 class DisassociateEnclaveCertificateIamRoleRequestRequestTypeDef(TypedDict):
-    CertificateArn: NotRequired[str],
-    RoleArn: NotRequired[str],
+    CertificateArn: str,
+    RoleArn: str,
     DryRun: NotRequired[bool],
 ```
 
@@ -7214,14 +7218,16 @@ from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayMulticastDomainRe
 def get_value() -> DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef:
     return {
         "TransitGatewayMulticastDomainId": ...,
+        "TransitGatewayAttachmentId": ...,
+        "SubnetIds": ...,
     }
 ```
 
 ```python title="Definition"
 class DisassociateTransitGatewayMulticastDomainRequestRequestTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
-    TransitGatewayAttachmentId: NotRequired[str],
-    SubnetIds: NotRequired[Sequence[str]],
+    TransitGatewayMulticastDomainId: str,
+    TransitGatewayAttachmentId: str,
+    SubnetIds: Sequence[str],
     DryRun: NotRequired[bool],
 ```
 
@@ -8393,7 +8399,7 @@ def get_value() -> GetAssociatedEnclaveCertificateIamRolesRequestRequestTypeDef:
 
 ```python title="Definition"
 class GetAssociatedEnclaveCertificateIamRolesRequestRequestTypeDef(TypedDict):
-    CertificateArn: NotRequired[str],
+    CertificateArn: str,
     DryRun: NotRequired[bool],
 ```
 
@@ -9426,7 +9432,7 @@ def get_value() -> InstanceCreditSpecificationRequestTypeDef:
 
 ```python title="Definition"
 class InstanceCreditSpecificationRequestTypeDef(TypedDict):
-    InstanceId: NotRequired[str],
+    InstanceId: str,
     CpuCredits: NotRequired[str],
 ```
 
@@ -11355,14 +11361,14 @@ from mypy_boto3_ec2.type_defs import ModifyPrivateDnsNameOptionsRequestRequestTy
 
 def get_value() -> ModifyPrivateDnsNameOptionsRequestRequestTypeDef:
     return {
-        "DryRun": ...,
+        "InstanceId": ...,
     }
 ```
 
 ```python title="Definition"
 class ModifyPrivateDnsNameOptionsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
     DryRun: NotRequired[bool],
-    InstanceId: NotRequired[str],
     PrivateDnsHostnameType: NotRequired[HostnameTypeType],  # (1)
     EnableResourceNameDnsARecord: NotRequired[bool],
     EnableResourceNameDnsAAAARecord: NotRequired[bool],
@@ -12697,14 +12703,15 @@ from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupMembers
 def get_value() -> RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef:
     return {
         "TransitGatewayMulticastDomainId": ...,
+        "NetworkInterfaceIds": ...,
     }
 ```
 
 ```python title="Definition"
 class RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
+    TransitGatewayMulticastDomainId: str,
+    NetworkInterfaceIds: Sequence[str],
     GroupIpAddress: NotRequired[str],
-    NetworkInterfaceIds: NotRequired[Sequence[str]],
     DryRun: NotRequired[bool],
 ```
 
@@ -12734,14 +12741,15 @@ from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupSources
 def get_value() -> RegisterTransitGatewayMulticastGroupSourcesRequestRequestTypeDef:
     return {
         "TransitGatewayMulticastDomainId": ...,
+        "NetworkInterfaceIds": ...,
     }
 ```
 
 ```python title="Definition"
 class RegisterTransitGatewayMulticastGroupSourcesRequestRequestTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
+    TransitGatewayMulticastDomainId: str,
+    NetworkInterfaceIds: Sequence[str],
     GroupIpAddress: NotRequired[str],
-    NetworkInterfaceIds: NotRequired[Sequence[str]],
     DryRun: NotRequired[bool],
 ```
 
@@ -27319,7 +27327,7 @@ def get_value() -> GetTransitGatewayMulticastDomainAssociationsRequestGetTransit
 
 ```python title="Definition"
 class GetTransitGatewayMulticastDomainAssociationsRequestGetTransitGatewayMulticastDomainAssociationsPaginateTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
+    TransitGatewayMulticastDomainId: str,
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     DryRun: NotRequired[bool],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
@@ -27340,7 +27348,7 @@ def get_value() -> GetTransitGatewayMulticastDomainAssociationsRequestRequestTyp
 
 ```python title="Definition"
 class GetTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
+    TransitGatewayMulticastDomainId: str,
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
@@ -27592,7 +27600,7 @@ def get_value() -> SearchTransitGatewayMulticastGroupsRequestRequestTypeDef:
 
 ```python title="Definition"
 class SearchTransitGatewayMulticastGroupsRequestRequestTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
+    TransitGatewayMulticastDomainId: str,
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
@@ -27613,7 +27621,7 @@ def get_value() -> SearchTransitGatewayMulticastGroupsRequestSearchTransitGatewa
 
 ```python title="Definition"
 class SearchTransitGatewayMulticastGroupsRequestSearchTransitGatewayMulticastGroupsPaginateTypeDef(TypedDict):
-    TransitGatewayMulticastDomainId: NotRequired[str],
+    TransitGatewayMulticastDomainId: str,
     Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
     DryRun: NotRequired[bool],
     PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
@@ -32007,7 +32015,7 @@ def get_value() -> SecurityGroupRuleUpdateTypeDef:
 
 ```python title="Definition"
 class SecurityGroupRuleUpdateTypeDef(TypedDict):
-    SecurityGroupRuleId: NotRequired[str],
+    SecurityGroupRuleId: str,
     SecurityGroupRule: NotRequired[SecurityGroupRuleRequestTypeDef],  # (1)
 ```
 
@@ -36038,16 +36046,16 @@ from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionRequestRequestTyp
 
 def get_value() -> CreateVpcPeeringConnectionRequestRequestTypeDef:
     return {
-        "DryRun": ...,
+        "VpcId": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateVpcPeeringConnectionRequestRequestTypeDef(TypedDict):
+    VpcId: str,
     DryRun: NotRequired[bool],
     PeerOwnerId: NotRequired[str],
     PeerVpcId: NotRequired[str],
-    VpcId: NotRequired[str],
     PeerRegion: NotRequired[str],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
 ```
@@ -36060,16 +36068,16 @@ from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionRequestServiceRes
 
 def get_value() -> CreateVpcPeeringConnectionRequestServiceResourceCreateVpcPeeringConnectionTypeDef:
     return {
-        "DryRun": ...,
+        "VpcId": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateVpcPeeringConnectionRequestServiceResourceCreateVpcPeeringConnectionTypeDef(TypedDict):
+    VpcId: str,
     DryRun: NotRequired[bool],
     PeerOwnerId: NotRequired[str],
     PeerVpcId: NotRequired[str],
-    VpcId: NotRequired[str],
     PeerRegion: NotRequired[str],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (1)
 ```
