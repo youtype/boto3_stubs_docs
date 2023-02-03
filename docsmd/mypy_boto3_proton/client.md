@@ -1194,6 +1194,22 @@ parent.get_repository_sync_status(**kwargs)
 
 1. See [:material-code-braces: GetRepositorySyncStatusInputRequestTypeDef](./type_defs.md#getrepositorysyncstatusinputrequesttypedef) 
 
+### get\_resources\_summary
+
+Get counts of Proton resources.
+
+Type annotations and code completion for `#!python boto3.client("proton").get_resources_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_resources_summary)
+
+```python title="Method definition"
+def get_resources_summary(
+    self,
+) -> GetResourcesSummaryOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetResourcesSummaryOutputTypeDef](./type_defs.md#getresourcessummaryoutputtypedef) 
+
 ### get\_service
 
 Get detailed data for a service.

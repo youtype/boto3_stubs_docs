@@ -345,6 +345,26 @@ class ComponentSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+## ResourceCountsSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ResourceCountsSummaryTypeDef
+
+def get_value() -> ResourceCountsSummaryTypeDef:
+    return {
+        "total": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceCountsSummaryTypeDef(TypedDict):
+    total: int,
+    behindMajor: NotRequired[int],
+    behindMinor: NotRequired[int],
+    failed: NotRequired[int],
+    upToDate: NotRequired[int],
+```
+
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -2521,6 +2541,35 @@ class ListComponentsOutputTypeDef(TypedDict):
 
 1. See [:material-code-braces: ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CountsSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import CountsSummaryTypeDef
+
+def get_value() -> CountsSummaryTypeDef:
+    return {
+        "components": ...,
+    }
+```
+
+```python title="Definition"
+class CountsSummaryTypeDef(TypedDict):
+    components: NotRequired[ResourceCountsSummaryTypeDef],  # (1)
+    environmentTemplates: NotRequired[ResourceCountsSummaryTypeDef],  # (1)
+    environments: NotRequired[ResourceCountsSummaryTypeDef],  # (1)
+    pipelines: NotRequired[ResourceCountsSummaryTypeDef],  # (1)
+    serviceInstances: NotRequired[ResourceCountsSummaryTypeDef],  # (1)
+    serviceTemplates: NotRequired[ResourceCountsSummaryTypeDef],  # (1)
+    services: NotRequired[ResourceCountsSummaryTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ResourceCountsSummaryTypeDef](./type_defs.md#resourcecountssummarytypedef) 
+2. See [:material-code-braces: ResourceCountsSummaryTypeDef](./type_defs.md#resourcecountssummarytypedef) 
+3. See [:material-code-braces: ResourceCountsSummaryTypeDef](./type_defs.md#resourcecountssummarytypedef) 
+4. See [:material-code-braces: ResourceCountsSummaryTypeDef](./type_defs.md#resourcecountssummarytypedef) 
+5. See [:material-code-braces: ResourceCountsSummaryTypeDef](./type_defs.md#resourcecountssummarytypedef) 
+6. See [:material-code-braces: ResourceCountsSummaryTypeDef](./type_defs.md#resourcecountssummarytypedef) 
+7. See [:material-code-braces: ResourceCountsSummaryTypeDef](./type_defs.md#resourcecountssummarytypedef) 
 ## CreateComponentInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -4573,6 +4622,26 @@ class UpdateServiceTemplateVersionOutputTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourcesSummaryOutputTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetResourcesSummaryOutputTypeDef
+
+def get_value() -> GetResourcesSummaryOutputTypeDef:
+    return {
+        "counts": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcesSummaryOutputTypeDef(TypedDict):
+    counts: CountsSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: CountsSummaryTypeDef](./type_defs.md#countssummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRepositorySyncStatusOutputTypeDef
 
