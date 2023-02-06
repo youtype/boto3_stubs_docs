@@ -1506,20 +1506,22 @@ class OFIMetricDataPointTypeDef(TypedDict):
     threshold: NotRequired[float],
 ```
 
-## OFIModelPerformanceTypeDef
+## UncertaintyRangeTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import OFIModelPerformanceTypeDef
+from mypy_boto3_frauddetector.type_defs import UncertaintyRangeTypeDef
 
-def get_value() -> OFIModelPerformanceTypeDef:
+def get_value() -> UncertaintyRangeTypeDef:
     return {
-        "auc": ...,
+        "lowerBoundValue": ...,
+        "upperBoundValue": ...,
     }
 ```
 
 ```python title="Definition"
-class OFIModelPerformanceTypeDef(TypedDict):
-    auc: NotRequired[float],
+class UncertaintyRangeTypeDef(TypedDict):
+    lowerBoundValue: float,
+    upperBoundValue: float,
 ```
 
 ## VariableImpactExplanationTypeDef
@@ -1573,22 +1575,6 @@ class TFIMetricDataPointTypeDef(TypedDict):
     precision: NotRequired[float],
     tpr: NotRequired[float],
     threshold: NotRequired[float],
-```
-
-## TFIModelPerformanceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import TFIModelPerformanceTypeDef
-
-def get_value() -> TFIModelPerformanceTypeDef:
-    return {
-        "auc": ...,
-    }
-```
-
-```python title="Definition"
-class TFIModelPerformanceTypeDef(TypedDict):
-    auc: NotRequired[float],
 ```
 
 ## UntagResourceRequestRequestTypeDef
@@ -3018,25 +3004,42 @@ class TrainingMetricsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MetricDataPointTypeDef](./type_defs.md#metricdatapointtypedef) 
-## OFITrainingMetricsValueTypeDef
+## OFIModelPerformanceTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import OFITrainingMetricsValueTypeDef
+from mypy_boto3_frauddetector.type_defs import OFIModelPerformanceTypeDef
 
-def get_value() -> OFITrainingMetricsValueTypeDef:
+def get_value() -> OFIModelPerformanceTypeDef:
     return {
-        "metricDataPoints": ...,
+        "auc": ...,
     }
 ```
 
 ```python title="Definition"
-class OFITrainingMetricsValueTypeDef(TypedDict):
-    metricDataPoints: NotRequired[List[OFIMetricDataPointTypeDef]],  # (1)
-    modelPerformance: NotRequired[OFIModelPerformanceTypeDef],  # (2)
+class OFIModelPerformanceTypeDef(TypedDict):
+    auc: NotRequired[float],
+    uncertaintyRange: NotRequired[UncertaintyRangeTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: OFIMetricDataPointTypeDef](./type_defs.md#ofimetricdatapointtypedef) 
-2. See [:material-code-braces: OFIModelPerformanceTypeDef](./type_defs.md#ofimodelperformancetypedef) 
+1. See [:material-code-braces: UncertaintyRangeTypeDef](./type_defs.md#uncertaintyrangetypedef) 
+## TFIModelPerformanceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import TFIModelPerformanceTypeDef
+
+def get_value() -> TFIModelPerformanceTypeDef:
+    return {
+        "auc": ...,
+    }
+```
+
+```python title="Definition"
+class TFIModelPerformanceTypeDef(TypedDict):
+    auc: NotRequired[float],
+    uncertaintyRange: NotRequired[UncertaintyRangeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UncertaintyRangeTypeDef](./type_defs.md#uncertaintyrangetypedef) 
 ## PredictionExplanationsTypeDef
 
 ```python title="Usage Example"
@@ -3056,25 +3059,6 @@ class PredictionExplanationsTypeDef(TypedDict):
 
 1. See [:material-code-braces: VariableImpactExplanationTypeDef](./type_defs.md#variableimpactexplanationtypedef) 
 2. See [:material-code-braces: AggregatedVariablesImpactExplanationTypeDef](./type_defs.md#aggregatedvariablesimpactexplanationtypedef) 
-## TFITrainingMetricsValueTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_frauddetector.type_defs import TFITrainingMetricsValueTypeDef
-
-def get_value() -> TFITrainingMetricsValueTypeDef:
-    return {
-        "metricDataPoints": ...,
-    }
-```
-
-```python title="Definition"
-class TFITrainingMetricsValueTypeDef(TypedDict):
-    metricDataPoints: NotRequired[List[TFIMetricDataPointTypeDef]],  # (1)
-    modelPerformance: NotRequired[TFIModelPerformanceTypeDef],  # (2)
-```
-
-1. See [:material-code-braces: TFIMetricDataPointTypeDef](./type_defs.md#tfimetricdatapointtypedef) 
-2. See [:material-code-braces: TFIModelPerformanceTypeDef](./type_defs.md#tfimodelperformancetypedef) 
 ## GetEventResultTypeDef
 
 ```python title="Usage Example"
@@ -3284,6 +3268,44 @@ class TrainingResultTypeDef(TypedDict):
 1. See [:material-code-braces: DataValidationMetricsTypeDef](./type_defs.md#datavalidationmetricstypedef) 
 2. See [:material-code-braces: TrainingMetricsTypeDef](./type_defs.md#trainingmetricstypedef) 
 3. See [:material-code-braces: VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef) 
+## OFITrainingMetricsValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import OFITrainingMetricsValueTypeDef
+
+def get_value() -> OFITrainingMetricsValueTypeDef:
+    return {
+        "metricDataPoints": ...,
+    }
+```
+
+```python title="Definition"
+class OFITrainingMetricsValueTypeDef(TypedDict):
+    metricDataPoints: NotRequired[List[OFIMetricDataPointTypeDef]],  # (1)
+    modelPerformance: NotRequired[OFIModelPerformanceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OFIMetricDataPointTypeDef](./type_defs.md#ofimetricdatapointtypedef) 
+2. See [:material-code-braces: OFIModelPerformanceTypeDef](./type_defs.md#ofimodelperformancetypedef) 
+## TFITrainingMetricsValueTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import TFITrainingMetricsValueTypeDef
+
+def get_value() -> TFITrainingMetricsValueTypeDef:
+    return {
+        "metricDataPoints": ...,
+    }
+```
+
+```python title="Definition"
+class TFITrainingMetricsValueTypeDef(TypedDict):
+    metricDataPoints: NotRequired[List[TFIMetricDataPointTypeDef]],  # (1)
+    modelPerformance: NotRequired[TFIModelPerformanceTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TFIMetricDataPointTypeDef](./type_defs.md#tfimetricdatapointtypedef) 
+2. See [:material-code-braces: TFIModelPerformanceTypeDef](./type_defs.md#tfimodelperformancetypedef) 
 ## ModelVersionEvaluationTypeDef
 
 ```python title="Usage Example"

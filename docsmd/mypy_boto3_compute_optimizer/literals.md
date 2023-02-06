@@ -649,6 +649,7 @@ InferredWorkloadTypeType = Literal[
     "AmazonEmr",
     "ApacheCassandra",
     "ApacheHadoop",
+    "Kafka",
     "Memcached",
     "Nginx",
     "PostgreSql",

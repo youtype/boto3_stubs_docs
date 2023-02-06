@@ -231,11 +231,12 @@ TrainingDataSourceEnumType = Literal[
 from mypy_boto3_frauddetector.literals import UnlabeledEventsTreatmentType
 
 def get_value() -> UnlabeledEventsTreatmentType:
-    return "FRAUD"
+    return "AUTO"
 ```
 
 ```python title="Definition"
 UnlabeledEventsTreatmentType = Literal[
+    "AUTO",
     "FRAUD",
     "IGNORE",
     "LEGIT",

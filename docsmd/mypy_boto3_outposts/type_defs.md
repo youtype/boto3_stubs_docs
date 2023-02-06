@@ -1108,6 +1108,8 @@ class LineItemTypeDef(TypedDict):
     Status: NotRequired[LineItemStatusType],  # (1)
     ShipmentInformation: NotRequired[ShipmentInformationTypeDef],  # (2)
     AssetInformationList: NotRequired[List[LineItemAssetInformationTypeDef]],  # (3)
+    PreviousLineItemId: NotRequired[str],
+    PreviousOrderId: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LineItemStatusType](./literals.md#lineitemstatustype) 
@@ -1322,12 +1324,14 @@ class OrderTypeDef(TypedDict):
     OrderSubmissionDate: NotRequired[datetime],
     OrderFulfilledDate: NotRequired[datetime],
     PaymentTerm: NotRequired[PaymentTermType],  # (4)
+    OrderType: NotRequired[OrderTypeType],  # (5)
 ```
 
 1. See [:material-code-brackets: OrderStatusType](./literals.md#orderstatustype) 
 2. See [:material-code-braces: LineItemTypeDef](./type_defs.md#lineitemtypedef) 
 3. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
 4. See [:material-code-brackets: PaymentTermType](./literals.md#paymenttermtype) 
+5. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
 ## CreateOrderOutputTypeDef
 
 ```python title="Usage Example"

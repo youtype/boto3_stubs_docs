@@ -130,6 +130,7 @@ LineItemStatusType = Literal[
     "INSTALLED",
     "INSTALLING",
     "PREPARING",
+    "REPLACED",
     "SHIPPED",
 ]
 ```

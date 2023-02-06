@@ -1846,6 +1846,8 @@ class ProfileTypeDef(TypedDict):
     BillingAddress: NotRequired[AddressTypeDef],  # (3)
     Attributes: NotRequired[Dict[str, str]],
     FoundByItems: NotRequired[List[FoundByKeyValueTypeDef]],  # (7)
+    PartyTypeString: NotRequired[str],
+    GenderString: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
