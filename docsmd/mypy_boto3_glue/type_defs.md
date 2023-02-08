@@ -680,6 +680,9 @@ class KafkaStreamingSourceOptionsTypeDef(TypedDict):
     RetryIntervalMs: NotRequired[int],
     MaxOffsetsPerTrigger: NotRequired[int],
     MinPartitions: NotRequired[int],
+    IncludeHeaders: NotRequired[bool],
+    AddRecordTimestamp: NotRequired[str],
+    EmitConsumerLagMetrics: NotRequired[str],
 ```
 
 ## StreamingDataPreviewOptionsTypeDef
@@ -730,6 +733,8 @@ class KinesisStreamingSourceOptionsTypeDef(TypedDict):
     StreamArn: NotRequired[str],
     RoleArn: NotRequired[str],
     RoleSessionName: NotRequired[str],
+    AddRecordTimestamp: NotRequired[str],
+    EmitConsumerLagMetrics: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: StartingPositionType](./literals.md#startingpositiontype) 

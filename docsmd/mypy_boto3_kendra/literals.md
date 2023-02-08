@@ -1404,11 +1404,12 @@ ResourceServiceName = Literal[
 from mypy_boto3_kendra.literals import RegionName
 
 def get_value() -> RegionName:
-    return "ap-south-1"
+    return "ap-northeast-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "ap-northeast-1",
     "ap-south-1",
     "ap-southeast-1",
     "ap-southeast-2",

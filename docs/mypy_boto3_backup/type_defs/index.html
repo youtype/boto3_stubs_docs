@@ -43470,6 +43470,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-119-2" name="__codelineno-119-2" href="#__codelineno-119-2"></a>    <span class="n">ResourceArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-119-3" name="__codelineno-119-3" href="#__codelineno-119-3"></a>    <span class="n">ResourceType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-119-4" name="__codelineno-119-4" href="#__codelineno-119-4"></a>    <span class="n">LastBackupTime</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">datetime</span><span class="p">],</span>
+<a id="__codelineno-119-5" name="__codelineno-119-5" href="#__codelineno-119-5"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <h2 id="listrecoverypointsbybackupvaultinputrequesttypedef">ListRecoveryPointsByBackupVaultInputRequestTypeDef</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_backup.type_defs</span> <span class="kn">import</span> <span class="n">ListRecoveryPointsByBackupVaultInputRequestTypeDef</span>
@@ -43545,6 +43546,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-129-8" name="__codelineno-129-8" href="#__codelineno-129-8"></a>    <span class="n">BackupVaultName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-129-9" name="__codelineno-129-9" href="#__codelineno-129-9"></a>    <span class="n">IsParent</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
 <a id="__codelineno-129-10" name="__codelineno-129-10" href="#__codelineno-129-10"></a>    <span class="n">ParentRecoveryPointArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
+<a id="__codelineno-129-11" name="__codelineno-129-11" href="#__codelineno-129-11"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#recoverypointstatustype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> RecoveryPointStatusType</a> </li>
@@ -43834,6 +43836,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-165-21" name="__codelineno-165-21" href="#__codelineno-165-21"></a>    <span class="n">BackupType</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-165-22" name="__codelineno-165-22" href="#__codelineno-165-22"></a>    <span class="n">ParentJobId</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-165-23" name="__codelineno-165-23" href="#__codelineno-165-23"></a>    <span class="n">IsParent</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-165-24" name="__codelineno-165-24" href="#__codelineno-165-24"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#backupjobstatetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BackupJobStateType</a> </li>
@@ -43868,6 +43871,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-167-19" name="__codelineno-167-19" href="#__codelineno-167-19"></a>    <span class="n">CompositeMemberIdentifier</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-167-20" name="__codelineno-167-20" href="#__codelineno-167-20"></a>    <span class="n">NumberOfChildJobs</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
 <a id="__codelineno-167-21" name="__codelineno-167-21" href="#__codelineno-167-21"></a>    <span class="n">ChildJobsInState</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="n">CopyJobStateType</span><span class="p">,</span> <span class="nb">int</span><span class="p">]],</span>  <span class="c1"># (3)</span>
+<a id="__codelineno-167-22" name="__codelineno-167-22" href="#__codelineno-167-22"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#copyjobstatetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> CopyJobStateType</a> </li>
@@ -43982,6 +43986,7 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-177-20" name="__codelineno-177-20" href="#__codelineno-177-20"></a>    <span class="n">ParentRecoveryPointArn</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-177-21" name="__codelineno-177-21" href="#__codelineno-177-21"></a>    <span class="n">CompositeMemberIdentifier</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 <a id="__codelineno-177-22" name="__codelineno-177-22" href="#__codelineno-177-22"></a>    <span class="n">IsParent</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">bool</span><span class="p">],</span>
+<a id="__codelineno-177-23" name="__codelineno-177-23" href="#__codelineno-177-23"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="n">NotRequired</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#recoverypointcreatortypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RecoveryPointCreatorTypeDef</a> </li>
@@ -44180,8 +44185,9 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-194-26" name="__codelineno-194-26" href="#__codelineno-194-26"></a>        <span class="s2">&quot;IsParent&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-194-27" name="__codelineno-194-27" href="#__codelineno-194-27"></a>        <span class="s2">&quot;NumberOfChildJobs&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-194-28" name="__codelineno-194-28" href="#__codelineno-194-28"></a>        <span class="s2">&quot;ChildJobsInState&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-194-29" name="__codelineno-194-29" href="#__codelineno-194-29"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-194-30" name="__codelineno-194-30" href="#__codelineno-194-30"></a>    <span class="p">}</span>
+<a id="__codelineno-194-29" name="__codelineno-194-29" href="#__codelineno-194-29"></a>        <span class="s2">&quot;ResourceName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-194-30" name="__codelineno-194-30" href="#__codelineno-194-30"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-194-31" name="__codelineno-194-31" href="#__codelineno-194-31"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-195-1" name="__codelineno-195-1" href="#__codelineno-195-1"></a><span class="k">class</span> <span class="nc">DescribeBackupJobOutputTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-195-2" name="__codelineno-195-2" href="#__codelineno-195-2"></a>    <span class="n">AccountId</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -44208,7 +44214,8 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-195-23" name="__codelineno-195-23" href="#__codelineno-195-23"></a>    <span class="n">IsParent</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
 <a id="__codelineno-195-24" name="__codelineno-195-24" href="#__codelineno-195-24"></a>    <span class="n">NumberOfChildJobs</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
 <a id="__codelineno-195-25" name="__codelineno-195-25" href="#__codelineno-195-25"></a>    <span class="n">ChildJobsInState</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="n">BackupJobStateType</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>  <span class="c1"># (3)</span>
-<a id="__codelineno-195-26" name="__codelineno-195-26" href="#__codelineno-195-26"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (4)</span>
+<a id="__codelineno-195-26" name="__codelineno-195-26" href="#__codelineno-195-26"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-195-27" name="__codelineno-195-27" href="#__codelineno-195-27"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (4)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../literals/#backupjobstatetype"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4v2h3v12h-3v2h5V4M4 4v16h5v-2H6V6h3V4H4Z"/></svg></span> BackupJobStateType</a> </li>
@@ -44276,14 +44283,16 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-200-5" name="__codelineno-200-5" href="#__codelineno-200-5"></a>        <span class="s2">&quot;ResourceArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-200-6" name="__codelineno-200-6" href="#__codelineno-200-6"></a>        <span class="s2">&quot;ResourceType&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-200-7" name="__codelineno-200-7" href="#__codelineno-200-7"></a>        <span class="s2">&quot;LastBackupTime&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-200-8" name="__codelineno-200-8" href="#__codelineno-200-8"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-200-9" name="__codelineno-200-9" href="#__codelineno-200-9"></a>    <span class="p">}</span>
+<a id="__codelineno-200-8" name="__codelineno-200-8" href="#__codelineno-200-8"></a>        <span class="s2">&quot;ResourceName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-200-9" name="__codelineno-200-9" href="#__codelineno-200-9"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-200-10" name="__codelineno-200-10" href="#__codelineno-200-10"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-201-1" name="__codelineno-201-1" href="#__codelineno-201-1"></a><span class="k">class</span> <span class="nc">DescribeProtectedResourceOutputTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-201-2" name="__codelineno-201-2" href="#__codelineno-201-2"></a>    <span class="n">ResourceArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-201-3" name="__codelineno-201-3" href="#__codelineno-201-3"></a>    <span class="n">ResourceType</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-201-4" name="__codelineno-201-4" href="#__codelineno-201-4"></a>    <span class="n">LastBackupTime</span><span class="p">:</span> <span class="n">datetime</span><span class="p">,</span>
-<a id="__codelineno-201-5" name="__codelineno-201-5" href="#__codelineno-201-5"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-201-5" name="__codelineno-201-5" href="#__codelineno-201-5"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-201-6" name="__codelineno-201-6" href="#__codelineno-201-6"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#responsemetadatatypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> ResponseMetadataTypeDef</a> </li>
@@ -44315,8 +44324,9 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-202-24" name="__codelineno-202-24" href="#__codelineno-202-24"></a>        <span class="s2">&quot;ParentRecoveryPointArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-202-25" name="__codelineno-202-25" href="#__codelineno-202-25"></a>        <span class="s2">&quot;CompositeMemberIdentifier&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-202-26" name="__codelineno-202-26" href="#__codelineno-202-26"></a>        <span class="s2">&quot;IsParent&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-202-27" name="__codelineno-202-27" href="#__codelineno-202-27"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-202-28" name="__codelineno-202-28" href="#__codelineno-202-28"></a>    <span class="p">}</span>
+<a id="__codelineno-202-27" name="__codelineno-202-27" href="#__codelineno-202-27"></a>        <span class="s2">&quot;ResourceName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-202-28" name="__codelineno-202-28" href="#__codelineno-202-28"></a>        <span class="s2">&quot;ResponseMetadata&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-202-29" name="__codelineno-202-29" href="#__codelineno-202-29"></a>    <span class="p">}</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-203-1" name="__codelineno-203-1" href="#__codelineno-203-1"></a><span class="k">class</span> <span class="nc">DescribeRecoveryPointOutputTypeDef</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
 <a id="__codelineno-203-2" name="__codelineno-203-2" href="#__codelineno-203-2"></a>    <span class="n">RecoveryPointArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -44341,7 +44351,8 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-backu
 <a id="__codelineno-203-21" name="__codelineno-203-21" href="#__codelineno-203-21"></a>    <span class="n">ParentRecoveryPointArn</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-203-22" name="__codelineno-203-22" href="#__codelineno-203-22"></a>    <span class="n">CompositeMemberIdentifier</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 <a id="__codelineno-203-23" name="__codelineno-203-23" href="#__codelineno-203-23"></a>    <span class="n">IsParent</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
-<a id="__codelineno-203-24" name="__codelineno-203-24" href="#__codelineno-203-24"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (6)</span>
+<a id="__codelineno-203-24" name="__codelineno-203-24" href="#__codelineno-203-24"></a>    <span class="n">ResourceName</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-203-25" name="__codelineno-203-25" href="#__codelineno-203-25"></a>    <span class="n">ResponseMetadata</span><span class="p">:</span> <span class="n">ResponseMetadataTypeDef</span><span class="p">,</span>  <span class="c1"># (6)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="./#recoverypointcreatortypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> RecoveryPointCreatorTypeDef</a> </li>

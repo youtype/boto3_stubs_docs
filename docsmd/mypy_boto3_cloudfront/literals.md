@@ -372,11 +372,12 @@ MinimumProtocolVersionType = Literal[
 from mypy_boto3_cloudfront.literals import OriginAccessControlOriginTypesType
 
 def get_value() -> OriginAccessControlOriginTypesType:
-    return "s3"
+    return "mediastore"
 ```
 
 ```python title="Definition"
 OriginAccessControlOriginTypesType = Literal[
+    "mediastore",
     "s3",
 ]
 ```

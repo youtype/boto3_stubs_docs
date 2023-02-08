@@ -1084,6 +1084,7 @@ class ProtectedResourceTypeDef(TypedDict):
     ResourceArn: NotRequired[str],
     ResourceType: NotRequired[str],
     LastBackupTime: NotRequired[datetime],
+    ResourceName: NotRequired[str],
 ```
 
 ## ListRecoveryPointsByBackupVaultInputRequestTypeDef
@@ -1184,6 +1185,7 @@ class RecoveryPointByResourceTypeDef(TypedDict):
     BackupVaultName: NotRequired[str],
     IsParent: NotRequired[bool],
     ParentRecoveryPointArn: NotRequired[str],
+    ResourceName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: RecoveryPointStatusType](./literals.md#recoverypointstatustype) 
@@ -1553,6 +1555,7 @@ class BackupJobTypeDef(TypedDict):
     BackupType: NotRequired[str],
     ParentJobId: NotRequired[str],
     IsParent: NotRequired[bool],
+    ResourceName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
@@ -1590,6 +1593,7 @@ class CopyJobTypeDef(TypedDict):
     CompositeMemberIdentifier: NotRequired[str],
     NumberOfChildJobs: NotRequired[int],
     ChildJobsInState: NotRequired[Dict[CopyJobStateType, int]],  # (3)
+    ResourceName: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
@@ -1719,6 +1723,7 @@ class RecoveryPointByBackupVaultTypeDef(TypedDict):
     ParentRecoveryPointArn: NotRequired[str],
     CompositeMemberIdentifier: NotRequired[str],
     IsParent: NotRequired[bool],
+    ResourceName: NotRequired[str],
 ```
 
 1. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
@@ -1942,6 +1947,7 @@ def get_value() -> DescribeBackupJobOutputTypeDef:
         "IsParent": ...,
         "NumberOfChildJobs": ...,
         "ChildJobsInState": ...,
+        "ResourceName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1972,6 +1978,7 @@ class DescribeBackupJobOutputTypeDef(TypedDict):
     IsParent: bool,
     NumberOfChildJobs: int,
     ChildJobsInState: Dict[BackupJobStateType, int],  # (3)
+    ResourceName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (4)
 ```
 
@@ -2047,6 +2054,7 @@ def get_value() -> DescribeProtectedResourceOutputTypeDef:
         "ResourceArn": ...,
         "ResourceType": ...,
         "LastBackupTime": ...,
+        "ResourceName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2056,6 +2064,7 @@ class DescribeProtectedResourceOutputTypeDef(TypedDict):
     ResourceArn: str,
     ResourceType: str,
     LastBackupTime: datetime,
+    ResourceName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -2089,6 +2098,7 @@ def get_value() -> DescribeRecoveryPointOutputTypeDef:
         "ParentRecoveryPointArn": ...,
         "CompositeMemberIdentifier": ...,
         "IsParent": ...,
+        "ResourceName": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -2117,6 +2127,7 @@ class DescribeRecoveryPointOutputTypeDef(TypedDict):
     ParentRecoveryPointArn: str,
     CompositeMemberIdentifier: str,
     IsParent: bool,
+    ResourceName: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (6)
 ```
 
