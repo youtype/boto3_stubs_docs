@@ -484,7 +484,7 @@ parent.list_tags_for_resource(**kwargs)
 
 ### start\_meeting\_transcription
 
-Starts transcription for the specified `meetingId` .
+Starts transcription for the specified `meetingId`.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").start_meeting_transcription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.start_meeting_transcription)
@@ -516,7 +516,7 @@ parent.start_meeting_transcription(**kwargs)
 
 ### stop\_meeting\_transcription
 
-Stops transcription for the specified `meetingId` .
+Stops transcription for the specified `meetingId`.
 
 Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").stop_meeting_transcription` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.stop_meeting_transcription)

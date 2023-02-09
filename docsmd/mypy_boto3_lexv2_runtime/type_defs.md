@@ -189,6 +189,23 @@ class IntentTypeDef(TypedDict):
 1. See [:material-code-braces: SlotTypeDef](./type_defs.md#slottypedef) 
 2. See [:material-code-brackets: IntentStateType](./literals.md#intentstatetype) 
 3. See [:material-code-brackets: ConfirmationStateType](./literals.md#confirmationstatetype) 
+## RecognizedBotMemberTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_runtime.type_defs import RecognizedBotMemberTypeDef
+
+def get_value() -> RecognizedBotMemberTypeDef:
+    return {
+        "botId": ...,
+    }
+```
+
+```python title="Definition"
+class RecognizedBotMemberTypeDef(TypedDict):
+    botId: str,
+    botName: NotRequired[str],
+```
+
 ## RecognizeUtteranceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -398,6 +415,7 @@ def get_value() -> RecognizeUtteranceResponseTypeDef:
         "sessionId": ...,
         "inputTranscript": ...,
         "audioStream": ...,
+        "recognizedBotMember": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -413,6 +431,7 @@ class RecognizeUtteranceResponseTypeDef(TypedDict):
     sessionId: str,
     inputTranscript: str,
     audioStream: StreamingBody,
+    recognizedBotMember: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -640,6 +659,7 @@ def get_value() -> RecognizeTextResponseTypeDef:
         "interpretations": ...,
         "requestAttributes": ...,
         "sessionId": ...,
+        "recognizedBotMember": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -651,10 +671,12 @@ class RecognizeTextResponseTypeDef(TypedDict):
     interpretations: List[InterpretationTypeDef],  # (3)
     requestAttributes: Dict[str, str],
     sessionId: str,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+    recognizedBotMember: RecognizedBotMemberTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
 ```
 
 1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
 2. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
 3. See [:material-code-braces: InterpretationTypeDef](./type_defs.md#interpretationtypedef) 
-4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+4. See [:material-code-braces: RecognizedBotMemberTypeDef](./type_defs.md#recognizedbotmembertypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

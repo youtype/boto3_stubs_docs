@@ -513,6 +513,30 @@ class BotLocaleSummaryTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: BotLocaleStatusType](./literals.md#botlocalestatustype) 
+## BotMemberTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import BotMemberTypeDef
+
+def get_value() -> BotMemberTypeDef:
+    return {
+        "botMemberId": ...,
+        "botMemberName": ...,
+        "botMemberAliasId": ...,
+        "botMemberAliasName": ...,
+        "botMemberVersion": ...,
+    }
+```
+
+```python title="Definition"
+class BotMemberTypeDef(TypedDict):
+    botMemberId: str,
+    botMemberName: str,
+    botMemberAliasId: str,
+    botMemberAliasName: str,
+    botMemberVersion: str,
+```
+
 ## IntentStatisticsTypeDef
 
 ```python title="Usage Example"
@@ -605,9 +629,11 @@ class BotSummaryTypeDef(TypedDict):
     botStatus: NotRequired[BotStatusType],  # (1)
     latestBotVersion: NotRequired[str],
     lastUpdatedDateTime: NotRequired[datetime],
+    botType: NotRequired[BotTypeType],  # (2)
 ```
 
 1. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+2. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
 ## BotVersionLocaleDetailsTypeDef
 
 ```python title="Usage Example"
@@ -1374,6 +1400,24 @@ def get_value() -> DescribeBotAliasRequestRequestTypeDef:
 class DescribeBotAliasRequestRequestTypeDef(TypedDict):
     botAliasId: str,
     botId: str,
+```
+
+## ParentBotNetworkTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import ParentBotNetworkTypeDef
+
+def get_value() -> ParentBotNetworkTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+    }
+```
+
+```python title="Definition"
+class ParentBotNetworkTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
 ```
 
 ## DescribeBotLocaleRequestRequestTypeDef
@@ -3083,210 +3127,6 @@ class BotImportSpecificationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-## CreateBotRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import CreateBotRequestRequestTypeDef
-
-def get_value() -> CreateBotRequestRequestTypeDef:
-    return {
-        "botName": ...,
-        "roleArn": ...,
-        "dataPrivacy": ...,
-        "idleSessionTTLInSeconds": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBotRequestRequestTypeDef(TypedDict):
-    botName: str,
-    roleArn: str,
-    dataPrivacy: DataPrivacyTypeDef,  # (1)
-    idleSessionTTLInSeconds: int,
-    description: NotRequired[str],
-    botTags: NotRequired[Mapping[str, str]],
-    testBotAliasTags: NotRequired[Mapping[str, str]],
-```
-
-1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-## CreateBotResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import CreateBotResponseTypeDef
-
-def get_value() -> CreateBotResponseTypeDef:
-    return {
-        "botId": ...,
-        "botName": ...,
-        "description": ...,
-        "roleArn": ...,
-        "dataPrivacy": ...,
-        "idleSessionTTLInSeconds": ...,
-        "botStatus": ...,
-        "creationDateTime": ...,
-        "botTags": ...,
-        "testBotAliasTags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class CreateBotResponseTypeDef(TypedDict):
-    botId: str,
-    botName: str,
-    description: str,
-    roleArn: str,
-    dataPrivacy: DataPrivacyTypeDef,  # (1)
-    idleSessionTTLInSeconds: int,
-    botStatus: BotStatusType,  # (2)
-    creationDateTime: datetime,
-    botTags: Dict[str, str],
-    testBotAliasTags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeBotResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import DescribeBotResponseTypeDef
-
-def get_value() -> DescribeBotResponseTypeDef:
-    return {
-        "botId": ...,
-        "botName": ...,
-        "description": ...,
-        "roleArn": ...,
-        "dataPrivacy": ...,
-        "idleSessionTTLInSeconds": ...,
-        "botStatus": ...,
-        "creationDateTime": ...,
-        "lastUpdatedDateTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeBotResponseTypeDef(TypedDict):
-    botId: str,
-    botName: str,
-    description: str,
-    roleArn: str,
-    dataPrivacy: DataPrivacyTypeDef,  # (1)
-    idleSessionTTLInSeconds: int,
-    botStatus: BotStatusType,  # (2)
-    creationDateTime: datetime,
-    lastUpdatedDateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## DescribeBotVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionResponseTypeDef
-
-def get_value() -> DescribeBotVersionResponseTypeDef:
-    return {
-        "botId": ...,
-        "botName": ...,
-        "botVersion": ...,
-        "description": ...,
-        "roleArn": ...,
-        "dataPrivacy": ...,
-        "idleSessionTTLInSeconds": ...,
-        "botStatus": ...,
-        "failureReasons": ...,
-        "creationDateTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class DescribeBotVersionResponseTypeDef(TypedDict):
-    botId: str,
-    botName: str,
-    botVersion: str,
-    description: str,
-    roleArn: str,
-    dataPrivacy: DataPrivacyTypeDef,  # (1)
-    idleSessionTTLInSeconds: int,
-    botStatus: BotStatusType,  # (2)
-    failureReasons: List[str],
-    creationDateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## UpdateBotRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import UpdateBotRequestRequestTypeDef
-
-def get_value() -> UpdateBotRequestRequestTypeDef:
-    return {
-        "botId": ...,
-        "botName": ...,
-        "roleArn": ...,
-        "dataPrivacy": ...,
-        "idleSessionTTLInSeconds": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBotRequestRequestTypeDef(TypedDict):
-    botId: str,
-    botName: str,
-    roleArn: str,
-    dataPrivacy: DataPrivacyTypeDef,  # (1)
-    idleSessionTTLInSeconds: int,
-    description: NotRequired[str],
-```
-
-1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-## UpdateBotResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_lexv2_models.type_defs import UpdateBotResponseTypeDef
-
-def get_value() -> UpdateBotResponseTypeDef:
-    return {
-        "botId": ...,
-        "botName": ...,
-        "description": ...,
-        "roleArn": ...,
-        "dataPrivacy": ...,
-        "idleSessionTTLInSeconds": ...,
-        "botStatus": ...,
-        "creationDateTime": ...,
-        "lastUpdatedDateTime": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class UpdateBotResponseTypeDef(TypedDict):
-    botId: str,
-    botName: str,
-    description: str,
-    roleArn: str,
-    dataPrivacy: DataPrivacyTypeDef,  # (1)
-    idleSessionTTLInSeconds: int,
-    botStatus: BotStatusType,  # (2)
-    creationDateTime: datetime,
-    lastUpdatedDateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BotLocaleImportSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -3542,6 +3382,199 @@ class ListBotLocalesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: BotLocaleSummaryTypeDef](./type_defs.md#botlocalesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateBotRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import CreateBotRequestRequestTypeDef
+
+def get_value() -> CreateBotRequestRequestTypeDef:
+    return {
+        "botName": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBotRequestRequestTypeDef(TypedDict):
+    botName: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    description: NotRequired[str],
+    botTags: NotRequired[Mapping[str, str]],
+    testBotAliasTags: NotRequired[Mapping[str, str]],
+    botType: NotRequired[BotTypeType],  # (2)
+    botMembers: NotRequired[Sequence[BotMemberTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+3. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+## CreateBotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import CreateBotResponseTypeDef
+
+def get_value() -> CreateBotResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "creationDateTime": ...,
+        "botTags": ...,
+        "testBotAliasTags": ...,
+        "botType": ...,
+        "botMembers": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBotResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    creationDateTime: datetime,
+    botTags: Dict[str, str],
+    testBotAliasTags: Dict[str, str],
+    botType: BotTypeType,  # (3)
+    botMembers: List[BotMemberTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+4. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotResponseTypeDef
+
+def get_value() -> DescribeBotResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "botType": ...,
+        "botMembers": ...,
+        "failureReasons": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBotResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    botType: BotTypeType,  # (3)
+    botMembers: List[BotMemberTypeDef],  # (4)
+    failureReasons: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+4. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateBotRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import UpdateBotRequestRequestTypeDef
+
+def get_value() -> UpdateBotRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBotRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    description: NotRequired[str],
+    botType: NotRequired[BotTypeType],  # (2)
+    botMembers: NotRequired[Sequence[BotMemberTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+3. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+## UpdateBotResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import UpdateBotResponseTypeDef
+
+def get_value() -> UpdateBotResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "botType": ...,
+        "botMembers": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateBotResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    botType: BotTypeType,  # (3)
+    botMembers: List[BotMemberTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
+
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+4. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BotRecommendationResultStatisticsTypeDef
 
 ```python title="Usage Example"
@@ -4136,6 +4169,54 @@ class DescribeImportRequestBotImportCompletedWaitTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeBotVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionResponseTypeDef
+
+def get_value() -> DescribeBotVersionResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "botVersion": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "failureReasons": ...,
+        "creationDateTime": ...,
+        "parentBotNetworks": ...,
+        "botType": ...,
+        "botMembers": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBotVersionResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    botVersion: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    failureReasons: List[str],
+    creationDateTime: datetime,
+    parentBotNetworks: List[ParentBotNetworkTypeDef],  # (3)
+    botType: BotTypeType,  # (4)
+    botMembers: List[BotMemberTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
+
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-braces: ParentBotNetworkTypeDef](./type_defs.md#parentbotnetworktypedef) 
+4. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+5. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBotRecommendationRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -5500,6 +5581,7 @@ def get_value() -> DescribeBotAliasResponseTypeDef:
         "botId": ...,
         "creationDateTime": ...,
         "lastUpdatedDateTime": ...,
+        "parentBotNetworks": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -5518,7 +5600,8 @@ class DescribeBotAliasResponseTypeDef(TypedDict):
     botId: str,
     creationDateTime: datetime,
     lastUpdatedDateTime: datetime,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+    parentBotNetworks: List[ParentBotNetworkTypeDef],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
 ```
 
 1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
@@ -5526,7 +5609,8 @@ class DescribeBotAliasResponseTypeDef(TypedDict):
 3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
 4. See [:material-code-braces: BotAliasHistoryEventTypeDef](./type_defs.md#botaliashistoryeventtypedef) 
 5. See [:material-code-brackets: BotAliasStatusType](./literals.md#botaliasstatustype) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+6. See [:material-code-braces: ParentBotNetworkTypeDef](./type_defs.md#parentbotnetworktypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBotAliasRequestRequestTypeDef
 
 ```python title="Usage Example"

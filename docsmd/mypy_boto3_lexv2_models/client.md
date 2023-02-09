@@ -57,8 +57,8 @@ def handle_error(exc: Exceptions.ClientError) -> None:
 
 ### batch\_create\_custom\_vocabulary\_item
 
-Batch create custom vocabulary item for the specified locale in the specified
-bot.
+Create a batch of custom vocabulary items for a given bot locale's custom
+vocabulary.
 
 Type annotations and code completion for `#!python boto3.client("lexv2-models").batch_create_custom_vocabulary_item` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.batch_create_custom_vocabulary_item)
@@ -94,8 +94,8 @@ parent.batch_create_custom_vocabulary_item(**kwargs)
 
 ### batch\_delete\_custom\_vocabulary\_item
 
-Batch delete custom vocabulary item for the specified locale in the specified
-bot.
+Delete a batch of custom vocabulary items for a given bot locale's custom
+vocabulary.
 
 Type annotations and code completion for `#!python boto3.client("lexv2-models").batch_delete_custom_vocabulary_item` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.batch_delete_custom_vocabulary_item)
@@ -131,8 +131,8 @@ parent.batch_delete_custom_vocabulary_item(**kwargs)
 
 ### batch\_update\_custom\_vocabulary\_item
 
-Batch update custom vocabulary item for the specified locale in the specified
-bot.
+Update a batch of custom vocabulary items for a given bot locale's custom
+vocabulary.
 
 Type annotations and code completion for `#!python boto3.client("lexv2-models").batch_update_custom_vocabulary_item` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.batch_update_custom_vocabulary_item)
@@ -248,12 +248,16 @@ def create_bot(
     description: str = ...,
     botTags: Mapping[str, str] = ...,
     testBotAliasTags: Mapping[str, str] = ...,
-) -> CreateBotResponseTypeDef:  # (2)
+    botType: BotTypeType = ...,  # (2)
+    botMembers: Sequence[BotMemberTypeDef] = ...,  # (3)
+) -> CreateBotResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-2. See [:material-code-braces: CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef) 
+2. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+3. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+4. See [:material-code-braces: CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1757,7 +1761,8 @@ parent.list_built_in_slot_types(**kwargs)
 
 ### list\_custom\_vocabulary\_items
 
-List custom vocabulary items for the specified locale in the specified bot.
+Paginated list of custom vocabulary items for a given bot locale's custom
+vocabulary.
 
 Type annotations and code completion for `#!python boto3.client("lexv2-models").list_custom_vocabulary_items` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_custom_vocabulary_items)
@@ -2280,12 +2285,16 @@ def update_bot(
     dataPrivacy: DataPrivacyTypeDef,  # (1)
     idleSessionTTLInSeconds: int,
     description: str = ...,
-) -> UpdateBotResponseTypeDef:  # (2)
+    botType: BotTypeType = ...,  # (2)
+    botMembers: Sequence[BotMemberTypeDef] = ...,  # (3)
+) -> UpdateBotResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
-2. See [:material-code-braces: UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef) 
+2. See [:material-code-brackets: BotTypeType](./literals.md#bottypetype) 
+3. See [:material-code-braces: BotMemberTypeDef](./type_defs.md#botmembertypedef) 
+4. See [:material-code-braces: UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

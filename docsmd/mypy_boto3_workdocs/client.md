@@ -545,7 +545,7 @@ parent.delete_document(**kwargs)
 
 ### delete\_document\_version
 
-Deletes a version of an Amazon WorkDocs document.
+Deletes a specific version of a document.
 
 Type annotations and code completion for `#!python boto3.client("workdocs").delete_document_version` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document_version)

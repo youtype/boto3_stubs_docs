@@ -151,6 +151,7 @@ def get_value() -> BotFilterNameType:
 ```python title="Definition"
 BotFilterNameType = Literal[
     "BotName",
+    "BotType",
 ]
 ```
 ## BotFilterOperatorType
@@ -166,6 +167,7 @@ def get_value() -> BotFilterOperatorType:
 BotFilterOperatorType = Literal[
     "CO",
     "EQ",
+    "NE",
 ]
 ```
 ## BotImportCompletedWaiterName
@@ -342,7 +344,23 @@ BotStatusType = Literal[
     "Failed",
     "Importing",
     "Inactive",
+    "Updating",
     "Versioning",
+]
+```
+## BotTypeType
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.literals import BotTypeType
+
+def get_value() -> BotTypeType:
+    return "Bot"
+```
+
+```python title="Definition"
+BotTypeType = Literal[
+    "Bot",
+    "BotNetwork",
 ]
 ```
 ## BotVersionAvailableWaiterName

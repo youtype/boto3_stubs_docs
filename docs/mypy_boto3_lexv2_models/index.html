@@ -40470,6 +40470,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#botrecommendationstatustype">BotRecommendationStatusType</a></li>
 <li><a href="literals/#botsortattributetype">BotSortAttributeType</a></li>
 <li><a href="literals/#botstatustype">BotStatusType</a></li>
+<li><a href="literals/#bottypetype">BotTypeType</a></li>
 <li><a href="literals/#botversionavailablewaitername">BotVersionAvailableWaiterName</a></li>
 <li><a href="literals/#botversionsortattributetype">BotVersionSortAttributeType</a></li>
 <li><a href="literals/#builtinintentsortattributetype">BuiltInIntentSortAttributeType</a></li>
@@ -40552,6 +40553,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#voicesettingstypedef">VoiceSettingsTypeDef</a></li>
 <li><a href="type_defs/#botlocalesortbytypedef">BotLocaleSortByTypeDef</a></li>
 <li><a href="type_defs/#botlocalesummarytypedef">BotLocaleSummaryTypeDef</a></li>
+<li><a href="type_defs/#botmembertypedef">BotMemberTypeDef</a></li>
 <li><a href="type_defs/#intentstatisticstypedef">IntentStatisticsTypeDef</a></li>
 <li><a href="type_defs/#slottypestatisticstypedef">SlotTypeStatisticsTypeDef</a></li>
 <li><a href="type_defs/#botrecommendationsummarytypedef">BotRecommendationSummaryTypeDef</a></li>
@@ -40599,6 +40601,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#deleteutterancesrequestrequesttypedef">DeleteUtterancesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#waiterconfigtypedef">WaiterConfigTypeDef</a></li>
 <li><a href="type_defs/#describebotaliasrequestrequesttypedef">DescribeBotAliasRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#parentbotnetworktypedef">ParentBotNetworkTypeDef</a></li>
 <li><a href="type_defs/#describebotlocalerequestrequesttypedef">DescribeBotLocaleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describebotrecommendationrequestrequesttypedef">DescribeBotRecommendationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#encryptionsettingtypedef">EncryptionSettingTypeDef</a></li>
@@ -40680,12 +40683,6 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchdeletecustomvocabularyitemrequestrequesttypedef">BatchDeleteCustomVocabularyItemRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listbotaliasesresponsetypedef">ListBotAliasesResponseTypeDef</a></li>
 <li><a href="type_defs/#botimportspecificationtypedef">BotImportSpecificationTypeDef</a></li>
-<li><a href="type_defs/#createbotrequestrequesttypedef">CreateBotRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#createbotresponsetypedef">CreateBotResponseTypeDef</a></li>
-<li><a href="type_defs/#describebotresponsetypedef">DescribeBotResponseTypeDef</a></li>
-<li><a href="type_defs/#describebotversionresponsetypedef">DescribeBotVersionResponseTypeDef</a></li>
-<li><a href="type_defs/#updatebotrequestrequesttypedef">UpdateBotRequestRequestTypeDef</a></li>
-<li><a href="type_defs/#updatebotresponsetypedef">UpdateBotResponseTypeDef</a></li>
 <li><a href="type_defs/#botlocaleimportspecificationtypedef">BotLocaleImportSpecificationTypeDef</a></li>
 <li><a href="type_defs/#createbotlocalerequestrequesttypedef">CreateBotLocaleRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createbotlocaleresponsetypedef">CreateBotLocaleResponseTypeDef</a></li>
@@ -40694,6 +40691,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatebotlocaleresponsetypedef">UpdateBotLocaleResponseTypeDef</a></li>
 <li><a href="type_defs/#listbotlocalesrequestrequesttypedef">ListBotLocalesRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listbotlocalesresponsetypedef">ListBotLocalesResponseTypeDef</a></li>
+<li><a href="type_defs/#createbotrequestrequesttypedef">CreateBotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createbotresponsetypedef">CreateBotResponseTypeDef</a></li>
+<li><a href="type_defs/#describebotresponsetypedef">DescribeBotResponseTypeDef</a></li>
+<li><a href="type_defs/#updatebotrequestrequesttypedef">UpdateBotRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#updatebotresponsetypedef">UpdateBotResponseTypeDef</a></li>
 <li><a href="type_defs/#botrecommendationresultstatisticstypedef">BotRecommendationResultStatisticsTypeDef</a></li>
 <li><a href="type_defs/#listbotrecommendationsresponsetypedef">ListBotRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#listbotsrequestrequesttypedef">ListBotsRequestRequestTypeDef</a></li>
@@ -40722,6 +40724,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describebotversionrequestbotversionavailablewaittypedef">DescribeBotVersionRequestBotVersionAvailableWaitTypeDef</a></li>
 <li><a href="type_defs/#describeexportrequestbotexportcompletedwaittypedef">DescribeExportRequestBotExportCompletedWaitTypeDef</a></li>
 <li><a href="type_defs/#describeimportrequestbotimportcompletedwaittypedef">DescribeImportRequestBotImportCompletedWaitTypeDef</a></li>
+<li><a href="type_defs/#describebotversionresponsetypedef">DescribeBotVersionResponseTypeDef</a></li>
 <li><a href="type_defs/#updatebotrecommendationrequestrequesttypedef">UpdateBotRecommendationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#dialogstatetypedef">DialogStateTypeDef</a></li>
 <li><a href="type_defs/#listexportsrequestrequesttypedef">ListExportsRequestRequestTypeDef</a></li>

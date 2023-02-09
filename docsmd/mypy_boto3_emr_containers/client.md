@@ -646,13 +646,15 @@ def start_job_run(
     tags: Mapping[str, str] = ...,
     jobTemplateId: str = ...,
     jobTemplateParameters: Mapping[str, str] = ...,
-) -> StartJobRunResponseTypeDef:  # (3)
+    retryPolicyConfiguration: RetryPolicyConfigurationTypeDef = ...,  # (3)
+) -> StartJobRunResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-braces: JobDriverTypeDef](./type_defs.md#jobdrivertypedef) 
 2. See [:material-code-braces: ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef) 
-3. See [:material-code-braces: StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef) 
+3. See [:material-code-braces: RetryPolicyConfigurationTypeDef](./type_defs.md#retrypolicyconfigurationtypedef) 
+4. See [:material-code-braces: StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

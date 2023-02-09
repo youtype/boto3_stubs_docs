@@ -271,6 +271,38 @@ class SparkSubmitJobDriverTypeDef(TypedDict):
     sparkSubmitParameters: NotRequired[str],
 ```
 
+## RetryPolicyConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import RetryPolicyConfigurationTypeDef
+
+def get_value() -> RetryPolicyConfigurationTypeDef:
+    return {
+        "maxAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class RetryPolicyConfigurationTypeDef(TypedDict):
+    maxAttempts: int,
+```
+
+## RetryPolicyExecutionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr_containers.type_defs import RetryPolicyExecutionTypeDef
+
+def get_value() -> RetryPolicyExecutionTypeDef:
+    return {
+        "currentAttemptCount": ...,
+    }
+```
+
+```python title="Definition"
+class RetryPolicyExecutionTypeDef(TypedDict):
+    currentAttemptCount: int,
+```
+
 ## TemplateParameterConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -1061,12 +1093,16 @@ class JobRunTypeDef(TypedDict):
     stateDetails: NotRequired[str],
     failureReason: NotRequired[FailureReasonType],  # (4)
     tags: NotRequired[Dict[str, str]],
+    retryPolicyConfiguration: NotRequired[RetryPolicyConfigurationTypeDef],  # (5)
+    retryPolicyExecution: NotRequired[RetryPolicyExecutionTypeDef],  # (6)
 ```
 
 1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
 2. See [:material-code-braces: ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef) 
 3. See [:material-code-braces: JobDriverTypeDef](./type_defs.md#jobdrivertypedef) 
 4. See [:material-code-brackets: FailureReasonType](./literals.md#failurereasontype) 
+5. See [:material-code-braces: RetryPolicyConfigurationTypeDef](./type_defs.md#retrypolicyconfigurationtypedef) 
+6. See [:material-code-braces: RetryPolicyExecutionTypeDef](./type_defs.md#retrypolicyexecutiontypedef) 
 ## StartJobRunRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1091,10 +1127,12 @@ class StartJobRunRequestRequestTypeDef(TypedDict):
     tags: NotRequired[Mapping[str, str]],
     jobTemplateId: NotRequired[str],
     jobTemplateParameters: NotRequired[Mapping[str, str]],
+    retryPolicyConfiguration: NotRequired[RetryPolicyConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: JobDriverTypeDef](./type_defs.md#jobdrivertypedef) 
 2. See [:material-code-braces: ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef) 
+3. See [:material-code-braces: RetryPolicyConfigurationTypeDef](./type_defs.md#retrypolicyconfigurationtypedef) 
 ## JobTemplateDataTypeDef
 
 ```python title="Usage Example"

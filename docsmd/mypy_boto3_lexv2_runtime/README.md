@@ -119,6 +119,7 @@ def get_value() -> ActiveContextTimeToLiveTypeDef:
 - [ElicitSubSlotTypeDef](./type_defs.md#elicitsubslottypedef)
 - [GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef)
 - [IntentTypeDef](./type_defs.md#intenttypedef)
+- [RecognizedBotMemberTypeDef](./type_defs.md#recognizedbotmembertypedef)
 - [RecognizeUtteranceRequestRequestTypeDef](./type_defs.md#recognizeutterancerequestrequesttypedef)
 - [RuntimeHintValueTypeDef](./type_defs.md#runtimehintvaluetypedef)
 - [RuntimeHintsTypeDef](./type_defs.md#runtimehintstypedef)

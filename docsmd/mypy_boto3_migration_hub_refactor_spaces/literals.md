@@ -210,11 +210,12 @@ ListServicesPaginatorName = Literal[
 from mypy_boto3_migration_hub_refactor_spaces.literals import NetworkFabricTypeType
 
 def get_value() -> NetworkFabricTypeType:
-    return "TRANSIT_GATEWAY"
+    return "NONE"
 ```
 
 ```python title="Definition"
 NetworkFabricTypeType = Literal[
+    "NONE",
     "TRANSIT_GATEWAY",
 ]
 ```
