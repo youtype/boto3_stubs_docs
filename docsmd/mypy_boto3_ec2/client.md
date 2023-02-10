@@ -20019,8 +20019,7 @@ parent.unassign_private_ip_addresses(**kwargs)
 
 ### unassign\_private\_nat\_gateway\_address
 
-Unassigns secondary private NAT gateway IPv4 addresses from a private NAT
-gateway.
+Unassigns secondary private IPv4 addresses from a private NAT gateway.
 
 Type annotations and code completion for `#!python boto3.client("ec2").unassign_private_nat_gateway_address` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_private_nat_gateway_address)
@@ -20353,6 +20352,7 @@ Type annotations and code completion for `#!python boto3.client("ec2").get_waite
 - `client.get_waiter("password_data_available")` -> [PasswordDataAvailableWaiter](./waiters.md#passworddataavailablewaiter)
 - `client.get_waiter("security_group_exists")` -> [SecurityGroupExistsWaiter](./waiters.md#securitygroupexistswaiter)
 - `client.get_waiter("snapshot_completed")` -> [SnapshotCompletedWaiter](./waiters.md#snapshotcompletedwaiter)
+- `client.get_waiter("snapshot_imported")` -> [SnapshotImportedWaiter](./waiters.md#snapshotimportedwaiter)
 - `client.get_waiter("spot_instance_request_fulfilled")` -> [SpotInstanceRequestFulfilledWaiter](./waiters.md#spotinstancerequestfulfilledwaiter)
 - `client.get_waiter("subnet_available")` -> [SubnetAvailableWaiter](./waiters.md#subnetavailablewaiter)
 - `client.get_waiter("system_status_ok")` -> [SystemStatusOkWaiter](./waiters.md#systemstatusokwaiter)

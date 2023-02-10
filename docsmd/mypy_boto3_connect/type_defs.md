@@ -565,6 +565,22 @@ class QueueInfoTypeDef(TypedDict):
     EnqueueTimestamp: NotRequired[datetime],
 ```
 
+## WisdomInfoTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import WisdomInfoTypeDef
+
+def get_value() -> WisdomInfoTypeDef:
+    return {
+        "SessionArn": ...,
+    }
+```
+
+```python title="Definition"
+class WisdomInfoTypeDef(TypedDict):
+    SessionArn: NotRequired[str],
+```
+
 ## TagConditionTypeDef
 
 ```python title="Usage Example"
@@ -5429,12 +5445,14 @@ class ContactTypeDef(TypedDict):
     LastUpdateTimestamp: NotRequired[datetime],
     ScheduledTimestamp: NotRequired[datetime],
     RelatedContactId: NotRequired[str],
+    WisdomInfo: NotRequired[WisdomInfoTypeDef],  # (5)
 ```
 
 1. See [:material-code-brackets: ContactInitiationMethodType](./literals.md#contactinitiationmethodtype) 
 2. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 3. See [:material-code-braces: QueueInfoTypeDef](./type_defs.md#queueinfotypedef) 
 4. See [:material-code-braces: AgentInfoTypeDef](./type_defs.md#agentinfotypedef) 
+5. See [:material-code-braces: WisdomInfoTypeDef](./type_defs.md#wisdominfotypedef) 
 ## ControlPlaneTagFilterTypeDef
 
 ```python title="Usage Example"

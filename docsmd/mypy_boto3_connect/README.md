@@ -280,6 +280,7 @@ def get_value() -> ActionSummaryTypeDef:
 - [ContactFlowSummaryTypeDef](./type_defs.md#contactflowsummarytypedef)
 - [ContactFlowTypeDef](./type_defs.md#contactflowtypedef)
 - [QueueInfoTypeDef](./type_defs.md#queueinfotypedef)
+- [WisdomInfoTypeDef](./type_defs.md#wisdominfotypedef)
 - [TagConditionTypeDef](./type_defs.md#tagconditiontypedef)
 - [CreateAgentStatusRequestRequestTypeDef](./type_defs.md#createagentstatusrequestrequesttypedef)
 - [CreateContactFlowModuleRequestRequestTypeDef](./type_defs.md#createcontactflowmodulerequestrequesttypedef)

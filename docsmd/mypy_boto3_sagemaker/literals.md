@@ -323,6 +323,28 @@ AuthModeType = Literal[
     "SSO",
 ]
 ```
+## AutoMLAlgorithmType
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import AutoMLAlgorithmType
+
+def get_value() -> AutoMLAlgorithmType:
+    return "catboost"
+```
+
+```python title="Definition"
+AutoMLAlgorithmType = Literal[
+    "catboost",
+    "extra-trees",
+    "fastai",
+    "lightgbm",
+    "linear-learner",
+    "mlp",
+    "nn-torch",
+    "randomforest",
+    "xgboost",
+]
+```
 ## AutoMLChannelTypeType
 
 ```python title="Usage Example"

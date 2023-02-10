@@ -358,22 +358,23 @@ class AthenaDatasetDefinitionTypeDef(TypedDict):
 
 1. See [:material-code-brackets: AthenaResultFormatType](./literals.md#athenaresultformattype) 
 2. See [:material-code-brackets: AthenaResultCompressionTypeType](./literals.md#athenaresultcompressiontypetype) 
-## AutoMLCandidateGenerationConfigTypeDef
+## AutoMLAlgorithmConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_sagemaker.type_defs import AutoMLCandidateGenerationConfigTypeDef
+from mypy_boto3_sagemaker.type_defs import AutoMLAlgorithmConfigTypeDef
 
-def get_value() -> AutoMLCandidateGenerationConfigTypeDef:
+def get_value() -> AutoMLAlgorithmConfigTypeDef:
     return {
-        "FeatureSpecificationS3Uri": ...,
+        "AutoMLAlgorithms": ...,
     }
 ```
 
 ```python title="Definition"
-class AutoMLCandidateGenerationConfigTypeDef(TypedDict):
-    FeatureSpecificationS3Uri: NotRequired[str],
+class AutoMLAlgorithmConfigTypeDef(TypedDict):
+    AutoMLAlgorithms: Sequence[AutoMLAlgorithmType],  # (1)
 ```
 
+1. See [:material-code-brackets: AutoMLAlgorithmType](./literals.md#automlalgorithmtype) 
 ## AutoMLCandidateStepTypeDef
 
 ```python title="Usage Example"
@@ -431,10 +432,12 @@ class FinalAutoMLJobObjectiveMetricTypeDef(TypedDict):
     MetricName: AutoMLMetricEnumType,  # (2)
     Value: float,
     Type: NotRequired[AutoMLJobObjectiveTypeType],  # (1)
+    StandardMetricName: NotRequired[AutoMLMetricEnumType],  # (2)
 ```
 
 1. See [:material-code-brackets: AutoMLJobObjectiveTypeType](./literals.md#automljobobjectivetypetype) 
 2. See [:material-code-brackets: AutoMLMetricEnumType](./literals.md#automlmetricenumtype) 
+3. See [:material-code-brackets: AutoMLMetricEnumType](./literals.md#automlmetricenumtype) 
 ## AutoMLS3DataSourceTypeDef
 
 ```python title="Usage Example"
@@ -12269,6 +12272,24 @@ class AsyncInferenceOutputConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AsyncInferenceNotificationConfigTypeDef](./type_defs.md#asyncinferencenotificationconfigtypedef) 
+## AutoMLCandidateGenerationConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_sagemaker.type_defs import AutoMLCandidateGenerationConfigTypeDef
+
+def get_value() -> AutoMLCandidateGenerationConfigTypeDef:
+    return {
+        "FeatureSpecificationS3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class AutoMLCandidateGenerationConfigTypeDef(TypedDict):
+    FeatureSpecificationS3Uri: NotRequired[str],
+    AlgorithmsConfig: NotRequired[Sequence[AutoMLAlgorithmConfigTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: AutoMLAlgorithmConfigTypeDef](./type_defs.md#automlalgorithmconfigtypedef) 
 ## AutoMLDataSourceTypeDef
 
 ```python title="Usage Example"

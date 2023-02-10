@@ -27943,6 +27943,29 @@ class DescribeImagesRequestImageExistsWaitTypeDef(TypedDict):
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeImportSnapshotTasksRequestSnapshotImportedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ec2.type_defs import DescribeImportSnapshotTasksRequestSnapshotImportedWaitTypeDef
+
+def get_value() -> DescribeImportSnapshotTasksRequestSnapshotImportedWaitTypeDef:
+    return {
+        "DryRun": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImportSnapshotTasksRequestSnapshotImportedWaitTypeDef(TypedDict):
+    DryRun: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    ImportTaskIds: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeInstanceStatusRequestInstanceStatusOkWaitTypeDef
 
 ```python title="Usage Example"

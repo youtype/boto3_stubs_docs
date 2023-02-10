@@ -309,6 +309,9 @@ InstanceRefreshStatusType = Literal[
     "Failed",
     "InProgress",
     "Pending",
+    "RollbackFailed",
+    "RollbackInProgress",
+    "RollbackSuccessful",
     "Successful",
 ]
 ```
@@ -509,6 +512,22 @@ RefreshStrategyType = Literal[
     "Rolling",
 ]
 ```
+## ScaleInProtectedInstancesType
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.literals import ScaleInProtectedInstancesType
+
+def get_value() -> ScaleInProtectedInstancesType:
+    return "Ignore"
+```
+
+```python title="Definition"
+ScaleInProtectedInstancesType = Literal[
+    "Ignore",
+    "Refresh",
+    "Wait",
+]
+```
 ## ScalingActivityStatusCodeType
 
 ```python title="Usage Example"
@@ -532,6 +551,22 @@ ScalingActivityStatusCodeType = Literal[
     "WaitingForInstanceWarmup",
     "WaitingForSpotInstanceId",
     "WaitingForSpotInstanceRequestId",
+]
+```
+## StandbyInstancesType
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.literals import StandbyInstancesType
+
+def get_value() -> StandbyInstancesType:
+    return "Ignore"
+```
+
+```python title="Definition"
+StandbyInstancesType = Literal[
+    "Ignore",
+    "Terminate",
+    "Wait",
 ]
 ```
 ## WarmPoolStateType

@@ -1215,8 +1215,13 @@ class RefreshPreferencesTypeDef(TypedDict):
     CheckpointPercentages: NotRequired[List[int]],
     CheckpointDelay: NotRequired[int],
     SkipMatching: NotRequired[bool],
+    AutoRollback: NotRequired[bool],
+    ScaleInProtectedInstances: NotRequired[ScaleInProtectedInstancesType],  # (1)
+    StandbyInstances: NotRequired[StandbyInstancesType],  # (2)
 ```
 
+1. See [:material-code-brackets: ScaleInProtectedInstancesType](./literals.md#scaleinprotectedinstancestype) 
+2. See [:material-code-brackets: StandbyInstancesType](./literals.md#standbyinstancestype) 
 ## MemoryGiBPerVCpuRequestTypeDef
 
 ```python title="Usage Example"
@@ -1586,6 +1591,22 @@ class RecordLifecycleActionHeartbeatTypeRequestTypeDef(TypedDict):
     InstanceId: NotRequired[str],
 ```
 
+## RollbackInstanceRefreshTypeRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import RollbackInstanceRefreshTypeRequestTypeDef
+
+def get_value() -> RollbackInstanceRefreshTypeRequestTypeDef:
+    return {
+        "AutoScalingGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class RollbackInstanceRefreshTypeRequestTypeDef(TypedDict):
+    AutoScalingGroupName: NotRequired[str],
+```
+
 ## ScalingProcessQueryRequestTypeDef
 
 ```python title="Usage Example"
@@ -1925,6 +1946,25 @@ class ExitStandbyAnswerTypeDef(TypedDict):
 
 1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RollbackInstanceRefreshAnswerTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import RollbackInstanceRefreshAnswerTypeDef
+
+def get_value() -> RollbackInstanceRefreshAnswerTypeDef:
+    return {
+        "InstanceRefreshId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class RollbackInstanceRefreshAnswerTypeDef(TypedDict):
+    InstanceRefreshId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartInstanceRefreshAnswerTypeDef
 
 ```python title="Usage Example"
@@ -2903,6 +2943,27 @@ class TargetTrackingMetricStatTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+## RollbackDetailsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_autoscaling.type_defs import RollbackDetailsTypeDef
+
+def get_value() -> RollbackDetailsTypeDef:
+    return {
+        "RollbackReason": ...,
+    }
+```
+
+```python title="Definition"
+class RollbackDetailsTypeDef(TypedDict):
+    RollbackReason: NotRequired[str],
+    RollbackStartTime: NotRequired[datetime],
+    PercentageCompleteOnRollback: NotRequired[int],
+    InstancesToUpdateOnRollback: NotRequired[int],
+    ProgressDetailsOnRollback: NotRequired[InstanceRefreshProgressDetailsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InstanceRefreshProgressDetailsTypeDef](./type_defs.md#instancerefreshprogressdetailstypedef) 
 ## LaunchTemplateOverridesTypeDef
 
 ```python title="Usage Example"
@@ -3435,12 +3496,14 @@ class InstanceRefreshTypeDef(TypedDict):
     ProgressDetails: NotRequired[InstanceRefreshProgressDetailsTypeDef],  # (2)
     Preferences: NotRequired[RefreshPreferencesTypeDef],  # (3)
     DesiredConfiguration: NotRequired[DesiredConfigurationTypeDef],  # (4)
+    RollbackDetails: NotRequired[RollbackDetailsTypeDef],  # (5)
 ```
 
 1. See [:material-code-brackets: InstanceRefreshStatusType](./literals.md#instancerefreshstatustype) 
 2. See [:material-code-braces: InstanceRefreshProgressDetailsTypeDef](./type_defs.md#instancerefreshprogressdetailstypedef) 
 3. See [:material-code-braces: RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef) 
 4. See [:material-code-braces: DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef) 
+5. See [:material-code-braces: RollbackDetailsTypeDef](./type_defs.md#rollbackdetailstypedef) 
 ## StartInstanceRefreshTypeRequestTypeDef
 
 ```python title="Usage Example"

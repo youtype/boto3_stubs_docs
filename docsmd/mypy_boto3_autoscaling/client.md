@@ -37,6 +37,7 @@ except (
     client.ClientError,
     client.InstanceRefreshInProgressFault,
     client.InvalidNextToken,
+    client.IrreversibleInstanceRefreshFault,
     client.LimitExceededFault,
     client.ResourceContentionFault,
     client.ResourceInUseFault,
@@ -261,7 +262,7 @@ def can_paginate(
 
 ### cancel\_instance\_refresh
 
-Cancels an instance refresh operation in progress.
+Cancels an instance refresh or rollback that is in progress.
 
 Type annotations and code completion for `#!python boto3.client("autoscaling").cancel_instance_refresh` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh)
@@ -1876,6 +1877,36 @@ parent.resume_processes(**kwargs)
 
 1. See [:material-code-braces: ScalingProcessQueryRequestTypeDef](./type_defs.md#scalingprocessqueryrequesttypedef) 
 
+### rollback\_instance\_refresh
+
+Cancels an instance refresh that is in progress and rolls back any changes that
+it made.
+
+Type annotations and code completion for `#!python boto3.client("autoscaling").rollback_instance_refresh` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.rollback_instance_refresh)
+
+```python title="Method definition"
+def rollback_instance_refresh(
+    self,
+    *,
+    AutoScalingGroupName: str = ...,
+) -> RollbackInstanceRefreshAnswerTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: RollbackInstanceRefreshAnswerTypeDef](./type_defs.md#rollbackinstancerefreshanswertypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RollbackInstanceRefreshTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
+
+parent.rollback_instance_refresh(**kwargs)
+```
+
+1. See [:material-code-braces: RollbackInstanceRefreshTypeRequestTypeDef](./type_defs.md#rollbackinstancerefreshtyperequesttypedef) 
+
 ### set\_desired\_capacity
 
 Sets the size of the specified Auto Scaling group.
@@ -1974,7 +2005,7 @@ parent.set_instance_protection(**kwargs)
 
 ### start\_instance\_refresh
 
-Starts a new instance refresh operation.
+Starts an instance refresh.
 
 Type annotations and code completion for `#!python boto3.client("autoscaling").start_instance_refresh` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh)

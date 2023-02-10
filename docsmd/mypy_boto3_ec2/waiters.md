@@ -1157,6 +1157,59 @@ parent.wait(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeSnapshotsRequestSnapshotCompletedWaitTypeDef](./type_defs.md#describesnapshotsrequestsnapshotcompletedwaittypedef) 
+## SnapshotImportedWaiter
+
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("snapshot_imported")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SnapshotImported)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.waiter import SnapshotImportedWaiter
+
+
+session = Session()
+
+client = session.client("ec2")  # (1)
+waiter: SnapshotImportedWaiter = client.get_waiter("snapshot_imported")  # (2)
+await waiter.wait()
+```
+
+1. client: [EC2Client](./client.md)
+2. waiter: [SnapshotImportedWaiter](./waiters.md#snapshotimportedwaiter)
+
+
+### wait
+
+Type annotations and code completion for `#!python SnapshotImportedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ImportTaskIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImportSnapshotTasksRequestSnapshotImportedWaitTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImportSnapshotTasksRequestSnapshotImportedWaitTypeDef](./type_defs.md#describeimportsnapshottasksrequestsnapshotimportedwaittypedef) 
 ## SpotInstanceRequestFulfilledWaiter
 
 Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")`.

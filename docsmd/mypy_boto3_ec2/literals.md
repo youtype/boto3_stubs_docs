@@ -6635,6 +6635,20 @@ SnapshotCompletedWaiterName = Literal[
     "snapshot_completed",
 ]
 ```
+## SnapshotImportedWaiterName
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import SnapshotImportedWaiterName
+
+def get_value() -> SnapshotImportedWaiterName:
+    return "snapshot_imported"
+```
+
+```python title="Definition"
+SnapshotImportedWaiterName = Literal[
+    "snapshot_imported",
+]
+```
 ## SnapshotStateType
 
 ```python title="Usage Example"
@@ -8646,6 +8660,7 @@ WaiterName = Literal[
     "password_data_available",
     "security_group_exists",
     "snapshot_completed",
+    "snapshot_imported",
     "spot_instance_request_fulfilled",
     "subnet_available",
     "system_status_ok",

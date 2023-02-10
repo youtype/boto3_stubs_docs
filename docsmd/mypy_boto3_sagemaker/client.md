@@ -8871,7 +8871,7 @@ parent.start_pipeline_execution(**kwargs)
 
 ### stop\_auto\_ml\_job
 
-A method for forcing the termination of a running job.
+A method for forcing a running job to shut down.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").stop_auto_ml_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_auto_ml_job)
