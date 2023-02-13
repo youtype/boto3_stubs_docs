@@ -82,6 +82,7 @@ def get_value() -> AlternateContactTypeType:
 ```
 
 - [AlternateContactTypeType](./literals.md#alternatecontacttypetype)
+- [RegionOptStatusType](./literals.md#regionoptstatustype)
 - [AccountServiceName](./literals.md#accountservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
@@ -105,12 +106,19 @@ def get_value() -> AlternateContactTypeDef:
 - [AlternateContactTypeDef](./type_defs.md#alternatecontacttypedef)
 - [ContactInformationTypeDef](./type_defs.md#contactinformationtypedef)
 - [DeleteAlternateContactRequestRequestTypeDef](./type_defs.md#deletealternatecontactrequestrequesttypedef)
+- [DisableRegionRequestRequestTypeDef](./type_defs.md#disableregionrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [EnableRegionRequestRequestTypeDef](./type_defs.md#enableregionrequestrequesttypedef)
 - [GetAlternateContactRequestRequestTypeDef](./type_defs.md#getalternatecontactrequestrequesttypedef)
 - [GetContactInformationRequestRequestTypeDef](./type_defs.md#getcontactinformationrequestrequesttypedef)
+- [GetRegionOptStatusRequestRequestTypeDef](./type_defs.md#getregionoptstatusrequestrequesttypedef)
+- [ListRegionsRequestRequestTypeDef](./type_defs.md#listregionsrequestrequesttypedef)
+- [RegionTypeDef](./type_defs.md#regiontypedef)
 - [PutAlternateContactRequestRequestTypeDef](./type_defs.md#putalternatecontactrequestrequesttypedef)
 - [PutContactInformationRequestRequestTypeDef](./type_defs.md#putcontactinformationrequestrequesttypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [GetAlternateContactResponseTypeDef](./type_defs.md#getalternatecontactresponsetypedef)
 - [GetContactInformationResponseTypeDef](./type_defs.md#getcontactinformationresponsetypedef)
+- [GetRegionOptStatusResponseTypeDef](./type_defs.md#getregionoptstatusresponsetypedef)
+- [ListRegionsResponseTypeDef](./type_defs.md#listregionsresponsetypedef)
 

@@ -196,6 +196,21 @@ RemoteManagementType = Literal[
     "INSTALLED_ONLY",
 ]
 ```
+## ServiceNameType
+
+```python title="Usage Example"
+from mypy_boto3_snowball.literals import ServiceNameType
+
+def get_value() -> ServiceNameType:
+    return "EKS_ANYWHERE"
+```
+
+```python title="Definition"
+ServiceNameType = Literal[
+    "EKS_ANYWHERE",
+    "KUBERNETES",
+]
+```
 ## ShipmentStateType
 
 ```python title="Usage Example"

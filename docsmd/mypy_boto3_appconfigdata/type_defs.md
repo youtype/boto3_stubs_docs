@@ -79,6 +79,7 @@ def get_value() -> GetLatestConfigurationResponseTypeDef:
         "NextPollIntervalInSeconds": ...,
         "ContentType": ...,
         "Configuration": ...,
+        "VersionLabel": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -89,6 +90,7 @@ class GetLatestConfigurationResponseTypeDef(TypedDict):
     NextPollIntervalInSeconds: int,
     ContentType: str,
     Configuration: StreamingBody,
+    VersionLabel: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 

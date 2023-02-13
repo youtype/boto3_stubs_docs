@@ -205,6 +205,22 @@ class DataTransferTypeDef(TypedDict):
     TotalObjects: NotRequired[int],
 ```
 
+## ServiceVersionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ServiceVersionTypeDef
+
+def get_value() -> ServiceVersionTypeDef:
+    return {
+        "Version": ...,
+    }
+```
+
+```python title="Definition"
+class ServiceVersionTypeDef(TypedDict):
+    Version: NotRequired[str],
+```
+
 ## DescribeAddressRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -302,6 +318,23 @@ def get_value() -> DescribeReturnShippingLabelRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeReturnShippingLabelRequestRequestTypeDef(TypedDict):
     JobId: str,
+```
+
+## EKSOnDeviceServiceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import EKSOnDeviceServiceConfigurationTypeDef
+
+def get_value() -> EKSOnDeviceServiceConfigurationTypeDef:
+    return {
+        "KubernetesVersion": ...,
+    }
+```
+
+```python title="Definition"
+class EKSOnDeviceServiceConfigurationTypeDef(TypedDict):
+    KubernetesVersion: NotRequired[str],
+    EKSAnywhereVersion: NotRequired[str],
 ```
 
 ## Ec2AmiResourceTypeDef
@@ -1000,6 +1033,25 @@ class ListCompatibleImagesResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: CompatibleImageTypeDef](./type_defs.md#compatibleimagetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DependentServiceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import DependentServiceTypeDef
+
+def get_value() -> DependentServiceTypeDef:
+    return {
+        "ServiceName": ...,
+    }
+```
+
+```python title="Definition"
+class DependentServiceTypeDef(TypedDict):
+    ServiceName: NotRequired[ServiceNameType],  # (1)
+    ServiceVersion: NotRequired[ServiceVersionTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
+2. See [:material-code-braces: ServiceVersionTypeDef](./type_defs.md#serviceversiontypedef) 
 ## DescribeAddressesRequestDescribeAddressesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -1219,10 +1271,12 @@ def get_value() -> OnDeviceServiceConfigurationTypeDef:
 class OnDeviceServiceConfigurationTypeDef(TypedDict):
     NFSOnDeviceService: NotRequired[NFSOnDeviceServiceConfigurationTypeDef],  # (1)
     TGWOnDeviceService: NotRequired[TGWOnDeviceServiceConfigurationTypeDef],  # (2)
+    EKSOnDeviceService: NotRequired[EKSOnDeviceServiceConfigurationTypeDef],  # (3)
 ```
 
 1. See [:material-code-braces: NFSOnDeviceServiceConfigurationTypeDef](./type_defs.md#nfsondeviceserviceconfigurationtypedef) 
 2. See [:material-code-braces: TGWOnDeviceServiceConfigurationTypeDef](./type_defs.md#tgwondeviceserviceconfigurationtypedef) 
+3. See [:material-code-braces: EKSOnDeviceServiceConfigurationTypeDef](./type_defs.md#eksondeviceserviceconfigurationtypedef) 
 ## S3ResourceTypeDef
 
 ```python title="Usage Example"
@@ -1281,6 +1335,55 @@ class SnowconeDeviceConfigurationTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef) 
+## ListServiceVersionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ListServiceVersionsRequestRequestTypeDef
+
+def get_value() -> ListServiceVersionsRequestRequestTypeDef:
+    return {
+        "ServiceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceVersionsRequestRequestTypeDef(TypedDict):
+    ServiceName: ServiceNameType,  # (1)
+    DependentServices: NotRequired[Sequence[DependentServiceTypeDef]],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
+2. See [:material-code-braces: DependentServiceTypeDef](./type_defs.md#dependentservicetypedef) 
+## ListServiceVersionsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ListServiceVersionsResultTypeDef
+
+def get_value() -> ListServiceVersionsResultTypeDef:
+    return {
+        "ServiceVersions": ...,
+        "ServiceName": ...,
+        "DependentServices": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceVersionsResultTypeDef(TypedDict):
+    ServiceVersions: List[ServiceVersionTypeDef],  # (1)
+    ServiceName: ServiceNameType,  # (2)
+    DependentServices: List[DependentServiceTypeDef],  # (3)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
+
+1. See [:material-code-braces: ServiceVersionTypeDef](./type_defs.md#serviceversiontypedef) 
+2. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
+3. See [:material-code-braces: DependentServiceTypeDef](./type_defs.md#dependentservicetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JobResourceTypeDef
 
 ```python title="Usage Example"

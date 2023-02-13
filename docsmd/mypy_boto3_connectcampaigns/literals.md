@@ -548,6 +548,7 @@ def get_value() -> RegionName:
 ```python title="Definition"
 RegionName = Literal[
     "ap-southeast-2",
+    "ca-central-1",
     "eu-west-2",
     "us-east-1",
     "us-west-2",

@@ -34,6 +34,7 @@ try:
 except (
     client.AccessDeniedException,
     client.ClientError,
+    client.ConflictException,
     client.InternalServerException,
     client.ResourceNotFoundException,
     client.TooManyRequestsException,
@@ -115,6 +116,66 @@ parent.delete_alternate_contact(**kwargs)
 
 1. See [:material-code-braces: DeleteAlternateContactRequestRequestTypeDef](./type_defs.md#deletealternatecontactrequestrequesttypedef) 
 
+### disable\_region
+
+Disables (opts-out) a particular Region for an account.
+
+Type annotations and code completion for `#!python boto3.client("account").disable_region` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account.Client.disable_region)
+
+```python title="Method definition"
+def disable_region(
+    self,
+    *,
+    RegionName: str,
+    AccountId: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisableRegionRequestRequestTypeDef = {  # (1)
+    "RegionName": ...,
+}
+
+parent.disable_region(**kwargs)
+```
+
+1. See [:material-code-braces: DisableRegionRequestRequestTypeDef](./type_defs.md#disableregionrequestrequesttypedef) 
+
+### enable\_region
+
+Enables (opts-in) a particular Region for an account.
+
+Type annotations and code completion for `#!python boto3.client("account").enable_region` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account.Client.enable_region)
+
+```python title="Method definition"
+def enable_region(
+    self,
+    *,
+    RegionName: str,
+    AccountId: str = ...,
+) -> EmptyResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: EnableRegionRequestRequestTypeDef = {  # (1)
+    "RegionName": ...,
+}
+
+parent.enable_region(**kwargs)
+```
+
+1. See [:material-code-braces: EnableRegionRequestRequestTypeDef](./type_defs.md#enableregionrequestrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -194,6 +255,69 @@ parent.get_contact_information(**kwargs)
 ```
 
 1. See [:material-code-braces: GetContactInformationRequestRequestTypeDef](./type_defs.md#getcontactinformationrequestrequesttypedef) 
+
+### get\_region\_opt\_status
+
+Retrieves the opt-in status of a particular Region.
+
+Type annotations and code completion for `#!python boto3.client("account").get_region_opt_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account.Client.get_region_opt_status)
+
+```python title="Method definition"
+def get_region_opt_status(
+    self,
+    *,
+    RegionName: str,
+    AccountId: str = ...,
+) -> GetRegionOptStatusResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetRegionOptStatusResponseTypeDef](./type_defs.md#getregionoptstatusresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetRegionOptStatusRequestRequestTypeDef = {  # (1)
+    "RegionName": ...,
+}
+
+parent.get_region_opt_status(**kwargs)
+```
+
+1. See [:material-code-braces: GetRegionOptStatusRequestRequestTypeDef](./type_defs.md#getregionoptstatusrequestrequesttypedef) 
+
+### list\_regions
+
+Lists all the Regions for a given account and their respective opt-in statuses.
+
+Type annotations and code completion for `#!python boto3.client("account").list_regions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account.Client.list_regions)
+
+```python title="Method definition"
+def list_regions(
+    self,
+    *,
+    AccountId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    RegionOptStatusContains: Sequence[RegionOptStatusType] = ...,  # (1)
+) -> ListRegionsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: RegionOptStatusType](./literals.md#regionoptstatustype) 
+2. See [:material-code-braces: ListRegionsResponseTypeDef](./type_defs.md#listregionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRegionsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.list_regions(**kwargs)
+```
+
+1. See [:material-code-braces: ListRegionsRequestRequestTypeDef](./type_defs.md#listregionsrequestrequesttypedef) 
 
 ### put\_alternate\_contact
 

@@ -779,6 +779,40 @@ parent.list_long_term_pricing(**kwargs)
 
 1. See [:material-code-braces: ListLongTermPricingRequestRequestTypeDef](./type_defs.md#listlongtermpricingrequestrequesttypedef) 
 
+### list\_service\_versions
+
+Lists all supported versions for Snow on-device services.
+
+Type annotations and code completion for `#!python boto3.client("snowball").list_service_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_service_versions)
+
+```python title="Method definition"
+def list_service_versions(
+    self,
+    *,
+    ServiceName: ServiceNameType,  # (1)
+    DependentServices: Sequence[DependentServiceTypeDef] = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListServiceVersionsResultTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
+2. See [:material-code-braces: DependentServiceTypeDef](./type_defs.md#dependentservicetypedef) 
+3. See [:material-code-braces: ListServiceVersionsResultTypeDef](./type_defs.md#listserviceversionsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceVersionsRequestRequestTypeDef = {  # (1)
+    "ServiceName": ...,
+}
+
+parent.list_service_versions(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceVersionsRequestRequestTypeDef](./type_defs.md#listserviceversionsrequestrequesttypedef) 
+
 ### update\_cluster
 
 While a cluster's `ClusterState` value is in the `AwaitingQuorum` state, you can

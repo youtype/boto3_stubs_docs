@@ -78,6 +78,23 @@ class DeleteAlternateContactRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
+## DisableRegionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import DisableRegionRequestRequestTypeDef
+
+def get_value() -> DisableRegionRequestRequestTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class DisableRegionRequestRequestTypeDef(TypedDict):
+    RegionName: str,
+    AccountId: NotRequired[str],
+```
+
 ## ResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -100,6 +117,23 @@ class ResponseMetadataTypeDef(TypedDict):
     HTTPStatusCode: int,
     HTTPHeaders: Dict[str, str],
     RetryAttempts: int,
+```
+
+## EnableRegionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import EnableRegionRequestRequestTypeDef
+
+def get_value() -> EnableRegionRequestRequestTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class EnableRegionRequestRequestTypeDef(TypedDict):
+    RegionName: str,
+    AccountId: NotRequired[str],
 ```
 
 ## GetAlternateContactRequestRequestTypeDef
@@ -136,6 +170,61 @@ class GetContactInformationRequestRequestTypeDef(TypedDict):
     AccountId: NotRequired[str],
 ```
 
+## GetRegionOptStatusRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import GetRegionOptStatusRequestRequestTypeDef
+
+def get_value() -> GetRegionOptStatusRequestRequestTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetRegionOptStatusRequestRequestTypeDef(TypedDict):
+    RegionName: str,
+    AccountId: NotRequired[str],
+```
+
+## ListRegionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import ListRegionsRequestRequestTypeDef
+
+def get_value() -> ListRegionsRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRegionsRequestRequestTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    RegionOptStatusContains: NotRequired[Sequence[RegionOptStatusType]],  # (1)
+```
+
+1. See [:material-code-brackets: RegionOptStatusType](./literals.md#regionoptstatustype) 
+## RegionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import RegionTypeDef
+
+def get_value() -> RegionTypeDef:
+    return {
+        "RegionName": ...,
+    }
+```
+
+```python title="Definition"
+class RegionTypeDef(TypedDict):
+    RegionName: NotRequired[str],
+    RegionOptStatus: NotRequired[RegionOptStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: RegionOptStatusType](./literals.md#regionoptstatustype) 
 ## PutAlternateContactRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -236,4 +325,48 @@ class GetContactInformationResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ContactInformationTypeDef](./type_defs.md#contactinformationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRegionOptStatusResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import GetRegionOptStatusResponseTypeDef
+
+def get_value() -> GetRegionOptStatusResponseTypeDef:
+    return {
+        "RegionName": ...,
+        "RegionOptStatus": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetRegionOptStatusResponseTypeDef(TypedDict):
+    RegionName: str,
+    RegionOptStatus: RegionOptStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-brackets: RegionOptStatusType](./literals.md#regionoptstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRegionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_account.type_defs import ListRegionsResponseTypeDef
+
+def get_value() -> ListRegionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Regions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListRegionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Regions: List[RegionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RegionTypeDef](./type_defs.md#regiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

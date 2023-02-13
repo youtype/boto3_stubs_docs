@@ -23,6 +23,24 @@ AlternateContactTypeType = Literal[
     "SECURITY",
 ]
 ```
+## RegionOptStatusType
+
+```python title="Usage Example"
+from mypy_boto3_account.literals import RegionOptStatusType
+
+def get_value() -> RegionOptStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+RegionOptStatusType = Literal[
+    "DISABLED",
+    "DISABLING",
+    "ENABLED",
+    "ENABLED_BY_DEFAULT",
+    "ENABLING",
+]
+```
 ## AccountServiceName
 
 ```python title="Usage Example"
