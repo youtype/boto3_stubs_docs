@@ -460,7 +460,9 @@ def get_value() -> SmbVersionType:
 ```python title="Definition"
 SmbVersionType = Literal[
     "AUTOMATIC",
+    "SMB1",
     "SMB2",
+    "SMB2_0",
     "SMB3",
 ]
 ```

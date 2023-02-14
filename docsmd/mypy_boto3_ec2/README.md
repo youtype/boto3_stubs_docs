@@ -639,6 +639,7 @@ def get_value() -> AcceleratorManufacturerType:
 - [GetTransitGatewayRouteTableAssociationsPaginatorName](./literals.md#gettransitgatewayroutetableassociationspaginatorname)
 - [GetTransitGatewayRouteTablePropagationsPaginatorName](./literals.md#gettransitgatewayroutetablepropagationspaginatorname)
 - [GetVpnConnectionDeviceTypesPaginatorName](./literals.md#getvpnconnectiondevicetypespaginatorname)
+- [HostMaintenanceType](./literals.md#hostmaintenancetype)
 - [HostRecoveryType](./literals.md#hostrecoverytype)
 - [HostTenancyType](./literals.md#hosttenancytype)
 - [HostnameTypeType](./literals.md#hostnametypetype)

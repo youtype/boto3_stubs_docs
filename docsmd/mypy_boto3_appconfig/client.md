@@ -322,6 +322,7 @@ def create_hosted_configuration_version(
     ContentType: str,
     Description: str = ...,
     LatestVersionNumber: int = ...,
+    VersionLabel: str = ...,
 ) -> HostedConfigurationVersionTypeDef:  # (1)
     ...
 ```
@@ -1092,6 +1093,7 @@ def list_hosted_configuration_versions(
     ConfigurationProfileId: str,
     MaxResults: int = ...,
     NextToken: str = ...,
+    VersionLabel: str = ...,
 ) -> HostedConfigurationVersionsTypeDef:  # (1)
     ...
 ```

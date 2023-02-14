@@ -3642,6 +3642,21 @@ GetVpnConnectionDeviceTypesPaginatorName = Literal[
     "get_vpn_connection_device_types",
 ]
 ```
+## HostMaintenanceType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import HostMaintenanceType
+
+def get_value() -> HostMaintenanceType:
+    return "off"
+```
+
+```python title="Definition"
+HostMaintenanceType = Literal[
+    "off",
+    "on",
+]
+```
 ## HostRecoveryType
 
 ```python title="Usage Example"

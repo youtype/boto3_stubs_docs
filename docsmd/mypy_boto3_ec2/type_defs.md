@@ -11071,10 +11071,12 @@ class ModifyHostsRequestRequestTypeDef(TypedDict):
     HostRecovery: NotRequired[HostRecoveryType],  # (2)
     InstanceType: NotRequired[str],
     InstanceFamily: NotRequired[str],
+    HostMaintenance: NotRequired[HostMaintenanceType],  # (3)
 ```
 
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 
 2. See [:material-code-brackets: HostRecoveryType](./literals.md#hostrecoverytype) 
+3. See [:material-code-brackets: HostMaintenanceType](./literals.md#hostmaintenancetype) 
 ## ModifyIdFormatRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -34269,11 +34271,13 @@ class AllocateHostsRequestRequestTypeDef(TypedDict):
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
     HostRecovery: NotRequired[HostRecoveryType],  # (3)
     OutpostArn: NotRequired[str],
+    HostMaintenance: NotRequired[HostMaintenanceType],  # (4)
 ```
 
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 3. See [:material-code-brackets: HostRecoveryType](./literals.md#hostrecoverytype) 
+4. See [:material-code-brackets: HostMaintenanceType](./literals.md#hostmaintenancetype) 
 ## AssociateIpamResourceDiscoveryRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -37177,6 +37181,7 @@ class HostTypeDef(TypedDict):
     AvailabilityZoneId: NotRequired[str],
     MemberOfServiceLinkedResourceGroup: NotRequired[bool],
     OutpostArn: NotRequired[str],
+    HostMaintenance: NotRequired[HostMaintenanceType],  # (9)
 ```
 
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 
@@ -37187,6 +37192,7 @@ class HostTypeDef(TypedDict):
 6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 7. See [:material-code-brackets: HostRecoveryType](./literals.md#hostrecoverytype) 
 8. See [:material-code-brackets: AllowsMultipleInstanceTypesType](./literals.md#allowsmultipleinstancetypestype) 
+9. See [:material-code-brackets: HostMaintenanceType](./literals.md#hostmaintenancetype) 
 ## CreateImageRequestInstanceCreateImageTypeDef
 
 ```python title="Usage Example"

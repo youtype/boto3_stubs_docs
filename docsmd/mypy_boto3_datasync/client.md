@@ -503,8 +503,8 @@ parent.create_location_s3(**kwargs)
 
 ### create\_location\_smb
 
-Defines a file system on a Server Message Block (SMB) server that can be read
-from or written to.
+Creates an endpoint for a Server Message Block (SMB) file server that DataSync
+can access for a transfer.
 
 Type annotations and code completion for `#!python boto3.client("datasync").create_location_smb` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb)
@@ -673,8 +673,8 @@ parent.delete_task(**kwargs)
 
 ### describe\_agent
 
-Returns metadata such as the name, the network interfaces, and the status (that
-is, whether the agent is running or not) for an agent.
+Returns metadata about an DataSync agent, such as its name, endpoint type, and
+status.
 
 Type annotations and code completion for `#!python boto3.client("datasync").describe_agent` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent)
@@ -1075,8 +1075,8 @@ def generate_presigned_url(
 
 ### list\_agents
 
-Returns a list of agents owned by an Amazon Web Services account in the Amazon
-Web Services Region specified in the request.
+Returns a list of DataSync agents that belong to an Amazon Web Services account
+in the Amazon Web Services Region specified in the request.
 
 Type annotations and code completion for `#!python boto3.client("datasync").list_agents` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents)

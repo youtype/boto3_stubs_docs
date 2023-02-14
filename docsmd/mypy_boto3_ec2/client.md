@@ -355,14 +355,16 @@ def allocate_hosts(
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
     HostRecovery: HostRecoveryType = ...,  # (3)
     OutpostArn: str = ...,
-) -> AllocateHostsResultTypeDef:  # (4)
+    HostMaintenance: HostMaintenanceType = ...,  # (4)
+) -> AllocateHostsResultTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 
 2. See [:material-code-braces: TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef) 
 3. See [:material-code-brackets: HostRecoveryType](./literals.md#hostrecoverytype) 
-4. See [:material-code-braces: AllocateHostsResultTypeDef](./type_defs.md#allocatehostsresulttypedef) 
+4. See [:material-code-brackets: HostMaintenanceType](./literals.md#hostmaintenancetype) 
+5. See [:material-code-braces: AllocateHostsResultTypeDef](./type_defs.md#allocatehostsresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -15941,13 +15943,15 @@ def modify_hosts(
     HostRecovery: HostRecoveryType = ...,  # (2)
     InstanceType: str = ...,
     InstanceFamily: str = ...,
-) -> ModifyHostsResultTypeDef:  # (3)
+    HostMaintenance: HostMaintenanceType = ...,  # (3)
+) -> ModifyHostsResultTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: AutoPlacementType](./literals.md#autoplacementtype) 
 2. See [:material-code-brackets: HostRecoveryType](./literals.md#hostrecoverytype) 
-3. See [:material-code-braces: ModifyHostsResultTypeDef](./type_defs.md#modifyhostsresulttypedef) 
+3. See [:material-code-brackets: HostMaintenanceType](./literals.md#hostmaintenancetype) 
+4. See [:material-code-braces: ModifyHostsResultTypeDef](./type_defs.md#modifyhostsresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

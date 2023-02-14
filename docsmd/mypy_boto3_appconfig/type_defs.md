@@ -272,6 +272,7 @@ class CreateHostedConfigurationVersionRequestRequestTypeDef(TypedDict):
     ContentType: str,
     Description: NotRequired[str],
     LatestVersionNumber: NotRequired[int],
+    VersionLabel: NotRequired[str],
 ```
 
 ## DeleteApplicationRequestRequestTypeDef
@@ -668,6 +669,7 @@ class HostedConfigurationVersionSummaryTypeDef(TypedDict):
     VersionNumber: NotRequired[int],
     Description: NotRequired[str],
     ContentType: NotRequired[str],
+    VersionLabel: NotRequired[str],
 ```
 
 ## ListApplicationsRequestRequestTypeDef
@@ -817,6 +819,7 @@ class ListHostedConfigurationVersionsRequestRequestTypeDef(TypedDict):
     ConfigurationProfileId: str,
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+    VersionLabel: NotRequired[str],
 ```
 
 ## ListTagsForResourceRequestRequestTypeDef
@@ -1158,6 +1161,7 @@ def get_value() -> HostedConfigurationVersionTypeDef:
         "Description": ...,
         "Content": ...,
         "ContentType": ...,
+        "VersionLabel": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1170,6 +1174,7 @@ class HostedConfigurationVersionTypeDef(TypedDict):
     Description: str,
     Content: StreamingBody,
     ContentType: str,
+    VersionLabel: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
