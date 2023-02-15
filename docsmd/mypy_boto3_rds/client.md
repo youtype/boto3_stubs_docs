@@ -419,7 +419,8 @@ def can_paginate(
 
 ### cancel\_export\_task
 
-Cancels an export task in progress that is exporting a snapshot to Amazon S3.
+Cancels an export task in progress that is exporting a snapshot or cluster to
+Amazon S3.
 
 Type annotations and code completion for `#!python boto3.client("rds").cancel_export_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task)
@@ -2903,7 +2904,7 @@ parent.describe_events(**kwargs)
 
 ### describe\_export\_tasks
 
-Returns information about a snapshot export to Amazon S3.
+Returns information about a snapshot or cluster export to Amazon S3.
 
 Type annotations and code completion for `#!python boto3.client("rds").describe_export_tasks` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_export_tasks)
@@ -5131,7 +5132,7 @@ parent.start_db_instance_automated_backups_replication(**kwargs)
 
 ### start\_export\_task
 
-Starts an export of a snapshot to Amazon S3.
+Starts an export of DB snapshot or DB cluster data to Amazon S3.
 
 Type annotations and code completion for `#!python boto3.client("rds").start_export_task` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_export_task)

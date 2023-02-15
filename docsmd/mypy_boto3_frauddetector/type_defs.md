@@ -78,6 +78,27 @@ class AggregatedVariablesImpactExplanationTypeDef(TypedDict):
     logOddsImpact: NotRequired[float],
 ```
 
+## AllowDenyListTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import AllowDenyListTypeDef
+
+def get_value() -> AllowDenyListTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class AllowDenyListTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    variableType: NotRequired[str],
+    createdTime: NotRequired[str],
+    updatedTime: NotRequired[str],
+    arn: NotRequired[str],
+```
+
 ## BatchCreateVariableErrorTypeDef
 
 ```python title="Usage Example"
@@ -571,6 +592,22 @@ def get_value() -> DeleteLabelRequestRequestTypeDef:
 
 ```python title="Definition"
 class DeleteLabelRequestRequestTypeDef(TypedDict):
+    name: str,
+```
+
+## DeleteListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import DeleteListRequestRequestTypeDef
+
+def get_value() -> DeleteListRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteListRequestRequestTypeDef(TypedDict):
     name: str,
 ```
 
@@ -1210,6 +1247,42 @@ class LabelTypeDef(TypedDict):
     arn: NotRequired[str],
 ```
 
+## GetListElementsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetListElementsRequestRequestTypeDef
+
+def get_value() -> GetListElementsRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetListElementsRequestRequestTypeDef(TypedDict):
+    name: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
+## GetListsMetadataRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetListsMetadataRequestRequestTypeDef
+
+def get_value() -> GetListsMetadataRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetListsMetadataRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
+
 ## GetModelVersionRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1658,6 +1731,27 @@ class UpdateEventLabelRequestRequestTypeDef(TypedDict):
     labelTimestamp: str,
 ```
 
+## UpdateListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import UpdateListRequestRequestTypeDef
+
+def get_value() -> UpdateListRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateListRequestRequestTypeDef(TypedDict):
+    name: str,
+    elements: NotRequired[Sequence[str]],
+    description: NotRequired[str],
+    updateMode: NotRequired[ListUpdateModeType],  # (1)
+    variableType: NotRequired[str],
+```
+
+1. See [:material-code-brackets: ListUpdateModeType](./literals.md#listupdatemodetype) 
 ## UpdateModelRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1808,6 +1902,27 @@ class CreateBatchPredictionJobRequestRequestTypeDef(TypedDict):
     detectorName: str,
     iamRoleArn: str,
     detectorVersion: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateListRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import CreateListRequestRequestTypeDef
+
+def get_value() -> CreateListRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class CreateListRequestRequestTypeDef(TypedDict):
+    name: str,
+    elements: NotRequired[Sequence[str]],
+    variableType: NotRequired[str],
+    description: NotRequired[str],
     tags: NotRequired[Sequence[TagTypeDef]],  # (1)
 ```
 
@@ -2146,6 +2261,49 @@ class GetDeleteEventsByEventTypeStatusResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AsyncJobStatusType](./literals.md#asyncjobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetListElementsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetListElementsResultTypeDef
+
+def get_value() -> GetListElementsResultTypeDef:
+    return {
+        "elements": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetListElementsResultTypeDef(TypedDict):
+    elements: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetListsMetadataResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.type_defs import GetListsMetadataResultTypeDef
+
+def get_value() -> GetListsMetadataResultTypeDef:
+    return {
+        "lists": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetListsMetadataResultTypeDef(TypedDict):
+    lists: List[AllowDenyListTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AllowDenyListTypeDef](./type_defs.md#allowdenylisttypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceResultTypeDef
 

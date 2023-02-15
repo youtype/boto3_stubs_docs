@@ -929,6 +929,32 @@ class CloudWatchEncryptionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CloudWatchEncryptionModeType](./literals.md#cloudwatchencryptionmodetype) 
+## DirectJDBCSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import DirectJDBCSourceTypeDef
+
+def get_value() -> DirectJDBCSourceTypeDef:
+    return {
+        "Name": ...,
+        "Database": ...,
+        "Table": ...,
+        "ConnectionName": ...,
+        "ConnectionType": ...,
+    }
+```
+
+```python title="Definition"
+class DirectJDBCSourceTypeDef(TypedDict):
+    Name: str,
+    Database: str,
+    Table: str,
+    ConnectionName: str,
+    ConnectionType: JDBCConnectionTypeType,  # (1)
+    RedshiftTmpDir: NotRequired[str],
+```
+
+1. See [:material-code-brackets: JDBCConnectionTypeType](./literals.md#jdbcconnectiontypetype) 
 ## DropDuplicatesTypeDef
 
 ```python title="Usage Example"
@@ -12685,6 +12711,7 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
     S3HudiSource: NotRequired[S3HudiSourceTypeDef],  # (55)
     S3HudiCatalogTarget: NotRequired[S3HudiCatalogTargetTypeDef],  # (56)
     S3HudiDirectTarget: NotRequired[S3HudiDirectTargetTypeDef],  # (57)
+    DirectJDBCSource: NotRequired[DirectJDBCSourceTypeDef],  # (58)
 ```
 
 1. See [:material-code-braces: AthenaConnectorSourceTypeDef](./type_defs.md#athenaconnectorsourcetypedef) 
@@ -12744,6 +12771,7 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
 55. See [:material-code-braces: S3HudiSourceTypeDef](./type_defs.md#s3hudisourcetypedef) 
 56. See [:material-code-braces: S3HudiCatalogTargetTypeDef](./type_defs.md#s3hudicatalogtargettypedef) 
 57. See [:material-code-braces: S3HudiDirectTargetTypeDef](./type_defs.md#s3hudidirecttargettypedef) 
+58. See [:material-code-braces: DirectJDBCSourceTypeDef](./type_defs.md#directjdbcsourcetypedef) 
 ## GetMLTaskRunsResponseTypeDef
 
 ```python title="Usage Example"

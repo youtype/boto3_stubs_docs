@@ -745,6 +745,41 @@ def ping(
 
 1. See [:material-code-braces: PingResponseTypeDef](./type_defs.md#pingresponsetypedef) 
 
+### start\_network\_resource\_update
+
+Starts an update of the specified network resource.
+
+Type annotations and code completion for `#!python boto3.client("privatenetworks").start_network_resource_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/privatenetworks.html#Private5G.Client.start_network_resource_update)
+
+```python title="Method definition"
+def start_network_resource_update(
+    self,
+    *,
+    networkResourceArn: str,
+    updateType: UpdateTypeType,  # (1)
+    returnReason: str = ...,
+    shippingAddress: AddressTypeDef = ...,  # (2)
+) -> StartNetworkResourceUpdateResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+3. See [:material-code-braces: StartNetworkResourceUpdateResponseTypeDef](./type_defs.md#startnetworkresourceupdateresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartNetworkResourceUpdateRequestRequestTypeDef = {  # (1)
+    "networkResourceArn": ...,
+    "updateType": ...,
+}
+
+parent.start_network_resource_update(**kwargs)
+```
+
+1. See [:material-code-braces: StartNetworkResourceUpdateRequestRequestTypeDef](./type_defs.md#startnetworkresourceupdaterequestrequesttypedef) 
+
 ### tag\_resource
 
 Adds tags to the specified resource.

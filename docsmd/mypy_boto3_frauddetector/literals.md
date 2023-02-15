@@ -104,6 +104,22 @@ LanguageType = Literal[
     "DETECTORPL",
 ]
 ```
+## ListUpdateModeType
+
+```python title="Usage Example"
+from mypy_boto3_frauddetector.literals import ListUpdateModeType
+
+def get_value() -> ListUpdateModeType:
+    return "APPEND"
+```
+
+```python title="Definition"
+ListUpdateModeType = Literal[
+    "APPEND",
+    "REMOVE",
+    "REPLACE",
+]
+```
 ## ModelEndpointStatusType
 
 ```python title="Usage Example"

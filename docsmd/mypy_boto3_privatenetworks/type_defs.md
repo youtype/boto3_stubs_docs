@@ -679,6 +679,48 @@ class ActivateNetworkSiteRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+## ReturnInformationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_privatenetworks.type_defs import ReturnInformationTypeDef
+
+def get_value() -> ReturnInformationTypeDef:
+    return {
+        "replacementOrderArn": ...,
+    }
+```
+
+```python title="Definition"
+class ReturnInformationTypeDef(TypedDict):
+    replacementOrderArn: NotRequired[str],
+    returnReason: NotRequired[str],
+    shippingAddress: NotRequired[AddressTypeDef],  # (1)
+    shippingLabel: NotRequired[str],
+```
+
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+## StartNetworkResourceUpdateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_privatenetworks.type_defs import StartNetworkResourceUpdateRequestRequestTypeDef
+
+def get_value() -> StartNetworkResourceUpdateRequestRequestTypeDef:
+    return {
+        "networkResourceArn": ...,
+        "updateType": ...,
+    }
+```
+
+```python title="Definition"
+class StartNetworkResourceUpdateRequestRequestTypeDef(TypedDict):
+    networkResourceArn: str,
+    updateType: UpdateTypeType,  # (1)
+    returnReason: NotRequired[str],
+    shippingAddress: NotRequired[AddressTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
 ## ConfigureAccessPointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -907,41 +949,6 @@ class NetworkResourceDefinitionTypeDef(TypedDict):
 
 1. See [:material-code-braces: NameValuePairTypeDef](./type_defs.md#namevaluepairtypedef) 
 2. See [:material-code-brackets: NetworkResourceDefinitionTypeType](./literals.md#networkresourcedefinitiontypetype) 
-## NetworkResourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_privatenetworks.type_defs import NetworkResourceTypeDef
-
-def get_value() -> NetworkResourceTypeDef:
-    return {
-        "attributes": ...,
-    }
-```
-
-```python title="Definition"
-class NetworkResourceTypeDef(TypedDict):
-    attributes: NotRequired[List[NameValuePairTypeDef]],  # (1)
-    createdAt: NotRequired[datetime],
-    description: NotRequired[str],
-    health: NotRequired[HealthStatusType],  # (2)
-    model: NotRequired[str],
-    networkArn: NotRequired[str],
-    networkResourceArn: NotRequired[str],
-    networkSiteArn: NotRequired[str],
-    orderArn: NotRequired[str],
-    position: NotRequired[PositionTypeDef],  # (3)
-    serialNumber: NotRequired[str],
-    status: NotRequired[NetworkResourceStatusType],  # (4)
-    statusReason: NotRequired[str],
-    type: NotRequired[NetworkResourceTypeType],  # (5)
-    vendor: NotRequired[str],
-```
-
-1. See [:material-code-braces: NameValuePairTypeDef](./type_defs.md#namevaluepairtypedef) 
-2. See [:material-code-brackets: HealthStatusType](./literals.md#healthstatustype) 
-3. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
-4. See [:material-code-brackets: NetworkResourceStatusType](./literals.md#networkresourcestatustype) 
-5. See [:material-code-brackets: NetworkResourceTypeType](./literals.md#networkresourcetypetype) 
 ## OrderTypeDef
 
 ```python title="Usage Example"
@@ -967,6 +974,43 @@ class OrderTypeDef(TypedDict):
 1. See [:material-code-brackets: AcknowledgmentStatusType](./literals.md#acknowledgmentstatustype) 
 2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
 3. See [:material-code-braces: TrackingInformationTypeDef](./type_defs.md#trackinginformationtypedef) 
+## NetworkResourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_privatenetworks.type_defs import NetworkResourceTypeDef
+
+def get_value() -> NetworkResourceTypeDef:
+    return {
+        "attributes": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkResourceTypeDef(TypedDict):
+    attributes: NotRequired[List[NameValuePairTypeDef]],  # (1)
+    createdAt: NotRequired[datetime],
+    description: NotRequired[str],
+    health: NotRequired[HealthStatusType],  # (2)
+    model: NotRequired[str],
+    networkArn: NotRequired[str],
+    networkResourceArn: NotRequired[str],
+    networkSiteArn: NotRequired[str],
+    orderArn: NotRequired[str],
+    position: NotRequired[PositionTypeDef],  # (3)
+    returnInformation: NotRequired[ReturnInformationTypeDef],  # (4)
+    serialNumber: NotRequired[str],
+    status: NotRequired[NetworkResourceStatusType],  # (5)
+    statusReason: NotRequired[str],
+    type: NotRequired[NetworkResourceTypeType],  # (6)
+    vendor: NotRequired[str],
+```
+
+1. See [:material-code-braces: NameValuePairTypeDef](./type_defs.md#namevaluepairtypedef) 
+2. See [:material-code-brackets: HealthStatusType](./literals.md#healthstatustype) 
+3. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
+4. See [:material-code-braces: ReturnInformationTypeDef](./type_defs.md#returninformationtypedef) 
+5. See [:material-code-brackets: NetworkResourceStatusType](./literals.md#networkresourcestatustype) 
+6. See [:material-code-brackets: NetworkResourceTypeType](./literals.md#networkresourcetypetype) 
 ## SitePlanTypeDef
 
 ```python title="Usage Example"
@@ -986,6 +1030,70 @@ class SitePlanTypeDef(TypedDict):
 
 1. See [:material-code-braces: NameValuePairTypeDef](./type_defs.md#namevaluepairtypedef) 
 2. See [:material-code-braces: NetworkResourceDefinitionTypeDef](./type_defs.md#networkresourcedefinitiontypedef) 
+## AcknowledgeOrderReceiptResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_privatenetworks.type_defs import AcknowledgeOrderReceiptResponseTypeDef
+
+def get_value() -> AcknowledgeOrderReceiptResponseTypeDef:
+    return {
+        "order": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class AcknowledgeOrderReceiptResponseTypeDef(TypedDict):
+    order: OrderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOrderResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_privatenetworks.type_defs import GetOrderResponseTypeDef
+
+def get_value() -> GetOrderResponseTypeDef:
+    return {
+        "order": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetOrderResponseTypeDef(TypedDict):
+    order: OrderTypeDef,  # (1)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOrdersResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_privatenetworks.type_defs import ListOrdersResponseTypeDef
+
+def get_value() -> ListOrdersResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "orders": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrdersResponseTypeDef(TypedDict):
+    nextToken: str,
+    orders: List[OrderTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigureAccessPointResponseTypeDef
 
 ```python title="Usage Example"
@@ -1050,69 +1158,25 @@ class ListNetworkResourcesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: NetworkResourceTypeDef](./type_defs.md#networkresourcetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## AcknowledgeOrderReceiptResponseTypeDef
+## StartNetworkResourceUpdateResponseTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_privatenetworks.type_defs import AcknowledgeOrderReceiptResponseTypeDef
+from mypy_boto3_privatenetworks.type_defs import StartNetworkResourceUpdateResponseTypeDef
 
-def get_value() -> AcknowledgeOrderReceiptResponseTypeDef:
+def get_value() -> StartNetworkResourceUpdateResponseTypeDef:
     return {
-        "order": ...,
+        "networkResource": ...,
         "ResponseMetadata": ...,
     }
 ```
 
 ```python title="Definition"
-class AcknowledgeOrderReceiptResponseTypeDef(TypedDict):
-    order: OrderTypeDef,  # (1)
+class StartNetworkResourceUpdateResponseTypeDef(TypedDict):
+    networkResource: NetworkResourceTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## GetOrderResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_privatenetworks.type_defs import GetOrderResponseTypeDef
-
-def get_value() -> GetOrderResponseTypeDef:
-    return {
-        "order": ...,
-        "tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class GetOrderResponseTypeDef(TypedDict):
-    order: OrderTypeDef,  # (1)
-    tags: Dict[str, str],
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListOrdersResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_privatenetworks.type_defs import ListOrdersResponseTypeDef
-
-def get_value() -> ListOrdersResponseTypeDef:
-    return {
-        "nextToken": ...,
-        "orders": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListOrdersResponseTypeDef(TypedDict):
-    nextToken: str,
-    orders: List[OrderTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
+1. See [:material-code-braces: NetworkResourceTypeDef](./type_defs.md#networkresourcetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateNetworkSiteRequestRequestTypeDef
 

@@ -1450,6 +1450,82 @@ class PutPermissionPolicyRequestRequestTypeDef(TypedDict):
     Policy: str,
 ```
 
+## ResponseInspectionBodyContainsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ResponseInspectionBodyContainsTypeDef
+
+def get_value() -> ResponseInspectionBodyContainsTypeDef:
+    return {
+        "SuccessStrings": ...,
+        "FailureStrings": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseInspectionBodyContainsTypeDef(TypedDict):
+    SuccessStrings: Sequence[str],
+    FailureStrings: Sequence[str],
+```
+
+## ResponseInspectionHeaderTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ResponseInspectionHeaderTypeDef
+
+def get_value() -> ResponseInspectionHeaderTypeDef:
+    return {
+        "Name": ...,
+        "SuccessValues": ...,
+        "FailureValues": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseInspectionHeaderTypeDef(TypedDict):
+    Name: str,
+    SuccessValues: Sequence[str],
+    FailureValues: Sequence[str],
+```
+
+## ResponseInspectionJsonTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ResponseInspectionJsonTypeDef
+
+def get_value() -> ResponseInspectionJsonTypeDef:
+    return {
+        "Identifier": ...,
+        "SuccessValues": ...,
+        "FailureValues": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseInspectionJsonTypeDef(TypedDict):
+    Identifier: str,
+    SuccessValues: Sequence[str],
+    FailureValues: Sequence[str],
+```
+
+## ResponseInspectionStatusCodeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ResponseInspectionStatusCodeTypeDef
+
+def get_value() -> ResponseInspectionStatusCodeTypeDef:
+    return {
+        "SuccessCodes": ...,
+        "FailureCodes": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseInspectionStatusCodeTypeDef(TypedDict):
+    SuccessCodes: Sequence[int],
+    FailureCodes: Sequence[int],
+```
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2461,30 +2537,29 @@ class ListMobileSdkReleasesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ReleaseSummaryTypeDef](./type_defs.md#releasesummarytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ManagedRuleGroupConfigTypeDef
+## RequestInspectionTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_wafv2.type_defs import ManagedRuleGroupConfigTypeDef
+from mypy_boto3_wafv2.type_defs import RequestInspectionTypeDef
 
-def get_value() -> ManagedRuleGroupConfigTypeDef:
+def get_value() -> RequestInspectionTypeDef:
     return {
-        "LoginPath": ...,
+        "PayloadType": ...,
+        "UsernameField": ...,
+        "PasswordField": ...,
     }
 ```
 
 ```python title="Definition"
-class ManagedRuleGroupConfigTypeDef(TypedDict):
-    LoginPath: NotRequired[str],
-    PayloadType: NotRequired[PayloadTypeType],  # (1)
-    UsernameField: NotRequired[UsernameFieldTypeDef],  # (2)
-    PasswordField: NotRequired[PasswordFieldTypeDef],  # (3)
-    AWSManagedRulesBotControlRuleSet: NotRequired[AWSManagedRulesBotControlRuleSetTypeDef],  # (4)
+class RequestInspectionTypeDef(TypedDict):
+    PayloadType: PayloadTypeType,  # (1)
+    UsernameField: UsernameFieldTypeDef,  # (2)
+    PasswordField: PasswordFieldTypeDef,  # (3)
 ```
 
 1. See [:material-code-brackets: PayloadTypeType](./literals.md#payloadtypetype) 
 2. See [:material-code-braces: UsernameFieldTypeDef](./type_defs.md#usernamefieldtypedef) 
 3. See [:material-code-braces: PasswordFieldTypeDef](./type_defs.md#passwordfieldtypedef) 
-4. See [:material-code-braces: AWSManagedRulesBotControlRuleSetTypeDef](./type_defs.md#awsmanagedrulesbotcontrolrulesettypedef) 
 ## ManagedRuleSetTypeDef
 
 ```python title="Usage Example"
@@ -2536,6 +2611,29 @@ class PutManagedRuleSetVersionsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 2. See [:material-code-braces: VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef) 
+## ResponseInspectionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ResponseInspectionTypeDef
+
+def get_value() -> ResponseInspectionTypeDef:
+    return {
+        "StatusCode": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseInspectionTypeDef(TypedDict):
+    StatusCode: NotRequired[ResponseInspectionStatusCodeTypeDef],  # (1)
+    Header: NotRequired[ResponseInspectionHeaderTypeDef],  # (2)
+    BodyContains: NotRequired[ResponseInspectionBodyContainsTypeDef],  # (3)
+    Json: NotRequired[ResponseInspectionJsonTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: ResponseInspectionStatusCodeTypeDef](./type_defs.md#responseinspectionstatuscodetypedef) 
+2. See [:material-code-braces: ResponseInspectionHeaderTypeDef](./type_defs.md#responseinspectionheadertypedef) 
+3. See [:material-code-braces: ResponseInspectionBodyContainsTypeDef](./type_defs.md#responseinspectionbodycontainstypedef) 
+4. See [:material-code-braces: ResponseInspectionJsonTypeDef](./type_defs.md#responseinspectionjsontypedef) 
 ## FilterTypeDef
 
 ```python title="Usage Example"
@@ -2793,6 +2891,26 @@ class GetManagedRuleSetResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ManagedRuleSetTypeDef](./type_defs.md#managedrulesettypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AWSManagedRulesATPRuleSetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import AWSManagedRulesATPRuleSetTypeDef
+
+def get_value() -> AWSManagedRulesATPRuleSetTypeDef:
+    return {
+        "LoginPath": ...,
+    }
+```
+
+```python title="Definition"
+class AWSManagedRulesATPRuleSetTypeDef(TypedDict):
+    LoginPath: str,
+    RequestInspection: NotRequired[RequestInspectionTypeDef],  # (1)
+    ResponseInspection: NotRequired[ResponseInspectionTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: RequestInspectionTypeDef](./type_defs.md#requestinspectiontypedef) 
+2. See [:material-code-braces: ResponseInspectionTypeDef](./type_defs.md#responseinspectiontypedef) 
 ## LoggingFilterTypeDef
 
 ```python title="Usage Example"
@@ -3036,6 +3154,32 @@ class XssMatchStatementTypeDef(TypedDict):
 
 1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
 2. See [:material-code-braces: TextTransformationTypeDef](./type_defs.md#texttransformationtypedef) 
+## ManagedRuleGroupConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_wafv2.type_defs import ManagedRuleGroupConfigTypeDef
+
+def get_value() -> ManagedRuleGroupConfigTypeDef:
+    return {
+        "LoginPath": ...,
+    }
+```
+
+```python title="Definition"
+class ManagedRuleGroupConfigTypeDef(TypedDict):
+    LoginPath: NotRequired[str],
+    PayloadType: NotRequired[PayloadTypeType],  # (1)
+    UsernameField: NotRequired[UsernameFieldTypeDef],  # (2)
+    PasswordField: NotRequired[PasswordFieldTypeDef],  # (3)
+    AWSManagedRulesBotControlRuleSet: NotRequired[AWSManagedRulesBotControlRuleSetTypeDef],  # (4)
+    AWSManagedRulesATPRuleSet: NotRequired[AWSManagedRulesATPRuleSetTypeDef],  # (5)
+```
+
+1. See [:material-code-brackets: PayloadTypeType](./literals.md#payloadtypetype) 
+2. See [:material-code-braces: UsernameFieldTypeDef](./type_defs.md#usernamefieldtypedef) 
+3. See [:material-code-braces: PasswordFieldTypeDef](./type_defs.md#passwordfieldtypedef) 
+4. See [:material-code-braces: AWSManagedRulesBotControlRuleSetTypeDef](./type_defs.md#awsmanagedrulesbotcontrolrulesettypedef) 
+5. See [:material-code-braces: AWSManagedRulesATPRuleSetTypeDef](./type_defs.md#awsmanagedrulesatprulesettypedef) 
 ## LoggingConfigurationTypeDef
 
 ```python title="Usage Example"

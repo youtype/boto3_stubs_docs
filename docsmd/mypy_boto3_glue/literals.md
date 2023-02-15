@@ -812,6 +812,24 @@ HudiTargetCompressionTypeType = Literal[
     "uncompressed",
 ]
 ```
+## JDBCConnectionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import JDBCConnectionTypeType
+
+def get_value() -> JDBCConnectionTypeType:
+    return "mysql"
+```
+
+```python title="Definition"
+JDBCConnectionTypeType = Literal[
+    "mysql",
+    "oracle",
+    "postgresql",
+    "redshift",
+    "sqlserver",
+]
+```
 ## JDBCDataTypeType
 
 ```python title="Usage Example"

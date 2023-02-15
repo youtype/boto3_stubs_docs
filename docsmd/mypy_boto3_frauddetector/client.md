@@ -322,6 +322,39 @@ parent.create_detector_version(**kwargs)
 
 1. See [:material-code-braces: CreateDetectorVersionRequestRequestTypeDef](./type_defs.md#createdetectorversionrequestrequesttypedef) 
 
+### create\_list
+
+Creates a list.
+
+Type annotations and code completion for `#!python boto3.client("frauddetector").create_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_list)
+
+```python title="Method definition"
+def create_list(
+    self,
+    *,
+    name: str,
+    elements: Sequence[str] = ...,
+    variableType: str = ...,
+    description: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateListRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.create_list(**kwargs)
+```
+
+1. See [:material-code-braces: CreateListRequestRequestTypeDef](./type_defs.md#createlistrequestrequesttypedef) 
+
 ### create\_model
 
 Creates a model using the specified model type.
@@ -768,6 +801,34 @@ parent.delete_label(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteLabelRequestRequestTypeDef](./type_defs.md#deletelabelrequestrequesttypedef) 
+
+### delete\_list
+
+Deletes the list, provided it is not used in a rule.
+
+Type annotations and code completion for `#!python boto3.client("frauddetector").delete_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_list)
+
+```python title="Method definition"
+def delete_list(
+    self,
+    *,
+    name: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteListRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.delete_list(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteListRequestRequestTypeDef](./type_defs.md#deletelistrequestrequesttypedef) 
 
 ### delete\_model
 
@@ -1410,6 +1471,69 @@ parent.get_labels(**kwargs)
 ```
 
 1. See [:material-code-braces: GetLabelsRequestRequestTypeDef](./type_defs.md#getlabelsrequestrequesttypedef) 
+
+### get\_list\_elements
+
+Gets all the elements in the specified list.
+
+Type annotations and code completion for `#!python boto3.client("frauddetector").get_list_elements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_list_elements)
+
+```python title="Method definition"
+def get_list_elements(
+    self,
+    *,
+    name: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetListElementsResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetListElementsResultTypeDef](./type_defs.md#getlistelementsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetListElementsRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.get_list_elements(**kwargs)
+```
+
+1. See [:material-code-braces: GetListElementsRequestRequestTypeDef](./type_defs.md#getlistelementsrequestrequesttypedef) 
+
+### get\_lists\_metadata
+
+Gets the metadata of either all the lists under the account or the specified
+list.
+
+Type annotations and code completion for `#!python boto3.client("frauddetector").get_lists_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_lists_metadata)
+
+```python title="Method definition"
+def get_lists_metadata(
+    self,
+    *,
+    name: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetListsMetadataResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetListsMetadataResultTypeDef](./type_defs.md#getlistsmetadataresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetListsMetadataRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.get_lists_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: GetListsMetadataRequestRequestTypeDef](./type_defs.md#getlistsmetadatarequestrequesttypedef) 
 
 ### get\_model\_version
 
@@ -2120,6 +2244,39 @@ parent.update_event_label(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateEventLabelRequestRequestTypeDef](./type_defs.md#updateeventlabelrequestrequesttypedef) 
+
+### update\_list
+
+Updates a list.
+
+Type annotations and code completion for `#!python boto3.client("frauddetector").update_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_list)
+
+```python title="Method definition"
+def update_list(
+    self,
+    *,
+    name: str,
+    elements: Sequence[str] = ...,
+    description: str = ...,
+    updateMode: ListUpdateModeType = ...,  # (1)
+    variableType: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: ListUpdateModeType](./literals.md#listupdatemodetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateListRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.update_list(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateListRequestRequestTypeDef](./type_defs.md#updatelistrequestrequesttypedef) 
 
 ### update\_model
 

@@ -225,6 +225,7 @@ def get_value() -> NetworkResourceStatusType:
 ```python title="Definition"
 NetworkResourceStatusType = Literal[
     "AVAILABLE",
+    "CREATING_SHIPPING_LABEL",
     "DELETED",
     "DELETING",
     "PENDING",
@@ -311,6 +312,21 @@ def get_value() -> OrderFilterKeysType:
 OrderFilterKeysType = Literal[
     "NETWORK_SITE",
     "STATUS",
+]
+```
+## UpdateTypeType
+
+```python title="Usage Example"
+from mypy_boto3_privatenetworks.literals import UpdateTypeType
+
+def get_value() -> UpdateTypeType:
+    return "REPLACE"
+```
+
+```python title="Definition"
+UpdateTypeType = Literal[
+    "REPLACE",
+    "RETURN",
 ]
 ```
 ## Private5GServiceName
