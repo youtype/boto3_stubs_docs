@@ -134,27 +134,29 @@ def create_workspace(
     permissionType: PermissionTypeType,  # (3)
     clientToken: str = ...,
     configuration: str = ...,
+    networkAccessControl: NetworkAccessConfigurationTypeDef = ...,  # (4)
     organizationRoleName: str = ...,
     stackSetName: str = ...,
     tags: Mapping[str, str] = ...,
-    vpcConfiguration: VpcConfigurationTypeDef = ...,  # (4)
-    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (5)
+    vpcConfiguration: VpcConfigurationTypeDef = ...,  # (5)
+    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (6)
     workspaceDescription: str = ...,
     workspaceName: str = ...,
-    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (6)
+    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (7)
     workspaceOrganizationalUnits: Sequence[str] = ...,
     workspaceRoleArn: str = ...,
-) -> CreateWorkspaceResponseTypeDef:  # (7)
+) -> CreateWorkspaceResponseTypeDef:  # (8)
     ...
 ```
 
 1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
 2. See [:material-code-brackets: AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype) 
 3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-4. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
-5. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-6. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
-7. See [:material-code-braces: CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef) 
+4. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
+5. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+6. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+7. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+8. See [:material-code-braces: CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -607,27 +609,30 @@ def update_workspace(
     *,
     workspaceId: str,
     accountAccessType: AccountAccessTypeType = ...,  # (1)
+    networkAccessControl: NetworkAccessConfigurationTypeDef = ...,  # (2)
     organizationRoleName: str = ...,
-    permissionType: PermissionTypeType = ...,  # (2)
+    permissionType: PermissionTypeType = ...,  # (3)
+    removeNetworkAccessConfiguration: bool = ...,
     removeVpcConfiguration: bool = ...,
     stackSetName: str = ...,
-    vpcConfiguration: VpcConfigurationTypeDef = ...,  # (3)
-    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (4)
+    vpcConfiguration: VpcConfigurationTypeDef = ...,  # (4)
+    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (5)
     workspaceDescription: str = ...,
     workspaceName: str = ...,
-    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (5)
+    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (6)
     workspaceOrganizationalUnits: Sequence[str] = ...,
     workspaceRoleArn: str = ...,
-) -> UpdateWorkspaceResponseTypeDef:  # (6)
+) -> UpdateWorkspaceResponseTypeDef:  # (7)
     ...
 ```
 
 1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
-2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-3. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
-4. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
-6. See [:material-code-braces: UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef) 
+2. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
+3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+4. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+5. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+6. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+7. See [:material-code-braces: UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

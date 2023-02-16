@@ -874,24 +874,6 @@ class HadoopStepConfigTypeDef(TypedDict):
     Args: NotRequired[List[str]],
 ```
 
-## InstanceFleetModifyConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_emr.type_defs import InstanceFleetModifyConfigTypeDef
-
-def get_value() -> InstanceFleetModifyConfigTypeDef:
-    return {
-        "InstanceFleetId": ...,
-    }
-```
-
-```python title="Definition"
-class InstanceFleetModifyConfigTypeDef(TypedDict):
-    InstanceFleetId: str,
-    TargetOnDemandCapacity: NotRequired[int],
-    TargetSpotCapacity: NotRequired[int],
-```
-
 ## SpotProvisioningSpecificationTypeDef
 
 ```python title="Usage Example"
@@ -914,6 +896,38 @@ class SpotProvisioningSpecificationTypeDef(TypedDict):
 
 1. See [:material-code-brackets: SpotProvisioningTimeoutActionType](./literals.md#spotprovisioningtimeoutactiontype) 
 2. See [:material-code-brackets: SpotProvisioningAllocationStrategyType](./literals.md#spotprovisioningallocationstrategytype) 
+## OnDemandResizingSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import OnDemandResizingSpecificationTypeDef
+
+def get_value() -> OnDemandResizingSpecificationTypeDef:
+    return {
+        "TimeoutDurationMinutes": ...,
+    }
+```
+
+```python title="Definition"
+class OnDemandResizingSpecificationTypeDef(TypedDict):
+    TimeoutDurationMinutes: int,
+```
+
+## SpotResizingSpecificationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import SpotResizingSpecificationTypeDef
+
+def get_value() -> SpotResizingSpecificationTypeDef:
+    return {
+        "TimeoutDurationMinutes": ...,
+    }
+```
+
+```python title="Definition"
+class SpotResizingSpecificationTypeDef(TypedDict):
+    TimeoutDurationMinutes: int,
+```
+
 ## InstanceFleetStateChangeReasonTypeDef
 
 ```python title="Usage Example"
@@ -2493,25 +2507,25 @@ class HadoopJarStepConfigTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: KeyValueTypeDef](./type_defs.md#keyvaluetypedef) 
-## ModifyInstanceFleetInputRequestTypeDef
+## InstanceFleetResizingSpecificationsTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_emr.type_defs import ModifyInstanceFleetInputRequestTypeDef
+from mypy_boto3_emr.type_defs import InstanceFleetResizingSpecificationsTypeDef
 
-def get_value() -> ModifyInstanceFleetInputRequestTypeDef:
+def get_value() -> InstanceFleetResizingSpecificationsTypeDef:
     return {
-        "ClusterId": ...,
-        "InstanceFleet": ...,
+        "SpotResizeSpecification": ...,
     }
 ```
 
 ```python title="Definition"
-class ModifyInstanceFleetInputRequestTypeDef(TypedDict):
-    ClusterId: str,
-    InstanceFleet: InstanceFleetModifyConfigTypeDef,  # (1)
+class InstanceFleetResizingSpecificationsTypeDef(TypedDict):
+    SpotResizeSpecification: NotRequired[SpotResizingSpecificationTypeDef],  # (1)
+    OnDemandResizeSpecification: NotRequired[OnDemandResizingSpecificationTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef) 
+1. See [:material-code-braces: SpotResizingSpecificationTypeDef](./type_defs.md#spotresizingspecificationtypedef) 
+2. See [:material-code-braces: OnDemandResizingSpecificationTypeDef](./type_defs.md#ondemandresizingspecificationtypedef) 
 ## InstanceFleetStatusTypeDef
 
 ```python title="Usage Example"
@@ -3308,6 +3322,26 @@ class StepConfigTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ActionOnFailureType](./literals.md#actiononfailuretype) 
 2. See [:material-code-braces: HadoopJarStepConfigTypeDef](./type_defs.md#hadoopjarstepconfigtypedef) 
+## InstanceFleetModifyConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import InstanceFleetModifyConfigTypeDef
+
+def get_value() -> InstanceFleetModifyConfigTypeDef:
+    return {
+        "InstanceFleetId": ...,
+    }
+```
+
+```python title="Definition"
+class InstanceFleetModifyConfigTypeDef(TypedDict):
+    InstanceFleetId: str,
+    TargetOnDemandCapacity: NotRequired[int],
+    TargetSpotCapacity: NotRequired[int],
+    ResizeSpecifications: NotRequired[InstanceFleetResizingSpecificationsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: InstanceFleetResizingSpecificationsTypeDef](./type_defs.md#instancefleetresizingspecificationstypedef) 
 ## InstanceGroupModifyConfigTypeDef
 
 ```python title="Usage Example"
@@ -3557,6 +3591,25 @@ class StepDetailTypeDef(TypedDict):
 
 1. See [:material-code-braces: StepConfigTypeDef](./type_defs.md#stepconfigtypedef) 
 2. See [:material-code-braces: StepExecutionStatusDetailTypeDef](./type_defs.md#stepexecutionstatusdetailtypedef) 
+## ModifyInstanceFleetInputRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ModifyInstanceFleetInputRequestTypeDef
+
+def get_value() -> ModifyInstanceFleetInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceFleet": ...,
+    }
+```
+
+```python title="Definition"
+class ModifyInstanceFleetInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceFleet: InstanceFleetModifyConfigTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef) 
 ## ModifyInstanceGroupsInputRequestTypeDef
 
 ```python title="Usage Example"
@@ -3620,12 +3673,14 @@ class InstanceFleetTypeDef(TypedDict):
     ProvisionedSpotCapacity: NotRequired[int],
     InstanceTypeSpecifications: NotRequired[List[InstanceTypeSpecificationTypeDef]],  # (3)
     LaunchSpecifications: NotRequired[InstanceFleetProvisioningSpecificationsTypeDef],  # (4)
+    ResizeSpecifications: NotRequired[InstanceFleetResizingSpecificationsTypeDef],  # (5)
 ```
 
 1. See [:material-code-braces: InstanceFleetStatusTypeDef](./type_defs.md#instancefleetstatustypedef) 
 2. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
 3. See [:material-code-braces: InstanceTypeSpecificationTypeDef](./type_defs.md#instancetypespecificationtypedef) 
 4. See [:material-code-braces: InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef) 
+5. See [:material-code-braces: InstanceFleetResizingSpecificationsTypeDef](./type_defs.md#instancefleetresizingspecificationstypedef) 
 ## ListStepsOutputTypeDef
 
 ```python title="Usage Example"
@@ -3728,11 +3783,13 @@ class InstanceFleetConfigTypeDef(TypedDict):
     TargetSpotCapacity: NotRequired[int],
     InstanceTypeConfigs: NotRequired[Sequence[InstanceTypeConfigTypeDef]],  # (2)
     LaunchSpecifications: NotRequired[InstanceFleetProvisioningSpecificationsTypeDef],  # (3)
+    ResizeSpecifications: NotRequired[InstanceFleetResizingSpecificationsTypeDef],  # (4)
 ```
 
 1. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
 2. See [:material-code-braces: InstanceTypeConfigTypeDef](./type_defs.md#instancetypeconfigtypedef) 
 3. See [:material-code-braces: InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef) 
+4. See [:material-code-braces: InstanceFleetResizingSpecificationsTypeDef](./type_defs.md#instancefleetresizingspecificationstypedef) 
 ## JobFlowDetailTypeDef
 
 ```python title="Usage Example"

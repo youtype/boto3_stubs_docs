@@ -736,7 +736,7 @@ def get_block_public_access_configuration(
 
 ### get\_cluster\_session\_credentials
 
-Provides Temporary, basic HTTP credentials that are associated with a given
+Provides temporary, HTTP basic credentials that are associated with a given
 runtime IAM role and used by a cluster with fine-grained access control
 activated.
 

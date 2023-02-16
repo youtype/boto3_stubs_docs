@@ -140,6 +140,7 @@ def get_value() -> AssertionAttributesTypeDef:
 - [AwsSsoAuthenticationTypeDef](./type_defs.md#awsssoauthenticationtypedef)
 - [AuthenticationSummaryTypeDef](./type_defs.md#authenticationsummarytypedef)
 - [CreateWorkspaceApiKeyRequestRequestTypeDef](./type_defs.md#createworkspaceapikeyrequestrequesttypedef)
+- [NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef)
 - [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - [DeleteWorkspaceApiKeyRequestRequestTypeDef](./type_defs.md#deleteworkspaceapikeyrequestrequesttypedef)
 - [DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef)

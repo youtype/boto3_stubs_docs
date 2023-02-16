@@ -553,11 +553,16 @@ PaginatorName = Literal[
 from mypy_boto3_connectcases.literals import RegionName
 
 def get_value() -> RegionName:
-    return "us-east-1"
+    return "ap-southeast-1"
 ```
 
 ```python title="Definition"
 RegionName = Literal[
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-2",
     "us-east-1",
     "us-west-2",
 ]

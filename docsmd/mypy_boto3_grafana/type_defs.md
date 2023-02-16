@@ -128,6 +128,24 @@ class CreateWorkspaceApiKeyRequestRequestTypeDef(TypedDict):
     workspaceId: str,
 ```
 
+## NetworkAccessConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_grafana.type_defs import NetworkAccessConfigurationTypeDef
+
+def get_value() -> NetworkAccessConfigurationTypeDef:
+    return {
+        "prefixListIds": ...,
+        "vpceIds": ...,
+    }
+```
+
+```python title="Definition"
+class NetworkAccessConfigurationTypeDef(TypedDict):
+    prefixListIds: List[str],
+    vpceIds: List[str],
+```
+
 ## VpcConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -564,14 +582,15 @@ class CreateWorkspaceRequestRequestTypeDef(TypedDict):
     permissionType: PermissionTypeType,  # (3)
     clientToken: NotRequired[str],
     configuration: NotRequired[str],
+    networkAccessControl: NotRequired[NetworkAccessConfigurationTypeDef],  # (4)
     organizationRoleName: NotRequired[str],
     stackSetName: NotRequired[str],
     tags: NotRequired[Mapping[str, str]],
-    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (4)
-    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (5)
+    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (5)
+    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (6)
     workspaceDescription: NotRequired[str],
     workspaceName: NotRequired[str],
-    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (6)
+    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (7)
     workspaceOrganizationalUnits: NotRequired[Sequence[str]],
     workspaceRoleArn: NotRequired[str],
 ```
@@ -579,9 +598,10 @@ class CreateWorkspaceRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
 2. See [:material-code-brackets: AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype) 
 3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-4. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
-5. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-6. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+4. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
+5. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+6. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+7. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
 ## UpdateWorkspaceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -597,24 +617,27 @@ def get_value() -> UpdateWorkspaceRequestRequestTypeDef:
 class UpdateWorkspaceRequestRequestTypeDef(TypedDict):
     workspaceId: str,
     accountAccessType: NotRequired[AccountAccessTypeType],  # (1)
+    networkAccessControl: NotRequired[NetworkAccessConfigurationTypeDef],  # (2)
     organizationRoleName: NotRequired[str],
-    permissionType: NotRequired[PermissionTypeType],  # (2)
+    permissionType: NotRequired[PermissionTypeType],  # (3)
+    removeNetworkAccessConfiguration: NotRequired[bool],
     removeVpcConfiguration: NotRequired[bool],
     stackSetName: NotRequired[str],
-    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (3)
-    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (4)
+    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (4)
+    workspaceDataSources: NotRequired[Sequence[DataSourceTypeType]],  # (5)
     workspaceDescription: NotRequired[str],
     workspaceName: NotRequired[str],
-    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (5)
+    workspaceNotificationDestinations: NotRequired[Sequence[NotificationDestinationTypeType]],  # (6)
     workspaceOrganizationalUnits: NotRequired[Sequence[str]],
     workspaceRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
-2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-3. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
-4. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
-5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+2. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
+3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+4. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+5. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+6. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
 ## WorkspaceDescriptionTypeDef
 
 ```python title="Usage Example"
@@ -642,7 +665,7 @@ class WorkspaceDescriptionTypeDef(TypedDict):
     grafanaVersion: str,
     id: str,
     modified: datetime,
-    status: WorkspaceStatusType,  # (7)
+    status: WorkspaceStatusType,  # (8)
     accountAccessType: NotRequired[AccountAccessTypeType],  # (1)
     description: NotRequired[str],
     freeTrialConsumed: NotRequired[bool],
@@ -650,13 +673,14 @@ class WorkspaceDescriptionTypeDef(TypedDict):
     licenseExpiration: NotRequired[datetime],
     licenseType: NotRequired[LicenseTypeType],  # (4)
     name: NotRequired[str],
-    notificationDestinations: NotRequired[List[NotificationDestinationTypeType]],  # (5)
+    networkAccessControl: NotRequired[NetworkAccessConfigurationTypeDef],  # (5)
+    notificationDestinations: NotRequired[List[NotificationDestinationTypeType]],  # (6)
     organizationRoleName: NotRequired[str],
     organizationalUnits: NotRequired[List[str]],
-    permissionType: NotRequired[PermissionTypeType],  # (6)
+    permissionType: NotRequired[PermissionTypeType],  # (7)
     stackSetName: NotRequired[str],
     tags: NotRequired[Dict[str, str]],
-    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (8)
+    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (9)
     workspaceRoleArn: NotRequired[str],
 ```
 
@@ -664,10 +688,11 @@ class WorkspaceDescriptionTypeDef(TypedDict):
 2. See [:material-code-braces: AuthenticationSummaryTypeDef](./type_defs.md#authenticationsummarytypedef) 
 3. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
 4. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
-5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
-6. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
-7. See [:material-code-brackets: WorkspaceStatusType](./literals.md#workspacestatustype) 
-8. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+5. See [:material-code-braces: NetworkAccessConfigurationTypeDef](./type_defs.md#networkaccessconfigurationtypedef) 
+6. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+7. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+8. See [:material-code-brackets: WorkspaceStatusType](./literals.md#workspacestatustype) 
+9. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## ListPermissionsRequestListPermissionsPaginateTypeDef
 
 ```python title="Usage Example"
