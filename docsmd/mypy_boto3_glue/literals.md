@@ -415,6 +415,21 @@ DeleteBehaviorType = Literal[
     "LOG",
 ]
 ```
+## DeltaTargetCompressionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_glue.literals import DeltaTargetCompressionTypeType
+
+def get_value() -> DeltaTargetCompressionTypeType:
+    return "snappy"
+```
+
+```python title="Definition"
+DeltaTargetCompressionTypeType = Literal[
+    "snappy",
+    "uncompressed",
+]
+```
 ## EnableHybridValuesType
 
 ```python title="Usage Example"
@@ -1514,6 +1529,7 @@ def get_value() -> TargetFormatType:
 TargetFormatType = Literal[
     "avro",
     "csv",
+    "delta",
     "hudi",
     "json",
     "orc",

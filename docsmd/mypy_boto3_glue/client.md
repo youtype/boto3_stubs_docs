@@ -4103,8 +4103,8 @@ parent.get_triggers(**kwargs)
 
 ### get\_unfiltered\_partition\_metadata
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionMetadata).
+Retrieves partition metadata from the Data Catalog that contains unfiltered
+metadata.
 
 Type annotations and code completion for `#!python boto3.client("glue").get_unfiltered_partition_metadata` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partition_metadata)
@@ -4144,8 +4144,8 @@ parent.get_unfiltered_partition_metadata(**kwargs)
 
 ### get\_unfiltered\_partitions\_metadata
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionsMetadata).
+Retrieves partition metadata from the Data Catalog that contains unfiltered
+metadata.
 
 Type annotations and code completion for `#!python boto3.client("glue").get_unfiltered_partitions_metadata` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partitions_metadata)
@@ -4188,8 +4188,8 @@ parent.get_unfiltered_partitions_metadata(**kwargs)
 
 ### get\_unfiltered\_table\_metadata
 
-See also: [AWS API
-Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredTableMetadata).
+Retrieves table metadata from the Data Catalog that contains unfiltered
+metadata.
 
 Type annotations and code completion for `#!python boto3.client("glue").get_unfiltered_table_metadata` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_table_metadata)

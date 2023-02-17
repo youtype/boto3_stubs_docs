@@ -7708,6 +7708,32 @@ class S3CatalogTargetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: CatalogSchemaChangePolicyTypeDef](./type_defs.md#catalogschemachangepolicytypedef) 
+## S3DeltaCatalogTargetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3DeltaCatalogTargetTypeDef
+
+def get_value() -> S3DeltaCatalogTargetTypeDef:
+    return {
+        "Name": ...,
+        "Inputs": ...,
+        "Table": ...,
+        "Database": ...,
+    }
+```
+
+```python title="Definition"
+class S3DeltaCatalogTargetTypeDef(TypedDict):
+    Name: str,
+    Inputs: List[str],
+    Table: str,
+    Database: str,
+    PartitionKeys: NotRequired[List[List[str]]],
+    AdditionalOptions: NotRequired[Dict[str, str]],
+    SchemaChangePolicy: NotRequired[CatalogSchemaChangePolicyTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: CatalogSchemaChangePolicyTypeDef](./type_defs.md#catalogschemachangepolicytypedef) 
 ## S3HudiCatalogTargetTypeDef
 
 ```python title="Usage Example"
@@ -8589,6 +8615,36 @@ class UpdateDevEndpointRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef) 
+## S3DeltaDirectTargetTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3DeltaDirectTargetTypeDef
+
+def get_value() -> S3DeltaDirectTargetTypeDef:
+    return {
+        "Name": ...,
+        "Inputs": ...,
+        "Path": ...,
+        "Compression": ...,
+        "Format": ...,
+    }
+```
+
+```python title="Definition"
+class S3DeltaDirectTargetTypeDef(TypedDict):
+    Name: str,
+    Inputs: List[str],
+    Path: str,
+    Compression: DeltaTargetCompressionTypeType,  # (1)
+    Format: TargetFormatType,  # (2)
+    PartitionKeys: NotRequired[List[List[str]]],
+    AdditionalOptions: NotRequired[Dict[str, str]],
+    SchemaChangePolicy: NotRequired[DirectSchemaChangePolicyTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: DeltaTargetCompressionTypeType](./literals.md#deltatargetcompressiontypetype) 
+2. See [:material-code-brackets: TargetFormatType](./literals.md#targetformattype) 
+3. See [:material-code-braces: DirectSchemaChangePolicyTypeDef](./type_defs.md#directschemachangepolicytypedef) 
 ## S3DirectTargetTypeDef
 
 ```python title="Usage Example"
@@ -11303,6 +11359,29 @@ class AthenaConnectorSourceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
+## CatalogDeltaSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import CatalogDeltaSourceTypeDef
+
+def get_value() -> CatalogDeltaSourceTypeDef:
+    return {
+        "Name": ...,
+        "Database": ...,
+        "Table": ...,
+    }
+```
+
+```python title="Definition"
+class CatalogDeltaSourceTypeDef(TypedDict):
+    Name: str,
+    Database: str,
+    Table: str,
+    AdditionalDeltaOptions: NotRequired[Dict[str, str]],
+    OutputSchemas: NotRequired[List[GlueSchemaTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
 ## CatalogHudiSourceTypeDef
 
 ```python title="Usage Example"
@@ -11407,6 +11486,29 @@ class JDBCConnectorTargetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
+## S3CatalogDeltaSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3CatalogDeltaSourceTypeDef
+
+def get_value() -> S3CatalogDeltaSourceTypeDef:
+    return {
+        "Name": ...,
+        "Database": ...,
+        "Table": ...,
+    }
+```
+
+```python title="Definition"
+class S3CatalogDeltaSourceTypeDef(TypedDict):
+    Name: str,
+    Database: str,
+    Table: str,
+    AdditionalDeltaOptions: NotRequired[Dict[str, str]],
+    OutputSchemas: NotRequired[List[GlueSchemaTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
 ## S3CatalogHudiSourceTypeDef
 
 ```python title="Usage Example"
@@ -11472,6 +11574,29 @@ class S3CsvSourceTypeDef(TypedDict):
 3. See [:material-code-brackets: SeparatorType](./literals.md#separatortype) 
 4. See [:material-code-brackets: QuoteCharType](./literals.md#quotechartype) 
 5. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
+## S3DeltaSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import S3DeltaSourceTypeDef
+
+def get_value() -> S3DeltaSourceTypeDef:
+    return {
+        "Name": ...,
+        "Paths": ...,
+    }
+```
+
+```python title="Definition"
+class S3DeltaSourceTypeDef(TypedDict):
+    Name: str,
+    Paths: List[str],
+    AdditionalDeltaOptions: NotRequired[Dict[str, str]],
+    AdditionalOptions: NotRequired[S3DirectSourceAdditionalOptionsTypeDef],  # (1)
+    OutputSchemas: NotRequired[List[GlueSchemaTypeDef]],  # (2)
+```
+
+1. See [:material-code-braces: S3DirectSourceAdditionalOptionsTypeDef](./type_defs.md#s3directsourceadditionaloptionstypedef) 
+2. See [:material-code-braces: GlueSchemaTypeDef](./type_defs.md#glueschematypedef) 
 ## S3HudiSourceTypeDef
 
 ```python title="Usage Example"
@@ -12712,6 +12837,11 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
     S3HudiCatalogTarget: NotRequired[S3HudiCatalogTargetTypeDef],  # (56)
     S3HudiDirectTarget: NotRequired[S3HudiDirectTargetTypeDef],  # (57)
     DirectJDBCSource: NotRequired[DirectJDBCSourceTypeDef],  # (58)
+    S3CatalogDeltaSource: NotRequired[S3CatalogDeltaSourceTypeDef],  # (59)
+    CatalogDeltaSource: NotRequired[CatalogDeltaSourceTypeDef],  # (60)
+    S3DeltaSource: NotRequired[S3DeltaSourceTypeDef],  # (61)
+    S3DeltaCatalogTarget: NotRequired[S3DeltaCatalogTargetTypeDef],  # (62)
+    S3DeltaDirectTarget: NotRequired[S3DeltaDirectTargetTypeDef],  # (63)
 ```
 
 1. See [:material-code-braces: AthenaConnectorSourceTypeDef](./type_defs.md#athenaconnectorsourcetypedef) 
@@ -12772,6 +12902,11 @@ class CodeGenConfigurationNodeTypeDef(TypedDict):
 56. See [:material-code-braces: S3HudiCatalogTargetTypeDef](./type_defs.md#s3hudicatalogtargettypedef) 
 57. See [:material-code-braces: S3HudiDirectTargetTypeDef](./type_defs.md#s3hudidirecttargettypedef) 
 58. See [:material-code-braces: DirectJDBCSourceTypeDef](./type_defs.md#directjdbcsourcetypedef) 
+59. See [:material-code-braces: S3CatalogDeltaSourceTypeDef](./type_defs.md#s3catalogdeltasourcetypedef) 
+60. See [:material-code-braces: CatalogDeltaSourceTypeDef](./type_defs.md#catalogdeltasourcetypedef) 
+61. See [:material-code-braces: S3DeltaSourceTypeDef](./type_defs.md#s3deltasourcetypedef) 
+62. See [:material-code-braces: S3DeltaCatalogTargetTypeDef](./type_defs.md#s3deltacatalogtargettypedef) 
+63. See [:material-code-braces: S3DeltaDirectTargetTypeDef](./type_defs.md#s3deltadirecttargettypedef) 
 ## GetMLTaskRunsResponseTypeDef
 
 ```python title="Usage Example"

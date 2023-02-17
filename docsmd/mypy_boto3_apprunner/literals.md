@@ -186,6 +186,7 @@ OperationTypeType = Literal[
     "PAUSE_SERVICE",
     "RESUME_SERVICE",
     "START_DEPLOYMENT",
+    "UPDATE_SERVICE",
 ]
 ```
 ## ProviderTypeType
