@@ -164,13 +164,14 @@ from mypy_boto3_connect.type_defs import LexBotTypeDef
 def get_value() -> LexBotTypeDef:
     return {
         "Name": ...,
+        "LexRegion": ...,
     }
 ```
 
 ```python title="Definition"
 class LexBotTypeDef(TypedDict):
-    Name: NotRequired[str],
-    LexRegion: NotRequired[str],
+    Name: str,
+    LexRegion: str,
 ```
 
 ## LexV2BotTypeDef

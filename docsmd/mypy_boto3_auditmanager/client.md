@@ -1933,7 +1933,7 @@ parent.update_control(**kwargs)
 
 ### update\_settings
 
-Updates Audit Manager settings for the current user account.
+Updates Audit Manager settings for the current account.
 
 Type annotations and code completion for `#!python boto3.client("auditmanager").update_settings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings)
