@@ -132,6 +132,24 @@ def get_value() -> AppComponentTypeDef:
 class AppComponentTypeDef(TypedDict):
     name: str,
     type: str,
+    additionalInfo: NotRequired[Dict[str, List[str]]],
+    id: NotRequired[str],
+```
+
+## TerraformSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import TerraformSourceTypeDef
+
+def get_value() -> TerraformSourceTypeDef:
+    return {
+        "s3StateFileUrl": ...,
+    }
+```
+
+```python title="Definition"
+class TerraformSourceTypeDef(TypedDict):
+    s3StateFileUrl: str,
 ```
 
 ## AppSummaryTypeDef
@@ -253,6 +271,48 @@ class CreateAppRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AppAssessmentScheduleTypeType](./literals.md#appassessmentscheduletypetype) 
+## CreateAppVersionAppComponentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import CreateAppVersionAppComponentRequestRequestTypeDef
+
+def get_value() -> CreateAppVersionAppComponentRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "name": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppVersionAppComponentRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    name: str,
+    type: str,
+    additionalInfo: NotRequired[Mapping[str, Sequence[str]]],
+    clientToken: NotRequired[str],
+    id: NotRequired[str],
+```
+
+## LogicalResourceIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import LogicalResourceIdTypeDef
+
+def get_value() -> LogicalResourceIdTypeDef:
+    return {
+        "identifier": ...,
+    }
+```
+
+```python title="Definition"
+class LogicalResourceIdTypeDef(TypedDict):
+    identifier: str,
+    logicalStackName: NotRequired[str],
+    resourceGroupName: NotRequired[str],
+    terraformSourceName: NotRequired[str],
+```
+
 ## CreateRecommendationTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -332,6 +392,25 @@ class DeleteAppRequestRequestTypeDef(TypedDict):
     forceDelete: NotRequired[bool],
 ```
 
+## DeleteAppVersionAppComponentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DeleteAppVersionAppComponentRequestRequestTypeDef
+
+def get_value() -> DeleteAppVersionAppComponentRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAppVersionAppComponentRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    id: str,
+    clientToken: NotRequired[str],
+```
+
 ## DeleteRecommendationTemplateRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -396,6 +475,44 @@ def get_value() -> DescribeAppRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeAppRequestRequestTypeDef(TypedDict):
     appArn: str,
+```
+
+## DescribeAppVersionAppComponentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionAppComponentRequestRequestTypeDef
+
+def get_value() -> DescribeAppVersionAppComponentRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppVersionAppComponentRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    id: str,
+```
+
+## DescribeAppVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionRequestRequestTypeDef
+
+def get_value() -> DescribeAppVersionRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppVersionRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
 ```
 
 ## DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef
@@ -465,22 +582,6 @@ def get_value() -> DescribeResiliencyPolicyRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeResiliencyPolicyRequestRequestTypeDef(TypedDict):
     policyArn: str,
-```
-
-## TerraformSourceTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resiliencehub.type_defs import TerraformSourceTypeDef
-
-def get_value() -> TerraformSourceTypeDef:
-    return {
-        "s3StateFileUrl": ...,
-    }
-```
-
-```python title="Definition"
-class TerraformSourceTypeDef(TypedDict):
-    s3StateFileUrl: str,
 ```
 
 ## ListAlarmRecommendationsRequestRequestTypeDef
@@ -559,6 +660,46 @@ def get_value() -> ListAppComponentRecommendationsRequestRequestTypeDef:
 ```python title="Definition"
 class ListAppComponentRecommendationsRequestRequestTypeDef(TypedDict):
     assessmentArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListAppInputSourcesRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import ListAppInputSourcesRequestRequestTypeDef
+
+def get_value() -> ListAppInputSourcesRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppInputSourcesRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
+
+## ListAppVersionAppComponentsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import ListAppVersionAppComponentsRequestRequestTypeDef
+
+def get_value() -> ListAppVersionAppComponentsRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppVersionAppComponentsRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
     maxResults: NotRequired[int],
     nextToken: NotRequired[str],
 ```
@@ -772,25 +913,6 @@ class ListUnsupportedAppVersionResourcesRequestRequestTypeDef(TypedDict):
     resolutionId: NotRequired[str],
 ```
 
-## LogicalResourceIdTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resiliencehub.type_defs import LogicalResourceIdTypeDef
-
-def get_value() -> LogicalResourceIdTypeDef:
-    return {
-        "identifier": ...,
-    }
-```
-
-```python title="Definition"
-class LogicalResourceIdTypeDef(TypedDict):
-    identifier: str,
-    logicalStackName: NotRequired[str],
-    resourceGroupName: NotRequired[str],
-    terraformSourceName: NotRequired[str],
-```
-
 ## PhysicalResourceIdTypeDef
 
 ```python title="Usage Example"
@@ -999,6 +1121,44 @@ class UpdateAppRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AppAssessmentScheduleTypeType](./literals.md#appassessmentscheduletypetype) 
+## UpdateAppVersionAppComponentRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import UpdateAppVersionAppComponentRequestRequestTypeDef
+
+def get_value() -> UpdateAppVersionAppComponentRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "id": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppVersionAppComponentRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    id: str,
+    additionalInfo: NotRequired[Mapping[str, Sequence[str]]],
+    name: NotRequired[str],
+    type: NotRequired[str],
+```
+
+## UpdateAppVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import UpdateAppVersionRequestRequestTypeDef
+
+def get_value() -> UpdateAppVersionRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppVersionRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    additionalInfo: NotRequired[Mapping[str, Sequence[str]]],
+```
+
 ## DeleteAppAssessmentResponseTypeDef
 
 ```python title="Usage Example"
@@ -1109,6 +1269,29 @@ class DescribeAppVersionResourcesResolutionStatusResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ResourceResolutionStatusTypeType](./literals.md#resourceresolutionstatustypetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionResponseTypeDef
+
+def get_value() -> DescribeAppVersionResponseTypeDef:
+    return {
+        "additionalInfo": ...,
+        "appArn": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppVersionResponseTypeDef(TypedDict):
+    additionalInfo: Dict[str, List[str]],
+    appArn: str,
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAppVersionTemplateResponseTypeDef
 
 ```python title="Usage Example"
@@ -1268,6 +1451,29 @@ class ResolveAppVersionResourcesResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: ResourceResolutionStatusTypeType](./literals.md#resourceresolutionstatustypetype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAppVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import UpdateAppVersionResponseTypeDef
+
+def get_value() -> UpdateAppVersionResponseTypeDef:
+    return {
+        "additionalInfo": ...,
+        "appArn": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppVersionResponseTypeDef(TypedDict):
+    additionalInfo: Dict[str, List[str]],
+    appArn: str,
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AlarmRecommendationTypeDef
 
 ```python title="Usage Example"
@@ -1409,6 +1615,220 @@ class AppComponentComplianceTypeDef(TypedDict):
 2. See [:material-code-braces: CostTypeDef](./type_defs.md#costtypedef) 
 3. See [:material-code-braces: ResiliencyScoreTypeDef](./type_defs.md#resiliencyscoretypedef) 
 4. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+## CreateAppVersionAppComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import CreateAppVersionAppComponentResponseTypeDef
+
+def get_value() -> CreateAppVersionAppComponentResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appComponent": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppVersionAppComponentResponseTypeDef(TypedDict):
+    appArn: str,
+    appComponent: AppComponentTypeDef,  # (1)
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppComponentTypeDef](./type_defs.md#appcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteAppVersionAppComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DeleteAppVersionAppComponentResponseTypeDef
+
+def get_value() -> DeleteAppVersionAppComponentResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appComponent": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAppVersionAppComponentResponseTypeDef(TypedDict):
+    appArn: str,
+    appComponent: AppComponentTypeDef,  # (1)
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppComponentTypeDef](./type_defs.md#appcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppVersionAppComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionAppComponentResponseTypeDef
+
+def get_value() -> DescribeAppVersionAppComponentResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appComponent": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppVersionAppComponentResponseTypeDef(TypedDict):
+    appArn: str,
+    appComponent: AppComponentTypeDef,  # (1)
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppComponentTypeDef](./type_defs.md#appcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAppVersionAppComponentsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import ListAppVersionAppComponentsResponseTypeDef
+
+def get_value() -> ListAppVersionAppComponentsResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appComponents": ...,
+        "appVersion": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppVersionAppComponentsResponseTypeDef(TypedDict):
+    appArn: str,
+    appComponents: List[AppComponentTypeDef],  # (1)
+    appVersion: str,
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppComponentTypeDef](./type_defs.md#appcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAppVersionAppComponentResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import UpdateAppVersionAppComponentResponseTypeDef
+
+def get_value() -> UpdateAppVersionAppComponentResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appComponent": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppVersionAppComponentResponseTypeDef(TypedDict):
+    appArn: str,
+    appComponent: AppComponentTypeDef,  # (1)
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppComponentTypeDef](./type_defs.md#appcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AppInputSourceTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import AppInputSourceTypeDef
+
+def get_value() -> AppInputSourceTypeDef:
+    return {
+        "importType": ...,
+    }
+```
+
+```python title="Definition"
+class AppInputSourceTypeDef(TypedDict):
+    importType: ResourceMappingTypeType,  # (1)
+    resourceCount: NotRequired[int],
+    sourceArn: NotRequired[str],
+    sourceName: NotRequired[str],
+    terraformSource: NotRequired[TerraformSourceTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceMappingTypeType](./literals.md#resourcemappingtypetype) 
+2. See [:material-code-braces: TerraformSourceTypeDef](./type_defs.md#terraformsourcetypedef) 
+## DeleteAppInputSourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DeleteAppInputSourceRequestRequestTypeDef
+
+def get_value() -> DeleteAppInputSourceRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAppInputSourceRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    clientToken: NotRequired[str],
+    sourceArn: NotRequired[str],
+    terraformSource: NotRequired[TerraformSourceTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: TerraformSourceTypeDef](./type_defs.md#terraformsourcetypedef) 
+## ImportResourcesToDraftAppVersionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import ImportResourcesToDraftAppVersionRequestRequestTypeDef
+
+def get_value() -> ImportResourcesToDraftAppVersionRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
+```
+
+```python title="Definition"
+class ImportResourcesToDraftAppVersionRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    importStrategy: NotRequired[ResourceImportStrategyTypeType],  # (1)
+    sourceArns: NotRequired[Sequence[str]],
+    terraformSources: NotRequired[Sequence[TerraformSourceTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceImportStrategyTypeType](./literals.md#resourceimportstrategytypetype) 
+2. See [:material-code-braces: TerraformSourceTypeDef](./type_defs.md#terraformsourcetypedef) 
+## ImportResourcesToDraftAppVersionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import ImportResourcesToDraftAppVersionResponseTypeDef
+
+def get_value() -> ImportResourcesToDraftAppVersionResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "sourceArns": ...,
+        "status": ...,
+        "terraformSources": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ImportResourcesToDraftAppVersionResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    sourceArns: List[str],
+    status: ResourceImportStatusTypeType,  # (1)
+    terraformSources: List[TerraformSourceTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: ResourceImportStatusTypeType](./literals.md#resourceimportstatustypetype) 
+2. See [:material-code-braces: TerraformSourceTypeDef](./type_defs.md#terraformsourcetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppsResponseTypeDef
 
 ```python title="Usage Example"
@@ -1545,6 +1965,110 @@ class ConfigRecommendationTypeDef(TypedDict):
 3. See [:material-code-brackets: HaArchitectureType](./literals.md#haarchitecturetype) 
 4. See [:material-code-brackets: ConfigRecommendationOptimizationTypeType](./literals.md#configrecommendationoptimizationtypetype) 
 5. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: RecommendationDisruptionComplianceTypeDef](./type_defs.md#recommendationdisruptioncompliancetypedef) 
+## CreateAppVersionResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import CreateAppVersionResourceRequestRequestTypeDef
+
+def get_value() -> CreateAppVersionResourceRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appComponents": ...,
+        "logicalResourceId": ...,
+        "physicalResourceId": ...,
+        "resourceName": ...,
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppVersionResourceRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appComponents: Sequence[str],
+    logicalResourceId: LogicalResourceIdTypeDef,  # (1)
+    physicalResourceId: str,
+    resourceName: str,
+    resourceType: str,
+    additionalInfo: NotRequired[Mapping[str, Sequence[str]]],
+    awsAccountId: NotRequired[str],
+    awsRegion: NotRequired[str],
+    clientToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef) 
+## DeleteAppVersionResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DeleteAppVersionResourceRequestRequestTypeDef
+
+def get_value() -> DeleteAppVersionResourceRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAppVersionResourceRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    awsAccountId: NotRequired[str],
+    awsRegion: NotRequired[str],
+    clientToken: NotRequired[str],
+    logicalResourceId: NotRequired[LogicalResourceIdTypeDef],  # (1)
+    physicalResourceId: NotRequired[str],
+    resourceName: NotRequired[str],
+```
+
+1. See [:material-code-braces: LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef) 
+## DescribeAppVersionResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionResourceRequestRequestTypeDef
+
+def get_value() -> DescribeAppVersionResourceRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppVersionResourceRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    awsAccountId: NotRequired[str],
+    awsRegion: NotRequired[str],
+    logicalResourceId: NotRequired[LogicalResourceIdTypeDef],  # (1)
+    physicalResourceId: NotRequired[str],
+    resourceName: NotRequired[str],
+```
+
+1. See [:material-code-braces: LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef) 
+## UpdateAppVersionResourceRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import UpdateAppVersionResourceRequestRequestTypeDef
+
+def get_value() -> UpdateAppVersionResourceRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppVersionResourceRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    additionalInfo: NotRequired[Mapping[str, Sequence[str]]],
+    appComponents: NotRequired[Sequence[str]],
+    awsAccountId: NotRequired[str],
+    awsRegion: NotRequired[str],
+    excluded: NotRequired[bool],
+    logicalResourceId: NotRequired[LogicalResourceIdTypeDef],  # (1)
+    physicalResourceId: NotRequired[str],
+    resourceName: NotRequired[str],
+    resourceType: NotRequired[str],
+```
+
+1. See [:material-code-braces: LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef) 
 ## CreateResiliencyPolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1624,54 +2148,6 @@ class UpdateResiliencyPolicyRequestRequestTypeDef(TypedDict):
 1. See [:material-code-brackets: DataLocationConstraintType](./literals.md#datalocationconstrainttype) 
 2. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef) 
 3. See [:material-code-brackets: ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype) 
-## ImportResourcesToDraftAppVersionRequestRequestTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resiliencehub.type_defs import ImportResourcesToDraftAppVersionRequestRequestTypeDef
-
-def get_value() -> ImportResourcesToDraftAppVersionRequestRequestTypeDef:
-    return {
-        "appArn": ...,
-    }
-```
-
-```python title="Definition"
-class ImportResourcesToDraftAppVersionRequestRequestTypeDef(TypedDict):
-    appArn: str,
-    sourceArns: NotRequired[Sequence[str]],
-    terraformSources: NotRequired[Sequence[TerraformSourceTypeDef]],  # (1)
-```
-
-1. See [:material-code-braces: TerraformSourceTypeDef](./type_defs.md#terraformsourcetypedef) 
-## ImportResourcesToDraftAppVersionResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_resiliencehub.type_defs import ImportResourcesToDraftAppVersionResponseTypeDef
-
-def get_value() -> ImportResourcesToDraftAppVersionResponseTypeDef:
-    return {
-        "appArn": ...,
-        "appVersion": ...,
-        "sourceArns": ...,
-        "status": ...,
-        "terraformSources": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ImportResourcesToDraftAppVersionResponseTypeDef(TypedDict):
-    appArn: str,
-    appVersion: str,
-    sourceArns: List[str],
-    status: ResourceImportStatusTypeType,  # (1)
-    terraformSources: List[TerraformSourceTypeDef],  # (2)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
-```
-
-1. See [:material-code-brackets: ResourceImportStatusTypeType](./literals.md#resourceimportstatustypetype) 
-2. See [:material-code-braces: TerraformSourceTypeDef](./type_defs.md#terraformsourcetypedef) 
-3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PhysicalResourceTypeDef
 
 ```python title="Usage Example"
@@ -1690,7 +2166,9 @@ class PhysicalResourceTypeDef(TypedDict):
     logicalResourceId: LogicalResourceIdTypeDef,  # (2)
     physicalResourceId: PhysicalResourceIdTypeDef,  # (3)
     resourceType: str,
+    additionalInfo: NotRequired[Dict[str, List[str]]],
     appComponents: NotRequired[List[AppComponentTypeDef]],  # (1)
+    excluded: NotRequired[bool],
     resourceName: NotRequired[str],
 ```
 
@@ -1910,6 +2388,50 @@ class ListAppComponentCompliancesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AppComponentComplianceTypeDef](./type_defs.md#appcomponentcompliancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteAppInputSourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DeleteAppInputSourceResponseTypeDef
+
+def get_value() -> DeleteAppInputSourceResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appInputSource": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAppInputSourceResponseTypeDef(TypedDict):
+    appArn: str,
+    appInputSource: AppInputSourceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInputSourceTypeDef](./type_defs.md#appinputsourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAppInputSourcesResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import ListAppInputSourcesResponseTypeDef
+
+def get_value() -> ListAppInputSourcesResponseTypeDef:
+    return {
+        "appInputSources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppInputSourcesResponseTypeDef(TypedDict):
+    appInputSources: List[AppInputSourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: AppInputSourceTypeDef](./type_defs.md#appinputsourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ComponentRecommendationTypeDef
 
 ```python title="Usage Example"
@@ -2036,6 +2558,78 @@ class UpdateResiliencyPolicyResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateAppVersionResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import CreateAppVersionResourceResponseTypeDef
+
+def get_value() -> CreateAppVersionResourceResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "physicalResource": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateAppVersionResourceResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    physicalResource: PhysicalResourceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhysicalResourceTypeDef](./type_defs.md#physicalresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteAppVersionResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DeleteAppVersionResourceResponseTypeDef
+
+def get_value() -> DeleteAppVersionResourceResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "physicalResource": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteAppVersionResourceResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    physicalResource: PhysicalResourceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhysicalResourceTypeDef](./type_defs.md#physicalresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppVersionResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionResourceResponseTypeDef
+
+def get_value() -> DescribeAppVersionResourceResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "physicalResource": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppVersionResourceResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    physicalResource: PhysicalResourceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhysicalResourceTypeDef](./type_defs.md#physicalresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppVersionResourcesResponseTypeDef
 
 ```python title="Usage Example"
@@ -2055,6 +2649,30 @@ class ListAppVersionResourcesResponseTypeDef(TypedDict):
     nextToken: str,
     physicalResources: List[PhysicalResourceTypeDef],  # (1)
     resolutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PhysicalResourceTypeDef](./type_defs.md#physicalresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateAppVersionResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.type_defs import UpdateAppVersionResourceResponseTypeDef
+
+def get_value() -> UpdateAppVersionResourceResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "physicalResource": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateAppVersionResourceResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    physicalResource: PhysicalResourceTypeDef,  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 

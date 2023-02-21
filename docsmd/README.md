@@ -718,6 +718,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-timestream-write](./mypy_boto3_timestream_write/README.md) for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite) service
 
+- [mypy-boto3-tnb](./mypy_boto3_tnb/README.md) for [TelcoNetworkBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/tnb.html#TelcoNetworkBuilder) service
+
 - [mypy-boto3-transcribe](./mypy_boto3_transcribe/README.md) for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService) service
 
 - [mypy-boto3-transfer](./mypy_boto3_transfer/README.md) for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer) service

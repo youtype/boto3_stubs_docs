@@ -322,6 +322,21 @@ ResourceImportStatusTypeType = Literal[
     "Success",
 ]
 ```
+## ResourceImportStrategyTypeType
+
+```python title="Usage Example"
+from mypy_boto3_resiliencehub.literals import ResourceImportStrategyTypeType
+
+def get_value() -> ResourceImportStrategyTypeType:
+    return "AddOnly"
+```
+
+```python title="Definition"
+ResourceImportStrategyTypeType = Literal[
+    "AddOnly",
+    "ReplaceAll",
+]
+```
 ## ResourceMappingTypeType
 
 ```python title="Usage Example"
@@ -767,6 +782,7 @@ ServiceName = Literal[
     "textract",
     "timestream-query",
     "timestream-write",
+    "tnb",
     "transcribe",
     "transfer",
     "translate",

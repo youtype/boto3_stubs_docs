@@ -10610,6 +10610,7 @@ def get_value() -> S3ParametersTypeDef:
 ```python title="Definition"
 class S3ParametersTypeDef(TypedDict):
     ManifestFileLocation: ManifestFileLocationTypeDef,  # (1)
+    RoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ManifestFileLocationTypeDef](./type_defs.md#manifestfilelocationtypedef) 

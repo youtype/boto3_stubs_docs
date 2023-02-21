@@ -560,6 +560,7 @@ ServiceName = Literal[
     "textract",
     "timestream-query",
     "timestream-write",
+    "tnb",
     "transcribe",
     "transfer",
     "translate",
