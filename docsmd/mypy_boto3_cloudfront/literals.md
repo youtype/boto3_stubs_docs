@@ -439,6 +439,7 @@ def get_value() -> OriginRequestPolicyCookieBehaviorType:
 ```python title="Definition"
 OriginRequestPolicyCookieBehaviorType = Literal[
     "all",
+    "allExcept",
     "none",
     "whitelist",
 ]
@@ -449,11 +450,12 @@ OriginRequestPolicyCookieBehaviorType = Literal[
 from mypy_boto3_cloudfront.literals import OriginRequestPolicyHeaderBehaviorType
 
 def get_value() -> OriginRequestPolicyHeaderBehaviorType:
-    return "allViewer"
+    return "allExcept"
 ```
 
 ```python title="Definition"
 OriginRequestPolicyHeaderBehaviorType = Literal[
+    "allExcept",
     "allViewer",
     "allViewerAndWhitelistCloudFront",
     "none",
@@ -472,6 +474,7 @@ def get_value() -> OriginRequestPolicyQueryStringBehaviorType:
 ```python title="Definition"
 OriginRequestPolicyQueryStringBehaviorType = Literal[
     "all",
+    "allExcept",
     "none",
     "whitelist",
 ]

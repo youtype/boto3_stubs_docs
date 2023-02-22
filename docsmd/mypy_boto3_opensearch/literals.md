@@ -7,6 +7,57 @@
     Auto-generated documentation for [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
     type annotations stubs module [mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
 
+## ActionSeverityType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import ActionSeverityType
+
+def get_value() -> ActionSeverityType:
+    return "HIGH"
+```
+
+```python title="Definition"
+ActionSeverityType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+]
+```
+## ActionStatusType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import ActionStatusType
+
+def get_value() -> ActionStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+ActionStatusType = Literal[
+    "COMPLETED",
+    "ELIGIBLE",
+    "FAILED",
+    "IN_PROGRESS",
+    "NOT_ELIGIBLE",
+    "PENDING_UPDATE",
+]
+```
+## ActionTypeType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import ActionTypeType
+
+def get_value() -> ActionTypeType:
+    return "JVM_HEAP_SIZE_TUNING"
+```
+
+```python title="Definition"
+ActionTypeType = Literal[
+    "JVM_HEAP_SIZE_TUNING",
+    "JVM_YOUNG_GEN_TUNING",
+    "SERVICE_SOFTWARE_UPDATE",
+]
+```
 ## AutoTuneDesiredStateType
 
 ```python title="Usage Example"
@@ -454,6 +505,22 @@ RollbackOnDisableType = Literal[
     "NO_ROLLBACK",
 ]
 ```
+## ScheduleAtType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import ScheduleAtType
+
+def get_value() -> ScheduleAtType:
+    return "NOW"
+```
+
+```python title="Definition"
+ScheduleAtType = Literal[
+    "NOW",
+    "OFF_PEAK_WINDOW",
+    "TIMESTAMP",
+]
+```
 ## ScheduledAutoTuneActionTypeType
 
 ```python title="Usage Example"
@@ -483,6 +550,21 @@ ScheduledAutoTuneSeverityTypeType = Literal[
     "HIGH",
     "LOW",
     "MEDIUM",
+]
+```
+## ScheduledByType
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.literals import ScheduledByType
+
+def get_value() -> ScheduledByType:
+    return "CUSTOMER"
+```
+
+```python title="Definition"
+ScheduledByType = Literal[
+    "CUSTOMER",
+    "SYSTEM",
 ]
 ```
 ## TLSSecurityPolicyType

@@ -836,6 +836,7 @@ def get_value() -> LoggingConfigurationTypeDef:
 ```python title="Definition"
 class LoggingConfigurationTypeDef(TypedDict):
     EnableSIPLogs: NotRequired[bool],
+    EnableMediaMetricLogs: NotRequired[bool],
 ```
 
 ## GetVoiceConnectorOriginationRequestRequestTypeDef

@@ -43,6 +43,7 @@ except (
     client.LimitExceededException,
     client.ResourceAlreadyExistsException,
     client.ResourceNotFoundException,
+    client.SlotNotAvailableException,
     client.ValidationException,
 ) as e:
     print(e)
@@ -272,7 +273,9 @@ def create_domain(
     AdvancedSecurityOptions: AdvancedSecurityOptionsInputTypeDef = ...,  # (10)
     TagList: Sequence[TagTypeDef] = ...,  # (11)
     AutoTuneOptions: AutoTuneOptionsInputTypeDef = ...,  # (12)
-) -> CreateDomainResponseTypeDef:  # (13)
+    OffPeakWindowOptions: OffPeakWindowOptionsTypeDef = ...,  # (13)
+    SoftwareUpdateOptions: SoftwareUpdateOptionsTypeDef = ...,  # (14)
+) -> CreateDomainResponseTypeDef:  # (15)
     ...
 ```
 
@@ -288,7 +291,9 @@ def create_domain(
 10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
 11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 12. See [:material-code-braces: AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef) 
-13. See [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
+13. See [:material-code-braces: OffPeakWindowOptionsTypeDef](./type_defs.md#offpeakwindowoptionstypedef) 
+14. See [:material-code-braces: SoftwareUpdateOptionsTypeDef](./type_defs.md#softwareupdateoptionstypedef) 
+15. See [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1264,6 +1269,37 @@ parent.list_packages_for_domain(**kwargs)
 
 1. See [:material-code-braces: ListPackagesForDomainRequestRequestTypeDef](./type_defs.md#listpackagesfordomainrequestrequesttypedef) 
 
+### list\_scheduled\_actions
+
+Retrieves a list of configuration changes that are scheduled for a domain.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").list_scheduled_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_scheduled_actions)
+
+```python title="Method definition"
+def list_scheduled_actions(
+    self,
+    *,
+    DomainName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListScheduledActionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListScheduledActionsResponseTypeDef](./type_defs.md#listscheduledactionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListScheduledActionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
+
+parent.list_scheduled_actions(**kwargs)
+```
+
+1. See [:material-code-braces: ListScheduledActionsRequestRequestTypeDef](./type_defs.md#listscheduledactionsrequestrequesttypedef) 
+
 ### list\_tags
 
 Returns all resource tags for an Amazon OpenSearch Service domain.
@@ -1553,11 +1589,14 @@ def start_service_software_update(
     self,
     *,
     DomainName: str,
-) -> StartServiceSoftwareUpdateResponseTypeDef:  # (1)
+    ScheduleAt: ScheduleAtType = ...,  # (1)
+    DesiredStartTime: int = ...,
+) -> StartServiceSoftwareUpdateResponseTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: StartServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startservicesoftwareupdateresponsetypedef) 
+1. See [:material-code-brackets: ScheduleAtType](./literals.md#scheduleattype) 
+2. See [:material-code-braces: StartServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startservicesoftwareupdateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1598,7 +1637,9 @@ def update_domain_config(
     AutoTuneOptions: AutoTuneOptionsTypeDef = ...,  # (11)
     DryRun: bool = ...,
     DryRunMode: DryRunModeType = ...,  # (12)
-) -> UpdateDomainConfigResponseTypeDef:  # (13)
+    OffPeakWindowOptions: OffPeakWindowOptionsTypeDef = ...,  # (13)
+    SoftwareUpdateOptions: SoftwareUpdateOptionsTypeDef = ...,  # (14)
+) -> UpdateDomainConfigResponseTypeDef:  # (15)
     ...
 ```
 
@@ -1614,7 +1655,9 @@ def update_domain_config(
 10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
 11. See [:material-code-braces: AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef) 
 12. See [:material-code-brackets: DryRunModeType](./literals.md#dryrunmodetype) 
-13. See [:material-code-braces: UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef) 
+13. See [:material-code-braces: OffPeakWindowOptionsTypeDef](./type_defs.md#offpeakwindowoptionstypedef) 
+14. See [:material-code-braces: SoftwareUpdateOptionsTypeDef](./type_defs.md#softwareupdateoptionstypedef) 
+15. See [:material-code-braces: UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -1660,6 +1703,44 @@ parent.update_package(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdatePackageRequestRequestTypeDef](./type_defs.md#updatepackagerequestrequesttypedef) 
+
+### update\_scheduled\_action
+
+Reschedules a planned domain configuration change for a later time.
+
+Type annotations and code completion for `#!python boto3.client("opensearch").update_scheduled_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.update_scheduled_action)
+
+```python title="Method definition"
+def update_scheduled_action(
+    self,
+    *,
+    DomainName: str,
+    ActionID: str,
+    ActionType: ActionTypeType,  # (1)
+    ScheduleAt: ScheduleAtType,  # (2)
+    DesiredStartTime: int = ...,
+) -> UpdateScheduledActionResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-brackets: ScheduleAtType](./literals.md#scheduleattype) 
+3. See [:material-code-braces: UpdateScheduledActionResponseTypeDef](./type_defs.md#updatescheduledactionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateScheduledActionRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "ActionID": ...,
+    "ActionType": ...,
+    "ScheduleAt": ...,
+}
+
+parent.update_scheduled_action(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateScheduledActionRequestRequestTypeDef](./type_defs.md#updatescheduledactionrequestrequesttypedef) 
 
 ### update\_vpc\_endpoint
 

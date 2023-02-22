@@ -57,8 +57,8 @@ def handle_error(exc: Exceptions.AccessDeniedException) -> None:
 
 ### batch\_create\_rum\_metric\_definitions
 
-Specifies the extended metrics that you want a CloudWatch RUM app monitor to
-send to a destination.
+Specifies the extended metrics and custom metrics that you want a CloudWatch RUM
+app monitor to send to a destination.
 
 Type annotations and code completion for `#!python boto3.client("rum").batch_create_rum_metric_definitions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.batch_create_rum_metric_definitions)

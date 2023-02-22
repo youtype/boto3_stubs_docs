@@ -40526,12 +40526,15 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 </code></pre></div>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_opensearch.literals</span> <span class="kn">import</span> <span class="n">AutoTuneDesiredStateType</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_opensearch.literals</span> <span class="kn">import</span> <span class="n">ActionSeverityType</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AutoTuneDesiredStateType</span><span class="p">:</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;DISABLED&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ActionSeverityType</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="k">return</span> <span class="s2">&quot;HIGH&quot;</span>
 </code></pre></div>
 <ul>
+<li><a href="literals/#actionseveritytype">ActionSeverityType</a></li>
+<li><a href="literals/#actionstatustype">ActionStatusType</a></li>
+<li><a href="literals/#actiontypetype">ActionTypeType</a></li>
 <li><a href="literals/#autotunedesiredstatetype">AutoTuneDesiredStateType</a></li>
 <li><a href="literals/#autotunestatetype">AutoTuneStateType</a></li>
 <li><a href="literals/#autotunetypetype">AutoTuneTypeType</a></li>
@@ -40553,8 +40556,10 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="literals/#principaltypetype">PrincipalTypeType</a></li>
 <li><a href="literals/#reservedinstancepaymentoptiontype">ReservedInstancePaymentOptionType</a></li>
 <li><a href="literals/#rollbackondisabletype">RollbackOnDisableType</a></li>
+<li><a href="literals/#scheduleattype">ScheduleAtType</a></li>
 <li><a href="literals/#scheduledautotuneactiontypetype">ScheduledAutoTuneActionTypeType</a></li>
 <li><a href="literals/#scheduledautotuneseveritytypetype">ScheduledAutoTuneSeverityTypeType</a></li>
+<li><a href="literals/#scheduledbytype">ScheduledByType</a></li>
 <li><a href="literals/#tlssecuritypolicytype">TLSSecurityPolicyType</a></li>
 <li><a href="literals/#timeunittype">TimeUnitType</a></li>
 <li><a href="literals/#upgradestatustype">UpgradeStatusType</a></li>
@@ -40606,6 +40611,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#logpublishingoptiontypedef">LogPublishingOptionTypeDef</a></li>
 <li><a href="type_defs/#nodetonodeencryptionoptionstypedef">NodeToNodeEncryptionOptionsTypeDef</a></li>
 <li><a href="type_defs/#snapshotoptionstypedef">SnapshotOptionsTypeDef</a></li>
+<li><a href="type_defs/#softwareupdateoptionstypedef">SoftwareUpdateOptionsTypeDef</a></li>
 <li><a href="type_defs/#vpcoptionstypedef">VPCOptionsTypeDef</a></li>
 <li><a href="type_defs/#outboundconnectionstatustypedef">OutboundConnectionStatusTypeDef</a></li>
 <li><a href="type_defs/#packagesourcetypedef">PackageSourceTypeDef</a></li>
@@ -40646,11 +40652,14 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#listdomainsforpackagerequestrequesttypedef">ListDomainsForPackageRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listinstancetypedetailsrequestrequesttypedef">ListInstanceTypeDetailsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listpackagesfordomainrequestrequesttypedef">ListPackagesForDomainRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listscheduledactionsrequestrequesttypedef">ListScheduledActionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#scheduledactiontypedef">ScheduledActionTypeDef</a></li>
 <li><a href="type_defs/#listtagsrequestrequesttypedef">ListTagsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listversionsrequestrequesttypedef">ListVersionsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listvpcendpointaccessrequestrequesttypedef">ListVpcEndpointAccessRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listvpcendpointsfordomainrequestrequesttypedef">ListVpcEndpointsForDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listvpcendpointsrequestrequesttypedef">ListVpcEndpointsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#windowstarttimetypedef">WindowStartTimeTypeDef</a></li>
 <li><a href="type_defs/#purchasereservedinstanceofferingrequestrequesttypedef">PurchaseReservedInstanceOfferingRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#recurringchargetypedef">RecurringChargeTypeDef</a></li>
 <li><a href="type_defs/#rejectinboundconnectionrequestrequesttypedef">RejectInboundConnectionRequestRequestTypeDef</a></li>
@@ -40659,6 +40668,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#samlidptypedef">SAMLIdpTypeDef</a></li>
 <li><a href="type_defs/#startservicesoftwareupdaterequestrequesttypedef">StartServiceSoftwareUpdateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#storagetypelimittypedef">StorageTypeLimitTypeDef</a></li>
+<li><a href="type_defs/#updatescheduledactionrequestrequesttypedef">UpdateScheduledActionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#upgradedomainrequestrequesttypedef">UpgradeDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#upgradestepitemtypedef">UpgradeStepItemTypeDef</a></li>
 <li><a href="type_defs/#domaininformationcontainertypedef">DomainInformationContainerTypeDef</a></li>
@@ -40688,6 +40698,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#logpublishingoptionsstatustypedef">LogPublishingOptionsStatusTypeDef</a></li>
 <li><a href="type_defs/#nodetonodeencryptionoptionsstatustypedef">NodeToNodeEncryptionOptionsStatusTypeDef</a></li>
 <li><a href="type_defs/#snapshotoptionsstatustypedef">SnapshotOptionsStatusTypeDef</a></li>
+<li><a href="type_defs/#softwareupdateoptionsstatustypedef">SoftwareUpdateOptionsStatusTypeDef</a></li>
 <li><a href="type_defs/#createvpcendpointrequestrequesttypedef">CreateVpcEndpointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatevpcendpointrequestrequesttypedef">UpdateVpcEndpointRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createpackagerequestrequesttypedef">CreatePackageRequestRequestTypeDef</a></li>
@@ -40707,6 +40718,9 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#getpackageversionhistoryresponsetypedef">GetPackageVersionHistoryResponseTypeDef</a></li>
 <li><a href="type_defs/#instancelimitstypedef">InstanceLimitsTypeDef</a></li>
 <li><a href="type_defs/#listinstancetypedetailsresponsetypedef">ListInstanceTypeDetailsResponseTypeDef</a></li>
+<li><a href="type_defs/#listscheduledactionsresponsetypedef">ListScheduledActionsResponseTypeDef</a></li>
+<li><a href="type_defs/#updatescheduledactionresponsetypedef">UpdateScheduledActionResponseTypeDef</a></li>
+<li><a href="type_defs/#offpeakwindowtypedef">OffPeakWindowTypeDef</a></li>
 <li><a href="type_defs/#reservedinstanceofferingtypedef">ReservedInstanceOfferingTypeDef</a></li>
 <li><a href="type_defs/#reservedinstancetypedef">ReservedInstanceTypeDef</a></li>
 <li><a href="type_defs/#samloptionsinputtypedef">SAMLOptionsInputTypeDef</a></li>
@@ -40733,6 +40747,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#createvpcendpointresponsetypedef">CreateVpcEndpointResponseTypeDef</a></li>
 <li><a href="type_defs/#describevpcendpointsresponsetypedef">DescribeVpcEndpointsResponseTypeDef</a></li>
 <li><a href="type_defs/#updatevpcendpointresponsetypedef">UpdateVpcEndpointResponseTypeDef</a></li>
+<li><a href="type_defs/#offpeakwindowoptionstypedef">OffPeakWindowOptionsTypeDef</a></li>
 <li><a href="type_defs/#describereservedinstanceofferingsresponsetypedef">DescribeReservedInstanceOfferingsResponseTypeDef</a></li>
 <li><a href="type_defs/#describereservedinstancesresponsetypedef">DescribeReservedInstancesResponseTypeDef</a></li>
 <li><a href="type_defs/#advancedsecurityoptionsinputtypedef">AdvancedSecurityOptionsInputTypeDef</a></li>
@@ -40747,6 +40762,7 @@ extension to your VSCode and run <code>AWS boto3: Quick Start</code> command.</p
 <li><a href="type_defs/#describeoutboundconnectionsresponsetypedef">DescribeOutboundConnectionsResponseTypeDef</a></li>
 <li><a href="type_defs/#describedomainautotunesresponsetypedef">DescribeDomainAutoTunesResponseTypeDef</a></li>
 <li><a href="type_defs/#autotuneoptionsstatustypedef">AutoTuneOptionsStatusTypeDef</a></li>
+<li><a href="type_defs/#offpeakwindowoptionsstatustypedef">OffPeakWindowOptionsStatusTypeDef</a></li>
 <li><a href="type_defs/#createdomainrequestrequesttypedef">CreateDomainRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedomainconfigrequestrequesttypedef">UpdateDomainConfigRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#advancedsecurityoptionsstatustypedef">AdvancedSecurityOptionsStatusTypeDef</a></li>

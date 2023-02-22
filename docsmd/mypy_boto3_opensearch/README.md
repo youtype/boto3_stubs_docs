@@ -75,12 +75,15 @@ def get_client() -> OpenSearchServiceClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_opensearch.literals import AutoTuneDesiredStateType
+from mypy_boto3_opensearch.literals import ActionSeverityType
 
-def get_value() -> AutoTuneDesiredStateType:
-    return "DISABLED"
+def get_value() -> ActionSeverityType:
+    return "HIGH"
 ```
 
+- [ActionSeverityType](./literals.md#actionseveritytype)
+- [ActionStatusType](./literals.md#actionstatustype)
+- [ActionTypeType](./literals.md#actiontypetype)
 - [AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype)
 - [AutoTuneStateType](./literals.md#autotunestatetype)
 - [AutoTuneTypeType](./literals.md#autotunetypetype)
@@ -102,8 +105,10 @@ def get_value() -> AutoTuneDesiredStateType:
 - [PrincipalTypeType](./literals.md#principaltypetype)
 - [ReservedInstancePaymentOptionType](./literals.md#reservedinstancepaymentoptiontype)
 - [RollbackOnDisableType](./literals.md#rollbackondisabletype)
+- [ScheduleAtType](./literals.md#scheduleattype)
 - [ScheduledAutoTuneActionTypeType](./literals.md#scheduledautotuneactiontypetype)
 - [ScheduledAutoTuneSeverityTypeType](./literals.md#scheduledautotuneseveritytypetype)
+- [ScheduledByType](./literals.md#scheduledbytype)
 - [TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype)
 - [TimeUnitType](./literals.md#timeunittype)
 - [UpgradeStatusType](./literals.md#upgradestatustype)
@@ -161,6 +166,7 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)
 - [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
 - [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
+- [SoftwareUpdateOptionsTypeDef](./type_defs.md#softwareupdateoptionstypedef)
 - [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
 - [OutboundConnectionStatusTypeDef](./type_defs.md#outboundconnectionstatustypedef)
 - [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
@@ -201,11 +207,14 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [ListDomainsForPackageRequestRequestTypeDef](./type_defs.md#listdomainsforpackagerequestrequesttypedef)
 - [ListInstanceTypeDetailsRequestRequestTypeDef](./type_defs.md#listinstancetypedetailsrequestrequesttypedef)
 - [ListPackagesForDomainRequestRequestTypeDef](./type_defs.md#listpackagesfordomainrequestrequesttypedef)
+- [ListScheduledActionsRequestRequestTypeDef](./type_defs.md#listscheduledactionsrequestrequesttypedef)
+- [ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef)
 - [ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef)
 - [ListVersionsRequestRequestTypeDef](./type_defs.md#listversionsrequestrequesttypedef)
 - [ListVpcEndpointAccessRequestRequestTypeDef](./type_defs.md#listvpcendpointaccessrequestrequesttypedef)
 - [ListVpcEndpointsForDomainRequestRequestTypeDef](./type_defs.md#listvpcendpointsfordomainrequestrequesttypedef)
 - [ListVpcEndpointsRequestRequestTypeDef](./type_defs.md#listvpcendpointsrequestrequesttypedef)
+- [WindowStartTimeTypeDef](./type_defs.md#windowstarttimetypedef)
 - [PurchaseReservedInstanceOfferingRequestRequestTypeDef](./type_defs.md#purchasereservedinstanceofferingrequestrequesttypedef)
 - [RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)
 - [RejectInboundConnectionRequestRequestTypeDef](./type_defs.md#rejectinboundconnectionrequestrequesttypedef)
@@ -214,6 +223,7 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [SAMLIdpTypeDef](./type_defs.md#samlidptypedef)
 - [StartServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#startservicesoftwareupdaterequestrequesttypedef)
 - [StorageTypeLimitTypeDef](./type_defs.md#storagetypelimittypedef)
+- [UpdateScheduledActionRequestRequestTypeDef](./type_defs.md#updatescheduledactionrequestrequesttypedef)
 - [UpgradeDomainRequestRequestTypeDef](./type_defs.md#upgradedomainrequestrequesttypedef)
 - [UpgradeStepItemTypeDef](./type_defs.md#upgradestepitemtypedef)
 - [DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef)
@@ -243,6 +253,7 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [LogPublishingOptionsStatusTypeDef](./type_defs.md#logpublishingoptionsstatustypedef)
 - [NodeToNodeEncryptionOptionsStatusTypeDef](./type_defs.md#nodetonodeencryptionoptionsstatustypedef)
 - [SnapshotOptionsStatusTypeDef](./type_defs.md#snapshotoptionsstatustypedef)
+- [SoftwareUpdateOptionsStatusTypeDef](./type_defs.md#softwareupdateoptionsstatustypedef)
 - [CreateVpcEndpointRequestRequestTypeDef](./type_defs.md#createvpcendpointrequestrequesttypedef)
 - [UpdateVpcEndpointRequestRequestTypeDef](./type_defs.md#updatevpcendpointrequestrequesttypedef)
 - [CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef)
@@ -262,6 +273,9 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef)
 - [InstanceLimitsTypeDef](./type_defs.md#instancelimitstypedef)
 - [ListInstanceTypeDetailsResponseTypeDef](./type_defs.md#listinstancetypedetailsresponsetypedef)
+- [ListScheduledActionsResponseTypeDef](./type_defs.md#listscheduledactionsresponsetypedef)
+- [UpdateScheduledActionResponseTypeDef](./type_defs.md#updatescheduledactionresponsetypedef)
+- [OffPeakWindowTypeDef](./type_defs.md#offpeakwindowtypedef)
 - [ReservedInstanceOfferingTypeDef](./type_defs.md#reservedinstanceofferingtypedef)
 - [ReservedInstanceTypeDef](./type_defs.md#reservedinstancetypedef)
 - [SAMLOptionsInputTypeDef](./type_defs.md#samloptionsinputtypedef)
@@ -288,6 +302,7 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [CreateVpcEndpointResponseTypeDef](./type_defs.md#createvpcendpointresponsetypedef)
 - [DescribeVpcEndpointsResponseTypeDef](./type_defs.md#describevpcendpointsresponsetypedef)
 - [UpdateVpcEndpointResponseTypeDef](./type_defs.md#updatevpcendpointresponsetypedef)
+- [OffPeakWindowOptionsTypeDef](./type_defs.md#offpeakwindowoptionstypedef)
 - [DescribeReservedInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedinstanceofferingsresponsetypedef)
 - [DescribeReservedInstancesResponseTypeDef](./type_defs.md#describereservedinstancesresponsetypedef)
 - [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
@@ -302,6 +317,7 @@ def get_value() -> AWSDomainInformationTypeDef:
 - [DescribeOutboundConnectionsResponseTypeDef](./type_defs.md#describeoutboundconnectionsresponsetypedef)
 - [DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef)
 - [AutoTuneOptionsStatusTypeDef](./type_defs.md#autotuneoptionsstatustypedef)
+- [OffPeakWindowOptionsStatusTypeDef](./type_defs.md#offpeakwindowoptionsstatustypedef)
 - [CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef)
 - [UpdateDomainConfigRequestRequestTypeDef](./type_defs.md#updatedomainconfigrequestrequesttypedef)
 - [AdvancedSecurityOptionsStatusTypeDef](./type_defs.md#advancedsecurityoptionsstatustypedef)

@@ -104,6 +104,7 @@ class MetricDefinitionRequestTypeDef(TypedDict):
     Name: str,
     DimensionKeys: NotRequired[Mapping[str, str]],
     EventPattern: NotRequired[str],
+    Namespace: NotRequired[str],
     UnitLabel: NotRequired[str],
     ValueKey: NotRequired[str],
 ```
@@ -126,6 +127,7 @@ class MetricDefinitionTypeDef(TypedDict):
     Name: str,
     DimensionKeys: NotRequired[Dict[str, str]],
     EventPattern: NotRequired[str],
+    Namespace: NotRequired[str],
     UnitLabel: NotRequired[str],
     ValueKey: NotRequired[str],
 ```

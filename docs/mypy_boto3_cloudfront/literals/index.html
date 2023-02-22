@@ -41316,22 +41316,24 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="n">OriginRequestPolicyCookieBehaviorType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
 <a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>    <span class="s2">&quot;all&quot;</span><span class="p">,</span>
-<a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>    <span class="s2">&quot;none&quot;</span><span class="p">,</span>
-<a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a>    <span class="s2">&quot;whitelist&quot;</span><span class="p">,</span>
-<a id="__codelineno-55-5" name="__codelineno-55-5" href="#__codelineno-55-5"></a><span class="p">]</span>
+<a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>    <span class="s2">&quot;allExcept&quot;</span><span class="p">,</span>
+<a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a>    <span class="s2">&quot;none&quot;</span><span class="p">,</span>
+<a id="__codelineno-55-5" name="__codelineno-55-5" href="#__codelineno-55-5"></a>    <span class="s2">&quot;whitelist&quot;</span><span class="p">,</span>
+<a id="__codelineno-55-6" name="__codelineno-55-6" href="#__codelineno-55-6"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="originrequestpolicyheaderbehaviortype">OriginRequestPolicyHeaderBehaviorType</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudfront.literals</span> <span class="kn">import</span> <span class="n">OriginRequestPolicyHeaderBehaviorType</span>
 <a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>
 <a id="__codelineno-56-3" name="__codelineno-56-3" href="#__codelineno-56-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">OriginRequestPolicyHeaderBehaviorType</span><span class="p">:</span>
-<a id="__codelineno-56-4" name="__codelineno-56-4" href="#__codelineno-56-4"></a>    <span class="k">return</span> <span class="s2">&quot;allViewer&quot;</span>
+<a id="__codelineno-56-4" name="__codelineno-56-4" href="#__codelineno-56-4"></a>    <span class="k">return</span> <span class="s2">&quot;allExcept&quot;</span>
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="n">OriginRequestPolicyHeaderBehaviorType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
-<a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>    <span class="s2">&quot;allViewer&quot;</span><span class="p">,</span>
-<a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a>    <span class="s2">&quot;allViewerAndWhitelistCloudFront&quot;</span><span class="p">,</span>
-<a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a>    <span class="s2">&quot;none&quot;</span><span class="p">,</span>
-<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a>    <span class="s2">&quot;whitelist&quot;</span><span class="p">,</span>
-<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a><span class="p">]</span>
+<a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>    <span class="s2">&quot;allExcept&quot;</span><span class="p">,</span>
+<a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a>    <span class="s2">&quot;allViewer&quot;</span><span class="p">,</span>
+<a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a>    <span class="s2">&quot;allViewerAndWhitelistCloudFront&quot;</span><span class="p">,</span>
+<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a>    <span class="s2">&quot;none&quot;</span><span class="p">,</span>
+<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a>    <span class="s2">&quot;whitelist&quot;</span><span class="p">,</span>
+<a id="__codelineno-57-7" name="__codelineno-57-7" href="#__codelineno-57-7"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="originrequestpolicyquerystringbehaviortype">OriginRequestPolicyQueryStringBehaviorType</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudfront.literals</span> <span class="kn">import</span> <span class="n">OriginRequestPolicyQueryStringBehaviorType</span>
@@ -41341,9 +41343,10 @@ type annotations stubs module <a href="https://pypi.org/project/mypy-boto3-cloud
 </code></pre></div>
 <div class="highlight"><span class="filename">Definition</span><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="n">OriginRequestPolicyQueryStringBehaviorType</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span>
 <a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>    <span class="s2">&quot;all&quot;</span><span class="p">,</span>
-<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>    <span class="s2">&quot;none&quot;</span><span class="p">,</span>
-<a id="__codelineno-59-4" name="__codelineno-59-4" href="#__codelineno-59-4"></a>    <span class="s2">&quot;whitelist&quot;</span><span class="p">,</span>
-<a id="__codelineno-59-5" name="__codelineno-59-5" href="#__codelineno-59-5"></a><span class="p">]</span>
+<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>    <span class="s2">&quot;allExcept&quot;</span><span class="p">,</span>
+<a id="__codelineno-59-4" name="__codelineno-59-4" href="#__codelineno-59-4"></a>    <span class="s2">&quot;none&quot;</span><span class="p">,</span>
+<a id="__codelineno-59-5" name="__codelineno-59-5" href="#__codelineno-59-5"></a>    <span class="s2">&quot;whitelist&quot;</span><span class="p">,</span>
+<a id="__codelineno-59-6" name="__codelineno-59-6" href="#__codelineno-59-6"></a><span class="p">]</span>
 </code></pre></div>
 <h2 id="originrequestpolicytypetype">OriginRequestPolicyTypeType</h2>
 <div class="highlight"><span class="filename">Usage Example</span><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_cloudfront.literals</span> <span class="kn">import</span> <span class="n">OriginRequestPolicyTypeType</span>

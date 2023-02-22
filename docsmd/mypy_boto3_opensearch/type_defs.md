@@ -249,6 +249,7 @@ def get_value() -> AutoTuneOptionsOutputTypeDef:
 class AutoTuneOptionsOutputTypeDef(TypedDict):
     State: NotRequired[AutoTuneStateType],  # (1)
     ErrorMessage: NotRequired[str],
+    UseOffPeakWindow: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: AutoTuneStateType](./literals.md#autotunestatetype) 
@@ -542,6 +543,22 @@ def get_value() -> SnapshotOptionsTypeDef:
 ```python title="Definition"
 class SnapshotOptionsTypeDef(TypedDict):
     AutomatedSnapshotStartHour: NotRequired[int],
+```
+
+## SoftwareUpdateOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import SoftwareUpdateOptionsTypeDef
+
+def get_value() -> SoftwareUpdateOptionsTypeDef:
+    return {
+        "AutoSoftwareUpdateEnabled": ...,
+    }
+```
+
+```python title="Definition"
+class SoftwareUpdateOptionsTypeDef(TypedDict):
+    AutoSoftwareUpdateEnabled: NotRequired[bool],
 ```
 
 ## VPCOptionsTypeDef
@@ -1245,6 +1262,55 @@ class ListPackagesForDomainRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListScheduledActionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import ListScheduledActionsRequestRequestTypeDef
+
+def get_value() -> ListScheduledActionsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
+```
+
+```python title="Definition"
+class ListScheduledActionsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+## ScheduledActionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import ScheduledActionTypeDef
+
+def get_value() -> ScheduledActionTypeDef:
+    return {
+        "Id": ...,
+        "Type": ...,
+        "Severity": ...,
+        "ScheduledTime": ...,
+    }
+```
+
+```python title="Definition"
+class ScheduledActionTypeDef(TypedDict):
+    Id: str,
+    Type: ActionTypeType,  # (1)
+    Severity: ActionSeverityType,  # (2)
+    ScheduledTime: int,
+    Description: NotRequired[str],
+    ScheduledBy: NotRequired[ScheduledByType],  # (3)
+    Status: NotRequired[ActionStatusType],  # (4)
+    Mandatory: NotRequired[bool],
+    Cancellable: NotRequired[bool],
+```
+
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-brackets: ActionSeverityType](./literals.md#actionseveritytype) 
+3. See [:material-code-brackets: ScheduledByType](./literals.md#scheduledbytype) 
+4. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
 ## ListTagsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1326,6 +1392,24 @@ def get_value() -> ListVpcEndpointsRequestRequestTypeDef:
 ```python title="Definition"
 class ListVpcEndpointsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
+```
+
+## WindowStartTimeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import WindowStartTimeTypeDef
+
+def get_value() -> WindowStartTimeTypeDef:
+    return {
+        "Hours": ...,
+        "Minutes": ...,
+    }
+```
+
+```python title="Definition"
+class WindowStartTimeTypeDef(TypedDict):
+    Hours: int,
+    Minutes: int,
 ```
 
 ## PurchaseReservedInstanceOfferingRequestRequestTypeDef
@@ -1448,8 +1532,11 @@ def get_value() -> StartServiceSoftwareUpdateRequestRequestTypeDef:
 ```python title="Definition"
 class StartServiceSoftwareUpdateRequestRequestTypeDef(TypedDict):
     DomainName: str,
+    ScheduleAt: NotRequired[ScheduleAtType],  # (1)
+    DesiredStartTime: NotRequired[int],
 ```
 
+1. See [:material-code-brackets: ScheduleAtType](./literals.md#scheduleattype) 
 ## StorageTypeLimitTypeDef
 
 ```python title="Usage Example"
@@ -1467,6 +1554,31 @@ class StorageTypeLimitTypeDef(TypedDict):
     LimitValues: NotRequired[List[str]],
 ```
 
+## UpdateScheduledActionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import UpdateScheduledActionRequestRequestTypeDef
+
+def get_value() -> UpdateScheduledActionRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ActionID": ...,
+        "ActionType": ...,
+        "ScheduleAt": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateScheduledActionRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ActionID: str,
+    ActionType: ActionTypeType,  # (1)
+    ScheduleAt: ScheduleAtType,  # (2)
+    DesiredStartTime: NotRequired[int],
+```
+
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-brackets: ScheduleAtType](./literals.md#scheduleattype) 
 ## UpgradeDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2067,6 +2179,25 @@ class SnapshotOptionsStatusTypeDef(TypedDict):
 
 1. See [:material-code-braces: SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef) 
 2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
+## SoftwareUpdateOptionsStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import SoftwareUpdateOptionsStatusTypeDef
+
+def get_value() -> SoftwareUpdateOptionsStatusTypeDef:
+    return {
+        "Options": ...,
+    }
+```
+
+```python title="Definition"
+class SoftwareUpdateOptionsStatusTypeDef(TypedDict):
+    Options: NotRequired[SoftwareUpdateOptionsTypeDef],  # (1)
+    Status: NotRequired[OptionStatusTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SoftwareUpdateOptionsTypeDef](./type_defs.md#softwareupdateoptionstypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## CreateVpcEndpointRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -2475,6 +2606,65 @@ class ListInstanceTypeDetailsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: InstanceTypeDetailsTypeDef](./type_defs.md#instancetypedetailstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListScheduledActionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import ListScheduledActionsResponseTypeDef
+
+def get_value() -> ListScheduledActionsResponseTypeDef:
+    return {
+        "ScheduledActions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListScheduledActionsResponseTypeDef(TypedDict):
+    ScheduledActions: List[ScheduledActionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateScheduledActionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import UpdateScheduledActionResponseTypeDef
+
+def get_value() -> UpdateScheduledActionResponseTypeDef:
+    return {
+        "ScheduledAction": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateScheduledActionResponseTypeDef(TypedDict):
+    ScheduledAction: ScheduledActionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OffPeakWindowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import OffPeakWindowTypeDef
+
+def get_value() -> OffPeakWindowTypeDef:
+    return {
+        "WindowStartTime": ...,
+    }
+```
+
+```python title="Definition"
+class OffPeakWindowTypeDef(TypedDict):
+    WindowStartTime: NotRequired[WindowStartTimeTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WindowStartTimeTypeDef](./type_defs.md#windowstarttimetypedef) 
 ## ReservedInstanceOfferingTypeDef
 
 ```python title="Usage Example"
@@ -2762,6 +2952,7 @@ def get_value() -> AutoTuneOptionsInputTypeDef:
 class AutoTuneOptionsInputTypeDef(TypedDict):
     DesiredState: NotRequired[AutoTuneDesiredStateType],  # (1)
     MaintenanceSchedules: NotRequired[Sequence[AutoTuneMaintenanceScheduleTypeDef]],  # (2)
+    UseOffPeakWindow: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype) 
@@ -2782,6 +2973,7 @@ class AutoTuneOptionsTypeDef(TypedDict):
     DesiredState: NotRequired[AutoTuneDesiredStateType],  # (1)
     RollbackOnDisable: NotRequired[RollbackOnDisableType],  # (2)
     MaintenanceSchedules: NotRequired[List[AutoTuneMaintenanceScheduleTypeDef]],  # (3)
+    UseOffPeakWindow: NotRequired[bool],
 ```
 
 1. See [:material-code-brackets: AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype) 
@@ -3056,6 +3248,24 @@ class UpdateVpcEndpointResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## OffPeakWindowOptionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import OffPeakWindowOptionsTypeDef
+
+def get_value() -> OffPeakWindowOptionsTypeDef:
+    return {
+        "Enabled": ...,
+    }
+```
+
+```python title="Definition"
+class OffPeakWindowOptionsTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    OffPeakWindow: NotRequired[OffPeakWindowTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: OffPeakWindowTypeDef](./type_defs.md#offpeakwindowtypedef) 
 ## DescribeReservedInstanceOfferingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3351,6 +3561,25 @@ class AutoTuneOptionsStatusTypeDef(TypedDict):
 
 1. See [:material-code-braces: AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef) 
 2. See [:material-code-braces: AutoTuneStatusTypeDef](./type_defs.md#autotunestatustypedef) 
+## OffPeakWindowOptionsStatusTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opensearch.type_defs import OffPeakWindowOptionsStatusTypeDef
+
+def get_value() -> OffPeakWindowOptionsStatusTypeDef:
+    return {
+        "Options": ...,
+    }
+```
+
+```python title="Definition"
+class OffPeakWindowOptionsStatusTypeDef(TypedDict):
+    Options: NotRequired[OffPeakWindowOptionsTypeDef],  # (1)
+    Status: NotRequired[OptionStatusTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OffPeakWindowOptionsTypeDef](./type_defs.md#offpeakwindowoptionstypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## CreateDomainRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3380,6 +3609,8 @@ class CreateDomainRequestRequestTypeDef(TypedDict):
     AdvancedSecurityOptions: NotRequired[AdvancedSecurityOptionsInputTypeDef],  # (10)
     TagList: NotRequired[Sequence[TagTypeDef]],  # (11)
     AutoTuneOptions: NotRequired[AutoTuneOptionsInputTypeDef],  # (12)
+    OffPeakWindowOptions: NotRequired[OffPeakWindowOptionsTypeDef],  # (13)
+    SoftwareUpdateOptions: NotRequired[SoftwareUpdateOptionsTypeDef],  # (14)
 ```
 
 1. See [:material-code-braces: ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef) 
@@ -3394,6 +3625,8 @@ class CreateDomainRequestRequestTypeDef(TypedDict):
 10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
 11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 12. See [:material-code-braces: AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef) 
+13. See [:material-code-braces: OffPeakWindowOptionsTypeDef](./type_defs.md#offpeakwindowoptionstypedef) 
+14. See [:material-code-braces: SoftwareUpdateOptionsTypeDef](./type_defs.md#softwareupdateoptionstypedef) 
 ## UpdateDomainConfigRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3423,6 +3656,8 @@ class UpdateDomainConfigRequestRequestTypeDef(TypedDict):
     AutoTuneOptions: NotRequired[AutoTuneOptionsTypeDef],  # (11)
     DryRun: NotRequired[bool],
     DryRunMode: NotRequired[DryRunModeType],  # (12)
+    OffPeakWindowOptions: NotRequired[OffPeakWindowOptionsTypeDef],  # (13)
+    SoftwareUpdateOptions: NotRequired[SoftwareUpdateOptionsTypeDef],  # (14)
 ```
 
 1. See [:material-code-braces: ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef) 
@@ -3437,6 +3672,8 @@ class UpdateDomainConfigRequestRequestTypeDef(TypedDict):
 10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
 11. See [:material-code-braces: AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef) 
 12. See [:material-code-brackets: DryRunModeType](./literals.md#dryrunmodetype) 
+13. See [:material-code-braces: OffPeakWindowOptionsTypeDef](./type_defs.md#offpeakwindowoptionstypedef) 
+14. See [:material-code-braces: SoftwareUpdateOptionsTypeDef](./type_defs.md#softwareupdateoptionstypedef) 
 ## AdvancedSecurityOptionsStatusTypeDef
 
 ```python title="Usage Example"
@@ -3498,6 +3735,8 @@ class DomainStatusTypeDef(TypedDict):
     AdvancedSecurityOptions: NotRequired[AdvancedSecurityOptionsTypeDef],  # (11)
     AutoTuneOptions: NotRequired[AutoTuneOptionsOutputTypeDef],  # (12)
     ChangeProgressDetails: NotRequired[ChangeProgressDetailsTypeDef],  # (13)
+    OffPeakWindowOptions: NotRequired[OffPeakWindowOptionsTypeDef],  # (14)
+    SoftwareUpdateOptions: NotRequired[SoftwareUpdateOptionsTypeDef],  # (15)
 ```
 
 1. See [:material-code-braces: ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef) 
@@ -3513,6 +3752,8 @@ class DomainStatusTypeDef(TypedDict):
 11. See [:material-code-braces: AdvancedSecurityOptionsTypeDef](./type_defs.md#advancedsecurityoptionstypedef) 
 12. See [:material-code-braces: AutoTuneOptionsOutputTypeDef](./type_defs.md#autotuneoptionsoutputtypedef) 
 13. See [:material-code-braces: ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef) 
+14. See [:material-code-braces: OffPeakWindowOptionsTypeDef](./type_defs.md#offpeakwindowoptionstypedef) 
+15. See [:material-code-braces: SoftwareUpdateOptionsTypeDef](./type_defs.md#softwareupdateoptionstypedef) 
 ## DescribeInstanceTypeLimitsResponseTypeDef
 
 ```python title="Usage Example"
@@ -3561,6 +3802,8 @@ class DomainConfigTypeDef(TypedDict):
     AdvancedSecurityOptions: NotRequired[AdvancedSecurityOptionsStatusTypeDef],  # (13)
     AutoTuneOptions: NotRequired[AutoTuneOptionsStatusTypeDef],  # (14)
     ChangeProgressDetails: NotRequired[ChangeProgressDetailsTypeDef],  # (15)
+    OffPeakWindowOptions: NotRequired[OffPeakWindowOptionsStatusTypeDef],  # (16)
+    SoftwareUpdateOptions: NotRequired[SoftwareUpdateOptionsStatusTypeDef],  # (17)
 ```
 
 1. See [:material-code-braces: VersionStatusTypeDef](./type_defs.md#versionstatustypedef) 
@@ -3578,6 +3821,8 @@ class DomainConfigTypeDef(TypedDict):
 13. See [:material-code-braces: AdvancedSecurityOptionsStatusTypeDef](./type_defs.md#advancedsecurityoptionsstatustypedef) 
 14. See [:material-code-braces: AutoTuneOptionsStatusTypeDef](./type_defs.md#autotuneoptionsstatustypedef) 
 15. See [:material-code-braces: ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef) 
+16. See [:material-code-braces: OffPeakWindowOptionsStatusTypeDef](./type_defs.md#offpeakwindowoptionsstatustypedef) 
+17. See [:material-code-braces: SoftwareUpdateOptionsStatusTypeDef](./type_defs.md#softwareupdateoptionsstatustypedef) 
 ## CreateDomainResponseTypeDef
 
 ```python title="Usage Example"
