@@ -363,7 +363,7 @@ parent.create_publishing_destination(**kwargs)
 
 ### create\_sample\_findings
 
-Generates example findings of types specified by the list of finding types.
+Generates sample findings of types specified by the list of finding types.
 
 Type annotations and code completion for `#!python boto3.client("guardduty").create_sample_findings` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)

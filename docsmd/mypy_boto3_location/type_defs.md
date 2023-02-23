@@ -7,6 +7,42 @@
     Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
     type annotations stubs module [mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
+## ApiKeyFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ApiKeyFilterTypeDef
+
+def get_value() -> ApiKeyFilterTypeDef:
+    return {
+        "KeyStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ApiKeyFilterTypeDef(TypedDict):
+    KeyStatus: NotRequired[StatusType],  # (1)
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+## ApiKeyRestrictionsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ApiKeyRestrictionsTypeDef
+
+def get_value() -> ApiKeyRestrictionsTypeDef:
+    return {
+        "AllowActions": ...,
+        "AllowResources": ...,
+    }
+```
+
+```python title="Definition"
+class ApiKeyRestrictionsTypeDef(TypedDict):
+    AllowActions: Sequence[str],
+    AllowResources: Sequence[str],
+    AllowReferers: NotRequired[Sequence[str]],
+```
+
 ## AssociateTrackerConsumerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -379,6 +415,22 @@ class DeleteGeofenceCollectionRequestRequestTypeDef(TypedDict):
     CollectionName: str,
 ```
 
+## DeleteKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import DeleteKeyRequestRequestTypeDef
+
+def get_value() -> DeleteKeyRequestRequestTypeDef:
+    return {
+        "KeyName": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteKeyRequestRequestTypeDef(TypedDict):
+    KeyName: str,
+```
+
 ## DeleteMapRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -457,6 +509,22 @@ def get_value() -> DescribeGeofenceCollectionRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeGeofenceCollectionRequestRequestTypeDef(TypedDict):
     CollectionName: str,
+```
+
+## DescribeKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import DescribeKeyRequestRequestTypeDef
+
+def get_value() -> DescribeKeyRequestRequestTypeDef:
+    return {
+        "KeyName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeKeyRequestRequestTypeDef(TypedDict):
+    KeyName: str,
 ```
 
 ## DescribeMapRequestRequestTypeDef
@@ -651,6 +719,7 @@ class GetMapGlyphsRequestRequestTypeDef(TypedDict):
     FontStack: str,
     FontUnicodeRange: str,
     MapName: str,
+    Key: NotRequired[str],
 ```
 
 ## GetMapSpritesRequestRequestTypeDef
@@ -669,6 +738,7 @@ def get_value() -> GetMapSpritesRequestRequestTypeDef:
 class GetMapSpritesRequestRequestTypeDef(TypedDict):
     FileName: str,
     MapName: str,
+    Key: NotRequired[str],
 ```
 
 ## GetMapStyleDescriptorRequestRequestTypeDef
@@ -685,6 +755,7 @@ def get_value() -> GetMapStyleDescriptorRequestRequestTypeDef:
 ```python title="Definition"
 class GetMapStyleDescriptorRequestRequestTypeDef(TypedDict):
     MapName: str,
+    Key: NotRequired[str],
 ```
 
 ## GetMapTileRequestRequestTypeDef
@@ -707,6 +778,7 @@ class GetMapTileRequestRequestTypeDef(TypedDict):
     X: str,
     Y: str,
     Z: str,
+    Key: NotRequired[str],
 ```
 
 ## GetPlaceRequestRequestTypeDef
@@ -1367,6 +1439,96 @@ class UpdateTrackerRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PositionFilteringType](./literals.md#positionfilteringtype) 
 2. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+## ListKeysRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListKeysRequestRequestTypeDef
+
+def get_value() -> ListKeysRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeysRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[ApiKeyFilterTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: ApiKeyFilterTypeDef](./type_defs.md#apikeyfiltertypedef) 
+## CreateKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import CreateKeyRequestRequestTypeDef
+
+def get_value() -> CreateKeyRequestRequestTypeDef:
+    return {
+        "KeyName": ...,
+        "Restrictions": ...,
+    }
+```
+
+```python title="Definition"
+class CreateKeyRequestRequestTypeDef(TypedDict):
+    KeyName: str,
+    Restrictions: ApiKeyRestrictionsTypeDef,  # (1)
+    Description: NotRequired[str],
+    ExpireTime: NotRequired[Union[datetime, str]],
+    NoExpiry: NotRequired[bool],
+    Tags: NotRequired[Mapping[str, str]],
+```
+
+1. See [:material-code-braces: ApiKeyRestrictionsTypeDef](./type_defs.md#apikeyrestrictionstypedef) 
+## ListKeysResponseEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListKeysResponseEntryTypeDef
+
+def get_value() -> ListKeysResponseEntryTypeDef:
+    return {
+        "CreateTime": ...,
+        "ExpireTime": ...,
+        "KeyName": ...,
+        "Restrictions": ...,
+        "UpdateTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeysResponseEntryTypeDef(TypedDict):
+    CreateTime: datetime,
+    ExpireTime: datetime,
+    KeyName: str,
+    Restrictions: ApiKeyRestrictionsTypeDef,  # (1)
+    UpdateTime: datetime,
+    Description: NotRequired[str],
+```
+
+1. See [:material-code-braces: ApiKeyRestrictionsTypeDef](./type_defs.md#apikeyrestrictionstypedef) 
+## UpdateKeyRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import UpdateKeyRequestRequestTypeDef
+
+def get_value() -> UpdateKeyRequestRequestTypeDef:
+    return {
+        "KeyName": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateKeyRequestRequestTypeDef(TypedDict):
+    KeyName: str,
+    Description: NotRequired[str],
+    ExpireTime: NotRequired[Union[datetime, str]],
+    ForceUpdate: NotRequired[bool],
+    NoExpiry: NotRequired[bool],
+    Restrictions: NotRequired[ApiKeyRestrictionsTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ApiKeyRestrictionsTypeDef](./type_defs.md#apikeyrestrictionstypedef) 
 ## BatchDeleteDevicePositionHistoryErrorTypeDef
 
 ```python title="Usage Example"
@@ -1508,6 +1670,31 @@ class CreateGeofenceCollectionResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import CreateKeyResponseTypeDef
+
+def get_value() -> CreateKeyResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "Key": ...,
+        "KeyArn": ...,
+        "KeyName": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateKeyResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    Key: str,
+    KeyArn: str,
+    KeyName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMapResponseTypeDef
 
 ```python title="Usage Example"
@@ -1636,6 +1823,42 @@ class DescribeGeofenceCollectionResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import DescribeKeyResponseTypeDef
+
+def get_value() -> DescribeKeyResponseTypeDef:
+    return {
+        "CreateTime": ...,
+        "Description": ...,
+        "ExpireTime": ...,
+        "Key": ...,
+        "KeyArn": ...,
+        "KeyName": ...,
+        "Restrictions": ...,
+        "Tags": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeKeyResponseTypeDef(TypedDict):
+    CreateTime: datetime,
+    Description: str,
+    ExpireTime: datetime,
+    Key: str,
+    KeyArn: str,
+    KeyName: str,
+    Restrictions: ApiKeyRestrictionsTypeDef,  # (1)
+    Tags: Dict[str, str],
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ApiKeyRestrictionsTypeDef](./type_defs.md#apikeyrestrictionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRouteCalculatorResponseTypeDef
 
 ```python title="Usage Example"
@@ -1717,6 +1940,7 @@ from mypy_boto3_location.type_defs import GetMapGlyphsResponseTypeDef
 def get_value() -> GetMapGlyphsResponseTypeDef:
     return {
         "Blob": ...,
+        "CacheControl": ...,
         "ContentType": ...,
         "ResponseMetadata": ...,
     }
@@ -1725,6 +1949,7 @@ def get_value() -> GetMapGlyphsResponseTypeDef:
 ```python title="Definition"
 class GetMapGlyphsResponseTypeDef(TypedDict):
     Blob: StreamingBody,
+    CacheControl: str,
     ContentType: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
@@ -1738,6 +1963,7 @@ from mypy_boto3_location.type_defs import GetMapSpritesResponseTypeDef
 def get_value() -> GetMapSpritesResponseTypeDef:
     return {
         "Blob": ...,
+        "CacheControl": ...,
         "ContentType": ...,
         "ResponseMetadata": ...,
     }
@@ -1746,6 +1972,7 @@ def get_value() -> GetMapSpritesResponseTypeDef:
 ```python title="Definition"
 class GetMapSpritesResponseTypeDef(TypedDict):
     Blob: StreamingBody,
+    CacheControl: str,
     ContentType: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
@@ -1759,6 +1986,7 @@ from mypy_boto3_location.type_defs import GetMapStyleDescriptorResponseTypeDef
 def get_value() -> GetMapStyleDescriptorResponseTypeDef:
     return {
         "Blob": ...,
+        "CacheControl": ...,
         "ContentType": ...,
         "ResponseMetadata": ...,
     }
@@ -1767,6 +1995,7 @@ def get_value() -> GetMapStyleDescriptorResponseTypeDef:
 ```python title="Definition"
 class GetMapStyleDescriptorResponseTypeDef(TypedDict):
     Blob: StreamingBody,
+    CacheControl: str,
     ContentType: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
@@ -1780,6 +2009,7 @@ from mypy_boto3_location.type_defs import GetMapTileResponseTypeDef
 def get_value() -> GetMapTileResponseTypeDef:
     return {
         "Blob": ...,
+        "CacheControl": ...,
         "ContentType": ...,
         "ResponseMetadata": ...,
     }
@@ -1788,6 +2018,7 @@ def get_value() -> GetMapTileResponseTypeDef:
 ```python title="Definition"
 class GetMapTileResponseTypeDef(TypedDict):
     Blob: StreamingBody,
+    CacheControl: str,
     ContentType: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
@@ -1874,6 +2105,29 @@ def get_value() -> UpdateGeofenceCollectionResponseTypeDef:
 class UpdateGeofenceCollectionResponseTypeDef(TypedDict):
     CollectionArn: str,
     CollectionName: str,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateKeyResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import UpdateKeyResponseTypeDef
+
+def get_value() -> UpdateKeyResponseTypeDef:
+    return {
+        "KeyArn": ...,
+        "KeyName": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateKeyResponseTypeDef(TypedDict):
+    KeyArn: str,
+    KeyName: str,
     UpdateTime: datetime,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
@@ -2327,6 +2581,25 @@ class ListGeofencesRequestListGeofencesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListKeysRequestListKeysPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListKeysRequestListKeysPaginateTypeDef
+
+def get_value() -> ListKeysRequestListKeysPaginateTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeysRequestListKeysPaginateTypeDef(TypedDict):
+    Filter: NotRequired[ApiKeyFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ApiKeyFilterTypeDef](./type_defs.md#apikeyfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMapsRequestListMapsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -2623,6 +2896,28 @@ class SearchPlaceIndexForSuggestionsResponseTypeDef(TypedDict):
 1. See [:material-code-braces: SearchForSuggestionsResultTypeDef](./type_defs.md#searchforsuggestionsresulttypedef) 
 2. See [:material-code-braces: SearchPlaceIndexForSuggestionsSummaryTypeDef](./type_defs.md#searchplaceindexforsuggestionssummarytypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListKeysResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_location.type_defs import ListKeysResponseTypeDef
+
+def get_value() -> ListKeysResponseTypeDef:
+    return {
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListKeysResponseTypeDef(TypedDict):
+    Entries: List[ListKeysResponseEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ListKeysResponseEntryTypeDef](./type_defs.md#listkeysresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteDevicePositionHistoryResponseTypeDef
 
 ```python title="Usage Example"

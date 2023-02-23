@@ -668,6 +668,7 @@ def get_value() -> SalesforceConnectorProfilePropertiesTypeDef:
 class SalesforceConnectorProfilePropertiesTypeDef(TypedDict):
     instanceUrl: NotRequired[str],
     isSandboxEnvironment: NotRequired[bool],
+    usePrivateLinkForMetadataAndAuthorization: NotRequired[bool],
 ```
 
 ## ServiceNowConnectorProfilePropertiesTypeDef

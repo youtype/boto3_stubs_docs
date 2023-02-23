@@ -15,7 +15,7 @@
         <link rel="next" href="client/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.14">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ffa9267a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.113286f1.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
@@ -40553,6 +40553,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listdevicepositionspaginator">ListDevicePositionsPaginator</a></li>
 <li><a href="paginators/#listgeofencecollectionspaginator">ListGeofenceCollectionsPaginator</a></li>
 <li><a href="paginators/#listgeofencespaginator">ListGeofencesPaginator</a></li>
+<li><a href="paginators/#listkeyspaginator">ListKeysPaginator</a></li>
 <li><a href="paginators/#listmapspaginator">ListMapsPaginator</a></li>
 <li><a href="paginators/#listplaceindexespaginator">ListPlaceIndexesPaginator</a></li>
 <li><a href="paginators/#listroutecalculatorspaginator">ListRouteCalculatorsPaginator</a></li>
@@ -40575,6 +40576,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listdevicepositionspaginatorname">ListDevicePositionsPaginatorName</a></li>
 <li><a href="literals/#listgeofencecollectionspaginatorname">ListGeofenceCollectionsPaginatorName</a></li>
 <li><a href="literals/#listgeofencespaginatorname">ListGeofencesPaginatorName</a></li>
+<li><a href="literals/#listkeyspaginatorname">ListKeysPaginatorName</a></li>
 <li><a href="literals/#listmapspaginatorname">ListMapsPaginatorName</a></li>
 <li><a href="literals/#listplaceindexespaginatorname">ListPlaceIndexesPaginatorName</a></li>
 <li><a href="literals/#listroutecalculatorspaginatorname">ListRouteCalculatorsPaginatorName</a></li>
@@ -40583,6 +40585,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#positionfilteringtype">PositionFilteringType</a></li>
 <li><a href="literals/#pricingplantype">PricingPlanType</a></li>
 <li><a href="literals/#routematrixerrorcodetype">RouteMatrixErrorCodeType</a></li>
+<li><a href="literals/#statustype">StatusType</a></li>
 <li><a href="literals/#travelmodetype">TravelModeType</a></li>
 <li><a href="literals/#vehicleweightunittype">VehicleWeightUnitType</a></li>
 <li><a href="literals/#locationserviceservicename">LocationServiceServiceName</a></li>
@@ -40593,15 +40596,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </ul>
 <h2 id="typed-dictionaries">Typed dictionaries</h2>
 <p>Type annotations for <a href="type_defs/">typed dictionaries</a> used in methods and schema.</p>
-<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_location.type_defs</span> <span class="kn">import</span> <span class="n">AssociateTrackerConsumerRequestRequestTypeDef</span>
+<div class="highlight"><span class="filename">Usage example</span><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span> <span class="nn">mypy_boto3_location.type_defs</span> <span class="kn">import</span> <span class="n">ApiKeyFilterTypeDef</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">AssociateTrackerConsumerRequestRequestTypeDef</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span> <span class="nf">get_value</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">ApiKeyFilterTypeDef</span><span class="p">:</span>
 <a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">return</span> <span class="p">{</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;ConsumerArn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="s2">&quot;TrackerName&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="s2">&quot;KeyStatus&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">}</span>
 </code></pre></div>
 <ul>
+<li><a href="type_defs/#apikeyfiltertypedef">ApiKeyFilterTypeDef</a></li>
+<li><a href="type_defs/#apikeyrestrictionstypedef">ApiKeyRestrictionsTypeDef</a></li>
 <li><a href="type_defs/#associatetrackerconsumerrequestrequesttypedef">AssociateTrackerConsumerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#batchitemerrortypedef">BatchItemErrorTypeDef</a></li>
 <li><a href="type_defs/#batchdeletedevicepositionhistoryrequestrequesttypedef">BatchDeleteDevicePositionHistoryRequestRequestTypeDef</a></li>
@@ -40621,11 +40625,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createroutecalculatorrequestrequesttypedef">CreateRouteCalculatorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#createtrackerrequestrequesttypedef">CreateTrackerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletegeofencecollectionrequestrequesttypedef">DeleteGeofenceCollectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#deletekeyrequestrequesttypedef">DeleteKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletemaprequestrequesttypedef">DeleteMapRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteplaceindexrequestrequesttypedef">DeletePlaceIndexRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteroutecalculatorrequestrequesttypedef">DeleteRouteCalculatorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletetrackerrequestrequesttypedef">DeleteTrackerRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describegeofencecollectionrequestrequesttypedef">DescribeGeofenceCollectionRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describekeyrequestrequesttypedef">DescribeKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describemaprequestrequesttypedef">DescribeMapRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeplaceindexrequestrequesttypedef">DescribePlaceIndexRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describeroutecalculatorrequestrequesttypedef">DescribeRouteCalculatorRequestRequestTypeDef</a></li>
@@ -40673,6 +40679,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatemaprequestrequesttypedef">UpdateMapRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updateroutecalculatorrequestrequesttypedef">UpdateRouteCalculatorRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatetrackerrequestrequesttypedef">UpdateTrackerRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listkeysrequestrequesttypedef">ListKeysRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createkeyrequestrequesttypedef">CreateKeyRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listkeysresponseentrytypedef">ListKeysResponseEntryTypeDef</a></li>
+<li><a href="type_defs/#updatekeyrequestrequesttypedef">UpdateKeyRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#batchdeletedevicepositionhistoryerrortypedef">BatchDeleteDevicePositionHistoryErrorTypeDef</a></li>
 <li><a href="type_defs/#batchdeletegeofenceerrortypedef">BatchDeleteGeofenceErrorTypeDef</a></li>
 <li><a href="type_defs/#batchevaluategeofenceserrortypedef">BatchEvaluateGeofencesErrorTypeDef</a></li>
@@ -40680,11 +40690,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchputgeofenceerrortypedef">BatchPutGeofenceErrorTypeDef</a></li>
 <li><a href="type_defs/#batchupdatedevicepositionerrortypedef">BatchUpdateDevicePositionErrorTypeDef</a></li>
 <li><a href="type_defs/#creategeofencecollectionresponsetypedef">CreateGeofenceCollectionResponseTypeDef</a></li>
+<li><a href="type_defs/#createkeyresponsetypedef">CreateKeyResponseTypeDef</a></li>
 <li><a href="type_defs/#createmapresponsetypedef">CreateMapResponseTypeDef</a></li>
 <li><a href="type_defs/#createplaceindexresponsetypedef">CreatePlaceIndexResponseTypeDef</a></li>
 <li><a href="type_defs/#createroutecalculatorresponsetypedef">CreateRouteCalculatorResponseTypeDef</a></li>
 <li><a href="type_defs/#createtrackerresponsetypedef">CreateTrackerResponseTypeDef</a></li>
 <li><a href="type_defs/#describegeofencecollectionresponsetypedef">DescribeGeofenceCollectionResponseTypeDef</a></li>
+<li><a href="type_defs/#describekeyresponsetypedef">DescribeKeyResponseTypeDef</a></li>
 <li><a href="type_defs/#describeroutecalculatorresponsetypedef">DescribeRouteCalculatorResponseTypeDef</a></li>
 <li><a href="type_defs/#describetrackerresponsetypedef">DescribeTrackerResponseTypeDef</a></li>
 <li><a href="type_defs/#getmapglyphsresponsetypedef">GetMapGlyphsResponseTypeDef</a></li>
@@ -40695,6 +40707,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtrackerconsumersresponsetypedef">ListTrackerConsumersResponseTypeDef</a></li>
 <li><a href="type_defs/#putgeofenceresponsetypedef">PutGeofenceResponseTypeDef</a></li>
 <li><a href="type_defs/#updategeofencecollectionresponsetypedef">UpdateGeofenceCollectionResponseTypeDef</a></li>
+<li><a href="type_defs/#updatekeyresponsetypedef">UpdateKeyResponseTypeDef</a></li>
 <li><a href="type_defs/#updatemapresponsetypedef">UpdateMapResponseTypeDef</a></li>
 <li><a href="type_defs/#updateplaceindexresponsetypedef">UpdatePlaceIndexResponseTypeDef</a></li>
 <li><a href="type_defs/#updateroutecalculatorresponsetypedef">UpdateRouteCalculatorResponseTypeDef</a></li>
@@ -40714,6 +40727,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listdevicepositionsrequestlistdevicepositionspaginatetypedef">ListDevicePositionsRequestListDevicePositionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listgeofencecollectionsrequestlistgeofencecollectionspaginatetypedef">ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listgeofencesrequestlistgeofencespaginatetypedef">ListGeofencesRequestListGeofencesPaginateTypeDef</a></li>
+<li><a href="type_defs/#listkeysrequestlistkeyspaginatetypedef">ListKeysRequestListKeysPaginateTypeDef</a></li>
 <li><a href="type_defs/#listmapsrequestlistmapspaginatetypedef">ListMapsRequestListMapsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listplaceindexesrequestlistplaceindexespaginatetypedef">ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef</a></li>
 <li><a href="type_defs/#listroutecalculatorsrequestlistroutecalculatorspaginatetypedef">ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef</a></li>
@@ -40728,6 +40742,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#placetypedef">PlaceTypeDef</a></li>
 <li><a href="type_defs/#routematrixentrytypedef">RouteMatrixEntryTypeDef</a></li>
 <li><a href="type_defs/#searchplaceindexforsuggestionsresponsetypedef">SearchPlaceIndexForSuggestionsResponseTypeDef</a></li>
+<li><a href="type_defs/#listkeysresponsetypedef">ListKeysResponseTypeDef</a></li>
 <li><a href="type_defs/#batchdeletedevicepositionhistoryresponsetypedef">BatchDeleteDevicePositionHistoryResponseTypeDef</a></li>
 <li><a href="type_defs/#batchdeletegeofenceresponsetypedef">BatchDeleteGeofenceResponseTypeDef</a></li>
 <li><a href="type_defs/#batchevaluategeofencesresponsetypedef">BatchEvaluateGeofencesResponseTypeDef</a></li>

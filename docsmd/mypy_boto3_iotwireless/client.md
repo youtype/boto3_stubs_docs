@@ -420,6 +420,9 @@ def create_fuota_task(
     ClientRequestToken: str = ...,
     LoRaWAN: LoRaWANFuotaTaskTypeDef = ...,  # (1)
     Tags: Sequence[TagTypeDef] = ...,  # (2)
+    RedundancyPercent: int = ...,
+    FragmentSizeBytes: int = ...,
+    FragmentIntervalMS: int = ...,
 ) -> CreateFuotaTaskResponseTypeDef:  # (3)
     ...
 ```
@@ -2912,6 +2915,9 @@ def update_fuota_task(
     LoRaWAN: LoRaWANFuotaTaskTypeDef = ...,  # (1)
     FirmwareUpdateImage: str = ...,
     FirmwareUpdateRole: str = ...,
+    RedundancyPercent: int = ...,
+    FragmentSizeBytes: int = ...,
+    FragmentIntervalMS: int = ...,
 ) -> Dict[str, Any]:
     ...
 ```

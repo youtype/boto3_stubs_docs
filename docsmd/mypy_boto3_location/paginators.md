@@ -246,6 +246,66 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListGeofencesRequestListGeofencesPaginateTypeDef](./type_defs.md#listgeofencesrequestlistgeofencespaginatetypedef) 
+## ListKeysPaginator
+
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_keys")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListKeys)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListKeysPaginator
+
+def get_list_keys_paginator() -> ListKeysPaginator:
+    return Session().client("location").get_paginator("list_keys")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_location.paginator import ListKeysPaginator
+
+session = Session()
+
+client = Session().client("location")  # (1)
+paginator: ListKeysPaginator = client.get_paginator("list_keys")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [LocationServiceClient](./client.md)
+2. paginator: [ListKeysPaginator](./paginators.md#listkeyspaginator)
+3. item: [:material-code-braces: ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListKeysPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filter: ApiKeyFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListKeysResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ApiKeyFilterTypeDef](./type_defs.md#apikeyfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListKeysRequestListKeysPaginateTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListKeysRequestListKeysPaginateTypeDef](./type_defs.md#listkeysrequestlistkeyspaginatetypedef) 
 ## ListMapsPaginator
 
 Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_maps")`.

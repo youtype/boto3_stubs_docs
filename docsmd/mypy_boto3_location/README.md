@@ -81,6 +81,7 @@ def get_get_device_position_history_paginator() -> GetDevicePositionHistoryPagin
 - [ListDevicePositionsPaginator](./paginators.md#listdevicepositionspaginator)
 - [ListGeofenceCollectionsPaginator](./paginators.md#listgeofencecollectionspaginator)
 - [ListGeofencesPaginator](./paginators.md#listgeofencespaginator)
+- [ListKeysPaginator](./paginators.md#listkeyspaginator)
 - [ListMapsPaginator](./paginators.md#listmapspaginator)
 - [ListPlaceIndexesPaginator](./paginators.md#listplaceindexespaginator)
 - [ListRouteCalculatorsPaginator](./paginators.md#listroutecalculatorspaginator)
@@ -114,6 +115,7 @@ def get_value() -> BatchItemErrorCodeType:
 - [ListDevicePositionsPaginatorName](./literals.md#listdevicepositionspaginatorname)
 - [ListGeofenceCollectionsPaginatorName](./literals.md#listgeofencecollectionspaginatorname)
 - [ListGeofencesPaginatorName](./literals.md#listgeofencespaginatorname)
+- [ListKeysPaginatorName](./literals.md#listkeyspaginatorname)
 - [ListMapsPaginatorName](./literals.md#listmapspaginatorname)
 - [ListPlaceIndexesPaginatorName](./literals.md#listplaceindexespaginatorname)
 - [ListRouteCalculatorsPaginatorName](./literals.md#listroutecalculatorspaginatorname)
@@ -122,6 +124,7 @@ def get_value() -> BatchItemErrorCodeType:
 - [PositionFilteringType](./literals.md#positionfilteringtype)
 - [PricingPlanType](./literals.md#pricingplantype)
 - [RouteMatrixErrorCodeType](./literals.md#routematrixerrorcodetype)
+- [StatusType](./literals.md#statustype)
 - [TravelModeType](./literals.md#travelmodetype)
 - [VehicleWeightUnitType](./literals.md#vehicleweightunittype)
 - [LocationServiceServiceName](./literals.md#locationserviceservicename)
@@ -138,15 +141,16 @@ def get_value() -> BatchItemErrorCodeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequestTypeDef
+from mypy_boto3_location.type_defs import ApiKeyFilterTypeDef
 
-def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
+def get_value() -> ApiKeyFilterTypeDef:
     return {
-        "ConsumerArn": ...,
-        "TrackerName": ...,
+        "KeyStatus": ...,
     }
 ```
 
+- [ApiKeyFilterTypeDef](./type_defs.md#apikeyfiltertypedef)
+- [ApiKeyRestrictionsTypeDef](./type_defs.md#apikeyrestrictionstypedef)
 - [AssociateTrackerConsumerRequestRequestTypeDef](./type_defs.md#associatetrackerconsumerrequestrequesttypedef)
 - [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - [BatchDeleteDevicePositionHistoryRequestRequestTypeDef](./type_defs.md#batchdeletedevicepositionhistoryrequestrequesttypedef)
@@ -166,11 +170,13 @@ def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
 - [CreateRouteCalculatorRequestRequestTypeDef](./type_defs.md#createroutecalculatorrequestrequesttypedef)
 - [CreateTrackerRequestRequestTypeDef](./type_defs.md#createtrackerrequestrequesttypedef)
 - [DeleteGeofenceCollectionRequestRequestTypeDef](./type_defs.md#deletegeofencecollectionrequestrequesttypedef)
+- [DeleteKeyRequestRequestTypeDef](./type_defs.md#deletekeyrequestrequesttypedef)
 - [DeleteMapRequestRequestTypeDef](./type_defs.md#deletemaprequestrequesttypedef)
 - [DeletePlaceIndexRequestRequestTypeDef](./type_defs.md#deleteplaceindexrequestrequesttypedef)
 - [DeleteRouteCalculatorRequestRequestTypeDef](./type_defs.md#deleteroutecalculatorrequestrequesttypedef)
 - [DeleteTrackerRequestRequestTypeDef](./type_defs.md#deletetrackerrequestrequesttypedef)
 - [DescribeGeofenceCollectionRequestRequestTypeDef](./type_defs.md#describegeofencecollectionrequestrequesttypedef)
+- [DescribeKeyRequestRequestTypeDef](./type_defs.md#describekeyrequestrequesttypedef)
 - [DescribeMapRequestRequestTypeDef](./type_defs.md#describemaprequestrequesttypedef)
 - [DescribePlaceIndexRequestRequestTypeDef](./type_defs.md#describeplaceindexrequestrequesttypedef)
 - [DescribeRouteCalculatorRequestRequestTypeDef](./type_defs.md#describeroutecalculatorrequestrequesttypedef)
@@ -218,6 +224,10 @@ def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
 - [UpdateMapRequestRequestTypeDef](./type_defs.md#updatemaprequestrequesttypedef)
 - [UpdateRouteCalculatorRequestRequestTypeDef](./type_defs.md#updateroutecalculatorrequestrequesttypedef)
 - [UpdateTrackerRequestRequestTypeDef](./type_defs.md#updatetrackerrequestrequesttypedef)
+- [ListKeysRequestRequestTypeDef](./type_defs.md#listkeysrequestrequesttypedef)
+- [CreateKeyRequestRequestTypeDef](./type_defs.md#createkeyrequestrequesttypedef)
+- [ListKeysResponseEntryTypeDef](./type_defs.md#listkeysresponseentrytypedef)
+- [UpdateKeyRequestRequestTypeDef](./type_defs.md#updatekeyrequestrequesttypedef)
 - [BatchDeleteDevicePositionHistoryErrorTypeDef](./type_defs.md#batchdeletedevicepositionhistoryerrortypedef)
 - [BatchDeleteGeofenceErrorTypeDef](./type_defs.md#batchdeletegeofenceerrortypedef)
 - [BatchEvaluateGeofencesErrorTypeDef](./type_defs.md#batchevaluategeofenceserrortypedef)
@@ -225,11 +235,13 @@ def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
 - [BatchPutGeofenceErrorTypeDef](./type_defs.md#batchputgeofenceerrortypedef)
 - [BatchUpdateDevicePositionErrorTypeDef](./type_defs.md#batchupdatedevicepositionerrortypedef)
 - [CreateGeofenceCollectionResponseTypeDef](./type_defs.md#creategeofencecollectionresponsetypedef)
+- [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef)
 - [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef)
 - [CreatePlaceIndexResponseTypeDef](./type_defs.md#createplaceindexresponsetypedef)
 - [CreateRouteCalculatorResponseTypeDef](./type_defs.md#createroutecalculatorresponsetypedef)
 - [CreateTrackerResponseTypeDef](./type_defs.md#createtrackerresponsetypedef)
 - [DescribeGeofenceCollectionResponseTypeDef](./type_defs.md#describegeofencecollectionresponsetypedef)
+- [DescribeKeyResponseTypeDef](./type_defs.md#describekeyresponsetypedef)
 - [DescribeRouteCalculatorResponseTypeDef](./type_defs.md#describeroutecalculatorresponsetypedef)
 - [DescribeTrackerResponseTypeDef](./type_defs.md#describetrackerresponsetypedef)
 - [GetMapGlyphsResponseTypeDef](./type_defs.md#getmapglyphsresponsetypedef)
@@ -240,6 +252,7 @@ def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
 - [ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)
 - [PutGeofenceResponseTypeDef](./type_defs.md#putgeofenceresponsetypedef)
 - [UpdateGeofenceCollectionResponseTypeDef](./type_defs.md#updategeofencecollectionresponsetypedef)
+- [UpdateKeyResponseTypeDef](./type_defs.md#updatekeyresponsetypedef)
 - [UpdateMapResponseTypeDef](./type_defs.md#updatemapresponsetypedef)
 - [UpdatePlaceIndexResponseTypeDef](./type_defs.md#updateplaceindexresponsetypedef)
 - [UpdateRouteCalculatorResponseTypeDef](./type_defs.md#updateroutecalculatorresponsetypedef)
@@ -259,6 +272,7 @@ def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
 - [ListDevicePositionsRequestListDevicePositionsPaginateTypeDef](./type_defs.md#listdevicepositionsrequestlistdevicepositionspaginatetypedef)
 - [ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef](./type_defs.md#listgeofencecollectionsrequestlistgeofencecollectionspaginatetypedef)
 - [ListGeofencesRequestListGeofencesPaginateTypeDef](./type_defs.md#listgeofencesrequestlistgeofencespaginatetypedef)
+- [ListKeysRequestListKeysPaginateTypeDef](./type_defs.md#listkeysrequestlistkeyspaginatetypedef)
 - [ListMapsRequestListMapsPaginateTypeDef](./type_defs.md#listmapsrequestlistmapspaginatetypedef)
 - [ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef](./type_defs.md#listplaceindexesrequestlistplaceindexespaginatetypedef)
 - [ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef](./type_defs.md#listroutecalculatorsrequestlistroutecalculatorspaginatetypedef)
@@ -273,6 +287,7 @@ def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
 - [PlaceTypeDef](./type_defs.md#placetypedef)
 - [RouteMatrixEntryTypeDef](./type_defs.md#routematrixentrytypedef)
 - [SearchPlaceIndexForSuggestionsResponseTypeDef](./type_defs.md#searchplaceindexforsuggestionsresponsetypedef)
+- [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef)
 - [BatchDeleteDevicePositionHistoryResponseTypeDef](./type_defs.md#batchdeletedevicepositionhistoryresponsetypedef)
 - [BatchDeleteGeofenceResponseTypeDef](./type_defs.md#batchdeletegeofenceresponsetypedef)
 - [BatchEvaluateGeofencesResponseTypeDef](./type_defs.md#batchevaluategeofencesresponsetypedef)

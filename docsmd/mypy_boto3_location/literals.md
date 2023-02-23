@@ -127,6 +127,20 @@ ListGeofencesPaginatorName = Literal[
     "list_geofences",
 ]
 ```
+## ListKeysPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_location.literals import ListKeysPaginatorName
+
+def get_value() -> ListKeysPaginatorName:
+    return "list_keys"
+```
+
+```python title="Definition"
+ListKeysPaginatorName = Literal[
+    "list_keys",
+]
+```
 ## ListMapsPaginatorName
 
 ```python title="Usage Example"
@@ -246,6 +260,21 @@ RouteMatrixErrorCodeType = Literal[
     "PositionsNotFound",
     "RouteNotFound",
     "RouteTooLong",
+]
+```
+## StatusType
+
+```python title="Usage Example"
+from mypy_boto3_location.literals import StatusType
+
+def get_value() -> StatusType:
+    return "Active"
+```
+
+```python title="Definition"
+StatusType = Literal[
+    "Active",
+    "Expired",
 ]
 ```
 ## TravelModeType
@@ -686,6 +715,7 @@ PaginatorName = Literal[
     "list_device_positions",
     "list_geofence_collections",
     "list_geofences",
+    "list_keys",
     "list_maps",
     "list_place_indexes",
     "list_route_calculators",

@@ -570,6 +570,7 @@ def get_value() -> ResourceTypeType:
 ```python title="Definition"
 ResourceTypeType = Literal[
     "API_GATEWAY",
+    "APP_RUNNER_SERVICE",
     "APPLICATION_LOAD_BALANCER",
     "APPSYNC",
     "COGNITO_USER_POOL",

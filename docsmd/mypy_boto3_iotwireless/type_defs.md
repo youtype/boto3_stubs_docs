@@ -3324,6 +3324,9 @@ class CreateFuotaTaskRequestRequestTypeDef(TypedDict):
     ClientRequestToken: NotRequired[str],
     LoRaWAN: NotRequired[LoRaWANFuotaTaskTypeDef],  # (1)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    RedundancyPercent: NotRequired[int],
+    FragmentSizeBytes: NotRequired[int],
+    FragmentIntervalMS: NotRequired[int],
 ```
 
 1. See [:material-code-braces: LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef) 
@@ -3347,6 +3350,9 @@ class UpdateFuotaTaskRequestRequestTypeDef(TypedDict):
     LoRaWAN: NotRequired[LoRaWANFuotaTaskTypeDef],  # (1)
     FirmwareUpdateImage: NotRequired[str],
     FirmwareUpdateRole: NotRequired[str],
+    RedundancyPercent: NotRequired[int],
+    FragmentSizeBytes: NotRequired[int],
+    FragmentIntervalMS: NotRequired[int],
 ```
 
 1. See [:material-code-braces: LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef) 
@@ -3743,6 +3749,9 @@ def get_value() -> GetFuotaTaskResponseTypeDef:
         "FirmwareUpdateImage": ...,
         "FirmwareUpdateRole": ...,
         "CreatedAt": ...,
+        "RedundancyPercent": ...,
+        "FragmentSizeBytes": ...,
+        "FragmentIntervalMS": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3758,6 +3767,9 @@ class GetFuotaTaskResponseTypeDef(TypedDict):
     FirmwareUpdateImage: str,
     FirmwareUpdateRole: str,
     CreatedAt: datetime,
+    RedundancyPercent: int,
+    FragmentSizeBytes: int,
+    FragmentIntervalMS: int,
     ResponseMetadata: ResponseMetadataTypeDef,  # (3)
 ```
 

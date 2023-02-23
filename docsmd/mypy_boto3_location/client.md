@@ -431,10 +431,48 @@ parent.create_geofence_collection(**kwargs)
 
 1. See [:material-code-braces: CreateGeofenceCollectionRequestRequestTypeDef](./type_defs.md#creategeofencecollectionrequestrequesttypedef) 
 
+### create\_key
+
+Creates an API key resource in your Amazon Web Services account, which lets you
+grant `geo:GetMap*` actions for Amazon Location Map resources to the API key
+bearer.
+
+Type annotations and code completion for `#!python boto3.client("location").create_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_key)
+
+```python title="Method definition"
+def create_key(
+    self,
+    *,
+    KeyName: str,
+    Restrictions: ApiKeyRestrictionsTypeDef,  # (1)
+    Description: str = ...,
+    ExpireTime: Union[datetime, str] = ...,
+    NoExpiry: bool = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateKeyResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ApiKeyRestrictionsTypeDef](./type_defs.md#apikeyrestrictionstypedef) 
+2. See [:material-code-braces: CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateKeyRequestRequestTypeDef = {  # (1)
+    "KeyName": ...,
+    "Restrictions": ...,
+}
+
+parent.create_key(**kwargs)
+```
+
+1. See [:material-code-braces: CreateKeyRequestRequestTypeDef](./type_defs.md#createkeyrequestrequesttypedef) 
+
 ### create\_map
 
-Creates a map resource in your AWS account, which provides map tiles of
-different styles sourced from global location data providers.
+Creates a map resource in your Amazon Web Services account, which provides map
+tiles of different styles sourced from global location data providers.
 
 Type annotations and code completion for `#!python boto3.client("location").create_map` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_map)
@@ -470,7 +508,7 @@ parent.create_map(**kwargs)
 
 ### create\_place\_index
 
-Creates a place index resource in your AWS account.
+Creates a place index resource in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").create_place_index` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_place_index)
@@ -507,7 +545,7 @@ parent.create_place_index(**kwargs)
 
 ### create\_route\_calculator
 
-Creates a route calculator resource in your AWS account.
+Creates a route calculator resource in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").create_route_calculator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_route_calculator)
@@ -542,8 +580,8 @@ parent.create_route_calculator(**kwargs)
 
 ### create\_tracker
 
-Creates a tracker resource in your AWS account, which lets you retrieve current
-and historical location of devices.
+Creates a tracker resource in your Amazon Web Services account, which lets you
+retrieve current and historical location of devices.
 
 Type annotations and code completion for `#!python boto3.client("location").create_tracker` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_tracker)
@@ -580,7 +618,7 @@ parent.create_tracker(**kwargs)
 
 ### delete\_geofence\_collection
 
-Deletes a geofence collection from your AWS account.
+Deletes a geofence collection from your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").delete_geofence_collection` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_geofence_collection)
@@ -606,9 +644,37 @@ parent.delete_geofence_collection(**kwargs)
 
 1. See [:material-code-braces: DeleteGeofenceCollectionRequestRequestTypeDef](./type_defs.md#deletegeofencecollectionrequestrequesttypedef) 
 
+### delete\_key
+
+Deletes the specified API key.
+
+Type annotations and code completion for `#!python boto3.client("location").delete_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_key)
+
+```python title="Method definition"
+def delete_key(
+    self,
+    *,
+    KeyName: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteKeyRequestRequestTypeDef = {  # (1)
+    "KeyName": ...,
+}
+
+parent.delete_key(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteKeyRequestRequestTypeDef](./type_defs.md#deletekeyrequestrequesttypedef) 
+
 ### delete\_map
 
-Deletes a map resource from your AWS account.
+Deletes a map resource from your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").delete_map` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_map)
@@ -636,7 +702,7 @@ parent.delete_map(**kwargs)
 
 ### delete\_place\_index
 
-Deletes a place index resource from your AWS account.
+Deletes a place index resource from your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").delete_place_index` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_place_index)
@@ -664,7 +730,7 @@ parent.delete_place_index(**kwargs)
 
 ### delete\_route\_calculator
 
-Deletes a route calculator resource from your AWS account.
+Deletes a route calculator resource from your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").delete_route_calculator` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_route_calculator)
@@ -692,7 +758,7 @@ parent.delete_route_calculator(**kwargs)
 
 ### delete\_tracker
 
-Deletes a tracker resource from your AWS account.
+Deletes a tracker resource from your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").delete_tracker` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_tracker)
@@ -746,6 +812,35 @@ parent.describe_geofence_collection(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeGeofenceCollectionRequestRequestTypeDef](./type_defs.md#describegeofencecollectionrequestrequesttypedef) 
+
+### describe\_key
+
+Retrieves the API key resource details.
+
+Type annotations and code completion for `#!python boto3.client("location").describe_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_key)
+
+```python title="Method definition"
+def describe_key(
+    self,
+    *,
+    KeyName: str,
+) -> DescribeKeyResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeKeyResponseTypeDef](./type_defs.md#describekeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeKeyRequestRequestTypeDef = {  # (1)
+    "KeyName": ...,
+}
+
+parent.describe_key(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeKeyRequestRequestTypeDef](./type_defs.md#describekeyrequestrequesttypedef) 
 
 ### describe\_map
 
@@ -1024,6 +1119,7 @@ def get_map_glyphs(
     FontStack: str,
     FontUnicodeRange: str,
     MapName: str,
+    Key: str = ...,
 ) -> GetMapGlyphsResponseTypeDef:  # (1)
     ...
 ```
@@ -1056,6 +1152,7 @@ def get_map_sprites(
     *,
     FileName: str,
     MapName: str,
+    Key: str = ...,
 ) -> GetMapSpritesResponseTypeDef:  # (1)
     ...
 ```
@@ -1086,6 +1183,7 @@ def get_map_style_descriptor(
     self,
     *,
     MapName: str,
+    Key: str = ...,
 ) -> GetMapStyleDescriptorResponseTypeDef:  # (1)
     ...
 ```
@@ -1118,6 +1216,7 @@ def get_map_tile(
     X: str,
     Y: str,
     Z: str,
+    Key: str = ...,
 ) -> GetMapTileResponseTypeDef:  # (1)
     ...
 ```
@@ -1203,7 +1302,7 @@ parent.list_device_positions(**kwargs)
 
 ### list\_geofence\_collections
 
-Lists geofence collections in your AWS account.
+Lists geofence collections in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").list_geofence_collections` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofence_collections)
@@ -1262,9 +1361,41 @@ parent.list_geofences(**kwargs)
 
 1. See [:material-code-braces: ListGeofencesRequestRequestTypeDef](./type_defs.md#listgeofencesrequestrequesttypedef) 
 
+### list\_keys
+
+Lists API key resources in your Amazon Web Services account.
+
+Type annotations and code completion for `#!python boto3.client("location").list_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_keys)
+
+```python title="Method definition"
+def list_keys(
+    self,
+    *,
+    Filter: ApiKeyFilterTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListKeysResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ApiKeyFilterTypeDef](./type_defs.md#apikeyfiltertypedef) 
+2. See [:material-code-braces: ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListKeysRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.list_keys(**kwargs)
+```
+
+1. See [:material-code-braces: ListKeysRequestRequestTypeDef](./type_defs.md#listkeysrequestrequesttypedef) 
+
 ### list\_maps
 
-Lists map resources in your AWS account.
+Lists map resources in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").list_maps` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_maps)
@@ -1294,7 +1425,7 @@ parent.list_maps(**kwargs)
 
 ### list\_place\_indexes
 
-Lists place index resources in your AWS account.
+Lists place index resources in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").list_place_indexes` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_place_indexes)
@@ -1324,7 +1455,7 @@ parent.list_place_indexes(**kwargs)
 
 ### list\_route\_calculators
 
-Lists route calculator resources in your AWS account.
+Lists route calculator resources in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").list_route_calculators` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_route_calculators)
@@ -1415,7 +1546,7 @@ parent.list_tracker_consumers(**kwargs)
 
 ### list\_trackers
 
-Lists tracker resources in your AWS account.
+Lists tracker resources in your Amazon Web Services account.
 
 Type annotations and code completion for `#!python boto3.client("location").list_trackers` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_trackers)
@@ -1679,6 +1810,41 @@ parent.update_geofence_collection(**kwargs)
 
 1. See [:material-code-braces: UpdateGeofenceCollectionRequestRequestTypeDef](./type_defs.md#updategeofencecollectionrequestrequesttypedef) 
 
+### update\_key
+
+Updates the specified properties of a given API key resource.
+
+Type annotations and code completion for `#!python boto3.client("location").update_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.update_key)
+
+```python title="Method definition"
+def update_key(
+    self,
+    *,
+    KeyName: str,
+    Description: str = ...,
+    ExpireTime: Union[datetime, str] = ...,
+    ForceUpdate: bool = ...,
+    NoExpiry: bool = ...,
+    Restrictions: ApiKeyRestrictionsTypeDef = ...,  # (1)
+) -> UpdateKeyResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ApiKeyRestrictionsTypeDef](./type_defs.md#apikeyrestrictionstypedef) 
+2. See [:material-code-braces: UpdateKeyResponseTypeDef](./type_defs.md#updatekeyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateKeyRequestRequestTypeDef = {  # (1)
+    "KeyName": ...,
+}
+
+parent.update_key(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateKeyRequestRequestTypeDef](./type_defs.md#updatekeyrequestrequesttypedef) 
+
 ### update\_map
 
 Updates the specified properties of a given map resource.
@@ -1822,6 +1988,7 @@ Type annotations and code completion for `#!python boto3.client("location").get_
 - `client.get_paginator("list_device_positions")` -> [ListDevicePositionsPaginator](./paginators.md#listdevicepositionspaginator)
 - `client.get_paginator("list_geofence_collections")` -> [ListGeofenceCollectionsPaginator](./paginators.md#listgeofencecollectionspaginator)
 - `client.get_paginator("list_geofences")` -> [ListGeofencesPaginator](./paginators.md#listgeofencespaginator)
+- `client.get_paginator("list_keys")` -> [ListKeysPaginator](./paginators.md#listkeyspaginator)
 - `client.get_paginator("list_maps")` -> [ListMapsPaginator](./paginators.md#listmapspaginator)
 - `client.get_paginator("list_place_indexes")` -> [ListPlaceIndexesPaginator](./paginators.md#listplaceindexespaginator)
 - `client.get_paginator("list_route_calculators")` -> [ListRouteCalculatorsPaginator](./paginators.md#listroutecalculatorspaginator)

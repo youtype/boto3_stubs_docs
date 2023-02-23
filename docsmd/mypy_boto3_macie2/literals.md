@@ -336,6 +336,7 @@ FindingTypeType = Literal[
     "Policy:IAMUser/S3BucketPublic",
     "Policy:IAMUser/S3BucketReplicatedExternally",
     "Policy:IAMUser/S3BucketSharedExternally",
+    "Policy:IAMUser/S3BucketSharedWithCloudFront",
     "SensitiveData:S3Object/Credentials",
     "SensitiveData:S3Object/CustomIdentifier",
     "SensitiveData:S3Object/Financial",

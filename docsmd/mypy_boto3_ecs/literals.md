@@ -989,6 +989,7 @@ def get_value() -> TaskDefinitionStatusType:
 ```python title="Definition"
 TaskDefinitionStatusType = Literal[
     "ACTIVE",
+    "DELETE_IN_PROGRESS",
     "INACTIVE",
 ]
 ```

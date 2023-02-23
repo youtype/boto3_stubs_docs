@@ -295,8 +295,8 @@ parent.create_task_set(**kwargs)
 
 ### delete\_account\_setting
 
-Disables an account setting for a specified IAM user, IAM role, or the root user
-for an account.
+Disables an account setting for a specified user, role, or the root user for an
+account.
 
 Type annotations and code completion for `#!python boto3.client("ecs").delete_account_setting` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
@@ -444,6 +444,35 @@ parent.delete_service(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef) 
+
+### delete\_task\_definitions
+
+Deletes one or more task definitions.
+
+Type annotations and code completion for `#!python boto3.client("ecs").delete_task_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_definitions)
+
+```python title="Method definition"
+def delete_task_definitions(
+    self,
+    *,
+    taskDefinitions: Sequence[str],
+) -> DeleteTaskDefinitionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteTaskDefinitionsResponseTypeDef](./type_defs.md#deletetaskdefinitionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteTaskDefinitionsRequestRequestTypeDef = {  # (1)
+    "taskDefinitions": ...,
+}
+
+parent.delete_task_definitions(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteTaskDefinitionsRequestRequestTypeDef](./type_defs.md#deletetaskdefinitionsrequestrequesttypedef) 
 
 ### delete\_task\_set
 
@@ -1251,8 +1280,8 @@ parent.put_account_setting(**kwargs)
 
 ### put\_account\_setting\_default
 
-Modifies an account setting for all IAM users on an account for whom no
-individual account setting has been specified.
+Modifies an account setting for all users on an account for whom no individual
+account setting has been specified.
 
 Type annotations and code completion for `#!python boto3.client("ecs").put_account_setting_default` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)

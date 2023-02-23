@@ -770,6 +770,40 @@ class DeleteServiceRequestRequestTypeDef(TypedDict):
     force: NotRequired[bool],
 ```
 
+## DeleteTaskDefinitionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import DeleteTaskDefinitionsRequestRequestTypeDef
+
+def get_value() -> DeleteTaskDefinitionsRequestRequestTypeDef:
+    return {
+        "taskDefinitions": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTaskDefinitionsRequestRequestTypeDef(TypedDict):
+    taskDefinitions: Sequence[str],
+```
+
+## FailureTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import FailureTypeDef
+
+def get_value() -> FailureTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class FailureTypeDef(TypedDict):
+    arn: NotRequired[str],
+    reason: NotRequired[str],
+    detail: NotRequired[str],
+```
+
 ## DeleteTaskSetRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -900,24 +934,6 @@ class DescribeCapacityProvidersRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: CapacityProviderFieldType](./literals.md#capacityproviderfieldtype) 
-## FailureTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_ecs.type_defs import FailureTypeDef
-
-def get_value() -> FailureTypeDef:
-    return {
-        "arn": ...,
-    }
-```
-
-```python title="Definition"
-class FailureTypeDef(TypedDict):
-    arn: NotRequired[str],
-    reason: NotRequired[str],
-    detail: NotRequired[str],
-```
-
 ## DescribeClustersRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4442,6 +4458,29 @@ class UpdateClusterSettingsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DeleteTaskDefinitionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import DeleteTaskDefinitionsResponseTypeDef
+
+def get_value() -> DeleteTaskDefinitionsResponseTypeDef:
+    return {
+        "taskDefinitions": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteTaskDefinitionsResponseTypeDef(TypedDict):
+    taskDefinitions: List[TaskDefinitionTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterTaskDefinitionResponseTypeDef
 
 ```python title="Usage Example"
