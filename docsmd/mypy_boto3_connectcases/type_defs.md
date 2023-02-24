@@ -294,6 +294,22 @@ class RequiredFieldTypeDef(TypedDict):
     fieldId: str,
 ```
 
+## DeleteDomainRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_connectcases.type_defs import DeleteDomainRequestRequestTypeDef
+
+def get_value() -> DeleteDomainRequestRequestTypeDef:
+    return {
+        "domainId": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteDomainRequestRequestTypeDef(TypedDict):
+    domainId: str,
+```
+
 ## DomainSummaryTypeDef
 
 ```python title="Usage Example"

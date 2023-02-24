@@ -22,6 +22,21 @@ AdminStatusType = Literal[
     "ENABLED",
 ]
 ```
+## AssociationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import AssociationStatusType
+
+def get_value() -> AssociationStatusType:
+    return "DISABLED"
+```
+
+```python title="Definition"
+AssociationStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## AutoEnableStandardsType
 
 ```python title="Usage Example"
@@ -82,6 +97,21 @@ ComplianceStatusType = Literal[
     "NOT_AVAILABLE",
     "PASSED",
     "WARNING",
+]
+```
+## ControlFindingGeneratorType
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import ControlFindingGeneratorType
+
+def get_value() -> ControlFindingGeneratorType:
+    return "SECURITY_CONTROL"
+```
+
+```python title="Definition"
+ControlFindingGeneratorType = Literal[
+    "SECURITY_CONTROL",
+    "STANDARD_CONTROL",
 ]
 ```
 ## ControlStatusType
@@ -297,6 +327,34 @@ ListOrganizationAdminAccountsPaginatorName = Literal[
     "list_organization_admin_accounts",
 ]
 ```
+## ListSecurityControlDefinitionsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import ListSecurityControlDefinitionsPaginatorName
+
+def get_value() -> ListSecurityControlDefinitionsPaginatorName:
+    return "list_security_control_definitions"
+```
+
+```python title="Definition"
+ListSecurityControlDefinitionsPaginatorName = Literal[
+    "list_security_control_definitions",
+]
+```
+## ListStandardsControlAssociationsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import ListStandardsControlAssociationsPaginatorName
+
+def get_value() -> ListStandardsControlAssociationsPaginatorName:
+    return "list_standards_control_associations"
+```
+
+```python title="Definition"
+ListStandardsControlAssociationsPaginatorName = Literal[
+    "list_standards_control_associations",
+]
+```
 ## MalwareStateType
 
 ```python title="Usage Example"
@@ -400,6 +458,21 @@ def get_value() -> RecordStateType:
 RecordStateType = Literal[
     "ACTIVE",
     "ARCHIVED",
+]
+```
+## RegionAvailabilityStatusType
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import RegionAvailabilityStatusType
+
+def get_value() -> RegionAvailabilityStatusType:
+    return "AVAILABLE"
+```
+
+```python title="Definition"
+RegionAvailabilityStatusType = Literal[
+    "AVAILABLE",
+    "UNAVAILABLE",
 ]
 ```
 ## SeverityLabelType
@@ -543,6 +616,23 @@ ThreatIntelIndicatorTypeType = Literal[
     "MUTEX",
     "PROCESS",
     "URL",
+]
+```
+## UnprocessedErrorCodeType
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.literals import UnprocessedErrorCodeType
+
+def get_value() -> UnprocessedErrorCodeType:
+    return "ACCESS_DENIED"
+```
+
+```python title="Definition"
+UnprocessedErrorCodeType = Literal[
+    "ACCESS_DENIED",
+    "INVALID_INPUT",
+    "LIMIT_EXCEEDED",
+    "NOT_FOUND",
 ]
 ```
 ## VerificationStateType
@@ -1026,6 +1116,8 @@ PaginatorName = Literal[
     "list_invitations",
     "list_members",
     "list_organization_admin_accounts",
+    "list_security_control_definitions",
+    "list_standards_control_associations",
 ]
 ```
 ## RegionName

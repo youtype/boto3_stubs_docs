@@ -713,3 +713,121 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef](./type_defs.md#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef) 
+## ListSecurityControlDefinitionsPaginator
+
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("list_security_control_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListSecurityControlDefinitions)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListSecurityControlDefinitionsPaginator
+
+def get_list_security_control_definitions_paginator() -> ListSecurityControlDefinitionsPaginator:
+    return Session().client("securityhub").get_paginator("list_security_control_definitions")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListSecurityControlDefinitionsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: ListSecurityControlDefinitionsPaginator = client.get_paginator("list_security_control_definitions")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [ListSecurityControlDefinitionsPaginator](./paginators.md#listsecuritycontroldefinitionspaginator)
+3. item: [:material-code-braces: ListSecurityControlDefinitionsResponseTypeDef](./type_defs.md#listsecuritycontroldefinitionsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListSecurityControlDefinitionsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StandardsArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSecurityControlDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSecurityControlDefinitionsResponseTypeDef](./type_defs.md#listsecuritycontroldefinitionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSecurityControlDefinitionsRequestListSecurityControlDefinitionsPaginateTypeDef = {  # (1)
+    "StandardsArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSecurityControlDefinitionsRequestListSecurityControlDefinitionsPaginateTypeDef](./type_defs.md#listsecuritycontroldefinitionsrequestlistsecuritycontroldefinitionspaginatetypedef) 
+## ListStandardsControlAssociationsPaginator
+
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("list_standards_control_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListStandardsControlAssociations)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListStandardsControlAssociationsPaginator
+
+def get_list_standards_control_associations_paginator() -> ListStandardsControlAssociationsPaginator:
+    return Session().client("securityhub").get_paginator("list_standards_control_associations")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_securityhub.paginator import ListStandardsControlAssociationsPaginator
+
+session = Session()
+
+client = Session().client("securityhub")  # (1)
+paginator: ListStandardsControlAssociationsPaginator = client.get_paginator("list_standards_control_associations")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [SecurityHubClient](./client.md)
+2. paginator: [ListStandardsControlAssociationsPaginator](./paginators.md#liststandardscontrolassociationspaginator)
+3. item: [:material-code-braces: ListStandardsControlAssociationsResponseTypeDef](./type_defs.md#liststandardscontrolassociationsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListStandardsControlAssociationsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SecurityControlId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStandardsControlAssociationsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStandardsControlAssociationsResponseTypeDef](./type_defs.md#liststandardscontrolassociationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStandardsControlAssociationsRequestListStandardsControlAssociationsPaginateTypeDef = {  # (1)
+    "SecurityControlId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStandardsControlAssociationsRequestListStandardsControlAssociationsPaginateTypeDef](./type_defs.md#liststandardscontrolassociationsrequestliststandardscontrolassociationspaginatetypedef) 

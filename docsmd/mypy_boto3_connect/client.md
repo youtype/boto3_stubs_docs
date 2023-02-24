@@ -4318,6 +4318,7 @@ def start_task_contact(
     ScheduledTime: Union[datetime, str] = ...,
     TaskTemplateId: str = ...,
     QuickConnectId: str = ...,
+    RelatedContactId: str = ...,
 ) -> StartTaskContactResponseTypeDef:  # (2)
     ...
 ```

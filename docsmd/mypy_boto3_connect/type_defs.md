@@ -7525,6 +7525,7 @@ class StartTaskContactRequestRequestTypeDef(TypedDict):
     ScheduledTime: NotRequired[Union[datetime, str]],
     TaskTemplateId: NotRequired[str],
     QuickConnectId: NotRequired[str],
+    RelatedContactId: NotRequired[str],
 ```
 
 1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 

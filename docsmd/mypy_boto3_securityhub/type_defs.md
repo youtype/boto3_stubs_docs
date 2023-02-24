@@ -5404,6 +5404,119 @@ class StandardsSubscriptionRequestTypeDef(TypedDict):
     StandardsInput: NotRequired[Mapping[str, str]],
 ```
 
+## BatchGetSecurityControlsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchGetSecurityControlsRequestRequestTypeDef
+
+def get_value() -> BatchGetSecurityControlsRequestRequestTypeDef:
+    return {
+        "SecurityControlIds": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetSecurityControlsRequestRequestTypeDef(TypedDict):
+    SecurityControlIds: Sequence[str],
+```
+
+## SecurityControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import SecurityControlTypeDef
+
+def get_value() -> SecurityControlTypeDef:
+    return {
+        "SecurityControlId": ...,
+        "SecurityControlArn": ...,
+        "Title": ...,
+        "Description": ...,
+        "RemediationUrl": ...,
+        "SeverityRating": ...,
+        "SecurityControlStatus": ...,
+    }
+```
+
+```python title="Definition"
+class SecurityControlTypeDef(TypedDict):
+    SecurityControlId: str,
+    SecurityControlArn: str,
+    Title: str,
+    Description: str,
+    RemediationUrl: str,
+    SeverityRating: SeverityRatingType,  # (1)
+    SecurityControlStatus: ControlStatusType,  # (2)
+```
+
+1. See [:material-code-brackets: SeverityRatingType](./literals.md#severityratingtype) 
+2. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
+## UnprocessedSecurityControlTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UnprocessedSecurityControlTypeDef
+
+def get_value() -> UnprocessedSecurityControlTypeDef:
+    return {
+        "SecurityControlId": ...,
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class UnprocessedSecurityControlTypeDef(TypedDict):
+    SecurityControlId: str,
+    ErrorCode: UnprocessedErrorCodeType,  # (1)
+    ErrorReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: UnprocessedErrorCodeType](./literals.md#unprocessederrorcodetype) 
+## StandardsControlAssociationIdTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsControlAssociationIdTypeDef
+
+def get_value() -> StandardsControlAssociationIdTypeDef:
+    return {
+        "SecurityControlId": ...,
+        "StandardsArn": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsControlAssociationIdTypeDef(TypedDict):
+    SecurityControlId: str,
+    StandardsArn: str,
+```
+
+## StandardsControlAssociationDetailTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsControlAssociationDetailTypeDef
+
+def get_value() -> StandardsControlAssociationDetailTypeDef:
+    return {
+        "StandardsArn": ...,
+        "SecurityControlId": ...,
+        "SecurityControlArn": ...,
+        "AssociationStatus": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsControlAssociationDetailTypeDef(TypedDict):
+    StandardsArn: str,
+    SecurityControlId: str,
+    SecurityControlArn: str,
+    AssociationStatus: AssociationStatusType,  # (1)
+    RelatedRequirements: NotRequired[List[str]],
+    UpdatedAt: NotRequired[datetime],
+    UpdatedReason: NotRequired[str],
+    StandardsControlTitle: NotRequired[str],
+    StandardsControlDescription: NotRequired[str],
+    StandardsControlArns: NotRequired[List[str]],
+```
+
+1. See [:material-code-brackets: AssociationStatusType](./literals.md#associationstatustype) 
 ## ImportFindingsErrorTypeDef
 
 ```python title="Usage Example"
@@ -5478,6 +5591,28 @@ class WorkflowUpdateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: WorkflowStatusType](./literals.md#workflowstatustype) 
+## StandardsControlAssociationUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsControlAssociationUpdateTypeDef
+
+def get_value() -> StandardsControlAssociationUpdateTypeDef:
+    return {
+        "StandardsArn": ...,
+        "SecurityControlId": ...,
+        "AssociationStatus": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsControlAssociationUpdateTypeDef(TypedDict):
+    StandardsArn: str,
+    SecurityControlId: str,
+    AssociationStatus: AssociationStatusType,  # (1)
+    UpdatedReason: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AssociationStatusType](./literals.md#associationstatustype) 
 ## CellTypeDef
 
 ```python title="Usage Example"
@@ -5968,8 +6103,10 @@ def get_value() -> EnableSecurityHubRequestRequestTypeDef:
 class EnableSecurityHubRequestRequestTypeDef(TypedDict):
     Tags: NotRequired[Mapping[str, str]],
     EnableDefaultStandards: NotRequired[bool],
+    ControlFindingGenerator: NotRequired[ControlFindingGeneratorType],  # (1)
 ```
 
+1. See [:material-code-brackets: ControlFindingGeneratorType](./literals.md#controlfindinggeneratortype) 
 ## FilePathsTypeDef
 
 ```python title="Usage Example"
@@ -6319,6 +6456,98 @@ class ListOrganizationAdminAccountsRequestRequestTypeDef(TypedDict):
     NextToken: NotRequired[str],
 ```
 
+## ListSecurityControlDefinitionsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListSecurityControlDefinitionsRequestRequestTypeDef
+
+def get_value() -> ListSecurityControlDefinitionsRequestRequestTypeDef:
+    return {
+        "StandardsArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityControlDefinitionsRequestRequestTypeDef(TypedDict):
+    StandardsArn: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## SecurityControlDefinitionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import SecurityControlDefinitionTypeDef
+
+def get_value() -> SecurityControlDefinitionTypeDef:
+    return {
+        "SecurityControlId": ...,
+        "Title": ...,
+        "Description": ...,
+        "RemediationUrl": ...,
+        "SeverityRating": ...,
+        "CurrentRegionAvailability": ...,
+    }
+```
+
+```python title="Definition"
+class SecurityControlDefinitionTypeDef(TypedDict):
+    SecurityControlId: str,
+    Title: str,
+    Description: str,
+    RemediationUrl: str,
+    SeverityRating: SeverityRatingType,  # (1)
+    CurrentRegionAvailability: RegionAvailabilityStatusType,  # (2)
+```
+
+1. See [:material-code-brackets: SeverityRatingType](./literals.md#severityratingtype) 
+2. See [:material-code-brackets: RegionAvailabilityStatusType](./literals.md#regionavailabilitystatustype) 
+## ListStandardsControlAssociationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListStandardsControlAssociationsRequestRequestTypeDef
+
+def get_value() -> ListStandardsControlAssociationsRequestRequestTypeDef:
+    return {
+        "SecurityControlId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStandardsControlAssociationsRequestRequestTypeDef(TypedDict):
+    SecurityControlId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## StandardsControlAssociationSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import StandardsControlAssociationSummaryTypeDef
+
+def get_value() -> StandardsControlAssociationSummaryTypeDef:
+    return {
+        "StandardsArn": ...,
+        "SecurityControlId": ...,
+        "SecurityControlArn": ...,
+        "AssociationStatus": ...,
+    }
+```
+
+```python title="Definition"
+class StandardsControlAssociationSummaryTypeDef(TypedDict):
+    StandardsArn: str,
+    SecurityControlId: str,
+    SecurityControlArn: str,
+    AssociationStatus: AssociationStatusType,  # (1)
+    RelatedRequirements: NotRequired[List[str]],
+    UpdatedAt: NotRequired[datetime],
+    UpdatedReason: NotRequired[str],
+    StandardsControlTitle: NotRequired[str],
+    StandardsControlDescription: NotRequired[str],
+```
+
+1. See [:material-code-brackets: AssociationStatusType](./literals.md#associationstatustype) 
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -6756,8 +6985,10 @@ def get_value() -> UpdateSecurityHubConfigurationRequestRequestTypeDef:
 ```python title="Definition"
 class UpdateSecurityHubConfigurationRequestRequestTypeDef(TypedDict):
     AutoEnableControls: NotRequired[bool],
+    ControlFindingGenerator: NotRequired[ControlFindingGeneratorType],  # (1)
 ```
 
+1. See [:material-code-brackets: ControlFindingGeneratorType](./literals.md#controlfindinggeneratortype) 
 ## UpdateStandardsControlRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -9138,6 +9369,7 @@ def get_value() -> DescribeHubResponseTypeDef:
         "HubArn": ...,
         "SubscribedAt": ...,
         "AutoEnableControls": ...,
+        "ControlFindingGenerator": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -9147,10 +9379,12 @@ class DescribeHubResponseTypeDef(TypedDict):
     HubArn: str,
     SubscribedAt: str,
     AutoEnableControls: bool,
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+    ControlFindingGenerator: ControlFindingGeneratorType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+1. See [:material-code-brackets: ControlFindingGeneratorType](./literals.md#controlfindinggeneratortype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
 ```python title="Usage Example"
@@ -9342,6 +9576,67 @@ class BatchEnableStandardsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef) 
+## BatchGetSecurityControlsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchGetSecurityControlsResponseTypeDef
+
+def get_value() -> BatchGetSecurityControlsResponseTypeDef:
+    return {
+        "SecurityControls": ...,
+        "UnprocessedIds": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetSecurityControlsResponseTypeDef(TypedDict):
+    SecurityControls: List[SecurityControlTypeDef],  # (1)
+    UnprocessedIds: List[UnprocessedSecurityControlTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: SecurityControlTypeDef](./type_defs.md#securitycontroltypedef) 
+2. See [:material-code-braces: UnprocessedSecurityControlTypeDef](./type_defs.md#unprocessedsecuritycontroltypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchGetStandardsControlAssociationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchGetStandardsControlAssociationsRequestRequestTypeDef
+
+def get_value() -> BatchGetStandardsControlAssociationsRequestRequestTypeDef:
+    return {
+        "StandardsControlAssociationIds": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetStandardsControlAssociationsRequestRequestTypeDef(TypedDict):
+    StandardsControlAssociationIds: Sequence[StandardsControlAssociationIdTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StandardsControlAssociationIdTypeDef](./type_defs.md#standardscontrolassociationidtypedef) 
+## UnprocessedStandardsControlAssociationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UnprocessedStandardsControlAssociationTypeDef
+
+def get_value() -> UnprocessedStandardsControlAssociationTypeDef:
+    return {
+        "StandardsControlAssociationId": ...,
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class UnprocessedStandardsControlAssociationTypeDef(TypedDict):
+    StandardsControlAssociationId: StandardsControlAssociationIdTypeDef,  # (1)
+    ErrorCode: UnprocessedErrorCodeType,  # (2)
+    ErrorReason: NotRequired[str],
+```
+
+1. See [:material-code-braces: StandardsControlAssociationIdTypeDef](./type_defs.md#standardscontrolassociationidtypedef) 
+2. See [:material-code-brackets: UnprocessedErrorCodeType](./literals.md#unprocessederrorcodetype) 
 ## BatchImportFindingsResponseTypeDef
 
 ```python title="Usage Example"
@@ -9397,6 +9692,44 @@ class BatchUpdateFindingsRequestRequestTypeDef(TypedDict):
 4. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
 5. See [:material-code-braces: WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef) 
 6. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
+## BatchUpdateStandardsControlAssociationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchUpdateStandardsControlAssociationsRequestRequestTypeDef
+
+def get_value() -> BatchUpdateStandardsControlAssociationsRequestRequestTypeDef:
+    return {
+        "StandardsControlAssociationUpdates": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdateStandardsControlAssociationsRequestRequestTypeDef(TypedDict):
+    StandardsControlAssociationUpdates: Sequence[StandardsControlAssociationUpdateTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: StandardsControlAssociationUpdateTypeDef](./type_defs.md#standardscontrolassociationupdatetypedef) 
+## UnprocessedStandardsControlAssociationUpdateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import UnprocessedStandardsControlAssociationUpdateTypeDef
+
+def get_value() -> UnprocessedStandardsControlAssociationUpdateTypeDef:
+    return {
+        "StandardsControlAssociationUpdate": ...,
+        "ErrorCode": ...,
+    }
+```
+
+```python title="Definition"
+class UnprocessedStandardsControlAssociationUpdateTypeDef(TypedDict):
+    StandardsControlAssociationUpdate: StandardsControlAssociationUpdateTypeDef,  # (1)
+    ErrorCode: UnprocessedErrorCodeType,  # (2)
+    ErrorReason: NotRequired[str],
+```
+
+1. See [:material-code-braces: StandardsControlAssociationUpdateTypeDef](./type_defs.md#standardscontrolassociationupdatetypedef) 
+2. See [:material-code-brackets: UnprocessedErrorCodeType](./literals.md#unprocessederrorcodetype) 
 ## ComplianceTypeDef
 
 ```python title="Usage Example"
@@ -9755,6 +10088,42 @@ class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateT
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListSecurityControlDefinitionsRequestListSecurityControlDefinitionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListSecurityControlDefinitionsRequestListSecurityControlDefinitionsPaginateTypeDef
+
+def get_value() -> ListSecurityControlDefinitionsRequestListSecurityControlDefinitionsPaginateTypeDef:
+    return {
+        "StandardsArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityControlDefinitionsRequestListSecurityControlDefinitionsPaginateTypeDef(TypedDict):
+    StandardsArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListStandardsControlAssociationsRequestListStandardsControlAssociationsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListStandardsControlAssociationsRequestListStandardsControlAssociationsPaginateTypeDef
+
+def get_value() -> ListStandardsControlAssociationsRequestListStandardsControlAssociationsPaginateTypeDef:
+    return {
+        "SecurityControlId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStandardsControlAssociationsRequestListStandardsControlAssociationsPaginateTypeDef(TypedDict):
+    SecurityControlId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeProductsResponseTypeDef
 
 ```python title="Usage Example"
@@ -9991,6 +10360,50 @@ class InsightResultsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: InsightResultValueTypeDef](./type_defs.md#insightresultvaluetypedef) 
+## ListSecurityControlDefinitionsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListSecurityControlDefinitionsResponseTypeDef
+
+def get_value() -> ListSecurityControlDefinitionsResponseTypeDef:
+    return {
+        "SecurityControlDefinitions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityControlDefinitionsResponseTypeDef(TypedDict):
+    SecurityControlDefinitions: List[SecurityControlDefinitionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: SecurityControlDefinitionTypeDef](./type_defs.md#securitycontroldefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStandardsControlAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import ListStandardsControlAssociationsResponseTypeDef
+
+def get_value() -> ListStandardsControlAssociationsResponseTypeDef:
+    return {
+        "StandardsControlAssociationSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListStandardsControlAssociationsResponseTypeDef(TypedDict):
+    StandardsControlAssociationSummaries: List[StandardsControlAssociationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: StandardsControlAssociationSummaryTypeDef](./type_defs.md#standardscontrolassociationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NetworkPathComponentDetailsTypeDef
 
 ```python title="Usage Example"
@@ -11451,6 +11864,49 @@ class AwsWafv2ActionBlockDetailsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AwsWafv2CustomResponseDetailsTypeDef](./type_defs.md#awswafv2customresponsedetailstypedef) 
+## BatchGetStandardsControlAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchGetStandardsControlAssociationsResponseTypeDef
+
+def get_value() -> BatchGetStandardsControlAssociationsResponseTypeDef:
+    return {
+        "StandardsControlAssociationDetails": ...,
+        "UnprocessedAssociations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetStandardsControlAssociationsResponseTypeDef(TypedDict):
+    StandardsControlAssociationDetails: List[StandardsControlAssociationDetailTypeDef],  # (1)
+    UnprocessedAssociations: List[UnprocessedStandardsControlAssociationTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-braces: StandardsControlAssociationDetailTypeDef](./type_defs.md#standardscontrolassociationdetailtypedef) 
+2. See [:material-code-braces: UnprocessedStandardsControlAssociationTypeDef](./type_defs.md#unprocessedstandardscontrolassociationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchUpdateStandardsControlAssociationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_securityhub.type_defs import BatchUpdateStandardsControlAssociationsResponseTypeDef
+
+def get_value() -> BatchUpdateStandardsControlAssociationsResponseTypeDef:
+    return {
+        "UnprocessedAssociationUpdates": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchUpdateStandardsControlAssociationsResponseTypeDef(TypedDict):
+    UnprocessedAssociationUpdates: List[UnprocessedStandardsControlAssociationUpdateTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: UnprocessedStandardsControlAssociationUpdateTypeDef](./type_defs.md#unprocessedstandardscontrolassociationupdatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AwsSecurityFindingFiltersTypeDef
 
 ```python title="Usage Example"

@@ -363,6 +363,34 @@ parent.create_template(**kwargs)
 
 1. See [:material-code-braces: CreateTemplateRequestRequestTypeDef](./type_defs.md#createtemplaterequestrequesttypedef) 
 
+### delete\_domain
+
+Deletes a domain.
+
+Type annotations and code completion for `#!python boto3.client("connectcases").delete_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectcases.html#ConnectCases.Client.delete_domain)
+
+```python title="Method definition"
+def delete_domain(
+    self,
+    *,
+    domainId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainRequestRequestTypeDef = {  # (1)
+    "domainId": ...,
+}
+
+parent.delete_domain(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef) 
+
 ### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.

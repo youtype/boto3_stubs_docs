@@ -145,6 +145,7 @@ def get_value() -> FieldIdentifierTypeDef:
 - [CreateFieldRequestRequestTypeDef](./type_defs.md#createfieldrequestrequesttypedef)
 - [LayoutConfigurationTypeDef](./type_defs.md#layoutconfigurationtypedef)
 - [RequiredFieldTypeDef](./type_defs.md#requiredfieldtypedef)
+- [DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef)
 - [DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef)
 - [RelatedItemEventIncludedDataTypeDef](./type_defs.md#relateditemeventincludeddatatypedef)
 - [FieldItemTypeDef](./type_defs.md#fielditemtypedef)

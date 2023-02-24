@@ -40561,6 +40561,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="paginators/#listinvitationspaginator">ListInvitationsPaginator</a></li>
 <li><a href="paginators/#listmemberspaginator">ListMembersPaginator</a></li>
 <li><a href="paginators/#listorganizationadminaccountspaginator">ListOrganizationAdminAccountsPaginator</a></li>
+<li><a href="paginators/#listsecuritycontroldefinitionspaginator">ListSecurityControlDefinitionsPaginator</a></li>
+<li><a href="paginators/#liststandardscontrolassociationspaginator">ListStandardsControlAssociationsPaginator</a></li>
 </ul>
 <h2 id="literals">Literals</h2>
 <p>Type annotations for <a href="literals/">literals</a> used in methods and schemas.</p>
@@ -40571,10 +40573,12 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 </code></pre></div>
 <ul>
 <li><a href="literals/#adminstatustype">AdminStatusType</a></li>
+<li><a href="literals/#associationstatustype">AssociationStatusType</a></li>
 <li><a href="literals/#autoenablestandardstype">AutoEnableStandardsType</a></li>
 <li><a href="literals/#awsiamaccesskeystatustype">AwsIamAccessKeyStatusType</a></li>
 <li><a href="literals/#awss3bucketnotificationconfigurations3keyfilterrulenametype">AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType</a></li>
 <li><a href="literals/#compliancestatustype">ComplianceStatusType</a></li>
+<li><a href="literals/#controlfindinggeneratortype">ControlFindingGeneratorType</a></li>
 <li><a href="literals/#controlstatustype">ControlStatusType</a></li>
 <li><a href="literals/#daterangeunittype">DateRangeUnitType</a></li>
 <li><a href="literals/#describeactiontargetspaginatorname">DescribeActionTargetsPaginatorName</a></li>
@@ -40590,12 +40594,15 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#listinvitationspaginatorname">ListInvitationsPaginatorName</a></li>
 <li><a href="literals/#listmemberspaginatorname">ListMembersPaginatorName</a></li>
 <li><a href="literals/#listorganizationadminaccountspaginatorname">ListOrganizationAdminAccountsPaginatorName</a></li>
+<li><a href="literals/#listsecuritycontroldefinitionspaginatorname">ListSecurityControlDefinitionsPaginatorName</a></li>
+<li><a href="literals/#liststandardscontrolassociationspaginatorname">ListStandardsControlAssociationsPaginatorName</a></li>
 <li><a href="literals/#malwarestatetype">MalwareStateType</a></li>
 <li><a href="literals/#malwaretypetype">MalwareTypeType</a></li>
 <li><a href="literals/#mapfiltercomparisontype">MapFilterComparisonType</a></li>
 <li><a href="literals/#networkdirectiontype">NetworkDirectionType</a></li>
 <li><a href="literals/#partitiontype">PartitionType</a></li>
 <li><a href="literals/#recordstatetype">RecordStateType</a></li>
+<li><a href="literals/#regionavailabilitystatustype">RegionAvailabilityStatusType</a></li>
 <li><a href="literals/#severitylabeltype">SeverityLabelType</a></li>
 <li><a href="literals/#severityratingtype">SeverityRatingType</a></li>
 <li><a href="literals/#sortordertype">SortOrderType</a></li>
@@ -40604,6 +40611,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#stringfiltercomparisontype">StringFilterComparisonType</a></li>
 <li><a href="literals/#threatintelindicatorcategorytype">ThreatIntelIndicatorCategoryType</a></li>
 <li><a href="literals/#threatintelindicatortypetype">ThreatIntelIndicatorTypeType</a></li>
+<li><a href="literals/#unprocessederrorcodetype">UnprocessedErrorCodeType</a></li>
 <li><a href="literals/#verificationstatetype">VerificationStateType</a></li>
 <li><a href="literals/#vulnerabilityfixavailabletype">VulnerabilityFixAvailableType</a></li>
 <li><a href="literals/#workflowstatetype">WorkflowStateType</a></li>
@@ -40925,10 +40933,16 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#batchdisablestandardsrequestrequesttypedef">BatchDisableStandardsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#standardssubscriptionrequesttypedef">StandardsSubscriptionRequestTypeDef</a></li>
+<li><a href="type_defs/#batchgetsecuritycontrolsrequestrequesttypedef">BatchGetSecurityControlsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#securitycontroltypedef">SecurityControlTypeDef</a></li>
+<li><a href="type_defs/#unprocessedsecuritycontroltypedef">UnprocessedSecurityControlTypeDef</a></li>
+<li><a href="type_defs/#standardscontrolassociationidtypedef">StandardsControlAssociationIdTypeDef</a></li>
+<li><a href="type_defs/#standardscontrolassociationdetailtypedef">StandardsControlAssociationDetailTypeDef</a></li>
 <li><a href="type_defs/#importfindingserrortypedef">ImportFindingsErrorTypeDef</a></li>
 <li><a href="type_defs/#noteupdatetypedef">NoteUpdateTypeDef</a></li>
 <li><a href="type_defs/#severityupdatetypedef">SeverityUpdateTypeDef</a></li>
 <li><a href="type_defs/#workflowupdatetypedef">WorkflowUpdateTypeDef</a></li>
+<li><a href="type_defs/#standardscontrolassociationupdatetypedef">StandardsControlAssociationUpdateTypeDef</a></li>
 <li><a href="type_defs/#celltypedef">CellTypeDef</a></li>
 <li><a href="type_defs/#classificationstatustypedef">ClassificationStatusTypeDef</a></li>
 <li><a href="type_defs/#statusreasontypedef">StatusReasonTypeDef</a></li>
@@ -40977,6 +40991,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listinvitationsrequestrequesttypedef">ListInvitationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listmembersrequestrequesttypedef">ListMembersRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#listorganizationadminaccountsrequestrequesttypedef">ListOrganizationAdminAccountsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#listsecuritycontroldefinitionsrequestrequesttypedef">ListSecurityControlDefinitionsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#securitycontroldefinitiontypedef">SecurityControlDefinitionTypeDef</a></li>
+<li><a href="type_defs/#liststandardscontrolassociationsrequestrequesttypedef">ListStandardsControlAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#standardscontrolassociationsummarytypedef">StandardsControlAssociationSummaryTypeDef</a></li>
 <li><a href="type_defs/#listtagsforresourcerequestrequesttypedef">ListTagsForResourceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#portrangetypedef">PortRangeTypeDef</a></li>
 <li><a href="type_defs/#rangetypedef">RangeTypeDef</a></li>
@@ -41114,8 +41132,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listtagsforresourceresponsetypedef">ListTagsForResourceResponseTypeDef</a></li>
 <li><a href="type_defs/#updatefindingaggregatorresponsetypedef">UpdateFindingAggregatorResponseTypeDef</a></li>
 <li><a href="type_defs/#batchenablestandardsrequestrequesttypedef">BatchEnableStandardsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchgetsecuritycontrolsresponsetypedef">BatchGetSecurityControlsResponseTypeDef</a></li>
+<li><a href="type_defs/#batchgetstandardscontrolassociationsrequestrequesttypedef">BatchGetStandardsControlAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#unprocessedstandardscontrolassociationtypedef">UnprocessedStandardsControlAssociationTypeDef</a></li>
 <li><a href="type_defs/#batchimportfindingsresponsetypedef">BatchImportFindingsResponseTypeDef</a></li>
 <li><a href="type_defs/#batchupdatefindingsrequestrequesttypedef">BatchUpdateFindingsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#batchupdatestandardscontrolassociationsrequestrequesttypedef">BatchUpdateStandardsControlAssociationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#unprocessedstandardscontrolassociationupdatetypedef">UnprocessedStandardsControlAssociationUpdateTypeDef</a></li>
 <li><a href="type_defs/#compliancetypedef">ComplianceTypeDef</a></li>
 <li><a href="type_defs/#containerdetailstypedef">ContainerDetailsTypeDef</a></li>
 <li><a href="type_defs/#createmembersresponsetypedef">CreateMembersResponseTypeDef</a></li>
@@ -41135,6 +41158,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#listinvitationsrequestlistinvitationspaginatetypedef">ListInvitationsRequestListInvitationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#listmembersrequestlistmemberspaginatetypedef">ListMembersRequestListMembersPaginateTypeDef</a></li>
 <li><a href="type_defs/#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef">ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef</a></li>
+<li><a href="type_defs/#listsecuritycontroldefinitionsrequestlistsecuritycontroldefinitionspaginatetypedef">ListSecurityControlDefinitionsRequestListSecurityControlDefinitionsPaginateTypeDef</a></li>
+<li><a href="type_defs/#liststandardscontrolassociationsrequestliststandardscontrolassociationspaginatetypedef">ListStandardsControlAssociationsRequestListStandardsControlAssociationsPaginateTypeDef</a></li>
 <li><a href="type_defs/#describeproductsresponsetypedef">DescribeProductsResponseTypeDef</a></li>
 <li><a href="type_defs/#describestandardscontrolsresponsetypedef">DescribeStandardsControlsResponseTypeDef</a></li>
 <li><a href="type_defs/#threattypedef">ThreatTypeDef</a></li>
@@ -41146,6 +41171,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getmembersresponsetypedef">GetMembersResponseTypeDef</a></li>
 <li><a href="type_defs/#listmembersresponsetypedef">ListMembersResponseTypeDef</a></li>
 <li><a href="type_defs/#insightresultstypedef">InsightResultsTypeDef</a></li>
+<li><a href="type_defs/#listsecuritycontroldefinitionsresponsetypedef">ListSecurityControlDefinitionsResponseTypeDef</a></li>
+<li><a href="type_defs/#liststandardscontrolassociationsresponsetypedef">ListStandardsControlAssociationsResponseTypeDef</a></li>
 <li><a href="type_defs/#networkpathcomponentdetailstypedef">NetworkPathComponentDetailsTypeDef</a></li>
 <li><a href="type_defs/#networktypedef">NetworkTypeDef</a></li>
 <li><a href="type_defs/#pagetypedef">PageTypeDef</a></li>
@@ -41202,6 +41229,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#awswafv2rulesactioncaptchadetailstypedef">AwsWafv2RulesActionCaptchaDetailsTypeDef</a></li>
 <li><a href="type_defs/#awswafv2rulesactioncountdetailstypedef">AwsWafv2RulesActionCountDetailsTypeDef</a></li>
 <li><a href="type_defs/#awswafv2actionblockdetailstypedef">AwsWafv2ActionBlockDetailsTypeDef</a></li>
+<li><a href="type_defs/#batchgetstandardscontrolassociationsresponsetypedef">BatchGetStandardsControlAssociationsResponseTypeDef</a></li>
+<li><a href="type_defs/#batchupdatestandardscontrolassociationsresponsetypedef">BatchUpdateStandardsControlAssociationsResponseTypeDef</a></li>
 <li><a href="type_defs/#awssecurityfindingfilterstypedef">AwsSecurityFindingFiltersTypeDef</a></li>
 <li><a href="type_defs/#getinsightresultsresponsetypedef">GetInsightResultsResponseTypeDef</a></li>
 <li><a href="type_defs/#networkheadertypedef">NetworkHeaderTypeDef</a></li>
