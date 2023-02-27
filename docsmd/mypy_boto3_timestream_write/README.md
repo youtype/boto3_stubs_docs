@@ -75,15 +75,18 @@ def get_client() -> TimestreamWriteClient:
 Type annotations for [literals](./literals.md) used in methods and schemas.
 
 ```python title="Usage example"
-from mypy_boto3_timestream_write.literals import DimensionValueTypeType
+from mypy_boto3_timestream_write.literals import BatchLoadDataFormatType
 
-def get_value() -> DimensionValueTypeType:
-    return "VARCHAR"
+def get_value() -> BatchLoadDataFormatType:
+    return "CSV"
 ```
 
+- [BatchLoadDataFormatType](./literals.md#batchloaddataformattype)
+- [BatchLoadStatusType](./literals.md#batchloadstatustype)
 - [DimensionValueTypeType](./literals.md#dimensionvaluetypetype)
 - [MeasureValueTypeType](./literals.md#measurevaluetypetype)
 - [S3EncryptionOptionType](./literals.md#s3encryptionoptiontype)
+- [ScalarMeasureValueTypeType](./literals.md#scalarmeasurevaluetypetype)
 - [TableStatusType](./literals.md#tablestatustype)
 - [TimeUnitType](./literals.md#timeunittype)
 - [TimestreamWriteServiceName](./literals.md#timestreamwriteservicename)
@@ -99,52 +102,73 @@ def get_value() -> DimensionValueTypeType:
 Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
 ```python title="Usage example"
-from mypy_boto3_timestream_write.type_defs import TagTypeDef
+from mypy_boto3_timestream_write.type_defs import BatchLoadProgressReportTypeDef
 
-def get_value() -> TagTypeDef:
+def get_value() -> BatchLoadProgressReportTypeDef:
     return {
-        "Key": ...,
-        "Value": ...,
+        "RecordsProcessed": ...,
     }
 ```
 
+- [BatchLoadProgressReportTypeDef](./type_defs.md#batchloadprogressreporttypedef)
+- [BatchLoadTaskTypeDef](./type_defs.md#batchloadtasktypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [DatabaseTypeDef](./type_defs.md#databasetypedef)
-- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
+- [CsvConfigurationTypeDef](./type_defs.md#csvconfigurationtypedef)
+- [DataModelS3ConfigurationTypeDef](./type_defs.md#datamodels3configurationtypedef)
+- [DimensionMappingTypeDef](./type_defs.md#dimensionmappingtypedef)
+- [DataSourceS3ConfigurationTypeDef](./type_defs.md#datasources3configurationtypedef)
 - [DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef)
 - [DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef)
+- [DescribeBatchLoadTaskRequestRequestTypeDef](./type_defs.md#describebatchloadtaskrequestrequesttypedef)
 - [DescribeDatabaseRequestRequestTypeDef](./type_defs.md#describedatabaserequestrequesttypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef)
 - [DimensionTypeDef](./type_defs.md#dimensiontypedef)
+- [ListBatchLoadTasksRequestRequestTypeDef](./type_defs.md#listbatchloadtasksrequestrequesttypedef)
 - [ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef)
 - [ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
 - [MeasureValueTypeDef](./type_defs.md#measurevaluetypedef)
+- [MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef)
 - [RecordsIngestedTypeDef](./type_defs.md#recordsingestedtypedef)
+- [ReportS3ConfigurationTypeDef](./type_defs.md#reports3configurationtypedef)
+- [ResumeBatchLoadTaskRequestRequestTypeDef](./type_defs.md#resumebatchloadtaskrequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef)
+- [CreateBatchLoadTaskResponseTypeDef](./type_defs.md#createbatchloadtaskresponsetypedef)
+- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
+- [ListBatchLoadTasksResponseTypeDef](./type_defs.md#listbatchloadtasksresponsetypedef)
 - [CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef)
 - [DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef)
-- [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef)
+- [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)
 - [MagneticStoreRejectedDataLocationTypeDef](./type_defs.md#magneticstorerejecteddatalocationtypedef)
 - [RecordTypeDef](./type_defs.md#recordtypedef)
+- [MixedMeasureMappingTypeDef](./type_defs.md#mixedmeasuremappingtypedef)
+- [MultiMeasureMappingsTypeDef](./type_defs.md#multimeasuremappingstypedef)
 - [WriteRecordsResponseTypeDef](./type_defs.md#writerecordsresponsetypedef)
+- [ReportConfigurationTypeDef](./type_defs.md#reportconfigurationtypedef)
 - [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 - [WriteRecordsRequestRequestTypeDef](./type_defs.md#writerecordsrequestrequesttypedef)
+- [DataModelTypeDef](./type_defs.md#datamodeltypedef)
 - [CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef)
 - [TableTypeDef](./type_defs.md#tabletypedef)
 - [UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef)
+- [DataModelConfigurationTypeDef](./type_defs.md#datamodelconfigurationtypedef)
 - [CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef)
 - [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)
 - [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)
 - [UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef)
+- [BatchLoadTaskDescriptionTypeDef](./type_defs.md#batchloadtaskdescriptiontypedef)
+- [CreateBatchLoadTaskRequestRequestTypeDef](./type_defs.md#createbatchloadtaskrequestrequesttypedef)
+- [DescribeBatchLoadTaskResponseTypeDef](./type_defs.md#describebatchloadtaskresponsetypedef)
 

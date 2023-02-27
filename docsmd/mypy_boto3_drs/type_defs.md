@@ -1674,9 +1674,11 @@ def get_value() -> LifeCycleLastLaunchTypeDef:
 ```python title="Definition"
 class LifeCycleLastLaunchTypeDef(TypedDict):
     initiated: NotRequired[LifeCycleLastLaunchInitiatedTypeDef],  # (1)
+    status: NotRequired[LaunchStatusType],  # (2)
 ```
 
 1. See [:material-code-braces: LifeCycleLastLaunchInitiatedTypeDef](./type_defs.md#lifecyclelastlaunchinitiatedtypedef) 
+2. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
 ## ListExtensibleSourceServersResponseTypeDef
 
 ```python title="Usage Example"
@@ -1942,6 +1944,7 @@ class DataReplicationInfoTypeDef(TypedDict):
     etaDateTime: NotRequired[str],
     lagDuration: NotRequired[str],
     replicatedDisks: NotRequired[List[DataReplicationInfoReplicatedDiskTypeDef]],  # (4)
+    stagingAvailabilityZone: NotRequired[str],
 ```
 
 1. See [:material-code-braces: DataReplicationErrorTypeDef](./type_defs.md#datareplicationerrortypedef) 
@@ -2070,6 +2073,7 @@ class RecoveryInstanceDataReplicationInfoTypeDef(TypedDict):
     etaDateTime: NotRequired[str],
     lagDuration: NotRequired[str],
     replicatedDisks: NotRequired[List[RecoveryInstanceDataReplicationInfoReplicatedDiskTypeDef]],  # (4)
+    stagingAvailabilityZone: NotRequired[str],
 ```
 
 1. See [:material-code-braces: RecoveryInstanceDataReplicationErrorTypeDef](./type_defs.md#recoveryinstancedatareplicationerrortypedef) 
@@ -2200,6 +2204,7 @@ class RecoveryInstanceTypeDef(TypedDict):
     failback: NotRequired[RecoveryInstanceFailbackTypeDef],  # (3)
     isDrill: NotRequired[bool],
     jobID: NotRequired[str],
+    originAvailabilityZone: NotRequired[str],
     originEnvironment: NotRequired[OriginEnvironmentType],  # (4)
     pointInTimeSnapshotDateTime: NotRequired[str],
     recoveryInstanceID: NotRequired[str],

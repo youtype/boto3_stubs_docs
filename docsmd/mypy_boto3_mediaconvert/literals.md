@@ -761,6 +761,41 @@ AvcIntraUhdQualityTuningLevelType = Literal[
     "SINGLE_PASS",
 ]
 ```
+## BandwidthReductionFilterSharpeningType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import BandwidthReductionFilterSharpeningType
+
+def get_value() -> BandwidthReductionFilterSharpeningType:
+    return "HIGH"
+```
+
+```python title="Definition"
+BandwidthReductionFilterSharpeningType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+    "OFF",
+]
+```
+## BandwidthReductionFilterStrengthType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import BandwidthReductionFilterStrengthType
+
+def get_value() -> BandwidthReductionFilterStrengthType:
+    return "AUTO"
+```
+
+```python title="Definition"
+BandwidthReductionFilterStrengthType = Literal[
+    "AUTO",
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+    "OFF",
+]
+```
 ## BillingTagsSourceType
 
 ```python title="Usage Example"
@@ -3396,6 +3431,21 @@ def get_value() -> H265WriteMp4PackagingTypeType:
 H265WriteMp4PackagingTypeType = Literal[
     "HEV1",
     "HVC1",
+]
+```
+## HDRToSDRToneMapperType
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import HDRToSDRToneMapperType
+
+def get_value() -> HDRToSDRToneMapperType:
+    return "PRESERVE_DETAILS"
+```
+
+```python title="Definition"
+HDRToSDRToneMapperType = Literal[
+    "PRESERVE_DETAILS",
+    "VIBRANT",
 ]
 ```
 ## HlsAdMarkersType
@@ -6823,6 +6873,7 @@ ServiceName = Literal[
     "importexport",
     "inspector",
     "inspector2",
+    "internetmonitor",
     "iot",
     "iot-data",
     "iot-jobs-data",

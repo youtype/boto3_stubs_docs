@@ -366,6 +366,8 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-inspector2](./mypy_boto3_inspector2/README.md) for [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2) service
 
+- [mypy-boto3-internetmonitor](./mypy_boto3_internetmonitor/README.md) for [CloudWatchInternetMonitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/internetmonitor.html#CloudWatchInternetMonitor) service
+
 - [mypy-boto3-iot](./mypy_boto3_iot/README.md) for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT) service
 
 - [mypy-boto3-iot-data](./mypy_boto3_iot_data/README.md) for [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane) service

@@ -3049,6 +3049,7 @@ class ProactiveAnomalySummaryTypeDef(TypedDict):
     Limit: NotRequired[float],
     SourceMetadata: NotRequired[AnomalySourceMetadataTypeDef],  # (8)
     AnomalyResources: NotRequired[List[AnomalyResourceTypeDef]],  # (9)
+    Description: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AnomalySeverityType](./literals.md#anomalyseveritytype) 
@@ -3086,6 +3087,7 @@ class ProactiveAnomalyTypeDef(TypedDict):
     Limit: NotRequired[float],
     SourceMetadata: NotRequired[AnomalySourceMetadataTypeDef],  # (8)
     AnomalyResources: NotRequired[List[AnomalyResourceTypeDef]],  # (9)
+    Description: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: AnomalySeverityType](./literals.md#anomalyseveritytype) 

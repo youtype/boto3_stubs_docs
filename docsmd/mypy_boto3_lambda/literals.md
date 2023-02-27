@@ -67,6 +67,21 @@ EventSourcePositionType = Literal[
     "TRIM_HORIZON",
 ]
 ```
+## FullDocumentType
+
+```python title="Usage Example"
+from mypy_boto3_lambda.literals import FullDocumentType
+
+def get_value() -> FullDocumentType:
+    return "Default"
+```
+
+```python title="Definition"
+FullDocumentType = Literal[
+    "Default",
+    "UpdateLookup",
+]
+```
 ## FunctionActiveV2WaiterName
 
 ```python title="Usage Example"
@@ -809,6 +824,7 @@ ServiceName = Literal[
     "importexport",
     "inspector",
     "inspector2",
+    "internetmonitor",
     "iot",
     "iot-data",
     "iot-jobs-data",

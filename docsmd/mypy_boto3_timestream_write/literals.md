@@ -7,6 +7,39 @@
     Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
     type annotations stubs module [mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
+## BatchLoadDataFormatType
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.literals import BatchLoadDataFormatType
+
+def get_value() -> BatchLoadDataFormatType:
+    return "CSV"
+```
+
+```python title="Definition"
+BatchLoadDataFormatType = Literal[
+    "CSV",
+]
+```
+## BatchLoadStatusType
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.literals import BatchLoadStatusType
+
+def get_value() -> BatchLoadStatusType:
+    return "CREATED"
+```
+
+```python title="Definition"
+BatchLoadStatusType = Literal[
+    "CREATED",
+    "FAILED",
+    "IN_PROGRESS",
+    "PENDING_RESUME",
+    "PROGRESS_STOPPED",
+    "SUCCEEDED",
+]
+```
 ## DimensionValueTypeType
 
 ```python title="Usage Example"
@@ -55,6 +88,24 @@ S3EncryptionOptionType = Literal[
     "SSE_S3",
 ]
 ```
+## ScalarMeasureValueTypeType
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.literals import ScalarMeasureValueTypeType
+
+def get_value() -> ScalarMeasureValueTypeType:
+    return "BIGINT"
+```
+
+```python title="Definition"
+ScalarMeasureValueTypeType = Literal[
+    "BIGINT",
+    "BOOLEAN",
+    "DOUBLE",
+    "TIMESTAMP",
+    "VARCHAR",
+]
+```
 ## TableStatusType
 
 ```python title="Usage Example"
@@ -68,6 +119,7 @@ def get_value() -> TableStatusType:
 TableStatusType = Literal[
     "ACTIVE",
     "DELETING",
+    "RESTORING",
 ]
 ```
 ## TimeUnitType
@@ -259,6 +311,7 @@ ServiceName = Literal[
     "importexport",
     "inspector",
     "inspector2",
+    "internetmonitor",
     "iot",
     "iot-data",
     "iot-jobs-data",

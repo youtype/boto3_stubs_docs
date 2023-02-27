@@ -303,7 +303,8 @@ def create_event_source_mapping(
     AmazonManagedKafkaEventSourceConfig: AmazonManagedKafkaEventSourceConfigTypeDef = ...,  # (7)
     SelfManagedKafkaEventSourceConfig: SelfManagedKafkaEventSourceConfigTypeDef = ...,  # (8)
     ScalingConfig: ScalingConfigTypeDef = ...,  # (9)
-) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (10)
+    DocumentDBEventSourceConfig: DocumentDBEventSourceConfigTypeDef = ...,  # (10)
+) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (11)
     ...
 ```
 
@@ -316,7 +317,8 @@ def create_event_source_mapping(
 7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
 8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
 9. See [:material-code-braces: ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef) 
-10. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
+10. See [:material-code-braces: DocumentDBEventSourceConfigTypeDef](./type_defs.md#documentdbeventsourceconfigtypedef) 
+11. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2158,7 +2160,8 @@ def update_event_source_mapping(
     TumblingWindowInSeconds: int = ...,
     FunctionResponseTypes: Sequence[FunctionResponseTypeType] = ...,  # (4)
     ScalingConfig: ScalingConfigTypeDef = ...,  # (5)
-) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (6)
+    DocumentDBEventSourceConfig: DocumentDBEventSourceConfigTypeDef = ...,  # (6)
+) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (7)
     ...
 ```
 
@@ -2167,7 +2170,8 @@ def update_event_source_mapping(
 3. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
 4. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
 5. See [:material-code-braces: ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef) 
-6. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
+6. See [:material-code-braces: DocumentDBEventSourceConfigTypeDef](./type_defs.md#documentdbeventsourceconfigtypedef) 
+7. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

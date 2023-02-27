@@ -352,6 +352,7 @@ ServiceName = Literal[
     "importexport",
     "inspector",
     "inspector2",
+    "internetmonitor",
     "iot",
     "iot-data",
     "iot-jobs-data",

@@ -26,11 +26,11 @@ type checking and code completion should work out of the box.
     session = Session()
 
     client = session.client("timestream-write")  # (1)
-    result = client.create_database()  # (2)
+    result = client.create_batch_load_task()  # (2)
     ```
 
     1. client: [TimestreamWriteClient](./client.md)
-    2. result: [:material-code-braces: CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef) 
+    2. result: [:material-code-braces: CreateBatchLoadTaskResponseTypeDef](./type_defs.md#createbatchloadtaskresponsetypedef) 
 
 
 
@@ -52,16 +52,16 @@ However, these type annotations can be helpful in your functions and methods.
     from boto3.session import Session
 
     from mypy_boto3_timestream_write.client import TimestreamWriteClient
-    from mypy_boto3_timestream_write.type_defs import CreateDatabaseResponseTypeDef
-    from mypy_boto3_timestream_write.type_defs import CreateDatabaseRequestRequestTypeDef
+    from mypy_boto3_timestream_write.type_defs import CreateBatchLoadTaskResponseTypeDef
+    from mypy_boto3_timestream_write.type_defs import CreateBatchLoadTaskRequestRequestTypeDef
 
 
     session = Session()
 
     client: TimestreamWriteClient = session.client("timestream-write")
 
-    kwargs: CreateDatabaseRequestRequestTypeDef = {...}
-    result: CreateDatabaseResponseTypeDef = client.create_database(**kwargs)
+    kwargs: CreateBatchLoadTaskRequestRequestTypeDef = {...}
+    result: CreateBatchLoadTaskResponseTypeDef = client.create_batch_load_task(**kwargs)
     ```
 
 

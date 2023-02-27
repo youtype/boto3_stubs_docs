@@ -88,6 +88,47 @@ def close(
 ```
 
 
+### create\_batch\_load\_task
+
+Creates a new Timestream batch load task.
+
+Type annotations and code completion for `#!python boto3.client("timestream-write").create_batch_load_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_batch_load_task)
+
+```python title="Method definition"
+def create_batch_load_task(
+    self,
+    *,
+    DataSourceConfiguration: DataSourceConfigurationTypeDef,  # (1)
+    ReportConfiguration: ReportConfigurationTypeDef,  # (2)
+    TargetDatabaseName: str,
+    TargetTableName: str,
+    ClientToken: str = ...,
+    DataModelConfiguration: DataModelConfigurationTypeDef = ...,  # (3)
+    RecordVersion: int = ...,
+) -> CreateBatchLoadTaskResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+2. See [:material-code-braces: ReportConfigurationTypeDef](./type_defs.md#reportconfigurationtypedef) 
+3. See [:material-code-braces: DataModelConfigurationTypeDef](./type_defs.md#datamodelconfigurationtypedef) 
+4. See [:material-code-braces: CreateBatchLoadTaskResponseTypeDef](./type_defs.md#createbatchloadtaskresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateBatchLoadTaskRequestRequestTypeDef = {  # (1)
+    "DataSourceConfiguration": ...,
+    "ReportConfiguration": ...,
+    "TargetDatabaseName": ...,
+    "TargetTableName": ...,
+}
+
+parent.create_batch_load_task(**kwargs)
+```
+
+1. See [:material-code-braces: CreateBatchLoadTaskRequestRequestTypeDef](./type_defs.md#createbatchloadtaskrequestrequesttypedef) 
+
 ### create\_database
 
 Creates a new Timestream database.
@@ -122,8 +163,7 @@ parent.create_database(**kwargs)
 
 ### create\_table
 
-The CreateTable operation adds a new table to an existing database in your
-account.
+Adds a new table to an existing database in your account.
 
 Type annotations and code completion for `#!python boto3.client("timestream-write").create_table` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
@@ -218,6 +258,36 @@ parent.delete_table(**kwargs)
 
 1. See [:material-code-braces: DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef) 
 
+### describe\_batch\_load\_task
+
+Returns information about the batch load task, including configurations,
+mappings, progress, and other details.
+
+Type annotations and code completion for `#!python boto3.client("timestream-write").describe_batch_load_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_batch_load_task)
+
+```python title="Method definition"
+def describe_batch_load_task(
+    self,
+    *,
+    TaskId: str,
+) -> DescribeBatchLoadTaskResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeBatchLoadTaskResponseTypeDef](./type_defs.md#describebatchloadtaskresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBatchLoadTaskRequestRequestTypeDef = {  # (1)
+    "TaskId": ...,
+}
+
+parent.describe_batch_load_task(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBatchLoadTaskRequestRequestTypeDef](./type_defs.md#describebatchloadtaskrequestrequesttypedef) 
+
 ### describe\_database
 
 Returns information about the database, including the database name, time that
@@ -251,8 +321,7 @@ parent.describe_database(**kwargs)
 
 ### describe\_endpoints
 
-DescribeEndpoints returns a list of available endpoints to make Timestream API
-calls against.
+Returns a list of available endpoints to make Timestream API calls against.
 
 Type annotations and code completion for `#!python boto3.client("timestream-write").describe_endpoints` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
@@ -317,6 +386,39 @@ def generate_presigned_url(
 ```
 
 
+### list\_batch\_load\_tasks
+
+Provides a list of batch load tasks, along with the name, status, when the task
+is resumable until, and other details.
+
+Type annotations and code completion for `#!python boto3.client("timestream-write").list_batch_load_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_batch_load_tasks)
+
+```python title="Method definition"
+def list_batch_load_tasks(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    TaskStatus: BatchLoadStatusType = ...,  # (1)
+) -> ListBatchLoadTasksResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: BatchLoadStatusType](./literals.md#batchloadstatustype) 
+2. See [:material-code-braces: ListBatchLoadTasksResponseTypeDef](./type_defs.md#listbatchloadtasksresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListBatchLoadTasksRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_batch_load_tasks(**kwargs)
+```
+
+1. See [:material-code-braces: ListBatchLoadTasksRequestRequestTypeDef](./type_defs.md#listbatchloadtasksrequestrequesttypedef) 
+
 ### list\_databases
 
 Returns a list of your Timestream databases.
@@ -349,8 +451,8 @@ parent.list_databases(**kwargs)
 
 ### list\_tables
 
-A list of tables, along with the name, status and retention properties of each
-table.
+Provides a list of tables, along with the name, status, and retention properties
+of each table.
 
 Type annotations and code completion for `#!python boto3.client("timestream-write").list_tables` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
@@ -381,7 +483,7 @@ parent.list_tables(**kwargs)
 
 ### list\_tags\_for\_resource
 
-List all tags on a Timestream resource.
+Lists all tags on a Timestream resource.
 
 Type annotations and code completion for `#!python boto3.client("timestream-write").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
@@ -408,9 +510,39 @@ parent.list_tags_for_resource(**kwargs)
 
 1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
+### resume\_batch\_load\_task
+
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/timestream-
+write-2018-11-01/ResumeBatchLoadTask).
+
+Type annotations and code completion for `#!python boto3.client("timestream-write").resume_batch_load_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.resume_batch_load_task)
+
+```python title="Method definition"
+def resume_batch_load_task(
+    self,
+    *,
+    TaskId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: ResumeBatchLoadTaskRequestRequestTypeDef = {  # (1)
+    "TaskId": ...,
+}
+
+parent.resume_batch_load_task(**kwargs)
+```
+
+1. See [:material-code-braces: ResumeBatchLoadTaskRequestRequestTypeDef](./type_defs.md#resumebatchloadtaskrequestrequesttypedef) 
+
 ### tag\_resource
 
-Associate a set of tags with a Timestream resource.
+Associates a set of tags with a Timestream resource.
 
 Type annotations and code completion for `#!python boto3.client("timestream-write").tag_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
@@ -538,8 +670,7 @@ parent.update_table(**kwargs)
 
 ### write\_records
 
-The WriteRecords operation enables you to write your time series data into
-Timestream.
+Enables you to write your time-series data into Timestream.
 
 Type annotations and code completion for `#!python boto3.client("timestream-write").write_records` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)

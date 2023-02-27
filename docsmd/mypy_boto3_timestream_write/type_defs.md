@@ -7,6 +7,74 @@
     Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
     type annotations stubs module [mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
+## BatchLoadProgressReportTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import BatchLoadProgressReportTypeDef
+
+def get_value() -> BatchLoadProgressReportTypeDef:
+    return {
+        "RecordsProcessed": ...,
+    }
+```
+
+```python title="Definition"
+class BatchLoadProgressReportTypeDef(TypedDict):
+    RecordsProcessed: NotRequired[int],
+    RecordsIngested: NotRequired[int],
+    ParseFailures: NotRequired[int],
+    RecordIngestionFailures: NotRequired[int],
+    FileFailures: NotRequired[int],
+    BytesMetered: NotRequired[int],
+```
+
+## BatchLoadTaskTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import BatchLoadTaskTypeDef
+
+def get_value() -> BatchLoadTaskTypeDef:
+    return {
+        "TaskId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchLoadTaskTypeDef(TypedDict):
+    TaskId: NotRequired[str],
+    TaskStatus: NotRequired[BatchLoadStatusType],  # (1)
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    ResumableUntil: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: BatchLoadStatusType](./literals.md#batchloadstatustype) 
+## ResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
+```
+
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
+
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -46,30 +114,6 @@ class DatabaseTypeDef(TypedDict):
     LastUpdatedTime: NotRequired[datetime],
 ```
 
-## ResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_timestream_write.type_defs import ResponseMetadataTypeDef
-
-def get_value() -> ResponseMetadataTypeDef:
-    return {
-        "RequestId": ...,
-        "HostId": ...,
-        "HTTPStatusCode": ...,
-        "HTTPHeaders": ...,
-        "RetryAttempts": ...,
-    }
-```
-
-```python title="Definition"
-class ResponseMetadataTypeDef(TypedDict):
-    RequestId: str,
-    HostId: str,
-    HTTPStatusCode: int,
-    HTTPHeaders: Dict[str, str],
-    RetryAttempts: int,
-```
-
 ## RetentionPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -86,6 +130,77 @@ def get_value() -> RetentionPropertiesTypeDef:
 class RetentionPropertiesTypeDef(TypedDict):
     MemoryStoreRetentionPeriodInHours: int,
     MagneticStoreRetentionPeriodInDays: int,
+```
+
+## CsvConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import CsvConfigurationTypeDef
+
+def get_value() -> CsvConfigurationTypeDef:
+    return {
+        "ColumnSeparator": ...,
+    }
+```
+
+```python title="Definition"
+class CsvConfigurationTypeDef(TypedDict):
+    ColumnSeparator: NotRequired[str],
+    EscapeChar: NotRequired[str],
+    QuoteChar: NotRequired[str],
+    NullValue: NotRequired[str],
+    TrimWhiteSpace: NotRequired[bool],
+```
+
+## DataModelS3ConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DataModelS3ConfigurationTypeDef
+
+def get_value() -> DataModelS3ConfigurationTypeDef:
+    return {
+        "BucketName": ...,
+    }
+```
+
+```python title="Definition"
+class DataModelS3ConfigurationTypeDef(TypedDict):
+    BucketName: NotRequired[str],
+    ObjectKey: NotRequired[str],
+```
+
+## DimensionMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DimensionMappingTypeDef
+
+def get_value() -> DimensionMappingTypeDef:
+    return {
+        "SourceColumn": ...,
+    }
+```
+
+```python title="Definition"
+class DimensionMappingTypeDef(TypedDict):
+    SourceColumn: NotRequired[str],
+    DestinationColumn: NotRequired[str],
+```
+
+## DataSourceS3ConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DataSourceS3ConfigurationTypeDef
+
+def get_value() -> DataSourceS3ConfigurationTypeDef:
+    return {
+        "BucketName": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceS3ConfigurationTypeDef(TypedDict):
+    BucketName: str,
+    ObjectKeyPrefix: NotRequired[str],
 ```
 
 ## DeleteDatabaseRequestRequestTypeDef
@@ -120,6 +235,22 @@ def get_value() -> DeleteTableRequestRequestTypeDef:
 class DeleteTableRequestRequestTypeDef(TypedDict):
     DatabaseName: str,
     TableName: str,
+```
+
+## DescribeBatchLoadTaskRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DescribeBatchLoadTaskRequestRequestTypeDef
+
+def get_value() -> DescribeBatchLoadTaskRequestRequestTypeDef:
+    return {
+        "TaskId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBatchLoadTaskRequestRequestTypeDef(TypedDict):
+    TaskId: str,
 ```
 
 ## DescribeDatabaseRequestRequestTypeDef
@@ -194,6 +325,25 @@ class DimensionTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: DimensionValueTypeType](./literals.md#dimensionvaluetypetype) 
+## ListBatchLoadTasksRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import ListBatchLoadTasksRequestRequestTypeDef
+
+def get_value() -> ListBatchLoadTasksRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListBatchLoadTasksRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    TaskStatus: NotRequired[BatchLoadStatusType],  # (1)
+```
+
+1. See [:material-code-brackets: BatchLoadStatusType](./literals.md#batchloadstatustype) 
 ## ListDatabasesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -286,6 +436,25 @@ class MeasureValueTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: MeasureValueTypeType](./literals.md#measurevaluetypetype) 
+## MultiMeasureAttributeMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import MultiMeasureAttributeMappingTypeDef
+
+def get_value() -> MultiMeasureAttributeMappingTypeDef:
+    return {
+        "SourceColumn": ...,
+    }
+```
+
+```python title="Definition"
+class MultiMeasureAttributeMappingTypeDef(TypedDict):
+    SourceColumn: str,
+    TargetMultiMeasureAttributeName: NotRequired[str],
+    MeasureValueType: NotRequired[ScalarMeasureValueTypeType],  # (1)
+```
+
+1. See [:material-code-brackets: ScalarMeasureValueTypeType](./literals.md#scalarmeasurevaluetypetype) 
 ## RecordsIngestedTypeDef
 
 ```python title="Usage Example"
@@ -302,6 +471,42 @@ class RecordsIngestedTypeDef(TypedDict):
     Total: NotRequired[int],
     MemoryStore: NotRequired[int],
     MagneticStore: NotRequired[int],
+```
+
+## ReportS3ConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import ReportS3ConfigurationTypeDef
+
+def get_value() -> ReportS3ConfigurationTypeDef:
+    return {
+        "BucketName": ...,
+    }
+```
+
+```python title="Definition"
+class ReportS3ConfigurationTypeDef(TypedDict):
+    BucketName: str,
+    ObjectKeyPrefix: NotRequired[str],
+    EncryptionOption: NotRequired[S3EncryptionOptionType],  # (1)
+    KmsKeyId: NotRequired[str],
+```
+
+1. See [:material-code-brackets: S3EncryptionOptionType](./literals.md#s3encryptionoptiontype) 
+## ResumeBatchLoadTaskRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import ResumeBatchLoadTaskRequestRequestTypeDef
+
+def get_value() -> ResumeBatchLoadTaskRequestRequestTypeDef:
+    return {
+        "TaskId": ...,
+    }
+```
+
+```python title="Definition"
+class ResumeBatchLoadTaskRequestRequestTypeDef(TypedDict):
+    TaskId: str,
 ```
 
 ## UntagResourceRequestRequestTypeDef
@@ -340,6 +545,64 @@ class UpdateDatabaseRequestRequestTypeDef(TypedDict):
     KmsKeyId: str,
 ```
 
+## CreateBatchLoadTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import CreateBatchLoadTaskResponseTypeDef
+
+def get_value() -> CreateBatchLoadTaskResponseTypeDef:
+    return {
+        "TaskId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBatchLoadTaskResponseTypeDef(TypedDict):
+    TaskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## EmptyResponseMetadataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import EmptyResponseMetadataTypeDef
+
+def get_value() -> EmptyResponseMetadataTypeDef:
+    return {
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class EmptyResponseMetadataTypeDef(TypedDict):
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBatchLoadTasksResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import ListBatchLoadTasksResponseTypeDef
+
+def get_value() -> ListBatchLoadTasksResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "BatchLoadTasks": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListBatchLoadTasksResponseTypeDef(TypedDict):
+    NextToken: str,
+    BatchLoadTasks: List[BatchLoadTaskTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchLoadTaskTypeDef](./type_defs.md#batchloadtasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatabaseRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -359,6 +622,26 @@ class CreateDatabaseRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListTagsForResourceResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -418,23 +701,6 @@ class DescribeDatabaseResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## EmptyResponseMetadataTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_timestream_write.type_defs import EmptyResponseMetadataTypeDef
-
-def get_value() -> EmptyResponseMetadataTypeDef:
-    return {
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class EmptyResponseMetadataTypeDef(TypedDict):
-    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
-```
-
-1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDatabasesResponseTypeDef
 
 ```python title="Usage Example"
@@ -457,26 +723,6 @@ class ListDatabasesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
-## ListTagsForResourceResponseTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_timestream_write.type_defs import ListTagsForResourceResponseTypeDef
-
-def get_value() -> ListTagsForResourceResponseTypeDef:
-    return {
-        "Tags": ...,
-        "ResponseMetadata": ...,
-    }
-```
-
-```python title="Definition"
-class ListTagsForResourceResponseTypeDef(TypedDict):
-    Tags: List[TagTypeDef],  # (1)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
-```
-
-1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
-2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDatabaseResponseTypeDef
 
 ```python title="Usage Example"
@@ -497,6 +743,28 @@ class UpdateDatabaseResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DataSourceConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DataSourceConfigurationTypeDef
+
+def get_value() -> DataSourceConfigurationTypeDef:
+    return {
+        "DataSourceS3Configuration": ...,
+        "DataFormat": ...,
+    }
+```
+
+```python title="Definition"
+class DataSourceConfigurationTypeDef(TypedDict):
+    DataSourceS3Configuration: DataSourceS3ConfigurationTypeDef,  # (1)
+    DataFormat: BatchLoadDataFormatType,  # (3)
+    CsvConfiguration: NotRequired[CsvConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DataSourceS3ConfigurationTypeDef](./type_defs.md#datasources3configurationtypedef) 
+2. See [:material-code-braces: CsvConfigurationTypeDef](./type_defs.md#csvconfigurationtypedef) 
+3. See [:material-code-brackets: BatchLoadDataFormatType](./literals.md#batchloaddataformattype) 
 ## DescribeEndpointsResponseTypeDef
 
 ```python title="Usage Example"
@@ -561,6 +829,46 @@ class RecordTypeDef(TypedDict):
 2. See [:material-code-brackets: MeasureValueTypeType](./literals.md#measurevaluetypetype) 
 3. See [:material-code-brackets: TimeUnitType](./literals.md#timeunittype) 
 4. See [:material-code-braces: MeasureValueTypeDef](./type_defs.md#measurevaluetypedef) 
+## MixedMeasureMappingTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import MixedMeasureMappingTypeDef
+
+def get_value() -> MixedMeasureMappingTypeDef:
+    return {
+        "MeasureValueType": ...,
+    }
+```
+
+```python title="Definition"
+class MixedMeasureMappingTypeDef(TypedDict):
+    MeasureValueType: MeasureValueTypeType,  # (1)
+    MeasureName: NotRequired[str],
+    SourceColumn: NotRequired[str],
+    TargetMeasureName: NotRequired[str],
+    MultiMeasureAttributeMappings: NotRequired[Sequence[MultiMeasureAttributeMappingTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: MeasureValueTypeType](./literals.md#measurevaluetypetype) 
+2. See [:material-code-braces: MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef) 
+## MultiMeasureMappingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import MultiMeasureMappingsTypeDef
+
+def get_value() -> MultiMeasureMappingsTypeDef:
+    return {
+        "MultiMeasureAttributeMappings": ...,
+    }
+```
+
+```python title="Definition"
+class MultiMeasureMappingsTypeDef(TypedDict):
+    MultiMeasureAttributeMappings: Sequence[MultiMeasureAttributeMappingTypeDef],  # (1)
+    TargetMultiMeasureName: NotRequired[str],
+```
+
+1. See [:material-code-braces: MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef) 
 ## WriteRecordsResponseTypeDef
 
 ```python title="Usage Example"
@@ -581,6 +889,23 @@ class WriteRecordsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: RecordsIngestedTypeDef](./type_defs.md#recordsingestedtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ReportConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import ReportConfigurationTypeDef
+
+def get_value() -> ReportConfigurationTypeDef:
+    return {
+        "ReportS3Configuration": ...,
+    }
+```
+
+```python title="Definition"
+class ReportConfigurationTypeDef(TypedDict):
+    ReportS3Configuration: NotRequired[ReportS3ConfigurationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: ReportS3ConfigurationTypeDef](./type_defs.md#reports3configurationtypedef) 
 ## MagneticStoreWritePropertiesTypeDef
 
 ```python title="Usage Example"
@@ -622,6 +947,31 @@ class WriteRecordsRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
 2. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+## DataModelTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DataModelTypeDef
+
+def get_value() -> DataModelTypeDef:
+    return {
+        "DimensionMappings": ...,
+    }
+```
+
+```python title="Definition"
+class DataModelTypeDef(TypedDict):
+    DimensionMappings: Sequence[DimensionMappingTypeDef],  # (2)
+    TimeColumn: NotRequired[str],
+    TimeUnit: NotRequired[TimeUnitType],  # (1)
+    MultiMeasureMappings: NotRequired[MultiMeasureMappingsTypeDef],  # (3)
+    MixedMeasureMappings: NotRequired[Sequence[MixedMeasureMappingTypeDef]],  # (4)
+    MeasureNameColumn: NotRequired[str],
+```
+
+1. See [:material-code-brackets: TimeUnitType](./literals.md#timeunittype) 
+2. See [:material-code-braces: DimensionMappingTypeDef](./type_defs.md#dimensionmappingtypedef) 
+3. See [:material-code-braces: MultiMeasureMappingsTypeDef](./type_defs.md#multimeasuremappingstypedef) 
+4. See [:material-code-braces: MixedMeasureMappingTypeDef](./type_defs.md#mixedmeasuremappingtypedef) 
 ## CreateTableRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -694,6 +1044,25 @@ class UpdateTableRequestRequestTypeDef(TypedDict):
 
 1. See [:material-code-braces: RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef) 
 2. See [:material-code-braces: MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef) 
+## DataModelConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DataModelConfigurationTypeDef
+
+def get_value() -> DataModelConfigurationTypeDef:
+    return {
+        "DataModel": ...,
+    }
+```
+
+```python title="Definition"
+class DataModelConfigurationTypeDef(TypedDict):
+    DataModel: NotRequired[DataModelTypeDef],  # (1)
+    DataModelS3Configuration: NotRequired[DataModelS3ConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DataModelTypeDef](./type_defs.md#datamodeltypedef) 
+2. See [:material-code-braces: DataModelS3ConfigurationTypeDef](./type_defs.md#datamodels3configurationtypedef) 
 ## CreateTableResponseTypeDef
 
 ```python title="Usage Example"
@@ -775,4 +1144,85 @@ class UpdateTableResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## BatchLoadTaskDescriptionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import BatchLoadTaskDescriptionTypeDef
+
+def get_value() -> BatchLoadTaskDescriptionTypeDef:
+    return {
+        "TaskId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchLoadTaskDescriptionTypeDef(TypedDict):
+    TaskId: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    DataSourceConfiguration: NotRequired[DataSourceConfigurationTypeDef],  # (1)
+    ProgressReport: NotRequired[BatchLoadProgressReportTypeDef],  # (2)
+    ReportConfiguration: NotRequired[ReportConfigurationTypeDef],  # (3)
+    DataModelConfiguration: NotRequired[DataModelConfigurationTypeDef],  # (4)
+    TargetDatabaseName: NotRequired[str],
+    TargetTableName: NotRequired[str],
+    TaskStatus: NotRequired[BatchLoadStatusType],  # (5)
+    RecordVersion: NotRequired[int],
+    CreationTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    ResumableUntil: NotRequired[datetime],
+```
+
+1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+2. See [:material-code-braces: BatchLoadProgressReportTypeDef](./type_defs.md#batchloadprogressreporttypedef) 
+3. See [:material-code-braces: ReportConfigurationTypeDef](./type_defs.md#reportconfigurationtypedef) 
+4. See [:material-code-braces: DataModelConfigurationTypeDef](./type_defs.md#datamodelconfigurationtypedef) 
+5. See [:material-code-brackets: BatchLoadStatusType](./literals.md#batchloadstatustype) 
+## CreateBatchLoadTaskRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import CreateBatchLoadTaskRequestRequestTypeDef
+
+def get_value() -> CreateBatchLoadTaskRequestRequestTypeDef:
+    return {
+        "DataSourceConfiguration": ...,
+        "ReportConfiguration": ...,
+        "TargetDatabaseName": ...,
+        "TargetTableName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateBatchLoadTaskRequestRequestTypeDef(TypedDict):
+    DataSourceConfiguration: DataSourceConfigurationTypeDef,  # (1)
+    ReportConfiguration: ReportConfigurationTypeDef,  # (2)
+    TargetDatabaseName: str,
+    TargetTableName: str,
+    ClientToken: NotRequired[str],
+    DataModelConfiguration: NotRequired[DataModelConfigurationTypeDef],  # (3)
+    RecordVersion: NotRequired[int],
+```
+
+1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+2. See [:material-code-braces: ReportConfigurationTypeDef](./type_defs.md#reportconfigurationtypedef) 
+3. See [:material-code-braces: DataModelConfigurationTypeDef](./type_defs.md#datamodelconfigurationtypedef) 
+## DescribeBatchLoadTaskResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_timestream_write.type_defs import DescribeBatchLoadTaskResponseTypeDef
+
+def get_value() -> DescribeBatchLoadTaskResponseTypeDef:
+    return {
+        "BatchLoadTaskDescription": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBatchLoadTaskResponseTypeDef(TypedDict):
+    BatchLoadTaskDescription: BatchLoadTaskDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchLoadTaskDescriptionTypeDef](./type_defs.md#batchloadtaskdescriptiontypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

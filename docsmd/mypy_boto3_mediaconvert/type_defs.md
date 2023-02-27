@@ -526,6 +526,25 @@ class AvcIntraUhdSettingsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: AvcIntraUhdQualityTuningLevelType](./literals.md#avcintrauhdqualitytuningleveltype) 
+## BandwidthReductionFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import BandwidthReductionFilterTypeDef
+
+def get_value() -> BandwidthReductionFilterTypeDef:
+    return {
+        "Sharpening": ...,
+    }
+```
+
+```python title="Definition"
+class BandwidthReductionFilterTypeDef(TypedDict):
+    Sharpening: NotRequired[BandwidthReductionFilterSharpeningType],  # (1)
+    Strength: NotRequired[BandwidthReductionFilterStrengthType],  # (2)
+```
+
+1. See [:material-code-brackets: BandwidthReductionFilterSharpeningType](./literals.md#bandwidthreductionfiltersharpeningtype) 
+2. See [:material-code-brackets: BandwidthReductionFilterStrengthType](./literals.md#bandwidthreductionfilterstrengthtype) 
 ## BurninDestinationSettingsTypeDef
 
 ```python title="Usage Example"
@@ -3050,8 +3069,9 @@ class ColorCorrectorTypeDef(TypedDict):
     ColorSpaceConversion: NotRequired[ColorSpaceConversionType],  # (2)
     Contrast: NotRequired[int],
     Hdr10Metadata: NotRequired[Hdr10MetadataTypeDef],  # (3)
+    HdrToSdrToneMapper: NotRequired[HDRToSDRToneMapperType],  # (4)
     Hue: NotRequired[int],
-    SampleRangeConversion: NotRequired[SampleRangeConversionType],  # (4)
+    SampleRangeConversion: NotRequired[SampleRangeConversionType],  # (5)
     Saturation: NotRequired[int],
     SdrReferenceWhiteLevel: NotRequired[int],
 ```
@@ -3059,7 +3079,8 @@ class ColorCorrectorTypeDef(TypedDict):
 1. See [:material-code-braces: ClipLimitsTypeDef](./type_defs.md#cliplimitstypedef) 
 2. See [:material-code-brackets: ColorSpaceConversionType](./literals.md#colorspaceconversiontype) 
 3. See [:material-code-braces: Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef) 
-4. See [:material-code-brackets: SampleRangeConversionType](./literals.md#samplerangeconversiontype) 
+4. See [:material-code-brackets: HDRToSDRToneMapperType](./literals.md#hdrtosdrtonemappertype) 
+5. See [:material-code-brackets: SampleRangeConversionType](./literals.md#samplerangeconversiontype) 
 ## VideoSelectorTypeDef
 
 ```python title="Usage Example"
@@ -3444,73 +3465,75 @@ def get_value() -> H264SettingsTypeDef:
 ```python title="Definition"
 class H264SettingsTypeDef(TypedDict):
     AdaptiveQuantization: NotRequired[H264AdaptiveQuantizationType],  # (1)
+    BandwidthReductionFilter: NotRequired[BandwidthReductionFilterTypeDef],  # (2)
     Bitrate: NotRequired[int],
-    CodecLevel: NotRequired[H264CodecLevelType],  # (2)
-    CodecProfile: NotRequired[H264CodecProfileType],  # (3)
-    DynamicSubGop: NotRequired[H264DynamicSubGopType],  # (4)
-    EntropyEncoding: NotRequired[H264EntropyEncodingType],  # (5)
-    FieldEncoding: NotRequired[H264FieldEncodingType],  # (6)
-    FlickerAdaptiveQuantization: NotRequired[H264FlickerAdaptiveQuantizationType],  # (7)
-    FramerateControl: NotRequired[H264FramerateControlType],  # (8)
-    FramerateConversionAlgorithm: NotRequired[H264FramerateConversionAlgorithmType],  # (9)
+    CodecLevel: NotRequired[H264CodecLevelType],  # (3)
+    CodecProfile: NotRequired[H264CodecProfileType],  # (4)
+    DynamicSubGop: NotRequired[H264DynamicSubGopType],  # (5)
+    EntropyEncoding: NotRequired[H264EntropyEncodingType],  # (6)
+    FieldEncoding: NotRequired[H264FieldEncodingType],  # (7)
+    FlickerAdaptiveQuantization: NotRequired[H264FlickerAdaptiveQuantizationType],  # (8)
+    FramerateControl: NotRequired[H264FramerateControlType],  # (9)
+    FramerateConversionAlgorithm: NotRequired[H264FramerateConversionAlgorithmType],  # (10)
     FramerateDenominator: NotRequired[int],
     FramerateNumerator: NotRequired[int],
-    GopBReference: NotRequired[H264GopBReferenceType],  # (10)
+    GopBReference: NotRequired[H264GopBReferenceType],  # (11)
     GopClosedCadence: NotRequired[int],
     GopSize: NotRequired[float],
-    GopSizeUnits: NotRequired[H264GopSizeUnitsType],  # (11)
+    GopSizeUnits: NotRequired[H264GopSizeUnitsType],  # (12)
     HrdBufferFinalFillPercentage: NotRequired[int],
     HrdBufferInitialFillPercentage: NotRequired[int],
     HrdBufferSize: NotRequired[int],
-    InterlaceMode: NotRequired[H264InterlaceModeType],  # (12)
+    InterlaceMode: NotRequired[H264InterlaceModeType],  # (13)
     MaxBitrate: NotRequired[int],
     MinIInterval: NotRequired[int],
     NumberBFramesBetweenReferenceFrames: NotRequired[int],
     NumberReferenceFrames: NotRequired[int],
-    ParControl: NotRequired[H264ParControlType],  # (13)
+    ParControl: NotRequired[H264ParControlType],  # (14)
     ParDenominator: NotRequired[int],
     ParNumerator: NotRequired[int],
-    QualityTuningLevel: NotRequired[H264QualityTuningLevelType],  # (14)
-    QvbrSettings: NotRequired[H264QvbrSettingsTypeDef],  # (15)
-    RateControlMode: NotRequired[H264RateControlModeType],  # (16)
-    RepeatPps: NotRequired[H264RepeatPpsType],  # (17)
-    ScanTypeConversionMode: NotRequired[H264ScanTypeConversionModeType],  # (18)
-    SceneChangeDetect: NotRequired[H264SceneChangeDetectType],  # (19)
+    QualityTuningLevel: NotRequired[H264QualityTuningLevelType],  # (15)
+    QvbrSettings: NotRequired[H264QvbrSettingsTypeDef],  # (16)
+    RateControlMode: NotRequired[H264RateControlModeType],  # (17)
+    RepeatPps: NotRequired[H264RepeatPpsType],  # (18)
+    ScanTypeConversionMode: NotRequired[H264ScanTypeConversionModeType],  # (19)
+    SceneChangeDetect: NotRequired[H264SceneChangeDetectType],  # (20)
     Slices: NotRequired[int],
-    SlowPal: NotRequired[H264SlowPalType],  # (20)
+    SlowPal: NotRequired[H264SlowPalType],  # (21)
     Softness: NotRequired[int],
-    SpatialAdaptiveQuantization: NotRequired[H264SpatialAdaptiveQuantizationType],  # (21)
-    Syntax: NotRequired[H264SyntaxType],  # (22)
-    Telecine: NotRequired[H264TelecineType],  # (23)
-    TemporalAdaptiveQuantization: NotRequired[H264TemporalAdaptiveQuantizationType],  # (24)
-    UnregisteredSeiTimecode: NotRequired[H264UnregisteredSeiTimecodeType],  # (25)
+    SpatialAdaptiveQuantization: NotRequired[H264SpatialAdaptiveQuantizationType],  # (22)
+    Syntax: NotRequired[H264SyntaxType],  # (23)
+    Telecine: NotRequired[H264TelecineType],  # (24)
+    TemporalAdaptiveQuantization: NotRequired[H264TemporalAdaptiveQuantizationType],  # (25)
+    UnregisteredSeiTimecode: NotRequired[H264UnregisteredSeiTimecodeType],  # (26)
 ```
 
 1. See [:material-code-brackets: H264AdaptiveQuantizationType](./literals.md#h264adaptivequantizationtype) 
-2. See [:material-code-brackets: H264CodecLevelType](./literals.md#h264codecleveltype) 
-3. See [:material-code-brackets: H264CodecProfileType](./literals.md#h264codecprofiletype) 
-4. See [:material-code-brackets: H264DynamicSubGopType](./literals.md#h264dynamicsubgoptype) 
-5. See [:material-code-brackets: H264EntropyEncodingType](./literals.md#h264entropyencodingtype) 
-6. See [:material-code-brackets: H264FieldEncodingType](./literals.md#h264fieldencodingtype) 
-7. See [:material-code-brackets: H264FlickerAdaptiveQuantizationType](./literals.md#h264flickeradaptivequantizationtype) 
-8. See [:material-code-brackets: H264FramerateControlType](./literals.md#h264frameratecontroltype) 
-9. See [:material-code-brackets: H264FramerateConversionAlgorithmType](./literals.md#h264framerateconversionalgorithmtype) 
-10. See [:material-code-brackets: H264GopBReferenceType](./literals.md#h264gopbreferencetype) 
-11. See [:material-code-brackets: H264GopSizeUnitsType](./literals.md#h264gopsizeunitstype) 
-12. See [:material-code-brackets: H264InterlaceModeType](./literals.md#h264interlacemodetype) 
-13. See [:material-code-brackets: H264ParControlType](./literals.md#h264parcontroltype) 
-14. See [:material-code-brackets: H264QualityTuningLevelType](./literals.md#h264qualitytuningleveltype) 
-15. See [:material-code-braces: H264QvbrSettingsTypeDef](./type_defs.md#h264qvbrsettingstypedef) 
-16. See [:material-code-brackets: H264RateControlModeType](./literals.md#h264ratecontrolmodetype) 
-17. See [:material-code-brackets: H264RepeatPpsType](./literals.md#h264repeatppstype) 
-18. See [:material-code-brackets: H264ScanTypeConversionModeType](./literals.md#h264scantypeconversionmodetype) 
-19. See [:material-code-brackets: H264SceneChangeDetectType](./literals.md#h264scenechangedetecttype) 
-20. See [:material-code-brackets: H264SlowPalType](./literals.md#h264slowpaltype) 
-21. See [:material-code-brackets: H264SpatialAdaptiveQuantizationType](./literals.md#h264spatialadaptivequantizationtype) 
-22. See [:material-code-brackets: H264SyntaxType](./literals.md#h264syntaxtype) 
-23. See [:material-code-brackets: H264TelecineType](./literals.md#h264telecinetype) 
-24. See [:material-code-brackets: H264TemporalAdaptiveQuantizationType](./literals.md#h264temporaladaptivequantizationtype) 
-25. See [:material-code-brackets: H264UnregisteredSeiTimecodeType](./literals.md#h264unregisteredseitimecodetype) 
+2. See [:material-code-braces: BandwidthReductionFilterTypeDef](./type_defs.md#bandwidthreductionfiltertypedef) 
+3. See [:material-code-brackets: H264CodecLevelType](./literals.md#h264codecleveltype) 
+4. See [:material-code-brackets: H264CodecProfileType](./literals.md#h264codecprofiletype) 
+5. See [:material-code-brackets: H264DynamicSubGopType](./literals.md#h264dynamicsubgoptype) 
+6. See [:material-code-brackets: H264EntropyEncodingType](./literals.md#h264entropyencodingtype) 
+7. See [:material-code-brackets: H264FieldEncodingType](./literals.md#h264fieldencodingtype) 
+8. See [:material-code-brackets: H264FlickerAdaptiveQuantizationType](./literals.md#h264flickeradaptivequantizationtype) 
+9. See [:material-code-brackets: H264FramerateControlType](./literals.md#h264frameratecontroltype) 
+10. See [:material-code-brackets: H264FramerateConversionAlgorithmType](./literals.md#h264framerateconversionalgorithmtype) 
+11. See [:material-code-brackets: H264GopBReferenceType](./literals.md#h264gopbreferencetype) 
+12. See [:material-code-brackets: H264GopSizeUnitsType](./literals.md#h264gopsizeunitstype) 
+13. See [:material-code-brackets: H264InterlaceModeType](./literals.md#h264interlacemodetype) 
+14. See [:material-code-brackets: H264ParControlType](./literals.md#h264parcontroltype) 
+15. See [:material-code-brackets: H264QualityTuningLevelType](./literals.md#h264qualitytuningleveltype) 
+16. See [:material-code-braces: H264QvbrSettingsTypeDef](./type_defs.md#h264qvbrsettingstypedef) 
+17. See [:material-code-brackets: H264RateControlModeType](./literals.md#h264ratecontrolmodetype) 
+18. See [:material-code-brackets: H264RepeatPpsType](./literals.md#h264repeatppstype) 
+19. See [:material-code-brackets: H264ScanTypeConversionModeType](./literals.md#h264scantypeconversionmodetype) 
+20. See [:material-code-brackets: H264SceneChangeDetectType](./literals.md#h264scenechangedetecttype) 
+21. See [:material-code-brackets: H264SlowPalType](./literals.md#h264slowpaltype) 
+22. See [:material-code-brackets: H264SpatialAdaptiveQuantizationType](./literals.md#h264spatialadaptivequantizationtype) 
+23. See [:material-code-brackets: H264SyntaxType](./literals.md#h264syntaxtype) 
+24. See [:material-code-brackets: H264TelecineType](./literals.md#h264telecinetype) 
+25. See [:material-code-brackets: H264TemporalAdaptiveQuantizationType](./literals.md#h264temporaladaptivequantizationtype) 
+26. See [:material-code-brackets: H264UnregisteredSeiTimecodeType](./literals.md#h264unregisteredseitimecodetype) 
 ## H265SettingsTypeDef
 
 ```python title="Usage Example"

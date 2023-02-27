@@ -226,6 +226,25 @@ class CorsTypeDef(TypedDict):
     MaxAge: NotRequired[int],
 ```
 
+## DocumentDBEventSourceConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import DocumentDBEventSourceConfigTypeDef
+
+def get_value() -> DocumentDBEventSourceConfigTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentDBEventSourceConfigTypeDef(TypedDict):
+    DatabaseName: NotRequired[str],
+    CollectionName: NotRequired[str],
+    FullDocument: NotRequired[FullDocumentType],  # (1)
+```
+
+1. See [:material-code-brackets: FullDocumentType](./literals.md#fulldocumenttype) 
 ## ScalingConfigTypeDef
 
 ```python title="Usage Example"
@@ -1867,6 +1886,7 @@ def get_value() -> GetRuntimeManagementConfigResponseTypeDef:
     return {
         "UpdateRuntimeOn": ...,
         "RuntimeVersionArn": ...,
+        "FunctionArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1875,6 +1895,7 @@ def get_value() -> GetRuntimeManagementConfigResponseTypeDef:
 class GetRuntimeManagementConfigResponseTypeDef(TypedDict):
     UpdateRuntimeOn: UpdateRuntimeOnType,  # (1)
     RuntimeVersionArn: str,
+    FunctionArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -3291,6 +3312,7 @@ class CreateEventSourceMappingRequestRequestTypeDef(TypedDict):
     AmazonManagedKafkaEventSourceConfig: NotRequired[AmazonManagedKafkaEventSourceConfigTypeDef],  # (7)
     SelfManagedKafkaEventSourceConfig: NotRequired[SelfManagedKafkaEventSourceConfigTypeDef],  # (8)
     ScalingConfig: NotRequired[ScalingConfigTypeDef],  # (9)
+    DocumentDBEventSourceConfig: NotRequired[DocumentDBEventSourceConfigTypeDef],  # (10)
 ```
 
 1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
@@ -3302,6 +3324,7 @@ class CreateEventSourceMappingRequestRequestTypeDef(TypedDict):
 7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
 8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
 9. See [:material-code-braces: ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef) 
+10. See [:material-code-braces: DocumentDBEventSourceConfigTypeDef](./type_defs.md#documentdbeventsourceconfigtypedef) 
 ## EventSourceMappingConfigurationResponseMetadataTypeDef
 
 ```python title="Usage Example"
@@ -3335,6 +3358,7 @@ def get_value() -> EventSourceMappingConfigurationResponseMetadataTypeDef:
         "AmazonManagedKafkaEventSourceConfig": ...,
         "SelfManagedKafkaEventSourceConfig": ...,
         "ScalingConfig": ...,
+        "DocumentDBEventSourceConfig": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -3367,7 +3391,8 @@ class EventSourceMappingConfigurationResponseMetadataTypeDef(TypedDict):
     AmazonManagedKafkaEventSourceConfig: AmazonManagedKafkaEventSourceConfigTypeDef,  # (7)
     SelfManagedKafkaEventSourceConfig: SelfManagedKafkaEventSourceConfigTypeDef,  # (8)
     ScalingConfig: ScalingConfigTypeDef,  # (9)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+    DocumentDBEventSourceConfig: DocumentDBEventSourceConfigTypeDef,  # (10)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (11)
 ```
 
 1. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
@@ -3379,7 +3404,8 @@ class EventSourceMappingConfigurationResponseMetadataTypeDef(TypedDict):
 7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
 8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
 9. See [:material-code-braces: ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef) 
-10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+10. See [:material-code-braces: DocumentDBEventSourceConfigTypeDef](./type_defs.md#documentdbeventsourceconfigtypedef) 
+11. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventSourceMappingConfigurationTypeDef
 
 ```python title="Usage Example"
@@ -3419,6 +3445,7 @@ class EventSourceMappingConfigurationTypeDef(TypedDict):
     AmazonManagedKafkaEventSourceConfig: NotRequired[AmazonManagedKafkaEventSourceConfigTypeDef],  # (7)
     SelfManagedKafkaEventSourceConfig: NotRequired[SelfManagedKafkaEventSourceConfigTypeDef],  # (8)
     ScalingConfig: NotRequired[ScalingConfigTypeDef],  # (9)
+    DocumentDBEventSourceConfig: NotRequired[DocumentDBEventSourceConfigTypeDef],  # (10)
 ```
 
 1. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
@@ -3430,6 +3457,7 @@ class EventSourceMappingConfigurationTypeDef(TypedDict):
 7. See [:material-code-braces: AmazonManagedKafkaEventSourceConfigTypeDef](./type_defs.md#amazonmanagedkafkaeventsourceconfigtypedef) 
 8. See [:material-code-braces: SelfManagedKafkaEventSourceConfigTypeDef](./type_defs.md#selfmanagedkafkaeventsourceconfigtypedef) 
 9. See [:material-code-braces: ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef) 
+10. See [:material-code-braces: DocumentDBEventSourceConfigTypeDef](./type_defs.md#documentdbeventsourceconfigtypedef) 
 ## UpdateEventSourceMappingRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3458,6 +3486,7 @@ class UpdateEventSourceMappingRequestRequestTypeDef(TypedDict):
     TumblingWindowInSeconds: NotRequired[int],
     FunctionResponseTypes: NotRequired[Sequence[FunctionResponseTypeType]],  # (4)
     ScalingConfig: NotRequired[ScalingConfigTypeDef],  # (5)
+    DocumentDBEventSourceConfig: NotRequired[DocumentDBEventSourceConfigTypeDef],  # (6)
 ```
 
 1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
@@ -3465,6 +3494,7 @@ class UpdateEventSourceMappingRequestRequestTypeDef(TypedDict):
 3. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
 4. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
 5. See [:material-code-braces: ScalingConfigTypeDef](./type_defs.md#scalingconfigtypedef) 
+6. See [:material-code-braces: DocumentDBEventSourceConfigTypeDef](./type_defs.md#documentdbeventsourceconfigtypedef) 
 ## ListLayersResponseTypeDef
 
 ```python title="Usage Example"
