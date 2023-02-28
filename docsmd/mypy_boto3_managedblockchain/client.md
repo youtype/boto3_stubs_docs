@@ -91,7 +91,7 @@ def close(
 
 ### create\_accessor
 
-.
+Creates a new accessor for use with Managed Blockchain Ethereum nodes.
 
 Type annotations and code completion for `#!python boto3.client("managedblockchain").create_accessor` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_accessor)
@@ -102,6 +102,7 @@ def create_accessor(
     *,
     ClientRequestToken: str,
     AccessorType: AccessorTypeType,  # (1)
+    Tags: Mapping[str, str] = ...,
 ) -> CreateAccessorOutputTypeDef:  # (2)
     ...
 ```
@@ -280,7 +281,7 @@ parent.create_proposal(**kwargs)
 
 ### delete\_accessor
 
-.
+Deletes an accessor that your Amazon Web Services account owns.
 
 Type annotations and code completion for `#!python boto3.client("managedblockchain").delete_accessor` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_accessor)
@@ -388,7 +389,7 @@ def generate_presigned_url(
 
 ### get\_accessor
 
-.
+Returns detailed information about an accessor.
 
 Type annotations and code completion for `#!python boto3.client("managedblockchain").get_accessor` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_accessor)
@@ -540,7 +541,7 @@ parent.get_proposal(**kwargs)
 
 ### list\_accessors
 
-.
+Returns a list of the accessors and their properties.
 
 Type annotations and code completion for `#!python boto3.client("managedblockchain").list_accessors` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_accessors)

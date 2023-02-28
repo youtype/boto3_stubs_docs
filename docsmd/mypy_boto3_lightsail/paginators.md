@@ -106,13 +106,15 @@ def paginate(
     self,
     *,
     includeInactive: bool = ...,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[GetBlueprintsResultTypeDef]:  # (2)
+    appCategory: AppCategoryType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetBlueprintsResultTypeDef]:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef) 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -165,13 +167,15 @@ def paginate(
     self,
     *,
     includeInactive: bool = ...,
-    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
-) -> _PageIterator[GetBundlesResultTypeDef]:  # (2)
+    appCategory: AppCategoryType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetBundlesResultTypeDef]:  # (3)
     ...
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
-2. See [:material-code-braces: GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef) 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef) 
 
 
 ```python title="Usage example with kwargs"

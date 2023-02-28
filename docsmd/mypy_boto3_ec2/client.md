@@ -5200,7 +5200,7 @@ parent.delete_egress_only_internet_gateway(**kwargs)
 
 ### delete\_fleets
 
-Deletes the specified EC2 Fleet.
+Deletes the specified EC2 Fleets.
 
 Type annotations and code completion for `#!python boto3.client("ec2").delete_fleets` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fleets)
@@ -15342,8 +15342,7 @@ parent.import_client_vpn_client_certificate_revocation_list(**kwargs)
 
 ### import\_image
 
-Import single or multi-volume disk images or EBS snapshots into an Amazon
-Machine Image (AMI).
+.
 
 Type annotations and code completion for `#!python boto3.client("ec2").import_image` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_image)
@@ -16053,14 +16052,16 @@ def modify_image_attribute(
     DryRun: bool = ...,
     OrganizationArns: Sequence[str] = ...,
     OrganizationalUnitArns: Sequence[str] = ...,
-) -> EmptyResponseMetadataTypeDef:  # (4)
+    ImdsSupport: AttributeValueTypeDef = ...,  # (1)
+) -> EmptyResponseMetadataTypeDef:  # (5)
     ...
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 2. See [:material-code-braces: LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef) 
 3. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
-4. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+4. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+5. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
 
 
 ```python title="Usage example with kwargs"

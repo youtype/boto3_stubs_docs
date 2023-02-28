@@ -923,6 +923,7 @@ def get_value() -> VariantImportItemDetailTypeDef:
 class VariantImportItemDetailTypeDef(TypedDict):
     jobStatus: JobStatusType,  # (1)
     source: str,
+    statusMessage: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 

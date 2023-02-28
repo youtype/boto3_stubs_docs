@@ -38987,11 +38987,13 @@ class ModifyImageAttributeRequestImageModifyAttributeTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     OrganizationArns: NotRequired[Sequence[str]],
     OrganizationalUnitArns: NotRequired[Sequence[str]],
+    ImdsSupport: NotRequired[AttributeValueTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 2. See [:material-code-braces: LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef) 
 3. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+4. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## ModifyImageAttributeRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -39017,11 +39019,13 @@ class ModifyImageAttributeRequestRequestTypeDef(TypedDict):
     DryRun: NotRequired[bool],
     OrganizationArns: NotRequired[Sequence[str]],
     OrganizationalUnitArns: NotRequired[Sequence[str]],
+    ImdsSupport: NotRequired[AttributeValueTypeDef],  # (1)
 ```
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 2. See [:material-code-braces: LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef) 
 3. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+4. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 ## ImportImageRequestRequestTypeDef
 
 ```python title="Usage Example"

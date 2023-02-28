@@ -131,6 +131,7 @@ def attach_disk(
     diskName: str,
     instanceName: str,
     diskPath: str,
+    autoMounting: bool = ...,
 ) -> AttachDiskResultTypeDef:  # (1)
     ...
 ```
@@ -816,6 +817,36 @@ parent.create_domain_entry(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateDomainEntryRequestRequestTypeDef](./type_defs.md#createdomainentryrequestrequesttypedef) 
+
+### create\_gui\_session\_access\_details
+
+Creates two URLs that are used to access a virtual computer’s graphical user
+interface (GUI) session.
+
+Type annotations and code completion for `#!python boto3.client("lightsail").create_gui_session_access_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_gui_session_access_details)
+
+```python title="Method definition"
+def create_gui_session_access_details(
+    self,
+    *,
+    resourceName: str,
+) -> CreateGUISessionAccessDetailsResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateGUISessionAccessDetailsResultTypeDef](./type_defs.md#createguisessionaccessdetailsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateGUISessionAccessDetailsRequestRequestTypeDef = {  # (1)
+    "resourceName": ...,
+}
+
+parent.create_gui_session_access_details(**kwargs)
+```
+
+1. See [:material-code-braces: CreateGUISessionAccessDetailsRequestRequestTypeDef](./type_defs.md#createguisessionaccessdetailsrequestrequesttypedef) 
 
 ### create\_instance\_snapshot
 
@@ -2144,11 +2175,13 @@ def get_blueprints(
     *,
     includeInactive: bool = ...,
     pageToken: str = ...,
-) -> GetBlueprintsResultTypeDef:  # (1)
+    appCategory: AppCategoryType = ...,  # (1)
+) -> GetBlueprintsResultTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef) 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
+2. See [:material-code-braces: GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2308,11 +2341,13 @@ def get_bundles(
     *,
     includeInactive: bool = ...,
     pageToken: str = ...,
-) -> GetBundlesResultTypeDef:  # (1)
+    appCategory: AppCategoryType = ...,  # (1)
+) -> GetBundlesResultTypeDef:  # (2)
     ...
 ```
 
-1. See [:material-code-braces: GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef) 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
+2. See [:material-code-braces: GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2619,6 +2654,39 @@ parent.get_container_services(**kwargs)
 ```
 
 1. See [:material-code-braces: GetContainerServicesRequestRequestTypeDef](./type_defs.md#getcontainerservicesrequestrequesttypedef) 
+
+### get\_cost\_estimate
+
+Retrieves information about the cost estimate for a specified resource.
+
+Type annotations and code completion for `#!python boto3.client("lightsail").get_cost_estimate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_cost_estimate)
+
+```python title="Method definition"
+def get_cost_estimate(
+    self,
+    *,
+    resourceName: str,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+) -> GetCostEstimateResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetCostEstimateResultTypeDef](./type_defs.md#getcostestimateresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCostEstimateRequestRequestTypeDef = {  # (1)
+    "resourceName": ...,
+    "startTime": ...,
+    "endTime": ...,
+}
+
+parent.get_cost_estimate(**kwargs)
+```
+
+1. See [:material-code-braces: GetCostEstimateRequestRequestTypeDef](./type_defs.md#getcostestimaterequestrequesttypedef) 
 
 ### get\_disk
 
@@ -4411,6 +4479,36 @@ parent.set_resource_access_for_bucket(**kwargs)
 
 1. See [:material-code-braces: SetResourceAccessForBucketRequestRequestTypeDef](./type_defs.md#setresourceaccessforbucketrequestrequesttypedef) 
 
+### start\_gui\_session
+
+Initiates a graphical user interface (GUI) session that’s used to access a
+virtual computer’s operating system and application.
+
+Type annotations and code completion for `#!python boto3.client("lightsail").start_gui_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_gui_session)
+
+```python title="Method definition"
+def start_gui_session(
+    self,
+    *,
+    resourceName: str,
+) -> StartGUISessionResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartGUISessionResultTypeDef](./type_defs.md#startguisessionresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartGUISessionRequestRequestTypeDef = {  # (1)
+    "resourceName": ...,
+}
+
+parent.start_gui_session(**kwargs)
+```
+
+1. See [:material-code-braces: StartGUISessionRequestRequestTypeDef](./type_defs.md#startguisessionrequestrequesttypedef) 
+
 ### start\_instance
 
 Starts a specific Amazon Lightsail instance from a stopped state.
@@ -4468,6 +4566,36 @@ parent.start_relational_database(**kwargs)
 ```
 
 1. See [:material-code-braces: StartRelationalDatabaseRequestRequestTypeDef](./type_defs.md#startrelationaldatabaserequestrequesttypedef) 
+
+### stop\_gui\_session
+
+Terminates a web-based NICE DCV session that’s used to access a virtual
+computer’s operating system or application.
+
+Type annotations and code completion for `#!python boto3.client("lightsail").stop_gui_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_gui_session)
+
+```python title="Method definition"
+def stop_gui_session(
+    self,
+    *,
+    resourceName: str,
+) -> StopGUISessionResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StopGUISessionResultTypeDef](./type_defs.md#stopguisessionresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopGUISessionRequestRequestTypeDef = {  # (1)
+    "resourceName": ...,
+}
+
+parent.stop_gui_session(**kwargs)
+```
+
+1. See [:material-code-braces: StopGUISessionRequestRequestTypeDef](./type_defs.md#stopguisessionrequestrequesttypedef) 
 
 ### stop\_instance
 

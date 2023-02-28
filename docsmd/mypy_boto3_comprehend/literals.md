@@ -37,6 +37,52 @@ BlockTypeType = Literal[
     "WORD",
 ]
 ```
+## DatasetDataFormatType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import DatasetDataFormatType
+
+def get_value() -> DatasetDataFormatType:
+    return "AUGMENTED_MANIFEST"
+```
+
+```python title="Definition"
+DatasetDataFormatType = Literal[
+    "AUGMENTED_MANIFEST",
+    "COMPREHEND_CSV",
+]
+```
+## DatasetStatusType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import DatasetStatusType
+
+def get_value() -> DatasetStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+DatasetStatusType = Literal[
+    "COMPLETED",
+    "CREATING",
+    "FAILED",
+]
+```
+## DatasetTypeType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import DatasetTypeType
+
+def get_value() -> DatasetTypeType:
+    return "TEST"
+```
+
+```python title="Definition"
+DatasetTypeType = Literal[
+    "TEST",
+    "TRAIN",
+]
+```
 ## DocumentClassifierDataFormatType
 
 ```python title="Usage Example"
@@ -185,6 +231,43 @@ EntityTypeType = Literal[
     "PERSON",
     "QUANTITY",
     "TITLE",
+]
+```
+## FlywheelIterationStatusType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import FlywheelIterationStatusType
+
+def get_value() -> FlywheelIterationStatusType:
+    return "COMPLETED"
+```
+
+```python title="Definition"
+FlywheelIterationStatusType = Literal[
+    "COMPLETED",
+    "EVALUATING",
+    "FAILED",
+    "STOP_REQUESTED",
+    "STOPPED",
+    "TRAINING",
+]
+```
+## FlywheelStatusType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import FlywheelStatusType
+
+def get_value() -> FlywheelStatusType:
+    return "ACTIVE"
+```
+
+```python title="Definition"
+FlywheelStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
 ]
 ```
 ## InputFormatType
@@ -404,6 +487,21 @@ ModelStatusType = Literal[
     "SUBMITTED",
     "TRAINED",
     "TRAINING",
+]
+```
+## ModelTypeType
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import ModelTypeType
+
+def get_value() -> ModelTypeType:
+    return "DOCUMENT_CLASSIFIER"
+```
+
+```python title="Definition"
+ModelTypeType = Literal[
+    "DOCUMENT_CLASSIFIER",
+    "ENTITY_RECOGNIZER",
 ]
 ```
 ## PageBasedErrorCodeType

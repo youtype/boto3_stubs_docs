@@ -80,6 +80,23 @@ class AutoSnapshotAddOnRequestTypeDef(TypedDict):
     snapshotTimeOfDay: NotRequired[str],
 ```
 
+## StopInstanceOnIdleRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import StopInstanceOnIdleRequestTypeDef
+
+def get_value() -> StopInstanceOnIdleRequestTypeDef:
+    return {
+        "threshold": ...,
+    }
+```
+
+```python title="Definition"
+class StopInstanceOnIdleRequestTypeDef(TypedDict):
+    threshold: NotRequired[str],
+    duration: NotRequired[str],
+```
+
 ## AddOnTypeDef
 
 ```python title="Usage Example"
@@ -97,6 +114,8 @@ class AddOnTypeDef(TypedDict):
     status: NotRequired[str],
     snapshotTimeOfDay: NotRequired[str],
     nextSnapshotTimeOfDay: NotRequired[str],
+    threshold: NotRequired[str],
+    duration: NotRequired[str],
 ```
 
 ## MonitoredResourceInfoTypeDef
@@ -212,6 +231,7 @@ class AttachDiskRequestRequestTypeDef(TypedDict):
     diskName: str,
     instanceName: str,
     diskPath: str,
+    autoMounting: NotRequired[bool],
 ```
 
 ## AttachInstancesToLoadBalancerRequestRequestTypeDef
@@ -327,10 +347,12 @@ class BlueprintTypeDef(TypedDict):
     productUrl: NotRequired[str],
     licenseUrl: NotRequired[str],
     platform: NotRequired[InstancePlatformType],  # (2)
+    appCategory: NotRequired[AppCategoryType],  # (3)
 ```
 
 1. See [:material-code-brackets: BlueprintTypeType](./literals.md#blueprinttypetype) 
 2. See [:material-code-brackets: InstancePlatformType](./literals.md#instanceplatformtype) 
+3. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
 ## BucketAccessLogConfigTypeDef
 
 ```python title="Usage Example"
@@ -445,9 +467,11 @@ class BundleTypeDef(TypedDict):
     ramSizeInGb: NotRequired[float],
     transferPerMonthInGb: NotRequired[int],
     supportedPlatforms: NotRequired[List[InstancePlatformType]],  # (1)
+    supportedAppCategories: NotRequired[List[AppCategoryType]],  # (2)
 ```
 
 1. See [:material-code-brackets: InstancePlatformType](./literals.md#instanceplatformtype) 
+2. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
 ## CacheBehaviorPerPathTypeDef
 
 ```python title="Usage Example"
@@ -883,6 +907,40 @@ class DomainEntryTypeDef(TypedDict):
     isAlias: NotRequired[bool],
     type: NotRequired[str],
     options: NotRequired[Mapping[str, str]],
+```
+
+## CreateGUISessionAccessDetailsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import CreateGUISessionAccessDetailsRequestRequestTypeDef
+
+def get_value() -> CreateGUISessionAccessDetailsRequestRequestTypeDef:
+    return {
+        "resourceName": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGUISessionAccessDetailsRequestRequestTypeDef(TypedDict):
+    resourceName: str,
+```
+
+## SessionTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import SessionTypeDef
+
+def get_value() -> SessionTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class SessionTypeDef(TypedDict):
+    name: NotRequired[str],
+    url: NotRequired[str],
+    isPrimary: NotRequired[bool],
 ```
 
 ## DiskMapTypeDef
@@ -1414,6 +1472,23 @@ class ResourceRecordTypeDef(TypedDict):
     value: NotRequired[str],
 ```
 
+## TimePeriodTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import TimePeriodTypeDef
+
+def get_value() -> TimePeriodTypeDef:
+    return {
+        "start": ...,
+    }
+```
+
+```python title="Definition"
+class TimePeriodTypeDef(TypedDict):
+    start: NotRequired[datetime],
+    end: NotRequired[datetime],
+```
+
 ## ExportSnapshotRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1513,8 +1588,10 @@ def get_value() -> GetBlueprintsRequestRequestTypeDef:
 class GetBlueprintsRequestRequestTypeDef(TypedDict):
     includeInactive: NotRequired[bool],
     pageToken: NotRequired[str],
+    appCategory: NotRequired[AppCategoryType],  # (1)
 ```
 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
 ## GetBucketAccessKeysRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1634,8 +1711,10 @@ def get_value() -> GetBundlesRequestRequestTypeDef:
 class GetBundlesRequestRequestTypeDef(TypedDict):
     includeInactive: NotRequired[bool],
     pageToken: NotRequired[str],
+    appCategory: NotRequired[AppCategoryType],  # (1)
 ```
 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
 ## GetCertificatesRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1784,6 +1863,26 @@ def get_value() -> GetContainerServicesRequestRequestTypeDef:
 ```python title="Definition"
 class GetContainerServicesRequestRequestTypeDef(TypedDict):
     serviceName: NotRequired[str],
+```
+
+## GetCostEstimateRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import GetCostEstimateRequestRequestTypeDef
+
+def get_value() -> GetCostEstimateRequestRequestTypeDef:
+    return {
+        "resourceName": ...,
+        "startTime": ...,
+        "endTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetCostEstimateRequestRequestTypeDef(TypedDict):
+    resourceName: str,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
 ```
 
 ## GetDiskRequestRequestTypeDef
@@ -3225,6 +3324,22 @@ class SetResourceAccessForBucketRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ResourceBucketAccessType](./literals.md#resourcebucketaccesstype) 
+## StartGUISessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import StartGUISessionRequestRequestTypeDef
+
+def get_value() -> StartGUISessionRequestRequestTypeDef:
+    return {
+        "resourceName": ...,
+    }
+```
+
+```python title="Definition"
+class StartGUISessionRequestRequestTypeDef(TypedDict):
+    resourceName: str,
+```
+
 ## StartInstanceRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -3255,6 +3370,22 @@ def get_value() -> StartRelationalDatabaseRequestRequestTypeDef:
 ```python title="Definition"
 class StartRelationalDatabaseRequestRequestTypeDef(TypedDict):
     relationalDatabaseName: str,
+```
+
+## StopGUISessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import StopGUISessionRequestRequestTypeDef
+
+def get_value() -> StopGUISessionRequestRequestTypeDef:
+    return {
+        "resourceName": ...,
+    }
+```
+
+```python title="Definition"
+class StopGUISessionRequestRequestTypeDef(TypedDict):
+    resourceName: str,
 ```
 
 ## StopInstanceRequestRequestTypeDef
@@ -3470,10 +3601,12 @@ def get_value() -> AddOnRequestTypeDef:
 class AddOnRequestTypeDef(TypedDict):
     addOnType: AddOnTypeType,  # (1)
     autoSnapshotAddOnRequest: NotRequired[AutoSnapshotAddOnRequestTypeDef],  # (2)
+    stopInstanceOnIdleRequest: NotRequired[StopInstanceOnIdleRequestTypeDef],  # (3)
 ```
 
 1. See [:material-code-brackets: AddOnTypeType](./literals.md#addontypetype) 
 2. See [:material-code-braces: AutoSnapshotAddOnRequestTypeDef](./type_defs.md#autosnapshotaddonrequesttypedef) 
+3. See [:material-code-braces: StopInstanceOnIdleRequestTypeDef](./type_defs.md#stopinstanceonidlerequesttypedef) 
 ## AlarmTypeDef
 
 ```python title="Usage Example"
@@ -4202,6 +4335,7 @@ class DiskTypeDef(TypedDict):
     isAttached: NotRequired[bool],
     attachmentState: NotRequired[str],
     gbInUse: NotRequired[int],
+    autoMountStatus: NotRequired[AutoMountStatusType],  # (6)
 ```
 
 1. See [:material-code-braces: ResourceLocationTypeDef](./type_defs.md#resourcelocationtypedef) 
@@ -4209,6 +4343,7 @@ class DiskTypeDef(TypedDict):
 3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 4. See [:material-code-braces: AddOnTypeDef](./type_defs.md#addontypedef) 
 5. See [:material-code-brackets: DiskStateType](./literals.md#diskstatetype) 
+6. See [:material-code-brackets: AutoMountStatusType](./literals.md#automountstatustype) 
 ## KeyPairTypeDef
 
 ```python title="Usage Example"
@@ -4670,6 +4805,35 @@ class UpdateDomainEntryRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DomainEntryTypeDef](./type_defs.md#domainentrytypedef) 
+## CreateGUISessionAccessDetailsResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import CreateGUISessionAccessDetailsResultTypeDef
+
+def get_value() -> CreateGUISessionAccessDetailsResultTypeDef:
+    return {
+        "resourceName": ...,
+        "status": ...,
+        "percentageComplete": ...,
+        "failureReason": ...,
+        "sessions": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateGUISessionAccessDetailsResultTypeDef(TypedDict):
+    resourceName: str,
+    status: StatusType,  # (1)
+    percentageComplete: int,
+    failureReason: str,
+    sessions: List[SessionTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
+
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceSnapshotInfoTypeDef
 
 ```python title="Usage Example"
@@ -4731,6 +4895,29 @@ class DomainValidationRecordTypeDef(TypedDict):
 1. See [:material-code-braces: ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef) 
 2. See [:material-code-braces: DnsRecordCreationStateTypeDef](./type_defs.md#dnsrecordcreationstatetypedef) 
 3. See [:material-code-brackets: CertificateDomainValidationStatusType](./literals.md#certificatedomainvalidationstatustype) 
+## EstimateByTimeTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import EstimateByTimeTypeDef
+
+def get_value() -> EstimateByTimeTypeDef:
+    return {
+        "usageCost": ...,
+    }
+```
+
+```python title="Definition"
+class EstimateByTimeTypeDef(TypedDict):
+    usageCost: NotRequired[float],
+    pricingUnit: NotRequired[PricingUnitType],  # (1)
+    unit: NotRequired[float],
+    currency: NotRequired[CurrencyType],  # (2)
+    timePeriod: NotRequired[TimePeriodTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: PricingUnitType](./literals.md#pricingunittype) 
+2. See [:material-code-brackets: CurrencyType](./literals.md#currencytype) 
+3. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
 ## GetActiveNamesRequestGetActiveNamesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -4762,10 +4949,12 @@ def get_value() -> GetBlueprintsRequestGetBlueprintsPaginateTypeDef:
 ```python title="Definition"
 class GetBlueprintsRequestGetBlueprintsPaginateTypeDef(TypedDict):
     includeInactive: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    appCategory: NotRequired[AppCategoryType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetBundlesRequestGetBundlesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -4780,10 +4969,12 @@ def get_value() -> GetBundlesRequestGetBundlesPaginateTypeDef:
 ```python title="Definition"
 class GetBundlesRequestGetBundlesPaginateTypeDef(TypedDict):
     includeInactive: NotRequired[bool],
-    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+    appCategory: NotRequired[AppCategoryType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
 ```
 
-1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+1. See [:material-code-brackets: AppCategoryType](./literals.md#appcategorytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetCloudFormationStackRecordsRequestGetCloudFormationStackRecordsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -7119,6 +7310,26 @@ class SetResourceAccessForBucketResultTypeDef(TypedDict):
 
 1. See [:material-code-braces: OperationTypeDef](./type_defs.md#operationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartGUISessionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import StartGUISessionResultTypeDef
+
+def get_value() -> StartGUISessionResultTypeDef:
+    return {
+        "operations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartGUISessionResultTypeDef(TypedDict):
+    operations: List[OperationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OperationTypeDef](./type_defs.md#operationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartInstanceResultTypeDef
 
 ```python title="Usage Example"
@@ -7153,6 +7364,26 @@ def get_value() -> StartRelationalDatabaseResultTypeDef:
 
 ```python title="Definition"
 class StartRelationalDatabaseResultTypeDef(TypedDict):
+    operations: List[OperationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OperationTypeDef](./type_defs.md#operationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopGUISessionResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import StopGUISessionResultTypeDef
+
+def get_value() -> StopGUISessionResultTypeDef:
+    return {
+        "operations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopGUISessionResultTypeDef(TypedDict):
     operations: List[OperationTypeDef],  # (1)
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
@@ -8101,6 +8332,24 @@ class RenewalSummaryTypeDef(TypedDict):
 
 1. See [:material-code-braces: DomainValidationRecordTypeDef](./type_defs.md#domainvalidationrecordtypedef) 
 2. See [:material-code-brackets: RenewalStatusType](./literals.md#renewalstatustype) 
+## CostEstimateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import CostEstimateTypeDef
+
+def get_value() -> CostEstimateTypeDef:
+    return {
+        "usageType": ...,
+    }
+```
+
+```python title="Definition"
+class CostEstimateTypeDef(TypedDict):
+    usageType: NotRequired[str],
+    resultsByTime: NotRequired[List[EstimateByTimeTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: EstimateByTimeTypeDef](./type_defs.md#estimatebytimetypedef) 
 ## GetInstanceAccessDetailsResultTypeDef
 
 ```python title="Usage Example"
@@ -8574,6 +8823,28 @@ class CertificateTypeDef(TypedDict):
 2. See [:material-code-braces: DomainValidationRecordTypeDef](./type_defs.md#domainvalidationrecordtypedef) 
 3. See [:material-code-braces: RenewalSummaryTypeDef](./type_defs.md#renewalsummarytypedef) 
 4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ResourceBudgetEstimateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import ResourceBudgetEstimateTypeDef
+
+def get_value() -> ResourceBudgetEstimateTypeDef:
+    return {
+        "resourceName": ...,
+    }
+```
+
+```python title="Definition"
+class ResourceBudgetEstimateTypeDef(TypedDict):
+    resourceName: NotRequired[str],
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+    costEstimates: NotRequired[List[CostEstimateTypeDef]],  # (2)
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: CostEstimateTypeDef](./type_defs.md#costestimatetypedef) 
 ## GetLoadBalancerTlsCertificatesResultTypeDef
 
 ```python title="Usage Example"
@@ -8802,6 +9073,26 @@ class CertificateSummaryTypeDef(TypedDict):
 
 1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
 2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## GetCostEstimateResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.type_defs import GetCostEstimateResultTypeDef
+
+def get_value() -> GetCostEstimateResultTypeDef:
+    return {
+        "resourcesBudgetEstimate": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetCostEstimateResultTypeDef(TypedDict):
+    resourcesBudgetEstimate: List[ResourceBudgetEstimateTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: ResourceBudgetEstimateTypeDef](./type_defs.md#resourcebudgetestimatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCertificateResultTypeDef
 
 ```python title="Usage Example"

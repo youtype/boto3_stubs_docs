@@ -48,6 +48,7 @@ class AccessorTypeDef(TypedDict):
     Status: NotRequired[AccessorStatusType],  # (2)
     CreationDate: NotRequired[datetime],
     Arn: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
 ```
 
 1. See [:material-code-brackets: AccessorTypeType](./literals.md#accessortypetype) 
@@ -87,6 +88,7 @@ def get_value() -> CreateAccessorInputRequestTypeDef:
 class CreateAccessorInputRequestTypeDef(TypedDict):
     ClientRequestToken: str,
     AccessorType: AccessorTypeType,  # (1)
+    Tags: NotRequired[Mapping[str, str]],
 ```
 
 1. See [:material-code-brackets: AccessorTypeType](./literals.md#accessortypetype) 

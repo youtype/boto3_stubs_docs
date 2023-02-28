@@ -131,6 +131,7 @@ def get_value() -> JobStatusType:
 JobStatusType = Literal[
     "CANCELLED",
     "COMPLETED",
+    "COMPLETED_WITH_FAILURES",
     "FAILED",
     "IN_PROGRESS",
     "SUBMITTED",
@@ -910,6 +911,7 @@ WorkflowStatusType = Literal[
     "CREATING",
     "DELETED",
     "FAILED",
+    "INACTIVE",
     "UPDATING",
 ]
 ```
@@ -925,6 +927,7 @@ def get_value() -> WorkflowTypeType:
 ```python title="Definition"
 WorkflowTypeType = Literal[
     "PRIVATE",
+    "SERVICE",
 ]
 ```
 ## OmicsServiceName

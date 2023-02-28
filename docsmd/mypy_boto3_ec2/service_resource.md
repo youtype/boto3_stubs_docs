@@ -2167,6 +2167,7 @@ def modify_attribute(
     DryRun: bool = ...,
     OrganizationArns: Sequence[str] = ...,
     OrganizationalUnitArns: Sequence[str] = ...,
+    ImdsSupport: AttributeValueTypeDef = ...,  # (1)
 ) -> None:
     ...
 ```
@@ -2174,6 +2175,7 @@ def modify_attribute(
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 2. See [:material-code-braces: LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef) 
 3. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+4. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 
 
 ```python title="Usage example with kwargs"

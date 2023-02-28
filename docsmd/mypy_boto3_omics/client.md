@@ -1818,7 +1818,7 @@ parent.start_annotation_import_job(**kwargs)
 
 ### start\_read\_set\_activation\_job
 
-Starts a read set activation job.
+Activates an archived read set.
 
 Type annotations and code completion for `#!python boto3.client("omics").start_read_set_activation_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/omics.html#Omics.Client.start_read_set_activation_job)
@@ -1851,7 +1851,7 @@ parent.start_read_set_activation_job(**kwargs)
 
 ### start\_read\_set\_export\_job
 
-Starts a read set export job.
+Exports a read set to Amazon S3.
 
 Type annotations and code completion for `#!python boto3.client("omics").start_read_set_export_job` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/omics.html#Omics.Client.start_read_set_export_job)

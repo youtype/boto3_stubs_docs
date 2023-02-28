@@ -40702,6 +40702,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#accountlevelbpasyncstatustype">AccountLevelBpaSyncStatusType</a></li>
 <li><a href="literals/#addontypetype">AddOnTypeType</a></li>
 <li><a href="literals/#alarmstatetype">AlarmStateType</a></li>
+<li><a href="literals/#appcategorytype">AppCategoryType</a></li>
+<li><a href="literals/#automountstatustype">AutoMountStatusType</a></li>
 <li><a href="literals/#autosnapshotstatustype">AutoSnapshotStatusType</a></li>
 <li><a href="literals/#bpastatusmessagetype">BPAStatusMessageType</a></li>
 <li><a href="literals/#behaviorenumtype">BehaviorEnumType</a></li>
@@ -40720,6 +40722,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#containerserviceprotocoltype">ContainerServiceProtocolType</a></li>
 <li><a href="literals/#containerservicestatedetailcodetype">ContainerServiceStateDetailCodeType</a></li>
 <li><a href="literals/#containerservicestatetype">ContainerServiceStateType</a></li>
+<li><a href="literals/#currencytype">CurrencyType</a></li>
 <li><a href="literals/#disksnapshotstatetype">DiskSnapshotStateType</a></li>
 <li><a href="literals/#diskstatetype">DiskStateType</a></li>
 <li><a href="literals/#distributionmetricnametype">DistributionMetricNameType</a></li>
@@ -40779,6 +40782,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#portaccesstypetype">PortAccessTypeType</a></li>
 <li><a href="literals/#portinfosourcetypetype">PortInfoSourceTypeType</a></li>
 <li><a href="literals/#portstatetype">PortStateType</a></li>
+<li><a href="literals/#pricingunittype">PricingUnitType</a></li>
 <li><a href="literals/#r53hostedzonedeletionstatecodetype">R53HostedZoneDeletionStateCodeType</a></li>
 <li><a href="literals/#recordstatetype">RecordStateType</a></li>
 <li><a href="literals/#regionnametype">RegionNameType</a></li>
@@ -40788,6 +40792,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="literals/#renewalstatustype">RenewalStatusType</a></li>
 <li><a href="literals/#resourcebucketaccesstype">ResourceBucketAccessType</a></li>
 <li><a href="literals/#resourcetypetype">ResourceTypeType</a></li>
+<li><a href="literals/#statustype">StatusType</a></li>
 <li><a href="literals/#statustypetype">StatusTypeType</a></li>
 <li><a href="literals/#treatmissingdatatype">TreatMissingDataType</a></li>
 <li><a href="literals/#lightsailservicename">LightsailServiceName</a></li>
@@ -40810,6 +40815,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#accessrulestypedef">AccessRulesTypeDef</a></li>
 <li><a href="type_defs/#accountlevelbpasynctypedef">AccountLevelBpaSyncTypeDef</a></li>
 <li><a href="type_defs/#autosnapshotaddonrequesttypedef">AutoSnapshotAddOnRequestTypeDef</a></li>
+<li><a href="type_defs/#stopinstanceonidlerequesttypedef">StopInstanceOnIdleRequestTypeDef</a></li>
 <li><a href="type_defs/#addontypedef">AddOnTypeDef</a></li>
 <li><a href="type_defs/#monitoredresourceinfotypedef">MonitoredResourceInfoTypeDef</a></li>
 <li><a href="type_defs/#resourcelocationtypedef">ResourceLocationTypeDef</a></li>
@@ -40852,6 +40858,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcontactmethodrequestrequesttypedef">CreateContactMethodRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#inputorigintypedef">InputOriginTypeDef</a></li>
 <li><a href="type_defs/#domainentrytypedef">DomainEntryTypeDef</a></li>
+<li><a href="type_defs/#createguisessionaccessdetailsrequestrequesttypedef">CreateGUISessionAccessDetailsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#sessiontypedef">SessionTypeDef</a></li>
 <li><a href="type_defs/#diskmaptypedef">DiskMapTypeDef</a></li>
 <li><a href="type_defs/#deletealarmrequestrequesttypedef">DeleteAlarmRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deleteautosnapshotrequestrequesttypedef">DeleteAutoSnapshotRequestRequestTypeDef</a></li>
@@ -40883,6 +40891,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#distributionbundletypedef">DistributionBundleTypeDef</a></li>
 <li><a href="type_defs/#dnsrecordcreationstatetypedef">DnsRecordCreationStateTypeDef</a></li>
 <li><a href="type_defs/#resourcerecordtypedef">ResourceRecordTypeDef</a></li>
+<li><a href="type_defs/#timeperiodtypedef">TimePeriodTypeDef</a></li>
 <li><a href="type_defs/#exportsnapshotrequestrequesttypedef">ExportSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#paginatorconfigtypedef">PaginatorConfigTypeDef</a></li>
 <li><a href="type_defs/#getactivenamesrequestrequesttypedef">GetActiveNamesRequestRequestTypeDef</a></li>
@@ -40903,6 +40912,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#getcontainerservicedeploymentsrequestrequesttypedef">GetContainerServiceDeploymentsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcontainerservicemetricdatarequestrequesttypedef">GetContainerServiceMetricDataRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getcontainerservicesrequestrequesttypedef">GetContainerServicesRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#getcostestimaterequestrequesttypedef">GetCostEstimateRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdiskrequestrequesttypedef">GetDiskRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdisksnapshotrequestrequesttypedef">GetDiskSnapshotRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#getdisksnapshotsrequestrequesttypedef">GetDiskSnapshotsRequestRequestTypeDef</a></li>
@@ -40980,8 +40990,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#sendcontactmethodverificationrequestrequesttypedef">SendContactMethodVerificationRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#setipaddresstyperequestrequesttypedef">SetIpAddressTypeRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#setresourceaccessforbucketrequestrequesttypedef">SetResourceAccessForBucketRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#startguisessionrequestrequesttypedef">StartGUISessionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startinstancerequestrequesttypedef">StartInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#startrelationaldatabaserequestrequesttypedef">StartRelationalDatabaseRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#stopguisessionrequestrequesttypedef">StopGUISessionRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stopinstancerequestrequesttypedef">StopInstanceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#stoprelationaldatabaserequestrequesttypedef">StopRelationalDatabaseRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#testalarmrequestrequesttypedef">TestAlarmRequestRequestTypeDef</a></li>
@@ -41045,9 +41057,11 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createdomainentryrequestrequesttypedef">CreateDomainEntryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#deletedomainentryrequestrequesttypedef">DeleteDomainEntryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#updatedomainentryrequestrequesttypedef">UpdateDomainEntryRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#createguisessionaccessdetailsresulttypedef">CreateGUISessionAccessDetailsResultTypeDef</a></li>
 <li><a href="type_defs/#instancesnapshotinfotypedef">InstanceSnapshotInfoTypeDef</a></li>
 <li><a href="type_defs/#getdistributionbundlesresulttypedef">GetDistributionBundlesResultTypeDef</a></li>
 <li><a href="type_defs/#domainvalidationrecordtypedef">DomainValidationRecordTypeDef</a></li>
+<li><a href="type_defs/#estimatebytimetypedef">EstimateByTimeTypeDef</a></li>
 <li><a href="type_defs/#getactivenamesrequestgetactivenamespaginatetypedef">GetActiveNamesRequestGetActiveNamesPaginateTypeDef</a></li>
 <li><a href="type_defs/#getblueprintsrequestgetblueprintspaginatetypedef">GetBlueprintsRequestGetBlueprintsPaginateTypeDef</a></li>
 <li><a href="type_defs/#getbundlesrequestgetbundlespaginatetypedef">GetBundlesRequestGetBundlesPaginateTypeDef</a></li>
@@ -41163,8 +41177,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#sendcontactmethodverificationresulttypedef">SendContactMethodVerificationResultTypeDef</a></li>
 <li><a href="type_defs/#setipaddresstyperesulttypedef">SetIpAddressTypeResultTypeDef</a></li>
 <li><a href="type_defs/#setresourceaccessforbucketresulttypedef">SetResourceAccessForBucketResultTypeDef</a></li>
+<li><a href="type_defs/#startguisessionresulttypedef">StartGUISessionResultTypeDef</a></li>
 <li><a href="type_defs/#startinstanceresulttypedef">StartInstanceResultTypeDef</a></li>
 <li><a href="type_defs/#startrelationaldatabaseresulttypedef">StartRelationalDatabaseResultTypeDef</a></li>
+<li><a href="type_defs/#stopguisessionresulttypedef">StopGUISessionResultTypeDef</a></li>
 <li><a href="type_defs/#stopinstanceresulttypedef">StopInstanceResultTypeDef</a></li>
 <li><a href="type_defs/#stoprelationaldatabaseresulttypedef">StopRelationalDatabaseResultTypeDef</a></li>
 <li><a href="type_defs/#tagresourceresulttypedef">TagResourceResultTypeDef</a></li>
@@ -41207,6 +41223,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcontainerservicedeploymentrequestrequesttypedef">CreateContainerServiceDeploymentRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportsnapshotrecordsourceinfotypedef">ExportSnapshotRecordSourceInfoTypeDef</a></li>
 <li><a href="type_defs/#renewalsummarytypedef">RenewalSummaryTypeDef</a></li>
+<li><a href="type_defs/#costestimatetypedef">CostEstimateTypeDef</a></li>
 <li><a href="type_defs/#getinstanceaccessdetailsresulttypedef">GetInstanceAccessDetailsResultTypeDef</a></li>
 <li><a href="type_defs/#loadbalancertlscertificatetypedef">LoadBalancerTlsCertificateTypeDef</a></li>
 <li><a href="type_defs/#getloadbalancerresulttypedef">GetLoadBalancerResultTypeDef</a></li>
@@ -41224,6 +41241,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#createcontainerservicerequestrequesttypedef">CreateContainerServiceRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#exportsnapshotrecordtypedef">ExportSnapshotRecordTypeDef</a></li>
 <li><a href="type_defs/#certificatetypedef">CertificateTypeDef</a></li>
+<li><a href="type_defs/#resourcebudgetestimatetypedef">ResourceBudgetEstimateTypeDef</a></li>
 <li><a href="type_defs/#getloadbalancertlscertificatesresulttypedef">GetLoadBalancerTlsCertificatesResultTypeDef</a></li>
 <li><a href="type_defs/#getdomainresulttypedef">GetDomainResultTypeDef</a></li>
 <li><a href="type_defs/#getdomainsresulttypedef">GetDomainsResultTypeDef</a></li>
@@ -41235,6 +41253,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#updatecontainerserviceresulttypedef">UpdateContainerServiceResultTypeDef</a></li>
 <li><a href="type_defs/#getexportsnapshotrecordsresulttypedef">GetExportSnapshotRecordsResultTypeDef</a></li>
 <li><a href="type_defs/#certificatesummarytypedef">CertificateSummaryTypeDef</a></li>
+<li><a href="type_defs/#getcostestimateresulttypedef">GetCostEstimateResultTypeDef</a></li>
 <li><a href="type_defs/#createcertificateresulttypedef">CreateCertificateResultTypeDef</a></li>
 <li><a href="type_defs/#getcertificatesresulttypedef">GetCertificatesResultTypeDef</a></li>
 </ul>

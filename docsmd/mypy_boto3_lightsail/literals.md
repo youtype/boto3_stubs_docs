@@ -66,6 +66,7 @@ def get_value() -> AddOnTypeType:
 ```python title="Definition"
 AddOnTypeType = Literal[
     "AutoSnapshot",
+    "StopInstanceOnIdle",
 ]
 ```
 ## AlarmStateType
@@ -82,6 +83,37 @@ AlarmStateType = Literal[
     "ALARM",
     "INSUFFICIENT_DATA",
     "OK",
+]
+```
+## AppCategoryType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import AppCategoryType
+
+def get_value() -> AppCategoryType:
+    return "LfR"
+```
+
+```python title="Definition"
+AppCategoryType = Literal[
+    "LfR",
+]
+```
+## AutoMountStatusType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import AutoMountStatusType
+
+def get_value() -> AutoMountStatusType:
+    return "Failed"
+```
+
+```python title="Definition"
+AutoMountStatusType = Literal[
+    "Failed",
+    "Mounted",
+    "NotMounted",
+    "Pending",
 ]
 ```
 ## AutoSnapshotStatusType
@@ -383,6 +415,20 @@ ContainerServiceStateType = Literal[
     "READY",
     "RUNNING",
     "UPDATING",
+]
+```
+## CurrencyType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import CurrencyType
+
+def get_value() -> CurrencyType:
+    return "USD"
+```
+
+```python title="Definition"
+CurrencyType = Literal[
+    "USD",
 ]
 ```
 ## DiskSnapshotStateType
@@ -1391,8 +1437,10 @@ OperationTypeType = Literal[
     "SendContactMethodVerification",
     "SetIpAddressType",
     "SetResourceAccessForBucket",
+    "StartGUISession",
     "StartInstance",
     "StartRelationalDatabase",
+    "StopGUISession",
     "StopInstance",
     "StopRelationalDatabase",
     "TestAlarm",
@@ -1468,6 +1516,24 @@ def get_value() -> PortStateType:
 PortStateType = Literal[
     "closed",
     "open",
+]
+```
+## PricingUnitType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import PricingUnitType
+
+def get_value() -> PricingUnitType:
+    return "Bundles"
+```
+
+```python title="Definition"
+PricingUnitType = Literal[
+    "Bundles",
+    "GB",
+    "GB-Mo",
+    "Hrs",
+    "Queries",
 ]
 ```
 ## R53HostedZoneDeletionStateCodeType
@@ -1643,6 +1709,29 @@ ResourceTypeType = Literal[
     "RelationalDatabase",
     "RelationalDatabaseSnapshot",
     "StaticIp",
+]
+```
+## StatusType
+
+```python title="Usage Example"
+from mypy_boto3_lightsail.literals import StatusType
+
+def get_value() -> StatusType:
+    return "failedInstanceCreation"
+```
+
+```python title="Definition"
+StatusType = Literal[
+    "failedInstanceCreation",
+    "failedStartingGUISession",
+    "failedStoppingGUISession",
+    "notStarted",
+    "settingUpInstance",
+    "started",
+    "startExpired",
+    "starting",
+    "stopped",
+    "stopping",
 ]
 ```
 ## StatusTypeType

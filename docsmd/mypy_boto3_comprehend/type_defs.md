@@ -448,23 +448,6 @@ class EntityLabelTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: PiiEntityTypeType](./literals.md#piientitytypetype) 
-## DocumentClassifierOutputDataConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import DocumentClassifierOutputDataConfigTypeDef
-
-def get_value() -> DocumentClassifierOutputDataConfigTypeDef:
-    return {
-        "S3Uri": ...,
-    }
-```
-
-```python title="Definition"
-class DocumentClassifierOutputDataConfigTypeDef(TypedDict):
-    S3Uri: NotRequired[str],
-    KmsKeyId: NotRequired[str],
-```
-
 ## TagTypeDef
 
 ```python title="Usage Example"
@@ -480,6 +463,24 @@ def get_value() -> TagTypeDef:
 class TagTypeDef(TypedDict):
     Key: str,
     Value: NotRequired[str],
+```
+
+## DocumentClassifierOutputDataConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DocumentClassifierOutputDataConfigTypeDef
+
+def get_value() -> DocumentClassifierOutputDataConfigTypeDef:
+    return {
+        "S3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentClassifierOutputDataConfigTypeDef(TypedDict):
+    S3Uri: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    FlywheelStatsS3Prefix: NotRequired[str],
 ```
 
 ## VpcConfigTypeDef
@@ -500,6 +501,143 @@ class VpcConfigTypeDef(TypedDict):
     Subnets: Sequence[str],
 ```
 
+## DatasetAugmentedManifestsListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetAugmentedManifestsListItemTypeDef
+
+def get_value() -> DatasetAugmentedManifestsListItemTypeDef:
+    return {
+        "AttributeNames": ...,
+        "S3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetAugmentedManifestsListItemTypeDef(TypedDict):
+    AttributeNames: Sequence[str],
+    S3Uri: str,
+    AnnotationDataS3Uri: NotRequired[str],
+    SourceDocumentsS3Uri: NotRequired[str],
+    DocumentType: NotRequired[AugmentedManifestsDocumentTypeFormatType],  # (1)
+```
+
+1. See [:material-code-brackets: AugmentedManifestsDocumentTypeFormatType](./literals.md#augmentedmanifestsdocumenttypeformattype) 
+## DatasetDocumentClassifierInputDataConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetDocumentClassifierInputDataConfigTypeDef
+
+def get_value() -> DatasetDocumentClassifierInputDataConfigTypeDef:
+    return {
+        "S3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetDocumentClassifierInputDataConfigTypeDef(TypedDict):
+    S3Uri: str,
+    LabelDelimiter: NotRequired[str],
+```
+
+## DatasetEntityRecognizerAnnotationsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetEntityRecognizerAnnotationsTypeDef
+
+def get_value() -> DatasetEntityRecognizerAnnotationsTypeDef:
+    return {
+        "S3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetEntityRecognizerAnnotationsTypeDef(TypedDict):
+    S3Uri: str,
+```
+
+## DatasetEntityRecognizerDocumentsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetEntityRecognizerDocumentsTypeDef
+
+def get_value() -> DatasetEntityRecognizerDocumentsTypeDef:
+    return {
+        "S3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetEntityRecognizerDocumentsTypeDef(TypedDict):
+    S3Uri: str,
+    InputFormat: NotRequired[InputFormatType],  # (1)
+```
+
+1. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
+## DatasetEntityRecognizerEntityListTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetEntityRecognizerEntityListTypeDef
+
+def get_value() -> DatasetEntityRecognizerEntityListTypeDef:
+    return {
+        "S3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetEntityRecognizerEntityListTypeDef(TypedDict):
+    S3Uri: str,
+```
+
+## DatasetFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetFilterTypeDef
+
+def get_value() -> DatasetFilterTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetFilterTypeDef(TypedDict):
+    Status: NotRequired[DatasetStatusType],  # (1)
+    DatasetType: NotRequired[DatasetTypeType],  # (2)
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+2. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+## DatasetPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetPropertiesTypeDef
+
+def get_value() -> DatasetPropertiesTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetPropertiesTypeDef(TypedDict):
+    DatasetArn: NotRequired[str],
+    DatasetName: NotRequired[str],
+    DatasetType: NotRequired[DatasetTypeType],  # (1)
+    DatasetS3Uri: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[DatasetStatusType],  # (2)
+    Message: NotRequired[str],
+    NumberOfDocuments: NotRequired[int],
+    CreationTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+```
+
+1. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+2. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
 ## DeleteDocumentClassifierRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -548,6 +686,22 @@ class DeleteEntityRecognizerRequestRequestTypeDef(TypedDict):
     EntityRecognizerArn: str,
 ```
 
+## DeleteFlywheelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DeleteFlywheelRequestRequestTypeDef
+
+def get_value() -> DeleteFlywheelRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class DeleteFlywheelRequestRequestTypeDef(TypedDict):
+    FlywheelArn: str,
+```
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -563,6 +717,22 @@ def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
 class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
     ResourceArn: str,
     PolicyRevisionId: NotRequired[str],
+```
+
+## DescribeDatasetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DescribeDatasetRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDatasetRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
 ```
 
 ## DescribeDocumentClassificationJobRequestRequestTypeDef
@@ -653,6 +823,7 @@ class EndpointPropertiesTypeDef(TypedDict):
     LastModifiedTime: NotRequired[datetime],
     DataAccessRoleArn: NotRequired[str],
     DesiredDataAccessRoleArn: NotRequired[str],
+    FlywheelArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: EndpointStatusType](./literals.md#endpointstatustype) 
@@ -702,6 +873,40 @@ def get_value() -> DescribeEventsDetectionJobRequestRequestTypeDef:
 ```python title="Definition"
 class DescribeEventsDetectionJobRequestRequestTypeDef(TypedDict):
     JobId: str,
+```
+
+## DescribeFlywheelIterationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DescribeFlywheelIterationRequestRequestTypeDef
+
+def get_value() -> DescribeFlywheelIterationRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+        "FlywheelIterationId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFlywheelIterationRequestRequestTypeDef(TypedDict):
+    FlywheelArn: str,
+    FlywheelIterationId: str,
+```
+
+## DescribeFlywheelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DescribeFlywheelRequestRequestTypeDef
+
+def get_value() -> DescribeFlywheelRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFlywheelRequestRequestTypeDef(TypedDict):
+    FlywheelArn: str,
 ```
 
 ## DescribeKeyPhrasesDetectionJobRequestRequestTypeDef
@@ -931,6 +1136,24 @@ class DetectTargetedSentimentRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+## DocumentClassificationConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DocumentClassificationConfigTypeDef
+
+def get_value() -> DocumentClassificationConfigTypeDef:
+    return {
+        "Mode": ...,
+    }
+```
+
+```python title="Definition"
+class DocumentClassificationConfigTypeDef(TypedDict):
+    Mode: DocumentClassifierModeType,  # (1)
+    Labels: NotRequired[Sequence[str]],
+```
+
+1. See [:material-code-brackets: DocumentClassifierModeType](./literals.md#documentclassifiermodetype) 
 ## DocumentClassificationJobFilterTypeDef
 
 ```python title="Usage Example"
@@ -1086,6 +1309,22 @@ class EntitiesDetectionJobFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+## EntityTypesListItemTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import EntityTypesListItemTypeDef
+
+def get_value() -> EntityTypesListItemTypeDef:
+    return {
+        "Type": ...,
+    }
+```
+
+```python title="Definition"
+class EntityTypesListItemTypeDef(TypedDict):
+    Type: str,
+```
+
 ## EntityRecognizerAnnotationsTypeDef
 
 ```python title="Usage Example"
@@ -1176,22 +1415,6 @@ class EntityRecognizerFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
-## EntityTypesListItemTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import EntityTypesListItemTypeDef
-
-def get_value() -> EntityTypesListItemTypeDef:
-    return {
-        "Type": ...,
-    }
-```
-
-```python title="Definition"
-class EntityTypesListItemTypeDef(TypedDict):
-    Type: str,
-```
-
 ## EntityTypesEvaluationMetricsTypeDef
 
 ```python title="Usage Example"
@@ -1208,6 +1431,22 @@ class EntityTypesEvaluationMetricsTypeDef(TypedDict):
     Precision: NotRequired[float],
     Recall: NotRequired[float],
     F1Score: NotRequired[float],
+```
+
+## EntityRecognizerOutputDataConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import EntityRecognizerOutputDataConfigTypeDef
+
+def get_value() -> EntityRecognizerOutputDataConfigTypeDef:
+    return {
+        "FlywheelStatsS3Prefix": ...,
+    }
+```
+
+```python title="Definition"
+class EntityRecognizerOutputDataConfigTypeDef(TypedDict):
+    FlywheelStatsS3Prefix: NotRequired[str],
 ```
 
 ## EntityRecognizerSummaryTypeDef
@@ -1251,6 +1490,87 @@ class EventsDetectionJobFilterTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+## FlywheelFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import FlywheelFilterTypeDef
+
+def get_value() -> FlywheelFilterTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class FlywheelFilterTypeDef(TypedDict):
+    Status: NotRequired[FlywheelStatusType],  # (1)
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+```
+
+1. See [:material-code-brackets: FlywheelStatusType](./literals.md#flywheelstatustype) 
+## FlywheelIterationFilterTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import FlywheelIterationFilterTypeDef
+
+def get_value() -> FlywheelIterationFilterTypeDef:
+    return {
+        "CreationTimeAfter": ...,
+    }
+```
+
+```python title="Definition"
+class FlywheelIterationFilterTypeDef(TypedDict):
+    CreationTimeAfter: NotRequired[Union[datetime, str]],
+    CreationTimeBefore: NotRequired[Union[datetime, str]],
+```
+
+## FlywheelModelEvaluationMetricsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import FlywheelModelEvaluationMetricsTypeDef
+
+def get_value() -> FlywheelModelEvaluationMetricsTypeDef:
+    return {
+        "AverageF1Score": ...,
+    }
+```
+
+```python title="Definition"
+class FlywheelModelEvaluationMetricsTypeDef(TypedDict):
+    AverageF1Score: NotRequired[float],
+    AveragePrecision: NotRequired[float],
+    AverageRecall: NotRequired[float],
+    AverageAccuracy: NotRequired[float],
+```
+
+## FlywheelSummaryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import FlywheelSummaryTypeDef
+
+def get_value() -> FlywheelSummaryTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class FlywheelSummaryTypeDef(TypedDict):
+    FlywheelArn: NotRequired[str],
+    ActiveModelArn: NotRequired[str],
+    DataLakeS3Uri: NotRequired[str],
+    Status: NotRequired[FlywheelStatusType],  # (1)
+    ModelType: NotRequired[ModelTypeType],  # (2)
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    LatestFlywheelIteration: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FlywheelStatusType](./literals.md#flywheelstatustype) 
+2. See [:material-code-brackets: ModelTypeType](./literals.md#modeltypetype) 
 ## PointTypeDef
 
 ```python title="Usage Example"
@@ -1510,6 +1830,23 @@ class PutResourcePolicyRequestRequestTypeDef(TypedDict):
     PolicyRevisionId: NotRequired[str],
 ```
 
+## StartFlywheelIterationRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import StartFlywheelIterationRequestRequestTypeDef
+
+def get_value() -> StartFlywheelIterationRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class StartFlywheelIterationRequestRequestTypeDef(TypedDict):
+    FlywheelArn: str,
+    ClientRequestToken: NotRequired[str],
+```
+
 ## StopDominantLanguageDetectionJobRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -1689,6 +2026,7 @@ class UpdateEndpointRequestRequestTypeDef(TypedDict):
     DesiredModelArn: NotRequired[str],
     DesiredInferenceUnits: NotRequired[int],
     DesiredDataAccessRoleArn: NotRequired[str],
+    FlywheelArn: NotRequired[str],
 ```
 
 ## DocumentClassifierInputDataConfigTypeDef
@@ -1731,6 +2069,25 @@ class BatchDetectDominantLanguageItemResultTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: DominantLanguageTypeDef](./type_defs.md#dominantlanguagetypedef) 
+## CreateDatasetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import CreateDatasetResponseTypeDef
+
+def get_value() -> CreateDatasetResponseTypeDef:
+    return {
+        "DatasetArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatasetResponseTypeDef(TypedDict):
+    DatasetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDocumentClassifierResponseTypeDef
 
 ```python title="Usage Example"
@@ -1758,6 +2115,7 @@ from mypy_boto3_comprehend.type_defs import CreateEndpointResponseTypeDef
 def get_value() -> CreateEndpointResponseTypeDef:
     return {
         "EndpointArn": ...,
+        "ModelArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1765,6 +2123,7 @@ def get_value() -> CreateEndpointResponseTypeDef:
 ```python title="Definition"
 class CreateEndpointResponseTypeDef(TypedDict):
     EndpointArn: str,
+    ModelArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1784,6 +2143,27 @@ def get_value() -> CreateEntityRecognizerResponseTypeDef:
 ```python title="Definition"
 class CreateEntityRecognizerResponseTypeDef(TypedDict):
     EntityRecognizerArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateFlywheelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import CreateFlywheelResponseTypeDef
+
+def get_value() -> CreateFlywheelResponseTypeDef:
+    return {
+        "FlywheelArn": ...,
+        "ActiveModelArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFlywheelResponseTypeDef(TypedDict):
+    FlywheelArn: str,
+    ActiveModelArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -1881,6 +2261,7 @@ def get_value() -> StartDocumentClassificationJobResponseTypeDef:
         "JobId": ...,
         "JobArn": ...,
         "JobStatus": ...,
+        "DocumentClassifierArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1890,6 +2271,7 @@ class StartDocumentClassificationJobResponseTypeDef(TypedDict):
     JobId: str,
     JobArn: str,
     JobStatus: JobStatusType,  # (1)
+    DocumentClassifierArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -1929,6 +2311,7 @@ def get_value() -> StartEntitiesDetectionJobResponseTypeDef:
         "JobId": ...,
         "JobArn": ...,
         "JobStatus": ...,
+        "EntityRecognizerArn": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -1938,6 +2321,7 @@ class StartEntitiesDetectionJobResponseTypeDef(TypedDict):
     JobId: str,
     JobArn: str,
     JobStatus: JobStatusType,  # (1)
+    EntityRecognizerArn: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (2)
 ```
 
@@ -1967,6 +2351,27 @@ class StartEventsDetectionJobResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StartFlywheelIterationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import StartFlywheelIterationResponseTypeDef
+
+def get_value() -> StartFlywheelIterationResponseTypeDef:
+    return {
+        "FlywheelArn": ...,
+        "FlywheelIterationId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StartFlywheelIterationResponseTypeDef(TypedDict):
+    FlywheelArn: str,
+    FlywheelIterationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartKeyPhrasesDetectionJobResponseTypeDef
 
 ```python title="Usage Example"
@@ -2241,6 +2646,25 @@ class StopTargetedSentimentDetectionJobResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateEndpointResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import UpdateEndpointResponseTypeDef
+
+def get_value() -> UpdateEndpointResponseTypeDef:
+    return {
+        "DesiredModelArn": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateEndpointResponseTypeDef(TypedDict):
+    DesiredModelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDetectKeyPhrasesItemResultTypeDef
 
 ```python title="Usage Example"
@@ -2471,7 +2895,6 @@ from mypy_boto3_comprehend.type_defs import CreateEndpointRequestRequestTypeDef
 def get_value() -> CreateEndpointRequestRequestTypeDef:
     return {
         "EndpointName": ...,
-        "ModelArn": ...,
         "DesiredInferenceUnits": ...,
     }
 ```
@@ -2479,11 +2902,12 @@ def get_value() -> CreateEndpointRequestRequestTypeDef:
 ```python title="Definition"
 class CreateEndpointRequestRequestTypeDef(TypedDict):
     EndpointName: str,
-    ModelArn: str,
     DesiredInferenceUnits: int,
+    ModelArn: NotRequired[str],
     ClientRequestToken: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
     DataAccessRoleArn: NotRequired[str],
+    FlywheelArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
@@ -2550,6 +2974,128 @@ class TagResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DataSecurityConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DataSecurityConfigTypeDef
+
+def get_value() -> DataSecurityConfigTypeDef:
+    return {
+        "ModelKmsKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class DataSecurityConfigTypeDef(TypedDict):
+    ModelKmsKeyId: NotRequired[str],
+    VolumeKmsKeyId: NotRequired[str],
+    DataLakeKmsKeyId: NotRequired[str],
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## UpdateDataSecurityConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import UpdateDataSecurityConfigTypeDef
+
+def get_value() -> UpdateDataSecurityConfigTypeDef:
+    return {
+        "ModelKmsKeyId": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateDataSecurityConfigTypeDef(TypedDict):
+    ModelKmsKeyId: NotRequired[str],
+    VolumeKmsKeyId: NotRequired[str],
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## DatasetEntityRecognizerInputDataConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetEntityRecognizerInputDataConfigTypeDef
+
+def get_value() -> DatasetEntityRecognizerInputDataConfigTypeDef:
+    return {
+        "Documents": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetEntityRecognizerInputDataConfigTypeDef(TypedDict):
+    Documents: DatasetEntityRecognizerDocumentsTypeDef,  # (2)
+    Annotations: NotRequired[DatasetEntityRecognizerAnnotationsTypeDef],  # (1)
+    EntityList: NotRequired[DatasetEntityRecognizerEntityListTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DatasetEntityRecognizerAnnotationsTypeDef](./type_defs.md#datasetentityrecognizerannotationstypedef) 
+2. See [:material-code-braces: DatasetEntityRecognizerDocumentsTypeDef](./type_defs.md#datasetentityrecognizerdocumentstypedef) 
+3. See [:material-code-braces: DatasetEntityRecognizerEntityListTypeDef](./type_defs.md#datasetentityrecognizerentitylisttypedef) 
+## ListDatasetsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListDatasetsRequestRequestTypeDef
+
+def get_value() -> ListDatasetsRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetsRequestRequestTypeDef(TypedDict):
+    FlywheelArn: NotRequired[str],
+    Filter: NotRequired[DatasetFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: DatasetFilterTypeDef](./type_defs.md#datasetfiltertypedef) 
+## DescribeDatasetResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DescribeDatasetResponseTypeDef
+
+def get_value() -> DescribeDatasetResponseTypeDef:
+    return {
+        "DatasetProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDatasetResponseTypeDef(TypedDict):
+    DatasetProperties: DatasetPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DatasetPropertiesTypeDef](./type_defs.md#datasetpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListDatasetsResponseTypeDef
+
+def get_value() -> ListDatasetsResponseTypeDef:
+    return {
+        "DatasetPropertiesList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetsResponseTypeDef(TypedDict):
+    DatasetPropertiesList: List[DatasetPropertiesTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: DatasetPropertiesTypeDef](./type_defs.md#datasetpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEndpointResponseTypeDef
 
 ```python title="Usage Example"
@@ -2747,25 +3293,23 @@ class ListEntitiesDetectionJobsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EntitiesDetectionJobFilterTypeDef](./type_defs.md#entitiesdetectionjobfiltertypedef) 
-## ListEntityRecognizersRequestRequestTypeDef
+## EntityRecognitionConfigTypeDef
 
 ```python title="Usage Example"
-from mypy_boto3_comprehend.type_defs import ListEntityRecognizersRequestRequestTypeDef
+from mypy_boto3_comprehend.type_defs import EntityRecognitionConfigTypeDef
 
-def get_value() -> ListEntityRecognizersRequestRequestTypeDef:
+def get_value() -> EntityRecognitionConfigTypeDef:
     return {
-        "Filter": ...,
+        "EntityTypes": ...,
     }
 ```
 
 ```python title="Definition"
-class ListEntityRecognizersRequestRequestTypeDef(TypedDict):
-    Filter: NotRequired[EntityRecognizerFilterTypeDef],  # (1)
-    NextToken: NotRequired[str],
-    MaxResults: NotRequired[int],
+class EntityRecognitionConfigTypeDef(TypedDict):
+    EntityTypes: Sequence[EntityTypesListItemTypeDef],  # (1)
 ```
 
-1. See [:material-code-braces: EntityRecognizerFilterTypeDef](./type_defs.md#entityrecognizerfiltertypedef) 
+1. See [:material-code-braces: EntityTypesListItemTypeDef](./type_defs.md#entitytypeslistitemtypedef) 
 ## EntityRecognizerInputDataConfigTypeDef
 
 ```python title="Usage Example"
@@ -2793,6 +3337,25 @@ class EntityRecognizerInputDataConfigTypeDef(TypedDict):
 4. See [:material-code-braces: EntityRecognizerAnnotationsTypeDef](./type_defs.md#entityrecognizerannotationstypedef) 
 5. See [:material-code-braces: EntityRecognizerEntityListTypeDef](./type_defs.md#entityrecognizerentitylisttypedef) 
 6. See [:material-code-braces: AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef) 
+## ListEntityRecognizersRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListEntityRecognizersRequestRequestTypeDef
+
+def get_value() -> ListEntityRecognizersRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListEntityRecognizersRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[EntityRecognizerFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: EntityRecognizerFilterTypeDef](./type_defs.md#entityrecognizerfiltertypedef) 
 ## EntityRecognizerMetadataEntityTypesListItemTypeDef
 
 ```python title="Usage Example"
@@ -2853,6 +3416,96 @@ class ListEventsDetectionJobsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: EventsDetectionJobFilterTypeDef](./type_defs.md#eventsdetectionjobfiltertypedef) 
+## ListFlywheelsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListFlywheelsRequestRequestTypeDef
+
+def get_value() -> ListFlywheelsRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListFlywheelsRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[FlywheelFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FlywheelFilterTypeDef](./type_defs.md#flywheelfiltertypedef) 
+## ListFlywheelIterationHistoryRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListFlywheelIterationHistoryRequestRequestTypeDef
+
+def get_value() -> ListFlywheelIterationHistoryRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListFlywheelIterationHistoryRequestRequestTypeDef(TypedDict):
+    FlywheelArn: str,
+    Filter: NotRequired[FlywheelIterationFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+1. See [:material-code-braces: FlywheelIterationFilterTypeDef](./type_defs.md#flywheeliterationfiltertypedef) 
+## FlywheelIterationPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import FlywheelIterationPropertiesTypeDef
+
+def get_value() -> FlywheelIterationPropertiesTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class FlywheelIterationPropertiesTypeDef(TypedDict):
+    FlywheelArn: NotRequired[str],
+    FlywheelIterationId: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    Status: NotRequired[FlywheelIterationStatusType],  # (1)
+    Message: NotRequired[str],
+    EvaluatedModelArn: NotRequired[str],
+    EvaluatedModelMetrics: NotRequired[FlywheelModelEvaluationMetricsTypeDef],  # (2)
+    TrainedModelArn: NotRequired[str],
+    TrainedModelMetrics: NotRequired[FlywheelModelEvaluationMetricsTypeDef],  # (2)
+    EvaluationManifestS3Prefix: NotRequired[str],
+```
+
+1. See [:material-code-brackets: FlywheelIterationStatusType](./literals.md#flywheeliterationstatustype) 
+2. See [:material-code-braces: FlywheelModelEvaluationMetricsTypeDef](./type_defs.md#flywheelmodelevaluationmetricstypedef) 
+3. See [:material-code-braces: FlywheelModelEvaluationMetricsTypeDef](./type_defs.md#flywheelmodelevaluationmetricstypedef) 
+## ListFlywheelsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListFlywheelsResponseTypeDef
+
+def get_value() -> ListFlywheelsResponseTypeDef:
+    return {
+        "FlywheelSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFlywheelsResponseTypeDef(TypedDict):
+    FlywheelSummaryList: List[FlywheelSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FlywheelSummaryTypeDef](./type_defs.md#flywheelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GeometryTypeDef
 
 ```python title="Usage Example"
@@ -3362,6 +4015,7 @@ class DocumentClassifierPropertiesTypeDef(TypedDict):
     ModelKmsKeyId: NotRequired[str],
     VersionName: NotRequired[str],
     SourceModelArn: NotRequired[str],
+    FlywheelArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
@@ -3397,6 +4051,7 @@ class DocumentClassificationJobPropertiesTypeDef(TypedDict):
     DataAccessRoleArn: NotRequired[str],
     VolumeKmsKeyId: NotRequired[str],
     VpcConfig: NotRequired[VpcConfigTypeDef],  # (4)
+    FlywheelArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
@@ -3606,7 +4261,6 @@ from mypy_boto3_comprehend.type_defs import StartDocumentClassificationJobReques
 
 def get_value() -> StartDocumentClassificationJobRequestRequestTypeDef:
     return {
-        "DocumentClassifierArn": ...,
         "InputDataConfig": ...,
         "OutputDataConfig": ...,
         "DataAccessRoleArn": ...,
@@ -3615,15 +4269,16 @@ def get_value() -> StartDocumentClassificationJobRequestRequestTypeDef:
 
 ```python title="Definition"
 class StartDocumentClassificationJobRequestRequestTypeDef(TypedDict):
-    DocumentClassifierArn: str,
     InputDataConfig: InputDataConfigTypeDef,  # (1)
     OutputDataConfig: OutputDataConfigTypeDef,  # (2)
     DataAccessRoleArn: str,
     JobName: NotRequired[str],
+    DocumentClassifierArn: NotRequired[str],
     ClientRequestToken: NotRequired[str],
     VolumeKmsKeyId: NotRequired[str],
     VpcConfig: NotRequired[VpcConfigTypeDef],  # (3)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    FlywheelArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
@@ -3685,6 +4340,7 @@ class StartEntitiesDetectionJobRequestRequestTypeDef(TypedDict):
     VolumeKmsKeyId: NotRequired[str],
     VpcConfig: NotRequired[VpcConfigTypeDef],  # (4)
     Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    FlywheelArn: NotRequired[str],
 ```
 
 1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
@@ -3948,6 +4604,49 @@ class TopicsDetectionJobPropertiesTypeDef(TypedDict):
 2. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
 3. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
 4. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+## UpdateFlywheelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import UpdateFlywheelRequestRequestTypeDef
+
+def get_value() -> UpdateFlywheelRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFlywheelRequestRequestTypeDef(TypedDict):
+    FlywheelArn: str,
+    ActiveModelArn: NotRequired[str],
+    DataAccessRoleArn: NotRequired[str],
+    DataSecurityConfig: NotRequired[UpdateDataSecurityConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: UpdateDataSecurityConfigTypeDef](./type_defs.md#updatedatasecurityconfigtypedef) 
+## DatasetInputDataConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DatasetInputDataConfigTypeDef
+
+def get_value() -> DatasetInputDataConfigTypeDef:
+    return {
+        "AugmentedManifests": ...,
+    }
+```
+
+```python title="Definition"
+class DatasetInputDataConfigTypeDef(TypedDict):
+    AugmentedManifests: NotRequired[Sequence[DatasetAugmentedManifestsListItemTypeDef]],  # (1)
+    DataFormat: NotRequired[DatasetDataFormatType],  # (2)
+    DocumentClassifierInputDataConfig: NotRequired[DatasetDocumentClassifierInputDataConfigTypeDef],  # (3)
+    EntityRecognizerInputDataConfig: NotRequired[DatasetEntityRecognizerInputDataConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: DatasetAugmentedManifestsListItemTypeDef](./type_defs.md#datasetaugmentedmanifestslistitemtypedef) 
+2. See [:material-code-brackets: DatasetDataFormatType](./literals.md#datasetdataformattype) 
+3. See [:material-code-braces: DatasetDocumentClassifierInputDataConfigTypeDef](./type_defs.md#datasetdocumentclassifierinputdataconfigtypedef) 
+4. See [:material-code-braces: DatasetEntityRecognizerInputDataConfigTypeDef](./type_defs.md#datasetentityrecognizerinputdataconfigtypedef) 
 ## ClassifyDocumentResponseTypeDef
 
 ```python title="Usage Example"
@@ -3980,6 +4679,27 @@ class ClassifyDocumentResponseTypeDef(TypedDict):
 4. See [:material-code-braces: DocumentTypeListItemTypeDef](./type_defs.md#documenttypelistitemtypedef) 
 5. See [:material-code-braces: ErrorsListItemTypeDef](./type_defs.md#errorslistitemtypedef) 
 6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## TaskConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import TaskConfigTypeDef
+
+def get_value() -> TaskConfigTypeDef:
+    return {
+        "LanguageCode": ...,
+    }
+```
+
+```python title="Definition"
+class TaskConfigTypeDef(TypedDict):
+    LanguageCode: LanguageCodeType,  # (1)
+    DocumentClassificationConfig: NotRequired[DocumentClassificationConfigTypeDef],  # (2)
+    EntityRecognitionConfig: NotRequired[EntityRecognitionConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: DocumentClassificationConfigTypeDef](./type_defs.md#documentclassificationconfigtypedef) 
+3. See [:material-code-braces: EntityRecognitionConfigTypeDef](./type_defs.md#entityrecognitionconfigtypedef) 
 ## CreateEntityRecognizerRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -4034,6 +4754,48 @@ class EntityRecognizerMetadataTypeDef(TypedDict):
 
 1. See [:material-code-braces: EntityRecognizerEvaluationMetricsTypeDef](./type_defs.md#entityrecognizerevaluationmetricstypedef) 
 2. See [:material-code-braces: EntityRecognizerMetadataEntityTypesListItemTypeDef](./type_defs.md#entityrecognizermetadataentitytypeslistitemtypedef) 
+## DescribeFlywheelIterationResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DescribeFlywheelIterationResponseTypeDef
+
+def get_value() -> DescribeFlywheelIterationResponseTypeDef:
+    return {
+        "FlywheelIterationProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFlywheelIterationResponseTypeDef(TypedDict):
+    FlywheelIterationProperties: FlywheelIterationPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FlywheelIterationPropertiesTypeDef](./type_defs.md#flywheeliterationpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFlywheelIterationHistoryResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import ListFlywheelIterationHistoryResponseTypeDef
+
+def get_value() -> ListFlywheelIterationHistoryResponseTypeDef:
+    return {
+        "FlywheelIterationPropertiesList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListFlywheelIterationHistoryResponseTypeDef(TypedDict):
+    FlywheelIterationPropertiesList: List[FlywheelIterationPropertiesTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FlywheelIterationPropertiesTypeDef](./type_defs.md#flywheeliterationpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BlockTypeDef
 
 ```python title="Usage Example"
@@ -4552,6 +5314,94 @@ class ListTopicsDetectionJobsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: TopicsDetectionJobPropertiesTypeDef](./type_defs.md#topicsdetectionjobpropertiestypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## CreateDatasetRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import CreateDatasetRequestRequestTypeDef
+
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "FlywheelArn": ...,
+        "DatasetName": ...,
+        "InputDataConfig": ...,
+    }
+```
+
+```python title="Definition"
+class CreateDatasetRequestRequestTypeDef(TypedDict):
+    FlywheelArn: str,
+    DatasetName: str,
+    InputDataConfig: DatasetInputDataConfigTypeDef,  # (1)
+    DatasetType: NotRequired[DatasetTypeType],  # (2)
+    Description: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
+
+1. See [:material-code-braces: DatasetInputDataConfigTypeDef](./type_defs.md#datasetinputdataconfigtypedef) 
+2. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## CreateFlywheelRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import CreateFlywheelRequestRequestTypeDef
+
+def get_value() -> CreateFlywheelRequestRequestTypeDef:
+    return {
+        "FlywheelName": ...,
+        "DataAccessRoleArn": ...,
+        "DataLakeS3Uri": ...,
+    }
+```
+
+```python title="Definition"
+class CreateFlywheelRequestRequestTypeDef(TypedDict):
+    FlywheelName: str,
+    DataAccessRoleArn: str,
+    DataLakeS3Uri: str,
+    ActiveModelArn: NotRequired[str],
+    TaskConfig: NotRequired[TaskConfigTypeDef],  # (1)
+    ModelType: NotRequired[ModelTypeType],  # (2)
+    DataSecurityConfig: NotRequired[DataSecurityConfigTypeDef],  # (3)
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
+
+1. See [:material-code-braces: TaskConfigTypeDef](./type_defs.md#taskconfigtypedef) 
+2. See [:material-code-brackets: ModelTypeType](./literals.md#modeltypetype) 
+3. See [:material-code-braces: DataSecurityConfigTypeDef](./type_defs.md#datasecurityconfigtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## FlywheelPropertiesTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import FlywheelPropertiesTypeDef
+
+def get_value() -> FlywheelPropertiesTypeDef:
+    return {
+        "FlywheelArn": ...,
+    }
+```
+
+```python title="Definition"
+class FlywheelPropertiesTypeDef(TypedDict):
+    FlywheelArn: NotRequired[str],
+    ActiveModelArn: NotRequired[str],
+    DataAccessRoleArn: NotRequired[str],
+    TaskConfig: NotRequired[TaskConfigTypeDef],  # (1)
+    DataLakeS3Uri: NotRequired[str],
+    DataSecurityConfig: NotRequired[DataSecurityConfigTypeDef],  # (2)
+    Status: NotRequired[FlywheelStatusType],  # (3)
+    ModelType: NotRequired[ModelTypeType],  # (4)
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    LatestFlywheelIteration: NotRequired[str],
+```
+
+1. See [:material-code-braces: TaskConfigTypeDef](./type_defs.md#taskconfigtypedef) 
+2. See [:material-code-braces: DataSecurityConfigTypeDef](./type_defs.md#datasecurityconfigtypedef) 
+3. See [:material-code-brackets: FlywheelStatusType](./literals.md#flywheelstatustype) 
+4. See [:material-code-brackets: ModelTypeType](./literals.md#modeltypetype) 
 ## EntityRecognizerPropertiesTypeDef
 
 ```python title="Usage Example"
@@ -4581,6 +5431,8 @@ class EntityRecognizerPropertiesTypeDef(TypedDict):
     ModelKmsKeyId: NotRequired[str],
     VersionName: NotRequired[str],
     SourceModelArn: NotRequired[str],
+    FlywheelArn: NotRequired[str],
+    OutputDataConfig: NotRequired[EntityRecognizerOutputDataConfigTypeDef],  # (6)
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
@@ -4588,6 +5440,7 @@ class EntityRecognizerPropertiesTypeDef(TypedDict):
 3. See [:material-code-braces: EntityRecognizerInputDataConfigTypeDef](./type_defs.md#entityrecognizerinputdataconfigtypedef) 
 4. See [:material-code-braces: EntityRecognizerMetadataTypeDef](./type_defs.md#entityrecognizermetadatatypedef) 
 5. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+6. See [:material-code-braces: EntityRecognizerOutputDataConfigTypeDef](./type_defs.md#entityrecognizeroutputdataconfigtypedef) 
 ## DetectEntitiesResponseTypeDef
 
 ```python title="Usage Example"
@@ -4704,6 +5557,46 @@ class BatchDetectEntitiesResponseTypeDef(TypedDict):
 1. See [:material-code-braces: BatchDetectEntitiesItemResultTypeDef](./type_defs.md#batchdetectentitiesitemresulttypedef) 
 2. See [:material-code-braces: BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef) 
 3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFlywheelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import DescribeFlywheelResponseTypeDef
+
+def get_value() -> DescribeFlywheelResponseTypeDef:
+    return {
+        "FlywheelProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFlywheelResponseTypeDef(TypedDict):
+    FlywheelProperties: FlywheelPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FlywheelPropertiesTypeDef](./type_defs.md#flywheelpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## UpdateFlywheelResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_comprehend.type_defs import UpdateFlywheelResponseTypeDef
+
+def get_value() -> UpdateFlywheelResponseTypeDef:
+    return {
+        "FlywheelProperties": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class UpdateFlywheelResponseTypeDef(TypedDict):
+    FlywheelProperties: FlywheelPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: FlywheelPropertiesTypeDef](./type_defs.md#flywheelpropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEntityRecognizerResponseTypeDef
 
 ```python title="Usage Example"

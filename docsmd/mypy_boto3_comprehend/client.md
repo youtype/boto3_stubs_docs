@@ -356,6 +356,47 @@ parent.contains_pii_entities(**kwargs)
 
 1. See [:material-code-braces: ContainsPiiEntitiesRequestRequestTypeDef](./type_defs.md#containspiientitiesrequestrequesttypedef) 
 
+### create\_dataset
+
+Creates a dataset to upload training or test data for a model associated with a
+flywheel.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_dataset)
+
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    FlywheelArn: str,
+    DatasetName: str,
+    InputDataConfig: DatasetInputDataConfigTypeDef,  # (1)
+    DatasetType: DatasetTypeType = ...,  # (2)
+    Description: str = ...,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateDatasetResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: DatasetInputDataConfigTypeDef](./type_defs.md#datasetinputdataconfigtypedef) 
+2. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+    "DatasetName": ...,
+    "InputDataConfig": ...,
+}
+
+parent.create_dataset(**kwargs)
+```
+
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
+
 ### create\_document\_classifier
 
 Creates a new document classifier that you can use to categorize documents.
@@ -421,11 +462,12 @@ def create_endpoint(
     self,
     *,
     EndpointName: str,
-    ModelArn: str,
     DesiredInferenceUnits: int,
+    ModelArn: str = ...,
     ClientRequestToken: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (1)
     DataAccessRoleArn: str = ...,
+    FlywheelArn: str = ...,
 ) -> CreateEndpointResponseTypeDef:  # (2)
     ...
 ```
@@ -437,7 +479,6 @@ def create_endpoint(
 ```python title="Usage example with kwargs"
 kwargs: CreateEndpointRequestRequestTypeDef = {  # (1)
     "EndpointName": ...,
-    "ModelArn": ...,
     "DesiredInferenceUnits": ...,
 }
 
@@ -491,6 +532,50 @@ parent.create_entity_recognizer(**kwargs)
 ```
 
 1. See [:material-code-braces: CreateEntityRecognizerRequestRequestTypeDef](./type_defs.md#createentityrecognizerrequestrequesttypedef) 
+
+### create\_flywheel
+
+A flywheel is an AWS resource that orchestrates the ongoing training of a model
+for custom classification or custom entity recognition.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").create_flywheel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.create_flywheel)
+
+```python title="Method definition"
+def create_flywheel(
+    self,
+    *,
+    FlywheelName: str,
+    DataAccessRoleArn: str,
+    DataLakeS3Uri: str,
+    ActiveModelArn: str = ...,
+    TaskConfig: TaskConfigTypeDef = ...,  # (1)
+    ModelType: ModelTypeType = ...,  # (2)
+    DataSecurityConfig: DataSecurityConfigTypeDef = ...,  # (3)
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateFlywheelResponseTypeDef:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: TaskConfigTypeDef](./type_defs.md#taskconfigtypedef) 
+2. See [:material-code-brackets: ModelTypeType](./literals.md#modeltypetype) 
+3. See [:material-code-braces: DataSecurityConfigTypeDef](./type_defs.md#datasecurityconfigtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateFlywheelResponseTypeDef](./type_defs.md#createflywheelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateFlywheelRequestRequestTypeDef = {  # (1)
+    "FlywheelName": ...,
+    "DataAccessRoleArn": ...,
+    "DataLakeS3Uri": ...,
+}
+
+parent.create_flywheel(**kwargs)
+```
+
+1. See [:material-code-braces: CreateFlywheelRequestRequestTypeDef](./type_defs.md#createflywheelrequestrequesttypedef) 
 
 ### delete\_document\_classifier
 
@@ -577,6 +662,34 @@ parent.delete_entity_recognizer(**kwargs)
 
 1. See [:material-code-braces: DeleteEntityRecognizerRequestRequestTypeDef](./type_defs.md#deleteentityrecognizerrequestrequesttypedef) 
 
+### delete\_flywheel
+
+Deletes a flywheel.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").delete_flywheel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.delete_flywheel)
+
+```python title="Method definition"
+def delete_flywheel(
+    self,
+    *,
+    FlywheelArn: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteFlywheelRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+}
+
+parent.delete_flywheel(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteFlywheelRequestRequestTypeDef](./type_defs.md#deleteflywheelrequestrequesttypedef) 
+
 ### delete\_resource\_policy
 
 Deletes a resource-based policy that is attached to a custom model.
@@ -605,6 +718,35 @@ parent.delete_resource_policy(**kwargs)
 ```
 
 1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
+
+### describe\_dataset
+
+Returns information about the dataset that you specify.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_dataset)
+
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    DatasetArn: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
+
+parent.describe_dataset(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
 ### describe\_document\_classification\_job
 
@@ -809,6 +951,66 @@ parent.describe_events_detection_job(**kwargs)
 ```
 
 1. See [:material-code-braces: DescribeEventsDetectionJobRequestRequestTypeDef](./type_defs.md#describeeventsdetectionjobrequestrequesttypedef) 
+
+### describe\_flywheel
+
+Provides configuration information about the flywheel.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").describe_flywheel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_flywheel)
+
+```python title="Method definition"
+def describe_flywheel(
+    self,
+    *,
+    FlywheelArn: str,
+) -> DescribeFlywheelResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeFlywheelResponseTypeDef](./type_defs.md#describeflywheelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFlywheelRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+}
+
+parent.describe_flywheel(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFlywheelRequestRequestTypeDef](./type_defs.md#describeflywheelrequestrequesttypedef) 
+
+### describe\_flywheel\_iteration
+
+Retrieve the configuration properties of a flywheel iteration.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").describe_flywheel_iteration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_flywheel_iteration)
+
+```python title="Method definition"
+def describe_flywheel_iteration(
+    self,
+    *,
+    FlywheelArn: str,
+    FlywheelIterationId: str,
+) -> DescribeFlywheelIterationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeFlywheelIterationResponseTypeDef](./type_defs.md#describeflywheeliterationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFlywheelIterationRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+    "FlywheelIterationId": ...,
+}
+
+parent.describe_flywheel_iteration(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFlywheelIterationRequestRequestTypeDef](./type_defs.md#describeflywheeliterationrequestrequesttypedef) 
 
 ### describe\_key\_phrases\_detection\_job
 
@@ -1267,6 +1469,39 @@ parent.import_model(**kwargs)
 
 1. See [:material-code-braces: ImportModelRequestRequestTypeDef](./type_defs.md#importmodelrequestrequesttypedef) 
 
+### list\_datasets
+
+List the datasets that you have configured in this region.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").list_datasets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_datasets)
+
+```python title="Method definition"
+def list_datasets(
+    self,
+    *,
+    FlywheelArn: str = ...,
+    Filter: DatasetFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatasetsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: DatasetFilterTypeDef](./type_defs.md#datasetfiltertypedef) 
+2. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+}
+
+parent.list_datasets(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
+
 ### list\_document\_classification\_jobs
 
 Gets a list of the documentation classification jobs that you have submitted.
@@ -1554,6 +1789,71 @@ parent.list_events_detection_jobs(**kwargs)
 
 1. See [:material-code-braces: ListEventsDetectionJobsRequestRequestTypeDef](./type_defs.md#listeventsdetectionjobsrequestrequesttypedef) 
 
+### list\_flywheel\_iteration\_history
+
+Information about the history of a flywheel iteration.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").list_flywheel_iteration_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_flywheel_iteration_history)
+
+```python title="Method definition"
+def list_flywheel_iteration_history(
+    self,
+    *,
+    FlywheelArn: str,
+    Filter: FlywheelIterationFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFlywheelIterationHistoryResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FlywheelIterationFilterTypeDef](./type_defs.md#flywheeliterationfiltertypedef) 
+2. See [:material-code-braces: ListFlywheelIterationHistoryResponseTypeDef](./type_defs.md#listflywheeliterationhistoryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListFlywheelIterationHistoryRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+}
+
+parent.list_flywheel_iteration_history(**kwargs)
+```
+
+1. See [:material-code-braces: ListFlywheelIterationHistoryRequestRequestTypeDef](./type_defs.md#listflywheeliterationhistoryrequestrequesttypedef) 
+
+### list\_flywheels
+
+Gets a list of the flywheels that you have created.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").list_flywheels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_flywheels)
+
+```python title="Method definition"
+def list_flywheels(
+    self,
+    *,
+    Filter: FlywheelFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFlywheelsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FlywheelFilterTypeDef](./type_defs.md#flywheelfiltertypedef) 
+2. See [:material-code-braces: ListFlywheelsResponseTypeDef](./type_defs.md#listflywheelsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListFlywheelsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.list_flywheels(**kwargs)
+```
+
+1. See [:material-code-braces: ListFlywheelsRequestRequestTypeDef](./type_defs.md#listflywheelsrequestrequesttypedef) 
+
 ### list\_key\_phrases\_detection\_jobs
 
 Get a list of key phrase detection jobs that you have submitted.
@@ -1786,15 +2086,16 @@ Type annotations and code completion for `#!python boto3.client("comprehend").st
 def start_document_classification_job(
     self,
     *,
-    DocumentClassifierArn: str,
     InputDataConfig: InputDataConfigTypeDef,  # (1)
     OutputDataConfig: OutputDataConfigTypeDef,  # (2)
     DataAccessRoleArn: str,
     JobName: str = ...,
+    DocumentClassifierArn: str = ...,
     ClientRequestToken: str = ...,
     VolumeKmsKeyId: str = ...,
     VpcConfig: VpcConfigTypeDef = ...,  # (3)
     Tags: Sequence[TagTypeDef] = ...,  # (4)
+    FlywheelArn: str = ...,
 ) -> StartDocumentClassificationJobResponseTypeDef:  # (5)
     ...
 ```
@@ -1808,7 +2109,6 @@ def start_document_classification_job(
 
 ```python title="Usage example with kwargs"
 kwargs: StartDocumentClassificationJobRequestRequestTypeDef = {  # (1)
-    "DocumentClassifierArn": ...,
     "InputDataConfig": ...,
     "OutputDataConfig": ...,
     "DataAccessRoleArn": ...,
@@ -1883,6 +2183,7 @@ def start_entities_detection_job(
     VolumeKmsKeyId: str = ...,
     VpcConfig: VpcConfigTypeDef = ...,  # (4)
     Tags: Sequence[TagTypeDef] = ...,  # (5)
+    FlywheelArn: str = ...,
 ) -> StartEntitiesDetectionJobResponseTypeDef:  # (6)
     ...
 ```
@@ -1951,6 +2252,37 @@ parent.start_events_detection_job(**kwargs)
 ```
 
 1. See [:material-code-braces: StartEventsDetectionJobRequestRequestTypeDef](./type_defs.md#starteventsdetectionjobrequestrequesttypedef) 
+
+### start\_flywheel\_iteration
+
+Start the flywheel iteration.This operation uses any new datasets to train a new
+model version.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").start_flywheel_iteration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_flywheel_iteration)
+
+```python title="Method definition"
+def start_flywheel_iteration(
+    self,
+    *,
+    FlywheelArn: str,
+    ClientRequestToken: str = ...,
+) -> StartFlywheelIterationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartFlywheelIterationResponseTypeDef](./type_defs.md#startflywheeliterationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartFlywheelIterationRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+}
+
+parent.start_flywheel_iteration(**kwargs)
+```
+
+1. See [:material-code-braces: StartFlywheelIterationRequestRequestTypeDef](./type_defs.md#startflywheeliterationrequestrequesttypedef) 
 
 ### start\_key\_phrases\_detection\_job
 
@@ -2513,10 +2845,12 @@ def update_endpoint(
     DesiredModelArn: str = ...,
     DesiredInferenceUnits: int = ...,
     DesiredDataAccessRoleArn: str = ...,
-) -> Dict[str, Any]:
+    FlywheelArn: str = ...,
+) -> UpdateEndpointResponseTypeDef:  # (1)
     ...
 ```
 
+1. See [:material-code-braces: UpdateEndpointResponseTypeDef](./type_defs.md#updateendpointresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"
@@ -2528,6 +2862,39 @@ parent.update_endpoint(**kwargs)
 ```
 
 1. See [:material-code-braces: UpdateEndpointRequestRequestTypeDef](./type_defs.md#updateendpointrequestrequesttypedef) 
+
+### update\_flywheel
+
+Update the configuration information for an existing flywheel.
+
+Type annotations and code completion for `#!python boto3.client("comprehend").update_flywheel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.update_flywheel)
+
+```python title="Method definition"
+def update_flywheel(
+    self,
+    *,
+    FlywheelArn: str,
+    ActiveModelArn: str = ...,
+    DataAccessRoleArn: str = ...,
+    DataSecurityConfig: UpdateDataSecurityConfigTypeDef = ...,  # (1)
+) -> UpdateFlywheelResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: UpdateDataSecurityConfigTypeDef](./type_defs.md#updatedatasecurityconfigtypedef) 
+2. See [:material-code-braces: UpdateFlywheelResponseTypeDef](./type_defs.md#updateflywheelresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateFlywheelRequestRequestTypeDef = {  # (1)
+    "FlywheelArn": ...,
+}
+
+parent.update_flywheel(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateFlywheelRequestRequestTypeDef](./type_defs.md#updateflywheelrequestrequesttypedef) 
 
 
 
