@@ -63,6 +63,20 @@ GetProductsPaginatorName = Literal[
     "get_products",
 ]
 ```
+## ListPriceListsPaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_pricing.literals import ListPriceListsPaginatorName
+
+def get_value() -> ListPriceListsPaginatorName:
+    return "list_price_lists"
+```
+
+```python title="Definition"
+ListPriceListsPaginatorName = Literal[
+    "list_price_lists",
+]
+```
 ## PricingServiceName
 
 ```python title="Usage Example"
@@ -468,6 +482,7 @@ PaginatorName = Literal[
     "describe_services",
     "get_attribute_values",
     "get_products",
+    "list_price_lists",
 ]
 ```
 ## RegionName

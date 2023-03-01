@@ -837,6 +837,41 @@ parent.stop_dev_environment(**kwargs)
 
 1. See [:material-code-braces: StopDevEnvironmentRequestRequestTypeDef](./type_defs.md#stopdevenvironmentrequestrequesttypedef) 
 
+### stop\_dev\_environment\_session
+
+Stops a session for a specified Dev Environment.
+
+Type annotations and code completion for `#!python boto3.client("codecatalyst").stop_dev_environment_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecatalyst.html#CodeCatalyst.Client.stop_dev_environment_session)
+
+```python title="Method definition"
+def stop_dev_environment_session(
+    self,
+    *,
+    spaceName: str,
+    projectName: str,
+    id: str,
+    sessionId: str,
+) -> StopDevEnvironmentSessionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StopDevEnvironmentSessionResponseTypeDef](./type_defs.md#stopdevenvironmentsessionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StopDevEnvironmentSessionRequestRequestTypeDef = {  # (1)
+    "spaceName": ...,
+    "projectName": ...,
+    "id": ...,
+    "sessionId": ...,
+}
+
+parent.stop_dev_environment_session(**kwargs)
+```
+
+1. See [:material-code-braces: StopDevEnvironmentSessionRequestRequestTypeDef](./type_defs.md#stopdevenvironmentsessionrequestrequesttypedef) 
+
 ### update\_dev\_environment
 
 Changes one or more values for a Dev Environment.

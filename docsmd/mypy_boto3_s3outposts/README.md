@@ -78,6 +78,7 @@ def get_list_endpoints_paginator() -> ListEndpointsPaginator:
 ```
 
 - [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+- [ListOutpostsWithS3Paginator](./paginators.md#listoutpostswiths3paginator)
 - [ListSharedEndpointsPaginator](./paginators.md#listsharedendpointspaginator)
 
 
@@ -102,6 +103,7 @@ def get_value() -> EndpointAccessTypeType:
 - [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
+- [ListOutpostsWithS3PaginatorName](./literals.md#listoutpostswiths3paginatorname)
 - [ListSharedEndpointsPaginatorName](./literals.md#listsharedendpointspaginatorname)
 - [S3OutpostsServiceName](./literals.md#s3outpostsservicename)
 - [ServiceName](./literals.md#servicename)
@@ -133,12 +135,16 @@ def get_value() -> CreateEndpointRequestRequestTypeDef:
 - [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef)
+- [ListOutpostsWithS3RequestRequestTypeDef](./type_defs.md#listoutpostswiths3requestrequesttypedef)
+- [OutpostTypeDef](./type_defs.md#outposttypedef)
 - [ListSharedEndpointsRequestRequestTypeDef](./type_defs.md#listsharedendpointsrequestrequesttypedef)
 - [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef)
 - [EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [ListEndpointsRequestListEndpointsPaginateTypeDef](./type_defs.md#listendpointsrequestlistendpointspaginatetypedef)
+- [ListOutpostsWithS3RequestListOutpostsWithS3PaginateTypeDef](./type_defs.md#listoutpostswiths3requestlistoutpostswiths3paginatetypedef)
 - [ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef](./type_defs.md#listsharedendpointsrequestlistsharedendpointspaginatetypedef)
+- [ListOutpostsWithS3ResultTypeDef](./type_defs.md#listoutpostswiths3resulttypedef)
 - [ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)
 - [ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef)
 

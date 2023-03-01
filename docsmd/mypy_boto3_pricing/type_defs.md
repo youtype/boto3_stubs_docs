@@ -142,6 +142,66 @@ class GetAttributeValuesRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## GetPriceListFileUrlRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import GetPriceListFileUrlRequestRequestTypeDef
+
+def get_value() -> GetPriceListFileUrlRequestRequestTypeDef:
+    return {
+        "PriceListArn": ...,
+        "FileFormat": ...,
+    }
+```
+
+```python title="Definition"
+class GetPriceListFileUrlRequestRequestTypeDef(TypedDict):
+    PriceListArn: str,
+    FileFormat: str,
+```
+
+## ListPriceListsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import ListPriceListsRequestRequestTypeDef
+
+def get_value() -> ListPriceListsRequestRequestTypeDef:
+    return {
+        "ServiceCode": ...,
+        "EffectiveDate": ...,
+        "CurrencyCode": ...,
+    }
+```
+
+```python title="Definition"
+class ListPriceListsRequestRequestTypeDef(TypedDict):
+    ServiceCode: str,
+    EffectiveDate: Union[datetime, str],
+    CurrencyCode: str,
+    RegionCode: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## PriceListTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import PriceListTypeDef
+
+def get_value() -> PriceListTypeDef:
+    return {
+        "PriceListArn": ...,
+    }
+```
+
+```python title="Definition"
+class PriceListTypeDef(TypedDict):
+    PriceListArn: NotRequired[str],
+    RegionCode: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+    FileFormats: NotRequired[List[str]],
+```
+
 ## DescribeServicesRequestDescribeServicesPaginateTypeDef
 
 ```python title="Usage Example"
@@ -181,6 +241,29 @@ class GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListPriceListsRequestListPriceListsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import ListPriceListsRequestListPriceListsPaginateTypeDef
+
+def get_value() -> ListPriceListsRequestListPriceListsPaginateTypeDef:
+    return {
+        "ServiceCode": ...,
+        "EffectiveDate": ...,
+        "CurrencyCode": ...,
+    }
+```
+
+```python title="Definition"
+class ListPriceListsRequestListPriceListsPaginateTypeDef(TypedDict):
+    ServiceCode: str,
+    EffectiveDate: Union[datetime, str],
+    CurrencyCode: str,
+    RegionCode: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAttributeValuesResponseTypeDef
 
 ```python title="Usage Example"
@@ -203,6 +286,25 @@ class GetAttributeValuesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPriceListFileUrlResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import GetPriceListFileUrlResponseTypeDef
+
+def get_value() -> GetPriceListFileUrlResponseTypeDef:
+    return {
+        "Url": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class GetPriceListFileUrlResponseTypeDef(TypedDict):
+    Url: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProductsResponseTypeDef
 
 ```python title="Usage Example"
@@ -292,3 +394,25 @@ class GetProductsRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## ListPriceListsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import ListPriceListsResponseTypeDef
+
+def get_value() -> ListPriceListsResponseTypeDef:
+    return {
+        "PriceLists": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListPriceListsResponseTypeDef(TypedDict):
+    PriceLists: List[PriceListTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: PriceListTypeDef](./type_defs.md#pricelisttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

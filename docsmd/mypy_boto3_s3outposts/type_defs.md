@@ -123,6 +123,42 @@ class ListEndpointsRequestRequestTypeDef(TypedDict):
     MaxResults: NotRequired[int],
 ```
 
+## ListOutpostsWithS3RequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import ListOutpostsWithS3RequestRequestTypeDef
+
+def get_value() -> ListOutpostsWithS3RequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListOutpostsWithS3RequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
+
+## OutpostTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import OutpostTypeDef
+
+def get_value() -> OutpostTypeDef:
+    return {
+        "OutpostArn": ...,
+    }
+```
+
+```python title="Definition"
+class OutpostTypeDef(TypedDict):
+    OutpostArn: NotRequired[str],
+    OutpostId: NotRequired[str],
+    OwnerId: NotRequired[str],
+    CapacityInBytes: NotRequired[int],
+```
+
 ## ListSharedEndpointsRequestRequestTypeDef
 
 ```python title="Usage Example"
@@ -223,6 +259,23 @@ class ListEndpointsRequestListEndpointsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOutpostsWithS3RequestListOutpostsWithS3PaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import ListOutpostsWithS3RequestListOutpostsWithS3PaginateTypeDef
+
+def get_value() -> ListOutpostsWithS3RequestListOutpostsWithS3PaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOutpostsWithS3RequestListOutpostsWithS3PaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef
 
 ```python title="Usage Example"
@@ -241,6 +294,28 @@ class ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## ListOutpostsWithS3ResultTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.type_defs import ListOutpostsWithS3ResultTypeDef
+
+def get_value() -> ListOutpostsWithS3ResultTypeDef:
+    return {
+        "Outposts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class ListOutpostsWithS3ResultTypeDef(TypedDict):
+    Outposts: List[OutpostTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: OutpostTypeDef](./type_defs.md#outposttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEndpointsResultTypeDef
 
 ```python title="Usage Example"

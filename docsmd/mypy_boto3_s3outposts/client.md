@@ -37,6 +37,7 @@ except (
     client.ConflictException,
     client.InternalServerException,
     client.ResourceNotFoundException,
+    client.ThrottlingException,
     client.ValidationException,
 ) as e:
     print(e)
@@ -200,6 +201,37 @@ parent.list_endpoints(**kwargs)
 
 1. See [:material-code-braces: ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef) 
 
+### list\_outposts\_with\_s3
+
+Lists the Outposts with S3 on Outposts capacity for your Amazon Web Services
+account.
+
+Type annotations and code completion for `#!python boto3.client("s3outposts").list_outposts_with_s3` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_outposts_with_s3)
+
+```python title="Method definition"
+def list_outposts_with_s3(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListOutpostsWithS3ResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListOutpostsWithS3ResultTypeDef](./type_defs.md#listoutpostswiths3resulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListOutpostsWithS3RequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
+
+parent.list_outposts_with_s3(**kwargs)
+```
+
+1. See [:material-code-braces: ListOutpostsWithS3RequestRequestTypeDef](./type_defs.md#listoutpostswiths3requestrequesttypedef) 
+
 ### list\_shared\_endpoints
 
 Lists all endpoints associated with an Outpost that has been shared by Amazon
@@ -239,6 +271,7 @@ parent.list_shared_endpoints(**kwargs)
 Type annotations and code completion for `#!python boto3.client("s3outposts").get_paginator` method with overloads.
 
 - `client.get_paginator("list_endpoints")` -> [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+- `client.get_paginator("list_outposts_with_s3")` -> [ListOutpostsWithS3Paginator](./paginators.md#listoutpostswiths3paginator)
 - `client.get_paginator("list_shared_endpoints")` -> [ListSharedEndpointsPaginator](./paginators.md#listsharedendpointspaginator)
 
 

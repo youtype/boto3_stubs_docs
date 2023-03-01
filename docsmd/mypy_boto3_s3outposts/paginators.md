@@ -65,6 +65,64 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: ListEndpointsRequestListEndpointsPaginateTypeDef](./type_defs.md#listendpointsrequestlistendpointspaginatetypedef) 
+## ListOutpostsWithS3Paginator
+
+Type annotations and code completion for `#!python boto3.client("s3outposts").get_paginator("list_outposts_with_s3")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListOutpostsWithS3)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3outposts.paginator import ListOutpostsWithS3Paginator
+
+def get_list_outposts_with_s3_paginator() -> ListOutpostsWithS3Paginator:
+    return Session().client("s3outposts").get_paginator("list_outposts_with_s3")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3outposts.paginator import ListOutpostsWithS3Paginator
+
+session = Session()
+
+client = Session().client("s3outposts")  # (1)
+paginator: ListOutpostsWithS3Paginator = client.get_paginator("list_outposts_with_s3")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [S3OutpostsClient](./client.md)
+2. paginator: [ListOutpostsWithS3Paginator](./paginators.md#listoutpostswiths3paginator)
+3. item: [:material-code-braces: ListOutpostsWithS3ResultTypeDef](./type_defs.md#listoutpostswiths3resulttypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListOutpostsWithS3Paginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOutpostsWithS3ResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOutpostsWithS3ResultTypeDef](./type_defs.md#listoutpostswiths3resulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListOutpostsWithS3RequestListOutpostsWithS3PaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOutpostsWithS3RequestListOutpostsWithS3PaginateTypeDef](./type_defs.md#listoutpostswiths3requestlistoutpostswiths3paginatetypedef) 
 ## ListSharedEndpointsPaginator
 
 Type annotations and code completion for `#!python boto3.client("s3outposts").get_paginator("list_shared_endpoints")`.

@@ -80,6 +80,7 @@ def get_describe_services_paginator() -> DescribeServicesPaginator:
 - [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
 - [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
 - [GetProductsPaginator](./paginators.md#getproductspaginator)
+- [ListPriceListsPaginator](./paginators.md#listpricelistspaginator)
 
 
 
@@ -104,6 +105,7 @@ def get_value() -> DescribeServicesPaginatorName:
 - [FilterTypeType](./literals.md#filtertypetype)
 - [GetAttributeValuesPaginatorName](./literals.md#getattributevaluespaginatorname)
 - [GetProductsPaginatorName](./literals.md#getproductspaginatorname)
+- [ListPriceListsPaginatorName](./literals.md#listpricelistspaginatorname)
 - [PricingServiceName](./literals.md#pricingservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
@@ -133,11 +135,17 @@ def get_value() -> AttributeValueTypeDef:
 - [ServiceTypeDef](./type_defs.md#servicetypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
 - [GetAttributeValuesRequestRequestTypeDef](./type_defs.md#getattributevaluesrequestrequesttypedef)
+- [GetPriceListFileUrlRequestRequestTypeDef](./type_defs.md#getpricelistfileurlrequestrequesttypedef)
+- [ListPriceListsRequestRequestTypeDef](./type_defs.md#listpricelistsrequestrequesttypedef)
+- [PriceListTypeDef](./type_defs.md#pricelisttypedef)
 - [DescribeServicesRequestDescribeServicesPaginateTypeDef](./type_defs.md#describeservicesrequestdescribeservicespaginatetypedef)
 - [GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef](./type_defs.md#getattributevaluesrequestgetattributevaluespaginatetypedef)
+- [ListPriceListsRequestListPriceListsPaginateTypeDef](./type_defs.md#listpricelistsrequestlistpricelistspaginatetypedef)
 - [GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef)
+- [GetPriceListFileUrlResponseTypeDef](./type_defs.md#getpricelistfileurlresponsetypedef)
 - [GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef)
 - [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef)
 - [GetProductsRequestGetProductsPaginateTypeDef](./type_defs.md#getproductsrequestgetproductspaginatetypedef)
 - [GetProductsRequestRequestTypeDef](./type_defs.md#getproductsrequestrequesttypedef)
+- [ListPriceListsResponseTypeDef](./type_defs.md#listpricelistsresponsetypedef)
 

@@ -52,6 +52,20 @@ ListEndpointsPaginatorName = Literal[
     "list_endpoints",
 ]
 ```
+## ListOutpostsWithS3PaginatorName
+
+```python title="Usage Example"
+from mypy_boto3_s3outposts.literals import ListOutpostsWithS3PaginatorName
+
+def get_value() -> ListOutpostsWithS3PaginatorName:
+    return "list_outposts_with_s3"
+```
+
+```python title="Definition"
+ListOutpostsWithS3PaginatorName = Literal[
+    "list_outposts_with_s3",
+]
+```
 ## ListSharedEndpointsPaginatorName
 
 ```python title="Usage Example"
@@ -469,6 +483,7 @@ def get_value() -> PaginatorName:
 ```python title="Definition"
 PaginatorName = Literal[
     "list_endpoints",
+    "list_outposts_with_s3",
     "list_shared_endpoints",
 ]
 ```

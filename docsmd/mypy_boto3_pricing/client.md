@@ -32,6 +32,7 @@ client = boto3.client("pricing")
 try:
     do_something(client)
 except (
+    client.AccessDeniedException,
     client.ClientError,
     client.ExpiredNextTokenException,
     client.InternalErrorException,
@@ -45,7 +46,7 @@ except (
 ```python title="Type checking example"
 from mypy_boto3_pricing.client import Exceptions
 
-def handle_error(exc: Exceptions.ClientError) -> None:
+def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
@@ -168,6 +169,37 @@ parent.get_attribute_values(**kwargs)
 
 1. See [:material-code-braces: GetAttributeValuesRequestRequestTypeDef](./type_defs.md#getattributevaluesrequestrequesttypedef) 
 
+### get\_price\_list\_file\_url
+
+This feature is in preview release and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("pricing").get_price_list_file_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_price_list_file_url)
+
+```python title="Method definition"
+def get_price_list_file_url(
+    self,
+    *,
+    PriceListArn: str,
+    FileFormat: str,
+) -> GetPriceListFileUrlResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetPriceListFileUrlResponseTypeDef](./type_defs.md#getpricelistfileurlresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPriceListFileUrlRequestRequestTypeDef = {  # (1)
+    "PriceListArn": ...,
+    "FileFormat": ...,
+}
+
+parent.get_price_list_file_url(**kwargs)
+```
+
+1. See [:material-code-braces: GetPriceListFileUrlRequestRequestTypeDef](./type_defs.md#getpricelistfileurlrequestrequesttypedef) 
+
 ### get\_products
 
 Returns a list of all products that match the filter criteria.
@@ -202,6 +234,42 @@ parent.get_products(**kwargs)
 
 1. See [:material-code-braces: GetProductsRequestRequestTypeDef](./type_defs.md#getproductsrequestrequesttypedef) 
 
+### list\_price\_lists
+
+This feature is in preview release and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("pricing").list_price_lists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.list_price_lists)
+
+```python title="Method definition"
+def list_price_lists(
+    self,
+    *,
+    ServiceCode: str,
+    EffectiveDate: Union[datetime, str],
+    CurrencyCode: str,
+    RegionCode: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPriceListsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListPriceListsResponseTypeDef](./type_defs.md#listpricelistsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPriceListsRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "EffectiveDate": ...,
+    "CurrencyCode": ...,
+}
+
+parent.list_price_lists(**kwargs)
+```
+
+1. See [:material-code-braces: ListPriceListsRequestRequestTypeDef](./type_defs.md#listpricelistsrequestrequesttypedef) 
+
 
 
 ### get_paginator
@@ -211,6 +279,7 @@ Type annotations and code completion for `#!python boto3.client("pricing").get_p
 - `client.get_paginator("describe_services")` -> [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
 - `client.get_paginator("get_attribute_values")` -> [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
 - `client.get_paginator("get_products")` -> [GetProductsPaginator](./paginators.md#getproductspaginator)
+- `client.get_paginator("list_price_lists")` -> [ListPriceListsPaginator](./paginators.md#listpricelistspaginator)
 
 
 

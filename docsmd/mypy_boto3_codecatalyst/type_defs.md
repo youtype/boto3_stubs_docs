@@ -715,6 +715,28 @@ class StopDevEnvironmentRequestRequestTypeDef(TypedDict):
     id: str,
 ```
 
+## StopDevEnvironmentSessionRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codecatalyst.type_defs import StopDevEnvironmentSessionRequestRequestTypeDef
+
+def get_value() -> StopDevEnvironmentSessionRequestRequestTypeDef:
+    return {
+        "spaceName": ...,
+        "projectName": ...,
+        "id": ...,
+        "sessionId": ...,
+    }
+```
+
+```python title="Definition"
+class StopDevEnvironmentSessionRequestRequestTypeDef(TypedDict):
+    spaceName: str,
+    projectName: str,
+    id: str,
+    sessionId: str,
+```
+
 ## CreateAccessTokenResponseTypeDef
 
 ```python title="Usage Example"
@@ -725,6 +747,7 @@ def get_value() -> CreateAccessTokenResponseTypeDef:
         "secret": ...,
         "name": ...,
         "expiresTime": ...,
+        "accessTokenId": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -734,6 +757,7 @@ class CreateAccessTokenResponseTypeDef(TypedDict):
     secret: str,
     name: str,
     expiresTime: datetime,
+    accessTokenId: str,
     ResponseMetadata: ResponseMetadataTypeDef,  # (1)
 ```
 
@@ -998,6 +1022,31 @@ class StopDevEnvironmentResponseTypeDef(TypedDict):
 
 1. See [:material-code-brackets: DevEnvironmentStatusType](./literals.md#devenvironmentstatustype) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## StopDevEnvironmentSessionResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_codecatalyst.type_defs import StopDevEnvironmentSessionResponseTypeDef
+
+def get_value() -> StopDevEnvironmentSessionResponseTypeDef:
+    return {
+        "spaceName": ...,
+        "projectName": ...,
+        "id": ...,
+        "sessionId": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class StopDevEnvironmentSessionResponseTypeDef(TypedDict):
+    spaceName: str,
+    projectName: str,
+    id: str,
+    sessionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VerifySessionResponseTypeDef
 
 ```python title="Usage Example"

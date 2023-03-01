@@ -190,3 +190,67 @@ parent.paginate(**kwargs)
 ```
 
 1. See [:material-code-braces: GetProductsRequestGetProductsPaginateTypeDef](./type_defs.md#getproductsrequestgetproductspaginatetypedef) 
+## ListPriceListsPaginator
+
+Type annotations and code completion for `#!python boto3.client("pricing").get_paginator("list_price_lists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Paginator.ListPriceLists)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pricing.paginator import ListPriceListsPaginator
+
+def get_list_price_lists_paginator() -> ListPriceListsPaginator:
+    return Session().client("pricing").get_paginator("list_price_lists")
+```
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_pricing.paginator import ListPriceListsPaginator
+
+session = Session()
+
+client = Session().client("pricing")  # (1)
+paginator: ListPriceListsPaginator = client.get_paginator("list_price_lists")  # (2)
+for item in paginator.paginate(...):
+    print(item)  # (3)
+```
+
+1. client: [PricingClient](./client.md)
+2. paginator: [ListPriceListsPaginator](./paginators.md#listpricelistspaginator)
+3. item: [:material-code-braces: ListPriceListsResponseTypeDef](./type_defs.md#listpricelistsresponsetypedef) 
+
+
+### paginate
+
+Type annotations and code completion for `#!python ListPriceListsPaginator.paginate` method.
+
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceCode: str,
+    EffectiveDate: Union[datetime, str],
+    CurrencyCode: str,
+    RegionCode: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPriceListsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPriceListsResponseTypeDef](./type_defs.md#listpricelistsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPriceListsRequestListPriceListsPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "EffectiveDate": ...,
+    "CurrencyCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPriceListsRequestListPriceListsPaginateTypeDef](./type_defs.md#listpricelistsrequestlistpricelistspaginatetypedef) 
