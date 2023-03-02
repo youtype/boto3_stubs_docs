@@ -1449,25 +1449,6 @@ class PresignedUrlConfigTypeDef(TypedDict):
     expiresInSec: NotRequired[int],
 ```
 
-## SchedulingConfigTypeDef
-
-```python title="Usage Example"
-from mypy_boto3_iot.type_defs import SchedulingConfigTypeDef
-
-def get_value() -> SchedulingConfigTypeDef:
-    return {
-        "startTime": ...,
-    }
-```
-
-```python title="Definition"
-class SchedulingConfigTypeDef(TypedDict):
-    startTime: NotRequired[str],
-    endTime: NotRequired[str],
-    endBehavior: NotRequired[JobEndBehaviorType],  # (1)
-```
-
-1. See [:material-code-brackets: JobEndBehaviorType](./literals.md#jobendbehaviortype) 
 ## TimeoutConfigTypeDef
 
 ```python title="Usage Example"
@@ -1482,6 +1463,24 @@ def get_value() -> TimeoutConfigTypeDef:
 ```python title="Definition"
 class TimeoutConfigTypeDef(TypedDict):
     inProgressTimeoutInMinutes: NotRequired[int],
+```
+
+## MaintenanceWindowTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import MaintenanceWindowTypeDef
+
+def get_value() -> MaintenanceWindowTypeDef:
+    return {
+        "startTime": ...,
+        "durationInMinutes": ...,
+    }
+```
+
+```python title="Definition"
+class MaintenanceWindowTypeDef(TypedDict):
+    startTime: str,
+    durationInMinutes: int,
 ```
 
 ## CreateKeysAndCertificateRequestRequestTypeDef
@@ -3623,6 +3622,22 @@ class JobTemplateSummaryTypeDef(TypedDict):
     jobTemplateId: NotRequired[str],
     description: NotRequired[str],
     createdAt: NotRequired[datetime],
+```
+
+## ScheduledJobRolloutTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import ScheduledJobRolloutTypeDef
+
+def get_value() -> ScheduledJobRolloutTypeDef:
+    return {
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class ScheduledJobRolloutTypeDef(TypedDict):
+    startTime: NotRequired[str],
 ```
 
 ## ListActiveViolationsRequestRequestTypeDef
@@ -8649,6 +8664,27 @@ class TagResourceRequestRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## SchedulingConfigTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iot.type_defs import SchedulingConfigTypeDef
+
+def get_value() -> SchedulingConfigTypeDef:
+    return {
+        "startTime": ...,
+    }
+```
+
+```python title="Definition"
+class SchedulingConfigTypeDef(TypedDict):
+    startTime: NotRequired[str],
+    endTime: NotRequired[str],
+    endBehavior: NotRequired[JobEndBehaviorType],  # (1)
+    maintenanceWindows: NotRequired[Sequence[MaintenanceWindowTypeDef]],  # (2)
+```
+
+1. See [:material-code-brackets: JobEndBehaviorType](./literals.md#jobendbehaviortype) 
+2. See [:material-code-braces: MaintenanceWindowTypeDef](./type_defs.md#maintenancewindowtypedef) 
 ## CreateKeysAndCertificateResponseTypeDef
 
 ```python title="Usage Example"
@@ -12632,6 +12668,7 @@ class CreateJobTemplateRequestRequestTypeDef(TypedDict):
     timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (4)
     tags: NotRequired[Sequence[TagTypeDef]],  # (5)
     jobExecutionsRetryConfig: NotRequired[JobExecutionsRetryConfigTypeDef],  # (6)
+    maintenanceWindows: NotRequired[Sequence[MaintenanceWindowTypeDef]],  # (7)
 ```
 
 1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
@@ -12640,6 +12677,7 @@ class CreateJobTemplateRequestRequestTypeDef(TypedDict):
 4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 6. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+7. See [:material-code-braces: MaintenanceWindowTypeDef](./type_defs.md#maintenancewindowtypedef) 
 ## DescribeJobTemplateResponseTypeDef
 
 ```python title="Usage Example"
@@ -12658,6 +12696,7 @@ def get_value() -> DescribeJobTemplateResponseTypeDef:
         "abortConfig": ...,
         "timeoutConfig": ...,
         "jobExecutionsRetryConfig": ...,
+        "maintenanceWindows": ...,
         "ResponseMetadata": ...,
     }
 ```
@@ -12675,7 +12714,8 @@ class DescribeJobTemplateResponseTypeDef(TypedDict):
     abortConfig: AbortConfigTypeDef,  # (3)
     timeoutConfig: TimeoutConfigTypeDef,  # (4)
     jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef,  # (5)
-    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+    maintenanceWindows: List[MaintenanceWindowTypeDef],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
 ```
 
 1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
@@ -12683,7 +12723,8 @@ class DescribeJobTemplateResponseTypeDef(TypedDict):
 3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
 4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 5. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
-6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+6. See [:material-code-braces: MaintenanceWindowTypeDef](./type_defs.md#maintenancewindowtypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JobTypeDef
 
 ```python title="Usage Example"
@@ -12720,6 +12761,7 @@ class JobTypeDef(TypedDict):
     documentParameters: NotRequired[Dict[str, str]],
     isConcurrent: NotRequired[bool],
     schedulingConfig: NotRequired[SchedulingConfigTypeDef],  # (9)
+    scheduledJobRollouts: NotRequired[List[ScheduledJobRolloutTypeDef]],  # (10)
 ```
 
 1. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
@@ -12731,6 +12773,7 @@ class JobTypeDef(TypedDict):
 7. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 8. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
 9. See [:material-code-braces: SchedulingConfigTypeDef](./type_defs.md#schedulingconfigtypedef) 
+10. See [:material-code-braces: ScheduledJobRolloutTypeDef](./type_defs.md#scheduledjobrollouttypedef) 
 ## UpdateJobRequestRequestTypeDef
 
 ```python title="Usage Example"

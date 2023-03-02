@@ -993,7 +993,8 @@ def create_job_template(
     timeoutConfig: TimeoutConfigTypeDef = ...,  # (4)
     tags: Sequence[TagTypeDef] = ...,  # (5)
     jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef = ...,  # (6)
-) -> CreateJobTemplateResponseTypeDef:  # (7)
+    maintenanceWindows: Sequence[MaintenanceWindowTypeDef] = ...,  # (7)
+) -> CreateJobTemplateResponseTypeDef:  # (8)
     ...
 ```
 
@@ -1003,7 +1004,8 @@ def create_job_template(
 4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 6. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
-7. See [:material-code-braces: CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef) 
+7. See [:material-code-braces: MaintenanceWindowTypeDef](./type_defs.md#maintenancewindowtypedef) 
+8. See [:material-code-braces: CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

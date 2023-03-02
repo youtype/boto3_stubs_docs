@@ -487,10 +487,12 @@ class GetResourceMetricsRequestRequestTypeDef(TypedDict):
     PeriodInSeconds: NotRequired[int],
     MaxResults: NotRequired[int],
     NextToken: NotRequired[str],
+    PeriodAlignment: NotRequired[PeriodAlignmentType],  # (3)
 ```
 
 1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
 2. See [:material-code-braces: MetricQueryTypeDef](./type_defs.md#metricquerytypedef) 
+3. See [:material-code-brackets: PeriodAlignmentType](./literals.md#periodalignmenttype) 
 ## MetricDimensionGroupsTypeDef
 
 ```python title="Usage Example"

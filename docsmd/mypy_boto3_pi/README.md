@@ -83,6 +83,7 @@ def get_value() -> DetailStatusType:
 
 - [DetailStatusType](./literals.md#detailstatustype)
 - [FeatureStatusType](./literals.md#featurestatustype)
+- [PeriodAlignmentType](./literals.md#periodalignmenttype)
 - [ServiceTypeType](./literals.md#servicetypetype)
 - [PIServiceName](./literals.md#piservicename)
 - [ServiceName](./literals.md#servicename)

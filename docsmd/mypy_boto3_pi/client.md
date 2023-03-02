@@ -239,13 +239,15 @@ def get_resource_metrics(
     PeriodInSeconds: int = ...,
     MaxResults: int = ...,
     NextToken: str = ...,
-) -> GetResourceMetricsResponseTypeDef:  # (3)
+    PeriodAlignment: PeriodAlignmentType = ...,  # (3)
+) -> GetResourceMetricsResponseTypeDef:  # (4)
     ...
 ```
 
 1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
 2. See [:material-code-braces: MetricQueryTypeDef](./type_defs.md#metricquerytypedef) 
-3. See [:material-code-braces: GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef) 
+3. See [:material-code-brackets: PeriodAlignmentType](./literals.md#periodalignmenttype) 
+4. See [:material-code-braces: GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef) 
 
 
 ```python title="Usage example with kwargs"

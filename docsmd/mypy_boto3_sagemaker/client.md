@@ -1713,7 +1713,7 @@ parent.create_model_quality_job_definition(**kwargs)
 ### create\_monitoring\_schedule
 
 Creates a schedule that regularly starts Amazon SageMaker Processing Jobs to
-monitor the data captured for an Amazon SageMaker Endoint.
+monitor the data captured for an Amazon SageMaker Endpoint.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").create_monitoring_schedule` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_monitoring_schedule)
@@ -5652,8 +5652,7 @@ def get_sagemaker_servicecatalog_portfolio_status(
 
 ### get\_search\_suggestions
 
-An auto-complete API for the search functionality in the Amazon SageMaker
-console.
+An auto-complete API for the search functionality in the SageMaker console.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").get_search_suggestions` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_search_suggestions)
@@ -8613,7 +8612,7 @@ parent.retry_pipeline_execution(**kwargs)
 
 ### search
 
-Finds Amazon SageMaker resources that match a search query.
+Finds SageMaker resources that match a search query.
 
 Type annotations and code completion for `#!python boto3.client("sagemaker").search` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.search)

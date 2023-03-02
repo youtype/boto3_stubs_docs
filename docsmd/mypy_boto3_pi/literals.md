@@ -42,6 +42,21 @@ FeatureStatusType = Literal[
     "UNSUPPORTED",
 ]
 ```
+## PeriodAlignmentType
+
+```python title="Usage Example"
+from mypy_boto3_pi.literals import PeriodAlignmentType
+
+def get_value() -> PeriodAlignmentType:
+    return "END_TIME"
+```
+
+```python title="Definition"
+PeriodAlignmentType = Literal[
+    "END_TIME",
+    "START_TIME",
+]
+```
 ## ServiceTypeType
 
 ```python title="Usage Example"

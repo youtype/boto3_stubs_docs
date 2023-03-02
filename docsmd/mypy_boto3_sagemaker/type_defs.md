@@ -20172,11 +20172,13 @@ class RecommendationJobInferenceBenchmarkTypeDef(TypedDict):
     Metrics: NotRequired[RecommendationMetricsTypeDef],  # (1)
     EndpointConfiguration: NotRequired[EndpointOutputConfigurationTypeDef],  # (2)
     FailureReason: NotRequired[str],
+    EndpointMetrics: NotRequired[InferenceMetricsTypeDef],  # (4)
 ```
 
 1. See [:material-code-braces: RecommendationMetricsTypeDef](./type_defs.md#recommendationmetricstypedef) 
 2. See [:material-code-braces: EndpointOutputConfigurationTypeDef](./type_defs.md#endpointoutputconfigurationtypedef) 
 3. See [:material-code-braces: ModelConfigurationTypeDef](./type_defs.md#modelconfigurationtypedef) 
+4. See [:material-code-braces: InferenceMetricsTypeDef](./type_defs.md#inferencemetricstypedef) 
 ## SearchExpressionTypeDef
 
 ```python title="Usage Example"

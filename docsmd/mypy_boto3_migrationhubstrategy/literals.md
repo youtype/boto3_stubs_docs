@@ -206,6 +206,7 @@ def get_value() -> DataSourceTypeType:
 ```python title="Definition"
 DataSourceTypeType = Literal[
     "ApplicationDiscoveryService",
+    "Import",
     "MPA",
 ]
 ```
@@ -251,6 +252,7 @@ def get_value() -> GroupNameType:
 ```python title="Definition"
 GroupNameType = Literal[
     "ExternalId",
+    "ExternalSourceType",
 ]
 ```
 ## HeterogeneousTargetDatabaseEngineType
