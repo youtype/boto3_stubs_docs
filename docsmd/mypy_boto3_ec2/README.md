@@ -655,6 +655,7 @@ def get_value() -> AcceleratorManufacturerType:
 - [ImdsSupportValuesType](./literals.md#imdssupportvaluestype)
 - [InstanceAttributeNameType](./literals.md#instanceattributenametype)
 - [InstanceAutoRecoveryStateType](./literals.md#instanceautorecoverystatetype)
+- [InstanceBootModeValuesType](./literals.md#instancebootmodevaluestype)
 - [InstanceEventWindowStateType](./literals.md#instanceeventwindowstatetype)
 - [InstanceExistsWaiterName](./literals.md#instanceexistswaitername)
 - [InstanceGenerationType](./literals.md#instancegenerationtype)

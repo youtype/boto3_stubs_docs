@@ -2689,8 +2689,10 @@ def get_value() -> NielsenNaesIiNwTypeDef:
 class NielsenNaesIiNwTypeDef(TypedDict):
     CheckDigitString: str,
     Sid: float,
+    Timezone: NotRequired[NielsenWatermarkTimezonesType],  # (1)
 ```
 
+1. See [:material-code-brackets: NielsenWatermarkTimezonesType](./literals.md#nielsenwatermarktimezonestype) 
 ## OutputDestinationSettingsTypeDef
 
 ```python title="Usage Example"

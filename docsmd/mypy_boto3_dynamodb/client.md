@@ -490,7 +490,7 @@ parent.describe_continuous_backups(**kwargs)
 
 ### describe\_contributor\_insights
 
-Returns information about contributor insights, for a given table or global
+Returns information about contributor insights for a given table or global
 secondary index.
 
 Type annotations and code completion for `#!python boto3.client("dynamodb").describe_contributor_insights` method.

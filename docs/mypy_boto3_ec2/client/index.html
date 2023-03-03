@@ -50640,8 +50640,8 @@ Marketplace.</p>
 <div class="highlight"><span class="filename">Method definition</span><pre><span></span><code><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a><span class="k">def</span> <span class="nf">create_customer_gateway</span><span class="p">(</span>
 <a id="__codelineno-127-2" name="__codelineno-127-2" href="#__codelineno-127-2"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-127-3" name="__codelineno-127-3" href="#__codelineno-127-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-127-4" name="__codelineno-127-4" href="#__codelineno-127-4"></a>    <span class="n">BgpAsn</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
-<a id="__codelineno-127-5" name="__codelineno-127-5" href="#__codelineno-127-5"></a>    <span class="n">Type</span><span class="p">:</span> <span class="n">GatewayTypeType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-127-4" name="__codelineno-127-4" href="#__codelineno-127-4"></a>    <span class="n">Type</span><span class="p">:</span> <span class="n">GatewayTypeType</span><span class="p">,</span>  <span class="c1"># (1)</span>
+<a id="__codelineno-127-5" name="__codelineno-127-5" href="#__codelineno-127-5"></a>    <span class="n">BgpAsn</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-127-6" name="__codelineno-127-6" href="#__codelineno-127-6"></a>    <span class="n">PublicIp</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-127-7" name="__codelineno-127-7" href="#__codelineno-127-7"></a>    <span class="n">CertificateArn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>
 <a id="__codelineno-127-8" name="__codelineno-127-8" href="#__codelineno-127-8"></a>    <span class="n">TagSpecifications</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">TagSpecificationTypeDef</span><span class="p">]</span> <span class="o">=</span> <span class="o">...</span><span class="p">,</span>  <span class="c1"># (2)</span>
@@ -50657,11 +50657,10 @@ Marketplace.</p>
 <li>See <a href="../type_defs/#createcustomergatewayresulttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CreateCustomerGatewayResultTypeDef</a> </li>
 </ol>
 <div class="highlight"><span class="filename">Usage example with kwargs</span><pre><span></span><code><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a><span class="n">kwargs</span><span class="p">:</span> <span class="n">CreateCustomerGatewayRequestRequestTypeDef</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># (1)</span>
-<a id="__codelineno-128-2" name="__codelineno-128-2" href="#__codelineno-128-2"></a>    <span class="s2">&quot;BgpAsn&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-128-3" name="__codelineno-128-3" href="#__codelineno-128-3"></a>    <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
-<a id="__codelineno-128-4" name="__codelineno-128-4" href="#__codelineno-128-4"></a><span class="p">}</span>
-<a id="__codelineno-128-5" name="__codelineno-128-5" href="#__codelineno-128-5"></a>
-<a id="__codelineno-128-6" name="__codelineno-128-6" href="#__codelineno-128-6"></a><span class="n">parent</span><span class="o">.</span><span class="n">create_customer_gateway</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<a id="__codelineno-128-2" name="__codelineno-128-2" href="#__codelineno-128-2"></a>    <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>
+<a id="__codelineno-128-3" name="__codelineno-128-3" href="#__codelineno-128-3"></a><span class="p">}</span>
+<a id="__codelineno-128-4" name="__codelineno-128-4" href="#__codelineno-128-4"></a>
+<a id="__codelineno-128-5" name="__codelineno-128-5" href="#__codelineno-128-5"></a><span class="n">parent</span><span class="o">.</span><span class="n">create_customer_gateway</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li>See <a href="../type_defs/#createcustomergatewayrequestrequesttypedef"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span> CreateCustomerGatewayRequestRequestTypeDef</a> </li>

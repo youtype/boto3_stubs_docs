@@ -2187,8 +2187,8 @@ Type annotations and code completion for `#!python boto3.client("ec2").create_cu
 def create_customer_gateway(
     self,
     *,
-    BgpAsn: int,
     Type: GatewayTypeType,  # (1)
+    BgpAsn: int = ...,
     PublicIp: str = ...,
     CertificateArn: str = ...,
     TagSpecifications: Sequence[TagSpecificationTypeDef] = ...,  # (2)
@@ -2206,7 +2206,6 @@ def create_customer_gateway(
 
 ```python title="Usage example with kwargs"
 kwargs: CreateCustomerGatewayRequestRequestTypeDef = {  # (1)
-    "BgpAsn": ...,
     "Type": ...,
 }
 

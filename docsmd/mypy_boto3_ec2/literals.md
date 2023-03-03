@@ -493,6 +493,7 @@ def get_value() -> BootModeValuesType:
 BootModeValuesType = Literal[
     "legacy-bios",
     "uefi",
+    "uefi-preferred",
 ]
 ```
 ## BundleTaskCompleteWaiterName
@@ -3909,6 +3910,21 @@ def get_value() -> InstanceAutoRecoveryStateType:
 InstanceAutoRecoveryStateType = Literal[
     "default",
     "disabled",
+]
+```
+## InstanceBootModeValuesType
+
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import InstanceBootModeValuesType
+
+def get_value() -> InstanceBootModeValuesType:
+    return "legacy-bios"
+```
+
+```python title="Definition"
+InstanceBootModeValuesType = Literal[
+    "legacy-bios",
+    "uefi",
 ]
 ```
 ## InstanceEventWindowStateType

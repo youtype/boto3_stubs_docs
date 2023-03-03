@@ -34465,15 +34465,14 @@ from mypy_boto3_ec2.type_defs import CreateCustomerGatewayRequestRequestTypeDef
 
 def get_value() -> CreateCustomerGatewayRequestRequestTypeDef:
     return {
-        "BgpAsn": ...,
         "Type": ...,
     }
 ```
 
 ```python title="Definition"
 class CreateCustomerGatewayRequestRequestTypeDef(TypedDict):
-    BgpAsn: int,
     Type: GatewayTypeType,  # (1)
+    BgpAsn: NotRequired[int],
     PublicIp: NotRequired[str],
     CertificateArn: NotRequired[str],
     TagSpecifications: NotRequired[Sequence[TagSpecificationTypeDef]],  # (2)
@@ -43952,6 +43951,7 @@ class InstanceTypeDef(TypedDict):
     Ipv6Address: NotRequired[str],
     TpmSupport: NotRequired[str],
     MaintenanceOptions: NotRequired[InstanceMaintenanceOptionsTypeDef],  # (28)
+    CurrentInstanceBootMode: NotRequired[InstanceBootModeValuesType],  # (29)
 ```
 
 1. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
@@ -43982,6 +43982,7 @@ class InstanceTypeDef(TypedDict):
 26. See [:material-code-brackets: BootModeValuesType](./literals.md#bootmodevaluestype) 
 27. See [:material-code-braces: PrivateDnsNameOptionsResponseTypeDef](./type_defs.md#privatednsnameoptionsresponsetypedef) 
 28. See [:material-code-braces: InstanceMaintenanceOptionsTypeDef](./type_defs.md#instancemaintenanceoptionstypedef) 
+29. See [:material-code-brackets: InstanceBootModeValuesType](./literals.md#instancebootmodevaluestype) 
 ## FleetLaunchTemplateConfigRequestTypeDef
 
 ```python title="Usage Example"

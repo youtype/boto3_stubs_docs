@@ -3623,6 +3623,29 @@ NielsenPcmToId3TaggingStateType = Literal[
     "ENABLED",
 ]
 ```
+## NielsenWatermarkTimezonesType
+
+```python title="Usage Example"
+from mypy_boto3_medialive.literals import NielsenWatermarkTimezonesType
+
+def get_value() -> NielsenWatermarkTimezonesType:
+    return "AMERICA_PUERTO_RICO"
+```
+
+```python title="Definition"
+NielsenWatermarkTimezonesType = Literal[
+    "AMERICA_PUERTO_RICO",
+    "US_ALASKA",
+    "US_ARIZONA",
+    "US_CENTRAL",
+    "US_EASTERN",
+    "US_HAWAII",
+    "US_MOUNTAIN",
+    "US_PACIFIC",
+    "US_SAMOA",
+    "UTC",
+]
+```
 ## NielsenWatermarksCbetStepasideType
 
 ```python title="Usage Example"

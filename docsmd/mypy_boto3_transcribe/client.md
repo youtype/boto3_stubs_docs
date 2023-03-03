@@ -210,6 +210,7 @@ def create_vocabulary(
     Phrases: Sequence[str] = ...,
     VocabularyFileUri: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
+    DataAccessRoleArn: str = ...,
 ) -> CreateVocabularyResponseTypeDef:  # (3)
     ...
 ```
@@ -246,6 +247,7 @@ def create_vocabulary_filter(
     Words: Sequence[str] = ...,
     VocabularyFilterFileUri: str = ...,
     Tags: Sequence[TagTypeDef] = ...,  # (2)
+    DataAccessRoleArn: str = ...,
 ) -> CreateVocabularyFilterResponseTypeDef:  # (3)
     ...
 ```
@@ -1339,6 +1341,7 @@ def update_vocabulary(
     LanguageCode: LanguageCodeType,  # (1)
     Phrases: Sequence[str] = ...,
     VocabularyFileUri: str = ...,
+    DataAccessRoleArn: str = ...,
 ) -> UpdateVocabularyResponseTypeDef:  # (2)
     ...
 ```
@@ -1372,6 +1375,7 @@ def update_vocabulary_filter(
     VocabularyFilterName: str,
     Words: Sequence[str] = ...,
     VocabularyFilterFileUri: str = ...,
+    DataAccessRoleArn: str = ...,
 ) -> UpdateVocabularyFilterResponseTypeDef:  # (1)
     ...
 ```

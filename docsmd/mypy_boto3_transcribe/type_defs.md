@@ -925,6 +925,7 @@ class UpdateVocabularyFilterRequestRequestTypeDef(TypedDict):
     VocabularyFilterName: str,
     Words: NotRequired[Sequence[str]],
     VocabularyFilterFileUri: NotRequired[str],
+    DataAccessRoleArn: NotRequired[str],
 ```
 
 ## UpdateVocabularyRequestRequestTypeDef
@@ -945,6 +946,7 @@ class UpdateVocabularyRequestRequestTypeDef(TypedDict):
     LanguageCode: LanguageCodeType,  # (1)
     Phrases: NotRequired[Sequence[str]],
     VocabularyFileUri: NotRequired[str],
+    DataAccessRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
@@ -1392,6 +1394,7 @@ class CreateVocabularyFilterRequestRequestTypeDef(TypedDict):
     Words: NotRequired[Sequence[str]],
     VocabularyFilterFileUri: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    DataAccessRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
@@ -1415,6 +1418,7 @@ class CreateVocabularyRequestRequestTypeDef(TypedDict):
     Phrases: NotRequired[Sequence[str]],
     VocabularyFileUri: NotRequired[str],
     Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    DataAccessRoleArn: NotRequired[str],
 ```
 
 1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 

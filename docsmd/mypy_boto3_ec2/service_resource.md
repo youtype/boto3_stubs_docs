@@ -2324,6 +2324,7 @@ def get_resource() -> Instance:
 - `ipv6_address`: `str`
 - `tpm_support`: `str`
 - `maintenance_options`: [InstanceMaintenanceOptionsResponseMetadataTypeDef](./type_defs.md#instancemaintenanceoptionsresponsemetadatatypedef)
+- `current_instance_boot_mode`: [InstanceBootModeValuesType](./literals.md#instancebootmodevaluestype)
 - `id`: `str`
 - `classic_address`: [ClassicAddress](#classicaddress)
 - `image`: [Image](#image)

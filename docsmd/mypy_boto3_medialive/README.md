@@ -364,6 +364,7 @@ def get_value() -> AacCodingModeType:
 - [MultiplexStoppedWaiterName](./literals.md#multiplexstoppedwaitername)
 - [NetworkInputServerValidationType](./literals.md#networkinputservervalidationtype)
 - [NielsenPcmToId3TaggingStateType](./literals.md#nielsenpcmtoid3taggingstatetype)
+- [NielsenWatermarkTimezonesType](./literals.md#nielsenwatermarktimezonestype)
 - [NielsenWatermarksCbetStepasideType](./literals.md#nielsenwatermarkscbetstepasidetype)
 - [NielsenWatermarksDistributionTypesType](./literals.md#nielsenwatermarksdistributiontypestype)
 - [OfferingDurationUnitsType](./literals.md#offeringdurationunitstype)
