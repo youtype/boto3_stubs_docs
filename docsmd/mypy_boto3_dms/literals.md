@@ -554,6 +554,7 @@ def get_value() -> ReleaseStatusValuesType:
 ```python title="Definition"
 ReleaseStatusValuesType = Literal[
     "beta",
+    "prod",
 ]
 ```
 ## ReloadOptionValueType

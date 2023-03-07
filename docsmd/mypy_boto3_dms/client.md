@@ -76,7 +76,7 @@ def handle_error(exc: Exceptions.AccessDeniedFault) -> None:
 ### add\_tags\_to\_resource
 
 Adds metadata tags to an DMS resource, including replication instance, endpoint,
-security group, and migration task.
+subnet group, and migration task.
 
 Type annotations and code completion for `#!python boto3.client("dms").add_tags_to_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
@@ -138,6 +138,37 @@ parent.apply_pending_maintenance_action(**kwargs)
 ```
 
 1. See [:material-code-braces: ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef) 
+
+### batch\_start\_recommendations
+
+Starts the analysis of up to 20 source databases to recommend target engines for
+each source database.
+
+Type annotations and code completion for `#!python boto3.client("dms").batch_start_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.batch_start_recommendations)
+
+```python title="Method definition"
+def batch_start_recommendations(
+    self,
+    *,
+    Data: Sequence[StartRecommendationsRequestEntryTypeDef] = ...,  # (1)
+) -> BatchStartRecommendationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: StartRecommendationsRequestEntryTypeDef](./type_defs.md#startrecommendationsrequestentrytypedef) 
+2. See [:material-code-braces: BatchStartRecommendationsResponseTypeDef](./type_defs.md#batchstartrecommendationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: BatchStartRecommendationsRequestRequestTypeDef = {  # (1)
+    "Data": ...,
+}
+
+parent.batch_start_recommendations(**kwargs)
+```
+
+1. See [:material-code-braces: BatchStartRecommendationsRequestRequestTypeDef](./type_defs.md#batchstartrecommendationsrequestrequesttypedef) 
 
 ### can\_paginate
 
@@ -1318,6 +1349,72 @@ parent.describe_pending_maintenance_actions(**kwargs)
 
 1. See [:material-code-braces: DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef) 
 
+### describe\_recommendation\_limitations
+
+Returns a paginated list of limitations for recommendations of target Amazon Web
+Services engines.
+
+Type annotations and code completion for `#!python boto3.client("dms").describe_recommendation_limitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_recommendation_limitations)
+
+```python title="Method definition"
+def describe_recommendation_limitations(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> DescribeRecommendationLimitationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeRecommendationLimitationsResponseTypeDef](./type_defs.md#describerecommendationlimitationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRecommendationLimitationsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.describe_recommendation_limitations(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRecommendationLimitationsRequestRequestTypeDef](./type_defs.md#describerecommendationlimitationsrequestrequesttypedef) 
+
+### describe\_recommendations
+
+Returns a paginated list of target engine recommendations for your source
+databases.
+
+Type annotations and code completion for `#!python boto3.client("dms").describe_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_recommendations)
+
+```python title="Method definition"
+def describe_recommendations(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> DescribeRecommendationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeRecommendationsResponseTypeDef](./type_defs.md#describerecommendationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRecommendationsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.describe_recommendations(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRecommendationsRequestRequestTypeDef](./type_defs.md#describerecommendationsrequestrequesttypedef) 
+
 ### describe\_refresh\_schemas\_status
 
 Returns the status of the RefreshSchemas operation.
@@ -1694,7 +1791,7 @@ parent.import_certificate(**kwargs)
 ### list\_tags\_for\_resource
 
 Lists all metadata tags attached to an DMS resource, including replication
-instance, endpoint, security group, and migration task.
+instance, endpoint, subnet group, and migration task.
 
 Type annotations and code completion for `#!python boto3.client("dms").list_tags_for_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
@@ -2077,7 +2174,7 @@ parent.reload_tables(**kwargs)
 ### remove\_tags\_from\_resource
 
 Removes metadata tags from an DMS resource, including replication instance,
-endpoint, security group, and migration task.
+endpoint, subnet group, and migration task.
 
 Type annotations and code completion for `#!python boto3.client("dms").remove_tags_from_resource` method.
 [:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
@@ -2121,6 +2218,39 @@ def run_fleet_advisor_lsa_analysis(
 ```
 
 1. See [:material-code-braces: RunFleetAdvisorLsaAnalysisResponseTypeDef](./type_defs.md#runfleetadvisorlsaanalysisresponsetypedef) 
+
+### start\_recommendations
+
+Starts the analysis of your source database to provide recommendations of target
+engines.
+
+Type annotations and code completion for `#!python boto3.client("dms").start_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_recommendations)
+
+```python title="Method definition"
+def start_recommendations(
+    self,
+    *,
+    DatabaseId: str,
+    Settings: RecommendationSettingsTypeDef,  # (1)
+) -> EmptyResponseMetadataTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RecommendationSettingsTypeDef](./type_defs.md#recommendationsettingstypedef) 
+2. See [:material-code-braces: EmptyResponseMetadataTypeDef](./type_defs.md#emptyresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartRecommendationsRequestRequestTypeDef = {  # (1)
+    "DatabaseId": ...,
+    "Settings": ...,
+}
+
+parent.start_recommendations(**kwargs)
+```
+
+1. See [:material-code-braces: StartRecommendationsRequestRequestTypeDef](./type_defs.md#startrecommendationsrequestrequesttypedef) 
 
 ### start\_replication\_task
 

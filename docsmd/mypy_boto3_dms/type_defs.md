@@ -103,6 +103,24 @@ class AvailabilityZoneTypeDef(TypedDict):
     Name: NotRequired[str],
 ```
 
+## BatchStartRecommendationsErrorEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import BatchStartRecommendationsErrorEntryTypeDef
+
+def get_value() -> BatchStartRecommendationsErrorEntryTypeDef:
+    return {
+        "DatabaseId": ...,
+    }
+```
+
+```python title="Definition"
+class BatchStartRecommendationsErrorEntryTypeDef(TypedDict):
+    DatabaseId: NotRequired[str],
+    Message: NotRequired[str],
+    Code: NotRequired[str],
+```
+
 ## CancelReplicationTaskAssessmentRunMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1320,6 +1338,27 @@ class OrderableReplicationInstanceTypeDef(TypedDict):
 ```
 
 1. See [:material-code-brackets: ReleaseStatusValuesType](./literals.md#releasestatusvaluestype) 
+## LimitationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import LimitationTypeDef
+
+def get_value() -> LimitationTypeDef:
+    return {
+        "DatabaseId": ...,
+    }
+```
+
+```python title="Definition"
+class LimitationTypeDef(TypedDict):
+    DatabaseId: NotRequired[str],
+    EngineName: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Impact: NotRequired[str],
+    Type: NotRequired[str],
+```
+
 ## DescribeRefreshSchemasStatusMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1656,6 +1695,50 @@ class PendingMaintenanceActionTypeDef(TypedDict):
     Description: NotRequired[str],
 ```
 
+## RdsConfigurationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import RdsConfigurationTypeDef
+
+def get_value() -> RdsConfigurationTypeDef:
+    return {
+        "EngineEdition": ...,
+    }
+```
+
+```python title="Definition"
+class RdsConfigurationTypeDef(TypedDict):
+    EngineEdition: NotRequired[str],
+    InstanceType: NotRequired[str],
+    InstanceVcpu: NotRequired[float],
+    InstanceMemory: NotRequired[float],
+    StorageType: NotRequired[str],
+    StorageSize: NotRequired[int],
+    StorageIops: NotRequired[int],
+    DeploymentOption: NotRequired[str],
+```
+
+## RdsRequirementsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import RdsRequirementsTypeDef
+
+def get_value() -> RdsRequirementsTypeDef:
+    return {
+        "EngineEdition": ...,
+    }
+```
+
+```python title="Definition"
+class RdsRequirementsTypeDef(TypedDict):
+    EngineEdition: NotRequired[str],
+    InstanceVcpu: NotRequired[float],
+    InstanceMemory: NotRequired[float],
+    StorageSize: NotRequired[int],
+    StorageIops: NotRequired[int],
+    DeploymentOption: NotRequired[str],
+```
+
 ## RebootReplicationInstanceMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -1672,6 +1755,24 @@ class RebootReplicationInstanceMessageRequestTypeDef(TypedDict):
     ReplicationInstanceArn: str,
     ForceFailover: NotRequired[bool],
     ForcePlannedFailover: NotRequired[bool],
+```
+
+## RecommendationSettingsTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import RecommendationSettingsTypeDef
+
+def get_value() -> RecommendationSettingsTypeDef:
+    return {
+        "InstanceSizingType": ...,
+        "WorkloadType": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationSettingsTypeDef(TypedDict):
+    InstanceSizingType: str,
+    WorkloadType: str,
 ```
 
 ## RefreshSchemasMessageRequestTypeDef
@@ -2321,6 +2422,26 @@ class SubnetTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
+## BatchStartRecommendationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import BatchStartRecommendationsResponseTypeDef
+
+def get_value() -> BatchStartRecommendationsResponseTypeDef:
+    return {
+        "ErrorEntries": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class BatchStartRecommendationsResponseTypeDef(TypedDict):
+    ErrorEntries: List[BatchStartRecommendationsErrorEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: BatchStartRecommendationsErrorEntryTypeDef](./type_defs.md#batchstartrecommendationserrorentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteCertificateResponseTypeDef
 
 ```python title="Usage Example"
@@ -3029,6 +3150,44 @@ class DescribePendingMaintenanceActionsMessageRequestTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeRecommendationLimitationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeRecommendationLimitationsRequestRequestTypeDef
+
+def get_value() -> DescribeRecommendationLimitationsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecommendationLimitationsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeRecommendationsRequestRequestTypeDef
+
+def get_value() -> DescribeRecommendationsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecommendationsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeReplicationInstancesMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -3722,6 +3881,28 @@ class DescribeOrderableReplicationInstancesResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: OrderableReplicationInstanceTypeDef](./type_defs.md#orderablereplicationinstancetypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRecommendationLimitationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeRecommendationLimitationsResponseTypeDef
+
+def get_value() -> DescribeRecommendationLimitationsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Limitations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecommendationLimitationsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Limitations: List[LimitationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: LimitationTypeDef](./type_defs.md#limitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRefreshSchemasStatusResponseTypeDef
 
 ```python title="Usage Example"
@@ -3874,6 +4055,63 @@ class ResourcePendingMaintenanceActionsTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef) 
+## RdsRecommendationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import RdsRecommendationTypeDef
+
+def get_value() -> RdsRecommendationTypeDef:
+    return {
+        "RequirementsToTarget": ...,
+    }
+```
+
+```python title="Definition"
+class RdsRecommendationTypeDef(TypedDict):
+    RequirementsToTarget: NotRequired[RdsRequirementsTypeDef],  # (1)
+    TargetConfiguration: NotRequired[RdsConfigurationTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: RdsRequirementsTypeDef](./type_defs.md#rdsrequirementstypedef) 
+2. See [:material-code-braces: RdsConfigurationTypeDef](./type_defs.md#rdsconfigurationtypedef) 
+## StartRecommendationsRequestEntryTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import StartRecommendationsRequestEntryTypeDef
+
+def get_value() -> StartRecommendationsRequestEntryTypeDef:
+    return {
+        "DatabaseId": ...,
+        "Settings": ...,
+    }
+```
+
+```python title="Definition"
+class StartRecommendationsRequestEntryTypeDef(TypedDict):
+    DatabaseId: str,
+    Settings: RecommendationSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RecommendationSettingsTypeDef](./type_defs.md#recommendationsettingstypedef) 
+## StartRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import StartRecommendationsRequestRequestTypeDef
+
+def get_value() -> StartRecommendationsRequestRequestTypeDef:
+    return {
+        "DatabaseId": ...,
+        "Settings": ...,
+    }
+```
+
+```python title="Definition"
+class StartRecommendationsRequestRequestTypeDef(TypedDict):
+    DatabaseId: str,
+    Settings: RecommendationSettingsTypeDef,  # (1)
+```
+
+1. See [:material-code-braces: RecommendationSettingsTypeDef](./type_defs.md#recommendationsettingstypedef) 
 ## ReloadTablesMessageRequestTypeDef
 
 ```python title="Usage Example"
@@ -4176,6 +4414,40 @@ class DescribePendingMaintenanceActionsResponseTypeDef(TypedDict):
 
 1. See [:material-code-braces: ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## RecommendationDataTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import RecommendationDataTypeDef
+
+def get_value() -> RecommendationDataTypeDef:
+    return {
+        "RdsEngine": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationDataTypeDef(TypedDict):
+    RdsEngine: NotRequired[RdsRecommendationTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: RdsRecommendationTypeDef](./type_defs.md#rdsrecommendationtypedef) 
+## BatchStartRecommendationsRequestRequestTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import BatchStartRecommendationsRequestRequestTypeDef
+
+def get_value() -> BatchStartRecommendationsRequestRequestTypeDef:
+    return {
+        "Data": ...,
+    }
+```
+
+```python title="Definition"
+class BatchStartRecommendationsRequestRequestTypeDef(TypedDict):
+    Data: NotRequired[Sequence[StartRecommendationsRequestEntryTypeDef]],  # (1)
+```
+
+1. See [:material-code-braces: StartRecommendationsRequestEntryTypeDef](./type_defs.md#startrecommendationsrequestentrytypedef) 
 ## CancelReplicationTaskAssessmentRunResponseTypeDef
 
 ```python title="Usage Example"
@@ -4547,6 +4819,30 @@ class ReplicationInstanceTypeDef(TypedDict):
 1. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 
 2. See [:material-code-braces: ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef) 
 3. See [:material-code-braces: ReplicationPendingModifiedValuesTypeDef](./type_defs.md#replicationpendingmodifiedvaluestypedef) 
+## RecommendationTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import RecommendationTypeDef
+
+def get_value() -> RecommendationTypeDef:
+    return {
+        "DatabaseId": ...,
+    }
+```
+
+```python title="Definition"
+class RecommendationTypeDef(TypedDict):
+    DatabaseId: NotRequired[str],
+    EngineName: NotRequired[str],
+    CreatedDate: NotRequired[str],
+    Status: NotRequired[str],
+    Preferred: NotRequired[bool],
+    Settings: NotRequired[RecommendationSettingsTypeDef],  # (1)
+    Data: NotRequired[RecommendationDataTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: RecommendationSettingsTypeDef](./type_defs.md#recommendationsettingstypedef) 
+2. See [:material-code-braces: RecommendationDataTypeDef](./type_defs.md#recommendationdatatypedef) 
 ## CreateReplicationInstanceResponseTypeDef
 
 ```python title="Usage Example"
@@ -4648,4 +4944,26 @@ class RebootReplicationInstanceResponseTypeDef(TypedDict):
 ```
 
 1. See [:material-code-braces: ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRecommendationsResponseTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dms.type_defs import DescribeRecommendationsResponseTypeDef
+
+def get_value() -> DescribeRecommendationsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Recommendations": ...,
+        "ResponseMetadata": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRecommendationsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Recommendations: List[RecommendationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
+
+1. See [:material-code-braces: RecommendationTypeDef](./type_defs.md#recommendationtypedef) 
 2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

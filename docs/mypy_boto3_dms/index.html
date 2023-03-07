@@ -40799,6 +40799,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#applypendingmaintenanceactionmessagerequesttypedef">ApplyPendingMaintenanceActionMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#responsemetadatatypedef">ResponseMetadataTypeDef</a></li>
 <li><a href="type_defs/#availabilityzonetypedef">AvailabilityZoneTypeDef</a></li>
+<li><a href="type_defs/#batchstartrecommendationserrorentrytypedef">BatchStartRecommendationsErrorEntryTypeDef</a></li>
 <li><a href="type_defs/#cancelreplicationtaskassessmentrunmessagerequesttypedef">CancelReplicationTaskAssessmentRunMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#certificatetypedef">CertificateTypeDef</a></li>
 <li><a href="type_defs/#collectorhealthchecktypedef">CollectorHealthCheckTypeDef</a></li>
@@ -40852,6 +40853,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#fleetadvisorschemaobjectresponsetypedef">FleetAdvisorSchemaObjectResponseTypeDef</a></li>
 <li><a href="type_defs/#describeorderablereplicationinstancesmessagerequesttypedef">DescribeOrderableReplicationInstancesMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#orderablereplicationinstancetypedef">OrderableReplicationInstanceTypeDef</a></li>
+<li><a href="type_defs/#limitationtypedef">LimitationTypeDef</a></li>
 <li><a href="type_defs/#describerefreshschemasstatusmessagerequesttypedef">DescribeRefreshSchemasStatusMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#refreshschemasstatustypedef">RefreshSchemasStatusTypeDef</a></li>
 <li><a href="type_defs/#describereplicationinstancetasklogsmessagerequesttypedef">DescribeReplicationInstanceTaskLogsMessageRequestTypeDef</a></li>
@@ -40868,7 +40870,10 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#modifyreplicationtaskmessagerequesttypedef">ModifyReplicationTaskMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#movereplicationtaskmessagerequesttypedef">MoveReplicationTaskMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#pendingmaintenanceactiontypedef">PendingMaintenanceActionTypeDef</a></li>
+<li><a href="type_defs/#rdsconfigurationtypedef">RdsConfigurationTypeDef</a></li>
+<li><a href="type_defs/#rdsrequirementstypedef">RdsRequirementsTypeDef</a></li>
 <li><a href="type_defs/#rebootreplicationinstancemessagerequesttypedef">RebootReplicationInstanceMessageRequestTypeDef</a></li>
+<li><a href="type_defs/#recommendationsettingstypedef">RecommendationSettingsTypeDef</a></li>
 <li><a href="type_defs/#refreshschemasmessagerequesttypedef">RefreshSchemasMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#tabletoreloadtypedef">TableToReloadTypeDef</a></li>
 <li><a href="type_defs/#removetagsfromresourcemessagerequesttypedef">RemoveTagsFromResourceMessageRequestTypeDef</a></li>
@@ -40900,6 +40905,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#runfleetadvisorlsaanalysisresponsetypedef">RunFleetAdvisorLsaAnalysisResponseTypeDef</a></li>
 <li><a href="type_defs/#updatesubscriptionstoeventbridgeresponsetypedef">UpdateSubscriptionsToEventBridgeResponseTypeDef</a></li>
 <li><a href="type_defs/#subnettypedef">SubnetTypeDef</a></li>
+<li><a href="type_defs/#batchstartrecommendationsresponsetypedef">BatchStartRecommendationsResponseTypeDef</a></li>
 <li><a href="type_defs/#deletecertificateresponsetypedef">DeleteCertificateResponseTypeDef</a></li>
 <li><a href="type_defs/#describecertificatesresponsetypedef">DescribeCertificatesResponseTypeDef</a></li>
 <li><a href="type_defs/#importcertificateresponsetypedef">ImportCertificateResponseTypeDef</a></li>
@@ -40927,6 +40933,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describefleetadvisorschemaobjectsummaryrequestrequesttypedef">DescribeFleetAdvisorSchemaObjectSummaryRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describefleetadvisorschemasrequestrequesttypedef">DescribeFleetAdvisorSchemasRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describependingmaintenanceactionsmessagerequesttypedef">DescribePendingMaintenanceActionsMessageRequestTypeDef</a></li>
+<li><a href="type_defs/#describerecommendationlimitationsrequestrequesttypedef">DescribeRecommendationLimitationsRequestRequestTypeDef</a></li>
+<li><a href="type_defs/#describerecommendationsrequestrequesttypedef">DescribeRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#describereplicationinstancesmessagerequesttypedef">DescribeReplicationInstancesMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#describereplicationsubnetgroupsmessagerequesttypedef">DescribeReplicationSubnetGroupsMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#describereplicationtaskassessmentrunsmessagerequesttypedef">DescribeReplicationTaskAssessmentRunsMessageRequestTypeDef</a></li>
@@ -40961,6 +40969,7 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describefleetadvisorlsaanalysisresponsetypedef">DescribeFleetAdvisorLsaAnalysisResponseTypeDef</a></li>
 <li><a href="type_defs/#describefleetadvisorschemaobjectsummaryresponsetypedef">DescribeFleetAdvisorSchemaObjectSummaryResponseTypeDef</a></li>
 <li><a href="type_defs/#describeorderablereplicationinstancesresponsetypedef">DescribeOrderableReplicationInstancesResponseTypeDef</a></li>
+<li><a href="type_defs/#describerecommendationlimitationsresponsetypedef">DescribeRecommendationLimitationsResponseTypeDef</a></li>
 <li><a href="type_defs/#describerefreshschemasstatusresponsetypedef">DescribeRefreshSchemasStatusResponseTypeDef</a></li>
 <li><a href="type_defs/#refreshschemasresponsetypedef">RefreshSchemasResponseTypeDef</a></li>
 <li><a href="type_defs/#describereplicationinstancetasklogsresponsetypedef">DescribeReplicationInstanceTaskLogsResponseTypeDef</a></li>
@@ -40968,6 +40977,9 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describereplicationtaskindividualassessmentsresponsetypedef">DescribeReplicationTaskIndividualAssessmentsResponseTypeDef</a></li>
 <li><a href="type_defs/#describetablestatisticsresponsetypedef">DescribeTableStatisticsResponseTypeDef</a></li>
 <li><a href="type_defs/#resourcependingmaintenanceactionstypedef">ResourcePendingMaintenanceActionsTypeDef</a></li>
+<li><a href="type_defs/#rdsrecommendationtypedef">RdsRecommendationTypeDef</a></li>
+<li><a href="type_defs/#startrecommendationsrequestentrytypedef">StartRecommendationsRequestEntryTypeDef</a></li>
+<li><a href="type_defs/#startrecommendationsrequestrequesttypedef">StartRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#reloadtablesmessagerequesttypedef">ReloadTablesMessageRequestTypeDef</a></li>
 <li><a href="type_defs/#replicationtaskassessmentruntypedef">ReplicationTaskAssessmentRunTypeDef</a></li>
 <li><a href="type_defs/#replicationtasktypedef">ReplicationTaskTypeDef</a></li>
@@ -40981,6 +40993,8 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describefleetadvisordatabasesresponsetypedef">DescribeFleetAdvisorDatabasesResponseTypeDef</a></li>
 <li><a href="type_defs/#applypendingmaintenanceactionresponsetypedef">ApplyPendingMaintenanceActionResponseTypeDef</a></li>
 <li><a href="type_defs/#describependingmaintenanceactionsresponsetypedef">DescribePendingMaintenanceActionsResponseTypeDef</a></li>
+<li><a href="type_defs/#recommendationdatatypedef">RecommendationDataTypeDef</a></li>
+<li><a href="type_defs/#batchstartrecommendationsrequestrequesttypedef">BatchStartRecommendationsRequestRequestTypeDef</a></li>
 <li><a href="type_defs/#cancelreplicationtaskassessmentrunresponsetypedef">CancelReplicationTaskAssessmentRunResponseTypeDef</a></li>
 <li><a href="type_defs/#deletereplicationtaskassessmentrunresponsetypedef">DeleteReplicationTaskAssessmentRunResponseTypeDef</a></li>
 <li><a href="type_defs/#describereplicationtaskassessmentrunsresponsetypedef">DescribeReplicationTaskAssessmentRunsResponseTypeDef</a></li>
@@ -40998,11 +41012,13 @@ from <code class="highlight"><span class="n">boto3</span><span class="o">.</span
 <li><a href="type_defs/#describereplicationsubnetgroupsresponsetypedef">DescribeReplicationSubnetGroupsResponseTypeDef</a></li>
 <li><a href="type_defs/#modifyreplicationsubnetgroupresponsetypedef">ModifyReplicationSubnetGroupResponseTypeDef</a></li>
 <li><a href="type_defs/#replicationinstancetypedef">ReplicationInstanceTypeDef</a></li>
+<li><a href="type_defs/#recommendationtypedef">RecommendationTypeDef</a></li>
 <li><a href="type_defs/#createreplicationinstanceresponsetypedef">CreateReplicationInstanceResponseTypeDef</a></li>
 <li><a href="type_defs/#deletereplicationinstanceresponsetypedef">DeleteReplicationInstanceResponseTypeDef</a></li>
 <li><a href="type_defs/#describereplicationinstancesresponsetypedef">DescribeReplicationInstancesResponseTypeDef</a></li>
 <li><a href="type_defs/#modifyreplicationinstanceresponsetypedef">ModifyReplicationInstanceResponseTypeDef</a></li>
 <li><a href="type_defs/#rebootreplicationinstanceresponsetypedef">RebootReplicationInstanceResponseTypeDef</a></li>
+<li><a href="type_defs/#describerecommendationsresponsetypedef">DescribeRecommendationsResponseTypeDef</a></li>
 </ul>
 
 
